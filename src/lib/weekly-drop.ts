@@ -354,7 +354,7 @@ async function ingestWeek(week: string, today: string): Promise<WeeklyDrop> {
 
   const body = {
     model: "grok-4.5",
-    max_tool_calls: 4,
+    max_tool_calls: 6,
     tools: [
       {
         type: "web_search",
@@ -362,9 +362,27 @@ async function ingestWeek(week: string, today: string): Promise<WeeklyDrop> {
           allowed_domains: [
             "leagueofcomicgeeks.com",
             "comicbook.com",
+            "marvel.com",
+            "dc.com",
+            "imagecomics.com",
+            "darkhorse.com",
+            "idwpublishing.com",
+            "boom-studios.com",
+            "dynamite.com",
+            "previewsworld.com",
             "bigbadtoystore.com",
             "hasbropulse.com",
             "mcfarlane.com",
+            "mattel.com",
+            "mezcotoyz.com",
+            "necaonline.com",
+            "super7.com",
+            "hottoys.com.hk",
+            "goodsmile.info",
+            "bandai.com",
+            "tamashiinations.com",
+            "kotobukiya.co.jp",
+            "entertainmentearth.com",
           ],
         },
       },
@@ -374,12 +392,17 @@ async function ingestWeek(week: string, today: string): Promise<WeeklyDrop> {
         role: "user",
         content: `Today is ${today} (ISO week ${week}). US comics street on Wednesday.
 
-Open these pages and extract CURRENT releases only — do not invent titles:
-1. https://leagueofcomicgeeks.com/comics/new-comics
-2. Hasbro Pulse new / BBTS new arrivals / McFarlane new figures for collector lines (Marvel Legends, Black Series, DC Multiverse, MAFEX, Figuarts, Gunpla, NECA, Super7, Hot Toys, figma).
+Extract CURRENT releases only — do not invent titles.
+
+Comics (major publishers): Marvel, DC, Image, Dark Horse, IDW, BOOM!, Dynamite, Valiant.
+Primary list: https://leagueofcomicgeeks.com/comics/new-comics
+Cross-check publisher new-release / solicitations pages when useful.
+
+Figures / kits (major manufacturers): Hasbro Pulse, Mattel, McFarlane Toys, MAFEX/Medicom, Mezco One:12, Bandai / S.H.Figuarts, NECA, Super7, Hot Toys, figma (Good Smile), Kotobukiya, Storm Collectibles.
+Use manufacturer new-release pages plus BBTS / Entertainment Earth new arrivals for collector lines (Marvel Legends, Black Series, DC Multiverse, MAFEX, Figuarts, Gunpla, NECA, Super7, Hot Toys, figma, etc.).
 
 Return ONLY JSON:
-{"comics":[{"series":"","issue":"","publisher":"","streetDate":"YYYY-MM-DD","msrp":0,"writers":"","artists":"","format":"single","variant":"","coverUrl":""}],"figures":[{"name":"","subtitle":"","line":"","company":"hasbro","kind":"figure","releaseDate":"YYYY-MM-DD","msrp":0,"scale":"6\\"","exclusive":""}]}
+{"comics":[{"series":"","issue":"","publisher":"","streetDate":"YYYY-MM-DD","msrp":0,"writers":"","artists":"","format":"single","variant":"","coverUrl":""}],"figures":[{"name":"","subtitle":"","line":"","company":"hasbro","kind":"figure","releaseDate":"YYYY-MM-DD","msrp":0,"scale":"6\"","exclusive":""}]}
 
 Comics: this week's main covers only (skip 1:25+ ratio variants). Max 28. Issue without #.
 Figures: newly in-stock or newly announced matching those companies. Max 18.
@@ -451,7 +474,10 @@ export const getWeeklyDrop = createServerFn({ method: "POST" })
     if (!data.force) {
       if (hasItems(cached)) return remember(cached);
       if (hasItems(mem)) return mem;
-      return remember(emptyDrop(week));
+      // New ISO week with no seed/cache: attempt live ingest when configured.
+      if (!process.env.XAI_API_KEY?.trim()) {
+        return remember(emptyDrop(week));
+      }
     }
 
     if (cached && cached.status === "error" && !hasItems(cached) && !stale(cached, 0.05)) {
