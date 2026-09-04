@@ -402,7 +402,7 @@ Figures / kits (major manufacturers): Hasbro Pulse, Mattel, McFarlane Toys, MAFE
 Use manufacturer new-release pages plus BBTS / Entertainment Earth new arrivals for collector lines (Marvel Legends, Black Series, DC Multiverse, MAFEX, Figuarts, Gunpla, NECA, Super7, Hot Toys, figma, etc.).
 
 Return ONLY JSON:
-{"comics":[{"series":"","issue":"","publisher":"","streetDate":"YYYY-MM-DD","msrp":0,"writers":"","artists":"","format":"single","variant":"","coverUrl":""}],"figures":[{"name":"","subtitle":"","line":"","company":"hasbro","kind":"figure","releaseDate":"YYYY-MM-DD","msrp":0,"scale":"6\"","exclusive":""}]}
+{"comics":[{"series":"","issue":"","publisher":"","streetDate":"YYYY-MM-DD","msrp":0,"writers":"","artists":"","format":"single","variant":"","coverUrl":""}],"figures":[{"name":"","subtitle":"","line":"","company":"hasbro","kind":"figure","releaseDate":"YYYY-MM-DD","msrp":0,"scale":"6\\"","exclusive":""}]}
 
 Comics: this week's main covers only (skip 1:25+ ratio variants). Max 28. Issue without #.
 Figures: newly in-stock or newly announced matching those companies. Max 18.
