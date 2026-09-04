@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Krypton's Toy Vault",
+      "hasCanvas": false,
+      "bodyTextLen": 1735,
+      "bodyTextHash": "3e0997eaa28f456f5514732b5c1ceebe41283c65b118d2d3a5115c2e7f87e264",
+      "bodyTextPrefix": "KRYPTON'S TOY VAULT Vault Figures Comics Collection Scan cover C",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Krypton's Toy Vault",
+      "hasCanvas": false,
+      "bodyTextLen": 1729,
+      "bodyTextHash": "1bf99fb4cf53868d9b853c04f1546dbadc27b25cba40805575165a9adfd611a3",
+      "bodyTextPrefix": "KRYPTON'S TOY VAULT COLLECTOR ARCHIVE THE VAULT Figures, kits, a",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

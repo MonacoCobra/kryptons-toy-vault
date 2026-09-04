@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/comics/mv-ff-550-3d",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Krypton's Toy Vault",
+      "hasCanvas": false,
+      "bodyTextLen": 1084,
+      "bodyTextHash": "4be36ac245ca9ff7c39e61644c50eb67bfa3962f2926e62cb00a52d3f1a13922",
+      "bodyTextPrefix": "KRYPTON'S TOY VAULT Vault Figures Comics Collection Scan cover F",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/ff550-smoke.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Krypton's Toy Vault",
+      "hasCanvas": false,
+      "bodyTextLen": 1120,
+      "bodyTextHash": "a84268d6fdb5e299ce3dfd2bbfb90943be61fcd89dae0d1f69b382158d159f17",
+      "bodyTextPrefix": "KRYPTON'S TOY VAULT Fantastic Four #550 (3-D Cover) Edit copy Al",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/ff550-smoke-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/ff550-smoke.json"
+}

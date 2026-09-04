@@ -1,0 +1,126 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-display: "Oswald", "Arial Narrow", Impact, sans-serif;
+  --font-sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Sans", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --color-bg: #070b14;
+  --color-bg-elevated: #0e1628;
+  --color-surface: #121c32;
+  --color-surface-2: #18243f;
+  --color-fg: #f2f5fa;
+  --color-muted: #8b9bb4;
+  --color-subtle: #5d6e88;
+  --color-border: #243454;
+  --color-border-strong: #35507a;
+
+  --color-primary: #e30613;
+  --color-primary-fg: #fff8f6;
+  --color-primary-hover: #c10510;
+  --color-primary-dim: #7a0d16;
+
+  --color-shield: #1e4fa3;
+  --color-shield-bright: #3a74d4;
+  --color-gold: #ffd200;
+  --color-gold-fg: #1a1400;
+  --color-ice: #d6e6ff;
+
+  --color-gain: #3dd68c;
+  --color-loss: #ff6b6b;
+  --color-warn: #f0b429;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+
+  --shadow-border: 0 0 0 1px rgba(214, 230, 255, 0.08);
+  --shadow-elevated: 0 0 0 1px rgba(214, 230, 255, 0.08), 0 18px 40px -24px rgba(0, 0, 0, 0.7);
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    min-height: 100dvh;
+    font-family: var(--font-sans);
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+    letter-spacing: 0.02em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-primary) 70%, black);
+    color: white;
+  }
+
+  img:not(.mark) {
+    outline: 1px solid rgba(214, 230, 255, 0.1);
+    outline-offset: -1px;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.85);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .vault-grid {
+    background-image:
+      linear-gradient(rgba(30, 79, 163, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(30, 79, 163, 0.07) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .hide-scrollbar {
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
