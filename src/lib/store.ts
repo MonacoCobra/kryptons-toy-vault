@@ -6,6 +6,7 @@ import type {
   CustomComic,
   OwnedComic,
   OwnedFigure,
+  PulseBaseline,
   VaultState,
   WishlistItem,
 } from "@/lib/types";
@@ -30,6 +31,8 @@ function initialState(): VaultState {
     ownedComics: Object.fromEntries(STARTER_OWNED_COMICS.map((o) => [o.id, o])),
     wantedComics: {},
     customComics: {},
+    pulseBaselines: {},
+    lastPulseNoticeWeek: null,
   };
 }
 
@@ -44,6 +47,8 @@ type Actions = {
   toggleWantComic: (comicId: string) => void;
   addCustomComic: (comic: CustomComic) => void;
   clearVault: () => void;
+  ensurePulseBaseline: (baseline: PulseBaseline) => void;
+  markPulseNoticeSeen: (week: string) => void;
 };
 
 const empty = (): VaultState => ({
@@ -52,6 +57,8 @@ const empty = (): VaultState => ({
   ownedComics: {},
   wantedComics: {},
   customComics: {},
+  pulseBaselines: {},
+  lastPulseNoticeWeek: null,
 });
 
 export const useVault = create<VaultState & Actions>()(
@@ -139,9 +146,17 @@ export const useVault = create<VaultState & Actions>()(
       addCustomComic: (comic) =>
         set((s) => ({ customComics: { ...s.customComics, [comic.id]: comic } })),
       clearVault: () => set(empty()),
+      ensurePulseBaseline: (baseline) =>
+        set((s) => {
+          if (s.pulseBaselines[baseline.week]) return s;
+          return {
+            pulseBaselines: { ...s.pulseBaselines, [baseline.week]: baseline },
+          };
+        }),
+      markPulseNoticeSeen: (week) => set({ lastPulseNoticeWeek: week }),
     }),
     {
-      name: "krypton-toy-vault-v3",
+      name: "krypton-toy-vault-v4",
       storage: createJSONStorage(() => {
         if (typeof window === "undefined") {
           return {
@@ -158,7 +173,18 @@ export const useVault = create<VaultState & Actions>()(
         ownedComics: s.ownedComics,
         wantedComics: s.wantedComics,
         customComics: s.customComics,
+        pulseBaselines: s.pulseBaselines ?? {},
+        lastPulseNoticeWeek: s.lastPulseNoticeWeek ?? null,
       }),
+      merge: (persisted, current) => {
+        const p = (persisted ?? {}) as Partial<VaultState>;
+        return {
+          ...current,
+          ...p,
+          pulseBaselines: p.pulseBaselines ?? {},
+          lastPulseNoticeWeek: p.lastPulseNoticeWeek ?? null,
+        };
+      },
     },
   ),
 );

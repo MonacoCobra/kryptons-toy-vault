@@ -1,13 +1,14 @@
 import type { ReactNode } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { BookOpen, Camera, LayoutGrid, Package, Vault, Youtube } from "lucide-react";
+import { Activity, BookOpen, Camera, LayoutGrid, Package, Vault, Youtube } from "lucide-react";
+import { PulseNotice } from "@/components/pulse-notice";
 import { useEnsureLiveDrop } from "@/lib/live-store";
 import { cn } from "@/lib/utils";
 
 const YOUTUBE_URL = "https://youtube.com/@kryptonstoyvault";
 
 const NAV: {
-  to: "/" | "/figures" | "/scan" | "/comics" | "/collection";
+  to: "/" | "/figures" | "/scan" | "/comics" | "/pulse" | "/collection";
   label: string;
   icon: typeof Vault;
   exact?: boolean;
@@ -17,7 +18,8 @@ const NAV: {
   { to: "/figures", label: "Figures", icon: Package },
   { to: "/scan", label: "Scan", icon: Camera, accent: true },
   { to: "/comics", label: "Comics", icon: BookOpen },
-  { to: "/collection", label: "Collection", icon: LayoutGrid },
+  { to: "/pulse", label: "Pulse", icon: Activity },
+  { to: "/collection", label: "Shelf", icon: LayoutGrid },
 ];
 
 export function AppShell({ children }: { children: ReactNode }) {
@@ -71,6 +73,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         </div>
       </header>
 
+      <PulseNotice />
       <div className="relative mx-auto w-full max-w-6xl px-4 pt-6 pb-32 md:pb-10">
         {children}
         <footer className="mt-16 flex items-center justify-between gap-3 border-t border-border pt-5">
@@ -89,7 +92,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       </div>
 
       <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-bg/95 backdrop-blur-md md:hidden">
-        <ul className="grid grid-cols-5 px-1 pb-[env(safe-area-inset-bottom)]">
+        <ul className="grid grid-cols-6 px-1 pb-[env(safe-area-inset-bottom)]">
           {NAV.map((item) => {
             const active = item.exact ? pathname === "/" : pathname.startsWith(item.to);
             const Icon = item.icon;

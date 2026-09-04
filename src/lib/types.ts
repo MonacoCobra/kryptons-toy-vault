@@ -137,12 +137,30 @@ export type WishlistItem = {
   addedAt: string;
 };
 
+export type PulseSlice = {
+  count: number;
+  value: number;
+};
+
+/** Baseline collection totals captured at the start of an ISO week. */
+export type PulseBaseline = {
+  week: string;
+  figures: PulseSlice;
+  comics: PulseSlice;
+  total: PulseSlice;
+  capturedAt: string;
+};
+
 export type VaultState = {
   ownedFigures: Record<string, OwnedFigure>;
   wantedFigures: Record<string, WishlistItem>;
   ownedComics: Record<string, OwnedComic>;
   wantedComics: Record<string, WishlistItem>;
   customComics: Record<string, CustomComic>;
+  /** Week-start baselines keyed by ISO week (e.g. 2026-W36). */
+  pulseBaselines: Record<string, PulseBaseline>;
+  /** Last ISO week the weekly pulse notice was shown. */
+  lastPulseNoticeWeek: string | null;
 };
 
 export type WeeklyDrop = {
