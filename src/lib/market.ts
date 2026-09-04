@@ -1,7 +1,7 @@
 import { FIGURE_BY_ID, FIGURES } from "@/data/figures";
 import { COMIC_BY_ID, COMICS } from "@/data/comics";
 import type { CatalogComic, CatalogFigure, SoldComp } from "@/lib/types";
-import { hashString, isoWeek, median, mulberry32 } from "@/lib/utils";
+import { hashString, isoWeek, mean, mulberry32 } from "@/lib/utils";
 
 const CONDITION_WEIGHTS = [
   { c: "MIB sealed", w: 0.52, mod: 1 },
@@ -47,6 +47,7 @@ export function compsForFigure(figure: CatalogFigure, year: number, week: number
       date: weekDate(year, week, dayOffset),
       condition: cond.c,
       title: listingTitle(figure, cond.c),
+      source: "synthetic",
     });
   }
   return comps.sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -86,13 +87,18 @@ export function compsForComic(comic: CatalogComic, year: number, week: number): 
       date: weekDate(year, week, dayOffset),
       condition: grade.c,
       title: `${comic.series} #${comic.issue}${variant} ${comic.publisher} ${grade.c}`,
+      source: "synthetic",
     });
   }
   return comps.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
+/** Average of the most recent matching sold comps (up to 5). */
 export function estimateFromComps(comps: SoldComp[]): number {
-  return Math.round(median(comps.map((c) => c.price)) * 100) / 100;
+  const recent = [...comps]
+    .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))
+    .slice(0, 5);
+  return Math.round(mean(recent.map((c) => c.price)) * 100) / 100;
 }
 
 export function currentWeek() {

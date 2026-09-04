@@ -4,15 +4,13 @@ import { Heart, Trash2 } from "lucide-react";
 import { COMIC_BY_ID, comicLabel } from "@/data/comics";
 import { AddComicDialog } from "@/components/add-comic-dialog";
 import { ComicCover } from "@/components/comic-cover";
-import { SoldListings } from "@/components/sold-listings";
-import { ValueChart } from "@/components/value-chart";
+import { MarketEstimate } from "@/components/market-estimate";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { formatMonthYear, usd } from "@/lib/format";
 import { useLiveComics, useLiveDrop } from "@/lib/live-store";
 import { comicHistory, comicMarket } from "@/lib/market";
 import { GRADES, useVault } from "@/lib/store";
-import { weekKey } from "@/lib/utils";
 
 export const Route = createFileRoute("/comics/$comicId")({
   component: ComicDetail,
@@ -89,23 +87,14 @@ function ComicDetail() {
           {comic.upc ? <Meta label="UPC" value={comic.upc} /> : null}
         </dl>
 
-        <section className="rounded-xl bg-bg-elevated p-4 shadow-[var(--shadow-border)]">
-          <p className="text-xs tracking-[0.18em] text-muted uppercase">Market estimate</p>
-          <p className="mt-1 font-display text-4xl tracking-wide text-gold tabular">{usd(market.estimate)}</p>
-          <p className={`text-sm ${deltaPct >= 0 ? "text-gain" : "text-loss"}`}>
-            {deltaPct >= 0 ? "+" : ""}
-            {deltaPct.toFixed(1)}% vs last week
-          </p>
-          <p className="mt-2 text-xs text-muted">
-            Median of five matching sold comps (raw and slabbed), refreshed {weekKey()}.
-          </p>
-          <div className="mt-4">
-            <ValueChart data={history} />
-          </div>
-          <div className="mt-4">
-            <SoldListings comps={market.comps} />
-          </div>
-        </section>
+        <MarketEstimate
+          kind="comic"
+          item={comic}
+          fallbackComps={market.comps}
+          fallbackEstimate={market.estimate}
+          history={history}
+          deltaPct={deltaPct}
+        />
 
         {owned ? (
           <section className="rounded-xl bg-bg-elevated p-4 shadow-[var(--shadow-border)]">

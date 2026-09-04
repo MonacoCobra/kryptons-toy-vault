@@ -5,15 +5,13 @@ import { COMPANY_BY_ID } from "@/data/companies";
 import { FIGURE_BY_ID } from "@/data/figures";
 import { AddFigureDialog } from "@/components/add-figure-dialog";
 import { FigureArt } from "@/components/figure-art";
-import { SoldListings } from "@/components/sold-listings";
-import { ValueChart } from "@/components/value-chart";
+import { MarketEstimate } from "@/components/market-estimate";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { formatDate, usd } from "@/lib/format";
 import { useLiveDrop, useLiveFigures } from "@/lib/live-store";
 import { figureHistory, figureMarket } from "@/lib/market";
 import { CONDITIONS, useVault } from "@/lib/store";
-import { weekKey } from "@/lib/utils";
 
 export const Route = createFileRoute("/figures/$figureId")({
   component: FigureDetail,
@@ -93,29 +91,14 @@ function FigureDetail() {
           <Meta label="Scale" value={figure.scale} />
         </dl>
 
-        <section className="rounded-xl bg-bg-elevated p-4 shadow-[var(--shadow-border)]">
-          <div className="flex items-end justify-between gap-3">
-            <div>
-              <p className="text-xs tracking-[0.18em] text-muted uppercase">Current estimate</p>
-              <p className="mt-1 font-display text-4xl tracking-wide text-gold tabular">{usd(market.estimate)}</p>
-              <p className={`text-sm ${deltaPct >= 0 ? "text-gain" : "text-loss"}`}>
-                {deltaPct >= 0 ? "+" : ""}
-                {deltaPct.toFixed(1)}% vs last week
-              </p>
-            </div>
-            <Badge tone="gold">5 sold comps</Badge>
-          </div>
-          <p className="mt-3 text-xs text-muted">
-            Median of the five most recent matching sold listings, modeled on typical eBay sold
-            phrasing for this release. Refreshes every ISO week ({weekKey()}).
-          </p>
-          <div className="mt-4">
-            <ValueChart data={history} />
-          </div>
-          <div className="mt-4">
-            <SoldListings comps={market.comps} />
-          </div>
-        </section>
+        <MarketEstimate
+          kind="figure"
+          item={figure}
+          fallbackComps={market.comps}
+          fallbackEstimate={market.estimate}
+          history={history}
+          deltaPct={deltaPct}
+        />
 
         {owned ? (
           <section className="rounded-xl bg-bg-elevated p-4 shadow-[var(--shadow-border)]">

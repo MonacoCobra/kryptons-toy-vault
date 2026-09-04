@@ -70,6 +70,9 @@ export type SoldComp = {
   date: string;
   condition: string;
   title: string;
+  /** Sold listing URL when sourced from eBay. */
+  url?: string;
+  source?: "ebay" | "synthetic";
 };
 
 export type OwnedFigure = {

@@ -50,6 +50,14 @@ export function median(values: number[]): number {
   return s.length % 2 ? s[mid]! : (s[mid - 1]! + s[mid]!) / 2;
 }
 
+/** Arithmetic mean of up to `limit` values (default: all). Empty → 0. */
+export function mean(values: number[], limit = values.length): number {
+  const slice = values.slice(0, Math.max(0, limit));
+  if (slice.length === 0) return 0;
+  const sum = slice.reduce((a, b) => a + b, 0);
+  return sum / slice.length;
+}
+
 export function slug(s: string) {
   return s
     .toLowerCase()
