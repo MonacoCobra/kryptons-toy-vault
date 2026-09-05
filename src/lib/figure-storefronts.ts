@@ -1,0 +1,203 @@
+/**
+ * Live figure ingest from brand Shopify storefront product JSON.
+ * Prefer real CDN product images — never generative art.
+ *
+ * Hasbro Pulse / BBTS / Entertainment Earth do not expose stable public
+ * products.json from our network; add shops here when their Shopify feed works.
+ */
+
+import type { CatalogFigure, CompanyId, ItemKind } from "@/lib/types";
+import { slug } from "@/lib/utils";
+
+export type StorefrontSource = {
+  id: string;
+  /** Origin only, e.g. https://super7.com */
+  baseUrl: string;
+  company: CompanyId;
+  /** Optional collection path; default /products.json */
+  productsPath?: string;
+};
+
+/** Shops verified to return Shopify `{ products: [...] }` JSON. */
+export const FIGURE_STOREFRONTS: StorefrontSource[] = [
+  { id: "super7", baseUrl: "https://super7.com", company: "super7" },
+  { id: "goodsmile-us", baseUrl: "https://goodsmileus.com", company: "figma" },
+];
+
+type ShopifyImage = { src?: string };
+type ShopifyVariant = { price?: string; sku?: string; available?: boolean };
+type ShopifyProduct = {
+  id?: number | string;
+  title?: string;
+  handle?: string;
+  vendor?: string;
+  product_type?: string;
+  tags?: string[] | string;
+  published_at?: string;
+  updated_at?: string;
+  created_at?: string;
+  body_html?: string;
+  images?: ShopifyImage[];
+  variants?: ShopifyVariant[];
+};
+
+const UA = "KryptonsToyVault/1.0 (personal collection; weekly figure ingest)";
+
+const SKIP_TYPE =
+  /\b(apparel|shirt|hoodie|hat|cap|sock|sticker|pin|poster|print|mug|bag|wallet|blanket|keychain|lanyard|gift.?card|digital)\b/i;
+const FIGURE_HINT =
+  /\b(figure|figurine|statue|mafex|figuarts|figma|mezco|legends|classified|black series|model kit|gunpla|plamo|soft.?vinyl|sofubi|reactors|ultimates|reAction)\b/i;
+
+function tagList(tags: ShopifyProduct["tags"]): string[] {
+  if (Array.isArray(tags)) return tags.map((t) => String(t));
+  if (typeof tags === "string")
+    return tags
+      .split(",")
+      .map((t) => t.trim())
+      .filter(Boolean);
+  return [];
+}
+
+function isFigureLike(p: ShopifyProduct): boolean {
+  const type = p.product_type ?? "";
+  const title = p.title ?? "";
+  const tags = tagList(p.tags).join(" ");
+  const blob = `${type} ${title} ${tags}`;
+  if (SKIP_TYPE.test(type) || SKIP_TYPE.test(title)) return false;
+  if (FIGURE_HINT.test(blob) || FIGURE_HINT.test(type)) return true;
+  // Super7 / Good Smile catalogs are mostly figures; allow generic "Figures" types
+  if (/figures?/i.test(type) || /statue/i.test(type) || /model/i.test(type)) return true;
+  return false;
+}
+
+function kindFor(p: ShopifyProduct): ItemKind {
+  const blob = `${p.product_type ?? ""} ${p.title ?? ""} ${tagList(p.tags).join(" ")}`;
+  if (/\b(gunpla|plamo|model kit|hguc|rg |mg |pg )\b/i.test(blob)) return "kit";
+  return "figure";
+}
+
+function scaleFor(p: ShopifyProduct, kind: ItemKind): string {
+  const blob = `${p.title ?? ""} ${tagList(p.tags).join(" ")} ${p.body_html ?? ""}`;
+  const m = blob.match(/\b(1\/\d+)\b/) || blob.match(/\b(\d+(?:\.\d+)?")\b/);
+  if (m) return m[1]!;
+  return kind === "kit" ? "1/144" : '6"';
+}
+
+function parseMoney(v: unknown): number {
+  const n = typeof v === "number" ? v : Number.parseFloat(String(v ?? "").replace(/[^0-9.]/g, ""));
+  return Number.isFinite(n) ? n : 0;
+}
+
+function dateFrom(p: ShopifyProduct, fallback: string): string {
+  for (const raw of [p.published_at, p.created_at, p.updated_at]) {
+    if (!raw) continue;
+    const d = String(raw).slice(0, 10);
+    if (/^\d{4}-\d{2}-\d{2}$/.test(d)) return d;
+  }
+  return fallback;
+}
+
+function splitTitle(title: string): { name: string; subtitle: string } {
+  const cleaned = title.replace(/\s+/g, " ").trim();
+  const parts = cleaned.split(/\s+[—–-]\s+/);
+  if (parts.length >= 2) {
+    return { name: parts[0]!.trim(), subtitle: parts.slice(1).join(" - ").trim() };
+  }
+  const colon = cleaned.split(":");
+  if (colon.length >= 2 && colon[0]!.length < 48) {
+    return { name: colon[0]!.trim(), subtitle: colon.slice(1).join(":").trim() };
+  }
+  return { name: cleaned, subtitle: "" };
+}
+
+async function fetchProductsPage(baseUrl: string, path: string, page: number): Promise<ShopifyProduct[]> {
+  const url = new URL(path, baseUrl);
+  url.searchParams.set("limit", "50");
+  url.searchParams.set("page", String(page));
+  const res = await fetch(url.toString(), {
+    headers: { Accept: "application/json", "User-Agent": UA },
+    signal: AbortSignal.timeout(20_000),
+  });
+  if (!res.ok) return [];
+  const text = await res.text();
+  if (text.trimStart().startsWith("<")) return [];
+  try {
+    const data = JSON.parse(text) as { products?: ShopifyProduct[] };
+    return Array.isArray(data.products) ? data.products : [];
+  } catch {
+    return [];
+  }
+}
+
+function mapProduct(
+  p: ShopifyProduct,
+  source: StorefrontSource,
+  week: string,
+  fallbackDate: string,
+): CatalogFigure | null {
+  if (!p.title || !isFigureLike(p)) return null;
+  const { name, subtitle } = splitTitle(p.title);
+  if (!name) return null;
+  const kind = kindFor(p);
+  const variant = p.variants?.[0];
+  const msrp = parseMoney(variant?.price) || (kind === "kit" ? 49.99 : 24.99);
+  const imageUrl = p.images?.find((i) => i.src)?.src;
+  const tags = new Set<string>(["this-week", "storefront", source.id, source.company, kind]);
+  for (const t of tagList(p.tags).slice(0, 8)) tags.add(t.toLowerCase());
+  const exclusiveTag = tagList(p.tags).find((t) => /exclusive/i.test(t));
+  const handle = p.handle || slug(name);
+  return {
+    id: `sf-${source.id}-${handle}`.slice(0, 80),
+    name,
+    subtitle: subtitle || p.product_type || source.id,
+    line: p.product_type || p.vendor || source.id,
+    company: source.company,
+    kind,
+    releaseDate: dateFrom(p, fallbackDate),
+    msrp,
+    scale: scaleFor(p, kind),
+    sku: variant?.sku || undefined,
+    exclusive: exclusiveTag || undefined,
+    imageUrl: imageUrl?.startsWith("http") ? imageUrl : undefined,
+    demand: 1,
+    tags: [...tags],
+  };
+}
+
+/** Fetch recent figure-like products from configured Shopify storefronts. */
+export async function fetchStorefrontFigures(opts: {
+  week: string;
+  today: string;
+  max?: number;
+  sources?: StorefrontSource[];
+}): Promise<CatalogFigure[]> {
+  const max = opts.max ?? 18;
+  const sources = opts.sources ?? FIGURE_STOREFRONTS;
+  const out: CatalogFigure[] = [];
+  const seen = new Set<string>();
+
+  for (const source of sources) {
+    if (out.length >= max) break;
+    const path = source.productsPath ?? "/products.json";
+    // First pages are newest on most Shopify shops
+    for (let page = 1; page <= 3 && out.length < max; page++) {
+      let products: ShopifyProduct[] = [];
+      try {
+        products = await fetchProductsPage(source.baseUrl, path, page);
+      } catch {
+        break;
+      }
+      if (!products.length) break;
+      for (const p of products) {
+        const fig = mapProduct(p, source, opts.week, opts.today);
+        if (!fig) continue;
+        const key = fig.id.toLowerCase();
+        if (seen.has(key)) continue;
+        seen.add(key);
+        out.push(fig);
+        if (out.length >= max) break;
+      }
+    }
+  }
+  return out;
+}

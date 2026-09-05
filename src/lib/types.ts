@@ -61,6 +61,8 @@ export type CatalogFigure = {
   scale: string;
   sku?: string;
   exclusive?: string;
+  /** Official storefront / retailer product image (never AI). */
+  imageUrl?: string;
   demand: number;
   tags: string[];
 };

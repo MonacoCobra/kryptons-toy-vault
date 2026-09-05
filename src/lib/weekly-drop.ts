@@ -1,5 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import seed from "@/data/weekly-seed.json";
+import { fetchStorefrontFigures } from "@/lib/figure-storefronts";
 import type { CatalogComic, CatalogFigure, ComicFormat, CompanyId, ItemKind, WeeklyDrop } from "@/lib/types";
 import { slug, weekKey } from "@/lib/utils";
 
@@ -262,6 +263,10 @@ function normalizeFigures(rows: unknown[], week: string, fallbackDate: string): 
       msrp: num(r.msrp, kind === "kit" ? 49.99 : 24.99),
       scale: str(r.scale) || (kind === "kit" ? "1/144" : '6"'),
       exclusive: str(r.exclusive) || undefined,
+      imageUrl: (() => {
+        const img = str(r.imageUrl ?? r.image);
+        return img.startsWith("http") ? img : undefined;
+      })(),
       demand: 1,
       tags: ["this-week", company, kind],
     });
@@ -428,7 +433,17 @@ company must be one of: hasbro,toybiz,mattel,mcfarlane,mafex,mezco,bandai,shfigu
   const payload = (await res.json()) as { output?: unknown };
   const parsed = extractJson(outputText(payload));
   const comics = normalizeComics(parsed.comics ?? [], week, today);
-  const figures = normalizeFigures(parsed.figures ?? [], week, today);
+  let figures = normalizeFigures(parsed.figures ?? [], week, today);
+  try {
+    const storefront = await fetchStorefrontFigures({ week, today, max: 18 });
+    if (storefront.length) {
+      // Prefer live storefront products (real images) over LLM figure guesses.
+      const seen = new Set(storefront.map((f) => f.id));
+      figures = [...storefront, ...figures.filter((f) => !seen.has(f.id))].slice(0, 18);
+    }
+  } catch {
+    /* keep LLM/seed figures */
+  }
   return {
     week,
     fetchedAt: new Date().toISOString(),
