@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Heart, Trash2 } from "lucide-react";
 import { COMPANY_BY_ID } from "@/data/companies";
-import { FIGURE_BY_ID } from "@/data/figures";
+import { figureById } from "@/data/figures";
 import { AddFigureDialog } from "@/components/add-figure-dialog";
 import { FigureArt } from "@/components/figure-art";
 import { MarketEstimate } from "@/components/market-estimate";
@@ -21,7 +21,7 @@ function FigureDetail() {
   const { figureId } = Route.useParams();
   const extras = useLiveFigures();
   const loading = useLiveDrop((s) => s.loading);
-  const figure = FIGURE_BY_ID[figureId] ?? extras.find((f) => f.id === figureId);
+  const figure = figureById(figureId, extras);
   if (!figure) {
     if (figureId.startsWith("live-") && loading) {
       return <p className="py-16 text-center text-sm text-muted">Loading this week's drop…</p>;
