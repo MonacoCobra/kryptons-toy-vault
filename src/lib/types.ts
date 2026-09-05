@@ -20,7 +20,8 @@ export type CompanyId =
   | "mondo"
   | "threezero"
   | "dcdirect"
-  | "kenner";
+  | "kenner"
+  | "valaverse";
 
 export type ItemKind = "figure" | "kit";
 

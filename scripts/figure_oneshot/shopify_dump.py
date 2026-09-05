@@ -45,6 +45,12 @@ STOREFRONTS = [
             re.I,
         ),
     },
+    {
+        "id": "valaverse",
+        "baseUrl": "https://www.valaverse.com",
+        "company": "valaverse",
+        "requireHint": re.compile(r"action force|figure|trooper|gear|pack", re.I),
+    },
 ]
 
 SKIP_TYPE = re.compile(
@@ -134,6 +140,11 @@ def is_figure_like(p: dict, source: dict) -> bool:
             return False
         if not re.search(r"\b(1/?12|1/?6|figure|soft vinyl|vinyl figure)\b", blob, re.I):
             return False
+    # Valaverse: Action Force AF shop — keep figures/gear packs; skip comics/fees/apparel
+    if source["id"] == "valaverse":
+        if re.search(r"\b(comic book|mws_fee|apparel|t-?shirt|hoodie|mug|sticker|poster)\b", blob, re.I):
+            return False
+        return True
     # shop.dc.com: AF only (skip merch/statues/funko/plush)
     if source["id"] == "shop-dc":
         if re.search(
@@ -149,7 +160,7 @@ def is_figure_like(p: dict, source: dict) -> bool:
         return False
     if FIGURE_HINT.search(blob) or re.search(r"figures?", ptype, re.I):
         return True
-    if source["company"] in {"bossfight", "loyalsubjects", "super7", "hiya", "premiumdna"}:
+    if source["company"] in {"bossfight", "loyalsubjects", "super7", "hiya", "premiumdna", "valaverse"}:
         return True
     return False
 

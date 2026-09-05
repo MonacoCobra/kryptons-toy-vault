@@ -199,6 +199,15 @@ export const COMPANIES: Company[] = [
     hq: "Cincinnati, OH",
     accent: "#f0a500",
   },
+  {
+    id: "valaverse",
+    name: "Valaverse",
+    short: "Valaverse",
+    blurb: "Action Force 1:12 military and speculative soldier figures.",
+    founded: "2018",
+    hq: "USA",
+    accent: "#2d6a4f",
+  },
 ];
 
 export const COMPANY_BY_ID: Record<CompanyId, Company> = Object.fromEntries(

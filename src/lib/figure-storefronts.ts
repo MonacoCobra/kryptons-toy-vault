@@ -4,7 +4,7 @@
  *
  * Focus: articulated action figures (not pins, dolls, or statue lines).
  * Hasbro Pulse / BBTS / EE / NECA / Mezco / McFarlane official shops still lack stable public JSON
- * (shop.dc.com carries some McFarlane Multiverse AF SKUs).
+ * (shop.dc.com carries some McFarlane Multiverse AF SKUs; Valaverse Action Force verified).
  */
 
 import type { CatalogFigure, CompanyId, ItemKind } from "@/lib/types";
@@ -42,6 +42,12 @@ export const FIGURE_STOREFRONTS: StorefrontSource[] = [
     baseUrl: "https://shop.dc.com",
     company: "mcfarlane",
     requireHint: /action figure|dc multiverse|mcfarlane collector/i,
+  },
+  {
+    id: "valaverse",
+    baseUrl: "https://www.valaverse.com",
+    company: "valaverse",
+    requireHint: /action force|figure|trooper|gear/i,
   },
 ];
 
@@ -90,7 +96,12 @@ function isFigureLike(p: ShopifyProduct, source: StorefrontSource): boolean {
   // Collector shops are mostly figures; allow generic "Figures" types
   if (/figures?/i.test(type) || /statue/i.test(type) || /model/i.test(type)) return true;
   // Boss Fight / TLS / Super7: if not skipped, keep
-  if (source.company === "bossfight" || source.company === "loyalsubjects" || source.company === "super7") {
+  if (
+    source.company === "bossfight" ||
+    source.company === "loyalsubjects" ||
+    source.company === "super7" ||
+    source.company === "valaverse"
+  ) {
     return true;
   }
   return false;
