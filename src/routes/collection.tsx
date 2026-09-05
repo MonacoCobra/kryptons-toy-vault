@@ -56,6 +56,9 @@ function CollectionPage() {
         </div>
         <div className="flex flex-wrap gap-2">
           <Button variant="secondary" asChild>
+            <Link to="/import">Import LOCG</Link>
+          </Button>
+          <Button variant="secondary" asChild>
             <Link to="/wishlist">Want list</Link>
           </Button>
           <Button variant="ghost" onClick={() => clearVault()}>
