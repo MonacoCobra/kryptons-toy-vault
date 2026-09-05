@@ -1,4 +1,5 @@
 import type { CatalogComic, ComicFormat } from "@/lib/types";
+import coverUrls from "./comic-cover-urls.json";
 
 type Row = [
   id: string,
@@ -2719,7 +2720,7 @@ export const COMICS: CatalogComic[] = rows.map(
     demand,
     key: key === 1,
     palette: pal(palette),
-    cover: extra?.cover,
+    cover: extra?.cover ?? (coverUrls as Record<string, string>)[id],
   }),
 );
 
