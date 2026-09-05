@@ -8,3 +8,6 @@ dist/
 .vercel/output/
 .node_modules.lock
 .env.local
+
+__pycache__/
+*.pyc

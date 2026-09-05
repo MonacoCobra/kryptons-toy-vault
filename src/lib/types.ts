@@ -17,7 +17,8 @@ export type CompanyId =
   | "loyalsubjects"
   | "premiumdna"
   | "hiya"
-  | "mondo";
+  | "mondo"
+  | "threezero";
 
 export type ItemKind = "figure" | "kit";
 

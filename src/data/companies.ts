@@ -172,6 +172,15 @@ export const COMPANIES: Company[] = [
     hq: "Austin, TX",
     accent: "#6a040f",
   },
+  {
+    id: "threezero",
+    name: "threezero",
+    short: "threezero",
+    blurb: "DLX and sixth-scale articulated figures — Transformers, games, film.",
+    founded: "2013",
+    hq: "Hong Kong",
+    accent: "#212529",
+  },
 ];
 
 export const COMPANY_BY_ID: Record<CompanyId, Company> = Object.fromEntries(

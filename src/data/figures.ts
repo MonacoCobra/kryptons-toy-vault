@@ -1,4 +1,5 @@
 import type { CatalogFigure, CompanyId, ItemKind } from "@/lib/types";
+import archiveRows from "./figure-archive/oneshot.json";
 
 type Row = [
   id: string,
@@ -479,8 +480,10 @@ const rows: Row[] = [
   ["bs-bb8", "BB-8", "The Force Awakens", "Star Wars Black Series", "hasbro", "figure", "2015-09-01", 19.99, '6"', 1.0, "star-wars"],
 ];
 
-export const FIGURES: CatalogFigure[] = rows.map(
-  ([id, name, subtitle, line, company, kind, releaseDate, msrp, scale, demand, tags, extra]) => ({
+function rowToFigure(
+  [id, name, subtitle, line, company, kind, releaseDate, msrp, scale, demand, tags, extra]: Row,
+): CatalogFigure {
+  return {
     id,
     name,
     subtitle,
@@ -494,8 +497,64 @@ export const FIGURES: CatalogFigure[] = rows.map(
     tags: tags.split(","),
     sku: extra?.sku,
     exclusive: extra?.exclusive,
-  }),
-);
+  };
+}
+
+type ArchiveRow = {
+  id: string;
+  name: string;
+  subtitle: string;
+  line: string;
+  company: CompanyId;
+  kind: ItemKind;
+  releaseDate: string;
+  msrp: number;
+  scale: string;
+  demand: number;
+  tags: string[];
+  sku?: string;
+  exclusive?: string;
+  imageUrl?: string;
+};
+
+function archiveToFigure(r: ArchiveRow): CatalogFigure {
+  return {
+    id: r.id,
+    name: r.name,
+    subtitle: r.subtitle,
+    line: r.line,
+    company: r.company,
+    kind: r.kind,
+    releaseDate: r.releaseDate,
+    msrp: r.msrp,
+    scale: r.scale,
+    demand: r.demand,
+    tags: r.tags,
+    sku: r.sku,
+    exclusive: r.exclusive,
+    imageUrl: r.imageUrl,
+  };
+}
+
+function dedupeAppend(base: CatalogFigure[], extra: CatalogFigure[]): CatalogFigure[] {
+  const ids = new Set(base.map((f) => f.id));
+  const keys = new Set(base.map((f) => `${f.name}|${f.subtitle}|${f.line}|${f.company}`.toLowerCase()));
+  const out = [...base];
+  for (const f of extra) {
+    const k = `${f.name}|${f.subtitle}|${f.line}|${f.company}`.toLowerCase();
+    if (ids.has(f.id) || keys.has(k)) continue;
+    ids.add(f.id);
+    keys.add(k);
+    out.push(f);
+  }
+  return out;
+}
+
+const SEED_FIGURES: CatalogFigure[] = rows.map(rowToFigure);
+const ARCHIVE_FIGURES: CatalogFigure[] = (archiveRows as ArchiveRow[]).map(archiveToFigure);
+
+/** Permanent catalog: seed rows + one-shot archive dump (Shopify + curated). */
+export const FIGURES: CatalogFigure[] = dedupeAppend(SEED_FIGURES, ARCHIVE_FIGURES);
 
 export const FIGURE_BY_ID: Record<string, CatalogFigure> = Object.fromEntries(
   FIGURES.map((f) => [f.id, f]),

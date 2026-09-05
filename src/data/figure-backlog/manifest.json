@@ -1,5 +1,15 @@
 {
-  "strategy": "inject-one-batch-every-~3-weeks-with-noteworthy-promotion",
+  "strategy": "one-shot-permanent-dump",
+  "note": "Batches are optional legacy only. Permanent catalog growth is the oneshot archive (Shopify full pagination + curated major lines) plus weekly Shopify N&N ingest.",
+  "oneshotInjectedAt": "2026-09-05",
+  "oneshotFile": "src/data/figure-archive/oneshot.json",
+  "oneshotCounts": {
+    "shopify": 3549,
+    "curated": 396,
+    "archiveTotal": 3945,
+    "priorSeedAndInjected": 426,
+    "projectedFIGURES": 4371
+  },
   "targetBatchSize": [
     180,
     250
@@ -9,5 +19,6 @@
   "queued": [],
   "injected": [
     "batch-001"
-  ]
+  ],
+  "legacyBatchesOptional": true
 }

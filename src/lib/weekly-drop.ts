@@ -24,6 +24,7 @@ const COMPANIES: CompanyId[] = [
   "premiumdna",
   "hiya",
   "mondo",
+  "threezero",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];
@@ -164,6 +165,7 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/premium dna/.test(s)) return "premiumdna";
   if (/\bhiya\b/.test(s)) return "hiya";
   if (/\bmondo\b/.test(s)) return "mondo";
+  if (/\bthreezero\b/.test(s)) return "threezero";
   if (/masterverse|origins|mattel|wwe elite/.test(s)) return "mattel";
   if (/toy ?biz/.test(s)) return "toybiz";
   return null;

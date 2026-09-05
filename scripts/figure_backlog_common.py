@@ -33,6 +33,7 @@ VALID_COMPANIES = {
     "premiumdna",
     "hiya",
     "mondo",
+    "threezero",
 }
 VALID_KINDS = {"figure", "kit"}
 
