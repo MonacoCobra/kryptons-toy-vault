@@ -29,6 +29,15 @@ const COMPANIES: CompanyId[] = [
   "kenner",
   "valaverse",
   "jakks",
+  "takaratomy",
+  "playmates",
+  "kaiyodo",
+  "jazwares",
+  "diamondselect",
+  "joytoy",
+  "beastkingdom",
+  "enterbay",
+  "funko",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];
@@ -150,6 +159,7 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   const s = `${raw} ${line} ${name}`.toLowerCase();
   const direct = COMPANIES.find((id) => s.includes(id));
   if (direct) return direct;
+  if (/takara|\bmpg\b|masterpiece g/.test(s)) return "takaratomy";
   if (/marvel legends|black series|classified|transformers|studio series|gi joe|power rangers|hasbro|pulse/.test(s)) {
     return "hasbro";
   }
@@ -172,6 +182,14 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/\bthreezero\b/.test(s)) return "threezero";
   if (/masterverse|origins|mattel|wwe elite/.test(s)) return "mattel";
   if (/jakks|primal age|sonic the hedgehog/.test(s)) return "jakks";
+  if (/playmates/.test(s)) return "playmates";
+  if (/kaiyodo|revoltech|amazing yamaguchi/.test(s)) return "kaiyodo";
+  if (/jazwares|\bfortnite\b|\baew\b|unrivaled/.test(s)) return "jazwares";
+  if (/diamond select|marvel select|\bdst\b/.test(s)) return "diamondselect";
+  if (/joytoy|warhammer 40|dark source/.test(s)) return "joytoy";
+  if (/beast kingdom|dynamic action heroes|\bdah\b/.test(s)) return "beastkingdom";
+  if (/enterbay/.test(s)) return "enterbay";
+  if (/funko legacy|funko.*action/.test(s)) return "funko";
   if (/toy ?biz/.test(s)) return "toybiz";
   return null;
 }

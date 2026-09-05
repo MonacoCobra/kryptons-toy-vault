@@ -103,3 +103,25 @@ Curated Mattel Masterverse + Origins lines (distinct from Shopify "Masters of th
 Real Shopify CDN images for curated gaps: `scripts/bake-figure-images.py` →
 `src/data/figure-image-urls.json` (+ oneshot `imageUrl` patches). See
 `docs/figure-image-bake.md`. No AI art; high-confidence matches only.
+
+## BBTS AF brand expansion (2026-09-05)
+
+Company universe (`company-universe.txt`) lists ~1599 BBTS A–Z names for awareness.
+This pass filled **CompanyId + curated starter depth** for collectors’ AF makers that
+were missing or thin — **not** a row per universe brand.
+
+| CompanyId | Notes |
+| --- | --- |
+| `takaratomy` | Transformers **MPG** (Masterpiece G) — listable releases |
+| `playmates` | TMNT classic 1988–97 depth + Mutant Mayhem / Tales / Classic Collection reissues + Exo-Squad / related AF |
+| `kaiyodo` | Amazing Yamaguchi + Revoltech starter |
+| `jazwares` | Fortnite AF + AEW Unrivaled |
+| `diamondselect` | Marvel Select + Diamond Select movie/TV AF |
+| `joytoy` | Warhammer 40K + Dark Source |
+| `beastkingdom` | Dynamic Action Heroes |
+| `enterbay` | NBA 1:6 + movie AF |
+| `funko` | Legacy Collection / AF only (**not** Pops) |
+| densify | `storm`, `shfiguarts` (Tamashii), `threezero` |
+
+Most of the ~1599 BBTS names still have **no** rows — by design (quality bar, AF-only).
+Regenerate with `python3 scripts/gen-figure-oneshot.py --curated-only`.

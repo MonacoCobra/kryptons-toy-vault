@@ -11,6 +11,9 @@ from figure_oneshot.curated_densify import build_densify
 from figure_oneshot.curated_mafex_mezco import build_mafex_mezco
 from figure_oneshot.curated_transformers import build_transformers
 from figure_oneshot.curated_dcdirect import build_dcdirect
+from figure_oneshot.curated_mpg import build_mpg
+from figure_oneshot.curated_playmates import build_playmates
+from figure_oneshot.curated_bbts_wave import build_bbts_wave
 
 FLOOR = "1980-01-01"
 
@@ -1907,6 +1910,15 @@ def build_curated() -> list[dict]:
 
     # DC Direct Icons + classic 1998-2012 densify
     rows += build_dcdirect()
+
+    # Takara Tomy Transformers MPG
+    rows += build_mpg()
+
+    # Playmates TMNT + other AF
+    rows += build_playmates()
+
+    # BBTS AF brand expansion wave
+    rows += build_bbts_wave()
 
     # dedupe by id
     seen=set(); out=[]

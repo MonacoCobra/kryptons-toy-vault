@@ -22,7 +22,16 @@ export type CompanyId =
   | "dcdirect"
   | "kenner"
   | "valaverse"
-  | "jakks";
+  | "jakks"
+  | "takaratomy"
+  | "playmates"
+  | "kaiyodo"
+  | "jazwares"
+  | "diamondselect"
+  | "joytoy"
+  | "beastkingdom"
+  | "enterbay"
+  | "funko";
 
 export type ItemKind = "figure" | "kit";
 
