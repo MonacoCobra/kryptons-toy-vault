@@ -97,3 +97,9 @@ Curated Mattel Masterverse + Origins lines (distinct from Shopify "Masters of th
 ## JAKKS / Masterverse / BST AXN densify (2026-09-05)
 
 `CompanyId` `jakks` added for Sonic the Hedgehog AF + MotU Primal Age. Further Masterverse leftovers (New Eternia / Revolution / Creations / Movie) and Loyal Subjects BST AXN curated densify merged via `gen-figure-oneshot.py --curated-only`.
+
+## Image bake (2026-09-05)
+
+Real Shopify CDN images for curated gaps: `scripts/bake-figure-images.py` →
+`src/data/figure-image-urls.json` (+ oneshot `imageUrl` patches). See
+`docs/figure-image-bake.md`. No AI art; high-confidence matches only.

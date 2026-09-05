@@ -1,5 +1,13 @@
 import type { CatalogFigure, CompanyId, ItemKind } from "@/lib/types";
 import archiveRows from "./figure-archive/oneshot.json";
+import figureImageUrls from "./figure-image-urls.json";
+
+/** Baked Shopify CDN URLs for curated/placeholder figures (see scripts/bake-figure-images.py). */
+const BAKED_IMAGE_URLS = figureImageUrls as Record<string, string>;
+
+function resolveFigureImageUrl(id: string, existing?: string): string | undefined {
+  return existing || BAKED_IMAGE_URLS[id];
+}
 
 type Row = [
   id: string,
@@ -497,6 +505,7 @@ function rowToFigure(
     tags: tags.split(","),
     sku: extra?.sku,
     exclusive: extra?.exclusive,
+    imageUrl: resolveFigureImageUrl(id),
   };
 }
 
@@ -532,7 +541,7 @@ function archiveToFigure(r: ArchiveRow): CatalogFigure {
     tags: r.tags,
     sku: r.sku,
     exclusive: r.exclusive,
-    imageUrl: r.imageUrl,
+    imageUrl: resolveFigureImageUrl(r.id, r.imageUrl),
   };
 }
 

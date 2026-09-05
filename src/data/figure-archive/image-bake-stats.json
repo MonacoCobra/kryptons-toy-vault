@@ -1,0 +1,173 @@
+{
+  "bakedAt": "2026-09-05T19:35:26.027547+00:00",
+  "day": "2026-09-05",
+  "minScore": 16.0,
+  "indexSize": 4237,
+  "fetchLive": false,
+  "before": {
+    "total": 7269,
+    "withImage": 3920,
+    "pct": 53.93
+  },
+  "after": {
+    "total": 7269,
+    "withImage": 4186,
+    "pct": 57.59
+  },
+  "matched": 266,
+  "candidatesAboveThreshold": 478,
+  "patchedOneshot": 266,
+  "urlMapSize": 266,
+  "byCompany": {
+    "mattel": 119,
+    "super7": 78,
+    "neca": 52,
+    "mcfarlane": 17
+  },
+  "safeguards": [
+    "same-company hard gate",
+    "blocked families: JLU/DCUC/DC Direct (no honest Shopify line)",
+    "line-family regex required when known",
+    "character-focused name match (subtitle for ULTIMATES/ReAction headers)",
+    "first significant name token required",
+    "multi-token subtitle requires \u22651 hit",
+    "one product image \u2192 one figure (best score)",
+    "Mattel DC Premier not used for unrelated curated lines"
+  ],
+  "samples": [
+    {
+      "score": 35.0,
+      "figureId": "mcfdc-superman-1978",
+      "figure": "Superman / The Movie 1978 Deluxe / DC Multiverse",
+      "product": "SUPERMAN / THE MOVIE (1978) McFarlane Toys DC Multiverse Deluxe Theatrical Edition Superman Action Figure",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0268/8129/4530/files/17839_01_NL.1772485577745.jpg?v=1772487254"
+    },
+    {
+      "score": 35.0,
+      "figureId": "d14s7u-ult-thundercats-jaga",
+      "figure": "Jaga / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
+      "product": "ThunderCats ULTIMATES! Wave 3 / Jaga",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/products/1585600245UL-Thundercats_Jaga_STORE.png?v=17594"
+    },
+    {
+      "score": 35.0,
+      "figureId": "d14s7u-ult-thundercats-wilykit",
+      "figure": "WilyKit / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
+      "product": "Thundercats ULTIMATES! Wave 8 / WilyKit",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/products/UL-Thundercats_W8_Wilykit_Grid_2048.jpg?v=16763"
+    },
+    {
+      "score": 35.0,
+      "figureId": "d14s7u-ult-thundercats-wilykat",
+      "figure": "WilyKat / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
+      "product": "ThunderCats ULTIMATES! Wave 9 / WilyKat",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/files/UL-Thundercats_W9_Wilykat_Grid.jpg?v=1686853767"
+    },
+    {
+      "score": 35.0,
+      "figureId": "d14s7u-ult-thundercats-snarf",
+      "figure": "Snarf / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
+      "product": "ThunderCats ULTIMATES! / Snarf",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/files/UL-ThunderCats_Snarf_product.jpg?v=1783027640"
+    },
+    {
+      "score": 35.0,
+      "figureId": "d14s7u-ult-thundercats-monkian",
+      "figure": "Monkian / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
+      "product": "ThunderCats ULTIMATES! Wave 4 / Monkian",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/products/1600215448UL-Thundercats_W4_Monkian_Store_2048."
+    },
+    {
+      "score": 35.0,
+      "figureId": "d14s7u-ult-thundercats-jackalman",
+      "figure": "Jackalman / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
+      "product": "Thundercats Ultimate Figure / Jackalman",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/products/Jackalman_white.png?v=1759451221"
+    },
+    {
+      "score": 35.0,
+      "figureId": "d14s7u-ult-thundercats-slithe",
+      "figure": "Slithe / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
+      "product": "ThunderCats ULTIMATES! Wave 3 / Slithe",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/files/UL-ThunderCats_Slithe_package.jpg?v=1759864796"
+    },
+    {
+      "score": 35.0,
+      "figureId": "d14s7u-ult-thundercats-tygra",
+      "figure": "Tygra / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
+      "product": "ThunderCats ULTIMATES! / Tygra",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/files/UL-ThunderCats_Tygra_product1.jpg?v=1773076978"
+    },
+    {
+      "score": 35.0,
+      "figureId": "d14s7u-ult-thundercats-panthro",
+      "figure": "Panthro / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
+      "product": "ThunderCats ULTIMATES! Figure / Panthro",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/products/P01.png?v=1667591599"
+    },
+    {
+      "score": 35.0,
+      "figureId": "d14s7u-ult-thundercats-liono",
+      "figure": "Lion-O / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
+      "product": "ThunderCats ULTIMATES! Figure / Lion-O",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/products/L01.png?v=1759940398"
+    },
+    {
+      "score": 35.0,
+      "figureId": "d14s7u-ult-thundercats-cheetara",
+      "figure": "Cheetara / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
+      "product": "ThunderCats ULTIMATES! / Cheetara",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/files/UL-ThunderCats_Cheetara_product1.jpg?v=1773076979"
+    }
+  ],
+  "lowSamples": [
+    {
+      "score": 24.0,
+      "figureId": "neca-foot-soldier",
+      "figure": "Foot Soldier / Animated Series / TMNT",
+      "product": "Teenage Mutant Ninja Turtles 2 / Foot Soldier with Weapons Rack 7\u201d Scale Action Figures (2-Pack)"
+    },
+    {
+      "score": 24.0,
+      "figureId": "wwe-elite-alexa",
+      "figure": "Alexa Bliss / Elite Collection / WWE Elite",
+      "product": "WWE Alexa Bliss Ultimate Edition Action Figure / mattel-creations"
+    },
+    {
+      "score": 24.0,
+      "figureId": "wwe-elite-orton",
+      "figure": "Randy Orton / Elite Collection / WWE Elite",
+      "product": "WWE Ultimate Edition Fan Takeover Randy Orton Action Figure / mattel-creations"
+    },
+    {
+      "score": 24.0,
+      "figureId": "wwe-elite-jake",
+      "figure": "Jake the Snake Roberts / Elite Collection / WWE Elite",
+      "product": "WWE Action Figure Ultimate Edition Coliseum Collection Jake \u201cThe Snake\u201d Roberts & \u201cRavishing\u201d Rick Rude 2-Pack / mattel-creations"
+    },
+    {
+      "score": 23.5,
+      "figureId": "neca-laurie",
+      "figure": "Laurie Strode / Halloween 2018 / Horror",
+      "product": "Halloween 2 (1981) / Dr. Loomis & Laurie Strode 8\" Clothed Action Figure (2-Pack)"
+    },
+    {
+      "score": 23.5,
+      "figureId": "neca-pennywise",
+      "figure": "Pennywise / IT 2017 / Horror",
+      "product": "IT: Welcome to Derry / Ultimate Blood Pennywise 7\" Scale Action Figure"
+    },
+    {
+      "score": 17.0,
+      "figureId": "neca-mummy",
+      "figure": "The Mummy / Universal Monsters / Universal Monsters",
+      "product": "Universal Monsters / 7\u201d Scale Action Figure - Ultimate Mummy"
+    },
+    {
+      "score": 17.0,
+      "figureId": "wwe-elite-undertaker",
+      "figure": "The Undertaker / Elite Collection / WWE Elite",
+      "product": "WWE Elite Legends Undertaker Action Figure / mattel-creations"
+    }
+  ]
+}

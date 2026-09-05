@@ -1,0 +1,53 @@
+# Figure image bake (real product photos)
+
+Fills missing `imageUrl` on curated/placeholder action figures using **real
+Shopify CDN product images** — never generative AI art. Analogous to
+`comic-cover-urls.json`, but sourced from AF storefront `products.json`.
+
+## What it does
+
+1. Builds a searchable product index (normalized name / subtitle / line /
+   company tags → CDN `imageUrl`) from the same shops as
+   `src/lib/figure-storefronts.ts` / `scripts/figure_oneshot/shopify_dump.py`.
+2. Fuzzy-matches oneshot rows that lack `imageUrl` (high-confidence only).
+3. Writes:
+   - `src/data/figure-image-urls.json` — id → URL overlay
+   - patches `imageUrl` on matched `oneshot.json` rows
+   - `src/data/figure-archive/image-bake-stats.json` — before/after report
+
+`figures.ts` resolves `imageUrl` as **row/archive URL first**, then baked map
+(`resolveFigureImageUrl`). `FigureArt` already prefers `figure.imageUrl`.
+
+## Run
+
+```bash
+# Fast: index from existing oneshot Shopify rows
+cd scripts && python3 bake-figure-images.py
+
+# Live: re-paginate storefronts (polite delays), cache index, then match
+cd scripts && python3 bake-figure-images.py --fetch
+```
+
+## Safeguards (false-match controls)
+
+- Same-`company` hard gate (no Marvel Legends ← Super7 ULTIMATES swaps).
+- Blocked families with no honest feed line: JLU, DCUC, DC Direct/Collectibles.
+- Line-family regex required when known (Masterverse, Origins, ULTIMATES!,
+  ReAction, BST AXN, WWE, Multiverse, TMNT, etc.).
+- Character-focused matching: for ULTIMATES!/ReAction header titles, the
+  character is taken from the subtitle.
+- First significant name token must appear; multi-token subtitles need ≥1 hit.
+- One product image assigns to at most one figure (best score wins).
+- Unmatched rows stay as CSS placeholders.
+
+## Honest leftovers
+
+Hasbro Pulse, Mezco, Hot Toys, Bandai SHF, MAFEX, threezero, Kenner Super
+Powers depth, and most DCUC/JLU/DC Direct curated rows **cannot** be filled from
+open Shopify feeds we use. Leave placeholders until a stable public image source
+exists — do not scrape Pulse/BBTS aggressively.
+
+## Weekday routine (optional later)
+
+Re-run `--fetch` periodically after storefront restocks; commit updated JSON
+only when match counts move. No Build Publish required for data-only bumps.

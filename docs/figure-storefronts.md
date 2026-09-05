@@ -29,3 +29,9 @@ Hasbro Pulse, BBTS, Entertainment Earth, Mezco official, McFarlane Toys store,
 Hot Toys, Sideshow, Bandai Tamashii, threezero — covered via curated archive
 depth and/or weekly seed, not live JSON. DC Direct / Kenner Super Powers /
 Mattel DCUC are curated in `scripts/figure_oneshot/curated_dc.py`.
+
+## Image bake
+
+Curated rows without CDN art are filled (high-confidence only) by
+`scripts/bake-figure-images.py` → `src/data/figure-image-urls.json`. See
+`docs/figure-image-bake.md`.
