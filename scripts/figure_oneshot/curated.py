@@ -9,6 +9,8 @@ from typing import Any
 from figure_oneshot.curated_dc import build_dc_curated
 from figure_oneshot.curated_densify import build_densify
 from figure_oneshot.curated_mafex_mezco import build_mafex_mezco
+from figure_oneshot.curated_transformers import build_transformers
+from figure_oneshot.curated_dcdirect import build_dcdirect
 
 FLOOR = "1980-01-01"
 
@@ -1899,6 +1901,12 @@ def build_curated() -> list[dict]:
 
     # MAFEX + Mezco One:12 densify (tracker + curated)
     rows += build_mafex_mezco()
+
+    # Transformers Masterpiece + Studio Series densify
+    rows += build_transformers()
+
+    # DC Direct Icons + classic 1998-2012 densify
+    rows += build_dcdirect()
 
     # dedupe by id
     seen=set(); out=[]
