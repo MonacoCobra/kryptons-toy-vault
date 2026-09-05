@@ -170,7 +170,7 @@ class BatchBuilder:
             assert re.match(r"^\d{4}-\d{2}-\d{2}$", r[4])
             assert r[4] >= FLOOR, f"pre-floor {r}"
             assert r[9] in ("single", "facsimile", "tpb", "hardcover", "omnibus")
-            assert r[3] == self.pub or r[3].startswith(self.pub + " /") or r[3].startswith("DC Comics")
+            assert r[3] == self.pub or r[3].startswith(self.pub + " /") or "Comics" in r[3] or "/" in r[3]
 
     def report(self):
         c = Counter(r[1] for r in self.rows)

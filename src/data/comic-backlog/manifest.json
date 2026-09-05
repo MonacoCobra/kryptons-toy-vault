@@ -5,7 +5,7 @@
     500
   ],
   "lastInjectedAt": "2026-09-05",
-  "lastInjectedBatch": "batch-006",
+  "lastInjectedBatch": "batch-008",
   "queued": [],
   "injected": [
     "batch-001",
@@ -13,8 +13,10 @@
     "batch-003",
     "batch-004",
     "batch-005",
-    "batch-006"
+    "batch-006",
+    "batch-007",
+    "batch-008"
   ],
   "floor": "1980-01-01",
-  "notes": "batch-006 is a one-pass DC mass fill (thousands of rows) per Shelby request; smaller batches remain valid."
+  "notes": "batch-006 DC mass; batch-007 Marvel mass (~5397); batch-008 Image densify (~1188); floor 1980-01-01"
 }
