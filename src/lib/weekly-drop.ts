@@ -93,6 +93,18 @@ const COMPANIES: CompanyId[] = [
   "coomodel",
   "did",
   "moshow",
+  "mego",
+  "worldbox",
+  "kaustic",
+  "poptoys",
+  "deviltoys",
+  "kingarts",
+  "jtstudio",
+  "artspirits",
+  "artstorm",
+  "fiftytwo",
+  "actiontoys",
+  "underverse",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];
@@ -301,6 +313,18 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/coo model|coomodel/.test(s)) return "coomodel";
   if (/\bdid\b|dragon in dream/.test(s)) return "did";
   if (/moshow|mo show|progenitor effect/.test(s)) return "moshow";
+  if (/\bmego\b|world.?s greatest super/.test(s)) return "mego";
+  if (/world box|worldbox/.test(s)) return "worldbox";
+  if (/kaustic plastik|kaustic/.test(s)) return "kaustic";
+  if (/\bpop toys\b|poptoys/.test(s)) return "poptoys";
+  if (/devil toys|deviltoys|devilman.*devil toys/.test(s)) return "deviltoys";
+  if (/king arts|kingarts/.test(s)) return "kingarts";
+  if (/\bjt studio\b|jtstudio/.test(s)) return "jtstudio";
+  if (/art spirits|artspirits/.test(s)) return "artspirits";
+  if (/art storm|artstorm/.test(s)) return "artstorm";
+  if (/\b52toys\b|beastbox|megabox/.test(s)) return "fiftytwo";
+  if (/action toys|actiontoys|es gokin/.test(s)) return "actiontoys";
+  if (/underverse/.test(s)) return "underverse";
   if (/valaverse|action force/.test(s)) return "valaverse";
   return null;
 }

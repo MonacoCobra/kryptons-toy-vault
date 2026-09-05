@@ -86,7 +86,19 @@ export type CompanyId =
   | "tbleague"
   | "coomodel"
   | "did"
-  | "moshow";
+  | "moshow"
+  | "mego"
+  | "worldbox"
+  | "kaustic"
+  | "poptoys"
+  | "deviltoys"
+  | "kingarts"
+  | "jtstudio"
+  | "artspirits"
+  | "artstorm"
+  | "fiftytwo"
+  | "actiontoys"
+  | "underverse";
 
 export type ItemKind = "figure" | "kit";
 

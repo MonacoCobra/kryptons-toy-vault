@@ -311,3 +311,32 @@ garage-kit / Perfect Effect / DNA Design upgrade-kit brands skipped. Brick lines
 
 Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
 
+## BBTS AF brand expansion wave 9 (2026-09-05)
+
+Ninth curated pass from the BBTS company universe — densify thin AF makers + add
+missing collector brands. Floor 1980; AF only; no AI art. Statue / garage-kit /
+Perfect Effect / DNA Design upgrade-kit brands skipped. Brick lines (Pantasy /
+Keeppley) skipped. **ToyWorld** / **Unique Toys** / **APC Toys** not targeted.
+
+| CompanyId | Notes |
+| --- | --- |
+| `mego` | **NEW** — World's Greatest Super Heroes + Marvel / Trek / Horror reissues |
+| `worldbox` | **NEW** — 1/6 bodies + military / fantasy / sci-fi AF |
+| `kaustic` | **NEW** — Kaustic Plastik 1/6 historical AF |
+| `poptoys` | **NEW** — POP Toys EX-series 1/6 historical / fantasy |
+| `deviltoys` | **NEW** — Devil Toys designer / Devilman / street AF |
+| `kingarts` | **NEW** — King Arts diecast metal AF |
+| `jtstudio` | **NEW** — JT Studio 1/6 movie / martial-arts AF |
+| `artspirits` | **NEW** — Art Spirits Sonic / mecha / tokusatsu AF |
+| `artstorm` | **NEW** — Art Storm Sonic / mecha AF |
+| `fiftytwo` | **NEW** — 52Toys BeastBOX / MegaBOX transformable AF |
+| `actiontoys` | **NEW** — Action Toys ES Gokin / Hero Action AF |
+| `underverse` | **NEW** — Underverse 1/12 speculative AF |
+| densify | NECA Ultimate, Super7 ULTIMATES!/ReAction, threezero DLX/FigZero |
+| densify | Hot Toys MMS sparse, Beast Kingdom DAH, Enterbay NBA/movie |
+| densify | Four Horsemen Mythic/Cosmic/Figura Obscura, Valaverse Action Force |
+| densify | Boss Fight H.A.C.K.S., Loyal Subjects BST AXN, Jada SF/Universal/DC/Marvel |
+| densify | Bandai Robot Spirits / Gundam Universe AF, Playmates TMNT, Mattel Masterverse/WWE |
+
+Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
+

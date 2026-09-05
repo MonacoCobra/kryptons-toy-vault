@@ -1,0 +1,9414 @@
+{
+  "mego": [
+    [
+      "mg-01",
+      "Superman",
+      "WGSH",
+      "2018-01-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mg-02",
+      "Batman",
+      "WGSH",
+      "2018-02-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mg-03",
+      "Robin",
+      "WGSH",
+      "2018-03-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mg-04",
+      "Wonder Woman",
+      "WGSH",
+      "2018-04-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mg-05",
+      "Aquaman",
+      "WGSH",
+      "2018-05-01",
+      1.35,
+      22.99
+    ],
+    [
+      "mg-06",
+      "Flash",
+      "WGSH",
+      "2018-06-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mg-07",
+      "Green Lantern",
+      "WGSH",
+      "2018-07-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mg-08",
+      "The Joker",
+      "WGSH",
+      "2018-08-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mg-09",
+      "Penguin",
+      "WGSH",
+      "2018-09-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mg-10",
+      "Riddler",
+      "WGSH",
+      "2018-10-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mg-11",
+      "Catwoman",
+      "WGSH",
+      "2018-11-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mg-12",
+      "Mr. Freeze",
+      "WGSH",
+      "2018-12-01",
+      1.35,
+      22.99
+    ],
+    [
+      "mg-13",
+      "Spider-Man",
+      "Marvel",
+      "2019-01-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mg-14",
+      "Hulk",
+      "Marvel",
+      "2019-02-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mg-15",
+      "Captain America",
+      "Marvel",
+      "2019-03-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mg-16",
+      "Iron Man",
+      "Marvel",
+      "2019-04-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mg-17",
+      "Thor",
+      "Marvel",
+      "2019-05-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mg-18",
+      "Human Torch",
+      "Marvel",
+      "2019-06-01",
+      1.35,
+      22.99
+    ],
+    [
+      "mg-19",
+      "Thing",
+      "Marvel",
+      "2019-07-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mg-20",
+      "Invisible Woman",
+      "Marvel",
+      "2019-08-01",
+      1.35,
+      22.99
+    ],
+    [
+      "mg-21",
+      "Mr. Fantastic",
+      "Marvel",
+      "2019-09-01",
+      1.35,
+      22.99
+    ],
+    [
+      "mg-22",
+      "Wolverine",
+      "Marvel",
+      "2019-10-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mg-23",
+      "Cyclops",
+      "Marvel",
+      "2019-11-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mg-24",
+      "Storm",
+      "Marvel",
+      "2019-12-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mg-25",
+      "Star Trek Kirk",
+      "Star Trek",
+      "2020-01-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mg-26",
+      "Star Trek Spock",
+      "Star Trek",
+      "2020-02-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mg-27",
+      "Star Trek McCoy",
+      "Star Trek",
+      "2020-03-01",
+      1.35,
+      22.99
+    ],
+    [
+      "mg-28",
+      "Star Trek Uhura",
+      "Star Trek",
+      "2020-04-01",
+      1.35,
+      22.99
+    ],
+    [
+      "mg-29",
+      "Star Trek Scotty",
+      "Star Trek",
+      "2020-05-01",
+      1.35,
+      22.99
+    ],
+    [
+      "mg-30",
+      "Star Trek Sulu",
+      "Star Trek",
+      "2020-06-01",
+      1.3,
+      22.99
+    ],
+    [
+      "mg-31",
+      "Freddy Krueger",
+      "Horror",
+      "2020-07-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mg-32",
+      "Jason Voorhees",
+      "Horror",
+      "2020-08-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mg-33",
+      "Michael Myers",
+      "Horror",
+      "2020-09-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mg-34",
+      "Leatherface",
+      "Horror",
+      "2020-10-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mg-35",
+      "Chucky",
+      "Horror",
+      "2020-11-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mg-36",
+      "Pennywise",
+      "Horror",
+      "2020-12-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mg-37",
+      "Superman Chase",
+      "Special",
+      "2021-01-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mg-38",
+      "Batman Chase",
+      "Special",
+      "2021-02-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mg-39",
+      "Spider-Man Chase",
+      "Special",
+      "2021-03-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mg-40",
+      "Joker Chase",
+      "Special",
+      "2021-04-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mg-41",
+      "WGSH 2-Pack Heroes",
+      "Special",
+      "2021-05-01",
+      1.45,
+      45.0
+    ],
+    [
+      "mg-42",
+      "WGSH 2-Pack Villains",
+      "Special",
+      "2021-06-01",
+      1.45,
+      45.0
+    ],
+    [
+      "mg-43",
+      "Mego Body Male",
+      "Bodies",
+      "2021-07-01",
+      1.25,
+      20.0
+    ],
+    [
+      "mg-44",
+      "Mego Body Female",
+      "Bodies",
+      "2021-08-01",
+      1.25,
+      20.0
+    ],
+    [
+      "mg-45",
+      "Mego Retro Box Set",
+      "Special",
+      "2021-09-01",
+      1.5,
+      80.0
+    ]
+  ],
+  "worldbox": [
+    [
+      "wb-01",
+      "AT027 Male Body",
+      "Bodies",
+      "2017-03-01",
+      1.4,
+      90.0
+    ],
+    [
+      "wb-02",
+      "AT028 Female Body",
+      "Bodies",
+      "2017-05-01",
+      1.4,
+      90.0
+    ],
+    [
+      "wb-03",
+      "AT029 Athletic Male",
+      "Bodies",
+      "2017-07-01",
+      1.45,
+      95.0
+    ],
+    [
+      "wb-04",
+      "AT030 Athletic Female",
+      "Bodies",
+      "2017-09-01",
+      1.45,
+      95.0
+    ],
+    [
+      "wb-05",
+      "Head Sculpt Male A",
+      "Heads",
+      "2017-11-01",
+      1.35,
+      35.0
+    ],
+    [
+      "wb-06",
+      "Head Sculpt Male B",
+      "Heads",
+      "2018-01-01",
+      1.35,
+      35.0
+    ],
+    [
+      "wb-07",
+      "Head Sculpt Female A",
+      "Heads",
+      "2018-03-01",
+      1.35,
+      35.0
+    ],
+    [
+      "wb-08",
+      "Head Sculpt Female B",
+      "Heads",
+      "2018-05-01",
+      1.35,
+      35.0
+    ],
+    [
+      "wb-09",
+      "Military Operative",
+      "Modern",
+      "2018-07-01",
+      1.45,
+      160.0
+    ],
+    [
+      "wb-10",
+      "SWAT Officer",
+      "Modern",
+      "2018-09-01",
+      1.4,
+      150.0
+    ],
+    [
+      "wb-11",
+      "PMC Contractor",
+      "Modern",
+      "2018-11-01",
+      1.4,
+      155.0
+    ],
+    [
+      "wb-12",
+      "Police Officer",
+      "Modern",
+      "2019-01-01",
+      1.35,
+      145.0
+    ],
+    [
+      "wb-13",
+      "Samurai Warrior",
+      "Historical",
+      "2019-03-01",
+      1.5,
+      180.0
+    ],
+    [
+      "wb-14",
+      "Ninja Assassin",
+      "Historical",
+      "2019-05-01",
+      1.45,
+      170.0
+    ],
+    [
+      "wb-15",
+      "Viking Berserker",
+      "Historical",
+      "2019-07-01",
+      1.45,
+      175.0
+    ],
+    [
+      "wb-16",
+      "Knight Templar",
+      "Historical",
+      "2019-09-01",
+      1.5,
+      185.0
+    ],
+    [
+      "wb-17",
+      "Fantasy Warrior",
+      "Fantasy",
+      "2019-11-01",
+      1.4,
+      165.0
+    ],
+    [
+      "wb-18",
+      "Elf Archer",
+      "Fantasy",
+      "2020-01-01",
+      1.4,
+      160.0
+    ],
+    [
+      "wb-19",
+      "Orc Fighter",
+      "Fantasy",
+      "2020-03-01",
+      1.4,
+      165.0
+    ],
+    [
+      "wb-20",
+      "Dark Mage",
+      "Fantasy",
+      "2020-05-01",
+      1.35,
+      155.0
+    ],
+    [
+      "wb-21",
+      "Sci-Fi Trooper",
+      "Sci-Fi",
+      "2020-07-01",
+      1.4,
+      160.0
+    ],
+    [
+      "wb-22",
+      "Android Agent",
+      "Sci-Fi",
+      "2020-09-01",
+      1.4,
+      155.0
+    ],
+    [
+      "wb-23",
+      "Space Marine",
+      "Sci-Fi",
+      "2020-11-01",
+      1.45,
+      170.0
+    ],
+    [
+      "wb-24",
+      "Cyber Assassin",
+      "Sci-Fi",
+      "2021-01-01",
+      1.4,
+      160.0
+    ],
+    [
+      "wb-25",
+      "Male Body Suntan",
+      "Bodies",
+      "2021-03-01",
+      1.35,
+      92.0
+    ],
+    [
+      "wb-26",
+      "Female Body Pale",
+      "Bodies",
+      "2021-05-01",
+      1.35,
+      92.0
+    ],
+    [
+      "wb-27",
+      "Military Deluxe",
+      "Special",
+      "2021-07-01",
+      1.5,
+      190.0
+    ],
+    [
+      "wb-28",
+      "Samurai Deluxe",
+      "Special",
+      "2021-09-01",
+      1.55,
+      210.0
+    ],
+    [
+      "wb-29",
+      "Ninja Deluxe",
+      "Special",
+      "2021-11-01",
+      1.5,
+      195.0
+    ],
+    [
+      "wb-30",
+      "SWAT Deluxe",
+      "Special",
+      "2022-01-01",
+      1.45,
+      175.0
+    ],
+    [
+      "wb-31",
+      "Head Pack A",
+      "Heads",
+      "2022-03-01",
+      1.3,
+      60.0
+    ],
+    [
+      "wb-32",
+      "Head Pack B",
+      "Heads",
+      "2022-05-01",
+      1.3,
+      60.0
+    ],
+    [
+      "wb-33",
+      "Hand Pack Male",
+      "Accessories",
+      "2022-07-01",
+      1.25,
+      25.0
+    ],
+    [
+      "wb-34",
+      "Hand Pack Female",
+      "Accessories",
+      "2022-09-01",
+      1.25,
+      25.0
+    ],
+    [
+      "wb-35",
+      "Weapon Pack Modern",
+      "Accessories",
+      "2022-11-01",
+      1.3,
+      40.0
+    ],
+    [
+      "wb-36",
+      "Weapon Pack Historical",
+      "Accessories",
+      "2023-01-01",
+      1.3,
+      40.0
+    ],
+    [
+      "wb-37",
+      "Fantasy Deluxe",
+      "Special",
+      "2023-03-01",
+      1.45,
+      185.0
+    ],
+    [
+      "wb-38",
+      "Sci-Fi Deluxe",
+      "Special",
+      "2023-05-01",
+      1.45,
+      180.0
+    ],
+    [
+      "wb-39",
+      "Body Athletic Chrome",
+      "Special",
+      "2023-07-01",
+      1.4,
+      110.0
+    ],
+    [
+      "wb-40",
+      "PMC Deluxe",
+      "Special",
+      "2023-09-01",
+      1.45,
+      180.0
+    ],
+    [
+      "wb-41",
+      "Knight Deluxe",
+      "Special",
+      "2023-11-01",
+      1.5,
+      200.0
+    ],
+    [
+      "wb-42",
+      "Elf Archer Deluxe",
+      "Special",
+      "2024-01-01",
+      1.45,
+      175.0
+    ],
+    [
+      "wb-43",
+      "Android Deluxe",
+      "Special",
+      "2024-03-01",
+      1.45,
+      170.0
+    ],
+    [
+      "wb-44",
+      "Cyber Assassin Neon",
+      "Special",
+      "2024-05-01",
+      1.4,
+      165.0
+    ],
+    [
+      "wb-45",
+      "World Box Starter Set",
+      "Special",
+      "2024-07-01",
+      1.4,
+      220.0
+    ]
+  ],
+  "kaustic": [
+    [
+      "kp-01",
+      "Roman Legionary",
+      "Roman Empire",
+      "2015-04-01",
+      1.5,
+      200.0
+    ],
+    [
+      "kp-02",
+      "Roman Centurion",
+      "Roman Empire",
+      "2015-06-01",
+      1.55,
+      200.0
+    ],
+    [
+      "kp-03",
+      "Roman Praetorian",
+      "Roman Empire",
+      "2015-08-01",
+      1.5,
+      200.0
+    ],
+    [
+      "kp-04",
+      "Roman Standard Bearer",
+      "Roman Empire",
+      "2015-10-01",
+      1.45,
+      200.0
+    ],
+    [
+      "kp-05",
+      "Gladiator Murmillo",
+      "Roman Empire",
+      "2015-12-01",
+      1.5,
+      200.0
+    ],
+    [
+      "kp-06",
+      "Gladiator Retiarius",
+      "Roman Empire",
+      "2016-02-01",
+      1.45,
+      200.0
+    ],
+    [
+      "kp-07",
+      "Spartan Hoplite",
+      "Greek",
+      "2016-04-01",
+      1.55,
+      200.0
+    ],
+    [
+      "kp-08",
+      "Spartan King",
+      "Greek",
+      "2016-06-01",
+      1.55,
+      200.0
+    ],
+    [
+      "kp-09",
+      "Athenian Hoplite",
+      "Greek",
+      "2016-08-01",
+      1.45,
+      200.0
+    ],
+    [
+      "kp-10",
+      "Macedonian Companion",
+      "Greek",
+      "2016-10-01",
+      1.45,
+      200.0
+    ],
+    [
+      "kp-11",
+      "Viking Warrior",
+      "Viking",
+      "2016-12-01",
+      1.5,
+      200.0
+    ],
+    [
+      "kp-12",
+      "Viking Jarl",
+      "Viking",
+      "2017-02-01",
+      1.55,
+      200.0
+    ],
+    [
+      "kp-13",
+      "Viking Shieldmaiden",
+      "Viking",
+      "2017-04-01",
+      1.5,
+      200.0
+    ],
+    [
+      "kp-14",
+      "Viking Berserker",
+      "Viking",
+      "2017-06-01",
+      1.5,
+      200.0
+    ],
+    [
+      "kp-15",
+      "Celtic Warrior",
+      "Celtic",
+      "2017-08-01",
+      1.4,
+      200.0
+    ],
+    [
+      "kp-16",
+      "Celtic Chieftain",
+      "Celtic",
+      "2017-10-01",
+      1.45,
+      200.0
+    ],
+    [
+      "kp-17",
+      "Medieval Knight",
+      "Medieval",
+      "2017-12-01",
+      1.5,
+      200.0
+    ],
+    [
+      "kp-18",
+      "Teutonic Knight",
+      "Medieval",
+      "2018-02-01",
+      1.5,
+      200.0
+    ],
+    [
+      "kp-19",
+      "Templar Knight",
+      "Medieval",
+      "2018-04-01",
+      1.55,
+      200.0
+    ],
+    [
+      "kp-20",
+      "Hospitaller",
+      "Medieval",
+      "2018-06-01",
+      1.45,
+      200.0
+    ],
+    [
+      "kp-21",
+      "WWII German Infantry",
+      "WWII",
+      "2018-08-01",
+      1.4,
+      200.0
+    ],
+    [
+      "kp-22",
+      "WWII US Paratrooper",
+      "WWII",
+      "2018-10-01",
+      1.45,
+      200.0
+    ],
+    [
+      "kp-23",
+      "WWII British Commando",
+      "WWII",
+      "2018-12-01",
+      1.45,
+      200.0
+    ],
+    [
+      "kp-24",
+      "WWII Soviet Sniper",
+      "WWII",
+      "2019-02-01",
+      1.4,
+      200.0
+    ],
+    [
+      "kp-25",
+      "Roman Deluxe",
+      "Special",
+      "2019-04-01",
+      1.55,
+      200.0
+    ],
+    [
+      "kp-26",
+      "Spartan Deluxe",
+      "Special",
+      "2019-06-01",
+      1.55,
+      200.0
+    ],
+    [
+      "kp-27",
+      "Viking Deluxe",
+      "Special",
+      "2019-08-01",
+      1.55,
+      200.0
+    ],
+    [
+      "kp-28",
+      "Templar Deluxe",
+      "Special",
+      "2019-10-01",
+      1.55,
+      200.0
+    ],
+    [
+      "kp-29",
+      "Gladiator Deluxe",
+      "Special",
+      "2019-12-01",
+      1.5,
+      200.0
+    ],
+    [
+      "kp-30",
+      "Knight Deluxe",
+      "Special",
+      "2020-02-01",
+      1.5,
+      200.0
+    ],
+    [
+      "kp-31",
+      "WWII US Deluxe",
+      "Special",
+      "2020-04-01",
+      1.5,
+      200.0
+    ],
+    [
+      "kp-32",
+      "WWII German Deluxe",
+      "Special",
+      "2020-06-01",
+      1.45,
+      200.0
+    ],
+    [
+      "kp-33",
+      "Celtic Deluxe",
+      "Special",
+      "2020-08-01",
+      1.45,
+      200.0
+    ],
+    [
+      "kp-34",
+      "Praetorian Deluxe",
+      "Special",
+      "2020-10-01",
+      1.55,
+      200.0
+    ],
+    [
+      "kp-35",
+      "Roman Cavalry",
+      "Roman Empire",
+      "2020-12-01",
+      1.5,
+      200.0
+    ],
+    [
+      "kp-36",
+      "Greek Archer",
+      "Greek",
+      "2021-02-01",
+      1.4,
+      200.0
+    ],
+    [
+      "kp-37",
+      "Viking Archer",
+      "Viking",
+      "2021-04-01",
+      1.4,
+      200.0
+    ],
+    [
+      "kp-38",
+      "Medieval Archer",
+      "Medieval",
+      "2021-06-01",
+      1.4,
+      200.0
+    ],
+    [
+      "kp-39",
+      "Roman Optio",
+      "Roman Empire",
+      "2021-08-01",
+      1.45,
+      200.0
+    ],
+    [
+      "kp-40",
+      "Spartan Officer",
+      "Greek",
+      "2021-10-01",
+      1.5,
+      200.0
+    ],
+    [
+      "kp-41",
+      "Viking Raider",
+      "Viking",
+      "2021-12-01",
+      1.45,
+      200.0
+    ],
+    [
+      "kp-42",
+      "Black Knight",
+      "Medieval",
+      "2022-02-01",
+      1.5,
+      200.0
+    ],
+    [
+      "kp-43",
+      "WWII Medic",
+      "WWII",
+      "2022-04-01",
+      1.35,
+      200.0
+    ],
+    [
+      "kp-44",
+      "WWII Officer",
+      "WWII",
+      "2022-06-01",
+      1.4,
+      200.0
+    ],
+    [
+      "kp-45",
+      "Kaustic Accessory Pack",
+      "Special",
+      "2022-08-01",
+      1.25,
+      45.0
+    ]
+  ],
+  "poptoys": [
+    [
+      "pt-01",
+      "EX001 Spartan Warrior",
+      "EX Series",
+      "2016-05-01",
+      1.5,
+      190.0
+    ],
+    [
+      "pt-02",
+      "EX002 Spartan King",
+      "EX Series",
+      "2016-07-01",
+      1.55,
+      190.0
+    ],
+    [
+      "pt-03",
+      "EX003 Roman Legionary",
+      "EX Series",
+      "2016-09-01",
+      1.45,
+      190.0
+    ],
+    [
+      "pt-04",
+      "EX004 Roman Centurion",
+      "EX Series",
+      "2016-11-01",
+      1.5,
+      190.0
+    ],
+    [
+      "pt-05",
+      "EX005 Viking Warrior",
+      "EX Series",
+      "2017-01-01",
+      1.5,
+      190.0
+    ],
+    [
+      "pt-06",
+      "EX006 Viking Jarl",
+      "EX Series",
+      "2017-03-01",
+      1.55,
+      190.0
+    ],
+    [
+      "pt-07",
+      "EX007 Knight Templar",
+      "EX Series",
+      "2017-05-01",
+      1.55,
+      190.0
+    ],
+    [
+      "pt-08",
+      "EX008 Teutonic Knight",
+      "EX Series",
+      "2017-07-01",
+      1.5,
+      190.0
+    ],
+    [
+      "pt-09",
+      "EX009 Samurai General",
+      "EX Series",
+      "2017-09-01",
+      1.55,
+      190.0
+    ],
+    [
+      "pt-10",
+      "EX010 Samurai Ashigaru",
+      "EX Series",
+      "2017-11-01",
+      1.4,
+      190.0
+    ],
+    [
+      "pt-11",
+      "EX011 Ninja Shadow",
+      "EX Series",
+      "2018-01-01",
+      1.5,
+      190.0
+    ],
+    [
+      "pt-12",
+      "EX012 Shaolin Monk",
+      "EX Series",
+      "2018-03-01",
+      1.4,
+      190.0
+    ],
+    [
+      "pt-13",
+      "EX013 Egyptian Pharaoh",
+      "EX Series",
+      "2018-05-01",
+      1.5,
+      190.0
+    ],
+    [
+      "pt-14",
+      "EX014 Egyptian Guard",
+      "EX Series",
+      "2018-07-01",
+      1.35,
+      190.0
+    ],
+    [
+      "pt-15",
+      "EX015 Persian Immortal",
+      "EX Series",
+      "2018-09-01",
+      1.45,
+      190.0
+    ],
+    [
+      "pt-16",
+      "EX016 Macedonian",
+      "EX Series",
+      "2018-11-01",
+      1.4,
+      190.0
+    ],
+    [
+      "pt-17",
+      "EX017 Gladiator",
+      "EX Series",
+      "2019-01-01",
+      1.5,
+      190.0
+    ],
+    [
+      "pt-18",
+      "EX018 Amazon Warrior",
+      "EX Series",
+      "2019-03-01",
+      1.45,
+      190.0
+    ],
+    [
+      "pt-19",
+      "EX019 Dark Knight",
+      "EX Series",
+      "2019-05-01",
+      1.5,
+      190.0
+    ],
+    [
+      "pt-20",
+      "EX020 Elf Archer",
+      "EX Series",
+      "2019-07-01",
+      1.45,
+      190.0
+    ],
+    [
+      "pt-21",
+      "EX001 Deluxe",
+      "Special",
+      "2019-09-01",
+      1.55,
+      190.0
+    ],
+    [
+      "pt-22",
+      "EX002 Deluxe",
+      "Special",
+      "2019-11-01",
+      1.55,
+      190.0
+    ],
+    [
+      "pt-23",
+      "EX005 Deluxe",
+      "Special",
+      "2020-01-01",
+      1.55,
+      190.0
+    ],
+    [
+      "pt-24",
+      "EX007 Deluxe",
+      "Special",
+      "2020-03-01",
+      1.55,
+      190.0
+    ],
+    [
+      "pt-25",
+      "EX009 Deluxe",
+      "Special",
+      "2020-05-01",
+      1.55,
+      190.0
+    ],
+    [
+      "pt-26",
+      "EX011 Deluxe",
+      "Special",
+      "2020-07-01",
+      1.55,
+      190.0
+    ],
+    [
+      "pt-27",
+      "EX013 Deluxe",
+      "Special",
+      "2020-09-01",
+      1.5,
+      190.0
+    ],
+    [
+      "pt-28",
+      "EX017 Deluxe",
+      "Special",
+      "2020-11-01",
+      1.5,
+      190.0
+    ],
+    [
+      "pt-29",
+      "EX021 Pirate Captain",
+      "EX Series",
+      "2021-01-01",
+      1.45,
+      190.0
+    ],
+    [
+      "pt-30",
+      "EX022 Pirate Crew",
+      "EX Series",
+      "2021-03-01",
+      1.35,
+      190.0
+    ],
+    [
+      "pt-31",
+      "EX023 Cowboy Gunslinger",
+      "Western",
+      "2021-05-01",
+      1.4,
+      190.0
+    ],
+    [
+      "pt-32",
+      "EX024 Native Warrior",
+      "Western",
+      "2021-07-01",
+      1.4,
+      190.0
+    ],
+    [
+      "pt-33",
+      "EX025 WWII US Ranger",
+      "WWII",
+      "2021-09-01",
+      1.45,
+      190.0
+    ],
+    [
+      "pt-34",
+      "EX026 WWII German",
+      "WWII",
+      "2021-11-01",
+      1.4,
+      190.0
+    ],
+    [
+      "pt-35",
+      "EX027 Modern SEAL",
+      "Modern",
+      "2022-01-01",
+      1.5,
+      190.0
+    ],
+    [
+      "pt-36",
+      "EX028 Modern Delta",
+      "Modern",
+      "2022-03-01",
+      1.5,
+      190.0
+    ],
+    [
+      "pt-37",
+      "EX029 Fantasy Wizard",
+      "Fantasy",
+      "2022-05-01",
+      1.4,
+      190.0
+    ],
+    [
+      "pt-38",
+      "EX030 Fantasy Orc",
+      "Fantasy",
+      "2022-07-01",
+      1.4,
+      190.0
+    ],
+    [
+      "pt-39",
+      "Weapon Pack A",
+      "Accessories",
+      "2022-09-01",
+      1.25,
+      40.0
+    ],
+    [
+      "pt-40",
+      "Weapon Pack B",
+      "Accessories",
+      "2022-11-01",
+      1.25,
+      40.0
+    ],
+    [
+      "pt-41",
+      "Head Pack Historical",
+      "Accessories",
+      "2023-01-01",
+      1.3,
+      50.0
+    ],
+    [
+      "pt-42",
+      "Armor Pack Knight",
+      "Accessories",
+      "2023-03-01",
+      1.35,
+      70.0
+    ],
+    [
+      "pt-43",
+      "EX Samurai Chrome",
+      "Special",
+      "2023-05-01",
+      1.55,
+      190.0
+    ],
+    [
+      "pt-44",
+      "EX Ninja Ghost",
+      "Special",
+      "2023-07-01",
+      1.5,
+      190.0
+    ],
+    [
+      "pt-45",
+      "EX Spartan Chrome",
+      "Special",
+      "2023-09-01",
+      1.55,
+      190.0
+    ]
+  ],
+  "deviltoys": [
+    [
+      "dv-01",
+      "Devilman Classic",
+      "Devilman",
+      "2018-02-01",
+      1.55,
+      120.0
+    ],
+    [
+      "dv-02",
+      "Devilman Black",
+      "Devilman",
+      "2018-04-01",
+      1.55,
+      120.0
+    ],
+    [
+      "dv-03",
+      "Devilman White",
+      "Devilman",
+      "2018-06-01",
+      1.5,
+      120.0
+    ],
+    [
+      "dv-04",
+      "Devilman Red",
+      "Devilman",
+      "2018-08-01",
+      1.5,
+      120.0
+    ],
+    [
+      "dv-05",
+      "Street Demon A",
+      "Street",
+      "2018-10-01",
+      1.4,
+      120.0
+    ],
+    [
+      "dv-06",
+      "Street Demon B",
+      "Street",
+      "2018-12-01",
+      1.4,
+      120.0
+    ],
+    [
+      "dv-07",
+      "Street Demon C",
+      "Street",
+      "2019-02-01",
+      1.35,
+      120.0
+    ],
+    [
+      "dv-08",
+      "Street Demon D",
+      "Street",
+      "2019-04-01",
+      1.35,
+      120.0
+    ],
+    [
+      "dv-09",
+      "Punk Assassin",
+      "Street",
+      "2019-06-01",
+      1.4,
+      120.0
+    ],
+    [
+      "dv-10",
+      "Punk Boss",
+      "Street",
+      "2019-08-01",
+      1.45,
+      120.0
+    ],
+    [
+      "dv-11",
+      "Cyber Devil",
+      "Cyber",
+      "2019-10-01",
+      1.5,
+      120.0
+    ],
+    [
+      "dv-12",
+      "Cyber Angel",
+      "Cyber",
+      "2019-12-01",
+      1.45,
+      120.0
+    ],
+    [
+      "dv-13",
+      "Cyber Soldier",
+      "Cyber",
+      "2020-02-01",
+      1.4,
+      120.0
+    ],
+    [
+      "dv-14",
+      "Cyber Hunter",
+      "Cyber",
+      "2020-04-01",
+      1.4,
+      120.0
+    ],
+    [
+      "dv-15",
+      "Oni Mask Red",
+      "Oni",
+      "2020-06-01",
+      1.5,
+      120.0
+    ],
+    [
+      "dv-16",
+      "Oni Mask Blue",
+      "Oni",
+      "2020-08-01",
+      1.45,
+      120.0
+    ],
+    [
+      "dv-17",
+      "Oni Mask Black",
+      "Oni",
+      "2020-10-01",
+      1.5,
+      120.0
+    ],
+    [
+      "dv-18",
+      "Oni Mask Gold",
+      "Oni",
+      "2020-12-01",
+      1.55,
+      120.0
+    ],
+    [
+      "dv-19",
+      "Designer Hero A",
+      "Designer",
+      "2021-02-01",
+      1.4,
+      120.0
+    ],
+    [
+      "dv-20",
+      "Designer Hero B",
+      "Designer",
+      "2021-04-01",
+      1.4,
+      120.0
+    ],
+    [
+      "dv-21",
+      "Designer Villain A",
+      "Designer",
+      "2021-06-01",
+      1.4,
+      120.0
+    ],
+    [
+      "dv-22",
+      "Designer Villain B",
+      "Designer",
+      "2021-08-01",
+      1.4,
+      120.0
+    ],
+    [
+      "dv-23",
+      "Devilman Deluxe",
+      "Special",
+      "2021-10-01",
+      1.55,
+      120.0
+    ],
+    [
+      "dv-24",
+      "Devilman Chrome",
+      "Special",
+      "2021-12-01",
+      1.55,
+      120.0
+    ],
+    [
+      "dv-25",
+      "Street Demon Deluxe",
+      "Special",
+      "2022-02-01",
+      1.45,
+      120.0
+    ],
+    [
+      "dv-26",
+      "Cyber Devil Deluxe",
+      "Special",
+      "2022-04-01",
+      1.5,
+      120.0
+    ],
+    [
+      "dv-27",
+      "Oni Mask Deluxe",
+      "Special",
+      "2022-06-01",
+      1.55,
+      120.0
+    ],
+    [
+      "dv-28",
+      "Punk Boss Deluxe",
+      "Special",
+      "2022-08-01",
+      1.5,
+      120.0
+    ],
+    [
+      "dv-29",
+      "Mini Devilman",
+      "Mini",
+      "2022-10-01",
+      1.3,
+      40.0
+    ],
+    [
+      "dv-30",
+      "Mini Street Demon",
+      "Mini",
+      "2022-12-01",
+      1.25,
+      35.0
+    ],
+    [
+      "dv-31",
+      "Mini Oni",
+      "Mini",
+      "2023-02-01",
+      1.3,
+      40.0
+    ],
+    [
+      "dv-32",
+      "Mini Cyber",
+      "Mini",
+      "2023-04-01",
+      1.25,
+      35.0
+    ],
+    [
+      "dv-33",
+      "Devilman Clear",
+      "Special",
+      "2023-06-01",
+      1.5,
+      120.0
+    ],
+    [
+      "dv-34",
+      "Street Neon",
+      "Special",
+      "2023-08-01",
+      1.4,
+      120.0
+    ],
+    [
+      "dv-35",
+      "Cyber Neon",
+      "Special",
+      "2023-10-01",
+      1.45,
+      120.0
+    ],
+    [
+      "dv-36",
+      "Oni Ghost",
+      "Special",
+      "2023-12-01",
+      1.5,
+      120.0
+    ],
+    [
+      "dv-37",
+      "Designer Chrome",
+      "Special",
+      "2024-02-01",
+      1.45,
+      120.0
+    ],
+    [
+      "dv-38",
+      "Designer Clear",
+      "Special",
+      "2024-04-01",
+      1.4,
+      120.0
+    ],
+    [
+      "dv-39",
+      "Devilman Battle Damaged",
+      "Special",
+      "2024-06-01",
+      1.5,
+      120.0
+    ],
+    [
+      "dv-40",
+      "Street Pack",
+      "Special",
+      "2024-08-01",
+      1.4,
+      120.0
+    ],
+    [
+      "dv-41",
+      "Cyber Pack",
+      "Special",
+      "2024-10-01",
+      1.4,
+      130.0
+    ],
+    [
+      "dv-42",
+      "Oni Pack",
+      "Special",
+      "2024-12-01",
+      1.45,
+      140.0
+    ],
+    [
+      "dv-43",
+      "Devil Toys Starter",
+      "Special",
+      "2025-02-01",
+      1.35,
+      90.0
+    ],
+    [
+      "dv-44",
+      "Accessory Pack",
+      "Special",
+      "2025-04-01",
+      1.25,
+      35.0
+    ],
+    [
+      "dv-45",
+      "Devilman Glow",
+      "Special",
+      "2025-06-01",
+      1.55,
+      120.0
+    ]
+  ],
+  "kingarts": [
+    [
+      "ka-01",
+      "DFS001 Iron Man Mark III",
+      "Diecast",
+      "2014-06-01",
+      1.55,
+      280.0
+    ],
+    [
+      "ka-02",
+      "DFS002 Iron Man Mark VII",
+      "Diecast",
+      "2014-08-01",
+      1.55,
+      290.0
+    ],
+    [
+      "ka-03",
+      "DFS003 Iron Man Mark XLII",
+      "Diecast",
+      "2014-10-01",
+      1.55,
+      300.0
+    ],
+    [
+      "ka-04",
+      "DFS004 Iron Man Mark XLIII",
+      "Diecast",
+      "2014-12-01",
+      1.5,
+      290.0
+    ],
+    [
+      "ka-05",
+      "DFS005 Iron Man Mark XLV",
+      "Diecast",
+      "2015-02-01",
+      1.55,
+      310.0
+    ],
+    [
+      "ka-06",
+      "DFS006 Iron Man Mark L",
+      "Diecast",
+      "2015-04-01",
+      1.55,
+      320.0
+    ],
+    [
+      "ka-07",
+      "DFS007 War Machine",
+      "Diecast",
+      "2015-06-01",
+      1.5,
+      280.0
+    ],
+    [
+      "ka-08",
+      "DFS008 Iron Patriot",
+      "Diecast",
+      "2015-08-01",
+      1.45,
+      270.0
+    ],
+    [
+      "ka-09",
+      "DFS009 Hulkbuster",
+      "Diecast",
+      "2015-10-01",
+      1.55,
+      450.0
+    ],
+    [
+      "ka-10",
+      "DFS010 Iron Man Classic",
+      "Diecast",
+      "2015-12-01",
+      1.5,
+      260.0
+    ],
+    [
+      "ka-11",
+      "DFS011 Batman Armored",
+      "Diecast",
+      "2016-02-01",
+      1.55,
+      300.0
+    ],
+    [
+      "ka-12",
+      "DFS012 Batman Classic",
+      "Diecast",
+      "2016-04-01",
+      1.5,
+      270.0
+    ],
+    [
+      "ka-13",
+      "DFS013 Superman",
+      "Diecast",
+      "2016-06-01",
+      1.5,
+      260.0
+    ],
+    [
+      "ka-14",
+      "DFS014 Captain America",
+      "Diecast",
+      "2016-08-01",
+      1.45,
+      240.0
+    ],
+    [
+      "ka-15",
+      "DFS015 Thor",
+      "Diecast",
+      "2016-10-01",
+      1.45,
+      250.0
+    ],
+    [
+      "ka-16",
+      "DFS016 Hulk",
+      "Diecast",
+      "2016-12-01",
+      1.5,
+      280.0
+    ],
+    [
+      "ka-17",
+      "DFS017 Spider-Man",
+      "Diecast",
+      "2017-02-01",
+      1.5,
+      250.0
+    ],
+    [
+      "ka-18",
+      "DFS018 Venom",
+      "Diecast",
+      "2017-04-01",
+      1.5,
+      260.0
+    ],
+    [
+      "ka-19",
+      "DFS019 Black Panther",
+      "Diecast",
+      "2017-06-01",
+      1.5,
+      270.0
+    ],
+    [
+      "ka-20",
+      "DFS020 Doctor Strange",
+      "Diecast",
+      "2017-08-01",
+      1.45,
+      240.0
+    ],
+    [
+      "ka-21",
+      "DFS Iron Man Chrome",
+      "Special",
+      "2017-10-01",
+      1.55,
+      340.0
+    ],
+    [
+      "ka-22",
+      "DFS War Machine Chrome",
+      "Special",
+      "2017-12-01",
+      1.55,
+      320.0
+    ],
+    [
+      "ka-23",
+      "DFS Batman Chrome",
+      "Special",
+      "2018-02-01",
+      1.55,
+      330.0
+    ],
+    [
+      "ka-24",
+      "DFS Hulkbuster Deluxe",
+      "Special",
+      "2018-04-01",
+      1.55,
+      500.0
+    ],
+    [
+      "ka-25",
+      "DFS Iron Man Clear",
+      "Special",
+      "2018-06-01",
+      1.5,
+      310.0
+    ],
+    [
+      "ka-26",
+      "DFS Spider-Man Symbiote",
+      "Special",
+      "2018-08-01",
+      1.55,
+      280.0
+    ],
+    [
+      "ka-27",
+      "DFS Accessories Pack A",
+      "Accessories",
+      "2018-10-01",
+      1.3,
+      60.0
+    ],
+    [
+      "ka-28",
+      "DFS Accessories Pack B",
+      "Accessories",
+      "2018-12-01",
+      1.3,
+      60.0
+    ],
+    [
+      "ka-29",
+      "DFS Stand Pack",
+      "Accessories",
+      "2019-02-01",
+      1.25,
+      40.0
+    ],
+    [
+      "ka-30",
+      "DFS Effect Pack",
+      "Accessories",
+      "2019-04-01",
+      1.3,
+      55.0
+    ],
+    [
+      "ka-31",
+      "DFS Iron Man Mark I",
+      "Diecast",
+      "2019-06-01",
+      1.45,
+      250.0
+    ],
+    [
+      "ka-32",
+      "DFS Iron Man Mark II",
+      "Diecast",
+      "2019-08-01",
+      1.45,
+      255.0
+    ],
+    [
+      "ka-33",
+      "DFS Iron Man Mark IV",
+      "Diecast",
+      "2019-10-01",
+      1.5,
+      275.0
+    ],
+    [
+      "ka-34",
+      "DFS Iron Man Mark V",
+      "Diecast",
+      "2019-12-01",
+      1.5,
+      280.0
+    ],
+    [
+      "ka-35",
+      "DFS Iron Man Mark VI",
+      "Diecast",
+      "2020-02-01",
+      1.5,
+      285.0
+    ],
+    [
+      "ka-36",
+      "DFS Iron Man Mark XVII",
+      "Diecast",
+      "2020-04-01",
+      1.45,
+      270.0
+    ],
+    [
+      "ka-37",
+      "DFS Rescue Armor",
+      "Diecast",
+      "2020-06-01",
+      1.5,
+      290.0
+    ],
+    [
+      "ka-38",
+      "DFS Iron Spider",
+      "Diecast",
+      "2020-08-01",
+      1.5,
+      275.0
+    ],
+    [
+      "ka-39",
+      "DFS Batman Battle Damaged",
+      "Special",
+      "2020-10-01",
+      1.5,
+      310.0
+    ],
+    [
+      "ka-40",
+      "DFS Superman Chrome",
+      "Special",
+      "2020-12-01",
+      1.5,
+      290.0
+    ],
+    [
+      "ka-41",
+      "DFS Cap Chromed",
+      "Special",
+      "2021-02-01",
+      1.45,
+      260.0
+    ],
+    [
+      "ka-42",
+      "DFS Thor Stormbreaker",
+      "Special",
+      "2021-04-01",
+      1.5,
+      280.0
+    ],
+    [
+      "ka-43",
+      "DFS Black Panther Chrome",
+      "Special",
+      "2021-06-01",
+      1.55,
+      300.0
+    ],
+    [
+      "ka-44",
+      "DFS Venom Chrome",
+      "Special",
+      "2021-08-01",
+      1.55,
+      290.0
+    ],
+    [
+      "ka-45",
+      "DFS Iron Man Endgame",
+      "Special",
+      "2021-10-01",
+      1.55,
+      330.0
+    ]
+  ],
+  "jtstudio": [
+    [
+      "jt-01",
+      "JT001 Movie Hero A",
+      "Movie",
+      "2016-01-01",
+      1.5,
+      220.0
+    ],
+    [
+      "jt-02",
+      "JT002 Movie Hero B",
+      "Movie",
+      "2016-03-01",
+      1.45,
+      220.0
+    ],
+    [
+      "jt-03",
+      "JT003 Movie Villain A",
+      "Movie",
+      "2016-05-01",
+      1.5,
+      220.0
+    ],
+    [
+      "jt-04",
+      "JT004 Movie Villain B",
+      "Movie",
+      "2016-07-01",
+      1.45,
+      220.0
+    ],
+    [
+      "jt-05",
+      "JT005 Action Star A",
+      "Celebrity",
+      "2016-09-01",
+      1.45,
+      220.0
+    ],
+    [
+      "jt-06",
+      "JT006 Action Star B",
+      "Celebrity",
+      "2016-11-01",
+      1.45,
+      220.0
+    ],
+    [
+      "jt-07",
+      "JT007 Action Star C",
+      "Celebrity",
+      "2017-01-01",
+      1.4,
+      220.0
+    ],
+    [
+      "jt-08",
+      "JT008 Action Star D",
+      "Celebrity",
+      "2017-03-01",
+      1.4,
+      220.0
+    ],
+    [
+      "jt-09",
+      "JT009 Martial Artist A",
+      "Martial Arts",
+      "2017-05-01",
+      1.5,
+      220.0
+    ],
+    [
+      "jt-10",
+      "JT010 Martial Artist B",
+      "Martial Arts",
+      "2017-07-01",
+      1.5,
+      220.0
+    ],
+    [
+      "jt-11",
+      "JT011 Martial Artist C",
+      "Martial Arts",
+      "2017-09-01",
+      1.45,
+      220.0
+    ],
+    [
+      "jt-12",
+      "JT012 Martial Artist D",
+      "Martial Arts",
+      "2017-11-01",
+      1.45,
+      220.0
+    ],
+    [
+      "jt-13",
+      "JT013 Cop Classic",
+      "Crime",
+      "2018-01-01",
+      1.4,
+      220.0
+    ],
+    [
+      "jt-14",
+      "JT014 Detective",
+      "Crime",
+      "2018-03-01",
+      1.4,
+      220.0
+    ],
+    [
+      "jt-15",
+      "JT015 Gangster Boss",
+      "Crime",
+      "2018-05-01",
+      1.45,
+      220.0
+    ],
+    [
+      "jt-16",
+      "JT016 Hitman",
+      "Crime",
+      "2018-07-01",
+      1.4,
+      220.0
+    ],
+    [
+      "jt-17",
+      "JT017 Sci-Fi Soldier",
+      "Sci-Fi",
+      "2018-09-01",
+      1.45,
+      220.0
+    ],
+    [
+      "jt-18",
+      "JT018 Sci-Fi Captain",
+      "Sci-Fi",
+      "2018-11-01",
+      1.45,
+      220.0
+    ],
+    [
+      "jt-19",
+      "JT019 Horror Icon A",
+      "Horror",
+      "2019-01-01",
+      1.5,
+      220.0
+    ],
+    [
+      "jt-20",
+      "JT020 Horror Icon B",
+      "Horror",
+      "2019-03-01",
+      1.5,
+      220.0
+    ],
+    [
+      "jt-21",
+      "JT001 Deluxe",
+      "Special",
+      "2019-05-01",
+      1.55,
+      220.0
+    ],
+    [
+      "jt-22",
+      "JT003 Deluxe",
+      "Special",
+      "2019-07-01",
+      1.55,
+      220.0
+    ],
+    [
+      "jt-23",
+      "JT009 Deluxe",
+      "Special",
+      "2019-09-01",
+      1.55,
+      220.0
+    ],
+    [
+      "jt-24",
+      "JT019 Deluxe",
+      "Special",
+      "2019-11-01",
+      1.55,
+      220.0
+    ],
+    [
+      "jt-25",
+      "JT021 Western Gunslinger",
+      "Western",
+      "2020-01-01",
+      1.4,
+      220.0
+    ],
+    [
+      "jt-26",
+      "JT022 Western Outlaw",
+      "Western",
+      "2020-03-01",
+      1.4,
+      220.0
+    ],
+    [
+      "jt-27",
+      "JT023 Sports Legend A",
+      "Sports",
+      "2020-05-01",
+      1.35,
+      220.0
+    ],
+    [
+      "jt-28",
+      "JT024 Sports Legend B",
+      "Sports",
+      "2020-07-01",
+      1.35,
+      220.0
+    ],
+    [
+      "jt-29",
+      "JT025 Musician Icon A",
+      "Music",
+      "2020-09-01",
+      1.4,
+      220.0
+    ],
+    [
+      "jt-30",
+      "JT026 Musician Icon B",
+      "Music",
+      "2020-11-01",
+      1.4,
+      220.0
+    ],
+    [
+      "jt-31",
+      "JT027 Historical Figure A",
+      "Historical",
+      "2021-01-01",
+      1.4,
+      220.0
+    ],
+    [
+      "jt-32",
+      "JT028 Historical Figure B",
+      "Historical",
+      "2021-03-01",
+      1.4,
+      220.0
+    ],
+    [
+      "jt-33",
+      "JT029 Fantasy Warrior",
+      "Fantasy",
+      "2021-05-01",
+      1.45,
+      220.0
+    ],
+    [
+      "jt-34",
+      "JT030 Fantasy Mage",
+      "Fantasy",
+      "2021-07-01",
+      1.4,
+      220.0
+    ],
+    [
+      "jt-35",
+      "Head Sculpt Pack A",
+      "Accessories",
+      "2021-09-01",
+      1.3,
+      55.0
+    ],
+    [
+      "jt-36",
+      "Head Sculpt Pack B",
+      "Accessories",
+      "2021-11-01",
+      1.3,
+      55.0
+    ],
+    [
+      "jt-37",
+      "Outfit Pack Modern",
+      "Accessories",
+      "2022-01-01",
+      1.35,
+      70.0
+    ],
+    [
+      "jt-38",
+      "Outfit Pack Period",
+      "Accessories",
+      "2022-03-01",
+      1.35,
+      70.0
+    ],
+    [
+      "jt-39",
+      "JT Movie Chrome",
+      "Special",
+      "2022-05-01",
+      1.5,
+      220.0
+    ],
+    [
+      "jt-40",
+      "JT Martial Chrome",
+      "Special",
+      "2022-07-01",
+      1.5,
+      220.0
+    ],
+    [
+      "jt-41",
+      "JT Horror Glow",
+      "Special",
+      "2022-09-01",
+      1.5,
+      220.0
+    ],
+    [
+      "jt-42",
+      "JT Sci-Fi Neon",
+      "Special",
+      "2022-11-01",
+      1.45,
+      220.0
+    ],
+    [
+      "jt-43",
+      "JT Celebrity Deluxe",
+      "Special",
+      "2023-01-01",
+      1.5,
+      220.0
+    ],
+    [
+      "jt-44",
+      "JT Crime Deluxe",
+      "Special",
+      "2023-03-01",
+      1.45,
+      220.0
+    ],
+    [
+      "jt-45",
+      "JT Studio Box Set",
+      "Special",
+      "2023-05-01",
+      1.45,
+      350.0
+    ]
+  ],
+  "artspirits": [
+    [
+      "as9-01",
+      "Sonic the Hedgehog",
+      "Sonic",
+      "2017-04-01",
+      1.55,
+      95.0
+    ],
+    [
+      "as9-02",
+      "Shadow the Hedgehog",
+      "Sonic",
+      "2017-06-01",
+      1.55,
+      95.0
+    ],
+    [
+      "as9-03",
+      "Silver the Hedgehog",
+      "Sonic",
+      "2017-08-01",
+      1.45,
+      95.0
+    ],
+    [
+      "as9-04",
+      "Knuckles",
+      "Sonic",
+      "2017-10-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-05",
+      "Tails",
+      "Sonic",
+      "2017-12-01",
+      1.45,
+      95.0
+    ],
+    [
+      "as9-06",
+      "Amy Rose",
+      "Sonic",
+      "2018-02-01",
+      1.4,
+      95.0
+    ],
+    [
+      "as9-07",
+      "Metal Sonic",
+      "Sonic",
+      "2018-04-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-08",
+      "Dr. Eggman",
+      "Sonic",
+      "2018-06-01",
+      1.45,
+      95.0
+    ],
+    [
+      "as9-09",
+      "Sonic Adventure",
+      "Sonic",
+      "2018-08-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-10",
+      "Sonic Boom",
+      "Sonic",
+      "2018-10-01",
+      1.4,
+      95.0
+    ],
+    [
+      "as9-11",
+      "Sonic Movie",
+      "Sonic",
+      "2018-12-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-12",
+      "Shadow Movie",
+      "Sonic",
+      "2019-02-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-13",
+      "Mecha Godzilla Spirit",
+      "Mecha",
+      "2019-04-01",
+      1.55,
+      95.0
+    ],
+    [
+      "as9-14",
+      "Gundam Spirit Homage",
+      "Mecha",
+      "2019-06-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-15",
+      "Mazinger Spirit",
+      "Mecha",
+      "2019-08-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-16",
+      "Getter Spirit",
+      "Mecha",
+      "2019-10-01",
+      1.45,
+      95.0
+    ],
+    [
+      "as9-17",
+      "Ultraman Spirit",
+      "Tokusatsu",
+      "2019-12-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-18",
+      "Ultraseven Spirit",
+      "Tokusatsu",
+      "2020-02-01",
+      1.45,
+      95.0
+    ],
+    [
+      "as9-19",
+      "Kamen Rider Spirit",
+      "Tokusatsu",
+      "2020-04-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-20",
+      "Godzilla Spirit",
+      "Tokusatsu",
+      "2020-06-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-21",
+      "Sonic Chrome",
+      "Special",
+      "2020-08-01",
+      1.55,
+      95.0
+    ],
+    [
+      "as9-22",
+      "Shadow Chrome",
+      "Special",
+      "2020-10-01",
+      1.55,
+      95.0
+    ],
+    [
+      "as9-23",
+      "Metal Sonic Chrome",
+      "Special",
+      "2020-12-01",
+      1.55,
+      95.0
+    ],
+    [
+      "as9-24",
+      "Sonic Clear",
+      "Special",
+      "2021-02-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-25",
+      "Sonic Deluxe",
+      "Special",
+      "2021-04-01",
+      1.55,
+      95.0
+    ],
+    [
+      "as9-26",
+      "Shadow Deluxe",
+      "Special",
+      "2021-06-01",
+      1.55,
+      95.0
+    ],
+    [
+      "as9-27",
+      "Mecha Deluxe",
+      "Special",
+      "2021-08-01",
+      1.55,
+      95.0
+    ],
+    [
+      "as9-28",
+      "Ultraman Deluxe",
+      "Special",
+      "2021-10-01",
+      1.55,
+      95.0
+    ],
+    [
+      "as9-29",
+      "Sonic Mini",
+      "Mini",
+      "2021-12-01",
+      1.3,
+      35.0
+    ],
+    [
+      "as9-30",
+      "Shadow Mini",
+      "Mini",
+      "2022-02-01",
+      1.3,
+      35.0
+    ],
+    [
+      "as9-31",
+      "Knuckles Mini",
+      "Mini",
+      "2022-04-01",
+      1.25,
+      32.0
+    ],
+    [
+      "as9-32",
+      "Tails Mini",
+      "Mini",
+      "2022-06-01",
+      1.25,
+      32.0
+    ],
+    [
+      "as9-33",
+      "Sonic Glow",
+      "Special",
+      "2022-08-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-34",
+      "Shadow Glow",
+      "Special",
+      "2022-10-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-35",
+      "Metal Sonic Neon",
+      "Special",
+      "2022-12-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-36",
+      "Eggman Deluxe",
+      "Special",
+      "2023-02-01",
+      1.45,
+      95.0
+    ],
+    [
+      "as9-37",
+      "Sonic Movie Deluxe",
+      "Special",
+      "2023-04-01",
+      1.55,
+      95.0
+    ],
+    [
+      "as9-38",
+      "Shadow Movie Deluxe",
+      "Special",
+      "2023-06-01",
+      1.55,
+      95.0
+    ],
+    [
+      "as9-39",
+      "Mecha Godzilla Chrome",
+      "Special",
+      "2023-08-01",
+      1.55,
+      95.0
+    ],
+    [
+      "as9-40",
+      "Gundam Spirit Chrome",
+      "Special",
+      "2023-10-01",
+      1.5,
+      95.0
+    ],
+    [
+      "as9-41",
+      "Tokusatsu Pack",
+      "Special",
+      "2023-12-01",
+      1.45,
+      200.0
+    ],
+    [
+      "as9-42",
+      "Sonic Pack",
+      "Special",
+      "2024-02-01",
+      1.5,
+      180.0
+    ],
+    [
+      "as9-43",
+      "Art Spirits Stand",
+      "Accessories",
+      "2024-04-01",
+      1.2,
+      25.0
+    ],
+    [
+      "as9-44",
+      "Effect Parts Pack",
+      "Accessories",
+      "2024-06-01",
+      1.25,
+      40.0
+    ],
+    [
+      "as9-45",
+      "Sonic Super Form",
+      "Special",
+      "2024-08-01",
+      1.55,
+      95.0
+    ]
+  ],
+  "artstorm": [
+    [
+      "ast-01",
+      "Sonic the Hedgehog Art Storm",
+      "Sonic",
+      "2018-05-01",
+      1.5,
+      100.0
+    ],
+    [
+      "ast-02",
+      "Shadow Art Storm",
+      "Sonic",
+      "2018-07-01",
+      1.5,
+      100.0
+    ],
+    [
+      "ast-03",
+      "Metal Sonic Art Storm",
+      "Sonic",
+      "2018-09-01",
+      1.5,
+      100.0
+    ],
+    [
+      "ast-04",
+      "Knuckles Art Storm",
+      "Sonic",
+      "2018-11-01",
+      1.45,
+      100.0
+    ],
+    [
+      "ast-05",
+      "Mecha Collection A",
+      "Mecha",
+      "2019-01-01",
+      1.5,
+      100.0
+    ],
+    [
+      "ast-06",
+      "Mecha Collection B",
+      "Mecha",
+      "2019-03-01",
+      1.45,
+      100.0
+    ],
+    [
+      "ast-07",
+      "Mecha Collection C",
+      "Mecha",
+      "2019-05-01",
+      1.45,
+      100.0
+    ],
+    [
+      "ast-08",
+      "Mecha Collection D",
+      "Mecha",
+      "2019-07-01",
+      1.4,
+      100.0
+    ],
+    [
+      "ast-09",
+      "Mecha Collection E",
+      "Mecha",
+      "2019-09-01",
+      1.4,
+      100.0
+    ],
+    [
+      "ast-10",
+      "Mecha Collection F",
+      "Mecha",
+      "2019-11-01",
+      1.4,
+      100.0
+    ],
+    [
+      "ast-11",
+      "Tokusatsu Hero A",
+      "Tokusatsu",
+      "2020-01-01",
+      1.5,
+      100.0
+    ],
+    [
+      "ast-12",
+      "Tokusatsu Hero B",
+      "Tokusatsu",
+      "2020-03-01",
+      1.45,
+      100.0
+    ],
+    [
+      "ast-13",
+      "Tokusatsu Hero C",
+      "Tokusatsu",
+      "2020-05-01",
+      1.45,
+      100.0
+    ],
+    [
+      "ast-14",
+      "Tokusatsu Monster A",
+      "Tokusatsu",
+      "2020-07-01",
+      1.4,
+      100.0
+    ],
+    [
+      "ast-15",
+      "Tokusatsu Monster B",
+      "Tokusatsu",
+      "2020-09-01",
+      1.4,
+      100.0
+    ],
+    [
+      "ast-16",
+      "Tokusatsu Monster C",
+      "Tokusatsu",
+      "2020-11-01",
+      1.35,
+      100.0
+    ],
+    [
+      "ast-17",
+      "Flying Mecha A",
+      "Mecha",
+      "2021-01-01",
+      1.45,
+      100.0
+    ],
+    [
+      "ast-18",
+      "Flying Mecha B",
+      "Mecha",
+      "2021-03-01",
+      1.45,
+      100.0
+    ],
+    [
+      "ast-19",
+      "Ground Mecha A",
+      "Mecha",
+      "2021-05-01",
+      1.4,
+      100.0
+    ],
+    [
+      "ast-20",
+      "Ground Mecha B",
+      "Mecha",
+      "2021-07-01",
+      1.4,
+      100.0
+    ],
+    [
+      "ast-21",
+      "Sonic Art Storm Chrome",
+      "Special",
+      "2021-09-01",
+      1.55,
+      100.0
+    ],
+    [
+      "ast-22",
+      "Shadow Art Storm Chrome",
+      "Special",
+      "2021-11-01",
+      1.55,
+      100.0
+    ],
+    [
+      "ast-23",
+      "Mecha A Chrome",
+      "Special",
+      "2022-01-01",
+      1.5,
+      100.0
+    ],
+    [
+      "ast-24",
+      "Mecha B Clear",
+      "Special",
+      "2022-03-01",
+      1.45,
+      100.0
+    ],
+    [
+      "ast-25",
+      "Tokusatsu Hero Deluxe",
+      "Special",
+      "2022-05-01",
+      1.55,
+      100.0
+    ],
+    [
+      "ast-26",
+      "Tokusatsu Monster Deluxe",
+      "Special",
+      "2022-07-01",
+      1.45,
+      100.0
+    ],
+    [
+      "ast-27",
+      "Mini Mecha A",
+      "Mini",
+      "2022-09-01",
+      1.25,
+      40.0
+    ],
+    [
+      "ast-28",
+      "Mini Mecha B",
+      "Mini",
+      "2022-11-01",
+      1.25,
+      40.0
+    ],
+    [
+      "ast-29",
+      "Mini Sonic",
+      "Mini",
+      "2023-01-01",
+      1.3,
+      35.0
+    ],
+    [
+      "ast-30",
+      "Mini Shadow",
+      "Mini",
+      "2023-03-01",
+      1.3,
+      35.0
+    ],
+    [
+      "ast-31",
+      "Flying Mecha Deluxe",
+      "Special",
+      "2023-05-01",
+      1.5,
+      100.0
+    ],
+    [
+      "ast-32",
+      "Ground Mecha Deluxe",
+      "Special",
+      "2023-07-01",
+      1.45,
+      100.0
+    ],
+    [
+      "ast-33",
+      "Art Storm Combo Pack",
+      "Special",
+      "2023-09-01",
+      1.45,
+      220.0
+    ],
+    [
+      "ast-34",
+      "Effect Pack Storm",
+      "Accessories",
+      "2023-11-01",
+      1.25,
+      45.0
+    ],
+    [
+      "ast-35",
+      "Mecha C Metallic",
+      "Special",
+      "2024-01-01",
+      1.45,
+      100.0
+    ],
+    [
+      "ast-36",
+      "Mecha D Neon",
+      "Special",
+      "2024-03-01",
+      1.4,
+      100.0
+    ],
+    [
+      "ast-37",
+      "Tokusatsu Glow",
+      "Special",
+      "2024-05-01",
+      1.45,
+      100.0
+    ],
+    [
+      "ast-38",
+      "Sonic Super Art Storm",
+      "Special",
+      "2024-07-01",
+      1.55,
+      100.0
+    ],
+    [
+      "ast-39",
+      "Metal Sonic Neon",
+      "Special",
+      "2024-09-01",
+      1.5,
+      100.0
+    ],
+    [
+      "ast-40",
+      "Knuckles Chrome",
+      "Special",
+      "2024-11-01",
+      1.45,
+      100.0
+    ],
+    [
+      "ast-41",
+      "Mecha E Battle Damaged",
+      "Special",
+      "2025-01-01",
+      1.4,
+      100.0
+    ],
+    [
+      "ast-42",
+      "Mecha F Clear",
+      "Special",
+      "2025-03-01",
+      1.4,
+      100.0
+    ],
+    [
+      "ast-43",
+      "Stand Pack Storm",
+      "Accessories",
+      "2025-05-01",
+      1.2,
+      30.0
+    ],
+    [
+      "ast-44",
+      "Weapon Pack Storm",
+      "Accessories",
+      "2025-07-01",
+      1.25,
+      40.0
+    ],
+    [
+      "ast-45",
+      "Art Storm Starter",
+      "Special",
+      "2025-09-01",
+      1.35,
+      100.0
+    ]
+  ],
+  "fiftytwo": [
+    [
+      "ft-01",
+      "BeastBOX BB-01 Lion",
+      "BeastBOX",
+      "2019-01-01",
+      1.5,
+      55.0
+    ],
+    [
+      "ft-02",
+      "BeastBOX BB-02 Tiger",
+      "BeastBOX",
+      "2019-02-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-03",
+      "BeastBOX BB-03 Wolf",
+      "BeastBOX",
+      "2019-03-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-04",
+      "BeastBOX BB-04 Eagle",
+      "BeastBOX",
+      "2019-04-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-05",
+      "BeastBOX BB-05 Rhino",
+      "BeastBOX",
+      "2019-05-01",
+      1.4,
+      55.0
+    ],
+    [
+      "ft-06",
+      "BeastBOX BB-06 Gorilla",
+      "BeastBOX",
+      "2019-06-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-07",
+      "BeastBOX BB-07 Shark",
+      "BeastBOX",
+      "2019-07-01",
+      1.4,
+      55.0
+    ],
+    [
+      "ft-08",
+      "BeastBOX BB-08 Snake",
+      "BeastBOX",
+      "2019-08-01",
+      1.35,
+      55.0
+    ],
+    [
+      "ft-09",
+      "BeastBOX BB-09 Scorpion",
+      "BeastBOX",
+      "2019-09-01",
+      1.4,
+      55.0
+    ],
+    [
+      "ft-10",
+      "BeastBOX BB-10 Raptor",
+      "BeastBOX",
+      "2019-10-01",
+      1.5,
+      55.0
+    ],
+    [
+      "ft-11",
+      "BeastBOX BB-11 Panther",
+      "BeastBOX",
+      "2019-11-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-12",
+      "BeastBOX BB-12 Bear",
+      "BeastBOX",
+      "2019-12-01",
+      1.4,
+      55.0
+    ],
+    [
+      "ft-13",
+      "MegaBOX MB-01",
+      "MegaBOX",
+      "2020-01-01",
+      1.5,
+      55.0
+    ],
+    [
+      "ft-14",
+      "MegaBOX MB-02",
+      "MegaBOX",
+      "2020-02-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-15",
+      "MegaBOX MB-03",
+      "MegaBOX",
+      "2020-03-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-16",
+      "MegaBOX MB-04",
+      "MegaBOX",
+      "2020-04-01",
+      1.4,
+      55.0
+    ],
+    [
+      "ft-17",
+      "MegaBOX MB-05",
+      "MegaBOX",
+      "2020-05-01",
+      1.4,
+      55.0
+    ],
+    [
+      "ft-18",
+      "MegaBOX MB-06",
+      "MegaBOX",
+      "2020-06-01",
+      1.4,
+      55.0
+    ],
+    [
+      "ft-19",
+      "BB Lion Chrome",
+      "Special",
+      "2020-07-01",
+      1.55,
+      55.0
+    ],
+    [
+      "ft-20",
+      "BB Tiger Desert",
+      "Special",
+      "2020-08-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-21",
+      "BB Wolf Night",
+      "Special",
+      "2020-09-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-22",
+      "BB Eagle Clear",
+      "Special",
+      "2020-10-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-23",
+      "BB Raptor Metallic",
+      "Special",
+      "2020-11-01",
+      1.55,
+      55.0
+    ],
+    [
+      "ft-24",
+      "BB Panther Ghost",
+      "Special",
+      "2020-12-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-25",
+      "MB-01 Chrome",
+      "Special",
+      "2021-01-01",
+      1.55,
+      55.0
+    ],
+    [
+      "ft-26",
+      "MB-02 Clear",
+      "Special",
+      "2021-02-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-27",
+      "Mini Beast Lion",
+      "Mini",
+      "2021-03-01",
+      1.25,
+      25.0
+    ],
+    [
+      "ft-28",
+      "Mini Beast Tiger",
+      "Mini",
+      "2021-04-01",
+      1.2,
+      22.0
+    ],
+    [
+      "ft-29",
+      "Mini Beast Wolf",
+      "Mini",
+      "2021-05-01",
+      1.2,
+      22.0
+    ],
+    [
+      "ft-30",
+      "Mini Beast Eagle",
+      "Mini",
+      "2021-06-01",
+      1.2,
+      22.0
+    ],
+    [
+      "ft-31",
+      "BB Combiner A",
+      "Combiner",
+      "2021-07-01",
+      1.35,
+      50.0
+    ],
+    [
+      "ft-32",
+      "BB Combiner B",
+      "Combiner",
+      "2021-08-01",
+      1.3,
+      48.0
+    ],
+    [
+      "ft-33",
+      "BB Combiner C",
+      "Combiner",
+      "2021-09-01",
+      1.3,
+      48.0
+    ],
+    [
+      "ft-34",
+      "BB Combiner Complete",
+      "Combiner",
+      "2021-10-01",
+      1.55,
+      180.0
+    ],
+    [
+      "ft-35",
+      "BB Upgrade Pack",
+      "Special",
+      "2021-11-01",
+      1.25,
+      30.0
+    ],
+    [
+      "ft-36",
+      "MB Upgrade Pack",
+      "Special",
+      "2021-12-01",
+      1.25,
+      35.0
+    ],
+    [
+      "ft-37",
+      "BB Shark Chrome",
+      "Special",
+      "2022-01-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-38",
+      "BB Gorilla Black",
+      "Special",
+      "2022-02-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-39",
+      "BB Snake Neon",
+      "Special",
+      "2022-03-01",
+      1.35,
+      55.0
+    ],
+    [
+      "ft-40",
+      "BB Scorpion Metallic",
+      "Special",
+      "2022-04-01",
+      1.4,
+      55.0
+    ],
+    [
+      "ft-41",
+      "BB Bear Winter",
+      "Special",
+      "2022-05-01",
+      1.4,
+      55.0
+    ],
+    [
+      "ft-42",
+      "MB-03 Metallic",
+      "Special",
+      "2022-06-01",
+      1.45,
+      55.0
+    ],
+    [
+      "ft-43",
+      "MB-04 Neon",
+      "Special",
+      "2022-07-01",
+      1.4,
+      55.0
+    ],
+    [
+      "ft-44",
+      "52Toys Display Stand",
+      "Accessories",
+      "2022-08-01",
+      1.2,
+      20.0
+    ],
+    [
+      "ft-45",
+      "BeastBOX Starter Set",
+      "Special",
+      "2022-09-01",
+      1.4,
+      90.0
+    ]
+  ],
+  "actiontoys": [
+    [
+      "at-01",
+      "ES Gokin Mazinger Z",
+      "ES Gokin",
+      "2015-03-01",
+      1.55,
+      110.0
+    ],
+    [
+      "at-02",
+      "ES Gokin Great Mazinger",
+      "ES Gokin",
+      "2015-05-01",
+      1.5,
+      110.0
+    ],
+    [
+      "at-03",
+      "ES Gokin Grendizer",
+      "ES Gokin",
+      "2015-07-01",
+      1.55,
+      110.0
+    ],
+    [
+      "at-04",
+      "ES Gokin Getter 1",
+      "ES Gokin",
+      "2015-09-01",
+      1.5,
+      110.0
+    ],
+    [
+      "at-05",
+      "ES Gokin Getter 2",
+      "ES Gokin",
+      "2015-11-01",
+      1.45,
+      110.0
+    ],
+    [
+      "at-06",
+      "ES Gokin Getter 3",
+      "ES Gokin",
+      "2016-01-01",
+      1.45,
+      110.0
+    ],
+    [
+      "at-07",
+      "ES Gokin Jeeg",
+      "ES Gokin",
+      "2016-03-01",
+      1.5,
+      110.0
+    ],
+    [
+      "at-08",
+      "ES Gokin Raideen",
+      "ES Gokin",
+      "2016-05-01",
+      1.5,
+      110.0
+    ],
+    [
+      "at-09",
+      "Mini Action Mazinger",
+      "Mini Action",
+      "2016-07-01",
+      1.4,
+      110.0
+    ],
+    [
+      "at-10",
+      "Mini Action Grendizer",
+      "Mini Action",
+      "2016-09-01",
+      1.4,
+      110.0
+    ],
+    [
+      "at-11",
+      "Mini Action Getter",
+      "Mini Action",
+      "2016-11-01",
+      1.35,
+      110.0
+    ],
+    [
+      "at-12",
+      "Mini Action Jeeg",
+      "Mini Action",
+      "2017-01-01",
+      1.35,
+      110.0
+    ],
+    [
+      "at-13",
+      "Hero Action Ultraman",
+      "Hero Action",
+      "2017-03-01",
+      1.5,
+      110.0
+    ],
+    [
+      "at-14",
+      "Hero Action Ultraseven",
+      "Hero Action",
+      "2017-05-01",
+      1.45,
+      110.0
+    ],
+    [
+      "at-15",
+      "Hero Action Ultraman Tiga",
+      "Hero Action",
+      "2017-07-01",
+      1.45,
+      110.0
+    ],
+    [
+      "at-16",
+      "Hero Action Ultraman Gaia",
+      "Hero Action",
+      "2017-09-01",
+      1.4,
+      110.0
+    ],
+    [
+      "at-17",
+      "Hero Action Kamen Rider",
+      "Hero Action",
+      "2017-11-01",
+      1.5,
+      110.0
+    ],
+    [
+      "at-18",
+      "Hero Action Kamen Rider Black",
+      "Hero Action",
+      "2018-01-01",
+      1.5,
+      110.0
+    ],
+    [
+      "at-19",
+      "ES Gokin Mazinger Chrome",
+      "Special",
+      "2018-03-01",
+      1.55,
+      110.0
+    ],
+    [
+      "at-20",
+      "ES Gokin Grendizer Gold",
+      "Special",
+      "2018-05-01",
+      1.55,
+      110.0
+    ],
+    [
+      "at-21",
+      "ES Gokin Getter Deluxe",
+      "Special",
+      "2018-07-01",
+      1.55,
+      110.0
+    ],
+    [
+      "at-22",
+      "ES Gokin Jeeg Deluxe",
+      "Special",
+      "2018-09-01",
+      1.55,
+      110.0
+    ],
+    [
+      "at-23",
+      "Mini Action Chrome",
+      "Special",
+      "2018-11-01",
+      1.45,
+      110.0
+    ],
+    [
+      "at-24",
+      "Hero Action Deluxe",
+      "Special",
+      "2019-01-01",
+      1.55,
+      110.0
+    ],
+    [
+      "at-25",
+      "ES Gokin Clear",
+      "Special",
+      "2019-03-01",
+      1.5,
+      110.0
+    ],
+    [
+      "at-26",
+      "ES Gokin Battle Damaged",
+      "Special",
+      "2019-05-01",
+      1.5,
+      110.0
+    ],
+    [
+      "at-27",
+      "Hero Action Glow",
+      "Special",
+      "2019-07-01",
+      1.5,
+      110.0
+    ],
+    [
+      "at-28",
+      "Mini Action Pack",
+      "Special",
+      "2019-09-01",
+      1.4,
+      80.0
+    ],
+    [
+      "at-29",
+      "ES Gokin Effect Parts",
+      "Accessories",
+      "2019-11-01",
+      1.3,
+      45.0
+    ],
+    [
+      "at-30",
+      "Hero Action Stand",
+      "Accessories",
+      "2020-01-01",
+      1.2,
+      25.0
+    ],
+    [
+      "at-31",
+      "ES Gokin Mazinger Black",
+      "Special",
+      "2020-03-01",
+      1.55,
+      110.0
+    ],
+    [
+      "at-32",
+      "ES Gokin Great Mazinger Black",
+      "Special",
+      "2020-05-01",
+      1.5,
+      110.0
+    ],
+    [
+      "at-33",
+      "Hero Action Alien Baltan",
+      "Hero Action",
+      "2020-07-01",
+      1.4,
+      110.0
+    ],
+    [
+      "at-34",
+      "Hero Action Alien Zetton",
+      "Hero Action",
+      "2020-09-01",
+      1.4,
+      110.0
+    ],
+    [
+      "at-35",
+      "Mini Action Raideen",
+      "Mini Action",
+      "2020-11-01",
+      1.35,
+      110.0
+    ],
+    [
+      "at-36",
+      "Mini Action Ultraman",
+      "Mini Action",
+      "2021-01-01",
+      1.35,
+      110.0
+    ],
+    [
+      "at-37",
+      "ES Gokin Combiner A",
+      "Combiner",
+      "2021-03-01",
+      1.4,
+      70.0
+    ],
+    [
+      "at-38",
+      "ES Gokin Combiner B",
+      "Combiner",
+      "2021-05-01",
+      1.35,
+      65.0
+    ],
+    [
+      "at-39",
+      "ES Gokin Combiner Complete",
+      "Combiner",
+      "2021-07-01",
+      1.55,
+      250.0
+    ],
+    [
+      "at-40",
+      "Action Toys Starter",
+      "Special",
+      "2021-09-01",
+      1.35,
+      90.0
+    ],
+    [
+      "at-41",
+      "ES Gokin Weapon Pack",
+      "Accessories",
+      "2021-11-01",
+      1.25,
+      40.0
+    ],
+    [
+      "at-42",
+      "Hero Action Weapon Pack",
+      "Accessories",
+      "2022-01-01",
+      1.25,
+      40.0
+    ],
+    [
+      "at-43",
+      "ES Gokin Grendizer Clear",
+      "Special",
+      "2022-03-01",
+      1.55,
+      110.0
+    ],
+    [
+      "at-44",
+      "Hero Action Ultraman Chrome",
+      "Special",
+      "2022-05-01",
+      1.55,
+      110.0
+    ],
+    [
+      "at-45",
+      "Mini Action Glow",
+      "Special",
+      "2022-07-01",
+      1.4,
+      110.0
+    ]
+  ],
+  "underverse": [
+    [
+      "uv-01",
+      "UV001 Operative A",
+      "1/12 Series",
+      "2020-02-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-02",
+      "UV002 Operative B",
+      "1/12 Series",
+      "2020-03-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-03",
+      "UV003 Operative C",
+      "1/12 Series",
+      "2020-04-01",
+      1.35,
+      55.0
+    ],
+    [
+      "uv-04",
+      "UV004 Operative D",
+      "1/12 Series",
+      "2020-05-01",
+      1.35,
+      55.0
+    ],
+    [
+      "uv-05",
+      "UV005 Spec Ops A",
+      "1/12 Series",
+      "2020-06-01",
+      1.45,
+      55.0
+    ],
+    [
+      "uv-06",
+      "UV006 Spec Ops B",
+      "1/12 Series",
+      "2020-07-01",
+      1.45,
+      55.0
+    ],
+    [
+      "uv-07",
+      "UV007 Spec Ops C",
+      "1/12 Series",
+      "2020-08-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-08",
+      "UV008 Spec Ops D",
+      "1/12 Series",
+      "2020-09-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-09",
+      "UV009 Sci-Fi Trooper",
+      "1/12 Sci-Fi",
+      "2020-10-01",
+      1.45,
+      55.0
+    ],
+    [
+      "uv-10",
+      "UV010 Sci-Fi Captain",
+      "1/12 Sci-Fi",
+      "2020-11-01",
+      1.45,
+      55.0
+    ],
+    [
+      "uv-11",
+      "UV011 Sci-Fi Android",
+      "1/12 Sci-Fi",
+      "2020-12-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-12",
+      "UV012 Sci-Fi Hunter",
+      "1/12 Sci-Fi",
+      "2021-01-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-13",
+      "UV013 Fantasy Knight",
+      "1/12 Fantasy",
+      "2021-02-01",
+      1.45,
+      55.0
+    ],
+    [
+      "uv-14",
+      "UV014 Fantasy Archer",
+      "1/12 Fantasy",
+      "2021-03-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-15",
+      "UV015 Fantasy Mage",
+      "1/12 Fantasy",
+      "2021-04-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-16",
+      "UV016 Fantasy Orc",
+      "1/12 Fantasy",
+      "2021-05-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-17",
+      "UV017 Street Fighter A",
+      "1/12 Street",
+      "2021-06-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-18",
+      "UV018 Street Fighter B",
+      "1/12 Street",
+      "2021-07-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-19",
+      "UV019 Street Boss",
+      "1/12 Street",
+      "2021-08-01",
+      1.45,
+      55.0
+    ],
+    [
+      "uv-20",
+      "UV020 Street Assassin",
+      "1/12 Street",
+      "2021-09-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-21",
+      "UV001 Deluxe",
+      "Special",
+      "2021-10-01",
+      1.5,
+      55.0
+    ],
+    [
+      "uv-22",
+      "UV005 Deluxe",
+      "Special",
+      "2021-11-01",
+      1.55,
+      55.0
+    ],
+    [
+      "uv-23",
+      "UV009 Deluxe",
+      "Special",
+      "2021-12-01",
+      1.5,
+      55.0
+    ],
+    [
+      "uv-24",
+      "UV013 Deluxe",
+      "Special",
+      "2022-01-01",
+      1.5,
+      55.0
+    ],
+    [
+      "uv-25",
+      "UV021 Body Male",
+      "Bodies",
+      "2022-02-01",
+      1.3,
+      35.0
+    ],
+    [
+      "uv-26",
+      "UV022 Body Female",
+      "Bodies",
+      "2022-03-01",
+      1.3,
+      35.0
+    ],
+    [
+      "uv-27",
+      "UV023 Head Pack A",
+      "Accessories",
+      "2022-04-01",
+      1.25,
+      20.0
+    ],
+    [
+      "uv-28",
+      "UV024 Head Pack B",
+      "Accessories",
+      "2022-05-01",
+      1.25,
+      20.0
+    ],
+    [
+      "uv-29",
+      "UV025 Weapon Pack Modern",
+      "Accessories",
+      "2022-06-01",
+      1.3,
+      25.0
+    ],
+    [
+      "uv-30",
+      "UV026 Weapon Pack Fantasy",
+      "Accessories",
+      "2022-07-01",
+      1.3,
+      25.0
+    ],
+    [
+      "uv-31",
+      "UV Spec Ops Chrome",
+      "Special",
+      "2022-08-01",
+      1.5,
+      55.0
+    ],
+    [
+      "uv-32",
+      "UV Sci-Fi Neon",
+      "Special",
+      "2022-09-01",
+      1.45,
+      55.0
+    ],
+    [
+      "uv-33",
+      "UV Fantasy Chrome",
+      "Special",
+      "2022-10-01",
+      1.45,
+      55.0
+    ],
+    [
+      "uv-34",
+      "UV Street Neon",
+      "Special",
+      "2022-11-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-35",
+      "UV Operative Clear",
+      "Special",
+      "2022-12-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-36",
+      "UV Spec Ops Night",
+      "Special",
+      "2023-01-01",
+      1.45,
+      55.0
+    ],
+    [
+      "uv-37",
+      "UV Sci-Fi Battle Damaged",
+      "Special",
+      "2023-02-01",
+      1.45,
+      55.0
+    ],
+    [
+      "uv-38",
+      "UV Fantasy Glow",
+      "Special",
+      "2023-03-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-39",
+      "UV Starter Set",
+      "Special",
+      "2023-04-01",
+      1.35,
+      80.0
+    ],
+    [
+      "uv-40",
+      "UV Display Stand",
+      "Accessories",
+      "2023-05-01",
+      1.15,
+      15.0
+    ],
+    [
+      "uv-41",
+      "UV027 Female Operative",
+      "1/12 Series",
+      "2023-06-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-42",
+      "UV028 Female Spec Ops",
+      "1/12 Series",
+      "2023-07-01",
+      1.45,
+      55.0
+    ],
+    [
+      "uv-43",
+      "UV029 Female Sci-Fi",
+      "1/12 Sci-Fi",
+      "2023-08-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-44",
+      "UV030 Female Fantasy",
+      "1/12 Fantasy",
+      "2023-09-01",
+      1.4,
+      55.0
+    ],
+    [
+      "uv-45",
+      "UV Female Deluxe",
+      "Special",
+      "2023-10-01",
+      1.5,
+      55.0
+    ]
+  ],
+  "neca": [
+    [
+      "nc-01",
+      "Ultimate Michelangelo",
+      "TMNT",
+      "2018-01-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-02",
+      "Ultimate Leonardo",
+      "TMNT",
+      "2018-02-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-03",
+      "Ultimate Donatello",
+      "TMNT",
+      "2018-03-01",
+      1.45,
+      35.0
+    ],
+    [
+      "nc-04",
+      "Ultimate Raphael",
+      "TMNT",
+      "2018-04-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-05",
+      "Ultimate Shredder",
+      "TMNT",
+      "2018-05-01",
+      1.55,
+      35.0
+    ],
+    [
+      "nc-06",
+      "Ultimate Splinter",
+      "TMNT",
+      "2018-06-01",
+      1.45,
+      35.0
+    ],
+    [
+      "nc-07",
+      "Ultimate Casey Jones",
+      "TMNT",
+      "2018-07-01",
+      1.4,
+      35.0
+    ],
+    [
+      "nc-08",
+      "Ultimate April O'Neil",
+      "TMNT",
+      "2018-08-01",
+      1.35,
+      35.0
+    ],
+    [
+      "nc-09",
+      "Ultimate Alien Warrior",
+      "Aliens",
+      "2018-09-01",
+      1.55,
+      35.0
+    ],
+    [
+      "nc-10",
+      "Ultimate Alien Queen",
+      "Aliens",
+      "2018-10-01",
+      1.55,
+      35.0
+    ],
+    [
+      "nc-11",
+      "Ultimate Predator",
+      "Predator",
+      "2018-11-01",
+      1.55,
+      35.0
+    ],
+    [
+      "nc-12",
+      "Ultimate City Hunter",
+      "Predator",
+      "2018-12-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-13",
+      "Ultimate Freddy",
+      "Horror",
+      "2019-01-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-14",
+      "Ultimate Jason",
+      "Horror",
+      "2019-02-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-15",
+      "Ultimate Myers",
+      "Horror",
+      "2019-03-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-16",
+      "Ultimate Leatherface",
+      "Horror",
+      "2019-04-01",
+      1.45,
+      35.0
+    ],
+    [
+      "nc-17",
+      "Ultimate Chucky",
+      "Horror",
+      "2019-05-01",
+      1.45,
+      35.0
+    ],
+    [
+      "nc-18",
+      "Ultimate Pennywise",
+      "Horror",
+      "2019-06-01",
+      1.55,
+      35.0
+    ],
+    [
+      "nc-19",
+      "Ultimate Ash",
+      "Horror",
+      "2019-07-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-20",
+      "Ultimate Pinhead",
+      "Horror",
+      "2019-08-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-21",
+      "Ultimate RoboCop",
+      "Movie",
+      "2019-09-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-22",
+      "Ultimate T-800",
+      "Movie",
+      "2019-10-01",
+      1.55,
+      35.0
+    ],
+    [
+      "nc-23",
+      "Ultimate T-1000",
+      "Movie",
+      "2019-11-01",
+      1.55,
+      35.0
+    ],
+    [
+      "nc-24",
+      "Ultimate Deckard",
+      "Movie",
+      "2019-12-01",
+      1.45,
+      35.0
+    ],
+    [
+      "nc-25",
+      "Ultimate Batman 89",
+      "DC",
+      "2020-01-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-26",
+      "Ultimate Joker 89",
+      "DC",
+      "2020-02-01",
+      1.55,
+      35.0
+    ],
+    [
+      "nc-27",
+      "Ultimate TMNT Foot Soldier",
+      "TMNT",
+      "2020-03-01",
+      1.35,
+      35.0
+    ],
+    [
+      "nc-28",
+      "Ultimate Krang",
+      "TMNT",
+      "2020-04-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-29",
+      "Ultimate Bebop",
+      "TMNT",
+      "2020-05-01",
+      1.4,
+      35.0
+    ],
+    [
+      "nc-30",
+      "Ultimate Rocksteady",
+      "TMNT",
+      "2020-06-01",
+      1.4,
+      35.0
+    ],
+    [
+      "nc-31",
+      "Ultimate Alien Chestburster",
+      "Aliens",
+      "2020-07-01",
+      1.4,
+      35.0
+    ],
+    [
+      "nc-32",
+      "Ultimate Dog Alien",
+      "Aliens",
+      "2020-08-01",
+      1.45,
+      35.0
+    ],
+    [
+      "nc-33",
+      "Ultimate Jungle Hunter",
+      "Predator",
+      "2020-09-01",
+      1.55,
+      35.0
+    ],
+    [
+      "nc-34",
+      "Ultimate Elder Predator",
+      "Predator",
+      "2020-10-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-35",
+      "Ultimate Ghostface",
+      "Horror",
+      "2020-11-01",
+      1.45,
+      35.0
+    ],
+    [
+      "nc-36",
+      "Ultimate Art the Clown",
+      "Horror",
+      "2020-12-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-37",
+      "Ultimate Universal Monster Dracula",
+      "Universal",
+      "2021-01-01",
+      1.45,
+      35.0
+    ],
+    [
+      "nc-38",
+      "Ultimate Frankenstein",
+      "Universal",
+      "2021-02-01",
+      1.45,
+      35.0
+    ],
+    [
+      "nc-39",
+      "Ultimate Wolfman",
+      "Universal",
+      "2021-03-01",
+      1.4,
+      35.0
+    ],
+    [
+      "nc-40",
+      "Ultimate Mummy",
+      "Universal",
+      "2021-04-01",
+      1.4,
+      35.0
+    ],
+    [
+      "nc-41",
+      "Ultimate Creature Black Lagoon",
+      "Universal",
+      "2021-05-01",
+      1.45,
+      35.0
+    ],
+    [
+      "nc-42",
+      "Ultimate Bride of Frankenstein",
+      "Universal",
+      "2021-06-01",
+      1.45,
+      35.0
+    ],
+    [
+      "nc-43",
+      "Ultimate Godzilla 2003",
+      "Godzilla",
+      "2021-07-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-44",
+      "Ultimate King Kong",
+      "Godzilla",
+      "2021-08-01",
+      1.5,
+      35.0
+    ],
+    [
+      "nc-45",
+      "Ultimate Them!",
+      "Horror",
+      "2021-09-01",
+      1.35,
+      35.0
+    ]
+  ],
+  "super7": [
+    [
+      "s7-01",
+      "ULTIMATES He-Man",
+      "ULTIMATES!",
+      "2019-02-01",
+      1.55,
+      55.0
+    ],
+    [
+      "s7-02",
+      "ULTIMATES Skeletor",
+      "ULTIMATES!",
+      "2019-03-01",
+      1.55,
+      55.0
+    ],
+    [
+      "s7-03",
+      "ULTIMATES Teela",
+      "ULTIMATES!",
+      "2019-04-01",
+      1.45,
+      55.0
+    ],
+    [
+      "s7-04",
+      "ULTIMATES Man-At-Arms",
+      "ULTIMATES!",
+      "2019-05-01",
+      1.45,
+      55.0
+    ],
+    [
+      "s7-05",
+      "ULTIMATES Evil-Lyn",
+      "ULTIMATES!",
+      "2019-06-01",
+      1.5,
+      55.0
+    ],
+    [
+      "s7-06",
+      "ULTIMATES Beast Man",
+      "ULTIMATES!",
+      "2019-07-01",
+      1.45,
+      55.0
+    ],
+    [
+      "s7-07",
+      "ULTIMATES Stratos",
+      "ULTIMATES!",
+      "2019-08-01",
+      1.4,
+      55.0
+    ],
+    [
+      "s7-08",
+      "ULTIMATES Mer-Man",
+      "ULTIMATES!",
+      "2019-09-01",
+      1.4,
+      55.0
+    ],
+    [
+      "s7-09",
+      "ULTIMATES Trap Jaw",
+      "ULTIMATES!",
+      "2019-10-01",
+      1.45,
+      55.0
+    ],
+    [
+      "s7-10",
+      "ULTIMATES Tri-Klops",
+      "ULTIMATES!",
+      "2019-11-01",
+      1.4,
+      55.0
+    ],
+    [
+      "s7-11",
+      "ULTIMATES Hordak",
+      "ULTIMATES!",
+      "2019-12-01",
+      1.5,
+      55.0
+    ],
+    [
+      "s7-12",
+      "ULTIMATES She-Ra",
+      "ULTIMATES!",
+      "2020-01-01",
+      1.5,
+      55.0
+    ],
+    [
+      "s7-13",
+      "ULTIMATES Snake Eyes",
+      "ULTIMATES!",
+      "2020-02-01",
+      1.5,
+      55.0
+    ],
+    [
+      "s7-14",
+      "ULTIMATES Cobra Commander",
+      "ULTIMATES!",
+      "2020-03-01",
+      1.55,
+      55.0
+    ],
+    [
+      "s7-15",
+      "ULTIMATES Storm Shadow",
+      "ULTIMATES!",
+      "2020-04-01",
+      1.5,
+      55.0
+    ],
+    [
+      "s7-16",
+      "ULTIMATES Destro",
+      "ULTIMATES!",
+      "2020-05-01",
+      1.5,
+      55.0
+    ],
+    [
+      "s7-17",
+      "ReAction He-Man",
+      "ReAction",
+      "2020-06-01",
+      1.35,
+      55.0
+    ],
+    [
+      "s7-18",
+      "ReAction Skeletor",
+      "ReAction",
+      "2020-07-01",
+      1.35,
+      55.0
+    ],
+    [
+      "s7-19",
+      "ReAction Snake Eyes",
+      "ReAction",
+      "2020-08-01",
+      1.35,
+      55.0
+    ],
+    [
+      "s7-20",
+      "ReAction Cobra Commander",
+      "ReAction",
+      "2020-09-01",
+      1.4,
+      55.0
+    ],
+    [
+      "s7-21",
+      "ReAction Alien",
+      "ReAction",
+      "2020-10-01",
+      1.4,
+      55.0
+    ],
+    [
+      "s7-22",
+      "ReAction Predator",
+      "ReAction",
+      "2020-11-01",
+      1.4,
+      55.0
+    ],
+    [
+      "s7-23",
+      "ReAction RoboCop",
+      "ReAction",
+      "2020-12-01",
+      1.35,
+      55.0
+    ],
+    [
+      "s7-24",
+      "ReAction T-800",
+      "ReAction",
+      "2021-01-01",
+      1.4,
+      55.0
+    ],
+    [
+      "s7-25",
+      "ULTIMATES Optimus",
+      "ULTIMATES!",
+      "2021-02-01",
+      1.55,
+      55.0
+    ],
+    [
+      "s7-26",
+      "ULTIMATES Megatron",
+      "ULTIMATES!",
+      "2021-03-01",
+      1.55,
+      55.0
+    ],
+    [
+      "s7-27",
+      "ULTIMATES Bumblebee",
+      "ULTIMATES!",
+      "2021-04-01",
+      1.45,
+      55.0
+    ],
+    [
+      "s7-28",
+      "ULTIMATES Starscream",
+      "ULTIMATES!",
+      "2021-05-01",
+      1.45,
+      55.0
+    ],
+    [
+      "s7-29",
+      "ULTIMATES ThunderCats Lion-O",
+      "ULTIMATES!",
+      "2021-06-01",
+      1.5,
+      55.0
+    ],
+    [
+      "s7-30",
+      "ULTIMATES Mumm-Ra",
+      "ULTIMATES!",
+      "2021-07-01",
+      1.55,
+      55.0
+    ],
+    [
+      "s7-31",
+      "ULTIMATES SilverHawks",
+      "ULTIMATES!",
+      "2021-08-01",
+      1.4,
+      55.0
+    ],
+    [
+      "s7-32",
+      "ULTIMATES Voltron",
+      "ULTIMATES!",
+      "2021-09-01",
+      1.55,
+      55.0
+    ],
+    [
+      "s7-33",
+      "ReAction ThunderCats",
+      "ReAction",
+      "2021-10-01",
+      1.35,
+      55.0
+    ],
+    [
+      "s7-34",
+      "ReAction Voltron",
+      "ReAction",
+      "2021-11-01",
+      1.4,
+      55.0
+    ],
+    [
+      "s7-35",
+      "ULTIMATES He-Man Soft Goods",
+      "Special",
+      "2021-12-01",
+      1.55,
+      55.0
+    ],
+    [
+      "s7-36",
+      "ULTIMATES Skeletor Soft Goods",
+      "Special",
+      "2022-01-01",
+      1.55,
+      55.0
+    ],
+    [
+      "s7-37",
+      "ULTIMATES Snake Eyes Soft Goods",
+      "Special",
+      "2022-02-01",
+      1.55,
+      55.0
+    ],
+    [
+      "s7-38",
+      "ULTIMATES Optimus Soft Goods",
+      "Special",
+      "2022-03-01",
+      1.55,
+      55.0
+    ],
+    [
+      "s7-39",
+      "ReAction Clear He-Man",
+      "Special",
+      "2022-04-01",
+      1.4,
+      55.0
+    ],
+    [
+      "s7-40",
+      "ReAction Glow Skeletor",
+      "Special",
+      "2022-05-01",
+      1.4,
+      55.0
+    ],
+    [
+      "s7-41",
+      "ULTIMATES Battle Cat",
+      "ULTIMATES!",
+      "2022-06-01",
+      1.5,
+      55.0
+    ],
+    [
+      "s7-42",
+      "ULTIMATES Panthor",
+      "ULTIMATES!",
+      "2022-07-01",
+      1.5,
+      55.0
+    ],
+    [
+      "s7-43",
+      "ULTIMATES Catra",
+      "ULTIMATES!",
+      "2022-08-01",
+      1.5,
+      55.0
+    ],
+    [
+      "s7-44",
+      "ULTIMATES Orko",
+      "ULTIMATES!",
+      "2022-09-01",
+      1.4,
+      55.0
+    ],
+    [
+      "s7-45",
+      "ULTIMATES King Hiss",
+      "ULTIMATES!",
+      "2022-10-01",
+      1.5,
+      55.0
+    ]
+  ],
+  "threezero": [
+    [
+      "tz-01",
+      "DLX Iron Man Mark 85",
+      "DLX",
+      "2018-03-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-02",
+      "DLX Iron Man Mark 50",
+      "DLX",
+      "2018-05-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-03",
+      "DLX War Machine",
+      "DLX",
+      "2018-07-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-04",
+      "DLX Spider-Man",
+      "DLX",
+      "2018-09-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-05",
+      "DLX Batman",
+      "DLX",
+      "2018-11-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-06",
+      "DLX Superman",
+      "DLX",
+      "2019-01-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-07",
+      "FigZero Eren Yeager",
+      "FigZero",
+      "2019-03-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-08",
+      "FigZero Mikasa",
+      "FigZero",
+      "2019-05-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-09",
+      "FigZero Levi",
+      "FigZero",
+      "2019-07-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-10",
+      "FigZero Armored Titan",
+      "FigZero",
+      "2019-09-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-11",
+      "FigZero Attack Titan",
+      "FigZero",
+      "2019-11-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-12",
+      "FigZero Colossal Titan",
+      "FigZero",
+      "2020-01-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-13",
+      "DLX Optimus Prime",
+      "DLX",
+      "2020-03-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-14",
+      "DLX Megatron",
+      "DLX",
+      "2020-05-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-15",
+      "DLX Bumblebee",
+      "DLX",
+      "2020-07-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-16",
+      "DLX Soundwave",
+      "DLX",
+      "2020-09-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-17",
+      "FigZero Guts",
+      "FigZero",
+      "2020-11-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-18",
+      "FigZero Griffith",
+      "FigZero",
+      "2021-01-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-19",
+      "FigZero Casca",
+      "FigZero",
+      "2021-03-01",
+      1.45,
+      180.0
+    ],
+    [
+      "tz-20",
+      "FigZero Skull Knight",
+      "FigZero",
+      "2021-05-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-21",
+      "DLX RoboCop",
+      "DLX",
+      "2021-07-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-22",
+      "DLX T-800",
+      "DLX",
+      "2021-09-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-23",
+      "DLX Alien",
+      "DLX",
+      "2021-11-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-24",
+      "DLX Predator",
+      "DLX",
+      "2022-01-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-25",
+      "FigZero Naruto",
+      "FigZero",
+      "2022-03-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-26",
+      "FigZero Sasuke",
+      "FigZero",
+      "2022-05-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-27",
+      "FigZero Kakashi",
+      "FigZero",
+      "2022-07-01",
+      1.45,
+      180.0
+    ],
+    [
+      "tz-28",
+      "FigZero Itachi",
+      "FigZero",
+      "2022-09-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-29",
+      "DLX Iron Man Chrome",
+      "Special",
+      "2022-11-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-30",
+      "DLX Batman Chrome",
+      "Special",
+      "2023-01-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-31",
+      "FigZero Levi Deluxe",
+      "Special",
+      "2023-03-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-32",
+      "FigZero Guts Deluxe",
+      "Special",
+      "2023-05-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-33",
+      "DLX Optimus Chrome",
+      "Special",
+      "2023-07-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-34",
+      "DLX Megatron Chrome",
+      "Special",
+      "2023-09-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-35",
+      "FigZero Eren Deluxe",
+      "Special",
+      "2023-11-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-36",
+      "FigZero Mikasa Deluxe",
+      "Special",
+      "2024-01-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-37",
+      "DLX Spider-Man Symbiote",
+      "Special",
+      "2024-03-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-38",
+      "DLX War Machine Chrome",
+      "Special",
+      "2024-05-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-39",
+      "FigZero Armored Titan Deluxe",
+      "Special",
+      "2024-07-01",
+      1.55,
+      180.0
+    ],
+    [
+      "tz-40",
+      "threezeroX Collaboration A",
+      "Special",
+      "2024-09-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-41",
+      "threezeroX Collaboration B",
+      "Special",
+      "2024-11-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-42",
+      "DLX Effect Pack",
+      "Accessories",
+      "2025-01-01",
+      1.3,
+      50.0
+    ],
+    [
+      "tz-43",
+      "FigZero Stand Pack",
+      "Accessories",
+      "2025-03-01",
+      1.25,
+      35.0
+    ],
+    [
+      "tz-44",
+      "DLX Bumblebee Chrome",
+      "Special",
+      "2025-05-01",
+      1.5,
+      180.0
+    ],
+    [
+      "tz-45",
+      "FigZero Naruto Deluxe",
+      "Special",
+      "2025-07-01",
+      1.55,
+      180.0
+    ]
+  ],
+  "hottoys": [
+    [
+      "ht-01",
+      "MMS Iron Man Mark 85",
+      "MMS",
+      "2019-01-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-02",
+      "MMS Iron Man Mark 50",
+      "MMS",
+      "2019-02-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-03",
+      "MMS Captain America Endgame",
+      "MMS",
+      "2019-03-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-04",
+      "MMS Thor Endgame",
+      "MMS",
+      "2019-04-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-05",
+      "MMS Spider-Man No Way Home",
+      "MMS",
+      "2019-05-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-06",
+      "MMS Doctor Strange",
+      "MMS",
+      "2019-06-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-07",
+      "MMS Batman The Batman",
+      "MMS",
+      "2019-07-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-08",
+      "MMS Joker Folie",
+      "MMS",
+      "2019-08-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-09",
+      "MMS Superman Black",
+      "MMS",
+      "2019-09-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-10",
+      "MMS Wonder Woman",
+      "MMS",
+      "2019-10-01",
+      1.45,
+      350.0
+    ],
+    [
+      "ht-11",
+      "MMS Darth Vader",
+      "MMS",
+      "2019-11-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-12",
+      "MMS Luke Skywalker",
+      "MMS",
+      "2019-12-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-13",
+      "MMS Din Djarin",
+      "MMS",
+      "2020-01-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-14",
+      "MMS Boba Fett",
+      "MMS",
+      "2020-02-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-15",
+      "MMS Ahsoka",
+      "MMS",
+      "2020-03-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-16",
+      "MMS Obi-Wan",
+      "MMS",
+      "2020-04-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-17",
+      "MMS T-800",
+      "MMS",
+      "2020-05-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-18",
+      "MMS RoboCop",
+      "MMS",
+      "2020-06-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-19",
+      "MMS Alien",
+      "MMS",
+      "2020-07-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-20",
+      "MMS Predator",
+      "MMS",
+      "2020-08-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-21",
+      "MMS Iron Man Chrome",
+      "Special",
+      "2020-09-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-22",
+      "MMS Cap Chrome",
+      "Special",
+      "2020-10-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-23",
+      "MMS Batman Deluxe",
+      "Special",
+      "2020-11-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-24",
+      "MMS Vader Deluxe",
+      "Special",
+      "2020-12-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-25",
+      "MMS Spider-Man Integrated",
+      "Special",
+      "2021-01-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-26",
+      "MMS Strange Multiverse",
+      "Special",
+      "2021-02-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-27",
+      "MMS Mando Deluxe",
+      "Special",
+      "2021-03-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-28",
+      "MMS Boba Deluxe",
+      "Special",
+      "2021-04-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-29",
+      "MMS Thor Stormbreaker",
+      "Special",
+      "2021-05-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-30",
+      "MMS Iron Man Mark 85 Battle",
+      "Special",
+      "2021-06-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-31",
+      "MMS Joker Deluxe",
+      "Special",
+      "2021-07-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-32",
+      "MMS Superman Deluxe",
+      "Special",
+      "2021-08-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-33",
+      "MMS Luke Jedi",
+      "Special",
+      "2021-09-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-34",
+      "MMS Ahsoka Deluxe",
+      "Special",
+      "2021-10-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-35",
+      "MMS T-800 Battle Damaged",
+      "Special",
+      "2021-11-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-36",
+      "MMS RoboCop Battle",
+      "Special",
+      "2021-12-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-37",
+      "MMS Alien Warrior",
+      "Special",
+      "2022-01-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-38",
+      "MMS Predator Jungle",
+      "Special",
+      "2022-02-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-39",
+      "MMS War Machine",
+      "MMS",
+      "2022-03-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-40",
+      "MMS Black Panther",
+      "MMS",
+      "2022-04-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-41",
+      "MMS Scarlet Witch",
+      "MMS",
+      "2022-05-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-42",
+      "MMS Loki",
+      "MMS",
+      "2022-06-01",
+      1.5,
+      350.0
+    ],
+    [
+      "ht-43",
+      "MMS Deadpool",
+      "MMS",
+      "2022-07-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-44",
+      "MMS Wolverine",
+      "MMS",
+      "2022-08-01",
+      1.55,
+      350.0
+    ],
+    [
+      "ht-45",
+      "MMS Thanos",
+      "MMS",
+      "2022-09-01",
+      1.55,
+      350.0
+    ]
+  ],
+  "beastkingdom": [
+    [
+      "bk-01",
+      "DAH Iron Man",
+      "DAH",
+      "2018-04-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-02",
+      "DAH Captain America",
+      "DAH",
+      "2018-06-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-03",
+      "DAH Thor",
+      "DAH",
+      "2018-08-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-04",
+      "DAH Hulk",
+      "DAH",
+      "2018-10-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-05",
+      "DAH Spider-Man",
+      "DAH",
+      "2018-12-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-06",
+      "DAH Black Panther",
+      "DAH",
+      "2019-02-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-07",
+      "DAH Batman",
+      "DAH",
+      "2019-04-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-08",
+      "DAH Superman",
+      "DAH",
+      "2019-06-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-09",
+      "DAH Joker",
+      "DAH",
+      "2019-08-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-10",
+      "DAH Wonder Woman",
+      "DAH",
+      "2019-10-01",
+      1.45,
+      150.0
+    ],
+    [
+      "bk-11",
+      "DAH Darth Vader",
+      "DAH",
+      "2019-12-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-12",
+      "DAH Luke Skywalker",
+      "DAH",
+      "2020-02-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-13",
+      "DAH Din Djarin",
+      "DAH",
+      "2020-04-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-14",
+      "DAH Boba Fett",
+      "DAH",
+      "2020-06-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-15",
+      "DAH Sonic",
+      "DAH",
+      "2020-08-01",
+      1.45,
+      150.0
+    ],
+    [
+      "bk-16",
+      "DAH Shadow",
+      "DAH",
+      "2020-10-01",
+      1.45,
+      150.0
+    ],
+    [
+      "bk-17",
+      "DAH Mario",
+      "DAH",
+      "2020-12-01",
+      1.4,
+      150.0
+    ],
+    [
+      "bk-18",
+      "DAH Luigi",
+      "DAH",
+      "2021-02-01",
+      1.35,
+      150.0
+    ],
+    [
+      "bk-19",
+      "DAH Iron Man Chrome",
+      "Special",
+      "2021-04-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-20",
+      "DAH Batman Chrome",
+      "Special",
+      "2021-06-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-21",
+      "DAH Spider-Man Symbiote",
+      "Special",
+      "2021-08-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-22",
+      "DAH Joker Deluxe",
+      "Special",
+      "2021-10-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-23",
+      "DAH Vader Deluxe",
+      "Special",
+      "2021-12-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-24",
+      "DAH Mando Deluxe",
+      "Special",
+      "2022-02-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-25",
+      "DAH Sonic Deluxe",
+      "Special",
+      "2022-04-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-26",
+      "DAH Mario Deluxe",
+      "Special",
+      "2022-06-01",
+      1.45,
+      150.0
+    ],
+    [
+      "bk-27",
+      "DAH Thor Stormbreaker",
+      "Special",
+      "2022-08-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-28",
+      "DAH Cap Endgame",
+      "Special",
+      "2022-10-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-29",
+      "DAH Black Panther Chrome",
+      "Special",
+      "2022-12-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-30",
+      "DAH Superman Black",
+      "Special",
+      "2023-02-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-31",
+      "DAH Wonder Woman Deluxe",
+      "Special",
+      "2023-04-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-32",
+      "DAH Hulk Smash",
+      "Special",
+      "2023-06-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-33",
+      "DAH Boba Deluxe",
+      "Special",
+      "2023-08-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-34",
+      "DAH Luke Jedi",
+      "Special",
+      "2023-10-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-35",
+      "DAH Shadow Chrome",
+      "Special",
+      "2023-12-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-36",
+      "DAH Luigi Deluxe",
+      "Special",
+      "2024-02-01",
+      1.4,
+      150.0
+    ],
+    [
+      "bk-37",
+      "DAH Accessories Pack",
+      "Accessories",
+      "2024-04-01",
+      1.25,
+      40.0
+    ],
+    [
+      "bk-38",
+      "DAH Stand Pack",
+      "Accessories",
+      "2024-06-01",
+      1.2,
+      30.0
+    ],
+    [
+      "bk-39",
+      "DAH Iron Man Mark 85",
+      "DAH",
+      "2024-08-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-40",
+      "DAH Spider-Man No Way Home",
+      "DAH",
+      "2024-10-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-41",
+      "DAH Batman The Batman",
+      "DAH",
+      "2024-12-01",
+      1.55,
+      150.0
+    ],
+    [
+      "bk-42",
+      "DAH Doctor Strange",
+      "DAH",
+      "2025-02-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-43",
+      "DAH Scarlet Witch",
+      "DAH",
+      "2025-04-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-44",
+      "DAH Loki",
+      "DAH",
+      "2025-06-01",
+      1.5,
+      150.0
+    ],
+    [
+      "bk-45",
+      "DAH Deadpool",
+      "DAH",
+      "2025-08-01",
+      1.55,
+      150.0
+    ]
+  ],
+  "enterbay": [
+    [
+      "eb-01",
+      "RM-1086 Kobe Bryant",
+      "NBA",
+      "2015-02-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-02",
+      "RM-1090 Michael Jordan",
+      "NBA",
+      "2015-04-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-03",
+      "RM-1095 LeBron James",
+      "NBA",
+      "2015-06-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-04",
+      "RM-1100 Stephen Curry",
+      "NBA",
+      "2015-08-01",
+      1.5,
+      280.0
+    ],
+    [
+      "eb-05",
+      "RM-1105 Kevin Durant",
+      "NBA",
+      "2015-10-01",
+      1.5,
+      280.0
+    ],
+    [
+      "eb-06",
+      "RM-1110 Giannis",
+      "NBA",
+      "2015-12-01",
+      1.5,
+      280.0
+    ],
+    [
+      "eb-07",
+      "RM-1115 Luka Doncic",
+      "NBA",
+      "2016-02-01",
+      1.45,
+      280.0
+    ],
+    [
+      "eb-08",
+      "RM-1120 Ja Morant",
+      "NBA",
+      "2016-04-01",
+      1.45,
+      280.0
+    ],
+    [
+      "eb-09",
+      "HD-1001 Bruce Lee",
+      "Movie",
+      "2016-06-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-10",
+      "HD-1005 Bruce Lee Yellow",
+      "Movie",
+      "2016-08-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-11",
+      "HD-1010 Ip Man",
+      "Movie",
+      "2016-10-01",
+      1.5,
+      280.0
+    ],
+    [
+      "eb-12",
+      "HD-1015 Jet Li",
+      "Movie",
+      "2016-12-01",
+      1.5,
+      280.0
+    ],
+    [
+      "eb-13",
+      "HD-1020 Jackie Chan",
+      "Movie",
+      "2017-02-01",
+      1.5,
+      280.0
+    ],
+    [
+      "eb-14",
+      "HD-1025 Donnie Yen",
+      "Movie",
+      "2017-04-01",
+      1.5,
+      280.0
+    ],
+    [
+      "eb-15",
+      "HD-1030 Movie Hero A",
+      "Movie",
+      "2017-06-01",
+      1.45,
+      280.0
+    ],
+    [
+      "eb-16",
+      "HD-1035 Movie Hero B",
+      "Movie",
+      "2017-08-01",
+      1.45,
+      280.0
+    ],
+    [
+      "eb-17",
+      "NBA Kobe Deluxe",
+      "Special",
+      "2017-10-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-18",
+      "NBA Jordan Deluxe",
+      "Special",
+      "2017-12-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-19",
+      "NBA LeBron Deluxe",
+      "Special",
+      "2018-02-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-20",
+      "NBA Curry Deluxe",
+      "Special",
+      "2018-04-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-21",
+      "Bruce Lee Deluxe",
+      "Special",
+      "2018-06-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-22",
+      "Bruce Lee Chrome",
+      "Special",
+      "2018-08-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-23",
+      "Ip Man Deluxe",
+      "Special",
+      "2018-10-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-24",
+      "Jet Li Deluxe",
+      "Special",
+      "2018-12-01",
+      1.5,
+      280.0
+    ],
+    [
+      "eb-25",
+      "Jackie Chan Deluxe",
+      "Special",
+      "2019-02-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-26",
+      "Donnie Yen Deluxe",
+      "Special",
+      "2019-04-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-27",
+      "NBA All-Star Pack",
+      "Special",
+      "2019-06-01",
+      1.5,
+      400.0
+    ],
+    [
+      "eb-28",
+      "Martial Arts Pack",
+      "Special",
+      "2019-08-01",
+      1.5,
+      380.0
+    ],
+    [
+      "eb-29",
+      "RM Alternate Jersey A",
+      "NBA",
+      "2019-10-01",
+      1.45,
+      280.0
+    ],
+    [
+      "eb-30",
+      "RM Alternate Jersey B",
+      "NBA",
+      "2019-12-01",
+      1.45,
+      280.0
+    ],
+    [
+      "eb-31",
+      "RM Alternate Jersey C",
+      "NBA",
+      "2020-02-01",
+      1.4,
+      280.0
+    ],
+    [
+      "eb-32",
+      "RM Alternate Jersey D",
+      "NBA",
+      "2020-04-01",
+      1.4,
+      280.0
+    ],
+    [
+      "eb-33",
+      "HD Movie Villain A",
+      "Movie",
+      "2020-06-01",
+      1.45,
+      280.0
+    ],
+    [
+      "eb-34",
+      "HD Movie Villain B",
+      "Movie",
+      "2020-08-01",
+      1.45,
+      280.0
+    ],
+    [
+      "eb-35",
+      "NBA Head Sculpt Pack",
+      "Accessories",
+      "2020-10-01",
+      1.3,
+      60.0
+    ],
+    [
+      "eb-36",
+      "Movie Head Sculpt Pack",
+      "Accessories",
+      "2020-12-01",
+      1.3,
+      60.0
+    ],
+    [
+      "eb-37",
+      "NBA Accessory Pack",
+      "Accessories",
+      "2021-02-01",
+      1.25,
+      45.0
+    ],
+    [
+      "eb-38",
+      "Movie Weapon Pack",
+      "Accessories",
+      "2021-04-01",
+      1.25,
+      45.0
+    ],
+    [
+      "eb-39",
+      "Kobe Finals",
+      "Special",
+      "2021-06-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-40",
+      "Jordan Flu Game",
+      "Special",
+      "2021-08-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-41",
+      "LeBron Finals",
+      "Special",
+      "2021-10-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-42",
+      "Bruce Lee Enter the Dragon",
+      "Special",
+      "2021-12-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-43",
+      "Ip Man Wing Chun",
+      "Special",
+      "2022-02-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-44",
+      "Jackie Chan Drunken Master",
+      "Special",
+      "2022-04-01",
+      1.55,
+      280.0
+    ],
+    [
+      "eb-45",
+      "Enterbay Display Case",
+      "Accessories",
+      "2022-06-01",
+      1.2,
+      80.0
+    ]
+  ],
+  "fourhorsemen": [
+    [
+      "fh-01",
+      "Mythic Legions Knight A",
+      "Mythic Legions",
+      "2018-06-01",
+      1.5,
+      45.0
+    ],
+    [
+      "fh-02",
+      "Mythic Legions Knight B",
+      "Mythic Legions",
+      "2018-08-01",
+      1.45,
+      45.0
+    ],
+    [
+      "fh-03",
+      "Mythic Legions Orc A",
+      "Mythic Legions",
+      "2018-10-01",
+      1.45,
+      45.0
+    ],
+    [
+      "fh-04",
+      "Mythic Legions Orc B",
+      "Mythic Legions",
+      "2018-12-01",
+      1.4,
+      45.0
+    ],
+    [
+      "fh-05",
+      "Mythic Legions Elf Archer",
+      "Mythic Legions",
+      "2019-02-01",
+      1.45,
+      45.0
+    ],
+    [
+      "fh-06",
+      "Mythic Legions Dwarf",
+      "Mythic Legions",
+      "2019-04-01",
+      1.4,
+      45.0
+    ],
+    [
+      "fh-07",
+      "Mythic Legions Skeleton",
+      "Mythic Legions",
+      "2019-06-01",
+      1.4,
+      45.0
+    ],
+    [
+      "fh-08",
+      "Mythic Legions Necromancer",
+      "Mythic Legions",
+      "2019-08-01",
+      1.5,
+      45.0
+    ],
+    [
+      "fh-09",
+      "Mythic Legions Barbarian",
+      "Mythic Legions",
+      "2019-10-01",
+      1.45,
+      45.0
+    ],
+    [
+      "fh-10",
+      "Mythic Legions Sorceress",
+      "Mythic Legions",
+      "2019-12-01",
+      1.45,
+      45.0
+    ],
+    [
+      "fh-11",
+      "Cosmic Legions Hero A",
+      "Cosmic Legions",
+      "2020-02-01",
+      1.5,
+      45.0
+    ],
+    [
+      "fh-12",
+      "Cosmic Legions Hero B",
+      "Cosmic Legions",
+      "2020-04-01",
+      1.45,
+      45.0
+    ],
+    [
+      "fh-13",
+      "Cosmic Legions Villain A",
+      "Cosmic Legions",
+      "2020-06-01",
+      1.5,
+      45.0
+    ],
+    [
+      "fh-14",
+      "Cosmic Legions Villain B",
+      "Cosmic Legions",
+      "2020-08-01",
+      1.45,
+      45.0
+    ],
+    [
+      "fh-15",
+      "Cosmic Legions Alien A",
+      "Cosmic Legions",
+      "2020-10-01",
+      1.4,
+      45.0
+    ],
+    [
+      "fh-16",
+      "Cosmic Legions Alien B",
+      "Cosmic Legions",
+      "2020-12-01",
+      1.4,
+      45.0
+    ],
+    [
+      "fh-17",
+      "Figura Obscura Headless Horseman",
+      "Figura Obscura",
+      "2021-02-01",
+      1.55,
+      45.0
+    ],
+    [
+      "fh-18",
+      "Figura Obscura Krampus",
+      "Figura Obscura",
+      "2021-04-01",
+      1.55,
+      45.0
+    ],
+    [
+      "fh-19",
+      "Figura Obscura Father Christmas",
+      "Figura Obscura",
+      "2021-06-01",
+      1.5,
+      45.0
+    ],
+    [
+      "fh-20",
+      "Figura Obscura Bloody Mary",
+      "Figura Obscura",
+      "2021-08-01",
+      1.5,
+      45.0
+    ],
+    [
+      "fh-21",
+      "Mythic Legions Deluxe Knight",
+      "Special",
+      "2021-10-01",
+      1.55,
+      45.0
+    ],
+    [
+      "fh-22",
+      "Mythic Legions Deluxe Orc",
+      "Special",
+      "2021-12-01",
+      1.5,
+      45.0
+    ],
+    [
+      "fh-23",
+      "Cosmic Legions Deluxe Hero",
+      "Special",
+      "2022-02-01",
+      1.55,
+      45.0
+    ],
+    [
+      "fh-24",
+      "Cosmic Legions Deluxe Villain",
+      "Special",
+      "2022-04-01",
+      1.55,
+      45.0
+    ],
+    [
+      "fh-25",
+      "Figura Obscura Deluxe Horseman",
+      "Special",
+      "2022-06-01",
+      1.55,
+      45.0
+    ],
+    [
+      "fh-26",
+      "Figura Obscura Deluxe Krampus",
+      "Special",
+      "2022-08-01",
+      1.55,
+      45.0
+    ],
+    [
+      "fh-27",
+      "Mythic Legions Horse",
+      "Mythic Legions",
+      "2022-10-01",
+      1.45,
+      45.0
+    ],
+    [
+      "fh-28",
+      "Mythic Legions Dragon",
+      "Mythic Legions",
+      "2022-12-01",
+      1.55,
+      45.0
+    ],
+    [
+      "fh-29",
+      "Cosmic Legions Steed",
+      "Cosmic Legions",
+      "2023-02-01",
+      1.4,
+      45.0
+    ],
+    [
+      "fh-30",
+      "Cosmic Legions Mech",
+      "Cosmic Legions",
+      "2023-04-01",
+      1.5,
+      45.0
+    ],
+    [
+      "fh-31",
+      "Mythic Legions Goblin",
+      "Mythic Legions",
+      "2023-06-01",
+      1.35,
+      45.0
+    ],
+    [
+      "fh-32",
+      "Mythic Legions Troll",
+      "Mythic Legions",
+      "2023-08-01",
+      1.45,
+      45.0
+    ],
+    [
+      "fh-33",
+      "Mythic Legions Angel",
+      "Mythic Legions",
+      "2023-10-01",
+      1.5,
+      45.0
+    ],
+    [
+      "fh-34",
+      "Mythic Legions Demon",
+      "Mythic Legions",
+      "2023-12-01",
+      1.5,
+      45.0
+    ],
+    [
+      "fh-35",
+      "Cosmic Legions Trooper",
+      "Cosmic Legions",
+      "2024-02-01",
+      1.35,
+      45.0
+    ],
+    [
+      "fh-36",
+      "Cosmic Legions Commander",
+      "Cosmic Legions",
+      "2024-04-01",
+      1.45,
+      45.0
+    ],
+    [
+      "fh-37",
+      "Figura Obscura Baba Yaga",
+      "Figura Obscura",
+      "2024-06-01",
+      1.5,
+      45.0
+    ],
+    [
+      "fh-38",
+      "Figura Obscura Frankenstein",
+      "Figura Obscura",
+      "2024-08-01",
+      1.5,
+      45.0
+    ],
+    [
+      "fh-39",
+      "Mythic Accessory Pack",
+      "Accessories",
+      "2024-10-01",
+      1.25,
+      30.0
+    ],
+    [
+      "fh-40",
+      "Cosmic Accessory Pack",
+      "Accessories",
+      "2024-12-01",
+      1.25,
+      30.0
+    ],
+    [
+      "fh-41",
+      "Figura Obscura Accessory",
+      "Accessories",
+      "2025-02-01",
+      1.3,
+      35.0
+    ],
+    [
+      "fh-42",
+      "Mythic Legions Clear Knight",
+      "Special",
+      "2025-04-01",
+      1.45,
+      45.0
+    ],
+    [
+      "fh-43",
+      "Cosmic Legions Neon",
+      "Special",
+      "2025-06-01",
+      1.45,
+      45.0
+    ],
+    [
+      "fh-44",
+      "Figura Obscura Glow",
+      "Special",
+      "2025-08-01",
+      1.5,
+      45.0
+    ],
+    [
+      "fh-45",
+      "Four Horsemen Starter",
+      "Special",
+      "2025-10-01",
+      1.4,
+      100.0
+    ]
+  ],
+  "valaverse": [
+    [
+      "vv-01",
+      "Action Force Trooper A",
+      "Action Force",
+      "2019-05-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-02",
+      "Action Force Trooper B",
+      "Action Force",
+      "2019-06-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-03",
+      "Action Force Trooper C",
+      "Action Force",
+      "2019-07-01",
+      1.35,
+      25.0
+    ],
+    [
+      "vv-04",
+      "Action Force Trooper D",
+      "Action Force",
+      "2019-08-01",
+      1.35,
+      25.0
+    ],
+    [
+      "vv-05",
+      "Action Force Officer",
+      "Action Force",
+      "2019-09-01",
+      1.45,
+      25.0
+    ],
+    [
+      "vv-06",
+      "Action Force Commander",
+      "Action Force",
+      "2019-10-01",
+      1.5,
+      25.0
+    ],
+    [
+      "vv-07",
+      "Action Force Sniper",
+      "Action Force",
+      "2019-11-01",
+      1.45,
+      25.0
+    ],
+    [
+      "vv-08",
+      "Action Force Medic",
+      "Action Force",
+      "2019-12-01",
+      1.35,
+      25.0
+    ],
+    [
+      "vv-09",
+      "Action Force Heavy",
+      "Action Force",
+      "2020-01-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-10",
+      "Action Force Pilot",
+      "Action Force",
+      "2020-02-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-11",
+      "Action Force Enemy A",
+      "Action Force",
+      "2020-03-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-12",
+      "Action Force Enemy B",
+      "Action Force",
+      "2020-04-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-13",
+      "Action Force Enemy C",
+      "Action Force",
+      "2020-05-01",
+      1.35,
+      25.0
+    ],
+    [
+      "vv-14",
+      "Action Force Enemy Boss",
+      "Action Force",
+      "2020-06-01",
+      1.5,
+      25.0
+    ],
+    [
+      "vv-15",
+      "Action Force Female Operative",
+      "Action Force",
+      "2020-07-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-16",
+      "Action Force Female Sniper",
+      "Action Force",
+      "2020-08-01",
+      1.45,
+      25.0
+    ],
+    [
+      "vv-17",
+      "Action Force Desert",
+      "Special",
+      "2020-09-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-18",
+      "Action Force Night Ops",
+      "Special",
+      "2020-10-01",
+      1.45,
+      25.0
+    ],
+    [
+      "vv-19",
+      "Action Force Winter",
+      "Special",
+      "2020-11-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-20",
+      "Action Force Jungle",
+      "Special",
+      "2020-12-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-21",
+      "Action Force Deluxe Trooper",
+      "Special",
+      "2021-01-01",
+      1.5,
+      25.0
+    ],
+    [
+      "vv-22",
+      "Action Force Deluxe Commander",
+      "Special",
+      "2021-02-01",
+      1.55,
+      25.0
+    ],
+    [
+      "vv-23",
+      "Action Force Deluxe Enemy",
+      "Special",
+      "2021-03-01",
+      1.5,
+      25.0
+    ],
+    [
+      "vv-24",
+      "Action Force Vehicle Driver",
+      "Action Force",
+      "2021-04-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-25",
+      "Action Force Scientist",
+      "Action Force",
+      "2021-05-01",
+      1.35,
+      25.0
+    ],
+    [
+      "vv-26",
+      "Action Force Engineer",
+      "Action Force",
+      "2021-06-01",
+      1.35,
+      25.0
+    ],
+    [
+      "vv-27",
+      "Action Force Scout",
+      "Action Force",
+      "2021-07-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-28",
+      "Action Force Breacher",
+      "Action Force",
+      "2021-08-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-29",
+      "Weapon Pack AF A",
+      "Accessories",
+      "2021-09-01",
+      1.25,
+      20.0
+    ],
+    [
+      "vv-30",
+      "Weapon Pack AF B",
+      "Accessories",
+      "2021-10-01",
+      1.25,
+      20.0
+    ],
+    [
+      "vv-31",
+      "Head Pack AF",
+      "Accessories",
+      "2021-11-01",
+      1.25,
+      18.0
+    ],
+    [
+      "vv-32",
+      "Gear Pack AF",
+      "Accessories",
+      "2021-12-01",
+      1.3,
+      25.0
+    ],
+    [
+      "vv-33",
+      "Action Force Clear",
+      "Special",
+      "2022-01-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-34",
+      "Action Force Chrome",
+      "Special",
+      "2022-02-01",
+      1.45,
+      25.0
+    ],
+    [
+      "vv-35",
+      "Action Force Glow",
+      "Special",
+      "2022-03-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-36",
+      "Action Force Battle Damaged",
+      "Special",
+      "2022-04-01",
+      1.45,
+      25.0
+    ],
+    [
+      "vv-37",
+      "Action Force Female Deluxe",
+      "Special",
+      "2022-05-01",
+      1.5,
+      25.0
+    ],
+    [
+      "vv-38",
+      "Action Force Enemy Deluxe",
+      "Special",
+      "2022-06-01",
+      1.5,
+      25.0
+    ],
+    [
+      "vv-39",
+      "Action Force Starter Set",
+      "Special",
+      "2022-07-01",
+      1.4,
+      70.0
+    ],
+    [
+      "vv-40",
+      "Action Force Squad Pack",
+      "Special",
+      "2022-08-01",
+      1.45,
+      90.0
+    ],
+    [
+      "vv-41",
+      "Action Force Urban",
+      "Special",
+      "2022-09-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-42",
+      "Action Force Arctic",
+      "Special",
+      "2022-10-01",
+      1.4,
+      25.0
+    ],
+    [
+      "vv-43",
+      "Action Force Spec Ops Pack",
+      "Special",
+      "2022-11-01",
+      1.5,
+      85.0
+    ],
+    [
+      "vv-44",
+      "Action Force Enemy Pack",
+      "Special",
+      "2022-12-01",
+      1.45,
+      80.0
+    ],
+    [
+      "vv-45",
+      "Valaverse Display Stand",
+      "Accessories",
+      "2023-01-01",
+      1.15,
+      12.0
+    ]
+  ],
+  "bossfight": [
+    [
+      "bf-01",
+      "H.A.C.K.S. Warrior A",
+      "H.A.C.K.S.",
+      "2017-01-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-02",
+      "H.A.C.K.S. Warrior B",
+      "H.A.C.K.S.",
+      "2017-02-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-03",
+      "H.A.C.K.S. Skeleton",
+      "H.A.C.K.S.",
+      "2017-03-01",
+      1.45,
+      20.0
+    ],
+    [
+      "bf-04",
+      "H.A.C.K.S. Knight",
+      "H.A.C.K.S.",
+      "2017-04-01",
+      1.45,
+      20.0
+    ],
+    [
+      "bf-05",
+      "H.A.C.K.S. Orc",
+      "H.A.C.K.S.",
+      "2017-05-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-06",
+      "H.A.C.K.S. Elf",
+      "H.A.C.K.S.",
+      "2017-06-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-07",
+      "H.A.C.K.S. Goblin",
+      "H.A.C.K.S.",
+      "2017-07-01",
+      1.35,
+      20.0
+    ],
+    [
+      "bf-08",
+      "H.A.C.K.S. Demon",
+      "H.A.C.K.S.",
+      "2017-08-01",
+      1.45,
+      20.0
+    ],
+    [
+      "bf-09",
+      "H.A.C.K.S. Angel",
+      "H.A.C.K.S.",
+      "2017-09-01",
+      1.45,
+      20.0
+    ],
+    [
+      "bf-10",
+      "H.A.C.K.S. Vampire",
+      "H.A.C.K.S.",
+      "2017-10-01",
+      1.45,
+      20.0
+    ],
+    [
+      "bf-11",
+      "H.A.C.K.S. Werewolf",
+      "H.A.C.K.S.",
+      "2017-11-01",
+      1.45,
+      20.0
+    ],
+    [
+      "bf-12",
+      "H.A.C.K.S. Zombie",
+      "H.A.C.K.S.",
+      "2017-12-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-13",
+      "H.A.C.K.S. Sci-Fi Trooper",
+      "H.A.C.K.S.",
+      "2018-01-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-14",
+      "H.A.C.K.S. Sci-Fi Alien",
+      "H.A.C.K.S.",
+      "2018-02-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-15",
+      "H.A.C.K.S. Robot",
+      "H.A.C.K.S.",
+      "2018-03-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-16",
+      "H.A.C.K.S. Cyborg",
+      "H.A.C.K.S.",
+      "2018-04-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-17",
+      "H.A.C.K.S. Female Warrior",
+      "H.A.C.K.S.",
+      "2018-05-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-18",
+      "H.A.C.K.S. Female Mage",
+      "H.A.C.K.S.",
+      "2018-06-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-19",
+      "H.A.C.K.S. Female Assassin",
+      "H.A.C.K.S.",
+      "2018-07-01",
+      1.45,
+      20.0
+    ],
+    [
+      "bf-20",
+      "H.A.C.K.S. Female Sci-Fi",
+      "H.A.C.K.S.",
+      "2018-08-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-21",
+      "H.A.C.K.S. Deluxe Knight",
+      "Special",
+      "2018-09-01",
+      1.5,
+      20.0
+    ],
+    [
+      "bf-22",
+      "H.A.C.K.S. Deluxe Demon",
+      "Special",
+      "2018-10-01",
+      1.5,
+      20.0
+    ],
+    [
+      "bf-23",
+      "H.A.C.K.S. Deluxe Vampire",
+      "Special",
+      "2018-11-01",
+      1.5,
+      20.0
+    ],
+    [
+      "bf-24",
+      "H.A.C.K.S. Deluxe Sci-Fi",
+      "Special",
+      "2018-12-01",
+      1.45,
+      20.0
+    ],
+    [
+      "bf-25",
+      "Body Pack Male",
+      "Accessories",
+      "2019-01-01",
+      1.3,
+      15.0
+    ],
+    [
+      "bf-26",
+      "Body Pack Female",
+      "Accessories",
+      "2019-02-01",
+      1.3,
+      15.0
+    ],
+    [
+      "bf-27",
+      "Head Pack Fantasy",
+      "Accessories",
+      "2019-03-01",
+      1.25,
+      12.0
+    ],
+    [
+      "bf-28",
+      "Head Pack Sci-Fi",
+      "Accessories",
+      "2019-04-01",
+      1.25,
+      12.0
+    ],
+    [
+      "bf-29",
+      "Weapon Pack Fantasy",
+      "Accessories",
+      "2019-05-01",
+      1.25,
+      12.0
+    ],
+    [
+      "bf-30",
+      "Weapon Pack Sci-Fi",
+      "Accessories",
+      "2019-06-01",
+      1.25,
+      12.0
+    ],
+    [
+      "bf-31",
+      "H.A.C.K.S. Clear Skeleton",
+      "Special",
+      "2019-07-01",
+      1.45,
+      20.0
+    ],
+    [
+      "bf-32",
+      "H.A.C.K.S. Glow Demon",
+      "Special",
+      "2019-08-01",
+      1.45,
+      20.0
+    ],
+    [
+      "bf-33",
+      "H.A.C.K.S. Chrome Robot",
+      "Special",
+      "2019-09-01",
+      1.45,
+      20.0
+    ],
+    [
+      "bf-34",
+      "H.A.C.K.S. Neon Cyborg",
+      "Special",
+      "2019-10-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-35",
+      "H.A.C.K.S. Starter Set",
+      "Special",
+      "2019-11-01",
+      1.35,
+      40.0
+    ],
+    [
+      "bf-36",
+      "H.A.C.K.S. Army Builder",
+      "Special",
+      "2019-12-01",
+      1.4,
+      50.0
+    ],
+    [
+      "bf-37",
+      "H.A.C.K.S. Dragon",
+      "H.A.C.K.S.",
+      "2020-01-01",
+      1.55,
+      20.0
+    ],
+    [
+      "bf-38",
+      "H.A.C.K.S. Horse",
+      "H.A.C.K.S.",
+      "2020-02-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-39",
+      "H.A.C.K.S. Steed Sci-Fi",
+      "H.A.C.K.S.",
+      "2020-03-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-40",
+      "H.A.C.K.S. Monster A",
+      "H.A.C.K.S.",
+      "2020-04-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-41",
+      "H.A.C.K.S. Monster B",
+      "H.A.C.K.S.",
+      "2020-05-01",
+      1.4,
+      20.0
+    ],
+    [
+      "bf-42",
+      "H.A.C.K.S. Boss Figure",
+      "Special",
+      "2020-06-01",
+      1.5,
+      20.0
+    ],
+    [
+      "bf-43",
+      "Gear Pack A",
+      "Accessories",
+      "2020-07-01",
+      1.2,
+      10.0
+    ],
+    [
+      "bf-44",
+      "Gear Pack B",
+      "Accessories",
+      "2020-08-01",
+      1.2,
+      10.0
+    ],
+    [
+      "bf-45",
+      "Boss Fight Display",
+      "Accessories",
+      "2020-09-01",
+      1.15,
+      12.0
+    ]
+  ],
+  "loyalsubjects": [
+    [
+      "ls-01",
+      "BST AXN Batman",
+      "BST AXN",
+      "2020-03-01",
+      1.5,
+      20.0
+    ],
+    [
+      "ls-02",
+      "BST AXN Superman",
+      "BST AXN",
+      "2020-04-01",
+      1.45,
+      20.0
+    ],
+    [
+      "ls-03",
+      "BST AXN Wonder Woman",
+      "BST AXN",
+      "2020-05-01",
+      1.45,
+      20.0
+    ],
+    [
+      "ls-04",
+      "BST AXN The Flash",
+      "BST AXN",
+      "2020-06-01",
+      1.4,
+      20.0
+    ],
+    [
+      "ls-05",
+      "BST AXN Joker",
+      "BST AXN",
+      "2020-07-01",
+      1.5,
+      20.0
+    ],
+    [
+      "ls-06",
+      "BST AXN Harley Quinn",
+      "BST AXN",
+      "2020-08-01",
+      1.5,
+      20.0
+    ],
+    [
+      "ls-07",
+      "BST AXN Spider-Man",
+      "BST AXN",
+      "2020-09-01",
+      1.5,
+      20.0
+    ],
+    [
+      "ls-08",
+      "BST AXN Venom",
+      "BST AXN",
+      "2020-10-01",
+      1.5,
+      20.0
+    ],
+    [
+      "ls-09",
+      "BST AXN Miles Morales",
+      "BST AXN",
+      "2020-11-01",
+      1.45,
+      20.0
+    ],
+    [
+      "ls-10",
+      "BST AXN Spider-Gwen",
+      "BST AXN",
+      "2020-12-01",
+      1.45,
+      20.0
+    ],
+    [
+      "ls-11",
+      "BST AXN TMNT Leonardo",
+      "BST AXN",
+      "2021-01-01",
+      1.5,
+      20.0
+    ],
+    [
+      "ls-12",
+      "BST AXN TMNT Michelangelo",
+      "BST AXN",
+      "2021-02-01",
+      1.45,
+      20.0
+    ],
+    [
+      "ls-13",
+      "BST AXN TMNT Donatello",
+      "BST AXN",
+      "2021-03-01",
+      1.45,
+      20.0
+    ],
+    [
+      "ls-14",
+      "BST AXN TMNT Raphael",
+      "BST AXN",
+      "2021-04-01",
+      1.5,
+      20.0
+    ],
+    [
+      "ls-15",
+      "BST AXN Shredder",
+      "BST AXN",
+      "2021-05-01",
+      1.5,
+      20.0
+    ],
+    [
+      "ls-16",
+      "BST AXN Splinter",
+      "BST AXN",
+      "2021-06-01",
+      1.4,
+      20.0
+    ],
+    [
+      "ls-17",
+      "BST AXN Naruto",
+      "BST AXN",
+      "2021-07-01",
+      1.5,
+      20.0
+    ],
+    [
+      "ls-18",
+      "BST AXN Sasuke",
+      "BST AXN",
+      "2021-08-01",
+      1.5,
+      20.0
+    ],
+    [
+      "ls-19",
+      "BST AXN Kakashi",
+      "BST AXN",
+      "2021-09-01",
+      1.45,
+      20.0
+    ],
+    [
+      "ls-20",
+      "BST AXN Itachi",
+      "BST AXN",
+      "2021-10-01",
+      1.5,
+      20.0
+    ],
+    [
+      "ls-21",
+      "BST AXN Batman Deluxe",
+      "Special",
+      "2021-11-01",
+      1.55,
+      20.0
+    ],
+    [
+      "ls-22",
+      "BST AXN Joker Deluxe",
+      "Special",
+      "2021-12-01",
+      1.55,
+      20.0
+    ],
+    [
+      "ls-23",
+      "BST AXN Spider-Man Deluxe",
+      "Special",
+      "2022-01-01",
+      1.55,
+      20.0
+    ],
+    [
+      "ls-24",
+      "BST AXN Venom Deluxe",
+      "Special",
+      "2022-02-01",
+      1.55,
+      20.0
+    ],
+    [
+      "ls-25",
+      "BST AXN Leonardo Deluxe",
+      "Special",
+      "2022-03-01",
+      1.55,
+      20.0
+    ],
+    [
+      "ls-26",
+      "BST AXN Raphael Deluxe",
+      "Special",
+      "2022-04-01",
+      1.55,
+      20.0
+    ],
+    [
+      "ls-27",
+      "BST AXN Naruto Deluxe",
+      "Special",
+      "2022-05-01",
+      1.55,
+      20.0
+    ],
+    [
+      "ls-28",
+      "BST AXN Sasuke Deluxe",
+      "Special",
+      "2022-06-01",
+      1.55,
+      20.0
+    ],
+    [
+      "ls-29",
+      "BST AXN Clear Batman",
+      "Special",
+      "2022-07-01",
+      1.45,
+      20.0
+    ],
+    [
+      "ls-30",
+      "BST AXN Glow Joker",
+      "Special",
+      "2022-08-01",
+      1.45,
+      20.0
+    ],
+    [
+      "ls-31",
+      "BST AXN Chrome Spider-Man",
+      "Special",
+      "2022-09-01",
+      1.5,
+      20.0
+    ],
+    [
+      "ls-32",
+      "BST AXN Neon Venom",
+      "Special",
+      "2022-10-01",
+      1.5,
+      20.0
+    ],
+    [
+      "ls-33",
+      "BST AXN Casey Jones",
+      "BST AXN",
+      "2022-11-01",
+      1.4,
+      20.0
+    ],
+    [
+      "ls-34",
+      "BST AXN April O'Neil",
+      "BST AXN",
+      "2022-12-01",
+      1.35,
+      20.0
+    ],
+    [
+      "ls-35",
+      "BST AXN Bebop",
+      "BST AXN",
+      "2023-01-01",
+      1.4,
+      20.0
+    ],
+    [
+      "ls-36",
+      "BST AXN Rocksteady",
+      "BST AXN",
+      "2023-02-01",
+      1.4,
+      20.0
+    ],
+    [
+      "ls-37",
+      "BST AXN Green Goblin",
+      "BST AXN",
+      "2023-03-01",
+      1.45,
+      20.0
+    ],
+    [
+      "ls-38",
+      "BST AXN Doctor Octopus",
+      "BST AXN",
+      "2023-04-01",
+      1.45,
+      20.0
+    ],
+    [
+      "ls-39",
+      "BST AXN Deathstroke",
+      "BST AXN",
+      "2023-05-01",
+      1.45,
+      20.0
+    ],
+    [
+      "ls-40",
+      "BST AXN Nightwing",
+      "BST AXN",
+      "2023-06-01",
+      1.4,
+      20.0
+    ],
+    [
+      "ls-41",
+      "BST AXN Accessory Pack",
+      "Accessories",
+      "2023-07-01",
+      1.25,
+      15.0
+    ],
+    [
+      "ls-42",
+      "BST AXN Stand Pack",
+      "Accessories",
+      "2023-08-01",
+      1.2,
+      12.0
+    ],
+    [
+      "ls-43",
+      "BST AXN TMNT Pack",
+      "Special",
+      "2023-09-01",
+      1.5,
+      80.0
+    ],
+    [
+      "ls-44",
+      "BST AXN Marvel Pack",
+      "Special",
+      "2023-10-01",
+      1.5,
+      75.0
+    ],
+    [
+      "ls-45",
+      "BST AXN DC Pack",
+      "Special",
+      "2023-11-01",
+      1.5,
+      75.0
+    ]
+  ],
+  "jada": [
+    [
+      "jd-01",
+      "Street Fighter Ryu",
+      "Street Fighter",
+      "2019-04-01",
+      1.5,
+      25.0
+    ],
+    [
+      "jd-02",
+      "Street Fighter Ken",
+      "Street Fighter",
+      "2019-05-01",
+      1.5,
+      25.0
+    ],
+    [
+      "jd-03",
+      "Street Fighter Chun-Li",
+      "Street Fighter",
+      "2019-06-01",
+      1.55,
+      25.0
+    ],
+    [
+      "jd-04",
+      "Street Fighter Guile",
+      "Street Fighter",
+      "2019-07-01",
+      1.45,
+      25.0
+    ],
+    [
+      "jd-05",
+      "Street Fighter Akuma",
+      "Street Fighter",
+      "2019-08-01",
+      1.55,
+      25.0
+    ],
+    [
+      "jd-06",
+      "Street Fighter M. Bison",
+      "Street Fighter",
+      "2019-09-01",
+      1.5,
+      25.0
+    ],
+    [
+      "jd-07",
+      "Street Fighter Cammy",
+      "Street Fighter",
+      "2019-10-01",
+      1.5,
+      25.0
+    ],
+    [
+      "jd-08",
+      "Street Fighter Dhalsim",
+      "Street Fighter",
+      "2019-11-01",
+      1.4,
+      25.0
+    ],
+    [
+      "jd-09",
+      "Universal Dracula",
+      "Universal Monsters",
+      "2019-12-01",
+      1.45,
+      25.0
+    ],
+    [
+      "jd-10",
+      "Universal Frankenstein",
+      "Universal Monsters",
+      "2020-01-01",
+      1.45,
+      25.0
+    ],
+    [
+      "jd-11",
+      "Universal Wolfman",
+      "Universal Monsters",
+      "2020-02-01",
+      1.4,
+      25.0
+    ],
+    [
+      "jd-12",
+      "Universal Mummy",
+      "Universal Monsters",
+      "2020-03-01",
+      1.4,
+      25.0
+    ],
+    [
+      "jd-13",
+      "Universal Creature",
+      "Universal Monsters",
+      "2020-04-01",
+      1.45,
+      25.0
+    ],
+    [
+      "jd-14",
+      "Universal Bride",
+      "Universal Monsters",
+      "2020-05-01",
+      1.45,
+      25.0
+    ],
+    [
+      "jd-15",
+      "DC Batman",
+      "DC",
+      "2020-06-01",
+      1.5,
+      25.0
+    ],
+    [
+      "jd-16",
+      "DC Superman",
+      "DC",
+      "2020-07-01",
+      1.45,
+      25.0
+    ],
+    [
+      "jd-17",
+      "DC Wonder Woman",
+      "DC",
+      "2020-08-01",
+      1.45,
+      25.0
+    ],
+    [
+      "jd-18",
+      "DC The Flash",
+      "DC",
+      "2020-09-01",
+      1.4,
+      25.0
+    ],
+    [
+      "jd-19",
+      "DC Joker",
+      "DC",
+      "2020-10-01",
+      1.5,
+      25.0
+    ],
+    [
+      "jd-20",
+      "DC Harley Quinn",
+      "DC",
+      "2020-11-01",
+      1.5,
+      25.0
+    ],
+    [
+      "jd-21",
+      "Marvel Spider-Man",
+      "Marvel",
+      "2020-12-01",
+      1.5,
+      25.0
+    ],
+    [
+      "jd-22",
+      "Marvel Iron Man",
+      "Marvel",
+      "2021-01-01",
+      1.5,
+      25.0
+    ],
+    [
+      "jd-23",
+      "Marvel Captain America",
+      "Marvel",
+      "2021-02-01",
+      1.45,
+      25.0
+    ],
+    [
+      "jd-24",
+      "Marvel Thor",
+      "Marvel",
+      "2021-03-01",
+      1.45,
+      25.0
+    ],
+    [
+      "jd-25",
+      "Marvel Hulk",
+      "Marvel",
+      "2021-04-01",
+      1.45,
+      25.0
+    ],
+    [
+      "jd-26",
+      "Marvel Black Panther",
+      "Marvel",
+      "2021-05-01",
+      1.45,
+      25.0
+    ],
+    [
+      "jd-27",
+      "SF Ryu Deluxe",
+      "Special",
+      "2021-06-01",
+      1.55,
+      25.0
+    ],
+    [
+      "jd-28",
+      "SF Chun-Li Deluxe",
+      "Special",
+      "2021-07-01",
+      1.55,
+      25.0
+    ],
+    [
+      "jd-29",
+      "SF Akuma Deluxe",
+      "Special",
+      "2021-08-01",
+      1.55,
+      25.0
+    ],
+    [
+      "jd-30",
+      "Universal Dracula Deluxe",
+      "Special",
+      "2021-09-01",
+      1.5,
+      25.0
+    ],
+    [
+      "jd-31",
+      "DC Batman Deluxe",
+      "Special",
+      "2021-10-01",
+      1.55,
+      25.0
+    ],
+    [
+      "jd-32",
+      "Marvel Spider-Man Deluxe",
+      "Special",
+      "2021-11-01",
+      1.55,
+      25.0
+    ],
+    [
+      "jd-33",
+      "SF Guile Deluxe",
+      "Special",
+      "2021-12-01",
+      1.45,
+      25.0
+    ],
+    [
+      "jd-34",
+      "SF Dhalsim Deluxe",
+      "Special",
+      "2022-01-01",
+      1.4,
+      25.0
+    ],
+    [
+      "jd-35",
+      "SF Cammy Deluxe",
+      "Special",
+      "2022-02-01",
+      1.5,
+      25.0
+    ],
+    [
+      "jd-36",
+      "SF Bison Deluxe",
+      "Special",
+      "2022-03-01",
+      1.5,
+      25.0
+    ],
+    [
+      "jd-37",
+      "Universal Frankenstein Deluxe",
+      "Special",
+      "2022-04-01",
+      1.5,
+      25.0
+    ],
+    [
+      "jd-38",
+      "DC Joker Deluxe",
+      "Special",
+      "2022-05-01",
+      1.55,
+      25.0
+    ],
+    [
+      "jd-39",
+      "Marvel Iron Man Deluxe",
+      "Special",
+      "2022-06-01",
+      1.55,
+      25.0
+    ],
+    [
+      "jd-40",
+      "Marvel Cap Deluxe",
+      "Special",
+      "2022-07-01",
+      1.5,
+      25.0
+    ],
+    [
+      "jd-41",
+      "Jada SF 2-Pack",
+      "Special",
+      "2022-08-01",
+      1.5,
+      50.0
+    ],
+    [
+      "jd-42",
+      "Jada Universal 2-Pack",
+      "Special",
+      "2022-09-01",
+      1.45,
+      45.0
+    ],
+    [
+      "jd-43",
+      "Jada DC 2-Pack",
+      "Special",
+      "2022-10-01",
+      1.5,
+      45.0
+    ],
+    [
+      "jd-44",
+      "Jada Marvel 2-Pack",
+      "Special",
+      "2022-11-01",
+      1.5,
+      45.0
+    ],
+    [
+      "jd-45",
+      "Jada Display Stand",
+      "Accessories",
+      "2022-12-01",
+      1.15,
+      10.0
+    ]
+  ],
+  "bandai": [
+    [
+      "bn-01",
+      "Robot Spirits Gundam RX-78",
+      "Robot Spirits",
+      "2016-02-01",
+      1.55,
+      75.0
+    ],
+    [
+      "bn-02",
+      "Robot Spirits Zaku II",
+      "Robot Spirits",
+      "2016-03-01",
+      1.5,
+      75.0
+    ],
+    [
+      "bn-03",
+      "Robot Spirits Char Zaku",
+      "Robot Spirits",
+      "2016-04-01",
+      1.55,
+      75.0
+    ],
+    [
+      "bn-04",
+      "Robot Spirits Wing Zero",
+      "Robot Spirits",
+      "2016-05-01",
+      1.55,
+      75.0
+    ],
+    [
+      "bn-05",
+      "Robot Spirits Freedom",
+      "Robot Spirits",
+      "2016-06-01",
+      1.5,
+      75.0
+    ],
+    [
+      "bn-06",
+      "Robot Spirits Destiny",
+      "Robot Spirits",
+      "2016-07-01",
+      1.5,
+      75.0
+    ],
+    [
+      "bn-07",
+      "Robot Spirits Unicorn",
+      "Robot Spirits",
+      "2016-08-01",
+      1.55,
+      75.0
+    ],
+    [
+      "bn-08",
+      "Robot Spirits Barbatos",
+      "Robot Spirits",
+      "2016-09-01",
+      1.55,
+      75.0
+    ],
+    [
+      "bn-09",
+      "Gundam Universe RX-78",
+      "Gundam Universe",
+      "2016-10-01",
+      1.45,
+      75.0
+    ],
+    [
+      "bn-10",
+      "Gundam Universe Zaku",
+      "Gundam Universe",
+      "2016-11-01",
+      1.4,
+      75.0
+    ],
+    [
+      "bn-11",
+      "Gundam Universe Wing",
+      "Gundam Universe",
+      "2016-12-01",
+      1.45,
+      75.0
+    ],
+    [
+      "bn-12",
+      "Gundam Universe Unicorn",
+      "Gundam Universe",
+      "2017-01-01",
+      1.5,
+      75.0
+    ],
+    [
+      "bn-13",
+      "G Frame RX-78",
+      "G Frame",
+      "2017-02-01",
+      1.4,
+      75.0
+    ],
+    [
+      "bn-14",
+      "G Frame Zaku",
+      "G Frame",
+      "2017-03-01",
+      1.35,
+      75.0
+    ],
+    [
+      "bn-15",
+      "G Frame Wing",
+      "G Frame",
+      "2017-04-01",
+      1.4,
+      75.0
+    ],
+    [
+      "bn-16",
+      "G Frame Unicorn",
+      "G Frame",
+      "2017-05-01",
+      1.45,
+      75.0
+    ],
+    [
+      "bn-17",
+      "MSiA Gundam",
+      "MSiA",
+      "2017-06-01",
+      1.4,
+      75.0
+    ],
+    [
+      "bn-18",
+      "MSiA Char Zaku",
+      "MSiA",
+      "2017-07-01",
+      1.45,
+      75.0
+    ],
+    [
+      "bn-19",
+      "MSiA Wing Zero",
+      "MSiA",
+      "2017-08-01",
+      1.45,
+      75.0
+    ],
+    [
+      "bn-20",
+      "MSiA Freedom",
+      "MSiA",
+      "2017-09-01",
+      1.4,
+      75.0
+    ],
+    [
+      "bn-21",
+      "Robot Spirits Chrome",
+      "Special",
+      "2017-10-01",
+      1.55,
+      75.0
+    ],
+    [
+      "bn-22",
+      "Robot Spirits Clear",
+      "Special",
+      "2017-11-01",
+      1.5,
+      75.0
+    ],
+    [
+      "bn-23",
+      "Gundam Universe Chrome",
+      "Special",
+      "2017-12-01",
+      1.5,
+      75.0
+    ],
+    [
+      "bn-24",
+      "G Frame Metallic",
+      "Special",
+      "2018-01-01",
+      1.45,
+      75.0
+    ],
+    [
+      "bn-25",
+      "Robot Spirits Eva-01 Homage",
+      "Special",
+      "2018-02-01",
+      1.5,
+      75.0
+    ],
+    [
+      "bn-26",
+      "Robot Spirits Mazinger Homage",
+      "Special",
+      "2018-03-01",
+      1.5,
+      75.0
+    ],
+    [
+      "bn-27",
+      "Gundam Universe Barbatos",
+      "Gundam Universe",
+      "2018-04-01",
+      1.5,
+      75.0
+    ],
+    [
+      "bn-28",
+      "Gundam Universe Destiny",
+      "Gundam Universe",
+      "2018-05-01",
+      1.45,
+      75.0
+    ],
+    [
+      "bn-29",
+      "Robot Spirits Nu Gundam",
+      "Robot Spirits",
+      "2018-06-01",
+      1.55,
+      75.0
+    ],
+    [
+      "bn-30",
+      "Robot Spirits Sazabi",
+      "Robot Spirits",
+      "2018-07-01",
+      1.55,
+      75.0
+    ],
+    [
+      "bn-31",
+      "Robot Spirits Hi-Nu",
+      "Robot Spirits",
+      "2018-08-01",
+      1.55,
+      75.0
+    ],
+    [
+      "bn-32",
+      "Robot Spirits Nightingale",
+      "Robot Spirits",
+      "2018-09-01",
+      1.5,
+      75.0
+    ],
+    [
+      "bn-33",
+      "G Frame Effect Parts",
+      "Accessories",
+      "2018-10-01",
+      1.25,
+      20.0
+    ],
+    [
+      "bn-34",
+      "Robot Spirits Stand",
+      "Accessories",
+      "2018-11-01",
+      1.2,
+      25.0
+    ],
+    [
+      "bn-35",
+      "MSiA Chrome",
+      "Special",
+      "2018-12-01",
+      1.45,
+      75.0
+    ],
+    [
+      "bn-36",
+      "Gundam Universe Clear",
+      "Special",
+      "2019-01-01",
+      1.4,
+      75.0
+    ],
+    [
+      "bn-37",
+      "Robot Spirits Battle Damaged",
+      "Special",
+      "2019-02-01",
+      1.5,
+      75.0
+    ],
+    [
+      "bn-38",
+      "G Frame Combo Pack",
+      "Special",
+      "2019-03-01",
+      1.4,
+      60.0
+    ],
+    [
+      "bn-39",
+      "Robot Spirits Weapon Pack",
+      "Accessories",
+      "2019-04-01",
+      1.3,
+      35.0
+    ],
+    [
+      "bn-40",
+      "Gundam Universe Pack",
+      "Special",
+      "2019-05-01",
+      1.4,
+      70.0
+    ],
+    [
+      "bn-41",
+      "Robot Spirits Exia",
+      "Robot Spirits",
+      "2019-06-01",
+      1.5,
+      75.0
+    ],
+    [
+      "bn-42",
+      "Robot Spirits 00 Raiser",
+      "Robot Spirits",
+      "2019-07-01",
+      1.55,
+      75.0
+    ],
+    [
+      "bn-43",
+      "Gundam Universe Exia",
+      "Gundam Universe",
+      "2019-08-01",
+      1.45,
+      75.0
+    ],
+    [
+      "bn-44",
+      "G Frame Exia",
+      "G Frame",
+      "2019-09-01",
+      1.4,
+      75.0
+    ],
+    [
+      "bn-45",
+      "Bandai AF Starter",
+      "Special",
+      "2019-10-01",
+      1.35,
+      55.0
+    ]
+  ],
+  "playmates": [
+    [
+      "pm-01",
+      "Classic Leonardo",
+      "TMNT Classic",
+      "1988-06-01",
+      1.5,
+      8.0
+    ],
+    [
+      "pm-02",
+      "Classic Michelangelo",
+      "TMNT Classic",
+      "1988-09-01",
+      1.45,
+      8.0
+    ],
+    [
+      "pm-03",
+      "Classic Donatello",
+      "TMNT Classic",
+      "1988-12-01",
+      1.45,
+      8.0
+    ],
+    [
+      "pm-04",
+      "Classic Raphael",
+      "TMNT Classic",
+      "1989-03-01",
+      1.5,
+      8.0
+    ],
+    [
+      "pm-05",
+      "Classic Splinter",
+      "TMNT Classic",
+      "1989-06-01",
+      1.45,
+      8.0
+    ],
+    [
+      "pm-06",
+      "Classic Shredder",
+      "TMNT Classic",
+      "1989-09-01",
+      1.55,
+      8.0
+    ],
+    [
+      "pm-07",
+      "Classic Casey Jones",
+      "TMNT Classic",
+      "1989-12-01",
+      1.4,
+      8.0
+    ],
+    [
+      "pm-08",
+      "Classic April O'Neil",
+      "TMNT Classic",
+      "1990-03-01",
+      1.35,
+      8.0
+    ],
+    [
+      "pm-09",
+      "Classic Bebop",
+      "TMNT Classic",
+      "1990-06-01",
+      1.4,
+      8.0
+    ],
+    [
+      "pm-10",
+      "Classic Rocksteady",
+      "TMNT Classic",
+      "1990-09-01",
+      1.4,
+      8.0
+    ],
+    [
+      "pm-11",
+      "Classic Krang",
+      "TMNT Classic",
+      "1990-12-01",
+      1.5,
+      8.0
+    ],
+    [
+      "pm-12",
+      "Classic Foot Soldier",
+      "TMNT Classic",
+      "1991-03-01",
+      1.3,
+      8.0
+    ],
+    [
+      "pm-13",
+      "Mutant Mayhem Leo",
+      "Mutant Mayhem",
+      "1991-06-01",
+      1.5,
+      8.0
+    ],
+    [
+      "pm-14",
+      "Mutant Mayhem Mikey",
+      "Mutant Mayhem",
+      "1991-09-01",
+      1.45,
+      8.0
+    ],
+    [
+      "pm-15",
+      "Mutant Mayhem Donnie",
+      "Mutant Mayhem",
+      "1991-12-01",
+      1.45,
+      8.0
+    ],
+    [
+      "pm-16",
+      "Mutant Mayhem Raph",
+      "Mutant Mayhem",
+      "1992-03-01",
+      1.5,
+      8.0
+    ],
+    [
+      "pm-17",
+      "Mutant Mayhem Splinter",
+      "Mutant Mayhem",
+      "1992-06-01",
+      1.4,
+      8.0
+    ],
+    [
+      "pm-18",
+      "Mutant Mayhem Superfly",
+      "Mutant Mayhem",
+      "1992-09-01",
+      1.45,
+      8.0
+    ],
+    [
+      "pm-19",
+      "Tales of TMNT Leo",
+      "Tales",
+      "1992-12-01",
+      1.45,
+      8.0
+    ],
+    [
+      "pm-20",
+      "Tales of TMNT Raph",
+      "Tales",
+      "1993-03-01",
+      1.45,
+      8.0
+    ],
+    [
+      "pm-21",
+      "Classic Collection Leo",
+      "Classic Collection",
+      "1993-06-01",
+      1.5,
+      8.0
+    ],
+    [
+      "pm-22",
+      "Classic Collection Raph",
+      "Classic Collection",
+      "1993-09-01",
+      1.5,
+      8.0
+    ],
+    [
+      "pm-23",
+      "Classic Collection Mikey",
+      "Classic Collection",
+      "1993-12-01",
+      1.45,
+      8.0
+    ],
+    [
+      "pm-24",
+      "Classic Collection Donnie",
+      "Classic Collection",
+      "1994-03-01",
+      1.45,
+      8.0
+    ],
+    [
+      "pm-25",
+      "Exo-Squad Able Squad",
+      "Exo-Squad",
+      "1994-06-01",
+      1.4,
+      8.0
+    ],
+    [
+      "pm-26",
+      "Exo-Squad Neosapien",
+      "Exo-Squad",
+      "1994-09-01",
+      1.4,
+      8.0
+    ],
+    [
+      "pm-27",
+      "Classic Leo Soft Goods",
+      "Special",
+      "1994-12-01",
+      1.55,
+      8.0
+    ],
+    [
+      "pm-28",
+      "Classic Shredder Soft Goods",
+      "Special",
+      "1995-03-01",
+      1.55,
+      8.0
+    ],
+    [
+      "pm-29",
+      "Mutant Mayhem Deluxe Leo",
+      "Special",
+      "1995-06-01",
+      1.55,
+      8.0
+    ],
+    [
+      "pm-30",
+      "Mutant Mayhem Deluxe Raph",
+      "Special",
+      "1995-09-01",
+      1.55,
+      8.0
+    ],
+    [
+      "pm-31",
+      "Classic Krang Soft Goods",
+      "Special",
+      "1995-12-01",
+      1.5,
+      8.0
+    ],
+    [
+      "pm-32",
+      "Classic Bebop Soft Goods",
+      "Special",
+      "1996-03-01",
+      1.45,
+      8.0
+    ],
+    [
+      "pm-33",
+      "Classic Rocksteady Soft Goods",
+      "Special",
+      "1996-06-01",
+      1.45,
+      8.0
+    ],
+    [
+      "pm-34",
+      "Classic Foot Soft Goods",
+      "Special",
+      "1996-09-01",
+      1.35,
+      8.0
+    ],
+    [
+      "pm-35",
+      "Tales Deluxe Leo",
+      "Special",
+      "1996-12-01",
+      1.5,
+      8.0
+    ],
+    [
+      "pm-36",
+      "Tales Deluxe Raph",
+      "Special",
+      "1997-03-01",
+      1.5,
+      8.0
+    ],
+    [
+      "pm-37",
+      "Classic Collection Soft Leo",
+      "Special",
+      "1997-06-01",
+      1.55,
+      8.0
+    ],
+    [
+      "pm-38",
+      "Classic Collection Soft Raph",
+      "Special",
+      "1997-09-01",
+      1.55,
+      8.0
+    ],
+    [
+      "pm-39",
+      "Exo-Squad Deluxe",
+      "Special",
+      "1997-12-01",
+      1.45,
+      8.0
+    ],
+    [
+      "pm-40",
+      "TMNT Vehicle Driver",
+      "TMNT Classic",
+      "1998-03-01",
+      1.35,
+      8.0
+    ],
+    [
+      "pm-41",
+      "Classic Accessory Pack",
+      "Accessories",
+      "1998-06-01",
+      1.25,
+      15.0
+    ],
+    [
+      "pm-42",
+      "Mutant Mayhem Accessory",
+      "Accessories",
+      "1998-09-01",
+      1.25,
+      15.0
+    ],
+    [
+      "pm-43",
+      "Classic 4-Pack",
+      "Special",
+      "1998-12-01",
+      1.5,
+      60.0
+    ],
+    [
+      "pm-44",
+      "Mutant Mayhem 4-Pack",
+      "Special",
+      "1999-03-01",
+      1.5,
+      55.0
+    ],
+    [
+      "pm-45",
+      "Playmates Display",
+      "Accessories",
+      "1999-06-01",
+      1.15,
+      12.0
+    ]
+  ],
+  "mattel": [
+    [
+      "mt-01",
+      "Masterverse He-Man",
+      "Masterverse",
+      "2020-01-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mt-02",
+      "Masterverse Skeletor",
+      "Masterverse",
+      "2020-02-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mt-03",
+      "Masterverse Teela",
+      "Masterverse",
+      "2020-03-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mt-04",
+      "Masterverse Man-At-Arms",
+      "Masterverse",
+      "2020-04-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mt-05",
+      "Masterverse Evil-Lyn",
+      "Masterverse",
+      "2020-05-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-06",
+      "Masterverse Beast Man",
+      "Masterverse",
+      "2020-06-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mt-07",
+      "Masterverse Stratos",
+      "Masterverse",
+      "2020-07-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mt-08",
+      "Masterverse Mer-Man",
+      "Masterverse",
+      "2020-08-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mt-09",
+      "Masterverse Trap Jaw",
+      "Masterverse",
+      "2020-09-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mt-10",
+      "Masterverse Tri-Klops",
+      "Masterverse",
+      "2020-10-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mt-11",
+      "Masterverse Hordak",
+      "Masterverse",
+      "2020-11-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-12",
+      "Masterverse She-Ra",
+      "Masterverse",
+      "2020-12-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-13",
+      "WWE Elite John Cena",
+      "WWE Elite",
+      "2021-01-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mt-14",
+      "WWE Elite Roman Reigns",
+      "WWE Elite",
+      "2021-02-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-15",
+      "WWE Elite Rhea Ripley",
+      "WWE Elite",
+      "2021-03-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-16",
+      "WWE Elite Cody Rhodes",
+      "WWE Elite",
+      "2021-04-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-17",
+      "WWE Ultimate Undertaker",
+      "WWE Ultimate",
+      "2021-05-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mt-18",
+      "WWE Ultimate Stone Cold",
+      "WWE Ultimate",
+      "2021-06-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mt-19",
+      "WWE Ultimate Shawn Michaels",
+      "WWE Ultimate",
+      "2021-07-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-20",
+      "WWE Ultimate Triple H",
+      "WWE Ultimate",
+      "2021-08-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-21",
+      "Origins He-Man",
+      "Origins",
+      "2021-09-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mt-22",
+      "Origins Skeletor",
+      "Origins",
+      "2021-10-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mt-23",
+      "Origins Teela",
+      "Origins",
+      "2021-11-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mt-24",
+      "Origins Man-At-Arms",
+      "Origins",
+      "2021-12-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mt-25",
+      "Masterverse New Eternia He-Man",
+      "Masterverse",
+      "2022-01-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mt-26",
+      "Masterverse New Eternia Skeletor",
+      "Masterverse",
+      "2022-02-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mt-27",
+      "Masterverse Revolution He-Man",
+      "Masterverse",
+      "2022-03-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-28",
+      "Masterverse Revolution Skeletor",
+      "Masterverse",
+      "2022-04-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-29",
+      "Masterverse Deluxe He-Man",
+      "Special",
+      "2022-05-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mt-30",
+      "Masterverse Deluxe Skeletor",
+      "Special",
+      "2022-06-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mt-31",
+      "WWE Elite Deluxe Cena",
+      "Special",
+      "2022-07-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-32",
+      "WWE Ultimate Deluxe Undertaker",
+      "Special",
+      "2022-08-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mt-33",
+      "Origins Deluxe He-Man",
+      "Special",
+      "2022-09-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-34",
+      "Origins Deluxe Skeletor",
+      "Special",
+      "2022-10-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-35",
+      "Masterverse Battle Cat",
+      "Masterverse",
+      "2022-11-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-36",
+      "Masterverse Panthor",
+      "Masterverse",
+      "2022-12-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-37",
+      "Masterverse Catra",
+      "Masterverse",
+      "2023-01-01",
+      1.5,
+      22.99
+    ],
+    [
+      "mt-38",
+      "Masterverse Orko",
+      "Masterverse",
+      "2023-02-01",
+      1.4,
+      22.99
+    ],
+    [
+      "mt-39",
+      "WWE Elite Becky Lynch",
+      "WWE Elite",
+      "2023-03-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mt-40",
+      "WWE Elite Seth Rollins",
+      "WWE Elite",
+      "2023-04-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mt-41",
+      "WWE Ultimate Randy Savage",
+      "WWE Ultimate",
+      "2023-05-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mt-42",
+      "WWE Ultimate Ultimate Warrior",
+      "WWE Ultimate",
+      "2023-06-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mt-43",
+      "Masterverse Creations Exclusive",
+      "Special",
+      "2023-07-01",
+      1.55,
+      22.99
+    ],
+    [
+      "mt-44",
+      "Origins Cartoon Collection",
+      "Special",
+      "2023-08-01",
+      1.45,
+      22.99
+    ],
+    [
+      "mt-45",
+      "Mattel AF Accessory Pack",
+      "Accessories",
+      "2023-09-01",
+      1.2,
+      12.0
+    ]
+  ]
+}
