@@ -340,3 +340,34 @@ Keeppley) skipped. **ToyWorld** / **Unique Toys** / **APC Toys** not targeted.
 
 Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
 
+## BBTS AF brand expansion wave 10 — FINAL (2026-09-05)
+
+Tenth and **final** curated pass from the BBTS company universe — densify thin AF
+makers + add missing collector brands. Floor 1980; AF only; no AI art. Statue /
+garage-kit / Perfect Effect / DNA Design upgrade-kit brands skipped. Brick lines
+skipped. MegaHouse scales-only, Kids Logic statue-leaning, Quantum Mechanix
+diorama-leaning, and Super Duck accessory-head lines skipped.
+
+| CompanyId | Notes |
+| --- | --- |
+| `haoyu` | **NEW** — HaoYu Toys 1/6 WWII / modern military / historical |
+| `bigchief` | **NEW** — BIG Chief Studios Doctor Who / film 1/6 |
+| `iconiq` | **NEW** — Iconiq Studios SF / MK / iconic 1/6 |
+| `figurestoy` | **NEW** — Figures Toy Company retro WGSH-style 8" |
+| `toynotch` | **NEW** — Toy Notch 1/6 Asian historical |
+| `actoys` | **NEW** — ACToys 1/6 modern military / PMC |
+| `newwave` | **NEW** — New Wave Toys Replicade + arcade ReAction-style |
+| `flirtygirl` | **NEW** — Flirty Girl Collectibles 1/6 female AF |
+| `firegirl` | **NEW** — Fire Girl Toys 1/6 tactical / cyber female AF |
+| `i8toys` | **NEW** — i8Toys 1/6 military / sci-fi / fantasy |
+| `nanmu` | **NEW** — Nanmu Studio dinosaur / prehistoric creature AF |
+| `vtoys` | **NEW** — VTOYS 1/6 bodies + military / fantasy / sci-fi |
+| densify | Hasbro ML / Black Series / Classified / Studio Series / Lightning |
+| densify | McFarlane DC Multiverse / Spawn, Mezco One:12, MAFEX |
+| densify | Storm Collectibles, Hiya Godzilla/Exquisite, Mondo 1/6 |
+| densify | SHFiguarts, Kaiyodo Amazing Yamaguchi / Revoltech, figma |
+| densify | JAKKS Sonic/Nintendo/Primal Age, JoyToy 40K/Dark Source |
+| densify | Sentinel Fighting Armor / Riobot, Kenner Super Powers / Batman movies |
+
+**No wave 11.** Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
+

@@ -98,7 +98,19 @@ export type CompanyId =
   | "artstorm"
   | "fiftytwo"
   | "actiontoys"
-  | "underverse";
+  | "underverse"
+  | "haoyu"
+  | "bigchief"
+  | "iconiq"
+  | "figurestoy"
+  | "toynotch"
+  | "actoys"
+  | "newwave"
+  | "flirtygirl"
+  | "firegirl"
+  | "i8toys"
+  | "nanmu"
+  | "vtoys";
 
 export type ItemKind = "figure" | "kit";
 

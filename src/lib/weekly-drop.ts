@@ -105,6 +105,18 @@ const COMPANIES: CompanyId[] = [
   "fiftytwo",
   "actiontoys",
   "underverse",
+  "haoyu",
+  "bigchief",
+  "iconiq",
+  "figurestoy",
+  "toynotch",
+  "actoys",
+  "newwave",
+  "flirtygirl",
+  "firegirl",
+  "i8toys",
+  "nanmu",
+  "vtoys",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];
@@ -325,6 +337,18 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/\b52toys\b|beastbox|megabox/.test(s)) return "fiftytwo";
   if (/action toys|actiontoys|es gokin/.test(s)) return "actiontoys";
   if (/underverse/.test(s)) return "underverse";
+  if (/haoyu|hao yu toys/.test(s)) return "haoyu";
+  if (/big chief studios|bigchief/.test(s)) return "bigchief";
+  if (/iconiq studios|\biconiq\b/.test(s)) return "iconiq";
+  if (/figures toy company|figurestoy/.test(s)) return "figurestoy";
+  if (/toy notch|toynotch/.test(s)) return "toynotch";
+  if (/\bactoys\b|ac toys/.test(s)) return "actoys";
+  if (/new wave toys|newwave|replicade/.test(s)) return "newwave";
+  if (/flirty girl/.test(s)) return "flirtygirl";
+  if (/fire girl toys|firegirl/.test(s)) return "firegirl";
+  if (/\bi8toys\b|i8 toys/.test(s)) return "i8toys";
+  if (/nanmu studio|\bnanmu\b/.test(s)) return "nanmu";
+  if (/\bvtoys\b|v toys/.test(s)) return "vtoys";
   if (/valaverse|action force/.test(s)) return "valaverse";
   return null;
 }
