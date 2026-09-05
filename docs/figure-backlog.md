@@ -144,3 +144,26 @@ missing collector brands. Floor 1980; AF only; no AI art.
 Skipped (not AF / soft / statue-primary): Cosbaby, FREEing scales-only, Moose Goo Jit, Sideshow statues.
 
 Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
+
+## BBTS AF brand expansion wave 3 (2026-09-05)
+
+Third curated pass from the BBTS company universe — densify thin AF makers + add
+missing collector brands. Floor 1980; AF only; no AI art. ACBA-adjacent and bare
+**Fresh** brand skipped; Nano Metalfigs diecast skipped.
+
+| CompanyId | Notes |
+| --- | --- |
+| `sentinel` | **NEW** — Fighting Armor / Riobot / Wonderful Acts |
+| `thousandtoys` | **NEW** — 1000Toys Tough Guys + Synthetic Human |
+| `acidrain` | **NEW** — Toys Alliance Acid Rain World / FAV / AG / B2Five |
+| `freshmonkey` | **NEW** — Fresh Monkey Fiction + Fresh Retro AF |
+| `jada` | **NEW** — Street Fighter AF + Universal Monsters / DC / Marvel AF |
+| densify | Super7 ULTIMATES!/ReAction, Premium DNA, Hiya, Mondo, Beast Kingdom DAH |
+| densify | Hot Toys sparse real, threezero DLX, Cosmic Legions (fourhorsemen) |
+| densify | Mattel Creations leftovers, WWE Elite/Ultimate, Masterverse |
+| densify | Hasbro Black Series + Marvel Legends BAFs, NECA Ultimate, Mezco One:12 |
+| densify | Boss Fight H.A.C.K.S., Loyal Subjects BST AXN, McFarlane DC/Spawn |
+| densify | Bandai Robot Spirits / Gundam Universe AF, SHFiguarts (Tamashii) |
+
+Figura Obscura remains under `fourhorsemen`. Tamashii SHF stays `shfiguarts` (Bandai).
+Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.

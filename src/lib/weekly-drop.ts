@@ -40,6 +40,11 @@ const COMPANIES: CompanyId[] = [
   "funko",
   "fourhorsemen",
   "spinmaster",
+  "sentinel",
+  "thousandtoys",
+  "acidrain",
+  "freshmonkey",
+  "jada",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];
@@ -195,6 +200,11 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/toy ?biz/.test(s)) return "toybiz";
   if (/four horsemen|mythic legions|cosmic legions|figura obscura/.test(s)) return "fourhorsemen";
   if (/spin master|bakugan/.test(s)) return "spinmaster";
+  if (/\bsentinel\b|fighting armor|\briobot\b|wonderful acts/.test(s)) return "sentinel";
+  if (/1000toys|thousandtoys|tough guys|synthetic human/.test(s)) return "thousandtoys";
+  if (/acid rain|toys alliance/.test(s)) return "acidrain";
+  if (/fresh monkey|fresh retro/.test(s)) return "freshmonkey";
+  if (/\bjada\b|street fighter.*jada/.test(s)) return "jada";
   if (/valaverse|action force/.test(s)) return "valaverse";
   return null;
 }

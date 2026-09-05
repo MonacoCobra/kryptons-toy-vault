@@ -33,7 +33,12 @@ export type CompanyId =
   | "enterbay"
   | "funko"
   | "fourhorsemen"
-  | "spinmaster";
+  | "spinmaster"
+  | "sentinel"
+  | "thousandtoys"
+  | "acidrain"
+  | "freshmonkey"
+  | "jada";
 
 export type ItemKind = "figure" | "kit";
 

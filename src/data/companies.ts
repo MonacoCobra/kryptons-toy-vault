@@ -309,6 +309,53 @@ export const COMPANIES: Company[] = [
     accent: "#00a3e0",
   },
 
+
+  {
+    id: "sentinel",
+    name: "Sentinel",
+    short: "Sentinel",
+    blurb: "Fighting Armor, Riobot, and Wonderful Acts articulated collector AF.",
+    founded: "1980",
+    hq: "Tokyo, JP",
+    accent: "#1d3557",
+  },
+  {
+    id: "thousandtoys",
+    name: "1000Toys",
+    short: "1000Toys",
+    blurb: "Tough Guys and Synthetic Human highly articulated AF.",
+    founded: "2014",
+    hq: "Tokyo, JP",
+    accent: "#457b9d",
+  },
+  {
+    id: "acidrain",
+    name: "Toys Alliance / Acid Rain",
+    short: "Acid Rain",
+    blurb: "Acid Rain World 1:18 military and sci-fi articulated AF.",
+    founded: "2016",
+    hq: "Hong Kong",
+    accent: "#6c757d",
+  },
+  {
+    id: "freshmonkey",
+    name: "Fresh Monkey Fiction",
+    short: "Fresh Monkey",
+    blurb: "Fresh Monkey Fiction and Fresh Retro classic AF-style lines.",
+    founded: "2015",
+    hq: "USA",
+    accent: "#e76f51",
+  },
+  {
+    id: "jada",
+    name: "Jada Toys",
+    short: "Jada",
+    blurb: "Street Fighter, Universal Monsters, and other articulated AF (not diecast).",
+    founded: "1999",
+    hq: "City of Industry, CA",
+    accent: "#f4a261",
+  },
+
   {
     id: "valaverse",
     name: "Valaverse",
