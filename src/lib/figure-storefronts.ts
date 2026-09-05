@@ -3,7 +3,8 @@
  * Prefer real CDN product images — never generative art.
  *
  * Focus: articulated action figures (not pins, dolls, or statue lines).
- * Hasbro Pulse / BBTS / EE / NECA / Mezco official shops still lack stable public JSON.
+ * Hasbro Pulse / BBTS / EE / NECA / Mezco / McFarlane official shops still lack stable public JSON
+ * (shop.dc.com carries some McFarlane Multiverse AF SKUs).
  */
 
 import type { CatalogFigure, CompanyId, ItemKind } from "@/lib/types";
@@ -36,6 +37,12 @@ export const FIGURE_STOREFRONTS: StorefrontSource[] = [
   { id: "premiumdna", baseUrl: "https://www.premiumdnatoys.com", company: "premiumdna" },
   { id: "hiya", baseUrl: "https://www.hiyatoys.com", company: "hiya" },
   { id: "mondo", baseUrl: "https://www.mondoshop.com", company: "mondo" },
+  {
+    id: "shop-dc",
+    baseUrl: "https://shop.dc.com",
+    company: "mcfarlane",
+    requireHint: /action figure|dc multiverse|mcfarlane collector/i,
+  },
 ];
 
 type ShopifyImage = { src?: string };

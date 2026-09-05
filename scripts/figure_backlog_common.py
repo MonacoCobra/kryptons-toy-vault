@@ -34,6 +34,8 @@ VALID_COMPANIES = {
     "hiya",
     "mondo",
     "threezero",
+    "dcdirect",
+    "kenner",
 }
 VALID_KINDS = {"figure", "kit"}
 

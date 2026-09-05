@@ -79,3 +79,9 @@ Most of the ~1599 BBTS brand names have **no** rows — by design (quality bar).
 - Action figures only (articulated). No pins, dolls, statues-only, plush, apparel.
 - Valid `CompanyId` values only (`src/lib/types.ts`).
 - Existing `FIGURES` seed + weekly ingest must keep working.
+
+## DC depth (2026-09-05)
+
+Curated Mattel DCUC / JLU / Movie Masters, DC Direct & DC Collectibles,
+McFarlane Multiverse densify, and Kenner Super Powers (≥1980) live in
+`scripts/figure_oneshot/curated_dc.py` and merge via the oneshot dump.

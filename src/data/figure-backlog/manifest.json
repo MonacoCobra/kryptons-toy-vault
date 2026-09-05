@@ -1,14 +1,12 @@
 {
   "strategy": "one-shot-permanent-dump",
-  "note": "Batches are optional legacy only. Permanent catalog growth is the oneshot archive (Shopify full pagination + curated major lines) plus weekly Shopify N&N ingest.",
+  "note": "Batches are optional legacy only. Growth is the oneshot archive + weekly Shopify N&N ingest.",
   "oneshotInjectedAt": "2026-09-05",
   "oneshotFile": "src/data/figure-archive/oneshot.json",
   "oneshotCounts": {
-    "shopify": 3549,
-    "curated": 396,
-    "archiveTotal": 3945,
-    "priorSeedAndInjected": 426,
-    "projectedFIGURES": 4371
+    "shopify": 3680,
+    "curated": 884,
+    "archiveTotal": 4564
   },
   "targetBatchSize": [
     180,

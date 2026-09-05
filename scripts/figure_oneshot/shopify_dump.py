@@ -36,6 +36,15 @@ STOREFRONTS = [
     {"id": "premiumdna", "baseUrl": "https://www.premiumdnatoys.com", "company": "premiumdna"},
     {"id": "hiya", "baseUrl": "https://www.hiyatoys.com", "company": "hiya"},
     {"id": "mondo", "baseUrl": "https://www.mondoshop.com", "company": "mondo"},
+    {
+        "id": "shop-dc",
+        "baseUrl": "https://shop.dc.com",
+        "company": "mcfarlane",  # current AF SKUs are mostly McFarlane Multiverse
+        "requireHint": re.compile(
+            r"action figure|dc multiverse|mcfarlane collector",
+            re.I,
+        ),
+    },
 ]
 
 SKIP_TYPE = re.compile(
@@ -124,6 +133,16 @@ def is_figure_like(p: dict, source: dict) -> bool:
         if re.search(r"\b(poster|pin|t-?shirt|mug|tiki)\b", blob, re.I):
             return False
         if not re.search(r"\b(1/?12|1/?6|figure|soft vinyl|vinyl figure)\b", blob, re.I):
+            return False
+    # shop.dc.com: AF only (skip merch/statues/funko/plush)
+    if source["id"] == "shop-dc":
+        if re.search(
+            r"\b(funko|barbie|plush|statue|resin|poster|apparel|t-?shirt|hoodie|mug|pin|jewelry|key.?chain|replica|popcorn|standee)\b",
+            blob,
+            re.I,
+        ):
+            return False
+        if not re.search(r"action figure", blob, re.I):
             return False
     req = source.get("requireHint")
     if req and not req.search(blob):

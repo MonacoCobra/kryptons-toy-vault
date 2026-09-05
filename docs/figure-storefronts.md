@@ -16,6 +16,7 @@ paginates **all** pages from these same shops (see `scripts/gen-figure-oneshot.p
 | Premium DNA | https://www.premiumdnatoys.com | 1:12 licensed figures |
 | Hiya Toys | https://www.hiyatoys.com | Exquisite Mini / Basic |
 | Mondo | https://www.mondoshop.com | 1/12 / 1/6 / Soft Vinyl figures |
+| Shop DC | https://shop.dc.com | McFarlane Multiverse AF (filter merch) |
 
 ## Out of scope
 
@@ -25,4 +26,5 @@ Pins, Barbie/dolls, poster/print merch, board games, drinkware, puzzles.
 
 Hasbro Pulse, BBTS, Entertainment Earth, NECA, Mezco official, McFarlane store,
 Hot Toys, Sideshow, Bandai Tamashii, threezero — covered via curated archive
-depth and/or weekly seed, not live JSON.
+depth and/or weekly seed, not live JSON. DC Direct / Kenner Super Powers /
+Mattel DCUC are curated in `scripts/figure_oneshot/curated_dc.py`.

@@ -6,6 +6,8 @@ floor 1980-01-01; no imageUrl (placeholders). Depth on real AF makers.
 from __future__ import annotations
 from typing import Any
 
+from figure_oneshot.curated_dc import build_dc_curated
+
 FLOOR = "1980-01-01"
 
 def F(rid, name, subtitle, line, company, release, msrp, scale, demand, tags):
@@ -590,6 +592,9 @@ def build_curated() -> list[dict]:
 ]
     for suf, name, sub, date, demand in ST:
         rows.append(F(f"sc-{suf}", name, sub, "Storm Collectibles", "storm", date, 89.99, "1/12", demand, "storm,curated"))
+
+    # DC depth pass (Mattel DCUC+, DC Direct, McFarlane densify, Super Powers)
+    rows += build_dc_curated()
 
     # dedupe by id
     seen=set(); out=[]

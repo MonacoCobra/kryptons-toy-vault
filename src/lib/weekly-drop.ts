@@ -25,6 +25,8 @@ const COMPANIES: CompanyId[] = [
   "hiya",
   "mondo",
   "threezero",
+  "dcdirect",
+  "kenner",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];

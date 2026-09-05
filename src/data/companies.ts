@@ -181,6 +181,24 @@ export const COMPANIES: Company[] = [
     hq: "Hong Kong",
     accent: "#212529",
   },
+  {
+    id: "dcdirect",
+    name: "DC Direct / DC Collectibles",
+    short: "DC Direct",
+    blurb: "DC's own articulated collector lines — Hush, New 52, Essentials, animated AF.",
+    founded: "1998",
+    hq: "Burbank, CA",
+    accent: "#0476f2",
+  },
+  {
+    id: "kenner",
+    name: "Kenner",
+    short: "Kenner",
+    blurb: "Super Powers and classic 1980s DC / Star Wars action figures.",
+    founded: "1947",
+    hq: "Cincinnati, OH",
+    accent: "#f0a500",
+  },
 ];
 
 export const COMPANY_BY_ID: Record<CompanyId, Company> = Object.fromEntries(
