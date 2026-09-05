@@ -125,3 +125,22 @@ were missing or thin — **not** a row per universe brand.
 
 Most of the ~1599 BBTS names still have **no** rows — by design (quality bar, AF-only).
 Regenerate with `python3 scripts/gen-figure-oneshot.py --curated-only`.
+
+## BBTS AF brand expansion wave 2 (2026-09-05)
+
+Second curated pass from the BBTS company universe — densify thin AF makers + add
+missing collector brands. Floor 1980; AF only; no AI art.
+
+| CompanyId | Notes |
+| --- | --- |
+| `fourhorsemen` | **NEW** — Mythic Legions + Cosmic Legions + Figura Obscura |
+| `spinmaster` | **NEW** — Bakugan AF (Battle Planet → Legacy) + early MotU Origins SM |
+| `bandai` | Robot Spirits / Gundam Universe / G Frame / MSiA **AF** (not Gunpla kits) |
+| densify | McFarlane DC/Spawn, NECA TMNT/Aliens/Horror, Storm, SHFiguarts |
+| densify | Hasbro Lightning Collection (PR), GI Joe Classified, Marvel Legends |
+| densify | ToyBiz classic ML, Loyal Subjects BST AXN, Boss Fight H.A.C.K.S. |
+| densify | figma, Valaverse Action Force, Hiya, Mondo articulated, JAKKS WWE/Nintendo/Sonic, Hot Toys sparse |
+
+Skipped (not AF / soft / statue-primary): Cosbaby, FREEing scales-only, Moose Goo Jit, Sideshow statues.
+
+Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.

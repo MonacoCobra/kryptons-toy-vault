@@ -59,7 +59,7 @@ export const COMPANIES: Company[] = [
     id: "bandai",
     name: "Bandai",
     short: "Bandai",
-    blurb: "Gunpla model kits from Entry Grade through Perfect Grade.",
+    blurb: "Gunpla kits plus Robot Spirits / Gundam Universe articulated AF.",
     founded: "1950",
     hq: "Tokyo, JP",
     accent: "#e60012",
@@ -289,6 +289,26 @@ export const COMPANIES: Company[] = [
     hq: "Everett, WA",
     accent: "#ff6b35",
   },
+
+  {
+    id: "fourhorsemen",
+    name: "Four Horsemen Studios",
+    short: "Four Horsemen",
+    blurb: "Mythic Legions, Cosmic Legions, and Figura Obscura articulated fantasy AF.",
+    founded: "2003",
+    hq: "USA",
+    accent: "#6b4226",
+  },
+  {
+    id: "spinmaster",
+    name: "Spin Master",
+    short: "Spin Master",
+    blurb: "Bakugan battle AF and Masters of the Universe Origins (early waves).",
+    founded: "1994",
+    hq: "Toronto, CA",
+    accent: "#00a3e0",
+  },
+
   {
     id: "valaverse",
     name: "Valaverse",

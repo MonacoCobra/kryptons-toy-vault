@@ -14,6 +14,7 @@ from figure_oneshot.curated_dcdirect import build_dcdirect
 from figure_oneshot.curated_mpg import build_mpg
 from figure_oneshot.curated_playmates import build_playmates
 from figure_oneshot.curated_bbts_wave import build_bbts_wave
+from figure_oneshot.curated_bbts_wave2 import build_bbts_wave2
 
 FLOOR = "1980-01-01"
 
@@ -1919,6 +1920,9 @@ def build_curated() -> list[dict]:
 
     # BBTS AF brand expansion wave
     rows += build_bbts_wave()
+
+    # BBTS AF brand expansion wave 2 (densify + Four Horsemen / Spin Master)
+    rows += build_bbts_wave2()
 
     # dedupe by id
     seen=set(); out=[]

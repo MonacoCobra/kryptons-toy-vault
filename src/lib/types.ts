@@ -31,7 +31,9 @@ export type CompanyId =
   | "joytoy"
   | "beastkingdom"
   | "enterbay"
-  | "funko";
+  | "funko"
+  | "fourhorsemen"
+  | "spinmaster";
 
 export type ItemKind = "figure" | "kit";
 

@@ -9,4 +9,4 @@ Batches (~180–250) are **optional legacy** only — not the growth cadence.
 Release floor **1980**. Brand universe: `company-universe.txt` (BBTS A–Z).
 Action figures only — no pins, dolls, statues, plush, or apparel.
 
-See `docs/figure-backlog.md` § BBTS AF brand expansion (2026-09-05) for filled vs universe brands.
+See `docs/figure-backlog.md` § BBTS AF brand expansion (+ wave 2) for filled vs universe brands.

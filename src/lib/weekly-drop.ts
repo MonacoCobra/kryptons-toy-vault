@@ -38,6 +38,8 @@ const COMPANIES: CompanyId[] = [
   "beastkingdom",
   "enterbay",
   "funko",
+  "fourhorsemen",
+  "spinmaster",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];
@@ -191,6 +193,9 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/enterbay/.test(s)) return "enterbay";
   if (/funko legacy|funko.*action/.test(s)) return "funko";
   if (/toy ?biz/.test(s)) return "toybiz";
+  if (/four horsemen|mythic legions|cosmic legions|figura obscura/.test(s)) return "fourhorsemen";
+  if (/spin master|bakugan/.test(s)) return "spinmaster";
+  if (/valaverse|action force/.test(s)) return "valaverse";
   return null;
 }
 
