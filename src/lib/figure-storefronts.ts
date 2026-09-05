@@ -16,12 +16,23 @@ export type StorefrontSource = {
   company: CompanyId;
   /** Optional collection path; default /products.json */
   productsPath?: string;
+  /** Extra title/tag filter for noisy catalogs (e.g. Mattel dolls). */
+  requireHint?: RegExp;
 };
 
 /** Shops verified to return Shopify `{ products: [...] }` JSON. */
 export const FIGURE_STOREFRONTS: StorefrontSource[] = [
   { id: "super7", baseUrl: "https://super7.com", company: "super7" },
   { id: "goodsmile-us", baseUrl: "https://goodsmileus.com", company: "figma" },
+  { id: "bossfight", baseUrl: "https://bossfightstudio.com", company: "bossfight" },
+  { id: "loyalsubjects", baseUrl: "https://theloyalsubjects.com", company: "loyalsubjects" },
+  {
+    id: "mattel-creations",
+    baseUrl: "https://creations.mattel.com",
+    company: "mattel",
+    requireHint:
+      /masterverse|masters of the universe|wwe|elite|hot wheels|jurassic|monster high|dc universe|hammond|action figure|figure /i,
+  },
 ];
 
 type ShopifyImage = { src?: string };
@@ -44,9 +55,9 @@ type ShopifyProduct = {
 const UA = "KryptonsToyVault/1.0 (personal collection; weekly figure ingest)";
 
 const SKIP_TYPE =
-  /\b(apparel|shirt|hoodie|hat|cap|sock|sticker|pin|poster|print|mug|bag|wallet|blanket|keychain|lanyard|gift.?card|digital)\b/i;
+  /\b(apparel|shirt|hoodie|hat|cap|sock|sticker|figpin|enamel|poster|print|mug|bag|wallet|blanket|keychain|lanyard|gift.?card|digital|barbie|doll)\b/i;
 const FIGURE_HINT =
-  /\b(figure|figurine|statue|mafex|figuarts|figma|mezco|legends|classified|black series|model kit|gunpla|plamo|soft.?vinyl|sofubi|reactors|ultimates|reAction)\b/i;
+  /\b(figure|figurine|statue|mafex|figuarts|figma|mezco|legends|classified|black series|model kit|gunpla|plamo|soft.?vinyl|sofubi|reactors|ultimates|reaction|h\.?a\.?c\.?k\.?s|bst axn|masterverse)\b/i;
 
 function tagList(tags: ShopifyProduct["tags"]): string[] {
   if (Array.isArray(tags)) return tags.map((t) => String(t));
@@ -58,15 +69,20 @@ function tagList(tags: ShopifyProduct["tags"]): string[] {
   return [];
 }
 
-function isFigureLike(p: ShopifyProduct): boolean {
+function isFigureLike(p: ShopifyProduct, source: StorefrontSource): boolean {
   const type = p.product_type ?? "";
   const title = p.title ?? "";
   const tags = tagList(p.tags).join(" ");
   const blob = `${type} ${title} ${tags}`;
   if (SKIP_TYPE.test(type) || SKIP_TYPE.test(title)) return false;
+  if (source.requireHint && !source.requireHint.test(blob)) return false;
   if (FIGURE_HINT.test(blob) || FIGURE_HINT.test(type)) return true;
-  // Super7 / Good Smile catalogs are mostly figures; allow generic "Figures" types
+  // Collector shops are mostly figures; allow generic "Figures" types
   if (/figures?/i.test(type) || /statue/i.test(type) || /model/i.test(type)) return true;
+  // Boss Fight / TLS / Super7: if not skipped, keep
+  if (source.company === "bossfight" || source.company === "loyalsubjects" || source.company === "super7") {
+    return true;
+  }
   return false;
 }
 
@@ -135,7 +151,7 @@ function mapProduct(
   week: string,
   fallbackDate: string,
 ): CatalogFigure | null {
-  if (!p.title || !isFigureLike(p)) return null;
+  if (!p.title || !isFigureLike(p, source)) return null;
   const { name, subtitle } = splitTitle(p.title);
   if (!name) return null;
   const kind = kindFor(p);

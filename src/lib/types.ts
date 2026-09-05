@@ -12,7 +12,9 @@ export type CompanyId =
   | "hottoys"
   | "figma"
   | "kotobukiya"
-  | "storm";
+  | "storm"
+  | "bossfight"
+  | "loyalsubjects";
 
 export type ItemKind = "figure" | "kit";
 

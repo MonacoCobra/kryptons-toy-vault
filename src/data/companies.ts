@@ -127,6 +127,24 @@ export const COMPANIES: Company[] = [
     hq: "Hong Kong",
     accent: "#b4202a",
   },
+  {
+    id: "bossfight",
+    name: "Boss Fight Studio",
+    short: "Boss Fight",
+    blurb: "Epic H.A.C.K.S. and Vitruvian H.A.C.K.S. modular 1:12 figures.",
+    founded: "2014",
+    hq: "USA",
+    accent: "#c45c26",
+  },
+  {
+    id: "loyalsubjects",
+    name: "The Loyal Subjects",
+    short: "TLS",
+    blurb: "BST AXN action figures and stylized collector lines.",
+    founded: "2010",
+    hq: "USA",
+    accent: "#2a6f97",
+  },
 ];
 
 export const COMPANY_BY_ID: Record<CompanyId, Company> = Object.fromEntries(

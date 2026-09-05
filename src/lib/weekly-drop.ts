@@ -19,6 +19,8 @@ const COMPANIES: CompanyId[] = [
   "figma",
   "kotobukiya",
   "storm",
+  "bossfight",
+  "loyalsubjects",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];
@@ -154,6 +156,8 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/\bfigma\b/.test(s)) return "figma";
   if (/kotobukiya|bishoujo|artfx/.test(s)) return "kotobukiya";
   if (/storm collect/.test(s)) return "storm";
+  if (/boss fight|h\.?a\.?c\.?k\.?s/.test(s)) return "bossfight";
+  if (/loyal subjects|bst axn/.test(s)) return "loyalsubjects";
   if (/masterverse|origins|mattel|wwe elite/.test(s)) return "mattel";
   if (/toy ?biz/.test(s)) return "toybiz";
   return null;
