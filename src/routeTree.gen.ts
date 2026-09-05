@@ -11,9 +11,9 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CollectionRouteImport } from './routes/collection'
+import { Route as PulseRouteImport } from './routes/pulse'
 import { Route as ScanRouteImport } from './routes/scan'
 import { Route as WishlistRouteImport } from './routes/wishlist'
-import { Route as PulseRouteImport } from './routes/pulse'
 import { Route as ComicsIndexRouteImport } from './routes/comics/index'
 import { Route as ComicsComicIdRouteImport } from './routes/comics/$comicId'
 import { Route as FiguresIndexRouteImport } from './routes/figures/index'
@@ -29,6 +29,11 @@ const CollectionRoute = CollectionRouteImport.update({
   path: '/collection',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PulseRoute = PulseRouteImport.update({
+  id: '/pulse',
+  path: '/pulse',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ScanRoute = ScanRouteImport.update({
   id: '/scan',
   path: '/scan',
@@ -37,11 +42,6 @@ const ScanRoute = ScanRouteImport.update({
 const WishlistRoute = WishlistRouteImport.update({
   id: '/wishlist',
   path: '/wishlist',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PulseRoute = PulseRouteImport.update({
-  id: '/pulse',
-  path: '/pulse',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ComicsIndexRoute = ComicsIndexRouteImport.update({
@@ -68,9 +68,9 @@ const FiguresFigureIdRoute = FiguresFigureIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/collection': typeof CollectionRoute
+  '/pulse': typeof PulseRoute
   '/scan': typeof ScanRoute
   '/wishlist': typeof WishlistRoute
-  '/pulse': typeof PulseRoute
   '/comics/$comicId': typeof ComicsComicIdRoute
   '/figures/$figureId': typeof FiguresFigureIdRoute
   '/comics/': typeof ComicsIndexRoute
@@ -79,9 +79,9 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/collection': typeof CollectionRoute
+  '/pulse': typeof PulseRoute
   '/scan': typeof ScanRoute
   '/wishlist': typeof WishlistRoute
-  '/pulse': typeof PulseRoute
   '/comics/$comicId': typeof ComicsComicIdRoute
   '/figures/$figureId': typeof FiguresFigureIdRoute
   '/comics': typeof ComicsIndexRoute
@@ -91,9 +91,9 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/collection': typeof CollectionRoute
+  '/pulse': typeof PulseRoute
   '/scan': typeof ScanRoute
   '/wishlist': typeof WishlistRoute
-  '/pulse': typeof PulseRoute
   '/comics/$comicId': typeof ComicsComicIdRoute
   '/figures/$figureId': typeof FiguresFigureIdRoute
   '/comics/': typeof ComicsIndexRoute
@@ -104,9 +104,9 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/collection'
+    | '/pulse'
     | '/scan'
     | '/wishlist'
-    | '/pulse'
     | '/comics/$comicId'
     | '/figures/$figureId'
     | '/comics/'
@@ -115,9 +115,9 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/collection'
+    | '/pulse'
     | '/scan'
     | '/wishlist'
-    | '/pulse'
     | '/comics/$comicId'
     | '/figures/$figureId'
     | '/comics'
@@ -126,9 +126,9 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/collection'
+    | '/pulse'
     | '/scan'
     | '/wishlist'
-    | '/pulse'
     | '/comics/$comicId'
     | '/figures/$figureId'
     | '/comics/'
@@ -138,9 +138,9 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CollectionRoute: typeof CollectionRoute
+  PulseRoute: typeof PulseRoute
   ScanRoute: typeof ScanRoute
   WishlistRoute: typeof WishlistRoute
-  PulseRoute: typeof PulseRoute
   ComicsComicIdRoute: typeof ComicsComicIdRoute
   FiguresFigureIdRoute: typeof FiguresFigureIdRoute
   ComicsIndexRoute: typeof ComicsIndexRoute
@@ -163,6 +163,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CollectionRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/pulse': {
+      id: '/pulse'
+      path: '/pulse'
+      fullPath: '/pulse'
+      preLoaderRoute: typeof PulseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/scan': {
       id: '/scan'
       path: '/scan'
@@ -175,13 +182,6 @@ declare module '@tanstack/react-router' {
       path: '/wishlist'
       fullPath: '/wishlist'
       preLoaderRoute: typeof WishlistRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pulse': {
-      id: '/pulse'
-      path: '/pulse'
-      fullPath: '/pulse'
-      preLoaderRoute: typeof PulseRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/comics/': {
@@ -218,9 +218,9 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CollectionRoute: CollectionRoute,
+  PulseRoute: PulseRoute,
   ScanRoute: ScanRoute,
   WishlistRoute: WishlistRoute,
-  PulseRoute: PulseRoute,
   ComicsComicIdRoute: ComicsComicIdRoute,
   FiguresFigureIdRoute: FiguresFigureIdRoute,
   ComicsIndexRoute: ComicsIndexRoute,

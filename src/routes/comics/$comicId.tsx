@@ -1,14 +1,14 @@
 import { useMemo, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Heart, Trash2 } from "lucide-react";
-import { COMIC_BY_ID, comicLabel } from "@/data/comics";
+import { comicById, comicLabel } from "@/data/comics";
 import { AddComicDialog } from "@/components/add-comic-dialog";
 import { ComicCover } from "@/components/comic-cover";
 import { MarketEstimate } from "@/components/market-estimate";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { formatMonthYear, usd } from "@/lib/format";
-import { useLiveComics, useLiveDrop } from "@/lib/live-store";
+import { useComicLib, useEnsureComicLibrary, useLiveComics, useLiveDrop } from "@/lib/live-store";
 import { comicHistory, comicMarket } from "@/lib/market";
 import { GRADES, useVault } from "@/lib/store";
 
@@ -19,11 +19,13 @@ export const Route = createFileRoute("/comics/$comicId")({
 function ComicDetail() {
   const { comicId } = Route.useParams();
   const extras = useLiveComics();
+  const library = useEnsureComicLibrary(extras);
   const loading = useLiveDrop((s) => s.loading);
-  const comic = COMIC_BY_ID[comicId] ?? extras.find((c) => c.id === comicId);
+  const libLoading = useComicLib((s) => s.loading);
+  const comic = comicById(comicId, extras, library?.archive ?? []);
   if (!comic) {
-    if (comicId.startsWith("live-") && loading) {
-      return <p className="py-16 text-center text-sm text-muted">Loading this week's drop…</p>;
+    if ((comicId.startsWith("live-") && loading) || libLoading) {
+      return <p className="py-16 text-center text-sm text-muted">Loading catalog…</p>;
     }
     throw notFound();
   }

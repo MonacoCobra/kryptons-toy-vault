@@ -1,7 +1,7 @@
 import { useMemo, useState, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Camera, Plus, Search } from "lucide-react";
-import { comicLabel, mergeComics, recentComics, searchComics } from "@/data/comics";
+import { comicLabel, mergeComics, searchComics } from "@/data/comics";
 import { AddComicDialog } from "@/components/add-comic-dialog";
 import { ComicCover } from "@/components/comic-cover";
 import { Badge } from "@/components/ui/badge";
@@ -16,8 +16,9 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { splitComicsClient } from "@/lib/comic-catalog";
 import { usd } from "@/lib/format";
-import { useLiveComics } from "@/lib/live-store";
+import { useEnsureComicLibrary, useLiveComics } from "@/lib/live-store";
 import { comicEstimate } from "@/lib/market";
 import { useVault } from "@/lib/store";
 import type { CatalogComic, ComicFormat, CustomComic } from "@/lib/types";
@@ -44,6 +45,7 @@ function ComicsPage() {
   const owned = useVault((s) => s.ownedComics);
   const wanted = useVault((s) => s.wantedComics);
   const extras = useLiveComics();
+  const library = useEnsureComicLibrary(extras);
   const [adding, setAdding] = useState<CatalogComic | null>(null);
   const [customOpen, setCustomOpen] = useState(false);
 
@@ -52,18 +54,48 @@ function ComicsPage() {
     [owned],
   );
 
-  const catalog = useMemo(() => mergeComics(extras), [extras]);
+  const split = useMemo(() => {
+    if (library) {
+      return { noteworthy: library.noteworthy, archive: library.archive };
+    }
+    return splitComicsClient(extras);
+  }, [library, extras]);
+
+  const catalog = useMemo(
+    () => mergeComics(extras, library?.archive ?? []),
+    [extras, library],
+  );
   const publishers = useMemo(
     () => [...new Set(catalog.map((c) => c.publisher))].sort(),
     [catalog],
   );
 
+  const filtering = Boolean(search.q || search.publisher || search.keys);
+
   const filtered = useMemo(() => {
-    let list = search.q ? searchComics(search.q, extras) : catalog;
+    let list = search.q
+      ? searchComics(search.q, extras, library?.archive ?? [])
+      : catalog;
     if (search.publisher) list = list.filter((c) => c.publisher === search.publisher);
     if (search.keys) list = list.filter((c) => c.key);
     return list;
-  }, [search, extras, catalog]);
+  }, [search, extras, catalog, library]);
+
+  const filteredNoteworthy = useMemo(() => {
+    if (filtering) return [];
+    let list = split.noteworthy;
+    if (search.publisher) list = list.filter((c) => c.publisher === search.publisher);
+    if (search.keys) list = list.filter((c) => c.key);
+    return list;
+  }, [filtering, split.noteworthy, search.publisher, search.keys]);
+
+  const filteredArchive = useMemo(() => {
+    if (filtering) return filtered;
+    let list = split.archive;
+    if (search.publisher) list = list.filter((c) => c.publisher === search.publisher);
+    if (search.keys) list = list.filter((c) => c.key);
+    return list;
+  }, [filtering, filtered, split.archive, search.publisher, search.keys]);
 
   return (
     <main className="flex flex-col gap-6">
@@ -72,8 +104,8 @@ function ComicsPage() {
           <p className="text-xs tracking-[0.28em] text-gold uppercase">Issue records</p>
           <h1 className="mt-1 font-display text-3xl tracking-wide uppercase">Comic catalog</h1>
           <p className="mt-2 max-w-2xl text-sm text-muted">
-            Search by series and issue, scan a cover, or log a book the catalog missed. This week's
-            street list is pulled automatically.
+            New releases stay in New &amp; Noteworthy for a few weeks, then graduate into the
+            permanent archive. Search or scan anything the lists miss.
           </p>
         </div>
         <div className="flex gap-2">
@@ -124,72 +156,121 @@ function ComicsPage() {
         </FilterChip>
       </div>
 
-      {!search.q && !search.publisher && !search.keys ? (
-        <section>
-          <h2 className="mb-3 font-display text-lg tracking-wide uppercase">New on the pull</h2>
-          <ul className="hide-scrollbar -mx-4 flex gap-3 overflow-x-auto px-4 md:mx-0 md:grid md:grid-cols-5 md:overflow-visible md:px-0">
-            {recentComics(5, extras).map((comic) => (
-              <li key={comic.id} className="w-36 shrink-0 md:w-auto">
-                <Link
-                  to="/comics/$comicId"
-                  params={{ comicId: comic.id }}
-                  className="block overflow-hidden rounded-lg bg-bg-elevated shadow-[var(--shadow-border)]"
-                >
-                  <ComicCover comic={comic} className="aspect-2/3" />
-                  <p className="line-clamp-2 p-2 text-xs font-medium">{comicLabel(comic)}</p>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
+      {filtering ? (
+        <ComicGrid
+          comics={filtered}
+          ownedIds={ownedIds}
+          wanted={wanted}
+          onAdd={setAdding}
+          emptyAction={() => setCustomOpen(true)}
+        />
+      ) : (
+        <>
+          <section className="flex flex-col gap-3">
+            <div>
+              <h2 className="font-display text-lg tracking-wide uppercase">New &amp; noteworthy</h2>
+              <p className="mt-1 text-xs text-muted">
+                This week&apos;s street list and the last couple of weeks. Titles graduate to the
+                archive after about three weeks.
+              </p>
+            </div>
+            {filteredNoteworthy.length ? (
+              <ComicGrid
+                comics={filteredNoteworthy}
+                ownedIds={ownedIds}
+                wanted={wanted}
+                onAdd={setAdding}
+              />
+            ) : (
+              <p className="rounded-lg bg-bg-elevated px-4 py-6 text-sm text-muted shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
+                No fresh releases in the window yet — check back after Wednesday&apos;s street day.
+              </p>
+            )}
+          </section>
 
-      <ul className="grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-5">
-        {filtered.map((comic) => {
-          const have = ownedIds.has(comic.id);
-          const want = Boolean(wanted[comic.id]);
-          const est = comicEstimate(comic);
-          return (
-            <li
-              key={comic.id}
-              className="overflow-hidden rounded-lg bg-bg-elevated shadow-[0_0_0_1px_rgba(214,230,255,0.08)]"
-            >
-              <Link to="/comics/$comicId" params={{ comicId: comic.id }} className="block">
-                <ComicCover comic={comic} className="aspect-2/3" />
-              </Link>
-              <div className="grid gap-1.5 p-3">
-                <p className="line-clamp-2 text-sm font-medium">{comicLabel(comic)}</p>
-                <p className="text-xs text-muted">{comic.publisher}</p>
-                <div className="flex flex-wrap gap-1">
-                  {have ? <Badge tone="gain">Owned</Badge> : null}
-                  {want && !have ? <Badge tone="gold">Wanted</Badge> : null}
-                  {comic.key ? <Badge tone="red">Key</Badge> : null}
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="tabular text-sm text-gold">{usd(est)}</span>
-                  <Button size="sm" variant="ghost" onClick={() => setAdding(comic)}>
-                    {have ? "Edit" : "Add"}
-                  </Button>
-                </div>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
-
-      {filtered.length === 0 ? (
-        <div className="rounded-xl bg-bg-elevated p-8 text-center shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
-          <p className="font-display text-xl tracking-wide uppercase">No matches</p>
-          <p className="mt-2 text-sm text-muted">Add it as a custom issue.</p>
-          <Button className="mt-4" onClick={() => setCustomOpen(true)}>
-            Add custom issue
-          </Button>
-        </div>
-      ) : null}
+          <section className="flex flex-col gap-3">
+            <div>
+              <h2 className="font-display text-lg tracking-wide uppercase">Permanent archive</h2>
+              <p className="mt-1 text-xs text-muted">
+                Keys, landmark runs, and older titles that stick around for the long haul.
+              </p>
+            </div>
+            <ComicGrid
+              comics={filteredArchive}
+              ownedIds={ownedIds}
+              wanted={wanted}
+              onAdd={setAdding}
+              emptyAction={() => setCustomOpen(true)}
+            />
+          </section>
+        </>
+      )}
 
       {adding ? <AddComicDialog comic={adding} open onOpenChange={(v) => !v && setAdding(null)} /> : null}
       <CustomComicDialog open={customOpen} onOpenChange={setCustomOpen} />
     </main>
+  );
+}
+
+function ComicGrid({
+  comics,
+  ownedIds,
+  wanted,
+  onAdd,
+  emptyAction,
+}: {
+  comics: CatalogComic[];
+  ownedIds: Set<string | undefined>;
+  wanted: Record<string, unknown>;
+  onAdd: (c: CatalogComic) => void;
+  emptyAction?: () => void;
+}) {
+  if (!comics.length) {
+    if (!emptyAction) return null;
+    return (
+      <div className="rounded-xl bg-bg-elevated p-8 text-center shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
+        <p className="font-display text-xl tracking-wide uppercase">No matches</p>
+        <p className="mt-2 text-sm text-muted">Add it as a custom issue.</p>
+        <Button className="mt-4" onClick={emptyAction}>
+          Add custom issue
+        </Button>
+      </div>
+    );
+  }
+
+  return (
+    <ul className="grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-5">
+      {comics.map((comic) => {
+        const have = ownedIds.has(comic.id);
+        const want = Boolean(wanted[comic.id]);
+        const est = comicEstimate(comic);
+        return (
+          <li
+            key={comic.id}
+            className="overflow-hidden rounded-lg bg-bg-elevated shadow-[0_0_0_1px_rgba(214,230,255,0.08)]"
+          >
+            <Link to="/comics/$comicId" params={{ comicId: comic.id }} className="block">
+              <ComicCover comic={comic} className="aspect-2/3" />
+            </Link>
+            <div className="grid gap-1.5 p-3">
+              <p className="line-clamp-2 text-sm font-medium">{comicLabel(comic)}</p>
+              <p className="text-xs text-muted">{comic.publisher}</p>
+              <div className="flex flex-wrap gap-1">
+                {have ? <Badge tone="gain">Owned</Badge> : null}
+                {want && !have ? <Badge tone="gold">Wanted</Badge> : null}
+                {comic.key ? <Badge tone="red">Key</Badge> : null}
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="tabular text-sm text-gold">{usd(est)}</span>
+                <Button size="sm" variant="ghost" onClick={() => onAdd(comic)}>
+                  {have ? "Edit" : "Add"}
+                </Button>
+              </div>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
   );
 }
 

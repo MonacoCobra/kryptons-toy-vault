@@ -1,12 +1,19 @@
 import { createContext, createElement, useContext, useEffect, useLayoutEffect, type ReactNode } from "react";
 import { create } from "zustand";
 import type { CatalogComic, CatalogFigure, WeeklyDrop } from "@/lib/types";
+import { getComicLibrary, type ComicLibrary } from "@/lib/comic-catalog";
 import { getWeeklyDrop } from "@/lib/weekly-drop";
 
 type LiveState = {
   drop: WeeklyDrop | null;
   loading: boolean;
   ensure: (force?: boolean) => Promise<void>;
+};
+
+type ComicLibState = {
+  library: ComicLibrary | null;
+  loading: boolean;
+  ensure: (extras?: CatalogComic[], force?: boolean) => Promise<void>;
 };
 
 const EMPTY_COMICS: CatalogComic[] = [];
@@ -26,6 +33,22 @@ export const useLiveDrop = create<LiveState>((set, get) => ({
     try {
       const drop = await getWeeklyDrop({ data: { force } });
       set({ drop, loading: false });
+    } catch {
+      set({ loading: false });
+    }
+  },
+}));
+
+export const useComicLib = create<ComicLibState>((set, get) => ({
+  library: null,
+  loading: false,
+  ensure: async (extras = [], force = false) => {
+    if (!force && get().library) return;
+    if (get().loading) return;
+    set({ loading: true });
+    try {
+      const library = await getComicLibrary({ data: { extras } });
+      set({ library, loading: false });
     } catch {
       set({ loading: false });
     }
@@ -69,4 +92,24 @@ export function useLiveComics(): CatalogComic[] {
 
 export function useLiveFigures(): CatalogFigure[] {
   return useResolvedDrop()?.figures ?? EMPTY_FIGURES;
+}
+
+/** Promoted-only titles (not in the static COMICS seed) for detail/search merge. */
+export function usePromotedComics(): CatalogComic[] {
+  const library = useComicLib((s) => s.library);
+  if (!library) return EMPTY_COMICS;
+  // Archive includes static + promoted; callers that need "extra permanent" use archive ids not in COMIC_BY_ID.
+  // For merge we pass archive so comicById can resolve promoted ids after static miss.
+  return library.archive;
+}
+
+export function useEnsureComicLibrary(extras: CatalogComic[]) {
+  const ensure = useComicLib((s) => s.ensure);
+  const library = useComicLib((s) => s.library);
+  const extrasKey = extras.map((c) => c.id).join(",");
+  useEffect(() => {
+    void ensure(extras, false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- extrasKey captures content
+  }, [ensure, extrasKey]);
+  return library;
 }
