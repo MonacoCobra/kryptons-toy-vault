@@ -89,3 +89,7 @@ McFarlane Multiverse densify, and Kenner Super Powers (≥1980) live in
 ## Hasbro / Super7 / DC Direct / Hot Toys densify (2026-09-05)
 
 Curated expansions: more Marvel Legends, Black Series, Classified; Super7 ULTIMATES!/ReAction beyond Shopify; additional DC Direct/Collectibles waves; sparse Hot Toys (~50). Re-merged via `gen-figure-oneshot.py`.
+
+## MotU / WWE / Mezco densify (2026-09-05)
+
+Curated Mattel Masterverse + Origins lines (distinct from Shopify "Masters of the Universe" catch-all), WWE Elite Collection densify, and additional Mezco One:12 listable AF. Jakks/Primal Age/Sonic skipped — no `CompanyId` for Jakks; avoid non-AF bloat.
