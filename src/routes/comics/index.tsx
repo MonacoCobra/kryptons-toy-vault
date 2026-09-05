@@ -250,7 +250,7 @@ function ComicGrid({
             className="overflow-hidden rounded-lg bg-bg-elevated shadow-[0_0_0_1px_rgba(214,230,255,0.08)]"
           >
             <Link to="/comics/$comicId" params={{ comicId: comic.id }} className="block">
-              <ComicCover comic={comic} resolveRemote={Boolean(comic.key)} className="aspect-2/3" />
+              <ComicCover comic={comic} resolveRemote className="aspect-2/3" />
             </Link>
             <div className="grid gap-1.5 p-3">
               <p className="line-clamp-2 text-sm font-medium">{comicLabel(comic)}</p>
