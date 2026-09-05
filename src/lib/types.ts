@@ -74,7 +74,19 @@ export type CompanyId =
   | "toynami"
   | "creativebeast"
   | "alertline"
-  | "snailshell";
+  | "snailshell"
+  | "asmus"
+  | "herocross"
+  | "fanshobby"
+  | "fansproject"
+  | "transart"
+  | "bingotoys"
+  | "heatboys"
+  | "ccstoys"
+  | "tbleague"
+  | "coomodel"
+  | "did"
+  | "moshow";
 
 export type ItemKind = "figure" | "kit";
 

@@ -278,3 +278,36 @@ kept under existing `figma` densify (Max Factory / GSC figma AF) — no separate
 
 Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
 
+## BBTS AF brand expansion wave 8 (2026-09-05)
+
+Eighth curated pass from the BBTS company universe — densify thin AF makers + add
+missing collector brands. Floor 1980; AF only; no AI art. **ToyWorld** and
+**Unique Toys** are not listed in the BBTS A–Z universe dump (skipped). Statue /
+garage-kit / Perfect Effect / DNA Design upgrade-kit brands skipped. Brick lines
+(Pantasy / Keeppley) skipped.
+
+| CompanyId | Notes |
+| --- | --- |
+| `asmus` | **NEW** — Asmus Toys LOTR / Hobbit / Witcher 1/6 |
+| `herocross` | **NEW** — HeroCross Hybrid Metal Figuration |
+| `fanshobby` | **NEW** — Fans Hobby Master Builder |
+| `fansproject` | **NEW** — FansProject Causality / Function X / Seacon |
+| `transart` | **NEW** — TransArt Beast Wars Metal + combiners |
+| `bingotoys` | **NEW** — BingoToys BT-series |
+| `heatboys` | **NEW** — Heatboys metal-style TF / mecha |
+| `ccstoys` | **NEW** — CCS Toys Mortal Kombat 1/6 + 1/12 |
+| `tbleague` | **NEW** — TBLeague / Phicen seamless 1/6 |
+| `coomodel` | **NEW** — COO Model Empire / Nose Art / Paladin |
+| `did` | **NEW** — DiD 1/6 military |
+| `moshow` | **NEW** — MoShow Metal Build-style + Progenitor Effect |
+| densify | JoyToy 40K / Dark Source, Sentinel Fighting Armor / Riobot |
+| densify | 1000Toys Tough Guys / Synthetic Human, Spin Master Bakugan |
+| densify | Fresh Monkey Fiction / Fresh Retro |
+| densify | MAFEX, Mezco One:12, Storm Collectibles |
+| densify | Hiya Godzilla / Exquisite Mini, Mondo 1/6 MotU+TMNT |
+| densify | SHFiguarts, Kaiyodo Amazing Yamaguchi / Revoltech |
+| densify | Hasbro ML / Black Series / Classified / Studio Series 86 |
+| densify | McFarlane DC Multiverse / Spawn |
+
+Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
+

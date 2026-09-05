@@ -81,6 +81,18 @@ const COMPANIES: CompanyId[] = [
   "creativebeast",
   "alertline",
   "snailshell",
+  "asmus",
+  "herocross",
+  "fanshobby",
+  "fansproject",
+  "transart",
+  "bingotoys",
+  "heatboys",
+  "ccstoys",
+  "tbleague",
+  "coomodel",
+  "did",
+  "moshow",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];
@@ -277,6 +289,18 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/creative beast|beasts of the mesozoic/.test(s)) return "creativebeast";
   if (/alert line|alertline/.test(s)) return "alertline";
   if (/snail shell|snailshell/.test(s)) return "snailshell";
+  if (/asmus toys|\basmus\b|lord of the rings.*asmus/.test(s)) return "asmus";
+  if (/herocross|hybrid metal figuration/.test(s)) return "herocross";
+  if (/fans hobby|fanshobby/.test(s)) return "fanshobby";
+  if (/fansproject|fans project/.test(s)) return "fansproject";
+  if (/transart|trans art|beast wars metal/.test(s)) return "transart";
+  if (/bingotoys|bingo toys/.test(s)) return "bingotoys";
+  if (/heatboys|heat boys/.test(s)) return "heatboys";
+  if (/ccs toys|ccstoys/.test(s)) return "ccstoys";
+  if (/tbleague|tb league|phicen/.test(s)) return "tbleague";
+  if (/coo model|coomodel/.test(s)) return "coomodel";
+  if (/\bdid\b|dragon in dream/.test(s)) return "did";
+  if (/moshow|mo show|progenitor effect/.test(s)) return "moshow";
   if (/valaverse|action force/.test(s)) return "valaverse";
   return null;
 }
