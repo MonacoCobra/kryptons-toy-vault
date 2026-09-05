@@ -7,3 +7,4 @@ dist/
 *.log
 .vercel/output/
 .node_modules.lock
+.env.local

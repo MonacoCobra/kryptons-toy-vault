@@ -23,9 +23,16 @@ export type ComicCoverResult = {
   error?: string;
 };
 
-function apiKey(): string | undefined {
+async function apiKey(): Promise<string | undefined> {
   const raw = typeof process !== "undefined" ? process.env.COMICVINE_API_KEY : undefined;
-  return raw?.trim() || undefined;
+  if (raw?.trim()) return raw.trim();
+  try {
+    const { readFile } = await import("node:fs/promises");
+    const fromFile = (await readFile("/home/box/.config/krypton/comicvine-api-key", "utf8")).trim();
+    return fromFile || undefined;
+  } catch {
+    return undefined;
+  }
 }
 
 type CoverRow = {
@@ -110,7 +117,7 @@ type VineIssue = {
 };
 
 async function searchComicVine(series: string, issue: string): Promise<VineIssue | null> {
-  const key = apiKey();
+  const key = await apiKey();
   if (!key) return null;
   const num = issueNumber(issue);
   const q = num ? `${series} ${num}` : series;
@@ -133,16 +140,23 @@ async function searchComicVine(series: string, issue: string): Promise<VineIssue
   if (!results.length) return null;
 
   const want = num.toLowerCase();
-  const seriesLower = series.toLowerCase();
-  const exact = results.find((r) => {
-    const vol = (r.volume?.name ?? "").toLowerCase();
-    const iss = String(r.issue_number ?? "").toLowerCase();
-    return iss === want && (vol.includes(seriesLower.split("(")[0]!.trim()) || seriesLower.includes(vol.slice(0, 12)));
-  });
-  if (exact?.image) return exact;
-
-  const byIssue = results.find((r) => String(r.issue_number ?? "").toLowerCase() === want && r.image);
-  return byIssue ?? results.find((r) => r.image) ?? null;
+  const seriesCore = series.toLowerCase().split("(")[0]!.trim();
+  const scored = results
+    .map((r) => {
+      const vol = (r.volume?.name ?? "").toLowerCase();
+      const iss = String(r.issue_number ?? "").toLowerCase();
+      let score = 0;
+      if (iss === want) score += 5;
+      if (vol === seriesCore) score += 6;
+      else if (vol.includes(seriesCore) || seriesCore.includes(vol)) score += 3;
+      if (r.image?.medium_url || r.image?.super_url) score += 1;
+      // Prefer clean volume titles over "DC W.I.P." style stubs
+      if (vol.includes("w.i.p") || vol.includes("wip")) score -= 4;
+      return { r, score };
+    })
+    .sort((a, b) => b.score - a.score);
+  const best = scored[0];
+  return best && best.score >= 5 && best.r.image ? best.r : null;
 }
 
 function pickUrl(issue: VineIssue): { cover?: string; thumb?: string } {
@@ -168,7 +182,7 @@ export const getComicCover = createServerFn({ method: "POST" })
       }
     }
 
-    if (!apiKey()) {
+    if (!(await apiKey())) {
       return { status: "no_key", error: "Set COMICVINE_API_KEY for real cover lookup." };
     }
 
