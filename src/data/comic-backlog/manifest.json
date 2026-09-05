@@ -1,17 +1,20 @@
 {
-  "strategy": "inject-one-batch-every-~3-weeks-with-noteworthy-promotion",
+  "strategy": "mass-inject-allowed; legacy cadence was ~3 weeks with noteworthy promotion",
   "targetBatchSize": [
     400,
     500
   ],
   "lastInjectedAt": "2026-09-05",
-  "lastInjectedBatch": "batch-005",
+  "lastInjectedBatch": "batch-006",
   "queued": [],
   "injected": [
     "batch-001",
     "batch-002",
     "batch-003",
     "batch-004",
-    "batch-005"
-  ]
+    "batch-005",
+    "batch-006"
+  ],
+  "floor": "1980-01-01",
+  "notes": "batch-006 is a one-pass DC mass fill (thousands of rows) per Shelby request; smaller batches remain valid."
 }
