@@ -11,3 +11,5 @@ See also `docs/figure-backlog.md`.
 `rows` match `figures.ts` Row tuples (optional 12th object: `{ sku?, exclusive? }`).
 Statuses: `queued` → `injected` → never re-inject.
 Action figures only — no pins, dolls, statues, plush, or apparel.
+
+Release floor **1980**. Brand universe: `company-universe.txt` (BBTS A–Z).

@@ -9,6 +9,13 @@ Weekly Shopify New & Noteworthy ingest (`figure-storefronts.ts` →
 that search, market, pulse, and vault math already read via `FIGURES` /
 `mergeFigures`.
 
+
+## Scope
+
+- **Release floor:** 1980-01-01 (modern → 1980; nothing older).
+- **Brand universe:** `src/data/figure-backlog/company-universe.txt` — full [BigBadToyStore](https://www.bigbadtoystore.com) A–Z brand list (~1600 names). Filter to articulated **action-figure** makers when compiling batches (skip board games, comics pubs, music labels, apparel, etc.).
+- **Images:** no generative AI art; CSS/palette placeholders OK.
+
 ## Layout
 
 | Path | Role |

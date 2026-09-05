@@ -7,6 +7,8 @@ import re
 from collections import Counter
 from pathlib import Path
 
+FLOOR = "1980-01-01"  # nothing older than this release date
+
 ROOT = Path("/workspace/collection-app")
 FIGURES_TS = ROOT / "src/data/figures.ts"
 BACKLOG = ROOT / "src/data/figure-backlog"
