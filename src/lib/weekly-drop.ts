@@ -59,6 +59,16 @@ const COMPANIES: CompanyId[] = [
   "magicsquare",
   "cangtoys",
   "medicom",
+  "drwu",
+  "dx9",
+  "mastermind",
+  "maketoys",
+  "planetx",
+  "kfc",
+  "xtransbots",
+  "flametoys",
+  "tfc",
+  "gcreation",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];
@@ -193,7 +203,7 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/super7|ultimates/.test(s)) return "super7";
   if (/hot toys|\bmms\b|sixth scale|1\/6/.test(s)) return "hottoys";
   if (/\bfigma\b/.test(s)) return "figma";
-  if (/kotobukiya|bishoujo|artfx/.test(s)) return "kotobukiya";
+  if (/kotobukiya|bishoujo|artfx|frame arms|hexa gear/.test(s)) return "kotobukiya";
   if (/storm collect/.test(s)) return "storm";
   if (/boss fight|h\.?a\.?c\.?k\.?s/.test(s)) return "bossfight";
   if (/loyal subjects|bst axn/.test(s)) return "loyalsubjects";
@@ -233,6 +243,16 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/magic square|magicsquare/.test(s)) return "magicsquare";
   if (/cang toys|cangtoys|\bcang\b/.test(s)) return "cangtoys";
   if (/real action heroes|\brah\b|medicom toy/.test(s)) return "medicom";
+  if (/dr\.?\s*wu|drwu/.test(s)) return "drwu";
+  if (/\bdx9\b/.test(s)) return "dx9";
+  if (/mastermind creations|\bmmc\b|reformatted|ocular max/.test(s)) return "mastermind";
+  if (/maketoys|make toys|\bmtrm\b|\bmtcm\b/.test(s)) return "maketoys";
+  if (/planet x|planetx/.test(s)) return "planetx";
+  if (/keiths fantasy|\bkfc\b/.test(s)) return "kfc";
+  if (/xtransbots|x-?transbots/.test(s)) return "xtransbots";
+  if (/flame toys|flametoys|kuro kara kuri/.test(s)) return "flametoys";
+  if (/\btfc toys\b|\btfc\b/.test(s)) return "tfc";
+  if (/gcreation|g-?creation|shuraking/.test(s)) return "gcreation";
   if (/valaverse|action force/.test(s)) return "valaverse";
   return null;
 }

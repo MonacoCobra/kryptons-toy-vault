@@ -216,3 +216,32 @@ missing collector brands. Floor 1980; AF only; no AI art. Skipped statue-primary
 
 Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
 
+## BBTS AF brand expansion wave 6 (2026-09-05)
+
+Sixth curated pass from the BBTS company universe — densify thin AF makers + add
+missing collector brands. Floor 1980; AF only; no AI art. **APC Toys** and
+**Unique Toys** are not listed in the BBTS A–Z universe dump (skipped). Statue /
+garage-kit / DNA Design upgrade-kit brands skipped. Flame Toys **Furai** model
+kits skipped (Kuro Kara Kuri articulated AF only).
+
+| CompanyId | Notes |
+| --- | --- |
+| `drwu` | **NEW** — third-party Transformers EX / Mini / Combiner |
+| `dx9` | **NEW** — third-party Transformers War in Pocket / K-series |
+| `mastermind` | **NEW** — MMC Reformatted + Ocular Max |
+| `maketoys` | **NEW** — MakeToys MTRM / MTCM |
+| `planetx` | **NEW** — Planet X PX-series |
+| `kfc` | **NEW** — Keiths Fantasy Club Phase / named |
+| `xtransbots` | **NEW** — XTransbots MX-series |
+| `flametoys` | **NEW** — Kuro Kara Kuri articulated mecha AF |
+| `tfc` | **NEW** — TFC Toys combiners (Hercules / Uranos / Prometheus) |
+| `gcreation` | **NEW** — GCreation ShuraKing / YX |
+| densify | Kotobukiya Frame Arms / Hexa Gear (existing `kotobukiya`) |
+| densify | SHFiguarts, Kaiyodo Revoltech / Amazing Yamaguchi |
+| densify | Hasbro Lightning / Classified / Marvel Legends / Black Series / Studio Series |
+| densify | Mattel Masterverse / WWE Elite+Ultimate |
+| densify | McFarlane DC/Spawn, NECA Ultimate, Super7 ULTIMATES!/ReAction |
+| densify | DC Direct leftovers, Playmates TMNT, Mezco One:12 |
+
+Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
+

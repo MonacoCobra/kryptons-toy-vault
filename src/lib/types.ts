@@ -52,7 +52,17 @@ export type CompanyId =
   | "ironfactory"
   | "magicsquare"
   | "cangtoys"
-  | "medicom";
+  | "medicom"
+  | "drwu"
+  | "dx9"
+  | "mastermind"
+  | "maketoys"
+  | "planetx"
+  | "kfc"
+  | "xtransbots"
+  | "flametoys"
+  | "tfc"
+  | "gcreation";
 
 export type ItemKind = "figure" | "kit";
 

@@ -18,6 +18,7 @@ from figure_oneshot.curated_bbts_wave2 import build_bbts_wave2
 from figure_oneshot.curated_bbts_wave3 import build_bbts_wave3
 from figure_oneshot.curated_bbts_wave4 import build_bbts_wave4
 from figure_oneshot.curated_bbts_wave5 import build_bbts_wave5
+from figure_oneshot.curated_bbts_wave6 import build_bbts_wave6
 
 FLOOR = "1980-01-01"
 
@@ -1935,6 +1936,9 @@ def build_curated() -> list[dict]:
 
     # BBTS AF brand expansion wave 5 (3P TF Iron Factory/Magic Square/Cang + Medicom RAH + densify)
     rows += build_bbts_wave5()
+
+    # BBTS AF brand expansion wave 6 (3P TF Dr.Wu/DX9/MMC/etc + Flame Toys + densify)
+    rows += build_bbts_wave6()
 
     # dedupe by id
     seen=set(); out=[]
