@@ -1,10 +1,12 @@
-import { useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { LayoutGrid, List, Search } from "lucide-react";
 import { COMPANIES } from "@/data/companies";
 import { mergeFigures, searchFigures } from "@/data/figures";
 import { AddFigureDialog } from "@/components/add-figure-dialog";
 import { FigureArt } from "@/components/figure-art";
+import { VirtualGrid } from "@/components/virtual-grid";
+import { useDebouncedValue } from "@/hooks/use-debounced-value";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -50,6 +52,9 @@ const SORT_LABEL: Record<NonNullable<Search["sort"]> | "release", string> = {
   acquired: "Recently acquired",
 };
 
+const FIGURE_GRID_COLUMNS = { base: 2, md: 3, lg: 4 } as const;
+const FIGURE_LIST_COLUMNS = { base: 1, md: 1, lg: 1 } as const;
+
 function FiguresPage() {
   const search = Route.useSearch();
   const navigate = Route.useNavigate();
@@ -65,6 +70,17 @@ function FiguresPage() {
     : [];
   const layout = search.layout ?? "grid";
   const sort = search.sort ?? "release";
+
+  const [qDraft, setQDraft] = useState(search.q ?? "");
+  useEffect(() => {
+    setQDraft(search.q ?? "");
+  }, [search.q]);
+  const qDebounced = useDebouncedValue(qDraft, 250);
+  useEffect(() => {
+    const next = qDebounced.trim() ? qDebounced : undefined;
+    if (next === search.q) return;
+    void navigate({ search: (prev) => ({ ...prev, q: next }), replace: true });
+  }, [qDebounced, navigate, search.q]);
 
   const filtered = useMemo(() => {
     let list = search.q ? searchFigures(search.q, extras) : [...catalog];
@@ -114,10 +130,10 @@ function FiguresPage() {
       <div className="relative">
         <Search className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted" />
         <Input
-          value={search.q ?? ""}
+          value={qDraft}
           placeholder="Search name, line, SKU, exclusive…"
           className="pl-10"
-          onChange={(e) => navigate({ search: (prev) => ({ ...prev, q: e.target.value || undefined }) })}
+          onChange={(e) => setQDraft(e.target.value)}
         />
       </div>
 
@@ -246,15 +262,17 @@ function FiguresPage() {
       </div>
 
       {layout === "list" ? (
-        <ul className="grid gap-2">
-          {filtered.map((figure) => {
+        <VirtualGrid
+          items={filtered}
+          getKey={(figure) => figure.id}
+          columns={FIGURE_LIST_COLUMNS}
+          estimateRowHeight={80}
+          gapClassName="gap-2"
+          renderItem={(figure) => {
             const have = Boolean(owned[figure.id]);
             const est = figureMarket(figure).estimate;
             return (
-              <li
-                key={figure.id}
-                className="flex items-center gap-3 rounded-lg bg-bg-elevated p-2 shadow-[var(--shadow-border)]"
-              >
+              <div className="flex items-center gap-3 rounded-lg bg-bg-elevated p-2 shadow-[var(--shadow-border)]">
                 <Link to="/figures/$figureId" params={{ figureId: figure.id }} className="shrink-0">
                   <FigureArt figure={figure} photo={owned[figure.id]?.photoDataUrl} caption={false} className="h-16 w-14 rounded-sm" />
                 </Link>
@@ -270,21 +288,22 @@ function FiguresPage() {
                 <Button size="sm" variant={have ? "secondary" : "default"} onClick={() => setAdding(figure)}>
                   {have ? "Edit" : "Add"}
                 </Button>
-              </li>
+              </div>
             );
-          })}
-        </ul>
+          }}
+        />
       ) : (
-        <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
-          {filtered.map((figure) => {
+        <VirtualGrid
+          items={filtered}
+          getKey={(figure) => figure.id}
+          columns={FIGURE_GRID_COLUMNS}
+          estimateRowHeight={420}
+          renderItem={(figure) => {
             const have = Boolean(owned[figure.id]);
             const want = Boolean(wanted[figure.id]);
             const est = figureMarket(figure).estimate;
             return (
-              <li
-                key={figure.id}
-                className="overflow-hidden rounded-lg bg-bg-elevated shadow-[var(--shadow-border)]"
-              >
+              <div className="overflow-hidden rounded-lg bg-bg-elevated shadow-[var(--shadow-border)]">
                 <Link to="/figures/$figureId" params={{ figureId: figure.id }} className="block">
                   <FigureArt figure={figure} photo={owned[figure.id]?.photoDataUrl} caption={false} className="aspect-4/5" />
                 </Link>
@@ -307,10 +326,10 @@ function FiguresPage() {
                     {have ? "Edit entry" : "Add to vault"}
                   </Button>
                 </div>
-              </li>
+              </div>
             );
-          })}
-        </ul>
+          }}
+        />
       )}
 
       {filtered.length === 0 ? (

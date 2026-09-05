@@ -1,9 +1,11 @@
-import { useMemo, useState, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Camera, Plus, Search } from "lucide-react";
 import { comicLabel, mergeComics, searchComics } from "@/data/comics";
 import { AddComicDialog } from "@/components/add-comic-dialog";
 import { ComicCover } from "@/components/comic-cover";
+import { VirtualGrid } from "@/components/virtual-grid";
+import { useDebouncedValue } from "@/hooks/use-debounced-value";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -74,6 +76,17 @@ function ComicsPage() {
   }, [owned]);
 
   const sort = search.sort ?? "release";
+
+  const [qDraft, setQDraft] = useState(search.q ?? "");
+  useEffect(() => {
+    setQDraft(search.q ?? "");
+  }, [search.q]);
+  const qDebounced = useDebouncedValue(qDraft, 250);
+  useEffect(() => {
+    const next = qDebounced.trim() ? qDebounced : undefined;
+    if (next === search.q) return;
+    void navigate({ search: (prev) => ({ ...prev, q: next }), replace: true });
+  }, [qDebounced, navigate, search.q]);
 
   const sortComics = (list: CatalogComic[]) => {
     const out = [...list];
@@ -175,10 +188,10 @@ function ComicsPage() {
       <div className="relative">
         <Search className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted" />
         <Input
-          value={search.q ?? ""}
+          value={qDraft}
           placeholder="Amazing Spider-Man 300, Absolute Batman, Saga…"
           className="pl-10"
-          onChange={(e) => navigate({ search: (prev) => ({ ...prev, q: e.target.value || undefined }) })}
+          onChange={(e) => setQDraft(e.target.value)}
         />
       </div>
 
@@ -276,6 +289,8 @@ function ComicsPage() {
   );
 }
 
+const COMIC_GRID_COLUMNS = { base: 2, md: 4, lg: 5 } as const;
+
 function ComicGrid({
   comics,
   ownedIds,
@@ -303,16 +318,17 @@ function ComicGrid({
   }
 
   return (
-    <ul className="grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-5">
-      {comics.map((comic) => {
+    <VirtualGrid
+      items={comics}
+      getKey={(comic) => comic.id}
+      columns={COMIC_GRID_COLUMNS}
+      estimateRowHeight={360}
+      renderItem={(comic) => {
         const have = ownedIds.has(comic.id);
         const want = Boolean(wanted[comic.id]);
         const est = comicEstimate(comic);
         return (
-          <li
-            key={comic.id}
-            className="overflow-hidden rounded-lg bg-bg-elevated shadow-[0_0_0_1px_rgba(214,230,255,0.08)]"
-          >
+          <div className="overflow-hidden rounded-lg bg-bg-elevated shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
             <Link to="/comics/$comicId" params={{ comicId: comic.id }} className="block">
               <ComicCover comic={comic} resolveRemote className="aspect-2/3" />
             </Link>
@@ -331,10 +347,10 @@ function ComicGrid({
                 </Button>
               </div>
             </div>
-          </li>
+          </div>
         );
-      })}
-    </ul>
+      }}
+    />
   );
 }
 

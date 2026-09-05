@@ -103,7 +103,7 @@ export function FigureArt({
   if (photo || catalogImage) {
     return (
       <div className={cn("relative overflow-hidden bg-surface", className)}>
-        <img src={photo || catalogImage} alt="" className="size-full object-cover" />
+        <img src={photo || catalogImage} alt="" className="size-full object-cover" loading="lazy" decoding="async" />
         {caption ? (
           <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-bg/85 to-transparent p-2">
             <p className="truncate font-display text-sm tracking-wide">{figure.name}</p>
