@@ -16,10 +16,11 @@ Former floor was 1986-10-01; raised for DC mass fill and future Marvel/indie pas
 | `scripts/comic_backlog_common.py` | Shared FLOOR, dedupe, inject |
 | `scripts/gen-batch-006-dc-mass-1980.py` | DC mass generator (Superman → Batman → Flash/GL → majors) |
 | `scripts/gen-batch-010-western-thin.py` | Archie/Titan/Rebellion/2000AD + light Viz/Kodansha + densify |
+| `scripts/gen-batch-011-vertigo-ws-indie.py` | Vertigo densify, Black Label, WildStorm, Milestone, CrossGen, Eclipse/First≥1980, Avatar, SW/TF/Joe/Hellboy |
 
 ## Publishers
 
-DC / Marvel / Image primary; also Archie, Titan, Rebellion/2000 AD, Dark Horse, BOOM!, IDW, Dynamite, Valiant, Oni; light Viz/Kodansha English comics (not manga overload).
+DC / Marvel / Image primary; also Vertigo/Black Label/WildStorm/Milestone, CrossGen, Eclipse/First (≥1980), Avatar, Archie, Titan, Rebellion/2000 AD, Dark Horse, BOOM!, IDW, Dynamite, Valiant, Oni; light Viz/Kodansha (not manga overload); Star Wars / Transformers / GI Joe / Hellboy densify.
 
 ## Covers
 

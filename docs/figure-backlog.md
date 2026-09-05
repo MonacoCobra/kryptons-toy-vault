@@ -85,3 +85,7 @@ Most of the ~1599 BBTS brand names have **no** rows — by design (quality bar).
 Curated Mattel DCUC / JLU / Movie Masters, DC Direct & DC Collectibles,
 McFarlane Multiverse densify, and Kenner Super Powers (≥1980) live in
 `scripts/figure_oneshot/curated_dc.py` and merge via the oneshot dump.
+
+## Hasbro / Super7 / DC Direct / Hot Toys densify (2026-09-05)
+
+Curated expansions: more Marvel Legends, Black Series, Classified; Super7 ULTIMATES!/ReAction beyond Shopify; additional DC Direct/Collectibles waves; sparse Hot Toys (~50). Re-merged via `gen-figure-oneshot.py`.
