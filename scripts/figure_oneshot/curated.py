@@ -7,6 +7,7 @@ from __future__ import annotations
 from typing import Any
 
 from figure_oneshot.curated_dc import build_dc_curated
+from figure_oneshot.curated_densify import build_densify
 
 FLOOR = "1980-01-01"
 
@@ -1891,6 +1892,9 @@ def build_curated() -> list[dict]:
 
     # DC depth pass (Mattel DCUC+, DC Direct, McFarlane densify, Super Powers)
     rows += build_dc_curated()
+
+    # Aggressive densify pass (Hasbro/Mattel/McFarlane/Super7/NECA/Mezco/DCD)
+    rows += build_densify()
 
     # dedupe by id
     seen=set(); out=[]
