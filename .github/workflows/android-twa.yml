@@ -90,6 +90,8 @@ jobs:
           ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
           ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          # Tag releases and normal dispatch builds must use the durable keystore.
+          REQUIRE_STABLE_KEYSTORE: "1"
         run: bash scripts/android/ci-prepare.sh
 
       - name: Build signed APK

@@ -5,7 +5,7 @@ Install path:
 1. **GitHub Releases** -> download `app-release-signed.apk`
 2. Android -> allow Install unknown apps -> open the APK
 
-The APK is a **Trusted Web Activity** around your **production web host** (Vercel recommended), not `*.grok.me`.
+The APK is a **Trusted Web Activity** around your **production web host** (`kryptons-toy-vault.grok.me`).
 
 Package id: `me.kryptontoyvault.app`
 
@@ -23,8 +23,9 @@ Package id: `me.kryptontoyvault.app`
 1. Keep the live app on **Grok Build**; GitHub remains source of truth (Import project -> this repo -> deploy).
 2. Set production env as needed (`DATABASE_URL`, `COMICVINE_API_KEY`; leave `VITE_AUTH_ENABLED=false` unless you want accounts).
 3. Note your production host (e.g. `kryptons-toy-vault.grok.me` or a custom domain).
-4. Optional repo secrets for stable APK updates: `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_PASSWORD`, `ANDROID_KEY_ALIAS` (default `krypton`), `TWA_HOST`.
-5. Deploy `public/.well-known/assetlinks.json` on that host with the Release SHA-256 fingerprint.
+4. **Required** repo secrets for updatable APKs: `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_PASSWORD`, `ANDROID_KEY_ALIAS` (default `krypton`), plus optional `TWA_HOST`.
+5. Keep `public/.well-known/assetlinks.json` on the live host in sync with the release keystore SHA-256 fingerprint (CI updates the file in-repo on stable builds; republish the web app so `/.well-known/assetlinks.json` is live).
+6. **One-time:** uninstall any APK signed with the old ephemeral key before installing the first stable build — Android will not update across different signing keys. Later `android-v*` builds update in place.
 
 ## Build / publish APK
 
@@ -35,8 +36,8 @@ git tag android-v1.0.0
 git push origin android-v1.0.0
 ```
 
-Or Actions -> **Android TWA APK** -> Run workflow -> set `twa_host` to your Vercel host.
+Or Actions -> **Android TWA APK** -> Run workflow (host defaults to `kryptons-toy-vault.grok.me`).
 
 ## Without an APK
 
-Chrome -> open the Vercel URL -> Add to Home screen (PWA).
+Chrome -> open `https://kryptons-toy-vault.grok.me` -> Add to Home screen (PWA).

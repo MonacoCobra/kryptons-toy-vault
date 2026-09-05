@@ -61,6 +61,10 @@ if [[ -n "${ANDROID_KEYSTORE_BASE64:-}" ]]; then
     exit 1
   fi
 else
+  if [[ "${REQUIRE_STABLE_KEYSTORE:-}" == "1" || "${REQUIRE_STABLE_KEYSTORE:-}" == "true" ]]; then
+    echo "ERROR: ANDROID_KEYSTORE_BASE64 is required for stable/updatable releases (REQUIRE_STABLE_KEYSTORE=1)." >&2
+    exit 1
+  fi
   EPHEMERAL=true
   STORE_PASS="${STORE_PASS:-android}"
   KEY_PASS="${KEY_PASS:-android}"
