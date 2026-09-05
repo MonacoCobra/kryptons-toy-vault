@@ -8,6 +8,7 @@ from typing import Any
 
 from figure_oneshot.curated_dc import build_dc_curated
 from figure_oneshot.curated_densify import build_densify
+from figure_oneshot.curated_mafex_mezco import build_mafex_mezco
 
 FLOOR = "1980-01-01"
 
@@ -1895,6 +1896,9 @@ def build_curated() -> list[dict]:
 
     # Aggressive densify pass (Hasbro/Mattel/McFarlane/Super7/NECA/Mezco/DCD)
     rows += build_densify()
+
+    # MAFEX + Mezco One:12 densify (tracker + curated)
+    rows += build_mafex_mezco()
 
     # dedupe by id
     seen=set(); out=[]

@@ -85,8 +85,7 @@ function ScanPage() {
   return (
     <main className="mx-auto flex max-w-2xl flex-col gap-6">
       <header>
-        <p className="text-xs tracking-[0.28em] text-gold uppercase">Cover scanner</p>
-        <h1 className="mt-1 font-display text-3xl tracking-wide uppercase">Scan a comic</h1>
+        <h1 className="font-display text-3xl tracking-wide uppercase">Scan a comic</h1>
         <p className="mt-2 text-sm text-muted">
           Photograph a cover to match it in the catalog. If it isn't there, save it as a custom issue.
         </p>

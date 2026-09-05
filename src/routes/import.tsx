@@ -105,8 +105,7 @@ function ImportPage() {
   return (
     <main className="flex flex-col gap-6">
       <header>
-        <p className="text-xs tracking-[0.28em] text-gold uppercase">Migration</p>
-        <h1 className="mt-1 font-display text-3xl tracking-wide uppercase">Import collection</h1>
+        <h1 className="font-display text-3xl tracking-wide uppercase">Import collection</h1>
         <p className="mt-2 max-w-2xl text-sm text-muted">
           Bring comics from{" "}
           <a

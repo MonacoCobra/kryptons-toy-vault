@@ -1,0 +1,4859 @@
+{
+  "mafex": [
+    {
+      "id": "mafex-no001-batman-the-dark-knight",
+      "name": "Batman",
+      "subtitle": "The Dark Knight",
+      "releaseDate": "2013-11-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no002-the-joker-the-dark-knight",
+      "name": "The Joker",
+      "subtitle": "The Dark Knight",
+      "releaseDate": "2014-02-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mafex-no003-batman-the-dark-knight-rises",
+      "name": "Batman",
+      "subtitle": "The Dark Knight Rises",
+      "releaseDate": "2014-06-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no004-bane-the-dark-knight-rises",
+      "name": "Bane",
+      "subtitle": "The Dark Knight Rises",
+      "releaseDate": "2014-09-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no005-superman-man-of-steel",
+      "name": "Superman",
+      "subtitle": "Man of Steel",
+      "releaseDate": "2014-12-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no006-batman-batman-begins",
+      "name": "Batman",
+      "subtitle": "Batman Begins",
+      "releaseDate": "2015-03-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no007-robin-the-dark-knight-rises",
+      "name": "Robin",
+      "subtitle": "The Dark Knight Rises",
+      "releaseDate": "2015-06-01",
+      "demand": 1.35
+    },
+    {
+      "id": "mafex-no008-catwoman-the-dark-knight-rises",
+      "name": "Catwoman",
+      "subtitle": "The Dark Knight Rises",
+      "releaseDate": "2015-08-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mafex-no009-superman-man-of-steel-ver-2-0",
+      "name": "Superman",
+      "subtitle": "Man of Steel Ver. 2.0",
+      "releaseDate": "2015-11-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mafex-no010-batman-the-dark-knight-ver-2-0",
+      "name": "Batman",
+      "subtitle": "The Dark Knight Ver. 2.0",
+      "releaseDate": "2016-02-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no011-the-joker-the-dark-knight-ver-2-0",
+      "name": "The Joker",
+      "subtitle": "The Dark Knight Ver. 2.0",
+      "releaseDate": "2016-04-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no012-armored-batman-batman-v-superman",
+      "name": "Armored Batman",
+      "subtitle": "Batman v Superman",
+      "releaseDate": "2016-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no013-superman-batman-v-superman",
+      "name": "Superman",
+      "subtitle": "Batman v Superman",
+      "releaseDate": "2016-08-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no014-wonder-woman-batman-v-superman",
+      "name": "Wonder Woman",
+      "subtitle": "Batman v Superman",
+      "releaseDate": "2016-10-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no015-batman-batman-v-superman",
+      "name": "Batman",
+      "subtitle": "Batman v Superman",
+      "releaseDate": "2016-12-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no016-knightmare-batman-batman-v-superman",
+      "name": "Knightmare Batman",
+      "subtitle": "Batman v Superman",
+      "releaseDate": "2017-02-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no017-superman-dawn-of-justice-ver-3-0",
+      "name": "Superman",
+      "subtitle": "Dawn of Justice Ver. 3.0",
+      "releaseDate": "2017-04-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no018-aquaman-justice-league",
+      "name": "Aquaman",
+      "subtitle": "Justice League",
+      "releaseDate": "2017-08-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mafex-no019-cyborg-justice-league",
+      "name": "Cyborg",
+      "subtitle": "Justice League",
+      "releaseDate": "2017-10-01",
+      "demand": 1.35
+    },
+    {
+      "id": "mafex-no020-the-flash-justice-league",
+      "name": "The Flash",
+      "subtitle": "Justice League",
+      "releaseDate": "2017-12-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mafex-no021-batman-justice-league",
+      "name": "Batman",
+      "subtitle": "Justice League",
+      "releaseDate": "2018-02-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no022-superman-justice-league",
+      "name": "Superman",
+      "subtitle": "Justice League",
+      "releaseDate": "2018-04-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no023-wonder-woman-justice-league",
+      "name": "Wonder Woman",
+      "subtitle": "Justice League",
+      "releaseDate": "2018-06-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no024-batman-hush",
+      "name": "Batman",
+      "subtitle": "Hush",
+      "releaseDate": "2018-05-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mafex-no025-superman-hush",
+      "name": "Superman",
+      "subtitle": "Hush",
+      "releaseDate": "2018-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no026-the-joker-hush",
+      "name": "The Joker",
+      "subtitle": "Hush",
+      "releaseDate": "2019-06-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no027-huntress-hush",
+      "name": "Huntress",
+      "subtitle": "Hush",
+      "releaseDate": "2019-09-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no028-catwoman-hush",
+      "name": "Catwoman",
+      "subtitle": "Hush",
+      "releaseDate": "2019-11-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no029-batman-hush-black-version",
+      "name": "Batman",
+      "subtitle": "Hush Black Version",
+      "releaseDate": "2020-03-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no030-superman-hush-blue-version",
+      "name": "Superman",
+      "subtitle": "Hush Blue Version",
+      "releaseDate": "2020-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no031-ra-s-al-ghul-hush",
+      "name": "Ra's al Ghul",
+      "subtitle": "Hush",
+      "releaseDate": "2021-02-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no032-batman-hush-ver-2-0",
+      "name": "Batman",
+      "subtitle": "Hush Ver. 2.0",
+      "releaseDate": "2021-08-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no033-superman-hush-ver-2-0",
+      "name": "Superman",
+      "subtitle": "Hush Ver. 2.0",
+      "releaseDate": "2022-01-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no034-the-joker-hush-ver-2-0",
+      "name": "The Joker",
+      "subtitle": "Hush Ver. 2.0",
+      "releaseDate": "2022-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no035-batman-hush-blue-version",
+      "name": "Batman",
+      "subtitle": "Hush Blue Version",
+      "releaseDate": "2023-03-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no036-batman-damage-ver-hush",
+      "name": "Batman",
+      "subtitle": "Damage Ver. Hush",
+      "releaseDate": "2025-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no037-bruce-wayne-hush",
+      "name": "Bruce Wayne",
+      "subtitle": "Hush",
+      "releaseDate": "2025-11-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no038-clark-kent-hush",
+      "name": "Clark Kent",
+      "subtitle": "Hush",
+      "releaseDate": "2025-11-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no040-spider-man-comic-version",
+      "name": "Spider-Man",
+      "subtitle": "Comic Version",
+      "releaseDate": "2018-03-01",
+      "demand": 1.7
+    },
+    {
+      "id": "mafex-no041-spider-man-comic-version-2-0",
+      "name": "Spider-Man",
+      "subtitle": "Comic Version 2.0",
+      "releaseDate": "2019-05-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mafex-no042-venom-comic-version",
+      "name": "Venom",
+      "subtitle": "Comic Version",
+      "releaseDate": "2019-08-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mafex-no043-spider-man-homecoming",
+      "name": "Spider-Man",
+      "subtitle": "Homecoming",
+      "releaseDate": "2018-10-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no044-spider-man-homecoming-ver-1-5",
+      "name": "Spider-Man",
+      "subtitle": "Homecoming Ver. 1.5",
+      "releaseDate": "2019-12-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no045-iron-man-mark-47-homecoming",
+      "name": "Iron Man",
+      "subtitle": "Mark 47 Homecoming",
+      "releaseDate": "2019-03-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no046-spider-man-far-from-home",
+      "name": "Spider-Man",
+      "subtitle": "Far From Home",
+      "releaseDate": "2020-02-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no047-spider-man-upgraded-suit",
+      "name": "Spider-Man",
+      "subtitle": "Upgraded Suit",
+      "releaseDate": "2020-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no048-spider-man-black-suit-comic",
+      "name": "Spider-Man",
+      "subtitle": "Black Suit Comic",
+      "releaseDate": "2020-11-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no049-miles-morales-into-the-spider-verse",
+      "name": "Miles Morales",
+      "subtitle": "Into the Spider-Verse",
+      "releaseDate": "2020-09-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no050-spider-gwen-into-the-spider-verse",
+      "name": "Spider-Gwen",
+      "subtitle": "Into the Spider-Verse",
+      "releaseDate": "2020-12-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no051-spider-man-peter-b-parker",
+      "name": "Spider-Man",
+      "subtitle": "Peter B. Parker",
+      "releaseDate": "2021-02-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no052-spider-man-no-way-home",
+      "name": "Spider-Man",
+      "subtitle": "No Way Home",
+      "releaseDate": "2022-03-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no053-spider-man-integrated-suit",
+      "name": "Spider-Man",
+      "subtitle": "Integrated Suit",
+      "releaseDate": "2022-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no054-spider-man-black-and-gold-suit",
+      "name": "Spider-Man",
+      "subtitle": "Black and Gold Suit",
+      "releaseDate": "2025-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no055-ben-reilly-scarlet-spider",
+      "name": "Ben Reilly",
+      "subtitle": "Scarlet Spider",
+      "releaseDate": "2021-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no056-ben-reilly-scarlet-spider-ver-2-0",
+      "name": "Ben Reilly",
+      "subtitle": "Scarlet Spider Ver. 2.0",
+      "releaseDate": "2023-04-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no057-spider-man-comic-paint-version",
+      "name": "Spider-Man",
+      "subtitle": "Comic Paint Version",
+      "releaseDate": "2021-09-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no058-miles-morales-comic-version",
+      "name": "Miles Morales",
+      "subtitle": "Comic Version",
+      "releaseDate": "2022-05-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no059-miles-morales-comic-renewal",
+      "name": "Miles Morales",
+      "subtitle": "Comic Renewal",
+      "releaseDate": "2024-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no060-spider-man-2099-comic-version",
+      "name": "Spider-Man 2099",
+      "subtitle": "Comic Version",
+      "releaseDate": "2023-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no061-negative-zone-spider-man-comic-version",
+      "name": "Negative Zone Spider-Man",
+      "subtitle": "Comic Version",
+      "releaseDate": "2025-03-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no062-venom-2099-comic-version",
+      "name": "Venom 2099",
+      "subtitle": "Comic Version",
+      "releaseDate": "2025-04-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no063-venom-let-there-be-carnage",
+      "name": "Venom",
+      "subtitle": "Let There Be Carnage",
+      "releaseDate": "2024-02-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no064-carnage-let-there-be-carnage",
+      "name": "Carnage",
+      "subtitle": "Let There Be Carnage",
+      "releaseDate": "2025-08-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no065-blue-venom-gamerverse",
+      "name": "Blue Venom",
+      "subtitle": "Gamerverse",
+      "releaseDate": "2025-02-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no070-wolverine-comic-version",
+      "name": "Wolverine",
+      "subtitle": "Comic Version",
+      "releaseDate": "2020-03-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mafex-no071-wolverine-brown-suit",
+      "name": "Wolverine",
+      "subtitle": "Brown Suit",
+      "releaseDate": "2021-01-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no072-wolverine-brown-suit-deadpool-and-wolverine",
+      "name": "Wolverine",
+      "subtitle": "Brown Suit Deadpool & Wolverine",
+      "releaseDate": "2025-07-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mafex-no073-deadpool-comic-version",
+      "name": "Deadpool",
+      "subtitle": "Comic Version",
+      "releaseDate": "2019-11-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no074-deadpool-x-force",
+      "name": "Deadpool",
+      "subtitle": "X-Force",
+      "releaseDate": "2021-05-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no075-magneto-comic-version",
+      "name": "Magneto",
+      "subtitle": "Comic Version",
+      "releaseDate": "2020-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no076-cyclops-comic-version",
+      "name": "Cyclops",
+      "subtitle": "Comic Version",
+      "releaseDate": "2021-03-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no077-jean-grey-comic-version",
+      "name": "Jean Grey",
+      "subtitle": "Comic Version",
+      "releaseDate": "2021-07-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no078-storm-comic-version",
+      "name": "Storm",
+      "subtitle": "Comic Version",
+      "releaseDate": "2021-11-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no079-gambit-comic-version",
+      "name": "Gambit",
+      "subtitle": "Comic Version",
+      "releaseDate": "2021-10-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no080-gambit-comic-variant",
+      "name": "Gambit",
+      "subtitle": "Comic Variant",
+      "releaseDate": "2024-11-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no081-rogue-comic-version",
+      "name": "Rogue",
+      "subtitle": "Comic Version",
+      "releaseDate": "2022-03-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no082-psylocke-comic-version",
+      "name": "Psylocke",
+      "subtitle": "Comic Version",
+      "releaseDate": "2022-07-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no083-nightcrawler-comic-version",
+      "name": "Nightcrawler",
+      "subtitle": "Comic Version",
+      "releaseDate": "2022-10-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no084-colossus-comic-version",
+      "name": "Colossus",
+      "subtitle": "Comic Version",
+      "releaseDate": "2023-01-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no085-beast-comic-version",
+      "name": "Beast",
+      "subtitle": "Comic Version",
+      "releaseDate": "2023-04-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no086-iceman-comic-version",
+      "name": "Iceman",
+      "subtitle": "Comic Version",
+      "releaseDate": "2024-05-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no087-cable-comic-version",
+      "name": "Cable",
+      "subtitle": "Comic Version",
+      "releaseDate": "2023-08-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no088-domino-comic-version",
+      "name": "Domino",
+      "subtitle": "Comic Version",
+      "releaseDate": "2023-11-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no089-x-23-comic-version",
+      "name": "X-23",
+      "subtitle": "Comic Version",
+      "releaseDate": "2024-02-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no090-moon-knight-comic-version",
+      "name": "Moon Knight",
+      "subtitle": "Comic Version",
+      "releaseDate": "2021-03-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no091-moon-knight-no-322",
+      "name": "Moon Knight",
+      "subtitle": "No.322",
+      "releaseDate": "2025-10-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no092-the-punisher-comic-version",
+      "name": "The Punisher",
+      "subtitle": "Comic Version",
+      "releaseDate": "2020-05-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no093-daredevil-comic-version",
+      "name": "Daredevil",
+      "subtitle": "Comic Version",
+      "releaseDate": "2021-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no094-elektra-comic-version",
+      "name": "Elektra",
+      "subtitle": "Comic Version",
+      "releaseDate": "2022-01-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no095-iron-man-comic-version",
+      "name": "Iron Man",
+      "subtitle": "Comic Version",
+      "releaseDate": "2020-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no096-captain-america-comic-version",
+      "name": "Captain America",
+      "subtitle": "Comic Version",
+      "releaseDate": "2020-12-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no097-thor-comic-version",
+      "name": "Thor",
+      "subtitle": "Comic Version",
+      "releaseDate": "2021-04-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no098-hulk-comic-version",
+      "name": "Hulk",
+      "subtitle": "Comic Version",
+      "releaseDate": "2021-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no099-doctor-strange-comic-version",
+      "name": "Doctor Strange",
+      "subtitle": "Comic Version",
+      "releaseDate": "2022-02-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no100-black-panther-comic-version",
+      "name": "Black Panther",
+      "subtitle": "Comic Version",
+      "releaseDate": "2022-06-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no101-black-panther-vibranium-energy-endgame",
+      "name": "Black Panther",
+      "subtitle": "Vibranium Energy Endgame",
+      "releaseDate": "2025-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no102-iron-spider-endgame-renewal",
+      "name": "Iron Spider",
+      "subtitle": "Endgame Renewal",
+      "releaseDate": "2025-05-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no103-captain-marvel-comic-version",
+      "name": "Captain Marvel",
+      "subtitle": "Comic Version",
+      "releaseDate": "2023-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no104-scarlet-witch-comic-version",
+      "name": "Scarlet Witch",
+      "subtitle": "Comic Version",
+      "releaseDate": "2023-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no105-vision-comic-version",
+      "name": "Vision",
+      "subtitle": "Comic Version",
+      "releaseDate": "2023-09-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no106-doctor-doom-comic-version",
+      "name": "Doctor Doom",
+      "subtitle": "Comic Version",
+      "releaseDate": "2024-01-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no107-thanos-comic-version",
+      "name": "Thanos",
+      "subtitle": "Comic Version",
+      "releaseDate": "2024-04-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no108-silver-surfer-comic-version",
+      "name": "Silver Surfer",
+      "subtitle": "Comic Version",
+      "releaseDate": "2024-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no109-galactus-comic-version",
+      "name": "Galactus",
+      "subtitle": "Comic Version",
+      "releaseDate": "2024-10-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mafex-no120-batman-tactical-suit-the-batman",
+      "name": "Batman",
+      "subtitle": "Tactical Suit The Batman",
+      "releaseDate": "2022-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no121-batman-the-batman",
+      "name": "Batman",
+      "subtitle": "The Batman",
+      "releaseDate": "2023-01-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no122-batman-stealth-jumper-the-batman",
+      "name": "Batman",
+      "subtitle": "Stealth Jumper The Batman",
+      "releaseDate": "2023-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no123-selina-kyle-the-batman",
+      "name": "Selina Kyle",
+      "subtitle": "The Batman",
+      "releaseDate": "2023-08-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no124-the-riddler-the-batman",
+      "name": "The Riddler",
+      "subtitle": "The Batman",
+      "releaseDate": "2023-10-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no125-batman-the-flash-film",
+      "name": "Batman",
+      "subtitle": "The Flash Film",
+      "releaseDate": "2025-08-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no126-batman-zack-snyder-justice-league",
+      "name": "Batman",
+      "subtitle": "Zack Snyder Justice League",
+      "releaseDate": "2024-06-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no127-wonder-woman-zack-snyder-justice-league",
+      "name": "Wonder Woman",
+      "subtitle": "Zack Snyder Justice League",
+      "releaseDate": "2025-01-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no128-batman-new-batman-adventures",
+      "name": "Batman",
+      "subtitle": "New Batman Adventures",
+      "releaseDate": "2022-11-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no129-batman-dark-knight-returns",
+      "name": "Batman",
+      "subtitle": "Dark Knight Returns",
+      "releaseDate": "2021-12-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no130-batman-tdkr-triumphant",
+      "name": "Batman",
+      "subtitle": "TDKR Triumphant",
+      "releaseDate": "2022-04-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no131-armored-batman-tdkr",
+      "name": "Armored Batman",
+      "subtitle": "TDKR",
+      "releaseDate": "2022-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no132-armored-batman-tdkr-the-dark-knight-falls",
+      "name": "Armored Batman",
+      "subtitle": "TDKR The Dark Knight Falls",
+      "releaseDate": "2023-02-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no133-batman-and-robin-tdkr",
+      "name": "Batman and Robin",
+      "subtitle": "TDKR",
+      "releaseDate": "2023-05-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no134-batman-and-horse-tdkr",
+      "name": "Batman and Horse",
+      "subtitle": "TDKR",
+      "releaseDate": "2024-03-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no135-batman-ver-3-0",
+      "name": "Batman",
+      "subtitle": "Ver. 3.0",
+      "releaseDate": "2019-04-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no136-armored-batman-ver-1-5-bvs",
+      "name": "Armored Batman",
+      "subtitle": "Ver. 1.5 BvS",
+      "releaseDate": "2026-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no150-darth-vader-rogue-one",
+      "name": "Darth Vader",
+      "subtitle": "Rogue One",
+      "releaseDate": "2018-07-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no151-darth-vader-rogue-one-ver-1-5",
+      "name": "Darth Vader",
+      "subtitle": "Rogue One Ver. 1.5",
+      "releaseDate": "2023-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no152-stormtrooper-rogue-one",
+      "name": "Stormtrooper",
+      "subtitle": "Rogue One",
+      "releaseDate": "2018-09-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mafex-no153-death-trooper-rogue-one",
+      "name": "Death Trooper",
+      "subtitle": "Rogue One",
+      "releaseDate": "2019-01-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no154-the-mandalorian-beskar-armor",
+      "name": "The Mandalorian",
+      "subtitle": "Beskar Armor",
+      "releaseDate": "2021-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no155-the-mandalorian-ver-2-0",
+      "name": "The Mandalorian",
+      "subtitle": "Ver. 2.0",
+      "releaseDate": "2023-03-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no156-boba-fett-return-of-the-jedi",
+      "name": "Boba Fett",
+      "subtitle": "Return of the Jedi",
+      "releaseDate": "2020-10-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no157-boba-fett-recovered-armor",
+      "name": "Boba Fett",
+      "subtitle": "Recovered Armor",
+      "releaseDate": "2022-05-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no158-bo-katan-kryze-the-mandalorian",
+      "name": "Bo-Katan Kryze",
+      "subtitle": "The Mandalorian",
+      "releaseDate": "2023-07-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no159-bo-katan-kryze-season-three",
+      "name": "Bo-Katan Kryze",
+      "subtitle": "Season Three",
+      "releaseDate": "2025-06-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no160-moff-gideon-the-mandalorian",
+      "name": "Moff Gideon",
+      "subtitle": "The Mandalorian",
+      "releaseDate": "2025-02-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no161-ahsoka-tano-peridea",
+      "name": "Ahsoka Tano",
+      "subtitle": "Peridea",
+      "releaseDate": "2025-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no162-luke-skywalker-return-of-the-jedi",
+      "name": "Luke Skywalker",
+      "subtitle": "Return of the Jedi",
+      "releaseDate": "2021-11-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no163-han-solo-a-new-hope",
+      "name": "Han Solo",
+      "subtitle": "A New Hope",
+      "releaseDate": "2022-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no164-bossk-empire-strikes-back",
+      "name": "Bossk",
+      "subtitle": "Empire Strikes Back",
+      "releaseDate": "2025-12-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no170-homelander-the-boys",
+      "name": "Homelander",
+      "subtitle": "The Boys",
+      "releaseDate": "2023-05-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no171-billy-butcher-the-boys",
+      "name": "Billy Butcher",
+      "subtitle": "The Boys",
+      "releaseDate": "2023-05-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no172-homelander-finale-ver",
+      "name": "Homelander",
+      "subtitle": "Finale Ver.",
+      "releaseDate": "2025-09-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no173-billy-butcher-temp-v",
+      "name": "Billy Butcher",
+      "subtitle": "Temp V",
+      "releaseDate": "2025-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no174-starlight-the-boys",
+      "name": "Starlight",
+      "subtitle": "The Boys",
+      "releaseDate": "2024-01-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no175-t-800-terminator-2",
+      "name": "T-800",
+      "subtitle": "Terminator 2",
+      "releaseDate": "2024-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no176-t-1000-terminator-2",
+      "name": "T-1000",
+      "subtitle": "Terminator 2",
+      "releaseDate": "2024-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no177-t-800-and-john-connor-t2-two-pack",
+      "name": "T-800 and John Connor",
+      "subtitle": "T2 Two-Pack",
+      "releaseDate": "2024-09-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no178-john-wick-chapter-2",
+      "name": "John Wick",
+      "subtitle": "Chapter 2",
+      "releaseDate": "2021-04-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no179-john-wick-chapter-3",
+      "name": "John Wick",
+      "subtitle": "Chapter 3",
+      "releaseDate": "2022-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no180-sofia-john-wick-chapter-3",
+      "name": "Sofia",
+      "subtitle": "John Wick Chapter 3",
+      "releaseDate": "2024-12-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no181-peacemaker-the-suicide-squad",
+      "name": "Peacemaker",
+      "subtitle": "The Suicide Squad",
+      "releaseDate": "2024-10-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no182-bloodsport-the-suicide-squad",
+      "name": "Bloodsport",
+      "subtitle": "The Suicide Squad",
+      "releaseDate": "2024-10-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no183-black-manta-aquaman-lost-kingdom",
+      "name": "Black Manta",
+      "subtitle": "Aquaman Lost Kingdom",
+      "releaseDate": "2024-07-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no184-aquaman-stealth-suit",
+      "name": "Aquaman",
+      "subtitle": "Stealth Suit",
+      "releaseDate": "2025-05-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no185-shazam-shazam",
+      "name": "Shazam",
+      "subtitle": "Shazam!",
+      "releaseDate": "2020-07-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no186-the-joker-2019-film",
+      "name": "The Joker",
+      "subtitle": "2019 Film",
+      "releaseDate": "2025-03-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mafex-no187-doomsday-death-of-superman",
+      "name": "Doomsday",
+      "subtitle": "Death of Superman",
+      "releaseDate": "2026-01-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mafex-no188-superman-battle-damaged-death-of-superman",
+      "name": "Superman",
+      "subtitle": "Battle Damaged Death of Superman",
+      "releaseDate": "2026-01-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no189-superman-for-tomorrow",
+      "name": "Superman",
+      "subtitle": "For Tomorrow",
+      "releaseDate": "2025-08-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no190-wonder-woman-for-tomorrow",
+      "name": "Wonder Woman",
+      "subtitle": "For Tomorrow",
+      "releaseDate": "2025-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no191-michael-jordan-chicago-bulls",
+      "name": "Michael Jordan",
+      "subtitle": "Chicago Bulls",
+      "releaseDate": "2019-07-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no192-chucky-bride-of-chucky",
+      "name": "Chucky",
+      "subtitle": "Bride of Chucky",
+      "releaseDate": "2022-10-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no193-brzrkr-berzerker",
+      "name": "BRZRKR",
+      "subtitle": "Berzerker",
+      "releaseDate": "2023-12-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no194-robocop-robocop",
+      "name": "RoboCop",
+      "subtitle": "RoboCop",
+      "releaseDate": "2019-10-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no195-robocop-battle-damaged",
+      "name": "RoboCop",
+      "subtitle": "Battle Damaged",
+      "releaseDate": "2020-08-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no196-judge-dredd-1995-film",
+      "name": "Judge Dredd",
+      "subtitle": "1995 Film",
+      "releaseDate": "2018-12-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mafex-no197-hellboy-2019",
+      "name": "Hellboy",
+      "subtitle": "2019",
+      "releaseDate": "2020-04-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mafex-no198-kick-ass-kick-ass",
+      "name": "Kick-Ass",
+      "subtitle": "Kick-Ass",
+      "releaseDate": "2019-02-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mafex-no199-hit-girl-kick-ass",
+      "name": "Hit-Girl",
+      "subtitle": "Kick-Ass",
+      "releaseDate": "2019-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mafex-no200-harley-quinn-birds-of-prey",
+      "name": "Harley Quinn",
+      "subtitle": "Birds of Prey",
+      "releaseDate": "2021-12-01",
+      "demand": 1.5
+    }
+  ],
+  "mezcoTracker": [
+    {
+      "id": "o12t-878-kingpin-one-12-collective",
+      "name": "Kingpin",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-877-baron-bends-leviathan-armor",
+      "name": "Baron Bends",
+      "subtitle": "Leviathan Armor",
+      "releaseDate": "2019-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-845-solomon-grundy-blue-edition",
+      "name": "Solomon Grundy",
+      "subtitle": "Blue Edition",
+      "releaseDate": "2026-07-23",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-844-batman-the-animated-series-blue-edition",
+      "name": "Batman: The Animated Series",
+      "subtitle": "Blue Edition",
+      "releaseDate": "2026-07-23",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-814-doc-nocturnal-phantom-knight-edition",
+      "name": "Doc Nocturnal",
+      "subtitle": "Phantom Knight Edition",
+      "releaseDate": "2022-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-813-hoodz-letterman-throwback-edition",
+      "name": "Hoodz: Letterman",
+      "subtitle": "Throwback Edition",
+      "releaseDate": "2023-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-812-batman-the-animated-series-noir-edition",
+      "name": "Batman: The Animated Series",
+      "subtitle": "Noir Edition",
+      "releaseDate": "2024-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-811-gomez-hazard-squad-special-missions-shadow-command",
+      "name": "Gomez",
+      "subtitle": "Hazard Squad Special Missions: Shadow::Command",
+      "releaseDate": "2025-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-778-punisher-one-12-collective",
+      "name": "Punisher",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-748-teenage-mutant-ninja-turtles-mirage-comics-one-12-collective",
+      "name": "Teenage Mutant Ninja Turtles: Mirage Comics",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2019-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-747-conan-the-barbarian-1982-pit-fighter-edition",
+      "name": "Conan The Barbarian (1982)",
+      "subtitle": "Pit Fighter Edition",
+      "releaseDate": "2020-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-746-spider-man-2099-reissue",
+      "name": "Spider-Man 2099",
+      "subtitle": "Reissue",
+      "releaseDate": "2021-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-745-batman-the-animated-series-scarecrow-one-12-collective",
+      "name": "Batman the Animated Series: Scarecrow",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-713-superman-red-son-edition",
+      "name": "Superman",
+      "subtitle": "Red Son Edition",
+      "releaseDate": "2023-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-712-robin-batman-the-animated-series",
+      "name": "Robin",
+      "subtitle": "Batman: The Animated Series",
+      "releaseDate": "2024-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-681-hoodz-letterman-one-12-collective",
+      "name": "Hoodz: Letterman",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2025-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-680-splinter-one-12-collective",
+      "name": "Splinter",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-679-agent-gomez-1975-back-the-f-up-remix-edition",
+      "name": "Agent Gomez: 1975",
+      "subtitle": "Back the F-Up Remix Edition",
+      "releaseDate": "2019-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-647-doctor-doom-reissue",
+      "name": "Doctor Doom",
+      "subtitle": "Reissue",
+      "releaseDate": "2020-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-646-doc-nocturnal-red-death-edition",
+      "name": "Doc Nocturnal",
+      "subtitle": "Red Death Edition",
+      "releaseDate": "2021-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-620-franky-sparky-foreman-hardboiled-fiction-edition",
+      "name": "Franky \"Sparky\" Foreman",
+      "subtitle": "Hardboiled Fiction Edition",
+      "releaseDate": "2022-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-619-r-u-m-b-l-r-sandstorm-edition-with-hazard-squad-gomez",
+      "name": "R.U.M.B.L.R.",
+      "subtitle": "Sandstorm Edition with Hazard Squad Gomez",
+      "releaseDate": "2023-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-618-nightcrawler-one-12-collective",
+      "name": "Nightcrawler",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-617-a-nightmare-on-elm-street-freddy-kreuger-reissue",
+      "name": "A Nightmare on Elm Street: Freddy Kreuger",
+      "subtitle": "Reissue",
+      "releaseDate": "2025-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-615-the-decapod-gang-crab-louie-capo-edition",
+      "name": "The Decapod Gang: Crab Louie",
+      "subtitle": "Capo Edition",
+      "releaseDate": "2026-01-14",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-616-the-decapod-gang-radioactive-racketeers-edition",
+      "name": "The Decapod Gang",
+      "subtitle": "Radioactive Racketeers Edition",
+      "releaseDate": "2026-01-15",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-614-batman-year-one",
+      "name": "Batman",
+      "subtitle": "Year One",
+      "releaseDate": "2020-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-613-gambit-reissue",
+      "name": "Gambit",
+      "subtitle": "Reissue",
+      "releaseDate": "2021-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-585-shredder-one-12-collective",
+      "name": "Shredder",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-584-teenage-mutant-ninja-turtles-1990-boxed-set-one-12-collective",
+      "name": "Teenage Mutant Ninja Turtles (1990) Boxed Set",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-583-white-skull-agent-se-or-blanco-one-12-collective",
+      "name": "White Skull Agent: Se\u00f1or Blanco",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2026-01-07",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-582-doc-nocturnal-and-krampus-wicked-winter-boxed-set",
+      "name": "Doc Nocturnal & Krampus",
+      "subtitle": "Wicked Winter Boxed Set",
+      "releaseDate": "2025-12-04",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-581-the-leader-one-12-collective",
+      "name": "The Leader",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-580-the-incredible-hulk-one-12-collective",
+      "name": "The Incredible Hulk",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2019-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-549-the-texas-chainsaw-massacre-2003-leatherface-one-12-collective",
+      "name": "The Texas Chainsaw Massacre (2003): Leatherface",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-548-casey-jones-variant-edition",
+      "name": "Casey Jones",
+      "subtitle": "Variant Edition",
+      "releaseDate": "2021-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-547-sin-city-marv-one-12-collective",
+      "name": "Sin City: Marv",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-516-red-hood-one-12-collective",
+      "name": "Red Hood",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2025-10-15",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-515-doc-nocturnal-and-the-case-of-the-shrieking-yeti-one-12-collect",
+      "name": "Doc Nocturnal and the Case of the Shrieking Yeti",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-514-the-dark-knight-joker-one-12-collective",
+      "name": "The Dark Knight: Joker",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2025-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-481-the-dark-knight-batman-one-12-collective",
+      "name": "The Dark Knight: Batman",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-454-franklin-sparky-foreman-gangsters-inc",
+      "name": "Franklin \"Sparky\" Foreman",
+      "subtitle": "Gangsters Inc.",
+      "releaseDate": "2025-08-16",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-453-superman-2025",
+      "name": "Superman",
+      "subtitle": "2025",
+      "releaseDate": "2020-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-452-doc-nocturnal-dark-shadow-edition",
+      "name": "Doc Nocturnal",
+      "subtitle": "Dark Shadow Edition",
+      "releaseDate": "2025-07-24",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-451-joker-batman-the-animated-series",
+      "name": "Joker",
+      "subtitle": "Batman: The Animated Series",
+      "releaseDate": "2022-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-450-r-u-m-b-l-r-and-death-adder-one-12-collective",
+      "name": "R.U.M.B.L.R. & Death Adder",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2025-07-27",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-449-nightwing-new-52-edition",
+      "name": "Nightwing",
+      "subtitle": "New 52 Edition",
+      "releaseDate": "2025-07-24",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-448-agent-gomez-1975-one-12-collective",
+      "name": "Agent Gomez: 1975",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2025-07-24",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-415-batman-batman-the-animated-series",
+      "name": "Batman",
+      "subtitle": "Batman: The Animated Series",
+      "releaseDate": "2018-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-382-the-shadow-collectors-capsule-street-and-smith-capsule-set",
+      "name": "The Shadow Collectors Capsule",
+      "subtitle": "Street & Smith Capsule Set",
+      "releaseDate": "2025-05-28",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-316-the-decapod-gang-crab-louie-one-12-collective",
+      "name": "The Decapod Gang: Crab Louie",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2025-05-02",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-315-woodford-one-12-collective",
+      "name": "Woodford",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2025-04-23",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-301-aleister-gangreene-one-12-collective",
+      "name": "Aleister Gangreene",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2025-03-25",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-313-conan-the-barbarian-1982-war-paint-edition",
+      "name": "Conan The Barbarian",
+      "subtitle": "1982 - War Paint Edition",
+      "releaseDate": "2023-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-312-samurai-jack-one-12-collective",
+      "name": "Samurai Jack",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-297-biker-gomez-deluxe-edition",
+      "name": "Biker Gomez",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2025-02-06",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-311-nosferatu-1922-black-and-white-edition",
+      "name": "Nosferatu",
+      "subtitle": "1922 - Black & White Edition",
+      "releaseDate": "2025-11-14",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-310-doc-savage-deluxe-edition",
+      "name": "Doc Savage",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2019-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-309-the-mighty-thor-one-12-collective",
+      "name": "The Mighty Thor",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-300-tangerine-badass-for-hire-deluxe-edition",
+      "name": "Tangerine: Badass for Hire",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2025-03-07",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-308-wolverine-deluxe-edition-deadpool-and-wolverine",
+      "name": "Wolverine",
+      "subtitle": "Deluxe Edition - Deadpool & Wolverine",
+      "releaseDate": "2026-01-16",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-307-art-the-clown-deluxe-edition",
+      "name": "Art the Clown",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2025-08-31",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-289-the-decapod-gang-the-carboune-brothers",
+      "name": "The Decapod Gang",
+      "subtitle": "The Carboune Brothers",
+      "releaseDate": "2024-10-17",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-288-doc-nocturnal-the-monster-that-hunts-monsters-deluxe-edition",
+      "name": "Doc Nocturnal",
+      "subtitle": "The Monster That Hunts Monsters - Deluxe Edition",
+      "releaseDate": "2024-10-17",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-306-deadpool-deluxe-edition-deadpool-and-wolverine",
+      "name": "Deadpool",
+      "subtitle": "Deluxe Edition - Deadpool & Wolverine",
+      "releaseDate": "2025-09-25",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-305-beetlejuice-deluxe-edition",
+      "name": "Beetlejuice",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2025-11-15",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-290-junkyard-joe-one-12-collective",
+      "name": "Junkyard Joe",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-10-17",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-304-nightwing-one-12-collective",
+      "name": "Nightwing",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2025-10-23",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-286-the-blank-one-12-collective",
+      "name": "The Blank",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-09-07",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-281-casey-jones-one-12-collective",
+      "name": "Casey Jones",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-07-24",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-280-snake-eyes-commando-edition",
+      "name": "Snake Eyes",
+      "subtitle": "Commando Edition",
+      "releaseDate": "2024-07-24",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-295-doctor-octopus-one-12-collective",
+      "name": "Doctor Octopus",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-12-27",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-303-captain-america-silver-age-edition",
+      "name": "Captain America",
+      "subtitle": "Silver Age Edition",
+      "releaseDate": "2025-09-14",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-299-spider-man-miles-morales-across-the-spiderverse",
+      "name": "Spider-Man: Miles Morales",
+      "subtitle": "Across the Spiderverse",
+      "releaseDate": "2025-02-22",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-287-ghost-rider-and-hell-cycle-set-vengeance-edition",
+      "name": "Ghost Rider & Hell Cycle Set",
+      "subtitle": "Vengeance Edition",
+      "releaseDate": "2024-09-21",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-270-bartholomew-vex-cult-of-the-crimson-goat-edition",
+      "name": "Bartholomew Vex",
+      "subtitle": "Cult of the Crimson Goat Edition",
+      "releaseDate": "2024-02-29",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-294-ghost-face-one-12-collective",
+      "name": "Ghost Face",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-12-21",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-291-robin-golden-age-edition",
+      "name": "Robin",
+      "subtitle": "Golden Age Edition",
+      "releaseDate": "2024-10-29",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-265-void-cadet-gomez-red-eye-knight-edition",
+      "name": "Void Cadet Gomez",
+      "subtitle": "Red-Eye Knight Edition",
+      "releaseDate": "2024-01-16",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-276-olumu-rook-one-12-collective",
+      "name": "Olumu Rook",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-06-06",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-263-white-ranger-one-12-collective",
+      "name": "White Ranger",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-01-09",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-259-bartholomew-vex-one-12-collective",
+      "name": "Bartholomew Vex",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-11-27",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-296-the-joker-golden-age-edition",
+      "name": "The Joker",
+      "subtitle": "Golden Age Edition",
+      "releaseDate": "2025-01-18",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-254-theodore-sodcutter-bag-headed-butcher-edition",
+      "name": "Theodore Sodcutter",
+      "subtitle": "Bag Headed Butcher Edition",
+      "releaseDate": "2021-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-282-duke-deluxe-edition",
+      "name": "Duke",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2024-08-16",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-260-theodore-sodcutter-ghostly-ghoul-edition-previews-exclusive",
+      "name": "Theodore Sodcutter",
+      "subtitle": "Ghostly Ghoul Edition - Previews Exclusive",
+      "releaseDate": "2023-11-28",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-278-king-conan-one-12-collective",
+      "name": "King Conan",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-06-26",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-283-the-mask-deluxe-edition",
+      "name": "The Mask",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2024-08-23",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-251-slugfest-one-12-collective",
+      "name": "Slugfest",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-09-20",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-293-major-toht-and-ark-of-the-covenant-deluxe-boxed-set",
+      "name": "Major Toht and Ark of the Covenant",
+      "subtitle": "Deluxe Boxed Set",
+      "releaseDate": "2024-12-13",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-246-void-cadet-gomez-one-12-collective",
+      "name": "Void Cadet Gomez",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-07-19",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-247-wolverine-uncanny-x-men-edition",
+      "name": "Wolverine",
+      "subtitle": "Uncanny X-Men Edition",
+      "releaseDate": "2023-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-292-indiana-jones-temple-edition",
+      "name": "Indiana Jones",
+      "subtitle": "Temple Edition",
+      "releaseDate": "2024-12-07",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-245-green-ranger-one-12-collective",
+      "name": "Green Ranger",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-07-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-274-firefly-one-12-collective",
+      "name": "Firefly",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-05-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-272-superman-recovery-suit-edition",
+      "name": "Superman",
+      "subtitle": "Recovery Suit Edition",
+      "releaseDate": "2024-03-10",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-284-iron-man-silver-centurion",
+      "name": "Iron Man",
+      "subtitle": "Silver Centurion",
+      "releaseDate": "2024-08-27",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-271-the-shadow-one-12-collective",
+      "name": "The Shadow",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-03-08",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-273-storm-shadow-one-12-collective",
+      "name": "Storm Shadow",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-03-12",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-266-pruneface-one-12-collective",
+      "name": "Pruneface",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-02-04",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-285-ghost-spider-one-12-collective",
+      "name": "Ghost-Spider",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-08-28",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-243-bricks-and-bread-accessory-pack-one-12-collective",
+      "name": "Bricks and Bread Accessory Pack",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-06-02",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-253-the-owlman-one-12-collective",
+      "name": "The Owlman",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-10-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-232-death-adder-one-12-collective",
+      "name": "Death Adder",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2025-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-225-atticus-doom-necroverse-edition",
+      "name": "Atticus Doom",
+      "subtitle": "Necroverse Edition",
+      "releaseDate": "2018-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-279-dick-tracy-vs-flattop-boxed-set",
+      "name": "Dick Tracy vs Flattop",
+      "subtitle": "Boxed Set",
+      "releaseDate": "2019-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-228-cuzin-eddi-eddi-and-bella-4eva-edition",
+      "name": "Cuzin Eddi",
+      "subtitle": "Eddi and Bella 4eva Edition",
+      "releaseDate": "2023-01-13",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-226-graveyard-gremlins-one-12-collective",
+      "name": "Graveyard Gremlins",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-01-04",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-252-robin-one-12-collective",
+      "name": "Robin",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-10-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-213-local-112-union-gomez-one-12-collective",
+      "name": "Local 112 Union Gomez",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-10-05",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-212-hawk-p-40-howling-fury-edition",
+      "name": "Hawk P-40",
+      "subtitle": "Howling Fury Edition",
+      "releaseDate": "2024-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-214-golden-age-batman-caped-crusader-edition",
+      "name": "Golden Age Batman",
+      "subtitle": "Caped Crusader Edition",
+      "releaseDate": "2022-10-12",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-267-green-goblin-deluxe-edition",
+      "name": "Green Goblin",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2024-02-05",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-264-the-amazing-spider-man-deluxe-edition",
+      "name": "The Amazing Spider-Man",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2024-01-15",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-262-doctor-doom-one-12-collective",
+      "name": "Doctor Doom",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-12-16",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-206-krig-the-murder-hornet",
+      "name": "Krig",
+      "subtitle": "The Murder Hornet",
+      "releaseDate": "2022-04-15",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-215-atticus-doom-magical-enhancement-kit-one-12-collective",
+      "name": "Atticus Doom Magical Enhancement Kit",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-10-17",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-205-glow-in-the-dark-multicolor-skulls-12-pack-one-12-collective",
+      "name": "Glow-in-the-Dark Multicolor Skulls 12 Pack",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-03-21",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-277-the-batman-one-12-collective",
+      "name": "The Batman",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2024-06-17",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-268-snake-eyes-deluxe-edition",
+      "name": "Snake Eyes",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2024-02-05",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-202-double-trouble-weapons-expansion-pack-one-12-collective",
+      "name": "Double Trouble Weapons Expansion Pack",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-02-23",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-203-atticus-doom-one-12-collective",
+      "name": "Atticus Doom",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-03-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-231-barbarian-booster-kit-one-12-collective",
+      "name": "Barbarian Booster Kit",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-01-23",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-219-wave-rider-and-captain-nemo-expansion-pack-one-12-collective",
+      "name": "Wave Rider & Captain Nemo Expansion Pack",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-12-03",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-242-nautilus-crew-builder-set-one-12-collective",
+      "name": "Nautilus Crew Builder Set",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-05-24",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-350-neon-nightmare-multicolor-four-skull-set-one-12-collective",
+      "name": "Neon Nightmare Multicolor Four Skull Set",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-01-21",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-201-silent-screamers-nosferatu-symphany-of-horror-edition",
+      "name": "Silent Screamers: Nosferatu",
+      "subtitle": "Symphany of Horror Edition",
+      "releaseDate": "2022-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-248-red-pyramid-thing-one-12-collective",
+      "name": "Red Pyramid Thing",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-09-08",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-234-alien-xenomorph-concept-edition",
+      "name": "Alien",
+      "subtitle": "Xenomorph Concept Edition",
+      "releaseDate": "2023-01-27",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-199-holiday-gomez-one-12-collective",
+      "name": "Holiday Gomez",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-12-10",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-198-slugfest-s-emporium-advent-calendar-one-12-collective",
+      "name": "Slugfest\u2019s Emporium Advent Calendar",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-12-10",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-239-michael-myers-halloween-ii-1981",
+      "name": "Michael Myers",
+      "subtitle": "Halloween II 1981",
+      "releaseDate": "2023-04-28",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-200-captain-nemo-one-12-collective",
+      "name": "Captain Nemo",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-01-07",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-204-spider-man-2099-one-12-collective",
+      "name": "Spider-Man 2099",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-03-29",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-192-cosmic-color-multicolor-skulls-one-12-collective",
+      "name": "Cosmic Color Multicolor Skulls",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-09-22",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-191-hawk-p-40-one-12-collective",
+      "name": "Hawk P-40",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-09-08",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-224-the-crow-one-12-collective",
+      "name": "The Crow",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-12-19",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-222-alien-one-12-collective",
+      "name": "Alien",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-12-06",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-196-mossquatch-black-mold-edition-with-phantom-knight-expansion-pac",
+      "name": "Mossquatch",
+      "subtitle": "Black Mold Edition with Phantom Knight Expansion Pack",
+      "releaseDate": "2021-12-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-189-doc-nocturnal-red-death",
+      "name": "Doc Nocturnal",
+      "subtitle": "Red Death",
+      "releaseDate": "2021-08-16",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-235-superman-man-of-steel-edition",
+      "name": "Superman",
+      "subtitle": "Man of Steel Edition",
+      "releaseDate": "2023-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-185-the-joker-gotham-by-gaslight",
+      "name": "The Joker",
+      "subtitle": "Gotham by Gaslight",
+      "releaseDate": "2021-07-28",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-216-black-skulls-death-brokers-one-12-collective",
+      "name": "Black Skulls Death Brokers",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-10-27",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-186-return-of-the-baker-s-dozen-one-12-collective",
+      "name": "Return of the Baker's Dozen",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-08-03",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-257-roadblock-one-12-collective",
+      "name": "Roadblock",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-11-18",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-261-fantastic-four-deluxe-steel-boxed-set-one-12-collective",
+      "name": "Fantastic Four Deluxe Steel Boxed Set",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2019-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-183-hoodz-vapor-one-12-collective",
+      "name": "Hoodz: Vapor",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-06-09",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-250-solomon-kane-one-12-collective",
+      "name": "Solomon Kane",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-09-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-258-batman-gotham-by-gaslight",
+      "name": "Batman",
+      "subtitle": "Gotham by Gaslight",
+      "releaseDate": "2023-11-20",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-227-victorian-vigilante-accessories-pack-one-12-collective",
+      "name": "Victorian Vigilante Accessories Pack",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-01-12",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-229-bishop-one-12-collective",
+      "name": "Bishop",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-01-16",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-180-krig-13-the-black-spartan",
+      "name": "Krig 13",
+      "subtitle": "The Black Spartan",
+      "releaseDate": "2021-05-03",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-181-krig-the-pale-drivers-edition",
+      "name": "Krig",
+      "subtitle": "The Pale Drivers Edition",
+      "releaseDate": "2021-05-03",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-193-mossquatch-with-hazard-squad-adventure-pack-one-12-collective",
+      "name": "Mossquatch! With Hazard Squad Adventure Pack",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-10-08",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-188-bag-of-primer-gray-skulls-one-12-collective",
+      "name": "Bag of Primer-Gray Skulls",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-08-05",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-238-ultraman-one-12-collective",
+      "name": "Ultraman",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-04-17",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-179-hazard-squad-gold-commander-gomez-valley-of-the-mossquatch",
+      "name": "Hazard Squad Gold Commander Gomez",
+      "subtitle": "Valley Of The Mossquatch",
+      "releaseDate": "2021-04-20",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-256-zack-snyder-s-justice-league-deluxe-steel-boxed-set",
+      "name": "Zack Snyder\u2019s Justice League",
+      "subtitle": "Deluxe Steel Boxed Set",
+      "releaseDate": "2023-11-10",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-177-black-skulls-death-brigade-one-12-collective",
+      "name": "Black Skulls Death Brigade",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-03-22",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-187-cut-and-stitch-soft-goods-expansion-pack-one-12-collective",
+      "name": "Cut & Stitch - Soft Goods Expansion Pack",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-08-05",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-176-dragon-clan-weapons-pack-one-12-collective",
+      "name": "Dragon Clan Weapons Pack",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-03-19",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-240-destro-one-12-collective",
+      "name": "Destro",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-05-03",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-175-baron-bends-tectonic-disruptor",
+      "name": "Baron Bends",
+      "subtitle": "Tectonic Disruptor",
+      "releaseDate": "2021-03-11",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-255-morbius-one-12-collective",
+      "name": "Morbius",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-10-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-221-constantine-deluxe-edition",
+      "name": "Constantine",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2022-12-05",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-167-batman-supreme-knight-darkest-dawn",
+      "name": "Batman Supreme Knight",
+      "subtitle": "Darkest Dawn",
+      "releaseDate": "2021-01-18",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-166-white-skull-agent",
+      "name": "White Skull",
+      "subtitle": "Agent",
+      "releaseDate": "2021-01-08",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-349-crimson-cranium-2-pack-one-12-collective",
+      "name": "Crimson Cranium 2-Pack",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-01-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-218-predator-deluxe-edition",
+      "name": "Predator",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2022-12-02",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-161-gomez-clan-of-the-crimson-dragon",
+      "name": "Gomez",
+      "subtitle": "Clan of the Crimson Dragon",
+      "releaseDate": "2020-12-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-237-ghost-rider-and-hell-cycle-set-one-12-collective",
+      "name": "Ghost Rider & Hell Cycle Set",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2023-04-06",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-178-dr-fate-one-12-collective",
+      "name": "Dr. Fate",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-04-15",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-190-jason-voorhees-friday-the-13th-part-3-reissue",
+      "name": "Jason Voorhees",
+      "subtitle": "Friday the 13th Part 3 - Reissue",
+      "releaseDate": "2021-08-17",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-157-baker-s-dozen-weapons-pack-one-12-collective",
+      "name": "Baker's Dozen Weapons Pack",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-11-12",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-159-glow-in-the-dark-bag-of-skulls-one-12-collective",
+      "name": "Glow-in-the-Dark Bag of Skulls",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-11-12",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-158-phantom-knight-s-membership-kit-one-12-collective",
+      "name": "Phantom Knight's Membership Kit",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-11-12",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-156-gomez-of-death-one-12-collective",
+      "name": "Gomez of Death",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-11-12",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-244-the-texas-chainsaw-massacre-1974-leatherface-deluxe-edition",
+      "name": "The Texas Chainsaw Massacre (1974): Leatherface",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2023-07-05",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-173-hazard-squad-weapons-pack-one-12-collective",
+      "name": "Hazard Squad Weapons Pack",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-03-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-150-batman-supreme-knight-shadow-edition",
+      "name": "Batman Supreme Knight",
+      "subtitle": "Shadow Edition",
+      "releaseDate": "2020-10-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-217-death-dealer-one-12-collective",
+      "name": "Death Dealer",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2022-11-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-148-house-of-the-golden-skulls-gold-skull-ninja-one-12-collective",
+      "name": "House of The Golden Skulls: Gold Skull Ninja",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-08-20",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-142-nosferatu-silent-screamers",
+      "name": "Nosferatu",
+      "subtitle": "Silent Screamers",
+      "releaseDate": "2020-07-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-170-superman-1978-edition",
+      "name": "Superman",
+      "subtitle": "1978 Edition",
+      "releaseDate": "2021-02-10",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-182-wonder-woman-modern",
+      "name": "Wonder Woman",
+      "subtitle": "Modern",
+      "releaseDate": "2021-05-26",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-141-blade-mezco-direct-edition",
+      "name": "Blade",
+      "subtitle": "Mezco Direct Edition",
+      "releaseDate": "2020-05-26",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-139-bag-of-skulls-one-12-collective",
+      "name": "Bag of Skulls",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-05-06",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-164-dr-zaius-one-12-collective",
+      "name": "Dr. Zaius",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-12-31",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-241-mr-freeze-deluxe-edition",
+      "name": "Mr. Freeze",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2023-05-08",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-165-two-face-one-12-collective",
+      "name": "Two-Face",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-01-08",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-184-thanos-one-12-collective",
+      "name": "Thanos",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-06-09",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-136-gomez-the-roach-with-the-golden-head-gomez-issued-top-secret-de",
+      "name": "Gomez",
+      "subtitle": "The Roach with the Golden Head + Gomez Issued Top Secret Decoder Ring Bundle",
+      "releaseDate": "2020-02-22",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-236-batman-1989-edition",
+      "name": "Batman",
+      "subtitle": "1989 Edition",
+      "releaseDate": "2023-03-28",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-194-conan-the-barbarian-one-12-collective",
+      "name": "Conan The Barbarian",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-10-21",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-147-spider-man-far-from-home-stealth-suit-previews-edition",
+      "name": "Spider-Man",
+      "subtitle": "Far From Home - Stealth Suit - Previews Edition",
+      "releaseDate": "2020-08-19",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-163-kgbeast-one-12-collective",
+      "name": "KGBeast",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-12-07",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-153-popeye-and-bluto-stormy-seas-ahead-deluxe",
+      "name": "Popeye & Bluto",
+      "subtitle": "Stormy Seas Ahead Deluxe",
+      "releaseDate": "2020-10-26",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-162-batman-supreme-knight-blue-previews-exclusive",
+      "name": "Batman Supreme Knight",
+      "subtitle": "Blue - Previews Exclusive",
+      "releaseDate": "2020-12-02",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-127-gomez-lone-roach-and-grub",
+      "name": "Gomez",
+      "subtitle": "Lone Roach & Grub",
+      "releaseDate": "2019-11-22",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-126-rumble-society-pink-skulls-chaos-club-one-12-collective",
+      "name": "Rumble Society: Pink Skulls Chaos Club",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2019-11-22",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-152-harley-quinn-playing-for-keeps-previews-edition",
+      "name": "Harley Quinn",
+      "subtitle": "Playing For Keeps - Previews Edition",
+      "releaseDate": "2020-10-23",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-154-black-bolt-and-lockjaw-set-one-12-collective",
+      "name": "Black Bolt & Lockjaw Set",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-10-28",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-149-gambit-one-12-collective",
+      "name": "Gambit",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-08-21",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-124-wonder-woman-classic-edition",
+      "name": "Wonder Woman",
+      "subtitle": "Classic Edition",
+      "releaseDate": "2019-11-15",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-122-gomez-stealth-ops-edition",
+      "name": "Gomez",
+      "subtitle": "Stealth Ops Edition",
+      "releaseDate": "2019-10-03",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-121-batman-sovereign-knight-vs-black-mask-mezco-direct-edition",
+      "name": "Batman: Sovereign Knight vs Black Mask",
+      "subtitle": "Mezco Direct Edition",
+      "releaseDate": "2019-10-03",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-151-magneto-marvel-now-previews-exclusive",
+      "name": "Magneto",
+      "subtitle": "Marvel Now - Previews Exclusive",
+      "releaseDate": "2020-10-16",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-168-hellboy-2019-previews-exclusive",
+      "name": "Hellboy",
+      "subtitle": "2019 - Previews Exclusive",
+      "releaseDate": "2021-01-27",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-114-gomez-shadow-assassin-white-edition",
+      "name": "Gomez",
+      "subtitle": "Shadow Assassin White Edition",
+      "releaseDate": "2019-08-11",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-171-iron-fist-one-12-collective",
+      "name": "Iron Fist",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2021-02-12",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-145-batman-supreme-knight-one-12-collective",
+      "name": "Batman Supreme Knight",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-08-10",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-113-gomez-shadow-assassin-edition",
+      "name": "Gomez",
+      "subtitle": "Shadow Assassin Edition",
+      "releaseDate": "2019-07-30",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-137-spider-man-far-from-home-deluxe-edition",
+      "name": "Spider-Man",
+      "subtitle": "Far From Home - Deluxe Edition",
+      "releaseDate": "2020-04-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-146-harley-quinn-deluxe-edition",
+      "name": "Harley Quinn",
+      "subtitle": "Deluxe Edition",
+      "releaseDate": "2020-08-11",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-111-gomez-street-edition",
+      "name": "Gomez",
+      "subtitle": "Street Edition",
+      "releaseDate": "2019-07-17",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-112-moon-knight-crescent-edition",
+      "name": "Moon Knight",
+      "subtitle": "Crescent Edition",
+      "releaseDate": "2019-07-17",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-110-commissioner-james-gordon-and-bat-signal-one-12-collective",
+      "name": "Commissioner James Gordon and Bat Signal",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2019-07-17",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-130-magneto-one-12-collective",
+      "name": "Magneto",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-01-02",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-144-john-wick-chapter-2-deluxe-edition-mezco-direct-exclusive",
+      "name": "John Wick",
+      "subtitle": "Chapter 2 - Deluxe Edition - Mezco Direct Exclusive",
+      "releaseDate": "2020-07-31",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-129-aquaman-2019",
+      "name": "Aquaman",
+      "subtitle": "2019",
+      "releaseDate": "2019-12-13",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-160-hellboy-2019",
+      "name": "Hellboy",
+      "subtitle": "2019",
+      "releaseDate": "2020-11-13",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-132-moon-knight-one-12-collective",
+      "name": "Moon Knight",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2020-01-24",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-133-pennywise-it-2017",
+      "name": "Pennywise",
+      "subtitle": "It 2017",
+      "releaseDate": "2020-01-31",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-140-captain-marvel-mcu",
+      "name": "Captain Marvel",
+      "subtitle": "MCU",
+      "releaseDate": "2020-05-22",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-115-gomez-agent-edition-toy-fair-exclusive-with-bonus-and-mezco-dir",
+      "name": "Gomez",
+      "subtitle": "Agent Edition - Toy Fair Exclusive with Bonus, and Mezco Direct Exclsuive Comic Edition",
+      "releaseDate": "2019-07-21",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-97-blade-toy-fair-new-york",
+      "name": "Blade",
+      "subtitle": "Toy Fair New York",
+      "releaseDate": "2019-02-16",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-131-the-warriors-deluxe-box-set",
+      "name": "The Warriors",
+      "subtitle": "Deluxe Box Set",
+      "releaseDate": "2020-01-20",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-93-popeye-deluxe-sailor-edition",
+      "name": "Popeye",
+      "subtitle": "Deluxe Sailor Edition",
+      "releaseDate": "2019-01-21",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-107-diabolik-previews-exclusive",
+      "name": "Diabolik",
+      "subtitle": "Previews Exclusive",
+      "releaseDate": "2019-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-135-green-lantern-hal-jordan-previews-exclusive",
+      "name": "Green Lantern Hal Jordan",
+      "subtitle": "Previews Exclusive",
+      "releaseDate": "2020-02-19",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-134-x-men-cable-previews-exclusive",
+      "name": "X-Men Cable",
+      "subtitle": "Previews Exclusive",
+      "releaseDate": "2020-02-05",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-106-daredevil-vigilante-edition-netflix-mezco-direct-exclusive",
+      "name": "Daredevil",
+      "subtitle": "Vigilante Edition - Netflix - Mezco Direct Exclusive",
+      "releaseDate": "2019-05-30",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-102-batman-sovereign-knight-onyx-edition-mezco-direct-exclusive",
+      "name": "Batman Sovereign Knight",
+      "subtitle": "Onyx Edition - Mezco Direct Exclusive",
+      "releaseDate": "2019-03-21",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-118-john-stewart-the-green-lantern-classic-previews-exclusive",
+      "name": "John Stewart - The Green Lantern",
+      "subtitle": "Classic - Previews Exclusive",
+      "releaseDate": "2019-08-22",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-123-cyclops-classic-previews-exclusive",
+      "name": "Cyclops",
+      "subtitle": "Classic - Previews Exclusive",
+      "releaseDate": "2019-11-13",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-125-freddy-krueger-one-12-collective",
+      "name": "Freddy Krueger",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2019-11-22",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-90-spider-man-homecoming-homemade-mcu",
+      "name": "Spider-Man",
+      "subtitle": "Homecoming - Homemade - MCU",
+      "releaseDate": "2019-01-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-128-cable-one-12-collective",
+      "name": "Cable",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2019-12-06",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-82-iron-man-armor-model-42-edition",
+      "name": "Iron Man",
+      "subtitle": "Armor Model 42 Edition",
+      "releaseDate": "2018-10-23",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-79-doctor-strange-first-appearance-edition",
+      "name": "Doctor Strange",
+      "subtitle": "First Appearance Edition",
+      "releaseDate": "2018-10-04",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-80-wolverine-ronin-one-12-collective",
+      "name": "Wolverine Ronin",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-10-04",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-105-daredevil-netflix",
+      "name": "Daredevil",
+      "subtitle": "Netflix",
+      "releaseDate": "2019-05-29",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-120-cyclops-one-12-collective",
+      "name": "Cyclops",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2019-09-03",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-119-hela-ragnorok-mcu",
+      "name": "Hela Ragnorok",
+      "subtitle": "MCU",
+      "releaseDate": "2019-09-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-116-batman-sovereign-knight-blue-previews-exclusive",
+      "name": "Batman Sovereign Knight",
+      "subtitle": "Blue - Previews Exclusive",
+      "releaseDate": "2019-08-07",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-73-punisher-special-ops-edition-mezco-summer-exclusive",
+      "name": "Punisher",
+      "subtitle": "Special Ops Edition - Mezco Summer Exclusive",
+      "releaseDate": "2018-07-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-91-dawn-of-the-dead-boxed-set-one-12-collective",
+      "name": "Dawn of the Dead Boxed Set",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2019-01-04",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-72-batman-beyond-one-12-collective",
+      "name": "Batman Beyond",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-109-the-joker-clown-prince-of-crime-edition",
+      "name": "The Joker",
+      "subtitle": "Clown Prince of Crime Edition",
+      "releaseDate": "2019-06-19",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-108-logan-one-12-collective",
+      "name": "Logan",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2019-06-03",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-117-punisher-netflix",
+      "name": "Punisher",
+      "subtitle": "Netflix",
+      "releaseDate": "2019-08-19",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-96-catwoman-purple-mezco-direct-exclusive",
+      "name": "Catwoman",
+      "subtitle": "Purple - Mezco Direct Exclusive",
+      "releaseDate": "2019-02-06",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-104-batman-sovereign-knight-one-12-collective",
+      "name": "Batman Sovereign Knight",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2019-05-13",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-92-darkseid-one-12-collective",
+      "name": "Darkseid",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2019-01-11",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-101-blade-one-12-collective",
+      "name": "Blade",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2019-03-21",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-99-jason-voorhees-friday-the-13th-part-3",
+      "name": "Jason Voorhees",
+      "subtitle": "Friday the 13th Part 3",
+      "releaseDate": "2019-02-21",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-84-popeye-one-12-collective",
+      "name": "Popeye",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-11-30",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-67-batman-ascending-knight-blackout-shanghai-toy-show",
+      "name": "Batman Ascending Knight",
+      "subtitle": "Blackout - Shanghai Toy Show",
+      "releaseDate": "2018-04-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-94-iron-man-stealth-blue-previews-exclusive",
+      "name": "Iron Man",
+      "subtitle": "Stealth Blue - Previews Exclusive",
+      "releaseDate": "2019-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-103-ghostbusters-deluxe-box-set",
+      "name": "Ghostbusters",
+      "subtitle": "Deluxe Box Set",
+      "releaseDate": "2019-04-23",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-83-catwoman-one-12-collective",
+      "name": "Catwoman",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-10-26",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-95-black-panther-mcu",
+      "name": "Black Panther",
+      "subtitle": "MCU",
+      "releaseDate": "2019-02-05",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-81-ash-williams-one-12-collective",
+      "name": "Ash Williams",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-10-16",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-61-batman-ascending-knight-blackout-toy-fair-new-york",
+      "name": "Batman Ascending Knight",
+      "subtitle": "Blackout - Toy Fair New York",
+      "releaseDate": "2018-02-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-87-iron-man-one-12-collective",
+      "name": "Iron Man",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-12-14",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-78-alex-delarge-one-12-collective",
+      "name": "Alex Delarge",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-10-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-85-batman-tactical-suit-justice-league-dceu",
+      "name": "Batman",
+      "subtitle": "Tactical Suit Justice League - DCEU",
+      "releaseDate": "2018-12-10",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-75-aquaman-justice-league-dceu",
+      "name": "Aquaman",
+      "subtitle": "Justice League - DCEU",
+      "releaseDate": "2018-08-14",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-70-the-joker-deluxe",
+      "name": "The Joker",
+      "subtitle": "Deluxe",
+      "releaseDate": "2018-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-86-hulk-ragnarok-mcu",
+      "name": "Hulk",
+      "subtitle": "Ragnarok - MCU",
+      "releaseDate": "2018-12-14",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-89-thor-ragnarok-mcu",
+      "name": "Thor",
+      "subtitle": "Ragnarok - MCU",
+      "releaseDate": "2018-12-28",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-77-michael-myers-defenders-previews-exclusive",
+      "name": "Michael Myers",
+      "subtitle": "Defenders - Previews Exclusive",
+      "releaseDate": "2018-09-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-88-doctor-strange-defenders-previews-exclusive",
+      "name": "Doctor Strange",
+      "subtitle": "Defenders - Previews Exclusive",
+      "releaseDate": "2018-12-18",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-50-red-skull-classic-new-york-comic-con-2017",
+      "name": "Red Skull",
+      "subtitle": "Classic - New York Comic Con 2017",
+      "releaseDate": "2017-10-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-49-wolverine-tiger-stripe-new-york-comic-con-2017",
+      "name": "Wolverine",
+      "subtitle": "Tiger Stripe - New York Comic Con 2017",
+      "releaseDate": "2017-10-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-68-batman-ascending-knight-black-mezco-direct-exclusive-batman-day-",
+      "name": "Batman Ascending Knight",
+      "subtitle": "Black - Mezco Direct Exclusive - Batman Day Exclusive",
+      "releaseDate": "2018-04-27",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-100-spider-man-homecoming-mcu",
+      "name": "Spider-Man",
+      "subtitle": "Homecoming - MCU",
+      "releaseDate": "2019-03-14",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-69-batman-ascending-knight-blue-previews-exclusive",
+      "name": "Batman Ascending Knight",
+      "subtitle": "Blue - Previews Exclusive",
+      "releaseDate": "2018-05-30",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-66-batman-ascending-knight-one-12-collective",
+      "name": "Batman Ascending Knight",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-04-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-45-deadpool-x-men-san-diego-comic-con",
+      "name": "Deadpool",
+      "subtitle": "X-Men - San Diego Comic Con",
+      "releaseDate": "2017-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-74-wonder-woman-movie-dceu",
+      "name": "Wonder Woman",
+      "subtitle": "Movie - DCEU",
+      "releaseDate": "2018-08-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-46-spider-man-miles-morales-san-diego-comic-con",
+      "name": "Spider-Man",
+      "subtitle": "Miles Morales - San Diego Comic Con",
+      "releaseDate": "2017-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-64-wolverine-x-force-previews-exclusive",
+      "name": "Wolverine",
+      "subtitle": "X-Force - Previews Exclusive",
+      "releaseDate": "2018-03-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-71-spider-man-black-suit-previews-exclusive",
+      "name": "Spider-Man",
+      "subtitle": "Black Suit - Previews Exclusive",
+      "releaseDate": "2018-06-27",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-76-doctor-strange-one-12-collective",
+      "name": "Doctor Strange",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-09-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-63-deathstroke-stealth-previews-exclusive",
+      "name": "Deathstroke",
+      "subtitle": "Stealth - Previews Exclusive",
+      "releaseDate": "2018-03-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-62-batman-knightmare-batman-vs-superman-dceu",
+      "name": "Batman",
+      "subtitle": "Knightmare - Batman vs Superman - DCEU",
+      "releaseDate": "2018-03-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-60-deadpool-x-force-previews-exclusive",
+      "name": "Deadpool",
+      "subtitle": "X-Force - Previews Exclusive",
+      "releaseDate": "2018-02-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-58-wolverine-brown-suit",
+      "name": "Wolverine",
+      "subtitle": "Brown Suit",
+      "releaseDate": "2018-01-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-65-wolverine-old-man-logan-one-12-collective",
+      "name": "Wolverine Old Man Logan",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2018-04-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-42-punisher-classic-mezco-direct-exclusive",
+      "name": "Punisher",
+      "subtitle": "Classic - Mezco Direct Exclusive",
+      "releaseDate": "2017-05-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-57-deadpool-mezco-direct-exclusive",
+      "name": "Deadpool",
+      "subtitle": "Mezco Direct Exclusive",
+      "releaseDate": "2017-12-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-48-deadpool-blackout-toy-fair-new-york",
+      "name": "Deadpool",
+      "subtitle": "Blackout - Toy Fair New York",
+      "releaseDate": "2017-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-36-punisher-blackout-toy-fair-new-york",
+      "name": "Punisher",
+      "subtitle": "Blackout - Toy Fair New York",
+      "releaseDate": "2017-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-56-harley-quinn-suicide-squad-dceu",
+      "name": "Harley Quinn",
+      "subtitle": "Suicide Squad - DCEU",
+      "releaseDate": "2017-12-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-52-superman-red-son",
+      "name": "Superman",
+      "subtitle": "Red Son",
+      "releaseDate": "2017-11-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-55-deathstroke-one-12-collective",
+      "name": "Deathstroke",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2017-12-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-54-black-adam-previews-exclusive",
+      "name": "Black Adam",
+      "subtitle": "Previews Exclusive",
+      "releaseDate": "2017-12-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-47-arsenal-previews-exclusive",
+      "name": "Arsenal",
+      "subtitle": "Previews Exclusive",
+      "releaseDate": "2017-08-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-59-spider-man-mezco-direct-exclusive",
+      "name": "Spider-Man",
+      "subtitle": "Mezco Direct Exclusive",
+      "releaseDate": "2018-02-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-28-doorway-environment-mezco-direct-exclusive",
+      "name": "Doorway Environment",
+      "subtitle": "Mezco Direct Exclusive",
+      "releaseDate": "2017-01-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-29-frankenstein-w-doorway-environment-mezco-direct-exclusive",
+      "name": "Frankenstein w/ Doorway Environment",
+      "subtitle": "Mezco Direct Exclusive",
+      "releaseDate": "2017-01-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-53-red-skull-shadowland-new-york-comic-con",
+      "name": "Red Skull",
+      "subtitle": "Shadowland - New York Comic Con",
+      "releaseDate": "2017-12-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-22-daredevil-shadowland-new-york-comic-con",
+      "name": "Daredevil",
+      "subtitle": "Shadowland - New York Comic Con",
+      "releaseDate": "2016-10-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-21-judge-dredd-w-lawmaster-set-dark-blue-variant-new-york-comic-con",
+      "name": "Judge Dredd w/ Lawmaster Set",
+      "subtitle": "Dark Blue Variant - New York Comic Con",
+      "releaseDate": "2016-10-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-40-the-joker-deluxe-previews-exclusive",
+      "name": "The Joker",
+      "subtitle": "Deluxe - Previews Exclusive",
+      "releaseDate": "2017-03-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-39-punisher-deluxe-previews-exclusive",
+      "name": "Punisher",
+      "subtitle": "Deluxe - Previews Exclusive",
+      "releaseDate": "2017-03-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-35-daredevil-classic-previews-exclusive",
+      "name": "Daredevil",
+      "subtitle": "Classic - Previews Exclusive",
+      "releaseDate": "2017-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-27-frankenstein-color-previews-exclusive",
+      "name": "Frankenstein",
+      "subtitle": "Color - Previews Exclusive",
+      "releaseDate": "2017-01-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-17-captain-america-deluxe-classic-version-2016-con-exclusive-san-di",
+      "name": "Captain America",
+      "subtitle": "Deluxe Classic Version - 2016 Con Exclusive (San Diego Comic Con)",
+      "releaseDate": "2016-07-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-34-reverse-flash-zoom-previews-exclusive",
+      "name": "Reverse Flash (Zoom)",
+      "subtitle": "Previews Exclusive",
+      "releaseDate": "2017-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-19-spock-mirror-mirror-thinkgeek",
+      "name": "Spock",
+      "subtitle": "Mirror Mirror - ThinkGeek",
+      "releaseDate": "2016-08-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-18-judge-dredd-and-lawmaster-set-black-white-variant-san-diego-comi",
+      "name": "Judge Dredd & Lawmaster Set",
+      "subtitle": "Black/White Variant - San Diego Comic Con",
+      "releaseDate": "2016-07-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-44-space-ghost-glow-in-the-dark-entertainment-earth",
+      "name": "Space Ghost",
+      "subtitle": "Glow in the Dark - Entertainment Earth",
+      "releaseDate": "2017-06-02",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-16-dawn-of-justice-armored-batman-batman-vs-superman-armored-dceu-s",
+      "name": "Dawn of Justice: Armored Batman",
+      "subtitle": "Batman vs Superman - Armored - DCEU - San Diego Comic Con",
+      "releaseDate": "2016-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-43-space-ghost-one-12-collective",
+      "name": "Space Ghost",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2017-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-51-superman-classic",
+      "name": "Superman",
+      "subtitle": "Classic",
+      "releaseDate": "2017-11-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-33-commander-steve-rogers-previews-exclusive",
+      "name": "Commander Steve Rogers",
+      "subtitle": "Previews Exclusive",
+      "releaseDate": "2017-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-32-green-arrow-one-12-collective",
+      "name": "Green Arrow",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2017-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-25-frankenstein-cage-variant-vegas-dead-dolls",
+      "name": "Frankenstein",
+      "subtitle": "Cage Variant - Vegas Dead Dolls",
+      "releaseDate": "2016-11-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-15-spock-cage-variant-vegas-dead-dolls",
+      "name": "Spock",
+      "subtitle": "Cage Variant - Vegas Dead Dolls",
+      "releaseDate": "2016-07-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-38-the-flash-red",
+      "name": "The Flash",
+      "subtitle": "Red",
+      "releaseDate": "2017-03-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-30-daredevil-red",
+      "name": "Daredevil",
+      "subtitle": "Red",
+      "releaseDate": "2017-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-24-captain-america-modern",
+      "name": "Captain America",
+      "subtitle": "Modern",
+      "releaseDate": "2016-11-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-8-spock-toy-fair-new-york",
+      "name": "Spock",
+      "subtitle": "Toy Fair New York",
+      "releaseDate": "2016-02-04",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-20-captain-kirk-one-12-collective",
+      "name": "Captain Kirk",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2016-09-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-41-shazam-one-12-collective",
+      "name": "Shazam",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2017-05-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-14-sulu-batman-vs-superman-dceu",
+      "name": "Sulu",
+      "subtitle": "Batman vs Superman - DCEU",
+      "releaseDate": "2016-07-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-37-dawn-of-justice-superman-batman-vs-superman-dceu",
+      "name": "Dawn of Justice: Superman",
+      "subtitle": "Batman vs Superman - DCEU",
+      "releaseDate": "2017-03-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-26-dawn-of-justice-batman-batman-vs-superman-dceu",
+      "name": "Dawn of Justice: Batman",
+      "subtitle": "Batman vs Superman - DCEU",
+      "releaseDate": "2016-12-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-10-spock-one-12-collective",
+      "name": "Spock",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2016-05-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-11-judge-dredd-lawmaster-black-standalone",
+      "name": "Judge Dredd: Lawmaster",
+      "subtitle": "Black - Standalone",
+      "releaseDate": "2016-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-13-batman-the-dark-knight-returns-mutant-leader-one-12-collective",
+      "name": "Batman The Dark Knight Returns Mutant Leader",
+      "subtitle": "One:12 Collective",
+      "releaseDate": "2016-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-23-judge-dredd-2015-con-exclusive-black-and-white-variant-new-york-",
+      "name": "Judge Dredd",
+      "subtitle": "2015 Con Exclusive Black & White Variant (New York Comic Con)",
+      "releaseDate": "2015-10-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-9-judge-dredd-w-lawmaster-set-blue-previews-exclusive",
+      "name": "Judge Dredd w/ Lawmaster Set",
+      "subtitle": "Blue - Previews Exclusive",
+      "releaseDate": "2016-05-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-12-batman-the-dark-knight-returns-batman-mutant-2-pack-cursed-earth",
+      "name": "Batman The Dark Knight Returns Batman/Mutant 2-pack",
+      "subtitle": "Cursed Earth - Previews Exclusive",
+      "releaseDate": "2016-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-7-judge-dredd-cursed-earth-previews-exclusive",
+      "name": "Judge Dredd",
+      "subtitle": "Cursed Earth - Previews Exclusive",
+      "releaseDate": "2015-10-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-5-batman-the-dark-knight-returns-dark-blue-yellow-puerto-rico-comic",
+      "name": "Batman The Dark Knight Returns",
+      "subtitle": "Dark Blue/Yellow - Puerto Rico Comic Con",
+      "releaseDate": "2015-05-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-1-batman-the-dark-knight-returns-black-white-toy-fair-new-york",
+      "name": "Batman The Dark Knight Returns",
+      "subtitle": "Black/White - Toy Fair New York",
+      "releaseDate": "2015-01-12",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-6-judge-dredd-black",
+      "name": "Judge Dredd",
+      "subtitle": "Black",
+      "releaseDate": "2015-10-01",
+      "demand": 1.45
+    },
+    {
+      "id": "o12t-4-batman-the-dark-knight-returns-blue-yellow-previews-exclusive",
+      "name": "Batman The Dark Knight Returns",
+      "subtitle": "Blue/Yellow - Previews Exclusive",
+      "releaseDate": "2015-05-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-3-batman-the-dark-knight-returns-dark-blue-black-mezco-direct-exclu",
+      "name": "Batman The Dark Knight Returns",
+      "subtitle": "Dark Blue/Black - Mezco Direct Exclusive",
+      "releaseDate": "2015-05-01",
+      "demand": 1.55
+    },
+    {
+      "id": "o12t-2-batman-the-dark-knight-returns-black-version-black-gray",
+      "name": "Batman: The Dark Knight Returns",
+      "subtitle": "Black Version (Black/Gray)",
+      "releaseDate": "2015-03-01",
+      "demand": 1.55
+    }
+  ],
+  "mezcoExtra": [
+    {
+      "id": "mez3-ascending-knight",
+      "name": "Batman",
+      "subtitle": "Ascending Knight",
+      "releaseDate": "2017-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-sovereign-knight",
+      "name": "Batman",
+      "subtitle": "Sovereign Knight",
+      "releaseDate": "2018-06-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-sovereign-xl",
+      "name": "Batman",
+      "subtitle": "Sovereign Knight XL Exclusive",
+      "releaseDate": "2019-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-supreme-knight",
+      "name": "Batman",
+      "subtitle": "Supreme Knight",
+      "releaseDate": "2020-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-gotham-gaslight",
+      "name": "Batman",
+      "subtitle": "Gotham by Gaslight",
+      "releaseDate": "2021-05-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-recovered-armor",
+      "name": "Batman",
+      "subtitle": "Recovered Armor",
+      "releaseDate": "2022-03-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-silent-knight",
+      "name": "Batman",
+      "subtitle": "Silent Knight",
+      "releaseDate": "2023-01-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-caped-crusader",
+      "name": "Batman",
+      "subtitle": "Caped Crusader",
+      "releaseDate": "2024-04-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-year-two",
+      "name": "Batman",
+      "subtitle": "Year Two",
+      "releaseDate": "2023-08-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-blue-batman",
+      "name": "Batman",
+      "subtitle": "Blue Version",
+      "releaseDate": "2024-01-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-noir-batman",
+      "name": "Batman",
+      "subtitle": "Noir Edition",
+      "releaseDate": "2023-11-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-tdk-batman",
+      "name": "Batman",
+      "subtitle": "The Dark Knight",
+      "releaseDate": "2024-06-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-tdk-joker",
+      "name": "The Joker",
+      "subtitle": "The Dark Knight",
+      "releaseDate": "2024-06-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mez3-btas-batman",
+      "name": "Batman",
+      "subtitle": "The Animated Series",
+      "releaseDate": "2025-03-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-btas-joker",
+      "name": "The Joker",
+      "subtitle": "The Animated Series",
+      "releaseDate": "2025-04-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-btas-harley",
+      "name": "Harley Quinn",
+      "subtitle": "The Animated Series",
+      "releaseDate": "2025-05-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-btas-batgirl",
+      "name": "Batgirl",
+      "subtitle": "The Animated Series",
+      "releaseDate": "2025-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-btas-robin",
+      "name": "Robin",
+      "subtitle": "The Animated Series",
+      "releaseDate": "2025-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-btas-scarecrow",
+      "name": "Scarecrow",
+      "subtitle": "The Animated Series",
+      "releaseDate": "2025-07-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-btas-noir",
+      "name": "Batman",
+      "subtitle": "Animated Series Noir",
+      "releaseDate": "2025-08-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-btas-blue",
+      "name": "Batman",
+      "subtitle": "Animated Series Blue",
+      "releaseDate": "2025-09-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-superman-mansteel",
+      "name": "Superman",
+      "subtitle": "Man of Steel",
+      "releaseDate": "2019-02-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-superman-1978",
+      "name": "Superman",
+      "subtitle": "1978",
+      "releaseDate": "2021-11-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-superman-redson",
+      "name": "Superman",
+      "subtitle": "Red Son",
+      "releaseDate": "2025-01-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-ww-classic",
+      "name": "Wonder Woman",
+      "subtitle": "Classic",
+      "releaseDate": "2020-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-flash-barry",
+      "name": "The Flash",
+      "subtitle": "Barry Allen",
+      "releaseDate": "2021-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-reverse-flash",
+      "name": "Reverse Flash",
+      "subtitle": "Zoom",
+      "releaseDate": "2022-08-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-gl-hal",
+      "name": "Green Lantern",
+      "subtitle": "Hal Jordan",
+      "releaseDate": "2020-11-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-gl-john",
+      "name": "Green Lantern",
+      "subtitle": "John Stewart",
+      "releaseDate": "2024-05-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-green-arrow",
+      "name": "Green Arrow",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-09-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mez3-shazam",
+      "name": "Shazam",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-12-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-black-adam",
+      "name": "Black Adam",
+      "subtitle": "Deluxe",
+      "releaseDate": "2024-02-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-martian",
+      "name": "Martian Manhunter",
+      "subtitle": "Deluxe",
+      "releaseDate": "2024-07-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-constantine",
+      "name": "John Constantine",
+      "subtitle": "Hellblazer",
+      "releaseDate": "2021-10-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-swamp-thing",
+      "name": "Swamp Thing",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-12-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-deathstroke",
+      "name": "Deathstroke",
+      "subtitle": "Deluxe",
+      "releaseDate": "2019-10-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-deathstroke-armor",
+      "name": "Deathstroke",
+      "subtitle": "Armored",
+      "releaseDate": "2024-04-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-nightwing",
+      "name": "Nightwing",
+      "subtitle": "Classic",
+      "releaseDate": "2022-01-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-nightwing-new52",
+      "name": "Nightwing",
+      "subtitle": "New 52",
+      "releaseDate": "2025-07-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-redhood",
+      "name": "Red Hood",
+      "subtitle": "Jason Todd",
+      "releaseDate": "2022-04-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-batgirl",
+      "name": "Batgirl",
+      "subtitle": "Barbara Gordon",
+      "releaseDate": "2022-07-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-catwoman",
+      "name": "Catwoman",
+      "subtitle": "Classic",
+      "releaseDate": "2020-04-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-poison-ivy",
+      "name": "Poison Ivy",
+      "subtitle": "Deluxe",
+      "releaseDate": "2024-01-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-harley-pfk",
+      "name": "Harley Quinn",
+      "subtitle": "Playing for Keeps",
+      "releaseDate": "2019-08-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-harley-bop",
+      "name": "Harley Quinn",
+      "subtitle": "Birds of Prey",
+      "releaseDate": "2023-08-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-joker-deluxe",
+      "name": "The Joker",
+      "subtitle": "Deluxe Clown Prince",
+      "releaseDate": "2018-11-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mez3-two-face",
+      "name": "Two-Face",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-scarecrow",
+      "name": "Scarecrow",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-12-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mez3-penguin",
+      "name": "The Penguin",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-05-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mez3-riddler",
+      "name": "The Riddler",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-08-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-bane",
+      "name": "Bane",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-02-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-ras",
+      "name": "Ra's al Ghul",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-05-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-talia",
+      "name": "Talia al Ghul",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-06-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mez3-solomon-grundy",
+      "name": "Solomon Grundy",
+      "subtitle": "Deluxe",
+      "releaseDate": "2026-01-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-spiderman-dx",
+      "name": "Spider-Man",
+      "subtitle": "Deluxe",
+      "releaseDate": "2018-04-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-spiderman-black",
+      "name": "Spider-Man",
+      "subtitle": "Black Suit",
+      "releaseDate": "2019-12-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-spiderman-advanced",
+      "name": "Spider-Man",
+      "subtitle": "Advanced Suit",
+      "releaseDate": "2024-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-spiderman-symbiote",
+      "name": "Spider-Man",
+      "subtitle": "Symbiote Suit",
+      "releaseDate": "2024-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-spiderman-2099",
+      "name": "Spider-Man 2099",
+      "subtitle": "Deluxe",
+      "releaseDate": "2024-04-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-miles",
+      "name": "Miles Morales",
+      "subtitle": "Deluxe",
+      "releaseDate": "2024-02-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-gwen",
+      "name": "Spider-Gwen",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-12-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-venom",
+      "name": "Venom",
+      "subtitle": "Deluxe",
+      "releaseDate": "2020-03-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-carnage",
+      "name": "Carnage",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-03-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-green-goblin",
+      "name": "Green Goblin",
+      "subtitle": "Deluxe",
+      "releaseDate": "2024-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-doc-ock",
+      "name": "Doctor Octopus",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-05-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-mysterio",
+      "name": "Mysterio",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-electro",
+      "name": "Electro",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-07-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-sandman",
+      "name": "Sandman",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-08-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-kingpin",
+      "name": "Kingpin",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-10-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-wolverine-dx",
+      "name": "Wolverine",
+      "subtitle": "Deluxe",
+      "releaseDate": "2019-01-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mez3-wolverine-brown",
+      "name": "Wolverine",
+      "subtitle": "Brown Suit",
+      "releaseDate": "2020-09-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-wolverine-logan",
+      "name": "Wolverine",
+      "subtitle": "Logan",
+      "releaseDate": "2022-06-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-wolverine-dpw",
+      "name": "Wolverine",
+      "subtitle": "Deadpool & Wolverine Deluxe",
+      "releaseDate": "2025-09-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mez3-deadpool-dx",
+      "name": "Deadpool",
+      "subtitle": "Deluxe",
+      "releaseDate": "2018-08-01",
+      "demand": 1.7
+    },
+    {
+      "id": "mez3-deadpool-xforce",
+      "name": "Deadpool",
+      "subtitle": "X-Force",
+      "releaseDate": "2024-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-cable",
+      "name": "Cable",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-04-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-domino",
+      "name": "Domino",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-07-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-psylocke",
+      "name": "Psylocke",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-01-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-storm",
+      "name": "Storm",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-07-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-cyclops",
+      "name": "Cyclops",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-01-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-jean",
+      "name": "Jean Grey",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-04-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-beast",
+      "name": "Beast",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-02-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mez3-nightcrawler",
+      "name": "Nightcrawler",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-09-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-colossus",
+      "name": "Colossus",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-07-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-gambit",
+      "name": "Gambit",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-rogue",
+      "name": "Rogue",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-11-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-magneto",
+      "name": "Magneto",
+      "subtitle": "Deluxe",
+      "releaseDate": "2019-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-magneto-white",
+      "name": "Magneto",
+      "subtitle": "White Costume",
+      "releaseDate": "2024-12-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-apocalypse",
+      "name": "Apocalypse",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-08-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-mr-sinister",
+      "name": "Mr. Sinister",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-x23",
+      "name": "X-23",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-10-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-bishop",
+      "name": "Bishop",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-05-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-punisher-dx",
+      "name": "The Punisher",
+      "subtitle": "Deluxe",
+      "releaseDate": "2018-10-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-punisher-melee",
+      "name": "The Punisher",
+      "subtitle": "Melee Edition",
+      "releaseDate": "2021-05-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-punisher-netflix",
+      "name": "The Punisher",
+      "subtitle": "Netflix",
+      "releaseDate": "2023-07-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-daredevil-dx",
+      "name": "Daredevil",
+      "subtitle": "Deluxe",
+      "releaseDate": "2019-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-daredevil-yellow",
+      "name": "Daredevil",
+      "subtitle": "Yellow",
+      "releaseDate": "2022-11-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-daredevil-netflix",
+      "name": "Daredevil",
+      "subtitle": "Netflix",
+      "releaseDate": "2023-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-elektra",
+      "name": "Elektra",
+      "subtitle": "Deluxe",
+      "releaseDate": "2020-12-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-moonknight",
+      "name": "Moon Knight",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-03-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-mr-knight",
+      "name": "Moon Knight",
+      "subtitle": "Mr. Knight",
+      "releaseDate": "2024-10-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-ghost-rider",
+      "name": "Ghost Rider",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-ghost-rider-robbie",
+      "name": "Ghost Rider",
+      "subtitle": "Robbie Reyes",
+      "releaseDate": "2025-02-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-blade",
+      "name": "Blade",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-01-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-doctor-strange",
+      "name": "Doctor Strange",
+      "subtitle": "Deluxe",
+      "releaseDate": "2020-10-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-doctor-doom",
+      "name": "Doctor Doom",
+      "subtitle": "Deluxe",
+      "releaseDate": "2020-05-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mez3-doctor-doom-re",
+      "name": "Doctor Doom",
+      "subtitle": "Reissue",
+      "releaseDate": "2025-11-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mez3-ironman",
+      "name": "Iron Man",
+      "subtitle": "Deluxe",
+      "releaseDate": "2019-11-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-ironman-extremis",
+      "name": "Iron Man",
+      "subtitle": "Extremis",
+      "releaseDate": "2025-03-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-ironman-centurion",
+      "name": "Iron Man",
+      "subtitle": "Silver Centurion",
+      "releaseDate": "2024-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-war-machine",
+      "name": "War Machine",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-04-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-cap",
+      "name": "Captain America",
+      "subtitle": "Deluxe",
+      "releaseDate": "2019-03-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-cap-sam",
+      "name": "Captain America",
+      "subtitle": "Sam Wilson",
+      "releaseDate": "2025-05-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-falcon",
+      "name": "Falcon",
+      "subtitle": "Classic",
+      "releaseDate": "2025-06-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mez3-winter-soldier",
+      "name": "Winter Soldier",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-07-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-blackwidow",
+      "name": "Black Widow",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-08-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-hawkeye",
+      "name": "Hawkeye",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-09-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mez3-thor",
+      "name": "Thor",
+      "subtitle": "Deluxe",
+      "releaseDate": "2024-01-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-mighty-thor",
+      "name": "The Mighty Thor",
+      "subtitle": "Jane Foster",
+      "releaseDate": "2025-05-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-hulk",
+      "name": "Hulk",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-incredible-hulk",
+      "name": "The Incredible Hulk",
+      "subtitle": "Deluxe",
+      "releaseDate": "2026-04-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-she-hulk",
+      "name": "She-Hulk",
+      "subtitle": "Deluxe",
+      "releaseDate": "2024-09-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-loki",
+      "name": "Loki",
+      "subtitle": "Deluxe",
+      "releaseDate": "2024-03-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-vision",
+      "name": "Vision",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-10-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-scarletwitch",
+      "name": "Scarlet Witch",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-10-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-blackpanther",
+      "name": "Black Panther",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-03-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-antman",
+      "name": "Ant-Man",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-06-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mez3-wasp",
+      "name": "Wasp",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-06-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mez3-captain-marvel",
+      "name": "Captain Marvel",
+      "subtitle": "Deluxe",
+      "releaseDate": "2024-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-ms-marvel",
+      "name": "Ms. Marvel",
+      "subtitle": "Kamala Khan",
+      "releaseDate": "2024-08-01",
+      "demand": 1.4
+    },
+    {
+      "id": "mez3-homelander",
+      "name": "Homelander",
+      "subtitle": "The Boys",
+      "releaseDate": "2022-09-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-butcher",
+      "name": "Billy Butcher",
+      "subtitle": "The Boys",
+      "releaseDate": "2022-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-starlight",
+      "name": "Starlight",
+      "subtitle": "The Boys",
+      "releaseDate": "2023-11-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-soldierboy",
+      "name": "Soldier Boy",
+      "subtitle": "The Boys",
+      "releaseDate": "2024-05-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-black-noir",
+      "name": "Black Noir",
+      "subtitle": "The Boys",
+      "releaseDate": "2024-10-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-hughie",
+      "name": "Hughie Campbell",
+      "subtitle": "The Boys",
+      "releaseDate": "2024-07-01",
+      "demand": 1.35
+    },
+    {
+      "id": "mez3-rorschach",
+      "name": "Rorschach",
+      "subtitle": "Watchmen",
+      "releaseDate": "2023-08-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-doc-manhattan",
+      "name": "Doctor Manhattan",
+      "subtitle": "Watchmen",
+      "releaseDate": "2023-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-ozymandias",
+      "name": "Ozymandias",
+      "subtitle": "Watchmen",
+      "releaseDate": "2024-02-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-silk-spectre",
+      "name": "Silk Spectre",
+      "subtitle": "Watchmen",
+      "releaseDate": "2024-04-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-comedian",
+      "name": "The Comedian",
+      "subtitle": "Watchmen",
+      "releaseDate": "2024-04-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-spawn",
+      "name": "Spawn",
+      "subtitle": "Deluxe",
+      "releaseDate": "2019-06-01",
+      "demand": 1.65
+    },
+    {
+      "id": "mez3-violator",
+      "name": "Violator",
+      "subtitle": "Spawn",
+      "releaseDate": "2020-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-angela",
+      "name": "Angela",
+      "subtitle": "Spawn",
+      "releaseDate": "2021-08-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-gunslinger",
+      "name": "Gunslinger Spawn",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-07-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-judge-dredd",
+      "name": "Judge Dredd",
+      "subtitle": "Deluxe",
+      "releaseDate": "2018-02-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-judge-anderson",
+      "name": "Judge Anderson",
+      "subtitle": "Deluxe",
+      "releaseDate": "2019-08-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-robocop",
+      "name": "RoboCop",
+      "subtitle": "Deluxe",
+      "releaseDate": "2019-05-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-robocop-bd",
+      "name": "RoboCop",
+      "subtitle": "Battle Damaged",
+      "releaseDate": "2020-11-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-predator",
+      "name": "Predator",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-01-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-alien",
+      "name": "Alien",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-04-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-ash",
+      "name": "Ash Williams",
+      "subtitle": "Evil Dead",
+      "releaseDate": "2019-10-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-freddy",
+      "name": "Freddy Krueger",
+      "subtitle": "Deluxe",
+      "releaseDate": "2020-09-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-jason",
+      "name": "Jason Voorhees",
+      "subtitle": "Deluxe",
+      "releaseDate": "2020-10-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-michael",
+      "name": "Michael Myers",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-pennywise",
+      "name": "Pennywise",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-10-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-leatherface",
+      "name": "Leatherface",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-03-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-pinhead",
+      "name": "Pinhead",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-chucky",
+      "name": "Chucky",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-01-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-hellboy",
+      "name": "Hellboy",
+      "subtitle": "Deluxe",
+      "releaseDate": "2020-05-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-abe",
+      "name": "Abe Sapien",
+      "subtitle": "Deluxe",
+      "releaseDate": "2021-02-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-indiana",
+      "name": "Indiana Jones",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-07-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-rambo",
+      "name": "John Rambo",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-08-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-popeye",
+      "name": "Popeye",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-10-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-dracula",
+      "name": "Dracula",
+      "subtitle": "Deluxe",
+      "releaseDate": "2024-09-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-frankenstein",
+      "name": "Frankenstein",
+      "subtitle": "Deluxe",
+      "releaseDate": "2024-10-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-nosferatu",
+      "name": "Nosferatu",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-01-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-conan",
+      "name": "Conan the Barbarian",
+      "subtitle": "Deluxe",
+      "releaseDate": "2025-02-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-samurai-jack",
+      "name": "Samurai Jack",
+      "subtitle": "Deluxe",
+      "releaseDate": "2024-11-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-space-ghost",
+      "name": "Space Ghost",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-06-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-doc-savage",
+      "name": "Doc Savage",
+      "subtitle": "Deluxe",
+      "releaseDate": "2024-03-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-snake-eyes",
+      "name": "Snake Eyes",
+      "subtitle": "G.I. Joe Commando",
+      "releaseDate": "2024-07-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-casey-jones",
+      "name": "Casey Jones",
+      "subtitle": "TMNT",
+      "releaseDate": "2024-07-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-shredder",
+      "name": "Shredder",
+      "subtitle": "TMNT",
+      "releaseDate": "2024-08-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-splinter",
+      "name": "Splinter",
+      "subtitle": "TMNT",
+      "releaseDate": "2025-01-01",
+      "demand": 1.45
+    },
+    {
+      "id": "mez3-tmnt-mirage",
+      "name": "Teenage Mutant Ninja Turtles",
+      "subtitle": "Mirage Comics Set",
+      "releaseDate": "2025-05-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-marv",
+      "name": "Marv",
+      "subtitle": "Sin City",
+      "releaseDate": "2024-09-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-doc-nocturnal",
+      "name": "Doc Nocturnal",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-04-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-agent-gomez",
+      "name": "Agent Gomez",
+      "subtitle": "1975",
+      "releaseDate": "2025-07-01",
+      "demand": 1.5
+    },
+    {
+      "id": "mez3-galactus",
+      "name": "Galactus",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-11-01",
+      "demand": 1.7
+    },
+    {
+      "id": "mez3-silver-surfer",
+      "name": "Silver Surfer",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-12-01",
+      "demand": 1.55
+    },
+    {
+      "id": "mez3-thanos",
+      "name": "Thanos",
+      "subtitle": "Deluxe",
+      "releaseDate": "2022-12-01",
+      "demand": 1.6
+    },
+    {
+      "id": "mez3-starlord",
+      "name": "Star-Lord",
+      "subtitle": "Deluxe",
+      "releaseDate": "2023-04-01",
+      "demand": 1.45
+    }
+  ]
+}

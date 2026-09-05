@@ -61,7 +61,7 @@ function Home() {
           }
         />
         <StatCard
-          label="Figures & kits"
+          label="Action Figures"
           value={String(stats.figureCount)}
           hint={`${catalog.figures} in the checklists`}
         />
@@ -78,7 +78,7 @@ function Home() {
             <h2 className="font-display text-xl tracking-wide uppercase">New figure releases</h2>
             <p className="text-sm text-muted">
               {liveFigures.length
-                ? `This week's figures & kits · ${week}`
+                ? `This week's action figures · ${week}`
                 : liveLoading
                   ? "Checking this week's figure drop…"
                   : "Live weekly figures will land here."}

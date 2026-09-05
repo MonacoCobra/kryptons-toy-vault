@@ -48,8 +48,7 @@ function CollectionPage() {
     <main className="flex flex-col gap-6">
       <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="text-xs tracking-[0.28em] text-gold uppercase">Holdings</p>
-          <h1 className="mt-1 font-display text-3xl tracking-wide uppercase">Collection</h1>
+          <h1 className="font-display text-3xl tracking-wide uppercase">Collection</h1>
           <p className="mt-2 text-sm text-muted">
             {stats.figureCount} figures · {stats.comicCount} comics · {usd(stats.value, 0)} estimated
           </p>

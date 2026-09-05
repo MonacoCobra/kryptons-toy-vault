@@ -29,8 +29,7 @@ function WishlistPage() {
   return (
     <main className="flex flex-col gap-8">
       <header>
-        <p className="text-xs tracking-[0.28em] text-gold uppercase">The hunt</p>
-        <h1 className="mt-1 font-display text-3xl tracking-wide uppercase">Want list</h1>
+        <h1 className="font-display text-3xl tracking-wide uppercase">Want list</h1>
         <p className="mt-2 text-sm text-muted">
           {figures.length} figures · {comics.length} issues still outside the vault.
         </p>

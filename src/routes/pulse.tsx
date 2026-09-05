@@ -54,8 +54,7 @@ function PulsePage() {
   return (
     <main className="mx-auto flex max-w-xl flex-col gap-6">
       <header>
-        <p className="text-xs tracking-[0.22em] text-gold uppercase">Weekly pulse</p>
-        <h1 className="mt-1 font-display text-4xl tracking-wide uppercase">This week</h1>
+        <h1 className="font-display text-4xl tracking-wide uppercase">This week</h1>
         <p className="mt-2 text-sm text-muted">
           Qty and estimate changes since the start of {week}. Toys and comics use mixed-condition
           eBay sold averages when available.

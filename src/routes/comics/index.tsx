@@ -178,8 +178,7 @@ function ComicsPage() {
     <main className="flex flex-col gap-6">
       <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="text-xs tracking-[0.28em] text-gold uppercase">Issue records</p>
-          <h1 className="mt-1 font-display text-3xl tracking-wide uppercase">Comic catalog</h1>
+          <h1 className="font-display text-3xl tracking-wide uppercase">Comic catalog</h1>
           <p className="mt-2 max-w-2xl text-sm text-muted">
             New releases stay in New &amp; Noteworthy for a few weeks, then graduate into the
             permanent archive. Search or scan anything the lists miss.
