@@ -38,7 +38,17 @@ export type CompanyId =
   | "thousandtoys"
   | "acidrain"
   | "freshmonkey"
-  | "jada";
+  | "jada"
+  | "blokees"
+  | "robosen"
+  | "newage"
+  | "fanstoys"
+  | "tunshi"
+  | "damtoys"
+  | "easysimple"
+  | "soldierstory"
+  | "minitimes"
+  | "verycool";
 
 export type ItemKind = "figure" | "kit";
 

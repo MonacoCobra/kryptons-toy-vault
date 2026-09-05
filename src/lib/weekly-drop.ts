@@ -45,6 +45,16 @@ const COMPANIES: CompanyId[] = [
   "acidrain",
   "freshmonkey",
   "jada",
+  "blokees",
+  "robosen",
+  "newage",
+  "fanstoys",
+  "tunshi",
+  "damtoys",
+  "easysimple",
+  "soldierstory",
+  "minitimes",
+  "verycool",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];
@@ -205,6 +215,16 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/acid rain|toys alliance/.test(s)) return "acidrain";
   if (/fresh monkey|fresh retro/.test(s)) return "freshmonkey";
   if (/\bjada\b|street fighter.*jada/.test(s)) return "jada";
+  if (/\bblokees\b|galaxy version/.test(s)) return "blokees";
+  if (/\brobosen\b/.test(s)) return "robosen";
+  if (/\bnewage\b/.test(s)) return "newage";
+  if (/fans toys|fanstoys/.test(s)) return "fanstoys";
+  if (/tunshi/.test(s)) return "tunshi";
+  if (/damtoys|dam toys|gangsters kingdom|pocket elite/.test(s)) return "damtoys";
+  if (/easy & simple|easy and simple|easysimple/.test(s)) return "easysimple";
+  if (/soldier story|soldierstory/.test(s)) return "soldierstory";
+  if (/mini times|minitimes/.test(s)) return "minitimes";
+  if (/very cool|verycool/.test(s)) return "verycool";
   if (/valaverse|action force/.test(s)) return "valaverse";
   return null;
 }

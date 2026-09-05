@@ -167,3 +167,31 @@ missing collector brands. Floor 1980; AF only; no AI art. ACBA-adjacent and bare
 
 Figura Obscura remains under `fourhorsemen`. Tamashii SHF stays `shfiguarts` (Bandai).
 Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
+
+## BBTS AF brand expansion wave 4 (2026-09-05)
+
+Fourth curated pass from the BBTS company universe — densify thin AF makers + add
+missing collector brands. Floor 1980; AF only; no AI art. Skipped statue-primary
+**Unique Art** / **XM Studios** and non-AF **Crossovers**.
+
+| CompanyId | Notes |
+| --- | --- |
+| `blokees` | **NEW** — Galaxy Version Transformers + Gundam assembleable AF |
+| `robosen` | **NEW** — sparse robotic Transformers (Flagship / Elite / Performance) |
+| `newage` | **NEW** — third-party Transformers H-series |
+| `fanstoys` | **NEW** — third-party Masterpiece-scale Transformers |
+| `tunshi` | **NEW** — Tunshi Studio 1/12 Street Fighter / Mortal Kombat |
+| `damtoys` | **NEW** — DamToys 1/12 Gangsters Kingdom / Pocket Elite / military |
+| `easysimple` | **NEW** — Easy & Simple 1/12 PMC / SOF |
+| `soldierstory` | **NEW** — Soldier Story 1/12 special ops |
+| `minitimes` | **NEW** — Mini Times 1/12 military |
+| `verycool` | **NEW** — Very Cool 1/12 female operative AF |
+| densify | Hasbro ML / Black Series / Classified / Studio Series |
+| densify | Mattel Masterverse / WWE Elite+Ultimate |
+| densify | Super7, NECA Ultimate, Mezco One:12, McFarlane DC/Spawn |
+| densify | Hiya, Mondo, SHFiguarts, Storm Collectibles |
+| densify | Four Horsemen, Boss Fight, Loyal Subjects BST AXN, Playmates TMNT |
+| densify | ToyBiz ML leftovers, Kenner Super Powers leftovers, DC Direct gaps |
+| densify | Takara MPG leftovers / Diaclone reboot AF |
+
+Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
