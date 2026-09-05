@@ -245,3 +245,36 @@ kits skipped (Kuro Kara Kuri articulated AF only).
 
 Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
 
+## BBTS AF brand expansion wave 7 (2026-09-05)
+
+Seventh curated pass from the BBTS company universe — densify thin AF makers + add
+missing collector brands. Floor 1980; AF only; no AI art. **ToyWorld** and
+**Unique Toys** are not listed in the BBTS A–Z universe dump (skipped). Statue /
+garage-kit / Perfect Effect / DNA Design upgrade-kit brands skipped. Good Smile
+kept under existing `figma` densify (Max Factory / GSC figma AF) — no separate
+`goodsmile` CompanyId.
+
+| CompanyId | Notes |
+| --- | --- |
+| `generationtoy` | **NEW** — third-party Transformers Gravity Builder / Sea King / Monster King |
+| `zeta` | **NEW** — Zeta Toys ZA/ZB/ZE + combiners |
+| `mechfans` | **NEW** — Mech Fans Toys MF-series |
+| `toywolf` | **NEW** — ToyWolf W-series |
+| `evolutiontoy` | **NEW** — Evolution-Toy ET-series |
+| `starace` | **NEW** — Star Ace sixth-scale movie AF |
+| `exo6` | **NEW** — EXO-6 Star Trek 1/6 AF |
+| `blitzway` | **NEW** — Superb Scale / Carbotix / Ultraman AF |
+| `toynami` | **NEW** — Robotech / Macross Valkyrie + characters |
+| `creativebeast` | **NEW** — Beasts of the Mesozoic dinosaurs |
+| `alertline` | **NEW** — 1/6 military AF |
+| `snailshell` | **NEW** — 1/12 original tactical AF |
+| densify | Bandai Robot Spirits / Gundam Universe AF (not Gunpla kits) |
+| densify | figma (Max Factory / Good Smile) |
+| densify | Beast Kingdom DAH, Enterbay, Hot Toys, threezero DLX/FigZero |
+| densify | Valaverse Action Force, Premium DNA Filmation, Acid Rain |
+| densify | Four Horsemen Mythic/Cosmic/Figura Obscura |
+| densify | Jada Street Fighter / Universal / Nano, JAKKS Sonic/Nintendo/Primal Age |
+| densify | ToyBiz Marvel Legends era, Kenner Super Powers / Batman movies |
+
+Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
+

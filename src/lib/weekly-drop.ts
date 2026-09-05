@@ -69,6 +69,18 @@ const COMPANIES: CompanyId[] = [
   "flametoys",
   "tfc",
   "gcreation",
+  "generationtoy",
+  "zeta",
+  "mechfans",
+  "toywolf",
+  "evolutiontoy",
+  "starace",
+  "exo6",
+  "blitzway",
+  "toynami",
+  "creativebeast",
+  "alertline",
+  "snailshell",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];
@@ -253,6 +265,18 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/flame toys|flametoys|kuro kara kuri/.test(s)) return "flametoys";
   if (/\btfc toys\b|\btfc\b/.test(s)) return "tfc";
   if (/gcreation|g-?creation|shuraking/.test(s)) return "gcreation";
+  if (/generation toy|generationtoy|gravity builder/.test(s)) return "generationtoy";
+  if (/\bzeta toys\b|\bzeta\b/.test(s)) return "zeta";
+  if (/mech fans|mechfans/.test(s)) return "mechfans";
+  if (/toywolf|toy wolf/.test(s)) return "toywolf";
+  if (/evolution-?toy|evolutiontoy/.test(s)) return "evolutiontoy";
+  if (/star ace|starace/.test(s)) return "starace";
+  if (/\bexo-?6\b|exo6/.test(s)) return "exo6";
+  if (/\bblitzway\b/.test(s)) return "blitzway";
+  if (/\btoynami\b|robotech.*toynami/.test(s)) return "toynami";
+  if (/creative beast|beasts of the mesozoic/.test(s)) return "creativebeast";
+  if (/alert line|alertline/.test(s)) return "alertline";
+  if (/snail shell|snailshell/.test(s)) return "snailshell";
   if (/valaverse|action force/.test(s)) return "valaverse";
   return null;
 }

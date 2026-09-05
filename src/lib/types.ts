@@ -62,7 +62,19 @@ export type CompanyId =
   | "xtransbots"
   | "flametoys"
   | "tfc"
-  | "gcreation";
+  | "gcreation"
+  | "generationtoy"
+  | "zeta"
+  | "mechfans"
+  | "toywolf"
+  | "evolutiontoy"
+  | "starace"
+  | "exo6"
+  | "blitzway"
+  | "toynami"
+  | "creativebeast"
+  | "alertline"
+  | "snailshell";
 
 export type ItemKind = "figure" | "kit";
 
