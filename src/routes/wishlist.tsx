@@ -81,7 +81,7 @@ function WishlistPage() {
                   className="flex items-center gap-3 rounded-lg bg-bg-elevated p-2 shadow-[0_0_0_1px_rgba(214,230,255,0.08)]"
                 >
                   <Link to="/comics/$comicId" params={{ comicId: c.id }}>
-                    <ComicCover comic={c} className="h-16 w-11 rounded-sm" />
+                    <ComicCover comic={c} resolveRemote className="h-16 w-11 rounded-sm" />
                   </Link>
                   <div className="min-w-0 flex-1">
                     <Link to="/comics/$comicId" params={{ comicId: c.id }} className="font-medium">

@@ -130,10 +130,10 @@ function CollectionPage() {
                   >
                     {owned.catalogId ? (
                       <Link to="/comics/$comicId" params={{ comicId: owned.catalogId }} className="shrink-0">
-                        <ComicCover comic={comic} photo={owned.photoDataUrl} className="h-24 w-16 rounded-sm" />
+                        <ComicCover comic={comic} photo={owned.photoDataUrl} resolveRemote className="h-24 w-16 rounded-sm" />
                       </Link>
                     ) : (
-                      <ComicCover comic={comic} photo={owned.photoDataUrl} className="h-24 w-16 shrink-0 rounded-sm" />
+                      <ComicCover comic={comic} photo={owned.photoDataUrl} resolveRemote className="h-24 w-16 shrink-0 rounded-sm" />
                     )}
                     <div className="min-w-0 flex-1">
                       <p className="font-medium">{comicLabel(comic)}</p>
