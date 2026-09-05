@@ -31,22 +31,9 @@ export function AppShell({ children }: { children: ReactNode }) {
       <div className="pointer-events-none fixed inset-0 vault-grid opacity-50" />
       <div className="pointer-events-none fixed inset-0 bg-[radial-gradient(ellipse_at_top,rgba(30,79,163,0.16),transparent_55%)]" />
 
-      <header className="sticky top-0 z-40 border-b border-border bg-bg/90 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4">
-          <Link to="/" className="flex min-w-0 items-center gap-3">
-            <img
-              src="/krypton-logo.png"
-              alt=""
-              className="mark h-12 w-auto shrink-0"
-            />
-            <div className="min-w-0">
-              <p className="font-display text-lg leading-none tracking-[0.08em] text-fg uppercase">
-                Krypton's
-              </p>
-              <p className="mt-0.5 text-[11px] tracking-[0.22em] text-gold uppercase">Toy Vault</p>
-            </div>
-          </Link>
-          <nav className="ml-auto hidden items-center gap-1 md:flex">
+      <header className="sticky top-0 z-40 hidden border-b border-border bg-bg/90 backdrop-blur-md md:block">
+        <div className="mx-auto flex h-14 max-w-6xl items-center justify-end gap-3 px-4">
+          <nav className="flex items-center gap-1">
             {NAV.filter((n) => n.to !== "/scan").map((item) => {
               const active = item.exact ? pathname === "/" : pathname.startsWith(item.to);
               return (
