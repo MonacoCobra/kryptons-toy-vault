@@ -1,0 +1,13 @@
+{
+  "strategy": "inject-one-batch-every-~3-weeks-with-noteworthy-promotion",
+  "targetBatchSize": [
+    400,
+    500
+  ],
+  "lastInjectedAt": null,
+  "lastInjectedBatch": null,
+  "queued": [
+    "batch-001"
+  ],
+  "injected": []
+}
