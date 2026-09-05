@@ -1,4 +1,8 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { comicLabel } from "@/data/comics";
+import { getComicCover } from "@/lib/comic-covers";
 import type { CatalogComic, CustomComic } from "@/lib/types";
 import { cn, hashString } from "@/lib/utils";
 
@@ -11,14 +15,13 @@ type CoverSource = Pick<CatalogComic, "series" | "issue" | "publisher" | "varian
   cover?: string;
 };
 
-export function ComicCover({
+/** Palette placeholder only — never generative AI art. */
+function PlaceholderCover({
   comic,
   className,
-  photo,
 }: {
   comic: CoverSource | CustomComic;
   className?: string;
-  photo?: string;
 }) {
   const palette =
     "palette" in comic && comic.palette ? comic.palette : (["#1e3a8a", "#e30613", "#f8fafc"] as [string, string, string]);
@@ -27,17 +30,6 @@ export function ComicCover({
   const seed = hashString(comic.id ?? `${comic.series}-${comic.issue}`);
   const art = seed % 4;
   const year = "coverDate" in comic && comic.coverDate ? comic.coverDate.slice(0, 4) : "";
-  const catalogCover = "cover" in comic ? comic.cover : undefined;
-  const src = photo || catalogCover;
-
-  if (src) {
-    return (
-      <div className={cn("relative overflow-hidden bg-surface", className)}>
-        <img src={src} alt="" className="absolute inset-0 size-full object-cover object-top" />
-        <span className="sr-only">{comicLabel(comic)}</span>
-      </div>
-    );
-  }
 
   const bars = Array.from({ length: 18 }, (_, i) => {
     const n = ((seed >> (i % 12)) + i * 17) % 7;
@@ -120,4 +112,70 @@ export function ComicCover({
       <span className="sr-only">{comicLabel(comic)}</span>
     </div>
   );
+}
+
+export function ComicCover({
+  comic,
+  className,
+  photo,
+  resolveRemote = false,
+}: {
+  comic: CoverSource | CustomComic;
+  className?: string;
+  photo?: string;
+  /** When true, look up a real Comic Vine cover if none is set (requires COMICVINE_API_KEY). */
+  resolveRemote?: boolean;
+}) {
+  const catalogCover = "cover" in comic ? comic.cover : undefined;
+  const [remote, setRemote] = useState<string | undefined>();
+  const [broken, setBroken] = useState(false);
+
+  useEffect(() => {
+    setBroken(false);
+    setRemote(undefined);
+  }, [comic.id, catalogCover, photo]);
+
+  useEffect(() => {
+    if (!resolveRemote || photo || catalogCover || !comic.id) return;
+    let cancelled = false;
+    void (async () => {
+      try {
+        const result = await getComicCover({
+          data: {
+            comicId: comic.id!,
+            series: comic.series,
+            issue: comic.issue,
+            publisher: comic.publisher,
+          },
+        });
+        if (!cancelled && result.status === "ok" && result.coverUrl) {
+          setRemote(result.coverUrl);
+        }
+      } catch {
+        // keep placeholder
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [resolveRemote, photo, catalogCover, comic.id, comic.series, comic.issue, comic.publisher]);
+
+  const src = photo || catalogCover || remote;
+
+  if (src && !broken) {
+    return (
+      <div className={cn("relative overflow-hidden bg-surface", className)}>
+        <img
+          src={src}
+          alt={comicLabel(comic)}
+          className="absolute inset-0 size-full object-cover object-top"
+          onError={() => setBroken(true)}
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    );
+  }
+
+  return <PlaceholderCover comic={comic} className={className} />;
 }

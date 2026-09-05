@@ -49,7 +49,7 @@ function ComicDetail() {
   return (
     <main className="grid gap-8 lg:grid-cols-[minmax(0,16rem)_1fr]">
       <div>
-        <ComicCover comic={comic} photo={owned?.photoDataUrl} className="aspect-2/3 overflow-hidden rounded-xl" />
+        <ComicCover comic={comic} photo={owned?.photoDataUrl} resolveRemote className="aspect-2/3 overflow-hidden rounded-xl" />
         <div className="mt-4 grid gap-2">
           <Button onClick={() => setEdit(true)}>{owned ? "Edit copy" : "Add to vault"}</Button>
           <Button variant="secondary" onClick={() => toggleWant(comic.id)} disabled={Boolean(owned)}>
