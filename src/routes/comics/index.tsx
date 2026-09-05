@@ -28,6 +28,7 @@ type Search = {
   q?: string;
   publisher?: string;
   keys?: boolean;
+  sort?: "release" | "name" | "acquired";
 };
 
 export const Route = createFileRoute("/comics/")({
@@ -35,9 +36,16 @@ export const Route = createFileRoute("/comics/")({
     q: typeof s.q === "string" ? s.q : undefined,
     publisher: typeof s.publisher === "string" ? s.publisher : undefined,
     keys: s.keys === true || s.keys === "true",
+    sort: s.sort === "name" || s.sort === "acquired" || s.sort === "release" ? s.sort : undefined,
   }),
   component: ComicsPage,
 });
+
+const SORT_LABEL: Record<NonNullable<Search["sort"]> | "release", string> = {
+  release: "Release date",
+  name: "A–Z",
+  acquired: "Recently acquired",
+};
 
 function ComicsPage() {
   const search = Route.useSearch();
@@ -53,6 +61,50 @@ function ComicsPage() {
     () => new Set(Object.values(owned).map((o) => o.catalogId).filter(Boolean)),
     [owned],
   );
+
+  const ownedByCatalog = useMemo(() => {
+    const map = new Map<string, (typeof owned)[string]>();
+    for (const entry of Object.values(owned)) {
+      const key = entry.catalogId ?? entry.id;
+      if (!key) continue;
+      const prev = map.get(key);
+      if (!prev || entry.addedAt > prev.addedAt) map.set(key, entry);
+    }
+    return map;
+  }, [owned]);
+
+  const sort = search.sort ?? "release";
+
+  const sortComics = (list: CatalogComic[]) => {
+    const out = [...list];
+    out.sort((a, b) => {
+      if (sort === "name") {
+        const bySeries = a.series.localeCompare(b.series);
+        if (bySeries !== 0) return bySeries;
+        return a.issue.localeCompare(b.issue, undefined, { numeric: true });
+      }
+      if (sort === "acquired") {
+        const oa = ownedByCatalog.get(a.id);
+        const ob = ownedByCatalog.get(b.id);
+        if (!oa && !ob) {
+          const da = a.streetDate ?? a.coverDate;
+          const db = b.streetDate ?? b.coverDate;
+          return da < db ? 1 : da > db ? -1 : 0;
+        }
+        if (!oa) return 1;
+        if (!ob) return -1;
+        if (oa.addedAt !== ob.addedAt) return oa.addedAt < ob.addedAt ? 1 : -1;
+        const aa = oa.acquiredDate || "";
+        const ab = ob.acquiredDate || "";
+        if (aa !== ab) return aa < ab ? 1 : -1;
+        return comicLabel(a).localeCompare(comicLabel(b));
+      }
+      const da = a.streetDate ?? a.coverDate;
+      const db = b.streetDate ?? b.coverDate;
+      return da < db ? 1 : da > db ? -1 : 0;
+    });
+    return out;
+  };
 
   const split = useMemo(() => {
     if (library) {
@@ -78,24 +130,24 @@ function ComicsPage() {
       : catalog;
     if (search.publisher) list = list.filter((c) => c.publisher === search.publisher);
     if (search.keys) list = list.filter((c) => c.key);
-    return list;
-  }, [search, extras, catalog, library]);
+    return sortComics(list);
+  }, [search, extras, catalog, library, sort, ownedByCatalog]);
 
   const filteredNoteworthy = useMemo(() => {
     if (filtering) return [];
     let list = split.noteworthy;
     if (search.publisher) list = list.filter((c) => c.publisher === search.publisher);
     if (search.keys) list = list.filter((c) => c.key);
-    return list;
-  }, [filtering, split.noteworthy, search.publisher, search.keys]);
+    return sortComics(list);
+  }, [filtering, split.noteworthy, search.publisher, search.keys, sort, ownedByCatalog]);
 
   const filteredArchive = useMemo(() => {
     if (filtering) return filtered;
     let list = split.archive;
     if (search.publisher) list = list.filter((c) => c.publisher === search.publisher);
     if (search.keys) list = list.filter((c) => c.key);
-    return list;
-  }, [filtering, filtered, split.archive, search.publisher, search.keys]);
+    return sortComics(list);
+  }, [filtering, filtered, split.archive, search.publisher, search.keys, sort, ownedByCatalog]);
 
   return (
     <main className="flex flex-col gap-6">
@@ -154,6 +206,18 @@ function ComicsPage() {
         >
           Keys only
         </FilterChip>
+      </div>
+
+      <div className="flex flex-wrap items-center gap-2">
+        {(["release", "name", "acquired"] as const).map((s) => (
+          <FilterChip
+            key={s}
+            active={sort === s}
+            onClick={() => navigate({ search: (prev) => ({ ...prev, sort: s === "release" ? undefined : s }) })}
+          >
+            {SORT_LABEL[s]}
+          </FilterChip>
+        ))}
       </div>
 
       {filtering ? (

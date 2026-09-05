@@ -21,7 +21,7 @@ type Search = {
   q?: string;
   line?: string;
   view?: "all" | "owned" | "missing" | "kits";
-  sort?: "release" | "name" | "value" | "msrp";
+  sort?: "release" | "name" | "acquired";
   layout?: "grid" | "list";
 };
 
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/figures/")({
     q: typeof s.q === "string" ? s.q : undefined,
     line: typeof s.line === "string" ? s.line : undefined,
     view: s.view === "owned" || s.view === "missing" || s.view === "kits" || s.view === "all" ? s.view : undefined,
-    sort: s.sort === "name" || s.sort === "value" || s.sort === "msrp" || s.sort === "release" ? s.sort : undefined,
+    sort: s.sort === "name" || s.sort === "acquired" || s.sort === "release" ? s.sort : undefined,
     layout: s.layout === "list" || s.layout === "grid" ? s.layout : undefined,
   }),
   component: FiguresPage,
@@ -45,10 +45,9 @@ const VIEW_LABEL: Record<NonNullable<Search["view"]> | "all", string> = {
 };
 
 const SORT_LABEL: Record<NonNullable<Search["sort"]> | "release", string> = {
-  release: "Release",
-  name: "Name",
-  value: "Value",
-  msrp: "MSRP",
+  release: "Release date",
+  name: "A–Z",
+  acquired: "Recently acquired",
 };
 
 function FiguresPage() {
@@ -75,9 +74,25 @@ function FiguresPage() {
     if (search.view === "missing") list = list.filter((f) => !owned[f.id]);
     if (search.view === "kits") list = list.filter((f) => f.kind === "kit");
     list.sort((a, b) => {
-      if (sort === "name") return a.name.localeCompare(b.name);
-      if (sort === "msrp") return b.msrp - a.msrp;
-      if (sort === "value") return figureMarket(b).estimate - figureMarket(a).estimate;
+      if (sort === "name") {
+        const byName = a.name.localeCompare(b.name);
+        if (byName !== 0) return byName;
+        const bySubtitle = a.subtitle.localeCompare(b.subtitle);
+        if (bySubtitle !== 0) return bySubtitle;
+        return a.line.localeCompare(b.line);
+      }
+      if (sort === "acquired") {
+        const oa = owned[a.id];
+        const ob = owned[b.id];
+        if (!oa && !ob) return a.releaseDate < b.releaseDate ? 1 : -1;
+        if (!oa) return 1;
+        if (!ob) return -1;
+        if (oa.addedAt !== ob.addedAt) return oa.addedAt < ob.addedAt ? 1 : -1;
+        const aa = oa.acquiredDate || "";
+        const ab = ob.acquiredDate || "";
+        if (aa !== ab) return aa < ab ? 1 : -1;
+        return a.name.localeCompare(b.name);
+      }
       return a.releaseDate < b.releaseDate ? 1 : -1;
     });
     return list;
@@ -189,7 +204,7 @@ function FiguresPage() {
           </FilterChip>
         ))}
         <span className="hidden h-5 w-px bg-border sm:block" />
-        {(["release", "name", "value", "msrp"] as const).map((s) => (
+        {(["release", "name", "acquired"] as const).map((s) => (
           <FilterChip
             key={s}
             active={sort === s}
