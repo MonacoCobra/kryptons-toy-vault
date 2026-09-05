@@ -48,7 +48,11 @@ export type CompanyId =
   | "easysimple"
   | "soldierstory"
   | "minitimes"
-  | "verycool";
+  | "verycool"
+  | "ironfactory"
+  | "magicsquare"
+  | "cangtoys"
+  | "medicom";
 
 export type ItemKind = "figure" | "kit";
 

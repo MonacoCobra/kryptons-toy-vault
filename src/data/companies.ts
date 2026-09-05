@@ -448,6 +448,44 @@ export const COMPANIES: Company[] = [
     accent: "#d62828",
   },
 
+
+  {
+    id: "ironfactory",
+    name: "Iron Factory",
+    short: "Iron Factory",
+    blurb: "Third-party Legends-scale Transformers EX-series articulated AF.",
+    founded: "2015",
+    hq: "China",
+    accent: "#7b2cbf",
+  },
+  {
+    id: "magicsquare",
+    name: "Magic Square",
+    short: "Magic Square",
+    blurb: "Third-party Masterpiece-adjacent Transformers articulated AF.",
+    founded: "2016",
+    hq: "China",
+    accent: "#9b5de5",
+  },
+  {
+    id: "cangtoys",
+    name: "Cang Toys",
+    short: "Cang Toys",
+    blurb: "Third-party Transformers combiners and Beast Wars articulated AF.",
+    founded: "2018",
+    hq: "China",
+    accent: "#00bbf9",
+  },
+  {
+    id: "medicom",
+    name: "Medicom Toy",
+    short: "Medicom",
+    blurb: "Real Action Heroes 1/6 articulated AF (MAFEX stays under mafex; Kubrick skipped).",
+    founded: "1996",
+    hq: "Tokyo, JP",
+    accent: "#111111",
+  },
+
   {
     id: "valaverse",
     name: "Valaverse",

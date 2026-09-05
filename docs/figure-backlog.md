@@ -195,3 +195,24 @@ missing collector brands. Floor 1980; AF only; no AI art. Skipped statue-primary
 | densify | Takara MPG leftovers / Diaclone reboot AF |
 
 Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
+
+## BBTS AF brand expansion wave 5 (2026-09-05)
+
+Fifth curated pass from the BBTS company universe — densify thin AF makers + add
+missing collector brands. Floor 1980; AF only; no AI art. Skipped statue-primary
+**Unique Art** and Medicom **Kubrick** (non-AF). MAFEX remains under `mafex`.
+
+| CompanyId | Notes |
+| --- | --- |
+| `ironfactory` | **NEW** — third-party Transformers EX-series |
+| `magicsquare` | **NEW** — third-party Transformers Light of Justice / B-series / combiners |
+| `cangtoys` | **NEW** — third-party Transformers combiners + Beast Wars AF |
+| `medicom` | **NEW** — Real Action Heroes 1/6 AF only (Kubrick skip; MAFEX stays `mafex`) |
+| densify | SHFiguarts, Kaiyodo Revoltech / Amazing Yamaguchi |
+| densify | Hasbro Lightning Collection / Classified / Marvel Legends / Black Series / Studio Series |
+| densify | McFarlane DC/Spawn, NECA Ultimate, Super7 ULTIMATES!/ReAction |
+| densify | DC Direct leftovers, Playmates TMNT, JAKKS Sonic/WWE/Nintendo/Primal Age |
+| densify | Mezco One:12, Hiya, Storm Collectibles |
+
+Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
+

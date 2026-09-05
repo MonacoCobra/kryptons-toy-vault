@@ -55,6 +55,10 @@ const COMPANIES: CompanyId[] = [
   "soldierstory",
   "minitimes",
   "verycool",
+  "ironfactory",
+  "magicsquare",
+  "cangtoys",
+  "medicom",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];
@@ -181,7 +185,7 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
     return "hasbro";
   }
   if (/dc multiverse|spawn|mcfarlane/.test(s)) return "mcfarlane";
-  if (/mafex|medicom/.test(s)) return "mafex";
+  if (/\bmafex\b/.test(s)) return "mafex";
   if (/one:?12|mezco/.test(s)) return "mezco";
   if (/figuarts|\bshf\b/.test(s)) return "shfiguarts";
   if (/gunpla|\brg\b|\bmg\b|\bpg\b|\bhg\b|bandai|gundam/.test(s)) return "bandai";
@@ -225,6 +229,10 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/soldier story|soldierstory/.test(s)) return "soldierstory";
   if (/mini times|minitimes/.test(s)) return "minitimes";
   if (/very cool|verycool/.test(s)) return "verycool";
+  if (/iron factory|ironfactory/.test(s)) return "ironfactory";
+  if (/magic square|magicsquare/.test(s)) return "magicsquare";
+  if (/cang toys|cangtoys|\bcang\b/.test(s)) return "cangtoys";
+  if (/real action heroes|\brah\b|medicom toy/.test(s)) return "medicom";
   if (/valaverse|action force/.test(s)) return "valaverse";
   return null;
 }
