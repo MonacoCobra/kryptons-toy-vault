@@ -14,15 +14,15 @@ Package id: `me.kryptontoyvault.app`
 | Piece | Where |
 | --- | --- |
 | Source of truth | GitHub `MonacoCobra/kryptons-toy-vault` |
-| Live web app | Vercel (or similar) from that repo |
+| Live web app | Grok Build live site (kryptons-toy-vault.grok.me) |
 | Phone install | APK attached to GitHub Releases |
 | Collection data | Still device `localStorage` inside the TWA |
 
 ## One-time setup
 
-1. Connect the GitHub repo to **Vercel** (Import project -> this repo -> deploy).
+1. Keep the live app on **Grok Build**; GitHub remains source of truth (Import project -> this repo -> deploy).
 2. Set production env as needed (`DATABASE_URL`, `COMICVINE_API_KEY`; leave `VITE_AUTH_ENABLED=false` unless you want accounts).
-3. Note your production host (e.g. `kryptons-toy-vault.vercel.app` or a custom domain).
+3. Note your production host (e.g. `kryptons-toy-vault.grok.me` or a custom domain).
 4. Optional repo secrets for stable APK updates: `ANDROID_KEYSTORE_BASE64`, `ANDROID_KEYSTORE_PASSWORD`, `ANDROID_KEY_PASSWORD`, `ANDROID_KEY_ALIAS` (default `krypton`), `TWA_HOST`.
 5. Deploy `public/.well-known/assetlinks.json` on that host with the Release SHA-256 fingerprint.
 

@@ -17,7 +17,7 @@ on:
         default: "1"
         type: string
       twa_host:
-        description: "TWA host (no scheme), e.g. kryptons-toy-vault.vercel.app"
+        description: "TWA host (no scheme), e.g. kryptons-toy-vault.grok.me"
         required: false
         default: ""
         type: string
@@ -55,7 +55,7 @@ jobs:
             HOST="${{ secrets.TWA_HOST }}"
           fi
           if [[ -z "$HOST" ]]; then
-            HOST="kryptons-toy-vault.vercel.app"
+            HOST="kryptons-toy-vault.grok.me"
           fi
           HOST="${HOST#https://}"
           HOST="${HOST#http://}"

@@ -1,6 +1,6 @@
 {
   "packageId": "me.kryptontoyvault.app",
-  "host": "kryptons-toy-vault.vercel.app",
+  "host": "kryptons-toy-vault.grok.me",
   "name": "Krypton's Toy Vault",
   "launcherName": "Toy Vault",
   "display": "standalone",
@@ -13,8 +13,8 @@
   "backgroundColor": "#070B14",
   "enableNotifications": false,
   "startUrl": "/",
-  "iconUrl": "https://kryptons-toy-vault.vercel.app/krypton-logo.png",
-  "maskableIconUrl": "https://kryptons-toy-vault.vercel.app/krypton-logo.png",
+  "iconUrl": "https://kryptons-toy-vault.grok.me/krypton-logo.png",
+  "maskableIconUrl": "https://kryptons-toy-vault.grok.me/krypton-logo.png",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
     "path": "./android-release.keystore",
@@ -24,7 +24,7 @@
   "appVersionCode": 1,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
-  "webManifestUrl": "https://kryptons-toy-vault.vercel.app/__grok/manifest.webmanifest",
+  "webManifestUrl": "https://kryptons-toy-vault.grok.me/__grok/manifest.webmanifest",
   "fallbackType": "customtabs",
   "features": {},
   "alphaDependencies": {
@@ -33,7 +33,7 @@
   "enableSiteSettingsShortcut": true,
   "isChromeOSOnly": false,
   "isMetaQuest": false,
-  "fullScopeUrl": "https://kryptons-toy-vault.vercel.app/",
+  "fullScopeUrl": "https://kryptons-toy-vault.grok.me/",
   "minSdkVersion": 26,
   "orientation": "default",
   "fingerprints": [],
