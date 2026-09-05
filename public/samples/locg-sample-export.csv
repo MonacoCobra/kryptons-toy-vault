@@ -1,0 +1,11 @@
+Series,Issue,Publisher,In Collection,In Wish List,Marked Read,Media Format,Release Date,Price Paid,Grade,Notes,UPC
+Absolute Batman,1,DC Comics,Yes,,,Print,2024-10-02,4.99,raw,Test key — should match catalog,
+Batman,251,DC Comics,Yes,,,Print,1973-09-01,85,,Joker classic — should match,
+The Amazing Spider-Man,300,Marvel Comics,Yes,,,Print,1988-05-01,120,9.8,Venom first full — should match,
+Invincible,1,Image Comics,Yes,,,Print,2003-01-22,12.50,,Should match if in archive,
+Saga,1,Image Comics,Yes,,,Print,2012-03-14,8,,Should match,
+Action Comics,1000,DC Comics,Yes,,,Print,2018-06-01,9.99,,Anniversary — should match,
+Batman,404,DC Comics,Yes,,,Print,1987-02-01,45,,Year One — should match,
+Ultimate Spider-Man,1,Marvel Comics,,Yes,,Print,2024-01-10,,,Wishlist only — should want,
+Weird Al vs Batman Hypothetical,1,DC Comics,Yes,,,Print,2026-01-01,4.99,,Custom unmatched series — becomes custom issue,
+Teenage Mutant Ninja Turtles,1,IDW Publishing,Yes,,,Print,2024-01-01,4.99,,May match or custom depending on archive,
