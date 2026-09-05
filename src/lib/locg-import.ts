@@ -1,5 +1,5 @@
 import { mergeComics } from "@/data/comics";
-import type { CatalogComic, ComicGrade, CustomComic, OwnedComic } from "@/lib/types";
+import type { CatalogComic, ComicFormat, ComicGrade, CustomComic, OwnedComic } from "@/lib/types";
 import { slug } from "@/lib/utils";
 
 /** One normalized row from a League of Comic Geeks export. */
@@ -19,6 +19,14 @@ export type LocgRow = {
   pricePaid?: number;
   dateAdded?: string;
   notes?: string;
+  /** Start year parsed from LOCG series string, e.g. (2016 - Present). */
+  seriesYear?: number;
+  /** End year when present (Present → undefined). */
+  seriesYearEnd?: number;
+  /** Volume number from (Vol. N), when present. */
+  seriesVol?: number;
+  /** Base series title with Vol/year suffixes stripped. */
+  seriesBase?: string;
   raw: Record<string, string>;
 };
 
@@ -43,6 +51,8 @@ const HEADER_ALIASES: Record<string, keyof LocgRow | "flagCollection" | "flagWis
   "issue no": "issue",
   "issue no.": "issue",
   publisher: "publisher",
+  "publisher name": "publisher",
+  "publisher title": "publisher",
   variant: "variant",
   "cover variant": "variant",
   title: "title",
@@ -56,7 +66,7 @@ const HEADER_ALIASES: Record<string, keyof LocgRow | "flagCollection" | "flagWis
   "street date": "coverDate",
   upc: "upc",
   isbn: "upc",
-  "isbn13": "upc",
+  isbn13: "upc",
   "upc/isbn": "upc",
   "upc / isbn": "upc",
   "in collection": "flagCollection",
@@ -72,15 +82,42 @@ const HEADER_ALIASES: Record<string, keyof LocgRow | "flagCollection" | "flagWis
   format: "mediaFormat",
   grade: "grade",
   grading: "grade",
+  condition: "grade",
   "price paid": "pricePaid",
   price: "pricePaid",
   cost: "pricePaid",
   "date added": "dateAdded",
   "added date": "dateAdded",
   "my added date": "dateAdded",
+  "date purchased": "dateAdded",
+  "purchase date": "dateAdded",
+  "purchased date": "dateAdded",
   notes: "notes",
   note: "notes",
   comments: "notes",
+};
+
+/** Canonical publisher keys for alias matching. */
+const PUBLISHER_ALIASES: Record<string, string> = {
+  dc: "dc comics",
+  "dc comics": "dc comics",
+  "dc entertainment": "dc comics",
+  marvel: "marvel comics",
+  "marvel comics": "marvel comics",
+  "marvel entertainment": "marvel comics",
+  image: "image comics",
+  "image comics": "image comics",
+  idw: "idw publishing",
+  "idw publishing": "idw publishing",
+  "dark horse": "dark horse comics",
+  "dark horse comics": "dark horse comics",
+  boom: "boom! studios",
+  "boom studios": "boom! studios",
+  "boom! studios": "boom! studios",
+  dynamite: "dynamite",
+  "dynamite entertainment": "dynamite",
+  valiant: "valiant",
+  "valiant entertainment": "valiant",
 };
 
 function normHeader(h: string): string {
@@ -90,7 +127,15 @@ function normHeader(h: string): string {
 function truthy(v: string | undefined): boolean {
   if (!v) return false;
   const s = v.trim().toLowerCase();
-  return s === "1" || s === "y" || s === "yes" || s === "true" || s === "x" || s === "owned" || s === "collection";
+  return (
+    s === "1" ||
+    s === "y" ||
+    s === "yes" ||
+    s === "true" ||
+    s === "x" ||
+    s === "owned" ||
+    s === "collection"
+  );
 }
 
 function parsePrice(v: string | undefined): number | undefined {
@@ -150,6 +195,173 @@ export function parseCsv(text: string): string[][] {
   row.push(cell);
   if (row.some((c) => c.trim())) rows.push(row);
   return rows;
+}
+
+/** Strip articles / punctuation for loose comparison. */
+export function normalizeSeries(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/\b(the|a|an)\b/g, " ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/**
+ * Parse LOCG-style series strings into base title + optional vol/year.
+ * Examples:
+ *   "Action Comics (Vol. 3) (2016 - Present)" → base Action Comics, vol 3, year 2016
+ *   "Batman (Vol. 3) (2016 - 2026)" → base Batman, vol 3, year 2016
+ *   "All-Star Superman (2005 - 2008)" → base All-Star Superman, year 2005
+ *   "Batman (2016)" → base Batman, year 2016
+ */
+export function parseSeriesMeta(raw: string): {
+  base: string;
+  baseNorm: string;
+  year?: number;
+  yearEnd?: number;
+  vol?: number;
+} {
+  let s = raw.trim();
+  let vol: number | undefined;
+  let year: number | undefined;
+  let yearEnd: number | undefined;
+
+  const volM = s.match(/\(\s*vol\.?\s*(\d+)\s*\)/i);
+  if (volM) {
+    vol = Number(volM[1]);
+    s = s.replace(volM[0], " ").trim();
+  }
+
+  // (2016 - Present) / (2016 - 2026) / (2026)
+  const rangeM = s.match(
+    /\(\s*((?:19|20)\d{2})(?:\s*[-–—]\s*(present|(?:19|20)\d{2}))?\s*\)\s*$/i,
+  );
+  if (rangeM) {
+    year = Number(rangeM[1]);
+    if (rangeM[2] && !/^present$/i.test(rangeM[2])) yearEnd = Number(rangeM[2]);
+    s = s.slice(0, rangeM.index).trim();
+  }
+
+  // Catalog-style leftover "Vol. N:" in title (rare for series name)
+  s = s.replace(/\bvol\.?\s*\d+\b/gi, " ").replace(/\s+/g, " ").trim();
+  // Trailing em-dashes / punctuation
+  s = s.replace(/[-–—:\s]+$/g, "").trim();
+
+  const base = s || raw.trim();
+  return { base, baseNorm: normalizeSeries(base), year, yearEnd, vol };
+}
+
+export function normalizeIssue(issue: string): string {
+  let s = issue.trim().toLowerCase();
+  s = s.replace(/^#+/, "");
+  s = s.replace(/^0+(\d)/, "$1"); // leading zeros
+  if (/^nn$/i.test(s) || s === "") return "nn";
+  // "annual 1" → keep; strip spaces for key
+  return s.replace(/\s+/g, "");
+}
+
+export function normalizePublisher(p: string): string {
+  const n = p
+    .toLowerCase()
+    .replace(/[!.,]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  return PUBLISHER_ALIASES[n] ?? n;
+}
+
+export function publishersMatch(a: string, b: string): boolean {
+  const na = normalizePublisher(a);
+  const nb = normalizePublisher(b);
+  if (!na || !nb) return true; // unknown → don't block
+  if (na === "unknown" || nb === "unknown") return true;
+  return na === nb || na.includes(nb) || nb.includes(na);
+}
+
+/** Pull issue # and trailing variant text from an LOCG Full Title. */
+export function parseFullTitle(
+  title: string,
+  seriesHint?: string,
+): { issue?: string; variant?: string; facsimile?: boolean; formatHint?: ComicFormat } {
+  const t = title.trim();
+  if (!t) return {};
+
+  const facsimile = /facsimile/i.test(t);
+  let formatHint: ComicFormat | undefined;
+  if (/\bTPB?\b|\btrade\b|compact comics/i.test(t)) formatHint = "tpb";
+  else if (/\bHC\b|hardcover/i.test(t)) formatHint = "hc";
+  else if (/\bomnibus\b/i.test(t)) formatHint = "omnibus";
+  else if (facsimile) formatHint = "facsimile";
+  else if (/\bannual\b/i.test(t)) formatHint = "annual";
+
+  // Prefer "#123" anywhere (LOCG almost always uses this for singles)
+  const hash = t.match(/#\s*(\d+[A-Za-z]?)\b(.*)$/i);
+  if (hash) {
+    const issue = hash[1]!;
+    let rest = (hash[2] ?? "").trim();
+    // Drop leading series echo if present
+    if (seriesHint) {
+      const sn = normalizeSeries(seriesHint);
+      const rn = normalizeSeries(rest);
+      if (rn.startsWith(sn)) rest = rest.slice(seriesHint.length).trim();
+    }
+    // Common noise prefixes
+    rest = rest
+      .replace(/^(facsimile\s+edition(?:\s+\d{4})?)\s*/i, "")
+      .replace(/^(2nd|3rd|4th|\d+th)\s+printing\b/i, (m) => m)
+      .trim();
+    const variant = rest
+      ? rest
+          .replace(/\s+Facsimile Edition(?:\s+\d{4})?/gi, "")
+          .replace(/\s+/g, " ")
+          .trim() || undefined
+      : undefined;
+    // Keep printing / cover / variant wording
+    const variantOut =
+      variant ||
+      (/\d+(st|nd|rd|th)\s+printing/i.test(hash[2] ?? "")
+        ? (hash[2] ?? "").trim()
+        : undefined);
+    return {
+      issue,
+      variant: variantOut || (facsimile && !variant ? "Facsimile Edition" : undefined),
+      facsimile,
+      formatHint,
+    };
+  }
+
+  // "Batman Vol. 1: The Court of Owls TP" — collected edition, no issue #
+  if (formatHint === "tpb" || formatHint === "hc" || formatHint === "omnibus") {
+    return { issue: "nn", facsimile, formatHint };
+  }
+
+  // Trailing bare number (legacy sample CSV title style)
+  const trail = t.match(/^(.*?)(?:\s+#|\s+)(\d+[A-Za-z]?|nn|annual\s*\d+)\s*$/i);
+  if (trail) {
+    return { issue: trail[2]!.replace(/^#/i, "").trim(), facsimile, formatHint };
+  }
+
+  return { facsimile, formatHint };
+}
+
+function catalogSeriesYear(series: string): number | undefined {
+  const m = series.trim().match(/\(\s*((?:19|20)\d{2})\s*\)\s*$/);
+  return m ? Number(m[1]) : undefined;
+}
+
+function comicKey(c: { series: string; issue: string; publisher: string; variant?: string }) {
+  return `${c.series}|${c.issue}|${c.publisher}|${c.variant ?? ""}`.toLowerCase();
+}
+
+function inferFormat(row: LocgRow): ComicFormat {
+  if (/tpb|trade|compact comics/i.test(row.mediaFormat ?? "") || /tpb?\b|trade/i.test(row.title ?? "")) {
+    return "tpb";
+  }
+  if (/hardcover|\bhc\b/i.test(row.mediaFormat ?? "") || /\bHC\b/.test(row.title ?? "")) return "hc";
+  if (/omnibus/i.test(row.title ?? row.series)) return "omnibus";
+  if (/facsimile/i.test(row.title ?? row.series)) return "facsimile";
+  if (/annual/i.test(row.issue) || /annual/i.test(row.title ?? "")) return "annual";
+  return "single";
 }
 
 export function parseLocgSpreadsheet(text: string): LocgParseResult {
@@ -243,8 +455,19 @@ export function parseLocgSpreadsheet(text: string): LocgParseResult {
       }
     });
 
-    // LOCG sometimes puts "Amazing Spider-Man #300" only in Title
-    if ((!series || !issue) && title) {
+    const meta = series ? parseSeriesMeta(series) : { base: "", baseNorm: "" };
+    const fromTitle = title ? parseFullTitle(title, meta.base || series) : {};
+
+    // Always enrich issue/variant from Full Title when column missing or nn
+    if ((!issue || issue.toLowerCase() === "nn") && fromTitle.issue) {
+      issue = fromTitle.issue;
+    }
+    if (!variant && fromTitle.variant) {
+      variant = fromTitle.variant;
+    }
+
+    // Legacy: title-only rows with "Series #123" at end
+    if ((!series || !issue) && title && !fromTitle.issue) {
       const m = title.match(/^(.*?)(?:\s+#|\s+)(\d+[A-Za-z]?|nn|annual\s*\d+)\s*$/i);
       if (m) {
         series = series || m[1]!.trim();
@@ -254,11 +477,14 @@ export function parseLocgSpreadsheet(text: string): LocgParseResult {
       }
     }
 
+    if (!series && title) series = title;
     if (!series) continue;
-    if (!issue) issue = "nn";
+    if (!issue) issue = fromTitle.issue || "nn";
     if (!publisher) publisher = "Unknown";
 
-    // Default: if no collection/wishlist flags at all, treat as owned (collection export)
+    // Re-parse meta if series came from title
+    const finalMeta = parseSeriesMeta(series);
+
     const hasFlags =
       mapped.includes("flagCollection") || mapped.includes("flagWishlist") || mapped.includes("flagRead");
     const inCollection = hasFlags ? Boolean(flagCollection) : true;
@@ -280,6 +506,10 @@ export function parseLocgSpreadsheet(text: string): LocgParseResult {
       pricePaid,
       dateAdded,
       notes,
+      seriesYear: finalMeta.year,
+      seriesYearEnd: finalMeta.yearEnd,
+      seriesVol: finalMeta.vol,
+      seriesBase: finalMeta.base,
       raw,
     });
   }
@@ -287,36 +517,169 @@ export function parseLocgSpreadsheet(text: string): LocgParseResult {
   return { headers, rows, warnings };
 }
 
-function comicKey(c: { series: string; issue: string; publisher: string; variant?: string }) {
-  return `${c.series}|${c.issue}|${c.publisher}|${c.variant ?? ""}`.toLowerCase();
+type Scored = { comic: CatalogComic; score: number };
+
+function scoreCandidate(row: LocgRow, comic: CatalogComic): number {
+  const rowBase = row.seriesBase ? normalizeSeries(row.seriesBase) : parseSeriesMeta(row.series).baseNorm;
+  const catMeta = parseSeriesMeta(comic.series);
+  const catYear = catalogSeriesYear(comic.series) ?? catMeta.year;
+
+  let score = 0;
+
+  // Series base equality only (articles already stripped) — avoids "Batman" ⊂ "Batman / Superman: …"
+  if (catMeta.baseNorm === rowBase) score += 40;
+  else return -1;
+
+  const rowIss = normalizeIssue(row.issue);
+  const catIss = normalizeIssue(comic.issue);
+  if (rowIss === catIss) score += 35;
+  else return -1;
+
+  if (publishersMatch(row.publisher, comic.publisher)) score += 15;
+  else score -= 20;
+
+  // Format / facsimile — Facsimile Edition is a distinct product from the original key
+  const wantFacsimile = /facsimile/i.test(row.title ?? "") || /facsimile/i.test(row.variant ?? "");
+  if (wantFacsimile && comic.format === "facsimile") score += 18;
+  else if (wantFacsimile && comic.format !== "facsimile") return -1;
+  else if (!wantFacsimile && comic.format === "facsimile") score -= 10;
+
+  // Year / volume heuristics — never prefer a differently year-tagged run
+  const coverYear = (() => {
+    const d = comic.streetDate ?? comic.coverDate;
+    if (!d) return undefined;
+    const y = Number(String(d).slice(0, 4));
+    return Number.isFinite(y) && y > 1900 ? y : undefined;
+  })();
+
+  if (row.seriesYear && catYear) {
+    if (row.seriesYear === catYear) score += 25;
+    else if (Math.abs(row.seriesYear - catYear) <= 1) score += 5;
+    else return -1; // e.g. LOCG 2025 must not land on catalog (2022)
+  } else if (row.seriesYear && !catYear) {
+    // Bare catalog series — only if cover date sits in the LOCG run window
+    // Facsimile reprints are modern and may sit outside the original run years.
+    if (wantFacsimile && comic.format === "facsimile") {
+      score += 8;
+    } else {
+      const end = row.seriesYearEnd ?? Math.max(row.seriesYear + 25, new Date().getFullYear() + 1);
+      if (coverYear != null) {
+        if (coverYear < row.seriesYear - 1 || coverYear > end + 1) return -1;
+        score += 10;
+      } else {
+        score += 3;
+      }
+    }
+  } else if (!row.seriesYear && !catYear) {
+    score += 10; // both bare
+  } else if (!row.seriesYear && catYear) {
+    score += 2; // prefer bare row → bare catalog slightly over year-tagged
+  }
+
+  const wantTpb = inferFormat(row) === "tpb";
+  if (wantTpb && comic.format === "tpb") score += 12;
+  else if (wantTpb && comic.format === "single") score -= 8;
+
+  // Variant
+  const rowVar = normalizeSeries(row.variant ?? "");
+  const catVar = normalizeSeries(comic.variant ?? "");
+  if (rowVar && catVar) {
+    if (rowVar === catVar || rowVar.includes(catVar) || catVar.includes(rowVar)) score += 12;
+    else if (/cover\s*[a-z]/i.test(row.variant ?? "") && /cover\s*[a-z]/i.test(comic.variant ?? "")) {
+      // different cover letters
+      score -= 5;
+    }
+  } else if (!rowVar && !catVar) {
+    score += 8; // both main covers
+  } else if (!rowVar && catVar) {
+    score -= 4; // prefer non-variant catalog when LOCG is main
+  } else if (rowVar && !catVar) {
+    // LOCG variant, catalog main — still a usable catalog link
+    score += 3;
+  }
+
+  // Exact raw series string bonus
+  if (comic.series.toLowerCase() === row.series.toLowerCase()) score += 5;
+  if (normalizeSeries(comic.series) === normalizeSeries(row.series)) score += 5;
+
+  return score;
 }
 
-function normalizeSeries(s: string): string {
-  return s
-    .toLowerCase()
-    .replace(/\b(the|a|an)\b/g, " ")
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
+function pickBestMatch(row: LocgRow, catalog: CatalogComic[]): CatalogComic | undefined {
+  const rowBase = row.seriesBase ? normalizeSeries(row.seriesBase) : parseSeriesMeta(row.series).baseNorm;
+  const rowIss = normalizeIssue(row.issue);
+  if (!rowBase || !rowIss) return undefined;
+
+  // Exact key first (raw strings)
+  const exact = catalog.find((c) => comicKey(c) === comicKey(row));
+  if (exact) return exact;
+
+  // Exact with normalized publisher alias + issue + raw series
+  const exactLoose = catalog.find(
+    (c) =>
+      c.series.toLowerCase() === row.series.toLowerCase() &&
+      normalizeIssue(c.issue) === rowIss &&
+      publishersMatch(c.publisher, row.publisher) &&
+      normalizeSeries(c.variant ?? "") === normalizeSeries(row.variant ?? ""),
+  );
+  if (exactLoose) return exactLoose;
+
+  const scored: Scored[] = [];
+  for (const c of catalog) {
+    const catMeta = parseSeriesMeta(c.series);
+    if (catMeta.baseNorm !== rowBase) continue;
+    if (normalizeIssue(c.issue) !== rowIss) continue;
+    if (!publishersMatch(c.publisher, row.publisher)) continue;
+    const catYear = catalogSeriesYear(c.series) ?? catMeta.year;
+    // Hard reject: LOCG year-tagged run vs differently year-tagged catalog entry
+    if (row.seriesYear && catYear && Math.abs(row.seriesYear - catYear) > 1) continue;
+    const score = scoreCandidate(row, c);
+    if (score >= 60) scored.push({ comic: c, score });
+  }
+
+  if (!scored.length) return undefined;
+  scored.sort((a, b) => b.score - a.score);
+  const best = scored[0]!;
+  const second = scored[1];
+  // If tie between year-tagged and bare, prefer year match when row has year
+  if (second && second.score === best.score) {
+    if (row.seriesYear) {
+      const yearHit = scored.find((s) => catalogSeriesYear(s.comic.series) === row.seriesYear);
+      if (yearHit) return yearHit.comic;
+    }
+    const noVar = scored.find((s) => !s.comic.variant && s.score === best.score);
+    if (noVar) return noVar.comic;
+  }
+  // Ambiguous near-ties with different years and no row year → skip to avoid wrong match
+  if (
+    second &&
+    best.score - second.score < 8 &&
+    catalogSeriesYear(best.comic.series) !== catalogSeriesYear(second.comic.series) &&
+    !row.seriesYear
+  ) {
+    // Prefer bare series if present
+    const bare = scored.find((s) => !catalogSeriesYear(s.comic.series));
+    if (bare && bare.score >= best.score - 5) return bare.comic;
+  }
+  return best.comic;
 }
 
+/**
+ * Match LOCG rows to catalog comics.
+ * Pass live weekly extras and permanent-archive promotions so matching uses the full library.
+ */
 export function matchLocgRows(
   rows: LocgRow[],
   extras: CatalogComic[] = [],
-): { matches: LocgMatch[]; owned: number; wanted: number; unmatched: number } {
-  const catalog = mergeComics(extras);
-  const byKey = new Map(catalog.map((c) => [comicKey(c), c]));
-  const byLoose = new Map<string, CatalogComic[]>();
-  for (const c of catalog) {
-    const k = `${normalizeSeries(c.series)}|${c.issue.toLowerCase()}`;
-    const list = byLoose.get(k) ?? [];
-    list.push(c);
-    byLoose.set(k, list);
-  }
+  promoted: CatalogComic[] = [],
+): { matches: LocgMatch[]; owned: number; wanted: number; unmatched: number; matched: number } {
+  const catalog = mergeComics(extras, promoted);
 
   const matches: LocgMatch[] = [];
   let owned = 0;
   let wanted = 0;
   let unmatched = 0;
+  let matched = 0;
 
   for (const row of rows) {
     if (!row.inCollection && !row.inWishlist) {
@@ -324,41 +687,23 @@ export function matchLocgRows(
       continue;
     }
 
-    const exact = byKey.get(comicKey(row));
-    let comic = exact;
-    if (!comic) {
-      const loose = byLoose.get(`${normalizeSeries(row.series)}|${row.issue.toLowerCase()}`) ?? [];
-      if (loose.length === 1) comic = loose[0];
-      else if (loose.length > 1) {
-        comic =
-          loose.find((c) => c.publisher.toLowerCase() === row.publisher.toLowerCase()) ??
-          loose.find((c) => !c.variant) ??
-          loose[0];
-      }
-    }
+    const comic = pickBestMatch(row, catalog);
 
     if (comic) {
       matches.push({ kind: "catalog", comic, row });
+      matched += 1;
       if (row.inCollection) owned += 1;
       else wanted += 1;
     } else {
       const custom: CustomComic = {
-        id: `locg-${slug(row.series)}-${slug(row.issue)}-${slug(row.publisher)}-${slug(row.variant ?? "a")}`,
-        series: row.series,
+        id: `locg-${slug(row.seriesBase || row.series)}-${slug(row.issue)}-${slug(row.publisher)}-${slug(row.variant ?? "a")}`,
+        series: row.seriesBase || row.series,
         issue: row.issue,
         publisher: row.publisher,
         coverDate: row.coverDate,
         variant: row.variant,
         upc: row.upc,
-        format: /tpb|trade/i.test(row.mediaFormat ?? "")
-          ? "tpb"
-          : /hardcover|\bhc\b/i.test(row.mediaFormat ?? "")
-            ? "hc"
-            : /facsimile/i.test(row.title ?? row.series)
-              ? "facsimile"
-              : /annual/i.test(row.issue)
-                ? "annual"
-                : "single",
+        format: inferFormat(row),
         msrp: row.pricePaid,
         description: row.title,
       };
@@ -369,7 +714,7 @@ export function matchLocgRows(
     }
   }
 
-  return { matches, owned, wanted, unmatched };
+  return { matches, owned, wanted, unmatched, matched };
 }
 
 function mapGrade(raw?: string): ComicGrade {
@@ -421,7 +766,11 @@ export function buildOwnedFromMatch(match: Extract<LocgMatch, { kind: "catalog" 
         acquiredDate: row.dateAdded || row.coverDate,
         acquiredPrice: row.pricePaid,
         grade: mapGrade(row.grade),
-        notes: [row.notes, row.mediaFormat ? `LOCG media: ${row.mediaFormat}` : null, row.markedRead ? "Marked read on LOCG" : null]
+        notes: [
+          row.notes,
+          row.mediaFormat ? `LOCG media: ${row.mediaFormat}` : null,
+          row.markedRead ? "Marked read on LOCG" : null,
+        ]
           .filter(Boolean)
           .join(" · ") || undefined,
       },
@@ -436,9 +785,7 @@ export function buildOwnedFromMatch(match: Extract<LocgMatch, { kind: "catalog" 
       acquiredDate: row.dateAdded || row.coverDate,
       acquiredPrice: row.pricePaid,
       grade: mapGrade(row.grade),
-      notes: [row.notes, "Imported from League of Comic Geeks"]
-        .filter(Boolean)
-        .join(" · "),
+      notes: [row.notes, "Imported from League of Comic Geeks"].filter(Boolean).join(" · "),
     },
   };
 }

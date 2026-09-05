@@ -4,7 +4,7 @@ import { FileUp, Upload } from "lucide-react";
 import { toast } from "sonner";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { useLiveComics } from "@/lib/live-store";
+import { useEnsureComicLibrary, useLiveComics } from "@/lib/live-store";
 import {
   buildOwnedFromMatch,
   matchLocgRows,
@@ -20,6 +20,7 @@ export const Route = createFileRoute("/import")({
 
 function ImportPage() {
   const extras = useLiveComics();
+  const library = useEnsureComicLibrary(extras);
   const addComic = useVault((s) => s.addComic);
   const addCustomComic = useVault((s) => s.addCustomComic);
   const toggleWantComic = useVault((s) => s.toggleWantComic);
@@ -32,8 +33,9 @@ function ImportPage() {
 
   const matched = useMemo(() => {
     if (!parsed) return null;
-    return matchLocgRows(parsed.rows, extras);
-  }, [parsed, extras]);
+    // Full seed + weekly extras + permanent archive promotions
+    return matchLocgRows(parsed.rows, extras, library?.archive ?? []);
+  }, [parsed, extras, library]);
 
   async function onFile(file?: File) {
     if (!file) return;
@@ -151,8 +153,12 @@ function ImportPage() {
             <div>
               <h2 className="font-display text-lg tracking-wide uppercase">3. Review &amp; import</h2>
               <p className="mt-1 text-sm text-muted">
-                {parsed.rows.length} rows · {matched.owned} collection · {matched.wanted} wishlist ·{" "}
-                {matched.unmatched} custom (not in catalog yet)
+                {parsed.rows.length} rows · {matched.matched} catalog matches (
+                {parsed.rows.length
+                  ? Math.round((matched.matched / parsed.rows.length) * 100)
+                  : 0}
+                %) · {matched.owned} collection · {matched.wanted} wishlist · {matched.unmatched}{" "}
+                custom (not in catalog yet)
               </p>
             </div>
             <Button disabled={busy || !matched.matches.length} onClick={applyImport}>

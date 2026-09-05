@@ -29,6 +29,7 @@ import { cn, slug } from "@/lib/utils";
 type Search = {
   q?: string;
   publisher?: string;
+  series?: string;
   keys?: boolean;
   sort?: "release" | "name" | "acquired";
 };
@@ -37,6 +38,7 @@ export const Route = createFileRoute("/comics/")({
   validateSearch: (s: Record<string, unknown>): Search => ({
     q: typeof s.q === "string" ? s.q : undefined,
     publisher: typeof s.publisher === "string" ? s.publisher : undefined,
+    series: typeof s.series === "string" ? s.series : undefined,
     keys: s.keys === true || s.keys === "true",
     sort: s.sort === "name" || s.sort === "acquired" || s.sort === "release" ? s.sort : undefined,
   }),
@@ -135,13 +137,21 @@ function ComicsPage() {
     [catalog],
   );
 
-  const filtering = Boolean(search.q || search.publisher || search.keys);
+  const seriesForPublisher = useMemo(() => {
+    if (!search.publisher) return [] as string[];
+    return [...new Set(catalog.filter((c) => c.publisher === search.publisher).map((c) => c.series))].sort(
+      (a, b) => a.localeCompare(b),
+    );
+  }, [catalog, search.publisher]);
+
+  const filtering = Boolean(search.q || search.publisher || search.series || search.keys);
 
   const filtered = useMemo(() => {
     let list = search.q
       ? searchComics(search.q, extras, library?.archive ?? [])
       : catalog;
     if (search.publisher) list = list.filter((c) => c.publisher === search.publisher);
+    if (search.series) list = list.filter((c) => c.series === search.series);
     if (search.keys) list = list.filter((c) => c.key);
     return sortComics(list);
   }, [search, extras, catalog, library, sort, ownedByCatalog]);
@@ -150,17 +160,19 @@ function ComicsPage() {
     if (filtering) return [];
     let list = split.noteworthy;
     if (search.publisher) list = list.filter((c) => c.publisher === search.publisher);
+    if (search.series) list = list.filter((c) => c.series === search.series);
     if (search.keys) list = list.filter((c) => c.key);
     return sortComics(list);
-  }, [filtering, split.noteworthy, search.publisher, search.keys, sort, ownedByCatalog]);
+  }, [filtering, split.noteworthy, search.publisher, search.series, search.keys, sort, ownedByCatalog]);
 
   const filteredArchive = useMemo(() => {
     if (filtering) return filtered;
     let list = split.archive;
     if (search.publisher) list = list.filter((c) => c.publisher === search.publisher);
+    if (search.series) list = list.filter((c) => c.series === search.series);
     if (search.keys) list = list.filter((c) => c.key);
     return sortComics(list);
-  }, [filtering, filtered, split.archive, search.publisher, search.keys, sort, ownedByCatalog]);
+  }, [filtering, filtered, split.archive, search.publisher, search.series, search.keys, sort, ownedByCatalog]);
 
   return (
     <main className="flex flex-col gap-6">
@@ -198,7 +210,9 @@ function ComicsPage() {
       <div className="hide-scrollbar -mx-4 flex flex-wrap gap-2 overflow-x-auto px-4 md:mx-0 md:px-0">
         <FilterChip
           active={!search.publisher}
-          onClick={() => navigate({ search: (prev) => ({ ...prev, publisher: undefined }) })}
+          onClick={() =>
+            navigate({ search: (prev) => ({ ...prev, publisher: undefined, series: undefined }) })
+          }
         >
           All publishers
         </FilterChip>
@@ -207,7 +221,13 @@ function ComicsPage() {
             key={p}
             active={search.publisher === p}
             onClick={() =>
-              navigate({ search: (prev) => ({ ...prev, publisher: prev.publisher === p ? undefined : p }) })
+              navigate({
+                search: (prev) => ({
+                  ...prev,
+                  publisher: prev.publisher === p ? undefined : p,
+                  series: undefined,
+                }),
+              })
             }
           >
             {p}
@@ -220,6 +240,39 @@ function ComicsPage() {
           Keys only
         </FilterChip>
       </div>
+
+      {search.publisher ? (
+        <div className="rounded-xl bg-bg-elevated p-4 shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
+          <p className="text-xs tracking-wide text-muted uppercase">
+            Series under {search.publisher}
+            <span className="ml-2 tabular text-muted/80">({seriesForPublisher.length})</span>
+          </p>
+          <div className="hide-scrollbar mt-3 -mx-1 flex max-h-36 flex-wrap gap-2 overflow-x-auto overflow-y-auto px-1">
+            <FilterChip
+              active={!search.series}
+              onClick={() => navigate({ search: (prev) => ({ ...prev, series: undefined }) })}
+            >
+              All series
+            </FilterChip>
+            {seriesForPublisher.map((s) => (
+              <FilterChip
+                key={s}
+                active={search.series === s}
+                onClick={() =>
+                  navigate({
+                    search: (prev) => ({
+                      ...prev,
+                      series: prev.series === s ? undefined : s,
+                    }),
+                  })
+                }
+              >
+                {s}
+              </FilterChip>
+            ))}
+          </div>
+        </div>
+      ) : null}
 
       <div className="flex flex-wrap items-center gap-2">
         {(["release", "name", "acquired"] as const).map((s) => (
