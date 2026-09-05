@@ -145,6 +145,33 @@ export const COMPANIES: Company[] = [
     hq: "USA",
     accent: "#2a6f97",
   },
+  {
+    id: "premiumdna",
+    name: "Premium DNA Toys",
+    short: "Premium DNA",
+    blurb: "Licensed 1:12 and collector action figures.",
+    founded: "2018",
+    hq: "USA",
+    accent: "#1b4332",
+  },
+  {
+    id: "hiya",
+    name: "Hiya Toys",
+    short: "Hiya",
+    blurb: "Exquisite Mini / Basic articulated movie and game figures.",
+    founded: "2013",
+    hq: "Hong Kong",
+    accent: "#0d47a1",
+  },
+  {
+    id: "mondo",
+    name: "Mondo",
+    short: "Mondo",
+    blurb: "Premium 1:6 and 1:12 soft goods and articulated figures.",
+    founded: "2014",
+    hq: "Austin, TX",
+    accent: "#6a040f",
+  },
 ];
 
 export const COMPANY_BY_ID: Record<CompanyId, Company> = Object.fromEntries(

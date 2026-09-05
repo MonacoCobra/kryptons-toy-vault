@@ -21,6 +21,9 @@ const COMPANIES: CompanyId[] = [
   "storm",
   "bossfight",
   "loyalsubjects",
+  "premiumdna",
+  "hiya",
+  "mondo",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];
@@ -158,6 +161,9 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/storm collect/.test(s)) return "storm";
   if (/boss fight|h\.?a\.?c\.?k\.?s/.test(s)) return "bossfight";
   if (/loyal subjects|bst axn/.test(s)) return "loyalsubjects";
+  if (/premium dna/.test(s)) return "premiumdna";
+  if (/\bhiya\b/.test(s)) return "hiya";
+  if (/\bmondo\b/.test(s)) return "mondo";
   if (/masterverse|origins|mattel|wwe elite/.test(s)) return "mattel";
   if (/toy ?biz/.test(s)) return "toybiz";
   return null;

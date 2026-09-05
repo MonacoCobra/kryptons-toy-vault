@@ -2,8 +2,8 @@
  * Live figure ingest from brand Shopify storefront product JSON.
  * Prefer real CDN product images — never generative art.
  *
- * Hasbro Pulse / BBTS / Entertainment Earth do not expose stable public
- * products.json from our network; add shops here when their Shopify feed works.
+ * Focus: articulated action figures (not pins, dolls, or statue lines).
+ * Hasbro Pulse / BBTS / EE / NECA / Mezco official shops still lack stable public JSON.
  */
 
 import type { CatalogFigure, CompanyId, ItemKind } from "@/lib/types";
@@ -31,8 +31,11 @@ export const FIGURE_STOREFRONTS: StorefrontSource[] = [
     baseUrl: "https://creations.mattel.com",
     company: "mattel",
     requireHint:
-      /masterverse|masters of the universe|wwe|elite|hot wheels|jurassic|monster high|dc universe|hammond|action figure|figure /i,
+      /masterverse|masters of the universe|wwe|elite|jurassic|monster high|dc universe|hammond|action figure/i,
   },
+  { id: "premiumdna", baseUrl: "https://www.premiumdnatoys.com", company: "premiumdna" },
+  { id: "hiya", baseUrl: "https://www.hiyatoys.com", company: "hiya" },
+  { id: "mondo", baseUrl: "https://www.mondoshop.com", company: "mondo" },
 ];
 
 type ShopifyImage = { src?: string };
@@ -55,7 +58,7 @@ type ShopifyProduct = {
 const UA = "KryptonsToyVault/1.0 (personal collection; weekly figure ingest)";
 
 const SKIP_TYPE =
-  /\b(apparel|shirt|hoodie|hat|cap|sock|sticker|figpin|enamel|poster|print|mug|bag|wallet|blanket|keychain|lanyard|gift.?card|digital|barbie|doll)\b/i;
+  /\b(apparel|shirt|hoodie|hat|cap|sock|sticker|figpin|enamel|poster|print|mug|bag|wallet|blanket|keychain|lanyard|gift.?card|digital|barbie|doll|little people|plush|soft toy|board game|vinyl art|minico|statue only)\b/i;
 const FIGURE_HINT =
   /\b(figure|figurine|statue|mafex|figuarts|figma|mezco|legends|classified|black series|model kit|gunpla|plamo|soft.?vinyl|sofubi|reactors|ultimates|reaction|h\.?a\.?c\.?k\.?s|bst axn|masterverse)\b/i;
 

@@ -14,7 +14,10 @@ export type CompanyId =
   | "kotobukiya"
   | "storm"
   | "bossfight"
-  | "loyalsubjects";
+  | "loyalsubjects"
+  | "premiumdna"
+  | "hiya"
+  | "mondo";
 
 export type ItemKind = "figure" | "kit";
 

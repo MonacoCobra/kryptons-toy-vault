@@ -1,19 +1,24 @@
-# Figure storefront ingest
+# Figure storefront ingest (action figures)
 
-Weekly New & Noteworthy figures prefer live Shopify `products.json` feeds with real CDN images (no AI art).
+Weekly New & Noteworthy **action figures** prefer live Shopify `products.json` feeds with real CDN images (no AI art).
 
-## Working sources
+## Active sources
 
-| Shop | Base URL | Company |
+| Shop | Base URL | Notes |
 | --- | --- | --- |
-| Super7 | https://super7.com | super7 |
-| Good Smile US | https://goodsmileus.com | figma |
-| Boss Fight Studio | https://bossfightstudio.com | bossfight |
-| The Loyal Subjects | https://theloyalsubjects.com | loyalsubjects |
-| Mattel Creations | https://creations.mattel.com | mattel (filtered: Masterverse / WWE / etc.) |
+| Super7 | https://super7.com | ULTIMATES / ReAction |
+| Good Smile US | https://goodsmileus.com | figma / scales (figure-filtered) |
+| Boss Fight Studio | https://bossfightstudio.com | H.A.C.K.S. |
+| The Loyal Subjects | https://theloyalsubjects.com | BST AXN |
+| Mattel Creations | https://creations.mattel.com | Masterverse / WWE / etc. only |
+| Premium DNA | https://www.premiumdnatoys.com | 1:12 licensed figures |
+| Hiya Toys | https://www.hiyatoys.com | Exquisite Mini / Basic |
+| Mondo | https://www.mondoshop.com | 1:12 / soft goods figures |
 
-Add more in `src/lib/figure-storefronts.ts` → `FIGURE_STOREFRONTS`.
+## Out of scope for now
 
-## Not available as stable JSON (yet)
+Pins, Barbie/dolls, statue busts, board games. Retailers like Star Action Figures are too noisy.
 
-- **Hasbro Pulse**, **BBTS**, **Entertainment Earth**, NECA, Mezco, Hot Toys, Sideshow — HTML or gated; no reliable public `products.json` from our network.
+## Still no stable Shopify JSON
+
+Hasbro Pulse, BBTS, Entertainment Earth, NECA, Mezco official, Hot Toys, Sideshow.
