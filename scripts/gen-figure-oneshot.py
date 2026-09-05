@@ -202,8 +202,20 @@ def main():
     existing_ids, existing_keys = parse_existing_ts()
     print(f"existing seed/injected figures: {len(existing_ids)}")
 
-    print("=== Shopify full pagination ===")
-    shopify_rows, shopify_stats = dump_all_storefronts()
+    curated_only = "--curated-only" in sys.argv
+    if curated_only and ARCHIVE_JSON.exists():
+        print("=== Reusing prior Shopify rows (--curated-only) ===")
+        prior = json.loads(ARCHIVE_JSON.read_text())
+        shopify_rows = [r for r in prior if r.get("source") == "shopify"]
+        # normalize tags to list for clean_for_json path via fig rebuild
+        shopify_stats = {
+            "raw": {"reused": len(shopify_rows)},
+            "kept": {"reused": len(shopify_rows)},
+        }
+        print(f"reused shopify rows: {len(shopify_rows)}")
+    else:
+        print("=== Shopify full pagination ===")
+        shopify_rows, shopify_stats = dump_all_storefronts()
 
     print("=== Curated expansions ===")
     curated_rows = build_curated()

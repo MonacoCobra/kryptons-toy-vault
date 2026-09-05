@@ -200,6 +200,15 @@ export const COMPANIES: Company[] = [
     accent: "#f0a500",
   },
   {
+    id: "jakks",
+    name: "JAKKS Pacific",
+    short: "JAKKS",
+    blurb: "Sonic the Hedgehog AF and Masters of the Universe Primal Age.",
+    founded: "1995",
+    hq: "Santa Monica, CA",
+    accent: "#0057a0",
+  },
+  {
     id: "valaverse",
     name: "Valaverse",
     short: "Valaverse",

@@ -27,6 +27,8 @@ const COMPANIES: CompanyId[] = [
   "threezero",
   "dcdirect",
   "kenner",
+  "valaverse",
+  "jakks",
 ];
 
 const FORMATS: ComicFormat[] = ["single", "annual", "tpb", "hc", "omnibus", "facsimile"];
@@ -169,6 +171,7 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/\bmondo\b/.test(s)) return "mondo";
   if (/\bthreezero\b/.test(s)) return "threezero";
   if (/masterverse|origins|mattel|wwe elite/.test(s)) return "mattel";
+  if (/jakks|primal age|sonic the hedgehog/.test(s)) return "jakks";
   if (/toy ?biz/.test(s)) return "toybiz";
   return null;
 }

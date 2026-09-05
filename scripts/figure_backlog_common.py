@@ -37,6 +37,7 @@ VALID_COMPANIES = {
     "dcdirect",
     "kenner",
     "valaverse",
+    "jakks",
 }
 VALID_KINDS = {"figure", "kit"}
 

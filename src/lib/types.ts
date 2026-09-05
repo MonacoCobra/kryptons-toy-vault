@@ -21,7 +21,8 @@ export type CompanyId =
   | "threezero"
   | "dcdirect"
   | "kenner"
-  | "valaverse";
+  | "valaverse"
+  | "jakks";
 
 export type ItemKind = "figure" | "kit";
 

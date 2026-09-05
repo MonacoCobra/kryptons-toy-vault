@@ -18,6 +18,7 @@ Former floor was 1986-10-01; raised for DC mass fill and future Marvel/indie pas
 | `scripts/gen-batch-010-western-thin.py` | Archie/Titan/Rebellion/2000AD + light Viz/Kodansha + densify |
 | `scripts/gen-batch-011-vertigo-ws-indie.py` | Vertigo densify, Black Label, WildStorm, Milestone, CrossGen, Eclipse/First≥1980, Avatar, SW/TF/Joe/Hellboy |
 | `scripts/gen-batch-012-flagship-thin.py` | Flagship thin densify: GA/HQ/SS/BoP, Marvel DS/BP/SS/Excalibur/Punisher, Skybound, Image, Pacific/Eclipse |
+| `scripts/gen-batch-013-highvalue-gaps.py` | Absolute siblings, Black Label densify, Ultimate 2020s, Hellboy/BPRD leftovers, Invincible leftovers, TWD Deluxe, Sandman Universe |
 
 ## Publishers
 

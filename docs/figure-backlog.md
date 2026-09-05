@@ -92,4 +92,8 @@ Curated expansions: more Marvel Legends, Black Series, Classified; Super7 ULTIMA
 
 ## MotU / WWE / Mezco densify (2026-09-05)
 
-Curated Mattel Masterverse + Origins lines (distinct from Shopify "Masters of the Universe" catch-all), WWE Elite Collection densify, and additional Mezco One:12 listable AF. Jakks/Primal Age/Sonic skipped — no `CompanyId` for Jakks; avoid non-AF bloat.
+Curated Mattel Masterverse + Origins lines (distinct from Shopify "Masters of the Universe" catch-all), WWE Elite Collection densify, and additional Mezco One:12 listable AF.
+
+## JAKKS / Masterverse / BST AXN densify (2026-09-05)
+
+`CompanyId` `jakks` added for Sonic the Hedgehog AF + MotU Primal Age. Further Masterverse leftovers (New Eternia / Revolution / Creations / Movie) and Loyal Subjects BST AXN curated densify merged via `gen-figure-oneshot.py --curated-only`.
