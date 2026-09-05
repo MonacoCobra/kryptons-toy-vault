@@ -17,6 +17,7 @@ paginates **all** pages from these same shops (see `scripts/gen-figure-oneshot.p
 | Hiya Toys | https://www.hiyatoys.com | Exquisite Mini / Basic |
 | Mondo | https://www.mondoshop.com | 1/12 / 1/6 / Soft Vinyl figures |
 | Shop DC | https://shop.dc.com | McFarlane Multiverse AF (filter merch) |
+| NECA Store | https://store.necaonline.com | Official NECA AF (filter pins/plush/apparel) |
 
 ## Out of scope
 
@@ -24,7 +25,7 @@ Pins, Barbie/dolls, poster/print merch, board games, drinkware, puzzles.
 
 ## Still no stable Shopify JSON
 
-Hasbro Pulse, BBTS, Entertainment Earth, NECA, Mezco official, McFarlane store,
+Hasbro Pulse, BBTS, Entertainment Earth, Mezco official, McFarlane Toys store,
 Hot Toys, Sideshow, Bandai Tamashii, threezero — covered via curated archive
 depth and/or weekly seed, not live JSON. DC Direct / Kenner Super Powers /
 Mattel DCUC are curated in `scripts/figure_oneshot/curated_dc.py`.

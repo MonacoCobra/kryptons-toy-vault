@@ -15,10 +15,11 @@ Former floor was 1986-10-01; raised for DC mass fill and future Marvel/indie pas
 | `src/data/comic-backlog/manifest.json` | Injected / queued metadata |
 | `scripts/comic_backlog_common.py` | Shared FLOOR, dedupe, inject |
 | `scripts/gen-batch-006-dc-mass-1980.py` | DC mass generator (Superman → Batman → Flash/GL → majors) |
+| `scripts/gen-batch-010-western-thin.py` | Archie/Titan/Rebellion/2000AD + light Viz/Kodansha + densify |
 
 ## Publishers
 
-DC Comics and DC imprints that belong in the DC catalog (Elseworlds, Black Label where appropriate).
+DC / Marvel / Image primary; also Archie, Titan, Rebellion/2000 AD, Dark Horse, BOOM!, IDW, Dynamite, Valiant, Oni; light Viz/Kodansha English comics (not manga overload).
 
 ## Covers
 

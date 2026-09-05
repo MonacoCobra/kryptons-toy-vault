@@ -3,8 +3,8 @@
  * Prefer real CDN product images — never generative art.
  *
  * Focus: articulated action figures (not pins, dolls, or statue lines).
- * Hasbro Pulse / BBTS / EE / NECA / Mezco / McFarlane official shops still lack stable public JSON
- * (shop.dc.com carries some McFarlane Multiverse AF SKUs; Valaverse Action Force verified).
+ * Hasbro Pulse / BBTS / EE / Mezco / McFarlane Toys official still lack stable public JSON.
+ * NECA: store.necaonline.com verified; shop.dc.com McFarlane Multiverse; Valaverse Action Force.
  */
 
 import type { CatalogFigure, CompanyId, ItemKind } from "@/lib/types";
@@ -48,6 +48,12 @@ export const FIGURE_STOREFRONTS: StorefrontSource[] = [
     baseUrl: "https://www.valaverse.com",
     company: "valaverse",
     requireHint: /action force|figure|trooper|gear/i,
+  },
+  {
+    id: "neca-store",
+    baseUrl: "https://store.necaonline.com",
+    company: "neca",
+    requireHint: /action figure|figure|ultimate|scale|tmnt|predator|alien|horror/i,
   },
 ];
 
@@ -100,7 +106,8 @@ function isFigureLike(p: ShopifyProduct, source: StorefrontSource): boolean {
     source.company === "bossfight" ||
     source.company === "loyalsubjects" ||
     source.company === "super7" ||
-    source.company === "valaverse"
+    source.company === "valaverse" ||
+    source.company === "neca"
   ) {
     return true;
   }

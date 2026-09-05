@@ -51,6 +51,15 @@ STOREFRONTS = [
         "company": "valaverse",
         "requireHint": re.compile(r"action force|figure|trooper|gear|pack", re.I),
     },
+    {
+        "id": "neca-store",
+        "baseUrl": "https://store.necaonline.com",
+        "company": "neca",
+        "requireHint": re.compile(
+            r"action figure|figure|ultimate|scale|tmnt|predator|alien|horror",
+            re.I,
+        ),
+    },
 ]
 
 SKIP_TYPE = re.compile(
@@ -145,6 +154,16 @@ def is_figure_like(p: dict, source: dict) -> bool:
         if re.search(r"\b(comic book|mws_fee|apparel|t-?shirt|hoodie|mug|sticker|poster)\b", blob, re.I):
             return False
         return True
+    # NECA store: AF / Ultimate / scale figures; skip pins/plush/apparel/replicas
+    if source["id"] == "neca-store":
+        if re.search(
+            r"\b(enamel|pin|plush|apparel|t-?shirt|hoodie|mug|poster|replica|prop|crate|diorama|knocker|dunny|blind box|accessory set)\b",
+            blob,
+            re.I,
+        ):
+            return False
+        if not re.search(r"\b(action figure|figure|ultimate|scale)\b", blob, re.I):
+            return False
     # shop.dc.com: AF only (skip merch/statues/funko/plush)
     if source["id"] == "shop-dc":
         if re.search(
@@ -160,7 +179,7 @@ def is_figure_like(p: dict, source: dict) -> bool:
         return False
     if FIGURE_HINT.search(blob) or re.search(r"figures?", ptype, re.I):
         return True
-    if source["company"] in {"bossfight", "loyalsubjects", "super7", "hiya", "premiumdna", "valaverse"}:
+    if source["company"] in {"bossfight", "loyalsubjects", "super7", "hiya", "premiumdna", "valaverse", "neca"}:
         return True
     return False
 
