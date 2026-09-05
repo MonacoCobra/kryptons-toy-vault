@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Activity, BookOpen, Camera, LayoutGrid, Package, Vault, Youtube } from "lucide-react";
+import { Activity, BookOpen, Camera, Package, Vault, Youtube } from "lucide-react";
 import { PulseNotice } from "@/components/pulse-notice";
 import { useEnsureLiveDrop } from "@/lib/live-store";
 import { cn } from "@/lib/utils";
@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 const YOUTUBE_URL = "https://youtube.com/@kryptonstoyvault";
 
 const NAV: {
-  to: "/" | "/figures" | "/scan" | "/comics" | "/pulse" | "/collection";
+  to: "/" | "/figures" | "/scan" | "/comics" | "/pulse";
   label: string;
   icon: typeof Vault;
   exact?: boolean;
@@ -19,7 +19,6 @@ const NAV: {
   { to: "/scan", label: "Scan", icon: Camera, accent: true },
   { to: "/comics", label: "Comics", icon: BookOpen },
   { to: "/pulse", label: "Pulse", icon: Activity },
-  { to: "/collection", label: "Shelf", icon: LayoutGrid },
 ];
 
 export function AppShell({ children }: { children: ReactNode }) {
@@ -79,7 +78,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       </div>
 
       <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-bg/95 backdrop-blur-md md:hidden">
-        <ul className="grid grid-cols-6 px-1 pb-[env(safe-area-inset-bottom)]">
+        <ul className="grid grid-cols-5 px-1 pb-[env(safe-area-inset-bottom)]">
           {NAV.map((item) => {
             const active = item.exact ? pathname === "/" : pathname.startsWith(item.to);
             const Icon = item.icon;

@@ -35,7 +35,12 @@ function Home() {
           className="mark w-64 md:w-80 lg:w-96"
         />
         <h1 className="mt-5 font-display text-3xl tracking-wide text-fg uppercase md:text-4xl">
-          Personal vault
+          <Link
+            to="/collection"
+            className="text-fg transition-colors duration-150 hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/60"
+          >
+            Personal vault
+          </Link>
         </h1>
       </section>
 
