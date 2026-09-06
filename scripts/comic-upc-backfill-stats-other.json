@@ -1,44 +1,12 @@
 {
-  "attempted": 96,
+  "attempted": 100,
   "beforeCovers": 135,
   "beforeUpc": 86,
-  "coverUpdated": 192,
-  "coversFromSeriesList": 96,
+  "coverUpdated": 200,
+  "coversFromSeriesList": 100,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "joe-arah-idw-249",
-      "issue": "249",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092304911"
-    },
-    {
-      "id": "joe-arah-idw-248",
-      "issue": "248",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092304811"
-    },
-    {
-      "id": "joe-arah-idw-247",
-      "issue": "247",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092304711"
-    },
-    {
-      "id": "joe-arah-idw-246",
-      "issue": "246",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092304611"
-    },
     {
       "id": "joe-arah-idw-245",
       "issue": "245",
@@ -646,10 +614,42 @@
       "seriesPick": "101711",
       "status": "locg_upc",
       "upc": "82771400148817011"
+    },
+    {
+      "id": "joe-arah-idw-169",
+      "issue": "169",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "locg_upc",
+      "upc": "82771400148816911"
+    },
+    {
+      "id": "joe-arah-idw-168",
+      "issue": "168",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "locg_upc",
+      "upc": "82771400148816811"
+    },
+    {
+      "id": "joe-arah-idw-167",
+      "issue": "167",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "locg_upc",
+      "upc": "82771400148816711"
+    },
+    {
+      "id": "joe-arah-idw-166",
+      "issue": "166",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "locg_upc",
+      "upc": "82771400148816611"
     }
   ],
   "errors": 0,
-  "locgHits": 96,
+  "locgHits": 100,
   "locgNoUpc": 8,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
@@ -658,5 +658,5 @@
   "skippedExisting": 0,
   "startedAt": "2026-09-06T16:42:42Z",
   "timedOut": false,
-  "upcFilled": 88
+  "upcFilled": 92
 }
