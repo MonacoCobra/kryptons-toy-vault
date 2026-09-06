@@ -1,235 +1,12 @@
 {
-  "attempted": 260,
+  "attempted": 289,
   "beforeCovers": 206,
   "beforeUpc": 149,
-  "coverUpdated": 320,
-  "coversFromSeriesList": 160,
+  "coverUpdated": 378,
+  "coversFromSeriesList": 189,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "dc-action-1008",
-      "issue": "1008",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388400811"
-    },
-    {
-      "id": "dc-action-1007",
-      "issue": "1007",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388400711"
-    },
-    {
-      "id": "dc-action-1006",
-      "issue": "1006",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388400611"
-    },
-    {
-      "id": "dc-action-1005",
-      "issue": "1005",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388400511"
-    },
-    {
-      "id": "dc-action-1004",
-      "issue": "1004",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388400411"
-    },
-    {
-      "id": "dc-action-1003",
-      "issue": "1003",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388400311"
-    },
-    {
-      "id": "dc-action-1002",
-      "issue": "1002",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388400211"
-    },
-    {
-      "id": "dc-action-1001",
-      "issue": "1001",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388400111"
-    },
-    {
-      "id": "dc-action-1000",
-      "issue": "1000",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388400011"
-    },
-    {
-      "id": "dc-action-999",
-      "issue": "999",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388499911"
-    },
-    {
-      "id": "dc-action-998",
-      "issue": "998",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388499811"
-    },
-    {
-      "id": "dc-action-997",
-      "issue": "997",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388499711"
-    },
-    {
-      "id": "dc-action-996",
-      "issue": "996",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388499611"
-    },
-    {
-      "id": "dc-action-995",
-      "issue": "995",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388499511"
-    },
-    {
-      "id": "dc-action-994",
-      "issue": "994",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388499411"
-    },
-    {
-      "id": "dc-action-993",
-      "issue": "993",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388499311"
-    },
-    {
-      "id": "dc-action-992",
-      "issue": "992",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388499211"
-    },
-    {
-      "id": "dc-action-991",
-      "issue": "991",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388499121"
-    },
-    {
-      "id": "dc-action-990",
-      "issue": "990",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388499021"
-    },
-    {
-      "id": "dc-action-989",
-      "issue": "989",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388498911"
-    },
-    {
-      "id": "dc-batman-2016-163",
-      "issue": "163",
-      "series": "Batman (2016)",
-      "seriesPick": "100001",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "dc-batman-2016-162",
-      "issue": "162",
-      "series": "Batman (2016)",
-      "seriesPick": "100001",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "dc-batman-2016-161",
-      "issue": "161",
-      "series": "Batman (2016)",
-      "seriesPick": "100001",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "dc-batman-2016-160",
-      "issue": "160",
-      "series": "Batman (2016)",
-      "seriesPick": "100001",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "dc-batman-2016-159",
-      "issue": "159",
-      "series": "Batman (2016)",
-      "seriesPick": "100001",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "dc-batman2016-158",
-      "issue": "158",
-      "series": "Batman (2016)",
-      "seriesPick": "100001",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "dc-batman-2016-157",
-      "issue": "157",
-      "series": "Batman (2016)",
-      "seriesPick": "100001",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "dc-batman-2016-156",
-      "issue": "156",
-      "series": "Batman (2016)",
-      "seriesPick": "100001",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "dc-batman-2016-155",
-      "issue": "155",
-      "series": "Batman (2016)",
-      "seriesPick": "100001",
-      "status": "locg_no_upc"
-    },
     {
       "id": "dc-batman-2016-154",
       "issue": "154",
@@ -586,11 +363,214 @@
       "series": "Batman (2016)",
       "seriesPick": "100001",
       "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-103",
+      "issue": "103",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-102",
+      "issue": "102",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-101",
+      "issue": "101",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-100",
+      "issue": "100",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-99",
+      "issue": "99",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-98",
+      "issue": "98",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-97",
+      "issue": "97",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-96",
+      "issue": "96",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-95",
+      "issue": "95",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-94",
+      "issue": "94",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-93",
+      "issue": "93",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-92",
+      "issue": "92",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-91",
+      "issue": "91",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-90",
+      "issue": "90",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-89",
+      "issue": "89",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-88",
+      "issue": "88",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-87",
+      "issue": "87",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-86",
+      "issue": "86",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-85",
+      "issue": "85",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-84",
+      "issue": "84",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-83",
+      "issue": "83",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-82",
+      "issue": "82",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-81",
+      "issue": "81",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-80",
+      "issue": "80",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-79",
+      "issue": "79",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-78",
+      "issue": "78",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-77",
+      "issue": "77",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-76",
+      "issue": "76",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-75",
+      "issue": "75",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
     }
   ],
   "errors": 100,
-  "locgHits": 160,
-  "locgNoUpc": 60,
+  "locgHits": 189,
+  "locgNoUpc": 89,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
   "seriesBatch": true,
