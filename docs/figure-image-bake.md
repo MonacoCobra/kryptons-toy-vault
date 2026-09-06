@@ -9,8 +9,11 @@ Shopify CDN product images** — never generative AI art. Analogous to
 1. Builds a searchable product index (normalized name / subtitle / line /
    company tags → CDN `imageUrl`) from the same shops as
    `src/lib/figure-storefronts.ts` / `scripts/figure_oneshot/shopify_dump.py`.
-2. Fuzzy-matches oneshot rows that lack `imageUrl` (high-confidence only).
-3. Writes:
+2. **SKU-first** (optional `--sku-first`): exact-join `oneshot.sku` →
+   `product-sku-index` product `imageUrl`, overwriting fuzzy mismatches.
+3. Fuzzy-matches remaining oneshot rows that lack `imageUrl` (high-confidence only);
+   never overwrites an `image-sku` proven URL.
+4. Writes:
    - `src/data/figure-image-urls.json` — id → URL overlay
    - patches `imageUrl` on matched `oneshot.json` rows
    - `src/data/figure-archive/image-bake-stats.json` — before/after report
@@ -74,6 +77,28 @@ Solaris Japan, JB Hi-Fi, ActionFiguresAndComics, Japan Figure) + Storm Collectib
 Store Horsemen for high-confidence Hasbro / Mattel MOTU / Mezco One:12 / MAFEX /
 SHFiguarts / Playmates / JAKKS / Toy Biz / classic DC Direct / Four Horsemen / Kaiyodo /
 Loyal Subjects BST matches. Leftovers without clear title cues stay placeholders.
+
+
+## SKU-first rematch (preferred)
+
+Fuzzy name/line matching can attach the wrong specialty-retailer CDN shot.
+When a figure already has a real `sku`, the correct photo is the product image
+for that exact SKU in `product-sku-index.json` (same feeds as SKU bake).
+
+```bash
+cd /workspace/collection-app/scripts
+# Exact SKU → imageUrl join; overwrite mismatched prior bake images; no fuzzy
+python3 bake-figure-images.py --cache-only --sku-first --sku-only
+
+# SKU-first, then fuzzy gap-fill for rows still missing art (never overwrites image-sku)
+python3 bake-figure-images.py --cache-only --sku-first
+```
+
+- Builds `sku → imageUrl` from `product-sku-index.json` (prefers first-party tier).
+- Tags SKU-proven rows with `image-sku` (+ `imgsku:{shop}` provenance).
+- Strict 1:1 URL and 1:1 SKU; SKU-proven rows win shared-URL conflicts.
+- Writes `sku-image-rematch-stats.json` with `changedMismatch` / `filledEmpty` counts.
+- Fuzzy `--rematch` keeps `image-sku` overlays (does not clear them).
 
 ## Rematch (strict 1:1)
 

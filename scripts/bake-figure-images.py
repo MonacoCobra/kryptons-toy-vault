@@ -9,6 +9,11 @@ Outputs:
   - src/data/figure-image-urls.json  (id → CDN URL, comic-cover-urls style)
   - patches imageUrl on matching rows in src/data/figure-archive/oneshot.json
   - src/data/figure-archive/image-bake-stats.json
+
+SKU-first rematch (--sku-first):
+  Exact-join oneshot.sku → product-sku-index.sku → product imageUrl.
+  Overwrites fuzzy mismatches when the SKU proves a different CDN URL.
+  Fuzzy fill never overwrites a SKU-proven image.
 """
 from __future__ import annotations
 
@@ -30,6 +35,8 @@ ARCHIVE_JSON = ROOT / "src/data/figure-archive/oneshot.json"
 URLS_JSON = ROOT / "src/data/figure-image-urls.json"
 STATS_JSON = ROOT / "src/data/figure-archive/image-bake-stats.json"
 INDEX_JSON = ROOT / "src/data/figure-archive/product-image-index.json"
+SKU_INDEX_JSON = ROOT / "src/data/figure-archive/product-sku-index.json"
+SKU_REMATCH_STATS_JSON = ROOT / "src/data/figure-archive/sku-image-rematch-stats.json"
 FIGURES_TS = ROOT / "src/data/figures.ts"
 
 STOP = set(
@@ -1266,26 +1273,396 @@ def enforce_unique_image_urls(rows: list[dict], index: list[dict], urls: dict[st
 
 
 
+
+FAKE_SKU_RE = re.compile(
+    r"^(unknown|n/?a|none|null|todo|tbd|-+|\.+|0+|sku|test|placeholder)$",
+    re.I,
+)
+
+
+def clean_sku_value(raw) -> str | None:
+    if raw is None:
+        return None
+    s = str(raw).strip()
+    if not s or FAKE_SKU_RE.match(s):
+        return None
+    if not re.search(r"[A-Za-z0-9]", s):
+        return None
+    if len(s) > 64:
+        return None
+    return s
+
+
+def build_sku_to_image_entry(sku_index: list[dict]) -> dict[str, dict]:
+    """Map uppercase SKU → a representative product entry with imageUrl.
+
+    Same SKU can appear on multiple specialty feeds with different CDN hosts
+    (and occasionally a wrong pack shot). Callers that have a figure context
+    should use `pick_best_sku_product` to choose among `sku_to_products` instead.
+    This single-map helper prefers first-party, then earlier shop id.
+    """
+    best: dict[str, dict] = {}
+    tier_rank = {"first-party": 0, "retailer": 1}
+
+    def rank(e: dict) -> tuple:
+        return (
+            tier_rank.get(str(e.get("tier") or ""), 9),
+            0 if e.get("imageUrl") else 1,
+            str(e.get("shop") or ""),
+        )
+
+    for raw in sku_index:
+        sku = clean_sku_value(raw.get("sku"))
+        url = raw.get("imageUrl")
+        if not sku or not url or not str(url).startswith("http"):
+            continue
+        key = sku.upper()
+        entry = dict(raw)
+        entry["sku"] = sku
+        entry["imageUrl"] = str(url)
+        cur = best.get(key)
+        if cur is None or rank(entry) < rank(cur):
+            best[key] = entry
+    return best
+
+
+def build_sku_to_products(sku_index: list[dict]) -> dict[str, list[dict]]:
+    """Map uppercase SKU → all product entries that carry that SKU + imageUrl."""
+    out: dict[str, list[dict]] = defaultdict(list)
+    seen_url: dict[str, set[str]] = defaultdict(set)
+    for raw in sku_index:
+        sku = clean_sku_value(raw.get("sku"))
+        url = raw.get("imageUrl")
+        if not sku or not url or not str(url).startswith("http"):
+            continue
+        key = sku.upper()
+        u = str(url)
+        if u in seen_url[key]:
+            continue
+        seen_url[key].add(u)
+        entry = dict(raw)
+        entry["sku"] = sku
+        entry["imageUrl"] = u
+        out[key].append(entry)
+    return out
+
+
+def pick_best_sku_product(fig: dict, candidates: list[dict]) -> dict | None:
+    """Among products sharing a SKU, prefer title/name match to the figure.
+
+    First-party tier gets a bonus; score_pair breaks retailer pack-shot collisions
+    (e.g. Man-Thing barcode reused on an FF 2-pack listing).
+    """
+    if not candidates:
+        return None
+    if len(candidates) == 1:
+        return candidates[0]
+    best: tuple[float, dict] | None = None
+    for p in candidates:
+        sc = score_pair(fig, p)
+        if sc < 0:
+            sc = 0.0
+        if p.get("tier") == "first-party":
+            sc += 50.0
+        # Prefer image URL / title that embeds the SKU digits (common on ToyArena)
+        sku = clean_sku_value(p.get("sku")) or ""
+        blob = f"{p.get('imageUrl') or ''} {p.get('title') or ''} {p.get('handle') or ''}".lower()
+        if sku and sku.lower() in blob:
+            sc += 8.0
+        if best is None or sc > best[0]:
+            best = (sc, p)
+    return best[1] if best else candidates[0]
+
+
+def enforce_unique_image_urls_sku_aware(rows: list[dict], urls: dict[str, str]) -> int:
+    """Like enforce_unique_image_urls, but SKU-proven (image-sku) rows always win."""
+    by_url: dict[str, list[dict]] = defaultdict(list)
+    for r in rows:
+        u = r.get("imageUrl")
+        if u:
+            by_url[u].append(r)
+    cleared = 0
+    for url, group in by_url.items():
+        if len(group) < 2:
+            continue
+        ranked: list[tuple[float, dict]] = []
+        for fig in group:
+            score = heuristic_keep_score(fig)
+            if "image-sku" in (fig.get("tags") or []) and clean_sku_value(fig.get("sku")):
+                score += 1_000_000.0
+            ranked.append((score, fig))
+        ranked.sort(key=lambda x: x[0], reverse=True)
+        for _, fig in ranked[1:]:
+            fig.pop("imageUrl", None)
+            tags = [t for t in (fig.get("tags") or []) if t not in ("image-bake", "image-sku")]
+            # drop imgsku: provenance tags too
+            tags = [t for t in tags if not str(t).startswith("imgsku:")]
+            fig["tags"] = tags
+            urls.pop(fig["id"], None)
+            cleared += 1
+    return cleared
+
+
+def rematch_images_by_sku(
+    rows: list[dict],
+    sku_to_prod: dict[str, dict],
+    *,
+    sku_to_products: dict[str, list[dict]] | None = None,
+    dry_run: bool = False,
+) -> dict:
+    """Exact SKU → product imageUrl assignment. Overwrites mismatched prior images.
+
+    Strict 1:1: one imageUrl → one figure; duplicate oneshot SKUs keep the first
+    stable id. When two SKUs resolve to the same CDN URL, first-party / earlier
+    assignment wins; the other is left unchanged (or emptied if it held the URL).
+    """
+    # One SKU → one figure (first id wins)
+    sku_owner: dict[str, str] = {}
+    for r in rows:
+        sku = clean_sku_value(r.get("sku"))
+        if not sku:
+            continue
+        sku_owner.setdefault(sku.upper(), r["id"])
+
+    def tier_key(r: dict) -> tuple:
+        sku = clean_sku_value(r.get("sku")) or ""
+        key = sku.upper()
+        if sku_to_products and key in sku_to_products:
+            p = pick_best_sku_product(r, sku_to_products[key]) or {}
+        else:
+            p = sku_to_prod.get(key) or {}
+        return (0 if p.get("tier") == "first-party" else 1, r["id"])
+
+    eligible: list[dict] = []
+    skipped_dup_sku = 0
+    skipped_no_index = 0
+    for r in rows:
+        sku = clean_sku_value(r.get("sku"))
+        if not sku:
+            continue
+        key = sku.upper()
+        if sku_owner.get(key) != r["id"]:
+            skipped_dup_sku += 1
+            continue
+        if key not in sku_to_prod:
+            skipped_no_index += 1
+            continue
+        eligible.append(r)
+    eligible.sort(key=tier_key)
+
+    reserved_urls: dict[str, str] = {}  # url → figure id
+    changed_mismatch = 0
+    filled_empty = 0
+    already_correct = 0
+    skipped_url_conflict = 0
+    samples_changed: list[dict] = []
+
+    def clear_url_holders(url: str, keep_id: str) -> None:
+        for other in rows:
+            if other["id"] == keep_id:
+                continue
+            if other.get("imageUrl") != url:
+                continue
+            # Never clear another SKU-proven reservation
+            if reserved_urls.get(url) == other["id"]:
+                continue
+            if "image-sku" in (other.get("tags") or []) and clean_sku_value(other.get("sku")):
+                # Other already SKU-linked to this same URL — conflict handled by reserved
+                continue
+            other.pop("imageUrl", None)
+            tags = [
+                t
+                for t in (other.get("tags") or [])
+                if t not in ("image-bake", "image-sku") and not str(t).startswith("imgsku:")
+            ]
+            other["tags"] = tags
+
+    for r in eligible:
+        sku = clean_sku_value(r.get("sku"))
+        assert sku
+        key = sku.upper()
+        if sku_to_products and key in sku_to_products:
+            prod = pick_best_sku_product(r, sku_to_products[key])
+            if not prod:
+                continue
+        else:
+            prod = sku_to_prod[key]
+        want = prod["imageUrl"]
+        have = (r.get("imageUrl") or "").strip()
+
+        owner = reserved_urls.get(want)
+        if owner and owner != r["id"]:
+            skipped_url_conflict += 1
+            continue
+
+        if have == want:
+            already_correct += 1
+            reserved_urls[want] = r["id"]
+            if not dry_run:
+                tags = list(r.get("tags") or [])
+                if "image-sku" not in tags:
+                    tags.append("image-sku")
+                if "image-bake" not in tags:
+                    tags.append("image-bake")
+                shop_tag = f"imgsku:{prod.get('shop')}"
+                if shop_tag not in tags and len(tags) < 28:
+                    tags.append(shop_tag)
+                r["tags"] = tags
+            continue
+
+        if dry_run:
+            if have:
+                changed_mismatch += 1
+            else:
+                filled_empty += 1
+            reserved_urls[want] = r["id"]
+            continue
+
+        clear_url_holders(want, r["id"])
+        # Re-check after clear in case a SKU-proven peer held it
+        if reserved_urls.get(want) and reserved_urls[want] != r["id"]:
+            skipped_url_conflict += 1
+            continue
+
+        if have:
+            changed_mismatch += 1
+            if len(samples_changed) < 25:
+                samples_changed.append(
+                    {
+                        "figureId": r["id"],
+                        "name": r.get("name"),
+                        "sku": sku,
+                        "shop": prod.get("shop"),
+                        "from": have[:140],
+                        "to": want[:140],
+                    }
+                )
+        else:
+            filled_empty += 1
+
+        r["imageUrl"] = want
+        tags = list(r.get("tags") or [])
+        if "image-sku" not in tags:
+            tags.append("image-sku")
+        if "image-bake" not in tags:
+            tags.append("image-bake")
+        shop_tag = f"imgsku:{prod.get('shop')}"
+        if shop_tag not in tags and len(tags) < 28:
+            tags.append(shop_tag)
+        r["tags"] = tags
+        reserved_urls[want] = r["id"]
+
+    sku_proven_ids = set(reserved_urls.values())
+    if not dry_run:
+        for r in rows:
+            if "image-sku" in (r.get("tags") or []) and r.get("imageUrl"):
+                sku_proven_ids.add(r["id"])
+
+    return {
+        "eligible": len(eligible),
+        "assignedOrConfirmed": already_correct + changed_mismatch + filled_empty,
+        "alreadyCorrect": already_correct,
+        "changedMismatch": changed_mismatch,
+        "filledEmpty": filled_empty,
+        "skippedNoIndex": skipped_no_index,
+        "skippedUrlConflict": skipped_url_conflict,
+        "skippedDupSku": skipped_dup_sku,
+        "skuProvenFigureIds": len(sku_proven_ids),
+        "reservedUrls": len(reserved_urls),
+        "samplesChanged": samples_changed,
+        "skuProvenIds": sorted(sku_proven_ids),
+    }
+
+
 def main() -> None:
     fetch_live = "--fetch" in sys.argv or "--live" in sys.argv
     use_cache = "--cache-only" in sys.argv
     rematch = "--rematch" in sys.argv
+    sku_first = "--sku-first" in sys.argv or "--sku-rematch" in sys.argv
+    sku_only = "--sku-only" in sys.argv
+    dry_run = "--dry-run" in sys.argv
+    # Default: when --sku-first, also allow fuzzy gap-fill unless --sku-only
     min_score = 16.0
 
     rows = json.loads(ARCHIVE_JSON.read_text())
     before_with = sum(1 for r in rows if r.get("imageUrl"))
     before_total = len(rows)
-    if rematch:
+    sku_rematch_stats: dict | None = None
+
+    if sku_first:
+        if not SKU_INDEX_JSON.exists():
+            print(f"ERROR: {SKU_INDEX_JSON} missing — run bake-figure-skus.py --fetch first")
+            raise SystemExit(1)
+        print(f"=== SKU-first image rematch from {SKU_INDEX_JSON.name} ===")
+        sku_index = json.loads(SKU_INDEX_JSON.read_text())
+        sku_to_prod = build_sku_to_image_entry(sku_index)
+        sku_to_products = build_sku_to_products(sku_index)
+        # score_pair needs enrich_index fields (_char, etc.)
+        flat = [p for group in sku_to_products.values() for p in group]
+        enrich_index(flat)
+        multi = sum(1 for v in sku_to_products.values() if len(v) > 1)
+        print(f"sku→image map size: {len(sku_to_prod)} (multi-CDN SKUs: {multi})")
+        sku_rematch_stats = rematch_images_by_sku(
+            rows, sku_to_prod, sku_to_products=sku_to_products, dry_run=dry_run
+        )
+        print(
+            json.dumps(
+                {k: sku_rematch_stats[k] for k in (
+                    "alreadyCorrect", "changedMismatch", "filledEmpty",
+                    "skippedNoIndex", "skippedUrlConflict", "skippedDupSku",
+                    "skuProvenFigureIds", "reservedUrls",
+                )},
+                indent=2,
+            )
+        )
+        if sku_only:
+            # Persist SKU rematch only; skip fuzzy
+            urls = {r["id"]: r["imageUrl"] for r in rows if r.get("imageUrl")}
+            after_with = sum(1 for r in rows if r.get("imageUrl"))
+            # Enforce 1:1 among all current URLs; SKU-proven win via image-sku tag boost
+            if not dry_run:
+                cleared = enforce_unique_image_urls_sku_aware(rows, urls)
+                if cleared:
+                    print(f"cleared shared imageUrl from {cleared} rows (sku-aware 1:1)")
+                urls = {r["id"]: r["imageUrl"] for r in rows if r.get("imageUrl")}
+                after_with = sum(1 for r in rows if r.get("imageUrl"))
+                URLS_JSON.write_text(json.dumps(urls, indent=2, sort_keys=True) + "\n")
+                ARCHIVE_JSON.write_text(json.dumps(rows, indent=2) + "\n")
+                stats = {
+                    "bakedAt": datetime.now(timezone.utc).isoformat(),
+                    "day": date.today().isoformat(),
+                    "mode": "sku-only",
+                    "before": {"total": before_total, "withImage": before_with, "pct": round(100 * before_with / before_total, 2)},
+                    "after": {"total": len(rows), "withImage": after_with, "pct": round(100 * after_with / len(rows), 2)},
+                    "skuRematch": {k: v for k, v in sku_rematch_stats.items() if k != "skuProvenIds"},
+                    "urlMapSize": len(urls),
+                    "sharedUrlsAfter": sum(1 for u, c in Counter(r["imageUrl"] for r in rows if r.get("imageUrl")).items() if c >= 2),
+                }
+                STATS_JSON.write_text(json.dumps(stats, indent=2) + "\n")
+                SKU_REMATCH_STATS_JSON.write_text(json.dumps(stats, indent=2) + "\n")
+                print(f"wrote {URLS_JSON} ({len(urls)} urls)")
+                print(f"wrote {SKU_REMATCH_STATS_JSON}")
+            else:
+                print("(dry-run — no files written)")
+            return
+
+    if rematch and not sku_first:
         # Drop prior image-bake overlays so we can re-assign under strict 1:1
+        # Keep SKU-proven images (image-sku tag) — fuzzy rematch must not wipe them.
         dropped = 0
         for r in rows:
             tags = list(r.get("tags") or [])
+            if "image-sku" in tags and r.get("imageUrl"):
+                continue
             if "image-bake" in tags and r.get("imageUrl"):
                 r.pop("imageUrl", None)
                 r["tags"] = [t for t in tags if t != "image-bake"]
                 dropped += 1
-        print(f"=== Rematch: cleared {dropped} image-bake overlays ===")
+        print(f"=== Rematch: cleared {dropped} image-bake overlays (kept image-sku) ===")
     need = [r for r in rows if not r.get("imageUrl")]
+    if dry_run and sku_first:
+        print("(dry-run after SKU-first — skipping fuzzy persist)")
+        return
 
     if use_cache and INDEX_JSON.exists():
         print(f"=== Using cached index {INDEX_JSON} ===")
@@ -1363,7 +1740,7 @@ def main() -> None:
             patched += 1
 
     # Rematch / enforce: any remaining shared imageUrl → keep best-scoring figure, clear others
-    cleared_shared = enforce_unique_image_urls(rows, index, urls)
+    cleared_shared = enforce_unique_image_urls_sku_aware(rows, urls) if sku_first else enforce_unique_image_urls(rows, index, urls)
     if cleared_shared:
         print(f"cleared shared imageUrl from {cleared_shared} rows (strict 1:1)")
 
@@ -1405,7 +1782,7 @@ def main() -> None:
         finals.extend(extra_finals)
         print(f"gap-fill after unique pass: +{len(extra_finals)}")
 
-    cleared_shared2 = enforce_unique_image_urls(rows, index, urls)
+    cleared_shared2 = enforce_unique_image_urls_sku_aware(rows, urls) if sku_first else enforce_unique_image_urls(rows, index, urls)
     if cleared_shared2:
         print(f"second unique pass cleared {cleared_shared2} rows")
         cleared_shared += cleared_shared2
@@ -1432,6 +1809,12 @@ def main() -> None:
         "clearedSharedImageUrl": cleared_shared,
         "sharedUrlsAfter": shared_after,
         "urlMapSize": len(urls),
+        "skuFirst": sku_first,
+        "skuRematch": (
+            {k: v for k, v in sku_rematch_stats.items() if k != "skuProvenIds"}
+            if sku_rematch_stats
+            else None
+        ),
         "byCompany": dict(Counter(f["company"] for _, f, _ in finals).most_common()),
         "safeguards": [
             "same-company hard gate",
@@ -1442,6 +1825,7 @@ def main() -> None:
             "multi-token subtitle requires ≥1 hit",
             "prefer product title hits on distinguishing subtitle/wave tokens",
             "one product image URL → at most one figure id (no variant CDN sharing)",
+            "SKU-first exact join (product-sku-index) overwrites fuzzy mismatches; fuzzy never overwrites image-sku",
             "after rematch: shared URLs keep best score only; others cleared to placeholder",
             "Mattel DC Premier not used for unrelated curated lines",
             "retailer feeds (ToyArena/CmdStore/Planet/CoolToyDen/AFCollector/Legendz/shop.mattel/Solaris/JBHiFi/AFAC/JapanFigure) vendor→company high-confidence only",
@@ -1469,7 +1853,18 @@ def main() -> None:
         ],
     }
     STATS_JSON.write_text(json.dumps(stats, indent=2) + "\n")
-    print(json.dumps({k: stats[k] for k in ("before", "after", "matched", "clearedSharedImageUrl", "sharedUrlsAfter", "byCompany") if k in stats}, indent=2))
+    if sku_first and sku_rematch_stats is not None:
+        SKU_REMATCH_STATS_JSON.write_text(json.dumps({
+            "bakedAt": stats["bakedAt"],
+            "day": stats["day"],
+            "mode": "sku-first+fuzzy" if not sku_only else "sku-only",
+            "before": stats["before"],
+            "after": stats["after"],
+            "skuRematch": stats.get("skuRematch"),
+            "matchedFuzzy": len(finals),
+            "urlMapSize": len(urls),
+        }, indent=2) + "\n")
+    print(json.dumps({k: stats[k] for k in ("before", "after", "matched", "clearedSharedImageUrl", "sharedUrlsAfter", "skuRematch", "byCompany") if k in stats}, indent=2))
     print(f"wrote {URLS_JSON} ({len(urls)} urls)")
     print(f"patched oneshot imageUrl on {patched} rows")
     leftovers_by_co = Counter(r["company"] for r in rows if not r.get("imageUrl"))

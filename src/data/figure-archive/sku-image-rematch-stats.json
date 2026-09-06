@@ -1,28 +1,30 @@
 {
-  "bakedAt": "2026-09-06T22:28:55.795263+00:00",
+  "bakedAt": "2026-09-06T22:29:30.177605+00:00",
   "day": "2026-09-06",
-  "mode": "sku-only",
+  "mode": "sku-first+fuzzy",
   "before": {
     "total": 19085,
-    "withImage": 7524,
-    "pct": 39.42
+    "withImage": 6667,
+    "pct": 34.93
   },
   "after": {
     "total": 19085,
     "withImage": 7523,
     "pct": 39.42
   },
+  "skuCoverage": {
+    "withSku": 6667,
+    "pct": 34.93
+  },
   "skuRematch": {
-    "eligible": 6665,
-    "assignedOrConfirmed": 6661,
-    "alreadyCorrect": 6643,
-    "changedMismatch": 18,
-    "filledEmpty": 0,
+    "note": "Exact oneshot.sku \u2192 product-sku-index imageUrl; overwrites fuzzy mismatches. Multi-CDN SKUs pick best score_pair + first-party bonus.",
+    "changedMismatch": 396,
+    "filledEmpty": 810,
+    "alreadyCorrectAtStart": 5473,
+    "skuProvenFigureIds": 6661,
     "skippedNoIndex": 2,
     "skippedUrlConflict": 4,
-    "skippedDupSku": 0,
-    "skuProvenFigureIds": 6661,
-    "reservedUrls": 6661,
+    "multiCdnSkus": 533,
     "samplesChanged": [
       {
         "figureId": "d14ml-manthing",
@@ -170,6 +172,9 @@
       }
     ]
   },
+  "fuzzyGapFillMatched": 98,
   "urlMapSize": 7523,
-  "sharedUrlsAfter": 0
+  "sharedUrlsAfter": 0,
+  "duplicateSkusAfter": 0,
+  "residualSkuImageDisagreements": 0
 }
