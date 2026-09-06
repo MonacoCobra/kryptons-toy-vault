@@ -23,6 +23,7 @@ paginates **all** pages from these same shops (see `scripts/gen-figure-oneshot.p
 | EXO-6 | https://exo-6.com | Star Trek 1:6 articulated |
 | Star Ace | https://www.staracetoys.com | 1/6 AF + DefoStyle soft vinyl |
 | DamToys | https://shop.damtoys.com | 1/6 / 1/12 military & GK |
+| Storm Collectibles | https://www.stormco.com.hk | First-party HK Shopify |
 
 ## Out of scope
 
@@ -31,10 +32,12 @@ Pins, Barbie/dolls, poster/print merch, board games, drinkware, puzzles.
 ## Still no stable Shopify JSON
 
 Hasbro Pulse, BBTS, Entertainment Earth, Mezco official, McFarlane Toys store,
-Hot Toys, Sideshow, Bandai Tamashii, MAFEX/Medicom, threezero, Takara Tomy mall —
-still no stable public `products.json` we verified. Covered via curated archive
-depth and/or weekly seed, not live JSON. DC Direct / Kenner Super Powers /
-Mattel DCUC are curated in `scripts/figure_oneshot/curated_dc.py`.
+Hot Toys, Sideshow, Bandai Tamashii US, MAFEX/Medicom first-party, threezero, Takara Tomy mall —
+still no stable public `products.json` we verified. **Image bake** may still fill
+Hasbro / Mezco One:12 / MAFEX / SHFiguarts curated rows from specialty retailer
+Shopify catalogs (ToyArena, CmdStore, Planet Action Figures) with high-confidence
+vendor/title→company mapping only. DC Direct / Kenner Super Powers / Mattel DCUC
+are curated in `scripts/figure_oneshot/curated_dc.py`.
 
 ## Image bake
 

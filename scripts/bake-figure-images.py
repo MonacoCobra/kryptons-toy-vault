@@ -45,7 +45,9 @@ LINE_AS_NAME = re.compile(
     r"teenage mutant|g\.?i\.?\s*joe|thundercats|silverhawks|universal monsters|"
     r"toho|spongebob|wwe elite|ben cooper|h\.?a\.?c\.?k\.?s|epic h\.?a\.?c\.?k|"
     r"vitruvian|court of the dead|hiya exquisite|exquisite (?:basic|mini)|"
-    r"blokees|champion class|galaxy version|defostyle|carbote?x?",
+    r"blokees|champion class|galaxy version|defostyle|carbote?x?|"
+    r"marvel legends|black series|classified|studio series|lightning collection|"
+    r"s\.?h\.?\s*figuarts|mafex|one:?12|robot spirits",
     re.I,
 )
 
@@ -68,6 +70,18 @@ FAMILY_REQUIRE = {
     "hacks": re.compile(r"h\.?a\.?c\.?k|hacks|boss fight|vitruvian|epic", re.I),
     "hiya-godzilla": re.compile(r"godzilla|kong|ghidorah|mechagodzilla|shimo|mothra|rodan", re.I),
     "hiya-exquisite": re.compile(r"exquisite|hiya", re.I),
+    # Hasbro lines (retailer Shopify titles must carry the line cue)
+    "marvel-legends": re.compile(r"marvel legends", re.I),
+    "black-series": re.compile(r"black series", re.I),
+    "classified": re.compile(r"classified|g\.?i\.?\s*joe", re.I),
+    "studio-series": re.compile(r"studio series", re.I),
+    "lightning": re.compile(r"lightning collection|power rangers", re.I),
+    "tf-masterpiece": re.compile(r"masterpiece", re.I),
+    # Premium / Tamashii / Medicom / Mezco
+    "one12": re.compile(r"one:?12|mezco", re.I),
+    "mafex": re.compile(r"\bmafex\b", re.I),
+    "shfiguarts": re.compile(r"figuarts", re.I),
+    "storm": re.compile(r"storm|street fighter|mortal kombat|tekken|king of fighters|baki|arena", re.I),
 }
 
 # Curated lines with no honest Shopify counterpart on our feeds — never match.
@@ -89,7 +103,9 @@ def significant_name_tokens(name: str) -> list[str]:
     return [t for t in toks if t not in WEAK or len(toks) == 1]
 
 NAME_PREFIX_STRIP = re.compile(
-    r"^(superb scale|figure complex|carbotix|hiya|blokees|defostyle|vitruvian)\s+",
+    r"^(superb scale|figure complex|carbotix|hiya|blokees|defostyle|vitruvian|"
+    r"mafex(?:\s+no\.?\s*\d+)?|s\.?h\.?\s*figuarts|one:?12(?:\s+collective)?|"
+    r"mezco(?:\s+toyz)?)\s+",
     re.I,
 )
 
@@ -148,6 +164,28 @@ def line_family(line: str, company: str) -> str:
         return "neca"
     if company == "super7":
         return "super7"
+    if company == "hasbro":
+        if "marvel legends" in l or ("legends" in l and "marvel" in l):
+            return "marvel-legends"
+        if "black series" in l:
+            return "black-series"
+        if "classified" in l or "g.i. joe" in l or "gi joe" in l:
+            return "classified"
+        if "studio series" in l:
+            return "studio-series"
+        if "lightning" in l or "power rangers" in l:
+            return "lightning"
+        if "masterpiece" in l:
+            return "tf-masterpiece"
+        return "hasbro"
+    if company == "mezco":
+        return "one12"
+    if company == "mafex":
+        return "mafex"
+    if company == "shfiguarts":
+        return "shfiguarts"
+    if company == "storm":
+        return "storm"
     return company
 
 
@@ -182,6 +220,39 @@ def product_character_text(name: str, subtitle: str, title: str = "") -> str:
         full,
         flags=re.I,
     )
+    # Retailer / Hasbro / Tamashii / Medicom / Mezco long titles
+    if re.search(
+        r"marvel legends|black series|classified|studio series|lightning collection|"
+        r"s\.?h\.?\s*figuarts|\bmafex\b|one:?12|storm (?:arena|collect)",
+        full,
+        re.I,
+    ):
+        char = ""
+        if " - " in cleaned:
+            char = cleaned.rsplit(" - ", 1)[-1].strip()
+        elif " | " in cleaned:
+            char = cleaned.split(" | ")[-1].strip()
+        if not char:
+            char = re.sub(
+                r"^(?:Pre-?[Oo]rder:\s*)?(?:Marvel Legends(?:\s+Series)?|"
+                r"Star Wars(?: The)? Black Series(?: Archives)?|"
+                r"G\.?I\.?\s*Joe Classified|"
+                r"Transformers Studio Series|"
+                r"Power Rangers Lightning Collection|"
+                r"S\.?H\.?\s*Figuarts|"
+                r"Mafex(?:\s+No\.?\s*\d+)?|"
+                r"Mezco Toyz ONE:12 Collective|"
+                r"ONE:12 Collective)\s*",
+                "",
+                cleaned,
+                flags=re.I,
+            )
+        char = re.sub(r"\s*\d+(?:\.\d+)?\s*Inch(?:\s+Scale)?\s*", " ", char, flags=re.I)
+        char = re.sub(r"\s*Action Figures?\s*", " ", char, flags=re.I)
+        char = re.sub(r"\s*\(.*?\)\s*", " ", char)
+        char = re.sub(r"\s+", " ", char).strip(" -:")
+        if char:
+            return f"{char} {cleaned}"
     if LINE_AS_NAME.search(n) and s.strip():
         return f"{s} {n} {cleaned}"
     if re.match(r"^masters of the universe\b", n, re.I):
@@ -195,6 +266,164 @@ def image_from_product(p: dict) -> str | None:
         if src and str(src).startswith("http"):
             return str(src)
     return None
+
+
+
+# Specialty retailers with open products.json — image-index only (not oneshot dump).
+# Vendor/title → CompanyId so Hasbro/Mezco/MAFEX/SHF curated rows can match.
+RETAILER_FEEDS = [
+    {"id": "toyarena", "baseUrl": "https://www.toyarena.com", "pageLimit": 250, "maxPages": 40},
+    {"id": "cmdstore", "baseUrl": "https://www.cmdstore.ca", "pageLimit": 250, "maxPages": 45},
+    {"id": "planet-af", "baseUrl": "https://www.planetactionfigures.co.uk", "pageLimit": 250, "maxPages": 25},
+]
+
+RETAILER_SKIP = re.compile(
+    r"\b(roleplay|life size|prop replica|die cast|static figure|model kit|gunpla|"
+    r"figuarts zero|statue|plush|funko|\bpop\b|trading card|pokemon|soft goods|"
+    r"empty box|backdrop|t-?shirt|hoodie|mug|poster|apparel|enamel|pin set|"
+    r"blind box flat|gift card|nendoroid|pop up parade|scale figure|"
+    r"non-scale figure|vibration stars)\b",
+    re.I,
+)
+
+def infer_retailer_company(p: dict) -> str | None:
+    """Map multi-vendor retailer product → vault CompanyId (high confidence only)."""
+    vendor = str(p.get("vendor") or "")
+    title = str(p.get("title") or "")
+    ptype = str(p.get("product_type") or "")
+    tags = " ".join(tag_list(p.get("tags")))
+    blob = f"{vendor} {title} {ptype} {tags}"
+    bl = blob.lower()
+    if RETAILER_SKIP.search(blob):
+        return None
+    # Specific lines first
+    if re.search(r"\bmafex\b", bl):
+        return "mafex"
+    if re.search(r"figuarts", bl) and not re.search(r"figuarts zero", bl):
+        return "shfiguarts"
+    if re.search(r"one:?12|mezco", bl):
+        return "mezco"
+    if re.search(r"storm collect", bl) or re.match(r"storm\b", vendor, re.I):
+        return "storm"
+    if re.search(r"marvel legends", bl):
+        return "hasbro"
+    if re.search(r"black series", bl):
+        return "hasbro"
+    if re.search(r"classified|g\.?i\.?\s*joe", bl) and re.search(r"hasbro|classified|g\.?i\.?\s*joe", bl):
+        return "hasbro"
+    if re.search(r"studio series", bl):
+        return "hasbro"
+    if re.search(r"lightning collection|power rangers lightning", bl):
+        return "hasbro"
+    if re.search(r"transformers masterpiece", bl):
+        return "hasbro"
+    if re.search(r"\bhasbro\b", bl) and re.search(
+        r"legends|black series|classified|transformers|lightning|star wars|g\.?i\.?\s*joe",
+        bl,
+    ):
+        return "hasbro"
+    if re.search(r"mcfarlane|dc multiverse", bl) and not re.search(r"marvel legends", bl):
+        return "mcfarlane"
+    if re.search(r"robot spirits", bl):
+        return "bandai"
+    if re.search(r"\bhiya\b", bl):
+        return "hiya"
+    if re.search(r"threezero|three zero", bl):
+        return "threezero"
+    if re.search(r"\bneca\b", bl):
+        return "neca"
+    if re.search(r"\bsuper7\b", bl):
+        return "super7"
+    if re.search(r"four horsemen|mythic legions|figura obscura", bl):
+        return "fourhorsemen"
+    if re.search(r"joytoy|joy toy", bl):
+        return "joytoy"
+    if re.search(r"hot toys", bl):
+        return "hottoys"
+    if re.search(r"\bkaiyodo\b|revoltech", bl):
+        return "kaiyodo"
+    if re.search(r"\bfigma\b", bl) or re.search(r"good smile", bl) and re.search(r"\bfigma\b", bl):
+        return "figma"
+    if re.search(r"beast kingdom", bl):
+        return "beastkingdom"
+    return None
+
+
+def fetch_retailer_products(feed: dict) -> list[dict]:
+    """Paginate a retailer with larger page size (image-index only)."""
+    from figure_oneshot.shopify_dump import fetch_page
+
+    path = feed.get("productsPath") or "/products.json"
+    limit = int(feed.get("pageLimit") or 250)
+    max_pages = int(feed.get("maxPages") or 40)
+    out: list[dict] = []
+    for page in range(1, max_pages + 1):
+        products = fetch_page(feed["baseUrl"], path, page, limit=limit)
+        if products is None or not products:
+            break
+        out.extend(products)
+        if len(products) < limit:
+            break
+        time.sleep(0.12)
+    return out
+
+
+def index_entries_from_products(products: list[dict], source_id: str, company_for) -> list[dict]:
+    """Build index rows; company_for(p) -> company or None."""
+    index: list[dict] = []
+    seen: set[str] = set()
+    for p in products:
+        company = company_for(p)
+        if not company:
+            continue
+        img = image_from_product(p)
+        if not img:
+            continue
+        title = str(p.get("title") or "").strip()
+        if not title:
+            continue
+        handle = str(p.get("handle") or title)
+        pid = f"{source_id}:{handle}"[:120]
+        if pid in seen:
+            continue
+        seen.add(pid)
+        if " | " in title:
+            segs = [x.strip() for x in title.split(" | ") if x.strip()]
+            right = segs[-1]
+            left = " | ".join(segs[:-1])
+            name = (right.split(":")[0].strip() or right)
+            subtitle = left or str(p.get("product_type") or source_id)
+        elif " - " in title:
+            left, right = title.rsplit(" - ", 1)
+            # Prefer character on the right for retailer "Line - Character" titles
+            if len(right) < 80 and not re.search(r"marvel legends|black series|classified", right, re.I):
+                name, subtitle = right.strip(), left.strip()
+            else:
+                name, subtitle = left.strip(), right.strip()
+        else:
+            parts = re.split(r"\s+[—–]\s+", title)
+            if len(parts) >= 2:
+                name, subtitle = parts[0].strip(), " - ".join(parts[1:]).strip()
+            else:
+                colon = title.split(":")
+                if len(colon) >= 2 and len(colon[0]) < 48:
+                    name, subtitle = colon[0].strip(), ":".join(colon[1:]).strip()
+                else:
+                    name, subtitle = title, str(p.get("product_type") or source_id)
+        index.append(
+            {
+                "id": pid,
+                "shop": source_id,
+                "company": company,
+                "name": name[:160],
+                "subtitle": subtitle[:160],
+                "line": str(p.get("product_type") or p.get("vendor") or source_id)[:80],
+                "tags": tag_list(p.get("tags"))[:12],
+                "title": title[:240],
+                "imageUrl": img,
+            }
+        )
+    return index
 
 
 def build_index_from_live() -> list[dict]:
@@ -250,6 +479,19 @@ def build_index_from_live() -> list[dict]:
             )
             kept += 1
         print(f"index {source['id']}: raw={len(products)} with_image={kept}")
+        time.sleep(0.05)
+    # Specialty retailers — vendor→company (Hasbro / Mezco / MAFEX / SHF / Storm / …)
+    for feed in RETAILER_FEEDS:
+        products = fetch_retailer_products(feed)
+        entries = index_entries_from_products(products, feed["id"], infer_retailer_company)
+        added = 0
+        for e in entries:
+            if e["id"] in seen:
+                continue
+            seen.add(e["id"])
+            index.append(e)
+            added += 1
+        print(f"index {feed['id']}: raw={len(products)} mapped={added}")
         time.sleep(0.05)
     return index
 
@@ -427,11 +669,78 @@ def score_pair(fig: dict, prod: dict) -> float:
             return -1.0
         if "mega man" in fig_l and "mega man" not in prod["_blob"] and "megaman" not in prod["_blob"]:
             return -1.0
-    # WWE Elite curated should not take LJN / Superstars-only product shots
+    # Hasbro line hard gates (retailer titles are noisy)
+    if fig["company"] == "hasbro":
+        fig_l = norm(f"{fig['line']} {fig['subtitle']} {' '.join(fig.get('tags') or [])}")
+        if fam == "marvel-legends" and "marvel legends" not in prod["_blob"]:
+            return -1.0
+        if fam == "black-series" and "black series" not in prod["_blob"]:
+            return -1.0
+        if fam == "classified" and not re.search(r"classified|g\.?i\.?\s*joe", prod["_blob"]):
+            return -1.0
+        if fam == "studio-series" and "studio series" not in prod["_blob"]:
+            return -1.0
+        if fam == "lightning" and "lightning" not in prod["_blob"]:
+            return -1.0
+        if fam == "tf-masterpiece":
+            if "masterpiece" not in prod["_blob"]:
+                return -1.0
+            if "studio series" in prod["_blob"] and "masterpiece" not in prod["_blob"]:
+                return -1.0
+        # Reject roleplay / titanium static / packaging-only
+        if re.search(r"roleplay|life size|prop replica|titanium|die cast|static figure", prod["_blob"]):
+            return -1.0
+    # Mezco One:12
+    if fig["company"] == "mezco":
+        if not re.search(r"one:?12|mezco", prod["_blob"]):
+            return -1.0
+        if re.search(r"\b(poster|apparel|pin)\b", prod["_blob"]):
+            return -1.0
+    # MAFEX
+    if fig["company"] == "mafex":
+        if "mafex" not in prod["_blob"]:
+            return -1.0
+    # S.H.Figuarts
+    if fig["company"] == "shfiguarts":
+        if "figuarts" not in prod["_blob"]:
+            return -1.0
+        if "figuarts zero" in prod["_blob"]:
+            return -1.0
+    # Storm Collectibles
+    if fig["company"] == "storm":
+        # Prefer Storm-titled products; allow franchise cues when shop is storm-hk
+        if "storm" not in prod["_blob"] and not re.search(
+            r"street fighter|mortal kombat|tekken|king of fighters|baki|final fight|darkstalkers",
+            prod["_blob"],
+        ):
+            return -1.0
+        # WWE Elite curated should not take LJN / Superstars-only product shots
     if fig["company"] == "mattel" and "elite" in norm(fig["line"]):
         if re.search(r"\bljn\b", prod["_blob"]) and "elite" not in prod["_blob"]:
             return -1.0
 
+    # Single-token figure vs prefixed product character (Viper ← S.A.W.-Viper / Techno-Viper)
+    if len(fn) == 1:
+        fig_name_raw = (fig.get("name") or "").strip()
+        title_raw = prod.get("title") or prod.get("name") or ""
+        # Only the token immediately before Name (handles S.A.W.-Viper / Techno Viper)
+        pref = re.search(
+            rf"(?<![A-Za-z0-9])([A-Za-z][A-Za-z0-9\.]{{0,20}})[-\s]+{re.escape(fig_name_raw)}\b",
+            title_raw,
+            re.I,
+        )
+        if pref:
+            prefix = re.sub(r"[^a-z0-9]", "", pref.group(1).lower())
+            # Generic line words — not distinguishing character prefixes
+            allow_prefix = {
+                "cobra", "the", "joe", "gi", "gijoe", "marvel", "legends", "series",
+                "figure", "action", "exclusive", "retro", "classified", "black",
+                "studio", "lightning", "hasbro", "star", "wars", "transformers",
+            }
+            fig_ctx = set(tokens(fig.get("subtitle") or "")) | set(tokens(fig.get("line") or ""))
+            fig_ctx_compact = {re.sub(r"[^a-z0-9]", "", t) for t in fig_ctx}
+            if prefix and len(prefix) >= 2 and prefix not in allow_prefix and prefix not in fig_ctx and prefix not in fig_ctx_compact:
+                return -1.0
     # Short single-token names: require whole-token match in character text (not Gizmo⊂Gizmoduck)
     if len(fn) == 1 and len(fn[0]) <= 6:
         if fn[0] not in char_toks:
@@ -638,12 +947,14 @@ def main() -> None:
         "safeguards": [
             "same-company hard gate",
             "blocked families: JLU/DCUC/DC Direct (no honest Shopify line)",
-            "line-family regex required when known",
+            "line-family regex required when known (Hasbro Legends/Black Series/Classified/Studio/Lightning)",
             "character-focused name match (subtitle for ULTIMATES/ReAction headers)",
             "first significant name token required",
             "multi-token subtitle requires ≥1 hit",
             "one product image → one character name (variants may share CDN shot)",
             "Mattel DC Premier not used for unrelated curated lines",
+            "retailer feeds (ToyArena/CmdStore/Planet) vendor→company high-confidence only",
+            "Storm first-party stormco.com.hk; Pulse/BBTS/EE/Mezco official still blocked",
         ],
         "samples": [
             {

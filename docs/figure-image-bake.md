@@ -62,5 +62,8 @@ python3 bake-figure-images.py --fetch
 - Default (no flags) merges oneshot Shopify rows + any cached index.
 - Commit updated JSON only when match counts move. **No Build Publish** for data-only bumps.
 
-Hasbro Pulse / BBTS / Mezco / Hot Toys / Tamashii / MAFEX still lack stable public
-`products.json` — leftovers there are expected.
+Hasbro Pulse / BBTS / Mezco official / Hot Toys / Tamashii first-party still lack
+stable public `products.json`. Bake `--fetch` also indexes specialty retailers
+(ToyArena, CmdStore, Planet AF) + Storm Collectibles HK for high-confidence
+Hasbro Legends/Black Series/Classified/Studio/Lightning, Mezco One:12, MAFEX,
+and SHFiguarts matches. Leftovers without clear title cues stay placeholders.

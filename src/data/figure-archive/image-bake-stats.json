@@ -1,185 +1,221 @@
 {
-  "bakedAt": "2026-09-06T00:08:31.092042+00:00",
+  "bakedAt": "2026-09-06T00:27:06.242754+00:00",
   "day": "2026-09-06",
   "minScore": 16.0,
-  "indexSize": 4810,
+  "indexSize": 14064,
   "fetchLive": false,
   "before": {
     "total": 19486,
-    "withImage": 4589,
-    "pct": 23.55
+    "withImage": 3920,
+    "pct": 20.12
   },
   "after": {
     "total": 19486,
-    "withImage": 4597,
-    "pct": 23.59
+    "withImage": 6561,
+    "pct": 33.67
   },
-  "matched": 8,
-  "candidatesAboveThreshold": 8,
-  "patchedOneshot": 8,
-  "urlMapSize": 677,
+  "matched": 2641,
+  "candidatesAboveThreshold": 2849,
+  "patchedOneshot": 2641,
+  "urlMapSize": 2641,
   "byCompany": {
-    "neca": 5,
-    "blitzway": 1,
-    "mattel": 1,
-    "figma": 1
+    "hasbro": 1070,
+    "mcfarlane": 405,
+    "shfiguarts": 188,
+    "super7": 163,
+    "mattel": 160,
+    "neca": 125,
+    "mezco": 104,
+    "storm": 75,
+    "hiya": 62,
+    "mafex": 58,
+    "hottoys": 57,
+    "bandai": 42,
+    "kaiyodo": 26,
+    "figma": 18,
+    "threezero": 16,
+    "beastkingdom": 14,
+    "joytoy": 13,
+    "premiumdna": 10,
+    "mondo": 7,
+    "blitzway": 7,
+    "bossfight": 6,
+    "starace": 5,
+    "blokees": 4,
+    "fourhorsemen": 4,
+    "exo6": 2
   },
   "safeguards": [
     "same-company hard gate",
     "blocked families: JLU/DCUC/DC Direct (no honest Shopify line)",
-    "line-family regex required when known",
+    "line-family regex required when known (Hasbro Legends/Black Series/Classified/Studio/Lightning)",
     "character-focused name match (subtitle for ULTIMATES/ReAction headers)",
     "first significant name token required",
     "multi-token subtitle requires \u22651 hit",
     "one product image \u2192 one character name (variants may share CDN shot)",
-    "Mattel DC Premier not used for unrelated curated lines"
+    "Mattel DC Premier not used for unrelated curated lines",
+    "retailer feeds (ToyArena/CmdStore/Planet) vendor\u2192company high-confidence only",
+    "Storm first-party stormco.com.hk; Pulse/BBTS/EE/Mezco official still blocked"
   ],
   "samples": [
     {
-      "score": 26.0,
-      "figureId": "bw7-bw-32",
-      "figure": "Carbotix Getter 1 / Getter Robo / Blitzway Carbotix",
-      "product": "Getter Robo-1 / Action Figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0795/5877/0994/files/190122_getter-1_BB_web1_085e326f-7497-4fd4-8d"
+      "score": 35.0,
+      "figureId": "ml5-ml-x23-movie-dpw",
+      "figure": "X-23 / Deadpool & Wolverine Legends / Marvel Legends",
+      "product": "X-23 / Marvel Legends Deadpool & Wolverine 6 Inch Action Figure Wave 3",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-deadpool-wolverine-wave-3-x-23"
     },
     {
-      "score": 26.0,
-      "figureId": "neca5-neca-predator-jungle",
-      "figure": "Jungle Hunter / Predator / Predator Ultimate",
-      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/UltimateJH3.jpg?v=1773857407"
+      "score": 35.0,
+      "figureId": "ml5-ml-blade-movie-dpw",
+      "figure": "Blade / Deadpool & Wolverine Legends / Marvel Legends",
+      "product": "Blade / Marvel Legends Deadpool & Wolverine 6 Inch Action Figure Wave 3",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-deadpool-wolverine-wave-3-blad"
     },
     {
-      "score": 26.0,
-      "figureId": "neca-predator-jungle",
-      "figure": "Jungle Hunter / Predator / Predator",
-      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/UltimateJH3.jpg?v=1773857407"
+      "score": 35.0,
+      "figureId": "ml5-ml-cassandra-nova",
+      "figure": "Cassandra Nova / Deadpool & Wolverine Legends / Marvel Legends",
+      "product": "Cassandra Nova / Marvel Legends Deadpool & Wolverine 6 Inch Action Figure Wave 3",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-deadpool-wolverine-wave-3-cass"
     },
     {
-      "score": 26.0,
-      "figureId": "neca3-ult-predator-jungle",
-      "figure": "Jungle Hunter / Predator Ultimate / Predator Ultimate",
-      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/UltimateJH3.jpg?v=1773857407"
+      "score": 35.0,
+      "figureId": "ml5-ml-wolverine-movie-dpw",
+      "figure": "Wolverine / Deadpool & Wolverine Legends / Marvel Legends",
+      "product": "Wolverine / Marvel Legends Deadpool & Wolverine 6 Inch Action Figure Wave 2",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-deadpool-wolverine-wave-2-wolv"
     },
     {
-      "score": 24.0,
-      "figureId": "wwe-elite-nash",
-      "figure": "Kevin Nash / nWo / WWE Elite",
-      "product": "WWE Elite Scott Hall Kevin Nash Hulk Hogan Action Figures / mattel-creations",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0568/1132/3597/files/168986148172eaf2c18457cde7967ca4c879d178.jpg?"
+      "score": 35.0,
+      "figureId": "ml5-ml-x97-magneto",
+      "figure": "Magneto / X-Men '97 Legends / Marvel Legends",
+      "product": "Magneto / Marvel Legends Retro 6 Inch Action Figure X-Men '97 Wave 2",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-retro-x-men-97-wave-2-magneto-"
     },
     {
-      "score": 23.5,
-      "figureId": "neca6-neca-jungle-hunter",
-      "figure": "Jungle Hunter / Predator Wave6 / Predator Ultimate",
-      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/UltimateJH3.jpg?v=1773857407"
+      "score": 35.0,
+      "figureId": "ml5-ml-x97-morph",
+      "figure": "Morph / X-Men '97 Legends / Marvel Legends",
+      "product": "Morph / Marvel Legends X-Men '97 6 Inch Action Figure Wave 3",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-x-men-97-wave-3-morph-50109963"
     },
     {
-      "score": 22.0,
-      "figureId": "d14neca-pred-jungle-deluxe",
-      "figure": "Jungle Hunter / Deluxe / Predator",
-      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/UltimateJH3.jpg?v=1773857407"
+      "score": 35.0,
+      "figureId": "ml5-ml-x97-jubilee",
+      "figure": "Jubilee / X-Men '97 Legends / Marvel Legends",
+      "product": "Jubilee / Marvel Legends X-Men '97 6 Inch Action Figure Wave 3",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-x-men-97-wave-3-jubilee-501099"
     },
     {
-      "score": 21.0,
-      "figureId": "fgm10-fgm-17",
-      "figure": "figma V / Cyberpunk / figma Cyberpunk",
-      "product": "figma Link / Tears of the Kingdom ver. DX Edition",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0533/2434/9616/files/101_9405d628-bd17-4dbc-8dfc-0aeb244f6542.jpg?"
+      "score": 35.0,
+      "figureId": "ml5-ml-x97-jean",
+      "figure": "Jean Grey / X-Men '97 Legends / Marvel Legends",
+      "product": "Jean Grey / Marvel Legends Retro 6 Inch Action Figure X-Men '97 Wave 2",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-retro-x-men-97-wave-2-jean-gre"
+    },
+    {
+      "score": 35.0,
+      "figureId": "mcf5-mcf-flash-godspeed",
+      "figure": "Godspeed / DC Multiverse Wave 5 / DC Multiverse",
+      "product": "Godspeed / DC Multiverse Comic 7 Inch Action Figure",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/dc-multiverse-comic-godspeed-787926152463."
+    },
+    {
+      "score": 35.0,
+      "figureId": "cls5-cls-snake-eyes-movie",
+      "figure": "Snake Eyes / Snake Eyes Movie Classified / GI Joe Classified",
+      "product": "Snake Eyes / G.I. Joe Classified 6 Inch Action Figure Retro Exclusive",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/gi-joe-classified-retro-exclusive-snake-eyes-"
+    },
+    {
+      "score": 35.0,
+      "figureId": "shf4-jjk-geto",
+      "figure": "Suguru Geto / Jujutsu Kaisen / S.H.Figuarts",
+      "product": "Suguru Geto / Jujutsu Kaisen 4 Inch Action Figure Figuarts Mini",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/jujutsu-kaisen-figuarts-mini-suguru-geto-4573"
+    },
+    {
+      "score": 35.0,
+      "figureId": "shf4-jjk-nanami",
+      "figure": "Kento Nanami / Jujutsu Kaisen / S.H.Figuarts",
+      "product": "Kento Nanami / Jujutsu Kaisen 4 Inch Action Figure Figuarts Mini",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/jujutsu-kaisen-figuarts-mini-kento-nanami-457"
     }
   ],
   "lowSamples": [
     {
-      "score": 26.0,
-      "figureId": "bw7-bw-32",
-      "figure": "Carbotix Getter 1 / Getter Robo / Blitzway Carbotix",
-      "product": "Getter Robo-1 / Action Figure"
+      "score": 17.0,
+      "figureId": "mz10-mz-10",
+      "figure": "One:12 Batman Ascending Knight / One:12 Collective / Mezco One:12 Collective",
+      "product": "Mezco Toyz ONE / 12 Collective: Ascending Knight Batman PX Exclusive Action Figure"
     },
     {
-      "score": 26.0,
-      "figureId": "neca5-neca-predator-jungle",
-      "figure": "Jungle Hunter / Predator / Predator Ultimate",
-      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure"
+      "score": 17.0,
+      "figureId": "mz10-mz-09",
+      "figure": "One:12 Batman Sovereign Knight / One:12 Collective / Mezco One:12 Collective",
+      "product": "Mezco Toyz ONE / 12 Collective: Sovereign Knight Batman Action Figure"
     },
     {
-      "score": 26.0,
-      "figureId": "neca-predator-jungle",
-      "figure": "Jungle Hunter / Predator / Predator",
-      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure"
+      "score": 17.0,
+      "figureId": "st10-st-13",
+      "figure": "Storm Raiden / Mortal Kombat / Storm Collectibles Mortal Kombat",
+      "product": "Storm Collectibles 1/12 Mortal Kombat Raiden Action Figure / Action Figure"
     },
     {
-      "score": 26.0,
-      "figureId": "neca3-ult-predator-jungle",
-      "figure": "Jungle Hunter / Predator Ultimate / Predator Ultimate",
-      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure"
+      "score": 17.0,
+      "figureId": "mz10-mz-02",
+      "figure": "One:12 Spider-Man Black Suit / One:12 Collective / Mezco One:12 Collective",
+      "product": "Mezco Toyz ONE / 12 Collective Spider-Man (Stealth Suit) PX Preview Exclusive Action Figure"
     },
     {
-      "score": 24.0,
-      "figureId": "wwe-elite-nash",
-      "figure": "Kevin Nash / nWo / WWE Elite",
-      "product": "WWE Elite Scott Hall Kevin Nash Hulk Hogan Action Figures / mattel-creations"
+      "score": 17.0,
+      "figureId": "st10-st-07",
+      "figure": "Storm Cammy / Street Fighter / Storm Collectibles Street Fighter",
+      "product": "Storm Collectibles 1/12 SDCC 2019 Street Fighter Cammy Battle Costume Exclusive Scale Action Figure / Action Figure"
     },
     {
-      "score": 23.5,
-      "figureId": "neca6-neca-jungle-hunter",
-      "figure": "Jungle Hunter / Predator Wave6 / Predator Ultimate",
-      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure"
+      "score": 17.0,
+      "figureId": "st10-st-06",
+      "figure": "Storm M. Bison / Street Fighter / Storm Collectibles Street Fighter",
+      "product": "Storm Collectibles 1/12 Ultra Street Fighter II M. Bison Scale Action Figure / Action Figure"
     },
     {
-      "score": 22.0,
-      "figureId": "d14neca-pred-jungle-deluxe",
-      "figure": "Jungle Hunter / Deluxe / Predator",
-      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure"
+      "score": 17.0,
+      "figureId": "st10-st-04",
+      "figure": "Storm Guile / Street Fighter / Storm Collectibles Street Fighter",
+      "product": "Storm Collectibles 1/12 SDCC 2019 Street Fighter II Guile Exclusive Scale Action Figure / Action Figure"
     },
     {
-      "score": 21.0,
-      "figureId": "fgm10-fgm-17",
-      "figure": "figma V / Cyberpunk / figma Cyberpunk",
-      "product": "figma Link / Tears of the Kingdom ver. DX Edition"
+      "score": 17.0,
+      "figureId": "mx10-mx-02",
+      "figure": "MAFEX Spider-Man Black Suit / MAFEX / MAFEX",
+      "product": "Mafex No. 245 Spider-Man Integrated Suit (No Way Home) Action Figure Medicom / Action Figure"
     }
-  ],
-  "sessionAfter": {
-    "total": 19486,
-    "withImage": 4597,
-    "pct": 23.59,
-    "deltaWithImage": 676,
-    "bakedOverlay": 677,
-    "urlMapSize": 677,
-    "indexSize": 4810,
-    "storefronts": 16,
-    "byCompanyBaked": {
-      "mattel": 179,
-      "super7": 168,
-      "mcfarlane": 133,
-      "neca": 100,
-      "hiya": 38,
-      "premiumdna": 12,
-      "mondo": 9,
-      "blitzway": 9,
-      "figma": 9,
-      "bossfight": 9,
-      "starace": 5,
-      "blokees": 4,
-      "exo6": 2
-    }
-  },
-  "honestLeftovers": [
-    "Hasbro Pulse (Marvel Legends / Classified / Black Series / Studio Series) \u2014 no public products.json",
-    "Mezco One:12, Hot Toys, Bandai SHF, MAFEX/Medicom, threezero \u2014 no stable open Shopify JSON",
-    "DC Direct / Kenner Super Powers / Mattel DCUC & JLU \u2014 blocked families (no honest feed line)",
-    "Playmates / Kaiyodo / Four Horsemen / Storm / Jakks \u2014 no verified open products.json",
-    "McFarlane depth limited to ~20 shop.dc.com AF SKUs (same-character CDN reuse across variants)",
-    "TLS BST AXN \u2014 live shop currently doll/plush/MASK heavy; few AF products",
-    "BBTS-only curated brands without brand Shopify JSON remain placeholders"
   ],
   "sessionBaseline": {
     "total": 19486,
-    "withImage": 3921,
-    "pct": 20.12,
-    "note": "Start of maximize pass (mostly native Shopify oneshot images)"
+    "withImage": 4597,
+    "pct": 23.59
+  },
+  "sessionAfter": {
+    "total": 19486,
+    "withImage": 6561,
+    "pct": 33.67
+  },
+  "sessionDelta": 1964,
+  "blockedSources": {
+    "hasbroPulse": "no stable products.json (404/HTML)",
+    "bbts": "HTML only, not Shopify JSON",
+    "entertainmentEarth": "403 Forbidden",
+    "mezcoOfficial": "no open products.json",
+    "mcfarlaneToysStore": "400/TLS errors",
+    "tamashiiUS": "no open products.json"
+  },
+  "newFeeds": {
+    "storm-hk": "https://www.stormco.com.hk (first-party)",
+    "toyarena": "image-index retailer (Hasbro/SHF/MAFEX/Mezco)",
+    "cmdstore": "image-index retailer",
+    "planet-af": "image-index retailer"
   }
 }

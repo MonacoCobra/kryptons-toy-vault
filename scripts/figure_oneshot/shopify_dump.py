@@ -97,6 +97,13 @@ STOREFRONTS = [
         "company": "damtoys",
         "requireHint": re.compile(r"damtoys|1/?6|1/?12|figure|gangsters|pocket elite|vertex", re.I),
     },
+    # First-party Storm Collectibles (HK) — open products.json (verified 2026-09)
+    {
+        "id": "storm-hk",
+        "baseUrl": "https://www.stormco.com.hk",
+        "company": "storm",
+        "requireHint": re.compile(r"figure|storm|arena|1/?12|action", re.I),
+    },
 ]
 
 SKIP_TYPE = re.compile(
@@ -135,8 +142,8 @@ def tag_list(tags: Any) -> list[str]:
     return []
 
 
-def fetch_page(base_url: str, path: str, page: int) -> list[dict] | None:
-    url = f"{base_url.rstrip('/')}{path}?limit=50&page={page}"
+def fetch_page(base_url: str, path: str, page: int, limit: int = 50) -> list[dict] | None:
+    url = f"{base_url.rstrip('/')}{path}?limit={limit}&page={page}"
     req = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": UA})
     try:
         with urllib.request.urlopen(req, timeout=25) as r:
@@ -151,9 +158,10 @@ def fetch_page(base_url: str, path: str, page: int) -> list[dict] | None:
 
 def fetch_all_products(source: dict, max_pages: int = 100) -> list[dict]:
     path = source.get("productsPath") or "/products.json"
+    limit = int(source.get("pageLimit") or 50)
     out: list[dict] = []
     for page in range(1, max_pages + 1):
-        products = fetch_page(source["baseUrl"], path, page)
+        products = fetch_page(source["baseUrl"], path, page, limit=limit)
         if products is None:
             if page == 1:
                 break
@@ -161,7 +169,7 @@ def fetch_all_products(source: dict, max_pages: int = 100) -> list[dict]:
         if not products:
             break
         out.extend(products)
-        if len(products) < 50:
+        if len(products) < limit:
             break
         time.sleep(0.12)
     return out
@@ -232,6 +240,11 @@ def is_figure_like(p: dict, source: dict) -> bool:
         if re.search(r"\b(t-?shirt|hoodie|mug|poster|apparel)\b", blob, re.I):
             return False
         return True
+    # Storm Collectibles HK: keep AF; skip soft goods / stands-only when obvious
+    if source["id"] == "storm-hk":
+        if re.search(r"\b(t-?shirt|hoodie|mug|poster|apparel|pin)\b", blob, re.I):
+            return False
+        return True
     # shop.dc.com: AF only (skip merch/statues/funko/plush)
     if source["id"] == "shop-dc":
         if re.search(
@@ -247,7 +260,7 @@ def is_figure_like(p: dict, source: dict) -> bool:
         return False
     if FIGURE_HINT.search(blob) or re.search(r"figures?", ptype, re.I):
         return True
-    if source["company"] in {"bossfight", "loyalsubjects", "super7", "hiya", "premiumdna", "valaverse", "neca", "blokees", "blitzway", "exo6", "starace", "damtoys"}:
+    if source["company"] in {"bossfight", "loyalsubjects", "super7", "hiya", "premiumdna", "valaverse", "neca", "blokees", "blitzway", "exo6", "starace", "damtoys", "storm"}:
         return True
     return False
 
