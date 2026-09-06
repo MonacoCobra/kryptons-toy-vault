@@ -56,7 +56,7 @@ export function ComicVariantScroller({
                 )}
               >
                 {/* Baked cover / placeholder only — avoid N× resolveRemote in preview */}
-                <ComicCover comic={v} className="aspect-2/3 w-full" />
+                <ComicCover comic={v} className="aspect-2/3 h-auto w-full max-w-full" />
               </div>
               <span
                 className={cn(

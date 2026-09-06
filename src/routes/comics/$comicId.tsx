@@ -60,9 +60,9 @@ function ComicDetail() {
   const gradeLabel = GRADES.find((g) => g.id === owned?.grade)?.label;
 
   return (
-    <main className="grid max-w-full gap-8 lg:grid-cols-[minmax(0,16rem)_1fr]">
-      <div className="min-w-0 max-w-full">
-        <ComicCover comic={comic} photo={owned?.photoDataUrl} resolveRemote className="aspect-2/3 overflow-hidden rounded-xl" />
+    <main className="grid min-w-0 max-w-full gap-8 overflow-x-hidden lg:grid-cols-[minmax(0,16rem)_1fr]">
+      <div className="mx-auto w-full min-w-0 max-w-[16rem] overflow-hidden lg:mx-0">
+        <ComicCover comic={comic} photo={owned?.photoDataUrl} resolveRemote className="aspect-2/3 w-full max-w-full overflow-hidden rounded-xl" />
         <ComicVariantScroller comic={comic} variants={variants} />
         <div className="mt-4 grid gap-2">
           <Button onClick={() => setEdit(true)}>{owned ? "Edit copy" : "Add to vault"}</Button>

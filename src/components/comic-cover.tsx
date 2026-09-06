@@ -166,11 +166,16 @@ export function ComicCover({
 
   if (src && !broken) {
     return (
-      <div className={cn("relative overflow-hidden bg-surface", className)}>
+      <div
+        className={cn("relative w-full max-w-full overflow-hidden bg-surface", className)}
+        style={className?.includes("aspect-") ? undefined : { aspectRatio: "2 / 3" }}
+      >
         <img
           src={src}
           alt={comicLabel(comic)}
-          className="absolute inset-0 size-full object-cover object-top"
+          width={400}
+          height={600}
+          className="box-border block h-full max-h-full w-full max-w-full object-cover object-top"
           onError={() => setBroken(true)}
           loading="lazy"
           decoding="async"
