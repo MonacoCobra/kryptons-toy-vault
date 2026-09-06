@@ -1,212 +1,12 @@
 {
-  "attempted": 393,
+  "attempted": 418,
   "beforeCovers": 206,
   "beforeUpc": 149,
-  "coverUpdated": 584,
-  "coversFromSeriesList": 292,
+  "coverUpdated": 634,
+  "coversFromSeriesList": 317,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "dc-fables-137",
-      "issue": "137",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304213711"
-    },
-    {
-      "id": "dc-fables-136",
-      "issue": "136",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304213611"
-    },
-    {
-      "id": "dc-fables-135",
-      "issue": "135",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304213511"
-    },
-    {
-      "id": "dc-fables-134",
-      "issue": "134",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304213411"
-    },
-    {
-      "id": "dc-fables-133",
-      "issue": "133",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304213311"
-    },
-    {
-      "id": "dc-fables-132",
-      "issue": "132",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304213211"
-    },
-    {
-      "id": "dc-fables-131",
-      "issue": "131",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304213111"
-    },
-    {
-      "id": "dc-fables-130",
-      "issue": "130",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304213011"
-    },
-    {
-      "id": "dc-fables-129",
-      "issue": "129",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304212911"
-    },
-    {
-      "id": "dc-fables-128",
-      "issue": "128",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304212811"
-    },
-    {
-      "id": "dc-fables-127",
-      "issue": "127",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304212711"
-    },
-    {
-      "id": "dc-fables-126",
-      "issue": "126",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304212611"
-    },
-    {
-      "id": "dc-fables-125",
-      "issue": "125",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304212511"
-    },
-    {
-      "id": "dc-fables-124",
-      "issue": "124",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304212411"
-    },
-    {
-      "id": "dc-fables-123",
-      "issue": "123",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304212311"
-    },
-    {
-      "id": "dc-fables-122",
-      "issue": "122",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304212211"
-    },
-    {
-      "id": "dc-fables-121",
-      "issue": "121",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304212111"
-    },
-    {
-      "id": "dc-fables-120",
-      "issue": "120",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194129304212011"
-    },
-    {
-      "id": "dc-fables-119",
-      "issue": "119",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194123108211911"
-    },
-    {
-      "id": "dc-fables-118",
-      "issue": "118",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194123108211811"
-    },
-    {
-      "id": "dc-fables-117",
-      "issue": "117",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194123108211711"
-    },
-    {
-      "id": "dc-fables-116",
-      "issue": "116",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194123108211611"
-    },
-    {
-      "id": "dc-fables-115",
-      "issue": "115",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194123108211511"
-    },
-    {
-      "id": "dc-fables-114",
-      "issue": "114",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194123108211411"
-    },
-    {
-      "id": "dc-fables-113",
-      "issue": "113",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194123108211311"
-    },
     {
       "id": "dc-fables-112",
       "issue": "112",
@@ -646,17 +446,217 @@
       "seriesPick": "102819",
       "status": "locg_upc",
       "upc": "76194123108205811"
+    },
+    {
+      "id": "dc-fables-57",
+      "issue": "57",
+      "series": "Fables",
+      "seriesPick": "102819",
+      "status": "locg_upc",
+      "upc": "76194123108205711"
+    },
+    {
+      "id": "dc-fables-56",
+      "issue": "56",
+      "series": "Fables",
+      "seriesPick": "102819",
+      "status": "locg_upc",
+      "upc": "76194123108205611"
+    },
+    {
+      "id": "dc-fables-55",
+      "issue": "55",
+      "series": "Fables",
+      "seriesPick": "102819",
+      "status": "locg_upc",
+      "upc": "76194123108205511"
+    },
+    {
+      "id": "dc-fables-54",
+      "issue": "54",
+      "series": "Fables",
+      "seriesPick": "102819",
+      "status": "locg_upc",
+      "upc": "76194123108205411"
+    },
+    {
+      "id": "dc-fables-53",
+      "issue": "53",
+      "series": "Fables",
+      "seriesPick": "102819",
+      "status": "locg_upc",
+      "upc": "76194123108205311"
+    },
+    {
+      "id": "dc-fables-52",
+      "issue": "52",
+      "series": "Fables",
+      "seriesPick": "102819",
+      "status": "locg_upc",
+      "upc": "76194123108205211"
+    },
+    {
+      "id": "dc-fables-51",
+      "issue": "51",
+      "series": "Fables",
+      "seriesPick": "102819",
+      "status": "locg_upc",
+      "upc": "76194123108205111"
+    },
+    {
+      "id": "dc-nightwing-2016-118",
+      "issue": "118",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174311811"
+    },
+    {
+      "id": "dc-nightwing-2016-117",
+      "issue": "117",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174311711"
+    },
+    {
+      "id": "dc-nightwing-2016-116",
+      "issue": "116",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174311611"
+    },
+    {
+      "id": "dc-nightwing-2016-115",
+      "issue": "115",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174311511"
+    },
+    {
+      "id": "dc-nightwing-2016-114",
+      "issue": "114",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174311411"
+    },
+    {
+      "id": "dc-nightwing-2016-113",
+      "issue": "113",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174311311"
+    },
+    {
+      "id": "dc-nightwing-2016-112",
+      "issue": "112",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174311211"
+    },
+    {
+      "id": "dc-nightwing-2016-111",
+      "issue": "111",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174311111"
+    },
+    {
+      "id": "dc-nightwing-2016-110",
+      "issue": "110",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174311011"
+    },
+    {
+      "id": "dc-nightwing-2016-109",
+      "issue": "109",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174310911"
+    },
+    {
+      "id": "dc-nightwing-2016-108",
+      "issue": "108",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174310811"
+    },
+    {
+      "id": "dc-nightwing-2016-107",
+      "issue": "107",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174310711"
+    },
+    {
+      "id": "dc-nightwing-2016-106",
+      "issue": "106",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174310611"
+    },
+    {
+      "id": "dc-nightwing-2016-105",
+      "issue": "105",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174310511"
+    },
+    {
+      "id": "dc-nightwing-2016-104",
+      "issue": "104",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174310411"
+    },
+    {
+      "id": "dc-nightwing-2016-103",
+      "issue": "103",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174310311"
+    },
+    {
+      "id": "dc-nightwing-2016-102",
+      "issue": "102",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174310211"
+    },
+    {
+      "id": "dc-nightwing-2016-101",
+      "issue": "101",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174310111"
     }
   ],
   "errors": 101,
-  "locgHits": 292,
+  "locgHits": 317,
   "locgNoUpc": 100,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
   "seriesBatch": true,
-  "seriesResolved": 12,
+  "seriesResolved": 13,
   "skippedExisting": 0,
   "startedAt": "2026-09-06T17:06:32Z",
   "timedOut": false,
-  "upcFilled": 192
+  "upcFilled": 217
 }
