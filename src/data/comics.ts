@@ -36144,3 +36144,12 @@ export function comicLabel(c: { series: string; issue: string; variant?: string 
   const variant = c.variant ? ` (${c.variant})` : "";
   return `${c.series}${issue}${variant}`;
 }
+
+export {
+  comicFamilyKey,
+  collapseComicVariants,
+  getComicVariants,
+  isPrimaryCover,
+  pickPrimaryComic,
+  variantDisplayLabel,
+} from "@/lib/comic-variants";

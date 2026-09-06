@@ -2,7 +2,7 @@
 
 ## Why
 
-Cover art must match the **actual issue** (especially vs A/B variants). UPC/ISBN is the durable identity key. Variant carousels come later — this pass is identity + matching only.
+Cover art must match the **actual issue** (especially vs A/B variants). UPC/ISBN is the durable identity key. Variant side-scroll on comic detail is live (see below); mass UPC backfill continues separately.
 
 ## Sources (priority)
 
@@ -52,6 +52,19 @@ Seeds live in `src/data/comic-locg-seeds.json` (numeric LOCG comic ids + slugs).
 - Reprints vs originals: prefer first-print LOCG ids in seeds; verify title/publisher on fetch.
 - Full 35k+ archive: not fully backfilled in one weekday pass — rate limit is ~2 LOCG pages/minute. Re-run with more seeds over time.
 - User LOCG CSV without UPC column cannot populate barcodes until re-exported with that field or issue pages are fetched.
+
+
+## Variant side-scroll (detail)
+
+Catalog/list cards stay on the **primary / Cover A** issue (`collapseComicVariants`). On comic detail (`/comics/$comicId`), a horizontal snap-scroller lists **real** open-order variants for the same family:
+
+- Grouping key: normalized `series` + `issue` + `publisher` (`comicFamilyKey` in `src/lib/comic-variants.ts`)
+- Helper: `getComicVariants(comic, catalog)` — only rows already in baked + live merge; never invents covers
+- Tap a thumb → navigate to that catalog id (cover, UPC, badges, own/wishlist follow the id)
+- Same `format` + cover **year** soft-filter; hidden when only one cover; reboot/facsimile collisions without variant/UPC differentiation are not treated as open-order variants
+- Labels use `CatalogComic.variant` (fallback **Cover A**)
+
+As LOCG/UPC backfill adds Cover B / virgin / etc. rows, the strip populates automatically. Do not invent sample issues for demos.
 
 ## Profile
 

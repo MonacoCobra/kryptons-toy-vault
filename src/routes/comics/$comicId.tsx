@@ -1,12 +1,14 @@
 import { useMemo, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Heart, Trash2 } from "lucide-react";
-import { comicById, comicLabel } from "@/data/comics";
+import { comicById, comicLabel, mergeComics } from "@/data/comics";
 import { AddComicDialog } from "@/components/add-comic-dialog";
 import { ComicCover } from "@/components/comic-cover";
+import { ComicVariantScroller } from "@/components/comic-variant-scroller";
 import { MarketEstimate } from "@/components/market-estimate";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { getComicVariants } from "@/lib/comic-variants";
 import { formatMonthYear, usd } from "@/lib/format";
 import { useComicLib, useEnsureComicLibrary, useLiveComics, useLiveDrop } from "@/lib/live-store";
 import { comicHistory, comicMarket } from "@/lib/market";
@@ -23,22 +25,32 @@ function ComicDetail() {
   const loading = useLiveDrop((s) => s.loading);
   const libLoading = useComicLib((s) => s.loading);
   const comic = comicById(comicId, extras, library?.archive ?? []);
+
+  const catalog = useMemo(
+    () => mergeComics(extras, library?.archive ?? []),
+    [extras, library],
+  );
+  const variants = useMemo(
+    () => (comic ? getComicVariants(comic, catalog) : []),
+    [comic, catalog],
+  );
+
+  const ownedList = useVault((s) => s.ownedComics);
+  const owned = useMemo(
+    () => (comic ? Object.values(ownedList).find((o) => o.catalogId === comic.id) : undefined),
+    [ownedList, comic],
+  );
+  const wanted = useVault((s) => (comic ? s.wantedComics[comic.id] : undefined));
+  const toggleWant = useVault((s) => s.toggleWantComic);
+  const removeComic = useVault((s) => s.removeComic);
+  const [edit, setEdit] = useState(false);
+
   if (!comic) {
     if ((comicId.startsWith("live-") && loading) || libLoading) {
       return <p className="py-16 text-center text-sm text-muted">Loading catalog…</p>;
     }
     throw notFound();
   }
-
-  const ownedList = useVault((s) => s.ownedComics);
-  const owned = useMemo(
-    () => Object.values(ownedList).find((o) => o.catalogId === comic.id),
-    [ownedList, comic.id],
-  );
-  const wanted = useVault((s) => s.wantedComics[comic.id]);
-  const toggleWant = useVault((s) => s.toggleWantComic);
-  const removeComic = useVault((s) => s.removeComic);
-  const [edit, setEdit] = useState(false);
 
   const market = comicMarket(comic);
   const prev = comicMarket(comic, -1).estimate;
@@ -50,6 +62,7 @@ function ComicDetail() {
     <main className="grid gap-8 lg:grid-cols-[minmax(0,16rem)_1fr]">
       <div>
         <ComicCover comic={comic} photo={owned?.photoDataUrl} resolveRemote className="aspect-2/3 overflow-hidden rounded-xl" />
+        <ComicVariantScroller comic={comic} variants={variants} />
         <div className="mt-4 grid gap-2">
           <Button onClick={() => setEdit(true)}>{owned ? "Edit copy" : "Add to vault"}</Button>
           <Button variant="secondary" onClick={() => toggleWant(comic.id)} disabled={Boolean(owned)}>

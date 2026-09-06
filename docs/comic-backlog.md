@@ -31,3 +31,7 @@ No generative AI cover art. Palette placeholders in backlog rows; Comic Vine URL
 ## UPC / cover identity
 
 See **[comic-upc.md](./comic-upc.md)**. LOCG-first UPC/ISBN; cover matching prefers UPC so variants do not steal art. Backfill: `scripts/backfill-comic-upcs.py` (Crawl-delay 30s).
+
+## Variant covers on detail
+
+See **[comic-upc.md](./comic-upc.md)** § Variant side-scroll. List shows primary/Cover A; detail page scrolls real catalog variants for the series+issue+publisher family (`getComicVariants`).

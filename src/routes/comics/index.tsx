@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/dialog";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { splitComicsClient } from "@/lib/comic-catalog";
+import { collapseComicVariants } from "@/lib/comic-variants";
 import { usd } from "@/lib/format";
 import { useEnsureComicLibrary, useLiveComics } from "@/lib/live-store";
 import { comicEstimate } from "@/lib/market";
@@ -153,6 +154,8 @@ function ComicsPage() {
     if (search.publisher) list = list.filter((c) => c.publisher === search.publisher);
     if (search.series) list = list.filter((c) => c.series === search.series);
     if (search.keys) list = list.filter((c) => c.key);
+    // Browse: one card per family (Cover A / primary). Search keeps matching variants.
+    if (!search.q) list = collapseComicVariants(list);
     return sortComics(list);
   }, [search, extras, catalog, library, sort, ownedByCatalog]);
 
@@ -162,6 +165,7 @@ function ComicsPage() {
     if (search.publisher) list = list.filter((c) => c.publisher === search.publisher);
     if (search.series) list = list.filter((c) => c.series === search.series);
     if (search.keys) list = list.filter((c) => c.key);
+    list = collapseComicVariants(list);
     return sortComics(list);
   }, [filtering, split.noteworthy, search.publisher, search.series, search.keys, sort, ownedByCatalog]);
 
@@ -171,6 +175,7 @@ function ComicsPage() {
     if (search.publisher) list = list.filter((c) => c.publisher === search.publisher);
     if (search.series) list = list.filter((c) => c.series === search.series);
     if (search.keys) list = list.filter((c) => c.key);
+    list = collapseComicVariants(list);
     return sortComics(list);
   }, [filtering, filtered, split.archive, search.publisher, search.series, search.keys, sort, ownedByCatalog]);
 
