@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 /**
  * Horizontal, snap-scrolling strip of open-order / variant covers.
  * Hidden when the family has only one catalog row.
+ * Thumbs use baked cover URLs / placeholders only — no resolveRemote flood.
  */
 export function ComicVariantScroller({
   comic,
@@ -20,13 +21,13 @@ export function ComicVariantScroller({
   if (variants.length <= 1) return null;
 
   return (
-    <section className="mt-4" aria-label="Cover variants">
+    <section className="mt-4 min-w-0 max-w-full" aria-label="Cover variants">
       <div className="mb-2 flex items-baseline justify-between gap-2">
         <h2 className="text-[11px] tracking-[0.16em] text-muted uppercase">Variants</h2>
         <span className="tabular text-[11px] text-muted/80">{variants.length} covers</span>
       </div>
       <div
-        className="hide-scrollbar -mx-1 flex snap-x snap-mandatory gap-2.5 overflow-x-auto px-1 pb-1"
+        className="hide-scrollbar -mx-1 flex max-w-full snap-x snap-mandatory gap-2.5 overflow-x-auto overscroll-x-contain px-1 pb-1"
         role="list"
       >
         {variants.map((v) => {
@@ -54,11 +55,8 @@ export function ComicVariantScroller({
                     : "ring-1 ring-white/10 group-hover:ring-gold/50",
                 )}
               >
-                <ComicCover
-                  comic={v}
-                  resolveRemote
-                  className="aspect-2/3 w-full"
-                />
+                {/* Baked cover / placeholder only — avoid N× resolveRemote in preview */}
+                <ComicCover comic={v} className="aspect-2/3 w-full" />
               </div>
               <span
                 className={cn(

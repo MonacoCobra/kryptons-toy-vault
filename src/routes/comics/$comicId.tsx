@@ -8,7 +8,7 @@ import { ComicVariantScroller } from "@/components/comic-variant-scroller";
 import { MarketEstimate } from "@/components/market-estimate";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { getComicVariants } from "@/lib/comic-variants";
+import { getComicVariants, indexComicsByFamily } from "@/lib/comic-variants";
 import { formatMonthYear, usd } from "@/lib/format";
 import { useComicLib, useEnsureComicLibrary, useLiveComics, useLiveDrop } from "@/lib/live-store";
 import { comicHistory, comicMarket } from "@/lib/market";
@@ -30,9 +30,10 @@ function ComicDetail() {
     () => mergeComics(extras, library?.archive ?? []),
     [extras, library],
   );
+  const familyIndex = useMemo(() => indexComicsByFamily(catalog), [catalog]);
   const variants = useMemo(
-    () => (comic ? getComicVariants(comic, catalog) : []),
-    [comic, catalog],
+    () => (comic ? getComicVariants(comic, catalog, familyIndex) : []),
+    [comic, catalog, familyIndex],
   );
 
   const ownedList = useVault((s) => s.ownedComics);
@@ -59,8 +60,8 @@ function ComicDetail() {
   const gradeLabel = GRADES.find((g) => g.id === owned?.grade)?.label;
 
   return (
-    <main className="grid gap-8 lg:grid-cols-[minmax(0,16rem)_1fr]">
-      <div>
+    <main className="grid max-w-full gap-8 lg:grid-cols-[minmax(0,16rem)_1fr]">
+      <div className="min-w-0 max-w-full">
         <ComicCover comic={comic} photo={owned?.photoDataUrl} resolveRemote className="aspect-2/3 overflow-hidden rounded-xl" />
         <ComicVariantScroller comic={comic} variants={variants} />
         <div className="mt-4 grid gap-2">
