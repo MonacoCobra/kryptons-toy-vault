@@ -1,252 +1,12 @@
 {
-  "attempted": 37,
+  "attempted": 110,
   "beforeCovers": 1148,
   "beforeUpc": 888,
-  "coverUpdated": 74,
-  "coversFromSeriesList": 37,
+  "coverUpdated": 220,
+  "coversFromSeriesList": 110,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "im-twd-193",
-      "issue": "193",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073019311"
-    },
-    {
-      "id": "im-twd-192",
-      "issue": "192",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073019211"
-    },
-    {
-      "id": "im-twd-191",
-      "issue": "191",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073019111"
-    },
-    {
-      "id": "im-twd-190",
-      "issue": "190",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073019011"
-    },
-    {
-      "id": "im-twd-189",
-      "issue": "189",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073018911"
-    },
-    {
-      "id": "im-twd-188",
-      "issue": "188",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073018811"
-    },
-    {
-      "id": "im-twd-187",
-      "issue": "187",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073018711"
-    },
-    {
-      "id": "im-twd-186",
-      "issue": "186",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073018611"
-    },
-    {
-      "id": "im-twd-185",
-      "issue": "185",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073018511"
-    },
-    {
-      "id": "im-twd-184",
-      "issue": "184",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073018411"
-    },
-    {
-      "id": "im-twd-183",
-      "issue": "183",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073018311"
-    },
-    {
-      "id": "im-twd-182",
-      "issue": "182",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073018211"
-    },
-    {
-      "id": "im-twd-181",
-      "issue": "181",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073018111"
-    },
-    {
-      "id": "im-twd-180",
-      "issue": "180",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073018011"
-    },
-    {
-      "id": "im-twd-179",
-      "issue": "179",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073017911"
-    },
-    {
-      "id": "im-twd-178",
-      "issue": "178",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073017811"
-    },
-    {
-      "id": "im-twd-177",
-      "issue": "177",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073017711"
-    },
-    {
-      "id": "im-twd-176",
-      "issue": "176",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073017611"
-    },
-    {
-      "id": "im-twd-175",
-      "issue": "175",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073017511"
-    },
-    {
-      "id": "im-twd-174",
-      "issue": "174",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073017411"
-    },
-    {
-      "id": "im-twd-173",
-      "issue": "173",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073017311"
-    },
-    {
-      "id": "im-twd-172",
-      "issue": "172",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073017211"
-    },
-    {
-      "id": "im-twd-171",
-      "issue": "171",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073017111"
-    },
-    {
-      "id": "im-twd-170",
-      "issue": "170",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073017011"
-    },
-    {
-      "id": "im-twd-169",
-      "issue": "169",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073016911"
-    },
-    {
-      "id": "im-twd-168",
-      "issue": "168",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073016811"
-    },
-    {
-      "id": "im-twd-167",
-      "issue": "167",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073016711"
-    },
-    {
-      "id": "im-twd-166",
-      "issue": "166",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073016611"
-    },
-    {
-      "id": "im-twd-165",
-      "issue": "165",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073016511"
-    },
-    {
-      "id": "im-twd-164",
-      "issue": "164",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073016411"
-    },
     {
       "id": "im-twd-163",
       "issue": "163",
@@ -302,10 +62,594 @@
       "seriesPick": "100004",
       "status": "locg_upc",
       "upc": "70985300073015711"
+    },
+    {
+      "id": "im-twd-156",
+      "issue": "156",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073015611"
+    },
+    {
+      "id": "im-twd-155",
+      "issue": "155",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073015511"
+    },
+    {
+      "id": "im-twd-154",
+      "issue": "154",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073015411"
+    },
+    {
+      "id": "im-twd-153",
+      "issue": "153",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073015311"
+    },
+    {
+      "id": "im-twd-152",
+      "issue": "152",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073015211"
+    },
+    {
+      "id": "im-twd-151",
+      "issue": "151",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073015111"
+    },
+    {
+      "id": "im-twd-150",
+      "issue": "150",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073015011"
+    },
+    {
+      "id": "im-twd-149",
+      "issue": "149",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073014911"
+    },
+    {
+      "id": "im-twd-148",
+      "issue": "148",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073014811"
+    },
+    {
+      "id": "im-twd-147",
+      "issue": "147",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073014711"
+    },
+    {
+      "id": "im-twd-146",
+      "issue": "146",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073014611"
+    },
+    {
+      "id": "im-twd-145",
+      "issue": "145",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073014511"
+    },
+    {
+      "id": "im-twd-144",
+      "issue": "144",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073014411"
+    },
+    {
+      "id": "im-twd-143",
+      "issue": "143",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073014311"
+    },
+    {
+      "id": "im-twd-142",
+      "issue": "142",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073014211"
+    },
+    {
+      "id": "im-twd-141",
+      "issue": "141",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073014111"
+    },
+    {
+      "id": "im-twd-140",
+      "issue": "140",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073014011"
+    },
+    {
+      "id": "im-twd-139",
+      "issue": "139",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073013911"
+    },
+    {
+      "id": "im-twd-138",
+      "issue": "138",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073013811"
+    },
+    {
+      "id": "im-twd-137",
+      "issue": "137",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073013711"
+    },
+    {
+      "id": "im-twd-136",
+      "issue": "136",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073013611"
+    },
+    {
+      "id": "im-twd-135",
+      "issue": "135",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073013511"
+    },
+    {
+      "id": "im-twd-134",
+      "issue": "134",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073013411"
+    },
+    {
+      "id": "im-twd-133",
+      "issue": "133",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073013311"
+    },
+    {
+      "id": "im-twd-132",
+      "issue": "132",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073013211"
+    },
+    {
+      "id": "im-twd-131",
+      "issue": "131",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073013111"
+    },
+    {
+      "id": "im-twd-130",
+      "issue": "130",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073013011"
+    },
+    {
+      "id": "im-twd-129",
+      "issue": "129",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073012911"
+    },
+    {
+      "id": "im-twd-128",
+      "issue": "128",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073012811"
+    },
+    {
+      "id": "im-twd-127",
+      "issue": "127",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073012711"
+    },
+    {
+      "id": "im-twd-126",
+      "issue": "126",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073012611"
+    },
+    {
+      "id": "im-twd-125",
+      "issue": "125",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073012511"
+    },
+    {
+      "id": "im-twd-124",
+      "issue": "124",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073012411"
+    },
+    {
+      "id": "im-twd-123",
+      "issue": "123",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073012311"
+    },
+    {
+      "id": "im-twd-122",
+      "issue": "122",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073012211"
+    },
+    {
+      "id": "im-twd-121",
+      "issue": "121",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073012111"
+    },
+    {
+      "id": "im-twd-120",
+      "issue": "120",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073012011"
+    },
+    {
+      "id": "im-twd-119",
+      "issue": "119",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073011911"
+    },
+    {
+      "id": "im-twd-118",
+      "issue": "118",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073011811"
+    },
+    {
+      "id": "im-twd-117",
+      "issue": "117",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073011711"
+    },
+    {
+      "id": "im-twd-116",
+      "issue": "116",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073011611"
+    },
+    {
+      "id": "im-twd-115",
+      "issue": "115",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073011511"
+    },
+    {
+      "id": "im-twd-114",
+      "issue": "114",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073011411"
+    },
+    {
+      "id": "im-twd-113",
+      "issue": "113",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073011311"
+    },
+    {
+      "id": "im-twd-112",
+      "issue": "112",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073011211"
+    },
+    {
+      "id": "im-twd-111",
+      "issue": "111",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073011111"
+    },
+    {
+      "id": "im-twd-110",
+      "issue": "110",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073011011"
+    },
+    {
+      "id": "im-twd-109",
+      "issue": "109",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073010911"
+    },
+    {
+      "id": "im-twd-108",
+      "issue": "108",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073010811"
+    },
+    {
+      "id": "im-twd-107",
+      "issue": "107",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073010711"
+    },
+    {
+      "id": "im-twd-106",
+      "issue": "106",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073010611"
+    },
+    {
+      "id": "im-twd-105",
+      "issue": "105",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073010511"
+    },
+    {
+      "id": "im-twd-104",
+      "issue": "104",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073010411"
+    },
+    {
+      "id": "im-twd-103",
+      "issue": "103",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073010311"
+    },
+    {
+      "id": "im-twd-102",
+      "issue": "102",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073010211"
+    },
+    {
+      "id": "im-twd-101",
+      "issue": "101",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073010111"
+    },
+    {
+      "id": "im-twd-100",
+      "issue": "100",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073010011"
+    },
+    {
+      "id": "im-twd-99",
+      "issue": "99",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073009911"
+    },
+    {
+      "id": "im-twd-98",
+      "issue": "98",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073009811"
+    },
+    {
+      "id": "im-twd-97",
+      "issue": "97",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073009711"
+    },
+    {
+      "id": "im-twd-96",
+      "issue": "96",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073009611"
+    },
+    {
+      "id": "im-twd-95",
+      "issue": "95",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073009511"
+    },
+    {
+      "id": "im-twd-94",
+      "issue": "94",
+      "series": "The Walking Dead",
+      "seriesPick": "100004",
+      "status": "locg_upc",
+      "upc": "70985300073009411"
+    },
+    {
+      "id": "joe-arah-idw-165",
+      "issue": "165",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "locg_upc",
+      "upc": "82771400148816511"
+    },
+    {
+      "id": "joe-arah-idw-164",
+      "issue": "164",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "locg_upc",
+      "upc": "82771400148816411"
+    },
+    {
+      "id": "joe-arah-idw-163",
+      "issue": "163",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "locg_upc",
+      "upc": "82771400148816311"
+    },
+    {
+      "id": "joe-arah-idw-162",
+      "issue": "162",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "locg_upc",
+      "upc": "82771400148816211"
+    },
+    {
+      "id": "joe-arah-idw-161",
+      "issue": "161",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "locg_upc",
+      "upc": "82771400148816111"
+    },
+    {
+      "id": "joe-arah-idw-160",
+      "issue": "160",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "locg_upc",
+      "upc": "82771400148816011"
+    },
+    {
+      "id": "joe-arah-idw-159",
+      "issue": "159",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "locg_upc",
+      "upc": "82771400148815911"
+    },
+    {
+      "id": "joe-arah-idw-158",
+      "issue": "158",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "locg_upc",
+      "upc": "82771400148815811"
+    },
+    {
+      "id": "joe-arah-idw-157",
+      "issue": "157",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "locg_upc",
+      "upc": "82771400148815711"
+    },
+    {
+      "id": "joe-arah-idw-156",
+      "issue": "156",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "locg_upc",
+      "upc": "82771400148815611"
     }
   ],
   "errors": 0,
-  "locgHits": 37,
+  "locgHits": 110,
   "locgNoUpc": 0,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
@@ -314,5 +658,5 @@
   "skippedExisting": 0,
   "startedAt": "2026-09-06T21:45:16Z",
   "timedOut": false,
-  "upcFilled": 37
+  "upcFilled": 110
 }

@@ -1,607 +1,649 @@
 {
-  "attempted": 125,
+  "attempted": 267,
   "beforeCovers": 1148,
   "beforeUpc": 888,
-  "coverUpdated": 50,
-  "coversFromSeriesList": 25,
+  "coverUpdated": 198,
+  "coversFromSeriesList": 99,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
     {
-      "id": "dc-det-1055",
-      "issue": "1055",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1054",
-      "issue": "1054",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1053",
-      "issue": "1053",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1052",
-      "issue": "1052",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1051",
-      "issue": "1051",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1050",
-      "issue": "1050",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1049",
-      "issue": "1049",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1048",
-      "issue": "1048",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1047",
-      "issue": "1047",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1046",
-      "issue": "1046",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1045",
-      "issue": "1045",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1044",
-      "issue": "1044",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1043",
-      "issue": "1043",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1042",
-      "issue": "1042",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1041",
-      "issue": "1041",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1040",
-      "issue": "1040",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1039",
-      "issue": "1039",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1038",
-      "issue": "1038",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1037",
-      "issue": "1037",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1036",
-      "issue": "1036",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1035",
-      "issue": "1035",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1034",
-      "issue": "1034",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1033",
-      "issue": "1033",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1032",
-      "issue": "1032",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1031",
-      "issue": "1031",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1030",
-      "issue": "1030",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1029",
-      "issue": "1029",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1028",
-      "issue": "1028",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1027",
-      "issue": "1027",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1026",
-      "issue": "1026",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1025",
-      "issue": "1025",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1024",
-      "issue": "1024",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1023",
-      "issue": "1023",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1022",
-      "issue": "1022",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1021",
-      "issue": "1021",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1020",
-      "issue": "1020",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1019",
-      "issue": "1019",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1018",
-      "issue": "1018",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1017",
-      "issue": "1017",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1016",
-      "issue": "1016",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1015",
-      "issue": "1015",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1014",
-      "issue": "1014",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1013",
-      "issue": "1013",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1012",
-      "issue": "1012",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1011",
-      "issue": "1011",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1010",
-      "issue": "1010",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1009",
-      "issue": "1009",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1008",
-      "issue": "1008",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1007",
-      "issue": "1007",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1006",
-      "issue": "1006",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1005",
-      "issue": "1005",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1004",
-      "issue": "1004",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1003",
-      "issue": "1003",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1002",
-      "issue": "1002",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1001",
-      "issue": "1001",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-action-988",
-      "issue": "988",
+      "id": "dc-action-849",
+      "issue": "849",
       "series": "Action Comics",
       "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388498821"
+      "status": "missing"
     },
     {
-      "id": "dc-action-987",
-      "issue": "987",
+      "id": "dc-action-848",
+      "issue": "848",
       "series": "Action Comics",
       "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388498721"
+      "status": "missing"
     },
     {
-      "id": "dc-action-986",
-      "issue": "986",
+      "id": "dc-action-847",
+      "issue": "847",
       "series": "Action Comics",
       "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388498611"
+      "status": "missing"
     },
     {
-      "id": "dc-action-985",
-      "issue": "985",
+      "id": "dc-action-846",
+      "issue": "846",
       "series": "Action Comics",
       "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388498511"
+      "status": "missing"
     },
     {
-      "id": "dc-action-984",
-      "issue": "984",
+      "id": "dc-action-845",
+      "issue": "845",
       "series": "Action Comics",
       "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388498411"
+      "status": "missing"
     },
     {
-      "id": "dc-action-983",
-      "issue": "983",
+      "id": "dc-action-844",
+      "issue": "844",
       "series": "Action Comics",
       "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388498311"
+      "status": "missing"
     },
     {
-      "id": "dc-action-982",
-      "issue": "982",
+      "id": "dc-action-843",
+      "issue": "843",
       "series": "Action Comics",
       "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388498211"
+      "status": "missing"
     },
     {
-      "id": "dc-action-981",
-      "issue": "981",
+      "id": "dc-action-842",
+      "issue": "842",
       "series": "Action Comics",
       "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388498111"
+      "status": "missing"
     },
     {
-      "id": "dc-action-980",
-      "issue": "980",
+      "id": "dc-action-841",
+      "issue": "841",
       "series": "Action Comics",
       "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388498011"
+      "status": "missing"
     },
     {
-      "id": "dc-action-979",
-      "issue": "979",
+      "id": "dc-action-840",
+      "issue": "840",
       "series": "Action Comics",
       "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388497911"
+      "status": "missing"
     },
     {
-      "id": "dc-action-978",
-      "issue": "978",
+      "id": "dc-action-839",
+      "issue": "839",
       "series": "Action Comics",
       "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388497811"
+      "status": "missing"
     },
     {
-      "id": "dc-action-977",
-      "issue": "977",
+      "id": "dc-action-838",
+      "issue": "838",
       "series": "Action Comics",
       "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388497711"
+      "status": "missing"
     },
     {
-      "id": "dc-action-976",
-      "issue": "976",
+      "id": "dc-action-837",
+      "issue": "837",
       "series": "Action Comics",
       "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388497611"
+      "status": "missing"
     },
     {
-      "id": "dc-action-975",
-      "issue": "975",
-      "series": "Action Comics",
-      "seriesPick": "124401",
+      "id": "dc-flash-2016-88",
+      "issue": "88",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
       "status": "locg_upc",
-      "upc": "76194134388497511"
+      "upc": "76194134184208811"
     },
     {
-      "id": "dc-action-974",
-      "issue": "974",
-      "series": "Action Comics",
-      "seriesPick": "124401",
+      "id": "dc-flash-2016-87",
+      "issue": "87",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
       "status": "locg_upc",
-      "upc": "76194134388497411"
+      "upc": "76194134184208711"
     },
     {
-      "id": "dc-action-973",
-      "issue": "973",
-      "series": "Action Comics",
-      "seriesPick": "124401",
+      "id": "dc-flash-2016-86",
+      "issue": "86",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
       "status": "locg_upc",
-      "upc": "76194134388497311"
+      "upc": "76194134184208611"
     },
     {
-      "id": "dc-action-972",
-      "issue": "972",
-      "series": "Action Comics",
-      "seriesPick": "124401",
+      "id": "dc-flash-2016-85",
+      "issue": "85",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
       "status": "locg_upc",
-      "upc": "76194134388497211"
+      "upc": "76194134184208511"
     },
     {
-      "id": "dc-action-971",
-      "issue": "971",
-      "series": "Action Comics",
-      "seriesPick": "124401",
+      "id": "dc-flash-2016-84",
+      "issue": "84",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
       "status": "locg_upc",
-      "upc": "76194134388497111"
+      "upc": "76194134184208411"
     },
     {
-      "id": "dc-action-970",
-      "issue": "970",
-      "series": "Action Comics",
-      "seriesPick": "124401",
+      "id": "dc-flash-2016-83",
+      "issue": "83",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
       "status": "locg_upc",
-      "upc": "76194134388497011"
+      "upc": "76194134184208311"
     },
     {
-      "id": "dc-action-969",
-      "issue": "969",
-      "series": "Action Comics",
-      "seriesPick": "124401",
+      "id": "dc-flash-2016-82",
+      "issue": "82",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
       "status": "locg_upc",
-      "upc": "76194134388496911"
+      "upc": "76194134184208211"
     },
     {
-      "id": "dc-action-968",
-      "issue": "968",
-      "series": "Action Comics",
-      "seriesPick": "124401",
+      "id": "dc-flash-2016-81",
+      "issue": "81",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
       "status": "locg_upc",
-      "upc": "76194134388496811"
+      "upc": "76194134184208111"
     },
     {
-      "id": "dc-action-967",
-      "issue": "967",
-      "series": "Action Comics",
-      "seriesPick": "124401",
+      "id": "dc-flash-2016-80",
+      "issue": "80",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
       "status": "locg_upc",
-      "upc": "76194134388496711"
+      "upc": "76194134184208011"
     },
     {
-      "id": "dc-action-966",
-      "issue": "966",
-      "series": "Action Comics",
-      "seriesPick": "124401",
+      "id": "dc-flash-2016-79",
+      "issue": "79",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
       "status": "locg_upc",
-      "upc": "76194134388496611"
+      "upc": "76194134184207911"
     },
     {
-      "id": "dc-action-965",
-      "issue": "965",
-      "series": "Action Comics",
-      "seriesPick": "124401",
+      "id": "dc-flash-2016-78",
+      "issue": "78",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
       "status": "locg_upc",
-      "upc": "76194134388496511"
+      "upc": "76194134184207811"
     },
     {
-      "id": "dc-action-964",
-      "issue": "964",
-      "series": "Action Comics",
-      "seriesPick": "124401",
+      "id": "dc-flash-2016-77",
+      "issue": "77",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
       "status": "locg_upc",
-      "upc": "76194134388496411"
+      "upc": "76194134184207711"
+    },
+    {
+      "id": "dc-flash-2016-76",
+      "issue": "76",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184207611"
+    },
+    {
+      "id": "dc-flash-2016-75",
+      "issue": "75",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184207511"
+    },
+    {
+      "id": "dc-flash-2016-74",
+      "issue": "74",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184207411"
+    },
+    {
+      "id": "dc-flash-2016-73",
+      "issue": "73",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184207311"
+    },
+    {
+      "id": "dc-flash-2016-72",
+      "issue": "72",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184207211"
+    },
+    {
+      "id": "dc-flash-2016-71",
+      "issue": "71",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184207111"
+    },
+    {
+      "id": "dc-flash-2016-70",
+      "issue": "70",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184207011"
+    },
+    {
+      "id": "dc-flash-2016-69",
+      "issue": "69",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184206911"
+    },
+    {
+      "id": "dc-flash-2016-68",
+      "issue": "68",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184206811"
+    },
+    {
+      "id": "dc-flash-2016-67",
+      "issue": "67",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184206711"
+    },
+    {
+      "id": "dc-flash-2016-66",
+      "issue": "66",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184206611"
+    },
+    {
+      "id": "dc-flash-2016-65",
+      "issue": "65",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184206511"
+    },
+    {
+      "id": "dc-flash-2016-64",
+      "issue": "64",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184206411"
+    },
+    {
+      "id": "dc-flash-2016-63",
+      "issue": "63",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184206311"
+    },
+    {
+      "id": "dc-flash-2016-62",
+      "issue": "62",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184206211"
+    },
+    {
+      "id": "dc-flash-2016-61",
+      "issue": "61",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184206111"
+    },
+    {
+      "id": "dc-flash-2016-60",
+      "issue": "60",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184206011"
+    },
+    {
+      "id": "dc-flash-2016-59",
+      "issue": "59",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184205911"
+    },
+    {
+      "id": "dc-flash-2016-58",
+      "issue": "58",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184205811"
+    },
+    {
+      "id": "dc-flash-2016-57",
+      "issue": "57",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184205711"
+    },
+    {
+      "id": "dc-flash-2016-56",
+      "issue": "56",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184205611"
+    },
+    {
+      "id": "dc-flash-2016-55",
+      "issue": "55",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184205511"
+    },
+    {
+      "id": "dc-flash-2016-54",
+      "issue": "54",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184205411"
+    },
+    {
+      "id": "dc-flash-2016-53",
+      "issue": "53",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184205311"
+    },
+    {
+      "id": "dc-flash-2016-52",
+      "issue": "52",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184205211"
+    },
+    {
+      "id": "dc-flash-2016-51",
+      "issue": "51",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184205111"
+    },
+    {
+      "id": "dc-flash-2016-50",
+      "issue": "50",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184205011"
+    },
+    {
+      "id": "dc-flash-2016-49",
+      "issue": "49",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184204911"
+    },
+    {
+      "id": "dc-flash-2016-48",
+      "issue": "48",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184204811"
+    },
+    {
+      "id": "dc-flash-2016-47",
+      "issue": "47",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184204711"
+    },
+    {
+      "id": "dc-flash-2016-46",
+      "issue": "46",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184204611"
+    },
+    {
+      "id": "dc-flash-2016-45",
+      "issue": "45",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184204511"
+    },
+    {
+      "id": "dc-flash-2016-44",
+      "issue": "44",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184204411"
+    },
+    {
+      "id": "dc-flash-2016-43",
+      "issue": "43",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184204311"
+    },
+    {
+      "id": "dc-flash-2016-42",
+      "issue": "42",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184204211"
+    },
+    {
+      "id": "dc-flash-2016-41",
+      "issue": "41",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184204111"
+    },
+    {
+      "id": "dc-flash-2016-40",
+      "issue": "40",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184204011"
+    },
+    {
+      "id": "dc-flash-2016-39",
+      "issue": "39",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184203911"
+    },
+    {
+      "id": "dc-flash-2016-38",
+      "issue": "38",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184203811"
+    },
+    {
+      "id": "dc-flash-2016-37",
+      "issue": "37",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184203711"
+    },
+    {
+      "id": "dc-flash-2016-36",
+      "issue": "36",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184203611"
+    },
+    {
+      "id": "dc-flash-2016-35",
+      "issue": "35",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184203511"
+    },
+    {
+      "id": "dc-flash-2016-34",
+      "issue": "34",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184203411"
+    },
+    {
+      "id": "dc-flash-2016-33",
+      "issue": "33",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184203311"
+    },
+    {
+      "id": "dc-flash-2016-32",
+      "issue": "32",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184203211"
+    },
+    {
+      "id": "dc-flash-2016-31",
+      "issue": "31",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184203111"
+    },
+    {
+      "id": "dc-flash-2016-30",
+      "issue": "30",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184203011"
+    },
+    {
+      "id": "dc-flash-2016-29",
+      "issue": "29",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184202911"
+    },
+    {
+      "id": "dc-flash-2016-28",
+      "issue": "28",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184202811"
+    },
+    {
+      "id": "dc-flash-2016-27",
+      "issue": "27",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184202711"
+    },
+    {
+      "id": "dc-flash-2016-26",
+      "issue": "26",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184202611"
+    },
+    {
+      "id": "dc-flash-2016-25",
+      "issue": "25",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184202511"
+    },
+    {
+      "id": "dc-flash-2016-24",
+      "issue": "24",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184202411"
+    },
+    {
+      "id": "dc-flash-2016-23",
+      "issue": "23",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184202311"
+    },
+    {
+      "id": "dc-flash-2016-22",
+      "issue": "22",
+      "series": "The Flash (2016)",
+      "seriesPick": "124052",
+      "status": "locg_upc",
+      "upc": "76194134184202211"
     }
   ],
-  "errors": 100,
-  "locgHits": 25,
+  "errors": 168,
+  "locgHits": 99,
   "locgNoUpc": 0,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
   "seriesBatch": true,
-  "seriesResolved": 3,
+  "seriesResolved": 4,
   "skippedExisting": 0,
   "startedAt": "2026-09-06T21:45:06Z",
   "timedOut": false,
-  "upcFilled": 25
+  "upcFilled": 99
 }
