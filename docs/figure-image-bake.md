@@ -47,7 +47,7 @@ cd scripts && python3 bake-figure-images.py --fetch
 Hasbro Pulse, Mezco official, Hot Toys, Bandai Tamashii first-party, threezero,
 and DCUC/JLU curated rows still lack honest first-party feeds. Specialty retailers
 can fill many Hasbro / SHF / MAFEX / Mezco One:12 / Playmates / JAKKS / Toy Biz /
-classic DC Direct / Four Horsemen / Kaiyodo / BST rows when titles are unambiguous.
+classic DC Direct / Four Horsemen / Kaiyodo / Loyal Subjects BST rows when titles are unambiguous.
 Densify placeholders without a real SKU stay empty — do not scrape Pulse/BBTS.
 
 ## Weekday-friendly `--fetch`
@@ -68,6 +68,7 @@ python3 bake-figure-images.py --fetch
 Hasbro Pulse / BBTS / Mezco official / Hot Toys / Tamashii first-party still lack
 stable public `products.json`. Bake `--fetch` also indexes specialty retailers
 (ToyArena, CmdStore, Planet AF, Cool Toy Den, AFCollector, Legendz Toys, shop.mattel,
-Solaris Japan, JB Hi-Fi) + Storm Collectibles HK + Store Horsemen for high-confidence
-Hasbro / Mattel MOTU / Mezco One:12 / MAFEX / SHFiguarts / Playmates / JAKKS / Toy Biz /
-classic DC Direct / Four Horsemen / Kaiyodo / BST matches. Leftovers without clear title cues stay placeholders.
+Solaris Japan, JB Hi-Fi, ActionFiguresAndComics, Japan Figure) + Storm Collectibles HK +
+Store Horsemen for high-confidence Hasbro / Mattel MOTU / Mezco One:12 / MAFEX /
+SHFiguarts / Playmates / JAKKS / Toy Biz / classic DC Direct / Four Horsemen / Kaiyodo /
+Loyal Subjects BST matches. Leftovers without clear title cues stay placeholders.

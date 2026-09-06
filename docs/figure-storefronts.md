@@ -27,6 +27,8 @@ paginates **all** pages from these same shops (see `scripts/gen-figure-oneshot.p
 | Store Horsemen | https://store-horsemen.myshopify.com | Four Horsemen Mythic/Cosmic/Figura Obscura |
 | Mattel Shop (bake) | https://shop.mattel.com | MOTU Origins/Masterverse/WWE — image-bake index only |
 | Solaris Japan (bake) | https://www.solarisjapan.com | SHFiguarts/AY import — image-bake index only |
+| ActionFiguresAndComics (bake) | https://www.actionfiguresandcomics.com | Large specialty AF — image-bake index only |
+| Japan Figure (bake) | https://www.japan-figure.com | JP import SHF/MAFEX/Kaiyodo — image-bake index only |
 
 ## Out of scope
 
@@ -40,7 +42,7 @@ still no stable public `products.json` we verified. **Image bake** may still fil
 Hasbro / Mezco One:12 / MAFEX / SHFiguarts / Playmates / JAKKS / Toy Biz /
 classic DC Direct / Loyal Subjects BST / Four Horsemen curated rows from specialty
 retailer Shopify catalogs (ToyArena, CmdStore, Planet AF, Cool Toy Den, AFCollector,
-Legendz Toys, shop.mattel, Solaris Japan, JB Hi-Fi) with high-confidence vendor/title→company mapping only. Kenner Super
+Legendz Toys, shop.mattel, Solaris Japan, JB Hi-Fi, ActionFiguresAndComics, Japan Figure) with high-confidence vendor/title→company mapping only. Kenner Super
 Powers / Mattel DCUC / JLU leftovers stay placeholders without honest feeds.
 
 ## Image bake

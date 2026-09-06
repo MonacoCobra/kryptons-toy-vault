@@ -227,10 +227,60 @@ def line_family(line: str, company: str) -> str:
     return company
 
 
+# ALL-CAPS character runs common on AFAC / used-market specialty titles
+# e.g. "marvel legends BARON ZEMO series", "dc direct SUPERMAN 6.5 inch"
+_AFAC_CAPS_SKIP = {
+    "MARVEL", "LEGENDS", "SERIES", "ACTION", "FIGURE", "FIGURES", "MASTERS", "UNIVERSE",
+    "MASTERVERSE", "ORIGINS", "CLASSIFIED", "DIRECT", "COLLECTIBLES", "BLACK", "STUDIO",
+    "LIGHTNING", "COLLECTION", "TEENAGE", "MUTANT", "NINJA", "TURTLES", "STAR", "WARS",
+    "ANIMATED", "COMIC", "COMICS", "LOYAL", "SUBJECTS", "REACTION", "SUPER7", "MEZCO",
+    "HASBRO", "MATTEL", "TOY", "BIZ", "TOYBIZ", "INCH", "MOC", "MIB", "COMPLETE",
+    "VINTAGE", "RETRO", "MOVIE", "DC", "GI", "JOE", "COBRA", "BATMAN", "ONE", "COLLECTIVE",
+    "POWER", "RANGERS", "EXCLUSIVE", "DELUXE", "EDITION", "WAVE", "PRE", "ORDER",
+    "SHIPPING", "NEW", "MIB", "MOC", "LOOSE", "COMPLETE", "CARD", "BACK", "PACKAGING",
+    "TEENAGE", "MUTANT", "NINJA", "TURTLE", "TMNT", "EXOSQUAD", "EXO", "SQUAD",
+}
+
+
+def caps_character_run(title: str) -> str:
+    """Pull ALL-CAPS character name from specialty used-market titles.
+
+    Only fires on AFAC-style mixed titles (lowercase franchise words + CAPS name),
+    so Super7/ULTIMATES headers and normal Title Case Shopify titles are untouched.
+    """
+    if not title or not re.search(r"[A-Z]{3,}", title):
+        return ""
+    # Need lowercase content (franchise words) — pure CAPS / Title Case skip
+    if not re.search(r"[a-z]{3,}", title):
+        return ""
+    hits = re.findall(
+        r"\b([A-Z][A-Z0-9][A-Z0-9\'\.\-]*(?:\s+[A-Z][A-Z0-9][A-Z0-9\'\.\-]*){0,4})\b",
+        title,
+    )
+    extra_skip = _AFAC_CAPS_SKIP | {
+        "ULTIMATES", "ULTIMATE", "REACTION", "MULTIVERSE", "FIGUARTS", "MAFEX",
+        "REVOLTECH", "YAMAGUCHI", "AMAZING", "COMPLEX", "EXQUISITE", "BASIC",
+        "MINI", "HIYA", "STORM", "ARENA", "COLLECTIVE", "ONE12", "SDCC", "NYCC",
+    }
+    for h in hits:
+        words = h.split()
+        if not words:
+            continue
+        if all(w in extra_skip for w in words):
+            continue
+        if any(w not in extra_skip for w in words):
+            return h.title() if h.isupper() else h
+    return ""
+
+
 def product_character_text(name: str, subtitle: str, title: str = "") -> str:
     """Where the character usually lives for noisy Shopify titles."""
     n, s, t = name or "", subtitle or "", title or ""
     full = t or f"{n} {s}"
+    # AFAC / specialty CAPS character mid-title (mixed-case only)
+    caps = caps_character_run(full)
+    if caps:
+        return f"{caps} {full}"
     # Pipe titles: last segment is usually the character
     if " | " in full:
         segs = [x.strip() for x in full.split(" | ") if x.strip()]
@@ -373,17 +423,21 @@ def image_from_product(p: dict) -> str | None:
 # Specialty retailers with open products.json — image-index only (not oneshot dump).
 # Vendor/title → CompanyId so Hasbro/Mezco/MAFEX/SHF curated rows can match.
 RETAILER_FEEDS = [
-    {"id": "toyarena", "baseUrl": "https://www.toyarena.com", "pageLimit": 250, "maxPages": 45},
-    {"id": "cmdstore", "baseUrl": "https://www.cmdstore.ca", "pageLimit": 250, "maxPages": 50},
-    {"id": "planet-af", "baseUrl": "https://www.planetactionfigures.co.uk", "pageLimit": 250, "maxPages": 30},
+    {"id": "toyarena", "baseUrl": "https://www.toyarena.com", "pageLimit": 250, "maxPages": 50},
+    {"id": "cmdstore", "baseUrl": "https://www.cmdstore.ca", "pageLimit": 250, "maxPages": 55},
+    {"id": "planet-af", "baseUrl": "https://www.planetactionfigures.co.uk", "pageLimit": 250, "maxPages": 35},
     # Verified open specialty AF catalogs (2026-09) — Hasbro/Playmates/JAKKS/DCD/ToyBiz/BST
-    {"id": "cooltoyden", "baseUrl": "https://cooltoyden.com", "pageLimit": 250, "maxPages": 25},
-    {"id": "afcollector", "baseUrl": "https://afcollector.com", "pageLimit": 250, "maxPages": 12},
-    {"id": "legendztoys", "baseUrl": "https://legendztoys.com", "pageLimit": 250, "maxPages": 8},
+    {"id": "cooltoyden", "baseUrl": "https://cooltoyden.com", "pageLimit": 250, "maxPages": 30},
+    {"id": "afcollector", "baseUrl": "https://afcollector.com", "pageLimit": 250, "maxPages": 15},
+    {"id": "legendztoys", "baseUrl": "https://legendztoys.com", "pageLimit": 250, "maxPages": 10},
     # New open specialty / first-party (verified 2026-09-06) — Mattel retail + JP import SHF/AY
-    {"id": "shop-mattel", "baseUrl": "https://shop.mattel.com", "pageLimit": 250, "maxPages": 20},
-    {"id": "solarisjapan", "baseUrl": "https://www.solarisjapan.com", "pageLimit": 250, "maxPages": 25},
+    {"id": "shop-mattel", "baseUrl": "https://shop.mattel.com", "pageLimit": 250, "maxPages": 25},
+    {"id": "solarisjapan", "baseUrl": "https://www.solarisjapan.com", "pageLimit": 250, "maxPages": 30},
     {"id": "jbhifi", "baseUrl": "https://www.jbhifi.com.au", "pageLimit": 250, "maxPages": 12},
+    # Large used/new specialty AF catalog (CAPS character titles) — Hasbro/Mattel/DCD/Playmates/TLS
+    {"id": "afac", "baseUrl": "https://www.actionfiguresandcomics.com", "pageLimit": 250, "maxPages": 80},
+    # JP import specialty — SHFiguarts / MAFEX / Kaiyodo (filter via infer + RETAILER_SKIP)
+    {"id": "japan-figure", "baseUrl": "https://www.japan-figure.com", "pageLimit": 250, "maxPages": 40},
 ]
 
 RETAILER_SKIP = re.compile(
@@ -393,7 +447,10 @@ RETAILER_SKIP = re.compile(
     r"blind box flat|gift card|nendoroid|pop up parade|scale figure|"
     r"non-scale figure|vibration stars|\blego\b|steiff|loungefly|ornament|"
     r"living dead dolls?|mds mega scale|barbie|hot wheels|little people|fisher.?price|"
-    r"monster high|kpop demon|tonies|deck box|beach towel|cozy set)\b",
+    r"monster high|kpop demon|tonies|deck box|beach towel|cozy set|"
+    r"wall calendar|calendar|tcg|booster|sleeves|playmat|diecast car|"
+    r"trading card set|magnet only|poster.?stand|poster & stand|"
+    r"imaginext|spin master|mini blind bag|2 inch mini)\b",
     re.I,
 )
 
@@ -412,9 +469,10 @@ def infer_retailer_company(p: dict) -> str | None:
         return "mafex"
     if re.search(r"figuarts", bl) and not re.search(r"figuarts zero", bl):
         return "shfiguarts"
-    if re.search(r"one:?12", bl) or (
-        re.search(r"\bmezco\b", bl) and re.search(r"action figure|one.?12|collective", bl)
-    ):
+    if re.search(r"one:?12", bl) or re.search(r"\bmezco\b", bl):
+        # Reject Mezco soft goods / pins if tagged
+        if re.search(r"\b(poster|apparel|pin set|enamel)\b", bl):
+            return None
         return "mezco"
     if re.search(r"storm collect", bl) or re.match(r"storm\b", vendor, re.I):
         return "storm"
@@ -470,9 +528,15 @@ def infer_retailer_company(p: dict) -> str | None:
         return "hottoys"
     if re.search(r"\bkaiyodo\b|revoltech|amazing yamaguchi|\bkayodo\b", bl):
         return "kaiyodo"
-    if re.search(r"loyal subjects|bst axn|\bbst\b", bl):
+    # Loyal Subjects — require explicit cue (bare "bst" false-hits Clawful/Webstor)
+    if re.search(r"loyal subjects|bst axn|the loyal subjects", bl):
         return "loyalsubjects"
     if re.search(r"\bplaymates\b", bl):
+        return "playmates"
+    # TMNT / Exo-Squad without NECA/Super7/TLS cues → Playmates (AFAC-style titles)
+    if re.search(r"teenage mutant|\btmnt\b|ninja turtle|exo.?squad", bl) and not re.search(
+        r"\bneca\b|\bsuper7\b|loyal subjects|bst axn|mcfarlane|mondo", bl
+    ):
         return "playmates"
     if re.search(r"\bjakks\b", bl):
         return "jakks"
@@ -1029,8 +1093,23 @@ def score_pair(fig: dict, prod: dict) -> float:
             return -1.0
     # Playmates
     if fig["company"] == "playmates":
-        if not re.search(r"playmates|tmnt|turtle|exo.?squad", prod["_blob"]):
+        if not re.search(r"playmates|tmnt|turtle|exo.?squad|teenage mutant", prod["_blob"]):
             return -1.0
+        fig_l = norm(f"{fig['name']} {fig['subtitle']} {fig['line']}")
+        # Giant 12" / Turtle Tots / Storage Shell ≠ standard 4.5–5" classic
+        if re.search(r"\bgiant\b|12\s*\"\s*figure|storage shell", prod["_blob"]) and not re.search(
+            r"giant|storage|12\"", fig_l
+        ):
+            return -1.0
+        if re.search(r"turtle tots|tots raph|tots leo|tots mikey|tots don", prod["_blob"]) and "tot" not in fig_l:
+            return -1.0
+        if "exo" in fig_l or "exo-squad" in fig_l or "exosquad" in fig_l:
+            if not re.search(r"exo.?squad", prod["_blob"]):
+                return -1.0
+        if re.search(r"soft head", fig_l) and not re.search(r"soft head|soft.?head", prod["_blob"]):
+            # allow classic soft-head when product is classic turtle without hard-head cue
+            if re.search(r"hard head|mutant mayhem|tales of", prod["_blob"]):
+                return -1.0
     # JAKKS
     if fig["company"] == "jakks":
         if not re.search(r"jakks", prod["_blob"]):
@@ -1053,8 +1132,15 @@ def score_pair(fig: dict, prod: dict) -> float:
             return -1.0
     # Loyal Subjects / BST AXN
     if fig["company"] == "loyalsubjects":
-        if not re.search(r"loyal subjects|bst axn|\bbst\b", prod["_blob"]):
+        if not re.search(r"loyal subjects|bst axn|the loyal subjects", prod["_blob"]):
             return -1.0
+        # BST AXN curated should not take CheeBee / MASK vehicle-only / Angry Birds
+        fig_l = norm(f"{fig['line']} {fig['subtitle']}")
+        if "bst" in fig_l or "axn" in fig_l:
+            if re.search(r"cheebee|angry birds|strawberry shortcake|teletubbies", prod["_blob"]):
+                return -1.0
+            if re.search(r"\bm\.?a\.?s\.?k\b|mask thunderhawk|mask condor", prod["_blob"]) and "mask" not in fig_l:
+                return -1.0
     # Skip obvious Mattel DC Premier mismatches for non-Premier curated lines
     fig_line = norm(fig["line"])
     if fig["company"] == "mattel" and "premier" in prod["_blob"]:
@@ -1207,9 +1293,9 @@ def main() -> None:
             "multi-token subtitle requires ≥1 hit",
             "one product image → one character name (variants may share CDN shot)",
             "Mattel DC Premier not used for unrelated curated lines",
-            "retailer feeds (ToyArena/CmdStore/Planet/CoolToyDen/AFCollector/Legendz/shop.mattel/Solaris/JBHiFi) vendor→company high-confidence only",
+            "retailer feeds (ToyArena/CmdStore/Planet/CoolToyDen/AFCollector/Legendz/shop.mattel/Solaris/JBHiFi/AFAC/JapanFigure) vendor→company high-confidence only",
             "Storm HK + Store Horsemen first-party; Pulse/BBTS/EE/Mezco official still blocked",
-            "hyphen-prefix only for Techno-Viper style; MOTU trailing-character peel; color antonyms",
+            "hyphen-prefix only for Techno-Viper style; MOTU trailing-character peel; AFAC CAPS character peel; color antonyms",
         ],
         "samples": [
             {
