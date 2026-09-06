@@ -1,19 +1,71 @@
 {
+  "bl-zatarra-1": {
+    "locgId": "2189230",
+    "slug": "zatanna-bring-down-the-house-1"
+  },
+  "boom-brutality-1": {
+    "locgId": "4440833",
+    "slug": "the-many-deaths-of-laila-starr-1"
+  },
+  "boom-brzrkr-1": {
+    "locgId": "7038453",
+    "slug": "brzrkr-1"
+  },
+  "boom-firefly-1": {
+    "locgId": "3009675",
+    "slug": "firefly-1"
+  },
+  "boom-house-slaughter-1": {
+    "locgId": "5649656",
+    "slug": "house-of-slaughter-1"
+  },
+  "boom-lumberjanes-1": {
+    "locgId": "3579011",
+    "slug": "lumberjanes-1"
+  },
+  "boom-magic-1": {
+    "locgId": "3694173",
+    "slug": "magic-1"
+  },
+  "boom-once-deadly-1": {
+    "locgId": "2748600",
+    "slug": "once-future-1"
+  },
+  "boom-seven-1": {
+    "locgId": "2329303",
+    "slug": "seven-secrets-1"
+  },
+  "boom-weonly-1": {
+    "locgId": "5220954",
+    "slug": "we-only-find-them-when-theyre-dead-1"
+  },
   "dc-abs-batman-1": {
     "locgId": "2463692",
     "slug": "absolute-batman-1"
+  },
+  "dc-abs-gl-1": {
+    "locgId": "3150786",
+    "slug": "absolute-green-lantern-1"
+  },
+  "dc-abs-martian": {
+    "locgId": "4823794",
+    "slug": "absolute-martian-manhunter-1"
   },
   "dc-abs-superman-1": {
     "locgId": "7938850",
     "slug": "absolute-superman-1"
   },
-  "mv-asm-300": {
-    "locgId": "7520199",
-    "slug": "the-amazing-spider-man-300"
+  "dc-abs-ww-1": {
+    "locgId": "8504225",
+    "slug": "absolute-wonder-woman-1"
   },
-  "dc-superman-75": {
-    "locgId": "1211384",
-    "slug": "superman-75"
+  "dc-allstar-supes-1": {
+    "locgId": "2434847",
+    "slug": "all-star-superman-1"
+  },
+  "dc-batman-2025-1": {
+    "locgId": "7970474",
+    "slug": "batman-1"
   },
   "dc-batman-404": {
     "locgId": "8811013",
@@ -23,89 +75,269 @@
     "locgId": null,
     "slug": "batman-497"
   },
-  "mv-asm-129": {
-    "locgId": null,
-    "slug": "the-amazing-spider-man-129"
-  },
-  "mv-hulk-181": {
-    "locgId": "4791956",
-    "slug": "the-incredible-hulk-181"
-  },
-  "im-invincible-1": {
-    "locgId": "1365101",
-    "slug": "invincible-1"
-  },
-  "mv-uxm-141": {
-    "locgId": null,
-    "slug": "the-uncanny-x-men-141"
-  },
-  "dc-watchmen-1": {
-    "locgId": "9184300",
-    "slug": "watchmen-1"
-  },
-  "dc-killingjoke": {
-    "locgId": null,
-    "slug": "batman-the-killing-joke"
-  },
-  "mv-gsxm-1": {
-    "locgId": null,
-    "slug": "giant-size-x-men-1"
-  },
-  "im-spawn-1": {
-    "locgId": "1438548",
-    "slug": "spawn-1"
-  },
-  "im-saga-1": {
-    "locgId": "6906474",
-    "slug": "saga-1"
+  "dc-damned-1": {
+    "locgId": "9799063",
+    "slug": "batman-damned-1"
   },
   "dc-darkknight-1": {
     "locgId": "2052487",
     "slug": "batman-the-dark-knight-returns-1"
   },
-  "mv-af15-fac": {
-    "locgId": null,
-    "slug": "amazing-fantasy-15"
-  },
   "dc-det-27-fac": {
     "locgId": null,
     "slug": "detective-comics-27"
   },
-  "mv-civilwar-1": {
-    "locgId": "9269461",
-    "slug": "civil-war-1"
+  "dc-far-sector": {
+    "locgId": "7906288",
+    "slug": "far-sector-1"
   },
-  "im-twd-1": {
-    "locgId": "9340635",
-    "slug": "the-walking-dead-1"
+  "dc-kcome-1": {
+    "locgId": "5506850",
+    "slug": "kingdom-come-1"
   },
-  "mv-ff-550-3d": {
+  "dc-killingjoke": {
     "locgId": null,
-    "slug": "fantastic-four-550",
-    "note": "already has upc in comics.ts"
+    "slug": "batman-the-killing-joke"
   },
-  "dc-abs-martian": {
-    "locgId": "4823794",
-    "slug": "absolute-martian-manhunter-1"
+  "dc-longhalloween": {
+    "locgId": "2714140",
+    "slug": "batman-the-long-halloween-1"
   },
-  "mv-ultimate-spidey-1-2024": {
-    "locgId": "4901399",
-    "slug": "ultimate-spider-man-1"
+  "dc-mr-miracle": {
+    "locgId": "3657959",
+    "slug": "mister-miracle-1"
   },
-  "mv-hox-1": {
-    "locgId": "4678747",
-    "slug": "house-of-x-1"
+  "dc-preacher-1": {
+    "locgId": "6445024",
+    "slug": "preacher-1"
   },
-  "dc-allstar-supes-1": {
-    "locgId": "2434847",
-    "slug": "all-star-superman-1"
+  "dc-superman-75": {
+    "locgId": "1211384",
+    "slug": "superman-75"
+  },
+  "dc-threejokers-1": {
+    "locgId": "3118525",
+    "slug": "batman-three-jokers-1"
+  },
+  "dc-watchmen-1": {
+    "locgId": "9184300",
+    "slug": "watchmen-1"
+  },
+  "dh-ua-hotel-1": {
+    "locgId": "9961386",
+    "slug": "the-umbrella-academy-hotel-oblivion-1"
+  },
+  "dyn-transformers-1": {
+    "locgId": "4012478",
+    "slug": "transformers-1"
+  },
+  "dyn-void-rivals-1": {
+    "locgId": "1370408",
+    "slug": "void-rivals-1"
+  },
+  "idw-30days-1": {
+    "locgId": "1383455",
+    "slug": "30-days-of-night-1"
+  },
+  "idw-mtmte-1": {
+    "locgId": "4950835",
+    "slug": "the-transformers-more-than-meets-the-eye-1"
+  },
+  "idw-sonic-1": {
+    "locgId": "9813568",
+    "slug": "sonic-the-hedgehog-1"
+  },
+  "idw-tf-ong-1": {
+    "locgId": "4712048",
+    "slug": "transformers-1"
+  },
+  "im-crossover-1": {
+    "locgId": "2521629",
+    "slug": "crossover-1"
+  },
+  "im-department-of-truth-1": {
+    "locgId": "9016251",
+    "slug": "the-department-of-truth-1"
+  },
+  "im-die-1": {
+    "locgId": "9319558",
+    "slug": "die-1"
+  },
+  "im-gideonfalls-1": {
+    "locgId": "6359670",
+    "slug": "gideon-falls-1"
+  },
+  "im-ice-cream-1": {
+    "locgId": "4815071",
+    "slug": "ice-cream-man-1"
+  },
+  "im-invincible-1": {
+    "locgId": "1365101",
+    "slug": "invincible-1"
+  },
+  "im-saga-1": {
+    "locgId": "6906474",
+    "slug": "saga-1"
+  },
+  "im-sexcriminals-1": {
+    "locgId": "4047181",
+    "slug": "sex-criminals-1"
+  },
+  "im-something-killing-1": {
+    "locgId": "9241374",
+    "slug": "something-is-killing-the-children-1"
+  },
+  "im-spawn-1": {
+    "locgId": "1438548",
+    "slug": "spawn-1"
   },
   "im-spawn-350": {
     "locgId": null,
     "slug": "spawn-350"
   },
+  "im-twd-1": {
+    "locgId": "9340635",
+    "slug": "the-walking-dead-1"
+  },
+  "im-undiscovered-1": {
+    "locgId": "8755907",
+    "slug": "undiscovered-country-1"
+  },
+  "im-wicked-divine-1": {
+    "locgId": "9999868",
+    "slug": "the-wicked-the-divine-1"
+  },
+  "img-localman-1": {
+    "locgId": "2778482",
+    "slug": "local-man-1"
+  },
+  "mv-absolutedcarnage-1": {
+    "locgId": "3368797",
+    "slug": "absolute-carnage-1"
+  },
+  "mv-af15-fac": {
+    "locgId": null,
+    "slug": "amazing-fantasy-15"
+  },
+  "mv-asm-129": {
+    "locgId": null,
+    "slug": "the-amazing-spider-man-129"
+  },
+  "mv-asm-300": {
+    "locgId": "7520199",
+    "slug": "the-amazing-spider-man-300"
+  },
+  "mv-blackcat-1": {
+    "locgId": "7699910",
+    "slug": "black-cat-1"
+  },
+  "mv-capmarvel-1": {
+    "locgId": "9694693",
+    "slug": "captain-marvel-1"
+  },
+  "mv-civilwar-1": {
+    "locgId": "9269461",
+    "slug": "civil-war-1"
+  },
+  "mv-excal-1": {
+    "locgId": "2170100",
+    "slug": "excalibur-1"
+  },
+  "mv-ff-550-3d": {
+    "locgId": null,
+    "note": "already has upc in comics.ts",
+    "slug": "fantastic-four-550"
+  },
+  "mv-gsxm-1": {
+    "locgId": null,
+    "slug": "giant-size-x-men-1"
+  },
+  "mv-hox-1": {
+    "locgId": "4678747",
+    "slug": "house-of-x-1"
+  },
+  "mv-hulk-181": {
+    "locgId": "4791956",
+    "slug": "the-incredible-hulk-181"
+  },
   "mv-immortal-hulk-1": {
     "locgId": "4507449",
     "slug": "the-immortal-hulk-1"
+  },
+  "mv-kamala-1": {
+    "locgId": "6849505",
+    "slug": "ms-marvel-1"
+  },
+  "mv-kinginblack-1": {
+    "locgId": "9315323",
+    "slug": "king-in-black-1"
+  },
+  "mv-miles-1": {
+    "locgId": "5889490",
+    "slug": "ultimate-comics-spider-man-1"
+  },
+  "mv-moonknight2021-1": {
+    "locgId": "4474880",
+    "slug": "moon-knight-1"
+  },
+  "mv-msmarvel-kamala-1": {
+    "locgId": "6849505",
+    "slug": "ms-marvel-1"
+  },
+  "mv-pox-1": {
+    "locgId": "4517621",
+    "slug": "powers-of-x-1"
+  },
+  "mv-starwars2020-1": {
+    "locgId": "6092827",
+    "slug": "star-wars-1"
+  },
+  "mv-ult-xmen-1": {
+    "locgId": "3347201",
+    "slug": "ultimate-x-men-1"
+  },
+  "mv-ultimate-spidey-1-2024": {
+    "locgId": "4901399",
+    "slug": "ultimate-spider-man-1"
+  },
+  "mv-uxm-141": {
+    "locgId": null,
+    "slug": "the-uncanny-x-men-141"
+  },
+  "mv-vader2020-1": {
+    "locgId": "6423985",
+    "slug": "star-wars-darth-vader-1"
+  },
+  "mv-venom-1-2018": {
+    "locgId": "1229974",
+    "slug": "venom-1"
+  },
+  "mv-venom2018-1": {
+    "locgId": "9483625",
+    "slug": "venom-1"
+  },
+  "mv-warofrealms-1": {
+    "locgId": "1124665",
+    "slug": "the-war-of-the-realms-1"
+  },
+  "scarlett-sky-1": {
+    "locgId": "8499302",
+    "slug": "scarlett-1"
+  },
+  "val-incursion-1": {
+    "locgId": "3224369",
+    "slug": "incursion-1"
+  },
+  "vert-fables-1": {
+    "locgId": "5426897",
+    "slug": "fables-1"
+  },
+  "vert-transmet-1": {
+    "locgId": "6291746",
+    "slug": "transmetropolitan-1"
+  },
+  "vert-y-lastman-1": {
+    "locgId": "3599265",
+    "slug": "y-the-last-man-1"
   }
 }

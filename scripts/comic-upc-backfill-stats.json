@@ -1,33 +1,36 @@
 {
-  "attempted": 19,
-  "upcFilled": 12,
-  "locgIdsStored": 18,
-  "locgCoversBaked": 18,
-  "locgNoUpcOlderIssues": [
-    "mv-asm-300",
-    "dc-superman-75",
-    "dc-batman-404",
-    "mv-hulk-181",
-    "dc-watchmen-1",
-    "im-spawn-1",
-    "dc-darkknight-1"
-  ],
-  "missing": [
-    "im-spawn-350"
-  ],
+  "startedAt": "2026-09-06T13:21:00Z",
+  "finishedAt": "2026-09-06T15:15:00Z",
+  "beforeUpc": 12,
+  "afterUpc": 67,
+  "beforeCovers": 25,
+  "afterCovers": 95,
+  "upcFilledThisPass": 55,
+  "coversBakedThisPass": 70,
+  "locgUpcEntries": 66,
+  "skipListSize": 6,
   "artCheck": {
-    "ok": [
-      "dc-abs-batman-1",
-      "dc-abs-superman-1",
-      "mv-asm-300",
-      "im-saga-1",
-      "dc-batman-404",
-      "mv-civilwar-1",
-      "im-twd-1",
-      "im-spawn-1"
+    "metaOkCount": 58,
+    "metaBad": [],
+    "visualSample": [
+      "val-incursion-1",
+      "mv-capmarvel-1",
+      "dh-ua-hotel-1",
+      "img-localman-1",
+      "mv-moonknight2021-1",
+      "mv-vader2020-1",
+      "mv-starwars2020-1",
+      "mv-blackcat-1"
     ],
-    "notes": "Sampled LOCG covers match expected main/A covers; older direct editions often lack UPC on LOCG."
+    "notes": "Sampled LOCG covers against catalog series+issue (58/58 meta OK). Visual sample downloaded for Incursion, Cap Marvel, UA Hotel Oblivion, Local Man, Moon Knight, Darth Vader, Star Wars, Black Cat. Scrubbed TP/HC mismatches; facsimiles deferred; CV sweep hit HTTP 420."
   },
+  "leftovers": [
+    "Facsimile editions (-fac) need dedicated LOCG facsimile series ids",
+    "Long-running series non-#1 issues need paginated series lists",
+    "Some series coverComicId resolves to TP (skip list)",
+    "Comic Vine barcode sweep rate-limited (HTTP 420)",
+    "Catalog still missing UPC on vast majority (~35933 rows)"
+  ],
   "delaySeconds": 30,
   "sourcePriority": [
     "locg",

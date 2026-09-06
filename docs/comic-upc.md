@@ -22,12 +22,18 @@ No generative AI art. Covers come from LOCG CDN or Comic Vine scans.
 
 ```bash
 python3 scripts/backfill-comic-upcs.py --seeds-only --limit 40 --delay 30
+python3 scripts/backfill-comic-upcs.py --from-catalog --limit 220 --max-minutes 85 --delay 30 --cv-sweep
 ```
 
 | Flag | Meaning |
 |------|---------|
 | `--delay 30` | Default. Matches LOCG `robots.txt` Crawl-delay. |
 | `--seeds-only` | Only `src/data/comic-locg-seeds.json` rows with `locgId`. |
+| `--from-catalog` | Rank popular modern singles (barcode era) missing UPC. |
+| `--ones-only` | Only issue #1 / 0 / nn (best LOCG discovery rate). |
+| `--min-year` | Cover-year floor for catalog mode (default 1995). |
+| `--max-minutes` | Stop starting new LOCG work after N minutes. |
+| `--cv-sweep` | After LOCG pass, Comic Vine barcode sweep for leftovers. |
 | `--only id,id` | Explicit catalog ids. |
 | `--no-cv` | Skip Comic Vine barcode fallback. |
 
@@ -36,8 +42,9 @@ Writes:
 - `src/data/comic-upc-map.json`
 - updates `src/data/comic-cover-urls.json` when LOCG cover is verified
 - `scripts/comic-upc-backfill-stats.json`
+- `scripts/comic-locg-series-cache.json` (seriesId + issue→locgId map)
 
-Seeds live in `src/data/comic-locg-seeds.json` (numeric LOCG comic ids + slugs). Discovery without a seed: series search cover-id ≈ issue **#1** only (publisher-matched; foreign editions rejected).
+Seeds live in `src/data/comic-locg-seeds.json` (numeric LOCG comic ids + slugs). Discovery without a seed: publisher-matched series search → series issue list → main-cover locgId (not only #1). Foreign editions rejected.
 
 ## Honest leftovers
 
