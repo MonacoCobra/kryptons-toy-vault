@@ -1,68 +1,12 @@
 {
-  "attempted": 418,
+  "attempted": 425,
   "beforeCovers": 206,
   "beforeUpc": 149,
-  "coverUpdated": 634,
-  "coversFromSeriesList": 317,
+  "coverUpdated": 648,
+  "coversFromSeriesList": 324,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "dc-fables-112",
-      "issue": "112",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194123108211211"
-    },
-    {
-      "id": "dc-fables-111",
-      "issue": "111",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194123108211111"
-    },
-    {
-      "id": "dc-fables-110",
-      "issue": "110",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194123108211011"
-    },
-    {
-      "id": "dc-fables-109",
-      "issue": "109",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194123108210911"
-    },
-    {
-      "id": "dc-fables-108",
-      "issue": "108",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194123108210811"
-    },
-    {
-      "id": "dc-fables-107",
-      "issue": "107",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194123108210711"
-    },
-    {
-      "id": "dc-fables-106",
-      "issue": "106",
-      "series": "Fables",
-      "seriesPick": "102819",
-      "status": "locg_upc",
-      "upc": "76194123108210611"
-    },
     {
       "id": "dc-fables-105",
       "issue": "105",
@@ -646,10 +590,66 @@
       "seriesPick": "124030",
       "status": "locg_upc",
       "upc": "76194134174310111"
+    },
+    {
+      "id": "dc-nightwing-2016-100",
+      "issue": "100",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174310011"
+    },
+    {
+      "id": "dc-nightwing-2016-99",
+      "issue": "99",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174309911"
+    },
+    {
+      "id": "dc-nightwing-2016-98",
+      "issue": "98",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174309811"
+    },
+    {
+      "id": "dc-nightwing-2016-97",
+      "issue": "97",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174309711"
+    },
+    {
+      "id": "dc-nightwing-2016-96",
+      "issue": "96",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174309611"
+    },
+    {
+      "id": "dc-nightwing-2016-95",
+      "issue": "95",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174309511"
+    },
+    {
+      "id": "dc-nightwing-2016-94",
+      "issue": "94",
+      "series": "Nightwing (2016)",
+      "seriesPick": "124030",
+      "status": "locg_upc",
+      "upc": "76194134174309411"
     }
   ],
   "errors": 101,
-  "locgHits": 317,
+  "locgHits": 324,
   "locgNoUpc": 100,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
@@ -658,5 +658,5 @@
   "skippedExisting": 0,
   "startedAt": "2026-09-06T17:06:32Z",
   "timedOut": false,
-  "upcFilled": 217
+  "upcFilled": 224
 }
