@@ -1,39 +1,8 @@
 {
-  "startedAt": "2026-09-06T13:21:00Z",
-  "finishedAt": "2026-09-06T15:15:00Z",
-  "beforeUpc": 12,
-  "afterUpc": 67,
-  "beforeCovers": 25,
-  "afterCovers": 95,
-  "upcFilledThisPass": 55,
-  "coversBakedThisPass": 70,
-  "locgUpcEntries": 66,
-  "skipListSize": 6,
-  "artCheck": {
-    "metaOkCount": 58,
-    "metaBad": [],
-    "visualSample": [
-      "val-incursion-1",
-      "mv-capmarvel-1",
-      "dh-ua-hotel-1",
-      "img-localman-1",
-      "mv-moonknight2021-1",
-      "mv-vader2020-1",
-      "mv-starwars2020-1",
-      "mv-blackcat-1"
-    ],
-    "notes": "Sampled LOCG covers against catalog series+issue (58/58 meta OK). Visual sample downloaded for Incursion, Cap Marvel, UA Hotel Oblivion, Local Man, Moon Knight, Darth Vader, Star Wars, Black Cat. Scrubbed TP/HC mismatches; facsimiles deferred; CV sweep hit HTTP 420."
-  },
-  "leftovers": [
-    "Facsimile editions (-fac) need dedicated LOCG facsimile series ids",
-    "Long-running series non-#1 issues need paginated series lists",
-    "Some series coverComicId resolves to TP (skip list)",
-    "Comic Vine barcode sweep rate-limited (HTTP 420)",
-    "Catalog still missing UPC on vast majority (~35933 rows)"
-  ],
-  "delaySeconds": 30,
-  "sourcePriority": [
-    "locg",
-    "comicvine-barcode-fallback"
-  ]
+  "beforeUpcSession": 67,
+  "afterUpc": 86,
+  "afterCovers": 135,
+  "upcMapEntries": 117,
+  "note": "Pre-parallel-workers snapshot; Shopify fills + LOCG G.I. Joe wave",
+  "updatedAt": "2026-09-06T16:37:54Z"
 }

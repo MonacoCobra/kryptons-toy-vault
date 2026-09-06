@@ -22,6 +22,7 @@ Examples:
 from __future__ import annotations
 
 import argparse
+import fcntl
 import json
 import os
 import re
@@ -63,6 +64,7 @@ PRIORITY_PUBS = {
     "DC Comics / Black Label",
     "DC Comics / WildStorm",
     "Dynamite Entertainment",
+    "Dynamite",
     "Dark Horse Comics",
 }
 
@@ -204,12 +206,25 @@ def pick_series(hits: list[dict], series: str, publisher: str) -> dict | None:
             ({"image", "image comics", "skybound", "skybound image"}, want_p, pub),
             ({"boom", "boom studios"}, want_p, pub),
             ({"vertigo", "dc comics vertigo", "dc vertigo"}, want_p, pub),
+            ({"dynamite", "dynamite entertainment"}, want_p, pub),
+            ({"idw", "idw publishing"}, want_p, pub),
+            ({"dark horse", "dark horse comics"}, want_p, pub),
+            ({"valiant", "valiant entertainment"}, want_p, pub),
         )
         for group, w, g in aliases:
             if any(x in w for x in group) and any(x in g for x in group):
                 s += 4
         if re.search(r"panini|jbc|fomo|marmara|urban comics|other|traducido", h["publisher"], re.I):
             s -= 6
+        # Prefer matching facsimile / omnibus intent with catalog series name
+        want_fac = bool(re.search(r"\bfacsimile\b", want_s))
+        got_fac = bool(re.search(r"\bfacsimile\b", name))
+        if want_fac != got_fac:
+            s -= 5
+        if re.search(r"\b(omnibus|compendium|absolute edition)\b", name) and not re.search(
+            r"\b(omnibus|compendium|absolute edition)\b", want_s
+        ):
+            s -= 4
         return s
 
     ranked = sorted(((score(h), h) for h in hits), key=lambda x: -x[0])
@@ -219,7 +234,12 @@ def pick_series(hits: list[dict], series: str, publisher: str) -> dict | None:
 
 
 def parse_series_issues(html: str) -> dict[str, dict]:
-    """Map issue number → {locgId, slug, title, main} for main covers (data-parent=0)."""
+    """Map issue number → {locgId, slug, title, main, coverUrl, variants[]} for covers.
+
+    Main covers (data-parent=0) win the primary locgId. Open-order / other variants are
+    retained under variants[] so existing catalog variant rows can be matched later —
+    we never invent catalog ids.
+    """
     out: dict[str, dict] = {}
     for m in re.finditer(
         r'<li[^>]*id="comic-(\d+)"[^>]*data-comic="(\d+)"[^>]*data-parent="(\d+)"[^>]*>([\s\S]*?)</li>',
@@ -242,21 +262,51 @@ def parse_series_issues(html: str) -> dict[str, dict]:
             continue
         issue = im.group(1)
         is_main = parent == "0"
-        # Prefer main cover; keep first main seen
-        prev = out.get(issue)
-        if prev and prev.get("main") and not is_main:
-            continue
-        if prev and prev.get("main") and is_main:
-            continue
         if re.search(r"-vol-|\btp\b|omnibus|hardcover|-hc$", slug, re.I) or looks_like_collected_edition(title):
             continue
-        out[issue] = {
+        entry = {
             "locgId": locg_id,
             "slug": slug,
             "title": title,
             "main": is_main,
             "coverUrl": locg_cover(locg_id, "large"),
         }
+        prev = out.get(issue)
+        if not prev:
+            if is_main:
+                out[issue] = {**entry, "variants": []}
+            else:
+                # Variant seen before main — stash as variant, placeholder main empty
+                out[issue] = {
+                    "locgId": locg_id,
+                    "slug": slug,
+                    "title": title,
+                    "main": False,
+                    "coverUrl": locg_cover(locg_id, "large"),
+                    "variants": [entry],
+                }
+            continue
+        if is_main:
+            variants = list(prev.get("variants") or [])
+            # If previous "main" was actually a variant placeholder, keep it in variants
+            if not prev.get("main") and prev.get("locgId"):
+                variants.insert(
+                    0,
+                    {
+                        "locgId": prev["locgId"],
+                        "slug": prev.get("slug") or "issue",
+                        "title": prev.get("title") or "",
+                        "main": False,
+                        "coverUrl": prev.get("coverUrl") or locg_cover(prev["locgId"], "large"),
+                    },
+                )
+            out[issue] = {**entry, "variants": variants}
+        else:
+            variants = list(prev.get("variants") or [])
+            if not any(v.get("locgId") == locg_id for v in variants):
+                variants.append(entry)
+            prev["variants"] = variants
+            out[issue] = prev
     # Fallback looser parse if regex above missed
     if not out:
         for m in re.finditer(r'/comic/(\d+)/([a-z0-9\-]+)', html, re.I):
@@ -272,29 +322,112 @@ def parse_series_issues(html: str) -> dict[str, dict]:
                     "title": slug,
                     "main": True,
                     "coverUrl": locg_cover(locg_id, "large"),
+                    "variants": [],
                 }
     return out
 
 
-def fetch_series_issues(series_id: str) -> dict[str, dict]:
-    q = urllib.parse.urlencode(
-        {
-            "list": "series",
-            "series_id": series_id,
-            "title_id": series_id,
-            "format": "json",
-            "view": "list",
-        }
-    )
-    url = f"https://leagueofcomicgeeks.com/comic/get_comics?{q}"
-    try:
-        body, _ = fetch(url, accept="application/json")
-        data = json.loads(body)
-        html = data.get("list") or ""
-    except Exception as e:
-        print(f"  series issues error {series_id}: {e}", file=sys.stderr)
-        return {}
-    return parse_series_issues(html)
+def fetch_series_issues(series_id: str, *, delay: float = 0.0, throttle=None) -> dict[str, dict]:
+    """Fetch all issue→locgId mappings for a series, paginating via list_mode_offset."""
+    merged: dict[str, dict] = {}
+    offset = 0
+    page_size = 300
+    seen_pages = 0
+    max_pages = 40  # safety: 40*~140 ≈ 5600 rows
+    while seen_pages < max_pages:
+        q = urllib.parse.urlencode(
+            {
+                "list": "series",
+                "series_id": series_id,
+                "title_id": series_id,
+                "format": "json",
+                "view": "list",
+                "list_mode_offset": offset,
+                "list_mode_limit": page_size,
+            }
+        )
+        url = f"https://leagueofcomicgeeks.com/comic/get_comics?{q}"
+        try:
+            if throttle:
+                throttle()
+            elif delay and seen_pages:
+                time.sleep(delay)
+            body, _ = fetch(url, accept="application/json")
+            data = json.loads(body)
+            html = data.get("list") or ""
+        except Exception as e:
+            print(f"  series issues error {series_id} offset={offset}: {e}", file=sys.stderr)
+            break
+        page = parse_series_issues(html)
+        if not page:
+            # still count raw comics — empty parse may mean only TPs
+            raw_n = len(re.findall(r'id="comic-\d+"', html))
+            if raw_n == 0:
+                break
+        # Merge page into merged
+        new_ids = 0
+        for iss, ent in page.items():
+            prev = merged.get(iss)
+            if not prev:
+                merged[iss] = ent
+                new_ids += 1
+                continue
+            # Prefer true main
+            if ent.get("main") and not prev.get("main"):
+                variants = list(prev.get("variants") or [])
+                if prev.get("locgId") and prev["locgId"] != ent.get("locgId"):
+                    variants.append(
+                        {
+                            "locgId": prev["locgId"],
+                            "slug": prev.get("slug") or "issue",
+                            "title": prev.get("title") or "",
+                            "main": False,
+                            "coverUrl": prev.get("coverUrl"),
+                        }
+                    )
+                variants.extend(ent.get("variants") or [])
+                # dedupe variants
+                seen = set()
+                uniq = []
+                for v in variants:
+                    lid = v.get("locgId")
+                    if lid and lid not in seen:
+                        seen.add(lid)
+                        uniq.append(v)
+                merged[iss] = {**ent, "variants": uniq}
+                new_ids += 1
+            else:
+                variants = list(prev.get("variants") or [])
+                for v in ent.get("variants") or []:
+                    if v.get("locgId") and not any(x.get("locgId") == v["locgId"] for x in variants):
+                        variants.append(v)
+                        new_ids += 1
+                if ent.get("locgId") and ent["locgId"] != prev.get("locgId") and not ent.get("main"):
+                    if not any(x.get("locgId") == ent["locgId"] for x in variants):
+                        variants.append(
+                            {
+                                "locgId": ent["locgId"],
+                                "slug": ent.get("slug") or "issue",
+                                "title": ent.get("title") or "",
+                                "main": False,
+                                "coverUrl": ent.get("coverUrl"),
+                            }
+                        )
+                        new_ids += 1
+                prev["variants"] = variants
+                merged[iss] = prev
+        raw_n = len(re.findall(r'id="comic-\d+"', html))
+        seen_pages += 1
+        print(
+            f"  series {series_id} page@{offset}: raw={raw_n} parsed_issues={len(page)} "
+            f"merged={len(merged)} new={new_ids}"
+        )
+        # Stop when fewer than a full-ish page of raw comics
+        if raw_n < 100:
+            break
+        # Advance by actual rows returned (LOCG pages ~140 even when limit=300)
+        offset += raw_n
+    return merged
 
 
 def cv_key() -> str | None:
@@ -411,7 +544,7 @@ def parse_comics_meta() -> dict[str, dict]:
     return out
 
 
-def candidate_score(m: dict) -> float:
+def candidate_score(m: dict, *, series_batch: bool = False) -> float:
     y = 0
     d = m.get("coverDate") or ""
     if d[:4].isdigit():
@@ -420,10 +553,19 @@ def candidate_score(m: dict) -> float:
     score += min(float(m.get("demand") or 0), 50) * 2
     score += int(m.get("key") or 0) * 20
     issue = str(m.get("issue") or "")
-    if issue in ("1", "0"):
-        score += 55  # LOCG discovery is reliable for #1 via series cover id
+    if series_batch:
+        # Prefer barcode-era depth across a series (pagination unlocks many at once)
+        if issue in ("1", "0"):
+            score += 8
+        if y >= 2005:
+            score += 12
     else:
-        score -= 12  # non-#1 needs series-list pagination; deprioritize in timed passes
+        if issue in ("1", "0"):
+            score += 55  # LOCG discovery is reliable for #1 via series cover id
+        else:
+            score -= 12  # non-#1 needs series-list pagination; deprioritize in timed passes
+        if y >= 2005:
+            score += 3
     if y >= 2010:
         score += 8
     if y >= 2018:
@@ -432,9 +574,6 @@ def candidate_score(m: dict) -> float:
         score += 5
     if m.get("format") == "facsimile":
         score += 4
-    # Mild boost for barcode-era years
-    if y >= 2005:
-        score += 3
     return score
 
 
@@ -445,6 +584,7 @@ def build_catalog_candidates(
     min_year: int,
     limit: int,
     include_variants: bool = False,
+    series_batch: bool = False,
 ) -> list[str]:
     scored: list[tuple[float, str]] = []
     for cid, m in meta.items():
@@ -459,7 +599,7 @@ def build_catalog_candidates(
         y = int(d[:4]) if d[:4].isdigit() else 0
         if y and y < min_year:
             continue
-        scored.append((candidate_score(m), cid))
+        scored.append((candidate_score(m, series_batch=series_batch), cid))
     scored.sort(key=lambda x: -x[0])
     return [cid for _, cid in scored[:limit]]
 
@@ -472,6 +612,92 @@ def load_json(path: Path, default):
 
 def save_json(path: Path, data) -> None:
     path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
+
+
+def merge_upc_maps(disk: dict, local: dict) -> dict:
+    """Merge local upc_map onto freshly-read disk map without clobbering foreign sources.
+
+    - Prefer existing non-empty UPC over empty
+    - Do not replace locg/publisher UPC with empty
+    - Preserve fields from disk entries not touched locally when local value lacks upc but disk has one from another source
+    """
+    out = dict(disk)
+    for cid, ent in local.items():
+        cur = dict(out.get(cid) or {})
+        new = dict(ent or {})
+        # If disk has upc and new doesn't, keep disk upc/source
+        if cur.get("upc") and not new.get("upc"):
+            new["upc"] = cur["upc"]
+            if cur.get("source") and not new.get("source"):
+                new["source"] = cur["source"]
+        # If both have upc and sources differ, keep locg upc unless local is also locg
+        if cur.get("upc") and new.get("upc") and cur.get("upc") != new.get("upc"):
+            cur_src = str(cur.get("source") or "")
+            new_src = str(new.get("source") or "")
+            if "locg" in cur_src and "locg" not in new_src:
+                new["upc"] = cur["upc"]
+                new["source"] = cur_src
+        # Preserve locgId from either
+        if cur.get("locgId") and not new.get("locgId"):
+            new["locgId"] = cur["locgId"]
+        if cur.get("coverUrl") and not new.get("coverUrl"):
+            new["coverUrl"] = cur["coverUrl"]
+        # Merge: local wins on fetchedAt/title when present
+        merged = {**cur, **{k: v for k, v in new.items() if v is not None}}
+        out[cid] = merged
+    return out
+
+
+def merge_cover_urls(disk: dict, local: dict) -> dict:
+    out = dict(disk)
+    for cid, url in local.items():
+        if not url:
+            continue
+        existing = out.get(cid)
+        # Prefer LOCG comicgeeks covers
+        if existing and "comicgeeks" in str(existing) and "comicgeeks" not in str(url):
+            continue
+        out[cid] = url
+    return out
+
+
+def _locked_json_update(path: Path, merge_fn, local, default):
+    """Exclusive flock around read-merge-write so parallel workers don't clobber."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if not path.exists():
+        path.write_text(json.dumps(default, indent=2, sort_keys=True) + "\n")
+    with path.open("r+", encoding="utf-8") as f:
+        fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+        try:
+            f.seek(0)
+            raw = f.read()
+            disk = json.loads(raw) if raw.strip() else default
+            merged = merge_fn(disk, local)
+            f.seek(0)
+            f.truncate()
+            f.write(json.dumps(merged, indent=2, sort_keys=True) + "\n")
+            f.flush()
+            os.fsync(f.fileno())
+        finally:
+            fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+    return merged
+
+
+def save_upc_map_atomic(local: dict) -> dict:
+    return _locked_json_update(UPC_MAP, merge_upc_maps, local, {})
+
+
+def save_cover_urls_atomic(local: dict) -> dict:
+    return _locked_json_update(COVER_URLS, merge_cover_urls, local, {})
+
+
+def save_series_cache_atomic(local: dict) -> dict:
+    def merge(disk, loc):
+        out = dict(disk)
+        out.update(loc)
+        return out
+    return _locked_json_update(SERIES_CACHE, merge, local, {})
+
 
 
 def publisher_ok(got: str | None, want: str) -> bool:
@@ -557,6 +783,26 @@ def issue_norm(v: str | None) -> str:
     return str(v).lstrip("#").lower().strip()
 
 
+
+def publisher_group(publisher: str) -> str:
+    """Partition key for parallel workers: marvel | dc | other (disjoint)."""
+    p = (publisher or "").lower()
+    if "marvel" in p:
+        return "marvel"
+    if (
+        "dc comics" in p
+        or p.startswith("dc ")
+        or p == "dc"
+        or "vertigo" in p
+        or "black label" in p
+        or "wildstorm" in p
+        or "wildstorm" in p
+        or "milestone" in p
+    ):
+        return "dc"
+    return "other"
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--limit", type=int, default=40, help="Max comics to attempt")
@@ -571,8 +817,58 @@ def main() -> int:
     ap.add_argument("--cv-sweep-limit", type=int, default=400, help="Max extra CV barcode lookups")
     ap.add_argument("--no-cv", action="store_true", help="Skip Comic Vine barcode fallback")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument(
+        "--series-batch",
+        action="store_true",
+        help="Group catalog candidates by series; paginate full LOCG issue lists; maximize UPC/cover throughput",
+    )
+    ap.add_argument(
+        "--refresh-lists",
+        action="store_true",
+        help="Force re-fetch of LOCG series issue lists even when cache has entries",
+    )
+    ap.add_argument(
+        "--max-series",
+        type=int,
+        default=0,
+        help="With --series-batch, stop after N series groups (0=no limit)",
+    )
+    ap.add_argument(
+        "--max-per-series",
+        type=int,
+        default=0,
+        help="With --series-batch, cap comics per series (0=no cap; recent issues kept first)",
+    )
+    ap.add_argument(
+        "--publisher-group",
+        choices=["marvel", "dc", "other", "all"],
+        default="all",
+        help="Partition catalog work for parallel LOCG workers (disjoint marvel/dc/other)",
+    )
+    ap.add_argument(
+        "--publishers",
+        type=str,
+        default="",
+        help="Comma-separated publisher substrings to include (optional; applied after --publisher-group)",
+    )
+    ap.add_argument(
+        "--stats-file",
+        type=str,
+        default="",
+        help="Override stats JSON path (per-worker)",
+    )
+    ap.add_argument(
+        "--worker-id",
+        type=str,
+        default="",
+        help="Label printed in logs for parallel workers",
+    )
     args = ap.parse_args()
 
+    global STATS
+    if args.stats_file:
+        STATS = Path(args.stats_file)
+    worker = args.worker_id or args.publisher_group or "main"
     seeds = load_json(SEEDS, {})
     upc_map = load_json(UPC_MAP, {})
     cover_urls = load_json(COVER_URLS, {})
@@ -586,8 +882,13 @@ def main() -> int:
         ids = [x.strip() for x in args.only.split(",") if x.strip()]
     elif args.from_catalog:
         # Pure popularity/modern ranking. Skip rows already confirmed locg_no_upc+cover.
+        cat_pool = max(args.limit * (8 if args.series_batch else 4), args.limit)
         catalog_ids = build_catalog_candidates(
-            meta, upc_map, min_year=args.min_year, limit=max(args.limit * 4, args.limit)
+            meta,
+            upc_map,
+            min_year=args.min_year,
+            limit=cat_pool,
+            series_batch=bool(args.series_batch),
         )
         ids = []
         seen = set()
@@ -629,8 +930,164 @@ def main() -> int:
     if skip_ids:
         ids = [i for i in ids if i not in skip_ids]
 
+    # Publisher partition for parallel workers (disjoint).
+    if args.publisher_group and args.publisher_group != "all":
+        ids = [
+            i
+            for i in ids
+            if publisher_group((meta.get(i) or {}).get("publisher") or "") == args.publisher_group
+        ]
+    if args.publishers:
+        want = [x.strip().lower() for x in args.publishers.split(",") if x.strip()]
+        ids = [
+            i
+            for i in ids
+            if any(w in ((meta.get(i) or {}).get("publisher") or "").lower() for w in want)
+        ]
+    # Drop ids another worker already filled
+    upc_map = load_json(UPC_MAP, {})
+    ids = [i for i in ids if not (upc_map.get(i) or {}).get("upc")]
+
+
+    # Series-batch: prefer deep series so one paginated LOCG list unlocks many UPCs.
+    if args.series_batch:
+        # Rebuild from a wide modern pool, then keep the largest series groups.
+        pool_limit = max(args.limit * 20, 12000)
+        pool = build_catalog_candidates(
+            meta,
+            upc_map,
+            min_year=args.min_year,
+            limit=pool_limit,
+            series_batch=True,
+        )
+        if args.ones_only:
+            pool = [
+                i
+                for i in pool
+                if str((meta.get(i) or {}).get("issue") or "").lstrip("#").lower()
+                in ("1", "0", "nn")
+            ]
+        pool = [
+            i
+            for i in pool
+            if i not in skip_ids
+            and (meta.get(i) or {}).get("format") != "facsimile"
+            and not i.endswith("-fac")
+        ]
+        if args.publisher_group and args.publisher_group != "all":
+            pool = [
+                i
+                for i in pool
+                if publisher_group((meta.get(i) or {}).get("publisher") or "") == args.publisher_group
+            ]
+        if args.publishers:
+            want = [x.strip().lower() for x in args.publishers.split(",") if x.strip()]
+            pool = [
+                i
+                for i in pool
+                if any(w in ((meta.get(i) or {}).get("publisher") or "").lower() for w in want)
+            ]
+        # If --only was set, intersect; else replace ids with deep series selection
+        if args.only:
+            only_set = set(ids)
+            pool = [i for i in pool if i in only_set] or ids
+        groups: dict[str, list[str]] = {}
+        for cid in pool:
+            m = meta.get(cid) or {}
+            gk = f"{m.get('series') or cid}||{m.get('publisher') or ''}"
+            groups.setdefault(gk, []).append(cid)
+        # Sort issues within series by numeric issue when possible (recent first)
+        def issue_sort_key(cid: str):
+            iss = str((meta.get(cid) or {}).get("issue") or "")
+            digits = "".join(ch for ch in iss if ch.isdigit())
+            return (-int(digits) if digits else 0, iss)
+
+        for gk in groups:
+            groups[gk].sort(key=issue_sort_key)
+
+        def series_rank(gk: str) -> tuple:
+            ids_g = groups[gk]
+            n = len(ids_g)
+            pub = gk.split("||", 1)[-1] if "||" in gk else ""
+            # Barcode-era US singles first; demote UK/digest/newspaper-heavy pubs
+            if any(x in pub for x in ("Marvel", "DC Comics", "Image", "Boom", "IDW", "Dark Horse", "Dynamite", "Valiant", "Skybound")):
+                pri = 3.0
+            elif pub in PRIORITY_PUBS:
+                pri = 2.0
+            elif any(x in pub.lower() for x in ("2000 ad", "rebellion", "archie", "panini", "manga")):
+                pri = 0.25
+            else:
+                pri = 0.7
+            modern = 0
+            for cid in ids_g:
+                d = (meta.get(cid) or {}).get("coverDate") or ""
+                if d[:4].isdigit() and int(d[:4]) >= 2005:
+                    modern += 1
+            modern_ratio = modern / max(n, 1)
+            score = n * pri * (0.55 + 0.45 * modern_ratio)
+            return (-score, -n, gk)
+
+        ordered_keys = sorted(groups.keys(), key=series_rank)
+        if args.max_series and args.max_series > 0:
+            ordered_keys = ordered_keys[: args.max_series]
+        # Fill up to limit preferring largest series wholly, then partial last series
+        ids = []
+        kept_keys = []
+        for k in ordered_keys:
+            chunk = groups[k]
+            if args.max_per_series and args.max_per_series > 0:
+                chunk = chunk[: args.max_per_series]
+            if not ids and len(chunk) > args.limit:
+                ids.extend(chunk[: args.limit])
+                kept_keys.append(k)
+                break
+            if len(ids) + len(chunk) > args.limit and ids:
+                remain = args.limit - len(ids)
+                if remain > 0:
+                    ids.extend(chunk[:remain])
+                    kept_keys.append(k)
+                break
+            ids.extend(chunk)
+            kept_keys.append(k)
+            if len(ids) >= args.limit:
+                break
+        kept_sizes = []
+        # Recompute kept chunk sizes for logging
+        cursor = 0
+        for k in kept_keys:
+            chunk = groups[k]
+            if args.max_per_series and args.max_per_series > 0:
+                chunk = chunk[: args.max_per_series]
+            take = min(len(chunk), max(0, len(ids) - cursor))
+            # approximate by scanning ids membership count for this series
+            n = sum(1 for cid in ids if f"{(meta.get(cid) or {}).get('series')}||{(meta.get(cid) or {}).get('publisher')}" == k)
+            kept_sizes.append(n)
+            cursor += n
+        print(
+            f"series-batch: {len(kept_keys)} series groups, {len(ids)} comics "
+            f"(kept sizes: {', '.join(str(n) for n in kept_sizes[:8])})"
+        )
+
+
+    # Re-assert publisher partition after series-batch rebuild
+    if args.publisher_group and args.publisher_group != "all":
+        ids = [
+            i
+            for i in ids
+            if publisher_group((meta.get(i) or {}).get("publisher") or "") == args.publisher_group
+        ]
+    if args.publishers:
+        want = [x.strip().lower() for x in args.publishers.split(",") if x.strip()]
+        ids = [
+            i
+            for i in ids
+            if any(w in ((meta.get(i) or {}).get("publisher") or "").lower() for w in want)
+        ]
+    upc_map = load_json(UPC_MAP, upc_map)
+    ids = [i for i in ids if not (upc_map.get(i) or {}).get("upc")]
+
     print(
-        f"backfill: {len(ids)} comics, delay={args.delay}s, "
+        f"backfill[{worker}]: {len(ids)} comics, delay={args.delay}s, publisher_group={args.publisher_group}, "
         f"from_catalog={args.from_catalog}, seeds_only={args.seeds_only}, "
         f"max_minutes={args.max_minutes or '∞'}"
     )
@@ -651,6 +1108,7 @@ def main() -> int:
         "mismatchIssue": 0,
         "seriesResolved": 0,
         "coversFromSeriesList": 0,
+        "seriesBatch": bool(getattr(args, "series_batch", False)),
         "timedOut": False,
         "details": [],
         "beforeUpc": before_upc,
@@ -675,16 +1133,22 @@ def main() -> int:
         return f"{series}||{publisher}"
 
     def resolve_series(series: str, publisher: str, need_issue: str = "1") -> dict | None:
+        nonlocal series_cache
         ck = cache_key(series, publisher)
         cached = series_cache.get(ck)
         want = issue_norm(need_issue)
         if cached and cached.get("seriesId"):
             issues = cached.get("issues") or {}
-            if want in ("1", "0", "nn") and (cached.get("coverComicId") or issues.get("1")):
-                return cached
-            if want in issues:
-                return cached
-            # fall through to refresh issue list if we need a missing issue
+            rich = bool(cached.get("listFetchedAt")) or len(issues) >= 25
+            force = bool(getattr(args, "refresh_lists", False)) or (
+                bool(getattr(args, "series_batch", False)) and not rich
+            )
+            if not force:
+                if want in ("1", "0", "nn") and (cached.get("coverComicId") or issues.get("1")):
+                    return cached
+                if want in issues:
+                    return cached
+            # fall through to refresh issue list if we need a missing issue / full list
         if not time_left():
             return cached
         throttle()
@@ -693,7 +1157,7 @@ def main() -> int:
         if not picked:
             series_cache[ck] = {"seriesId": None, "issues": {}, "failedAt": now_iso()}
             if not args.dry_run:
-                save_json(SERIES_CACHE, series_cache)
+                series_cache = save_series_cache_atomic(series_cache)
             return None
         stats["seriesResolved"] += 1
         entry = {
@@ -704,7 +1168,7 @@ def main() -> int:
             "issues": dict((cached or {}).get("issues") or {}),
             "resolvedAt": now_iso(),
         }
-        # Fast path: issue #1 from series cover comic id — skip list fetch
+        # Fast path: issue #1 from series cover comic id
         if picked.get("coverComicId"):
             entry["issues"]["1"] = {
                 "locgId": picked["coverComicId"],
@@ -712,24 +1176,46 @@ def main() -> int:
                 "title": f"{series} #1",
                 "main": True,
                 "coverUrl": locg_cover(picked["coverComicId"], "large"),
+                "variants": list((entry["issues"].get("1") or {}).get("variants") or []),
             }
-        need_list = want not in ("1", "0", "nn") and want not in entry["issues"]
+        force_list = bool(getattr(args, "refresh_lists", False) or getattr(args, "series_batch", False))
+        need_list = force_list or (want not in ("1", "0", "nn") and want not in entry["issues"])
+        # Also refresh when cache is thin (<3 issues) for known long-runners
+        if not need_list and len(entry["issues"]) < 3 and want not in ("1", "0", "nn"):
+            need_list = True
         if need_list and time_left():
-            throttle()
-            issues = fetch_series_issues(picked["seriesId"])
-            entry["issues"].update(issues)
-            # Re-assert #1 cover id preference for main
+            issues = fetch_series_issues(picked["seriesId"], throttle=throttle)
+            # merge without clobbering richer variant lists
+            for iss, ent in issues.items():
+                prev = entry["issues"].get(iss)
+                if not prev:
+                    entry["issues"][iss] = ent
+                    continue
+                variants = list(prev.get("variants") or [])
+                for v in ent.get("variants") or []:
+                    if v.get("locgId") and not any(x.get("locgId") == v["locgId"] for x in variants):
+                        variants.append(v)
+                if ent.get("main") or not prev.get("main"):
+                    merged = {**ent, "variants": variants}
+                    entry["issues"][iss] = merged
+                else:
+                    prev["variants"] = variants
+            # Re-assert #1 cover id preference for main when coverComicId known
             if picked.get("coverComicId"):
+                cur = entry["issues"].get("1") or {}
                 entry["issues"]["1"] = {
                     "locgId": picked["coverComicId"],
-                    "slug": entry["issues"].get("1", {}).get("slug") or "issue",
-                    "title": entry["issues"].get("1", {}).get("title") or f"{series} #1",
+                    "slug": cur.get("slug") or "issue",
+                    "title": cur.get("title") or f"{series} #1",
                     "main": True,
                     "coverUrl": locg_cover(picked["coverComicId"], "large"),
+                    "variants": list(cur.get("variants") or []),
                 }
+            entry["listFetchedAt"] = now_iso()
+            entry["listIssueCount"] = len(entry["issues"])
         series_cache[ck] = entry
         if not args.dry_run:
-            save_json(SERIES_CACHE, series_cache)
+            series_cache = save_series_cache_atomic(series_cache)
         return entry
 
     for cid in ids:
@@ -738,9 +1224,19 @@ def main() -> int:
             print(f"⏱ time budget reached after {stats['attempted']} attempts")
             break
 
+        # Peer workers may have filled this id — re-read under lock-friendly load
+        try:
+            upc_map = load_json(UPC_MAP, upc_map)
+            cover_urls = load_json(COVER_URLS, cover_urls)
+        except Exception:
+            pass
+
         m = meta.get(cid) or {}
         seed = seeds.get(cid) or {}
         existing = upc_map.get(cid) or {}
+        if existing.get("upc"):
+            stats["skippedExisting"] += 1
+            continue
         if existing.get("upc") and existing.get("coverUrl") and cid in cover_urls:
             stats["skippedExisting"] += 1
             continue
@@ -900,8 +1396,8 @@ def main() -> int:
                             upc_map[cid]["coverUrl"] = cv["coverUrl"]
                     print(f"  + CV barcode {cv['upc']}")
             if not args.dry_run:
-                save_json(UPC_MAP, upc_map)
-                save_json(COVER_URLS, cover_urls)
+                upc_map = save_upc_map_atomic(upc_map)
+                cover_urls = save_cover_urls_atomic(cover_urls)
                 save_json(STATS, {**stats, "details": stats["details"][-80:]})
             continue
 
@@ -928,8 +1424,8 @@ def main() -> int:
                 print(f"✓ {cid}: CV-only upc={cv['upc']}")
                 stats["details"].append(detail)
                 if not args.dry_run:
-                    save_json(UPC_MAP, upc_map)
-                    save_json(COVER_URLS, cover_urls)
+                    upc_map = save_upc_map_atomic(upc_map)
+                    cover_urls = save_cover_urls_atomic(cover_urls)
                 continue
 
         stats["errors"] += 1
@@ -937,8 +1433,8 @@ def main() -> int:
         stats["details"].append(detail)
         print(f"· {cid}: no LOCG/CV upc")
         if not args.dry_run and stats["attempted"] % 10 == 0:
-            save_json(UPC_MAP, upc_map)
-            save_json(COVER_URLS, cover_urls)
+            upc_map = save_upc_map_atomic(upc_map)
+            cover_urls = save_cover_urls_atomic(cover_urls)
 
     # Optional CV sweep for broader UPC fill (still never invents)
     if args.cv_sweep and not args.no_cv:
@@ -980,8 +1476,8 @@ def main() -> int:
                     stats["coverUpdated"] += 1
             print(f"✓ {cid}: CV-sweep upc={cv['upc']}")
             if stats["cvSweepUpc"] % 25 == 0 and not args.dry_run:
-                save_json(UPC_MAP, upc_map)
-                save_json(COVER_URLS, cover_urls)
+                upc_map = save_upc_map_atomic(upc_map)
+                cover_urls = save_cover_urls_atomic(cover_urls)
 
     # Preserve known FF 550 upc from comics.ts into map if missing
     ff = meta.get("mv-ff-550-3d")
@@ -1004,9 +1500,9 @@ def main() -> int:
     stats["fromCatalog"] = args.from_catalog
 
     if not args.dry_run:
-        save_json(UPC_MAP, upc_map)
-        save_json(COVER_URLS, cover_urls)
-        save_json(SERIES_CACHE, series_cache)
+        upc_map = save_upc_map_atomic(upc_map)
+        cover_urls = save_cover_urls_atomic(cover_urls)
+        series_cache = save_series_cache_atomic(series_cache)
         # Trim details for stats file size but keep summary counts
         save_json(STATS, stats)
 

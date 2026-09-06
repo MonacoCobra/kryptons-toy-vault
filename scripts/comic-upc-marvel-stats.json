@@ -1,0 +1,7 @@
+{
+  "error": "missing_marvel_api_keys",
+  "finishedAt": "2026-09-06T16:28:19Z",
+  "help": "Marvel API keys missing.\nRegister at https://developer.marvel.com/account then store:\n  /home/box/.config/krypton/marvel-api.json  \u2192 {\"publicKey\":\"...\",\"privateKey\":\"...\"}\nor env MARVEL_PUBLIC_KEY + MARVEL_PRIVATE_KEY\n(same vault pattern as /home/box/.config/krypton/comicvine-api-key)",
+  "startedAt": "2026-09-06T16:28:19Z",
+  "vaultPath": "/home/box/.config/krypton/marvel-api.json"
+}

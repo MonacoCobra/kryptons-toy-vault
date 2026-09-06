@@ -23,6 +23,7 @@ No generative AI art. Covers come from LOCG CDN or Comic Vine scans.
 ```bash
 python3 scripts/backfill-comic-upcs.py --seeds-only --limit 40 --delay 30
 python3 scripts/backfill-comic-upcs.py --from-catalog --limit 220 --max-minutes 85 --delay 30 --cv-sweep
+python3 scripts/backfill-comic-upcs.py --from-catalog --series-batch --limit 2500 --max-per-series 100 --min-year 2005 --max-minutes 360 --delay 30 --no-cv
 ```
 
 | Flag | Meaning |
@@ -36,6 +37,10 @@ python3 scripts/backfill-comic-upcs.py --from-catalog --limit 220 --max-minutes 
 | `--cv-sweep` | After LOCG pass, Comic Vine barcode sweep for leftovers. |
 | `--only id,id` | Explicit catalog ids. |
 | `--no-cv` | Skip Comic Vine barcode fallback. |
+| `--series-batch` | Group by series; paginate full LOCG issue lists (`list_mode_offset`); process recent issues first. |
+| `--refresh-lists` | Force re-fetch of cached series issue lists. |
+| `--max-series` | Cap number of series groups in series-batch mode. |
+| `--max-per-series` | Cap comics per series (keeps newest first). |
 
 Writes:
 
@@ -65,6 +70,34 @@ Catalog/list cards stay on the **primary / Cover A** issue (`collapseComicVarian
 - Labels use `CatalogComic.variant` (fallback **Cover A**)
 
 As LOCG/UPC backfill adds Cover B / virgin / etc. rows, the strip populates automatically. Do not invent sample issues for demos.
+
+
+## Publisher / API sources (parallel to LOCG)
+
+| Source | Status | Notes |
+|--------|--------|-------|
+| **Marvel Comics API** (`gateway.marvel.com`) | **Shut down — do not use** | Marvel ended the public API. Use LOCG / retailer Shopify feeds instead. |
+| **IDW Shopify** `idwpublishing.com/products.json` | Live; exclusives-heavy | `scripts/backfill-comic-upcs-idw-shop.py`. SKUs often real UPC/ISBN, but storefront currently skews foil/exclusive — primary Cover A rows are skipped unless a non-exclusive SKU exists. |
+| **Dark Horse / BOOM / Dynamite / Image shop JSON** | No usable public UPC | `products.json` either missing, blocked, or omits barcode; Image shop 403. |
+| **Comic Vine barcode** | Optional fallback | Often empty on search/detail in current API; LOCG remains primary. |
+
+All writers merge-safe-save `comic-upc-map.json` so LOCG + publisher jobs can run in parallel without clobbering each other.
+
+
+## Parallel LOCG workers
+
+Three disjoint publisher partitions share `comic-upc-map.json` via flock merge:
+
+```bash
+# Marvel / DC / other — stagger ~10s, each --delay 30
+python3 scripts/backfill-comic-upcs.py --from-catalog --series-batch --publisher-group marvel \
+  --limit 2000 --max-per-series 80 --min-year 2005 --max-minutes 360 --delay 30 --no-cv \
+  --worker-id marvel --stats-file scripts/comic-upc-backfill-stats-marvel.json
+python3 scripts/backfill-comic-upcs.py --from-catalog --series-batch --publisher-group dc ...
+python3 scripts/backfill-comic-upcs.py --from-catalog --series-batch --publisher-group other ...
+```
+
+Or: `bash scripts/run-locg-upc-workers.sh`
 
 ## Profile
 
