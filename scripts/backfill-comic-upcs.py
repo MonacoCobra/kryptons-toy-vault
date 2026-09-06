@@ -980,6 +980,16 @@ def main() -> int:
                 for i in pool
                 if publisher_group((meta.get(i) or {}).get("publisher") or "") == args.publisher_group
             ]
+        # Skip ids already LOCG-resolved without UPC (cover baked) — don't re-crawl
+        pool = [
+            i
+            for i in pool
+            if not (
+                (upc_map.get(i) or {}).get("locgId")
+                and not (upc_map.get(i) or {}).get("upc")
+                and i in cover_urls
+            )
+        ]
         if args.publishers:
             want = [x.strip().lower() for x in args.publishers.split(",") if x.strip()]
             pool = [
