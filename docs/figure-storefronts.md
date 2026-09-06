@@ -24,6 +24,7 @@ paginates **all** pages from these same shops (see `scripts/gen-figure-oneshot.p
 | Star Ace | https://www.staracetoys.com | 1/6 AF + DefoStyle soft vinyl |
 | DamToys | https://shop.damtoys.com | 1/6 / 1/12 military & GK |
 | Storm Collectibles | https://www.stormco.com.hk | First-party HK Shopify |
+| Store Horsemen | https://store-horsemen.myshopify.com | Four Horsemen Mythic/Cosmic/Figura Obscura |
 
 ## Out of scope
 
@@ -34,10 +35,11 @@ Pins, Barbie/dolls, poster/print merch, board games, drinkware, puzzles.
 Hasbro Pulse, BBTS, Entertainment Earth, Mezco official, McFarlane Toys store,
 Hot Toys, Sideshow, Bandai Tamashii US, MAFEX/Medicom first-party, threezero, Takara Tomy mall —
 still no stable public `products.json` we verified. **Image bake** may still fill
-Hasbro / Mezco One:12 / MAFEX / SHFiguarts curated rows from specialty retailer
-Shopify catalogs (ToyArena, CmdStore, Planet Action Figures) with high-confidence
-vendor/title→company mapping only. DC Direct / Kenner Super Powers / Mattel DCUC
-are curated in `scripts/figure_oneshot/curated_dc.py`.
+Hasbro / Mezco One:12 / MAFEX / SHFiguarts / Playmates / JAKKS / Toy Biz /
+classic DC Direct / Loyal Subjects BST / Four Horsemen curated rows from specialty
+retailer Shopify catalogs (ToyArena, CmdStore, Planet AF, Cool Toy Den, AFCollector,
+Legendz Toys) with high-confidence vendor/title→company mapping only. Kenner Super
+Powers / Mattel DCUC / JLU leftovers stay placeholders without honest feeds.
 
 ## Image bake
 

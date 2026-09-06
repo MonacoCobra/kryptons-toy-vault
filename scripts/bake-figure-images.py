@@ -82,10 +82,21 @@ FAMILY_REQUIRE = {
     "mafex": re.compile(r"\bmafex\b", re.I),
     "shfiguarts": re.compile(r"figuarts", re.I),
     "storm": re.compile(r"storm|street fighter|mortal kombat|tekken|king of fighters|baki|arena", re.I),
+    # Specialty brands newly indexed from retailers / Store Horsemen
+    "fourhorsemen": re.compile(
+        r"mythic legions|cosmic legions|figura obscura|infinite legions|four horsemen", re.I
+    ),
+    "kaiyodo": re.compile(r"kaiyodo|revoltech|yamaguchi", re.I),
+    "playmates": re.compile(r"playmates|tmnt|turtle|exo.?squad|ninja turtle", re.I),
+    "jakks": re.compile(r"jakks|sonic|nintendo|primal age|\bwwe\b|super mario", re.I),
+    "toybiz": re.compile(r"toy\s*biz|toybiz|marvel legends", re.I),
+    "kenner": re.compile(r"kenner|super powers", re.I),
+    "dcdirect": re.compile(r"dc direct|dc collectibles", re.I),
 }
 
 # Curated lines with no honest Shopify counterpart on our feeds — never match.
-BLOCKED_FAMILIES = {"jlu", "dcuc", "dcd"}
+# DC Direct/Collectibles unblocked when retailer vendor/title is classic DCD (not McFarlane Page Punchers).
+BLOCKED_FAMILIES = {"jlu", "dcuc"}
 
 
 def norm(s: str) -> str:
@@ -186,6 +197,24 @@ def line_family(line: str, company: str) -> str:
         return "shfiguarts"
     if company == "storm":
         return "storm"
+    if company == "fourhorsemen":
+        return "fourhorsemen"
+    if company == "kaiyodo":
+        return "kaiyodo"
+    if company == "playmates":
+        if "tmnt" in l or "turtle" in l or "ronin" in l:
+            return "tmnt"
+        return "playmates"
+    if company == "jakks":
+        return "jakks"
+    if company == "toybiz":
+        return "toybiz"
+    if company == "kenner":
+        return "kenner"
+    if company == "dcdirect":
+        return "dcd"
+    if company == "loyalsubjects":
+        return "bst"
     return company
 
 
@@ -198,6 +227,32 @@ def product_character_text(name: str, subtitle: str, title: str = "") -> str:
         segs = [x.strip() for x in full.split(" | ") if x.strip()]
         if segs:
             char = segs[-1].split(":")[0].strip()
+            return f"{char} {full}"
+    # Kaiyodo / Amazing Yamaguchi / Revoltech — character after line prefix
+    if re.search(r"amazing yamaguchi|revoltech|\bkaiyodo\b", full, re.I):
+        stripped = re.sub(
+            r"^(?:Pre-?[Oo]rder:\s*)?(?:Kaiyodo\s+)?(?:Amazing Yamaguchi\s+)?(?:Revoltech\s+)?(?:Figure Complex\s+)?",
+            "",
+            full,
+            flags=re.I,
+        )
+        stripped = re.sub(r"\s*Action Figures?\s*", " ", stripped, flags=re.I)
+        stripped = re.sub(r"\s+", " ", stripped).strip(" -:")
+        if stripped:
+            return f"{stripped} {full}"
+    # Four Horsemen / Mythic / Cosmic / Figura Obscura
+    if re.search(r"(?:mythic|cosmic|infinite)\s+legions|figura obscura|four horsemen", full, re.I):
+        char = ""
+        m = re.search(r"action figures?\s+(.+)$", full, re.I)
+        if m:
+            char = m.group(1).strip()
+        elif ":" in full:
+            char = full.split(":", 1)[-1].strip()
+        elif " - " in full:
+            char = full.rsplit(" - ", 1)[-1].strip()
+        char = re.sub(r"\s*\(.*?\)\s*", " ", char)
+        char = re.sub(r"\s+", " ", char).strip(" -:")
+        if char:
             return f"{char} {full}"
     # Hiya long prefixes
     if re.search(r"\bhiya\b|exquisite (?:basic|mini)", full, re.I):
@@ -272,17 +327,22 @@ def image_from_product(p: dict) -> str | None:
 # Specialty retailers with open products.json — image-index only (not oneshot dump).
 # Vendor/title → CompanyId so Hasbro/Mezco/MAFEX/SHF curated rows can match.
 RETAILER_FEEDS = [
-    {"id": "toyarena", "baseUrl": "https://www.toyarena.com", "pageLimit": 250, "maxPages": 40},
-    {"id": "cmdstore", "baseUrl": "https://www.cmdstore.ca", "pageLimit": 250, "maxPages": 45},
-    {"id": "planet-af", "baseUrl": "https://www.planetactionfigures.co.uk", "pageLimit": 250, "maxPages": 25},
+    {"id": "toyarena", "baseUrl": "https://www.toyarena.com", "pageLimit": 250, "maxPages": 45},
+    {"id": "cmdstore", "baseUrl": "https://www.cmdstore.ca", "pageLimit": 250, "maxPages": 50},
+    {"id": "planet-af", "baseUrl": "https://www.planetactionfigures.co.uk", "pageLimit": 250, "maxPages": 30},
+    # Verified open specialty AF catalogs (2026-09) — Hasbro/Playmates/JAKKS/DCD/ToyBiz/BST
+    {"id": "cooltoyden", "baseUrl": "https://cooltoyden.com", "pageLimit": 250, "maxPages": 20},
+    {"id": "afcollector", "baseUrl": "https://afcollector.com", "pageLimit": 250, "maxPages": 10},
+    {"id": "legendztoys", "baseUrl": "https://legendztoys.com", "pageLimit": 250, "maxPages": 5},
 ]
 
 RETAILER_SKIP = re.compile(
-    r"\b(roleplay|life size|prop replica|die cast|static figure|model kit|gunpla|"
+    r"\b(roleplay|life size|prop replica|die cast|diecast|static figure|model kit|gunpla|"
     r"figuarts zero|statue|plush|funko|\bpop\b|trading card|pokemon|soft goods|"
     r"empty box|backdrop|t-?shirt|hoodie|mug|poster|apparel|enamel|pin set|"
     r"blind box flat|gift card|nendoroid|pop up parade|scale figure|"
-    r"non-scale figure|vibration stars)\b",
+    r"non-scale figure|vibration stars|\blego\b|steiff|loungefly|ornament|"
+    r"living dead dolls?|mds mega scale)\b",
     re.I,
 )
 
@@ -301,10 +361,15 @@ def infer_retailer_company(p: dict) -> str | None:
         return "mafex"
     if re.search(r"figuarts", bl) and not re.search(r"figuarts zero", bl):
         return "shfiguarts"
-    if re.search(r"one:?12|mezco", bl):
+    if re.search(r"one:?12", bl) or (
+        re.search(r"\bmezco\b", bl) and re.search(r"action figure|one.?12|collective", bl)
+    ):
         return "mezco"
     if re.search(r"storm collect", bl) or re.match(r"storm\b", vendor, re.I):
         return "storm"
+    # Toy Biz ML before Hasbro ML
+    if re.search(r"toy\s*biz|toybiz", bl) and re.search(r"marvel legends|marvel", bl):
+        return "toybiz"
     if re.search(r"marvel legends", bl):
         return "hasbro"
     if re.search(r"black series", bl):
@@ -322,8 +387,17 @@ def infer_retailer_company(p: dict) -> str | None:
         bl,
     ):
         return "hasbro"
+    # McFarlane "DC Direct" Page Punchers ≠ classic DC Direct/Collectibles
+    if re.search(r"page punchers|mcfarlane\s+dc\s+direct", bl):
+        return "mcfarlane"
     if re.search(r"mcfarlane|dc multiverse", bl) and not re.search(r"marvel legends", bl):
         return "mcfarlane"
+    # Classic DC Direct / DC Collectibles (vendor or title; not McFarlane)
+    if re.match(r"dc\s*(direct|collectibles)\b", vendor, re.I) or (
+        re.search(r"dc\s*direct|dc\s*collectibles", bl)
+        and not re.search(r"mcfarlane|page punchers|dc multiverse", bl)
+    ):
+        return "dcdirect"
     if re.search(r"robot spirits", bl):
         return "bandai"
     if re.search(r"\bhiya\b", bl):
@@ -334,18 +408,35 @@ def infer_retailer_company(p: dict) -> str | None:
         return "neca"
     if re.search(r"\bsuper7\b", bl):
         return "super7"
-    if re.search(r"four horsemen|mythic legions|figura obscura", bl):
+    if re.search(
+        r"four horsemen|mythic legions|cosmic legions|figura obscura|infinite legions",
+        bl,
+    ):
         return "fourhorsemen"
     if re.search(r"joytoy|joy toy", bl):
         return "joytoy"
     if re.search(r"hot toys", bl):
         return "hottoys"
-    if re.search(r"\bkaiyodo\b|revoltech", bl):
+    if re.search(r"\bkaiyodo\b|revoltech|amazing yamaguchi|\bkayodo\b", bl):
         return "kaiyodo"
+    if re.search(r"loyal subjects|bst axn|\bbst\b", bl):
+        return "loyalsubjects"
+    if re.search(r"\bplaymates\b", bl):
+        return "playmates"
+    if re.search(r"\bjakks\b", bl):
+        return "jakks"
+    # Kenner Super Powers / vintage Kenner AF (not Hasbro "Kenner Classics" Ghostbusters)
+    if re.search(r"\bkenner\b", bl) and not re.search(r"kenner classics|hasbro", bl):
+        if re.search(r"super powers|batman|action figure|figure", bl):
+            return "kenner"
     if re.search(r"\bfigma\b", bl) or re.search(r"good smile", bl) and re.search(r"\bfigma\b", bl):
         return "figma"
     if re.search(r"beast kingdom", bl):
         return "beastkingdom"
+    if re.search(r"diamond select", bl):
+        return "diamondselect"
+    if re.search(r"\bjada\b", bl):
+        return "jada"
     return None
 
 
@@ -410,6 +501,19 @@ def index_entries_from_products(products: list[dict], source_id: str, company_fo
                     name, subtitle = colon[0].strip(), ":".join(colon[1:]).strip()
                 else:
                     name, subtitle = title, str(p.get("product_type") or source_id)
+        # Prefer character-forward name for noisy retailer titles
+        charish = product_character_text(name, subtitle, title)
+        # If character helper returned a useful lead token sequence shorter than full title, use it
+        lead = (charish.split(title)[0] if title and title in charish else charish).strip()
+        if lead and 2 < len(lead) < len(title) and not re.search(
+            r"^(amazing yamaguchi|revoltech|mythic legions|cosmic legions|infinite legions)\b",
+            lead,
+            re.I,
+        ):
+            # Keep original title as subtitle context when we peel a character
+            if len(lead) <= 80 and lead.lower() != name.lower():
+                subtitle = f"{name} {subtitle}".strip()[:160]
+                name = lead[:160]
         index.append(
             {
                 "id": pid,
@@ -820,6 +924,45 @@ def score_pair(fig: dict, prod: dict) -> float:
             # product is the Godzilla SKU from a vs/x set
             if not re.search(r"\bkong\b", norm(prod.get("name") or "") + " " + char):
                 return -1.0
+    # Kaiyodo / Yamaguchi / Revoltech
+    if fig["company"] == "kaiyodo":
+        if not re.search(r"kaiyodo|revoltech|yamaguchi", prod["_blob"]):
+            return -1.0
+    # Four Horsemen lines
+    if fig["company"] == "fourhorsemen":
+        if not re.search(
+            r"mythic legions|cosmic legions|figura obscura|infinite legions|four horsemen",
+            prod["_blob"],
+        ):
+            return -1.0
+    # Playmates
+    if fig["company"] == "playmates":
+        if not re.search(r"playmates|tmnt|turtle|exo.?squad", prod["_blob"]):
+            return -1.0
+    # JAKKS
+    if fig["company"] == "jakks":
+        if not re.search(r"jakks", prod["_blob"]):
+            return -1.0
+    # Toy Biz (never Hasbro-only ML packaging)
+    if fig["company"] == "toybiz":
+        if not re.search(r"toy\s*biz|toybiz", prod["_blob"]):
+            return -1.0
+    # Classic DC Direct / Collectibles
+    if fig["company"] == "dcdirect":
+        if not re.search(r"dc direct|dc collectibles", prod["_blob"]):
+            return -1.0
+        if re.search(r"page punchers|mcfarlane\s+dc\s+direct", prod["_blob"]):
+            return -1.0
+    # Kenner
+    if fig["company"] == "kenner":
+        if not re.search(r"kenner|super powers", prod["_blob"]):
+            return -1.0
+        if re.search(r"kenner classics", prod["_blob"]) and "super powers" not in prod["_blob"]:
+            return -1.0
+    # Loyal Subjects / BST AXN
+    if fig["company"] == "loyalsubjects":
+        if not re.search(r"loyal subjects|bst axn|\bbst\b", prod["_blob"]):
+            return -1.0
     # Skip obvious Mattel DC Premier mismatches for non-Premier curated lines
     fig_line = norm(fig["line"])
     if fig["company"] == "mattel" and "premier" in prod["_blob"]:
@@ -946,15 +1089,15 @@ def main() -> None:
         "byCompany": dict(Counter(f["company"] for _, f, _ in finals).most_common()),
         "safeguards": [
             "same-company hard gate",
-            "blocked families: JLU/DCUC/DC Direct (no honest Shopify line)",
+            "blocked families: JLU/DCUC (classic DC Direct unblocked via retailer vendor/title)",
             "line-family regex required when known (Hasbro Legends/Black Series/Classified/Studio/Lightning)",
             "character-focused name match (subtitle for ULTIMATES/ReAction headers)",
             "first significant name token required",
             "multi-token subtitle requires ≥1 hit",
             "one product image → one character name (variants may share CDN shot)",
             "Mattel DC Premier not used for unrelated curated lines",
-            "retailer feeds (ToyArena/CmdStore/Planet) vendor→company high-confidence only",
-            "Storm first-party stormco.com.hk; Pulse/BBTS/EE/Mezco official still blocked",
+            "retailer feeds (ToyArena/CmdStore/Planet/CoolToyDen/AFCollector/Legendz) vendor→company high-confidence only",
+            "Storm HK + Store Horsemen first-party; Pulse/BBTS/EE/Mezco official still blocked",
         ],
         "samples": [
             {

@@ -42,10 +42,11 @@ cd scripts && python3 bake-figure-images.py --fetch
 
 ## Honest leftovers
 
-Hasbro Pulse, Mezco, Hot Toys, Bandai SHF, MAFEX, threezero, Kenner Super
-Powers depth, and most DCUC/JLU/DC Direct curated rows **cannot** be filled from
-open Shopify feeds we use. Leave placeholders until a stable public image source
-exists — do not scrape Pulse/BBTS aggressively.
+Hasbro Pulse, Mezco official, Hot Toys, Bandai Tamashii first-party, threezero,
+and DCUC/JLU curated rows still lack honest first-party feeds. Specialty retailers
+can fill many Hasbro / SHF / MAFEX / Mezco One:12 / Playmates / JAKKS / Toy Biz /
+classic DC Direct / Four Horsemen / Kaiyodo / BST rows when titles are unambiguous.
+Densify placeholders without a real SKU stay empty — do not scrape Pulse/BBTS.
 
 ## Weekday-friendly `--fetch`
 
@@ -64,6 +65,7 @@ python3 bake-figure-images.py --fetch
 
 Hasbro Pulse / BBTS / Mezco official / Hot Toys / Tamashii first-party still lack
 stable public `products.json`. Bake `--fetch` also indexes specialty retailers
-(ToyArena, CmdStore, Planet AF) + Storm Collectibles HK for high-confidence
-Hasbro Legends/Black Series/Classified/Studio/Lightning, Mezco One:12, MAFEX,
-and SHFiguarts matches. Leftovers without clear title cues stay placeholders.
+(ToyArena, CmdStore, Planet AF, Cool Toy Den, AFCollector, Legendz Toys) + Storm
+Collectibles HK + Store Horsemen for high-confidence Hasbro / Mezco One:12 / MAFEX /
+SHFiguarts / Playmates / JAKKS / Toy Biz / classic DC Direct / Four Horsemen /
+Kaiyodo / BST matches. Leftovers without clear title cues stay placeholders.

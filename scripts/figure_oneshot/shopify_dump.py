@@ -104,6 +104,16 @@ STOREFRONTS = [
         "company": "storm",
         "requireHint": re.compile(r"figure|storm|arena|1/?12|action", re.I),
     },
+    # Four Horsemen Studios (Store Horsemen) — Mythic/Cosmic/Figura Obscura
+    {
+        "id": "store-horsemen",
+        "baseUrl": "https://store-horsemen.myshopify.com",
+        "company": "fourhorsemen",
+        "requireHint": re.compile(
+            r"mythic|cosmic|figura|legions|action figure|figure|warrior|knight|ogre|skeleton",
+            re.I,
+        ),
+    },
 ]
 
 SKIP_TYPE = re.compile(
@@ -121,7 +131,7 @@ FIGURE_HINT = re.compile(
     re.I,
 )
 SKIP_TITLE = re.compile(
-    r"\b(poster|lithograph|print only|t-?shirt|hoodie|mug|pin set|enamel pin|"
+    r"\b(posters?|lithograph|print only|t-?shirt|hoodie|mug|pin set|enamel pin|"
     r"blind box flat|gift card|digital download|nendoroid|pop up parade|"
     r"scale figure|non-scale figure)\b",
     re.I,
@@ -245,6 +255,24 @@ def is_figure_like(p: dict, source: dict) -> bool:
         if re.search(r"\b(t-?shirt|hoodie|mug|poster|apparel|pin)\b", blob, re.I):
             return False
         return True
+    # Store Horsemen: titles are often character-only; product_type is 6"/8"/9"
+    if source["id"] == "store-horsemen":
+        vendor = str(p.get("vendor") or "")
+        if re.search(
+            r"\b(posters?|screen\s*printed|skateboard|mug|gift.?card|sticker|tumbler|mouse\s*pad|pin\b|book\b|cd\b|dvd\b|t-?shirt)\b",
+            blob,
+            re.I,
+        ):
+            return False
+        if re.search(r"office supplies", ptype, re.I):
+            return False
+        if re.search(r'^\s*\d+(?:\.\d+)?"\s*$', ptype) or re.search(
+            r"standard figure|animal", ptype, re.I
+        ):
+            return True
+        if re.search(r"mythic|cosmic|figura|legions|horsemen", f"{blob} {vendor}", re.I):
+            return True
+        return False
     # shop.dc.com: AF only (skip merch/statues/funko/plush)
     if source["id"] == "shop-dc":
         if re.search(
@@ -260,7 +288,7 @@ def is_figure_like(p: dict, source: dict) -> bool:
         return False
     if FIGURE_HINT.search(blob) or re.search(r"figures?", ptype, re.I):
         return True
-    if source["company"] in {"bossfight", "loyalsubjects", "super7", "hiya", "premiumdna", "valaverse", "neca", "blokees", "blitzway", "exo6", "starace", "damtoys", "storm"}:
+    if source["company"] in {"bossfight", "loyalsubjects", "super7", "hiya", "premiumdna", "valaverse", "neca", "blokees", "blitzway", "exo6", "starace", "damtoys", "storm", "fourhorsemen"}:
         return True
     return False
 
