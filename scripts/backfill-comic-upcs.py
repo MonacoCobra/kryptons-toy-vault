@@ -1163,6 +1163,10 @@ def main() -> int:
                     return cached
                 if want in issues:
                     return cached
+                # Rich list already fetched — a missing issue number will not appear by
+                # re-paginating (avoids Detective Comics / ASM burning hours per miss).
+                if rich:
+                    return cached
             # fall through to refresh issue list if we need a missing issue / full list
         if not time_left():
             return cached
