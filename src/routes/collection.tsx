@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { formatDate, usd } from "@/lib/format";
-import { useLiveComics, useLiveFigures } from "@/lib/live-store";
+import { useFigureExtras, useLiveComics } from "@/lib/live-store";
 import { comicEstimate, figureMarket } from "@/lib/market";
 import { useVault } from "@/lib/store";
 import { summarizeVault } from "@/lib/vault-math";
@@ -18,7 +18,7 @@ export const Route = createFileRoute("/collection")({ component: CollectionPage 
 function CollectionPage() {
   const ownedFigures = useVault((s) => s.ownedFigures);
   const ownedComics = useVault((s) => s.ownedComics);
-  const liveFigures = useLiveFigures();
+  const liveFigures = useFigureExtras();
   const liveComics = useLiveComics();
   const clearVault = useVault((s) => s.clearVault);
   const [tab, setTab] = useState<string | null>(null);

@@ -5,7 +5,7 @@ import { ComicCover } from "@/components/comic-cover";
 import { FigureArt } from "@/components/figure-art";
 import { Button } from "@/components/ui/button";
 import { usd } from "@/lib/format";
-import { useLiveComics, useLiveFigures } from "@/lib/live-store";
+import { useFigureExtras, useLiveComics } from "@/lib/live-store";
 import { comicEstimate, figureMarket } from "@/lib/market";
 import { useVault } from "@/lib/store";
 
@@ -14,7 +14,7 @@ export const Route = createFileRoute("/wishlist")({ component: WishlistPage });
 function WishlistPage() {
   const wantedFigures = useVault((s) => s.wantedFigures);
   const wantedComics = useVault((s) => s.wantedComics);
-  const liveFigures = useLiveFigures();
+  const liveFigures = useFigureExtras();
   const liveComics = useLiveComics();
   const toggleWantFigure = useVault((s) => s.toggleWantFigure);
   const toggleWantComic = useVault((s) => s.toggleWantComic);

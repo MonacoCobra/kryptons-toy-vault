@@ -1,7 +1,8 @@
-import { createContext, createElement, useContext, useEffect, useLayoutEffect, type ReactNode } from "react";
+import { createContext, createElement, useContext, useEffect, useLayoutEffect, useMemo, type ReactNode } from "react";
 import { create } from "zustand";
 import type { CatalogComic, CatalogFigure, WeeklyDrop } from "@/lib/types";
 import { getComicLibrary, type ComicLibrary } from "@/lib/comic-catalog";
+import { getFigureLibrary, type FigureLibrary } from "@/lib/figure-catalog";
 import { getWeeklyDrop } from "@/lib/weekly-drop";
 
 type LiveState = {
@@ -14,6 +15,12 @@ type ComicLibState = {
   library: ComicLibrary | null;
   loading: boolean;
   ensure: (extras?: CatalogComic[], force?: boolean) => Promise<void>;
+};
+
+type FigureLibState = {
+  library: FigureLibrary | null;
+  loading: boolean;
+  ensure: (extras?: CatalogFigure[], force?: boolean) => Promise<void>;
 };
 
 const EMPTY_COMICS: CatalogComic[] = [];
@@ -48,6 +55,22 @@ export const useComicLib = create<ComicLibState>((set, get) => ({
     set({ loading: true });
     try {
       const library = await getComicLibrary({ data: { extras } });
+      set({ library, loading: false });
+    } catch {
+      set({ loading: false });
+    }
+  },
+}));
+
+export const useFigureLib = create<FigureLibState>((set, get) => ({
+  library: null,
+  loading: false,
+  ensure: async (extras = [], force = false) => {
+    if (!force && get().library) return;
+    if (get().loading) return;
+    set({ loading: true });
+    try {
+      const library = await getFigureLibrary({ data: { extras } });
       set({ library, loading: false });
     } catch {
       set({ loading: false });
@@ -107,6 +130,34 @@ export function useEnsureComicLibrary(extras: CatalogComic[]) {
   const ensure = useComicLib((s) => s.ensure);
   const library = useComicLib((s) => s.library);
   const extrasKey = extras.map((c) => c.id).join(",");
+  useEffect(() => {
+    void ensure(extras, false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- extrasKey captures content
+  }, [ensure, extrasKey]);
+  return library;
+}
+
+/** Live SKU overlay rows from figure_catalog (permanent archive without republish). */
+export function useOverlayFigures(): CatalogFigure[] {
+  const library = useFigureLib((s) => s.library);
+  return library?.overlay ?? EMPTY_FIGURES;
+}
+
+/** Weekly drop figures + live SKU overlay for mergeFigures / figureById. */
+export function useFigureExtras(): CatalogFigure[] {
+  const live = useLiveFigures();
+  const overlay = useOverlayFigures();
+  return useMemo(() => {
+    if (!overlay.length) return live;
+    if (!live.length) return overlay;
+    return [...overlay, ...live];
+  }, [overlay, live]);
+}
+
+export function useEnsureFigureLibrary(extras: CatalogFigure[] = []) {
+  const ensure = useFigureLib((s) => s.ensure);
+  const library = useFigureLib((s) => s.library);
+  const extrasKey = extras.map((f) => f.id).join(",");
   useEffect(() => {
     void ensure(extras, false);
     // eslint-disable-next-line react-hooks/exhaustive-deps -- extrasKey captures content

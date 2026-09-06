@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { usd } from "@/lib/format";
-import { useLiveFigures } from "@/lib/live-store";
+import { useEnsureFigureLibrary, useFigureExtras, useLiveFigures } from "@/lib/live-store";
 import { figureMarket } from "@/lib/market";
 import { useVault } from "@/lib/store";
 import type { CatalogFigure, CompanyId } from "@/lib/types";
@@ -60,7 +60,9 @@ function FiguresPage() {
   const navigate = Route.useNavigate();
   const owned = useVault((s) => s.ownedFigures);
   const wanted = useVault((s) => s.wantedFigures);
-  const extras = useLiveFigures();
+  const live = useLiveFigures();
+  useEnsureFigureLibrary(live);
+  const extras = useFigureExtras();
   const [adding, setAdding] = useState<CatalogFigure | null>(null);
 
   const catalog = useMemo(() => mergeFigures(extras), [extras]);

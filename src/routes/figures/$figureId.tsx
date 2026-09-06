@@ -9,7 +9,7 @@ import { MarketEstimate } from "@/components/market-estimate";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { formatDate, usd } from "@/lib/format";
-import { useLiveDrop, useLiveFigures } from "@/lib/live-store";
+import { useEnsureFigureLibrary, useFigureExtras, useFigureLib, useLiveDrop, useLiveFigures } from "@/lib/live-store";
 import { figureHistory, figureMarket } from "@/lib/market";
 import { CONDITIONS, useVault } from "@/lib/store";
 
@@ -19,12 +19,15 @@ export const Route = createFileRoute("/figures/$figureId")({
 
 function FigureDetail() {
   const { figureId } = Route.useParams();
-  const extras = useLiveFigures();
-  const loading = useLiveDrop((s) => s.loading);
+  const live = useLiveFigures();
+  useEnsureFigureLibrary(live);
+  const extras = useFigureExtras();
+  const loadingDrop = useLiveDrop((s) => s.loading);
+  const loadingLib = useFigureLib((s) => s.loading);
   const figure = figureById(figureId, extras);
   if (!figure) {
-    if (figureId.startsWith("live-") && loading) {
-      return <p className="py-16 text-center text-sm text-muted">Loading this week's drop…</p>;
+    if ((figureId.startsWith("live-") || figureId.startsWith("af-")) && (loadingDrop || loadingLib)) {
+      return <p className="py-16 text-center text-sm text-muted">Loading figure catalog…</p>;
     }
     throw notFound();
   }

@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Activity, BookOpen, Camera, Package, Vault, Youtube } from "lucide-react";
 import { PulseNotice } from "@/components/pulse-notice";
-import { useEnsureLiveDrop } from "@/lib/live-store";
+import { useEnsureFigureLibrary, useEnsureLiveDrop } from "@/lib/live-store";
 import { cn } from "@/lib/utils";
 
 const YOUTUBE_URL = "https://youtube.com/@kryptonstoyvault";
@@ -24,6 +24,7 @@ const NAV: {
 export function AppShell({ children }: { children: ReactNode }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   useEnsureLiveDrop();
+  useEnsureFigureLibrary();
 
   return (
     <div className="min-h-dvh bg-bg text-fg">

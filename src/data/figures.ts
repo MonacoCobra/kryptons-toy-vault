@@ -545,13 +545,29 @@ function archiveToFigure(r: ArchiveRow): CatalogFigure {
   };
 }
 
+function normSku(sku: string | undefined): string | undefined {
+  const s = (sku ?? "").trim();
+  return s ? s.toLowerCase() : undefined;
+}
+
+/** Dedup preference: sku → id → name|subtitle|line|company. */
 function dedupeAppend(base: CatalogFigure[], extra: CatalogFigure[]): CatalogFigure[] {
-  const ids = new Set(base.map((f) => f.id));
-  const keys = new Set(base.map((f) => `${f.name}|${f.subtitle}|${f.line}|${f.company}`.toLowerCase()));
+  const skus = new Set<string>();
+  const ids = new Set<string>();
+  const keys = new Set<string>();
+  for (const f of base) {
+    ids.add(f.id);
+    keys.add(`${f.name}|${f.subtitle}|${f.line}|${f.company}`.toLowerCase());
+    const s = normSku(f.sku);
+    if (s) skus.add(s);
+  }
   const out = [...base];
   for (const f of extra) {
     const k = `${f.name}|${f.subtitle}|${f.line}|${f.company}`.toLowerCase();
+    const s = normSku(f.sku);
+    if (s && skus.has(s)) continue;
     if (ids.has(f.id) || keys.has(k)) continue;
+    if (s) skus.add(s);
     ids.add(f.id);
     keys.add(k);
     out.push(f);
@@ -583,15 +599,42 @@ function figureKey(f: { name: string; subtitle: string; line: string; company: s
   return `${f.name}|${f.subtitle}|${f.line}|${f.company}`.toLowerCase();
 }
 
+/**
+ * Merge live extras (weekly drop + SKU overlay) on top of baked FIGURES.
+ * Dedup preference: sku → id → name|subtitle|line|company.
+ */
 export function mergeFigures(extras: CatalogFigure[] = []): CatalogFigure[] {
   if (!extras.length) return FIGURES;
-  const seen = new Set(FIGURES.map(figureKey));
-  const add = extras.filter((f) => !seen.has(figureKey(f)));
+  const skus = new Set<string>();
+  const ids = new Set<string>();
+  const keys = new Set<string>();
+  for (const f of FIGURES) {
+    ids.add(f.id);
+    keys.add(figureKey(f));
+    const s = normSku(f.sku);
+    if (s) skus.add(s);
+  }
+  const add: CatalogFigure[] = [];
+  for (const f of extras) {
+    const s = normSku(f.sku);
+    if (s && skus.has(s)) continue;
+    if (ids.has(f.id)) continue;
+    if (keys.has(figureKey(f))) continue;
+    add.push(f);
+    if (s) skus.add(s);
+    ids.add(f.id);
+    keys.add(figureKey(f));
+  }
   return add.length ? [...FIGURES, ...add] : FIGURES;
 }
 
 export function figureById(id: string, extras: CatalogFigure[] = []): CatalogFigure | undefined {
-  return FIGURE_BY_ID[id] ?? extras.find((f) => f.id === id);
+  if (FIGURE_BY_ID[id]) return FIGURE_BY_ID[id];
+  const byId = extras.find((f) => f.id === id);
+  if (byId) return byId;
+  const q = id.trim().toLowerCase();
+  if (!q) return undefined;
+  return extras.find((f) => normSku(f.sku) === q);
 }
 
 export function searchFigures(query: string, extras: CatalogFigure[] = []): CatalogFigure[] {

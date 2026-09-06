@@ -161,6 +161,8 @@ export type CatalogFigure = {
   exclusive?: string;
   /** Official storefront / retailer product image (never AI). */
   imageUrl?: string;
+  /** Provenance for live overlay / oneshot rows (e.g. bbts-monitor, shopify). */
+  source?: string;
   demand: number;
   tags: string[];
 };
