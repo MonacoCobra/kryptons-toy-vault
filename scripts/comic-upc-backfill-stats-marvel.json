@@ -1,124 +1,12 @@
 {
-  "attempted": 279,
+  "attempted": 295,
   "beforeCovers": 145,
   "beforeUpc": 88,
-  "coverUpdated": 558,
-  "coversFromSeriesList": 279,
+  "coverUpdated": 590,
+  "coversFromSeriesList": 295,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "mv-asm-2018-88",
-      "issue": "88",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-87",
-      "issue": "87",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-86",
-      "issue": "86",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-85",
-      "issue": "85",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-84",
-      "issue": "84",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-83",
-      "issue": "83",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-82",
-      "issue": "82",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-81",
-      "issue": "81",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-80",
-      "issue": "80",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-79",
-      "issue": "79",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-78",
-      "issue": "78",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-77",
-      "issue": "77",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-76",
-      "issue": "76",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-75",
-      "issue": "75",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-74",
-      "issue": "74",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "mv-asm-2018-73",
-      "issue": "73",
-      "series": "Amazing Spider-Man (2018)",
-      "seriesPick": "100043",
-      "status": "locg_no_upc"
-    },
     {
       "id": "mv-asm-2018-72",
       "issue": "72",
@@ -568,17 +456,140 @@
       "series": "Amazing Spider-Man (2018)",
       "seriesPick": "100043",
       "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-6",
+      "issue": "6",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-5",
+      "issue": "5",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-4",
+      "issue": "4",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-3",
+      "issue": "3",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-2",
+      "issue": "2",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-ultimatessm2000-160",
+      "issue": "160",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "111591",
+      "status": "locg_upc",
+      "upc": "75960607496916011"
+    },
+    {
+      "id": "mv-ultimatessm2000-159",
+      "issue": "159",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "111591",
+      "status": "locg_upc",
+      "upc": "75960607496915911"
+    },
+    {
+      "id": "mv-ultimatessm2000-158",
+      "issue": "158",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "111591",
+      "status": "locg_upc",
+      "upc": "75960607496915811"
+    },
+    {
+      "id": "mv-ultimatessm2000-157",
+      "issue": "157",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "111591",
+      "status": "locg_upc",
+      "upc": "75960607496915711"
+    },
+    {
+      "id": "mv-ultimatessm2000-156",
+      "issue": "156",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "111591",
+      "status": "locg_upc",
+      "upc": "75960607496915611"
+    },
+    {
+      "id": "mv-ultimatessm2000-155",
+      "issue": "155",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "111591",
+      "status": "locg_upc",
+      "upc": "75960607496915511"
+    },
+    {
+      "id": "mv-ultimatessm2000-154",
+      "issue": "154",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "111591",
+      "status": "locg_upc",
+      "upc": "75960607496915411"
+    },
+    {
+      "id": "mv-ultimatessm2000-153",
+      "issue": "153",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "111591",
+      "status": "locg_upc",
+      "upc": "75960607496915311"
+    },
+    {
+      "id": "mv-ultimatessm2000-152",
+      "issue": "152",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "111591",
+      "status": "locg_upc",
+      "upc": "75960607496915211"
+    },
+    {
+      "id": "mv-ultimatessm2000-151",
+      "issue": "151",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "111591",
+      "status": "locg_upc",
+      "upc": "75960607496915111"
+    },
+    {
+      "id": "mv-ultimatessm2000-150",
+      "issue": "150",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "111591",
+      "status": "locg_upc",
+      "upc": "75960607496915011"
     }
   ],
   "errors": 0,
-  "locgHits": 279,
-  "locgNoUpc": 83,
+  "locgHits": 295,
+  "locgNoUpc": 88,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
   "seriesBatch": true,
-  "seriesResolved": 7,
+  "seriesResolved": 9,
   "skippedExisting": 0,
   "startedAt": "2026-09-06T16:47:24Z",
   "timedOut": false,
-  "upcFilled": 196
+  "upcFilled": 207
 }
