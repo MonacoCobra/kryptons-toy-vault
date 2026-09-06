@@ -1,204 +1,12 @@
 {
-  "attempted": 176,
+  "attempted": 200,
   "beforeCovers": 135,
   "beforeUpc": 86,
-  "coverUpdated": 352,
-  "coversFromSeriesList": 176,
+  "coverUpdated": 400,
+  "coversFromSeriesList": 200,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "joe-arah-idw-169",
-      "issue": "169",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148816911"
-    },
-    {
-      "id": "joe-arah-idw-168",
-      "issue": "168",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148816811"
-    },
-    {
-      "id": "joe-arah-idw-167",
-      "issue": "167",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148816711"
-    },
-    {
-      "id": "joe-arah-idw-166",
-      "issue": "166",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148816611"
-    },
-    {
-      "id": "im-spawn-350",
-      "issue": "350",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214735011"
-    },
-    {
-      "id": "im-spawn-349",
-      "issue": "349",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214734911"
-    },
-    {
-      "id": "im-spawn-348",
-      "issue": "348",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214734811"
-    },
-    {
-      "id": "im-spawn-347",
-      "issue": "347",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214734711"
-    },
-    {
-      "id": "im-spawn-346",
-      "issue": "346",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214734611"
-    },
-    {
-      "id": "im-spawn-345",
-      "issue": "345",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214734511"
-    },
-    {
-      "id": "im-spawn-344",
-      "issue": "344",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214734411"
-    },
-    {
-      "id": "im-spawn-343",
-      "issue": "343",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214734311"
-    },
-    {
-      "id": "im-spawn-342",
-      "issue": "342",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214734211"
-    },
-    {
-      "id": "im-spawn-341",
-      "issue": "341",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214734111"
-    },
-    {
-      "id": "im-spawn-340",
-      "issue": "340",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214734011"
-    },
-    {
-      "id": "im-spawn-339",
-      "issue": "339",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214733911"
-    },
-    {
-      "id": "im-spawn-338",
-      "issue": "338",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214733811"
-    },
-    {
-      "id": "im-spawn-337",
-      "issue": "337",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214733711"
-    },
-    {
-      "id": "im-spawn-336",
-      "issue": "336",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214733611"
-    },
-    {
-      "id": "im-spawn-335",
-      "issue": "335",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214733511"
-    },
-    {
-      "id": "im-spawn-334",
-      "issue": "334",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214733411"
-    },
-    {
-      "id": "im-spawn-333",
-      "issue": "333",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214733311"
-    },
-    {
-      "id": "im-spawn-332",
-      "issue": "332",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214733211"
-    },
-    {
-      "id": "im-spawn-331",
-      "issue": "331",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214733111"
-    },
     {
       "id": "im-spawn-330",
       "issue": "330",
@@ -646,10 +454,202 @@
       "seriesPick": "106822",
       "status": "locg_upc",
       "upc": "70985300214727511"
+    },
+    {
+      "id": "im-spawn-274",
+      "issue": "274",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214727411"
+    },
+    {
+      "id": "im-spawn-273",
+      "issue": "273",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214727311"
+    },
+    {
+      "id": "im-spawn-272",
+      "issue": "272",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214727211"
+    },
+    {
+      "id": "im-spawn-271",
+      "issue": "271",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214727111"
+    },
+    {
+      "id": "im-spawn-270",
+      "issue": "270",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214727011"
+    },
+    {
+      "id": "im-spawn-269",
+      "issue": "269",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214726911"
+    },
+    {
+      "id": "im-spawn-268",
+      "issue": "268",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214726811"
+    },
+    {
+      "id": "im-spawn-267",
+      "issue": "267",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214726711"
+    },
+    {
+      "id": "im-spawn-266",
+      "issue": "266",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214726611"
+    },
+    {
+      "id": "im-spawn-265",
+      "issue": "265",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214726511"
+    },
+    {
+      "id": "im-spawn-264",
+      "issue": "264",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214726411"
+    },
+    {
+      "id": "im-spawn-263",
+      "issue": "263",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214726311"
+    },
+    {
+      "id": "im-spawn-262",
+      "issue": "262",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214726211"
+    },
+    {
+      "id": "im-spawn-261",
+      "issue": "261",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214726111"
+    },
+    {
+      "id": "im-spawn-260",
+      "issue": "260",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214726011"
+    },
+    {
+      "id": "im-spawn-259",
+      "issue": "259",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214725911"
+    },
+    {
+      "id": "im-spawn-258",
+      "issue": "258",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214725811"
+    },
+    {
+      "id": "im-spawn-257",
+      "issue": "257",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214725711"
+    },
+    {
+      "id": "im-spawn-256",
+      "issue": "256",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214725611"
+    },
+    {
+      "id": "im-spawn-255",
+      "issue": "255",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214725511"
+    },
+    {
+      "id": "im-spawn-254",
+      "issue": "254",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214725411"
+    },
+    {
+      "id": "im-spawn-253",
+      "issue": "253",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214725311"
+    },
+    {
+      "id": "im-spawn-252",
+      "issue": "252",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214725211"
+    },
+    {
+      "id": "im-spawn-251",
+      "issue": "251",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214725111"
     }
   ],
   "errors": 0,
-  "locgHits": 176,
+  "locgHits": 200,
   "locgNoUpc": 8,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
@@ -658,5 +658,5 @@
   "skippedExisting": 0,
   "startedAt": "2026-09-06T16:42:42Z",
   "timedOut": false,
-  "upcFilled": 168
+  "upcFilled": 192
 }

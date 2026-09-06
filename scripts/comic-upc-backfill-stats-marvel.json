@@ -1,244 +1,12 @@
 {
-  "attempted": 145,
+  "attempted": 174,
   "beforeCovers": 145,
   "beforeUpc": 88,
-  "coverUpdated": 290,
-  "coversFromSeriesList": 145,
+  "coverUpdated": 348,
+  "coversFromSeriesList": 174,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "mv-asm-v1-635",
-      "issue": "635",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716163511"
-    },
-    {
-      "id": "mv-asm-v1-634",
-      "issue": "634",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716163411"
-    },
-    {
-      "id": "mv-asm-v1-633",
-      "issue": "633",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716163311"
-    },
-    {
-      "id": "mv-asm-v1-632",
-      "issue": "632",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716163211"
-    },
-    {
-      "id": "mv-asm-v1-631",
-      "issue": "631",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716163111"
-    },
-    {
-      "id": "mv-asm-v1-630",
-      "issue": "630",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716163011"
-    },
-    {
-      "id": "mv-asm-v1-629",
-      "issue": "629",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716162911"
-    },
-    {
-      "id": "mv-asm-v1-628",
-      "issue": "628",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716162811"
-    },
-    {
-      "id": "mv-asm-v1-627",
-      "issue": "627",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716162711"
-    },
-    {
-      "id": "mv-asm-v1-626",
-      "issue": "626",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716162611"
-    },
-    {
-      "id": "mv-asm-v1-625",
-      "issue": "625",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716162511"
-    },
-    {
-      "id": "mv-asm-v1-624",
-      "issue": "624",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716162411"
-    },
-    {
-      "id": "mv-asm-v1-623",
-      "issue": "623",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716162311"
-    },
-    {
-      "id": "mv-asm-v1-622",
-      "issue": "622",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716162211"
-    },
-    {
-      "id": "mv-asm-v1-621",
-      "issue": "621",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716162111"
-    },
-    {
-      "id": "mv-asm-v1-620",
-      "issue": "620",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716162011"
-    },
-    {
-      "id": "mv-asm-v1-619",
-      "issue": "619",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716161911"
-    },
-    {
-      "id": "mv-asm-v1-618",
-      "issue": "618",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716161811"
-    },
-    {
-      "id": "mv-asm-v1-617",
-      "issue": "617",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716161711"
-    },
-    {
-      "id": "mv-asm-v1-616",
-      "issue": "616",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716161611"
-    },
-    {
-      "id": "mv-asm-v1-615",
-      "issue": "615",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716161511"
-    },
-    {
-      "id": "mv-asm-v1-614",
-      "issue": "614",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716161411"
-    },
-    {
-      "id": "mv-asm-v1-613",
-      "issue": "613",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716161311"
-    },
-    {
-      "id": "mv-asm-v1-612",
-      "issue": "612",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716161211"
-    },
-    {
-      "id": "mv-asm-v1-611",
-      "issue": "611",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716161111"
-    },
-    {
-      "id": "mv-asm-v1-610",
-      "issue": "610",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716161011"
-    },
-    {
-      "id": "mv-asm-v1-609",
-      "issue": "609",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716160911"
-    },
-    {
-      "id": "mv-asm-v1-608",
-      "issue": "608",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716160811"
-    },
-    {
-      "id": "mv-asm-v1-607",
-      "issue": "607",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716160711"
-    },
     {
       "id": "mv-asm-v1-606",
       "issue": "606",
@@ -646,10 +414,242 @@
       "seriesPick": "108806",
       "status": "locg_upc",
       "upc": "75960602461250011"
+    },
+    {
+      "id": "mv-uxm-499",
+      "issue": "499",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461249911"
+    },
+    {
+      "id": "mv-uxm-498",
+      "issue": "498",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461249811"
+    },
+    {
+      "id": "mv-uxm-497",
+      "issue": "497",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461249711"
+    },
+    {
+      "id": "mv-uxm-496",
+      "issue": "496",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461249611"
+    },
+    {
+      "id": "mv-uxm-495",
+      "issue": "495",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461249511"
+    },
+    {
+      "id": "mv-uxm-494",
+      "issue": "494",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461249411"
+    },
+    {
+      "id": "mv-uxm-493",
+      "issue": "493",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461249311"
+    },
+    {
+      "id": "mv-uxm-492",
+      "issue": "492",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461249211"
+    },
+    {
+      "id": "mv-uxm-491",
+      "issue": "491",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461249111"
+    },
+    {
+      "id": "mv-uxm-490",
+      "issue": "490",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461249011"
+    },
+    {
+      "id": "mv-uxm-489",
+      "issue": "489",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461248911"
+    },
+    {
+      "id": "mv-uxm-488",
+      "issue": "488",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461248811"
+    },
+    {
+      "id": "mv-uxm-487",
+      "issue": "487",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461248711"
+    },
+    {
+      "id": "mv-uxm-486",
+      "issue": "486",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461248611"
+    },
+    {
+      "id": "mv-uxm-485",
+      "issue": "485",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461248511"
+    },
+    {
+      "id": "mv-uxm-484",
+      "issue": "484",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461248411"
+    },
+    {
+      "id": "mv-uxm-483",
+      "issue": "483",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461248311"
+    },
+    {
+      "id": "mv-uxm-482",
+      "issue": "482",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461248211"
+    },
+    {
+      "id": "mv-uxm-481",
+      "issue": "481",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461248111"
+    },
+    {
+      "id": "mv-uxm-480",
+      "issue": "480",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461248011"
+    },
+    {
+      "id": "mv-uxm-479",
+      "issue": "479",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461247911"
+    },
+    {
+      "id": "mv-uxm-478",
+      "issue": "478",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "759606024612478111"
+    },
+    {
+      "id": "mv-uxm-477",
+      "issue": "477",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "075960602461247711"
+    },
+    {
+      "id": "mv-uxm-476",
+      "issue": "476",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461247611"
+    },
+    {
+      "id": "mv-uxm-475",
+      "issue": "475",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461247511"
+    },
+    {
+      "id": "mv-uxm-474",
+      "issue": "474",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461247411"
+    },
+    {
+      "id": "mv-uxm-473",
+      "issue": "473",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461247311"
+    },
+    {
+      "id": "mv-uxm-472",
+      "issue": "472",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461247211"
+    },
+    {
+      "id": "mv-uxm-471",
+      "issue": "471",
+      "series": "The Uncanny X-Men",
+      "seriesPick": "108806",
+      "status": "locg_upc",
+      "upc": "75960602461247111"
     }
   ],
   "errors": 0,
-  "locgHits": 145,
+  "locgHits": 174,
   "locgNoUpc": 0,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
@@ -658,5 +658,5 @@
   "skippedExisting": 0,
   "startedAt": "2026-09-06T16:47:24Z",
   "timedOut": false,
-  "upcFilled": 145
+  "upcFilled": 174
 }
