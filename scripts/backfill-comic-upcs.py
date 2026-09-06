@@ -183,55 +183,60 @@ def search_locg_series(keyword: str) -> list[dict]:
     return hits
 
 
-def pick_series(hits: list[dict], series: str, publisher: str) -> dict | None:
+def score_series_hit(h: dict, series: str, publisher: str) -> int:
     want_s = series.lower().split("(")[0].strip()
     want_p = re.sub(r"[^a-z0-9]+", " ", publisher.lower()).strip()
-
-    def score(h: dict) -> int:
-        name = h["name"].lower()
-        pub = re.sub(r"[^a-z0-9]+", " ", h["publisher"].lower()).strip()
-        s = 0
-        if name == want_s:
-            s += 8
-        elif want_s in name or name in want_s:
+    name = h["name"].lower()
+    pub = re.sub(r"[^a-z0-9]+", " ", h["publisher"].lower()).strip()
+    s = 0
+    if name == want_s:
+        s += 8
+    elif want_s in name or name in want_s:
+        s += 4
+    if pub == want_p:
+        s += 6
+    elif want_p in pub or pub in want_p:
+        s += 3
+    aliases = (
+        ({"dc", "dc comics", "dc entertainment"}, want_p, pub),
+        ({"marvel", "marvel comics"}, want_p, pub),
+        ({"image", "image comics", "skybound", "skybound image"}, want_p, pub),
+        ({"boom", "boom studios"}, want_p, pub),
+        ({"vertigo", "dc comics vertigo", "dc vertigo"}, want_p, pub),
+        ({"dynamite", "dynamite entertainment"}, want_p, pub),
+        ({"idw", "idw publishing"}, want_p, pub),
+        ({"dark horse", "dark horse comics"}, want_p, pub),
+        ({"valiant", "valiant entertainment"}, want_p, pub),
+    )
+    for group, w, g in aliases:
+        if any(x in w for x in group) and any(x in g for x in group):
             s += 4
-        if pub == want_p:
-            s += 6
-        elif want_p in pub or pub in want_p:
-            s += 3
-        # Soft publisher aliases
-        aliases = (
-            ({"dc", "dc comics", "dc entertainment"}, want_p, pub),
-            ({"marvel", "marvel comics"}, want_p, pub),
-            ({"image", "image comics", "skybound", "skybound image"}, want_p, pub),
-            ({"boom", "boom studios"}, want_p, pub),
-            ({"vertigo", "dc comics vertigo", "dc vertigo"}, want_p, pub),
-            ({"dynamite", "dynamite entertainment"}, want_p, pub),
-            ({"idw", "idw publishing"}, want_p, pub),
-            ({"dark horse", "dark horse comics"}, want_p, pub),
-            ({"valiant", "valiant entertainment"}, want_p, pub),
-        )
-        for group, w, g in aliases:
-            if any(x in w for x in group) and any(x in g for x in group):
-                s += 4
-        if re.search(r"panini|jbc|fomo|marmara|urban comics|other|traducido", h["publisher"], re.I):
-            s -= 6
-        # Prefer matching facsimile / omnibus intent with catalog series name
-        want_fac = bool(re.search(r"\bfacsimile\b", want_s))
-        got_fac = bool(re.search(r"\bfacsimile\b", name))
-        if want_fac != got_fac:
-            s -= 5
-        if re.search(r"\b(omnibus|compendium|absolute edition)\b", name) and not re.search(
-            r"\b(omnibus|compendium|absolute edition)\b", want_s
-        ):
-            s -= 4
-        return s
+    if re.search(r"panini|jbc|fomo|marmara|urban comics|other|traducido|webtoon|boxtree|hoz comics|modern times|simon", h["publisher"], re.I):
+        s -= 6
+    want_fac = bool(re.search(r"\bfacsimile\b", want_s))
+    got_fac = bool(re.search(r"\bfacsimile\b", name))
+    if want_fac != got_fac:
+        s -= 5
+    if re.search(r"\b(omnibus|compendium|absolute edition)\b", name) and not re.search(
+        r"\b(omnibus|compendium|absolute edition)\b", want_s
+    ):
+        s -= 4
+    # Soft demote anniversary / treasury / starring one-shots vs flagship title
+    if re.search(r"\b(treasury|anniversary|starring|vs\.|versus)\b", name) and not re.search(
+        r"\b(treasury|anniversary|starring|vs\.|versus)\b", want_s
+    ):
+        s -= 3
+    return s
 
-    ranked = sorted(((score(h), h) for h in hits), key=lambda x: -x[0])
-    if ranked and ranked[0][0] >= 8:
-        return ranked[0][1]
-    return None
 
+def rank_series_hits(hits: list[dict], series: str, publisher: str) -> list[dict]:
+    ranked = sorted(((score_series_hit(h, series, publisher), h) for h in hits), key=lambda x: -x[0])
+    return [h for sc, h in ranked if sc >= 8]
+
+
+def pick_series(hits: list[dict], series: str, publisher: str) -> dict | None:
+    ranked = rank_series_hits(hits, series, publisher)
+    return ranked[0] if ranked else None
 
 def parse_series_issues(html: str) -> dict[str, dict]:
     """Map issue number → {locgId, slug, title, main, coverUrl, variants[]} for covers.
@@ -1163,66 +1168,105 @@ def main() -> int:
             return cached
         throttle()
         hits = search_locg_series(series)
-        picked = pick_series(hits, series, publisher)
-        if not picked:
+        candidates = rank_series_hits(hits, series, publisher)
+        if not candidates:
             series_cache[ck] = {"seriesId": None, "issues": {}, "failedAt": now_iso()}
             if not args.dry_run:
                 series_cache = save_series_cache_atomic(series_cache)
             return None
-        stats["seriesResolved"] += 1
-        entry = {
-            "seriesId": picked["seriesId"],
-            "name": picked.get("name"),
-            "publisher": picked.get("publisher"),
-            "coverComicId": picked.get("coverComicId"),
-            "issues": dict((cached or {}).get("issues") or {}),
-            "resolvedAt": now_iso(),
-        }
-        # Fast path: issue #1 from series cover comic id
-        if picked.get("coverComicId"):
-            entry["issues"]["1"] = {
-                "locgId": picked["coverComicId"],
-                "slug": "issue",
-                "title": f"{series} #1",
-                "main": True,
-                "coverUrl": locg_cover(picked["coverComicId"], "large"),
-                "variants": list((entry["issues"].get("1") or {}).get("variants") or []),
+        rejected = list((cached or {}).get("rejectedSeriesIds") or [])
+        # Prefer previously-good seriesId first when present among candidates
+        if cached and cached.get("seriesId"):
+            sid0 = str(cached.get("seriesId"))
+            good = [c for c in candidates if str(c.get("seriesId")) == sid0]
+            rest = [c for c in candidates if str(c.get("seriesId")) != sid0]
+            candidates = good + rest
+        # Skip known-thin / wrong volumes unless nothing else left
+        preferred = [c for c in candidates if str(c.get("seriesId")) not in set(rejected)]
+        if preferred:
+            candidates = preferred
+        entry = None
+        for picked in candidates[:8]:
+            if not time_left():
+                break
+            stats["seriesResolved"] += 1
+            trial = {
+                "seriesId": picked["seriesId"],
+                "name": picked.get("name"),
+                "publisher": picked.get("publisher"),
+                "coverComicId": picked.get("coverComicId"),
+                "issues": {},
+                "resolvedAt": now_iso(),
+                "rejectedSeriesIds": rejected,
             }
-        force_list = bool(getattr(args, "refresh_lists", False) or getattr(args, "series_batch", False))
-        need_list = force_list or (want not in ("1", "0", "nn") and want not in entry["issues"])
-        # Also refresh when cache is thin (<3 issues) for known long-runners
-        if not need_list and len(entry["issues"]) < 3 and want not in ("1", "0", "nn"):
-            need_list = True
-        if need_list and time_left():
-            issues = fetch_series_issues(picked["seriesId"], throttle=throttle)
-            # merge without clobbering richer variant lists
-            for iss, ent in issues.items():
-                prev = entry["issues"].get(iss)
-                if not prev:
-                    entry["issues"][iss] = ent
-                    continue
-                variants = list(prev.get("variants") or [])
-                for v in ent.get("variants") or []:
-                    if v.get("locgId") and not any(x.get("locgId") == v["locgId"] for x in variants):
-                        variants.append(v)
-                if ent.get("main") or not prev.get("main"):
-                    merged = {**ent, "variants": variants}
-                    entry["issues"][iss] = merged
-                else:
-                    prev["variants"] = variants
-            # Re-assert #1 cover id preference for main when coverComicId known
+            # Seed #1 from cover when present
             if picked.get("coverComicId"):
-                cur = entry["issues"].get("1") or {}
-                entry["issues"]["1"] = {
+                trial["issues"]["1"] = {
                     "locgId": picked["coverComicId"],
-                    "slug": cur.get("slug") or "issue",
-                    "title": cur.get("title") or f"{series} #1",
+                    "slug": "issue",
+                    "title": f"{series} #1",
                     "main": True,
                     "coverUrl": locg_cover(picked["coverComicId"], "large"),
-                    "variants": list(cur.get("variants") or []),
+                    "variants": [],
                 }
-            entry["listFetchedAt"] = now_iso()
-            entry["listIssueCount"] = len(entry["issues"])
+            force_list = bool(getattr(args, "refresh_lists", False) or getattr(args, "series_batch", False))
+            need_list = force_list or (want not in ("1", "0", "nn") and want not in trial["issues"])
+            if not need_list and len(trial["issues"]) < 3 and want not in ("1", "0", "nn"):
+                need_list = True
+            if need_list and time_left():
+                issues = fetch_series_issues(picked["seriesId"], throttle=throttle)
+                for iss, ent in issues.items():
+                    trial["issues"][iss] = ent
+                if picked.get("coverComicId") and "1" in trial["issues"]:
+                    cur = trial["issues"]["1"]
+                    # keep fetched main; only fill if missing
+                    if not cur.get("locgId"):
+                        trial["issues"]["1"] = {
+                            "locgId": picked["coverComicId"],
+                            "slug": cur.get("slug") or "issue",
+                            "title": cur.get("title") or f"{series} #1",
+                            "main": True,
+                            "coverUrl": locg_cover(picked["coverComicId"], "large"),
+                            "variants": list(cur.get("variants") or []),
+                        }
+                trial["listFetchedAt"] = now_iso()
+                trial["listIssueCount"] = len(trial["issues"])
+            has_want = want in trial["issues"] or (
+                want.isdigit() and str(int(want)) in trial["issues"]
+            )
+            rich = len(trial["issues"]) >= 25
+            thin = len(trial["issues"]) < 5
+            if has_want:
+                entry = trial
+                print(
+                    f"  series pick ok id={picked['seriesId']} issues={len(trial['issues'])} has#{want}"
+                )
+                break
+            if thin or (rich and want not in ("1", "0", "nn") and not has_want):
+                sid = str(picked["seriesId"])
+                if sid not in rejected:
+                    rejected.append(sid)
+                trial["rejectedSeriesIds"] = rejected
+                print(
+                    f"  series pick skip id={picked['seriesId']} issues={len(trial['issues'])} missing#{want}"
+                )
+                # keep best rich entry as fallback even if issue missing (covers still useful)
+                if entry is None or len(trial["issues"]) > len(entry.get("issues") or {}):
+                    entry = trial
+                continue
+            # medium-size list without want — keep as fallback, try next
+            if entry is None or len(trial["issues"]) > len(entry.get("issues") or {}):
+                entry = trial
+            print(
+                f"  series pick try-next id={picked['seriesId']} issues={len(trial['issues'])} missing#{want}"
+            )
+        if not entry:
+            series_cache[ck] = {"seriesId": None, "issues": {}, "failedAt": now_iso(), "rejectedSeriesIds": rejected}
+            if not args.dry_run:
+                series_cache = save_series_cache_atomic(series_cache)
+            return None
+        entry["rejectedSeriesIds"] = rejected
+        # If we landed on a volume that has the issue, clear thin rejects staying attached
         series_cache[ck] = entry
         if not args.dry_run:
             series_cache = save_series_cache_atomic(series_cache)
