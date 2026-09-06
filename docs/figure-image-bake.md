@@ -39,7 +39,9 @@ cd scripts && python3 bake-figure-images.py --fetch
 - First significant name token must appear; multi-token subtitles need ≥1 hit.
 - Multi-token names need more than a lone shared honorific; color antonyms; hyphen-prefix only.
 - Word-boundary token hits (no "he" ⊂ "the"); MOTU trailing-character peel.
-- One product image assigns to at most one figure (best score wins).
+- One product image URL assigns to at most one figure id (best score wins; variants may not share a CDN shot).
+- Prefer product titles that include distinguishing subtitle/wave tokens (e.g. Hush, Knightfall, wave numbers).
+- After rematch, any remaining shared `imageUrl` keeps the best-scoring row; others clear back to placeholder.
 - Unmatched rows stay as CSS placeholders.
 
 ## Honest leftovers
@@ -72,3 +74,18 @@ Solaris Japan, JB Hi-Fi, ActionFiguresAndComics, Japan Figure) + Storm Collectib
 Store Horsemen for high-confidence Hasbro / Mattel MOTU / Mezco One:12 / MAFEX /
 SHFiguarts / Playmates / JAKKS / Toy Biz / classic DC Direct / Four Horsemen / Kaiyodo /
 Loyal Subjects BST matches. Leftovers without clear title cues stay placeholders.
+
+## Rematch (strict 1:1)
+
+```bash
+cd /workspace/collection-app/scripts
+# Reuse cached product-image-index.json; clear prior image-bake overlays; re-assign 1:1
+python3 bake-figure-images.py --cache-only --rematch
+```
+
+Near-duplicate densify rows (same character + filler Wave/Classic subtitle):
+
+```bash
+python3 dedupe-figure-oneshot.py          # write
+python3 dedupe-figure-oneshot.py --dry-run
+```

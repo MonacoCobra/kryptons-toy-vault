@@ -848,6 +848,9 @@ def score_pair(fig: dict, prod: dict) -> float:
         and not re.match(r"^(?:w|wave)?\d+[a-z]?$", t)
         and not re.match(r"^\d{4}$", t)
     ]
+    # Distinguishing subtitle/wave tokens (Hush, Knightfall, wave numbers) — prefer title hits
+    wave_toks = [t for t in raw_fs if re.match(r"^(?:w|wave)?\d+[a-z]?$", t)]
+    dist_toks = list(dict.fromkeys(fs + wave_toks))
     if fs:
         hits = sum(1 for t in fs if t in char or t in prod["_blob"])
         sub_score = 5.0 * hits / max(1, len(fs))
@@ -856,6 +859,15 @@ def score_pair(fig: dict, prod: dict) -> float:
             return -1.0
     else:
         sub_score = 1.5 if raw_fs else 1.0
+    if dist_toks:
+        title_hits = sum(1 for t in dist_toks if t in prod["_title"] or t in prod["_blob"])
+        sub_score += 6.0 * title_hits / max(1, len(dist_toks))
+        # Strong bonus when every distinguishing token appears in the product title
+        if title_hits == len(dist_toks) and fs:
+            sub_score += 4.0
+        # Soft penalty: figure has specific subtitle tokens but product title misses all of them
+        if fs and title_hits == 0:
+            sub_score -= 2.5
 
     line_score = 4.0 if req and req.search(prod["_blob"]) else 1.0
     if re.search(r"\b(accessories|empty box|backdrop|stand only)\b", prod["_blob"]):
@@ -1180,14 +1192,99 @@ def parse_seed_ids_needing_images() -> list[dict]:
     return []
 
 
+def heuristic_keep_score(fig: dict) -> float:
+    """Fallback ranking when no index product is available for a shared URL."""
+    sc = 0.0
+    src = str(fig.get("source") or "")
+    if src == "shopify":
+        sc += 80
+    elif src == "curated":
+        sc += 40
+    elif "densify" in src:
+        sc -= 15
+    if "image-bake" not in (fig.get("tags") or []) and fig.get("imageUrl"):
+        sc += 25  # native/shopify bake-less URL
+    sub = (fig.get("subtitle") or "").strip()
+    if sub:
+        st = [t for t in tokens(sub) if t not in SUBTITLE_NOISE and t not in WEAK]
+        sc += min(40, 4 * len(st) + len(sub) / 4)
+        if re.search(r"\b(hush|knightfall|year one|long halloween|flashpoint|hush blue)\b", sub, re.I):
+            sc += 12
+    else:
+        sc -= 5
+    rd = str(fig.get("releaseDate") or "9999")[:4]
+    try:
+        sc += max(0, 2100 - int(rd)) / 10
+    except ValueError:
+        pass
+    return sc
+
+
+def enforce_unique_image_urls(rows: list[dict], index: list[dict], urls: dict[str, str]) -> int:
+    """If any imageUrl is on multiple oneshot rows, keep the best-scoring match and clear others."""
+    by_url: dict[str, list[dict]] = defaultdict(list)
+    for r in rows:
+        u = r.get("imageUrl")
+        if u:
+            by_url[u].append(r)
+    # Index products by imageUrl for scoring
+    prod_by_url: dict[str, list[dict]] = defaultdict(list)
+    for p in index:
+        u = p.get("imageUrl")
+        if u:
+            prod_by_url[u].append(p)
+
+    cleared = 0
+    for url, group in by_url.items():
+        if len(group) < 2:
+            continue
+        prods = prod_by_url.get(url) or []
+        ranked: list[tuple[float, dict]] = []
+        for fig in group:
+            best = -1.0
+            for p in prods:
+                if p.get("company") and p["company"] != fig["company"]:
+                    continue
+                s = score_pair(fig, p)
+                if s > best:
+                    best = s
+            if best < 0:
+                best = heuristic_keep_score(fig)
+            else:
+                # Tie-break with heuristic so shopify / specific subtitle wins close scores
+                best += heuristic_keep_score(fig) / 1000.0
+            ranked.append((best, fig))
+        ranked.sort(key=lambda x: x[0], reverse=True)
+        # Keep winner; clear losers
+        for _, fig in ranked[1:]:
+            fig.pop("imageUrl", None)
+            tags = [t for t in (fig.get("tags") or []) if t != "image-bake"]
+            fig["tags"] = tags
+            urls.pop(fig["id"], None)
+            cleared += 1
+    return cleared
+
+
+
 def main() -> None:
     fetch_live = "--fetch" in sys.argv or "--live" in sys.argv
     use_cache = "--cache-only" in sys.argv
+    rematch = "--rematch" in sys.argv
     min_score = 16.0
 
     rows = json.loads(ARCHIVE_JSON.read_text())
     before_with = sum(1 for r in rows if r.get("imageUrl"))
     before_total = len(rows)
+    if rematch:
+        # Drop prior image-bake overlays so we can re-assign under strict 1:1
+        dropped = 0
+        for r in rows:
+            tags = list(r.get("tags") or [])
+            if "image-bake" in tags and r.get("imageUrl"):
+                r.pop("imageUrl", None)
+                r["tags"] = [t for t in tags if t != "image-bake"]
+                dropped += 1
+        print(f"=== Rematch: cleared {dropped} image-bake overlays ===")
     need = [r for r in rows if not r.get("imageUrl")]
 
     if use_cache and INDEX_JSON.exists():
@@ -1234,19 +1331,17 @@ def main() -> None:
 
     cands.sort(reverse=True, key=lambda x: x[0])
     used_fig: set[str] = set()
-    # Product may paint multiple variants of the SAME character name (shared CDN shot).
-    # Still block cross-character reuse of one product.
-    prod_claimed_name: dict[str, str] = {}
+    # Strict 1:1 — one CDN imageUrl assigns to at most ONE figure id (no variant sharing).
+    used_urls: set[str] = {r["imageUrl"] for r in rows if r.get("imageUrl")}
     finals: list[tuple[float, dict, dict]] = []
     for s, fid, pid, f, p in cands:
         if fid in used_fig:
             continue
-        claim = norm(figure_match_name(f["name"]))
-        prev = prod_claimed_name.get(pid)
-        if prev is not None and prev != claim:
+        url = p.get("imageUrl") or ""
+        if not url or url in used_urls:
             continue
         used_fig.add(fid)
-        prod_claimed_name[pid] = claim
+        used_urls.add(url)
         finals.append((s, f, p))
 
     # Persist URL map (merge with prior)
@@ -1267,10 +1362,62 @@ def main() -> None:
             row["tags"] = tags
             patched += 1
 
+    # Rematch / enforce: any remaining shared imageUrl → keep best-scoring figure, clear others
+    cleared_shared = enforce_unique_image_urls(rows, index, urls)
+    if cleared_shared:
+        print(f"cleared shared imageUrl from {cleared_shared} rows (strict 1:1)")
+
+    # After clears, try one more gap-fill pass with leftover unused product URLs
+    need2 = [r for r in rows if not r.get("imageUrl")]
+    used_urls = {r["imageUrl"] for r in rows if r.get("imageUrl")}
+    used_fig = {r["id"] for r in rows if r.get("imageUrl")}
+    cands2: list[tuple[float, str, str, dict, dict]] = []
+    for fig in need2:
+        best = None
+        best_s = 0.0
+        for p in by_co.get(fig["company"], []):
+            s = score_pair(fig, p)
+            if s > best_s:
+                best_s, best = s, p
+        if best and best_s >= min_score:
+            cands2.append((best_s, fig["id"], best["id"], fig, best))
+    cands2.sort(reverse=True, key=lambda x: x[0])
+    extra_finals: list[tuple[float, dict, dict]] = []
+    for s, fid, pid, f, p in cands2:
+        if fid in used_fig:
+            continue
+        url = p.get("imageUrl") or ""
+        if not url or url in used_urls:
+            continue
+        used_fig.add(fid)
+        used_urls.add(url)
+        extra_finals.append((s, f, p))
+        urls[fid] = url
+        row = by_id.get(fid)
+        if row is not None and not row.get("imageUrl"):
+            row["imageUrl"] = url
+            tags = list(row.get("tags") or [])
+            if "image-bake" not in tags:
+                tags.append("image-bake")
+            row["tags"] = tags
+            patched += 1
+    if extra_finals:
+        finals.extend(extra_finals)
+        print(f"gap-fill after unique pass: +{len(extra_finals)}")
+
+    cleared_shared2 = enforce_unique_image_urls(rows, index, urls)
+    if cleared_shared2:
+        print(f"second unique pass cleared {cleared_shared2} rows")
+        cleared_shared += cleared_shared2
+
+    # Rebuild url map from oneshot (source of truth) + keep orphans only if still on a row
+    urls = {r["id"]: r["imageUrl"] for r in rows if r.get("imageUrl")}
+    # Merge any prior map entries that still match a row without imageUrl? No — oneshot wins.
     URLS_JSON.write_text(json.dumps(urls, indent=2, sort_keys=True) + "\n")
     ARCHIVE_JSON.write_text(json.dumps(rows, indent=2) + "\n")
 
     after_with = sum(1 for r in rows if r.get("imageUrl"))
+    shared_after = sum(1 for u, c in Counter(r["imageUrl"] for r in rows if r.get("imageUrl")).items() if c >= 2)
     stats = {
         "bakedAt": datetime.now(timezone.utc).isoformat(),
         "day": date.today().isoformat(),
@@ -1282,6 +1429,8 @@ def main() -> None:
         "matched": len(finals),
         "candidatesAboveThreshold": len(cands),
         "patchedOneshot": patched,
+        "clearedSharedImageUrl": cleared_shared,
+        "sharedUrlsAfter": shared_after,
         "urlMapSize": len(urls),
         "byCompany": dict(Counter(f["company"] for _, f, _ in finals).most_common()),
         "safeguards": [
@@ -1291,7 +1440,9 @@ def main() -> None:
             "character-focused name match (subtitle for ULTIMATES/ReAction headers)",
             "first significant name token required",
             "multi-token subtitle requires ≥1 hit",
-            "one product image → one character name (variants may share CDN shot)",
+            "prefer product title hits on distinguishing subtitle/wave tokens",
+            "one product image URL → at most one figure id (no variant CDN sharing)",
+            "after rematch: shared URLs keep best score only; others cleared to placeholder",
             "Mattel DC Premier not used for unrelated curated lines",
             "retailer feeds (ToyArena/CmdStore/Planet/CoolToyDen/AFCollector/Legendz/shop.mattel/Solaris/JBHiFi/AFAC/JapanFigure) vendor→company high-confidence only",
             "Storm HK + Store Horsemen first-party; Pulse/BBTS/EE/Mezco official still blocked",
@@ -1318,7 +1469,7 @@ def main() -> None:
         ],
     }
     STATS_JSON.write_text(json.dumps(stats, indent=2) + "\n")
-    print(json.dumps({k: stats[k] for k in ("before", "after", "matched", "byCompany")}, indent=2))
+    print(json.dumps({k: stats[k] for k in ("before", "after", "matched", "clearedSharedImageUrl", "sharedUrlsAfter", "byCompany") if k in stats}, indent=2))
     print(f"wrote {URLS_JSON} ({len(urls)} urls)")
     print(f"patched oneshot imageUrl on {patched} rows")
     leftovers_by_co = Counter(r["company"] for r in rows if not r.get("imageUrl"))

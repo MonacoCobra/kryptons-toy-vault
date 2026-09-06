@@ -1,54 +1,56 @@
 {
-  "bakedAt": "2026-09-06T01:41:12.061721+00:00",
+  "bakedAt": "2026-09-06T03:07:19.344873+00:00",
   "day": "2026-09-06",
   "minScore": 16.0,
   "indexSize": 28704,
-  "fetchLive": true,
+  "fetchLive": false,
   "before": {
-    "total": 19486,
-    "withImage": 8715,
-    "pct": 44.72
+    "total": 19085,
+    "withImage": 9598,
+    "pct": 50.29
   },
   "after": {
-    "total": 19486,
-    "withImage": 9890,
-    "pct": 50.75
+    "total": 19085,
+    "withImage": 6667,
+    "pct": 34.93
   },
-  "matched": 1175,
-  "candidatesAboveThreshold": 1490,
-  "patchedOneshot": 1175,
-  "urlMapSize": 5970,
+  "matched": 2749,
+  "candidatesAboveThreshold": 6041,
+  "patchedOneshot": 2749,
+  "clearedSharedImageUrl": 2,
+  "sharedUrlsAfter": 0,
+  "urlMapSize": 6667,
   "byCompany": {
-    "hasbro": 241,
-    "dcdirect": 176,
-    "toybiz": 122,
-    "neca": 77,
-    "playmates": 75,
-    "mattel": 71,
-    "mcfarlane": 65,
-    "mezco": 62,
+    "hasbro": 969,
+    "mcfarlane": 236,
+    "mattel": 196,
+    "dcdirect": 195,
+    "shfiguarts": 165,
+    "mezco": 116,
+    "mafex": 100,
+    "playmates": 96,
+    "toybiz": 87,
+    "neca": 72,
+    "hottoys": 69,
+    "bandai": 57,
+    "storm": 53,
+    "kaiyodo": 49,
     "kenner": 40,
-    "bandai": 30,
-    "mafex": 28,
-    "storm": 27,
-    "shfiguarts": 23,
-    "super7": 21,
-    "jakks": 19,
-    "kaiyodo": 18,
-    "hiya": 14,
-    "figma": 14,
-    "hottoys": 9,
-    "loyalsubjects": 8,
-    "bossfight": 6,
-    "jada": 5,
-    "fourhorsemen": 5,
-    "joytoy": 5,
-    "beastkingdom": 3,
-    "diamondselect": 3,
-    "threezero": 3,
-    "premiumdna": 2,
-    "mondo": 2,
-    "blitzway": 1
+    "figma": 34,
+    "super7": 31,
+    "exo6": 25,
+    "jada": 19,
+    "threezero": 19,
+    "joytoy": 19,
+    "hiya": 17,
+    "diamondselect": 17,
+    "jakks": 13,
+    "fourhorsemen": 13,
+    "loyalsubjects": 10,
+    "blokees": 10,
+    "blitzway": 9,
+    "beastkingdom": 8,
+    "starace": 5
   },
   "safeguards": [
     "same-company hard gate",
@@ -57,7 +59,9 @@
     "character-focused name match (subtitle for ULTIMATES/ReAction headers)",
     "first significant name token required",
     "multi-token subtitle requires \u22651 hit",
-    "one product image \u2192 one character name (variants may share CDN shot)",
+    "prefer product title hits on distinguishing subtitle/wave tokens",
+    "one product image URL \u2192 at most one figure id (no variant CDN sharing)",
+    "after rematch: shared URLs keep best score only; others cleared to placeholder",
     "Mattel DC Premier not used for unrelated curated lines",
     "retailer feeds (ToyArena/CmdStore/Planet/CoolToyDen/AFCollector/Legendz/shop.mattel/Solaris/JBHiFi/AFAC/JapanFigure) vendor\u2192company high-confidence only",
     "Storm HK + Store Horsemen first-party; Pulse/BBTS/EE/Mezco official still blocked",
@@ -65,148 +69,143 @@
   ],
   "samples": [
     {
-      "score": 43.0,
-      "figureId": "d14joe-stormshadow-arctic",
-      "figure": "Storm Shadow / Arctic Mission / GI Joe Classified",
-      "product": "Storm Shadow / gi joe STORM SHADOW 6 inch CLASSIFIED series arctic mission14 2020 Gijoe moc mib action figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN3270_3.jpg?v=1608418026"
+      "score": 53.0,
+      "figureId": "ml5-ml-cassandra-nova",
+      "figure": "Cassandra Nova / Deadpool & Wolverine Legends / Marvel Legends",
+      "product": "Cassandra Nova / Marvel Legends Deadpool & Wolverine 6 Inch Action Figure Wave 3",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-deadpool-wolverine-wave-3-cass"
     },
     {
-      "score": 43.0,
-      "figureId": "cls4-nightforce-psyche",
-      "figure": "Psyche-Out / Night Force / GI Joe Classified",
-      "product": "Psyche-Out / Gi joe PSYCHE-OUT Night Force 1988 gray black vintage action figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0942_2_.JPG4.JPG3.jpg?v=1779664046"
+      "score": 53.0,
+      "figureId": "ml5-ml-x97-jean",
+      "figure": "Jean Grey / X-Men '97 Legends / Marvel Legends",
+      "product": "Jean Grey / Marvel Legends Retro 6 Inch Action Figure X-Men '97 Wave 2",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-retro-x-men-97-wave-2-jean-gre"
     },
     {
-      "score": 43.0,
-      "figureId": "mcfc-spawn-savage",
-      "figure": "Savage Dragon / Image / Spawn",
-      "product": "Savage Dragon / Spawn SAVAGE DRAGON image 10 years anniversary mcfarlane action figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/009_0ea26af2-bae8-4a2c-a421-4beaa1614940_1024x1024"
+      "score": 53.0,
+      "figureId": "shf5-luffy-egghead",
+      "figure": "Monkey D. Luffy / Egghead / S.H.Figuarts",
+      "product": "Monkey D. Luffy / Gear 5, Future Island Egghead (Bandai Spirits) [Shop Exclusive] One Piece - Monkey D. Luffy - S.H.Figuarts",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0318/2649/files/b060db9c-241a-11f0-8b0f-0242ac120005.jpg?v=1745835"
     },
     {
-      "score": 43.0,
-      "figureId": "bstc-optimus",
-      "figure": "Optimus Prime / Transformers / BST AXN",
-      "product": "Optimus Prime / Transformers Loyal Subjects OPTIMUS PRIME Cartoon colors complete g1 style action figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN5477_4.jpg?v=1592184563"
+      "score": 53.0,
+      "figureId": "cls5-cls-snake-eyes-movie",
+      "figure": "Snake Eyes / Snake Eyes Movie Classified / GI Joe Classified",
+      "product": "Snake Eyes / G.I. Joe Classified 6 Inch Action Figure Retro Exclusive",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/gi-joe-classified-retro-exclusive-snake-eyes-"
     },
     {
-      "score": 43.0,
-      "figureId": "jak5-jak-nintendo-dk",
-      "figure": "Donkey Kong / Nintendo / JAKKS Nintendo",
-      "product": "Donkey Kong / World of Nintendo DONKEY KONG 8 Bit 2.5 inch 2015 jakks pacific action figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN4028_4.jpg?v=1616855919"
+      "score": 53.0,
+      "figureId": "tfss-ss-one-alpha",
+      "figure": "Alpha Trion / Transformers One / Transformers Studio Series",
+      "product": "Alpha Trion / Transformers Studio Series 7 Inch Action Figure Voyager Class (2026 Wave 1)",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-2026"
     },
     {
-      "score": 43.0,
-      "figureId": "mlc-ms-marvel",
-      "figure": "Ms. Marvel / Kamala Khan / Marvel Legends",
-      "product": "Ms Marvel / marvel legends MS MARVEL kamala khan spider-man sandman series REG ARMS fig action figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN6193_3.JPG?v=1571439701"
+      "score": 53.0,
+      "figureId": "tfss-ss-one-orion",
+      "figure": "Orion Pax / Transformers One / Transformers Studio Series",
+      "product": "Orion Pax / Orion Pax (Transformers One) Transformers Studio Series 6 Inch Action Figure Deluxe Class",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-orion"
     },
     {
-      "score": 43.0,
-      "figureId": "d14ml-ml-msmarvel",
-      "figure": "Ms. Marvel / Kamala Khan Classic / Marvel Legends",
-      "product": "Ms Marvel / marvel legends MS MARVEL kamala khan spider-man sandman series REG ARMS fig action figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN6193_3.JPG?v=1571439701"
+      "score": 53.0,
+      "figureId": "cls5-cls-major-bludd",
+      "figure": "Major Bludd / Classified / GI Joe Classified",
+      "product": "Major Bludd / Gi joe MAJOR BLUDD 6 inch Classified series 166 2025 action figure",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0064_2_-3.jpg?v=1777050267"
     },
     {
-      "score": 43.0,
-      "figureId": "mcf2-spawn-cy",
-      "figure": "Cy-Gor / Spawn / Spawn",
-      "product": "Cy-Gor / Spawn CY-GOR 2 1998 series 12 complete mcfarlane moc action figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN9789-22.jpg?v=1700768967"
+      "score": 53.0,
+      "figureId": "shf4-jjk-geto",
+      "figure": "Suguru Geto / Jujutsu Kaisen / S.H.Figuarts",
+      "product": "Suguru Geto / Jujutsu Kaisen 6 Inch Action Figure S.H. Figuarts",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/jujutsu-kaisen-sh-figuarts-suguru-geto-457310"
     },
     {
-      "score": 43.0,
-      "figureId": "mlc-boomboom",
-      "figure": "Boom-Boom / X-Force / Marvel Legends",
-      "product": "Boom Boom / Marvel Legends BOOM BOOM X-men X-force Wendigo wave action figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN4592_3_e17a42ad-4509-44be-9d40-d91e1ddd8106"
+      "score": 53.0,
+      "figureId": "shf4-jjk-toji",
+      "figure": "Toji Fushiguro / Jujutsu Kaisen / S.H.Figuarts",
+      "product": "Toji Fushiguro / Jujutsu Kaisen 6 Inch Action Figure S.H. Figuarts",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/jujutsu-kaisen-sh-figuarts-toji-fushiguro-457"
     },
     {
-      "score": 43.0,
-      "figureId": "d14lc-trey",
-      "figure": "Gold Ranger / Zeo / Lightning Collection",
-      "product": "Gold Ranger / Power Rangers GOLD RANGER Zeo bandai lightning moc mib action figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN7316-2.jpg?v=1667020621"
+      "score": 53.0,
+      "figureId": "joec-storm-shadow-red",
+      "figure": "Storm Shadow / Red Ninja / GI Joe Classified",
+      "product": "Storm Shadow / gi joe STORM SHADOW 2009 v34 a ninja rise of cobra action figure",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0234.JPG2.jpg?v=1786261506"
     },
     {
-      "score": 43.0,
-      "figureId": "ml3-ml-ebony-maw",
-      "figure": "Ebony Maw / BAF Wave / Marvel Legends",
-      "product": "Ebony Maw / marvel legends EBONY MAW avengers end game complete baf action figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN4011_2_376cadbc-bde7-4d78-b740-8c3213a1e3d4"
+      "score": 53.0,
+      "figureId": "joec-snake-eyes-arctic",
+      "figure": "Snake Eyes / Arctic / GI Joe Classified",
+      "product": "Snake Eyes / gi joe SNAKE EYES 2008 v35 25th anniversary arctic snow trooper complete action figure",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN2072_4_0a411ef4-64cb-4828-ae1c-be87c1a9995f"
     },
     {
-      "score": 43.0,
-      "figureId": "dcdclassic-gl5-guy",
-      "figure": "Guy Gardner / Green Lantern Series 5 / DC Direct Green Lantern",
-      "product": "Guy Gardner / dc direct GUY GARDNER Blue green lantern pocket heroes super universe action figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN2279_4.jpg?v=1615883170"
+      "score": 53.0,
+      "figureId": "mafex-no091-moon-knight-no-322",
+      "figure": "Moon Knight / No.322 / MAFEX",
+      "product": "Moon Knight / Mafex (No.322) (Medicom Toy) Moon Knight (2022) - Moon Knight",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0318/2649/files/f590f0d0-683c-4192-8122-15835d57fe58.jpg?v=1785403"
     }
   ],
   "lowSamples": [
     {
-      "score": 17.0,
-      "figureId": "ky8-ky-17",
-      "figure": "Revoltech EVA-01 / Evangelion / Revoltech Evangelion",
-      "product": "Eva Test Type-01 Rebuild of Evangelion 3.0 You Can (Not) Redo NR095 / Amazing Yamaguchi Revoltech Figure Complex Eva Test Type-01 Rebuild of Evangelion 3.0 You Can (Not) Redo NR095 Action Figure"
+      "score": 18.33,
+      "figureId": "fh-w6-shadow-elf-b",
+      "figure": "Shadow Elf Builder / Wave 6 / Mythic Legions",
+      "product": "Shadow Orc Grunt Legion Builder / 6\""
+    },
+    {
+      "score": 17.5,
+      "figureId": "cls6-cls-short-fuse",
+      "figure": "Short-Fuse / Classified Wave6 / GI Joe Classified",
+      "product": "Short Fuze / gi joe SHORT FUZE fuse 2008 v6 25th anniversary gijoe 99p action figure"
+    },
+    {
+      "score": 17.5,
+      "figureId": "bs5-bs-krennic",
+      "figure": "Director Krennic / Rogue One / Black Series",
+      "product": "Director Orson Krennic #16 / Director Orson Krennic (Dress Uniform) #16 Star Wars The Black Series 6 Inch Action Figure Exclusive"
+    },
+    {
+      "score": 17.5,
+      "figureId": "dcdclassic-sf-superman-lex",
+      "figure": "Superman & Lex Luthor / Super Friends Deluxe / DC Direct Super Friends",
+      "product": "DC Direct Superman/Doomsday Lex Luthor and Superman Robot Action Figure 2-Pack / DC Direct Superman/Doomsday Lex Luthor and Superman Robot Action Figure 2-Pack"
     },
     {
       "score": 17.0,
-      "figureId": "sf8-sf-03",
-      "figure": "Gohan Super Saiyan / Dragon Ball / S.H.Figuarts Dragon Ball",
-      "product": "Dragon Ball Z Super Saiyan Gohan / S.H. Figuarts Dragon Ball Z Super Saiyan Gohan (The Warrior Who Surpassed Goku) (Reissue) Action Figure Action Figure"
+      "figureId": "jt-white-scars",
+      "figure": "White Scars Intercessor / Warhammer 40K / Warhammer 40K",
+      "product": "Warhammer Action Figure Game Edition White Scars Assault Intercessor Champion 13 cm / Action Figures"
     },
     {
       "score": 17.0,
-      "figureId": "ky10-ky-13",
-      "figure": "Revoltech Optimus Prime / Revoltech / Revoltech",
-      "product": "Dotm / Sci-Fi Revoltech 040 Jetwing Ver. Optimus Prime DOTM Transformers Movie Action Figure #040 Action Figure"
+      "figureId": "jt8-jt-38",
+      "figure": "Custodes Captain / Warhammer 40K / JoyToy Warhammer 40K",
+      "product": "Warhammer The Horus Heresy Actionfigur Legio Custodes Constantin Valdor Captain-General of the Legio Custodes 25 cm / Action Figures"
     },
     {
-      "score": 17.0,
-      "figureId": "ky10-ky-11",
-      "figure": "Revoltech Evangelion Unit-01 / Revoltech / Revoltech",
-      "product": "Yamaguchi No.76 Awakening Evangelion Unit-01 / Kaiyodo Revoltech Yamaguchi No.76 Awakening Evangelion Unit-01 Action Figures"
+      "score": 16.5,
+      "figureId": "bn9-bn-25",
+      "figure": "Robot Spirits Eva-01 Homage / Special / Bandai Robot Spirits",
+      "product": "Action Figure / Robot Spirits Damashii #R-290 Eva Test Type-01 + Spear of Cassius Renewal Color Edition (Reissue) (3.0+1.0) Rebuild of Evangelion Action Figure Action Figure"
     },
     {
-      "score": 17.0,
-      "figureId": "dcdclassic-batman-reborn-jason",
-      "figure": "Jason Todd Batman / Batman Reborn / DC Direct Batman",
-      "product": "Batman Reborn / dc direct BATMAN REBORN Jason Todd collectibles robin moc action figure"
-    },
-    {
-      "score": 17.0,
-      "figureId": "dcdclassic-sf-batman-scarecrow",
-      "figure": "Batman & Scarecrow / Super Friends Deluxe / DC Direct Super Friends",
-      "product": "Scarecrow / dc direct SCARECROW super friends collectibles 2003 Batman action figure"
-    },
-    {
-      "score": 17.0,
-      "figureId": "dcdclassic-sf-aquaman-manta",
-      "figure": "Aquaman & Black Manta / Super Friends Deluxe / DC Direct Super Friends",
-      "product": "Black Manta / dc direct BLACK MANTA super friends collectibles 2003 Aquaman action figure"
-    },
-    {
-      "score": 17.0,
-      "figureId": "pm9-pm-14",
-      "figure": "Mutant Mayhem Mikey / Mutant Mayhem / Playmates Mutant Mayhem",
-      "product": "Beach Bum Mikey Teenage Mutant Ninja Turtles 5 Inch Action Figure Mutant Mayhem / Beach Bum Mikey Teenage Mutant Ninja Turtles 5 Inch Action Figure Mutant Mayhem"
+      "score": 16.5,
+      "figureId": "dcdclassic-x32-silver-age-hal-jordan",
+      "figure": "Silver Age Hal Jordan / Green Lantern Corps 2003 / DC Direct Green Lantern",
+      "product": "Hal Jordan / dc direct HAL JORDAN silver age green lantern SINESTRO pocket heroes universe moc action figure"
     }
   ],
-  "priorCommitBaseline": {
-    "total": 19486,
-    "withImage": 8715,
-    "pct": 44.72
-  },
-  "delta": {
-    "matchedNet": 1175,
-    "pctPoints": 6.03
-  },
-  "rematchNote": "Added AFAC + Japan Figure specialty feeds; AFAC CAPS character peel; tighter TLS/Playmates gates; bumped retailer page caps. Incremental match on gaps only."
+  "sharedUrlsBefore": 1397,
+  "uniqueUrlsBefore": 6425,
+  "uniqueUrlsAfter": 6667,
+  "dedupeRemoved": 401,
+  "note": "Strict 1:1 rematch + near-dupe densify cleanup; no AI art; no publish"
 }
