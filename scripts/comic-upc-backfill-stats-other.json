@@ -1,164 +1,12 @@
 {
-  "attempted": 100,
+  "attempted": 119,
   "beforeCovers": 135,
   "beforeUpc": 86,
-  "coverUpdated": 200,
-  "coversFromSeriesList": 100,
+  "coverUpdated": 238,
+  "coversFromSeriesList": 119,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "joe-arah-idw-245",
-      "issue": "245",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092304511"
-    },
-    {
-      "id": "joe-arah-idw-244",
-      "issue": "244",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092304411"
-    },
-    {
-      "id": "joe-arah-idw-243",
-      "issue": "243",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092304311"
-    },
-    {
-      "id": "joe-arah-idw-242",
-      "issue": "242",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092304211"
-    },
-    {
-      "id": "joe-arah-idw-241",
-      "issue": "241",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092304111"
-    },
-    {
-      "id": "joe-arah-idw-240",
-      "issue": "240",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092304011"
-    },
-    {
-      "id": "joe-arah-idw-239",
-      "issue": "239",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092303911"
-    },
-    {
-      "id": "joe-arah-idw-238",
-      "issue": "238",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092303811"
-    },
-    {
-      "id": "joe-arah-idw-237",
-      "issue": "237",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092303711"
-    },
-    {
-      "id": "joe-arah-idw-236",
-      "issue": "236",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092303611"
-    },
-    {
-      "id": "joe-arah-idw-235",
-      "issue": "235",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092303511"
-    },
-    {
-      "id": "joe-arah-idw-234",
-      "issue": "234",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092303411"
-    },
-    {
-      "id": "joe-arah-idw-233",
-      "issue": "233",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092303311"
-    },
-    {
-      "id": "joe-arah-idw-232",
-      "issue": "232",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092303211"
-    },
-    {
-      "id": "joe-arah-idw-231",
-      "issue": "231",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771401092303111"
-    },
-    {
-      "id": "joe-arah-idw-230",
-      "issue": "230",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148803011"
-    },
-    {
-      "id": "joe-arah-idw-229",
-      "issue": "229",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148802911"
-    },
-    {
-      "id": "joe-arah-idw-228",
-      "issue": "228",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148822811"
-    },
-    {
-      "id": "joe-arah-idw-227",
-      "issue": "227",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148822711"
-    },
     {
       "id": "joe-arah-idw-226",
       "issue": "226",
@@ -646,17 +494,169 @@
       "seriesPick": "101711",
       "status": "locg_upc",
       "upc": "82771400148816611"
+    },
+    {
+      "id": "im-spawn-350",
+      "issue": "350",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214735011"
+    },
+    {
+      "id": "im-spawn-349",
+      "issue": "349",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214734911"
+    },
+    {
+      "id": "im-spawn-348",
+      "issue": "348",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214734811"
+    },
+    {
+      "id": "im-spawn-347",
+      "issue": "347",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214734711"
+    },
+    {
+      "id": "im-spawn-346",
+      "issue": "346",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214734611"
+    },
+    {
+      "id": "im-spawn-345",
+      "issue": "345",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214734511"
+    },
+    {
+      "id": "im-spawn-344",
+      "issue": "344",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214734411"
+    },
+    {
+      "id": "im-spawn-343",
+      "issue": "343",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214734311"
+    },
+    {
+      "id": "im-spawn-342",
+      "issue": "342",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214734211"
+    },
+    {
+      "id": "im-spawn-341",
+      "issue": "341",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214734111"
+    },
+    {
+      "id": "im-spawn-340",
+      "issue": "340",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214734011"
+    },
+    {
+      "id": "im-spawn-339",
+      "issue": "339",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214733911"
+    },
+    {
+      "id": "im-spawn-338",
+      "issue": "338",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214733811"
+    },
+    {
+      "id": "im-spawn-337",
+      "issue": "337",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214733711"
+    },
+    {
+      "id": "im-spawn-336",
+      "issue": "336",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214733611"
+    },
+    {
+      "id": "im-spawn-335",
+      "issue": "335",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214733511"
+    },
+    {
+      "id": "im-spawn-334",
+      "issue": "334",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214733411"
+    },
+    {
+      "id": "im-spawn-333",
+      "issue": "333",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214733311"
+    },
+    {
+      "id": "im-spawn-332",
+      "issue": "332",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "locg_upc",
+      "upc": "70985300214733211"
     }
   ],
   "errors": 0,
-  "locgHits": 100,
+  "locgHits": 119,
   "locgNoUpc": 8,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
   "seriesBatch": true,
-  "seriesResolved": 0,
+  "seriesResolved": 1,
   "skippedExisting": 0,
   "startedAt": "2026-09-06T16:42:42Z",
   "timedOut": false,
-  "upcFilled": 92
+  "upcFilled": 111
 }

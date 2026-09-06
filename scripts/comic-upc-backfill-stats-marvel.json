@@ -1,164 +1,12 @@
 {
-  "attempted": 81,
+  "attempted": 100,
   "beforeCovers": 145,
   "beforeUpc": 88,
-  "coverUpdated": 162,
-  "coversFromSeriesList": 81,
+  "coverUpdated": 200,
+  "coversFromSeriesList": 100,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "mv-asm-v1-699",
-      "issue": "699",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716169911"
-    },
-    {
-      "id": "mv-asm-v1-698",
-      "issue": "698",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716169811"
-    },
-    {
-      "id": "mv-asm-v1-697",
-      "issue": "697",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716169711"
-    },
-    {
-      "id": "mv-asm-v1-696",
-      "issue": "696",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716169611"
-    },
-    {
-      "id": "mv-asm-v1-695",
-      "issue": "695",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716169511"
-    },
-    {
-      "id": "mv-asm-v1-694",
-      "issue": "694",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716169411"
-    },
-    {
-      "id": "mv-asm-v1-693",
-      "issue": "693",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716169311"
-    },
-    {
-      "id": "mv-asm-v1-692",
-      "issue": "692",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716169211"
-    },
-    {
-      "id": "mv-asm-v1-691",
-      "issue": "691",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716169111"
-    },
-    {
-      "id": "mv-asm-v1-690",
-      "issue": "690",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716169011"
-    },
-    {
-      "id": "mv-asm-v1-689",
-      "issue": "689",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716168911"
-    },
-    {
-      "id": "mv-asm-v1-688",
-      "issue": "688",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716168811"
-    },
-    {
-      "id": "mv-asm-v1-687",
-      "issue": "687",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716168711"
-    },
-    {
-      "id": "mv-asm-v1-686",
-      "issue": "686",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716168611"
-    },
-    {
-      "id": "mv-asm-v1-685",
-      "issue": "685",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716168511"
-    },
-    {
-      "id": "mv-asm-v1-684",
-      "issue": "684",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716168411"
-    },
-    {
-      "id": "mv-asm-v1-683",
-      "issue": "683",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716168311"
-    },
-    {
-      "id": "mv-asm-v1-682",
-      "issue": "682",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716168211"
-    },
-    {
-      "id": "mv-asm-v1-681",
-      "issue": "681",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716168111"
-    },
     {
       "id": "mv-asm-v1-680",
       "issue": "680",
@@ -646,10 +494,162 @@
       "seriesPick": "126492",
       "status": "locg_upc",
       "upc": "75960604716162011"
+    },
+    {
+      "id": "mv-asm-v1-619",
+      "issue": "619",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716161911"
+    },
+    {
+      "id": "mv-asm-v1-618",
+      "issue": "618",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716161811"
+    },
+    {
+      "id": "mv-asm-v1-617",
+      "issue": "617",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716161711"
+    },
+    {
+      "id": "mv-asm-v1-616",
+      "issue": "616",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716161611"
+    },
+    {
+      "id": "mv-asm-v1-615",
+      "issue": "615",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716161511"
+    },
+    {
+      "id": "mv-asm-v1-614",
+      "issue": "614",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716161411"
+    },
+    {
+      "id": "mv-asm-v1-613",
+      "issue": "613",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716161311"
+    },
+    {
+      "id": "mv-asm-v1-612",
+      "issue": "612",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716161211"
+    },
+    {
+      "id": "mv-asm-v1-611",
+      "issue": "611",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716161111"
+    },
+    {
+      "id": "mv-asm-v1-610",
+      "issue": "610",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716161011"
+    },
+    {
+      "id": "mv-asm-v1-609",
+      "issue": "609",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716160911"
+    },
+    {
+      "id": "mv-asm-v1-608",
+      "issue": "608",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716160811"
+    },
+    {
+      "id": "mv-asm-v1-607",
+      "issue": "607",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716160711"
+    },
+    {
+      "id": "mv-asm-v1-606",
+      "issue": "606",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716160611"
+    },
+    {
+      "id": "mv-asm-v1-605",
+      "issue": "605",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716160511"
+    },
+    {
+      "id": "mv-asm-v1-604",
+      "issue": "604",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716160411"
+    },
+    {
+      "id": "mv-asm-v1-603",
+      "issue": "603",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716160311"
+    },
+    {
+      "id": "mv-asm-v1-602",
+      "issue": "602",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716160211"
+    },
+    {
+      "id": "mv-asm-v1-601",
+      "issue": "601",
+      "series": "The Amazing Spider-Man",
+      "seriesPick": "126492",
+      "status": "locg_upc",
+      "upc": "75960604716160111"
     }
   ],
   "errors": 0,
-  "locgHits": 81,
+  "locgHits": 100,
   "locgNoUpc": 0,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
@@ -658,5 +658,5 @@
   "skippedExisting": 0,
   "startedAt": "2026-09-06T16:47:24Z",
   "timedOut": false,
-  "upcFilled": 81
+  "upcFilled": 100
 }

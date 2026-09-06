@@ -1,152 +1,12 @@
 {
-  "attempted": 140,
+  "attempted": 160,
   "beforeCovers": 206,
   "beforeUpc": 149,
-  "coverUpdated": 80,
-  "coversFromSeriesList": 40,
+  "coverUpdated": 120,
+  "coversFromSeriesList": 60,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "dc-det-1040",
-      "issue": "1040",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1039",
-      "issue": "1039",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1038",
-      "issue": "1038",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1037",
-      "issue": "1037",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1036",
-      "issue": "1036",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1035",
-      "issue": "1035",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1034",
-      "issue": "1034",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1033",
-      "issue": "1033",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1032",
-      "issue": "1032",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1031",
-      "issue": "1031",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1030",
-      "issue": "1030",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1029",
-      "issue": "1029",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1028",
-      "issue": "1028",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1027",
-      "issue": "1027",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1026",
-      "issue": "1026",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1025",
-      "issue": "1025",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1024",
-      "issue": "1024",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1023",
-      "issue": "1023",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1022",
-      "issue": "1022",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
-    {
-      "id": "dc-det-1021",
-      "issue": "1021",
-      "series": "Detective Comics",
-      "seriesPick": "102374",
-      "status": "missing"
-    },
     {
       "id": "dc-det-1020",
       "issue": "1020",
@@ -606,10 +466,170 @@
       "seriesPick": "124401",
       "status": "locg_upc",
       "upc": "76194134388404911"
+    },
+    {
+      "id": "dc-action-1048",
+      "issue": "1048",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388404811"
+    },
+    {
+      "id": "dc-action-1047",
+      "issue": "1047",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388404711"
+    },
+    {
+      "id": "dc-action-1046",
+      "issue": "1046",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388404611"
+    },
+    {
+      "id": "dc-action-1045",
+      "issue": "1045",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388404511"
+    },
+    {
+      "id": "dc-action-1044",
+      "issue": "1044",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388404411"
+    },
+    {
+      "id": "dc-action-1043",
+      "issue": "1043",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388404311"
+    },
+    {
+      "id": "dc-action-1042",
+      "issue": "1042",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388404211"
+    },
+    {
+      "id": "dc-action-1041",
+      "issue": "1041",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388404111"
+    },
+    {
+      "id": "dc-action-1040",
+      "issue": "1040",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388404011"
+    },
+    {
+      "id": "dc-action-1039",
+      "issue": "1039",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388403911"
+    },
+    {
+      "id": "dc-action-1038",
+      "issue": "1038",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388403811"
+    },
+    {
+      "id": "dc-action-1037",
+      "issue": "1037",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388403711"
+    },
+    {
+      "id": "dc-action-1036",
+      "issue": "1036",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388403611"
+    },
+    {
+      "id": "dc-action-1035",
+      "issue": "1035",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388403511"
+    },
+    {
+      "id": "dc-action-1034",
+      "issue": "1034",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388403411"
+    },
+    {
+      "id": "dc-action-1033",
+      "issue": "1033",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388403311"
+    },
+    {
+      "id": "dc-action-1032",
+      "issue": "1032",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388403211"
+    },
+    {
+      "id": "dc-action-1031",
+      "issue": "1031",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388403111"
+    },
+    {
+      "id": "dc-action-1030",
+      "issue": "1030",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388403011"
+    },
+    {
+      "id": "dc-action-1029",
+      "issue": "1029",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388402911"
     }
   ],
   "errors": 100,
-  "locgHits": 40,
+  "locgHits": 60,
   "locgNoUpc": 0,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
@@ -618,5 +638,5 @@
   "skippedExisting": 0,
   "startedAt": "2026-09-06T17:06:32Z",
   "timedOut": false,
-  "upcFilled": 40
+  "upcFilled": 60
 }
