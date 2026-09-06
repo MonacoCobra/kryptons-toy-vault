@@ -1,548 +1,12 @@
 {
-  "attempted": 200,
+  "attempted": 267,
   "beforeCovers": 135,
   "beforeUpc": 86,
-  "coverUpdated": 400,
-  "coversFromSeriesList": 200,
+  "coverUpdated": 446,
+  "coversFromSeriesList": 223,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "im-spawn-330",
-      "issue": "330",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214733011"
-    },
-    {
-      "id": "im-spawn-329",
-      "issue": "329",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214732911"
-    },
-    {
-      "id": "im-spawn-328",
-      "issue": "328",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214732811"
-    },
-    {
-      "id": "im-spawn-327",
-      "issue": "327",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214732711"
-    },
-    {
-      "id": "im-spawn-326",
-      "issue": "326",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214732611"
-    },
-    {
-      "id": "im-spawn-325",
-      "issue": "325",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214732511"
-    },
-    {
-      "id": "im-spawn-324",
-      "issue": "324",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214732411"
-    },
-    {
-      "id": "im-spawn-323",
-      "issue": "323",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214732311"
-    },
-    {
-      "id": "im-spawn-322",
-      "issue": "322",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214732211"
-    },
-    {
-      "id": "im-spawn-321",
-      "issue": "321",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214732111"
-    },
-    {
-      "id": "im-spawn-320",
-      "issue": "320",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214732011"
-    },
-    {
-      "id": "im-spawn-319",
-      "issue": "319",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214731911"
-    },
-    {
-      "id": "im-spawn-318",
-      "issue": "318",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214731811"
-    },
-    {
-      "id": "im-spawn-317",
-      "issue": "317",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214731711"
-    },
-    {
-      "id": "im-spawn-316",
-      "issue": "316",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214731611"
-    },
-    {
-      "id": "im-spawn-315",
-      "issue": "315",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214731511"
-    },
-    {
-      "id": "im-spawn-314",
-      "issue": "314",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214731411"
-    },
-    {
-      "id": "im-spawn-313",
-      "issue": "313",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214731311"
-    },
-    {
-      "id": "im-spawn-312",
-      "issue": "312",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214731211"
-    },
-    {
-      "id": "im-spawn-311",
-      "issue": "311",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214731111"
-    },
-    {
-      "id": "im-spawn-310",
-      "issue": "310",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214731011"
-    },
-    {
-      "id": "im-spawn-309",
-      "issue": "309",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214730911"
-    },
-    {
-      "id": "im-spawn-308",
-      "issue": "308",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214730811"
-    },
-    {
-      "id": "im-spawn-307",
-      "issue": "307",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214730711"
-    },
-    {
-      "id": "im-spawn-306",
-      "issue": "306",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214730611"
-    },
-    {
-      "id": "im-spawn-305",
-      "issue": "305",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214730511"
-    },
-    {
-      "id": "im-spawn-304",
-      "issue": "304",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214730411"
-    },
-    {
-      "id": "im-spawn-303",
-      "issue": "303",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214730311"
-    },
-    {
-      "id": "im-spawn-302",
-      "issue": "302",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214730211"
-    },
-    {
-      "id": "im-spawn-301",
-      "issue": "301",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214730111"
-    },
-    {
-      "id": "im-spawn-300",
-      "issue": "300",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214730011"
-    },
-    {
-      "id": "im-spawn-299",
-      "issue": "299",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214729911"
-    },
-    {
-      "id": "im-spawn-298",
-      "issue": "298",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214729811"
-    },
-    {
-      "id": "im-spawn-297",
-      "issue": "297",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214729711"
-    },
-    {
-      "id": "im-spawn-296",
-      "issue": "296",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214729611"
-    },
-    {
-      "id": "im-spawn-295",
-      "issue": "295",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214729511"
-    },
-    {
-      "id": "im-spawn-294",
-      "issue": "294",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214729411"
-    },
-    {
-      "id": "im-spawn-293",
-      "issue": "293",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214729311"
-    },
-    {
-      "id": "im-spawn-292",
-      "issue": "292",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214729211"
-    },
-    {
-      "id": "im-spawn-291",
-      "issue": "291",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214729111"
-    },
-    {
-      "id": "im-spawn-290",
-      "issue": "290",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214729011"
-    },
-    {
-      "id": "im-spawn-289",
-      "issue": "289",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214728911"
-    },
-    {
-      "id": "im-spawn-288",
-      "issue": "288",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214728811"
-    },
-    {
-      "id": "im-spawn-287",
-      "issue": "287",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214728711"
-    },
-    {
-      "id": "im-spawn-286",
-      "issue": "286",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214728611"
-    },
-    {
-      "id": "im-spawn-285",
-      "issue": "285",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214728511"
-    },
-    {
-      "id": "im-spawn-284",
-      "issue": "284",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214728411"
-    },
-    {
-      "id": "im-spawn-283",
-      "issue": "283",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214728311"
-    },
-    {
-      "id": "im-spawn-282",
-      "issue": "282",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214728211"
-    },
-    {
-      "id": "im-spawn-281",
-      "issue": "281",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214728111"
-    },
-    {
-      "id": "im-spawn-280",
-      "issue": "280",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214728011"
-    },
-    {
-      "id": "im-spawn-279",
-      "issue": "279",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214727911"
-    },
-    {
-      "id": "im-spawn-278",
-      "issue": "278",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214727811"
-    },
-    {
-      "id": "im-spawn-277",
-      "issue": "277",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214727711"
-    },
-    {
-      "id": "im-spawn-276",
-      "issue": "276",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214727611"
-    },
-    {
-      "id": "im-spawn-275",
-      "issue": "275",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214727511"
-    },
-    {
-      "id": "im-spawn-274",
-      "issue": "274",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214727411"
-    },
-    {
-      "id": "im-spawn-273",
-      "issue": "273",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214727311"
-    },
-    {
-      "id": "im-spawn-272",
-      "issue": "272",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214727211"
-    },
-    {
-      "id": "im-spawn-271",
-      "issue": "271",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214727111"
-    },
-    {
-      "id": "im-spawn-270",
-      "issue": "270",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214727011"
-    },
-    {
-      "id": "im-spawn-269",
-      "issue": "269",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214726911"
-    },
-    {
-      "id": "im-spawn-268",
-      "issue": "268",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214726811"
-    },
-    {
-      "id": "im-spawn-267",
-      "issue": "267",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214726711"
-    },
-    {
-      "id": "im-spawn-266",
-      "issue": "266",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214726611"
-    },
-    {
-      "id": "im-spawn-265",
-      "issue": "265",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214726511"
-    },
-    {
-      "id": "im-spawn-264",
-      "issue": "264",
-      "series": "Spawn",
-      "seriesPick": "106822",
-      "status": "locg_upc",
-      "upc": "70985300214726411"
-    },
     {
       "id": "im-spawn-263",
       "issue": "263",
@@ -646,17 +110,509 @@
       "seriesPick": "106822",
       "status": "locg_upc",
       "upc": "70985300214725111"
+    },
+    {
+      "id": "twd-deluxe-193",
+      "issue": "193",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-192",
+      "issue": "192",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-191",
+      "issue": "191",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-190",
+      "issue": "190",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-189",
+      "issue": "189",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-188",
+      "issue": "188",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-187",
+      "issue": "187",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-186",
+      "issue": "186",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-185",
+      "issue": "185",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-184",
+      "issue": "184",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-183",
+      "issue": "183",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-182",
+      "issue": "182",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-181",
+      "issue": "181",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-180",
+      "issue": "180",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-179",
+      "issue": "179",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-178",
+      "issue": "178",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-177",
+      "issue": "177",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-176",
+      "issue": "176",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-175",
+      "issue": "175",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-174",
+      "issue": "174",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-173",
+      "issue": "173",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-172",
+      "issue": "172",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-171",
+      "issue": "171",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-170",
+      "issue": "170",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-169",
+      "issue": "169",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-168",
+      "issue": "168",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-167",
+      "issue": "167",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-166",
+      "issue": "166",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-165",
+      "issue": "165",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-164",
+      "issue": "164",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-163",
+      "issue": "163",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-162",
+      "issue": "162",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-161",
+      "issue": "161",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-160",
+      "issue": "160",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-159",
+      "issue": "159",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-158",
+      "issue": "158",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-157",
+      "issue": "157",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-156",
+      "issue": "156",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-155",
+      "issue": "155",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-154",
+      "issue": "154",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-153",
+      "issue": "153",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-152",
+      "issue": "152",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-151",
+      "issue": "151",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-150",
+      "issue": "150",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-149",
+      "issue": "149",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037914911"
+    },
+    {
+      "id": "twd-deluxe-148",
+      "issue": "148",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037914811"
+    },
+    {
+      "id": "twd-deluxe-147",
+      "issue": "147",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037914711"
+    },
+    {
+      "id": "twd-deluxe-146",
+      "issue": "146",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037914611"
+    },
+    {
+      "id": "twd-deluxe-145",
+      "issue": "145",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037914511"
+    },
+    {
+      "id": "twd-deluxe-144",
+      "issue": "144",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037914411"
+    },
+    {
+      "id": "twd-deluxe-143",
+      "issue": "143",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037914311"
+    },
+    {
+      "id": "twd-deluxe-142",
+      "issue": "142",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037914211"
+    },
+    {
+      "id": "twd-deluxe-141",
+      "issue": "141",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037914111"
+    },
+    {
+      "id": "twd-deluxe-140",
+      "issue": "140",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037914011"
+    },
+    {
+      "id": "twd-deluxe-139",
+      "issue": "139",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037913911"
+    },
+    {
+      "id": "twd-deluxe-138",
+      "issue": "138",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037913811"
+    },
+    {
+      "id": "twd-deluxe-137",
+      "issue": "137",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037913711"
+    },
+    {
+      "id": "twd-deluxe-136",
+      "issue": "136",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037913611"
+    },
+    {
+      "id": "twd-deluxe-135",
+      "issue": "135",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037913511"
+    },
+    {
+      "id": "twd-deluxe-134",
+      "issue": "134",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037913411"
+    },
+    {
+      "id": "twd-deluxe-133",
+      "issue": "133",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037913311"
+    },
+    {
+      "id": "twd-deluxe-132",
+      "issue": "132",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037913211"
+    },
+    {
+      "id": "twd-deluxe-131",
+      "issue": "131",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037913111"
+    },
+    {
+      "id": "twd-deluxe-130",
+      "issue": "130",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037913011"
+    },
+    {
+      "id": "twd-deluxe-129",
+      "issue": "129",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037912911"
+    },
+    {
+      "id": "twd-deluxe-128",
+      "issue": "128",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037912811"
+    },
+    {
+      "id": "twd-deluxe-127",
+      "issue": "127",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "locg_upc",
+      "upc": "70985303037912711"
     }
   ],
-  "errors": 0,
-  "locgHits": 200,
+  "errors": 44,
+  "locgHits": 223,
   "locgNoUpc": 8,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
   "seriesBatch": true,
-  "seriesResolved": 1,
+  "seriesResolved": 45,
   "skippedExisting": 0,
   "startedAt": "2026-09-06T16:42:42Z",
   "timedOut": false,
-  "upcFilled": 192
+  "upcFilled": 215
 }
