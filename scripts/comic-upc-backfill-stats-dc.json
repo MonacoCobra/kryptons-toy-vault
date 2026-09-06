@@ -1,26 +1,12 @@
 {
-  "attempted": 362,
+  "attempted": 364,
   "beforeCovers": 206,
   "beforeUpc": 149,
-  "coverUpdated": 522,
-  "coversFromSeriesList": 261,
+  "coverUpdated": 526,
+  "coversFromSeriesList": 263,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "dc-batman-2016-81",
-      "issue": "81",
-      "series": "Batman (2016)",
-      "seriesPick": "100001",
-      "status": "locg_no_upc"
-    },
-    {
-      "id": "dc-batman-2016-80",
-      "issue": "80",
-      "series": "Batman (2016)",
-      "seriesPick": "100001",
-      "status": "locg_no_upc"
-    },
     {
       "id": "dc-batman-2016-79",
       "issue": "79",
@@ -627,10 +613,26 @@
       "seriesPick": "102819",
       "status": "locg_upc",
       "upc": "76194123108208911"
+    },
+    {
+      "id": "dc-fables-88",
+      "issue": "88",
+      "series": "Fables",
+      "seriesPick": "102819",
+      "status": "locg_upc",
+      "upc": "76194123108208811"
+    },
+    {
+      "id": "dc-fables-87",
+      "issue": "87",
+      "series": "Fables",
+      "seriesPick": "102819",
+      "status": "locg_upc",
+      "upc": "76194123108208711"
     }
   ],
   "errors": 101,
-  "locgHits": 261,
+  "locgHits": 263,
   "locgNoUpc": 100,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
@@ -639,5 +641,5 @@
   "skippedExisting": 0,
   "startedAt": "2026-09-06T17:06:32Z",
   "timedOut": false,
-  "upcFilled": 161
+  "upcFilled": 163
 }
