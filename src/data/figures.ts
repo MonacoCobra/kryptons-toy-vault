@@ -1,12 +1,23 @@
 import type { CatalogFigure, CompanyId, ItemKind } from "@/lib/types";
 import archiveRows from "./figure-archive/oneshot.json";
 import figureImageUrls from "./figure-image-urls.json";
+import figureSkuMap from "./figure-sku-map.json";
 
 /** Baked Shopify CDN URLs for curated/placeholder figures (see scripts/bake-figure-images.py). */
 const BAKED_IMAGE_URLS = figureImageUrls as Record<string, string>;
 
+/** Baked storefront/specialty SKUs (see scripts/bake-figure-skus.py). Row sku wins. */
+const BAKED_SKUS = figureSkuMap as Record<string, string>;
+
 function resolveFigureImageUrl(id: string, existing?: string): string | undefined {
   return existing || BAKED_IMAGE_URLS[id];
+}
+
+function resolveFigureSku(id: string, existing?: string): string | undefined {
+  const row = (existing ?? "").trim();
+  if (row) return row;
+  const baked = (BAKED_SKUS[id] ?? "").trim();
+  return baked || undefined;
 }
 
 type Row = [
@@ -503,7 +514,7 @@ function rowToFigure(
     scale,
     demand,
     tags: tags.split(","),
-    sku: extra?.sku,
+    sku: resolveFigureSku(id, extra?.sku),
     exclusive: extra?.exclusive,
     imageUrl: resolveFigureImageUrl(id),
   };
@@ -539,7 +550,7 @@ function archiveToFigure(r: ArchiveRow): CatalogFigure {
     scale: r.scale,
     demand: r.demand,
     tags: r.tags,
-    sku: r.sku,
+    sku: resolveFigureSku(r.id, r.sku),
     exclusive: r.exclusive,
     imageUrl: resolveFigureImageUrl(r.id, r.imageUrl),
   };

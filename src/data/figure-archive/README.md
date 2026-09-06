@@ -11,3 +11,8 @@ Bake real product images onto curated gaps:
 `cd scripts && python3 bake-figure-images.py` (add `--fetch` for live pagination)
 
 See `docs/figure-backlog.md` and `docs/figure-image-bake.md`.
+
+Bake accurate SKUs onto curated gaps:
+`cd scripts && python3 bake-figure-skus.py --fetch` (or `--cache-only`).
+See `docs/figure-sku-bake.md`. Writes `product-sku-index.json`, `sku-bake-stats.json`,
+and `../figure-sku-map.json`.

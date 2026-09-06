@@ -45,6 +45,13 @@ retailer Shopify catalogs (ToyArena, CmdStore, Planet AF, Cool Toy Den, AFCollec
 Legendz Toys, shop.mattel, Solaris Japan, JB Hi-Fi, ActionFiguresAndComics, Japan Figure) with high-confidence vendor/title→company mapping only. Kenner Super
 Powers / Mattel DCUC / JLU leftovers stay placeholders without honest feeds.
 
+## SKU bake
+
+Missing archive `sku` values are filled (high-confidence only) by
+`scripts/bake-figure-skus.py` → `src/data/figure-sku-map.json` + oneshot patches.
+See `docs/figure-sku-bake.md`. Same shops + specialty retailers as image bake;
+Pulse/BBTS/EE remain blocked.
+
 ## Image bake
 
 Curated rows without CDN art are filled (high-confidence only) by
