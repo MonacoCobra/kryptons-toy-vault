@@ -430,28 +430,34 @@ def image_from_product(p: dict) -> str | None:
 # Specialty retailers with open products.json — image-index only (not oneshot dump).
 # Vendor/title → CompanyId so Hasbro/Mezco/MAFEX/SHF curated rows can match.
 RETAILER_FEEDS = [
-    {"id": "toyarena", "baseUrl": "https://www.toyarena.com", "pageLimit": 250, "maxPages": 50},
-    {"id": "cmdstore", "baseUrl": "https://www.cmdstore.ca", "pageLimit": 250, "maxPages": 55},
+    # maxPages bumped to Shopify products.json ceiling (~100) where catalogs were truncated
+    {"id": "toyarena", "baseUrl": "https://www.toyarena.com", "pageLimit": 250, "maxPages": 75},
+    {"id": "cmdstore", "baseUrl": "https://www.cmdstore.ca", "pageLimit": 250, "maxPages": 80},
     {"id": "planet-af", "baseUrl": "https://www.planetactionfigures.co.uk", "pageLimit": 250, "maxPages": 35},
     # Verified open specialty AF catalogs (2026-09) — Hasbro/Playmates/JAKKS/DCD/ToyBiz/BST
     {"id": "cooltoyden", "baseUrl": "https://cooltoyden.com", "pageLimit": 250, "maxPages": 30},
     {"id": "afcollector", "baseUrl": "https://afcollector.com", "pageLimit": 250, "maxPages": 15},
     {"id": "legendztoys", "baseUrl": "https://legendztoys.com", "pageLimit": 250, "maxPages": 10},
     # New open specialty / first-party (verified 2026-09-06) — Mattel retail + JP import SHF/AY
-    {"id": "shop-mattel", "baseUrl": "https://shop.mattel.com", "pageLimit": 250, "maxPages": 25},
-    {"id": "solarisjapan", "baseUrl": "https://www.solarisjapan.com", "pageLimit": 250, "maxPages": 30},
+    {"id": "shop-mattel", "baseUrl": "https://shop.mattel.com", "pageLimit": 250, "maxPages": 40},
+    {"id": "solarisjapan", "baseUrl": "https://www.solarisjapan.com", "pageLimit": 250, "maxPages": 100},
     {"id": "jbhifi", "baseUrl": "https://www.jbhifi.com.au", "pageLimit": 250, "maxPages": 12},
     # Large used/new specialty AF catalog (CAPS character titles) — Hasbro/Mattel/DCD/Playmates/TLS
-    {"id": "afac", "baseUrl": "https://www.actionfiguresandcomics.com", "pageLimit": 250, "maxPages": 80},
+    {"id": "afac", "baseUrl": "https://www.actionfiguresandcomics.com", "pageLimit": 250, "maxPages": 100},
     # JP import specialty — SHFiguarts / MAFEX / Kaiyodo (filter via infer + RETAILER_SKIP)
-    {"id": "japan-figure", "baseUrl": "https://www.japan-figure.com", "pageLimit": 250, "maxPages": 40},
+    {"id": "japan-figure", "baseUrl": "https://www.japan-figure.com", "pageLimit": 250, "maxPages": 100},
     # Verified open specialty (2026-09-06 evening) — real variant.sku; AF via infer+RETAILER_SKIP
     # staractionfigures: UK specialty, strong Hasbro ML/BS/Classified + McFarlane Multiverse
     {"id": "staractionfigures", "baseUrl": "https://www.staractionfigures.co.uk", "pageLimit": 250, "maxPages": 30},
     # toydojo: US specialty import — SHFiguarts / Bandai / Hasbro / MAFEX / Mezco
     {"id": "toydojo", "baseUrl": "https://www.toydojo.com", "pageLimit": 250, "maxPages": 20},
     # toynk: large US specialty (noisy merch; RETAILER_SKIP drops bag clips/costumes)
-    {"id": "toynk", "baseUrl": "https://www.toynk.com", "pageLimit": 250, "maxPages": 25},
+    {"id": "toynk", "baseUrl": "https://www.toynk.com", "pageLimit": 250, "maxPages": 100},
+    # Verified open specialty (2026-09-06 late) — real variant.sku; AF via infer+RETAILER_SKIP
+    # indemandtoys: UK AF specialist (~3.5k catalog) — Hasbro ML/BS/Classified/TF + Mattel/NECA/McFarlane
+    {"id": "indemandtoys", "baseUrl": "https://www.indemandtoys.co.uk", "pageLimit": 250, "maxPages": 20},
+    # hobbyfigures: UK specialty import — Hasbro/McFarlane/SHF/MAFEX/Hot Toys (nendoroid/scale skipped)
+    {"id": "hobbyfigures", "baseUrl": "https://www.hobbyfigures.co.uk", "pageLimit": 250, "maxPages": 100},
 ]
 
 RETAILER_SKIP = re.compile(

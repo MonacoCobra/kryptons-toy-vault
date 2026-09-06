@@ -53,12 +53,19 @@ touch `comic-upc-map.json` / LOCG caches — leave those files alone.
 - `staractionfigures` — https://www.staractionfigures.co.uk (Hasbro ML/BS/Classified, McFarlane)
 - `toydojo` — https://www.toydojo.com (SHFiguarts / Bandai / Hasbro / MAFEX / Mezco)
 - `toynk` — https://www.toynk.com (mixed specialty; bag clips/costumes skipped via `RETAILER_SKIP`)
+- `indemandtoys` — https://www.indemandtoys.co.uk (UK AF specialist; Hasbro ML/BS/Classified/TF + Mattel/NECA)
+- `hobbyfigures` — https://www.hobbyfigures.co.uk (UK import; Hasbro/McFarlane/SHF/MAFEX; nendoroid/scale skipped)
+
+**Also this pass:** raised `maxPages` on truncated Shopify catalogs (toyarena/cmdstore/toynk/afac/japan-figure/solarisjapan/shop-mattel) up toward the ~page-100 products.json ceiling.
 
 **Probed and rejected (no usable AF SKU feed):**
 - FYE / CultureFly / Kidrobot / Iron Studios / QMx — wrong product mix (music, vinyl art, statues, Q-Fig)
-- Soap Studio — `products.json` open but `variant.sku` empty
+- Soap Studio — `products.json` open but `variant.sku` empty (or weak AF)
 - Travelling Man — comics/games dominant
 - ShowZ Store — timeout / unreliable
-- Popcultcha, HLJ, AmiAmi, Forbidden Planet, TFSource, Diamond Select, Playmates official, JAKKS, McFarlane official — 403/404/HTML/non-Shopify
+- Kapow Toys — not Shopify (HTML storefront)
+- Action Figure Essentials — open JSON but empty `variant.sku`
+- Hobbytron / Toyworld NZ / Ozzie Collectables / Character Options — wrong mix or too few AF
+- Popcultcha, HLJ, AmiAmi, Forbidden Planet, TFSource, Diamond Select, Playmates official, JAKKS, McFarlane official, The Chosen Prime, Brian's Toys, Figure Realm, Robot Kingdom — 403/404/HTML/non-Shopify
 - Pulse / BBTS / EE / Mezco / Hot Toys / Tamashii / MAFEX 1P / threezero / Takara mall / Sideshow — still blocked or no public JSON (reconfirmed)
 
