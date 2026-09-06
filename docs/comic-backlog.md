@@ -27,3 +27,7 @@ DC / Marvel / Image primary; also Vertigo/Black Label/WildStorm/Milestone, Cross
 ## Covers
 
 No generative AI cover art. Palette placeholders in backlog rows; Comic Vine URLs via existing cover tooling when the API key is available.
+
+## UPC / cover identity
+
+See **[comic-upc.md](./comic-upc.md)**. LOCG-first UPC/ISBN; cover matching prefers UPC so variants do not steal art. Backfill: `scripts/backfill-comic-upcs.py` (Crawl-delay 30s).

@@ -1,0 +1,36 @@
+{
+  "attempted": 19,
+  "upcFilled": 12,
+  "locgIdsStored": 18,
+  "locgCoversBaked": 18,
+  "locgNoUpcOlderIssues": [
+    "mv-asm-300",
+    "dc-superman-75",
+    "dc-batman-404",
+    "mv-hulk-181",
+    "dc-watchmen-1",
+    "im-spawn-1",
+    "dc-darkknight-1"
+  ],
+  "missing": [
+    "im-spawn-350"
+  ],
+  "artCheck": {
+    "ok": [
+      "dc-abs-batman-1",
+      "dc-abs-superman-1",
+      "mv-asm-300",
+      "im-saga-1",
+      "dc-batman-404",
+      "mv-civilwar-1",
+      "im-twd-1",
+      "im-spawn-1"
+    ],
+    "notes": "Sampled LOCG covers match expected main/A covers; older direct editions often lack UPC on LOCG."
+  },
+  "delaySeconds": 30,
+  "sourcePriority": [
+    "locg",
+    "comicvine-barcode-fallback"
+  ]
+}

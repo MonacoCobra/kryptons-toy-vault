@@ -1,0 +1,51 @@
+# Comic UPC / ISBN identity (LOCG-first)
+
+## Why
+
+Cover art must match the **actual issue** (especially vs A/B variants). UPC/ISBN is the durable identity key. Variant carousels come later — this pass is identity + matching only.
+
+## Sources (priority)
+
+1. **League of Comic Geeks** — primary UPC/ISBN on issue pages (`UPC` / `ISBN` fields). Never invent codes.
+2. **LOCG CSV import** — `src/lib/locg-import.ts` already maps `upc` / `isbn` / `upc/isbn` headers into `LocgRow.upc` when the export includes them. Shelby’s current profile export often omits the column; use issue-page lookup or a fuller export when available.
+3. **Comic Vine `barcode`** — optional fallback only when LOCG has no code (many pre-barcode / older issues).
+
+No generative AI art. Covers come from LOCG CDN or Comic Vine scans.
+
+## Runtime
+
+- `CatalogComic.upc` merges `comics.ts` extras + `src/data/comic-upc-map.json`.
+- Cover prefer order: explicit `extra.cover` → **UPC map LOCG cover** → `comic-cover-urls.json` → live `getComicCover`.
+- `getComicCover` (`src/lib/comic-covers.ts`): **UPC / LOCG id first**, then Comic Vine series+issue(+variant). Caches in `comic_covers` (see migration `0007_comic_covers_upc.sql`).
+
+## Backfill
+
+```bash
+python3 scripts/backfill-comic-upcs.py --seeds-only --limit 40 --delay 30
+```
+
+| Flag | Meaning |
+|------|---------|
+| `--delay 30` | Default. Matches LOCG `robots.txt` Crawl-delay. |
+| `--seeds-only` | Only `src/data/comic-locg-seeds.json` rows with `locgId`. |
+| `--only id,id` | Explicit catalog ids. |
+| `--no-cv` | Skip Comic Vine barcode fallback. |
+
+Writes:
+
+- `src/data/comic-upc-map.json`
+- updates `src/data/comic-cover-urls.json` when LOCG cover is verified
+- `scripts/comic-upc-backfill-stats.json`
+
+Seeds live in `src/data/comic-locg-seeds.json` (numeric LOCG comic ids + slugs). Discovery without a seed: series search cover-id ≈ issue **#1** only (publisher-matched; foreign editions rejected).
+
+## Honest leftovers
+
+- Pre-UPC era / many 1970s–80s floppies: LOCG often has **no UPC** — we still store `locgId` + cover when known.
+- Reprints vs originals: prefer first-print LOCG ids in seeds; verify title/publisher on fetch.
+- Full 35k+ archive: not fully backfilled in one weekday pass — rate limit is ~2 LOCG pages/minute. Re-run with more seeds over time.
+- User LOCG CSV without UPC column cannot populate barcodes until re-exported with that field or issue pages are fetched.
+
+## Profile
+
+Collection context: https://leagueofcomicgeeks.com/profile/KryptonsToyVault/collection

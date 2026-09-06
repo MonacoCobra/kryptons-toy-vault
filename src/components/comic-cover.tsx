@@ -6,7 +6,7 @@ import { getComicCover } from "@/lib/comic-covers";
 import type { CatalogComic, CustomComic } from "@/lib/types";
 import { cn, hashString } from "@/lib/utils";
 
-type CoverSource = Pick<CatalogComic, "series" | "issue" | "publisher" | "variant"> & {
+type CoverSource = Pick<CatalogComic, "series" | "issue" | "publisher" | "variant" | "upc"> & {
   palette?: [string, string, string];
   key?: boolean;
   id?: string;
@@ -123,7 +123,7 @@ export function ComicCover({
   comic: CoverSource | CustomComic;
   className?: string;
   photo?: string;
-  /** When true, look up a real Comic Vine cover if none is set (requires COMICVINE_API_KEY). */
+  /** When true, look up a real cover (LOCG UPC identity first, Comic Vine fallback). */
   resolveRemote?: boolean;
 }) {
   const catalogCover = "cover" in comic ? comic.cover : undefined;
@@ -146,6 +146,8 @@ export function ComicCover({
             series: comic.series,
             issue: comic.issue,
             publisher: comic.publisher,
+            variant: "variant" in comic ? comic.variant : undefined,
+            upc: "upc" in comic ? comic.upc : undefined,
           },
         });
         if (!cancelled && result.status === "ok" && result.coverUrl) {
@@ -158,7 +160,7 @@ export function ComicCover({
     return () => {
       cancelled = true;
     };
-  }, [resolveRemote, photo, catalogCover, comic.id, comic.series, comic.issue, comic.publisher]);
+  }, [resolveRemote, photo, catalogCover, comic.id, comic.series, comic.issue, comic.publisher, "variant" in comic ? comic.variant : undefined, "upc" in comic ? comic.upc : undefined]);
 
   const src = photo || catalogCover || remote;
 

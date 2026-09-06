@@ -1,5 +1,9 @@
 import type { CatalogComic, ComicFormat } from "@/lib/types";
 import coverUrls from "./comic-cover-urls.json";
+import upcMap from "./comic-upc-map.json";
+
+type UpcMapEntry = { upc?: string; coverUrl?: string; locgId?: string; source?: string };
+const UPC_MAP = upcMap as Record<string, UpcMapEntry>;
 
 type Row = [
   id: string,
@@ -36067,11 +36071,12 @@ export const COMICS: CatalogComic[] = rows.map(
     msrp,
     format,
     variant: extra?.variant,
-    upc: extra?.upc,
+    upc: extra?.upc ?? UPC_MAP[id]?.upc,
     demand,
     key: key === 1,
     palette: pal(palette),
-    cover: extra?.cover ?? (coverUrls as Record<string, string>)[id],
+    // Prefer UPC-tied LOCG cover when present so variants keep distinct art
+    cover: extra?.cover ?? UPC_MAP[id]?.coverUrl ?? (coverUrls as Record<string, string>)[id],
   }),
 );
 

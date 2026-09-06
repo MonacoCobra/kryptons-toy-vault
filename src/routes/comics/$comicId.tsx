@@ -86,7 +86,7 @@ function ComicDetail() {
           <Meta label="Cover price" value={usd(comic.msrp)} />
           <Meta label="Writer" value={comic.writers.join(", ")} />
           <Meta label="Artist" value={comic.artists.join(", ")} />
-          {comic.upc ? <Meta label="UPC" value={comic.upc} /> : null}
+          <Meta label="UPC / ISBN" value={comic.upc ?? "—"} />
         </dl>
 
         <MarketEstimate
