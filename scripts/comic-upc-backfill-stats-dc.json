@@ -1,124 +1,12 @@
 {
-  "attempted": 189,
+  "attempted": 203,
   "beforeCovers": 206,
   "beforeUpc": 149,
-  "coverUpdated": 178,
-  "coversFromSeriesList": 89,
+  "coverUpdated": 206,
+  "coversFromSeriesList": 103,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "dc-action-1079",
-      "issue": "1079",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388407911"
-    },
-    {
-      "id": "dc-action-1078",
-      "issue": "1078",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388407811"
-    },
-    {
-      "id": "dc-action-1077",
-      "issue": "1077",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388407711"
-    },
-    {
-      "id": "dc-action-1076",
-      "issue": "1076",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388407611"
-    },
-    {
-      "id": "dc-action-1075",
-      "issue": "1075",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388407511"
-    },
-    {
-      "id": "dc-action-1074",
-      "issue": "1074",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388407411"
-    },
-    {
-      "id": "dc-action-1073",
-      "issue": "1073",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388407311"
-    },
-    {
-      "id": "dc-action-1072",
-      "issue": "1072",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388407211"
-    },
-    {
-      "id": "dc-action-1071",
-      "issue": "1071",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388407111"
-    },
-    {
-      "id": "dc-action-1070",
-      "issue": "1070",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388407011"
-    },
-    {
-      "id": "dc-action-1069",
-      "issue": "1069",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388406911"
-    },
-    {
-      "id": "dc-action-1068",
-      "issue": "1068",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388406811"
-    },
-    {
-      "id": "dc-action-1067",
-      "issue": "1067",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388406711"
-    },
-    {
-      "id": "dc-action-1066",
-      "issue": "1066",
-      "series": "Action Comics",
-      "seriesPick": "124401",
-      "status": "locg_upc",
-      "upc": "76194134388406611"
-    },
     {
       "id": "dc-action-1065",
       "issue": "1065",
@@ -646,17 +534,126 @@
       "seriesPick": "124401",
       "status": "locg_upc",
       "upc": "76194134388400011"
+    },
+    {
+      "id": "dc-action-999",
+      "issue": "999",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388499911"
+    },
+    {
+      "id": "dc-action-998",
+      "issue": "998",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388499811"
+    },
+    {
+      "id": "dc-action-997",
+      "issue": "997",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388499711"
+    },
+    {
+      "id": "dc-action-996",
+      "issue": "996",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388499611"
+    },
+    {
+      "id": "dc-action-995",
+      "issue": "995",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388499511"
+    },
+    {
+      "id": "dc-action-994",
+      "issue": "994",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388499411"
+    },
+    {
+      "id": "dc-action-993",
+      "issue": "993",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388499311"
+    },
+    {
+      "id": "dc-action-992",
+      "issue": "992",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388499211"
+    },
+    {
+      "id": "dc-action-991",
+      "issue": "991",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388499121"
+    },
+    {
+      "id": "dc-action-990",
+      "issue": "990",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388499021"
+    },
+    {
+      "id": "dc-action-989",
+      "issue": "989",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "locg_upc",
+      "upc": "76194134388498911"
+    },
+    {
+      "id": "dc-batman-2016-163",
+      "issue": "163",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-162",
+      "issue": "162",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "dc-batman-2016-161",
+      "issue": "161",
+      "series": "Batman (2016)",
+      "seriesPick": "100001",
+      "status": "locg_no_upc"
     }
   ],
   "errors": 100,
-  "locgHits": 89,
-  "locgNoUpc": 0,
+  "locgHits": 103,
+  "locgNoUpc": 3,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
   "seriesBatch": true,
-  "seriesResolved": 3,
+  "seriesResolved": 4,
   "skippedExisting": 0,
   "startedAt": "2026-09-06T17:06:32Z",
   "timedOut": false,
-  "upcFilled": 89
+  "upcFilled": 100
 }
