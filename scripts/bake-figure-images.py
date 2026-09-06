@@ -445,6 +445,13 @@ RETAILER_FEEDS = [
     {"id": "afac", "baseUrl": "https://www.actionfiguresandcomics.com", "pageLimit": 250, "maxPages": 80},
     # JP import specialty — SHFiguarts / MAFEX / Kaiyodo (filter via infer + RETAILER_SKIP)
     {"id": "japan-figure", "baseUrl": "https://www.japan-figure.com", "pageLimit": 250, "maxPages": 40},
+    # Verified open specialty (2026-09-06 evening) — real variant.sku; AF via infer+RETAILER_SKIP
+    # staractionfigures: UK specialty, strong Hasbro ML/BS/Classified + McFarlane Multiverse
+    {"id": "staractionfigures", "baseUrl": "https://www.staractionfigures.co.uk", "pageLimit": 250, "maxPages": 30},
+    # toydojo: US specialty import — SHFiguarts / Bandai / Hasbro / MAFEX / Mezco
+    {"id": "toydojo", "baseUrl": "https://www.toydojo.com", "pageLimit": 250, "maxPages": 20},
+    # toynk: large US specialty (noisy merch; RETAILER_SKIP drops bag clips/costumes)
+    {"id": "toynk", "baseUrl": "https://www.toynk.com", "pageLimit": 250, "maxPages": 25},
 ]
 
 RETAILER_SKIP = re.compile(
@@ -457,7 +464,10 @@ RETAILER_SKIP = re.compile(
     r"monster high|kpop demon|tonies|deck box|beach towel|cozy set|"
     r"wall calendar|calendar|tcg|booster|sleeves|playmat|diecast car|"
     r"trading card set|magnet only|poster.?stand|poster & stand|"
-    r"imaginext|spin master|mini blind bag|2 inch mini)\b",
+    r"imaginext|spin master|mini blind bag|2 inch mini|"
+    r"bag clip|foam bag|keychain|cosbi|bobble.?head|q-fig|minico|"
+    r"costume|jumpsuit|hockey jersey|inspirit|"
+    r"vinyl art|dunny|kidrobot)\b",
     re.I,
 )
 
@@ -861,9 +871,15 @@ def score_pair(fig: dict, prod: dict) -> float:
     if fs:
         hits = sum(1 for t in fs if t in char or t in prod["_blob"])
         sub_score = 5.0 * hits / max(1, len(fs))
-        # Meaningful subtitle cues only (ignore Wave6 / Exclusive densify noise)
+        # Meaningful subtitle cues only (ignore Wave6 / Exclusive densify noise).
+        # Narrow exception: Classified role titles (Dog Handler, Artillery) and MotU
+        # Origins pack cues (Minicomic Collection) rarely appear on specialty retailer
+        # titles once the character name already matches contiguously + line family gate.
         if len(fs) >= 2 and hits == 0:
-            return -1.0
+            if fam in {"classified", "origins", "masterverse", "marvel-legends", "black-series", "studio-series", "lightning"} and contiguous:
+                sub_score = 0.0  # soft miss — keep name/line score; do not invent a match
+            else:
+                return -1.0
     else:
         sub_score = 1.5 if raw_fs else 1.0
     if dist_toks:

@@ -46,3 +46,19 @@ Do not expand catalog rows except `sku` (and bake tags). Comic UPC workers may
 touch `comic-upc-map.json` / LOCG caches — leave those files alone.
 
 **No Build Publish** for data-only bumps (Lyra publishes).
+
+## Feed probe notes (2026-09-06)
+
+**Added (verified open `products.json` + non-empty `variant.sku`):**
+- `staractionfigures` — https://www.staractionfigures.co.uk (Hasbro ML/BS/Classified, McFarlane)
+- `toydojo` — https://www.toydojo.com (SHFiguarts / Bandai / Hasbro / MAFEX / Mezco)
+- `toynk` — https://www.toynk.com (mixed specialty; bag clips/costumes skipped via `RETAILER_SKIP`)
+
+**Probed and rejected (no usable AF SKU feed):**
+- FYE / CultureFly / Kidrobot / Iron Studios / QMx — wrong product mix (music, vinyl art, statues, Q-Fig)
+- Soap Studio — `products.json` open but `variant.sku` empty
+- Travelling Man — comics/games dominant
+- ShowZ Store — timeout / unreliable
+- Popcultcha, HLJ, AmiAmi, Forbidden Planet, TFSource, Diamond Select, Playmates official, JAKKS, McFarlane official — 403/404/HTML/non-Shopify
+- Pulse / BBTS / EE / Mezco / Hot Toys / Tamashii / MAFEX 1P / threezero / Takara mall / Sideshow — still blocked or no public JSON (reconfirmed)
+
