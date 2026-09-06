@@ -1,236 +1,12 @@
 {
-  "attempted": 222,
+  "attempted": 250,
   "beforeCovers": 145,
   "beforeUpc": 88,
-  "coverUpdated": 444,
-  "coversFromSeriesList": 222,
+  "coverUpdated": 500,
+  "coversFromSeriesList": 250,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
   "details": [
-    {
-      "id": "mv-uxm-502",
-      "issue": "502",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461250211"
-    },
-    {
-      "id": "mv-uxm-501",
-      "issue": "501",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461250111"
-    },
-    {
-      "id": "mv-uxm-500",
-      "issue": "500",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461250011"
-    },
-    {
-      "id": "mv-uxm-499",
-      "issue": "499",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461249911"
-    },
-    {
-      "id": "mv-uxm-498",
-      "issue": "498",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461249811"
-    },
-    {
-      "id": "mv-uxm-497",
-      "issue": "497",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461249711"
-    },
-    {
-      "id": "mv-uxm-496",
-      "issue": "496",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461249611"
-    },
-    {
-      "id": "mv-uxm-495",
-      "issue": "495",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461249511"
-    },
-    {
-      "id": "mv-uxm-494",
-      "issue": "494",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461249411"
-    },
-    {
-      "id": "mv-uxm-493",
-      "issue": "493",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461249311"
-    },
-    {
-      "id": "mv-uxm-492",
-      "issue": "492",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461249211"
-    },
-    {
-      "id": "mv-uxm-491",
-      "issue": "491",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461249111"
-    },
-    {
-      "id": "mv-uxm-490",
-      "issue": "490",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461249011"
-    },
-    {
-      "id": "mv-uxm-489",
-      "issue": "489",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461248911"
-    },
-    {
-      "id": "mv-uxm-488",
-      "issue": "488",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461248811"
-    },
-    {
-      "id": "mv-uxm-487",
-      "issue": "487",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461248711"
-    },
-    {
-      "id": "mv-uxm-486",
-      "issue": "486",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461248611"
-    },
-    {
-      "id": "mv-uxm-485",
-      "issue": "485",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461248511"
-    },
-    {
-      "id": "mv-uxm-484",
-      "issue": "484",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461248411"
-    },
-    {
-      "id": "mv-uxm-483",
-      "issue": "483",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461248311"
-    },
-    {
-      "id": "mv-uxm-482",
-      "issue": "482",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461248211"
-    },
-    {
-      "id": "mv-uxm-481",
-      "issue": "481",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461248111"
-    },
-    {
-      "id": "mv-uxm-480",
-      "issue": "480",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461248011"
-    },
-    {
-      "id": "mv-uxm-479",
-      "issue": "479",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461247911"
-    },
-    {
-      "id": "mv-uxm-478",
-      "issue": "478",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "759606024612478111"
-    },
-    {
-      "id": "mv-uxm-477",
-      "issue": "477",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "075960602461247711"
-    },
-    {
-      "id": "mv-uxm-476",
-      "issue": "476",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461247611"
-    },
-    {
-      "id": "mv-uxm-475",
-      "issue": "475",
-      "series": "The Uncanny X-Men",
-      "seriesPick": "108806",
-      "status": "locg_upc",
-      "upc": "75960602461247511"
-    },
     {
       "id": "mv-uxm-474",
       "issue": "474",
@@ -618,11 +394,207 @@
       "series": "Amazing Spider-Man (2018)",
       "seriesPick": "100043",
       "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-65",
+      "issue": "65",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-64",
+      "issue": "64",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-63",
+      "issue": "63",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-62",
+      "issue": "62",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-61",
+      "issue": "61",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-60",
+      "issue": "60",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-59",
+      "issue": "59",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-58",
+      "issue": "58",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-57",
+      "issue": "57",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-56",
+      "issue": "56",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-55",
+      "issue": "55",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-54",
+      "issue": "54",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-53",
+      "issue": "53",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-52",
+      "issue": "52",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-51",
+      "issue": "51",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-49",
+      "issue": "49",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-48",
+      "issue": "48",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-47",
+      "issue": "47",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-46",
+      "issue": "46",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-45",
+      "issue": "45",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-44",
+      "issue": "44",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-43",
+      "issue": "43",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-42",
+      "issue": "42",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-41",
+      "issue": "41",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-40",
+      "issue": "40",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-39",
+      "issue": "39",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-38",
+      "issue": "38",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
+    },
+    {
+      "id": "mv-asm-2018-37",
+      "issue": "37",
+      "series": "Amazing Spider-Man (2018)",
+      "seriesPick": "100043",
+      "status": "locg_no_upc"
     }
   ],
   "errors": 0,
-  "locgHits": 222,
-  "locgNoUpc": 28,
+  "locgHits": 250,
+  "locgNoUpc": 56,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
   "seriesBatch": true,
