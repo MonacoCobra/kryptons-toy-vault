@@ -1,28 +1,28 @@
 {
-  "bakedAt": "2026-09-05T22:00:06.410446+00:00",
-  "day": "2026-09-05",
+  "bakedAt": "2026-09-06T00:08:31.092042+00:00",
+  "day": "2026-09-06",
   "minScore": 16.0,
-  "indexSize": 4237,
+  "indexSize": 4810,
   "fetchLive": false,
   "before": {
-    "total": 9422,
-    "withImage": 3921,
-    "pct": 41.62
+    "total": 19486,
+    "withImage": 4589,
+    "pct": 23.55
   },
   "after": {
-    "total": 9422,
-    "withImage": 4186,
-    "pct": 44.43
+    "total": 19486,
+    "withImage": 4597,
+    "pct": 23.59
   },
-  "matched": 265,
-  "candidatesAboveThreshold": 477,
-  "patchedOneshot": 265,
-  "urlMapSize": 266,
+  "matched": 8,
+  "candidatesAboveThreshold": 8,
+  "patchedOneshot": 8,
+  "urlMapSize": 677,
   "byCompany": {
-    "mattel": 119,
-    "super7": 77,
-    "neca": 52,
-    "mcfarlane": 17
+    "neca": 5,
+    "blitzway": 1,
+    "mattel": 1,
+    "figma": 1
   },
   "safeguards": [
     "same-company hard gate",
@@ -31,143 +31,155 @@
     "character-focused name match (subtitle for ULTIMATES/ReAction headers)",
     "first significant name token required",
     "multi-token subtitle requires \u22651 hit",
-    "one product image \u2192 one figure (best score)",
+    "one product image \u2192 one character name (variants may share CDN shot)",
     "Mattel DC Premier not used for unrelated curated lines"
   ],
   "samples": [
     {
-      "score": 35.0,
-      "figureId": "mcfdc-superman-1978",
-      "figure": "Superman / The Movie 1978 Deluxe / DC Multiverse",
-      "product": "SUPERMAN / THE MOVIE (1978) McFarlane Toys DC Multiverse Deluxe Theatrical Edition Superman Action Figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0268/8129/4530/files/17839_01_NL.1772485577745.jpg?v=1772487254"
+      "score": 26.0,
+      "figureId": "bw7-bw-32",
+      "figure": "Carbotix Getter 1 / Getter Robo / Blitzway Carbotix",
+      "product": "Getter Robo-1 / Action Figure",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0795/5877/0994/files/190122_getter-1_BB_web1_085e326f-7497-4fd4-8d"
     },
     {
-      "score": 35.0,
-      "figureId": "d14s7u-ult-thundercats-jaga",
-      "figure": "Jaga / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
-      "product": "ThunderCats ULTIMATES! Wave 3 / Jaga",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/products/1585600245UL-Thundercats_Jaga_STORE.png?v=17594"
+      "score": 26.0,
+      "figureId": "neca5-neca-predator-jungle",
+      "figure": "Jungle Hunter / Predator / Predator Ultimate",
+      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/UltimateJH3.jpg?v=1773857407"
     },
     {
-      "score": 35.0,
-      "figureId": "d14s7u-ult-thundercats-wilykit",
-      "figure": "WilyKit / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
-      "product": "Thundercats ULTIMATES! Wave 8 / WilyKit",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/products/UL-Thundercats_W8_Wilykit_Grid_2048.jpg?v=16763"
+      "score": 26.0,
+      "figureId": "neca-predator-jungle",
+      "figure": "Jungle Hunter / Predator / Predator",
+      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/UltimateJH3.jpg?v=1773857407"
     },
     {
-      "score": 35.0,
-      "figureId": "d14s7u-ult-thundercats-wilykat",
-      "figure": "WilyKat / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
-      "product": "ThunderCats ULTIMATES! Wave 9 / WilyKat",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/files/UL-Thundercats_W9_Wilykat_Grid.jpg?v=1686853767"
+      "score": 26.0,
+      "figureId": "neca3-ult-predator-jungle",
+      "figure": "Jungle Hunter / Predator Ultimate / Predator Ultimate",
+      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/UltimateJH3.jpg?v=1773857407"
     },
     {
-      "score": 35.0,
-      "figureId": "d14s7u-ult-thundercats-snarf",
-      "figure": "Snarf / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
-      "product": "ThunderCats ULTIMATES! / Snarf",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/files/UL-ThunderCats_Snarf_product.jpg?v=1783027640"
+      "score": 24.0,
+      "figureId": "wwe-elite-nash",
+      "figure": "Kevin Nash / nWo / WWE Elite",
+      "product": "WWE Elite Scott Hall Kevin Nash Hulk Hogan Action Figures / mattel-creations",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0568/1132/3597/files/168986148172eaf2c18457cde7967ca4c879d178.jpg?"
     },
     {
-      "score": 35.0,
-      "figureId": "d14s7u-ult-thundercats-monkian",
-      "figure": "Monkian / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
-      "product": "ThunderCats ULTIMATES! Wave 4 / Monkian",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/products/1600215448UL-Thundercats_W4_Monkian_Store_2048."
+      "score": 23.5,
+      "figureId": "neca6-neca-jungle-hunter",
+      "figure": "Jungle Hunter / Predator Wave6 / Predator Ultimate",
+      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/UltimateJH3.jpg?v=1773857407"
     },
     {
-      "score": 35.0,
-      "figureId": "d14s7u-ult-thundercats-jackalman",
-      "figure": "Jackalman / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
-      "product": "Thundercats Ultimate Figure / Jackalman",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/products/Jackalman_white.png?v=1759451221"
+      "score": 22.0,
+      "figureId": "d14neca-pred-jungle-deluxe",
+      "figure": "Jungle Hunter / Deluxe / Predator",
+      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/UltimateJH3.jpg?v=1773857407"
     },
     {
-      "score": 35.0,
-      "figureId": "d14s7u-ult-thundercats-slithe",
-      "figure": "Slithe / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
-      "product": "ThunderCats ULTIMATES! Wave 3 / Slithe",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/files/UL-ThunderCats_Slithe_package.jpg?v=1759864796"
-    },
-    {
-      "score": 35.0,
-      "figureId": "d14s7u-ult-thundercats-tygra",
-      "figure": "Tygra / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
-      "product": "ThunderCats ULTIMATES! / Tygra",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/files/UL-ThunderCats_Tygra_product1.jpg?v=1773076978"
-    },
-    {
-      "score": 35.0,
-      "figureId": "d14s7u-ult-thundercats-panthro",
-      "figure": "Panthro / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
-      "product": "ThunderCats ULTIMATES! Figure / Panthro",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/products/P01.png?v=1667591599"
-    },
-    {
-      "score": 35.0,
-      "figureId": "d14s7u-ult-thundercats-liono",
-      "figure": "Lion-O / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
-      "product": "ThunderCats ULTIMATES! Figure / Lion-O",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/products/L01.png?v=1759940398"
-    },
-    {
-      "score": 35.0,
-      "figureId": "d14s7u-ult-thundercats-cheetara",
-      "figure": "Cheetara / ThunderCats ULTIMATES! / Super7 ULTIMATES!",
-      "product": "ThunderCats ULTIMATES! / Cheetara",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/files/UL-ThunderCats_Cheetara_product1.jpg?v=1773076979"
+      "score": 21.0,
+      "figureId": "fgm10-fgm-17",
+      "figure": "figma V / Cyberpunk / figma Cyberpunk",
+      "product": "figma Link / Tears of the Kingdom ver. DX Edition",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0533/2434/9616/files/101_9405d628-bd17-4dbc-8dfc-0aeb244f6542.jpg?"
     }
   ],
   "lowSamples": [
     {
-      "score": 24.0,
-      "figureId": "neca-foot-soldier",
-      "figure": "Foot Soldier / Animated Series / TMNT",
-      "product": "Teenage Mutant Ninja Turtles 2 / Foot Soldier with Weapons Rack 7\u201d Scale Action Figures (2-Pack)"
+      "score": 26.0,
+      "figureId": "bw7-bw-32",
+      "figure": "Carbotix Getter 1 / Getter Robo / Blitzway Carbotix",
+      "product": "Getter Robo-1 / Action Figure"
+    },
+    {
+      "score": 26.0,
+      "figureId": "neca5-neca-predator-jungle",
+      "figure": "Jungle Hunter / Predator / Predator Ultimate",
+      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure"
+    },
+    {
+      "score": 26.0,
+      "figureId": "neca-predator-jungle",
+      "figure": "Jungle Hunter / Predator / Predator",
+      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure"
+    },
+    {
+      "score": 26.0,
+      "figureId": "neca3-ult-predator-jungle",
+      "figure": "Jungle Hunter / Predator Ultimate / Predator Ultimate",
+      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure"
     },
     {
       "score": 24.0,
-      "figureId": "wwe-elite-alexa",
-      "figure": "Alexa Bliss / Elite Collection / WWE Elite",
-      "product": "WWE Alexa Bliss Ultimate Edition Action Figure / mattel-creations"
-    },
-    {
-      "score": 24.0,
-      "figureId": "wwe-elite-orton",
-      "figure": "Randy Orton / Elite Collection / WWE Elite",
-      "product": "WWE Ultimate Edition Fan Takeover Randy Orton Action Figure / mattel-creations"
-    },
-    {
-      "score": 24.0,
-      "figureId": "wwe-elite-jake",
-      "figure": "Jake the Snake Roberts / Elite Collection / WWE Elite",
-      "product": "WWE Action Figure Ultimate Edition Coliseum Collection Jake \u201cThe Snake\u201d Roberts & \u201cRavishing\u201d Rick Rude 2-Pack / mattel-creations"
+      "figureId": "wwe-elite-nash",
+      "figure": "Kevin Nash / nWo / WWE Elite",
+      "product": "WWE Elite Scott Hall Kevin Nash Hulk Hogan Action Figures / mattel-creations"
     },
     {
       "score": 23.5,
-      "figureId": "neca-laurie",
-      "figure": "Laurie Strode / Halloween 2018 / Horror",
-      "product": "Halloween 2 (1981) / Dr. Loomis & Laurie Strode 8\" Clothed Action Figure (2-Pack)"
+      "figureId": "neca6-neca-jungle-hunter",
+      "figure": "Jungle Hunter / Predator Wave6 / Predator Ultimate",
+      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure"
     },
     {
-      "score": 23.5,
-      "figureId": "neca-pennywise",
-      "figure": "Pennywise / IT 2017 / Horror",
-      "product": "IT: Welcome to Derry / Ultimate Blood Pennywise 7\" Scale Action Figure"
+      "score": 22.0,
+      "figureId": "d14neca-pred-jungle-deluxe",
+      "figure": "Jungle Hunter / Deluxe / Predator",
+      "product": "Predator / Ultimate Jungle Hunter 7\u201d Scale Action Figure"
     },
     {
-      "score": 17.0,
-      "figureId": "neca-mummy",
-      "figure": "The Mummy / Universal Monsters / Universal Monsters",
-      "product": "Universal Monsters / 7\u201d Scale Action Figure - Ultimate Mummy"
-    },
-    {
-      "score": 17.0,
-      "figureId": "wwe-elite-undertaker",
-      "figure": "The Undertaker / Elite Collection / WWE Elite",
-      "product": "WWE Elite Legends Undertaker Action Figure / mattel-creations"
+      "score": 21.0,
+      "figureId": "fgm10-fgm-17",
+      "figure": "figma V / Cyberpunk / figma Cyberpunk",
+      "product": "figma Link / Tears of the Kingdom ver. DX Edition"
     }
-  ]
+  ],
+  "sessionAfter": {
+    "total": 19486,
+    "withImage": 4597,
+    "pct": 23.59,
+    "deltaWithImage": 676,
+    "bakedOverlay": 677,
+    "urlMapSize": 677,
+    "indexSize": 4810,
+    "storefronts": 16,
+    "byCompanyBaked": {
+      "mattel": 179,
+      "super7": 168,
+      "mcfarlane": 133,
+      "neca": 100,
+      "hiya": 38,
+      "premiumdna": 12,
+      "mondo": 9,
+      "blitzway": 9,
+      "figma": 9,
+      "bossfight": 9,
+      "starace": 5,
+      "blokees": 4,
+      "exo6": 2
+    }
+  },
+  "honestLeftovers": [
+    "Hasbro Pulse (Marvel Legends / Classified / Black Series / Studio Series) \u2014 no public products.json",
+    "Mezco One:12, Hot Toys, Bandai SHF, MAFEX/Medicom, threezero \u2014 no stable open Shopify JSON",
+    "DC Direct / Kenner Super Powers / Mattel DCUC & JLU \u2014 blocked families (no honest feed line)",
+    "Playmates / Kaiyodo / Four Horsemen / Storm / Jakks \u2014 no verified open products.json",
+    "McFarlane depth limited to ~20 shop.dc.com AF SKUs (same-character CDN reuse across variants)",
+    "TLS BST AXN \u2014 live shop currently doll/plush/MASK heavy; few AF products",
+    "BBTS-only curated brands without brand Shopify JSON remain placeholders"
+  ],
+  "sessionBaseline": {
+    "total": 19486,
+    "withImage": 3921,
+    "pct": 20.12,
+    "note": "Start of maximize pass (mostly native Shopify oneshot images)"
+  }
 }

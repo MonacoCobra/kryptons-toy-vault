@@ -18,6 +18,11 @@ paginates **all** pages from these same shops (see `scripts/gen-figure-oneshot.p
 | Mondo | https://www.mondoshop.com | 1/12 / 1/6 / Soft Vinyl figures |
 | Shop DC | https://shop.dc.com | McFarlane Multiverse AF (filter merch) |
 | NECA Store | https://store.necaonline.com | Official NECA AF (filter pins/plush/apparel) |
+| Blokees | https://blokees.com | Champion/Galaxy model figures |
+| Blitzway | https://blitzway.com | Carbotix / Figure Complex / AF |
+| EXO-6 | https://exo-6.com | Star Trek 1:6 articulated |
+| Star Ace | https://www.staracetoys.com | 1/6 AF + DefoStyle soft vinyl |
+| DamToys | https://shop.damtoys.com | 1/6 / 1/12 military & GK |
 
 ## Out of scope
 
@@ -26,7 +31,8 @@ Pins, Barbie/dolls, poster/print merch, board games, drinkware, puzzles.
 ## Still no stable Shopify JSON
 
 Hasbro Pulse, BBTS, Entertainment Earth, Mezco official, McFarlane Toys store,
-Hot Toys, Sideshow, Bandai Tamashii, threezero — covered via curated archive
+Hot Toys, Sideshow, Bandai Tamashii, MAFEX/Medicom, threezero, Takara Tomy mall —
+still no stable public `products.json` we verified. Covered via curated archive
 depth and/or weekly seed, not live JSON. DC Direct / Kenner Super Powers /
 Mattel DCUC are curated in `scripts/figure_oneshot/curated_dc.py`.
 

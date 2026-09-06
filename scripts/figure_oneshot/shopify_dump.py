@@ -60,6 +60,43 @@ STOREFRONTS = [
             re.I,
         ),
     },
+    # Verified open products.json (2026-09) — BBTS-adjacent brands already in CompanyId
+    {
+        "id": "blokees",
+        "baseUrl": "https://blokees.com",
+        "company": "blokees",
+        "requireHint": re.compile(
+            r"blokees|champion|galaxy|defender|transformers|ultraman|mega man|saint seiya|figure",
+            re.I,
+        ),
+    },
+    {
+        "id": "blitzway",
+        "baseUrl": "https://blitzway.com",
+        "company": "blitzway",
+        "requireHint": re.compile(r"action figure|figure|carbote|mazinger|voltron|getter|scale", re.I),
+    },
+    {
+        "id": "exo6",
+        "baseUrl": "https://exo-6.com",
+        "company": "exo6",
+        "requireHint": re.compile(r"star trek|spock|kirk|picard|janeway|figure|1:?6|scale", re.I),
+    },
+    {
+        "id": "starace",
+        "baseUrl": "https://www.staracetoys.com",
+        "company": "starace",
+        "requireHint": re.compile(
+            r"1/?6|action figure|figure|harry potter|wonder woman|elvis|pacific rim|defostyle",
+            re.I,
+        ),
+    },
+    {
+        "id": "damtoys",
+        "baseUrl": "https://shop.damtoys.com",
+        "company": "damtoys",
+        "requireHint": re.compile(r"damtoys|1/?6|1/?12|figure|gangsters|pocket elite|vertex", re.I),
+    },
 ]
 
 SKIP_TYPE = re.compile(
@@ -164,6 +201,37 @@ def is_figure_like(p: dict, source: dict) -> bool:
             return False
         if not re.search(r"\b(action figure|figure|ultimate|scale)\b", blob, re.I):
             return False
+    # Blokees: keep model/figure kits; skip apparel/mystery fluff when obvious
+    if source["id"] == "blokees":
+        if re.search(r"\b(t-?shirt|hoodie|mug|sticker|poster|plush|blind box flat)\b", blob, re.I):
+            return False
+        return True
+    # Blitzway: articulated figures; skip posters/apparel
+    if source["id"] == "blitzway":
+        if re.search(r"\b(poster|t-?shirt|hoodie|mug|pin|apparel)\b", blob, re.I):
+            return False
+        if not re.search(r"\b(figure|action|carbote|mazinger|voltron|getter|scale)\b", blob, re.I):
+            return False
+        return True
+    # EXO-6: Star Trek 1:6 figures; skip pure statues when tagged as statue-only
+    if source["id"] == "exo6":
+        if re.search(r"\bmixed media statue\b", blob, re.I) and not re.search(r"\bfigure\b", blob, re.I):
+            return False
+        if re.search(r"\b(t-?shirt|hoodie|mug|poster|pin)\b", blob, re.I):
+            return False
+        return True
+    # Star Ace: prefer 1/6 AF; allow DefoStyle soft vinyl figures; skip apparel
+    if source["id"] == "starace":
+        if re.search(r"\b(t-?shirt|hoodie|mug|poster|apparel|pin)\b", blob, re.I):
+            return False
+        if not re.search(r"\b(1/?6|action figure|figure|defostyle|soft.?vinyl)\b", blob, re.I):
+            return False
+        return True
+    # DamToys shop: keep figure SKUs
+    if source["id"] == "damtoys":
+        if re.search(r"\b(t-?shirt|hoodie|mug|poster|apparel)\b", blob, re.I):
+            return False
+        return True
     # shop.dc.com: AF only (skip merch/statues/funko/plush)
     if source["id"] == "shop-dc":
         if re.search(
@@ -179,7 +247,7 @@ def is_figure_like(p: dict, source: dict) -> bool:
         return False
     if FIGURE_HINT.search(blob) or re.search(r"figures?", ptype, re.I):
         return True
-    if source["company"] in {"bossfight", "loyalsubjects", "super7", "hiya", "premiumdna", "valaverse", "neca"}:
+    if source["company"] in {"bossfight", "loyalsubjects", "super7", "hiya", "premiumdna", "valaverse", "neca", "blokees", "blitzway", "exo6", "starace", "damtoys"}:
         return True
     return False
 
@@ -221,6 +289,11 @@ def date_from(p: dict, fallback: str) -> str:
 
 def split_title(title: str) -> tuple[str, str]:
     cleaned = re.sub(r"\s+", " ", title).strip()
+    # Boss Fight / Blokees often use "Line | Character: subtitle"
+    if " | " in cleaned:
+        left, right = cleaned.split(" | ", 1)
+        right = right.split(" | ")[-1].strip()  # last segment often the character
+        return (right.split(":")[0].strip() or right)[:120], (left if right else cleaned)[:120]
     parts = re.split(r"\s+[—–-]\s+", cleaned)
     if len(parts) >= 2:
         return parts[0].strip(), " - ".join(parts[1:]).strip()

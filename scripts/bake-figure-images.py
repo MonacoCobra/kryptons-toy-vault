@@ -43,7 +43,9 @@ WEAK = set("man men boy girl king queen lord lady black white red blue green glo
 LINE_AS_NAME = re.compile(
     r"ultimates?!?|reaction|masters of the universe|dc multiverse|mcfarlane|"
     r"teenage mutant|g\.?i\.?\s*joe|thundercats|silverhawks|universal monsters|"
-    r"toho|spongebob|wwe elite|ben cooper",
+    r"toho|spongebob|wwe elite|ben cooper|h\.?a\.?c\.?k\.?s|epic h\.?a\.?c\.?k|"
+    r"vitruvian|court of the dead|hiya exquisite|exquisite (?:basic|mini)|"
+    r"blokees|champion class|galaxy version|defostyle|carbote?x?",
     re.I,
 )
 
@@ -63,7 +65,9 @@ FAMILY_REQUIRE = {
     "dcuc": re.compile(r"dc universe classics|universe classics", re.I),
     "dcd": re.compile(r"dc direct|dc collectibles", re.I),
     "motu-generic": re.compile(r"masters of the universe|masterverse|origins", re.I),
-    "hacks": re.compile(r"h\.?a\.?c\.?k|hacks|boss fight", re.I),
+    "hacks": re.compile(r"h\.?a\.?c\.?k|hacks|boss fight|vitruvian|epic", re.I),
+    "hiya-godzilla": re.compile(r"godzilla|kong|ghidorah|mechagodzilla|shimo|mothra|rodan", re.I),
+    "hiya-exquisite": re.compile(r"exquisite|hiya", re.I),
 }
 
 # Curated lines with no honest Shopify counterpart on our feeds — never match.
@@ -83,6 +87,23 @@ def tokens(s: str) -> list[str]:
 def significant_name_tokens(name: str) -> list[str]:
     toks = tokens(name)
     return [t for t in toks if t not in WEAK or len(toks) == 1]
+
+NAME_PREFIX_STRIP = re.compile(
+    r"^(superb scale|figure complex|carbotix|hiya|blokees|defostyle|vitruvian)\s+",
+    re.I,
+)
+
+
+def figure_match_name(name: str) -> str:
+    """Strip line-style prefixes so 'Figure Complex Boss Borot' → 'Boss Borot'."""
+    n = (name or "").strip()
+    prev = None
+    while prev != n:
+        prev = n
+        n = NAME_PREFIX_STRIP.sub("", n).strip()
+    return n
+
+
 
 
 def line_family(line: str, company: str) -> str:
@@ -115,10 +136,14 @@ def line_family(line: str, company: str) -> str:
         return "jlu"
     if "dc direct" in l or "dc collectibles" in l:
         return "dcd"
-    if "h.a.c.k" in l or "hacks" in l:
+    if "h.a.c.k" in l or "hacks" in l or "vitruvian" in l:
         return "hacks"
     if company == "mattel" and "masters of the universe" in l:
         return "motu-generic"
+    if company == "hiya" and ("godzilla" in l or "kong" in l):
+        return "hiya-godzilla"
+    if company == "hiya":
+        return "hiya-exquisite"
     if company == "neca":
         return "neca"
     if company == "super7":
@@ -126,15 +151,42 @@ def line_family(line: str, company: str) -> str:
     return company
 
 
-def product_character_text(name: str, subtitle: str) -> str:
+def product_character_text(name: str, subtitle: str, title: str = "") -> str:
     """Where the character usually lives for noisy Shopify titles."""
-    n, s = name or "", subtitle or ""
+    n, s, t = name or "", subtitle or "", title or ""
+    full = t or f"{n} {s}"
+    # Pipe titles: last segment is usually the character
+    if " | " in full:
+        segs = [x.strip() for x in full.split(" | ") if x.strip()]
+        if segs:
+            char = segs[-1].split(":")[0].strip()
+            return f"{char} {full}"
+    # Hiya long prefixes
+    if re.search(r"\bhiya\b|exquisite (?:basic|mini)", full, re.I):
+        stripped = re.sub(
+            r"^HIYA\s+Exquisite\s+(?:Basic|Mini)\s+Series\s*(?:None\s+Scale\s*)?(?:\d+(?:\.\d+)?\s*Inch\s+)?",
+            "",
+            full,
+            flags=re.I,
+        )
+        stripped = re.sub(r"\s*Action Figures?\s*$", "", stripped, flags=re.I)
+        return f"{stripped} {full}"
+    # McFarlane / shop.dc character-leading titles
+    if re.search(r"mcfarlane|dc multiverse", full, re.I):
+        m = re.match(r"^([A-Z0-9][A-Za-z0-9\'\.\- ]+?)\s*(?:\(|McFarlane|DC Multiverse)", full)
+        if m:
+            return f"{m.group(1)} {full}"
+    cleaned = re.sub(
+        r"\s*[-–—]?\s*(pre-?order(?:\s+deposit|\s+ended)?|ships?\s+q\d.*)$",
+        "",
+        full,
+        flags=re.I,
+    )
     if LINE_AS_NAME.search(n) and s.strip():
-        # Prefer subtitle character; keep name too for MotU "... Keldor Action Figure"
-        return f"{s} {n}"
+        return f"{s} {n} {cleaned}"
     if re.match(r"^masters of the universe\b", n, re.I):
-        return f"{n} {s}"
-    return f"{n} {s}"
+        return f"{n} {s} {cleaned}"
+    return f"{n} {s} {cleaned}"
 
 
 def image_from_product(p: dict) -> str | None:
@@ -166,16 +218,23 @@ def build_index_from_live() -> list[dict]:
             if pid in seen:
                 continue
             seen.add(pid)
-            # Lightweight name/subtitle split mirroring shopify_dump
-            parts = re.split(r"\s+[—–-]\s+", title)
-            if len(parts) >= 2:
-                name, subtitle = parts[0].strip(), " - ".join(parts[1:]).strip()
+            # Lightweight name/subtitle split mirroring shopify_dump (incl. pipe titles)
+            if " | " in title:
+                segs = [x.strip() for x in title.split(" | ") if x.strip()]
+                right = segs[-1]
+                left = " | ".join(segs[:-1])
+                name = (right.split(":")[0].strip() or right)
+                subtitle = left or str(p.get("product_type") or source["id"])
             else:
-                colon = title.split(":")
-                if len(colon) >= 2 and len(colon[0]) < 48:
-                    name, subtitle = colon[0].strip(), ":".join(colon[1:]).strip()
+                parts = re.split(r"\s+[—–-]\s+", title)
+                if len(parts) >= 2:
+                    name, subtitle = parts[0].strip(), " - ".join(parts[1:]).strip()
                 else:
-                    name, subtitle = title, str(p.get("product_type") or source["id"])
+                    colon = title.split(":")
+                    if len(colon) >= 2 and len(colon[0]) < 48:
+                        name, subtitle = colon[0].strip(), ":".join(colon[1:]).strip()
+                    else:
+                        name, subtitle = title, str(p.get("product_type") or source["id"])
             index.append(
                 {
                     "id": pid,
@@ -218,7 +277,7 @@ def build_index_from_oneshot(rows: list[dict]) -> list[dict]:
 
 def enrich_index(entries: list[dict]) -> None:
     for p in entries:
-        char = product_character_text(p["name"], p["subtitle"])
+        char = product_character_text(p["name"], p["subtitle"], p.get("title") or "")
         p["_char"] = norm(char)
         p["_title"] = norm(p.get("title") or f"{p['name']} {p['subtitle']}")
         p["_blob"] = norm(
@@ -237,7 +296,8 @@ def score_pair(fig: dict, prod: dict) -> float:
     if req and not req.search(prod["_blob"]):
         return -1.0
 
-    fn = significant_name_tokens(fig["name"])
+    match_name = figure_match_name(fig["name"])
+    fn = significant_name_tokens(match_name)
     if not fn:
         return -1.0
 
@@ -246,18 +306,31 @@ def score_pair(fig: dict, prod: dict) -> float:
     title = prod["_title"]
 
     # Figure name must live in the character-focused text (not franchise-only title).
-    fname = norm(fig["name"])
-    contiguous = fname in char or fname in title
+    fname = norm(match_name)
+    # Joined-token fallback (Boss Borot ↔ bossborot, Trap Jaw ↔ trapjaw)
+    joined = "".join(fn)
+    contiguous = fname in char or fname in title or joined in char.replace(" ", "")
     covered = [t for t in fn if t in char_toks or t in char]
+    if not covered and joined and joined in char.replace(" ", ""):
+        covered = list(fn)
     if not covered:
         return -1.0
     if len(covered) < max(1, (len(fn) + 1) // 2):
         return -1.0
-    # First significant token must appear in character text
-    if fn[0] not in char_toks and fn[0] not in char:
+    # First significant token must appear in character text (or joined compound hit)
+    if fn[0] not in char_toks and fn[0] not in char and not (joined and joined in char.replace(" ", "")):
         return -1.0
     if len(fn) == 1 and fn[0] in WEAK and not contiguous:
         return -1.0
+    # Single-token names: must be primary character (reject Warrior⊂Spartan Warrior, Pirate⊂Space Pirate)
+    if len(fn) == 1:
+        prod_name_toks = significant_name_tokens(prod.get("name") or "")
+        prod_sub_toks = significant_name_tokens(prod.get("subtitle") or "")
+        primary = prod_name_toks or prod_sub_toks
+        if primary and fn[0] != primary[0] and set(fn) != set(primary):
+            # allow exact whole-name equality only
+            if fname != norm(prod.get("name") or "") and fname != norm(prod.get("subtitle") or ""):
+                return -1.0
 
     # Anti false-positive: if product looks like line-header + other character,
     # require figure name in subtitle/character prominently.
@@ -301,6 +374,58 @@ def score_pair(fig: dict, prod: dict) -> float:
     # Castlevania / game lines must appear on product
     if "castlevania" in norm(f"{fig['subtitle']} {fig['line']}"):
         if "castlevania" not in prod["_blob"]:
+            return -1.0
+    # Generic densify class names: product primary name must equal the class token exactly
+    gname = norm(figure_match_name(fig["name"]))
+    if re.search(r"^(pirate|knight|warrior|thief|fairy|golem|troll|vampire|werewolf|robot)$", gname):
+        prod_name_n = norm(prod.get("name") or "")
+        if prod_name_n != gname:
+            return -1.0
+    if gname == "vitruvian":
+        if "vitruvian" not in prod["_blob"]:
+            return -1.0
+        fig_theme = norm(fig.get("subtitle") or "")
+        themes = [t for t in ("fantasy", "superhero", "horror", "military", "sci") if t in fig_theme]
+        if themes and not any(t in prod["_blob"] for t in themes):
+            return -1.0
+    # Soft-goods / packaging-only curated rows — no honest figure photo match
+    if re.search(r"\bsoft goods\b|softgoods|empty box|backdrop", norm(fig["name"] + " " + fig["subtitle"])):
+        return -1.0
+    # Skip junk curated placeholders
+    if re.search(r"^(special exclusive|additional fees|to b order|series \d+)$", norm(fig["name"])):
+        return -1.0
+    # Hiya Godzilla family: require kaiju cue on product when figure line is Godzilla
+    if fam == "hiya-godzilla":
+        if not re.search(r"godzilla|kong|ghidorah|mechagodzilla|shimo|mothra|rodan", prod["_blob"]):
+            return -1.0
+    # EXO-6: skip mixed-media statues unless curated line says statue
+    if fig["company"] == "exo6":
+        if re.search(r"\bmixed media statue\b", prod["_blob"]) and "statue" not in norm(fig["line"]):
+            return -1.0
+    # Star Ace: DefoStyle soft vinyl vs 1/6 AF gate
+    if fig["company"] == "starace":
+        fig_l = norm(fig.get("line") or "")
+        if ("1/6" in fig_l or "1:6" in fig_l or "sixth" in fig_l) and "defostyle" in prod["_blob"]:
+            if "1/6" not in prod["_blob"] and "1:6" not in prod["_blob"]:
+                return -1.0
+        if ("defostyle" in fig_l or "soft vinyl" in fig_l) and "defostyle" not in prod["_blob"] and "soft vinyl" not in prod["_blob"]:
+            return -1.0
+    # Blitzway line gates
+    if fig["company"] == "blitzway":
+        fig_l = norm(f"{fig['name']} {fig['line']} {fig['subtitle']}")
+        if "carbotix" in fig_l and "carbotix" not in prod["_blob"] and "carbote" not in prod["_blob"]:
+            return -1.0
+        if "figure complex" in fig_l and "figure complex" not in prod["_blob"]:
+            if not re.search(r"mazinger|getter|bossborot|aphrodite", prod["_blob"]):
+                return -1.0
+    # Blokees franchise cues
+    if fig["company"] == "blokees":
+        fig_l = norm(f"{fig['line']} {fig['subtitle']} {' '.join(fig.get('tags') or [])}")
+        if "transformer" in fig_l and "transformer" not in prod["_blob"]:
+            return -1.0
+        if "ultraman" in fig_l and "ultraman" not in prod["_blob"]:
+            return -1.0
+        if "mega man" in fig_l and "mega man" not in prod["_blob"] and "megaman" not in prod["_blob"]:
             return -1.0
     # WWE Elite curated should not take LJN / Superstars-only product shots
     if fig["company"] == "mattel" and "elite" in norm(fig["line"]):
@@ -355,6 +480,37 @@ def score_pair(fig: dict, prod: dict) -> float:
                     if "pennywise" not in prod["_blob"] and not re.search(r"\bit\b", prod["_blob"]):
                         return -1.0
 
+    # McFarlane / shop.dc: leading CHARACTER (variant) titles — figure must match lead, not parenthetical
+    if fig["company"] == "mcfarlane":
+        m = re.match(
+            r"^([A-Z0-9][A-Za-z0-9\'\.\- ]+?)\s*(?:\(|McFarlane|DC Multiverse)",
+            prod.get("title") or prod.get("name") or "",
+        )
+        if m:
+            lead = norm(m.group(1))
+            if fname not in lead and not all(t in set(tokens(lead)) for t in fn):
+                return -1.0
+    # Super7 franchise cues when curated line/subtitle is explicit
+    if fig["company"] == "super7":
+        fig_l = norm(f"{fig['line']} {fig['subtitle']} {' '.join(fig.get('tags') or [])}")
+        for cue, rx in (
+            ("gi joe", re.compile(r"g\.?i\.?\s*joe|cobra|classified", re.I)),
+            ("thundercat", re.compile(r"thundercat", re.I)),
+            ("tmnt|turtle", re.compile(r"tmnt|ninja turtle|teenage mutant", re.I)),
+            ("conan", re.compile(r"\bconan\b", re.I)),
+            ("motu|masters of the universe|he-man", re.compile(r"masters of the universe|\bmotu\b|masterverse", re.I)),
+        ):
+            if re.search(cue, fig_l):
+                if not rx.search(prod["_blob"]):
+                    return -1.0
+    # King Kong / Kong figures should not take Godzilla-primary product shots
+    if re.search(r"\b(king )?kong\b", fname) or re.search(r"\bkong\b", norm(fig["name"])):
+        if re.search(r"\bgodzilla\b", prod["_title"]) and not re.search(r"\bkong\b", prod["_char"]):
+            return -1.0
+        if re.search(r"godzilla vs\.? kong|godzilla x kong", prod["_blob"]) and re.search(r"godzilla action", prod["_blob"]):
+            # product is the Godzilla SKU from a vs/x set
+            if not re.search(r"\bkong\b", norm(prod.get("name") or "") + " " + char):
+                return -1.0
     # Skip obvious Mattel DC Premier mismatches for non-Premier curated lines
     fig_line = norm(fig["line"])
     if fig["company"] == "mattel" and "premier" in prod["_blob"]:
@@ -428,14 +584,20 @@ def main() -> None:
             cands.append((best_s, fig["id"], best["id"], fig, best))
 
     cands.sort(reverse=True, key=lambda x: x[0])
-    used_prod: set[str] = set()
     used_fig: set[str] = set()
+    # Product may paint multiple variants of the SAME character name (shared CDN shot).
+    # Still block cross-character reuse of one product.
+    prod_claimed_name: dict[str, str] = {}
     finals: list[tuple[float, dict, dict]] = []
     for s, fid, pid, f, p in cands:
-        if fid in used_fig or pid in used_prod:
+        if fid in used_fig:
+            continue
+        claim = norm(figure_match_name(f["name"]))
+        prev = prod_claimed_name.get(pid)
+        if prev is not None and prev != claim:
             continue
         used_fig.add(fid)
-        used_prod.add(pid)
+        prod_claimed_name[pid] = claim
         finals.append((s, f, p))
 
     # Persist URL map (merge with prior)
@@ -480,7 +642,7 @@ def main() -> None:
             "character-focused name match (subtitle for ULTIMATES/ReAction headers)",
             "first significant name token required",
             "multi-token subtitle requires ≥1 hit",
-            "one product image → one figure (best score)",
+            "one product image → one character name (variants may share CDN shot)",
             "Mattel DC Premier not used for unrelated curated lines",
         ],
         "samples": [

@@ -4,7 +4,7 @@
  *
  * Focus: articulated action figures (not pins, dolls, or statue lines).
  * Hasbro Pulse / BBTS / EE / Mezco / McFarlane Toys official still lack stable public JSON.
- * NECA: store.necaonline.com verified; shop.dc.com McFarlane Multiverse; Valaverse Action Force.
+ * NECA: store.necaonline.com; shop.dc.com McFarlane Multiverse; Valaverse; Blokees/Blitzway/EXO-6/Star Ace/DamToys verified open JSON.
  */
 
 import type { CatalogFigure, CompanyId, ItemKind } from "@/lib/types";
@@ -54,6 +54,36 @@ export const FIGURE_STOREFRONTS: StorefrontSource[] = [
     baseUrl: "https://store.necaonline.com",
     company: "neca",
     requireHint: /action figure|figure|ultimate|scale|tmnt|predator|alien|horror/i,
+  },
+  {
+    id: "blokees",
+    baseUrl: "https://blokees.com",
+    company: "blokees",
+    requireHint: /blokees|champion|galaxy|defender|transformers|ultraman|mega man|saint seiya|figure/i,
+  },
+  {
+    id: "blitzway",
+    baseUrl: "https://blitzway.com",
+    company: "blitzway",
+    requireHint: /action figure|figure|carbote|mazinger|voltron|getter|scale/i,
+  },
+  {
+    id: "exo6",
+    baseUrl: "https://exo-6.com",
+    company: "exo6",
+    requireHint: /star trek|spock|kirk|picard|janeway|figure|1:?6|scale/i,
+  },
+  {
+    id: "starace",
+    baseUrl: "https://www.staracetoys.com",
+    company: "starace",
+    requireHint: /1\/?6|action figure|figure|harry potter|wonder woman|elvis|pacific rim|defostyle/i,
+  },
+  {
+    id: "damtoys",
+    baseUrl: "https://shop.damtoys.com",
+    company: "damtoys",
+    requireHint: /damtoys|1\/?6|1\/?12|figure|gangsters|pocket elite|vertex/i,
   },
 ];
 
@@ -107,7 +137,12 @@ function isFigureLike(p: ShopifyProduct, source: StorefrontSource): boolean {
     source.company === "loyalsubjects" ||
     source.company === "super7" ||
     source.company === "valaverse" ||
-    source.company === "neca"
+    source.company === "neca" ||
+    source.company === "blokees" ||
+    source.company === "blitzway" ||
+    source.company === "exo6" ||
+    source.company === "starace" ||
+    source.company === "damtoys"
   ) {
     return true;
   }
@@ -143,6 +178,13 @@ function dateFrom(p: ShopifyProduct, fallback: string): string {
 
 function splitTitle(title: string): { name: string; subtitle: string } {
   const cleaned = title.replace(/\s+/g, " ").trim();
+  if (cleaned.includes(" | ")) {
+    const segs = cleaned.split(" | ").map((s) => s.trim()).filter(Boolean);
+    const right = segs[segs.length - 1]!;
+    const left = segs.slice(0, -1).join(" | ");
+    const name = (right.split(":")[0] || right).trim();
+    return { name, subtitle: left || right };
+  }
   const parts = cleaned.split(/\s+[—–-]\s+/);
   if (parts.length >= 2) {
     return { name: parts[0]!.trim(), subtitle: parts.slice(1).join(" - ").trim() };

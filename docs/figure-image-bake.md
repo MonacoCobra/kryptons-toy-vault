@@ -47,7 +47,20 @@ Powers depth, and most DCUC/JLU/DC Direct curated rows **cannot** be filled from
 open Shopify feeds we use. Leave placeholders until a stable public image source
 exists — do not scrape Pulse/BBTS aggressively.
 
-## Weekday routine (optional later)
+## Weekday-friendly `--fetch`
 
-Re-run `--fetch` periodically after storefront restocks; commit updated JSON
-only when match counts move. No Build Publish required for data-only bumps.
+Preferred cadence: **weekday mornings** (America/Chicago), after restocks land.
+
+```bash
+cd /workspace/collection-app/scripts
+python3 bake-figure-images.py --fetch
+```
+
+- Polite pagination delays are built in (~0.12s/page).
+- Writes/refreshes `src/data/figure-archive/product-image-index.json` then matches.
+- `--cache-only` reuses the cached index (no network).
+- Default (no flags) merges oneshot Shopify rows + any cached index.
+- Commit updated JSON only when match counts move. **No Build Publish** for data-only bumps.
+
+Hasbro Pulse / BBTS / Mezco / Hot Toys / Tamashii / MAFEX still lack stable public
+`products.json` — leftovers there are expected.
