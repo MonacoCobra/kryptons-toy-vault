@@ -1,50 +1,57 @@
 {
-  "bakedAt": "2026-09-06T00:45:18.989433+00:00",
+  "bakedAt": "2026-09-06T01:18:14.840897+00:00",
   "day": "2026-09-06",
   "minScore": 16.0,
-  "indexSize": 17407,
-  "fetchLive": true,
+  "indexSize": 18892,
+  "fetchLive": false,
   "before": {
-    "total": 19486,
-    "withImage": 7502,
-    "pct": 38.5
-  },
-  "after": {
     "total": 19486,
     "withImage": 7573,
     "pct": 38.86
   },
-  "matched": 71,
-  "candidatesAboveThreshold": 78,
-  "patchedOneshot": 71,
-  "urlMapSize": 3653,
+  "after": {
+    "total": 19486,
+    "withImage": 8715,
+    "pct": 44.72
+  },
+  "matched": 4795,
+  "candidatesAboveThreshold": 5448,
+  "patchedOneshot": 4795,
+  "urlMapSize": 4795,
   "byCompany": {
-    "dcdirect": 192,
-    "hasbro": 175,
-    "mezco": 167,
-    "playmates": 98,
-    "mcfarlane": 80,
-    "mafex": 59,
-    "kaiyodo": 35,
-    "neca": 30,
-    "mattel": 19,
-    "storm": 18,
-    "jada": 18,
-    "shfiguarts": 17,
-    "jakks": 14,
-    "toybiz": 14,
-    "bandai": 13,
-    "diamondselect": 11,
-    "hiya": 10,
-    "super7": 9,
-    "fourhorsemen": 7,
-    "loyalsubjects": 7,
-    "figma": 7,
-    "hottoys": 4,
-    "mondo": 2,
-    "premiumdna": 2,
-    "threezero": 1,
-    "beastkingdom": 1
+    "hasbro": 1588,
+    "mcfarlane": 497,
+    "mattel": 471,
+    "dcdirect": 366,
+    "mezco": 289,
+    "shfiguarts": 234,
+    "neca": 201,
+    "super7": 175,
+    "mafex": 148,
+    "playmates": 107,
+    "hiya": 99,
+    "storm": 94,
+    "kaiyodo": 93,
+    "hottoys": 82,
+    "bandai": 56,
+    "threezero": 40,
+    "figma": 39,
+    "jada": 28,
+    "exo6": 25,
+    "beastkingdom": 19,
+    "diamondselect": 18,
+    "joytoy": 17,
+    "toybiz": 16,
+    "jakks": 15,
+    "bossfight": 13,
+    "fourhorsemen": 12,
+    "blitzway": 12,
+    "blokees": 11,
+    "premiumdna": 10,
+    "mondo": 8,
+    "loyalsubjects": 6,
+    "starace": 5,
+    "valaverse": 1
   },
   "safeguards": [
     "same-company hard gate",
@@ -55,282 +62,154 @@
     "multi-token subtitle requires \u22651 hit",
     "one product image \u2192 one character name (variants may share CDN shot)",
     "Mattel DC Premier not used for unrelated curated lines",
-    "retailer feeds (ToyArena/CmdStore/Planet/CoolToyDen/AFCollector/Legendz) vendor\u2192company high-confidence only",
-    "Storm HK + Store Horsemen first-party; Pulse/BBTS/EE/Mezco official still blocked"
+    "retailer feeds (ToyArena/CmdStore/Planet/CoolToyDen/AFCollector/Legendz/shop.mattel/Solaris/JBHiFi) vendor\u2192company high-confidence only",
+    "Storm HK + Store Horsemen first-party; Pulse/BBTS/EE/Mezco official still blocked",
+    "hyphen-prefix only for Techno-Viper style; MOTU trailing-character peel; color antonyms"
   ],
   "samples": [
     {
-      "score": 29.0,
-      "figureId": "d14joe-red-ninja",
-      "figure": "Red Ninja / Classified Series / GI Joe Classified",
-      "product": "Blue Ninja Set / G.I. Joe Classified 6 Inch Action Figure 2-Pack Exclusive",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/gi-joe-classified-2-pack-exclusive-blue-ninja"
+      "score": 43.0,
+      "figureId": "ml5-ml-cassandra-nova",
+      "figure": "Cassandra Nova / Deadpool & Wolverine Legends / Marvel Legends",
+      "product": "Cassandra Nova / Marvel Legends Deadpool & Wolverine 6 Inch Action Figure Wave 3",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-deadpool-wolverine-wave-3-cass"
     },
     {
-      "score": 29.0,
-      "figureId": "cls5-cls-red-ninja",
-      "figure": "Red Ninja / Classified / GI Joe Classified",
-      "product": "Blue Ninja Set / G.I. Joe Classified 6 Inch Action Figure 2-Pack Exclusive",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/gi-joe-classified-2-pack-exclusive-blue-ninja"
+      "score": 43.0,
+      "figureId": "ml5-ml-x97-jean",
+      "figure": "Jean Grey / X-Men '97 Legends / Marvel Legends",
+      "product": "Jean Grey / Jean Grey (X-Factor) Marvel Legends Retro 6 Inch Action Figure Exclusive",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-retro-exclusive-jean-grey-x-fa"
     },
     {
-      "score": 29.0,
-      "figureId": "o12t-277-the-batman-one-12-collective",
-      "figure": "The Batman / One:12 Collective / One:12 Collective",
-      "product": "Batman: The Animated Series Batman / Mezco Toyz ONE 12 Collective Batman: The Animated Series Batman (Noir Edition) Action Figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/696198763935.jpg?v=1784762080"
+      "score": 43.0,
+      "figureId": "cls5-cls-snake-eyes-movie",
+      "figure": "Snake Eyes / Snake Eyes Movie Classified / GI Joe Classified",
+      "product": "Snake Eyes / G.I. Joe Classified 6 Inch Action Figure Retro Exclusive",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/gi-joe-classified-retro-exclusive-snake-eyes-"
     },
     {
-      "score": 29.0,
-      "figureId": "d14mez-dx-spiderman",
-      "figure": "Spider-Man / One:12 / One:12 Collective",
-      "product": "Spider-Man Miles Morales / Mezco Toyz ONE 12 Collective Spider-Man Miles Morales Action Figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/696198766318.jpg?v=1740430121"
+      "score": 43.0,
+      "figureId": "tfss-ss-one-alpha",
+      "figure": "Alpha Trion / Transformers One / Transformers Studio Series",
+      "product": "Alpha Trion / Transformers Studio Series 7 Inch Action Figure Voyager Class (2026 Wave 1)",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-2026"
     },
     {
-      "score": 29.0,
-      "figureId": "o12t-65-wolverine-old-man-logan-one-12-collective",
-      "figure": "Wolverine Old Man Logan / One:12 Collective / One:12 Collective",
-      "product": "Old Man Logan One: 12 Collective Deluxe Action Figure Box Set by Mezco Toyz / Wolverine",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0144/1798/5584/products/f878e9b5-70d2-4d45-85d3-32b623c8ccb6.jpg?v"
+      "score": 43.0,
+      "figureId": "tfss-ss-one-orion",
+      "figure": "Orion Pax / Transformers One / Transformers Studio Series",
+      "product": "Orion Pax / Orion Pax (Transformers One) Transformers Studio Series 6 Inch Action Figure Deluxe Class",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-orion"
     },
     {
-      "score": 29.0,
-      "figureId": "mz8-mz-01",
-      "figure": "Spider-Man / One:12 Deluxe / One:12 Collective",
-      "product": "Spider-Man Miles Morales / Mezco Toyz ONE 12 Collective Spider-Man Miles Morales Action Figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/696198766318.jpg?v=1740430121"
+      "score": 43.0,
+      "figureId": "shf4-jjk-geto",
+      "figure": "Suguru Geto / Jujutsu Kaisen / S.H.Figuarts",
+      "product": "Suguru Geto / Jujutsu Kaisen 6 Inch Action Figure S.H. Figuarts",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/jujutsu-kaisen-sh-figuarts-suguru-geto-457310"
     },
     {
-      "score": 29.0,
-      "figureId": "pm9-pm-18",
-      "figure": "Mutant Mayhem Superfly / Mutant Mayhem / Playmates Mutant Mayhem",
-      "product": "Superfly Teenage Mutant Ninja Turtles 5 Inch Action Figure Mutant Mayhem / Superfly Teenage Mutant Ninja Turtles 5 Inch Action Figure Mutant Mayhem",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/teenage-mutant-ninja-turtles-mutant-mayhem-su"
+      "score": 43.0,
+      "figureId": "shf4-jjk-toji",
+      "figure": "Toji Fushiguro / Jujutsu Kaisen / S.H.Figuarts",
+      "product": "Toji Fushiguro / Jujutsu Kaisen 6 Inch Action Figure S.H. Figuarts",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/jujutsu-kaisen-sh-figuarts-toji-fushiguro-457"
     },
     {
-      "score": 29.0,
-      "figureId": "pm9-pm-17",
-      "figure": "Mutant Mayhem Splinter / Mutant Mayhem / Playmates Mutant Mayhem",
-      "product": "Splinter Teenage Mutant Ninja Turtles 5 Inch Action Figure Mutant Mayhem / Splinter Teenage Mutant Ninja Turtles 5 Inch Action Figure Mutant Mayhem",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/teenage-mutant-ninja-turtles-mutant-mayhem-sp"
+      "score": 43.0,
+      "figureId": "mafex-no091-moon-knight-no-322",
+      "figure": "Moon Knight / No.322 / MAFEX",
+      "product": "Moon Knight / Mafex (No.322) (Medicom Toy) Moon Knight (2022) - Moon Knight",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0318/2649/files/f590f0d0-683c-4192-8122-15835d57fe58.jpg?v=1785403"
     },
     {
-      "score": 27.33,
-      "figureId": "mez6-mez-spiderman-one12",
-      "figure": "Spider-Man / One:12 Wave6 / One:12 Collective",
-      "product": "Spider-Man Miles Morales / Mezco Toyz ONE 12 Collective Spider-Man Miles Morales Action Figure",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/696198766318.jpg?v=1740430121"
+      "score": 43.0,
+      "figureId": "ml5-ml-mr-knight",
+      "figure": "Mr. Knight / Disney+ / Marvel Legends",
+      "product": "Mr. Knight / Marvel Legends Disney+ 6 Inch Action Figure BAF Infinity Ultron",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-disney-plus-baf-infinity-ul"
     },
     {
-      "score": 26.5,
-      "figureId": "pr2-mmpr-billy",
-      "figure": "Blue Ranger / Classic Remaster / Lightning Collection",
-      "product": "Black Ranger / Power Rangers Lightning Collection 6 Inch Action Figure Remastered Wave 2",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/power-rangers-lightning-collection-remastered"
+      "score": 43.0,
+      "figureId": "o12t-303-captain-america-silver-age-edition",
+      "figure": "Captain America / Silver Age Edition / One:12 Collective",
+      "product": "Captain America / Mezco Toyz ONE 12 Collective Captain America (Silver Age Edition) Action Figure",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/696198762549h.jpg?v=1758587671"
     },
     {
-      "score": 26.5,
-      "figureId": "mcf6-mcf-shazam-plat",
-      "figure": "Shazam / Platinum Edition Wave6 / DC Multiverse Platinum",
-      "product": "Shazam Freddy Freeman Platinum / DC Multiverse Shazam 7 Inch Action Figure Collector Edition Exclusive",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-shazam-collector-edition-shazam"
+      "score": 43.0,
+      "figureId": "shf3-shf-goku-daima",
+      "figure": "Son Goku / Daima / S.H.Figuarts",
+      "product": "Son Goku / Dragonball Daima 6 Inch Action Figure S.H. Figuarts",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dragonball-daima-sh-figuarts-son-goku-4573102"
     },
     {
-      "score": 26.5,
-      "figureId": "mcf5-mcf-batman-death-metal",
-      "figure": "Batman / Death Metal / DC Multiverse",
-      "product": "Batman Who Laughs & Robins / DC Multiverse Comics 7 Inch Action Figure Dark Nights Metal Exclusive",
-      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/dc-multiverse-comics-dark-nights-metal-exc"
+      "score": 43.0,
+      "figureId": "shf5-chainsaw-aki",
+      "figure": "Aki Hayakawa / Chainsaw Man / S.H.Figuarts",
+      "product": "Aki Hayakawa / Chainsaw Man 6 Inch Action Figure S.H. Figuarts",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/chainsaw-man-sh-figuarts-aki-hayakawa-4573102"
     }
   ],
   "lowSamples": [
     {
       "score": 17.0,
-      "figureId": "o12t-481-the-dark-knight-batman-one-12-collective",
-      "figure": "The Dark Knight: Batman / One:12 Collective / One:12 Collective",
-      "product": "Dark Knight Returns Batman One:12 Collective The 6.5\" by Mezco Toyz / Batman Dark Knight Returns Batman One:12 Collective The 6.5\" Action Figure by Mezco Toyz"
+      "figureId": "lc5-lc-blue-space",
+      "figure": "Blue Space Ranger / In Space / Lightning Collection",
+      "product": "In Space Blue Ranger & Galaxy Glider / Power Rangers Lightning Collection 6 Inch Action Figure Deluxe (2022 Wave 1)"
     },
     {
       "score": 17.0,
-      "figureId": "ky8-ky-13",
-      "figure": "Amazing Yamaguchi Venom / Amazing Yamaguchi / Amazing Yamaguchi",
-      "product": "Agent Venom NR061 / Amazing Yamaguchi Revoltech Figure Complex Agent Venom NR061 Action Figure"
-    },
-    {
-      "score": 17.0,
-      "figureId": "st10-st-12",
-      "figure": "Storm Sub-Zero / Mortal Kombat / Storm Collectibles Mortal Kombat",
-      "product": "Storm Collectibles Mortal Kombat Sub-Zero / Storm Collectibles Mortal Kombat Sub-Zero (Bloody Special Edition) Action Figure Action Figure"
-    },
-    {
-      "score": 17.0,
-      "figureId": "st10-st-02",
-      "figure": "Storm Ken / Street Fighter / Storm Collectibles Street Fighter",
-      "product": "KEN / STREET FIGHTER ALPHA 3 \"STORM ARENA\" 1/12 Scale"
-    },
-    {
-      "score": 17.0,
-      "figureId": "st10-st-01",
-      "figure": "Storm Ryu / Street Fighter / Storm Collectibles Street Fighter",
-      "product": "RYU / STREET FIGHTER ALPHA 3 \"STORM ARENA\" 1/12 Scale"
-    },
-    {
-      "score": 17.0,
-      "figureId": "pm9-pm-22",
-      "figure": "Classic Collection Raph / Classic Collection / Playmates Classic Collection",
-      "product": "Raphael / Teenage Mutant Ninja Turtles 5 Inch Action Figure Classic Retro Rotocast 2022 Wave 1"
-    },
-    {
-      "score": 17.0,
-      "figureId": "pm9-pm-21",
-      "figure": "Classic Collection Leo / Classic Collection / Playmates Classic Collection",
-      "product": "Leonardo / Teenage Mutant Ninja Turtles 5 Inch Action Figure Classic Retro Rotocast 2022 Wave 1"
-    },
-    {
-      "score": 17.0,
-      "figureId": "pm9-pm-14",
-      "figure": "Mutant Mayhem Mikey / Mutant Mayhem / Playmates Mutant Mayhem",
+      "figureId": "pm9-pm-16",
+      "figure": "Mutant Mayhem Raph / Mutant Mayhem / Playmates Mutant Mayhem",
       "product": "Turtle Tots Raph & Mikey / Teenage Mutant Ninja Turtles 5 Inch Action Figure Mutant Mayhem"
+    },
+    {
+      "score": 17.0,
+      "figureId": "pm9-pm-13",
+      "figure": "Mutant Mayhem Leo / Mutant Mayhem / Playmates Mutant Mayhem",
+      "product": "Turtle Tots Leo & Donnnie / Teenage Mutant Ninja Turtles 5 Inch Action Figure Mutant Mayhem"
+    },
+    {
+      "score": 17.0,
+      "figureId": "pm9-pm-04",
+      "figure": "Classic Raphael / TMNT Classic / Playmates TMNT Classic",
+      "product": "TMNT / Teenage Mutant Ninja Turtles Classic Giant Raphael 12\" Figure TMNT"
+    },
+    {
+      "score": 17.0,
+      "figureId": "pm9-pm-03",
+      "figure": "Classic Donatello / TMNT Classic / Playmates TMNT Classic",
+      "product": "TMNT / Teenage Mutant Ninja Turtles Classic Giant Donatello 12\" Figure TMNT"
+    },
+    {
+      "score": 17.0,
+      "figureId": "pm9-pm-02",
+      "figure": "Classic Michelangelo / TMNT Classic / Playmates TMNT Classic",
+      "product": "legendztoys / Teenage Mutant Ninja Turtles Classic Storage Shell Michelangelo legendztoys"
+    },
+    {
+      "score": 17.0,
+      "figureId": "pm9-pm-01",
+      "figure": "Classic Leonardo / TMNT Classic / Playmates TMNT Classic",
+      "product": "legendztoys / Teenage Mutant Ninja Turtles Classic Storage Shell Leonardo Action Figure legendztoys"
+    },
+    {
+      "score": 16.5,
+      "figureId": "bn9-bn-25",
+      "figure": "Robot Spirits Eva-01 Homage / Special / Bandai Robot Spirits",
+      "product": "Action Figure / Robot Spirits Damashii #R-290 Eva Test Type-01 + Spear of Cassius Renewal Color Edition (Reissue) (3.0+1.0) Rebuild of Evangelion Action Figure Action Figure"
     }
   ],
-  "sessionBaseline": {
-    "total": 19486,
-    "withImage": 6561,
-    "pct": 33.67
-  },
-  "sessionAfter": {
+  "priorCommitBaseline": {
     "total": 19486,
     "withImage": 7573,
     "pct": 38.86
   },
-  "sessionDelta": 1012,
-  "sessionDeltaPts": 5.19,
-  "blockedSources": {
-    "hasbroPulse": "no stable products.json (404/HTML)",
-    "bbts": "HTML only, not Shopify JSON",
-    "entertainmentEarth": "403 Forbidden",
-    "mezcoOfficial": "no open products.json",
-    "mcfarlaneToysStore": "400/TLS errors",
-    "tamashiiUS": "no open products.json",
-    "playmatesOfficial": "no open products.json",
-    "jakksOfficial": "no open products.json",
-    "kaiyodoOfficial": "no open products.json / HTML"
+  "delta": {
+    "matchedNet": 1142,
+    "pctPoints": 5.86
   },
-  "newFeeds": {
-    "store-horsemen": "https://store-horsemen.myshopify.com (Four Horsemen first-party)",
-    "cooltoyden": "image-index retailer (Hasbro/DCD/JAKKS/Playmates/Mezco)",
-    "afcollector": "image-index retailer (vintage ToyBiz/Kenner/DCD/Hasbro/Playmates)",
-    "legendztoys": "image-index retailer (Hasbro/McFarlane/Playmates/BST)",
-    "toyarena": "existing (Kaiyodo AY depth)",
-    "cmdstore": "existing (expanded company map: Playmates/JAKKS/ToyBiz/DCD)",
-    "planet-af": "existing (Four Horsemen Infinite/Cosmic)"
-  },
-  "indexByCompany": {
-    "hasbro": 4723,
-    "super7": 2717,
-    "mcfarlane": 1837,
-    "shfiguarts": 1568,
-    "neca": 836,
-    "mattel": 526,
-    "hottoys": 460,
-    "toybiz": 349,
-    "figma": 348,
-    "hiya": 338,
-    "playmates": 320,
-    "bossfight": 295,
-    "kenner": 261,
-    "storm": 248,
-    "dcdirect": 226,
-    "joytoy": 201,
-    "blokees": 198,
-    "mezco": 186,
-    "bandai": 184,
-    "blitzway": 177,
-    "mondo": 172,
-    "fourhorsemen": 172,
-    "mafex": 167,
-    "diamondselect": 135,
-    "threezero": 131
-  },
-  "indexByShop": {
-    "cmdstore": 5360,
-    "toyarena": 3892,
-    "super7": 2408,
-    "planet-af": 1166,
-    "afcollector": 975,
-    "cooltoyden": 550,
-    "mattel-creations": 526,
-    "neca-store": 461,
-    "legendztoys": 421,
-    "bossfight": 295,
-    "hiya": 201,
-    "blokees": 198,
-    "blitzway": 177,
-    "mondo": 172,
-    "storm-hk": 154,
-    "starace": 102,
-    "exo6": 86,
-    "goodsmile-us": 85,
-    "store-horsemen": 79,
-    "valaverse": 41
-  },
-  "honestLeftovers": {
-    "note": "Densify/placeholder names without a real SKU on open feeds stay empty. JLU/DCUC blocked. Pulse/BBTS/EE/Mezco official/Tamashii still closed.",
-    "topMissing": {
-      "hasbro": 1181,
-      "mattel": 838,
-      "dcdirect": 737,
-      "mezco": 501,
-      "neca": 340,
-      "playmates": 306,
-      "fourhorsemen": 280,
-      "super7": 258,
-      "mcfarlane": 245,
-      "loyalsubjects": 245,
-      "kaiyodo": 230,
-      "jakks": 217,
-      "shfiguarts": 204,
-      "threezero": 175,
-      "mondo": 172,
-      "toybiz": 171,
-      "beastkingdom": 165,
-      "hiya": 157,
-      "valaverse": 142,
-      "bandai": 141
-    }
-  },
-  "beforeSession": {
-    "total": 19486,
-    "withImage": 6561,
-    "pct": 33.67
-  },
-  "sessionByCompany": {
-    "dcdirect": 192,
-    "hasbro": 175,
-    "mezco": 167,
-    "playmates": 98,
-    "mcfarlane": 80,
-    "mafex": 59,
-    "kaiyodo": 35,
-    "neca": 30,
-    "mattel": 19,
-    "storm": 18,
-    "jada": 18,
-    "shfiguarts": 17,
-    "jakks": 14,
-    "toybiz": 14,
-    "bandai": 13,
-    "diamondselect": 11,
-    "hiya": 10,
-    "super7": 9,
-    "fourhorsemen": 7,
-    "loyalsubjects": 7,
-    "figma": 7,
-    "hottoys": 4,
-    "mondo": 2,
-    "premiumdna": 2,
-    "threezero": 1,
-    "beastkingdom": 1
-  }
+  "rematchNote": "Cleared prior image-bake overlays and rematched with tightened scorer + new feeds (shop.mattel/Solaris/JBHiFi)"
 }

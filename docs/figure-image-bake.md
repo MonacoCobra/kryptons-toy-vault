@@ -37,6 +37,8 @@ cd scripts && python3 bake-figure-images.py --fetch
 - Character-focused matching: for ULTIMATES!/ReAction header titles, the
   character is taken from the subtitle.
 - First significant name token must appear; multi-token subtitles need ≥1 hit.
+- Multi-token names need more than a lone shared honorific; color antonyms; hyphen-prefix only.
+- Word-boundary token hits (no "he" ⊂ "the"); MOTU trailing-character peel.
 - One product image assigns to at most one figure (best score wins).
 - Unmatched rows stay as CSS placeholders.
 
@@ -65,7 +67,7 @@ python3 bake-figure-images.py --fetch
 
 Hasbro Pulse / BBTS / Mezco official / Hot Toys / Tamashii first-party still lack
 stable public `products.json`. Bake `--fetch` also indexes specialty retailers
-(ToyArena, CmdStore, Planet AF, Cool Toy Den, AFCollector, Legendz Toys) + Storm
-Collectibles HK + Store Horsemen for high-confidence Hasbro / Mezco One:12 / MAFEX /
-SHFiguarts / Playmates / JAKKS / Toy Biz / classic DC Direct / Four Horsemen /
-Kaiyodo / BST matches. Leftovers without clear title cues stay placeholders.
+(ToyArena, CmdStore, Planet AF, Cool Toy Den, AFCollector, Legendz Toys, shop.mattel,
+Solaris Japan, JB Hi-Fi) + Storm Collectibles HK + Store Horsemen for high-confidence
+Hasbro / Mattel MOTU / Mezco One:12 / MAFEX / SHFiguarts / Playmates / JAKKS / Toy Biz /
+classic DC Direct / Four Horsemen / Kaiyodo / BST matches. Leftovers without clear title cues stay placeholders.

@@ -39,6 +39,15 @@ STOP = set(
     "multipack boxed bundle pack".split()
 )
 WEAK = set("man men boy girl king queen lord lady black white red blue green glow robot pack".split())
+SUBTITLE_NOISE = set(
+    "wave waves exclusive deluxe special edition classic remaster remastered battle "
+    "movie numbered boxed set pack multipack variant ver version vol volume series "
+    "collective one12 one mmpr sdcc comic comics animated".split()
+)
+COLOR_WORDS = {
+    "red", "blue", "green", "black", "white", "pink", "yellow", "purple", "orange",
+    "crimson", "scarlet", "azure", "gold", "silver", "bronze", "grey", "gray",
+}
 
 LINE_AS_NAME = re.compile(
     r"ultimates?!?|reaction|masters of the universe|dc multiverse|mcfarlane|"
@@ -275,6 +284,14 @@ def product_character_text(name: str, subtitle: str, title: str = "") -> str:
         full,
         flags=re.I,
     )
+    # Solaris / JP import: "Series - Character - S.H.Figuarts (Bandai Spirits)"
+    if re.search(r"s\.?h\.?\s*figuarts|\bmafex\b", full, re.I) and " - " in full:
+        segs = [x.strip() for x in re.split(r"\s+-\s+", full) if x.strip()]
+        for seg in reversed(segs):
+            if re.search(r"figuarts|mafex|bandai|kaiyodo|revoltech|yamaguchi|spirits", seg, re.I):
+                continue
+            if len(seg) >= 2:
+                return f"{seg} {full}"
     # Retailer / Hasbro / Tamashii / Medicom / Mezco long titles
     if re.search(
         r"marvel legends|black series|classified|studio series|lightning collection|"
@@ -308,6 +325,35 @@ def product_character_text(name: str, subtitle: str, title: str = "") -> str:
         char = re.sub(r"\s+", " ", char).strip(" -:")
         if char:
             return f"{char} {cleaned}"
+    # Masters of the Universe / Masterverse / Origins — character usually trails the line name
+    if re.search(r"masters of the universe|masterverse|\borigins\b", full, re.I):
+        # Prefer explicit " - Character" tail when present (avoid peeling to "7 Inch")
+        if " - " in cleaned:
+            tail = cleaned.rsplit(" - ", 1)[-1].strip()
+            tail = re.sub(r"\s*Action Figures?\s*.*$", "", tail, flags=re.I)
+            tail = re.sub(r"\s+", " ", tail).strip(" -:")
+            if tail and not re.match(r"^\d+(?:\.\d+)?\s*inch\b", tail, re.I):
+                return f"{tail} {cleaned}"
+        stripped = re.sub(
+            r"^(?:Pre-?[Oo]rder:\s*)?(?:Figurine\s+)?(?:Mattel(?:\s+Creations)?\s+)?"
+            r"Masters of the Universe(?:\s+(?:Masterverse|Origins|Chronicles|Revelation|"
+            r"New Eternia|Vintage Collection|200X Cartoon Collection|2026 Movie|"
+            r"Cartoon Collection))*\s*",
+            "",
+            cleaned,
+            flags=re.I,
+        )
+        stripped = re.sub(
+            r"^(?:Masterverse|Origins|Revelation|New Eternia)\s+",
+            "",
+            stripped,
+            flags=re.I,
+        )
+        stripped = re.sub(r"\s*Action Figures?\s*.*$", "", stripped, flags=re.I)
+        stripped = re.sub(r"\s*\(.*?\)\s*", " ", stripped)
+        stripped = re.sub(r"\s+", " ", stripped).strip(" -:")
+        if stripped and 1 < len(stripped) < len(cleaned):
+            return f"{stripped} {cleaned}"
     if LINE_AS_NAME.search(n) and s.strip():
         return f"{s} {n} {cleaned}"
     if re.match(r"^masters of the universe\b", n, re.I):
@@ -331,9 +377,13 @@ RETAILER_FEEDS = [
     {"id": "cmdstore", "baseUrl": "https://www.cmdstore.ca", "pageLimit": 250, "maxPages": 50},
     {"id": "planet-af", "baseUrl": "https://www.planetactionfigures.co.uk", "pageLimit": 250, "maxPages": 30},
     # Verified open specialty AF catalogs (2026-09) — Hasbro/Playmates/JAKKS/DCD/ToyBiz/BST
-    {"id": "cooltoyden", "baseUrl": "https://cooltoyden.com", "pageLimit": 250, "maxPages": 20},
-    {"id": "afcollector", "baseUrl": "https://afcollector.com", "pageLimit": 250, "maxPages": 10},
-    {"id": "legendztoys", "baseUrl": "https://legendztoys.com", "pageLimit": 250, "maxPages": 5},
+    {"id": "cooltoyden", "baseUrl": "https://cooltoyden.com", "pageLimit": 250, "maxPages": 25},
+    {"id": "afcollector", "baseUrl": "https://afcollector.com", "pageLimit": 250, "maxPages": 12},
+    {"id": "legendztoys", "baseUrl": "https://legendztoys.com", "pageLimit": 250, "maxPages": 8},
+    # New open specialty / first-party (verified 2026-09-06) — Mattel retail + JP import SHF/AY
+    {"id": "shop-mattel", "baseUrl": "https://shop.mattel.com", "pageLimit": 250, "maxPages": 20},
+    {"id": "solarisjapan", "baseUrl": "https://www.solarisjapan.com", "pageLimit": 250, "maxPages": 25},
+    {"id": "jbhifi", "baseUrl": "https://www.jbhifi.com.au", "pageLimit": 250, "maxPages": 12},
 ]
 
 RETAILER_SKIP = re.compile(
@@ -342,7 +392,8 @@ RETAILER_SKIP = re.compile(
     r"empty box|backdrop|t-?shirt|hoodie|mug|poster|apparel|enamel|pin set|"
     r"blind box flat|gift card|nendoroid|pop up parade|scale figure|"
     r"non-scale figure|vibration stars|\blego\b|steiff|loungefly|ornament|"
-    r"living dead dolls?|mds mega scale)\b",
+    r"living dead dolls?|mds mega scale|barbie|hot wheels|little people|fisher.?price|"
+    r"monster high|kpop demon|tonies|deck box|beach towel|cozy set)\b",
     re.I,
 )
 
@@ -437,6 +488,18 @@ def infer_retailer_company(p: dict) -> str | None:
         return "diamondselect"
     if re.search(r"\bjada\b", bl):
         return "jada"
+    # Mattel AF lines (shop.mattel / retailers) — dolls skipped via RETAILER_SKIP
+    if re.search(
+        r"masterverse|motu origins|masters of the universe|\bwwe\b|hammond collection|"
+        r"jurassic world.*(?:action )?figure|dc (?:universe|comics) unlimited|"
+        r"dc premier",
+        bl,
+    ):
+        if re.search(
+            r"mattel|masters of the universe|\bwwe\b|jurassic|hammond|dc universe|dc premier",
+            bl,
+        ):
+            return "mattel"
     return None
 
 
@@ -656,12 +719,21 @@ def score_pair(fig: dict, prod: dict) -> float:
     # Joined-token fallback (Boss Borot ↔ bossborot, Trap Jaw ↔ trapjaw)
     joined = "".join(fn)
     contiguous = fname in char or fname in title or joined in char.replace(" ", "")
-    covered = [t for t in fn if t in char_toks or t in char]
+    # Require token set / word-boundary hits — avoid "he" ⊂ "the", "man" ⊂ "human"
+    covered = [
+        t
+        for t in fn
+        if t in char_toks or (len(t) >= 4 and re.search(rf"\b{re.escape(t)}\b", char))
+    ]
     if not covered and joined and joined in char.replace(" ", ""):
         covered = list(fn)
     if not covered:
         return -1.0
     if len(covered) < max(1, (len(fn) + 1) // 2):
+        return -1.0
+    # Multi-token names: a lone shared honorific/first-name is not enough
+    # (Mr Terrific≠Mr Freeze, Captain UK≠Captain America, Thor Endgame≠Thor Jane Foster)
+    if len(fn) >= 2 and len(covered) == 1 and not contiguous:
         return -1.0
     # First significant token must appear in character text (or joined compound hit)
     if fn[0] not in char_toks and fn[0] not in char and not (joined and joined in char.replace(" ", "")):
@@ -673,8 +745,8 @@ def score_pair(fig: dict, prod: dict) -> float:
         prod_name_toks = significant_name_tokens(prod.get("name") or "")
         prod_sub_toks = significant_name_tokens(prod.get("subtitle") or "")
         primary = prod_name_toks or prod_sub_toks
-        if primary and fn[0] != primary[0] and set(fn) != set(primary):
-            # allow exact whole-name equality only
+        # Character may trail franchise tokens ("Masterverse Teela", "X-Men Magneto")
+        if primary and fn[0] not in primary and set(fn) != set(primary):
             if fname != norm(prod.get("name") or "") and fname != norm(prod.get("subtitle") or ""):
                 return -1.0
 
@@ -693,16 +765,33 @@ def score_pair(fig: dict, prod: dict) -> float:
     name_score += 8 * len(covered) / len(fn)
     if fname == norm(prod["name"]) or fname == norm(prod.get("subtitle") or ""):
         name_score += 6
+    # First-name product titles for multi-token figures (Ash ← Ash Evil Dead / Ash Williams)
+    prod_primary = significant_name_tokens(prod.get("name") or "") or significant_name_tokens(
+        prod.get("subtitle") or ""
+    )
+    if len(fn) >= 2 and prod_primary and prod_primary[0] == fn[0] and fn[0] in covered:
+        name_score += 8
+        contiguous = True
+    # Character token present anywhere in product primary tokens
+    if len(fn) == 1 and prod_primary and fn[0] in prod_primary:
+        name_score += 3
 
-    fs = [t for t in tokens(fig["subtitle"]) if t not in WEAK]
+    raw_fs = [t for t in tokens(fig["subtitle"]) if t not in WEAK]
+    fs = [
+        t
+        for t in raw_fs
+        if t not in SUBTITLE_NOISE
+        and not re.match(r"^(?:w|wave)?\d+[a-z]?$", t)
+        and not re.match(r"^\d{4}$", t)
+    ]
     if fs:
         hits = sum(1 for t in fs if t in char or t in prod["_blob"])
-        sub_score = 5.0 * hits / len(fs)
-        # Strong wave/subtitle identity: if ≥2 tokens and zero hits, reject
+        sub_score = 5.0 * hits / max(1, len(fs))
+        # Meaningful subtitle cues only (ignore Wave6 / Exclusive densify noise)
         if len(fs) >= 2 and hits == 0:
             return -1.0
     else:
-        sub_score = 1.0
+        sub_score = 1.5 if raw_fs else 1.0
 
     line_score = 4.0 if req and req.search(prod["_blob"]) else 1.0
     if re.search(r"\b(accessories|empty box|backdrop|stand only)\b", prod["_blob"]):
@@ -737,6 +826,9 @@ def score_pair(fig: dict, prod: dict) -> float:
     # Soft-goods / packaging-only curated rows — no honest figure photo match
     if re.search(r"\bsoft goods\b|softgoods|empty box|backdrop", norm(fig["name"] + " " + fig["subtitle"])):
         return -1.0
+    if re.search(r"\beffect\b|accessories|display stand|empty box", norm(fig["name"] + " " + fig["line"])):
+        if not re.search(r"\beffect\b|accessories|display stand", prod["_blob"]):
+            return -1.0
     # Skip junk curated placeholders
     if re.search(r"^(special exclusive|additional fees|to b order|series \d+)$", norm(fig["name"])):
         return -1.0
@@ -823,13 +915,13 @@ def score_pair(fig: dict, prod: dict) -> float:
         if re.search(r"\bljn\b", prod["_blob"]) and "elite" not in prod["_blob"]:
             return -1.0
 
-    # Single-token figure vs prefixed product character (Viper ← S.A.W.-Viper / Techno-Viper)
+    # Single-token figure vs hyphen-prefixed product character (Viper ← S.A.W.-Viper / Techno-Viper)
+    # Space prefixes like "Figure Complex Wolverine" / "X-Men Magneto" are NOT rejects.
     if len(fn) == 1:
         fig_name_raw = (fig.get("name") or "").strip()
         title_raw = prod.get("title") or prod.get("name") or ""
-        # Only the token immediately before Name (handles S.A.W.-Viper / Techno Viper)
         pref = re.search(
-            rf"(?<![A-Za-z0-9])([A-Za-z][A-Za-z0-9\.]{{0,20}})[-\s]+{re.escape(fig_name_raw)}\b",
+            rf"(?<![A-Za-z0-9])([A-Za-z][A-Za-z0-9\.]{{0,20}})[-]+{re.escape(fig_name_raw)}\b",
             title_raw,
             re.I,
         )
@@ -970,6 +1062,25 @@ def score_pair(fig: dict, prod: dict) -> float:
             if fam not in {"wwe", "masterverse", "origins", "jurassic", "motu-generic"}:
                 return -1.0
 
+    # Color antonyms: Red Ninja must not take Blue Ninja product art
+    fig_colors = COLOR_WORDS & set(tokens(fig["name"] + " " + fig.get("subtitle", "")))
+    prod_colors = COLOR_WORDS & set(tokens((prod.get("name") or "") + " " + (prod.get("title") or "")))
+    if fig_colors and prod_colors and fig_colors.isdisjoint(prod_colors):
+        return -1.0
+
+    # Distinct character compounds / alter-egos
+    fig_ctx = norm(f"{fig['name']} {fig.get('subtitle','')} {fig.get('line','')}")
+    if re.search(r"miles\s+morales|spider\s*gwen|ghost\s*spider", prod["_blob"]) and not re.search(
+        r"miles|gwen|ghost\s*spider", fig_ctx
+    ):
+        if re.search(r"spider\s*man|spiderman", fname) or fname in {"spider man", "spiderman"}:
+            return -1.0
+    if re.search(r"who\s*laughs", prod["_blob"]) and "laugh" not in fig_ctx:
+        return -1.0
+    if re.search(r"old\s*man\s*logan", prod["_blob"]) and not re.search(r"old\s*man|logan", fig_ctx):
+        if "wolverine" in fname and "logan" not in fig_ctx:
+            return -1.0
+
     total = name_score + sub_score + line_score
     if not contiguous and sub_score < 2.5:
         return -1.0
@@ -1096,8 +1207,9 @@ def main() -> None:
             "multi-token subtitle requires ≥1 hit",
             "one product image → one character name (variants may share CDN shot)",
             "Mattel DC Premier not used for unrelated curated lines",
-            "retailer feeds (ToyArena/CmdStore/Planet/CoolToyDen/AFCollector/Legendz) vendor→company high-confidence only",
+            "retailer feeds (ToyArena/CmdStore/Planet/CoolToyDen/AFCollector/Legendz/shop.mattel/Solaris/JBHiFi) vendor→company high-confidence only",
             "Storm HK + Store Horsemen first-party; Pulse/BBTS/EE/Mezco official still blocked",
+            "hyphen-prefix only for Techno-Viper style; MOTU trailing-character peel; color antonyms",
         ],
         "samples": [
             {

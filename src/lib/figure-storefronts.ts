@@ -4,7 +4,7 @@
  *
  * Focus: articulated action figures (not pins, dolls, or statue lines).
  * Hasbro Pulse / BBTS / EE / Mezco / McFarlane Toys official still lack stable public JSON.
- * NECA: store.necaonline.com; shop.dc.com McFarlane Multiverse; Valaverse; Blokees/Blitzway/EXO-6/Star Ace/DamToys; Storm Collectibles (stormco.com.hk) + Store Horsemen (Four Horsemen) verified open JSON. Specialty retailers (ToyArena/CmdStore/Planet/CoolToyDen/AFCollector/Legendz) used image-bake only.
+ * NECA: store.necaonline.com; shop.dc.com McFarlane Multiverse; Valaverse; Blokees/Blitzway/EXO-6/Star Ace/DamToys; Storm Collectibles (stormco.com.hk) + Store Horsemen (Four Horsemen) verified open JSON. Specialty retailers (ToyArena/CmdStore/Planet/CoolToyDen/AFCollector/Legendz/shop.mattel/Solaris/JBHiFi) used image-bake only.
  */
 
 import type { CatalogFigure, CompanyId, ItemKind } from "@/lib/types";
