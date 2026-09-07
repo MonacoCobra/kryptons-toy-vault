@@ -123,3 +123,4 @@ touch `comic-upc-map.json` / LOCG caches — leave those files alone.
 
 **Also:** specialty Shopify plateau shops retained; Game/Apparel product_types skipped in infer.
 
+**Bake result:** 8596 → 8611 / 19079 (45.05% → 45.13%) primary sku; **GTIN primary** ~2009 → **2818**; listing→GTIN upgrades dominate the +809 assignments. Aliases attached ~10401 (529 figures tagged `alias:hasbro-pulse`). Index 40872 → 42541 (hasbro-pulse 1699: 109 GTIN + 1590 listing). Pulse contributed 21 GTIN primaries + listing aliases — never promoted listing over EAN.

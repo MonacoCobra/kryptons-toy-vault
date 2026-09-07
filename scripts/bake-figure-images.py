@@ -469,6 +469,10 @@ RETAILER_FEEDS = [
     {"id": "kitsap", "baseUrl": "https://www.kitsapcomics.com", "pageLimit": 250, "maxPages": 20},
     # sifitoys: specialty AF — Mezco One:12 + Four Horsemen/McFarlane/Hasbro (thin but honest SKUs)
     {"id": "sifitoys", "baseUrl": "https://www.sifitoys.com", "pageLimit": 250, "maxPages": 12},
+    # Hasbro Pulse (2026-09-07): myshopify products.json is open with real variant.sku.
+    # Almost all are listing codes (F/G/H*); barcode empty. Bake treats listing→aliases;
+    # rare GTIN-shaped sku values may fill primary. Public hasbropulse.com PWA is Mobify HTML.
+    {"id": "hasbro-pulse", "baseUrl": "https://hasbropulse.myshopify.com", "pageLimit": 250, "maxPages": 25},
 ]
 
 RETAILER_SKIP = re.compile(
@@ -505,6 +509,7 @@ def infer_retailer_company(p: dict) -> str | None:
     if pt.startswith("games") or pt.startswith("comics") or pt in {
         "book", "graphic novels", "novels", "sports cards", "posters and prints",
         "supplies - game", "supplies - comic", "retailers sales tools",
+        "game", "games", "apparel", "clothing", "soft goods", "accessories",
     }:
         return None
     if RETAILER_SKIP.search(blob):
@@ -1358,17 +1363,26 @@ def build_sku_to_image_entry(sku_index: list[dict]) -> dict[str, dict]:
         )
 
     for raw in sku_index:
-        sku = clean_sku_value(raw.get("sku"))
         url = raw.get("imageUrl")
-        if not sku or not url or not str(url).startswith("http"):
+        if not url or not str(url).startswith("http"):
             continue
-        key = sku.upper()
-        entry = dict(raw)
-        entry["sku"] = sku
-        entry["imageUrl"] = str(url)
-        cur = best.get(key)
-        if cur is None or rank(entry) < rank(cur):
-            best[key] = entry
+        # Index by GTIN primary and listingSku so legacy listing primaries still
+        # rematch photos off the exact storefront code (aliases stay secondary).
+        codes = []
+        for field in ("sku", "listingSku"):
+            c = clean_sku_value(raw.get(field))
+            if c and c not in codes:
+                codes.append(c)
+        if not codes:
+            continue
+        for sku in codes:
+            key = sku.upper()
+            entry = dict(raw)
+            entry["sku"] = sku
+            entry["imageUrl"] = str(url)
+            cur = best.get(key)
+            if cur is None or rank(entry) < rank(cur):
+                best[key] = entry
     return best
 
 
@@ -1377,19 +1391,26 @@ def build_sku_to_products(sku_index: list[dict]) -> dict[str, list[dict]]:
     out: dict[str, list[dict]] = defaultdict(list)
     seen_url: dict[str, set[str]] = defaultdict(set)
     for raw in sku_index:
-        sku = clean_sku_value(raw.get("sku"))
         url = raw.get("imageUrl")
-        if not sku or not url or not str(url).startswith("http"):
+        if not url or not str(url).startswith("http"):
             continue
-        key = sku.upper()
+        codes = []
+        for field in ("sku", "listingSku"):
+            c = clean_sku_value(raw.get(field))
+            if c and c not in codes:
+                codes.append(c)
+        if not codes:
+            continue
         u = str(url)
-        if u in seen_url[key]:
-            continue
-        seen_url[key].add(u)
-        entry = dict(raw)
-        entry["sku"] = sku
-        entry["imageUrl"] = u
-        out[key].append(entry)
+        for sku in codes:
+            key = sku.upper()
+            if u in seen_url[key]:
+                continue
+            seen_url[key].add(u)
+            entry = dict(raw)
+            entry["sku"] = sku
+            entry["imageUrl"] = u
+            out[key].append(entry)
     return out
 
 

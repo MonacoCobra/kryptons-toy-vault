@@ -36,6 +36,7 @@ paginates **all** pages from these same shops (see `scripts/gen-figure-oneshot.p
 | Nerdzoic (bake) | https://nerdzoic.com | US specialty Hasbro/Mattel/NECA/Four Horsemen/Mezco — SKU+image bake |
 | Kitsap Comics (bake) | https://www.kitsapcomics.com | Specialty AF aisle Hasbro/McFarlane/Mattel — SKU+image bake |
 | SiFi Toys (bake) | https://www.sifitoys.com | Specialty Mezco One:12 / Four Horsemen / Hasbro — SKU+image bake |
+| Hasbro Pulse (bake) | https://hasbropulse.myshopify.com | Listing SKUs→aliases; rare GTIN primary — SKU bake |
 
 ## Out of scope
 
@@ -43,9 +44,7 @@ Pins, Barbie/dolls, poster/print merch, board games, drinkware, puzzles.
 
 ## Still no stable Shopify JSON
 
-Hasbro Pulse, BBTS, Entertainment Earth, Mezco official, McFarlane Toys store,
-Hot Toys, Sideshow, Bandai Tamashii US, MAFEX/Medicom first-party, threezero, Takara Tomy mall —
-still no stable public `products.json` we verified. **Image bake** may still fill
+BBTS / Entertainment Earth / Walmart / Target / McFarlane official still lack a usable public **GTIN** feed (BBTS/EE expose listing ids only; WM/Target bot-blocked; McFarlane is Wix). Hasbro Pulse `hasbropulse.myshopify.com/products.json` is open but mostly listing codes (aliases). Mezco official, Hot Toys, Sideshow, Bandai Tamashii US, MAFEX/Medicom first-party, threezero, Takara Tomy mall — still no stable public `products.json` we verified. **Image bake** may still fill
 Hasbro / Mezco One:12 / MAFEX / SHFiguarts / Playmates / JAKKS / Toy Biz /
 classic DC Direct / Loyal Subjects BST / Four Horsemen curated rows from specialty
 retailer Shopify catalogs (ToyArena, CmdStore, Planet AF, Cool Toy Den, AFCollector,
