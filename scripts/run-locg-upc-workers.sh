@@ -24,7 +24,8 @@ start_worker () {
     --publisher-group "$group" \
     --limit "$LIMIT" --max-per-series "$MAX_PER" \
     --min-year "$MIN_YEAR" --max-minutes "$MAX_MIN" \
-    --delay "$DELAY" --no-cv \
+    --delay "$DELAY" \
+    ${NO_CV:+--no-cv} \
     --worker-id "$group" \
     --stats-file "$stats" \
     >"$log" 2>&1 &
