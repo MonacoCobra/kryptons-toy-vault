@@ -98,8 +98,8 @@ function ComicDetail() {
         <dl className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           <Meta label="Cover date" value={formatMonthYear(comic.coverDate)} />
           <Meta label="Cover price" value={usd(comic.msrp)} />
-          <Meta label="Writer" value={comic.writers.join(", ")} />
-          <Meta label="Artist" value={comic.artists.join(", ")} />
+          <Meta label="Writer" value={peopleList(comic.writers)} />
+          <Meta label="Artist" value={peopleList(comic.artists)} />
           <Meta label="UPC / ISBN" value={comic.upc ?? "—"} />
         </dl>
 
@@ -128,6 +128,17 @@ function ComicDetail() {
       </div>
     </main>
   );
+}
+
+/** Coerce writers/artists whether the row arrived as string[] or a CSV string. */
+function peopleList(value: unknown): string {
+  if (Array.isArray(value)) {
+    const parts = value.map((v) => String(v ?? "").trim()).filter(Boolean);
+    return parts.length ? parts.join(", ") : "—";
+  }
+  if (value == null || value === "") return "—";
+  const s = String(value).trim();
+  return s || "—";
 }
 
 function Meta({ label, value }: { label: string; value: string }) {

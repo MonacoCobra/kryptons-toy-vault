@@ -36175,7 +36175,9 @@ export function searchComics(
   if (!q) return list;
   const issueMatch = q.match(/#?\s*(\d+[a-z]?)$/i);
   return list.filter((c) => {
-    const hay = `${c.series} ${c.issue} ${c.publisher} ${c.writers.join(" ")} ${c.artists.join(" ")} ${c.variant ?? ""} ${c.upc ?? ""}`.toLowerCase();
+    const writers = Array.isArray(c.writers) ? c.writers.join(" ") : String(c.writers ?? "");
+    const artists = Array.isArray(c.artists) ? c.artists.join(" ") : String(c.artists ?? "");
+    const hay = `${c.series} ${c.issue} ${c.publisher} ${writers} ${artists} ${c.variant ?? ""} ${c.upc ?? ""}`.toLowerCase();
     if (hay.includes(q)) return true;
     if (issueMatch && c.issue === issueMatch[1] && hay.includes(q.replace(issueMatch[0], "").trim())) {
       return true;
@@ -36192,8 +36194,9 @@ export function recentComics(limit = 10, extras: CatalogComic[] = [], promoted: 
   }).slice(0, limit);
 }
 
-export function comicLabel(c: { series: string; issue: string; variant?: string }) {
-  const issue = c.issue.toLowerCase() === "nn" ? "" : ` #${c.issue}`;
+export function comicLabel(c: { series: string; issue: string | number; variant?: string }) {
+  const issueStr = String(c.issue ?? "").trim();
+  const issue = issueStr.toLowerCase() === "nn" || !issueStr ? "" : ` #${issueStr}`;
   const variant = c.variant ? ` (${c.variant})` : "";
   return `${c.series}${issue}${variant}`;
 }

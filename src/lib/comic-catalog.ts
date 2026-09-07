@@ -89,10 +89,10 @@ function rowToComic(row: CatalogRow): CatalogComic {
     paletteRaw[2] || "#f8fafc",
   ];
   return {
-    id: row.id,
-    series: row.series,
-    issue: row.issue,
-    publisher: row.publisher,
+    id: String(row.id),
+    series: String(row.series ?? ""),
+    issue: String(row.issue ?? "").replace(/^#/, "").trim() || "1",
+    publisher: String(row.publisher ?? ""),
     coverDate: row.cover_date || row.street_date || "",
     streetDate: row.street_date || undefined,
     writers: asArray(row.writers).map(String),
@@ -109,11 +109,52 @@ function rowToComic(row: CatalogRow): CatalogComic {
   };
 }
 
+function peopleField(value: unknown): string[] {
+  if (Array.isArray(value)) return value.map((v) => String(v ?? "").trim()).filter(Boolean);
+  if (value == null) return [];
+  return String(value)
+    .split(/,|&| and /i)
+    .map((p) => p.trim())
+    .filter(Boolean);
+}
+
 function asComic(value: unknown): CatalogComic | null {
   if (!value || typeof value !== "object") return null;
-  const c = value as CatalogComic;
-  if (!c.id || !c.series || !c.issue || !c.publisher) return null;
-  return c;
+  const raw = value as Record<string, unknown>;
+  const id = String(raw.id ?? "").trim();
+  const series = String(raw.series ?? "").trim();
+  const issue = String(raw.issue ?? "").replace(/^#/, "").trim();
+  const publisher = String(raw.publisher ?? "").trim();
+  if (!id || !series || !issue || !publisher) return null;
+  const paletteRaw = asArray(raw.palette).map(String);
+  const palette: [string, string, string] = [
+    paletteRaw[0] || "#1e3a8a",
+    paletteRaw[1] || "#e30613",
+    paletteRaw[2] || "#f8fafc",
+  ];
+  const coverDate = String(raw.coverDate ?? raw.cover_date ?? raw.streetDate ?? raw.street_date ?? "").trim();
+  const streetDateRaw = String(raw.streetDate ?? raw.street_date ?? "").trim();
+  const variant = String(raw.variant ?? "").trim();
+  const cover = String(raw.cover ?? raw.coverUrl ?? "").trim();
+  return {
+    id,
+    series,
+    issue,
+    publisher,
+    coverDate: coverDate || streetDateRaw,
+    streetDate: streetDateRaw || undefined,
+    writers: peopleField(raw.writers),
+    artists: peopleField(raw.artists),
+    description: String(raw.description ?? ""),
+    msrp: Number(raw.msrp) || 4.99,
+    format: (String(raw.format || "single") as CatalogComic["format"]) || "single",
+    variant: variant || undefined,
+    upc: String(raw.upc ?? "").trim() || undefined,
+    demand: Number(raw.demand) || 1,
+    key: Boolean(raw.key ?? raw.key_issue),
+    palette,
+    cover: cover.startsWith("http") || cover.startsWith("/") ? cover : undefined,
+  };
 }
 
 async function readDrops(): Promise<DropRow[]> {

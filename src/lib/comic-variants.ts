@@ -1,12 +1,17 @@
 import type { CatalogComic } from "@/lib/types";
 
 /** Normalize series / issue / publisher for variant family matching. */
-export function normalizeComicPart(s: string): string {
-  return s.trim().toLowerCase().replace(/\s+/g, " ");
+export function normalizeComicPart(s: string | number | null | undefined): string {
+  // Live/DB rows occasionally arrive with numeric issue (JSON number) or nulls.
+  // Coerce before trim so family indexing never throws mid-render.
+  return String(s ?? "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, " ");
 }
 
 /** Family key: series + issue + publisher (no variant). */
-export function comicFamilyKey(c: { series: string; issue: string; publisher: string }): string {
+export function comicFamilyKey(c: { series: string | number | null | undefined; issue: string | number | null | undefined; publisher: string | number | null | undefined }): string {
   return `${normalizeComicPart(c.series)}|${normalizeComicPart(c.issue)}|${normalizeComicPart(c.publisher)}`;
 }
 

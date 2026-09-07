@@ -469,6 +469,55 @@ function normalizeFigures(rows: unknown[], week: string, fallbackDate: string): 
   return out;
 }
 
+function coerceCachedComics(rows: unknown[], week: string): CatalogComic[] {
+  // Preserve stored ids; only repair shape (numeric issue, CSV writers, etc.).
+  const out: CatalogComic[] = [];
+  for (const row of rows) {
+    if (!row || typeof row !== "object") continue;
+    const r = row as Record<string, unknown>;
+    const id = str(r.id) || undefined;
+    const series = str(r.series);
+    if (!series) continue;
+    const issue = issueNo(r.issue);
+    const publisher = str(r.publisher) || "Unknown";
+    const variant = str(r.variant);
+    const cover = str(r.coverUrl ?? r.cover);
+    const street = dateish(r.streetDate ?? r.coverDate, new Date().toISOString().slice(0, 10));
+    out.push({
+      id: (id || `live-c-${week}-${slug(series)}-${slug(issue)}${variant ? `-${slug(variant)}` : ""}`).slice(0, 80),
+      series,
+      issue,
+      publisher,
+      coverDate: str(r.coverDate) || street,
+      streetDate: str(r.streetDate) || street,
+      writers: people(r.writers),
+      artists: people(r.artists),
+      description: str(r.description) || `Street date ${street}.`,
+      msrp: num(r.msrp, 4.99),
+      format: asFormat(r.format, series),
+      variant: variant || undefined,
+      demand: num(r.demand, 1),
+      key: Boolean(r.key),
+      palette: Array.isArray(r.palette) && r.palette.length >= 3
+        ? [String(r.palette[0]), String(r.palette[1]), String(r.palette[2])]
+        : paletteFor(publisher),
+      cover: cover.startsWith("http") ? cover : undefined,
+    });
+  }
+  return out;
+}
+
+function coerceCachedFigures(rows: unknown[]): CatalogFigure[] {
+  const out: CatalogFigure[] = [];
+  for (const row of rows) {
+    if (!row || typeof row !== "object") continue;
+    const f = row as CatalogFigure;
+    if (!f.id || !f.name || !f.company) continue;
+    out.push(f);
+  }
+  return out;
+}
+
 async function readCached(week: string): Promise<WeeklyDrop | null> {
   // Production preview has no DATABASE_URL; importing @/lib/db there boots PGLite
   // and the WASM payload is missing from the Vercel output — that crash kills Node.
@@ -486,8 +535,8 @@ async function readCached(week: string): Promise<WeeklyDrop | null> {
     return {
       week: row.week,
       fetchedAt: row.fetched_at,
-      comics: asArray(row.comics) as CatalogComic[],
-      figures: asArray(row.figures) as CatalogFigure[],
+      comics: coerceCachedComics(asArray(row.comics), row.week),
+      figures: coerceCachedFigures(asArray(row.figures)),
       status: row.status === "error" ? "error" : "ok",
       error: row.error ?? undefined,
     };

@@ -26,7 +26,8 @@ function PlaceholderCover({
   const palette =
     "palette" in comic && comic.palette ? comic.palette : (["#1e3a8a", "#e30613", "#f8fafc"] as [string, string, string]);
   const isKey = "key" in comic && comic.key;
-  const issue = comic.issue.toLowerCase() === "nn" ? "OS" : comic.issue;
+  const issueRaw = String(comic.issue ?? "").trim();
+  const issue = issueRaw.toLowerCase() === "nn" ? "OS" : issueRaw;
   const seed = hashString(comic.id ?? `${comic.series}-${comic.issue}`);
   const art = seed % 4;
   const year = "coverDate" in comic && comic.coverDate ? comic.coverDate.slice(0, 4) : "";
