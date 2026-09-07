@@ -8,6 +8,7 @@ import { ComicVariantScroller } from "@/components/comic-variant-scroller";
 import { MarketEstimate } from "@/components/market-estimate";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { libraryCatalogRows } from "@/lib/comic-catalog";
 import { getComicVariants, indexComicsByFamily } from "@/lib/comic-variants";
 import { formatMonthYear, usd } from "@/lib/format";
 import { useComicLib, useEnsureComicLibrary, useLiveComics, useLiveDrop } from "@/lib/live-store";
@@ -24,11 +25,13 @@ function ComicDetail() {
   const library = useEnsureComicLibrary(extras);
   const loading = useLiveDrop((s) => s.loading);
   const libLoading = useComicLib((s) => s.loading);
-  const comic = comicById(comicId, extras, library?.archive ?? []);
+  // Noteworthy live-drop titles are NOT in archive until they age out — include both.
+  const libraryRows = useMemo(() => libraryCatalogRows(library), [library]);
+  const comic = comicById(comicId, extras, libraryRows);
 
   const catalog = useMemo(
-    () => mergeComics(extras, library?.archive ?? []),
-    [extras, library],
+    () => mergeComics(extras, libraryRows),
+    [extras, libraryRows],
   );
   const familyIndex = useMemo(() => indexComicsByFamily(catalog), [catalog]);
   const variants = useMemo(
@@ -47,7 +50,9 @@ function ComicDetail() {
   const [edit, setEdit] = useState(false);
 
   if (!comic) {
-    if ((comicId.startsWith("live-") && loading) || libLoading) {
+    // Wait for weekly drop + comic library. Noteworthy-only live ids are absent from
+    // static COMICS/archive until promotion — 404ing before library resolves was the Live bug.
+    if (loading || libLoading || library == null) {
       return <p className="py-16 text-center text-sm text-muted">Loading catalog…</p>;
     }
     throw notFound();

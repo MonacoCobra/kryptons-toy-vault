@@ -57,7 +57,11 @@ export const useComicLib = create<ComicLibState>((set, get) => ({
       const library = await getComicLibrary({ data: { extras } });
       set({ library, loading: false });
     } catch {
-      set({ loading: false });
+      // Empty shell so detail pages can resolve notFound instead of waiting forever.
+      set({
+        library: get().library ?? { noteworthy: [], archive: [], promoted: 0, week: "" },
+        loading: false,
+      });
     }
   },
 }));

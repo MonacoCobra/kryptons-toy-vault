@@ -16,14 +16,14 @@ export function comicFamilyKey(c: { series: string | number | null | undefined; 
 }
 
 /** UI label for a cover row (Cover A when unset). */
-export function variantDisplayLabel(c: { variant?: string }): string {
-  const v = c.variant?.trim();
+export function variantDisplayLabel(c: { variant?: string | number | null }): string {
+  const v = String(c.variant ?? "").trim();
   return v || "Cover A";
 }
 
 /** True for standard / Cover A / regular / main (empty variant counts as primary). */
-export function isPrimaryCover(c: { variant?: string }): boolean {
-  const v = (c.variant ?? "").trim().toLowerCase();
+export function isPrimaryCover(c: { variant?: string | number | null }): boolean {
+  const v = String(c.variant ?? "").trim().toLowerCase();
   if (!v) return true;
   return (
     /^(cover\s*)?a\b/.test(v) ||
@@ -48,14 +48,14 @@ function sortVariants(a: CatalogComic, b: CatalogComic): number {
 
 /** Group key used for open-order collapse (family + format + cover year). */
 function collapseGroupKey(c: CatalogComic): string {
-  const year = c.coverDate?.slice(0, 4) || "";
+  const year = String(c.coverDate ?? "").slice(0, 4);
   return `${comicFamilyKey(c)}|${c.format}|${year}`;
 }
 
 function isTrueVariantSet(list: CatalogComic[]): boolean {
   if (list.length <= 1) return false;
-  const variants = new Set(list.map((c) => (c.variant ?? "").trim().toLowerCase()));
-  const upcs = new Set(list.map((c) => c.upc?.trim()).filter(Boolean));
+  const variants = new Set(list.map((c) => String(c.variant ?? "").trim().toLowerCase()));
+  const upcs = new Set(list.map((c) => String(c.upc ?? "").trim()).filter(Boolean));
   return variants.size > 1 || upcs.size > 1;
 }
 
@@ -63,9 +63,9 @@ function refineFamily(comic: CatalogComic, siblings: CatalogComic[]): CatalogCom
   let list = siblings;
   const sameFormat = list.filter((c) => c.format === comic.format);
   if (sameFormat.length) list = sameFormat;
-  const year = comic.coverDate?.slice(0, 4);
+  const year = String(comic.coverDate ?? "").slice(0, 4);
   if (year) {
-    const sameYear = list.filter((c) => c.coverDate?.slice(0, 4) === year);
+    const sameYear = list.filter((c) => String(c.coverDate ?? "").slice(0, 4) === year);
     if (sameYear.length) list = sameYear;
   }
   return list;

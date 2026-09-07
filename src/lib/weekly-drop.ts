@@ -177,7 +177,8 @@ function asArray(value: unknown): unknown[] {
 }
 
 function str(value: unknown): string {
-  return typeof value === "string" ? value.trim() : value == null ? "" : String(value).trim();
+  const s = typeof value === "string" ? value : value == null ? "" : String(value);
+  return s.replace(/\u0000/g, "").trim();
 }
 
 function num(value: unknown, fallback: number): number {

@@ -1,5 +1,7 @@
 export function usd(n: number, digits = 2): string {
-  return n.toLocaleString("en-US", {
+  const value = typeof n === "number" && Number.isFinite(n) ? n : Number(n);
+  const safe = Number.isFinite(value) ? value : 0;
+  return safe.toLocaleString("en-US", {
     style: "currency",
     currency: "USD",
     minimumFractionDigits: digits,
@@ -28,10 +30,12 @@ export function pct(n: number): string {
   return `${sign}${Math.abs(n).toFixed(1)}%`;
 }
 
-export function formatDate(iso?: string | null): string {
-  if (!iso) return "—";
-  const d = new Date(iso + (iso.length <= 10 ? "T00:00:00" : ""));
-  if (Number.isNaN(d.getTime())) return iso;
+export function formatDate(iso?: string | number | null): string {
+  if (iso == null || iso === "") return "—";
+  const s = String(iso).replace(/\u0000/g, "").trim();
+  if (!s) return "—";
+  const d = new Date(s + (s.length <= 10 ? "T00:00:00" : ""));
+  if (Number.isNaN(d.getTime())) return s;
   return d.toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",
@@ -39,10 +43,12 @@ export function formatDate(iso?: string | null): string {
   });
 }
 
-export function formatMonthYear(iso?: string | null): string {
-  if (!iso) return "—";
-  const d = new Date(iso + (iso.length <= 10 ? "T00:00:00" : ""));
-  if (Number.isNaN(d.getTime())) return iso;
+export function formatMonthYear(iso?: string | number | null): string {
+  if (iso == null || iso === "") return "—";
+  const s = String(iso).replace(/\u0000/g, "").trim();
+  if (!s) return "—";
+  const d = new Date(s + (s.length <= 10 ? "T00:00:00" : ""));
+  if (Number.isNaN(d.getTime())) return s;
   return d.toLocaleDateString("en-US", { month: "short", year: "numeric" });
 }
 

@@ -30,7 +30,7 @@ function PlaceholderCover({
   const issue = issueRaw.toLowerCase() === "nn" ? "OS" : issueRaw;
   const seed = hashString(comic.id ?? `${comic.series}-${comic.issue}`);
   const art = seed % 4;
-  const year = "coverDate" in comic && comic.coverDate ? comic.coverDate.slice(0, 4) : "";
+  const year = "coverDate" in comic && comic.coverDate ? String(comic.coverDate).slice(0, 4) : "";
 
   const bars = Array.from({ length: 18 }, (_, i) => {
     const n = ((seed >> (i % 12)) + i * 17) % 7;

@@ -58,6 +58,18 @@ function asArray(value: unknown): unknown[] {
   return [];
 }
 
+/** Coerce any scalar to a trimmed string; strip NUL bytes from bad cover/DB payloads. */
+function cleanStr(value: unknown): string {
+  if (value == null) return "";
+  return String(value).replace(/\u0000/g, "").trim();
+}
+
+/** Flatten noteworthy + archive for detail/search merge (disjoint by comicKey). */
+export function libraryCatalogRows(library: ComicLibrary | null | undefined): CatalogComic[] {
+  if (!library) return [];
+  return [...library.noteworthy, ...library.archive];
+}
+
 function parseIsoWeek(week: string): { year: number; week: number } | null {
   const m = week.match(/^(\d{4})-W(\d{2})$/i);
   if (!m) return null;
@@ -82,37 +94,42 @@ export function weeksAgo(week: string, from = new Date()): number {
 }
 
 function rowToComic(row: CatalogRow): CatalogComic {
-  const paletteRaw = asArray(row.palette).map(String);
+  const paletteRaw = asArray(row.palette).map((v) => cleanStr(v));
   const palette: [string, string, string] = [
     paletteRaw[0] || "#1e3a8a",
     paletteRaw[1] || "#e30613",
     paletteRaw[2] || "#f8fafc",
   ];
+  const cover = cleanStr(row.cover);
+  const variant = cleanStr(row.variant);
+  const upc = cleanStr(row.upc);
+  const coverDate = cleanStr(row.cover_date) || cleanStr(row.street_date);
+  const streetDate = cleanStr(row.street_date);
   return {
-    id: String(row.id),
-    series: String(row.series ?? ""),
-    issue: String(row.issue ?? "").replace(/^#/, "").trim() || "1",
-    publisher: String(row.publisher ?? ""),
-    coverDate: row.cover_date || row.street_date || "",
-    streetDate: row.street_date || undefined,
-    writers: asArray(row.writers).map(String),
-    artists: asArray(row.artists).map(String),
-    description: row.description || "",
+    id: cleanStr(row.id),
+    series: cleanStr(row.series),
+    issue: cleanStr(row.issue).replace(/^#/, "") || "1",
+    publisher: cleanStr(row.publisher),
+    coverDate,
+    streetDate: streetDate || undefined,
+    writers: peopleField(row.writers),
+    artists: peopleField(row.artists),
+    description: cleanStr(row.description),
     msrp: Number(row.msrp) || 4.99,
-    format: (row.format as CatalogComic["format"]) || "single",
-    variant: row.variant || undefined,
-    upc: row.upc || undefined,
+    format: (cleanStr(row.format) as CatalogComic["format"]) || "single",
+    variant: variant || undefined,
+    upc: upc || undefined,
     demand: Number(row.demand) || 1,
     key: Boolean(row.key_issue),
     palette,
-    cover: row.cover || undefined,
+    cover: cover.startsWith("http") || cover.startsWith("/") ? cover : undefined,
   };
 }
 
 function peopleField(value: unknown): string[] {
-  if (Array.isArray(value)) return value.map((v) => String(v ?? "").trim()).filter(Boolean);
+  if (Array.isArray(value)) return value.map((v) => cleanStr(v)).filter(Boolean);
   if (value == null) return [];
-  return String(value)
+  return cleanStr(value)
     .split(/,|&| and /i)
     .map((p) => p.trim())
     .filter(Boolean);
@@ -121,21 +138,21 @@ function peopleField(value: unknown): string[] {
 function asComic(value: unknown): CatalogComic | null {
   if (!value || typeof value !== "object") return null;
   const raw = value as Record<string, unknown>;
-  const id = String(raw.id ?? "").trim();
-  const series = String(raw.series ?? "").trim();
-  const issue = String(raw.issue ?? "").replace(/^#/, "").trim();
-  const publisher = String(raw.publisher ?? "").trim();
+  const id = cleanStr(raw.id);
+  const series = cleanStr(raw.series);
+  const issue = cleanStr(raw.issue).replace(/^#/, "");
+  const publisher = cleanStr(raw.publisher);
   if (!id || !series || !issue || !publisher) return null;
-  const paletteRaw = asArray(raw.palette).map(String);
+  const paletteRaw = asArray(raw.palette).map((v) => cleanStr(v));
   const palette: [string, string, string] = [
     paletteRaw[0] || "#1e3a8a",
     paletteRaw[1] || "#e30613",
     paletteRaw[2] || "#f8fafc",
   ];
-  const coverDate = String(raw.coverDate ?? raw.cover_date ?? raw.streetDate ?? raw.street_date ?? "").trim();
-  const streetDateRaw = String(raw.streetDate ?? raw.street_date ?? "").trim();
-  const variant = String(raw.variant ?? "").trim();
-  const cover = String(raw.cover ?? raw.coverUrl ?? "").trim();
+  const coverDate = cleanStr(raw.coverDate ?? raw.cover_date ?? raw.streetDate ?? raw.street_date);
+  const streetDateRaw = cleanStr(raw.streetDate ?? raw.street_date);
+  const variant = cleanStr(raw.variant);
+  const cover = cleanStr(raw.cover ?? raw.coverUrl);
   return {
     id,
     series,
@@ -145,11 +162,11 @@ function asComic(value: unknown): CatalogComic | null {
     streetDate: streetDateRaw || undefined,
     writers: peopleField(raw.writers),
     artists: peopleField(raw.artists),
-    description: String(raw.description ?? ""),
+    description: cleanStr(raw.description),
     msrp: Number(raw.msrp) || 4.99,
-    format: (String(raw.format || "single") as CatalogComic["format"]) || "single",
+    format: (cleanStr(raw.format) || "single") as CatalogComic["format"],
     variant: variant || undefined,
-    upc: String(raw.upc ?? "").trim() || undefined,
+    upc: cleanStr(raw.upc) || undefined,
     demand: Number(raw.demand) || 1,
     key: Boolean(raw.key ?? raw.key_issue),
     palette,

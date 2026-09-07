@@ -18,7 +18,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { splitComicsClient } from "@/lib/comic-catalog";
+import { libraryCatalogRows, splitComicsClient } from "@/lib/comic-catalog";
 import { collapseComicVariants } from "@/lib/comic-variants";
 import { usd } from "@/lib/format";
 import { useEnsureComicLibrary, useLiveComics } from "@/lib/live-store";
@@ -59,6 +59,7 @@ function ComicsPage() {
   const wanted = useVault((s) => s.wantedComics);
   const extras = useLiveComics();
   const library = useEnsureComicLibrary(extras);
+  const libraryRows = useMemo(() => libraryCatalogRows(library), [library]);
   const [adding, setAdding] = useState<CatalogComic | null>(null);
   const [customOpen, setCustomOpen] = useState(false);
 
@@ -130,8 +131,8 @@ function ComicsPage() {
   }, [library, extras]);
 
   const catalog = useMemo(
-    () => mergeComics(extras, library?.archive ?? []),
-    [extras, library],
+    () => mergeComics(extras, libraryRows),
+    [extras, libraryRows],
   );
   const publishers = useMemo(
     () => [...new Set(catalog.map((c) => c.publisher))].sort(),
@@ -149,7 +150,7 @@ function ComicsPage() {
 
   const filtered = useMemo(() => {
     let list = search.q
-      ? searchComics(search.q, extras, library?.archive ?? [])
+      ? searchComics(search.q, extras, libraryRows)
       : catalog;
     if (search.publisher) list = list.filter((c) => c.publisher === search.publisher);
     if (search.series) list = list.filter((c) => c.series === search.series);
@@ -157,7 +158,7 @@ function ComicsPage() {
     // Browse: one card per family (Cover A / primary). Search keeps matching variants.
     if (!search.q) list = collapseComicVariants(list);
     return sortComics(list);
-  }, [search, extras, catalog, library, sort, ownedByCatalog]);
+  }, [search, extras, catalog, libraryRows, sort, ownedByCatalog]);
 
   const filteredNoteworthy = useMemo(() => {
     if (filtering) return [];
