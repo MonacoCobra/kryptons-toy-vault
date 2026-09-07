@@ -52,6 +52,7 @@ SHOPS = {
     "fantagraphics": ["https://www.fantagraphics.com/products.json"],
     "austinbooks": ["https://www.austinbooks.com/products.json"],
     "boom": ["https://shop.boom-studios.com/products.json"],
+    "ignition": ["https://ignitionpress.com/products.json"],
 }
 
 VENDOR_TO_PUB = {
