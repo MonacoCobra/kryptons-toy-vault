@@ -153,17 +153,28 @@ def tag_list(tags: Any) -> list[str]:
 
 
 def fetch_page(base_url: str, path: str, page: int, limit: int = 50) -> list[dict] | None:
+    """Fetch one products.json page; retry briefly on 429/5xx rate limits."""
     url = f"{base_url.rstrip('/')}{path}?limit={limit}&page={page}"
     req = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": UA})
-    try:
-        with urllib.request.urlopen(req, timeout=25) as r:
-            raw = r.read()
-            if raw[:1] == b"<":
-                return None
-            data = json.loads(raw)
-            return list(data.get("products") or [])
-    except Exception:
-        return None
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(req, timeout=25) as r:
+                raw = r.read()
+                if raw[:1] == b"<":
+                    return None
+                data = json.loads(raw)
+                return list(data.get("products") or [])
+        except urllib.error.HTTPError as e:
+            if e.code in {429, 503, 502, 520, 521, 522, 524} and attempt < 4:
+                time.sleep(2.5 * (attempt + 1) ** 1.5)
+                continue
+            return None
+        except Exception:
+            if attempt < 2:
+                time.sleep(1.5 * (attempt + 1))
+                continue
+            return None
+    return None
 
 
 def fetch_all_products(source: dict, max_pages: int = 100) -> list[dict]:

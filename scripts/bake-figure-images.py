@@ -458,6 +458,11 @@ RETAILER_FEEDS = [
     {"id": "indemandtoys", "baseUrl": "https://www.indemandtoys.co.uk", "pageLimit": 250, "maxPages": 20},
     # hobbyfigures: UK specialty import — Hasbro/McFarlane/SHF/MAFEX/Hot Toys (nendoroid/scale skipped)
     {"id": "hobbyfigures", "baseUrl": "https://www.hobbyfigures.co.uk", "pageLimit": 250, "maxPages": 100},
+    # Verified open specialty (2026-09-06 night) — real variant.sku; AF via infer+RETAILER_SKIP
+    # collecticon: US specialty (~4.3k) — strong Hasbro TF/ML/BS + McFarlane/NECA/Mattel Origins
+    {"id": "collecticon", "baseUrl": "https://www.collecticontoys.com", "pageLimit": 250, "maxPages": 25},
+    # nerdzoic: US specialty AF (~1k) — Hasbro/Mattel/McFarlane/NECA/Four Horsemen + Mezco One:12
+    {"id": "nerdzoic", "baseUrl": "https://nerdzoic.com", "pageLimit": 250, "maxPages": 10},
 ]
 
 RETAILER_SKIP = re.compile(
@@ -473,7 +478,9 @@ RETAILER_SKIP = re.compile(
     r"imaginext|spin master|mini blind bag|2 inch mini|"
     r"bag clip|foam bag|keychain|cosbi|bobble.?head|q-fig|minico|"
     r"costume|jumpsuit|hockey jersey|inspirit|"
-    r"vinyl art|dunny|kidrobot)\b",
+    r"vinyl art|dunny|kidrobot|"
+    r"comic book|graphic novel|\btpb\b|trade paperback|"
+    r"warhammer|games workshop|age of sigmar|citadel paint)\b",
     re.I,
 )
 
@@ -605,7 +612,7 @@ def fetch_retailer_products(feed: dict) -> list[dict]:
         out.extend(products)
         if len(products) < limit:
             break
-        time.sleep(0.12)
+        time.sleep(0.35)
     return out
 
 

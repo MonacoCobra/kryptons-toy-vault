@@ -69,3 +69,19 @@ touch `comic-upc-map.json` / LOCG caches — leave those files alone.
 - Popcultcha, HLJ, AmiAmi, Forbidden Planet, TFSource, Diamond Select, Playmates official, JAKKS, McFarlane official, The Chosen Prime, Brian's Toys, Figure Realm, Robot Kingdom — 403/404/HTML/non-Shopify
 - Pulse / BBTS / EE / Mezco / Hot Toys / Tamashii / MAFEX 1P / threezero / Takara mall / Sideshow — still blocked or no public JSON (reconfirmed)
 
+### Pass 2026-09-06 night
+**Added (verified open `products.json` + non-empty `variant.sku`):**
+- `collecticon` — https://www.collecticontoys.com (Hasbro TF/ML/BS, McFarlane, NECA, Mattel Origins; comic product_type skipped)
+- `nerdzoic` — https://nerdzoic.com (Hasbro/Mattel/McFarlane/NECA/Four Horsemen/Mezco One:12; GW/Warhammer skipped)
+
+**Probed and rejected this pass:**
+- hobbytron — RC drones/helis dominant (wrong mix)
+- toyworldnz — general toy/plush/LEGO (too few AF)
+- ironstudios / culturefly / fye / kidrobot / soapstudio / qmx — statues/vinyl/merch (reconfirmed)
+- cherrybombtoys / mintedstore / tokullectibles / actionfigureessentials — empty or weak `variant.sku`
+- actioncity — Hot Toys / blind-box dominant
+- notjusttoyz / popcultcha / brianstoys / thechosenprime / tfsource / diamondselect / Pulse/BBTS/EE/Mezco/McFarlane official/Hot Toys/threezero/Sideshow — 403/404/non-Shopify/blocked
+- sifi-toys — open JSON but page-1 AF brand infer too thin to trust without deeper cool-down pass
+- kitsap-comics-and-games — open JSON + SKUs on page1 but deep infer blocked by Shopify 429 this pass (deferred)
+
+**Bake result:** 8181 → 8476 / 19085 (42.87% → 44.41%), +295 assigned; index 38203 → 39920. New shop tags: collecticon 54, nerdzoic 35. Hasbro leftovers 619→508; NECA 270→229; McFarlane 277→256; Mattel 675→643.
