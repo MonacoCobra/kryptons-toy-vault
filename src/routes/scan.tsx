@@ -1,6 +1,6 @@
-import { useRef, useState } from "react";
+import { useRef, useState, type ChangeEvent } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Camera, Loader2 } from "lucide-react";
+import { Camera, ImagePlus, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import { comicLabel, searchComics } from "@/data/comics";
 import { AddComicDialog } from "@/components/add-comic-dialog";
@@ -16,7 +16,8 @@ import { slug } from "@/lib/utils";
 export const Route = createFileRoute("/scan")({ component: ScanPage });
 
 function ScanPage() {
-  const inputRef = useRef<HTMLInputElement>(null);
+  const cameraRef = useRef<HTMLInputElement>(null);
+  const galleryRef = useRef<HTMLInputElement>(null);
   const extras = useLiveComics();
   const [busy, setBusy] = useState(false);
   const [preview, setPreview] = useState<string | null>(null);
@@ -64,6 +65,12 @@ function ScanPage() {
     }
   }
 
+  function handlePick(e: ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    e.target.value = "";
+    if (file) void onFile(file);
+  }
+
   const searched = query.trim() ? searchComics(query, extras).slice(0, 8) : [];
   const shown = matches.length ? matches : searched;
 
@@ -91,17 +98,13 @@ function ScanPage() {
         </p>
       </header>
 
-      <button
-        type="button"
-        onClick={() => inputRef.current?.click()}
-        className="relative flex min-h-64 flex-col items-center justify-center overflow-hidden rounded-xl bg-bg-elevated shadow-[0_0_0_1px_rgba(214,230,255,0.1)]"
-      >
+      <div className="relative flex min-h-64 flex-col items-center justify-center overflow-hidden rounded-xl bg-bg-elevated shadow-[0_0_0_1px_rgba(214,230,255,0.1)]">
         {preview ? (
           <img src={preview} alt="Scanned cover" className="max-h-80 object-contain" />
         ) : (
           <>
             <Camera className="size-8 text-gold" />
-            <p className="mt-3 text-sm text-muted">Tap to photograph or upload a cover</p>
+            <p className="mt-3 text-sm text-muted">Take a photo or upload an existing cover</p>
           </>
         )}
         {busy ? (
@@ -109,17 +112,47 @@ function ScanPage() {
             <Loader2 className="size-6 animate-spin text-gold" />
           </div>
         ) : null}
-      </button>
+      </div>
+
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+        <Button
+          type="button"
+          variant="default"
+          disabled={busy}
+          onClick={() => cameraRef.current?.click()}
+          className="w-full"
+        >
+          <Camera className="size-4" />
+          Take photo
+        </Button>
+        <Button
+          type="button"
+          variant="secondary"
+          disabled={busy}
+          onClick={() => galleryRef.current?.click()}
+          className="w-full"
+        >
+          <ImagePlus className="size-4" />
+          Upload existing photo
+        </Button>
+      </div>
+
+      {/* Camera: capture forces rear camera on mobile */}
       <input
-        ref={inputRef}
+        ref={cameraRef}
         type="file"
         accept="image/*"
         capture="environment"
         className="hidden"
-        onChange={(e) => {
-          const file = e.target.files?.[0];
-          if (file) void onFile(file);
-        }}
+        onChange={handlePick}
+      />
+      {/* Gallery: no capture attribute so Android offers the photo picker */}
+      <input
+        ref={galleryRef}
+        type="file"
+        accept="image/*"
+        className="hidden"
+        onChange={handlePick}
       />
 
       {error ? <p className="text-sm text-loss">{error}</p> : null}

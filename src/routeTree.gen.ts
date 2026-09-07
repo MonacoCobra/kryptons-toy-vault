@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CollectionRouteImport } from './routes/collection'
+import { Route as DisplaysRouteImport } from './routes/displays'
 import { Route as ImportRouteImport } from './routes/import'
 import { Route as PulseRouteImport } from './routes/pulse'
 import { Route as ScanRouteImport } from './routes/scan'
@@ -28,6 +29,11 @@ const IndexRoute = IndexRouteImport.update({
 const CollectionRoute = CollectionRouteImport.update({
   id: '/collection',
   path: '/collection',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DisplaysRoute = DisplaysRouteImport.update({
+  id: '/displays',
+  path: '/displays',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ImportRoute = ImportRouteImport.update({
@@ -74,6 +80,7 @@ const FiguresFigureIdRoute = FiguresFigureIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/collection': typeof CollectionRoute
+  '/displays': typeof DisplaysRoute
   '/import': typeof ImportRoute
   '/pulse': typeof PulseRoute
   '/scan': typeof ScanRoute
@@ -86,6 +93,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/collection': typeof CollectionRoute
+  '/displays': typeof DisplaysRoute
   '/import': typeof ImportRoute
   '/pulse': typeof PulseRoute
   '/scan': typeof ScanRoute
@@ -99,6 +107,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/collection': typeof CollectionRoute
+  '/displays': typeof DisplaysRoute
   '/import': typeof ImportRoute
   '/pulse': typeof PulseRoute
   '/scan': typeof ScanRoute
@@ -113,6 +122,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/collection'
+    | '/displays'
     | '/import'
     | '/pulse'
     | '/scan'
@@ -125,6 +135,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/collection'
+    | '/displays'
     | '/import'
     | '/pulse'
     | '/scan'
@@ -137,6 +148,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/collection'
+    | '/displays'
     | '/import'
     | '/pulse'
     | '/scan'
@@ -150,6 +162,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CollectionRoute: typeof CollectionRoute
+  DisplaysRoute: typeof DisplaysRoute
   ImportRoute: typeof ImportRoute
   PulseRoute: typeof PulseRoute
   ScanRoute: typeof ScanRoute
@@ -174,6 +187,13 @@ declare module '@tanstack/react-router' {
       path: '/collection'
       fullPath: '/collection'
       preLoaderRoute: typeof CollectionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/displays': {
+      id: '/displays'
+      path: '/displays'
+      fullPath: '/displays'
+      preLoaderRoute: typeof DisplaysRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/import': {
@@ -238,6 +258,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CollectionRoute: CollectionRoute,
+  DisplaysRoute: DisplaysRoute,
   ImportRoute: ImportRoute,
   PulseRoute: PulseRoute,
   ScanRoute: ScanRoute,

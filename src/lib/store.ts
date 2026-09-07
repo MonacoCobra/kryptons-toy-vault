@@ -4,6 +4,7 @@ import type {
   ComicGrade,
   Condition,
   CustomComic,
+  DisplayPhoto,
   OwnedComic,
   OwnedFigure,
   PulseBaseline,
@@ -31,6 +32,7 @@ function initialState(): VaultState {
     ownedComics: Object.fromEntries(STARTER_OWNED_COMICS.map((o) => [o.id, o])),
     wantedComics: {},
     customComics: {},
+    displays: {},
     pulseBaselines: {},
     lastPulseNoticeWeek: null,
   };
@@ -46,6 +48,9 @@ type Actions = {
   removeComic: (id: string) => void;
   toggleWantComic: (comicId: string) => void;
   addCustomComic: (comic: CustomComic) => void;
+  addDisplay: (entry: Omit<DisplayPhoto, "id" | "addedAt"> & { id?: string; addedAt?: string }) => string;
+  updateDisplay: (id: string, patch: Partial<DisplayPhoto>) => void;
+  removeDisplay: (id: string) => void;
   clearVault: () => void;
   ensurePulseBaseline: (baseline: PulseBaseline) => void;
   markPulseNoticeSeen: (week: string) => void;
@@ -57,6 +62,7 @@ const empty = (): VaultState => ({
   ownedComics: {},
   wantedComics: {},
   customComics: {},
+  displays: {},
   pulseBaselines: {},
   lastPulseNoticeWeek: null,
 });
@@ -145,6 +151,31 @@ export const useVault = create<VaultState & Actions>()(
         }),
       addCustomComic: (comic) =>
         set((s) => ({ customComics: { ...s.customComics, [comic.id]: comic } })),
+      addDisplay: (entry) => {
+        const id = entry.id ?? `display-${crypto.randomUUID()}`;
+        set((s) => ({
+          displays: {
+            ...(s.displays ?? {}),
+            [id]: {
+              ...entry,
+              id,
+              addedAt: entry.addedAt ?? new Date().toISOString(),
+            },
+          },
+        }));
+        return id;
+      },
+      updateDisplay: (id, patch) =>
+        set((s) => {
+          const prev = (s.displays ?? {})[id];
+          if (!prev) return s;
+          return { displays: { ...(s.displays ?? {}), [id]: { ...prev, ...patch } } };
+        }),
+      removeDisplay: (id) =>
+        set((s) => {
+          const { [id]: _, ...rest } = s.displays ?? {};
+          return { displays: rest };
+        }),
       clearVault: () => set(empty()),
       ensurePulseBaseline: (baseline) =>
         set((s) => {
@@ -173,6 +204,7 @@ export const useVault = create<VaultState & Actions>()(
         ownedComics: s.ownedComics,
         wantedComics: s.wantedComics,
         customComics: s.customComics,
+        displays: s.displays ?? {},
         pulseBaselines: s.pulseBaselines ?? {},
         lastPulseNoticeWeek: s.lastPulseNoticeWeek ?? null,
       }),
@@ -181,6 +213,7 @@ export const useVault = create<VaultState & Actions>()(
         return {
           ...current,
           ...p,
+          displays: p.displays ?? {},
           pulseBaselines: p.pulseBaselines ?? {},
           lastPulseNoticeWeek: p.lastPulseNoticeWeek ?? null,
         };

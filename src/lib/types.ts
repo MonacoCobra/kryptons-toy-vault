@@ -239,6 +239,16 @@ export type WishlistItem = {
   addedAt: string;
 };
 
+/** User photo of a physical display / shelf setup. */
+export type DisplayPhoto = {
+  id: string;
+  /** Compressed JPEG data URL (same pattern as owned comic/figure photos). */
+  photoDataUrl: string;
+  title?: string;
+  caption?: string;
+  addedAt: string;
+};
+
 export type PulseSlice = {
   count: number;
   value: number;
@@ -259,6 +269,8 @@ export type VaultState = {
   ownedComics: Record<string, OwnedComic>;
   wantedComics: Record<string, WishlistItem>;
   customComics: Record<string, CustomComic>;
+  /** Photos of the user's shelves / displays. */
+  displays: Record<string, DisplayPhoto>;
   /** Week-start baselines keyed by ISO week (e.g. 2026-W36). */
   pulseBaselines: Record<string, PulseBaseline>;
   /** Last ISO week the weekly pulse notice was shown. */

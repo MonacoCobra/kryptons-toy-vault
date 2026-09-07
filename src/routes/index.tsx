@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
-import { ArrowDownRight, ArrowUpRight } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, Images } from "lucide-react";
 import { comicLabel, recentComics } from "@/data/comics";
 import { FigureArt } from "@/components/figure-art";
 import { ComicCover } from "@/components/comic-cover";
@@ -16,6 +16,8 @@ export const Route = createFileRoute("/")({ component: Home });
 function Home() {
   const ownedFigures = useVault((s) => s.ownedFigures);
   const ownedComics = useVault((s) => s.ownedComics);
+  const displays = useVault((s) => s.displays ?? {});
+  const displayCount = Object.keys(displays).length;
   const liveComics = useLiveComics();
   const liveFigures = useLiveFigures();
   const liveLoading = useLiveDrop((s) => s.loading);
@@ -70,6 +72,26 @@ function Home() {
           value={String(stats.comicCount)}
           hint={`${catalog.comics} issues in the catalog`}
         />
+      </section>
+
+      <section>
+        <Link
+          to="/displays"
+          className="flex items-center gap-4 rounded-xl bg-bg-elevated p-4 shadow-[var(--shadow-border)] transition-colors duration-150 hover:bg-surface"
+        >
+          <span className="inline-flex size-12 shrink-0 items-center justify-center rounded-lg bg-surface text-gold shadow-[0_0_0_1px_rgba(214,230,255,0.12)]">
+            <Images className="size-6" />
+          </span>
+          <span className="min-w-0 flex-1 text-left">
+            <span className="block font-display text-xl tracking-wide uppercase">Displays</span>
+            <span className="mt-0.5 block text-sm text-muted">
+              {displayCount
+                ? `${displayCount} shelf photo${displayCount === 1 ? "" : "s"} in your vault`
+                : "Add photos of your shelves and setups"}
+            </span>
+          </span>
+          <span className="shrink-0 text-sm text-ice">Open</span>
+        </Link>
       </section>
 
       <section>

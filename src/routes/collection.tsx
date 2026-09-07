@@ -11,6 +11,7 @@ import { formatDate, usd } from "@/lib/format";
 import { useFigureExtras, useLiveComics } from "@/lib/live-store";
 import { comicEstimate, figureMarket } from "@/lib/market";
 import { useVault } from "@/lib/store";
+import { DisplaysGallery } from "@/components/displays-gallery";
 import { summarizeVault } from "@/lib/vault-math";
 
 export const Route = createFileRoute("/collection")({ component: CollectionPage });
@@ -18,6 +19,8 @@ export const Route = createFileRoute("/collection")({ component: CollectionPage 
 function CollectionPage() {
   const ownedFigures = useVault((s) => s.ownedFigures);
   const ownedComics = useVault((s) => s.ownedComics);
+  const displays = useVault((s) => s.displays ?? {});
+  const displayCount = Object.keys(displays).length;
   const liveFigures = useFigureExtras();
   const liveComics = useLiveComics();
   const clearVault = useVault((s) => s.clearVault);
@@ -58,6 +61,9 @@ function CollectionPage() {
             <Link to="/import">Import LOCG</Link>
           </Button>
           <Button variant="secondary" asChild>
+            <Link to="/displays">Displays</Link>
+          </Button>
+          <Button variant="secondary" asChild>
             <Link to="/wishlist">Want list</Link>
           </Button>
           <Button variant="ghost" onClick={() => clearVault()}>
@@ -70,6 +76,7 @@ function CollectionPage() {
         <TabsList>
           <TabsTrigger value="figures">Figures ({figures.length})</TabsTrigger>
           <TabsTrigger value="comics">Comics ({comics.length})</TabsTrigger>
+          <TabsTrigger value="displays">Displays ({displayCount})</TabsTrigger>
         </TabsList>
         <TabsContent value="figures">
           {figures.length === 0 ? (
@@ -151,6 +158,9 @@ function CollectionPage() {
               })}
             </ul>
           )}
+        </TabsContent>
+        <TabsContent value="displays">
+          <DisplaysGallery />
         </TabsContent>
       </Tabs>
     </main>
