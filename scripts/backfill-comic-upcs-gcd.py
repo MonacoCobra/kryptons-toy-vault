@@ -15,6 +15,7 @@ Examples:
 from __future__ import annotations
 
 import argparse
+import fcntl
 import json
 import re
 import sys
@@ -232,6 +233,28 @@ def build_issue_index(series: dict) -> dict[str, str]:
     return idx
 
 
+
+def flock_merge_upc(local: dict) -> dict:
+    with open(UPC_MAP, "a+", encoding="utf-8") as f:
+        fcntl.flock(f.fileno(), fcntl.LOCK_EX)
+        f.seek(0)
+        raw = f.read()
+        disk = json.loads(raw) if raw.strip() else {}
+        for cid, new in local.items():
+            cur = dict(disk.get(cid) or {})
+            if cur.get("upc"):
+                continue
+            if not new.get("upc"):
+                continue
+            cur.update({k: v for k, v in new.items() if v is not None})
+            disk[cid] = cur
+        f.seek(0)
+        f.truncate()
+        f.write(json.dumps(disk, indent=2, sort_keys=True) + "\n")
+        f.flush()
+        fcntl.flock(f.fileno(), fcntl.LOCK_UN)
+        return disk
+
 def merge_upc(disk: dict, local: dict) -> dict:
     out = dict(disk)
     for cid, new in local.items():
@@ -253,6 +276,8 @@ def main() -> int:
     ap.add_argument("--min-year", type=int, default=2005)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--only", type=str, default="")
+    ap.add_argument("--reverse", action="store_true")
+    ap.add_argument("--max-minutes", type=float, default=0)
     args = ap.parse_args()
 
     meta = parse_comics_meta()
@@ -267,9 +292,12 @@ def main() -> int:
             cid
             for cid, m in meta.items()
             if not (upc_map.get(cid) or {}).get("upc")
-            and (cover_year(m) is None or cover_year(m) >= args.min_year)
+            and cover_year(m) is not None
+            and cover_year(m) >= args.min_year
         ]
+        ids.sort(reverse=bool(args.reverse))
     ids = ids[: args.limit]
+    deadline = time.time() + args.max_minutes * 60 if args.max_minutes > 0 else None
     before = len([1 for v in upc_map.values() if isinstance(v, dict) and v.get("upc")])
 
     local: dict = {}
@@ -285,6 +313,9 @@ def main() -> int:
     print(f"before upc={before}")
 
     for cid in ids:
+        if deadline and time.time() >= deadline:
+            print("max-minutes reached")
+            break
         m = meta.get(cid) or {}
         if (upc_map.get(cid) or {}).get("upc") or (local.get(cid) or {}).get("upc"):
             skipped += 1
@@ -373,8 +404,7 @@ def main() -> int:
     if not args.dry_run:
         save_json(SERIES_CACHE, series_cache)
         if local:
-            upc_map = merge_upc(load_json(UPC_MAP, {}), local)
-            save_json(UPC_MAP, upc_map)
+            upc_map = flock_merge_upc(local)
 
     after = len([1 for v in (upc_map if not args.dry_run else {**upc_map, **local}).values() if isinstance(v, dict) and v.get("upc")])
     stats = {
