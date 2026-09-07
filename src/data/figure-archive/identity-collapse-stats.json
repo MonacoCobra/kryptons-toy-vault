@@ -1,0 +1,228 @@
+{
+  "collapsedAt": "2026-09-07T15:51:19.610670+00:00",
+  "day": "2026-09-07",
+  "policy": "gtin-canonical; listing codes are aliases",
+  "before": 19085,
+  "removed": 6,
+  "after": 19079,
+  "dwCollapsed": 4,
+  "dwSamples": [
+    {
+      "keepId": "ml5-ml-cassandra-nova",
+      "dropId": "mlc-cassandra-nova",
+      "canonicalSku": "5010996359605",
+      "aliasesAdded": [
+        "HAS359605"
+      ],
+      "reason": "D&W Cassandra: EAN 5010996359605 vs HAS359605 listing",
+      "keepRank": 309.16,
+      "dropRank": 169.28
+    },
+    {
+      "keepId": "ml5-ml-deadpool-wolverine-movie",
+      "dropId": "mlc-deadpool-movie",
+      "canonicalSku": "5010996283757",
+      "aliasesAdded": [
+        "MLDEADM3"
+      ],
+      "reason": "D&W Deadpool: EAN 5010996283757 vs MLDEADM3 listing",
+      "keepRank": 308.76,
+      "dropRank": 139.28
+    },
+    {
+      "keepId": "ml5-ml-x23-movie-dpw",
+      "dropId": "mlc-x23-movie",
+      "canonicalSku": "5010996359629",
+      "aliasesAdded": [
+        "HAS359629"
+      ],
+      "reason": "D&W X-23: EAN 5010996359629 vs HAS359629 listing",
+      "keepRank": 309.2,
+      "dropRank": 169.48
+    },
+    {
+      "keepId": "mlc-nicepool",
+      "dropId": "ml5-ml-nicepool",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "reason": "D&W Nicepool: identical character/line/wave, neither SKU yet \u2014 keep earlier curated row",
+      "keepRank": 39.52,
+      "dropRank": -5.6
+    }
+  ],
+  "planned": [
+    {
+      "keepId": "ml5-ml-cassandra-nova",
+      "dropId": "mlc-cassandra-nova",
+      "canonicalSku": "5010996359605",
+      "aliasesAdded": [
+        "HAS359605"
+      ],
+      "reason": "D&W Cassandra: EAN 5010996359605 vs HAS359605 listing",
+      "keepRank": 309.16,
+      "dropRank": 169.28
+    },
+    {
+      "keepId": "ml5-ml-deadpool-wolverine-movie",
+      "dropId": "mlc-deadpool-movie",
+      "canonicalSku": "5010996283757",
+      "aliasesAdded": [
+        "MLDEADM3"
+      ],
+      "reason": "D&W Deadpool: EAN 5010996283757 vs MLDEADM3 listing",
+      "keepRank": 308.76,
+      "dropRank": 139.28
+    },
+    {
+      "keepId": "ml5-ml-x23-movie-dpw",
+      "dropId": "mlc-x23-movie",
+      "canonicalSku": "5010996359629",
+      "aliasesAdded": [
+        "HAS359629"
+      ],
+      "reason": "D&W X-23: EAN 5010996359629 vs HAS359629 listing",
+      "keepRank": 309.2,
+      "dropRank": 169.48
+    },
+    {
+      "keepId": "mlc-nicepool",
+      "dropId": "ml5-ml-nicepool",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "reason": "D&W Nicepool: identical character/line/wave, neither SKU yet \u2014 keep earlier curated row",
+      "keepRank": 39.52,
+      "dropRank": -5.6
+    },
+    {
+      "keepId": "mv3-mv-hordak-ne",
+      "dropId": "mat6-mat-hordak-ne",
+      "canonicalSku": "194735030248",
+      "aliasesAdded": [],
+      "reason": "auto: empty-sku near-dupe of GTIN 194735030248 under hordak / new eternia",
+      "keepRank": 309.36,
+      "dropRank": 19.28
+    },
+    {
+      "keepId": "mv3-mv-mer-man-ne",
+      "dropId": "mat6-mat-mer-man-ne",
+      "canonicalSku": "194735111381",
+      "aliasesAdded": [],
+      "reason": "auto: empty-sku near-dupe of GTIN 194735111381 under mer man / new eternia",
+      "keepRank": 309.32,
+      "dropRank": 19.24
+    }
+  ],
+  "flagged": [
+    {
+      "ids": [
+        "mlc-wolverine-movie",
+        "ml5-ml-wolverine-movie-dpw"
+      ],
+      "reason": "D&W Wolverine pair named by Shelby, but rows carry distinct GTINs (5010996267245 Legacy Collection vs 5010996283764 Wave 2) \u2014 leave both"
+    },
+    {
+      "ids": [
+        "ml5-ml-loki-president",
+        "ml6-ml-loki-president"
+      ],
+      "skus": [
+        "5010993849017",
+        "653569693932"
+      ],
+      "reason": "distinct GTINs under loki / president \u2014 left both"
+    },
+    {
+      "ids": [
+        "mcf5-mcf-gold-label-superman",
+        "mcf6-mcf-superman-gold"
+      ],
+      "skus": [
+        "787926174045",
+        "787926175936"
+      ],
+      "reason": "distinct GTINs under superman / gold label \u2014 left both"
+    },
+    {
+      "ids": [
+        "mcf5-mcf-gold-label-batman",
+        "mcf6-mcf-batman-gold"
+      ],
+      "skus": [
+        "787926176292",
+        "787926177091"
+      ],
+      "reason": "distinct GTINs under batman / gold label \u2014 left both"
+    },
+    {
+      "ids": [
+        "bs4-thrawn-ahsoka",
+        "bs6-bs-thrawn-w6"
+      ],
+      "skus": [
+        "5010993813407",
+        "5010996269621"
+      ],
+      "reason": "distinct GTINs under grand admiral thrawn / ahsoka \u2014 left both"
+    },
+    {
+      "ids": [
+        "bs6-bs-andor",
+        "bs5-bs-andor-cassian"
+      ],
+      "skus": [
+        "5010994179274",
+        "5010996269560"
+      ],
+      "reason": "distinct GTINs under cassian andor / andor \u2014 left both"
+    },
+    {
+      "ids": [
+        "pm4-cc-mikey",
+        "pm6-pm-mike-cc"
+      ],
+      "skus": [
+        "043377812845",
+        "043377813798"
+      ],
+      "reason": "distinct GTINs under michelangelo / classic collection \u2014 left both"
+    },
+    {
+      "ids": [
+        "pm4-cc-don",
+        "pm6-pm-don-cc"
+      ],
+      "skus": [
+        "043377812821",
+        "043377813774"
+      ],
+      "reason": "distinct GTINs under donatello / classic collection \u2014 left both"
+    },
+    {
+      "ids": [
+        "pm4-cc-leo",
+        "pm6-pm-leo-cc"
+      ],
+      "skus": [
+        "043377813767",
+        "043377833611"
+      ],
+      "reason": "distinct GTINs under leonardo / classic collection \u2014 left both"
+    },
+    {
+      "ids": [
+        "mcfc-batman-detective",
+        "mcfdc-batman-detective-1000"
+      ],
+      "skus": [
+        "787926150018",
+        "787926180220"
+      ],
+      "reason": "distinct GTINs under batman / detective comics 1000 \u2014 left both"
+    }
+  ],
+  "removedBySource": {
+    "curated": 3,
+    "curated-bbts-wave6": 2,
+    "curated-bbts-wave5": 1
+  }
+}

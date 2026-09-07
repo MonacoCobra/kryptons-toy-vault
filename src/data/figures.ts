@@ -2,12 +2,60 @@ import type { CatalogFigure, CompanyId, ItemKind } from "@/lib/types";
 import archiveRows from "./figure-archive/oneshot.json";
 import figureImageUrls from "./figure-image-urls.json";
 import figureSkuMap from "./figure-sku-map.json";
+import figureSkuAliases from "./figure-sku-aliases.json";
 
 /** Baked Shopify CDN URLs for curated/placeholder figures (see scripts/bake-figure-images.py). */
 const BAKED_IMAGE_URLS = figureImageUrls as Record<string, string>;
 
 /** Baked storefront/specialty SKUs (see scripts/bake-figure-skus.py). Row sku wins. */
 const BAKED_SKUS = figureSkuMap as Record<string, string>;
+
+/**
+ * Listing-code aliases → figure id (HAS*/Pulse/assort → canonical GTIN row).
+ * See docs/figure-identity.md. Rich doc or legacy flat map both supported.
+ */
+type AliasDoc = {
+  aliasesByFigureId?: Record<string, string[]>;
+  aliasToFigureId?: Record<string, string>;
+} & Record<string, unknown>;
+
+const ALIAS_DOC = figureSkuAliases as AliasDoc;
+
+function buildAliasToFigureId(): Record<string, string> {
+  const out: Record<string, string> = {};
+  const rev = ALIAS_DOC.aliasToFigureId;
+  if (rev && typeof rev === "object") {
+    for (const [code, fid] of Object.entries(rev)) {
+      if (typeof fid === "string" && fid) out[code.toUpperCase()] = fid;
+    }
+  }
+  const byFig = ALIAS_DOC.aliasesByFigureId;
+  if (byFig && typeof byFig === "object") {
+    for (const [fid, codes] of Object.entries(byFig)) {
+      if (!Array.isArray(codes)) continue;
+      for (const c of codes) {
+        const key = String(c).trim().toUpperCase();
+        if (!key || key.startsWith("ID:")) continue;
+        if (!out[key]) out[key] = fid;
+      }
+    }
+  }
+  // Legacy flat { figureId: string[] } (no aliasesByFigureId wrapper)
+  if (!byFig) {
+    for (const [k, v] of Object.entries(ALIAS_DOC)) {
+      if (k === "version" || k === "policy" || k === "updatedAt") continue;
+      if (!Array.isArray(v)) continue;
+      for (const c of v) {
+        const key = String(c).trim().toUpperCase();
+        if (!key || key.startsWith("ID:")) continue;
+        if (!out[key]) out[key] = k;
+      }
+    }
+  }
+  return out;
+}
+
+const ALIAS_TO_FIGURE_ID = buildAliasToFigureId();
 
 function resolveFigureImageUrl(id: string, existing?: string): string | undefined {
   return existing || BAKED_IMAGE_URLS[id];
@@ -645,7 +693,16 @@ export function figureById(id: string, extras: CatalogFigure[] = []): CatalogFig
   if (byId) return byId;
   const q = id.trim().toLowerCase();
   if (!q) return undefined;
-  return extras.find((f) => normSku(f.sku) === q);
+  // Listing-code / collapsed-id alias → canonical figure
+  const viaAlias = ALIAS_TO_FIGURE_ID[id.trim().toUpperCase()] || ALIAS_TO_FIGURE_ID[`ID:${id}`.toUpperCase()];
+  if (viaAlias && FIGURE_BY_ID[viaAlias]) return FIGURE_BY_ID[viaAlias];
+  if (viaAlias) {
+    const ex = extras.find((f) => f.id === viaAlias);
+    if (ex) return ex;
+  }
+  const bySku = extras.find((f) => normSku(f.sku) === q);
+  if (bySku) return bySku;
+  return FIGURES.find((f) => normSku(f.sku) === q);
 }
 
 export function searchFigures(query: string, extras: CatalogFigure[] = []): CatalogFigure[] {

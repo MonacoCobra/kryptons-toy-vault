@@ -1,7 +1,10 @@
 # Figure SKU bake (accurate storefront / specialty SKUs)
 
 Fills missing `sku` on permanent-archive oneshot action figures using **real
-Shopify variant SKUs** (barcode/GTIN fallback only when `variant.sku` is empty).
+Shopify / specialty product identities**. **Primary `sku` is the universal
+EAN/UPC (GTIN)** when known. Hasbro Pulse / retailer listing codes (`HAS*`,
+assort `F/G####`, house SKUs) go in `src/data/figure-sku-aliases.json` — never
+as a second figure and never overwriting a GTIN. See `docs/figure-identity.md`.
 Never invents codes. Same high-confidence company/line/name/subtitle matcher as
 image bake (`scripts/bake-figure-images.py`).
 
@@ -14,12 +17,14 @@ image bake (`scripts/bake-figure-images.py`).
    - **Exact** `sf-{shop}-{handle}` for native Shopify archive rows
    - **Fuzzy** high-confidence (`minScore` 18, same-company gate, line-family rules)
 4. Writes:
-   - patches `sku` on matched `oneshot.json` rows (+ `sku-bake` / `sku:{shop}` tags)
-   - `src/data/figure-sku-map.json` — id → sku overlay
+   - patches **GTIN** `sku` on matched `oneshot.json` rows (+ `sku-bake` / `sku-gtin` tags)
+   - may **upgrade** listing-code primary → GTIN (listing moved to aliases)
+   - `src/data/figure-sku-map.json` — id → primary sku overlay
+   - `src/data/figure-sku-aliases.json` — listing-code aliases (rich doc)
    - `src/data/figure-archive/sku-bake-stats.json` — before/after report
 
-Existing non-fake SKUs are **never** overwritten. One SKU and one product index
-id assign to at most one figure.
+GTIN primaries are never overwritten by listing codes. One GTIN and one product
+index id assign to at most one figure. Listing-only products attach as aliases.
 
 ## Run
 
@@ -105,3 +110,16 @@ touch `comic-upc-map.json` / LOCG caches — leave those files alone.
 **Bake result:** 8476 → 8599 / 19085 (44.41% → 45.06%), +123 assigned; index 39920 → 40872. New shop tags: kitsap 23, sifitoys 7 (plus cascade rematches on prior specialty feeds). Hasbro leftovers 508→466; McFarlane 256→237; NECA 229→211; Mattel 643→630; DCD 752→749; Mezco 494→494; Super7 427→425; Playmates 293→289.
 
 **Honest plateau:** specialty Shopify with real `variant.sku` is largely exhausted for high-confidence leftover families (DCD / Mezco / Super7 / Playmates barely moved). No further deferred recoverables after this pass.
+
+### Pass 2026-09-07 — GTIN primary + Pulse aliases
+**Policy correction:** primary `sku` = GTIN/EAN/UPC only. Listing codes → aliases (`src/data/figure-sku-aliases.json`). Never overwrite GTIN with retailer code; listing→GTIN upgrade allowed.
+
+**Named retailers probed:**
+- **Hasbro Pulse** — `https://hasbropulse.myshopify.com/products.json` **OPEN** (~19×250). `variant.sku` present (mostly F/G/H* listing); `barcode` empty. Integrated as `hasbro-pulse` feed; listing→aliases; rare GTIN-shaped sku may fill primary.
+- **BBTS** — no `products.json`; sitemap+PDP JSON-LD `sku` is internal variation id only (e.g. `"6"`). **No manufacturer GTIN** in structured data. Documented; not scraped.
+- **Entertainment Earth** — sitemap open; PDP JSON-LD `sku` is EE listing (`MF17754`, `HSG0435`), not GTIN. UPC only appears in some case-pack blurb text (not structured). **Not used as primary.**
+- **Walmart / Target** — bot wall / HTTP 403 on search + redsky. No usable GTIN feed from this host.
+- **McFarlane official** — Wix site; no Shopify `products.json`. Multiverse GTINs remain via specialty / shop.dc.
+
+**Also:** specialty Shopify plateau shops retained; Game/Apparel product_types skipped in infer.
+
