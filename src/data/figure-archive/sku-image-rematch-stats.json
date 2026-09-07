@@ -1,231 +1,231 @@
 {
-  "bakedAt": "2026-09-07T16:31:47.825461+00:00",
+  "bakedAt": "2026-09-07T17:55:08.360406+00:00",
   "day": "2026-09-07",
-  "mode": "sku-only",
+  "mode": "sku-first+fuzzy",
   "before": {
     "total": 19079,
-    "withImage": 7520,
-    "pct": 39.42
+    "withImage": 9125,
+    "pct": 47.83
   },
   "after": {
     "total": 19079,
-    "withImage": 9084,
-    "pct": 47.61
+    "withImage": 9200,
+    "pct": 48.22
   },
   "skuRematch": {
-    "eligible": 8460,
-    "assignedOrConfirmed": 8457,
-    "alreadyCorrect": 5904,
-    "changedMismatch": 959,
-    "filledEmpty": 1594,
-    "skippedNoIndex": 151,
-    "skippedUrlConflict": 3,
+    "eligible": 8463,
+    "assignedOrConfirmed": 8454,
+    "alreadyCorrect": 8384,
+    "changedMismatch": 56,
+    "filledEmpty": 14,
+    "skippedNoIndex": 149,
+    "skippedUrlConflict": 9,
     "skippedDupSku": 0,
-    "skuProvenFigureIds": 8550,
-    "reservedUrls": 8457,
+    "skuProvenFigureIds": 8539,
+    "reservedUrls": 8454,
     "samplesChanged": [
       {
-        "figureId": "d14og-heman-snake-og",
-        "name": "He-Man",
-        "sku": "HDR96",
-        "shop": "mattel-creations",
-        "from": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0638-3.jpg?v=1771726694",
-        "to": "https://cdn.shopify.com/s/files/1/0568/1132/3597/files/xvzxywdqhdexsmsabrqh.jpg?v=1763513066"
+        "figureId": "d14ml-cassie-baf",
+        "name": "Cassie Lang",
+        "sku": "5010994180041",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-baf-cassie-lang-wasp-5010994180041.jpg?v=1676500180",
+        "to": "https://static.wixstatic.com/media/adc447_ceb9275dde65448f8c2efa34eedcdb10~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ceb9275dde65448f8c"
       },
       {
-        "figureId": "motu-mv2-teela-sorceress",
-        "name": "Teela",
-        "sku": "HYC45",
-        "shop": "mattel-creations",
-        "from": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN3764-32352.jpg?v=1693422456",
-        "to": "https://cdn.shopify.com/s/files/1/0568/1132/3597/products/lbyvmbuyriw25hiwx7as.png?v=1709769429"
+        "figureId": "d14ml-doom-lat",
+        "name": "Doctor Doom",
+        "sku": "5010996142443",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-avengers-2-pack-captain-marvel-vs-doctor-doom-5010996142443.jpg?v=1",
+        "to": "https://static.wixstatic.com/media/adc447_1b0f54bb98f848719cedf4ea58dddd85~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1b0f54bb98f848719c"
       },
       {
-        "figureId": "sf-shop-dc-superman-the-movie-1978-mcfarlane-toys-dc-multiverse-deluxe-theatrica",
-        "name": "SUPERMAN",
-        "sku": "25701060910725",
-        "shop": "shop-dc",
-        "from": "https://cdn.shopify.com/s/files/1/0268/8129/4530/files/17839_01_NL.1772485577745.jpg?v=1772487254",
-        "to": "https://cdn.shopify.com/s/files/1/0268/8129/4530/files/SPM-SAF-0725_2.jpg?v=1752521421"
+        "figureId": "d14ml-ghostspider",
+        "name": "Ghost-Spider",
+        "sku": "5010993735501",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-venom-series-baf-venompool-ghost-spider-5010993735501.jpg?v=1723114584",
+        "to": "https://static.wixstatic.com/media/adc447_cd4a62fa201343fd9b1b159bb1bd9432~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cd4a62fa201343fd9b"
       },
       {
-        "figureId": "sf-super7-g-i-joe-reaction-figures-wave-4",
-        "name": "G.I. Joe ReAction Figures Wave 4",
-        "sku": "RE-GIJOW3a-CSL-03",
-        "shop": "super7",
-        "from": "https://cdn.shopify.com/s/files/1/2726/1450/products/RE-G.I.Joe_W4_Core_Set_Card_2048crop.jpg?v=1660776648",
-        "to": "https://cdn.shopify.com/s/files/1/2726/1450/products/RE-GIJoe_W3a_CobraSnakeling_beard_tan_card_2048.jpg?v=1650040610"
+        "figureId": "d14ml-kangs",
+        "name": "Kang the Conqueror",
+        "sku": "5010994180072",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-baf-cassie-lang-kang-the-conqueror-5010994180072.jpg?v=1676500053",
+        "to": "https://static.wixstatic.com/media/adc447_4c4bb2edc9574d1287d6f8effa1b56e8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_4c4bb2edc9574d1287"
       },
       {
-        "figureId": "sf-super7-g-i-joe-reaction-figures-wave-5-set-of-9",
-        "name": "G.I. Joe ReAction Figures Wave 5 Set of 9",
-        "sku": "RE-GIJOW3a-CSD-03",
-        "shop": "super7",
-        "from": "https://cdn.shopify.com/s/files/1/2726/1450/products/RE-GIJoe_W5_Group_Card_2048crop.jpg?v=1673969013",
-        "to": "https://cdn.shopify.com/s/files/1/2726/1450/products/RE-GIJoe_W3a_CobraSnakeling_beard_darkbrown_card_1200.jpg?v=1650040376"
+        "figureId": "d14ml-kid-omega",
+        "name": "Kid Omega",
+        "sku": "5010994181093",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-x-men-baf-chod-kid-omega-5010994181093.jpg?v=1673675538",
+        "to": "https://static.wixstatic.com/media/adc447_34f3551a775f4831952fc25c775608e5~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_34f3551a775f483195"
       },
       {
-        "figureId": "sf-super7-toho-reaction-figures-godzilla-54-jet-jaguar-cherry-blossom-festival",
-        "name": "Toho ReAction Figures",
-        "sku": "RE-TOHO-09950",
-        "shop": "super7",
-        "from": "https://cdn.shopify.com/s/files/1/2726/1450/files/RE-TOHO_CherryBlossom-W1_2up_Cardwhite_85ef2735-2f98-4a26-a14f-06280a099736.jpg?v=17424928",
-        "to": "https://cdn.shopify.com/s/files/1/2726/1450/files/RE-TOHO_Godzilla-ModelKitGlow_Card-comp.jpg?v=1746131570"
+        "figureId": "d14ml-ml-classic-gargoyle",
+        "name": "Gargoyle",
+        "sku": "630509775477",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/e3890as00-630509775477-main-18-s.jpg?v=1781085259",
+        "to": "https://static.wixstatic.com/media/adc447_60d4c6dfbd754165b21d6cc19f290323~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_60d4c6dfbd754165b2"
       },
       {
-        "figureId": "sf-super7-toho-reaction-figures-moguera-glow-godzilla-55-glow",
-        "name": "Toho ReAction Figures",
-        "sku": "UL-TOHO-12160",
-        "shop": "super7",
-        "from": "https://cdn.shopify.com/s/files/1/2726/1450/files/RE-TOHO_2up-Godzilla55Moguera-Glow_Card-comp_1a92cd3e-e264-4a63-9b47-97774fd3aca7.jpg?v=17",
-        "to": "https://cdn.shopify.com/s/files/1/2726/1450/files/UL-Toho_BurningGodzilla_package_abf9f1ff-4090-401f-8d43-60c685d117f7.jpg?v=1757975579"
+        "figureId": "d14ml-ml-fan-thing",
+        "name": "The Thing",
+        "sku": "630509662593",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-exclusive-seres-6-inch-action-figure-thing.jpg?v=1723134693",
+        "to": "https://static.wixstatic.com/media/adc447_392c09b1e4f849708303aafee183e7e4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_392c09b1e4f8497083"
       },
       {
-        "figureId": "bk3-dah-041",
+        "figureId": "d14ml-ml-retro-cap",
+        "name": "Captain America",
+        "sku": "5010993842513",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-retro-series-1-captain-america-5010993842513.jpg?v=1654809267",
+        "to": "https://static.wixstatic.com/media/adc447_a224f88e2a324692a1a3b46b28da6858~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a224f88e2a324692a1"
+      },
+      {
+        "figureId": "d14ml-sinister-c",
+        "name": "Mr. Sinister",
+        "sku": "5010993954698",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-x-men-animated-vhs-mr-sinister-5010993954698.jpg?v=1687541038",
+        "to": "https://static.wixstatic.com/media/adc447_eb1ac2169f9b45d38eff1f1815d177ca~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_eb1ac2169f9b45d38e"
+      },
+      {
+        "figureId": "d14ml-speed",
+        "name": "Speed",
+        "sku": "630509397273",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/2637/6278/products/8d231bfc-ec63-49ed-a4db-87a2e31d0742_1.ad4cf0a002fc8e99f3db2e067cd5a8cf.jpeg?v=15716092",
+        "to": "https://static.wixstatic.com/media/adc447_188ed44386d94667afd11a114abb0cf9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_188ed44386d94667af"
+      },
+      {
+        "figureId": "d14ml-sue-blue",
+        "name": "Invisible Woman",
+        "sku": "653569345107",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-action-figure-2-pack-wave-2-5-invisible-woman-human-torch_image.gif?v=",
+        "to": "https://static.wixstatic.com/media/adc447_13b77a74a65441b3936b12671368ad9f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_13b77a74a65441b393"
+      },
+      {
+        "figureId": "d14ml-super-skrull",
+        "name": "Super-Skrull",
+        "sku": "5010996142535",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-avengers-2-pack-skrull-queen-and-super-skrull-5010996142535.jpg?v=1682",
+        "to": "https://static.wixstatic.com/media/adc447_9f74aaf26b6e46429d4c0e56946e8ae8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9f74aaf26b6e46429d"
+      },
+      {
+        "figureId": "d14ml-tiger-shark",
+        "name": "Tiger Shark",
+        "sku": "630509319862",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-ant-man-series-6-inch-tigershark_image.gif?v=1723135655",
+        "to": "https://static.wixstatic.com/media/adc447_658ff5d1dfec4155a22fe67c0795b91a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_658ff5d1dfec4155a2"
+      },
+      {
+        "figureId": "hs8-hs-29",
+        "name": "Jean Grey",
+        "sku": "5010994148188",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-x-men-animated-vhs-jean-grey-5010994148188.jpg?v=1704752289",
+        "to": "https://static.wixstatic.com/media/adc447_9eafa5f157264be2b0b46459e53e197a~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9eafa5f157264be2b0"
+      },
+      {
+        "figureId": "ml2-ff-sue-v2",
+        "name": "Invisible Woman",
+        "sku": "630509565054",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-exclusive-series-6-inch-action-figure-invisible-woman-exclusive_image.",
+        "to": "https://static.wixstatic.com/media/adc447_3dcb72b1f619451c9ed99380ad6b9748~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_3dcb72b1f619451c9e"
+      },
+      {
+        "figureId": "ml2-ironman-ultimate",
         "name": "Iron Man",
-        "sku": "4582578275692",
-        "shop": "japan-figure",
-        "from": "https://cdn.shopify.com/s/files/1/0875/5896/files/x_bkdmea-015.jpg?v=1782909800",
-        "to": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/Dynamic-Action-Heroes-046-Marvel-Comics-Iron-Man-Medieval-Knight-4582578275692-0.jpg?"
-      },
-      {
-        "figureId": "bn-aegis",
-        "name": "GAT-X303 Aegis Gundam",
-        "sku": "4573102639929",
-        "shop": "japan-figure",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/4573102660954a.jpg?v=1715647549",
-        "to": "https://cdn.shopify.com/s/files/1/0568/2298/8958/products/Robot-Spirits-Mobile-Suit-Gundam-Seed-LtSide-MsGt-GatX103-Buster-Gundam-Ver.-Anime"
-      },
-      {
-        "figureId": "bn-aerial",
-        "name": "XVX-016 Gundam Aerial",
-        "sku": "4573102655264",
+        "sku": "5010996142528",
         "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/4573102655264a.jpg?v=1700167068",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/mobile-suit-gundam-the-witch-from-mercury-robot-spirits-xvx-016-gundam-aerial-ver-ani"
+        "from": "https://static.wixstatic.com/media/adc447_93e49f76766e496d980933f00f7c59eb~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_93e49f76766e496d98",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-60th-anniversary-avengers-iron-man-model-01-5010996142528.jpg?v=177585"
       },
       {
-        "figureId": "bn3-rs-unicorn",
-        "name": "Unicorn Gundam",
-        "sku": "4543112807700",
-        "shop": "japan-figure",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/products/4573102550200.JPG?v=1571609290",
-        "to": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/tamashii-nations-robot-spirits-full-armor-unicorn-gundam-figure_1_1765609767.webp?v=1"
+        "figureId": "ml2-juggernaut-aes",
+        "name": "Juggernaut",
+        "sku": "630509847433",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-80-years-anniversary-7-inch-action-figure-colossus-vs-juggernaut.jp",
+        "to": "https://static.wixstatic.com/media/adc447_ab73b2671c234458ba70d435a3dbb42b~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ab73b2671c234458ba"
       },
       {
-        "figureId": "bn7-07",
-        "name": "RGM-79 GM",
-        "sku": "4573102616982",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/4573102668547a.jpg?v=1739567265",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/gundam-universe-robot-spirits-rgm-79q-gm-quel-ver-4573102616982-pkg.jpg?v=16450443"
+        "figureId": "ml2-spiderman-gwen",
+        "name": "Ghost-Spider",
+        "sku": "5010993715503",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/e93405l00-5010993735501-pkg-20-s.jpg?v=1781095614",
+        "to": "https://static.wixstatic.com/media/adc447_1b12049150514315a4e844f55f7771a9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1b12049150514315a4"
       },
       {
-        "figureId": "bn7-49",
-        "name": "Robot Spirits Impulse Gundam",
-        "sku": "4573102675293",
-        "shop": "japan-figure",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/4573102667717z.jpg?v=1738976617",
-        "to": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/tamashii-nations-metal-robot-spirits-sword-impulse-gundam-spec-ii_1_1765608733.webp?v"
+        "figureId": "ml2-spiderman-noir",
+        "name": "Spider-Man Noir",
+        "sku": "630509619139",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-lizard-series-6-inch-action-figure-spider-man-noir_image_3eb7",
+        "to": "https://static.wixstatic.com/media/adc447_26d66d95431c4eed93baa7ee39efe5ba~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_26d66d95431c4eed93"
       },
       {
-        "figureId": "bn7-50",
-        "name": "Robot Spirits Providence Gundam",
-        "sku": "4573102610102",
-        "shop": "japan-figure",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/4573102661111a.jpg?v=1749588013",
-        "to": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/metal-robot-spirits-side-ms-providence-gundam-action-figure-by-bandai_1_1761639573.we"
+        "figureId": "ml2-werewolf",
+        "name": "Werewolf by Night",
+        "sku": "5010996317360",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-baf-executioner-werewolf-by-night-5010996317360.jpg?v=1760127066",
+        "to": "https://static.wixstatic.com/media/adc447_af5ded67d87b4c9a9006d62c9c2a5cce~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_af5ded67d87b4c9a90"
       },
       {
-        "figureId": "bn7-52",
-        "name": "Robot Spirits Strike Freedom",
-        "sku": "4573102687715",
-        "shop": "japan-figure",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/4573102687715c.jpg?v=1765920721",
-        "to": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/tamashii-nations-metal-robot-spirits-strike-freedom-gundam-miku-ver-pvc_1_1765608094."
+        "figureId": "ml3-ml-colossus-baf",
+        "name": "Colossus",
+        "sku": "653569254287",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/hasbro-marvel-legends-action-figures-series-3-x3-colossus_image.gif?v=1723127293",
+        "to": "https://static.wixstatic.com/media/adc447_149365ed836547528e9f4ecc9004aedd~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_149365ed836547528e"
       },
       {
-        "figureId": "bn7-53",
-        "name": "Robot Spirits Wing Zero Custom",
-        "sku": "4516789124517",
-        "shop": "japan-figure",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/4573102664440.webp?v=1726874923",
-        "to": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/Bandai-Robot-Spirits-Robot-Spirits-LtSide-MsGt-Crossbone-Gundam-X1-Custom-Full-Action"
+        "figureId": "ml3-ml-corvus",
+        "name": "Corvus Glaive",
+        "sku": "21630509794690",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0535/8125/0722/files/ProductListing-2026-04-28T000648.601.png?v=1777306014",
+        "to": "https://static.wixstatic.com/media/adc447_da0471c79aa14e4e86df1993df5a2fca~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_da0471c79aa14e4e86"
       },
       {
-        "figureId": "bn9-bn-01",
-        "name": "Robot Spirits Gundam RX-78",
-        "sku": "4573102655271",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/4573102655271a.jpg?v=1702585228",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/mobile-suit-gundam-15th-anniversay-robot-spirits-78-2-gundam-ver-anime-4573102655271-"
+        "figureId": "ml3-ml-nightcrawler-aoa",
+        "name": "Nightcrawler",
+        "sku": "653569253549",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/hasbro-marvel-legends-action-figures-icons-series-5-nightcrawler_image.gif?v=17847452",
+        "to": "https://static.wixstatic.com/media/adc447_a18b133565c24ab982c50ca285e2eeaf~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a18b133565c24ab982"
       },
       {
-        "figureId": "bn9-bn-02",
-        "name": "Robot Spirits Zaku II",
-        "sku": "4573102603395",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/4573102615008.jpg?v=1698786406",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/mobile-suit-gundam-stardust-memory-robot-spirits-ms-06f-2zaku-ii-f-2-type-version-ani"
+        "figureId": "ml3-ml-silver-surfer-baf",
+        "name": "Silver Surfer",
+        "sku": "653569230441",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0704/5169/1800/files/marvel-legends-series-silver-surfer-6inch-action-figure_2.jpg?v=1722416611",
+        "to": "https://static.wixstatic.com/media/adc447_7a775e8397cd472e9960d406c392cc2e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7a775e8397cd472e99"
       },
       {
-        "figureId": "bn9-bn-03",
-        "name": "Robot Spirits Char Zaku",
-        "sku": "4580886842469",
-        "shop": "japan-figure",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/4573102668523a_acf33fa1-63e4-49cd-9af8-338223f14c5b.jpg?v=1720470299",
-        "to": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/tamashii-nations-robot-spirits-chars-zgok-ver-anime-figure_1_1787826067.webp?v=178789"
-      },
-      {
-        "figureId": "bs3-bs-starkiller",
-        "name": "Starkiller",
-        "sku": "5010996367181",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996367181a.webp?v=1782329697",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-gaming-greats-lord-starkiller-30-5010996367181.jpg?v=17707"
-      },
-      {
-        "figureId": "bs3-bs-thrawn",
-        "name": "Grand Admiral Thrawn",
-        "sku": "630509532223",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996269621a.webp?v=1726878088",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/star-wars-the-black-series-2017-wave-3-6-inch-action-figure-grand-admiral-thrawn-4"
-      },
-      {
-        "figureId": "bs4-chopper-rebels",
-        "name": "Chopper",
-        "sku": "630509794003",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996212085_94559fc0-3553-4178-9eb5-12bb9693cb4d.jpg?v=1720816467",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-6-inch-action-figure-chopper-c1-10p.jpg?v=1723120641"
-      },
-      {
-        "figureId": "bs4-echo",
-        "name": "ARC Trooper Echo",
-        "sku": "5010993865178",
-        "shop": "toydojo",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/products/5010993865178a.jpg?v=1621980695",
-        "to": "https://cdn.shopify.com/s/files/1/0564/2783/9650/products/echo.jpg?v=1622576577"
-      },
-      {
-        "figureId": "bs4-embo",
-        "name": "Embo",
-        "sku": "5010996421166",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996417282a.webp?v=1782325792",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-2026-wave-2-embo-10-5010996421166.jpg?v=1784932859"
-      },
-      {
-        "figureId": "bs4-ezra-live",
-        "name": "Ezra Bridger",
-        "sku": "5010993744206",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996309280k.webp?v=1757710345",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/star-wars-the-black-series-rebels-series-ezra-bridger-5010993744206.jpg?v=16575800"
+        "figureId": "ml3-ml-wolverine-aoa",
+        "name": "Wolverine",
+        "sku": "653569334347",
+        "shop": "mephitsu",
+        "from": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-exclusive-red-hulk-build-a-figure-action-figures-black-wolverine_image",
+        "to": "https://static.wixstatic.com/media/adc447_f318e26666494746b7f2293abf7b66bc~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f318e26666494746b7"
       }
     ]
   },
-  "urlMapSize": 9084,
-  "sharedUrlsAfter": 0
+  "matchedFuzzy": 85,
+  "urlMapSize": 9200
 }

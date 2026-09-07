@@ -86,10 +86,11 @@
       "sku-alias",
       "alias:indemandtoys",
       "alias:hasbro-pulse",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/hasbro-marvel-legends-action-figures-2-packs-skrull-elektra-ronin_image.gif?v=1723129818",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_85db7551aff747dca146e42a4b4fce27~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_85db7551aff747dca146e42a4b4fce27~mv2.jpg",
     "sku": "653569345060"
   },
   {
@@ -237,9 +238,12 @@
       "hasbro",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-bbts-wave5"
+    "source": "curated-bbts-wave5",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_81656dc2a8524455b331cb3e96f8783f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_81656dc2a8524455b331cb3e96f8783f~mv2.jpg"
   },
   {
     "id": "ml5-ml-x97-mister-sinister",
@@ -258,9 +262,12 @@
       "legends",
       "curated",
       "sku-alias",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-bbts-wave5"
+    "source": "curated-bbts-wave5",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_889fe8a595954632a9a0787382498700~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_889fe8a595954632a9a0787382498700~mv2.jpg"
   },
   {
     "id": "ml5-ml-x97-magneto",
@@ -378,7 +385,8 @@
       "alias:legendztoys",
       "alias:indemandtoys",
       "alias:hobbyfigures",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave5",
     "sku": "64725004"
@@ -1157,9 +1165,11 @@
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave5"
+    "source": "curated-bbts-wave5",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/41979_Evil_Dead_Ash_Cheryl.jpg?v=1760542183"
   },
   {
     "id": "cls5-cls-tiger-force-lifeline",
@@ -3413,9 +3423,11 @@
     "tags": [
       "playmates",
       "tmnt",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave5"
+    "source": "curated-bbts-wave5",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0627.JPG2.jpg?v=1785827293"
   },
   {
     "id": "ms5-ms-b53",
@@ -3589,9 +3601,11 @@
     "tags": [
       "playmates",
       "tmnt",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave5"
+    "source": "curated-bbts-wave5",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0307.JPG4.jpg?v=1785788839"
   },
   {
     "id": "ms5-ms-b51",
@@ -3852,9 +3866,12 @@
       "hasbro",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-bbts-wave5"
+    "source": "curated-bbts-wave5",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_50af4473214a4767b7961ce104ed8598~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_50af4473214a4767b7961ce104ed8598~mv2.jpg"
   },
   {
     "id": "ml5-ml-valkyrie",
@@ -12538,9 +12555,11 @@
     "tags": [
       "motu",
       "masterverse",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0600/0141/9429/files/fc266b3c44b0328f2bd23a398ef30043078ec6ff_0bcd4629-c67f-4ca2-93a1-a20b809d679c.jpg?v=1781553610"
   },
   {
     "id": "sf-mattel-creations-masters-of-the-universe-2026-movie-man-at-arms-action-figure",
@@ -18849,11 +18868,14 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "sku-gtin",
+      "sku:mephitsu",
+      "imgsku:cmdstore"
     ],
     "source": "curated-bbts-wave4",
-    "sku": "HAS772599",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/630509772599b.jpg?v=1571609295"
+    "sku": "630509772599",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-exclusive-6-inch-action-figure-mystique.jpg?v=1723135249"
   },
   {
     "id": "cls5-cls-golobulus",
@@ -64606,7 +64628,8 @@
       "marvel",
       "legends",
       "baf",
-      "curated"
+      "curated",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave3"
   },
@@ -64676,9 +64699,12 @@
     "demand": 1.15,
     "tags": [
       "marvel",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_5c03469c286649b8a4563f21fd65ca04~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_5c03469c286649b8a4563f21fd65ca04~mv2.jpg"
   },
   {
     "id": "joec-buzzer-v2",
@@ -64726,10 +64752,11 @@
       "sku:cmdstore",
       "sku-gtin",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave4",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-deadpool-baf-strong-guy-series-black-tom-cassidy-5010993697960.jpg?v=1723125040",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_4adc6c2d5c7e4e079e6af1a00312a49b~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_4adc6c2d5c7e4e079e6af1a00312a49b~mv2.jpg",
     "sku": "5010993697960"
   },
   {
@@ -66807,9 +66834,11 @@
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave5"
+    "source": "curated-bbts-wave5",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN2753-4554.jpg?v=1682636652"
   },
   {
     "id": "motu-mv2-snake-armor-he",
@@ -77759,9 +77788,12 @@
     "demand": 1.1,
     "tags": [
       "marvel",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_af72aa6e637741639db77c5971dbfd42~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_af72aa6e637741639db77c5971dbfd42~mv2.jpg"
   },
   {
     "id": "ml5-ml-mr-knight",
@@ -77785,10 +77817,11 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-disney-plus-baf-infinity-ultron-mr-knight-5010994134723-pkg.jpg?v=1663959860",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_e02ab3fc438e4c73a222704d372fb0d3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e02ab3fc438e4c73a222704d372fb0d3~mv2.jpg",
     "sku": "5010994134723"
   },
   {
@@ -81557,10 +81590,11 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-disney-plus-baf-infinity-ultron-moon-knight-5010994134686-pkg.jpg?v=1663959870",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_7f13269e12064ec9b99e8fb24d4c5193~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7f13269e12064ec9b99e8fb24d4c5193~mv2.jpg",
     "sku": "5010994134686"
   },
   {
@@ -81663,11 +81697,14 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "sku-gtin",
+      "sku:mephitsu",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave6",
-    "sku": "HAS682133",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/630509682133_a.jpg?v=1571609356"
+    "sku": "630509682119",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_e7f89c49517942a783f074e20dcca785~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e7f89c49517942a783f074e20dcca785~mv2.jpg"
   },
   {
     "id": "ml6-ml-corvus",
@@ -84692,11 +84729,12 @@
       "sku:nerdzoic",
       "image-sku",
       "image-bake",
-      "imgsku:nerdzoic"
+      "imgsku:nerdzoic",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave6",
     "sku": "21630509612284",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0535/8125/0722/files/3_4d80c864-86b8-4bbc-8b7b-0ebb920f2e5e.png?v=1777311062"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_bdf00e67ff87404b888559e3c1a6258b~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_bdf00e67ff87404b888559e3c1a6258b~mv2.jpg"
   },
   {
     "id": "tfss-ss-86-megatron-2025",
@@ -84767,11 +84805,12 @@
       "alias:hasbro-pulse",
       "image-sku",
       "image-bake",
-      "imgsku:nerdzoic"
+      "imgsku:nerdzoic",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave6",
     "sku": "21630509803484",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0535/8125/0722/files/ProductListing-2026-04-28T000825.931.png?v=1777306113"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_6bff08d7e75f4c9ea25193543556b053~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6bff08d7e75f4c9ea25193543556b053~mv2.jpg"
   },
   {
     "id": "cls5-cls-mindbender",
@@ -88443,9 +88482,11 @@
     "tags": [
       "dc",
       "mcfarlane",
-      "densify"
+      "densify",
+      "image-bake"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN6330-3.jpg?v=1665851317"
   },
   {
     "id": "mcfdc-lex-2025-movie",
@@ -88819,7 +88860,8 @@
       "legends",
       "curated",
       "sku-bake",
-      "sku:cmdstore"
+      "sku:cmdstore",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave6",
     "sku": "5010996313201"
@@ -103429,9 +103471,12 @@
       "hasbro",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-bbts-wave6"
+    "source": "curated-bbts-wave6",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_a58ab99f06b5420785a3040fc56b1fbf~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a58ab99f06b5420785a3040fc56b1fbf~mv2.jpg"
   },
   {
     "id": "mlc-manthing",
@@ -103629,9 +103674,12 @@
     "demand": 1.25,
     "tags": [
       "marvel",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_d2cf347069a6402f97f19c5a2fda60d7~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d2cf347069a6402f97f19c5a2fda60d7~mv2.jpg"
   },
   {
     "id": "joec-duke-v3",
@@ -103714,7 +103762,8 @@
       "marvel",
       "legends",
       "baf",
-      "curated"
+      "curated",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave3"
   },
@@ -107169,9 +107218,11 @@
     "tags": [
       "dc",
       "mcfarlane",
-      "densify"
+      "densify",
+      "image-bake"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0268/8129/4530/files/17839_01_NL.1772485577745.jpg?v=1772487254"
   },
   {
     "id": "motu-og-webstor-200x",
@@ -107693,11 +107744,12 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave6",
     "sku": "653569956495",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-guardians-galaxy-6-inch-figure-rocket-raccoon_image.gif?v=1723127160"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_d33168941f55444197a312112771edb0~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d33168941f55444197a312112771edb0~mv2.jpg"
   },
   {
     "id": "plc-robo-knight",
@@ -107795,9 +107847,11 @@
     "demand": 1.3,
     "tags": [
       "marvel",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-disney-plus-baf-infinity-ultron-mr-knight-5010994134723-pkg.jpg?v=1663959860"
   },
   {
     "id": "tfss-ss-constructicon-hook-lh",
@@ -110362,10 +110416,11 @@
       "sku-alias",
       "alias:toyarena",
       "alias:hasbro-pulse",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave6",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-2012-wave-2-marvels-drax_image.gif?v=1723129112",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_b805ef74fc1d4ac79c05a59765634931~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b805ef74fc1d4ac79c05a59765634931~mv2.webp",
     "sku": "653569704867"
   },
   {
@@ -124217,9 +124272,11 @@
     "tags": [
       "dc",
       "mcfarlane",
-      "densify"
+      "densify",
+      "image-bake"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN5741-4.jpg?v=1674849251"
   },
   {
     "id": "mcf5-mcf-spawn-malebolgia",
@@ -124728,9 +124785,11 @@
       "hasbro",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave6"
+    "source": "curated-bbts-wave6",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN3718-44.jpg?v=1683689283"
   },
   {
     "id": "mlc-nicepool",
@@ -127549,11 +127608,12 @@
       "alias:hasbro-pulse",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave6",
     "sku": "630509780846",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-2-pack-series-6-inch-action-figure-klaw-vs-shuri.jpg?v=1723135839"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_d937ba5016164b8a9a0638aefd872801~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d937ba5016164b8a9a0638aefd872801~mv2.jpg"
   },
   {
     "id": "d14ss-86-sharpnel",
@@ -127614,10 +127674,11 @@
       "hasbro",
       "power-rangers",
       "lightning",
-      "curated"
+      "curated",
+      "image-bake"
     ],
     "source": "curated-bbts-wave6",
-    "imageUrl": null
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN3152-5.jpg?v=1672433172"
   },
   {
     "id": "ss6-ss-optimus-tfone",
@@ -130286,9 +130347,12 @@
     "demand": 1.25,
     "tags": [
       "marvel",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_afd8d95d92ba489c86ff904e62e0241c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_afd8d95d92ba489c86ff904e62e0241c~mv2.jpg"
   },
   {
     "id": "cls5-cls-blue-ninja",
@@ -134446,11 +134510,12 @@
       "alias:hasbro-pulse",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave4",
     "sku": "630509712212",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-netflix-series-6-inch-action-figure-luke-cage-claire-temple.jpg?v=1705967272"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_c7e5eeffc29b45a8913f55485bdbc093~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c7e5eeffc29b45a8913f55485bdbc093~mv2.jpg"
   },
   {
     "id": "ml5-ml-lizard",
@@ -134748,10 +134813,11 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:hasbro-pulse",
-      "alias:nerdzoic"
+      "alias:nerdzoic",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave6",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-doctor-strange-baf-rintrah-america-chavez-5010993790906.jpg?v=1640331046",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_63dff7cf6cb6486885d4e70e40bcbce1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_63dff7cf6cb6486885d4e70e40bcbce1~mv2.jpg",
     "sku": "5010993790906"
   },
   {
@@ -136042,9 +136108,11 @@
       "tmnt",
       "playmates",
       "modern",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-playmates"
+    "source": "curated-playmates",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0464.JPG3.jpg?v=1784297804"
   },
   {
     "id": "pm-tmnt-tales-bebop",
@@ -136061,9 +136129,11 @@
       "tmnt",
       "playmates",
       "modern",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-playmates"
+    "source": "curated-playmates",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN1388-2.jpg?v=1726254659"
   },
   {
     "id": "na-h51",
@@ -137472,10 +137542,11 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:hobbyfigures",
-      "alias:nerdzoic"
+      "alias:nerdzoic",
+      "imgsku:mephitsu"
     ],
     "source": "curated",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-avengers-magic-the-gathering-wave-2-doctor-doom-2099-5010996411372.jpg?v=1786644876",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_509ee762f50140ddabc12df71312d08f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_509ee762f50140ddabc12df71312d08f~mv2.jpg",
     "sku": "5010996411372"
   },
   {
@@ -141617,10 +141688,12 @@
       "origins",
       "densify",
       "sku-bake",
-      "sku:cmdstore"
+      "sku:cmdstore",
+      "image-bake"
     ],
     "source": "curated-densify",
-    "sku": "194735244324"
+    "sku": "194735244324",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0600/0141/9429/files/aa6abd53bcefb598da4d8ff1280cb3e2cfffa4c9_dddcf76f-f49c-4636-a8d3-0a23c3cc061d.jpg?v=1784164856"
   },
   {
     "id": "mv3-mv-teela-rev",
@@ -143068,9 +143141,11 @@
     "tags": [
       "power-rangers",
       "lightning",
-      "densify"
+      "densify",
+      "image-bake"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN3264-3.jpg?v=1672543643"
   },
   {
     "id": "ml3-ml-gladiator",
@@ -146004,10 +146079,14 @@
       "legends",
       "curated",
       "sku-bake",
-      "sku:cmdstore"
+      "sku:cmdstore",
+      "image-sku",
+      "image-bake",
+      "imgsku:cmdstore"
     ],
     "source": "curated-bbts-wave6",
-    "sku": "5010996335265"
+    "sku": "5010996335265",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-retro-fantastic-four-she-hulk-5010996335265_a4f67794-a531-491c-ae76-f37ca5ac806c.jpg?v=1778882152"
   },
   {
     "id": "joe2-rock-roll",
@@ -146313,11 +146392,14 @@
       "sku-alias",
       "alias:hasbro-pulse",
       "image-sku",
-      "imgsku:staractionfigures"
+      "imgsku:staractionfigures",
+      "sku-gtin",
+      "sku:mephitsu",
+      "imgsku:mephitsu"
     ],
     "source": "curated-densify",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/e3890as00-630509775477-main-18-s.jpg?v=1781085259",
-    "sku": "E3890"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_60d4c6dfbd754165b21d6cc19f290323~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_60d4c6dfbd754165b21d6cc19f290323~mv2.jpg",
+    "sku": "630509775477"
   },
   {
     "id": "joec-eels",
@@ -148408,10 +148490,12 @@
       "sku-bake",
       "sku:cmdstore",
       "sku-alias",
-      "alias:kitsap"
+      "alias:kitsap",
+      "image-bake"
     ],
     "source": "curated-bbts-wave6",
-    "sku": "787926171075platinum"
+    "sku": "787926171075platinum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0256/4731/7039/files/Azraelred1.jpg?v=1726278293"
   },
   {
     "id": "mcfdc-arkham-knight",
@@ -153928,9 +154012,12 @@
     "demand": 1.25,
     "tags": [
       "marvel",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_532f1ca005614d79a5df40e316f3f6a4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_532f1ca005614d79a5df40e316f3f6a4~mv2.jpg"
   },
   {
     "id": "mlc-cable-askani",
@@ -153955,11 +154042,12 @@
       "alias:legendztoys",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated",
     "sku": "653569264774",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/hasbro-marvel-legends-action-figures-exclusive-2-packs-cable---marvel-girl_image.gif?v=1723127293"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_bc4ca938fa3b41d49d08ba8e35670581~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_bc4ca938fa3b41d49d08ba8e35670581~mv2.jpg"
   },
   {
     "id": "bs4-boba-adolescent",
@@ -158496,9 +158584,11 @@
     "tags": [
       "playmates",
       "tmnt",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave4"
+    "source": "curated-bbts-wave4",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN5509_4.jpg?v=1641413927"
   },
   {
     "id": "pm4-cc-leatherhead",
@@ -159892,9 +159982,12 @@
       "hasbro",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-bbts-wave4"
+    "source": "curated-bbts-wave4",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_79bb6bd82e254dfa9047b81519be772f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_79bb6bd82e254dfa9047b81519be772f~mv2.jpg"
   },
   {
     "id": "bs6-bs-andor",
@@ -163938,11 +164031,12 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated",
     "sku": "630509856152",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-avengers-endgame-bro-thor-series-6-inch-action-figure-iron-patriot.jpg?v=1705967421"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_445b048e5e414d789939d001adca37c6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_445b048e5e414d789939d001adca37c6~mv2.jpg"
   },
   {
     "id": "bs3-bs-ig12",
@@ -164185,10 +164279,11 @@
       "sku-gtin",
       "sku-alias",
       "alias:indemandtoys",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave6",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-studios-10th-anniversary-series-6-inch-action-figure-captain-america-vs-crossbones-9.gif?v=1723115064",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_50c980254941438cad3f05302ae6ab8a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_50c980254941438cad3f05302ae6ab8a~mv2.jpg",
     "sku": "630509682409"
   },
   {
@@ -170381,9 +170476,12 @@
     "demand": 1.25,
     "tags": [
       "marvel",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_97c7cf90dc534e94a40ee5d3eefdb3a4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_97c7cf90dc534e94a40ee5d3eefdb3a4~mv2.jpg"
   },
   {
     "id": "fh4-cl-tuchik",
@@ -171648,9 +171746,11 @@
     "demand": 1.5,
     "tags": [
       "mezco",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/696198773101.webp?v=1725397442"
   },
   {
     "id": "d14mez-dx-silver-surfer",
@@ -172972,11 +173072,12 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated",
     "sku": "5010993727230",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-retro-x-men-series-6-inch-action-figure-grey-beast_pkg2.jpg?v=1723114790"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_93ac5b67d78a4ac4a52002cf0b8209ae~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_93ac5b67d78a4ac4a52002cf0b8209ae~mv2.webp"
   },
   {
     "id": "joec-classified-airborne",
@@ -174031,9 +174132,11 @@
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave6"
+    "source": "curated-bbts-wave6",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN6542-7.jpg?v=1666071406"
   },
   {
     "id": "neca6-neca-don-mirage",
@@ -174297,10 +174400,12 @@
       "dc",
       "curated",
       "sku-bake",
-      "sku:cmdstore"
+      "sku:cmdstore",
+      "image-bake"
     ],
     "source": "curated-bbts-wave6",
-    "sku": "787926152821"
+    "sku": "787926152821",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN6358-2.jpg?v=1665870285"
   },
   {
     "id": "mf8-mf-35",
@@ -177772,9 +177877,11 @@
       "mattel",
       "masterverse",
       "motu",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave4"
+    "source": "curated-bbts-wave4",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/0-2_dc4c254a-54f8-40a7-924a-d34076053461.png?v=1770922683"
   },
   {
     "id": "mv4-ne-trapjaw-v2",
@@ -180805,9 +180912,11 @@
     "tags": [
       "dc",
       "mcfarlane",
-      "densify"
+      "densify",
+      "image-bake"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN5708-3.jpg?v=1674851150"
   },
   {
     "id": "mcf6-mcf-ww-plat",
@@ -182541,11 +182650,12 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave6",
     "sku": "630509713561",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-inifnite-monster-venom-series-6-inch-action-figure-spider-ham.jpg?v=1705967727"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_d97758040aa64ea6a01c021e9982648a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d97758040aa64ea6a01c021e9982648a~mv2.jpg"
   },
   {
     "id": "hs8-hs-45",
@@ -183240,9 +183350,12 @@
     "demand": 1.35,
     "tags": [
       "marvel",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_4b73b31065224b90bd7732b1d4dff719~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_4b73b31065224b90bd7732b1d4dff719~mv2.jpg"
   },
   {
     "id": "ss4-ss109-battletrap",
@@ -183307,10 +183420,17 @@
       "legends",
       "densify",
       "sku-bake",
-      "sku:cmdstore"
+      "sku:cmdstore",
+      "sku-gtin",
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu",
+      "image-sku",
+      "imgsku:mephitsu"
     ],
     "source": "curated-densify",
-    "sku": "653569346128white"
+    "sku": "5010993937981",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_b0fc579a2fac42a4ba9dd3e2cfbc8ce7~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b0fc579a2fac42a4ba9dd3e2cfbc8ce7~mv2.jpg"
   },
   {
     "id": "bs6-bs-ahsoka-fulcrum",
@@ -186768,9 +186888,12 @@
       "hasbro",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-bbts-wave6"
+    "source": "curated-bbts-wave6",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_ed75018601c84846a766ea1a3217231c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ed75018601c84846a766ea1a3217231c~mv2.jpg"
   },
   {
     "id": "d14ss-rotb-rhinox",
@@ -187016,9 +187139,11 @@
       "hasbro",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave4"
+    "source": "curated-bbts-wave4",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN3614-53.jpg?v=1683578859"
   },
   {
     "id": "lc6-lc-goldar-w6",
@@ -190126,9 +190251,11 @@
       "hasbro",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave4"
+    "source": "curated-bbts-wave4",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN8521_4.jpg?v=1572554515"
   },
   {
     "id": "mlc-peni-parker",
@@ -190467,9 +190594,11 @@
     "demand": 1.4,
     "tags": [
       "gi-joe",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN5077_4.jpg?v=1591992166"
   },
   {
     "id": "bs4-wolffe",
@@ -190767,9 +190896,11 @@
       "hasbro",
       "gi-joe",
       "classified",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave4"
+    "source": "curated-bbts-wave4",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0101_4c9d8f40-208f-4f05-9dbf-6361f1e00eff.jpg?v=1788573004"
   },
   {
     "id": "d14ss-rotb-airazor",
@@ -192122,10 +192253,12 @@
       "tamashii",
       "curated",
       "sku-bake",
-      "sku:toydojo"
+      "sku:toydojo",
+      "image-bake"
     ],
     "source": "curated-bbts-wave2",
-    "sku": "N2668604001001"
+    "sku": "N2668604001001",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4573102650429a.jpg?v=1694721670"
   },
   {
     "id": "shf3-shf-kamen-geats",
@@ -195225,7 +195358,8 @@
       "marvel",
       "legends",
       "baf",
-      "curated"
+      "curated",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave3"
   },
@@ -195305,9 +195439,18 @@
     "demand": 1.1,
     "tags": [
       "marvel",
-      "curated"
+      "curated",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu",
+      "image-sku",
+      "imgsku:mephitsu"
     ],
-    "source": "curated"
+    "source": "curated",
+    "sku": "630509491100",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_8cc0f2d1470c44599672de833e6daadd~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_8cc0f2d1470c44599672de833e6daadd~mv2.jpg"
   },
   {
     "id": "d14ml-spidey-india",
@@ -196002,7 +196145,8 @@
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "img:mephitsu"
     ],
     "source": "curated-densify"
   },
@@ -198402,10 +198546,12 @@
       "dc",
       "curated",
       "sku-bake",
-      "sku:cmdstore"
+      "sku:cmdstore",
+      "image-bake"
     ],
     "source": "curated-bbts-wave6",
-    "sku": "787926153767"
+    "sku": "787926153767",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN7328-7.jpg?v=1676436193"
   },
   {
     "id": "mcfc-azrael",
@@ -198860,9 +199006,11 @@
     "demand": 1.55,
     "tags": [
       "mafex",
-      "densify"
+      "densify",
+      "image-bake"
     ],
-    "source": "curated-mafex-mezco"
+    "source": "curated-mafex-mezco",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4530956472645a.jpg?v=1776992632"
   },
   {
     "id": "tls2-archers-york",
@@ -199571,9 +199719,12 @@
       "hasbro",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-bbts-wave6"
+    "source": "curated-bbts-wave6",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_1ceb2f6f0faa4459aa87a4fb60947bb1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1ceb2f6f0faa4459aa87a4fb60947bb1~mv2.jpg"
   },
   {
     "id": "tfss-ss-core-rumble",
@@ -200002,10 +200153,11 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:staractionfigures",
-      "alias:nerdzoic"
+      "alias:nerdzoic",
+      "imgsku:mephitsu"
     ],
     "source": "curated-densify",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-x-men-baf-chod-kid-omega-5010994181093.jpg?v=1673675538",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_34f3551a775f4831952fc25c775608e5~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_34f3551a775f4831952fc25c775608e5~mv2.jpg",
     "sku": "5010994181093"
   },
   {
@@ -202809,9 +202961,11 @@
     "tags": [
       "motu",
       "origins",
-      "densify"
+      "densify",
+      "image-bake"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0739_2_2.jpg?v=1771724069"
   },
   {
     "id": "mat6-mat-stratos-ne",
@@ -204137,9 +204291,11 @@
     "tags": [
       "hasbro",
       "marvel",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave2"
+    "source": "curated-bbts-wave2",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN0519-3.jpg?v=1660180785"
   },
   {
     "id": "ss6-ss-cheetor-rotb",
@@ -204213,10 +204369,11 @@
       "imgsku:toyarena",
       "sku:cmdstore",
       "sku-gtin",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-captain-america-civil-war-wave-3-6-inch-action-figure-captain-britain_image.gif?v=1705967362",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_98e3d6bb608b47c6809bc715a23891c8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_98e3d6bb608b47c6809bc715a23891c8~mv2.jpg",
     "sku": "630509401871"
   },
   {
@@ -207120,9 +207277,11 @@
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave6"
+    "source": "curated-bbts-wave6",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0144/1798/5584/products/s-l500_1_38c27e58-ac3a-4943-83bb-733b1e57fa57.jpg?v=1622587196"
   },
   {
     "id": "d14mcf-constantine-pp",
@@ -209195,10 +209354,11 @@
       "sku-alias",
       "alias:toyarena",
       "alias:nerdzoic",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-densify",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-baf-cassie-lang-wasp-5010994180041.jpg?v=1676500180",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_ceb9275dde65448f8c2efa34eedcdb10~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ceb9275dde65448f8c2efa34eedcdb10~mv2.png",
     "sku": "5010994180041"
   },
   {
@@ -209379,9 +209539,12 @@
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "img:mephitsu",
+      "image-bake"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0215-323.jpg?v=1777825870"
   },
   {
     "id": "joec-alley-viper",
@@ -214943,9 +215106,11 @@
     "demand": 1.45,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave6"
+    "source": "curated-bbts-wave6",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2726/1450/products/L01.png?v=1759940398"
   },
   {
     "id": "s74-motu-heman-ult",
@@ -215099,9 +215264,11 @@
     "tags": [
       "playmates",
       "tmnt",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave4"
+    "source": "curated-bbts-wave4",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0144/1798/5584/files/71H6xdl4lGL._AC_SL1500.jpg?v=1700610264"
   },
   {
     "id": "pm4-classic-leo-soft",
@@ -217282,10 +217449,13 @@
       "alias:toyarena",
       "alias:hobbyfigures",
       "alias:nerdzoic",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "img:mephitsu",
+      "image-bake"
     ],
     "source": "curated-bbts-wave2",
-    "sku": "5010996142528"
+    "sku": "5010996142528",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/6ef1c557-9b4e-4d4a-9101-8fccfac1ec3d.jpg?v=1571609220"
   },
   {
     "id": "d14ml-immortus",
@@ -219677,9 +219847,11 @@
     "demand": 1.25,
     "tags": [
       "gi-joe",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0376.JPG4.jpg?v=1781282672"
   },
   {
     "id": "joec-classified-rangeviper",
@@ -219764,9 +219936,12 @@
     "tags": [
       "hasbro",
       "marvel",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-bbts-wave2"
+    "source": "curated-bbts-wave2",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_5a6fef671ef44acb837feef9a7babc4f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_5a6fef671ef44acb837feef9a7babc4f~mv2.jpg"
   },
   {
     "id": "hs8-hs-36",
@@ -219883,10 +220058,11 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/hasbro-marvel-legends-action-figures-2-packs-wave-1-jim-lee-wolverine-forge_image.gif?v=1723127098",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_cfb23f268c0b4930955c90c6c5684482~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cfb23f268c0b4930955c90c6c5684482~mv2.jpg",
     "sku": "653569340461"
   },
   {
@@ -221026,9 +221202,11 @@
     "tags": [
       "shfiguarts",
       "tamashii",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave2"
+    "source": "curated-bbts-wave2",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4573102666185a.jpg?v=1722554202"
   },
   {
     "id": "pd7-18",
@@ -222288,11 +222466,12 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave2",
     "sku": "5010996317360",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-baf-executioner-werewolf-by-night-5010996317360.jpg?v=1760127066"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_af5ded67d87b4c9a9006d62c9c2a5cce~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_af5ded67d87b4c9a9006d62c9c2a5cce~mv2.jpg"
   },
   {
     "id": "mlc-venom-eddie",
@@ -224098,10 +224277,12 @@
       "sku-alias",
       "alias:staractionfigures",
       "alias:hobbyfigures",
-      "alias:kitsap"
+      "alias:kitsap",
+      "image-bake"
     ],
     "source": "curated-bbts-wave8",
-    "sku": "787926301380"
+    "sku": "787926301380",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0256/4731/7039/files/McFarlaneRedHoodPlatinum1.jpg?v=1737844931"
   },
   {
     "id": "mcf2-hawkgirl",
@@ -227857,9 +228038,11 @@
     "tags": [
       "motu",
       "masterverse",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0568/1132/3597/products/jieqdkxemnrrulbhcfob_bf80ea3f-42c4-45f7-9d1e-6066cd3e3291.jpg?v=1757530742"
   },
   {
     "id": "ms5-ms-b45",
@@ -228883,11 +229066,14 @@
       "sku:legendztoys",
       "image-sku",
       "image-bake",
-      "imgsku:legendztoys"
+      "imgsku:legendztoys",
+      "sku-gtin",
+      "sku:mephitsu",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave3",
-    "sku": "MLSSURF1",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0704/5169/1800/files/marvel-legends-series-silver-surfer-6inch-action-figure_2.jpg?v=1722416611"
+    "sku": "653569230441",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_7a775e8397cd472e9960d406c392cc2e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7a775e8397cd472e9960d406c392cc2e~mv2.jpg"
   },
   {
     "id": "tfss-ss88-sideways",
@@ -229177,11 +229363,12 @@
       "imgsku:toyarena",
       "sku:cmdstore",
       "sku-gtin",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-densify",
     "sku": "5010994180072",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-baf-cassie-lang-kang-the-conqueror-5010994180072.jpg?v=1676500053"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_4c4bb2edc9574d1287d6f8effa1b56e8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_4c4bb2edc9574d1287d6f8effa1b56e8~mv2.jpg"
   },
   {
     "id": "ml2-ff-johnny-v2",
@@ -232630,10 +232817,12 @@
       "sku-alias",
       "alias:staractionfigures",
       "alias:collecticon",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "image-bake"
     ],
     "source": "curated-bbts-wave8",
-    "sku": "5010996143754dmg"
+    "sku": "5010996143754dmg",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996296221d.webp?v=1761612088"
   },
   {
     "id": "d14joe-pp-trooper",
@@ -232869,11 +233058,12 @@
       "sku-gtin",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave2",
     "sku": "630509565054",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-exclusive-series-6-inch-action-figure-invisible-woman-exclusive_image.gif?v=1723120199"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_3dcb72b1f619451c9ed99380ad6b9748~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_3dcb72b1f619451c9ed99380ad6b9748~mv2.jpg"
   },
   {
     "id": "mlc-ikaris",
@@ -235808,11 +235998,12 @@
       "imgsku:toyarena",
       "sku:cmdstore",
       "sku-gtin",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave2",
     "sku": "630509847433",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-80-years-anniversary-7-inch-action-figure-colossus-vs-juggernaut.jpg?v=1616472213"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_ab73b2671c234458ba70d435a3dbb42b~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ab73b2671c234458ba70d435a3dbb42b~mv2.jpg"
   },
   {
     "id": "mlc-jean-astounding",
@@ -242285,9 +242476,11 @@
       "gundam",
       "robot-spirits",
       "af",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave3"
+    "source": "curated-bbts-wave3",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/4573102550200.JPG?v=1571609290"
   },
   {
     "id": "bn-gu-god",
@@ -243139,9 +243332,11 @@
     "demand": 1.4,
     "tags": [
       "tmnt",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN8555-32.jpg?v=1712440465"
   },
   {
     "id": "ms8-ms-25",
@@ -244518,11 +244713,12 @@
       "alias:nerdzoic",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave8",
     "sku": "5010994148188",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-x-men-animated-vhs-jean-grey-5010994148188.jpg?v=1704752289"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_9eafa5f157264be2b0b46459e53e197a~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9eafa5f157264be2b0b46459e53e197a~mv2.png"
   },
   {
     "id": "tfss-ss84-ironhide",
@@ -247156,11 +247352,14 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "sku-gtin",
+      "sku:mephitsu",
+      "imgsku:mephitsu"
     ],
     "source": "curated-densify",
-    "sku": "HAS397273",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/8d231bfc-ec63-49ed-a4db-87a2e31d0742_1.ad4cf0a002fc8e99f3db2e067cd5a8cf.jpeg?v=1571609221"
+    "sku": "630509397273",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_188ed44386d94667afd11a114abb0cf9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_188ed44386d94667afd11a114abb0cf9~mv2.jpg"
   },
   {
     "id": "tfss-ss83-soundwave",
@@ -247476,9 +247675,12 @@
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_0b38767af60f4d20bf49091f4ba574fc~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0b38767af60f4d20bf49091f4ba574fc~mv2.jpg"
   },
   {
     "id": "tfss-ss86-cliff-alt",
@@ -254096,9 +254298,11 @@
     "tags": [
       "hasbro",
       "gi-joe",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave2"
+    "source": "curated-bbts-wave2",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN8862_4.jpg?v=1633145375"
   },
   {
     "id": "d14joe-salamander",
@@ -257029,9 +257233,11 @@
     "tags": [
       "hasbro",
       "marvel",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave2"
+    "source": "curated-bbts-wave2",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN3393-434.jpg?v=1683499774"
   },
   {
     "id": "d14ml-quasar",
@@ -261621,9 +261827,11 @@
     "tags": [
       "jada",
       "street-fighter",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave9"
+    "source": "curated-bbts-wave9",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0448_2_Q.jpg?v=1767060421"
   },
   {
     "id": "if5-if-ex45",
@@ -262010,11 +262218,12 @@
       "sku-gtin",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated",
     "sku": "5010996196804",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-strange-tales-baf-blackheart-moon-knight-5010996196804.jpg?v=1720658494"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_522eeb462c3c45f098055d5bef4e3ed9~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_522eeb462c3c45f098055d5bef4e3ed9~mv2.webp"
   },
   {
     "id": "d14ml-modok-haslab",
@@ -262135,11 +262344,14 @@
       "sku-alias",
       "alias:collecticon",
       "image-sku",
-      "imgsku:staractionfigures"
+      "imgsku:staractionfigures",
+      "sku-gtin",
+      "sku:mephitsu",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave2",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/e93405l00-5010993735501-pkg-20-s.jpg?v=1781095614",
-    "sku": "E9340"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_1b12049150514315a4e844f55f7771a9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1b12049150514315a4e844f55f7771a9~mv2.jpg",
+    "sku": "5010993715503"
   },
   {
     "id": "tfc-kingdom-galvatron",
@@ -268319,11 +268531,12 @@
       "sku-gtin",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave2",
     "sku": "630509619139",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-lizard-series-6-inch-action-figure-spider-man-noir_image_3eb7f531-f34d-44d9-bc96-1e894c5d6421.gif?v=1705967207"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_26d66d95431c4eed93baa7ee39efe5ba~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_26d66d95431c4eed93baa7ee39efe5ba~mv2.jpg"
   },
   {
     "id": "joe2-slipstream",
@@ -271218,9 +271431,11 @@
     "demand": 1.35,
     "tags": [
       "dc",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN9678-2222333.jpg?v=1700365489"
   },
   {
     "id": "mcfc-batman-hellbat",
@@ -272089,9 +272304,12 @@
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_400d20ea74ee4420ad584dc4ab18d11f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_400d20ea74ee4420ad584dc4ab18d11f~mv2.jpg"
   },
   {
     "id": "hs10-hs-32",
@@ -274000,10 +274218,12 @@
       "alias:legendztoys",
       "alias:staractionfigures",
       "alias:hobbyfigures",
-      "alias:nerdzoic"
+      "alias:nerdzoic",
+      "image-bake"
     ],
     "source": "curated-bbts-wave8",
-    "sku": "787926150919dmg"
+    "sku": "787926150919dmg",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN8944-22223.jpg?v=1699068083"
   },
   {
     "id": "mt9-mt-19",
@@ -277138,9 +277358,11 @@
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave3"
+    "source": "curated-bbts-wave3",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN6967_3_504e92e1-b873-4f26-b06c-f645a4cbaa53.jpg?v=1619035941"
   },
   {
     "id": "neca3-ult-pennywise",
@@ -279411,9 +279633,12 @@
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_d3caa0b96ee44e79a68f93c645f0edc2~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d3caa0b96ee44e79a68f93c645f0edc2~mv2.webp"
   },
   {
     "id": "ml3-ml-sunfire-aoa",
@@ -279431,9 +279656,12 @@
       "marvel",
       "legends",
       "baf",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-bbts-wave3"
+    "source": "curated-bbts-wave3",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_5e658ce13bc64a33adcaf13f7a8a0bf4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_5e658ce13bc64a33adcaf13f7a8a0bf4~mv2.jpg"
   },
   {
     "id": "tfmp-mp53",
@@ -279892,9 +280120,11 @@
     "demand": 1.25,
     "tags": [
       "star-wars",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0724.JPGs.jpg?v=1786878997"
   },
   {
     "id": "ml2-gambit-aes",
@@ -280044,7 +280274,8 @@
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "img:mephitsu"
     ],
     "source": "curated-densify"
   },
@@ -285846,9 +286077,12 @@
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_31366ebf7f2c4de88138a3a0ebe59356~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_31366ebf7f2c4de88138a3a0ebe59356~mv2.jpg"
   },
   {
     "id": "d14joe-scarlett-v2",
@@ -289129,10 +289363,11 @@
       "imgsku:toyarena",
       "sku:cmdstore",
       "sku-gtin",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-densify",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-ant-man-series-6-inch-tigershark_image.gif?v=1723135655",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_658ff5d1dfec4155a22fe67c0795b91a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_658ff5d1dfec4155a22fe67c0795b91a~mv2.jpg",
     "sku": "630509319862"
   },
   {
@@ -289199,10 +289434,12 @@
       "classified",
       "densify",
       "sku-bake",
-      "sku:cmdstore"
+      "sku:cmdstore",
+      "image-bake"
     ],
     "source": "curated-densify",
-    "sku": "5010993662395reissue"
+    "sku": "5010993662395reissue",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN6442-332222.jpg?v=1696116846"
   },
   {
     "id": "hs8-hs-15",
@@ -289353,11 +289590,12 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave3",
     "sku": "653569253549",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/hasbro-marvel-legends-action-figures-icons-series-5-nightcrawler_image.gif?v=1784745216"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_a18b133565c24ab982c50ca285e2eeaf~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a18b133565c24ab982c50ca285e2eeaf~mv2.jpg"
   },
   {
     "id": "d14ml-mastermind-hf",
@@ -289373,9 +289611,12 @@
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_ebe10c6b96a34ba3829abc0a6ebb07d3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ebe10c6b96a34ba3829abc0a6ebb07d3~mv2.jpg"
   },
   {
     "id": "d14bs-luke-imperial",
@@ -289451,10 +289692,11 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-daredevil-born-again-2-pack-daredevil-jessica-jones-5010996449368.jpg?v=1776883919",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_e93a2774f31b4edf964ac5d991a6f539~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e93a2774f31b4edf964ac5d991a6f539~mv2.jpg",
     "sku": "5010996449368"
   },
   {
@@ -292136,9 +292378,12 @@
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_41a82c03c6f64efbb19cb3ed046ddc9d~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_41a82c03c6f64efbb19cb3ed046ddc9d~mv2.jpg"
   },
   {
     "id": "d14ml-ml-gamerverse-peter",
@@ -292384,11 +292629,12 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated",
     "sku": "630509838691",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-avengers-endgame-baf-hulk-series-6-inch-action-figure-beta-ray-bill.jpg?v=1705967346"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_1d9f9569d759463697e0bf12aabfadd9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1d9f9569d759463697e0bf12aabfadd9~mv2.jpg"
   },
   {
     "id": "fm8-fm-17",
@@ -295111,10 +295357,11 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-x-men-series-baf-wendigo-6-inch-action-figure-boom-boom.jpg?v=1705967408",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_e8e757272edf42469bcffa6b3b61d59a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e8e757272edf42469bcffa6b3b61d59a~mv2.jpg",
     "sku": "630509825417"
   },
   {
@@ -304771,10 +305018,11 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave3",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-exclusive-red-hulk-build-a-figure-action-figures-black-wolverine_image.gif?v=1732045856",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_f318e26666494746b7f2293abf7b66bc~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f318e26666494746b7f2293abf7b66bc~mv2.jpg",
     "sku": "653569334347"
   },
   {
@@ -304863,11 +305111,12 @@
       "sku-alias",
       "alias:staractionfigures",
       "alias:kitsap",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-densify",
     "sku": "5010996142535",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-avengers-2-pack-skrull-queen-and-super-skrull-5010996142535.jpg?v=1682646265"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_9f74aaf26b6e46429d4c0e56946e8ae8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9f74aaf26b6e46429d4c0e56946e8ae8~mv2.jpg"
   },
   {
     "id": "d14ml-sugar-man-baf",
@@ -304966,11 +305215,13 @@
       "alias:hasbro-pulse",
       "alias:toyarena",
       "alias:kitsap",
-      "alias:nerdzoic"
+      "alias:nerdzoic",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "curated",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-retro-fantastic-four-she-hulk-5010996335265_a4f67794-a531-491c-ae76-f37ca5ac806c.jpg?v=1778882152",
-    "sku": "5010996335265dmg"
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-retro-iron-man-wave-1-she-hulk-5010996206688.jpg?v=1712180220",
+    "sku": "5010996206688"
   },
   {
     "id": "d14ml-riot-d",
@@ -304986,9 +305237,12 @@
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_ba65d2e1aa2f4ef89939b549ec4c657c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ba65d2e1aa2f4ef89939b549ec4c657c~mv2.jpg"
   },
   {
     "id": "d14lc-astro-red",
@@ -305160,11 +305414,14 @@
       "image-sku",
       "imgsku:toyarena",
       "sku-alias",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "sku-gtin",
+      "sku:mephitsu",
+      "imgsku:mephitsu"
     ],
     "source": "curated",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996290205e.webp?v=1752087884",
-    "sku": "HAS290205"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_2b2aadef2f9a4210ae4bf3c881fd3955~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2b2aadef2f9a4210ae4bf3c881fd3955~mv2.jpg",
+    "sku": "653569219750"
   },
   {
     "id": "bs3-bs-greef",
@@ -305565,7 +305822,8 @@
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "img:mephitsu"
     ],
     "source": "curated-densify"
   },
@@ -308093,9 +308351,11 @@
     "tags": [
       "hasbro",
       "power-rangers",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave2"
+    "source": "curated-bbts-wave2",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN1447_4_86626fca-485f-44a2-aa20-182959a5fdd6.jpg?v=1624170668"
   },
   {
     "id": "d14ml-whirlwind",
@@ -308224,9 +308484,12 @@
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_b4fb1ab9f5894591aa0deb0ed9315b06~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b4fb1ab9f5894591aa0deb0ed9315b06~mv2.jpg"
   },
   {
     "id": "d14bs-obi-padawan",
@@ -308293,9 +308556,12 @@
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_47928c9420b94246bf1ffaeaf83dfbac~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_47928c9420b94246bf1ffaeaf83dfbac~mv2.jpg"
   },
   {
     "id": "d14ml-doom-lat",
@@ -308316,11 +308582,12 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-densify",
     "sku": "5010996142443",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-avengers-2-pack-captain-marvel-vs-doctor-doom-5010996142443.jpg?v=1681344441"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_1b0f54bb98f848719cedf4ea58dddd85~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1b0f54bb98f848719cedf4ea58dddd85~mv2.jpg"
   },
   {
     "id": "joe2-destro-v2",
@@ -311979,9 +312246,11 @@
     "demand": 1.25,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave3"
+    "source": "curated-bbts-wave3",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0366.JPG2_b099d4fb-1d1d-48c2-a175-b141b9fb713c.jpg?v=1781464387"
   },
   {
     "id": "s79-s7-17",
@@ -314570,9 +314839,12 @@
     "demand": 1.3,
     "tags": [
       "marvel",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_fbc84525ce44415181ff08595603ea92~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_fbc84525ce44415181ff08595603ea92~mv2.jpg"
   },
   {
     "id": "mlc-kitty-pryde",
@@ -325713,10 +325985,11 @@
       "sku-gtin",
       "sku-alias",
       "alias:toynk",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-densify",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-exclusive-seres-6-inch-action-figure-thing.jpg?v=1723134693",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_392c09b1e4f849708303aafee183e7e4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_392c09b1e4f849708303aafee183e7e4~mv2.jpg",
     "sku": "630509662593"
   },
   {
@@ -327165,9 +327438,11 @@
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave8"
+    "source": "curated-bbts-wave8",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0457/3561/products/DSC_6124_1.jpg?v=1665414482"
   },
   {
     "id": "sa7-sa-30",
@@ -327932,9 +328207,11 @@
       "jakks",
       "sonic",
       "nintendo",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave10"
+    "source": "curated-bbts-wave10",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN4016_3.jpg?v=1616859010"
   },
   {
     "id": "jak5-jak-metal-sonic",
@@ -328789,9 +329066,11 @@
     "tags": [
       "figma",
       "good-smile",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave10"
+    "source": "curated-bbts-wave10",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/4545784065068a.jpg?v=1734745602"
   },
   {
     "id": "fg2-tifa",
@@ -330319,10 +330598,11 @@
       "alias:staractionfigures",
       "alias:hasbro-pulse",
       "alias:toyarena",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-studios-10th-anniversary-series-6-inch-action-figure-red-skull-2.gif?v=1723124222",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_a7067c65de714c80b0819187d3f7a740~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a7067c65de714c80b0819187d3f7a740~mv2.webp",
     "sku": "630509682270"
   },
   {
@@ -330431,11 +330711,12 @@
       "sku:nerdzoic",
       "image-sku",
       "image-bake",
-      "imgsku:nerdzoic"
+      "imgsku:nerdzoic",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave3",
     "sku": "21630509794690",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0535/8125/0722/files/ProductListing-2026-04-28T000648.601.png?v=1777306014"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_da0471c79aa14e4e86df1993df5a2fca~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_da0471c79aa14e4e86df1993df5a2fca~mv2.jpg"
   },
   {
     "id": "hs10-hs-12",
@@ -334656,10 +334937,11 @@
       "alias:hasbro-pulse",
       "alias:legendztoys",
       "alias:nerdzoic",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-densify",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-x-men-animated-vhs-mr-sinister-5010993954698.jpg?v=1687541038",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_eb1ac2169f9b45d38eff1f1815d177ca~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_eb1ac2169f9b45d38eff1f1815d177ca~mv2.jpg",
     "sku": "5010993954698"
   },
   {
@@ -337388,10 +337670,11 @@
       "sku:cmdstore",
       "sku-gtin",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-bbts-wave3",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/hasbro-marvel-legends-action-figures-series-3-x3-colossus_image.gif?v=1723127293",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_149365ed836547528e9f4ecc9004aedd~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_149365ed836547528e9f4ecc9004aedd~mv2.jpg",
     "sku": "653569254287"
   },
   {
@@ -343396,9 +343679,11 @@
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave8"
+    "source": "curated-bbts-wave8",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0457/3561/products/DSC_0072.jpg?v=1649950599"
   },
   {
     "id": "storm-st-kazuya",
@@ -343792,9 +344077,11 @@
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave3"
+    "source": "curated-bbts-wave3",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN6786-445.jpg?v=1696837333"
   },
   {
     "id": "d14neca-pred-city-deluxe",
@@ -345074,9 +345361,12 @@
       "marvel",
       "legends",
       "baf",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-bbts-wave3"
+    "source": "curated-bbts-wave3",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_3c8a92769f1f49a185068e0500da3935~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_3c8a92769f1f49a185068e0500da3935~mv2.jpg"
   },
   {
     "id": "d14ml-thing-blue",
@@ -347984,11 +348274,12 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated-densify",
     "sku": "653569345107",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-action-figure-2-pack-wave-2-5-invisible-woman-human-torch_image.gif?v=1723127097"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_13b77a74a65441b3936b12671368ad9f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_13b77a74a65441b3936b12671368ad9f~mv2.jpg"
   },
   {
     "id": "d14ml-emma-hf",
@@ -351526,9 +351817,11 @@
     "tags": [
       "mafex",
       "medicom",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave8"
+    "source": "curated-bbts-wave8",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4530956472720a.webp?v=1785282541"
   },
   {
     "id": "koto6-koto-hg-19",
@@ -352206,10 +352499,12 @@
       "legends",
       "densify",
       "sku-bake",
-      "sku:cmdstore"
+      "sku:cmdstore",
+      "image-bake"
     ],
     "source": "curated-densify",
-    "sku": "5010996290243"
+    "sku": "5010996290243",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN7112_2_b701f041-e129-4598-a761-61368597d261.jpg?v=1643861255"
   },
   {
     "id": "d14ml-gorgon",
@@ -353534,9 +353829,11 @@
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave5"
+    "source": "curated-bbts-wave5",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN6801_3_65696afc-ccb7-4682-b43f-375117b37fb1.jpg?v=1619032477"
   },
   {
     "id": "d14neca-horror-ash-ult",
@@ -354317,9 +354614,12 @@
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_d600a3294fc442a3a67438984e0c34a3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d600a3294fc442a3a67438984e0c34a3~mv2.jpg"
   },
   {
     "id": "mlc-jean-jimlee",
@@ -355431,9 +355731,11 @@
     "demand": 1.55,
     "tags": [
       "neca",
-      "densify"
+      "densify",
+      "image-bake"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/UltimateJH3.jpg?v=1773857407"
   },
   {
     "id": "ms8-ms-05",
@@ -360305,9 +360607,11 @@
     "demand": 1.6,
     "tags": [
       "neca",
-      "densify"
+      "densify",
+      "image-bake"
     ],
-    "source": "curated-densify"
+    "source": "curated-densify",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0461.JPG2.jpg?v=1780150173"
   },
   {
     "id": "neca-jason",
@@ -361035,10 +361339,11 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:toyarena",
-      "alias:nerdzoic"
+      "alias:nerdzoic",
+      "imgsku:mephitsu"
     ],
     "source": "curated-densify",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-venom-series-baf-venompool-ghost-spider-5010993735501.jpg?v=1723114584",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_cd4a62fa201343fd9b1b159bb1bd9432~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cd4a62fa201343fd9b1b159bb1bd9432~mv2.jpg",
     "sku": "5010993735501"
   },
   {
@@ -362001,9 +362306,11 @@
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave5"
+    "source": "curated-bbts-wave5",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN6861_4_2255b767-6917-46a8-808d-c1e9ab6837e1.jpg?v=1619047438"
   },
   {
     "id": "neca3-ult-predator-city",
@@ -362841,7 +363148,8 @@
       "marvel",
       "legends",
       "baf",
-      "curated"
+      "curated",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave3"
   },
@@ -368017,10 +368325,11 @@
       "imgsku:toyarena",
       "sku:cmdstore",
       "sku-gtin",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "imgsku:mephitsu"
     ],
     "source": "curated",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-x-men-warlock-series-6-inch-action-figure-old-man-logan_image.gif?v=1705967589",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_d47f94ffe33e47bda6403371fee809d3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d47f94ffe33e47bda6403371fee809d3~mv2.jpg",
     "sku": "630509502257"
   },
   {
@@ -380945,10 +381254,11 @@
       "sku-alias",
       "alias:toyarena",
       "alias:indemandtoys",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "imgsku:mephitsu"
     ],
     "source": "curated-densify",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-retro-series-1-captain-america-5010993842513.jpg?v=1654809267",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_a224f88e2a324692a1a3b46b28da6858~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a224f88e2a324692a1a3b46b28da6858~mv2.jpg",
     "sku": "5010993842513"
   },
   {
@@ -383280,9 +383590,11 @@
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave8"
+    "source": "curated-bbts-wave8",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0457/3561/files/DSC_7371_1.jpg?v=1770822387"
   },
   {
     "id": "sa7-sa-13",
@@ -396319,9 +396631,11 @@
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave4"
+    "source": "curated-bbts-wave4",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN7718_3.JPG?v=1571439708"
   },
   {
     "id": "cm8-cm-02",
@@ -400422,9 +400736,11 @@
       "hasbro",
       "star-wars",
       "black-series",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave3"
+    "source": "curated-bbts-wave3",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0080-32.jpg?v=1768005035"
   },
   {
     "id": "bs3-bs-han-bespin",
@@ -402422,9 +402738,11 @@
     "tags": [
       "dc",
       "dcdirect",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-dc"
+    "source": "curated-dc",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN2795-32.jpg?v=1716507499"
   },
   {
     "id": "tn7-tn-33",
@@ -403701,9 +404019,11 @@
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave4"
+    "source": "curated-bbts-wave4",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN4286-4.jpg?v=1684205429"
   },
   {
     "id": "dcdclassic-new52-jl-cyborg",
@@ -403890,9 +404210,11 @@
     "tags": [
       "dc",
       "dcdirect",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-dc"
+    "source": "curated-dc",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN1019-2354.jpg?v=1703125925"
   },
   {
     "id": "tn7-tn-30",
@@ -415651,9 +415973,11 @@
     "tags": [
       "dc",
       "dcdirect",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-dc"
+    "source": "curated-dc",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN9970_5.jpg?v=1580272492"
   },
   {
     "id": "dcdclassic-x8-supergirl",
@@ -416229,9 +416553,11 @@
     "tags": [
       "dc",
       "dcdirect",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-dc"
+    "source": "curated-dc",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN3883-43.jpg?v=1686161919"
   },
   {
     "id": "dcdclassic-justice7-armored-superman",
@@ -417073,9 +417399,11 @@
       "dc",
       "dcdirect",
       "classic",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-dcdirect"
+    "source": "curated-dcdirect",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0978_5_r.jpg?v=1776027305"
   },
   {
     "id": "dcdclassic-sb4-lobo",
@@ -419318,9 +419646,11 @@
       "dc",
       "dcdirect",
       "classic",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-dcdirect"
+    "source": "curated-dcdirect",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN5224-4.jpg?v=1685133577"
   },
   {
     "id": "dcdclassic-justice3-ivy",
@@ -420976,9 +421306,11 @@
       "dc",
       "dcdirect",
       "classic",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-dcdirect"
+    "source": "curated-dcdirect",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN5276_6.jpg?v=1576103269"
   },
   {
     "id": "dcd-carrie-dkr",
@@ -425146,9 +425478,11 @@
       "toybiz",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave4"
+    "source": "curated-bbts-wave4",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN0837_4.jpg?v=1580969407"
   },
   {
     "id": "tb2-s5-jean",
@@ -426048,9 +426382,11 @@
       "dc",
       "dcdirect",
       "classic",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-dcdirect"
+    "source": "curated-dcdirect",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0144/1798/5584/products/download30.jpg?v=1640913695"
   },
   {
     "id": "dcdclassic-tt1-robin",
@@ -428486,9 +428822,11 @@
       "toybiz",
       "marvel",
       "vintage",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave7"
+    "source": "curated-bbts-wave7",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN7741-3.jpg?v=1722308320"
   },
   {
     "id": "dst-ms-cap",
@@ -429020,9 +429358,11 @@
       "toybiz",
       "marvel",
       "vintage",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave2"
+    "source": "curated-bbts-wave2",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/s-l1600_13_497b797f-9ed3-4151-8a87-79a3ba65da40.webp?v=1778347441"
   },
   {
     "id": "tb2-s1-hulk",
@@ -429039,9 +429379,11 @@
       "toybiz",
       "marvel",
       "vintage",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave2"
+    "source": "curated-bbts-wave2",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/s-l1600_37_75d12d4f-608f-4cf8-9dba-8bff639daddf.webp?v=1784535932"
   },
   {
     "id": "tb7-06",
@@ -431433,9 +431775,11 @@
     "tags": [
       "playmates",
       "tmnt",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave9"
+    "source": "curated-bbts-wave9",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0704-2.jpg?v=1766591314"
   },
   {
     "id": "pm5-pm-krang-cc",
@@ -436902,9 +437246,11 @@
       "tmnt",
       "playmates",
       "classic",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-playmates"
+    "source": "curated-playmates",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN9458-4.jpg?v=1669190830"
   },
   {
     "id": "pm-tmnt-classic-krang",
@@ -436921,9 +437267,11 @@
       "tmnt",
       "playmates",
       "classic",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-playmates"
+    "source": "curated-playmates",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN3303_3.JPG?v=1571439392"
   },
   {
     "id": "pm6-pm-krang",
@@ -437706,9 +438054,11 @@
     "tags": [
       "playmates",
       "tmnt",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave6"
+    "source": "curated-bbts-wave6",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0144/1798/5584/files/41vVuIDDL8L._AC.jpg?v=1700610426"
   },
   {
     "id": "pm-tmnt-classic-leo",
@@ -438643,9 +438993,11 @@
       "kenner",
       "super-powers",
       "batman",
-      "curated"
+      "curated",
+      "image-bake"
     ],
-    "source": "curated-bbts-wave10"
+    "source": "curated-bbts-wave10",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0546-3.jpg?v=1762716583"
   },
   {
     "id": "ksp-sinestro",

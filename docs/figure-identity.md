@@ -89,3 +89,11 @@ Shared helpers: `scripts/figure_identity.py`.
 - Comics / UPC workers are unrelated — do not touch those files for figure
   identity work.
 - **No Build Publish** for data-only identity bumps (Lyra publishes).
+
+## Mephitsu (multi-line photo + GTIN assist)
+
+Authorized collector DB (Wix). Primary identity remains **GTIN**; Mephitsu contributes
+front-card photos and assists GTIN fill via specialty-index join / checksummed OCR only.
+Generic crawler: `scripts/mephitsu_crawl.py` (see `docs/figure-sku-bake.md` Mephitsu pass).
+OCR accepts only `is_gtin_strict` (mod-10 check digit).
+

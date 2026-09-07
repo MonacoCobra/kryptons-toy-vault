@@ -124,3 +124,57 @@ touch `comic-upc-map.json` / LOCG caches — leave those files alone.
 **Also:** specialty Shopify plateau shops retained; Game/Apparel product_types skipped in infer.
 
 **Bake result:** 8596 → 8611 / 19079 (45.05% → 45.13%) primary sku; **GTIN primary** ~2009 → **2818**; listing→GTIN upgrades dominate the +809 assignments. Aliases attached ~10401 (529 figures tagged `alias:hasbro-pulse`). Index 40872 → 42541 (hasbro-pulse 1699: 109 GTIN + 1590 listing). Pulse contributed 21 GTIN primaries + listing aliases — never promoted listing over EAN.
+
+### Pass 2026-09-07 — Mephitsu Marvel Legends (GTIN + photos)
+
+**Source:** https://www.mephitsu.co.uk/marvel-legends (Shelby-authorized). Wix Thunderbolt site;
+per-figure dynamic pages + `MarvelLegends` CMS collection via
+`POST /_api/cloud-data/v1/items/query` (Authorization instance token scraped from any
+public item page; polite pagination ~0.5s).
+
+**Extraction:**
+- Metadata (title, year, wave, franchise/source, packaging, gallery/box/contents images)
+  from cloud-data — **no EAN/UPC text field** in the schema.
+- Package fronts often show Hasbro assort listing codes (`G2370 / G2031 ASST`); true
+  barcode/GTIN is image-only when present. OCR (`zbar` + tesseract) rarely decodes
+  barcodes on Mephitsu CDN shots; optional `--ocr` only accepts
+  `figure_identity.is_gtin_strict` (checksummed EAN-13/UPC-A).
+- GTINs for bake are resolved by joining Mephitsu name/wave → existing specialty
+  `product-sku-index` GTIN rows (high-confidence `score_pair`), never invented.
+
+**Tooling (generic multi-line):**
+- `scripts/mephitsu_crawl.py` — hub lines: Marvel Legends, Black Series, Hasbro
+  (GI Joe / Indy / TF Studio Series / …), McFarlane, NECA, Diamond Select, Doctor Who,
+  Star Trek, Super7, Jazwares. `--list-lines` / `--line` / `--all` / `--merge-index`.
+- `scripts/bake-mephitsu-ml.py` — ML oneshot match: GTIN assign/upgrade + empty image fill.
+- Caches: `src/data/figure-archive/mephitsu/<line>.json`.
+
+**This pass crawled:** Marvel Legends **1868** (all with images) + Black Series **999**
+(index merge only; BS bake deferred). Index 42541 → **45408** (+2867 mephitsu).
+
+**Hasbro ML oneshot (company=hasbro ML family):**
+| | before | after |
+|--|--|--|
+| GTIN primary | 423 | **433** (+10; 9 listing→GTIN upgrades) |
+| Listing primary | 208 | 199 |
+| Empty sku | 188 | 187 |
+| With image | 637 | **678** (+41 Mephitsu fills) |
+| Matched Mephitsu rows | — | 425 high-confidence |
+
+SKU-first rematch afterward: catalog images 9125 → **9200**; many ML photos swapped to
+Mephitsu front/box via GTIN join (`shop=mephitsu`).
+
+**D&W verify:** Cassandra Nova / X-23 / Deadpool / Wolverine Wave 1–2 match Mephitsu
+pages at score ≥55.5 with existing GTINs preserved (`5010996359605`, etc.).
+
+**Blockers / honest limits:**
+- No structured GTIN on Mephitsu — OCR barcode accuracy low on gallery shots.
+- Fuzzy enrich can propose GTINs onto Mephitsu cache for matching; oneshot only accepts
+  when row lacks GTIN and match is high-confidence (one GTIN → one figure).
+- CAPTCHA: none observed on cloud-data with page Authorization.
+- Comics / UPC / Build Publish: untouched.
+
+**Roadmap (next lines):** run `mephitsu_crawl.py --line black-series|gi-joe-classified|…`
+then line-specific bake (same GTIN-primary policy). Hasbro hub franchise filters cover
+Classified / Indy / Studio Series / Plasma.
+

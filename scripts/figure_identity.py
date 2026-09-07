@@ -61,6 +61,25 @@ def is_gtin(raw: Any) -> bool:
     return bool(s and _GTIN_RE.match(s))
 
 
+def gtin_checksum_ok(raw: Any) -> bool:
+    """Validate UPC-A / EAN-8 / EAN-13 / GTIN-14 check digit (mod-10)."""
+    s = clean_code(raw)
+    if not s or not _GTIN_RE.match(s):
+        return False
+    digits = [int(c) for c in s]
+    check = digits[-1]
+    body = digits[:-1]
+    total = 0
+    for i, d in enumerate(reversed(body)):
+        total += d * 3 if (i % 2 == 0) else d
+    return (10 - (total % 10)) % 10 == check
+
+
+def is_gtin_strict(raw: Any) -> bool:
+    """Length-shaped GTIN that also passes check digit — required for OCR accepts."""
+    return gtin_checksum_ok(raw)
+
+
 def is_listing_code(raw: Any) -> bool:
     """Hasbro/retailer listing / assort code — alias material, not canonical sku."""
     s = clean_code(raw)
