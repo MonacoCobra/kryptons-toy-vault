@@ -81,7 +81,27 @@ touch `comic-upc-map.json` / LOCG caches — leave those files alone.
 - cherrybombtoys / mintedstore / tokullectibles / actionfigureessentials — empty or weak `variant.sku`
 - actioncity — Hot Toys / blind-box dominant
 - notjusttoyz / popcultcha / brianstoys / thechosenprime / tfsource / diamondselect / Pulse/BBTS/EE/Mezco/McFarlane official/Hot Toys/threezero/Sideshow — 403/404/non-Shopify/blocked
-- sifi-toys — open JSON but page-1 AF brand infer too thin to trust without deeper cool-down pass
-- kitsap-comics-and-games — open JSON + SKUs on page1 but deep infer blocked by Shopify 429 this pass (deferred)
+- sifi-toys — open JSON but page-1 AF brand infer too thin to trust without deeper cool-down pass (later recovered as sifitoys)
+- kitsap-comics-and-games — open JSON + SKUs on page1 but deep infer blocked by Shopify 429 this pass (later recovered)
 
 **Bake result:** 8181 → 8476 / 19085 (42.87% → 44.41%), +295 assigned; index 38203 → 39920. New shop tags: collecticon 54, nerdzoic 35. Hasbro leftovers 619→508; NECA 270→229; McFarlane 277→256; Mattel 675→643.
+
+### Pass 2026-09-06 plateau (kitsap / sifitoys)
+**Added (verified open `products.json` + non-empty `variant.sku`):**
+- `kitsap` — https://www.kitsapcomics.com (AF aisle; Hasbro ML/BS/Classified/TF + McFarlane/Mattel; Games/Comics product_types skipped)
+- `sifitoys` — https://www.sifitoys.com (thin but honest; Mezco One:12 + Four Horsemen/McFarlane/Hasbro)
+
+**Infer harden (quality):** skip Games/Comics/supplies product_types; MotU Turtles of Grayskull stays Mattel (not Playmates); Unmatched/RPG/dice-set skip.
+
+**Probed and rejected this pass:**
+- pulse myshopify subdomain — left blocked (Pulse stays blocked)
+- 5ktoys — accessory/upgrade kits for Mezco, not figures
+- gameology / actioncitysg / travellingman / newburycomics — wrong mix or too thin AF
+- halloftoys — empty `variant.sku`
+- cherrybombtoys / tokullectibles — empty `variant.sku` (reconfirmed)
+- mezco/playmates/dcdirect first-party, BBTS/EE/Sideshow/Hot Toys/Figurerealm/etc. — 403/404/non-Shopify/blocked (reconfirmed)
+- kitsapcomicsandgames.com bare domain — DNS NXDOMAIN (use kitsapcomics.com)
+
+**Bake result:** 8476 → 8599 / 19085 (44.41% → 45.06%), +123 assigned; index 39920 → 40872. New shop tags: kitsap 23, sifitoys 7 (plus cascade rematches on prior specialty feeds). Hasbro leftovers 508→466; McFarlane 256→237; NECA 229→211; Mattel 643→630; DCD 752→749; Mezco 494→494; Super7 427→425; Playmates 293→289.
+
+**Honest plateau:** specialty Shopify with real `variant.sku` is largely exhausted for high-confidence leftover families (DCD / Mezco / Super7 / Playmates barely moved). No further deferred recoverables after this pass.

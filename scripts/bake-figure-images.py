@@ -463,6 +463,12 @@ RETAILER_FEEDS = [
     {"id": "collecticon", "baseUrl": "https://www.collecticontoys.com", "pageLimit": 250, "maxPages": 25},
     # nerdzoic: US specialty AF (~1k) — Hasbro/Mattel/McFarlane/NECA/Four Horsemen + Mezco One:12
     {"id": "nerdzoic", "baseUrl": "https://nerdzoic.com", "pageLimit": 250, "maxPages": 10},
+    # Verified open specialty (2026-09-06 plateau pass) — real variant.sku; AF via infer+RETAILER_SKIP
+    # kitsap: comics/games shop with strong AF aisle — Hasbro ML/BS/Classified/TF + McFarlane/NECA/Mattel
+    # (Games/Comics product_types skipped in infer; prior 429 deferred — recovered with cool-down)
+    {"id": "kitsap", "baseUrl": "https://www.kitsapcomics.com", "pageLimit": 250, "maxPages": 20},
+    # sifitoys: specialty AF — Mezco One:12 + Four Horsemen/McFarlane/Hasbro (thin but honest SKUs)
+    {"id": "sifitoys", "baseUrl": "https://www.sifitoys.com", "pageLimit": 250, "maxPages": 12},
 ]
 
 RETAILER_SKIP = re.compile(
@@ -480,7 +486,9 @@ RETAILER_SKIP = re.compile(
     r"costume|jumpsuit|hockey jersey|inspirit|"
     r"vinyl art|dunny|kidrobot|"
     r"comic book|graphic novel|\btpb\b|trade paperback|"
-    r"warhammer|games workshop|age of sigmar|citadel paint)\b",
+    r"warhammer|games workshop|age of sigmar|citadel paint|"
+    r"\bunmatched\b|hero deck|game master screen|rpg:|"
+    r"dice set)\b",
     re.I,
 )
 
@@ -492,6 +500,13 @@ def infer_retailer_company(p: dict) -> str | None:
     tags = " ".join(tag_list(p.get("tags")))
     blob = f"{vendor} {title} {ptype} {tags}"
     bl = blob.lower()
+    # Comic-shop / board-game product_types (kitsap etc.) — never AF SKU sources
+    pt = ptype.strip().lower()
+    if pt.startswith("games") or pt.startswith("comics") or pt in {
+        "book", "graphic novels", "novels", "sports cards", "posters and prints",
+        "supplies - game", "supplies - comic", "retailers sales tools",
+    }:
+        return None
     if RETAILER_SKIP.search(blob):
         return None
     # Specific lines first
@@ -563,9 +578,11 @@ def infer_retailer_company(p: dict) -> str | None:
         return "loyalsubjects"
     if re.search(r"\bplaymates\b", bl):
         return "playmates"
-    # TMNT / Exo-Squad without NECA/Super7/TLS cues → Playmates (AFAC-style titles)
+    # TMNT / Exo-Squad without NECA/Super7/TLS/Mattel MotU cues → Playmates
     if re.search(r"teenage mutant|\btmnt\b|ninja turtle|exo.?squad", bl) and not re.search(
-        r"\bneca\b|\bsuper7\b|loyal subjects|bst axn|mcfarlane|mondo", bl
+        r"\bneca\b|\bsuper7\b|loyal subjects|bst axn|mcfarlane|mondo|"
+        r"\bmattel\b|masters of the universe|motu|turtles of grayskull",
+        bl,
     ):
         return "playmates"
     if re.search(r"\bjakks\b", bl):
@@ -612,7 +629,7 @@ def fetch_retailer_products(feed: dict) -> list[dict]:
         out.extend(products)
         if len(products) < limit:
             break
-        time.sleep(0.35)
+        time.sleep(0.85)
     return out
 
 

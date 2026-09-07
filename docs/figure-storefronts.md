@@ -34,6 +34,8 @@ paginates **all** pages from these same shops (see `scripts/gen-figure-oneshot.p
 | Toynk (bake) | https://www.toynk.com | US specialty (noisy; skip bag clips/costumes) — SKU+image bake |
 | Collecticon (bake) | https://www.collecticontoys.com | US specialty Hasbro/McFarlane/NECA — SKU+image bake |
 | Nerdzoic (bake) | https://nerdzoic.com | US specialty Hasbro/Mattel/NECA/Four Horsemen/Mezco — SKU+image bake |
+| Kitsap Comics (bake) | https://www.kitsapcomics.com | Specialty AF aisle Hasbro/McFarlane/Mattel — SKU+image bake |
+| SiFi Toys (bake) | https://www.sifitoys.com | Specialty Mezco One:12 / Four Horsemen / Hasbro — SKU+image bake |
 
 ## Out of scope
 
@@ -47,7 +49,7 @@ still no stable public `products.json` we verified. **Image bake** may still fil
 Hasbro / Mezco One:12 / MAFEX / SHFiguarts / Playmates / JAKKS / Toy Biz /
 classic DC Direct / Loyal Subjects BST / Four Horsemen curated rows from specialty
 retailer Shopify catalogs (ToyArena, CmdStore, Planet AF, Cool Toy Den, AFCollector,
-Legendz Toys, shop.mattel, Solaris Japan, JB Hi-Fi, ActionFiguresAndComics, Japan Figure, Star Action Figures, ToyDojo, Toynk, Collecticon, Nerdzoic) with high-confidence vendor/title→company mapping only. Kenner Super
+Legendz Toys, shop.mattel, Solaris Japan, JB Hi-Fi, ActionFiguresAndComics, Japan Figure, Star Action Figures, ToyDojo, Toynk, Collecticon, Nerdzoic, Kitsap Comics, SiFi Toys) with high-confidence vendor/title→company mapping only. Kenner Super
 Powers / Mattel DCUC / JLU leftovers stay placeholders without honest feeds.
 
 ## SKU bake
