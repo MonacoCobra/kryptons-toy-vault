@@ -432,6 +432,29 @@ def fix_elektra_aliases() -> list[str]:
     return drop_figure_aliases("ml5-ml-elektra-movie-dpw")
 
 
+
+def clear_image_overlays(cleared_actions: list[dict]) -> int:
+    """Drop figure-image-urls.json entries for cleared mismatch ids (oneshot clear is not enough)."""
+    path = ROOT / "src/data/figure-image-urls.json"
+    if not path.exists():
+        return 0
+    urls = json.loads(path.read_text())
+    n = 0
+    for a in cleared_actions:
+        fid = a.get("figureId")
+        if fid and fid in urls:
+            del urls[fid]
+            n += 1
+        bad = a.get("clearedImageUrl")
+        if bad:
+            for k, v in list(urls.items()):
+                if v == bad:
+                    del urls[k]
+                    n += 1
+    if n:
+        path.write_text(json.dumps(urls, indent=2, ensure_ascii=False) + "\n")
+    return n
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--apply", action="store_true", help="Clear high-confidence mismatches")
@@ -564,6 +587,8 @@ def main() -> int:
         elektra_aliases_removed = fix_elektra_aliases()
 
         ARCHIVE_JSON.write_text(json.dumps(rows, indent=2, ensure_ascii=False) + "\n")
+        overlay_n = clear_image_overlays(cleared)
+        print(f"cleared image overlays: {overlay_n}")
         sync_sku_map(rows)
 
     report = {
