@@ -3,11 +3,11 @@
   "source": "mephitsu",
   "line": "marvel-legends",
   "collectionId": "MarvelLegends",
-  "fetchedAt": "2026-09-07T17:47:37.581578+00:00",
+  "fetchedAt": "2026-09-07T18:35:45.052530+00:00",
   "count": 1868,
   "withImage": 1868,
   "withGtin": 971,
-  "withListing": 0,
+  "withListing": 5,
   "products": [
     {
       "id": "mephitsu:marvel-legends:9cb3b5e5-70fe-4c5e-b862-8bae7991ce76",
@@ -27,7 +27,7 @@
       "title": "Cannonball — Marvel Legends Rerelease · 2026 · Comic",
       "handle": "9cb3b5e5-70fe-4c5e-b862-8bae7991ce76",
       "sku": null,
-      "listingSku": null,
+      "listingSku": "F4737",
       "barcode": null,
       "productId": "9cb3b5e5-70fe-4c5e-b862-8bae7991ce76",
       "imageUrl": "https://static.wixstatic.com/media/adc447_af72aa6e637741639db77c5971dbfd42~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_af72aa6e637741639db77c5971dbfd42~mv2.jpg",
@@ -75,7 +75,7 @@
       "title": "Domino — Marvel Legends Rerelease · 2026 · Comic",
       "handle": "5129186b-aebb-4c47-854c-97f15dbde6d4",
       "sku": "5010993723768",
-      "listingSku": null,
+      "listingSku": "F4737",
       "barcode": "5010993723768",
       "productId": "5129186b-aebb-4c47-854c-97f15dbde6d4",
       "imageUrl": "https://static.wixstatic.com/media/adc447_af72aa6e637741639db77c5971dbfd42~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_af72aa6e637741639db77c5971dbfd42~mv2.jpg",
@@ -121,7 +121,7 @@
       "title": "Rictor — Marvel Legends Rerelease · 2026 · Comic",
       "handle": "0f8c0173-230f-4d66-a66c-0d726f59b1ac",
       "sku": null,
-      "listingSku": null,
+      "listingSku": "F4737",
       "barcode": null,
       "productId": "0f8c0173-230f-4d66-a66c-0d726f59b1ac",
       "imageUrl": "https://static.wixstatic.com/media/adc447_af72aa6e637741639db77c5971dbfd42~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_af72aa6e637741639db77c5971dbfd42~mv2.jpg",
@@ -167,7 +167,7 @@
       "title": "Spider-Man (Animated Series) — Marvel Legends Rerelease · 2026 · Comic",
       "handle": "b5ca8d74-4003-4526-a697-dcf2d335dae5",
       "sku": "5010994171391",
-      "listingSku": null,
+      "listingSku": "F3477",
       "barcode": "5010994171391",
       "productId": "b5ca8d74-4003-4526-a697-dcf2d335dae5",
       "imageUrl": "https://static.wixstatic.com/media/adc447_6580b40b5af8446687f97b076492260a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6580b40b5af8446687f97b076492260a~mv2.jpg",
@@ -208,7 +208,7 @@
       "title": "Lizard — Retro Carded Re-Release · 2027 · Comic",
       "handle": "5f7190ed-bbd2-422d-9112-a28d50f7c7a5",
       "sku": "5010994158514",
-      "listingSku": null,
+      "listingSku": "F3461",
       "barcode": "5010994158514",
       "productId": "5f7190ed-bbd2-422d-9112-a28d50f7c7a5",
       "imageUrl": "https://static.wixstatic.com/media/adc447_7971c9d35eb74771a06640674b6a61cb~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7971c9d35eb74771a06640674b6a61cb~mv2.jpg",
@@ -75377,5 +75377,5 @@
       "rawGalleryCount": 3
     }
   ],
-  "enrichedAt": "2026-09-07T17:51:38.356473+00:00"
+  "enrichedAt": "2026-09-07T18:38:16.493961+00:00"
 }

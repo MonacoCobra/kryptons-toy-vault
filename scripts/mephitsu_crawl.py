@@ -117,7 +117,7 @@ LINES: dict[str, dict[str, Any]] = {
     },
     "diamond-select": {
         "collectionId": "DiamondSelect",
-        "company": "diamond-select",
+        "company": "diamondselect",
         "line": "Diamond Select",
         "authUrl": None,
         "sitemapHint": "dynamic-diamond-select",
@@ -298,16 +298,23 @@ def hasbro_line_from_item(item: dict, default: str | None) -> str:
     if default:
         return default
     fr = str(item.get("franchise") or "")
-    series = str(item.get("seriesOrWave") or "")
+    series = str(item.get("seriesOrWave") or item.get("wave") or "")
     blob = f"{fr} {series}".lower()
     if "gi joe" in blob or "g.i. joe" in blob or "classified" in blob:
         return "G.I. Joe Classified Series"
     if "indiana" in blob:
         return "Indiana Jones Adventure Series"
-    if "studio series" in blob:
+    if "studio series" in blob or (
+        "transform" in blob
+        and re.search(r"\b(deluxe|voyager|leader|titan|core)\s+class\b", series, re.I)
+    ):
         return "Transformers Studio Series"
     if "plasma" in blob:
         return "Transformers Plasma"
+    if "masterpiece" in blob and "transform" in blob:
+        return "Transformers Masterpiece"
+    if "power ranger" in blob or "lightning" in blob:
+        return "Lightning Collection"
     if "transformer" in blob:
         return "Transformers"
     if fr:
@@ -678,6 +685,7 @@ def main() -> int:
         keys = [
             "marvel-legends",
             "black-series",
+            "hasbro",
             "gi-joe-classified",
             "indiana-jones",
             "transformers",
@@ -687,6 +695,7 @@ def main() -> int:
             "doctor-who",
             "star-trek",
             "super7",
+            "jazwares",
         ]
     else:
         keys = args.lines or ["marvel-legends"]
