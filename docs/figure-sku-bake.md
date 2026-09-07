@@ -178,3 +178,14 @@ pages at score ≥55.5 with existing GTINs preserved (`5010996359605`, etc.).
 then line-specific bake (same GTIN-primary policy). Hasbro hub franchise filters cover
 Classified / Indy / Studio Series / Plasma.
 
+## SKU/title mismatch audit
+
+```bash
+python3 scripts/audit-figure-sku-mismatches.py              # dry-run report
+python3 scripts/audit-figure-sku-mismatches.py --apply       # clear high-confidence mismatches
+python3 scripts/audit-figure-sku-mismatches.py --apply --rematch  # optional; prefers empty over wrong
+```
+
+Joins every oneshot GTIN primary to `product-sku-index` and flags title disagreements
+(multipack vs single, hard theme conflicts, score_reject+char_missing). Soft/borderline
+hits are reported only. Report: `src/data/figure-archive/sku-mismatch-audit.json`.
