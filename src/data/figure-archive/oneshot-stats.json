@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05",
+  "generatedAt": "2026-09-07",
   "priorSeedAndInjected": 426,
   "shopifyRaw": {
     "reused": 3924
@@ -10,15 +10,15 @@
   "shopifyAdded": 3924,
   "curatedRaw": 17387,
   "curatedAdded": 15562,
-  "archiveTotal": 19079,
+  "archiveTotal": 19341,
   "projectedFIGURES": 19912,
   "byCompany": {
     "super7": 2790,
-    "hasbro": 2282,
-    "mattel": 1263,
+    "hasbro": 2278,
+    "mattel": 1477,
     "neca": 928,
     "dcdirect": 907,
-    "mcfarlane": 716,
+    "mcfarlane": 762,
     "mezco": 685,
     "bossfight": 437,
     "shfiguarts": 409,
@@ -126,7 +126,7 @@
     "funko": 39,
     "robosen": 15
   },
-  "withImageUrl": 7520,
+  "withImageUrl": 9311,
   "dedupeRemoved": 401,
   "dedupedAt": "2026-09-06T03:01:42.441814+00:00",
   "imageCoveragePct": 34.93,
@@ -135,5 +135,9 @@
   "skuCoveragePct": 45.13,
   "skuBakedAt": "2026-09-07T16:24:42.997773+00:00",
   "identityCollapsed": 6,
-  "identityCollapsedAt": "2026-09-07T15:51:19.610670+00:00"
+  "identityCollapsedAt": "2026-09-07T15:51:19.610670+00:00",
+  "mattelDcGapAdded": 262,
+  "mattelDcGapSkipped": {
+    "key": 4
+  }
 }
