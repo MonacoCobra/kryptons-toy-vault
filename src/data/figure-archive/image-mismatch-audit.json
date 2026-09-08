@@ -1,426 +1,699 @@
 {
-  "auditedAt": "2026-09-08T16:10:38.023617+00:00",
+  "auditedAt": "2026-09-08T21:53:57.478553+00:00",
   "mode": "apply",
   "refill": false,
   "counts": {
-    "oneshotRows": 23915,
-    "auditedWithImage": 13717,
-    "highMismatches": 18,
-    "softMismatches": 534,
-    "cleared": 18,
+    "oneshotRows": 24139,
+    "auditedWithImage": 13783,
+    "highMismatches": 28,
+    "softMismatches": 536,
+    "cleared": 28,
     "refilled": 0,
-    "overlayDropped": 3,
-    "overlayRemaining": 13659
+    "overlayDropped": 4,
+    "overlayRemaining": 13655
   },
   "reasonCounts": {
-    "product_multipack_vs_single": 15,
-    "score_pair_reject": 6,
-    "char_missing:aquaman": 1,
-    "char_missing:batman": 1,
-    "char_missing:putty": 1
+    "product_multipack_vs_single": 27,
+    "score_pair_reject": 2,
+    "char_missing:ghost": 1,
+    "char_missing:baxter": 1
   },
   "cleared": [
     {
+      "figureId": "ml5-ml-x97-gambit",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_1ec29bda09964992a1ab7286d3dac4e8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1ec29bda09964992a1ab7286d3dac4e8~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single",
+        "url:product_multipack_vs_single"
+      ],
+      "name": "Gambit",
+      "subtitle": "X-Men '97 Legends",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_1ec29bda09964992a1ab7286d3dac4e8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1ec29bda09964992a1ab7286d3dac4e8~mv2.jpg",
+        "gtin": "64725004",
+        "gtinScore": 42.0,
+        "gtinTitle": "Marvel Legends Retro 6 Inch Action Figure X-Men '97 Wave 1 - Set of 4 Magneto Gambit Bishop Storm",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 48.0,
+        "urlBestTitle": "Gambit — X-Men '97 Twin Packs · 2025 · Animated and TV",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      }
+    },
+    {
+      "figureId": "ml5-ml-valkyrie",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_cf123fdb28ab46f2a0ff29d71159c553~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cf123fdb28ab46f2a0ff29d71159c553~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Valkyrie",
+      "subtitle": "Thor",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_cf123fdb28ab46f2a0ff29d71159c553~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cf123fdb28ab46f2a0ff29d71159c553~mv2.jpg",
+        "gtin": "653569530664",
+        "gtinScore": 24.5,
+        "gtinTitle": "Marvel Legends 6 Inch Action Figure 2-Pack Exclusive - Valkyrie vs Green Hulk",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 48.0,
+        "urlBestTitle": "Valkyrie — Endgame Thor BAF WAve · 2019 · Marvel Movies & TV",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
       "figureId": "sf-neca-store-teenage-mutant-ninja-turtles-1990-movie-casey-jones-with-dirt-bike",
       "clearedOneshot": true,
-      "clearedOverlay": true,
-      "clearedImageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/54514_UNP_6.jpg?v=1742857086",
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_a2255f77f39f40f38077adcbfa284147~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a2255f77f39f40f38077adcbfa284147~mv2.jpg",
       "reasons": [
         "gtin:product_multipack_vs_single"
       ],
       "name": "Teenage Mutant Ninja Turtles (1990 Movie)",
       "subtitle": "Casey Jones with Dirt Bike 7\" Scale Action Figure",
       "evidence": {
-        "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/54514_UNP_6.jpg?v=1742857086",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_a2255f77f39f40f38077adcbfa284147~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a2255f77f39f40f38077adcbfa284147~mv2.jpg",
         "gtin": "634482541203",
         "gtinScore": 12.9,
         "gtinTitle": "Teenage Mutant Ninja Turtles 7 Inch Action Figure 1980 Cartoon 2-Pack - Casey Jones & Foot Soldier",
         "gtinShop": "cmdstore",
-        "urlBestScore": 42.0,
-        "urlBestTitle": "Teenage Mutant Ninja Turtles (1990 Movie) - Casey Jones with Dirt Bike 7\" Scale Action Figure",
-        "urlBestShop": "neca-store",
+        "urlBestScore": 22.4,
+        "urlBestTitle": "Casey Jones with Dirt Bike — Walmart (US) · 2024 · Teenage Mutant Ninja Turtles",
+        "urlBestShop": "mephitsu",
         "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "ml4-omega-red",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_9e6efd90de7f471384902ba6bbc8ecc5~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9e6efd90de7f471384902ba6bbc8ecc5~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Omega Red",
+      "subtitle": "Classic",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_9e6efd90de7f471384902ba6bbc8ecc5~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9e6efd90de7f471384902ba6bbc8ecc5~mv2.jpg",
+        "gtin": "5010996320513",
+        "gtinScore": 28.5,
+        "gtinTitle": "Marvel Legends Gamerverse 6 Inch Action Figure 2-Pack - War Machine vs Omega Red",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 34.5,
+        "urlBestTitle": "Omega Red — Walmart (US) / Fan Channel · 2025 · Gamerverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      }
+    },
+    {
+      "figureId": "ml6-ml-corvus",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_e7f89c49517942a783f074e20dcca785~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e7f89c49517942a783f074e20dcca785~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Corvus Glaive",
+      "subtitle": "Wave6",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_e7f89c49517942a783f074e20dcca785~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e7f89c49517942a783f074e20dcca785~mv2.jpg",
+        "gtin": "630509794690",
+        "gtinScore": 25.5,
+        "gtinTitle": "Marvel Legends Infinite 6 Inch Action Figure 2-Pack Series - Loki VS Corvus Glaive Exclusive",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 39.5,
+        "urlBestTitle": "Corvus Glaive — Amazon · 2020 · Marvel Movies & TV",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 5
+      }
+    },
+    {
+      "figureId": "ml6-ml-wong-w6",
+      "clearedOneshot": true,
+      "clearedOverlay": true,
+      "clearedImageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996246578o.jpg?v=1730422997",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Wong",
+      "subtitle": "Wave6",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996246578o.jpg?v=1730422997",
+        "gtin": "5010996246578",
+        "gtinScore": 28.5,
+        "gtinTitle": "Marvel Legends Doctor Strange 6 Inch Action Figure 2-Pack - Doctor Strange with Wong & Bats",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 28.5,
+        "urlBestTitle": "Marvel Legends Doctor Strange and Wong & Bats Action Figure",
+        "urlBestShop": "toyarena",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "mlc-gladiator",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_802eb1de94264a74ad308f35e0cc22c2~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_802eb1de94264a74ad308f35e0cc22c2~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Gladiator",
+      "subtitle": "Shi'ar Imperial Guard",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_802eb1de94264a74ad308f35e0cc22c2~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_802eb1de94264a74ad308f35e0cc22c2~mv2.jpg",
+        "gtin": "5010996282866",
+        "gtinScore": 29.75,
+        "gtinTitle": "Marvel Legends X-Men 6 Inch Action Figure 2-Pack - Deathbird and Gladiator",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 35.75,
+        "urlBestTitle": "Gladiator — Fan Channel & Amazon · 2025 · Comic",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
       }
     },
     {
       "figureId": "joec-classified-tripwire",
       "clearedOneshot": true,
-      "clearedOverlay": true,
-      "clearedImageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996233929z.jpg?v=1722551708",
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_cf0029b539a24f51a2381c9e72f83c73~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cf0029b539a24f51a2381c9e72f83c73~mv2.jpg",
       "reasons": [
         "gtin:product_multipack_vs_single"
       ],
       "name": "Tripwire",
       "subtitle": "Classified Series",
       "evidence": {
-        "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996233929z.jpg?v=1722551708",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_cf0029b539a24f51a2381c9e72f83c73~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cf0029b539a24f51a2381c9e72f83c73~mv2.jpg",
         "gtin": "5010996233929",
         "gtinScore": 42.0,
         "gtinTitle": "G.I. Joe Classified 6 Inch Action Figure Tiger Force 2-Pack - (Roadblock - Tripwire - M.A.C.L.E.O.D)",
         "gtinShop": "cmdstore",
+        "urlBestScore": 48.0,
+        "urlBestTitle": "Tripwire — Hasbro Pulse · 2023 · GI Joe",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "ml6-ml-hela-w6",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_ffb1878511334fd2895fc047091a85a5~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ffb1878511334fd2895fc047091a85a5~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Hela",
+      "subtitle": "Wave6",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_ffb1878511334fd2895fc047091a85a5~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ffb1878511334fd2895fc047091a85a5~mv2.jpg",
+        "gtin": "630509833627",
+        "gtinScore": 28.5,
+        "gtinTitle": "Marvel Legends Studios 6 Inch Action Figure 2-Pack Series - Skurge & Hela",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 34.5,
+        "urlBestTitle": "Hela — \"Best of\" MCU Gladiator Hulk Wave · 2018 · Marvel Movies & TV",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "mlc-void-sentry",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_3fe75076f37b40aeae37e97979419225~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_3fe75076f37b40aeae37e97979419225~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "The Void",
+      "subtitle": "Sentry",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_3fe75076f37b40aeae37e97979419225~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_3fe75076f37b40aeae37e97979419225~mv2.jpg",
+        "gtin": "5010996407276",
+        "gtinScore": 24.5,
+        "gtinTitle": "Marvel Legends Thunderbolts 6 Inch Action Figure 2-Pack - Valentina Allegra de Fontaine & The Void (Pre-Order Ships Sept. 2026)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 30.5,
+        "urlBestTitle": "The Void — Fan Channel Exclusive · 2026 · Marvel Movies & TV",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      }
+    },
+    {
+      "figureId": "ml6-ml-sharon-carter",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_c3f1832880c04235890a3da559d549a3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c3f1832880c04235890a3da559d549a3~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Sharon Carter",
+      "subtitle": "Wave6",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_c3f1832880c04235890a3da559d549a3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c3f1832880c04235890a3da559d549a3~mv2.jpg",
+        "gtin": "5010996222534",
+        "gtinScore": 39.5,
+        "gtinTitle": "Marvel Legends Shield 6 Inch Action Figure 3-Pack Box Set - Dum Dum - Nick Fury - Sharon Carter",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 39.5,
+        "urlBestTitle": "Sharon Carter — Fan Channel · 2024 · Comic",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 3
+      }
+    },
+    {
+      "figureId": "ml6-ml-silk",
+      "clearedOneshot": true,
+      "clearedOverlay": true,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_ed75018601c84846a766ea1a3217231c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ed75018601c84846a766ea1a3217231c~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Silk",
+      "subtitle": "Wave6",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_ed75018601c84846a766ea1a3217231c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ed75018601c84846a766ea1a3217231c~mv2.jpg",
+        "gtin": "5010994154967",
+        "gtinScore": 28.5,
+        "gtinTitle": "Marvel Legends Spider-Man 6 Inch Action Figure 2-Pack Exclusive - Silk and Doctor Octopus (Shelf Wear packaging)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 34.5,
+        "urlBestTitle": "Silk — Amazon, Spider-Man 60th Anniversary · 2022 · Comic",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      }
+    },
+    {
+      "figureId": "ml6-ml-sabretooth-aos",
+      "clearedOneshot": true,
+      "clearedOverlay": true,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_1ceb2f6f0faa4459aa87a4fb60947bb1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1ceb2f6f0faa4459aa87a4fb60947bb1~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Sabretooth",
+      "subtitle": "Age of Apocalypse Wave6",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_1ceb2f6f0faa4459aa87a4fb60947bb1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1ceb2f6f0faa4459aa87a4fb60947bb1~mv2.jpg",
+        "gtin": "5010996202086",
+        "gtinScore": 24.5,
+        "gtinTitle": "Marvel Legends X-Men 6 Inch Action Figure 50th Anniversary 2-Pack - Logan vs Sabretooth",
+        "gtinShop": "cmdstore",
         "urlBestScore": 42.0,
-        "urlBestTitle": "Hasbro G.I. Joe Classified Series #126 Tiger Force Roadblock, Tripwire and M.A.C.L.E.O.D Action Figure",
+        "urlBestTitle": "Sabretooth — Age of Apocalypse Wave 2 · 2021 · Comic",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "mlc-morbius-classic2",
+      "clearedOneshot": true,
+      "clearedOverlay": true,
+      "clearedImageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/fe82fd2bd1ec879034a2d0010547fd28.100.jpg?v=1571609221",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Morbius",
+      "subtitle": "Classic",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/fe82fd2bd1ec879034a2d0010547fd28.100.jpg?v=1571609221",
+        "gtin": "5010996145994",
+        "gtinScore": 28.5,
+        "gtinTitle": "Marvel Legends Spider-Man 6 Inch Action Figure 2-Pack Exclusive - 6 Arm Spider-Man & Morbius",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 28.5,
+        "urlBestTitle": "Marvel Legends Series: Villains Of The Night: Morbius",
         "urlBestShop": "toyarena",
         "urlProductCount": 1
       }
     },
     {
-      "figureId": "mf8-mf-35",
+      "figureId": "mlc-sersi",
       "clearedOneshot": true,
       "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_4538569caba640fbb62f2c41c6f832c9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_4538569caba640fbb62f2c41c6f832c9~mv2.jpg",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Harley Quinn",
-      "subtitle": "DC Multiverse Gold Label",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_4538569caba640fbb62f2c41c6f832c9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_4538569caba640fbb62f2c41c6f832c9~mv2.jpg",
-        "gtin": "787926177268",
-        "gtinScore": -1.0,
-        "gtinTitle": "DC Direct Batman The Animated Series 7 Inch Action Figure 2-Pack Exclusive - Harley Quinn and The Joker Gold Label",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 53.0,
-        "urlBestTitle": "Harley Quinn — Gold Label GameStop · 2026 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      }
-    },
-    {
-      "figureId": "d14mcf-atom-smasher-mega",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp",
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_0bd6b4febca341db9bd24d38ea2f640d~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0bd6b4febca341db9bd24d38ea2f640d~mv2.jpg",
       "reasons": [
         "gtin:product_multipack_vs_single"
       ],
-      "name": "Atom Smasher",
-      "subtitle": "Megafig",
+      "name": "Sersi",
+      "subtitle": "Eternals",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp",
-        "gtin": "787926173482",
-        "gtinScore": 21.5,
-        "gtinTitle": "DC Multiverse JSA Black Vengeance 7 Inch Action Figure 2-Pack - Atom Smasher vs. The Spectre",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_0bd6b4febca341db9bd24d38ea2f640d~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0bd6b4febca341db9bd24d38ea2f640d~mv2.jpg",
+        "gtin": "5010996142573",
+        "gtinScore": 24.5,
+        "gtinTitle": "Marvel Legends 60th Anniversary 6 Inch Action Figure 2-Pack Exclusive - Black Knight & Sersi",
         "gtinShop": "cmdstore",
-        "urlBestScore": 53.0,
-        "urlBestTitle": "Atom Smasher — Black Adam Wave 1 · 2022 · DC Multiverse",
+        "urlBestScore": 30.5,
+        "urlBestTitle": "Sersi — The Avengers 60th Anniversary · 2023 · Comic",
         "urlBestShop": "mephitsu",
-        "urlProductCount": 9
+        "urlProductCount": 2
       }
     },
     {
-      "figureId": "bsc-b2emo",
+      "figureId": "d14ml-ned-nwh",
       "clearedOneshot": true,
       "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_d43060141ac74f3ab99ff62c89525b98~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d43060141ac74f3ab99ff62c89525b98~mv2.jpg",
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_e267a33a0d4648a6a76d0995f9687585~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e267a33a0d4648a6a76d0995f9687585~mv2.jpg",
       "reasons": [
         "gtin:product_multipack_vs_single"
       ],
-      "name": "B2EMO",
-      "subtitle": "Andor",
+      "name": "Ned Leeds",
+      "subtitle": "No Way Home",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_d43060141ac74f3ab99ff62c89525b98~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d43060141ac74f3ab99ff62c89525b98~mv2.jpg",
-        "gtin": "195166188980",
-        "gtinScore": 48.0,
-        "gtinTitle": "Star Wars The Black Series 6 Inch Action Figure 2-Pack Exclusive - B2EMO & Cassian Andor",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 48.0,
-        "urlBestTitle": "B2EMO — Exclusive · 2022 · Andor",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      }
-    },
-    {
-      "figureId": "mcf3-mcf-doomsday-gl",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_6b0c0ddbc4404ac58fdf8296acb36cf4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6b0c0ddbc4404ac58fdf8296acb36cf4~mv2.jpg",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Doomsday",
-      "subtitle": "Gold Label",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_6b0c0ddbc4404ac58fdf8296acb36cf4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6b0c0ddbc4404ac58fdf8296acb36cf4~mv2.jpg",
-        "gtin": "787926170894",
-        "gtinScore": 42.0,
-        "gtinTitle": "DC Multiverse 7 Inch Action Figure 2-Pack Exclusive - Superman vs Doomsday Gold Label",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 48.0,
-        "urlBestTitle": "Doomsday — Gold Label McFarlane Store · 2026 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      }
-    },
-    {
-      "figureId": "bs5-bs-grogu",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_021fe6a919a84603a463add35f38b534~mv2.jpg",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Grogu",
-      "subtitle": "The Mandalorian",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_021fe6a919a84603a463add35f38b534~mv2.jpg",
-        "gtin": "5010994172640",
-        "gtinScore": 48.0,
-        "gtinTitle": "Star Wars The Black Series 6 Inch Action Figure 3-Pack Exclusive - The Mandalorian - Ahsoka Tano - Grogu",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 48.0,
-        "urlBestTitle": "Grogu — Galaxy Collection Special · 2026 · The Mandalorian and Grogu",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      }
-    },
-    {
-      "figureId": "d14mcf-batman-tas",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_f3bbc31b1b83463881d02c3b6bd99d4e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f3bbc31b1b83463881d02c3b6bd99d4e~mv2.jpg",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Batman",
-      "subtitle": "Animated Series Wave 1",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_f3bbc31b1b83463881d02c3b6bd99d4e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f3bbc31b1b83463881d02c3b6bd99d4e~mv2.jpg",
-        "gtin": "787926177657",
-        "gtinScore": -1.0,
-        "gtinTitle": "DC Direct The New Batman Adventures 6 Inch Action Figure Wave 4 - Set of 3 (Scarecrow - Riddler - Batman)",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 34.5,
-        "urlBestTitle": "Batman — Vault Collection Wave 1 · 2026 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      }
-    },
-    {
-      "figureId": "mf8-mf-14",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_e0b9d363c07f4b3db18abdff07ae3bf8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e0b9d363c07f4b3db18abdff07ae3bf8~mv2.jpg",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Spawn",
-      "subtitle": "Spawn Gunslinger",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_e0b9d363c07f4b3db18abdff07ae3bf8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e0b9d363c07f4b3db18abdff07ae3bf8~mv2.jpg",
-        "gtin": "787926901573",
-        "gtinScore": 42.0,
-        "gtinTitle": "Spawn 7 Inch Action Figure 2-Pack Exclusive - Gunslinger with Horse",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 42.0,
-        "urlBestTitle": "Gunslinger Spawn & Horse — Gamestop (US) · 2022 · Spawn",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      }
-    },
-    {
-      "figureId": "mcfgap-aquaman-baf-throne",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_b5a2630156ac4de68a52f927b156abd8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b5a2630156ac4de68a52f927b156abd8~mv2.jpg",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:char_missing:aquaman"
-      ],
-      "name": "Aquaman",
-      "subtitle": "Build-A Aquaman Throne",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_b5a2630156ac4de68a52f927b156abd8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b5a2630156ac4de68a52f927b156abd8~mv2.jpg",
-        "gtin": "787926156799",
-        "gtinScore": -1.0,
-        "gtinTitle": "DC Multiverse JLA 7 Inch Action Figure BAF Plastic Man - Green Lantern John Stewart",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 34.33,
-        "urlBestTitle": "JLA Aquaman 'Platinum' — Platinum Edition JLA Plastic Man Build-a Wave · 2024 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      }
-    },
-    {
-      "figureId": "neca2-tmnt-ace-duck",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_ee66c9fd89ca42e7b8e565a5c9aecedf~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ee66c9fd89ca42e7b8e565a5c9aecedf~mv2.jpg",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Ace Duck",
-      "subtitle": "Cartoon",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_ee66c9fd89ca42e7b8e565a5c9aecedf~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ee66c9fd89ca42e7b8e565a5c9aecedf~mv2.jpg",
-        "gtin": "634482542262",
-        "gtinScore": 47.0,
-        "gtinTitle": "Teenage Mutant Ninja Turtles 1990 Cartoon 7 Inch Action Figure 2-Pack - Ace Duck & Mutagen Man (Sub-Standard Packaging)",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_e267a33a0d4648a6a76d0995f9687585~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e267a33a0d4648a6a76d0995f9687585~mv2.jpg",
+        "gtin": "5010994153755",
+        "gtinScore": 29.5,
+        "gtinTitle": "Marvel Legends Spider-Man 6 Inch Action Figure Movie 2-Pack - Ned Leeds & Peter Parker",
         "gtinShop": "cmdstore",
         "urlBestScore": 35.5,
-        "urlBestTitle": "Ace Duck — Walmart (US) · 2025 · Teenage Mutant Ninja Turtles",
+        "urlBestTitle": "Ned Leeds — Spider-Man 60th Anniversary · 2022 · Marvel Movies & TV",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      }
+    },
+    {
+      "figureId": "ml3-ml-strange-surfer",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_bd5efc9e3d754a449e96f1b25393f38a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_bd5efc9e3d754a449e96f1b25393f38a~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Doctor Strange",
+      "subtitle": "Surfer BAF Wave",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_bd5efc9e3d754a449e96f1b25393f38a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_bd5efc9e3d754a449e96f1b25393f38a~mv2.jpg",
+        "gtin": "5010993791170",
+        "gtinScore": 29.5,
+        "gtinTitle": "Marvel Legends Doctor Strange 6 Inch Action Figure BAF Rintrah - Set of 7 (Build-A-Figure Rintrah)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 43.5,
+        "urlBestTitle": "Doctor Strange — Rintrah BAF Wave · 2022 · Marvel Movies & TV",
         "urlBestShop": "mephitsu",
         "urlProductCount": 1
       }
     },
     {
-      "figureId": "mcfdc-batman-arkham-city",
+      "figureId": "d14ml-psylocke-kw",
       "clearedOneshot": true,
       "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_dfbb7199e90a497a93d5c3138fca38c0~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_dfbb7199e90a497a93d5c3138fca38c0~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Psylocke",
+      "subtitle": "Kwannon",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_dfbb7199e90a497a93d5c3138fca38c0~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_dfbb7199e90a497a93d5c3138fca38c0~mv2.jpg",
+        "gtin": "5010996411532",
+        "gtinScore": 24.5,
+        "gtinTitle": "Marvel Legends Gamerverse 6 Inch Action Figure 2-Pack - Wolverine vs Psylocke (Pre-Order Ships Dec. 2026)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 30.5,
+        "urlBestTitle": "Psylocke — Marvel Games · 2026 · Gamerverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      }
+    },
+    {
+      "figureId": "d14ml-moondragon",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_ee482c83a4ae46a6a1c176e47faaa945~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ee482c83a4ae46a6a1c176e47faaa945~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Moondragon",
+      "subtitle": "Classic",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_ee482c83a4ae46a6a1c176e47faaa945~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ee482c83a4ae46a6a1c176e47faaa945~mv2.jpg",
+        "gtin": "5010996145949",
+        "gtinScore": 28.5,
+        "gtinTitle": "Marvel Legends Guardians Of The Galaxy 6 Inch Action Figure 2-Pack - Drax & Moondragon",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 34.5,
+        "urlBestTitle": "Moondragon — Hasbro Pulse · 2023 · Comic",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      }
+    },
+    {
+      "figureId": "ml2-spiderman-gwen",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_1b12049150514315a4e844f55f7771a9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1b12049150514315a4e844f55f7771a9~mv2.jpg",
       "reasons": [
         "gtin:score_pair_reject",
-        "url:score_pair_reject",
-        "url:char_missing:batman"
+        "gtin:char_missing:ghost"
       ],
-      "name": "Batman",
-      "subtitle": "Arkham City",
+      "name": "Ghost-Spider",
+      "subtitle": "Gwen Stacy",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
-        "gtin": "887961670486",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_1b12049150514315a4e844f55f7771a9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1b12049150514315a4e844f55f7771a9~mv2.jpg",
+        "gtin": "5010993715503",
         "gtinScore": -1.0,
-        "gtinTitle": "DC Comics Multiverse 6 Inch Action Figure Lex Luthor Series - Batman",
+        "gtinTitle": "Marvel Legends Retro 6 Inch Action Figure Spider-Man Series 1 - Gwen Stacy",
         "gtinShop": "cmdstore",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Hal Jordan Parralax (Gold Label) — Walmart, Gold Label · 2022 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 43
-      }
-    },
-    {
-      "figureId": "d14neca-tmnt-rock-toon",
-      "clearedOneshot": true,
-      "clearedOverlay": true,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Rocksteady",
-      "subtitle": "Toon Turtles",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg",
-        "gtin": "634482541760",
-        "gtinScore": 42.0,
-        "gtinTitle": "Teenage Mutant Ninja Turtles Turtles In Time 6 Inch Action Figure 2-Pack - Pirate Bebop & Rocksteady",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 38.5,
-        "urlBestTitle": "Rocksteady — Haulathon 2024 (Target US) · 2024 · Teenage Mutant Ninja Turtles",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 2
-      }
-    },
-    {
-      "figureId": "d14neca-tmnt-splinter-toon",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_c228cf18a95a42d5af1ea90b9e8de7bd~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c228cf18a95a42d5af1ea90b9e8de7bd~mv2.jpg",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Splinter",
-      "subtitle": "Toon Turtles",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_c228cf18a95a42d5af1ea90b9e8de7bd~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c228cf18a95a42d5af1ea90b9e8de7bd~mv2.jpg",
-        "gtin": "634482541586",
-        "gtinScore": 42.0,
-        "gtinTitle": "Teenage Mutant Ninja Turtles Cartoon Series 7 Inch Action Figure 2-Pack Exclusive - Splinter & Baxter",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 38.5,
-        "urlBestTitle": "Splinter — General · 2023 · Teenage Mutant Ninja Turtles",
+        "urlBestScore": 39.0,
+        "urlBestTitle": "Gwen Stacy Ghost Spider — Stilt Man BAF Wave · 2021 · Marvel Movies & TV",
         "urlBestShop": "mephitsu",
         "urlProductCount": 1
       }
     },
     {
-      "figureId": "mcfc-gl-hal",
+      "figureId": "mlc-jessica-jones",
       "clearedOneshot": true,
       "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg",
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_e93a2774f31b4edf964ac5d991a6f539~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e93a2774f31b4edf964ac5d991a6f539~mv2.jpg",
       "reasons": [
         "gtin:product_multipack_vs_single"
       ],
-      "name": "Green Lantern",
-      "subtitle": "Hal Jordan",
+      "name": "Jessica Jones",
+      "subtitle": "Alias",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg",
-        "gtin": "787926154542",
-        "gtinScore": 42.0,
-        "gtinTitle": "DC Multiverse Comic Series 7 Inch Action Figure 2-Pack - Green Lantern Hal Jordan vs Dawnbreaker",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_e93a2774f31b4edf964ac5d991a6f539~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e93a2774f31b4edf964ac5d991a6f539~mv2.jpg",
+        "gtin": "5010996449368",
+        "gtinScore": 21.5,
+        "gtinTitle": "Marvel Legends Daredevil Born Again 6 Inch Action Figure 2-Pack - Daredevil & Jessica Jones (Pre-Order Ships Nov. 2026)",
         "gtinShop": "cmdstore",
-        "urlBestScore": 42.0,
-        "urlBestTitle": "Green Lantern Hal Jordan — Gold Label Walmart · 2024 · DC Multiverse",
+        "urlBestScore": 35.5,
+        "urlBestTitle": "Jessica Jones — Daredevil: Born Again · 2026 · Marvel Movies & TV",
         "urlBestShop": "mephitsu",
         "urlProductCount": 1
       }
     },
     {
-      "figureId": "d14lc-putty",
+      "figureId": "s7c-ult-tmnt-baxter",
       "clearedOneshot": true,
       "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_80847fffd4334510be51934904d16540~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_80847fffd4334510be51934904d16540~mv2.jpg",
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg",
       "reasons": [
         "url:score_pair_reject",
-        "url:char_missing:putty"
+        "url:char_missing:baxter"
       ],
-      "name": "Putty Patroller",
-      "subtitle": "MMPR",
+      "name": "Baxter Stockman",
+      "subtitle": "TMNT ULTIMATES!",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_80847fffd4334510be51934904d16540~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_80847fffd4334510be51934904d16540~mv2.jpg",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg",
         "urlBestScore": -1.0,
-        "urlBestTitle": "Fighting Spirit Green Ranger — Power Rangers Dino Thunder · 2019 · Power Rangers",
+        "urlBestTitle": "Muckman and Joe Eyeball (Glow-in-the-dark) — TMNT Special · 2023 · Ultimates",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 22
+      }
+    },
+    {
+      "figureId": "d14ml-super-skrull",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_9f74aaf26b6e46429d4c0e56946e8ae8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9f74aaf26b6e46429d4c0e56946e8ae8~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Super-Skrull",
+      "subtitle": "Classic",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_9f74aaf26b6e46429d4c0e56946e8ae8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9f74aaf26b6e46429d4c0e56946e8ae8~mv2.jpg",
+        "gtin": "5010996142535",
+        "gtinScore": 25.5,
+        "gtinTitle": "Marvel Legends Avengers 6 Inch Action Figure 2-Pack - Skrull Queen and Super-Skrull",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 39.5,
+        "urlBestTitle": "Super Skrull — NYCC 2025 / MCM London 2025 · 2025 · Comic",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "hs10-hs-05",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_6580b40b5af8446687f97b076492260a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6580b40b5af8446687f97b076492260a~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Marvel Legends Spider-Gwen",
+      "subtitle": "Marvel Legends",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_6580b40b5af8446687f97b076492260a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6580b40b5af8446687f97b076492260a~mv2.jpg",
+        "gtin": "5010994171391",
+        "gtinScore": 25.0,
+        "gtinTitle": "Marvel Legends Spider-Man Animated 6 Inch Action Figure Box Set - Amazing Friends 3-Pack",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 25.0,
+        "urlBestTitle": "Spider-Man (Animated Series) — Marvel Legends Rerelease · 2026 · Comic",
         "urlBestShop": "mephitsu",
         "urlProductCount": 2
       }
     },
     {
-      "figureId": "neca3-ult-alien-big-chap",
+      "figureId": "d14ml-gorgon",
       "clearedOneshot": true,
       "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_0bb4ee3fe55f4bab82f3412de8a51c13~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0bb4ee3fe55f4bab82f3412de8a51c13~mv2.jpg",
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_da48135576414d74bd999a7e7cb2f252~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_da48135576414d74bd999a7e7cb2f252~mv2.jpg",
       "reasons": [
         "gtin:product_multipack_vs_single"
       ],
-      "name": "Big Chap",
-      "subtitle": "Alien Ultimate",
+      "name": "Gorgon",
+      "subtitle": "Inhumans",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_0bb4ee3fe55f4bab82f3412de8a51c13~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0bb4ee3fe55f4bab82f3412de8a51c13~mv2.jpg",
-        "gtin": "634482515938",
-        "gtinScore": 50.0,
-        "gtinTitle": "Aliens 40th Anniversary 7 Inch Action Figure Series 1 - Set of 3 (Ripley - Dallas - Big Chap)",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_da48135576414d74bd999a7e7cb2f252~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_da48135576414d74bd999a7e7cb2f252~mv2.jpg",
+        "gtin": "5010996328366",
+        "gtinScore": 42.0,
+        "gtinTitle": "Marvel Legends Inhumans 6 Inch Action Figure 2-Pack - Medusa & Gorgon",
         "gtinShop": "cmdstore",
-        "urlBestScore": 44.0,
-        "urlBestTitle": "Big Chap Alien — Ultimate · 2020 · Aliens",
+        "urlBestScore": 48.0,
+        "urlBestTitle": "Gorgon — Inhumans · 2025 · Comic",
         "urlBestShop": "mephitsu",
-        "urlProductCount": 1
+        "urlProductCount": 2
       }
     },
     {
-      "figureId": "neca-robocop",
+      "figureId": "mlc-doctor-strange-classic",
       "clearedOneshot": true,
       "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_6dd992100ce74abeb0b41190849fa733~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6dd992100ce74abeb0b41190849fa733~mv2.jpg",
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_30136ac1fd1a4b298e4257b7b0fdb47c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_30136ac1fd1a4b298e4257b7b0fdb47c~mv2.jpg",
       "reasons": [
         "gtin:product_multipack_vs_single"
       ],
-      "name": "RoboCop",
-      "subtitle": "RoboCop",
+      "name": "Doctor Strange",
+      "subtitle": "Classic",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_6dd992100ce74abeb0b41190849fa733~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6dd992100ce74abeb0b41190849fa733~mv2.jpg",
-        "gtin": "634482420782",
-        "gtinScore": 39.0,
-        "gtinTitle": "Robocop vs Terminator 7 Inch Action Figure 2-Pack - Endocop & Terminator Dog",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_30136ac1fd1a4b298e4257b7b0fdb47c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_30136ac1fd1a4b298e4257b7b0fdb47c~mv2.jpg",
+        "gtin": "630509682379",
+        "gtinScore": 39.5,
+        "gtinTitle": "Marvel Legends Studios 6 Inch Action Figure 10th Anniversary Series 3-Pack - Iron Man Mark L - Thanos - Doctor Strange",
         "gtinShop": "cmdstore",
-        "urlBestScore": 45.0,
-        "urlBestTitle": "Robocop — Re-Issue · 2015 · Robocop",
+        "urlBestScore": 39.5,
+        "urlBestTitle": "Doctor Strange — Amazon · 2024 · Comic",
         "urlBestShop": "mephitsu",
-        "urlProductCount": 1
+        "urlProductCount": 2
+      }
+    },
+    {
+      "figureId": "mcfdc-mega-solomon-grundy",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_cec521eba4c341009fce0e04a1130ba4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cec521eba4c341009fce0e04a1130ba4~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Solomon Grundy",
+      "subtitle": "Megafig",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_cec521eba4c341009fce0e04a1130ba4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cec521eba4c341009fce0e04a1130ba4~mv2.jpg",
+        "gtin": "787926177527",
+        "gtinScore": 21.5,
+        "gtinTitle": "DC Multiverse JSA 7 Inch Action Figure 2-Pack - Solomon Grundy vs Green Lantern",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 35.5,
+        "urlBestTitle": "Solomon Grundy — General · 2026 · DC Multiverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      }
+    },
+    {
+      "figureId": "mcfdc-mega-bizarro",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_b876c97306894c6e8e616b769e4d0663~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b876c97306894c6e8e616b769e4d0663~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Bizarro",
+      "subtitle": "Megafig",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_b876c97306894c6e8e616b769e4d0663~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b876c97306894c6e8e616b769e4d0663~mv2.jpg",
+        "gtin": "787926156935",
+        "gtinScore": 24.5,
+        "gtinTitle": "DC Multiverse Comics 7 Inch Action Figure 2-Pack - Bizarro & Batzarro",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 30.5,
+        "urlBestTitle": "Bizarro — Gold Label Gamestop / Walmart · 2025 · DC Multiverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
       }
     }
   ],
   "refilled": [],
   "highFlags": [
+    {
+      "figureId": "ml5-ml-x97-gambit",
+      "name": "Gambit",
+      "subtitle": "X-Men '97 Legends",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "64725004",
+      "reasons": [
+        "gtin:product_multipack_vs_single",
+        "url:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_1ec29bda09964992a1ab7286d3dac4e8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1ec29bda09964992a1ab7286d3dac4e8~mv2.jpg",
+        "gtin": "64725004",
+        "gtinScore": 42.0,
+        "gtinTitle": "Marvel Legends Retro 6 Inch Action Figure X-Men '97 Wave 1 - Set of 4 Magneto Gambit Bishop Storm",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 48.0,
+        "urlBestTitle": "Gambit — X-Men '97 Twin Packs · 2025 · Animated and TV",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "ml5-ml-valkyrie",
+      "name": "Valkyrie",
+      "subtitle": "Thor",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "653569530664",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_cf123fdb28ab46f2a0ff29d71159c553~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cf123fdb28ab46f2a0ff29d71159c553~mv2.jpg",
+        "gtin": "653569530664",
+        "gtinScore": 24.5,
+        "gtinTitle": "Marvel Legends 6 Inch Action Figure 2-Pack Exclusive - Valkyrie vs Green Hulk",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 48.0,
+        "urlBestTitle": "Valkyrie — Endgame Thor BAF WAve · 2019 · Marvel Movies & TV",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
     {
       "figureId": "sf-neca-store-teenage-mutant-ninja-turtles-1990-movie-casey-jones-with-dirt-bike",
       "name": "Teenage Mutant Ninja Turtles (1990 Movie)",
@@ -433,21 +706,130 @@
       ],
       "level": "high",
       "evidence": {
-        "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/54514_UNP_6.jpg?v=1742857086",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_a2255f77f39f40f38077adcbfa284147~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a2255f77f39f40f38077adcbfa284147~mv2.jpg",
         "gtin": "634482541203",
         "gtinScore": 12.9,
         "gtinTitle": "Teenage Mutant Ninja Turtles 7 Inch Action Figure 1980 Cartoon 2-Pack - Casey Jones & Foot Soldier",
         "gtinShop": "cmdstore",
-        "urlBestScore": 42.0,
-        "urlBestTitle": "Teenage Mutant Ninja Turtles (1990 Movie) - Casey Jones with Dirt Bike 7\" Scale Action Figure",
-        "urlBestShop": "neca-store",
+        "urlBestScore": 22.4,
+        "urlBestTitle": "Casey Jones with Dirt Bike — Walmart (US) · 2024 · Teenage Mutant Ninja Turtles",
+        "urlBestShop": "mephitsu",
         "urlProductCount": 1
       },
       "tags": [
-        "image-sku",
         "image-bake",
-        "imgsku:neca-store",
-        "imgsku:cmdstore"
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "ml4-omega-red",
+      "name": "Omega Red",
+      "subtitle": "Classic",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996320513",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_9e6efd90de7f471384902ba6bbc8ecc5~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9e6efd90de7f471384902ba6bbc8ecc5~mv2.jpg",
+        "gtin": "5010996320513",
+        "gtinScore": 28.5,
+        "gtinTitle": "Marvel Legends Gamerverse 6 Inch Action Figure 2-Pack - War Machine vs Omega Red",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 34.5,
+        "urlBestTitle": "Omega Red — Walmart (US) / Fan Channel · 2025 · Gamerverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      },
+      "tags": [
+        "image-sku",
+        "imgsku:toyarena",
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "ml6-ml-corvus",
+      "name": "Corvus Glaive",
+      "subtitle": "Wave6",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "630509794690",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_e7f89c49517942a783f074e20dcca785~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e7f89c49517942a783f074e20dcca785~mv2.jpg",
+        "gtin": "630509794690",
+        "gtinScore": 25.5,
+        "gtinTitle": "Marvel Legends Infinite 6 Inch Action Figure 2-Pack Series - Loki VS Corvus Glaive Exclusive",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 39.5,
+        "urlBestTitle": "Corvus Glaive — Amazon · 2020 · Marvel Movies & TV",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 5
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "ml6-ml-wong-w6",
+      "name": "Wong",
+      "subtitle": "Wave6",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996246578",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996246578o.jpg?v=1730422997",
+        "gtin": "5010996246578",
+        "gtinScore": 28.5,
+        "gtinTitle": "Marvel Legends Doctor Strange 6 Inch Action Figure 2-Pack - Doctor Strange with Wong & Bats",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 28.5,
+        "urlBestTitle": "Marvel Legends Doctor Strange and Wong & Bats Action Figure",
+        "urlBestShop": "toyarena",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-bake",
+        "image-sku",
+        "imgsku:toyarena"
+      ]
+    },
+    {
+      "figureId": "mlc-gladiator",
+      "name": "Gladiator",
+      "subtitle": "Shi'ar Imperial Guard",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996282866",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_802eb1de94264a74ad308f35e0cc22c2~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_802eb1de94264a74ad308f35e0cc22c2~mv2.jpg",
+        "gtin": "5010996282866",
+        "gtinScore": 29.75,
+        "gtinTitle": "Marvel Legends X-Men 6 Inch Action Figure 2-Pack - Deathbird and Gladiator",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 35.75,
+        "urlBestTitle": "Gladiator — Fan Channel & Amazon · 2025 · Comic",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
       ]
     },
     {
@@ -462,420 +844,69 @@
       ],
       "level": "high",
       "evidence": {
-        "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996233929z.jpg?v=1722551708",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_cf0029b539a24f51a2381c9e72f83c73~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cf0029b539a24f51a2381c9e72f83c73~mv2.jpg",
         "gtin": "5010996233929",
         "gtinScore": 42.0,
         "gtinTitle": "G.I. Joe Classified 6 Inch Action Figure Tiger Force 2-Pack - (Roadblock - Tripwire - M.A.C.L.E.O.D)",
         "gtinShop": "cmdstore",
-        "urlBestScore": 42.0,
-        "urlBestTitle": "Hasbro G.I. Joe Classified Series #126 Tiger Force Roadblock, Tripwire and M.A.C.L.E.O.D Action Figure",
-        "urlBestShop": "toyarena",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-bake",
-        "image-sku",
-        "imgsku:toyarena",
-        "imgsku:cmdstore"
-      ]
-    },
-    {
-      "figureId": "mf8-mf-35",
-      "name": "Harley Quinn",
-      "subtitle": "DC Multiverse Gold Label",
-      "line": "DC Multiverse Gold Label",
-      "company": "mcfarlane",
-      "sku": "787926177268",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_4538569caba640fbb62f2c41c6f832c9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_4538569caba640fbb62f2c41c6f832c9~mv2.jpg",
-        "gtin": "787926177268",
-        "gtinScore": -1.0,
-        "gtinTitle": "DC Direct Batman The Animated Series 7 Inch Action Figure 2-Pack Exclusive - Harley Quinn and The Joker Gold Label",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 53.0,
-        "urlBestTitle": "Harley Quinn — Gold Label GameStop · 2026 · DC Multiverse",
+        "urlBestScore": 48.0,
+        "urlBestTitle": "Tripwire — Hasbro Pulse · 2023 · GI Joe",
         "urlBestShop": "mephitsu",
         "urlProductCount": 1
       },
       "tags": [
         "image-bake",
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
+        "img:mephitsu"
       ]
     },
     {
-      "figureId": "d14mcf-atom-smasher-mega",
-      "name": "Atom Smasher",
-      "subtitle": "Megafig",
-      "line": "DC Multiverse",
-      "company": "mcfarlane",
-      "sku": "787926173482",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp",
-        "gtin": "787926173482",
-        "gtinScore": 21.5,
-        "gtinTitle": "DC Multiverse JSA Black Vengeance 7 Inch Action Figure 2-Pack - Atom Smasher vs. The Spectre",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 53.0,
-        "urlBestTitle": "Atom Smasher — Black Adam Wave 1 · 2022 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 9
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
-      ]
-    },
-    {
-      "figureId": "bsc-b2emo",
-      "name": "B2EMO",
-      "subtitle": "Andor",
-      "line": "Star Wars Black Series",
+      "figureId": "ml6-ml-hela-w6",
+      "name": "Hela",
+      "subtitle": "Wave6",
+      "line": "Marvel Legends",
       "company": "hasbro",
-      "sku": "195166188980",
+      "sku": "630509833627",
       "reasons": [
         "gtin:product_multipack_vs_single"
       ],
       "level": "high",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_d43060141ac74f3ab99ff62c89525b98~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d43060141ac74f3ab99ff62c89525b98~mv2.jpg",
-        "gtin": "195166188980",
-        "gtinScore": 48.0,
-        "gtinTitle": "Star Wars The Black Series 6 Inch Action Figure 2-Pack Exclusive - B2EMO & Cassian Andor",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 48.0,
-        "urlBestTitle": "B2EMO — Exclusive · 2022 · Andor",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
-      ]
-    },
-    {
-      "figureId": "mcf3-mcf-doomsday-gl",
-      "name": "Doomsday",
-      "subtitle": "Gold Label",
-      "line": "DC Multiverse",
-      "company": "mcfarlane",
-      "sku": "787926170894",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_6b0c0ddbc4404ac58fdf8296acb36cf4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6b0c0ddbc4404ac58fdf8296acb36cf4~mv2.jpg",
-        "gtin": "787926170894",
-        "gtinScore": 42.0,
-        "gtinTitle": "DC Multiverse 7 Inch Action Figure 2-Pack Exclusive - Superman vs Doomsday Gold Label",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 48.0,
-        "urlBestTitle": "Doomsday — Gold Label McFarlane Store · 2026 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
-      ]
-    },
-    {
-      "figureId": "bs5-bs-grogu",
-      "name": "Grogu",
-      "subtitle": "The Mandalorian",
-      "line": "Black Series",
-      "company": "hasbro",
-      "sku": "5010994172640",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_021fe6a919a84603a463add35f38b534~mv2.jpg",
-        "gtin": "5010994172640",
-        "gtinScore": 48.0,
-        "gtinTitle": "Star Wars The Black Series 6 Inch Action Figure 3-Pack Exclusive - The Mandalorian - Ahsoka Tano - Grogu",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 48.0,
-        "urlBestTitle": "Grogu — Galaxy Collection Special · 2026 · The Mandalorian and Grogu",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
-      ]
-    },
-    {
-      "figureId": "d14mcf-batman-tas",
-      "name": "Batman",
-      "subtitle": "Animated Series Wave 1",
-      "line": "DC Multiverse",
-      "company": "mcfarlane",
-      "sku": "787926177657",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_f3bbc31b1b83463881d02c3b6bd99d4e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f3bbc31b1b83463881d02c3b6bd99d4e~mv2.jpg",
-        "gtin": "787926177657",
-        "gtinScore": -1.0,
-        "gtinTitle": "DC Direct The New Batman Adventures 6 Inch Action Figure Wave 4 - Set of 3 (Scarecrow - Riddler - Batman)",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_ffb1878511334fd2895fc047091a85a5~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ffb1878511334fd2895fc047091a85a5~mv2.jpg",
+        "gtin": "630509833627",
+        "gtinScore": 28.5,
+        "gtinTitle": "Marvel Legends Studios 6 Inch Action Figure 2-Pack Series - Skurge & Hela",
         "gtinShop": "cmdstore",
         "urlBestScore": 34.5,
-        "urlBestTitle": "Batman — Vault Collection Wave 1 · 2026 · DC Multiverse",
+        "urlBestTitle": "Hela — \"Best of\" MCU Gladiator Hulk Wave · 2018 · Marvel Movies & TV",
         "urlBestShop": "mephitsu",
         "urlProductCount": 1
       },
       "tags": [
+        "image-sku",
+        "imgsku:toyarena",
         "image-bake",
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
+        "img:mephitsu"
       ]
     },
     {
-      "figureId": "mf8-mf-14",
-      "name": "Spawn",
-      "subtitle": "Spawn Gunslinger",
-      "line": "McFarlane Spawn",
-      "company": "mcfarlane",
-      "sku": "787926901573",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_e0b9d363c07f4b3db18abdff07ae3bf8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e0b9d363c07f4b3db18abdff07ae3bf8~mv2.jpg",
-        "gtin": "787926901573",
-        "gtinScore": 42.0,
-        "gtinTitle": "Spawn 7 Inch Action Figure 2-Pack Exclusive - Gunslinger with Horse",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 42.0,
-        "urlBestTitle": "Gunslinger Spawn & Horse — Gamestop (US) · 2022 · Spawn",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
-      ]
-    },
-    {
-      "figureId": "mcfgap-aquaman-baf-throne",
-      "name": "Aquaman",
-      "subtitle": "Build-A Aquaman Throne",
-      "line": "DC Multiverse",
-      "company": "mcfarlane",
-      "sku": "787926156799",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:char_missing:aquaman"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_b5a2630156ac4de68a52f927b156abd8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b5a2630156ac4de68a52f927b156abd8~mv2.jpg",
-        "gtin": "787926156799",
-        "gtinScore": -1.0,
-        "gtinTitle": "DC Multiverse JLA 7 Inch Action Figure BAF Plastic Man - Green Lantern John Stewart",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 34.33,
-        "urlBestTitle": "JLA Aquaman 'Platinum' — Platinum Edition JLA Plastic Man Build-a Wave · 2024 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
-      ]
-    },
-    {
-      "figureId": "neca2-tmnt-ace-duck",
-      "name": "Ace Duck",
-      "subtitle": "Cartoon",
-      "line": "TMNT",
-      "company": "neca",
-      "sku": "634482542262",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_ee66c9fd89ca42e7b8e565a5c9aecedf~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ee66c9fd89ca42e7b8e565a5c9aecedf~mv2.jpg",
-        "gtin": "634482542262",
-        "gtinScore": 47.0,
-        "gtinTitle": "Teenage Mutant Ninja Turtles 1990 Cartoon 7 Inch Action Figure 2-Pack - Ace Duck & Mutagen Man (Sub-Standard Packaging)",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 35.5,
-        "urlBestTitle": "Ace Duck — Walmart (US) · 2025 · Teenage Mutant Ninja Turtles",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
-      ]
-    },
-    {
-      "figureId": "mcfdc-batman-arkham-city",
-      "name": "Batman",
-      "subtitle": "Arkham City",
-      "line": "DC Multiverse",
-      "company": "mcfarlane",
-      "sku": "887961670486",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "url:score_pair_reject",
-        "url:char_missing:batman"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
-        "gtin": "887961670486",
-        "gtinScore": -1.0,
-        "gtinTitle": "DC Comics Multiverse 6 Inch Action Figure Lex Luthor Series - Batman",
-        "gtinShop": "cmdstore",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Hal Jordan Parralax (Gold Label) — Walmart, Gold Label · 2022 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 43
-      },
-      "tags": [
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
-      ]
-    },
-    {
-      "figureId": "d14neca-tmnt-rock-toon",
-      "name": "Rocksteady",
-      "subtitle": "Toon Turtles",
-      "line": "TMNT",
-      "company": "neca",
-      "sku": "634482541760",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg",
-        "gtin": "634482541760",
-        "gtinScore": 42.0,
-        "gtinTitle": "Teenage Mutant Ninja Turtles Turtles In Time 6 Inch Action Figure 2-Pack - Pirate Bebop & Rocksteady",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 38.5,
-        "urlBestTitle": "Rocksteady — Haulathon 2024 (Target US) · 2024 · Teenage Mutant Ninja Turtles",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 2
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
-      ]
-    },
-    {
-      "figureId": "d14neca-tmnt-splinter-toon",
-      "name": "Splinter",
-      "subtitle": "Toon Turtles",
-      "line": "TMNT",
-      "company": "neca",
-      "sku": "634482541586",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_c228cf18a95a42d5af1ea90b9e8de7bd~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c228cf18a95a42d5af1ea90b9e8de7bd~mv2.jpg",
-        "gtin": "634482541586",
-        "gtinScore": 42.0,
-        "gtinTitle": "Teenage Mutant Ninja Turtles Cartoon Series 7 Inch Action Figure 2-Pack Exclusive - Splinter & Baxter",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 38.5,
-        "urlBestTitle": "Splinter — General · 2023 · Teenage Mutant Ninja Turtles",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
-      ]
-    },
-    {
-      "figureId": "mcfc-gl-hal",
-      "name": "Green Lantern",
-      "subtitle": "Hal Jordan",
-      "line": "DC Multiverse",
-      "company": "mcfarlane",
-      "sku": "787926154542",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg",
-        "gtin": "787926154542",
-        "gtinScore": 42.0,
-        "gtinTitle": "DC Multiverse Comic Series 7 Inch Action Figure 2-Pack - Green Lantern Hal Jordan vs Dawnbreaker",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 42.0,
-        "urlBestTitle": "Green Lantern Hal Jordan — Gold Label Walmart · 2024 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
-      ]
-    },
-    {
-      "figureId": "d14lc-putty",
-      "name": "Putty Patroller",
-      "subtitle": "MMPR",
-      "line": "Lightning Collection",
+      "figureId": "mlc-void-sentry",
+      "name": "The Void",
+      "subtitle": "Sentry",
+      "line": "Marvel Legends",
       "company": "hasbro",
-      "sku": null,
+      "sku": "5010996407276",
       "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:putty"
+        "gtin:product_multipack_vs_single"
       ],
       "level": "high",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_80847fffd4334510be51934904d16540~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_80847fffd4334510be51934904d16540~mv2.jpg",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Fighting Spirit Green Ranger — Power Rangers Dino Thunder · 2019 · Power Rangers",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_3fe75076f37b40aeae37e97979419225~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_3fe75076f37b40aeae37e97979419225~mv2.jpg",
+        "gtin": "5010996407276",
+        "gtinScore": 24.5,
+        "gtinTitle": "Marvel Legends Thunderbolts 6 Inch Action Figure 2-Pack - Valentina Allegra de Fontaine & The Void (Pre-Order Ships Sept. 2026)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 30.5,
+        "urlBestTitle": "The Void — Fan Channel Exclusive · 2026 · Marvel Movies & TV",
         "urlBestShop": "mephitsu",
         "urlProductCount": 2
       },
@@ -885,61 +916,490 @@
       ]
     },
     {
-      "figureId": "neca3-ult-alien-big-chap",
-      "name": "Big Chap",
-      "subtitle": "Alien Ultimate",
-      "line": "Aliens Ultimate",
-      "company": "neca",
-      "sku": "634482515938",
+      "figureId": "ml6-ml-sharon-carter",
+      "name": "Sharon Carter",
+      "subtitle": "Wave6",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996222534",
       "reasons": [
         "gtin:product_multipack_vs_single"
       ],
       "level": "high",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_0bb4ee3fe55f4bab82f3412de8a51c13~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0bb4ee3fe55f4bab82f3412de8a51c13~mv2.jpg",
-        "gtin": "634482515938",
-        "gtinScore": 50.0,
-        "gtinTitle": "Aliens 40th Anniversary 7 Inch Action Figure Series 1 - Set of 3 (Ripley - Dallas - Big Chap)",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_c3f1832880c04235890a3da559d549a3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c3f1832880c04235890a3da559d549a3~mv2.jpg",
+        "gtin": "5010996222534",
+        "gtinScore": 39.5,
+        "gtinTitle": "Marvel Legends Shield 6 Inch Action Figure 3-Pack Box Set - Dum Dum - Nick Fury - Sharon Carter",
         "gtinShop": "cmdstore",
-        "urlBestScore": 44.0,
-        "urlBestTitle": "Big Chap Alien — Ultimate · 2020 · Aliens",
+        "urlBestScore": 39.5,
+        "urlBestTitle": "Sharon Carter — Fan Channel · 2024 · Comic",
         "urlBestShop": "mephitsu",
-        "urlProductCount": 1
+        "urlProductCount": 3
       },
       "tags": [
         "image-bake",
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
+        "img:mephitsu"
       ]
     },
     {
-      "figureId": "neca-robocop",
-      "name": "RoboCop",
-      "subtitle": "RoboCop",
-      "line": "RoboCop",
-      "company": "neca",
-      "sku": "634482420782",
+      "figureId": "ml6-ml-silk",
+      "name": "Silk",
+      "subtitle": "Wave6",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010994154967",
       "reasons": [
         "gtin:product_multipack_vs_single"
       ],
       "level": "high",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_6dd992100ce74abeb0b41190849fa733~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6dd992100ce74abeb0b41190849fa733~mv2.jpg",
-        "gtin": "634482420782",
-        "gtinScore": 39.0,
-        "gtinTitle": "Robocop vs Terminator 7 Inch Action Figure 2-Pack - Endocop & Terminator Dog",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_ed75018601c84846a766ea1a3217231c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ed75018601c84846a766ea1a3217231c~mv2.jpg",
+        "gtin": "5010994154967",
+        "gtinScore": 28.5,
+        "gtinTitle": "Marvel Legends Spider-Man 6 Inch Action Figure 2-Pack Exclusive - Silk and Doctor Octopus (Shelf Wear packaging)",
         "gtinShop": "cmdstore",
-        "urlBestScore": 45.0,
-        "urlBestTitle": "Robocop — Re-Issue · 2015 · Robocop",
+        "urlBestScore": 34.5,
+        "urlBestTitle": "Silk — Amazon, Spider-Man 60th Anniversary · 2022 · Comic",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "ml6-ml-sabretooth-aos",
+      "name": "Sabretooth",
+      "subtitle": "Age of Apocalypse Wave6",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996202086",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_1ceb2f6f0faa4459aa87a4fb60947bb1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1ceb2f6f0faa4459aa87a4fb60947bb1~mv2.jpg",
+        "gtin": "5010996202086",
+        "gtinScore": 24.5,
+        "gtinTitle": "Marvel Legends X-Men 6 Inch Action Figure 50th Anniversary 2-Pack - Logan vs Sabretooth",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 42.0,
+        "urlBestTitle": "Sabretooth — Age of Apocalypse Wave 2 · 2021 · Comic",
         "urlBestShop": "mephitsu",
         "urlProductCount": 1
       },
       "tags": [
         "image-bake",
-        "img:mephitsu",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "mlc-morbius-classic2",
+      "name": "Morbius",
+      "subtitle": "Classic",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996145994",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/fe82fd2bd1ec879034a2d0010547fd28.100.jpg?v=1571609221",
+        "gtin": "5010996145994",
+        "gtinScore": 28.5,
+        "gtinTitle": "Marvel Legends Spider-Man 6 Inch Action Figure 2-Pack Exclusive - 6 Arm Spider-Man & Morbius",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 28.5,
+        "urlBestTitle": "Marvel Legends Series: Villains Of The Night: Morbius",
+        "urlBestShop": "toyarena",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-bake",
         "image-sku",
-        "imgsku:cmdstore"
+        "imgsku:toyarena"
+      ]
+    },
+    {
+      "figureId": "mlc-sersi",
+      "name": "Sersi",
+      "subtitle": "Eternals",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996142573",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_0bd6b4febca341db9bd24d38ea2f640d~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0bd6b4febca341db9bd24d38ea2f640d~mv2.jpg",
+        "gtin": "5010996142573",
+        "gtinScore": 24.5,
+        "gtinTitle": "Marvel Legends 60th Anniversary 6 Inch Action Figure 2-Pack Exclusive - Black Knight & Sersi",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 30.5,
+        "urlBestTitle": "Sersi — The Avengers 60th Anniversary · 2023 · Comic",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "d14ml-ned-nwh",
+      "name": "Ned Leeds",
+      "subtitle": "No Way Home",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010994153755",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_e267a33a0d4648a6a76d0995f9687585~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e267a33a0d4648a6a76d0995f9687585~mv2.jpg",
+        "gtin": "5010994153755",
+        "gtinScore": 29.5,
+        "gtinTitle": "Marvel Legends Spider-Man 6 Inch Action Figure Movie 2-Pack - Ned Leeds & Peter Parker",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 35.5,
+        "urlBestTitle": "Ned Leeds — Spider-Man 60th Anniversary · 2022 · Marvel Movies & TV",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "ml3-ml-strange-surfer",
+      "name": "Doctor Strange",
+      "subtitle": "Surfer BAF Wave",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010993791170",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_bd5efc9e3d754a449e96f1b25393f38a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_bd5efc9e3d754a449e96f1b25393f38a~mv2.jpg",
+        "gtin": "5010993791170",
+        "gtinScore": 29.5,
+        "gtinTitle": "Marvel Legends Doctor Strange 6 Inch Action Figure BAF Rintrah - Set of 7 (Build-A-Figure Rintrah)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 43.5,
+        "urlBestTitle": "Doctor Strange — Rintrah BAF Wave · 2022 · Marvel Movies & TV",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "d14ml-psylocke-kw",
+      "name": "Psylocke",
+      "subtitle": "Kwannon",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996411532",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_dfbb7199e90a497a93d5c3138fca38c0~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_dfbb7199e90a497a93d5c3138fca38c0~mv2.jpg",
+        "gtin": "5010996411532",
+        "gtinScore": 24.5,
+        "gtinTitle": "Marvel Legends Gamerverse 6 Inch Action Figure 2-Pack - Wolverine vs Psylocke (Pre-Order Ships Dec. 2026)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 30.5,
+        "urlBestTitle": "Psylocke — Marvel Games · 2026 · Gamerverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "d14ml-moondragon",
+      "name": "Moondragon",
+      "subtitle": "Classic",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996145949",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_ee482c83a4ae46a6a1c176e47faaa945~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ee482c83a4ae46a6a1c176e47faaa945~mv2.jpg",
+        "gtin": "5010996145949",
+        "gtinScore": 28.5,
+        "gtinTitle": "Marvel Legends Guardians Of The Galaxy 6 Inch Action Figure 2-Pack - Drax & Moondragon",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 34.5,
+        "urlBestTitle": "Moondragon — Hasbro Pulse · 2023 · Comic",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "ml2-spiderman-gwen",
+      "name": "Ghost-Spider",
+      "subtitle": "Gwen Stacy",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010993715503",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "gtin:char_missing:ghost"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_1b12049150514315a4e844f55f7771a9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1b12049150514315a4e844f55f7771a9~mv2.jpg",
+        "gtin": "5010993715503",
+        "gtinScore": -1.0,
+        "gtinTitle": "Marvel Legends Retro 6 Inch Action Figure Spider-Man Series 1 - Gwen Stacy",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 39.0,
+        "urlBestTitle": "Gwen Stacy Ghost Spider — Stilt Man BAF Wave · 2021 · Marvel Movies & TV",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "mlc-jessica-jones",
+      "name": "Jessica Jones",
+      "subtitle": "Alias",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996449368",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_e93a2774f31b4edf964ac5d991a6f539~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e93a2774f31b4edf964ac5d991a6f539~mv2.jpg",
+        "gtin": "5010996449368",
+        "gtinScore": 21.5,
+        "gtinTitle": "Marvel Legends Daredevil Born Again 6 Inch Action Figure 2-Pack - Daredevil & Jessica Jones (Pre-Order Ships Nov. 2026)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 35.5,
+        "urlBestTitle": "Jessica Jones — Daredevil: Born Again · 2026 · Marvel Movies & TV",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "s7c-ult-tmnt-baxter",
+      "name": "Baxter Stockman",
+      "subtitle": "TMNT ULTIMATES!",
+      "line": "Super7 ULTIMATES!",
+      "company": "super7",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject",
+        "url:char_missing:baxter"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Muckman and Joe Eyeball (Glow-in-the-dark) — TMNT Special · 2023 · Ultimates",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 22
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "d14ml-super-skrull",
+      "name": "Super-Skrull",
+      "subtitle": "Classic",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996142535",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_9f74aaf26b6e46429d4c0e56946e8ae8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9f74aaf26b6e46429d4c0e56946e8ae8~mv2.jpg",
+        "gtin": "5010996142535",
+        "gtinScore": 25.5,
+        "gtinTitle": "Marvel Legends Avengers 6 Inch Action Figure 2-Pack - Skrull Queen and Super-Skrull",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 39.5,
+        "urlBestTitle": "Super Skrull — NYCC 2025 / MCM London 2025 · 2025 · Comic",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "hs10-hs-05",
+      "name": "Marvel Legends Spider-Gwen",
+      "subtitle": "Marvel Legends",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010994171391",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_6580b40b5af8446687f97b076492260a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6580b40b5af8446687f97b076492260a~mv2.jpg",
+        "gtin": "5010994171391",
+        "gtinScore": 25.0,
+        "gtinTitle": "Marvel Legends Spider-Man Animated 6 Inch Action Figure Box Set - Amazing Friends 3-Pack",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 25.0,
+        "urlBestTitle": "Spider-Man (Animated Series) — Marvel Legends Rerelease · 2026 · Comic",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "d14ml-gorgon",
+      "name": "Gorgon",
+      "subtitle": "Inhumans",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996328366",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_da48135576414d74bd999a7e7cb2f252~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_da48135576414d74bd999a7e7cb2f252~mv2.jpg",
+        "gtin": "5010996328366",
+        "gtinScore": 42.0,
+        "gtinTitle": "Marvel Legends Inhumans 6 Inch Action Figure 2-Pack - Medusa & Gorgon",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 48.0,
+        "urlBestTitle": "Gorgon — Inhumans · 2025 · Comic",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "mlc-doctor-strange-classic",
+      "name": "Doctor Strange",
+      "subtitle": "Classic",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "630509682379",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_30136ac1fd1a4b298e4257b7b0fdb47c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_30136ac1fd1a4b298e4257b7b0fdb47c~mv2.jpg",
+        "gtin": "630509682379",
+        "gtinScore": 39.5,
+        "gtinTitle": "Marvel Legends Studios 6 Inch Action Figure 10th Anniversary Series 3-Pack - Iron Man Mark L - Thanos - Doctor Strange",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 39.5,
+        "urlBestTitle": "Doctor Strange — Amazon · 2024 · Comic",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "mcfdc-mega-solomon-grundy",
+      "name": "Solomon Grundy",
+      "subtitle": "Megafig",
+      "line": "DC Multiverse Megafigs",
+      "company": "mcfarlane",
+      "sku": "787926177527",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_cec521eba4c341009fce0e04a1130ba4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cec521eba4c341009fce0e04a1130ba4~mv2.jpg",
+        "gtin": "787926177527",
+        "gtinScore": 21.5,
+        "gtinTitle": "DC Multiverse JSA 7 Inch Action Figure 2-Pack - Solomon Grundy vs Green Lantern",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 35.5,
+        "urlBestTitle": "Solomon Grundy — General · 2026 · DC Multiverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "mcfdc-mega-bizarro",
+      "name": "Bizarro",
+      "subtitle": "Megafig",
+      "line": "DC Multiverse Megafigs",
+      "company": "mcfarlane",
+      "sku": "787926156935",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_b876c97306894c6e8e616b769e4d0663~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b876c97306894c6e8e616b769e4d0663~mv2.jpg",
+        "gtin": "787926156935",
+        "gtinScore": 24.5,
+        "gtinTitle": "DC Multiverse Comics 7 Inch Action Figure 2-Pack - Bizarro & Batzarro",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 30.5,
+        "urlBestTitle": "Bizarro — Gold Label Gamestop / Walmart · 2025 · DC Multiverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
       ]
     }
   ],
@@ -12963,7 +13423,7 @@
       "tags": []
     }
   ],
-  "softFlagsTruncated": 34,
+  "softFlagsTruncated": 36,
   "notes": [
     "High = auto-cleared on --apply (multipack-vs-single, hard theme, score_reject+char_missing, URL path cues, prior SKU-audit cleared URL).",
     "Soft = reported only; not cleared.",
