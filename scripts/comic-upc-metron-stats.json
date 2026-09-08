@@ -1,18 +1,972 @@
 {
-  "afterUpc": 2978,
-  "beforeUpc": 2978,
+  "afterUpc": 3147,
+  "beforeUpc": 2994,
   "dailyCap": 2500,
-  "dailyUsed": 1,
-  "details": [],
+  "dailyUsed": 528,
+  "details": [
+    {
+      "id": "arch-bv2016-10",
+      "status": "no_confident_match"
+    },
+    {
+      "id": "arch-bv2016-2",
+      "status": "no_confident_match"
+    },
+    {
+      "id": "arch-bv2016-3",
+      "status": "no_confident_match"
+    },
+    {
+      "id": "arch-bv2016-4",
+      "status": "no_confident_match"
+    },
+    {
+      "id": "arch-bv2016-5",
+      "status": "no_confident_match"
+    },
+    {
+      "id": "arch-bv2016-6",
+      "status": "no_confident_match"
+    },
+    {
+      "id": "arch-bv2016-7",
+      "status": "no_confident_match"
+    },
+    {
+      "id": "arch-bv2016-8",
+      "status": "no_confident_match"
+    },
+    {
+      "id": "arch-bv2016-9",
+      "status": "no_confident_match"
+    },
+    {
+      "id": "dc-batman-superman-2019-1",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-10",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-11",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-12",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-13",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-14",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-15",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-16",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-17",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-18",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-19",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-2",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-20",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-3",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-4",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-5",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-6",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-7",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-8",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-2019-9",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-16",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-17",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-18",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-19",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-20",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-21",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-22",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-23",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-24",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-25",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-26",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-27",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-28",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-29",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-30",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-batman-superman-n52-31",
+      "status": "no_results"
+    },
+    {
+      "id": "dc-gl-2018-1",
+      "status": "no_confident_match"
+    },
+    {
+      "id": "dc-gl-2018-2",
+      "status": "no_confident_match"
+    },
+    {
+      "id": "dc-jl-2016-35",
+      "status": "metron_upc",
+      "upc": "76194134349503511"
+    },
+    {
+      "id": "dc-jl-2016-36",
+      "status": "metron_upc",
+      "upc": "76194134349503611"
+    },
+    {
+      "id": "dc-jl-2016-37",
+      "status": "metron_upc",
+      "upc": "76194134349503711"
+    },
+    {
+      "id": "dc-jl-2016-38",
+      "status": "metron_upc",
+      "upc": "76194134349503811"
+    },
+    {
+      "id": "dc-jl-2016-39",
+      "status": "metron_upc",
+      "upc": "76194134349503911"
+    },
+    {
+      "id": "dc-jl-2016-4",
+      "status": "metron_upc",
+      "upc": "76194134349500411"
+    },
+    {
+      "id": "dc-jl-2016-5",
+      "status": "metron_upc",
+      "upc": "76194134349500511"
+    },
+    {
+      "id": "dc-jl-2016-6",
+      "status": "metron_upc",
+      "upc": "76194134349500611"
+    },
+    {
+      "id": "dc-jl-2016-7",
+      "status": "metron_upc",
+      "upc": "76194134349500711"
+    },
+    {
+      "id": "dc-jl-2016-8",
+      "status": "metron_upc",
+      "upc": "76194134349500811"
+    },
+    {
+      "id": "dc-jl-2016-9",
+      "status": "metron_upc",
+      "upc": "76194134349500911"
+    },
+    {
+      "id": "dc-jl-2018-1",
+      "status": "metron_upc",
+      "upc": "76194135724900111"
+    },
+    {
+      "id": "dc-jl-2018-10",
+      "status": "metron_upc",
+      "upc": "76194135724901011"
+    },
+    {
+      "id": "dc-jl-2018-11",
+      "status": "metron_upc",
+      "upc": "76194135724901111"
+    },
+    {
+      "id": "dc-jl-2018-12",
+      "status": "metron_upc",
+      "upc": "76194135724901211"
+    },
+    {
+      "id": "dc-jl-2018-13",
+      "status": "metron_upc",
+      "upc": "76194135724901311"
+    },
+    {
+      "id": "dc-jl-2018-14",
+      "status": "metron_upc",
+      "upc": "76194135724901411"
+    },
+    {
+      "id": "dc-jl-2018-15",
+      "status": "metron_upc",
+      "upc": "76194135724901511"
+    },
+    {
+      "id": "dc-jl-2018-16",
+      "status": "metron_upc",
+      "upc": "76194135724901611"
+    },
+    {
+      "id": "dc-jl-2018-17",
+      "status": "metron_upc",
+      "upc": "76194135724901711"
+    },
+    {
+      "id": "dc-jl-2018-18",
+      "status": "metron_upc",
+      "upc": "76194135724901811"
+    },
+    {
+      "id": "dc-jl-2018-19",
+      "status": "metron_upc",
+      "upc": "76194135724901911"
+    },
+    {
+      "id": "dc-jl-2018-2",
+      "status": "metron_upc",
+      "upc": "76194135724900211"
+    },
+    {
+      "id": "dc-jl-2018-20",
+      "status": "metron_upc",
+      "upc": "76194135724902011"
+    },
+    {
+      "id": "dc-jl-2018-21",
+      "status": "metron_upc",
+      "upc": "76194135724902111"
+    },
+    {
+      "id": "dc-jl-2018-22",
+      "status": "metron_upc",
+      "upc": "76194135724902211"
+    },
+    {
+      "id": "dc-jl-2018-23",
+      "status": "metron_upc",
+      "upc": "76194135724902311"
+    },
+    {
+      "id": "dc-jl-2018-24",
+      "status": "metron_upc",
+      "upc": "76194135724902411"
+    },
+    {
+      "id": "dc-jl-2018-25",
+      "status": "metron_upc",
+      "upc": "76194135724902511"
+    },
+    {
+      "id": "dc-jl-2018-26",
+      "status": "metron_upc",
+      "upc": "76194135724902611"
+    },
+    {
+      "id": "dc-jl-2018-27",
+      "status": "metron_upc",
+      "upc": "76194135724902711"
+    },
+    {
+      "id": "dc-jl-2018-28",
+      "status": "metron_upc",
+      "upc": "76194135724902811"
+    },
+    {
+      "id": "dc-jl-2018-29",
+      "status": "metron_upc",
+      "upc": "76194135724902911"
+    },
+    {
+      "id": "dc-jl-2018-3",
+      "status": "metron_upc",
+      "upc": "76194135724900311"
+    },
+    {
+      "id": "dc-jl-2018-30",
+      "status": "metron_upc",
+      "upc": "76194135724903011"
+    },
+    {
+      "id": "dc-jl-2018-31",
+      "status": "metron_upc",
+      "upc": "76194135724903111"
+    },
+    {
+      "id": "dc-jl-2018-32",
+      "status": "metron_upc",
+      "upc": "76194135724903211"
+    },
+    {
+      "id": "dc-jl-2018-33",
+      "status": "metron_upc",
+      "upc": "76194135724903311"
+    },
+    {
+      "id": "dc-jl-2018-34",
+      "status": "metron_upc",
+      "upc": "76194135724903411"
+    },
+    {
+      "id": "dc-jl-2018-35",
+      "status": "metron_upc",
+      "upc": "76194135724903511"
+    },
+    {
+      "id": "dc-jl-2018-36",
+      "status": "metron_upc",
+      "upc": "76194135724903611"
+    },
+    {
+      "id": "dc-jl-2018-37",
+      "status": "metron_upc",
+      "upc": "76194135724903711"
+    },
+    {
+      "id": "dc-jl-2018-38",
+      "status": "metron_upc",
+      "upc": "76194135724903811"
+    },
+    {
+      "id": "dc-jl-2018-39",
+      "status": "metron_upc",
+      "upc": "76194135724903911"
+    },
+    {
+      "id": "dc-jl-2018-4",
+      "status": "metron_upc",
+      "upc": "76194135724900411"
+    },
+    {
+      "id": "dc-jl-2018-40",
+      "status": "metron_upc",
+      "upc": "76194135724904011"
+    },
+    {
+      "id": "dc-jl-2018-41",
+      "status": "metron_upc",
+      "upc": "76194135724904111"
+    },
+    {
+      "id": "dc-jl-2018-42",
+      "status": "metron_upc",
+      "upc": "76194135724904211"
+    },
+    {
+      "id": "dc-jl-2018-43",
+      "status": "metron_upc",
+      "upc": "76194135724904311"
+    },
+    {
+      "id": "dc-jl-2018-44",
+      "status": "metron_upc",
+      "upc": "76194135724904411"
+    },
+    {
+      "id": "dc-jl-2018-45",
+      "status": "metron_upc",
+      "upc": "76194135724904511"
+    },
+    {
+      "id": "dc-jl-2018-46",
+      "status": "metron_upc",
+      "upc": "76194135724904611"
+    },
+    {
+      "id": "dc-jl-2018-47",
+      "status": "metron_upc",
+      "upc": "76194135724904711"
+    },
+    {
+      "id": "dc-jl-2018-48",
+      "status": "metron_upc",
+      "upc": "76194135724904811"
+    },
+    {
+      "id": "dc-jl-2018-49",
+      "status": "metron_upc",
+      "upc": "76194135724904911"
+    },
+    {
+      "id": "dc-jl-2018-5",
+      "status": "metron_upc",
+      "upc": "76194135274900511"
+    },
+    {
+      "id": "dc-jl-2018-50",
+      "status": "metron_upc",
+      "upc": "76194135724905011"
+    },
+    {
+      "id": "dc-jl-2018-51",
+      "status": "metron_upc",
+      "upc": "76194135724905111"
+    },
+    {
+      "id": "dc-jl-2018-52",
+      "status": "metron_upc",
+      "upc": "76194135724905211"
+    },
+    {
+      "id": "dc-jl-2018-53",
+      "status": "metron_upc",
+      "upc": "76194135724905311"
+    },
+    {
+      "id": "dc-jl-2018-54",
+      "status": "metron_upc",
+      "upc": "76194135724905411"
+    },
+    {
+      "id": "dc-jl-2018-55",
+      "status": "metron_upc",
+      "upc": "76194135724905511"
+    },
+    {
+      "id": "dc-jl-2018-56",
+      "status": "metron_upc",
+      "upc": "76194135724905611"
+    },
+    {
+      "id": "dc-jl-2018-57",
+      "status": "metron_upc",
+      "upc": "76194135724905711"
+    },
+    {
+      "id": "dc-jl-2018-58",
+      "status": "metron_upc",
+      "upc": "76194135724905811"
+    },
+    {
+      "id": "dc-jl-2018-59",
+      "status": "metron_upc",
+      "upc": "76194135724905911"
+    },
+    {
+      "id": "dc-jl-2018-6",
+      "status": "metron_upc",
+      "upc": "76194135724900611"
+    },
+    {
+      "id": "dc-jl-2018-60",
+      "status": "metron_upc",
+      "upc": "76194135724906011"
+    },
+    {
+      "id": "dc-jl-2018-61",
+      "status": "metron_upc",
+      "upc": "76194135724906111"
+    },
+    {
+      "id": "dc-jl-2018-62",
+      "status": "metron_upc",
+      "upc": "76194135724906211"
+    },
+    {
+      "id": "dc-jl-2018-63",
+      "status": "metron_upc",
+      "upc": "76194135724906311"
+    },
+    {
+      "id": "dc-jl-2018-64",
+      "status": "metron_upc",
+      "upc": "76194135724906411"
+    },
+    {
+      "id": "dc-jl-2018-65",
+      "status": "metron_upc",
+      "upc": "76194135724906511"
+    },
+    {
+      "id": "dc-jl-2018-66",
+      "status": "metron_upc",
+      "upc": "76194135724906611"
+    },
+    {
+      "id": "dc-jl-2018-67",
+      "status": "metron_upc",
+      "upc": "7619413572490671"
+    },
+    {
+      "id": "dc-jl-2018-68",
+      "status": "metron_upc",
+      "upc": "76194135724906811"
+    },
+    {
+      "id": "dc-jl-2018-69",
+      "status": "metron_upc",
+      "upc": "76194135724906911"
+    },
+    {
+      "id": "dc-jl-2018-7",
+      "status": "metron_upc",
+      "upc": "76194135724900711"
+    },
+    {
+      "id": "dc-jl-2018-70",
+      "status": "metron_upc",
+      "upc": "76194135724907011"
+    },
+    {
+      "id": "dc-jl-2018-71",
+      "status": "metron_upc",
+      "upc": "76194135724907111"
+    },
+    {
+      "id": "dc-jl-2018-72",
+      "status": "metron_upc",
+      "upc": "76194135724907211"
+    },
+    {
+      "id": "dc-jl-2018-73",
+      "status": "metron_upc",
+      "upc": "76194135724907311"
+    },
+    {
+      "id": "dc-jl-2018-74",
+      "status": "metron_upc",
+      "upc": "76194135724907411"
+    },
+    {
+      "id": "dc-jl-2018-75",
+      "status": "metron_upc",
+      "upc": "76194135724907511"
+    },
+    {
+      "id": "dc-jl-2018-8",
+      "status": "metron_upc",
+      "upc": "76194135724900811"
+    },
+    {
+      "id": "dc-jl-2018-9",
+      "status": "metron_upc",
+      "upc": "76194135724900911"
+    },
+    {
+      "id": "dc-jl-n52-0",
+      "status": "metron_upc",
+      "upc": "76194130593600011"
+    },
+    {
+      "id": "dc-jl-n52-1",
+      "status": "metron_upc",
+      "upc": "76194130593600111"
+    },
+    {
+      "id": "dc-jl-n52-10",
+      "status": "metron_upc",
+      "upc": "76194130593601011"
+    },
+    {
+      "id": "dc-jl-n52-11",
+      "status": "metron_upc",
+      "upc": "76194130593601111"
+    },
+    {
+      "id": "dc-jl-n52-12",
+      "status": "metron_upc",
+      "upc": "76194130593601211"
+    },
+    {
+      "id": "dc-jl-n52-13",
+      "status": "metron_upc",
+      "upc": "76194130593601311"
+    },
+    {
+      "id": "dc-jl-n52-14",
+      "status": "metron_upc",
+      "upc": "76194130593601411"
+    },
+    {
+      "id": "dc-jl-n52-15",
+      "status": "metron_upc",
+      "upc": "76194130593601511"
+    },
+    {
+      "id": "dc-jl-n52-16",
+      "status": "metron_upc",
+      "upc": "76194130593601611"
+    },
+    {
+      "id": "dc-jl-n52-17",
+      "status": "metron_upc",
+      "upc": "76194130593601711"
+    },
+    {
+      "id": "dc-jl-n52-18",
+      "status": "metron_upc",
+      "upc": "76194130593601811"
+    },
+    {
+      "id": "dc-jl-n52-19",
+      "status": "metron_upc",
+      "upc": "76194130593601911"
+    },
+    {
+      "id": "dc-jl-n52-2",
+      "status": "metron_upc",
+      "upc": "76194130593600211"
+    },
+    {
+      "id": "dc-jl-n52-20",
+      "status": "metron_upc",
+      "upc": "76194130593602011"
+    },
+    {
+      "id": "dc-jl-n52-21",
+      "status": "metron_upc",
+      "upc": "76194130593602111"
+    },
+    {
+      "id": "dc-jl-n52-22",
+      "status": "metron_upc",
+      "upc": "76194130593602211"
+    },
+    {
+      "id": "dc-jl-n52-23",
+      "status": "metron_upc",
+      "upc": "76194130593602311"
+    },
+    {
+      "id": "dc-jl-n52-24",
+      "status": "metron_upc",
+      "upc": "76194130593602411"
+    },
+    {
+      "id": "dc-jl-n52-25",
+      "status": "metron_upc",
+      "upc": "76194130593602511"
+    },
+    {
+      "id": "dc-jl-n52-26",
+      "status": "metron_upc",
+      "upc": "76194130593602611"
+    },
+    {
+      "id": "dc-jl-n52-27",
+      "status": "metron_upc",
+      "upc": "76194130593602711"
+    },
+    {
+      "id": "dc-jl-n52-28",
+      "status": "metron_upc",
+      "upc": "76194130593602811"
+    },
+    {
+      "id": "dc-jl-n52-29",
+      "status": "metron_upc",
+      "upc": "76194130593602911"
+    },
+    {
+      "id": "dc-jl-n52-3",
+      "status": "metron_upc",
+      "upc": "76194130593600311"
+    },
+    {
+      "id": "dc-jl-n52-30",
+      "status": "metron_upc",
+      "upc": "76194130593603011"
+    },
+    {
+      "id": "dc-jl-n52-31",
+      "status": "metron_upc",
+      "upc": "76194130593603111"
+    },
+    {
+      "id": "dc-jl-n52-32",
+      "status": "metron_upc",
+      "upc": "76194130593603211"
+    },
+    {
+      "id": "dc-jl-n52-33",
+      "status": "metron_upc",
+      "upc": "76194130593603311"
+    },
+    {
+      "id": "dc-jl-n52-34",
+      "status": "metron_upc",
+      "upc": "76194130593603411"
+    },
+    {
+      "id": "dc-jl-n52-35",
+      "status": "metron_upc",
+      "upc": "76194130593603511"
+    },
+    {
+      "id": "dc-jl-n52-36",
+      "status": "metron_upc",
+      "upc": "76194130593603611"
+    },
+    {
+      "id": "dc-jl-n52-37",
+      "status": "metron_upc",
+      "upc": "76194130593603711"
+    },
+    {
+      "id": "dc-jl-n52-38",
+      "status": "metron_upc",
+      "upc": "76194130593603811"
+    },
+    {
+      "id": "dc-jl-n52-39",
+      "status": "metron_upc",
+      "upc": "76194130593603911"
+    },
+    {
+      "id": "dc-jl-n52-4",
+      "status": "metron_upc",
+      "upc": "76194130593600411"
+    },
+    {
+      "id": "dc-jl-n52-40",
+      "status": "metron_upc",
+      "upc": "76194130593604011"
+    },
+    {
+      "id": "dc-jl-n52-41",
+      "status": "metron_upc",
+      "upc": "76194130593604111"
+    },
+    {
+      "id": "dc-jl-n52-42",
+      "status": "metron_upc",
+      "upc": "76194130593604211"
+    },
+    {
+      "id": "dc-jl-n52-43",
+      "status": "metron_upc",
+      "upc": "76194130593604311"
+    },
+    {
+      "id": "dc-jl-n52-44",
+      "status": "metron_upc",
+      "upc": "76194130593604411"
+    },
+    {
+      "id": "dc-jl-n52-45",
+      "status": "metron_upc",
+      "upc": "76194130593604511"
+    },
+    {
+      "id": "dc-jl-n52-46",
+      "status": "metron_upc",
+      "upc": "76194130593604611"
+    },
+    {
+      "id": "dc-jl-n52-47",
+      "status": "metron_upc",
+      "upc": "76194130593604711"
+    },
+    {
+      "id": "dc-jl-n52-48",
+      "status": "metron_upc",
+      "upc": "76194130593604811"
+    },
+    {
+      "id": "dc-jl-n52-49",
+      "status": "metron_upc",
+      "upc": "76194130593604911"
+    },
+    {
+      "id": "dc-jl-n52-5",
+      "status": "metron_upc",
+      "upc": "76194130593600511"
+    },
+    {
+      "id": "dc-jl-n52-50",
+      "status": "metron_upc",
+      "upc": "76194130593605011"
+    },
+    {
+      "id": "dc-jl-n52-51",
+      "status": "metron_upc",
+      "upc": "76194130593605111"
+    },
+    {
+      "id": "dc-jl-n52-52",
+      "status": "metron_upc",
+      "upc": "76194130593605211"
+    },
+    {
+      "id": "dc-jl-n52-6",
+      "status": "metron_upc",
+      "upc": "76194130593600611"
+    },
+    {
+      "id": "dc-jl-n52-7",
+      "status": "metron_upc",
+      "upc": "76194130593600711"
+    },
+    {
+      "id": "dc-jl-n52-8",
+      "status": "metron_upc",
+      "upc": "76194130593600811"
+    },
+    {
+      "id": "dc-jl-n52-9",
+      "status": "metron_upc",
+      "upc": "76194130593600911"
+    },
+    {
+      "id": "dc-jsa-2007-1",
+      "status": "metron_upc",
+      "upc": "76194125779200111"
+    },
+    {
+      "id": "dc-jsa-2007-10",
+      "status": "metron_upc",
+      "upc": "76194125779201011"
+    },
+    {
+      "id": "dc-jsa-2007-11",
+      "status": "metron_upc",
+      "upc": "76194125779201111"
+    },
+    {
+      "id": "dc-jsa-2007-12",
+      "status": "metron_upc",
+      "upc": "76194125779201211"
+    },
+    {
+      "id": "dc-jsa-2007-13",
+      "status": "metron_upc",
+      "upc": "76194130637701311"
+    },
+    {
+      "id": "dc-jsa-2007-14",
+      "status": "metron_upc",
+      "upc": "76194125779201411"
+    },
+    {
+      "id": "dc-jsa-2007-15",
+      "status": "metron_upc",
+      "upc": "76194125779201511"
+    },
+    {
+      "id": "dc-jsa-2007-16",
+      "status": "metron_upc",
+      "upc": "76194125779201611"
+    },
+    {
+      "id": "dc-jsa-2007-17",
+      "status": "metron_upc",
+      "upc": "76194125779201711"
+    },
+    {
+      "id": "dc-jsa-2007-18",
+      "status": "metron_upc",
+      "upc": "76194125779201811"
+    },
+    {
+      "id": "dc-jsa-2007-19",
+      "status": "metron_upc",
+      "upc": "76194125779201911"
+    },
+    {
+      "id": "dc-jsa-2007-2",
+      "status": "metron_upc",
+      "upc": "76194125779200211"
+    },
+    {
+      "id": "dc-jsa-2007-20",
+      "status": "metron_upc",
+      "upc": "76194125779202011"
+    },
+    {
+      "id": "dc-jsa-2007-21",
+      "status": "metron_upc",
+      "upc": "76194125779202111"
+    }
+  ],
   "dryRun": false,
-  "errors": 200,
-  "finishedAt": "2026-09-08T17:05:26Z",
+  "errors": 0,
+  "finishedAt": "2026-09-08T20:21:08Z",
   "limit": 200,
   "minYear": 2005,
   "noBarcode": 0,
-  "noMatch": 0,
+  "noMatch": 47,
   "rpmCap": 10,
   "skippedExisting": 0,
-  "startedAt": "2026-09-08T17:05:26Z",
-  "upcFilled": 0
+  "startedAt": "2026-09-08T20:21:08Z",
+  "upcFilled": 153
 }

@@ -1,6 +1,6 @@
 {
-  "afterUpc": 2994,
-  "beforeUpc": 2978,
+  "afterUpc": 3163,
+  "beforeUpc": 2994,
   "details": [
     {
       "id": "val-xo2017-9",
@@ -13,6 +13,11 @@
       "issue": "8",
       "series": "X-O Manowar",
       "status": "no_issue"
+    },
+    {
+      "gcdIssue": "https://www.comics.org/api/issue/1978050/?format=json",
+      "id": "val-xo2017-7",
+      "status": "no_barcode"
     },
     {
       "id": "val-xo2017-26",
@@ -411,6 +416,56 @@
       "year": 2024
     },
     {
+      "id": "sw-vader2017-9",
+      "status": "gcd_upc",
+      "upc": "75960608666500911"
+    },
+    {
+      "id": "sw-vader2017-8",
+      "status": "gcd_upc",
+      "upc": "75960608666500811"
+    },
+    {
+      "id": "sw-vader2017-7",
+      "status": "gcd_upc",
+      "upc": "75960608666500711"
+    },
+    {
+      "id": "sw-vader2017-6",
+      "status": "gcd_upc",
+      "upc": "75960608666500611"
+    },
+    {
+      "id": "sw-vader2017-5",
+      "status": "gcd_upc",
+      "upc": "75960608666500511"
+    },
+    {
+      "id": "sw-vader2017-4",
+      "status": "gcd_upc",
+      "upc": "75960608666500411"
+    },
+    {
+      "id": "sw-vader2017-3",
+      "status": "gcd_upc",
+      "upc": "75960608666500311"
+    },
+    {
+      "id": "sw-vader2017-25",
+      "issue": "25",
+      "status": "variant_only"
+    },
+    {
+      "id": "sw-vader2017-24",
+      "status": "gcd_upc",
+      "upc": "75960608666502411"
+    },
+    {
+      "id": "sw-vader2017-1",
+      "issue": "1",
+      "status": "variant_only"
+    },
+    {
       "id": "su-lucifer2018-19",
       "issue": "19",
       "series": "Lucifer",
@@ -466,163 +521,113 @@
     },
     {
       "id": "mv-ya-2013-9",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
+      "issue": "9",
+      "status": "variant_only"
     },
     {
       "id": "mv-ya-2013-8",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
+      "issue": "8",
+      "status": "variant_only"
     },
     {
       "id": "mv-ya-2013-7",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
+      "issue": "7",
+      "status": "variant_only"
     },
     {
       "id": "mv-ya-2013-6",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
+      "issue": "6",
+      "status": "variant_only"
     },
     {
       "id": "mv-ya-2013-5",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
+      "issue": "5",
+      "status": "variant_only"
     },
     {
       "id": "mv-ya-2013-4",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
+      "issue": "4",
+      "status": "variant_only"
     },
     {
       "id": "mv-ya-2013-3",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
+      "issue": "3",
+      "status": "variant_only"
     },
     {
       "id": "mv-ya-2013-2",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
+      "issue": "2",
+      "status": "variant_only"
     },
     {
       "id": "mv-ya-2013-15",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
+      "status": "gcd_upc",
+      "upc": "75960607918601511"
     },
     {
       "id": "mv-ya-2013-14",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
+      "status": "gcd_upc",
+      "upc": "75960607918601411"
     },
     {
       "id": "mv-ya-2013-13",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
+      "status": "gcd_upc",
+      "upc": "75960607918601311"
     },
     {
       "id": "mv-ya-2013-12",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
+      "status": "gcd_upc",
+      "upc": "75960607918601211"
     },
     {
       "id": "mv-ya-2013-11",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
+      "issue": "11",
+      "status": "variant_only"
     },
     {
       "id": "mv-ya-2013-10",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
-    },
-    {
-      "id": "mv-ya-2013-1",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2013
-    },
-    {
-      "id": "mv-ya-2005-9",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2005
-    },
-    {
-      "id": "mv-ya-2005-8",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2005
-    },
-    {
-      "id": "mv-ya-2005-7",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2005
-    },
-    {
-      "id": "mv-ya-2005-6",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2005
-    },
-    {
-      "id": "mv-ya-2005-5",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2005
-    },
-    {
-      "id": "mv-ya-2005-4",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2005
-    },
-    {
-      "id": "mv-ya-2005-3",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2005
-    },
-    {
-      "id": "mv-ya-2005-2",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2005
-    },
-    {
-      "id": "mv-ya-2005-12",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2005
-    },
-    {
-      "id": "mv-ya-2005-11",
-      "series": "Young Avengers",
-      "status": "no_series",
-      "year": 2005
-    },
-    {
-      "id": "mv-ya-2005-10",
       "issue": "10",
       "status": "variant_only"
     },
     {
-      "id": "mv-ya-2005-1",
+      "id": "mv-ya-2013-1",
+      "issue": "1",
+      "status": "variant_only"
+    },
+    {
+      "id": "mv-ya-2005-9",
+      "issue": "9",
+      "status": "variant_only"
+    },
+    {
+      "id": "mv-ya-2005-8",
+      "issue": "8",
+      "status": "variant_only"
+    },
+    {
+      "id": "mv-ya-2005-7",
+      "issue": "7",
+      "status": "variant_only"
+    },
+    {
+      "id": "mv-ya-2005-6",
       "status": "gcd_upc",
-      "upc": "75960605548700111"
+      "upc": "75960605548700611"
+    },
+    {
+      "id": "mv-ya-2005-5",
+      "status": "gcd_upc",
+      "upc": "75960605548700511"
+    },
+    {
+      "id": "mv-ya-2005-4",
+      "status": "gcd_upc",
+      "upc": "75960605548700411"
+    },
+    {
+      "id": "mv-ya-2005-3",
+      "status": "gcd_upc",
+      "upc": "75960605548700311"
     },
     {
       "id": "mv-xmenred-2022-9",
@@ -655,21 +660,6 @@
       "status": "no_issue"
     },
     {
-      "id": "mv-xmenred-2022-4",
-      "status": "gcd_upc",
-      "upc": "978130295343051799"
-    },
-    {
-      "id": "mv-xmenred-2022-3",
-      "status": "gcd_upc",
-      "upc": "978130295228051599"
-    },
-    {
-      "id": "mv-xmenred-2022-2",
-      "status": "gcd_upc",
-      "upc": "978130294752151599"
-    },
-    {
       "id": "mv-xmenred-2022-12",
       "issue": "12",
       "series": "X-Men: Red",
@@ -688,80 +678,51 @@
       "status": "no_issue"
     },
     {
-      "id": "mv-xmenred-2022-1",
-      "status": "gcd_upc",
-      "upc": "978130293283151799"
+      "id": "mv-xmen-2021-9",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2021
     },
     {
-      "id": "mv-xmen-2024-9",
-      "issue": "9",
-      "status": "variant_only"
+      "id": "mv-xmen-2021-8",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2021
     },
     {
-      "id": "mv-xmen-2024-8",
-      "status": "gcd_upc",
-      "upc": "75960620920000811"
+      "id": "mv-xmen-2021-7",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2021
     },
     {
-      "id": "mv-xmen-2024-7",
-      "status": "gcd_upc",
-      "upc": "75960620920000711"
+      "id": "mv-xmen-2021-6",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2021
     },
     {
-      "id": "mv-xmen-2024-6",
-      "status": "gcd_upc",
-      "upc": "75960620920000611"
+      "id": "mv-xmen-2021-5",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2021
     },
     {
-      "id": "mv-xmen-2024-5",
-      "status": "gcd_upc",
-      "upc": "75960620920000511"
-    },
-    {
-      "id": "mv-xmen-2024-4",
-      "status": "gcd_upc",
-      "upc": "75960620920000411"
-    },
-    {
-      "id": "mv-xmen-2024-3",
-      "status": "gcd_upc",
-      "upc": "75960620920000311"
-    },
-    {
-      "id": "mv-xmen-2024-25",
-      "status": "gcd_upc",
-      "upc": "75960620920002511"
-    },
-    {
-      "id": "mv-xmen-2024-24",
-      "status": "gcd_upc",
-      "upc": "75960620920002411"
-    },
-    {
-      "id": "mv-xmen-2024-23",
-      "status": "gcd_upc",
-      "upc": "75960620920002311"
-    },
-    {
-      "id": "mv-xmen-2024-22",
-      "status": "gcd_upc",
-      "upc": "75960620920002211"
-    },
-    {
-      "id": "mv-xmen-2024-21",
-      "status": "gcd_upc",
-      "upc": "759606209201002111"
+      "id": "mv-xmen-2021-4",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2021
     }
   ],
   "dryRun": false,
-  "errors": 22,
-  "finishedAt": "2026-09-08T18:04:18Z",
+  "errors": 26,
+  "finishedAt": "2026-09-08T20:46:47Z",
   "limit": 150,
   "minYear": 2005,
-  "noBarcode": 2,
+  "noBarcode": 17,
   "noIssue": 42,
-  "noSeries": 68,
+  "noSeries": 49,
   "skippedExisting": 0,
-  "startedAt": "2026-09-08T18:04:18Z",
+  "startedAt": "2026-09-08T20:46:47Z",
   "upcFilled": 16
 }
