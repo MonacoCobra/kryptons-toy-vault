@@ -604,6 +604,14 @@ def infer_retailer_company(p: dict) -> str | None:
         return "diamondselect"
     if re.search(r"\bjada\b", bl):
         return "jada"
+    if re.search(r"\bblokees\b", bl):
+        return "blokees"
+    if re.search(r"yolo\s*park|\byolopark\b", bl) or (
+        re.search(r"\bamk\b", bl) and re.search(r"transformers|beast wars|voltes|shurato", bl)
+    ):
+        return "yolopark"
+    if re.search(r"\bsoskill\b|so\s*skill", bl):
+        return "soskill"
     # Mattel AF lines (shop.mattel / retailers) — dolls skipped via RETAILER_SKIP
     if re.search(
         r"masterverse|motu origins|masters of the universe|\bwwe\b|hammond collection|"
@@ -1648,6 +1656,10 @@ def main() -> None:
     sku_first = "--sku-first" in sys.argv or "--sku-rematch" in sys.argv
     sku_only = "--sku-only" in sys.argv
     dry_run = "--dry-run" in sys.argv
+    companies_filter = None
+    for a in sys.argv:
+        if a.startswith("--companies="):
+            companies_filter = {x.strip() for x in a.split("=", 1)[1].split(",") if x.strip()}
     # Default: when --sku-first, also allow fuzzy gap-fill unless --sku-only
     min_score = 16.0
 
@@ -1669,8 +1681,12 @@ def main() -> None:
         enrich_index(flat)
         multi = sum(1 for v in sku_to_products.values() if len(v) > 1)
         print(f"sku→image map size: {len(sku_to_prod)} (multi-CDN SKUs: {multi})")
+        rematch_rows = rows
+        if companies_filter:
+            rematch_rows = [r for r in rows if r.get("company") in companies_filter]
+            print(f"SKU-first scoped to {sorted(companies_filter)} ({len(rematch_rows)} rows)")
         sku_rematch_stats = rematch_images_by_sku(
-            rows, sku_to_prod, sku_to_products=sku_to_products, dry_run=dry_run
+            rematch_rows, sku_to_prod, sku_to_products=sku_to_products, dry_run=dry_run
         )
         print(
             json.dumps(
@@ -1727,6 +1743,9 @@ def main() -> None:
                 dropped += 1
         print(f"=== Rematch: cleared {dropped} image-bake overlays (kept image-sku) ===")
     need = [r for r in rows if not r.get("imageUrl")]
+    if companies_filter:
+        need = [r for r in need if r.get("company") in companies_filter]
+        print(f"companies filter: {sorted(companies_filter)} need={len(need)}")
     if dry_run and sku_first:
         print("(dry-run after SKU-first — skipping fuzzy persist)")
         return
@@ -1807,12 +1826,19 @@ def main() -> None:
             patched += 1
 
     # Rematch / enforce: any remaining shared imageUrl → keep best-scoring figure, clear others
-    cleared_shared = enforce_unique_image_urls_sku_aware(rows, urls) if sku_first else enforce_unique_image_urls(rows, index, urls)
+    if companies_filter:
+        # Scoped bake: only enforce 1:1 among filtered companies (leave Hasbro/ML/etc alone)
+        scoped_rows = [r for r in rows if r.get("company") in companies_filter]
+        cleared_shared = enforce_unique_image_urls_sku_aware(scoped_rows, urls) if sku_first else enforce_unique_image_urls(scoped_rows, index, urls)
+    else:
+        cleared_shared = enforce_unique_image_urls_sku_aware(rows, urls) if sku_first else enforce_unique_image_urls(rows, index, urls)
     if cleared_shared:
         print(f"cleared shared imageUrl from {cleared_shared} rows (strict 1:1)")
 
     # After clears, try one more gap-fill pass with leftover unused product URLs
     need2 = [r for r in rows if not r.get("imageUrl")]
+    if companies_filter:
+        need2 = [r for r in need2 if r.get("company") in companies_filter]
     used_urls = {r["imageUrl"] for r in rows if r.get("imageUrl")}
     used_fig = {r["id"] for r in rows if r.get("imageUrl")}
     cands2: list[tuple[float, str, str, dict, dict]] = []
@@ -1849,7 +1875,11 @@ def main() -> None:
         finals.extend(extra_finals)
         print(f"gap-fill after unique pass: +{len(extra_finals)}")
 
-    cleared_shared2 = enforce_unique_image_urls_sku_aware(rows, urls) if sku_first else enforce_unique_image_urls(rows, index, urls)
+    if companies_filter:
+        scoped_rows2 = [r for r in rows if r.get("company") in companies_filter]
+        cleared_shared2 = enforce_unique_image_urls_sku_aware(scoped_rows2, urls) if sku_first else enforce_unique_image_urls(scoped_rows2, index, urls)
+    else:
+        cleared_shared2 = enforce_unique_image_urls_sku_aware(rows, urls) if sku_first else enforce_unique_image_urls(rows, index, urls)
     if cleared_shared2:
         print(f"second unique pass cleared {cleared_shared2} rows")
         cleared_shared += cleared_shared2

@@ -62,6 +62,12 @@ export const FIGURE_STOREFRONTS: StorefrontSource[] = [
     requireHint: /blokees|champion|galaxy|defender|transformers|ultraman|mega man|saint seiya|figure/i,
   },
   {
+    id: "yolopark",
+    baseUrl: "https://shop.yolopark.com",
+    company: "yolopark",
+    requireHint: /yolopark|amk|model kit|transformers|voltes|shurato|beast wars/i,
+  },
+  {
     id: "blitzway",
     baseUrl: "https://blitzway.com",
     company: "blitzway",
@@ -151,6 +157,7 @@ function isFigureLike(p: ShopifyProduct, source: StorefrontSource): boolean {
     source.company === "valaverse" ||
     source.company === "neca" ||
     source.company === "blokees" ||
+    source.company === "yolopark" ||
     source.company === "blitzway" ||
     source.company === "exo6" ||
     source.company === "starace" ||

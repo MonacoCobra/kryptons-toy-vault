@@ -116,6 +116,8 @@ const COMPANIES: CompanyId[] = [
   "firegirl",
   "i8toys",
   "nanmu",
+  "yolopark",
+  "soskill",
   "vtoys",
 ];
 
@@ -349,6 +351,8 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/fire girl toys|firegirl/.test(s)) return "firegirl";
   if (/\bi8toys\b|i8 toys/.test(s)) return "i8toys";
   if (/nanmu studio|\bnanmu\b/.test(s)) return "nanmu";
+  if (/\byolopark\b|yolo\s*park|\bamk\b/.test(s) && /yolo|amk|transformers/.test(s)) return "yolopark";
+  if (/\bsoskill\b|so\s*skill/.test(s)) return "soskill";
   if (/\bvtoys\b|v toys/.test(s)) return "vtoys";
   if (/valaverse|action force/.test(s)) return "valaverse";
   return null;

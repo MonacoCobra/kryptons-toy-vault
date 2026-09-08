@@ -110,6 +110,8 @@ export type CompanyId =
   | "firegirl"
   | "i8toys"
   | "nanmu"
+  | "yolopark"
+  | "soskill"
   | "vtoys";
 
 export type ItemKind = "figure" | "kit";

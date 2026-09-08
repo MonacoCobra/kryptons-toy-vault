@@ -1,0 +1,700 @@
+{
+  "at": "2026-09-08T01:43:12.072360+00:00",
+  "before": {
+    "blokees": {
+      "rows": 65,
+      "sku": 11,
+      "img": 11,
+      "gtin": 0
+    },
+    "jada": {
+      "rows": 140,
+      "sku": 51,
+      "img": 48,
+      "gtin": 18
+    },
+    "jakks": {
+      "rows": 231,
+      "sku": 8,
+      "img": 16,
+      "gtin": 0
+    },
+    "soskill": {
+      "rows": 0,
+      "sku": 0,
+      "img": 0,
+      "gtin": 0
+    },
+    "yolopark": {
+      "rows": 0,
+      "sku": 0,
+      "img": 0,
+      "gtin": 0
+    }
+  },
+  "apply": true,
+  "demote": {
+    "cleared": 52,
+    "details": [
+      {
+        "id": "blk-optimus-idw",
+        "company": "blokees",
+        "listing": "75611-2"
+      },
+      {
+        "id": "blk-elita",
+        "company": "blokees",
+        "listing": "71163-2"
+      },
+      {
+        "id": "blk-shockwave",
+        "company": "blokees",
+        "listing": "71184-2"
+      },
+      {
+        "id": "blk-bruticus",
+        "company": "blokees",
+        "listing": "71421-2"
+      },
+      {
+        "id": "blk-devastator",
+        "company": "blokees",
+        "listing": "71305-2"
+      },
+      {
+        "id": "jada-av-spiderman",
+        "company": "jada",
+        "listing": "JTY-34930-C"
+      },
+      {
+        "id": "jd7-35",
+        "company": "jada",
+        "listing": "JADA31961"
+      },
+      {
+        "id": "blk-ironhide",
+        "company": "blokees",
+        "listing": "71185-2"
+      },
+      {
+        "id": "blk-soundwave",
+        "company": "blokees",
+        "listing": "71183-2"
+      },
+      {
+        "id": "jada-av-ironman",
+        "company": "jada",
+        "listing": "JADA33431"
+      },
+      {
+        "id": "blk-starscream",
+        "company": "blokees",
+        "listing": "71177-2"
+      },
+      {
+        "id": "jd7-31",
+        "company": "jada",
+        "listing": "JADA253253006"
+      },
+      {
+        "id": "blk-megatron",
+        "company": "blokees",
+        "listing": "71422-2"
+      },
+      {
+        "id": "blk-optimus",
+        "company": "blokees",
+        "listing": "71426-2"
+      },
+      {
+        "id": "blk-bumblebee",
+        "company": "blokees",
+        "listing": "71427-2"
+      },
+      {
+        "id": "jd7-23",
+        "company": "jada",
+        "listing": "JTY-34691-C"
+      },
+      {
+        "id": "jada-gl-ww",
+        "company": "jada",
+        "listing": "JD97392 WW M3 DIE CAST ORIG AF"
+      },
+      {
+        "id": "jada-um-invisible",
+        "company": "jada",
+        "listing": "JADA33776"
+      },
+      {
+        "id": "jak5-jak-nintendo-yoshi",
+        "company": "jakks",
+        "listing": "WON5YOS"
+      },
+      {
+        "id": "jada-sf-cammy",
+        "company": "jada",
+        "listing": "JAD346907"
+      },
+      {
+        "id": "jada-um-bride",
+        "company": "jada",
+        "listing": "JADA31960"
+      },
+      {
+        "id": "jada-gl-batman",
+        "company": "jada",
+        "listing": "JTY-31616-C"
+      },
+      {
+        "id": "jak5-jak-nintendo-luigi",
+        "company": "jakks",
+        "listing": "JK-LUI1"
+      },
+      {
+        "id": "jak5-jak-nintendo-mario",
+        "company": "jakks",
+        "listing": "WON5MAR"
+      },
+      {
+        "id": "jada-um-creature",
+        "company": "jada",
+        "listing": "JTY-253251017-C"
+      },
+      {
+        "id": "jd7-14",
+        "company": "jada",
+        "listing": "JAD367179"
+      },
+      {
+        "id": "jd7-13",
+        "company": "jada",
+        "listing": "JD36768"
+      },
+      {
+        "id": "jd7-12",
+        "company": "jada",
+        "listing": "JAD351710"
+      },
+      {
+        "id": "jd7-10",
+        "company": "jada",
+        "listing": "JAD351727"
+      },
+      {
+        "id": "jd7-08",
+        "company": "jada",
+        "listing": "JADA9335742314R00"
+      },
+      {
+        "id": "jada-um-frankenstein",
+        "company": "jada",
+        "listing": "JTY-253251014-C"
+      },
+      {
+        "id": "jada-um-dracula",
+        "company": "jada",
+        "listing": "JADA34035"
+      },
+      {
+        "id": "jd7-04",
+        "company": "jada",
+        "listing": "JAD346891"
+      },
+      {
+        "id": "jd7-01",
+        "company": "jada",
+        "listing": "JAD342152"
+      },
+      {
+        "id": "jd9-jd-21",
+        "company": "jada",
+        "listing": "JTY-36693-C"
+      },
+      {
+        "id": "jada-sf-chunli",
+        "company": "jada",
+        "listing": "JAD342169"
+      },
+      {
+        "id": "jada-sf-ryu",
+        "company": "jada",
+        "listing": "SDCCRYU"
+      },
+      {
+        "id": "jada-sf-ken",
+        "company": "jada",
+        "listing": "JAD342183"
+      },
+      {
+        "id": "jk2-nintendo-mario",
+        "company": "jakks",
+        "listing": "WON2.5RM"
+      },
+      {
+        "id": "jk2-nintendo-luigi",
+        "company": "jakks",
+        "listing": "WON5ILU"
+      },
+      {
+        "id": "jd9-jd-11",
+        "company": "jada",
+        "listing": "JADA31962"
+      },
+      {
+        "id": "jd9-jd-10",
+        "company": "jada",
+        "listing": "JADA31958"
+      },
+      {
+        "id": "jd9-jd-08",
+        "company": "jada",
+        "listing": "JAD342206"
+      },
+      {
+        "id": "jk7-06",
+        "company": "jakks",
+        "listing": "JP 508363"
+      },
+      {
+        "id": "jd9-jd-07",
+        "company": "jada",
+        "listing": "JAD367681"
+      },
+      {
+        "id": "jk7-05",
+        "company": "jakks",
+        "listing": "JP 533953"
+      },
+      {
+        "id": "jd9-jd-06",
+        "company": "jada",
+        "listing": "JAD342190"
+      },
+      {
+        "id": "jk2-wwe-hogan",
+        "company": "jakks",
+        "listing": "JP91400"
+      },
+      {
+        "id": "jd9-jd-04",
+        "company": "jada",
+        "listing": "JAD357392"
+      },
+      {
+        "id": "jd9-jd-03",
+        "company": "jada",
+        "listing": "JAD34724"
+      },
+      {
+        "id": "jd9-jd-02",
+        "company": "jada",
+        "listing": "JAD360989"
+      },
+      {
+        "id": "jd9-jd-01",
+        "company": "jada",
+        "listing": "JAD374443"
+      }
+    ]
+  },
+  "nanoRemoved": [
+    "jd7-44",
+    "jd7-30",
+    "jd7-29",
+    "jd7-28",
+    "jd7-27",
+    "jd7-26",
+    "jd7-25"
+  ],
+  "jadaCollapse": {
+    "collapsed": [
+      {
+        "keepId": "jada-sf-dee",
+        "dropId": "jd7-23",
+        "name": "dee jay"
+      },
+      {
+        "keepId": "jada-sf-jp",
+        "dropId": "jd7-21",
+        "name": "jp"
+      },
+      {
+        "keepId": "jada-sf-marisa",
+        "dropId": "jd7-20",
+        "name": "marisa"
+      },
+      {
+        "keepId": "jada-sf-manon",
+        "dropId": "jd7-19",
+        "name": "manon"
+      },
+      {
+        "keepId": "jada-sf-kimberly",
+        "dropId": "jd7-18",
+        "name": "kimberly"
+      },
+      {
+        "keepId": "jada-sf-jamie",
+        "dropId": "jd7-17",
+        "name": "jamie"
+      },
+      {
+        "keepId": "jada-sf-luke",
+        "dropId": "jd7-16",
+        "name": "luke"
+      },
+      {
+        "keepId": "jada-sf-juri",
+        "dropId": "jd7-15",
+        "name": "juri"
+      },
+      {
+        "keepId": "jada-sf-cammy",
+        "dropId": "jd7-13",
+        "name": "cammy"
+      },
+      {
+        "keepId": "jada-sf-akuma",
+        "dropId": "jd7-14",
+        "name": "akuma"
+      },
+      {
+        "keepId": "jada-sf-sagat",
+        "dropId": "jd7-12",
+        "name": "sagat"
+      },
+      {
+        "keepId": "jada-sf-vega",
+        "dropId": "jd7-10",
+        "name": "vega"
+      },
+      {
+        "keepId": "jada-sf-zangief",
+        "dropId": "jd7-08",
+        "name": "zangief"
+      },
+      {
+        "keepId": "jd7-04",
+        "dropId": "jada-sf-guile",
+        "name": "guile"
+      },
+      {
+        "keepId": "jd7-03",
+        "dropId": "jada-sf-chunli",
+        "name": "chun-li"
+      },
+      {
+        "keepId": "jd7-02",
+        "dropId": "jada-sf-ken",
+        "name": "ken"
+      },
+      {
+        "keepId": "jada-sf-ryu",
+        "dropId": "jd7-01",
+        "name": "ryu"
+      }
+    ],
+    "flagged": [
+      {
+        "name": "m. bison",
+        "ids": [
+          "jada-sf-bison",
+          "jd7-09"
+        ],
+        "gtins": [
+          "801310361078",
+          "801310366912"
+        ],
+        "reason": "distinct GTINs — leave both"
+      },
+      {
+        "name": "balrog",
+        "ids": [
+          "jd7-11",
+          "jada-sf-balrog"
+        ],
+        "gtins": [
+          "801310357415",
+          "933574131400"
+        ],
+        "reason": "distinct GTINs — leave both"
+      },
+      {
+        "name": "dhalsim",
+        "ids": [
+          "jd7-06",
+          "jada-sf-dhalsim"
+        ],
+        "gtins": [
+          "801310342206",
+          "801310366905"
+        ],
+        "reason": "distinct GTINs — leave both"
+      },
+      {
+        "name": "blanka",
+        "ids": [
+          "jd7-05",
+          "jada-sf-blanka"
+        ],
+        "gtins": [
+          "801310351734",
+          "933793131420"
+        ],
+        "reason": "distinct GTINs — leave both"
+      }
+    ]
+  },
+  "blokeesInject": {
+    "fetched": 199,
+    "added": 141,
+    "skipped": {
+      "filter": 31,
+      "soft_name": 6,
+      "known_listing": 15,
+      "key": 6
+    },
+    "ids": [
+      "sf-blokees-saint-seiya-champion-class-virgo-shaka",
+      "sf-blokees-saint-seiya-champion-class-pisces-aphrodite",
+      "sf-blokees-mega-man-champion-class-zero-mega-man-zero",
+      "sf-blokees-mega-man-champion-class-shooting-star-mega-man",
+      "sf-blokees-jurassic-world-terraventure-ts-welcome-to-jurassic-world",
+      "sf-blokees-evangelion-daalamode-q-series-miracle-link",
+      "sf-blokees-transformers-defender-version-battle-stars",
+      "sf-blokees-ultraman-galaxy-version-s-blazing-courage",
+      "sf-blokees-transformers-galaxy-version-the-lost-light",
+      "sf-blokees-astral-rally-defender-version-the-first-light",
+      "sf-blokees-marvel-rivals-champion-class-anti-venom",
+      "sf-blokees-star-wars-champion-class-anakin-skywalker",
+      "sf-blokees-star-wars-champion-class-clone-trooper",
+      "sf-blokees-dc-defender-version-arkham-chaos-prologue",
+      "sf-blokees-ultraman-galaxy-version-s-unleash-the-spark-of-unity",
+      "sf-blokees-naruto-shippuden-gv-war-begins",
+      "sf-blokees-herospire-champion-class-mythical-aspect-sun-wukong",
+      "sf-blokees-legend-edition-evangelion-production-model-custom-type-08α",
+      "sf-blokees-saint-seiya-champion-class-cygnus-hyoga-ex",
+      "sf-blokees-dc-champion-class-harley-quinn",
+      "sf-blokees-dc-champion-class-nightwing",
+      "sf-blokees-dc-champion-class-batman-beyond",
+      "sf-blokees-dc-champion-class-superman-2025",
+      "sf-blokees-marvel-rivals-champion-class-invisible-woman",
+      "sf-blokees-marvel-rivals-champion-class-jeff-the-land-shark",
+      "sf-blokees-dc-defender-version-justice-league",
+      "sf-blokees-dc-defender-version-legendary-batman-assemble",
+      "sf-blokees-transformers-shining-version-eternal-rivalry",
+      "sf-blokees-star-wars-champion-class-bo-katan-kryze",
+      "sf-blokees-star-wars-champion-class-din-djarin-grogu",
+      "sf-blokees-star-wars-champion-class-luke-skywalker-stormtrooper-disguise-version",
+      "sf-blokees-star-wars-champion-class-han-solo-stormtrooper-disguise-version",
+      "sf-blokees-star-wars-champion-class-stormtrooper",
+      "sf-blokees-star-wars-champion-class-darth-vader",
+      "sf-blokees-marvel-rivals-champion-class-moon-knight",
+      "sf-blokees-herospire-warrior-version-chu-han-saga",
+      "sf-blokees-naruto-champion-class-madara-uchiha",
+      "sf-blokees-saint-seiya-champion-class-phoenix-ikki",
+      "sf-blokees-saint-seiya-champion-class-gemini-saga",
+      "sf-blokees-marvel-rivals-champion-class-rocket-raccoon"
+    ]
+  },
+  "yoloparkInject": {
+    "fetched": 105,
+    "added": 67,
+    "skipped": {
+      "filter": 35,
+      "key": 3
+    },
+    "ids": [
+      "sf-yolopark-amk-rotb-mirage",
+      "sf-yolopark-amk-the_last_knight-optimus_prime",
+      "sf-yolopark-g1-thundercracker-skywarp-set-amk-series",
+      "sf-yolopark-amk-pro-bumblebee2018-shockwave",
+      "sf-yolopark-voltes-v-legacy-mech-amk",
+      "sf-yolopark-amk-pro-transformers2007-ironhide",
+      "sf-yolopark-transformers-beast-wars-blackarachnia-amk-series",
+      "sf-yolopark-transformers-beast-wars-megatron-amk-series",
+      "sf-yolopark-amk-pro-shurato-reiga",
+      "sf-yolopark-g1-nemesis-prime-skywarp-amk-mini-series",
+      "sf-yolopark-transformers-beast-wars-dinobot-amk-series",
+      "sf-yolopark-transformers-beast-wars-optimus-primal-amk-series",
+      "sf-yolopark-amk-pro-bumblebee2018-optimus-prime",
+      "sf-yolopark-voltes-v-legacy-mech-amk-pro",
+      "sf-yolopark-transformers-g1-bumblebee-amk-pro-series",
+      "sf-yolopark-amk-pro-shurato-yasha-oh-gai",
+      "sf-yolopark-mini_pro_metal_slug_3_wave_1",
+      "sf-yolopark-mini-wave-3",
+      "sf-yolopark-amk-pro-rotb-arcee",
+      "sf-yolopark-amk-pro-idw-tarn",
+      "sf-yolopark-amk-pro-samurai-pizza-cats-speedy",
+      "sf-yolopark-rise-of-the-beasts-22cm-apelinq",
+      "sf-yolopark-amk-pro-eva-01",
+      "sf-yolopark-amk-pro-tf4-drift",
+      "sf-yolopark-amk-pro-otoha-karas-regenerate",
+      "sf-yolopark-mini-wave2-g1",
+      "sf-yolopark-transformers-rotb-optimus-prime-amk-pro-series",
+      "sf-yolopark-bmk-g1",
+      "sf-yolopark-amk-pro-tfone-optimus-prime",
+      "sf-yolopark-amk-pro-tfone-megatron",
+      "sf-yolopark-amk-pro-tf2-megatron",
+      "sf-yolopark-amk-pro-shurato-king-dragon-ryoma",
+      "sf-yolopark-amk-pro-bumblebee2018-soundwave",
+      "sf-yolopark-transformers-g1-2optimus-prime-amk-series",
+      "sf-yolopark-transformers-g1-megatron-amk-series",
+      "sf-yolopark-transformers-g1-starscream-amk-series",
+      "sf-yolopark-transformers-g1-bumblebee-amk-series",
+      "sf-yolopark-amk-mini-series-transformers-generation-1-model-kits",
+      "sf-yolopark-the-last-knight-20cm-optimus-prime-model-kit",
+      "sf-yolopark-transformers-generation-1-20cm-starscream-model-kit-amk-pro-series"
+    ]
+  },
+  "jadaInject": {
+    "candidates": 237,
+    "added": 102,
+    "skipped": {
+      "name": 56,
+      "pack": 18,
+      "soft_name": 16,
+      "known_gtin": 21,
+      "non_af": 23,
+      "dup_title": 1
+    },
+    "ids": [
+      "inj-jada-t-hawk",
+      "inj-jada-akuma-deluxe-player-2-exclusive-35743",
+      "inj-jada-blanka-glow-in-the-dark-entertainment-earth-exclusive",
+      "inj-jada-wood-man-deluxe",
+      "inj-jada-bubble-man-deluxe",
+      "inj-jada-mega-man-deluxe",
+      "inj-jada-cammy-player-2",
+      "inj-jada-ultra-street-fighter-dhalsim-deluxe-player-2-exclusive-36690",
+      "inj-jada-ultra-street-fighter-m-bison-deluxe-player-2-exclusive-36691",
+      "inj-jada-cyberpunk-edgerunners-lucy",
+      "inj-jada-cyberpunk-edgerunners-david-martinez",
+      "inj-jada-cut-man-wave-2",
+      "inj-jada-elec-man-wave-2",
+      "inj-jada-hyper-bomb-wave-2",
+      "inj-jada-ken-player-2",
+      "inj-jada-violent-ken-scaled-exclusive",
+      "inj-jada-chun-li-scaled-exclusive",
+      "inj-jada-ice-man",
+      "inj-jada-fire-man",
+      "inj-jada-fei-long",
+      "inj-jada-evil-ryu-scaled-sdcc-2023-exclusive",
+      "inj-jada-lucy",
+      "inj-jada-david",
+      "inj-jada-no-helmet-mega-man-with-neo-metal",
+      "inj-jada-shaggy-rogers",
+      "inj-jada-mummy-of-ankha",
+      "inj-jada-creeper",
+      "inj-jada-neo-metal-set-shelf-wear-packaging",
+      "inj-jada-tony-the-tiger",
+      "inj-jada-blue",
+      "inj-jada-wonder-woman-m7",
+      "inj-jada-spooky-space-kook",
+      "inj-jada-scooby-doo",
+      "inj-jada-sea-demon",
+      "inj-jada-jada-deluxe-street-fighter",
+      "inj-jada-shaggy",
+      "inj-jada-jada-1-32",
+      "inj-jada-jada-1-24",
+      "inj-jada-jada-vehicles-1-32",
+      "inj-jada-ryu-reissue"
+    ]
+  },
+  "jakksInject": {
+    "candidates": 233,
+    "added": 154,
+    "skipped": {
+      "pack": 37,
+      "name": 34,
+      "soft_name": 7,
+      "dup_title": 1
+    },
+    "ids": [
+      "inj-jakks-sonic-with-pink-emerald",
+      "inj-jakks-gerald-robotnik",
+      "inj-jakks-sonic-with-emerald",
+      "inj-jakks-dry-bones",
+      "inj-jakks-builder-luigi",
+      "inj-jakks-fire-mario",
+      "inj-jakks-hammer-bro",
+      "inj-jakks-shadow-grin-mouth",
+      "inj-jakks-shadow-closed-mouth",
+      "inj-jakks-flying-battery-zone",
+      "inj-jakks-mario-with-mushroom",
+      "inj-jakks-goomba",
+      "inj-jakks-light-blue-yoshi",
+      "inj-jakks-parabones-v2",
+      "inj-jakks-ludwig",
+      "inj-jakks-black-shy-guy",
+      "inj-jakks-luigi-shelf-wear-packaging",
+      "inj-jakks-green-yoshi",
+      "inj-jakks-blue-toad",
+      "inj-jakks-metal-mario",
+      "inj-jakks-bone-piranha-plant",
+      "inj-jakks-bowser-jr",
+      "inj-jakks-wario",
+      "inj-jakks-ice-luigi",
+      "inj-jakks-waluigi",
+      "inj-jakks-fire-luigi-with-fire-flower",
+      "inj-jakks-captain-mario-with-red-power-moon",
+      "inj-jakks-explorer-mario-with-blue-power-moon",
+      "inj-jakks-piranha-plant-with-question-block",
+      "inj-jakks-fire-bro-with-fireball",
+      "inj-jakks-captured-hammer-bro-with-hammer",
+      "inj-jakks-lakitu-with-fishing-pole",
+      "inj-jakks-mario-with-cappy",
+      "inj-jakks-mario-with-super-star",
+      "inj-jakks-dungeon-diorama-set",
+      "inj-jakks-parabones-with-wings",
+      "inj-jakks-bowser-diorama-set",
+      "inj-jakks-acorn-plains-diorama-set",
+      "inj-jakks-wind-walker-link-shelf-wear-packaging",
+      "inj-jakks-durotan"
+    ]
+  },
+  "soskill": {
+    "added": 0,
+    "note": "No verified Shopify products.json with variant.sku/GTIN; CompanyId reserved only",
+    "rejected": [
+      "https://soskill.com / www.soskill.com — SSL/EOF, not usable JSON",
+      "https://soskilltoys.com — HTML (not Shopify products.json)",
+      "https://soskill.myshopify.com — 404",
+      "https://topgkstore.com — non-JSON / bot interstitial",
+      "CmdStore/ToyArena/Nerdzoic/HobbyFigures/AFCollector page samples — 0 SoSkill vendor hits"
+    ]
+  },
+  "after": {
+    "blokees": {
+      "rows": 206,
+      "sku": 0,
+      "img": 152,
+      "gtin": 0
+    },
+    "jada": {
+      "rows": 218,
+      "sku": 35,
+      "img": 142,
+      "gtin": 35
+    },
+    "jakks": {
+      "rows": 385,
+      "sku": 50,
+      "img": 170,
+      "gtin": 50
+    },
+    "soskill": {
+      "rows": 0,
+      "sku": 0,
+      "img": 0,
+      "gtin": 0
+    },
+    "yolopark": {
+      "rows": 67,
+      "sku": 0,
+      "img": 67,
+      "gtin": 0
+    }
+  }
+}

@@ -371,3 +371,10 @@ diorama-leaning, and Super Duck accessory-head lines skipped.
 
 **No wave 11.** Regenerate: `python3 scripts/gen-figure-oneshot.py --curated-only`.
 
+## Small brands: Blokees / Jada / JAKKS / Yolopark / SoSkill (2026-09-07)
+
+CompanyIds `yolopark` + `soskill` added. Blokees refreshed from first-party Shopify;
+Yolopark AMK kits from shop.yolopark.com; Jada/JAKKS densified from specialty
+`product-sku-index` (GTIN when known). SoSkill reserved with **no rows** until a
+verified GTIN/image feed exists (see `docs/figure-storefronts.md` rejected list).
+Listing codes demoted to aliases; Nano Metalfigs removed from Jada.

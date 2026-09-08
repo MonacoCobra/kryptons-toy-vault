@@ -611,8 +611,16 @@ def main() -> int:
     fetch_live = "--fetch" in sys.argv or "--live" in sys.argv
     use_cache = "--cache-only" in sys.argv
     dry_run = "--dry-run" in sys.argv
+    companies_filter = None
+    for a in sys.argv:
+        if a.startswith("--companies="):
+            companies_filter = {x.strip() for x in a.split("=", 1)[1].split(",") if x.strip()}
 
     rows = json.loads(ARCHIVE_JSON.read_text())
+    if companies_filter:
+        # Match only target companies; keep other rows untouched in apply
+        print(f"companies filter: {sorted(companies_filter)}")
+
     before_with = sum(1 for r in rows if clean_sku(r.get("sku")))
     before_total = len(rows)
     before_by_source = Counter(
@@ -645,8 +653,9 @@ def main() -> int:
 
     print(f"index size: {len(index)} | oneshot: {before_total} | with sku before: {before_with}")
 
-    finals, diag = match_skus(rows, index)
-    alias_hits = match_listing_aliases(rows, index)
+    match_rows = [r for r in rows if (not companies_filter or r.get("company") in companies_filter)]
+    finals, diag = match_skus(match_rows, index)
+    alias_hits = match_listing_aliases(match_rows, index)
     # Restrict alias attach to figures that already have (or just received) identity
     patched, alias_attached, sku_map, aliases_map = apply_assignments(
         rows, finals, alias_hits, dry_run=dry_run

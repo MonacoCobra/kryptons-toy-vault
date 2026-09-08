@@ -19,6 +19,7 @@ paginates **all** pages from these same shops (see `scripts/gen-figure-oneshot.p
 | Shop DC | https://shop.dc.com | McFarlane Multiverse AF (filter merch) |
 | NECA Store | https://store.necaonline.com | Official NECA AF (filter pins/plush/apparel) |
 | Blokees | https://blokees.com | Champion/Galaxy model figures |
+| Yolopark | https://shop.yolopark.com | AMK / AMK PRO assembleable model kits |
 | Blitzway | https://blitzway.com | Carbotix / Figure Complex / AF |
 | EXO-6 | https://exo-6.com | Star Trek 1:6 articulated |
 | Star Ace | https://www.staracetoys.com | 1/6 AF + DefoStyle soft vinyl |
@@ -63,3 +64,22 @@ Pulse/BBTS/EE remain blocked.
 Curated rows without CDN art are filled (high-confidence only) by
 `scripts/bake-figure-images.py` → `src/data/figure-image-urls.json`. See
 `docs/figure-image-bake.md`.
+
+## Small-brand feed probe (2026-09-07)
+
+**Added / confirmed:**
+- Blokees — https://blokees.com (first-party; listing SKUs → aliases; barcodes usually empty)
+- Yolopark — https://shop.yolopark.com (AMK/AMK PRO kits; listing SKUs → aliases)
+
+**Specialty (already in RETAILER_FEEDS) with real variant.sku / GTIN for these brands:**
+- Jada Toys — CmdStore / ToyArena / ToyDojo / HobbyFigures / Collecticon / etc. (no first-party Shopify JSON)
+- JAKKS Pacific — CmdStore / Toynk / HobbyFigures / CoolToyDen (no first-party Shopify JSON; official sites 404/HTML)
+
+**Rejected (SoSkill / others):**
+- soskill.com / www.soskill.com — SSL/EOF, not usable products.json
+- soskilltoys.com — HTML catalog (not Shopify JSON)
+- soskill.myshopify.com — 404
+- topgkstore.com — bot interstitial / non-JSON
+- shop.jadatoys.de — Magento HTML (not Shopify products.json)
+- jakks.com / jakkspacific.com — 404 / non-Shopify
+- www.yolopark.com — Peppa/merch mix; use shop.yolopark.com for AMK AF kits

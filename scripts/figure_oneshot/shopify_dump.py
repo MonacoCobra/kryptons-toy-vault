@@ -71,6 +71,15 @@ STOREFRONTS = [
         ),
     },
     {
+        "id": "yolopark",
+        "baseUrl": "https://shop.yolopark.com",
+        "company": "yolopark",
+        "requireHint": re.compile(
+            r"yolopark|amk|model kit|transformers|voltes|shurato|beast wars",
+            re.I,
+        ),
+    },
+    {
         "id": "blitzway",
         "baseUrl": "https://blitzway.com",
         "company": "blitzway",
@@ -235,6 +244,13 @@ def is_figure_like(p: dict, source: dict) -> bool:
         if re.search(r"\b(t-?shirt|hoodie|mug|sticker|poster|plush|blind box flat)\b", blob, re.I):
             return False
         return True
+    # Yolopark: AMK assembleable model kits; skip merch / Peppa
+    if source["id"] == "yolopark":
+        if re.search(r"\b(t-?shirt|hoodie|mug|sticker|poster|plush|keychain|acrylic|magnet|peppa|wooden playset)\b", blob, re.I):
+            return False
+        if not re.search(r"\b(amk|model kit|mech model|transformers|voltes|shurato)\b", blob, re.I):
+            return False
+        return True
     # Blitzway: articulated figures; skip posters/apparel
     if source["id"] == "blitzway":
         if re.search(r"\b(poster|t-?shirt|hoodie|mug|pin|apparel)\b", blob, re.I):
@@ -299,7 +315,7 @@ def is_figure_like(p: dict, source: dict) -> bool:
         return False
     if FIGURE_HINT.search(blob) or re.search(r"figures?", ptype, re.I):
         return True
-    if source["company"] in {"bossfight", "loyalsubjects", "super7", "hiya", "premiumdna", "valaverse", "neca", "blokees", "blitzway", "exo6", "starace", "damtoys", "storm", "fourhorsemen"}:
+    if source["company"] in {"bossfight", "loyalsubjects", "super7", "hiya", "premiumdna", "valaverse", "neca", "blokees", "yolopark", "blitzway", "exo6", "starace", "damtoys", "storm", "fourhorsemen"}:
         return True
     return False
 
@@ -363,9 +379,11 @@ def map_product(p: dict, source: dict) -> dict | None:
     if not name:
         return None
     kind = kind_for(p)
-    # Archive is action figures; skip kits unless Bandai-like (we map goodsmile kits out mostly)
-    if kind != "figure":
+    # Archive is action figures; skip kits unless Blokees/Yolopark assembleables
+    if kind != "figure" and source["company"] not in {"blokees", "yolopark"}:
         return None
+    if source["company"] == "yolopark":
+        kind = "kit"
     variant = (p.get("variants") or [{}])[0] or {}
     msrp = parse_money(variant.get("price")) or 24.99
     images = p.get("images") or []
@@ -393,7 +411,7 @@ def map_product(p: dict, source: dict) -> dict | None:
         "scale": scale_for(p, kind),
         "demand": 1.0,
         "tags": sorted(tags),
-        "sku": variant.get("sku") or None,
+        "sku": (lambda raw: (lambda s: s if s and re.fullmatch(r"\d{8}|\d{12,14}", s) else None)(re.sub(r"\D", "", str(raw or ""))))(variant.get("barcode") or variant.get("sku")),
         "exclusive": exclusive,
         "imageUrl": image_url,
         "source": "shopify",

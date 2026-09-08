@@ -1,212 +1,92 @@
 {
-  "bakedAt": "2026-09-07T18:10:26.415039+00:00",
-  "day": "2026-09-07",
+  "bakedAt": "2026-09-08T01:47:04.946218+00:00",
+  "day": "2026-09-08",
   "mode": "sku-first+fuzzy",
   "before": {
-    "total": 19079,
-    "withImage": 9327,
-    "pct": 48.89
+    "total": 19781,
+    "withImage": 9585,
+    "pct": 48.46
   },
   "after": {
-    "total": 19079,
-    "withImage": 9302,
-    "pct": 48.76
+    "total": 19781,
+    "withImage": 9712,
+    "pct": 49.1
   },
   "skuRematch": {
-    "eligible": 8478,
-    "assignedOrConfirmed": 8475,
-    "alreadyCorrect": 8369,
-    "changedMismatch": 98,
-    "filledEmpty": 8,
-    "skippedNoIndex": 144,
+    "eligible": 8395,
+    "assignedOrConfirmed": 8392,
+    "alreadyCorrect": 8250,
+    "changedMismatch": 49,
+    "filledEmpty": 93,
+    "skippedNoIndex": 143,
     "skippedUrlConflict": 3,
     "skippedDupSku": 0,
-    "skuProvenFigureIds": 8551,
-    "reservedUrls": 8475,
+    "skuProvenFigureIds": 8505,
+    "reservedUrls": 8392,
     "samplesChanged": [
       {
-        "figureId": "bs5-bs-luke-dagobah",
-        "name": "Luke Skywalker",
-        "sku": "5010993872817",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/e80845l00-5010993714940-pkg-20-s.jpg?v=1781085452",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/star-wars-the-black-series-lucasfilm-50th-anniversary-wave-1-luke-skywalker-ysalam"
-      },
-      {
-        "figureId": "bs5-bs-tech",
-        "name": "Tech",
-        "sku": "5010993828005",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996106919.webp?v=1721336303",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/star-wars-the-black-series-box-art-wave-5-tech-5010993828005.jpg?v=1618345231"
-      },
-      {
-        "figureId": "bsc-asajj",
-        "name": "Asajj Ventress",
-        "sku": "5010993813391",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/products/5010993813391a.jpg?v=1747332303",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-box-art-wave-4-asajj-ventress-5010993813391-pkg.jpg?v=1752"
-      },
-      {
-        "figureId": "bsc-cal-kestis",
+        "figureId": "bs3-bs-cal-kestis",
         "name": "Cal Kestis",
-        "sku": "630509867134",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/f55315l00-right-22-online-2000sq.jpg?v=1781087435",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-wave-33-6-inch-action-figure-cal-kestis-93.jpg?v=172143179"
+        "sku": "HAS323286",
+        "shop": "toyarena",
+        "from": "https://static.wixstatic.com/media/adc447_97c1df44e5e246908d472611ae6fa99e~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_97c1df44e5e246908",
+        "to": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996323286f.jpg?v=1752090140"
       },
       {
-        "figureId": "bsc-cassian",
-        "name": "Cassian Andor",
-        "sku": "630509477166",
+        "figureId": "bs5-bs-grogu",
+        "name": "Grogu",
+        "sku": "5010994172640",
         "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/f2890-prod-sw-cassianandor-192536-white-online-2000sq.jpg?v=1781085714",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-force-awakens-the-black-series-wave-7-6-inch-captain-cassian-andor-eadu"
+        "from": "https://static.wixstatic.com/media/adc447_021fe6a919a84603a463add35f38b534~mv2.jpg",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-3-pack-excusive-the-mandalorian-ahsoka-tano-grogu-50109941"
       },
       {
-        "figureId": "bsc-lando-esb",
-        "name": "Lando Calrissian",
-        "sku": "630509548262",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/hsc2140lg.jpg?v=1781085347",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-black-series-2017-wave-2-6-inch-action-figure-lando-calrissian_image.gif?v="
+        "figureId": "bs5-bs-ig12",
+        "name": "IG-12",
+        "sku": "HASG0074",
+        "shop": "hobbyfigures",
+        "from": "https://static.wixstatic.com/media/adc447_ab92844f219a4a498861f42182bd23e2~mv2.jpg",
+        "to": "https://cdn.shopify.com/s/files/1/0611/4030/4091/files/Star-Wars-The-Mandalorian-Black-Series-Action-Figu-29.jpg?v=1722906273"
       },
       {
-        "figureId": "bsc-obiwan-anh",
-        "name": "Obi-Wan Kenobi",
-        "sku": "630509476282",
+        "figureId": "bsc-b2emo",
+        "name": "B2EMO",
+        "sku": "195166188980",
         "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/products/5010994189464a.jpg?v=1660950954",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-exclusive-6-inch-action-figure-obi-wan-kenobi-sdcc-2016.jp"
+        "from": "https://static.wixstatic.com/media/adc447_d43060141ac74f3ab99ff62c89525b98~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d43060141ac74f3ab9",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/star-wars-the-black-series-2-pack-exclusive-b2emo-cassian-andor-195166188980.jpg?v"
       },
       {
-        "figureId": "bsc-rex",
-        "name": "Captain Rex",
-        "sku": "5010993883684",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010993883684a.jpg?v=1708368314",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/star-wars-the-black-series-the-bad-batch-exclusive-clone-captain-rex-5010993883684"
+        "figureId": "bsc-clone-arc",
+        "name": "ARC Trooper",
+        "sku": "HAS403551",
+        "shop": "toyarena",
+        "from": "https://static.wixstatic.com/media/adc447_6200f46825aa43a3bc80106a528b2393~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6200f46825aa43a3bc",
+        "to": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996403551a.webp?v=1787959743"
       },
       {
-        "figureId": "bsc-tala",
-        "name": "Tala Durith",
-        "sku": "5010996124807",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/0698/7730/1541/files/F70965X00_pkg_23_tif_900px_150DPI.jpg?v=1787306067",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-2022-wave-5-tala-imperial-officer-5010996124807-pkg.jpg?v="
+        "figureId": "bsc-mace",
+        "name": "Mace Windu",
+        "sku": "HAS226204",
+        "shop": "toyarena",
+        "from": "https://static.wixstatic.com/media/adc447_112e13c816db40f1a8877c6212995248~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_112e13c816db40f1a8",
+        "to": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996226204i.webp?v=1713474178"
       },
       {
-        "figureId": "bsc-vader-anh",
-        "name": "Darth Vader",
-        "sku": "5010996282286",
+        "figureId": "d14mcf-atom-smasher-mega",
+        "name": "Atom Smasher",
+        "sku": "787926173482",
         "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996292537a.webp?v=1763501027",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-2025-wave-darth-vader-06-5010996282286.jpg?v=1743790506"
-      },
-      {
-        "figureId": "d14bs-vader-roto",
-        "name": "Darth Vader",
-        "sku": "630509518579",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/f69935l00-pkg-23-s.jpg?v=1781089210",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/star-wars-the-black-series-2017-wave-3-6-inch-action-figure-darth-vader-refresh_im"
-      },
-      {
-        "figureId": "d14joe-tiger-claw",
-        "name": "Tiger Claw",
-        "sku": "5010996238535",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN5198_3_9769718c-eeef-401e-b798-a76ca0fb9d57.jpg?v=1685588719",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/gi-joe-classified-tiger-force-exclusive-wreckage-tiger-paw-137-5010996238535.jpg?v=17"
-      },
-      {
-        "figureId": "d14mcf-aquaman-merc",
-        "name": "Aquaman",
-        "sku": "787926156799",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/0746/8849/5928/files/b65bcf3b76334feeb7512c14177920c2lg.webp?v=1736537755",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-jla-baf-plactic-man-green-lantern-john-stewart-787926156799.jpg?v=17150"
-      },
-      {
-        "figureId": "d14mcf-batman-ce40",
-        "name": "Batman",
-        "sku": "787926171693",
-        "shop": "cmdstore",
-        "from": "https://static.wixstatic.com/media/adc447_b81e52c598a74950a0531127b9210a89~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b81e52c598a74950a0",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-dark-knight-batman-hong-kong-sky-dive-platinum-787926171693platinum"
+        "from": "https://static.wixstatic.com/media/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f70ef300b6eb48a9a",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-jsa-black-vengeance-2-pack-atom-smasher-vs-the-spectre-787926173482.jpg"
       },
       {
         "figureId": "d14mcf-batman-tas",
         "name": "Batman",
         "sku": "787926177657",
         "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/0611/4030/4091/files/Batman-DC-Multiverse-McFarlane-Collector-Edition-A-0.jpg?v=1769875709",
+        "from": "https://static.wixstatic.com/media/adc447_f3bbc31b1b83463881d02c3b6bd99d4e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f3bbc31b1b83463881",
         "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-direct-the-new-batman-adventures-wave-4-set-of-3-scarecrow-riddler-batman-78792617"
-      },
-      {
-        "figureId": "d14mcf-frostking-baf",
-        "name": "Frost King",
-        "sku": "787926154719",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN5961-3.jpg?v=1674986640",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/dc-multiverse-comic-endless-winter-baf-frost-king-batman-787926154719.jpg?v=165099"
-      },
-      {
-        "figureId": "d14mcf-joker-horse",
-        "name": "The Joker",
-        "sku": "787926154078",
-        "shop": "cmdstore",
-        "from": "https://static.wixstatic.com/media/adc447_67a069e2a2a5469ab3a0c5a5b32a535f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_67a069e2a2a5469ab3",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-batman-white-knight-comic-series-the-joker-787926154078_pkg.jpg?v=17231"
-      },
-      {
-        "figureId": "d14mcf-merciless-baf",
-        "name": "The Merciless",
-        "sku": "787926130560",
-        "shop": "cmdstore",
-        "from": "https://static.wixstatic.com/media/adc447_c543861d22a344c297592d32cc4d9427~mv2.jpg/v1/fit/w_93,h_100/adc447_c543861d22a344c297592d32cc4d9427",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/the-walking-dead-tv-series-deluxe-10-inch-action-figure-negan-merciless-edition_image"
-      },
-      {
-        "figureId": "d14mcf-superman-merc",
-        "name": "Superman",
-        "sku": "787926156782",
-        "shop": "cmdstore",
-        "from": "https://cdn.shopify.com/s/files/1/0746/8849/5928/files/78d488d7a3df496191e65572c41159b1lg.webp?v=1736537555",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-jla-baf-plactic-man-superman-blue-787926156782platinum.jpg?v=1715628329"
-      },
-      {
-        "figureId": "d14ml-armor-hisako",
-        "name": "Armor",
-        "sku": "5010993937981",
-        "shop": "cmdstore",
-        "from": "https://static.wixstatic.com/media/adc447_b0fc579a2fac42a4ba9dd3e2cfbc8ce7~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b0fc579a2fac42a4ba",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-retro-spider-man-wave-2-spider-armor-mk-i-5010993937981.jpg?v=16319"
-      },
-      {
-        "figureId": "d14ml-cassie-baf",
-        "name": "Cassie Lang",
-        "sku": "5010994180041",
-        "shop": "cmdstore",
-        "from": "https://static.wixstatic.com/media/adc447_ceb9275dde65448f8c2efa34eedcdb10~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ceb9275dde65448f8c",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-baf-cassie-lang-wasp-5010994180041.jpg?v=1676500180"
-      },
-      {
-        "figureId": "d14ml-doom-lat",
-        "name": "Doctor Doom",
-        "sku": "5010996142443",
-        "shop": "cmdstore",
-        "from": "https://static.wixstatic.com/media/adc447_1b0f54bb98f848719cedf4ea58dddd85~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1b0f54bb98f848719c",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-avengers-2-pack-captain-marvel-vs-doctor-doom-5010996142443.jpg?v=1"
-      },
-      {
-        "figureId": "d14ml-ghostspider",
-        "name": "Ghost-Spider",
-        "sku": "5010993735501",
-        "shop": "cmdstore",
-        "from": "https://static.wixstatic.com/media/adc447_cd4a62fa201343fd9b1b159bb1bd9432~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cd4a62fa201343fd9b",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-venom-series-baf-venompool-ghost-spider-5010993735501.jpg?v=1723114584"
       },
       {
         "figureId": "d14ml-hulk-baf",
@@ -217,15 +97,135 @@
         "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-maximum-maximum-series-deluxe-hulk-5010996290243_df742bd6-d321-46df-b1"
       },
       {
-        "figureId": "d14ml-kangs",
-        "name": "Kang the Conqueror",
-        "sku": "5010994180072",
+        "figureId": "d14neca-tmnt-rock-toon",
+        "name": "Rocksteady",
+        "sku": "634482541760",
         "shop": "cmdstore",
-        "from": "https://static.wixstatic.com/media/adc447_4c4bb2edc9574d1287d6f8effa1b56e8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_4c4bb2edc9574d1287",
-        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-baf-cassie-lang-kang-the-conqueror-5010994180072.jpg?v=1676500053"
+        "from": "https://static.wixstatic.com/media/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c512f24df2f445e698",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/teenage-mutant-ninja-turtles-turtles-in-time-2-pack-pirate-bebop-rocksteady-634482"
+      },
+      {
+        "figureId": "d14neca-tmnt-splinter-toon",
+        "name": "Splinter",
+        "sku": "634482541586",
+        "shop": "cmdstore",
+        "from": "https://static.wixstatic.com/media/adc447_c228cf18a95a42d5af1ea90b9e8de7bd~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c228cf18a95a42d5af",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/teenage-mutant-ninja-turtles-cartoon-series-2-pack-exclusive-splinter-baxter-63448"
+      },
+      {
+        "figureId": "d14og-teela-minicomic",
+        "name": "Teela",
+        "sku": "194735244324",
+        "shop": "cmdstore",
+        "from": "https://cdn.shopify.com/s/files/1/0600/0141/9429/files/aa6abd53bcefb598da4d8ff1280cb3e2cfffa4c9_dddcf76f-f49c-4636-a8d3-0a23c3cc061d.jpg?v=1",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/masters-of-the-universe-origins-wave-17-cartoon-teela-194735244324_89957673-57bf-48c0"
+      },
+      {
+        "figureId": "d14ss-86-shockwave",
+        "name": "Shockwave",
+        "sku": "G04785L04",
+        "shop": "cmdstore",
+        "from": "https://static.wixstatic.com/media/adc447_641b9d7af05445fea053c84cb7d205a2~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_641b9d7af05445fea0",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-2026-wave-2-g04785l04.jpg?v=1771369407"
+      },
+      {
+        "figureId": "inj-jada-bubble-man-deluxe",
+        "name": "Bubble Man Deluxe",
+        "sku": "801310346945",
+        "shop": "cmdstore",
+        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/801310346945b_1321a4b7-5699-46c8-b59c-0a44cebfcccf.jpg?v=1764893746",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/megaman-1-12-scale-deluxe-bubble-man-801310346945.jpg?v=1770168874"
+      },
+      {
+        "figureId": "inj-jada-cut-man-wave-2",
+        "name": "Cut Man Wave 2",
+        "sku": "801310345092",
+        "shop": "cmdstore",
+        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/801310345092c.jpg?v=1733530958",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/megaman-1-12-scale-wave-2-cut-man-801310345092.jpg?v=1732668734"
+      },
+      {
+        "figureId": "inj-jada-elec-man-wave-2",
+        "name": "Elec Man Wave 2",
+        "sku": "801310345085",
+        "shop": "cmdstore",
+        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/801310345085a.jpg?v=1733530730",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/megaman-1-12-scale-wave-2-elec-man-801310345085.jpg?v=1732668730"
+      },
+      {
+        "figureId": "inj-jada-fire-man",
+        "name": "Fire Man",
+        "sku": "801310342220",
+        "shop": "cmdstore",
+        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/801310342220b.jpg?v=1719946497",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/megaman-1-12-scale-wave-1-fire-man-801310342220.jpg?v=1733959048"
+      },
+      {
+        "figureId": "inj-jada-ice-man",
+        "name": "Ice Man",
+        "sku": "801310342237",
+        "shop": "cmdstore",
+        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/801310342237b.jpg?v=1719020404",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/megaman-1-12-scale-wave-1-ice-man-801310342237.jpg?v=1733959027"
+      },
+      {
+        "figureId": "inj-jada-invincible-wave-1-conquest",
+        "name": "Invincible Wave 1 Conquest",
+        "sku": "801310368459",
+        "shop": "sifitoys",
+        "from": "https://cdn.shopify.com/s/files/1/0535/8125/0722/files/1_dc57a61c-42d5-4736-b8f3-30cfce7e5e49.png?v=1784036060",
+        "to": "https://cdn.shopify.com/s/files/1/0555/7708/3974/files/jada-toys-invincible-wave-1-conquest-1-12-scale-action-figure-1249111932.jpg?v=178406"
+      },
+      {
+        "figureId": "inj-jada-invincible-wave-1-kid-omni-man",
+        "name": "Invincible Wave 1 Kid Omni-Man",
+        "sku": "801310368466",
+        "shop": "sifitoys",
+        "from": "https://cdn.shopify.com/s/files/1/0535/8125/0722/files/1_a05e705c-d6e7-494c-9d19-f9f6ed38e008.png?v=1784035727",
+        "to": "https://cdn.shopify.com/s/files/1/0555/7708/3974/files/jada-toys-invincible-wave-1-kid-omni-man-1-12-scale-action-figure-1249125797.jpg?v=17"
+      },
+      {
+        "figureId": "inj-jada-mega-man-deluxe",
+        "name": "Mega Man Deluxe",
+        "sku": "801310345078",
+        "shop": "cmdstore",
+        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/801310346921e.jpg?v=1764878412",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/megaman-1-12-scale-wave-2-801310345078-pkg.jpg?v=1732741277"
+      },
+      {
+        "figureId": "inj-jada-wood-man-deluxe",
+        "name": "Wood Man Deluxe",
+        "sku": "801310346938",
+        "shop": "cmdstore",
+        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/WOODMAN.webp?v=1765401190",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/megaman-1-12-scale-deluxe-wood-man-801310346938.jpg?v=1770168862"
+      },
+      {
+        "figureId": "joec-classified-tripwire",
+        "name": "Tripwire",
+        "sku": "5010996233929",
+        "shop": "cmdstore",
+        "from": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996233929z.jpg?v=1722551708",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/gi-joe-classified-tiger-force-2-pack-roadblock-tripwire-macleod-5010996233929.jpg?v=1"
+      },
+      {
+        "figureId": "lc5-lc-zordon",
+        "name": "Zordon",
+        "sku": "MMPR-ZORDAN-ALPHA5",
+        "shop": "collecticon",
+        "from": "https://static.wixstatic.com/media/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f1f946d9464640f49",
+        "to": "https://cdn.shopify.com/s/files/1/0076/4103/8906/products/hasbro-power-rangers-lightning-collection-mighty-morphin-zordon-alpha5-box-package"
+      },
+      {
+        "figureId": "mcf2-pp-joker",
+        "name": "The Joker",
+        "sku": "787926156973",
+        "shop": "cmdstore",
+        "from": "https://static.wixstatic.com/media/adc447_7b6ef5546c154091b3f879d07aa7c162~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7b6ef5546c154091b3",
+        "to": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-retro-batman-1966-wave-8-joker-classic-787926156973.jpg?v=1695763219"
       }
     ]
   },
-  "matchedFuzzy": 7,
-  "urlMapSize": 9302
+  "matchedFuzzy": 79,
+  "urlMapSize": 9712
 }
