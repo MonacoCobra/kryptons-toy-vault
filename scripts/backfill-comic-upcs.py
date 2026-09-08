@@ -88,6 +88,7 @@ def locg_cover(locg_id: str, size: str = "large") -> str:
 
 
 def fetch(url: str, accept: str = "text/html") -> tuple[str, str]:
+    """Fetch LOCG with polite backoff on 403/429 (Shelby: don't look greedy)."""
     req = urllib.request.Request(
         url,
         headers={
@@ -96,8 +97,21 @@ def fetch(url: str, accept: str = "text/html") -> tuple[str, str]:
             "X-Requested-With": "XMLHttpRequest",
         },
     )
-    with urllib.request.urlopen(req, timeout=45) as res:
-        return res.read().decode("utf-8", "ignore"), res.geturl()
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(req, timeout=45) as res:
+                return res.read().decode("utf-8", "ignore"), res.geturl()
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 429) and attempt < 4:
+                # escalate: 90s, 180s, 360s, 600s
+                wait = min(600, 90 * (2 ** attempt))
+                print(
+                    f"  LOCG HTTP {e.code} — backing off {wait}s (polite throttle)",
+                    file=sys.stderr,
+                )
+                time.sleep(wait)
+                continue
+            raise
 
 
 def parse_locg_html(html: str, url: str) -> dict | None:
@@ -811,7 +825,7 @@ def publisher_group(publisher: str) -> str:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--limit", type=int, default=40, help="Max comics to attempt")
-    ap.add_argument("--delay", type=float, default=30.0, help="Seconds between LOCG requests (robots Crawl-delay=30)")
+    ap.add_argument("--delay", type=float, default=90.0, help="Seconds between LOCG requests (robots Crawl-delay=30; we use 90+ when 403s appear)")
     ap.add_argument("--only", type=str, default="", help="Comma-separated comic ids")
     ap.add_argument("--seeds-only", action="store_true", help="Only process seeded locgIds")
     ap.add_argument("--from-catalog", action="store_true", help="Prioritize popular modern catalog singles missing UPC")

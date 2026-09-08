@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
 mkdir -p scripts/logs
-DELAY="${DELAY:-30}"
+DELAY="${DELAY:-90}"
 LIMIT="${LIMIT:-2500}"
 MAX_MIN="${MAX_MINUTES:-360}"
 MIN_YEAR="${MIN_YEAR:-2005}"
