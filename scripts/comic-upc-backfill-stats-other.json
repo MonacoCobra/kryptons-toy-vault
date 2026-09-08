@@ -1,662 +1,4791 @@
 {
-  "attempted": 110,
-  "beforeCovers": 1148,
-  "beforeUpc": 888,
-  "coverUpdated": 220,
-  "coversFromSeriesList": 110,
+  "afterCovers": 1781,
+  "afterUpc": 1764,
+  "attempted": 680,
+  "beforeCovers": 1490,
+  "beforeUpc": 1214,
+  "coverUpdated": 303,
+  "coverUrlSize": 1781,
+  "coversFromSeriesList": 303,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
+  "delay": 30.0,
   "details": [
     {
-      "id": "im-twd-163",
-      "issue": "163",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073016311"
-    },
-    {
-      "id": "im-twd-162",
-      "issue": "162",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073016211"
-    },
-    {
-      "id": "im-twd-161",
-      "issue": "161",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073016111"
-    },
-    {
-      "id": "im-twd-160",
-      "issue": "160",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073016011"
-    },
-    {
-      "id": "im-twd-159",
-      "issue": "159",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073015911"
-    },
-    {
-      "id": "im-twd-158",
-      "issue": "158",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073015811"
-    },
-    {
-      "id": "im-twd-157",
-      "issue": "157",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073015711"
-    },
-    {
-      "id": "im-twd-156",
-      "issue": "156",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073015611"
-    },
-    {
-      "id": "im-twd-155",
-      "issue": "155",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073015511"
-    },
-    {
-      "id": "im-twd-154",
-      "issue": "154",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073015411"
-    },
-    {
-      "id": "im-twd-153",
-      "issue": "153",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073015311"
-    },
-    {
-      "id": "im-twd-152",
-      "issue": "152",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073015211"
-    },
-    {
-      "id": "im-twd-151",
-      "issue": "151",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073015111"
+      "id": "im-sd-260",
+      "issue": "260",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-150",
-      "issue": "150",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073015011"
+      "id": "im-sd-259",
+      "issue": "259",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-149",
-      "issue": "149",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073014911"
+      "id": "im-sd-258",
+      "issue": "258",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-148",
-      "issue": "148",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073014811"
+      "id": "im-sd-257",
+      "issue": "257",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-147",
-      "issue": "147",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073014711"
+      "id": "im-sd-256",
+      "issue": "256",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-146",
-      "issue": "146",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073014611"
+      "id": "im-sd-255",
+      "issue": "255",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-145",
-      "issue": "145",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073014511"
+      "id": "im-sd-254",
+      "issue": "254",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-144",
-      "issue": "144",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073014411"
+      "id": "im-sd-253",
+      "issue": "253",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-143",
-      "issue": "143",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073014311"
+      "id": "im-sd-252",
+      "issue": "252",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-142",
-      "issue": "142",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073014211"
+      "id": "im-sd-251",
+      "issue": "251",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-141",
-      "issue": "141",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073014111"
+      "id": "im-sd-250",
+      "issue": "250",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-140",
-      "issue": "140",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073014011"
+      "id": "im-sd-249",
+      "issue": "249",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-139",
-      "issue": "139",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073013911"
+      "id": "im-sd-248",
+      "issue": "248",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-138",
-      "issue": "138",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073013811"
+      "id": "im-sd-247",
+      "issue": "247",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-137",
-      "issue": "137",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073013711"
+      "id": "im-sd-246",
+      "issue": "246",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-136",
-      "issue": "136",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073013611"
+      "id": "im-sd-245",
+      "issue": "245",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-135",
-      "issue": "135",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073013511"
+      "id": "im-sd-244",
+      "issue": "244",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-134",
-      "issue": "134",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073013411"
+      "id": "im-sd-243",
+      "issue": "243",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-133",
-      "issue": "133",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073013311"
+      "id": "im-sd-242",
+      "issue": "242",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-132",
-      "issue": "132",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073013211"
+      "id": "im-sd-241",
+      "issue": "241",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-131",
-      "issue": "131",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073013111"
+      "id": "im-sd-240",
+      "issue": "240",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-130",
-      "issue": "130",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073013011"
+      "id": "im-sd-239",
+      "issue": "239",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-129",
-      "issue": "129",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073012911"
+      "id": "im-sd-238",
+      "issue": "238",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-128",
-      "issue": "128",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073012811"
+      "id": "im-sd-237",
+      "issue": "237",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-127",
-      "issue": "127",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073012711"
+      "id": "im-sd-236",
+      "issue": "236",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-126",
-      "issue": "126",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073012611"
+      "id": "im-sd-235",
+      "issue": "235",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-125",
-      "issue": "125",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073012511"
+      "id": "im-sd-234",
+      "issue": "234",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-124",
-      "issue": "124",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073012411"
+      "id": "im-sd-233",
+      "issue": "233",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-123",
-      "issue": "123",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073012311"
+      "id": "im-sd-232",
+      "issue": "232",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-122",
-      "issue": "122",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073012211"
+      "id": "im-sd-231",
+      "issue": "231",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-121",
-      "issue": "121",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073012111"
+      "id": "im-sd-230",
+      "issue": "230",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-120",
-      "issue": "120",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073012011"
+      "id": "im-sd-229",
+      "issue": "229",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-119",
-      "issue": "119",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073011911"
+      "id": "im-sd-228",
+      "issue": "228",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-118",
-      "issue": "118",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073011811"
+      "id": "im-sd-227",
+      "issue": "227",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-117",
-      "issue": "117",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073011711"
+      "id": "im-sd-226",
+      "issue": "226",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-116",
-      "issue": "116",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073011611"
+      "id": "im-sd-225",
+      "issue": "225",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-115",
-      "issue": "115",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073011511"
+      "id": "im-sd-224",
+      "issue": "224",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-114",
-      "issue": "114",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073011411"
+      "id": "im-sd-223",
+      "issue": "223",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-113",
-      "issue": "113",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073011311"
+      "id": "im-sd-222",
+      "issue": "222",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-112",
-      "issue": "112",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073011211"
+      "id": "im-sd-221",
+      "issue": "221",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-111",
-      "issue": "111",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073011111"
+      "id": "im-sd-220",
+      "issue": "220",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-110",
-      "issue": "110",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073011011"
+      "id": "im-sd-219",
+      "issue": "219",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-109",
-      "issue": "109",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073010911"
+      "id": "im-sd-218",
+      "issue": "218",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-108",
-      "issue": "108",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073010811"
+      "id": "im-sd-217",
+      "issue": "217",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-107",
-      "issue": "107",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073010711"
+      "id": "im-sd-216",
+      "issue": "216",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-106",
-      "issue": "106",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073010611"
+      "id": "im-sd-215",
+      "issue": "215",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-105",
-      "issue": "105",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073010511"
+      "id": "im-sd-214",
+      "issue": "214",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-104",
-      "issue": "104",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073010411"
+      "id": "im-sd-213",
+      "issue": "213",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-103",
-      "issue": "103",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073010311"
+      "id": "im-sd-212",
+      "issue": "212",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-102",
-      "issue": "102",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073010211"
+      "id": "im-sd-211",
+      "issue": "211",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-101",
-      "issue": "101",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073010111"
+      "id": "im-sd-210",
+      "issue": "210",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-100",
-      "issue": "100",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073010011"
+      "id": "im-sd-209",
+      "issue": "209",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-99",
-      "issue": "99",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073009911"
+      "id": "im-sd-208",
+      "issue": "208",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-98",
-      "issue": "98",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073009811"
+      "id": "im-sd-207",
+      "issue": "207",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-97",
-      "issue": "97",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073009711"
+      "id": "im-sd-206",
+      "issue": "206",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-96",
-      "issue": "96",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073009611"
+      "id": "im-sd-205",
+      "issue": "205",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-95",
-      "issue": "95",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073009511"
+      "id": "im-sd-204",
+      "issue": "204",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "im-twd-94",
-      "issue": "94",
-      "series": "The Walking Dead",
-      "seriesPick": "100004",
-      "status": "locg_upc",
-      "upc": "70985300073009411"
+      "id": "im-sd-203",
+      "issue": "203",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "joe-arah-idw-165",
+      "id": "im-sd-202",
+      "issue": "202",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-201",
+      "issue": "201",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-200",
+      "issue": "200",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-199",
+      "issue": "199",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-198",
+      "issue": "198",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-197",
+      "issue": "197",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-196",
+      "issue": "196",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-195",
+      "issue": "195",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-194",
+      "issue": "194",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-193",
+      "issue": "193",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-192",
+      "issue": "192",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-191",
+      "issue": "191",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-190",
+      "issue": "190",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-189",
+      "issue": "189",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-188",
+      "issue": "188",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-187",
+      "issue": "187",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-186",
+      "issue": "186",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-185",
+      "issue": "185",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-184",
+      "issue": "184",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-183",
+      "issue": "183",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-182",
+      "issue": "182",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-181",
+      "issue": "181",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-180",
+      "issue": "180",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-179",
+      "issue": "179",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-178",
+      "issue": "178",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-177",
+      "issue": "177",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-176",
+      "issue": "176",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-175",
+      "issue": "175",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-174",
+      "issue": "174",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-173",
+      "issue": "173",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-172",
+      "issue": "172",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-171",
+      "issue": "171",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-170",
+      "issue": "170",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-169",
+      "issue": "169",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-168",
+      "issue": "168",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-167",
+      "issue": "167",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-166",
+      "issue": "166",
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
+    },
+    {
+      "id": "im-sd-165",
       "issue": "165",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148816511"
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "joe-arah-idw-164",
+      "id": "im-sd-164",
       "issue": "164",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148816411"
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "joe-arah-idw-163",
+      "id": "im-sd-163",
       "issue": "163",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148816311"
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "joe-arah-idw-162",
+      "id": "im-sd-162",
       "issue": "162",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148816211"
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "joe-arah-idw-161",
+      "id": "im-sd-161",
       "issue": "161",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148816111"
+      "series": "Savage Dragon",
+      "seriesPick": "106399",
+      "status": "missing"
     },
     {
-      "id": "joe-arah-idw-160",
+      "id": "joe-arah-idw-155",
+      "issue": "155",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-154",
+      "issue": "154",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-153",
+      "issue": "153",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-152",
+      "issue": "152",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-151",
+      "issue": "151",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-150",
+      "issue": "150",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-149",
+      "issue": "149",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-148",
+      "issue": "148",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-147",
+      "issue": "147",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-146",
+      "issue": "146",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-145",
+      "issue": "145",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-144",
+      "issue": "144",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-143",
+      "issue": "143",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-142",
+      "issue": "142",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-141",
+      "issue": "141",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-140",
+      "issue": "140",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-139",
+      "issue": "139",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-138",
+      "issue": "138",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-137",
+      "issue": "137",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-136",
+      "issue": "136",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-135",
+      "issue": "135",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-134",
+      "issue": "134",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-133",
+      "issue": "133",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-132",
+      "issue": "132",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-131",
+      "issue": "131",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-130",
+      "issue": "130",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-129",
+      "issue": "129",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-128",
+      "issue": "128",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-127",
+      "issue": "127",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-126",
+      "issue": "126",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-125",
+      "issue": "125",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-124",
+      "issue": "124",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-123",
+      "issue": "123",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-122",
+      "issue": "122",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-121",
+      "issue": "121",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-120",
+      "issue": "120",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-119",
+      "issue": "119",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-118",
+      "issue": "118",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-117",
+      "issue": "117",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-116",
+      "issue": "116",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-115",
+      "issue": "115",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-114",
+      "issue": "114",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-113",
+      "issue": "113",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-112",
+      "issue": "112",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-111",
+      "issue": "111",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-110",
+      "issue": "110",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-109",
+      "issue": "109",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-108",
+      "issue": "108",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-107",
+      "issue": "107",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-106",
+      "issue": "106",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-105",
+      "issue": "105",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-104",
+      "issue": "104",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-103",
+      "issue": "103",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-102",
+      "issue": "102",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-101",
+      "issue": "101",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-100",
+      "issue": "100",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-99",
+      "issue": "99",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-98",
+      "issue": "98",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-97",
+      "issue": "97",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-96",
+      "issue": "96",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-95",
+      "issue": "95",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-94",
+      "issue": "94",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-93",
+      "issue": "93",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-92",
+      "issue": "92",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-91",
+      "issue": "91",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-90",
+      "issue": "90",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-89",
+      "issue": "89",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-88",
+      "issue": "88",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-87",
+      "issue": "87",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-86",
+      "issue": "86",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-85",
+      "issue": "85",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-84",
+      "issue": "84",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-83",
+      "issue": "83",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-82",
+      "issue": "82",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-81",
+      "issue": "81",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-80",
+      "issue": "80",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-79",
+      "issue": "79",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-78",
+      "issue": "78",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-77",
+      "issue": "77",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-76",
+      "issue": "76",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-75",
+      "issue": "75",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-74",
+      "issue": "74",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-73",
+      "issue": "73",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-72",
+      "issue": "72",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-71",
+      "issue": "71",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-70",
+      "issue": "70",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-69",
+      "issue": "69",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-68",
+      "issue": "68",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-67",
+      "issue": "67",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-66",
+      "issue": "66",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-65",
+      "issue": "65",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-64",
+      "issue": "64",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-63",
+      "issue": "63",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-62",
+      "issue": "62",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-61",
+      "issue": "61",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-60",
+      "issue": "60",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-59",
+      "issue": "59",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-58",
+      "issue": "58",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-57",
+      "issue": "57",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "joe-arah-idw-56",
+      "issue": "56",
+      "series": "G.I. Joe: A Real American Hero (IDW)",
+      "seriesPick": "101711",
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-150",
+      "issue": "150",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-149",
+      "issue": "149",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-148",
+      "issue": "148",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-147",
+      "issue": "147",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-146",
+      "issue": "146",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-145",
+      "issue": "145",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-144",
+      "issue": "144",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-143",
+      "issue": "143",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-142",
+      "issue": "142",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-141",
+      "issue": "141",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-140",
+      "issue": "140",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-139",
+      "issue": "139",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-138",
+      "issue": "138",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-137",
+      "issue": "137",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-136",
+      "issue": "136",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-135",
+      "issue": "135",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-134",
+      "issue": "134",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-133",
+      "issue": "133",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-132",
+      "issue": "132",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-131",
+      "issue": "131",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-130",
+      "issue": "130",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-129",
+      "issue": "129",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-128",
+      "issue": "128",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-127",
+      "issue": "127",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-126",
+      "issue": "126",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-125",
+      "issue": "125",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-124",
+      "issue": "124",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-123",
+      "issue": "123",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-122",
+      "issue": "122",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-121",
+      "issue": "121",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-120",
+      "issue": "120",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-119",
+      "issue": "119",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-118",
+      "issue": "118",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-117",
+      "issue": "117",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-116",
+      "issue": "116",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-115",
+      "issue": "115",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-114",
+      "issue": "114",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-113",
+      "issue": "113",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-112",
+      "issue": "112",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-111",
+      "issue": "111",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-110",
+      "issue": "110",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-109",
+      "issue": "109",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-108",
+      "issue": "108",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-107",
+      "issue": "107",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-106",
+      "issue": "106",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-105",
+      "issue": "105",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-104",
+      "issue": "104",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-103",
+      "issue": "103",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-102",
+      "issue": "102",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-101",
+      "issue": "101",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-100",
+      "issue": "100",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-99",
+      "issue": "99",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-98",
+      "issue": "98",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-97",
+      "issue": "97",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-96",
+      "issue": "96",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-95",
+      "issue": "95",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-94",
+      "issue": "94",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-93",
+      "issue": "93",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-92",
+      "issue": "92",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-91",
+      "issue": "91",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-90",
+      "issue": "90",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-89",
+      "issue": "89",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-88",
+      "issue": "88",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-87",
+      "issue": "87",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-86",
+      "issue": "86",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-85",
+      "issue": "85",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-84",
+      "issue": "84",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-83",
+      "issue": "83",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-82",
+      "issue": "82",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-81",
+      "issue": "81",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-80",
+      "issue": "80",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-79",
+      "issue": "79",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-78",
+      "issue": "78",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-77",
+      "issue": "77",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-76",
+      "issue": "76",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-75",
+      "issue": "75",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-74",
+      "issue": "74",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-73",
+      "issue": "73",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-72",
+      "issue": "72",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-71",
+      "issue": "71",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-70",
+      "issue": "70",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-69",
+      "issue": "69",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-68",
+      "issue": "68",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-67",
+      "issue": "67",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-66",
+      "issue": "66",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-65",
+      "issue": "65",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-64",
+      "issue": "64",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-63",
+      "issue": "63",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-62",
+      "issue": "62",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-61",
+      "issue": "61",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-60",
+      "issue": "60",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-59",
+      "issue": "59",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-58",
+      "issue": "58",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-57",
+      "issue": "57",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-56",
+      "issue": "56",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-55",
+      "issue": "55",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-54",
+      "issue": "54",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-53",
+      "issue": "53",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-52",
+      "issue": "52",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dh-bprd-hell-51",
+      "issue": "51",
+      "series": "B.P.R.D.: Hell on Earth",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-150",
+      "issue": "150",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-149",
+      "issue": "149",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-148",
+      "issue": "148",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-147",
+      "issue": "147",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-146",
+      "issue": "146",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-145",
+      "issue": "145",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-144",
+      "issue": "144",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-143",
+      "issue": "143",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-142",
+      "issue": "142",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-141",
+      "issue": "141",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-140",
+      "issue": "140",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-139",
+      "issue": "139",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-138",
+      "issue": "138",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-137",
+      "issue": "137",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-136",
+      "issue": "136",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-135",
+      "issue": "135",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-134",
+      "issue": "134",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-133",
+      "issue": "133",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-132",
+      "issue": "132",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-131",
+      "issue": "131",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-130",
+      "issue": "130",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-129",
+      "issue": "129",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-128",
+      "issue": "128",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-127",
+      "issue": "127",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-126",
+      "issue": "126",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-125",
+      "issue": "125",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-124",
+      "issue": "124",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-123",
+      "issue": "123",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-122",
+      "issue": "122",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-121",
+      "issue": "121",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-120",
+      "issue": "120",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-119",
+      "issue": "119",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-118",
+      "issue": "118",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-117",
+      "issue": "117",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-116",
+      "issue": "116",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-115",
+      "issue": "115",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-114",
+      "issue": "114",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-113",
+      "issue": "113",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-112",
+      "issue": "112",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-111",
+      "issue": "111",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-110",
+      "issue": "110",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-109",
+      "issue": "109",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-108",
+      "issue": "108",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-107",
+      "issue": "107",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-106",
+      "issue": "106",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-105",
+      "issue": "105",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-104",
+      "issue": "104",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-103",
+      "issue": "103",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-102",
+      "issue": "102",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-101",
+      "issue": "101",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-100",
+      "issue": "100",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-99",
+      "issue": "99",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-98",
+      "issue": "98",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-97",
+      "issue": "97",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-96",
+      "issue": "96",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-95",
+      "issue": "95",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-94",
+      "issue": "94",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-93",
+      "issue": "93",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-92",
+      "issue": "92",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-91",
+      "issue": "91",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-90",
+      "issue": "90",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-89",
+      "issue": "89",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-88",
+      "issue": "88",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-87",
+      "issue": "87",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-86",
+      "issue": "86",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-85",
+      "issue": "85",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-84",
+      "issue": "84",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-83",
+      "issue": "83",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-82",
+      "issue": "82",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-81",
+      "issue": "81",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-80",
+      "issue": "80",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-79",
+      "issue": "79",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-78",
+      "issue": "78",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-77",
+      "issue": "77",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-76",
+      "issue": "76",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-75",
+      "issue": "75",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-74",
+      "issue": "74",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-73",
+      "issue": "73",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-72",
+      "issue": "72",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-71",
+      "issue": "71",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-70",
+      "issue": "70",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-69",
+      "issue": "69",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-68",
+      "issue": "68",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-67",
+      "issue": "67",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-66",
+      "issue": "66",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-65",
+      "issue": "65",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-64",
+      "issue": "64",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-63",
+      "issue": "63",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-62",
+      "issue": "62",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-61",
+      "issue": "61",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-60",
+      "issue": "60",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-59",
+      "issue": "59",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-58",
+      "issue": "58",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-57",
+      "issue": "57",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-56",
+      "issue": "56",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-55",
+      "issue": "55",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-54",
+      "issue": "54",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-53",
+      "issue": "53",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-52",
+      "issue": "52",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "idw-tmnt-51",
+      "issue": "51",
+      "series": "Teenage Mutant Ninja Turtles",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-193",
+      "issue": "193",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-192",
+      "issue": "192",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-191",
+      "issue": "191",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-190",
+      "issue": "190",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-189",
+      "issue": "189",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-188",
+      "issue": "188",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-187",
+      "issue": "187",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-186",
+      "issue": "186",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-185",
+      "issue": "185",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-184",
+      "issue": "184",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-183",
+      "issue": "183",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-182",
+      "issue": "182",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-181",
+      "issue": "181",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-180",
+      "issue": "180",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-179",
+      "issue": "179",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-178",
+      "issue": "178",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-177",
+      "issue": "177",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-176",
+      "issue": "176",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-175",
+      "issue": "175",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-174",
+      "issue": "174",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-173",
+      "issue": "173",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-172",
+      "issue": "172",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-171",
+      "issue": "171",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-170",
+      "issue": "170",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-169",
+      "issue": "169",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-168",
+      "issue": "168",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-167",
+      "issue": "167",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-166",
+      "issue": "166",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-165",
+      "issue": "165",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-164",
+      "issue": "164",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-163",
+      "issue": "163",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-162",
+      "issue": "162",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-161",
+      "issue": "161",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-160",
       "issue": "160",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148816011"
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
     },
     {
-      "id": "joe-arah-idw-159",
+      "id": "twd-deluxe-159",
       "issue": "159",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148815911"
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
     },
     {
-      "id": "joe-arah-idw-158",
+      "id": "twd-deluxe-158",
       "issue": "158",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148815811"
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
     },
     {
-      "id": "joe-arah-idw-157",
+      "id": "twd-deluxe-157",
       "issue": "157",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148815711"
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
     },
     {
-      "id": "joe-arah-idw-156",
+      "id": "twd-deluxe-156",
       "issue": "156",
-      "series": "G.I. Joe: A Real American Hero (IDW)",
-      "seriesPick": "101711",
-      "status": "locg_upc",
-      "upc": "82771400148815611"
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-155",
+      "issue": "155",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-154",
+      "issue": "154",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-153",
+      "issue": "153",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-152",
+      "issue": "152",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-151",
+      "issue": "151",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-150",
+      "issue": "150",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-103",
+      "issue": "103",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-102",
+      "issue": "102",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-101",
+      "issue": "101",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-100",
+      "issue": "100",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-99",
+      "issue": "99",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-98",
+      "issue": "98",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-97",
+      "issue": "97",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-96",
+      "issue": "96",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-95",
+      "issue": "95",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-94",
+      "issue": "94",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-93",
+      "issue": "93",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-92",
+      "issue": "92",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-91",
+      "issue": "91",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-90",
+      "issue": "90",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-89",
+      "issue": "89",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-88",
+      "issue": "88",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-87",
+      "issue": "87",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-86",
+      "issue": "86",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-85",
+      "issue": "85",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-84",
+      "issue": "84",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-83",
+      "issue": "83",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-82",
+      "issue": "82",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-81",
+      "issue": "81",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-80",
+      "issue": "80",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-79",
+      "issue": "79",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-78",
+      "issue": "78",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-77",
+      "issue": "77",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-76",
+      "issue": "76",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-75",
+      "issue": "75",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-74",
+      "issue": "74",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-73",
+      "issue": "73",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-72",
+      "issue": "72",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-71",
+      "issue": "71",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-70",
+      "issue": "70",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-69",
+      "issue": "69",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-68",
+      "issue": "68",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-67",
+      "issue": "67",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-66",
+      "issue": "66",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-65",
+      "issue": "65",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-64",
+      "issue": "64",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-63",
+      "issue": "63",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-62",
+      "issue": "62",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-61",
+      "issue": "61",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-60",
+      "issue": "60",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-59",
+      "issue": "59",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-58",
+      "issue": "58",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-57",
+      "issue": "57",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-56",
+      "issue": "56",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-55",
+      "issue": "55",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-54",
+      "issue": "54",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-53",
+      "issue": "53",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-52",
+      "issue": "52",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-51",
+      "issue": "51",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-50",
+      "issue": "50",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-49",
+      "issue": "49",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "twd-deluxe-48",
+      "issue": "48",
+      "series": "The Walking Dead Deluxe",
+      "seriesPick": "148161",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-144",
+      "issue": "144",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-143",
+      "issue": "143",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-142",
+      "issue": "142",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-141",
+      "issue": "141",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-140",
+      "issue": "140",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-139",
+      "issue": "139",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-138",
+      "issue": "138",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-137",
+      "issue": "137",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-136",
+      "issue": "136",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-135",
+      "issue": "135",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-134",
+      "issue": "134",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-133",
+      "issue": "133",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-132",
+      "issue": "132",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-131",
+      "issue": "131",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-130",
+      "issue": "130",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-129",
+      "issue": "129",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-128",
+      "issue": "128",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-127",
+      "issue": "127",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-126",
+      "issue": "126",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-125",
+      "issue": "125",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-124",
+      "issue": "124",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-123",
+      "issue": "123",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-122",
+      "issue": "122",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-121",
+      "issue": "121",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-120",
+      "issue": "120",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-119",
+      "issue": "119",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-118",
+      "issue": "118",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-117",
+      "issue": "117",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-116",
+      "issue": "116",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-115",
+      "issue": "115",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-114",
+      "issue": "114",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-113",
+      "issue": "113",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-112",
+      "issue": "112",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-111",
+      "issue": "111",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-110",
+      "issue": "110",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-109",
+      "issue": "109",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-108",
+      "issue": "108",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-107",
+      "issue": "107",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-106",
+      "issue": "106",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-105",
+      "issue": "105",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-104",
+      "issue": "104",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-103",
+      "issue": "103",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-102",
+      "issue": "102",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-101",
+      "issue": "101",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-100",
+      "issue": "100",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-99",
+      "issue": "99",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-98",
+      "issue": "98",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-97",
+      "issue": "97",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-96",
+      "issue": "96",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-95",
+      "issue": "95",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-94",
+      "issue": "94",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-93",
+      "issue": "93",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-92",
+      "issue": "92",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-91",
+      "issue": "91",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-90",
+      "issue": "90",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-89",
+      "issue": "89",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-88",
+      "issue": "88",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-87",
+      "issue": "87",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-86",
+      "issue": "86",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-85",
+      "issue": "85",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-84",
+      "issue": "84",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-83",
+      "issue": "83",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-82",
+      "issue": "82",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-81",
+      "issue": "81",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-80",
+      "issue": "80",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-79",
+      "issue": "79",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-78",
+      "issue": "78",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-77",
+      "issue": "77",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-76",
+      "issue": "76",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-75",
+      "issue": "75",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-74",
+      "issue": "74",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-73",
+      "issue": "73",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-72",
+      "issue": "72",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-71",
+      "issue": "71",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-70",
+      "issue": "70",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-69",
+      "issue": "69",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-68",
+      "issue": "68",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-67",
+      "issue": "67",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-66",
+      "issue": "66",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-65",
+      "issue": "65",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-64",
+      "issue": "64",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-63",
+      "issue": "63",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-62",
+      "issue": "62",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-61",
+      "issue": "61",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-60",
+      "issue": "60",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-59",
+      "issue": "59",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-58",
+      "issue": "58",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-57",
+      "issue": "57",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-56",
+      "issue": "56",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-55",
+      "issue": "55",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-54",
+      "issue": "54",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-53",
+      "issue": "53",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-52",
+      "issue": "52",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-51",
+      "issue": "51",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-50",
+      "issue": "50",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-49",
+      "issue": "49",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-48",
+      "issue": "48",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-47",
+      "issue": "47",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-46",
+      "issue": "46",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-invincible-45",
+      "issue": "45",
+      "series": "Invincible",
+      "seriesPick": "104205",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-250",
+      "issue": "250",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-249",
+      "issue": "249",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-248",
+      "issue": "248",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-247",
+      "issue": "247",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-246",
+      "issue": "246",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-245",
+      "issue": "245",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-244",
+      "issue": "244",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-243",
+      "issue": "243",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-242",
+      "issue": "242",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-241",
+      "issue": "241",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-240",
+      "issue": "240",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-239",
+      "issue": "239",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-238",
+      "issue": "238",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-237",
+      "issue": "237",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-236",
+      "issue": "236",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-235",
+      "issue": "235",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-234",
+      "issue": "234",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-233",
+      "issue": "233",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-232",
+      "issue": "232",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-231",
+      "issue": "231",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-230",
+      "issue": "230",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-229",
+      "issue": "229",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-228",
+      "issue": "228",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-227",
+      "issue": "227",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-226",
+      "issue": "226",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-225",
+      "issue": "225",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-224",
+      "issue": "224",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-223",
+      "issue": "223",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-222",
+      "issue": "222",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-221",
+      "issue": "221",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-220",
+      "issue": "220",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-219",
+      "issue": "219",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-218",
+      "issue": "218",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-217",
+      "issue": "217",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-216",
+      "issue": "216",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-215",
+      "issue": "215",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-214",
+      "issue": "214",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-213",
+      "issue": "213",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-212",
+      "issue": "212",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-211",
+      "issue": "211",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-210",
+      "issue": "210",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-209",
+      "issue": "209",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-208",
+      "issue": "208",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-207",
+      "issue": "207",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-206",
+      "issue": "206",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-205",
+      "issue": "205",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-204",
+      "issue": "204",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-203",
+      "issue": "203",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-202",
+      "issue": "202",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-201",
+      "issue": "201",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-200",
+      "issue": "200",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-199",
+      "issue": "199",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-198",
+      "issue": "198",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-197",
+      "issue": "197",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-196",
+      "issue": "196",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-195",
+      "issue": "195",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-194",
+      "issue": "194",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-193",
+      "issue": "193",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-192",
+      "issue": "192",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-191",
+      "issue": "191",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-190",
+      "issue": "190",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-189",
+      "issue": "189",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-188",
+      "issue": "188",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-187",
+      "issue": "187",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-186",
+      "issue": "186",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-185",
+      "issue": "185",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-184",
+      "issue": "184",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-183",
+      "issue": "183",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-182",
+      "issue": "182",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-181",
+      "issue": "181",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-180",
+      "issue": "180",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-179",
+      "issue": "179",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-178",
+      "issue": "178",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-177",
+      "issue": "177",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-176",
+      "issue": "176",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-175",
+      "issue": "175",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-174",
+      "issue": "174",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-173",
+      "issue": "173",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-172",
+      "issue": "172",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
+    },
+    {
+      "id": "im-spawn-171",
+      "issue": "171",
+      "series": "Spawn",
+      "seriesPick": "106822",
+      "status": "missing"
     }
   ],
-  "errors": 0,
-  "locgHits": 110,
+  "elapsedMinutes": 360.29,
+  "errors": 680,
+  "finishedAt": "2026-09-07T21:41:33Z",
+  "fromCatalog": true,
+  "limit": 2500,
+  "locgHits": 0,
   "locgNoUpc": 0,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
   "seriesBatch": true,
-  "seriesResolved": 1,
+  "seriesResolved": 0,
   "skippedExisting": 0,
-  "startedAt": "2026-09-06T21:45:16Z",
-  "timedOut": false,
-  "upcFilled": 110
+  "startedAt": "2026-09-07T15:41:15Z",
+  "timedOut": true,
+  "upcFilled": 0,
+  "upcMapSize": 1764
 }

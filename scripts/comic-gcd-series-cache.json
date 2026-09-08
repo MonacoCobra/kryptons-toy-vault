@@ -377,6 +377,56 @@
     "name": "Star Wars: Doctor Aphra",
     "year_began": 2020
   },
+  "lucifer|2018": {
+    "active_issues": [
+      "https://www.comics.org/api/issue/1858689/?format=json",
+      "https://www.comics.org/api/issue/2048511/?format=json",
+      "https://www.comics.org/api/issue/2081171/?format=json",
+      "https://www.comics.org/api/issue/1875455/?format=json",
+      "https://www.comics.org/api/issue/1884028/?format=json",
+      "https://www.comics.org/api/issue/1908814/?format=json",
+      "https://www.comics.org/api/issue/1925543/?format=json",
+      "https://www.comics.org/api/issue/1938955/?format=json",
+      "https://www.comics.org/api/issue/1949961/?format=json",
+      "https://www.comics.org/api/issue/1963155/?format=json",
+      "https://www.comics.org/api/issue/1978135/?format=json",
+      "https://www.comics.org/api/issue/1997145/?format=json",
+      "https://www.comics.org/api/issue/2010092/?format=json",
+      "https://www.comics.org/api/issue/2016013/?format=json",
+      "https://www.comics.org/api/issue/2024443/?format=json",
+      "https://www.comics.org/api/issue/2039094/?format=json",
+      "https://www.comics.org/api/issue/2047818/?format=json",
+      "https://www.comics.org/api/issue/2055173/?format=json",
+      "https://www.comics.org/api/issue/2072483/?format=json",
+      "https://www.comics.org/api/issue/2087396/?format=json"
+    ],
+    "api_url": "https://www.comics.org/api/series/131602/?format=json",
+    "country": "us",
+    "issue_descriptors": [
+      "1",
+      "1 [Kelley Jones Cover]",
+      "1 [Blank Cover]",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "name": "Lucifer",
+    "year_began": 2018
+  },
   "star wars: the high republic|2022": {
     "active_issues": [
       "https://www.comics.org/api/issue/2438516/?format=json",
@@ -1118,5 +1168,29 @@
     ],
     "name": "Ultimate X-Men",
     "year_began": 2024
+  },
+  "x-o manowar|2017": {
+    "active_issues": [
+      "https://www.comics.org/api/issue/1792530/?format=json",
+      "https://www.comics.org/api/issue/1792531/?format=json",
+      "https://www.comics.org/api/issue/1792532/?format=json",
+      "https://www.comics.org/api/issue/1809110/?format=json",
+      "https://www.comics.org/api/issue/1863662/?format=json",
+      "https://www.comics.org/api/issue/1909836/?format=json",
+      "https://www.comics.org/api/issue/1978050/?format=json"
+    ],
+    "api_url": "https://www.comics.org/api/series/122674/?format=json",
+    "country": "us",
+    "issue_descriptors": [
+      "1 - Soldier",
+      "2 - General",
+      "3 - Emperor",
+      "4 - Visigoth",
+      "5 - Barbarians",
+      "6 - Agent",
+      "7 - Hero"
+    ],
+    "name": "X-O Manowar",
+    "year_began": 2017
   }
 }

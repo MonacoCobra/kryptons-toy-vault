@@ -1,662 +1,3076 @@
 {
-  "attempted": 195,
-  "beforeCovers": 1147,
-  "beforeUpc": 887,
-  "coverUpdated": 236,
-  "coversFromSeriesList": 118,
+  "afterCovers": 1780,
+  "afterUpc": 1754,
+  "attempted": 435,
+  "beforeCovers": 1490,
+  "beforeUpc": 1214,
+  "coverUpdated": 0,
+  "coverUrlSize": 1780,
+  "coversFromSeriesList": 0,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
+  "delay": 30.0,
   "details": [
     {
-      "id": "mv-asm-v1-561",
-      "issue": "561",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716156111"
+      "id": "mv-ultimatessm2000-149",
+      "issue": "149",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-560",
-      "issue": "560",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716156011"
+      "id": "mv-ultimatessm2000-148",
+      "issue": "148",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-559",
-      "issue": "559",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716155911"
+      "id": "mv-ultimatessm2000-147",
+      "issue": "147",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-558",
-      "issue": "558",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716155811"
+      "id": "mv-ultimatessm2000-146",
+      "issue": "146",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-557",
-      "issue": "557",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716155711"
+      "id": "mv-ultimatessm2000-145",
+      "issue": "145",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-556",
-      "issue": "556",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716155611"
+      "id": "mv-ultimatessm2000-144",
+      "issue": "144",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-555",
-      "issue": "555",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716155511"
+      "id": "mv-ultimatessm2000-143",
+      "issue": "143",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-554",
-      "issue": "554",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716155411"
+      "id": "mv-ultimatessm2000-142",
+      "issue": "142",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-553",
-      "issue": "553",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716155311"
+      "id": "mv-ultimatessm2000-141",
+      "issue": "141",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-552",
-      "issue": "552",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604718155211"
+      "id": "mv-ultimatessm2000-140",
+      "issue": "140",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-551",
-      "issue": "551",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604719155111"
+      "id": "mv-ultimatessm2000-139",
+      "issue": "139",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-550",
-      "issue": "550",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716155011"
+      "id": "mv-ultimatessm2000-138",
+      "issue": "138",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-549",
-      "issue": "549",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716154911"
+      "id": "mv-ultimatessm2000-137",
+      "issue": "137",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-548",
-      "issue": "548",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "7596060471654811"
+      "id": "mv-ultimatessm2000-136",
+      "issue": "136",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-547",
-      "issue": "547",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716154711"
+      "id": "mv-ultimatessm2000-135",
+      "issue": "135",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-546",
-      "issue": "546",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716154611"
+      "id": "mv-ultimatessm2000-134",
+      "issue": "134",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-545",
-      "issue": "545",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716154511"
+      "id": "mv-ultimatessm2000-133",
+      "issue": "133",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-544",
-      "issue": "544",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716154411"
+      "id": "mv-ultimatessm2000-132",
+      "issue": "132",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-543",
-      "issue": "543",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716154311"
+      "id": "mv-ultimatessm2000-131",
+      "issue": "131",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-542",
-      "issue": "542",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716154211"
+      "id": "mv-ultimatessm2000-130",
+      "issue": "130",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-541",
-      "issue": "541",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716154111"
+      "id": "mv-ultimatessm2000-129",
+      "issue": "129",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-540",
-      "issue": "540",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716154011"
+      "id": "mv-ultimatessm2000-128",
+      "issue": "128",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-539",
-      "issue": "539",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716153911"
+      "id": "mv-ultimatessm2000-127",
+      "issue": "127",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-538",
-      "issue": "538",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716153811"
+      "id": "mv-ultimatessm2000-126",
+      "issue": "126",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-537",
-      "issue": "537",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716153711"
+      "id": "mv-ultimatessm2000-125",
+      "issue": "125",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-536",
-      "issue": "536",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716153611"
+      "id": "mv-ultimatessm2000-124",
+      "issue": "124",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-535",
-      "issue": "535",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716153511"
+      "id": "mv-ultimatessm2000-123",
+      "issue": "123",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-534",
-      "issue": "534",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716153411"
+      "id": "mv-ultimatessm2000-122",
+      "issue": "122",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-533",
-      "issue": "533",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716153311"
+      "id": "mv-ultimatessm2000-121",
+      "issue": "121",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-v1-532",
-      "issue": "532",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716153211"
+      "id": "mv-ultimatessm2000-120",
+      "issue": "120",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-531",
-      "issue": "531",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716153111"
+      "id": "mv-ultimatessm2000-119",
+      "issue": "119",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-530",
-      "issue": "530",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716153011"
+      "id": "mv-ultimatessm2000-118",
+      "issue": "118",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-529",
-      "issue": "529",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716152911"
+      "id": "mv-ultimatessm2000-117",
+      "issue": "117",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-528",
-      "issue": "528",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716152811"
+      "id": "mv-ultimatessm2000-116",
+      "issue": "116",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-527",
-      "issue": "527",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716152711"
+      "id": "mv-ultimatessm2000-115",
+      "issue": "115",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-526",
-      "issue": "526",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716152611"
+      "id": "mv-ultimatessm2000-114",
+      "issue": "114",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-525",
-      "issue": "525",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716152511"
+      "id": "mv-ultimatessm2000-113",
+      "issue": "113",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-524",
-      "issue": "524",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716152411"
+      "id": "mv-ultimatessm2000-112",
+      "issue": "112",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-523",
-      "issue": "523",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716152311"
+      "id": "mv-ultimatessm2000-111",
+      "issue": "111",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-asm-1-2022",
-      "issue": "1",
-      "series": "The Amazing Spider-Man",
-      "seriesPick": "126492",
-      "status": "locg_upc",
-      "upc": "75960604716100111"
+      "id": "mv-ultimatessm2000-110",
+      "issue": "110",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-75",
+      "id": "mv-ultimatessm2000-109",
+      "issue": "109",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-108",
+      "issue": "108",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-107",
+      "issue": "107",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-106",
+      "issue": "106",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-105",
+      "issue": "105",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-104",
+      "issue": "104",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-103",
+      "issue": "103",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-102",
+      "issue": "102",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-101",
+      "issue": "101",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-100",
+      "issue": "100",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-99",
+      "issue": "99",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-98",
+      "issue": "98",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-97",
+      "issue": "97",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-96",
+      "issue": "96",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-95",
+      "issue": "95",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-94",
+      "issue": "94",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-93",
+      "issue": "93",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-92",
+      "issue": "92",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-91",
+      "issue": "91",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-90",
+      "issue": "90",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-89",
+      "issue": "89",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-88",
+      "issue": "88",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-87",
+      "issue": "87",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-86",
+      "issue": "86",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-85",
+      "issue": "85",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-84",
+      "issue": "84",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-83",
+      "issue": "83",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-82",
+      "issue": "82",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-81",
+      "issue": "81",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-80",
+      "issue": "80",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-79",
+      "issue": "79",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-78",
+      "issue": "78",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-77",
+      "issue": "77",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-76",
+      "issue": "76",
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
+    },
+    {
+      "id": "mv-ultimatessm2000-75",
       "issue": "75",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113407511"
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-74",
+      "id": "mv-ultimatessm2000-74",
       "issue": "74",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113407411"
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-73",
+      "id": "mv-ultimatessm2000-73",
       "issue": "73",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113407311"
+      "series": "Ultimate Spider-Man",
+      "seriesPick": "170890",
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-72",
-      "issue": "72",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113407211"
-    },
-    {
-      "id": "mv-starwars-71",
-      "issue": "71",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113407111"
-    },
-    {
-      "id": "mv-starwars-70",
+      "id": "mv-asm-2022-70",
       "issue": "70",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113407011"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-69",
+      "id": "mv-asm-2022-69",
       "issue": "69",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113406911"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-68",
+      "id": "mv-asm-2022-68",
       "issue": "68",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113406811"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-67",
+      "id": "mv-asm-2022-67",
       "issue": "67",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113406711"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-66",
+      "id": "mv-asm-2022-66",
       "issue": "66",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113406611"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-65",
+      "id": "mv-asm-2022-65",
       "issue": "65",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113406511"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-64",
+      "id": "mv-asm-2022-64",
       "issue": "64",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113406411"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-63",
+      "id": "mv-asm-2022-63",
       "issue": "63",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113406311"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-62",
+      "id": "mv-asm-2022-62",
       "issue": "62",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113406211"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-61",
+      "id": "mv-asm-2022-61",
       "issue": "61",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113406111"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-60",
+      "id": "mv-asm-2022-60",
       "issue": "60",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113406011"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-59",
+      "id": "mv-asm-2022-59",
       "issue": "59",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113405911"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-58",
+      "id": "mv-asm-2022-58",
       "issue": "58",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113405811"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-57",
+      "id": "mv-asm-2022-57",
       "issue": "57",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113405711"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-56",
+      "id": "mv-asm-2022-56",
       "issue": "56",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113405611"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-55",
+      "id": "mv-asm-2022-55",
       "issue": "55",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113405511"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-54",
+      "id": "mv-asm-2022-54",
       "issue": "54",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113405411"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-53",
+      "id": "mv-asm-2022-53",
       "issue": "53",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113405311"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-52",
+      "id": "mv-asm-2022-52",
       "issue": "52",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113405211"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-51",
+      "id": "mv-asm-2022-51",
       "issue": "51",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113405111"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-50",
-      "issue": "50",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113405011"
-    },
-    {
-      "id": "mv-starwars-49",
+      "id": "mv-asm-2022-49",
       "issue": "49",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113404911"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-48",
+      "id": "mv-asm-2022-48",
       "issue": "48",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113404811"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-47",
+      "id": "mv-asm-2022-47",
       "issue": "47",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113404711"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-46",
+      "id": "mv-asm-2022-46",
       "issue": "46",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113404611"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-45",
+      "id": "mv-asm-2022-45",
       "issue": "45",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113404511"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-44",
+      "id": "mv-asm-2022-44",
       "issue": "44",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113404411"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-43",
+      "id": "mv-asm-2022-43",
       "issue": "43",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113404311"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-42",
+      "id": "mv-asm-2022-42",
       "issue": "42",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113404211"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-41",
+      "id": "mv-asm-2022-41",
       "issue": "41",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113404111"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-40",
+      "id": "mv-asm-2022-40",
       "issue": "40",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113404011"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-39",
+      "id": "mv-asm-2022-39",
       "issue": "39",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113403911"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-38",
+      "id": "mv-asm-2022-38",
       "issue": "38",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113403811"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-37",
+      "id": "mv-asm-2022-37",
       "issue": "37",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113403711"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "mv-starwars-36",
+      "id": "mv-asm-2022-36",
       "issue": "36",
-      "series": "Star Wars (2015)",
-      "seriesPick": "107096",
-      "status": "locg_upc",
-      "upc": "75960608113403611"
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-35",
+      "issue": "35",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-34",
+      "issue": "34",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-33",
+      "issue": "33",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-32",
+      "issue": "32",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-31",
+      "issue": "31",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-30",
+      "issue": "30",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-29",
+      "issue": "29",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-28",
+      "issue": "28",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-27",
+      "issue": "27",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-26",
+      "issue": "26",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-25",
+      "issue": "25",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-24",
+      "issue": "24",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-23",
+      "issue": "23",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-22",
+      "issue": "22",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-21",
+      "issue": "21",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-20",
+      "issue": "20",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-19",
+      "issue": "19",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-18",
+      "issue": "18",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-17",
+      "issue": "17",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-16",
+      "issue": "16",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-15",
+      "issue": "15",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-13",
+      "issue": "13",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-12",
+      "issue": "12",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-11",
+      "issue": "11",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-10",
+      "issue": "10",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-9",
+      "issue": "9",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-8",
+      "issue": "8",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-7",
+      "issue": "7",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-6",
+      "issue": "6",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-5",
+      "issue": "5",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-4",
+      "issue": "4",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-3",
+      "issue": "3",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-asm-2022-2",
+      "issue": "2",
+      "series": "Amazing Spider-Man (2022)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-75",
+      "issue": "75",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-74",
+      "issue": "74",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-73",
+      "issue": "73",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-72",
+      "issue": "72",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-71",
+      "issue": "71",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-70",
+      "issue": "70",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-69",
+      "issue": "69",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-68",
+      "issue": "68",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-67",
+      "issue": "67",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-66",
+      "issue": "66",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-65",
+      "issue": "65",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-64",
+      "issue": "64",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-63",
+      "issue": "63",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-62",
+      "issue": "62",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-61",
+      "issue": "61",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-60",
+      "issue": "60",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-59",
+      "issue": "59",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-58",
+      "issue": "58",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-57",
+      "issue": "57",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-56",
+      "issue": "56",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-55",
+      "issue": "55",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-54",
+      "issue": "54",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-53",
+      "issue": "53",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-52",
+      "issue": "52",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-51",
+      "issue": "51",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-50",
+      "issue": "50",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-49",
+      "issue": "49",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-48",
+      "issue": "48",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-47",
+      "issue": "47",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-46",
+      "issue": "46",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-45",
+      "issue": "45",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-44",
+      "issue": "44",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-43",
+      "issue": "43",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-42",
+      "issue": "42",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-41",
+      "issue": "41",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-40",
+      "issue": "40",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-39",
+      "issue": "39",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-38",
+      "issue": "38",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-37",
+      "issue": "37",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-36",
+      "issue": "36",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-35",
+      "issue": "35",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-34",
+      "issue": "34",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-33",
+      "issue": "33",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-32",
+      "issue": "32",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-31",
+      "issue": "31",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-30",
+      "issue": "30",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-29",
+      "issue": "29",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-28",
+      "issue": "28",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-27",
+      "issue": "27",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-26",
+      "issue": "26",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-25",
+      "issue": "25",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-24",
+      "issue": "24",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-23",
+      "issue": "23",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-22",
+      "issue": "22",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-21",
+      "issue": "21",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-20",
+      "issue": "20",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-19",
+      "issue": "19",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-18",
+      "issue": "18",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-17",
+      "issue": "17",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-16",
+      "issue": "16",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-15",
+      "issue": "15",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-14",
+      "issue": "14",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-13",
+      "issue": "13",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-12",
+      "issue": "12",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-punishermax-11",
+      "issue": "11",
+      "series": "Punisher MAX",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-64",
+      "issue": "64",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-63",
+      "issue": "63",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-62",
+      "issue": "62",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-61",
+      "issue": "61",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-60",
+      "issue": "60",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-59",
+      "issue": "59",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-58",
+      "issue": "58",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-57",
+      "issue": "57",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-56",
+      "issue": "56",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-55",
+      "issue": "55",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-54",
+      "issue": "54",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-53",
+      "issue": "53",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-52",
+      "issue": "52",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-51",
+      "issue": "51",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-50",
+      "issue": "50",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-49",
+      "issue": "49",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-48",
+      "issue": "48",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-47",
+      "issue": "47",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-46",
+      "issue": "46",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-45",
+      "issue": "45",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-44",
+      "issue": "44",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-43",
+      "issue": "43",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-42",
+      "issue": "42",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-41",
+      "issue": "41",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-40",
+      "issue": "40",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-39",
+      "issue": "39",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-38",
+      "issue": "38",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-37",
+      "issue": "37",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-36",
+      "issue": "36",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-35",
+      "issue": "35",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-34",
+      "issue": "34",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-33",
+      "issue": "33",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-32",
+      "issue": "32",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-31",
+      "issue": "31",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-30",
+      "issue": "30",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-29",
+      "issue": "29",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-28",
+      "issue": "28",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-27",
+      "issue": "27",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-26",
+      "issue": "26",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-25",
+      "issue": "25",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-24",
+      "issue": "24",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-23",
+      "issue": "23",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-22",
+      "issue": "22",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-21",
+      "issue": "21",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-20",
+      "issue": "20",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-19",
+      "issue": "19",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-18",
+      "issue": "18",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-17",
+      "issue": "17",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-16",
+      "issue": "16",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-15",
+      "issue": "15",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-14",
+      "issue": "14",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-13",
+      "issue": "13",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-12",
+      "issue": "12",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-11",
+      "issue": "11",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-10",
+      "issue": "10",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-9",
+      "issue": "9",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-8",
+      "issue": "8",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-7",
+      "issue": "7",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-6",
+      "issue": "6",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-5",
+      "issue": "5",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-4",
+      "issue": "4",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-3",
+      "issue": "3",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newave-2",
+      "issue": "2",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-newavengers-1",
+      "issue": "1",
+      "series": "New Avengers",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-63",
+      "issue": "63",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-62",
+      "issue": "62",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-61",
+      "issue": "61",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-60",
+      "issue": "60",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-59",
+      "issue": "59",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-58",
+      "issue": "58",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-57",
+      "issue": "57",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-56",
+      "issue": "56",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-55",
+      "issue": "55",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-54",
+      "issue": "54",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-53",
+      "issue": "53",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-52",
+      "issue": "52",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-51",
+      "issue": "51",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-50",
+      "issue": "50",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-49",
+      "issue": "49",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-48",
+      "issue": "48",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-47",
+      "issue": "47",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-46",
+      "issue": "46",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-45",
+      "issue": "45",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-44",
+      "issue": "44",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-43",
+      "issue": "43",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-42",
+      "issue": "42",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-41",
+      "issue": "41",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-40",
+      "issue": "40",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-39",
+      "issue": "39",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-38",
+      "issue": "38",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-37",
+      "issue": "37",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-36",
+      "issue": "36",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-35",
+      "issue": "35",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-34",
+      "issue": "34",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-33",
+      "issue": "33",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-32",
+      "issue": "32",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-31",
+      "issue": "31",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-30",
+      "issue": "30",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-29",
+      "issue": "29",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-28",
+      "issue": "28",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-27",
+      "issue": "27",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-26",
+      "issue": "26",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-25",
+      "issue": "25",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-24",
+      "issue": "24",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-23",
+      "issue": "23",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-22",
+      "issue": "22",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-21",
+      "issue": "21",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-20",
+      "issue": "20",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-19",
+      "issue": "19",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-18",
+      "issue": "18",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-17",
+      "issue": "17",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-16",
+      "issue": "16",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-15",
+      "issue": "15",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-14",
+      "issue": "14",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-13",
+      "issue": "13",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-12",
+      "issue": "12",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-11",
+      "issue": "11",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-10",
+      "issue": "10",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-9",
+      "issue": "9",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-8",
+      "issue": "8",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-7",
+      "issue": "7",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-6",
+      "issue": "6",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-5",
+      "issue": "5",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-4",
+      "issue": "4",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-3",
+      "issue": "3",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-2",
+      "issue": "2",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dp-2008-1",
+      "issue": "1",
+      "series": "Deadpool (2008)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-60",
+      "issue": "60",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-59",
+      "issue": "59",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-58",
+      "issue": "58",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-57",
+      "issue": "57",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-56",
+      "issue": "56",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-55",
+      "issue": "55",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-54",
+      "issue": "54",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-53",
+      "issue": "53",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-52",
+      "issue": "52",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-51",
+      "issue": "51",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-50",
+      "issue": "50",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-49",
+      "issue": "49",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-48",
+      "issue": "48",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-47",
+      "issue": "47",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-46",
+      "issue": "46",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-45",
+      "issue": "45",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-44",
+      "issue": "44",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-43",
+      "issue": "43",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-42",
+      "issue": "42",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-41",
+      "issue": "41",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-40",
+      "issue": "40",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-39",
+      "issue": "39",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-38",
+      "issue": "38",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-37",
+      "issue": "37",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-36",
+      "issue": "36",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-35",
+      "issue": "35",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-34",
+      "issue": "34",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-33",
+      "issue": "33",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-32",
+      "issue": "32",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-31",
+      "issue": "31",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-30",
+      "issue": "30",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-29",
+      "issue": "29",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-28",
+      "issue": "28",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-27",
+      "issue": "27",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-26",
+      "issue": "26",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-25",
+      "issue": "25",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-24",
+      "issue": "24",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-23",
+      "issue": "23",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-22",
+      "issue": "22",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-21",
+      "issue": "21",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-20",
+      "issue": "20",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-19",
+      "issue": "19",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-18",
+      "issue": "18",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-17",
+      "issue": "17",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-16",
+      "issue": "16",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-15",
+      "issue": "15",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-14",
+      "issue": "14",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-13",
+      "issue": "13",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-12",
+      "issue": "12",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-11",
+      "issue": "11",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-10",
+      "issue": "10",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-9",
+      "issue": "9",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-8",
+      "issue": "8",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-7",
+      "issue": "7",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-6",
+      "issue": "6",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-5",
+      "issue": "5",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-4",
+      "issue": "4",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-3",
+      "issue": "3",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-2",
+      "issue": "2",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-ave-2018-1",
+      "issue": "1",
+      "series": "Avengers (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-119",
+      "issue": "119",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-118",
+      "issue": "118",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-117",
+      "issue": "117",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-116",
+      "issue": "116",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-115",
+      "issue": "115",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-114",
+      "issue": "114",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-113",
+      "issue": "113",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-112",
+      "issue": "112",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-111",
+      "issue": "111",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-110",
+      "issue": "110",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-109",
+      "issue": "109",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-108",
+      "issue": "108",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-107",
+      "issue": "107",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-106",
+      "issue": "106",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-105",
+      "issue": "105",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-104",
+      "issue": "104",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-103",
+      "issue": "103",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-102",
+      "issue": "102",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-101",
+      "issue": "101",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-100",
+      "issue": "100",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-99",
+      "issue": "99",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-98",
+      "issue": "98",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-97",
+      "issue": "97",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-96",
+      "issue": "96",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-95",
+      "issue": "95",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-94",
+      "issue": "94",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-93",
+      "issue": "93",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-92",
+      "issue": "92",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-91",
+      "issue": "91",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-90",
+      "issue": "90",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-89",
+      "issue": "89",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-88",
+      "issue": "88",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-87",
+      "issue": "87",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-86",
+      "issue": "86",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-85",
+      "issue": "85",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-84",
+      "issue": "84",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-83",
+      "issue": "83",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-82",
+      "issue": "82",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "mv-dd-v2-81",
+      "issue": "81",
+      "series": "Daredevil (1998)",
+      "seriesPick": null,
+      "status": "missing"
     }
   ],
-  "errors": 77,
-  "locgHits": 118,
+  "elapsedMinutes": 360.16,
+  "errors": 435,
+  "finishedAt": "2026-09-07T21:41:05Z",
+  "fromCatalog": true,
+  "limit": 2500,
+  "locgHits": 0,
   "locgNoUpc": 0,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
   "seriesBatch": true,
-  "seriesResolved": 1,
+  "seriesResolved": 0,
   "skippedExisting": 0,
-  "startedAt": "2026-09-06T21:44:56Z",
-  "timedOut": false,
-  "upcFilled": 118
+  "startedAt": "2026-09-07T15:40:55Z",
+  "timedOut": true,
+  "upcFilled": 0,
+  "upcMapSize": 1754
 }

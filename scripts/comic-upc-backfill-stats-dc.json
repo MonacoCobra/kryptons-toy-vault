@@ -1,12 +1,1101 @@
 {
-  "attempted": 267,
-  "beforeCovers": 1148,
-  "beforeUpc": 888,
-  "coverUpdated": 198,
-  "coversFromSeriesList": 99,
+  "afterCovers": 1780,
+  "afterUpc": 1754,
+  "attempted": 576,
+  "beforeCovers": 1490,
+  "beforeUpc": 1214,
+  "coverUpdated": 75,
+  "coverUrlSize": 1780,
+  "coversFromSeriesList": 75,
   "cvFallbackUpc": 0,
   "cvSweepUpc": 0,
+  "delay": 30.0,
   "details": [
+    {
+      "id": "dc-det-1100",
+      "issue": "1100",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1099",
+      "issue": "1099",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1098",
+      "issue": "1098",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1097",
+      "issue": "1097",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1096",
+      "issue": "1096",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1095",
+      "issue": "1095",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1094",
+      "issue": "1094",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1093",
+      "issue": "1093",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1092",
+      "issue": "1092",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1091",
+      "issue": "1091",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1090",
+      "issue": "1090",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1089",
+      "issue": "1089",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1088",
+      "issue": "1088",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1087",
+      "issue": "1087",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1086",
+      "issue": "1086",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1085",
+      "issue": "1085",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1084",
+      "issue": "1084",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1083",
+      "issue": "1083",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1082",
+      "issue": "1082",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1081",
+      "issue": "1081",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1080",
+      "issue": "1080",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1079",
+      "issue": "1079",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1078",
+      "issue": "1078",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1077",
+      "issue": "1077",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1076",
+      "issue": "1076",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1075",
+      "issue": "1075",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1074",
+      "issue": "1074",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1073",
+      "issue": "1073",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1072",
+      "issue": "1072",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1071",
+      "issue": "1071",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1070",
+      "issue": "1070",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1069",
+      "issue": "1069",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1068",
+      "issue": "1068",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1067",
+      "issue": "1067",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1066",
+      "issue": "1066",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1065",
+      "issue": "1065",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1064",
+      "issue": "1064",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1063",
+      "issue": "1063",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1062",
+      "issue": "1062",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1061",
+      "issue": "1061",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1060",
+      "issue": "1060",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1059",
+      "issue": "1059",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1058",
+      "issue": "1058",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1057",
+      "issue": "1057",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1056",
+      "issue": "1056",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1055",
+      "issue": "1055",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1054",
+      "issue": "1054",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1053",
+      "issue": "1053",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1052",
+      "issue": "1052",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1051",
+      "issue": "1051",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1050",
+      "issue": "1050",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1049",
+      "issue": "1049",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1048",
+      "issue": "1048",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1047",
+      "issue": "1047",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1046",
+      "issue": "1046",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1045",
+      "issue": "1045",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1044",
+      "issue": "1044",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1043",
+      "issue": "1043",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1042",
+      "issue": "1042",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1041",
+      "issue": "1041",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1040",
+      "issue": "1040",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1039",
+      "issue": "1039",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1038",
+      "issue": "1038",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1037",
+      "issue": "1037",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1036",
+      "issue": "1036",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1035",
+      "issue": "1035",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1034",
+      "issue": "1034",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1033",
+      "issue": "1033",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1032",
+      "issue": "1032",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1031",
+      "issue": "1031",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1030",
+      "issue": "1030",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1029",
+      "issue": "1029",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1028",
+      "issue": "1028",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1027",
+      "issue": "1027",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1026",
+      "issue": "1026",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1025",
+      "issue": "1025",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1024",
+      "issue": "1024",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1023",
+      "issue": "1023",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1022",
+      "issue": "1022",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1021",
+      "issue": "1021",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1020",
+      "issue": "1020",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1019",
+      "issue": "1019",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1018",
+      "issue": "1018",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1017",
+      "issue": "1017",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1016",
+      "issue": "1016",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1015",
+      "issue": "1015",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1014",
+      "issue": "1014",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1013",
+      "issue": "1013",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1012",
+      "issue": "1012",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1011",
+      "issue": "1011",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1010",
+      "issue": "1010",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1009",
+      "issue": "1009",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1008",
+      "issue": "1008",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1007",
+      "issue": "1007",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1006",
+      "issue": "1006",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1005",
+      "issue": "1005",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1004",
+      "issue": "1004",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1003",
+      "issue": "1003",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1002",
+      "issue": "1002",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-det-1001",
+      "issue": "1001",
+      "series": "Detective Comics",
+      "seriesPick": "102374",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-904",
+      "issue": "904",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-903",
+      "issue": "903",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-902",
+      "issue": "902",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-901",
+      "issue": "901",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-900",
+      "issue": "900",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-899",
+      "issue": "899",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-898",
+      "issue": "898",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-897",
+      "issue": "897",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-896",
+      "issue": "896",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-895",
+      "issue": "895",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-894",
+      "issue": "894",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-893",
+      "issue": "893",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-892",
+      "issue": "892",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-891",
+      "issue": "891",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-890",
+      "issue": "890",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-889",
+      "issue": "889",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-888",
+      "issue": "888",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-887",
+      "issue": "887",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-886",
+      "issue": "886",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-885",
+      "issue": "885",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-884",
+      "issue": "884",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-883",
+      "issue": "883",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-882",
+      "issue": "882",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-881",
+      "issue": "881",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-880",
+      "issue": "880",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-879",
+      "issue": "879",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-878",
+      "issue": "878",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-877",
+      "issue": "877",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-876",
+      "issue": "876",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-875",
+      "issue": "875",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-874",
+      "issue": "874",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-873",
+      "issue": "873",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-872",
+      "issue": "872",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-871",
+      "issue": "871",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-870",
+      "issue": "870",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-869",
+      "issue": "869",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-868",
+      "issue": "868",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-867",
+      "issue": "867",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-866",
+      "issue": "866",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-865",
+      "issue": "865",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-864",
+      "issue": "864",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-863",
+      "issue": "863",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-862",
+      "issue": "862",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-861",
+      "issue": "861",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-860",
+      "issue": "860",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-859",
+      "issue": "859",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-858",
+      "issue": "858",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-857",
+      "issue": "857",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-856",
+      "issue": "856",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-855",
+      "issue": "855",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-854",
+      "issue": "854",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-853",
+      "issue": "853",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-852",
+      "issue": "852",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-851",
+      "issue": "851",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-850",
+      "issue": "850",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
     {
       "id": "dc-action-849",
       "issue": "849",
@@ -99,551 +1188,2876 @@
       "status": "missing"
     },
     {
-      "id": "dc-flash-2016-88",
+      "id": "dc-action-836",
+      "issue": "836",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-835",
+      "issue": "835",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-834",
+      "issue": "834",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-833",
+      "issue": "833",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-832",
+      "issue": "832",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-831",
+      "issue": "831",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-830",
+      "issue": "830",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-829",
+      "issue": "829",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-828",
+      "issue": "828",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-827",
+      "issue": "827",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-826",
+      "issue": "826",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-825",
+      "issue": "825",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-824",
+      "issue": "824",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-823",
+      "issue": "823",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-822",
+      "issue": "822",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-action-821",
+      "issue": "821",
+      "series": "Action Comics",
+      "seriesPick": "124401",
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-100",
+      "issue": "100",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-99",
+      "issue": "99",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-98",
+      "issue": "98",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-97",
+      "issue": "97",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-96",
+      "issue": "96",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-95",
+      "issue": "95",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-94",
+      "issue": "94",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-93",
+      "issue": "93",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-92",
+      "issue": "92",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-91",
+      "issue": "91",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-90",
+      "issue": "90",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-89",
+      "issue": "89",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-88",
       "issue": "88",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184208811"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-87",
+      "id": "dc-tt-2003-87",
       "issue": "87",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184208711"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-86",
+      "id": "dc-tt-2003-86",
       "issue": "86",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184208611"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-85",
+      "id": "dc-tt-2003-85",
       "issue": "85",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184208511"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-84",
+      "id": "dc-tt-2003-84",
       "issue": "84",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184208411"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-83",
+      "id": "dc-tt-2003-83",
       "issue": "83",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184208311"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-82",
+      "id": "dc-tt-2003-82",
       "issue": "82",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184208211"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-81",
+      "id": "dc-tt-2003-81",
       "issue": "81",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184208111"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-80",
+      "id": "dc-tt-2003-80",
       "issue": "80",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184208011"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-79",
+      "id": "dc-tt-2003-79",
       "issue": "79",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184207911"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-78",
+      "id": "dc-tt-2003-78",
       "issue": "78",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184207811"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-77",
+      "id": "dc-tt-2003-77",
       "issue": "77",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184207711"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-76",
+      "id": "dc-tt-2003-76",
       "issue": "76",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184207611"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-75",
+      "id": "dc-tt-2003-75",
       "issue": "75",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184207511"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-74",
+      "id": "dc-tt-2003-74",
       "issue": "74",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184207411"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-73",
+      "id": "dc-tt-2003-73",
       "issue": "73",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184207311"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-72",
+      "id": "dc-tt-2003-72",
       "issue": "72",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184207211"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-71",
+      "id": "dc-tt-2003-71",
       "issue": "71",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184207111"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-70",
+      "id": "dc-tt-2003-70",
       "issue": "70",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184207011"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-69",
+      "id": "dc-tt-2003-69",
       "issue": "69",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184206911"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-68",
+      "id": "dc-tt-2003-68",
       "issue": "68",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184206811"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-67",
+      "id": "dc-tt-2003-67",
       "issue": "67",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184206711"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-66",
+      "id": "dc-tt-2003-66",
       "issue": "66",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184206611"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-65",
+      "id": "dc-tt-2003-65",
       "issue": "65",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184206511"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-64",
+      "id": "dc-tt-2003-64",
       "issue": "64",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184206411"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-63",
+      "id": "dc-tt-2003-63",
       "issue": "63",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184206311"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-62",
+      "id": "dc-tt-2003-62",
       "issue": "62",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184206211"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-61",
+      "id": "dc-tt-2003-61",
       "issue": "61",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184206111"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-60",
+      "id": "dc-tt-2003-60",
       "issue": "60",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184206011"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-59",
+      "id": "dc-tt-2003-59",
       "issue": "59",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184205911"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-58",
+      "id": "dc-tt-2003-58",
       "issue": "58",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184205811"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-57",
+      "id": "dc-tt-2003-57",
       "issue": "57",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184205711"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-56",
+      "id": "dc-tt-2003-56",
       "issue": "56",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184205611"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-55",
+      "id": "dc-tt-2003-55",
       "issue": "55",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184205511"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-54",
+      "id": "dc-tt-2003-54",
       "issue": "54",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184205411"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-53",
+      "id": "dc-tt-2003-53",
       "issue": "53",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184205311"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-52",
+      "id": "dc-tt-2003-52",
       "issue": "52",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184205211"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-51",
+      "id": "dc-tt-2003-51",
       "issue": "51",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184205111"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-50",
+      "id": "dc-tt-2003-50",
       "issue": "50",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184205011"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-49",
+      "id": "dc-tt-2003-49",
       "issue": "49",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184204911"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-48",
+      "id": "dc-tt-2003-48",
       "issue": "48",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184204811"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-47",
+      "id": "dc-tt-2003-47",
       "issue": "47",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184204711"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-46",
+      "id": "dc-tt-2003-46",
       "issue": "46",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184204611"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-45",
+      "id": "dc-tt-2003-45",
       "issue": "45",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184204511"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-44",
+      "id": "dc-tt-2003-44",
       "issue": "44",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184204411"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-43",
+      "id": "dc-tt-2003-43",
       "issue": "43",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184204311"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-42",
+      "id": "dc-tt-2003-42",
       "issue": "42",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184204211"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-41",
+      "id": "dc-tt-2003-41",
       "issue": "41",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184204111"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-40",
+      "id": "dc-tt-2003-40",
       "issue": "40",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184204011"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-39",
+      "id": "dc-tt-2003-39",
       "issue": "39",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184203911"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-38",
+      "id": "dc-tt-2003-38",
       "issue": "38",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184203811"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-37",
+      "id": "dc-tt-2003-37",
       "issue": "37",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184203711"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-36",
+      "id": "dc-tt-2003-36",
       "issue": "36",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184203611"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-35",
+      "id": "dc-tt-2003-35",
       "issue": "35",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184203511"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-34",
+      "id": "dc-tt-2003-34",
       "issue": "34",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184203411"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-33",
+      "id": "dc-tt-2003-33",
       "issue": "33",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184203311"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-32",
+      "id": "dc-tt-2003-32",
       "issue": "32",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184203211"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-31",
+      "id": "dc-tt-2003-31",
       "issue": "31",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184203111"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-30",
+      "id": "dc-tt-2003-30",
       "issue": "30",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184203011"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-29",
+      "id": "dc-tt-2003-29",
       "issue": "29",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184202911"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-28",
+      "id": "dc-tt-2003-28",
       "issue": "28",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184202811"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-27",
+      "id": "dc-tt-2003-27",
       "issue": "27",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184202711"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-26",
+      "id": "dc-tt-2003-26",
       "issue": "26",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184202611"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-25",
+      "id": "dc-tt-2003-25",
       "issue": "25",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184202511"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-24",
+      "id": "dc-tt-2003-24",
       "issue": "24",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184202411"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-23",
+      "id": "dc-tt-2003-23",
       "issue": "23",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184202311"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
     },
     {
-      "id": "dc-flash-2016-22",
+      "id": "dc-tt-2003-22",
       "issue": "22",
-      "series": "The Flash (2016)",
-      "seriesPick": "124052",
-      "status": "locg_upc",
-      "upc": "76194134184202211"
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-21",
+      "issue": "21",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-20",
+      "issue": "20",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-19",
+      "issue": "19",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-tt-2003-18",
+      "issue": "18",
+      "series": "Teen Titans (2003)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-81",
+      "issue": "81",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-80",
+      "issue": "80",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-79",
+      "issue": "79",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-78",
+      "issue": "78",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-77",
+      "issue": "77",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-76",
+      "issue": "76",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-75",
+      "issue": "75",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-74",
+      "issue": "74",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-73",
+      "issue": "73",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-72",
+      "issue": "72",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-71",
+      "issue": "71",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-70",
+      "issue": "70",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-69",
+      "issue": "69",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-68",
+      "issue": "68",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-67",
+      "issue": "67",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-66",
+      "issue": "66",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-65",
+      "issue": "65",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-64",
+      "issue": "64",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-63",
+      "issue": "63",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-62",
+      "issue": "62",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-61",
+      "issue": "61",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-60",
+      "issue": "60",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-59",
+      "issue": "59",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-58",
+      "issue": "58",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-57",
+      "issue": "57",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-56",
+      "issue": "56",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-55",
+      "issue": "55",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-54",
+      "issue": "54",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-53",
+      "issue": "53",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-52",
+      "issue": "52",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-51",
+      "issue": "51",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-50",
+      "issue": "50",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-49",
+      "issue": "49",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-48",
+      "issue": "48",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-47",
+      "issue": "47",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-46",
+      "issue": "46",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-45",
+      "issue": "45",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-44",
+      "issue": "44",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-43",
+      "issue": "43",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-42",
+      "issue": "42",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-41",
+      "issue": "41",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-40",
+      "issue": "40",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-39",
+      "issue": "39",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-38",
+      "issue": "38",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-37",
+      "issue": "37",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-36",
+      "issue": "36",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-35",
+      "issue": "35",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-34",
+      "issue": "34",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-33",
+      "issue": "33",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-32",
+      "issue": "32",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-31",
+      "issue": "31",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-30",
+      "issue": "30",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-29",
+      "issue": "29",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-28",
+      "issue": "28",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-27",
+      "issue": "27",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-26",
+      "issue": "26",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-25",
+      "issue": "25",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-24",
+      "issue": "24",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-23",
+      "issue": "23",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-22",
+      "issue": "22",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-21",
+      "issue": "21",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-20",
+      "issue": "20",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-19",
+      "issue": "19",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-18",
+      "issue": "18",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-17",
+      "issue": "17",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-16",
+      "issue": "16",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-15",
+      "issue": "15",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-14",
+      "issue": "14",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-13",
+      "issue": "13",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-12",
+      "issue": "12",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-11",
+      "issue": "11",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-10",
+      "issue": "10",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-9",
+      "issue": "9",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-8",
+      "issue": "8",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-7",
+      "issue": "7",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-6",
+      "issue": "6",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-5",
+      "issue": "5",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-4",
+      "issue": "4",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-3",
+      "issue": "3",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-2",
+      "issue": "2",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-ww-2016-1",
+      "issue": "1",
+      "series": "Wonder Woman (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-75",
+      "issue": "75",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-74",
+      "issue": "74",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-73",
+      "issue": "73",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-72",
+      "issue": "72",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-71",
+      "issue": "71",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-70",
+      "issue": "70",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-69",
+      "issue": "69",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-68",
+      "issue": "68",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-67",
+      "issue": "67",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-66",
+      "issue": "66",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-65",
+      "issue": "65",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-64",
+      "issue": "64",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-63",
+      "issue": "63",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-62",
+      "issue": "62",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-61",
+      "issue": "61",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-60",
+      "issue": "60",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-59",
+      "issue": "59",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-58",
+      "issue": "58",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-57",
+      "issue": "57",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-56",
+      "issue": "56",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-55",
+      "issue": "55",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-54",
+      "issue": "54",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-53",
+      "issue": "53",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-52",
+      "issue": "52",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-51",
+      "issue": "51",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-50",
+      "issue": "50",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-49",
+      "issue": "49",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-48",
+      "issue": "48",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-47",
+      "issue": "47",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-46",
+      "issue": "46",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-45",
+      "issue": "45",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-44",
+      "issue": "44",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-43",
+      "issue": "43",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-42",
+      "issue": "42",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-41",
+      "issue": "41",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-40",
+      "issue": "40",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-39",
+      "issue": "39",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-38",
+      "issue": "38",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-37",
+      "issue": "37",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-36",
+      "issue": "36",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-35",
+      "issue": "35",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-34",
+      "issue": "34",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-33",
+      "issue": "33",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-32",
+      "issue": "32",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-31",
+      "issue": "31",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-30",
+      "issue": "30",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-29",
+      "issue": "29",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-28",
+      "issue": "28",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-27",
+      "issue": "27",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-26",
+      "issue": "26",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-25",
+      "issue": "25",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-24",
+      "issue": "24",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-23",
+      "issue": "23",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-22",
+      "issue": "22",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-21",
+      "issue": "21",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-20",
+      "issue": "20",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-19",
+      "issue": "19",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-18",
+      "issue": "18",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-17",
+      "issue": "17",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-16",
+      "issue": "16",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-15",
+      "issue": "15",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-14",
+      "issue": "14",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-13",
+      "issue": "13",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-12",
+      "issue": "12",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-11",
+      "issue": "11",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-10",
+      "issue": "10",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-9",
+      "issue": "9",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-8",
+      "issue": "8",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-7",
+      "issue": "7",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-6",
+      "issue": "6",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-5",
+      "issue": "5",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-4",
+      "issue": "4",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-3",
+      "issue": "3",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-2",
+      "issue": "2",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hq-2016-1",
+      "issue": "1",
+      "series": "Harley Quinn (2016)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-281",
+      "issue": "281",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-280",
+      "issue": "280",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-279",
+      "issue": "279",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-278",
+      "issue": "278",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-277",
+      "issue": "277",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-276",
+      "issue": "276",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-275",
+      "issue": "275",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-274",
+      "issue": "274",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-273",
+      "issue": "273",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-272",
+      "issue": "272",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-271",
+      "issue": "271",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-270",
+      "issue": "270",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-269",
+      "issue": "269",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-268",
+      "issue": "268",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-267",
+      "issue": "267",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-266",
+      "issue": "266",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-265",
+      "issue": "265",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-264",
+      "issue": "264",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-263",
+      "issue": "263",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-262",
+      "issue": "262",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-261",
+      "issue": "261",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-260",
+      "issue": "260",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-259",
+      "issue": "259",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-258",
+      "issue": "258",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-257",
+      "issue": "257",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-256",
+      "issue": "256",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-255",
+      "issue": "255",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-254",
+      "issue": "254",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-253",
+      "issue": "253",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-252",
+      "issue": "252",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-251",
+      "issue": "251",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-250",
+      "issue": "250",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-249",
+      "issue": "249",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-248",
+      "issue": "248",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-247",
+      "issue": "247",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-246",
+      "issue": "246",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-245",
+      "issue": "245",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-244",
+      "issue": "244",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-243",
+      "issue": "243",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-242",
+      "issue": "242",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-241",
+      "issue": "241",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-240",
+      "issue": "240",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-239",
+      "issue": "239",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-238",
+      "issue": "238",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-237",
+      "issue": "237",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-236",
+      "issue": "236",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-235",
+      "issue": "235",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-234",
+      "issue": "234",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-233",
+      "issue": "233",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-232",
+      "issue": "232",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-231",
+      "issue": "231",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-230",
+      "issue": "230",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-229",
+      "issue": "229",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-228",
+      "issue": "228",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-227",
+      "issue": "227",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-226",
+      "issue": "226",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-225",
+      "issue": "225",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-224",
+      "issue": "224",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-223",
+      "issue": "223",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-222",
+      "issue": "222",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-221",
+      "issue": "221",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-220",
+      "issue": "220",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-219",
+      "issue": "219",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-218",
+      "issue": "218",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-217",
+      "issue": "217",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-216",
+      "issue": "216",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-215",
+      "issue": "215",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-214",
+      "issue": "214",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-213",
+      "issue": "213",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-212",
+      "issue": "212",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-211",
+      "issue": "211",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-210",
+      "issue": "210",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-209",
+      "issue": "209",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-208",
+      "issue": "208",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-hellblazer-207",
+      "issue": "207",
+      "series": "Hellblazer",
+      "seriesPick": "100117",
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-75",
+      "issue": "75",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-74",
+      "issue": "74",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-73",
+      "issue": "73",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-72",
+      "issue": "72",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-71",
+      "issue": "71",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-70",
+      "issue": "70",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-69",
+      "issue": "69",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-68",
+      "issue": "68",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-67",
+      "issue": "67",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-66",
+      "issue": "66",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-65",
+      "issue": "65",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-64",
+      "issue": "64",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-63",
+      "issue": "63",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-62",
+      "issue": "62",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-61",
+      "issue": "61",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-60",
+      "issue": "60",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-59",
+      "issue": "59",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-58",
+      "issue": "58",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-57",
+      "issue": "57",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-56",
+      "issue": "56",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-55",
+      "issue": "55",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-54",
+      "issue": "54",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-53",
+      "issue": "53",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-52",
+      "issue": "52",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-51",
+      "issue": "51",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-50",
+      "issue": "50",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-49",
+      "issue": "49",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-48",
+      "issue": "48",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-47",
+      "issue": "47",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-46",
+      "issue": "46",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-45",
+      "issue": "45",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-44",
+      "issue": "44",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-43",
+      "issue": "43",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-42",
+      "issue": "42",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-41",
+      "issue": "41",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-40",
+      "issue": "40",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-39",
+      "issue": "39",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-38",
+      "issue": "38",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-37",
+      "issue": "37",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-36",
+      "issue": "36",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-35",
+      "issue": "35",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-34",
+      "issue": "34",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-33",
+      "issue": "33",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-32",
+      "issue": "32",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-31",
+      "issue": "31",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-30",
+      "issue": "30",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-29",
+      "issue": "29",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-28",
+      "issue": "28",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-27",
+      "issue": "27",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-26",
+      "issue": "26",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-25",
+      "issue": "25",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-24",
+      "issue": "24",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-23",
+      "issue": "23",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-22",
+      "issue": "22",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-21",
+      "issue": "21",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-20",
+      "issue": "20",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-19",
+      "issue": "19",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-18",
+      "issue": "18",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-17",
+      "issue": "17",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-16",
+      "issue": "16",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-15",
+      "issue": "15",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-14",
+      "issue": "14",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-13",
+      "issue": "13",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-12",
+      "issue": "12",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-11",
+      "issue": "11",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-10",
+      "issue": "10",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-9",
+      "issue": "9",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-8",
+      "issue": "8",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-7",
+      "issue": "7",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-6",
+      "issue": "6",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-5",
+      "issue": "5",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-4",
+      "issue": "4",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-3",
+      "issue": "3",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-2",
+      "issue": "2",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-jl-2018-1",
+      "issue": "1",
+      "series": "Justice League (2018)",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-superman-batman-87",
+      "issue": "87",
+      "series": "Superman/Batman",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-superman-batman-86",
+      "issue": "86",
+      "series": "Superman/Batman",
+      "seriesPick": null,
+      "status": "missing"
+    },
+    {
+      "id": "dc-superman-batman-85",
+      "issue": "85",
+      "series": "Superman/Batman",
+      "seriesPick": null,
+      "status": "missing"
     }
   ],
-  "errors": 168,
-  "locgHits": 99,
+  "elapsedMinutes": 360.24,
+  "errors": 576,
+  "finishedAt": "2026-09-07T21:41:20Z",
+  "fromCatalog": true,
+  "limit": 2500,
+  "locgHits": 0,
   "locgNoUpc": 0,
   "mismatchIssue": 0,
   "mismatchPublisher": 0,
   "seriesBatch": true,
-  "seriesResolved": 4,
+  "seriesResolved": 0,
   "skippedExisting": 0,
-  "startedAt": "2026-09-06T21:45:06Z",
-  "timedOut": false,
-  "upcFilled": 99
+  "startedAt": "2026-09-07T15:41:05Z",
+  "timedOut": true,
+  "upcFilled": 0,
+  "upcMapSize": 1754
 }
