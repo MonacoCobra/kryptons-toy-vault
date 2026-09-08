@@ -29561,6 +29561,104 @@
     ],
     "d14ml-crystal": [
       "F9108"
+    ],
+    "pm-tmnt-gijoe-leo-snake-eyes": [
+      "PL81986",
+      "id:pm-tmnt-gijoe-leo-snake-eyes"
+    ],
+    "pm-tmnt-gijoe-raph-roadblock": [
+      "PL81905",
+      "id:pm-tmnt-gijoe-raph-roadblock"
+    ],
+    "pm-tmnt-gijoe-mikey-shipwreck": [
+      "PL81904",
+      "id:pm-tmnt-gijoe-mikey-shipwreck"
+    ],
+    "pm-tmnt-gijoe-don-dial-tone": [
+      "PL81902",
+      "id:pm-tmnt-gijoe-don-dial-tone"
+    ],
+    "pm-tmnt-gijoe-shredder-cobra-commander": [
+      "PL81903",
+      "id:pm-tmnt-gijoe-shredder-cobra-commander"
+    ],
+    "pm-tmnt-gijoe-krang-destro": [
+      "PL81988",
+      "id:pm-tmnt-gijoe-krang-destro"
+    ],
+    "pm-tmnt-gijoe-bebop-ripper": [
+      "PL81933",
+      "id:pm-tmnt-gijoe-bebop-ripper"
+    ],
+    "pm-tmnt-gijoe-rocksteady-buzzer": [
+      "PL81934",
+      "id:pm-tmnt-gijoe-rocksteady-buzzer"
+    ],
+    "pm-tmnt-gijoe-slash-storm-shadow": [
+      "PL81936",
+      "id:pm-tmnt-gijoe-slash-storm-shadow"
+    ],
+    "pm-tmnt-gijoe-awe-shell-striker": [
+      "PL81926",
+      "id:pm-tmnt-gijoe-awe-shell-striker"
+    ],
+    "pm-tmnt-gijoe-turtle-fly-copter": [
+      "PL81931",
+      "id:pm-tmnt-gijoe-turtle-fly-copter"
+    ],
+    "pm-tmnt-gijoe-turtle-fly-copter-amazon-wild-bill": [
+      "id:pm-tmnt-gijoe-turtle-fly-copter-amazon-wild-bill"
+    ],
+    "pm-tmnt-gijoe-2pk-leo-bebop": [
+      "id:pm-tmnt-gijoe-2pk-leo-bebop"
+    ],
+    "pm-tmnt-gijoe-2pk-raph-rocksteady": [
+      "id:pm-tmnt-gijoe-2pk-raph-rocksteady"
+    ],
+    "pm-tmnt-gijoe-2pk-don-krang": [
+      "id:pm-tmnt-gijoe-2pk-don-krang"
+    ],
+    "pm-tmnt-gijoe-2pk-mikey-shredder": [
+      "id:pm-tmnt-gijoe-2pk-mikey-shredder"
+    ],
+    "pm-tmnt-godzilla-mikey-ghidorah": [
+      "id:pm-tmnt-godzilla-mikey-ghidorah"
+    ],
+    "pm-tmnt-last-ronin": [
+      "id:pm-tmnt-last-ronin"
+    ],
+    "pm-tmnt-last-ronin-raph": [
+      "id:pm-tmnt-last-ronin-raph"
+    ],
+    "pm-tmnt-mutations-raph": [
+      "id:pm-tmnt-mutations-raph"
+    ],
+    "pm-tmnt-bw-comic-raph": [
+      "id:pm-tmnt-bw-comic-raph"
+    ],
+    "pm-tmnt-1988-remastered-pack": [
+      "id:pm-tmnt-1988-remastered-pack"
+    ],
+    "pm-tmnt-shell-spin-leo": [
+      "id:pm-tmnt-shell-spin-leo"
+    ],
+    "pm-tmnt-shell-spin-don": [
+      "id:pm-tmnt-shell-spin-don"
+    ],
+    "pm-tmnt-shell-spin-mikey": [
+      "id:pm-tmnt-shell-spin-mikey"
+    ],
+    "pm-tmnt-shell-spin-raph": [
+      "id:pm-tmnt-shell-spin-raph"
+    ],
+    "pm-tmnt-mutations-leo": [
+      "id:pm-tmnt-mutations-leo"
+    ],
+    "pm-tmnt-mutations-don": [
+      "id:pm-tmnt-mutations-don"
+    ],
+    "pm-tmnt-mutations-mikey": [
+      "id:pm-tmnt-mutations-mikey"
     ]
   },
   "aliasToFigureId": {
@@ -45498,7 +45596,47 @@
     "HAS833627": "ml6-ml-hela-w6",
     "HAS397358": "mlc-morbius-classic2",
     "HAS181277": "ml4-elektra-red",
-    "F9108": "d14ml-crystal"
+    "F9108": "d14ml-crystal",
+    "PL81986": "pm-tmnt-gijoe-leo-snake-eyes",
+    "id:pm-tmnt-gijoe-leo-snake-eyes": "pm-tmnt-gijoe-leo-snake-eyes",
+    "PL81905": "pm-tmnt-gijoe-raph-roadblock",
+    "id:pm-tmnt-gijoe-raph-roadblock": "pm-tmnt-gijoe-raph-roadblock",
+    "PL81904": "pm-tmnt-gijoe-mikey-shipwreck",
+    "id:pm-tmnt-gijoe-mikey-shipwreck": "pm-tmnt-gijoe-mikey-shipwreck",
+    "PL81902": "pm-tmnt-gijoe-don-dial-tone",
+    "id:pm-tmnt-gijoe-don-dial-tone": "pm-tmnt-gijoe-don-dial-tone",
+    "PL81903": "pm-tmnt-gijoe-shredder-cobra-commander",
+    "id:pm-tmnt-gijoe-shredder-cobra-commander": "pm-tmnt-gijoe-shredder-cobra-commander",
+    "PL81988": "pm-tmnt-gijoe-krang-destro",
+    "id:pm-tmnt-gijoe-krang-destro": "pm-tmnt-gijoe-krang-destro",
+    "PL81933": "pm-tmnt-gijoe-bebop-ripper",
+    "id:pm-tmnt-gijoe-bebop-ripper": "pm-tmnt-gijoe-bebop-ripper",
+    "PL81934": "pm-tmnt-gijoe-rocksteady-buzzer",
+    "id:pm-tmnt-gijoe-rocksteady-buzzer": "pm-tmnt-gijoe-rocksteady-buzzer",
+    "PL81936": "pm-tmnt-gijoe-slash-storm-shadow",
+    "id:pm-tmnt-gijoe-slash-storm-shadow": "pm-tmnt-gijoe-slash-storm-shadow",
+    "PL81926": "pm-tmnt-gijoe-awe-shell-striker",
+    "id:pm-tmnt-gijoe-awe-shell-striker": "pm-tmnt-gijoe-awe-shell-striker",
+    "PL81931": "pm-tmnt-gijoe-turtle-fly-copter",
+    "id:pm-tmnt-gijoe-turtle-fly-copter": "pm-tmnt-gijoe-turtle-fly-copter",
+    "id:pm-tmnt-gijoe-turtle-fly-copter-amazon-wild-bill": "pm-tmnt-gijoe-turtle-fly-copter-amazon-wild-bill",
+    "id:pm-tmnt-gijoe-2pk-leo-bebop": "pm-tmnt-gijoe-2pk-leo-bebop",
+    "id:pm-tmnt-gijoe-2pk-raph-rocksteady": "pm-tmnt-gijoe-2pk-raph-rocksteady",
+    "id:pm-tmnt-gijoe-2pk-don-krang": "pm-tmnt-gijoe-2pk-don-krang",
+    "id:pm-tmnt-gijoe-2pk-mikey-shredder": "pm-tmnt-gijoe-2pk-mikey-shredder",
+    "id:pm-tmnt-godzilla-mikey-ghidorah": "pm-tmnt-godzilla-mikey-ghidorah",
+    "id:pm-tmnt-last-ronin": "pm-tmnt-last-ronin",
+    "id:pm-tmnt-last-ronin-raph": "pm-tmnt-last-ronin-raph",
+    "id:pm-tmnt-mutations-raph": "pm-tmnt-mutations-raph",
+    "id:pm-tmnt-bw-comic-raph": "pm-tmnt-bw-comic-raph",
+    "id:pm-tmnt-1988-remastered-pack": "pm-tmnt-1988-remastered-pack",
+    "id:pm-tmnt-shell-spin-leo": "pm-tmnt-shell-spin-leo",
+    "id:pm-tmnt-shell-spin-don": "pm-tmnt-shell-spin-don",
+    "id:pm-tmnt-shell-spin-mikey": "pm-tmnt-shell-spin-mikey",
+    "id:pm-tmnt-shell-spin-raph": "pm-tmnt-shell-spin-raph",
+    "id:pm-tmnt-mutations-leo": "pm-tmnt-mutations-leo",
+    "id:pm-tmnt-mutations-don": "pm-tmnt-mutations-don",
+    "id:pm-tmnt-mutations-mikey": "pm-tmnt-mutations-mikey"
   },
   "collapsed": [
     {
@@ -45803,11 +45941,16 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-09-08T21:46:04.613466+00:00",
+  "updatedAt": "2026-09-08T22:06:12.986856+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
     "after": 19079,
-    "dwCollapsed": 4
+    "dwCollapsed": 4,
+    "playmatesTmntGijoeInject": {
+      "at": "2026-09-08T22:06:12.986890+00:00",
+      "added": 29,
+      "aliasAdded": 40
+    }
   }
 }
