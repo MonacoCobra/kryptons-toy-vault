@@ -1,0 +1,173 @@
+{
+  "at": "2026-09-08T05:55:40.628371+00:00",
+  "before": {
+    "bandai": {
+      "rows": 196,
+      "figure": 196,
+      "kit": 0,
+      "sku": 112,
+      "img": 112,
+      "gtin": 49
+    },
+    "blokees": {
+      "rows": 206,
+      "figure": 206,
+      "kit": 0,
+      "sku": 0,
+      "img": 152,
+      "gtin": 0
+    },
+    "flametoys": {
+      "rows": 44,
+      "figure": 44,
+      "kit": 0,
+      "sku": 0,
+      "img": 0,
+      "gtin": 0
+    },
+    "soskill": {
+      "rows": 0,
+      "figure": 0,
+      "kit": 0,
+      "sku": 0,
+      "img": 0,
+      "gtin": 0
+    },
+    "yolopark": {
+      "rows": 67,
+      "figure": 0,
+      "kit": 67,
+      "sku": 0,
+      "img": 67,
+      "gtin": 0
+    }
+  },
+  "apply": true,
+  "blokees": {
+    "fetched": 199,
+    "reclassedToKit": 201,
+    "keptFigure": 5,
+    "imagesAdded": 0,
+    "namesFixed": 59,
+    "aliasAdds": 1,
+    "added": 0,
+    "skipped": {
+      "filter": 31,
+      "id": 136,
+      "soft_merch": 4,
+      "soft_name": 2,
+      "known_listing": 25,
+      "non_kit": 1
+    },
+    "ids": [],
+    "feed": "https://blokees.com"
+  },
+  "flametoys": {
+    "productsSeen": 33,
+    "feedsUsed": [
+      "https://www.toyarena.com (Flame Toys vendor hits=21)",
+      "https://www.planetactionfigures.co.uk (Flame Toys hits≈12)"
+    ],
+    "feedsRejected": [
+      "https://flametoys.com — SSL/EOF or no products.json (first-party blocked)",
+      "https://www.flametoys.com — SSL/EOF or no products.json (first-party blocked)",
+      "https://shop.flametoys.com — SSL/EOF or no products.json (first-party blocked)",
+      "https://store.flametoys.com — SSL/EOF or no products.json (first-party blocked)"
+    ],
+    "reclassedGundamToKit": 10,
+    "imagesDensified": 15,
+    "kitsAdded": 9,
+    "figuresAdded": 9,
+    "kitIds": [
+      "sf-flametoys-toyarena-flame-toys-furai-44-transformers-wingblade-optimus-prime-a",
+      "sf-flametoys-toyarena-flame-toys-furai-12-transformers-optimus-prime-g1-ver-mode",
+      "sf-flametoys-toyarena-flame-toys-furai-model-transformers-devastator-model-kit",
+      "sf-flametoys-toyarena-flame-toys-furai-07-transformers-shattered-glass-optimus-p",
+      "sf-flametoys-toyarena-flame-toys-furai-28-transformers-arcee-model-kit",
+      "sf-flametoys-toyarena-flame-toys-furai-26-transformers-leo-prime-model-kit",
+      "sf-flametoys-planet-af-transformers-furai-model-plastic-model-kit-sg-optimus-pri",
+      "sf-flametoys-planet-af-transformers-furai-model-plastic-model-kit-big-convoy-17-",
+      "sf-flametoys-planet-af-transformers-furai-model-plastic-model-kit-bumblebee-g1-v"
+    ],
+    "figureIds": [
+      "sf-flametoys-toyarena-flame-toys-furai-action-transformers-windblade-action-figu",
+      "sf-flametoys-toyarena-flame-toys-transformers-kuro-kara-kuri-01-drift-figure",
+      "sf-flametoys-toyarena-flame-toys-mighty-morphin-power-rangers-go-kara-kuri-combi",
+      "sf-flametoys-planet-af-tengen-toppa-gurren-lagann-kuro-kara-kuri-action-figure-l",
+      "sf-flametoys-planet-af-power-rangers-furai-action-action-figure-yellow-ranger-13",
+      "sf-flametoys-planet-af-power-rangers-furai-action-action-figure-red-ranger-13-cm",
+      "sf-flametoys-planet-af-power-rangers-furai-action-action-figure-pink-ranger-13-c",
+      "sf-flametoys-planet-af-power-rangers-furai-action-action-figure-black-ranger-13-",
+      "sf-flametoys-planet-af-power-rangers-furai-action-action-figure-blue-ranger-13-c"
+    ],
+    "skipped": {
+      "known_listing": 11,
+      "soft_name": 3,
+      "filter": 1
+    }
+  },
+  "soskill": {
+    "added": 0,
+    "note": "No verified Shopify products.json; CompanyId reserved; leave 0 rather than invent",
+    "rejected": [
+      "https://soskill.com — URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>",
+      "https://www.soskill.com — URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>",
+      "https://soskilltoys.com — HTTPError: HTTP Error 404: Not Found",
+      "https://www.soskilltoys.com — HTTPError: HTTP Error 404: Not Found",
+      "https://soskill.myshopify.com — HTTPError: HTTP Error 404: Not Found",
+      "https://shop.soskill.com — URLError: <urlopen error [Errno -2] Name or service not known>",
+      "https://soskill.store — URLError: <urlopen error [Errno -2] Name or service not known>",
+      "https://shop.soskilltoys.com — URLError: <urlopen error [Errno -2] Name or service not known>",
+      "https://soskillofficial.com — URLError: <urlopen error [Errno -2] Name or service not known>",
+      "https://topgkstore.com — HTML, not Shopify products.json",
+      "ToyArena/PlanetAF full scans — 0 SoSkill vendor hits",
+      "showzstore.com / robotkingdom.com — non-Shopify or blocked"
+    ]
+  },
+  "after": {
+    "bandai": {
+      "rows": 196,
+      "figure": 196,
+      "kit": 0,
+      "sku": 112,
+      "img": 112,
+      "gtin": 49
+    },
+    "blokees": {
+      "rows": 206,
+      "figure": 5,
+      "kit": 201,
+      "sku": 0,
+      "img": 152,
+      "gtin": 0
+    },
+    "flametoys": {
+      "rows": 62,
+      "figure": 43,
+      "kit": 19,
+      "sku": 0,
+      "img": 33,
+      "gtin": 0
+    },
+    "soskill": {
+      "rows": 0,
+      "figure": 0,
+      "kit": 0,
+      "sku": 0,
+      "img": 0,
+      "gtin": 0
+    },
+    "yolopark": {
+      "rows": 67,
+      "figure": 0,
+      "kit": 67,
+      "sku": 0,
+      "img": 67,
+      "gtin": 0
+    }
+  },
+  "ui": {
+    "kitsFilter": "src/routes/figures/index.tsx view=kits filters kind===kit (Yolopark already)",
+    "change": "none — Blokees/Flame kits appear under Kits once kind=kit"
+  }
+}

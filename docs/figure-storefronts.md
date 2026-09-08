@@ -83,3 +83,20 @@ Curated rows without CDN art are filled (high-confidence only) by
 - shop.jadatoys.de — Magento HTML (not Shopify products.json)
 - jakks.com / jakkspacific.com — 404 / non-Shopify
 - www.yolopark.com — Peppa/merch mix; use shop.yolopark.com for AMK AF kits
+
+## Model-kits specialty feeds (2026-09-08)
+
+**Used:**
+- Blokees — https://blokees.com (first-party; kits reclass + densify)
+- Flame Toys specialty — https://www.toyarena.com (Furai Model / Furai Action / KKK vendor hits)
+- Flame Toys specialty — https://www.planetactionfigures.co.uk/collections/flame-toys
+
+**Rejected (Flame Toys first-party / SoSkill):**
+- flametoys.com / www / shop / store — SSL/EOF, no products.json
+- soskill.com / www — SSL/EOF
+- soskilltoys.com / www — 404 on products.json
+- soskill.myshopify.com — 404
+- shop.soskill.com / soskill.store / shop.soskilltoys.com / soskillofficial.com — DNS miss
+- topgkstore.com — HTML / bot interstitial
+- showzstore.com / robotkingdom.com — non-Shopify or blocked
+- ToyArena/PlanetAF — 0 SoSkill vendor hits

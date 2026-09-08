@@ -378,3 +378,17 @@ Yolopark AMK kits from shop.yolopark.com; Jada/JAKKS densified from specialty
 `product-sku-index` (GTIN when known). SoSkill reserved with **no rows** until a
 verified GTIN/image feed exists (see `docs/figure-storefronts.md` rejected list).
 Listing codes demoted to aliases; Nano Metalfigs removed from Jada.
+
+## Model kits pass: Blokees / Flame Toys / SoSkill (2026-09-08)
+
+Priority kits pass (Bandai Gunpla deferred). Script: `scripts/inject-model-kits.py`.
+
+| CompanyId | Change |
+| --- | --- |
+| `blokees` | Re-fetched blokees.com; **201** Champion/Galaxy/Defender/Classic/Action/Herospire/Gundam rows → `kind: kit`; **5** DaaLaMode/Fantastics/Unicron stay `figure`; names repaired from CDN titles; listing→aliases |
+| `flametoys` | Specialty feeds ToyArena + Planet AF; **+9 Furai Model kits**; **+9** KKK/Furai Action figures; **10** curated Gundam AF → Furai Model kits; **15** CDN image densifies; first-party flametoys.com SSL-blocked |
+| `soskill` | Still **0 rows** — no verified Shopify `products.json` (see storefronts rejected list) |
+| `bandai` | Untouched (next phase) |
+
+UI: existing Figures → **Kits** filter (`kind === "kit"`) already shows Yolopark; Blokees/Flame kits appear there with no UI change.
+
