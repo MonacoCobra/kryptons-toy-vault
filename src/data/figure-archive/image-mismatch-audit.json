@@ -1,24 +1,424 @@
 {
-  "auditedAt": "2026-09-08T01:34:01.805359+00:00",
-  "mode": "dry-run",
+  "auditedAt": "2026-09-08T16:10:38.023617+00:00",
+  "mode": "apply",
   "refill": false,
   "counts": {
-    "oneshotRows": 19341,
-    "auditedWithImage": 9129,
-    "highMismatches": 17,
-    "softMismatches": 347,
-    "cleared": 0,
+    "oneshotRows": 23915,
+    "auditedWithImage": 13717,
+    "highMismatches": 18,
+    "softMismatches": 534,
+    "cleared": 18,
     "refilled": 0,
-    "overlayDropped": 0,
-    "overlayRemaining": 9061
+    "overlayDropped": 3,
+    "overlayRemaining": 13659
   },
   "reasonCounts": {
     "product_multipack_vs_single": 15,
-    "score_pair_reject": 5,
+    "score_pair_reject": 6,
     "char_missing:aquaman": 1,
-    "char_missing:batman": 1
+    "char_missing:batman": 1,
+    "char_missing:putty": 1
   },
-  "cleared": [],
+  "cleared": [
+    {
+      "figureId": "sf-neca-store-teenage-mutant-ninja-turtles-1990-movie-casey-jones-with-dirt-bike",
+      "clearedOneshot": true,
+      "clearedOverlay": true,
+      "clearedImageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/54514_UNP_6.jpg?v=1742857086",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Teenage Mutant Ninja Turtles (1990 Movie)",
+      "subtitle": "Casey Jones with Dirt Bike 7\" Scale Action Figure",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/54514_UNP_6.jpg?v=1742857086",
+        "gtin": "634482541203",
+        "gtinScore": 12.9,
+        "gtinTitle": "Teenage Mutant Ninja Turtles 7 Inch Action Figure 1980 Cartoon 2-Pack - Casey Jones & Foot Soldier",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 42.0,
+        "urlBestTitle": "Teenage Mutant Ninja Turtles (1990 Movie) - Casey Jones with Dirt Bike 7\" Scale Action Figure",
+        "urlBestShop": "neca-store",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "joec-classified-tripwire",
+      "clearedOneshot": true,
+      "clearedOverlay": true,
+      "clearedImageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996233929z.jpg?v=1722551708",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Tripwire",
+      "subtitle": "Classified Series",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996233929z.jpg?v=1722551708",
+        "gtin": "5010996233929",
+        "gtinScore": 42.0,
+        "gtinTitle": "G.I. Joe Classified 6 Inch Action Figure Tiger Force 2-Pack - (Roadblock - Tripwire - M.A.C.L.E.O.D)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 42.0,
+        "urlBestTitle": "Hasbro G.I. Joe Classified Series #126 Tiger Force Roadblock, Tripwire and M.A.C.L.E.O.D Action Figure",
+        "urlBestShop": "toyarena",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "mf8-mf-35",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_4538569caba640fbb62f2c41c6f832c9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_4538569caba640fbb62f2c41c6f832c9~mv2.jpg",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Harley Quinn",
+      "subtitle": "DC Multiverse Gold Label",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_4538569caba640fbb62f2c41c6f832c9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_4538569caba640fbb62f2c41c6f832c9~mv2.jpg",
+        "gtin": "787926177268",
+        "gtinScore": -1.0,
+        "gtinTitle": "DC Direct Batman The Animated Series 7 Inch Action Figure 2-Pack Exclusive - Harley Quinn and The Joker Gold Label",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 53.0,
+        "urlBestTitle": "Harley Quinn — Gold Label GameStop · 2026 · DC Multiverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "d14mcf-atom-smasher-mega",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Atom Smasher",
+      "subtitle": "Megafig",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp",
+        "gtin": "787926173482",
+        "gtinScore": 21.5,
+        "gtinTitle": "DC Multiverse JSA Black Vengeance 7 Inch Action Figure 2-Pack - Atom Smasher vs. The Spectre",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 53.0,
+        "urlBestTitle": "Atom Smasher — Black Adam Wave 1 · 2022 · DC Multiverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 9
+      }
+    },
+    {
+      "figureId": "bsc-b2emo",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_d43060141ac74f3ab99ff62c89525b98~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d43060141ac74f3ab99ff62c89525b98~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "B2EMO",
+      "subtitle": "Andor",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_d43060141ac74f3ab99ff62c89525b98~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d43060141ac74f3ab99ff62c89525b98~mv2.jpg",
+        "gtin": "195166188980",
+        "gtinScore": 48.0,
+        "gtinTitle": "Star Wars The Black Series 6 Inch Action Figure 2-Pack Exclusive - B2EMO & Cassian Andor",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 48.0,
+        "urlBestTitle": "B2EMO — Exclusive · 2022 · Andor",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "mcf3-mcf-doomsday-gl",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_6b0c0ddbc4404ac58fdf8296acb36cf4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6b0c0ddbc4404ac58fdf8296acb36cf4~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Doomsday",
+      "subtitle": "Gold Label",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_6b0c0ddbc4404ac58fdf8296acb36cf4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6b0c0ddbc4404ac58fdf8296acb36cf4~mv2.jpg",
+        "gtin": "787926170894",
+        "gtinScore": 42.0,
+        "gtinTitle": "DC Multiverse 7 Inch Action Figure 2-Pack Exclusive - Superman vs Doomsday Gold Label",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 48.0,
+        "urlBestTitle": "Doomsday — Gold Label McFarlane Store · 2026 · DC Multiverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "bs5-bs-grogu",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_021fe6a919a84603a463add35f38b534~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Grogu",
+      "subtitle": "The Mandalorian",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_021fe6a919a84603a463add35f38b534~mv2.jpg",
+        "gtin": "5010994172640",
+        "gtinScore": 48.0,
+        "gtinTitle": "Star Wars The Black Series 6 Inch Action Figure 3-Pack Exclusive - The Mandalorian - Ahsoka Tano - Grogu",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 48.0,
+        "urlBestTitle": "Grogu — Galaxy Collection Special · 2026 · The Mandalorian and Grogu",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "d14mcf-batman-tas",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_f3bbc31b1b83463881d02c3b6bd99d4e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f3bbc31b1b83463881d02c3b6bd99d4e~mv2.jpg",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Batman",
+      "subtitle": "Animated Series Wave 1",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_f3bbc31b1b83463881d02c3b6bd99d4e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f3bbc31b1b83463881d02c3b6bd99d4e~mv2.jpg",
+        "gtin": "787926177657",
+        "gtinScore": -1.0,
+        "gtinTitle": "DC Direct The New Batman Adventures 6 Inch Action Figure Wave 4 - Set of 3 (Scarecrow - Riddler - Batman)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 34.5,
+        "urlBestTitle": "Batman — Vault Collection Wave 1 · 2026 · DC Multiverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "mf8-mf-14",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_e0b9d363c07f4b3db18abdff07ae3bf8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e0b9d363c07f4b3db18abdff07ae3bf8~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Spawn",
+      "subtitle": "Spawn Gunslinger",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_e0b9d363c07f4b3db18abdff07ae3bf8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e0b9d363c07f4b3db18abdff07ae3bf8~mv2.jpg",
+        "gtin": "787926901573",
+        "gtinScore": 42.0,
+        "gtinTitle": "Spawn 7 Inch Action Figure 2-Pack Exclusive - Gunslinger with Horse",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 42.0,
+        "urlBestTitle": "Gunslinger Spawn & Horse — Gamestop (US) · 2022 · Spawn",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "mcfgap-aquaman-baf-throne",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_b5a2630156ac4de68a52f927b156abd8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b5a2630156ac4de68a52f927b156abd8~mv2.jpg",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "gtin:char_missing:aquaman"
+      ],
+      "name": "Aquaman",
+      "subtitle": "Build-A Aquaman Throne",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_b5a2630156ac4de68a52f927b156abd8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b5a2630156ac4de68a52f927b156abd8~mv2.jpg",
+        "gtin": "787926156799",
+        "gtinScore": -1.0,
+        "gtinTitle": "DC Multiverse JLA 7 Inch Action Figure BAF Plastic Man - Green Lantern John Stewart",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 34.33,
+        "urlBestTitle": "JLA Aquaman 'Platinum' — Platinum Edition JLA Plastic Man Build-a Wave · 2024 · DC Multiverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "neca2-tmnt-ace-duck",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_ee66c9fd89ca42e7b8e565a5c9aecedf~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ee66c9fd89ca42e7b8e565a5c9aecedf~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Ace Duck",
+      "subtitle": "Cartoon",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_ee66c9fd89ca42e7b8e565a5c9aecedf~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ee66c9fd89ca42e7b8e565a5c9aecedf~mv2.jpg",
+        "gtin": "634482542262",
+        "gtinScore": 47.0,
+        "gtinTitle": "Teenage Mutant Ninja Turtles 1990 Cartoon 7 Inch Action Figure 2-Pack - Ace Duck & Mutagen Man (Sub-Standard Packaging)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 35.5,
+        "urlBestTitle": "Ace Duck — Walmart (US) · 2025 · Teenage Mutant Ninja Turtles",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "mcfdc-batman-arkham-city",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject",
+        "url:char_missing:batman"
+      ],
+      "name": "Batman",
+      "subtitle": "Arkham City",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
+        "gtin": "887961670486",
+        "gtinScore": -1.0,
+        "gtinTitle": "DC Comics Multiverse 6 Inch Action Figure Lex Luthor Series - Batman",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Hal Jordan Parralax (Gold Label) — Walmart, Gold Label · 2022 · DC Multiverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 43
+      }
+    },
+    {
+      "figureId": "d14neca-tmnt-rock-toon",
+      "clearedOneshot": true,
+      "clearedOverlay": true,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Rocksteady",
+      "subtitle": "Toon Turtles",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg",
+        "gtin": "634482541760",
+        "gtinScore": 42.0,
+        "gtinTitle": "Teenage Mutant Ninja Turtles Turtles In Time 6 Inch Action Figure 2-Pack - Pirate Bebop & Rocksteady",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 38.5,
+        "urlBestTitle": "Rocksteady — Haulathon 2024 (Target US) · 2024 · Teenage Mutant Ninja Turtles",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      }
+    },
+    {
+      "figureId": "d14neca-tmnt-splinter-toon",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_c228cf18a95a42d5af1ea90b9e8de7bd~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c228cf18a95a42d5af1ea90b9e8de7bd~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Splinter",
+      "subtitle": "Toon Turtles",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_c228cf18a95a42d5af1ea90b9e8de7bd~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c228cf18a95a42d5af1ea90b9e8de7bd~mv2.jpg",
+        "gtin": "634482541586",
+        "gtinScore": 42.0,
+        "gtinTitle": "Teenage Mutant Ninja Turtles Cartoon Series 7 Inch Action Figure 2-Pack Exclusive - Splinter & Baxter",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 38.5,
+        "urlBestTitle": "Splinter — General · 2023 · Teenage Mutant Ninja Turtles",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "mcfc-gl-hal",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Green Lantern",
+      "subtitle": "Hal Jordan",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg",
+        "gtin": "787926154542",
+        "gtinScore": 42.0,
+        "gtinTitle": "DC Multiverse Comic Series 7 Inch Action Figure 2-Pack - Green Lantern Hal Jordan vs Dawnbreaker",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 42.0,
+        "urlBestTitle": "Green Lantern Hal Jordan — Gold Label Walmart · 2024 · DC Multiverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "d14lc-putty",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_80847fffd4334510be51934904d16540~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_80847fffd4334510be51934904d16540~mv2.jpg",
+      "reasons": [
+        "url:score_pair_reject",
+        "url:char_missing:putty"
+      ],
+      "name": "Putty Patroller",
+      "subtitle": "MMPR",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_80847fffd4334510be51934904d16540~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_80847fffd4334510be51934904d16540~mv2.jpg",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Fighting Spirit Green Ranger — Power Rangers Dino Thunder · 2019 · Power Rangers",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      }
+    },
+    {
+      "figureId": "neca3-ult-alien-big-chap",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_0bb4ee3fe55f4bab82f3412de8a51c13~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0bb4ee3fe55f4bab82f3412de8a51c13~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "Big Chap",
+      "subtitle": "Alien Ultimate",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_0bb4ee3fe55f4bab82f3412de8a51c13~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0bb4ee3fe55f4bab82f3412de8a51c13~mv2.jpg",
+        "gtin": "634482515938",
+        "gtinScore": 50.0,
+        "gtinTitle": "Aliens 40th Anniversary 7 Inch Action Figure Series 1 - Set of 3 (Ripley - Dallas - Big Chap)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 44.0,
+        "urlBestTitle": "Big Chap Alien — Ultimate · 2020 · Aliens",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    },
+    {
+      "figureId": "neca-robocop",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_6dd992100ce74abeb0b41190849fa733~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6dd992100ce74abeb0b41190849fa733~mv2.jpg",
+      "reasons": [
+        "gtin:product_multipack_vs_single"
+      ],
+      "name": "RoboCop",
+      "subtitle": "RoboCop",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_6dd992100ce74abeb0b41190849fa733~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6dd992100ce74abeb0b41190849fa733~mv2.jpg",
+        "gtin": "634482420782",
+        "gtinScore": 39.0,
+        "gtinTitle": "Robocop vs Terminator 7 Inch Action Figure 2-Pack - Endocop & Terminator Dog",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 45.0,
+        "urlBestTitle": "Robocop — Re-Issue · 2015 · Robocop",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 1
+      }
+    }
+  ],
   "refilled": [],
   "highFlags": [
     {
@@ -46,7 +446,8 @@
       "tags": [
         "image-sku",
         "image-bake",
-        "imgsku:neca-store"
+        "imgsku:neca-store",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -74,7 +475,8 @@
       "tags": [
         "image-bake",
         "image-sku",
-        "imgsku:toyarena"
+        "imgsku:toyarena",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -102,7 +504,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -129,7 +533,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -156,7 +562,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -183,7 +591,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -210,7 +620,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -238,7 +650,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -265,7 +679,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -293,7 +709,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -320,7 +738,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -348,8 +768,9 @@
         "urlProductCount": 43
       },
       "tags": [
-        "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -376,7 +797,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -403,7 +826,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -427,6 +852,32 @@
         "urlBestTitle": "Green Lantern Hal Jordan — Gold Label Walmart · 2024 · DC Multiverse",
         "urlBestShop": "mephitsu",
         "urlProductCount": 1
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "d14lc-putty",
+      "name": "Putty Patroller",
+      "subtitle": "MMPR",
+      "line": "Lightning Collection",
+      "company": "hasbro",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject",
+        "url:char_missing:putty"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_80847fffd4334510be51934904d16540~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_80847fffd4334510be51934904d16540~mv2.jpg",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Fighting Spirit Green Ranger — Power Rangers Dino Thunder · 2019 · Power Rangers",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
       },
       "tags": [
         "image-bake",
@@ -457,7 +908,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -484,7 +937,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     }
   ],
@@ -509,7 +964,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:collecticon"
       ]
     },
     {
@@ -6793,7 +7250,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -7298,8 +7757,9 @@
         "urlProductCount": 43
       },
       "tags": [
-        "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -7690,7 +8150,9 @@
       },
       "tags": [
         "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -9007,9 +9469,3501 @@
         "image-sku",
         "imgsku:cmdstore"
       ]
+    },
+    {
+      "figureId": "sf-blokees-dc-champion-class-nightwing",
+      "name": "Nightwing",
+      "subtitle": "DC Champion Class Nightwing",
+      "line": "Blokees Champion Class",
+      "company": "blokees",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0679/6538/6990/files/551.webp?v=1781172019",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "DC Champion Class Nightwing | Blokees",
+        "urlBestShop": "blokees",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-blokees-star-wars-champion-class-stormtrooper",
+      "name": "STORMTROOPER™",
+      "subtitle": "STAR WARS: THE EMPIRE STRIKES BACK™ CHAMPION CLASS 02 STORMTROOPER™",
+      "line": "Blokees Champion Class",
+      "company": "blokees",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0679/6538/6990/files/Mask_group-3_27.webp?v=1776224100",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "STAR WARS: THE EMPIRE STRIKES BACK™ CHAMPION CLASS 02 STORMTROOPER™ MODEL KITS | BLOKEES",
+        "urlBestShop": "blokees",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-blokees-marvel-rivals-champion-class-venom",
+      "name": "Venom",
+      "subtitle": "Marvel Rivals Champion Class 07 Venom",
+      "line": "Blokees Champion Class",
+      "company": "blokees",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0679/6538/6990/files/14_2.webp?v=1770451454",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Marvel Rivals Champion Class 07 Venom Model Kits | Blokees",
+        "urlBestShop": "blokees",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-blokees-marvel-rivals-champion-class-spider-man",
+      "name": "Spider-Man",
+      "subtitle": "Marvel Rivals Champion Class 06 Spider-Man",
+      "line": "Blokees Champion Class",
+      "company": "blokees",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0679/6538/6990/files/2_21.webp?v=1771998060",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Marvel Rivals Champion Class 06 Spider-Man Model Kits | Blokees",
+        "urlBestShop": "blokees",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-blokees-marvel-deadpool-wolverine-champion-class-wolverine",
+      "name": "Wolverine",
+      "subtitle": "Marvel Deadpool & Wolverine Champion Class 05 Wolverine",
+      "line": "Blokees Champion Class",
+      "company": "blokees",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0679/6538/6990/files/42_e8ee7f61-ccc8-42e5-aff0-fa5d28b3981c.webp?v=1760926350",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Marvel Deadpool & Wolverine Champion Class 05 Wolverine Model Kits | Blokees",
+        "urlBestShop": "blokees",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-blokees-marvel-deadpool-wolverine-champion-class-deadpool",
+      "name": "Deadpool",
+      "subtitle": "Marvel Deadpool & Wolverine Champion Class 04 Deadpool",
+      "line": "Blokees Champion Class",
+      "company": "blokees",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0679/6538/6990/files/CMF0.9.793.webp?v=1760670018",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Marvel Deadpool & Wolverine Champion Class 04 Deadpool Model Kits | Blokees",
+        "urlBestShop": "blokees",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-blokees-marvel-infinity-saga-champion-class-thor",
+      "name": "Thor",
+      "subtitle": "Marvel Infinity Saga Champion Class 02 Thor",
+      "line": "Blokees Champion Class",
+      "company": "blokees",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0679/6538/6990/files/5273.webp?v=1760421322",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Marvel Infinity Saga Champion Class 02 Thor Model Kits | Blokees",
+        "urlBestShop": "blokees",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-amk-rotb-mirage",
+      "name": "Mirage",
+      "subtitle": "Rise of the Beasts",
+      "line": "Yolopark AMK",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/AMK_ROTB_Mirage-00.jpg?v=1788414442",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Rise of the Beasts - 16cm Mirage Model Kit - AMK Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-amk-pro-bumblebee2018-shockwave",
+      "name": "Shockwave",
+      "subtitle": "Bumblebee",
+      "line": "Yolopark AMK PRO",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/Pro_TF6_Shockwave-00_1.jpg?v=1787626568",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Bumblebee - 21cm Shockwave Model Kit - AMK PRO Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-amk-pro-transformers2007-ironhide",
+      "name": "Ironhide",
+      "subtitle": "Transformers",
+      "line": "Yolopark AMK PRO",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/PRO_M1_IH-01.jpg?v=1782884404",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers - 18cm Ironhide Model Kit - AMK PRO Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-transformers-beast-wars-blackarachnia-amk-series",
+      "name": "Blackarachnia",
+      "subtitle": "Beast Wars",
+      "line": "Yolopark AMK",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/BW-Blackarachnia-01.jpg?v=1781594132",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Beast Wars - 16.5cm Blackarachnia Model Kit - AMK Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-transformers-beast-wars-megatron-amk-series",
+      "name": "Megatron",
+      "subtitle": "Beast Wars",
+      "line": "Yolopark AMK",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/BW-Megatron-01.jpg?v=1781592345",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Beast Wars - 22cm Megatron Model Kit - AMK Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-amk-pro-shurato-reiga",
+      "name": "Reiga",
+      "subtitle": "Shurato",
+      "line": "Yolopark AMK PRO",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/Shurato_Reiga-01.jpg?v=1779786777",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "SHURATO - 19cm Reiga Model Kit - AMK PRO Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-transformers-beast-wars-dinobot-amk-series",
+      "name": "Dinobot",
+      "subtitle": "Beast Wars",
+      "line": "Yolopark AMK",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/BW_DB-AMK-01.jpg?v=1774424892",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Beast Wars - 20cm Dinobot Model Kit - AMK Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-transformers-g1-bumblebee-amk-pro-series",
+      "name": "Bumblebee",
+      "subtitle": "Bumblebee",
+      "line": "Yolopark AMK PRO",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/G1_BB-PRO-01.jpg?v=1770364399",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Generation 1 - 16cm Bumblebee Model Kit - AMK PRO Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-amk-pro-rotb-arcee",
+      "name": "Arcee",
+      "subtitle": "Rise of the Beasts",
+      "line": "Yolopark AMK PRO",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/PRO_ARCEE-01.jpg?v=1765957390",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Rise of the Beasts - 16cm Arcee Model Kit - AMK PRO Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-amk-pro-idw-tarn",
+      "name": "Tarn",
+      "subtitle": "Transformers",
+      "line": "Yolopark AMK PRO",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/PRO_Tarn-01.jpg?v=1765421288",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: IDW - 21cm Tarn Model Kit - AMK PRO Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-rise-of-the-beasts-22cm-apelinq",
+      "name": "Apelinq",
+      "subtitle": "Rise of the Beasts",
+      "line": "Yolopark AMK PRO",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/AMK-PRO-X-Series-Apelinq-02.jpg?v=1778583152",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Rise of the Beasts - 20cm Apelinq Model Kit - AMK Pro X Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-amk-pro-tf4-drift",
+      "name": "Drift",
+      "subtitle": "Transformers",
+      "line": "Yolopark AMK PRO",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/PRO_M4_Drift_01.jpg?v=1778586421",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Age of Extinction - 16cm Drift Model Kit - AMK PRO Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-bmk-g1",
+      "name": "Generation 1",
+      "subtitle": "Generation 1",
+      "line": "Yolopark AMK",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/BMK_1.jpg?v=1778586277",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers BMK Mini Series - Generation 1 Model Kit",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-amk-pro-tf2-megatron",
+      "name": "Megatron",
+      "subtitle": "Transformers",
+      "line": "Yolopark AMK PRO",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/ROTF_Megatron_AMK_Pro_Series-01.jpg?v=1778585833",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Revenge of the Fallen - 22cm Megatron Model Kit - AMK PRO Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-amk-pro-bumblebee2018-soundwave",
+      "name": "Soundwave",
+      "subtitle": "Bumblebee",
+      "line": "Yolopark AMK PRO",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/Bumblebee_Soundwave_AMK_Pro_Series-01.jpg?v=1778585432",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Bumblebee - 20cm Soundwave Model Kit - AMK PRO Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-transformers-g1-megatron-amk-series",
+      "name": "Megatron",
+      "subtitle": "Generation 1",
+      "line": "Yolopark AMK",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/Generation_1_Megatron_AMK_Series_01.jpg?v=1778584907",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Generation 1 - 20cm Megatron Model Kit - AMK Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-transformers-g1-starscream-amk-series",
+      "name": "Starscream",
+      "subtitle": "Generation 1",
+      "line": "Yolopark AMK",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/Generation_1_Starscream_AMK_Series_01.jpg?v=1778584870",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Generation 1 - 19cm Starscream Model Kit - AMK Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-transformers-g1-bumblebee-amk-series",
+      "name": "Bumblebee",
+      "subtitle": "Bumblebee",
+      "line": "Yolopark AMK",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/Generation_1_Bumblebee_AMK_Series_01.jpg?v=1778584851",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Generation 1 - 16cm Bumblebee Model Kit - AMK Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-transformers-generation-1-20cm-starscream-model-kit-amk-pro-series",
+      "name": "Starscream",
+      "subtitle": "Generation 1",
+      "line": "Yolopark AMK PRO",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/generation_1_starscream_amk_pro_series_01.jpg?v=1778583484",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Generation 1 - 19cm Starscream Model Kit - AMK PRO Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-rise-of-the-beasts-amk-scourge",
+      "name": "Scourge",
+      "subtitle": "Rise of the Beasts",
+      "line": "Yolopark AMK",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/rise_of_the_beast_scourge_amk_series_01.jpg?v=1778582955",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Rise of the Beasts - 22cm Scourge Model Kit - AMK Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-rise-of-the-beasts-amk-cheetor",
+      "name": "Cheetor",
+      "subtitle": "Rise of the Beasts",
+      "line": "Yolopark AMK",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/rise_of_the_beast_cheetor_amk_series_01.jpg?v=1778582934",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Rise of the Beasts - 18cm Cheetor Model Kit - AMK Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-rise-of-the-beasts-amk-rhinox",
+      "name": "Rhinox",
+      "subtitle": "Rise of the Beasts",
+      "line": "Yolopark AMK",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/rise_of_the_beast_rhinox_amk_series_01.jpg?v=1778582979",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Rise of the Beasts - 20cm Rhinox Model Kit - AMK Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-amk-pro-rotb-scourge",
+      "name": "Scourge",
+      "subtitle": "Rise of the Beasts",
+      "line": "Yolopark AMK PRO",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/PRO_Scourge_27.jpg?v=1778584552",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Rise of the Beasts - 22cm Scourge Model Kit - AMK PRO Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-rotb-16cm-mirage-amk-pro",
+      "name": "Mirage",
+      "subtitle": "Rise of the Beasts",
+      "line": "Yolopark AMK PRO",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/ROTB-Mirage_7.jpg?v=1778584493",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Rise of the Beasts - 16cm Mirage Model Kit - AMK PRO Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-rise-of-the-beasts-amk-bumblebee",
+      "name": "Bumblebee",
+      "subtitle": "Rise of the Beasts",
+      "line": "Yolopark AMK",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/AMK_Bumblebee_1.jpg?v=1778582778",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Rise of the Beasts - 16cm Bumblebee Model Kit - AMK Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "sf-yolopark-amk-pro-transformers-g1-megatron",
+      "name": "Megatron",
+      "subtitle": "Generation 1",
+      "line": "Yolopark AMK PRO",
+      "company": "yolopark",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/generation_1_megatron_amk_pro_series_01.jpg?v=1778582894",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Transformers: Generation 1 - 20cm Megatron Model Kit - AMK PRO Series",
+        "urlBestShop": "yolopark",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-t-hawk",
+      "name": "T. Hawk",
+      "subtitle": "Action Figure",
+      "line": "Jada Street Fighter",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/801310357392a.jpg?v=1786754067",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Jada Toys 1/12 Ultra Street Fighter II: The Final Challengers T. Hawk Action Figure",
+        "urlBestShop": "toyarena",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-ultra-street-fighter-dhalsim-deluxe-player-2-exclusive-36690",
+      "name": "Ultra Street Fighter Dhalsim Deluxe Player 2 Exclusive 36690",
+      "subtitle": "Action Figure",
+      "line": "Jada Street Fighter",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/SDCC2025Dhalsima.webp?v=1753335386",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "SDCC 2025 Jada Toys Ultra Street Fighter Dhalsim 1/12 Scale Action Figure Deluxe Player 2 Exclusive 36690",
+        "urlBestShop": "toyarena",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-ultra-street-fighter-m-bison-deluxe-player-2-exclusive-36691",
+      "name": "Ultra Street Fighter M. Bison Deluxe Player 2 Exclusive 36691",
+      "subtitle": "Action Figure",
+      "line": "Jada Street Fighter",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/SDCC25Bisona.webp?v=1753335532",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "SDCC 2025 Jada Toys Ultra Street Fighter M. Bison 1/12 Scale Action Figure Deluxe Player 2 Exclusive 36691",
+        "urlBestShop": "toyarena",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-blue",
+      "name": "Blue",
+      "subtitle": "Action Figure",
+      "line": "Jada Mega Man",
+      "company": "jada",
+      "sku": "801310342213",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/megaman-1-12-scale-wave-1-mega-man-blue-801310342213.jpg?v=1733959027",
+        "gtin": "801310342213",
+        "gtinScore": -1.0,
+        "gtinTitle": "Megaman 4 Inch Action Figure 1/12 Scale Wave 1 - Mega Man Blue",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Megaman 4 Inch Action Figure 1/12 Scale Wave 1 - Mega Man Blue",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jada-minecraft-nano-metalfigs-18-pack-wave-12",
+      "name": "Minecraft Nano Metalfigs 18-Pack | Wave 12",
+      "subtitle": "Figures & Action Figures",
+      "line": "Jada Toys",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JTY-35846-C-1.jpg?v=1784077717",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Minecraft 1.65 Inch Nano Metalfigs 18-Pack | Wave 12",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-1-12-wood-man",
+      "name": "1:12 | Wood Man",
+      "subtitle": "Figures & Action Figures",
+      "line": "Jada Mega Man",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JTY-34693-C-1.jpg?v=1771512282",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Mega Man 1:12 Action Figure | Wood Man",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-1-12-mega-man-no-helmet",
+      "name": "1:12 | Mega Man (No Helmet)",
+      "subtitle": "Figures & Action Figures",
+      "line": "Jada Mega Man",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JTY-34692-C-1.jpg?v=1771512282",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Mega Man 1:12 Action Figure | Mega Man (No Helmet)",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-1-12-bubble-man",
+      "name": "1:12 | Bubble Man",
+      "subtitle": "Figures & Action Figures",
+      "line": "Jada Mega Man",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JTY-34694-C-1.jpg?v=1771512282",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Mega Man 1:12 Action Figure | Bubble Man",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-universal-monsters-deluxe-collector-figure-creature-from-bla",
+      "name": "Universal Monsters Deluxe Collector Figure | Creature from Black Lagoon",
+      "subtitle": "Figures & Action Figures",
+      "line": "Jada Universal Monsters",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JTY-253251017-C-1.jpg?v=1762233146",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Universal Monsters 6 Inch Deluxe Collector Figure | Creature from Black Lagoon",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-scooby-doo-mummy-of-ankha",
+      "name": "Scooby-Doo | Mummy of Ankha",
+      "subtitle": "Figures & Action Figures",
+      "line": "Jada Toys",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JTY-35627-C-1.jpg?v=1762190296",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Scooby-Doo 6 Inch Action Figure | Mummy of Ankha",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-scooby-doo-creeper",
+      "name": "Scooby-Doo | Creeper",
+      "subtitle": "Figures & Action Figures",
+      "line": "Jada Toys",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JTY-35626-C-1.jpg?v=1762190296",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Scooby-Doo 6 Inch Action Figure | Creeper",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-scooby-doo-shaggy",
+      "name": "Scooby-Doo | Shaggy",
+      "subtitle": "Figures & Action Figures",
+      "line": "Jada Toys",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JTY-35625-C-1.jpg?v=1762190296",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Scooby-Doo 6 Inch Action Figure | Shaggy",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-cheetos-flamin-hot-gitd-chester-cheetah",
+      "name": "Cheetos | Flamin' Hot GITD Chester Cheetah",
+      "subtitle": "Figures & Action Figures",
+      "line": "Jada Toys",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JTY-34049-C-1.jpg?v=1747246176",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Cheetos 6 Inch Action Figure | Flamin' Hot GITD Chester Cheetah",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-cheetos-chester-cheetah",
+      "name": "Cheetos | Chester Cheetah",
+      "subtitle": "Figures & Action Figures",
+      "line": "Jada Toys",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JTY-34048-C-1.jpg?v=1747246186",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Cheetos 6 Inch Action Figure | Chester Cheetah",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-ii-fei-long",
+      "name": "II | Fei Long",
+      "subtitle": "Figures & Action Figures",
+      "line": "Jada Street Fighter",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JTY-34217-C-1.jpg?v=1720531082",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Street Fighter II 6 Inch Action Figure | Fei Long",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-ii-chun-li",
+      "name": "II | Chun Li",
+      "subtitle": "Figures & Action Figures",
+      "line": "Jada Street Fighter",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JTY-34216-C-1.jpg?v=1720531088",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Street Fighter II 6 Inch Action Figure | Chun Li",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-ii-ryu",
+      "name": "II | Ryu",
+      "subtitle": "Figures & Action Figures",
+      "line": "Jada Street Fighter",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JTY-34215-C-1.jpg?v=1720531088",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Street Fighter II 6 Inch Action Figure | Ryu",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jada-universal-monsters-deluxe-collector-figure-frankenstein",
+      "name": "Universal Monsters Deluxe Collector Figure | Frankenstein",
+      "subtitle": "Figures & Action Figures",
+      "line": "Jada Universal Monsters",
+      "company": "jada",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JTY-253251014-C-1.jpg?v=1713090325",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Universal Monsters 6 Inch Deluxe Collector Figure | Frankenstein",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-sonic-with-pink-emerald",
+      "name": "Sonic with Pink Emerald",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": "192995429802",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/sonic-the-hedgehog-wave-20-sonic-with-pink-emerald-192995429802.jpg?v=1749505837",
+        "gtin": "192995429802",
+        "gtinScore": -1.0,
+        "gtinTitle": "Sonic The Hedgehog 4 Inch Action Figure Wave 20 - Sonic with Pink Emerald",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic The Hedgehog 4 Inch Action Figure Wave 20 - Sonic with Pink Emerald",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-gerald-robotnik",
+      "name": "Gerald Robotnik",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": "192995429543",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/sonic-the-hedgehog-movie-wave-3-gerald-robotnik-192995429543.jpg?v=1749505622",
+        "gtin": "192995429543",
+        "gtinScore": -1.0,
+        "gtinTitle": "Sonic The Hedgehog Movie 5 Inch Action Figure Wave 3 - Gerald Robotnik",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic The Hedgehog Movie 5 Inch Action Figure Wave 3 - Gerald Robotnik",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-sonic-with-emerald",
+      "name": "Sonic with Emerald",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": "192995429529",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/sonic-the-hedgehog-movie-wave-3-sonic-with-emerald-192995429529.jpg?v=1749505621",
+        "gtin": "192995429529",
+        "gtinScore": -1.0,
+        "gtinTitle": "Sonic The Hedgehog Movie 5 Inch Action Figure Wave 3 - Sonic with Emerald",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic The Hedgehog Movie 5 Inch Action Figure Wave 3 - Sonic with Emerald",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-dry-bones",
+      "name": "Dry Bones",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "192995417847",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-32-dry-bones-192995417847.jpg?v=1739991347",
+        "gtin": "192995417847",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 32 - Dry Bones",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 32 - Dry Bones",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-builder-luigi",
+      "name": "Builder Luigi",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "192995417854",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-32-builder-luigi-192995417854.jpg?v=1739991347",
+        "gtin": "192995417854",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 32 - Builder Luigi",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 32 - Builder Luigi",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-fire-mario",
+      "name": "Fire Mario",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "192995417830",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-32-fire-mario-192995417830.jpg?v=1739991359",
+        "gtin": "192995417830",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 32 - Fire Mario",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 32 - Fire Mario",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-hammer-bro",
+      "name": "Hammer Bro",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897579030",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-32-hammer-bro-039897579030.jpg?v=1739918467",
+        "gtin": "039897579030",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 32 - Hammer Bro",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 32 - Hammer Bro",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-shadow-grin-mouth",
+      "name": "Shadow (Grin Mouth)",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": "192995424043",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/sonic-the-hedgehog-movie-wave-2-shadow-grin-mouth-192995424043.jpg?v=1736293894",
+        "gtin": "192995424043",
+        "gtinScore": -1.0,
+        "gtinTitle": "Sonic The Hedgehog Movie 5 Inch Action Figure Wave 2 - Shadow (Grin Mouth)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic The Hedgehog Movie 5 Inch Action Figure Wave 2 - Shadow (Grin Mouth)",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-shadow-closed-mouth",
+      "name": "Shadow (Closed Mouth)",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": "192995423992",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/sonic-the-hedgehog-movie-wave-1-shadow-closed-mouth-192995423992.jpg?v=1736293894",
+        "gtin": "192995423992",
+        "gtinScore": -1.0,
+        "gtinTitle": "Sonic The Hedgehog Movie 5 Inch Action Figure Wave 1 - Shadow (Closed Mouth)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic The Hedgehog Movie 5 Inch Action Figure Wave 1 - Shadow (Closed Mouth)",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-flying-battery-zone",
+      "name": "Flying Battery Zone",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": "192995414426",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/sonic-the-hedgehog-diorama-set-flying-battery-zone-192995414426.jpg?v=1733959048",
+        "gtin": "192995414426",
+        "gtinScore": -1.0,
+        "gtinTitle": "Sonic The Hedgehog Diorama Set 2.5 Inch Action Figure - Flying Battery Zone",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic The Hedgehog Diorama Set 2.5 Inch Action Figure - Flying Battery Zone",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-mario-with-mushroom",
+      "name": "Mario with Mushroom",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "192995405578",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/super-mario-world-of-nintendo-wave-27-mario-with-mushroom-192995405578.jpg?v=1651624364",
+        "gtin": "192995405578",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 27 - Mario with Mushroom",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 27 - Mario with Mushroom",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-goomba",
+      "name": "Goomba",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "192995407329",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/super-mario-world-of-nintendo-wave-27-goomba-192995407329.jpg?v=1651624397",
+        "gtin": "192995407329",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 27 - Goomba",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 27 - Goomba",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-light-blue-yoshi",
+      "name": "Light Blue Yoshi",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897460017",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/super-mario-world-of-nintendo-wave-27-light-blue-yoshi-039897460017.jpg?v=1651624397",
+        "gtin": "039897460017",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 27 - Light Blue Yoshi",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 27 - Light Blue Yoshi",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-parabones-v2",
+      "name": "Parabones V2",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "0398977263422",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/super-mario-world-of-nintendo-wave-27-parabones-v2-039897726342v2.jpg?v=1651624397",
+        "gtin": "0398977263422",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 27 - Parabones V2",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 27 - Parabones V2",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-ludwig",
+      "name": "Ludwig",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897726830",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/super-mario-world-of-nintendo-wave-27-ludwig-039897726830.jpg?v=1651624364",
+        "gtin": "039897726830",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 27 - Ludwig",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 27 - Ludwig",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-black-shy-guy",
+      "name": "Black Shy Guy",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "192995408739",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/super-mario-world-of-nintendo-wave-30-black-shy-guy-192995408739.jpg?v=1633558835",
+        "gtin": "192995408739",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 2 Inch Action Figure Wave 30 - Black Shy Guy",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 2 Inch Action Figure Wave 30 - Black Shy Guy",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-luigi-shelf-wear-packaging",
+      "name": "Luigi (Shelf Wear Packaging)",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "192995401303",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-30-luigi-192995401303.jpg?v=1784746593",
+        "gtin": "192995401303",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 2 Inch Action Figure Wave 30 - Luigi (Shelf Wear Packaging)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 2 Inch Action Figure Wave 30 - Luigi (Shelf Wear Packaging)",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-green-yoshi",
+      "name": "Green Yoshi",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "192995401006",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/super-mario-world-of-nintendo-wave-30-green-yoshi-192995401006.jpg?v=1633558814",
+        "gtin": "192995401006",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 2 Inch Action Figure Wave 30 - Green Yoshi",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 2 Inch Action Figure Wave 30 - Green Yoshi",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-blue-toad",
+      "name": "Blue Toad",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "192995403130",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-21-blue-toad-192995403116toad.jpg?v=1723134472",
+        "gtin": "192995403130",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 21 - Blue Toad",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 21 - Blue Toad",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-metal-mario",
+      "name": "Metal Mario",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897579023",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super_mario-world-of-nintendo-wave-21-metal-mario-192995403116metal.jpg?v=1723134473",
+        "gtin": "039897579023",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 21 - Metal Mario",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 21 - Metal Mario",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-bone-piranha-plant",
+      "name": "Bone Piranha Plant",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "192995403123",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-21-bone-piranha-plant-192995403116plant.jpg?v=1723124991",
+        "gtin": "192995403123",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 21 - Bone Piranha Plant",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 21 - Bone Piranha Plant",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-bowser-jr",
+      "name": "Bowser Jr",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897914466",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-21-bowser-jr-192995403116bowser.jpg?v=1723134473",
+        "gtin": "039897914466",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 21 - Bowser Jr",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo 4 Inch Action Figure Wave 21 - Bowser Jr",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-wario",
+      "name": "Wario",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897685236",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/world-of-nintendo-super-mario-wave-1-4-inch-wario_image.gif?v=1723125816",
+        "gtin": "039897685236",
+        "gtinScore": -1.0,
+        "gtinTitle": "World Of Nintendo Super Mario 4 Inch Action Figure Wave 1 - Wario",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "World Of Nintendo Super Mario 4 Inch Action Figure Wave 1 - Wario",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-ice-luigi",
+      "name": "Ice Luigi",
+      "subtitle": "Mini Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897782829",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/world-of-nintendo-super-mario-limited-articulation-wave-1-25-inch-ice-luigi_image.gif?v=1723125948",
+        "gtin": "039897782829",
+        "gtinScore": -1.0,
+        "gtinTitle": "World Of Nintendo Super Mario 2.5 Inch Action Figure Limited Articulation Wave 1 - Ice Luigi",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "World Of Nintendo Super Mario 2.5 Inch Action Figure Limited Articulation Wave 1 - Ice Luigi",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-waluigi",
+      "name": "Waluigi",
+      "subtitle": "Mini Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897782843",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/world-of-nintendo-super-mario-limited-articulation-wave-1-25-inch-waluigi_image.gif?v=1723131900",
+        "gtin": "039897782843",
+        "gtinScore": -1.0,
+        "gtinTitle": "World Of Nintendo Super Mario 2.5 Inch Action Figure Limited Articulation Wave 1 - Waluigi",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "World Of Nintendo Super Mario 2.5 Inch Action Figure Limited Articulation Wave 1 - Waluigi",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-fire-luigi-with-fire-flower",
+      "name": "Fire Luigi With Fire Flower",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897726304",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-14-4-inch-action-figure-fire-luigi-with-fire-flower.jpg?v=1723134564",
+        "gtin": "039897726304",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 14 - Fire Luigi With Fire Flower",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 14 - Fire Luigi With Fire Flower",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-captain-mario-with-red-power-moon",
+      "name": "Captain Mario with Red Power Moon",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897726816",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-15-4-inch-action-figure-captain-mario-with-red-power-moon.jpg?v=1723134380",
+        "gtin": "039897726816",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 15 - Captain Mario with Red Power Moon",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 15 - Captain Mario with Red Power Moon",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-explorer-mario-with-blue-power-moon",
+      "name": "Explorer Mario with Blue Power Moon",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897726809",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-15-4-inch-action-figure-explorer-mario-with-blue-power-moon.jpg?v=1723134364",
+        "gtin": "039897726809",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 15 - Explorer Mario with Blue Power Moon",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 15 - Explorer Mario with Blue Power Moon",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-piranha-plant-with-question-block",
+      "name": "Piranha Plant With Question Block",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897726328",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-14-4-inch-action-figure-piranha-plant-with-question-block.jpg?v=1723134577",
+        "gtin": "039897726328",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 14 - Piranha Plant With Question Block",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 14 - Piranha Plant With Question Block",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-fire-bro-with-fireball",
+      "name": "Fire Bro with Fireball",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897726052",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-14-4-inch-action-figure-fire-bro-with-fireball.jpg?v=1723134626",
+        "gtin": "039897726052",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 14 - Fire Bro with Fireball",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 14 - Fire Bro with Fireball",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-captured-hammer-bro-with-hammer",
+      "name": "Captured Hammer Bro with Hammer",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897726762",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-15-4-inch-action-figure-captured-hammer-bro-with-hammer.jpg?v=1723134472",
+        "gtin": "039897726762",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 15 - Captured Hammer Bro with Hammer",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 15 - Captured Hammer Bro with Hammer",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-lakitu-with-fishing-pole",
+      "name": "Lakitu with Fishing Pole",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897726656",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-15-4-inch-action-figure-lakitu-with-fishing-pole.jpg?v=1723134414",
+        "gtin": "039897726656",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 15 - Lakitu with Fishing Pole",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 15 - Lakitu with Fishing Pole",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-mario-with-cappy",
+      "name": "Mario with Cappy",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897726618",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-15-4-inch-action-figure-mario-with-cappy.jpg?v=1723134395",
+        "gtin": "039897726618",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 15 - Mario with Cappy",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 15 - Mario with Cappy",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-mario-with-super-star",
+      "name": "Mario With Super Star",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897726335",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-14-4-inch-action-figure-mario-with-super-star.jpg?v=1723134679",
+        "gtin": "039897726335",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 14 - Mario With Super Star",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 14 - Mario With Super Star",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-dungeon-diorama-set",
+      "name": "Dungeon Diorama Set",
+      "subtitle": "Mini Figure Diorama",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897859897",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-2-inch-diorama-dungeon-diorama-set.jpg?v=1723137212",
+        "gtin": "039897859897",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario 2 Inch Diorama World Of Nintendo - Dungeon Diorama Set",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario 2 Inch Diorama World Of Nintendo - Dungeon Diorama Set",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-parabones-with-wings",
+      "name": "Parabones with Wings",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897726342",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-wave-14-4-inch-action-figure-parabones-with-wings.jpg?v=1723113868",
+        "gtin": "039897726342",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 14 - Parabones with Wings",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario 4 Inch Action Figure World Of Nintendo Wave 14 - Parabones with Wings",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-bowser-diorama-set",
+      "name": "Bowser Diorama Set",
+      "subtitle": "Mini Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897645124",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-3-and-5-inch-diorama-bowser-diorama-set.jpg?v=1723137248",
+        "gtin": "039897645124",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario 3 and 5 Inch Diorama World Of Nintendo - Bowser Diorama Set",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario 3 and 5 Inch Diorama World Of Nintendo - Bowser Diorama Set",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-acorn-plains-diorama-set",
+      "name": "Acorn Plains Diorama Set",
+      "subtitle": "Mini Figure Diorama",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897859873",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/super-mario-world-of-nintendo-2-inch-diorama-acorn-plains-diorama-set.jpg?v=1723137194",
+        "gtin": "039897859873",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario 2 Inch Diorama World Of Nintendo - Acorn Plains Diorama Set",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario 2 Inch Diorama World Of Nintendo - Acorn Plains Diorama Set",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-wind-walker-link-shelf-wear-packaging",
+      "name": "Wind Walker Link (Shelf Wear Packaging)",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897914534",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/world-of-nintendo-5-inch-the-legend-of-zelda-wind-walker-link_image.gif?v=1723122053",
+        "gtin": "039897914534",
+        "gtinScore": -1.0,
+        "gtinTitle": "World Of Nintendo 5 Inch Action Figure The Legend Of Zelda - Wind Walker Link (Shelf Wear Packaging)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "World Of Nintendo 5 Inch Action Figure The Legend Of Zelda - Wind Walker Link (Shelf Wear Packaging)",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-durotan",
+      "name": "Durotan",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": "039897967417",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/warcraft-movie-18-inch-big-figs-series-durotan_image.gif?v=1706315000",
+        "gtin": "039897967417",
+        "gtinScore": -1.0,
+        "gtinTitle": "World Of Warcraft Movie 18 Inch Action Figure Big Figs Series - Durotan",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "World Of Warcraft Movie 18 Inch Action Figure Big Figs Series - Durotan",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-mario-shelf-wear-packaging",
+      "name": "Mario (Shelf Wear Packaging)",
+      "subtitle": "Mini Figure",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": "039897692807",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/world-of-nintendo-super-mario-kart-coin-racers-wave-1-2-inch-mario_image.gif?v=1706314988",
+        "gtin": "039897692807",
+        "gtinScore": -1.0,
+        "gtinTitle": "Super Mario World Of Nintendo Super Mario Kart 2 Inch Action Figure Coin Racers Wave 1 - Mario (Shelf Wear Packaging)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World Of Nintendo Super Mario Kart 2 Inch Action Figure Coin Racers Wave 1 - Mario (Shelf Wear Packaging)",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-king-size-homer-by-jakks-pacific-pre-order",
+      "name": "KING-Size HOMER by Jakks Pacific *PRE-ORDER*",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0144/1798/5584/files/196894_5L_196894_The_Simpsons_5__King-Size_Homer_THE_SIMPSONS_BOYS_2026_2000x2000_2fdd94cc-1077-4351-9b99-393ffdd8635c.webp?v=1785625519",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "The Simpsons - Deluxe KING-Size HOMER Action Figure by Jakks Pacific *PRE-ORDER*",
+        "urlBestShop": "cooltoyden",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-king-homer-w-mini-marge-premium-by-jakks-pacific",
+      "name": "KING HOMER w/Mini MARGE Premium by Jakks Pacific",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0144/1798/5584/files/71giLmWON2L._AC_SL1500.jpg?v=1765123877",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "The Simpsons THOH - KING HOMER w/Mini MARGE Premium Action Figure by Jakks Pacific",
+        "urlBestShop": "cooltoyden",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-collector-s-edition-boxed-by-jakks-pacific",
+      "name": "Collector's Edition BOXED by Jakks Pacific",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0144/1798/5584/files/sonic-the-hedgehog-collector-edition-sonic-figura-15cm-5867678.webp?v=1757282431",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic The Hedgehog - SONIC Collector's Edition BOXED Action Figure by Jakks Pacific",
+        "urlBestShop": "cooltoyden",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-furious-homer-premium-by-jakks-pacific",
+      "name": "Furious HOMER Premium by Jakks Pacific",
+      "subtitle": "Action Figure",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0144/1798/5584/files/image_2000x2000_8511d981-1afb-40f0-89e5-4c8dfc77cbd9.webp?v=1723689867",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "The Simpsons - Furious HOMER Premium Action Figure by Jakks Pacific",
+        "urlBestShop": "cooltoyden",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-apex-legends-figure-crypto",
+      "name": "Apex Legends Figure Crypto",
+      "subtitle": "Figure",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0318/2649/files/b9444c60-cc07-11ee-a40c-5600040d5bd1.jpg?v=1708004408",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Apex Legends 6 Inch Figure Crypto",
+        "urlBestShop": "solarisjapan",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-apex-legends-figure-loba",
+      "name": "Apex Legends Figure Loba",
+      "subtitle": "Figure",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0318/2649/files/b7cc9aea-cc07-11ee-814e-5600040d5bd1.jpg?v=1708004412",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Apex Legends 6 Inch Figure Loba",
+        "urlBestShop": "solarisjapan",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-apex-legends-figure-lifeline",
+      "name": "Apex Legends Figure Lifeline",
+      "subtitle": "Figure",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0318/2649/files/810e0372-cc07-11ee-9852-5600040d5bd1.jpg?v=1708004314",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Apex Legends 6 Inch Figure Lifeline",
+        "urlBestShop": "solarisjapan",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-apex-legends-caustic-rare-geometric-anomaly-6",
+      "name": "APEX LEGENDS: CAUSTIC (RARE: GEOMETRIC ANOMALY) 6\"",
+      "subtitle": "Figure",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0318/2649/files/6b573f48-cb45-11ee-b155-5600040d5bd1.jpg?v=1707920956",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "APEX LEGENDS: CAUSTIC (RARE: GEOMETRIC ANOMALY) 6\" ACTION FIGURE",
+        "urlBestShop": "solarisjapan",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-apex-legends-bloodhound-the-old-ways-cel-shade-exclusive-6",
+      "name": "APEX LEGENDS: BLOODHOUND (THE OLD WAYS) CEL SHADE EXCLUSIVE 6\"",
+      "subtitle": "Figure",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0318/2649/files/578c017c-c9ad-11ee-8b42-5600040d5bd1.jpg?v=1707745736",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "APEX LEGENDS: BLOODHOUND (THE OLD WAYS) CEL SHADE EXCLUSIVE 6\" ACTION FIGURE",
+        "urlBestShop": "solarisjapan",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-apex-legends-figure-octane-arachnoid-rush",
+      "name": "Apex Legends Figure Octane (Arachnoid Rush)",
+      "subtitle": "Figure",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0318/2649/files/349ebf54-c9aa-11ee-814f-5600040d5bd1.jpg?v=1707744356",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Apex Legends 6 Inch Figure Octane (Arachnoid Rush)",
+        "urlBestShop": "solarisjapan",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-apex-legends-revenant-legendary-unholy-beast-6",
+      "name": "APEX LEGENDS: REVENANT (LEGENDARY: UNHOLY BEAST) 6\"",
+      "subtitle": "Figure",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0318/2649/files/4fa4a58e-c62b-11ee-b2ca-5600040d5bd1.jpg?v=1707359988",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "APEX LEGENDS: REVENANT (LEGENDARY: UNHOLY BEAST) 6\" ACTION FIGURE",
+        "urlBestShop": "solarisjapan",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-apex-legends-lifeline-collectible-toy",
+      "name": "Apex Legends Lifeline Collectible Toy",
+      "subtitle": "Action Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": "4582637830237",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/7a91989397fffc396658ffefdf7a56ad.webp?v=1769079349",
+        "gtin": "4582637830237",
+        "gtinScore": -1.0,
+        "gtinTitle": "Jakks Pacific Apex Legends Lifeline 6 Inch Action Figure Collectible Toy",
+        "gtinShop": "japan-figure",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Jakks Pacific Apex Legends Lifeline 6 Inch Action Figure Collectible Toy",
+        "urlBestShop": "japan-figure",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:japan-figure"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-apex-legends-loba-collectible-toy",
+      "name": "Apex Legends Loba Collectible Toy",
+      "subtitle": "Action Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": "4573272525183",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/Apex-Legends-6-Inch-Figure-Loba-4573272525183-0.jpg?v=1730040241",
+        "gtin": "4573272525183",
+        "gtinScore": -1.0,
+        "gtinTitle": "Jakks Pacific Apex Legends Loba Action Figure 6 Inch Collectible Toy",
+        "gtinShop": "japan-figure",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Jakks Pacific Apex Legends Loba Action Figure 6 Inch Collectible Toy",
+        "urlBestShop": "japan-figure",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:japan-figure"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-apex-legends-crypto-collectible-toy",
+      "name": "Apex Legends Crypto Collectible Toy",
+      "subtitle": "Action Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": "4573272525176",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/Apex-Legends-6-Inch-Figure-Crypto-4573272525176-0.jpg?v=1730040239",
+        "gtin": "4573272525176",
+        "gtinScore": -1.0,
+        "gtinTitle": "Jakks Pacific Apex Legends Crypto 6 Inch Action Figure Collectible Toy",
+        "gtinShop": "japan-figure",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Jakks Pacific Apex Legends Crypto 6 Inch Action Figure Collectible Toy",
+        "urlBestShop": "japan-figure",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:japan-figure"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-2-5-mini-figure-ice-mario",
+      "name": "2.5\" Mini Figure Ice Mario",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-09084-CA.jpg?v=1784985957",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "World of Nintendo 2.5\" Mini Figure Ice Mario",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-bros-series-5-nintendo-8-bit-luigi-2-5-mini-figure",
+      "name": "Bros. Series 5 Nintendo 8-Bit Luigi 2.5\" Mini Figure",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-86722-CA.jpg?v=1784985891",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario Bros. Series 5 Nintendo 8-Bit Luigi 2.5\" Mini Figure",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-4-inch-modern-knuckes-with-star-spring",
+      "name": "4-Inch | Modern Knuckes With Star Spring",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-41679I-RF1-C-1.jpg?v=1778781127",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic The Hedgehog 4-Inch Action Figure | Modern Knuckes With Star Spring",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-4-inch-super-silver-with-white-emerald",
+      "name": "4-Inch | Super Silver with White Emerald",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-41685-C-1.jpg?v=1775824990",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic The Hedgehog 4-Inch Action Figure | Super Silver with White Emerald",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-4-inch-modern-sonic-with-1-up-item-box",
+      "name": "4-Inch | Modern Sonic with 1 Up Item Box",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-41678-C-1.jpg?v=1775824990",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic The Hedgehog 4-Inch Action Figure | Modern Sonic with 1 Up Item Box",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-sonic-the-hedgehog-figure-modern-amy-with-hammer",
+      "name": "Sonic the Hedgehog Figure | Modern Amy with Hammer",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-40902I-CA.jpg?v=1774819963",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic the Hedgehog 4 Inch Figure | Modern Amy with Hammer",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-fully-charged-air-man",
+      "name": "Fully Charged | Air Man",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-76253-C-1.jpg?v=1765799428",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Mega Man: Fully Charged 5 Inch Action Figure | Air Man",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-sonic-the-hedgehog-figure-modern-super-sonic",
+      "name": "Sonic the Hedgehog Figure | Modern Super Sonic",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": "40695412",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-406954-12-CA.jpg?v=1760021763",
+        "gtin": "40695412",
+        "gtinScore": -1.0,
+        "gtinTitle": "Sonic the Hedgehog 4 Inch Figure | Modern Super Sonic",
+        "gtinShop": "toynk",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic the Hedgehog 4 Inch Figure | Modern Super Sonic",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:toynk"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-world-of-nintendo-figure-cheep-cheep",
+      "name": "World of Nintendo Figure | Cheep Cheep",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-401114-CA.jpg?v=1759250905",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World of Nintendo 2.5 Inch Figure | Cheep Cheep",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-world-of-nintendo-figure-raccoon-mario",
+      "name": "World of Nintendo Figure | Raccoon Mario",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-401174-CA.jpg?v=1759250905",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World of Nintendo 2.5 Inch Figure | Raccoon Mario",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-mario-kart-backpack-buddies-blind-bag-one-random",
+      "name": "Mario Kart Backpack Buddies Blind Bag | One Random",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-752699-CA.jpg?v=1759250869",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Mario Kart Backpack Buddies Blind Bag | One Random",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-world-of-nintendo-figure-orange-yoshi",
+      "name": "World of Nintendo Figure | Orange Yoshi",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-407304-CA.jpg?v=1773976929",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World of Nintendo 4 Inch Figure | Orange Yoshi",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-world-of-nintendo-figure-goomba",
+      "name": "World of Nintendo Figure | Goomba",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-407329-CA.jpg?v=1759250835",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World of Nintendo 4 Inch Figure | Goomba",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-world-of-nintendo-figure-spiny",
+      "name": "World of Nintendo Figure | Spiny",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-85556-4L-CA.jpg?v=1759249526",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World of Nintendo 2.5 Inch Figure | Spiny",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-world-of-nintendo-figure-mario-w-pow-block",
+      "name": "World of Nintendo Figure | Mario w/ POW Block",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-72687-CA.jpg?v=1759249507",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World of Nintendo 4 Inch Figure | Mario w/ POW Block",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-sonic-the-hedgehog-figure-classic-sonic",
+      "name": "Sonic the Hedgehog Figure | Classic Sonic",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-406994-CA.jpg?v=1759249508",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic the Hedgehog 4 Inch Figure | Classic Sonic",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-sonic-the-hedgehog-figure-modern-tails",
+      "name": "Sonic the Hedgehog Figure | Modern Tails",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-407024-CA.jpg?v=1759249508",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic the Hedgehog 4 Inch Figure | Modern Tails",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-world-of-nintendo-figure-open-arms-ice-mario",
+      "name": "World of Nintendo Figure | Open Arms Ice Mario",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-405504-CA.jpg?v=1759249487",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World of Nintendo 2.5 Inch Figure | Open Arms Ice Mario",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-world-of-nintendo-figure-bone-piranha-plant",
+      "name": "World of Nintendo Figure | Bone Piranha Plant",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-403124-CA.jpg?v=1759249487",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World of Nintendo 4 Inch Figure | Bone Piranha Plant",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-sonic-the-hedgehog-figure-modern-dr-eggman",
+      "name": "Sonic the Hedgehog Figure | Modern Dr. Eggman",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": "40696412",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-406964-12-CA.jpg?v=1760167449",
+        "gtin": "40696412",
+        "gtinScore": -1.0,
+        "gtinTitle": "Sonic the Hedgehog 4 Inch Figure | Modern Dr. Eggman",
+        "gtinShop": "toynk",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic the Hedgehog 4 Inch Figure | Modern Dr. Eggman",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:toynk"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-world-of-nintendo-figure-jumping-mario",
+      "name": "World of Nintendo Figure | Jumping Mario",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-404574-CA.jpg?v=1759249096",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World of Nintendo 2.5 Inch Figure | Jumping Mario",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-world-of-nintendo-figure-yellow-yoshi",
+      "name": "World of Nintendo Figure | Yellow Yoshi",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-405434-CA.jpg?v=1759249093",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World of Nintendo 2.5 Inch Figure | Yellow Yoshi",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-sonic-the-hedgehog-figure-modern-knuckles",
+      "name": "Sonic the Hedgehog Figure | Modern Knuckles",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": "40389412",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-403894-12-CA.jpg?v=1760167403",
+        "gtin": "40389412",
+        "gtinScore": -1.0,
+        "gtinTitle": "Sonic the Hedgehog 4 Inch Figure | Modern Knuckles",
+        "gtinShop": "toynk",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic the Hedgehog 4 Inch Figure | Modern Knuckles",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:toynk"
+      ]
+    },
+    {
+      "figureId": "inj-jakks-world-of-nintendo-figure-mario",
+      "name": "World of Nintendo Figure | Mario",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-40539-CA.jpg?v=1759248922",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World of Nintendo 2.5 Inch Figure | Mario",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-world-of-nintendo-figure-fire-luigi",
+      "name": "World of Nintendo Figure | Fire Luigi",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-40538-CA.jpg?v=1759248787",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario World of Nintendo 2.5 Inch Figure | Fire Luigi",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-disneys-raya-and-the-last-dragon-light-sound-role-play-sword",
+      "name": "Disneys Raya and the Last Dragon Light & Sound Role Play Sword",
+      "subtitle": "Toy Blasters & Water Guns",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-211711-CA.jpg?v=1759248635",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Disneys Raya and the Last Dragon Light & Sound Role Play Sword",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-nintendo-legend-of-zelda-series-6-8-bit-red-link-2-5-mini-fi",
+      "name": "Nintendo Legend Of Zelda Series 6 8-Bit Red Link 2.5\" Mini Figure",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-86729-CA.jpg?v=1759238115",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Nintendo Legend Of Zelda Series 6 8-Bit Red Link 2.5\" Mini Figure",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-sonic-the-hedgehog-figure-super-sonic-modern-with-chaos-emer",
+      "name": "Sonic the Hedgehog Figure | Super Sonic (Modern) with Chaos Emerald",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-41237I-CA.jpg?v=1746751136",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic the Hedgehog 4 Inch Figure | Super Sonic (Modern) with Chaos Emerald",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-sonic-the-hedgehog-figure-mecha-sonic",
+      "name": "Sonic the Hedgehog Figure | Mecha Sonic",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-40892I-CA.jpg?v=1741310679",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic the Hedgehog 4 Inch Figure | Mecha Sonic",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-monsuno-lauch-zone-combat-set-battle-arena-wave-1",
+      "name": "Monsuno Lauch Zone Combat Set Battle Arena Wave #1",
+      "subtitle": "Battle Toys & Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP_36056_CA.jpg?v=1699513522",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Monsuno Lauch Zone Combat Set Battle Arena Wave #1",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-bros-movie-bowser-with-fire-breathing-effects",
+      "name": "Bros. Movie Bowser with Fire Breathing Effects",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-42312-CA.jpg?v=1698305625",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Super Mario Bros. Movie 7 Inch Bowser Action Figure with Fire Breathing Effects",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-disney-sofia-the-first-royal-tiara-diademe-royal",
+      "name": "Disney Sofia The First Royal Tiara Diademe Royal",
+      "subtitle": "Playtime Toys",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP_58629_CA.jpg?v=1683950437",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Disney Sofia The First Royal Tiara Diademe Royal",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-winx-club-concert-collection-tecna",
+      "name": "Winx Club Concert Collection Tecna",
+      "subtitle": "Playtime Toys",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP_44422_CA.jpg?v=1772832290",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Winx Club Concert Collection Tecna",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-apex-legends-hit-and-run-octane",
+      "name": "Apex Legends Hit and Run Octane",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/JKP-41241-CA.jpg?v=1678965199",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Apex Legends Hit and Run Octane 6 Inch Action Figure",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-apex-legends-crash-test-pathfinder",
+      "name": "Apex Legends | Crash Test Pathfinder",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/JKP-407154-CA.jpg?v=1676664321",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Apex Legends 6 Inch Action Figure | Crash Test Pathfinder",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-sonic-the-hedgehog-figure-sonic-modern-with-invincible-item-",
+      "name": "Sonic the Hedgehog Figure | Sonic (Modern) with Invincible Item Box",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/JKP-41235I-CA.jpg?v=1669948171",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic the Hedgehog 4 Inch Figure | Sonic (Modern) with Invincible Item Box",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-sonic-the-hedgehog-figure-dr-eggman-modern-with-checkpoint",
+      "name": "Sonic the Hedgehog Figure | Dr. Eggman (Modern) with Checkpoint",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/JKP-41265I-C-1.jpg?v=1768943065",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic the Hedgehog 4 Inch Figure | Dr. Eggman (Modern) with Checkpoint",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-diorama-set",
+      "name": "Diorama Set",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Sonic",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/JKP-409254-CA.jpg?v=1668721132",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Sonic The Hedgehog 2.5 Inch Action Figure Diorama Set",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-legend-of-zelda-20-link",
+      "name": "Legend of Zelda 20\" : Link",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/JKP-86748-CA.jpg?v=1666066716",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "World of Nintendo Legend of Zelda 20\" Action Figure: Link",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-legend-of-zelda-micro-figure-set-link-makar-bokoblin",
+      "name": "Legend of Zelda Micro Figure Set: Link, Makar, Bokoblin",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Nintendo",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/JKP-95215-CA.jpg?v=1666066380",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Legend of Zelda Micro Figure Set: Link, Makar, Bokoblin",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-fully-charged-drill-man",
+      "name": "Fully Charged | Drill Man",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/JKP-94715-2L-CA.jpg?v=1657893878",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Mega Man Fully Charged 7 Inch Action Figure | Drill Man",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-fully-charged-guts-man",
+      "name": "Fully Charged | Guts Man",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/JKP-81521-2L-CA.jpg?v=1657893878",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Mega Man Fully Charged 7 Inch Action Figure | Guts Man",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-8-bit-figure-mega-man-w-rolling-cutter",
+      "name": "8 Bit Figure | Mega Man w/ Rolling Cutter",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/JKP-34239MMRC-CA.jpg?v=1657893878",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Mega Man 8 Bit Figure | Mega Man w/ Rolling Cutter",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-8-bit-figure-mega-man-w-hyper-bomb",
+      "name": "8 Bit Figure | Mega Man w/ Hyper Bomb",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/JKP-34239MMHB-CA.jpg?v=1657893867",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Mega Man 8 Bit Figure | Mega Man w/ Hyper Bomb",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-fully-charged-deluxe-drill-man",
+      "name": "Fully Charged | Deluxe Drill Man",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/JKP-81511-2L-CA.jpg?v=1657893867",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Mega Man Fully Charged 7 Inch Action Figure | Deluxe Drill Man",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-8-bit-figure-cut-man",
+      "name": "8 Bit Figure | Cut Man",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/JKP-34239CM-CA.jpg?v=1657893878",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Mega Man 8 Bit Figure | Cut Man",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
+    },
+    {
+      "figureId": "inj-jakks-8-bit-figure-mega-man",
+      "name": "8 Bit Figure | Mega Man",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/JKP-34239MM-CA.jpg?v=1657893867",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Mega Man 8 Bit Figure | Mega Man",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
     }
   ],
-  "softFlagsTruncated": 0,
+  "softFlagsTruncated": 34,
   "notes": [
     "High = auto-cleared on --apply (multipack-vs-single, hard theme, score_reject+char_missing, URL path cues, prior SKU-audit cleared URL).",
     "Soft = reported only; not cleared.",
