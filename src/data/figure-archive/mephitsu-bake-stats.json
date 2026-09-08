@@ -1,5 +1,5 @@
 {
-  "bakedAt": "2026-09-08T03:35:13.498069+00:00",
+  "bakedAt": "2026-09-08T16:29:55.543034+00:00",
   "dryRun": false,
   "lines": [
     {
@@ -954,5 +954,25 @@
     "note": "Refused Mephitsu imageUrls that appear as primary on >=5 products (or tiny thumbs)",
     "refusedTotal": 20,
     "kept": 1
+  },
+  "babysit": {
+    "at": "2026-09-08T16:29:55.543034+00:00",
+    "gtinAdds": 0,
+    "photoAdds": [
+      {
+        "id": "joec-classified-tripwire",
+        "name": "Tripwire",
+        "line": "gi-joe-classified"
+      },
+      {
+        "id": "s7c-ult-tmnt-baxter",
+        "name": "Baxter Stockman",
+        "line": "super7"
+      }
+    ],
+    "refusedPlaceholders": {
+      "diamond-select_same_stub": 16,
+      "super7_shared_url": 2
+    }
   }
 }

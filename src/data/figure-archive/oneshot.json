@@ -148894,10 +148894,13 @@
       "alias:kitsap",
       "alias:hasbro-pulse",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated",
-    "sku": "5010996233929"
+    "sku": "5010996233929",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_cf0029b539a24f51a2381c9e72f83c73~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cf0029b539a24f51a2381c9e72f83c73~mv2.jpg"
   },
   {
     "id": "mlc-synch",
@@ -298174,9 +298177,12 @@
     "demand": 1.25,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated"
+    "source": "curated",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg"
   },
   {
     "id": "st10-st-36",
