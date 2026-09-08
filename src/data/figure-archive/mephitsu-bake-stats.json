@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-09-08T16:29:55.543034+00:00",
+  "bakedAt": "2026-09-08T18:42:32.144841+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-09-08T03:33:27.972278+00:00",
+      "bakedAt": "2026-09-08T18:40:45.537683+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 999,
@@ -18,25 +18,25 @@
         "withSku": 384,
         "withGtin": 251,
         "withListingPrimary": 133,
-        "withImage": 389,
+        "withImage": 387,
         "emptySku": 65,
-        "emptyImage": 60
+        "emptyImage": 62
       },
       "after": {
         "total": 449,
         "withSku": 384,
         "withGtin": 251,
         "withListingPrimary": 133,
-        "withImage": 389,
+        "withImage": 387,
         "emptySku": 65,
-        "emptyImage": 60
+        "emptyImage": 62
       },
       "apply": {
         "matched": 202,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
         "imagesFilled": 0,
-        "imagesSkipped": 0,
+        "imagesSkipped": 2,
         "aliasesAttached": 0,
         "skippedGtinConflict": 28,
         "samples": [
@@ -116,7 +116,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-08T03:33:37.159770+00:00",
+      "bakedAt": "2026-09-08T18:40:54.648125+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -229,7 +229,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-08T03:33:40.637290+00:00",
+      "bakedAt": "2026-09-08T18:40:58.202629+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -342,7 +342,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-08T03:34:16.063309+00:00",
+      "bakedAt": "2026-09-08T18:41:32.851040+00:00",
       "line": "mcfarlane",
       "dryRun": false,
       "mephitsuCount": 2177,
@@ -357,25 +357,25 @@
         "withSku": 480,
         "withGtin": 357,
         "withListingPrimary": 123,
-        "withImage": 520,
+        "withImage": 512,
         "emptySku": 282,
-        "emptyImage": 242
+        "emptyImage": 250
       },
       "after": {
         "total": 762,
         "withSku": 480,
         "withGtin": 357,
         "withListingPrimary": 123,
-        "withImage": 520,
+        "withImage": 513,
         "emptySku": 282,
-        "emptyImage": 242
+        "emptyImage": 249
       },
       "apply": {
         "matched": 262,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 1,
+        "imagesFilled": 1,
+        "imagesSkipped": 9,
         "aliasesAttached": 0,
         "skippedGtinConflict": 23,
         "samples": [
@@ -386,7 +386,7 @@
             "mephitsu": "Harley Quinn",
             "wave": "Gold Label GameStop",
             "sku": "787926177268",
-            "image": true
+            "image": false
           },
           {
             "score": 62.5,
@@ -451,12 +451,11 @@
             "sku": "787926156362",
             "image": true
           }
-        ],
-        "imagesRefusedPlaceholder": 1
+        ]
       }
     },
     {
-      "bakedAt": "2026-09-08T03:34:47.068453+00:00",
+      "bakedAt": "2026-09-08T18:42:04.305371+00:00",
       "line": "neca",
       "dryRun": false,
       "mephitsuCount": 1493,
@@ -471,25 +470,25 @@
         "withSku": 703,
         "withGtin": 337,
         "withListingPrimary": 366,
-        "withImage": 744,
+        "withImage": 738,
         "emptySku": 225,
-        "emptyImage": 184
+        "emptyImage": 190
       },
       "after": {
         "total": 928,
         "withSku": 703,
         "withGtin": 337,
         "withListingPrimary": 366,
-        "withImage": 744,
+        "withImage": 739,
         "emptySku": 225,
-        "emptyImage": 184
+        "emptyImage": 189
       },
       "apply": {
         "matched": 234,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 0,
+        "imagesFilled": 1,
+        "imagesSkipped": 5,
         "aliasesAttached": 0,
         "skippedGtinConflict": 21,
         "samples": [
@@ -569,7 +568,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-08T03:35:04.566337+00:00",
+      "bakedAt": "2026-09-08T18:42:22.907465+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -584,24 +583,24 @@
         "withSku": 2365,
         "withGtin": 131,
         "withListingPrimary": 2234,
-        "withImage": 2501,
+        "withImage": 2502,
         "emptySku": 425,
-        "emptyImage": 289
+        "emptyImage": 288
       },
       "after": {
         "total": 2790,
         "withSku": 2365,
         "withGtin": 131,
         "withListingPrimary": 2234,
-        "withImage": 2501,
+        "withImage": 2504,
         "emptySku": 425,
-        "emptyImage": 289
+        "emptyImage": 286
       },
       "apply": {
         "matched": 115,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
+        "imagesFilled": 2,
         "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 12,
@@ -678,12 +677,11 @@
             "sku": "840049813342",
             "image": true
           }
-        ],
-        "imagesRefusedPlaceholder": 3
+        ]
       }
     },
     {
-      "bakedAt": "2026-09-08T03:35:05.466193+00:00",
+      "bakedAt": "2026-09-08T18:42:23.900995+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -707,15 +705,15 @@
         "withSku": 22,
         "withGtin": 2,
         "withListingPrimary": 20,
-        "withImage": 41,
+        "withImage": 57,
         "emptySku": 80,
-        "emptyImage": 61
+        "emptyImage": 45
       },
       "apply": {
         "matched": 53,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
+        "imagesFilled": 16,
         "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 0,
@@ -792,12 +790,11 @@
             "sku": null,
             "image": true
           }
-        ],
-        "imagesRefusedPlaceholder": 16
+        ]
       }
     },
     {
-      "bakedAt": "2026-09-08T03:35:10.640554+00:00",
+      "bakedAt": "2026-09-08T18:42:29.227208+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -821,16 +818,16 @@
         "withSku": 67,
         "withGtin": 57,
         "withListingPrimary": 10,
-        "withImage": 75,
+        "withImage": 74,
         "emptySku": 79,
-        "emptyImage": 71
+        "emptyImage": 72
       },
       "apply": {
         "matched": 43,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 1,
-        "imagesSkipped": 0,
+        "imagesFilled": 0,
+        "imagesSkipped": 1,
         "aliasesAttached": 0,
         "skippedGtinConflict": 2,
         "samples": [
@@ -910,7 +907,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-08T03:35:13.494017+00:00",
+      "bakedAt": "2026-09-08T18:42:32.140373+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,
@@ -950,29 +947,23 @@
       }
     }
   ],
-  "placeholderFilter": {
-    "note": "Refused Mephitsu imageUrls that appear as primary on >=5 products (or tiny thumbs)",
-    "refusedTotal": 20,
-    "kept": 1
-  },
-  "babysit": {
-    "at": "2026-09-08T16:29:55.543034+00:00",
-    "gtinAdds": 0,
-    "photoAdds": [
+  "postBakeRefuse": {
+    "keptImages": [
       {
-        "id": "joec-classified-tripwire",
-        "name": "Tripwire",
-        "line": "gi-joe-classified"
-      },
-      {
-        "id": "s7c-ult-tmnt-baxter",
-        "name": "Baxter Stockman",
-        "line": "super7"
+        "figureId": "sf-neca-store-teenage-mutant-ninja-turtles-1990-movie-casey-jones-with-dirt-bike",
+        "name": "Casey Jones with Dirt Bike (TMNT 1990)",
+        "reason": "unique media + subtitle/GTIN match"
       }
     ],
-    "refusedPlaceholders": {
-      "diamond-select_same_stub": 16,
-      "super7_shared_url": 2
-    }
+    "refusedImages": {
+      "diamondSelectPlaceholderShared": 16,
+      "super7SharedMediaPumyraJackalman": 2,
+      "mcfarlaneTinyCyborgGold": 1,
+      "total": 19
+    },
+    "aliasesFile": "reverted (bad aliasToFigureId remaps)",
+    "netImagesFilledKept": 1,
+    "netGtinAssignedKept": 0,
+    "notedAt": "2026-09-08T18:44:14.807612+00:00"
   }
 }
