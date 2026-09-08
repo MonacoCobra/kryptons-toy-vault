@@ -114,3 +114,32 @@ Near-duplicate densify rows (same character + filler Wave/Classic subtitle):
 python3 dedupe-figure-oneshot.py          # write
 python3 dedupe-figure-oneshot.py --dry-run
 ```
+
+
+## Image mismatch audit
+
+Wrong specialty / Mephitsu / fuzzy CDN shots (same class of bug as Elektra D&W
+showing Skrull Elektra & Ronin pack art) are cleared by:
+
+```bash
+cd /workspace/collection-app
+python3 scripts/audit-figure-image-mismatches.py              # dry-run report
+python3 scripts/audit-figure-image-mismatches.py --apply       # clear high-confidence
+python3 scripts/audit-figure-image-mismatches.py --apply --refill  # + GTIN-proven refill
+```
+
+Rules (conservative — prefer empty/placeholder over wrong photo):
+
+- Audits every figure with `oneshot.imageUrl` and/or `figure-image-urls.json`
+  overlay (`resolveFigureImageUrl` falls through to the overlay, so **both**
+  must be cleared).
+- **GTIN path:** primary GTIN → `product-sku-index` title hard-disagrees
+  (multipack→single, Skrull/theme clash, score_reject+char_missing) → clear.
+- **URL path:** image URL indexed under a product whose title hard-disagrees
+  (and no co-indexed product high-matches) → clear.
+- Soft flags are reported only. Never invents SKUs/images.
+- `--refill` re-attaches only when the figure’s GTIN product title
+  high-confidence matches (score ≥ 22, contiguous name, never multipack→single).
+- Writes `src/data/figure-archive/image-mismatch-audit.json`.
+- Mephitsu bake refuses to re-apply URLs listed in this report (and the SKU
+  mismatch audit report). Comics/UPC untouched.

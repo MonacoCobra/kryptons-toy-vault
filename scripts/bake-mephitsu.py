@@ -46,6 +46,7 @@ SKU_MAP = ROOT / "src/data/figure-sku-map.json"
 ALIASES = ROOT / "src/data/figure-sku-aliases.json"
 STATS = ROOT / "src/data/figure-archive/mephitsu-bake-stats.json"
 SKU_AUDIT = ROOT / "src/data/figure-archive/sku-mismatch-audit.json"
+IMAGE_AUDIT = ROOT / "src/data/figure-archive/image-mismatch-audit.json"
 SKU_INDEX = ROOT / "src/data/figure-archive/product-sku-index.json"
 
 DEFAULT_MIN_SCORE = 22.0  # align with audit rematch floor; refuse weak photo matches
@@ -65,18 +66,19 @@ THEME_CONFLICTS: list[tuple[set[str], set[str], str]] = [
 
 
 def load_cleared_image_urls() -> set[str]:
-    """URLs Lyra/SKU audit cleared — never re-attach without a stronger rematch path."""
-    if not SKU_AUDIT.exists():
-        return set()
-    try:
-        doc = json.loads(SKU_AUDIT.read_text())
-    except Exception:
-        return set()
+    """URLs SKU/image audits cleared — never re-attach without a stronger rematch path."""
     out: set[str] = set()
-    for row in doc.get("cleared") or []:
-        u = (row.get("clearedImageUrl") or "").strip()
-        if u:
-            out.add(u)
+    for path in (SKU_AUDIT, IMAGE_AUDIT):
+        if not path.exists():
+            continue
+        try:
+            doc = json.loads(path.read_text())
+        except Exception:
+            continue
+        for row in doc.get("cleared") or []:
+            u = (row.get("clearedImageUrl") or "").strip()
+            if u:
+                out.add(u)
     return out
 
 
