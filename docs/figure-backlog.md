@@ -135,7 +135,7 @@ missing collector brands. Floor 1980; AF only; no AI art.
 | --- | --- |
 | `fourhorsemen` | **NEW** — Mythic Legions + Cosmic Legions + Figura Obscura |
 | `spinmaster` | **NEW** — Bakugan AF (Battle Planet → Legacy) + early MotU Origins SM |
-| `bandai` | Robot Spirits / Gundam Universe / G Frame / MSiA **AF** (not Gunpla kits) |
+| `bandai` | Robot Spirits / Gundam Universe / G Frame / MSiA **AF** + Gunpla / Star Wars / hobby **kits** (`kind: kit`) |
 | densify | McFarlane DC/Spawn, NECA TMNT/Aliens/Horror, Storm, SHFiguarts |
 | densify | Hasbro Lightning Collection (PR), GI Joe Classified, Marvel Legends |
 | densify | ToyBiz classic ML, Loyal Subjects BST AXN, Boss Fight H.A.C.K.S. |
@@ -268,7 +268,7 @@ kept under existing `figma` densify (Max Factory / GSC figma AF) — no separate
 | `creativebeast` | **NEW** — Beasts of the Mesozoic dinosaurs |
 | `alertline` | **NEW** — 1/6 military AF |
 | `snailshell` | **NEW** — 1/12 original tactical AF |
-| densify | Bandai Robot Spirits / Gundam Universe AF (not Gunpla kits) |
+| densify | Bandai Robot Spirits / Gundam Universe AF + Gunpla/SW kits via inject-model-kits |
 | densify | figma (Max Factory / Good Smile) |
 | densify | Beast Kingdom DAH, Enterbay, Hot Toys, threezero DLX/FigZero |
 | densify | Valaverse Action Force, Premium DNA Filmation, Acid Rain |
@@ -381,14 +381,30 @@ Listing codes demoted to aliases; Nano Metalfigs removed from Jada.
 
 ## Model kits pass: Blokees / Flame Toys / SoSkill (2026-09-08)
 
-Priority kits pass (Bandai Gunpla deferred). Script: `scripts/inject-model-kits.py`.
+Priority kits pass (Bandai Gunpla deferred at the time). Script: `scripts/inject-model-kits.py`.
 
 | CompanyId | Change |
 | --- | --- |
 | `blokees` | Re-fetched blokees.com; **201** Champion/Galaxy/Defender/Classic/Action/Herospire/Gundam rows → `kind: kit`; **5** DaaLaMode/Fantastics/Unicron stay `figure`; names repaired from CDN titles; listing→aliases |
 | `flametoys` | Specialty feeds ToyArena + Planet AF; **+9 Furai Model kits**; **+9** KKK/Furai Action figures; **10** curated Gundam AF → Furai Model kits; **15** CDN image densifies; first-party flametoys.com SSL-blocked |
 | `soskill` | Still **0 rows** — no verified Shopify `products.json` (see storefronts rejected list) |
-| `bandai` | Untouched (next phase) |
+| `bandai` | Deferred → see Bandai kits pass below |
 
 UI: existing Figures → **Kits** filter (`kind === "kit"`) already shows Yolopark; Blokees/Flame kits appear there with no UI change.
+
+## Bandai model kits pass (2026-09-08)
+
+Script: `scripts/inject-model-kits.py --bandai-only`. Densifies Bandai hobby kits into oneshot; does **not** reclass SHFiguarts / Robot Spirits / Gundam Universe AF.
+
+| Metric | Before → After |
+| --- | --- |
+| Bandai rows | 196 → 4312 |
+| Bandai `figure` | 196 → 196 (left alone) |
+| Bandai `kit` | 0 → **4116** |
+| Bandai GTIN primary | 49 → ~2870 |
+| Seed `gp-*` overlays | +14 CDN images, +11 JANs via sku-map |
+
+**Line tags (`LINES_BY_COMPANY`):** High Grade, Real Grade, Master Grade, Perfect Grade, Entry Grade, SD Gundam, Gunpla, Figure-rise, 30 Minutes Missions / Sisters / Fantasy, Full Mechanics, Star Wars Vehicle Model, Star Wars Model Kit, Pokémon Plamo, Bandai Hobby.
+
+**Feeds used / rejected:** see `docs/figure-storefronts.md` Bandai section. SoSkill still **0**.
 

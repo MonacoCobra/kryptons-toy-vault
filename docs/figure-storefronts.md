@@ -100,3 +100,23 @@ Curated rows without CDN art are filled (high-confidence only) by
 - topgkstore.com — HTML / bot interstitial
 - showzstore.com / robotkingdom.com — non-Shopify or blocked
 - ToyArena/PlanetAF — 0 SoSkill vendor hits
+
+## Bandai model-kits feeds (2026-09-08)
+
+**Used (specialty Shopify JSON):**
+- Gundam Planet — https://www.gundamplanet.com (`BANDAI SPIRITS: Hobby` Model Kits / Gunpla; JAN often in listing SKU)
+- USA Gundam Store — https://www.usagundamstore.com (Bandai Gunpla + Star Wars vehicle/model kits)
+- ToyArena — https://www.toyarena.com/collections/gundam
+- Japan Figure — https://www.japan-figure.com/collections/{hg,rg,mg,plastic-model} (Bandai plastic models)
+- ToyDojo — https://www.toydojo.com/collections/bandai (kit-filtered)
+
+**Rejected / blocked:**
+- shop.bandai.com / bandai-hobby.net / bandaihobbyusa.com — HTML, no products.json
+- p-bandai.com — 404; p-bandai.us — DNS miss
+- HLJ (hlj.com) — 404 on products.json (blocked)
+- hobby-link.com — SSL hostname mismatch
+- newtype.us — HTML (non-Shopify JSON)
+- amiami.com — 406 / non-Shopify
+- plazajapan.com — 404 on products.json
+
+**Policy:** `kind: kit` only. SHFiguarts / Robot Spirits / Gundam Universe / Metal Build stay `figure` (untouched). Primary sku = GTIN/JAN when present; listing codes → aliases. Prefer empty image over wrong.

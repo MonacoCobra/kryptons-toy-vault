@@ -59,7 +59,7 @@ export const COMPANIES: Company[] = [
     id: "bandai",
     name: "Bandai",
     short: "Bandai",
-    blurb: "Gunpla kits plus Robot Spirits / Gundam Universe articulated AF.",
+    blurb: "Gunpla (HG/RG/MG/PG/EG/SD) + Star Wars / hobby kits; Robot Spirits / Gundam Universe AF.",
     founded: "1950",
     hq: "Tokyo, JP",
     accent: "#e60012",

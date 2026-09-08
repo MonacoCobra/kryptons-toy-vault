@@ -1,130 +1,6 @@
 {
-  "at": "2026-09-08T05:55:40.628371+00:00",
+  "at": "2026-09-08T06:11:22.078034+00:00",
   "before": {
-    "bandai": {
-      "rows": 196,
-      "figure": 196,
-      "kit": 0,
-      "sku": 112,
-      "img": 112,
-      "gtin": 49
-    },
-    "blokees": {
-      "rows": 206,
-      "figure": 206,
-      "kit": 0,
-      "sku": 0,
-      "img": 152,
-      "gtin": 0
-    },
-    "flametoys": {
-      "rows": 44,
-      "figure": 44,
-      "kit": 0,
-      "sku": 0,
-      "img": 0,
-      "gtin": 0
-    },
-    "soskill": {
-      "rows": 0,
-      "figure": 0,
-      "kit": 0,
-      "sku": 0,
-      "img": 0,
-      "gtin": 0
-    },
-    "yolopark": {
-      "rows": 67,
-      "figure": 0,
-      "kit": 67,
-      "sku": 0,
-      "img": 67,
-      "gtin": 0
-    }
-  },
-  "apply": true,
-  "blokees": {
-    "fetched": 199,
-    "reclassedToKit": 201,
-    "keptFigure": 5,
-    "imagesAdded": 0,
-    "namesFixed": 59,
-    "aliasAdds": 1,
-    "added": 0,
-    "skipped": {
-      "filter": 31,
-      "id": 136,
-      "soft_merch": 4,
-      "soft_name": 2,
-      "known_listing": 25,
-      "non_kit": 1
-    },
-    "ids": [],
-    "feed": "https://blokees.com"
-  },
-  "flametoys": {
-    "productsSeen": 33,
-    "feedsUsed": [
-      "https://www.toyarena.com (Flame Toys vendor hits=21)",
-      "https://www.planetactionfigures.co.uk (Flame Toys hits≈12)"
-    ],
-    "feedsRejected": [
-      "https://flametoys.com — SSL/EOF or no products.json (first-party blocked)",
-      "https://www.flametoys.com — SSL/EOF or no products.json (first-party blocked)",
-      "https://shop.flametoys.com — SSL/EOF or no products.json (first-party blocked)",
-      "https://store.flametoys.com — SSL/EOF or no products.json (first-party blocked)"
-    ],
-    "reclassedGundamToKit": 10,
-    "imagesDensified": 15,
-    "kitsAdded": 9,
-    "figuresAdded": 9,
-    "kitIds": [
-      "sf-flametoys-toyarena-flame-toys-furai-44-transformers-wingblade-optimus-prime-a",
-      "sf-flametoys-toyarena-flame-toys-furai-12-transformers-optimus-prime-g1-ver-mode",
-      "sf-flametoys-toyarena-flame-toys-furai-model-transformers-devastator-model-kit",
-      "sf-flametoys-toyarena-flame-toys-furai-07-transformers-shattered-glass-optimus-p",
-      "sf-flametoys-toyarena-flame-toys-furai-28-transformers-arcee-model-kit",
-      "sf-flametoys-toyarena-flame-toys-furai-26-transformers-leo-prime-model-kit",
-      "sf-flametoys-planet-af-transformers-furai-model-plastic-model-kit-sg-optimus-pri",
-      "sf-flametoys-planet-af-transformers-furai-model-plastic-model-kit-big-convoy-17-",
-      "sf-flametoys-planet-af-transformers-furai-model-plastic-model-kit-bumblebee-g1-v"
-    ],
-    "figureIds": [
-      "sf-flametoys-toyarena-flame-toys-furai-action-transformers-windblade-action-figu",
-      "sf-flametoys-toyarena-flame-toys-transformers-kuro-kara-kuri-01-drift-figure",
-      "sf-flametoys-toyarena-flame-toys-mighty-morphin-power-rangers-go-kara-kuri-combi",
-      "sf-flametoys-planet-af-tengen-toppa-gurren-lagann-kuro-kara-kuri-action-figure-l",
-      "sf-flametoys-planet-af-power-rangers-furai-action-action-figure-yellow-ranger-13",
-      "sf-flametoys-planet-af-power-rangers-furai-action-action-figure-red-ranger-13-cm",
-      "sf-flametoys-planet-af-power-rangers-furai-action-action-figure-pink-ranger-13-c",
-      "sf-flametoys-planet-af-power-rangers-furai-action-action-figure-black-ranger-13-",
-      "sf-flametoys-planet-af-power-rangers-furai-action-action-figure-blue-ranger-13-c"
-    ],
-    "skipped": {
-      "known_listing": 11,
-      "soft_name": 3,
-      "filter": 1
-    }
-  },
-  "soskill": {
-    "added": 0,
-    "note": "No verified Shopify products.json; CompanyId reserved; leave 0 rather than invent",
-    "rejected": [
-      "https://soskill.com — URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>",
-      "https://www.soskill.com — URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>",
-      "https://soskilltoys.com — HTTPError: HTTP Error 404: Not Found",
-      "https://www.soskilltoys.com — HTTPError: HTTP Error 404: Not Found",
-      "https://soskill.myshopify.com — HTTPError: HTTP Error 404: Not Found",
-      "https://shop.soskill.com — URLError: <urlopen error [Errno -2] Name or service not known>",
-      "https://soskill.store — URLError: <urlopen error [Errno -2] Name or service not known>",
-      "https://shop.soskilltoys.com — URLError: <urlopen error [Errno -2] Name or service not known>",
-      "https://soskillofficial.com — URLError: <urlopen error [Errno -2] Name or service not known>",
-      "https://topgkstore.com — HTML, not Shopify products.json",
-      "ToyArena/PlanetAF full scans — 0 SoSkill vendor hits",
-      "showzstore.com / robotkingdom.com — non-Shopify or blocked"
-    ]
-  },
-  "after": {
     "bandai": {
       "rows": 196,
       "figure": 196,
@@ -166,8 +42,174 @@
       "gtin": 0
     }
   },
+  "apply": true,
+  "bandaiOnly": true,
+  "blokees": {
+    "skipped": true,
+    "note": "--bandai-only"
+  },
+  "flametoys": {
+    "skipped": true,
+    "note": "--bandai-only"
+  },
+  "soskill": {
+    "skipped": true,
+    "note": "--bandai-only",
+    "added": 0
+  },
+  "bandai": {
+    "productsSeen": 4248,
+    "feedsUsed": [
+      "https://www.gundamplanet.com (Bandai hobby kits≈1278)",
+      "https://www.usagundamstore.com (Bandai/SW kits≈1315)",
+      "https://www.toyarena.com/collections/gundam (kits≈1295)",
+      "https://www.japan-figure.com/collections/hg (Bandai≈20)",
+      "https://www.japan-figure.com/collections/rg (Bandai≈31)",
+      "https://www.japan-figure.com/collections/mg (Bandai≈112)",
+      "https://www.japan-figure.com/collections/plastic-model (Bandai≈122)",
+      "https://www.toydojo.com/collections/bandai (kits≈75)"
+    ],
+    "feedsRejected": [
+      "https://shop.bandai.com — HTML storefront, no products.json",
+      "https://bandai-hobby.net — HTML, no products.json",
+      "https://www.bandaihobbyusa.com — HTML, no products.json",
+      "https://p-bandai.com — 404 / no products.json",
+      "https://p-bandai.us — DNS miss",
+      "https://www.hlj.com — 404 on products.json (blocked)",
+      "https://www.hobby-link.com — SSL hostname mismatch",
+      "https://www.newtype.us — HTML (non-Shopify JSON)",
+      "https://www.amiami.com — 406 / non-Shopify",
+      "https://www.plazajapan.com — 404 on products.json"
+    ],
+    "kitsAdded": 4116,
+    "withGtin": 2821,
+    "byLine": {
+      "Gunpla": 969,
+      "Entry Grade": 67,
+      "30 Minutes Missions": 308,
+      "Master Grade": 432,
+      "High Grade": 1149,
+      "30 Minutes Sisters": 135,
+      "30 Minutes Fantasy": 73,
+      "Real Grade": 154,
+      "Full Mechanics": 15,
+      "Perfect Grade": 45,
+      "Figure-rise": 214,
+      "Star Wars Vehicle Model": 12,
+      "Star Wars Model Kit": 57,
+      "SD Gundam": 453,
+      "Bandai Hobby": 24,
+      "Pokémon Plamo": 9
+    },
+    "afRowsLeftAlone": 196,
+    "seedDensify": {
+      "seedImages": 14,
+      "seedSkus": 11
+    },
+    "kitIds": [
+      "sf-bandai-gundamplanet-gg-qubeley-triple-collection",
+      "sf-bandai-gundamplanet-entry-grade-strike-gundam-ecopla",
+      "sf-bandai-gundamplanet-pokemon-model-kit-select-64-mega-dragonite",
+      "sf-bandai-gundamplanet-pokemon-model-kit-quick-30-dragonair",
+      "sf-bandai-gundamplanet-30ms-scale-atelier-wear-yukata-03",
+      "sf-bandai-gundamplanet-30ms-scale-atelier-wear-yukata-02",
+      "sf-bandai-gundamplanet-30ms-option-body-parts-atelier-base-body-02-color-b",
+      "sf-bandai-gundamplanet-30ms-aoko-aozaki",
+      "sf-bandai-gundamplanet-30ms-rin-tohsaka",
+      "sf-bandai-gundamplanet-30mf-monster-hunter-wilds-rathalos-equipment-rathalos-ser",
+      "sf-bandai-gundamplanet-30mf-monster-hunter-wilds-arkveld-equipment-arkvulcan-ser",
+      "sf-bandai-gundamplanet-30mm-w-41-option-parts-set-25-full-armor-unit-3-multi-joi",
+      "sf-bandai-gundamplanet-30mm-84-eexm-40-iglight-high-mobility-type",
+      "sf-bandai-gundamplanet-mgsd-00-raiser",
+      "sf-bandai-gundamplanet-mgex-zgmf-a-262pd-p-mighty-strike-freedom-gundam",
+      "sf-bandai-gundamplanet-hguc-amx-103-hamma-hamma",
+      "sf-bandai-gundamplanet-30-minutes-sisters-flexible-sticker-multiuse-1",
+      "sf-bandai-gundamplanet-30ms-option-body-parts-arm-parts-leg-parts-s-color-b",
+      "sf-bandai-gundamplanet-30ms-option-body-parts-type-su03-color-b",
+      "sf-bandai-gundamplanet-30-minutes-fantasy-flexible-sticker-multiuse-1",
+      "sf-bandai-gundamplanet-30mf-necros-mephisto",
+      "sf-bandai-gundamplanet-30mm-armored-core-vi-fires-of-rubicon-weapon-set-09",
+      "sf-bandai-gundamplanet-30mm-schneider-nachtreiher-40e-dual-nature-armored-core-v",
+      "sf-bandai-gundamplanet-rg-rx-79g-gundam-ground-type",
+      "sf-bandai-gundamplanet-30ms-option-body-parts-type-su02-color-a",
+      "sf-bandai-gundamplanet-30ms-option-hairstyle-face-parts-set-nichika-nanakusa-haz",
+      "sf-bandai-gundamplanet-30ms-mikoto-aketa",
+      "sf-bandai-gundamplanet-30mf-class-up-armor-savage-hunter",
+      "sf-bandai-gundamplanet-30mf-darknevil-arch-knight",
+      "sf-bandai-gundamplanet-30mm-83-eexm-17re-alto-refine",
+      "sf-bandai-gundamplanet-30mm-82-exm-e7b-spinatia-beast-type",
+      "sf-bandai-gundamplanet-1-100-full-mechanics-graze-ein",
+      "sf-bandai-gundamplanet-the-bird-and-the-buddy-weapons-only",
+      "sf-bandai-gundamplanet-the-bird-and-the-buddy",
+      "sf-bandai-gundamplanet-the-dual-gatling-tetrapod",
+      "sf-bandai-gundamplanet-handler-walters-hound-arsenal",
+      "sf-bandai-gundamplanet-the-dual-shotgun-build-bundle",
+      "sf-bandai-gundamplanet-dx03-gundam-assemble-deluxe-set-03",
+      "sf-bandai-gundamplanet-ex09-gundam-assemble-expansion-pack-09",
+      "sf-bandai-gundamplanet-sc01-gundam-assemble-scenario-pack-01",
+      "sf-bandai-gundamplanet-ex08-gundam-assemble-expansion-pack-08",
+      "sf-bandai-gundamplanet-ex07-gundam-assemble-expansion-pack-07",
+      "sf-bandai-gundamplanet-ex06-gundam-assemble-expansion-pack-06",
+      "sf-bandai-gundamplanet-smp-aap07-balteus-armored-core-vi-fires-of-rubicon",
+      "sf-bandai-gundamplanet-mg-msn-00100-hyaku-shiki-hd-color",
+      "sf-bandai-gundamplanet-mg-msz-006-zeta-gundam-ver-2-0-hd-color",
+      "sf-bandai-gundamplanet-mg-rx-178-gundam-mk-ii-titans-ver-2-0-hd-color",
+      "sf-bandai-gundamplanet-mg-rx-178-gundam-mk-ii-aeug-ver-2-0-hd-color",
+      "sf-bandai-gundamplanet-hg-new-tamama-robo",
+      "sf-bandai-gundamplanet-30mp-fuchikoma-the-ghost-in-the-shell"
+    ],
+    "skipped": {
+      "known_gtin": 10,
+      "key": 78,
+      "id": 35,
+      "known_listing": 9
+    }
+  },
+  "after": {
+    "bandai": {
+      "rows": 4312,
+      "figure": 196,
+      "kit": 4116,
+      "sku": 2933,
+      "img": 4228,
+      "gtin": 2870
+    },
+    "blokees": {
+      "rows": 206,
+      "figure": 5,
+      "kit": 201,
+      "sku": 0,
+      "img": 152,
+      "gtin": 0
+    },
+    "flametoys": {
+      "rows": 62,
+      "figure": 43,
+      "kit": 19,
+      "sku": 0,
+      "img": 33,
+      "gtin": 0
+    },
+    "soskill": {
+      "rows": 0,
+      "figure": 0,
+      "kit": 0,
+      "sku": 0,
+      "img": 0,
+      "gtin": 0
+    },
+    "yolopark": {
+      "rows": 67,
+      "figure": 0,
+      "kit": 67,
+      "sku": 0,
+      "img": 67,
+      "gtin": 0
+    }
+  },
   "ui": {
-    "kitsFilter": "src/routes/figures/index.tsx view=kits filters kind===kit (Yolopark already)",
-    "change": "none — Blokees/Flame kits appear under Kits once kind=kit"
+    "kitsFilter": "src/routes/figures/index.tsx view=kits filters kind===kit",
+    "lineTags": "LINES_BY_COMPANY picks up High Grade / Real Grade / Master Grade / Perfect Grade / Entry Grade / SD Gundam / Figure-rise / 30MM / Star Wars Vehicle Model",
+    "change": "Bandai kits appear under Kits; existing Bandai AF rows untouched"
   }
 }
