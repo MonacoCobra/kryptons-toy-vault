@@ -8,8 +8,9 @@ Diamond Select, etc.
 Policy:
   - Primary sku = GTIN only (never invent; never overwrite GTIN with listing)
   - Listing codes → aliases
-  - Fill empty imageUrl from Mephitsu photos only
-  - High-confidence matcher via bake-figure-images.score_pair
+  - Fill empty imageUrl from Mephitsu photos only (title must match; never multipack→single;
+    never Skrull/theme clashes; never re-apply sku-mismatch-audit cleared URLs)
+  - High-confidence matcher via bake-figure-images.score_pair (default min-score 22)
 
   python3 scripts/bake-mephitsu.py --line black-series
   python3 scripts/bake-mephitsu.py --all-hub
@@ -44,9 +45,79 @@ MEPH_DIR = ROOT / "src/data/figure-archive/mephitsu"
 SKU_MAP = ROOT / "src/data/figure-sku-map.json"
 ALIASES = ROOT / "src/data/figure-sku-aliases.json"
 STATS = ROOT / "src/data/figure-archive/mephitsu-bake-stats.json"
+SKU_AUDIT = ROOT / "src/data/figure-archive/sku-mismatch-audit.json"
 SKU_INDEX = ROOT / "src/data/figure-archive/product-sku-index.json"
 
-DEFAULT_MIN_SCORE = 18.0
+DEFAULT_MIN_SCORE = 22.0  # align with audit rematch floor; refuse weak photo matches
+
+
+PACK_RE = re.compile(
+    r"\b(?:2[\s\-]?pack|3[\s\-]?pack|4[\s\-]?pack|two[\s\-]?pack|three[\s\-]?pack|"
+    r"multipack|multi[\s\-]?pack)\b",
+    re.I,
+)
+
+THEME_CONFLICTS: list[tuple[set[str], set[str], str]] = [
+    ({"skrull"}, {"deadpool", "wolverine"}, "theme_skrull_vs_dpw"),
+    ({"skrull"}, {"natchios", "daredevil"}, "theme_skrull_vs_daredevil"),
+    ({"netflix"}, {"deadpool", "wolverine"}, "theme_netflix_vs_dpw"),
+]
+
+
+def load_cleared_image_urls() -> set[str]:
+    """URLs Lyra/SKU audit cleared — never re-attach without a stronger rematch path."""
+    if not SKU_AUDIT.exists():
+        return set()
+    try:
+        doc = json.loads(SKU_AUDIT.read_text())
+    except Exception:
+        return set()
+    out: set[str] = set()
+    for row in doc.get("cleared") or []:
+        u = (row.get("clearedImageUrl") or "").strip()
+        if u:
+            out.add(u)
+    return out
+
+
+def figure_is_pack(fig: dict) -> bool:
+    blob = " ".join(
+        str(x or "")
+        for x in (
+            fig.get("name"),
+            fig.get("subtitle"),
+            fig.get("line"),
+            " ".join(fig.get("tags") or []),
+        )
+    )
+    return bool(PACK_RE.search(blob))
+
+
+def image_fill_blocked(fig: dict, meph: dict, img: str, cleared: set[str]) -> str | None:
+    """Return reason if this Mephitsu photo must not fill the figure row."""
+    if img in cleared:
+        return "cleared_audit_url"
+    prod_blob = " ".join(
+        str(x or "")
+        for x in (meph.get("title"), meph.get("name"), meph.get("subtitle"), meph.get("wave"))
+    )
+    if PACK_RE.search(prod_blob) and not figure_is_pack(fig):
+        return "product_multipack_vs_single"
+    fig_blob = norm_text(
+        " ".join(str(x or "") for x in (fig.get("name"), fig.get("subtitle"), fig.get("line")))
+    )
+    prod_n = norm_text(prod_blob)
+    for prod_toks, fig_toks, reason in THEME_CONFLICTS:
+        if any(t in prod_n for t in prod_toks) and any(t in fig_blob for t in fig_toks):
+            if not any(t in fig_blob for t in prod_toks):
+                return reason
+    fname = norm_text(str(fig.get("name") or ""))
+    if fname:
+        tokens = [t for t in fname.split() if len(t) > 2]
+        if tokens and not any(t in prod_n for t in tokens):
+            return "title_name_mismatch"
+    return None
+
 
 RowPred = Callable[[dict], bool]
 
@@ -413,11 +484,14 @@ def apply_bake(
         if r.get("sku") and is_gtin(r.get("sku"))
     }
 
+    cleared_urls = load_cleared_image_urls()
+
     stats = {
         "matched": len(finals),
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
         "imagesFilled": 0,
+        "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 0,
         "samples": [],
@@ -479,14 +553,18 @@ def apply_bake(
 
         img = meph.get("imageUrl")
         if img and not row.get("imageUrl"):
-            if not dry_run:
-                row["imageUrl"] = img
-                tags = list(row.get("tags") or [])
-                for t in ("image-bake", "img:mephitsu"):
-                    if t not in tags and len(tags) < 24:
-                        tags.append(t)
-                row["tags"] = tags
-            stats["imagesFilled"] += 1
+            block = image_fill_blocked(row, meph, img, cleared_urls)
+            if block:
+                stats["imagesSkipped"] += 1
+            else:
+                if not dry_run:
+                    row["imageUrl"] = img
+                    tags = list(row.get("tags") or [])
+                    for t in ("image-bake", "img:mephitsu"):
+                        if t not in tags and len(tags) < 24:
+                            tags.append(t)
+                    row["tags"] = tags
+                stats["imagesFilled"] += 1
 
         if len(stats["samples"]) < 8:
             stats["samples"].append(
