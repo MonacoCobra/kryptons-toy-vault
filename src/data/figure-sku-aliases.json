@@ -9942,7 +9942,8 @@
     "joec-classified-tripwire": [
       "F9432",
       "F66835L00",
-      "F94325L00"
+      "F94325L00",
+      "HAS233929"
     ],
     "joec-classified-spirit": [
       "F9240",
@@ -16036,6 +16037,9 @@
     ],
     "mlc-lizard-nwh": [
       "F3461"
+    ],
+    "sf-neca-store-teenage-mutant-ninja-turtles-1990-movie-casey-jones-with-dirt-bike": [
+      "NE54514-01"
     ]
   },
   "aliasToFigureId": {
@@ -27432,7 +27436,9 @@
     "NE51910-01": "sf-neca-store-terminator-2-t-800-classic-video-game-appearance-7-inch-action-fig",
     "NE41905-01": "sf-neca-store-ultimate-ghost-face-inferno-action-figure",
     "NE54297-01": "sf-neca-store-teenage-mutant-ninja-turtles-mirage-comics-renet-blue-action-figur",
-    "DST-205016_18-C": "dst-ms-taskmaster"
+    "DST-205016_18-C": "dst-ms-taskmaster",
+    "HAS233929": "joec-classified-tripwire",
+    "NE54514-01": "sf-neca-store-teenage-mutant-ninja-turtles-1990-movie-casey-jones-with-dirt-bike"
   },
   "collapsed": [
     {
@@ -27604,7 +27610,7 @@
       "reason": "distinct GTINs under batman / detective comics 1000 — left both"
     }
   ],
-  "updatedAt": "2026-09-07T23:45:21.276330+00:00",
+  "updatedAt": "2026-09-08T00:55:51.527515+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,

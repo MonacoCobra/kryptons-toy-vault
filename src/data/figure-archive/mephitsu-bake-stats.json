@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-09-07T21:26:42.326410+00:00",
+  "bakedAt": "2026-09-08T00:55:51.545183+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-09-07T21:24:54.596842+00:00",
+      "bakedAt": "2026-09-08T00:54:03.655517+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 999,
@@ -15,27 +15,28 @@
       },
       "before": {
         "total": 449,
-        "withSku": 385,
-        "withGtin": 252,
+        "withSku": 382,
+        "withGtin": 249,
         "withListingPrimary": 133,
-        "withImage": 391,
-        "emptySku": 64,
-        "emptyImage": 58
+        "withImage": 382,
+        "emptySku": 67,
+        "emptyImage": 67
       },
       "after": {
         "total": 449,
-        "withSku": 385,
-        "withGtin": 252,
+        "withSku": 384,
+        "withGtin": 251,
         "withListingPrimary": 133,
-        "withImage": 391,
-        "emptySku": 64,
-        "emptyImage": 58
+        "withImage": 389,
+        "emptySku": 65,
+        "emptyImage": 60
       },
       "apply": {
-        "matched": 205,
-        "gtinAssigned": 0,
+        "matched": 202,
+        "gtinAssigned": 2,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
+        "imagesFilled": 7,
+        "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 28,
         "samples": [
@@ -115,7 +116,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-07T21:25:04.055408+00:00",
+      "bakedAt": "2026-09-08T00:54:13.081499+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -127,29 +128,30 @@
       },
       "before": {
         "total": 353,
-        "withSku": 279,
-        "withGtin": 131,
+        "withSku": 272,
+        "withGtin": 124,
         "withListingPrimary": 148,
-        "withImage": 313,
-        "emptySku": 74,
-        "emptyImage": 40
+        "withImage": 301,
+        "emptySku": 81,
+        "emptyImage": 52
       },
       "after": {
         "total": 353,
-        "withSku": 279,
-        "withGtin": 131,
-        "withListingPrimary": 148,
-        "withImage": 314,
-        "emptySku": 74,
-        "emptyImage": 39
+        "withSku": 272,
+        "withGtin": 125,
+        "withListingPrimary": 147,
+        "withImage": 303,
+        "emptySku": 81,
+        "emptyImage": 50
       },
       "apply": {
         "matched": 114,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
-        "imagesFilled": 1,
-        "aliasesAttached": 0,
-        "skippedGtinConflict": 27,
+        "gtinAssigned": 1,
+        "gtinUpgraded": 1,
+        "imagesFilled": 2,
+        "imagesSkipped": 0,
+        "aliasesAttached": 1,
+        "skippedGtinConflict": 26,
         "samples": [
           {
             "score": 55.5,
@@ -227,7 +229,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-07T21:25:07.616316+00:00",
+      "bakedAt": "2026-09-08T00:54:16.649945+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -239,27 +241,28 @@
       },
       "before": {
         "total": 509,
-        "withSku": 455,
-        "withGtin": 274,
+        "withSku": 454,
+        "withGtin": 273,
         "withListingPrimary": 181,
-        "withImage": 452,
-        "emptySku": 54,
-        "emptyImage": 57
+        "withImage": 446,
+        "emptySku": 55,
+        "emptyImage": 63
       },
       "after": {
         "total": 509,
-        "withSku": 455,
-        "withGtin": 274,
+        "withSku": 454,
+        "withGtin": 273,
         "withListingPrimary": 181,
-        "withImage": 452,
-        "emptySku": 54,
-        "emptyImage": 57
+        "withImage": 447,
+        "emptySku": 55,
+        "emptyImage": 62
       },
       "apply": {
-        "matched": 28,
+        "matched": 27,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
+        "imagesFilled": 1,
+        "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 2,
         "samples": [
@@ -339,7 +342,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-07T21:25:43.588467+00:00",
+      "bakedAt": "2026-09-08T00:54:52.055888+00:00",
       "line": "mcfarlane",
       "dryRun": false,
       "mephitsuCount": 2177,
@@ -351,29 +354,30 @@
       },
       "before": {
         "total": 762,
-        "withSku": 489,
-        "withGtin": 366,
+        "withSku": 469,
+        "withGtin": 346,
         "withListingPrimary": 123,
-        "withImage": 525,
-        "emptySku": 273,
-        "emptyImage": 237
+        "withImage": 505,
+        "emptySku": 293,
+        "emptyImage": 257
       },
       "after": {
         "total": 762,
-        "withSku": 492,
-        "withGtin": 369,
+        "withSku": 480,
+        "withGtin": 357,
         "withListingPrimary": 123,
-        "withImage": 534,
-        "emptySku": 270,
-        "emptyImage": 228
+        "withImage": 520,
+        "emptySku": 282,
+        "emptyImage": 242
       },
       "apply": {
-        "matched": 264,
-        "gtinAssigned": 3,
+        "matched": 262,
+        "gtinAssigned": 11,
         "gtinUpgraded": 0,
-        "imagesFilled": 9,
+        "imagesFilled": 15,
+        "imagesSkipped": 2,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 22,
+        "skippedGtinConflict": 23,
         "samples": [
           {
             "score": 63.0,
@@ -451,7 +455,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-07T21:26:15.282973+00:00",
+      "bakedAt": "2026-09-08T00:55:23.724912+00:00",
       "line": "neca",
       "dryRun": false,
       "mephitsuCount": 1493,
@@ -463,29 +467,30 @@
       },
       "before": {
         "total": 928,
-        "withSku": 721,
-        "withGtin": 354,
+        "withSku": 697,
+        "withGtin": 330,
         "withListingPrimary": 367,
-        "withImage": 756,
-        "emptySku": 207,
-        "emptyImage": 172
+        "withImage": 727,
+        "emptySku": 231,
+        "emptyImage": 201
       },
       "after": {
         "total": 928,
-        "withSku": 721,
-        "withGtin": 354,
-        "withListingPrimary": 367,
-        "withImage": 757,
-        "emptySku": 207,
-        "emptyImage": 171
+        "withSku": 703,
+        "withGtin": 337,
+        "withListingPrimary": 366,
+        "withImage": 744,
+        "emptySku": 225,
+        "emptyImage": 184
       },
       "apply": {
-        "matched": 253,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
-        "imagesFilled": 1,
-        "aliasesAttached": 0,
-        "skippedGtinConflict": 22,
+        "matched": 234,
+        "gtinAssigned": 7,
+        "gtinUpgraded": 1,
+        "imagesFilled": 17,
+        "imagesSkipped": 0,
+        "aliasesAttached": 1,
+        "skippedGtinConflict": 21,
         "samples": [
           {
             "score": 60.0,
@@ -563,7 +568,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-07T21:26:33.077743+00:00",
+      "bakedAt": "2026-09-08T00:55:41.960942+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -578,24 +583,25 @@
         "withSku": 2365,
         "withGtin": 131,
         "withListingPrimary": 2234,
-        "withImage": 2503,
+        "withImage": 2501,
         "emptySku": 425,
-        "emptyImage": 287
+        "emptyImage": 289
       },
       "after": {
         "total": 2790,
         "withSku": 2365,
         "withGtin": 131,
         "withListingPrimary": 2234,
-        "withImage": 2506,
+        "withImage": 2501,
         "emptySku": 425,
-        "emptyImage": 284
+        "emptyImage": 289
       },
       "apply": {
-        "matched": 129,
+        "matched": 115,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 3,
+        "imagesFilled": 0,
+        "imagesSkipped": 3,
         "aliasesAttached": 0,
         "skippedGtinConflict": 12,
         "samples": [
@@ -642,7 +648,7 @@
             "mephitsu": "Baxter Stockman",
             "wave": "TMNT Series 1",
             "sku": null,
-            "image": true
+            "image": false
           },
           {
             "score": 58.0,
@@ -675,7 +681,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-07T21:26:34.034237+00:00",
+      "bakedAt": "2026-09-08T00:55:42.942201+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -690,24 +696,25 @@
         "withSku": 22,
         "withGtin": 2,
         "withListingPrimary": 20,
-        "withImage": 38,
+        "withImage": 41,
         "emptySku": 80,
-        "emptyImage": 64
+        "emptyImage": 61
       },
       "after": {
         "total": 102,
         "withSku": 22,
         "withGtin": 2,
         "withListingPrimary": 20,
-        "withImage": 57,
+        "withImage": 41,
         "emptySku": 80,
-        "emptyImage": 45
+        "emptyImage": 61
       },
       "apply": {
         "matched": 53,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 19,
+        "imagesFilled": 0,
+        "imagesSkipped": 16,
         "aliasesAttached": 0,
         "skippedGtinConflict": 0,
         "samples": [
@@ -736,7 +743,7 @@
             "mephitsu": "She-Hulk",
             "wave": "Wizard World (Fans Choice)",
             "sku": null,
-            "image": true
+            "image": false
           },
           {
             "score": 36.5,
@@ -754,7 +761,7 @@
             "mephitsu": "Symbiote Spider-Man",
             "wave": "General",
             "sku": null,
-            "image": true
+            "image": false
           },
           {
             "score": 36.5,
@@ -772,7 +779,7 @@
             "mephitsu": "Silver Surfer",
             "wave": "General",
             "sku": null,
-            "image": true
+            "image": false
           },
           {
             "score": 36.5,
@@ -787,7 +794,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-07T21:26:39.435412+00:00",
+      "bakedAt": "2026-09-08T00:55:48.471095+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -799,27 +806,28 @@
       },
       "before": {
         "total": 146,
-        "withSku": 69,
-        "withGtin": 59,
+        "withSku": 67,
+        "withGtin": 57,
         "withListingPrimary": 10,
-        "withImage": 78,
-        "emptySku": 77,
-        "emptyImage": 68
+        "withImage": 73,
+        "emptySku": 79,
+        "emptyImage": 73
       },
       "after": {
         "total": 146,
-        "withSku": 69,
-        "withGtin": 59,
+        "withSku": 67,
+        "withGtin": 57,
         "withListingPrimary": 10,
-        "withImage": 78,
-        "emptySku": 77,
-        "emptyImage": 68
+        "withImage": 74,
+        "emptySku": 79,
+        "emptyImage": 72
       },
       "apply": {
         "matched": 43,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
+        "imagesFilled": 1,
+        "imagesSkipped": 1,
         "aliasesAttached": 0,
         "skippedGtinConflict": 2,
         "samples": [
@@ -899,7 +907,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-07T21:26:42.322686+00:00",
+      "bakedAt": "2026-09-08T00:55:51.540783+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,
@@ -932,6 +940,7 @@
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
         "imagesFilled": 0,
+        "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 0,
         "samples": []
