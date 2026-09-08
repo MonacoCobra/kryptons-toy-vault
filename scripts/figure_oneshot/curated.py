@@ -24,6 +24,7 @@ from figure_oneshot.curated_bbts_wave8 import build_bbts_wave8
 from figure_oneshot.curated_bbts_wave9 import build_bbts_wave9
 from figure_oneshot.curated_bbts_wave10 import build_bbts_wave10
 from figure_oneshot.curated_mattel_dc_gap import build_mattel_dc_gap
+from figure_oneshot.curated_mcfarlane_dc_gap import build_mcfarlane_dc_gap
 
 FLOOR = "1980-01-01"
 
@@ -1921,6 +1922,7 @@ def build_curated() -> list[dict]:
     # DC Direct Icons + classic 1998-2012 densify
     rows += build_dcdirect()
     rows += build_mattel_dc_gap()
+    rows += build_mcfarlane_dc_gap()
 
     # Takara Tomy Transformers MPG
     rows += build_mpg()
