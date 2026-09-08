@@ -1,6 +1,6 @@
 {
   "afterUpc": 2472,
-  "beforeUpc": 2179,
+  "beforeUpc": 2472,
   "details": [
     {
       "id": "val-xo2017-9",
@@ -13,11 +13,6 @@
       "issue": "8",
       "series": "X-O Manowar",
       "status": "no_issue"
-    },
-    {
-      "gcdIssue": "https://www.comics.org/api/issue/1978050/?format=json",
-      "id": "val-xo2017-7",
-      "status": "no_barcode"
     },
     {
       "id": "val-xo2017-26",
@@ -470,121 +465,6 @@
       "status": "no_issue"
     },
     {
-      "id": "su-bom2018-9",
-      "status": "gcd_upc",
-      "upc": "76194135671600911"
-    },
-    {
-      "id": "su-bom2018-8",
-      "status": "gcd_upc",
-      "upc": "76194135671600811"
-    },
-    {
-      "id": "su-bom2018-7",
-      "status": "gcd_upc",
-      "upc": "76194135671600711"
-    },
-    {
-      "id": "su-bom2018-6",
-      "status": "gcd_upc",
-      "upc": "76194135671600611"
-    },
-    {
-      "id": "su-bom2018-5",
-      "status": "gcd_upc",
-      "upc": "76194135671600511"
-    },
-    {
-      "id": "su-bom2018-4",
-      "status": "gcd_upc",
-      "upc": "76194135671600411"
-    },
-    {
-      "id": "su-bom2018-3",
-      "status": "gcd_upc",
-      "upc": "76194135671600311"
-    },
-    {
-      "id": "su-bom2018-23",
-      "status": "gcd_upc",
-      "upc": "76194135671602311"
-    },
-    {
-      "id": "su-bom2018-22",
-      "status": "gcd_upc",
-      "upc": "76194135671602211"
-    },
-    {
-      "id": "su-bom2018-21",
-      "status": "gcd_upc",
-      "upc": "76194135671602111"
-    },
-    {
-      "id": "su-bom2018-20",
-      "status": "gcd_upc",
-      "upc": "76194135671602011"
-    },
-    {
-      "id": "su-bom2018-2",
-      "status": "gcd_upc",
-      "upc": "76194135671600211"
-    },
-    {
-      "id": "su-bom2018-19",
-      "status": "gcd_upc",
-      "upc": "76194135671601911"
-    },
-    {
-      "id": "su-bom2018-18",
-      "status": "gcd_upc",
-      "upc": "76194135671601811"
-    },
-    {
-      "id": "su-bom2018-17",
-      "status": "gcd_upc",
-      "upc": "76194135671601711"
-    },
-    {
-      "id": "su-bom2018-16",
-      "status": "gcd_upc",
-      "upc": "76194135671601611"
-    },
-    {
-      "id": "su-bom2018-15",
-      "status": "gcd_upc",
-      "upc": "76194135671601511"
-    },
-    {
-      "id": "su-bom2018-14",
-      "status": "gcd_upc",
-      "upc": "76194135671601411"
-    },
-    {
-      "id": "su-bom2018-13",
-      "status": "gcd_upc",
-      "upc": "76194135671601311"
-    },
-    {
-      "id": "su-bom2018-12",
-      "status": "gcd_upc",
-      "upc": "76194135671601211"
-    },
-    {
-      "id": "su-bom2018-11",
-      "status": "gcd_upc",
-      "upc": "76194135671601111"
-    },
-    {
-      "id": "su-bom2018-10",
-      "status": "gcd_upc",
-      "upc": "76194135671601011"
-    },
-    {
-      "id": "su-bom2018-1",
-      "status": "gcd_upc",
-      "upc": "76194135671600111"
-    },
-    {
       "id": "mv-ya-2013-9",
       "series": "Young Avengers",
       "status": "no_series",
@@ -673,17 +553,245 @@
       "series": "Young Avengers",
       "status": "no_series",
       "year": 2013
+    },
+    {
+      "id": "mv-ya-2005-9",
+      "series": "Young Avengers",
+      "status": "no_series",
+      "year": 2005
+    },
+    {
+      "id": "mv-ya-2005-8",
+      "series": "Young Avengers",
+      "status": "no_series",
+      "year": 2005
+    },
+    {
+      "id": "mv-ya-2005-7",
+      "series": "Young Avengers",
+      "status": "no_series",
+      "year": 2005
+    },
+    {
+      "id": "mv-ya-2005-6",
+      "series": "Young Avengers",
+      "status": "no_series",
+      "year": 2005
+    },
+    {
+      "id": "mv-ya-2005-5",
+      "series": "Young Avengers",
+      "status": "no_series",
+      "year": 2005
+    },
+    {
+      "id": "mv-ya-2005-4",
+      "series": "Young Avengers",
+      "status": "no_series",
+      "year": 2005
+    },
+    {
+      "id": "mv-ya-2005-3",
+      "series": "Young Avengers",
+      "status": "no_series",
+      "year": 2005
+    },
+    {
+      "id": "mv-ya-2005-2",
+      "series": "Young Avengers",
+      "status": "no_series",
+      "year": 2005
+    },
+    {
+      "id": "mv-ya-2005-12",
+      "series": "Young Avengers",
+      "status": "no_series",
+      "year": 2005
+    },
+    {
+      "id": "mv-ya-2005-11",
+      "series": "Young Avengers",
+      "status": "no_series",
+      "year": 2005
+    },
+    {
+      "id": "mv-ya-2005-10",
+      "series": "Young Avengers",
+      "status": "no_series",
+      "year": 2005
+    },
+    {
+      "id": "mv-ya-2005-1",
+      "series": "Young Avengers",
+      "status": "no_series",
+      "year": 2005
+    },
+    {
+      "id": "mv-xmenred-2022-9",
+      "series": "X-Men: Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-8",
+      "series": "X-Men: Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-7",
+      "series": "X-Men: Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-6",
+      "series": "X-Men: Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-5",
+      "series": "X-Men: Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-4",
+      "series": "X-Men: Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-3",
+      "series": "X-Men: Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-2",
+      "series": "X-Men: Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-12",
+      "series": "X-Men: Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-11",
+      "series": "X-Men: Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-10",
+      "series": "X-Men: Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-1",
+      "series": "X-Men: Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmen-2024-9",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2024
+    },
+    {
+      "id": "mv-xmen-2024-8",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2024
+    },
+    {
+      "id": "mv-xmen-2024-7",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2024
+    },
+    {
+      "id": "mv-xmen-2024-6",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2024
+    },
+    {
+      "id": "mv-xmen-2024-5",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2024
+    },
+    {
+      "id": "mv-xmen-2024-4",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2024
+    },
+    {
+      "id": "mv-xmen-2024-3",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2024
+    },
+    {
+      "id": "mv-xmen-2024-25",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2024
+    },
+    {
+      "id": "mv-xmen-2024-24",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2024
+    },
+    {
+      "id": "mv-xmen-2024-23",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2024
+    },
+    {
+      "id": "mv-xmen-2024-22",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2024
+    },
+    {
+      "id": "mv-xmen-2024-21",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2024
+    },
+    {
+      "id": "mv-xmen-2024-20",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2024
+    },
+    {
+      "id": "mv-xmen-2024-2",
+      "series": "X-Men",
+      "status": "no_series",
+      "year": 2024
     }
   ],
   "dryRun": false,
-  "errors": 34,
-  "finishedAt": "2026-09-08T07:36:40Z",
+  "errors": 20,
+  "finishedAt": "2026-09-08T11:54:08Z",
   "limit": 150,
   "minYear": 2005,
-  "noBarcode": 1,
+  "noBarcode": 0,
   "noIssue": 34,
-  "noSeries": 58,
+  "noSeries": 96,
   "skippedExisting": 0,
-  "startedAt": "2026-09-08T07:36:40Z",
-  "upcFilled": 23
+  "startedAt": "2026-09-08T11:54:08Z",
+  "upcFilled": 0
 }
