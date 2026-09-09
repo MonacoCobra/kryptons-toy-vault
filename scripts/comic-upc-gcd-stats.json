@@ -1,6 +1,6 @@
 {
-  "afterUpc": 3163,
-  "beforeUpc": 2994,
+  "afterUpc": 3296,
+  "beforeUpc": 3203,
   "details": [
     {
       "id": "val-xo2017-9",
@@ -13,11 +13,6 @@
       "issue": "8",
       "series": "X-O Manowar",
       "status": "no_issue"
-    },
-    {
-      "gcdIssue": "https://www.comics.org/api/issue/1978050/?format=json",
-      "id": "val-xo2017-7",
-      "status": "no_barcode"
     },
     {
       "id": "val-xo2017-26",
@@ -416,49 +411,54 @@
       "year": 2024
     },
     {
-      "id": "sw-vader2017-9",
-      "status": "gcd_upc",
-      "upc": "75960608666500911"
-    },
-    {
-      "id": "sw-vader2017-8",
-      "status": "gcd_upc",
-      "upc": "75960608666500811"
-    },
-    {
-      "id": "sw-vader2017-7",
-      "status": "gcd_upc",
-      "upc": "75960608666500711"
-    },
-    {
-      "id": "sw-vader2017-6",
-      "status": "gcd_upc",
-      "upc": "75960608666500611"
-    },
-    {
-      "id": "sw-vader2017-5",
-      "status": "gcd_upc",
-      "upc": "75960608666500511"
-    },
-    {
-      "id": "sw-vader2017-4",
-      "status": "gcd_upc",
-      "upc": "75960608666500411"
-    },
-    {
-      "id": "sw-vader2017-3",
-      "status": "gcd_upc",
-      "upc": "75960608666500311"
-    },
-    {
       "id": "sw-vader2017-25",
       "issue": "25",
       "status": "variant_only"
     },
     {
-      "id": "sw-vader2017-24",
+      "id": "sw-vader2017-23",
+      "issue": "23",
+      "status": "variant_only"
+    },
+    {
+      "id": "sw-vader2017-22",
+      "issue": "22",
+      "status": "variant_only"
+    },
+    {
+      "id": "sw-vader2017-21",
+      "issue": "21",
+      "status": "variant_only"
+    },
+    {
+      "id": "sw-vader2017-20",
       "status": "gcd_upc",
-      "upc": "75960608666502411"
+      "upc": "75960608666502011"
+    },
+    {
+      "id": "sw-vader2017-2",
+      "status": "gcd_upc",
+      "upc": "75960608666500211"
+    },
+    {
+      "id": "sw-vader2017-19",
+      "issue": "19",
+      "status": "variant_only"
+    },
+    {
+      "id": "sw-vader2017-18",
+      "issue": "18",
+      "status": "variant_only"
+    },
+    {
+      "id": "sw-vader2017-17",
+      "issue": "17",
+      "status": "variant_only"
+    },
+    {
+      "id": "sw-vader2017-16",
+      "issue": "16",
+      "status": "variant_only"
     },
     {
       "id": "sw-vader2017-1",
@@ -520,116 +520,6 @@
       "status": "no_issue"
     },
     {
-      "id": "mv-ya-2013-9",
-      "issue": "9",
-      "status": "variant_only"
-    },
-    {
-      "id": "mv-ya-2013-8",
-      "issue": "8",
-      "status": "variant_only"
-    },
-    {
-      "id": "mv-ya-2013-7",
-      "issue": "7",
-      "status": "variant_only"
-    },
-    {
-      "id": "mv-ya-2013-6",
-      "issue": "6",
-      "status": "variant_only"
-    },
-    {
-      "id": "mv-ya-2013-5",
-      "issue": "5",
-      "status": "variant_only"
-    },
-    {
-      "id": "mv-ya-2013-4",
-      "issue": "4",
-      "status": "variant_only"
-    },
-    {
-      "id": "mv-ya-2013-3",
-      "issue": "3",
-      "status": "variant_only"
-    },
-    {
-      "id": "mv-ya-2013-2",
-      "issue": "2",
-      "status": "variant_only"
-    },
-    {
-      "id": "mv-ya-2013-15",
-      "status": "gcd_upc",
-      "upc": "75960607918601511"
-    },
-    {
-      "id": "mv-ya-2013-14",
-      "status": "gcd_upc",
-      "upc": "75960607918601411"
-    },
-    {
-      "id": "mv-ya-2013-13",
-      "status": "gcd_upc",
-      "upc": "75960607918601311"
-    },
-    {
-      "id": "mv-ya-2013-12",
-      "status": "gcd_upc",
-      "upc": "75960607918601211"
-    },
-    {
-      "id": "mv-ya-2013-11",
-      "issue": "11",
-      "status": "variant_only"
-    },
-    {
-      "id": "mv-ya-2013-10",
-      "issue": "10",
-      "status": "variant_only"
-    },
-    {
-      "id": "mv-ya-2013-1",
-      "issue": "1",
-      "status": "variant_only"
-    },
-    {
-      "id": "mv-ya-2005-9",
-      "issue": "9",
-      "status": "variant_only"
-    },
-    {
-      "id": "mv-ya-2005-8",
-      "issue": "8",
-      "status": "variant_only"
-    },
-    {
-      "id": "mv-ya-2005-7",
-      "issue": "7",
-      "status": "variant_only"
-    },
-    {
-      "id": "mv-ya-2005-6",
-      "status": "gcd_upc",
-      "upc": "75960605548700611"
-    },
-    {
-      "id": "mv-ya-2005-5",
-      "status": "gcd_upc",
-      "upc": "75960605548700511"
-    },
-    {
-      "id": "mv-ya-2005-4",
-      "status": "gcd_upc",
-      "upc": "75960605548700411"
-    },
-    {
-      "id": "mv-ya-2005-3",
-      "status": "gcd_upc",
-      "upc": "75960605548700311"
-    },
-    {
       "id": "mv-xmenred-2022-9",
       "issue": "9",
       "series": "X-Men: Red",
@@ -660,6 +550,42 @@
       "status": "no_issue"
     },
     {
+      "id": "mv-xmenred-2022-18",
+      "series": "X-Men Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-17",
+      "series": "X-Men Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-16",
+      "series": "X-Men Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-15",
+      "series": "X-Men Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-14",
+      "series": "X-Men Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
+      "id": "mv-xmenred-2022-13",
+      "series": "X-Men Red",
+      "status": "no_series",
+      "year": 2022
+    },
+    {
       "id": "mv-xmenred-2022-12",
       "issue": "12",
       "series": "X-Men: Red",
@@ -678,51 +604,102 @@
       "status": "no_issue"
     },
     {
+      "id": "mv-xmen-2024-10",
+      "status": "gcd_upc",
+      "upc": "75960620920001011"
+    },
+    {
       "id": "mv-xmen-2021-9",
-      "series": "X-Men",
-      "status": "no_series",
-      "year": 2021
+      "status": "gcd_upc",
+      "upc": "75650609999300911"
     },
     {
       "id": "mv-xmen-2021-8",
-      "series": "X-Men",
-      "status": "no_series",
-      "year": 2021
+      "status": "gcd_upc",
+      "upc": "75960609999300821"
     },
     {
       "id": "mv-xmen-2021-7",
-      "series": "X-Men",
-      "status": "no_series",
-      "year": 2021
+      "status": "gcd_upc",
+      "upc": "75960609999300711"
     },
     {
       "id": "mv-xmen-2021-6",
-      "series": "X-Men",
-      "status": "no_series",
-      "year": 2021
+      "status": "gcd_upc",
+      "upc": "75960609999300611"
     },
     {
       "id": "mv-xmen-2021-5",
-      "series": "X-Men",
-      "status": "no_series",
-      "year": 2021
+      "status": "gcd_upc",
+      "upc": "75960609999300511"
     },
     {
       "id": "mv-xmen-2021-4",
+      "status": "gcd_upc",
+      "upc": "75960609999300411"
+    },
+    {
+      "id": "mv-xmen-2021-3",
+      "issue": "3",
       "series": "X-Men",
-      "status": "no_series",
-      "year": 2021
+      "status": "no_issue"
+    },
+    {
+      "id": "mv-xmen-2021-20",
+      "status": "gcd_upc",
+      "upc": "75960609999302011"
+    },
+    {
+      "id": "mv-xmen-2021-2",
+      "issue": "2",
+      "series": "X-Men",
+      "status": "no_issue"
+    },
+    {
+      "id": "mv-xmen-2021-19",
+      "status": "gcd_upc",
+      "upc": "75960609999301911"
+    },
+    {
+      "id": "mv-xmen-2021-18",
+      "status": "gcd_upc",
+      "upc": "75960609999301811"
+    },
+    {
+      "id": "mv-xmen-2021-17",
+      "status": "gcd_upc",
+      "upc": "75960609999301711"
+    },
+    {
+      "id": "mv-xmen-2021-16",
+      "status": "gcd_upc",
+      "upc": "75960609999301611"
+    },
+    {
+      "id": "mv-xmen-2021-15",
+      "status": "gcd_upc",
+      "upc": "75960609999301511"
+    },
+    {
+      "id": "mv-xmen-2021-14",
+      "status": "gcd_upc",
+      "upc": "75960609999301411"
+    },
+    {
+      "id": "mv-xmen-2021-13",
+      "status": "gcd_upc",
+      "upc": "75960609999301311"
     }
   ],
   "dryRun": false,
-  "errors": 26,
-  "finishedAt": "2026-09-08T20:46:47Z",
+  "errors": 31,
+  "finishedAt": "2026-09-08T23:28:40Z",
   "limit": 150,
   "minYear": 2005,
-  "noBarcode": 17,
-  "noIssue": 42,
+  "noBarcode": 9,
+  "noIssue": 44,
   "noSeries": 49,
   "skippedExisting": 0,
-  "startedAt": "2026-09-08T20:46:47Z",
-  "upcFilled": 16
+  "startedAt": "2026-09-08T23:28:40Z",
+  "upcFilled": 17
 }
