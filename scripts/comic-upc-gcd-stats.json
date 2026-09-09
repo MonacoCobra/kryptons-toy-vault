@@ -1,6 +1,6 @@
 {
-  "afterUpc": 3296,
-  "beforeUpc": 3203,
+  "afterUpc": 3443,
+  "beforeUpc": 3296,
   "details": [
     {
       "id": "val-xo2017-9",
@@ -13,6 +13,11 @@
       "issue": "8",
       "series": "X-O Manowar",
       "status": "no_issue"
+    },
+    {
+      "gcdIssue": "https://www.comics.org/api/issue/1978050/?format=json",
+      "id": "val-xo2017-7",
+      "status": "no_barcode"
     },
     {
       "id": "val-xo2017-26",
@@ -411,61 +416,6 @@
       "year": 2024
     },
     {
-      "id": "sw-vader2017-25",
-      "issue": "25",
-      "status": "variant_only"
-    },
-    {
-      "id": "sw-vader2017-23",
-      "issue": "23",
-      "status": "variant_only"
-    },
-    {
-      "id": "sw-vader2017-22",
-      "issue": "22",
-      "status": "variant_only"
-    },
-    {
-      "id": "sw-vader2017-21",
-      "issue": "21",
-      "status": "variant_only"
-    },
-    {
-      "id": "sw-vader2017-20",
-      "status": "gcd_upc",
-      "upc": "75960608666502011"
-    },
-    {
-      "id": "sw-vader2017-2",
-      "status": "gcd_upc",
-      "upc": "75960608666500211"
-    },
-    {
-      "id": "sw-vader2017-19",
-      "issue": "19",
-      "status": "variant_only"
-    },
-    {
-      "id": "sw-vader2017-18",
-      "issue": "18",
-      "status": "variant_only"
-    },
-    {
-      "id": "sw-vader2017-17",
-      "issue": "17",
-      "status": "variant_only"
-    },
-    {
-      "id": "sw-vader2017-16",
-      "issue": "16",
-      "status": "variant_only"
-    },
-    {
-      "id": "sw-vader2017-1",
-      "issue": "1",
-      "status": "variant_only"
-    },
-    {
       "id": "su-lucifer2018-19",
       "issue": "19",
       "series": "Lucifer",
@@ -520,6 +470,11 @@
       "status": "no_issue"
     },
     {
+      "id": "mv-ya-2005-10",
+      "issue": "10",
+      "status": "variant_only"
+    },
+    {
       "id": "mv-xmenred-2022-9",
       "issue": "9",
       "series": "X-Men: Red",
@@ -551,39 +506,34 @@
     },
     {
       "id": "mv-xmenred-2022-18",
-      "series": "X-Men Red",
-      "status": "no_series",
-      "year": 2022
+      "status": "gcd_upc",
+      "upc": "75960620212601811"
     },
     {
       "id": "mv-xmenred-2022-17",
+      "issue": "17",
       "series": "X-Men Red",
-      "status": "no_series",
-      "year": 2022
+      "status": "no_issue"
     },
     {
       "id": "mv-xmenred-2022-16",
-      "series": "X-Men Red",
-      "status": "no_series",
-      "year": 2022
+      "status": "gcd_upc",
+      "upc": "75960620212601611"
     },
     {
       "id": "mv-xmenred-2022-15",
-      "series": "X-Men Red",
-      "status": "no_series",
-      "year": 2022
+      "status": "gcd_upc",
+      "upc": "75960620212601511"
     },
     {
       "id": "mv-xmenred-2022-14",
-      "series": "X-Men Red",
-      "status": "no_series",
-      "year": 2022
+      "status": "gcd_upc",
+      "upc": "75960620212601411"
     },
     {
       "id": "mv-xmenred-2022-13",
-      "series": "X-Men Red",
-      "status": "no_series",
-      "year": 2022
+      "status": "gcd_upc",
+      "upc": "75960620212601311"
     },
     {
       "id": "mv-xmenred-2022-12",
@@ -604,39 +554,39 @@
       "status": "no_issue"
     },
     {
-      "id": "mv-xmen-2024-10",
-      "status": "gcd_upc",
-      "upc": "75960620920001011"
+      "id": "mv-xmen-2024-9",
+      "issue": "9",
+      "status": "variant_only"
     },
     {
-      "id": "mv-xmen-2021-9",
+      "id": "mv-xmen-2024-20",
       "status": "gcd_upc",
-      "upc": "75650609999300911"
+      "upc": "75960620920002011"
     },
     {
-      "id": "mv-xmen-2021-8",
+      "id": "mv-xmen-2024-2",
       "status": "gcd_upc",
-      "upc": "75960609999300821"
+      "upc": "75960620920000211"
     },
     {
-      "id": "mv-xmen-2021-7",
+      "id": "mv-xmen-2024-19",
       "status": "gcd_upc",
-      "upc": "75960609999300711"
+      "upc": "75960620920001911"
     },
     {
-      "id": "mv-xmen-2021-6",
+      "id": "mv-xmen-2024-18",
       "status": "gcd_upc",
-      "upc": "75960609999300611"
+      "upc": "75960620920001811"
     },
     {
-      "id": "mv-xmen-2021-5",
+      "id": "mv-xmen-2024-17",
       "status": "gcd_upc",
-      "upc": "75960609999300511"
+      "upc": "75960620920001711"
     },
     {
-      "id": "mv-xmen-2021-4",
+      "id": "mv-xmen-2024-16",
       "status": "gcd_upc",
-      "upc": "75960609999300411"
+      "upc": "75960620920001611"
     },
     {
       "id": "mv-xmen-2021-3",
@@ -645,61 +595,96 @@
       "status": "no_issue"
     },
     {
-      "id": "mv-xmen-2021-20",
-      "status": "gcd_upc",
-      "upc": "75960609999302011"
-    },
-    {
       "id": "mv-xmen-2021-2",
       "issue": "2",
       "series": "X-Men",
       "status": "no_issue"
     },
     {
-      "id": "mv-xmen-2021-19",
+      "id": "mv-xmen-2021-10",
       "status": "gcd_upc",
-      "upc": "75960609999301911"
+      "upc": "75960609999301011"
     },
     {
-      "id": "mv-xmen-2021-18",
+      "id": "mv-xmen-2019-9",
       "status": "gcd_upc",
-      "upc": "75960609999301811"
+      "upc": "75960609466000911"
     },
     {
-      "id": "mv-xmen-2021-17",
+      "id": "mv-xmen-2019-8",
       "status": "gcd_upc",
-      "upc": "75960609999301711"
+      "upc": "75960609466000811"
     },
     {
-      "id": "mv-xmen-2021-16",
+      "id": "mv-xmen-2019-7",
       "status": "gcd_upc",
-      "upc": "75960609999301611"
+      "upc": "75960609466000711"
     },
     {
-      "id": "mv-xmen-2021-15",
+      "id": "mv-xmen-2019-6",
       "status": "gcd_upc",
-      "upc": "75960609999301511"
+      "upc": "75960609466000611"
     },
     {
-      "id": "mv-xmen-2021-14",
+      "id": "mv-xmen-2019-5",
       "status": "gcd_upc",
-      "upc": "75960609999301411"
+      "upc": "75960609466000511"
     },
     {
-      "id": "mv-xmen-2021-13",
+      "id": "mv-xmen-2019-4",
       "status": "gcd_upc",
-      "upc": "75960609999301311"
+      "upc": "75960609466000411"
+    },
+    {
+      "id": "mv-xmen-2019-3",
+      "status": "gcd_upc",
+      "upc": "75960609466000311"
+    },
+    {
+      "id": "mv-xmen-2019-21",
+      "status": "gcd_upc",
+      "upc": "75960609466002111"
+    },
+    {
+      "id": "mv-xmen-2019-20",
+      "status": "gcd_upc",
+      "upc": "75960609466002011"
+    },
+    {
+      "id": "mv-xmen-2019-2",
+      "status": "gcd_upc",
+      "upc": "75960609466000211"
+    },
+    {
+      "id": "mv-xmen-2019-19",
+      "status": "gcd_upc",
+      "upc": "75960609466001911"
+    },
+    {
+      "id": "mv-xmen-2019-18",
+      "status": "gcd_upc",
+      "upc": "75960609466001811"
+    },
+    {
+      "id": "mv-xmen-2019-17",
+      "status": "gcd_upc",
+      "upc": "75960609466001711"
+    },
+    {
+      "id": "mv-xmen-2019-16",
+      "status": "gcd_upc",
+      "upc": "75960609466001611"
     }
   ],
   "dryRun": false,
-  "errors": 31,
-  "finishedAt": "2026-09-08T23:28:40Z",
+  "errors": 33,
+  "finishedAt": "2026-09-09T01:28:50Z",
   "limit": 150,
   "minYear": 2005,
-  "noBarcode": 9,
-  "noIssue": 44,
-  "noSeries": 49,
+  "noBarcode": 3,
+  "noIssue": 45,
+  "noSeries": 43,
   "skippedExisting": 0,
-  "startedAt": "2026-09-08T23:28:40Z",
-  "upcFilled": 17
+  "startedAt": "2026-09-09T01:28:50Z",
+  "upcFilled": 26
 }
