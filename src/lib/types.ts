@@ -112,7 +112,16 @@ export type CompanyId =
   | "nanmu"
   | "yolopark"
   | "soskill"
-  | "vtoys";
+  | "vtoys"
+  | "shushupapa"
+  | "lewin"
+  | "djs"
+  | "uniquetoys"
+  | "toyworld"
+  | "perfecteffect"
+  | "robotparadise"
+  | "apctoys"
+  | "moonstudio";
 
 export type ItemKind = "figure" | "kit";
 
