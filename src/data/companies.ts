@@ -1117,6 +1117,15 @@ export const COMPANIES: Company[] = [
     accent: "#6d6875",
   },
   {
+    id: "gong",
+    name: "Gong Studio",
+    short: "Gong",
+    blurb: "Diecast mecha action figures — Neon Genesis Evangelion Unit-01 and collabs.",
+    founded: "2025",
+    hq: "China",
+    accent: "#7b2cbf",
+  },
+  {
     id: "valaverse",
     name: "Valaverse",
     short: "Valaverse",

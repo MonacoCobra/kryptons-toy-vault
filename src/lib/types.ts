@@ -121,7 +121,8 @@ export type CompanyId =
   | "perfecteffect"
   | "robotparadise"
   | "apctoys"
-  | "moonstudio";
+  | "moonstudio"
+  | "gong";
 
 export type ItemKind = "figure" | "kit";
 
