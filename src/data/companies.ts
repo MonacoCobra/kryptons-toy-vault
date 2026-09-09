@@ -1120,7 +1120,7 @@ export const COMPANIES: Company[] = [
     id: "gong",
     name: "Gong Studio",
     short: "Gong",
-    blurb: "Diecast mecha action figures — Neon Genesis Evangelion Unit-01 and collabs.",
+    blurb: "Pop Mart × Gong Studio — DC Kingdom Come / Hush 1/12 cloth AFs plus Evangelion diecast.",
     founded: "2025",
     hq: "China",
     accent: "#7b2cbf",

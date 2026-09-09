@@ -31171,6 +31171,39 @@
     "hsb-red-bumblebee-g1": [
       "5010993828944",
       "id:hsb-red-bumblebee-g1"
+    ],
+    "gong-kc-superman": [
+      "GNG-0001RG",
+      "GONG-003",
+      "GONG-0001RG",
+      "id:gong-kc-superman",
+      "6941848276711"
+    ],
+    "gong-kc-superman-excl": [
+      "GNG-0001SP",
+      "GONG-0001SP",
+      "id:gong-kc-superman-excl"
+    ],
+    "gong-kc-shazam": [
+      "GNG-0004RG",
+      "GONG-004",
+      "GONG-0004RG",
+      "id:gong-kc-shazam"
+    ],
+    "gong-kc-shazam-excl": [
+      "GNG-0004SP",
+      "GONG-0004SP",
+      "id:gong-kc-shazam-excl"
+    ],
+    "gong-hush-batman": [
+      "GNG-0014",
+      "GONG-0014",
+      "id:gong-hush-batman"
+    ],
+    "gong-hush-superman": [
+      "GNG-0016",
+      "GONG-0016",
+      "id:gong-hush-superman"
     ]
   },
   "aliasToFigureId": {
@@ -47946,7 +47979,28 @@
     "3Z1151": "tz-mdlx-g2-combat-megatron",
     "id:tz-mdlx-g2-combat-megatron": "tz-mdlx-g2-combat-megatron",
     "5010993828944": "hsb-red-bumblebee-g1",
-    "id:hsb-red-bumblebee-g1": "hsb-red-bumblebee-g1"
+    "id:hsb-red-bumblebee-g1": "hsb-red-bumblebee-g1",
+    "GNG-0001RG": "gong-kc-superman",
+    "GONG-003": "gong-kc-superman",
+    "GONG-0001RG": "gong-kc-superman",
+    "id:gong-kc-superman": "gong-kc-superman",
+    "6941848276711": "gong-kc-superman",
+    "GNG-0001SP": "gong-kc-superman-excl",
+    "GONG-0001SP": "gong-kc-superman-excl",
+    "id:gong-kc-superman-excl": "gong-kc-superman-excl",
+    "GNG-0004RG": "gong-kc-shazam",
+    "GONG-004": "gong-kc-shazam",
+    "GONG-0004RG": "gong-kc-shazam",
+    "id:gong-kc-shazam": "gong-kc-shazam",
+    "GNG-0004SP": "gong-kc-shazam-excl",
+    "GONG-0004SP": "gong-kc-shazam-excl",
+    "id:gong-kc-shazam-excl": "gong-kc-shazam-excl",
+    "GNG-0014": "gong-hush-batman",
+    "GONG-0014": "gong-hush-batman",
+    "id:gong-hush-batman": "gong-hush-batman",
+    "GNG-0016": "gong-hush-superman",
+    "GONG-0016": "gong-hush-superman",
+    "id:gong-hush-superman": "gong-hush-superman"
   },
   "collapsed": [
     {
@@ -48251,7 +48305,7 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-09-09T01:44:17.952754+00:00",
+  "updatedAt": "2026-09-09T02:45:21.705996+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,

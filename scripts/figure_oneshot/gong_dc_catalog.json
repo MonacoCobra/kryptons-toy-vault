@@ -1,0 +1,93 @@
+{
+  "source": "inject-gong-dc",
+  "verifiedAt": "2026-09-09",
+  "notes": "Pop Mart × Gong Studio DC 1/12 AFs. Identity: INS Hobby / Pop Mart / Toyark / Dragon's Chest. GTIN only when barcode verified. inshobby lists Hush as 1:10; official Pop Mart / Toyark = 1/12 (~17.5 cm).",
+  "items": [
+    {
+      "id": "gong-kc-superman",
+      "name": "Superman",
+      "subtitle": "Kingdom Come — Standard",
+      "line": "Gong Studio Kingdom Come",
+      "sku": "6941848276711",
+      "aliases": ["GNG-0001RG", "GONG-003", "GONG-0001RG"],
+      "msrp": 89.99,
+      "release": "2024-07-01",
+      "demand": 1.55,
+      "scale": "1:12",
+      "image": "https://cdn.shopify.com/s/files/1/0244/0681/8897/files/gong-1-12-superman-kingdom-come-action-figure-53616.jpg?v=1758197717",
+      "tags": ["dc", "superman", "kingdom-come", "fabric", "pop-mart"]
+    },
+    {
+      "id": "gong-kc-superman-excl",
+      "name": "Superman",
+      "subtitle": "Kingdom Come — Exclusive (extra head & hands)",
+      "line": "Gong Studio Kingdom Come",
+      "sku": null,
+      "aliases": ["GNG-0001SP", "GONG-0001SP"],
+      "msrp": 104.99,
+      "release": "2024-07-01",
+      "demand": 1.65,
+      "scale": "1:12",
+      "exclusive": "Pop Mart Exclusive",
+      "image": "https://cdn.shopify.com/s/files/1/0244/0681/8897/files/gong-1-12-superman-kingdom-come-action-figure-91793.jpg?v=1758197724",
+      "tags": ["dc", "superman", "kingdom-come", "fabric", "pop-mart", "exclusive"]
+    },
+    {
+      "id": "gong-kc-shazam",
+      "name": "Shazam",
+      "subtitle": "Kingdom Come — Standard",
+      "line": "Gong Studio Kingdom Come",
+      "sku": null,
+      "aliases": ["GNG-0004RG", "GONG-004", "GONG-0004RG"],
+      "msrp": 94.99,
+      "release": "2024-11-01",
+      "demand": 1.5,
+      "scale": "1:12",
+      "image": "https://cdn.shopify.com/s/files/1/0244/0681/8897/files/gong-1-12-shazam-kingdom-come-action-figure-1.jpg?v=1766613432",
+      "tags": ["dc", "shazam", "kingdom-come", "fabric", "pop-mart"]
+    },
+    {
+      "id": "gong-kc-shazam-excl",
+      "name": "Shazam",
+      "subtitle": "Kingdom Come — Exclusive / Deluxe (smiling head & extra hands)",
+      "line": "Gong Studio Kingdom Come",
+      "sku": null,
+      "aliases": ["GNG-0004SP", "GONG-0004SP"],
+      "msrp": 109.99,
+      "release": "2024-11-01",
+      "demand": 1.6,
+      "scale": "1:12",
+      "exclusive": "Pop Mart Exclusive",
+      "image": "https://cdn.shopify.com/s/files/1/0244/0681/8897/files/gong-1-12-shazam-kingdom-come-action-figure-6.jpg?v=1766613433",
+      "tags": ["dc", "shazam", "kingdom-come", "fabric", "pop-mart", "exclusive"]
+    },
+    {
+      "id": "gong-hush-batman",
+      "name": "Batman",
+      "subtitle": "Batman: Hush — Jim Lee aesthetic",
+      "line": "Gong Studio Hush",
+      "sku": null,
+      "aliases": ["GNG-0014", "GONG-0014"],
+      "msrp": 119.99,
+      "release": "2026-02-01",
+      "demand": 1.7,
+      "scale": "1:12",
+      "image": "https://prod-america-res.popmart.com/default/20251114_153722_281622____1_dc-batman-hush-collectible-action-figure_bjd_details_pop-mart-us_____1200x2112.jpg",
+      "tags": ["dc", "batman", "hush", "fabric", "pop-mart"]
+    },
+    {
+      "id": "gong-hush-superman",
+      "name": "Superman",
+      "subtitle": "Batman: Hush — Jim Lee aesthetic",
+      "line": "Gong Studio Hush",
+      "sku": null,
+      "aliases": ["GNG-0016", "GONG-0016"],
+      "msrp": 119.99,
+      "release": "2026-03-01",
+      "demand": 1.7,
+      "scale": "1:12",
+      "image": "https://prod-america-res.popmart.com/default/20260113_152520_846246____1_dc-batman-hush-superman-1-12-collectible-action-figure_bjd_details_pop-mart-us_____1200x2206.jpg",
+      "tags": ["dc", "superman", "hush", "fabric", "pop-mart"]
+    }
+  ]
+}
