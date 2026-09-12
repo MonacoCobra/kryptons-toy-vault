@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { Heart, Trash2 } from "lucide-react";
+import { ArrowLeft, ChevronRight, Heart, Trash2 } from "lucide-react";
 import { comicById, comicLabel, mergeComics } from "@/data/comics";
 import { AddComicDialog } from "@/components/add-comic-dialog";
 import { ComicCover } from "@/components/comic-cover";
@@ -9,6 +9,12 @@ import { MarketEstimate } from "@/components/market-estimate";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { libraryCatalogRows } from "@/lib/comic-catalog";
+import {
+  assignSeriesRunYears,
+  seriesBaseTitle,
+  seriesDisplayLabel,
+  seriesRunYearFor,
+} from "@/lib/comic-series";
 import { getComicVariants, indexComicsByFamily } from "@/lib/comic-variants";
 import { formatMonthYear, usd } from "@/lib/format";
 import { useComicLib, useEnsureComicLibrary, useLiveComics, useLiveDrop } from "@/lib/live-store";
@@ -34,6 +40,7 @@ function ComicDetail() {
     [extras, libraryRows],
   );
   const familyIndex = useMemo(() => indexComicsByFamily(catalog), [catalog]);
+  const yearById = useMemo(() => assignSeriesRunYears(catalog), [catalog]);
   const variants = useMemo(
     () => (comic ? getComicVariants(comic, catalog, familyIndex) : []),
     [comic, catalog, familyIndex],
@@ -86,9 +93,7 @@ function ComicDetail() {
 
       <div className="flex flex-col gap-6">
         <div>
-          <Link to="/comics" search={{ publisher: comic.publisher }} className="text-xs tracking-[0.2em] text-gold uppercase">
-            {comic.publisher}
-          </Link>
+          <ComicLadderCrumbs comic={comic} yearById={yearById} />
           <h1 className="mt-1 font-display text-4xl tracking-wide uppercase">{comicLabel(comic)}</h1>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">{comic.description}</p>
           <div className="mt-3 flex flex-wrap gap-2">
@@ -132,6 +137,41 @@ function ComicDetail() {
         <AddComicDialog comic={comic} open={edit} onOpenChange={setEdit} />
       </div>
     </main>
+  );
+}
+
+
+function ComicLadderCrumbs({
+  comic,
+  yearById,
+}: {
+  comic: NonNullable<ReturnType<typeof comicById>>;
+  yearById: Map<string, number>;
+}) {
+  const year = seriesRunYearFor(comic, yearById);
+  const title = seriesBaseTitle(comic.series);
+  return (
+    <nav aria-label="Comic breadcrumb" className="flex flex-wrap items-center gap-1 text-xs tracking-[0.2em] uppercase">
+      <Link to="/comics" search={{}} className="inline-flex items-center gap-1 text-gold hover:underline">
+        <ArrowLeft className="size-3" /> Comics
+      </Link>
+      <ChevronRight className="size-3 text-muted" />
+      <Link
+        to="/comics"
+        search={{ publisher: comic.publisher }}
+        className="text-gold hover:underline"
+      >
+        {comic.publisher}
+      </Link>
+      <ChevronRight className="size-3 text-muted" />
+      <Link
+        to="/comics"
+        search={{ publisher: comic.publisher, series: title, year }}
+        className="text-gold hover:underline"
+      >
+        {seriesDisplayLabel(title, year)}
+      </Link>
+    </nav>
   );
 }
 

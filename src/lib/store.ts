@@ -48,6 +48,8 @@ type Actions = {
   removeComic: (id: string) => void;
   toggleWantComic: (comicId: string) => void;
   addCustomComic: (comic: CustomComic) => void;
+  /** Remove a user custom title + any owned/wanted rows for it (never touches catalog). */
+  removeCustomComic: (customId: string) => void;
   addDisplay: (entry: Omit<DisplayPhoto, "id" | "addedAt"> & { id?: string; addedAt?: string }) => string;
   updateDisplay: (id: string, patch: Partial<DisplayPhoto>) => void;
   removeDisplay: (id: string) => void;
@@ -131,8 +133,16 @@ export const useVault = create<VaultState & Actions>()(
         }),
       removeComic: (id) =>
         set((s) => {
+          const victim = s.ownedComics[id];
           const { [id]: _, ...rest } = s.ownedComics;
-          return { ownedComics: rest };
+          const customId = victim?.custom?.id;
+          if (!customId) return { ownedComics: rest };
+          const stillUsed = Object.values(rest).some((o) => o.custom?.id === customId);
+          if (stillUsed) return { ownedComics: rest };
+          const { [customId]: __, ...customComics } = s.customComics;
+          const wanted = { ...s.wantedComics };
+          delete wanted[customId];
+          return { ownedComics: rest, customComics, wantedComics: wanted };
         }),
       toggleWantComic: (comicId) =>
         set((s) => {
@@ -151,6 +161,16 @@ export const useVault = create<VaultState & Actions>()(
         }),
       addCustomComic: (comic) =>
         set((s) => ({ customComics: { ...s.customComics, [comic.id]: comic } })),
+      removeCustomComic: (customId) =>
+        set((s) => {
+          const { [customId]: _c, ...customComics } = s.customComics;
+          const ownedComics = Object.fromEntries(
+            Object.entries(s.ownedComics).filter(([, o]) => o.custom?.id !== customId),
+          );
+          const wantedComics = { ...s.wantedComics };
+          delete wantedComics[customId];
+          return { customComics, ownedComics, wantedComics };
+        }),
       addDisplay: (entry) => {
         const id = entry.id ?? `display-${crypto.randomUUID()}`;
         set((s) => ({

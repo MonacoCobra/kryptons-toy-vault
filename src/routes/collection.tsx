@@ -1,5 +1,7 @@
 import { useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Trash2 } from "lucide-react";
+import { toast } from "sonner";
 import { COMIC_BY_ID, comicLabel } from "@/data/comics";
 import { FIGURE_BY_ID } from "@/data/figures";
 import { ComicCover } from "@/components/comic-cover";
@@ -24,6 +26,9 @@ function CollectionPage() {
   const liveFigures = useFigureExtras();
   const liveComics = useLiveComics();
   const clearVault = useVault((s) => s.clearVault);
+  const removeFigure = useVault((s) => s.removeFigure);
+  const removeComic = useVault((s) => s.removeComic);
+  const removeCustomComic = useVault((s) => s.removeCustomComic);
   const [tab, setTab] = useState<string | null>(null);
   const stats = summarizeVault({ ownedFigures, ownedComics }, { figures: liveFigures, comics: liveComics });
 
@@ -46,6 +51,16 @@ function CollectionPage() {
   );
 
   const activeTab = tab ?? (figures.length === 0 && comics.length > 0 ? "comics" : "figures");
+
+  function removeOwnedComic(ownedId: string, customId?: string) {
+    if (customId) {
+      removeCustomComic(customId);
+      toast.success("Custom title removed from your collection.");
+      return;
+    }
+    removeComic(ownedId);
+    toast.success("Issue removed from your vault.");
+  }
 
   return (
     <main className="flex flex-col gap-6">
@@ -106,11 +121,24 @@ function CollectionPage() {
                         {owned.photoDataUrl ? <Badge tone="ice">Photo</Badge> : null}
                       </div>
                     </div>
-                    <div className="text-right">
-                      <p className="tabular text-sm text-gold">{usd(est)}</p>
-                      <p className="tabular text-xs text-subtle">
-                        paid {owned.acquiredPrice != null ? usd(owned.acquiredPrice) : "—"}
-                      </p>
+                    <div className="flex flex-col items-end gap-2">
+                      <div className="text-right">
+                        <p className="tabular text-sm text-gold">{usd(est)}</p>
+                        <p className="tabular text-xs text-subtle">
+                          paid {owned.acquiredPrice != null ? usd(owned.acquiredPrice) : "—"}
+                        </p>
+                      </div>
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        aria-label={`Remove ${figure.name}`}
+                        onClick={() => {
+                          removeFigure(owned.figureId);
+                          toast.success("Figure removed from your vault.");
+                        }}
+                      >
+                        <Trash2 className="size-4 text-loss" />
+                      </Button>
                     </div>
                   </li>
                 );
@@ -129,6 +157,7 @@ function CollectionPage() {
                   ? COMIC_BY_ID[owned.catalogId] ?? liveComics.find((c) => c.id === owned.catalogId)
                   : undefined;
                 const est = catalog ? comicEstimate(catalog) : owned.acquiredPrice ?? 0;
+                const isCustom = Boolean(owned.custom && !owned.catalogId);
                 return (
                   <li
                     key={owned.id}
@@ -145,13 +174,29 @@ function CollectionPage() {
                       <p className="font-medium">{comicLabel(comic)}</p>
                       <p className="text-xs text-muted">
                         {comic.publisher} · {owned.grade === "raw" ? "Raw" : owned.grade}
+                        {isCustom ? " · Custom" : ""}
                       </p>
+                      {isCustom ? <Badge tone="red" className="mt-1">Custom title</Badge> : null}
                     </div>
-                    <div className="text-right">
-                      <p className="tabular text-sm text-gold">{usd(est)}</p>
-                      <p className="tabular text-xs text-subtle">
-                        paid {owned.acquiredPrice != null ? usd(owned.acquiredPrice) : "—"}
-                      </p>
+                    <div className="flex flex-col items-end gap-2">
+                      <div className="text-right">
+                        <p className="tabular text-sm text-gold">{usd(est)}</p>
+                        <p className="tabular text-xs text-subtle">
+                          paid {owned.acquiredPrice != null ? usd(owned.acquiredPrice) : "—"}
+                        </p>
+                      </div>
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        aria-label={
+                          isCustom
+                            ? `Remove custom title ${comicLabel(comic)}`
+                            : `Remove ${comicLabel(comic)}`
+                        }
+                        onClick={() => removeOwnedComic(owned.id, owned.custom?.id)}
+                      >
+                        <Trash2 className="size-4 text-loss" />
+                      </Button>
                     </div>
                   </li>
                 );
