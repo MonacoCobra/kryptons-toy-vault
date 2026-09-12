@@ -23,12 +23,18 @@ export function AddComicDialog({
   photo: initialPhoto,
   open,
   onOpenChange,
+  onSaved,
+  confirmLabel,
 }: {
   comic?: CatalogComic;
   custom?: CustomComic;
   photo?: string;
   open: boolean;
   onOpenChange: (v: boolean) => void;
+  /** Fired after a successful add/update with owned id + catalog/custom id. */
+  onSaved?: (info: { ownedId: string; catalogId?: string; customId?: string }) => void;
+  /** Override primary button label (e.g. "Add to collection"). */
+  confirmLabel?: string;
 }) {
   const ownedComics = useVault((s) => s.ownedComics);
   const existing = comic ? Object.values(ownedComics).find((o) => o.catalogId === comic.id) : undefined;
@@ -55,6 +61,10 @@ export function AddComicDialog({
   }
 
   function save() {
+    let ownedId = existing?.id ?? "";
+    let catalogId = comic?.id;
+    let customId = custom?.id;
+
     if (existing) {
       updateComic(existing.id, {
         acquiredDate,
@@ -63,8 +73,9 @@ export function AddComicDialog({
         notes: notes.trim() || undefined,
         photoDataUrl: photo,
       });
+      ownedId = existing.id;
     } else if (comic) {
-      addComic({
+      ownedId = addComic({
         catalogId: comic.id,
         acquiredDate,
         acquiredPrice: acquiredPrice ? Number(acquiredPrice) : undefined,
@@ -72,9 +83,10 @@ export function AddComicDialog({
         notes: notes.trim() || undefined,
         photoDataUrl: photo,
       });
+      catalogId = comic.id;
     } else if (custom) {
       addCustomComic(custom);
-      addComic({
+      ownedId = addComic({
         catalogId: undefined,
         custom,
         acquiredDate,
@@ -83,16 +95,21 @@ export function AddComicDialog({
         notes: notes.trim() || undefined,
         photoDataUrl: photo,
       });
+      customId = custom.id;
     }
     toast.success(existing ? "Issue updated." : "Issue added to the vault.");
     onOpenChange(false);
+    if (ownedId) onSaved?.({ ownedId, catalogId, customId });
   }
+
+  const primary =
+    confirmLabel ?? (existing ? "Save changes" : "Add to vault");
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>{existing ? "Update issue" : "Add issue"}</DialogTitle>
+          <DialogTitle>{existing ? "Update issue" : "Add to collection"}</DialogTitle>
           <DialogDescription>{label}</DialogDescription>
         </DialogHeader>
         <div className="grid gap-4">
@@ -135,7 +152,9 @@ export function AddComicDialog({
             <Label htmlFor="c-notes">Notes</Label>
             <Textarea id="c-notes" value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Print, defects, CGC cert…" />
           </div>
-          <Button onClick={save}>{existing ? "Save changes" : "Add to vault"}</Button>
+          <Button onClick={save} className="min-h-11 w-full">
+            {primary}
+          </Button>
         </div>
       </DialogContent>
     </Dialog>

@@ -1,6 +1,6 @@
 import { useRef, useState, type ChangeEvent } from "react";
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { Camera, ImagePlus, Loader2 } from "lucide-react";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { Camera, ImagePlus, Loader2, Plus } from "lucide-react";
 import { toast } from "sonner";
 import { comicLabel, searchComics } from "@/data/comics";
 import { AddComicDialog } from "@/components/add-comic-dialog";
@@ -16,6 +16,7 @@ import { slug } from "@/lib/utils";
 export const Route = createFileRoute("/scan")({ component: ScanPage });
 
 function ScanPage() {
+  const navigate = useNavigate();
   const cameraRef = useRef<HTMLInputElement>(null);
   const galleryRef = useRef<HTMLInputElement>(null);
   const extras = useLiveComics();
@@ -72,7 +73,10 @@ function ScanPage() {
   }
 
   const searched = query.trim() ? searchComics(query, extras).slice(0, 8) : [];
+  /** Prefer AI matches; fall back to catalog search from the guess query. */
   const shown = matches.length ? matches : searched;
+  const ambiguous = matches.length > 1;
+  const topMatch = matches[0] ?? (shown.length === 1 ? shown[0] : null);
 
   function asCustom(): CustomComic | null {
     if (!guess?.series) return null;
@@ -89,12 +93,21 @@ function ScanPage() {
     };
   }
 
+  function goAfterSave(info: { catalogId?: string; customId?: string }) {
+    if (info.catalogId) {
+      void navigate({ to: "/comics/$comicId", params: { comicId: info.catalogId } });
+      return;
+    }
+    void navigate({ to: "/collection" });
+  }
+
   return (
     <main className="mx-auto flex max-w-2xl flex-col gap-6">
       <header>
         <h1 className="font-display text-3xl tracking-wide uppercase">Scan a comic</h1>
         <p className="mt-2 text-sm text-muted">
-          Photograph a cover to match it in the catalog. If it isn't there, save it as a custom issue.
+          Photograph a cover to match it in the catalog, then add it to your collection. If it
+          isn&apos;t there, save it as a custom issue.
         </p>
       </header>
 
@@ -120,7 +133,7 @@ function ScanPage() {
           variant="default"
           disabled={busy}
           onClick={() => cameraRef.current?.click()}
-          className="w-full"
+          className="min-h-11 w-full"
         >
           <Camera className="size-4" />
           Take photo
@@ -130,7 +143,7 @@ function ScanPage() {
           variant="secondary"
           disabled={busy}
           onClick={() => galleryRef.current?.click()}
-          className="w-full"
+          className="min-h-11 w-full"
         >
           <ImagePlus className="size-4" />
           Upload existing photo
@@ -167,41 +180,95 @@ function ScanPage() {
             {guess.publisher}
             {guess.variant ? ` · ${guess.variant}` : ""}
           </p>
+          {topMatch && matches.length === 1 ? (
+            <Button
+              type="button"
+              className="mt-4 min-h-11 w-full"
+              onClick={() => setAdding(topMatch)}
+            >
+              <Plus className="size-4" />
+              Add to collection
+            </Button>
+          ) : null}
+          {ambiguous ? (
+            <p className="mt-3 text-sm text-muted">
+              Several catalog matches — pick the right issue below, then add it.
+            </p>
+          ) : null}
         </div>
       ) : null}
 
       {shown.length ? (
-        <ul className="grid gap-2">
-          {shown.map((comic) => (
-            <li key={comic.id}>
-              <button
-                type="button"
-                onClick={() => setAdding(comic)}
-                className="flex w-full items-center gap-3 rounded-lg bg-bg-elevated p-2 text-left shadow-[var(--shadow-border)]"
-              >
-                <ComicCover comic={comic} className="h-20 w-14 shrink-0 rounded-sm" />
-                <span className="min-w-0">
-                  <span className="block truncate text-sm font-medium">{comicLabel(comic)}</span>
-                  <span className="block text-xs text-muted">{comic.publisher}</span>
-                </span>
-              </button>
-            </li>
-          ))}
-        </ul>
+        <section className="grid gap-2">
+          <div className="flex items-baseline justify-between gap-2">
+            <h2 className="text-xs tracking-[0.18em] text-gold uppercase">
+              {matches.length ? "Catalog matches" : "Search results"}
+            </h2>
+            <span className="text-xs text-muted">{shown.length} found</span>
+          </div>
+          <ul className="grid gap-2">
+            {shown.map((comic, i) => (
+              <li key={comic.id}>
+                <div className="flex items-center gap-3 rounded-lg bg-bg-elevated p-2 shadow-[var(--shadow-border)]">
+                  <ComicCover comic={comic} className="h-20 w-14 shrink-0 rounded-sm" />
+                  <div className="min-w-0 flex-1">
+                    <p className="truncate text-sm font-medium">{comicLabel(comic)}</p>
+                    <p className="truncate text-xs text-muted">
+                      {comic.publisher}
+                      {i === 0 && matches.length ? " · best match" : ""}
+                    </p>
+                  </div>
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant={i === 0 && matches.length ? "default" : "secondary"}
+                    className="min-h-11 shrink-0 px-3"
+                    onClick={() => setAdding(comic)}
+                  >
+                    <Plus className="size-4" />
+                    <span className="hidden sm:inline">Add to collection</span>
+                    <span className="sm:hidden">Add</span>
+                  </Button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
       ) : null}
 
       {guess && !shown.length ? (
         <div className="flex flex-wrap gap-2">
           <Button
+            className="min-h-11"
             onClick={() => {
               const c = asCustom();
               if (c) setCustom(c);
             }}
           >
+            <Plus className="size-4" />
             Add as custom issue
           </Button>
-          <Button asChild variant="secondary">
+          <Button asChild variant="secondary" className="min-h-11">
             <Link to="/comics">Search catalog</Link>
+          </Button>
+        </div>
+      ) : null}
+
+      {guess && shown.length ? (
+        <div className="flex flex-wrap gap-2">
+          <Button
+            type="button"
+            variant="secondary"
+            className="min-h-11"
+            onClick={() => {
+              const c = asCustom();
+              if (c) setCustom(c);
+            }}
+          >
+            Not listed — add as custom
+          </Button>
+          <Button asChild variant="ghost" className="min-h-11">
+            <Link to="/comics">Browse catalog</Link>
           </Button>
         </div>
       ) : null}
@@ -211,7 +278,9 @@ function ScanPage() {
           comic={adding}
           photo={preview ?? undefined}
           open
+          confirmLabel="Add to collection"
           onOpenChange={(v) => !v && setAdding(null)}
+          onSaved={goAfterSave}
         />
       ) : null}
       {custom ? (
@@ -219,7 +288,9 @@ function ScanPage() {
           custom={custom}
           photo={preview ?? undefined}
           open
+          confirmLabel="Add to collection"
           onOpenChange={(v) => !v && setCustom(null)}
+          onSaved={goAfterSave}
         />
       ) : null}
     </main>
