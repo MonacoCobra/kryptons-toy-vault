@@ -1,6 +1,6 @@
 {
-  "afterUpc": 3443,
-  "beforeUpc": 3296,
+  "afterUpc": 3581,
+  "beforeUpc": 3443,
   "details": [
     {
       "id": "val-xo2017-9",
@@ -470,6 +470,11 @@
       "status": "no_issue"
     },
     {
+      "id": "mv-ya-2005-11",
+      "issue": "11",
+      "status": "variant_only"
+    },
+    {
       "id": "mv-ya-2005-10",
       "issue": "10",
       "status": "variant_only"
@@ -505,35 +510,10 @@
       "status": "no_issue"
     },
     {
-      "id": "mv-xmenred-2022-18",
-      "status": "gcd_upc",
-      "upc": "75960620212601811"
-    },
-    {
       "id": "mv-xmenred-2022-17",
       "issue": "17",
       "series": "X-Men Red",
       "status": "no_issue"
-    },
-    {
-      "id": "mv-xmenred-2022-16",
-      "status": "gcd_upc",
-      "upc": "75960620212601611"
-    },
-    {
-      "id": "mv-xmenred-2022-15",
-      "status": "gcd_upc",
-      "upc": "75960620212601511"
-    },
-    {
-      "id": "mv-xmenred-2022-14",
-      "status": "gcd_upc",
-      "upc": "75960620212601411"
-    },
-    {
-      "id": "mv-xmenred-2022-13",
-      "status": "gcd_upc",
-      "upc": "75960620212601311"
     },
     {
       "id": "mv-xmenred-2022-12",
@@ -559,34 +539,29 @@
       "status": "variant_only"
     },
     {
-      "id": "mv-xmen-2024-20",
+      "id": "mv-xmen-2024-15",
       "status": "gcd_upc",
-      "upc": "75960620920002011"
+      "upc": "75960620920001511"
     },
     {
-      "id": "mv-xmen-2024-2",
+      "id": "mv-xmen-2024-14",
       "status": "gcd_upc",
-      "upc": "75960620920000211"
+      "upc": "75960620920001411"
     },
     {
-      "id": "mv-xmen-2024-19",
+      "id": "mv-xmen-2024-13",
       "status": "gcd_upc",
-      "upc": "75960620920001911"
+      "upc": "75960620920001311"
     },
     {
-      "id": "mv-xmen-2024-18",
+      "id": "mv-xmen-2024-12",
       "status": "gcd_upc",
-      "upc": "75960620920001811"
+      "upc": "75960620920001211"
     },
     {
-      "id": "mv-xmen-2024-17",
+      "id": "mv-xmen-2024-11",
       "status": "gcd_upc",
-      "upc": "75960620920001711"
-    },
-    {
-      "id": "mv-xmen-2024-16",
-      "status": "gcd_upc",
-      "upc": "75960620920001611"
+      "upc": "75960620920001111"
     },
     {
       "id": "mv-xmen-2021-3",
@@ -601,90 +576,120 @@
       "status": "no_issue"
     },
     {
-      "id": "mv-xmen-2021-10",
+      "id": "mv-xmen-2021-12",
       "status": "gcd_upc",
-      "upc": "75960609999301011"
+      "upc": "75960609999301211"
     },
     {
-      "id": "mv-xmen-2019-9",
+      "id": "mv-xmen-2021-11",
       "status": "gcd_upc",
-      "upc": "75960609466000911"
+      "upc": "75960609999301111"
     },
     {
-      "id": "mv-xmen-2019-8",
+      "id": "mv-xmen-2019-15",
       "status": "gcd_upc",
-      "upc": "75960609466000811"
+      "upc": "75960609466001511"
     },
     {
-      "id": "mv-xmen-2019-7",
+      "id": "mv-xmen-2019-14",
       "status": "gcd_upc",
-      "upc": "75960609466000711"
+      "upc": "75960609466001411"
     },
     {
-      "id": "mv-xmen-2019-6",
+      "id": "mv-xmen-2019-13",
       "status": "gcd_upc",
-      "upc": "75960609466000611"
+      "upc": "75960609466001311"
     },
     {
-      "id": "mv-xmen-2019-5",
+      "id": "mv-xmen-2019-12",
       "status": "gcd_upc",
-      "upc": "75960609466000511"
+      "upc": "75960609466001211"
     },
     {
-      "id": "mv-xmen-2019-4",
+      "id": "mv-xmen-2019-11",
       "status": "gcd_upc",
-      "upc": "75960609466000411"
+      "upc": "75960609466001111"
     },
     {
-      "id": "mv-xmen-2019-3",
+      "id": "mv-xmen-2019-10",
       "status": "gcd_upc",
-      "upc": "75960609466000311"
+      "upc": "75960609466001011"
     },
     {
-      "id": "mv-xmen-2019-21",
+      "id": "mv-xforce08-9",
       "status": "gcd_upc",
-      "upc": "75960609466002111"
+      "upc": "75960606282900911"
     },
     {
-      "id": "mv-xmen-2019-20",
-      "status": "gcd_upc",
-      "upc": "75960609466002011"
+      "id": "mv-xforce08-8",
+      "issue": "8",
+      "status": "variant_only"
     },
     {
-      "id": "mv-xmen-2019-2",
-      "status": "gcd_upc",
-      "upc": "75960609466000211"
+      "id": "mv-xforce08-7",
+      "issue": "7",
+      "status": "variant_only"
     },
     {
-      "id": "mv-xmen-2019-19",
-      "status": "gcd_upc",
-      "upc": "75960609466001911"
+      "id": "mv-xforce08-6",
+      "issue": "6",
+      "status": "variant_only"
     },
     {
-      "id": "mv-xmen-2019-18",
-      "status": "gcd_upc",
-      "upc": "75960609466001811"
+      "id": "mv-xforce08-5",
+      "issue": "5",
+      "status": "variant_only"
     },
     {
-      "id": "mv-xmen-2019-17",
-      "status": "gcd_upc",
-      "upc": "75960609466001711"
+      "id": "mv-xforce08-4",
+      "issue": "4",
+      "status": "variant_only"
     },
     {
-      "id": "mv-xmen-2019-16",
+      "id": "mv-xforce08-3",
+      "issue": "3",
+      "status": "variant_only"
+    },
+    {
+      "id": "mv-xforce08-28",
       "status": "gcd_upc",
-      "upc": "75960609466001611"
+      "upc": "75960606282902811"
+    },
+    {
+      "id": "mv-xforce08-27",
+      "issue": "27",
+      "status": "variant_only"
+    },
+    {
+      "id": "mv-xforce08-26",
+      "issue": "26",
+      "status": "variant_only"
+    },
+    {
+      "id": "mv-xforce08-25",
+      "issue": "25",
+      "status": "variant_only"
+    },
+    {
+      "id": "mv-xforce08-24",
+      "status": "gcd_upc",
+      "upc": "75960606282902411"
+    },
+    {
+      "id": "mv-xforce08-23",
+      "status": "gcd_upc",
+      "upc": "75960606282902311"
     }
   ],
   "dryRun": false,
-  "errors": 33,
-  "finishedAt": "2026-09-09T01:28:50Z",
+  "errors": 32,
+  "finishedAt": "2026-09-12T02:48:49Z",
   "limit": 150,
   "minYear": 2005,
-  "noBarcode": 3,
+  "noBarcode": 13,
   "noIssue": 45,
   "noSeries": 43,
   "skippedExisting": 0,
-  "startedAt": "2026-09-09T01:28:50Z",
-  "upcFilled": 26
+  "startedAt": "2026-09-12T02:48:49Z",
+  "upcFilled": 17
 }
