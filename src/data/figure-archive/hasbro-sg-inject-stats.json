@@ -1,0 +1,133 @@
+{
+  "source": "inject-hasbro-shattered-glass",
+  "updatedAt": "2026-09-12T22:21:06.255415+00:00",
+  "added": 13,
+  "updated": 0,
+  "aliasesAdded": 21,
+  "sgIdCount": 13,
+  "sgIds": [
+    "hasbro-sg-selects-optimus-ratchet",
+    "hasbro-sg-blurr",
+    "hasbro-sg-goldbug",
+    "hasbro-sg-megatron",
+    "hasbro-sg-starscream",
+    "hasbro-sg-jetfire",
+    "hasbro-sg-blaster-rewind",
+    "hasbro-sg-ultra-magnus",
+    "hasbro-sg-flamewar-fireglide",
+    "hasbro-sg-slicer-exo-suit",
+    "hasbro-sg-soundwave",
+    "hasbro-sg-grimlock",
+    "hasbro-sg-rodimus-sideswipe-whisper"
+  ],
+  "samples": [
+    {
+      "id": "hasbro-sg-selects-optimus-ratchet",
+      "name": "Optimus Prime & Ratchet",
+      "sku": "5010993800612",
+      "code": "WFC-GS17",
+      "line": "Generations Selects",
+      "msrp": 49.99
+    },
+    {
+      "id": "hasbro-sg-blurr",
+      "name": "Blurr",
+      "sku": "5010993867042",
+      "code": "F2705",
+      "line": "Shattered Glass Collection",
+      "msrp": 29.99
+    },
+    {
+      "id": "hasbro-sg-goldbug",
+      "name": "Goldbug",
+      "sku": "5010993875832",
+      "code": "F2704",
+      "line": "Shattered Glass Collection",
+      "msrp": 29.99
+    },
+    {
+      "id": "hasbro-sg-megatron",
+      "name": "Megatron",
+      "sku": "5010993874675",
+      "code": "F2912",
+      "line": "Shattered Glass Collection",
+      "msrp": 38.99
+    },
+    {
+      "id": "hasbro-sg-starscream",
+      "name": "Starscream",
+      "sku": "5010993897384",
+      "code": "F2911",
+      "line": "Shattered Glass Collection",
+      "msrp": 38.99
+    },
+    {
+      "id": "hasbro-sg-jetfire",
+      "name": "Jetfire",
+      "sku": "5010993900657",
+      "code": "F3003",
+      "line": "Shattered Glass Collection",
+      "msrp": 91.99
+    },
+    {
+      "id": "hasbro-sg-blaster-rewind",
+      "name": "Blaster & Rewind",
+      "sku": "5010994135690",
+      "code": "F3926",
+      "line": "Shattered Glass Collection",
+      "msrp": 38.99
+    },
+    {
+      "id": "hasbro-sg-ultra-magnus",
+      "name": "Ultra Magnus",
+      "sku": "5010994145729",
+      "code": "F4118",
+      "line": "Shattered Glass Collection",
+      "msrp": 62.99
+    },
+    {
+      "id": "hasbro-sg-flamewar-fireglide",
+      "name": "Flamewar & Fireglide",
+      "sku": "5010994183110",
+      "code": "F6281",
+      "line": "Shattered Glass Collection",
+      "msrp": 41.99
+    },
+    {
+      "id": "hasbro-sg-slicer-exo-suit",
+      "name": "Slicer & Exo-Suit",
+      "sku": "5010994171780",
+      "code": "F6280",
+      "line": "Shattered Glass Collection",
+      "msrp": 48.99
+    },
+    {
+      "id": "hasbro-sg-soundwave",
+      "name": "Soundwave with Ravage & Laserbeak",
+      "sku": "5010994131715",
+      "code": "F3921",
+      "line": "Shattered Glass Collection",
+      "msrp": 62.99
+    },
+    {
+      "id": "hasbro-sg-grimlock",
+      "name": "Grimlock",
+      "sku": "5010996134653",
+      "code": "F7812",
+      "line": "Shattered Glass Collection",
+      "msrp": 54.99
+    },
+    {
+      "id": "hasbro-sg-rodimus-sideswipe-whisper",
+      "name": "Rodimus, Sideswipe & Whisper",
+      "sku": "5010996138880",
+      "code": "F7817",
+      "line": "Shattered Glass Collection",
+      "msrp": 54.99
+    }
+  ],
+  "notes": {
+    "starscream_reissue": "Shares GTIN 5010993897384 with original; aliases F29115L01/L00/C00 only"
+  },
+  "publish": false
+}

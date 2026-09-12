@@ -31204,6 +31204,54 @@
       "GNG-0016",
       "GONG-0016",
       "id:gong-hush-superman"
+    ],
+    "hasbro-sg-selects-optimus-ratchet": [
+      "WFC-GS17",
+      "WFCGS17",
+      "B08R7ZQM1X",
+      "GS17"
+    ],
+    "hasbro-sg-blurr": [
+      "F2705"
+    ],
+    "hasbro-sg-goldbug": [
+      "F2704",
+      "B09R3LNQ2Q"
+    ],
+    "hasbro-sg-megatron": [
+      "F2912"
+    ],
+    "hasbro-sg-starscream": [
+      "F2911",
+      "F29115L01",
+      "F29115L00",
+      "F29115C00"
+    ],
+    "hasbro-sg-jetfire": [
+      "F3003"
+    ],
+    "hasbro-sg-blaster-rewind": [
+      "F3926",
+      "B09H1LS1SF"
+    ],
+    "hasbro-sg-ultra-magnus": [
+      "F4118"
+    ],
+    "hasbro-sg-flamewar-fireglide": [
+      "F6281",
+      "B0BZNC5NML"
+    ],
+    "hasbro-sg-slicer-exo-suit": [
+      "F6280"
+    ],
+    "hasbro-sg-soundwave": [
+      "F3921"
+    ],
+    "hasbro-sg-grimlock": [
+      "F7812"
+    ],
+    "hasbro-sg-rodimus-sideswipe-whisper": [
+      "F7817"
     ]
   },
   "aliasToFigureId": {
@@ -39271,7 +39319,7 @@
     "HAS122799": "tfc-legacy-soundwave",
     "HAS941148": "tfc-legacy-soundwave",
     "HSF9188": "tfc-legacy-soundwave",
-    "F3921": "tfc-legacy-soundwave",
+    "F3921": "hasbro-sg-soundwave",
     "HSF3517": "tfc-legacy-soundwave",
     "HBR-F35175X00-C": "tfc-legacy-soundwave",
     "HAS146649": "tfc-legacy-soundwave",
@@ -39349,7 +39397,7 @@
     "F8578": "tfc-legacy-starscream",
     "GEN-SG-STARSCREAM": "tfc-legacy-starscream",
     "GOLDENLAGOON-USA-STARSCREAM": "tfc-legacy-starscream",
-    "F2911": "tfc-legacy-starscream",
+    "F2911": "hasbro-sg-starscream",
     "HAS201980": "ml5-ml-x97-jean",
     "F9060": "ml5-ml-x97-jean",
     "HASF9060": "ml5-ml-x97-jean",
@@ -48000,7 +48048,27 @@
     "id:gong-hush-batman": "gong-hush-batman",
     "GNG-0016": "gong-hush-superman",
     "GONG-0016": "gong-hush-superman",
-    "id:gong-hush-superman": "gong-hush-superman"
+    "id:gong-hush-superman": "gong-hush-superman",
+    "WFC-GS17": "hasbro-sg-selects-optimus-ratchet",
+    "WFCGS17": "hasbro-sg-selects-optimus-ratchet",
+    "B08R7ZQM1X": "hasbro-sg-selects-optimus-ratchet",
+    "F2705": "hasbro-sg-blurr",
+    "F2704": "hasbro-sg-goldbug",
+    "B09R3LNQ2Q": "hasbro-sg-goldbug",
+    "F2912": "hasbro-sg-megatron",
+    "F29115L01": "hasbro-sg-starscream",
+    "F29115L00": "hasbro-sg-starscream",
+    "F29115C00": "hasbro-sg-starscream",
+    "F3003": "hasbro-sg-jetfire",
+    "F3926": "hasbro-sg-blaster-rewind",
+    "B09H1LS1SF": "hasbro-sg-blaster-rewind",
+    "F4118": "hasbro-sg-ultra-magnus",
+    "F6281": "hasbro-sg-flamewar-fireglide",
+    "B0BZNC5NML": "hasbro-sg-flamewar-fireglide",
+    "F6280": "hasbro-sg-slicer-exo-suit",
+    "F7812": "hasbro-sg-grimlock",
+    "F7817": "hasbro-sg-rodimus-sideswipe-whisper",
+    "GS17": "hasbro-sg-selects-optimus-ratchet"
   },
   "collapsed": [
     {
@@ -48305,7 +48373,7 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-09-09T02:45:21.705996+00:00",
+  "updatedAt": "2026-09-12T22:21:06.052722+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,

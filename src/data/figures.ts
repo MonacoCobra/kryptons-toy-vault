@@ -11,7 +11,7 @@ const BAKED_IMAGE_URLS = figureImageUrls as Record<string, string>;
 const BAKED_SKUS = figureSkuMap as Record<string, string>;
 
 /**
- * Listing-code aliases → figure id (HAS*/Pulse/assort → canonical GTIN row).
+ * Listing-code aliases → figure id (HAS*, Pulse, assort → canonical GTIN row).
  * See docs/figure-identity.md. Rich doc or legacy flat map both supported.
  */
 type AliasDoc = {
