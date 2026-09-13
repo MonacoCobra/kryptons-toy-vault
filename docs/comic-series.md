@@ -9,6 +9,22 @@ Catalog browse is **Publisher → Series (run year) → Issues**.
 - Issue lists under a series sort by issue number by default.
 - Search (`q`) bypasses the ladder and returns a flat issue grid.
 
+## Collected Editions
+
+Collected books (`format` ∈ `tpb` | `hc` | `omnibus`; `hardcover` normalizes to
+`hc`) are **not** a global catalog mode. They live under the publisher they
+belong to:
+
+1. Publisher → Series (singles only; collected rows are excluded from runs).
+2. On that publisher page, a **Collected Editions** section appears **above**
+   the series list only when the publisher has ≥1 collected-format row. Hidden
+   when zero.
+3. Opening it (`?publisher=…&section=collected`) lists those titles with cover,
+   name, **TPB / HC / Omnibus** badge, and year/date.
+
+Compendiums are stored as `tpb` until a dedicated format exists. Global search
+(`q`) still finds collected titles. Singles variant collapse is unchanged.
+
 ## Series-year rule
 
 Implemented in `src/lib/comic-series.ts`.

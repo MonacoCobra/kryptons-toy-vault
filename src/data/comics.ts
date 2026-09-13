@@ -1,3 +1,4 @@
+import { normalizeComicFormat } from "@/lib/comic-format";
 import type { CatalogComic, ComicFormat } from "@/lib/types";
 import coverUrls from "./comic-cover-urls.json";
 import upcMap from "./comic-upc-map.json";
@@ -37,6 +38,7 @@ type Row = [
   },
 ];
 
+// @ts-expect-error TS2590 — dump literal is too large for the checker
 const rows: Row[] = [
   // DC keys & modern
   ["dc-action-1-fac", "Action Comics", "1", "DC Comics", "2018-04-01", "Jerry Siegel", "Joe Shuster", "Facsimile of the 1938 debut of Superman.", 7.99, "facsimile", 1.8, 1, "1e3a8a,e30613,ffd200"],
@@ -12295,8 +12297,8 @@ const rows: Row[] = [
   ["im-rat-queens-6", "Rat Queens", "6", "Image", "2019-05-15", "", "", "The Infernal Path", 16.99, "single", 0.55, 0, "111827,7f1d1d,eab308", { upc: "978153431069851699", streetDate: "2019-05-15", gcdIssueId: "1964701" }],
   ["im-rat-queens-7", "Rat Queens", "7", "Image", "2020-02-12", "", "", "The Once and Future King", 16.99, "single", 0.55, 0, "111827,7f1d1d,eab308", { upc: "978153431466551699", streetDate: "2020-02-12", gcdIssueId: "2068858" }],
   ["im-rat-queens-8", "Rat Queens", "8", "Image", "2021-04-07", "", "", "The God Dilemma", 16.99, "single", 0.55, 0, "111827,7f1d1d,eab308", { upc: "9781534316720", streetDate: "2021-04-07", gcdIssueId: "2214924" }],
-  ["im-rat-queens-deluxe-hardcover-1", "Rat Queens Deluxe Hardcover", "1", "Image", "2015-12-02", "", "", "Rat Queens Deluxe Hardcover #1", 0.0, "hardcover", 0.8, 0, "111827,7f1d1d,eab308", { streetDate: "2015-12-02", gcdIssueId: "1515883" }],
-  ["im-rat-queens-deluxe-hardcover-2", "Rat Queens Deluxe Hardcover", "2", "Image", "2018-11-14", "", "", "Rat Queens Deluxe Hardcover #2", 39.99, "hardcover", 0.55, 0, "111827,7f1d1d,eab308", { upc: "978153431025453999", streetDate: "2018-11-14", gcdIssueId: "1872993" }],
+  ["im-rat-queens-deluxe-hardcover-1", "Rat Queens Deluxe Hardcover", "1", "Image", "2015-12-02", "", "", "Rat Queens Deluxe Hardcover #1", 0.0, "hc", 0.8, 0, "111827,7f1d1d,eab308", { streetDate: "2015-12-02", gcdIssueId: "1515883" }],
+  ["im-rat-queens-deluxe-hardcover-2", "Rat Queens Deluxe Hardcover", "2", "Image", "2018-11-14", "", "", "Rat Queens Deluxe Hardcover #2", 39.99, "hc", 0.55, 0, "111827,7f1d1d,eab308", { upc: "978153431025453999", streetDate: "2018-11-14", gcdIssueId: "1872993" }],
   ["im-red-one-2", "Red One", "2", "Image", "2015-04-29", "", "", "Red One #2", 3.99, "single", 0.55, 0, "111827,7f1d1d,eab308", { upc: "70985301844500211", streetDate: "2015-04-29", gcdIssueId: "1343232" }],
   ["im-red-one-3", "Red One", "3", "Image", "2016-09-06", "", "", "Red One #3", 2.99, "single", 0.55, 0, "111827,7f1d1d,eab308", { upc: "70985301844500311", streetDate: "2016-09-06", gcdIssueId: "1621202" }],
   ["im-red-one-4", "Red One", "4", "Image", "2016-10-05", "", "", "Red One #4", 2.99, "single", 0.55, 0, "111827,7f1d1d,eab308", { upc: "70985301844500411", streetDate: "2016-10-05", gcdIssueId: "1631863" }],
@@ -15664,7 +15666,7 @@ export const COMICS: CatalogComic[] = rows.map(
     artists: artists.split(",").map((w) => w.trim()),
     description,
     msrp,
-    format,
+    format: normalizeComicFormat(format),
     variant: extra?.variant,
     upc: extra?.upc ?? UPC_MAP[id]?.upc,
     demand,
@@ -15719,7 +15721,8 @@ export function searchComics(
   return list.filter((c) => {
     const writers = Array.isArray(c.writers) ? c.writers.join(" ") : String(c.writers ?? "");
     const artists = Array.isArray(c.artists) ? c.artists.join(" ") : String(c.artists ?? "");
-    const hay = `${c.series} ${c.issue} ${c.publisher} ${writers} ${artists} ${c.variant ?? ""} ${c.upc ?? ""}`.toLowerCase();
+    const hay =
+      `${c.series} ${c.issue} ${c.publisher} ${writers} ${artists} ${c.variant ?? ""} ${c.upc ?? ""} ${c.format ?? ""} ${c.description ?? ""}`.toLowerCase();
     if (hay.includes(q)) return true;
     if (issueMatch && c.issue === issueMatch[1] && hay.includes(q.replace(issueMatch[0], "").trim())) {
       return true;

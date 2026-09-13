@@ -1,5 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { COMICS } from "@/data/comics";
+import { normalizeComicFormat } from "@/lib/comic-format";
 import type { CatalogComic } from "@/lib/types";
 import { weekKey } from "@/lib/utils";
 
@@ -116,7 +117,7 @@ function rowToComic(row: CatalogRow): CatalogComic {
     artists: peopleField(row.artists),
     description: cleanStr(row.description),
     msrp: Number(row.msrp) || 4.99,
-    format: (cleanStr(row.format) as CatalogComic["format"]) || "single",
+    format: normalizeComicFormat(row.format),
     variant: variant || undefined,
     upc: upc || undefined,
     demand: Number(row.demand) || 1,
@@ -164,7 +165,7 @@ function asComic(value: unknown): CatalogComic | null {
     artists: peopleField(raw.artists),
     description: cleanStr(raw.description),
     msrp: Number(raw.msrp) || 4.99,
-    format: (cleanStr(raw.format) || "single") as CatalogComic["format"],
+    format: normalizeComicFormat(raw.format),
     variant: variant || undefined,
     upc: cleanStr(raw.upc) || undefined,
     demand: Number(raw.demand) || 1,

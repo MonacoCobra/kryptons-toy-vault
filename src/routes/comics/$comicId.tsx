@@ -9,6 +9,7 @@ import { MarketEstimate } from "@/components/market-estimate";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { libraryCatalogRows } from "@/lib/comic-catalog";
+import { comicFormatLabel, isCollectedComic } from "@/lib/comic-format";
 import {
   assignSeriesRunYears,
   seriesBaseTitle,
@@ -101,7 +102,7 @@ function ComicDetail() {
             {wanted && !owned ? <Badge tone="gold">Wanted</Badge> : null}
             {comic.key ? <Badge tone="red">Key issue</Badge> : null}
             {comic.variant ? <Badge tone="gold">{comic.variant}</Badge> : null}
-            <Badge>{comic.format}</Badge>
+            <Badge tone={isCollectedComic(comic) ? "ice" : "default"}>{comicFormatLabel(comic.format)}</Badge>
           </div>
         </div>
 
@@ -150,6 +151,7 @@ function ComicLadderCrumbs({
 }) {
   const year = seriesRunYearFor(comic, yearById);
   const title = seriesBaseTitle(comic.series);
+  const collected = isCollectedComic(comic);
   return (
     <nav aria-label="Comic breadcrumb" className="flex flex-wrap items-center gap-1 text-xs tracking-[0.2em] uppercase">
       <Link to="/comics" search={{}} className="inline-flex items-center gap-1 text-gold hover:underline">
@@ -164,13 +166,23 @@ function ComicLadderCrumbs({
         {comic.publisher}
       </Link>
       <ChevronRight className="size-3 text-muted" />
-      <Link
-        to="/comics"
-        search={{ publisher: comic.publisher, series: title, year }}
-        className="text-gold hover:underline"
-      >
-        {seriesDisplayLabel(title, year)}
-      </Link>
+      {collected ? (
+        <Link
+          to="/comics"
+          search={{ publisher: comic.publisher, section: "collected" }}
+          className="text-gold hover:underline"
+        >
+          Collected Editions
+        </Link>
+      ) : (
+        <Link
+          to="/comics"
+          search={{ publisher: comic.publisher, series: title, year }}
+          className="text-gold hover:underline"
+        >
+          {seriesDisplayLabel(title, year)}
+        </Link>
+      )}
     </nav>
   );
 }

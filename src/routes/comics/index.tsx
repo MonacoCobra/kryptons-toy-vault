@@ -20,16 +20,27 @@ import {
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { libraryCatalogRows, splitComicsClient } from "@/lib/comic-catalog";
 import {
+  catalogFromCustom,
+  COMIC_FORMAT_LABELS,
+  comicFormatLabel,
+  filterCollectedComics,
+  filterIssueComics,
+  isCollectedComic,
+} from "@/lib/comic-format";
+import {
   assignSeriesRunYears,
   buildPublisherList,
   buildSeriesList,
+  collectedCountByPublisher,
+  collectedForPublisher,
   comicMatchesSeries,
   seriesDisplayLabel,
   seriesRunYearFor,
   sortIssuesByNumber,
 } from "@/lib/comic-series";
 import { collapseComicVariants } from "@/lib/comic-variants";
-import { usd } from "@/lib/format";
+import { formatMonthYear, usd } from "@/lib/format";
+import { normalizePublisher } from "@/lib/locg-import";
 import { useEnsureComicLibrary, useLiveComics } from "@/lib/live-store";
 import { comicEstimate } from "@/lib/market";
 import { useVault } from "@/lib/store";
@@ -45,6 +56,8 @@ type Search = {
   year?: number;
   keys?: boolean;
   sort?: "release" | "name" | "acquired" | "issue";
+  /** Publisher-scoped collected editions list (tpb / hc / omnibus). */
+  section?: "collected";
 };
 
 export const Route = createFileRoute("/comics/")({
@@ -63,6 +76,7 @@ export const Route = createFileRoute("/comics/")({
       s.sort === "name" || s.sort === "acquired" || s.sort === "release" || s.sort === "issue"
         ? s.sort
         : undefined,
+    section: s.section === "collected" ? "collected" : undefined,
   }),
   component: ComicsPage,
 });
@@ -74,28 +88,33 @@ const SORT_LABEL: Record<NonNullable<Search["sort"]> | "release", string> = {
   issue: "Issue #",
 };
 
-type LadderLevel = "publishers" | "series" | "issues" | "search";
+type LadderLevel = "publishers" | "series" | "issues" | "collected" | "search";
 
 function ComicsPage() {
   const search = Route.useSearch();
   const navigate = Route.useNavigate();
   const owned = useVault((s) => s.ownedComics);
   const wanted = useVault((s) => s.wantedComics);
+  const customComics = useVault((s) => s.customComics);
   const extras = useLiveComics();
   const library = useEnsureComicLibrary(extras);
   const libraryRows = useMemo(() => libraryCatalogRows(library), [library]);
   const [adding, setAdding] = useState<CatalogComic | null>(null);
   const [customOpen, setCustomOpen] = useState(false);
 
-  const ownedIds = useMemo(
-    () => new Set(Object.values(owned).map((o) => o.catalogId).filter(Boolean)),
-    [owned],
-  );
+  const ownedIds = useMemo(() => {
+    const ids = new Set<string>();
+    for (const entry of Object.values(owned)) {
+      if (entry.catalogId) ids.add(entry.catalogId);
+      if (entry.custom?.id) ids.add(entry.custom.id);
+    }
+    return ids;
+  }, [owned]);
 
   const ownedByCatalog = useMemo(() => {
     const map = new Map<string, (typeof owned)[string]>();
     for (const entry of Object.values(owned)) {
-      const key = entry.catalogId ?? entry.id;
+      const key = entry.catalogId ?? entry.custom?.id ?? entry.id;
       if (!key) continue;
       const prev = map.get(key);
       if (!prev || entry.addedAt > prev.addedAt) map.set(key, entry);
@@ -103,7 +122,12 @@ function ComicsPage() {
     return map;
   }, [owned]);
 
-  const sort = search.sort ?? (search.publisher && search.series && search.year != null ? "issue" : "release");
+  const inCollected = search.section === "collected" && Boolean(search.publisher);
+  const sort =
+    inCollected && search.sort === "issue"
+      ? "release"
+      : (search.sort ??
+        (search.publisher && search.series && search.year != null && !inCollected ? "issue" : "release"));
 
   const [qDraft, setQDraft] = useState(search.q ?? "");
   useEffect(() => {
@@ -123,27 +147,65 @@ function ComicsPage() {
     return splitComicsClient(extras);
   }, [library, extras]);
 
-  const catalog = useMemo(
+  const catalogAll = useMemo(
     () => mergeComics(extras, libraryRows),
     [extras, libraryRows],
   );
 
-  const yearById = useMemo(() => assignSeriesRunYears(catalog), [catalog]);
+  const customCollected = useMemo(
+    () => Object.values(customComics).filter(isCollectedComic).map(catalogFromCustom),
+    [customComics],
+  );
+
+  const issueCatalog = useMemo(() => filterIssueComics(catalogAll), [catalogAll]);
+
+  const collectedCatalog = useMemo(() => {
+    const fromCatalog = filterCollectedComics(catalogAll);
+    if (customCollected.length === 0) return fromCatalog;
+    const seen = new Set(fromCatalog.map((c) => c.id));
+    const extra = customCollected.filter((c) => !seen.has(c.id));
+    return extra.length ? [...fromCatalog, ...extra] : fromCatalog;
+  }, [catalogAll, customCollected]);
+
+  const yearById = useMemo(() => assignSeriesRunYears(catalogAll), [catalogAll]);
+  const collectedCounts = useMemo(
+    () => collectedCountByPublisher(collectedCatalog),
+    [collectedCatalog],
+  );
 
   const level: LadderLevel = search.q
     ? "search"
-    : search.publisher && search.series && search.year != null
-      ? "issues"
-      : search.publisher
-        ? "series"
-        : "publishers";
+    : search.publisher && search.section === "collected"
+      ? "collected"
+      : search.publisher && search.series && search.year != null
+        ? "issues"
+        : search.publisher
+          ? "series"
+          : "publishers";
 
-  const publishers = useMemo(() => buildPublisherList(catalog, yearById), [catalog, yearById]);
+  const publishers = useMemo(() => {
+    const list = buildPublisherList(issueCatalog, yearById);
+    const seen = new Set(list.map((p) => normalizePublisher(p.publisher)));
+    const extra: typeof list = [];
+    for (const c of collectedCatalog) {
+      const key = normalizePublisher(c.publisher);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      extra.push({ publisher: c.publisher, seriesCount: 0, issueCount: 0 });
+    }
+    if (!extra.length) return list;
+    return [...list, ...extra].sort((a, b) => a.publisher.localeCompare(b.publisher));
+  }, [issueCatalog, yearById, collectedCatalog]);
 
   const seriesList = useMemo(() => {
     if (!search.publisher) return [];
-    return buildSeriesList(catalog, yearById, search.publisher);
-  }, [catalog, yearById, search.publisher]);
+    return buildSeriesList(issueCatalog, yearById, search.publisher);
+  }, [issueCatalog, yearById, search.publisher]);
+
+  const publisherCollected = useMemo(() => {
+    if (!search.publisher) return [];
+    return collectedForPublisher(collectedCatalog, search.publisher);
+  }, [collectedCatalog, search.publisher]);
 
   const sortComics = (list: CatalogComic[]) => {
     const out = [...list];
@@ -181,7 +243,7 @@ function ComicsPage() {
 
   const issueComics = useMemo(() => {
     if (level !== "issues" || !search.publisher || !search.series || search.year == null) return [];
-    let list = catalog.filter((c) =>
+    let list = issueCatalog.filter((c) =>
       comicMatchesSeries(
         c,
         { publisher: search.publisher!, seriesTitle: search.series!, year: search.year! },
@@ -192,12 +254,34 @@ function ComicsPage() {
     list = collapseComicVariants(list);
     if (sort === "issue") return sortIssuesByNumber(list);
     return sortComics(list);
-  }, [level, catalog, search.publisher, search.series, search.year, search.keys, sort, yearById, ownedByCatalog]);
+  }, [level, issueCatalog, search.publisher, search.series, search.year, search.keys, sort, yearById, ownedByCatalog]);
+
+  const collectedComics = useMemo(() => {
+    if (level !== "collected") return [];
+    let list = publisherCollected;
+    if (search.keys) list = list.filter((c) => c.key);
+    return sortComics(list);
+  }, [level, publisherCollected, search.keys, sort, ownedByCatalog]);
 
   const filteredSearch = useMemo(() => {
     if (level !== "search") return [];
     let list = searchComics(search.q!, extras, libraryRows);
-    if (search.publisher) list = list.filter((c) => c.publisher === search.publisher);
+    const q = search.q!.trim().toLowerCase();
+    const customHits = customCollected.filter((c) => {
+      const hay = `${c.series} ${c.issue} ${c.publisher} ${c.upc ?? ""} ${c.format} ${c.description}`.toLowerCase();
+      return hay.includes(q);
+    });
+    const seen = new Set(list.map((c) => c.id));
+    for (const c of customHits) {
+      if (!seen.has(c.id)) list.push(c);
+    }
+    if (search.publisher) {
+      const want = normalizePublisher(search.publisher);
+      list = list.filter((c) => normalizePublisher(c.publisher) === want);
+    }
+    if (search.section === "collected") {
+      list = filterCollectedComics(list);
+    }
     if (search.series && search.year != null) {
       list = list.filter((c) =>
         comicMatchesSeries(
@@ -211,26 +295,38 @@ function ComicsPage() {
     }
     if (search.keys) list = list.filter((c) => c.key);
     return sortComics(list);
-  }, [level, search, extras, libraryRows, sort, yearById, ownedByCatalog]);
+  }, [level, search, extras, libraryRows, customCollected, sort, yearById, ownedByCatalog]);
 
   const filteredNoteworthy = useMemo(() => {
     if (level !== "publishers") return [];
-    let list = split.noteworthy;
+    let list = filterIssueComics(split.noteworthy);
     if (search.keys) list = list.filter((c) => c.key);
     list = collapseComicVariants(list);
     return sortComics(list);
   }, [level, split.noteworthy, search.keys, sort, ownedByCatalog]);
 
   function goUp() {
-    if (level === "issues") {
+    if (level === "issues" || level === "collected") {
       void navigate({
-        search: (prev) => ({ ...prev, series: undefined, year: undefined, sort: undefined }),
+        search: (prev) => ({
+          ...prev,
+          series: undefined,
+          year: undefined,
+          section: undefined,
+          sort: undefined,
+        }),
       });
       return;
     }
     if (level === "series") {
       void navigate({
-        search: (prev) => ({ ...prev, publisher: undefined, series: undefined, year: undefined }),
+        search: (prev) => ({
+          ...prev,
+          publisher: undefined,
+          series: undefined,
+          year: undefined,
+          section: undefined,
+        }),
       });
       return;
     }
@@ -249,8 +345,8 @@ function ComicsPage() {
         <div>
           <h1 className="font-display text-3xl tracking-wide uppercase">Comic catalog</h1>
           <p className="mt-2 max-w-2xl text-sm text-muted">
-            Browse Publisher → Series (by run year) → Issues. Same-title reboots stay split
-            (e.g. Amazing Spider-Man 2022 vs the classic run). Search still finds any issue.
+            Browse Publisher → Series (by run year) → Issues. Same-title reboots stay split.
+            Collected Editions live under each publisher when that catalog has trades or omnibuses.
           </p>
         </div>
         <div className="flex gap-2">
@@ -260,7 +356,7 @@ function ComicsPage() {
             </Link>
           </Button>
           <Button variant="outline" onClick={() => setCustomOpen(true)}>
-            <Plus /> Custom issue
+            <Plus /> {inCollected ? "Custom collected" : "Custom issue"}
           </Button>
         </div>
       </header>
@@ -289,6 +385,7 @@ function ComicsPage() {
                     publisher: search.publisher,
                     series: undefined,
                     year: undefined,
+                    section: undefined,
                     q: undefined,
                   }),
                 })
@@ -298,7 +395,13 @@ function ComicsPage() {
             </button>
           </>
         ) : null}
-        {search.series && search.year != null ? (
+        {level === "collected" ? (
+          <>
+            <ChevronRight className="size-3 text-muted" />
+            <span className="text-fg">Collected Editions</span>
+          </>
+        ) : null}
+        {search.series && search.year != null && level !== "collected" ? (
           <>
             <ChevronRight className="size-3 text-muted" />
             <span className="text-fg">{seriesHeading}</span>
@@ -324,7 +427,7 @@ function ComicsPage() {
         <Search className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted" />
         <Input
           value={qDraft}
-          placeholder="Amazing Spider-Man 300, Absolute Batman, Saga…"
+          placeholder="Amazing Spider-Man 300, Death of Superman Compendium, Saga…"
           className="pl-10"
           onChange={(e) => setQDraft(e.target.value)}
         />
@@ -337,24 +440,27 @@ function ComicsPage() {
         >
           Keys only
         </FilterChip>
-        {(level === "issues" || level === "search" ? (["issue", "release", "name", "acquired"] as const) : (["release", "name", "acquired"] as const)).map(
-          (s) => (
-            <FilterChip
-              key={s}
-              active={sort === s}
-              onClick={() =>
-                navigate({
-                  search: (prev) => ({
-                    ...prev,
-                    sort: s === (level === "issues" ? "issue" : "release") ? undefined : s,
-                  }),
-                })
-              }
-            >
-              {SORT_LABEL[s]}
-            </FilterChip>
-          ),
-        )}
+        {(inCollected
+          ? (["release", "name", "acquired"] as const)
+          : level === "issues" || level === "search"
+            ? (["issue", "release", "name", "acquired"] as const)
+            : (["release", "name", "acquired"] as const)
+        ).map((s) => (
+          <FilterChip
+            key={s}
+            active={sort === s}
+            onClick={() =>
+              navigate({
+                search: (prev) => ({
+                  ...prev,
+                  sort: s === (inCollected || level !== "issues" ? "release" : "issue") ? undefined : s,
+                }),
+              })
+            }
+          >
+            {SORT_LABEL[s]}
+          </FilterChip>
+        ))}
       </div>
 
       {level === "publishers" ? (
@@ -364,35 +470,48 @@ function ComicsPage() {
               <h2 className="font-display text-lg tracking-wide uppercase">Publishers</h2>
               <p className="mt-1 text-xs text-muted">Step 1 of the ladder — pick a publisher to open its series.</p>
             </div>
-            <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-              {publishers.map((p) => (
-                <li key={p.publisher}>
-                  <button
-                    type="button"
-                    onClick={() =>
-                      navigate({
-                        search: (prev) => ({
-                          ...prev,
-                          publisher: p.publisher,
-                          series: undefined,
-                          year: undefined,
-                          q: undefined,
-                        }),
-                      })
-                    }
-                    className="flex w-full items-center justify-between gap-3 rounded-lg bg-bg-elevated px-4 py-3 text-left shadow-[0_0_0_1px_rgba(214,230,255,0.08)] transition-colors hover:bg-surface"
-                  >
-                    <span className="min-w-0">
-                      <span className="block truncate font-medium">{p.publisher}</span>
-                      <span className="text-xs text-muted">
-                        {p.seriesCount} series · {p.issueCount} issues
-                      </span>
-                    </span>
-                    <ChevronRight className="size-4 shrink-0 text-muted" />
-                  </button>
-                </li>
-              ))}
-            </ul>
+            {publishers.length === 0 ? (
+              <p className="rounded-lg bg-bg-elevated px-4 py-6 text-sm text-muted shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
+                No publishers in this catalog slice yet.
+              </p>
+            ) : (
+              <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                {publishers.map((p) => {
+                  const collectedCount = collectedCounts.get(normalizePublisher(p.publisher)) ?? 0;
+                  return (
+                    <li key={p.publisher}>
+                      <button
+                        type="button"
+                        onClick={() =>
+                          navigate({
+                            search: (prev) => ({
+                              ...prev,
+                              publisher: p.publisher,
+                              series: undefined,
+                              year: undefined,
+                              section: undefined,
+                              q: undefined,
+                            }),
+                          })
+                        }
+                        className="flex w-full items-center justify-between gap-3 rounded-lg bg-bg-elevated px-4 py-3 text-left shadow-[0_0_0_1px_rgba(214,230,255,0.08)] transition-colors hover:bg-surface"
+                      >
+                        <span className="min-w-0">
+                          <span className="block truncate font-medium">{p.publisher}</span>
+                          <span className="text-xs text-muted">
+                            {p.seriesCount} series · {p.issueCount} issues
+                            {collectedCount
+                              ? ` · ${collectedCount} collected`
+                              : ""}
+                          </span>
+                        </span>
+                        <ChevronRight className="size-4 shrink-0 text-muted" />
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
           </section>
 
           <section className="flex flex-col gap-3">
@@ -420,56 +539,106 @@ function ComicsPage() {
       ) : null}
 
       {level === "series" ? (
-        <section className="flex flex-col gap-3">
-          <div>
-            <h2 className="font-display text-lg tracking-wide uppercase">Series · {search.publisher}</h2>
-            <p className="mt-1 text-xs text-muted">
-              Runs are split by start year so reboots do not merge. {seriesList.length} series.
-            </p>
-          </div>
-          {seriesList.length === 0 ? (
-            <p className="rounded-lg bg-bg-elevated px-4 py-6 text-sm text-muted shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
-              No series under this publisher yet.
-            </p>
-          ) : (
-            <ul className="grid gap-2">
-              {seriesList.map((s) => (
-                <li key={s.key}>
-                  <button
-                    type="button"
-                    onClick={() =>
-                      navigate({
-                        search: (prev) => ({
-                          ...prev,
-                          publisher: s.publisher,
-                          series: s.title,
-                          year: s.year,
-                          q: undefined,
-                          sort: undefined,
-                        }),
-                      })
-                    }
-                    className="flex w-full items-center gap-3 rounded-lg bg-bg-elevated p-2 text-left shadow-[0_0_0_1px_rgba(214,230,255,0.08)] transition-colors hover:bg-surface"
-                  >
-                    {s.sample ? (
-                      <ComicCover comic={s.sample} resolveRemote className="h-16 w-11 shrink-0 rounded-sm" />
-                    ) : (
-                      <div className="h-16 w-11 shrink-0 rounded-sm bg-surface" />
-                    )}
-                    <span className="min-w-0 flex-1">
-                      <span className="block truncate font-medium">{seriesDisplayLabel(s.title, s.year)}</span>
-                      <span className="text-xs text-muted">
-                        {s.issueCount} issue{s.issueCount === 1 ? "" : "s"}
+        <>
+          {publisherCollected.length > 0 ? (
+            <section className="flex flex-col gap-3">
+              <div>
+                <h2 className="font-display text-lg tracking-wide uppercase">Collected Editions</h2>
+                <p className="mt-1 text-xs text-muted">
+                  Trades, hardcovers, and omnibuses from this publisher — kept off the series ladder.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() =>
+                  navigate({
+                    search: (prev) => ({
+                      ...prev,
+                      publisher: search.publisher,
+                      series: undefined,
+                      year: undefined,
+                      q: undefined,
+                      sort: undefined,
+                      section: "collected",
+                    }),
+                  })
+                }
+                className="flex w-full items-center gap-3 rounded-lg bg-bg-elevated p-2 text-left shadow-[0_0_0_1px_rgba(214,230,255,0.08)] transition-colors hover:bg-surface"
+              >
+                {publisherCollected[0] ? (
+                  <ComicCover comic={publisherCollected[0]} resolveRemote className="h-16 w-11 shrink-0 rounded-sm" />
+                ) : (
+                  <div className="h-16 w-11 shrink-0 rounded-sm bg-surface" />
+                )}
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate font-medium">Collected Editions</span>
+                  <span className="text-xs text-muted">
+                    {publisherCollected.length} edition{publisherCollected.length === 1 ? "" : "s"}
+                  </span>
+                </span>
+                <span className="flex flex-wrap justify-end gap-1">
+                  {[...new Set(publisherCollected.map((c) => comicFormatLabel(c.format)))].map((label) => (
+                    <Badge key={label} tone="ice">
+                      {label}
+                    </Badge>
+                  ))}
+                </span>
+                <ChevronRight className="size-4 shrink-0 text-muted" />
+              </button>
+            </section>
+          ) : null}
+          <section className="flex flex-col gap-3">
+            <div>
+              <h2 className="font-display text-lg tracking-wide uppercase">Series · {search.publisher}</h2>
+              <p className="mt-1 text-xs text-muted">
+                Runs are split by start year so reboots do not merge. {seriesList.length} series.
+              </p>
+            </div>
+            {seriesList.length === 0 ? (
+              <p className="rounded-lg bg-bg-elevated px-4 py-6 text-sm text-muted shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
+                No series under this publisher yet.
+              </p>
+            ) : (
+              <ul className="grid gap-2">
+                {seriesList.map((s) => (
+                  <li key={s.key}>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        navigate({
+                          search: (prev) => ({
+                            ...prev,
+                            publisher: s.publisher,
+                            series: s.title,
+                            year: s.year,
+                            q: undefined,
+                            sort: undefined,
+                            section: undefined,
+                          }),
+                        })
+                      }
+                      className="flex w-full items-center gap-3 rounded-lg bg-bg-elevated p-2 text-left shadow-[0_0_0_1px_rgba(214,230,255,0.08)] transition-colors hover:bg-surface"
+                    >
+                      {s.sample ? (
+                        <ComicCover comic={s.sample} resolveRemote className="h-16 w-11 shrink-0 rounded-sm" />
+                      ) : (
+                        <div className="h-16 w-11 shrink-0 rounded-sm bg-surface" />
+                      )}
+                      <span className="min-w-0 flex-1">
+                        <span className="block truncate font-medium">{seriesDisplayLabel(s.title, s.year)}</span>
+                        <span className="text-xs text-muted">
+                          {s.issueCount} issue{s.issueCount === 1 ? "" : "s"}
+                        </span>
                       </span>
-                    </span>
-                    {s.year ? <Badge tone="gold">{s.year}</Badge> : <Badge>Unknown</Badge>}
-                    <ChevronRight className="size-4 shrink-0 text-muted" />
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
-        </section>
+                      {s.year ? <Badge tone="gold">{s.year}</Badge> : <Badge>Unknown</Badge>}
+                      <ChevronRight className="size-4 shrink-0 text-muted" />
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+        </>
       ) : null}
 
       {level === "issues" ? (
@@ -492,6 +661,27 @@ function ComicsPage() {
         </section>
       ) : null}
 
+      {level === "collected" ? (
+        <section className="flex flex-col gap-3">
+          <div>
+            <h2 className="font-display text-lg tracking-wide uppercase">Collected Editions</h2>
+            <p className="mt-1 text-xs text-muted">
+              {search.publisher} · trades, hardcovers, and omnibuses · {collectedComics.length} shown
+            </p>
+          </div>
+          <ComicGrid
+            comics={collectedComics}
+            ownedIds={ownedIds}
+            wanted={wanted}
+            onAdd={setAdding}
+            yearById={yearById}
+            emptyAction={() => setCustomOpen(true)}
+            collectedEmpty
+            showCollectedMeta
+          />
+        </section>
+      ) : null}
+
       {level === "search" ? (
         <ComicGrid
           comics={filteredSearch}
@@ -503,8 +693,15 @@ function ComicsPage() {
         />
       ) : null}
 
-      {adding ? <AddComicDialog comic={adding} open onOpenChange={(v) => !v && setAdding(null)} /> : null}
-      <CustomComicDialog open={customOpen} onOpenChange={setCustomOpen} />
+      {adding ? (
+        <AddComicDialog
+          comic={adding.id.startsWith("custom-") ? undefined : adding}
+          custom={adding.id.startsWith("custom-") ? customComics[adding.id] : undefined}
+          open
+          onOpenChange={(v) => !v && setAdding(null)}
+        />
+      ) : null}
+      <CustomComicDialog open={customOpen} onOpenChange={setCustomOpen} collected={inCollected} />
     </main>
   );
 }
@@ -519,23 +716,33 @@ function ComicGrid({
   yearById,
   emptyAction,
   showSeriesYear = true,
+  collectedEmpty = false,
+  showCollectedMeta = false,
 }: {
   comics: CatalogComic[];
-  ownedIds: Set<string | undefined>;
+  ownedIds: Set<string>;
   wanted: Record<string, unknown>;
   onAdd: (c: CatalogComic) => void;
   yearById: Map<string, number>;
   emptyAction?: () => void;
   showSeriesYear?: boolean;
+  collectedEmpty?: boolean;
+  showCollectedMeta?: boolean;
 }) {
   if (!comics.length) {
     if (!emptyAction) return null;
     return (
       <div className="rounded-xl bg-bg-elevated p-8 text-center shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
-        <p className="font-display text-xl tracking-wide uppercase">No matches</p>
-        <p className="mt-2 text-sm text-muted">Add it as a custom issue.</p>
+        <p className="font-display text-xl tracking-wide uppercase">
+          {collectedEmpty ? "No collected editions yet" : "No matches"}
+        </p>
+        <p className="mt-2 text-sm text-muted">
+          {collectedEmpty
+            ? "Trades, hardcovers, and omnibuses will appear here as the catalog grows. Add a custom collected book if you already own one."
+            : "Add it as a custom issue."}
+        </p>
         <Button className="mt-4" onClick={emptyAction}>
-          Add custom issue
+          {collectedEmpty ? "Add custom collected" : "Add custom issue"}
         </Button>
       </div>
     );
@@ -552,21 +759,35 @@ function ComicGrid({
         const want = Boolean(wanted[comic.id]);
         const est = comicEstimate(comic);
         const year = seriesRunYearFor(comic, yearById);
+        const isCustom = comic.id.startsWith("custom-");
+        const cover = <ComicCover comic={comic} resolveRemote className="aspect-2/3" />;
         return (
           <div className="overflow-hidden rounded-lg bg-bg-elevated shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
-            <Link to="/comics/$comicId" params={{ comicId: comic.id }} className="block">
-              <ComicCover comic={comic} resolveRemote className="aspect-2/3" />
-            </Link>
+            {isCustom ? (
+              <button type="button" className="block w-full" onClick={() => onAdd(comic)}>
+                {cover}
+              </button>
+            ) : (
+              <Link to="/comics/$comicId" params={{ comicId: comic.id }} className="block">
+                {cover}
+              </Link>
+            )}
             <div className="grid gap-1.5 p-3">
               <p className="line-clamp-2 text-sm font-medium">{comicLabel(comic)}</p>
               <p className="text-xs text-muted">
                 {comic.publisher}
-                {showSeriesYear && year ? ` · ${year}` : ""}
+                {showCollectedMeta
+                  ? ` · ${formatMonthYear(comic.streetDate ?? comic.coverDate)}`
+                  : showSeriesYear && year
+                    ? ` · ${year}`
+                    : ""}
               </p>
               <div className="flex flex-wrap gap-1">
                 {have ? <Badge tone="gain">Owned</Badge> : null}
                 {want && !have ? <Badge tone="gold">Wanted</Badge> : null}
                 {comic.key ? <Badge tone="red">Key</Badge> : null}
+                {isCollectedComic(comic) ? <Badge tone="ice">{comicFormatLabel(comic.format)}</Badge> : null}
+                {isCustom ? <Badge>Custom</Badge> : null}
               </div>
               <div className="flex items-center justify-between">
                 <span className="tabular text-sm text-gold">{usd(est)}</span>
@@ -605,15 +826,28 @@ function FilterChip({
   );
 }
 
-function CustomComicDialog({ open, onOpenChange }: { open: boolean; onOpenChange: (v: boolean) => void }) {
+function CustomComicDialog({
+  open,
+  onOpenChange,
+  collected = false,
+}: {
+  open: boolean;
+  onOpenChange: (v: boolean) => void;
+  collected?: boolean;
+}) {
   const [series, setSeries] = useState("");
   const [issue, setIssue] = useState("");
   const [publisher, setPublisher] = useState("");
   const [coverDate, setCoverDate] = useState("");
   const [msrp, setMsrp] = useState("4.99");
-  const [format, setFormat] = useState<ComicFormat>("single");
+  const [format, setFormat] = useState<ComicFormat>(collected ? "tpb" : "single");
   const [variant, setVariant] = useState("");
   const [draft, setDraft] = useState<CustomComic | null>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    setFormat(collected ? "tpb" : "single");
+  }, [open, collected]);
 
   function next() {
     if (!series.trim()) return;
@@ -635,8 +869,12 @@ function CustomComicDialog({ open, onOpenChange }: { open: boolean; onOpenChange
       <Dialog open={open && !draft} onOpenChange={onOpenChange}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Custom issue</DialogTitle>
-            <DialogDescription>For books the catalog does not carry yet.</DialogDescription>
+            <DialogTitle>{collected ? "Custom collected" : "Custom issue"}</DialogTitle>
+            <DialogDescription>
+              {collected
+                ? "For a trade, hardcover, or omnibus the catalog does not carry yet."
+                : "For books the catalog does not carry yet."}
+            </DialogDescription>
           </DialogHeader>
           <div className="grid gap-3">
             <Field label="Series" value={series} onChange={setSeries} placeholder="Action Comics" />
@@ -656,7 +894,7 @@ function CustomComicDialog({ open, onOpenChange }: { open: boolean; onOpenChange
                 <SelectContent>
                   {(["single", "annual", "tpb", "hc", "omnibus", "facsimile"] as const).map((f) => (
                     <SelectItem key={f} value={f}>
-                      {f}
+                      {COMIC_FORMAT_LABELS[f]}
                     </SelectItem>
                   ))}
                 </SelectContent>
