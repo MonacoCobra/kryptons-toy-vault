@@ -40,5 +40,10 @@ are allowed when explicitly requested.
 ## Tooling
 
 - `scripts/comic_backlog_common.py` — `FLOOR`, blocklists, `BatchBuilder`, `inject`
-- `scripts/gen-batch-*.py` — generators
+- `scripts/gen-batch-*.py` — generators (do **not** use for post-prune mass growth)
 - `python3 scripts/comic_backlog_common.py inject batch-00N`
+- **`scripts/ingest-locg-series-to-catalog.py`** — highest-trust growth: real LOCG
+  series → new `comics.ts` rows (`locgId` + UPC and/or cover). Glyph/Lyra feed
+  numeric series ids via `--series-id` / `--series-ids-file` (Image / Boom / IDW /
+  Dark Horse / indie first). See `scripts/locg-series-ids.example.txt` and
+  `docs/comic-upc.md`.

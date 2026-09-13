@@ -5,7 +5,7 @@ import json, re, sys
 from pathlib import Path
 from collections import Counter
 
-ROOT = Path("/workspace/collection-app")
+ROOT = Path(__file__).resolve().parents[1]
 COMICS_TS = ROOT / "src/data/comics.ts"
 BACKLOG = ROOT / "src/data/comic-backlog"
 # Permanent archive release/cover floor — nothing older than this date.
@@ -80,7 +80,7 @@ def ts_literal(row) -> str:
     ]
     if extra and isinstance(extra, dict) and extra:
         bits = []
-        for k in ("variant", "upc", "streetDate", "cover"):
+        for k in ("variant", "upc", "streetDate", "cover", "locgId"):
             if extra.get(k):
                 bits.append(f"{k}: {json.dumps(extra[k])}")
         if bits:

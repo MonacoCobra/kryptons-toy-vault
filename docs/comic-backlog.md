@@ -32,6 +32,12 @@ No generative AI cover art. Palette placeholders in backlog rows; Comic Vine URL
 
 See **[comic-upc.md](./comic-upc.md)**. LOCG-first UPC/ISBN; cover matching prefers UPC so variants do not steal art. Backfill: `scripts/backfill-comic-upcs.py` (Crawl-delay 30s).
 
+**New catalog rows from real LOCG series** (post-prune growth):
+`scripts/ingest-locg-series-to-catalog.py`. Glyph/Lyra feed numeric series ids
+(`--series-id` / `--series-ids-file` / `--list-cache-seeds`). Gates: real page +
+`locgId` + UPC and/or cover; no invented metadata; no `gen-batch-*`. Fixture
+proof: `python3 scripts/ingest-locg-series-to-catalog.test.py`.
+
 ## Variant covers on detail
 
 See **[comic-upc.md](./comic-upc.md)** § Variant side-scroll. List shows primary/Cover A; detail page scrolls real catalog variants for the series+issue+publisher family (`getComicVariants`).
