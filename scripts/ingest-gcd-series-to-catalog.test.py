@@ -205,6 +205,100 @@ class HelpersTest(unittest.TestCase):
             "pre-floor",
         )
 
+    def test_viewer_family_copies_parent_sibling_or_skips(self):
+        parent = {"id": 8000001, "number": "1"}
+        added = [[
+            "im-gcd-fixture-indie-1",
+            "GCD Fixture Indie",
+            "1",
+            "Image Comics",
+            "2020-03-01",
+            "",
+            "",
+            "",
+            3.99,
+            "single",
+            0.8,
+            0,
+            "c2410c,1e3a8a,fde68a",
+            {"gcdIssueId": "8000001"},
+        ]]
+        self.assertEqual(
+            ingest.viewer_family_from_parent(
+                parent,
+                series_name="GCD Fixture Indie",
+                publisher="Image Comics",
+                existing_meta={},
+                added_rows=added,
+            ),
+            ("GCD Fixture Indie", "1", "Image Comics", "single"),
+        )
+        self.assertEqual(
+            ingest.viewer_family_from_parent(
+                {"id": 99, "number": "1"},
+                series_name="Saga",
+                publisher="Image Comics",
+                existing_meta={
+                    "im-saga-1": {
+                        "series": "Saga",
+                        "issue": "1",
+                        "publisher": "Image Comics",
+                        "format": "single",
+                    }
+                },
+                added_rows=[],
+            ),
+            ("Saga", "1", "Image Comics", "single"),
+        )
+        self.assertIsNone(
+            ingest.viewer_family_from_parent(
+                {"id": 8000005, "number": "5"},
+                series_name="GCD Fixture Indie",
+                publisher="Image Comics",
+                existing_meta={},
+                added_rows=[],
+            )
+        )
+
+    def test_gate_identity_includes_variant(self):
+        main = {
+            "gcdIssueId": "8000001",
+            "upc": "84428400999100111",
+            "series": "GCD Fixture Indie",
+            "issue": "1",
+            "publisher": "Image Comics",
+            "coverDate": "2020-03-01",
+            "variantName": "",
+        }
+        variant = dict(main, gcdIssueId="8000004", upc="84428400999100121", variantName="Cover B")
+        keys = {
+            ingest.identity_key("GCD Fixture Indie", "1", "Image Comics"),
+        }
+        self.assertIsNone(
+            ingest.gate_reason(
+                variant,
+                existing_ids={"im-gcd-fixture-indie-1"},
+                existing_keys=keys,
+                existing_gcd={"8000001"},
+                existing_locg=set(),
+                min_year=1980,
+                catalog_id="im-gcd-fixture-indie-1-cover-b",
+            )
+        )
+        keys.add(ingest.identity_key("GCD Fixture Indie", "1", "Image Comics", "Cover B"))
+        self.assertEqual(
+            ingest.gate_reason(
+                variant,
+                existing_ids={"im-gcd-fixture-indie-1", "im-gcd-fixture-indie-1-cover-b"},
+                existing_keys=keys,
+                existing_gcd={"8000001", "8000004"},
+                existing_locg=set(),
+                min_year=1980,
+                catalog_id="im-gcd-fixture-indie-1-cover-b-2",
+            ),
+            "dup-gcdIssueId",
+        )
+
     def test_merge_upc_does_not_clobber_locg_or_metron(self):
         disk = {
             "im-keep-locg": {"upc": "111111111111", "source": "locg", "locgId": "1"},
@@ -327,7 +421,10 @@ class FixtureIngestTest(unittest.TestCase):
         self.assertIsNone(added["im-gcd-fixture-indie-2"]["upc"])
         self.assertEqual(added["im-gcd-fixture-indie-6"]["gcdIssueId"], "8000006")
         self.assertEqual(added["im-gcd-fixture-indie-6"]["upc"], "9781534321234")
-        self.assertIn("variant", skip_reasons)
+        self.assertIn("im-gcd-fixture-indie-1-cover-b", added)
+        self.assertEqual(added["im-gcd-fixture-indie-1-cover-b"]["issue"], "1")
+        self.assertEqual(added["im-gcd-fixture-indie-1-cover-b"]["variant"], "Cover B")
+        self.assertEqual(added["im-gcd-fixture-indie-1-cover-b"]["gcdIssueId"], "8000004")
         self.assertIn("no-cover-date", skip_reasons)
         self.assertIn("collected-edition", skip_reasons)
         self.assertEqual((root / "src/data/comics.ts").read_text(), MINI_COMICS_TS)
@@ -351,7 +448,7 @@ class FixtureIngestTest(unittest.TestCase):
                 }
             }
         )
-        report = self._run(["900101"], extra=["--max-issues", "1"], root=root)
+        report = self._run(["900101"], extra=["--max-issues", "1", "--mains-only"], root=root)
         self.assertEqual(report["added"], [])
         self.assertTrue(any(s["reason"] == "dup-gcdIssueId" for s in report["skipped"]))
 
@@ -458,7 +555,15 @@ class DumpIngestTest(unittest.TestCase):
         self.assertEqual(added["im-gcd-fixture-indie-2"]["gcdIssueId"], "8000002")
         self.assertIsNone(added["im-gcd-fixture-indie-2"]["upc"])
         self.assertEqual(added["im-gcd-fixture-indie-6"]["upc"], "9781534321234")
-        self.assertTrue({"variant", "no-cover-date", "collected-edition"} <= skip_reasons)
+        self.assertTrue({"variant-orphan", "no-cover-date", "collected-edition"} <= skip_reasons)
+        cover_b = next((r for r in report["added"] if r.get("gcdIssueId") == "8000004"), None)
+        self.assertIsNotNone(cover_b)
+        assert cover_b is not None
+        self.assertEqual(cover_b["issue"], "1")
+        self.assertEqual(cover_b["variant"], "Cover B")
+        self.assertEqual(cover_b["id"], "im-gcd-fixture-indie-1-cover-b")
+        self.assertNotEqual(cover_b["id"], added["im-gcd-fixture-indie-1"]["id"])
+        self.assertFalse(any(r.get("gcdIssueId") in {"8000007", "8000008", "8000009", "8000010"} for r in report["added"]))
         self.assertEqual((root / "src/data/comics.ts").read_text(), MINI_COMICS_TS)
 
     def test_dump_publisher_discovery(self):
@@ -579,6 +684,7 @@ class DumpIngestTest(unittest.TestCase):
             "900101",
             "--max-issues",
             "1",
+            "--mains-only",
             "--root",
             str(root),
         ]
@@ -588,6 +694,90 @@ class DumpIngestTest(unittest.TestCase):
         upc = json.loads((root / "src/data/comic-upc-map.json").read_text())
         self.assertEqual(upc["im-keep-1"]["upc"], "111111111111")
         self.assertEqual(upc["im-gcd-fixture-indie-1"]["gcdIssueId"], "8000001")
+
+    def test_dump_keeps_linked_variant_on_parent_issue(self):
+        root = self._mini_root()
+        report = self._run(["900101"], root=root)
+        added = {r["gcdIssueId"]: r for r in report["added"]}
+        self.assertEqual(added["8000001"]["issue"], "1")
+        self.assertIsNone(added["8000001"].get("variant"))
+        self.assertEqual(added["8000004"]["issue"], "1")
+        self.assertEqual(added["8000004"]["variant"], "Cover B")
+        self.assertEqual(added["8000004"]["id"], "im-gcd-fixture-indie-1-cover-b")
+        self.assertNotEqual(added["8000004"]["id"], added["8000001"]["id"])
+        # Live viewer: comicFamilyKey = series|issue|publisher (no variant).
+        self.assertEqual(
+            ingest.comic_family_key(
+                added["8000004"]["series"],
+                added["8000004"]["issue"],
+                added["8000004"]["publisher"],
+            ),
+            ingest.comic_family_key(
+                added["8000001"]["series"],
+                added["8000001"]["issue"],
+                added["8000001"]["publisher"],
+            ),
+        )
+        self.assertEqual(added["8000004"]["format"], added["8000001"]["format"])
+        self.assertEqual(added["8000004"]["upc"], "84428400999100121")
+
+    def test_comic_family_key_matches_viewer_normalize(self):
+        self.assertEqual(
+            ingest.comic_family_key("GCD Fixture Indie", "1", "Image Comics"),
+            "gcd fixture indie|1|image comics",
+        )
+        self.assertEqual(
+            ingest.comic_family_key("  Saga  ", " 1 ", "IMAGE   Comics"),
+            "saga|1|image comics",
+        )
+
+    def test_dump_skips_orphan_variants(self):
+        root = self._mini_root()
+        report = self._run(["900101"], root=root)
+        orphan_ids = {
+            str(s.get("gcdIssueId"))
+            for s in report["skipped"]
+            if s.get("reason") == "variant-orphan"
+        }
+        self.assertTrue({"8000007", "8000008", "8000009", "8000010"} <= orphan_ids)
+        added_ids = {r["gcdIssueId"] for r in report["added"]}
+        self.assertFalse(added_ids & {"8000007", "8000008", "8000009", "8000010"})
+
+    def test_dump_mains_only_skips_linked_variants(self):
+        root = self._mini_root()
+        report = self._run(["900101"], extra=["--mains-only"], root=root)
+        added_ids = {r["gcdIssueId"] for r in report["added"]}
+        self.assertIn("8000001", added_ids)
+        self.assertNotIn("8000004", added_ids)
+        self.assertTrue(any(s.get("gcdIssueId") == 8000004 or s.get("gcdIssueId") == "8000004" for s in report["skipped"]))
+
+    def test_dump_max_issues_counts_mains_and_brings_their_variants(self):
+        root = self._mini_root()
+        report = self._run(["900101"], extra=["--max-issues", "1"], root=root)
+        added = {r["gcdIssueId"]: r for r in report["added"]}
+        self.assertIn("8000001", added)
+        self.assertIn("8000004", added)
+        self.assertNotIn("8000002", added)
+        self.assertEqual(added["8000004"]["issue"], "1")
+
+    def test_dump_write_variant_extra_and_own_gcd_id(self):
+        root = self._mini_root()
+        argv = [
+            "--dump-dir",
+            str(DUMP_DIR),
+            "--series-id",
+            "900101",
+            "--max-issues",
+            "1",
+            "--root",
+            str(root),
+        ]
+        self.assertEqual(ingest.main(argv), 0)
+        comics = (root / "src/data/comics.ts").read_text()
+        self.assertIn('gcdIssueId: "8000001"', comics)
+        self.assertIn('gcdIssueId: "8000004"', comics)
+        self.assertIn('variant: "Cover B"', comics)
+        self.assertIn("im-gcd-fixture-indie-1-cover-b", comics)
 
     def test_refuses_api_without_use_api_flag(self):
         root = self._mini_root()
