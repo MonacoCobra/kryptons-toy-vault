@@ -9,6 +9,21 @@ Catalog browse is **Publisher → Series (run year) → Issues**.
 - Issue lists under a series sort by issue number by default.
 - Search (`q`) bypasses the ladder and returns a flat issue grid.
 
+## Collected editions
+
+`/comics?view=collected` is a first-class mode for trades, hardcovers, and
+omnibuses (`format` ∈ `tpb` | `hc` | `omnibus`). `hardcover` on dump/live rows
+normalizes to `hc`.
+
+- Same publisher → title → list ladder; counts say “editions” not “issues”.
+- Sort: release / name / acquired (no issue-# default).
+- Cards and detail show a **TPB / HC / Omnibus** badge.
+- Issues mode excludes collected rows so singles variant collapse is unchanged.
+- Search from Issues still finds collected titles; Collected search is scoped
+  to those formats (plus custom collected books).
+- Empty copy: collected dump rows may still be landing — users can add a
+  custom collected book in the meantime.
+
 ## Series-year rule
 
 Implemented in `src/lib/comic-series.ts`.

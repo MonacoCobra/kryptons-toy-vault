@@ -9,6 +9,7 @@ import { MarketEstimate } from "@/components/market-estimate";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { libraryCatalogRows } from "@/lib/comic-catalog";
+import { comicFormatLabel, isCollectedComic } from "@/lib/comic-format";
 import {
   assignSeriesRunYears,
   seriesBaseTitle,
@@ -101,7 +102,7 @@ function ComicDetail() {
             {wanted && !owned ? <Badge tone="gold">Wanted</Badge> : null}
             {comic.key ? <Badge tone="red">Key issue</Badge> : null}
             {comic.variant ? <Badge tone="gold">{comic.variant}</Badge> : null}
-            <Badge>{comic.format}</Badge>
+            <Badge tone={isCollectedComic(comic) ? "ice" : "default"}>{comicFormatLabel(comic.format)}</Badge>
           </div>
         </div>
 
@@ -150,15 +151,29 @@ function ComicLadderCrumbs({
 }) {
   const year = seriesRunYearFor(comic, yearById);
   const title = seriesBaseTitle(comic.series);
+  const collected = isCollectedComic(comic);
+  const view = collected ? ("collected" as const) : undefined;
   return (
     <nav aria-label="Comic breadcrumb" className="flex flex-wrap items-center gap-1 text-xs tracking-[0.2em] uppercase">
-      <Link to="/comics" search={{}} className="inline-flex items-center gap-1 text-gold hover:underline">
+      <Link
+        to="/comics"
+        search={view ? { view } : {}}
+        className="inline-flex items-center gap-1 text-gold hover:underline"
+      >
         <ArrowLeft className="size-3" /> Comics
       </Link>
+      {collected ? (
+        <>
+          <ChevronRight className="size-3 text-muted" />
+          <Link to="/comics" search={{ view }} className="text-gold hover:underline">
+            Collected
+          </Link>
+        </>
+      ) : null}
       <ChevronRight className="size-3 text-muted" />
       <Link
         to="/comics"
-        search={{ publisher: comic.publisher }}
+        search={{ publisher: comic.publisher, view }}
         className="text-gold hover:underline"
       >
         {comic.publisher}
@@ -166,7 +181,7 @@ function ComicLadderCrumbs({
       <ChevronRight className="size-3 text-muted" />
       <Link
         to="/comics"
-        search={{ publisher: comic.publisher, series: title, year }}
+        search={{ publisher: comic.publisher, series: title, year, view }}
         className="text-gold hover:underline"
       >
         {seriesDisplayLabel(title, year)}
