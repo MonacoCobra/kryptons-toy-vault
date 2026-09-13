@@ -2,7 +2,15 @@ import type { CatalogComic, ComicFormat } from "@/lib/types";
 import coverUrls from "./comic-cover-urls.json";
 import upcMap from "./comic-upc-map.json";
 
-type UpcMapEntry = { upc?: string; coverUrl?: string; locgId?: string; source?: string };
+type UpcMapEntry = {
+  upc?: string;
+  isbn?: string;
+  coverUrl?: string;
+  locgId?: string;
+  gcdIssueId?: string;
+  sourceId?: string;
+  source?: string;
+};
 const UPC_MAP = upcMap as Record<string, UpcMapEntry>;
 
 type Row = [
@@ -19,7 +27,14 @@ type Row = [
   demand: number,
   key: number,
   palette: string,
-  extra?: { variant?: string; upc?: string; streetDate?: string; cover?: string; locgId?: string },
+  extra?: {
+    variant?: string;
+    upc?: string;
+    streetDate?: string;
+    cover?: string;
+    locgId?: string;
+    gcdIssueId?: string;
+  },
 ];
 
 const rows: Row[] = [

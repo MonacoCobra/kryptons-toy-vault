@@ -1,0 +1,25 @@
+{
+  "api_url": "https://www.comics.org/api/issue/8000001/",
+  "series_name": "GCD Fixture Indie",
+  "descriptor": "1",
+  "number": "1",
+  "variant_name": "",
+  "variant_of": null,
+  "title": "",
+  "publication_date": "March 2020",
+  "key_date": "2020-03-00",
+  "on_sale_date": "2020-03-11",
+  "price": "3.99 USD",
+  "barcode": "84428400999100111",
+  "isbn": "",
+  "cover": "https://files1.comics.org/img/gcd/covers_by_id/w400/8000001.jpg",
+  "story_set": [
+    {
+      "type": "comic story",
+      "title": "Begin",
+      "page_count": 22,
+      "script": "Jane Writer",
+      "pencils": "Sam Artist"
+    }
+  ]
+}

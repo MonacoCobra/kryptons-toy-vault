@@ -38,6 +38,14 @@ See **[comic-upc.md](./comic-upc.md)**. LOCG-first UPC/ISBN; cover matching pref
 `locgId` + UPC and/or cover; no invented metadata; no `gen-batch-*`. Fixture
 proof: `python3 scripts/ingest-locg-series-to-catalog.test.py`.
 
+**New catalog rows from real GCD series** (parallel path):
+`scripts/ingest-gcd-series-to-catalog.py`. Glyph/Lyra feed numeric GCD series
+ids (Image / Boom / IDW / Dark Horse first). Gates: real GCD series+issue +
+**any of** `gcdIssueId` / UPC / ISBN (barcode not required when the issue id
+is present). Polite comics.org delay ≥6–8s; 429 pull-back (pause / raise delay
+/ abort — no ceiling-retry). Fixture proof:
+`python3 scripts/ingest-gcd-series-to-catalog.test.py`.
+
 ## Variant covers on detail
 
 See **[comic-upc.md](./comic-upc.md)** § Variant side-scroll. List shows primary/Cover A; detail page scrolls real catalog variants for the series+issue+publisher family (`getComicVariants`).

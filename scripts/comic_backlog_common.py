@@ -104,7 +104,7 @@ def ts_literal(row) -> str:
     ]
     if extra and isinstance(extra, dict) and extra:
         bits = []
-        for k in ("variant", "upc", "streetDate", "cover", "locgId"):
+        for k in ("variant", "upc", "streetDate", "cover", "locgId", "gcdIssueId"):
             if extra.get(k):
                 bits.append(f"{k}: {json.dumps(extra[k])}")
         if bits:

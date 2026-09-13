@@ -663,16 +663,24 @@ def merge_upc_maps(disk: dict, local: dict) -> dict:
             new["upc"] = cur["upc"]
             if cur.get("source") and not new.get("source"):
                 new["source"] = cur["source"]
-        # If both have upc and sources differ, keep locg upc unless local is also locg
+        # If both have upc and they differ, keep stronger sources (LOCG / Metron
+        # win over GCD / shop / etc.). Never invent or swap a good barcode.
         if cur.get("upc") and new.get("upc") and cur.get("upc") != new.get("upc"):
             cur_src = str(cur.get("source") or "")
             new_src = str(new.get("source") or "")
-            if "locg" in cur_src and "locg" not in new_src:
+            stronger = ("locg", "metron")
+            cur_strong = any(s in cur_src for s in stronger)
+            new_strong = any(s in new_src for s in stronger)
+            if cur_strong and not new_strong:
                 new["upc"] = cur["upc"]
                 new["source"] = cur_src
-        # Preserve locgId from either
+        # Preserve linkage ids from either side
         if cur.get("locgId") and not new.get("locgId"):
             new["locgId"] = cur["locgId"]
+        if cur.get("gcdIssueId") and not new.get("gcdIssueId"):
+            new["gcdIssueId"] = cur["gcdIssueId"]
+        if cur.get("sourceId") and not new.get("sourceId"):
+            new["sourceId"] = cur["sourceId"]
         if cur.get("coverUrl") and not new.get("coverUrl"):
             new["coverUrl"] = cur["coverUrl"]
         # Merge: local wins on fetchedAt/title when present

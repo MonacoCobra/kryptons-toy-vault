@@ -1,0 +1,24 @@
+{
+  "api_url": "https://www.comics.org/api/issue/8000006/",
+  "series_name": "GCD Fixture Indie",
+  "descriptor": "6",
+  "number": "6",
+  "variant_name": "",
+  "variant_of": null,
+  "title": "",
+  "publication_date": "August 2020",
+  "key_date": "2020-08-00",
+  "on_sale_date": "2020-08-12",
+  "price": "4.99 USD",
+  "barcode": "",
+  "isbn": "978-1-5343-2123-4",
+  "cover": "https://files1.comics.org/img/gcd/covers_by_id/w400/8000006.jpg",
+  "story_set": [
+    {
+      "type": "comic story",
+      "page_count": 22,
+      "script": "Jane Writer",
+      "pencils": "Sam Artist"
+    }
+  ]
+}

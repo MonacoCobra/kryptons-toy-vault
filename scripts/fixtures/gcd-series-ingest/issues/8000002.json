@@ -1,0 +1,25 @@
+{
+  "api_url": "https://www.comics.org/api/issue/8000002/",
+  "series_name": "GCD Fixture Indie",
+  "descriptor": "2",
+  "number": "2",
+  "variant_name": "",
+  "variant_of": null,
+  "title": "",
+  "publication_date": "April 2020",
+  "key_date": "2020-04-00",
+  "on_sale_date": "2020-04-08",
+  "price": "3.99 USD",
+  "barcode": "",
+  "isbn": "",
+  "cover": "https://files1.comics.org/img/gcd/covers_by_id/w400/8000002.jpg",
+  "story_set": [
+    {
+      "type": "comic story",
+      "title": "Next",
+      "page_count": 22,
+      "script": "Jane Writer",
+      "pencils": "Sam Artist"
+    }
+  ]
+}

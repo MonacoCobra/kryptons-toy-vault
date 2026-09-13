@@ -1,0 +1,26 @@
+{
+  "api_url": "https://www.comics.org/api/series/900101/",
+  "name": "GCD Fixture Indie",
+  "country": "us",
+  "language": "en",
+  "year_began": 2020,
+  "year_ended": null,
+  "publisher": "https://www.comics.org/api/publisher/54/",
+  "publishing_format": "was ongoing series",
+  "active_issues": [
+    "https://www.comics.org/api/issue/8000001/",
+    "https://www.comics.org/api/issue/8000002/",
+    "https://www.comics.org/api/issue/8000003/",
+    "https://www.comics.org/api/issue/8000004/",
+    "https://www.comics.org/api/issue/8000005/",
+    "https://www.comics.org/api/issue/8000006/"
+  ],
+  "issue_descriptors": [
+    "1",
+    "2",
+    "3",
+    "4 [Variant]",
+    "5",
+    "6"
+  ]
+}

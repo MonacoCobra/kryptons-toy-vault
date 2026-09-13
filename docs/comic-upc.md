@@ -51,6 +51,50 @@ python3 scripts/ingest-locg-series-to-catalog.py \
   --fixture-dir scripts/fixtures/locg-series-ingest --series-id 900001 --dry-run
 ```
 
+## Catalog growth from real GCD series (comics.org API)
+
+Parallel highest-trust path for **new** `comics.ts` rows: walk real Grand
+Comics Database series → issues via `https://www.comics.org/api/`. Script:
+`scripts/ingest-gcd-series-to-catalog.py`.
+
+**GCD-only gates** (Shelby / Lyra — not the same as LOCG): keep a row if it
+has **any** of `gcdIssueId` **or** UPC **or** ISBN, plus real GCD
+series/issue/publisher. Barcode is **not** required when a real GCD issue id
+is present. Store `gcdIssueId` (and API url) in `comic-upc-map.json`. Never
+invent UPCs; LOCG / Metron barcodes win on merge.
+
+LOCG importer gates stay `locgId` + UPC|cover.
+
+Polite comics.org pacing: default `--delay 7` (live floor 6s). On 429 the
+client pauses, **raises** the session delay, and aborts after two retries —
+it does not retry into a 600s ceiling. Identify as KryptonsToyVault personal
+collection (same family as `scripts/backfill-comic-upcs-gcd.py`).
+
+**Glyph / Lyra:** feed numeric GCD series ids (Image / Boom / IDW / Dark Horse
+/ indie first) from `https://www.comics.org/series/<id>/` or
+`scripts/comic-gcd-series-cache.json`. Do **not** invent ids, UPCs, or
+interpolated ghost rows. Do **not** run `gen-batch-*`. Do **not** mass
+live-ingest from a cloud agent.
+
+```bash
+# List series ids already in the GCD UPC-backfill cache (no live API)
+python3 scripts/ingest-gcd-series-to-catalog.py --list-cache-seeds
+
+# Dry-run a real series (polite ≥6–8s)
+python3 scripts/ingest-gcd-series-to-catalog.py --series-id 122674 --delay 7 --max-issues 10 --dry-run
+
+# Mass file (one id per line; see scripts/gcd-series-ids.example.txt)
+python3 scripts/ingest-gcd-series-to-catalog.py --series-ids-file scripts/gcd-series-ids.example.txt --delay 7
+
+# Optional publisher filter (name or GCD publisher id)
+python3 scripts/ingest-gcd-series-to-catalog.py --series-id 122674 --publisher Valiant --dry-run
+
+# Fixture proof (no live comics.org)
+python3 scripts/ingest-gcd-series-to-catalog.test.py
+python3 scripts/ingest-gcd-series-to-catalog.py \
+  --fixture-dir scripts/fixtures/gcd-series-ingest --series-id 900101 --dry-run
+```
+
 ## Backfill
 
 ```bash
@@ -112,6 +156,7 @@ As LOCG/UPC backfill adds Cover B / virgin / etc. rows, the strip populates auto
 | **Marvel Comics API** (`gateway.marvel.com`) | **Shut down — do not use** | Marvel ended the public API. Use LOCG / retailer Shopify feeds instead. |
 | **IDW Shopify** `idwpublishing.com/products.json` | Live; exclusives-heavy | `scripts/backfill-comic-upcs-idw-shop.py`. SKUs often real UPC/ISBN, but storefront currently skews foil/exclusive — primary Cover A rows are skipped unless a non-exclusive SKU exists. |
 | **Dark Horse / BOOM / Dynamite / Image shop JSON** | No usable public UPC | `products.json` either missing, blocked, or omits barcode; Image shop 403. |
+| **GCD (comics.org API)** | Live; 429-prone | `scripts/ingest-gcd-series-to-catalog.py` for **new** rows; `scripts/backfill-comic-upcs-gcd.py` for keep-set UPC enrich. `gcdIssueId` in the UPC map. Polite ≥6–8s + 429 pull-back. |
 | **Comic Vine barcode** | Optional fallback | Often empty on search/detail in current API; LOCG remains primary. |
 
 All writers merge-safe-save `comic-upc-map.json` so LOCG + publisher jobs can run in parallel without clobbering each other.

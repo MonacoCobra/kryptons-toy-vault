@@ -1,0 +1,16 @@
+# Real GCD series ids for catalog ingest (Image / Boom / IDW / Dark Horse first).
+# Glyph / Lyra: append numeric series ids from comics.org /series/<id>/ — never invent them.
+# Cache dump (no API): python3 scripts/ingest-gcd-series-to-catalog.py --list-cache-seeds
+#
+# Run (polite 7s default; comics.org 429s — do not lower live delay below 6s):
+#   python3 scripts/ingest-gcd-series-to-catalog.py \
+#       --series-ids-file scripts/gcd-series-ids.example.txt --delay 7 --dry-run
+#
+# Prefer Image / Boom! / IDW / Dark Horse / indie. Add those ids from
+# https://www.comics.org/ (series page URL or /api/series/<id>/).
+#
+# Already seen in scripts/comic-gcd-series-cache.json (real GCD ids):
+122674   # X-O Manowar (2017) — Valiant
+131922   # Books of Magic (2018)
+114713   # Darth Vader (2017)
+# Image / Boom / IDW / Dark Horse — paste comics.org series ids below:
