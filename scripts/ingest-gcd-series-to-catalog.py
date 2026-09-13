@@ -538,6 +538,8 @@ def credits_from_stories(issue: dict) -> tuple[str, str]:
 
 # Live CatalogComic.format — src/lib/types.ts ComicFormat. Never emit "hardcover".
 COMIC_FORMATS = ("single", "annual", "tpb", "hc", "omnibus", "facsimile")
+# Collected books only use this subset (Compendium → tpb unless omnibus/hc).
+COLLECTED_FORMATS = ("tpb", "hc", "omnibus")
 
 
 def infer_format(series: str, issue: dict) -> str:

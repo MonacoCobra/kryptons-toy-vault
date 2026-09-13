@@ -815,8 +815,16 @@ class DumpIngestTest(unittest.TestCase):
             ("Watchmen HC", {"title": "Watchmen HC"}, "hc"),
             ("Saga Vol. 1 TP", {"title": "Saga Vol. 1 TP"}, "tpb"),
             ("Saga Vol. 1 TPB", {"title": "Saga Vol. 1 TPB"}, "tpb"),
+            ("Invincible Compendium", {"title": "Invincible Compendium"}, "tpb"),
+            (
+                "Elseworlds: Superman",
+                {"title": "Elseworlds: Superman 2024 TPB reprint vol 1"},
+                "tpb",
+            ),
             ("A Collection", {"title": "A Collection"}, "tpb"),
             ("Deluxe Edition", {"title": "Deluxe Edition"}, "tpb"),
+            ("Compendium Deluxe HC", {"title": "Compendium Deluxe HC"}, "hc"),
+            ("Compendium Omnibus", {"title": "Compendium Omnibus"}, "omnibus"),
             ("Action Comics", {"title": "Action Comics Facsimile Edition"}, "facsimile"),
         ]
         emitted = []
@@ -840,7 +848,7 @@ class DumpIngestTest(unittest.TestCase):
         report = self._run(["900201", "900202"], root=root)
         added = {r["gcdIssueId"]: r for r in report["added"]}
         self.assertIn("2738779", added)
-        self.assertIn(added["2738779"]["format"], {"tpb", "omnibus"})
+        self.assertEqual(added["2738779"]["format"], "tpb")
         self.assertEqual(added["2738779"]["issue"], "[nn]")
         self.assertEqual(added["2738779"]["publisher"], "DC Comics")
         self.assertIsNone(added["2738779"].get("upc"))
@@ -866,13 +874,36 @@ class DumpIngestTest(unittest.TestCase):
         )
         self.assertFalse(any(s.get("reason") == "collected-edition" for s in report["skipped"]))
         self.assertNotIn("hardcover", {r["format"] for r in report["added"]})
+        self.assertTrue({r["format"] for r in report["added"]} <= set(ingest.COLLECTED_FORMATS))
+
+    def test_dump_keeps_required_compendium_and_tpb_proof_rows(self):
+        root = self._mini_root()
+        report = self._run(["900201", "900203", "900204"], root=root)
+        added = {r["gcdIssueId"]: r for r in report["added"]}
+        proof = {
+            "2738779": ("The Death and Return of Superman Compendium", "[nn]"),
+            "2484153": ("Invincible Compendium", "1"),
+            "2533147": ("Invincible Compendium", "2"),
+            "2578023": ("Invincible Compendium", "3"),
+            "2655495": ("Elseworlds: Superman", "1"),
+        }
+        for gid, (series, issue) in proof.items():
+            self.assertIn(gid, added, msg=f"gcd {gid} skipped")
+            row = added[gid]
+            self.assertEqual(row["format"], "tpb", msg=f"gcd {gid} format")
+            self.assertEqual(row["series"], series)
+            self.assertEqual(row["issue"], issue)
+            self.assertIsNone(row.get("upc"))
+            self.assertIn(row["format"], ingest.COLLECTED_FORMATS)
+        self.assertNotIn("hardcover", {r["format"] for r in report["added"]})
+        self.assertFalse(any(s.get("reason") == "collected-edition" for s in report["skipped"]))
 
     def test_dump_floppy_stays_single_alongside_collected(self):
         root = self._mini_root()
         report = self._run(["900101", "900201"], root=root)
         added = {r["gcdIssueId"]: r for r in report["added"]}
         self.assertEqual(added["8000001"]["format"], "single")
-        self.assertIn(added["2738779"]["format"], {"tpb", "omnibus"})
+        self.assertEqual(added["2738779"]["format"], "tpb")
 
     def test_gate_keeps_collected_by_default(self):
         book = {
