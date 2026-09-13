@@ -18,6 +18,8 @@ Examples:
   python3 scripts/backfill-comic-upcs.py --seeds-only --limit 40
   python3 scripts/backfill-comic-upcs.py --from-catalog --limit 200 --max-minutes 90
   python3 scripts/backfill-comic-upcs.py --only dc-abs-batman-1,mv-asm-300 --delay 30
+  python3 scripts/backfill-comic-upcs.py --from-catalog --series-batch --missing-covers \\
+    --publisher-group other --delay 90 --no-cv
 """
 from __future__ import annotations
 
@@ -549,6 +551,11 @@ def parse_comics_meta() -> dict[str, dict]:
             vm = re.search(r'variant:\s*"([^"]+)"', em.group(1))
             if vm:
                 variant = vm.group(1)
+        cover = None
+        if em and re.search(r"\bcover\s*:", em.group(1)):
+            cm = re.search(r'(?<![A-Za-z])cover:\s*"([^"]+)"', em.group(1))
+            if cm:
+                cover = cm.group(1)
         out[cid] = {
             "series": series,
             "issue": issue,
@@ -556,6 +563,7 @@ def parse_comics_meta() -> dict[str, dict]:
             "coverDate": cover_date,
             "variant": variant,
             "upc": upc,
+            "cover": cover,
             "format": fmt,
             "demand": demand,
             "key": key,
@@ -610,6 +618,200 @@ def candidate_score(m: dict, *, series_batch: bool = False) -> float:
     return score
 
 
+def is_primary_variant(variant: str | None) -> bool:
+    """Empty / Cover A / standard / regular / main — the family primary."""
+    v = (variant or "").strip().lower()
+    if not v:
+        return True
+    return bool(
+        re.match(r"^(cover\s*)?a\b", v)
+        or v in {"standard", "regular", "main", "main cover", "direct edition"}
+    )
+
+
+_VARIANT_STOP = {
+    "cover",
+    "covers",
+    "variant",
+    "variants",
+    "var",
+    "the",
+    "and",
+    "of",
+    "edition",
+    "issue",
+}
+
+
+def variant_name_tokens(raw: str | None) -> set[str]:
+    s = (raw or "").lower()
+    letters = re.findall(r"\bcover\s*([b-z])\b", s)
+    s = re.sub(r"[^a-z0-9]+", " ", s)
+    out = {
+        t
+        for t in s.split()
+        if t and t not in _VARIANT_STOP and not t.isdigit() and len(t) > 1
+    }
+    out.update(letters)
+    return out
+
+
+def variant_name_score(want: str | None, title: str, slug: str = "") -> int:
+    wt = variant_name_tokens(want)
+    if not wt:
+        return 0
+    blob = f"{title or ''} {str(slug or '').replace('-', ' ')}"
+    gt = variant_name_tokens(blob)
+    overlap = wt & gt
+    if not overlap:
+        return 0
+    if len(overlap) >= max(1, len(wt) - 1):
+        return 10 + 2 * len(overlap)
+    return 3 * len(overlap)
+
+
+def looks_like_named_variant_hit(hit: dict) -> bool:
+    blob = f"{hit.get('title') or ''} {hit.get('slug') or ''} {hit.get('url') or ''}"
+    if re.search(r"\bcover\s*[b-z]\b", blob, re.I):
+        return True
+    if re.search(r"\b(variant|virgin|incentive|1:\d+)\b", blob, re.I):
+        return True
+    extra = variant_name_tokens(blob) - variant_name_tokens(hit.get("series"))
+    extra.discard(issue_norm(str(hit.get("issue") or "")))
+    return bool(extra)
+
+
+def pick_locg_issue_for_row(
+    issue_entry: dict | None,
+    catalog_variant: str | None,
+    catalog_upc: str | None = None,
+) -> dict | None:
+    """Pick the main or a named variant from parse_series_issues output.
+
+    Named variants never fall back to the main locgId/cover (A/B art steal).
+    catalog_upc is accepted for callers; list rows have no UPC, so it is not
+    used to choose a sibling — page fetch + locg_hit_identity_reason verify.
+    """
+    del catalog_upc  # identity check happens after the issue page fetch
+    if not issue_entry:
+        return None
+    variants = list(issue_entry.get("variants") or [])
+    if is_primary_variant(catalog_variant):
+        if issue_entry.get("main"):
+            return {k: v for k, v in issue_entry.items() if k != "variants"}
+        return None
+
+    scored: list[tuple[int, dict]] = []
+    for v in variants:
+        score = variant_name_score(
+            catalog_variant, v.get("title") or "", v.get("slug") or ""
+        )
+        if score >= 10:
+            scored.append((score, v))
+    if not scored:
+        return None
+    scored.sort(key=lambda x: -x[0])
+    if len(scored) > 1 and scored[0][0] == scored[1][0]:
+        return None
+    return dict(scored[0][1])
+
+
+def locg_hit_identity_reason(
+    hit: dict,
+    catalog: dict,
+    *,
+    existing_upc: str | None = None,
+) -> str | None:
+    """None if this LOCG hit may supply a cover. Else a mismatch reason.
+
+    UPC-first when both sides have a code so A/B variants do not steal art.
+    Otherwise series + issue + publisher + variant. Never invents a UPC.
+    """
+    cat_upc = normalize_upc(catalog.get("upc") or existing_upc)
+    hit_upc = normalize_upc(hit.get("upc"))
+    if cat_upc and hit_upc:
+        if cat_upc != hit_upc:
+            return "upc_mismatch"
+        return None
+    if hit.get("publisher") and catalog.get("publisher"):
+        if not publisher_ok(hit.get("publisher"), catalog["publisher"]):
+            return "publisher_mismatch"
+    if hit.get("issue") and catalog.get("issue"):
+        want = issue_norm(str(catalog.get("issue") or ""))
+        got = issue_norm(str(hit.get("issue") or ""))
+        if want not in ("", "nn") and got and got != want:
+            return "issue_mismatch"
+    if hit.get("title") and catalog.get("series"):
+        if not series_ok(hit.get("title"), str(catalog.get("series") or "")):
+            return "series_mismatch"
+    cat_var = catalog.get("variant")
+    if not is_primary_variant(cat_var):
+        blob = f"{hit.get('title') or ''} {hit.get('url') or ''} {hit.get('slug') or ''}"
+        if variant_name_score(cat_var, blob) < 10:
+            return "variant_mismatch"
+    elif looks_like_named_variant_hit(hit):
+        return "variant_mismatch"
+    return None
+
+
+def row_has_cover(
+    cid: str,
+    *,
+    upc_map: dict,
+    cover_urls: dict | None = None,
+    meta_row: dict | None = None,
+) -> bool:
+    if cover_urls and str(cover_urls.get(cid) or "").strip():
+        return True
+    if str((upc_map.get(cid) or {}).get("coverUrl") or "").strip():
+        return True
+    if meta_row and str(meta_row.get("cover") or "").strip():
+        return True
+    return False
+
+
+def should_skip_catalog_row(
+    cid: str,
+    *,
+    meta: dict[str, dict],
+    upc_map: dict,
+    cover_urls: dict | None,
+    missing_covers: bool,
+) -> str | None:
+    """Why this id should not be crawled, or None if work remains."""
+    if cid not in meta:
+        return "not_in_catalog"
+    row = meta.get(cid) or {}
+    if row_has_cover(cid, upc_map=upc_map, cover_urls=cover_urls, meta_row=row):
+        return "has_cover"
+    if not missing_covers:
+        if row.get("upc") or (upc_map.get(cid) or {}).get("upc"):
+            return "has_upc"
+    return None
+
+
+def retain_pending_ids(
+    ids: list[str],
+    upc_map: dict,
+    cover_urls: dict | None,
+    *,
+    missing_covers: bool,
+    meta: dict[str, dict] | None = None,
+) -> list[str]:
+    """Keep ids that still need UPC (default) or still need a cover (--missing-covers)."""
+    kept: list[str] = []
+    for cid in ids:
+        row = (meta or {}).get(cid) if meta else None
+        if row_has_cover(cid, upc_map=upc_map, cover_urls=cover_urls, meta_row=row):
+            continue
+        if not missing_covers and (upc_map.get(cid) or {}).get("upc"):
+            continue
+        if not missing_covers and row and row.get("upc"):
+            continue
+        kept.append(cid)
+    return kept
+
+
 def build_catalog_candidates(
     meta: dict[str, dict],
     upc_map: dict,
@@ -618,13 +820,21 @@ def build_catalog_candidates(
     limit: int,
     include_variants: bool = False,
     series_batch: bool = False,
+    missing_covers: bool = False,
+    cover_urls: dict | None = None,
 ) -> list[str]:
+    if missing_covers:
+        include_variants = True
     scored: list[tuple[float, str]] = []
     for cid, m in meta.items():
-        if m.get("upc") or (upc_map.get(cid) or {}).get("upc"):
-            continue
-        if m.get("variant") and not include_variants:
-            continue
+        if missing_covers:
+            if row_has_cover(cid, upc_map=upc_map, cover_urls=cover_urls, meta_row=m):
+                continue
+        else:
+            if m.get("upc") or (upc_map.get(cid) or {}).get("upc"):
+                continue
+            if m.get("variant") and not include_variants:
+                continue
         fmt = m.get("format") or "single"
         if fmt not in ("single", "facsimile", "one-shot", "annual", "giant"):
             continue
@@ -857,6 +1067,15 @@ def main() -> int:
     ap.add_argument("--cv-sweep", action="store_true", help="After LOCG pass, Comic Vine barcode sweep for remaining candidates")
     ap.add_argument("--cv-sweep-limit", type=int, default=400, help="Max extra CV barcode lookups")
     ap.add_argument("--no-cv", action="store_true", help="Skip Comic Vine barcode fallback")
+    ap.add_argument(
+        "--missing-covers",
+        action="store_true",
+        help=(
+            "Cover-fill mode: keep catalog rows that already have UPC/gcdIssueId, "
+            "include variants, skip rows that already have cover art. "
+            "Match LOCG by UPC when present, else series+issue+publisher+variant."
+        ),
+    )
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument(
         "--series-batch",
@@ -934,6 +1153,8 @@ def main() -> int:
             min_year=args.min_year,
             limit=cat_pool,
             series_batch=bool(args.series_batch),
+            missing_covers=bool(args.missing_covers),
+            cover_urls=cover_urls,
         )
         ids = []
         seen = set()
@@ -990,9 +1211,16 @@ def main() -> int:
             for i in ids
             if any(w in ((meta.get(i) or {}).get("publisher") or "").lower() for w in want)
         ]
-    # Drop ids another worker already filled
+    # Drop ids another worker already filled (UPC in default mode; covers in --missing-covers)
     upc_map = load_json(UPC_MAP, {})
-    ids = [i for i in ids if not (upc_map.get(i) or {}).get("upc")]
+    cover_urls = load_json(COVER_URLS, cover_urls)
+    ids = retain_pending_ids(
+        ids,
+        upc_map,
+        cover_urls,
+        missing_covers=bool(args.missing_covers),
+        meta=meta,
+    )
 
 
     # Series-batch: prefer deep series so one paginated LOCG list unlocks many UPCs.
@@ -1005,6 +1233,8 @@ def main() -> int:
             min_year=args.min_year,
             limit=pool_limit,
             series_batch=True,
+            missing_covers=bool(args.missing_covers),
+            cover_urls=cover_urls,
         )
         if args.ones_only:
             pool = [
@@ -1026,14 +1256,15 @@ def main() -> int:
                 for i in pool
                 if publisher_group((meta.get(i) or {}).get("publisher") or "") == args.publisher_group
             ]
-        # Skip ids already LOCG-resolved without UPC (cover baked) — don't re-crawl
+        # Skip ids that already have cover art — don't re-crawl
         pool = [
             i
             for i in pool
-            if not (
-                (upc_map.get(i) or {}).get("locgId")
-                and not (upc_map.get(i) or {}).get("upc")
-                and i in cover_urls
+            if not row_has_cover(
+                i,
+                upc_map=upc_map,
+                cover_urls=cover_urls,
+                meta_row=meta.get(i),
             )
         ]
         if args.publishers:
@@ -1140,12 +1371,20 @@ def main() -> int:
             if any(w in ((meta.get(i) or {}).get("publisher") or "").lower() for w in want)
         ]
     upc_map = load_json(UPC_MAP, upc_map)
-    ids = [i for i in ids if not (upc_map.get(i) or {}).get("upc")]
+    cover_urls = load_json(COVER_URLS, cover_urls)
+    ids = retain_pending_ids(
+        ids,
+        upc_map,
+        cover_urls,
+        missing_covers=bool(args.missing_covers),
+        meta=meta,
+    )
     ids = keep_catalog_ids(ids, meta)
 
     print(
         f"backfill[{worker}]: {len(ids)} comics, delay={args.delay}s, publisher_group={args.publisher_group}, "
         f"from_catalog={args.from_catalog}, seeds_only={args.seeds_only}, "
+        f"missing_covers={bool(args.missing_covers)}, "
         f"max_minutes={args.max_minutes or '∞'}"
     )
     print(f"before: upc={before_upc} covers={before_covers}")
@@ -1166,6 +1405,7 @@ def main() -> int:
         "seriesResolved": 0,
         "coversFromSeriesList": 0,
         "seriesBatch": bool(getattr(args, "series_batch", False)),
+        "missingCovers": bool(getattr(args, "missing_covers", False)),
         "timedOut": False,
         "details": [],
         "beforeUpc": before_upc,
@@ -1337,10 +1577,14 @@ def main() -> int:
         m = meta.get(cid) or {}
         seed = seeds.get(cid) or {}
         existing = upc_map.get(cid) or {}
-        if existing.get("upc"):
-            stats["skippedExisting"] += 1
-            continue
-        if existing.get("upc") and existing.get("coverUrl") and cid in cover_urls:
+        skip_reason = should_skip_catalog_row(
+            cid,
+            meta=meta,
+            upc_map=upc_map,
+            cover_urls=cover_urls,
+            missing_covers=bool(args.missing_covers),
+        )
+        if skip_reason:
             stats["skippedExisting"] += 1
             continue
 
@@ -1372,36 +1616,63 @@ def main() -> int:
                 resolved = resolve_series(series, publisher, issue)
             detail["seriesPick"] = (resolved or {}).get("seriesId")
             if resolved and resolved.get("issues"):
-                series_issue_meta = resolved["issues"].get(want_issue) or resolved["issues"].get(
+                raw_issue = resolved["issues"].get(want_issue) or resolved["issues"].get(
                     issue_norm(want_issue)
                 )
                 # Also try bare numeric
-                if not series_issue_meta and want_issue.isdigit():
-                    series_issue_meta = resolved["issues"].get(str(int(want_issue)))
+                if not raw_issue and want_issue.isdigit():
+                    raw_issue = resolved["issues"].get(str(int(want_issue)))
+                series_issue_meta = pick_locg_issue_for_row(
+                    raw_issue,
+                    m.get("variant"),
+                    catalog_upc=normalize_upc(m.get("upc") or existing.get("upc")),
+                )
             if series_issue_meta and series_issue_meta.get("locgId"):
-                # Bake cover early from series list main match (solid series+issue)
-                if series_issue_meta.get("main", True) and series_issue_meta.get("coverUrl"):
-                    if not args.dry_run and cid not in cover_urls:
-                        cover_urls[cid] = series_issue_meta["coverUrl"]
-                        stats["coverUpdated"] += 1
-                        stats["coversFromSeriesList"] += 1
+                # Bake cover early from series list only for the matched identity.
+                # Named variants never take the main (data-parent=0) cover.
+                matched_primary = is_primary_variant(m.get("variant")) and series_issue_meta.get(
+                    "main", True
+                )
+                matched_variant = (not is_primary_variant(m.get("variant"))) and not series_issue_meta.get(
+                    "main", True
+                )
+                if (
+                    matched_primary
+                    and series_issue_meta.get("coverUrl")
+                    and not args.dry_run
+                    and cid not in cover_urls
+                ):
+                    cover_urls[cid] = series_issue_meta["coverUrl"]
+                    stats["coverUpdated"] += 1
+                    stats["coversFromSeriesList"] += 1
                 if not time_left():
-                    # Keep cover; skip issue page for UPC this round
+                    # Keep matched cover; skip issue page for UPC this round
                     if not args.dry_run:
-                        upc_map[cid] = {
+                        rec = {
                             **(upc_map.get(cid) or {}),
                             "locgId": series_issue_meta["locgId"],
-                            "coverUrl": series_issue_meta.get("coverUrl"),
                             "source": "locg-series-list",
                             "title": series_issue_meta.get("title"),
                             "fetchedAt": now_iso(),
                         }
+                        if (matched_primary or matched_variant) and series_issue_meta.get("coverUrl"):
+                            rec["coverUrl"] = series_issue_meta["coverUrl"]
+                            if cid not in cover_urls:
+                                cover_urls[cid] = series_issue_meta["coverUrl"]
+                                stats["coverUpdated"] += 1
+                                stats["coversFromSeriesList"] += 1
+                        upc_map[cid] = rec
                     detail["status"] = "series_list_cover_only"
                     stats["details"].append(detail)
                     continue
                 throttle()
                 hit = fetch_locg(series_issue_meta["locgId"], series_issue_meta.get("slug") or "issue")
-            elif resolved and resolved.get("coverComicId") and want_issue in ("1", "nn", "0"):
+            elif (
+                resolved
+                and resolved.get("coverComicId")
+                and want_issue in ("1", "nn", "0")
+                and is_primary_variant(m.get("variant"))
+            ):
                 if not time_left():
                     break
                 throttle()
@@ -1409,6 +1680,19 @@ def main() -> int:
 
         if hit:
             stats["locgHits"] += 1
+            ident = locg_hit_identity_reason(
+                hit,
+                m,
+                existing_upc=existing.get("upc") or m.get("upc"),
+            )
+            if ident:
+                stats["errors"] += 1
+                detail["status"] = ident
+                detail["title"] = hit.get("title")
+                detail["gotUpc"] = hit.get("upc")
+                stats["details"].append(detail)
+                print(f"! {cid}: {ident} title={hit.get('title')} upc={hit.get('upc') or '—'}")
+                continue
             if not publisher_ok(hit.get("publisher"), publisher):
                 stats["mismatchPublisher"] += 1
                 detail["status"] = "publisher_mismatch"
@@ -1461,7 +1745,7 @@ def main() -> int:
                     continue
 
             entry = {
-                "upc": hit.get("upc"),
+                "upc": hit.get("upc") or existing.get("upc") or m.get("upc"),
                 "locgId": hit.get("locgId"),
                 "coverUrl": hit.get("coverUrl") or locg_cover(hit["locgId"], "large"),
                 "source": "locg",
@@ -1469,18 +1753,23 @@ def main() -> int:
                 "title": hit.get("title"),
                 "fetchedAt": now_iso(),
             }
-            if hit.get("upc"):
+            if hit.get("upc") and not existing.get("upc") and not m.get("upc"):
                 stats["upcFilled"] += 1
                 detail["upc"] = hit["upc"]
                 detail["status"] = "locg_upc"
+            elif hit.get("upc"):
+                detail["upc"] = hit["upc"]
+                detail["status"] = "locg_cover" if args.missing_covers else "locg_upc"
             else:
                 stats["locgNoUpc"] += 1
                 detail["status"] = "locg_no_upc"
             if not args.dry_run:
-                upc_map[cid] = {k: v for k, v in entry.items() if v}
-                if entry.get("coverUrl") and (hit.get("upc") or locg_id or series_issue_meta):
+                merged_entry = {**(upc_map.get(cid) or {}), **{k: v for k, v in entry.items() if v}}
+                upc_map[cid] = merged_entry
+                if entry.get("coverUrl") and (hit.get("upc") or locg_id or series_issue_meta or args.missing_covers):
+                    if cid not in cover_urls:
+                        stats["coverUpdated"] += 1
                     cover_urls[cid] = entry["coverUrl"]
-                    stats["coverUpdated"] += 1
             print(f"✓ {cid}: upc={entry.get('upc') or '—'} locg={entry.get('locgId')} {hit.get('title')}")
             stats["details"].append(detail)
 
@@ -1601,6 +1890,7 @@ def main() -> int:
     stats["delay"] = args.delay
     stats["limit"] = args.limit
     stats["fromCatalog"] = args.from_catalog
+    stats["missingCovers"] = bool(args.missing_covers)
 
     if not args.dry_run:
         upc_map = save_upc_map_atomic(upc_map)

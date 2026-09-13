@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Three partitioned LOCG UPC workers (Marvel / DC / other). No sidebar bots.
+# Three partitioned LOCG UPC + missing-cover workers (Marvel / DC / other).
+# --missing-covers keeps GCD dump rows that already have UPC/gcdIssueId.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
@@ -9,6 +10,7 @@ LIMIT="${LIMIT:-2500}"
 MAX_MIN="${MAX_MINUTES:-360}"
 MIN_YEAR="${MIN_YEAR:-2005}"
 MAX_PER="${MAX_PER_SERIES:-100}"
+NO_CV="${NO_CV:-1}"
 
 start_worker () {
   local group="$1"
@@ -20,7 +22,7 @@ start_worker () {
     return 0
   fi
   nohup python3 -u scripts/backfill-comic-upcs.py \
-    --from-catalog --series-batch \
+    --from-catalog --series-batch --missing-covers \
     --publisher-group "$group" \
     --limit "$LIMIT" --max-per-series "$MAX_PER" \
     --min-year "$MIN_YEAR" --max-minutes "$MAX_MIN" \
