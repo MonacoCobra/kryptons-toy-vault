@@ -38,6 +38,10 @@ Glyph box (LIVE — 2026-09-01)
 
   python3 scripts/ingest-gcd-series-to-catalog.py \\
       --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \\
+      --publisher Image --min-year 2016 --max-issues 8 --dry-run
+
+  python3 scripts/ingest-gcd-series-to-catalog.py \\
+      --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \\
       --series-ids-file scripts/gcd-series-ids.example.txt --dry-run
 
   python3 scripts/load-gcd-sql-dump.py \\
