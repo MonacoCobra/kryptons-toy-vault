@@ -19,7 +19,7 @@ type Row = [
   demand: number,
   key: number,
   palette: string,
-  extra?: { variant?: string; upc?: string; streetDate?: string; cover?: string },
+  extra?: { variant?: string; upc?: string; streetDate?: string; cover?: string; locgId?: string },
 ];
 
 const rows: Row[] = [

@@ -18,6 +18,39 @@ No generative AI art. Covers come from LOCG CDN or Comic Vine scans.
 - Cover prefer order: explicit `extra.cover` → **UPC map LOCG cover** → `comic-cover-urls.json` → live `getComicCover`.
 - `getComicCover` (`src/lib/comic-covers.ts`): **UPC / LOCG id first**, then Comic Vine series+issue(+variant). Caches in `comic_covers` (see migration `0007_comic_covers_upc.sql`).
 
+## Catalog growth from real LOCG series (not gen-batch)
+
+Highest-trust way to add **new** `comics.ts` rows after the catalog prune:
+walk real League of Comic Geeks series → issue pages. Script:
+`scripts/ingest-locg-series-to-catalog.py`.
+
+Hard gates on every new row: real LOCG page, `locgId`, UPC and/or cover URL,
+LOCG series/issue/publisher (never invented), no duplicate catalog id or
+`locgId`. Failed issues are skipped. UPC/cover/`locgId` merge into
+`comic-upc-map.json` / `comic-cover-urls.json` without clobbering a stronger
+existing UPC.
+
+**Glyph / Lyra:** feed numeric LOCG series ids (Image / Boom / IDW / Dark Horse
+/ indie first). Pull ids from `scripts/comic-locg-series-cache.json` (`seriesId`)
+or a series URL. Do **not** invent ids, UPCs, or interpolated ghost rows. Do
+**not** run `gen-batch-*`.
+
+```bash
+# List preferred cache seeds (no LOCG traffic)
+python3 scripts/ingest-locg-series-to-catalog.py --list-cache-seeds
+
+# Dry-run a real series (polite 30s Crawl-delay)
+python3 scripts/ingest-locg-series-to-catalog.py --series-id 148147 --delay 30 --max-issues 10 --dry-run
+
+# Mass file (one id per line; see scripts/locg-series-ids.example.txt)
+python3 scripts/ingest-locg-series-to-catalog.py --series-ids-file scripts/locg-series-ids.example.txt --delay 30
+
+# Fixture proof (no live LOCG)
+python3 scripts/ingest-locg-series-to-catalog.test.py
+python3 scripts/ingest-locg-series-to-catalog.py \
+  --fixture-dir scripts/fixtures/locg-series-ingest --series-id 900001 --dry-run
+```
+
 ## Backfill
 
 ```bash

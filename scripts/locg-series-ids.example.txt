@@ -1,0 +1,27 @@
+# Real LOCG series ids for catalog ingest (Image / Boom / IDW / Dark Horse first).
+# Glyph / Lyra: append numeric series ids — never invent them.
+# Source: scripts/comic-locg-series-cache.json `seriesId`, or
+# https://leagueofcomicgeeks.com/comics/series/<id>/…
+#
+# Run:
+#   python3 scripts/ingest-locg-series-to-catalog.py \
+#       --series-ids-file scripts/locg-series-ids.example.txt --delay 30 --dry-run
+#
+# Image
+148147   # Crossover
+139479   # DIE
+115809   # Criminal
+147715   # The Department of Truth
+148836   # Nocterra
+#
+# Boom! Studios
+112625   # Lumberjanes
+142996   # Once & Future
+148143   # BRZRKR
+#
+# IDW
+115655   # 30 Days of Night
+#
+# Dark Horse
+138753   # The Umbrella Academy: Hotel Oblivion
+125391   # Overwatch

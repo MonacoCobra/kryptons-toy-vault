@@ -35,7 +35,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path("/workspace/collection-app")
+ROOT = Path(__file__).resolve().parents[1]
 SEEDS = ROOT / "src/data/comic-locg-seeds.json"
 UPC_MAP = ROOT / "src/data/comic-upc-map.json"
 COVER_URLS = ROOT / "src/data/comic-cover-urls.json"
