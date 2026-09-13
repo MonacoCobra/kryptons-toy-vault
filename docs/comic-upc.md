@@ -64,7 +64,9 @@ that Lyra drops on the box. Script: `scripts/ingest-gcd-series-to-catalog.py`.
 has **any of** `gcdIssueId` **or** UPC **or** ISBN, plus real GCD
 series/issue/publisher. Barcode is **not** required when a real GCD issue id
 is present. Store `gcdIssueId` in `comic-upc-map.json`. Never invent UPCs;
-LOCG / Metron barcodes win on merge.
+LOCG / Metron barcodes win on merge. Parent-linked variants are kept as
+sibling rows (same series+issue, `extra.variant` from GCD `variant_name`,
+own `gcdIssueId`). Orphans (broken `variant_of_id` / other series) are skipped.
 
 LOCG importer gates stay `locgId` + UPC|cover.
 

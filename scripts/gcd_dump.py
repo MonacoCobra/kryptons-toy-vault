@@ -377,6 +377,9 @@ class GcdDumpStore:
     def issues_for_series(self, series_id: str | int) -> list[dict]:
         raise NotImplementedError
 
+    def get_issue(self, issue_id: str | int) -> dict | None:
+        raise NotImplementedError
+
     def find_publishers(self, needle: str) -> list[dict]:
         raise NotImplementedError
 
@@ -399,6 +402,14 @@ class JsonDumpStore(GcdDumpStore):
         for rows in issues.values():
             rows.sort(key=lambda r: (str(r.get("sort_code") or 0), str(r.get("number") or "")))
         self.issues = issues
+        self.issues_by_id = {
+            str(r["id"]): r
+            for rows in issues.values()
+            for r in rows
+        }
+
+    def get_issue(self, issue_id: str | int) -> dict | None:
+        return self.issues_by_id.get(str(issue_id))
 
     def get_series(self, series_id: str | int) -> dict | None:
         return self.series.get(str(series_id))
@@ -448,6 +459,9 @@ class SqliteDumpStore(GcdDumpStore):
         )
         row = cur.fetchone()
         return dict(row) if row else None
+
+    def get_issue(self, issue_id: str | int) -> dict | None:
+        return self._row("gcd_issue", issue_id)
 
     def get_series(self, series_id: str | int) -> dict | None:
         return self._row("gcd_series", series_id)
