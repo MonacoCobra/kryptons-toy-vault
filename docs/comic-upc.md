@@ -137,13 +137,17 @@ python3 scripts/ingest-gcd-series-to-catalog.py \
 python3 scripts/backfill-comic-upcs.py --seeds-only --limit 40 --delay 30
 python3 scripts/backfill-comic-upcs.py --from-catalog --limit 220 --max-minutes 85 --delay 30 --cv-sweep
 python3 scripts/backfill-comic-upcs.py --from-catalog --series-batch --limit 2500 --max-per-series 100 --min-year 2005 --max-minutes 360 --delay 30 --no-cv
+python3 scripts/backfill-comic-upcs.py --from-catalog --series-batch --missing-covers \
+  --publisher-group other --limit 2500 --max-per-series 100 --min-year 2005 \
+  --max-minutes 360 --delay 90 --no-cv
 ```
 
 | Flag | Meaning |
 |------|---------|
-| `--delay 30` | Default. Matches LOCG `robots.txt` Crawl-delay. |
+| `--delay 90` | Default. LOCG `robots.txt` Crawl-delay is 30; we use 90+ and back off to 600s on 403/429. |
 | `--seeds-only` | Only `src/data/comic-locg-seeds.json` rows with `locgId`. |
 | `--from-catalog` | Rank popular modern singles (barcode era) missing UPC. |
+| `--missing-covers` | Cover-fill: keep rows that already have UPC/`gcdIssueId`, include variants, skip has-cover rows. Match LOCG by UPC when present, else series+issue+publisher+variant. |
 | `--ones-only` | Only issue #1 / 0 / nn (best LOCG discovery rate). |
 | `--min-year` | Cover-year floor for catalog mode (default 1995). |
 | `--max-minutes` | Stop starting new LOCG work after N minutes. |
@@ -154,6 +158,7 @@ python3 scripts/backfill-comic-upcs.py --from-catalog --series-batch --limit 250
 | `--refresh-lists` | Force re-fetch of cached series issue lists. |
 | `--max-series` | Cap number of series groups in series-batch mode. |
 | `--max-per-series` | Cap comics per series (keeps newest first). |
+| `--publisher-group` | Partition catalog work: `marvel` / `dc` / `other` / `all`. |
 
 Writes:
 
@@ -204,12 +209,13 @@ All writers merge-safe-save `comic-upc-map.json` so LOCG + publisher jobs can ru
 Three disjoint publisher partitions share `comic-upc-map.json` via flock merge:
 
 ```bash
-# Marvel / DC / other — stagger ~10s, each --delay 30
-python3 scripts/backfill-comic-upcs.py --from-catalog --series-batch --publisher-group marvel \
-  --limit 2000 --max-per-series 80 --min-year 2005 --max-minutes 360 --delay 30 --no-cv \
+# Marvel / DC / other — stagger ~10s, each --delay 90 --no-cv --missing-covers
+python3 scripts/backfill-comic-upcs.py --from-catalog --series-batch --missing-covers \
+  --publisher-group marvel \
+  --limit 2000 --max-per-series 80 --min-year 2005 --max-minutes 360 --delay 90 --no-cv \
   --worker-id marvel --stats-file scripts/comic-upc-backfill-stats-marvel.json
-python3 scripts/backfill-comic-upcs.py --from-catalog --series-batch --publisher-group dc ...
-python3 scripts/backfill-comic-upcs.py --from-catalog --series-batch --publisher-group other ...
+python3 scripts/backfill-comic-upcs.py --from-catalog --series-batch --missing-covers --publisher-group dc ...
+python3 scripts/backfill-comic-upcs.py --from-catalog --series-batch --missing-covers --publisher-group other ...
 ```
 
 Or: `bash scripts/run-locg-upc-workers.sh`
