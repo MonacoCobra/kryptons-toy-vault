@@ -92,11 +92,12 @@ def parse_comics_meta() -> dict[str, dict]:
     )
     out: dict[str, dict] = {}
     for m in pat.finditer(text):
+        # groups: 1=id 2=series 3=issue 4=publisher 5=coverDate ... 10=format
         out[m.group(1)] = {
             "series": m.group(2),
             "issue": m.group(3),
             "publisher": m.group(4),
-            "coverDate": m.group(10),
+            "coverDate": m.group(5),
         }
     return out
 
@@ -343,6 +344,10 @@ def main() -> int:
 
     if args.only:
         ids = [x.strip() for x in args.only.split(",") if x.strip()]
+        dropped = [i for i in ids if i not in meta]
+        if dropped:
+            print(f"dropped {len(dropped)} non-catalog --only id(s): {', '.join(dropped[:8])}", file=sys.stderr)
+        ids = [i for i in ids if i in meta]
     else:
         ids = [
             cid
@@ -352,6 +357,7 @@ def main() -> int:
             and cover_year(m) >= args.min_year
         ]
         ids.sort(reverse=bool(args.reverse))
+    ids = [i for i in ids if i in meta]
     ids = ids[: args.limit]
     before = len([1 for v in upc_map.values() if isinstance(v, dict) and v.get("upc")])
     deadline = time.time() + args.max_minutes * 60 if args.max_minutes > 0 else None
@@ -372,6 +378,9 @@ def main() -> int:
             if deadline and time.time() >= deadline:
                 print("max-minutes reached")
                 break
+            if cid not in meta:
+                print(f"· {cid}: skip (not in current catalog)")
+                continue
             if daily_remaining() <= 0:
                 raise DailyCapReached(f"Metron daily cap {METRON_DAILY_CAP} reached for {_utc_day()}")
             disk_ent = (load_json(UPC_MAP, {}) if not args.dry_run else upc_map).get(cid) or {}

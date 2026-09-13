@@ -563,6 +563,20 @@ def parse_comics_meta() -> dict[str, dict]:
     return out
 
 
+
+def keep_catalog_ids(ids: list[str], meta: dict[str, dict], *, label: str = "candidates") -> list[str]:
+    """Drop pruned/ghost ids — never hunt anything not in comics.ts."""
+    kept = [cid for cid in ids if cid in meta]
+    dropped = len(ids) - len(kept)
+    if dropped:
+        ghosts = [cid for cid in ids if cid not in meta][:8]
+        print(
+            f"dropped {dropped} non-catalog {label} (pruned/ghost): {', '.join(ghosts)}",
+            file=sys.stderr,
+        )
+    return kept
+
+
 def candidate_score(m: dict, *, series_batch: bool = False) -> float:
     y = 0
     d = m.get("coverDate") or ""
@@ -898,7 +912,11 @@ def main() -> int:
     before_covers = len(cover_urls)
 
     if args.only:
-        ids = [x.strip() for x in args.only.split(",") if x.strip()]
+        ids = keep_catalog_ids(
+            [x.strip() for x in args.only.split(",") if x.strip()],
+            meta,
+            label="--only ids",
+        )
     elif args.from_catalog:
         # Pure popularity/modern ranking. Skip rows already confirmed locg_no_upc+cover.
         cat_pool = max(args.limit * (8 if args.series_batch else 4), args.limit)
@@ -922,9 +940,10 @@ def main() -> int:
         ids = ids[: args.limit]
         print("catalog top sample:", ", ".join(ids[:12]))
     else:
-        ids = list(seeds.keys())
+        # Seeds + existing cover keys, but only if they still exist in comics.ts.
+        ids = [cid for cid in seeds.keys() if cid in meta]
         for cid in cover_urls:
-            if cid not in ids:
+            if cid in meta and cid not in ids:
                 ids.append(cid)
         ids = ids[: args.limit]
 
@@ -1114,6 +1133,7 @@ def main() -> int:
         ]
     upc_map = load_json(UPC_MAP, upc_map)
     ids = [i for i in ids if not (upc_map.get(i) or {}).get("upc")]
+    ids = keep_catalog_ids(ids, meta)
 
     print(
         f"backfill[{worker}]: {len(ids)} comics, delay={args.delay}s, publisher_group={args.publisher_group}, "
@@ -1295,6 +1315,9 @@ def main() -> int:
             stats["timedOut"] = True
             print(f"⏱ time budget reached after {stats['attempted']} attempts")
             break
+        if cid not in meta:
+            print(f"· {cid}: skip (not in current catalog)")
+            continue
 
         # Peer workers may have filled this id — re-read under lock-friendly load
         try:

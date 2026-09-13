@@ -78,7 +78,8 @@ def parse_comics_meta() -> dict[str, dict]:
     for m in pat.finditer(text):
         cid = m.group(1)
         series, issue, publisher = m.group(2), m.group(3), m.group(4)
-        cover_date = m.group(10)
+        # groups: 1=id 2=series 3=issue 4=publisher 5=coverDate ... 10=format
+        cover_date = m.group(5)
         out[cid] = {
             "series": series,
             "issue": issue,
@@ -287,6 +288,10 @@ def main() -> int:
 
     if args.only:
         ids = [x.strip() for x in args.only.split(",") if x.strip()]
+        dropped = [i for i in ids if i not in meta]
+        if dropped:
+            print(f"dropped {len(dropped)} non-catalog --only id(s): {', '.join(dropped[:8])}", file=sys.stderr)
+        ids = [i for i in ids if i in meta]
     else:
         ids = [
             cid
@@ -296,6 +301,7 @@ def main() -> int:
             and cover_year(m) >= args.min_year
         ]
         ids.sort(reverse=bool(args.reverse))
+    ids = [i for i in ids if i in meta]
     ids = ids[: args.limit]
     deadline = time.time() + args.max_minutes * 60 if args.max_minutes > 0 else None
     before = len([1 for v in upc_map.values() if isinstance(v, dict) and v.get("upc")])
@@ -316,6 +322,9 @@ def main() -> int:
         if deadline and time.time() >= deadline:
             print("max-minutes reached")
             break
+        if cid not in meta:
+            print(f"· {cid}: skip (not in current catalog)")
+            continue
         m = meta.get(cid) or {}
         if (upc_map.get(cid) or {}).get("upc") or (local.get(cid) or {}).get("upc"):
             skipped += 1
