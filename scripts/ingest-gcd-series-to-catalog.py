@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
-"""GCD (comics.org API) series → comics.ts catalog importer.
+"""GCD dump → comics.ts catalog importer (OFFLINE first).
 
 Highest-trust growth path alongside scripts/ingest-locg-series-to-catalog.py.
-Adds NEW rows to src/data/comics.ts from real Grand Comics Database series +
-issue payloads. Never invents titles, publishers, issues, barcodes, or ISBNs.
-No gen-batch / interpolated ghost ids. No Marvel API. No AI art.
+Adds NEW rows to src/data/comics.ts from a local Grand Comics Database dump
+that Shelby/Lyra drop on the box (https://www.comics.org/download/ MySQL).
+Never invents titles, publishers, issues, barcodes, or ISBNs. No gen-batch.
+No Marvel API. No AI art.
+
+HOLD comics.org API traffic. Default path is the dump. `--use-api` is
+opt-in leftovers only.
 
 Hard gates (every new comics.ts row) — GCD-only, per Shelby / Lyra:
-  * Source is a real GCD API series + issue
+  * Source is real GCD dump (or opt-in API) series + issue
   * Keep the row if it has ANY of: gcdIssueId OR upc OR isbn
     (barcode/ISBN is NOT required when a real GCD issue id is present)
   * Real series title, issue number, publisher from GCD — never invent
@@ -16,52 +20,55 @@ Hard gates (every new comics.ts row) — GCD-only, per Shelby / Lyra:
   * Skip issues that fail gates (variants by default, collected editions,
     no parseable GCD date, pre-floor / --min-year)
 
-Map: store gcdIssueId (+ api url) in comic-upc-map.json. Never invent UPCs.
-Safe-merge into comic-upc-map.json / comic-cover-urls.json — LOCG / Metron
-UPCs win; do not clobber stronger existing barcodes.
+Map: store gcdIssueId (+ comics.org issue url as identity, not a fetch) in
+comic-upc-map.json. Never invent UPCs. LOCG / Metron UPCs win on merge.
 
-Polite comics.org pacing
-------------------------
-Default --delay 7s (floor 6s on live runs). Accept: application/json.
-User-Agent identifies as KryptonsToyVault personal collection (same family
-as scripts/backfill-comic-upcs-gcd.py).
+Dump layouts (--sql-dump / --dump-dir)
+--------------------------------------
+  * official YYYY-MM-DD.sql / .sql.gz (streamed; only 3 tables)
+  * table slices: publishers.sql + series.sql + issues.sql
+  * gcd.sqlite (already converted via scripts/load-gcd-sql-dump.py)
+  * gcd_publisher.json + gcd_series.json + gcd_issue.json
 
-429 pull-back (do NOT retry into the ceiling):
-  * On 429: pause (30s, then 90s max), and RAISE the session delay for
-    every subsequent request (doubles, cap 90s).
-  * At most two 429 retries per URL. If still 429, abort the run — persist
-    what already passed gates and tell Glyph to resume later.
-  * Never loop 90→180→360→600 against a hot comics.org.
+Glyph box (LIVE — 2026-09-01)
+-----------------------------
+  zip:    /workspace/gcd-dump/gcd-dump.zip
+  sql:    /workspace/gcd-dump/extracted/2026-09-01.sql
+  sqlite: /workspace/gcd-dump/gcd.sqlite
 
-Glyph / Lyra — how to feed GCD series id lists
-----------------------------------------------
-GCD series ids are numeric (comics.org /series/<id>/ or the API
-/api/series/<id>/). Prefer Image / Boom / IDW / Dark Horse / indie as
-first seeds. Never invent ids.
-
-  # Repeatable ids
   python3 scripts/ingest-gcd-series-to-catalog.py \\
-      --series-id 122674 --series-id 131922 --dry-run --max-issues 5
+      --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \\
+      --publisher Image --min-year 2016 --max-issues 8 --dry-run
 
-  # File: one id per line; `#` comments ok. Lyra can emit this from
-  # comics.org series pages or scripts/comic-gcd-series-cache.json.
   python3 scripts/ingest-gcd-series-to-catalog.py \\
-      --series-ids-file scripts/gcd-series-ids.example.txt --delay 7
+      --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \\
+      --series-ids-file scripts/gcd-series-ids.example.txt --dry-run
 
-  # Optional publisher filter (name or GCD publisher id) after series fetch
+  python3 scripts/load-gcd-sql-dump.py \\
+      --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \\
+      --sqlite /workspace/gcd-dump/gcd.sqlite
+
   python3 scripts/ingest-gcd-series-to-catalog.py \\
-      --series-ids-file scripts/gcd-series-ids.example.txt --publisher Image --dry-run
+      --dump-sqlite /workspace/gcd-dump/gcd.sqlite --publisher Image --max-issues 20 --dry-run
 
-  # List series ids already in the GCD UPC-backfill cache (no live API)
-  python3 scripts/ingest-gcd-series-to-catalog.py --list-cache-seeds
+  python3 scripts/ingest-gcd-series-to-catalog.py \\
+      --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \\
+      --list-dump-series --publisher Boom
 
-  # Fixture proof (no live comics.org)
+  # Fixture proof (no live comics.org, no full dump required)
   python3 scripts/ingest-gcd-series-to-catalog.test.py
   python3 scripts/ingest-gcd-series-to-catalog.py \\
-      --fixture-dir scripts/fixtures/gcd-series-ingest \\
-      --series-id 900101 --dry-run
+      --dump-dir scripts/fixtures/gcd-dump-ingest --series-id 900101 --dry-run
 
-Do not run gen-batch-* or interpolated inject scripts from this path.
+API leftover (OFF by default — do not use during 429 storms)
+------------------------------------------------------------
+  python3 scripts/ingest-gcd-series-to-catalog.py --use-api --series-id 122674 --dry-run
+
+On 429/403/503: honor Retry-After if present, take ONE long cooldown, raise
+session delay, and STOP. Do not retry into a ceiling. Operators: pause this
+source on persistent 429 storms rather than looping the importer.
+
+Do not run gen-batch-* from this path.
 LOCG importer gates are unchanged (locgId + UPC|cover).
 """
 from __future__ import annotations
@@ -77,6 +84,7 @@ import urllib.parse
 import urllib.request
 from collections import Counter
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any, Callable
 
@@ -85,6 +93,7 @@ ROOT = SCRIPT_DIR.parent
 
 sys.path.insert(0, str(SCRIPT_DIR))
 import comic_backlog_common as backlog  # noqa: E402
+import gcd_dump  # noqa: E402
 
 
 def _load_mod(name: str, path: Path):
@@ -107,10 +116,12 @@ UA = (
 )
 LIVE_DELAY_FLOOR = 6.0
 DEFAULT_DELAY = 7.0
-# 429: pause once or twice, then stop. Do not escalate into a 600s retry loop.
-RETRY_PAUSES = (30.0, 90.0)
-MAX_429_RETRIES = 2
-SESSION_DELAY_CAP = 90.0
+# Opt-in API only. On 429/403/503: one cooldown, then STOP. No ceiling-retry.
+PULLBACK_CODES = {403, 429, 503}
+LONG_COOLDOWN_SEC = 300.0
+COOLDOWN_CAP_SEC = 900.0
+SESSION_DELAY_FLOOR_ON_PULLBACK = 60.0
+SESSION_DELAY_CAP = 120.0
 
 MONTHS = locg.MONTHS
 
@@ -354,8 +365,38 @@ def cache_series_entries(cache: dict) -> list[dict]:
     return uniq
 
 
+def parse_retry_after(headers, *, now: datetime | None = None) -> float | None:
+    """Seconds from a Retry-After header (delta-seconds or HTTP-date). None if absent/junk."""
+    if headers is None:
+        return None
+    raw = None
+    try:
+        raw = headers.get("Retry-After") or headers.get("retry-after")
+    except Exception:
+        raw = None
+    if not raw:
+        return None
+    text = str(raw).strip()
+    if re.fullmatch(r"\d+", text):
+        return float(text)
+    try:
+        when = parsedate_to_datetime(text)
+        if when.tzinfo is None:
+            when = when.replace(tzinfo=timezone.utc)
+        base = now or datetime.now(timezone.utc)
+        return max(0.0, (when - base).total_seconds())
+    except (TypeError, ValueError, OverflowError):
+        return None
+
+
+def pullback_cooldown(headers, *, default: float = LONG_COOLDOWN_SEC) -> float:
+    hinted = parse_retry_after(headers)
+    wait = hinted if hinted is not None else default
+    return min(COOLDOWN_CAP_SEC, max(0.0, wait))
+
+
 class GcdClient:
-    """Polite comics.org JSON client with 429 pull-back (no ceiling-retry)."""
+    """Opt-in comics.org JSON client. 429/403/503 → cooldown + STOP (no retries)."""
 
     def __init__(
         self,
@@ -372,7 +413,7 @@ class GcdClient:
         self.get_json_fn = get_json_fn
         self.last = 0.0
         self.aborted = False
-        self.consecutive_429 = 0
+        self.last_cooldown = 0.0
 
     def _pace(self) -> None:
         wait_for = self.session_delay
@@ -385,12 +426,32 @@ class GcdClient:
     def _raise_session_delay(self) -> None:
         self.session_delay = min(
             SESSION_DELAY_CAP,
-            max(self.session_delay * 2.0, 30.0),
+            max(self.session_delay * 4.0, SESSION_DELAY_FLOOR_ON_PULLBACK),
+        )
+
+    def _pull_back(self, code: int, url: str, headers) -> None:
+        """Stop hitting comics.org. One cooldown, then abort — no further requests."""
+        self.aborted = True
+        self._raise_session_delay()
+        cooldown = pullback_cooldown(headers)
+        self.last_cooldown = cooldown
+        print(
+            f"  HTTP {code} — pull-back {cooldown:.0f}s "
+            f"(Retry-After honored if present); session delay now "
+            f"{self.session_delay:.0f}s. STOP hitting comics.org. "
+            f"Pause this source on a 429 storm — do not loop the importer.",
+            file=sys.stderr,
+        )
+        if cooldown:
+            self.sleep(cooldown)
+        raise RateLimitAbort(
+            f"gcd HTTP {code} on {url} — source paused after {cooldown:.0f}s cooldown. "
+            f"Do not re-run against comics.org until the storm clears; use --dump-dir."
         )
 
     def get_json(self, url: str) -> dict | list | None:
         if self.aborted:
-            raise RateLimitAbort("gcd 429 pull-back: run already paused")
+            raise RateLimitAbort("gcd pull-back: run already paused — use the dump")
         if self.get_json_fn is not None:
             self._pace()
             return self.get_json_fn(url)
@@ -401,39 +462,20 @@ class GcdClient:
             url,
             headers={"User-Agent": UA, "Accept": "application/json"},
         )
-        for attempt in range(MAX_429_RETRIES + 1):
-            self._pace()
-            try:
-                with self.urlopen(req, timeout=30) as resp:
-                    self.consecutive_429 = 0
-                    return json.loads(resp.read().decode("utf-8", "replace"))
-            except urllib.error.HTTPError as e:
-                if e.code == 429:
-                    self.consecutive_429 += 1
-                    self._raise_session_delay()
-                    if attempt >= MAX_429_RETRIES:
-                        self.aborted = True
-                        raise RateLimitAbort(
-                            f"gcd HTTP 429 on {url} — pull-back (session delay now "
-                            f"{self.session_delay:.0f}s). Resume later; do not hammer comics.org."
-                        ) from e
-                    pause = RETRY_PAUSES[min(attempt, len(RETRY_PAUSES) - 1)]
-                    print(
-                        f"  HTTP 429 — pausing {pause:.0f}s and raising delay to "
-                        f"{self.session_delay:.0f}s (no ceiling-retry)",
-                        file=sys.stderr,
-                    )
-                    self.sleep(pause)
-                    continue
-                print(f"  HTTP {e.code} {url}", file=sys.stderr)
-                return None
-            except RateLimitAbort:
-                raise
-            except Exception as e:
-                print(f"  GET error {url}: {e}", file=sys.stderr)
-                return None
-        self.aborted = True
-        raise RateLimitAbort(f"gcd HTTP 429 pull-back on {url}")
+        self._pace()
+        try:
+            with self.urlopen(req, timeout=30) as resp:
+                return json.loads(resp.read().decode("utf-8", "replace"))
+        except urllib.error.HTTPError as e:
+            if e.code in PULLBACK_CODES:
+                self._pull_back(e.code, url, e.headers)
+            print(f"  HTTP {e.code} {url}", file=sys.stderr)
+            return None
+        except RateLimitAbort:
+            raise
+        except Exception as e:
+            print(f"  GET error {url}: {e}", file=sys.stderr)
+            return None
 
 
 def fixture_get_json(fixture_dir: Path) -> Callable[[str], dict | list | None]:
@@ -468,7 +510,7 @@ def parse_issue(
     )
     number = str(issue.get("number") or "").strip() or descriptor_issue_num(descriptor) or ""
     barcode = normalize_upc(issue.get("barcode"))
-    isbn = normalize_upc(issue.get("isbn"))
+    isbn = normalize_upc(issue.get("valid_isbn") or issue.get("isbn"))
     cover = str(issue.get("cover") or "").strip()
     if cover and not cover.startswith("http"):
         cover = ""
@@ -754,6 +796,135 @@ def ingest_series(
     return rows, skips, upc_local, cover_local
 
 
+def ingest_series_from_dump(
+    series_id: str,
+    *,
+    store: gcd_dump.GcdDumpStore,
+    max_issues: int,
+    min_year: int,
+    mains_only: bool,
+    publisher_filter: str,
+    existing_ids: set[str],
+    existing_keys: set[str],
+    existing_gcd: set[str],
+    existing_locg: set[str],
+    existing_meta: dict[str, dict],
+    id_prefix: str | None,
+) -> tuple[list, list[dict], dict, dict]:
+    """Gate dump rows the same way as API rows. No comics.org traffic."""
+    rows: list = []
+    skips: list[dict] = []
+    upc_local: dict = {}
+    cover_local: dict = {}
+
+    series = store.get_series(series_id)
+    if not series:
+        skips.append({"seriesId": series_id, "reason": "no-series"})
+        return rows, skips, upc_local, cover_local
+
+    year_began = series.get("year_began")
+    if min_year and isinstance(year_began, int) and year_began < min_year:
+        skips.append({"seriesId": series_id, "reason": "min-year", "year": year_began})
+        return rows, skips, upc_local, cover_local
+
+    pub_row = store.get_publisher(series.get("publisher_id")) if series.get("publisher_id") is not None else None
+    publisher = str((pub_row or {}).get("name") or "").strip()
+    if publisher_filter:
+        pf = publisher_filter.strip()
+        if pf.isdigit():
+            if str(series.get("publisher_id")) != pf:
+                skips.append({"seriesId": series_id, "reason": "publisher-filter", "publisher": publisher})
+                return rows, skips, upc_local, cover_local
+        elif not bf.publisher_ok(publisher, pf):
+            skips.append({"seriesId": series_id, "reason": "publisher-filter", "publisher": publisher})
+            return rows, skips, upc_local, cover_local
+
+    items = store.issues_for_series(series_id)
+    items.sort(key=lambda r: (int(re.sub(r"\D", "", str(r.get("number") or "0")) or 0), str(r.get("number") or "")))
+    if max_issues and max_issues > 0:
+        # Apply cap after variant filter so --max-issues means main issues.
+        pass
+
+    print(f"series {series_id}: {series.get('name')} ({publisher}) — {len(items)} dump issue(s)")
+
+    kept = 0
+    for issue in items:
+        desc = gcd_dump.dump_issue_descriptor(issue)
+        variant = bool(issue.get("variant_name")) or issue.get("variant_of_id") not in (None, "", 0, "0")
+        if mains_only and (variant or not is_main_descriptor(desc)):
+            skips.append(
+                {
+                    "seriesId": series_id,
+                    "issue": issue.get("number") or desc,
+                    "gcdIssueId": issue.get("id"),
+                    "reason": "variant",
+                }
+            )
+            continue
+        if max_issues and max_issues > 0 and kept >= max_issues:
+            break
+        gid = str(issue.get("id") or "")
+        parsed = parse_issue(
+            {
+                **issue,
+                "api_url": f"{API}/issue/{gid}/" if gid.isdigit() else "",
+                "series_name": series.get("name"),
+                "variant_of": issue.get("variant_of_id"),
+            },
+            url=f"{API}/issue/{gid}/" if gid.isdigit() else "",
+            series=series,
+            publisher=publisher,
+            descriptor=desc,
+        )
+        parsed["series"], parsed["publisher"] = locg.canon_series_publisher(
+            parsed.get("series") or "", parsed.get("publisher") or "", existing_meta
+        )
+        catalog_id = locg.make_catalog_id(
+            series=parsed.get("series") or "",
+            issue=str(parsed.get("issue") or ""),
+            publisher=parsed.get("publisher") or "",
+            cover_date=parsed.get("coverDate") or "",
+            existing_ids=existing_ids,
+            existing_meta=existing_meta,
+            id_prefix_override=id_prefix,
+        )
+        reason = gate_reason(
+            parsed,
+            existing_ids=existing_ids,
+            existing_keys=existing_keys,
+            existing_gcd=existing_gcd,
+            existing_locg=existing_locg,
+            min_year=min_year,
+            catalog_id=catalog_id,
+        )
+        if reason:
+            skips.append(
+                {
+                    "seriesId": series_id,
+                    "issue": parsed.get("issue") or desc,
+                    "gcdIssueId": parsed.get("gcdIssueId"),
+                    "reason": reason,
+                }
+            )
+            continue
+        assert catalog_id is not None
+        row = build_row(catalog_id, parsed, existing_meta)
+        rows.append(row)
+        existing_ids.add(catalog_id)
+        existing_keys.add(f"{row[1]}|{row[2]}|{row[3]}".lower())
+        if parsed.get("gcdIssueId"):
+            existing_gcd.add(str(parsed["gcdIssueId"]))
+        upc_local[catalog_id] = upc_entry(parsed)
+        if parsed.get("coverUrl"):
+            cover_local[catalog_id] = parsed["coverUrl"]
+        kept += 1
+        print(
+            f"  + {catalog_id}  {row[1]} #{row[2]}  gcd={parsed.get('gcdIssueId')}  "
+            f"upc={parsed.get('upc') or parsed.get('isbn') or '—'}  {parsed.get('coverDate')}"
+        )
+    return rows, skips, upc_local, cover_local
+
+
 def persist(root: Path, rows: list, series_ids: list[str], upc_local: dict, cover_local: dict) -> None:
     comics_ts = root / "src/data/comics.ts"
     if rows:
@@ -773,6 +944,17 @@ def persist(root: Path, rows: list, series_ids: list[str], upc_local: dict, cove
         print("nothing to write")
 
 
+def _dedupe_ids(ids: list[str]) -> list[str]:
+    seen: set[str] = set()
+    out: list[str] = []
+    for sid in ids:
+        if sid in seen:
+            continue
+        seen.add(sid)
+        out.append(sid)
+    return out
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(
         description=__doc__,
@@ -789,20 +971,55 @@ def main(argv: list[str] | None = None) -> int:
         "--publisher",
         type=str,
         default="",
-        help="Optional GCD publisher name or numeric publisher id (filters fetched series)",
+        help="GCD publisher name or numeric publisher id (dump filter / discovery)",
+    )
+    ap.add_argument(
+        "--sql-dump",
+        type=str,
+        default="",
+        help="Official YYYY-MM-DD.sql[.gz] (Glyph box: /workspace/gcd-dump/extracted/2026-09-01.sql)",
+    )
+    ap.add_argument(
+        "--dump-dir",
+        type=str,
+        default="",
+        help="Local GCD dump drop: directory, YYYY-MM-DD.sql[.gz], or gcd.sqlite.",
+    )
+    ap.add_argument(
+        "--dump-sqlite",
+        type=str,
+        default="",
+        help="Already-converted gcd.sqlite (Glyph box: /workspace/gcd-dump/gcd.sqlite)",
+    )
+    ap.add_argument(
+        "--cache-sqlite",
+        type=str,
+        default="",
+        help="Where to write/reuse the SQL→sqlite working copy",
+    )
+    ap.add_argument(
+        "--rebuild-dump-cache",
+        action="store_true",
+        help="Rebuild sqlite from SQL even if a compatible cache exists",
+    )
+    ap.add_argument(
+        "--use-api",
+        action="store_true",
+        help="OPT-IN comics.org API (off by default). Hold during 429 storms; prefer --dump-dir.",
     )
     ap.add_argument(
         "--delay",
         type=float,
         default=DEFAULT_DELAY,
-        help=f"Seconds between comics.org requests (default {DEFAULT_DELAY:g}; live floor {LIVE_DELAY_FLOOR:g})",
+        help=f"Seconds between opt-in API requests (default {DEFAULT_DELAY:g}; live floor {LIVE_DELAY_FLOOR:g})",
     )
     ap.add_argument("--max-issues", type=int, default=0, help="Cap issues per series (0=no cap)")
     ap.add_argument("--dry-run", action="store_true", help="Parse and gate only; do not write")
     ap.add_argument("--min-year", type=int, default=1980, help="Skip series/issues below this year")
-    ap.add_argument("--fixture-dir", type=str, default="", help="Local series/issue fixtures; no live API")
+    ap.add_argument("--fixture-dir", type=str, default="", help="API JSON fixtures (only with --use-api)")
     ap.add_argument("--from-cache", action="store_true", help="Use series ids from comic-gcd-series-cache.json")
     ap.add_argument("--list-cache-seeds", action="store_true", help="Print cached GCD series ids and exit")
+    ap.add_argument("--list-dump-series", action="store_true", help="Print series from the dump (optional --publisher)")
     ap.add_argument("--include-variants", action="store_true", help="Also ingest GCD variants (default: mains)")
     ap.add_argument("--id-prefix", type=str, default="", help="Force catalog id prefix (e.g. im-nocterra)")
     ap.add_argument("--root", type=str, default="", help="Workspace root (tests)")
@@ -822,18 +1039,29 @@ def main(argv: list[str] | None = None) -> int:
         print(f"# {len(seeds)} unique GCD series ids", file=sys.stderr)
         return 0
 
-    fixture_dir = Path(args.fixture_dir).resolve() if args.fixture_dir else None
-    delay = float(args.delay)
-    if fixture_dir:
-        if not fixture_dir.is_dir():
-            raise SystemExit(f"fixture-dir not found: {fixture_dir}")
-        delay = 0.0
-    elif delay < LIVE_DELAY_FLOOR:
-        print(
-            f"comics.org 429s — raising --delay {delay} → {LIVE_DELAY_FLOOR}s (polite floor)",
-            file=sys.stderr,
-        )
-        delay = LIVE_DELAY_FLOOR
+    sql_dump: Path | None = None
+    if args.sql_dump:
+        sql_dump = gcd_dump.resolve_user_path(args.sql_dump, root)
+        if not sql_dump.exists():
+            raise SystemExit(f"sql-dump not found: {sql_dump}\n{gcd_dump.MISSING_DUMP_MESSAGE}")
+        if not gcd_dump.is_sql_file(sql_dump):
+            raise SystemExit(f"--sql-dump must be a .sql / .sql.gz file: {sql_dump}")
+
+    dump_dir = gcd_dump.discover_dump_dir(
+        args.dump_dir or None,
+        root=root,
+    )
+    if args.dump_dir:
+        dump_dir = gcd_dump.resolve_user_path(args.dump_dir, root)
+        if not dump_dir.exists():
+            raise SystemExit(f"dump-dir not found: {dump_dir}\n{gcd_dump.MISSING_DUMP_MESSAGE}")
+        if dump_dir.is_file() and not (
+            gcd_dump.is_sql_file(dump_dir) or gcd_dump.is_sqlite_file(dump_dir)
+        ):
+            raise SystemExit(f"dump-dir file is not a GCD SQL/sqlite dump: {dump_dir}")
+
+    dump_sqlite = gcd_dump.resolve_user_path(args.dump_sqlite, root) if args.dump_sqlite else None
+    cache_sqlite = gcd_dump.resolve_user_path(args.cache_sqlite, root) if args.cache_sqlite else None
 
     series_ids: list[str] = []
     for sid in args.series_id:
@@ -846,21 +1074,118 @@ def main(argv: list[str] | None = None) -> int:
         series_ids.extend(parse_series_ids_file(Path(args.series_ids_file)))
     if args.from_cache:
         series_ids.extend(e["seriesId"] for e in cache_series_entries(cache))
+    series_ids = _dedupe_ids(series_ids)
 
-    seen_s: set[str] = set()
-    ordered: list[str] = []
-    for sid in series_ids:
-        if sid in seen_s:
-            continue
-        seen_s.add(sid)
-        ordered.append(sid)
-    series_ids = ordered
+    store: gcd_dump.GcdDumpStore | None = None
+    use_dump = not args.use_api
+    if args.use_api and (dump_dir or dump_sqlite or sql_dump):
+        print("note: --use-api ignores --sql-dump / --dump-dir (API leftover path)", file=sys.stderr)
 
-    if not series_ids:
-        raise SystemExit(
-            "no series ids — pass --series-id, --series-ids-file, or --from-cache. "
-            "Glyph/Lyra: copy numeric GCD series ids from comics.org /series/<id>/ "
-            "(Image / Boom / IDW / Dark Horse first). See scripts/gcd-series-ids.example.txt."
+    if use_dump:
+        if not dump_dir and not dump_sqlite and not sql_dump:
+            raise SystemExit(gcd_dump.MISSING_DUMP_MESSAGE)
+        discover_only = bool(args.list_dump_series or (args.publisher and not series_ids))
+        try:
+            # Empty filter = publishers + series only (no issue stream) for listing.
+            # Explicit series ids stream just those issues. None = all issues.
+            filter_ids: list[str] | None
+            if discover_only:
+                filter_ids = []
+            else:
+                filter_ids = series_ids or None
+            store = gcd_dump.open_dump(
+                dump_dir=dump_dir,
+                dump_sqlite=dump_sqlite,
+                sql_dump=sql_dump,
+                cache_sqlite=cache_sqlite,
+                series_ids=filter_ids,
+                rebuild_cache=args.rebuild_dump_cache,
+            )
+        except FileNotFoundError as e:
+            raise SystemExit(str(e)) from e
+
+        if args.list_dump_series:
+            pubs = store.find_publishers(args.publisher) if args.publisher else []
+            listed = 0
+            if args.publisher and not pubs:
+                print(f"# no dump publisher match for {args.publisher!r}", file=sys.stderr)
+                return 1
+            targets = pubs if pubs else [None]
+            for pub in targets:
+                rows = (
+                    store.series_for_publisher(pub["id"], args.min_year)
+                    if pub
+                    else []
+                )
+                if pub is None:
+                    # No publisher filter: require series ids already in hand.
+                    print("# pass --publisher to list dump series", file=sys.stderr)
+                    return 0
+                for s in rows:
+                    print(f"{s['id']}\t{s.get('year_began') or ''}\t{pub.get('name')}\t{s.get('name')}")
+                    listed += 1
+            print(f"# {listed} dump series", file=sys.stderr)
+            store.close()
+            return 0
+
+        if not series_ids and args.publisher:
+            pubs = store.find_publishers(args.publisher)
+            if not pubs:
+                store.close()
+                raise SystemExit(f"no dump publisher match for {args.publisher!r}")
+            for pub in pubs:
+                for s in store.series_for_publisher(pub["id"], args.min_year):
+                    series_ids.append(str(s["id"]))
+            series_ids = _dedupe_ids(series_ids)
+            print(f"dump publisher {args.publisher!r} → {len(series_ids)} series", file=sys.stderr)
+
+        if discover_only and series_ids:
+            store.close()
+            try:
+                store = gcd_dump.open_dump(
+                    dump_dir=dump_dir,
+                    dump_sqlite=dump_sqlite,
+                    sql_dump=sql_dump,
+                    cache_sqlite=cache_sqlite,
+                    series_ids=series_ids,
+                    rebuild_cache=args.rebuild_dump_cache,
+                )
+            except FileNotFoundError as e:
+                raise SystemExit(str(e)) from e
+
+        if not series_ids:
+            store.close()
+            raise SystemExit(
+                "no series ids — pass --series-id, --series-ids-file, --from-cache, "
+                "or --publisher (dump discovery). Prefer Image / Boom / IDW / Dark Horse. "
+                "See scripts/gcd-series-ids.example.txt."
+            )
+    else:
+        if args.list_dump_series:
+            raise SystemExit("--list-dump-series needs --sql-dump / --dump-dir (not --use-api)")
+
+    fixture_dir = Path(args.fixture_dir).resolve() if args.fixture_dir else None
+    delay = float(args.delay)
+    client: GcdClient | None = None
+    if args.use_api:
+        if fixture_dir:
+            if not fixture_dir.is_dir():
+                raise SystemExit(f"fixture-dir not found: {fixture_dir}")
+            delay = 0.0
+        elif delay < LIVE_DELAY_FLOOR:
+            print(
+                f"comics.org 429s — raising --delay {delay} → {LIVE_DELAY_FLOOR}s (polite floor)",
+                file=sys.stderr,
+            )
+            delay = LIVE_DELAY_FLOOR
+        if not series_ids:
+            raise SystemExit(
+                "no series ids for --use-api — pass --series-id / --series-ids-file / --from-cache. "
+                "Prefer --dump-dir instead of the API."
+            )
+        client = GcdClient(
+            delay,
+            get_json_fn=fixture_get_json(fixture_dir) if fixture_dir else None,
         )
 
     comics_ts = root / "src/data/comics.ts"
@@ -871,47 +1196,64 @@ def main(argv: list[str] | None = None) -> int:
     existing_gcd = collect_gcd_ids(upc_map)
     existing_locg = collect_locg_ids(upc_map, cover_urls, comics_ts.read_text())
 
-    client = GcdClient(
-        delay,
-        get_json_fn=fixture_get_json(fixture_dir) if fixture_dir else None,
-    )
-
     all_rows: list = []
     all_skips: list[dict] = []
     upc_local: dict = {}
     cover_local: dict = {}
     aborted = False
+    source = "dump" if store else "api"
 
     print(
-        f"gcd ingest {len(series_ids)} series  delay={delay}s  "
+        f"gcd ingest {len(series_ids)} series  source={source}  "
         f"min_year={args.min_year}  dry_run={args.dry_run}  "
         f"catalog_ids={len(existing_ids)} gcdIds={len(existing_gcd)}"
     )
 
-    for sid in series_ids:
-        try:
-            rows, skips, u, c = ingest_series(
-                sid,
-                client=client,
-                max_issues=args.max_issues,
-                min_year=args.min_year,
-                mains_only=not args.include_variants,
-                publisher_filter=args.publisher,
-                existing_ids=existing_ids,
-                existing_keys=existing_keys,
-                existing_gcd=existing_gcd,
-                existing_locg=existing_locg,
-                existing_meta=existing_meta,
-                id_prefix=args.id_prefix or None,
-            )
-        except RateLimitAbort as e:
-            print(str(e), file=sys.stderr)
-            aborted = True
-            break
-        all_rows.extend(rows)
-        all_skips.extend(skips)
-        upc_local.update(u)
-        cover_local.update(c)
+    try:
+        for sid in series_ids:
+            try:
+                if store is not None:
+                    rows, skips, u, c = ingest_series_from_dump(
+                        sid,
+                        store=store,
+                        max_issues=args.max_issues,
+                        min_year=args.min_year,
+                        mains_only=not args.include_variants,
+                        publisher_filter=args.publisher,
+                        existing_ids=existing_ids,
+                        existing_keys=existing_keys,
+                        existing_gcd=existing_gcd,
+                        existing_locg=existing_locg,
+                        existing_meta=existing_meta,
+                        id_prefix=args.id_prefix or None,
+                    )
+                else:
+                    assert client is not None
+                    rows, skips, u, c = ingest_series(
+                        sid,
+                        client=client,
+                        max_issues=args.max_issues,
+                        min_year=args.min_year,
+                        mains_only=not args.include_variants,
+                        publisher_filter=args.publisher,
+                        existing_ids=existing_ids,
+                        existing_keys=existing_keys,
+                        existing_gcd=existing_gcd,
+                        existing_locg=existing_locg,
+                        existing_meta=existing_meta,
+                        id_prefix=args.id_prefix or None,
+                    )
+            except RateLimitAbort as e:
+                print(str(e), file=sys.stderr)
+                aborted = True
+                break
+            all_rows.extend(rows)
+            all_skips.extend(skips)
+            upc_local.update(u)
+            cover_local.update(c)
+    finally:
+        if store is not None:
+            store.close()
 
     reasons = Counter(s["reason"] for s in all_skips)
     print(f"added={len(all_rows)} skipped={len(all_skips)} {dict(reasons)}")
@@ -932,8 +1274,9 @@ def main(argv: list[str] | None = None) -> int:
         "skipped": all_skips,
         "dryRun": bool(args.dry_run),
         "seriesIds": series_ids,
+        "source": source,
         "abortedRateLimit": aborted,
-        "sessionDelay": client.session_delay,
+        "sessionDelay": client.session_delay if client else 0,
     }
     if args.report:
         Path(args.report).write_text(json.dumps(report, indent=2) + "\n")

@@ -13,14 +13,15 @@ import sys
 import tempfile
 import unittest
 import urllib.error
+from datetime import datetime, timezone
 from pathlib import Path
-from unittest.mock import MagicMock
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 ROOT = SCRIPT_DIR.parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
 import comic_backlog_common as backlog  # noqa: E402
+import gcd_dump  # noqa: E402
 
 
 def _load_ingest():
@@ -36,6 +37,8 @@ def _load_ingest():
 ingest = _load_ingest()
 
 FIXTURE_DIR = SCRIPT_DIR / "fixtures" / "gcd-series-ingest"
+DUMP_DIR = SCRIPT_DIR / "fixtures" / "gcd-dump-ingest"
+DUMP_SQL_DIR = SCRIPT_DIR / "fixtures" / "gcd-dump-sql"
 
 MINI_COMICS_TS = """\
 type Row = [
@@ -228,7 +231,16 @@ class HelpersTest(unittest.TestCase):
         self.assertEqual(merged["im-keep-metron"]["source"], "metron")
         self.assertEqual(merged["im-new-1"]["gcdIssueId"], "8000099")
 
-    def test_429_raises_delay_then_aborts_instead_of_ceiling_retry(self):
+    def test_parse_retry_after_seconds_and_http_date(self):
+        self.assertEqual(ingest.parse_retry_after({"Retry-After": "120"}), 120.0)
+        when = datetime(2026, 9, 13, 12, 0, tzinfo=timezone.utc)
+        now = datetime(2026, 9, 13, 11, 55, tzinfo=timezone.utc)
+        headers = {"Retry-After": "Sun, 13 Sep 2026 12:00:00 GMT"}
+        self.assertEqual(ingest.parse_retry_after(headers, now=now), 300.0)
+        self.assertIsNone(ingest.parse_retry_after({}))
+        self.assertEqual(ingest.pullback_cooldown({"Retry-After": "99999"}), ingest.COOLDOWN_CAP_SEC)
+
+    def test_429_stops_after_one_cooldown_no_retry(self):
         slept: list[float] = []
 
         class Always429:
@@ -237,42 +249,31 @@ class HelpersTest(unittest.TestCase):
 
             def __call__(self, req, timeout=30):
                 self.calls += 1
-                raise urllib.error.HTTPError(req.full_url, 429, "Too Many", hdrs=None, fp=None)
+                raise urllib.error.HTTPError(req.full_url, 429, "Too Many", hdrs={"Retry-After": "180"}, fp=None)
 
         boom = Always429()
         client = ingest.GcdClient(7.0, sleep=slept.append, urlopen=boom)
         with self.assertRaises(ingest.RateLimitAbort):
             client.get_json("https://www.comics.org/api/issue/1/")
-        self.assertEqual(boom.calls, ingest.MAX_429_RETRIES + 1)
+        self.assertEqual(boom.calls, 1)
         self.assertTrue(client.aborted)
-        self.assertGreaterEqual(client.session_delay, 30.0)
-        self.assertLessEqual(client.session_delay, ingest.SESSION_DELAY_CAP)
-        self.assertTrue(slept)
-        self.assertLessEqual(max(slept), 90.0)
-        self.assertNotIn(600.0, slept)
+        self.assertGreaterEqual(client.session_delay, ingest.SESSION_DELAY_FLOOR_ON_PULLBACK)
+        self.assertEqual(client.last_cooldown, 180.0)
+        self.assertIn(180.0, slept)
+        with self.assertRaises(ingest.RateLimitAbort):
+            client.get_json("https://www.comics.org/api/issue/2/")
+        self.assertEqual(boom.calls, 1)
 
-    def test_429_then_success_raises_session_delay(self):
-        class Once429:
-            def __init__(self):
-                self.n = 0
-
+    def test_403_hard_block_also_pulls_back(self):
+        class Boom403:
             def __call__(self, req, timeout=30):
-                self.n += 1
-                if self.n == 1:
-                    raise urllib.error.HTTPError(req.full_url, 429, "Too Many", hdrs=None, fp=None)
-                body = json.dumps({"ok": True}).encode()
-                resp = MagicMock()
-                resp.read.return_value = body
-                resp.__enter__.return_value = resp
-                resp.__exit__.return_value = False
-                return resp
+                raise urllib.error.HTTPError(req.full_url, 403, "Forbidden", hdrs=None, fp=None)
 
-        opener = Once429()
-        client = ingest.GcdClient(7.0, sleep=lambda _s: None, urlopen=opener)
-        data = client.get_json("https://www.comics.org/api/issue/1/")
-        self.assertEqual(data, {"ok": True})
-        self.assertGreaterEqual(client.session_delay, 30.0)
-        self.assertFalse(client.aborted)
+        client = ingest.GcdClient(7.0, sleep=lambda _s: None, urlopen=Boom403())
+        with self.assertRaises(ingest.RateLimitAbort):
+            client.get_json("https://www.comics.org/api/issue/1/")
+        self.assertTrue(client.aborted)
+        self.assertEqual(client.last_cooldown, ingest.LONG_COOLDOWN_SEC)
 
 
 class FixtureIngestTest(unittest.TestCase):
@@ -282,6 +283,7 @@ class FixtureIngestTest(unittest.TestCase):
     def _run(self, series_ids, extra=None, root=None):
         extra = extra or []
         argv = [
+            "--use-api",
             "--fixture-dir",
             str(FIXTURE_DIR),
             "--dry-run",
@@ -371,6 +373,7 @@ class FixtureIngestTest(unittest.TestCase):
             }
         )
         argv = [
+            "--use-api",
             "--fixture-dir",
             str(FIXTURE_DIR),
             "--series-id",
@@ -405,6 +408,191 @@ class FixtureIngestTest(unittest.TestCase):
         self.assertTrue(ids)
         self.assertTrue(all(i.isdigit() for i in ids))
         self.assertIn("122674", ids)
+
+
+class DumpIngestTest(unittest.TestCase):
+    """Primary path: local dump, no comics.org."""
+
+    def tearDown(self):
+        ingest.bind_paths(ROOT)
+
+    def _run(self, series_ids, extra=None, root=None, dump_dir=None):
+        extra = extra or []
+        argv = [
+            "--dump-dir",
+            str(dump_dir or DUMP_DIR),
+            "--dry-run",
+            "--report",
+            str((root or Path(tempfile.mkdtemp())) / "report.json"),
+        ]
+        for sid in series_ids:
+            argv.extend(["--series-id", sid])
+        argv.extend(extra)
+        if root:
+            argv.extend(["--root", str(root)])
+        code = ingest.main(argv)
+        self.assertEqual(code, 0)
+        report_path = Path(argv[argv.index("--report") + 1])
+        return json.loads(report_path.read_text())
+
+    def _mini_root(self, upc_map=None, cover_urls=None):
+        td = Path(tempfile.mkdtemp())
+        (td / "src/data").mkdir(parents=True)
+        (td / "scripts").mkdir(parents=True)
+        (td / "src/data/comics.ts").write_text(MINI_COMICS_TS)
+        (td / "src/data/comic-upc-map.json").write_text(json.dumps(upc_map or {}, indent=2) + "\n")
+        (td / "src/data/comic-cover-urls.json").write_text(json.dumps(cover_urls or {}, indent=2) + "\n")
+        (td / "scripts/comic-gcd-series-cache.json").write_text("{}\n")
+        return td
+
+    def test_dump_keeps_gcd_id_without_barcode(self):
+        root = self._mini_root()
+        report = self._run(["900101"], root=root)
+        self.assertEqual(report["source"], "dump")
+        added = {r["id"]: r for r in report["added"]}
+        skip_reasons = {s["reason"] for s in report["skipped"]}
+        self.assertIn("im-gcd-fixture-indie-1", added)
+        self.assertIn("im-gcd-fixture-indie-2", added)
+        self.assertIn("im-gcd-fixture-indie-6", added)
+        self.assertEqual(added["im-gcd-fixture-indie-1"]["upc"], "84428400999100111")
+        self.assertEqual(added["im-gcd-fixture-indie-2"]["gcdIssueId"], "8000002")
+        self.assertIsNone(added["im-gcd-fixture-indie-2"]["upc"])
+        self.assertEqual(added["im-gcd-fixture-indie-6"]["upc"], "9781534321234")
+        self.assertTrue({"variant", "no-cover-date", "collected-edition"} <= skip_reasons)
+        self.assertEqual((root / "src/data/comics.ts").read_text(), MINI_COMICS_TS)
+
+    def test_dump_publisher_discovery(self):
+        root = self._mini_root()
+        report = self._run([], extra=["--publisher", "Image", "--max-issues", "1"], root=root)
+        ids = {r["id"] for r in report["added"]}
+        self.assertTrue(ids)
+        self.assertTrue(any(i.startswith("im-") for i in ids))
+
+    def test_dump_sql_slice(self):
+        root = self._mini_root()
+        report = self._run(["900101"], root=root, dump_dir=DUMP_SQL_DIR)
+        added = {r["gcdIssueId"]: r for r in report["added"]}
+        self.assertIn("8000001", added)
+        self.assertIn("8000002", added)
+        self.assertEqual(added["8000001"]["upc"], "84428400999100111")
+        self.assertIsNone(added["8000002"]["upc"])
+
+    def test_dump_dir_accepts_sql_file(self):
+        root = self._mini_root()
+        sql = DUMP_SQL_DIR / "slice.sql"
+        report = self._run(["900101"], root=root, dump_dir=sql)
+        added = {r["gcdIssueId"]: r for r in report["added"]}
+        self.assertIn("8000001", added)
+        self.assertIn("8000002", added)
+
+    def test_sql_dump_flag(self):
+        root = self._mini_root()
+        report_path = root / "report.json"
+        argv = [
+            "--sql-dump",
+            str(DUMP_SQL_DIR / "slice.sql"),
+            "--series-id",
+            "900101",
+            "--dry-run",
+            "--report",
+            str(report_path),
+            "--root",
+            str(root),
+        ]
+        self.assertEqual(ingest.main(argv), 0)
+        report = json.loads(report_path.read_text())
+        self.assertEqual(report["source"], "dump")
+        self.assertIn("8000001", {r["gcdIssueId"] for r in report["added"]})
+
+    def test_load_helper_writes_sqlite(self):
+        spec = importlib.util.spec_from_file_location(
+            "load_gcd_sql_dump", SCRIPT_DIR / "load-gcd-sql-dump.py"
+        )
+        self.assertIsNotNone(spec)
+        assert spec is not None and spec.loader is not None
+        load = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(load)
+        td = Path(tempfile.mkdtemp())
+        sqlite = td / "gcd.sqlite"
+        self.assertEqual(
+            load.main(
+                [
+                    "--sql-dump",
+                    str(DUMP_SQL_DIR / "slice.sql"),
+                    "--sqlite",
+                    str(sqlite),
+                    "--series-id",
+                    "900101",
+                ]
+            ),
+            0,
+        )
+        self.assertTrue(sqlite.is_file())
+        store = gcd_dump.SqliteDumpStore(sqlite)
+        self.assertIsNotNone(store.get_series(900101))
+        self.assertTrue(store.issues_for_series(900101))
+        store.close()
+        root = self._mini_root()
+        report_path = root / "report.json"
+        self.assertEqual(
+            ingest.main(
+                [
+                    "--dump-sqlite",
+                    str(sqlite),
+                    "--series-id",
+                    "900101",
+                    "--dry-run",
+                    "--report",
+                    str(report_path),
+                    "--root",
+                    str(root),
+                ]
+            ),
+            0,
+        )
+        report = json.loads(report_path.read_text())
+        self.assertIn("8000001", {r["gcdIssueId"] for r in report["added"]})
+
+    def test_complete_insert_column_list(self):
+        blob = (
+            "INSERT INTO `gcd_issue` (`id`,`number`,`series_id`,`barcode`,`deleted`) "
+            "VALUES (9,'1',900101,'84428400999100111',0);"
+        )
+        cols = gcd_dump.parse_insert_column_list(blob)
+        self.assertEqual(cols, ["id", "number", "series_id", "barcode", "deleted"])
+
+    def test_dump_write_does_not_clobber_locg(self):
+        root = self._mini_root(
+            upc_map={
+                "im-keep-1": {
+                    "upc": "111111111111",
+                    "source": "locg",
+                    "locgId": "9",
+                    "fetchedAt": "2026-01-01T00:00:00Z",
+                }
+            }
+        )
+        argv = [
+            "--dump-dir",
+            str(DUMP_DIR),
+            "--series-id",
+            "900101",
+            "--max-issues",
+            "1",
+            "--root",
+            str(root),
+        ]
+        self.assertEqual(ingest.main(argv), 0)
+        comics = (root / "src/data/comics.ts").read_text()
+        self.assertIn('gcdIssueId: "8000001"', comics)
+        upc = json.loads((root / "src/data/comic-upc-map.json").read_text())
+        self.assertEqual(upc["im-keep-1"]["upc"], "111111111111")
+        self.assertEqual(upc["im-gcd-fixture-indie-1"]["gcdIssueId"], "8000001")
+
+    def test_refuses_api_without_use_api_flag(self):
+        root = self._mini_root()
+        with self.assertRaises(SystemExit):
+            ingest.main(["--root", str(root), "--series-id", "900101", "--dry-run"])
 
 
 if __name__ == "__main__":

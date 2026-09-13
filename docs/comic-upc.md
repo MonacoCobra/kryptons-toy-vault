@@ -51,48 +51,78 @@ python3 scripts/ingest-locg-series-to-catalog.py \
   --fixture-dir scripts/fixtures/locg-series-ingest --series-id 900001 --dry-run
 ```
 
-## Catalog growth from real GCD series (comics.org API)
+## Catalog growth from a local GCD dump (OFFLINE — hold the API)
 
-Parallel highest-trust path for **new** `comics.ts` rows: walk real Grand
-Comics Database series → issues via `https://www.comics.org/api/`. Script:
-`scripts/ingest-gcd-series-to-catalog.py`.
+Parallel highest-trust path for **new** `comics.ts` rows: ingest Shelby’s
+official Grand Comics Database MySQL dump (`https://www.comics.org/download/`)
+that Lyra drops on the box. Script: `scripts/ingest-gcd-series-to-catalog.py`.
+
+**Use the dump.** Do **not** hammer `comics.org/api` — Glyph holds API traffic.
+`--use-api` is opt-in leftovers only.
 
 **GCD-only gates** (Shelby / Lyra — not the same as LOCG): keep a row if it
-has **any** of `gcdIssueId` **or** UPC **or** ISBN, plus real GCD
+has **any of** `gcdIssueId` **or** UPC **or** ISBN, plus real GCD
 series/issue/publisher. Barcode is **not** required when a real GCD issue id
-is present. Store `gcdIssueId` (and API url) in `comic-upc-map.json`. Never
-invent UPCs; LOCG / Metron barcodes win on merge.
+is present. Store `gcdIssueId` in `comic-upc-map.json`. Never invent UPCs;
+LOCG / Metron barcodes win on merge.
 
 LOCG importer gates stay `locgId` + UPC|cover.
 
-Polite comics.org pacing: default `--delay 7` (live floor 6s). On 429 the
-client pauses, **raises** the session delay, and aborts after two retries —
-it does not retry into a 600s ceiling. Identify as KryptonsToyVault personal
-collection (same family as `scripts/backfill-comic-upcs-gcd.py`).
+`--sql-dump` points at the official `YYYY-MM-DD.sql` (preferred). `--dump-dir`
+accepts a directory or a `.sql` / `.sqlite` file. SQL is streamed into a
+working sqlite (`/workspace/gcd-dump/gcd.sqlite` on the box, or
+`.gcd-ingest.sqlite` next to fixtures) and reused. Helper:
+`scripts/load-gcd-sql-dump.py`. No MySQL server required.
+
+If `--use-api` is ever needed: default delay ≥6–8s. On 429/403/503 honor
+`Retry-After`, take **one** long cooldown, raise session delay, and **STOP**.
+Do not retry into a ceiling. Operators: pause this source on a 429 storm
+rather than looping the importer.
+
+**Glyph box (LIVE — 2026-09-01 dump):**
+
+| Path | What |
+|------|------|
+| `/workspace/gcd-dump/gcd-dump.zip` | Official zip (~700MB) |
+| `/workspace/gcd-dump/extracted/2026-09-01.sql` | Extracted MySQL dump (~3.6GB) |
+| `/workspace/gcd-dump/gcd.sqlite` | Working sqlite after `load-gcd-sql-dump.py` |
+
+Cloud Agent VMs may not have those files. Glyph runs against the box paths.
 
 **Glyph / Lyra:** feed numeric GCD series ids (Image / Boom / IDW / Dark Horse
-/ indie first) from `https://www.comics.org/series/<id>/` or
-`scripts/comic-gcd-series-cache.json`. Do **not** invent ids, UPCs, or
-interpolated ghost rows. Do **not** run `gen-batch-*`. Do **not** mass
-live-ingest from a cloud agent.
+first) or `--publisher`. Do **not** invent ids or UPCs. Do **not** run
+`gen-batch-*`. Do **not** use `--use-api`.
 
 ```bash
-# List series ids already in the GCD UPC-backfill cache (no live API)
-python3 scripts/ingest-gcd-series-to-catalog.py --list-cache-seeds
+# FIRST WAVE (streams the 3.6GB SQL; Image first)
+python3 scripts/ingest-gcd-series-to-catalog.py \
+  --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \
+  --publisher Image --min-year 2016 --max-issues 8 --dry-run
 
-# Dry-run a real series (polite ≥6–8s)
-python3 scripts/ingest-gcd-series-to-catalog.py --series-id 122674 --delay 7 --max-issues 10 --dry-run
+python3 scripts/ingest-gcd-series-to-catalog.py \
+  --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \
+  --series-ids-file scripts/gcd-series-ids.example.txt --dry-run
 
-# Mass file (one id per line; see scripts/gcd-series-ids.example.txt)
-python3 scripts/ingest-gcd-series-to-catalog.py --series-ids-file scripts/gcd-series-ids.example.txt --delay 7
+# Optional: convert once, then every ingest is instant
+python3 scripts/load-gcd-sql-dump.py \
+  --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \
+  --sqlite /workspace/gcd-dump/gcd.sqlite
+python3 scripts/ingest-gcd-series-to-catalog.py \
+  --dump-sqlite /workspace/gcd-dump/gcd.sqlite --publisher Image --max-issues 20 --dry-run
 
-# Optional publisher filter (name or GCD publisher id)
-python3 scripts/ingest-gcd-series-to-catalog.py --series-id 122674 --publisher Valiant --dry-run
+python3 scripts/ingest-gcd-series-to-catalog.py \
+  --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \
+  --list-dump-series --publisher Boom
 
-# Fixture proof (no live comics.org)
+# Zip still packed
+python3 scripts/load-gcd-sql-dump.py \
+  --zip /workspace/gcd-dump/gcd-dump.zip \
+  --extract-dir /workspace/gcd-dump/extracted
+
+# Fixture proof (no live comics.org, no full dump)
 python3 scripts/ingest-gcd-series-to-catalog.test.py
 python3 scripts/ingest-gcd-series-to-catalog.py \
-  --fixture-dir scripts/fixtures/gcd-series-ingest --series-id 900101 --dry-run
+  --sql-dump scripts/fixtures/gcd-dump-sql/slice.sql --series-id 900101 --dry-run
 ```
 
 ## Backfill
@@ -156,7 +186,8 @@ As LOCG/UPC backfill adds Cover B / virgin / etc. rows, the strip populates auto
 | **Marvel Comics API** (`gateway.marvel.com`) | **Shut down — do not use** | Marvel ended the public API. Use LOCG / retailer Shopify feeds instead. |
 | **IDW Shopify** `idwpublishing.com/products.json` | Live; exclusives-heavy | `scripts/backfill-comic-upcs-idw-shop.py`. SKUs often real UPC/ISBN, but storefront currently skews foil/exclusive — primary Cover A rows are skipped unless a non-exclusive SKU exists. |
 | **Dark Horse / BOOM / Dynamite / Image shop JSON** | No usable public UPC | `products.json` either missing, blocked, or omits barcode; Image shop 403. |
-| **GCD (comics.org API)** | Live; 429-prone | `scripts/ingest-gcd-series-to-catalog.py` for **new** rows; `scripts/backfill-comic-upcs-gcd.py` for keep-set UPC enrich. `gcdIssueId` in the UPC map. Polite ≥6–8s + 429 pull-back. |
+| **GCD dump** (comics.org/download) | **Primary for new rows** | `--sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql`. Offline. Hold the API. |
+| **GCD API** (`/api/`) | Opt-in leftover; 429-prone | `--use-api` only. Pull-back + STOP on 429. Keep-set enrich: `scripts/backfill-comic-upcs-gcd.py`. |
 | **Comic Vine barcode** | Optional fallback | Often empty on search/detail in current API; LOCG remains primary. |
 
 All writers merge-safe-save `comic-upc-map.json` so LOCG + publisher jobs can run in parallel without clobbering each other.

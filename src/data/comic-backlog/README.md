@@ -47,6 +47,8 @@ are allowed when explicitly requested.
   numeric series ids via `--series-id` / `--series-ids-file` (Image / Boom / IDW /
   Dark Horse / indie first). See `scripts/locg-series-ids.example.txt` and
   `docs/comic-upc.md`.
-- **`scripts/ingest-gcd-series-to-catalog.py`** — parallel GCD (comics.org API)
-  growth. Keep a row if it has any of `gcdIssueId` / UPC / ISBN plus real GCD
-  series/issue/publisher. See `scripts/gcd-series-ids.example.txt`.
+- **`scripts/ingest-gcd-series-to-catalog.py`** — parallel GCD growth from a
+  **local dump** (`--sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql`;
+  API off by default). Helper: `scripts/load-gcd-sql-dump.py`. Keep a row if
+  it has any of `gcdIssueId` / UPC / ISBN plus real GCD series/issue/publisher.
+  See `scripts/gcd-series-ids.example.txt`.
