@@ -15,10 +15,14 @@ Hard gates (every new comics.ts row) — GCD-only, per Shelby / Lyra:
   * Keep the row if it has ANY of: gcdIssueId OR upc OR isbn
     (barcode/ISBN is NOT required when a real GCD issue id is present)
   * Real series title, issue number, publisher from GCD — never invent
-  * Skip duplicates (existing comics.ts id, series|issue|publisher key,
-    or existing GCD / LOCG linkage)
-  * Skip issues that fail gates (variants by default, collected editions,
-    no parseable GCD date, pre-floor / --min-year)
+  * Skip duplicates (existing comics.ts id, series|issue|publisher|variant
+    key, or existing GCD / LOCG linkage)
+  * Keep a variant only when variant_of_id resolves to a real parent
+    gcd_issue in the same series — same series+issue, extra.variant from
+    GCD variant_name, extra.gcdIssueId is the variant's own id
+  * Skip orphan variants (missing/broken variant_of_id, or parent not
+    same series)
+  * Skip collected editions, no parseable GCD date, pre-floor / --min-year
 
 Map: store gcdIssueId (+ comics.org issue url as identity, not a fetch) in
 comic-upc-map.json. Never invent UPCs. LOCG / Metron UPCs win on merge.
@@ -187,6 +191,142 @@ def descriptor_issue_num(desc: str) -> str | None:
         return m.group(1)
     if re.fullmatch(r"nn|nnn|½|1/2", d, re.I):
         return d
+    return None
+
+
+def variant_of_id(issue: dict) -> str | None:
+    raw = issue.get("variant_of_id")
+    if raw in (None, "", 0, "0"):
+        raw = issue.get("variant_of")
+    if raw in (None, "", 0, "0"):
+        return None
+    if isinstance(raw, str) and not raw.strip().isdigit():
+        return extract_id(raw, "issue")
+    token = str(raw).strip()
+    return token if token.isdigit() else None
+
+
+def is_variant_issue(issue: dict) -> bool:
+    return bool((issue.get("variant_name") or "").strip()) or variant_of_id(issue) is not None
+
+
+def issue_series_id(issue: dict) -> str:
+    sid = issue.get("series_id")
+    if sid is not None and str(sid).isdigit():
+        return str(sid)
+    return extract_id(str(issue.get("series") or ""), "series") or ""
+
+
+def same_series(issue: dict, series: dict, series_id: str) -> bool:
+    iid = issue_series_id(issue)
+    if iid and series_id:
+        return iid == str(series_id)
+    iname = (issue.get("series_name") or "").strip().lower()
+    sname = (series.get("name") or "").strip().lower()
+    if iname and sname:
+        return iname == sname
+    return True
+
+
+def resolve_variant_attachment(
+    issue: dict,
+    *,
+    series: dict,
+    series_id: str,
+    by_id: dict[str, dict],
+    fetch_issue: Callable[[str], dict | None] | None = None,
+) -> tuple[dict | None, str | None]:
+    """Return (root_parent, skip_reason). (None, None) if this row is a main."""
+    if not is_variant_issue(issue):
+        return None, None
+    name = (issue.get("variant_name") or "").strip()
+    vid = variant_of_id(issue)
+    if not vid:
+        return None, "variant-orphan"
+    seen: set[str] = set()
+    current = vid
+    parent: dict | None = None
+    while current and current not in seen:
+        seen.add(current)
+        parent = by_id.get(current)
+        if parent is None and fetch_issue is not None:
+            fetched = fetch_issue(current)
+            if isinstance(fetched, dict):
+                parent = fetched
+                by_id[current] = fetched
+        if not isinstance(parent, dict):
+            return None, "variant-orphan"
+        if not same_series(parent, series, str(series_id)):
+            return None, "variant-orphan"
+        nxt = variant_of_id(parent)
+        if not nxt:
+            break
+        current = nxt
+    if not name:
+        return None, "variant-orphan"
+    return parent, None
+
+
+def identity_key(series: str, issue: str, publisher: str, variant: str = "") -> str:
+    base = f"{series}|{issue}|{publisher}".lower()
+    v = (variant or "").strip().lower()
+    return f"{base}|variant:{v}" if v else base
+
+
+def identity_keys_from_meta(existing_meta: dict[str, dict]) -> set[str]:
+    keys: set[str] = set()
+    for meta in existing_meta.values():
+        if not isinstance(meta, dict):
+            continue
+        keys.add(
+            identity_key(
+                str(meta.get("series") or ""),
+                str(meta.get("issue") or ""),
+                str(meta.get("publisher") or ""),
+                str(meta.get("variant") or ""),
+            )
+        )
+    return keys
+
+
+def make_gcd_catalog_id(
+    *,
+    series: str,
+    issue: str,
+    publisher: str,
+    cover_date: str,
+    existing_ids: set[str],
+    existing_meta: dict[str, dict],
+    id_prefix_override: str | None,
+    variant: str = "",
+    gcd_issue_id: str = "",
+) -> str | None:
+    issue = str(issue)
+    vslug = locg.slugify_series(variant) if variant else ""
+    if not vslug:
+        return locg.make_catalog_id(
+            series=series,
+            issue=issue,
+            publisher=publisher,
+            cover_date=cover_date,
+            existing_ids=existing_ids,
+            existing_meta=existing_meta,
+            id_prefix_override=id_prefix_override,
+        )
+    year = cover_date[:4] if re.match(r"^\d{4}", cover_date) else ""
+    reused = locg.infer_existing_prefix(existing_meta, series, publisher)
+    pub_pref = locg.publisher_prefix(publisher)
+    slug = locg.slugify_series(series)
+    generated = f"{pub_pref}-{slug}"
+    prefix = id_prefix_override or reused or generated
+    candidates = [f"{prefix}-{issue}-{vslug}"]
+    if year:
+        candidates.append(f"{prefix}-{year}-{issue}-{vslug}")
+    if gcd_issue_id.isdigit():
+        candidates.append(f"{prefix}-{issue}-{vslug}-{gcd_issue_id}")
+    for cid in candidates:
+        if cid not in existing_ids and re.match(r"^[a-z0-9]+(?:-[a-z0-9]+)+$", cid):
+            return cid
     return None
 
 
@@ -583,7 +723,7 @@ def gate_reason(
         return "id-collision"
     if catalog_id in existing_ids:
         return "dup-id"
-    key = f"{series}|{issue}|{publisher}".lower()
+    key = identity_key(series, issue, publisher, str(parsed.get("variantName") or ""))
     if key in existing_keys:
         return "dup-series-issue-publisher"
     return None
@@ -606,6 +746,8 @@ def build_row(catalog_id: str, parsed: dict, existing_meta: dict[str, dict]) -> 
         locg.publisher_prefix(publisher), locg.PALETTES.get(prefix, locg.DEFAULT_PALETTE)
     )
     extra: dict[str, str] = {}
+    if parsed.get("variantName"):
+        extra["variant"] = str(parsed["variantName"])
     code = parsed.get("upc") or parsed.get("isbn")
     if code:
         extra["upc"] = code
@@ -631,6 +773,66 @@ def build_row(catalog_id: str, parsed: dict, existing_meta: dict[str, dict]) -> 
         palette,
         extra,
     ]
+
+
+def finish_catalog_row(
+    parsed: dict,
+    *,
+    series_id: str,
+    desc: str,
+    existing_ids: set[str],
+    existing_keys: set[str],
+    existing_gcd: set[str],
+    existing_locg: set[str],
+    existing_meta: dict[str, dict],
+    min_year: int,
+    id_prefix: str | None,
+) -> tuple[list | None, dict | None]:
+    parsed["series"], parsed["publisher"] = locg.canon_series_publisher(
+        parsed.get("series") or "", parsed.get("publisher") or "", existing_meta
+    )
+    catalog_id = make_gcd_catalog_id(
+        series=parsed.get("series") or "",
+        issue=str(parsed.get("issue") or ""),
+        publisher=parsed.get("publisher") or "",
+        cover_date=parsed.get("coverDate") or "",
+        existing_ids=existing_ids,
+        existing_meta=existing_meta,
+        id_prefix_override=id_prefix,
+        variant=str(parsed.get("variantName") or ""),
+        gcd_issue_id=str(parsed.get("gcdIssueId") or ""),
+    )
+    reason = gate_reason(
+        parsed,
+        existing_ids=existing_ids,
+        existing_keys=existing_keys,
+        existing_gcd=existing_gcd,
+        existing_locg=existing_locg,
+        min_year=min_year,
+        catalog_id=catalog_id,
+    )
+    if reason:
+        return None, {
+            "seriesId": series_id,
+            "issue": parsed.get("issue") or desc,
+            "gcdIssueId": parsed.get("gcdIssueId"),
+            "variant": parsed.get("variantName") or None,
+            "reason": reason,
+        }
+    assert catalog_id is not None
+    row = build_row(catalog_id, parsed, existing_meta)
+    existing_ids.add(catalog_id)
+    existing_keys.add(
+        identity_key(row[1], row[2], row[3], str(parsed.get("variantName") or ""))
+    )
+    if parsed.get("gcdIssueId"):
+        existing_gcd.add(str(parsed["gcdIssueId"]))
+    vlabel = f"  [{parsed['variantName']}]" if parsed.get("variantName") else ""
+    print(
+        f"  + {catalog_id}  {row[1]} #{row[2]}{vlabel}  gcd={parsed.get('gcdIssueId')}  "
+        f"upc={parsed.get('upc') or parsed.get('isbn') or '—'}  {parsed.get('coverDate')}"
+    )
+    return row, None
 
 
 def upc_entry(parsed: dict) -> dict:
@@ -699,32 +901,11 @@ def ingest_series(
 
     descs = list(series.get("issue_descriptors") or [])
     urls = list(series.get("active_issues") or [])
-    items: list[tuple[str, str, str]] = []
+    fetched: list[tuple[str, str, dict]] = []
+    by_id: dict[str, dict] = {}
     for desc, url in zip(descs, urls):
         url = str(url)
-        if mains_only and not is_main_descriptor(str(desc)):
-            skips.append(
-                {
-                    "seriesId": series_id,
-                    "issue": descriptor_issue_num(str(desc)),
-                    "gcdIssueId": extract_id(url, "issue"),
-                    "reason": "variant",
-                }
-            )
-            continue
-        items.append((str(desc), url, extract_id(url, "issue") or ""))
-
-    def sort_key(item: tuple[str, str, str]):
-        num = int(re.sub(r"\D", "", descriptor_issue_num(item[0]) or item[2] or "0") or 0)
-        return (num, item[0])
-
-    items.sort(key=sort_key)
-    if max_issues and max_issues > 0:
-        items = items[:max_issues]
-
-    print(f"series {series_id}: {series.get('name')} ({publisher}) — {len(items)} issue(s)")
-
-    for desc, url, hinted_id in items:
+        hinted_id = extract_id(url, "issue") or ""
         try:
             issue = client.get_json(url)
         except RateLimitAbort:
@@ -734,65 +915,96 @@ def ingest_series(
                 {"seriesId": series_id, "issue": desc, "gcdIssueId": hinted_id, "reason": "no-issue"}
             )
             continue
-        if (issue.get("variant_name") or "").strip() or issue.get("variant_of"):
-            if mains_only:
-                skips.append(
-                    {
-                        "seriesId": series_id,
-                        "issue": issue.get("number") or desc,
-                        "gcdIssueId": gcd_issue_id(issue, url),
-                        "reason": "variant",
-                    }
-                )
+        gid = gcd_issue_id(issue, url) or hinted_id
+        if gid:
+            by_id[str(gid)] = issue
+        fetched.append((str(desc), url, issue))
+
+    mains: list[tuple[str, str, dict]] = []
+    variants: list[tuple[str, str, dict]] = []
+    for desc, url, issue in fetched:
+        if is_variant_issue(issue):
+            variants.append((desc, url, issue))
+        else:
+            mains.append((desc, url, issue))
+
+    def sort_key(item: tuple[str, str, dict]):
+        num = int(re.sub(r"\D", "", descriptor_issue_num(item[0]) or str(item[2].get("number") or "0") or "0") or 0)
+        return (num, item[0])
+
+    mains.sort(key=sort_key)
+    if max_issues and max_issues > 0:
+        mains = mains[:max_issues]
+    kept_main_ids = {str(gcd_issue_id(issue, url) or "") for _, url, issue in mains}
+    kept_main_ids.discard("")
+
+    print(
+        f"series {series_id}: {series.get('name')} ({publisher}) — "
+        f"{len(mains)} main / {len(variants)} variant issue(s)"
+    )
+
+    def fetch_parent(ident: str) -> dict | None:
+        return client.get_json(f"{API}/issue/{ident}/")
+
+    work = list(mains) + list(variants)
+    for desc, url, issue in work:
+        if mains_only and is_variant_issue(issue):
+            skips.append(
+                {
+                    "seriesId": series_id,
+                    "issue": issue.get("number") or desc,
+                    "gcdIssueId": gcd_issue_id(issue, url),
+                    "reason": "variant",
+                }
+            )
+            continue
+        parent, orphan = resolve_variant_attachment(
+            issue,
+            series=series,
+            series_id=series_id,
+            by_id=by_id,
+            fetch_issue=fetch_parent,
+        )
+        if orphan:
+            skips.append(
+                {
+                    "seriesId": series_id,
+                    "issue": issue.get("number") or desc,
+                    "gcdIssueId": gcd_issue_id(issue, url),
+                    "reason": orphan,
+                }
+            )
+            continue
+        if parent is not None:
+            root_id = str(gcd_issue_id(parent, "") or "")
+            if max_issues and max_issues > 0 and root_id not in kept_main_ids:
                 continue
         parsed = parse_issue(
             issue, url=url, series=series, publisher=publisher, descriptor=desc
         )
-        parsed["series"], parsed["publisher"] = locg.canon_series_publisher(
-            parsed.get("series") or "", parsed.get("publisher") or "", existing_meta
-        )
-        catalog_id = locg.make_catalog_id(
-            series=parsed.get("series") or "",
-            issue=str(parsed.get("issue") or ""),
-            publisher=parsed.get("publisher") or "",
-            cover_date=parsed.get("coverDate") or "",
-            existing_ids=existing_ids,
-            existing_meta=existing_meta,
-            id_prefix_override=id_prefix,
-        )
-        reason = gate_reason(
+        if parent is not None:
+            parsed["issue"] = str(parent.get("number") or "").strip() or parsed["issue"]
+            parsed["variantName"] = (issue.get("variant_name") or "").strip()
+        row, skip = finish_catalog_row(
             parsed,
+            series_id=series_id,
+            desc=desc,
             existing_ids=existing_ids,
             existing_keys=existing_keys,
             existing_gcd=existing_gcd,
             existing_locg=existing_locg,
+            existing_meta=existing_meta,
             min_year=min_year,
-            catalog_id=catalog_id,
+            id_prefix=id_prefix,
         )
-        if reason:
-            skips.append(
-                {
-                    "seriesId": series_id,
-                    "issue": parsed.get("issue") or desc,
-                    "gcdIssueId": parsed.get("gcdIssueId"),
-                    "reason": reason,
-                }
-            )
+        if skip:
+            skips.append(skip)
             continue
-        assert catalog_id is not None
-        row = build_row(catalog_id, parsed, existing_meta)
+        assert row is not None
         rows.append(row)
-        existing_ids.add(catalog_id)
-        existing_keys.add(f"{row[1]}|{row[2]}|{row[3]}".lower())
-        if parsed.get("gcdIssueId"):
-            existing_gcd.add(str(parsed["gcdIssueId"]))
-        upc_local[catalog_id] = upc_entry(parsed)
+        upc_local[row[0]] = upc_entry(parsed)
         if parsed.get("coverUrl"):
-            cover_local[catalog_id] = parsed["coverUrl"]
-        print(
-            f"  + {catalog_id}  {row[1]} #{row[2]}  gcd={parsed.get('gcdIssueId')}  "
-            f"upc={parsed.get('upc') or parsed.get('isbn') or '—'}  {parsed.get('coverDate')}"
-        )
+            cover_local[row[0]] = parsed["coverUrl"]
     return rows, skips, upc_local, cover_local
 
 
@@ -840,18 +1052,25 @@ def ingest_series_from_dump(
             return rows, skips, upc_local, cover_local
 
     items = store.issues_for_series(series_id)
-    items.sort(key=lambda r: (int(re.sub(r"\D", "", str(r.get("number") or "0")) or 0), str(r.get("number") or "")))
+    by_id = {str(r.get("id")): r for r in items if r.get("id") is not None}
+    mains = [r for r in items if not is_variant_issue(r)]
+    variants = [r for r in items if is_variant_issue(r)]
+    mains.sort(key=lambda r: (int(re.sub(r"\D", "", str(r.get("number") or "0")) or 0), str(r.get("number") or "")))
     if max_issues and max_issues > 0:
-        # Apply cap after variant filter so --max-issues means main issues.
-        pass
+        mains = mains[:max_issues]
+    kept_main_ids = {str(r.get("id")) for r in mains}
 
-    print(f"series {series_id}: {series.get('name')} ({publisher}) — {len(items)} dump issue(s)")
+    print(
+        f"series {series_id}: {series.get('name')} ({publisher}) — "
+        f"{len(mains)} main / {len(variants)} variant dump issue(s)"
+    )
 
-    kept = 0
-    for issue in items:
+    def fetch_parent(ident: str) -> dict | None:
+        return store.get_issue(ident)
+
+    for issue in mains + variants:
         desc = gcd_dump.dump_issue_descriptor(issue)
-        variant = bool(issue.get("variant_name")) or issue.get("variant_of_id") not in (None, "", 0, "0")
-        if mains_only and (variant or not is_main_descriptor(desc)):
+        if mains_only and is_variant_issue(issue):
             skips.append(
                 {
                     "seriesId": series_id,
@@ -861,8 +1080,27 @@ def ingest_series_from_dump(
                 }
             )
             continue
-        if max_issues and max_issues > 0 and kept >= max_issues:
-            break
+        parent, orphan = resolve_variant_attachment(
+            issue,
+            series=series,
+            series_id=series_id,
+            by_id=by_id,
+            fetch_issue=fetch_parent,
+        )
+        if orphan:
+            skips.append(
+                {
+                    "seriesId": series_id,
+                    "issue": issue.get("number") or desc,
+                    "gcdIssueId": issue.get("id"),
+                    "reason": orphan,
+                }
+            )
+            continue
+        if parent is not None:
+            root_id = str(parent.get("id") or "")
+            if max_issues and max_issues > 0 and root_id not in kept_main_ids:
+                continue
         gid = str(issue.get("id") or "")
         parsed = parse_issue(
             {
@@ -876,52 +1114,29 @@ def ingest_series_from_dump(
             publisher=publisher,
             descriptor=desc,
         )
-        parsed["series"], parsed["publisher"] = locg.canon_series_publisher(
-            parsed.get("series") or "", parsed.get("publisher") or "", existing_meta
-        )
-        catalog_id = locg.make_catalog_id(
-            series=parsed.get("series") or "",
-            issue=str(parsed.get("issue") or ""),
-            publisher=parsed.get("publisher") or "",
-            cover_date=parsed.get("coverDate") or "",
-            existing_ids=existing_ids,
-            existing_meta=existing_meta,
-            id_prefix_override=id_prefix,
-        )
-        reason = gate_reason(
+        if parent is not None:
+            parsed["issue"] = str(parent.get("number") or "").strip() or parsed["issue"]
+            parsed["variantName"] = (issue.get("variant_name") or "").strip()
+        row, skip = finish_catalog_row(
             parsed,
+            series_id=series_id,
+            desc=desc,
             existing_ids=existing_ids,
             existing_keys=existing_keys,
             existing_gcd=existing_gcd,
             existing_locg=existing_locg,
+            existing_meta=existing_meta,
             min_year=min_year,
-            catalog_id=catalog_id,
+            id_prefix=id_prefix,
         )
-        if reason:
-            skips.append(
-                {
-                    "seriesId": series_id,
-                    "issue": parsed.get("issue") or desc,
-                    "gcdIssueId": parsed.get("gcdIssueId"),
-                    "reason": reason,
-                }
-            )
+        if skip:
+            skips.append(skip)
             continue
-        assert catalog_id is not None
-        row = build_row(catalog_id, parsed, existing_meta)
+        assert row is not None
         rows.append(row)
-        existing_ids.add(catalog_id)
-        existing_keys.add(f"{row[1]}|{row[2]}|{row[3]}".lower())
-        if parsed.get("gcdIssueId"):
-            existing_gcd.add(str(parsed["gcdIssueId"]))
-        upc_local[catalog_id] = upc_entry(parsed)
+        upc_local[row[0]] = upc_entry(parsed)
         if parsed.get("coverUrl"):
-            cover_local[catalog_id] = parsed["coverUrl"]
-        kept += 1
-        print(
-            f"  + {catalog_id}  {row[1]} #{row[2]}  gcd={parsed.get('gcdIssueId')}  "
-            f"upc={parsed.get('upc') or parsed.get('isbn') or '—'}  {parsed.get('coverDate')}"
-        )
+            cover_local[row[0]] = parsed["coverUrl"]
     return rows, skips, upc_local, cover_local
 
 
@@ -1020,7 +1235,16 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--from-cache", action="store_true", help="Use series ids from comic-gcd-series-cache.json")
     ap.add_argument("--list-cache-seeds", action="store_true", help="Print cached GCD series ids and exit")
     ap.add_argument("--list-dump-series", action="store_true", help="Print series from the dump (optional --publisher)")
-    ap.add_argument("--include-variants", action="store_true", help="Also ingest GCD variants (default: mains)")
+    ap.add_argument(
+        "--include-variants",
+        action="store_true",
+        help="Keep parent-linked variants (default). Orphans are always skipped.",
+    )
+    ap.add_argument(
+        "--mains-only",
+        action="store_true",
+        help="Skip all variants, even when variant_of_id resolves to a parent.",
+    )
     ap.add_argument("--id-prefix", type=str, default="", help="Force catalog id prefix (e.g. im-nocterra)")
     ap.add_argument("--root", type=str, default="", help="Workspace root (tests)")
     ap.add_argument("--report", type=str, default="", help="Write JSON report of added/skipped")
@@ -1189,8 +1413,9 @@ def main(argv: list[str] | None = None) -> int:
         )
 
     comics_ts = root / "src/data/comics.ts"
-    existing_ids, existing_keys = backlog.parse_existing_ts()
+    existing_ids, existing_keys_plain = backlog.parse_existing_ts()
     existing_meta = bf.parse_comics_meta()
+    existing_keys = existing_keys_plain | identity_keys_from_meta(existing_meta)
     upc_map = bf.load_json(root / "src/data/comic-upc-map.json", {})
     cover_urls = bf.load_json(root / "src/data/comic-cover-urls.json", {})
     existing_gcd = collect_gcd_ids(upc_map)
@@ -1218,7 +1443,7 @@ def main(argv: list[str] | None = None) -> int:
                         store=store,
                         max_issues=args.max_issues,
                         min_year=args.min_year,
-                        mains_only=not args.include_variants,
+                        mains_only=args.mains_only,
                         publisher_filter=args.publisher,
                         existing_ids=existing_ids,
                         existing_keys=existing_keys,
@@ -1234,7 +1459,7 @@ def main(argv: list[str] | None = None) -> int:
                         client=client,
                         max_issues=args.max_issues,
                         min_year=args.min_year,
-                        mains_only=not args.include_variants,
+                        mains_only=args.mains_only,
                         publisher_filter=args.publisher,
                         existing_ids=existing_ids,
                         existing_keys=existing_keys,
@@ -1268,6 +1493,7 @@ def main(argv: list[str] | None = None) -> int:
                 "coverDate": r[4],
                 "gcdIssueId": (r[13] or {}).get("gcdIssueId") if len(r) > 13 else None,
                 "upc": (r[13] or {}).get("upc") if len(r) > 13 else None,
+                "variant": (r[13] or {}).get("variant") if len(r) > 13 else None,
             }
             for r in all_rows
         ],
