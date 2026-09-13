@@ -12,6 +12,12 @@ dist/
 __pycache__/
 *.pyc
 
+# Official GCD dump drop (Lyra) + SQL→sqlite working copy — never commit
+gcd-dump/
+data/gcd/
+.gcd-ingest.sqlite
+**/.gcd-ingest.sqlite
+
 scripts/logs/
 src/data/figure-archive/mephitsu/auth-token.txt
 src/data/figure-archive/mephitsu/ocr-cache/
