@@ -27,6 +27,30 @@ def parse_batch(path: Path):
         key_set.add(f"{r[1]}|{r[2]}|{r[3]}".lower())
     return id_set, key_set
 
+
+def load_live_blocklists(extra_batches=()):
+    """Block against comics.ts + queued (not-injected) backlog only.
+
+    Injected batch-*.json may still contain prune ghosts removed from comics.ts.
+    """
+    ids, keys = parse_existing_ts()
+    names = {path.name for path in BACKLOG.glob("batch-*.json")}
+    names.update(extra_batches)
+    for name in sorted(names):
+        path = BACKLOG / name
+        if not path.exists():
+            continue
+        try:
+            data = json.loads(path.read_text())
+        except Exception:
+            continue
+        if data.get("status") == "injected":
+            continue
+        i, k = parse_batch(path)
+        ids |= i
+        keys |= k
+    return ids, keys
+
 def load_blocklists(extra_batches=()):
     """Block against comics.ts + all backlog batch-*.json (and any extras)."""
     ids, keys = parse_existing_ts()
