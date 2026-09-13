@@ -2,7 +2,12 @@
 """Offline Grand Comics Database dump access for catalog ingest.
 
 Official dumps are MySQL (`YYYY-MM-DD.sql` from https://www.comics.org/download/).
-This module does **not** talk to comics.org. Glyph/Lyra drop files in --dump-dir.
+This module does **not** talk to comics.org.
+
+Glyph box (LIVE — 2026-09-01 dump):
+  zip:    /workspace/gcd-dump/gcd-dump.zip
+  sql:    /workspace/gcd-dump/extracted/2026-09-01.sql
+  sqlite: /workspace/gcd-dump/gcd.sqlite   (load-gcd-sql-dump.py writes this)
 
 Supported layouts (first match wins):
   * gcd.sqlite / *.sqlite — already-converted working copy
@@ -10,7 +15,7 @@ Supported layouts (first match wins):
   * *.sql / *.sql.gz — official or table-sliced MySQL dump (streamed into sqlite)
 
 Only gcd_publisher / gcd_series / gcd_issue are read. Issue rows can be filtered
-by series_id while streaming so we never materialize the full ~2GB dump.
+by series_id while streaming so we never materialize the full ~3.6GB dump.
 """
 from __future__ import annotations
 
@@ -18,6 +23,8 @@ import gzip
 import json
 import re
 import sqlite3
+import sys
+import zipfile
 from pathlib import Path
 from typing import Any, Iterable, Iterator
 
@@ -27,10 +34,32 @@ JSON_ALIASES = {
     "gcd_series": ("gcd_series.json", "series.json"),
     "gcd_issue": ("gcd_issue.json", "issues.json", "gcd_issues.json"),
 }
+
+# Shared-box drop from Shelby/Lyra. Cloud Agent VMs may not have these files.
+BOX_DUMP_DIR = Path("/workspace/gcd-dump")
+BOX_ZIP = Path("/workspace/gcd-dump/gcd-dump.zip")
+BOX_SQL_DUMP = Path("/workspace/gcd-dump/extracted/2026-09-01.sql")
+BOX_SQLITE = Path("/workspace/gcd-dump/gcd.sqlite")
+
 DEFAULT_DUMP_DIRS = (
+    BOX_SQLITE,
+    BOX_SQL_DUMP,
+    Path("/workspace/gcd-dump/extracted"),
+    BOX_DUMP_DIR,
+    Path("gcd-dump/extracted"),
     Path("gcd-dump"),
     Path("data/gcd"),
     Path("/data/gcd"),
+)
+
+MISSING_DUMP_MESSAGE = (
+    "HOLD comics.org — no dump found. Glyph box (LIVE):\n"
+    f"  --sql-dump {BOX_SQL_DUMP}\n"
+    f"  zip: {BOX_ZIP}\n"
+    "Convert once (optional, then reuse --dump-sqlite):\n"
+    f"  python3 scripts/load-gcd-sql-dump.py --sql-dump {BOX_SQL_DUMP} "
+    f"--sqlite {BOX_SQLITE}\n"
+    "Do not loop --use-api during 429 storms."
 )
 
 
@@ -85,6 +114,10 @@ def find_sqlite(dump_dir: Path) -> Path | None:
     named = dump_dir / "gcd.sqlite"
     if named.is_file():
         return named
+    if dump_dir.name == "extracted":
+        sibling = dump_dir.parent / "gcd.sqlite"
+        if sibling.is_file():
+            return sibling
     hits = sorted(dump_dir.glob("*.sqlite")) + sorted(dump_dir.glob("*.db"))
     hits = [p for p in hits if p.name != ".gcd-ingest.sqlite"]
     return hits[0] if hits else None
@@ -103,9 +136,82 @@ def find_json_tables(dump_dir: Path) -> dict[str, Path] | None:
 
 def list_sql_files(dump_dir: Path) -> list[Path]:
     files: list[Path] = []
-    for pat in ("*.sql", "*.sql.gz"):
-        files.extend(sorted(dump_dir.glob(pat)))
-    return [p for p in files if p.is_file()]
+    search = [dump_dir]
+    extracted = dump_dir / "extracted"
+    if extracted.is_dir():
+        search.append(extracted)
+    for folder in search:
+        for pat in ("*.sql", "*.sql.gz"):
+            files.extend(sorted(folder.glob(pat)))
+    files = [p for p in files if p.is_file()]
+    dated = [p for p in files if re.fullmatch(r"\d{4}-\d{2}-\d{2}\.sql(?:\.gz)?", p.name)]
+    if dated:
+        return [max(dated, key=lambda p: (p.stat().st_size, p.name))]
+    return files
+
+
+def resolve_user_path(raw: str, root: Path | None = None) -> Path:
+    p = Path(raw).expanduser()
+    if not p.is_absolute() and not p.exists() and root is not None:
+        alt = (root / raw).expanduser()
+        if alt.exists():
+            p = alt
+    try:
+        return p.resolve()
+    except OSError:
+        return p
+
+
+def default_cache_path(source: Path) -> Path:
+    """Working sqlite beside a fixture, or gcd.sqlite on the Glyph box drop."""
+    try:
+        resolved = source.resolve()
+    except OSError:
+        resolved = source
+    if resolved == BOX_SQL_DUMP or resolved == BOX_DUMP_DIR or BOX_DUMP_DIR in resolved.parents:
+        return BOX_SQLITE
+    if resolved.is_file():
+        return resolved.parent / ".gcd-ingest.sqlite"
+    return resolved / ".gcd-ingest.sqlite"
+
+
+def zip_needs_extract_hint(dump_dir: Path) -> str | None:
+    zip_path = dump_dir / "gcd-dump.zip" if dump_dir.is_dir() else None
+    if dump_dir.is_file() and dump_dir.name.endswith(".zip"):
+        zip_path = dump_dir
+    if zip_path is None or not zip_path.is_file():
+        return None
+    if dump_dir.is_dir() and (dump_dir_kind(dump_dir) or list_sql_files(dump_dir)):
+        return None
+    dest = dump_dir / "extracted" if dump_dir.is_dir() else dump_dir.parent / "extracted"
+    return (
+        f"Found {zip_path} but no extracted SQL. Unzip, then pass --sql-dump:\n"
+        f"  python3 scripts/load-gcd-sql-dump.py --zip {zip_path} --extract-dir {dest}\n"
+        f"  python3 scripts/ingest-gcd-series-to-catalog.py --sql-dump {dest / '2026-09-01.sql'} --dry-run"
+    )
+
+
+def extract_dump_zip(zip_path: Path, dest: Path) -> list[Path]:
+    """Extract .sql files from Shelby's official zip. Never hits comics.org."""
+    dest.mkdir(parents=True, exist_ok=True)
+    written: list[Path] = []
+    with zipfile.ZipFile(zip_path) as zf:
+        for info in zf.infolist():
+            name = Path(info.filename).name
+            if not (name.endswith(".sql") or name.endswith(".sql.gz")):
+                continue
+            target = dest / name
+            print(f"extract {info.filename} → {target}", file=sys.stderr)
+            with zf.open(info) as src, target.open("wb") as out:
+                while True:
+                    chunk = src.read(1024 * 1024)
+                    if not chunk:
+                        break
+                    out.write(chunk)
+            written.append(target)
+    if not written:
+        raise FileNotFoundError(f"no .sql inside {zip_path}")
+    return written
 
 
 def open_text(path: Path):
@@ -228,6 +334,23 @@ def iter_mysql_tuples(values_sql: str) -> Iterator[list[Any]]:
                 buf.append(ch)
             i += 1
         yield [parse_mysql_value(f) for f in fields]
+
+
+def parse_insert_column_list(blob: str) -> list[str] | None:
+    """Column names from `INSERT INTO t (`a`,`b`) VALUES` when mysqldump used --complete-insert."""
+    m = re.search(
+        r"(?:INSERT(?:\s+IGNORE)?|REPLACE)\s+INTO\s+`?(?:gcd_publisher|gcd_series|gcd_issue)`?\s*\((.*?)\)\s*VALUES",
+        blob,
+        re.I | re.S,
+    )
+    if not m:
+        return None
+    cols: list[str] = []
+    for raw in m.group(1).split(","):
+        cm = re.search(r"`([^`]+)`", raw) or re.search(r"([A-Za-z_][A-Za-z0-9_]*)", raw)
+        if cm:
+            cols.append(cm.group(1))
+    return cols or None
 
 
 def row_from_tuple(cols: list[str], values: list[Any]) -> dict[str, Any]:
@@ -500,10 +623,12 @@ def load_sql_files_into_sqlite(
     sqlite_path: Path,
     *,
     series_ids: Iterable[str | int] | None = None,
+    progress: bool = True,
 ) -> Path:
     """Stream official/sliced MySQL dumps into a small working sqlite file."""
     materialized = list(series_ids) if series_ids is not None else None
     wanted = {int(s) for s in materialized} if materialized is not None else None
+    sqlite_path.parent.mkdir(parents=True, exist_ok=True)
     if sqlite_path.exists():
         sqlite_path.unlink()
     con = sqlite3.connect(str(sqlite_path))
@@ -514,28 +639,37 @@ def load_sql_files_into_sqlite(
     insert_buf = ""
     in_create = False
     in_insert = False
+    inserted = 0
 
     def flush_insert() -> None:
-        nonlocal insert_buf, in_insert, current_table
+        nonlocal insert_buf, in_insert, current_table, inserted
         if not in_insert or not current_table:
             insert_buf = ""
             in_insert = False
             return
         table = current_table
-        cols = columns.get(table)
         blob = insert_buf
         insert_buf = ""
         in_insert = False
         current_table = None
+        cols = parse_insert_column_list(blob) or columns.get(table)
         if not cols:
             return
         m = re.search(r"VALUES\s*", blob, re.I)
         values = blob[m.end() :] if m else blob
+        before = inserted
         for tup in iter_mysql_tuples(values):
             row = row_from_tuple(cols, tup)
             _insert_filtered(con, table, row, wanted)
+            inserted += 1
+        if progress and inserted - before >= 5000:
+            print(f"  {table}: streamed {inserted} row(s)…", file=sys.stderr)
 
     for path in sql_files:
+        size = path.stat().st_size if path.is_file() else 0
+        if progress:
+            print(f"streaming {path} ({size / 1e9:.2f} GB) → {sqlite_path}", file=sys.stderr)
+        last_report = 0
         with open_text(path) as fh:
             for line in fh:
                 if in_create:
@@ -544,6 +678,8 @@ def load_sql_files_into_sqlite(
                         in_create = False
                         if current_table:
                             columns[current_table] = parse_create_columns(create_buf)
+                            if progress:
+                                print(f"  CREATE {current_table} ({len(columns[current_table])} cols)", file=sys.stderr)
                         create_buf = ""
                         current_table = None
                     continue
@@ -553,7 +689,19 @@ def load_sql_files_into_sqlite(
                     if re.search(r";\s*$", line):
                         flush_insert()
                     continue
-                cm = re.match(r"CREATE TABLE\s+`?(gcd_publisher|gcd_series|gcd_issue)`?", line, re.I)
+                if progress and size and hasattr(fh, "tell"):
+                    try:
+                        pos = fh.tell()
+                    except OSError:
+                        pos = 0
+                    if pos and pos - last_report >= 80 * 1024 * 1024:
+                        print(f"  read {pos / 1e9:.2f}/{size / 1e9:.2f} GB", file=sys.stderr)
+                        last_report = pos
+                cm = re.match(
+                    r"CREATE TABLE(?:\s+IF NOT EXISTS)?\s+`?(gcd_publisher|gcd_series|gcd_issue)`?",
+                    line,
+                    re.I,
+                )
                 if cm:
                     current_table = cm.group(1).lower()
                     in_create = True
@@ -561,11 +709,13 @@ def load_sql_files_into_sqlite(
                     if ";" in line:
                         in_create = False
                         columns[current_table] = parse_create_columns(create_buf)
+                        if progress:
+                            print(f"  CREATE {current_table} ({len(columns[current_table])} cols)", file=sys.stderr)
                         create_buf = ""
                         current_table = None
                     continue
                 im = re.match(
-                    r"INSERT INTO\s+`?(gcd_publisher|gcd_series|gcd_issue)`?",
+                    r"(?:INSERT(?:\s+IGNORE)?|REPLACE)\s+INTO\s+`?(gcd_publisher|gcd_series|gcd_issue)`?",
                     line,
                     re.I,
                 )
@@ -581,6 +731,8 @@ def load_sql_files_into_sqlite(
     _write_cache_meta(con, materialized)
     con.commit()
     con.close()
+    if progress:
+        print(f"wrote {sqlite_path} ({inserted} streamed row(s))", file=sys.stderr)
     return sqlite_path
 
 
@@ -603,6 +755,7 @@ def _open_sql_cache(
     rebuild_cache: bool,
 ) -> GcdDumpStore:
     if not rebuild_cache and sqlite_cache_covers(cache, series_ids):
+        print(f"reusing sqlite cache {cache}", file=sys.stderr)
         return SqliteDumpStore(cache)
     load_sql_files_into_sqlite(sql_files, cache, series_ids=series_ids)
     return SqliteDumpStore(cache)
@@ -612,44 +765,52 @@ def open_dump(
     *,
     dump_dir: Path | None = None,
     dump_sqlite: Path | None = None,
+    sql_dump: Path | None = None,
+    cache_sqlite: Path | None = None,
     series_ids: Iterable[str | int] | None = None,
     rebuild_cache: bool = False,
 ) -> GcdDumpStore:
     """Open a local dump. Never touches comics.org.
 
-    `dump_dir` may be a directory drop *or* a single `.sql` / `.sqlite` file.
-    MySQL dumps are streamed into `.gcd-ingest.sqlite` beside the files and
-    reused when the cache already covers the requested series.
+    `sql_dump` / `dump_dir` may be a directory drop *or* a single `.sql` /
+    `.sqlite` file. MySQL dumps stream into gcd.sqlite (box) or
+    `.gcd-ingest.sqlite` (fixtures) and are reused when the cache covers
+    the requested series.
     """
     if dump_sqlite:
         path = Path(dump_sqlite)
         if not path.is_file():
             raise FileNotFoundError(f"dump sqlite not found: {path}")
         return SqliteDumpStore(path)
-    if not dump_dir:
-        raise FileNotFoundError("no GCD dump-dir / dump-sqlite")
-    dump_dir = Path(dump_dir)
-    if dump_dir.is_file():
-        if is_sqlite_file(dump_dir):
-            return SqliteDumpStore(dump_dir)
-        if is_sql_file(dump_dir):
-            cache = dump_dir.parent / ".gcd-ingest.sqlite"
-            return _open_sql_cache([dump_dir], cache, series_ids, rebuild_cache)
-        raise FileNotFoundError(f"dump file is not a GCD SQL/sqlite dump: {dump_dir}")
-    sqlite_hit = find_sqlite(dump_dir)
-    if sqlite_hit:
-        return SqliteDumpStore(sqlite_hit)
-    json_hit = find_json_tables(dump_dir)
-    if json_hit:
-        return JsonDumpStore(load_json_tables(json_hit))
-    sql_files = list_sql_files(dump_dir)
-    if sql_files:
-        cache = dump_dir / ".gcd-ingest.sqlite"
-        return _open_sql_cache(sql_files, cache, series_ids, rebuild_cache)
-    raise FileNotFoundError(
-        f"no GCD dump in {dump_dir} — drop YYYY-MM-DD.sql from comics.org/download/, "
-        "a gcd.sqlite, or gcd_publisher.json + gcd_series.json + gcd_issue.json"
-    )
+    source = Path(sql_dump) if sql_dump else (Path(dump_dir) if dump_dir else None)
+    if source is None:
+        raise FileNotFoundError(MISSING_DUMP_MESSAGE)
+    if source.is_file():
+        if is_sqlite_file(source):
+            return SqliteDumpStore(source)
+        if is_sql_file(source):
+            cache = Path(cache_sqlite) if cache_sqlite else default_cache_path(source)
+            return _open_sql_cache([source], cache, series_ids, rebuild_cache)
+        raise FileNotFoundError(f"dump file is not a GCD SQL/sqlite dump: {source}")
+    if source.is_dir():
+        hint = zip_needs_extract_hint(source)
+        sqlite_hit = find_sqlite(source)
+        if sqlite_hit:
+            return SqliteDumpStore(sqlite_hit)
+        json_hit = find_json_tables(source)
+        if json_hit:
+            return JsonDumpStore(load_json_tables(json_hit))
+        sql_files = list_sql_files(source)
+        if sql_files:
+            cache = Path(cache_sqlite) if cache_sqlite else default_cache_path(sql_files[0])
+            return _open_sql_cache(sql_files, cache, series_ids, rebuild_cache)
+        if hint:
+            raise FileNotFoundError(hint)
+        raise FileNotFoundError(
+            f"no GCD dump in {source} — pass --sql-dump {BOX_SQL_DUMP} "
+            f"(or unzip {BOX_ZIP} first)"
+        )
+    raise FileNotFoundError(f"dump path not found: {source}\n{MISSING_DUMP_MESSAGE}")
 
 
 def dump_issue_descriptor(issue: dict) -> str:

@@ -23,27 +23,33 @@ Hard gates (every new comics.ts row) — GCD-only, per Shelby / Lyra:
 Map: store gcdIssueId (+ comics.org issue url as identity, not a fetch) in
 comic-upc-map.json. Never invent UPCs. LOCG / Metron UPCs win on merge.
 
-Dump layouts (--dump-dir)
--------------------------
+Dump layouts (--sql-dump / --dump-dir)
+--------------------------------------
   * official YYYY-MM-DD.sql / .sql.gz (streamed; only 3 tables)
   * table slices: publishers.sql + series.sql + issues.sql
-  * gcd.sqlite (already converted)
+  * gcd.sqlite (already converted via scripts/load-gcd-sql-dump.py)
   * gcd_publisher.json + gcd_series.json + gcd_issue.json
 
-Glyph / Lyra
-------------
-Wait for the dump on the box, then:
+Glyph box (LIVE — 2026-09-01)
+-----------------------------
+  zip:    /workspace/gcd-dump/gcd-dump.zip
+  sql:    /workspace/gcd-dump/extracted/2026-09-01.sql
+  sqlite: /workspace/gcd-dump/gcd.sqlite
 
   python3 scripts/ingest-gcd-series-to-catalog.py \\
-      --dump-dir /data/gcd --series-ids-file scripts/gcd-series-ids.example.txt --dry-run
+      --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \\
+      --series-ids-file scripts/gcd-series-ids.example.txt --dry-run
+
+  python3 scripts/load-gcd-sql-dump.py \\
+      --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \\
+      --sqlite /workspace/gcd-dump/gcd.sqlite
 
   python3 scripts/ingest-gcd-series-to-catalog.py \\
-      --dump-dir /data/gcd/YYYY-MM-DD.sql --series-id 122674 --dry-run
+      --dump-sqlite /workspace/gcd-dump/gcd.sqlite --publisher Image --max-issues 20 --dry-run
 
   python3 scripts/ingest-gcd-series-to-catalog.py \\
-      --dump-dir gcd-dump --publisher Image --min-year 2012 --max-issues 20 --dry-run
-
-  python3 scripts/ingest-gcd-series-to-catalog.py --dump-dir gcd-dump --list-dump-series --publisher Boom
+      --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \\
+      --list-dump-series --publisher Boom
 
   # Fixture proof (no live comics.org, no full dump required)
   python3 scripts/ingest-gcd-series-to-catalog.test.py
@@ -964,21 +970,33 @@ def main(argv: list[str] | None = None) -> int:
         help="GCD publisher name or numeric publisher id (dump filter / discovery)",
     )
     ap.add_argument(
+        "--sql-dump",
+        type=str,
+        default="",
+        help="Official YYYY-MM-DD.sql[.gz] (Glyph box: /workspace/gcd-dump/extracted/2026-09-01.sql)",
+    )
+    ap.add_argument(
         "--dump-dir",
         type=str,
         default="",
-        help="Local GCD dump drop: directory, YYYY-MM-DD.sql[.gz], or gcd.sqlite. Primary path.",
+        help="Local GCD dump drop: directory, YYYY-MM-DD.sql[.gz], or gcd.sqlite.",
     )
     ap.add_argument(
         "--dump-sqlite",
         type=str,
         default="",
-        help="Path to an already-converted gcd.sqlite",
+        help="Already-converted gcd.sqlite (Glyph box: /workspace/gcd-dump/gcd.sqlite)",
+    )
+    ap.add_argument(
+        "--cache-sqlite",
+        type=str,
+        default="",
+        help="Where to write/reuse the SQL→sqlite working copy",
     )
     ap.add_argument(
         "--rebuild-dump-cache",
         action="store_true",
-        help="Rebuild .gcd-ingest.sqlite from SQL even if a compatible cache exists",
+        help="Rebuild sqlite from SQL even if a compatible cache exists",
     )
     ap.add_argument(
         "--use-api",
@@ -1017,23 +1035,29 @@ def main(argv: list[str] | None = None) -> int:
         print(f"# {len(seeds)} unique GCD series ids", file=sys.stderr)
         return 0
 
+    sql_dump: Path | None = None
+    if args.sql_dump:
+        sql_dump = gcd_dump.resolve_user_path(args.sql_dump, root)
+        if not sql_dump.exists():
+            raise SystemExit(f"sql-dump not found: {sql_dump}\n{gcd_dump.MISSING_DUMP_MESSAGE}")
+        if not gcd_dump.is_sql_file(sql_dump):
+            raise SystemExit(f"--sql-dump must be a .sql / .sql.gz file: {sql_dump}")
+
     dump_dir = gcd_dump.discover_dump_dir(
         args.dump_dir or None,
         root=root,
     )
     if args.dump_dir:
-        dump_dir = Path(args.dump_dir).expanduser()
-        if not dump_dir.is_absolute() and not dump_dir.exists():
-            dump_dir = (root / args.dump_dir).expanduser()
-        dump_dir = dump_dir.resolve()
+        dump_dir = gcd_dump.resolve_user_path(args.dump_dir, root)
         if not dump_dir.exists():
-            raise SystemExit(f"dump-dir not found: {dump_dir}")
+            raise SystemExit(f"dump-dir not found: {dump_dir}\n{gcd_dump.MISSING_DUMP_MESSAGE}")
         if dump_dir.is_file() and not (
             gcd_dump.is_sql_file(dump_dir) or gcd_dump.is_sqlite_file(dump_dir)
         ):
             raise SystemExit(f"dump-dir file is not a GCD SQL/sqlite dump: {dump_dir}")
 
-    dump_sqlite = Path(args.dump_sqlite).resolve() if args.dump_sqlite else None
+    dump_sqlite = gcd_dump.resolve_user_path(args.dump_sqlite, root) if args.dump_sqlite else None
+    cache_sqlite = gcd_dump.resolve_user_path(args.cache_sqlite, root) if args.cache_sqlite else None
 
     series_ids: list[str] = []
     for sid in args.series_id:
@@ -1050,16 +1074,12 @@ def main(argv: list[str] | None = None) -> int:
 
     store: gcd_dump.GcdDumpStore | None = None
     use_dump = not args.use_api
-    if args.use_api and (dump_dir or dump_sqlite):
-        print("note: --use-api ignores --dump-dir (API leftover path)", file=sys.stderr)
+    if args.use_api and (dump_dir or dump_sqlite or sql_dump):
+        print("note: --use-api ignores --sql-dump / --dump-dir (API leftover path)", file=sys.stderr)
 
     if use_dump:
-        if not dump_dir and not dump_sqlite:
-            raise SystemExit(
-                "HOLD comics.org — no dump found. Lyra: drop the official MySQL dump "
-                "(https://www.comics.org/download/) and pass --dump-dir. "
-                "Do not loop --use-api during 429 storms."
-            )
+        if not dump_dir and not dump_sqlite and not sql_dump:
+            raise SystemExit(gcd_dump.MISSING_DUMP_MESSAGE)
         discover_only = bool(args.list_dump_series or (args.publisher and not series_ids))
         try:
             # Empty filter = publishers + series only (no issue stream) for listing.
@@ -1072,6 +1092,8 @@ def main(argv: list[str] | None = None) -> int:
             store = gcd_dump.open_dump(
                 dump_dir=dump_dir,
                 dump_sqlite=dump_sqlite,
+                sql_dump=sql_dump,
+                cache_sqlite=cache_sqlite,
                 series_ids=filter_ids,
                 rebuild_cache=args.rebuild_dump_cache,
             )
@@ -1119,6 +1141,8 @@ def main(argv: list[str] | None = None) -> int:
                 store = gcd_dump.open_dump(
                     dump_dir=dump_dir,
                     dump_sqlite=dump_sqlite,
+                    sql_dump=sql_dump,
+                    cache_sqlite=cache_sqlite,
                     series_ids=series_ids,
                     rebuild_cache=args.rebuild_dump_cache,
                 )
@@ -1134,7 +1158,7 @@ def main(argv: list[str] | None = None) -> int:
             )
     else:
         if args.list_dump_series:
-            raise SystemExit("--list-dump-series needs --dump-dir (not --use-api)")
+            raise SystemExit("--list-dump-series needs --sql-dump / --dump-dir (not --use-api)")
 
     fixture_dir = Path(args.fixture_dir).resolve() if args.fixture_dir else None
     delay = float(args.delay)

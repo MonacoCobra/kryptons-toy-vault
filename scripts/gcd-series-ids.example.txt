@@ -1,10 +1,12 @@
 # Real GCD series ids for OFFLINE dump ingest (Image / Boom / IDW / Dark Horse first).
 # Glyph / Lyra: append numeric series ids — never invent them.
-# Primary: wait for the official dump (comics.org/download/) then:
+# LIVE box paths (2026-09-01 dump):
+#   zip:    /workspace/gcd-dump/gcd-dump.zip
+#   sql:    /workspace/gcd-dump/extracted/2026-09-01.sql
+#   sqlite: /workspace/gcd-dump/gcd.sqlite
 #   python3 scripts/ingest-gcd-series-to-catalog.py \
-#       --dump-dir /data/gcd --series-ids-file scripts/gcd-series-ids.example.txt --dry-run
-#   python3 scripts/ingest-gcd-series-to-catalog.py \
-#       --dump-dir /data/gcd/YYYY-MM-DD.sql --series-id 122674 --dry-run
+#       --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \
+#       --series-ids-file scripts/gcd-series-ids.example.txt --dry-run
 # HOLD the comics.org API. Do not loop --use-api on 429 storms.
 #
 # Already seen in scripts/comic-gcd-series-cache.json (real GCD ids):

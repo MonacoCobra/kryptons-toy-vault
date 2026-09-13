@@ -21,6 +21,7 @@ ROOT = SCRIPT_DIR.parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
 import comic_backlog_common as backlog  # noqa: E402
+import gcd_dump  # noqa: E402
 
 
 def _load_ingest():
@@ -483,6 +484,82 @@ class DumpIngestTest(unittest.TestCase):
         added = {r["gcdIssueId"]: r for r in report["added"]}
         self.assertIn("8000001", added)
         self.assertIn("8000002", added)
+
+    def test_sql_dump_flag(self):
+        root = self._mini_root()
+        report_path = root / "report.json"
+        argv = [
+            "--sql-dump",
+            str(DUMP_SQL_DIR / "slice.sql"),
+            "--series-id",
+            "900101",
+            "--dry-run",
+            "--report",
+            str(report_path),
+            "--root",
+            str(root),
+        ]
+        self.assertEqual(ingest.main(argv), 0)
+        report = json.loads(report_path.read_text())
+        self.assertEqual(report["source"], "dump")
+        self.assertIn("8000001", {r["gcdIssueId"] for r in report["added"]})
+
+    def test_load_helper_writes_sqlite(self):
+        spec = importlib.util.spec_from_file_location(
+            "load_gcd_sql_dump", SCRIPT_DIR / "load-gcd-sql-dump.py"
+        )
+        self.assertIsNotNone(spec)
+        assert spec is not None and spec.loader is not None
+        load = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(load)
+        td = Path(tempfile.mkdtemp())
+        sqlite = td / "gcd.sqlite"
+        self.assertEqual(
+            load.main(
+                [
+                    "--sql-dump",
+                    str(DUMP_SQL_DIR / "slice.sql"),
+                    "--sqlite",
+                    str(sqlite),
+                    "--series-id",
+                    "900101",
+                ]
+            ),
+            0,
+        )
+        self.assertTrue(sqlite.is_file())
+        store = gcd_dump.SqliteDumpStore(sqlite)
+        self.assertIsNotNone(store.get_series(900101))
+        self.assertTrue(store.issues_for_series(900101))
+        store.close()
+        root = self._mini_root()
+        report_path = root / "report.json"
+        self.assertEqual(
+            ingest.main(
+                [
+                    "--dump-sqlite",
+                    str(sqlite),
+                    "--series-id",
+                    "900101",
+                    "--dry-run",
+                    "--report",
+                    str(report_path),
+                    "--root",
+                    str(root),
+                ]
+            ),
+            0,
+        )
+        report = json.loads(report_path.read_text())
+        self.assertIn("8000001", {r["gcdIssueId"] for r in report["added"]})
+
+    def test_complete_insert_column_list(self):
+        blob = (
+            "INSERT INTO `gcd_issue` (`id`,`number`,`series_id`,`barcode`,`deleted`) "
+            "VALUES (9,'1',900101,'84428400999100111',0);"
+        )
+        cols = gcd_dump.parse_insert_column_list(blob)
+        self.assertEqual(cols, ["id", "number", "series_id", "barcode", "deleted"])
 
     def test_dump_write_does_not_clobber_locg(self):
         root = self._mini_root(
