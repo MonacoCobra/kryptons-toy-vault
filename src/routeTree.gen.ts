@@ -11,8 +11,8 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CollectionRouteImport } from './routes/collection'
-import { Route as DisplaysRouteImport } from './routes/displays'
 import { Route as CreditsRouteImport } from './routes/credits'
+import { Route as DisplaysRouteImport } from './routes/displays'
 import { Route as ImportRouteImport } from './routes/import'
 import { Route as PulseRouteImport } from './routes/pulse'
 import { Route as ScanRouteImport } from './routes/scan'
@@ -32,14 +32,14 @@ const CollectionRoute = CollectionRouteImport.update({
   path: '/collection',
   getParentRoute: () => rootRouteImport,
 } as any)
-const DisplaysRoute = DisplaysRouteImport.update({
-  id: '/displays',
-  path: '/displays',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const CreditsRoute = CreditsRouteImport.update({
   id: '/credits',
   path: '/credits',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DisplaysRoute = DisplaysRouteImport.update({
+  id: '/displays',
+  path: '/displays',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ImportRoute = ImportRouteImport.update({
