@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CollectionRouteImport } from './routes/collection'
 import { Route as DisplaysRouteImport } from './routes/displays'
+import { Route as CreditsRouteImport } from './routes/credits'
 import { Route as ImportRouteImport } from './routes/import'
 import { Route as PulseRouteImport } from './routes/pulse'
 import { Route as ScanRouteImport } from './routes/scan'
@@ -34,6 +35,11 @@ const CollectionRoute = CollectionRouteImport.update({
 const DisplaysRoute = DisplaysRouteImport.update({
   id: '/displays',
   path: '/displays',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CreditsRoute = CreditsRouteImport.update({
+  id: '/credits',
+  path: '/credits',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ImportRoute = ImportRouteImport.update({
@@ -80,6 +86,7 @@ const FiguresFigureIdRoute = FiguresFigureIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/collection': typeof CollectionRoute
+  '/credits': typeof CreditsRoute
   '/displays': typeof DisplaysRoute
   '/import': typeof ImportRoute
   '/pulse': typeof PulseRoute
@@ -93,6 +100,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/collection': typeof CollectionRoute
+  '/credits': typeof CreditsRoute
   '/displays': typeof DisplaysRoute
   '/import': typeof ImportRoute
   '/pulse': typeof PulseRoute
@@ -107,6 +115,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/collection': typeof CollectionRoute
+  '/credits': typeof CreditsRoute
   '/displays': typeof DisplaysRoute
   '/import': typeof ImportRoute
   '/pulse': typeof PulseRoute
@@ -122,6 +131,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/collection'
+    | '/credits'
     | '/displays'
     | '/import'
     | '/pulse'
@@ -135,6 +145,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/collection'
+    | '/credits'
     | '/displays'
     | '/import'
     | '/pulse'
@@ -148,6 +159,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/collection'
+    | '/credits'
     | '/displays'
     | '/import'
     | '/pulse'
@@ -162,6 +174,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CollectionRoute: typeof CollectionRoute
+  CreditsRoute: typeof CreditsRoute
   DisplaysRoute: typeof DisplaysRoute
   ImportRoute: typeof ImportRoute
   PulseRoute: typeof PulseRoute
@@ -187,6 +200,13 @@ declare module '@tanstack/react-router' {
       path: '/collection'
       fullPath: '/collection'
       preLoaderRoute: typeof CollectionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/credits': {
+      id: '/credits'
+      path: '/credits'
+      fullPath: '/credits'
+      preLoaderRoute: typeof CreditsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/displays': {
@@ -258,6 +278,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CollectionRoute: CollectionRoute,
+  CreditsRoute: CreditsRoute,
   DisplaysRoute: DisplaysRoute,
   ImportRoute: ImportRoute,
   PulseRoute: PulseRoute,

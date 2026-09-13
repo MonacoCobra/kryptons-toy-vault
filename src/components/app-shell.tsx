@@ -63,18 +63,26 @@ export function AppShell({ children }: { children: ReactNode }) {
       <PulseNotice />
       <div className="relative mx-auto w-full max-w-6xl px-4 pt-6 pb-32 md:pb-10">
         {children}
-        <footer className="mt-16 flex items-center justify-between gap-3 border-t border-border pt-5">
+        <footer className="mt-16 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-5">
           <p className="text-xs tracking-[0.18em] text-subtle uppercase">Krypton's Toy Vault</p>
-          <a
-            href={YOUTUBE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Krypton's Toy Vault on YouTube"
-            className="inline-flex h-11 items-center gap-2 text-sm text-muted transition-colors duration-150 hover:text-fg"
-          >
-            <Youtube className="size-4" />
-            @kryptonstoyvault
-          </a>
+          <div className="flex flex-wrap items-center gap-1">
+            <Link
+              to="/credits"
+              className="inline-flex h-11 items-center px-2 text-sm text-muted transition-colors duration-150 hover:text-fg"
+            >
+              Credits
+            </Link>
+            <a
+              href={YOUTUBE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Krypton's Toy Vault on YouTube"
+              className="inline-flex h-11 items-center gap-2 px-2 text-sm text-muted transition-colors duration-150 hover:text-fg"
+            >
+              <Youtube className="size-4" />
+              @kryptonstoyvault
+            </a>
+          </div>
         </footer>
       </div>
 
