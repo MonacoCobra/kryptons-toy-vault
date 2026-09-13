@@ -24,7 +24,11 @@ Hard gates (every new comics.ts row) — GCD-only, per Shelby / Lyra:
   * Keep a variant only when variant_of_id resolves to a real parent
     gcd_issue in the same series and we can share that parent's
     series+issue+publisher. Skip orphans / no-family.
-  * Skip collected editions, no parseable GCD date, pre-floor / --min-year
+  * Keep trades / omnibuses / collected editions (default --include-collected).
+    Format is the live ComicFormat union: single | annual | tpb | hc |
+    omnibus | facsimile — never "hardcover"
+  * Skip no parseable GCD date, pre-floor / --min-year. [nn] issue numbers
+    are OK for books.
 
 Map: store gcdIssueId (+ comics.org issue url as identity, not a fetch) in
 comic-upc-map.json. Never invent UPCs. LOCG / Metron UPCs win on merge.
@@ -191,9 +195,29 @@ def descriptor_issue_num(desc: str) -> str | None:
         if re.search(r"variant|cover|edition|virgin|foil", d, re.I):
             return None
         return m.group(1)
-    if re.fullmatch(r"nn|nnn|½|1/2", d, re.I):
+    # GCD books often print [nn] / nn (no number). Keep as identity.
+    if re.fullmatch(r"\[nnn?\]|nnn?|½|1/2", d, re.I):
         return d
     return None
+
+
+def catalog_issue_slug(issue: str) -> str:
+    """Catalog-id token only — display issue stays as GCD printed it."""
+    token = re.sub(r"[^a-z0-9]+", "-", str(issue or "").strip().lower()).strip("-")
+    return token or "nn"
+
+
+def is_nn_issue(number: str | None) -> bool:
+    return bool(re.fullmatch(r"\[nnn?\]|nnn?", str(number or "").strip(), re.I))
+
+
+def main_issue_sort_key(number: str | None, *tiebreak: str) -> tuple:
+    """Numbered floppies first so --max-issues does not prefer [nn] books."""
+    raw = str(number or "").strip()
+    digits = re.sub(r"\D", "", raw)
+    if is_nn_issue(raw) or not digits:
+        return (1, 0, raw, *tiebreak)
+    return (0, int(digits), raw, *tiebreak)
 
 
 def variant_of_id(issue: dict) -> str | None:
@@ -392,7 +416,7 @@ def make_gcd_catalog_id(
     variant: str = "",
     gcd_issue_id: str = "",
 ) -> str | None:
-    issue = str(issue)
+    issue = catalog_issue_slug(issue)
     vslug = locg.slugify_series(variant) if variant else ""
     if not vslug:
         return locg.make_catalog_id(
@@ -425,6 +449,8 @@ def is_main_descriptor(desc: str) -> bool:
     d = (desc or "").strip()
     if re.search(r"variant|virgin|foil|blank cover|incentive|exclusive", d, re.I):
         return False
+    if re.fullmatch(r"\[nnn?\]|nnn?", d, re.I):
+        return True
     if "[" in d:
         return False
     return descriptor_issue_num(d) is not None
@@ -510,7 +536,18 @@ def credits_from_stories(issue: dict) -> tuple[str, str]:
     return "; ".join(writers), "; ".join(artists)
 
 
+# Live CatalogComic.format — src/lib/types.ts ComicFormat. Never emit "hardcover".
+COMIC_FORMATS = ("single", "annual", "tpb", "hc", "omnibus", "facsimile")
+
+
 def infer_format(series: str, issue: dict) -> str:
+    """Map GCD title/series/publishing_format onto ComicFormat.
+
+    omnibus → omnibus
+    hardcover / hardback / HC / absolute edition / deluxe HC → hc
+    trade paperback / TP / TPB / compendium / collection → tpb
+      unless clearly HC or omnibus
+    """
     blob = " ".join(
         str(x or "")
         for x in (
@@ -518,17 +555,29 @@ def infer_format(series: str, issue: dict) -> str:
             issue.get("descriptor"),
             issue.get("title"),
             issue.get("publishing_format"),
+            issue.get("publishingFormat"),
             issue.get("series_name"),
+            issue.get("series"),
         )
     )
-    if re.search(r"\bfacsimile\b", blob, re.I):
+    if re.search(r"\b(?:facsimile)\b", blob, re.I):
         return "facsimile"
-    if re.search(r"\b(omnibus)\b", blob, re.I):
+    if re.search(r"\b(?:omnibus)\b", blob, re.I):
         return "omnibus"
-    if re.search(r"\b(hardcover|hardback|\bhc\b)\b", blob, re.I):
-        return "hardcover"
-    if re.search(r"\b(trade paperback|\btpb\b|\btp\b)\b", blob, re.I):
+    if re.search(
+        r"\b(?:hardcover|hardback|hc|absolute edition|deluxe\s+(?:hc|hardcover))\b",
+        blob,
+        re.I,
+    ):
+        return "hc"
+    if re.search(
+        r"\b(?:trade paperback|tpb|tp|compendium|collected edition|collection|deluxe edition)\b",
+        blob,
+        re.I,
+    ):
         return "tpb"
+    if re.search(r"\b(?:annual)\b", blob, re.I):
+        return "annual"
     return "single"
 
 
@@ -754,7 +803,7 @@ def parse_issue(
     street = parse_gcd_date(issue.get("on_sale_date"))
     gid = gcd_issue_id(issue, url)
     api_url = (issue.get("api_url") or url or "").split("?", 1)[0]
-    return {
+    parsed = {
         "gcdIssueId": gid,
         "apiUrl": api_url,
         "series": series_name,
@@ -774,6 +823,8 @@ def parse_issue(
         "variantOf": issue.get("variant_of"),
         "publishingFormat": issue.get("publishing_format") or series.get("publishing_format"),
     }
+    parsed["format"] = infer_format(series_name, parsed)
+    return parsed
 
 
 def gate_reason(
@@ -785,6 +836,7 @@ def gate_reason(
     existing_locg: set[str],
     min_year: int,
     catalog_id: str | None,
+    include_collected: bool = True,
 ) -> str | None:
     """Shelby/Lyra: keep if ANY of gcdIssueId OR upc OR isbn + real identity."""
     gid = str(parsed.get("gcdIssueId") or "")
@@ -799,8 +851,10 @@ def gate_reason(
     publisher = (parsed.get("publisher") or "").strip()
     if not series or not issue or not publisher:
         return "incomplete-identity"
-    if bf.looks_like_collected_edition(parsed.get("title")) or bf.looks_like_collected_edition(
-        parsed.get("descriptor")
+    if not include_collected and (
+        bf.looks_like_collected_edition(parsed.get("title"))
+        or bf.looks_like_collected_edition(parsed.get("descriptor"))
+        or bf.looks_like_collected_edition(series)
     ):
         return "collected-edition"
     cover_date = parsed.get("coverDate") or ""
@@ -831,6 +885,10 @@ def build_row(catalog_id: str, parsed: dict, existing_meta: dict[str, dict]) -> 
     title = parsed.get("title") or f"{series} #{issue}"
     msrp = float(parsed["msrp"]) if parsed.get("msrp") is not None else 0.0
     fmt = str(parsed.get("format") or "") or infer_format(series, parsed)
+    if fmt not in COMIC_FORMATS:
+        fmt = infer_format(series, parsed)
+    if fmt not in COMIC_FORMATS:
+        fmt = "single"
     demand = 0.8 if issue in {"1", "0"} else 0.55
     prefix = catalog_id.rsplit("-", 1)[0].split("-")[0]
     palette = locg.PALETTES.get(
@@ -878,6 +936,7 @@ def finish_catalog_row(
     existing_meta: dict[str, dict],
     min_year: int,
     id_prefix: str | None,
+    include_collected: bool = True,
 ) -> tuple[list | None, dict | None]:
     parsed["series"], parsed["publisher"] = locg.canon_series_publisher(
         parsed.get("series") or "", parsed.get("publisher") or "", existing_meta
@@ -901,6 +960,7 @@ def finish_catalog_row(
         existing_locg=existing_locg,
         min_year=min_year,
         catalog_id=catalog_id,
+        include_collected=include_collected,
     )
     if reason:
         return None, {
@@ -962,6 +1022,7 @@ def ingest_series(
     existing_locg: set[str],
     existing_meta: dict[str, dict],
     id_prefix: str | None,
+    include_collected: bool = True,
 ) -> tuple[list, list[dict], dict, dict]:
     rows: list = []
     skips: list[dict] = []
@@ -1020,8 +1081,10 @@ def ingest_series(
             mains.append((desc, url, issue))
 
     def sort_key(item: tuple[str, str, dict]):
-        num = int(re.sub(r"\D", "", descriptor_issue_num(item[0]) or str(item[2].get("number") or "0") or "0") or 0)
-        return (num, item[0])
+        return main_issue_sort_key(
+            descriptor_issue_num(item[0]) or str(item[2].get("number") or ""),
+            item[0],
+        )
 
     mains.sort(key=sort_key)
     if max_issues and max_issues > 0:
@@ -1104,6 +1167,7 @@ def ingest_series(
             existing_meta=existing_meta,
             min_year=min_year,
             id_prefix=id_prefix,
+            include_collected=include_collected,
         )
         if skip:
             skips.append(skip)
@@ -1130,6 +1194,7 @@ def ingest_series_from_dump(
     existing_locg: set[str],
     existing_meta: dict[str, dict],
     id_prefix: str | None,
+    include_collected: bool = True,
 ) -> tuple[list, list[dict], dict, dict]:
     """Gate dump rows the same way as API rows. No comics.org traffic."""
     rows: list = []
@@ -1163,7 +1228,7 @@ def ingest_series_from_dump(
     by_id = {str(r.get("id")): r for r in items if r.get("id") is not None}
     mains = [r for r in items if not is_variant_issue(r)]
     variants = [r for r in items if is_variant_issue(r)]
-    mains.sort(key=lambda r: (int(re.sub(r"\D", "", str(r.get("number") or "0")) or 0), str(r.get("number") or "")))
+    mains.sort(key=lambda r: main_issue_sort_key(str(r.get("number") or "")))
     if max_issues and max_issues > 0:
         mains = mains[:max_issues]
     kept_main_ids = {str(r.get("id")) for r in mains}
@@ -1253,6 +1318,7 @@ def ingest_series_from_dump(
             existing_meta=existing_meta,
             min_year=min_year,
             id_prefix=id_prefix,
+            include_collected=include_collected,
         )
         if skip:
             skips.append(skip)
@@ -1369,6 +1435,19 @@ def main(argv: list[str] | None = None) -> int:
         "--mains-only",
         action="store_true",
         help="Skip all variants, even when variant_of_id resolves to a parent.",
+    )
+    ap.add_argument(
+        "--include-collected",
+        dest="include_collected",
+        action="store_true",
+        default=True,
+        help="Keep trades, omnibuses, and collected editions (default ON).",
+    )
+    ap.add_argument(
+        "--skip-collected",
+        dest="include_collected",
+        action="store_false",
+        help="Skip collected editions (omnibus / TP / TPB / HC / deluxe / compendium).",
     )
     ap.add_argument("--id-prefix", type=str, default="", help="Force catalog id prefix (e.g. im-nocterra)")
     ap.add_argument("--root", type=str, default="", help="Workspace root (tests)")
@@ -1556,6 +1635,7 @@ def main(argv: list[str] | None = None) -> int:
     print(
         f"gcd ingest {len(series_ids)} series  source={source}  "
         f"min_year={args.min_year}  dry_run={args.dry_run}  "
+        f"include_collected={args.include_collected}  "
         f"catalog_ids={len(existing_ids)} gcdIds={len(existing_gcd)}"
     )
 
@@ -1576,6 +1656,7 @@ def main(argv: list[str] | None = None) -> int:
                         existing_locg=existing_locg,
                         existing_meta=existing_meta,
                         id_prefix=args.id_prefix or None,
+                        include_collected=args.include_collected,
                     )
                 else:
                     assert client is not None
@@ -1592,6 +1673,7 @@ def main(argv: list[str] | None = None) -> int:
                         existing_locg=existing_locg,
                         existing_meta=existing_meta,
                         id_prefix=args.id_prefix or None,
+                        include_collected=args.include_collected,
                     )
             except RateLimitAbort as e:
                 print(str(e), file=sys.stderr)

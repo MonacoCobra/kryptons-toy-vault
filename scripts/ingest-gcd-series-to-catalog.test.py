@@ -426,7 +426,12 @@ class FixtureIngestTest(unittest.TestCase):
         self.assertEqual(added["im-gcd-fixture-indie-1-cover-b"]["variant"], "Cover B")
         self.assertEqual(added["im-gcd-fixture-indie-1-cover-b"]["gcdIssueId"], "8000004")
         self.assertIn("no-cover-date", skip_reasons)
-        self.assertIn("collected-edition", skip_reasons)
+        self.assertNotIn("collected-edition", skip_reasons)
+        self.assertEqual(added["im-gcd-fixture-indie-1"]["format"], "single")
+        tp = next((r for r in report["added"] if r.get("gcdIssueId") == "8000003"), None)
+        self.assertIsNotNone(tp)
+        assert tp is not None
+        self.assertEqual(tp["format"], "tpb")
         self.assertEqual((root / "src/data/comics.ts").read_text(), MINI_COMICS_TS)
 
     def test_reuses_saga_prefix(self):
@@ -555,7 +560,14 @@ class DumpIngestTest(unittest.TestCase):
         self.assertEqual(added["im-gcd-fixture-indie-2"]["gcdIssueId"], "8000002")
         self.assertIsNone(added["im-gcd-fixture-indie-2"]["upc"])
         self.assertEqual(added["im-gcd-fixture-indie-6"]["upc"], "9781534321234")
-        self.assertTrue({"variant-orphan", "no-cover-date", "collected-edition"} <= skip_reasons)
+        self.assertTrue({"variant-orphan", "no-cover-date"} <= skip_reasons)
+        self.assertNotIn("collected-edition", skip_reasons)
+        self.assertEqual(added["im-gcd-fixture-indie-1"]["format"], "single")
+        self.assertEqual(added["im-gcd-fixture-indie-1-cover-b"]["format"], "single")
+        tp = next((r for r in report["added"] if r.get("gcdIssueId") == "8000003"), None)
+        self.assertIsNotNone(tp)
+        assert tp is not None
+        self.assertEqual(tp["format"], "tpb")
         cover_b = next((r for r in report["added"] if r.get("gcdIssueId") == "8000004"), None)
         self.assertIsNotNone(cover_b)
         assert cover_b is not None
@@ -783,6 +795,126 @@ class DumpIngestTest(unittest.TestCase):
         root = self._mini_root()
         with self.assertRaises(SystemExit):
             ingest.main(["--root", str(root), "--series-id", "900101", "--dry-run"])
+
+    def test_infer_format_maps_to_live_comic_format(self):
+        cases = [
+            ("Action Comics", {"title": "Action Comics #1"}, "single"),
+            (
+                "The Death and Return of Superman Compendium",
+                {"title": "The Death and Return of Superman Compendium"},
+                "tpb",
+            ),
+            (
+                "Superman: The Death and Return of Superman Omnibus",
+                {"title": "Superman: The Death and Return of Superman Omnibus 2022 reprint"},
+                "omnibus",
+            ),
+            ("Something Deluxe HC", {"title": "Something Deluxe HC"}, "hc"),
+            ("Absolute Sandman", {"title": "Absolute Edition"}, "hc"),
+            ("Watchmen Hardcover", {"title": "Watchmen Hardcover"}, "hc"),
+            ("Watchmen HC", {"title": "Watchmen HC"}, "hc"),
+            ("Saga Vol. 1 TP", {"title": "Saga Vol. 1 TP"}, "tpb"),
+            ("Saga Vol. 1 TPB", {"title": "Saga Vol. 1 TPB"}, "tpb"),
+            ("A Collection", {"title": "A Collection"}, "tpb"),
+            ("Deluxe Edition", {"title": "Deluxe Edition"}, "tpb"),
+            ("Action Comics", {"title": "Action Comics Facsimile Edition"}, "facsimile"),
+        ]
+        emitted = []
+        for series, issue, want in cases:
+            got = ingest.infer_format(series, issue)
+            emitted.append(got)
+            self.assertEqual(got, want, msg=f"{series!r} {issue!r}")
+            self.assertIn(got, ingest.COMIC_FORMATS)
+        self.assertNotIn("hardcover", emitted)
+        self.assertNotEqual(ingest.infer_format("Watchmen Hardcover", {}), "hardcover")
+
+    def test_skip_collected_restores_old_gate(self):
+        root = self._mini_root()
+        report = self._run(["900101"], extra=["--skip-collected"], root=root)
+        skip_reasons = {s["reason"] for s in report["skipped"]}
+        self.assertIn("collected-edition", skip_reasons)
+        self.assertFalse(any(r.get("gcdIssueId") == "8000003" for r in report["added"]))
+
+    def test_dump_keeps_superman_compendium_and_omnibus(self):
+        root = self._mini_root()
+        report = self._run(["900201", "900202"], root=root)
+        added = {r["gcdIssueId"]: r for r in report["added"]}
+        self.assertIn("2738779", added)
+        self.assertIn(added["2738779"]["format"], {"tpb", "omnibus"})
+        self.assertEqual(added["2738779"]["issue"], "[nn]")
+        self.assertEqual(added["2738779"]["publisher"], "DC Comics")
+        self.assertIsNone(added["2738779"].get("upc"))
+        self.assertIn("2408712", added)
+        self.assertEqual(added["2408712"]["format"], "omnibus")
+        self.assertEqual(added["2408712"]["issue"], "[nn]")
+        self.assertIsNone(added["2408712"].get("upc"))
+        self.assertIn("2408799", added)
+        self.assertEqual(added["2408799"]["format"], "omnibus")
+        self.assertEqual(added["2408799"]["issue"], "[nn]")
+        self.assertEqual(added["2408799"]["variant"], "Second Printing")
+        self.assertEqual(
+            ingest.comic_family_key(
+                added["2408799"]["series"],
+                added["2408799"]["issue"],
+                added["2408799"]["publisher"],
+            ),
+            ingest.comic_family_key(
+                added["2408712"]["series"],
+                added["2408712"]["issue"],
+                added["2408712"]["publisher"],
+            ),
+        )
+        self.assertFalse(any(s.get("reason") == "collected-edition" for s in report["skipped"]))
+        self.assertNotIn("hardcover", {r["format"] for r in report["added"]})
+
+    def test_dump_floppy_stays_single_alongside_collected(self):
+        root = self._mini_root()
+        report = self._run(["900101", "900201"], root=root)
+        added = {r["gcdIssueId"]: r for r in report["added"]}
+        self.assertEqual(added["8000001"]["format"], "single")
+        self.assertIn(added["2738779"]["format"], {"tpb", "omnibus"})
+
+    def test_gate_keeps_collected_by_default(self):
+        book = {
+            "gcdIssueId": "2738779",
+            "upc": None,
+            "isbn": None,
+            "series": "The Death and Return of Superman Compendium",
+            "issue": "[nn]",
+            "publisher": "DC Comics",
+            "coverDate": "2024-12-01",
+            "title": "The Death and Return of Superman Compendium",
+        }
+        self.assertIsNone(
+            ingest.gate_reason(
+                book,
+                existing_ids=set(),
+                existing_keys=set(),
+                existing_gcd=set(),
+                existing_locg=set(),
+                min_year=1980,
+                catalog_id="dc-death-return-superman-compendium-nn",
+            )
+        )
+        self.assertEqual(
+            ingest.gate_reason(
+                book,
+                existing_ids=set(),
+                existing_keys=set(),
+                existing_gcd=set(),
+                existing_locg=set(),
+                min_year=1980,
+                catalog_id="dc-death-return-superman-compendium-nn",
+                include_collected=False,
+            ),
+            "collected-edition",
+        )
+
+    def test_catalog_issue_slug_accepts_nn_brackets(self):
+        self.assertEqual(ingest.catalog_issue_slug("[nn]"), "nn")
+        self.assertEqual(ingest.catalog_issue_slug("1"), "1")
+        self.assertEqual(ingest.descriptor_issue_num("[nn]"), "[nn]")
+        self.assertTrue(ingest.is_main_descriptor("[nn]"))
 
 
 if __name__ == "__main__":
