@@ -39,10 +39,11 @@ See **[comic-upc.md](./comic-upc.md)**. LOCG-first UPC/ISBN; cover matching pref
 proof: `python3 scripts/ingest-locg-series-to-catalog.test.py`.
 
 **New catalog rows from a local GCD dump** (parallel path; **hold the API**):
-`scripts/ingest-gcd-series-to-catalog.py --dump-dir`. Glyph waits for Lyra to
-drop Shelby’s official MySQL dump, then feeds series ids or `--publisher`.
-Gates: real GCD series+issue + **any of** `gcdIssueId` / UPC / ISBN. `--use-api`
-is off by default. Fixture proof:
+`scripts/ingest-gcd-series-to-catalog.py --sql-dump`. Glyph box (LIVE):
+`/workspace/gcd-dump/extracted/2026-09-01.sql` (zip:
+`/workspace/gcd-dump/gcd-dump.zip`). Helper: `scripts/load-gcd-sql-dump.py`
+→ `/workspace/gcd-dump/gcd.sqlite`. Gates: real GCD series+issue + **any of**
+`gcdIssueId` / UPC / ISBN. `--use-api` is off by default. Fixture proof:
 `python3 scripts/ingest-gcd-series-to-catalog.test.py`.
 
 ## Variant covers on detail

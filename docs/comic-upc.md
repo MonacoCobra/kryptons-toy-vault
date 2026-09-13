@@ -68,38 +68,57 @@ LOCG / Metron barcodes win on merge.
 
 LOCG importer gates stay `locgId` + UPC|cover.
 
-Dump `--dump-dir` accepts a directory **or** a file path (`YYYY-MM-DD.sql` /
-`.sql.gz` / `gcd.sqlite`). Directory layouts: official SQL, table slices,
-`gcd.sqlite`, or `gcd_publisher.json` + `gcd_series.json` + `gcd_issue.json`.
-SQL is streamed into `.gcd-ingest.sqlite` (gitignored) and reused.
+`--sql-dump` points at the official `YYYY-MM-DD.sql` (preferred). `--dump-dir`
+accepts a directory or a `.sql` / `.sqlite` file. SQL is streamed into a
+working sqlite (`/workspace/gcd-dump/gcd.sqlite` on the box, or
+`.gcd-ingest.sqlite` next to fixtures) and reused. Helper:
+`scripts/load-gcd-sql-dump.py`. No MySQL server required.
 
 If `--use-api` is ever needed: default delay ≥6–8s. On 429/403/503 honor
 `Retry-After`, take **one** long cooldown, raise session delay, and **STOP**.
 Do not retry into a ceiling. Operators: pause this source on a 429 storm
 rather than looping the importer.
 
-**Glyph / Lyra:** wait for the dump, then feed numeric GCD series ids (Image /
-Boom / IDW / Dark Horse first) or `--publisher`. Do **not** invent ids or
-UPCs. Do **not** run `gen-batch-*`.
+**Glyph box (LIVE — 2026-09-01 dump):**
+
+| Path | What |
+|------|------|
+| `/workspace/gcd-dump/gcd-dump.zip` | Official zip (~700MB) |
+| `/workspace/gcd-dump/extracted/2026-09-01.sql` | Extracted MySQL dump (~3.6GB) |
+| `/workspace/gcd-dump/gcd.sqlite` | Working sqlite after `load-gcd-sql-dump.py` |
+
+Cloud Agent VMs may not have those files. Glyph runs against the box paths.
+
+**Glyph / Lyra:** feed numeric GCD series ids (Image / Boom / IDW / Dark Horse
+first) or `--publisher`. Do **not** invent ids or UPCs. Do **not** run
+`gen-batch-*`. Do **not** use `--use-api`.
 
 ```bash
-# After Lyra drops the dump
+# Immediate (streams the 3.6GB SQL; filters to requested series)
 python3 scripts/ingest-gcd-series-to-catalog.py \
-  --dump-dir /data/gcd --series-ids-file scripts/gcd-series-ids.example.txt --dry-run
+  --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \
+  --series-ids-file scripts/gcd-series-ids.example.txt --dry-run
 
-# Same thing if Lyra drops the .sql itself
+# Optional: convert once, then every ingest is instant
+python3 scripts/load-gcd-sql-dump.py \
+  --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \
+  --sqlite /workspace/gcd-dump/gcd.sqlite
 python3 scripts/ingest-gcd-series-to-catalog.py \
-  --dump-dir /data/gcd/2026-01-01.sql --series-id 122674 --dry-run
+  --dump-sqlite /workspace/gcd-dump/gcd.sqlite --publisher Image --max-issues 20 --dry-run
 
 python3 scripts/ingest-gcd-series-to-catalog.py \
-  --dump-dir gcd-dump --publisher Image --min-year 2012 --max-issues 20 --dry-run
+  --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \
+  --list-dump-series --publisher Boom
 
-python3 scripts/ingest-gcd-series-to-catalog.py --dump-dir gcd-dump --list-dump-series --publisher Boom
+# Zip still packed
+python3 scripts/load-gcd-sql-dump.py \
+  --zip /workspace/gcd-dump/gcd-dump.zip \
+  --extract-dir /workspace/gcd-dump/extracted
 
 # Fixture proof (no live comics.org, no full dump)
 python3 scripts/ingest-gcd-series-to-catalog.test.py
 python3 scripts/ingest-gcd-series-to-catalog.py \
-  --dump-dir scripts/fixtures/gcd-dump-ingest --series-id 900101 --dry-run
+  --sql-dump scripts/fixtures/gcd-dump-sql/slice.sql --series-id 900101 --dry-run
 ```
 
 ## Backfill
@@ -163,7 +182,7 @@ As LOCG/UPC backfill adds Cover B / virgin / etc. rows, the strip populates auto
 | **Marvel Comics API** (`gateway.marvel.com`) | **Shut down — do not use** | Marvel ended the public API. Use LOCG / retailer Shopify feeds instead. |
 | **IDW Shopify** `idwpublishing.com/products.json` | Live; exclusives-heavy | `scripts/backfill-comic-upcs-idw-shop.py`. SKUs often real UPC/ISBN, but storefront currently skews foil/exclusive — primary Cover A rows are skipped unless a non-exclusive SKU exists. |
 | **Dark Horse / BOOM / Dynamite / Image shop JSON** | No usable public UPC | `products.json` either missing, blocked, or omits barcode; Image shop 403. |
-| **GCD dump** (comics.org/download) | **Primary for new rows** | `scripts/ingest-gcd-series-to-catalog.py --dump-dir`. Offline. Hold the API. |
+| **GCD dump** (comics.org/download) | **Primary for new rows** | `--sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql`. Offline. Hold the API. |
 | **GCD API** (`/api/`) | Opt-in leftover; 429-prone | `--use-api` only. Pull-back + STOP on 429. Keep-set enrich: `scripts/backfill-comic-upcs-gcd.py`. |
 | **Comic Vine barcode** | Optional fallback | Often empty on search/detail in current API; LOCG remains primary. |
 
