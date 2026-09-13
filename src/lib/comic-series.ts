@@ -20,6 +20,7 @@
  * Issue lists under a series sort by issue number (numeric where possible).
  */
 
+import { isCollectedComic } from "@/lib/comic-format";
 import { normalizeIssue, normalizePublisher, normalizeSeries, parseSeriesMeta } from "@/lib/locg-import";
 import type { CatalogComic, ComicFormat } from "@/lib/types";
 
@@ -289,4 +290,24 @@ export function buildPublisherList(
     }
   }
   return [...map.values()].sort((a, b) => a.publisher.localeCompare(b.publisher));
+}
+
+export function collectedForPublisher<T extends { format?: unknown; publisher: string }>(
+  comics: T[],
+  publisher: string,
+): T[] {
+  const want = normalizePublisher(publisher);
+  return comics.filter((c) => isCollectedComic(c) && normalizePublisher(c.publisher) === want);
+}
+
+export function collectedCountByPublisher(
+  comics: { format?: unknown; publisher: string }[],
+): Map<string, number> {
+  const map = new Map<string, number>();
+  for (const c of comics) {
+    if (!isCollectedComic(c)) continue;
+    const key = normalizePublisher(c.publisher);
+    map.set(key, (map.get(key) ?? 0) + 1);
+  }
+  return map;
 }

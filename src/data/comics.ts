@@ -38,6 +38,7 @@ type Row = [
   },
 ];
 
+// @ts-expect-error TS2590 — dump literal is too large for the checker
 const rows: Row[] = [
   // DC keys & modern
   ["dc-action-1-fac", "Action Comics", "1", "DC Comics", "2018-04-01", "Jerry Siegel", "Joe Shuster", "Facsimile of the 1938 debut of Superman.", 7.99, "facsimile", 1.8, 1, "1e3a8a,e30613,ffd200"],

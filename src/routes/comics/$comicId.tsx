@@ -152,40 +152,37 @@ function ComicLadderCrumbs({
   const year = seriesRunYearFor(comic, yearById);
   const title = seriesBaseTitle(comic.series);
   const collected = isCollectedComic(comic);
-  const view = collected ? ("collected" as const) : undefined;
   return (
     <nav aria-label="Comic breadcrumb" className="flex flex-wrap items-center gap-1 text-xs tracking-[0.2em] uppercase">
-      <Link
-        to="/comics"
-        search={view ? { view } : {}}
-        className="inline-flex items-center gap-1 text-gold hover:underline"
-      >
+      <Link to="/comics" search={{}} className="inline-flex items-center gap-1 text-gold hover:underline">
         <ArrowLeft className="size-3" /> Comics
       </Link>
-      {collected ? (
-        <>
-          <ChevronRight className="size-3 text-muted" />
-          <Link to="/comics" search={{ view }} className="text-gold hover:underline">
-            Collected
-          </Link>
-        </>
-      ) : null}
       <ChevronRight className="size-3 text-muted" />
       <Link
         to="/comics"
-        search={{ publisher: comic.publisher, view }}
+        search={{ publisher: comic.publisher }}
         className="text-gold hover:underline"
       >
         {comic.publisher}
       </Link>
       <ChevronRight className="size-3 text-muted" />
-      <Link
-        to="/comics"
-        search={{ publisher: comic.publisher, series: title, year, view }}
-        className="text-gold hover:underline"
-      >
-        {seriesDisplayLabel(title, year)}
-      </Link>
+      {collected ? (
+        <Link
+          to="/comics"
+          search={{ publisher: comic.publisher, section: "collected" }}
+          className="text-gold hover:underline"
+        >
+          Collected Editions
+        </Link>
+      ) : (
+        <Link
+          to="/comics"
+          search={{ publisher: comic.publisher, series: title, year }}
+          className="text-gold hover:underline"
+        >
+          {seriesDisplayLabel(title, year)}
+        </Link>
+      )}
     </nav>
   );
 }

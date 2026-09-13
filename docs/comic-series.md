@@ -9,20 +9,20 @@ Catalog browse is **Publisher → Series (run year) → Issues**.
 - Issue lists under a series sort by issue number by default.
 - Search (`q`) bypasses the ladder and returns a flat issue grid.
 
-## Collected editions
+## Collected Editions
 
-`/comics?view=collected` is a first-class mode for trades, hardcovers, and
-omnibuses (`format` ∈ `tpb` | `hc` | `omnibus`). `hardcover` on dump/live rows
-normalizes to `hc`.
+Collected books (`format` ∈ `tpb` | `hc` | `omnibus`; `hardcover` normalizes to
+`hc`) are **not** a global catalog mode. They live under the publisher they
+belong to:
 
-- Same publisher → title → list ladder; counts say “editions” not “issues”.
-- Sort: release / name / acquired (no issue-# default).
-- Cards and detail show a **TPB / HC / Omnibus** badge.
-- Issues mode excludes collected rows so singles variant collapse is unchanged.
-- Search from Issues still finds collected titles; Collected search is scoped
-  to those formats (plus custom collected books).
-- Empty copy: collected dump rows may still be landing — users can add a
-  custom collected book in the meantime.
+1. Publisher → Series (singles only; collected rows are excluded from runs).
+2. On that publisher page, a **Collected Editions** section appears only when
+   the publisher has ≥1 collected-format row. Hidden when zero.
+3. Opening it (`?publisher=…&section=collected`) lists those titles with cover,
+   name, **TPB / HC / Omnibus** badge, and year/date.
+
+Compendiums are stored as `tpb` until a dedicated format exists. Global search
+(`q`) still finds collected titles. Singles variant collapse is unchanged.
 
 ## Series-year rule
 

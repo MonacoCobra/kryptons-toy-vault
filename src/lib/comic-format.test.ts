@@ -10,6 +10,7 @@ import {
   isCollectedFormat,
   normalizeComicFormat,
 } from "@/lib/comic-format";
+import { collectedForPublisher } from "@/lib/comic-series";
 import type { CustomComic } from "@/lib/types";
 
 describe("normalizeComicFormat", () => {
@@ -61,7 +62,18 @@ describe("collected vs issues", () => {
     assert.ok(collected.some((c) => c.id === "dc-hush-tpb"));
     assert.ok(collected.some((c) => c.id === "dc-yl-batman"));
     assert.ok(collected.some((c) => c.id === "im-rat-queens-deluxe-hardcover-1"));
+    assert.ok(collected.some((c) => c.id === "dc-superman-death-and-return-of-superman-nn"));
+    assert.ok(collected.some((c) => c.id === "im-invincible-compendium-1"));
+    assert.ok(collected.some((c) => c.id === "dc-elseworlds-superman-1-2024-edition"));
     assert.ok(issues.every((c) => c.id !== "dc-hush-tpb"));
+    assert.ok(issues.every((c) => c.id !== "dc-superman-death-and-return-of-superman-nn"));
+  });
+
+  it("lists collected editions for one publisher only", () => {
+    const dc = collectedForPublisher(COMICS, "DC Comics");
+    assert.ok(dc.some((c) => c.id === "dc-superman-death-and-return-of-superman-nn"));
+    assert.ok(dc.every((c) => isCollectedComic(c)));
+    assert.ok(!dc.some((c) => c.id === "im-invincible-compendium-1"));
   });
 
   it("normalizes hardcover catalog rows to hc", () => {
