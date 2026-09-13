@@ -15623,6 +15623,13 @@ const rows: Row[] = [
   ["im-d-orc-1-fourth-printing-brett-bean", "D'Orc", "1", "Image", "2026-04-08", "", "", "D'Orc #1", 3.99, "single", 0.8, 0, "111827,7f1d1d,eab308", { variant: "Fourth Printing - Brett Bean", upc: "70985304572400114", streetDate: "2026-04-08", gcdIssueId: "2826491" }],
   ["im-d-orc-1-fourth-printing-blank", "D'Orc", "1", "Image", "2026-04-08", "", "", "D'Orc #1", 3.99, "single", 0.8, 0, "111827,7f1d1d,eab308", { variant: "Fourth Printing - Blank", upc: "70985304572400124", streetDate: "2026-04-08", gcdIssueId: "2826530" }],
   ["im-d-orc-1-virgin-cover-chrissie-zullo-uminga", "D'Orc", "1", "Image", "2026-02-04", "", "", "D'Orc #1", 0.0, "single", 0.8, 0, "111827,7f1d1d,eab308", { variant: "Virgin Cover - Chrissie Zullo-Uminga", streetDate: "2026-02-04", gcdIssueId: "2861379" }],
+
+  // GCD series ingest (224000, 195519, 195519, 195519, 120686; gcd-gated; floor 1980-01-01)
+  ["dc-superman-death-and-return-of-superman-nn", "Superman: The Death and Return of Superman Compendium", "nn", "DC Comics", "2025-07-01", "", "", "Superman: The Death and Return of Superman Compendium #nn", 59.99, "tpb", 0.55, 0, "1e3a8a,e30613,f8fafc", { upc: "978179950149755999", streetDate: "2025-05-20", gcdIssueId: "2738779" }],
+  ["im-invincible-compendium-1", "Invincible Compendium", "1", "Image", "2023-01-25", "", "", "Invincible Compendium #1", 99.99, "tpb", 0.8, 0, "111827,7f1d1d,eab308", { upc: "978153439999059999", streetDate: "2023-01-25", gcdIssueId: "2484153" }],
+  ["im-invincible-compendium-2", "Invincible Compendium", "2", "Image", "2023-05-24", "", "", "Invincible Compendium #2", 99.99, "tpb", 0.55, 0, "111827,7f1d1d,eab308", { upc: "978153439998359999", streetDate: "2023-05-24", gcdIssueId: "2533147" }],
+  ["im-invincible-compendium-3", "Invincible Compendium", "3", "Image", "2023-11-08", "", "", "Invincible Compendium #3", 99.99, "tpb", 0.55, 0, "111827,7f1d1d,eab308", { upc: "978153439997659999", streetDate: "2023-11-08", gcdIssueId: "2578023" }],
+  ["dc-elseworlds-superman-1-2024-edition", "Elseworlds: Superman", "1", "DC Comics", "2024-09-03", "", "", "Elseworlds: Superman #1", 34.99, "tpb", 0.8, 0, "1e3a8a,e30613,f8fafc", { variant: "2024 Edition", upc: "978177952956553499", streetDate: "2024-09-03", gcdIssueId: "2655495" }],
 ];
 
 function pal(s: string): [string, string, string] {
