@@ -51,4 +51,5 @@ are allowed when explicitly requested.
   **local dump** (`--sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql`;
   API off by default). Helper: `scripts/load-gcd-sql-dump.py`. Keep a row if
   it has any of `gcdIssueId` / UPC / ISBN plus real GCD series/issue/publisher.
+  Parent-linked variants kept; orphans skipped.
   See `scripts/gcd-series-ids.example.txt`.
