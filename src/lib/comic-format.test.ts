@@ -45,6 +45,8 @@ describe("collected vs issues", () => {
     assert.equal(isCollectedFormat("single"), false);
     assert.equal(isCollectedFormat("annual"), false);
     assert.equal(isCollectedFormat("facsimile"), false);
+    // Compendiums stay tpb until ComicFormat grows a dedicated value.
+    assert.equal(isCollectedFormat("compendium"), false);
   });
 
   it("labels collected formats for badges", () => {
@@ -74,6 +76,35 @@ describe("collected vs issues", () => {
     assert.ok(dc.some((c) => c.id === "dc-superman-death-and-return-of-superman-nn"));
     assert.ok(dc.every((c) => isCollectedComic(c)));
     assert.ok(!dc.some((c) => c.id === "im-invincible-compendium-1"));
+  });
+
+  it("surfaces Glyph collected seeds as tpb under the right publisher", () => {
+    const seeds = [
+      "dc-superman-death-and-return-of-superman-nn",
+      "im-invincible-compendium-1",
+      "im-invincible-compendium-2",
+      "im-invincible-compendium-3",
+      "dc-elseworlds-superman-1-2024-edition",
+    ];
+    for (const id of seeds) {
+      const row = COMICS.find((c) => c.id === id);
+      assert.ok(row, `missing seed ${id}`);
+      assert.equal(row.format, "tpb");
+      assert.equal(isCollectedComic(row), true);
+    }
+    const dc = new Set(collectedForPublisher(COMICS, "DC Comics").map((c) => c.id));
+    const image = new Set(collectedForPublisher(COMICS, "Image").map((c) => c.id));
+    assert.ok(dc.has("dc-superman-death-and-return-of-superman-nn"));
+    assert.ok(dc.has("dc-elseworlds-superman-1-2024-edition"));
+    assert.ok(image.has("im-invincible-compendium-1"));
+    assert.ok(image.has("im-invincible-compendium-2"));
+    assert.ok(image.has("im-invincible-compendium-3"));
+    // Title says Compendium but format is still single — stay on the issues ladder.
+    const fairyland = COMICS.find((c) => c.id === "im-i-hate-fairyland-compendium-1");
+    assert.ok(fairyland);
+    assert.equal(fairyland.format, "single");
+    assert.equal(isCollectedComic(fairyland), false);
+    assert.equal(image.has("im-i-hate-fairyland-compendium-1"), false);
   });
 
   it("normalizes hardcover catalog rows to hc", () => {
