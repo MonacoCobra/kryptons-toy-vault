@@ -94,7 +94,11 @@ first) or `--publisher`. Do **not** invent ids or UPCs. Do **not** run
 `gen-batch-*`. Do **not** use `--use-api`.
 
 ```bash
-# Immediate (streams the 3.6GB SQL; filters to requested series)
+# FIRST WAVE (streams the 3.6GB SQL; Image first)
+python3 scripts/ingest-gcd-series-to-catalog.py \
+  --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \
+  --publisher Image --min-year 2016 --max-issues 8 --dry-run
+
 python3 scripts/ingest-gcd-series-to-catalog.py \
   --sql-dump /workspace/gcd-dump/extracted/2026-09-01.sql \
   --series-ids-file scripts/gcd-series-ids.example.txt --dry-run
