@@ -16,8 +16,9 @@ Collected books (`format` ∈ `tpb` | `hc` | `omnibus`; `hardcover` normalizes t
 belong to:
 
 1. Publisher → Series (singles only; collected rows are excluded from runs).
-2. On that publisher page, a **Collected Editions** section appears only when
-   the publisher has ≥1 collected-format row. Hidden when zero.
+2. On that publisher page, a **Collected Editions** section appears **above**
+   the series list only when the publisher has ≥1 collected-format row. Hidden
+   when zero.
 3. Opening it (`?publisher=…&section=collected`) lists those titles with cover,
    name, **TPB / HC / Omnibus** badge, and year/date.
 

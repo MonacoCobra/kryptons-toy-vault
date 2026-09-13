@@ -540,6 +540,53 @@ function ComicsPage() {
 
       {level === "series" ? (
         <>
+          {publisherCollected.length > 0 ? (
+            <section className="flex flex-col gap-3">
+              <div>
+                <h2 className="font-display text-lg tracking-wide uppercase">Collected Editions</h2>
+                <p className="mt-1 text-xs text-muted">
+                  Trades, hardcovers, and omnibuses from this publisher — kept off the series ladder.
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() =>
+                  navigate({
+                    search: (prev) => ({
+                      ...prev,
+                      publisher: search.publisher,
+                      series: undefined,
+                      year: undefined,
+                      q: undefined,
+                      sort: undefined,
+                      section: "collected",
+                    }),
+                  })
+                }
+                className="flex w-full items-center gap-3 rounded-lg bg-bg-elevated p-2 text-left shadow-[0_0_0_1px_rgba(214,230,255,0.08)] transition-colors hover:bg-surface"
+              >
+                {publisherCollected[0] ? (
+                  <ComicCover comic={publisherCollected[0]} resolveRemote className="h-16 w-11 shrink-0 rounded-sm" />
+                ) : (
+                  <div className="h-16 w-11 shrink-0 rounded-sm bg-surface" />
+                )}
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate font-medium">Collected Editions</span>
+                  <span className="text-xs text-muted">
+                    {publisherCollected.length} edition{publisherCollected.length === 1 ? "" : "s"}
+                  </span>
+                </span>
+                <span className="flex flex-wrap justify-end gap-1">
+                  {[...new Set(publisherCollected.map((c) => comicFormatLabel(c.format)))].map((label) => (
+                    <Badge key={label} tone="ice">
+                      {label}
+                    </Badge>
+                  ))}
+                </span>
+                <ChevronRight className="size-4 shrink-0 text-muted" />
+              </button>
+            </section>
+          ) : null}
           <section className="flex flex-col gap-3">
             <div>
               <h2 className="font-display text-lg tracking-wide uppercase">Series · {search.publisher}</h2>
@@ -591,53 +638,6 @@ function ComicsPage() {
               </ul>
             )}
           </section>
-          {publisherCollected.length > 0 ? (
-            <section className="flex flex-col gap-3">
-              <div>
-                <h2 className="font-display text-lg tracking-wide uppercase">Collected Editions</h2>
-                <p className="mt-1 text-xs text-muted">
-                  Trades, hardcovers, and omnibuses from this publisher — kept off the series ladder.
-                </p>
-              </div>
-              <button
-                type="button"
-                onClick={() =>
-                  navigate({
-                    search: (prev) => ({
-                      ...prev,
-                      publisher: search.publisher,
-                      series: undefined,
-                      year: undefined,
-                      q: undefined,
-                      sort: undefined,
-                      section: "collected",
-                    }),
-                  })
-                }
-                className="flex w-full items-center gap-3 rounded-lg bg-bg-elevated p-2 text-left shadow-[0_0_0_1px_rgba(214,230,255,0.08)] transition-colors hover:bg-surface"
-              >
-                {publisherCollected[0] ? (
-                  <ComicCover comic={publisherCollected[0]} resolveRemote className="h-16 w-11 shrink-0 rounded-sm" />
-                ) : (
-                  <div className="h-16 w-11 shrink-0 rounded-sm bg-surface" />
-                )}
-                <span className="min-w-0 flex-1">
-                  <span className="block truncate font-medium">Collected Editions</span>
-                  <span className="text-xs text-muted">
-                    {publisherCollected.length} edition{publisherCollected.length === 1 ? "" : "s"}
-                  </span>
-                </span>
-                <span className="flex flex-wrap justify-end gap-1">
-                  {[...new Set(publisherCollected.map((c) => comicFormatLabel(c.format)))].map((label) => (
-                    <Badge key={label} tone="ice">
-                      {label}
-                    </Badge>
-                  ))}
-                </span>
-                <ChevronRight className="size-4 shrink-0 text-muted" />
-              </button>
-            </section>
-          ) : null}
         </>
       ) : null}
 
