@@ -17,11 +17,13 @@ Hard gates (every new comics.ts row) — GCD-only, per Shelby / Lyra:
   * Real series title, issue number, publisher from GCD — never invent
   * Skip duplicates (existing comics.ts id, series|issue|publisher|variant
     key, or existing GCD / LOCG linkage)
+  * Variants plug into the live viewer (src/lib/comic-variants.ts):
+    sibling comics.ts rows, same series+issue+publisher (comicFamilyKey).
+    extra.variant from GCD variant_name (empty = Cover A / primary).
+    Own catalog id + gcdIssueId; UPC from the dump when present.
   * Keep a variant only when variant_of_id resolves to a real parent
-    gcd_issue in the same series — same series+issue, extra.variant from
-    GCD variant_name, extra.gcdIssueId is the variant's own id
-  * Skip orphan variants (missing/broken variant_of_id, or parent not
-    same series)
+    gcd_issue in the same series and we can share that parent's
+    series+issue+publisher. Skip orphans / no-family.
   * Skip collected editions, no parseable GCD date, pre-floor / --min-year
 
 Map: store gcdIssueId (+ comics.org issue url as identity, not a fetch) in
@@ -267,10 +269,99 @@ def resolve_variant_attachment(
     return parent, None
 
 
+def comic_family_key(series: str, issue: str, publisher: str) -> str:
+    """Same grouping as src/lib/comic-variants.ts comicFamilyKey (no variant)."""
+    def part(raw: str) -> str:
+        return re.sub(r"\s+", " ", str(raw or "").strip().lower())
+
+    return f"{part(series)}|{part(issue)}|{part(publisher)}"
+
+
 def identity_key(series: str, issue: str, publisher: str, variant: str = "") -> str:
-    base = f"{series}|{issue}|{publisher}".lower()
+    """Ingest dedupe only — viewer grouping is comic_family_key (no variant)."""
+    base = comic_family_key(series, issue, publisher)
     v = (variant or "").strip().lower()
     return f"{base}|variant:{v}" if v else base
+
+
+def _row_family(row: list) -> tuple[str, str, str, str | None, dict]:
+    extra = row[13] if len(row) > 13 and isinstance(row[13], dict) else {}
+    fmt = str(row[9]) if len(row) > 9 else ""
+    return str(row[1]), str(row[2]), str(row[3]), fmt or None, extra
+
+
+def viewer_family_from_parent(
+    parent: dict,
+    *,
+    series_name: str,
+    publisher: str,
+    existing_meta: dict[str, dict],
+    added_rows: list,
+) -> tuple[str, str, str, str | None] | None:
+    """Exact series+issue+publisher the variant must share, or None to skip.
+
+    Live viewer groups siblings by comicFamilyKey (series|issue|publisher).
+    Copy those strings from a resolved parent row already in this run or the
+    catalog. If we cannot share that family with a real parent sibling, skip.
+    Do not invent a parallel variant model.
+    """
+    gid = str(parent.get("id") or parent.get("gcdIssueId") or "")
+    for row in added_rows:
+        series_f, issue_f, pub_f, fmt, extra = _row_family(row)
+        if gid and str(extra.get("gcdIssueId") or "") == gid:
+            if series_f.strip() and issue_f.strip() and pub_f.strip():
+                return series_f, issue_f, pub_f, fmt
+            return None
+
+    pnum = str(parent.get("number") or "").strip()
+    series_c, pub_c = locg.canon_series_publisher(series_name, publisher, existing_meta)
+    if not (series_c and pnum and pub_c):
+        return None
+    want = comic_family_key(series_c, pnum, pub_c)
+    for row in added_rows:
+        series_f, issue_f, pub_f, fmt, extra = _row_family(row)
+        if extra.get("variant"):
+            continue
+        if comic_family_key(series_f, issue_f, pub_f) == want:
+            return series_f, issue_f, pub_f, fmt
+
+    catalog_hit: tuple[str, str, str, str | None] | None = None
+    for meta in existing_meta.values():
+        if not isinstance(meta, dict):
+            continue
+        series_f = str(meta.get("series") or "")
+        issue_f = str(meta.get("issue") or "")
+        pub_f = str(meta.get("publisher") or "")
+        if comic_family_key(series_f, issue_f, pub_f) != want:
+            continue
+        hit = (series_f, issue_f, pub_f, str(meta.get("format") or "") or None)
+        if not meta.get("variant"):
+            return hit
+        if catalog_hit is None:
+            catalog_hit = hit
+    return catalog_hit
+
+
+def apply_viewer_family(parsed: dict, parent: dict, *, series_name: str, publisher: str, existing_meta: dict[str, dict], added_rows: list) -> str | None:
+    """Stamp parent series+issue+publisher onto parsed, or return skip reason."""
+    family = viewer_family_from_parent(
+        parent,
+        series_name=series_name,
+        publisher=publisher,
+        existing_meta=existing_meta,
+        added_rows=added_rows,
+    )
+    if family is None:
+        return "variant-orphan"
+    series_f, issue_f, pub_f, fmt = family
+    if not (str(series_f).strip() and str(issue_f).strip() and str(pub_f).strip()):
+        return "variant-orphan"
+    parsed["series"] = series_f
+    parsed["issue"] = issue_f
+    parsed["publisher"] = pub_f
+    if fmt:
+        parsed["format"] = fmt
+    return None
 
 
 def identity_keys_from_meta(existing_meta: dict[str, dict]) -> set[str]:
@@ -739,7 +830,7 @@ def build_row(catalog_id: str, parsed: dict, existing_meta: dict[str, dict]) -> 
     artists = parsed.get("artists") or ""
     title = parsed.get("title") or f"{series} #{issue}"
     msrp = float(parsed["msrp"]) if parsed.get("msrp") is not None else 0.0
-    fmt = infer_format(series, parsed)
+    fmt = str(parsed.get("format") or "") or infer_format(series, parsed)
     demand = 0.8 if issue in {"1", "0"} else 0.55
     prefix = catalog_id.rsplit("-", 1)[0].split("-")[0]
     palette = locg.PALETTES.get(
@@ -983,8 +1074,25 @@ def ingest_series(
             issue, url=url, series=series, publisher=publisher, descriptor=desc
         )
         if parent is not None:
-            parsed["issue"] = str(parent.get("number") or "").strip() or parsed["issue"]
             parsed["variantName"] = (issue.get("variant_name") or "").strip()
+            no_family = apply_viewer_family(
+                parsed,
+                parent,
+                series_name=str(series.get("name") or parsed.get("series") or ""),
+                publisher=publisher,
+                existing_meta=existing_meta,
+                added_rows=rows,
+            )
+            if no_family:
+                skips.append(
+                    {
+                        "seriesId": series_id,
+                        "issue": issue.get("number") or desc,
+                        "gcdIssueId": gcd_issue_id(issue, url),
+                        "reason": no_family,
+                    }
+                )
+                continue
         row, skip = finish_catalog_row(
             parsed,
             series_id=series_id,
@@ -1115,8 +1223,25 @@ def ingest_series_from_dump(
             descriptor=desc,
         )
         if parent is not None:
-            parsed["issue"] = str(parent.get("number") or "").strip() or parsed["issue"]
             parsed["variantName"] = (issue.get("variant_name") or "").strip()
+            no_family = apply_viewer_family(
+                parsed,
+                parent,
+                series_name=str(series.get("name") or parsed.get("series") or ""),
+                publisher=publisher,
+                existing_meta=existing_meta,
+                added_rows=rows,
+            )
+            if no_family:
+                skips.append(
+                    {
+                        "seriesId": series_id,
+                        "issue": issue.get("number") or desc,
+                        "gcdIssueId": issue.get("id"),
+                        "reason": no_family,
+                    }
+                )
+                continue
         row, skip = finish_catalog_row(
             parsed,
             series_id=series_id,
@@ -1491,6 +1616,7 @@ def main(argv: list[str] | None = None) -> int:
                 "issue": r[2],
                 "publisher": r[3],
                 "coverDate": r[4],
+                "format": r[9],
                 "gcdIssueId": (r[13] or {}).get("gcdIssueId") if len(r) > 13 else None,
                 "upc": (r[13] or {}).get("upc") if len(r) > 13 else None,
                 "variant": (r[13] or {}).get("variant") if len(r) > 13 else None,
