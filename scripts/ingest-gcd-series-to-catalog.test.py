@@ -84,6 +84,16 @@ class HelpersTest(unittest.TestCase):
         self.assertIsNone(ingest.normalize_upc(""))
         self.assertIsNone(ingest.normalize_upc(None))
 
+    def test_cover_a_named_issue_is_main(self):
+        cover_a = {"variant_name": "Cover A - Robert Carey", "variant_of_id": None}
+        named = {"variant_name": "Cover B - Duncan Rouleau", "variant_of_id": 2833222}
+        empty = {"variant_name": "", "variant_of_id": None}
+        self.assertFalse(ingest.is_variant_issue(cover_a))
+        self.assertFalse(ingest.is_variant_issue(empty))
+        self.assertTrue(ingest.is_variant_issue(named))
+        self.assertTrue(ingest.is_cover_a_name("Cover A - Robert Carey"))
+        self.assertFalse(ingest.is_cover_a_name("Cover B - Duncan Rouleau"))
+
     def test_parse_gcd_date_real_only(self):
         self.assertEqual(ingest.parse_gcd_date("2020-03-00"), "2020-03-01")
         self.assertEqual(ingest.parse_gcd_date("2020-03-11"), "2020-03-11")

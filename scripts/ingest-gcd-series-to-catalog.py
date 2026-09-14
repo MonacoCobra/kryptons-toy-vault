@@ -232,8 +232,22 @@ def variant_of_id(issue: dict) -> str | None:
     return token if token.isdigit() else None
 
 
+def is_cover_a_name(name: str | None) -> bool:
+    """True when GCD variant_name is empty or Cover A / regular / main (the parent)."""
+    n = re.sub(r"\s+", " ", (name or "").strip().lower())
+    if not n:
+        return True
+    if n in {"a", "cover a", "regular", "main", "standard"}:
+        return True
+    # "Cover A - Robert Carey" / "Cover A: Foo"
+    return bool(re.match(r"^cover\s*a(\s*[-–:|/].*)?$", n))
+
+
 def is_variant_issue(issue: dict) -> bool:
-    return bool((issue.get("variant_name") or "").strip()) or variant_of_id(issue) is not None
+    """Named variants only. Cover A (even with artist text) is the main when variant_of_id is empty."""
+    if variant_of_id(issue) is not None:
+        return True
+    return not is_cover_a_name(issue.get("variant_name"))
 
 
 def issue_series_id(issue: dict) -> str:
@@ -821,7 +835,11 @@ def parse_issue(
         "msrp": parse_gcd_price(issue.get("price")),
         "title": (issue.get("title") or "").strip() or f"{series_name} #{number}".strip(" #"),
         "descriptor": descriptor or str(issue.get("descriptor") or ""),
-        "variantName": (issue.get("variant_name") or "").strip(),
+        "variantName": (
+            ""
+            if is_cover_a_name(issue.get("variant_name")) and variant_of_id(issue) is None
+            else (issue.get("variant_name") or "").strip()
+        ),
         "variantOf": issue.get("variant_of"),
         "publishingFormat": issue.get("publishing_format") or series.get("publishing_format"),
     }
