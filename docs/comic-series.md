@@ -6,8 +6,8 @@ Catalog browse is **Publisher → Series (run year) → Issues**.
 
 - Search params: `publisher`, `series` (base title), `year` (run year).
 - Breadcrumbs + Back move one rung up.
-- Issue lists under a series sort by issue number by default.
-- Search (`q`) bypasses the ladder and returns a flat issue grid.
+- Issue lists under a series sort by issue number by default; **Release date / A–Z / Recently acquired** tabs reorder the visible list (including publisher and series rungs).
+- Search (`q`) bypasses the ladder and returns a flat issue grid (same sort tabs).
 
 ## Collected Editions
 

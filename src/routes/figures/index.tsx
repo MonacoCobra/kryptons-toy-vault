@@ -102,7 +102,11 @@ function FiguresPage() {
       if (sort === "acquired") {
         const oa = owned[a.id];
         const ob = owned[b.id];
-        if (!oa && !ob) return a.releaseDate < b.releaseDate ? 1 : -1;
+        if (!oa && !ob) {
+          const byDate = a.releaseDate === b.releaseDate ? 0 : a.releaseDate < b.releaseDate ? 1 : -1;
+          if (byDate !== 0) return byDate;
+          return a.name.localeCompare(b.name);
+        }
         if (!oa) return 1;
         if (!ob) return -1;
         if (oa.addedAt !== ob.addedAt) return oa.addedAt < ob.addedAt ? 1 : -1;
@@ -111,7 +115,8 @@ function FiguresPage() {
         if (aa !== ab) return aa < ab ? 1 : -1;
         return a.name.localeCompare(b.name);
       }
-      return a.releaseDate < b.releaseDate ? 1 : -1;
+      if (a.releaseDate !== b.releaseDate) return a.releaseDate < b.releaseDate ? 1 : -1;
+      return a.name.localeCompare(b.name);
     });
     return list;
   }, [search, owned, sort, extras, catalog]);
@@ -356,6 +361,7 @@ function FilterChip({
   return (
     <button
       type="button"
+      aria-pressed={active}
       onClick={onClick}
       className={cn(
         "h-10 rounded-full px-3 text-xs font-medium tracking-wide uppercase",
