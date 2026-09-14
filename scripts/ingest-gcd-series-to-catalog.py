@@ -233,11 +233,26 @@ def variant_of_id(issue: dict) -> str | None:
 
 
 def is_cover_a_name(name: str | None) -> bool:
-    """True when GCD variant_name is empty or Cover A / regular / main (the parent)."""
+    """True when GCD variant_name is empty or Cover A / regular / main (the parent).
+
+    Also treat Direct/Newsstand distribution labels as the main market copy when
+    variant_of_id is empty — GCD often stamps these on otherwise-primary issues.
+    """
     n = re.sub(r"\s+", " ", (name or "").strip().lower())
     if not n:
         return True
-    if n in {"a", "cover a", "regular", "main", "standard"}:
+    if n in {
+        "a",
+        "cover a",
+        "regular",
+        "main",
+        "standard",
+        "direct",
+        "direct edition",
+        "direct market",
+        "newsstand",
+        "newsstand edition",
+    }:
         return True
     # "Cover A - Robert Carey" / "Cover A: Foo"
     return bool(re.match(r"^cover\s*a(\s*[-–:|/].*)?$", n))
