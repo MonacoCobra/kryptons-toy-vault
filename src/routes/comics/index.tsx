@@ -34,9 +34,14 @@ import {
   collectedCountByPublisher,
   collectedForPublisher,
   comicMatchesSeries,
+  comicReleaseDate,
+  makeSeriesKey,
   seriesDisplayLabel,
   seriesRunYearFor,
-  sortIssuesByNumber,
+  sortCatalogComics,
+  sortPublisherList,
+  sortSeriesList,
+  type LadderSortMode,
 } from "@/lib/comic-series";
 import { collapseComicVariants } from "@/lib/comic-variants";
 import { formatMonthYear, usd } from "@/lib/format";
@@ -128,6 +133,7 @@ function ComicsPage() {
       ? "release"
       : (search.sort ??
         (search.publisher && search.series && search.year != null && !inCollected ? "issue" : "release"));
+  const ladderSort: LadderSortMode = sort === "name" || sort === "acquired" ? sort : "release";
 
   const [qDraft, setQDraft] = useState(search.q ?? "");
   useEffect(() => {
@@ -183,63 +189,71 @@ function ComicsPage() {
           ? "series"
           : "publishers";
 
+  const catalogById = useMemo(() => {
+    const map = new Map<string, CatalogComic>();
+    for (const c of catalogAll) map.set(c.id, c);
+    return map;
+  }, [catalogAll]);
+
+  const acquiredAtBySeriesKey = useMemo(() => {
+    const map = new Map<string, string>();
+    for (const entry of ownedByCatalog.values()) {
+      const comic =
+        (entry.catalogId ? catalogById.get(entry.catalogId) : undefined) ??
+        (entry.custom ? catalogFromCustom(entry.custom) : undefined);
+      if (!comic) continue;
+      const key = makeSeriesKey(comic.publisher, comic.series, seriesRunYearFor(comic, yearById));
+      const prev = map.get(key);
+      if (!prev || entry.addedAt > prev) map.set(key, entry.addedAt);
+    }
+    return map;
+  }, [ownedByCatalog, catalogById, yearById]);
+
+  const acquiredAtByPublisher = useMemo(() => {
+    const map = new Map<string, string>();
+    for (const entry of ownedByCatalog.values()) {
+      const comic =
+        (entry.catalogId ? catalogById.get(entry.catalogId) : undefined) ??
+        (entry.custom ? catalogFromCustom(entry.custom) : undefined);
+      if (!comic) continue;
+      const key = normalizePublisher(comic.publisher);
+      const prev = map.get(key);
+      if (!prev || entry.addedAt > prev) map.set(key, entry.addedAt);
+    }
+    return map;
+  }, [ownedByCatalog, catalogById]);
+
   const publishers = useMemo(() => {
     const list = buildPublisherList(issueCatalog, yearById);
     const seen = new Set(list.map((p) => normalizePublisher(p.publisher)));
     const extra: typeof list = [];
+    const extraIndex = new Map<string, number>();
     for (const c of collectedCatalog) {
       const key = normalizePublisher(c.publisher);
       if (seen.has(key)) continue;
-      seen.add(key);
-      extra.push({ publisher: c.publisher, seriesCount: 0, issueCount: 0 });
+      const date = comicReleaseDate(c);
+      const idx = extraIndex.get(key);
+      if (idx == null) {
+        extraIndex.set(key, extra.length);
+        extra.push({ publisher: c.publisher, seriesCount: 0, issueCount: 0, latestDate: date });
+      } else if (date && date > extra[idx]!.latestDate) {
+        extra[idx]!.latestDate = date;
+      }
     }
-    if (!extra.length) return list;
-    return [...list, ...extra].sort((a, b) => a.publisher.localeCompare(b.publisher));
-  }, [issueCatalog, yearById, collectedCatalog]);
+    const merged = extra.length ? [...list, ...extra] : list;
+    return sortPublisherList(merged, ladderSort, acquiredAtByPublisher);
+  }, [issueCatalog, yearById, collectedCatalog, ladderSort, acquiredAtByPublisher]);
 
   const seriesList = useMemo(() => {
     if (!search.publisher) return [];
-    return buildSeriesList(issueCatalog, yearById, search.publisher);
-  }, [issueCatalog, yearById, search.publisher]);
+    const list = buildSeriesList(issueCatalog, yearById, search.publisher);
+    return sortSeriesList(list, ladderSort, acquiredAtBySeriesKey);
+  }, [issueCatalog, yearById, search.publisher, ladderSort, acquiredAtBySeriesKey]);
 
   const publisherCollected = useMemo(() => {
     if (!search.publisher) return [];
     return collectedForPublisher(collectedCatalog, search.publisher);
   }, [collectedCatalog, search.publisher]);
-
-  const sortComics = (list: CatalogComic[]) => {
-    const out = [...list];
-    out.sort((a, b) => {
-      if (sort === "issue") {
-        return a.issue.localeCompare(b.issue, undefined, { numeric: true });
-      }
-      if (sort === "name") {
-        const bySeries = a.series.localeCompare(b.series);
-        if (bySeries !== 0) return bySeries;
-        return a.issue.localeCompare(b.issue, undefined, { numeric: true });
-      }
-      if (sort === "acquired") {
-        const oa = ownedByCatalog.get(a.id);
-        const ob = ownedByCatalog.get(b.id);
-        if (!oa && !ob) {
-          const da = a.streetDate ?? a.coverDate;
-          const db = b.streetDate ?? b.coverDate;
-          return da < db ? 1 : da > db ? -1 : 0;
-        }
-        if (!oa) return 1;
-        if (!ob) return -1;
-        if (oa.addedAt !== ob.addedAt) return oa.addedAt < ob.addedAt ? 1 : -1;
-        const aa = oa.acquiredDate || "";
-        const ab = ob.acquiredDate || "";
-        if (aa !== ab) return aa < ab ? 1 : -1;
-        return comicLabel(a).localeCompare(comicLabel(b));
-      }
-      const da = a.streetDate ?? a.coverDate;
-      const db = b.streetDate ?? b.coverDate;
-      return da < db ? 1 : da > db ? -1 : 0;
-    });
-    return out;
-  };
 
   const issueComics = useMemo(() => {
     if (level !== "issues" || !search.publisher || !search.series || search.year == null) return [];
@@ -252,15 +266,14 @@ function ComicsPage() {
     );
     if (search.keys) list = list.filter((c) => c.key);
     list = collapseComicVariants(list);
-    if (sort === "issue") return sortIssuesByNumber(list);
-    return sortComics(list);
+    return sortCatalogComics(list, sort, { ownedByCatalog, label: comicLabel });
   }, [level, issueCatalog, search.publisher, search.series, search.year, search.keys, sort, yearById, ownedByCatalog]);
 
   const collectedComics = useMemo(() => {
     if (level !== "collected") return [];
     let list = publisherCollected;
     if (search.keys) list = list.filter((c) => c.key);
-    return sortComics(list);
+    return sortCatalogComics(list, sort, { ownedByCatalog, label: comicLabel });
   }, [level, publisherCollected, search.keys, sort, ownedByCatalog]);
 
   const filteredSearch = useMemo(() => {
@@ -294,7 +307,7 @@ function ComicsPage() {
       list = list.filter((c) => c.series === search.series);
     }
     if (search.keys) list = list.filter((c) => c.key);
-    return sortComics(list);
+    return sortCatalogComics(list, sort, { ownedByCatalog, label: comicLabel });
   }, [level, search, extras, libraryRows, customCollected, sort, yearById, ownedByCatalog]);
 
   const filteredNoteworthy = useMemo(() => {
@@ -302,7 +315,7 @@ function ComicsPage() {
     let list = filterIssueComics(split.noteworthy);
     if (search.keys) list = list.filter((c) => c.key);
     list = collapseComicVariants(list);
-    return sortComics(list);
+    return sortCatalogComics(list, sort, { ownedByCatalog, label: comicLabel });
   }, [level, split.noteworthy, search.keys, sort, ownedByCatalog]);
 
   function goUp() {
@@ -475,7 +488,7 @@ function ComicsPage() {
                 No publishers in this catalog slice yet.
               </p>
             ) : (
-              <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+              <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3" data-sort={sort}>
                 {publishers.map((p) => {
                   const collectedCount = collectedCounts.get(normalizePublisher(p.publisher)) ?? 0;
                   return (
@@ -599,7 +612,7 @@ function ComicsPage() {
                 No series under this publisher yet.
               </p>
             ) : (
-              <ul className="grid gap-2">
+              <ul className="grid gap-2" data-sort={sort}>
                 {seriesList.map((s) => (
                   <li key={s.key}>
                     <button
@@ -646,7 +659,7 @@ function ComicsPage() {
           <div>
             <h2 className="font-display text-lg tracking-wide uppercase">{seriesHeading}</h2>
             <p className="mt-1 text-xs text-muted">
-              {search.publisher} · sorted by issue number · {issueComics.length} shown
+              {search.publisher} · sorted by {SORT_LABEL[sort].toLowerCase()} · {issueComics.length} shown
             </p>
           </div>
           <ComicGrid
@@ -815,6 +828,7 @@ function FilterChip({
   return (
     <button
       type="button"
+      aria-pressed={active}
       onClick={onClick}
       className={cn(
         "h-10 rounded-full px-3 text-xs font-medium tracking-wide",

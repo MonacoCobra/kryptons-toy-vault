@@ -17,7 +17,8 @@
  * 3. Date year itself prefers `streetDate`, then `coverDate` (ISO `YYYY…` prefix).
  * 4. If no date and no title year can be resolved → run year `0` (shown as "Year unknown").
  *
- * Issue lists under a series sort by issue number (numeric where possible).
+ * Issue lists under a series sort by issue number by default; browse tabs can
+ * switch the visible list to release date, A–Z, or recently acquired.
  */
 
 import { isCollectedComic } from "@/lib/comic-format";
@@ -45,9 +46,45 @@ export type SeriesRef = {
   /** Run start year; 0 = unknown. */
   year: number;
   issueCount: number;
+  /** Newest street/cover date among issues in this run (ISO-ish); empty if none. */
+  latestDate: string;
   /** Representative cover comic (earliest issue, prefer primary-ish). */
   sample?: CatalogComic;
 };
+
+export type PublisherRef = {
+  publisher: string;
+  seriesCount: number;
+  issueCount: number;
+  /** Newest street/cover date among series under this publisher. */
+  latestDate: string;
+};
+
+export type ComicSortMode = "release" | "name" | "acquired" | "issue";
+export type LadderSortMode = "release" | "name" | "acquired";
+
+export type CatalogComicSortable = {
+  id: string;
+  series: string;
+  issue: string;
+  streetDate?: string;
+  coverDate?: string;
+};
+
+/** Street date, then cover date — empty string when neither is set. */
+export function comicReleaseDate(c: Pick<ComicSeriesLike, "coverDate" | "streetDate">): string {
+  const raw = c.streetDate || c.coverDate || "";
+  return String(raw).trim();
+}
+
+/** Newest first. Missing dates sink. Equal dates compare as 0 (stable). */
+export function compareIsoDateDesc(a: string, b: string): number {
+  if (!a && !b) return 0;
+  if (!a) return 1;
+  if (!b) return -1;
+  if (a === b) return 0;
+  return a < b ? 1 : -1;
+}
 
 /** YYYY from ISO-ish date; prefers streetDate then coverDate. */
 export function comicDateYear(c: Pick<ComicSeriesLike, "coverDate" | "streetDate">): number | undefined {
@@ -223,6 +260,105 @@ export function sortIssuesByNumber<T extends { issue: string }>(list: T[]): T[] 
   });
 }
 
+function compareSeriesName(a: SeriesRef, b: SeriesRef): number {
+  const byTitle = a.title.localeCompare(b.title, undefined, { sensitivity: "base" });
+  if (byTitle !== 0) return byTitle;
+  return b.year - a.year;
+}
+
+/** Reorder publisher series cards for the browse sort tabs. */
+export function sortSeriesList<T extends SeriesRef>(
+  list: T[],
+  mode: LadderSortMode,
+  acquiredAtByKey?: Map<string, string>,
+): T[] {
+  const out = [...list];
+  out.sort((a, b) => {
+    if (mode === "name") return compareSeriesName(a, b);
+    if (mode === "acquired") {
+      const byAcq = compareIsoDateDesc(acquiredAtByKey?.get(a.key) ?? "", acquiredAtByKey?.get(b.key) ?? "");
+      if (byAcq !== 0) return byAcq;
+      return compareSeriesName(a, b);
+    }
+    const byDate = compareIsoDateDesc(a.latestDate, b.latestDate);
+    if (byDate !== 0) return byDate;
+    return compareSeriesName(a, b);
+  });
+  return out;
+}
+
+function comparePublisherName(a: PublisherRef, b: PublisherRef): number {
+  return a.publisher.localeCompare(b.publisher, undefined, { sensitivity: "base" });
+}
+
+/** Reorder the publisher ladder for the browse sort tabs. */
+export function sortPublisherList<T extends PublisherRef>(
+  list: T[],
+  mode: LadderSortMode,
+  acquiredAtByPublisher?: Map<string, string>,
+): T[] {
+  const out = [...list];
+  out.sort((a, b) => {
+    if (mode === "name") return comparePublisherName(a, b);
+    if (mode === "acquired") {
+      const byAcq = compareIsoDateDesc(
+        acquiredAtByPublisher?.get(normalizePublisher(a.publisher)) ?? "",
+        acquiredAtByPublisher?.get(normalizePublisher(b.publisher)) ?? "",
+      );
+      if (byAcq !== 0) return byAcq;
+      return comparePublisherName(a, b);
+    }
+    const byDate = compareIsoDateDesc(a.latestDate, b.latestDate);
+    if (byDate !== 0) return byDate;
+    return comparePublisherName(a, b);
+  });
+  return out;
+}
+
+/** Sort a comic card list (issues, collected, search, noteworthy). */
+export function sortCatalogComics<T extends CatalogComicSortable>(
+  list: T[],
+  mode: ComicSortMode,
+  opts?: {
+    ownedByCatalog?: Map<string, { addedAt: string; acquiredDate?: string }>;
+    label?: (c: T) => string;
+  },
+): T[] {
+  if (mode === "issue") return sortIssuesByNumber(list);
+  const ownedByCatalog = opts?.ownedByCatalog;
+  const label = opts?.label ?? ((c: T) => `${c.series} ${c.issue}`);
+  const out = [...list];
+  out.sort((a, b) => {
+    if (mode === "name") {
+      const bySeries = a.series.localeCompare(b.series, undefined, { sensitivity: "base" });
+      if (bySeries !== 0) return bySeries;
+      return a.issue.localeCompare(b.issue, undefined, { numeric: true });
+    }
+    if (mode === "acquired") {
+      const oa = ownedByCatalog?.get(a.id);
+      const ob = ownedByCatalog?.get(b.id);
+      if (!oa && !ob) {
+        const byDate = compareIsoDateDesc(comicReleaseDate(a), comicReleaseDate(b));
+        if (byDate !== 0) return byDate;
+        return label(a).localeCompare(label(b));
+      }
+      if (!oa) return 1;
+      if (!ob) return -1;
+      const byAdded = compareIsoDateDesc(oa.addedAt, ob.addedAt);
+      if (byAdded !== 0) return byAdded;
+      const byAcq = compareIsoDateDesc(oa.acquiredDate || "", ob.acquiredDate || "");
+      if (byAcq !== 0) return byAcq;
+      return label(a).localeCompare(label(b));
+    }
+    const byDate = compareIsoDateDesc(comicReleaseDate(a), comicReleaseDate(b));
+    if (byDate !== 0) return byDate;
+    const bySeries = a.series.localeCompare(b.series, undefined, { sensitivity: "base" });
+    if (bySeries !== 0) return bySeries;
+    return a.issue.localeCompare(b.issue, undefined, { numeric: true });
+  });
+  return out;
+}
+
 /** Build series cards for a publisher (or all publishers if omitted). */
 export function buildSeriesList(
   comics: CatalogComic[],
@@ -241,6 +377,7 @@ export function buildSeriesList(
     const titleNorm = seriesBaseNorm(c.series);
     const key = makeSeriesKey(c.publisher, c.series, year);
     const prev = map.get(key);
+    const latestDate = comicReleaseDate(c);
     if (!prev) {
       map.set(key, {
         key,
@@ -249,12 +386,14 @@ export function buildSeriesList(
         titleNorm,
         year,
         issueCount: 1,
+        latestDate,
         sample: c,
         _sampleIssue: c.issue,
       });
       continue;
     }
     prev.issueCount += 1;
+    if (latestDate && (!prev.latestDate || latestDate > prev.latestDate)) prev.latestDate = latestDate;
     // Prefer lower issue number as sample cover; tie-break earlier date.
     const [na] = issueSortValue(c.issue);
     const [nb] = issueSortValue(prev._sampleIssue);
@@ -277,19 +416,25 @@ export function buildSeriesList(
 export function buildPublisherList(
   comics: CatalogComic[],
   yearById: Map<string, number>,
-): { publisher: string; seriesCount: number; issueCount: number }[] {
+): PublisherRef[] {
   const series = buildSeriesList(comics, yearById);
-  const map = new Map<string, { publisher: string; seriesCount: number; issueCount: number }>();
+  const map = new Map<string, PublisherRef>();
   for (const s of series) {
     const prev = map.get(s.publisher);
     if (!prev) {
-      map.set(s.publisher, { publisher: s.publisher, seriesCount: 1, issueCount: s.issueCount });
+      map.set(s.publisher, {
+        publisher: s.publisher,
+        seriesCount: 1,
+        issueCount: s.issueCount,
+        latestDate: s.latestDate,
+      });
     } else {
       prev.seriesCount += 1;
       prev.issueCount += s.issueCount;
+      if (s.latestDate && (!prev.latestDate || s.latestDate > prev.latestDate)) prev.latestDate = s.latestDate;
     }
   }
-  return [...map.values()].sort((a, b) => a.publisher.localeCompare(b.publisher));
+  return [...map.values()].sort(comparePublisherName);
 }
 
 export function collectedForPublisher<T extends { format?: unknown; publisher: string }>(
