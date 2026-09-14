@@ -189,39 +189,40 @@ function ComicsPage() {
           ? "series"
           : "publishers";
 
-  const catalogById = useMemo(() => {
-    const map = new Map<string, CatalogComic>();
-    for (const c of catalogAll) map.set(c.id, c);
-    return map;
-  }, [catalogAll]);
-
-  const acquiredAtBySeriesKey = useMemo(() => {
-    const map = new Map<string, string>();
-    for (const entry of ownedByCatalog.values()) {
+  const acquiredLookups = useMemo(() => {
+    const bySeries = new Map<string, string>();
+    const byPublisher = new Map<string, string>();
+    if (ladderSort !== "acquired") return { bySeries, byPublisher };
+    const ownedList = Object.values(owned);
+    if (!ownedList.length) return { bySeries, byPublisher };
+    const want = new Set<string>();
+    for (const entry of ownedList) {
+      if (entry.catalogId) want.add(entry.catalogId);
+    }
+    const byId = new Map<string, CatalogComic>();
+    if (want.size) {
+      for (const c of catalogAll) {
+        if (!want.has(c.id)) continue;
+        byId.set(c.id, c);
+        if (byId.size >= want.size) break;
+      }
+    }
+    for (const entry of ownedList) {
       const comic =
-        (entry.catalogId ? catalogById.get(entry.catalogId) : undefined) ??
+        (entry.catalogId ? byId.get(entry.catalogId) : undefined) ??
         (entry.custom ? catalogFromCustom(entry.custom) : undefined);
       if (!comic) continue;
-      const key = makeSeriesKey(comic.publisher, comic.series, seriesRunYearFor(comic, yearById));
-      const prev = map.get(key);
-      if (!prev || entry.addedAt > prev) map.set(key, entry.addedAt);
+      const seriesKey = makeSeriesKey(comic.publisher, comic.series, seriesRunYearFor(comic, yearById));
+      const pubKey = normalizePublisher(comic.publisher);
+      if (!bySeries.has(seriesKey) || entry.addedAt > bySeries.get(seriesKey)!) {
+        bySeries.set(seriesKey, entry.addedAt);
+      }
+      if (!byPublisher.has(pubKey) || entry.addedAt > byPublisher.get(pubKey)!) {
+        byPublisher.set(pubKey, entry.addedAt);
+      }
     }
-    return map;
-  }, [ownedByCatalog, catalogById, yearById]);
-
-  const acquiredAtByPublisher = useMemo(() => {
-    const map = new Map<string, string>();
-    for (const entry of ownedByCatalog.values()) {
-      const comic =
-        (entry.catalogId ? catalogById.get(entry.catalogId) : undefined) ??
-        (entry.custom ? catalogFromCustom(entry.custom) : undefined);
-      if (!comic) continue;
-      const key = normalizePublisher(comic.publisher);
-      const prev = map.get(key);
-      if (!prev || entry.addedAt > prev) map.set(key, entry.addedAt);
-    }
-    return map;
-  }, [ownedByCatalog, catalogById]);
+    return { bySeries, byPublisher };
+  }, [owned, catalogAll, yearById, ladderSort]);
 
   const publishers = useMemo(() => {
     const list = buildPublisherList(issueCatalog, yearById);
@@ -241,14 +242,14 @@ function ComicsPage() {
       }
     }
     const merged = extra.length ? [...list, ...extra] : list;
-    return sortPublisherList(merged, ladderSort, acquiredAtByPublisher);
-  }, [issueCatalog, yearById, collectedCatalog, ladderSort, acquiredAtByPublisher]);
+    return sortPublisherList(merged, ladderSort, acquiredLookups.byPublisher);
+  }, [issueCatalog, yearById, collectedCatalog, ladderSort, acquiredLookups]);
 
   const seriesList = useMemo(() => {
     if (!search.publisher) return [];
     const list = buildSeriesList(issueCatalog, yearById, search.publisher);
-    return sortSeriesList(list, ladderSort, acquiredAtBySeriesKey);
-  }, [issueCatalog, yearById, search.publisher, ladderSort, acquiredAtBySeriesKey]);
+    return sortSeriesList(list, ladderSort, acquiredLookups.bySeries);
+  }, [issueCatalog, yearById, search.publisher, ladderSort, acquiredLookups]);
 
   const publisherCollected = useMemo(() => {
     if (!search.publisher) return [];
