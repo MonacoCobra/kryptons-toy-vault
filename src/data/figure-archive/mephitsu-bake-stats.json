@@ -1,9 +1,122 @@
 {
-  "bakedAt": "2026-09-09T03:34:34.977715+00:00",
+  "bakedAt": "2026-09-14T18:36:35.325600+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-09-09T03:32:44.998373+00:00",
+      "bakedAt": "2026-09-14T18:34:21.454445+00:00",
+      "line": "marvel-legends",
+      "dryRun": false,
+      "mephitsuCount": 1868,
+      "mephitsuWithGtin": 971,
+      "enrichStats": {
+        "listing": 0,
+        "fuzzy": 0,
+        "already": 971
+      },
+      "before": {
+        "total": 819,
+        "withSku": 590,
+        "withGtin": 397,
+        "withListingPrimary": 193,
+        "withImage": 605,
+        "emptySku": 229,
+        "emptyImage": 214
+      },
+      "after": {
+        "total": 819,
+        "withSku": 590,
+        "withGtin": 397,
+        "withListingPrimary": 193,
+        "withImage": 639,
+        "emptySku": 229,
+        "emptyImage": 180
+      },
+      "apply": {
+        "matched": 425,
+        "gtinAssigned": 0,
+        "gtinUpgraded": 0,
+        "imagesFilled": 34,
+        "imagesSkipped": 4,
+        "aliasesAttached": 0,
+        "skippedGtinConflict": 36,
+        "samples": [
+          {
+            "score": 60.5,
+            "figureId": "ml5-ml-x97-jean",
+            "name": "Jean Grey",
+            "mephitsu": "Jean Grey",
+            "wave": "X-Men '97 Twin Packs",
+            "sku": "5010996201980",
+            "image": true
+          },
+          {
+            "score": 60.5,
+            "figureId": "ml5-ml-cassandra-nova",
+            "name": "Cassandra Nova",
+            "mephitsu": "Cassandra Nova",
+            "wave": "Deadpool & Wolverine Wave 2",
+            "sku": "5010996359605",
+            "image": true
+          },
+          {
+            "score": 58.0,
+            "figureId": "ml3-ml-adam-warlock-baf",
+            "name": "Adam Warlock",
+            "mephitsu": "Adam Warlock",
+            "wave": "GOTG Vol. 3 Cosmo BAF Wave",
+            "sku": "653569318941",
+            "image": true
+          },
+          {
+            "score": 58.0,
+            "figureId": "d14ml-melina",
+            "name": "Melina Vostokoff",
+            "mephitsu": "Melina Vostokoff",
+            "wave": "Black Widow 2-Pack",
+            "sku": null,
+            "image": false
+          },
+          {
+            "score": 58.0,
+            "figureId": "mlc-johnny",
+            "name": "Human Torch",
+            "mephitsu": "Human Torch",
+            "wave": "Fantastic Four: First Steps",
+            "sku": "5010996283016",
+            "image": true
+          },
+          {
+            "score": 58.0,
+            "figureId": "ml3-ml-proxima",
+            "name": "Proxima Midnight",
+            "mephitsu": "Proxima Midnight",
+            "wave": "MCU Thanos BAF Wave",
+            "sku": "630509612284",
+            "image": true
+          },
+          {
+            "score": 58.0,
+            "figureId": "ml3-ml-ebony-maw",
+            "name": "Ebony Maw",
+            "mephitsu": "Ebony Maw",
+            "wave": "Armoured Thanos BAF Wave",
+            "sku": "630509803484",
+            "image": true
+          },
+          {
+            "score": 55.5,
+            "figureId": "ml5-ml-blade-movie-dpw",
+            "name": "Blade",
+            "mephitsu": "Blade",
+            "wave": "Deadpool & Wolverine Wave 2",
+            "sku": "5010996359643",
+            "image": true
+          }
+        ]
+      }
+    },
+    {
+      "bakedAt": "2026-09-14T18:34:43.156402+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 999,
@@ -18,25 +131,25 @@
         "withSku": 384,
         "withGtin": 251,
         "withListingPrimary": 133,
-        "withImage": 389,
+        "withImage": 387,
         "emptySku": 65,
-        "emptyImage": 60
+        "emptyImage": 62
       },
       "after": {
         "total": 449,
         "withSku": 384,
         "withGtin": 251,
         "withListingPrimary": 133,
-        "withImage": 389,
+        "withImage": 387,
         "emptySku": 65,
-        "emptyImage": 60
+        "emptyImage": 62
       },
       "apply": {
         "matched": 202,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
         "imagesFilled": 0,
-        "imagesSkipped": 0,
+        "imagesSkipped": 2,
         "aliasesAttached": 0,
         "skippedGtinConflict": 28,
         "samples": [
@@ -116,7 +229,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-09T03:32:54.597348+00:00",
+      "bakedAt": "2026-09-14T18:34:52.952798+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -127,109 +240,109 @@
         "already": 164
       },
       "before": {
-        "total": 353,
+        "total": 423,
         "withSku": 272,
         "withGtin": 125,
         "withListingPrimary": 147,
-        "withImage": 302,
-        "emptySku": 81,
+        "withImage": 372,
+        "emptySku": 151,
         "emptyImage": 51
       },
       "after": {
-        "total": 353,
-        "withSku": 272,
-        "withGtin": 125,
+        "total": 423,
+        "withSku": 301,
+        "withGtin": 154,
         "withListingPrimary": 147,
-        "withImage": 302,
-        "emptySku": 81,
-        "emptyImage": 51
+        "withImage": 373,
+        "emptySku": 122,
+        "emptyImage": 50
       },
       "apply": {
-        "matched": 114,
-        "gtinAssigned": 0,
+        "matched": 168,
+        "gtinAssigned": 29,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 1,
+        "imagesFilled": 1,
+        "imagesSkipped": 0,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 26,
+        "skippedGtinConflict": 39,
         "samples": [
           {
-            "score": 55.5,
-            "figureId": "cls5-cls-retro-snake",
-            "name": "Snake Eyes",
-            "mephitsu": "Snake Eyes",
-            "wave": "Walmart Retro",
-            "sku": "5010996290687",
+            "score": 72.5,
+            "figureId": "mph-f3a102b77368",
+            "name": "Lara Croft",
+            "mephitsu": "Lara Croft",
+            "wave": "Tomb Raider 30th Anniversary",
+            "sku": "5010996434715",
             "image": true
           },
           {
-            "score": 55.5,
-            "figureId": "cls5-cls-retro-cobra",
-            "name": "Cobra Commander",
-            "mephitsu": "Cobra Commander",
-            "wave": "Retro Series",
-            "sku": "HAS234186",
+            "score": 72.5,
+            "figureId": "mph-43077b1fbd5f",
+            "name": "Mad Marauder Sgt. Slaughter",
+            "mephitsu": "Mad Marauder Sgt. Slaughter",
+            "wave": "Amazon & Fan Channel",
+            "sku": null,
             "image": true
           },
           {
-            "score": 55.5,
-            "figureId": "joec-classified-cobra-trooper",
-            "name": "Cobra Trooper",
-            "mephitsu": "Cobra Trooper",
-            "wave": "Retro Series",
-            "sku": "HSF9866",
+            "score": 70.0,
+            "figureId": "mph-15dd9ccb1df5",
+            "name": "Crimson Guard (female)",
+            "mephitsu": "Crimson Guard (female)",
+            "wave": "G.I. Joe Retro",
+            "sku": null,
             "image": true
           },
           {
-            "score": 53.0,
-            "figureId": "cls5-cls-snake-eyes-movie",
-            "name": "Snake Eyes",
-            "mephitsu": "Snake Eyes",
-            "wave": "General",
-            "sku": "5010993973422",
+            "score": 70.0,
+            "figureId": "mph-9f12374d968a",
+            "name": "David “Crazylegs” Thomas",
+            "mephitsu": "David “Crazylegs” Thomas",
+            "wave": "G.I. Joe Retro",
+            "sku": "5010996361318",
             "image": true
           },
           {
-            "score": 53.0,
-            "figureId": "cls5-cls-major-bludd",
-            "name": "Major Bludd",
-            "mephitsu": "Major Bludd",
-            "wave": "General",
-            "sku": "HAS297679",
+            "score": 70.0,
+            "figureId": "mph-45e675a4dd05",
+            "name": "Rafael “Zap” Melendez",
+            "mephitsu": "Rafael “Zap” Melendez",
+            "wave": "G.I. Joe Retro",
+            "sku": null,
             "image": true
           },
           {
-            "score": 53.0,
-            "figureId": "cls5-cls-crimson-guard",
-            "name": "Crimson Guard",
-            "mephitsu": "Crimson Guard",
-            "wave": "Walmart Retro",
-            "sku": "5010993973453",
+            "score": 70.0,
+            "figureId": "mph-fb52ea918833",
+            "name": "Robert \"Grunt\" Graves",
+            "mephitsu": "Robert \"Grunt\" Graves",
+            "wave": "G.I. Joe Retro",
+            "sku": null,
             "image": true
           },
           {
-            "score": 53.0,
-            "figureId": "cls5-cls-cobra-officer",
-            "name": "Cobra Officer",
-            "mephitsu": "Cobra Officer",
-            "wave": "Wave 8",
-            "sku": "5010993949526",
+            "score": 70.0,
+            "figureId": "mph-71d48b338fa8",
+            "name": "William \"Wild Bill\" Hardy",
+            "mephitsu": "William \"Wild Bill\" Hardy",
+            "wave": "G.I. Joe Retro",
+            "sku": null,
             "image": true
           },
           {
-            "score": 53.0,
-            "figureId": "cls4-frag-viper",
-            "name": "Frag-Viper",
-            "mephitsu": "Frag Viper",
-            "wave": "General",
-            "sku": "5010996297686",
+            "score": 70.0,
+            "figureId": "mph-1d59f64f3606",
+            "name": "Richard 'Crystal Ball' King",
+            "mephitsu": "Richard 'Crystal Ball' King",
+            "wave": "Walmart (US) / Hasbro Pulse (UK)",
+            "sku": null,
             "image": true
           }
         ]
       }
     },
     {
-      "bakedAt": "2026-09-09T03:32:58.259048+00:00",
+      "bakedAt": "2026-09-14T18:34:56.465415+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -244,9 +357,9 @@
         "withSku": 470,
         "withGtin": 289,
         "withListingPrimary": 181,
-        "withImage": 448,
+        "withImage": 450,
         "emptySku": 55,
-        "emptyImage": 77
+        "emptyImage": 75
       },
       "after": {
         "total": 525,
@@ -261,7 +374,7 @@
         "matched": 28,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 2,
+        "imagesFilled": 0,
         "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 2,
@@ -342,7 +455,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-09T03:33:36.532350+00:00",
+      "bakedAt": "2026-09-14T18:35:35.019068+00:00",
       "line": "mcfarlane",
       "dryRun": false,
       "mephitsuCount": 2177,
@@ -357,25 +470,25 @@
         "withSku": 493,
         "withGtin": 370,
         "withListingPrimary": 123,
-        "withImage": 558,
+        "withImage": 550,
         "emptySku": 469,
-        "emptyImage": 404
+        "emptyImage": 412
       },
       "after": {
         "total": 962,
         "withSku": 493,
         "withGtin": 370,
         "withListingPrimary": 123,
-        "withImage": 561,
+        "withImage": 555,
         "emptySku": 469,
-        "emptyImage": 401
+        "emptyImage": 407
       },
       "apply": {
         "matched": 295,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 3,
-        "imagesSkipped": 3,
+        "imagesFilled": 5,
+        "imagesSkipped": 9,
         "aliasesAttached": 0,
         "skippedGtinConflict": 36,
         "samples": [
@@ -386,7 +499,7 @@
             "mephitsu": "Harley Quinn",
             "wave": "Gold Label GameStop",
             "sku": "787926177268",
-            "image": true
+            "image": false
           },
           {
             "score": 62.5,
@@ -455,7 +568,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-09T03:34:07.931555+00:00",
+      "bakedAt": "2026-09-14T18:36:07.088707+00:00",
       "line": "neca",
       "dryRun": false,
       "mephitsuCount": 1493,
@@ -470,25 +583,25 @@
         "withSku": 703,
         "withGtin": 337,
         "withListingPrimary": 366,
-        "withImage": 743,
+        "withImage": 738,
         "emptySku": 225,
-        "emptyImage": 185
+        "emptyImage": 190
       },
       "after": {
         "total": 928,
         "withSku": 703,
         "withGtin": 337,
         "withListingPrimary": 366,
-        "withImage": 743,
+        "withImage": 739,
         "emptySku": 225,
-        "emptyImage": 185
+        "emptyImage": 189
       },
       "apply": {
         "matched": 234,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 1,
+        "imagesFilled": 1,
+        "imagesSkipped": 5,
         "aliasesAttached": 0,
         "skippedGtinConflict": 21,
         "samples": [
@@ -568,7 +681,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-09T03:34:25.838351+00:00",
+      "bakedAt": "2026-09-14T18:36:25.405008+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -592,16 +705,16 @@
         "withSku": 2365,
         "withGtin": 131,
         "withListingPrimary": 2234,
-        "withImage": 2503,
+        "withImage": 2504,
         "emptySku": 425,
-        "emptyImage": 287
+        "emptyImage": 286
       },
       "apply": {
         "matched": 115,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 2,
-        "imagesSkipped": 1,
+        "imagesFilled": 3,
+        "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 12,
         "samples": [
@@ -648,7 +761,7 @@
             "mephitsu": "Baxter Stockman",
             "wave": "TMNT Series 1",
             "sku": null,
-            "image": false
+            "image": true
           },
           {
             "score": 58.0,
@@ -681,7 +794,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-09T03:34:26.879640+00:00",
+      "bakedAt": "2026-09-14T18:36:26.473554+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -794,7 +907,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-09T03:34:32.132188+00:00",
+      "bakedAt": "2026-09-14T18:36:32.179742+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -809,25 +922,25 @@
         "withSku": 67,
         "withGtin": 57,
         "withListingPrimary": 10,
-        "withImage": 75,
+        "withImage": 74,
         "emptySku": 79,
-        "emptyImage": 71
+        "emptyImage": 72
       },
       "after": {
         "total": 146,
         "withSku": 67,
         "withGtin": 57,
         "withListingPrimary": 10,
-        "withImage": 75,
+        "withImage": 74,
         "emptySku": 79,
-        "emptyImage": 71
+        "emptyImage": 72
       },
       "apply": {
         "matched": 43,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
         "imagesFilled": 0,
-        "imagesSkipped": 0,
+        "imagesSkipped": 1,
         "aliasesAttached": 0,
         "skippedGtinConflict": 2,
         "samples": [
@@ -907,7 +1020,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-09T03:34:34.973384+00:00",
+      "bakedAt": "2026-09-14T18:36:35.318915+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,
@@ -918,32 +1031,105 @@
         "already": 0
       },
       "before": {
-        "total": 0,
+        "total": 20,
         "withSku": 0,
         "withGtin": 0,
         "withListingPrimary": 0,
-        "withImage": 0,
-        "emptySku": 0,
+        "withImage": 20,
+        "emptySku": 20,
         "emptyImage": 0
       },
       "after": {
-        "total": 0,
+        "total": 20,
         "withSku": 0,
         "withGtin": 0,
         "withListingPrimary": 0,
-        "withImage": 0,
-        "emptySku": 0,
+        "withImage": 20,
+        "emptySku": 20,
         "emptyImage": 0
       },
       "apply": {
-        "matched": 0,
+        "matched": 20,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
         "imagesFilled": 0,
         "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 0,
-        "samples": []
+        "samples": [
+          {
+            "score": 64.5,
+            "figureId": "mph-81e3376c04c9",
+            "name": "Doctor Elsa Schneider",
+            "mephitsu": "Doctor Elsa Schneider",
+            "wave": "Wave 3",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 64.5,
+            "figureId": "mph-fa86515deaa8",
+            "name": "Helena Shaw",
+            "mephitsu": "Helena Shaw",
+            "wave": "Wave 2",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 64.5,
+            "figureId": "mph-a0be06799834",
+            "name": "Henry Jones Sr.",
+            "mephitsu": "Henry Jones Sr.",
+            "wave": "Wave 3",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 64.5,
+            "figureId": "mph-895e08f33793",
+            "name": "Indiana Jones 'Hypnotized'",
+            "mephitsu": "Indiana Jones 'Hypnotized'",
+            "wave": "Wave 2",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 64.5,
+            "figureId": "mph-7d1bd2c79bf9",
+            "name": "Indiana Jones 'Temple Escape'",
+            "mephitsu": "Indiana Jones 'Temple Escape'",
+            "wave": "Shop Disney / Hasbro Pulse",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 64.5,
+            "figureId": "mph-e22ead192c42",
+            "name": "Indiana Jones, Club Obi-Wan",
+            "mephitsu": "Indiana Jones, Club Obi-Wan",
+            "wave": "Target (US) / Fan Channel",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 64.5,
+            "figureId": "mph-6938919ef79c",
+            "name": "Indiana Jones, Dial of Destiny",
+            "mephitsu": "Indiana Jones, Dial of Destiny",
+            "wave": "Wave 2",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 64.5,
+            "figureId": "mph-ea5c0656d58a",
+            "name": "Indiana Jones, Last Crusade",
+            "mephitsu": "Indiana Jones, Last Crusade",
+            "wave": "Wave 3",
+            "sku": null,
+            "image": true
+          }
+        ]
       }
     }
   ]

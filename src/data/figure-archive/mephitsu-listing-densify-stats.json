@@ -1,0 +1,541 @@
+{
+  "source": "mephitsu-listing",
+  "finishedAt": "2026-09-14T18:29:27.763856+00:00",
+  "cap": 90,
+  "added": 90,
+  "withImage": 90,
+  "skipped": 34,
+  "counts": {
+    "hasbro-gijoe-classified": 70,
+    "hasbro-indiana": 20
+  },
+  "byLine": {
+    "GI Joe Classified": 70,
+    "Indiana Jones Adventure Series": 20
+  },
+  "byCompany": {
+    "hasbro": 90
+  },
+  "aliasAdded": 180,
+  "addedSample": [
+    {
+      "id": "mph-84c3186acad7",
+      "name": "Action Man",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": "Hasbro Pulse (US) / Fan Channel"
+    },
+    {
+      "id": "mph-626fc5297fe7",
+      "name": "Airtight",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-c540c6761d27",
+      "name": "Anthony 'Flash' Gambello",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-342214076b87",
+      "name": "Arctic B.A.T.",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": "Big Bad Toy Store"
+    },
+    {
+      "id": "mph-6d462c71bd4f",
+      "name": "Avalanche Response Trooper",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-6d14cd1339ca",
+      "name": "Axel 'Synapse' Soma,",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-2f4e41467798",
+      "name": "Clifton 'Iceberg' Nash",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-f4054894984d",
+      "name": "Cobra La Royal Guard",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-722468f98472",
+      "name": "Cobra Overkill",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-890637461137",
+      "name": "Cobra Valkyrie",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-15dd9ccb1df5",
+      "name": "Crimson Guard (female)",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-71ded2a8a1a9",
+      "name": "Crimson S.N.A.K.E. Armour",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": "Amazon"
+    },
+    {
+      "id": "mph-9f12374d968a",
+      "name": "David “Crazylegs” Thomas",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-c70949b32891",
+      "name": "Fatal Fluffies",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": "SDCC 2026"
+    },
+    {
+      "id": "mph-f3a102b77368",
+      "name": "Lara Croft",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-bc82f1facad9",
+      "name": "Mistress Armada",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-4ca085caadfd",
+      "name": "Night Creeper (D.I.R.E. Tech)",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": "Walmart Exclusive"
+    },
+    {
+      "id": "mph-218409d67868",
+      "name": "Night Force Psyche-Out",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": "Walmart (US)"
+    },
+    {
+      "id": "mph-3ac44a1e3c71",
+      "name": "Ninja Force Zartan",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": "Target Exclusive"
+    },
+    {
+      "id": "mph-45e675a4dd05",
+      "name": "Rafael “Zap” Melendez",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-fb52ea918833",
+      "name": "Robert \"Grunt\" Graves",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-d609f09440e6",
+      "name": "Sergeant Slaughter with Triple \"T\"",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": "Hasbro Pulse"
+    },
+    {
+      "id": "mph-6a6520a879b9",
+      "name": "Snake Eyes (Dawn Moreno)",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-5a06eaf3c7f3",
+      "name": "Special Forces",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    },
+    {
+      "id": "mph-0743593b68a7",
+      "name": "Sundown",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": true,
+      "exclusive": null
+    }
+  ],
+  "addedIds": [
+    "mph-84c3186acad7",
+    "mph-626fc5297fe7",
+    "mph-c540c6761d27",
+    "mph-342214076b87",
+    "mph-6d462c71bd4f",
+    "mph-6d14cd1339ca",
+    "mph-2f4e41467798",
+    "mph-f4054894984d",
+    "mph-722468f98472",
+    "mph-890637461137",
+    "mph-15dd9ccb1df5",
+    "mph-71ded2a8a1a9",
+    "mph-9f12374d968a",
+    "mph-c70949b32891",
+    "mph-f3a102b77368",
+    "mph-bc82f1facad9",
+    "mph-4ca085caadfd",
+    "mph-218409d67868",
+    "mph-3ac44a1e3c71",
+    "mph-45e675a4dd05",
+    "mph-fb52ea918833",
+    "mph-d609f09440e6",
+    "mph-6a6520a879b9",
+    "mph-5a06eaf3c7f3",
+    "mph-0743593b68a7",
+    "mph-dc6a3b558750",
+    "mph-0cb846928487",
+    "mph-71d48b338fa8",
+    "mph-44f1de4bda9c",
+    "mph-9c254c0a57b2",
+    "mph-39d8745db25d",
+    "mph-19fe57e1c3e6",
+    "mph-165193deac4a",
+    "mph-615267af38cf",
+    "mph-f039c5a547b2",
+    "mph-b38c3ad5330a",
+    "mph-70a00a4a87f3",
+    "mph-718b3e313ccb",
+    "mph-b582e0ae1ec2",
+    "mph-bc2230be2b94",
+    "mph-785f2560a733",
+    "mph-1cb4286e14f7",
+    "mph-f55531fd2706",
+    "mph-4c3e61868e78",
+    "mph-f9c14af57cba",
+    "mph-4b1de07909e6",
+    "mph-1d59f64f3606",
+    "mph-ba50a63b4f6b",
+    "mph-4bc5755540bf",
+    "mph-3f616e3f8047",
+    "mph-1d946c5ebddc",
+    "mph-c5e6ab53e497",
+    "mph-89620752ca6d",
+    "mph-ffbd99c91477",
+    "mph-f95cd17467ba",
+    "mph-a886c41d9ab7",
+    "mph-ba831ff55299",
+    "mph-f047a2081eb9",
+    "mph-4f9f5d443a29",
+    "mph-92df36e0c899",
+    "mph-709056f26b0e",
+    "mph-960cb900df00",
+    "mph-43077b1fbd5f",
+    "mph-fca689915c9a",
+    "mph-49c97bd21df0",
+    "mph-da148ab50e18",
+    "mph-1940749bf255",
+    "mph-6def6233ed83",
+    "mph-f0041355a68c",
+    "mph-1b6d9be62171",
+    "mph-81e3376c04c9",
+    "mph-fa86515deaa8",
+    "mph-a0be06799834",
+    "mph-386745547613",
+    "mph-895e08f33793",
+    "mph-7d1bd2c79bf9",
+    "mph-e22ead192c42",
+    "mph-6938919ef79c",
+    "mph-ea5c0656d58a",
+    "mph-8c2593b03da8",
+    "mph-1d4d1c15bf77",
+    "mph-6c3372f2199a",
+    "mph-a48fe924eef0",
+    "mph-d868007b082f",
+    "mph-9272facfdaf2",
+    "mph-f197676c61c5",
+    "mph-2b85d77afbe3",
+    "mph-2a7887f1c9b6",
+    "mph-71215b79800d",
+    "mph-f94c84e54e38"
+  ],
+  "skippedSample": [
+    {
+      "id": "mph-05450976a0c6",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|deep six"
+    },
+    {
+      "id": "mph-1cd40eaffe03",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|duke"
+    },
+    {
+      "id": "mph-bbac3690102b",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|duke"
+    },
+    {
+      "id": "mph-d69feb68cbe0",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|hydro viper"
+    },
+    {
+      "id": "mph-5746a4b19ead",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|techno viper"
+    },
+    {
+      "id": "mph-f9509d799aeb",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|blowtorch"
+    },
+    {
+      "id": "mph-9d239ab2a54d",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|breaker"
+    },
+    {
+      "id": "mph-966d52022206",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|cover girl"
+    },
+    {
+      "id": "mph-b0a3f578ad8e",
+      "reason": "fingerprint-exists",
+      "fp": "hasbro|gi joe classified|flint|2025"
+    },
+    {
+      "id": "mph-94c7ac9c5708",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|footloose"
+    },
+    {
+      "id": "mph-81ab986f630c",
+      "reason": "fingerprint-exists",
+      "fp": "hasbro|gi joe classified|frag viper|2025"
+    },
+    {
+      "id": "mph-193fe012b790",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|heavy duty"
+    },
+    {
+      "id": "mph-71b0d75c9afe",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|major bludd"
+    },
+    {
+      "id": "mph-1d7bd56a692a",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|night viper"
+    },
+    {
+      "id": "mph-8c1c523ae354",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|rock n roll"
+    },
+    {
+      "id": "mph-4a72c2d7fa05",
+      "reason": "fingerprint-exists",
+      "fp": "hasbro|gi joe classified|snake eyes|2025"
+    },
+    {
+      "id": "mph-a3ebfe3d0ca2",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|tele viper"
+    },
+    {
+      "id": "mph-8e49c852da26",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|wet suit"
+    },
+    {
+      "id": "mph-eb4449c798e3",
+      "reason": "fingerprint-exists",
+      "fp": "hasbro|gi joe classified|big boa|2024"
+    },
+    {
+      "id": "mph-4a934bfdf451",
+      "reason": "fingerprint-exists",
+      "fp": "hasbro|gi joe classified|cobra commander|2024"
+    },
+    {
+      "id": "mph-0f8341e4973e",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|cobra eel"
+    },
+    {
+      "id": "mph-1d014f48b479",
+      "reason": "fingerprint-exists",
+      "fp": "hasbro|gi joe classified|cobra trooper|2024"
+    },
+    {
+      "id": "mph-76c004a5e7c6",
+      "reason": "fingerprint-exists",
+      "fp": "hasbro|gi joe classified|dial tone|2024"
+    },
+    {
+      "id": "mph-e5cfdf749760",
+      "reason": "fingerprint-exists",
+      "fp": "hasbro|gi joe classified|duke|2024"
+    },
+    {
+      "id": "mph-336d8bbe1524",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|gnawgahyde"
+    },
+    {
+      "id": "mph-86bdf58b428f",
+      "reason": "fingerprint-exists",
+      "fp": "hasbro|gi joe classified|iron grenadier|2024"
+    },
+    {
+      "id": "mph-668b9c5e7764",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|leatherneck"
+    },
+    {
+      "id": "mph-84d986182f7e",
+      "reason": "fingerprint-exists",
+      "fp": "hasbro|gi joe classified|night creeper|2024"
+    },
+    {
+      "id": "mph-6675524ec9ad",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|quick kick"
+    },
+    {
+      "id": "mph-ec3f6220d5e6",
+      "reason": "fingerprint-exists",
+      "fp": "hasbro|gi joe classified|recondo|2024"
+    },
+    {
+      "id": "mph-dcf56a418ceb",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|snow serpent"
+    },
+    {
+      "id": "mph-2b03680276d5",
+      "reason": "fingerprint-exists",
+      "fp": "hasbro|gi joe classified|techno viper|2024"
+    },
+    {
+      "id": "mph-22b86f769e49",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|tiger force flint"
+    },
+    {
+      "id": "mph-fd1b9f230010",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|torch"
+    }
+  ],
+  "archiveSize": 24631,
+  "caches": {
+    "hasbro": 960,
+    "jazwares": 313
+  }
+}
