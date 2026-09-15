@@ -4,8 +4,8 @@
 Used with ingest-gcd-series-to-catalog.py --series-ids-file.
 
 Linkage is via catalog gcdIssueId → dump gcd_issue.series_id (not publisher-name
-matching). Cover A (even with artist text) counts as a dump main. Default focus:
-2020+ families with at most 2 catalog Cover-A mains (1–2 issue sparse series).
+matching). Empty variant_of_id counts as a dump main (artist-named primaries included).
+Default focus: 2020+ families with at most 2 catalog Cover-A mains.
 """
 from __future__ import annotations
 
@@ -126,11 +126,12 @@ def dump_cover_a_mains(conn: sqlite3.Connection, ingest, series_id: str, cache: 
         """,
         (series_id,),
     ).fetchall()
+    # Empty variant_of_id = dump main (including DC artist-named primaries).
+    # Do not require is_cover_a_name — that would undercount dump mains.
     mains = [
         i
         for i in dump_issues
         if ingest.variant_of_id({"variant_of_id": i["variant_of_id"]}) is None
-        and ingest.is_cover_a_name(i["variant_name"])
     ]
     cache[series_id] = mains
     return mains
@@ -150,6 +151,11 @@ def main() -> int:
     ap.add_argument("--report", default="/tmp/sparse-series-report.json")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument(
+        "--publisher",
+        default="",
+        help="Substring filter on catalog publisher (case-insensitive), e.g. DC",
+    )
+    ap.add_argument(
         "--comics-ts",
         default=str(ROOT / "src/data/comics.ts"),
     )
@@ -163,10 +169,13 @@ def main() -> int:
     upc_gid = load_upc_gcd_map(Path(args.upc_map))
     rows = parse_catalog(Path(args.comics_ts), upc_gid)
 
+    pub_filter = (args.publisher or "").strip().lower()
     families: dict[tuple[str, str], list] = defaultdict(list)
     for r in rows:
         y = year_of(r)
         if y and y < args.min_year:
+            continue
+        if pub_filter and pub_filter not in str(r.get("publisher") or "").lower():
             continue
         families[(r["series"], r["publisher"])].append(r)
 
@@ -241,6 +250,7 @@ def main() -> int:
         "count": len(sparse),
         "minYear": args.min_year,
         "maxCatalogMains": args.max_catalog_mains,
+        "publisherFilter": args.publisher or None,
         "candidateFamilies": len(candidates),
         "resolvedGcdIssueIds": len(gid_to_sid),
         "multiSidFamilies": multi_sid_families,

@@ -86,13 +86,18 @@ class HelpersTest(unittest.TestCase):
 
     def test_cover_a_named_issue_is_main(self):
         cover_a = {"variant_name": "Cover A - Robert Carey", "variant_of_id": None}
+        jamal = {"variant_name": "Jamal Campbell Cover", "variant_of_id": None}
         named = {"variant_name": "Cover B - Duncan Rouleau", "variant_of_id": 2833222}
+        named_no_parent = {"variant_name": "Cover B - Duncan Rouleau", "variant_of_id": None}
         empty = {"variant_name": "", "variant_of_id": None}
         self.assertFalse(ingest.is_variant_issue(cover_a))
+        self.assertFalse(ingest.is_variant_issue(jamal))
         self.assertFalse(ingest.is_variant_issue(empty))
+        self.assertFalse(ingest.is_variant_issue(named_no_parent))
         self.assertTrue(ingest.is_variant_issue(named))
         self.assertTrue(ingest.is_cover_a_name("Cover A - Robert Carey"))
         self.assertFalse(ingest.is_cover_a_name("Cover B - Duncan Rouleau"))
+        self.assertFalse(ingest.is_cover_a_name("Jamal Campbell Cover"))
 
     def test_parse_gcd_date_real_only(self):
         self.assertEqual(ingest.parse_gcd_date("2020-03-00"), "2020-03-01")
@@ -585,7 +590,11 @@ class DumpIngestTest(unittest.TestCase):
         self.assertEqual(cover_b["variant"], "Cover B")
         self.assertEqual(cover_b["id"], "im-gcd-fixture-indie-1-cover-b")
         self.assertNotEqual(cover_b["id"], added["im-gcd-fixture-indie-1"]["id"])
-        self.assertFalse(any(r.get("gcdIssueId") in {"8000007", "8000008", "8000009", "8000010"} for r in report["added"]))
+        # 8000009 has empty variant_of_id + artist name → main (not orphan)
+        self.assertFalse(any(r.get("gcdIssueId") in {"8000007", "8000008", "8000010"} for r in report["added"]))
+        jamal = next((r for r in report["added"] if r.get("gcdIssueId") == "8000009"), None)
+        self.assertIsNotNone(jamal)
+        self.assertIsNone(jamal.get("variant"))
         self.assertEqual((root / "src/data/comics.ts").read_text(), MINI_COMICS_TS)
 
     def test_dump_publisher_discovery(self):
@@ -761,9 +770,16 @@ class DumpIngestTest(unittest.TestCase):
             for s in report["skipped"]
             if s.get("reason") == "variant-orphan"
         }
-        self.assertTrue({"8000007", "8000008", "8000009", "8000010"} <= orphan_ids)
+        # Broken parent / wrong series / parent not in family stay orphans.
+        # Empty variant_of_id artist cover (8000009) is a main, not an orphan.
+        self.assertTrue({"8000007", "8000008", "8000010"} <= orphan_ids)
+        self.assertNotIn("8000009", orphan_ids)
         added_ids = {r["gcdIssueId"] for r in report["added"]}
-        self.assertFalse(added_ids & {"8000007", "8000008", "8000009", "8000010"})
+        self.assertFalse(added_ids & {"8000007", "8000008", "8000010"})
+        self.assertIn("8000009", added_ids)
+        jamal = next(r for r in report["added"] if r["gcdIssueId"] == "8000009")
+        self.assertEqual(jamal["issue"], "9")
+        self.assertIsNone(jamal.get("variant"))
 
     def test_dump_mains_only_skips_linked_variants(self):
         root = self._mini_root()
@@ -803,8 +819,16 @@ class DumpIngestTest(unittest.TestCase):
 
     def test_refuses_api_without_use_api_flag(self):
         root = self._mini_root()
-        with self.assertRaises(SystemExit):
-            ingest.main(["--root", str(root), "--series-id", "900101", "--dry-run"])
+        # Box auto-discovers /workspace/gcd-dump; hide it so refusal is testable.
+        import gcd_dump
+
+        real = gcd_dump.discover_dump_dir
+        gcd_dump.discover_dump_dir = lambda *a, **k: None
+        try:
+            with self.assertRaises(SystemExit):
+                ingest.main(["--root", str(root), "--series-id", "900101", "--dry-run"])
+        finally:
+            gcd_dump.discover_dump_dir = real
 
     def test_infer_format_maps_to_live_comic_format(self):
         cases = [

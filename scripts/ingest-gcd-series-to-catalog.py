@@ -259,10 +259,14 @@ def is_cover_a_name(name: str | None) -> bool:
 
 
 def is_variant_issue(issue: dict) -> bool:
-    """Named variants only. Cover A (even with artist text) is the main when variant_of_id is empty."""
-    if variant_of_id(issue) is not None:
-        return True
-    return not is_cover_a_name(issue.get("variant_name"))
+    """True IFF variant_of_id resolves. Empty variant_of_id is always a main.
+
+    DC/GCD often stamp artist names ("Jamal Campbell Cover") on primaries with
+    empty variant_of_id — those are Cover A / mains, not variants. is_cover_a_name
+    remains for Cover A / Direct / Newsstand labels only; it is NOT the
+    variant-vs-main discriminator.
+    """
+    return variant_of_id(issue) is not None
 
 
 def issue_series_id(issue: dict) -> str:
@@ -852,7 +856,7 @@ def parse_issue(
         "descriptor": descriptor or str(issue.get("descriptor") or ""),
         "variantName": (
             ""
-            if is_cover_a_name(issue.get("variant_name")) and variant_of_id(issue) is None
+            if variant_of_id(issue) is None
             else (issue.get("variant_name") or "").strip()
         ),
         "variantOf": issue.get("variant_of"),
@@ -1069,10 +1073,10 @@ def ingest_series(
         skips.append({"seriesId": series_id, "reason": "no-series"})
         return rows, skips, upc_local, cover_local
 
-    year_began = series.get("year_began")
-    if min_year and isinstance(year_began, int) and year_began < min_year:
-        skips.append({"seriesId": series_id, "reason": "min-year", "year": year_began})
-        return rows, skips, upc_local, cover_local
+    # Do NOT hard-skip the whole series on year_began < min_year.
+    # Long-running titles (Action Comics 2011→) still have post-min_year
+    # issues; per-issue gate_reason(min_year) filters those. Publisher
+    # discovery already applies year_began via series_for_publisher.
 
     publisher = publisher_from_series(series, client)
     if publisher_filter:
@@ -1242,10 +1246,10 @@ def ingest_series_from_dump(
         skips.append({"seriesId": series_id, "reason": "no-series"})
         return rows, skips, upc_local, cover_local
 
-    year_began = series.get("year_began")
-    if min_year and isinstance(year_began, int) and year_began < min_year:
-        skips.append({"seriesId": series_id, "reason": "min-year", "year": year_began})
-        return rows, skips, upc_local, cover_local
+    # Do NOT hard-skip the whole series on year_began < min_year.
+    # Long-running titles (Action Comics 2011→) still have post-min_year
+    # issues; per-issue gate_reason(min_year) filters those. Publisher
+    # discovery already applies year_began via series_for_publisher.
 
     pub_row = store.get_publisher(series.get("publisher_id")) if series.get("publisher_id") is not None else None
     publisher = str((pub_row or {}).get("name") or "").strip()
