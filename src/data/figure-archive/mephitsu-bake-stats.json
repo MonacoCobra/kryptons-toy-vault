@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-09-15T18:30:46.069848+00:00",
+  "bakedAt": "2026-09-16T05:45:23.765023+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-09-15T18:28:54.123773+00:00",
+      "bakedAt": "2026-09-16T05:43:36.036985+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 999,
@@ -16,8 +16,8 @@
       "before": {
         "total": 450,
         "withSku": 385,
-        "withGtin": 251,
-        "withListingPrimary": 134,
+        "withGtin": 252,
+        "withListingPrimary": 133,
         "withImage": 388,
         "emptySku": 65,
         "emptyImage": 62
@@ -27,16 +27,16 @@
         "withSku": 385,
         "withGtin": 252,
         "withListingPrimary": 133,
-        "withImage": 390,
+        "withImage": 388,
         "emptySku": 65,
-        "emptyImage": 60
+        "emptyImage": 62
       },
       "apply": {
         "matched": 203,
-        "gtinAssigned": 1,
-        "gtinUpgraded": 1,
-        "imagesFilled": 2,
-        "imagesSkipped": 0,
+        "gtinAssigned": 0,
+        "gtinUpgraded": 0,
+        "imagesFilled": 0,
+        "imagesSkipped": 2,
         "aliasesAttached": 0,
         "skippedGtinConflict": 28,
         "samples": [
@@ -116,7 +116,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-15T18:29:04.054033+00:00",
+      "bakedAt": "2026-09-16T05:43:45.201112+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -140,16 +140,16 @@
         "withSku": 301,
         "withGtin": 154,
         "withListingPrimary": 147,
-        "withImage": 372,
+        "withImage": 373,
         "emptySku": 122,
-        "emptyImage": 51
+        "emptyImage": 50
       },
       "apply": {
         "matched": 168,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 1,
+        "imagesFilled": 1,
+        "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 39,
         "samples": [
@@ -229,7 +229,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-15T18:29:07.815423+00:00",
+      "bakedAt": "2026-09-16T05:43:48.595761+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -342,7 +342,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-15T18:29:46.264328+00:00",
+      "bakedAt": "2026-09-16T05:44:26.860816+00:00",
       "line": "mcfarlane",
       "dryRun": false,
       "mephitsuCount": 2177,
@@ -353,31 +353,31 @@
         "already": 1013
       },
       "before": {
-        "total": 967,
+        "total": 1071,
         "withSku": 498,
         "withGtin": 370,
         "withListingPrimary": 128,
         "withImage": 556,
-        "emptySku": 469,
-        "emptyImage": 411
+        "emptySku": 573,
+        "emptyImage": 515
       },
       "after": {
-        "total": 967,
-        "withSku": 498,
-        "withGtin": 370,
+        "total": 1071,
+        "withSku": 539,
+        "withGtin": 411,
         "withListingPrimary": 128,
-        "withImage": 564,
-        "emptySku": 469,
-        "emptyImage": 403
+        "withImage": 636,
+        "emptySku": 532,
+        "emptyImage": 435
       },
       "apply": {
-        "matched": 295,
-        "gtinAssigned": 0,
+        "matched": 361,
+        "gtinAssigned": 41,
         "gtinUpgraded": 0,
-        "imagesFilled": 8,
-        "imagesSkipped": 5,
+        "imagesFilled": 80,
+        "imagesSkipped": 10,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 36,
+        "skippedGtinConflict": 49,
         "samples": [
           {
             "score": 63.0,
@@ -386,6 +386,15 @@
             "mephitsu": "Harley Quinn",
             "wave": "Gold Label GameStop",
             "sku": "787926177268",
+            "image": false
+          },
+          {
+            "score": 63.0,
+            "figureId": "mcf-w2-mister-zsasz-dc-multiverse-gold-label",
+            "name": "Mister Zsasz",
+            "mephitsu": "Mister Zsasz",
+            "wave": "Gold Label McFarlane Store",
+            "sku": "787926171594",
             "image": true
           },
           {
@@ -407,6 +416,24 @@
             "image": true
           },
           {
+            "score": 60.5,
+            "figureId": "mcf-mega-sunken-citadel-pirate-aquaman-lost-kingdom-megafig",
+            "name": "Sunken Citadel Pirate",
+            "mephitsu": "Sunken Citadel Pirate",
+            "wave": "Aquaman and the Lost Kingdom",
+            "sku": "787926155488",
+            "image": true
+          },
+          {
+            "score": 60.5,
+            "figureId": "mcf-w2-superman-with-krypto-deluxe-theatrical-superman-movie",
+            "name": "Superman with Krypto",
+            "mephitsu": "Superman with Krypto",
+            "wave": "Superman Movie Series, Theatrical Edition",
+            "sku": null,
+            "image": true
+          },
+          {
             "score": 58.0,
             "figureId": "mf8-mf-40",
             "name": "Martian Manhunter",
@@ -423,39 +450,12 @@
             "wave": "Titans BAF Wave",
             "sku": "787926156478",
             "image": true
-          },
-          {
-            "score": 58.0,
-            "figureId": "mcf2-booster",
-            "name": "Booster Gold",
-            "mephitsu": "Booster Gold",
-            "wave": "General",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 58.0,
-            "figureId": "mf8-mf-33",
-            "name": "Batman",
-            "mephitsu": "Batman",
-            "wave": "Gold Label Walmart, Kelley Jones Autograph Edition",
-            "sku": "787926173437",
-            "image": true
-          },
-          {
-            "score": 58.0,
-            "figureId": "mf8-mf-28",
-            "name": "Mr. Freeze",
-            "mephitsu": "Mr. Freeze",
-            "wave": "Gold Label DeluxeTheatrical Edition GameStop",
-            "sku": "787926156362",
-            "image": true
           }
         ]
       }
     },
     {
-      "bakedAt": "2026-09-15T18:30:18.150311+00:00",
+      "bakedAt": "2026-09-16T05:44:57.291362+00:00",
       "line": "neca",
       "dryRun": false,
       "mephitsuCount": 1493,
@@ -479,16 +479,16 @@
         "withSku": 704,
         "withGtin": 337,
         "withListingPrimary": 367,
-        "withImage": 744,
+        "withImage": 741,
         "emptySku": 225,
-        "emptyImage": 185
+        "emptyImage": 188
       },
       "apply": {
         "matched": 235,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 5,
-        "imagesSkipped": 1,
+        "imagesFilled": 2,
+        "imagesSkipped": 4,
         "aliasesAttached": 0,
         "skippedGtinConflict": 22,
         "samples": [
@@ -568,7 +568,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-15T18:30:36.326973+00:00",
+      "bakedAt": "2026-09-16T05:45:14.413509+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -592,16 +592,16 @@
         "withSku": 2369,
         "withGtin": 131,
         "withListingPrimary": 2238,
-        "withImage": 2505,
+        "withImage": 2508,
         "emptySku": 425,
-        "emptyImage": 289
+        "emptyImage": 286
       },
       "apply": {
         "matched": 116,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 3,
+        "imagesFilled": 3,
+        "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 12,
         "samples": [
@@ -648,7 +648,7 @@
             "mephitsu": "Baxter Stockman",
             "wave": "TMNT Series 1",
             "sku": null,
-            "image": false
+            "image": true
           },
           {
             "score": 58.0,
@@ -681,7 +681,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-15T18:30:37.312772+00:00",
+      "bakedAt": "2026-09-16T05:45:15.377588+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -705,16 +705,16 @@
         "withSku": 22,
         "withGtin": 2,
         "withListingPrimary": 20,
-        "withImage": 42,
+        "withImage": 57,
         "emptySku": 80,
-        "emptyImage": 60
+        "emptyImage": 45
       },
       "apply": {
         "matched": 53,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 15,
+        "imagesFilled": 15,
+        "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 0,
         "samples": [
@@ -743,7 +743,7 @@
             "mephitsu": "She-Hulk",
             "wave": "Wizard World (Fans Choice)",
             "sku": null,
-            "image": false
+            "image": true
           },
           {
             "score": 36.5,
@@ -761,7 +761,7 @@
             "mephitsu": "Symbiote Spider-Man",
             "wave": "General",
             "sku": null,
-            "image": false
+            "image": true
           },
           {
             "score": 36.5,
@@ -779,7 +779,7 @@
             "mephitsu": "Silver Surfer",
             "wave": "General",
             "sku": null,
-            "image": false
+            "image": true
           },
           {
             "score": 36.5,
@@ -794,7 +794,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-15T18:30:43.001080+00:00",
+      "bakedAt": "2026-09-16T05:45:20.772649+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -805,32 +805,68 @@
         "already": 89
       },
       "before": {
-        "total": 165,
-        "withSku": 67,
-        "withGtin": 57,
-        "withListingPrimary": 10,
-        "withImage": 93,
-        "emptySku": 98,
-        "emptyImage": 72
-      },
-      "after": {
-        "total": 165,
+        "total": 236,
         "withSku": 71,
         "withGtin": 61,
         "withListingPrimary": 10,
-        "withImage": 94,
-        "emptySku": 94,
-        "emptyImage": 71
+        "withImage": 163,
+        "emptySku": 165,
+        "emptyImage": 73
+      },
+      "after": {
+        "total": 236,
+        "withSku": 90,
+        "withGtin": 80,
+        "withListingPrimary": 10,
+        "withImage": 164,
+        "emptySku": 146,
+        "emptyImage": 72
       },
       "apply": {
-        "matched": 53,
-        "gtinAssigned": 4,
+        "matched": 114,
+        "gtinAssigned": 19,
         "gtinUpgraded": 0,
         "imagesFilled": 1,
-        "imagesSkipped": 0,
+        "imagesSkipped": 1,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 11,
+        "skippedGtinConflict": 23,
         "samples": [
+          {
+            "score": 77.5,
+            "figureId": "mph-cc6f1dbe6c03",
+            "name": "Ninja Black Ranger",
+            "mephitsu": "Ninja Black Ranger",
+            "wave": "Target (US) / Hasbro Pulse & Fan Channel (UK)",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 77.5,
+            "figureId": "mph-e45f2d0e73db",
+            "name": "Ninja Blue Ranger",
+            "mephitsu": "Ninja Blue Ranger",
+            "wave": "Target (US) / Hasbro Pulse & Fan Channel (UK)",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 77.5,
+            "figureId": "mph-49e496acb260",
+            "name": "Ninja White Ranger",
+            "mephitsu": "Ninja White Ranger",
+            "wave": "Target (US) / Hasbro Pulse & Fan Channel (UK)",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 70.0,
+            "figureId": "mph-20ff847f52fe",
+            "name": "S.P.D. A-Squad Green Ranger",
+            "mephitsu": "S.P.D. A-Squad Green Ranger",
+            "wave": "Best Buy (US) / Fan Channel",
+            "sku": null,
+            "image": true
+          },
           {
             "score": 67.5,
             "figureId": "mph-e1ec12d04505",
@@ -850,56 +886,20 @@
             "image": true
           },
           {
-            "score": 65.0,
-            "figureId": "mph-b243f1027490",
-            "name": "Cobra Kai Skelly Putty",
-            "mephitsu": "Cobra Kai Skelly Putty",
-            "wave": "Target / Fan Channel",
+            "score": 67.5,
+            "figureId": "mph-871eaff3a1d1",
+            "name": "White Ranger, Metallic Armour",
+            "mephitsu": "White Ranger, Metallic Armour",
+            "wave": "Hasbro Pulse / Fan Channel",
             "sku": null,
             "image": true
           },
           {
-            "score": 65.0,
-            "figureId": "mph-161efec3258c",
-            "name": "Lost Galaxy Yellow Ranger",
-            "mephitsu": "Lost Galaxy Yellow Ranger",
-            "wave": "Gamestop / Hasbro Pulse",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 62.5,
-            "figureId": "mph-1822182b25f6",
-            "name": "Beast Morphers Yellow Ranger",
-            "mephitsu": "Beast Morphers Yellow Ranger",
-            "wave": "Wave 13",
-            "sku": "195166208299",
-            "image": true
-          },
-          {
-            "score": 62.5,
-            "figureId": "mph-588060cd3aac",
-            "name": "Dino Charge Blue Ranger",
-            "mephitsu": "Dino Charge Blue Ranger",
-            "wave": "Wave 13",
-            "sku": "195166208268",
-            "image": true
-          },
-          {
-            "score": 62.5,
-            "figureId": "mph-00fd96d25379",
-            "name": "Dino Fury Blue Ranger",
-            "mephitsu": "Dino Fury Blue Ranger",
-            "wave": "Wave 14",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 62.5,
-            "figureId": "mph-d5d558c0373a",
-            "name": "Dino Fury Green Ranger",
-            "mephitsu": "Dino Fury Green Ranger",
-            "wave": "Wave 13",
+            "score": 67.5,
+            "figureId": "mph-b681a19ecbad",
+            "name": "Black Ranger, Metallic Armour",
+            "mephitsu": "Black Ranger, Metallic Armour",
+            "wave": "Hasbro Pulse / Fan Channel",
             "sku": null,
             "image": true
           }
@@ -907,7 +907,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-15T18:30:46.064428+00:00",
+      "bakedAt": "2026-09-16T05:45:23.759870+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,
