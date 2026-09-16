@@ -1,367 +1,201 @@
 {
   "source": "mephitsu-listing",
-  "finishedAt": "2026-09-16T05:43:04.974775+00:00",
+  "finishedAt": "2026-09-16T22:32:00+00:00",
   "cap": 90,
-  "added": 90,
-  "withImage": 89,
-  "skipped": 251,
+  "added": 26,
+  "withImage": 26,
+  "skipped": 370,
   "counts": {
-    "hasbro-lightning": 71,
-    "hasbro-dungeons-dragons": 18,
-    "hasbro-ghostbusters": 1
+    "hasbro": 26
   },
   "byLine": {
-    "Lightning Collection": 71,
-    "Dungeons & Dragons": 18,
-    "Ghostbusters": 1
+    "Ghostbusters": 13,
+    "Overwatch": 12,
+    "GI Joe Classified": 1
   },
   "byCompany": {
-    "hasbro": 90
+    "hasbro": 26
   },
-  "aliasAdded": 180,
+  "aliasAdded": 26,
   "addedSample": [
     {
-      "id": "mph-eecdac3515b6",
-      "name": "Morphed Daniel Larusso White Crane",
+      "id": "mph-629db8b61f0d",
+      "name": "Egon Spengler, Slimed",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2023,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": "Target / Fan Channel"
+      "line": "Ghostbusters",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:629db8b6-1f0d-4c49-8b29-6a10a01e63fe"
     },
     {
-      "id": "mph-cd5be99aec35",
-      "name": "Morphed Johnny Lawrence Black Boar Ranger",
+      "id": "mph-9d855c8b4f92",
+      "name": "Lucky",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2023,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
+      "line": "Ghostbusters",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:9d855c8b-4f92-4872-8fe4-13d25c57b751"
     },
     {
-      "id": "mph-740e2809f454",
-      "name": "Morphed Ken Soaring Falcon",
+      "id": "mph-4e1463d1c163",
+      "name": "Peter Venkman",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2023,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": "Fan Channel"
+      "line": "Ghostbusters",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:4e1463d1-c163-4ca4-909b-7507fa04435e"
     },
     {
-      "id": "mph-6e2c565c832a",
-      "name": "Morphed Miguel Diaz Eagle Red Ranger",
+      "id": "mph-ae07bb81c4ef",
+      "name": "Peter Venkman, Slimed",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2023,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
+      "line": "Ghostbusters",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:ae07bb81-c4ef-470b-8980-f84ce68d2ed3"
     },
     {
-      "id": "mph-03296e6284c7",
-      "name": "Morphed Ryu Crimson Hawk",
+      "id": "mph-aede575ab135",
+      "name": "Podcast",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2023,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": "Fan Channel"
+      "line": "Ghostbusters",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:aede575a-b135-41b3-8e07-48b20bc33e37"
     },
     {
-      "id": "mph-0015463f78fb",
-      "name": "Morphed Samantha Larusso Pink Ranger",
+      "id": "mph-440c33924bca",
+      "name": "Ray Stantz",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2023,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": "Target / Fan Channel"
+      "line": "Ghostbusters",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:440c3392-4bca-4527-917b-3c76bbf4f29c"
     },
     {
-      "id": "mph-9fe62fc25ef5",
-      "name": "RPM Yellow Ranger",
+      "id": "mph-dcf65fdcc705",
+      "name": "Ray Stantz, Slimed",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2023,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
+      "line": "Ghostbusters",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:dcf65fdc-c705-4094-a059-a3fed78be2f6"
     },
     {
-      "id": "mph-c067cc532f90",
-      "name": "S.P.D. Yellow Ranger",
+      "id": "mph-a89ad4030409",
+      "name": "Trevor",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2023,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": "Gamestop / Hasbro Pulse"
+      "line": "Ghostbusters",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:a89ad403-0409-42f5-9e0e-8101c939e5ea"
     },
     {
-      "id": "mph-64785fe7fdc5",
-      "name": "Turbo Blue Senturion",
+      "id": "mph-5e23468214c9",
+      "name": "Winston Zeddemore",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2023,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
+      "line": "Ghostbusters",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:5e234682-14c9-4907-a425-a90928135db8"
     },
     {
-      "id": "mph-29fefd1d5e8a",
-      "name": "Turbo Red Ranger",
+      "id": "mph-17195040e1cb",
+      "name": "Winston Zeddemore, Slimed",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2023,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
+      "line": "Ghostbusters",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:17195040-e1cb-4bac-a5f6-4ae0eebfe895"
     },
     {
-      "id": "mph-104b48a38d3d",
-      "name": "Wild Force Blue Ranger",
+      "id": "mph-1f4ac1fdf331",
+      "name": "Dana Barrett",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2023,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
+      "line": "Ghostbusters",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:1f4ac1fd-f331-4f4a-8f4b-0b1edcc74047"
     },
     {
-      "id": "mph-4602069a5520",
-      "name": "Wild Force Putrid",
+      "id": "mph-946aaafd7cb3",
+      "name": "Egon Spengler",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2023,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
+      "line": "Ghostbusters",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:946aaafd-7cb3-44df-b6be-04296464d8d6"
     },
     {
-      "id": "mph-83ef0ac504c3",
-      "name": "Dino Charge Green Ranger",
+      "id": "mph-a1f1d1055b18",
+      "name": "Gozer",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2022,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
+      "line": "Ghostbusters",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:a1f1d105-5b18-48dc-b9e2-938d29952faf"
     },
     {
-      "id": "mph-77b2b3c741e7",
-      "name": "Dino Charge Pink Ranger",
+      "id": "mph-82b33532fab7",
+      "name": "Blackwatch Reyes, Reaper",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2022,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
+      "line": "Overwatch",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:82b33532-fab7-4422-a4f5-962657f0f8e4"
     },
     {
-      "id": "mph-5c200506a2b1",
-      "name": "Dino Fury Red Ranger",
+      "id": "mph-ea3368712f12",
+      "name": "Genji",
       "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2022,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
-    },
-    {
-      "id": "mph-9bcaa2a887f4",
-      "name": "Ecliptor",
-      "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2022,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
-    },
-    {
-      "id": "mph-a4ca5b137420",
-      "name": "Eye Guy",
-      "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2022,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
-    },
-    {
-      "id": "mph-00df85c85f3c",
-      "name": "Green Shredder",
-      "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2022,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
-    },
-    {
-      "id": "mph-f603ed019668",
-      "name": "In  Space Blue Ranger with Galaxy Glider",
-      "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2022,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
-    },
-    {
-      "id": "mph-21c70f474c97",
-      "name": "In Space Phantom Ranger",
-      "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2022,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
-    },
-    {
-      "id": "mph-91a5a2f7511c",
-      "name": "In Space Pink Ranger",
-      "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2022,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
-    },
-    {
-      "id": "mph-4785ac10441d",
-      "name": "Ninja Pink Ranger",
-      "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2022,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
-    },
-    {
-      "id": "mph-73c32518861f",
-      "name": "Ninja Red Ranger",
-      "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2022,
-      "bucket": "hasbro-lightning",
-      "image": false,
-      "exclusive": null
-    },
-    {
-      "id": "mph-fdf9c5bf8861",
-      "name": "Ninja Yellow Ranger",
-      "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2022,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
-    },
-    {
-      "id": "mph-b01eedb4e2ca",
-      "name": "Pirantishead",
-      "company": "hasbro",
-      "line": "Lightning Collection",
-      "year": 2022,
-      "bucket": "hasbro-lightning",
-      "image": true,
-      "exclusive": null
+      "line": "Overwatch",
+      "year": null,
+      "sku": null,
+      "hasImage": true,
+      "alias": "mephitsu:ea336871-2f12-4cbf-8402-5402aa0dc0c7"
     }
   ],
   "addedIds": [
-    "mph-eecdac3515b6",
-    "mph-cd5be99aec35",
-    "mph-740e2809f454",
-    "mph-6e2c565c832a",
-    "mph-03296e6284c7",
-    "mph-0015463f78fb",
-    "mph-9fe62fc25ef5",
-    "mph-c067cc532f90",
-    "mph-64785fe7fdc5",
-    "mph-29fefd1d5e8a",
-    "mph-104b48a38d3d",
-    "mph-4602069a5520",
-    "mph-83ef0ac504c3",
-    "mph-77b2b3c741e7",
-    "mph-5c200506a2b1",
-    "mph-9bcaa2a887f4",
-    "mph-a4ca5b137420",
-    "mph-00df85c85f3c",
-    "mph-f603ed019668",
-    "mph-21c70f474c97",
-    "mph-91a5a2f7511c",
-    "mph-4785ac10441d",
-    "mph-73c32518861f",
-    "mph-fdf9c5bf8861",
-    "mph-b01eedb4e2ca",
-    "mph-ebdaff0cd80e",
-    "mph-896e37fedb0a",
-    "mph-871eaff3a1d1",
-    "mph-967e47bbd5eb",
-    "mph-6cc2f2edcb57",
-    "mph-79eaeb20e1db",
-    "mph-b681a19ecbad",
-    "mph-3d8e0579dc1a",
-    "mph-fc6e36402efd",
-    "mph-b6e2e1761a75",
-    "mph-b479db685de6",
-    "mph-b8197ba5f888",
-    "mph-c19913f1f61e",
-    "mph-10c7cc33a1c6",
-    "mph-ff068167008a",
-    "mph-1db9281a09a3",
-    "mph-e9a2cc0abeae",
-    "mph-c3ffa95b1284",
-    "mph-8910393b2a4f",
-    "mph-cc6f1dbe6c03",
-    "mph-e45f2d0e73db",
-    "mph-49e496acb260",
-    "mph-496946701649",
-    "mph-753bbf0f112c",
-    "mph-0a816cda45c3",
-    "mph-203492d5aea2",
-    "mph-20ff847f52fe",
-    "mph-cb5fa56b2384",
-    "mph-13657b2d0434",
-    "mph-8f824dd3fba6",
-    "mph-204c946966ac",
-    "mph-84f96aa84dd8",
-    "mph-6afe664b5a63",
-    "mph-823f2e15122b",
-    "mph-5e1196ec7b48",
-    "mph-5023ec4ee8e3",
-    "mph-4942dc589f63",
-    "mph-b67ca9843f02",
-    "mph-74c654277367",
-    "mph-0f74a65d4a3e",
-    "mph-e2d1a6a8effe",
-    "mph-ec06e8516f33",
-    "mph-5c80455d070c",
-    "mph-f5070a900396",
-    "mph-9e12b4bc84b5",
-    "mph-e8559512992c",
-    "mph-0ce2f6efd41f",
-    "mph-5fb565736268",
-    "mph-e8746e11eac1",
-    "mph-29c1cea6c89d",
-    "mph-6095d0e8cc2c",
-    "mph-df60c3bb62ac",
-    "mph-c170ac022a21",
-    "mph-9169de4a2931",
-    "mph-d5823370974a",
-    "mph-0075245be7ae",
-    "mph-7da759773dca",
-    "mph-56e6c3cd2987",
-    "mph-492f5c4bda12",
-    "mph-c9ea442073bb",
-    "mph-63f9ebaf06d3",
-    "mph-5fdfad42f19d",
-    "mph-8643146931df",
-    "mph-7c424e7a658b",
-    "mph-7c52e75ca34c"
+    "mph-629db8b61f0d",
+    "mph-9d855c8b4f92",
+    "mph-4e1463d1c163",
+    "mph-ae07bb81c4ef",
+    "mph-aede575ab135",
+    "mph-440c33924bca",
+    "mph-dcf65fdcc705",
+    "mph-a89ad4030409",
+    "mph-5e23468214c9",
+    "mph-17195040e1cb",
+    "mph-1f4ac1fdf331",
+    "mph-946aaafd7cb3",
+    "mph-a1f1d1055b18",
+    "mph-82b33532fab7",
+    "mph-ea3368712f12",
+    "mph-1f1bdecccc55",
+    "mph-fd4bbdcee383",
+    "mph-b482efa44247",
+    "mph-2774d9e01d43",
+    "mph-3d7c38b37d23",
+    "mph-6f3c149c7439",
+    "mph-90d21659369b",
+    "mph-8221ddcdaf56",
+    "mph-2882b4e6b0af",
+    "mph-fb3d69dd6547",
+    "mph-1e4d82faa6a6"
   ],
   "skippedSample": [
     {
@@ -447,94 +281,12 @@
     {
       "id": "mph-bc82f1facad9",
       "reason": "id-exists"
-    },
-    {
-      "id": "mph-4ca085caadfd",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-218409d67868",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-3ac44a1e3c71",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-45e675a4dd05",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-fb52ea918833",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-d609f09440e6",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-6a6520a879b9",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-5a06eaf3c7f3",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-0743593b68a7",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-5746a4b19ead",
-      "reason": "name-line-exists",
-      "nl": "hasbro|gi joe classified|techno viper"
-    },
-    {
-      "id": "mph-dc6a3b558750",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-0cb846928487",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-71d48b338fa8",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-44f1de4bda9c",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-9c254c0a57b2",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-f9509d799aeb",
-      "reason": "name-line-exists",
-      "nl": "hasbro|gi joe classified|blowtorch"
-    },
-    {
-      "id": "mph-39d8745db25d",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-9d239ab2a54d",
-      "reason": "name-line-exists",
-      "nl": "hasbro|gi joe classified|breaker"
-    },
-    {
-      "id": "mph-19fe57e1c3e6",
-      "reason": "id-exists"
-    },
-    {
-      "id": "mph-165193deac4a",
-      "reason": "id-exists"
     }
   ],
-  "archiveSize": 25167,
+  "archiveSize": 25241,
   "caches": {
     "hasbro": 960,
     "jazwares": 313
-  }
+  },
+  "note": "Reconstructed after second inject pass overwrote added=0; first pass +26 Hasbro (Ghostbusters 13, Overwatch 12, GI Joe Classified 1). DC-gap wave3 rows excluded from this mephitsu-only flush."
 }
