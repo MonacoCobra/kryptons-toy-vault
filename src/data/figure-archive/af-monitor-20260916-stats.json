@@ -1,0 +1,109 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-09-16",
+  "updatedAt": "2026-09-16T14:36:23Z",
+  "added": 48,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "JS product grid; SSR same ~20 featured cards for all queries; AF filter left only prior-day dupes",
+  "ee_detail_blocker": "listing cards only (no detail fetches; 429 risk)",
+  "counts": {
+    "candidates_seen": 204,
+    "added": 48,
+    "skipped_dupes": 1,
+    "rejected": 155
+  },
+  "samples": [
+    {
+      "sku": "BFHB0006EE",
+      "name": "Hellboy (Black and White)",
+      "id": "afmon-bossfight-hellboy-black-and-white-bfhb0006ee",
+      "source": "ee"
+    },
+    {
+      "sku": "BFRS0006",
+      "name": "Immortal Red Sonja",
+      "id": "afmon-bossfight-immortal-red-sonja-bfrs0006",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS69792",
+      "name": "Wolverine (Gamerverse)",
+      "id": "afmon-bandai-wolverine-gamerverse-blfbas69792",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS72113",
+      "name": "Ultraman (60th Anniversary Shinkocchou Seihou)",
+      "id": "afmon-bandai-ultraman-60th-anniversary-shinkocchou-seihou-blfbas72113",
+      "source": "ee"
+    },
+    {
+      "sku": "HSF6858",
+      "name": "Darth Malgus",
+      "id": "afmon-hasbro-darth-malgus-hsf6858",
+      "source": "ee"
+    },
+    {
+      "sku": "HSF7187",
+      "name": "Breakdown",
+      "id": "afmon-hasbro-breakdown-hsf7187",
+      "source": "ee"
+    },
+    {
+      "sku": "HSF7196",
+      "name": "Beachcomber",
+      "id": "afmon-hasbro-beachcomber-hsf7196",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0796",
+      "name": "Marrow",
+      "id": "afmon-hasbro-marrow-hsg0796",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0817",
+      "name": "Daredevil",
+      "id": "afmon-hasbro-daredevil-hsg0817",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0821",
+      "name": "Iron Man (Mark 72)",
+      "id": "afmon-hasbro-iron-man-mark-72-hsg0821",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0822",
+      "name": "Werewolf By Night",
+      "id": "afmon-hasbro-werewolf-by-night-hsg0822",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0921",
+      "name": "Han Solo",
+      "id": "afmon-hasbro-han-solo-hsg0921",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0923",
+      "name": "Chewbacca",
+      "id": "afmon-hasbro-chewbacca-hsg0923",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0924",
+      "name": "Shock Trooper",
+      "id": "afmon-hasbro-shock-trooper-hsg0924",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0930",
+      "name": "Aurra Sing",
+      "id": "afmon-hasbro-aurra-sing-hsg0930",
+      "source": "ee"
+    }
+  ]
+}
