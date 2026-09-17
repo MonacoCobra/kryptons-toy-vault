@@ -1,0 +1,96 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-09-17",
+  "updatedAt": "2026-09-17T14:41:20Z",
+  "added": 51,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "SSR returns ~20 newest AF cards; page 2 identical (JS pager). 10 unmapped companies (INART/Queen Studios, Infinity Studio, etc.) skipped rather than invent CompanyId.",
+  "ee_detail_blocker": "listing cards only (no detail fetches; prior 429 risk)",
+  "counts": {
+    "candidates_seen": 81,
+    "ee_candidates": 72,
+    "bbts_candidates": 9,
+    "added": 51,
+    "skipped_dupes": 23,
+    "rejected_non_af": 102,
+    "unmapped_company": 10
+  },
+  "samples": [
+    {
+      "sku": "LS85336",
+      "name": "Palworld Collector 3-Inch Scale Action Figure 3-Pack",
+      "id": "afmon-loyalsubjects-palworld-collector-3-inch-scale-action-figure-3-pack-ls85336",
+      "source": "ee"
+    },
+    {
+      "sku": "JK276234A",
+      "name": "The Simpsons 5-Inch Wave 8 Action Figure Case of 6",
+      "id": "afmon-jakks-the-simpsons-5-inch-wave-8-action-figure-case-of-6-jk276234a",
+      "source": "ee"
+    },
+    {
+      "sku": "JK276124A",
+      "name": "Simpsons 2 1/2-Inch Scale Wave 8 Action Figure Case of 8",
+      "id": "afmon-jakks-simpsons-2-1-2-inch-scale-wave-8-action-figure-case-of-8-jk276124a",
+      "source": "ee"
+    },
+    {
+      "sku": "BFEH0021",
+      "name": "Epic H.A.C.K.S. Rand Arora: Gamma Squad Leader 6-Inch Action Figure",
+      "id": "afmon-bossfight-epic-h-a-c-k-s-rand-arora-gamma-squad-leader-6-inch-action-f-bfeh0021",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84184",
+      "name": "Kamen Rider Masked Rider MY-TH S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-kamen-rider-masked-rider-my-th-s-h-figuarts-action-figure-blfbas84184",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG3332",
+      "name": "Star Wars The Black Series Togruta (Halloween Edition) 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-black-series-togruta-halloween-edition-6-inch--hsg3332",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG3309",
+      "name": "Star Wars The Vintage Collection Phase I Clone Troopers Action Figure 4-Pack",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-phase-i-clone-troopers-acti-hsg3309",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG3206",
+      "name": "Star Wars The Black Series Jedi Temple Guards 6-Inch Action Figures",
+      "id": "afmon-hasbro-star-wars-the-black-series-jedi-temple-guards-6-inch-action--hsg3206",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG3211",
+      "name": "Star Wars The Vintage Collection Imperial Remnant Stormtrooper Action Figure 4-Pack",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-imperial-remnant-stormtroop-hsg3211",
+      "source": "ee"
+    },
+    {
+      "sku": "MF20504",
+      "name": "NFL McFarlane's SportsPicks Wave 2 Washington Commanders Jayden Daniels 6-Inch Action Figure",
+      "id": "afmon-mcfarlane-nfl-mcfarlane-s-sportspicks-wave-2-washington-commanders-jay-mf20504",
+      "source": "ee"
+    },
+    {
+      "sku": "MF20502",
+      "name": "NFL McFarlane's SportsPicks Wave 2 San Francisco 49ers Brock Purdy 6-Inch Action Figure",
+      "id": "afmon-mcfarlane-nfl-mcfarlane-s-sportspicks-wave-2-san-francisco-49ers-brock-mf20502",
+      "source": "ee"
+    },
+    {
+      "sku": "MF18136",
+      "name": "DC Multiverse Wave 32 Kyle Rayner Green Lantern 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-dc-multiverse-wave-32-kyle-rayner-green-lantern-7-inch-scale-mf18136",
+      "source": "ee"
+    }
+  ],
+  "oneshotBefore": 25364,
+  "oneshotAfter": 25415
+}
