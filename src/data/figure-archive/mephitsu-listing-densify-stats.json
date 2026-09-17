@@ -1,202 +1,16 @@
 {
   "source": "mephitsu-listing",
-  "finishedAt": "2026-09-16T22:32:00+00:00",
+  "finishedAt": "2026-09-17T05:40:52.046797+00:00",
   "cap": 90,
-  "added": 26,
-  "withImage": 26,
+  "added": 0,
+  "withImage": 0,
   "skipped": 370,
-  "counts": {
-    "hasbro": 26
-  },
-  "byLine": {
-    "Ghostbusters": 13,
-    "Overwatch": 12,
-    "GI Joe Classified": 1
-  },
-  "byCompany": {
-    "hasbro": 26
-  },
-  "aliasAdded": 26,
-  "addedSample": [
-    {
-      "id": "mph-629db8b61f0d",
-      "name": "Egon Spengler, Slimed",
-      "company": "hasbro",
-      "line": "Ghostbusters",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:629db8b6-1f0d-4c49-8b29-6a10a01e63fe"
-    },
-    {
-      "id": "mph-9d855c8b4f92",
-      "name": "Lucky",
-      "company": "hasbro",
-      "line": "Ghostbusters",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:9d855c8b-4f92-4872-8fe4-13d25c57b751"
-    },
-    {
-      "id": "mph-4e1463d1c163",
-      "name": "Peter Venkman",
-      "company": "hasbro",
-      "line": "Ghostbusters",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:4e1463d1-c163-4ca4-909b-7507fa04435e"
-    },
-    {
-      "id": "mph-ae07bb81c4ef",
-      "name": "Peter Venkman, Slimed",
-      "company": "hasbro",
-      "line": "Ghostbusters",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:ae07bb81-c4ef-470b-8980-f84ce68d2ed3"
-    },
-    {
-      "id": "mph-aede575ab135",
-      "name": "Podcast",
-      "company": "hasbro",
-      "line": "Ghostbusters",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:aede575a-b135-41b3-8e07-48b20bc33e37"
-    },
-    {
-      "id": "mph-440c33924bca",
-      "name": "Ray Stantz",
-      "company": "hasbro",
-      "line": "Ghostbusters",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:440c3392-4bca-4527-917b-3c76bbf4f29c"
-    },
-    {
-      "id": "mph-dcf65fdcc705",
-      "name": "Ray Stantz, Slimed",
-      "company": "hasbro",
-      "line": "Ghostbusters",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:dcf65fdc-c705-4094-a059-a3fed78be2f6"
-    },
-    {
-      "id": "mph-a89ad4030409",
-      "name": "Trevor",
-      "company": "hasbro",
-      "line": "Ghostbusters",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:a89ad403-0409-42f5-9e0e-8101c939e5ea"
-    },
-    {
-      "id": "mph-5e23468214c9",
-      "name": "Winston Zeddemore",
-      "company": "hasbro",
-      "line": "Ghostbusters",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:5e234682-14c9-4907-a425-a90928135db8"
-    },
-    {
-      "id": "mph-17195040e1cb",
-      "name": "Winston Zeddemore, Slimed",
-      "company": "hasbro",
-      "line": "Ghostbusters",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:17195040-e1cb-4bac-a5f6-4ae0eebfe895"
-    },
-    {
-      "id": "mph-1f4ac1fdf331",
-      "name": "Dana Barrett",
-      "company": "hasbro",
-      "line": "Ghostbusters",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:1f4ac1fd-f331-4f4a-8f4b-0b1edcc74047"
-    },
-    {
-      "id": "mph-946aaafd7cb3",
-      "name": "Egon Spengler",
-      "company": "hasbro",
-      "line": "Ghostbusters",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:946aaafd-7cb3-44df-b6be-04296464d8d6"
-    },
-    {
-      "id": "mph-a1f1d1055b18",
-      "name": "Gozer",
-      "company": "hasbro",
-      "line": "Ghostbusters",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:a1f1d105-5b18-48dc-b9e2-938d29952faf"
-    },
-    {
-      "id": "mph-82b33532fab7",
-      "name": "Blackwatch Reyes, Reaper",
-      "company": "hasbro",
-      "line": "Overwatch",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:82b33532-fab7-4422-a4f5-962657f0f8e4"
-    },
-    {
-      "id": "mph-ea3368712f12",
-      "name": "Genji",
-      "company": "hasbro",
-      "line": "Overwatch",
-      "year": null,
-      "sku": null,
-      "hasImage": true,
-      "alias": "mephitsu:ea336871-2f12-4cbf-8402-5402aa0dc0c7"
-    }
-  ],
-  "addedIds": [
-    "mph-629db8b61f0d",
-    "mph-9d855c8b4f92",
-    "mph-4e1463d1c163",
-    "mph-ae07bb81c4ef",
-    "mph-aede575ab135",
-    "mph-440c33924bca",
-    "mph-dcf65fdcc705",
-    "mph-a89ad4030409",
-    "mph-5e23468214c9",
-    "mph-17195040e1cb",
-    "mph-1f4ac1fdf331",
-    "mph-946aaafd7cb3",
-    "mph-a1f1d1055b18",
-    "mph-82b33532fab7",
-    "mph-ea3368712f12",
-    "mph-1f1bdecccc55",
-    "mph-fd4bbdcee383",
-    "mph-b482efa44247",
-    "mph-2774d9e01d43",
-    "mph-3d7c38b37d23",
-    "mph-6f3c149c7439",
-    "mph-90d21659369b",
-    "mph-8221ddcdaf56",
-    "mph-2882b4e6b0af",
-    "mph-fb3d69dd6547",
-    "mph-1e4d82faa6a6"
-  ],
+  "counts": {},
+  "byLine": {},
+  "byCompany": {},
+  "aliasAdded": 0,
+  "addedSample": [],
+  "addedIds": [],
   "skippedSample": [
     {
       "id": "mph-84c3186acad7",
@@ -281,12 +95,94 @@
     {
       "id": "mph-bc82f1facad9",
       "reason": "id-exists"
+    },
+    {
+      "id": "mph-4ca085caadfd",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-218409d67868",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-3ac44a1e3c71",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-45e675a4dd05",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-fb52ea918833",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-d609f09440e6",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-6a6520a879b9",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-5a06eaf3c7f3",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-0743593b68a7",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-5746a4b19ead",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|techno viper"
+    },
+    {
+      "id": "mph-dc6a3b558750",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-0cb846928487",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-71d48b338fa8",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-44f1de4bda9c",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-9c254c0a57b2",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-f9509d799aeb",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|blowtorch"
+    },
+    {
+      "id": "mph-39d8745db25d",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-9d239ab2a54d",
+      "reason": "name-line-exists",
+      "nl": "hasbro|gi joe classified|breaker"
+    },
+    {
+      "id": "mph-19fe57e1c3e6",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-165193deac4a",
+      "reason": "id-exists"
     }
   ],
-  "archiveSize": 25241,
+  "archiveSize": 25364,
   "caches": {
     "hasbro": 960,
     "jazwares": 313
-  },
-  "note": "Reconstructed after second inject pass overwrote added=0; first pass +26 Hasbro (Ghostbusters 13, Overwatch 12, GI Joe Classified 1). DC-gap wave3 rows excluded from this mephitsu-only flush."
+  }
 }
