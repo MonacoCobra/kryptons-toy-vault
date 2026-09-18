@@ -42,7 +42,8 @@ NOTES_FILE="$(mktemp)"
     echo
   else
     echo "Signing key is the repo secret keystore. Ensure \`public/.well-known/assetlinks.json\`"
-    echo "on the host includes the fingerprint above."
+    echo "on the host includes the fingerprint above (and the Play App Signing SHA-256"
+    echo "if this package is also on Google Play — see docs/android-play.md)."
     echo
   fi
   echo "### Install"

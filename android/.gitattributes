@@ -1,0 +1,4 @@
+# Keep wrapper as binary; scripts as LF for Linux/macOS CI.
+gradle-wrapper.jar binary
+gradlew text eol=lf
+gradlew.bat text eol=crlf

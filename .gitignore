@@ -21,3 +21,11 @@ data/gcd/
 scripts/logs/
 src/data/figure-archive/mephitsu/auth-token.txt
 src/data/figure-archive/mephitsu/ocr-cache/
+
+# Android signing + local TWA build output — never commit keys
+*.jks
+*.keystore
+android/keystore.properties
+android/local.properties
+twa/
+

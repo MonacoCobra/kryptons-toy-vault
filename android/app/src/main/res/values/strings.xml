@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">Krypton\'s Toy Vault</string>
+    <string name="launcherName">Toy Vault</string>
+    <string name="launchUrl">https://kryptons-toy-vault.grok.me/</string>
+    <string name="hostName">kryptons-toy-vault.grok.me</string>
+    <string name="webManifestUrl">https://kryptons-toy-vault.grok.me/__grok/manifest.webmanifest</string>
+    <string name="fullScopeUrl">https://kryptons-toy-vault.grok.me/</string>
+    <string name="providerAuthority">me.kryptontoyvault.app.fileprovider</string>
+    <string name="fallbackType">customtabs</string>
+    <string name="orientation">default</string>
+    <string name="generatorApp">kryptons-toy-vault-android-scaffold</string>
+    <string name="assetStatements">[{ \"relation\": [\"delegate_permission/common.handle_all_urls\"], \"target\": { \"namespace\": \"web\", \"site\": \"https://kryptons-toy-vault.grok.me\" } }]</string>
+</resources>

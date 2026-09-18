@@ -1,4 +1,4 @@
-import { readdirSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { Plugin } from "vite";
 import { defineConfig } from "vite";
@@ -47,6 +47,73 @@ function pgliteBootstrapPlugin(): Plugin {
         console.error("[app-builder] DB bootstrap failed:", err);
         throw err;
       }
+    },
+  };
+}
+
+const ASSETLINKS_PATH = "/.well-known/assetlinks.json";
+const SHA256_FINGERPRINT_RE = /^[0-9A-F]{2}(?::[0-9A-F]{2}){31}$/;
+
+/**
+ * Serve Digital Asset Links as `application/json` in dev/preview so the SPA
+ * HTML fallback cannot swallow `/.well-known/assetlinks.json`. Production uses
+ * `server/middleware/assetlinks.ts` plus the copy in `public/`.
+ */
+function assetLinksPlugin(): Plugin {
+  const serve = (
+    req: { url?: string; method?: string },
+    res: {
+      statusCode: number;
+      setHeader: (k: string, v: string) => void;
+      end: (body?: string) => void;
+    },
+    next: () => void,
+  ) => {
+    const pathOnly = (req.url ?? "").split("?", 1)[0] ?? "";
+    const method = (req.method ?? "GET").toUpperCase();
+    if (pathOnly !== ASSETLINKS_PATH || (method !== "GET" && method !== "HEAD")) {
+      next();
+      return;
+    }
+    try {
+      const raw = JSON.parse(
+        readFileSync(join(process.cwd(), "public/.well-known/assetlinks.json"), "utf8"),
+      ) as unknown;
+      const statements = (Array.isArray(raw) ? raw : []).map((row: unknown) => {
+        const statement = row as {
+          relation?: string[];
+          target?: { namespace?: string; package_name?: string; sha256_cert_fingerprints?: string[] };
+        };
+        const fps = statement.target?.sha256_cert_fingerprints ?? [];
+        return {
+          relation: statement.relation ?? ["delegate_permission/common.handle_all_urls"],
+          target: {
+            namespace: statement.target?.namespace ?? "android_app",
+            package_name: statement.target?.package_name ?? "me.kryptontoyvault.app",
+            sha256_cert_fingerprints: fps.filter((fp) => SHA256_FINGERPRINT_RE.test(fp)),
+          },
+        };
+      });
+      const body = JSON.stringify(statements, null, 2) + "\n";
+      res.statusCode = 200;
+      res.setHeader("content-type", "application/json; charset=utf-8");
+      res.setHeader("cache-control", "public, max-age=0, must-revalidate");
+      res.end(method === "HEAD" ? undefined : body);
+    } catch (err) {
+      console.error("[assetlinks] failed to serve Digital Asset Links:", err);
+      res.statusCode = 500;
+      res.setHeader("content-type", "text/plain; charset=utf-8");
+      res.end("assetlinks.json unavailable");
+    }
+  };
+
+  return {
+    name: "digital-asset-links",
+    configureServer(server) {
+      server.middlewares.use(serve);
+    },
+    configurePreviewServer(server) {
+      server.middlewares.use(serve);
     },
   };
 }
@@ -159,6 +226,8 @@ export default defineConfig(({ command, isPreview }) => ({
   resolve: { tsconfigPaths: true },
   plugins: [
     pgliteBootstrapPlugin(),
+    // Before tanstackStart so /.well-known/assetlinks.json never becomes HTML.
+    assetLinksPlugin(),
     // Before tanstackStart so /auth/popup never falls through to the SPA.
     authPopupPlugin(),
     // Dev-only /__app-env, read by scripts/check-auth-invariant.mjs.
