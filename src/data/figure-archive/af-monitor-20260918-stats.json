@@ -1,0 +1,98 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-09-18",
+  "updatedAt": "2026-09-18T14:24:43Z",
+  "added": 51,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "SSR newest page returns mixed catalog (~100 cards with PageSize=100); page 2 identical to page 1 (JS pager). AF filter kept 38; boutique/unmapped not hit on newest page this run.",
+  "ee_detail_blocker": "listing cards only (no detail fetches; prior 429 risk)",
+  "counts": {
+    "candidates_seen": 114,
+    "ee_candidates": 76,
+    "bbts_candidates": 38,
+    "added": 51,
+    "skipped_dupes": 63,
+    "rejected_non_af": 158,
+    "unmapped_company": 0
+  },
+  "oneshotBefore": 25592,
+  "oneshotAfter": 25643,
+  "samples": [
+    {
+      "sku": "LS85343A",
+      "name": "Palworld Egg Incubator Reveal Mini-Figure Blind Box Case of 8",
+      "id": "afmon-loyalsubjects-palworld-egg-incubator-reveal-mini-figure-blind-box-case-of--ls85343a",
+      "source": "ee"
+    },
+    {
+      "sku": "LS86920A",
+      "name": "Angry Birds Halloween CheeBee 2 1/2-Inch Collectible Mini-Figure Case of 16",
+      "id": "afmon-loyalsubjects-angry-birds-halloween-cheebee-2-1-2-inch-collectible-mini-fi-ls86920a",
+      "source": "ee"
+    },
+    {
+      "sku": "LS85329A",
+      "name": "Palworld 1 1/2-Inch Cheebee Egg Reveal Mini-Figure Blind Box Case of 12",
+      "id": "afmon-loyalsubjects-palworld-1-1-2-inch-cheebee-egg-reveal-mini-figure-blind-box-ls85329a",
+      "source": "ee"
+    },
+    {
+      "sku": "FU97596AA",
+      "name": "Hello Kitty Hearts Bitty Pop! Mini-Figure Singles Case of 24",
+      "id": "afmon-funko-hello-kitty-hearts-bitty-pop-mini-figure-singles-case-of-24-fu97596aa",
+      "source": "ee"
+    },
+    {
+      "sku": "FU92958",
+      "name": "Sonic the Hedgehog Shadow Funko Bitty Pop! Mini-Figure 4-Pack",
+      "id": "afmon-funko-sonic-the-hedgehog-shadow-funko-bitty-pop-mini-figure-4-pack-fu92958",
+      "source": "ee"
+    },
+    {
+      "sku": "FU93675AAA",
+      "name": "Astro Bot Mystery Minis Mini-Figure - Random 4-Pack",
+      "id": "afmon-funko-astro-bot-mystery-minis-mini-figure-random-4-pack-fu93675aaa",
+      "source": "ee"
+    },
+    {
+      "sku": "MF18069",
+      "name": "DC Multiverse McFarlane Collector Edition Wave 16 Black Manta DC Classic #68 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-dc-multiverse-mcfarlane-collector-edition-wave-16-black-mant-mf18069",
+      "source": "ee"
+    },
+    {
+      "sku": "MF18067",
+      "name": "DC Multiverse McFarlane Collector Edition Wave 16 Wonder Girl DC Classic #66 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-dc-multiverse-mcfarlane-collector-edition-wave-16-wonder-gir-mf18067",
+      "source": "ee"
+    },
+    {
+      "sku": "MF18068",
+      "name": "DC Multiverse McFarlane Collector Edition Wave 16 Mera DC Classic #67 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-dc-multiverse-mcfarlane-collector-edition-wave-16-mera-dc-cl-mf18068",
+      "source": "ee"
+    },
+    {
+      "sku": "MF18096",
+      "name": "DC Multiverse McFarlane Collector Edition Wave 16 Raven DC Classic #69 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-dc-multiverse-mcfarlane-collector-edition-wave-16-raven-dc-c-mf18096",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2124",
+      "name": "Avengers: The Crossing Marvel Legends Series Vision & Scarlet Witch 6-Inch Action Figures",
+      "id": "afmon-hasbro-avengers-the-crossing-marvel-legends-series-vision-scarlet-w-hsg2124",
+      "source": "ee"
+    },
+    {
+      "sku": "FU85707",
+      "name": "The Simpsons Bart Simpson Funko Bitty Pop! Mini-Figure 4-Pack",
+      "id": "afmon-funko-the-simpsons-bart-simpson-funko-bitty-pop-mini-figure-4-pack-fu85707",
+      "source": "ee"
+    }
+  ],
+  "batchPath": "/workspace/af-monitor-20260918.json",
+  "statsPath": "/workspace/collection-app/src/data/figure-archive/af-monitor-20260918-stats.json"
+}
