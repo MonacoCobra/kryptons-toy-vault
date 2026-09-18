@@ -67,6 +67,12 @@ export function AppShell({ children }: { children: ReactNode }) {
           <p className="text-xs tracking-[0.18em] text-subtle uppercase">Krypton's Toy Vault</p>
           <div className="flex flex-wrap items-center gap-1">
             <Link
+              to="/privacy"
+              className="inline-flex h-11 items-center px-2 text-sm text-muted transition-colors duration-150 hover:text-fg"
+            >
+              Privacy
+            </Link>
+            <Link
               to="/credits"
               className="inline-flex h-11 items-center px-2 text-sm text-muted transition-colors duration-150 hover:text-fg"
             >
