@@ -63,18 +63,18 @@ export function AppShell({ children }: { children: ReactNode }) {
       <PulseNotice />
       <div className="relative mx-auto w-full max-w-6xl px-4 pt-6 pb-32 md:pb-10">
         {children}
-        <footer className="mt-16 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-5">
+        <footer className="mt-16 flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t border-border pt-5">
           <p className="text-xs tracking-[0.18em] text-subtle uppercase">Krypton's Toy Vault</p>
-          <div className="flex flex-wrap items-center gap-1">
+          <nav aria-label="Credits, privacy, and YouTube" className="flex flex-nowrap items-center gap-1">
             <Link
               to="/privacy"
-              className="inline-flex h-11 items-center px-2 text-sm text-muted transition-colors duration-150 hover:text-fg"
+              className="inline-flex h-11 shrink-0 items-center whitespace-nowrap px-2 text-sm text-muted transition-colors duration-150 hover:text-fg"
             >
-              Privacy
+              Privacy Policy
             </Link>
             <Link
               to="/credits"
-              className="inline-flex h-11 items-center px-2 text-sm text-muted transition-colors duration-150 hover:text-fg"
+              className="inline-flex h-11 shrink-0 items-center whitespace-nowrap px-2 text-sm text-muted transition-colors duration-150 hover:text-fg"
             >
               Credits
             </Link>
@@ -83,12 +83,12 @@ export function AppShell({ children }: { children: ReactNode }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Krypton's Toy Vault on YouTube"
-              className="inline-flex h-11 items-center gap-2 px-2 text-sm text-muted transition-colors duration-150 hover:text-fg"
+              className="inline-flex h-11 shrink-0 items-center gap-2 whitespace-nowrap px-2 text-sm text-muted transition-colors duration-150 hover:text-fg"
             >
               <Youtube className="size-4" />
               @kryptonstoyvault
             </a>
-          </div>
+          </nav>
         </footer>
       </div>
 

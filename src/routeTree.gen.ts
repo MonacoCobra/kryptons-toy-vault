@@ -12,9 +12,9 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CollectionRouteImport } from './routes/collection'
 import { Route as CreditsRouteImport } from './routes/credits'
-import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as DisplaysRouteImport } from './routes/displays'
 import { Route as ImportRouteImport } from './routes/import'
+import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PulseRouteImport } from './routes/pulse'
 import { Route as ScanRouteImport } from './routes/scan'
 import { Route as WishlistRouteImport } from './routes/wishlist'
@@ -38,11 +38,6 @@ const CreditsRoute = CreditsRouteImport.update({
   path: '/credits',
   getParentRoute: () => rootRouteImport,
 } as any)
-const PrivacyRoute = PrivacyRouteImport.update({
-  id: '/privacy',
-  path: '/privacy',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const DisplaysRoute = DisplaysRouteImport.update({
   id: '/displays',
   path: '/displays',
@@ -51,6 +46,11 @@ const DisplaysRoute = DisplaysRouteImport.update({
 const ImportRoute = ImportRouteImport.update({
   id: '/import',
   path: '/import',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PulseRoute = PulseRouteImport.update({
@@ -93,9 +93,9 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/collection': typeof CollectionRoute
   '/credits': typeof CreditsRoute
-  '/privacy': typeof PrivacyRoute
   '/displays': typeof DisplaysRoute
   '/import': typeof ImportRoute
+  '/privacy': typeof PrivacyRoute
   '/pulse': typeof PulseRoute
   '/scan': typeof ScanRoute
   '/wishlist': typeof WishlistRoute
@@ -108,9 +108,9 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/collection': typeof CollectionRoute
   '/credits': typeof CreditsRoute
-  '/privacy': typeof PrivacyRoute
   '/displays': typeof DisplaysRoute
   '/import': typeof ImportRoute
+  '/privacy': typeof PrivacyRoute
   '/pulse': typeof PulseRoute
   '/scan': typeof ScanRoute
   '/wishlist': typeof WishlistRoute
@@ -124,9 +124,9 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/collection': typeof CollectionRoute
   '/credits': typeof CreditsRoute
-  '/privacy': typeof PrivacyRoute
   '/displays': typeof DisplaysRoute
   '/import': typeof ImportRoute
+  '/privacy': typeof PrivacyRoute
   '/pulse': typeof PulseRoute
   '/scan': typeof ScanRoute
   '/wishlist': typeof WishlistRoute
@@ -141,9 +141,9 @@ export interface FileRouteTypes {
     | '/'
     | '/collection'
     | '/credits'
-    | '/privacy'
     | '/displays'
     | '/import'
+    | '/privacy'
     | '/pulse'
     | '/scan'
     | '/wishlist'
@@ -156,9 +156,9 @@ export interface FileRouteTypes {
     | '/'
     | '/collection'
     | '/credits'
-    | '/privacy'
     | '/displays'
     | '/import'
+    | '/privacy'
     | '/pulse'
     | '/scan'
     | '/wishlist'
@@ -171,9 +171,9 @@ export interface FileRouteTypes {
     | '/'
     | '/collection'
     | '/credits'
-    | '/privacy'
     | '/displays'
     | '/import'
+    | '/privacy'
     | '/pulse'
     | '/scan'
     | '/wishlist'
@@ -187,9 +187,9 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CollectionRoute: typeof CollectionRoute
   CreditsRoute: typeof CreditsRoute
-  PrivacyRoute: typeof PrivacyRoute
   DisplaysRoute: typeof DisplaysRoute
   ImportRoute: typeof ImportRoute
+  PrivacyRoute: typeof PrivacyRoute
   PulseRoute: typeof PulseRoute
   ScanRoute: typeof ScanRoute
   WishlistRoute: typeof WishlistRoute
@@ -222,13 +222,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CreditsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/privacy': {
-      id: '/privacy'
-      path: '/privacy'
-      fullPath: '/privacy'
-      preLoaderRoute: typeof PrivacyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/displays': {
       id: '/displays'
       path: '/displays'
@@ -241,6 +234,13 @@ declare module '@tanstack/react-router' {
       path: '/import'
       fullPath: '/import'
       preLoaderRoute: typeof ImportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/pulse': {
@@ -299,9 +299,9 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CollectionRoute: CollectionRoute,
   CreditsRoute: CreditsRoute,
-  PrivacyRoute: PrivacyRoute,
   DisplaysRoute: DisplaysRoute,
   ImportRoute: ImportRoute,
+  PrivacyRoute: PrivacyRoute,
   PulseRoute: PulseRoute,
   ScanRoute: ScanRoute,
   WishlistRoute: WishlistRoute,
