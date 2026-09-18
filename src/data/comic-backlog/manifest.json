@@ -4,8 +4,8 @@
     400,
     500
   ],
-  "lastInjectedAt": "2026-09-17",
-  "lastInjectedBatch": "batch-026-gcd-gapfill",
+  "lastInjectedAt": "2026-09-18",
+  "lastInjectedBatch": "batch-027-gcd-gapfill",
   "queued": [],
   "injected": [
     "batch-001",
@@ -32,9 +32,10 @@
     "batch-022-gcd-dark-horse",
     "batch-023-gcd-idw",
     "batch-025-gcd-gapfill",
-    "batch-026-gcd-gapfill"
+    "batch-026-gcd-gapfill",
+    "batch-027-gcd-gapfill"
   ],
   "floor": "1980-01-01",
-  "notes": "batch-006 DC; batch-007 Marvel; batch-008 Image; batch-009 indie; batch-010 Archie/Titan/Rebellion; batch-011 Vertigo/Black Label/WildStorm/Milestone/CrossGen/Eclipse/First/Avatar + SW/TF/Joe/Hellboy; batch-012 flagship thin densify (GA/HQ/SS/BoP, Marvel DS/BP/Silver Surfer/Excalibur/Punisher/New Warriors/X-Force late, Skybound Void Rivals+continuations, Image Geiger/Oblivion/Fire Power, Pacific\u22651980, Eclipse leftovers); floor 1980-01-01; batch-013 Absolute/Black Label/Ultimate2020s/Hellboy/Invincible/TWD Deluxe/Sandman Universe (+835); batch-014 DC JSA/Booster/Shazam/Catwoman2002/Titans/SwampThing densify; batch-015 Marvel She-Hulk/Black Widow/Spider-Woman + Guardians/Miles/Moon Knight densify + Spider-Gwen; batch-016 Marvel street-level (Elektra/Iron Fist/Luke Cage/WS/Thunderbolts/Exiles/YA) + Image Black Hammer/Die/Isola/Bitter Root/Farmhand/Rat Queens/Wytches + Angel; batch-022 Dark Horse GCD densify; batch-023 IDW GCD densify (TMNT/TF/GIJoe/Sonic/Trek); batch-025 GCD Marvel sparse + DH/Valiant/IDW/Archie/Fantagraphics densify (+1184)",
+  "notes": "batch-006 DC; batch-007 Marvel; batch-008 Image; batch-009 indie; batch-010 Archie/Titan/Rebellion; batch-011 Vertigo/Black Label/WildStorm/Milestone/CrossGen/Eclipse/First/Avatar + SW/TF/Joe/Hellboy; batch-012 flagship thin densify (GA/HQ/SS/BoP, Marvel DS/BP/Silver Surfer/Excalibur/Punisher/New Warriors/X-Force late, Skybound Void Rivals+continuations, Image Geiger/Oblivion/Fire Power, Pacific\u22651980, Eclipse leftovers); floor 1980-01-01; batch-013 Absolute/Black Label/Ultimate2020s/Hellboy/Invincible/TWD Deluxe/Sandman Universe (+835); batch-014 DC JSA/Booster/Shazam/Catwoman2002/Titans/SwampThing densify; batch-015 Marvel She-Hulk/Black Widow/Spider-Woman + Guardians/Miles/Moon Knight densify + Spider-Gwen; batch-016 Marvel street-level (Elektra/Iron Fist/Luke Cage/WS/Thunderbolts/Exiles/YA) + Image Black Hammer/Die/Isola/Bitter Root/Farmhand/Rat Queens/Wytches + Angel; batch-022 Dark Horse GCD densify; batch-023 IDW GCD densify (TMNT/TF/GIJoe/Sonic/Trek); batch-025 GCD Marvel sparse + DH/Valiant/IDW/Archie/Fantagraphics densify (+1184); batch-027 GCD Oni/Fantagraphics/Antarctic + Image sparse densify (+826)",
   "pruneNote": "2026-09-13: pruned unverified catalog rows (37995 \u2192 4257); batch JSON history retained as audit trail. Glyph should stop hunting pruned ids."
 }
