@@ -24,6 +24,8 @@ Edit `public/.well-known/assetlinks.json` → `target.sha256_cert_fingerprints`.
 
 Then merge to `main` and republish the Grok Build Live site so the crawler sees the new JSON.
 
+Keep `src/lib/android/assetlinks.json` identical to the public file (the production handler bundles the `src` copy). `node --test scripts/android/assetlinks.test.mjs` fails if they drift.
+
 Check: [Digital Asset Links statement list](https://digitalassetlinks.googleapis.com/v1/statements:list?source.web.site=https://kryptons-toy-vault.grok.me)
 
 ## Local AAB (upload to Play)

@@ -135,6 +135,9 @@ else:
             fps.append(fp)
         target["sha256_cert_fingerprints"] = fps
 path.write_text(json.dumps(data, indent=2) + "\n")
+src_copy = Path("src/lib/android/assetlinks.json")
+if src_copy.exists():
+    src_copy.write_text(json.dumps(data, indent=2) + "\n")
 print(f"Updated {path} with fingerprint")
 PY
 else

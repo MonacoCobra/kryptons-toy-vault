@@ -1,4 +1,4 @@
-import rawStatements from "../../public/.well-known/assetlinks.json";
+import rawStatements from "./assetlinks.json";
 
 /** Colon-separated uppercase SHA-256, Digital Asset Links statement format. */
 export const SHA256_FINGERPRINT_RE =

@@ -51,6 +51,7 @@ echo
 echo "Next:"
 echo "  1. Put passwords in android/keystore.properties"
 echo "  2. Append the SHA-256 above to public/.well-known/assetlinks.json"
+echo "     and copy the same JSON to src/lib/android/assetlinks.json"
 echo "  3. bash scripts/android/build-aab.sh"
 echo "  4. After the first Play upload, also paste the Play App Signing SHA-256"
 echo "     (Play Console → App integrity → App signing) into assetlinks.json"

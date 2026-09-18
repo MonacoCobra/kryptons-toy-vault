@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "../..");
 const PUBLIC_PATH = join(ROOT, "public/.well-known/assetlinks.json");
+const SRC_PATH = join(ROOT, "src/lib/android/assetlinks.json");
 const SHA256_RE = /^[0-9A-F]{2}(?::[0-9A-F]{2}){31}$/;
 const PACKAGE = "me.kryptontoyvault.app";
 
@@ -28,5 +29,11 @@ describe("Digital Asset Links", () => {
       fps.length,
       "every fingerprint must be colon-separated uppercase SHA-256 (no REPLACE_WITH placeholders on Live)",
     );
+  });
+
+  it("src copy matches public/.well-known/assetlinks.json", () => {
+    const pub = JSON.parse(readFileSync(PUBLIC_PATH, "utf8"));
+    const src = JSON.parse(readFileSync(SRC_PATH, "utf8"));
+    assert.deepEqual(src, pub);
   });
 });

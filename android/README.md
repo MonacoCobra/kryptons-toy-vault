@@ -35,7 +35,7 @@ Package (already set): `me.kryptontoyvault.app`
 | Upload key SHA-256 | Local / sideload builds signed with the new keystore | `print-sha256.sh` (`keytool` `SHA256:` line, colon-separated uppercase) |
 | **Play App Signing SHA-256** | **Play-installed TWA URL-bar verification** | Play Console → Test and release → App integrity → App signing → **App signing key certificate** |
 
-Play re-signs the app users install. Chrome checks the **Play App Signing** cert, not only the upload key. After the first AAB upload, append that SHA-256, merge, and **republish Live** so `https://kryptons-toy-vault.grok.me/.well-known/assetlinks.json` updates (`Content-Type: application/json`).
+Play re-signs the app users install. Chrome checks the **Play App Signing** cert, not only the upload key. After the first AAB upload, append that SHA-256 to **both** `public/.well-known/assetlinks.json` and `src/lib/android/assetlinks.json` (keep them identical), merge, and **republish Live** so `https://kryptons-toy-vault.grok.me/.well-known/assetlinks.json` updates (`Content-Type: application/json`).
 
 ## Build the signed AAB
 
