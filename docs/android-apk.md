@@ -1,5 +1,7 @@
 # Android APK from GitHub (no Grok Build host)
 
+Sideload APKs for testing. **Google Play AAB** (upload keystore, Digital Asset Links fingerprints, Play Console) is documented in [android-play.md](android-play.md) and [android/README.md](../android/README.md).
+
 Install path:
 
 1. **GitHub Releases** -> download `app-release-signed.apk`

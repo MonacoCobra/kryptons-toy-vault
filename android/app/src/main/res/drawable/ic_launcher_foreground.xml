@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Diamond shield (safe zone ~66dp). -->
+    <path
+        android:fillColor="#1A4CC8"
+        android:pathData="M54,16 L94,42 L54,96 L14,42 Z" />
+    <path
+        android:fillColor="#1239A8"
+        android:pathData="M54,24 L86,44 L54,88 L22,44 Z" />
+    <!-- Block K -->
+    <path
+        android:fillColor="#E30613"
+        android:pathData="M38,38h10v12.5L64,38h12L56,54l22,20H66L48,56.5V70H38Z" />
+    <path
+        android:fillColor="#F5D000"
+        android:pathData="M40,40h6v11L62,40h6L54,53.5 70,68h-6L46,54.5V68h-6Z" />
+</vector>

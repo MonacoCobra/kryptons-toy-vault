@@ -1,0 +1,16 @@
+# Android TWA local build + signing (never commit keys)
+.gradle/
+build/
+app/build/
+local.properties
+keystore.properties
+*.jks
+*.keystore
+*.aab
+*.apk
+*.ap_
+*.ipa
+captures/
+.idea/
+*.iml
+.cxx/
