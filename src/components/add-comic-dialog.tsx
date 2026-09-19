@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { comicLabel } from "@/data/comics";
 import { Button } from "@/components/ui/button";
@@ -50,6 +50,17 @@ export function AddComicDialog({
   const [grade, setGrade] = useState<ComicGrade>(existing?.grade ?? "raw");
   const [notes, setNotes] = useState(existing?.notes ?? "");
   const [photo, setPhoto] = useState(existing?.photoDataUrl ?? initialPhoto);
+
+  useEffect(() => {
+    if (!open) return;
+    setAcquiredDate(existing?.acquiredDate ?? new Date().toISOString().slice(0, 10));
+    setAcquiredPrice(
+      existing?.acquiredPrice?.toString() ?? (comic?.msrp ?? custom?.msrp ?? 4.99).toString(),
+    );
+    setGrade(existing?.grade ?? "raw");
+    setNotes(existing?.notes ?? "");
+    setPhoto(existing?.photoDataUrl ?? initialPhoto);
+  }, [open, comic?.id, custom?.id, existing?.id, existing?.acquiredDate, existing?.acquiredPrice, existing?.grade, existing?.notes, existing?.photoDataUrl, comic?.msrp, custom?.msrp, initialPhoto]);
 
   async function onFile(file?: File) {
     if (!file) return;
@@ -107,7 +118,7 @@ export function AddComicDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent>
+      <DialogContent onOpenAutoFocus={(e) => e.preventDefault()}>
         <DialogHeader>
           <DialogTitle>{existing ? "Update issue" : "Add to collection"}</DialogTitle>
           <DialogDescription>{label}</DialogDescription>

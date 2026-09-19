@@ -1,15 +1,18 @@
-import { useRef, useState, type ChangeEvent } from "react";
+import { useEffect, useMemo, useRef, useState, type ChangeEvent } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { Camera, ImagePlus, Loader2, Plus } from "lucide-react";
+import { Camera, ImagePlus, Loader2, Plus, Search } from "lucide-react";
 import { toast } from "sonner";
-import { comicLabel, searchComics } from "@/data/comics";
+import { searchComics } from "@/data/comics";
 import { AddComicDialog } from "@/components/add-comic-dialog";
-import { ComicCover } from "@/components/comic-cover";
+import { ScanMatchList } from "@/components/scan-match-list";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { libraryCatalogRows } from "@/lib/comic-catalog";
 import { identifyCover } from "@/lib/identify-cover";
 import { compressImage } from "@/lib/image";
-import { useLiveComics } from "@/lib/live-store";
+import { useEnsureComicLibrary, useLiveComics } from "@/lib/live-store";
 import { matchComicsFromGuess, type CoverGuess } from "@/lib/match";
+import { useVault } from "@/lib/store";
 import type { CatalogComic, CustomComic } from "@/lib/types";
 import { slug } from "@/lib/utils";
 
@@ -20,6 +23,17 @@ function ScanPage() {
   const cameraRef = useRef<HTMLInputElement>(null);
   const galleryRef = useRef<HTMLInputElement>(null);
   const extras = useLiveComics();
+  const library = useEnsureComicLibrary(extras);
+  const libraryRows = useMemo(() => libraryCatalogRows(library), [library]);
+  const ownedComics = useVault((s) => s.ownedComics);
+  const ownedIds = useMemo(() => {
+    const ids = new Set<string>();
+    for (const entry of Object.values(ownedComics)) {
+      if (entry.catalogId) ids.add(entry.catalogId);
+    }
+    return ids;
+  }, [ownedComics]);
+
   const [busy, setBusy] = useState(false);
   const [preview, setPreview] = useState<string | null>(null);
   const [guess, setGuess] = useState<CoverGuess | null>(null);
@@ -28,12 +42,16 @@ function ScanPage() {
   const [error, setError] = useState<string | null>(null);
   const [adding, setAdding] = useState<CatalogComic | null>(null);
   const [custom, setCustom] = useState<CustomComic | null>(null);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [listMode, setListMode] = useState<"scan" | "search">("search");
 
   async function onFile(file: File) {
     setBusy(true);
     setError(null);
     setGuess(null);
     setMatches([]);
+    setSelectedId(null);
+    setListMode("search");
     try {
       const dataUrl = await compressImage(file, 960, 0.78);
       setPreview(dataUrl);
@@ -56,7 +74,10 @@ function ScanPage() {
         artists: result.artists,
       };
       setGuess(g);
-      setMatches(matchComicsFromGuess(g, 5, extras));
+      const ranked = matchComicsFromGuess(g, 5, extras, libraryRows);
+      setMatches(ranked);
+      setSelectedId(ranked[0]?.id ?? null);
+      setListMode("scan");
       setQuery(`${result.series} ${result.issue}`);
     } catch {
       setError("Could not read that image.");
@@ -72,11 +93,32 @@ function ScanPage() {
     if (file) void onFile(file);
   }
 
-  const searched = query.trim() ? searchComics(query, extras).slice(0, 8) : [];
-  /** Prefer AI matches; fall back to catalog search from the guess query. */
-  const shown = matches.length ? matches : searched;
+  const searched = query.trim() ? searchComics(query, extras, libraryRows).slice(0, 8) : [];
+  /** Prefer AI cover matches; fall back to catalog search from the query. */
+  const shown = listMode === "scan" && matches.length ? matches : searched;
+  const shownKey = shown.map((c) => c.id).join("|");
   const ambiguous = matches.length > 1;
+  const selected = shown.find((c) => c.id === selectedId) ?? shown[0] ?? null;
   const topMatch = matches[0] ?? (shown.length === 1 ? shown[0] : null);
+
+  useEffect(() => {
+    if (!guess || listMode !== "scan") return;
+    const ranked = matchComicsFromGuess(guess, 5, extras, libraryRows);
+    setMatches((prev) => {
+      const same =
+        prev.length === ranked.length && prev.every((comic, i) => comic.id === ranked[i]?.id);
+      return same ? prev : ranked;
+    });
+  }, [guess, extras, libraryRows, listMode]);
+
+  useEffect(() => {
+    const ids = shownKey ? shownKey.split("|") : [];
+    if (!ids.length) {
+      setSelectedId((prev) => (prev ? null : prev));
+      return;
+    }
+    setSelectedId((prev) => (prev && ids.includes(prev) ? prev : ids[0]));
+  }, [shownKey]);
 
   function asCustom(): CustomComic | null {
     if (!guess?.series) return null;
@@ -91,6 +133,12 @@ function ScanPage() {
       format: "single",
       variant: guess.variant,
     };
+  }
+
+  function requestAdd(comic: CatalogComic) {
+    setSelectedId(comic.id);
+    // Defer so the opening tap cannot count as an outside-dismiss on TWA/mobile.
+    window.setTimeout(() => setAdding(comic), 0);
   }
 
   function goAfterSave(info: { catalogId?: string; customId?: string }) {
@@ -168,6 +216,20 @@ function ScanPage() {
         onChange={handlePick}
       />
 
+      <div className="relative">
+        <Search className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted" />
+        <Input
+          value={query}
+          placeholder="Or search the catalog — Saga 13, Batman 608…"
+          className="pl-10"
+          onChange={(e) => {
+            setQuery(e.target.value);
+            setListMode("search");
+          }}
+          aria-label="Search catalog"
+        />
+      </div>
+
       {error ? <p className="text-sm text-loss">{error}</p> : null}
 
       {guess ? (
@@ -180,11 +242,14 @@ function ScanPage() {
             {guess.publisher}
             {guess.variant ? ` · ${guess.variant}` : ""}
           </p>
-          {topMatch && matches.length === 1 ? (
+          {selected || topMatch ? (
             <Button
               type="button"
               className="mt-4 min-h-11 w-full"
-              onClick={() => setAdding(topMatch)}
+              onClick={() => {
+                const comic = selected ?? topMatch;
+                if (comic) requestAdd(comic);
+              }}
             >
               <Plus className="size-4" />
               Add to collection
@@ -192,49 +257,21 @@ function ScanPage() {
           ) : null}
           {ambiguous ? (
             <p className="mt-3 text-sm text-muted">
-              Several catalog matches — pick the right issue below, then add it.
+              Several catalog matches — tap a card or Add to collection to put that issue in
+              your vault.
             </p>
           ) : null}
         </div>
       ) : null}
 
-      {shown.length ? (
-        <section className="grid gap-2">
-          <div className="flex items-baseline justify-between gap-2">
-            <h2 className="text-xs tracking-[0.18em] text-gold uppercase">
-              {matches.length ? "Catalog matches" : "Search results"}
-            </h2>
-            <span className="text-xs text-muted">{shown.length} found</span>
-          </div>
-          <ul className="grid gap-2">
-            {shown.map((comic, i) => (
-              <li key={comic.id}>
-                <div className="flex items-center gap-3 rounded-lg bg-bg-elevated p-2 shadow-[var(--shadow-border)]">
-                  <ComicCover comic={comic} className="h-20 w-14 shrink-0 rounded-sm" />
-                  <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-medium">{comicLabel(comic)}</p>
-                    <p className="truncate text-xs text-muted">
-                      {comic.publisher}
-                      {i === 0 && matches.length ? " · best match" : ""}
-                    </p>
-                  </div>
-                  <Button
-                    type="button"
-                    size="sm"
-                    variant={i === 0 && matches.length ? "default" : "secondary"}
-                    className="min-h-11 shrink-0 px-3"
-                    onClick={() => setAdding(comic)}
-                  >
-                    <Plus className="size-4" />
-                    <span className="hidden sm:inline">Add to collection</span>
-                    <span className="sm:hidden">Add</span>
-                  </Button>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
+      <ScanMatchList
+        comics={shown}
+        selectedId={selected?.id ?? null}
+        ownedIds={ownedIds}
+        source={listMode === "scan" && matches.length ? "matches" : "search"}
+        onSelect={(comic) => setSelectedId(comic.id)}
+        onAdd={requestAdd}
+      />
 
       {guess && !shown.length ? (
         <div className="flex flex-wrap gap-2">
@@ -273,26 +310,26 @@ function ScanPage() {
         </div>
       ) : null}
 
-      {adding ? (
-        <AddComicDialog
-          comic={adding}
-          photo={preview ?? undefined}
-          open
-          confirmLabel="Add to collection"
-          onOpenChange={(v) => !v && setAdding(null)}
-          onSaved={goAfterSave}
-        />
-      ) : null}
-      {custom ? (
-        <AddComicDialog
-          custom={custom}
-          photo={preview ?? undefined}
-          open
-          confirmLabel="Add to collection"
-          onOpenChange={(v) => !v && setCustom(null)}
-          onSaved={goAfterSave}
-        />
-      ) : null}
+      <AddComicDialog
+        comic={adding ?? undefined}
+        photo={preview ?? undefined}
+        open={adding !== null}
+        confirmLabel="Add to collection"
+        onOpenChange={(v) => {
+          if (!v) setAdding(null);
+        }}
+        onSaved={goAfterSave}
+      />
+      <AddComicDialog
+        custom={custom ?? undefined}
+        photo={preview ?? undefined}
+        open={custom !== null}
+        confirmLabel="Add to collection"
+        onOpenChange={(v) => {
+          if (!v) setCustom(null);
+        }}
+        onSaved={goAfterSave}
+      />
     </main>
   );
 }
