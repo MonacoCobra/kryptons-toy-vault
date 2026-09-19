@@ -109,8 +109,8 @@ export function AddComicDialog({
       customId = custom.id;
     }
     toast.success(existing ? "Issue updated." : "Issue added to the vault.");
-    onOpenChange(false);
     if (ownedId) onSaved?.({ ownedId, catalogId, customId });
+    onOpenChange(false);
   }
 
   const primary =
@@ -118,7 +118,12 @@ export function AddComicDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent onOpenAutoFocus={(e) => e.preventDefault()}>
+      <DialogContent
+        data-testid="add-comic-dialog"
+        onOpenAutoFocus={(e) => e.preventDefault()}
+        onPointerDownOutside={(e) => e.preventDefault()}
+        onInteractOutside={(e) => e.preventDefault()}
+      >
         <DialogHeader>
           <DialogTitle>{existing ? "Update issue" : "Add to collection"}</DialogTitle>
           <DialogDescription>{label}</DialogDescription>
@@ -163,7 +168,11 @@ export function AddComicDialog({
             <Label htmlFor="c-notes">Notes</Label>
             <Textarea id="c-notes" value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Print, defects, CGC cert…" />
           </div>
-          <Button onClick={save} className="min-h-11 w-full">
+          <Button
+            data-testid="add-comic-confirm"
+            onClick={save}
+            className="sticky bottom-0 min-h-11 w-full"
+          >
             {primary}
           </Button>
         </div>

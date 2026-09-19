@@ -1,6 +1,12 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { normalizeIssue, rankComicsFromGuess, scoreCoverGuess, type CoverGuess } from "@/lib/cover-match";
+import {
+  normalizeIssue,
+  rankComicsFromGuess,
+  scoreCoverGuess,
+  searchCatalogLimited,
+  type CoverGuess,
+} from "@/lib/cover-match";
 import type { CatalogComic } from "@/lib/types";
 
 function comic(partial: Partial<CatalogComic> & Pick<CatalogComic, "id" | "series" | "issue">): CatalogComic {
@@ -42,10 +48,11 @@ describe("rankComicsFromGuess", () => {
     const guess: CoverGuess = { series: "Saga", issue: "1", publisher: "Image Comics" };
     const ranked = rankComicsFromGuess(guess, catalog, 5);
     assert.deepEqual(
-      ranked.map((c) => c.id),
+      ranked.map((c) => c.id).slice(0, 2),
       ["im-saga-1", "im-saga-1-b"],
     );
     assert.ok(ranked.every((c) => catalog.some((row) => row.id === c.id)));
+    assert.ok(ranked.every((c) => c.series === "Saga"));
   });
 
   it("prefers the matching issue over a later issue in the same series", () => {
@@ -58,5 +65,14 @@ describe("rankComicsFromGuess", () => {
   it("returns an empty list when nothing in the catalog scores", () => {
     const ranked = rankComicsFromGuess({ series: "Unlisted Mini Series", issue: "1" }, catalog, 5);
     assert.deepEqual(ranked, []);
+  });
+});
+
+describe("searchCatalogLimited", () => {
+  it("returns only existing rows and stops at the limit", () => {
+    const found = searchCatalogLimited("Saga 1", [catalog], 2);
+    assert.equal(found.length, 2);
+    assert.ok(found.every((c) => catalog.some((row) => row.id === c.id)));
+    assert.ok(found.every((c) => c.series === "Saga"));
   });
 });

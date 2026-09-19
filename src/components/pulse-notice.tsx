@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -19,6 +19,8 @@ import {
 } from "@/lib/weekly-pulse";
 
 export function PulseNotice() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const onScan = pathname.startsWith("/scan");
   const hydrated = useHydrated();
   const ownedFigures = useVault((s) => s.ownedFigures);
   const ownedComics = useVault((s) => s.ownedComics);
@@ -60,13 +62,17 @@ export function PulseNotice() {
   ]);
 
   useEffect(() => {
-    if (!hydrated) return;
+    if (onScan) setOpen(false);
+  }, [onScan]);
+
+  useEffect(() => {
+    if (!hydrated || onScan) return;
     if (lastPulseNoticeWeek === week) return;
     // Show once per ISO week after baseline exists for the week.
     if (!pulseBaselines[week]) return;
     const t = window.setTimeout(() => setOpen(true), 600);
     return () => window.clearTimeout(t);
-  }, [hydrated, lastPulseNoticeWeek, week, pulseBaselines]);
+  }, [hydrated, onScan, lastPulseNoticeWeek, week, pulseBaselines]);
 
   function dismiss() {
     markPulseNoticeSeen(week);

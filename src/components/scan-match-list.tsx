@@ -26,7 +26,7 @@ export function ScanMatchList({
   const selected = comics.find((c) => c.id === selectedId) ?? comics[0];
 
   return (
-    <section className="grid gap-3" data-testid="scan-match-list">
+    <section className="grid gap-3 pb-4" data-testid="scan-match-list">
       <div className="flex items-baseline justify-between gap-2">
         <h2 className="text-xs tracking-[0.18em] text-gold uppercase">
           {source === "matches" ? "Catalog matches" : "Search results"}
@@ -89,20 +89,6 @@ export function ScanMatchList({
           );
         })}
       </ul>
-      {selected ? (
-        <div className="sticky bottom-20 z-30 md:bottom-4">
-          <Button
-            type="button"
-            data-testid="scan-match-confirm"
-            className="min-h-12 w-full shadow-[var(--shadow-elevated)]"
-            onClick={() => onAdd(selected)}
-          >
-            <Plus className="size-4" />
-            {ownedIds.has(selected.id) ? "Edit copy" : "Add to collection"}
-            <span className="truncate"> — {comicLabel(selected)}</span>
-          </Button>
-        </div>
-      ) : null}
     </section>
   );
 }

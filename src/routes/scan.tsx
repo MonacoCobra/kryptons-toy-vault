@@ -2,12 +2,14 @@ import { useEffect, useMemo, useRef, useState, type ChangeEvent } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { Camera, ImagePlus, Loader2, Plus, Search } from "lucide-react";
 import { toast } from "sonner";
-import { searchComics } from "@/data/comics";
+import { COMICS } from "@/data/comics";
 import { AddComicDialog } from "@/components/add-comic-dialog";
 import { ScanMatchList } from "@/components/scan-match-list";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useDebouncedValue } from "@/hooks/use-debounced-value";
 import { libraryCatalogRows } from "@/lib/comic-catalog";
+import { searchCatalogLimited } from "@/lib/cover-match";
 import { identifyCover } from "@/lib/identify-cover";
 import { compressImage } from "@/lib/image";
 import { useEnsureComicLibrary, useLiveComics } from "@/lib/live-store";
@@ -16,10 +18,18 @@ import { useVault } from "@/lib/store";
 import type { CatalogComic, CustomComic } from "@/lib/types";
 import { slug } from "@/lib/utils";
 
-export const Route = createFileRoute("/scan")({ component: ScanPage });
+type ScanSearch = { q?: string };
+
+export const Route = createFileRoute("/scan")({
+  validateSearch: (s: Record<string, unknown>): ScanSearch => ({
+    q: typeof s.q === "string" && s.q.trim() ? s.q : undefined,
+  }),
+  component: ScanPage,
+});
 
 function ScanPage() {
   const navigate = useNavigate();
+  const urlSearch = Route.useSearch();
   const cameraRef = useRef<HTMLInputElement>(null);
   const galleryRef = useRef<HTMLInputElement>(null);
   const extras = useLiveComics();
@@ -38,12 +48,17 @@ function ScanPage() {
   const [preview, setPreview] = useState<string | null>(null);
   const [guess, setGuess] = useState<CoverGuess | null>(null);
   const [matches, setMatches] = useState<CatalogComic[]>([]);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(urlSearch.q ?? "");
   const [error, setError] = useState<string | null>(null);
   const [adding, setAdding] = useState<CatalogComic | null>(null);
   const [custom, setCustom] = useState<CustomComic | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [listMode, setListMode] = useState<"scan" | "search">("search");
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+    document.body.dataset.scanReady = "1";
+  }, []);
 
   async function onFile(file: File) {
     setBusy(true);
@@ -93,7 +108,11 @@ function ScanPage() {
     if (file) void onFile(file);
   }
 
-  const searched = query.trim() ? searchComics(query, extras, libraryRows).slice(0, 8) : [];
+  const qDebounced = useDebouncedValue(query, 200);
+  const searched = useMemo(
+    () => searchCatalogLimited(qDebounced, [COMICS, extras, libraryRows], 8),
+    [qDebounced, extras, libraryRows],
+  );
   /** Prefer AI cover matches; fall back to catalog search from the query. */
   const shown = listMode === "scan" && matches.length ? matches : searched;
   const shownKey = shown.map((c) => c.id).join("|");
@@ -137,8 +156,7 @@ function ScanPage() {
 
   function requestAdd(comic: CatalogComic) {
     setSelectedId(comic.id);
-    // Defer so the opening tap cannot count as an outside-dismiss on TWA/mobile.
-    window.setTimeout(() => setAdding(comic), 0);
+    setAdding(comic);
   }
 
   function goAfterSave(info: { catalogId?: string; customId?: string }) {
@@ -150,7 +168,7 @@ function ScanPage() {
   }
 
   return (
-    <main className="mx-auto flex max-w-2xl flex-col gap-6">
+    <main className="mx-auto flex max-w-2xl flex-col gap-6 pb-24">
       <header>
         <h1 className="font-display text-3xl tracking-wide uppercase">Scan a comic</h1>
         <p className="mt-2 text-sm text-muted">
@@ -159,9 +177,17 @@ function ScanPage() {
         </p>
       </header>
 
-      <div className="relative flex min-h-64 flex-col items-center justify-center overflow-hidden rounded-xl bg-bg-elevated shadow-[0_0_0_1px_rgba(214,230,255,0.1)]">
+      <div
+        className={`relative flex flex-col items-center justify-center overflow-hidden rounded-xl bg-bg-elevated shadow-[0_0_0_1px_rgba(214,230,255,0.1)] ${
+          preview || !shown.length ? "min-h-64" : "min-h-0 py-5"
+        }`}
+      >
         {preview ? (
-          <img src={preview} alt="Scanned cover" className="max-h-80 object-contain" />
+          <img
+            src={preview}
+            alt="Scanned cover"
+            className={shown.length ? "max-h-40 object-contain" : "max-h-80 object-contain"}
+          />
         ) : (
           <>
             <Camera className="size-8 text-gold" />
@@ -206,6 +232,7 @@ function ScanPage() {
         capture="environment"
         className="hidden"
         onChange={handlePick}
+        suppressHydrationWarning
       />
       {/* Gallery: no capture attribute so Android offers the photo picker */}
       <input
@@ -214,6 +241,7 @@ function ScanPage() {
         accept="image/*"
         className="hidden"
         onChange={handlePick}
+        suppressHydrationWarning
       />
 
       <div className="relative">
@@ -227,6 +255,7 @@ function ScanPage() {
             setListMode("search");
           }}
           aria-label="Search catalog"
+          suppressHydrationWarning
         />
       </div>
 
@@ -264,14 +293,16 @@ function ScanPage() {
         </div>
       ) : null}
 
-      <ScanMatchList
-        comics={shown}
-        selectedId={selected?.id ?? null}
-        ownedIds={ownedIds}
-        source={listMode === "scan" && matches.length ? "matches" : "search"}
-        onSelect={(comic) => setSelectedId(comic.id)}
-        onAdd={requestAdd}
-      />
+      {mounted ? (
+        <ScanMatchList
+          comics={shown}
+          selectedId={selected?.id ?? null}
+          ownedIds={ownedIds}
+          source={listMode === "scan" && matches.length ? "matches" : "search"}
+          onSelect={(comic) => setSelectedId(comic.id)}
+          onAdd={requestAdd}
+        />
+      ) : null}
 
       {guess && !shown.length ? (
         <div className="flex flex-wrap gap-2">

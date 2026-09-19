@@ -48,6 +48,39 @@ export function scoreCoverGuess(comic: CatalogComic, guess: CoverGuess): number 
   return score;
 }
 
+/** First `limit` hits across existing catalogs — does not clone or invent rows. */
+export function searchCatalogLimited(
+  query: string,
+  catalogs: CatalogComic[][],
+  limit = 8,
+): CatalogComic[] {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+  const issueMatch = q.match(/#?\s*(\d+[a-z]?)$/i);
+  const titleQ = issueMatch ? q.replace(issueMatch[0], "").trim() : q;
+  const seen = new Set<string>();
+  const out: CatalogComic[] = [];
+  for (const list of catalogs) {
+    for (const comic of list) {
+      if (seen.has(comic.id)) continue;
+      const hay = `${comic.series} ${comic.issue} ${comic.publisher} ${comic.variant ?? ""} ${comic.upc ?? ""}`.toLowerCase();
+      const hit =
+        hay.includes(q) ||
+        Boolean(
+          issueMatch &&
+            titleQ &&
+            normalizeIssue(comic.issue) === normalizeIssue(issueMatch[1]) &&
+            hay.includes(titleQ),
+        );
+      if (!hit) continue;
+      seen.add(comic.id);
+      out.push(comic);
+      if (out.length >= limit) return out;
+    }
+  }
+  return out;
+}
+
 /** Rank existing catalog rows only — never invents titles. */
 export function rankComicsFromGuess(
   guess: CoverGuess,
