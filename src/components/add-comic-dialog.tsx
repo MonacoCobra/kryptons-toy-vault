@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { comicLabel } from "@/data/comics";
 import { Button } from "@/components/ui/button";
@@ -51,6 +51,17 @@ export function AddComicDialog({
   const [notes, setNotes] = useState(existing?.notes ?? "");
   const [photo, setPhoto] = useState(existing?.photoDataUrl ?? initialPhoto);
 
+  useEffect(() => {
+    if (!open) return;
+    setAcquiredDate(existing?.acquiredDate ?? new Date().toISOString().slice(0, 10));
+    setAcquiredPrice(
+      existing?.acquiredPrice?.toString() ?? (comic?.msrp ?? custom?.msrp ?? 4.99).toString(),
+    );
+    setGrade(existing?.grade ?? "raw");
+    setNotes(existing?.notes ?? "");
+    setPhoto(existing?.photoDataUrl ?? initialPhoto);
+  }, [open, comic?.id, custom?.id, existing?.id, existing?.acquiredDate, existing?.acquiredPrice, existing?.grade, existing?.notes, existing?.photoDataUrl, comic?.msrp, custom?.msrp, initialPhoto]);
+
   async function onFile(file?: File) {
     if (!file) return;
     try {
@@ -98,8 +109,8 @@ export function AddComicDialog({
       customId = custom.id;
     }
     toast.success(existing ? "Issue updated." : "Issue added to the vault.");
-    onOpenChange(false);
     if (ownedId) onSaved?.({ ownedId, catalogId, customId });
+    onOpenChange(false);
   }
 
   const primary =
@@ -107,7 +118,12 @@ export function AddComicDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent>
+      <DialogContent
+        data-testid="add-comic-dialog"
+        onOpenAutoFocus={(e) => e.preventDefault()}
+        onPointerDownOutside={(e) => e.preventDefault()}
+        onInteractOutside={(e) => e.preventDefault()}
+      >
         <DialogHeader>
           <DialogTitle>{existing ? "Update issue" : "Add to collection"}</DialogTitle>
           <DialogDescription>{label}</DialogDescription>
@@ -152,7 +168,11 @@ export function AddComicDialog({
             <Label htmlFor="c-notes">Notes</Label>
             <Textarea id="c-notes" value={notes} onChange={(e) => setNotes(e.target.value)} placeholder="Print, defects, CGC cert…" />
           </div>
-          <Button onClick={save} className="min-h-11 w-full">
+          <Button
+            data-testid="add-comic-confirm"
+            onClick={save}
+            className="sticky bottom-0 min-h-11 w-full"
+          >
             {primary}
           </Button>
         </div>
