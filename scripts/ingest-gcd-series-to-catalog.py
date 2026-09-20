@@ -1489,8 +1489,7 @@ def ingest_series_from_dump(
         f"{len(mains)} main / {len(variants)} variant dump issue(s)"
     )
 
-    def fetch_parent(ident: str) -> dict | None:
-        return store.get_issue(ident)
+    # Dump path: do not fetch parents outside by_id (same-series gate).
 
     for issue in mains + variants:
         desc = gcd_dump.dump_issue_descriptor(issue)
@@ -1532,7 +1531,7 @@ def ingest_series_from_dump(
             series=series,
             series_id=series_id,
             by_id=by_id,
-            fetch_issue=fetch_parent,
+            fetch_issue=None  # same-series parents only; by_id is complete,
         )
         if orphan:
             skips.append(
