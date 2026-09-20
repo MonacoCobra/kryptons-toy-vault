@@ -354,6 +354,7 @@ def viewer_family_from_parent(
     publisher: str,
     existing_meta: dict[str, dict],
     added_rows: list,
+    family_index: dict[str, tuple[str, str, str, str | None]] | None = None,
 ) -> tuple[str, str, str, str | None] | None:
     """Exact series+issue+publisher the variant must share, or None to skip.
 
@@ -382,6 +383,9 @@ def viewer_family_from_parent(
         if comic_family_key(series_f, issue_f, pub_f) == want:
             return series_f, issue_f, pub_f, fmt
 
+    if family_index is not None:
+        return family_index.get(want)
+
     catalog_hit: tuple[str, str, str, str | None] | None = None
     for meta in existing_meta.values():
         if not isinstance(meta, dict):
@@ -399,7 +403,7 @@ def viewer_family_from_parent(
     return catalog_hit
 
 
-def apply_viewer_family(parsed: dict, parent: dict, *, series_name: str, publisher: str, existing_meta: dict[str, dict], added_rows: list) -> str | None:
+def apply_viewer_family(parsed: dict, parent: dict, *, series_name: str, publisher: str, existing_meta: dict[str, dict], added_rows: list, family_index: dict[str, tuple[str, str, str, str | None]] | None = None) -> str | None:
     """Stamp parent series+issue+publisher onto parsed, or return skip reason."""
     family = viewer_family_from_parent(
         parent,
@@ -407,6 +411,7 @@ def apply_viewer_family(parsed: dict, parent: dict, *, series_name: str, publish
         publisher=publisher,
         existing_meta=existing_meta,
         added_rows=added_rows,
+        family_index=family_index,
     )
     if family is None:
         return "variant-orphan"
@@ -435,6 +440,35 @@ def identity_keys_from_meta(existing_meta: dict[str, dict]) -> set[str]:
             )
         )
     return keys
+
+
+def build_viewer_family_index(
+    existing_meta: dict[str, dict],
+) -> dict[str, tuple[str, str, str, str | None]]:
+    """comic_family_key → (series, issue, publisher, format). Prefer non-variant.
+
+    Same selection rules as the linear scan in viewer_family_from_parent, but O(1)
+    per lookup so long-running series (Action Comics, etc.) stay tractable.
+    """
+    index: dict[str, tuple[str, str, str, str | None]] = {}
+    variant_fallback: dict[str, tuple[str, str, str, str | None]] = {}
+    for meta in existing_meta.values():
+        if not isinstance(meta, dict):
+            continue
+        series_f = str(meta.get("series") or "")
+        issue_f = str(meta.get("issue") or "")
+        pub_f = str(meta.get("publisher") or "")
+        key = comic_family_key(series_f, issue_f, pub_f)
+        if not key or key == "||":
+            continue
+        hit = (series_f, issue_f, pub_f, str(meta.get("format") or "") or None)
+        if meta.get("variant"):
+            variant_fallback.setdefault(key, hit)
+        else:
+            index[key] = hit
+    for key, hit in variant_fallback.items():
+        index.setdefault(key, hit)
+    return index
 
 
 def make_gcd_catalog_id(
@@ -1068,6 +1102,7 @@ def ingest_series(
     existing_meta: dict[str, dict],
     id_prefix: str | None,
     include_collected: bool = True,
+    family_index: dict[str, tuple[str, str, str, str | None]] | None = None,
 ) -> tuple[list, list[dict], dict, dict]:
     rows: list = []
     skips: list[dict] = []
@@ -1182,6 +1217,18 @@ def ingest_series(
         parsed = parse_issue(
             issue, url=url, series=series, publisher=publisher, descriptor=desc
         )
+        # Skip known gcdIssueIds before expensive viewer-family resolution.
+        early_gid = str(parsed.get("gcdIssueId") or "")
+        if early_gid.isdigit() and early_gid in existing_gcd:
+            skips.append(
+                {
+                    "seriesId": series_id,
+                    "issue": issue.get("number") or desc,
+                    "gcdIssueId": early_gid,
+                    "reason": "dup-gcdIssueId",
+                }
+            )
+            continue
         if parent is not None:
             parsed["variantName"] = (issue.get("variant_name") or "").strip()
             no_family = apply_viewer_family(
@@ -1191,6 +1238,7 @@ def ingest_series(
                 publisher=publisher,
                 existing_meta=existing_meta,
                 added_rows=rows,
+                family_index=family_index,
             )
             if no_family:
                 skips.append(
@@ -1243,6 +1291,7 @@ def ingest_series_from_dump(
     existing_meta: dict[str, dict],
     id_prefix: str | None,
     include_collected: bool = True,
+    family_index: dict[str, tuple[str, str, str, str | None]] | None = None,
 ) -> tuple[list, list[dict], dict, dict]:
     """Gate dump rows the same way as API rows. No comics.org traffic."""
     rows: list = []
@@ -1336,6 +1385,18 @@ def ingest_series_from_dump(
             publisher=publisher,
             descriptor=desc,
         )
+        # Skip known gcdIssueIds before expensive viewer-family resolution.
+        early_gid = str(parsed.get("gcdIssueId") or "")
+        if early_gid.isdigit() and early_gid in existing_gcd:
+            skips.append(
+                {
+                    "seriesId": series_id,
+                    "issue": issue.get("number") or desc,
+                    "gcdIssueId": early_gid,
+                    "reason": "dup-gcdIssueId",
+                }
+            )
+            continue
         if parent is not None:
             parsed["variantName"] = (issue.get("variant_name") or "").strip()
             no_family = apply_viewer_family(
@@ -1345,6 +1406,7 @@ def ingest_series_from_dump(
                 publisher=publisher,
                 existing_meta=existing_meta,
                 added_rows=rows,
+                family_index=family_index,
             )
             if no_family:
                 skips.append(
@@ -1681,6 +1743,7 @@ def main(argv: list[str] | None = None) -> int:
     existing_ids, existing_keys_plain = backlog.parse_existing_ts()
     existing_meta = bf.parse_comics_meta()
     existing_keys = existing_keys_plain | identity_keys_from_meta(existing_meta)
+    family_index = build_viewer_family_index(existing_meta)
     upc_map = bf.load_json(root / "src/data/comic-upc-map.json", {})
     cover_urls = bf.load_json(root / "src/data/comic-cover-urls.json", {})
     existing_gcd = collect_gcd_ids(upc_map)
@@ -1719,6 +1782,7 @@ def main(argv: list[str] | None = None) -> int:
                         existing_meta=existing_meta,
                         id_prefix=args.id_prefix or None,
                         include_collected=args.include_collected,
+                        family_index=family_index,
                     )
                 else:
                     assert client is not None
@@ -1737,6 +1801,7 @@ def main(argv: list[str] | None = None) -> int:
                         existing_meta=existing_meta,
                         id_prefix=args.id_prefix or None,
                         include_collected=args.include_collected,
+                        family_index=family_index,
                     )
             except RateLimitAbort as e:
                 print(str(e), file=sys.stderr)
