@@ -1,6 +1,8 @@
 -- Official-shaped MySQL slice that also contains prefixed sibling tables.
 -- `gcd_issue_credit` / `gcd_series_bond` share ids with real issue/series
 -- rows. The loader must not treat those as `gcd_issue` / `gcd_series`.
+-- Lives in a subdirectory so dump-dir globs of gcd-dump-sql/ still see only
+-- the original slice.sql fixture.
 CREATE TABLE `gcd_publisher` (
   `id` int NOT NULL,
   `name` varchar(255) NOT NULL,

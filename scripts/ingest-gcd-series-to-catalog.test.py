@@ -565,7 +565,7 @@ class GcdDumpLoaderTest(unittest.TestCase):
     def test_prefixed_sibling_inserts_do_not_wipe_issue_or_series(self):
         td = Path(tempfile.mkdtemp())
         sqlite = td / "gcd.sqlite"
-        sql = DUMP_SQL_DIR / "prefixed-sibling-tables.sql"
+        sql = DUMP_SQL_DIR / "prefixed-siblings" / "dump.sql"
         gcd_dump.load_sql_files_into_sqlite([sql], sqlite, series_ids=None, progress=False)
         con = sqlite3.connect(str(sqlite))
         con.row_factory = sqlite3.Row
