@@ -26,5 +26,7 @@ See `docs/figure-identity.md`. Collapse script:
 ## Toyark densify dry-run
 
 `scripts/dry-run-toyark-densify.py` proposes new-figure candidates from The
-Toyark WP REST API. Report only (`toyark-densify-dry-run.json`); no oneshot /
-SKU / alias / image writes. `--apply` is not wired. See `docs/toyark-densify.md`.
+Toyark WP REST API (Hasbro / McFarlane / NECA / Jazwares / Super7 plus vault
+1/6 ids: Hot Toys, Mondo, threezero, Enterbay, Asmus, Star Ace, EXO-6).
+Report only (`toyark-densify-dry-run.json`); no oneshot / SKU / alias / image
+writes. `--apply` is not wired. See `docs/toyark-densify.md`.

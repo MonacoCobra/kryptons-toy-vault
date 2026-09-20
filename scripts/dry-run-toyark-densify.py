@@ -11,7 +11,9 @@ Policy:
   - GTIN preferred but not required; never invent GTINs/UPCs/product codes
   - Manufacturer codes in prose (MMS897, HAS*, labeled UPC) → aliases only
   - Identity = company + line + year + variant (same character ≠ same figure)
-  - v1 allowlist: hasbro, mcfarlane, neca, jazwares
+  - Allowlist: hasbro, mcfarlane, neca, jazwares, plus Super7 and premium
+    1/6 makers that already exist as CompanyIds (hottoys, mondo, threezero,
+    enterbay, asmus, starace, exo6). No invented company ids (no sideshow).
   - Filter out sponsor newsletters, sales/deals, customs, photo-of-the-day,
     pure review/in-hand with no new product identity, vehicles/props-only,
     and non-figure entertainment news
@@ -65,7 +67,21 @@ UA = (
     "figure-archive dry-run research bot; polite; no writes)"
 )
 
-ALLOWLIST = ("hasbro", "mcfarlane", "neca", "jazwares")
+# Vault CompanyIds only (src/data/companies.ts / src/lib/types.ts). No sideshow id.
+ALLOWLIST = (
+    "hasbro",
+    "mcfarlane",
+    "neca",
+    "jazwares",
+    "super7",
+    "hottoys",
+    "mondo",
+    "threezero",
+    "enterbay",
+    "asmus",
+    "starace",
+    "exo6",
+)
 
 # Toyark class_list `companies-*` (and a few body-text aliases) → CompanyId.
 COMPANY_CLASS: dict[str, str] = {
@@ -76,14 +92,24 @@ COMPANY_CLASS: dict[str, str] = {
     "companies-jazwares": "jazwares",
     "companies-wicked-cool": "jazwares",
     "companies-wicked-cool-toys": "jazwares",
-    # Detected so we can reject as not-allowlisted instead of "unknown".
     "companies-super-7": "super7",
     "companies-super7": "super7",
     "companies-hot-toys": "hottoys",
+    "companies-hottoys": "hottoys",
+    "companies-mondo": "mondo",
+    "companies-threezero": "threezero",
+    "companies-enterbay": "enterbay",
+    "companies-asmus": "asmus",
+    "companies-asmus-toys": "asmus",
+    "companies-star-ace": "starace",
+    "companies-starace": "starace",
+    "companies-star-ace-toys": "starace",
+    "companies-exo-6": "exo6",
+    "companies-exo6": "exo6",
+    # Detected so we can reject as not-allowlisted instead of "unknown".
     "companies-kaiyodo": "kaiyodo",
     "companies-tamashii": "shfiguarts",
     "companies-hiya-toys": "hiya",
-    "companies-threezero": "threezero",
     "companies-sentinel": "sentinel",
     "companies-mezco": "mezco",
     "companies-boss-fight-studio": "bossfight",
@@ -94,6 +120,7 @@ COMPANY_CLASS: dict[str, str] = {
     "companies-bandai": "bandai",
     "companies-playmates": "playmates",
     "companies-jakks": "jakks",
+    "companies-blitzway": "blitzway",
 }
 
 SUBLINE_CLASS: dict[str, str] = {
@@ -134,6 +161,19 @@ LINE_PATTERNS: list[tuple[re.Pattern[str], str, str | None]] = [
     (re.compile(r"\bpredator\s+ultimate\b", re.I), "Predator Ultimate", "neca"),
     (re.compile(r"\bneca\s+ultimate\b|\bultimate\s+\d", re.I), "NECA Ultimate", "neca"),
     (re.compile(r"\btoony\s+terrors?\b", re.I), "Toony Terrors", "neca"),
+    (re.compile(r"\breaction\+|\breaction\b", re.I), "Super7 ReAction", "super7"),
+    (re.compile(r"\bultimates?!?\b", re.I), "Super7 ULTIMATES!", "super7"),
+    (re.compile(r"\bdeluxe\b", re.I), "Super7 ULTIMATES!", "super7"),
+    (re.compile(r"\bmovie\s+masterpiece|\b\bmms\b", re.I), "Hot Toys MMS", "hottoys"),
+    (re.compile(r"\bsixth[\s\-]?scale\b|\b1\s*/\s*6\b", re.I), "Hot Toys", "hottoys"),
+    (re.compile(r"\b(?:marvel\s+)?dlx\b", re.I), "threezero DLX", "threezero"),
+    (re.compile(r"\bfigzero\b", re.I), "threezero FigZero", "threezero"),
+    (re.compile(r"\bmdlx\b", re.I), "threezero MDLX", "threezero"),
+    (re.compile(r"\bbtas\b|batman\s+the\s+animated", re.I), "Mondo BTAS", "mondo"),
+    (re.compile(r"\bmasters?\s+of\s+the\s+universe\b|\bmotu\b", re.I), "Mondo Masters of the Universe 1/6", "mondo"),
+    (re.compile(r"\blord\s+of\s+the\s+rings\b|\blotr\b", re.I), "Asmus Lord of the Rings", "asmus"),
+    (re.compile(r"\bhobbit\b", re.I), "Asmus The Hobbit", "asmus"),
+    (re.compile(r"\bwitcher\b", re.I), "Asmus The Witcher", "asmus"),
 ]
 
 NEW_SIGNAL_RE = re.compile(
@@ -141,7 +181,8 @@ NEW_SIGNAL_RE = re.compile(
     r"pre[\s\-]?orders?|now\s+available\s+to\s+pre[\s\-]?order|"
     r"official\s+images?|official\s+pics?|first\s+look|new\s+assortment|"
     r"new\s+(?:figure|assortment|wave|items?)|coming\s+soon|preview|"
-    r"photos?\s+and\s+details|has\s+announced|will\s+go\s+up\s+for\s+pre)\b",
+    r"photos?\s+and\s+details|has\s+announced|will\s+go\s+up\s+for\s+pre|"
+    r"wave\s+\d+\s+released|(?:now\s+)?released)\b",
     re.I,
 )
 REVIEW_ONLY_RE = re.compile(
@@ -167,8 +208,8 @@ ENTERTAINMENT_RE = re.compile(
 )
 PROP_RE = re.compile(
     r"\b(?:1\s*/\s*1|\b1:1\b)?\s*(?:scale\s+)?(?:cowl|helmet|bust|statue|"
-    r"replica|prop|diorama|playset|vehicle\s+only)\b|"
-    r"\b(?:cowl|helmet)\s+(?:replica|statue)?\b",
+    r"replica|prop|diorama|playset|vehicle\s+only|power\s+loader)\b|"
+    r"\b(?:cowl|helmet|power\s+loader)\s+(?:replica|statue|set)?\b",
     re.I,
 )
 VEHICLE_ONLY_RE = re.compile(
@@ -368,6 +409,14 @@ def map_company(classes: list[str], blob: str) -> tuple[str | None, str]:
         (r"\bneca\b", "neca"),
         (r"\bjazwares\b|\bwicked\s+cool\s+toys\b", "jazwares"),
         (r"\bhasbro(?:\s+pulse)?\b", "hasbro"),
+        (r"\bhot\s+toys\b", "hottoys"),
+        (r"\bsuper\s*7\b", "super7"),
+        (r"\bthreezero\b|\b3a\b", "threezero"),
+        (r"\bmondo\b", "mondo"),
+        (r"\benterbay\b", "enterbay"),
+        (r"\basmus(?:\s+toys)?\b", "asmus"),
+        (r"\bstar\s*ace\b", "starace"),
+        (r"\bexo[\s\-]?6\b", "exo6"),
     ]
     hits = [(name, pat) for pat, name in pairs if re.search(pat, low)]
     if len(hits) == 1:
@@ -375,7 +424,9 @@ def map_company(classes: list[str], blob: str) -> tuple[str | None, str]:
     return None, "none"
 
 
-def infer_line(company: str | None, classes: list[str], blob: str) -> str | None:
+def infer_line(
+    company: str | None, classes: list[str], blob: str, *, allow_default: bool = True
+) -> str | None:
     # Prefer Toyark subline class when it matches the company.
     sublines = [SUBLINE_CLASS[c] for c in classes if c in SUBLINE_CLASS]
     if company == "mcfarlane":
@@ -394,14 +445,36 @@ def infer_line(company: str | None, classes: list[str], blob: str) -> str | None
         if re.search(r"\b(elvira|horror|mistress of the dark|universal)\b", blob, re.I):
             return "Horror Ultimate"
         return "NECA Ultimate"
+    if company == "super7":
+        if "ReAction" in sublines or re.search(r"\breaction\b", blob, re.I):
+            return "Super7 ReAction"
+        if "Super7 ULTIMATES!" in sublines or re.search(r"\bultimates?\b|\bdeluxe\b", blob, re.I):
+            return "Super7 ULTIMATES!"
+    if company == "threezero" and "Marvel DLX" in sublines:
+        return "threezero DLX"
+    if company == "hottoys" and re.search(r"\bmms\d+", blob, re.I):
+        return "Hot Toys MMS"
     for pat, line, hint in LINE_PATTERNS:
         if hint and company and hint != company:
             continue
         if pat.search(blob):
             return line
+    if company == "super7" and sublines:
+        if sublines[0] == "ReAction":
+            return "Super7 ReAction"
     if sublines:
         return sublines[0]
-    return None
+    if not allow_default:
+        return None
+    return {
+        "hottoys": "Hot Toys",
+        "mondo": "Mondo",
+        "threezero": "threezero",
+        "enterbay": "Enterbay",
+        "super7": "Super7 ULTIMATES!",
+        "starace": "Star Ace",
+        "exo6": "EXO-6",
+    }.get(company or "")
 
 
 def content_reject_reason(classes: list[str], title: str, blob: str) -> tuple[str, str] | None:
@@ -425,8 +498,10 @@ def content_reject_reason(classes: list[str], title: str, blob: str) -> tuple[st
         return "review-in-hand", "In-hand / review / gallery with no new product identity."
     if ENTERTAINMENT_RE.search(title) and not NEW_SIGNAL_RE.search(title):
         return "entertainment-news", "Entertainment news without a new figure identity."
-    # Whole-post vehicle/prop only when the title is a single item (not a list).
-    listed = "," in title and re.search(r"\band\b", title, re.I)
+    # Whole-post vehicle/prop only when the title is a single item (not a list / combo).
+    listed = ("," in title and re.search(r"\band\b", title, re.I)) or (
+        bool(re.search(r"\band\b", title, re.I)) and bool(re.search(r"\b(?:figure|set|ripley)\b", title, re.I))
+    )
     if not listed:
         if PROP_RE.search(title) and not re.search(r"\bfigure\b", title, re.I):
             return "vehicles-props-only", "Title is a prop/vehicle/replica, not a figure."
@@ -514,6 +589,18 @@ def wave_variant_from_title(title: str, body: str) -> str | None:
         return "Final Wave"
     if re.search(r"\bgamerverse\b", blob, re.I):
         return "Gamerverse"
+    mwave = re.search(r"\b(?:deluxe\s+)?wave\s+(\d+[a-z]?)\b", title, re.I)
+    if mwave:
+        label = f"Wave {mwave.group(1)}"
+        if re.search(r"\bdeluxe\b", title, re.I):
+            return f"Deluxe {label}"
+        return label
+    if re.search(r"\breaction\+", blob, re.I):
+        return "ReAction+"
+    if re.search(r"\barctic\s+suit\b", blob, re.I):
+        return "Arctic Suit"
+    if re.search(r"\bfinal\s+swing\s+suit\b", blob, re.I):
+        return "Final Swing Suit Deluxe"
     return None
 
 
@@ -561,19 +648,43 @@ def look_like_character_list(title: str) -> list[str]:
             break
     t = re.sub(r"\bpre[\s\-]?orders?\b", "", t, flags=re.I)
     t = re.sub(r"\b(?:preview|revealed|announced)\b", "", t, flags=re.I)
+    t = re.sub(
+        r"\s+\b(?:reaction\+?|ultimates?!?|deluxe(?:\s+version)?|(?:action\s+)?figures?)\s*$",
+        "",
+        t,
+        flags=re.I,
+    )
     t = t.strip(" -–—:,")
-    if not re.search(r",\s+", t) or not re.search(r"\band\b", t, re.I):
+    has_and = bool(re.search(r"\band\b", t, re.I))
+    if not re.search(r",\s+", t):
+        return []
+    if not has_and and len(re.findall(r",", t)) < 2:
         return []
     t = re.sub(r",?\s+and\s+", ", ", t, flags=re.I)
     parts = [p.strip(" .") for p in t.split(",") if p.strip(" .")]
     return [p for p in parts if 2 <= len(p) <= 80]
 
 
+def character_aliases(char_names: list[str]) -> list[str]:
+    extra: list[str] = []
+    for n in char_names:
+        extra.append(n)
+        extra.append(n.replace(" ", "-"))
+        extra.append(n.replace("-", " "))
+        if n.endswith(" 2"):
+            extra.append(n[:-2].strip())
+        if n.lower().startswith("dr "):
+            extra.append("Dr. " + n[3:])
+            extra.append(n[3:])
+    # unique, longest first
+    return sorted({e for e in extra if e}, key=len, reverse=True)
+
+
 def peel_known_character(text: str, char_names: list[str]) -> tuple[str, str] | None:
     """If prose ends with / contains a known character, use that as the name."""
     if not text or not char_names:
         return None
-    ordered = sorted({c for c in char_names if c}, key=len, reverse=True)
+    ordered = character_aliases(char_names)
     for ch in ordered:
         pat = re.compile(rf"^(.*?)({re.escape(ch)})(.*)$", re.I)
         m = pat.search(text)
@@ -583,8 +694,10 @@ def peel_known_character(text: str, char_names: list[str]) -> tuple[str, str] | 
         flavor = " ".join(x for x in (pre, post) if x)
         flavor = re.sub(
             r"\b(?:dc\s+classic|gold\s+label|collector\s+edition|series|based\s+on|"
-            r"hasbro|mcfarlane(?:\s+toys)?|neca|jazwares|ultimate|action\s+figure|"
-            r"figure|figures|pre[\s\-]?orders?)\b",
+            r"hasbro|mcfarlane(?:\s+toys)?|neca|jazwares|super\s*7|hot\s+toys|"
+            r"threezero|mondo|enterbay|asmus(?:\s+toys)?|star\s*ace|exo[\s\-]?6|"
+            r"ultimate|action\s+figure|figure|figures|pre[\s\-]?orders?|"
+            r"deluxe\s+version)\b",
             " ",
             flavor,
             flags=re.I,
@@ -602,7 +715,7 @@ def item_line_and_name(
     char_names: list[str] | None = None,
 ) -> dict[str, str]:
     blob = item
-    line = infer_line(company, [], blob) or fallback_line or ""
+    line = infer_line(company, [], blob, allow_default=False) or fallback_line or ""
     name = item
     # Strip known line prefixes from the leftover name.
     for prefix in (
@@ -638,12 +751,14 @@ def item_line_and_name(
 
 
 def is_prop_item(name: str, variant: str, raw: str) -> bool:
-    blob = f"{name} {variant} {raw}"
+    # Judge the product name, not accessory flavor on an otherwise named figure.
+    blob = f"{name} {raw}"
+    if PROP_RE.search(name) and not re.search(r"\bfigure\b", name, re.I):
+        return True
     if PROP_RE.search(blob) and not re.search(r"\bfigure\b", blob, re.I):
         return True
-    if re.search(r"\bcowl\b|\bbust\b|\bstatue\b|\b1\s*/\s*1\b|\b1:1\b", blob, re.I):
-        if not re.search(r"\bfigure\b", blob, re.I):
-            return True
+    if re.search(r"\bcowl\b|\bbust\b|\bstatue\b|\b1\s*/\s*1\b|\b1:1\b", name, re.I):
+        return True
     return False
 
 
@@ -758,7 +873,7 @@ def extract_figure_specs(post: dict, company: str | None, line: str | None) -> l
 
     # Body "features X, Y, and Z" on a single line/wave.
     feat = re.search(
-        r"\b(?:features|includes|featuring)\s+([A-Z][^.]{8,160}?)(?:\.|$)",
+        r"\b(?:features|includes|featuring|included\s+are)\s+([A-Z][^.]{8,180}?)(?:\.|$)",
         body or excerpt,
     )
     if feat and re.search(r",\s+", feat.group(1)) and re.search(r"\band\b", feat.group(1), re.I):
@@ -769,6 +884,14 @@ def extract_figure_specs(post: dict, company: str | None, line: str | None) -> l
             return attach_based_on_variants(promote_wave_variant(specs, wave), body)
 
     if len(chars) >= 2 and line:
+        prop_chars = [n for n in chars if is_prop_item(n, "", n)]
+        fig_chars = [n for n in chars if n not in prop_chars]
+        if fig_chars and prop_chars:
+            specs = [
+                {"name": n, "line": line, "variant": wave or " ".join(prop_chars)}
+                for n in fig_chars
+            ]
+            return attach_based_on_variants(promote_wave_variant(specs, wave), body)
         if re.search(r"\b(?:wave|assortment|previews?|includes|revealed)\b", title, re.I) or listed:
             specs = [{"name": n, "line": line, "variant": ""} for n in chars]
             return attach_based_on_variants(promote_wave_variant(specs, wave), body)
@@ -1045,7 +1168,7 @@ def evaluate_post(
                 "gtin": None,
                 "toyarkPostId": pid,
                 "title": title,
-                "rationale": f"Recognized {company} via {company_how}; v1 allowlist is {', '.join(ALLOWLIST)}.",
+                "rationale": f"Recognized {company} via {company_how}; allowlist is {', '.join(ALLOWLIST)}.",
             }
         )
         return accepts, rejects
@@ -1337,7 +1460,7 @@ def main(argv: list[str] | None = None) -> int:
         "--company",
         action="append",
         dest="companies",
-        help="Override allowlist (repeatable). Values: hasbro, mcfarlane, neca, jazwares",
+        help="Override allowlist (repeatable). Must be an id already in the script allowlist.",
     )
     ap.add_argument("--sleep", type=float, default=0.75, help="Seconds between REST pages (default 0.75)")
     ap.add_argument(
@@ -1374,7 +1497,7 @@ def main(argv: list[str] | None = None) -> int:
                     continue
                 cid = part.lower()
                 if cid not in ALLOWLIST:
-                    print(f"ERROR: --company {cid} is not in v1 allowlist {ALLOWLIST}", file=sys.stderr)
+                    print(f"ERROR: --company {cid} is not in allowlist {ALLOWLIST}", file=sys.stderr)
                     return 2
                 if cid not in allow:
                     allow.append(cid)

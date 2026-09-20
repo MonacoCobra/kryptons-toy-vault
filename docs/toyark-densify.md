@@ -20,19 +20,37 @@ Some hosts see a Cloudflare challenge on `www.toyark.com`. The script records
 that as `fetch.blocker = cloudflare-challenge` and can replay a saved REST
 payload with `--posts-json` (still dry-run; date window still applied).
 
-## Allowlist (v1 CompanyId)
+## Allowlist (vault CompanyId only)
 
 Toyark `companies-*` class_list (plus conservative body-text fallback) maps to
-vault ids:
+**existing** vault ids from `src/data/companies.ts` / `src/lib/types.ts`.
+Nothing is invented — there is **no** `sideshow` CompanyId (Sideshow is a
+retailer for Hot Toys, not a maker row).
 
-| Toyark cue | CompanyId |
-|---|---|
-| `companies-hasbro` / “Hasbro” | `hasbro` |
-| `companies-mcfarlane` / “McFarlane Toys” | `mcfarlane` |
-| `companies-neca` / “NECA” | `neca` |
-| `companies-jazwares` / Wicked Cool Toys | `jazwares` |
+Shelby wants **1/6 coverage** on this slice (Hot Toys, Mondo, and the other
+sixth-scale makers already in the vault), plus Super7 (Mephitsu hub; was
+held back only for v1 noise control).
 
-Other recognized makers (Hot Toys, Super7, …) are rejected as
+| Toyark cue | CompanyId | Why |
+|---|---|---|
+| `companies-hasbro` / “Hasbro” | `hasbro` | Original v1 |
+| `companies-mcfarlane` / “McFarlane Toys” | `mcfarlane` | Original v1 |
+| `companies-neca` / “NECA” | `neca` | Original v1 |
+| `companies-jazwares` / Wicked Cool Toys | `jazwares` | Original v1 |
+| `companies-super-7` / Super7 | `super7` | Mephitsu hub / ULTIMATES + ReAction |
+| `companies-hot-toys` / Hot Toys | `hottoys` | Premium 1/6 (Shelby) |
+| `companies-mondo` / Mondo | `mondo` | Premium 1/6 + 1/12 (Shelby) |
+| `companies-threezero` / threezero | `threezero` | DLX / FigZero / sixth-scale |
+| `companies-enterbay` / Enterbay | `enterbay` | 1:6 movie / NBA |
+| `companies-asmus` / Asmus Toys | `asmus` | Sixth-scale LOTR / Hobbit / Witcher |
+| `companies-star-ace` / Star Ace | `starace` | Sixth-scale movie / pop-culture |
+| `companies-exo-6` / EXO-6 | `exo6` | Sixth-scale Star Trek |
+
+`blitzway` exists as a CompanyId (Superb Scale mixed with Carbotix) but is
+**not** on this allowlist — keep the 1/6 lane to licensed sixth-scale peers,
+not every 1/6 military/third-party id.
+
+Other recognized makers (Kaiyodo, Tamashii, Hiya, Mezco, …) stay
 `company-not-allowlisted`.
 
 ## Filters
@@ -61,7 +79,7 @@ Oneshot is read-only, via `figure_identity` keys, to flag `already-in-oneshot`
 ```bash
 python3 scripts/dry-run-toyark-densify.py
 python3 scripts/dry-run-toyark-densify.py --days 14 --per-page 20 --max-pages 4
-python3 scripts/dry-run-toyark-densify.py --after 2026-09-13T00:00:00Z --company mcfarlane
+python3 scripts/dry-run-toyark-densify.py --after 2026-09-13T00:00:00Z --company hottoys
 python3 scripts/dry-run-toyark-densify.py --posts-json /tmp/toyark-posts.json
 # --apply  →  refused (exit 2); no catalog writes
 ```

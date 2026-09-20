@@ -194,7 +194,8 @@ hits are reported only. Report: `src/data/figure-archive/sku-mismatch-audit.json
 
 `scripts/dry-run-toyark-densify.py` polls The Toyark WP REST
 (`/wp-json/wp/v2/posts?_embed=1`; RSS `/feed/` is robots-disallowed) for
-Hasbro / McFarlane / NECA / Jazwares reveals and writes
-`src/data/figure-archive/toyark-densify-dry-run.json`. **No apply path** — it
-does not write oneshot, sku-map, aliases, or image URLs. See
+allowlisted makers — original AF four plus Super7 and premium 1/6 CompanyIds
+(`hottoys`, `mondo`, `threezero`, `enterbay`, `asmus`, `starace`, `exo6`) —
+and writes `src/data/figure-archive/toyark-densify-dry-run.json`. **No apply
+path** — it does not write oneshot, sku-map, aliases, or image URLs. See
 `docs/toyark-densify.md`.

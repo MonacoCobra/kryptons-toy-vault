@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T02:41:08Z",
+  "generatedAt": "2026-09-20T02:52:26Z",
   "mode": "dry-run",
   "applyWired": false,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -10,13 +10,21 @@
       "hasbro",
       "mcfarlane",
       "neca",
-      "jazwares"
+      "jazwares",
+      "super7",
+      "hottoys",
+      "mondo",
+      "threezero",
+      "enterbay",
+      "asmus",
+      "starace",
+      "exo6"
     ],
     "writes": "none — report only"
   },
   "window": {
     "days": 21,
-    "after": "2026-08-30T02:41:08.018846+00:00",
+    "after": "2026-08-30T02:52:26.354650+00:00",
     "before": null
   },
   "fetch": {
@@ -45,13 +53,13 @@
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 4962,
+    "indexedRows": 8740,
     "mode": "read-only"
   },
   "summary": {
     "fetchedPosts": 40,
-    "acceptedCandidates": 26,
-    "rejectedRows": 35,
+    "acceptedCandidates": 44,
+    "rejectedRows": 25,
     "byCompany": {
       "hasbro": {
         "accepted": 12,
@@ -68,16 +76,137 @@
       "jazwares": {
         "accepted": 0,
         "rejected": 0
+      },
+      "super7": {
+        "accepted": 8,
+        "rejected": 0
+      },
+      "hottoys": {
+        "accepted": 8,
+        "rejected": 0
+      },
+      "mondo": {
+        "accepted": 0,
+        "rejected": 0
+      },
+      "threezero": {
+        "accepted": 2,
+        "rejected": 0
+      },
+      "enterbay": {
+        "accepted": 0,
+        "rejected": 0
+      },
+      "asmus": {
+        "accepted": 0,
+        "rejected": 0
+      },
+      "starace": {
+        "accepted": 0,
+        "rejected": 0
+      },
+      "exo6": {
+        "accepted": 0,
+        "rejected": 0
       }
     },
     "byRejectReason": {
       "sponsor-newsletter": 6,
-      "company-not-allowlisted": 27,
       "vehicles-props-only": 1,
+      "company-not-allowlisted": 17,
       "no-explicit-figure": 1
     }
   },
   "candidates": [
+    {
+      "decision": "accept",
+      "name": "Leonardo",
+      "company": "super7",
+      "line": "Super7 ReAction",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "ReAction+",
+      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599160,
+      "title": "TMNT – Leonardo, Michelangelo, Bebop, and Rocksteady ReAction Figure Pre-Orders",
+      "rationale": "super7 via class:companies-super-7; line=Super7 ReAction; variant=ReAction+; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Michelangelo",
+      "company": "super7",
+      "line": "Super7 ReAction",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "ReAction+",
+      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599160,
+      "title": "TMNT – Leonardo, Michelangelo, Bebop, and Rocksteady ReAction Figure Pre-Orders",
+      "rationale": "super7 via class:companies-super-7; line=Super7 ReAction; variant=ReAction+; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Bebop",
+      "company": "super7",
+      "line": "Super7 ReAction",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "ReAction+",
+      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599160,
+      "title": "TMNT – Leonardo, Michelangelo, Bebop, and Rocksteady ReAction Figure Pre-Orders",
+      "rationale": "super7 via class:companies-super-7; line=Super7 ReAction; variant=ReAction+; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Rocksteady",
+      "company": "super7",
+      "line": "Super7 ReAction",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "ReAction / ReAction+",
+      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599160,
+      "title": "TMNT – Leonardo, Michelangelo, Bebop, and Rocksteady ReAction Figure Pre-Orders",
+      "rationale": "super7 via class:companies-super-7; line=Super7 ReAction; variant=ReAction / ReAction+; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Batman",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": 2026,
+      "releaseWindow": null,
+      "variant": "The Flash Movie – Arctic Suit",
+      "sourceUrl": "https://www.toyark.com/2026/09/18/the-flash-movie-hot-toys-batman-arctic-suit-figure-599134",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Arctic-Suit-Batman-001.jpg",
+      "aliases": [
+        "MMS897"
+      ],
+      "codes": [
+        "MMS897"
+      ],
+      "gtin": null,
+      "toyarkPostId": 599134,
+      "title": "The Flash Movie – Hot Toys Batman Arctic Suit Figure",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys MMS; variant=The Flash Movie – Arctic Suit; year=2026; aliases-from-source=MMS897; new/reveal/pre-order/official-image signal"
+    },
     {
       "decision": "accept",
       "name": "Batman",
@@ -213,6 +342,84 @@
       "toyarkPostId": 599091,
       "title": "DC Multiverse – DC Classic Mera, Black Manta, Wonder Girl, and Raven",
       "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Ellen Ripley",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": "Power Loader",
+      "sourceUrl": "https://www.toyark.com/2026/09/16/aliens-hot-toys-power-loader-and-ripley-with-power-loader-set-599057",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Aliens-Power-Loader-and-Ripley-001.jpg",
+      "aliases": [
+        "MMS924",
+        "MMS923"
+      ],
+      "codes": [
+        "MMS924",
+        "MMS923"
+      ],
+      "gtin": null,
+      "toyarkPostId": 599057,
+      "title": "Aliens – Hot Toys Power Loader and Ripley with Power Loader Set",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys MMS; variant=Power Loader; year=2027; aliases-from-source=MMS924,MMS923; new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Iron Man",
+      "company": "threezero",
+      "line": "threezero DLX",
+      "year": 2026,
+      "releaseWindow": null,
+      "variant": "Marvel DLX Mark 1",
+      "sourceUrl": "https://www.toyark.com/2026/09/14/marvel-dlx-iron-man-mark-1-599022",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Marvel-DLX-Iron-Man-Mark-1-009.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599022,
+      "title": "Marvel DLX Iron Man Mark 1",
+      "rationale": "threezero via class:companies-threezero; line=threezero DLX; variant=Marvel DLX Mark 1; year=2026; new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Wolverine",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": "Marvel’s Video Game",
+      "sourceUrl": "https://www.toyark.com/2026/09/11/marvels-wolverine-hot-toys-wolverine-video-game-figure-598951",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Wolverine-Game-Figure-DX-003.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 598951,
+      "title": "Marvel’s Wolverine – Hot Toys Wolverine Video Game Figure",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; variant=Marvel’s Video Game; year=2027; new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Spider-Man",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": "No Way Home – Final Swing Suit / Final Swing Suit Deluxe",
+      "sourceUrl": "https://www.toyark.com/2026/09/11/spider-man-no-way-home-hot-toys-spider-man-final-swing-suit-deluxe-version-598927",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Spider-Man-Final-Swing-2.0-DX-001.jpg",
+      "aliases": [
+        "MMS922"
+      ],
+      "codes": [
+        "MMS922"
+      ],
+      "gtin": null,
+      "toyarkPostId": 598927,
+      "title": "Spider-Man: No Way Home – Hot Toys Spider-Man Final Swing Suit Deluxe Version",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys MMS; variant=No Way Home – Final Swing Suit / Final Swing Suit Deluxe; year=2027; aliases-from-source=MMS922; new/reveal/pre-order/official-image signal"
     },
     {
       "decision": "accept",
@@ -403,6 +610,142 @@
     },
     {
       "decision": "accept",
+      "name": "Iron Man",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Superior",
+      "sourceUrl": "https://www.toyark.com/2026/09/10/marvel-hot-toys-superior-iron-man-spider-man-3-peter-parker-avengers-doomsday-dr-doom-598754",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-Hot-Toys-Marvel-9.10.26.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 598754,
+      "title": "Marvel Hot Toys – Superior Iron Man, Spider-Man 3 Peter Parker, Avengers: Doomsday Dr. Doom",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; variant=Superior; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Peter Parker",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Spider-Man 3",
+      "sourceUrl": "https://www.toyark.com/2026/09/10/marvel-hot-toys-superior-iron-man-spider-man-3-peter-parker-avengers-doomsday-dr-doom-598754",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-Hot-Toys-Marvel-9.10.26.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 598754,
+      "title": "Marvel Hot Toys – Superior Iron Man, Spider-Man 3 Peter Parker, Avengers: Doomsday Dr. Doom",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; variant=Spider-Man 3; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Dr. Doom",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Avengers: Doomsday",
+      "sourceUrl": "https://www.toyark.com/2026/09/10/marvel-hot-toys-superior-iron-man-spider-man-3-peter-parker-avengers-doomsday-dr-doom-598754",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-Hot-Toys-Marvel-9.10.26.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 598754,
+      "title": "Marvel Hot Toys – Superior Iron Man, Spider-Man 3 Peter Parker, Avengers: Doomsday Dr. Doom",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; variant=Avengers: Doomsday; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Invincible",
+      "company": "super7",
+      "line": "Super7 ULTIMATES!",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Deluxe Wave 1",
+      "sourceUrl": "https://www.toyark.com/2026/09/08/invincible-super7-deluxe-wave-1-released-598647",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-Super7-Invincible-Wave-1.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 598647,
+      "title": "Invincible – Super7 Deluxe Wave 1 Released",
+      "rationale": "super7 via class:companies-super-7; line=Super7 ULTIMATES!; variant=Deluxe Wave 1; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Allen the Alien",
+      "company": "super7",
+      "line": "Super7 ULTIMATES!",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Deluxe Wave 1",
+      "sourceUrl": "https://www.toyark.com/2026/09/08/invincible-super7-deluxe-wave-1-released-598647",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-Super7-Invincible-Wave-1.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 598647,
+      "title": "Invincible – Super7 Deluxe Wave 1 Released",
+      "rationale": "super7 via class:companies-super-7; line=Super7 ULTIMATES!; variant=Deluxe Wave 1; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Thragg",
+      "company": "super7",
+      "line": "Super7 ULTIMATES!",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Deluxe Wave 1",
+      "sourceUrl": "https://www.toyark.com/2026/09/08/invincible-super7-deluxe-wave-1-released-598647",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-Super7-Invincible-Wave-1.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 598647,
+      "title": "Invincible – Super7 Deluxe Wave 1 Released",
+      "rationale": "super7 via class:companies-super-7; line=Super7 ULTIMATES!; variant=Deluxe Wave 1; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Angstrom Levy",
+      "company": "super7",
+      "line": "Super7 ULTIMATES!",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Deluxe Wave 1",
+      "sourceUrl": "https://www.toyark.com/2026/09/08/invincible-super7-deluxe-wave-1-released-598647",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-Super7-Invincible-Wave-1.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 598647,
+      "title": "Invincible – Super7 Deluxe Wave 1 Released",
+      "rationale": "super7 via class:companies-super-7; line=Super7 ULTIMATES!; variant=Deluxe Wave 1; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Thor",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Avengers: Doomsday",
+      "sourceUrl": "https://www.toyark.com/2026/09/04/avengers-doomsday-hot-toys-thor-figure-598596",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Avengers-Doomsday-Thor-DX-001.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 598596,
+      "title": "Avengers: Doomsday – Hot Toys Thor Figure",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; variant=Avengers: Doomsday; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
       "name": "Gamerverse Wolverine vs. Psylocke Player 2 Set",
       "company": "hasbro",
       "line": "Marvel Legends",
@@ -519,6 +862,23 @@
       "toyarkPostId": 598507,
       "title": "McFarlane DC Super Powers Final Wave Revealed",
       "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Super Powers; variant=Final Wave; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Venom",
+      "company": "threezero",
+      "line": "threezero DLX",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Marvel’s Spider-Man 2",
+      "sourceUrl": "https://www.toyark.com/2026/09/02/marvels-spider-man-2-threezero-venom-figure-598473",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/ThreeZero-Spider-Man-2-Venom-015.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 598473,
+      "title": "Marvel’s Spider-Man 2 – ThreeZero Venom Figure",
+      "rationale": "threezero via class:companies-threezero; line=threezero DLX; variant=Marvel’s Spider-Man 2; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
     }
   ],
   "rejects": [
@@ -539,42 +899,6 @@
       "toyarkPostId": 599172,
       "title": "The Chosen Prime Newsletter September 18, 2026",
       "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "super7",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599160,
-      "title": "TMNT – Leonardo, Michelangelo, Bebop, and Rocksteady ReAction Figure Pre-Orders",
-      "rationale": "Recognized super7 via class:companies-super-7; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "hottoys",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/18/the-flash-movie-hot-toys-batman-arctic-suit-figure-599134",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599134,
-      "title": "The Flash Movie – Hot Toys Batman Arctic Suit Figure",
-      "rationale": "Recognized hottoys via class:companies-hot-toys; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
     },
     {
       "decision": "reject",
@@ -628,7 +952,7 @@
       "gtin": null,
       "toyarkPostId": 599116,
       "title": "DC Comics – Amazing Yamaguchi Revoltech Peacemaker Preview",
-      "rationale": "Recognized kaiyodo via class:companies-kaiyodo; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized kaiyodo via class:companies-kaiyodo; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -646,7 +970,7 @@
       "gtin": null,
       "toyarkPostId": 599109,
       "title": "Ninja Gaiden – New Revoltech Previews",
-      "rationale": "Recognized kaiyodo via class:companies-kaiyodo; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized kaiyodo via class:companies-kaiyodo; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -664,25 +988,7 @@
       "gtin": null,
       "toyarkPostId": 599099,
       "title": "Ultraman – S.H. Figuarts Jirahs",
-      "rationale": "Recognized shfiguarts via class:companies-tamashii; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "hottoys",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/16/aliens-hot-toys-power-loader-and-ripley-with-power-loader-set-599057",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599057,
-      "title": "Aliens – Hot Toys Power Loader and Ripley with Power Loader Set",
-      "rationale": "Recognized hottoys via class:companies-hot-toys; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -700,25 +1006,7 @@
       "gtin": null,
       "toyarkPostId": 599040,
       "title": "Spider-Man: Across The Spider-Verse – SV-Action Miles G. Morales Figure",
-      "rationale": "Recognized sentinel via class:companies-sentinel; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "threezero",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/14/marvel-dlx-iron-man-mark-1-599022",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599022,
-      "title": "Marvel DLX Iron Man Mark 1",
-      "rationale": "Recognized threezero via class:companies-threezero; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized sentinel via class:companies-sentinel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -736,7 +1024,7 @@
       "gtin": null,
       "toyarkPostId": 598997,
       "title": "Tamashii Nations NYCC 2026 Exclusives Announced",
-      "rationale": "Recognized shfiguarts via class:companies-tamashii; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -754,43 +1042,7 @@
       "gtin": null,
       "toyarkPostId": 598983,
       "title": "Godzilla vs. Megaguirus – Hiya Toys Megaguirus Figure",
-      "rationale": "Recognized hiya via class:companies-hiya-toys; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "hottoys",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/11/marvels-wolverine-hot-toys-wolverine-video-game-figure-598951",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 598951,
-      "title": "Marvel’s Wolverine – Hot Toys Wolverine Video Game Figure",
-      "rationale": "Recognized hottoys via class:companies-hot-toys; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "hottoys",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/11/spider-man-no-way-home-hot-toys-spider-man-final-swing-suit-deluxe-version-598927",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 598927,
-      "title": "Spider-Man: No Way Home – Hot Toys Spider-Man Final Swing Suit Deluxe Version",
-      "rationale": "Recognized hottoys via class:companies-hot-toys; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized hiya via class:companies-hiya-toys; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -814,24 +1066,6 @@
       "decision": "reject",
       "reason": "company-not-allowlisted",
       "name": null,
-      "company": "hottoys",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/10/marvel-hot-toys-superior-iron-man-spider-man-3-peter-parker-avengers-doomsday-dr-doom-598754",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 598754,
-      "title": "Marvel Hot Toys – Superior Iron Man, Spider-Man 3 Peter Parker, Avengers: Doomsday Dr. Doom",
-      "rationale": "Recognized hottoys via class:companies-hot-toys; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
       "company": "other",
       "line": null,
       "year": null,
@@ -844,7 +1078,7 @@
       "gtin": null,
       "toyarkPostId": 598708,
       "title": "InArt The Batman, Arkham Origins Deathstroke, Arkham Origins XE Suit Batman",
-      "rationale": "Recognized other via class:companies-queen-studios; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized other via class:companies-queen-studios; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -862,7 +1096,7 @@
       "gtin": null,
       "toyarkPostId": 598694,
       "title": "Marvel’s Midnight Suns – One:12 Collective Blade",
-      "rationale": "Recognized mezco via class:companies-mezco; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized mezco via class:companies-mezco; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -880,25 +1114,7 @@
       "gtin": null,
       "toyarkPostId": 598663,
       "title": "Metal Gear Solid Delta: Snake Eater – Revolteh Ocelot",
-      "rationale": "Recognized kaiyodo via class:companies-kaiyodo; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "super7",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/08/invincible-super7-deluxe-wave-1-released-598647",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 598647,
-      "title": "Invincible – Super7 Deluxe Wave 1 Released",
-      "rationale": "Recognized super7 via class:companies-super-7; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized kaiyodo via class:companies-kaiyodo; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -934,7 +1150,7 @@
       "gtin": null,
       "toyarkPostId": 598641,
       "title": "New Epic H.A.C.K.S. Pre-Orders Today by Boss Fight Studio",
-      "rationale": "Recognized bossfight via class:companies-boss-fight-studio; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized bossfight via class:companies-boss-fight-studio; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -952,25 +1168,7 @@
       "gtin": null,
       "toyarkPostId": 598629,
       "title": "Mega Man 11 – Hiya Toys Mega Man Figure",
-      "rationale": "Recognized hiya via class:companies-hiya-toys; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "hottoys",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/04/avengers-doomsday-hot-toys-thor-figure-598596",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 598596,
-      "title": "Avengers: Doomsday – Hot Toys Thor Figure",
-      "rationale": "Recognized hottoys via class:companies-hot-toys; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized hiya via class:companies-hiya-toys; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -988,7 +1186,7 @@
       "gtin": null,
       "toyarkPostId": 598562,
       "title": "Burger King Dragon Ball Super Menu & Figures Announced",
-      "rationale": "Recognized other via class:companies-burger-king; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized other via class:companies-burger-king; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -1024,7 +1222,7 @@
       "gtin": null,
       "toyarkPostId": 598532,
       "title": "Batman v Superman – InArt 1/12 Scale Superman Figure",
-      "rationale": "Recognized other via class:companies-queen-studios; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized other via class:companies-queen-studios; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -1042,7 +1240,7 @@
       "gtin": null,
       "toyarkPostId": 598510,
       "title": "Chogokin Mechagodzilla and S.H. MonsterArts Godzilla 1993 Poster Version",
-      "rationale": "Recognized shfiguarts via class:companies-tamashii; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -1060,7 +1258,7 @@
       "gtin": null,
       "toyarkPostId": 598493,
       "title": "CHOGOKIN Voltron: Defender of the Universe Pre-Order",
-      "rationale": "Recognized shfiguarts via class:companies-tamashii; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -1078,25 +1276,7 @@
       "gtin": null,
       "toyarkPostId": 598264,
       "title": "Dragon Ball Z – S.H. Figuarts Z-Fighters Vegeta and Trunks – UPDATE",
-      "rationale": "Recognized shfiguarts via class:companies-tamashii; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "threezero",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/02/marvels-spider-man-2-threezero-venom-figure-598473",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 598473,
-      "title": "Marvel’s Spider-Man 2 – ThreeZero Venom Figure",
-      "rationale": "Recognized threezero via class:companies-threezero; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -1114,7 +1294,7 @@
       "gtin": null,
       "toyarkPostId": 598452,
       "title": "King of Fighters ’98 – Storm Arena Iori Yagami Pre-Order",
-      "rationale": "Recognized storm via class:companies-storm-collectibles; v1 allowlist is hasbro, mcfarlane, neca, jazwares."
+      "rationale": "Recognized storm via class:companies-storm-collectibles; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
