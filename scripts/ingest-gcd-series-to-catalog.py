@@ -1353,6 +1353,34 @@ def ingest_series(
     return rows, skips, upc_local, cover_local
 
 
+
+def dump_issue_cover_year(issue: dict) -> int | None:
+    """Best-effort year from dump fields for pre-parse year gating."""
+    for key in ("key_date", "on_sale_date", "publication_date"):
+        raw = str(issue.get(key) or "").strip()
+        if not raw:
+            continue
+        m = re.search(r"(19|20)\d{2}", raw)
+        if m:
+            return int(m.group(0))
+    return None
+
+
+def preparse_year_skip(issue: dict, *, min_year: int, max_year: int | None) -> str | None:
+    """Return min-year / max-year / pre-floor when dump dates are decisive."""
+    year = dump_issue_cover_year(issue)
+    if year is None:
+        return None
+    floor_year = int(FLOOR[:4]) if FLOOR else 0
+    if floor_year and year < floor_year:
+        return "pre-floor"
+    if min_year and year < min_year:
+        return "min-year"
+    if max_year is not None and year > max_year:
+        return "max-year"
+    return None
+
+
 def ingest_series_from_dump(
     series_id: str,
     *,
@@ -1427,6 +1455,17 @@ def ingest_series_from_dump(
                     "issue": issue.get("number") or desc,
                     "gcdIssueId": issue.get("id"),
                     "reason": "variant",
+                }
+            )
+            continue
+        year_skip = preparse_year_skip(issue, min_year=min_year, max_year=max_year)
+        if year_skip:
+            skips.append(
+                {
+                    "seriesId": series_id,
+                    "issue": issue.get("number") or desc,
+                    "gcdIssueId": issue.get("id"),
+                    "reason": year_skip,
                 }
             )
             continue
