@@ -472,6 +472,52 @@ def build_viewer_family_index(
 
 
 
+
+def build_prefix_index(
+    existing_meta: dict[str, dict],
+) -> dict[str, list[tuple[str, dict]]]:
+    """series_match_key → [(catalog_id, meta), ...] for O(1) prefix reuse."""
+    index: dict[str, list[tuple[str, dict]]] = {}
+    for cid, meta in existing_meta.items():
+        if not isinstance(meta, dict):
+            continue
+        key = locg.series_match_key(str(meta.get("series") or ""))
+        if not key:
+            continue
+        index.setdefault(key, []).append((str(cid), meta))
+    return index
+
+
+def infer_existing_prefix_indexed(
+    existing_meta: dict[str, dict],
+    series: str,
+    publisher: str,
+    prefix_index: dict[str, list[tuple[str, dict]]] | None = None,
+) -> str | None:
+    """Same result as locg.infer_existing_prefix; uses series index when provided."""
+    if prefix_index is None:
+        return locg.infer_existing_prefix(existing_meta, series, publisher)
+    from collections import Counter
+
+    counts: Counter[str] = Counter()
+    key = locg.series_match_key(series)
+    for cid, meta in prefix_index.get(key, ()):
+        if not locg.series_names_match(meta.get("series"), series):
+            continue
+        if not bf.publisher_ok(meta.get("publisher"), publisher):
+            continue
+        iss = str(meta.get("issue") or "")
+        if not iss:
+            continue
+        if cid.endswith(f"-{iss}-fac"):
+            counts[cid[: -(len(iss) + 5)]] += 1
+        elif cid.endswith(f"-{iss}"):
+            counts[cid[: -(len(iss) + 1)]] += 1
+    if not counts:
+        return None
+    return counts.most_common(1)[0][0]
+
+
 def build_series_canon_index(
     existing_meta: dict[str, dict],
 ) -> dict[str, list[tuple[str, str]]]:
@@ -1876,6 +1922,14 @@ def main(argv: list[str] | None = None) -> int:
     existing_keys = existing_keys_plain | identity_keys_from_meta(existing_meta)
     family_index = build_viewer_family_index(existing_meta)
     series_index = build_series_canon_index(existing_meta)
+    prefix_index = build_prefix_index(existing_meta)
+
+    def _infer_existing_prefix_fast(existing_meta_arg, series, publisher):
+        return infer_existing_prefix_indexed(
+            existing_meta_arg, series, publisher, prefix_index
+        )
+
+    locg.infer_existing_prefix = _infer_existing_prefix_fast  # type: ignore[method-assign]
     upc_map = bf.load_json(root / "src/data/comic-upc-map.json", {})
     cover_urls = bf.load_json(root / "src/data/comic-cover-urls.json", {})
     existing_gcd = collect_gcd_ids(upc_map)
