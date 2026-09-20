@@ -876,6 +876,7 @@ def gate_reason(
     min_year: int,
     catalog_id: str | None,
     include_collected: bool = True,
+    max_year: int | None = None,
 ) -> str | None:
     """Shelby/Lyra: keep if ANY of gcdIssueId OR upc OR isbn + real identity."""
     gid = str(parsed.get("gcdIssueId") or "")
@@ -903,6 +904,8 @@ def gate_reason(
         return "pre-floor"
     if min_year and int(cover_date[:4]) < min_year:
         return "min-year"
+    if max_year is not None and int(cover_date[:4]) > max_year:
+        return "max-year"
     if not catalog_id:
         return "id-collision"
     if catalog_id in existing_ids:
@@ -976,6 +979,7 @@ def finish_catalog_row(
     min_year: int,
     id_prefix: str | None,
     include_collected: bool = True,
+    max_year: int | None = None,
 ) -> tuple[list | None, dict | None]:
     parsed["series"], parsed["publisher"] = locg.canon_series_publisher(
         parsed.get("series") or "", parsed.get("publisher") or "", existing_meta
@@ -998,6 +1002,7 @@ def finish_catalog_row(
         existing_gcd=existing_gcd,
         existing_locg=existing_locg,
         min_year=min_year,
+        max_year=max_year,
         catalog_id=catalog_id,
         include_collected=include_collected,
     )
@@ -1053,6 +1058,7 @@ def ingest_series(
     client: GcdClient,
     max_issues: int,
     min_year: int,
+    max_year: int | None = None,
     mains_only: bool,
     publisher_filter: str,
     existing_ids: set[str],
@@ -1074,9 +1080,10 @@ def ingest_series(
         return rows, skips, upc_local, cover_local
 
     # Do NOT hard-skip the whole series on year_began < min_year.
-    # Long-running titles (Action Comics 2011→) still have post-min_year
+    # Long-running titles (Action Comics 1938→) still have post-min_year
     # issues; per-issue gate_reason(min_year) filters those. Publisher
-    # discovery already applies year_began via series_for_publisher.
+    # ingest discovery lists all series (min_year=0); --list-dump-series
+    # may still filter year_began for operator listing.
 
     publisher = publisher_from_series(series, client)
     if publisher_filter:
@@ -1205,6 +1212,7 @@ def ingest_series(
             existing_locg=existing_locg,
             existing_meta=existing_meta,
             min_year=min_year,
+            max_year=max_year,
             id_prefix=id_prefix,
             include_collected=include_collected,
         )
@@ -1225,6 +1233,7 @@ def ingest_series_from_dump(
     store: gcd_dump.GcdDumpStore,
     max_issues: int,
     min_year: int,
+    max_year: int | None = None,
     mains_only: bool,
     publisher_filter: str,
     existing_ids: set[str],
@@ -1247,9 +1256,10 @@ def ingest_series_from_dump(
         return rows, skips, upc_local, cover_local
 
     # Do NOT hard-skip the whole series on year_began < min_year.
-    # Long-running titles (Action Comics 2011→) still have post-min_year
+    # Long-running titles (Action Comics 1938→) still have post-min_year
     # issues; per-issue gate_reason(min_year) filters those. Publisher
-    # discovery already applies year_began via series_for_publisher.
+    # ingest discovery lists all series (min_year=0); --list-dump-series
+    # may still filter year_began for operator listing.
 
     pub_row = store.get_publisher(series.get("publisher_id")) if series.get("publisher_id") is not None else None
     publisher = str((pub_row or {}).get("name") or "").strip()
@@ -1356,6 +1366,7 @@ def ingest_series_from_dump(
             existing_locg=existing_locg,
             existing_meta=existing_meta,
             min_year=min_year,
+            max_year=max_year,
             id_prefix=id_prefix,
             include_collected=include_collected,
         )
@@ -1461,6 +1472,12 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--max-issues", type=int, default=0, help="Cap issues per series (0=no cap)")
     ap.add_argument("--dry-run", action="store_true", help="Parse and gate only; do not write")
     ap.add_argument("--min-year", type=int, default=1980, help="Skip series/issues below this year")
+    ap.add_argument(
+        "--max-year",
+        type=int,
+        default=0,
+        help="Skip series/issues above this year (0=no ceiling)",
+    )
     ap.add_argument("--fixture-dir", type=str, default="", help="API JSON fixtures (only with --use-api)")
     ap.add_argument("--from-cache", action="store_true", help="Use series ids from comic-gcd-series-cache.json")
     ap.add_argument("--list-cache-seeds", action="store_true", help="Print cached GCD series ids and exit")
@@ -1601,7 +1618,12 @@ def main(argv: list[str] | None = None) -> int:
                 store.close()
                 raise SystemExit(f"no dump publisher match for {args.publisher!r}")
             for pub in pubs:
-                for s in store.series_for_publisher(pub["id"], args.min_year):
+                # Ingest discovery: list ALL non-deleted series for the publisher.
+                # Do NOT pass --min-year here — year_began < min_year series
+                # (Action Comics 1938, Amazing Spider-Man 1963, …) still carry
+                # post-min_year issues; per-issue gate_reason(min_year) filters.
+                # --list-dump-series keeps the year filter for operator listing.
+                for s in store.series_for_publisher(pub["id"], 0):
                     series_ids.append(str(s["id"]))
             series_ids = _dedupe_ids(series_ids)
             print(f"dump publisher {args.publisher!r} → {len(series_ids)} series", file=sys.stderr)
@@ -1687,6 +1709,7 @@ def main(argv: list[str] | None = None) -> int:
                         store=store,
                         max_issues=args.max_issues,
                         min_year=args.min_year,
+                        max_year=(args.max_year or None),
                         mains_only=args.mains_only,
                         publisher_filter=args.publisher,
                         existing_ids=existing_ids,
@@ -1704,6 +1727,7 @@ def main(argv: list[str] | None = None) -> int:
                         client=client,
                         max_issues=args.max_issues,
                         min_year=args.min_year,
+                        max_year=(args.max_year or None),
                         mains_only=args.mains_only,
                         publisher_filter=args.publisher,
                         existing_ids=existing_ids,

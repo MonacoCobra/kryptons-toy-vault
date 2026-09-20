@@ -604,6 +604,132 @@ class DumpIngestTest(unittest.TestCase):
         self.assertTrue(ids)
         self.assertTrue(any(i.startswith("im-") for i in ids))
 
+    def test_ingest_discovery_keeps_pre_min_year_series(self):
+        """year_began < --min-year series still enter ingest; issue gate filters years.
+
+        Action Comics–style: series began 1938, but 1985+ issues must be discovered
+        when ingesting with --min-year 1985. Discovery uses min_year=0; list-dump
+        may still filter year_began.
+        """
+        td = Path(tempfile.mkdtemp())
+        dump = td / "dump"
+        dump.mkdir()
+        (dump / "gcd_publisher.json").write_text(
+            json.dumps([{"id": 54, "name": "DC", "deleted": 0}]) + "\n"
+        )
+        (dump / "gcd_series.json").write_text(
+            json.dumps(
+                [
+                    {
+                        "id": 900301,
+                        "name": "Action Comics Fixture",
+                        "year_began": 1938,
+                        "publisher_id": 54,
+                        "deleted": 0,
+                    },
+                    {
+                        "id": 900302,
+                        "name": "Modern Only Fixture",
+                        "year_began": 1990,
+                        "publisher_id": 54,
+                        "deleted": 0,
+                    },
+                ]
+            )
+            + "\n"
+        )
+        (dump / "gcd_issue.json").write_text(
+            json.dumps(
+                [
+                    {
+                        "id": 8100001,
+                        "number": "1",
+                        "series_id": 900301,
+                        "publication_date": "June 1938",
+                        "key_date": "1938-06-00",
+                        "on_sale_date": "",
+                        "price": "0.10 USD",
+                        "barcode": "",
+                        "isbn": "",
+                        "valid_isbn": "",
+                        "variant_of_id": None,
+                        "variant_name": "",
+                        "title": "",
+                        "sort_code": 1,
+                        "deleted": 0,
+                    },
+                    {
+                        "id": 8100002,
+                        "number": "575",
+                        "series_id": 900301,
+                        "publication_date": "January 1986",
+                        "key_date": "1986-01-00",
+                        "on_sale_date": "",
+                        "price": "0.75 USD",
+                        "barcode": "",
+                        "isbn": "",
+                        "valid_isbn": "",
+                        "variant_of_id": None,
+                        "variant_name": "",
+                        "title": "",
+                        "sort_code": 575,
+                        "deleted": 0,
+                    },
+                    {
+                        "id": 8100003,
+                        "number": "1",
+                        "series_id": 900302,
+                        "publication_date": "March 1990",
+                        "key_date": "1990-03-00",
+                        "on_sale_date": "",
+                        "price": "1.00 USD",
+                        "barcode": "",
+                        "isbn": "",
+                        "valid_isbn": "",
+                        "variant_of_id": None,
+                        "variant_name": "",
+                        "title": "",
+                        "sort_code": 1,
+                        "deleted": 0,
+                    },
+                ]
+            )
+            + "\n"
+        )
+
+        store = gcd_dump.JsonDumpStore(
+            {
+                "gcd_publisher": json.loads((dump / "gcd_publisher.json").read_text()),
+                "gcd_series": json.loads((dump / "gcd_series.json").read_text()),
+                "gcd_issue": json.loads((dump / "gcd_issue.json").read_text()),
+            }
+        )
+        # Helper still filters when asked (list-dump-series path).
+        self.assertEqual(
+            [s["id"] for s in store.series_for_publisher(54, min_year=1985)],
+            [900302],
+        )
+        # Ingest discovery must list pre-min_year series too.
+        self.assertEqual(
+            sorted(s["id"] for s in store.series_for_publisher(54, min_year=0)),
+            [900301, 900302],
+        )
+
+        root = self._mini_root()
+        report = self._run(
+            [],
+            extra=["--publisher", "54", "--min-year", "1985"],
+            root=root,
+            dump_dir=dump,
+        )
+        added_gids = {r["gcdIssueId"] for r in report["added"]}
+        self.assertIn("8100002", added_gids)  # 1986 issue from 1938 series
+        self.assertIn("8100003", added_gids)  # 1990 modern series
+        self.assertNotIn("8100001", added_gids)  # 1938 issue gated by min_year
+        skip_by_gid = {str(s.get("gcdIssueId")): s["reason"] for s in report["skipped"] if s.get("gcdIssueId")}
+        # 1938 issue is year-gated (pre-floor before min-year when floor=1980).
+        self.assertIn(skip_by_gid.get("8100001"), {"min-year", "pre-floor"})
+
     def test_dump_sql_slice(self):
         root = self._mini_root()
         report = self._run(["900101"], root=root, dump_dir=DUMP_SQL_DIR)
