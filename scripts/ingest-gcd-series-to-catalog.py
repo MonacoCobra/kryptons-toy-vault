@@ -1015,6 +1015,43 @@ def finish_catalog_row(
     include_collected: bool = True,
     max_year: int | None = None,
 ) -> tuple[list | None, dict | None]:
+    # Cheap year/date gates BEFORE O(catalog) canon_series_publisher / id minting.
+    # Same skip reasons as gate_reason for these cases; avoids scanning ~100k meta
+    # rows for every pre-min_year dump issue on long-running series.
+    cover_date = str(parsed.get("coverDate") or "")
+    if not re.match(r"^\d{4}-\d{2}-\d{2}$", cover_date):
+        return None, {
+            "seriesId": series_id,
+            "issue": parsed.get("issue") or desc,
+            "gcdIssueId": parsed.get("gcdIssueId"),
+            "variant": parsed.get("variantName") or None,
+            "reason": "no-cover-date",
+        }
+    if cover_date < FLOOR:
+        return None, {
+            "seriesId": series_id,
+            "issue": parsed.get("issue") or desc,
+            "gcdIssueId": parsed.get("gcdIssueId"),
+            "variant": parsed.get("variantName") or None,
+            "reason": "pre-floor",
+        }
+    if min_year and int(cover_date[:4]) < min_year:
+        return None, {
+            "seriesId": series_id,
+            "issue": parsed.get("issue") or desc,
+            "gcdIssueId": parsed.get("gcdIssueId"),
+            "variant": parsed.get("variantName") or None,
+            "reason": "min-year",
+        }
+    if max_year is not None and int(cover_date[:4]) > max_year:
+        return None, {
+            "seriesId": series_id,
+            "issue": parsed.get("issue") or desc,
+            "gcdIssueId": parsed.get("gcdIssueId"),
+            "variant": parsed.get("variantName") or None,
+            "reason": "max-year",
+        }
+
     parsed["series"], parsed["publisher"] = locg.canon_series_publisher(
         parsed.get("series") or "", parsed.get("publisher") or "", existing_meta
     )
