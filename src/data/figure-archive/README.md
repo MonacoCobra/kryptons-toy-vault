@@ -23,10 +23,11 @@ Canonical figure `sku` is GTIN; listing codes are aliases.
 See `docs/figure-identity.md`. Collapse script:
 `python3 scripts/collapse-figure-identity.py` (dry-run) / `--apply`.
 
-## Toyark densify dry-run
+## Toyark densify
 
-`scripts/dry-run-toyark-densify.py` proposes new-figure candidates from The
+`scripts/toyark-densify.py` / `scripts/dry-run-toyark-densify.py` poll The
 Toyark WP REST API (Hasbro / McFarlane / NECA / Jazwares / Super7 plus vault
 1/6 ids: Hot Toys, Mondo, threezero, Enterbay, Asmus, Star Ace, EXO-6).
-Report only (`toyark-densify-dry-run.json`); no oneshot / SKU / alias / image
-writes. `--apply` is not wired. See `docs/toyark-densify.md`.
+Dry-run writes `toyark-densify-dry-run.json`. `--apply` appends accepted
+singles to oneshot + aliases + image URLs (never invents GTINs; comics
+untouched). Cap ~50/run. See `docs/toyark-densify.md`.
