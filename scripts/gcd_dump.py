@@ -29,6 +29,24 @@ from pathlib import Path
 from typing import Any, Iterable, Iterator
 
 NEEDED_TABLES = ("gcd_publisher", "gcd_series", "gcd_issue")
+# Exact dump tables only. An optional trailing backtick is not a boundary when
+# the next character is `_`, so `gcd_issue` would otherwise also match
+# `gcd_issue_credit`, `gcd_issue_brand_emblem`, `gcd_series_bond`, etc.
+# Those wrong INSERTs then INSERT OR REPLACE into gcd_issue / gcd_series with
+# a short column list and NULL out a previously loaded real row.
+SQL_TABLE_NAME = r"`?(gcd_publisher|gcd_series|gcd_issue)(?![A-Za-z0-9_])`?"
+CREATE_TABLE_RE = re.compile(
+    rf"CREATE TABLE(?:\s+IF NOT EXISTS)?\s+{SQL_TABLE_NAME}",
+    re.I,
+)
+INSERT_TABLE_RE = re.compile(
+    rf"(?:INSERT(?:\s+IGNORE)?|REPLACE)\s+INTO\s+{SQL_TABLE_NAME}",
+    re.I,
+)
+INSERT_COLUMN_LIST_RE = re.compile(
+    rf"(?:INSERT(?:\s+IGNORE)?|REPLACE)\s+INTO\s+{SQL_TABLE_NAME}\s*\((.*?)\)\s*VALUES",
+    re.I | re.S,
+)
 JSON_ALIASES = {
     "gcd_publisher": ("gcd_publisher.json", "publishers.json", "gcd_publishers.json"),
     "gcd_series": ("gcd_series.json", "series.json"),
@@ -338,15 +356,11 @@ def iter_mysql_tuples(values_sql: str) -> Iterator[list[Any]]:
 
 def parse_insert_column_list(blob: str) -> list[str] | None:
     """Column names from `INSERT INTO t (`a`,`b`) VALUES` when mysqldump used --complete-insert."""
-    m = re.search(
-        r"(?:INSERT(?:\s+IGNORE)?|REPLACE)\s+INTO\s+`?(?:gcd_publisher|gcd_series|gcd_issue)`?\s*\((.*?)\)\s*VALUES",
-        blob,
-        re.I | re.S,
-    )
+    m = INSERT_COLUMN_LIST_RE.search(blob)
     if not m:
         return None
     cols: list[str] = []
-    for raw in m.group(1).split(","):
+    for raw in m.group(2).split(","):
         cm = re.search(r"`([^`]+)`", raw) or re.search(r"([A-Za-z_][A-Za-z0-9_]*)", raw)
         if cm:
             cols.append(cm.group(1))
@@ -711,11 +725,7 @@ def load_sql_files_into_sqlite(
                     if pos and pos - last_report >= 80 * 1024 * 1024:
                         print(f"  read {pos / 1e9:.2f}/{size / 1e9:.2f} GB", file=sys.stderr)
                         last_report = pos
-                cm = re.match(
-                    r"CREATE TABLE(?:\s+IF NOT EXISTS)?\s+`?(gcd_publisher|gcd_series|gcd_issue)`?",
-                    line,
-                    re.I,
-                )
+                cm = CREATE_TABLE_RE.match(line)
                 if cm:
                     current_table = cm.group(1).lower()
                     in_create = True
@@ -728,11 +738,7 @@ def load_sql_files_into_sqlite(
                         create_buf = ""
                         current_table = None
                     continue
-                im = re.match(
-                    r"(?:INSERT(?:\s+IGNORE)?|REPLACE)\s+INTO\s+`?(gcd_publisher|gcd_series|gcd_issue)`?",
-                    line,
-                    re.I,
-                )
+                im = INSERT_TABLE_RE.match(line)
                 if im:
                     current_table = im.group(1).lower()
                     in_insert = True
