@@ -189,3 +189,12 @@ python3 scripts/audit-figure-sku-mismatches.py --apply --rematch  # optional; pr
 Joins every oneshot GTIN primary to `product-sku-index` and flags title disagreements
 (multipack vs single, hard theme conflicts, score_reject+char_missing). Soft/borderline
 hits are reported only. Report: `src/data/figure-archive/sku-mismatch-audit.json`.
+
+## Toyark new-figure densify (dry-run only)
+
+`scripts/dry-run-toyark-densify.py` polls The Toyark WP REST
+(`/wp-json/wp/v2/posts?_embed=1`; RSS `/feed/` is robots-disallowed) for
+Hasbro / McFarlane / NECA / Jazwares reveals and writes
+`src/data/figure-archive/toyark-densify-dry-run.json`. **No apply path** — it
+does not write oneshot, sku-map, aliases, or image URLs. See
+`docs/toyark-densify.md`.

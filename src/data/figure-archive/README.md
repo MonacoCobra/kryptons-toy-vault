@@ -22,3 +22,9 @@ and `../figure-sku-map.json`.
 Canonical figure `sku` is GTIN; listing codes are aliases.
 See `docs/figure-identity.md`. Collapse script:
 `python3 scripts/collapse-figure-identity.py` (dry-run) / `--apply`.
+
+## Toyark densify dry-run
+
+`scripts/dry-run-toyark-densify.py` proposes new-figure candidates from The
+Toyark WP REST API. Report only (`toyark-densify-dry-run.json`); no oneshot /
+SKU / alias / image writes. `--apply` is not wired. See `docs/toyark-densify.md`.
