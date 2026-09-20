@@ -108,6 +108,8 @@ PUB_PREFIX = {
     "dc entertainment": "dc",
     "dc comics / vertigo": "vert",
     "vertigo": "vert",
+    "dc comics / wildstorm": "ws",
+    "wildstorm": "ws",
     "image comics": "im",
     "image": "im",
     "image / top cow": "im",
@@ -137,6 +139,8 @@ PUB_CANON = {
     "marvel": "Marvel Comics",
     "dc comics": "DC Comics",
     "dc": "DC Comics",
+    "wildstorm": "WildStorm",
+    "dc comics / wildstorm": "WildStorm",
     "skybound": "Skybound / Image",
     "skybound image": "Skybound / Image",
 }

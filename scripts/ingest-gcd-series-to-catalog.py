@@ -232,6 +232,41 @@ def variant_of_id(issue: dict) -> str | None:
     return token if token.isdigit() else None
 
 
+
+# Image-era WildStorm line titles (GCD publisher is Image; catalog label WildStorm).
+_WILDSTORM_SERIES_RE = re.compile(
+    r"wildc\.?a\.?t|gen\s*13|gen13|storm\s*watch|stormwatch|wetworks|\bdv8\b|"
+    r"divine right|wildstorm|wild\s*storm|team\s*7|deathblow|backlash|grifter|"
+    r"cybernary|wildcore",
+    re.I,
+)
+
+
+def catalog_publisher_label(series_name: str, dump_publisher: str) -> str:
+    """Map dump publisher → catalog label. Honest imprint detection only; never invent.
+
+    Vertigo/Milestone/Helix/Paradox have no separate GCD publisher volume here — they
+    live under DC (54). Only rename when the series title itself carries the imprint.
+    WildStorm-era Image series (709) get catalog publisher WildStorm by known titles.
+    """
+    pub = (dump_publisher or "").strip()
+    name = series_name or ""
+    pub_l = pub.lower()
+    if pub_l in {"image", "image comics"} and _WILDSTORM_SERIES_RE.search(name):
+        return "WildStorm"
+    if pub_l in {"dc", "dc comics"} or pub_l.startswith("dc "):
+        nl = name.lower()
+        if "vertigo" in nl:
+            return "DC Comics / Vertigo"
+        if "milestone" in nl:
+            return "DC Comics / Milestone"
+        if re.search(r"\bhelix\b", nl):
+            return "DC Comics / Helix"
+        if "paradox" in nl:
+            return "DC Comics / Paradox Press"
+    return pub
+
+
 def is_cover_a_name(name: str | None) -> bool:
     """True when GCD variant_name is empty or Cover A / regular / main (the parent).
 
@@ -1363,7 +1398,10 @@ def ingest_series(
     # ingest discovery lists all series (min_year=0); --list-dump-series
     # may still filter year_began for operator listing.
 
-    publisher = publisher_from_series(series, client)
+    publisher = catalog_publisher_label(
+        str(series.get("name") or ""),
+        publisher_from_series(series, client),
+    )
     if publisher_filter:
         pf = publisher_filter.strip()
         pub_url = str(series.get("publisher") or "")
@@ -1591,7 +1629,10 @@ def ingest_series_from_dump(
     # may still filter year_began for operator listing.
 
     pub_row = store.get_publisher(series.get("publisher_id")) if series.get("publisher_id") is not None else None
-    publisher = str((pub_row or {}).get("name") or "").strip()
+    publisher = catalog_publisher_label(
+        str(series.get("name") or ""),
+        str((pub_row or {}).get("name") or "").strip(),
+    )
     if publisher_filter:
         pf = publisher_filter.strip()
         if pf.isdigit():

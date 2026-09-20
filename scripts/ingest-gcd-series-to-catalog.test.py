@@ -1247,5 +1247,21 @@ class DumpIngestTest(unittest.TestCase):
 
 
 
+    def test_catalog_publisher_label_wildstorm_and_imprints(self):
+        self.assertEqual(ingest.catalog_publisher_label("Gen 13", "Image"), "WildStorm")
+        self.assertEqual(ingest.catalog_publisher_label("WildC.A.T.s", "Image Comics"), "WildStorm")
+        self.assertEqual(ingest.catalog_publisher_label("Spawn", "Image"), "Image")
+        self.assertEqual(ingest.catalog_publisher_label("Action Comics", "DC"), "DC")
+        self.assertEqual(
+            ingest.catalog_publisher_label("Essential Vertigo: The Sandman", "DC"),
+            "DC Comics / Vertigo",
+        )
+        self.assertEqual(
+            ingest.catalog_publisher_label("Helix Preview", "DC"),
+            "DC Comics / Helix",
+        )
+
+
+
 if __name__ == "__main__":
     unittest.main()
