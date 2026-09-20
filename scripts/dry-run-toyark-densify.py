@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Toyark WordPress REST dry-run: propose new-figure densify candidates.
+"""Toyark WordPress REST densify: propose (and optionally apply) new figures.
 
 Polls https://www.toyark.com/wp-json/wp/v2/posts (with `_embed`) in a bounded
 date window, filters to an allowlisted company set, and writes a JSON report.
 
-Dry-run only. Does **not** write oneshot.json, figure-sku-map, aliases,
-figure-image-urls, or any other catalog file. `--apply` is refused in v1.
+Default is dry-run (report only). `--apply` appends accepted candidates that
+are not already in oneshot (company+line+name+year+variant). Babysits may
+commit figure-archive / alias / image-url deltas to main afterward.
 
 Policy:
   - GTIN preferred but not required; never invent GTINs/UPCs/product codes
@@ -20,14 +21,18 @@ Policy:
   - Prefer new/reveal/pre-order/official-image + recognizable company/line
   - Multi-figure: one candidate per explicitly named figure/variant;
     multipacks stay one set when the source treats them as one product
-  - Capture featured/source image URLs on candidates only (no rematch)
+    (apply skips pack/set rows — low-and-slow singles)
+  - Featured/source image URLs on **new** rows only (no rematch)
   - Comics / Build Publish / Mephitsu crawl: untouched
+  - Live urllib may be Cloudflare-challenged: use --posts-json; apply
+    exits non-zero with a clear blocker if live fetch fails
 
 See docs/toyark-densify.md.
 """
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html as html_lib
 import json
 import re
@@ -55,16 +60,25 @@ from figure_identity import (  # noqa: E402
 )
 
 ONESHOT = ROOT / "src/data/figure-archive/oneshot.json"
+ALIASES = ROOT / "src/data/figure-sku-aliases.json"
+SKU_MAP = ROOT / "src/data/figure-sku-map.json"
+URLS = ROOT / "src/data/figure-image-urls.json"
+ONESHOT_STATS = ROOT / "src/data/figure-archive/oneshot-stats.json"
 DEFAULT_REPORT = ROOT / "src/data/figure-archive/toyark-densify-dry-run.json"
+DEFAULT_APPLY_REPORT = ROOT / "src/data/figure-archive/toyark-densify-apply.json"
+DEFAULT_STATS = ROOT / "src/data/figure-archive/toyark-densify-stats.json"
 
 TOYARK_ORIGIN = "https://www.toyark.com"
 REST_POSTS = f"{TOYARK_ORIGIN}/wp-json/wp/v2/posts"
 ROBOTS_URL = f"{TOYARK_ORIGIN}/robots.txt"
 
+SOURCE = "toyark-densify"
+DEFAULT_CAP = 50  # low-and-slow; babysit noon + 11:30pm MT
+
 UA = (
-    "KryptonsToyVault-ToyarkDensify/1.0 "
+    "KryptonsToyVault-ToyarkDensify/1.1 "
     "(+https://github.com/MonacoCobra/kryptons-toy-vault; "
-    "figure-archive dry-run research bot; polite; no writes)"
+    "figure-archive densify bot; polite; never invent GTIN)"
 )
 
 # Vault CompanyIds only (src/data/companies.ts / src/lib/types.ts). No sideshow id.
@@ -326,22 +340,44 @@ def slug_to_name(slug: str) -> str:
     return title_case_name(slug.replace("-", " "))
 
 
-def http_get(url: str, *, timeout: float = 45) -> tuple[int, bytes, str]:
-    req = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": UA,
-            "Accept": "application/json, text/plain;q=0.8, */*;q=0.5",
-            "Accept-Language": "en-US,en;q=0.8",
-        },
-        method="GET",
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return int(resp.status), resp.read(), resp.headers.get("Content-Type") or ""
-    except urllib.error.HTTPError as e:
-        body = e.read() if e.fp else b""
-        return int(e.code), body, e.headers.get("Content-Type") if e.headers else ""
+def http_get(
+    url: str,
+    *,
+    timeout: float = 45,
+    retries: int = 2,
+    retry_sleep: float = 1.5,
+) -> tuple[int, bytes, str]:
+    """Polite GET with short retries. Cloudflare 403 is retried then returned."""
+    last: tuple[int, bytes, str] = (0, b"", "")
+    attempts = max(1, retries + 1)
+    for attempt in range(attempts):
+        req = urllib.request.Request(
+            url,
+            headers={
+                "User-Agent": UA,
+                "Accept": "application/json, text/plain;q=0.8, */*;q=0.5",
+                "Accept-Language": "en-US,en;q=0.8",
+            },
+            method="GET",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                last = (int(resp.status), resp.read(), resp.headers.get("Content-Type") or "")
+        except urllib.error.HTTPError as e:
+            body = e.read() if e.fp else b""
+            ctype = e.headers.get("Content-Type") if e.headers else ""
+            last = (int(e.code), body, ctype or "")
+        except urllib.error.URLError as e:
+            last = (0, str(e.reason if hasattr(e, "reason") else e).encode(), "")
+        except TimeoutError as e:
+            last = (0, str(e).encode(), "")
+        status, body, _ = last
+        retryable = status in (0, 429, 502, 503, 504) or looks_like_cloudflare(status, body)
+        if retryable and attempt < attempts - 1:
+            time.sleep(retry_sleep * (attempt + 1))
+            continue
+        return last
+    return last
 
 
 def looks_like_cloudflare(status: int, body: bytes) -> bool:
@@ -954,6 +990,23 @@ class OneshotIndex:
             self.by_name_line.setdefault(nl, []).append(r["id"])
         self.row_count = n
 
+    def add(self, row: dict[str, Any]) -> None:
+        """Register a newly applied row so the same run cannot double-insert."""
+        company = str(row.get("company") or "").lower()
+        ik = identity_group_key(row)
+        self.by_identity.setdefault(ik, []).append(row["id"])
+        year = str(row.get("releaseDate") or "")[:4]
+        core = (
+            company,
+            norm_text(str(row.get("name") or "")),
+            norm_text(str(row.get("line") or "")),
+            year,
+        )
+        self.by_core.setdefault(core, []).append(row["id"])
+        nl = (company, norm_text(str(row.get("name") or "")), norm_text(str(row.get("line") or "")))
+        self.by_name_line.setdefault(nl, []).append(row["id"])
+        self.row_count += 1
+
     def match(
         self, company: str, name: str, line: str, year: int | None, variant: str
     ) -> tuple[str | None, list[str]]:
@@ -1100,6 +1153,8 @@ def evaluate_post(
     source = post.get("link") or ""
     pid = post.get("id")
     image = featured_image(post)
+    dt = post_datetime(post)
+    post_year = dt.year if dt else None
 
     cr = content_reject_reason(classes, title, blob)
     if cr:
@@ -1361,11 +1416,378 @@ def evaluate_post(
                 "codes": codes,
                 "gtin": gtin,
                 "toyarkPostId": pid,
+                "postYear": post_year,
+                "pack": spec.get("pack") or None,
                 "title": title,
                 "rationale": "; ".join(rationale_bits),
             }
         )
     return accepts, rejects
+
+
+def load_json(path: Path) -> Any:
+    return json.loads(path.read_text())
+
+
+def write_json(path: Path, data: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
+
+
+def ensure_alias_doc(doc: dict) -> dict:
+    doc.setdefault("version", 1)
+    doc.setdefault("policy", "gtin-canonical")
+    doc.setdefault("aliasesByFigureId", {})
+    doc.setdefault("aliasToFigureId", {})
+    doc.setdefault("collapsed", [])
+    doc.setdefault("flagged", [])
+    return doc
+
+
+def add_aliases(doc: dict, figure_id: str, codes: list[str]) -> int:
+    """Attach listing codes / short source keys. Never invent. Do not steal."""
+    doc = ensure_alias_doc(doc)
+    by = doc["aliasesByFigureId"]
+    to = doc["aliasToFigureId"]
+    cur = list(by.get(figure_id) or [])
+    added = 0
+    for c in codes:
+        raw = str(c or "").strip()
+        if not raw:
+            continue
+        if raw.startswith("http://") or raw.startswith("https://"):
+            # Toyark permalinks exceed clean_code's 64-char cap; keep source URL.
+            c2 = raw[:240]
+        else:
+            c2 = clean_code(raw) or raw.strip()
+        if not c2:
+            continue
+        owner = to.get(c2)
+        if owner and owner != figure_id:
+            continue
+        if c2 not in cur:
+            cur.append(c2)
+            added += 1
+        to[c2] = figure_id
+    if cur:
+        by[figure_id] = cur
+    return added
+
+
+def stable_id(
+    post_id: Any,
+    name: str,
+    company: str,
+    line: str,
+    variant: str | None,
+    existing_ids: set[str],
+) -> str:
+    """ta-<sha1[:12] of postId+name+company+line[+variant]>; lengthen on clash."""
+    raw = "|".join(
+        [
+            str(post_id or ""),
+            (name or "").strip(),
+            (company or "").strip().lower(),
+            (line or "").strip(),
+            (variant or "").strip(),
+        ]
+    )
+    digest = hashlib.sha1(raw.encode("utf-8")).hexdigest()
+    for n in (12, 16, 20, 40):
+        rid = f"ta-{digest[:n]}"
+        if rid not in existing_ids:
+            return rid
+    return f"ta-{digest}-x"
+
+
+def defaults_for_company_line(company: str, line: str) -> tuple[float, str, float]:
+    """Honest catalog defaults (msrp, scale, demand). Not sourced from Toyark."""
+    low = (line or "").lower()
+    if company in {"hottoys", "enterbay", "asmus", "starace", "exo6"} or "mms" in low:
+        return 280.0, "1/6", 1.35
+    if company == "threezero":
+        if "mdlx" in low:
+            return 90.0, "1/12", 1.25
+        if "dlx" in low:
+            return 180.0, "1/12", 1.3
+        return 220.0, "1/6", 1.3
+    if company == "mondo":
+        return 200.0, "1/6", 1.3
+    if company == "super7":
+        if "reaction" in low:
+            return 22.99, '3.75"', 1.2
+        return 55.0, '7"', 1.3
+    if company == "neca":
+        return 36.99, '7"', 1.3
+    if company == "mcfarlane":
+        return 24.99, '7"', 1.25
+    if company == "jazwares":
+        return 24.99, '6"', 1.3
+    return 24.99, '6"', 1.25
+
+
+def build_subtitle(variant: str | None, year: int | None, window: str | None) -> str:
+    bits: list[str] = []
+    if variant:
+        bits.append(variant)
+    if window and (not variant or window.lower() not in variant.lower()):
+        bits.append(window)
+    if year and (not window or str(year) not in window):
+        bits.append(str(year))
+    return " · ".join(bits) if bits else (str(year) if year else "")
+
+
+def resolve_release_year(cand: dict[str, Any]) -> int | None:
+    """Street year from prose, else announcement year from the post. Never invent."""
+    y = cand.get("year")
+    if isinstance(y, int) and 2020 <= y <= 2036:
+        return y
+    if isinstance(y, str) and y.isdigit():
+        yi = int(y)
+        if 2020 <= yi <= 2036:
+            return yi
+    py = cand.get("postYear")
+    if isinstance(py, int) and 2020 <= py <= 2036:
+        return py
+    return None
+
+
+def is_apply_multipack(cand: dict[str, Any]) -> bool:
+    if cand.get("pack") == "set":
+        return True
+    blob = " ".join(
+        str(x or "")
+        for x in (cand.get("name"), cand.get("title"), cand.get("variant"))
+    )
+    return bool(MULTI_PACK_RE.search(blob))
+
+
+def make_oneshot_row(
+    *,
+    rid: str,
+    cand: dict[str, Any],
+    year: int,
+    sku: str | None,
+    image: str | None,
+) -> dict[str, Any]:
+    company = str(cand.get("company") or "").lower()
+    line = str(cand.get("line") or "").strip()
+    name = str(cand.get("name") or "").strip()
+    variant = cand.get("variant") or None
+    window = cand.get("releaseWindow") or None
+    msrp, scale, demand = defaults_for_company_line(company, line)
+    pid = cand.get("toyarkPostId")
+    tags = ["toyark", "toyark-densify", company, SOURCE]
+    if pid is not None and str(pid).strip():
+        tags.append(f"toyark-{pid}")
+    if sku:
+        tags.append("sku-gtin")
+    seen: set[str] = set()
+    tags2: list[str] = []
+    for t in tags:
+        if t and t not in seen:
+            seen.add(t)
+            tags2.append(t)
+    out: dict[str, Any] = {
+        "id": rid,
+        "name": name,
+        "subtitle": build_subtitle(variant, year, window),
+        "line": line,
+        "company": company,
+        "kind": "figure",
+        "releaseDate": f"{year}-01-01",
+        "msrp": float(msrp),
+        "scale": scale,
+        "demand": float(demand),
+        "tags": tags2,
+        "source": SOURCE,
+    }
+    if sku:
+        out["sku"] = sku
+    if image:
+        out["imageUrl"] = image
+    return out
+
+
+def apply_candidates(
+    accepts: list[dict[str, Any]],
+    *,
+    rows: list[dict[str, Any]],
+    aliases: dict[str, Any],
+    sku_map: dict[str, Any],
+    urls: dict[str, Any],
+    index: OneshotIndex,
+    cap: int,
+) -> dict[str, Any]:
+    """Append accepted singles onto oneshot. Never invent GTINs. No rematch."""
+    aliases = ensure_alias_doc(aliases)
+    alias_to: dict[str, str] = aliases.get("aliasToFigureId") or {}
+    ids = {str(r.get("id")) for r in rows if r.get("id")}
+    gtin_owned: dict[str, str] = {}
+    for r in rows:
+        s = clean_code(r.get("sku"))
+        if s and is_gtin(s):
+            gtin_owned[s] = str(r["id"])
+        mid = sku_map.get(str(r.get("id") or ""))
+        if isinstance(mid, str) and is_gtin(mid):
+            gtin_owned.setdefault(clean_code(mid) or mid, str(r["id"]))
+
+    applied: list[dict[str, Any]] = []
+    skipped: list[dict[str, Any]] = []
+    alias_added = 0
+    img_baked = 0
+    cap = max(0, min(int(cap), 200))
+
+    for cand in accepts:
+        if len(applied) >= cap:
+            skipped.append(
+                {
+                    "name": cand.get("name"),
+                    "company": cand.get("company"),
+                    "reason": "cap",
+                    "toyarkPostId": cand.get("toyarkPostId"),
+                }
+            )
+            continue
+        if is_apply_multipack(cand):
+            skipped.append(
+                {
+                    "name": cand.get("name"),
+                    "company": cand.get("company"),
+                    "reason": "multipack",
+                    "toyarkPostId": cand.get("toyarkPostId"),
+                }
+            )
+            continue
+        name = str(cand.get("name") or "").strip()
+        company = str(cand.get("company") or "").lower()
+        line = str(cand.get("line") or "").strip()
+        variant = str(cand.get("variant") or "").strip()
+        if not name or not company or not line:
+            skipped.append({"name": name or None, "reason": "incomplete-identity"})
+            continue
+        if is_prop_item(name, variant, name):
+            skipped.append({"name": name, "reason": "vehicles-props-only"})
+            continue
+
+        year = resolve_release_year(cand)
+        if year is None:
+            skipped.append(
+                {
+                    "name": name,
+                    "company": company,
+                    "reason": "no-year",
+                    "toyarkPostId": cand.get("toyarkPostId"),
+                }
+            )
+            continue
+
+        dupe_reason, hit_ids = index.match(company, name, line, year, variant)
+        if dupe_reason:
+            skipped.append(
+                {
+                    "name": name,
+                    "company": company,
+                    "reason": dupe_reason,
+                    "oneshotIds": hit_ids,
+                    "toyarkPostId": cand.get("toyarkPostId"),
+                }
+            )
+            continue
+
+        raw_gtin = cand.get("gtin")
+        sku = None
+        if raw_gtin:
+            g = clean_code(raw_gtin)
+            if g and is_gtin(g):
+                owner = gtin_owned.get(g)
+                if owner:
+                    skipped.append(
+                        {
+                            "name": name,
+                            "company": company,
+                            "reason": "gtin-exists",
+                            "sku": g,
+                            "owner": owner,
+                        }
+                    )
+                    continue
+                sku = g
+            # Non-GTIN "gtin" field is ignored — never promote listing → sku.
+
+        listing_codes = [
+            c
+            for c in (cand.get("aliases") or cand.get("codes") or [])
+            if isinstance(c, str) and c.strip() and not is_gtin(c)
+        ]
+        stolen = False
+        for code in listing_codes:
+            c2 = clean_code(code) or code.strip()
+            owner = alias_to.get(c2)
+            if owner:
+                skipped.append(
+                    {
+                        "name": name,
+                        "company": company,
+                        "reason": "alias-owned",
+                        "alias": c2,
+                        "owner": owner,
+                    }
+                )
+                stolen = True
+                break
+        if stolen:
+            continue
+
+        rid = stable_id(cand.get("toyarkPostId"), name, company, line, variant, ids)
+        image = cand.get("imageUrl") if isinstance(cand.get("imageUrl"), str) else None
+        if image and not image.startswith("http"):
+            image = None
+
+        row = make_oneshot_row(rid=rid, cand=cand, year=year, sku=sku, image=image)
+        rows.append(row)
+        ids.add(rid)
+        index.add(row)
+        if sku:
+            gtin_owned[sku] = rid
+            sku_map[rid] = sku
+        if image:
+            urls[rid] = image
+            img_baked += 1
+
+        als: list[str] = [f"id:{rid}", f"toyark:{cand.get('toyarkPostId') or rid}"]
+        als.extend(listing_codes)
+        if sku:
+            als.append(sku)
+        src = cand.get("sourceUrl")
+        if isinstance(src, str) and src.startswith("http"):
+            als.append(src)
+        alias_added += add_aliases(aliases, rid, als)
+
+        applied.append(
+            {
+                "id": rid,
+                "name": name,
+                "company": company,
+                "line": line,
+                "year": year,
+                "variant": variant or None,
+                "sku": sku,
+                "image": bool(image),
+                "imageUrl": image,
+                "aliases": listing_codes,
+                "sourceUrl": cand.get("sourceUrl"),
+                "toyarkPostId": cand.get("toyarkPostId"),
+            }
+        )
+
+    return {
+        "applied": applied,
+        "skipped": skipped,
+        "aliasAdded": alias_added,
+        "withImage": img_baked,
+        "cap": cap,
+    }
 
 
 def summarize(accepts: list[dict], rejects: list[dict], allow: list[str]) -> dict[str, Any]:
@@ -1406,16 +1828,25 @@ def build_report(
         rejects.extend(r)
     summary = summarize(accepts, rejects, allow)
     summary["fetchedPosts"] = len(posts)
+    apply_mode = bool(extra.get("apply"))
+    writes = (
+        "oneshot + aliases + image-urls + sku-map (GTIN only) — comics untouched"
+        if apply_mode
+        else "none — report only"
+    )
+    oneshot_mode = extra.get("oneshotMode") or ("apply" if apply_mode else "read-only")
     return {
         "generatedAt": now_iso(),
-        "mode": "dry-run",
-        "applyWired": False,
+        "mode": "apply" if apply_mode else "dry-run",
+        "applyWired": True,
         "source": REST_POSTS,
         "policy": {
             "gtin": "preferred-not-required; never invent",
             "identity": "company + line + year + variant",
             "allowlist": list(allow),
-            "writes": "none — report only",
+            "writes": writes,
+            "cap": extra.get("cap"),
+            "idScheme": "ta-<sha1[:12] of postId+name+company+line+variant>",
         },
         "window": {
             "days": days,
@@ -1429,14 +1860,15 @@ def build_report(
             "userAgent": UA,
         },
         "oneshot": {
-            "path": str(ONESHOT.relative_to(ROOT)) if ONESHOT.exists() else str(ONESHOT),
+            "path": extra.get("oneshotPath")
+            or (str(ONESHOT.relative_to(ROOT)) if ONESHOT.exists() else str(ONESHOT)),
             "indexedRows": index.row_count,
-            "mode": "read-only",
+            "mode": oneshot_mode,
         },
         "summary": summary,
         "candidates": accepts,
         "rejects": rejects,
-        **extra,
+        **{k: v for k, v in extra.items() if k not in {"apply", "oneshotMode", "oneshotPath", "cap"}},
     }
 
 
@@ -1466,27 +1898,56 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument(
         "--posts-json",
         type=Path,
-        help="Replay a saved WP REST posts array (still dry-run; useful if this host is CF-challenged)",
+        help="Replay a saved WP REST posts array (works with dry-run or --apply; skips live fetch)",
     )
     ap.add_argument(
         "--skip-oneshot",
         action="store_true",
-        help="Skip oneshot read (dedupe keys empty). Still writes no catalog files.",
+        help="Skip oneshot read (dedupe keys empty). Incompatible with --apply.",
     )
     ap.add_argument(
         "--apply",
         action="store_true",
-        help="Not wired in v1 — refused.",
+        help="Append accepted candidates to oneshot (plus aliases / image URLs). "
+        "Never invents GTINs. Comics untouched.",
+    )
+    ap.add_argument(
+        "--cap",
+        type=int,
+        default=DEFAULT_CAP,
+        help=f"Max applied rows per run (default {DEFAULT_CAP}, low-and-slow).",
+    )
+    ap.add_argument(
+        "--oneshot",
+        type=Path,
+        default=ONESHOT,
+        help="Oneshot path (override for tests / copies).",
+    )
+    ap.add_argument(
+        "--aliases",
+        type=Path,
+        default=ALIASES,
+        help="figure-sku-aliases.json path (apply only).",
+    )
+    ap.add_argument(
+        "--image-urls",
+        type=Path,
+        default=URLS,
+        help="figure-image-urls.json path (apply only).",
+    )
+    ap.add_argument(
+        "--sku-map",
+        type=Path,
+        default=SKU_MAP,
+        help="figure-sku-map.json path (apply only; GTIN overlay).",
+    )
+    ap.add_argument(
+        "--stats",
+        type=Path,
+        default=DEFAULT_STATS,
+        help="Apply stats JSON path.",
     )
     args = ap.parse_args(argv)
-
-    if args.apply:
-        print(
-            "ERROR: v1 is dry-run only. --apply is not wired and will not write "
-            "oneshot.json, figure-sku-map, aliases, or image URL files.",
-            file=sys.stderr,
-        )
-        return 2
 
     allow = list(ALLOWLIST)
     if args.companies:
@@ -1510,10 +1971,20 @@ def main(argv: list[str] | None = None) -> int:
         after = datetime.now(timezone.utc) - timedelta(days=days)
     before = parse_iso(args.before) if args.before else None
 
-    robots = check_robots()
-    if robots.get("wpJsonAllowed") is False:
-        print("ERROR: robots.txt disallows /wp-json; refusing to crawl.", file=sys.stderr)
-        return 3
+    if args.posts_json:
+        robots = {
+            "url": ROBOTS_URL,
+            "ok": True,
+            "wpJsonAllowed": True,
+            "feedDisallowed": True,
+            "note": "Replay (--posts-json): skipped live robots.txt fetch.",
+            "httpStatus": None,
+        }
+    else:
+        robots = check_robots()
+        if robots.get("wpJsonAllowed") is False:
+            print("ERROR: robots.txt disallows /wp-json; refusing to crawl.", file=sys.stderr)
+            return 3
 
     fetch_meta: dict[str, Any] = {
         "ok": False,
@@ -1554,21 +2025,69 @@ def main(argv: list[str] | None = None) -> int:
         )
         posts = fetched.pop("posts")
         fetch_meta.update(fetched)
-        if fetched.get("blocker") == "cloudflare-challenge":
-            print(
-                "WARN: Toyark REST returned a Cloudflare challenge from this host. "
-                "Re-run later or pass --posts-json with a saved /wp-json/wp/v2/posts payload.",
-                file=sys.stderr,
+        if fetched.get("blocker"):
+            msg = (
+                f"Toyark REST live fetch failed ({fetched.get('blocker')}, "
+                f"HTTP {fetched.get('httpStatus')}). "
+                "Babysit: report this blocker; do not apply. "
+                "Re-run later or pass --posts-json with a saved "
+                "/wp-json/wp/v2/posts payload."
             )
+            if args.apply:
+                print(f"ERROR: {msg}", file=sys.stderr)
+            else:
+                print(f"WARN: {msg}", file=sys.stderr)
 
-    if args.skip_oneshot or not ONESHOT.exists():
+    oneshot_path: Path = args.oneshot
+    if args.apply and args.skip_oneshot:
+        print("ERROR: --apply requires oneshot identity; --skip-oneshot is refused.", file=sys.stderr)
+        return 2
+    if args.apply and not oneshot_path.exists():
+        print(f"ERROR: --apply requires oneshot at {oneshot_path}", file=sys.stderr)
+        return 1
+
+    rows: list[dict[str, Any]] = []
+    if args.skip_oneshot or not oneshot_path.exists():
         index = OneshotIndex([], set(allow))
     else:
-        rows = json.loads(ONESHOT.read_text())
+        rows = load_json(oneshot_path)
         if not isinstance(rows, list):
-            print("ERROR: oneshot.json is not a list", file=sys.stderr)
+            print("ERROR: oneshot.json is not a list — refusing (no writes).", file=sys.stderr)
             return 1
         index = OneshotIndex(rows, set(allow))
+
+    live_blocked = (not args.posts_json) and bool(fetch_meta.get("blocker") or not fetch_meta.get("ok"))
+    apply_ran = False
+    apply_result: dict[str, Any] = {}
+    if args.apply and live_blocked:
+        apply_result = {
+            "applied": [],
+            "skipped": [],
+            "aliasAdded": 0,
+            "withImage": 0,
+            "cap": args.cap,
+            "blocker": fetch_meta.get("blocker") or "live-fetch-failed",
+        }
+    elif args.apply:
+        raw_aliases = load_json(args.aliases) if args.aliases.exists() else {}
+        if not isinstance(raw_aliases, dict):
+            print("ERROR: aliases file is not an object — refusing.", file=sys.stderr)
+            return 1
+        aliases = ensure_alias_doc(raw_aliases)
+        sku_map = load_json(args.sku_map) if args.sku_map.exists() else {}
+        if not isinstance(sku_map, dict):
+            sku_map = {}
+        urls = load_json(args.image_urls) if args.image_urls.exists() else {}
+        if not isinstance(urls, dict):
+            urls = {}
+        apply_ran = True
+
+    extra: dict[str, Any] = {
+        "apply": bool(args.apply),
+        "cap": int(args.cap),
+        "oneshotPath": _rel(oneshot_path),
+        "oneshotMode": "apply" if args.apply else "read-only",
+    }
 
     report = build_report(
         posts=posts,
@@ -1579,21 +2098,109 @@ def main(argv: list[str] | None = None) -> int:
         allow=allow,
         index=index,
         per_page=args.per_page,
-        extra={},
+        extra=extra,
     )
+
+    if args.apply and apply_ran:
+        apply_result = apply_candidates(
+            list(report["candidates"]),
+            rows=rows,
+            aliases=aliases,
+            sku_map=sku_map,
+            urls=urls,
+            index=index,
+            cap=args.cap,
+        )
+        if apply_result["applied"]:
+            write_json(oneshot_path, rows)
+            write_json(args.aliases, aliases)
+            write_json(args.image_urls, urls)
+            write_json(args.sku_map, sku_map)
+            if ONESHOT_STATS.exists() and oneshot_path.resolve() == ONESHOT.resolve():
+                try:
+                    os_stats = load_json(ONESHOT_STATS)
+                    if isinstance(os_stats, dict):
+                        os_stats["archiveTotal"] = len(rows)
+                        os_stats["toyarkDensifyAdded"] = len(apply_result["applied"])
+                        os_stats["toyarkDensifyAt"] = now_iso()
+                        write_json(ONESHOT_STATS, os_stats)
+                except (OSError, json.JSONDecodeError, TypeError) as exc:
+                    apply_result["oneshotStatsError"] = str(exc)
+
+    if args.apply:
+        report["applied"] = apply_result.get("applied") or []
+        report["applySkipped"] = apply_result.get("skipped") or []
+        report["applyStats"] = {
+            "accepted": report["summary"]["acceptedCandidates"],
+            "applied": len(apply_result.get("applied") or []),
+            "skippedApply": len(apply_result.get("skipped") or []),
+            "aliasAdded": apply_result.get("aliasAdded") or 0,
+            "withImage": apply_result.get("withImage") or 0,
+            "cap": apply_result.get("cap", args.cap),
+            "blocker": apply_result.get("blocker"),
+        }
+        report["policy"]["writes"] = (
+            "oneshot + aliases + image-urls + sku-map (GTIN only) — comics untouched"
+        )
+        report["summary"]["applied"] = report["applyStats"]["applied"]
+        report["summary"]["skippedApply"] = report["applyStats"]["skippedApply"]
+
     report_path: Path = args.report
+    if args.apply and report_path == DEFAULT_REPORT:
+        report_path = DEFAULT_APPLY_REPORT
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n")
 
+    if args.apply:
+        stats_doc = {
+            "source": SOURCE,
+            "finishedAt": now_iso(),
+            "mode": "apply",
+            "cap": int(args.cap),
+            "acceptedCandidates": report["summary"]["acceptedCandidates"],
+            "applied": report["summary"].get("applied", 0),
+            "skippedApply": report["summary"].get("skippedApply", 0),
+            "rejectedRows": report["summary"]["rejectedRows"],
+            "withImage": apply_result.get("withImage") or 0,
+            "aliasAdded": apply_result.get("aliasAdded") or 0,
+            "byCompany": report["summary"]["byCompany"],
+            "byRejectReason": report["summary"]["byRejectReason"],
+            "appliedIds": [a.get("id") for a in (apply_result.get("applied") or [])],
+            "appliedSample": (apply_result.get("applied") or [])[:25],
+            "skippedSample": (apply_result.get("skipped") or [])[:40],
+            "archiveSize": len(rows) if apply_ran else None,
+            "fetchBlocker": fetch_meta.get("blocker"),
+            "wroteOneshot": bool(apply_ran and apply_result.get("applied")),
+            "comics": "untouched",
+        }
+        write_json(args.stats, stats_doc)
+
     s = report["summary"]
-    print(f"mode=dry-run applyWired=false posts={s['fetchedPosts']} "
-          f"accepted={s['acceptedCandidates']} rejected={s['rejectedRows']}")
+    mode = report["mode"]
+    print(
+        f"mode={mode} applyWired=true posts={s['fetchedPosts']} "
+        f"accepted={s['acceptedCandidates']} rejected={s['rejectedRows']}"
+        + (
+            f" applied={s.get('applied', 0)} skippedApply={s.get('skippedApply', 0)}"
+            if args.apply
+            else ""
+        )
+    )
     print(f"byCompany={s['byCompany']}")
     print(f"byRejectReason={s['byRejectReason']}")
     print(f"report={report_path}")
     if fetch_meta.get("blocker"):
         print(f"fetchBlocker={fetch_meta['blocker']}")
+    if args.apply and live_blocked:
+        return 1
     return 0 if (fetch_meta.get("ok") or posts) else 1
+
+
+def _rel(path: Path) -> str:
+    try:
+        return str(path.resolve().relative_to(ROOT))
+    except ValueError:
+        return str(path)
 
 
 if __name__ == "__main__":

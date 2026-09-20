@@ -190,12 +190,14 @@ Joins every oneshot GTIN primary to `product-sku-index` and flags title disagree
 (multipack vs single, hard theme conflicts, score_reject+char_missing). Soft/borderline
 hits are reported only. Report: `src/data/figure-archive/sku-mismatch-audit.json`.
 
-## Toyark new-figure densify (dry-run only)
+## Toyark new-figure densify
 
-`scripts/dry-run-toyark-densify.py` polls The Toyark WP REST
-(`/wp-json/wp/v2/posts?_embed=1`; RSS `/feed/` is robots-disallowed) for
-allowlisted makers — original AF four plus Super7 and premium 1/6 CompanyIds
-(`hottoys`, `mondo`, `threezero`, `enterbay`, `asmus`, `starace`, `exo6`) —
-and writes `src/data/figure-archive/toyark-densify-dry-run.json`. **No apply
-path** — it does not write oneshot, sku-map, aliases, or image URLs. See
+`scripts/toyark-densify.py` (wrapper) / `scripts/dry-run-toyark-densify.py`
+polls The Toyark WP REST (`/wp-json/wp/v2/posts?_embed=1`; RSS `/feed/` is
+robots-disallowed) for allowlisted makers — original AF four plus Super7 and
+premium 1/6 CompanyIds (`hottoys`, `mondo`, `threezero`, `enterbay`, `asmus`,
+`starace`, `exo6`). Dry-run writes `toyark-densify-dry-run.json`. **`--apply`**
+appends accepted singles to oneshot (sku empty unless a labeled GTIN;
+`MMS*` / post URL → aliases; featured image on new rows only; cap 50). Live
+Cloudflare failure exits non-zero and writes nothing. Comics untouched. See
 `docs/toyark-densify.md`.
