@@ -1933,7 +1933,11 @@ def main(argv: list[str] | None = None) -> int:
     upc_map = bf.load_json(root / "src/data/comic-upc-map.json", {})
     cover_urls = bf.load_json(root / "src/data/comic-cover-urls.json", {})
     existing_gcd = collect_gcd_ids(upc_map)
-    existing_locg = collect_locg_ids(upc_map, cover_urls, comics_ts.read_text())
+    # comics.ts extras often carry gcdIssueId even when upc-map lags.
+    comics_ts_text = (root / "src/data/comics.ts").read_text(encoding="utf-8")
+    for m in re.finditer(r'gcdIssueId:\s*"(\d+)"', comics_ts_text):
+        existing_gcd.add(m.group(1))
+    existing_locg = collect_locg_ids(upc_map, cover_urls, comics_ts_text)
 
     all_rows: list = []
     all_skips: list[dict] = []
