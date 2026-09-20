@@ -471,6 +471,41 @@ def build_viewer_family_index(
     return index
 
 
+
+def build_series_canon_index(
+    existing_meta: dict[str, dict],
+) -> dict[str, list[tuple[str, str]]]:
+    """series_match_key → [(catalog series, catalog publisher), ...] for O(1) canon."""
+    index: dict[str, list[tuple[str, str]]] = {}
+    for meta in existing_meta.values():
+        if not isinstance(meta, dict):
+            continue
+        series = str(meta.get("series") or "")
+        publisher = str(meta.get("publisher") or "")
+        key = locg.series_match_key(series)
+        if not key:
+            continue
+        index.setdefault(key, []).append((series, publisher))
+    return index
+
+
+def canon_series_publisher_indexed(
+    series: str,
+    publisher: str,
+    existing_meta: dict[str, dict],
+    series_index: dict[str, list[tuple[str, str]]] | None = None,
+) -> tuple[str, str]:
+    """Same result as locg.canon_series_publisher, with optional match-key index."""
+    if series_index is None:
+        return locg.canon_series_publisher(series, publisher, existing_meta)
+    key = locg.series_match_key(series)
+    for cat_series, cat_pub in series_index.get(key, ()):
+        if locg.series_names_match(cat_series, series) and bf.publisher_ok(cat_pub, publisher):
+            return cat_series, cat_pub
+    pub_key = locg.norm_pub_key(publisher)
+    return series, locg.PUB_CANON.get(pub_key, publisher)
+
+
 def make_gcd_catalog_id(
     *,
     series: str,
@@ -1014,6 +1049,7 @@ def finish_catalog_row(
     id_prefix: str | None,
     include_collected: bool = True,
     max_year: int | None = None,
+    series_index: dict[str, list[tuple[str, str]]] | None = None,
 ) -> tuple[list | None, dict | None]:
     # Cheap year/date gates BEFORE O(catalog) canon_series_publisher / id minting.
     # Same skip reasons as gate_reason for these cases; avoids scanning ~100k meta
@@ -1052,8 +1088,11 @@ def finish_catalog_row(
             "reason": "max-year",
         }
 
-    parsed["series"], parsed["publisher"] = locg.canon_series_publisher(
-        parsed.get("series") or "", parsed.get("publisher") or "", existing_meta
+    parsed["series"], parsed["publisher"] = canon_series_publisher_indexed(
+        parsed.get("series") or "",
+        parsed.get("publisher") or "",
+        existing_meta,
+        series_index,
     )
     catalog_id = make_gcd_catalog_id(
         series=parsed.get("series") or "",
@@ -1140,6 +1179,7 @@ def ingest_series(
     id_prefix: str | None,
     include_collected: bool = True,
     family_index: dict[str, tuple[str, str, str, str | None]] | None = None,
+    series_index: dict[str, list[tuple[str, str]]] | None = None,
 ) -> tuple[list, list[dict], dict, dict]:
     rows: list = []
     skips: list[dict] = []
@@ -1300,6 +1340,7 @@ def ingest_series(
             max_year=max_year,
             id_prefix=id_prefix,
             include_collected=include_collected,
+            series_index=series_index,
         )
         if skip:
             skips.append(skip)
@@ -1329,6 +1370,7 @@ def ingest_series_from_dump(
     id_prefix: str | None,
     include_collected: bool = True,
     family_index: dict[str, tuple[str, str, str, str | None]] | None = None,
+    series_index: dict[str, list[tuple[str, str]]] | None = None,
 ) -> tuple[list, list[dict], dict, dict]:
     """Gate dump rows the same way as API rows. No comics.org traffic."""
     rows: list = []
@@ -1468,6 +1510,7 @@ def ingest_series_from_dump(
             max_year=max_year,
             id_prefix=id_prefix,
             include_collected=include_collected,
+            series_index=series_index,
         )
         if skip:
             skips.append(skip)
@@ -1781,6 +1824,7 @@ def main(argv: list[str] | None = None) -> int:
     existing_meta = bf.parse_comics_meta()
     existing_keys = existing_keys_plain | identity_keys_from_meta(existing_meta)
     family_index = build_viewer_family_index(existing_meta)
+    series_index = build_series_canon_index(existing_meta)
     upc_map = bf.load_json(root / "src/data/comic-upc-map.json", {})
     cover_urls = bf.load_json(root / "src/data/comic-cover-urls.json", {})
     existing_gcd = collect_gcd_ids(upc_map)
@@ -1820,6 +1864,7 @@ def main(argv: list[str] | None = None) -> int:
                         id_prefix=args.id_prefix or None,
                         include_collected=args.include_collected,
                         family_index=family_index,
+                        series_index=series_index,
                     )
                 else:
                     assert client is not None
@@ -1839,6 +1884,7 @@ def main(argv: list[str] | None = None) -> int:
                         id_prefix=args.id_prefix or None,
                         include_collected=args.include_collected,
                         family_index=family_index,
+                        series_index=series_index,
                     )
             except RateLimitAbort as e:
                 print(str(e), file=sys.stderr)
