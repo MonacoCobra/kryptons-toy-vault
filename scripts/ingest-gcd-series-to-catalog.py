@@ -1469,6 +1469,18 @@ def ingest_series_from_dump(
                 }
             )
             continue
+        # Dump issue id is the gcdIssueId — skip known rows before parse/family work.
+        dump_gid = str(issue.get("id") or "")
+        if dump_gid.isdigit() and dump_gid in existing_gcd:
+            skips.append(
+                {
+                    "seriesId": series_id,
+                    "issue": issue.get("number") or desc,
+                    "gcdIssueId": dump_gid,
+                    "reason": "dup-gcdIssueId",
+                }
+            )
+            continue
         parent, orphan = resolve_variant_attachment(
             issue,
             series=series,
