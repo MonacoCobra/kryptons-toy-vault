@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import sqlite3
 import sys
 import tempfile
 import unittest
@@ -525,6 +526,63 @@ class FixtureIngestTest(unittest.TestCase):
         self.assertTrue(ids)
         self.assertTrue(all(i.isdigit() for i in ids))
         self.assertIn("122674", ids)
+
+
+class GcdDumpLoaderTest(unittest.TestCase):
+    """MySQL dump → sqlite: exact table names only, no prefix collisions."""
+
+    def test_sql_table_matchers_require_identifier_boundary(self):
+        create = gcd_dump.CREATE_TABLE_RE
+        insert = gcd_dump.INSERT_TABLE_RE
+        self.assertIsNotNone(create.match("CREATE TABLE `gcd_issue` ("))
+        self.assertIsNotNone(create.match("CREATE TABLE IF NOT EXISTS gcd_series ("))
+        self.assertIsNotNone(create.match("CREATE TABLE `gcd_publisher` ("))
+        self.assertIsNone(create.match("CREATE TABLE `gcd_issue_credit` ("))
+        self.assertIsNone(create.match("CREATE TABLE `gcd_issue_brand_emblem` ("))
+        self.assertIsNone(create.match("CREATE TABLE `gcd_series_bond` ("))
+        self.assertIsNone(create.match("CREATE TABLE gcd_issue_reprint ("))
+        self.assertIsNotNone(insert.match("INSERT INTO `gcd_issue` VALUES"))
+        self.assertIsNotNone(insert.match("INSERT IGNORE INTO gcd_series VALUES"))
+        self.assertIsNone(insert.match("INSERT INTO `gcd_issue_credit` VALUES"))
+        self.assertIsNone(insert.match("INSERT INTO `gcd_series_bond` VALUES"))
+        self.assertIsNone(insert.match("REPLACE INTO gcd_issue_brand_emblem VALUES"))
+
+    def test_complete_insert_ignores_prefixed_tables(self):
+        credit = (
+            "INSERT INTO `gcd_issue_credit` (`id`,`creator_id`,`issue_id`) "
+            "VALUES (40775,1,40775);"
+        )
+        self.assertIsNone(gcd_dump.parse_insert_column_list(credit))
+        real = (
+            "INSERT INTO `gcd_issue` (`id`,`number`,`series_id`,`key_date`) "
+            "VALUES (40775,'285',2121,'1985-12-00');"
+        )
+        self.assertEqual(
+            gcd_dump.parse_insert_column_list(real),
+            ["id", "number", "series_id", "key_date"],
+        )
+
+    def test_prefixed_sibling_inserts_do_not_wipe_issue_or_series(self):
+        td = Path(tempfile.mkdtemp())
+        sqlite = td / "gcd.sqlite"
+        sql = DUMP_SQL_DIR / "prefixed-sibling-tables.sql"
+        gcd_dump.load_sql_files_into_sqlite([sql], sqlite, series_ids=None, progress=False)
+        con = sqlite3.connect(str(sqlite))
+        con.row_factory = sqlite3.Row
+        issue = con.execute("SELECT * FROM gcd_issue WHERE id = 40775").fetchone()
+        self.assertIsNotNone(issue)
+        self.assertEqual(issue["series_id"], 2121)
+        self.assertEqual(issue["key_date"], "1985-12-00")
+        self.assertEqual(issue["number"], "285")
+        self.assertEqual(issue["publication_date"], "December 1985")
+        series = con.execute("SELECT * FROM gcd_series WHERE id = 2121").fetchone()
+        self.assertIsNotNone(series)
+        self.assertEqual(series["name"], "Fantastic Four")
+        self.assertEqual(series["year_began"], 1961)
+        self.assertEqual(series["publisher_id"], 78)
+        self.assertEqual(con.execute("SELECT COUNT(*) FROM gcd_issue").fetchone()[0], 1)
+        self.assertEqual(con.execute("SELECT COUNT(*) FROM gcd_series").fetchone()[0], 1)
+        con.close()
 
 
 class DumpIngestTest(unittest.TestCase):
