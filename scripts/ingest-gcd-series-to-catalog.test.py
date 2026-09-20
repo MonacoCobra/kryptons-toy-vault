@@ -591,7 +591,8 @@ class DumpIngestTest(unittest.TestCase):
         self.assertEqual(cover_b["id"], "im-gcd-fixture-indie-1-cover-b")
         self.assertNotEqual(cover_b["id"], added["im-gcd-fixture-indie-1"]["id"])
         # 8000009 has empty variant_of_id + artist name → main (not orphan)
-        self.assertFalse(any(r.get("gcdIssueId") in {"8000007", "8000008", "8000010"} for r in report["added"]))
+        # 8000007/8000008 densify onto #1 sibling; 8000010 stays orphan (parent no date).
+        self.assertFalse(any(r.get("gcdIssueId") == "8000010" for r in report["added"]))
         jamal = next((r for r in report["added"] if r.get("gcdIssueId") == "8000009"), None)
         self.assertIsNotNone(jamal)
         self.assertIsNone(jamal.get("variant"))
@@ -896,16 +897,26 @@ class DumpIngestTest(unittest.TestCase):
             for s in report["skipped"]
             if s.get("reason") == "variant-orphan"
         }
-        # Broken parent / wrong series / parent not in family stay orphans.
+        # Parent 8000005 has no cover-date → Cover C (8000010) stays family-orphan.
         # Empty variant_of_id artist cover (8000009) is a main, not an orphan.
-        self.assertTrue({"8000007", "8000008", "8000010"} <= orphan_ids)
+        # Broken/wrong-series parents densify onto same-number main-like siblings.
+        self.assertIn("8000010", orphan_ids)
         self.assertNotIn("8000009", orphan_ids)
         added_ids = {r["gcdIssueId"] for r in report["added"]}
-        self.assertFalse(added_ids & {"8000007", "8000008", "8000010"})
+        self.assertNotIn("8000010", added_ids)
         self.assertIn("8000009", added_ids)
         jamal = next(r for r in report["added"] if r["gcdIssueId"] == "8000009")
         self.assertEqual(jamal["issue"], "9")
         self.assertIsNone(jamal.get("variant"))
+        # Missing / wrong-series parents → attach to #1 main sibling.
+        self.assertIn("8000007", added_ids)
+        self.assertIn("8000008", added_ids)
+        broken = next(r for r in report["added"] if r["gcdIssueId"] == "8000007")
+        wrong = next(r for r in report["added"] if r["gcdIssueId"] == "8000008")
+        self.assertEqual(broken["issue"], "1")
+        self.assertEqual(broken["variant"], "Broken Parent Cover")
+        self.assertEqual(wrong["issue"], "1")
+        self.assertEqual(wrong["variant"], "Wrong Series Cover")
 
     def test_dump_mains_only_skips_linked_variants(self):
         root = self._mini_root()
@@ -1106,6 +1117,134 @@ class DumpIngestTest(unittest.TestCase):
         self.assertEqual(ingest.catalog_issue_slug("1"), "1")
         self.assertEqual(ingest.descriptor_issue_num("[nn]"), "[nn]")
         self.assertTrue(ingest.is_main_descriptor("[nn]"))
+
+
+    def test_resolve_stub_parent_densifies_newsstand_and_canadian(self):
+        """Action Comics-style: stub parent → Newsstand main, Canadian→Newsstand sibling."""
+        series = {"name": "Action Comics Stub Fixture", "id": 900401}
+        newsstand = {
+            "id": 8200001,
+            "number": "575",
+            "series_id": 900401,
+            "variant_of_id": 7000001,
+            "variant_name": "Newsstand",
+        }
+        canadian = {
+            "id": 8200002,
+            "number": "575",
+            "series_id": 900401,
+            "variant_of_id": 7000001,
+            "variant_name": "Canadian",
+        }
+        solo_canadian = {
+            "id": 8200003,
+            "number": "576",
+            "series_id": 900401,
+            "variant_of_id": 7000002,
+            "variant_name": "Canadian",
+        }
+        direct = {
+            "id": 8200004,
+            "number": "577",
+            "series_id": 900401,
+            "variant_of_id": 7000003,
+            "variant_name": "Direct",
+        }
+        # Stub 7000001 absent from by_id (series_id null in dump).
+        by_id = {
+            "8200001": newsstand,
+            "8200002": canadian,
+            "8200003": solo_canadian,
+            "8200004": direct,
+        }
+        parent, orphan = ingest.resolve_variant_attachment(
+            newsstand, series=series, series_id="900401", by_id=by_id
+        )
+        self.assertIsNone(parent)
+        self.assertIsNone(orphan)
+
+        parent, orphan = ingest.resolve_variant_attachment(
+            canadian, series=series, series_id="900401", by_id=by_id
+        )
+        self.assertIsNotNone(parent)
+        self.assertEqual(str(parent["id"]), "8200001")
+        self.assertIsNone(orphan)
+
+        parent, orphan = ingest.resolve_variant_attachment(
+            solo_canadian, series=series, series_id="900401", by_id=by_id
+        )
+        self.assertIsNone(parent)
+        self.assertEqual(orphan, "variant-orphan")
+
+        parent, orphan = ingest.resolve_variant_attachment(
+            direct, series=series, series_id="900401", by_id=by_id
+        )
+        self.assertIsNone(parent)
+        self.assertIsNone(orphan)
+
+        # Explicit stub row in by_id with null series_id still densifies.
+        by_id_stub = dict(by_id)
+        by_id_stub["7000001"] = {
+            "id": 7000001,
+            "series_id": None,
+            "number": None,
+            "variant_name": None,
+            "deleted": 0,
+        }
+        parent, orphan = ingest.resolve_variant_attachment(
+            newsstand, series=series, series_id="900401", by_id=by_id_stub
+        )
+        self.assertIsNone(parent)
+        self.assertIsNone(orphan)
+        parent, orphan = ingest.resolve_variant_attachment(
+            canadian, series=series, series_id="900401", by_id=by_id_stub
+        )
+        self.assertEqual(str(parent["id"]), "8200001")
+        self.assertIsNone(orphan)
+
+    def test_is_cover_a_name_standard_edition_distribution(self):
+        self.assertTrue(ingest.is_cover_a_name("Standard Edition - Newsstand"))
+        self.assertTrue(ingest.is_cover_a_name("Standard Edition - Direct Sales"))
+        self.assertTrue(ingest.is_cover_a_name("Newsstand"))
+        self.assertTrue(ingest.is_cover_a_name("Direct"))
+        self.assertFalse(ingest.is_cover_a_name("Canadian"))
+        self.assertFalse(ingest.is_cover_a_name("DC Universe Corner Box"))
+
+    def test_dump_stub_parent_action_comics_style(self):
+        root = self._mini_root()
+        report = self._run(["900401"], root=root)
+        added = {r["gcdIssueId"]: r for r in report["added"]}
+        orphan_ids = {
+            str(s.get("gcdIssueId"))
+            for s in report["skipped"]
+            if s.get("reason") == "variant-orphan"
+        }
+        # Newsstand + Direct densify to mains (blank variant).
+        self.assertIn("8200001", added)
+        self.assertIsNone(added["8200001"].get("variant"))
+        self.assertEqual(added["8200001"]["issue"], "575")
+        self.assertIn("8200004", added)
+        self.assertIsNone(added["8200004"].get("variant"))
+        # Canadian with Newsstand sibling attaches as variant on #575.
+        self.assertIn("8200002", added)
+        self.assertEqual(added["8200002"]["variant"], "Canadian")
+        self.assertEqual(added["8200002"]["issue"], "575")
+        self.assertEqual(
+            ingest.comic_family_key(
+                added["8200002"]["series"],
+                added["8200002"]["issue"],
+                added["8200002"]["publisher"],
+            ),
+            ingest.comic_family_key(
+                added["8200001"]["series"],
+                added["8200001"]["issue"],
+                added["8200001"]["publisher"],
+            ),
+        )
+        # Solo Canadian with no main-like sibling stays orphan.
+        self.assertIn("8200003", orphan_ids)
+        self.assertNotIn("8200003", added)
+
 
 
 if __name__ == "__main__":

@@ -1,6 +1,18 @@
 [
-  {"id": 900101, "name": "GCD Fixture Indie", "year_began": 2020, "publisher_id": 54, "deleted": 0},
-  {"id": 900102, "name": "Saga", "year_began": 2012, "publisher_id": 54, "deleted": 0},
+  {
+    "id": 900101,
+    "name": "GCD Fixture Indie",
+    "year_began": 2020,
+    "publisher_id": 54,
+    "deleted": 0
+  },
+  {
+    "id": 900102,
+    "name": "Saga",
+    "year_began": 2012,
+    "publisher_id": 54,
+    "deleted": 0
+  },
   {
     "id": 900201,
     "name": "The Death and Return of Superman Compendium",
@@ -26,6 +38,13 @@
     "id": 900204,
     "name": "Elseworlds: Superman",
     "year_began": 2006,
+    "publisher_id": 2,
+    "deleted": 0
+  },
+  {
+    "id": 900401,
+    "name": "Action Comics Stub Fixture",
+    "year_began": 1938,
     "publisher_id": 2,
     "deleted": 0
   }

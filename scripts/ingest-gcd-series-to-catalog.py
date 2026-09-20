@@ -250,12 +250,91 @@ def is_cover_a_name(name: str | None) -> bool:
         "direct",
         "direct edition",
         "direct market",
+        "direct sales",
         "newsstand",
         "newsstand edition",
     }:
         return True
     # "Cover A - Robert Carey" / "Cover A: Foo"
-    return bool(re.match(r"^cover\s*a(\s*[-–:|/].*)?$", n))
+    if re.match(r"^cover\s*a(\s*[-–:|/].*)?$", n):
+        return True
+    # GCD: "Standard Edition - Newsstand" / "Standard Edition - Direct Sales"
+    return bool(
+        re.match(
+            r"^standard edition\s*[-–:|/]\s*(newsstand|direct)(\s+(edition|sales|market))?$",
+            n,
+        )
+    )
+
+
+def main_like_sibling_rank(name: str | None) -> int | None:
+    """Preference among main-like siblings: empty/Cover A/Direct (0), Newsstand (1)."""
+    if not is_cover_a_name(name):
+        return None
+    n = re.sub(r"\s+", " ", (name or "").strip().lower())
+    if not n:
+        return 0
+    if "newsstand" in n:
+        return 1
+    return 0
+
+
+def parent_is_stub_or_unusable(
+    parent: dict | None,
+    *,
+    series: dict,
+    series_id: str,
+) -> bool:
+    """True when variant_of parent is missing, series-less stub, or wrong series.
+
+    Dump stubs set series_id to null/0. API issue payloads often omit series_id
+    and only carry series_name — those are NOT stubs; same_series handles them.
+    """
+    if not isinstance(parent, dict):
+        return True
+    if "series_id" in parent:
+        raw = parent.get("series_id")
+        if raw is None or raw == "" or str(raw) == "0":
+            return True
+    if not same_series(parent, series, str(series_id)):
+        return True
+    return False
+
+
+def find_main_like_sibling(
+    issue: dict,
+    *,
+    by_id: dict[str, dict],
+    series_id: str,
+) -> dict | None:
+    """Same-series same-number main-like sibling (empty/Cover A/Direct, then Newsstand)."""
+    num = str(issue.get("number") or "").strip()
+    if not num:
+        return None
+    self_id = str(issue.get("id") or "")
+    best: dict | None = None
+    best_rank = 99
+    want_series = str(series_id)
+    for other in by_id.values():
+        if not isinstance(other, dict):
+            continue
+        oid = str(other.get("id") or "")
+        if oid and oid == self_id:
+            continue
+        osid = issue_series_id(other)
+        if osid and osid != want_series:
+            continue
+        if str(other.get("number") or "").strip() != num:
+            continue
+        rank = main_like_sibling_rank(other.get("variant_name"))
+        if rank is None:
+            continue
+        if rank < best_rank:
+            best_rank = rank
+            best = other
+            if best_rank == 0:
+                break
+    return best
 
 
 def is_variant_issue(issue: dict) -> bool:
@@ -295,7 +374,12 @@ def resolve_variant_attachment(
     by_id: dict[str, dict],
     fetch_issue: Callable[[str], dict | None] | None = None,
 ) -> tuple[dict | None, str | None]:
-    """Return (root_parent, skip_reason). (None, None) if this row is a main."""
+    """Return (root_parent, skip_reason). (None, None) if this row is a main.
+
+    Stub / unusable parents (missing from by_id, null/0 series_id, or wrong series)
+    densify: main-like names (Cover A / Direct / Newsstand / empty) become mains;
+    other names attach to a same-number main-like sibling when one exists.
+    """
     if not is_variant_issue(issue):
         return None, None
     name = (issue.get("variant_name") or "").strip()
@@ -305,6 +389,7 @@ def resolve_variant_attachment(
     seen: set[str] = set()
     current = vid
     parent: dict | None = None
+    stub_or_unusable = False
     while current and current not in seen:
         seen.add(current)
         parent = by_id.get(current)
@@ -313,17 +398,52 @@ def resolve_variant_attachment(
             if isinstance(fetched, dict):
                 parent = fetched
                 by_id[current] = fetched
-        if not isinstance(parent, dict):
-            return None, "variant-orphan"
-        if not same_series(parent, series, str(series_id)):
-            return None, "variant-orphan"
+        if parent_is_stub_or_unusable(parent, series=series, series_id=str(series_id)):
+            stub_or_unusable = True
+            parent = None
+            break
+        assert isinstance(parent, dict)
         nxt = variant_of_id(parent)
         if not nxt:
             break
         current = nxt
+    if stub_or_unusable:
+        if is_cover_a_name(name):
+            return None, None
+        sibling = find_main_like_sibling(issue, by_id=by_id, series_id=str(series_id))
+        if sibling is not None:
+            return sibling, None
+        return None, "variant-orphan"
     if not name:
         return None, "variant-orphan"
     return parent, None
+
+
+def partition_mains_and_variants(
+    items: list,
+    *,
+    series: dict,
+    series_id: str,
+    by_id: dict[str, dict],
+    fetch_issue: Callable[[str], dict | None] | None = None,
+) -> tuple[list, list]:
+    """Split issues into densified mains vs variants (mains first for family attach)."""
+    mains: list = []
+    variants: list = []
+    for item in items:
+        issue = item[2] if isinstance(item, tuple) and len(item) >= 3 else item
+        parent, orphan = resolve_variant_attachment(
+            issue,
+            series=series,
+            series_id=str(series_id),
+            by_id=by_id,
+            fetch_issue=fetch_issue,
+        )
+        if parent is None and orphan is None:
+            mains.append(item)
+        else:
+            variants.append(item)
+    return mains, variants
 
 
 def comic_family_key(series: str, issue: str, publisher: str) -> str:
@@ -1276,20 +1396,22 @@ def ingest_series(
             by_id[str(gid)] = issue
         fetched.append((str(desc), url, issue))
 
-    mains: list[tuple[str, str, dict]] = []
-    variants: list[tuple[str, str, dict]] = []
-    for desc, url, issue in fetched:
-        if is_variant_issue(issue):
-            variants.append((desc, url, issue))
-        else:
-            mains.append((desc, url, issue))
-
     def sort_key(item: tuple[str, str, dict]):
         return main_issue_sort_key(
             descriptor_issue_num(item[0]) or str(item[2].get("number") or ""),
             item[0],
         )
 
+    def fetch_parent_early(ident: str) -> dict | None:
+        return client.get_json(f"{API}/issue/{ident}/")
+
+    mains, variants = partition_mains_and_variants(
+        fetched,
+        series=series,
+        series_id=str(series_id),
+        by_id=by_id,
+        fetch_issue=fetch_parent_early,
+    )
     mains.sort(key=sort_key)
     if max_issues and max_issues > 0:
         mains = mains[:max_issues]
@@ -1306,7 +1428,15 @@ def ingest_series(
 
     work = list(mains) + list(variants)
     for desc, url, issue in work:
-        if mains_only and is_variant_issue(issue):
+        parent, orphan = resolve_variant_attachment(
+            issue,
+            series=series,
+            series_id=series_id,
+            by_id=by_id,
+            fetch_issue=fetch_parent,
+        )
+        # Densified stub mains still carry variant_of_id; keep them under --mains-only.
+        if mains_only and not (parent is None and orphan is None):
             skips.append(
                 {
                     "seriesId": series_id,
@@ -1316,13 +1446,6 @@ def ingest_series(
                 }
             )
             continue
-        parent, orphan = resolve_variant_attachment(
-            issue,
-            series=series,
-            series_id=series_id,
-            by_id=by_id,
-            fetch_issue=fetch_parent,
-        )
         if orphan:
             skips.append(
                 {
@@ -1352,7 +1475,11 @@ def ingest_series(
                 }
             )
             continue
-        if parent is not None:
+        if parent is None:
+            # Densified stub main-like (Newsstand/Direct/Cover A) or true main.
+            if is_cover_a_name(issue.get("variant_name")):
+                parsed["variantName"] = ""
+        else:
             parsed["variantName"] = (issue.get("variant_name") or "").strip()
             no_family = apply_viewer_family(
                 parsed,
@@ -1477,8 +1604,13 @@ def ingest_series_from_dump(
 
     items = store.issues_for_series(series_id)
     by_id = {str(r.get("id")): r for r in items if r.get("id") is not None}
-    mains = [r for r in items if not is_variant_issue(r)]
-    variants = [r for r in items if is_variant_issue(r)]
+    mains, variants = partition_mains_and_variants(
+        items,
+        series=series,
+        series_id=str(series_id),
+        by_id=by_id,
+        fetch_issue=None,
+    )
     mains.sort(key=lambda r: main_issue_sort_key(str(r.get("number") or "")))
     if max_issues and max_issues > 0:
         mains = mains[:max_issues]
@@ -1491,9 +1623,9 @@ def ingest_series_from_dump(
 
     # Dump path: do not fetch parents outside by_id (same-series gate).
 
-    for issue in mains + variants:
-        desc = gcd_dump.dump_issue_descriptor(issue)
-        if mains_only and is_variant_issue(issue):
+    if mains_only:
+        for issue in variants:
+            desc = gcd_dump.dump_issue_descriptor(issue)
             skips.append(
                 {
                     "seriesId": series_id,
@@ -1502,7 +1634,12 @@ def ingest_series_from_dump(
                     "reason": "variant",
                 }
             )
-            continue
+        work_issues = list(mains)
+    else:
+        work_issues = list(mains) + list(variants)
+
+    for issue in work_issues:
+        desc = gcd_dump.dump_issue_descriptor(issue)
         year_skip = preparse_year_skip(issue, min_year=min_year, max_year=max_year)
         if year_skip:
             skips.append(
@@ -1572,7 +1709,10 @@ def ingest_series_from_dump(
                 }
             )
             continue
-        if parent is not None:
+        if parent is None:
+            if is_cover_a_name(issue.get("variant_name")):
+                parsed["variantName"] = ""
+        else:
             parsed["variantName"] = (issue.get("variant_name") or "").strip()
             no_family = apply_viewer_family(
                 parsed,
