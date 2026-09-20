@@ -1,0 +1,306 @@
+{
+  "source": "toyark-densify",
+  "finishedAt": "2026-09-20T05:34:24Z",
+  "mode": "apply",
+  "cap": 50,
+  "acceptedCandidates": 15,
+  "applied": 15,
+  "skippedApply": 0,
+  "rejectedRows": 8,
+  "withImage": 15,
+  "aliasAdded": 32,
+  "byCompany": {
+    "hasbro": {
+      "accepted": 0,
+      "rejected": 0
+    },
+    "mcfarlane": {
+      "accepted": 7,
+      "rejected": 1
+    },
+    "neca": {
+      "accepted": 1,
+      "rejected": 0
+    },
+    "jazwares": {
+      "accepted": 0,
+      "rejected": 0
+    },
+    "super7": {
+      "accepted": 4,
+      "rejected": 0
+    },
+    "hottoys": {
+      "accepted": 2,
+      "rejected": 0
+    },
+    "mondo": {
+      "accepted": 0,
+      "rejected": 0
+    },
+    "threezero": {
+      "accepted": 1,
+      "rejected": 0
+    },
+    "enterbay": {
+      "accepted": 0,
+      "rejected": 0
+    },
+    "asmus": {
+      "accepted": 0,
+      "rejected": 0
+    },
+    "starace": {
+      "accepted": 0,
+      "rejected": 0
+    },
+    "exo6": {
+      "accepted": 0,
+      "rejected": 0
+    }
+  },
+  "byRejectReason": {
+    "sponsor-newsletter": 2,
+    "vehicles-props-only": 1,
+    "company-not-allowlisted": 5
+  },
+  "appliedIds": [
+    "ta-397ebe6859bb",
+    "ta-85f870b28c0c",
+    "ta-e5900fbed856",
+    "ta-17504d72b466",
+    "ta-98a451f59137",
+    "ta-dbd5e68f43c2",
+    "ta-10d328abca7d",
+    "ta-60f6ff8e81d9",
+    "ta-f3743d99241c",
+    "ta-9207edd921d9",
+    "ta-389a6b262523",
+    "ta-2fb4b79be9ea",
+    "ta-65b321bacd17",
+    "ta-a2040673ff80",
+    "ta-73a85b1ec15c"
+  ],
+  "appliedSample": [
+    {
+      "id": "ta-397ebe6859bb",
+      "name": "Leonardo",
+      "company": "super7",
+      "line": "Super7 ReAction",
+      "year": 2026,
+      "variant": "ReAction+",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
+      "toyarkPostId": 599160
+    },
+    {
+      "id": "ta-85f870b28c0c",
+      "name": "Michelangelo",
+      "company": "super7",
+      "line": "Super7 ReAction",
+      "year": 2026,
+      "variant": "ReAction+",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
+      "toyarkPostId": 599160
+    },
+    {
+      "id": "ta-e5900fbed856",
+      "name": "Bebop",
+      "company": "super7",
+      "line": "Super7 ReAction",
+      "year": 2026,
+      "variant": "ReAction+",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
+      "toyarkPostId": 599160
+    },
+    {
+      "id": "ta-17504d72b466",
+      "name": "Rocksteady",
+      "company": "super7",
+      "line": "Super7 ReAction",
+      "year": 2026,
+      "variant": "ReAction / ReAction+",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
+      "toyarkPostId": 599160
+    },
+    {
+      "id": "ta-98a451f59137",
+      "name": "Batman",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": 2026,
+      "variant": "The Flash Movie – Arctic Suit",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Arctic-Suit-Batman-001.jpg",
+      "aliases": [
+        "MMS897"
+      ],
+      "sourceUrl": "https://www.toyark.com/2026/09/18/the-flash-movie-hot-toys-batman-arctic-suit-figure-599134",
+      "toyarkPostId": 599134
+    },
+    {
+      "id": "ta-dbd5e68f43c2",
+      "name": "Batman",
+      "company": "mcfarlane",
+      "line": "DC Multiverse Gold Label",
+      "year": 2026,
+      "variant": "Arkham City / Gold Label",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-McFarlane-DC-News-9.18.26.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/18/mcfarlane-toys-dc-previews-dc-multiverse-gold-label-arkham-city-batman-batman-beyond-cowl-page-punchers-batman-and-page-punchers-nightwing-599126",
+      "toyarkPostId": 599126
+    },
+    {
+      "id": "ta-10d328abca7d",
+      "name": "Batman",
+      "company": "mcfarlane",
+      "line": "Page Punchers",
+      "year": 2026,
+      "variant": "Batman #1",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-McFarlane-DC-News-9.18.26.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/18/mcfarlane-toys-dc-previews-dc-multiverse-gold-label-arkham-city-batman-batman-beyond-cowl-page-punchers-batman-and-page-punchers-nightwing-599126",
+      "toyarkPostId": 599126
+    },
+    {
+      "id": "ta-60f6ff8e81d9",
+      "name": "Nightwing",
+      "company": "mcfarlane",
+      "line": "Page Punchers",
+      "year": 2026,
+      "variant": "Nightwing #81",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-McFarlane-DC-News-9.18.26.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/18/mcfarlane-toys-dc-previews-dc-multiverse-gold-label-arkham-city-batman-batman-beyond-cowl-page-punchers-batman-and-page-punchers-nightwing-599126",
+      "toyarkPostId": 599126
+    },
+    {
+      "id": "ta-f3743d99241c",
+      "name": "Elvira",
+      "company": "neca",
+      "line": "Horror Ultimate",
+      "year": 2027,
+      "variant": "Mistress of the Dark",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Elvira-Mistress-of-the-Dark-001.webp",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/18/elvira-mistress-of-the-dark-neca-ultimate-elvira-figure-599122",
+      "toyarkPostId": 599122
+    },
+    {
+      "id": "ta-9207edd921d9",
+      "name": "Mera",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": 2026,
+      "variant": "DC Classic",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-DC-Multiverse-DC-Classic-9.17.26.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/17/dc-multiverse-dc-classic-mera-black-manta-wonder-girl-and-raven-599091",
+      "toyarkPostId": 599091
+    },
+    {
+      "id": "ta-389a6b262523",
+      "name": "Black Manta",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": 2026,
+      "variant": "DC Classic",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-DC-Multiverse-DC-Classic-9.17.26.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/17/dc-multiverse-dc-classic-mera-black-manta-wonder-girl-and-raven-599091",
+      "toyarkPostId": 599091
+    },
+    {
+      "id": "ta-2fb4b79be9ea",
+      "name": "Wonder Girl",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": 2026,
+      "variant": "DC Classic",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-DC-Multiverse-DC-Classic-9.17.26.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/17/dc-multiverse-dc-classic-mera-black-manta-wonder-girl-and-raven-599091",
+      "toyarkPostId": 599091
+    },
+    {
+      "id": "ta-65b321bacd17",
+      "name": "Raven",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": 2026,
+      "variant": "DC Classic",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-DC-Multiverse-DC-Classic-9.17.26.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/17/dc-multiverse-dc-classic-mera-black-manta-wonder-girl-and-raven-599091",
+      "toyarkPostId": 599091
+    },
+    {
+      "id": "ta-a2040673ff80",
+      "name": "Ellen Ripley",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": 2027,
+      "variant": "Power Loader",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Aliens-Power-Loader-and-Ripley-001.jpg",
+      "aliases": [
+        "MMS924",
+        "MMS923"
+      ],
+      "sourceUrl": "https://www.toyark.com/2026/09/16/aliens-hot-toys-power-loader-and-ripley-with-power-loader-set-599057",
+      "toyarkPostId": 599057
+    },
+    {
+      "id": "ta-73a85b1ec15c",
+      "name": "Iron Man",
+      "company": "threezero",
+      "line": "threezero DLX",
+      "year": 2026,
+      "variant": "Marvel DLX Mark 1",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Marvel-DLX-Iron-Man-Mark-1-009.webp",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/14/marvel-dlx-iron-man-mark-1-599022",
+      "toyarkPostId": 599022
+    }
+  ],
+  "skippedSample": [],
+  "archiveSize": 25744,
+  "fetchBlocker": null,
+  "wroteOneshot": true,
+  "comics": "untouched"
+}
