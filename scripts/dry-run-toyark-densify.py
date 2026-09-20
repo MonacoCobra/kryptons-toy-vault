@@ -970,12 +970,16 @@ class OneshotIndex:
         self.by_identity: dict[tuple[str, str, str, str], list[str]] = {}
         self.by_core: dict[tuple[str, str, str, str], list[str]] = {}
         self.by_name_line: dict[tuple[str, str, str], list[str]] = {}
+        self.subtitles: dict[str, str] = {}
         n = 0
         for r in rows:
             company = str(r.get("company") or "").lower()
             if company not in companies:
                 continue
             n += 1
+            rid = str(r.get("id") or "")
+            if rid:
+                self.subtitles[rid] = str(r.get("subtitle") or r.get("variant") or "")
             ik = identity_group_key(r)
             self.by_identity.setdefault(ik, []).append(r["id"])
             year = str(r.get("releaseDate") or "")[:4]
@@ -993,6 +997,9 @@ class OneshotIndex:
     def add(self, row: dict[str, Any]) -> None:
         """Register a newly applied row so the same run cannot double-insert."""
         company = str(row.get("company") or "").lower()
+        rid = str(row.get("id") or "")
+        if rid:
+            self.subtitles[rid] = str(row.get("subtitle") or row.get("variant") or "")
         ik = identity_group_key(row)
         self.by_identity.setdefault(ik, []).append(row["id"])
         year = str(row.get("releaseDate") or "")[:4]
@@ -1010,23 +1017,44 @@ class OneshotIndex:
     def match(
         self, company: str, name: str, line: str, year: int | None, variant: str
     ) -> tuple[str | None, list[str]]:
-        row = {
-            "company": company,
-            "name": name,
-            "line": line,
-            "subtitle": variant or "",
-        }
-        ids = self.by_identity.get(identity_group_key(row)) or []
-        if ids:
-            return "already-in-oneshot", ids[:8]
+        # Try identity keys for variant-only and baked subtitle (variant · year),
+        # matching how make_oneshot_row stores subtitle.
+        subtitles = [variant or ""]
+        if year:
+            baked = build_subtitle(variant or None, year, None)
+            if baked and baked not in subtitles:
+                subtitles.append(baked)
+        for sub in subtitles:
+            row = {
+                "company": company,
+                "name": name,
+                "line": line,
+                "subtitle": sub,
+            }
+            ids = self.by_identity.get(identity_group_key(row)) or []
+            if ids:
+                return "already-in-oneshot", ids[:8]
         if year:
             core = (company, norm_text(name), norm_text(line), str(year))
             ids = self.by_core.get(core) or []
             if ids:
-                # Distinct variant (after wave-subtitle normalize) is a new figure.
-                if variant and wave_subtitle_core(variant):
-                    return None, []
-                return "possible-reissue", ids[:8]
+                vcore = wave_subtitle_core(variant) if variant else ""
+                if not vcore:
+                    return "possible-reissue", ids[:8]
+                # Same company+line+name+year: only accept when the variant core
+                # is genuinely absent from existing hit subtitles (night babysit
+                # 2026-09-20: bare `return None` re-applied 13 identical rows
+                # under lengthened ta- ids because "ReAction+" ≠ "ReAction+ · 2026").
+                for hid in ids:
+                    existing = wave_subtitle_core(self.subtitles.get(str(hid)) or "")
+                    if (
+                        not existing
+                        or vcore == existing
+                        or vcore in existing
+                        or existing in vcore
+                    ):
+                        return "already-in-oneshot", [str(hid)]
+                return None, []
         if not variant:
             ids = self.by_name_line.get((company, norm_text(name), norm_text(line))) or []
             if ids:

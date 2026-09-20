@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T05:34:24Z",
+  "generatedAt": "2026-09-20T18:19:57Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-09-13T05:34:23.390428+00:00",
+    "after": "2026-09-13T18:19:56.721323+00:00",
     "before": null
   },
   "fetch": {
@@ -45,18 +45,18 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 14,
+    "fetchedPostCount": 15,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 8740,
+    "indexedRows": 8755,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 14,
-    "acceptedCandidates": 15,
-    "rejectedRows": 8,
+    "fetchedPosts": 15,
+    "acceptedCandidates": 11,
+    "rejectedRows": 13,
     "byCompany": {
       "hasbro": {
         "accepted": 0,
@@ -67,8 +67,8 @@
         "rejected": 1
       },
       "neca": {
-        "accepted": 1,
-        "rejected": 0
+        "accepted": 0,
+        "rejected": 1
       },
       "jazwares": {
         "accepted": 0,
@@ -79,16 +79,16 @@
         "rejected": 0
       },
       "hottoys": {
-        "accepted": 2,
-        "rejected": 0
+        "accepted": 0,
+        "rejected": 2
       },
       "mondo": {
         "accepted": 0,
         "rejected": 0
       },
       "threezero": {
-        "accepted": 1,
-        "rejected": 0
+        "accepted": 0,
+        "rejected": 1
       },
       "enterbay": {
         "accepted": 0,
@@ -108,12 +108,13 @@
       }
     },
     "byRejectReason": {
+      "company-not-allowlisted": 6,
       "sponsor-newsletter": 2,
-      "vehicles-props-only": 1,
-      "company-not-allowlisted": 5
+      "already-in-oneshot": 4,
+      "vehicles-props-only": 1
     },
-    "applied": 15,
-    "skippedApply": 0
+    "applied": 0,
+    "skippedApply": 11
   },
   "candidates": [
     {
@@ -195,29 +196,6 @@
     {
       "decision": "accept",
       "name": "Batman",
-      "company": "hottoys",
-      "line": "Hot Toys MMS",
-      "year": 2026,
-      "releaseWindow": null,
-      "variant": "The Flash Movie – Arctic Suit",
-      "sourceUrl": "https://www.toyark.com/2026/09/18/the-flash-movie-hot-toys-batman-arctic-suit-figure-599134",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Arctic-Suit-Batman-001.jpg",
-      "aliases": [
-        "MMS897"
-      ],
-      "codes": [
-        "MMS897"
-      ],
-      "gtin": null,
-      "toyarkPostId": 599134,
-      "postYear": 2026,
-      "pack": null,
-      "title": "The Flash Movie – Hot Toys Batman Arctic Suit Figure",
-      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys MMS; variant=The Flash Movie – Arctic Suit; year=2026; aliases-from-source=MMS897; new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Batman",
       "company": "mcfarlane",
       "line": "DC Multiverse Gold Label",
       "year": null,
@@ -271,25 +249,6 @@
       "pack": null,
       "title": "McFarlane Toys DC Previews – DC Multiverse Gold Label Arkham City Batman, Batman Beyond Cowl, Page Punchers Batman, and Page Punchers Nightwing",
       "rationale": "mcfarlane via class:companies-mcfarlane; line=Page Punchers; variant=Nightwing #81; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Elvira",
-      "company": "neca",
-      "line": "Horror Ultimate",
-      "year": 2027,
-      "releaseWindow": "some time in 2027",
-      "variant": "Mistress of the Dark",
-      "sourceUrl": "https://www.toyark.com/2026/09/18/elvira-mistress-of-the-dark-neca-ultimate-elvira-figure-599122",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Elvira-Mistress-of-the-Dark-001.webp",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599122,
-      "postYear": 2026,
-      "pack": null,
-      "title": "Elvira: Mistress of the Dark – NECA Ultimate Elvira Figure",
-      "rationale": "neca via class:companies-neca; line=Horror Ultimate; variant=Mistress of the Dark; year=2027; new/reveal/pre-order/official-image signal"
     },
     {
       "decision": "accept",
@@ -366,53 +325,27 @@
       "pack": null,
       "title": "DC Multiverse – DC Classic Mera, Black Manta, Wonder Girl, and Raven",
       "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Ellen Ripley",
-      "company": "hottoys",
-      "line": "Hot Toys MMS",
-      "year": 2027,
-      "releaseWindow": null,
-      "variant": "Power Loader",
-      "sourceUrl": "https://www.toyark.com/2026/09/16/aliens-hot-toys-power-loader-and-ripley-with-power-loader-set-599057",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Aliens-Power-Loader-and-Ripley-001.jpg",
-      "aliases": [
-        "MMS924",
-        "MMS923"
-      ],
-      "codes": [
-        "MMS924",
-        "MMS923"
-      ],
-      "gtin": null,
-      "toyarkPostId": 599057,
-      "postYear": 2026,
-      "pack": null,
-      "title": "Aliens – Hot Toys Power Loader and Ripley with Power Loader Set",
-      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys MMS; variant=Power Loader; year=2027; aliases-from-source=MMS924,MMS923; new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Iron Man",
-      "company": "threezero",
-      "line": "threezero DLX",
-      "year": 2026,
-      "releaseWindow": null,
-      "variant": "Marvel DLX Mark 1",
-      "sourceUrl": "https://www.toyark.com/2026/09/14/marvel-dlx-iron-man-mark-1-599022",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Marvel-DLX-Iron-Man-Mark-1-009.webp",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599022,
-      "postYear": 2026,
-      "pack": null,
-      "title": "Marvel DLX Iron Man Mark 1",
-      "rationale": "threezero via class:companies-threezero; line=threezero DLX; variant=Marvel DLX Mark 1; year=2026; new/reveal/pre-order/official-image signal"
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "hiya",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/20/godzilla-singular-point-hiya-toys-godzilla-ultima-version-599174",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599174,
+      "title": "Godzilla Singular Point – Hiya Toys Godzilla Ultima Version",
+      "rationale": "Recognized hiya via class:companies-hiya-toys; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
     {
       "decision": "reject",
       "reason": "sponsor-newsletter",
@@ -433,6 +366,31 @@
     },
     {
       "decision": "reject",
+      "reason": "already-in-oneshot",
+      "name": "Batman",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": 2026,
+      "releaseWindow": null,
+      "variant": "The Flash Movie – Arctic Suit",
+      "sourceUrl": "https://www.toyark.com/2026/09/18/the-flash-movie-hot-toys-batman-arctic-suit-figure-599134",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Arctic-Suit-Batman-001.jpg",
+      "aliases": [
+        "MMS897"
+      ],
+      "codes": [
+        "MMS897"
+      ],
+      "gtin": null,
+      "toyarkPostId": 599134,
+      "title": "The Flash Movie – Hot Toys Batman Arctic Suit Figure",
+      "oneshotIds": [
+        "ta-98a451f59137"
+      ],
+      "rationale": "Identity key already in oneshot (ta-98a451f59137)."
+    },
+    {
+      "decision": "reject",
       "reason": "vehicles-props-only",
       "name": "Batman Beyond",
       "company": "mcfarlane",
@@ -448,6 +406,27 @@
       "toyarkPostId": 599126,
       "title": "McFarlane Toys DC Previews – DC Multiverse Gold Label Arkham City Batman, Batman Beyond Cowl, Page Punchers Batman, and Page Punchers Nightwing",
       "rationale": "Batman Beyond reads as a cowl/prop/vehicle, not an articulated figure."
+    },
+    {
+      "decision": "reject",
+      "reason": "already-in-oneshot",
+      "name": "Elvira",
+      "company": "neca",
+      "line": "Horror Ultimate",
+      "year": 2027,
+      "releaseWindow": "some time in 2027",
+      "variant": "Mistress of the Dark",
+      "sourceUrl": "https://www.toyark.com/2026/09/18/elvira-mistress-of-the-dark-neca-ultimate-elvira-figure-599122",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Elvira-Mistress-of-the-Dark-001.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599122,
+      "title": "Elvira: Mistress of the Dark – NECA Ultimate Elvira Figure",
+      "oneshotIds": [
+        "ta-f3743d99241c"
+      ],
+      "rationale": "Identity key already in oneshot (ta-f3743d99241c)."
     },
     {
       "decision": "reject",
@@ -523,6 +502,33 @@
     },
     {
       "decision": "reject",
+      "reason": "already-in-oneshot",
+      "name": "Ellen Ripley",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": "Power Loader",
+      "sourceUrl": "https://www.toyark.com/2026/09/16/aliens-hot-toys-power-loader-and-ripley-with-power-loader-set-599057",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Aliens-Power-Loader-and-Ripley-001.jpg",
+      "aliases": [
+        "MMS924",
+        "MMS923"
+      ],
+      "codes": [
+        "MMS924",
+        "MMS923"
+      ],
+      "gtin": null,
+      "toyarkPostId": 599057,
+      "title": "Aliens – Hot Toys Power Loader and Ripley with Power Loader Set",
+      "oneshotIds": [
+        "ta-a2040673ff80"
+      ],
+      "rationale": "Identity key already in oneshot (ta-a2040673ff80)."
+    },
+    {
+      "decision": "reject",
       "reason": "company-not-allowlisted",
       "name": null,
       "company": "sentinel",
@@ -538,6 +544,27 @@
       "toyarkPostId": 599040,
       "title": "Spider-Man: Across The Spider-Verse – SV-Action Miles G. Morales Figure",
       "rationale": "Recognized sentinel via class:companies-sentinel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "already-in-oneshot",
+      "name": "Iron Man",
+      "company": "threezero",
+      "line": "threezero DLX",
+      "year": 2026,
+      "releaseWindow": null,
+      "variant": "Marvel DLX Mark 1",
+      "sourceUrl": "https://www.toyark.com/2026/09/14/marvel-dlx-iron-man-mark-1-599022",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Marvel-DLX-Iron-Man-Mark-1-009.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599022,
+      "title": "Marvel DLX Iron Man Mark 1",
+      "oneshotIds": [
+        "ta-73a85b1ec15c"
+      ],
+      "rationale": "Identity key already in oneshot (ta-73a85b1ec15c)."
     },
     {
       "decision": "reject",
@@ -558,230 +585,114 @@
       "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     }
   ],
-  "applied": [
+  "applied": [],
+  "applySkipped": [
     {
-      "id": "ta-397ebe6859bb",
       "name": "Leonardo",
       "company": "super7",
-      "line": "Super7 ReAction",
-      "year": 2026,
-      "variant": "ReAction+",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-397ebe6859bb"
+      ],
       "toyarkPostId": 599160
     },
     {
-      "id": "ta-85f870b28c0c",
       "name": "Michelangelo",
       "company": "super7",
-      "line": "Super7 ReAction",
-      "year": 2026,
-      "variant": "ReAction+",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-85f870b28c0c"
+      ],
       "toyarkPostId": 599160
     },
     {
-      "id": "ta-e5900fbed856",
       "name": "Bebop",
       "company": "super7",
-      "line": "Super7 ReAction",
-      "year": 2026,
-      "variant": "ReAction+",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-e5900fbed856"
+      ],
       "toyarkPostId": 599160
     },
     {
-      "id": "ta-17504d72b466",
       "name": "Rocksteady",
       "company": "super7",
-      "line": "Super7 ReAction",
-      "year": 2026,
-      "variant": "ReAction / ReAction+",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-17504d72b466"
+      ],
       "toyarkPostId": 599160
     },
     {
-      "id": "ta-98a451f59137",
       "name": "Batman",
-      "company": "hottoys",
-      "line": "Hot Toys MMS",
-      "year": 2026,
-      "variant": "The Flash Movie – Arctic Suit",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Arctic-Suit-Batman-001.jpg",
-      "aliases": [
-        "MMS897"
+      "company": "mcfarlane",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-dbd5e68f43c2"
       ],
-      "sourceUrl": "https://www.toyark.com/2026/09/18/the-flash-movie-hot-toys-batman-arctic-suit-figure-599134",
-      "toyarkPostId": 599134
-    },
-    {
-      "id": "ta-dbd5e68f43c2",
-      "name": "Batman",
-      "company": "mcfarlane",
-      "line": "DC Multiverse Gold Label",
-      "year": 2026,
-      "variant": "Arkham City / Gold Label",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-McFarlane-DC-News-9.18.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/18/mcfarlane-toys-dc-previews-dc-multiverse-gold-label-arkham-city-batman-batman-beyond-cowl-page-punchers-batman-and-page-punchers-nightwing-599126",
       "toyarkPostId": 599126
     },
     {
-      "id": "ta-10d328abca7d",
       "name": "Batman",
       "company": "mcfarlane",
-      "line": "Page Punchers",
-      "year": 2026,
-      "variant": "Batman #1",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-McFarlane-DC-News-9.18.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/18/mcfarlane-toys-dc-previews-dc-multiverse-gold-label-arkham-city-batman-batman-beyond-cowl-page-punchers-batman-and-page-punchers-nightwing-599126",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-10d328abca7d"
+      ],
       "toyarkPostId": 599126
     },
     {
-      "id": "ta-60f6ff8e81d9",
       "name": "Nightwing",
       "company": "mcfarlane",
-      "line": "Page Punchers",
-      "year": 2026,
-      "variant": "Nightwing #81",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-McFarlane-DC-News-9.18.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/18/mcfarlane-toys-dc-previews-dc-multiverse-gold-label-arkham-city-batman-batman-beyond-cowl-page-punchers-batman-and-page-punchers-nightwing-599126",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-60f6ff8e81d9"
+      ],
       "toyarkPostId": 599126
     },
     {
-      "id": "ta-f3743d99241c",
-      "name": "Elvira",
-      "company": "neca",
-      "line": "Horror Ultimate",
-      "year": 2027,
-      "variant": "Mistress of the Dark",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Elvira-Mistress-of-the-Dark-001.webp",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/18/elvira-mistress-of-the-dark-neca-ultimate-elvira-figure-599122",
-      "toyarkPostId": 599122
-    },
-    {
-      "id": "ta-9207edd921d9",
       "name": "Mera",
       "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": 2026,
-      "variant": "DC Classic",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-DC-Multiverse-DC-Classic-9.17.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/17/dc-multiverse-dc-classic-mera-black-manta-wonder-girl-and-raven-599091",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-9207edd921d9"
+      ],
       "toyarkPostId": 599091
     },
     {
-      "id": "ta-389a6b262523",
       "name": "Black Manta",
       "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": 2026,
-      "variant": "DC Classic",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-DC-Multiverse-DC-Classic-9.17.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/17/dc-multiverse-dc-classic-mera-black-manta-wonder-girl-and-raven-599091",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-389a6b262523"
+      ],
       "toyarkPostId": 599091
     },
     {
-      "id": "ta-2fb4b79be9ea",
       "name": "Wonder Girl",
       "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": 2026,
-      "variant": "DC Classic",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-DC-Multiverse-DC-Classic-9.17.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/17/dc-multiverse-dc-classic-mera-black-manta-wonder-girl-and-raven-599091",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-2fb4b79be9ea"
+      ],
       "toyarkPostId": 599091
     },
     {
-      "id": "ta-65b321bacd17",
       "name": "Raven",
       "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": 2026,
-      "variant": "DC Classic",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-DC-Multiverse-DC-Classic-9.17.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/17/dc-multiverse-dc-classic-mera-black-manta-wonder-girl-and-raven-599091",
-      "toyarkPostId": 599091
-    },
-    {
-      "id": "ta-a2040673ff80",
-      "name": "Ellen Ripley",
-      "company": "hottoys",
-      "line": "Hot Toys MMS",
-      "year": 2027,
-      "variant": "Power Loader",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Aliens-Power-Loader-and-Ripley-001.jpg",
-      "aliases": [
-        "MMS924",
-        "MMS923"
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-65b321bacd17"
       ],
-      "sourceUrl": "https://www.toyark.com/2026/09/16/aliens-hot-toys-power-loader-and-ripley-with-power-loader-set-599057",
-      "toyarkPostId": 599057
-    },
-    {
-      "id": "ta-73a85b1ec15c",
-      "name": "Iron Man",
-      "company": "threezero",
-      "line": "threezero DLX",
-      "year": 2026,
-      "variant": "Marvel DLX Mark 1",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Marvel-DLX-Iron-Man-Mark-1-009.webp",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/14/marvel-dlx-iron-man-mark-1-599022",
-      "toyarkPostId": 599022
+      "toyarkPostId": 599091
     }
   ],
-  "applySkipped": [],
   "applyStats": {
-    "accepted": 15,
-    "applied": 15,
-    "skippedApply": 0,
-    "aliasAdded": 32,
-    "withImage": 15,
+    "accepted": 11,
+    "applied": 0,
+    "skippedApply": 11,
+    "aliasAdded": 0,
+    "withImage": 0,
     "cap": 50,
     "blocker": null
   }
