@@ -1,0 +1,97 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-09-21",
+  "updatedAt": "2026-09-21T14:47:26Z",
+  "added": 80,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "SSR newest AF PageSize=100 returns ~100 cards; JS pager page2 identical. AF+mapped kept 27 (InArt/boutique unmapped skipped).",
+  "ee_detail_blocker": "listing ld+json only (no detail fetches; 429 risk). Combined action-figures + hot-off-the-truck + new/upcoming/newly/preorder.",
+  "counts": {
+    "candidates_seen": 287,
+    "ee_candidates": 53,
+    "bbts_candidates": 27,
+    "added": 80,
+    "skipped_dupes": 65,
+    "rejected_non_af": 71,
+    "unmapped_company": 63,
+    "postfilter_rejected": 9
+  },
+  "oneshotBefore": 25744,
+  "oneshotAfter": 25824,
+  "samples": [
+    {
+      "sku": "BFHH300103",
+      "name": "Hero H.A.C.K.S. Zarko Resources Inc.: Galactic Prospectors 1:18 Scale Action Figure",
+      "id": "afmon-bossfight-hero-h-a-c-k-s-zarko-resources-inc-galactic-prospectors-1-18-bfhh300103",
+      "source": "ee"
+    },
+    {
+      "sku": "MF17893",
+      "name": "DC Direct Page Punchers Wave 14 Batman #1 7-Inch Scale Action Figure with Comic",
+      "id": "afmon-dcdirect-dc-direct-page-punchers-wave-14-batman-1-7-inch-scale-action-mf17893",
+      "source": "ee"
+    },
+    {
+      "sku": "BFHH300107",
+      "name": "Hero H.A.C.K.S. John Bradford: Captain of the Temporal Voyager 1:18 Scale Action Figure",
+      "id": "afmon-bossfight-hero-h-a-c-k-s-john-bradford-captain-of-the-temporal-voyager-bfhh300107",
+      "source": "ee"
+    },
+    {
+      "sku": "BFHH300101",
+      "name": "Hero H.A.C.K.S. Jett Steelblade: Stellar Knight of Accord 1:18 Scale Action Figure",
+      "id": "afmon-bossfight-hero-h-a-c-k-s-jett-steelblade-stellar-knight-of-accord-1-18-bfhh300101",
+      "source": "ee"
+    },
+    {
+      "sku": "BFHH300104",
+      "name": "Hero H.A.C.K.S. Minos Auroxos: Labyrinthian Warrior 1:18 Scale Action Figure",
+      "id": "afmon-bossfight-hero-h-a-c-k-s-minos-auroxos-labyrinthian-warrior-1-18-scale-bfhh300104",
+      "source": "ee"
+    },
+    {
+      "sku": "BFHH300102",
+      "name": "Hero H.A.C.K.S. Stellar Guard: Cosmic Defender of Accord 1:18 Scale Action Figure",
+      "id": "afmon-bossfight-hero-h-a-c-k-s-stellar-guard-cosmic-defender-of-accord-1-18--bfhh300102",
+      "source": "ee"
+    },
+    {
+      "sku": "BFHH300108",
+      "name": "Hero H.A.C.K.S. Daniel Wright: Pirate Quartermaster 1:18 Scale Action Figure",
+      "id": "afmon-bossfight-hero-h-a-c-k-s-daniel-wright-pirate-quartermaster-1-18-scale-bfhh300108",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2784",
+      "name": "Transformers Age of the Primes Leader Class Herald of Unicron Action Figure",
+      "id": "afmon-hasbro-transformers-age-of-the-primes-leader-class-herald-of-unicro-hsg2784",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2625",
+      "name": "Star Wars The Vintage Collection Devon Izara 3 3/4-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-devon-izara-3-3-4-inch-acti-hsg2625",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG1870",
+      "name": "Inhumans Marvel Legends Medusa & Marvel\u2019s Gorgon 6-Inch Action Figures 2-Pack",
+      "id": "afmon-hasbro-inhumans-marvel-legends-medusa-marvel-s-gorgon-6-inch-action-hsg1870",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG3540",
+      "name": "Star Wars The Vintage Collection Hera Syndulla (Specter-2) 3 3/4-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-hera-syndulla-specter-2-3-3-hsg3540",
+      "source": "ee"
+    },
+    {
+      "sku": "HSF9004",
+      "name": "Spider-Man: No Way Home Marvel Legends Series Green Goblin Electronic Pumpkin Prop Replica",
+      "id": "afmon-hasbro-spider-man-no-way-home-marvel-legends-series-green-goblin-el-hsf9004",
+      "source": "ee"
+    }
+  ]
+}
