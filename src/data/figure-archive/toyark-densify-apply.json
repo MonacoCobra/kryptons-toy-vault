@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T05:34:45Z",
+  "generatedAt": "2026-09-21T18:19:07Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-09-14T05:34:45.001932+00:00",
+    "after": "2026-09-14T18:19:06.700963+00:00",
     "before": null
   },
   "fetch": {
@@ -45,18 +45,18 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 15,
+    "fetchedPostCount": 17,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 8755,
+    "indexedRows": 8791,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 15,
+    "fetchedPosts": 17,
     "acceptedCandidates": 11,
-    "rejectedRows": 13,
+    "rejectedRows": 15,
     "byCompany": {
       "hasbro": {
         "accepted": 0,
@@ -64,7 +64,7 @@
       },
       "mcfarlane": {
         "accepted": 7,
-        "rejected": 1
+        "rejected": 2
       },
       "neca": {
         "accepted": 0,
@@ -109,6 +109,8 @@
     },
     "byRejectReason": {
       "company-not-allowlisted": 6,
+      "company-unknown": 1,
+      "no-explicit-figure": 1,
       "sponsor-newsletter": 2,
       "already-in-oneshot": 4,
       "vehicles-props-only": 1
@@ -328,6 +330,60 @@
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "kaiyodo",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/21/street-fighter-6-revoltech-cammy-and-chun-li-announced-599194",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599194,
+      "title": "Street Fighter 6 – Revoltech Cammy and Chun-Li Announced",
+      "rationale": "Recognized kaiyodo via class:companies-kaiyodo; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/21/dc-comics-beast-kingdom-absolute-batman-figure-preview-599190",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599190,
+      "title": "DC Comics – Beast Kingdom Absolute Batman Figure Preview",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
+    {
+      "decision": "reject",
+      "reason": "no-explicit-figure",
+      "name": null,
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/21/dc-multiverse-absolute-batman-preview-599186",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/DC-Multiverse-Absolute-Batman-Preview-001.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599186,
+      "title": "DC Multiverse – Absolute Batman Preview",
+      "rationale": "Company/signal present but no explicitly named figure/variant."
+    },
     {
       "decision": "reject",
       "reason": "company-not-allowlisted",
@@ -565,24 +621,6 @@
         "ta-73a85b1ec15c"
       ],
       "rationale": "Identity key already in oneshot (ta-73a85b1ec15c)."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "shfiguarts",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/14/tamashii-nations-nycc-2026-exclusives-announced-598997",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 598997,
-      "title": "Tamashii Nations NYCC 2026 Exclusives Announced",
-      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     }
   ],
   "applied": [],
