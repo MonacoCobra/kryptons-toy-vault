@@ -1,0 +1,99 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-09-22",
+  "updatedAt": "2026-09-22T14:55:56Z",
+  "added": 72,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "SSR Newest AF PageSize=100; form still selects Relevance. JS pager page2 product-id set identical to page1 \u2014 not paging.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 375,
+    "ee_candidates": 125,
+    "bbts_candidates": 62,
+    "added": 72,
+    "skipped_dupes": 115,
+    "rejected_non_af": 150,
+    "unmapped_company": 38,
+    "postfilter_rejected": 0
+  },
+  "oneshotBefore": 25946,
+  "oneshotAfter": 26018,
+  "ee_added": 38,
+  "bbts_added": 34,
+  "samples": [
+    {
+      "sku": "NMNC51418",
+      "name": "Ben Cooper Predator Costume Clothed Figure , Not Mint",
+      "id": "afmon-neca-ben-cooper-predator-costume-clothed-figure-not-mint-nmnc51418",
+      "source": "ee"
+    },
+    {
+      "sku": "NMSUP81901",
+      "name": "Green Day Mud Fight Tre Cool 3 3/4-Inch ReAction Figure, Not Mint",
+      "id": "afmon-super7-green-day-mud-fight-tre-cool-3-3-4-inch-reaction-figure-not-mint-nmsup81901",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2786C",
+      "name": "Star Wars The Vintage Collection 3 3/4-Inch Action Figure 3 Wave 3 Case of 8",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-3-3-4-inch-action-figure-3-wave-3-case-of-8-hsg2786c",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP82825",
+      "name": "Godzilla Ultimates Kiryu MechaGodzilla 8-Inch Scale Action Figure",
+      "id": "afmon-super7-godzilla-ultimates-kiryu-mechagodzilla-8-inch-scale-action-figure-sup82825",
+      "source": "ee"
+    },
+    {
+      "sku": "TNC04935",
+      "name": "Heels and Faces Bruce Lee Yellow Tracksuit 4 1/2-Inch Scale Action Figure",
+      "id": "afmon-toynami-heels-and-faces-bruce-lee-yellow-tracksuit-4-1-2-inch-scale-action-figure-tnc04935",
+      "source": "ee"
+    },
+    {
+      "sku": "BA37711",
+      "name": "Naruto Shippuden Anime Heroes Beyond Naruto Tailed Beast Cloak Action figure",
+      "id": "afmon-bandai-naruto-shippuden-anime-heroes-beyond-naruto-tailed-beast-cloak-action-figure-ba37711",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2228",
+      "name": "Transformers Cyberworld Autobot Jazz Cyber Changers Energon Surge",
+      "id": "afmon-hasbro-transformers-cyberworld-autobot-jazz-cyber-changers-energon-surge-hsg2228",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP81898G",
+      "name": "Godzilla Ultimates SpaceGodzilla 16-Bit 7-Inch Scale Action Figure",
+      "id": "afmon-super7-godzilla-ultimates-spacegodzilla-16-bit-7-inch-scale-action-figure-sup81898g",
+      "source": "ee"
+    },
+    {
+      "sku": "TNC05123",
+      "name": "Heels and Faces Bruce Lee (Bloody) 4 1/2-Inch Scale Action Figure",
+      "id": "afmon-toynami-heels-and-faces-bruce-lee-bloody-4-1-2-inch-scale-action-figure-tnc05123",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2602",
+      "name": "Star Wars The Vintage Collection 3 3/4-Inch Poggle the Lesser Action Figure",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-3-3-4-inch-poggle-the-lesser-action-figure-hsg2602",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2860",
+      "name": "Spider-Man Titan Series Spider-Man Black Suit 12-Inch Action Figure",
+      "id": "afmon-hasbro-spider-man-titan-series-spider-man-black-suit-12-inch-action-figure-hsg2860",
+      "source": "ee"
+    },
+    {
+      "sku": "MTJRY33",
+      "name": "KPop Demon Hunters Saja Boys Jinu Soda Pop Action Figure",
+      "id": "afmon-mattel-kpop-demon-hunters-saja-boys-jinu-soda-pop-action-figure-mtjry33",
+      "source": "ee"
+    }
+  ]
+}
