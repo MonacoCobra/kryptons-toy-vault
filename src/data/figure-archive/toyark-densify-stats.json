@@ -1,12 +1,12 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-09-21T18:19:07Z",
+  "finishedAt": "2026-09-22T05:39:41Z",
   "mode": "apply",
   "cap": 50,
   "acceptedCandidates": 11,
   "applied": 0,
   "skippedApply": 11,
-  "rejectedRows": 15,
+  "rejectedRows": 14,
   "withImage": 0,
   "aliasAdded": 0,
   "byCompany": {
@@ -40,7 +40,7 @@
     },
     "threezero": {
       "accepted": 0,
-      "rejected": 1
+      "rejected": 0
     },
     "enterbay": {
       "accepted": 0,
@@ -64,7 +64,7 @@
     "company-unknown": 1,
     "no-explicit-figure": 1,
     "sponsor-newsletter": 2,
-    "already-in-oneshot": 4,
+    "already-in-oneshot": 3,
     "vehicles-props-only": 1
   },
   "appliedIds": [],
@@ -170,7 +170,7 @@
       "toyarkPostId": 599091
     }
   ],
-  "archiveSize": 25824,
+  "archiveSize": 25946,
   "fetchBlocker": null,
   "wroteOneshot": false,
   "comics": "untouched"

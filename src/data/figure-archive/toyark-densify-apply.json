@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T18:19:07Z",
+  "generatedAt": "2026-09-22T05:39:40Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-09-14T18:19:06.700963+00:00",
+    "after": "2026-09-15T05:39:39.839529+00:00",
     "before": null
   },
   "fetch": {
@@ -45,18 +45,18 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 17,
+    "fetchedPostCount": 16,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 8791,
+    "indexedRows": 8797,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 17,
+    "fetchedPosts": 16,
     "acceptedCandidates": 11,
-    "rejectedRows": 15,
+    "rejectedRows": 14,
     "byCompany": {
       "hasbro": {
         "accepted": 0,
@@ -88,7 +88,7 @@
       },
       "threezero": {
         "accepted": 0,
-        "rejected": 1
+        "rejected": 0
       },
       "enterbay": {
         "accepted": 0,
@@ -112,7 +112,7 @@
       "company-unknown": 1,
       "no-explicit-figure": 1,
       "sponsor-newsletter": 2,
-      "already-in-oneshot": 4,
+      "already-in-oneshot": 3,
       "vehicles-props-only": 1
     },
     "applied": 0,
@@ -600,27 +600,6 @@
       "toyarkPostId": 599040,
       "title": "Spider-Man: Across The Spider-Verse – SV-Action Miles G. Morales Figure",
       "rationale": "Recognized sentinel via class:companies-sentinel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "already-in-oneshot",
-      "name": "Iron Man",
-      "company": "threezero",
-      "line": "threezero DLX",
-      "year": 2026,
-      "releaseWindow": null,
-      "variant": "Marvel DLX Mark 1",
-      "sourceUrl": "https://www.toyark.com/2026/09/14/marvel-dlx-iron-man-mark-1-599022",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Marvel-DLX-Iron-Man-Mark-1-009.webp",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599022,
-      "title": "Marvel DLX Iron Man Mark 1",
-      "oneshotIds": [
-        "ta-73a85b1ec15c"
-      ],
-      "rationale": "Identity key already in oneshot (ta-73a85b1ec15c)."
     }
   ],
   "applied": [],
