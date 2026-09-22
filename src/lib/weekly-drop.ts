@@ -57,6 +57,11 @@ const COMPANIES: CompanyId[] = [
   "verycool",
   "ironfactory",
   "magicsquare",
+  "weijiang",
+  "jxjiang",
+  "blackmamba",
+  "toyhousefactory",
+  "bpf",
   "cangtoys",
   "medicom",
   "drwu",
@@ -292,6 +297,11 @@ function asCompany(raw: string, line: string, name: string): CompanyId | null {
   if (/very cool|verycool/.test(s)) return "verycool";
   if (/iron factory|ironfactory/.test(s)) return "ironfactory";
   if (/magic square|magicsquare/.test(s)) return "magicsquare";
+  if (/wei\s*jiang|weijiang|\bwj\b/.test(s)) return "weijiang";
+  if (/jx\s*jiang|jxjiang|metalbeast/.test(s)) return "jxjiang";
+  if (/black\s*mamba|blackmamba|\bbmb\b/.test(s)) return "blackmamba";
+  if (/toy\s*house\s*factory|toyhousefactory|\bthf-/.test(s)) return "toyhousefactory";
+  if (/\bbpf\b/.test(s)) return "bpf";
   if (/cang toys|cangtoys|\bcang\b/.test(s)) return "cangtoys";
   if (/real action heroes|\brah\b|medicom toy/.test(s)) return "medicom";
   if (/dr\.?\s*wu|drwu/.test(s)) return "drwu";

@@ -122,6 +122,11 @@ export type CompanyId =
   | "robotparadise"
   | "apctoys"
   | "moonstudio"
+  | "weijiang"
+  | "jxjiang"
+  | "blackmamba"
+  | "toyhousefactory"
+  | "bpf"
   | "gong";
 
 export type ItemKind = "figure" | "kit";

@@ -1,0 +1,318 @@
+{
+  "tf3pKoPriorityInjectAt": "2026-09-22T19:02:32.827247+00:00",
+  "source": "inject-tf3p-ko-priority",
+  "beforeTotal": 26020,
+  "afterTotal": 26208,
+  "added": 188,
+  "addedIdsSample": [
+    "weijiang-wj-mpp10",
+    "weijiang-wj-m09",
+    "weijiang-wj-m05",
+    "weijiang-wj-mpss01",
+    "weijiang-wj-m01",
+    "weijiang-wj-rfac",
+    "weijiang-wje-no1",
+    "weijiang-wj-rfmpp30",
+    "weijiang-wj-rfmpp27",
+    "weijiang-wj-od1",
+    "weijiang-wj-ug",
+    "weijiang-wj-ne01",
+    "weijiang-wj-mpp10z",
+    "weijiang-wj-rfbh",
+    "weijiang-wj-rfa",
+    "weijiang-4th-party-wj-ko-not-mpm04-mpm-04-optimus-prime-oversized-black-apple-all",
+    "weijiang-wj-m-06",
+    "weijiang-mw-model-wizard-8616-god-of-war-oversized-ss-38-studio-series-optimus-pr",
+    "weijiang-jujiang-jj-01-jj01-leader-oversized-takara-tommy-classic-c-01-optimus-pr",
+    "weijiang-4th-party-mw-model-wizard-t-10s-t10s-earthquake-star-sky-wings-not-overs",
+    "weijiang-wj-m-01d",
+    "weijiang-wj-weijiang-4th-party-oversized-ss05-optimus-prime-29cm-11",
+    "weijiang-mw-model-wizard-t-08-t08-earthquake-shake-sky-wing-oversized-mpm08-megat",
+    "weijiang-weijiang-mini-tf-hunting-war-q-car-ko-takara-tommy-qt-series-16-in-1",
+    "weijiang-weijiang-wj-black-apple-sqweeks-tlk-movie-wei-jiang-23cm-9",
+    "jxjiang-jx-mb01mm",
+    "jxjiang-jx-mb02",
+    "magicsquare-ms-b32a",
+    "magicsquare-g04",
+    "magicsquare-ms-07",
+    "magicsquare-ms-b36d",
+    "magicsquare-ms-b28a",
+    "magicsquare-ms-b52c",
+    "magicsquare-ms-b44ex",
+    "magicsquare-ms-b61",
+    "magicsquare-ms-b62",
+    "magicsquare-ms-06",
+    "magicsquare-g03",
+    "magicsquare-ms-04",
+    "magicsquare-ms-03"
+  ],
+  "skipped": 167,
+  "skippedSample": [
+    {
+      "id": "weijiang-wj-m01d",
+      "reason": "name-exists",
+      "name": "M-01 Commander"
+    },
+    {
+      "id": "weijiang-wj-m-05",
+      "reason": "code-exists",
+      "code": "WJ-M-05"
+    },
+    {
+      "id": "weijiang-wj-m-09",
+      "reason": "code-exists",
+      "code": "WJ-M-09"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B60",
+      "title": "Magic Square Toys MS-B60 PTEROSAUR"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B57",
+      "title": "Magic Square Toys MS-B57 TRICERATOPS"
+    },
+    {
+      "id": "magicsquare-ms-b55c",
+      "reason": "name-exists",
+      "name": "Space Shuttle"
+    },
+    {
+      "id": "magicsquare-ms-b54c",
+      "reason": "name-exists",
+      "name": "Tornado"
+    },
+    {
+      "id": "magicsquare-ms-b53c",
+      "reason": "name-exists",
+      "name": "Night Tracer"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B58",
+      "title": "Magic Square Toys MS-B58 BRONTOSAURUS"
+    },
+    {
+      "id": "magicsquare-ms-b51c",
+      "reason": "name-exists",
+      "name": "Heavy Gunner"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B56",
+      "title": "Magic Square Toys MS-B56 TYRANNOSAURUS REX"
+    },
+    {
+      "id": "magicsquare-ms-b54d",
+      "reason": "name-exists",
+      "name": "Tornado"
+    },
+    {
+      "id": "magicsquare-ms-02tc",
+      "reason": "name-exists",
+      "name": "Light Of Peace"
+    },
+    {
+      "id": "magicsquare-ms-b55d",
+      "reason": "name-exists",
+      "name": "Space Shuttle"
+    },
+    {
+      "id": "magicsquare-ms-b53d",
+      "reason": "name-exists",
+      "name": "Night Tracer"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B53",
+      "title": "Magic Square Toys MS-B53 NIGHT TRACER"
+    },
+    {
+      "id": "magicsquare-ms-b46w",
+      "reason": "name-exists",
+      "name": "Light Of Victory"
+    },
+    {
+      "id": "magicsquare-ms-b52d",
+      "reason": "name-exists",
+      "name": "Arms Dealer Munitioner"
+    },
+    {
+      "id": "magicsquare-ms-b51d",
+      "reason": "name-exists",
+      "name": "Heavy Gunner"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B52",
+      "title": "Magic Square Toys MS-B52 ARMS DEALER MUNITIONER"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B51",
+      "title": "Magic Square Toys MS-B51 HEAVY GUNNER"
+    },
+    {
+      "id": "magicsquare-ms-b46e",
+      "reason": "name-exists",
+      "name": "Light Of Victory"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B48",
+      "title": "Magic Square Toys B48 POWER KING Combiner Team"
+    },
+    {
+      "id": "magicsquare-ms-b44b",
+      "reason": "name-exists",
+      "name": "Ken"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B34",
+      "title": "Magic Square Toys B34 HIGHWAY OVERLORD"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B47",
+      "title": "Magic Square Toys B47 METEORITE"
+    },
+    {
+      "id": "magicsquare-ms-02",
+      "reason": "name-exists",
+      "name": "Light Of Peace"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B43",
+      "title": "Magic Square Toys B43 SHADOW MASTER"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B45",
+      "title": "Magic Square Toys MS-B45 RYU"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B44",
+      "title": "Magic Square Toys MS-B44 KEN"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B23",
+      "title": "Magic Square Toys B23 THUNDER PIONEER"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B35",
+      "title": "Magic Square Toys MS-B35 BLUES"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B33",
+      "title": "Magic Square Toys B33 DEADLY"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B22",
+      "title": "Magic Square Toys B22 FLYING FAST"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B11",
+      "title": "Magic Square Toys B11 OVERLORD"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B32",
+      "title": "Magic Square Toys B32 SPOCK"
+    },
+    {
+      "reason": "ms-base-exists",
+      "part": "MS-B21",
+      "title": "Magic Square Toys B21 INTELLIGENCE OFFICER"
+    },
+    {
+      "id": "magicsquare-ms-b1415",
+      "reason": "name-exists",
+      "name": "B14 Beat Back"
+    },
+    {
+      "id": "magicsquare-ms-b36x",
+      "reason": "id-exists"
+    },
+    {
+      "id": "magicsquare-g01",
+      "reason": "name-exists",
+      "name": "Peach Girl"
+    }
+  ],
+  "aliasAdds": 541,
+  "imagesBaked": 186,
+  "perCompanyAdds": {
+    "weijiang": 25,
+    "jxjiang": 2,
+    "blackmamba": 48,
+    "toyhousefactory": 4,
+    "bpf": 3,
+    "magicsquare": 106
+  },
+  "perCompanyTotals": {
+    "weijiang": 25,
+    "jxjiang": 2,
+    "blackmamba": 48,
+    "toyhousefactory": 4,
+    "bpf": 3,
+    "magicsquare": 166
+  },
+  "thfFixAt": "2026-09-22T19:03:05.037704+00:00",
+  "thfAdded": [
+    "toyhousefactory-thf-01j",
+    "toyhousefactory-thf-03"
+  ],
+  "finalizedAt": "2026-09-22T19:03:31.947710+00:00",
+  "blockers": [
+    "The Chosen Prime has no Black Mamba / THF / BPF brand category pages (CF search blocked).",
+    "TFSafari BPF collection missing; only 4 BPF product hits found via all-products scan (3 injected; multi-pack skipped).",
+    "TFSafari THF catalog thin (4 SKUs: 01J/01P6/03/04); THF-03 image is multi-option listing photo.",
+    "Existing magicsquare MSB01-60 placeholder rows retained without overwrite (wrong homage names, no images); variants/MS/G/B61+ densified instead.",
+    "ShowZ Store brand collections 404; TFSource brand pages JS/empty for these KO brands."
+  ],
+  "sampleSkus": {
+    "weijiang": [
+      "WJ-MPP10",
+      "WJ-M09",
+      "WJ-M05",
+      "WJ-NE01"
+    ],
+    "toyhousefactory": [
+      "THF-01J",
+      "THF-01P6",
+      "THF-03",
+      "THF-04"
+    ],
+    "blackmamba": [
+      "DP01V",
+      "GS01",
+      "DP01",
+      "MX-6602"
+    ],
+    "bpf": [
+      "BPF-COMMANDER",
+      "BPF-LIEUTENANT",
+      "BPF-01"
+    ],
+    "magicsquare": [
+      "MS-B61",
+      "MS-B66",
+      "MS-07",
+      "G04",
+      "MS-B32A"
+    ],
+    "jxjiang": [
+      "JX-MB01MM",
+      "JX-MB02"
+    ]
+  }
+}
