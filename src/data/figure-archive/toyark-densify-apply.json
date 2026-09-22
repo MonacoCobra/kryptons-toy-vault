@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T05:39:40Z",
+  "generatedAt": "2026-09-22T18:32:43Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-09-15T05:39:39.839529+00:00",
+    "after": "2026-09-15T18:32:40.017576+00:00",
     "before": null
   },
   "fetch": {
@@ -45,17 +45,17 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 16,
+    "fetchedPostCount": 18,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 8797,
+    "indexedRows": 8822,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 16,
-    "acceptedCandidates": 11,
+    "fetchedPosts": 18,
+    "acceptedCandidates": 13,
     "rejectedRows": 14,
     "byCompany": {
       "hasbro": {
@@ -83,11 +83,11 @@
         "rejected": 2
       },
       "mondo": {
-        "accepted": 0,
+        "accepted": 1,
         "rejected": 0
       },
       "threezero": {
-        "accepted": 0,
+        "accepted": 1,
         "rejected": 0
       },
       "enterbay": {
@@ -108,17 +108,55 @@
       }
     },
     "byRejectReason": {
-      "company-not-allowlisted": 6,
+      "sponsor-newsletter": 3,
+      "company-not-allowlisted": 5,
       "company-unknown": 1,
       "no-explicit-figure": 1,
-      "sponsor-newsletter": 2,
       "already-in-oneshot": 3,
       "vehicles-props-only": 1
     },
-    "applied": 0,
+    "applied": 2,
     "skippedApply": 11
   },
   "candidates": [
+    {
+      "decision": "accept",
+      "name": "Jean Grey",
+      "company": "mondo",
+      "line": "Mondo",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "X-Men: The Animated",
+      "sourceUrl": "https://www.toyark.com/2026/09/22/x-men-the-animated-series-mondo-jean-grey-figure-599219",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Mondo-Jean-Grey-LE-Figure-018.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599219,
+      "postYear": 2026,
+      "pack": null,
+      "title": "X-Men: The Animated Series – Mondo Jean Grey Figure",
+      "rationale": "mondo via class:companies-mondo; line=Mondo; variant=X-Men: The Animated; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Bass",
+      "company": "threezero",
+      "line": "threezero MDLX",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Mega Man – MDLX",
+      "sourceUrl": "https://www.toyark.com/2026/09/22/mega-man-threezero-mdlx-bass-figure-599200",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/ThreeZero-Mega-Man-MDLX-Bass-010.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599200,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Mega Man – ThreeZero MDLX Bass Figure",
+      "rationale": "threezero via class:companies-threezero; line=threezero MDLX; variant=Mega Man – MDLX; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
     {
       "decision": "accept",
       "name": "Leonardo",
@@ -330,6 +368,24 @@
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "sponsor-newsletter",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/22/tfsource-news-customer-appreciation-month-everything-is-back-save-up-to-300-off-599267",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599267,
+      "title": "TFSource News! Customer Appreciation Month, Everything is Back! Save up to $300 Off!",
+      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
+    },
     {
       "decision": "reject",
       "reason": "company-not-allowlisted",
@@ -582,27 +638,38 @@
         "ta-a2040673ff80"
       ],
       "rationale": "Identity key already in oneshot (ta-a2040673ff80)."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "sentinel",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/15/spider-man-across-the-spider-verse-sv-action-miles-g-morales-figure-599040",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599040,
-      "title": "Spider-Man: Across The Spider-Verse – SV-Action Miles G. Morales Figure",
-      "rationale": "Recognized sentinel via class:companies-sentinel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     }
   ],
-  "applied": [],
+  "applied": [
+    {
+      "id": "ta-1e6b92b47edb",
+      "name": "Jean Grey",
+      "company": "mondo",
+      "line": "Mondo",
+      "year": 2026,
+      "variant": "X-Men: The Animated",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Mondo-Jean-Grey-LE-Figure-018.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/22/x-men-the-animated-series-mondo-jean-grey-figure-599219",
+      "toyarkPostId": 599219
+    },
+    {
+      "id": "ta-e8f34a26add3",
+      "name": "Bass",
+      "company": "threezero",
+      "line": "threezero MDLX",
+      "year": 2026,
+      "variant": "Mega Man – MDLX",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/ThreeZero-Mega-Man-MDLX-Bass-010.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/22/mega-man-threezero-mdlx-bass-figure-599200",
+      "toyarkPostId": 599200
+    }
+  ],
   "applySkipped": [
     {
       "name": "Leonardo",
@@ -705,11 +772,11 @@
     }
   ],
   "applyStats": {
-    "accepted": 11,
-    "applied": 0,
+    "accepted": 13,
+    "applied": 2,
     "skippedApply": 11,
-    "aliasAdded": 0,
-    "withImage": 0,
+    "aliasAdded": 6,
+    "withImage": 2,
     "cap": 50,
     "blocker": null
   }

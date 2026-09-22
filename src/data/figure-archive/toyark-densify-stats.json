@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-09-22T05:39:41Z",
+  "finishedAt": "2026-09-22T18:32:43Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 11,
-  "applied": 0,
+  "acceptedCandidates": 13,
+  "applied": 2,
   "skippedApply": 11,
   "rejectedRows": 14,
-  "withImage": 0,
-  "aliasAdded": 0,
+  "withImage": 2,
+  "aliasAdded": 6,
   "byCompany": {
     "hasbro": {
       "accepted": 0,
@@ -35,11 +35,11 @@
       "rejected": 2
     },
     "mondo": {
-      "accepted": 0,
+      "accepted": 1,
       "rejected": 0
     },
     "threezero": {
-      "accepted": 0,
+      "accepted": 1,
       "rejected": 0
     },
     "enterbay": {
@@ -60,15 +60,47 @@
     }
   },
   "byRejectReason": {
-    "company-not-allowlisted": 6,
+    "sponsor-newsletter": 3,
+    "company-not-allowlisted": 5,
     "company-unknown": 1,
     "no-explicit-figure": 1,
-    "sponsor-newsletter": 2,
     "already-in-oneshot": 3,
     "vehicles-props-only": 1
   },
-  "appliedIds": [],
-  "appliedSample": [],
+  "appliedIds": [
+    "ta-1e6b92b47edb",
+    "ta-e8f34a26add3"
+  ],
+  "appliedSample": [
+    {
+      "id": "ta-1e6b92b47edb",
+      "name": "Jean Grey",
+      "company": "mondo",
+      "line": "Mondo",
+      "year": 2026,
+      "variant": "X-Men: The Animated",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Mondo-Jean-Grey-LE-Figure-018.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/22/x-men-the-animated-series-mondo-jean-grey-figure-599219",
+      "toyarkPostId": 599219
+    },
+    {
+      "id": "ta-e8f34a26add3",
+      "name": "Bass",
+      "company": "threezero",
+      "line": "threezero MDLX",
+      "year": 2026,
+      "variant": "Mega Man – MDLX",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/ThreeZero-Mega-Man-MDLX-Bass-010.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/22/mega-man-threezero-mdlx-bass-figure-599200",
+      "toyarkPostId": 599200
+    }
+  ],
   "skippedSample": [
     {
       "name": "Leonardo",
@@ -170,8 +202,8 @@
       "toyarkPostId": 599091
     }
   ],
-  "archiveSize": 25946,
+  "archiveSize": 26020,
   "fetchBlocker": null,
-  "wroteOneshot": false,
+  "wroteOneshot": true,
   "comics": "untouched"
 }
