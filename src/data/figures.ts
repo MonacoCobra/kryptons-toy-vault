@@ -1,3 +1,4 @@
+/** live-rebuild: unbranded-ko 2026-09-23 */
 import { stampFigureFranchise } from "@/lib/figure-property";
 import type { CatalogFigure, CompanyId, FigureSetRole, ItemKind } from "@/lib/types";
 import archiveRows from "./figure-archive/oneshot.json";

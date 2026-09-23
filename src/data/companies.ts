@@ -1162,6 +1162,7 @@ export const COMPANIES: Company[] = [
     hq: "China",
     accent: "#023e8a",
   },
+  /** live-rebuild: unbranded-ko 2026-09-23 */
   {
     id: "unbranded",
     name: "Unbranded",
