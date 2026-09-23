@@ -1,6 +1,12 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { figureMatchesFranchise, matchFigureProperty, matchTransformersParty } from "@/lib/figure-property";
+import {
+  figureMatchesFranchise,
+  indexFranchiseBrowse,
+  matchFigureProperty,
+  matchTransformersParty,
+  reconcileBrowseSelection,
+} from "@/lib/figure-property";
 import type { FigureFranchiseInput } from "@/lib/figure-property";
 
 function row(partial: Partial<FigureFranchiseInput> & Pick<FigureFranchiseInput, "name" | "company" | "line">): FigureFranchiseInput {
@@ -67,6 +73,55 @@ describe("other franchises", () => {
   it("does not treat Spawn-only rows as DC", () => {
     assert.equal(matchFigureProperty(row({ name: "Spawn", line: "Spawn", company: "mcfarlane", tags: ["spawn"] })), undefined);
     assert.equal(matchFigureProperty(row({ name: "Batman", line: "DC Multiverse", company: "mcfarlane" })), "dc");
+  });
+
+  it("limits company rails to makers that have the selected franchise", () => {
+    const figures = [
+      row({ id: "tf-op", name: "Optimus Prime", line: "Transformers Studio Series", company: "hasbro", tags: ["transformers"] }),
+      row({ id: "tf-blk", name: "Optimus Prime", subtitle: "Transformers Galaxy Version", line: "Blokees Galaxy Version", company: "blokees" }),
+      row({ id: "tf-ko", name: "MS-B36", line: "B Series", company: "magicsquare" }),
+      row({ id: "marvel", name: "Wolverine", line: "Marvel Legends", company: "hasbro", tags: ["marvel"] }),
+      row({ id: "tb", name: "Spider-Man", line: "Marvel Legends", company: "toybiz", tags: ["marvel"] }),
+      row({ id: "wwe", name: "Stone Cold", line: "WWE Elite", company: "mattel", tags: ["wwe"] }),
+    ];
+    const transformers = indexFranchiseBrowse(figures, "transformers", undefined, (id) => id === "tf-op");
+    assert.deepEqual([...transformers.byCompany.keys()], ["hasbro", "blokees", "magicsquare"]);
+    assert.equal(transformers.byCompany.has("toybiz"), false);
+    assert.equal(transformers.byCompany.has("mattel"), false);
+    assert.equal(transformers.byCompany.get("hasbro")?.owned, 1);
+    assert.equal(transformers.byCompany.get("hasbro")?.total, 1);
+    assert.deepEqual(transformers.byCompany.get("hasbro")?.lines, ["Transformers Studio Series"]);
+
+    const firstParty = indexFranchiseBrowse(figures, "transformers", "1p");
+    assert.deepEqual([...firstParty.byCompany.keys()], ["hasbro"]);
+
+    const thirdParty = indexFranchiseBrowse(figures, "transformers", "3p");
+    assert.deepEqual([...thirdParty.byCompany.keys()], ["magicsquare"]);
+
+    const marvel = indexFranchiseBrowse(figures, "marvel");
+    assert.deepEqual([...marvel.byCompany.keys()], ["hasbro", "toybiz"]);
+    assert.equal(marvel.byCompany.has("mattel"), false);
+
+    const all = indexFranchiseBrowse(figures);
+    assert.equal(all.byCompany.has("toybiz"), true);
+    assert.equal(all.byCompany.has("mattel"), true);
+
+    assert.deepEqual(
+      reconcileBrowseSelection(figures, { company: "mattel", line: "WWE Elite" }, "transformers"),
+      { company: undefined, line: undefined },
+    );
+    assert.deepEqual(
+      reconcileBrowseSelection(figures, { company: "hasbro", line: "Marvel Legends" }, "transformers", "1p"),
+      { company: "hasbro", line: undefined },
+    );
+    assert.deepEqual(
+      reconcileBrowseSelection(figures, { company: "hasbro", line: "Transformers Studio Series" }, "transformers", "1p"),
+      { company: "hasbro", line: "Transformers Studio Series" },
+    );
+    assert.deepEqual(
+      reconcileBrowseSelection(figures, { company: "mattel", line: "WWE Elite" }),
+      { company: "mattel", line: "WWE Elite" },
+    );
   });
 
   it("filters a Transformers party without matching Marvel rows", () => {

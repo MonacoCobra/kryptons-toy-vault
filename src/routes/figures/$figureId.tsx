@@ -54,12 +54,12 @@ function FigureDetail() {
   const condLabel = CONDITIONS.find((c) => c.id === owned?.condition)?.label;
 
   return (
-    <main className="grid gap-8 lg:grid-cols-[minmax(0,18rem)_1fr]">
-      <div>
+    <main className="grid min-w-0 max-w-full grid-cols-[minmax(0,1fr)] gap-8 overflow-x-hidden lg:grid-cols-[minmax(0,18rem)_minmax(0,1fr)]">
+      <div className="min-w-0 max-w-full overflow-hidden">
         <FigureArt
           figure={figure}
           photo={owned?.photoDataUrl}
-          className="aspect-4/5 overflow-hidden rounded-xl"
+          className="aspect-4/5 w-full max-w-full overflow-hidden rounded-xl"
         />
         <FigureSetScroller figure={figure} members={setMembers} />
         <div className="mt-4 grid gap-2">
@@ -77,7 +77,7 @@ function FigureDetail() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex min-w-0 max-w-full flex-col gap-6">
         <div>
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
             <Link

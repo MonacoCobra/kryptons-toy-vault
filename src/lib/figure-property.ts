@@ -577,6 +577,79 @@ export function figureMatchesFranchise(
   return true;
 }
 
+type BrowseFigure = FigureFranchiseInput & {
+  id: string;
+  property?: FigureProperty;
+  party?: TransformersParty;
+};
+
+export type FranchiseCompanyCount = {
+  total: number;
+  owned: number;
+  lines: string[];
+};
+
+export type FranchiseBrowseIndex = {
+  /** Rows in the franchise scope. The full catalog when no franchise is selected. */
+  total: number;
+  byCompany: Map<string, FranchiseCompanyCount>;
+};
+
+/**
+ * Company totals and lines for the browse rail.
+ * No franchise → every row. A franchise (and Transformers party, when set)
+ * keeps only matching rows, so makers with zero hits drop out of `byCompany`.
+ */
+export function indexFranchiseBrowse(
+  figures: readonly BrowseFigure[],
+  property?: FigureProperty,
+  party?: TransformersParty,
+  isOwned?: (id: string) => boolean,
+): FranchiseBrowseIndex {
+  const activeParty = property === "transformers" ? party : undefined;
+  const byCompany = new Map<string, FranchiseCompanyCount>();
+  let total = 0;
+  for (const figure of figures) {
+    if (property && !figureMatchesFranchise(figure, property, activeParty)) continue;
+    total += 1;
+    let bucket = byCompany.get(figure.company);
+    if (!bucket) {
+      bucket = { total: 0, owned: 0, lines: [] };
+      byCompany.set(figure.company, bucket);
+    }
+    bucket.total += 1;
+    if (isOwned?.(figure.id)) bucket.owned += 1;
+    if (!bucket.lines.includes(figure.line)) bucket.lines.push(figure.line);
+  }
+  return { total, byCompany };
+}
+
+/**
+ * Drop a company or line that has no rows in the active franchise.
+ * With no franchise selected, the selection is left as-is.
+ */
+export function reconcileBrowseSelection<C extends string>(
+  figures: readonly BrowseFigure[],
+  selection: { company?: C; line?: string },
+  property?: FigureProperty,
+  party?: TransformersParty,
+): { company?: C; line?: string } {
+  if (!property) return { company: selection.company, line: selection.line };
+  if (!selection.company) return { company: undefined, line: undefined };
+  const activeParty = property === "transformers" ? party : undefined;
+  let companyOk = false;
+  let lineOk = !selection.line;
+  for (const figure of figures) {
+    if (figure.company !== selection.company) continue;
+    if (!figureMatchesFranchise(figure, property, activeParty)) continue;
+    companyOk = true;
+    if (selection.line && figure.line === selection.line) lineOk = true;
+    if (companyOk && lineOk) break;
+  }
+  if (!companyOk) return { company: undefined, line: undefined };
+  return { company: selection.company, line: lineOk ? selection.line : undefined };
+}
+
 /** Stamp property / party onto a catalog row. Does not invent set membership. */
 export function stampFigureFranchise<T extends CatalogFigure>(figure: T): T {
   const property = matchFigureProperty(figure);

@@ -9,8 +9,10 @@ import {
   POPULAR_FRANCHISES,
   TRANSFORMERS_PARTIES,
   figureMatchesFranchise,
+  indexFranchiseBrowse,
   isFigureProperty,
   isTransformersParty,
+  reconcileBrowseSelection,
 } from "@/lib/figure-property";
 import { FigureArt } from "@/components/figure-art";
 import { VirtualGrid } from "@/components/virtual-grid";
@@ -86,10 +88,41 @@ function FiguresPage() {
     }
     return counts;
   }, [catalog]);
-  const company = COMPANIES.find((c) => c.id === search.company);
-  const lines = company
-    ? [...new Set(catalog.filter((f) => f.company === company.id).map((f) => f.line))]
-    : [];
+  const browseParty = search.property === "transformers" ? search.party : undefined;
+  const browse = useMemo(
+    () => indexFranchiseBrowse(catalog, search.property, browseParty, (id) => Boolean(owned[id])),
+    [catalog, owned, search.property, browseParty],
+  );
+  const visibleCompanies = useMemo(() => {
+    if (!search.property) return COMPANIES;
+    return COMPANIES.filter((c) => (browse.byCompany.get(c.id)?.total ?? 0) > 0);
+  }, [browse, search.property]);
+  const company = (search.property ? visibleCompanies : COMPANIES).find((c) => c.id === search.company);
+  const lines = company ? (browse.byCompany.get(company.id)?.lines ?? []) : [];
+
+  useEffect(() => {
+    const kept = reconcileBrowseSelection(
+      catalog,
+      { company: search.company, line: search.line },
+      search.property,
+      browseParty,
+    );
+    if (kept.company === search.company && kept.line === search.line) return;
+    void navigate({
+      search: (prev) => {
+        const party = prev.property === "transformers" ? prev.party : undefined;
+        const next = reconcileBrowseSelection(
+          catalog,
+          { company: prev.company, line: prev.line },
+          prev.property,
+          party,
+        );
+        if (next.company === prev.company && next.line === prev.line) return prev;
+        return { ...prev, company: next.company, line: next.line };
+      },
+      replace: true,
+    });
+  }, [browseParty, catalog, navigate, search.company, search.line, search.property]);
   const layout = search.layout ?? "grid";
   const sort = search.sort ?? "release";
 
@@ -178,10 +211,18 @@ function FiguresPage() {
                 navigate({
                   search: (prev) => {
                     const next = prev.property === franchise.id ? undefined : franchise.id;
+                    const party = next === "transformers" ? prev.party : undefined;
+                    const kept = reconcileBrowseSelection(
+                      catalog,
+                      { company: prev.company, line: undefined },
+                      next,
+                      party,
+                    );
                     return {
                       ...prev,
                       property: next,
-                      party: next === "transformers" ? prev.party : undefined,
+                      party,
+                      company: kept.company,
                       line: undefined,
                     };
                   },
@@ -197,7 +238,18 @@ function FiguresPage() {
           <div className="flex flex-wrap gap-2" aria-label="Transformers party">
             <FilterChip
               active={!search.party}
-              onClick={() => navigate({ search: (prev) => ({ ...prev, party: undefined }) })}
+              onClick={() =>
+                navigate({
+                  search: (prev) => {
+                    const kept = reconcileBrowseSelection(
+                      catalog,
+                      { company: prev.company, line: prev.line },
+                      "transformers",
+                    );
+                    return { ...prev, party: undefined, company: kept.company, line: kept.line };
+                  },
+                })
+              }
             >
               All Transformers
             </FilterChip>
@@ -207,11 +259,22 @@ function FiguresPage() {
                 active={search.party === party.id}
                 onClick={() =>
                   navigate({
-                    search: (prev) => ({
-                      ...prev,
-                      property: "transformers",
-                      party: prev.party === party.id ? undefined : party.id,
-                    }),
+                    search: (prev) => {
+                      const nextParty = prev.party === party.id ? undefined : party.id;
+                      const kept = reconcileBrowseSelection(
+                        catalog,
+                        { company: prev.company, line: prev.line },
+                        "transformers",
+                        nextParty,
+                      );
+                      return {
+                        ...prev,
+                        property: "transformers",
+                        party: nextParty,
+                        company: kept.company,
+                        line: kept.line,
+                      };
+                    },
                   })
                 }
               >
@@ -227,7 +290,7 @@ function FiguresPage() {
           type="button"
           onClick={() =>
             navigate({
-              search: (prev) => ({ ...prev, company: undefined, line: undefined, property: undefined, party: undefined }),
+              search: (prev) => ({ ...prev, company: undefined, line: undefined }),
             })
           }
           className={cn(
@@ -236,11 +299,12 @@ function FiguresPage() {
           )}
         >
           All
-          <span className="mt-1 block tabular text-xs">{catalog.length}</span>
+          <span className="mt-1 block tabular text-xs">{browse.total}</span>
         </button>
-        {COMPANIES.map((c) => {
-          const total = catalog.filter((f) => f.company === c.id).length;
-          const have = catalog.filter((f) => f.company === c.id && owned[f.id]).length;
+        {visibleCompanies.map((c) => {
+          const stats = browse.byCompany.get(c.id);
+          const total = stats?.total ?? 0;
+          const have = stats?.owned ?? 0;
           return (
             <button
               key={c.id}
