@@ -103,8 +103,16 @@ export function FigureArt({
   const catalogImage = figure.imageUrl;
   if (photo || catalogImage) {
     return (
-      <div className={cn("relative overflow-hidden bg-surface", className)}>
-        <img src={photo || catalogImage} alt="" className="size-full object-cover" loading="lazy" decoding="async" />
+      <div className={cn("relative w-full max-w-full overflow-hidden bg-surface", className)}>
+        <img
+          src={photo || catalogImage}
+          alt=""
+          width={400}
+          height={500}
+          className="box-border block h-full max-h-full w-full max-w-full min-w-0 object-cover"
+          loading="lazy"
+          decoding="async"
+        />
         {caption ? (
           <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-bg/85 to-transparent p-2">
             <p className="truncate font-display text-sm tracking-wide">{figure.name}</p>
@@ -115,7 +123,7 @@ export function FigureArt({
   }
 
   return (
-    <div className={cn("relative overflow-hidden", className)} style={{ background: theme.card }}>
+    <div className={cn("relative w-full max-w-full overflow-hidden", className)} style={{ background: theme.card }}>
       <div
         className="absolute inset-0 opacity-50"
         style={{ background: `radial-gradient(circle at 50% 38%, ${theme.glow}55, transparent 58%)` }}
