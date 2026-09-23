@@ -1,0 +1,100 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-09-23",
+  "updatedAt": "2026-09-23T15:00:53Z",
+  "added": 126,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "SSR Newest AF PageSize=100; form still selects Relevance. JS pager page2 product-id set identical to page1 \u2014 not paging.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 427,
+    "ee_candidates": 158,
+    "bbts_candidates": 82,
+    "added": 126,
+    "skipped_dupes": 114,
+    "rejected_non_af": 156,
+    "unmapped_company": 31,
+    "postfilter_rejected": 0
+  },
+  "oneshotBefore": 26705,
+  "oneshotAfter": 26831,
+  "ee_added": 54,
+  "bbts_added": 72,
+  "samples": [
+    {
+      "sku": "SUP82160",
+      "name": "Godzilla Ultimates Burning Godzilla Heisei 8-Inch Scale Action Figure",
+      "id": "afmon-super7-godzilla-ultimates-burning-godzilla-heisei-8-inch-scale-action-figure-sup82160",
+      "source": "ee"
+    },
+    {
+      "sku": "BA92344",
+      "name": "Godzilla 1991 6-Inch Action Figure",
+      "id": "afmon-bandai-godzilla-1991-6-inch-action-figure-ba92344",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP82708",
+      "name": "Godzilla Ultimates Heisei Godzilla 8-Inch Scale Action Figure",
+      "id": "afmon-super7-godzilla-ultimates-heisei-godzilla-8-inch-scale-action-figure-sup82708",
+      "source": "ee"
+    },
+    {
+      "sku": "BA36860",
+      "name": "Dragon Ball Super Dragon Stars Vegeta Saiyan Armor Action Figure",
+      "id": "afmon-bandai-dragon-ball-super-dragon-stars-vegeta-saiyan-armor-action-figure-ba36860",
+      "source": "ee"
+    },
+    {
+      "sku": "BA36278",
+      "name": "Dragon Ball Evolve Ultra Instinct Goku 5-Inch Action Figure",
+      "id": "afmon-bandai-dragon-ball-evolve-ultra-instinct-goku-5-inch-action-figure-ba36278",
+      "source": "ee"
+    },
+    {
+      "sku": "BA36274",
+      "name": "Dragon Ball Super Evolve Golden Frieza 5-Inch Action Figure",
+      "id": "afmon-bandai-dragon-ball-super-evolve-golden-frieza-5-inch-action-figure-ba36274",
+      "source": "ee"
+    },
+    {
+      "sku": "BA36968",
+      "name": "Naruto Anime Heroes Orochimaru Action Figure",
+      "id": "afmon-bandai-naruto-anime-heroes-orochimaru-action-figure-ba36968",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAN93119A",
+      "name": "Tamagotchi Shokugan Box Collection Wave 4 Blind-Box Key Chain Case of 12",
+      "id": "afmon-bandai-tamagotchi-shokugan-box-collection-wave-4-blind-box-key-chain-case-of-12-blfban93119a",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP82317",
+      "name": "Godzilla Mechagodzilla '93 (Cherry Blossom Festival) 3 3/4-Inch ReAction Figure",
+      "id": "afmon-super7-godzilla-mechagodzilla-93-cherry-blossom-festival-3-3-4-inch-reaction-figure-sup82317",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP80500",
+      "name": "Visionaries Leoric 3 3/4-Inch ReAction+ Figure",
+      "id": "afmon-super7-visionaries-leoric-3-3-4-inch-reaction-figure-sup80500",
+      "source": "ee"
+    },
+    {
+      "sku": "BA36187",
+      "name": "Dragon Ball Stars Gogeta Action Figure",
+      "id": "afmon-bandai-dragon-ball-stars-gogeta-action-figure-ba36187",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP80501",
+      "name": "Visionaries Darkstorm 3 3/4-Inch ReAction+ Figure",
+      "id": "afmon-super7-visionaries-darkstorm-3-3-4-inch-reaction-figure-sup80501",
+      "source": "ee"
+    }
+  ],
+  "rebaseNote": "Rebased onto origin/main after Unbranded KO merge; re-appended batch onto 26705-row base."
+}
