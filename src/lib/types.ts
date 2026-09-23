@@ -127,6 +127,7 @@ export type CompanyId =
   | "blackmamba"
   | "toyhousefactory"
   | "bpf"
+  | "unbranded"
   | "gong";
 
 export type ItemKind = "figure" | "kit";
