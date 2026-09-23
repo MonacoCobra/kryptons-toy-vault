@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T18:32:43Z",
+  "generatedAt": "2026-09-23T05:44:26Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-09-15T18:32:40.017576+00:00",
+    "after": "2026-09-16T05:44:25.155944+00:00",
     "before": null
   },
   "fetch": {
@@ -50,7 +50,7 @@
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 8822,
+    "indexedRows": 8836,
     "mode": "apply"
   },
   "summary": {
@@ -115,8 +115,8 @@
       "already-in-oneshot": 3,
       "vehicles-props-only": 1
     },
-    "applied": 2,
-    "skippedApply": 11
+    "applied": 0,
+    "skippedApply": 13
   },
   "candidates": [
     {
@@ -640,37 +640,26 @@
       "rationale": "Identity key already in oneshot (ta-a2040673ff80)."
     }
   ],
-  "applied": [
+  "applied": [],
+  "applySkipped": [
     {
-      "id": "ta-1e6b92b47edb",
       "name": "Jean Grey",
       "company": "mondo",
-      "line": "Mondo",
-      "year": 2026,
-      "variant": "X-Men: The Animated",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Mondo-Jean-Grey-LE-Figure-018.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/22/x-men-the-animated-series-mondo-jean-grey-figure-599219",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-1e6b92b47edb"
+      ],
       "toyarkPostId": 599219
     },
     {
-      "id": "ta-e8f34a26add3",
       "name": "Bass",
       "company": "threezero",
-      "line": "threezero MDLX",
-      "year": 2026,
-      "variant": "Mega Man – MDLX",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/ThreeZero-Mega-Man-MDLX-Bass-010.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/22/mega-man-threezero-mdlx-bass-figure-599200",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-e8f34a26add3"
+      ],
       "toyarkPostId": 599200
-    }
-  ],
-  "applySkipped": [
+    },
     {
       "name": "Leonardo",
       "company": "super7",
@@ -773,10 +762,10 @@
   ],
   "applyStats": {
     "accepted": 13,
-    "applied": 2,
-    "skippedApply": 11,
-    "aliasAdded": 6,
-    "withImage": 2,
+    "applied": 0,
+    "skippedApply": 13,
+    "aliasAdded": 0,
+    "withImage": 0,
     "cap": 50,
     "blocker": null
   }

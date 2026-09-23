@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-09-22T18:32:43Z",
+  "finishedAt": "2026-09-23T05:44:26Z",
   "mode": "apply",
   "cap": 50,
   "acceptedCandidates": 13,
-  "applied": 2,
-  "skippedApply": 11,
+  "applied": 0,
+  "skippedApply": 13,
   "rejectedRows": 14,
-  "withImage": 2,
-  "aliasAdded": 6,
+  "withImage": 0,
+  "aliasAdded": 0,
   "byCompany": {
     "hasbro": {
       "accepted": 0,
@@ -67,41 +67,27 @@
     "already-in-oneshot": 3,
     "vehicles-props-only": 1
   },
-  "appliedIds": [
-    "ta-1e6b92b47edb",
-    "ta-e8f34a26add3"
-  ],
-  "appliedSample": [
+  "appliedIds": [],
+  "appliedSample": [],
+  "skippedSample": [
     {
-      "id": "ta-1e6b92b47edb",
       "name": "Jean Grey",
       "company": "mondo",
-      "line": "Mondo",
-      "year": 2026,
-      "variant": "X-Men: The Animated",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Mondo-Jean-Grey-LE-Figure-018.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/22/x-men-the-animated-series-mondo-jean-grey-figure-599219",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-1e6b92b47edb"
+      ],
       "toyarkPostId": 599219
     },
     {
-      "id": "ta-e8f34a26add3",
       "name": "Bass",
       "company": "threezero",
-      "line": "threezero MDLX",
-      "year": 2026,
-      "variant": "Mega Man – MDLX",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/ThreeZero-Mega-Man-MDLX-Bass-010.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/22/mega-man-threezero-mdlx-bass-figure-599200",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-e8f34a26add3"
+      ],
       "toyarkPostId": 599200
-    }
-  ],
-  "skippedSample": [
+    },
     {
       "name": "Leonardo",
       "company": "super7",
@@ -202,8 +188,8 @@
       "toyarkPostId": 599091
     }
   ],
-  "archiveSize": 26020,
+  "archiveSize": 26698,
   "fetchBlocker": null,
-  "wroteOneshot": true,
+  "wroteOneshot": false,
   "comics": "untouched"
 }
