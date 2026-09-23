@@ -45,7 +45,8 @@ function themeFor(figure: CatalogFigure): Theme {
   if (n.includes("batman") || n.includes("joker") || n.includes("who laughs")) return THEMES.bats!;
   if (n.includes("superman") || n.includes("kal-el")) return THEMES.supes!;
   if (tags.has("star-wars") || n.includes("vader") || n.includes("mando") || n.includes("ahsoka")) return THEMES.sw!;
-  if (tags.has("gundam") || figure.kind === "kit") return THEMES.gundam!;
+  if (figure.property === "transformers" || tags.has("transformers")) return THEMES.tf!;
+  if (figure.property === "gundam" || tags.has("gundam") || figure.kind === "kit") return THEMES.gundam!;
   if (tags.has("dbz") || n.includes("goku") || n.includes("vegeta")) return THEMES.dbz!;
   if (tags.has("spawn")) return THEMES.spawn!;
   if (tags.has("tmnt") || n.includes("turtle") || n.includes("leonardo")) return THEMES.tmnt!;

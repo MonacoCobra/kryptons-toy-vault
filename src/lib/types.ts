@@ -131,6 +131,29 @@ export type CompanyId =
 
 export type ItemKind = "figure" | "kit";
 
+/** Popular-franchise bucket. Assigned by the figure property matcher, not free text. */
+export type FigureProperty =
+  | "dc"
+  | "marvel"
+  | "transformers"
+  | "gundam"
+  | "gi-joe"
+  | "tmnt"
+  | "star-wars"
+  | "motu"
+  | "wwe"
+  | "power-rangers"
+  | "naruto"
+  | "demon-slayer"
+  | "dragon-ball"
+  | "one-piece";
+
+/** Transformers manufacturer party. Only set when property is transformers. */
+export type TransformersParty = "1p" | "2p" | "3p";
+
+/** Role inside a blind-box / multi-figure set. Browse collapses families larger than one. */
+export type FigureSetRole = "parent" | "member";
+
 export type Condition = "mib" | "opened" | "loose";
 
 export type ComicFormat = "single" | "annual" | "tpb" | "hc" | "omnibus" | "facsimile";
@@ -182,6 +205,13 @@ export type CatalogFigure = {
   source?: string;
   demand: number;
   tags: string[];
+  /** Franchise bucket from the property matcher. */
+  property?: FigureProperty;
+  /** Transformers 1P / 2P / 3P. Present only for Transformers rows. */
+  party?: TransformersParty;
+  /** Shared key for a sold set or blind-box wave. Children collapse under the parent in browse. */
+  setId?: string;
+  setRole?: FigureSetRole;
 };
 
 export type SoldComp = {
