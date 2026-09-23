@@ -219,11 +219,23 @@ describe("transformers parties", () => {
     assert.equal(third.byCompany.has("blackmamba"), true);
 
     const unbranded = FIGURES.filter((f) => f.company === "unbranded");
-    assert.equal(third.byCompany.has("unbranded"), unbranded.length > 0);
+    assert.ok(unbranded.length >= 28);
+    assert.equal(third.byCompany.get("unbranded")?.total, unbranded.length);
     for (const figure of unbranded) {
       assert.equal(figure.property, "transformers");
       assert.equal(figure.party, "3p");
+      assert.equal(figure.sku, undefined);
     }
+    const mp10 = FIGURES.find((f) => f.id === "unbranded-mp10-mp44-color");
+    assert.equal(mp10?.name, "MP10 Optimus Prime");
+    assert.equal(mp10?.line, "MP10 KO");
+    assert.equal(mp10?.company, "unbranded");
+    assert.equal(mp10?.party, "3p");
+    assert.equal(mp10?.property, "transformers");
+    assert.match(mp10?.imageUrl ?? "", /^https:\/\/cdn\.shopify\.com\//);
+    const legends = FIGURES.find((f) => f.id === "unbranded-sd-01");
+    assert.equal(legends?.line, "Legends KO");
+    assert.equal(legends?.company, "unbranded");
     assert.equal(FIGURES.find((f) => f.id === "tfmp-mp10")?.company, "hasbro");
     assert.equal(FIGURES.find((f) => f.id === "tfmp-mp10")?.party, "1p");
     assert.equal(FIGURES.find((f) => f.id === "weijiang-wj-mpp10")?.company, "weijiang");
