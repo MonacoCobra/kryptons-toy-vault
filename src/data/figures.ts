@@ -1,4 +1,5 @@
-import type { CatalogFigure, CompanyId, ItemKind } from "@/lib/types";
+import { stampFigureFranchise } from "@/lib/figure-property";
+import type { CatalogFigure, CompanyId, FigureSetRole, ItemKind } from "@/lib/types";
 import archiveRows from "./figure-archive/oneshot.json";
 import figureImageUrls from "./figure-image-urls.json";
 import figureSkuMap from "./figure-sku-map.json";
@@ -550,7 +551,7 @@ const rows: Row[] = [
 function rowToFigure(
   [id, name, subtitle, line, company, kind, releaseDate, msrp, scale, demand, tags, extra]: Row,
 ): CatalogFigure {
-  return {
+  return stampFigureFranchise({
     id,
     name,
     subtitle,
@@ -565,7 +566,7 @@ function rowToFigure(
     sku: resolveFigureSku(id, extra?.sku),
     exclusive: extra?.exclusive,
     imageUrl: resolveFigureImageUrl(id),
-  };
+  });
 }
 
 type ArchiveRow = {
@@ -583,10 +584,12 @@ type ArchiveRow = {
   sku?: string;
   exclusive?: string;
   imageUrl?: string;
+  setId?: string;
+  setRole?: FigureSetRole;
 };
 
 function archiveToFigure(r: ArchiveRow): CatalogFigure {
-  return {
+  const figure: CatalogFigure = {
     id: r.id,
     name: r.name,
     subtitle: r.subtitle,
@@ -602,6 +605,9 @@ function archiveToFigure(r: ArchiveRow): CatalogFigure {
     exclusive: r.exclusive,
     imageUrl: resolveFigureImageUrl(r.id, r.imageUrl),
   };
+  if (r.setId) figure.setId = r.setId;
+  if (r.setRole === "parent" || r.setRole === "member") figure.setRole = r.setRole;
+  return stampFigureFranchise(figure);
 }
 
 function normSku(sku: string | undefined): string | undefined {
@@ -710,7 +716,7 @@ export function searchFigures(query: string, extras: CatalogFigure[] = []): Cata
   const q = query.trim().toLowerCase();
   if (!q) return list;
   return list.filter((f) => {
-    const hay = `${f.name} ${f.subtitle} ${f.line} ${f.company} ${f.sku ?? ""} ${f.exclusive ?? ""} ${f.tags.join(" ")}`.toLowerCase();
+    const hay = `${f.name} ${f.subtitle} ${f.line} ${f.company} ${f.property ?? ""} ${f.party ?? ""} ${f.sku ?? ""} ${f.exclusive ?? ""} ${f.tags.join(" ")}`.toLowerCase();
     return hay.includes(q);
   });
 }

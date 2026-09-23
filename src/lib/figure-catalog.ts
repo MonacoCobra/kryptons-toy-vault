@@ -1,5 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { FIGURES } from "@/data/figures";
+import { stampFigureFranchise } from "@/lib/figure-property";
 import type { CatalogFigure, CompanyId, ItemKind } from "@/lib/types";
 
 /** Weeks a figure stays in New & Noteworthy before counting as archive-only. */
@@ -93,7 +94,7 @@ function isRecentRelease(releaseDate: string | undefined, now: Date, windowMs: n
 }
 
 function rowToFigure(row: FigureRow): CatalogFigure {
-  return {
+  return stampFigureFranchise({
     id: row.id,
     name: row.name,
     subtitle: row.subtitle || "",
@@ -109,7 +110,7 @@ function rowToFigure(row: FigureRow): CatalogFigure {
     exclusive: row.exclusive || undefined,
     imageUrl: row.image_url || undefined,
     source: row.source || undefined,
-  };
+  });
 }
 
 function isHttpUrl(url: string): boolean {
@@ -156,7 +157,7 @@ export function validateFigureOverlayInput(raw: unknown): CatalogFigure | null {
   const exclusive =
     typeof r.exclusive === "string" && r.exclusive.trim() ? r.exclusive.trim() : undefined;
   const source = typeof r.source === "string" && r.source.trim() ? r.source.trim() : undefined;
-  return {
+  return stampFigureFranchise({
     id,
     name,
     subtitle,
@@ -172,7 +173,7 @@ export function validateFigureOverlayInput(raw: unknown): CatalogFigure | null {
     exclusive,
     imageUrl,
     source,
-  };
+  });
 }
 
 function bakedIndex() {

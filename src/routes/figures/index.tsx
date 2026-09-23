@@ -4,6 +4,14 @@ import { LayoutGrid, List, Search } from "lucide-react";
 import { COMPANIES } from "@/data/companies";
 import { mergeFigures, searchFigures } from "@/data/figures";
 import { AddFigureDialog } from "@/components/add-figure-dialog";
+import { collapseFigureSets } from "@/lib/figure-sets";
+import {
+  POPULAR_FRANCHISES,
+  TRANSFORMERS_PARTIES,
+  figureMatchesFranchise,
+  isFigureProperty,
+  isTransformersParty,
+} from "@/lib/figure-property";
 import { FigureArt } from "@/components/figure-art";
 import { VirtualGrid } from "@/components/virtual-grid";
 import { useDebouncedValue } from "@/hooks/use-debounced-value";
@@ -15,7 +23,7 @@ import { usd } from "@/lib/format";
 import { useEnsureFigureLibrary, useFigureExtras, useLiveFigures } from "@/lib/live-store";
 import { figureMarket } from "@/lib/market";
 import { useVault } from "@/lib/store";
-import type { CatalogFigure, CompanyId } from "@/lib/types";
+import type { CatalogFigure, CompanyId, FigureProperty, TransformersParty } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 type Search = {
@@ -25,6 +33,8 @@ type Search = {
   view?: "all" | "owned" | "missing" | "kits";
   sort?: "release" | "name" | "acquired";
   layout?: "grid" | "list";
+  property?: FigureProperty;
+  party?: TransformersParty;
 };
 
 export const Route = createFileRoute("/figures/")({
@@ -35,6 +45,8 @@ export const Route = createFileRoute("/figures/")({
     view: s.view === "owned" || s.view === "missing" || s.view === "kits" || s.view === "all" ? s.view : undefined,
     sort: s.sort === "name" || s.sort === "acquired" || s.sort === "release" ? s.sort : undefined,
     layout: s.layout === "list" || s.layout === "grid" ? s.layout : undefined,
+    property: isFigureProperty(s.property) ? s.property : undefined,
+    party: isTransformersParty(s.party) ? s.party : undefined,
   }),
   component: FiguresPage,
 });
@@ -66,6 +78,14 @@ function FiguresPage() {
   const [adding, setAdding] = useState<CatalogFigure | null>(null);
 
   const catalog = useMemo(() => mergeFigures(extras), [extras]);
+  const franchiseCounts = useMemo(() => {
+    const counts = new Map<FigureProperty, number>();
+    for (const figure of collapseFigureSets(catalog)) {
+      if (!figure.property) continue;
+      counts.set(figure.property, (counts.get(figure.property) ?? 0) + 1);
+    }
+    return counts;
+  }, [catalog]);
   const company = COMPANIES.find((c) => c.id === search.company);
   const lines = company
     ? [...new Set(catalog.filter((f) => f.company === company.id).map((f) => f.line))]
@@ -91,6 +111,10 @@ function FiguresPage() {
     if (search.view === "owned") list = list.filter((f) => owned[f.id]);
     if (search.view === "missing") list = list.filter((f) => !owned[f.id]);
     if (search.view === "kits") list = list.filter((f) => f.kind === "kit");
+    if (search.property) {
+      const party = search.property === "transformers" ? search.party : undefined;
+      list = list.filter((f) => figureMatchesFranchise(f, search.property!, party));
+    }
     list.sort((a, b) => {
       if (sort === "name") {
         const byName = a.name.localeCompare(b.name);
@@ -118,7 +142,7 @@ function FiguresPage() {
       if (a.releaseDate !== b.releaseDate) return a.releaseDate < b.releaseDate ? 1 : -1;
       return a.name.localeCompare(b.name);
     });
-    return list;
+    return collapseFigureSets(list);
   }, [search, owned, sort, extras, catalog]);
 
   const ownedCount = filtered.filter((f) => owned[f.id]).length;
@@ -143,10 +167,69 @@ function FiguresPage() {
         />
       </div>
 
+      <section className="flex flex-col gap-2" aria-label="Popular franchises">
+        <h2 className="text-xs tracking-widest text-muted uppercase">Popular franchises</h2>
+        <div className="hide-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 pb-1">
+          {POPULAR_FRANCHISES.filter((franchise) => (franchiseCounts.get(franchise.id) ?? 0) > 0).map((franchise) => (
+            <FilterChip
+              key={franchise.id}
+              active={search.property === franchise.id}
+              onClick={() =>
+                navigate({
+                  search: (prev) => {
+                    const next = prev.property === franchise.id ? undefined : franchise.id;
+                    return {
+                      ...prev,
+                      property: next,
+                      party: next === "transformers" ? prev.party : undefined,
+                      line: undefined,
+                    };
+                  },
+                })
+              }
+            >
+              {franchise.label}
+              <span className="ml-1 tabular opacity-80">{franchiseCounts.get(franchise.id)}</span>
+            </FilterChip>
+          ))}
+        </div>
+        {search.property === "transformers" ? (
+          <div className="flex flex-wrap gap-2" aria-label="Transformers party">
+            <FilterChip
+              active={!search.party}
+              onClick={() => navigate({ search: (prev) => ({ ...prev, party: undefined }) })}
+            >
+              All Transformers
+            </FilterChip>
+            {TRANSFORMERS_PARTIES.map((party) => (
+              <FilterChip
+                key={party.id}
+                active={search.party === party.id}
+                onClick={() =>
+                  navigate({
+                    search: (prev) => ({
+                      ...prev,
+                      property: "transformers",
+                      party: prev.party === party.id ? undefined : party.id,
+                    }),
+                  })
+                }
+              >
+                {party.label}
+              </FilterChip>
+            ))}
+          </div>
+        ) : null}
+      </section>
+
       <div className="hide-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 pb-1 md:mx-0 md:grid md:grid-cols-5 md:overflow-visible md:px-0 lg:grid-cols-8">
         <button
           type="button"
-          onClick={() => navigate({ search: (prev) => ({ ...prev, company: undefined, line: undefined }) })}
+          onClick={() =>
+            navigate({
+              search: (prev) => ({ ...prev, company: undefined, line: undefined, property: undefined, party: undefined }),
+            })
+          }
           className={cn(
             "min-w-28 rounded-md px-3 py-3 text-left text-sm shadow-[var(--shadow-border)] md:min-w-0",
             !search.company ? "bg-surface text-fg" : "bg-bg-elevated text-muted",
@@ -318,6 +401,7 @@ function FiguresPage() {
                     {have ? <Badge tone="gain">In vault</Badge> : null}
                     {want && !have ? <Badge tone="gold">Wanted</Badge> : null}
                     {figure.kind === "kit" ? <Badge>Kit</Badge> : null}
+                    {figure.setRole === "parent" ? <Badge>Set</Badge> : null}
                   </div>
                   <div>
                     <p className="text-xs text-muted">{figure.line}</p>

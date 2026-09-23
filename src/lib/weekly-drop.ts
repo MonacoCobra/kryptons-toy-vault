@@ -1,6 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import seed from "@/data/weekly-seed.json";
 import { fetchStorefrontFigures } from "@/lib/figure-storefronts";
+import { stampFigureFranchise } from "@/lib/figure-property";
 import type { CatalogComic, CatalogFigure, ComicFormat, CompanyId, ItemKind, WeeklyDrop } from "@/lib/types";
 import { slug, weekKey } from "@/lib/utils";
 
@@ -461,24 +462,26 @@ function normalizeFigures(rows: unknown[], week: string, fallbackDate: string): 
     if (seen.has(key)) continue;
     seen.add(key);
     const kind = asKind(r.kind, line);
-    out.push({
-      id: `live-f-${week}-${slug(line)}-${slug(name)}-${slug(subtitle || "std")}`.slice(0, 80),
-      name,
-      subtitle: subtitle || line,
-      line,
-      company,
-      kind,
-      releaseDate: dateish(r.releaseDate, fallbackDate),
-      msrp: num(r.msrp, kind === "kit" ? 49.99 : 24.99),
-      scale: str(r.scale) || (kind === "kit" ? "1/144" : '6"'),
-      exclusive: str(r.exclusive) || undefined,
-      imageUrl: (() => {
-        const img = str(r.imageUrl ?? r.image);
-        return img.startsWith("http") ? img : undefined;
-      })(),
-      demand: 1,
-      tags: ["this-week", company, kind],
-    });
+    out.push(
+      stampFigureFranchise({
+        id: `live-f-${week}-${slug(line)}-${slug(name)}-${slug(subtitle || "std")}`.slice(0, 80),
+        name,
+        subtitle: subtitle || line,
+        line,
+        company,
+        kind,
+        releaseDate: dateish(r.releaseDate, fallbackDate),
+        msrp: num(r.msrp, kind === "kit" ? 49.99 : 24.99),
+        scale: str(r.scale) || (kind === "kit" ? "1/144" : '6"'),
+        exclusive: str(r.exclusive) || undefined,
+        imageUrl: (() => {
+          const img = str(r.imageUrl ?? r.image);
+          return img.startsWith("http") ? img : undefined;
+        })(),
+        demand: 1,
+        tags: ["this-week", company, kind],
+      }),
+    );
     if (out.length >= 18) break;
   }
   return out;
@@ -528,7 +531,7 @@ function coerceCachedFigures(rows: unknown[]): CatalogFigure[] {
     if (!row || typeof row !== "object") continue;
     const f = row as CatalogFigure;
     if (!f.id || !f.name || !f.company) continue;
-    out.push(f);
+    out.push(stampFigureFranchise(f));
   }
   return out;
 }
