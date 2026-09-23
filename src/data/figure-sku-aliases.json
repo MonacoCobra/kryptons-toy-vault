@@ -33844,6 +33844,29 @@
     "unbranded-mp28-hotrod": [
       "SZ105",
       "id:unbranded-mp28-hotrod"
+    ],
+    "afmon-mcfarlane-batman-dc-multiverse-collector-edition-the-joker-action-figure-bbts-183610": [
+      "BBTS-183610"
+    ],
+    "afmon-mcfarlane-dc-classic-dc-multiverse-collector-edition-mera-action-figure-bbts-196670": [
+      "BBTS-196670"
+    ],
+    "ta-444d407ddf53": [
+      "id:ta-444d407ddf53",
+      "toyark:599293",
+      "MMS925AE",
+      "https://www.toyark.com/2026/09/23/avengers-age-of-ultron-hot-toys-black-widow-artisan-edition-599293"
+    ],
+    "ta-d8730bd350b5": [
+      "id:ta-d8730bd350b5",
+      "toyark:599274",
+      "VGM93AE",
+      "https://www.toyark.com/2026/09/23/death-stranding-2-on-the-beach-hot-toys-tomorrow-figure-599274"
+    ],
+    "ta-3a7f2e730bb9": [
+      "id:ta-3a7f2e730bb9",
+      "toyark:599270",
+      "https://www.toyark.com/2026/09/23/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270"
     ]
   },
   "aliasToFigureId": {
@@ -52212,7 +52235,20 @@
     "SZ1038": "unbranded-defensor-set",
     "id:unbranded-defensor-set": "unbranded-defensor-set",
     "SZ105": "unbranded-mp28-hotrod",
-    "id:unbranded-mp28-hotrod": "unbranded-mp28-hotrod"
+    "id:unbranded-mp28-hotrod": "unbranded-mp28-hotrod",
+    "BBTS-183610": "afmon-mcfarlane-batman-dc-multiverse-collector-edition-the-joker-action-figure-bbts-183610",
+    "BBTS-196670": "afmon-mcfarlane-dc-classic-dc-multiverse-collector-edition-mera-action-figure-bbts-196670",
+    "id:ta-444d407ddf53": "ta-444d407ddf53",
+    "toyark:599293": "ta-444d407ddf53",
+    "MMS925AE": "ta-444d407ddf53",
+    "https://www.toyark.com/2026/09/23/avengers-age-of-ultron-hot-toys-black-widow-artisan-edition-599293": "ta-444d407ddf53",
+    "id:ta-d8730bd350b5": "ta-d8730bd350b5",
+    "toyark:599274": "ta-d8730bd350b5",
+    "VGM93AE": "ta-d8730bd350b5",
+    "https://www.toyark.com/2026/09/23/death-stranding-2-on-the-beach-hot-toys-tomorrow-figure-599274": "ta-d8730bd350b5",
+    "id:ta-3a7f2e730bb9": "ta-3a7f2e730bb9",
+    "toyark:599270": "ta-3a7f2e730bb9",
+    "https://www.toyark.com/2026/09/23/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270": "ta-3a7f2e730bb9"
   },
   "collapsed": [
     {
@@ -52517,7 +52553,7 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-09-23T13:57:55.957308+00:00",
+  "updatedAt": "2026-09-23T18:21:52.284917+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,

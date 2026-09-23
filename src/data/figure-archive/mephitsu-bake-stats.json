@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-09-23T05:44:18.745618+00:00",
+  "bakedAt": "2026-09-23T18:21:52.318689+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-09-23T05:42:05.641840+00:00",
+      "bakedAt": "2026-09-23T18:19:36.359675+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 999,
@@ -14,29 +14,29 @@
         "already": 519
       },
       "before": {
-        "total": 455,
-        "withSku": 390,
+        "total": 459,
+        "withSku": 394,
         "withGtin": 255,
-        "withListingPrimary": 135,
-        "withImage": 393,
+        "withListingPrimary": 139,
+        "withImage": 397,
         "emptySku": 65,
         "emptyImage": 62
       },
       "after": {
-        "total": 455,
-        "withSku": 390,
+        "total": 459,
+        "withSku": 394,
         "withGtin": 255,
-        "withListingPrimary": 135,
-        "withImage": 393,
+        "withListingPrimary": 139,
+        "withImage": 399,
         "emptySku": 65,
-        "emptyImage": 62
+        "emptyImage": 60
       },
       "apply": {
         "matched": 207,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 2,
+        "imagesFilled": 2,
+        "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 28,
         "samples": [
@@ -116,7 +116,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-23T05:42:16.199579+00:00",
+      "bakedAt": "2026-09-23T18:19:48.469773+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -140,16 +140,16 @@
         "withSku": 307,
         "withGtin": 154,
         "withListingPrimary": 153,
-        "withImage": 380,
+        "withImage": 379,
         "emptySku": 123,
-        "emptyImage": 50
+        "emptyImage": 51
       },
       "apply": {
         "matched": 170,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 1,
-        "imagesSkipped": 0,
+        "imagesFilled": 0,
+        "imagesSkipped": 1,
         "aliasesAttached": 0,
         "skippedGtinConflict": 41,
         "samples": [
@@ -229,7 +229,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-23T05:42:20.318626+00:00",
+      "bakedAt": "2026-09-23T18:19:52.438921+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -240,20 +240,20 @@
         "already": 248
       },
       "before": {
-        "total": 544,
-        "withSku": 489,
+        "total": 551,
+        "withSku": 496,
         "withGtin": 289,
-        "withListingPrimary": 200,
-        "withImage": 469,
+        "withListingPrimary": 207,
+        "withImage": 476,
         "emptySku": 55,
         "emptyImage": 75
       },
       "after": {
-        "total": 544,
-        "withSku": 489,
+        "total": 551,
+        "withSku": 496,
         "withGtin": 289,
-        "withListingPrimary": 200,
-        "withImage": 469,
+        "withListingPrimary": 207,
+        "withImage": 476,
         "emptySku": 55,
         "emptyImage": 75
       },
@@ -342,7 +342,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-23T05:43:12.086147+00:00",
+      "bakedAt": "2026-09-23T18:20:43.185153+00:00",
       "line": "mcfarlane",
       "dryRun": false,
       "mephitsuCount": 2177,
@@ -353,30 +353,30 @@
         "already": 1013
       },
       "before": {
-        "total": 1238,
-        "withSku": 602,
+        "total": 1244,
+        "withSku": 608,
         "withGtin": 445,
-        "withListingPrimary": 157,
-        "withImage": 731,
+        "withListingPrimary": 163,
+        "withImage": 741,
         "emptySku": 636,
-        "emptyImage": 507
+        "emptyImage": 503
       },
       "after": {
-        "total": 1238,
-        "withSku": 602,
-        "withGtin": 445,
-        "withListingPrimary": 157,
-        "withImage": 739,
+        "total": 1244,
+        "withSku": 608,
+        "withGtin": 447,
+        "withListingPrimary": 161,
+        "withImage": 751,
         "emptySku": 636,
-        "emptyImage": 499
+        "emptyImage": 493
       },
       "apply": {
-        "matched": 421,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
-        "imagesFilled": 8,
-        "imagesSkipped": 11,
-        "aliasesAttached": 0,
+        "matched": 423,
+        "gtinAssigned": 2,
+        "gtinUpgraded": 2,
+        "imagesFilled": 10,
+        "imagesSkipped": 5,
+        "aliasesAttached": 2,
         "skippedGtinConflict": 62,
         "samples": [
           {
@@ -386,7 +386,7 @@
             "mephitsu": "Harley Quinn",
             "wave": "Gold Label GameStop",
             "sku": "787926177268",
-            "image": false
+            "image": true
           },
           {
             "score": 63.0,
@@ -455,7 +455,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-23T05:43:47.399734+00:00",
+      "bakedAt": "2026-09-23T18:21:19.539554+00:00",
       "line": "neca",
       "dryRun": false,
       "mephitsuCount": 1493,
@@ -479,16 +479,16 @@
         "withSku": 714,
         "withGtin": 337,
         "withListingPrimary": 377,
-        "withImage": 752,
+        "withImage": 754,
         "emptySku": 226,
-        "emptyImage": 188
+        "emptyImage": 186
       },
       "apply": {
         "matched": 235,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 2,
-        "imagesSkipped": 4,
+        "imagesFilled": 4,
+        "imagesSkipped": 2,
         "aliasesAttached": 0,
         "skippedGtinConflict": 22,
         "samples": [
@@ -568,7 +568,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-23T05:44:08.082657+00:00",
+      "bakedAt": "2026-09-23T18:21:40.867597+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -579,29 +579,29 @@
         "already": 68
       },
       "before": {
-        "total": 2809,
-        "withSku": 2380,
+        "total": 2830,
+        "withSku": 2401,
         "withGtin": 131,
-        "withListingPrimary": 2249,
-        "withImage": 2520,
+        "withListingPrimary": 2270,
+        "withImage": 2541,
         "emptySku": 429,
         "emptyImage": 289
       },
       "after": {
-        "total": 2809,
-        "withSku": 2380,
+        "total": 2830,
+        "withSku": 2401,
         "withGtin": 131,
-        "withListingPrimary": 2249,
-        "withImage": 2523,
+        "withListingPrimary": 2270,
+        "withImage": 2541,
         "emptySku": 429,
-        "emptyImage": 286
+        "emptyImage": 289
       },
       "apply": {
-        "matched": 116,
+        "matched": 117,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 3,
-        "imagesSkipped": 0,
+        "imagesFilled": 0,
+        "imagesSkipped": 3,
         "aliasesAttached": 0,
         "skippedGtinConflict": 12,
         "samples": [
@@ -648,7 +648,7 @@
             "mephitsu": "Baxter Stockman",
             "wave": "TMNT Series 1",
             "sku": null,
-            "image": true
+            "image": false
           },
           {
             "score": 58.0,
@@ -681,7 +681,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-23T05:44:09.220461+00:00",
+      "bakedAt": "2026-09-23T18:21:42.611846+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -705,16 +705,16 @@
         "withSku": 22,
         "withGtin": 2,
         "withListingPrimary": 20,
-        "withImage": 57,
+        "withImage": 42,
         "emptySku": 80,
-        "emptyImage": 45
+        "emptyImage": 60
       },
       "apply": {
         "matched": 53,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 15,
-        "imagesSkipped": 0,
+        "imagesFilled": 0,
+        "imagesSkipped": 15,
         "aliasesAttached": 0,
         "skippedGtinConflict": 0,
         "samples": [
@@ -743,7 +743,7 @@
             "mephitsu": "She-Hulk",
             "wave": "Wizard World (Fans Choice)",
             "sku": null,
-            "image": true
+            "image": false
           },
           {
             "score": 36.5,
@@ -761,7 +761,7 @@
             "mephitsu": "Symbiote Spider-Man",
             "wave": "General",
             "sku": null,
-            "image": true
+            "image": false
           },
           {
             "score": 36.5,
@@ -779,7 +779,7 @@
             "mephitsu": "Silver Surfer",
             "wave": "General",
             "sku": null,
-            "image": true
+            "image": false
           },
           {
             "score": 36.5,
@@ -794,7 +794,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-23T05:44:15.442287+00:00",
+      "bakedAt": "2026-09-23T18:21:48.878001+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -907,7 +907,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-23T05:44:18.739512+00:00",
+      "bakedAt": "2026-09-23T18:21:52.311648+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,
