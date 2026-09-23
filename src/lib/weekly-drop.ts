@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import seed from "@/data/weekly-seed.json";
 import { fetchStorefrontFigures } from "@/lib/figure-storefronts";
-import { stampFigureFranchise } from "@/lib/figure-property";
+import { stampFigureFranchise, textIsUnbrandedTransformersKo } from "@/lib/figure-property";
 import type { CatalogComic, CatalogFigure, ComicFormat, CompanyId, ItemKind, WeeklyDrop } from "@/lib/types";
 import { slug, weekKey } from "@/lib/utils";
 
@@ -63,6 +63,7 @@ const COMPANIES: CompanyId[] = [
   "blackmamba",
   "toyhousefactory",
   "bpf",
+  "unbranded",
   "cangtoys",
   "medicom",
   "drwu",
@@ -245,6 +246,7 @@ function paletteFor(publisher: string): [string, string, string] {
 
 function asCompany(raw: string, line: string, name: string): CompanyId | null {
   const s = `${raw} ${line} ${name}`.toLowerCase();
+  if (textIsUnbrandedTransformersKo(s)) return "unbranded";
   const direct = COMPANIES.find((id) => s.includes(id));
   if (direct) return direct;
   if (/takara|\bmpg\b|masterpiece g/.test(s)) return "takaratomy";

@@ -84,7 +84,35 @@ const TF_3P = new Set([
   "bingotoys",
   "cangtoys",
   "drwu",
+  "unbranded",
 ]);
+
+/**
+ * Company ids that mean "no known maker". Consolidated onto `unbranded`
+ * instead of keeping parallel catch-alls on the rail.
+ */
+const LEGACY_UNBRANDED_COMPANIES = new Set([
+  "unknown",
+  "other",
+  "generic",
+  "nobrand",
+  "no-brand",
+  "knockoff",
+  "chinese-ko",
+]);
+
+/** Official makers a KO listing is sometimes mis-filed under. */
+const OFFICIAL_MISTAG_COMPANIES = new Set(["hasbro", "takaratomy", "kenner"]);
+
+/** Named 3P / KO / licensee makers. Their rows must not land on Unbranded. */
+const KNOWN_MAKER =
+  /magic\s*square|wei\s*jiang|weijiang|\bwj[-\s]|black\s*mamba|\bbmb\b|toy\s*house\s*factory|\bthf\b|\bbpf\b|new\s*age|newage|fans\s*toys|fanstoys|iron\s*factory|unique\s*toys|toyworld|toy\s*world|perfect\s*effect|robot\s*paradise|apc\s*toys|moon\s*studio|jx\s*jiang|metalbeast|\bdx9\b|mastermind|make\s*toys|maketoys|planet\s*x|x-?transbots|\btfc\b|g-?creation|generation\s*toy|zeta\s*toys|mech\s*fans|toy\s*wolf|toywolf|evolution\s*toy|fans\s*hobby|fansproject|fans\s*project|transart|bingo\s*toys|cang\s*toys|dr\.?\s*wu|herocross|hybrid\s*metal|heatboys|heat\s*boys|\blewin\b|\bdjs\b|model\s*wizard|\baoyi\b|zeus\s*toys|infinite\s*transformation|blokees|three\s*zero|threezero|yolopark|yolo\s*park|robosen|flame\s*toys|super\s*7|super7|kuro\s*kara|naughtica|ocular\s*max/i;
+
+const EXPLICIT_KO =
+  /\bunbranded\b|\bno[- ]brand\b|\bknock-?off\b|\bknockoff\b|\bbootleg\b|\bko\b|\b4th[- ]party\b|\bfourth[- ]party\b/i;
+
+const TF_KO_SHAPE =
+  /transformers|\bmp-?\s?10\b|\bmp10\b|\bdeformation\b|optimus|megatron|bumblebee|starscream|soundwave|shockwave|ironhide/i;
 
 const GUNDAM_LINES =
   /^(high grade|gunpla|sd gundam|master grade|real grade|entry grade|perfect grade)\b/i;
@@ -360,6 +388,22 @@ function textOf(f: FigureFranchiseInput): string {
   return [f.name, f.subtitle ?? "", f.line, f.id, ...(f.tags ?? [])].join(" ").toLowerCase();
 }
 
+function namesKnownMaker(blob: string): boolean {
+  return KNOWN_MAKER.test(blob);
+}
+
+/** MP10 KO / deformation / knockoff copy that does not name a real maker. */
+export function textIsUnbrandedTransformersKo(blob: string): boolean {
+  const text = blob.toLowerCase();
+  if (namesKnownMaker(text)) return false;
+  const explicit = EXPLICIT_KO.test(text);
+  const deformation = /\bdeformation\b/.test(text);
+  const shape = TF_KO_SHAPE.test(text);
+  if (!shape && !deformation) return false;
+  if (/\b(hasbro|takara|takaratomy|kenner)\b/.test(text) && !explicit && !deformation) return false;
+  return explicit || deformation;
+}
+
 function hasPhrase(blob: string, phrase: string): boolean {
   const esc = phrase.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   return new RegExp(`(?:^|[^a-z0-9])${esc}(?:[^a-z0-9]|$)`).test(blob);
@@ -463,6 +507,15 @@ export function matchTransformersParty(f: FigureFranchiseInput): TransformersPar
       : undefined;
   }
 
+  if (f.company === "unbranded" || LEGACY_UNBRANDED_COMPANIES.has(f.company)) {
+    if (LEGACY_UNBRANDED_COMPANIES.has(f.company) && namesKnownMaker(blob)) return undefined;
+    if (!TF_KO_SHAPE.test(blob) && !EXPLICIT_KO.test(blob)) return undefined;
+    if (/gundam|star wars|naruto|ultraman|one piece|dragon ball|marvel legends|dc multiverse/i.test(blob) && !TF_KO_SHAPE.test(blob)) {
+      return undefined;
+    }
+    return "3p";
+  }
+
   if (TF_3P.has(f.company)) {
     if (/gundam|star wars|naruto|ultraman|one piece|dragon ball/i.test(blob) && !/transformers|optimus|megatron|bumblebee/i.test(blob)) {
       return undefined;
@@ -471,6 +524,28 @@ export function matchTransformersParty(f: FigureFranchiseInput): TransformersPar
   }
 
   return undefined;
+}
+
+/**
+ * Move a true unknown TF KO onto `unbranded`.
+ * Leaves named 3P makers and official 1P/2P rows on their company.
+ * Does not invent a line — the existing line string stays.
+ */
+export function reclassifyUnbrandedKoCompany(f: FigureFranchiseInput): string {
+  if (f.company === "unbranded") return "unbranded";
+  const legacy = !f.company || LEGACY_UNBRANDED_COMPANIES.has(f.company);
+  const mistag = OFFICIAL_MISTAG_COMPANIES.has(f.company);
+  if (!legacy && !mistag) return f.company;
+  const blob = textOf(f);
+  if (namesKnownMaker(blob)) return f.company;
+  if (legacy && (TF_KO_SHAPE.test(blob) || EXPLICIT_KO.test(blob))) {
+    if (/marvel legends|dc multiverse|black series|star wars|g\.?\s*i\.?\s*joe|masterverse|\bwwe\b/i.test(blob) && !TF_KO_SHAPE.test(blob)) {
+      return f.company;
+    }
+    return "unbranded";
+  }
+  if (mistag && textIsUnbrandedTransformersKo(blob)) return "unbranded";
+  return f.company;
 }
 
 function marvelLine(f: FigureFranchiseInput): boolean {
@@ -651,11 +726,15 @@ export function reconcileBrowseSelection<C extends string>(
 }
 
 /** Stamp property / party onto a catalog row. Does not invent set membership. */
-export function stampFigureFranchise<T extends CatalogFigure>(figure: T): T {
-  const property = matchFigureProperty(figure);
-  const party = property === "transformers" ? matchTransformersParty(figure) : undefined;
-  if (figure.property === property && figure.party === party) return figure;
-  const next: T = { ...figure };
+export function stampFigureFranchise(
+  figure: Omit<CatalogFigure, "company"> & { company: string },
+): CatalogFigure {
+  const company = reclassifyUnbrandedKoCompany(figure) as CatalogFigure["company"];
+  const basis = company === figure.company ? figure : { ...figure, company };
+  const property = matchFigureProperty(basis);
+  const party = property === "transformers" ? matchTransformersParty(basis) : undefined;
+  if (basis === figure && figure.property === property && figure.party === party) return figure as CatalogFigure;
+  const next = { ...basis, company } as CatalogFigure;
   if (property) next.property = property;
   else delete next.property;
   if (party) next.party = party;

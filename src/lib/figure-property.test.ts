@@ -5,8 +5,13 @@ import {
   indexFranchiseBrowse,
   matchFigureProperty,
   matchTransformersParty,
+  reclassifyUnbrandedKoCompany,
   reconcileBrowseSelection,
+  stampFigureFranchise,
+  textIsUnbrandedTransformersKo,
 } from "@/lib/figure-property";
+import { COMPANIES } from "@/data/companies";
+import { FIGURES } from "@/data/figures";
 import type { FigureFranchiseInput } from "@/lib/figure-property";
 
 function row(partial: Partial<FigureFranchiseInput> & Pick<FigureFranchiseInput, "name" | "company" | "line">): FigureFranchiseInput {
@@ -54,6 +59,178 @@ describe("transformers parties", () => {
     assert.equal(matchTransformersParty(row({ name: "MS-B36", line: "B Series", company: "magicsquare" })), "3p");
     assert.equal(matchTransformersParty(row({ name: "Dynamic Action Heroes Batman", line: "Dynamic Action Heroes", company: "beastkingdom" })), undefined);
     assert.equal(matchFigureProperty(row({ name: "Batman", line: "Dynamic Action Heroes", company: "beastkingdom" })), "dc");
+  });
+
+  it("puts Unbranded and legacy unknown catch-alls in Transformers 3P", () => {
+    const mp10 = row({
+      name: "Optimus Prime",
+      subtitle: "Unbranded knockoff",
+      line: "MP10 KO",
+      company: "unbranded",
+      tags: ["transformers", "ko"],
+    });
+    const deformation = row({
+      name: "Optimus Prime",
+      subtitle: "No maker",
+      line: "Deformation",
+      company: "unknown",
+      tags: ["transformers", "ko"],
+    });
+    assert.equal(matchTransformersParty(mp10), "3p");
+    assert.equal(matchFigureProperty(mp10), "transformers");
+    assert.equal(matchTransformersParty(deformation), "3p");
+    assert.equal(reclassifyUnbrandedKoCompany(deformation), "unbranded");
+    assert.equal(reclassifyUnbrandedKoCompany(mp10), "unbranded");
+
+    const stamped = stampFigureFranchise({
+      ...deformation,
+      subtitle: deformation.subtitle ?? "",
+      kind: "figure",
+      releaseDate: "2016-01-01",
+      msrp: 40,
+      scale: "MP",
+      demand: 1,
+      tags: deformation.tags ?? [],
+    });
+    assert.equal(stamped.company, "unbranded");
+    assert.equal(stamped.line, "Deformation");
+    assert.equal(stamped.party, "3p");
+
+    const legacy = stampFigureFranchise({
+      id: "tf-def",
+      name: "Megatron",
+      subtitle: "KO",
+      line: "Deformation",
+      company: "other",
+      kind: "figure",
+      releaseDate: "2016-01-01",
+      msrp: 40,
+      scale: "MP",
+      demand: 1,
+      tags: ["transformers", "ko"],
+    });
+    assert.equal(legacy.company, "unbranded");
+    assert.equal(legacy.line, "Deformation");
+
+    const figures = [
+      row({ id: "tf-op", name: "Optimus Prime", line: "Transformers Studio Series", company: "hasbro", tags: ["transformers"] }),
+      row({ id: "tf-blk", name: "Optimus Prime", subtitle: "Transformers Galaxy Version", line: "Blokees Galaxy Version", company: "blokees" }),
+      row({ id: "tf-ko", name: "MS-B36", line: "B Series", company: "magicsquare" }),
+      mp10,
+      legacy,
+      row({ id: "marvel", name: "Wolverine", line: "Marvel Legends", company: "hasbro", tags: ["marvel"] }),
+      row({ id: "tb", name: "Spider-Man", line: "Marvel Legends", company: "toybiz", tags: ["marvel"] }),
+      row({ id: "wwe", name: "Stone Cold", line: "WWE Elite", company: "mattel", tags: ["wwe"] }),
+    ];
+    const third = indexFranchiseBrowse(figures, "transformers", "3p");
+    assert.deepEqual([...third.byCompany.keys()], ["magicsquare", "unbranded"]);
+    assert.equal(third.byCompany.has("hasbro"), false);
+    assert.equal(third.byCompany.has("blokees"), false);
+    assert.equal(third.byCompany.has("toybiz"), false);
+    assert.equal(third.byCompany.has("mattel"), false);
+    assert.equal(third.byCompany.has("other"), false);
+    assert.equal(third.byCompany.get("unbranded")?.total, 2);
+    assert.deepEqual(third.byCompany.get("unbranded")?.lines, ["MP10 KO", "Deformation"]);
+  });
+
+  it("does not sweep branded 3P or official 1P/2P into Unbranded", () => {
+    const magic = row({ name: "MS-B36", line: "B Series", company: "magicsquare" });
+    const wei = row({
+      name: "Battle Commander",
+      subtitle: "WJ-MPP10 — MP Optimus Prime homage",
+      line: "Robot Force",
+      company: "weijiang",
+      tags: ["transformers", "ko"],
+    });
+    const bmb = row({
+      name: "4th Party No Brand Bmb T-11",
+      subtitle: "T-11",
+      line: "BMB",
+      company: "blackmamba",
+      tags: ["ko"],
+    });
+    const official = row({
+      name: "Optimus Prime",
+      subtitle: "MP-10 Convoy",
+      line: "Transformers Masterpiece",
+      company: "hasbro",
+      tags: ["transformers"],
+    });
+    const licensee = row({
+      name: "Optimus Prime",
+      subtitle: "Transformers Galaxy Version",
+      line: "Blokees Galaxy Version",
+      company: "blokees",
+    });
+    const misfiledNamed = row({
+      name: "Magic Square MS-B36",
+      line: "B Series",
+      company: "other",
+      tags: ["transformers"],
+    });
+    assert.equal(reclassifyUnbrandedKoCompany(magic), "magicsquare");
+    assert.equal(reclassifyUnbrandedKoCompany(wei), "weijiang");
+    assert.equal(reclassifyUnbrandedKoCompany(bmb), "blackmamba");
+    assert.equal(reclassifyUnbrandedKoCompany(official), "hasbro");
+    assert.equal(matchTransformersParty(official), "1p");
+    assert.equal(reclassifyUnbrandedKoCompany(licensee), "blokees");
+    assert.equal(matchTransformersParty(licensee), "2p");
+    assert.equal(reclassifyUnbrandedKoCompany(misfiledNamed), "other");
+    assert.equal(textIsUnbrandedTransformersKo("wei jiang mpp10 deformation era battle commander"), false);
+    assert.equal(textIsUnbrandedTransformersKo("hasbro transformers masterpiece mp-10 convoy"), false);
+    assert.equal(textIsUnbrandedTransformersKo("optimus prime mp10 ko deformation"), true);
+
+    const mistag = row({
+      name: "Optimus Prime",
+      subtitle: "MP10 KO",
+      line: "MP10 KO",
+      company: "hasbro",
+      tags: ["transformers", "ko"],
+    });
+    assert.equal(reclassifyUnbrandedKoCompany(mistag), "unbranded");
+    assert.equal(mistag.line, "MP10 KO");
+    const moved = stampFigureFranchise({
+      ...mistag,
+      subtitle: mistag.subtitle ?? "",
+      kind: "figure",
+      releaseDate: "2016-01-01",
+      msrp: 30,
+      scale: "MP",
+      demand: 1,
+      tags: mistag.tags ?? [],
+    });
+    assert.equal(moved.company, "unbranded");
+    assert.equal(moved.party, "3p");
+    assert.equal(moved.line, "MP10 KO");
+  });
+
+  it("keeps the live catalog's branded makers off the Unbranded card", () => {
+    assert.equal(COMPANIES.some((c) => c.id === "unbranded" && c.short === "Unbranded"), true);
+    const third = indexFranchiseBrowse(FIGURES, "transformers", "3p");
+    assert.equal(third.byCompany.has("hasbro"), false);
+    assert.equal(third.byCompany.has("takaratomy"), false);
+    assert.equal(third.byCompany.has("blokees"), false);
+    assert.equal(third.byCompany.has("threezero"), false);
+    assert.equal(third.byCompany.has("yolopark"), false);
+    assert.equal(third.byCompany.has("toybiz"), false);
+    assert.equal(third.byCompany.has("mattel"), false);
+    assert.equal(third.byCompany.has("magicsquare"), true);
+    assert.equal(third.byCompany.has("weijiang"), true);
+    assert.equal(third.byCompany.has("blackmamba"), true);
+
+    const unbranded = FIGURES.filter((f) => f.company === "unbranded");
+    assert.equal(third.byCompany.has("unbranded"), unbranded.length > 0);
+    for (const figure of unbranded) {
+      assert.equal(figure.property, "transformers");
+      assert.equal(figure.party, "3p");
+    }
+    assert.equal(FIGURES.find((f) => f.id === "tfmp-mp10")?.company, "hasbro");
+    assert.equal(FIGURES.find((f) => f.id === "tfmp-mp10")?.party, "1p");
+    assert.equal(FIGURES.find((f) => f.id === "weijiang-wj-mpp10")?.company, "weijiang");
+    assert.equal(FIGURES.find((f) => f.id === "weijiang-wj-mpp10")?.party, "3p");
+    assert.equal(FIGURES.find((f) => f.id === "lewin-lwh-01-spike")?.company, "lewin");
+    assert.equal(FIGURES.find((f) => f.id === "blackmamba-t-11")?.company, "blackmamba");
+    assert.equal(FIGURES.find((f) => f.id === "blackmamba-jh01")?.company, "blackmamba");
   });
 });
 

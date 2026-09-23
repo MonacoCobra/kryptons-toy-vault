@@ -1163,6 +1163,15 @@ export const COMPANIES: Company[] = [
     accent: "#023e8a",
   },
   {
+    id: "unbranded",
+    name: "Unbranded",
+    short: "Unbranded",
+    blurb: "Other / KO — Transformers knockoffs and deformation figures with no known maker.",
+    founded: "Various",
+    hq: "Unofficial",
+    accent: "#64748b",
+  },
+  {
     id: "gong",
     name: "Gong Studio",
     short: "Gong",

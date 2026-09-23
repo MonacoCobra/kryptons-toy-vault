@@ -94,8 +94,11 @@ function FiguresPage() {
     [catalog, owned, search.property, browseParty],
   );
   const visibleCompanies = useMemo(() => {
-    if (!search.property) return COMPANIES;
-    return COMPANIES.filter((c) => (browse.byCompany.get(c.id)?.total ?? 0) > 0);
+    const withRows = (c: (typeof COMPANIES)[number]) => (browse.byCompany.get(c.id)?.total ?? 0) > 0;
+    if (!search.property) {
+      return COMPANIES.filter((c) => c.id !== "unbranded" || withRows(c));
+    }
+    return COMPANIES.filter(withRows);
   }, [browse, search.property]);
   const company = (search.property ? visibleCompanies : COMPANIES).find((c) => c.id === search.company);
   const lines = company ? (browse.byCompany.get(company.id)?.lines ?? []) : [];
@@ -327,6 +330,9 @@ function FiguresPage() {
                 <span className="size-2 rounded-full" style={{ background: c.accent }} />
                 {c.short}
               </span>
+              {c.id === "unbranded" ? (
+                <span className="mt-0.5 block text-[10px] uppercase tracking-wide text-muted">Other / KO</span>
+              ) : null}
               <span className="mt-1 block tabular text-xs">
                 {have}/{total}
               </span>
