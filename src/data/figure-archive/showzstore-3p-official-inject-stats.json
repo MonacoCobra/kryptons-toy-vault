@@ -181,13 +181,13 @@
     "wresourcesm01": 1,
     "xinggangmechanicalplanetcybertron": 1
   },
-  "aliasRowsTouched": 4914,
-  "droppedAliases": 135,
-  "oneshotBefore": 26911,
-  "oneshotAfter": 29021,
+  "aliasRowsTouched": 4902,
+  "droppedAliases": 147,
+  "oneshotBefore": 27084,
+  "oneshotAfter": 29194,
   "sku": "unset — no GTIN on these Show.Z listings; SHOWZ id and listing codes are aliases",
   "live": "held — do not Build Publish Live",
-  "updatedAt": "2026-09-24T00:47:24.635138+00:00",
+  "updatedAt": "2026-09-24T00:53:03.523916+00:00",
   "ids": [
     "takaratomy-mp-57-skyfire",
     "takaratomy-t-spark-synergex-series-transformers-zoids",
@@ -4378,6 +4378,12 @@
       "owner": "tfmp-mp57"
     },
     {
+      "id": "takaratomy-mpm-03-bumblebee-premium-paint-version",
+      "code": "MPM-03",
+      "reason": "alias-collision",
+      "owner": "unbranded-ww-01b"
+    },
+    {
       "id": "takaratomy-mp-60-ginrai-optimus-prime-w-o-trailer",
       "code": "MP-60",
       "reason": "alias-collision",
@@ -4414,10 +4420,28 @@
       "owner": "tfmp-mp55"
     },
     {
+      "id": "takaratomy-mpm-11-ratchet",
+      "code": "MPM-11",
+      "reason": "alias-collision",
+      "owner": "unbranded-jh-01l"
+    },
+    {
+      "id": "takaratomy-mpm-06-ironhide-movie-series",
+      "code": "MPM-06",
+      "reason": "alias-collision",
+      "owner": "unbranded-mpm-06"
+    },
+    {
       "id": "takaratomy-mp-45-mp45-bumblebee-g1-version-2-0-ver-2",
       "code": "MP-45",
       "reason": "alias-collision",
       "owner": "tfmp-mp45"
+    },
+    {
+      "id": "takaratomy-mp10g-mp-10g-masterpiece-optimus-prime-gold-lago",
+      "code": "MP10G",
+      "reason": "alias-collision",
+      "owner": "unbranded-mp-10g"
     },
     {
       "id": "takaratomy-mp-42-masterpiece-cordon-diaclone-sunstreaker",
@@ -4426,10 +4450,22 @@
       "owner": "tfmp-mp42"
     },
     {
+      "id": "takaratomy-ss14-studio-series-ss-14-voyager-class-ironhide",
+      "code": "SS14",
+      "reason": "alias-collision",
+      "owner": "unbranded-tw-1026"
+    },
+    {
+      "id": "takaratomy-tc-01-turbo-changer-tc01-big-optimus-prime",
+      "code": "TC-01",
+      "reason": "alias-collision",
+      "owner": "unbranded-tc-01"
+    },
+    {
       "id": "takaratomy-mpm-03-bumblebee",
       "code": "MPM-03",
       "reason": "alias-collision",
-      "owner": "takaratomy-mpm-03-bumblebee-premium-paint-version"
+      "owner": "unbranded-ww-01b"
     },
     {
       "id": "threezero-3z0559-transformers-bumblebee-premium-ultra-magnu",
@@ -4814,48 +4850,12 @@
       "code": "EX-02",
       "reason": "alias-collision",
       "owner": "zeta-ex-02-mp36-megatron"
-    },
-    {
-      "id": "bigfirebird-ex01-bird-binary-shadow-force-ex-set-etzel-ex02",
-      "code": "EX01",
-      "reason": "alias-collision",
-      "owner": "zeta-ex-01-mp10-optimus-prime"
-    },
-    {
-      "id": "bigfirebird-ex01-bird-binary-shadow-force-ex-set-etzel-ex02",
-      "code": "EX02",
-      "reason": "alias-collision",
-      "owner": "zeta-ex-02-mp36-megatron"
-    },
-    {
-      "id": "bigfirebird-ex-03-nacha",
-      "code": "EX-03",
-      "reason": "alias-collision",
-      "owner": "zeta-ex-03-jazzy-jazz-white-version"
-    },
-    {
-      "id": "luckycat-mc05-dragon-king",
-      "code": "MC05",
-      "reason": "alias-collision",
-      "owner": "drwu-mc-05-disc-jockey-frenzy"
-    },
-    {
-      "id": "luckycat-mc-04-micro-cosmos-x-majin",
-      "code": "MC-04",
-      "reason": "alias-collision",
-      "owner": "drwu-mc04-mechanic-studio-einstein-brains"
-    },
-    {
-      "id": "luckycat-mc-02-micro-cosmos-riki-oh-devastator-set-a",
-      "code": "MC-02",
-      "reason": "alias-collision",
-      "owner": "drwu-mc02-mechanic-studio-microscope-scalpel"
     }
   ],
   "companyRegistration": {
-    "types": 122,
-    "cards": 122,
-    "tf3p": 123
+    "types": 0,
+    "cards": 0,
+    "tf3p": 0
   },
   "companiesCreated": [
     "galaxytoys",
