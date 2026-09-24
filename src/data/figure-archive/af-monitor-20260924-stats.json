@@ -1,0 +1,99 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-09-24",
+  "updatedAt": "2026-09-24T14:48:25Z",
+  "added": 80,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Page2 differed; merged unique products.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 508,
+    "ee_candidates": 119,
+    "bbts_candidates": 166,
+    "added": 80,
+    "skipped_dupes": 205,
+    "rejected_non_af": 174,
+    "unmapped_company": 49,
+    "postfilter_rejected": 0
+  },
+  "oneshotBefore": 29194,
+  "oneshotAfter": 29274,
+  "ee_added": 8,
+  "bbts_added": 72,
+  "samples": [
+    {
+      "sku": "MF11298",
+      "name": "Warhammer 40,000 Wave 13 Total War 3rd Company Lieutenant Ultramarines 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-warhammer-40-000-wave-13-total-war-3rd-company-lieutenant-ultramarines-7-i-mf11298",
+      "source": "ee"
+    },
+    {
+      "sku": "MF11296",
+      "name": "Warhammer 40,000 Wave 13 Primaris Crusader Black Templars 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-warhammer-40-000-wave-13-primaris-crusader-black-templars-7-inch-scale-act-mf11296",
+      "source": "ee"
+    },
+    {
+      "sku": "MF11297",
+      "name": "Warhammer 40,000 Wave 13 Infernus Marine Blood Angels 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-warhammer-40-000-wave-13-infernus-marine-blood-angels-7-inch-scale-action-mf11297",
+      "source": "ee"
+    },
+    {
+      "sku": "MF11295A",
+      "name": "Warhammer 40,000 Wave 13 7-Inch Scale Action Figure Case of 8",
+      "id": "afmon-mcfarlane-warhammer-40-000-wave-13-7-inch-scale-action-figure-case-of-8-mf11295a",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAN62828A",
+      "name": "Birds Series 4 Tenori Friends Mini-Figure Case of 12 - Reissue",
+      "id": "afmon-bandai-birds-series-4-tenori-friends-mini-figure-case-of-12-reissue-blfban62828a",
+      "source": "ee"
+    },
+    {
+      "sku": "HSE9637",
+      "name": "Spider-Man Marvel Legends Series 6-Inch Mysterio Action Figure",
+      "id": "afmon-hasbro-spider-man-marvel-legends-series-6-inch-mysterio-action-figure-hse9637",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS73611",
+      "name": "Naruto Hashirama Senju Reanimation S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-naruto-hashirama-senju-reanimation-s-h-figuarts-action-figure-blfbas73611",
+      "source": "ee"
+    },
+    {
+      "sku": "MZ75506",
+      "name": "Teenage Mutant Ninja Turtles Deluxe One:12 Collective Boxed Set",
+      "id": "afmon-mezco-teenage-mutant-ninja-turtles-deluxe-one-12-collective-boxed-set-mz75506",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-198478",
+      "name": "Fantastic Four #18 Marvel Legends Super-Skrull Action Figure",
+      "id": "afmon-hasbro-fantastic-four-18-marvel-legends-super-skrull-action-figure-bbts-198478",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-198462",
+      "name": "Acid Rain World: Project Blackbox PBB-AR013 Glory to Duty 1/18 Scale Action Figure",
+      "id": "afmon-acidrain-acid-rain-world-project-blackbox-pbb-ar013-glory-to-duty-1-18-scale-act-bbts-198462",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-198459",
+      "name": "Acid Rain World: Project Blackbox PBB-AR012 Zamaii Infantry 1/18 Scale Action Figure",
+      "id": "afmon-acidrain-acid-rain-world-project-blackbox-pbb-ar012-zamaii-infantry-1-18-scale-a-bbts-198459",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-109019",
+      "name": "Marvel MAFEX No.185 Spider-Man (Classic Costume Ver.) Action Figure",
+      "id": "afmon-mafex-marvel-mafex-no-185-spider-man-classic-costume-ver-action-figure-bbts-109019",
+      "source": "bbts"
+    }
+  ]
+}
