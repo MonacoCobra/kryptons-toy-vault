@@ -127,6 +127,7 @@ def has_cover(cid: str, upc_map: dict, cover_urls: dict, meta_row: dict) -> bool
 
 
 def candidates(meta: dict, upc_map: dict, cover_urls: dict, min_year: int) -> list[str]:
+    """Prefer key (non-named-variant) comics, then newest year, then publisher rank."""
     rows = []
     for cid, m in meta.items():
         if has_cover(cid, upc_map, cover_urls, m):
@@ -134,8 +135,10 @@ def candidates(meta: dict, upc_map: dict, cover_urls: dict, min_year: int) -> li
         y = row_year(m)
         if y and y < min_year:
             continue
-        rows.append((cid, y, pub_rank(m.get("publisher") or "")))
-    rows.sort(key=lambda t: (-t[1], t[2], t[0]))
+        named = 1 if is_named_variant(m.get("variant")) else 0
+        rows.append((cid, y, named, pub_rank(m.get("publisher") or "")))
+    # Key comics first (named=0), then newest, then publisher priority.
+    rows.sort(key=lambda t: (t[2], -t[1], t[3], t[0]))
     return [t[0] for t in rows]
 
 
