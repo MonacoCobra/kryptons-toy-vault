@@ -244,6 +244,19 @@ describe("transformers parties", () => {
     assert.equal(FIGURES.find((f) => f.id === "blackmamba-t-11")?.company, "blackmamba");
     assert.equal(FIGURES.find((f) => f.id === "blackmamba-jh01")?.company, "blackmamba");
   });
+
+  it("keeps Show.Z third-party makers on the Transformers 3P rail", () => {
+    for (const id of ["galaxytoys", "badcube", "01studio", "metagate", "dreamstartoys"]) {
+      assert.equal(COMPANIES.some((c) => c.id === id), true);
+      const sample = row({ name: "Optimus Prime", line: "Show.Z", company: id, tags: ["transformers", "3p"] });
+      assert.equal(matchTransformersParty(sample), "3p");
+      assert.equal(matchFigureProperty(sample), "transformers");
+    }
+    assert.equal(
+      matchTransformersParty(row({ name: "Skybreaker", line: "Brave General", company: "djs", tags: ["transformers"] })),
+      "3p",
+    );
+  });
 });
 
 describe("other franchises", () => {
