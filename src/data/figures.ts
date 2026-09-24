@@ -1,4 +1,4 @@
-/** live-rebuild: showzstore-3p-official 2026-09-24 */
+/** live-rebuild: blokees-fantastics-daalamode-astral 2026-09-24 */
 import { stampFigureFranchise } from "@/lib/figure-property";
 import type { CatalogFigure, CompanyId, FigureSetRole, ItemKind } from "@/lib/types";
 import archiveRows from "./figure-archive/oneshot.json";
