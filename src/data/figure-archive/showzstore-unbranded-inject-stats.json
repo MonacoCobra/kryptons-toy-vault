@@ -1,0 +1,1121 @@
+{
+  "source": "inject-showzstore-unbranded",
+  "retailer": "https://showzstore.com/c/no-brand-ko_0397",
+  "pulled": "2026-09-23",
+  "pages": "1-5 from Shelby HTML dump",
+  "packInclude": 203,
+  "added": 173,
+  "skipped": [
+    {
+      "showzId": "7661",
+      "reason": "trailer-only",
+      "title": "Trailer for MP-10B Black Convoy"
+    },
+    {
+      "showzId": "7011",
+      "reason": "named-maker",
+      "title": "Vincoroor V33-06B Fire of The Sky WFC-S28 Jetfire Black Version"
+    },
+    {
+      "showzId": "6656",
+      "reason": "vault-listing-dupe",
+      "title": "The Last Knight DLX Optimus Prime",
+      "owner": "unbranded-tlk-dlx-op"
+    },
+    {
+      "showzId": "6461",
+      "reason": "vault-listing-dupe",
+      "title": "The Last Knight DLX Optimus Prime",
+      "owner": "unbranded-tlk-dlx-op"
+    },
+    {
+      "showzId": "5025",
+      "reason": "named-maker-code",
+      "title": "BS-03S Knight Optimus Prime Black Version",
+      "owner": "blackmamba-bs-03s",
+      "code": "BS-03S",
+      "company": "blackmamba"
+    },
+    {
+      "showzId": "4972",
+      "reason": "vault-listing-dupe",
+      "title": "G1 Menasor Combiner Set of 5",
+      "owner": "unbranded-menasor-set"
+    },
+    {
+      "showzId": "4925",
+      "reason": "vault-listing-dupe",
+      "title": "G1 Defensor",
+      "owner": "unbranded-defensor-set"
+    },
+    {
+      "showzId": "4672",
+      "reason": "named-maker",
+      "title": "Vincoroor V33-06 Fire of The Sky WFC-S28 Jetfire Oversized Version"
+    },
+    {
+      "showzId": "4478",
+      "reason": "non-tf",
+      "title": "1/24 Patlabor Mobile Police AV-98 Ingram Unit 1"
+    },
+    {
+      "showzId": "4454",
+      "reason": "non-tf",
+      "title": "P+05 The King of Braves GaoGaiGar"
+    },
+    {
+      "showzId": "4356",
+      "reason": "named-maker",
+      "title": "Rose & Toys Robot Rose Nightbird"
+    },
+    {
+      "showzId": "4231",
+      "reason": "accessory",
+      "title": "TW-01 Accessory Pack for MP-52 Starscream"
+    },
+    {
+      "showzId": "4047",
+      "reason": "named-maker-code",
+      "title": "MPM-11 T-11 Ratchet Oversized Improved Painting Version w/ LED",
+      "owner": "blackmamba-t-11",
+      "code": "T-11",
+      "company": "blackmamba"
+    },
+    {
+      "showzId": "3969",
+      "reason": "named-maker-code",
+      "title": "MPM-10 T-10S Starscream Seibertron Color Oversized Version w/ LED",
+      "owner": "weijiang-4th-party-mw-model-wizard-t-10s-t10s-earthquake-star-sky-wings-not-overs",
+      "code": "T-10S",
+      "company": "weijiang"
+    },
+    {
+      "showzId": "3744",
+      "reason": "named-maker",
+      "title": "Rose & Toys RT-01 Robot Rose Arcee"
+    },
+    {
+      "showzId": "3542",
+      "reason": "named-maker-code",
+      "title": "MPM-10 T-10 Starscream Oversized Version w/ LED",
+      "owner": "blackmamba-t-10",
+      "code": "T-10",
+      "company": "blackmamba"
+    },
+    {
+      "showzId": "3203",
+      "reason": "named-maker-code",
+      "title": "BS-03 Challenger Optimus Prime",
+      "owner": "blackmamba-bs-03",
+      "code": "BS-03",
+      "company": "blackmamba"
+    },
+    {
+      "showzId": "2141",
+      "reason": "named-maker",
+      "title": "5U Model Bumblebee Deluxe Figure Transformers DLX Collectible Series"
+    },
+    {
+      "showzId": "0317",
+      "reason": "statue",
+      "title": "The Ark Base Station Statue"
+    },
+    {
+      "showzId": "8109",
+      "reason": "collapsed-duplicate",
+      "title": "RT-06SG Optimus Prime Shattered Glass Version",
+      "keptShowzId": "7838",
+      "keptTitle": "RT-06SG Optimus Prime Shattered Glass Version"
+    },
+    {
+      "showzId": "7229",
+      "reason": "collapsed-duplicate",
+      "title": "Masterpiece MP-60 Ginrai Optimus Prime w/o Trailer",
+      "keptShowzId": "7768",
+      "keptTitle": "P60 Masterpiece MP-60 Ginrai Optimus Prime w/o Trailer"
+    },
+    {
+      "showzId": "7040",
+      "reason": "collapsed-duplicate",
+      "title": "G1 Megatron",
+      "keptShowzId": "6877",
+      "keptTitle": "G1 Megatron"
+    },
+    {
+      "showzId": "7039",
+      "reason": "collapsed-duplicate",
+      "title": "G1 Optimus Prime",
+      "keptShowzId": "4932",
+      "keptTitle": "G1 Optimus Prime"
+    },
+    {
+      "showzId": "7017",
+      "reason": "collapsed-duplicate",
+      "title": "G1 Optimus Prime",
+      "keptShowzId": "4932",
+      "keptTitle": "G1 Optimus Prime"
+    },
+    {
+      "showzId": "6991",
+      "reason": "collapsed-duplicate",
+      "title": "G1 Optimus Prime",
+      "keptShowzId": "4932",
+      "keptTitle": "G1 Optimus Prime"
+    },
+    {
+      "showzId": "5905",
+      "reason": "collapsed-duplicate",
+      "title": "G1 Dinobot Grimlock",
+      "keptShowzId": "4981",
+      "keptTitle": "G1 Dinobot Grimlock"
+    },
+    {
+      "showzId": "5601",
+      "reason": "collapsed-duplicate",
+      "title": "Transformer Revenge of the Fallen DLX Optimus Prime",
+      "keptShowzId": "4753",
+      "keptTitle": "Transformer Revenge of the Fallen DLX Optimus Prime"
+    },
+    {
+      "showzId": "0127",
+      "reason": "collapsed-duplicate",
+      "title": "MP29 Masterpiece Shockwave",
+      "keptShowzId": "4966",
+      "keptTitle": "Masterpiece MP-29 Shockwave"
+    },
+    {
+      "showzId": "1037",
+      "reason": "collapsed-duplicate",
+      "title": "G1 Constructicon Devastator 6 Figures Set",
+      "keptShowzId": "4924",
+      "keptTitle": "G1 Devastator"
+    },
+    {
+      "showzId": "1803",
+      "reason": "collapsed-duplicate",
+      "title": "Masterpiece MP-45 Bumblebee 2.0 Loose Version w/o Box",
+      "keptShowzId": "2406",
+      "keptTitle": "Masterpiece MP-45 Bumblebee 2.0 w/ Box"
+    }
+  ],
+  "skipByReason": {
+    "trailer-only": 1,
+    "named-maker": 5,
+    "vault-listing-dupe": 4,
+    "named-maker-code": 5,
+    "non-tf": 2,
+    "accessory": 1,
+    "statue": 1,
+    "collapsed-duplicate": 11
+  },
+  "droppedAliases": [
+    {
+      "id": "unbranded-mp-57",
+      "code": "MP-57",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp57",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-57",
+      "code": "MP57",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp57",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-p-60",
+      "code": "MP-60",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp60",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-p-60",
+      "code": "MP60",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp60",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mpg-09",
+      "code": "MPG-09",
+      "reason": "alias-collision",
+      "owner": "tfmp-mp44s",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mpg-09",
+      "code": "MPG09",
+      "reason": "alias-collision",
+      "owner": "tfmp-mp44s",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-10b-black-convoy",
+      "code": "MP-10B",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp10b",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-10b-black-convoy",
+      "code": "MP10B",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp10b",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-rt-04",
+      "code": "MP-60",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp60",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-rt-04",
+      "code": "MP60",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp60",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-rt-05",
+      "code": "MP-53",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp53",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-rt-05",
+      "code": "MP53",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp53",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-59",
+      "code": "MP-59",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp59",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-59",
+      "code": "MP59",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp59",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-38-optimus-primal-transparent-red",
+      "code": "MP38",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp38",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-38-optimus-primal-transparent-red",
+      "code": "MP-38",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp38",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-12",
+      "code": "MP-12",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp12",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-12",
+      "code": "MP12",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp12",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-45-bumblebee",
+      "code": "MP-45",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp45",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-45-bumblebee",
+      "code": "MP45",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp45",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-21",
+      "code": "MP-21",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp21",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-21",
+      "code": "MP21",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp21",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-17",
+      "code": "MP-17",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp17",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-17",
+      "code": "MP17",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp17",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-29",
+      "code": "MP-29",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp29",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-29",
+      "code": "MP29",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp29",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-18",
+      "code": "MP-18",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp18",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-18",
+      "code": "MP18",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp18",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-tw-1024",
+      "code": "SS-61",
+      "reason": "alias-collision",
+      "owner": "unbranded-ss-61",
+      "ownerCompany": "unbranded"
+    },
+    {
+      "id": "unbranded-tw-1024",
+      "code": "SS61",
+      "reason": "alias-collision",
+      "owner": "unbranded-ss-61",
+      "ownerCompany": "unbranded"
+    },
+    {
+      "id": "unbranded-ac-01-tfp-bulkhead",
+      "code": "AC-01",
+      "reason": "alias-collision",
+      "owner": "unbranded-ac-01-bumblebee",
+      "ownerCompany": "unbranded"
+    },
+    {
+      "id": "unbranded-ac-01-tfp-bulkhead",
+      "code": "AC01",
+      "reason": "alias-collision",
+      "owner": "unbranded-ac-01-bumblebee",
+      "ownerCompany": "unbranded"
+    },
+    {
+      "id": "unbranded-ww-01",
+      "code": "MPM03",
+      "reason": "alias-collision",
+      "owner": "unbranded-ww-01b",
+      "ownerCompany": "unbranded"
+    },
+    {
+      "id": "unbranded-ww-01",
+      "code": "MPM-03",
+      "reason": "alias-collision",
+      "owner": "unbranded-ww-01b",
+      "ownerCompany": "unbranded"
+    },
+    {
+      "id": "unbranded-bw-11b",
+      "code": "MP-34S",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp34s",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-bw-11b",
+      "code": "MP34S",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp34s",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-bw-11",
+      "code": "MP-34",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp34",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-bw-11",
+      "code": "MP34",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp34",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-52-sw-skywarp-crown",
+      "code": "MP-52",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp52",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-52-sw-skywarp-crown",
+      "code": "MP52",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp52",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-52-starscream-2-0-ghost",
+      "code": "MP-52",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp52",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-52-starscream-2-0-ghost",
+      "code": "MP52",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp52",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-38-optimus-primal-supreme",
+      "code": "MP-38",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp38",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-38-optimus-primal-supreme",
+      "code": "MP38",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp38",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-52-thundercracker-2-0",
+      "code": "MP-52",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp52",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-52-thundercracker-2-0",
+      "code": "MP52",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp52",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-52-starscream-2-0",
+      "code": "MP-52",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp52",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-52-starscream-2-0",
+      "code": "MP52",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp52",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-49",
+      "code": "MP-49",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp49",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-49",
+      "code": "MP49",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp49",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mpm-11",
+      "code": "MPM-11",
+      "reason": "alias-collision",
+      "owner": "unbranded-jh-01l",
+      "ownerCompany": "unbranded"
+    },
+    {
+      "id": "unbranded-mpm-11",
+      "code": "MPM11",
+      "reason": "alias-collision",
+      "owner": "unbranded-jh-01l",
+      "ownerCompany": "unbranded"
+    },
+    {
+      "id": "unbranded-mp-32",
+      "code": "MP-32",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp32",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-32",
+      "code": "MP32",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp32",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-bw-10",
+      "code": "MP-50",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp50",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-bw-10",
+      "code": "MP50",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp50",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-47-hound-straight",
+      "code": "MP-47",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp47",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-47-hound-straight",
+      "code": "MP47",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp47",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-45-bumblebee-2-0",
+      "code": "MP-45",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp45",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-45-bumblebee-2-0",
+      "code": "MP45",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp45",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-47-hound",
+      "code": "MP-47",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp47",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-47-hound",
+      "code": "MP47",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp47",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-34s",
+      "code": "MP-34S",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp34s",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-34s",
+      "code": "MP34S",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp34s",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-46",
+      "code": "MP-46",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp46",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-46",
+      "code": "MP46",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp46",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-21g",
+      "code": "MP-21G",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp21g",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-21g",
+      "code": "MP21G",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp21g",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mpm-08-megatron",
+      "code": "MPM-08",
+      "reason": "alias-collision",
+      "owner": "unbranded-mpm-08-megatron-battle-damaged",
+      "ownerCompany": "unbranded"
+    },
+    {
+      "id": "unbranded-mpm-08-megatron",
+      "code": "MPM08",
+      "reason": "alias-collision",
+      "owner": "unbranded-mpm-08-megatron-battle-damaged",
+      "ownerCompany": "unbranded"
+    },
+    {
+      "id": "unbranded-mp-41",
+      "code": "MP-41",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp41",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-41",
+      "code": "MP41",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp41",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-39",
+      "code": "MP39",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp39",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-39",
+      "code": "MP-39",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp39",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-24",
+      "code": "MP-24",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp24",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-24",
+      "code": "MP24",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp24",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-08x",
+      "code": "MP08X",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp08x",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-08x",
+      "code": "MP-08X",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp08x",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-40",
+      "code": "MP40",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp40",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-40",
+      "code": "MP-40",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp40",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-19",
+      "code": "MP19",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp19",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-19",
+      "code": "MP-19",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp19",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-25",
+      "code": "MP-25",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp25",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-25",
+      "code": "MP25",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp25",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-26",
+      "code": "MP-26",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp26",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-26",
+      "code": "MP26",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp26",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-35",
+      "code": "MP-35",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp35",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-35",
+      "code": "MP35",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp35",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-22",
+      "code": "MP-22",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp22",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-22",
+      "code": "MP22",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp22",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-20",
+      "code": "MP-20",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp20",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-20",
+      "code": "MP20",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp20",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-27",
+      "code": "MP-27",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp27",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-27",
+      "code": "MP27",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp27",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-13",
+      "code": "MP-13",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp13",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-13",
+      "code": "MP13",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp13",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-10b-optimus-prime-black",
+      "code": "MP-10B",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp10b",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-10b-optimus-prime-black",
+      "code": "MP10B",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp10b",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mpm-03",
+      "code": "MPM-03",
+      "reason": "alias-collision",
+      "owner": "unbranded-ww-01b",
+      "ownerCompany": "unbranded"
+    },
+    {
+      "id": "unbranded-mpm-03",
+      "code": "MPM03",
+      "reason": "alias-collision",
+      "owner": "unbranded-ww-01b",
+      "ownerCompany": "unbranded"
+    },
+    {
+      "id": "unbranded-mp-33",
+      "code": "MP-33",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp33",
+      "ownerCompany": "hasbro"
+    },
+    {
+      "id": "unbranded-mp-33",
+      "code": "MP33",
+      "reason": "official-mold-code",
+      "owner": "tfmp-mp33",
+      "ownerCompany": "hasbro"
+    }
+  ],
+  "aliasRowsTouched": 447,
+  "gtin": "none — pack has no barcodes; listing codes and showzstore product ids are aliases only",
+  "price": "pack price_usd was null on every include row; msrp stored as 0 rather than invented",
+  "sampleIds": [
+    "unbranded-rt-07ex",
+    "unbranded-jcs-001b",
+    "unbranded-jcs-001",
+    "unbranded-dh-05",
+    "unbranded-zt-03",
+    "unbranded-rt-06",
+    "unbranded-at-01s",
+    "unbranded-rt-06b",
+    "unbranded-hp-02",
+    "unbranded-rt-06ex",
+    "unbranded-bs-02",
+    "unbranded-mp-57"
+  ],
+  "updatedAt": "2026-09-24T00:23:41.934946+00:00",
+  "ids": [
+    "unbranded-rt-07ex",
+    "unbranded-jcs-001b",
+    "unbranded-jcs-001",
+    "unbranded-dh-05",
+    "unbranded-zt-03",
+    "unbranded-rt-06",
+    "unbranded-at-01s",
+    "unbranded-rt-06b",
+    "unbranded-hp-02",
+    "unbranded-rt-06ex",
+    "unbranded-bs-02",
+    "unbranded-mp-57",
+    "unbranded-gp-15",
+    "unbranded-fl-01",
+    "unbranded-rt-06sg",
+    "unbranded-tv-03",
+    "unbranded-rt-17",
+    "unbranded-hp-01",
+    "unbranded-rt-06f",
+    "unbranded-tv-02",
+    "unbranded-ac-01-bumblebee",
+    "unbranded-pop-01b",
+    "unbranded-rt-06m",
+    "unbranded-rt-06w",
+    "unbranded-p-60",
+    "unbranded-mpg-09",
+    "unbranded-mpm-08-megatron-battle-damaged",
+    "unbranded-mp-10b-black-convoy",
+    "unbranded-tv-01",
+    "unbranded-jd-01s",
+    "unbranded-mg-09",
+    "unbranded-tc-01",
+    "unbranded-rt-04",
+    "unbranded-md-005w",
+    "unbranded-md-005b",
+    "unbranded-md-005a",
+    "unbranded-rt-05",
+    "unbranded-g1-megatron",
+    "unbranded-g1-optimus-prime",
+    "unbranded-jd-01",
+    "unbranded-g1-optimus-prime-golden",
+    "unbranded-g1-optimus-prime-black",
+    "unbranded-rt-03",
+    "unbranded-md-001b",
+    "unbranded-ec-01",
+    "unbranded-mp-59",
+    "unbranded-revenge-fallen-optimus-prime",
+    "unbranded-g1-metroplex-decepticon",
+    "unbranded-g1-dinobot-grimlock",
+    "unbranded-g1-thundercracker",
+    "unbranded-g1-decepticon-jets-ramjet",
+    "unbranded-g1-skywarp",
+    "unbranded-g1-starscream",
+    "unbranded-g1-decepticon-jets-thrust",
+    "unbranded-g1-decepticon-jets-dirge",
+    "unbranded-mp-38-optimus-primal-transparent-red",
+    "unbranded-revenge-fallen-dlx-optimus-prime",
+    "unbranded-g1-mini-vehicles-beachcomber",
+    "unbranded-g1-headmasters-skullcruncher",
+    "unbranded-mp-12",
+    "unbranded-g1-technobots-computron",
+    "unbranded-g1-mini-vehicles-brawn",
+    "unbranded-g1-windcharger",
+    "unbranded-g1-gears",
+    "unbranded-g1-mini-vehicles-powerglide",
+    "unbranded-g1-mini-vehicles-seaspray",
+    "unbranded-mp-45-bumblebee",
+    "unbranded-g1-decepticon-jets-scourge",
+    "unbranded-g1-reflector",
+    "unbranded-g1-triple-changers-octane",
+    "unbranded-g1-cyclonus",
+    "unbranded-g1-mindwipe",
+    "unbranded-g1-bumblebee",
+    "unbranded-g1-springer",
+    "unbranded-ac-03c",
+    "unbranded-g1-mini-cassettes-rewind-steeljaw",
+    "unbranded-g1-mini-cassettes-eject-ramhorn",
+    "unbranded-g1-grandslam-raindance-2",
+    "unbranded-mpm-06",
+    "unbranded-g1-headmasters-weirdwolf",
+    "unbranded-g1-inferno",
+    "unbranded-g1-thunderbolt-blitzwing",
+    "unbranded-ac-03b",
+    "unbranded-mp-21",
+    "unbranded-cr-01s",
+    "unbranded-mp-17",
+    "unbranded-tw-1026",
+    "unbranded-g1-wheeljack",
+    "unbranded-g1-mirage",
+    "unbranded-g1-hound",
+    "unbranded-g1-bruticus-5",
+    "unbranded-g1-mini-cassettes-laserbeak-frenzy",
+    "unbranded-g1-mini-cassettes-ravage-rumble",
+    "unbranded-g1-shockwave",
+    "unbranded-g1-communicator-soundwawe-cassette",
+    "unbranded-g1-dinobot-slag",
+    "unbranded-g1-dinobot-sludge",
+    "unbranded-g1-metroplex",
+    "unbranded-g1-dinobot-snarl",
+    "unbranded-g1-dinobot-swoop",
+    "unbranded-g1-superion-5",
+    "unbranded-mp-29",
+    "unbranded-g1-astrotrain",
+    "unbranded-g1-devastator",
+    "unbranded-ac-03",
+    "unbranded-ac-02",
+    "unbranded-ss-61",
+    "unbranded-rw-01",
+    "unbranded-ww-01b",
+    "unbranded-sm-01",
+    "unbranded-mp-18",
+    "unbranded-ac-01r",
+    "unbranded-tw-1024",
+    "unbranded-tnt-01",
+    "unbranded-ac-01-tfp-bulkhead",
+    "unbranded-ww-01",
+    "unbranded-tb-01",
+    "unbranded-bw-11b",
+    "unbranded-bw-11",
+    "unbranded-t-08",
+    "unbranded-cr-03",
+    "unbranded-mp-52-sw-skywarp-crown",
+    "unbranded-jb-01",
+    "unbranded-mp-52-starscream-2-0-ghost",
+    "unbranded-mp-38-optimus-primal-supreme",
+    "unbranded-mp-52-thundercracker-2-0",
+    "unbranded-mp-52-starscream-2-0",
+    "unbranded-bs-02s",
+    "unbranded-mp-44w",
+    "unbranded-mp-44sg",
+    "unbranded-mp-49",
+    "unbranded-jh-01l",
+    "unbranded-dx-06",
+    "unbranded-mpm-11",
+    "unbranded-mp-32",
+    "unbranded-bw-10",
+    "unbranded-mp-47-hound-straight",
+    "unbranded-mpm-10",
+    "unbranded-sft-01",
+    "unbranded-mp-45-bumblebee-2-0",
+    "unbranded-mp-47-hound",
+    "unbranded-mp-34s",
+    "unbranded-mp-46",
+    "unbranded-mp-21g",
+    "unbranded-mpm-08-megatron",
+    "unbranded-mp-10s",
+    "unbranded-mp-41",
+    "unbranded-mp-39",
+    "unbranded-mp-10x",
+    "unbranded-mp-08s",
+    "unbranded-mp-08g",
+    "unbranded-mp-36cs",
+    "unbranded-mp-24",
+    "unbranded-mp-10g",
+    "unbranded-mp-08x",
+    "unbranded-mp-40",
+    "unbranded-mp-19",
+    "unbranded-mp-25",
+    "unbranded-mp-26",
+    "unbranded-mp-35",
+    "unbranded-mp-10cs",
+    "unbranded-mp-22",
+    "unbranded-mp-10r",
+    "unbranded-mp-20",
+    "unbranded-mp-10a",
+    "unbranded-mp-27",
+    "unbranded-mp-13",
+    "unbranded-mp-10b-optimus-prime-black",
+    "unbranded-mp-10k",
+    "unbranded-mpm-03",
+    "unbranded-mp-33",
+    "unbranded-family-mart-exclusive-buster-opitmus-prime-clear",
+    "unbranded-mp-10u"
+  ],
+  "live": "held — do not Build/Publish Live"
+}
