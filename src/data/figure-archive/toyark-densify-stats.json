@@ -1,12 +1,12 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-09-24T05:30:59Z",
+  "finishedAt": "2026-09-24T18:02:50Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 13,
+  "acceptedCandidates": 9,
   "applied": 0,
-  "skippedApply": 13,
-  "rejectedRows": 16,
+  "skippedApply": 9,
+  "rejectedRows": 17,
   "withImage": 0,
   "aliasAdded": 0,
   "byCompany": {
@@ -15,7 +15,7 @@
       "rejected": 0
     },
     "mcfarlane": {
-      "accepted": 7,
+      "accepted": 3,
       "rejected": 2
     },
     "neca": {
@@ -60,10 +60,10 @@
     }
   },
   "byRejectReason": {
-    "already-in-oneshot": 5,
     "sponsor-newsletter": 3,
-    "company-not-allowlisted": 5,
-    "company-unknown": 1,
+    "company-unknown": 3,
+    "company-not-allowlisted": 4,
+    "already-in-oneshot": 5,
     "no-explicit-figure": 1,
     "vehicles-props-only": 1
   },
@@ -150,45 +150,9 @@
         "ta-60f6ff8e81d9"
       ],
       "toyarkPostId": 599126
-    },
-    {
-      "name": "Mera",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-9207edd921d9"
-      ],
-      "toyarkPostId": 599091
-    },
-    {
-      "name": "Black Manta",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-389a6b262523"
-      ],
-      "toyarkPostId": 599091
-    },
-    {
-      "name": "Wonder Girl",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-2fb4b79be9ea"
-      ],
-      "toyarkPostId": 599091
-    },
-    {
-      "name": "Raven",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-65b321bacd17"
-      ],
-      "toyarkPostId": 599091
     }
   ],
-  "archiveSize": 29194,
+  "archiveSize": 29285,
   "fetchBlocker": null,
   "wroteOneshot": false,
   "comics": "untouched"

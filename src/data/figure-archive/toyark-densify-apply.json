@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T05:30:59Z",
+  "generatedAt": "2026-09-24T18:02:49Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-09-17T05:30:57.279349+00:00",
+    "after": "2026-09-17T18:02:48.239129+00:00",
     "before": null
   },
   "fetch": {
@@ -52,20 +52,20 @@
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 8980,
+    "indexedRows": 9012,
     "mode": "apply"
   },
   "summary": {
     "fetchedPosts": 20,
-    "acceptedCandidates": 13,
-    "rejectedRows": 16,
+    "acceptedCandidates": 9,
+    "rejectedRows": 17,
     "byCompany": {
       "hasbro": {
         "accepted": 0,
         "rejected": 0
       },
       "mcfarlane": {
-        "accepted": 7,
+        "accepted": 3,
         "rejected": 2
       },
       "neca": {
@@ -110,15 +110,15 @@
       }
     },
     "byRejectReason": {
-      "already-in-oneshot": 5,
       "sponsor-newsletter": 3,
-      "company-not-allowlisted": 5,
-      "company-unknown": 1,
+      "company-unknown": 3,
+      "company-not-allowlisted": 4,
+      "already-in-oneshot": 5,
       "no-explicit-figure": 1,
       "vehicles-props-only": 1
     },
     "applied": 0,
-    "skippedApply": 13
+    "skippedApply": 9
   },
   "candidates": [
     {
@@ -291,85 +291,99 @@
       "pack": null,
       "title": "McFarlane Toys DC Previews – DC Multiverse Gold Label Arkham City Batman, Batman Beyond Cowl, Page Punchers Batman, and Page Punchers Nightwing",
       "rationale": "mcfarlane via class:companies-mcfarlane; line=Page Punchers; variant=Nightwing #81; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Mera",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "DC Classic",
-      "sourceUrl": "https://www.toyark.com/2026/09/17/dc-multiverse-dc-classic-mera-black-manta-wonder-girl-and-raven-599091",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-DC-Multiverse-DC-Classic-9.17.26.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599091,
-      "postYear": 2026,
-      "pack": null,
-      "title": "DC Multiverse – DC Classic Mera, Black Manta, Wonder Girl, and Raven",
-      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Black Manta",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "DC Classic",
-      "sourceUrl": "https://www.toyark.com/2026/09/17/dc-multiverse-dc-classic-mera-black-manta-wonder-girl-and-raven-599091",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-DC-Multiverse-DC-Classic-9.17.26.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599091,
-      "postYear": 2026,
-      "pack": null,
-      "title": "DC Multiverse – DC Classic Mera, Black Manta, Wonder Girl, and Raven",
-      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Wonder Girl",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "DC Classic",
-      "sourceUrl": "https://www.toyark.com/2026/09/17/dc-multiverse-dc-classic-mera-black-manta-wonder-girl-and-raven-599091",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-DC-Multiverse-DC-Classic-9.17.26.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599091,
-      "postYear": 2026,
-      "pack": null,
-      "title": "DC Multiverse – DC Classic Mera, Black Manta, Wonder Girl, and Raven",
-      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Raven",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "DC Classic",
-      "sourceUrl": "https://www.toyark.com/2026/09/17/dc-multiverse-dc-classic-mera-black-manta-wonder-girl-and-raven-599091",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-DC-Multiverse-DC-Classic-9.17.26.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599091,
-      "postYear": 2026,
-      "pack": null,
-      "title": "DC Multiverse – DC Classic Mera, Black Manta, Wonder Girl, and Raven",
-      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "sponsor-newsletter",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/24/bbts-news-hellboy-marvel-dragon-ball-sales-dc-transformers-anime-and-more-599396",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599396,
+      "title": "BBTS News – Hellboy, Marvel & Dragon Ball sales, DC, Transformers, anime and more",
+      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/24/killer-klowns-from-outer-space-figures-by-syndicate-collectibles-599385",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599385,
+      "title": "Killer Klowns From Outer Space Figures by Syndicate Collectibles",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "kaiyodo",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/24/ninja-gaiden-2-black-revoltech-rachel-announced-599382",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599382,
+      "title": "Ninja Gaiden 2 Black – Revoltech Rachel Announced",
+      "rationale": "Recognized kaiyodo via class:companies-kaiyodo; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "other",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/24/dc-comics-inart-the-joker-figure-599354",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599354,
+      "title": "DC Comics – InArt The Joker Figure",
+      "rationale": "Recognized other via class:companies-queen-studios; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/24/mafex-batman-batgirl-and-neo-pre-orders-599312",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599312,
+      "title": "MAFEX Batman, Batgirl, and Neo Pre-Orders",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
     {
       "decision": "reject",
       "reason": "already-in-oneshot",
@@ -612,78 +626,6 @@
         "ta-f3743d99241c"
       ],
       "rationale": "Identity key already in oneshot (ta-f3743d99241c)."
-    },
-    {
-      "decision": "reject",
-      "reason": "sponsor-newsletter",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/17/bbts-news-tmnt-dc-sale-transformers-starcraft-zelda-nendoroids-and-more-599119",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599119,
-      "title": "BBTS News – TMNT, DC sale, Transformers, StarCraft, Zelda, Nendoroids and More",
-      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "kaiyodo",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/17/dc-comics-amazing-yamaguchi-revoltech-peacemaker-preview-599116",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599116,
-      "title": "DC Comics – Amazing Yamaguchi Revoltech Peacemaker Preview",
-      "rationale": "Recognized kaiyodo via class:companies-kaiyodo; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "kaiyodo",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/17/ninja-gaiden-new-revoltech-previews-599109",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599109,
-      "title": "Ninja Gaiden – New Revoltech Previews",
-      "rationale": "Recognized kaiyodo via class:companies-kaiyodo; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "shfiguarts",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/17/ultraman-s-h-figuarts-jirahs-599099",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599099,
-      "title": "Ultraman – S.H. Figuarts Jirahs",
-      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     }
   ],
   "applied": [],
@@ -768,48 +710,12 @@
         "ta-60f6ff8e81d9"
       ],
       "toyarkPostId": 599126
-    },
-    {
-      "name": "Mera",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-9207edd921d9"
-      ],
-      "toyarkPostId": 599091
-    },
-    {
-      "name": "Black Manta",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-389a6b262523"
-      ],
-      "toyarkPostId": 599091
-    },
-    {
-      "name": "Wonder Girl",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-2fb4b79be9ea"
-      ],
-      "toyarkPostId": 599091
-    },
-    {
-      "name": "Raven",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-65b321bacd17"
-      ],
-      "toyarkPostId": 599091
     }
   ],
   "applyStats": {
-    "accepted": 13,
+    "accepted": 9,
     "applied": 0,
-    "skippedApply": 13,
+    "skippedApply": 9,
     "aliasAdded": 0,
     "withImage": 0,
     "cap": 50,
