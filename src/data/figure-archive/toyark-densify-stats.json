@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-09-23T18:21:58Z",
+  "finishedAt": "2026-09-24T05:30:59Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 16,
-  "applied": 3,
+  "acceptedCandidates": 13,
+  "applied": 0,
   "skippedApply": 13,
-  "rejectedRows": 13,
-  "withImage": 3,
-  "aliasAdded": 11,
+  "rejectedRows": 16,
+  "withImage": 0,
+  "aliasAdded": 0,
   "byCompany": {
     "hasbro": {
       "accepted": 0,
@@ -19,8 +19,8 @@
       "rejected": 2
     },
     "neca": {
-      "accepted": 1,
-      "rejected": 1
+      "accepted": 0,
+      "rejected": 2
     },
     "jazwares": {
       "accepted": 0,
@@ -31,8 +31,8 @@
       "rejected": 0
     },
     "hottoys": {
-      "accepted": 2,
-      "rejected": 1
+      "accepted": 0,
+      "rejected": 3
     },
     "mondo": {
       "accepted": 1,
@@ -60,66 +60,15 @@
     }
   },
   "byRejectReason": {
+    "already-in-oneshot": 5,
     "sponsor-newsletter": 3,
     "company-not-allowlisted": 5,
     "company-unknown": 1,
     "no-explicit-figure": 1,
-    "already-in-oneshot": 2,
     "vehicles-props-only": 1
   },
-  "appliedIds": [
-    "ta-444d407ddf53",
-    "ta-d8730bd350b5",
-    "ta-3a7f2e730bb9"
-  ],
-  "appliedSample": [
-    {
-      "id": "ta-444d407ddf53",
-      "name": "Black Widow",
-      "company": "hottoys",
-      "line": "Hot Toys MMS",
-      "year": 2027,
-      "variant": "Avengers: Age of Ultron – Artisan Edition",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Avengers-AoU-Black-Widow-Artisan-001.jpg",
-      "aliases": [
-        "MMS925AE"
-      ],
-      "sourceUrl": "https://www.toyark.com/2026/09/23/avengers-age-of-ultron-hot-toys-black-widow-artisan-edition-599293",
-      "toyarkPostId": 599293
-    },
-    {
-      "id": "ta-d8730bd350b5",
-      "name": "Tomorrow",
-      "company": "hottoys",
-      "line": "Hot Toys",
-      "year": 2027,
-      "variant": "Death Stranding 2: On the Beach",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Death-Stranding-2-Tomorrow-002.jpg",
-      "aliases": [
-        "VGM93AE"
-      ],
-      "sourceUrl": "https://www.toyark.com/2026/09/23/death-stranding-2-on-the-beach-hot-toys-tomorrow-figure-599274",
-      "toyarkPostId": 599274
-    },
-    {
-      "id": "ta-3a7f2e730bb9",
-      "name": "Big Bird",
-      "company": "neca",
-      "line": "NECA Ultimate",
-      "year": 2026,
-      "variant": "Sesame Street – NYCC 2026 Exclusive Blue",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Blue-Big-Bird-Preview.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/23/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270",
-      "toyarkPostId": 599270
-    }
-  ],
+  "appliedIds": [],
+  "appliedSample": [],
   "skippedSample": [
     {
       "name": "Jean Grey",
@@ -239,8 +188,8 @@
       "toyarkPostId": 599091
     }
   ],
-  "archiveSize": 26834,
+  "archiveSize": 29194,
   "fetchBlocker": null,
-  "wroteOneshot": true,
+  "wroteOneshot": false,
   "comics": "untouched"
 }
