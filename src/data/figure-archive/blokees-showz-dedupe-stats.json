@@ -1,0 +1,814 @@
+{
+  "dryRun": false,
+  "showzBlokeesSeen": 59,
+  "merged": 51,
+  "kept": [
+    {
+      "id": "blokees-one-exclusive-silver-tracker",
+      "name": "One Exclusive Silver Tracker",
+      "line": "Blokees Transformers",
+      "reason": "no high-confidence keeper"
+    },
+    {
+      "id": "blokees-optimus-prime-exclusive-pink-version",
+      "name": "Optimus Prime Exclusive Pink Version",
+      "line": "Blokees Transformers",
+      "reason": "no high-confidence keeper"
+    },
+    {
+      "id": "blokees-yearly-version-set-of-6-model-kit",
+      "name": "The Golden Lagoon · Defence",
+      "reason": "2025 Golden Lagoon · Defence case (6). Not 2024 (5) or 2026 (8). Structured as a set."
+    },
+    {
+      "id": "blokees-classic-class-optimus-prime-megatron-set-o",
+      "name": "Classic Class Optimus Prime & Megatron Set of 2",
+      "line": "Blokees Classic Class",
+      "reason": "no high-confidence keeper"
+    },
+    {
+      "id": "blokees-classic-class-optimus-prime-optimus-primal",
+      "name": "Classic Class Optimus Prime, Optimus Primal & Scourge Model Kit EX Version Set of 3",
+      "line": "Blokees Classic Class",
+      "reason": "no high-confidence keeper"
+    },
+    {
+      "id": "blokees-optimus-prime-scourge-model-kit-set-of-2",
+      "name": "Optimus Prime & Scourge Model Kit Set of 2",
+      "line": "Blokees Transformers",
+      "reason": "no high-confidence keeper"
+    },
+    {
+      "id": "blokees-classic-class-rise-of-the-beasts-bumblebee",
+      "name": "Classic Class: Rise of the Beasts Bumblebee 02 & Scourge 03 Set of 2",
+      "line": "Blokees Classic Class",
+      "reason": "no high-confidence keeper"
+    },
+    {
+      "id": "blokees-classic-class-rise-of-the-beasts-optimus-p",
+      "name": "Classic Class: Rise of the Beasts Optimus Prime 01 & Optimus Primal Beast 04 & Optimus Primal Robot 05",
+      "line": "Blokees Classic Class",
+      "reason": "no high-confidence keeper"
+    }
+  ],
+  "yearlyMembersAdded": [
+    "blk-m-xy2025-optimus-prime-g1-toy",
+    "blk-m-xy2025-sideswipe",
+    "blk-m-xy2025-bumblebee",
+    "blk-m-xy2025-beachcomber",
+    "blk-m-xy2025-megatron",
+    "blk-m-xy2025-soundwave"
+  ],
+  "galaxyLineAligned": 22,
+  "lineCounts": {
+    "Blokees Galaxy Version": {
+      "parent": 11,
+      "member": 110,
+      "flat": 26
+    },
+    "Blokees Defender Version": {
+      "parent": 10,
+      "member": 128,
+      "flat": 4
+    },
+    "Blokees Shining Version": {
+      "parent": 5,
+      "member": 35,
+      "flat": 0
+    }
+  },
+  "shiningSets": [
+    {
+      "id": "sf-blokees-transformers-shining-version-eternal-rivalry",
+      "name": "Blokees Transformers Shining Version 05 Eternal Rivalry",
+      "members": 7,
+      "sku": "71125-2"
+    },
+    {
+      "id": "sf-blokees-transformers-shining-version-spark-of-deception",
+      "name": "Blokees Transformers Shining Version 04 Spark of Deception",
+      "members": 7,
+      "sku": "71124-2"
+    },
+    {
+      "id": "sf-blokees-transformers-shining-version-shattered-universe",
+      "name": "Blokees Transformers Shining Version 03 Shattered Universe",
+      "members": 7,
+      "sku": "71123-2"
+    },
+    {
+      "id": "sf-blokees-transformers-shining-version-shining-1985",
+      "name": "Blokees Transformers Shining Version 02 Shining 1985",
+      "members": 7,
+      "sku": "71122-2"
+    },
+    {
+      "id": "sf-blokees-transformers-shining-version-shining-roll-out",
+      "name": "Blokees Transformers Shining Version 01 Shining Roll Out",
+      "members": 7,
+      "sku": "71121-2"
+    }
+  ],
+  "galaxySets": [
+    {
+      "id": "sf-blokees-transformers-galaxy-version-the-lost-light",
+      "name": "Blokees Transformers Galaxy Version 11 The Lost Light",
+      "members": 10,
+      "sku": "71111-2"
+    },
+    {
+      "id": "sf-blokees-transformers-galaxy-version-one-shall-stand",
+      "name": "Blokees Transformers Galaxy Version 10 One Shall Stand",
+      "members": 10,
+      "sku": "71110-2"
+    },
+    {
+      "id": "sf-blokees-transformers-galaxy-version-darkest-hour",
+      "name": "Blokees Transformers Galaxy Version 09 Darkest Hour",
+      "members": 10,
+      "sku": "71109-2"
+    },
+    {
+      "id": "sf-blokees-transformers-galaxy-version-one-shall-fall",
+      "name": "Blokees Transformers Galaxy Version 08 One Shall Fall",
+      "members": 10,
+      "sku": "71108-2"
+    },
+    {
+      "id": "sf-blokees-transformers-galaxy-version-one-wave-2",
+      "name": "Blokees Transformers Galaxy Version 07 One Wave 2",
+      "members": 10,
+      "sku": "71107-2"
+    },
+    {
+      "id": "sf-blokees-transformers-galaxy-version-parallel-universe",
+      "name": "Blokees Transformers Galaxy Version 06 Parallel Universe",
+      "members": 10,
+      "sku": "71106-2"
+    },
+    {
+      "id": "sf-blokees-transformers-galaxy-version-one",
+      "name": "Blokees Transformers Galaxy Version 05 ONE",
+      "members": 10,
+      "sku": "71105-2"
+    },
+    {
+      "id": "sf-blokees-transformers-galaxy-version-fractured-space-time",
+      "name": "Blokees Transformers Galaxy Version 04 Fractured Space-Time",
+      "members": 10,
+      "sku": "71104-2"
+    },
+    {
+      "id": "sf-blokees-transformers-galaxy-version-the-autobot-run",
+      "name": "Blokees Transformers Galaxy Version 03 The Autobot Run",
+      "members": 10,
+      "sku": "71103-2"
+    },
+    {
+      "id": "sf-blokees-transformers-galaxy-version-sos",
+      "name": "Blokees Transformers Galaxy Version 02 SOS",
+      "members": 10,
+      "sku": "71102-2"
+    },
+    {
+      "id": "sf-blokees-transformers-galaxy-version-roll-out",
+      "name": "Blokees Transformers Galaxy Version 01 Roll Out",
+      "members": 10,
+      "sku": "71100-2"
+    }
+  ],
+  "samples": [
+    {
+      "dropId": "blokees-defender-version-08-battle-stars-model-kit",
+      "keepId": "sf-blokees-transformers-defender-version-battle-stars",
+      "dropName": "Defender Version 08 Battle Stars Model Kit Set of 12",
+      "keepName": "Blokees Transformers Defender Version 08 Battle Stars",
+      "keepSku": "71408-3",
+      "reason": "Blokees Defender Version case listing is wave 08 parent",
+      "showz": "8074",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-shining-version-05-eternal-rivalry-model-k",
+      "keepId": "sf-blokees-transformers-shining-version-eternal-rivalry",
+      "dropName": "Shining Version 05 Eternal Rivalry Model Kit Set of 6",
+      "keepName": "Blokees Transformers Shining Version 05 Eternal Rivalry",
+      "keepSku": "71125-2",
+      "reason": "Blokees Shining Version case listing is wave 05 parent",
+      "showz": "7923",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-galaxy-version-11-the-lost-light-model-kit",
+      "keepId": "sf-blokees-transformers-galaxy-version-the-lost-light",
+      "dropName": "Galaxy Version 11 The Lost Light Model Kit Set of 9",
+      "keepName": "Blokees Transformers Galaxy Version 11 The Lost Light",
+      "keepSku": "71111-2",
+      "reason": "Blokees Galaxy Version case listing is wave 11 parent",
+      "showz": "8057",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-defender-version-06-brutal-fang-model-kit",
+      "keepId": "sf-blokees-transformers-defender-version-brutal-fang",
+      "dropName": "Defender Version 06 Brutal Fang Model Kit Set of 12",
+      "keepName": "Blokees Transformers Defender Version 06 Brutal Fang",
+      "keepSku": "71406-3",
+      "reason": "Blokees Defender Version case listing is wave 06 parent",
+      "showz": "7534",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-galaxy-version-10-one-shall-stand-model-ki",
+      "keepId": "sf-blokees-transformers-galaxy-version-one-shall-stand",
+      "dropName": "Galaxy Version 10 One Shall Stand Model Kit Set of 9",
+      "keepName": "Blokees Transformers Galaxy Version 10 One Shall Stand",
+      "keepSku": "71110-2",
+      "reason": "Blokees Galaxy Version case listing is wave 10 parent",
+      "showz": "7711",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-defender-version-07-power-of-the-beast-mod",
+      "keepId": "sf-blokees-transformers-defender-version-power-of-the-beast",
+      "dropName": "Defender Version 07 Power of the Beast Model Kit Set of 12",
+      "keepName": "Blokees Transformers Defender Version 07 Power of the Beast",
+      "keepSku": "71407-3",
+      "reason": "Blokees Defender Version case listing is wave 07 parent",
+      "showz": "7824",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-action-edition-06-optimus-prime-transforme",
+      "keepId": "sf-blokees-transformers-action-edition-optimus-prime-transformers-prime",
+      "dropName": "Action Edition 06 Optimus Prime (Transformers: Prime)",
+      "keepName": "Transformers Action Edition 06 Optimus Prime (Transformers: Prime)",
+      "keepSku": "71175-2",
+      "reason": "Blokees Action Edition #06 character match",
+      "showz": "7890",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-champion-class-27-bumblebee-movie-bumblebe",
+      "keepId": "sf-blokees-transformers-bumblebee-champion-class-bumblebee",
+      "dropName": "Champion Class 27 Bumblebee Movie Bumblebee",
+      "keepName": "Bumblebee",
+      "keepSku": "71427-2",
+      "reason": "Blokees Champion Class #27 character match",
+      "showz": "8081",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-champion-class-26-bumblebee-movie-optimus",
+      "keepId": "sf-blokees-transformers-bumblebee-champion-class-optimus-prime",
+      "dropName": "Champion Class 26 Bumblebee Movie Optimus Prime",
+      "keepName": "Optimus Prime",
+      "keepSku": "71426-2",
+      "reason": "Blokees Champion Class #26 character match",
+      "showz": "8082",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-action-edition-07-optimus-prime-ver-evo",
+      "keepId": "sf-blokees-transformers-action-edition-optimus-prime-ver-evo",
+      "dropName": "Action Edition 07 Optimus Prime (Ver.EVO)",
+      "keepName": "Transformers Action Edition 07 Optimus Prime (Ver.EVO)",
+      "keepSku": "71195-2",
+      "reason": "Blokees Action Edition #07 character match",
+      "showz": "8127",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-shining-version-chapter-3-model-kit-set-of",
+      "keepId": "sf-blokees-transformers-shining-version-shattered-universe",
+      "dropName": "Shining Version Chapter 3 Model Kit Set of 6",
+      "keepName": "Blokees Transformers Shining Version 03 Shattered Universe",
+      "keepSku": "71123-2",
+      "reason": "shining chapter 3 is Shining Version 03",
+      "showz": "6928",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-18-transformers-one-shockwav",
+      "keepId": "sf-blokees-transformers-classic-class-transformers-one-shockwave",
+      "dropName": "Classic Class 18 Transformers One Shockwave",
+      "keepName": "Transformers Classic Class 18 Transformers One Shockwave",
+      "keepSku": "71184-2",
+      "reason": "Blokees Classic Class #18 character match",
+      "showz": "6963",
+      "imageFilled": false
+    }
+  ],
+  "mergedAll": [
+    {
+      "dropId": "blokees-defender-version-08-battle-stars-model-kit",
+      "keepId": "sf-blokees-transformers-defender-version-battle-stars",
+      "dropName": "Defender Version 08 Battle Stars Model Kit Set of 12",
+      "keepName": "Blokees Transformers Defender Version 08 Battle Stars",
+      "keepSku": "71408-3",
+      "reason": "Blokees Defender Version case listing is wave 08 parent",
+      "showz": "8074",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-shining-version-05-eternal-rivalry-model-k",
+      "keepId": "sf-blokees-transformers-shining-version-eternal-rivalry",
+      "dropName": "Shining Version 05 Eternal Rivalry Model Kit Set of 6",
+      "keepName": "Blokees Transformers Shining Version 05 Eternal Rivalry",
+      "keepSku": "71125-2",
+      "reason": "Blokees Shining Version case listing is wave 05 parent",
+      "showz": "7923",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-galaxy-version-11-the-lost-light-model-kit",
+      "keepId": "sf-blokees-transformers-galaxy-version-the-lost-light",
+      "dropName": "Galaxy Version 11 The Lost Light Model Kit Set of 9",
+      "keepName": "Blokees Transformers Galaxy Version 11 The Lost Light",
+      "keepSku": "71111-2",
+      "reason": "Blokees Galaxy Version case listing is wave 11 parent",
+      "showz": "8057",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-defender-version-06-brutal-fang-model-kit",
+      "keepId": "sf-blokees-transformers-defender-version-brutal-fang",
+      "dropName": "Defender Version 06 Brutal Fang Model Kit Set of 12",
+      "keepName": "Blokees Transformers Defender Version 06 Brutal Fang",
+      "keepSku": "71406-3",
+      "reason": "Blokees Defender Version case listing is wave 06 parent",
+      "showz": "7534",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-galaxy-version-10-one-shall-stand-model-ki",
+      "keepId": "sf-blokees-transformers-galaxy-version-one-shall-stand",
+      "dropName": "Galaxy Version 10 One Shall Stand Model Kit Set of 9",
+      "keepName": "Blokees Transformers Galaxy Version 10 One Shall Stand",
+      "keepSku": "71110-2",
+      "reason": "Blokees Galaxy Version case listing is wave 10 parent",
+      "showz": "7711",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-defender-version-07-power-of-the-beast-mod",
+      "keepId": "sf-blokees-transformers-defender-version-power-of-the-beast",
+      "dropName": "Defender Version 07 Power of the Beast Model Kit Set of 12",
+      "keepName": "Blokees Transformers Defender Version 07 Power of the Beast",
+      "keepSku": "71407-3",
+      "reason": "Blokees Defender Version case listing is wave 07 parent",
+      "showz": "7824",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-action-edition-06-optimus-prime-transforme",
+      "keepId": "sf-blokees-transformers-action-edition-optimus-prime-transformers-prime",
+      "dropName": "Action Edition 06 Optimus Prime (Transformers: Prime)",
+      "keepName": "Transformers Action Edition 06 Optimus Prime (Transformers: Prime)",
+      "keepSku": "71175-2",
+      "reason": "Blokees Action Edition #06 character match",
+      "showz": "7890",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-champion-class-27-bumblebee-movie-bumblebe",
+      "keepId": "sf-blokees-transformers-bumblebee-champion-class-bumblebee",
+      "dropName": "Champion Class 27 Bumblebee Movie Bumblebee",
+      "keepName": "Bumblebee",
+      "keepSku": "71427-2",
+      "reason": "Blokees Champion Class #27 character match",
+      "showz": "8081",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-champion-class-26-bumblebee-movie-optimus",
+      "keepId": "sf-blokees-transformers-bumblebee-champion-class-optimus-prime",
+      "dropName": "Champion Class 26 Bumblebee Movie Optimus Prime",
+      "keepName": "Optimus Prime",
+      "keepSku": "71426-2",
+      "reason": "Blokees Champion Class #26 character match",
+      "showz": "8082",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-action-edition-07-optimus-prime-ver-evo",
+      "keepId": "sf-blokees-transformers-action-edition-optimus-prime-ver-evo",
+      "dropName": "Action Edition 07 Optimus Prime (Ver.EVO)",
+      "keepName": "Transformers Action Edition 07 Optimus Prime (Ver.EVO)",
+      "keepSku": "71195-2",
+      "reason": "Blokees Action Edition #07 character match",
+      "showz": "8127",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-shining-version-chapter-3-model-kit-set-of",
+      "keepId": "sf-blokees-transformers-shining-version-shattered-universe",
+      "dropName": "Shining Version Chapter 3 Model Kit Set of 6",
+      "keepName": "Blokees Transformers Shining Version 03 Shattered Universe",
+      "keepSku": "71123-2",
+      "reason": "shining chapter 3 is Shining Version 03",
+      "showz": "6928",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-18-transformers-one-shockwav",
+      "keepId": "sf-blokees-transformers-classic-class-transformers-one-shockwave",
+      "dropName": "Classic Class 18 Transformers One Shockwave",
+      "keepName": "Transformers Classic Class 18 Transformers One Shockwave",
+      "keepSku": "71184-2",
+      "reason": "Blokees Classic Class #18 character match",
+      "showz": "6963",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-defender-version-04-tyrants-fury-model-kit",
+      "keepId": "sf-blokees-transformers-defender-version-tyrants-fury",
+      "dropName": "Defender Version 04 Tyrants Fury Model Kit Set of 12",
+      "keepName": "Blokees Transformers Defender Version 04 Tyrants Fury",
+      "keepSku": "71404-3",
+      "reason": "Blokees Defender Version case listing is wave 04 parent",
+      "showz": "7226",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-20-megatronus-prime",
+      "keepId": "sf-blokees-transformers-classic-class-transformers-one-megatronus",
+      "dropName": "Classic Class 20 Megatronus Prime",
+      "keepName": "Transformers One Megatronus",
+      "keepSku": "71186-2",
+      "reason": "Blokees Classic Class #20 character match",
+      "showz": "7242",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-dx-classic-class-21-jet-wing-optimus-prime",
+      "keepId": "sf-blokees-transformers-dx-classic-class-jet-wing-optimus-prime",
+      "dropName": "DX Classic Class 21 Jet Wing Optimus Prime",
+      "keepName": "Jet Wing Optimus Prime",
+      "keepSku": "71187-2",
+      "reason": "Blokees Classic Class #21 character match",
+      "showz": "7243",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-defender-version-05-traitor-to-tyranny-mod",
+      "keepId": "sf-blokees-transformers-defender-version-traitor-to-tyranny",
+      "dropName": "Defender Version 05 Traitor to Tyranny Model Kit Set of 12",
+      "keepName": "Blokees Transformers Defender Version 05 Traitor to Tyranny",
+      "keepSku": "71405-3",
+      "reason": "Blokees Defender Version case listing is wave 05 parent",
+      "showz": "7364",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-22-transformers-dark-of-the",
+      "keepId": "sf-blokees-transformers-classic-class-transformers-dark-of-the-moon-megatron",
+      "dropName": "Classic Class 22 Transformers Dark of the Moon Megatron",
+      "keepName": "Megatron",
+      "keepSku": "71422-2",
+      "reason": "Blokees Classic Class #22 character match",
+      "showz": "7455",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-defender-version-bruticus-kits-combining-a",
+      "keepId": "sf-blokees-transformers-defender-version-bruticus-kits-combining-accessory",
+      "dropName": "Defender Version Bruticus Kits Combining Accessory",
+      "keepName": "Transformers Defender Version Bruticus Kits Combining Accessory",
+      "keepSku": "71421-2",
+      "reason": "combining accessory is the bruticus store parent",
+      "showz": "7576",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-24-transformers-dark-of-the",
+      "keepId": "sf-blokees-transformers-dark-of-the-moon-classic-class-sentinel-prime",
+      "dropName": "Classic Class 24 Transformers Dark of the Moon Sentinel Prime",
+      "keepName": "Sentinel Prime",
+      "keepSku": "71424-2",
+      "reason": "Blokees Classic Class #24 character match",
+      "showz": "7709",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-25-transformers-bumblebee-bl",
+      "keepId": "sf-blokees-transformers-bumblebee-classic-class-blitzwing",
+      "dropName": "Classic Class 25 Transformers Bumblebee Blitzwing",
+      "keepName": "Blitzwing",
+      "keepSku": "71425-2",
+      "reason": "Blokees Classic Class #25 character match",
+      "showz": "7710",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-shining-version-04-spark-of-deception-mode",
+      "keepId": "sf-blokees-transformers-shining-version-spark-of-deception",
+      "dropName": "Shining Version 04 Spark of Deception Model Kit Set of 6",
+      "keepName": "Blokees Transformers Shining Version 04 Spark of Deception",
+      "keepSku": "71124-2",
+      "reason": "Blokees Shining Version case listing is wave 04 parent",
+      "showz": "7485",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-galaxy-version-09-darkest-hour-model-kit-s",
+      "keepId": "sf-blokees-transformers-galaxy-version-darkest-hour",
+      "dropName": "Galaxy Version 09 Darkest Hour Model Kit Set of 9",
+      "keepName": "Blokees Transformers Galaxy Version 09 Darkest Hour",
+      "keepSku": "71109-2",
+      "reason": "Blokees Galaxy Version case listing is wave 09 parent",
+      "showz": "7546",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-19-transformers-one-ironhide",
+      "keepId": "sf-blokees-transformers-classic-class-transformers-one-ironhide",
+      "dropName": "Classic Class 19 Transformers One Ironhide",
+      "keepName": "Transformers Classic Class 19 Transformers One Ironhide",
+      "keepSku": "71185-2",
+      "reason": "Blokees Classic Class #19 character match",
+      "showz": "6964",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-17-transformers-one-soundwav",
+      "keepId": "sf-blokees-transformers-classic-class-transformers-one-soundwave",
+      "dropName": "Classic Class 17 Transformers One Soundwave",
+      "keepName": "Transformers Classic Class 17 Transformers One Soundwave",
+      "keepSku": "71183-2",
+      "reason": "Blokees Classic Class #17 character match",
+      "showz": "6965",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-galaxy-version-07-one-wave-2-model-kit-set",
+      "keepId": "sf-blokees-transformers-galaxy-version-one-wave-2",
+      "dropName": "Galaxy Version 07 One Wave 2 Model Kit Set of 9",
+      "keepName": "Blokees Transformers Galaxy Version 07 One Wave 2",
+      "keepSku": "71107-2",
+      "reason": "Blokees Galaxy Version case listing is wave 07 parent",
+      "showz": "7051",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-galaxy-defender-version-chapter-3-devastat",
+      "keepId": "sf-blokees-transformers-defender-version-devastator-combining-accessory",
+      "dropName": "Galaxy Defender Version Chapter 3 Devastator Combining Accessory",
+      "keepName": "Transformers Defender Version Devastator Kits Combining Accessory",
+      "keepSku": "71305-2",
+      "reason": "combining accessory is the devastator store parent",
+      "showz": "7053",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-action-edition-04-optimus-prime-orion-pax",
+      "keepId": "sf-blokees-transformers-action-edition-optimus-prime-orion-pax",
+      "dropName": "Action Edition 04 Optimus Prime Orion Pax",
+      "keepName": "Orion Pax",
+      "keepSku": "71173-2",
+      "reason": "Blokees Action Edition #04 character match",
+      "showz": "7269",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-action-edition-02-g1-megatron-energy-explo",
+      "keepId": "sf-blokees-transformers-action-edition-g1-megatron-energy-explosion-ver",
+      "dropName": "Action Edition 02 G1 Megatron Energy Explosion Version",
+      "keepName": "Transformers Action Edition 02 - G1 Megatron Energy Explosion Ver",
+      "keepSku": "71190-2",
+      "reason": "Blokees Action Edition #02 character match",
+      "showz": "7423",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-galaxy-version-05-one-model-kit-set-of-9",
+      "keepId": "sf-blokees-transformers-galaxy-version-one",
+      "dropName": "Galaxy Version 05 ONE Model Kit Set of 9",
+      "keepName": "Blokees Transformers Galaxy Version 05 ONE",
+      "keepSku": "71105-2",
+      "reason": "Blokees Galaxy Version case listing is wave 05 parent",
+      "showz": "6556",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-11-transformers-one-optimus",
+      "keepId": "sf-blokees-transformers-classic-class-one-optimus-prime",
+      "dropName": "Classic Class 11 Transformers One Optimus Prime",
+      "keepName": "Transformers One Optimus Prime",
+      "keepSku": "71161-2",
+      "reason": "Blokees Classic Class #11 character match",
+      "showz": "6560",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-galaxy-version-08-one-shall-fall-model-kit",
+      "keepId": "sf-blokees-transformers-galaxy-version-one-shall-fall",
+      "dropName": "Galaxy Version 08 One Shall Fall Model Kit Set of 9",
+      "keepName": "Blokees Transformers Galaxy Version 08 One Shall Fall",
+      "keepSku": "71108-2",
+      "reason": "Blokees Galaxy Version case listing is wave 08 parent",
+      "showz": "7305",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-23-transformers-dark-of-the",
+      "keepId": "sf-blokees-transformers-classic-class-transformers-dark-of-the-moon-bumblebee",
+      "dropName": "Classic Class 23 Transformers Dark of the Moon Bumblebee",
+      "keepName": "Bumblebee",
+      "keepSku": "71423-2",
+      "reason": "Blokees Classic Class #23 character match",
+      "showz": "7456",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-defender-version-03-heavy-metal-war-model",
+      "keepId": "sf-blokees-transformers-defender-version-heavy-metal-war",
+      "dropName": "Defender Version 03 Heavy Metal War Model Kit Set of 12",
+      "keepName": "Blokees Transformers Defender Version 03 Heavy Metal War",
+      "keepSku": "71304-3",
+      "reason": "Blokees Defender Version case listing is wave 03 parent",
+      "showz": "7052",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-defender-version-02-the-overthrow-model-ki",
+      "keepId": "sf-blokees-transformers-defender-version-the-overthrow",
+      "dropName": "Defender Version 02 The Overthrow Model Kit Set of 12",
+      "keepName": "Blokees Transformers Defender Version 02 The Overthrow",
+      "keepSku": "71302-2",
+      "reason": "Blokees Defender Version case listing is wave 02 parent",
+      "showz": "6891",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-galaxy-version-06-parallel-universe-model",
+      "keepId": "sf-blokees-transformers-galaxy-version-parallel-universe",
+      "dropName": "Galaxy Version 06 Parallel Universe Model Kit Set of 9",
+      "keepName": "Blokees Transformers Galaxy Version 06 Parallel Universe",
+      "keepSku": "71106-2",
+      "reason": "Blokees Galaxy Version case listing is wave 06 parent",
+      "showz": "6797",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-16-transformers-one-starscre",
+      "keepId": "sf-blokees-transformers-classic-class-transformers-one-starscream",
+      "dropName": "Classic Class 16 Transformers One Starscream",
+      "keepName": "Transformers One Starscream",
+      "keepSku": "71177-2",
+      "reason": "Blokees Classic Class #16 character match",
+      "showz": "6798",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-12-transformers-one-megatron",
+      "keepId": "sf-blokees-transformers-classic-class-one-megatron",
+      "dropName": "Classic Class 12 Transformers One Megatron",
+      "keepName": "Transformers One Megatron",
+      "keepSku": "71162-2",
+      "reason": "Blokees Classic Class #12 character match",
+      "showz": "6561",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-14-transformers-one-sentinel",
+      "keepId": "sf-blokees-transformers-classic-class-one-sentinel-prime",
+      "dropName": "Classic Class 14 Transformers One Sentinel Prime",
+      "keepName": "Transformers One Sentinel Prime",
+      "keepSku": "71164-2",
+      "reason": "Blokees Classic Class #14 character match",
+      "showz": "6563",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-action-edition-02-g1-megatron",
+      "keepId": "sf-blokees-transformers-action-edition-g1-megatron",
+      "dropName": "Action Edition 02 G1 Megatron",
+      "keepName": "Transformers Action Edition 02 - G1 Megatron",
+      "keepSku": "71167-2",
+      "reason": "Blokees Action Edition #02 character match",
+      "showz": "6630",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-defender-version-01-shattered-alliance-mod",
+      "keepId": "sf-blokees-transformers-defender-version-shattered-alliance",
+      "dropName": "Defender Version 01 Shattered Alliance Model Kit Set of 12",
+      "keepName": "Blokees Transformers Defender Version 01 Shattered Alliance",
+      "keepSku": "71301-2",
+      "reason": "Blokees Defender Version case listing is wave 01 parent",
+      "showz": "6721",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-shining-version-chapter-2-model-kit-set-of",
+      "keepId": "sf-blokees-transformers-shining-version-shining-1985",
+      "dropName": "Shining Version Chapter 2 Model Kit Set of 6",
+      "keepName": "Blokees Transformers Shining Version 02 Shining 1985",
+      "keepSku": "71122-2",
+      "reason": "shining chapter 2 is Shining Version 02",
+      "showz": "6405",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-action-edition-g1-optimus-prime",
+      "keepId": "sf-blokees-transformers-action-edition-g1-optimus-prime",
+      "dropName": "Action Edition G1 Optimus Prime",
+      "keepName": "Transformers Action Edition - G1 Optimus Prime",
+      "keepSku": "71156-2",
+      "reason": "Action Edition G1 Optimus Prime (unnumbered)",
+      "showz": "6263",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-galaxy-version-04-fractured-space-time-mod",
+      "keepId": "sf-blokees-transformers-galaxy-version-fractured-space-time",
+      "dropName": "Galaxy Version 04 Fractured Space-Time Model Kit Set of 9",
+      "keepName": "Blokees Transformers Galaxy Version 04 Fractured Space-Time",
+      "keepSku": "71104-2",
+      "reason": "Blokees Galaxy Version case listing is wave 04 parent",
+      "showz": "6294",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-shining-version-chapter-1-model-kit-set-of",
+      "keepId": "sf-blokees-transformers-shining-version-shining-roll-out",
+      "dropName": "Shining Version Chapter 1 Model Kit Set of 6",
+      "keepName": "Blokees Transformers Shining Version 01 Shining Roll Out",
+      "keepSku": "71121-2",
+      "reason": "shining chapter 1 is Shining Version 01",
+      "showz": "6072",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-08-rise-of-the-beasts-nemesi",
+      "keepId": "sf-blokees-transformers-classic-class-nemesis-prime",
+      "dropName": "Classic Class 08 Rise of the Beasts Nemesis Prime Model Kit",
+      "keepName": "Rise of the Beasts",
+      "keepSku": "71155-2",
+      "reason": "Blokees Classic Class #08 character match",
+      "showz": "6103",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-galaxy-version-03-the-autobot-run-model-ki",
+      "keepId": "sf-blokees-transformers-galaxy-version-the-autobot-run",
+      "dropName": "Galaxy Version 03 The Autobot Run Model Kit Set of 9",
+      "keepName": "Blokees Transformers Galaxy Version 03 The Autobot Run",
+      "keepSku": "71103-2",
+      "reason": "Blokees Galaxy Version case listing is wave 03 parent",
+      "showz": "6021",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-galaxy-version-02-sos-model-kit-set-of-9",
+      "keepId": "sf-blokees-transformers-galaxy-version-sos",
+      "dropName": "Galaxy Version 02 SOS Model Kit Set of 9",
+      "keepName": "Blokees Transformers Galaxy Version 02 SOS",
+      "keepSku": "71102-2",
+      "reason": "Blokees Galaxy Version case listing is wave 02 parent",
+      "showz": "5750",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-rise-of-the-beasts-mirage-06",
+      "keepId": "sf-blokees-transformers-classic-class-mirage",
+      "dropName": "Classic Class: Rise of the Beasts Mirage 06 Model Kit",
+      "keepName": "Rise of the Beasts",
+      "keepSku": "71151-2",
+      "reason": "Blokees Classic Class #06 character match",
+      "showz": "5797",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-classic-class-rise-of-the-beasts-arcee-07",
+      "keepId": "sf-blokees-transformers-classic-class-arcee",
+      "dropName": "Classic Class: Rise of the Beasts Arcee 07 Model Kit",
+      "keepName": "Rise of the Beasts",
+      "keepSku": "71152-2",
+      "reason": "Blokees Classic Class #07 character match",
+      "showz": "5799",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-the-golden-lagoon-anniversary-version-set",
+      "keepId": "sf-blokees-transformers-x-yearly-version-the-golden-lagoon",
+      "dropName": "The Golden Lagoon Anniversary Version Set of 5 Model Kit",
+      "keepName": "The Golden Lagoon",
+      "keepSku": "71191-2",
+      "reason": "2024 Golden Lagoon set of 5",
+      "showz": "5820",
+      "imageFilled": false
+    },
+    {
+      "dropId": "blokees-galaxy-version-01-roll-out-model-kit-set-o",
+      "keepId": "sf-blokees-transformers-galaxy-version-roll-out",
+      "dropName": "Galaxy Version 01 Roll Out Model Kit Set of 9",
+      "keepName": "Blokees Transformers Galaxy Version 01 Roll Out",
+      "keepSku": "71100-2",
+      "reason": "Blokees Galaxy Version case listing is wave 01 parent",
+      "showz": "5251",
+      "imageFilled": false
+    }
+  ]
+}
