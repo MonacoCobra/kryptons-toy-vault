@@ -1,1277 +1,530 @@
 {
-  "auditedAt": "2026-09-25T15:51:39.389773+00:00",
+  "auditedAt": "2026-09-25T21:48:56.306444+00:00",
   "mode": "apply",
   "refill": false,
   "counts": {
     "oneshotRows": 29378,
-    "auditedWithImage": 17667,
-    "highMismatches": 28,
-    "softMismatches": 660,
-    "cleared": 28,
+    "auditedWithImage": 17639,
+    "highMismatches": 14,
+    "softMismatches": 659,
+    "cleared": 14,
     "refilled": 0,
     "overlayDropped": 0,
     "overlayRemaining": 14585
   },
   "reasonCounts": {
-    "product_multipack_vs_single": 7,
-    "score_pair_reject": 23,
-    "char_missing:pumyra": 1,
-    "char_missing:agent": 1,
-    "char_missing:she": 1,
-    "char_missing:batman": 1,
-    "char_missing:jackalman": 1,
-    "char_missing:baxter": 1,
-    "char_missing:ultron": 1,
-    "char_missing:drax": 1,
-    "char_missing:gamora": 1,
-    "char_missing:widow": 1,
-    "char_missing:symbiote": 1,
-    "char_missing:cable": 1,
-    "char_missing:gambit": 1,
-    "char_missing:nightcrawler": 1,
-    "char_missing:storm": 1,
-    "char_missing:cyclops": 1,
-    "char_missing:magneto": 1,
-    "char_missing:silver": 1,
-    "char_missing:elektra": 1,
-    "char_missing:lex": 1,
-    "char_missing:classic": 1,
-    "char_missing:parallax": 1
+    "prior_sku_audit_cleared_url": 14,
+    "score_pair_reject": 1
   },
   "cleared": [
     {
-      "figureId": "sf-neca-store-teenage-mutant-ninja-turtles-1990-movie-casey-jones-with-dirt-bike",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_a2255f77f39f40f38077adcbfa284147~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a2255f77f39f40f38077adcbfa284147~mv2.jpg",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Teenage Mutant Ninja Turtles (1990 Movie)",
-      "subtitle": "Casey Jones with Dirt Bike 7\" Scale Action Figure",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_a2255f77f39f40f38077adcbfa284147~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a2255f77f39f40f38077adcbfa284147~mv2.jpg",
-        "gtin": "634482541203",
-        "gtinScore": 12.9,
-        "gtinTitle": "Teenage Mutant Ninja Turtles 7 Inch Action Figure 1980 Cartoon 2-Pack - Casey Jones & Foot Soldier",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 22.4,
-        "urlBestTitle": "Casey Jones with Dirt Bike — Walmart (US) · 2024 · Teenage Mutant Ninja Turtles",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      }
-    },
-    {
-      "figureId": "s76-s7-ult-pumyra",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_48bbc4d9eb4f476ba6e6e036aebc18c8~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_48bbc4d9eb4f476ba6e6e036aebc18c8~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:pumyra"
-      ],
-      "name": "Pumyra",
-      "subtitle": "ULTIMATES! Wave6",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_48bbc4d9eb4f476ba6e6e036aebc18c8~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_48bbc4d9eb4f476ba6e6e036aebc18c8~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Reptilian Brute — Thundercats Reptilians · 2023 · Ultimates",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 18
-      }
-    },
-    {
-      "figureId": "joec-classified-tripwire",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_cf0029b539a24f51a2381c9e72f83c73~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cf0029b539a24f51a2381c9e72f83c73~mv2.jpg",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Tripwire",
-      "subtitle": "Classified Series",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_cf0029b539a24f51a2381c9e72f83c73~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cf0029b539a24f51a2381c9e72f83c73~mv2.jpg",
-        "gtin": "5010996233929",
-        "gtinScore": 42.0,
-        "gtinTitle": "G.I. Joe Classified 6 Inch Action Figure Tiger Force 2-Pack - (Roadblock - Tripwire - M.A.C.L.E.O.D)",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 48.0,
-        "urlBestTitle": "Tripwire — Hasbro Pulse · 2023 · GI Joe",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      }
-    },
-    {
-      "figureId": "dst-ms-usagent",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:agent"
-      ],
-      "name": "U.S. Agent",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "dst-ms-shehulk",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:she"
-      ],
-      "name": "She-Hulk",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "mcfdc-batman-arkham-city",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "url:score_pair_reject",
-        "url:char_missing:batman"
-      ],
-      "name": "Batman",
-      "subtitle": "Arkham City",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
-        "gtin": "887961670486",
-        "gtinScore": -1.0,
-        "gtinTitle": "DC Comics Multiverse 6 Inch Action Figure Lex Luthor Series - Batman",
-        "gtinShop": "cmdstore",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Hal Jordan Parralax (Gold Label) — Walmart, Gold Label · 2022 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 43
-      }
-    },
-    {
-      "figureId": "d14s7u-ult-thundercats-jackalman",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_48bbc4d9eb4f476ba6e6e036aebc18c8~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_48bbc4d9eb4f476ba6e6e036aebc18c8~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:jackalman"
-      ],
-      "name": "Jackalman",
-      "subtitle": "ThunderCats ULTIMATES!",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_48bbc4d9eb4f476ba6e6e036aebc18c8~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_48bbc4d9eb4f476ba6e6e036aebc18c8~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Reptilian Brute — Thundercats Reptilians · 2023 · Ultimates",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 18
-      }
-    },
-    {
-      "figureId": "d14neca-tmnt-rock-toon",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Rocksteady",
-      "subtitle": "Toon Turtles",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg",
-        "gtin": "634482541760",
-        "gtinScore": 42.0,
-        "gtinTitle": "Teenage Mutant Ninja Turtles Turtles In Time 6 Inch Action Figure 2-Pack - Pirate Bebop & Rocksteady",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 38.5,
-        "urlBestTitle": "Rocksteady — Haulathon 2024 (Target US) · 2024 · Teenage Mutant Ninja Turtles",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 2
-      }
-    },
-    {
-      "figureId": "s7c-ult-tmnt-baxter",
+      "figureId": "s73-tmnt-rocksteady-ult",
       "clearedOneshot": true,
       "clearedOverlay": false,
       "clearedImageUrl": "https://static.wixstatic.com/media/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg",
       "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:baxter"
+        "prior_sku_audit_cleared_url"
       ],
-      "name": "Baxter Stockman",
+      "name": "Rocksteady",
       "subtitle": "TMNT ULTIMATES!",
       "evidence": {
         "imageUrl": "https://static.wixstatic.com/media/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Muckman and Joe Eyeball (Glow-in-the-dark) — TMNT Special · 2023 · Ultimates",
+        "urlBestScore": 42.0,
+        "urlBestTitle": "Robotic Rocksteady — TMNT Series 8 · 2023 · Ultimates",
         "urlBestShop": "mephitsu",
         "urlProductCount": 22
       }
     },
     {
-      "figureId": "dst-ms-ultron",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:ultron"
-      ],
-      "name": "Ultron",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "dst-ms-drax",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:drax"
-      ],
-      "name": "Drax",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "dst-ms-gamora",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:gamora"
-      ],
-      "name": "Gamora",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "dst-ms-black-widow",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:widow"
-      ],
-      "name": "Black Widow",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "dst-ms-symbiote",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:symbiote"
-      ],
-      "name": "Symbiote Spider-Man",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "dst-ms-cable",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:cable"
-      ],
-      "name": "Cable",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "dst-ms-gambit",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:gambit"
-      ],
-      "name": "Gambit",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "dst-ms-nightcrawler",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:nightcrawler"
-      ],
-      "name": "Nightcrawler",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "dst-ms-storm",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:storm"
-      ],
-      "name": "Storm",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "dst-ms-cyclops",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:cyclops"
-      ],
-      "name": "Cyclops",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "dst-ms-magneto",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:magneto"
-      ],
-      "name": "Magneto",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "dst-ms-silver-surfer",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:silver"
-      ],
-      "name": "Silver Surfer",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "dst-ms-elektra",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:elektra"
-      ],
-      "name": "Elektra",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      }
-    },
-    {
-      "figureId": "mcfdc-mega-solomon-grundy",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_cec521eba4c341009fce0e04a1130ba4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cec521eba4c341009fce0e04a1130ba4~mv2.jpg",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Solomon Grundy",
-      "subtitle": "Megafig",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_cec521eba4c341009fce0e04a1130ba4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cec521eba4c341009fce0e04a1130ba4~mv2.jpg",
-        "gtin": "787926177527",
-        "gtinScore": 21.5,
-        "gtinTitle": "DC Multiverse JSA 7 Inch Action Figure 2-Pack - Solomon Grundy vs Green Lantern",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 35.5,
-        "urlBestTitle": "Solomon Grundy — General · 2026 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 2
-      }
-    },
-    {
-      "figureId": "mcfdc-mega-bizarro",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_b876c97306894c6e8e616b769e4d0663~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b876c97306894c6e8e616b769e4d0663~mv2.jpg",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Bizarro",
-      "subtitle": "Megafig",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_b876c97306894c6e8e616b769e4d0663~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b876c97306894c6e8e616b769e4d0663~mv2.jpg",
-        "gtin": "787926156935",
-        "gtinScore": 24.5,
-        "gtinTitle": "DC Multiverse Comics 7 Inch Action Figure 2-Pack - Bizarro & Batzarro",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 30.5,
-        "urlBestTitle": "Bizarro — Gold Label Gamestop / Walmart · 2025 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 2
-      }
-    },
-    {
-      "figureId": "mcfdc-gl-lex-2025",
+      "figureId": "mcfgap-kid-flash-sf",
       "clearedOneshot": true,
       "clearedOverlay": false,
       "clearedImageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
       "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:lex"
+        "prior_sku_audit_cleared_url",
+        "gtin:score_pair_reject"
       ],
-      "name": "Lex Luthor",
-      "subtitle": "2025 Movie Gold Label",
+      "name": "Kid Flash",
+      "subtitle": "Speed Force Build-A",
       "evidence": {
         "imageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Hal Jordan Parralax (Gold Label) — Walmart, Gold Label · 2022 · DC Multiverse",
+        "gtin": "787926154887",
+        "gtinScore": -1.0,
+        "gtinTitle": "DC Multiverse Comic 7 Inch Action Figure BAF The Darkest Knight - Kid Flash (White)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 41.67,
+        "urlBestTitle": "Kid Flash — Speed Metal BAF · 2022 · DC Multiverse",
         "urlBestShop": "mephitsu",
         "urlProductCount": 43
       }
     },
     {
-      "figureId": "mph-e8559512992c",
+      "figureId": "d14neca-tmnt-bebop-toon",
       "clearedOneshot": true,
       "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_35ba4b9ee17645ffb653b3e9f74600d0~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_35ba4b9ee17645ffb653b3e9f74600d0~mv2.jpg",
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg",
       "reasons": [
-        "gtin:product_multipack_vs_single",
-        "url:score_pair_reject"
+        "prior_sku_audit_cleared_url"
       ],
-      "name": "Zeo Red Ranger",
-      "subtitle": "Lightning Collection — Wave 6 · 2020",
+      "name": "Bebop",
+      "subtitle": "Toon Turtles",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_35ba4b9ee17645ffb653b3e9f74600d0~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_35ba4b9ee17645ffb653b3e9f74600d0~mv2.jpg",
-        "gtin": "630509906154",
-        "gtinScore": 28.0,
-        "gtinTitle": "Power Rangers Lightning Collection 6 Inch Action Figure 2-Pack Exclusive - Red and Zeo Gold Ranger SDCC 2019 (Sub-Standard Packaging)",
-        "gtinShop": "cmdstore",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Zeo Red Ranger — Wave 6 · 2020 · Power Rangers",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg",
+        "urlBestScore": 38.5,
+        "urlBestTitle": "Bebop — Haulathon 2024 (Target US) · 2024 · Teenage Mutant Ninja Turtles",
         "urlBestShop": "mephitsu",
-        "urlProductCount": 1
+        "urlProductCount": 2
       }
     },
     {
-      "figureId": "afmon-mcfarlane-dc-classic-dc-multiverse-collector-edition-mera-action-figure-bbts-196670",
+      "figureId": "dst-ms-groot",
       "clearedOneshot": true,
       "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_ad30eea31f534981a73164cfb449ac31~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ad30eea31f534981a73164cfb449ac31~mv2.jpg",
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
       "reasons": [
-        "gtin:product_multipack_vs_single",
-        "gtin:char_missing:classic"
+        "prior_sku_audit_cleared_url"
       ],
-      "name": "DC Classic DC Multiverse Collector Edition Mera Action Figure",
-      "subtitle": "DC Multiverse",
+      "name": "Groot",
+      "subtitle": "Classic",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_ad30eea31f534981a73164cfb449ac31~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ad30eea31f534981a73164cfb449ac31~mv2.jpg",
-        "gtin": "787926175165",
-        "gtinScore": 23.0,
-        "gtinTitle": "DC Multiverse Green Lantern 7 Inch Action Figure 2-Pack Exclusive - Kilowog & Green Lantern Gold Label",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 24.33,
-        "urlBestTitle": "Kilowog — SCCC 2026 DC Collector Edition · 2026 · DC Multiverse",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+        "urlBestScore": 31.5,
+        "urlBestTitle": "Groot — Disney Store · 2017 · Marvel",
         "urlBestShop": "mephitsu",
-        "urlProductCount": 1
+        "urlProductCount": 123
       }
     },
     {
-      "figureId": "mcf-w9-parallax-hal",
+      "figureId": "dst-ms-starlord",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "name": "Star-Lord",
+      "subtitle": "Classic",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+        "urlBestScore": 31.5,
+        "urlBestTitle": "Star-Lord — Disney Store · 2017 · Marvel",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 123
+      }
+    },
+    {
+      "figureId": "dst-ms-psylocke",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "name": "Psylocke",
+      "subtitle": "Classic",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+        "urlBestScore": 31.5,
+        "urlBestTitle": "Psylocke — General · 2019 · Marvel",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 123
+      }
+    },
+    {
+      "figureId": "dst-ms-rogue",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "name": "Rogue",
+      "subtitle": "Classic",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+        "urlBestScore": 31.5,
+        "urlBestTitle": "Rogue — General · 2019 · Marvel",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 123
+      }
+    },
+    {
+      "figureId": "dst-ms-colossus",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "name": "Colossus",
+      "subtitle": "Classic",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+        "urlBestScore": 31.5,
+        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 123
+      }
+    },
+    {
+      "figureId": "dst-ms-beast",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "name": "Beast",
+      "subtitle": "Classic",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+        "urlBestScore": 31.5,
+        "urlBestTitle": "Beast — General · 2018 · Marvel",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 123
+      }
+    },
+    {
+      "figureId": "dst-ms-thanos",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "name": "Thanos",
+      "subtitle": "Classic",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+        "urlBestScore": 31.5,
+        "urlBestTitle": "Thanos — Disney Store · 2018 · Marvel",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 123
+      }
+    },
+    {
+      "figureId": "mcfdc-mega-mongul",
       "clearedOneshot": true,
       "clearedOverlay": false,
       "clearedImageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
       "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:parallax"
+        "prior_sku_audit_cleared_url"
       ],
-      "name": "Parallax",
+      "name": "Mongul",
+      "subtitle": "Megafig",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
+        "gtin": "787926152920",
+        "gtinScore": 42.0,
+        "gtinTitle": "DC Multiverse Comic 10 Inch Action Figure Megafigs Wave 4 - Mongul",
+        "gtinShop": "cmdstore"
+      }
+    },
+    {
+      "figureId": "mcf-mega-frankenstein-creature-commandos-megafig",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "name": "Frankenstein",
+      "subtitle": "Creature Commandos Megafig",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
+        "gtin": "787926152913",
+        "gtinScore": 30.67,
+        "gtinTitle": "DC Multiverse Comic 10 Inch Action Figure Megafigs Wave 4 - Frankenstein",
+        "gtinShop": "cmdstore"
+      }
+    },
+    {
+      "figureId": "mcf-mega-sabbac-black-adam-movie-megafig",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp",
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "name": "Sabbac",
+      "subtitle": "Black Adam Movie Megafig",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp",
+        "urlBestScore": 48.0,
+        "urlBestTitle": "Sabbac — Black Adam Wave 1 · 2022 · DC Multiverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 9
+      }
+    },
+    {
+      "figureId": "mcf-w8-gl-gold",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg",
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "name": "Green Lantern",
       "subtitle": "Hal Jordan Gold Label",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Hal Jordan Parralax (Gold Label) — Walmart, Gold Label · 2022 · DC Multiverse",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg",
+        "urlBestScore": 42.0,
+        "urlBestTitle": "Green Lantern Hal Jordan — Gold Label Walmart · 2024 · DC Multiverse",
         "urlBestShop": "mephitsu",
-        "urlProductCount": 43
+        "urlProductCount": 1
       }
     }
   ],
   "refilled": [],
   "highFlags": [
     {
-      "figureId": "sf-neca-store-teenage-mutant-ninja-turtles-1990-movie-casey-jones-with-dirt-bike",
-      "name": "Teenage Mutant Ninja Turtles (1990 Movie)",
-      "subtitle": "Casey Jones with Dirt Bike 7\" Scale Action Figure",
-      "line": "Figure",
-      "company": "neca",
-      "sku": "634482541203",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_a2255f77f39f40f38077adcbfa284147~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a2255f77f39f40f38077adcbfa284147~mv2.jpg",
-        "gtin": "634482541203",
-        "gtinScore": 12.9,
-        "gtinTitle": "Teenage Mutant Ninja Turtles 7 Inch Action Figure 1980 Cartoon 2-Pack - Casey Jones & Foot Soldier",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 22.4,
-        "urlBestTitle": "Casey Jones with Dirt Bike — Walmart (US) · 2024 · Teenage Mutant Ninja Turtles",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "s76-s7-ult-pumyra",
-      "name": "Pumyra",
-      "subtitle": "ULTIMATES! Wave6",
-      "line": "Super7 ULTIMATES!",
-      "company": "super7",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:pumyra"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_48bbc4d9eb4f476ba6e6e036aebc18c8~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_48bbc4d9eb4f476ba6e6e036aebc18c8~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Reptilian Brute — Thundercats Reptilians · 2023 · Ultimates",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 18
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "joec-classified-tripwire",
-      "name": "Tripwire",
-      "subtitle": "Classified Series",
-      "line": "GI Joe Classified",
-      "company": "hasbro",
-      "sku": "5010996233929",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_cf0029b539a24f51a2381c9e72f83c73~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cf0029b539a24f51a2381c9e72f83c73~mv2.jpg",
-        "gtin": "5010996233929",
-        "gtinScore": 42.0,
-        "gtinTitle": "G.I. Joe Classified 6 Inch Action Figure Tiger Force 2-Pack - (Roadblock - Tripwire - M.A.C.L.E.O.D)",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 48.0,
-        "urlBestTitle": "Tripwire — Hasbro Pulse · 2023 · GI Joe",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "dst-ms-usagent",
-      "name": "U.S. Agent",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:agent"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "dst-ms-shehulk",
-      "name": "She-Hulk",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:she"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "mcfdc-batman-arkham-city",
-      "name": "Batman",
-      "subtitle": "Arkham City",
-      "line": "DC Multiverse",
-      "company": "mcfarlane",
-      "sku": "887961670486",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "url:score_pair_reject",
-        "url:char_missing:batman"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
-        "gtin": "887961670486",
-        "gtinScore": -1.0,
-        "gtinTitle": "DC Comics Multiverse 6 Inch Action Figure Lex Luthor Series - Batman",
-        "gtinShop": "cmdstore",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Hal Jordan Parralax (Gold Label) — Walmart, Gold Label · 2022 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 43
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "d14s7u-ult-thundercats-jackalman",
-      "name": "Jackalman",
-      "subtitle": "ThunderCats ULTIMATES!",
-      "line": "Super7 ULTIMATES!",
-      "company": "super7",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:jackalman"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_48bbc4d9eb4f476ba6e6e036aebc18c8~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_48bbc4d9eb4f476ba6e6e036aebc18c8~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Reptilian Brute — Thundercats Reptilians · 2023 · Ultimates",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 18
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "d14neca-tmnt-rock-toon",
+      "figureId": "s73-tmnt-rocksteady-ult",
       "name": "Rocksteady",
-      "subtitle": "Toon Turtles",
-      "line": "TMNT",
-      "company": "neca",
-      "sku": "634482541760",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg",
-        "gtin": "634482541760",
-        "gtinScore": 42.0,
-        "gtinTitle": "Teenage Mutant Ninja Turtles Turtles In Time 6 Inch Action Figure 2-Pack - Pirate Bebop & Rocksteady",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 38.5,
-        "urlBestTitle": "Rocksteady — Haulathon 2024 (Target US) · 2024 · Teenage Mutant Ninja Turtles",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 2
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "s7c-ult-tmnt-baxter",
-      "name": "Baxter Stockman",
       "subtitle": "TMNT ULTIMATES!",
       "line": "Super7 ULTIMATES!",
       "company": "super7",
       "sku": null,
       "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:baxter"
+        "prior_sku_audit_cleared_url"
       ],
       "level": "high",
       "evidence": {
         "imageUrl": "https://static.wixstatic.com/media/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Muckman and Joe Eyeball (Glow-in-the-dark) — TMNT Special · 2023 · Ultimates",
+        "urlBestScore": 42.0,
+        "urlBestTitle": "Robotic Rocksteady — TMNT Series 8 · 2023 · Ultimates",
         "urlBestShop": "mephitsu",
         "urlProductCount": 22
       },
       "tags": [
-        "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-bake"
       ]
     },
     {
-      "figureId": "dst-ms-ultron",
-      "name": "Ultron",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:ultron"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "dst-ms-drax",
-      "name": "Drax",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:drax"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "dst-ms-gamora",
-      "name": "Gamora",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:gamora"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "dst-ms-black-widow",
-      "name": "Black Widow",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:widow"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "dst-ms-symbiote",
-      "name": "Symbiote Spider-Man",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:symbiote"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "dst-ms-cable",
-      "name": "Cable",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:cable"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "dst-ms-gambit",
-      "name": "Gambit",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:gambit"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "dst-ms-nightcrawler",
-      "name": "Nightcrawler",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:nightcrawler"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "dst-ms-storm",
-      "name": "Storm",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:storm"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "dst-ms-cyclops",
-      "name": "Cyclops",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": "DIA844243",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:cyclops"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "dst-ms-magneto",
-      "name": "Magneto",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:magneto"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "dst-ms-silver-surfer",
-      "name": "Silver Surfer",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:silver"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "dst-ms-elektra",
-      "name": "Elektra",
-      "subtitle": "Classic",
-      "line": "Marvel Select",
-      "company": "diamondselect",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:elektra"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 123
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "mcfdc-mega-solomon-grundy",
-      "name": "Solomon Grundy",
-      "subtitle": "Megafig",
-      "line": "DC Multiverse Megafigs",
+      "figureId": "mcfgap-kid-flash-sf",
+      "name": "Kid Flash",
+      "subtitle": "Speed Force Build-A",
+      "line": "DC Multiverse",
       "company": "mcfarlane",
-      "sku": "787926177527",
+      "sku": "787926154887",
       "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_cec521eba4c341009fce0e04a1130ba4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_cec521eba4c341009fce0e04a1130ba4~mv2.jpg",
-        "gtin": "787926177527",
-        "gtinScore": 21.5,
-        "gtinTitle": "DC Multiverse JSA 7 Inch Action Figure 2-Pack - Solomon Grundy vs Green Lantern",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 35.5,
-        "urlBestTitle": "Solomon Grundy — General · 2026 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 2
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "mcfdc-mega-bizarro",
-      "name": "Bizarro",
-      "subtitle": "Megafig",
-      "line": "DC Multiverse Megafigs",
-      "company": "mcfarlane",
-      "sku": "787926156935",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_b876c97306894c6e8e616b769e4d0663~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b876c97306894c6e8e616b769e4d0663~mv2.jpg",
-        "gtin": "787926156935",
-        "gtinScore": 24.5,
-        "gtinTitle": "DC Multiverse Comics 7 Inch Action Figure 2-Pack - Bizarro & Batzarro",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 30.5,
-        "urlBestTitle": "Bizarro — Gold Label Gamestop / Walmart · 2025 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 2
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "mcfdc-gl-lex-2025",
-      "name": "Lex Luthor",
-      "subtitle": "2025 Movie Gold Label",
-      "line": "DC Multiverse Gold Label",
-      "company": "mcfarlane",
-      "sku": null,
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:lex"
+        "prior_sku_audit_cleared_url",
+        "gtin:score_pair_reject"
       ],
       "level": "high",
       "evidence": {
         "imageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Hal Jordan Parralax (Gold Label) — Walmart, Gold Label · 2022 · DC Multiverse",
+        "gtin": "787926154887",
+        "gtinScore": -1.0,
+        "gtinTitle": "DC Multiverse Comic 7 Inch Action Figure BAF The Darkest Knight - Kid Flash (White)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 41.67,
+        "urlBestTitle": "Kid Flash — Speed Metal BAF · 2022 · DC Multiverse",
         "urlBestShop": "mephitsu",
         "urlProductCount": 43
       },
       "tags": [
-        "image-bake",
-        "img:mephitsu"
+        "img:mephitsu",
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     },
     {
-      "figureId": "mph-e8559512992c",
-      "name": "Zeo Red Ranger",
-      "subtitle": "Lightning Collection — Wave 6 · 2020",
-      "line": "Lightning Collection",
-      "company": "hasbro",
-      "sku": "630509906154",
+      "figureId": "d14neca-tmnt-bebop-toon",
+      "name": "Bebop",
+      "subtitle": "Toon Turtles",
+      "line": "TMNT",
+      "company": "neca",
+      "sku": null,
       "reasons": [
-        "gtin:product_multipack_vs_single",
-        "url:score_pair_reject"
+        "prior_sku_audit_cleared_url"
       ],
       "level": "high",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_35ba4b9ee17645ffb653b3e9f74600d0~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_35ba4b9ee17645ffb653b3e9f74600d0~mv2.jpg",
-        "gtin": "630509906154",
-        "gtinScore": 28.0,
-        "gtinTitle": "Power Rangers Lightning Collection 6 Inch Action Figure 2-Pack Exclusive - Red and Zeo Gold Ranger SDCC 2019 (Sub-Standard Packaging)",
-        "gtinShop": "cmdstore",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Zeo Red Ranger — Wave 6 · 2020 · Power Rangers",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c512f24df2f445e698948b39777f2ec1~mv2.jpg",
+        "urlBestScore": 38.5,
+        "urlBestTitle": "Bebop — Haulathon 2024 (Target US) · 2024 · Teenage Mutant Ninja Turtles",
         "urlBestShop": "mephitsu",
-        "urlProductCount": 1
+        "urlProductCount": 2
       },
       "tags": [
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "dst-ms-groot",
+      "name": "Groot",
+      "subtitle": "Classic",
+      "line": "Marvel Select",
+      "company": "diamondselect",
+      "sku": null,
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+        "urlBestScore": 31.5,
+        "urlBestTitle": "Groot — Disney Store · 2017 · Marvel",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 123
+      },
+      "tags": [
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "dst-ms-starlord",
+      "name": "Star-Lord",
+      "subtitle": "Classic",
+      "line": "Marvel Select",
+      "company": "diamondselect",
+      "sku": "ST Kirk Spock Amok Time",
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+        "urlBestScore": 31.5,
+        "urlBestTitle": "Star-Lord — Disney Store · 2017 · Marvel",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 123
+      },
+      "tags": [
+        "image-sku",
+        "imgsku:cooltoyden",
         "image-bake",
         "img:mephitsu"
       ]
     },
     {
-      "figureId": "afmon-mcfarlane-dc-classic-dc-multiverse-collector-edition-mera-action-figure-bbts-196670",
-      "name": "DC Classic DC Multiverse Collector Edition Mera Action Figure",
-      "subtitle": "DC Multiverse",
-      "line": "DC Multiverse",
+      "figureId": "dst-ms-psylocke",
+      "name": "Psylocke",
+      "subtitle": "Classic",
+      "line": "Marvel Select",
+      "company": "diamondselect",
+      "sku": null,
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+        "urlBestScore": 31.5,
+        "urlBestTitle": "Psylocke — General · 2019 · Marvel",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 123
+      },
+      "tags": [
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "dst-ms-rogue",
+      "name": "Rogue",
+      "subtitle": "Classic",
+      "line": "Marvel Select",
+      "company": "diamondselect",
+      "sku": null,
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+        "urlBestScore": 31.5,
+        "urlBestTitle": "Rogue — General · 2019 · Marvel",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 123
+      },
+      "tags": [
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "dst-ms-colossus",
+      "name": "Colossus",
+      "subtitle": "Classic",
+      "line": "Marvel Select",
+      "company": "diamondselect",
+      "sku": null,
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+        "urlBestScore": 31.5,
+        "urlBestTitle": "Colossus — Re-issue · 2024 · Marvel",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 123
+      },
+      "tags": [
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "dst-ms-beast",
+      "name": "Beast",
+      "subtitle": "Classic",
+      "line": "Marvel Select",
+      "company": "diamondselect",
+      "sku": null,
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+        "urlBestScore": 31.5,
+        "urlBestTitle": "Beast — General · 2018 · Marvel",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 123
+      },
+      "tags": [
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "dst-ms-thanos",
+      "name": "Thanos",
+      "subtitle": "Classic",
+      "line": "Marvel Select",
+      "company": "diamondselect",
+      "sku": null,
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7783f89271eb424b8159ff5ec881a9b6~mv2.png",
+        "urlBestScore": 31.5,
+        "urlBestTitle": "Thanos — Disney Store · 2018 · Marvel",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 123
+      },
+      "tags": [
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "mcfdc-mega-mongul",
+      "name": "Mongul",
+      "subtitle": "Megafig",
+      "line": "DC Multiverse Megafigs",
       "company": "mcfarlane",
-      "sku": "787926175165",
+      "sku": "787926152920",
       "reasons": [
-        "gtin:product_multipack_vs_single",
-        "gtin:char_missing:classic"
+        "prior_sku_audit_cleared_url"
       ],
       "level": "high",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_ad30eea31f534981a73164cfb449ac31~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ad30eea31f534981a73164cfb449ac31~mv2.jpg",
-        "gtin": "787926175165",
-        "gtinScore": 23.0,
-        "gtinTitle": "DC Multiverse Green Lantern 7 Inch Action Figure 2-Pack Exclusive - Kilowog & Green Lantern Gold Label",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 24.33,
-        "urlBestTitle": "Kilowog — SCCC 2026 DC Collector Edition · 2026 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
+        "imageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
+        "gtin": "787926152920",
+        "gtinScore": 42.0,
+        "gtinTitle": "DC Multiverse Comic 10 Inch Action Figure Megafigs Wave 4 - Mongul",
+        "gtinShop": "cmdstore"
       },
       "tags": [
         "image-bake",
@@ -1279,23 +532,68 @@
       ]
     },
     {
-      "figureId": "mcf-w9-parallax-hal",
-      "name": "Parallax",
+      "figureId": "mcf-mega-frankenstein-creature-commandos-megafig",
+      "name": "Frankenstein",
+      "subtitle": "Creature Commandos Megafig",
+      "line": "DC Multiverse Megafigs",
+      "company": "mcfarlane",
+      "sku": "787926152913",
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
+        "gtin": "787926152913",
+        "gtinScore": 30.67,
+        "gtinTitle": "DC Multiverse Comic 10 Inch Action Figure Megafigs Wave 4 - Frankenstein",
+        "gtinShop": "cmdstore"
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "mcf-mega-sabbac-black-adam-movie-megafig",
+      "name": "Sabbac",
+      "subtitle": "Black Adam Movie Megafig",
+      "line": "DC Multiverse Megafigs",
+      "company": "mcfarlane",
+      "sku": null,
+      "reasons": [
+        "prior_sku_audit_cleared_url"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp",
+        "urlBestScore": 48.0,
+        "urlBestTitle": "Sabbac — Black Adam Wave 1 · 2022 · DC Multiverse",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 9
+      },
+      "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "mcf-w8-gl-gold",
+      "name": "Green Lantern",
       "subtitle": "Hal Jordan Gold Label",
       "line": "DC Multiverse Gold Label",
       "company": "mcfarlane",
       "sku": null,
       "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:parallax"
+        "prior_sku_audit_cleared_url"
       ],
       "level": "high",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Hal Jordan Parralax (Gold Label) — Walmart, Gold Label · 2022 · DC Multiverse",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a67bd750e2e544e9af2a6aad85c5d191~mv2.jpg",
+        "urlBestScore": 42.0,
+        "urlBestTitle": "Green Lantern Hal Jordan — Gold Label Walmart · 2024 · DC Multiverse",
         "urlBestShop": "mephitsu",
-        "urlProductCount": 43
+        "urlProductCount": 1
       },
       "tags": [
         "image-bake",
@@ -8119,34 +7417,6 @@
       ]
     },
     {
-      "figureId": "mcfgap-kid-flash-sf",
-      "name": "Kid Flash",
-      "subtitle": "Speed Force Build-A",
-      "line": "DC Multiverse",
-      "company": "mcfarlane",
-      "sku": "787926154887",
-      "reasons": [
-        "gtin:score_pair_reject"
-      ],
-      "level": "soft",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_07c1cd2c1ebb477f96888dd0e23fb56a~mv2.jpeg",
-        "gtin": "787926154887",
-        "gtinScore": -1.0,
-        "gtinTitle": "DC Multiverse Comic 7 Inch Action Figure BAF The Darkest Knight - Kid Flash (White)",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 41.67,
-        "urlBestTitle": "Kid Flash — Speed Metal BAF · 2022 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 43
-      },
-      "tags": [
-        "img:mephitsu",
-        "image-sku",
-        "imgsku:cmdstore"
-      ]
-    },
-    {
       "figureId": "exo7-exo-08",
       "name": "Chapel",
       "subtitle": "TOS",
@@ -13325,9 +12595,29 @@
         "urlProductCount": 1
       },
       "tags": []
+    },
+    {
+      "figureId": "inj-jakks-8-bit-figure-mega-man",
+      "name": "8 Bit Figure | Mega Man",
+      "subtitle": "Figures & Action Figures",
+      "line": "JAKKS Pacific",
+      "company": "jakks",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/JKP-34239MM-CA.jpg?v=1657893867",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Mega Man 8 Bit Figure | Mega Man",
+        "urlBestShop": "toynk",
+        "urlProductCount": 1
+      },
+      "tags": []
     }
   ],
-  "softFlagsTruncated": 160,
+  "softFlagsTruncated": 159,
   "notes": [
     "High = auto-cleared on --apply (multipack-vs-single, hard theme, score_reject+char_missing, URL path cues, prior SKU-audit cleared URL).",
     "Soft = reported only; not cleared.",
