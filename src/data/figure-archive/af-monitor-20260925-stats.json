@@ -1,0 +1,99 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-09-25",
+  "updatedAt": "2026-09-25T14:24:47Z",
+  "added": 23,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Page2 differed; merged unique products.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 572,
+    "ee_candidates": 127,
+    "bbts_candidates": 166,
+    "added": 23,
+    "skipped_dupes": 270,
+    "rejected_non_af": 228,
+    "unmapped_company": 51,
+    "postfilter_rejected": 0
+  },
+  "oneshotBefore": 29355,
+  "oneshotAfter": 29378,
+  "ee_added": 18,
+  "bbts_added": 5,
+  "samples": [
+    {
+      "sku": "TH3Z1125",
+      "name": "Transformers Hot Rod 1986 Movie Edition MDLX Action Figure",
+      "id": "afmon-threezero-transformers-hot-rod-1986-movie-edition-mdlx-action-figure-th3z1125",
+      "source": "ee"
+    },
+    {
+      "sku": "TH3Z1124",
+      "name": "Transformers Fallen Coronation Starscream 1986 Movie Edition MDLX Action Figure",
+      "id": "afmon-threezero-transformers-fallen-coronation-starscream-1986-movie-edition-mdlx-action-th3z1124",
+      "source": "ee"
+    },
+    {
+      "sku": "MF18061",
+      "name": "DC Retro Wave 17 Super Friends The Joker 6-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-dc-retro-wave-17-super-friends-the-joker-6-inch-scale-action-figure-mf18061",
+      "source": "ee"
+    },
+    {
+      "sku": "MTJKJ27",
+      "name": "Masters of the Universe Chronicles 2026 Movie Wave 2 Trap-Jaw Action Figure",
+      "id": "afmon-mattel-masters-of-the-universe-chronicles-2026-movie-wave-2-trap-jaw-action-figure-mtjkj27",
+      "source": "ee"
+    },
+    {
+      "sku": "ALC205576",
+      "name": "Godzilla King Ghidorah Gravity Beam Version None Scale 10-Inch Action Figure - AE Exclusive",
+      "id": "afmon-hiya-godzilla-king-ghidorah-gravity-beam-version-none-scale-10-inch-action-figure-alc205576",
+      "source": "ee"
+    },
+    {
+      "sku": "MDTOY023A",
+      "name": "Batman: The Animated Series Harley Quinn 1:6 Scale Action Figure",
+      "id": "afmon-mondo-batman-the-animated-series-harley-quinn-1-6-scale-action-figure-mdtoy023a",
+      "source": "ee"
+    },
+    {
+      "sku": "TH3Z0990",
+      "name": "Mega Man/Rockman Forte MDLX Action Figure",
+      "id": "afmon-threezero-mega-man-rockman-forte-mdlx-action-figure-th3z0990",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0648",
+      "name": "Marvel Legends Series Super-Villains Super-Skrull 6-Inch Action Figure",
+      "id": "afmon-hasbro-marvel-legends-series-super-villains-super-skrull-6-inch-action-figure-hsg0648",
+      "source": "ee"
+    },
+    {
+      "sku": "YM15487A",
+      "name": "Winnie the Pooh Cosbi Collection Blind-Box Mini-Figure Case of 8",
+      "id": "afmon-hottoys-winnie-the-pooh-cosbi-collection-blind-box-mini-figure-case-of-8-ym15487a",
+      "source": "ee"
+    },
+    {
+      "sku": "PL84670B",
+      "name": "Teenage Mutant Ninja Turtles x Godzilla Wave 2 Action Figure Case of 4",
+      "id": "afmon-playmates-teenage-mutant-ninja-turtles-x-godzilla-wave-2-action-figure-case-of-4-pl84670b",
+      "source": "ee"
+    },
+    {
+      "sku": "HYEBG0299",
+      "name": "Godzilla vs. Biollante 1989 Biollante Exquisite Basic Series None Scale Action Figure",
+      "id": "afmon-hiya-godzilla-vs-biollante-1989-biollante-exquisite-basic-series-none-scale-action-hyebg0299",
+      "source": "ee"
+    },
+    {
+      "sku": "LS85459A",
+      "name": "Palworld Articulated Action Figure Case of 4",
+      "id": "afmon-loyalsubjects-palworld-articulated-action-figure-case-of-4-ls85459a",
+      "source": "ee"
+    }
+  ]
+}
