@@ -79,6 +79,10 @@ def load_cleared_image_urls() -> set[str]:
             u = (row.get("clearedImageUrl") or "").strip()
             if u:
                 out.add(u)
+        for raw in doc.get("clearedUrlLedger") or []:
+            u = (raw or "").strip() if isinstance(raw, str) else ""
+            if u:
+                out.add(u)
     return out
 
 
