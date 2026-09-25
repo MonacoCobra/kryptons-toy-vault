@@ -308,18 +308,30 @@ def clear_figure_image(fig: dict, overlay: dict[str, str], *, reason_url: str | 
 
 
 def load_prior_cleared_urls() -> set[str]:
-    if not SKU_AUDIT_JSON.exists():
-        return set()
-    try:
-        doc = json.loads(SKU_AUDIT_JSON.read_text())
-    except Exception:
-        return set()
     out: set[str] = set()
-    for row in doc.get("cleared") or []:
-        u = (row.get("clearedImageUrl") or "").strip()
-        if u:
-            out.add(u)
-            out.add(norm_url(u))
+    if SKU_AUDIT_JSON.exists():
+        try:
+            doc = json.loads(SKU_AUDIT_JSON.read_text())
+        except Exception:
+            doc = None
+        else:
+            for row in doc.get("cleared") or []:
+                u = (row.get("clearedImageUrl") or "").strip()
+                if u:
+                    out.add(u)
+                    out.add(norm_url(u))
+    # Cumulative ledger survives report rewrites that replace `cleared` with this run only.
+    if REPORT_JSON.exists():
+        try:
+            report = json.loads(REPORT_JSON.read_text())
+        except Exception:
+            report = None
+        else:
+            for raw in report.get("clearedUrlLedger") or []:
+                u = (raw or "").strip() if isinstance(raw, str) else ""
+                if u:
+                    out.add(u)
+                    out.add(norm_url(u))
     return out
 
 
@@ -617,6 +629,29 @@ def main() -> int:
             "Comics/UPC and Mephitsu crawl paths untouched.",
         ],
     }
+    # Keep every URL this audit has ever cleared. `cleared` stays per-run;
+    # rewriting the report must not drop earlier clears from the bake block list.
+    ledger: set[str] = set()
+    if REPORT_JSON.exists():
+        try:
+            prior_doc = json.loads(REPORT_JSON.read_text())
+        except Exception:
+            prior_doc = None
+        if isinstance(prior_doc, dict):
+            for raw in prior_doc.get("clearedUrlLedger") or []:
+                u = (raw or "").strip() if isinstance(raw, str) else ""
+                if u:
+                    ledger.add(u)
+            for row in prior_doc.get("cleared") or []:
+                if isinstance(row, dict):
+                    u = (row.get("clearedImageUrl") or "").strip()
+                    if u:
+                        ledger.add(u)
+    for row in cleared:
+        u = (row.get("clearedImageUrl") or "").strip()
+        if u:
+            ledger.add(u)
+    report["clearedUrlLedger"] = sorted(ledger)
     REPORT_JSON.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n")
 
     print(f"audited={audited} high={len(high_flags)} soft={len(soft_flags)}")
