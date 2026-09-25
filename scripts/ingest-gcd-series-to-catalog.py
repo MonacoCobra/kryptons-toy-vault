@@ -886,6 +886,56 @@ def infer_format(series: str, issue: dict) -> str:
     return "single"
 
 
+# English-language US manga houses (matched by publisher name, not one GCD id):
+# their numbered books are volumes, so they land as "tpb" (Collected Editions).
+# Udon / Random House (Del Rey) / Image-Tokyopop also put out floppies, so there
+# only an ISBN / Bookland barcode, or an unbarcoded $7+ cover price, marks a book.
+# Free / promo editions, anthology magazines, UPC-only floppies and (manga houses)
+# unbarcoded sub-$5 floppies stay "single".
+MANGA_PUBLISHERS = frozenset({
+    "viz", "seven seas entertainment", "kodansha usa", "dc; kodansha ltd.",
+    "yen press", "tokyopop", "vertical", "digital manga, inc.",
+    "dark horse; digital manga publishing",
+})
+MANGA_MIXED_PUBLISHERS = frozenset({"udon comics", "random house", "image / tokyopop"})
+_MANGA_PROMO_RE = re.compile(
+    r"free comic book day|\bfcbd\b|comics? giveaway day|halloween comic ?fest|sampler|preview|sneak peek",
+    re.I,
+)
+_MANGA_MAGAZINE_RE = re.compile(r"^(?:shonen jump|shojo beat|animerica extra|pulp|yen plus)\b", re.I)
+
+
+def _has_isbn(issue: dict) -> bool:
+    raw = f"{issue.get('valid_isbn') or ''};{issue.get('isbn') or ''}"
+    for tok in re.split(r"[;,]", raw):
+        d = re.sub(r"[^0-9Xx]", "", tok)
+        if (len(d) == 13 and d.startswith(("978", "979"))) or re.fullmatch(r"\d{9}[0-9Xx]", d):
+            return True
+    return False
+
+
+def manga_volume_format(fmt: str, publisher: str, issue: dict, parsed: dict) -> str:
+    """Relabel manga volumes "single" → "tpb"; leave periodicals / promos alone."""
+    pub = (publisher or "").strip().lower()
+    if fmt != "single" or (pub not in MANGA_PUBLISHERS and pub not in MANGA_MIXED_PUBLISHERS):
+        return fmt
+    series = str(parsed.get("series") or "")
+    price = str(issue.get("price") or "").strip().upper()
+    if "FREE" in price or price == "[NONE]" or _MANGA_PROMO_RE.search(series) or _MANGA_MAGAZINE_RE.search(series):
+        return fmt
+    upc = str(parsed.get("upc") or "")
+    is_book = _has_isbn(issue) or upc.startswith(("978", "979"))
+    if is_book:
+        return "tpb"
+    if upc:  # UPC-only, no ISBN: comic-format floppy
+        return fmt
+    msrp = parsed.get("msrp")
+    if pub in MANGA_MIXED_PUBLISHERS:
+        return "tpb" if (msrp or 0) >= 7 else fmt
+    # Unbarcoded, no ISBN: early-2000s floppies were < $5; manga volumes cost more.
+    return fmt if msrp is not None and 0 < msrp < 5 else "tpb"
+
+
 def publisher_from_series(series: dict, client: "GcdClient") -> str:
     pub = series.get("publisher")
     if isinstance(pub, dict):
@@ -1132,7 +1182,7 @@ def parse_issue(
         "variantOf": issue.get("variant_of"),
         "publishingFormat": issue.get("publishing_format") or series.get("publishing_format"),
     }
-    parsed["format"] = infer_format(series_name, parsed)
+    parsed["format"] = manga_volume_format(infer_format(series_name, parsed), publisher, issue, parsed)
     return parsed
 
 
