@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T05:26:20Z",
+  "generatedAt": "2026-09-26T05:21:47Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-09-18T05:26:18.382873+00:00",
+    "after": "2026-09-19T05:21:45.564258+00:00",
     "before": null
   },
   "fetch": {
@@ -40,49 +40,47 @@
       "httpStatus": 200
     },
     "source": "live-rest",
-    "pagesFetched": 1,
-    "httpStatus": 400,
+    "pagesFetched": 2,
+    "httpStatus": 200,
     "blocker": null,
-    "notes": [
-      "page 2: HTTP 400 (likely past last page)"
-    ],
+    "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 20,
+    "fetchedPostCount": 21,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9022,
+    "indexedRows": 9032,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 20,
-    "acceptedCandidates": 9,
-    "rejectedRows": 17,
+    "fetchedPosts": 21,
+    "acceptedCandidates": 3,
+    "rejectedRows": 18,
     "byCompany": {
       "hasbro": {
         "accepted": 0,
         "rejected": 0
       },
       "mcfarlane": {
-        "accepted": 3,
-        "rejected": 2
+        "accepted": 0,
+        "rejected": 1
       },
       "neca": {
-        "accepted": 0,
-        "rejected": 2
+        "accepted": 1,
+        "rejected": 0
       },
       "jazwares": {
         "accepted": 0,
         "rejected": 0
       },
       "super7": {
-        "accepted": 4,
-        "rejected": 0
+        "accepted": 0,
+        "rejected": 1
       },
       "hottoys": {
         "accepted": 0,
-        "rejected": 3
+        "rejected": 2
       },
       "mondo": {
         "accepted": 1,
@@ -111,16 +109,35 @@
     },
     "byRejectReason": {
       "sponsor-newsletter": 3,
+      "no-new-product-identity": 1,
+      "company-not-allowlisted": 8,
       "company-unknown": 3,
-      "company-not-allowlisted": 4,
-      "already-in-oneshot": 5,
-      "no-explicit-figure": 1,
-      "vehicles-props-only": 1
+      "already-in-oneshot": 2,
+      "no-explicit-figure": 1
     },
-    "applied": 0,
-    "skippedApply": 9
+    "applied": 1,
+    "skippedApply": 2
   },
   "candidates": [
+    {
+      "decision": "accept",
+      "name": "Big Bird",
+      "company": "neca",
+      "line": "NECA Ultimate",
+      "year": 2026,
+      "releaseWindow": null,
+      "variant": "Sesame Street – NYCC 2026 Exclusive Blue *UPDATE*",
+      "sourceUrl": "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Blue-Big-Bird-Preview.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599270,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Sesame Street – NECA NYCC 2026 Exclusive Blue Big Bird *UPDATE*",
+      "rationale": "neca via class:companies-neca; line=NECA Ultimate; variant=Sesame Street – NYCC 2026 Exclusive Blue *UPDATE*; year=2026; new/reveal/pre-order/official-image signal"
+    },
     {
       "decision": "accept",
       "name": "Jean Grey",
@@ -158,142 +175,117 @@
       "pack": null,
       "title": "Mega Man – ThreeZero MDLX Bass Figure",
       "rationale": "threezero via class:companies-threezero; line=threezero MDLX; variant=Mega Man – MDLX; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Leonardo",
-      "company": "super7",
-      "line": "Super7 ReAction",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "ReAction+",
-      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599160,
-      "postYear": 2026,
-      "pack": null,
-      "title": "TMNT – Leonardo, Michelangelo, Bebop, and Rocksteady ReAction Figure Pre-Orders",
-      "rationale": "super7 via class:companies-super-7; line=Super7 ReAction; variant=ReAction+; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Michelangelo",
-      "company": "super7",
-      "line": "Super7 ReAction",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "ReAction+",
-      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599160,
-      "postYear": 2026,
-      "pack": null,
-      "title": "TMNT – Leonardo, Michelangelo, Bebop, and Rocksteady ReAction Figure Pre-Orders",
-      "rationale": "super7 via class:companies-super-7; line=Super7 ReAction; variant=ReAction+; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Bebop",
-      "company": "super7",
-      "line": "Super7 ReAction",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "ReAction+",
-      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599160,
-      "postYear": 2026,
-      "pack": null,
-      "title": "TMNT – Leonardo, Michelangelo, Bebop, and Rocksteady ReAction Figure Pre-Orders",
-      "rationale": "super7 via class:companies-super-7; line=Super7 ReAction; variant=ReAction+; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Rocksteady",
-      "company": "super7",
-      "line": "Super7 ReAction",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "ReAction / ReAction+",
-      "sourceUrl": "https://www.toyark.com/2026/09/18/tmnt-leonardo-michelangelo-bebop-and-rocksteady-reaction-figure-pre-orders-599160",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-TMNT-ReAction-Plus-Wave-2.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599160,
-      "postYear": 2026,
-      "pack": null,
-      "title": "TMNT – Leonardo, Michelangelo, Bebop, and Rocksteady ReAction Figure Pre-Orders",
-      "rationale": "super7 via class:companies-super-7; line=Super7 ReAction; variant=ReAction / ReAction+; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Batman",
-      "company": "mcfarlane",
-      "line": "DC Multiverse Gold Label",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "Arkham City / Gold Label",
-      "sourceUrl": "https://www.toyark.com/2026/09/18/mcfarlane-toys-dc-previews-dc-multiverse-gold-label-arkham-city-batman-batman-beyond-cowl-page-punchers-batman-and-page-punchers-nightwing-599126",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-McFarlane-DC-News-9.18.26.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599126,
-      "postYear": 2026,
-      "pack": null,
-      "title": "McFarlane Toys DC Previews – DC Multiverse Gold Label Arkham City Batman, Batman Beyond Cowl, Page Punchers Batman, and Page Punchers Nightwing",
-      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse Gold Label; variant=Arkham City / Gold Label; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Batman",
-      "company": "mcfarlane",
-      "line": "Page Punchers",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "Batman #1",
-      "sourceUrl": "https://www.toyark.com/2026/09/18/mcfarlane-toys-dc-previews-dc-multiverse-gold-label-arkham-city-batman-batman-beyond-cowl-page-punchers-batman-and-page-punchers-nightwing-599126",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-McFarlane-DC-News-9.18.26.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599126,
-      "postYear": 2026,
-      "pack": null,
-      "title": "McFarlane Toys DC Previews – DC Multiverse Gold Label Arkham City Batman, Batman Beyond Cowl, Page Punchers Batman, and Page Punchers Nightwing",
-      "rationale": "mcfarlane via class:companies-mcfarlane; line=Page Punchers; variant=Batman #1; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Nightwing",
-      "company": "mcfarlane",
-      "line": "Page Punchers",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "Nightwing #81",
-      "sourceUrl": "https://www.toyark.com/2026/09/18/mcfarlane-toys-dc-previews-dc-multiverse-gold-label-arkham-city-batman-batman-beyond-cowl-page-punchers-batman-and-page-punchers-nightwing-599126",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-McFarlane-DC-News-9.18.26.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599126,
-      "postYear": 2026,
-      "pack": null,
-      "title": "McFarlane Toys DC Previews – DC Multiverse Gold Label Arkham City Batman, Batman Beyond Cowl, Page Punchers Batman, and Page Punchers Nightwing",
-      "rationale": "mcfarlane via class:companies-mcfarlane; line=Page Punchers; variant=Nightwing #81; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "sponsor-newsletter",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/25/the-chosen-prime-newsletter-september-25-2026-599493",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599493,
+      "title": "The Chosen Prime Newsletter September 25, 2026",
+      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
+    },
+    {
+      "decision": "reject",
+      "reason": "no-new-product-identity",
+      "name": null,
+      "company": "super7",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/25/micronauts-reaction-figures-clear-time-traveler-and-acroyear-599488",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599488,
+      "title": "Micronauts ReAction+ Figures – Clear Time Traveler and Acroyear",
+      "rationale": "Allowlisted company but no new/reveal/pre-order/official-image signal."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "kaiyodo",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/25/dc-comics-peacemaker-revoltech-photos-and-details-599472",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599472,
+      "title": "DC Comics – Peacemaker Revoltech Photos and Details",
+      "rationale": "Recognized kaiyodo via class:companies-kaiyodo; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "kaiyodo",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/25/ninja-gaiden-new-revoltech-ryu-yakumo-and-momiji-photos-and-info-599429",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599429,
+      "title": "Ninja Gaiden – New Revoltech Ryu, Yakumo, and Momiji Photos and Info",
+      "rationale": "Recognized kaiyodo via class:companies-kaiyodo; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "mattel",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/25/motu-origins-two-bad-pre-order-599418",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599418,
+      "title": "MOTU Origins Two Bad Pre-Order",
+      "rationale": "Recognized mattel via class:companies-mattel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "storm",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/25/street-fighter-alpha-3-nycc-exclusive-storm-arena-ryu-599399",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599399,
+      "title": "Street Fighter Alpha 3 – NYCC Exclusive Storm Arena Ryu",
+      "rationale": "Recognized storm via class:companies-storm-collectibles; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
     {
       "decision": "reject",
       "reason": "sponsor-newsletter",
@@ -436,27 +428,6 @@
     },
     {
       "decision": "reject",
-      "reason": "already-in-oneshot",
-      "name": "Big Bird",
-      "company": "neca",
-      "line": "NECA Ultimate",
-      "year": 2026,
-      "releaseWindow": null,
-      "variant": "Sesame Street – NYCC 2026 Exclusive Blue",
-      "sourceUrl": "https://www.toyark.com/2026/09/23/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Blue-Big-Bird-Preview.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599270,
-      "title": "Sesame Street – NECA NYCC 2026 Exclusive Blue Big Bird",
-      "oneshotIds": [
-        "ta-3a7f2e730bb9"
-      ],
-      "rationale": "Identity key already in oneshot (ta-3a7f2e730bb9)."
-    },
-    {
-      "decision": "reject",
       "reason": "sponsor-newsletter",
       "name": null,
       "company": null,
@@ -544,91 +515,24 @@
       "toyarkPostId": 599174,
       "title": "Godzilla Singular Point – Hiya Toys Godzilla Ultima Version",
       "rationale": "Recognized hiya via class:companies-hiya-toys; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "sponsor-newsletter",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/18/the-chosen-prime-newsletter-september-18-2026-599172",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599172,
-      "title": "The Chosen Prime Newsletter September 18, 2026",
-      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
-    },
-    {
-      "decision": "reject",
-      "reason": "already-in-oneshot",
-      "name": "Batman",
-      "company": "hottoys",
-      "line": "Hot Toys MMS",
-      "year": 2026,
-      "releaseWindow": null,
-      "variant": "The Flash Movie – Arctic Suit",
-      "sourceUrl": "https://www.toyark.com/2026/09/18/the-flash-movie-hot-toys-batman-arctic-suit-figure-599134",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Arctic-Suit-Batman-001.jpg",
-      "aliases": [
-        "MMS897"
-      ],
-      "codes": [
-        "MMS897"
-      ],
-      "gtin": null,
-      "toyarkPostId": 599134,
-      "title": "The Flash Movie – Hot Toys Batman Arctic Suit Figure",
-      "oneshotIds": [
-        "ta-98a451f59137"
-      ],
-      "rationale": "Identity key already in oneshot (ta-98a451f59137)."
-    },
-    {
-      "decision": "reject",
-      "reason": "vehicles-props-only",
-      "name": "Batman Beyond",
-      "company": "mcfarlane",
-      "line": "DC Multiverse Gold Label",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "Cowl",
-      "sourceUrl": "https://www.toyark.com/2026/09/18/mcfarlane-toys-dc-previews-dc-multiverse-gold-label-arkham-city-batman-batman-beyond-cowl-page-punchers-batman-and-page-punchers-nightwing-599126",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/z-McFarlane-DC-News-9.18.26.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599126,
-      "title": "McFarlane Toys DC Previews – DC Multiverse Gold Label Arkham City Batman, Batman Beyond Cowl, Page Punchers Batman, and Page Punchers Nightwing",
-      "rationale": "Batman Beyond reads as a cowl/prop/vehicle, not an articulated figure."
-    },
-    {
-      "decision": "reject",
-      "reason": "already-in-oneshot",
-      "name": "Elvira",
-      "company": "neca",
-      "line": "Horror Ultimate",
-      "year": 2027,
-      "releaseWindow": "some time in 2027",
-      "variant": "Mistress of the Dark",
-      "sourceUrl": "https://www.toyark.com/2026/09/18/elvira-mistress-of-the-dark-neca-ultimate-elvira-figure-599122",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Elvira-Mistress-of-the-Dark-001.webp",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599122,
-      "title": "Elvira: Mistress of the Dark – NECA Ultimate Elvira Figure",
-      "oneshotIds": [
-        "ta-f3743d99241c"
-      ],
-      "rationale": "Identity key already in oneshot (ta-f3743d99241c)."
     }
   ],
-  "applied": [],
+  "applied": [
+    {
+      "id": "ta-86225fd3def6",
+      "name": "Big Bird",
+      "company": "neca",
+      "line": "NECA Ultimate",
+      "year": 2026,
+      "variant": "Sesame Street – NYCC 2026 Exclusive Blue *UPDATE*",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Blue-Big-Bird-Preview.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270",
+      "toyarkPostId": 599270
+    }
+  ],
   "applySkipped": [
     {
       "name": "Jean Grey",
@@ -647,77 +551,14 @@
         "ta-e8f34a26add3"
       ],
       "toyarkPostId": 599200
-    },
-    {
-      "name": "Leonardo",
-      "company": "super7",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-397ebe6859bb"
-      ],
-      "toyarkPostId": 599160
-    },
-    {
-      "name": "Michelangelo",
-      "company": "super7",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-85f870b28c0c"
-      ],
-      "toyarkPostId": 599160
-    },
-    {
-      "name": "Bebop",
-      "company": "super7",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-e5900fbed856"
-      ],
-      "toyarkPostId": 599160
-    },
-    {
-      "name": "Rocksteady",
-      "company": "super7",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-17504d72b466"
-      ],
-      "toyarkPostId": 599160
-    },
-    {
-      "name": "Batman",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-dbd5e68f43c2"
-      ],
-      "toyarkPostId": 599126
-    },
-    {
-      "name": "Batman",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-10d328abca7d"
-      ],
-      "toyarkPostId": 599126
-    },
-    {
-      "name": "Nightwing",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-60f6ff8e81d9"
-      ],
-      "toyarkPostId": 599126
     }
   ],
   "applyStats": {
-    "accepted": 9,
-    "applied": 0,
-    "skippedApply": 9,
-    "aliasAdded": 0,
-    "withImage": 0,
+    "accepted": 3,
+    "applied": 1,
+    "skippedApply": 2,
+    "aliasAdded": 2,
+    "withImage": 1,
     "cap": 50,
     "blocker": null
   }

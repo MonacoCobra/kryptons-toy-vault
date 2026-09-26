@@ -1,38 +1,38 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-09-25T05:26:20Z",
+  "finishedAt": "2026-09-26T05:21:47Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 9,
-  "applied": 0,
-  "skippedApply": 9,
-  "rejectedRows": 17,
-  "withImage": 0,
-  "aliasAdded": 0,
+  "acceptedCandidates": 3,
+  "applied": 1,
+  "skippedApply": 2,
+  "rejectedRows": 18,
+  "withImage": 1,
+  "aliasAdded": 2,
   "byCompany": {
     "hasbro": {
       "accepted": 0,
       "rejected": 0
     },
     "mcfarlane": {
-      "accepted": 3,
-      "rejected": 2
+      "accepted": 0,
+      "rejected": 1
     },
     "neca": {
-      "accepted": 0,
-      "rejected": 2
+      "accepted": 1,
+      "rejected": 0
     },
     "jazwares": {
       "accepted": 0,
       "rejected": 0
     },
     "super7": {
-      "accepted": 4,
-      "rejected": 0
+      "accepted": 0,
+      "rejected": 1
     },
     "hottoys": {
       "accepted": 0,
-      "rejected": 3
+      "rejected": 2
     },
     "mondo": {
       "accepted": 1,
@@ -61,14 +61,31 @@
   },
   "byRejectReason": {
     "sponsor-newsletter": 3,
+    "no-new-product-identity": 1,
+    "company-not-allowlisted": 8,
     "company-unknown": 3,
-    "company-not-allowlisted": 4,
-    "already-in-oneshot": 5,
-    "no-explicit-figure": 1,
-    "vehicles-props-only": 1
+    "already-in-oneshot": 2,
+    "no-explicit-figure": 1
   },
-  "appliedIds": [],
-  "appliedSample": [],
+  "appliedIds": [
+    "ta-86225fd3def6"
+  ],
+  "appliedSample": [
+    {
+      "id": "ta-86225fd3def6",
+      "name": "Big Bird",
+      "company": "neca",
+      "line": "NECA Ultimate",
+      "year": 2026,
+      "variant": "Sesame Street – NYCC 2026 Exclusive Blue *UPDATE*",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Blue-Big-Bird-Preview.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270",
+      "toyarkPostId": 599270
+    }
+  ],
   "skippedSample": [
     {
       "name": "Jean Grey",
@@ -87,73 +104,10 @@
         "ta-e8f34a26add3"
       ],
       "toyarkPostId": 599200
-    },
-    {
-      "name": "Leonardo",
-      "company": "super7",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-397ebe6859bb"
-      ],
-      "toyarkPostId": 599160
-    },
-    {
-      "name": "Michelangelo",
-      "company": "super7",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-85f870b28c0c"
-      ],
-      "toyarkPostId": 599160
-    },
-    {
-      "name": "Bebop",
-      "company": "super7",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-e5900fbed856"
-      ],
-      "toyarkPostId": 599160
-    },
-    {
-      "name": "Rocksteady",
-      "company": "super7",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-17504d72b466"
-      ],
-      "toyarkPostId": 599160
-    },
-    {
-      "name": "Batman",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-dbd5e68f43c2"
-      ],
-      "toyarkPostId": 599126
-    },
-    {
-      "name": "Batman",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-10d328abca7d"
-      ],
-      "toyarkPostId": 599126
-    },
-    {
-      "name": "Nightwing",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-60f6ff8e81d9"
-      ],
-      "toyarkPostId": 599126
     }
   ],
-  "archiveSize": 29355,
+  "archiveSize": 29379,
   "fetchBlocker": null,
-  "wroteOneshot": false,
+  "wroteOneshot": true,
   "comics": "untouched"
 }
