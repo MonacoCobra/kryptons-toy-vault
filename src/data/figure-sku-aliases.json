@@ -17983,7 +17983,9 @@
       "ban-4573102720030"
     ],
     "sf-bandai-gundamplanet-hg-gms-ω-gquuuuuux-endymion-unit-awakened": [
-      "ban-4573102720009"
+      "ban-4573102720009",
+      "57457",
+      "id:sf-bandai-usagundamstore-hggq-1-144-sieg-axe-endymion-unit-awakening"
     ],
     "sf-bandai-gundamplanet-figure-rise-standard-tiffa-adill": [
       "ban-4573102691941"
@@ -19795,7 +19797,11 @@
       "bb-4573102642646"
     ],
     "sf-bandai-gundamplanet-mg-msz-006-zeta-gundam-ver-ka": [
-      "mg-4573102640154"
+      "mg-4573102640154",
+      "43634443223",
+      "id:sf-bandai-usagundamstore-mg-1-100-zeta-gundam-ver-ka",
+      "BAN640154",
+      "id:sf-bandai-toydojo-gundam-1-100-mg-msz-006-zeta-gundam-ver-ka-model-kit"
     ],
     "sf-bandai-gundamplanet-hg-heindree": [
       "hg-4573102651013"
@@ -21000,9 +21006,6 @@
     "sf-bandai-gundamplanet-sd-gundam-gg24-v2-gundam-assault-buster": [
       "bb-4573102607928"
     ],
-    "sf-bandai-gundamplanet-pg-unleashed-rx-78-2-gundam": [
-      "pg-4573102607652"
-    ],
     "sf-bandai-gundamplanet-banpresto-sd-gundam-dark-knight-gundam-mk-ii": [
       "prz-4983164170801"
     ],
@@ -21647,9 +21650,6 @@
     ],
     "sf-bandai-usagundamstore-hggq-1-144-challia-bulls-rick-dom-gq": [
       "35235"
-    ],
-    "sf-bandai-usagundamstore-hggq-1-144-sieg-axe-endymion-unit-awakening": [
-      "57457"
     ],
     "sf-bandai-usagundamstore-clear-action-base-7-1-144-mirror-seal-set": [
       "2723566"
@@ -23357,9 +23357,6 @@
     ],
     "sf-bandai-usagundamstore-full-mechanics-1-100-gundam-aerial": [
       "573468333"
-    ],
-    "sf-bandai-usagundamstore-mg-1-100-zeta-gundam-ver-ka": [
-      "43634443223"
     ],
     "sf-bandai-usagundamstore-mgsd-freedom-gundam": [
       "564681"
@@ -26107,7 +26104,10 @@
       "BAN607584"
     ],
     "sf-bandai-toyarena-gundam-1-60-pg-unleashed-gundam-0079-rx-78-2-gundam-model-kit": [
-      "BAN607652"
+      "BAN607652",
+      "4573102607652",
+      "pg-4573102607652",
+      "id:sf-bandai-gundamplanet-pg-unleashed-rx-78-2-gundam"
     ],
     "sf-bandai-toyarena-gundam-sd-ex-standard-017-sazabi-model-kit": [
       "BAN609298"
@@ -27658,7 +27658,9 @@
       "BAN630490"
     ],
     "sf-bandai-toyarena-gundam-1-100-mg-f-91-gundam-f91-2-0-model-kit": [
-      "BAN616128"
+      "BAN616128",
+      "4573102616128",
+      "id:sf-bandai-japan-figure-mg-mobile-suit-gundam-f91-gundam-f91ver-2-0-1-100-scale-c"
     ],
     "sf-bandai-toyarena-gundam-1-100-mg-turn-a-gundam-concept-x-6-1-2-turn-x-model-ki": [
       "BAN632005"
@@ -28914,9 +28916,6 @@
     "sf-bandai-japan-figure-mg-1-100-rx-178-gundam-mk-ii-titans-specification-mobile-": [
       "JF-4902425700687"
     ],
-    "sf-bandai-japan-figure-mg-mobile-suit-gundam-f91-gundam-f91ver-2-0-1-100-scale-c": [
-      "4573102616128"
-    ],
     "sf-bandai-japan-figure-mg-1-100-msn-00100-hyakushiki-valuto-system-mobile-suit-z": [
       "JF-4543112341129"
     ],
@@ -29516,9 +29515,6 @@
     ],
     "sf-bandai-toydojo-bandai-1-100-master-grade-sandrock-endless-waltz": [
       "BAS2137798"
-    ],
-    "sf-bandai-toydojo-gundam-1-100-mg-msz-006-zeta-gundam-ver-ka-model-kit": [
-      "BAN640154"
     ],
     "sf-bandai-toydojo-gundam-the-witch-from-mercury-aerial-03-1-144-hg": [
       "BAN653130"
@@ -56904,7 +56900,7 @@
     "rg-4573102609311": "sf-bandai-gundamplanet-rg-evangelion-production-model-unit-08a-alpha-wille-custo",
     "bb-4573102608024": "sf-bandai-gundamplanet-sd-gundam-gg39-gundam-ez8",
     "bb-4573102607928": "sf-bandai-gundamplanet-sd-gundam-gg24-v2-gundam-assault-buster",
-    "pg-4573102607652": "sf-bandai-gundamplanet-pg-unleashed-rx-78-2-gundam",
+    "pg-4573102607652": "sf-bandai-toyarena-gundam-1-60-pg-unleashed-gundam-0079-rx-78-2-gundam-model-kit",
     "prz-4983164170801": "sf-bandai-gundamplanet-banpresto-sd-gundam-dark-knight-gundam-mk-ii",
     "rg-4573102604255": "sf-bandai-gundamplanet-rg-msn-02-zeong",
     "eg-4573102611284": "sf-bandai-gundamplanet-entry-grade-kamen-rider-saber",
@@ -57120,7 +57116,7 @@
     "97695": "sf-bandai-usagundamstore-mg-1-100-full-armor-zz-gundam-ver-ka",
     "53768": "sf-bandai-usagundamstore-mgsd-destiny-gundam",
     "35235": "sf-bandai-usagundamstore-hggq-1-144-challia-bulls-rick-dom-gq",
-    "57457": "sf-bandai-usagundamstore-hggq-1-144-sieg-axe-endymion-unit-awakening",
+    "57457": "sf-bandai-gundamplanet-hg-gms-ω-gquuuuuux-endymion-unit-awakened",
     "2723566": "sf-bandai-usagundamstore-clear-action-base-7-1-144-mirror-seal-set",
     "1008659": "sf-bandai-usagundamstore-1-144-rx-78-2-gundam-model-kit",
     "2783943": "sf-bandai-usagundamstore-the-idolmaster-shiny-colors-30-minutes-sisters-asahi-se",
@@ -57690,7 +57686,7 @@
     "5678368356": "sf-bandai-usagundamstore-30-minutes-sisters-sis-d00-nevarlia-color-a-model-kit",
     "987589086": "sf-bandai-usagundamstore-the-witch-from-mercury-weapon-display-base",
     "573468333": "sf-bandai-usagundamstore-full-mechanics-1-100-gundam-aerial",
-    "43634443223": "sf-bandai-usagundamstore-mg-1-100-zeta-gundam-ver-ka",
+    "43634443223": "sf-bandai-gundamplanet-mg-msz-006-zeta-gundam-ver-ka",
     "564681": "sf-bandai-usagundamstore-mgsd-freedom-gundam",
     "2065740": "sf-bandai-usagundamstore-sd-gundam-bb-senshi-333-o-gundam-type-a-c-d",
     "2072473": "sf-bandai-usagundamstore-bb-senshi-bb334-gundam-exia-repair-ii",
@@ -59539,7 +59535,7 @@
     "4549660121855": "sf-bandai-japan-figure-bandai-spirits-1-100-gundam-0080-jim-sniper-ii-model",
     "JF-4543112467287": "sf-bandai-japan-figure-mg-1-100-gat-x105-strike-gundam-iwsp-mobile-suit-gundam-s",
     "JF-4902425700687": "sf-bandai-japan-figure-mg-1-100-rx-178-gundam-mk-ii-titans-specification-mobile-",
-    "4573102616128": "sf-bandai-japan-figure-mg-mobile-suit-gundam-f91-gundam-f91ver-2-0-1-100-scale-c",
+    "4573102616128": "sf-bandai-toyarena-gundam-1-100-mg-f-91-gundam-f91-2-0-model-kit",
     "JF-4543112341129": "sf-bandai-japan-figure-mg-1-100-msn-00100-hyakushiki-valuto-system-mobile-suit-z",
     "JF-4902425744407": "sf-bandai-japan-figure-mg-1-100-ms-09r-rick-dom-mobile-suit-gundam",
     "JF-4543112137814": "sf-bandai-japan-figure-mg-1-100-ms-06f-2-zaku-ii-f2-type-earth-federation-forces",
@@ -59738,7 +59734,7 @@
     "2466963": "sf-bandai-toydojo-copy-of-gundam-29-rg-1-144-msn-04-sazabi-chars-counterattack",
     "2072798": "sf-bandai-toydojo-copy-of-gundam-hg-1-144-rx-78-2-gundam-beyond-global-1",
     "BAS2137798": "sf-bandai-toydojo-bandai-1-100-master-grade-sandrock-endless-waltz",
-    "BAN640154": "sf-bandai-toydojo-gundam-1-100-mg-msz-006-zeta-gundam-ver-ka-model-kit",
+    "BAN640154": "sf-bandai-gundamplanet-mg-msz-006-zeta-gundam-ver-ka",
     "BAN653130": "sf-bandai-toydojo-gundam-the-witch-from-mercury-aerial-03-1-144-hg",
     "BAN642530": "sf-bandai-toydojo-gundam-1-144-hg-wfm-24-the-witch-from-mercury-edm-gb-gundvolva",
     "BAS2555443": "sf-bandai-toydojo-gundam-entry-grade-1-144-rx-78-2-full-weapon-set-model-kit",
@@ -67592,7 +67588,8 @@
     "73573-2": "sf-blokees-evangelion-fantastics-mari-entry-plug",
     "73571-2": "sf-blokees-evangelion-fantastics-asuka-entry-plug",
     "id:ta-86225fd3def6": "ta-86225fd3def6",
-    "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270": "ta-86225fd3def6"
+    "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270": "ta-86225fd3def6",
+    "4573102607652": "sf-bandai-toyarena-gundam-1-60-pg-unleashed-gundam-0079-rx-78-2-gundam-model-kit"
   },
   "collapsed": [
     {
@@ -68198,6 +68195,57 @@
         "SHOWZ5251"
       ],
       "reason": "Showzstore Blokees duplicate: Blokees Galaxy Version case listing is wave 01 parent"
+    },
+    {
+      "keepId": "sf-bandai-toyarena-gundam-1-100-mg-f-91-gundam-f91-2-0-model-kit",
+      "dropId": "sf-bandai-japan-figure-mg-mobile-suit-gundam-f91-gundam-f91ver-2-0-1-100-scale-c",
+      "canonicalSku": "4549660257516",
+      "aliasesAdded": [
+        "4573102616128",
+        "id:sf-bandai-japan-figure-mg-mobile-suit-gundam-f91-gundam-f91ver-2-0-1-100-scale-c"
+      ],
+      "reason": "Shelby (list row 171): MG F91 Ver 2.0 listed twice; keep either"
+    },
+    {
+      "keepId": "sf-bandai-toyarena-gundam-1-60-pg-unleashed-gundam-0079-rx-78-2-gundam-model-kit",
+      "dropId": "sf-bandai-gundamplanet-pg-unleashed-rx-78-2-gundam",
+      "canonicalSku": "4573102590114",
+      "aliasesAdded": [
+        "4573102607652",
+        "pg-4573102607652",
+        "id:sf-bandai-gundamplanet-pg-unleashed-rx-78-2-gundam"
+      ],
+      "reason": "Shelby (list row 171/172): PG Unleashed RX-78-2 listed twice; keep either"
+    },
+    {
+      "keepId": "sf-bandai-gundamplanet-mg-msz-006-zeta-gundam-ver-ka",
+      "dropId": "sf-bandai-usagundamstore-mg-1-100-zeta-gundam-ver-ka",
+      "canonicalSku": "4573102640154",
+      "aliasesAdded": [
+        "43634443223",
+        "id:sf-bandai-usagundamstore-mg-1-100-zeta-gundam-ver-ka"
+      ],
+      "reason": "Shelby (list row 183): MG Zeta Ver.Ka listed three times"
+    },
+    {
+      "keepId": "sf-bandai-gundamplanet-mg-msz-006-zeta-gundam-ver-ka",
+      "dropId": "sf-bandai-toydojo-gundam-1-100-mg-msz-006-zeta-gundam-ver-ka-model-kit",
+      "canonicalSku": "4573102640154",
+      "aliasesAdded": [
+        "BAN640154",
+        "id:sf-bandai-toydojo-gundam-1-100-mg-msz-006-zeta-gundam-ver-ka-model-kit"
+      ],
+      "reason": "Shelby (list row 183): MG Zeta Ver.Ka listed three times"
+    },
+    {
+      "keepId": "sf-bandai-gundamplanet-hg-gms-ω-gquuuuuux-endymion-unit-awakened",
+      "dropId": "sf-bandai-usagundamstore-hggq-1-144-sieg-axe-endymion-unit-awakening",
+      "canonicalSku": "4573102720009",
+      "aliasesAdded": [
+        "57457",
+        "id:sf-bandai-usagundamstore-hggq-1-144-sieg-axe-endymion-unit-awakening"
+      ],
+      "reason": "Shelby (list row 224): HG GQuuuuuuX Endymion Unit Awakened listed twice"
     }
   ],
   "flagged": [

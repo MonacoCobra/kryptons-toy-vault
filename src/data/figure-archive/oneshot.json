@@ -16399,7 +16399,9 @@
       "transformers",
       "mpg",
       "takaratomy",
-      "curated"
+      "curated",
+      "lv-list-row:308",
+      "lv-list-row:309"
     ],
     "source": "curated-mpg",
     "sku": null,
@@ -67230,11 +67232,13 @@
       "alias:kitsap",
       "alias:hasbro-pulse",
       "alias:staractionfigures",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "lv-list-row:104"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-riders-series-6-inch-action-figure-vehicle-set-professor-x-with-hover-chair.jpg?v=1726868732",
-    "sku": "630509775101"
+    "sku": "630509775101",
+    "exclusive": "Amazon"
   },
   {
     "id": "tfss-ss-one-orion",
@@ -158198,7 +158202,8 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "lv-list-row:29"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-dc-rebirth-tim-drake-robin-787926171921.jpg?v=1721852880",
@@ -162200,7 +162205,7 @@
   {
     "id": "mlc-goblin-queen",
     "name": "Goblin Queen",
-    "subtitle": "Madelyne Pryor",
+    "subtitle": "Madelyne Pryor · X-Men '97 II",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
@@ -162217,7 +162222,8 @@
       "sku-gtin",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "lv-list-row:7"
     ],
     "source": "curated",
     "sku": "5010993715497",
@@ -166918,7 +166924,8 @@
       "alias:hasbro-pulse",
       "image-sku",
       "image-bake",
-      "imgsku:toydojo"
+      "imgsku:toydojo",
+      "lv-list-row:69"
     ],
     "source": "curated-bbts-wave2",
     "sku": "HSF9677",
@@ -190451,7 +190458,7 @@
   {
     "id": "ml6-ml-spiderwoman",
     "name": "Spider-Woman",
-    "subtitle": "Jessica Drew Wave6",
+    "subtitle": "Jessica Drew · Spider-Man: Retro Collection 3",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
@@ -190473,7 +190480,8 @@
       "sku-gtin",
       "sku-alias",
       "alias:staractionfigures",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "lv-list-row:13"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legend-infinite-avengers-wave-2-6-inch-spider-woman_image.gif?v=1723135882",
@@ -200069,7 +200077,7 @@
   {
     "id": "d14bs-bs-han-endor2",
     "name": "Han Solo",
-    "subtitle": "Endor Commando",
+    "subtitle": "Endor Commando · 40th Anniversary",
     "line": "Star Wars Black Series",
     "company": "hasbro",
     "kind": "figure",
@@ -200087,7 +200095,8 @@
       "sku-gtin",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "lv-list-row:43"
     ],
     "source": "curated-densify",
     "sku": "5010996309297",
@@ -204664,7 +204673,7 @@
   {
     "id": "mlc-emma-hellfire",
     "name": "Emma Frost",
-    "subtitle": "Hellfire Gala",
+    "subtitle": "Hellfire Gala · Ch'od BAF",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
@@ -204681,7 +204690,8 @@
       "sku-gtin",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "lv-list-row:49"
     ],
     "source": "curated",
     "sku": "653569874423",
@@ -228256,11 +228266,13 @@
     "demand": 1.45,
     "tags": [
       "gi-joe",
-      "curated"
+      "curated",
+      "lv-list-row:165"
     ],
     "source": "curated",
     "sku": null,
-    "imageUrl": null
+    "imageUrl": null,
+    "exclusive": "Target"
   },
   {
     "id": "gt7-gt-41",
@@ -257954,7 +257966,7 @@
   {
     "id": "d14ml-spidey-tobey",
     "name": "Spider-Man",
-    "subtitle": "Tobey Maguire",
+    "subtitle": "Tobey Maguire · Spider-Man - No Way Home",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
@@ -257970,7 +257982,8 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "lv-list-row:10"
     ],
     "source": "curated-densify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996146076a.webp?v=1702510217",
@@ -257979,7 +257992,7 @@
   {
     "id": "d14ml-spidey-andrew",
     "name": "Spider-Man",
-    "subtitle": "Andrew Garfield",
+    "subtitle": "Andrew Garfield · Spider-Man - No Way Home",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
@@ -257998,7 +258011,8 @@
       "imgsku:toyarena",
       "sku:cmdstore",
       "sku-gtin",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "lv-list-row:11"
     ],
     "source": "curated-densify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-studios-spider-man-wave-1-andrew-garfield-spider-man-5010996146083.jpg?v=1696631660",
@@ -331978,7 +331992,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2020-04-01",
+    "releaseDate": "2021-09-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
@@ -331999,7 +332013,8 @@
       "alias:hasbro-pulse",
       "alias:planet-af",
       "alias:legendztoys",
-      "alias:collecticon"
+      "alias:collecticon",
+      "lv-list-row:84"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-retro-spider-man-exclusive-venom-5010993882762.jpg?v=1788473690",
@@ -375580,7 +375595,7 @@
   {
     "id": "d14ml-ghostspider",
     "name": "Ghost-Spider",
-    "subtitle": "Classic",
+    "subtitle": "Classic · Venompool BAF",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
@@ -375600,7 +375615,8 @@
       "sku-alias",
       "alias:toyarena",
       "alias:nerdzoic",
-      "imgsku:mephitsu"
+      "imgsku:mephitsu",
+      "lv-list-row:51"
     ],
     "source": "curated-densify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-venom-series-baf-venompool-ghost-spider-5010993735501.jpg?v=1723114584",
@@ -442401,7 +442417,8 @@
       "toybiz",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "lv-list-row:146"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -465472,7 +465489,8 @@
       "shopify",
       "blokees",
       "inject-small-brands",
-      "kit"
+      "kit",
+      "lv-list-row:286"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0679/6538/6990/files/1521_8241d773-c7e3-4cc7-b433-a797bb5ff89d.webp?v=1765247134",
@@ -481943,7 +481961,9 @@
       "gunpla",
       "inject-model-kits",
       "gundamplanet",
-      "high-grade"
+      "high-grade",
+      "usagundamstore",
+      "lv-list-row:224"
     ],
     "source": "shopify",
     "sku": "4573102720009",
@@ -484843,7 +484863,8 @@
       "gunpla",
       "inject-model-kits",
       "gundamplanet",
-      "high-grade"
+      "high-grade",
+      "lv-list-row:194"
     ],
     "source": "shopify",
     "sku": "4573102688392",
@@ -484868,7 +484889,8 @@
       "gunpla",
       "inject-model-kits",
       "gundamplanet",
-      "high-grade"
+      "high-grade",
+      "lv-list-row:181"
     ],
     "source": "shopify",
     "sku": "4573102688408",
@@ -484893,7 +484915,8 @@
       "gunpla",
       "inject-model-kits",
       "gundamplanet",
-      "high-grade"
+      "high-grade",
+      "lv-list-row:178"
     ],
     "source": "shopify",
     "sku": "4573102688415",
@@ -497043,7 +497066,10 @@
       "gunpla",
       "inject-model-kits",
       "gundamplanet",
-      "master-grade"
+      "master-grade",
+      "usagundamstore",
+      "toydojo",
+      "lv-list-row:183"
     ],
     "source": "shopify",
     "sku": "4573102640154",
@@ -507075,31 +507101,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0671/4769/4277/files/sd-gundam-gg24-v2-gundam-assault-buster-01.jpg?v=1737685146"
   },
   {
-    "id": "sf-bandai-gundamplanet-pg-unleashed-rx-78-2-gundam",
-    "name": "Unleashed RX-78-2 Gundam",
-    "subtitle": "Perfect Grade",
-    "line": "Perfect Grade",
-    "company": "bandai",
-    "kind": "kit",
-    "releaseDate": "2025-01-23",
-    "msrp": 298.95,
-    "scale": "1/60",
-    "demand": 1.0,
-    "tags": [
-      "archive",
-      "shopify",
-      "bandai",
-      "kit",
-      "gunpla",
-      "inject-model-kits",
-      "gundamplanet",
-      "perfect-grade"
-    ],
-    "source": "shopify",
-    "sku": "4573102607652",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0671/4769/4277/files/pg-unleashed-rx-78-2-gundam-gp.jpg?v=1737685585"
-  },
-  {
     "id": "sf-bandai-gundamplanet-banpresto-sd-gundam-dark-knight-gundam-mk-ii",
     "name": "Banpresto Gundam Dark Knight Gundam Mk-II",
     "subtitle": "SD Gundam",
@@ -512472,31 +512473,6 @@
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/8355/files/k8Wk7vexQrA67Fc1_aedbf086-d1c5-43a8-8f38-15dbd4a4f8b2.jpg?v=1771595059",
-    "sku": null
-  },
-  {
-    "id": "sf-bandai-usagundamstore-hggq-1-144-sieg-axe-endymion-unit-awakening",
-    "name": "HGGQ #13 GQuuuuuuX (Endymion Unit Awakening",
-    "subtitle": "High Grade",
-    "line": "High Grade",
-    "company": "bandai",
-    "kind": "kit",
-    "releaseDate": "2025-08-25",
-    "msrp": 23.19,
-    "scale": "1/144",
-    "demand": 1.0,
-    "tags": [
-      "archive",
-      "shopify",
-      "bandai",
-      "kit",
-      "gunpla",
-      "inject-model-kits",
-      "usagundamstore",
-      "high-grade"
-    ],
-    "source": "shopify",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0727/8355/files/5fivQ6PltD601OCZ_200a265e-0382-4668-ae34-0e34d01831fb.jpg?v=1767647873",
     "sku": null
   },
   {
@@ -526722,31 +526698,6 @@
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/8355/products/153_5239_o_1gtih90ou11jo8ld1mua4fkjvg23_c91b100e-aba4-46c2-ac4e-3de4631d854e.jpg?v=1762278823",
-    "sku": null
-  },
-  {
-    "id": "sf-bandai-usagundamstore-mg-1-100-zeta-gundam-ver-ka",
-    "name": "Zeta Gundam (Ver.Ka",
-    "subtitle": "Master Grade",
-    "line": "Master Grade",
-    "company": "bandai",
-    "kind": "kit",
-    "releaseDate": "2022-09-28",
-    "msrp": 86.99,
-    "scale": "1/100",
-    "demand": 1.0,
-    "tags": [
-      "archive",
-      "shopify",
-      "bandai",
-      "kit",
-      "gunpla",
-      "inject-model-kits",
-      "usagundamstore",
-      "master-grade"
-    ],
-    "source": "shopify",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0727/8355/products/153_5223_o_1gdplns5j1bml2am1js9bd1jqr23_72f71e81-deca-463c-a40f-ce9e74b5f23e.jpg?v=1762278822",
     "sku": null
   },
   {
@@ -549643,7 +549594,9 @@
       "gunpla",
       "inject-model-kits",
       "toyarena",
-      "perfect-grade"
+      "perfect-grade",
+      "gundamplanet",
+      "lv-list-row:172"
     ],
     "source": "shopify",
     "sku": "4573102590114",
@@ -551718,7 +551671,8 @@
       "gunpla",
       "inject-model-kits",
       "toyarena",
-      "high-grade"
+      "high-grade",
+      "lv-list-row:187"
     ],
     "source": "shopify",
     "sku": "4573102582058",
@@ -562568,7 +562522,9 @@
       "gunpla",
       "inject-model-kits",
       "toyarena",
-      "master-grade"
+      "master-grade",
+      "japan-figure",
+      "lv-list-row:171"
     ],
     "source": "shopify",
     "sku": "4549660257516",
@@ -572593,7 +572549,8 @@
       "gunpla",
       "inject-model-kits",
       "japan-figure",
-      "master-grade"
+      "master-grade",
+      "lv-list-row:235"
     ],
     "source": "shopify",
     "sku": "4543112813497",
@@ -573023,31 +572980,6 @@
     "source": "shopify",
     "sku": "4902425700687",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/8f5c73524b079269426eaf0a00f31038.webp?v=1768591743"
-  },
-  {
-    "id": "sf-bandai-japan-figure-mg-mobile-suit-gundam-f91-gundam-f91ver-2-0-1-100-scale-c",
-    "name": "Mobile Suit Gundam F91 Gundam F91Ver.2.0 Color Coded",
-    "subtitle": "Master Grade",
-    "line": "Master Grade",
-    "company": "bandai",
-    "kind": "kit",
-    "releaseDate": "2023-02-23",
-    "msrp": 65.54,
-    "scale": "1/100",
-    "demand": 1.0,
-    "tags": [
-      "archive",
-      "shopify",
-      "bandai",
-      "kit",
-      "gunpla",
-      "inject-model-kits",
-      "japan-figure",
-      "master-grade"
-    ],
-    "source": "shopify",
-    "sku": "4573102616128",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0568/2298/8958/products/Mg-Mobile-Suit-Gundam-F91-Gundam-F91Ver.2.0-1100-Scale-Color-Coded-Plastic-Model-Japan-Figure-4573102616128-0.jpg?v=1676923311"
   },
   {
     "id": "sf-bandai-japan-figure-mg-1-100-msn-00100-hyakushiki-valuto-system-mobile-suit-z",
@@ -578072,31 +578004,6 @@
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0564/2783/9650/products/61QbEQmcxAL._SL1024___53210.jpg?v=1669327450",
-    "sku": null
-  },
-  {
-    "id": "sf-bandai-toydojo-gundam-1-100-mg-msz-006-zeta-gundam-ver-ka-model-kit",
-    "name": "MSZ-006 Zeta Gundam Ver Ka",
-    "subtitle": "Master Grade",
-    "line": "Master Grade",
-    "company": "bandai",
-    "kind": "kit",
-    "releaseDate": "2023-08-11",
-    "msrp": 79.99,
-    "scale": "1/100",
-    "demand": 1.0,
-    "tags": [
-      "archive",
-      "shopify",
-      "bandai",
-      "kit",
-      "gunpla",
-      "inject-model-kits",
-      "toydojo",
-      "master-grade"
-    ],
-    "source": "shopify",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0564/2783/9650/files/FrTSkecaEAIRPOA.webp?v=1691796457",
     "sku": null
   },
   {
@@ -595211,7 +595118,8 @@
       "mephitsu-listing",
       "gi-joe-classified",
       "gi-joe",
-      "classified"
+      "classified",
+      "lv-list-row:74"
     ],
     "source": "mephitsu-listing",
     "imageUrl": "https://static.wixstatic.com/media/adc447_431d23a514f44c669d0dfd6953bd1eae~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_431d23a514f44c669d0dfd6953bd1eae~mv2.jpg"
@@ -595885,7 +595793,8 @@
       "dcuc",
       "mattel",
       "curated",
-      "real-fill"
+      "real-fill",
+      "lv-list-row:296"
     ],
     "source": "curated-dcuc-real-fill"
   },
@@ -632403,7 +632312,8 @@
       "kit",
       "set-parent",
       "src:showzstore",
-      "showz:7890"
+      "showz:7890",
+      "lv-list-row:304"
     ],
     "source": "blokees-store",
     "sku": "71175-2",
@@ -655784,7 +655694,8 @@
       "curated",
       "inject-showzstore-3p-official",
       "src:showzstore",
-      "showz:5876"
+      "showz:5876",
+      "lv-list-row:265"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -711397,8 +711308,7 @@
       "date-precision:year",
       "lv-list-row:52"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-spider-man-infinity-saga-ii-2023",
@@ -711442,8 +711352,7 @@
       "date-precision:year",
       "lv-list-row:56"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-chameleon-spider-man-retro-collection-5-2025",
@@ -711465,8 +711374,7 @@
       "date-precision:year",
       "lv-list-row:75"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-spider-man-unlimited-spider-man-retro-collection-5-2025",
@@ -711489,8 +711397,7 @@
       "lv-list-row:76",
       "lv-list-row:234"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-captain-america-secret-wars-2024",
@@ -711602,8 +711509,7 @@
       "date-precision:year",
       "lv-list-row:82"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-thor-terrax-2012",
@@ -711780,8 +711686,7 @@
       "date-precision:year",
       "lv-list-row:94"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-superior-spider-man-marvel-85th-anniversary-2024",
@@ -711825,8 +711730,7 @@
       "date-precision:year",
       "lv-list-row:96"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-kaine-spider-man-retro-collection-5-2025",
@@ -711848,8 +711752,7 @@
       "date-precision:year",
       "lv-list-row:97"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-hallow-s-eve-spider-man-retro-collection-4-2024",
@@ -711893,8 +711796,7 @@
       "date-precision:year",
       "lv-list-row:99"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-cyclops-nemesis-2025",
@@ -711916,8 +711818,7 @@
       "date-precision:year",
       "lv-list-row:100"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-gambit-nemesis-2025",
@@ -711939,8 +711840,7 @@
       "date-precision:year",
       "lv-list-row:105"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-fabian-cortez-nemesis-2025",
@@ -711962,8 +711862,7 @@
       "date-precision:year",
       "lv-list-row:106"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-star-wars-black-series-clone-commander-bacara-revenge-of-the-sith-action-figure-2025",
@@ -712006,8 +711905,7 @@
       "date-precision:year",
       "lv-list-row:111"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-dark-avengers-warbird-2025",
@@ -712029,8 +711927,7 @@
       "date-precision:year",
       "lv-list-row:112"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-human-torch-ronan-2007",
@@ -712140,8 +712037,7 @@
       "date-precision:year",
       "lv-list-row:119"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-archangel-2025",
@@ -712163,8 +712059,7 @@
       "date-precision:year",
       "lv-list-row:120"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-ghost-rider-marvel-85th-anniversary-2024",
@@ -712208,8 +712103,7 @@
       "date-precision:year",
       "lv-list-row:122"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-doctor-spectrum-2023",
@@ -712231,8 +712125,7 @@
       "date-precision:year",
       "lv-list-row:123"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-iron-man-controller-2022",
@@ -712588,8 +712481,7 @@
       "date-precision:year",
       "lv-list-row:151"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-marvel-legends-nick-fury-2025",
@@ -713632,8 +713524,7 @@
       "date-precision:year",
       "lv-list-row:272"
     ],
-    "source": "legendsverse-export-shelby",
-    "exclusive": "Fan Channel"
+    "source": "legendsverse-export-shelby"
   },
   {
     "id": "lv-hasbro-transformers-autobot-blaster-2026",
@@ -713718,6 +713609,528 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:294"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-marvel-legends-spider-man-spider-armor-mk-i-spider-man-retro-collection-2-2022",
+    "name": "Spider-Man",
+    "subtitle": "Spider-Armor MK I · Spider-Man: Retro Collection 2",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2022-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:16"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-marvel-legends-spider-man-amazing-fantasy-15-spider-man-retro-collection-2-2022",
+    "name": "Spider-Man",
+    "subtitle": "Amazing Fantasy #15 · Spider-Man: Retro Collection 2",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2022-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:83"
+    ],
+    "source": "legendsverse-export-shelby",
+    "exclusive": "Target"
+  },
+  {
+    "id": "lv-diamondselect-marvel-select-spiderman-play-station-2023",
+    "name": "Spiderman Play Station",
+    "subtitle": "",
+    "line": "Marvel Select",
+    "company": "diamondselect",
+    "kind": "figure",
+    "releaseDate": "2023-01-01",
+    "msrp": 0,
+    "scale": "7\"",
+    "demand": 1.0,
+    "tags": [
+      "diamondselect",
+      "marvel",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:54"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-marvel-legends-punisher-war-journal-2-pack-2024",
+    "name": "Punisher",
+    "subtitle": "War Journal 2-Pack",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2024-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:55"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-marvel-legends-she-hulk-iron-man-retro-collection-ii-2024",
+    "name": "She-Hulk",
+    "subtitle": "Iron Man: Retro Collection II",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2024-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:57"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-marvel-legends-black-cat-kingpin-baf-2018",
+    "name": "Black Cat",
+    "subtitle": "Kingpin BAF",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2018-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:87"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-marvel-legends-spider-man-symbiote-suit-2025",
+    "name": "Spider-Man (Symbiote Suit)",
+    "subtitle": "",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2025-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:108"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-marvel-legends-spider-man-2025-release-2025",
+    "name": "Spider-Man",
+    "subtitle": "2025 release",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2025-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:109"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-marvel-legends-jean-grey-uncanny-x-men-2025",
+    "name": "Jean Grey",
+    "subtitle": "Uncanny X-Men",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2025-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:117"
+    ],
+    "source": "legendsverse-export-shelby",
+    "exclusive": "Target"
+  },
+  {
+    "id": "lv-hasbro-marvel-legends-storm-uncanny-x-men-2025",
+    "name": "Storm",
+    "subtitle": "Uncanny X-Men",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2025-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:141"
+    ],
+    "source": "legendsverse-export-shelby",
+    "exclusive": "Target"
+  },
+  {
+    "id": "lv-hasbro-marvel-legends-x-23-warpath-x-force-2-pack-2025",
+    "name": "X-23 & Warpath",
+    "subtitle": "X-Force 2-Pack",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2025-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:118"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-marvel-legends-she-hulk-fantastic-four-2025",
+    "name": "She-Hulk",
+    "subtitle": "Fantastic Four",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2025-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:129"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-marvel-legends-iceman-secret-wars-2026",
+    "name": "Iceman",
+    "subtitle": "Secret Wars",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2026-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:140"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-marvel-legends-beast-astonishing-x-men-mini-comics-series-ii-2025",
+    "name": "Beast (Astonishing X-Men)",
+    "subtitle": "Mini Comics Series II",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2025-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:154"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-marvel-legends-onslaught-2026",
+    "name": "Onslaught",
+    "subtitle": "",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2026-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:277"
+    ],
+    "source": "legendsverse-export-shelby",
+    "exclusive": "Target"
+  },
+  {
+    "id": "lv-mcfarlane-dc-multiverse-nightwing-batman-knightfall-2024",
+    "name": "Nightwing (Batman: Knightfall)",
+    "subtitle": "",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "figure",
+    "releaseDate": "2024-01-01",
+    "msrp": 0,
+    "scale": "7\"",
+    "demand": 1.0,
+    "tags": [
+      "mcfarlane",
+      "dc",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:27"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-mcfarlane-dc-multiverse-gold-label-lex-luthor-power-suit-gold-label-2022",
+    "name": "Lex Luthor Power Suit (Gold Label)",
+    "subtitle": "",
+    "line": "DC Multiverse Gold Label",
+    "company": "mcfarlane",
+    "kind": "figure",
+    "releaseDate": "2022-01-01",
+    "msrp": 0,
+    "scale": "7\"",
+    "demand": 1.0,
+    "tags": [
+      "mcfarlane",
+      "dc",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:37"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-mcfarlane-dc-multiverse-superman-action-comics-1-2021",
+    "name": "Superman",
+    "subtitle": "Action Comics #1",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "figure",
+    "releaseDate": "2021-01-01",
+    "msrp": 0,
+    "scale": "7\"",
+    "demand": 1.0,
+    "tags": [
+      "mcfarlane",
+      "dc",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:137"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-star-wars-black-series-deluxe-dark-trooper-the-mandalorian-2024",
+    "name": "Deluxe Dark Trooper (The Mandalorian)",
+    "subtitle": "",
+    "line": "Star Wars Black Series",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2024-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "star-wars",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:44"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-star-wars-black-series-mara-jade-comic-2023",
+    "name": "Mara Jade (Comic)",
+    "subtitle": "",
+    "line": "Star Wars Black Series",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2023-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "star-wars",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:102"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-mattel-he-man-and-the-masters-of-the-universe-he-man-and-the-masters-of-the-universe-he-man-2021",
+    "name": "He-Man and the Masters of the Universe He-Man",
+    "subtitle": "",
+    "line": "He-Man and the Masters of the Universe",
+    "company": "mattel",
+    "kind": "figure",
+    "releaseDate": "2021-01-01",
+    "msrp": 0,
+    "scale": "",
+    "demand": 1.0,
+    "tags": [
+      "mattel",
+      "motu",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:191"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-mattel-he-man-and-the-masters-of-the-universe-he-man-and-the-masters-of-the-universe-skeletor-20",
+    "name": "He-Man and the Masters of the Universe Skeletor",
+    "subtitle": "",
+    "line": "He-Man and the Masters of the Universe",
+    "company": "mattel",
+    "kind": "figure",
+    "releaseDate": "2021-01-01",
+    "msrp": 0,
+    "scale": "",
+    "demand": 1.0,
+    "tags": [
+      "mattel",
+      "motu",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:192"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-transformers-studio-series-the-transformers-the-movie-studio-series-86-voyager-class-skyw",
+    "name": "The Transformers: The Movie Studio Series 86 Voyager Class Skywarp",
+    "subtitle": "",
+    "line": "Transformers Studio Series",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2026-01-01",
+    "msrp": 0,
+    "scale": "",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "transformers",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:270"
+    ],
+    "source": "legendsverse-export-shelby"
+  },
+  {
+    "id": "lv-hasbro-star-wars-black-series-boba-fett-2016",
+    "name": "Boba Fett",
+    "subtitle": "",
+    "line": "Star Wars Black Series",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2016-01-01",
+    "msrp": 0,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "hasbro",
+      "star-wars",
+      "legendsverse-export",
+      "shelby-collection",
+      "date-precision:year",
+      "lv-list-row:73"
     ],
     "source": "legendsverse-export-shelby"
   }
