@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T05:21:47Z",
+  "generatedAt": "2026-09-26T17:55:29Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-09-19T05:21:45.564258+00:00",
+    "after": "2026-09-19T17:55:28.255356+00:00",
     "before": null
   },
   "fetch": {
@@ -50,13 +50,13 @@
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9032,
+    "indexedRows": 9153,
     "mode": "apply"
   },
   "summary": {
     "fetchedPosts": 21,
-    "acceptedCandidates": 3,
-    "rejectedRows": 18,
+    "acceptedCandidates": 2,
+    "rejectedRows": 19,
     "byCompany": {
       "hasbro": {
         "accepted": 0,
@@ -67,8 +67,8 @@
         "rejected": 1
       },
       "neca": {
-        "accepted": 1,
-        "rejected": 0
+        "accepted": 0,
+        "rejected": 1
       },
       "jazwares": {
         "accepted": 0,
@@ -111,33 +111,14 @@
       "sponsor-newsletter": 3,
       "no-new-product-identity": 1,
       "company-not-allowlisted": 8,
+      "already-in-oneshot": 3,
       "company-unknown": 3,
-      "already-in-oneshot": 2,
       "no-explicit-figure": 1
     },
-    "applied": 1,
+    "applied": 0,
     "skippedApply": 2
   },
   "candidates": [
-    {
-      "decision": "accept",
-      "name": "Big Bird",
-      "company": "neca",
-      "line": "NECA Ultimate",
-      "year": 2026,
-      "releaseWindow": null,
-      "variant": "Sesame Street – NYCC 2026 Exclusive Blue *UPDATE*",
-      "sourceUrl": "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Blue-Big-Bird-Preview.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599270,
-      "postYear": 2026,
-      "pack": null,
-      "title": "Sesame Street – NECA NYCC 2026 Exclusive Blue Big Bird *UPDATE*",
-      "rationale": "neca via class:companies-neca; line=NECA Ultimate; variant=Sesame Street – NYCC 2026 Exclusive Blue *UPDATE*; year=2026; new/reveal/pre-order/official-image signal"
-    },
     {
       "decision": "accept",
       "name": "Jean Grey",
@@ -267,6 +248,27 @@
       "toyarkPostId": 599418,
       "title": "MOTU Origins Two Bad Pre-Order",
       "rationale": "Recognized mattel via class:companies-mattel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "already-in-oneshot",
+      "name": "Big Bird",
+      "company": "neca",
+      "line": "NECA Ultimate",
+      "year": 2026,
+      "releaseWindow": null,
+      "variant": "Sesame Street – NYCC 2026 Exclusive Blue *UPDATE*",
+      "sourceUrl": "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Blue-Big-Bird-Preview.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599270,
+      "title": "Sesame Street – NECA NYCC 2026 Exclusive Blue Big Bird *UPDATE*",
+      "oneshotIds": [
+        "ta-86225fd3def6"
+      ],
+      "rationale": "Identity key already in oneshot (ta-86225fd3def6)."
     },
     {
       "decision": "reject",
@@ -517,22 +519,7 @@
       "rationale": "Recognized hiya via class:companies-hiya-toys; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     }
   ],
-  "applied": [
-    {
-      "id": "ta-86225fd3def6",
-      "name": "Big Bird",
-      "company": "neca",
-      "line": "NECA Ultimate",
-      "year": 2026,
-      "variant": "Sesame Street – NYCC 2026 Exclusive Blue *UPDATE*",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Blue-Big-Bird-Preview.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270",
-      "toyarkPostId": 599270
-    }
-  ],
+  "applied": [],
   "applySkipped": [
     {
       "name": "Jean Grey",
@@ -554,11 +541,11 @@
     }
   ],
   "applyStats": {
-    "accepted": 3,
-    "applied": 1,
+    "accepted": 2,
+    "applied": 0,
     "skippedApply": 2,
-    "aliasAdded": 2,
-    "withImage": 1,
+    "aliasAdded": 0,
+    "withImage": 0,
     "cap": 50,
     "blocker": null
   }
