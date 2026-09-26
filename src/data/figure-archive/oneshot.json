@@ -184474,7 +184474,16 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "dc-multiverse",
+      "curated",
+      "sku-alias",
+      "alias:solarisjapan",
+      "alias:staractionfigures",
+      "alias:toynk",
+      "alias:indemandtoys",
+      "alias:kitsap",
+      "lv-list-row:30"
     ],
     "source": "curated-densify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-injustice-gaming-wave-10-superman-787926153965-pkg2.jpg?v=1699040147",
@@ -211970,38 +211979,6 @@
     "imageUrl": null
   },
   {
-    "id": "mf10-mf-39",
-    "name": "DC Multiverse Injustice Superman",
-    "subtitle": "DC Multiverse",
-    "line": "DC Multiverse",
-    "company": "mcfarlane",
-    "kind": "figure",
-    "releaseDate": "2023-03-01",
-    "msrp": 22.99,
-    "scale": "7\"",
-    "demand": 1.5,
-    "tags": [
-      "mcfarlane",
-      "dc-multiverse",
-      "spawn",
-      "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore",
-      "sku-alias",
-      "alias:solarisjapan",
-      "alias:staractionfigures",
-      "alias:toynk",
-      "alias:indemandtoys",
-      "alias:kitsap"
-    ],
-    "source": "curated-bbts-wave10",
-    "sku": "787926180367",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-jla-rock-of-ages-batman-injustice-gang-787926180367.jpg?v=1776376409"
-  },
-  {
     "id": "mcf5-mcf-cyclone",
     "name": "Cyclone",
     "subtitle": "Black Adam",
@@ -218235,7 +218212,7 @@
   {
     "id": "ml6-ml-jean-phoenix",
     "name": "Jean Grey",
-    "subtitle": "Dark Phoenix Wave6",
+    "subtitle": "Dark Phoenix · X-Men Retro Collection II",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
@@ -218248,15 +218225,9 @@
       "marvel",
       "legends",
       "curated",
-      "sku-bake",
-      "sku:hobbyfigures",
-      "image-sku",
-      "image-bake",
-      "imgsku:hobbyfigures"
+      "lv-list-row:50"
     ],
-    "source": "curated-bbts-wave6",
-    "sku": "HASF9134",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0611/4030/4091/files/Marvel-Legends-Action-Figure-Jean-Grey-Phoenix-For-6.jpg?v=1721783787"
+    "source": "curated-bbts-wave6"
   },
   {
     "id": "ss4-ss86-jazz",
@@ -377340,11 +377311,11 @@
   {
     "id": "d14ml-jean-phoenix",
     "name": "Jean Grey",
-    "subtitle": "Phoenix Force",
+    "subtitle": "Phoenix Force Deluxe",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2018-09-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.55,
@@ -377356,7 +377327,10 @@
       "sku:staractionfigures",
       "image-sku",
       "image-bake",
-      "imgsku:staractionfigures"
+      "imgsku:staractionfigures",
+      "sku:hobbyfigures",
+      "lv-list-row:67",
+      "date-precision:year"
     ],
     "source": "curated-densify",
     "sku": "F9134",
@@ -468829,7 +468803,14 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "transformers",
+      "2p",
+      "curated",
+      "inject-showzstore-3p-official",
+      "src:showzstore",
+      "showz:5620",
+      "lv-list-row:251"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/generation_1_starscream_amk_pro_series_01.jpg?v=1778583484",
@@ -468852,7 +468833,14 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "transformers",
+      "2p",
+      "curated",
+      "inject-showzstore-3p-official",
+      "src:showzstore",
+      "showz:5600",
+      "lv-list-row:210"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/generation_1_optimus_prime_amk_pro_series_01.jpg?v=1778583095",
@@ -469454,7 +469442,14 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "transformers",
+      "2p",
+      "curated",
+      "inject-showzstore-3p-official",
+      "src:showzstore",
+      "showz:5429",
+      "lv-list-row:211"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/generation_1_megatron_amk_pro_series_01.jpg?v=1778582894",
@@ -568749,7 +568744,8 @@
       "gunpla",
       "inject-model-kits",
       "toyarena",
-      "high-grade"
+      "high-grade",
+      "lv-list-row:177"
     ],
     "source": "shopify",
     "sku": "4573102592422",
@@ -592947,7 +592943,8 @@
       "pop-mart",
       "sku-gtin",
       "sku-bake",
-      "image-bake"
+      "image-bake",
+      "lv-list-row:169"
     ],
     "source": "inject-gong-dc",
     "sku": "6941848276711",
@@ -633075,7 +633072,8 @@
       "shopify",
       "densify-blokees-tf",
       "kit",
-      "set-parent"
+      "set-parent",
+      "lv-list-row:258"
     ],
     "source": "blokees-store",
     "sku": "71141-2",
@@ -656008,31 +656006,6 @@
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2309/products/21/fa67f908d3.jpg.500x500.jpg"
   },
   {
-    "id": "yolopark-g1-optimus-prime-pre-assembled-model-kit",
-    "name": "G1 Optimus Prime Pre-Assembled Model Kit",
-    "subtitle": "Show.Z #5600",
-    "line": "Yolopark AMK PRO",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2023-09-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5600"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2309/products/28/20f27e791f.jpg.500x500.jpg"
-  },
-  {
     "id": "yolopark-rise-of-the-beasts-mirage-pre-assembled-mo",
     "name": "Rise of the Beasts Mirage Pre-Assembled Model Kit",
     "subtitle": "Show.Z #5618",
@@ -656081,31 +656054,6 @@
     "property": "transformers",
     "party": "2p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2410/photo/872e1d6d22.jpg.500x500.jpg"
-  },
-  {
-    "id": "yolopark-g1-starscream-pre-assembled-model-kit",
-    "name": "G1 Starscream Pre-Assembled Model Kit",
-    "subtitle": "Show.Z #5620",
-    "line": "Yolopark AMK PRO",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2024-07-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5620"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2407/products/24/11bbe73385.jpg.500x500.jpg"
   },
   {
     "id": "yolopark-soundwave-pre-assembled-model-kit",
@@ -656282,31 +656230,6 @@
     "property": "transformers",
     "party": "2p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2310/products/23/a0836cc826.jpg.500x500.jpg"
-  },
-  {
-    "id": "yolopark-g1-megatron-pre-assembled-model-kit",
-    "name": "G1 Megatron Pre-Assembled Model Kit",
-    "subtitle": "Show.Z #5429",
-    "line": "Yolopark AMK PRO",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2023-08-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5429"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2308/products/02/a8438df1a1.jpg.500x500.jpg"
   },
   {
     "id": "yolopark-rise-of-the-beasts-optimus-prime-model-kit",
@@ -712035,7 +711958,8 @@
       "legendsverse-export",
       "shelby-collection",
       "date-precision:year",
-      "lv-list-row:119"
+      "lv-list-row:119",
+      "lv-list-row:118"
     ],
     "source": "legendsverse-export-shelby"
   },
@@ -713835,9 +713759,9 @@
     "exclusive": "Target"
   },
   {
-    "id": "lv-hasbro-marvel-legends-x-23-warpath-x-force-2-pack-2025",
-    "name": "X-23 & Warpath",
-    "subtitle": "X-Force 2-Pack",
+    "id": "lv-hasbro-marvel-legends-x-23-x-force-2025",
+    "name": "X-23",
+    "subtitle": "X-Force",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",

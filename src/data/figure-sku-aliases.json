@@ -13350,16 +13350,6 @@
       "TLS-BATMNTMICWB08",
       "TLSBATMNTMICWB04"
     ],
-    "mf10-mf-39": [
-      "N-LF-137677",
-      "180527",
-      "180510",
-      "182033",
-      "156812",
-      "MCF-70511-C",
-      "74472",
-      "MF17377"
-    ],
     "hs10-hs-08": [
       "F9042",
       "HAS382559",
@@ -16835,10 +16825,14 @@
       "AMKPM5OP"
     ],
     "sf-yolopark-transformers-generation-1-20cm-starscream-model-kit-amk-pro-series": [
-      "AMKPG1SC"
+      "AMKPG1SC",
+      "SHOWZ5620",
+      "id:yolopark-g1-starscream-pre-assembled-model-kit"
     ],
     "sf-yolopark-amk-pro-series-transformers-g1-20cm-optimus-prime-model-kit": [
-      "AMKPG1OP"
+      "AMKPG1OP",
+      "SHOWZ5600",
+      "id:yolopark-g1-optimus-prime-pre-assembled-model-kit"
     ],
     "sf-yolopark-rise-of-the-beasts-amk-optimus-primal": [
       "YPAMKM7OL",
@@ -16928,7 +16922,9 @@
       "YP30M6OP"
     ],
     "sf-yolopark-amk-pro-transformers-g1-megatron": [
-      "AMKPG1MG"
+      "AMKPG1MG",
+      "SHOWZ5429",
+      "id:yolopark-g1-megatron-pre-assembled-model-kit"
     ],
     "inj-jakks-nintendo-the-super-mario-bros-movie-5-luigi-figure": [
       "JK-LUI1"
@@ -35573,17 +35569,11 @@
     "yolopark-rise-of-the-beasts-ies-series-62cm-optimus-5591": [
       "SHOWZ5591"
     ],
-    "yolopark-g1-optimus-prime-pre-assembled-model-kit": [
-      "SHOWZ5600"
-    ],
     "yolopark-rise-of-the-beasts-mirage-pre-assembled-mo": [
       "SHOWZ5618"
     ],
     "yolopark-the-last-knight-optimus-prime-pre-assemble": [
       "SHOWZ5619"
-    ],
-    "yolopark-g1-starscream-pre-assembled-model-kit": [
-      "SHOWZ5620"
     ],
     "yolopark-soundwave-pre-assembled-model-kit": [
       "SHOWZ5621",
@@ -35610,10 +35600,6 @@
     ],
     "threezero-dlx-transformers-rise-of-the-beasts-scourg": [
       "SHOWZ5423"
-    ],
-    "yolopark-g1-megatron-pre-assembled-model-kit": [
-      "SHOWZ5429",
-      "id:yolopark-g1-megatron-pre-assembled-model-kit"
     ],
     "yolopark-rise-of-the-beasts-optimus-prime-model-kit": [
       "SHOWZ5136"
@@ -43801,6 +43787,20 @@
     "ta-86225fd3def6": [
       "id:ta-86225fd3def6",
       "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270"
+    ],
+    "d14ml-jean-phoenix": [
+      "HASF9134"
+    ],
+    "d14mcf-superman-inj": [
+      "N-LF-137677",
+      "180527",
+      "180510",
+      "182033",
+      "156812",
+      "MCF-70511-C",
+      "74472",
+      "MF17377",
+      "id:mf10-mf-39"
     ]
   },
   "aliasToFigureId": {
@@ -53362,14 +53362,14 @@
     "LS58003": "ls9-ls-14",
     "TLS-BATMNTMICWB08": "ls9-ls-12",
     "TLSBATMNTMICWB04": "ls9-ls-12",
-    "N-LF-137677": "mf10-mf-39",
-    "180527": "mf10-mf-39",
-    "180510": "mf10-mf-39",
-    "182033": "mf10-mf-39",
-    "156812": "mf10-mf-39",
-    "MCF-70511-C": "mf10-mf-39",
-    "74472": "mf10-mf-39",
-    "MF17377": "mf10-mf-39",
+    "N-LF-137677": "d14mcf-superman-inj",
+    "180527": "d14mcf-superman-inj",
+    "180510": "d14mcf-superman-inj",
+    "182033": "d14mcf-superman-inj",
+    "156812": "d14mcf-superman-inj",
+    "MCF-70511-C": "d14mcf-superman-inj",
+    "74472": "d14mcf-superman-inj",
+    "MF17377": "d14mcf-superman-inj",
     "F9042": "hs10-hs-08",
     "HAS382559": "hs10-hs-08",
     "HAS317346": "hs10-hs-08",
@@ -63117,10 +63117,10 @@
     "id:threezero-mdlx-shattered-glass-optimus-prime": "threezero-mdlx-shattered-glass-optimus-prime",
     "SHOWZ5590": "yolopark-rise-of-the-beasts-ies-series-62cm-optimus",
     "SHOWZ5591": "yolopark-rise-of-the-beasts-ies-series-62cm-optimus-5591",
-    "SHOWZ5600": "yolopark-g1-optimus-prime-pre-assembled-model-kit",
+    "SHOWZ5600": "sf-yolopark-amk-pro-series-transformers-g1-20cm-optimus-prime-model-kit",
     "SHOWZ5618": "yolopark-rise-of-the-beasts-mirage-pre-assembled-mo",
     "SHOWZ5619": "yolopark-the-last-knight-optimus-prime-pre-assemble",
-    "SHOWZ5620": "yolopark-g1-starscream-pre-assembled-model-kit",
+    "SHOWZ5620": "sf-yolopark-transformers-generation-1-20cm-starscream-model-kit-amk-pro-series",
     "SHOWZ5621": "yolopark-soundwave-pre-assembled-model-kit",
     "id:yolopark-soundwave-pre-assembled-model-kit": "yolopark-soundwave-pre-assembled-model-kit",
     "SHOWZ5252": "blokees-classic-class-rise-of-the-beasts-bumblebee",
@@ -63133,8 +63133,8 @@
     "SHOWZ5422": "threezero-3z0564-dlx-transformers-rise-of-the-beasts-mirage",
     "3Z0564": "threezero-3z0564-dlx-transformers-rise-of-the-beasts-mirage",
     "SHOWZ5423": "threezero-dlx-transformers-rise-of-the-beasts-scourg",
-    "SHOWZ5429": "yolopark-g1-megatron-pre-assembled-model-kit",
-    "id:yolopark-g1-megatron-pre-assembled-model-kit": "yolopark-g1-megatron-pre-assembled-model-kit",
+    "SHOWZ5429": "sf-yolopark-amk-pro-transformers-g1-megatron",
+    "id:yolopark-g1-megatron-pre-assembled-model-kit": "sf-yolopark-amk-pro-transformers-g1-megatron",
     "SHOWZ5136": "yolopark-rise-of-the-beasts-optimus-prime-model-kit",
     "SHOWZ5137": "yolopark-rise-of-the-beasts-bumblebee-model-kit",
     "SHOWZ5138": "yolopark-rise-of-the-beasts-optimus-primal-model-ki",
@@ -67589,7 +67589,8 @@
     "73571-2": "sf-blokees-evangelion-fantastics-asuka-entry-plug",
     "id:ta-86225fd3def6": "ta-86225fd3def6",
     "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270": "ta-86225fd3def6",
-    "4573102607652": "sf-bandai-toyarena-gundam-1-60-pg-unleashed-gundam-0079-rx-78-2-gundam-model-kit"
+    "4573102607652": "sf-bandai-toyarena-gundam-1-60-pg-unleashed-gundam-0079-rx-78-2-gundam-model-kit",
+    "HASF9134": "d14ml-jean-phoenix"
   },
   "collapsed": [
     {
@@ -68246,6 +68247,53 @@
         "id:sf-bandai-usagundamstore-hggq-1-144-sieg-axe-endymion-unit-awakening"
       ],
       "reason": "Shelby (list row 224): HG GQuuuuuuX Endymion Unit Awakened listed twice"
+    },
+    {
+      "keepId": "d14mcf-superman-inj",
+      "dropId": "mf10-mf-39",
+      "canonicalSku": "787926153965",
+      "aliasesAdded": [
+        "N-LF-137677",
+        "180527",
+        "180510",
+        "182033",
+        "156812",
+        "MCF-70511-C",
+        "74472",
+        "MF17377",
+        "id:mf10-mf-39"
+      ],
+      "reason": "Shelby (list row 30): duplicate 2023 Injustice Superman. mf10-mf-39's barcode 787926180367 and photo belong to McFarlane Batman (Injustice Gang) Red Platinum MCF18036 (2026), so they were not attached to Superman"
+    },
+    {
+      "keepId": "sf-yolopark-amk-pro-series-transformers-g1-20cm-optimus-prime-model-kit",
+      "dropId": "yolopark-g1-optimus-prime-pre-assembled-model-kit",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "SHOWZ5600",
+        "id:yolopark-g1-optimus-prime-pre-assembled-model-kit"
+      ],
+      "reason": "Shelby (list row 210): AMK Pro G1 Optimus Prime listed twice"
+    },
+    {
+      "keepId": "sf-yolopark-amk-pro-transformers-g1-megatron",
+      "dropId": "yolopark-g1-megatron-pre-assembled-model-kit",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "SHOWZ5429",
+        "id:yolopark-g1-megatron-pre-assembled-model-kit"
+      ],
+      "reason": "Shelby (list row 211): AMK Pro G1 Megatron listed twice"
+    },
+    {
+      "keepId": "sf-yolopark-transformers-generation-1-20cm-starscream-model-kit-amk-pro-series",
+      "dropId": "yolopark-g1-starscream-pre-assembled-model-kit",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "SHOWZ5620",
+        "id:yolopark-g1-starscream-pre-assembled-model-kit"
+      ],
+      "reason": "Shelby (list row 251): AMK Pro G1 Starscream listed twice"
     }
   ],
   "flagged": [
