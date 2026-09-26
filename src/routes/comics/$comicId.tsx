@@ -167,13 +167,23 @@ function ComicLadderCrumbs({
       </Link>
       <ChevronRight className="size-3 text-muted" />
       {collected ? (
-        <Link
-          to="/comics"
-          search={{ publisher: comic.publisher, section: "collected" }}
-          className="text-gold hover:underline"
-        >
-          Collected Editions
-        </Link>
+        <>
+          <Link
+            to="/comics"
+            search={{ publisher: comic.publisher, section: "collected" }}
+            className="text-gold hover:underline"
+          >
+            Collected Editions
+          </Link>
+          <ChevronRight className="size-3 text-muted" />
+          <Link
+            to="/comics"
+            search={{ publisher: comic.publisher, section: "collected", series: title }}
+            className="min-w-0 break-words text-gold hover:underline"
+          >
+            {title || "Series unknown"}
+          </Link>
+        </>
       ) : (
         <Link
           to="/comics"

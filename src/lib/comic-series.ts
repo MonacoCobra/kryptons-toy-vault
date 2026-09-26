@@ -456,3 +456,167 @@ export function collectedCountByPublisher(
   }
   return map;
 }
+
+/**
+ * Collected Editions group by series title inside one publisher.
+ *
+ * This is separate from the singles run-year ladder. Trades and manga volumes
+ * of one series stay together even when their cover years span decades, and
+ * a collected `#1` never becomes a singles run anchor.
+ *
+ * Identity is the normalized series base title (`seriesBaseNorm` / GCD series
+ * name already stored on the row). There is no per-issue GCD series id on
+ * catalog rows. Blank series land in one "Series unknown" group — they are
+ * not dropped. Distinct titles that only differ by a bracketed edition
+ * ("One Piece" vs "One Piece [Omnibus Edition]") stay separate.
+ */
+export const COLLECTED_SERIES_UNKNOWN = "Series unknown";
+const COLLECTED_SERIES_UNKNOWN_NORM = "__unknown__";
+
+export function collectedSeriesIdentity(series: string | null | undefined): {
+  title: string;
+  titleNorm: string;
+} {
+  const trimmed = String(series ?? "").trim();
+  if (!trimmed) return { title: COLLECTED_SERIES_UNKNOWN, titleNorm: COLLECTED_SERIES_UNKNOWN_NORM };
+  const title = seriesBaseTitle(trimmed).trim();
+  const titleNorm = seriesBaseNorm(trimmed);
+  if (!title || !titleNorm) {
+    return { title: COLLECTED_SERIES_UNKNOWN, titleNorm: COLLECTED_SERIES_UNKNOWN_NORM };
+  }
+  return { title, titleNorm };
+}
+
+/** Stable key: normalized publisher + normalized series base. No run year. */
+export function makeCollectedSeriesKey(publisher: string, series: string | null | undefined): string {
+  return `${normalizePublisher(publisher)}|${collectedSeriesIdentity(series).titleNorm}`;
+}
+
+export function collectedComicMatchesSeries(
+  comic: { publisher: string; series: string | null | undefined },
+  opts: { publisher: string; seriesTitle: string },
+): boolean {
+  if (normalizePublisher(comic.publisher) !== normalizePublisher(opts.publisher)) return false;
+  return collectedSeriesIdentity(comic.series).titleNorm === collectedSeriesIdentity(opts.seriesTitle).titleNorm;
+}
+
+/**
+ * Volume index from the issue field. Accepts `12`, `#12`, `[12]`.
+ * `nn` / `[nn]` / blank / non-numeric → undefined (sort falls back to title, then date).
+ */
+export function parseVolumeNumber(issue: string | number | null | undefined): number | undefined {
+  let s = String(issue ?? "").trim().toLowerCase();
+  if (!s) return undefined;
+  s = s.replace(/^#+/, "");
+  if (s.startsWith("[") && s.endsWith("]") && s.length >= 2) s = s.slice(1, -1).trim();
+  if (!s || s === "nn") return undefined;
+  const m = s.match(/^(\d+(?:\.\d+)?)/);
+  if (!m) return undefined;
+  const n = Number(m[1]);
+  return Number.isFinite(n) ? n : undefined;
+}
+
+function volumeFallbackTitle(c: { series?: string; issue?: string | number; description?: string }): string {
+  const desc = String(c.description ?? "").trim();
+  if (desc) return desc;
+  return `${c.series ?? ""} ${c.issue ?? ""}`.trim();
+}
+
+/** Oldest first. Missing dates sink so undated books don't jump ahead of real dates. */
+function compareIsoDateAsc(a: string, b: string): number {
+  if (!a && !b) return 0;
+  if (!a) return 1;
+  if (!b) return -1;
+  if (a === b) return 0;
+  return a < b ? -1 : 1;
+}
+
+/**
+ * Volume-number order. Numbered books come first (1, 2, 10).
+ * Books with no volume number sort by title (description, else series) then date.
+ */
+export function sortCollectedVolumes<
+  T extends {
+    id: string;
+    series: string;
+    issue: string | number;
+    description?: string;
+    coverDate?: string;
+    streetDate?: string;
+  },
+>(list: T[]): T[] {
+  return [...list].sort((a, b) => {
+    const na = parseVolumeNumber(a.issue);
+    const nb = parseVolumeNumber(b.issue);
+    if (na != null && nb != null && na !== nb) return na - nb;
+    if (na != null && nb == null) return -1;
+    if (na == null && nb != null) return 1;
+    if (na == null && nb == null) {
+      const byTitle = volumeFallbackTitle(a).localeCompare(volumeFallbackTitle(b), undefined, {
+        sensitivity: "base",
+        numeric: true,
+      });
+      if (byTitle !== 0) return byTitle;
+    }
+    const byDate = compareIsoDateAsc(comicReleaseDate(a), comicReleaseDate(b));
+    if (byDate !== 0) return byDate;
+    return a.id.localeCompare(b.id);
+  });
+}
+
+/**
+ * Series cards for a publisher's collected editions.
+ * `issueCount` is the volume count. `year` is the earliest street/cover year (0 = unknown).
+ * Sample cover is the lowest volume number, then the earliest date.
+ * Singles in `comics` are ignored so this cannot change the singles ladder.
+ */
+export function buildCollectedSeriesList(comics: CatalogComic[], publisher?: string): SeriesRef[] {
+  const want = publisher ? normalizePublisher(publisher) : null;
+  const map = new Map<string, SeriesRef & { _vol: number; _sampleDate: string }>();
+
+  for (const c of comics) {
+    if (!isCollectedComic(c)) continue;
+    if (want && normalizePublisher(c.publisher) !== want) continue;
+    const { title, titleNorm } = collectedSeriesIdentity(c.series);
+    const key = `${normalizePublisher(c.publisher)}|${titleNorm}`;
+    const latestDate = comicReleaseDate(c);
+    const vol = parseVolumeNumber(c.issue);
+    const volN = vol ?? Number.POSITIVE_INFINITY;
+    const year = comicDateYear(c) ?? 0;
+    const prev = map.get(key);
+    if (!prev) {
+      map.set(key, {
+        key,
+        publisher: c.publisher,
+        title,
+        titleNorm,
+        year,
+        issueCount: 1,
+        latestDate,
+        sample: c,
+        _vol: volN,
+        _sampleDate: latestDate,
+      });
+      continue;
+    }
+    prev.issueCount += 1;
+    if (latestDate && (!prev.latestDate || latestDate > prev.latestDate)) prev.latestDate = latestDate;
+    if (year && (!prev.year || year < prev.year)) prev.year = year;
+    const earlier =
+      volN < prev._vol ||
+      (volN === prev._vol && latestDate && (!prev._sampleDate || latestDate < prev._sampleDate));
+    if (earlier) {
+      prev.sample = c;
+      prev._vol = volN;
+      prev._sampleDate = latestDate;
+    }
+  }
+
+  return [...map.values()]
+    .map(({ _vol: _v, _sampleDate: _d, ...rest }) => rest)
+    .sort((a, b) => {
+      const byTitle = a.title.localeCompare(b.title, undefined, { sensitivity: "base" });
+      if (byTitle !== 0) return byTitle;
+      return b.year - a.year;
+    });
+}

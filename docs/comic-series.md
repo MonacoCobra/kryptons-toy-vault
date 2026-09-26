@@ -19,8 +19,21 @@ belong to:
 2. On that publisher page, a **Collected Editions** section appears **above**
    the series list only when the publisher has ≥1 collected-format row. Hidden
    when zero.
-3. Opening it (`?publisher=…&section=collected`) lists those titles with cover,
-   name, **TPB / HC / Omnibus** badge, and year/date.
+3. Opening it (`?publisher=…&section=collected`) lists **series**, not a flat
+   wall of volumes: series name, start year (earliest street/cover year),
+   volume count, and a representative cover (lowest volume number). Sort tabs
+   match the singles series ladder (release date, A–Z, recently acquired).
+4. Opening a series (`?publisher=…&section=collected&series=…`) lists that
+   series' volumes in volume-number order. `nn` / `[nn]` and other non-numeric
+   issues fall back to title, then date. Release date, A–Z, and recently
+   acquired still reorder the volume grid. The list is virtualized.
+
+Series identity is the normalized series name already on each row (the same
+base-title rules as singles). There is no separate GCD series id on catalog
+rows. Blank series land in **Series unknown** instead of disappearing. Edition
+titles that differ in the stored name ("One Piece" vs "One Piece [Omnibus
+Edition]") stay separate. Grouping does not use run-year clustering, so a
+collected `#1` does not split or move the singles ladder.
 
 Compendiums are stored as `tpb` until a dedicated format exists. Global search
 (`q`) still finds collected titles. Singles variant collapse is unchanged.
