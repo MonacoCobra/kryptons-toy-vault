@@ -46,12 +46,12 @@ export function VirtualGrid<T>({
 }) {
   const { base, md, lg } = columns;
   const parentRef = useRef<HTMLDivElement>(null);
-  const [columnCount, setColumnCount] = useState(() =>
-    typeof window === "undefined" ? base : columnsForWidth(window.innerWidth, base, md, lg),
-  );
+  // Always start from `base` so the server HTML and the first client render
+  // describe the same rows. The real width is applied in layout, before paint.
+  const [columnCount, setColumnCount] = useState(base);
   const [scrollMargin, setScrollMargin] = useState(0);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const update = () => setColumnCount(columnsForWidth(window.innerWidth, base, md, lg));
     update();
     window.addEventListener("resize", update);
@@ -84,6 +84,10 @@ export function VirtualGrid<T>({
     estimateSize: () => estimateRowHeight,
     overscan,
     scrollMargin,
+    // Window measurement is 0 until layout. A non-zero initial height lets
+    // SSR and the hydration render emit the first screen instead of an empty
+    // spacer the size of the whole list (thousands of collected editions).
+    initialRect: { width: 0, height: 960 },
   });
 
   useEffect(() => {
@@ -93,6 +97,35 @@ export function VirtualGrid<T>({
   if (!items.length) return null;
 
   const virtualRows = virtualizer.getVirtualItems();
+
+  // If the scroll rect is still 0, paint a short in-flow prefix. Same markup
+  // on the server and the first client render; the virtualizer takes over
+  // once it has a real viewport height.
+  if (virtualRows.length === 0) {
+    const perRow = Math.max(columnCount, 1);
+    const visibleCount = Math.min(items.length, perRow * (overscan + 2));
+    const rows: T[][] = [];
+    for (let i = 0; i < visibleCount; i += perRow) {
+      rows.push(items.slice(i, i + perRow));
+    }
+    return (
+      <div ref={parentRef} className="w-full max-w-full" data-virtual-fallback="">
+        {rows.map((rowItems, index) => (
+          <ul
+            key={index}
+            className={`grid ${gapClassName} pb-3`}
+            style={{ gridTemplateColumns: `repeat(${perRow}, minmax(0, 1fr))` }}
+          >
+            {rowItems.map((item) => (
+              <li key={getKey(item)} className="min-w-0">
+                {renderItem(item)}
+              </li>
+            ))}
+          </ul>
+        ))}
+      </div>
+    );
+  }
 
   return (
     <div
