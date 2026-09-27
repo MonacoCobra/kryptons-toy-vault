@@ -141672,6 +141672,77 @@
         }
       ],
       "seq": 391805
+    },
+    {
+      "row": [
+        "warr-creepy-100",
+        "Creepy",
+        "100",
+        "Warren",
+        "1978-08-01",
+        "",
+        "",
+        "Creepy #100",
+        1.75,
+        "single",
+        0.55,
+        0,
+        "111827,e5e7eb,f8fafc",
+        {
+          "gcdIssueId": "32538",
+          "streetDate": "1978-06-27",
+          "upc": "0716585630008"
+        }
+      ],
+      "seq": 391913
+    },
+    {
+      "row": [
+        "warr-creepy-102-canadian",
+        "Creepy",
+        "102",
+        "Warren",
+        "1978-10-01",
+        "",
+        "",
+        "Creepy #102",
+        2.0,
+        "single",
+        0.55,
+        0,
+        "111827,e5e7eb,f8fafc",
+        {
+          "gcdIssueId": "2108420",
+          "streetDate": "1978-01-01",
+          "upc": "0716585883510",
+          "variant": "Canadian"
+        }
+      ],
+      "seq": 391929
+    },
+    {
+      "row": [
+        "warr-eerie-96-canadian",
+        "Eerie",
+        "96",
+        "Warren",
+        "1978-10-01",
+        "",
+        "",
+        "Eerie #96",
+        2.0,
+        "single",
+        0.55,
+        0,
+        "111827,e5e7eb,f8fafc",
+        {
+          "gcdIssueId": "2044554",
+          "streetDate": "1978-01-01",
+          "upc": "0716585894610",
+          "variant": "Canadian"
+        }
+      ],
+      "seq": 392023
     }
   ]
 }
