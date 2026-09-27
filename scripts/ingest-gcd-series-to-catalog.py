@@ -496,6 +496,196 @@ def identity_key(series: str, issue: str, publisher: str, variant: str = "") -> 
     return f"{base}|variant:{v}" if v else base
 
 
+# ---------------------------------------------------------------------------
+# Volumes (GCD series) — presence and naming are decided per dump series.
+#
+# Several GCD series often share one catalog series name within a publisher
+# (Superman 1939 / 1987 / 2011 / 2016 / 2018 / 2023, plus trade series named
+# "Superman"). The viewer groups rows by series|issue|publisher, so:
+#   * the oldest volume keeps the plain catalog name; every later volume gets
+#     " (YYYY)" from gcd_series.year_began (" (YYYY Vol N)" when two later
+#     volumes began the same year) — see compute_volume_suffixes;
+#   * "already in catalog" is decided by gcdIssueId first, then by
+#     series|issue|publisher(+variant) only against rows of the SAME volume
+#     (linked rows by their GCD series; unlinked rows by cover year ±1) —
+#     never across volumes (VolumePresence).
+# ---------------------------------------------------------------------------
+
+YEAR_SUFFIX_RE = re.compile(r"\s*\(\s*(?:19|20)\d{2}(?:\s*vol\.?\s*\d+)?[^)]*\)\s*$", re.I)
+
+
+def has_year_suffix(name: str | None) -> bool:
+    return bool(YEAR_SUFFIX_RE.search(str(name or "")))
+
+
+def volume_group_key(series_name: str, dump_publisher: str) -> tuple[str, str]:
+    label = catalog_publisher_label(series_name or "", dump_publisher or "")
+    pub = locg.PUB_CANON.get(locg.norm_pub_key(label), label)
+    return locg.series_match_key(series_name or ""), locg.norm_pub_key(pub)
+
+
+def compute_volume_suffixes(
+    series_rows: list[dict],
+    publisher_names: dict[str, str],
+    collected_series: set[str] | None = None,
+) -> dict[str, str]:
+    """series id → "" (oldest volume / plain name) or "(YYYY)" / "(YYYY Vol N)".
+
+    Only series whose (series_match_key, catalog publisher) group holds 2+ dump
+    series appear in the result. Order: year_began, periodicals before
+    collected-edition series, then GCD id.
+    """
+    collected_series = collected_series or set()
+    groups: dict[tuple[str, str], list[dict]] = {}
+    for row in series_rows:
+        name = str(row.get("name") or "")
+        key = volume_group_key(name, publisher_names.get(str(row.get("publisher_id")), ""))
+        if not key[0]:
+            continue
+        groups.setdefault(key, []).append(row)
+    out: dict[str, str] = {}
+    for rows in groups.values():
+        if len(rows) < 2:
+            continue
+
+        def order(r: dict) -> tuple:
+            y = r.get("year_began")
+            y = int(y) if str(y or "").isdigit() else 9999
+            return (y, 1 if str(r.get("id")) in collected_series else 0, int(r.get("id") or 0))
+
+        rows = sorted(rows, key=order)
+        used: Counter[int] = Counter()
+        for i, r in enumerate(rows):
+            sid = str(r.get("id"))
+            if i == 0:
+                out[sid] = ""
+                continue
+            y = order(r)[0]
+            used[y] += 1
+            out[sid] = f"({y})" if used[y] == 1 else f"({y} Vol {used[y]})"
+    return out
+
+
+def volume_series_name(catalog_name: str, dump_name: str, suffix: str | None) -> str:
+    """Catalog series name for a dump series: base name + its volume suffix.
+
+    suffix None → series is the only volume with that name: keep catalog_name.
+    A dump name that itself carries a year stays as canonicalized.
+    """
+    if suffix is None or has_year_suffix(dump_name):
+        return catalog_name
+    base = YEAR_SUFFIX_RE.sub("", catalog_name or "").strip() or (catalog_name or "")
+    return f"{base} {suffix}" if suffix else base
+
+
+def load_volume_suffixes(store: Any) -> dict[str, str]:
+    """Volume suffixes from the whole dump behind ``store`` (sqlite or JSON)."""
+    con = getattr(store, "con", None)
+    if con is not None:
+        pubs = {str(r[0]): str(r[1] or "") for r in con.execute(
+            "SELECT id, name FROM gcd_publisher WHERE COALESCE(deleted, 0) = 0")}
+        series = [
+            {"id": r[0], "name": r[1], "year_began": r[2], "publisher_id": r[3]}
+            for r in con.execute(
+                "SELECT id, name, year_began, publisher_id FROM gcd_series WHERE COALESCE(deleted, 0) = 0")
+        ]
+        collected = {
+            str(r[0]) for r in con.execute(
+                "SELECT series_id FROM gcd_issue WHERE COALESCE(deleted, 0) = 0 GROUP BY series_id "
+                "HAVING SUM(CASE WHEN COALESCE(valid_isbn, '') <> '' OR COALESCE(isbn, '') <> '' "
+                "OR barcode LIKE '978%' OR barcode LIKE '979%' THEN 1 ELSE 0 END) * 2 >= COUNT(*)")
+        }
+        return compute_volume_suffixes(series, pubs, collected)
+    series_map = getattr(store, "series", None)
+    if isinstance(series_map, dict):
+        pubs = {str(k): str(v.get("name") or "") for k, v in getattr(store, "publishers", {}).items()}
+        collected: set[str] = set()
+        for sid, issues in getattr(store, "issues", {}).items():
+            if issues and sum(1 for i in issues if _has_isbn(i) or str(i.get("barcode") or "").startswith(("978", "979"))) * 2 >= len(issues):
+                collected.add(str(sid))
+        return compute_volume_suffixes(list(series_map.values()), pubs, collected)
+    return {}
+
+
+def gcd_series_of_issues(store: Any, issue_ids: set[str]) -> dict[str, str]:
+    """gcdIssueId → GCD series id for ids present in the dump."""
+    out: dict[str, str] = {}
+    con = getattr(store, "con", None)
+    ids = [int(i) for i in issue_ids if str(i).isdigit()]
+    if con is not None:
+        for i in range(0, len(ids), 900):
+            chunk = ids[i:i + 900]
+            q = f"SELECT id, series_id FROM gcd_issue WHERE id IN ({','.join('?' * len(chunk))})"
+            for iid, sid in con.execute(q, chunk):
+                out[str(iid)] = str(sid)
+        return out
+    for iid in ids:
+        row = store.get_issue(iid) if store is not None else None
+        if row:
+            out[str(iid)] = str(row.get("series_id"))
+    return out
+
+
+class VolumePresence:
+    """Volume-aware "already in catalog" index (after the gcdIssueId check).
+
+    family key → [(variant, gcd series id | None, cover year | None)].
+    A dump issue conflicts only with a row of the same volume: a linked row of
+    the same GCD series, or an unlinked row whose cover year is within ±1.
+    Mains conflict with main-like rows (empty / Cover A variant); variants with
+    the same variant name.
+    """
+
+    def __init__(self) -> None:
+        self.index: dict[str, list[tuple[str, str | None, int | None]]] = {}
+        self.by_gcd: dict[str, tuple[str, str, str, str | None]] = {}
+
+    @staticmethod
+    def _year(date: str | None) -> int | None:
+        m = re.match(r"^((?:19|20)\d{2})", str(date or ""))
+        return int(m.group(1)) if m else None
+
+    def add(self, series: str, issue: str, publisher: str, variant: str, gcd_series: str | None,
+            cover_date: str | None, gcd_issue_id: str | None = None, fmt: str | None = None) -> None:
+        key = comic_family_key(series, issue, publisher)
+        self.index.setdefault(key, []).append(
+            ((variant or "").strip().lower(), gcd_series, self._year(cover_date)))
+        if gcd_issue_id:
+            self.by_gcd.setdefault(str(gcd_issue_id), (series, issue, publisher, fmt))
+
+    def conflict(self, series: str, issue: str, publisher: str, variant: str, gcd_series: str | None,
+                 cover_date: str | None) -> bool:
+        year = self._year(cover_date)
+        want = (variant or "").strip().lower()
+        for v, sid, y in self.index.get(comic_family_key(series, issue, publisher), ()):
+            if sid is not None and gcd_series is not None:
+                same_volume = sid == str(gcd_series)
+            else:
+                same_volume = y is not None and year is not None and abs(y - year) <= 1
+            if not same_volume:
+                continue
+            if not want:
+                if not v or is_cover_a_name(v):
+                    return True
+            elif v == want:
+                return True
+        return False
+
+
+def build_volume_presence(rows: list, upc_map: dict, gcd_series: dict[str, str]) -> VolumePresence:
+    pres = VolumePresence()
+    for row in rows:
+        if not isinstance(row, list) or len(row) < 5:
+            continue
+        extra = row[13] if len(row) > 13 and isinstance(row[13], dict) else {}
+        ent = upc_map.get(str(row[0])) if isinstance(upc_map, dict) else None
+        gid = str(extra.get("gcdIssueId") or (ent or {}).get("gcdIssueId") or "")
+        pres.add(str(row[1]), str(row[2]), str(row[3]), str(extra.get("variant") or ""),
+                 gcd_series.get(gid) if gid else None, str(row[4]), gid or None,
+                 str(row[9]) if len(row) > 9 else None)
+    return pres
+
+
 def _row_family(row: list) -> tuple[str, str, str, str | None, dict]:
     extra = row[13] if len(row) > 13 and isinstance(row[13], dict) else {}
     fmt = str(row[9]) if len(row) > 9 else ""
@@ -510,6 +700,8 @@ def viewer_family_from_parent(
     existing_meta: dict[str, dict],
     added_rows: list,
     family_index: dict[str, tuple[str, str, str, str | None]] | None = None,
+    presence: "VolumePresence | None" = None,
+    volume_name: Callable[[str], str] | None = None,
 ) -> tuple[str, str, str, str | None] | None:
     """Exact series+issue+publisher the variant must share, or None to skip.
 
@@ -526,8 +718,16 @@ def viewer_family_from_parent(
                 return series_f, issue_f, pub_f, fmt
             return None
 
+    if presence is not None and gid and gid in presence.by_gcd:
+        series_f, issue_f, pub_f, fmt = presence.by_gcd[gid]
+        if series_f.strip() and issue_f.strip() and pub_f.strip():
+            return series_f, issue_f, pub_f, fmt or None
+        return None
+
     pnum = str(parent.get("number") or "").strip()
     series_c, pub_c = locg.canon_series_publisher(series_name, publisher, existing_meta)
+    if volume_name is not None:
+        series_c = volume_name(series_c)
     if not (series_c and pnum and pub_c):
         return None
     want = comic_family_key(series_c, pnum, pub_c)
@@ -558,7 +758,7 @@ def viewer_family_from_parent(
     return catalog_hit
 
 
-def apply_viewer_family(parsed: dict, parent: dict, *, series_name: str, publisher: str, existing_meta: dict[str, dict], added_rows: list, family_index: dict[str, tuple[str, str, str, str | None]] | None = None) -> str | None:
+def apply_viewer_family(parsed: dict, parent: dict, *, series_name: str, publisher: str, existing_meta: dict[str, dict], added_rows: list, family_index: dict[str, tuple[str, str, str, str | None]] | None = None, presence: "VolumePresence | None" = None, volume_name: Callable[[str], str] | None = None) -> str | None:
     """Stamp parent series+issue+publisher onto parsed, or return skip reason."""
     family = viewer_family_from_parent(
         parent,
@@ -567,6 +767,8 @@ def apply_viewer_family(parsed: dict, parent: dict, *, series_name: str, publish
         existing_meta=existing_meta,
         added_rows=added_rows,
         family_index=family_index,
+        presence=presence,
+        volume_name=volume_name,
     )
     if family is None:
         return "variant-orphan"
@@ -576,6 +778,7 @@ def apply_viewer_family(parsed: dict, parent: dict, *, series_name: str, publish
     parsed["series"] = series_f
     parsed["issue"] = issue_f
     parsed["publisher"] = pub_f
+    parsed["familyLocked"] = True
     if fmt:
         parsed["format"] = fmt
     return None
@@ -1197,8 +1400,15 @@ def gate_reason(
     catalog_id: str | None,
     include_collected: bool = True,
     max_year: int | None = None,
+    presence: VolumePresence | None = None,
+    gcd_series_id: str | None = None,
 ) -> str | None:
-    """Shelby/Lyra: keep if ANY of gcdIssueId OR upc OR isbn + real identity."""
+    """Shelby/Lyra: keep if ANY of gcdIssueId OR upc OR isbn + real identity.
+
+    With ``presence`` (the normal CLI path) the series|issue|publisher check is
+    volume-aware: gcdIssueId first, then same-volume rows only. Without it the
+    legacy variant-blind ``existing_keys`` check applies.
+    """
     gid = str(parsed.get("gcdIssueId") or "")
     upc = parsed.get("upc")
     isbn = parsed.get("isbn")
@@ -1230,6 +1440,11 @@ def gate_reason(
         return "id-collision"
     if catalog_id in existing_ids:
         return "dup-id"
+    if presence is not None:
+        if presence.conflict(series, issue, publisher, str(parsed.get("variantName") or ""),
+                             gcd_series_id, cover_date):
+            return "dup-series-issue-publisher"
+        return None
     key = identity_key(series, issue, publisher, str(parsed.get("variantName") or ""))
     if key in existing_keys:
         return "dup-series-issue-publisher"
@@ -1237,9 +1452,14 @@ def gate_reason(
 
 
 def build_row(catalog_id: str, parsed: dict, existing_meta: dict[str, dict]) -> list:
-    series, publisher = locg.canon_series_publisher(
-        parsed["series"], parsed["publisher"], existing_meta
-    )
+    if parsed.get("familyLocked") or parsed.get("seriesCanonDone"):
+        # Already canonicalized (and volume-labeled) upstream; re-running canon
+        # would strip the ' (YYYY)' volume suffix.
+        series, publisher = str(parsed["series"]), str(parsed["publisher"])
+    else:
+        series, publisher = locg.canon_series_publisher(
+            parsed["series"], parsed["publisher"], existing_meta
+        )
     issue = str(parsed["issue"])
     cover_date = parsed["coverDate"]
     writers = parsed.get("writers") or ""
@@ -1301,6 +1521,9 @@ def finish_catalog_row(
     include_collected: bool = True,
     max_year: int | None = None,
     series_index: dict[str, list[tuple[str, str]]] | None = None,
+    presence: VolumePresence | None = None,
+    volume_suffix: str | None = None,
+    dump_series_name: str = "",
 ) -> tuple[list | None, dict | None]:
     # Cheap year/date gates BEFORE O(catalog) canon_series_publisher / id minting.
     # Same skip reasons as gate_reason for these cases; avoids scanning ~100k meta
@@ -1339,12 +1562,16 @@ def finish_catalog_row(
             "reason": "max-year",
         }
 
-    parsed["series"], parsed["publisher"] = canon_series_publisher_indexed(
-        parsed.get("series") or "",
-        parsed.get("publisher") or "",
-        existing_meta,
-        series_index,
-    )
+    if not parsed.get("familyLocked"):
+        parsed["series"], parsed["publisher"] = canon_series_publisher_indexed(
+            parsed.get("series") or "",
+            parsed.get("publisher") or "",
+            existing_meta,
+            series_index,
+        )
+        parsed["series"] = volume_series_name(
+            parsed["series"], dump_series_name or str(parsed.get("series") or ""), volume_suffix)
+        parsed["seriesCanonDone"] = True
     catalog_id = make_gcd_catalog_id(
         series=parsed.get("series") or "",
         issue=str(parsed.get("issue") or ""),
@@ -1366,6 +1593,8 @@ def finish_catalog_row(
         max_year=max_year,
         catalog_id=catalog_id,
         include_collected=include_collected,
+        presence=presence,
+        gcd_series_id=str(series_id) if series_id else None,
     )
     if reason:
         return None, {
@@ -1383,6 +1612,10 @@ def finish_catalog_row(
     )
     if parsed.get("gcdIssueId"):
         existing_gcd.add(str(parsed["gcdIssueId"]))
+    if presence is not None:
+        presence.add(row[1], row[2], row[3], str(parsed.get("variantName") or ""),
+                     str(series_id) if series_id else None, row[4],
+                     str(parsed.get("gcdIssueId") or "") or None, row[9])
     vlabel = f"  [{parsed['variantName']}]" if parsed.get("variantName") else ""
     print(
         f"  + {catalog_id}  {row[1]} #{row[2]}{vlabel}  gcd={parsed.get('gcdIssueId')}  "
@@ -1431,6 +1664,8 @@ def ingest_series(
     include_collected: bool = True,
     family_index: dict[str, tuple[str, str, str, str | None]] | None = None,
     series_index: dict[str, list[tuple[str, str]]] | None = None,
+    presence: VolumePresence | None = None,
+    volume_suffixes: dict[str, str] | None = None,
 ) -> tuple[list, list[dict], dict, dict]:
     rows: list = []
     skips: list[dict] = []
@@ -1462,6 +1697,12 @@ def ingest_series(
         elif not bf.publisher_ok(publisher, pf):
             skips.append({"seriesId": series_id, "reason": "publisher-filter", "publisher": publisher})
             return rows, skips, upc_local, cover_local
+
+    dump_series_name = str(series.get("name") or "")
+    vol_suffix = volume_suffixes.get(str(series_id)) if volume_suffixes is not None else None
+
+    def vol_name(catalog_name: str) -> str:
+        return volume_series_name(catalog_name, dump_series_name, vol_suffix)
 
     descs = list(series.get("issue_descriptors") or [])
     urls = list(series.get("active_issues") or [])
@@ -1577,6 +1818,8 @@ def ingest_series(
                 existing_meta=existing_meta,
                 added_rows=rows,
                 family_index=family_index,
+                presence=presence,
+                volume_name=vol_name,
             )
             if no_family:
                 skips.append(
@@ -1602,6 +1845,9 @@ def ingest_series(
             id_prefix=id_prefix,
             include_collected=include_collected,
             series_index=series_index,
+            presence=presence,
+            volume_suffix=vol_suffix,
+            dump_series_name=dump_series_name,
         )
         if skip:
             skips.append(skip)
@@ -1660,6 +1906,8 @@ def ingest_series_from_dump(
     include_collected: bool = True,
     family_index: dict[str, tuple[str, str, str, str | None]] | None = None,
     series_index: dict[str, list[tuple[str, str]]] | None = None,
+    presence: VolumePresence | None = None,
+    volume_suffixes: dict[str, str] | None = None,
 ) -> tuple[list, list[dict], dict, dict]:
     """Gate dump rows the same way as API rows. No comics.org traffic."""
     rows: list = []
@@ -1692,6 +1940,12 @@ def ingest_series_from_dump(
         elif not bf.publisher_ok(publisher, pf):
             skips.append({"seriesId": series_id, "reason": "publisher-filter", "publisher": publisher})
             return rows, skips, upc_local, cover_local
+
+    dump_series_name = str(series.get("name") or "")
+    vol_suffix = volume_suffixes.get(str(series_id)) if volume_suffixes is not None else None
+
+    def vol_name(catalog_name: str) -> str:
+        return volume_series_name(catalog_name, dump_series_name, vol_suffix)
 
     items = store.issues_for_series(series_id)
     by_id = {str(r.get("id")): r for r in items if r.get("id") is not None}
@@ -1813,6 +2067,8 @@ def ingest_series_from_dump(
                 existing_meta=existing_meta,
                 added_rows=rows,
                 family_index=family_index,
+                presence=presence,
+                volume_name=vol_name,
             )
             if no_family:
                 skips.append(
@@ -1838,6 +2094,9 @@ def ingest_series_from_dump(
             id_prefix=id_prefix,
             include_collected=include_collected,
             series_index=series_index,
+            presence=presence,
+            volume_suffix=vol_suffix,
+            dump_series_name=dump_series_name,
         )
         if skip:
             skips.append(skip)
@@ -2178,6 +2437,13 @@ def main(argv: list[str] | None = None) -> int:
         if extra.get("locgId"):
             existing_locg.add(str(extra["locgId"]))
 
+    # Volume-aware presence + volume names (see VolumePresence / compute_volume_suffixes).
+    catalog_rows = data_shards.load_comic_rows(comics_ts)
+    linked_ids = set(existing_gcd)
+    gcd_series_map = gcd_series_of_issues(store, linked_ids) if store is not None else {}
+    presence = build_volume_presence(catalog_rows, upc_map, gcd_series_map)
+    volume_suffixes = load_volume_suffixes(store) if store is not None else None
+
     all_rows: list = []
     all_skips: list[dict] = []
     upc_local: dict = {}
@@ -2213,6 +2479,8 @@ def main(argv: list[str] | None = None) -> int:
                         include_collected=args.include_collected,
                         family_index=family_index,
                         series_index=series_index,
+                        presence=presence,
+                        volume_suffixes=volume_suffixes,
                     )
                 else:
                     assert client is not None
@@ -2233,6 +2501,8 @@ def main(argv: list[str] | None = None) -> int:
                         include_collected=args.include_collected,
                         family_index=family_index,
                         series_index=series_index,
+                        presence=presence,
+                        volume_suffixes=volume_suffixes,
                     )
             except RateLimitAbort as e:
                 print(str(e), file=sys.stderr)

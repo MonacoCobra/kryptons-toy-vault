@@ -1323,5 +1323,147 @@ class DumpIngestTest(unittest.TestCase):
 
 
 
+class VolumeAwarePresenceTest(unittest.TestCase):
+    """gcdIssueId first; series|issue|publisher only within the same GCD volume."""
+
+    def tearDown(self):
+        ingest.bind_paths(ROOT)
+
+    def test_volume_suffixes_oldest_plain_later_year_same_year_vol(self):
+        series = [
+            {"id": 1, "name": "Superman", "year_began": 1939, "publisher_id": 54},
+            {"id": 2, "name": "Superman", "year_began": 1987, "publisher_id": 54},
+            {"id": 3, "name": "Superman", "year_began": 2016, "publisher_id": 54},
+            {"id": 4, "name": "Superman", "year_began": 2016, "publisher_id": 54},  # trade series
+            {"id": 5, "name": "The Superman", "year_began": 2016, "publisher_id": 54},  # same match key
+            {"id": 6, "name": "Solo Title", "year_began": 2001, "publisher_id": 54},
+            {"id": 7, "name": "Superman", "year_began": 1990, "publisher_id": 99},  # other publisher
+        ]
+        pubs = {"54": "DC", "99": "Other House"}
+        suf = ingest.compute_volume_suffixes(series, pubs, collected_series={"4"})
+        self.assertEqual(suf["1"], "")
+        self.assertEqual(suf["2"], "(1987)")
+        self.assertEqual(suf["3"], "(2016)")
+        self.assertEqual(suf["5"], "(2016 Vol 2)")
+        self.assertEqual(suf["4"], "(2016 Vol 3)")  # collected editions sort after periodicals
+        self.assertNotIn("6", suf)  # only volume with that name
+        self.assertNotIn("7", suf)  # groups are per catalog publisher
+
+    def test_volume_series_name(self):
+        self.assertEqual(ingest.volume_series_name("Superman", "Superman", "(2011)"), "Superman (2011)")
+        self.assertEqual(ingest.volume_series_name("Superman (2011)", "Superman", ""), "Superman")
+        self.assertEqual(ingest.volume_series_name("Action Comics (2011)", "Action Comics", "(2011)"), "Action Comics (2011)")
+        self.assertEqual(ingest.volume_series_name("Batman (1940)", "Batman", None), "Batman (1940)")
+        self.assertEqual(ingest.volume_series_name("Solo", "Solo", None), "Solo")
+        # a dump name that already carries a year is left alone
+        self.assertEqual(ingest.volume_series_name("X-Men (2024)", "X-Men (2024)", "(2024)"), "X-Men (2024)")
+
+    def test_presence_is_per_volume(self):
+        pres = ingest.VolumePresence()
+        pres.add("Superman", "1", "DC Comics", "Rocafort Cover", "2016", "2016-08-01", "202")
+        pres.add("Superman", "2", "DC Comics", "", "1987", "1987-02-01", "103")
+        pres.add("Superman", "3", "DC Comics", "", None, "1987-03-01")  # unlinked (LOCG) row
+        # a variant of the same volume does not hide the missing main (old variant-blind bug)
+        self.assertFalse(pres.conflict("Superman", "1", "DC Comics", "", "2016", "2016-08-01"))
+        # same variant name in the same volume is a duplicate
+        self.assertTrue(pres.conflict("Superman", "1", "DC Comics", "Rocafort Cover", "2016", "2016-08-01"))
+        # a main of another volume never blocks
+        self.assertFalse(pres.conflict("Superman", "2", "DC Comics", "", "2016", "2016-09-01"))
+        self.assertTrue(pres.conflict("Superman", "2", "DC Comics", "", "1987", "1987-02-01"))
+        # unlinked rows block only within +-1 cover year
+        self.assertTrue(pres.conflict("Superman", "3", "DC Comics", "", "1987", "1988-01-01"))
+        self.assertFalse(pres.conflict("Superman", "3", "DC Comics", "", "2016", "2016-10-01"))
+        # Cover A labels count as main-like
+        pres.add("Superman", "4", "DC Comics", "Cover A", "1987", "1987-04-01")
+        self.assertTrue(pres.conflict("Superman", "4", "DC Comics", "", "1987", "1987-04-01"))
+
+    def test_gate_uses_presence_instead_of_variant_blind_keys(self):
+        parsed = {
+            "gcdIssueId": "201", "series": "Superman", "issue": "1", "publisher": "DC Comics",
+            "coverDate": "2016-08-01", "variantName": "", "title": "Superman #1",
+        }
+        blind = {"superman|1|dc comics"}
+        kw = dict(existing_ids=set(), existing_keys=blind, existing_gcd=set(), existing_locg=set(),
+                  min_year=1980, catalog_id="dc-superman-2016-1")
+        self.assertEqual(ingest.gate_reason(dict(parsed), **kw), "dup-series-issue-publisher")
+        pres = ingest.VolumePresence()
+        pres.add("Superman", "1", "DC Comics", "Rocafort Cover", "3", "2016-08-01", "202")
+        pres.add("Superman", "1", "DC Comics", "", "2", "1987-01-01", "101")
+        self.assertIsNone(ingest.gate_reason(dict(parsed), presence=pres, gcd_series_id="3", **kw))
+        self.assertEqual(
+            ingest.gate_reason(dict(parsed), presence=pres, gcd_series_id="2", **kw),
+            "dup-series-issue-publisher",
+        )
+        # gcdIssueId still wins first
+        kw["existing_gcd"] = {"201"}
+        self.assertEqual(ingest.gate_reason(dict(parsed), presence=pres, gcd_series_id="3", **kw), "dup-gcdIssueId")
+
+    def _dump(self):
+        td = Path(tempfile.mkdtemp())
+        pubs = [{"id": 54, "name": "DC", "deleted": 0}]
+        series = [
+            {"id": 3386, "name": "Superman", "year_began": 1987, "publisher_id": 54, "deleted": 0},
+            {"id": 103084, "name": "Superman", "year_began": 2016, "publisher_id": 54, "deleted": 0},
+        ]
+
+        def iss(i, num, sid, kd, vo=None, vn="", bc=""):
+            return {"id": i, "number": num, "series_id": sid, "publication_date": "", "key_date": kd,
+                    "on_sale_date": "", "price": "1.00 USD", "barcode": bc, "isbn": "", "valid_isbn": "",
+                    "variant_of_id": vo, "variant_name": vn, "title": "", "sort_code": i, "deleted": 0}
+
+        issues = [
+            iss(101, "1", 3386, "1987-01-00", bc="07098930675001"),
+            iss(102, "1", 3386, "1987-01-00", vo=101, vn="Newsstand"),
+            iss(201, "1", 103084, "2016-08-00", bc="76194134192700111"),
+            iss(202, "1", 103084, "2016-08-00", vo=201, vn="Rocafort Cover"),
+            iss(203, "2", 103084, "2016-09-00"),
+            iss(204, "9", 103084, "2016-09-00", vo=101, vn="Wrong-series parent"),  # orphan (no same-number sibling)
+        ]
+        for name, rows in (("gcd_publisher", pubs), ("gcd_series", series), ("gcd_issue", issues)):
+            (td / f"{name}.json").write_text(json.dumps(rows))
+        return td
+
+    def _root(self):
+        td = Path(tempfile.mkdtemp())
+        (td / "src/data").mkdir(parents=True)
+        (td / "scripts").mkdir(parents=True)
+        rows_ts = MINI_COMICS_TS.replace(
+            '  ["im-die-1"',
+            '  ["dc-superman-1", "Superman", "1", "DC Comics", "1987-01-01", "", "", "Superman #1", 0.75, "single", 1, 0, "1e3a8a,e30613,f8fafc", { gcdIssueId: "101" }],\n'
+            '  ["dc-superman-2016-1-rocafort", "Superman (2016)", "1", "DC Comics", "2016-08-01", "", "", "Superman #1", 2.99, "single", 1, 0, "1e3a8a,e30613,f8fafc", { variant: "Rocafort Cover", gcdIssueId: "202" }],\n'
+            '  ["im-die-1"',
+        )
+        (td / "src/data/comics.ts").write_text(rows_ts)
+        (td / "src/data/comic-upc-map.json").write_text("{}\n")
+        (td / "src/data/comic-cover-urls.json").write_text("{}\n")
+        (td / "scripts/comic-gcd-series-cache.json").write_text("{}\n")
+        return td
+
+    def test_dump_backfills_blocked_main_and_names_later_volume(self):
+        root, dump = self._root(), self._dump()
+        rep_path = root / "report.json"
+        argv = ["--dump-dir", str(dump), "--series-id", "3386", "--series-id", "103084",
+                "--min-year", "1980", "--dry-run", "--report", str(rep_path), "--root", str(root)]
+        self.assertEqual(ingest.main(argv), 0)
+        rep = json.loads(rep_path.read_text())
+        added = {r["gcdIssueId"]: r for r in rep["added"]}
+        reasons = {str(s["gcdIssueId"]): s["reason"] for s in rep["skipped"] if s.get("gcdIssueId")}
+        # 2016 #1 Cover A was hidden by its own variant under the old gate
+        self.assertIn("201", added)
+        self.assertEqual(added["201"]["series"], "Superman (2016)")
+        self.assertEqual(added["201"]["issue"], "1")
+        self.assertIsNone(added["201"]["variant"])
+        self.assertEqual(added["203"]["series"], "Superman (2016)")
+        # 1987 newsstand attaches to its own parent (found by gcdIssueId), oldest volume keeps the name
+        self.assertEqual(added["102"]["series"], "Superman")
+        self.assertEqual(added["102"]["variant"], "Newsstand")
+        # already linked rows are skipped by gcdIssueId first
+        self.assertEqual(reasons["101"], "dup-gcdIssueId")
+        self.assertEqual(reasons["202"], "dup-gcdIssueId")
+        # no-orphan rule kept: parent in another series
+        self.assertEqual(reasons["204"], "variant-orphan")
+        self.assertNotIn("204", added)
+
+
 if __name__ == "__main__":
     unittest.main()
