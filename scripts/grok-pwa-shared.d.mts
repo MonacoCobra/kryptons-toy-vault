@@ -17,7 +17,7 @@ export type WebManifestIcon = {
   src: string;
   sizes: string;
   type: string;
-  purpose?: "any" | "maskable" | "monochrome";
+  purpose?: string;
 };
 
 export declare function pwaIconsFromDisk(cwd?: string): WebManifestIcon[];
