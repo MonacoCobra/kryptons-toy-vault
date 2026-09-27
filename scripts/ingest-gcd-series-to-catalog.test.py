@@ -1387,6 +1387,28 @@ class VolumeAwarePresenceTest(unittest.TestCase):
         self.assertEqual(ingest.infer_existing_prefix_indexed(meta, "Batman", "DC Comics"), "dc-batman")
         self.assertIsNone(ingest.infer_existing_prefix_indexed(meta, "Batman (1940)", "DC Comics", idx))
 
+    def test_era_safe_prefix_for_old_issues(self):
+        self.assertFalse(ingest.prefix_fits_era("dc-batman-2016", 1940))
+        self.assertFalse(ingest.prefix_fits_era("dc-det-n52", 1939))
+        self.assertTrue(ingest.prefix_fits_era("dc-det-n52", 2013))
+        self.assertTrue(ingest.prefix_fits_era("dc-batman", 1940))
+        meta = {f"dc-batman-2016-{n}": {"series": "Batman", "issue": str(n), "publisher": "DC Comics"} for n in range(400, 410)}
+        meta["dc-batman-300"] = {"series": "Batman", "issue": "300", "publisher": "DC Comics"}
+        idx = ingest.build_prefix_index(meta)
+        saved = (ingest.locg.infer_existing_prefix, ingest._PREFIX_INDEX)
+        ingest.locg.infer_existing_prefix = lambda m, se, pu: ingest.infer_existing_prefix_indexed(m, se, pu, idx)
+        ingest._PREFIX_INDEX = idx
+        self.addCleanup(lambda: (setattr(ingest.locg, "infer_existing_prefix", saved[0]), setattr(ingest, "_PREFIX_INDEX", saved[1])))
+        cid = ingest.make_gcd_catalog_id(series="Batman", issue="1", publisher="DC Comics", cover_date="1940-04-01",
+                                         existing_ids=set(meta), existing_meta=meta, id_prefix_override=None)
+        self.assertEqual(cid, "dc-batman-1")
+        cid2 = ingest.make_gcd_catalog_id(series="Batman", issue="401", publisher="DC Comics", cover_date="1986-11-01",
+                                          existing_ids=set(meta), existing_meta=meta, id_prefix_override=None)
+        self.assertTrue(cid2.startswith("dc-batman-") and "2016" not in cid2, cid2)
+        cid3 = ingest.make_gcd_catalog_id(series="Batman", issue="1", publisher="DC Comics", cover_date="2016-08-01",
+                                          existing_ids=set(meta), existing_meta=meta, id_prefix_override=None)
+        self.assertEqual(cid3, "dc-batman-2016-1")
+
     def test_volume_series_name(self):
         self.assertEqual(ingest.volume_series_name("Superman", "Superman", "(2011)"), "Superman (2011)")
         self.assertEqual(ingest.volume_series_name("Superman (2011)", "Superman", ""), "Superman")

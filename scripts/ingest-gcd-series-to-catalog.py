@@ -885,6 +885,7 @@ def infer_existing_prefix_indexed(
     series: str,
     publisher: str,
     prefix_index: dict[str, list[tuple[str, dict]]] | None = None,
+    cover_year: int | None = None,
 ) -> str | None:
     """Like locg.infer_existing_prefix, but volume-safe: only rows of the same
     volume label (same ' (YYYY)' suffix or none) lend their id prefix, so a
@@ -914,9 +915,26 @@ def infer_existing_prefix_indexed(
             counts[cid[: -(len(iss) + 5)]] += 1
         elif cid.endswith(f"-{iss}"):
             counts[cid[: -(len(iss) + 1)]] += 1
+    if cover_year is not None:
+        counts = Counter({k: v for k, v in counts.items() if prefix_fits_era(k, cover_year)})
     if not counts:
         return None
     return counts.most_common(1)[0][0]
+
+
+ERA_TAGS = {"n52": 2011, "new52": 2011, "rebirth": 2016}
+_PREFIX_INDEX: dict[str, list[tuple[str, dict]]] | None = None
+
+
+def prefix_fits_era(prefix: str, cover_year: int) -> bool:
+    """False when an id prefix names a later era than the issue (e.g. a 1940
+    'Batman' issue must not mint under 'dc-batman-2016' or 'dc-det-n52')."""
+    for tok in str(prefix).split("-"):
+        if re.fullmatch(r"(?:19|20)\d{2}", tok) and int(tok) > cover_year + 1:
+            return False
+        if tok in ERA_TAGS and cover_year < ERA_TAGS[tok]:
+            return False
+    return True
 
 
 def build_series_canon_index(
@@ -967,6 +985,14 @@ def make_gcd_catalog_id(
 ) -> str | None:
     issue = catalog_issue_slug(issue)
     vslug = locg.slugify_series(variant) if variant else ""
+    cover_year = int(cover_date[:4]) if re.match(r"^\d{4}", cover_date or "") else None
+    era_prefix: str | None = None
+    if not id_prefix_override and cover_year is not None:
+        reused_any = locg.infer_existing_prefix(existing_meta, series, publisher)
+        if reused_any and not prefix_fits_era(reused_any, cover_year):
+            era_prefix = infer_existing_prefix_indexed(
+                existing_meta, series, publisher, _PREFIX_INDEX, cover_year=cover_year
+            ) or f"{locg.publisher_prefix(publisher)}-{locg.slugify_series(series)}"
     if not vslug:
         return locg.make_catalog_id(
             series=series,
@@ -975,10 +1001,10 @@ def make_gcd_catalog_id(
             cover_date=cover_date,
             existing_ids=existing_ids,
             existing_meta=existing_meta,
-            id_prefix_override=id_prefix_override,
+            id_prefix_override=id_prefix_override or era_prefix,
         )
     year = cover_date[:4] if re.match(r"^\d{4}", cover_date) else ""
-    reused = locg.infer_existing_prefix(existing_meta, series, publisher)
+    reused = era_prefix or locg.infer_existing_prefix(existing_meta, series, publisher)
     pub_pref = locg.publisher_prefix(publisher)
     slug = locg.slugify_series(series)
     generated = f"{pub_pref}-{slug}"
@@ -2455,6 +2481,8 @@ def main(argv: list[str] | None = None) -> int:
     family_index = build_viewer_family_index(existing_meta)
     series_index = build_series_canon_index(existing_meta)
     prefix_index = build_prefix_index(existing_meta)
+    global _PREFIX_INDEX
+    _PREFIX_INDEX = prefix_index
 
     def _infer_existing_prefix_fast(existing_meta_arg, series, publisher):
         return infer_existing_prefix_indexed(
