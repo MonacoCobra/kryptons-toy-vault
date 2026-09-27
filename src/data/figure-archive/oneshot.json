@@ -377065,12 +377065,12 @@
   },
   {
     "id": "mlc-venom-classic",
-    "name": "Venom (2018)",
-    "subtitle": "Classic",
+    "name": "Venom (2024)",
+    "subtitle": "Let There Be Carnage (Target Exclusive)",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2018-09-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -377081,7 +377081,11 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "hasbro",
+      "legends",
+      "date-precision:year",
+      "sku-alias"
     ],
     "source": "curated",
     "sku": "5010996244284",
@@ -378887,21 +378891,25 @@
   {
     "id": "d14ml-venom-classic-d",
     "name": "Venom (2018)",
-    "subtitle": "Classic Symbiote",
+    "subtitle": "Monster Venom Wave",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2018-08-01",
+    "releaseDate": "2018-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.55,
     "tags": [
       "marvel",
       "legends",
-      "densify"
+      "densify",
+      "hasbro",
+      "date-precision:year",
+      "sku-gtin",
+      "sku-alias"
     ],
     "source": "curated-densify",
-    "sku": null,
+    "sku": "630509713585",
     "imageUrl": null
   },
   {
