@@ -12,6 +12,7 @@ import {
   isDocumentPath,
   isInstallQuery,
   publicAppHost,
+  pwaIconsFromDisk,
   renderWebManifest,
   resolveOgCardAsset,
   snapshotOgIdentity,
@@ -477,7 +478,91 @@ test("renders the manifest with the per-app name", () => {
   const manifest = JSON.parse(renderWebManifest("wild-race.grok.me"));
   assert.equal(manifest.name, "Wild Race");
   assert.equal(manifest.short_name, "Wild Race");
+  assert.equal(manifest.theme_color, "#000000");
+  assert.equal(manifest.background_color, "#000000");
   assert.equal(manifest.icons[0].src, "/__grok/icon-180.png");
+});
+
+test("baked site identity wins over a rewritten host", () => {
+  const manifest = JSON.parse(
+    renderWebManifest("kryptons-toy-vault-abc.vercel.app", {
+      title: "Krypton's Toy Vault",
+      shortName: "Toy Vault",
+      themeColor: "#E30613",
+      backgroundColor: "#070B14",
+      icons: [
+        { src: "/icon-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
+        { src: "https://evil.example/icon.png", sizes: "192x192", type: "image/png" },
+        { src: "/icon-maskable-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
+      ],
+    }),
+  );
+  assert.equal(manifest.name, "Krypton's Toy Vault");
+  assert.equal(manifest.short_name, "Toy Vault");
+  assert.equal(manifest.theme_color, "#E30613");
+  assert.equal(manifest.background_color, "#070B14");
+  assert.deepEqual(
+    manifest.icons.map((icon) => icon.src),
+    ["/icon-192.png", "/icon-maskable-512.png"],
+  );
+  assert.equal(manifest.icons[1].purpose, "maskable");
+});
+
+test("snapshot bakes conventional pwa icons and drops a stale icons list", () => {
+  const root = mkdtempSync(join(tmpdir(), "grok-pwa-icons-"));
+  mkdirSync(join(root, "public"));
+  mkdirSync(join(root, "src/lib/og"), { recursive: true });
+  writeFileSync(
+    join(root, "src/lib/og/site.json"),
+    JSON.stringify({ title: "Vault", icons: [{ src: "/missing.png", sizes: "1x1", type: "image/png" }] }),
+  );
+  writeFileSync(join(root, "public/icon-192.png"), "x");
+  writeFileSync(join(root, "public/icon-maskable-512.png"), "x");
+  const { site } = snapshotOgIdentity(root);
+  assert.equal(site.title, "Vault");
+  assert.deepEqual(pwaIconsFromDisk(root), site.icons);
+  assert.deepEqual(
+    site.icons.map((icon) => icon.src),
+    ["/icon-192.png", "/icon-maskable-512.png"],
+  );
+  const manifest = JSON.parse(renderWebManifest("example.vercel.app", site));
+  assert.equal(manifest.name, "Vault");
+  assert.equal(manifest.icons[0].src, "/icon-192.png");
+});
+
+test("this app's manifest ignores the host header", () => {
+  const { site } = snapshotOgIdentity(TEMPLATE_ROOT);
+  for (const host of ["", "localhost:8080", "kryptons-toy-vault-xyz.vercel.app", "kryptons-toy-vault.grok.me"]) {
+    const manifest = JSON.parse(renderWebManifest(host, site));
+    assert.equal(manifest.name, "Krypton's Toy Vault");
+    assert.equal(manifest.short_name, "Toy Vault");
+    assert.equal(manifest.theme_color, "#E30613");
+    assert.equal(manifest.background_color, "#070B14");
+    assert.ok(manifest.icons.some((icon) => icon.src === "/icon-192.png" && icon.sizes === "192x192"));
+    assert.ok(manifest.icons.some((icon) => icon.src === "/icon-512.png" && icon.sizes === "512x512"));
+    assert.ok(
+      manifest.icons.some(
+        (icon) => icon.src === "/icon-maskable-512.png" && icon.purpose === "maskable",
+      ),
+    );
+    assert.ok(manifest.icons.some((icon) => icon.src === "/apple-touch-icon.png" && icon.sizes === "180x180"));
+    assert.equal(
+      manifest.icons.some((icon) => icon.src === "/__grok/icon-180.png"),
+      false,
+    );
+  }
+});
+
+test("keeps an app apple touch icon and still injects the extensions script", () => {
+  const html =
+    '<html><head><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#E30613"></head></html>';
+  const out = injectGrokPwaHead(html, { site: { title: "Krypton's Toy Vault" }, cwd: TEMPLATE_ROOT });
+  assert.equal(out.split('rel="apple-touch-icon"').length - 1, 1);
+  assert.match(out, /href="\/apple-touch-icon.png"/);
+  assert.doesNotMatch(out, /__grok\/icon-180/);
+  assert.match(out, /grok-app-builder\/extensions\.js/);
+  assert.match(out, /name="theme-color" content="#E30613"/);
+  assert.equal(out.split('name="theme-color"').length - 1, 1);
 });
 
 // Tripwires: the deployed-app path only works if Nitro scans server/ — an
@@ -493,6 +578,7 @@ test("nitro middleware and its bundled assets exist", () => {
   const middleware = readFileSync(join(TEMPLATE_ROOT, "server/middleware/grok-pwa.ts"), "utf8");
   assert.match(middleware, /install-page\.html\?raw/);
   assert.match(middleware, /virtual:grok-og-identity/);
+  assert.match(middleware, /renderWebManifest\(\s*requestHost\(event\),\s*grokOgIdentity\.site\s*\)/);
   readFileSync(join(TEMPLATE_ROOT, "scripts/install-page.html"));
   readFileSync(join(TEMPLATE_ROOT, "public/__grok/icon-180.png"));
   readFileSync(join(TEMPLATE_ROOT, "public/__grok/install/styles.css"));

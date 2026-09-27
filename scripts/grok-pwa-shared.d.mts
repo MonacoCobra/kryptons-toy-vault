@@ -13,8 +13,23 @@ export declare function renderInstallPageHtml(
   template: string,
   context?: { host?: string | null; url?: string | null },
 ): string;
-export declare function renderWebManifest(hostHeader: string | null | undefined): string;
-export declare function grokPwaHeadTags(appName?: string): Array<[string, string]>;
+export type WebManifestIcon = {
+  src: string;
+  sizes: string;
+  type: string;
+  purpose?: string;
+};
+
+export declare function pwaIconsFromDisk(cwd?: string): WebManifestIcon[];
+export declare function appleTouchIconFromSite(site?: OgSite): string;
+export declare function renderWebManifest(
+  hostHeader: string | null | undefined,
+  site?: OgSite,
+): string;
+export declare function grokPwaHeadTags(
+  appName?: string,
+  options?: { themeColor?: string; appleTouchIcon?: string },
+): Array<[string, string]>;
 export declare const GROK_EXTENSIONS_SCRIPT_SRC: string;
 export declare function readGrokProjectId(): string;
 export declare function readXCreator(): string;
@@ -24,12 +39,16 @@ export declare function grokExtensionsHeadTags(projectId?: string): string[];
 
 export type OgSite = {
   title?: string;
+  shortName?: string;
   description?: string;
   type?: string;
   card?: string;
   image?: string;
   banner?: string;
   color?: string;
+  themeColor?: string;
+  backgroundColor?: string;
+  icons?: WebManifestIcon[];
 };
 
 export type GrokHeadContext = {

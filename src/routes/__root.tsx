@@ -29,13 +29,14 @@ export const Route = createRootRoute({
         content:
           "Krypton's Toy Vault — figures, kits, and comics with live weekly street lists, cover scans, and sold-comp estimates.",
       },
-      { name: "theme-color", content: "#070b14" },
+      { name: "theme-color", content: "#E30613" },
     ],
     links: [
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32.png" },
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
       { rel: "stylesheet", href: appCss },
       { rel: "manifest", href: "/__grok/manifest.webmanifest" },
-      { rel: "apple-touch-icon", href: "/__grok/icon-180.png" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Oswald:wght@400;500;600;700&display=swap",
