@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { PulseBoard } from "@/components/pulse-board";
-import { useLiveComics, useLiveFigures } from "@/lib/live-store";
+import { useOwnedCatalog } from "@/lib/use-catalog";
 import { useHydrated, useVault } from "@/lib/store";
 import { weekKey } from "@/lib/utils";
 import {
@@ -22,29 +22,28 @@ function PulsePage() {
   const ownedComics = useVault((s) => s.ownedComics);
   const pulseBaselines = useVault((s) => s.pulseBaselines);
   const ensurePulseBaseline = useVault((s) => s.ensurePulseBaseline);
-  const liveFigures = useLiveFigures();
-  const liveComics = useLiveComics();
+  const ownedCatalog = useOwnedCatalog();
   const week = weekKey();
 
   useEffect(() => {
-    if (!hydrated) return;
+    if (!hydrated || ownedCatalog.loading) return;
     ensurePulseBaseline(
       capturePulseSnapshot(
         { ownedFigures, ownedComics },
-        { figures: liveFigures, comics: liveComics },
+        { figures: ownedCatalog.figures, comics: ownedCatalog.comics },
         week,
       ),
     );
-  }, [hydrated, ownedFigures, ownedComics, liveFigures, liveComics, week, ensurePulseBaseline]);
+  }, [hydrated, ownedFigures, ownedComics, ownedCatalog.figures, ownedCatalog.comics, ownedCatalog.loading, week, ensurePulseBaseline]);
 
   const pulse = useMemo(
     () =>
       buildWeeklyPulse(
         { ownedFigures, ownedComics, pulseBaselines },
-        { figures: liveFigures, comics: liveComics },
+        { figures: ownedCatalog.figures, comics: ownedCatalog.comics },
         week,
       ),
-    [ownedFigures, ownedComics, pulseBaselines, liveFigures, liveComics, week],
+    [ownedFigures, ownedComics, pulseBaselines, ownedCatalog.figures, ownedCatalog.comics, week],
   );
 
   const headline = hasMeaningfulDelta(pulse)

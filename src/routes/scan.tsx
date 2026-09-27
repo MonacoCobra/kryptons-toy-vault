@@ -2,18 +2,17 @@ import { useEffect, useMemo, useRef, useState, type ChangeEvent } from "react";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { Camera, ImagePlus, Loader2, Plus, Search } from "lucide-react";
 import { toast } from "sonner";
-import { COMICS } from "@/data/comics";
 import { AddComicDialog } from "@/components/add-comic-dialog";
+import { rankComicGuess, searchComicsLimited } from "@/lib/catalog-client";
 import { ScanMatchList } from "@/components/scan-match-list";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useDebouncedValue } from "@/hooks/use-debounced-value";
 import { libraryCatalogRows } from "@/lib/comic-catalog";
-import { searchCatalogLimited } from "@/lib/cover-match";
 import { identifyCover } from "@/lib/identify-cover";
 import { compressImage } from "@/lib/image";
 import { useEnsureComicLibrary, useLiveComics } from "@/lib/live-store";
-import { matchComicsFromGuess, type CoverGuess } from "@/lib/match";
+import type { CoverGuess } from "@/lib/match";
 import { useVault } from "@/lib/store";
 import type { CatalogComic, CustomComic } from "@/lib/types";
 import { slug } from "@/lib/utils";
@@ -89,7 +88,7 @@ function ScanPage() {
         artists: result.artists,
       };
       setGuess(g);
-      const ranked = matchComicsFromGuess(g, 5, extras, libraryRows);
+      const ranked = await rankComicGuess(g, [...extras, ...libraryRows], 5);
       setMatches(ranked);
       setSelectedId(ranked[0]?.id ?? null);
       setListMode("scan");
@@ -109,10 +108,20 @@ function ScanPage() {
   }
 
   const qDebounced = useDebouncedValue(query, 200);
-  const searched = useMemo(
-    () => searchCatalogLimited(qDebounced, [COMICS, extras, libraryRows], 8),
-    [qDebounced, extras, libraryRows],
-  );
+  const [searched, setSearched] = useState<CatalogComic[]>([]);
+  useEffect(() => {
+    let cancel = false;
+    searchComicsLimited(qDebounced, [extras, libraryRows], 8)
+      .then((rows) => {
+        if (!cancel) setSearched(rows);
+      })
+      .catch(() => {
+        if (!cancel) setSearched([]);
+      });
+    return () => {
+      cancel = true;
+    };
+  }, [qDebounced, extras, libraryRows]);
   /** Prefer AI cover matches; fall back to catalog search from the query. */
   const shown = listMode === "scan" && matches.length ? matches : searched;
   const shownKey = shown.map((c) => c.id).join("|");
@@ -122,12 +131,18 @@ function ScanPage() {
 
   useEffect(() => {
     if (!guess || listMode !== "scan") return;
-    const ranked = matchComicsFromGuess(guess, 5, extras, libraryRows);
-    setMatches((prev) => {
-      const same =
-        prev.length === ranked.length && prev.every((comic, i) => comic.id === ranked[i]?.id);
-      return same ? prev : ranked;
+    let cancel = false;
+    rankComicGuess(guess, [...extras, ...libraryRows], 5).then((ranked) => {
+      if (cancel) return;
+      setMatches((prev) => {
+        const same =
+          prev.length === ranked.length && prev.every((comic, i) => comic.id === ranked[i]?.id);
+        return same ? prev : ranked;
+      });
     });
+    return () => {
+      cancel = true;
+    };
   }, [guess, extras, libraryRows, listMode]);
 
   useEffect(() => {

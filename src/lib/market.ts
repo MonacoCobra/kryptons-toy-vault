@@ -1,5 +1,3 @@
-import { FIGURE_BY_ID, FIGURES } from "@/data/figures";
-import { COMIC_BY_ID, COMICS } from "@/data/comics";
 import type { CatalogComic, CatalogFigure, SoldComp } from "@/lib/types";
 import { hashString, isoWeek, mean, mulberry32 } from "@/lib/utils";
 
@@ -158,30 +156,3 @@ export function comicHistory(comic: CatalogComic, weeks = 12) {
   });
 }
 
-export function lookupFigure(id: string) {
-  return FIGURE_BY_ID[id];
-}
-
-export function lookupComic(id: string) {
-  return COMIC_BY_ID[id];
-}
-
-export function topMovers(limit = 5) {
-  return FIGURES.map((f) => {
-    const now = figureMarket(f, 0).estimate;
-    const prev = figureMarket(f, -1).estimate;
-    const delta = now - prev;
-    const pct = prev ? (delta / prev) * 100 : 0;
-    return { figure: f, now, prev, delta, pct };
-  })
-    .sort((a, b) => Math.abs(b.pct) - Math.abs(a.pct))
-    .slice(0, limit);
-}
-
-export function catalogStats() {
-  return {
-    figures: FIGURES.length,
-    comics: COMICS.length,
-    companies: new Set(FIGURES.map((f) => f.company)).size,
-  };
-}

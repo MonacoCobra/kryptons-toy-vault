@@ -1,7 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { fetchLocgIssueById, normalizeUpc } from "@/lib/locg-upc";
-import { UPC_MAP as upcMapJson } from "@/data/comic-upc-map/load";
 
 /**
  * Resolve real published cover art for catalog comics.
@@ -58,9 +57,9 @@ type UpcMapEntry = {
   source?: string;
 };
 
-function readUpcMap(comicId: string): UpcMapEntry | null {
-  const map = upcMapJson as Record<string, UpcMapEntry>;
-  return map[comicId] ?? null;
+async function readUpcMap(comicId: string): Promise<UpcMapEntry | null> {
+  const { readUpcEntry } = await import("@/lib/upc-entry.server");
+  return readUpcEntry(comicId);
 }
 
 async function readCached(comicId: string): Promise<CoverRow | null> {
@@ -244,7 +243,7 @@ async function resolveViaUpc(opts: {
   issue: string;
   publisher: string;
 }): Promise<ComicCoverResult | null> {
-  const mapped = readUpcMap(opts.comicId);
+  const mapped = await readUpcMap(opts.comicId);
   const upc = normalizeUpc(opts.upc) || normalizeUpc(mapped?.upc);
   const locgId = opts.locgId || mapped?.locgId;
 

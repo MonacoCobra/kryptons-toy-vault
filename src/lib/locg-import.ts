@@ -1,4 +1,3 @@
-import { mergeComics } from "@/data/comics";
 import type { CatalogComic, ComicFormat, ComicGrade, CustomComic, OwnedComic } from "@/lib/types";
 import { slug } from "@/lib/utils";
 
@@ -666,14 +665,12 @@ function pickBestMatch(row: LocgRow, catalog: CatalogComic[]): CatalogComic | un
 
 /**
  * Match LOCG rows to catalog comics.
- * Pass live weekly extras and permanent-archive promotions so matching uses the full library.
+ * Pass the baked catalog (search index or `mergeComics()` in node checks) plus any live extras.
  */
 export function matchLocgRows(
   rows: LocgRow[],
-  extras: CatalogComic[] = [],
-  promoted: CatalogComic[] = [],
+  catalog: CatalogComic[] = [],
 ): { matches: LocgMatch[]; owned: number; wanted: number; unmatched: number; matched: number } {
-  const catalog = mergeComics(extras, promoted);
 
   const matches: LocgMatch[] = [];
   let owned = 0;

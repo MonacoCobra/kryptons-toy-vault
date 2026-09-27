@@ -1,5 +1,4 @@
 import { createServerFn } from "@tanstack/react-start";
-import { COMICS } from "@/data/comics";
 import { normalizeComicFormat } from "@/lib/comic-format";
 import type { CatalogComic } from "@/lib/types";
 import { weekKey } from "@/lib/utils";
@@ -275,18 +274,6 @@ export async function promoteAgedWeeklyComics(now = new Date()): Promise<number>
   return promoted;
 }
 
-function mergeUnique(base: CatalogComic[], extra: CatalogComic[]): CatalogComic[] {
-  const seen = new Set(base.map(comicKey));
-  const out = [...base];
-  for (const c of extra) {
-    const k = comicKey(c);
-    if (seen.has(k)) continue;
-    seen.add(k);
-    out.push(c);
-  }
-  return out;
-}
-
 function buildLibrary(
   permanentDb: CatalogComic[],
   drops: DropRow[],
@@ -322,21 +309,7 @@ function buildLibrary(
     noteworthy.push(c);
   }
 
-  // Recent street dates in the static catalog also count as noteworthy
-  for (const c of COMICS) {
-    const k = comicKey(c);
-    if (noteworthyKeys.has(k)) continue;
-    const street = c.streetDate ?? c.coverDate;
-    if (!street) continue;
-    const t = Date.parse(street);
-    if (!Number.isFinite(t)) continue;
-    if (Date.now() - t < NOTEWORTHY_WEEKS * 7 * 24 * 3600 * 1000) {
-      noteworthyKeys.add(k);
-      noteworthy.push(c);
-    }
-  }
-
-  const archive = mergeUnique(COMICS, permanentDb).filter((c) => !noteworthyKeys.has(comicKey(c)));
+  const archive = permanentDb.filter((c) => !noteworthyKeys.has(comicKey(c)));
 
   return {
     noteworthy: noteworthy.sort((a, b) => {
@@ -350,13 +323,12 @@ function buildLibrary(
 }
 
 /** Client-side fallback when the server library has not loaded yet. */
-export function splitComicsClient(extras: CatalogComic[] = [], now = new Date()): {
+export function splitComicsClient(extras: CatalogComic[] = [], _now = new Date()): {
   noteworthy: CatalogComic[];
   archive: CatalogComic[];
 } {
   const noteworthyKeys = new Set<string>();
   const noteworthy: CatalogComic[] = [];
-  const windowMs = NOTEWORTHY_WEEKS * 7 * 24 * 3600 * 1000;
 
   for (const c of extras) {
     const k = comicKey(c);
@@ -365,26 +337,13 @@ export function splitComicsClient(extras: CatalogComic[] = [], now = new Date())
     noteworthy.push(c);
   }
 
-  for (const c of COMICS) {
-    const k = comicKey(c);
-    if (noteworthyKeys.has(k)) continue;
-    const street = c.streetDate ?? c.coverDate;
-    if (!street) continue;
-    const t = Date.parse(street);
-    if (Number.isFinite(t) && now.getTime() - t < windowMs) {
-      noteworthyKeys.add(k);
-      noteworthy.push(c);
-    }
-  }
-
-  const archive = COMICS.filter((c) => !noteworthyKeys.has(comicKey(c)));
   return {
     noteworthy: noteworthy.sort((a, b) => {
       const da = a.streetDate ?? a.coverDate;
       const db = b.streetDate ?? b.coverDate;
       return da < db ? 1 : -1;
     }),
-    archive,
+    archive: [],
   };
 }
 

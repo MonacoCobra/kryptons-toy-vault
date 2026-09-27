@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { COMIC_BY_ID, comicLabel } from "@/data/comics";
-import { FIGURE_BY_ID } from "@/data/figures";
+import { useMemo } from "react";
+import { comicLabel } from "@/lib/comic-label";
 import { ComicCover } from "@/components/comic-cover";
 import { FigureArt } from "@/components/figure-art";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,7 @@ import { usd } from "@/lib/format";
 import { useFigureExtras, useLiveComics } from "@/lib/live-store";
 import { comicEstimate, figureMarket } from "@/lib/market";
 import { useVault } from "@/lib/store";
+import { useResolvedCatalog } from "@/lib/use-catalog";
 
 export const Route = createFileRoute("/wishlist")({ component: WishlistPage });
 
@@ -18,12 +19,14 @@ function WishlistPage() {
   const liveComics = useLiveComics();
   const toggleWantFigure = useVault((s) => s.toggleWantFigure);
   const toggleWantComic = useVault((s) => s.toggleWantComic);
-
-  const figures = Object.keys(wantedFigures)
-    .map((id) => FIGURE_BY_ID[id] ?? liveFigures.find((f) => f.id === id))
+  const figureIds = useMemo(() => Object.keys(wantedFigures), [wantedFigures]);
+  const comicIds = useMemo(() => Object.keys(wantedComics), [wantedComics]);
+  const resolved = useResolvedCatalog(figureIds, comicIds);
+  const figures = figureIds
+    .map((id) => resolved.figures.find((f) => f.id === id) ?? liveFigures.find((f) => f.id === id))
     .filter(Boolean);
-  const comics = Object.keys(wantedComics)
-    .map((id) => COMIC_BY_ID[id] ?? liveComics.find((c) => c.id === id))
+  const comics = comicIds
+    .map((id) => resolved.comics.find((c) => c.id === id) ?? liveComics.find((c) => c.id === id))
     .filter(Boolean);
 
   return (

@@ -7,7 +7,9 @@
     "nf3": "0.3.17"
   },
   "scripts": {
+    "predev": "node --max-old-space-size=6144 --import ./scripts/register-ts-paths.mjs --experimental-strip-types scripts/shard-catalog.mjs",
     "dev": "node scripts/with-app-env.mjs vite dev --host 0.0.0.0 --port 8080",
+    "prebuild": "node --max-old-space-size=6144 --import ./scripts/register-ts-paths.mjs --experimental-strip-types scripts/shard-catalog.mjs",
     "build": "node scripts/with-app-env.mjs vite build && npm run db:migrate",
     "db:migrate": "node scripts/migrate.mjs",
     "build:dev": "node scripts/with-app-env.mjs vite build --mode development",

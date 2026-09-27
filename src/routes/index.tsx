@@ -1,13 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { ArrowDownRight, ArrowUpRight, Images } from "lucide-react";
-import { comicLabel, recentComics } from "@/data/comics";
+import { comicLabel } from "@/lib/comic-label";
 import { FigureArt } from "@/components/figure-art";
 import { ComicCover } from "@/components/comic-cover";
 import { pct, usd } from "@/lib/format";
 import { useLiveComics, useLiveDrop, useLiveFigures } from "@/lib/live-store";
-import { catalogStats } from "@/lib/market";
 import { useVault } from "@/lib/store";
+import { useCatalogManifest, useOwnedCatalog } from "@/lib/use-catalog";
 import { weekKey } from "@/lib/utils";
 import { summarizeVault } from "@/lib/vault-math";
 
@@ -21,12 +21,20 @@ function Home() {
   const liveComics = useLiveComics();
   const liveFigures = useLiveFigures();
   const liveLoading = useLiveDrop((s) => s.loading);
-  const stats = summarizeVault({ ownedFigures, ownedComics }, { comics: liveComics, figures: liveFigures });
-  const catalog = catalogStats();
+  const { manifest } = useCatalogManifest();
+  const ownedCatalog = useOwnedCatalog();
+  const stats = summarizeVault(
+    { ownedFigures, ownedComics },
+    { comics: ownedCatalog.comics, figures: ownedCatalog.figures },
+  );
+  const catalog = {
+    figures: manifest?.figures ?? 0,
+    comics: manifest?.comics ?? 0,
+  };
   const gainUp = stats.gain >= 0;
   const week = weekKey();
   const newFigures = liveFigures.slice(0, 8);
-  const newComics = liveComics.length ? liveComics.slice(0, 10) : recentComics(10);
+  const newComics = liveComics.length ? liveComics.slice(0, 10) : (manifest?.recentComics ?? []).slice(0, 10);
 
   return (
     <main className="flex flex-col gap-8">
@@ -65,12 +73,12 @@ function Home() {
         <StatCard
           label="Action Figures"
           value={String(stats.figureCount)}
-          hint={`${catalog.figures} in the checklists`}
+          hint={manifest ? `${catalog.figures.toLocaleString()} in the checklists` : "Loading checklist…"}
         />
         <StatCard
           label="Comics"
           value={String(stats.comicCount)}
-          hint={`${catalog.comics} issues in the catalog`}
+          hint={manifest ? `${catalog.comics.toLocaleString()} issues in the catalog` : "Loading catalog…"}
         />
       </section>
 

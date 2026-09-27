@@ -1,9 +1,9 @@
-import { useMemo, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Heart, Trash2 } from "lucide-react";
+import { useEffect, useState } from "react";
 import { COMPANY_BY_ID } from "@/data/companies";
-import { figureById, mergeFigures } from "@/data/figures";
 import { AddFigureDialog } from "@/components/add-figure-dialog";
+import { loadFigureSet, resolveFigure } from "@/lib/catalog-client";
 import { FigureArt } from "@/components/figure-art";
 import { FigureSetScroller } from "@/components/figure-set-scroller";
 import { POPULAR_FRANCHISES, TRANSFORMERS_PARTIES } from "@/lib/figure-property";
@@ -15,6 +15,7 @@ import { formatDate, usd } from "@/lib/format";
 import { useEnsureFigureLibrary, useFigureExtras, useFigureLib, useLiveDrop, useLiveFigures } from "@/lib/live-store";
 import { figureHistory, figureMarket } from "@/lib/market";
 import { CONDITIONS, useVault } from "@/lib/store";
+import type { CatalogFigure } from "@/lib/types";
 
 export const Route = createFileRoute("/figures/$figureId")({
   component: FigureDetail,
@@ -27,24 +28,46 @@ function FigureDetail() {
   const extras = useFigureExtras();
   const loadingDrop = useLiveDrop((s) => s.loading);
   const loadingLib = useFigureLib((s) => s.loading);
-  const catalog = useMemo(() => mergeFigures(extras), [extras]);
-  const figure = figureById(figureId, extras);
-  const setMembers = useMemo(
-    () => (figure ? getFigureSetMembers(figure, catalog) : []),
-    [figure, catalog],
-  );
-  if (!figure) {
-    if ((figureId.startsWith("live-") || figureId.startsWith("af-")) && (loadingDrop || loadingLib)) {
-      return <p className="py-16 text-center text-sm text-muted">Loading figure catalog…</p>;
-    }
-    throw notFound();
-  }
-
-  const owned = useVault((s) => s.ownedFigures[figure.id]);
-  const wanted = useVault((s) => s.wantedFigures[figure.id]);
+  const [figure, setFigure] = useState<CatalogFigure | null | undefined>(undefined);
+  const [setMembers, setSetMembers] = useState<CatalogFigure[]>([]);
+  const [edit, setEdit] = useState(false);
+  const owned = useVault((s) => (figure ? s.ownedFigures[figure.id] : undefined));
+  const wanted = useVault((s) => (figure ? s.wantedFigures[figure.id] : undefined));
   const toggleWant = useVault((s) => s.toggleWantFigure);
   const removeFigure = useVault((s) => s.removeFigure);
-  const [edit, setEdit] = useState(false);
+
+  useEffect(() => {
+    let cancel = false;
+    setFigure(undefined);
+    resolveFigure(figureId, extras)
+      .then(async (found) => {
+        if (cancel) return;
+        setFigure(found ?? null);
+        if (!found) {
+          setSetMembers([]);
+          return;
+        }
+        if (!found.setId?.trim()) {
+          setSetMembers([found]);
+          return;
+        }
+        const members = await loadFigureSet(found.setId);
+        if (cancel) return;
+        const catalog = members.some((row) => row.id === found.id) ? members : [found, ...members];
+        setSetMembers(getFigureSetMembers(found, catalog));
+      })
+      .catch(() => {
+        if (!cancel) setFigure(null);
+      });
+    return () => {
+      cancel = true;
+    };
+  }, [extras, figureId]);
+
+  if (figure === undefined || ((figureId.startsWith("live-") || figureId.startsWith("af-")) && !figure && (loadingDrop || loadingLib))) {
+    return <p className="py-16 text-center text-sm text-muted">Loading figure catalog…</p>;
+  }
+  if (!figure) throw notFound();
 
   const company = COMPANY_BY_ID[figure.company];
   const market = figureMarket(figure);
@@ -85,7 +108,7 @@ function FigureDetail() {
               search={{ company: figure.company }}
               className="text-xs tracking-widest text-gold uppercase"
             >
-              {company.name} · {figure.line}
+              {company?.name ?? figure.company} · {figure.line}
             </Link>
             {figure.property ? (
               <Link

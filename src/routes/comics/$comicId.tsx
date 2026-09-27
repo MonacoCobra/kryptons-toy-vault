@@ -1,7 +1,8 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ChevronRight, Heart, Trash2 } from "lucide-react";
-import { comicById, comicLabel, mergeComics } from "@/data/comics";
+import { loadComicBundle } from "@/lib/catalog-client";
+import { comicLabel } from "@/lib/comic-label";
 import { AddComicDialog } from "@/components/add-comic-dialog";
 import { ComicCover } from "@/components/comic-cover";
 import { ComicVariantScroller } from "@/components/comic-variant-scroller";
@@ -10,17 +11,13 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { libraryCatalogRows } from "@/lib/comic-catalog";
 import { comicFormatLabel, isCollectedComic } from "@/lib/comic-format";
-import {
-  assignSeriesRunYears,
-  seriesBaseTitle,
-  seriesDisplayLabel,
-  seriesRunYearFor,
-} from "@/lib/comic-series";
-import { getComicVariants, indexComicsByFamily } from "@/lib/comic-variants";
+import { seriesBaseTitle, seriesDisplayLabel, seriesRunYearFor } from "@/lib/comic-series";
+import { getComicVariants } from "@/lib/comic-variants";
 import { formatMonthYear, usd } from "@/lib/format";
 import { useComicLib, useEnsureComicLibrary, useLiveComics, useLiveDrop } from "@/lib/live-store";
 import { comicHistory, comicMarket } from "@/lib/market";
 import { GRADES, useVault } from "@/lib/store";
+import type { CatalogComic } from "@/lib/types";
 
 export const Route = createFileRoute("/comics/$comicId")({
   component: ComicDetail,
@@ -32,35 +29,54 @@ function ComicDetail() {
   const library = useEnsureComicLibrary(extras);
   const loading = useLiveDrop((s) => s.loading);
   const libLoading = useComicLib((s) => s.loading);
-  // Noteworthy live-drop titles are NOT in archive until they age out — include both.
   const libraryRows = useMemo(() => libraryCatalogRows(library), [library]);
-  const comic = comicById(comicId, extras, libraryRows);
-
-  const catalog = useMemo(
-    () => mergeComics(extras, libraryRows),
-    [extras, libraryRows],
-  );
-  const familyIndex = useMemo(() => indexComicsByFamily(catalog), [catalog]);
-  const yearById = useMemo(() => assignSeriesRunYears(catalog), [catalog]);
-  const variants = useMemo(
-    () => (comic ? getComicVariants(comic, catalog, familyIndex) : []),
-    [comic, catalog, familyIndex],
-  );
-
+  const [bundle, setBundle] = useState<Awaited<ReturnType<typeof loadComicBundle>> | undefined>(undefined);
+  const [edit, setEdit] = useState(false);
   const ownedList = useVault((s) => s.ownedComics);
+  const toggleWant = useVault((s) => s.toggleWantComic);
+  const removeComic = useVault((s) => s.removeComic);
+
+  useEffect(() => {
+    let cancel = false;
+    setBundle(undefined);
+    loadComicBundle(comicId)
+      .then((next) => {
+        if (!cancel) setBundle(next);
+      })
+      .catch(() => {
+        if (!cancel) setBundle(null);
+      });
+    return () => {
+      cancel = true;
+    };
+  }, [comicId]);
+
+  const comic = useMemo(() => {
+    if (bundle?.comic) return bundle.comic;
+    return extras.find((row) => row.id === comicId) ?? libraryRows.find((row) => row.id === comicId);
+  }, [bundle, comicId, extras, libraryRows]);
+  const yearById = useMemo(() => {
+    const years = new Map<string, number>();
+    if (bundle?.run) {
+      for (const [id, year] of Object.entries(bundle.run.years)) years.set(id, year);
+    } else if (bundle?.comic) {
+      years.set(bundle.comic.id, bundle.year);
+    }
+    return years;
+  }, [bundle]);
+  const variants = useMemo(() => {
+    if (!comic) return [];
+    const catalog = [...(bundle?.run?.comics ?? []), ...(bundle?.run?.related ?? []), ...extras, ...libraryRows];
+    return getComicVariants(comic, catalog);
+  }, [bundle, comic, extras, libraryRows]);
   const owned = useMemo(
-    () => (comic ? Object.values(ownedList).find((o) => o.catalogId === comic.id) : undefined),
+    () => (comic ? Object.values(ownedList).find((entry) => entry.catalogId === comic.id) : undefined),
     [ownedList, comic],
   );
   const wanted = useVault((s) => (comic ? s.wantedComics[comic.id] : undefined));
-  const toggleWant = useVault((s) => s.toggleWantComic);
-  const removeComic = useVault((s) => s.removeComic);
-  const [edit, setEdit] = useState(false);
 
   if (!comic) {
-    // Wait for weekly drop + comic library. Noteworthy-only live ids are absent from
-    // static COMICS/archive until promotion — 404ing before library resolves was the Live bug.
-    if (loading || libLoading || library == null) {
+    if (bundle === undefined || loading || libLoading || library == null) {
       return <p className="py-16 text-center text-sm text-muted">Loading catalog…</p>;
     }
     throw notFound();
@@ -146,7 +162,7 @@ function ComicLadderCrumbs({
   comic,
   yearById,
 }: {
-  comic: NonNullable<ReturnType<typeof comicById>>;
+  comic: CatalogComic;
   yearById: Map<string, number>;
 }) {
   const year = seriesRunYearFor(comic, yearById);

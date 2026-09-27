@@ -1,5 +1,3 @@
-import { COMIC_BY_ID } from "@/data/comics";
-import { FIGURE_BY_ID, FIGURES } from "@/data/figures";
 import { comicEstimate, comicHistory, figureHistory, figureMarket } from "@/lib/market";
 import type { CatalogComic, CatalogFigure, VaultState } from "@/lib/types";
 
@@ -12,9 +10,9 @@ export function summarizeVault(
   let comicValue = 0;
   let comicCost = 0;
   const historyMap = new Map<string, number>();
-  const figMap: Record<string, CatalogFigure> = { ...FIGURE_BY_ID };
+  const figMap: Record<string, CatalogFigure> = {};
   for (const f of extras?.figures ?? []) figMap[f.id] = f;
-  const comicMap: Record<string, CatalogComic> = { ...COMIC_BY_ID };
+  const comicMap: Record<string, CatalogComic> = {};
   for (const c of extras?.comics ?? []) comicMap[c.id] = c;
 
   for (const owned of Object.values(state.ownedFigures)) {
@@ -49,7 +47,7 @@ export function summarizeVault(
     value: Math.round(v * 100) / 100,
   }));
 
-  const catalogFigures = extras?.figures?.length ? [...FIGURES, ...extras.figures] : FIGURES;
+  const catalogFigures = extras?.figures ?? [];
   const byCompany = catalogFigures.reduce(
     (acc, f) => {
       const row = acc[f.company] ?? { total: 0, owned: 0 };

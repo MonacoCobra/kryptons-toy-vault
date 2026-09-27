@@ -2,8 +2,7 @@ import { useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Trash2 } from "lucide-react";
 import { toast } from "sonner";
-import { COMIC_BY_ID, comicLabel } from "@/data/comics";
-import { FIGURE_BY_ID } from "@/data/figures";
+import { comicLabel } from "@/lib/comic-label";
 import { ComicCover } from "@/components/comic-cover";
 import { FigureArt } from "@/components/figure-art";
 import { Badge } from "@/components/ui/badge";
@@ -14,6 +13,7 @@ import { useFigureExtras, useLiveComics } from "@/lib/live-store";
 import { comicEstimate, figureMarket } from "@/lib/market";
 import { useVault } from "@/lib/store";
 import { DisplaysGallery } from "@/components/displays-gallery";
+import { useOwnedCatalog } from "@/lib/use-catalog";
 import { summarizeVault } from "@/lib/vault-math";
 
 export const Route = createFileRoute("/collection")({ component: CollectionPage });
@@ -25,29 +25,44 @@ function CollectionPage() {
   const displayCount = Object.keys(displays).length;
   const liveFigures = useFigureExtras();
   const liveComics = useLiveComics();
+  const ownedCatalog = useOwnedCatalog();
   const clearVault = useVault((s) => s.clearVault);
   const removeFigure = useVault((s) => s.removeFigure);
   const removeComic = useVault((s) => s.removeComic);
   const removeCustomComic = useVault((s) => s.removeCustomComic);
   const [tab, setTab] = useState<string | null>(null);
-  const stats = summarizeVault({ ownedFigures, ownedComics }, { figures: liveFigures, comics: liveComics });
+  const stats = summarizeVault(
+    { ownedFigures, ownedComics },
+    { figures: ownedCatalog.figures, comics: ownedCatalog.comics },
+  );
+  const figureById = useMemo(
+    () => new Map(ownedCatalog.figures.map((figure) => [figure.id, figure])),
+    [ownedCatalog.figures],
+  );
+  const comicById = useMemo(
+    () => new Map(ownedCatalog.comics.map((comic) => [comic.id, comic])),
+    [ownedCatalog.comics],
+  );
 
   const figures = useMemo(
     () =>
       Object.values(ownedFigures)
-        .map((o) => ({ owned: o, figure: FIGURE_BY_ID[o.figureId] ?? liveFigures.find((f) => f.id === o.figureId) }))
+        .map((o) => ({ owned: o, figure: figureById.get(o.figureId) ?? liveFigures.find((f) => f.id === o.figureId) }))
         .filter((x) => x.figure)
         .sort((a, b) => (a.owned.addedAt < b.owned.addedAt ? 1 : -1)),
-    [ownedFigures, liveFigures],
+    [ownedFigures, liveFigures, figureById],
   );
 
   const comics = useMemo(
     () =>
       Object.values(ownedComics)
-        .map((o) => ({ owned: o, comic: o.catalogId ? COMIC_BY_ID[o.catalogId] ?? liveComics.find((c) => c.id === o.catalogId) : o.custom }))
+        .map((o) => ({
+          owned: o,
+          comic: o.catalogId ? comicById.get(o.catalogId) ?? liveComics.find((c) => c.id === o.catalogId) : o.custom,
+        }))
         .filter((x) => x.comic)
         .sort((a, b) => (a.owned.addedAt < b.owned.addedAt ? 1 : -1)),
-    [ownedComics, liveComics],
+    [ownedComics, liveComics, comicById],
   );
 
   const activeTab = tab ?? (figures.length === 0 && comics.length > 0 ? "comics" : "figures");
@@ -154,7 +169,7 @@ function CollectionPage() {
               {comics.map(({ owned, comic }) => {
                 if (!comic) return null;
                 const catalog = owned.catalogId
-                  ? COMIC_BY_ID[owned.catalogId] ?? liveComics.find((c) => c.id === owned.catalogId)
+                  ? comicById.get(owned.catalogId) ?? liveComics.find((c) => c.id === owned.catalogId)
                   : undefined;
                 const est = catalog ? comicEstimate(catalog) : owned.acquiredPrice ?? 0;
                 const isCustom = Boolean(owned.custom && !owned.catalogId);

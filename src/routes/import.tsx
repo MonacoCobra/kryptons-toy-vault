@@ -1,9 +1,12 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { FileUp, Upload } from "lucide-react";
 import { toast } from "sonner";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { loadComicSearchCatalog } from "@/lib/catalog-client";
+import { mergeComicsInto } from "@/lib/catalog-search";
+import { libraryCatalogRows } from "@/lib/comic-catalog";
 import { useEnsureComicLibrary, useLiveComics } from "@/lib/live-store";
 import {
   buildOwnedFromMatch,
@@ -13,6 +16,7 @@ import {
   type LocgParseResult,
 } from "@/lib/locg-import";
 import { useVault } from "@/lib/store";
+import type { CatalogComic } from "@/lib/types";
 
 export const Route = createFileRoute("/import")({
   component: ImportPage,
@@ -30,12 +34,28 @@ function ImportPage() {
   const [parsed, setParsed] = useState<LocgParseResult | null>(null);
   const [fileName, setFileName] = useState<string>("");
   const [busy, setBusy] = useState(false);
+  const [searchCatalog, setSearchCatalog] = useState<CatalogComic[] | null>(null);
+
+  useEffect(() => {
+    if (!parsed) return;
+    let cancel = false;
+    loadComicSearchCatalog()
+      .then(({ comics }) => {
+        if (!cancel) setSearchCatalog(comics);
+      })
+      .catch(() => {
+        if (!cancel) setSearchCatalog([]);
+      });
+    return () => {
+      cancel = true;
+    };
+  }, [parsed]);
 
   const matched = useMemo(() => {
-    if (!parsed) return null;
-    // Full seed + weekly extras + permanent archive promotions
-    return matchLocgRows(parsed.rows, extras, library?.archive ?? []);
-  }, [parsed, extras, library]);
+    if (!parsed || !searchCatalog) return null;
+    const catalog = mergeComicsInto(searchCatalog, [...extras, ...libraryCatalogRows(library)]);
+    return matchLocgRows(parsed.rows, catalog);
+  }, [parsed, searchCatalog, extras, library]);
 
   async function onFile(file?: File) {
     if (!file) return;
@@ -146,6 +166,11 @@ function ImportPage() {
         {fileName ? <p className="mt-3 text-xs text-muted">Loaded: {fileName}</p> : null}
       </section>
 
+      {parsed && !searchCatalog ? (
+        <p className="rounded-lg bg-bg-elevated px-4 py-6 text-sm text-muted shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
+          Matching this file against the catalog…
+        </p>
+      ) : null}
       {matched && parsed ? (
         <section className="flex flex-col gap-4 rounded-xl bg-bg-elevated p-5 shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
           <div className="flex flex-wrap items-end justify-between gap-3">

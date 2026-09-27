@@ -1,5 +1,4 @@
 import { createServerFn } from "@tanstack/react-start";
-import { FIGURES } from "@/data/figures";
 import { stampFigureFranchise } from "@/lib/figure-property";
 import type { CatalogFigure, CompanyId, ItemKind } from "@/lib/types";
 
@@ -86,13 +85,6 @@ function asArray(value: unknown): unknown[] {
   return [];
 }
 
-function isRecentRelease(releaseDate: string | undefined, now: Date, windowMs: number): boolean {
-  if (!releaseDate) return false;
-  const t = Date.parse(releaseDate);
-  if (!Number.isFinite(t)) return false;
-  return now.getTime() - t < windowMs;
-}
-
 function rowToFigure(row: FigureRow): CatalogFigure {
   return stampFigureFranchise({
     id: row.id,
@@ -176,17 +168,14 @@ export function validateFigureOverlayInput(raw: unknown): CatalogFigure | null {
   });
 }
 
-function bakedIndex() {
-  const skus = new Set<string>();
-  const ids = new Set<string>();
-  const keys = new Set<string>();
-  for (const f of FIGURES) {
-    ids.add(f.id);
-    keys.add(figureNameKey(f));
-    const s = normSku(f.sku);
-    if (s) skus.add(s);
-  }
-  return { skus, ids, keys };
+async function bakedIndex() {
+  const { readFigureIdentity } = await import("@/lib/figure-identity.server");
+  const identity = await readFigureIdentity();
+  return {
+    skus: new Set(identity.skus),
+    ids: new Set(identity.ids),
+    keys: new Set(identity.keys),
+  };
 }
 
 function isInIndex(
@@ -221,7 +210,7 @@ async function upsertOverlayRows(figures: CatalogFigure[]): Promise<FigureUpsert
   };
   if (!figures.length) return result;
 
-  const baked = bakedIndex();
+  const baked = await bakedIndex();
   let existing: CatalogFigure[] = [];
   try {
     existing = await readOverlay();
@@ -302,82 +291,22 @@ async function upsertOverlayRows(figures: CatalogFigure[]): Promise<FigureUpsert
 }
 
 /**
- * Client-side split mirroring comics: weekly/live extras + very recent static
- * releases stay in New & Noteworthy; the permanent FIGURES catalog (seed + backlog)
- * plus live SKU overlay forms the archive. Figures UI may still show a single merged
- * list via mergeFigures.
+ * Live DB overlay only. The baked figure catalog is static JSON under /catalog
+ * and is not shipped through this function.
  */
 export function splitFiguresClient(
-  extras: CatalogFigure[] = [],
+  _extras: CatalogFigure[] = [],
   overlayOrNow: CatalogFigure[] | Date = [],
-  nowArg = new Date(),
+  _nowArg = new Date(),
 ): FigureLibrary {
   const overlay = overlayOrNow instanceof Date ? [] : overlayOrNow;
-  const now = overlayOrNow instanceof Date ? overlayOrNow : nowArg;
   const windowMs = NOTEWORTHY_WEEKS * 7 * 24 * 3600 * 1000;
-  const noteworthyKeys = new Set<string>();
-  const noteworthy: CatalogFigure[] = [];
-
-  for (const f of extras) {
-    const k = figureNameKey(f);
-    if (noteworthyKeys.has(k)) continue;
-    noteworthyKeys.add(k);
-    noteworthy.push(f);
-  }
-
-  for (const f of FIGURES) {
-    const k = figureNameKey(f);
-    if (noteworthyKeys.has(k)) continue;
-    if (isRecentRelease(f.releaseDate, now, windowMs)) {
-      noteworthyKeys.add(k);
-      noteworthy.push(f);
-    }
-  }
-
-  const permanent = mergeOverlayOntoBaked(overlay);
-  const archive = permanent.filter((f) => !noteworthyKeys.has(figureNameKey(f)));
-
   return {
-    noteworthy: noteworthy.sort((a, b) => (a.releaseDate < b.releaseDate ? 1 : -1)),
-    archive,
+    noteworthy: [],
+    archive: [],
     overlay,
     weekHintMs: windowMs,
   };
-}
-
-/** Permanent archive view: baked + overlay minus N&N extras window. */
-export function figureArchive(
-  extras: CatalogFigure[] = [],
-  overlayOrNow: CatalogFigure[] | Date = [],
-  nowArg = new Date(),
-): CatalogFigure[] {
-  return splitFiguresClient(extras, overlayOrNow, nowArg).archive;
-}
-
-/** Merge live overlay on top of baked FIGURES (sku → id → name|subtitle|line|company). */
-export function mergeOverlayOntoBaked(overlay: CatalogFigure[]): CatalogFigure[] {
-  if (!overlay.length) return FIGURES;
-  const skus = new Set<string>();
-  const ids = new Set<string>();
-  const keys = new Set<string>();
-  for (const f of FIGURES) {
-    ids.add(f.id);
-    keys.add(figureNameKey(f));
-    const s = normSku(f.sku);
-    if (s) skus.add(s);
-  }
-  const add: CatalogFigure[] = [];
-  for (const f of overlay) {
-    const s = normSku(f.sku);
-    if (s && skus.has(s)) continue;
-    if (ids.has(f.id)) continue;
-    if (keys.has(figureNameKey(f))) continue;
-    add.push(f);
-    if (s) skus.add(s);
-    ids.add(f.id);
-    keys.add(figureNameKey(f));
-  }
-  return add.length ? [...FIGURES, ...add] : FIGURES;
 }
 
 export const getFigureLibrary = createServerFn({ method: "POST" })
