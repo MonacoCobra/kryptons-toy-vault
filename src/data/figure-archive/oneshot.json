@@ -247674,7 +247674,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-06-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.2,
@@ -247686,7 +247686,8 @@
       "sku-gtin",
       "sku:mephitsu",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "date-precision:year"
     ],
     "source": "curated-densify",
     "sku": "5010996146106",
@@ -251069,7 +251070,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-05-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -251083,7 +251084,8 @@
       "image-sku",
       "imgsku:legendztoys",
       "sku-alias",
-      "alias:hobbyfigures"
+      "alias:hobbyfigures",
+      "date-precision:year"
     ],
     "source": "curated-densify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0704/5169/1800/files/hasbro-marvel-legends-series-marvel-s-sandman.png?v=1695694859",
@@ -254251,7 +254253,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-04-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.55,
@@ -254269,7 +254271,8 @@
       "alias:planet-af",
       "alias:legendztoys",
       "alias:nerdzoic",
-      "alias:kitsap"
+      "alias:kitsap",
+      "date-precision:year"
     ],
     "source": "curated-densify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-spider-man-no-way-home-deluxe-green-goblin-5010996352378.jpg?v=1781638588",
@@ -283806,13 +283809,14 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-07-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.2,
     "tags": [
       "marvel",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated",
     "sku": null,
