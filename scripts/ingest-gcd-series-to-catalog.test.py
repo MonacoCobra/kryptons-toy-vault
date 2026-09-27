@@ -22,6 +22,7 @@ ROOT = SCRIPT_DIR.parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
 import comic_backlog_common as backlog  # noqa: E402
+import data_shards  # noqa: E402
 import gcd_dump  # noqa: E402
 
 
@@ -504,11 +505,11 @@ class FixtureIngestTest(unittest.TestCase):
             str(root),
         ]
         self.assertEqual(ingest.main(argv), 0)
-        comics = (root / "src/data/comics.ts").read_text()
-        self.assertIn('["im-gcd-fixture-indie-1"', comics)
-        self.assertIn('gcdIssueId: "8000001"', comics)
-        self.assertIn('upc: "84428400999100111"', comics)
-        upc = json.loads((root / "src/data/comic-upc-map.json").read_text())
+        rows = data_shards.load_comic_rows(root / "src/data/comics.ts")
+        hit = next(r for r in rows if r[0] == "im-gcd-fixture-indie-1")
+        self.assertEqual(hit[13]["gcdIssueId"], "8000001")
+        self.assertEqual(hit[13]["upc"], "84428400999100111")
+        upc = data_shards.load_map(root / "src/data/comic-upc-map.json")
         self.assertEqual(upc["im-keep-1"]["upc"], "111111111111")
         self.assertEqual(upc["im-gcd-fixture-indie-1"]["gcdIssueId"], "8000001")
         self.assertEqual(upc["im-gcd-fixture-indie-1"]["sourceId"], "8000001")
@@ -905,9 +906,9 @@ class DumpIngestTest(unittest.TestCase):
             str(root),
         ]
         self.assertEqual(ingest.main(argv), 0)
-        comics = (root / "src/data/comics.ts").read_text()
-        self.assertIn('gcdIssueId: "8000001"', comics)
-        upc = json.loads((root / "src/data/comic-upc-map.json").read_text())
+        rows = data_shards.load_comic_rows(root / "src/data/comics.ts")
+        self.assertTrue(any((r[13] or {}).get("gcdIssueId") == "8000001" for r in rows if len(r) > 13))
+        upc = data_shards.load_map(root / "src/data/comic-upc-map.json")
         self.assertEqual(upc["im-keep-1"]["upc"], "111111111111")
         self.assertEqual(upc["im-gcd-fixture-indie-1"]["gcdIssueId"], "8000001")
 
@@ -1006,11 +1007,12 @@ class DumpIngestTest(unittest.TestCase):
             str(root),
         ]
         self.assertEqual(ingest.main(argv), 0)
-        comics = (root / "src/data/comics.ts").read_text()
-        self.assertIn('gcdIssueId: "8000001"', comics)
-        self.assertIn('gcdIssueId: "8000004"', comics)
-        self.assertIn('variant: "Cover B"', comics)
-        self.assertIn("im-gcd-fixture-indie-1-cover-b", comics)
+        rows = data_shards.load_comic_rows(root / "src/data/comics.ts")
+        by_id = {r[0]: r for r in rows}
+        self.assertEqual(by_id["im-gcd-fixture-indie-1"][13]["gcdIssueId"], "8000001")
+        cover_b = by_id["im-gcd-fixture-indie-1-cover-b"]
+        self.assertEqual(cover_b[13]["gcdIssueId"], "8000004")
+        self.assertEqual(cover_b[13]["variant"], "Cover B")
 
     def test_refuses_api_without_use_api_flag(self):
         root = self._mini_root()

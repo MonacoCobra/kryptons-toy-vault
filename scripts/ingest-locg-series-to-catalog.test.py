@@ -19,6 +19,7 @@ ROOT = SCRIPT_DIR.parent
 sys.path.insert(0, str(SCRIPT_DIR))
 
 import comic_backlog_common as backlog  # noqa: E402
+import data_shards  # noqa: E402
 
 
 def _load_ingest():
@@ -320,11 +321,11 @@ class FixtureIngestTest(unittest.TestCase):
             str(root),
         ]
         self.assertEqual(ingest.main(argv), 0)
-        comics = (root / "src/data/comics.ts").read_text()
-        self.assertIn('["im-fixture-indie-1"', comics)
-        self.assertIn('locgId: "5550001"', comics)
-        self.assertIn('upc: "84428400999100111"', comics)
-        upc = json.loads((root / "src/data/comic-upc-map.json").read_text())
+        rows = data_shards.load_comic_rows(root / "src/data/comics.ts")
+        hit = next(r for r in rows if r[0] == "im-fixture-indie-1")
+        self.assertEqual(hit[13]["locgId"], "5550001")
+        self.assertEqual(hit[13]["upc"], "84428400999100111")
+        upc = data_shards.load_map(root / "src/data/comic-upc-map.json")
         self.assertEqual(upc["im-keep-1"]["upc"], "111111111111")
         self.assertEqual(upc["im-fixture-indie-1"]["locgId"], "5550001")
         self.assertEqual(upc["im-fixture-indie-1"]["upc"], "84428400999100111")

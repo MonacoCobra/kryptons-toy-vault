@@ -122,46 +122,9 @@ def marvel_get(path: str, pub: str, priv: str, params: dict) -> dict:
 
 
 def parse_comics_meta() -> dict[str, dict]:
-    # Reuse same regex as LOCG backfill
-    text = COMICS_TS.read_text()
-    pat = re.compile(
-        r'\["([^"]+)",\s*"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*'
-        r'"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*([0-9.]+),\s*"([^"]+)",\s*'
-        r'([0-9.]+),\s*([0-9]+),\s*"([^"]*)"',
-        re.M,
-    )
-    out: dict[str, dict] = {}
-    for m in pat.finditer(text):
-        cid, series, issue, publisher, cover_date = (
-            m.group(1),
-            m.group(2),
-            m.group(3),
-            m.group(4),
-            m.group(5),
-        )
-        fmt = m.group(10)
-        rest = text[m.end() : m.end() + 400]
-        variant = None
-        upc = None
-        em = re.search(r"\{([^}]*)\}\s*\]", rest)
-        if em and "upc" in em.group(1):
-            um = re.search(r'upc:\s*"([^"]+)"', em.group(1))
-            if um:
-                upc = um.group(1)
-        if em and "variant" in em.group(1):
-            vm = re.search(r'variant:\s*"([^"]+)"', em.group(1))
-            if vm:
-                variant = vm.group(1)
-        out[cid] = {
-            "series": series,
-            "issue": issue,
-            "publisher": publisher,
-            "coverDate": cover_date,
-            "variant": variant,
-            "upc": upc,
-            "format": fmt,
-        }
-    return out
+    import data_shards
+
+    return data_shards.comics_meta(COMICS_TS)
 
 
 def series_core(name: str) -> str:
@@ -216,15 +179,21 @@ def cover_from(comic: dict) -> str | None:
 
 
 def load_json(path: Path, default):
+    import data_shards
+
+    if data_shards.dataset_kind(path):
+        return data_shards.load_document(path, default)
     if path.exists():
         return json.loads(path.read_text())
     return default
-
-
 def save_json(path: Path, data) -> None:
+    import data_shards
+
+    if data_shards.dataset_kind(path):
+        data_shards.save_document(path, data)
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
-
-
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--limit", type=int, default=400)

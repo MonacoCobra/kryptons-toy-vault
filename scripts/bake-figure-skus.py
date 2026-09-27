@@ -38,6 +38,8 @@ from typing import Any
 ROOT = Path("/workspace/collection-app")
 SCRIPTS = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import data_shards  # noqa: E402
 
 from figure_oneshot.shopify_dump import (  # noqa: E402
     STOREFRONTS,
@@ -628,9 +630,9 @@ def main() -> int:
     )
 
     index_meta: dict[str, Any] = {}
-    if use_cache and INDEX_JSON.exists():
+    if use_cache and data_shards.dataset_exists(INDEX_JSON):
         print(f"=== Using cached SKU index {INDEX_JSON} ===")
-        index = json.loads(INDEX_JSON.read_text())
+        index = data_shards.load_array(INDEX_JSON)
         index_meta["fetchLive"] = False
         index_meta["cache"] = True
     elif fetch_live:
@@ -639,15 +641,15 @@ def main() -> int:
         index_meta = getattr(build_sku_index_live, "stats", {})
         index_meta["fetchLive"] = True
         if not dry_run:
-            INDEX_JSON.write_text(json.dumps(index, indent=2) + "\n")
+            data_shards.save_array(INDEX_JSON, index)
             print(f"wrote {INDEX_JSON} ({len(index)} products with sku)")
     else:
         # Prefer dedicated sku index; fall back to rebuilding from image index if it gained skus
-        if INDEX_JSON.exists():
+        if data_shards.dataset_exists(INDEX_JSON):
             print(f"=== Using existing SKU index (pass --fetch for live) ===")
-            index = json.loads(INDEX_JSON.read_text())
+            index = data_shards.load_array(INDEX_JSON)
         else:
-            print("No product-sku-index.json — run with --fetch. Aborting.")
+            print("No product-sku-index — run with --fetch. Aborting.")
             return 1
         index_meta["fetchLive"] = False
 

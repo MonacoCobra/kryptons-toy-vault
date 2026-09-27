@@ -72,34 +72,25 @@ def normalize_upc(raw: str | None) -> str | None:
 
 
 def load_json(path: Path, default):
+    import data_shards
+
+    if data_shards.dataset_kind(path):
+        return data_shards.load_document(path, default)
     if path.exists():
         return json.loads(path.read_text())
     return default
-
-
 def save_json(path: Path, data) -> None:
+    import data_shards
+
+    if data_shards.dataset_kind(path):
+        data_shards.save_document(path, data)
+        return
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
-
-
 def parse_comics_meta() -> dict[str, dict]:
-    text = COMICS_TS.read_text()
-    pat = re.compile(
-        r'\["([^"]+)",\s*"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*'
-        r'"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*([0-9.]+),\s*"([^"]+)",\s*'
-        r'([0-9.]+),\s*([0-9]+),\s*"([^"]*)"',
-        re.M,
-    )
-    out: dict[str, dict] = {}
-    for m in pat.finditer(text):
-        # groups: 1=id 2=series 3=issue 4=publisher 5=coverDate ... 10=format
-        out[m.group(1)] = {
-            "series": m.group(2),
-            "issue": m.group(3),
-            "publisher": m.group(4),
-            "coverDate": m.group(5),
-        }
-    return out
+    import data_shards
+
+    return data_shards.comics_meta(COMICS_TS)
 
 
 def series_base_and_year(series: str) -> tuple[str, int | None]:
@@ -300,26 +291,22 @@ def pick_issue(results: list[dict], series_name: str, year: int, auth: str, dela
 
 
 def flock_merge_upc(local: dict) -> dict:
-    UPC_MAP.parent.mkdir(parents=True, exist_ok=True)
-    with open(UPC_MAP, "a+", encoding="utf-8") as f:
-        fcntl.flock(f.fileno(), fcntl.LOCK_EX)
-        f.seek(0)
-        raw = f.read()
-        disk = json.loads(raw) if raw.strip() else {}
-        for cid, new in local.items():
-            cur = dict(disk.get(cid) or {})
+    """Merge under the shard lock. Never replaces an existing UPC."""
+    import data_shards
+
+    def merge(disk: dict, loc: dict) -> dict:
+        out = dict(disk)
+        for cid, new in loc.items():
+            cur = dict(out.get(cid) or {})
             if cur.get("upc"):
                 continue
             if not new.get("upc"):
                 continue
             cur.update({k: v for k, v in new.items() if v is not None})
-            disk[cid] = cur
-        f.seek(0)
-        f.truncate()
-        f.write(json.dumps(disk, indent=2, sort_keys=True) + "\n")
-        f.flush()
-        fcntl.flock(f.fileno(), fcntl.LOCK_UN)
-        return disk
+            out[cid] = cur
+        return out
+
+    return data_shards.save_map_atomic(UPC_MAP, local, merge)
 
 
 def main() -> int:

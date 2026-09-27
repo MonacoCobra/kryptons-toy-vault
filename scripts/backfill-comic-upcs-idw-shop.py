@@ -50,48 +50,24 @@ def normalize_upc(raw: str | None) -> str | None:
 
 
 def load_json(path: Path, default):
+    import data_shards
+
+    if data_shards.dataset_kind(path):
+        return data_shards.load_document(path, default)
     if path.exists():
         return json.loads(path.read_text())
     return default
-
-
 def save_json(path: Path, data) -> None:
+    import data_shards
+
+    if data_shards.dataset_kind(path):
+        data_shards.save_document(path, data)
+        return
     path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
-
-
 def parse_comics_meta() -> dict[str, dict]:
-    text = COMICS_TS.read_text()
-    pat = re.compile(
-        r'\["([^"]+)",\s*"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*'
-        r'"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*([0-9.]+),\s*"([^"]+)",\s*'
-        r'([0-9.]+),\s*([0-9]+),\s*"([^"]*)"',
-        re.M,
-    )
-    out: dict[str, dict] = {}
-    for m in pat.finditer(text):
-        cid = m.group(1)
-        rest = text[m.end() : m.end() + 400]
-        upc = None
-        variant = None
-        em = re.search(r"\{([^}]*)\}\s*\]", rest)
-        if em and "upc" in em.group(1):
-            um = re.search(r'upc:\s*"([^"]+)"', em.group(1))
-            if um:
-                upc = um.group(1)
-        if em and "variant" in em.group(1):
-            vm = re.search(r'variant:\s*"([^"]+)"', em.group(1))
-            if vm:
-                variant = vm.group(1)
-        out[cid] = {
-            "series": m.group(2),
-            "issue": m.group(3),
-            "publisher": m.group(4),
-            "coverDate": m.group(5),
-            "format": m.group(10),
-            "upc": upc,
-            "variant": variant,
-        }
-    return out
+    import data_shards
+
+    return data_shards.comics_meta(COMICS_TS)
 
 
 def series_norm(s: str) -> str:

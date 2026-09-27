@@ -38,6 +38,8 @@ from typing import Any
 ROOT = Path("/workspace/collection-app")
 SCRIPTS = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import data_shards  # noqa: E402
 
 from figure_identity import is_gtin, clean_code, tokens, norm_text  # noqa: E402
 
@@ -510,7 +512,7 @@ def main() -> int:
     apply = bool(args.apply) and not args.dry_run
 
     rows: list[dict] = json.loads(ARCHIVE_JSON.read_text())
-    sku_index: list[dict] = json.loads(SKU_INDEX_JSON.read_text())
+    sku_index: list[dict] = data_shards.load_array(SKU_INDEX_JSON)
     img_index: list[dict] = json.loads(IMG_INDEX_JSON.read_text()) if IMG_INDEX_JSON.exists() else []
     overlay: dict[str, str] = {}
     if URLS_JSON.exists():

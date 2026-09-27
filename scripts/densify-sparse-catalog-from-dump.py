@@ -32,10 +32,15 @@ def load_ingest():
 
 
 def load_upc_gcd_map(path: Path) -> dict[str, str]:
-    """catalog id → gcdIssueId from comic-upc-map.json (fallback)."""
-    if not path.is_file():
+    """catalog id → gcdIssueId from the UPC map (fallback)."""
+    import data_shards
+
+    if data_shards.dataset_kind(path) and data_shards.dataset_exists(path):
+        raw = data_shards.load_map(path)
+    elif path.is_file():
+        raw = json.loads(path.read_text())
+    else:
         return {}
-    raw = json.loads(path.read_text())
     out: dict[str, str] = {}
     if not isinstance(raw, dict):
         return out
@@ -49,44 +54,25 @@ def load_upc_gcd_map(path: Path) -> dict[str, str]:
 
 
 def parse_catalog(path: Path, upc_gid: dict[str, str]):
-    text = path.read_text()
-    pat = re.compile(
-        r'\["([^"]+)",\s*"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*'
-        r'"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*([0-9.]+),\s*"([^"]+)",\s*'
-        r'([0-9.]+),\s*([0-9]+),\s*"([^"]*)"',
-        re.M,
-    )
+    import data_shards
+
     rows = []
-    for m in pat.finditer(text):
-        cid, series, issue, publisher, cover_date = (
-            m.group(1),
-            m.group(2),
-            m.group(3),
-            m.group(4),
-            m.group(5),
-        )
-        rest = text[m.end() : m.end() + 500]
-        variant = None
-        gid = None
-        em = re.search(r"\{([^}]*)\}\s*\]", rest)
-        if em:
-            body = em.group(1)
-            vm = re.search(r'variant:\s*"([^"]+)"', body)
-            if vm:
-                variant = vm.group(1)
-            gm = re.search(r'gcdIssueId:\s*"(\d+)"', body)
-            if gm:
-                gid = gm.group(1)
+    for row in data_shards.load_comic_rows(path):
+        extra = row[13] if len(row) > 13 and isinstance(row[13], dict) else {}
+        cid = str(row[0])
+        gid = extra.get("gcdIssueId")
+        if gid is not None:
+            gid = str(gid)
         if not gid:
             gid = upc_gid.get(cid)
         rows.append(
             {
                 "id": cid,
-                "series": series,
-                "issue": issue,
-                "publisher": publisher,
-                "coverDate": cover_date,
-                "variant": variant,
+                "series": row[1],
+                "issue": "" if row[2] is None else str(row[2]),
+                "publisher": row[3],
+                "coverDate": row[4],
+                "variant": extra.get("variant"),
                 "gcdIssueId": gid,
             }
         )

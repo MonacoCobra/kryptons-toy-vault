@@ -34,6 +34,8 @@ from typing import Any
 ROOT = Path("/workspace/collection-app")
 SCRIPTS = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import data_shards  # noqa: E402
 
 from figure_identity import is_gtin, clean_code, tokens, norm_text  # noqa: E402
 
@@ -468,7 +470,7 @@ def main() -> int:
     apply = bool(args.apply) and not args.dry_run
 
     rows: list[dict] = json.loads(ARCHIVE_JSON.read_text())
-    index: list[dict] = json.loads(INDEX_JSON.read_text())
+    index: list[dict] = data_shards.load_array(INDEX_JSON)
     by_gtin = build_gtin_index(index)
 
     audited = 0

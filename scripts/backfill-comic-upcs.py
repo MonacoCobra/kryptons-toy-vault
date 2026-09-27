@@ -9,7 +9,7 @@ Politeness:
   Use smaller --delay only for local debugging.
 
 Outputs:
-  src/data/comic-upc-map.json     (id → upc, locgId, coverUrl, source)
+  src/data/comic-upc-map/         (sharded id → upc, locgId, coverUrl, source; see src/data/SHARDING.md)
   src/data/comic-cover-urls.json  (id → cover URL when LOCG cover verified)
   scripts/comic-upc-backfill-stats.json
   scripts/comic-locg-series-cache.json  (series+publisher → seriesId + issue map)
@@ -527,48 +527,10 @@ def cv_barcode(series: str, issue: str) -> dict | None:
 
 
 def parse_comics_meta() -> dict[str, dict]:
-    """Pull id→{series,issue,publisher,variant,upc,coverDate,demand,key,format} from comics.ts."""
-    text = COMICS_TS.read_text()
-    pat = re.compile(
-        r'\["([^"]+)",\s*"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*'
-        r'"([^"]*)",\s*"([^"]*)",\s*"([^"]*)",\s*([0-9.]+),\s*"([^"]+)",\s*'
-        r'([0-9.]+),\s*([0-9]+),\s*"([^"]*)"',
-        re.M,
-    )
-    out: dict[str, dict] = {}
-    for m in pat.finditer(text):
-        cid, series, issue, publisher, cover_date = m.group(1), m.group(2), m.group(3), m.group(4), m.group(5)
-        fmt, demand, key = m.group(10), float(m.group(11)), int(m.group(12))
-        rest = text[m.end() : m.end() + 400]
-        variant = None
-        upc = None
-        em = re.search(r"\{([^}]*)\}\s*\]", rest)
-        if em and "upc" in em.group(1):
-            um = re.search(r'upc:\s*"([^"]+)"', em.group(1))
-            if um:
-                upc = um.group(1)
-        if em and "variant" in em.group(1):
-            vm = re.search(r'variant:\s*"([^"]+)"', em.group(1))
-            if vm:
-                variant = vm.group(1)
-        cover = None
-        if em and re.search(r"\bcover\s*:", em.group(1)):
-            cm = re.search(r'(?<![A-Za-z])cover:\s*"([^"]+)"', em.group(1))
-            if cm:
-                cover = cm.group(1)
-        out[cid] = {
-            "series": series,
-            "issue": issue,
-            "publisher": publisher,
-            "coverDate": cover_date,
-            "variant": variant,
-            "upc": upc,
-            "cover": cover,
-            "format": fmt,
-            "demand": demand,
-            "key": key,
-        }
-    return out
+    """Pull id→{series,issue,publisher,variant,upc,coverDate,demand,key,format} from the comic shards."""
+    import data_shards
+
+    return data_shards.comics_meta(COMICS_TS)
 
 
 
@@ -848,12 +810,21 @@ def build_catalog_candidates(
 
 
 def load_json(path: Path, default):
+    import data_shards
+
+    if data_shards.dataset_kind(path):
+        return data_shards.load_document(path, default)
     if path.exists():
         return json.loads(path.read_text())
     return default
 
 
 def save_json(path: Path, data) -> None:
+    import data_shards
+
+    if data_shards.dataset_kind(path):
+        data_shards.save_document(path, data)
+        return
     path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
 
 
@@ -935,7 +906,10 @@ def _locked_json_update(path: Path, merge_fn, local, default):
 
 
 def save_upc_map_atomic(local: dict) -> dict:
-    return _locked_json_update(UPC_MAP, merge_upc_maps, local, {})
+    """Merge under src/data/comic-upc-map/.lock. LOCG and Metron UPCs win."""
+    import data_shards
+
+    return data_shards.save_map_atomic(UPC_MAP, local, merge_upc_maps)
 
 
 def save_cover_urls_atomic(local: dict) -> dict:

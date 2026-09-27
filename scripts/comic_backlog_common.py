@@ -12,12 +12,9 @@ BACKLOG = ROOT / "src/data/comic-backlog"
 FLOOR = "1980-01-01"
 
 def parse_existing_ts():
-    src = COMICS_TS.read_text()
-    id_set, key_set = set(), set()
-    for m in re.finditer(r'\["([^"]+)",\s*"([^"]+)",\s*"([^"]+)",\s*"([^"]+)"', src):
-        id_set.add(m.group(1))
-        key_set.add(f"{m.group(2)}|{m.group(3)}|{m.group(4)}".lower())
-    return id_set, key_set
+    import data_shards
+
+    return data_shards.comic_id_sets(COMICS_TS)
 
 def parse_batch(path: Path):
     data = json.loads(path.read_text())
@@ -244,29 +241,25 @@ def inject_batch(batch_id: str, comment: str | None = None) -> int:
         raise SystemExit(f"{batch_id} already injected")
 
     existing_ids, existing_keys = parse_existing_ts()
-    lines = []
-    added = 0
+    fresh = []
     for row in batch["rows"]:
         if row[0] in existing_ids:
             continue
         skey = row_key(row)
         if skey in existing_keys:
             continue
-        lines.append(ts_literal(row))
+        fresh.append(row)
         existing_ids.add(row[0])
         existing_keys.add(skey)
-        added += 1
 
+    added = len(fresh)
     if not added:
         raise SystemExit("nothing to inject")
 
-    src = COMICS_TS.read_text()
-    marker = "];\n\nfunction pal"
-    if marker not in src:
-        raise SystemExit("comics.ts marker not found")
     hdr = comment or f"Injected from comic backlog ({batch_id}; floor {FLOOR})"
-    block = f"\n  // {hdr}\n" + "\n".join(lines) + "\n"
-    COMICS_TS.write_text(src.replace(marker, block + marker, 1))
+    import data_shards
+
+    data_shards.append_comic_rows(COMICS_TS, fresh, note=hdr)
 
     batch["status"] = "injected"
     path.write_text(json.dumps(batch, indent=2) + "\n")

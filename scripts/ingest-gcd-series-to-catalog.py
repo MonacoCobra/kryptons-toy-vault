@@ -2160,14 +2160,23 @@ def main(argv: list[str] | None = None) -> int:
         )
 
     locg.infer_existing_prefix = _infer_existing_prefix_fast  # type: ignore[method-assign]
+    import data_shards
+
     upc_map = bf.load_json(root / "src/data/comic-upc-map.json", {})
     cover_urls = bf.load_json(root / "src/data/comic-cover-urls.json", {})
     existing_gcd = collect_gcd_ids(upc_map)
-    # comics.ts extras often carry gcdIssueId even when upc-map lags.
-    comics_ts_text = (root / "src/data/comics.ts").read_text(encoding="utf-8")
+    # Row extras often carry gcdIssueId / locgId even when the upc map lags.
+    comics_ts_text = comics_ts.read_text(encoding="utf-8") if comics_ts.is_file() else ""
     for m in re.finditer(r'gcdIssueId:\s*"(\d+)"', comics_ts_text):
         existing_gcd.add(m.group(1))
     existing_locg = collect_locg_ids(upc_map, cover_urls, comics_ts_text)
+    for row in data_shards.load_comic_rows(comics_ts):
+        extra = row[13] if len(row) > 13 and isinstance(row[13], dict) else {}
+        gid = extra.get("gcdIssueId")
+        if gid is not None and str(gid).isdigit():
+            existing_gcd.add(str(gid))
+        if extra.get("locgId"):
+            existing_locg.add(str(extra["locgId"]))
 
     all_rows: list = []
     all_skips: list[dict] = []

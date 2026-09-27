@@ -13,12 +13,10 @@ PAL = "1e3a8a,e30613,ffd200"
 PUB = "DC Comics"
 
 def parse_existing():
-    src = COMICS_TS.read_text()
-    id_set, key_set = set(), set()
-    for m in re.finditer(r'\["([^"]+)",\s*"([^"]+)",\s*"([^"]+)",\s*"([^"]+)"', src):
-        id_set.add(m.group(1))
-        key_set.add(f"{m.group(2)}|{m.group(3)}|{m.group(4)}".lower())
-    return id_set, key_set
+    import sys
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import data_shards
+    return data_shards.comic_id_sets(COMICS_TS)
 
 EXISTING_IDS, EXISTING_KEYS = parse_existing()
 skipped = []
