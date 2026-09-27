@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T17:55:29Z",
+  "generatedAt": "2026-09-27T17:58:53Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-09-19T17:55:28.255356+00:00",
+    "after": "2026-09-20T17:58:51.584421+00:00",
     "before": null
   },
   "fetch": {
@@ -40,23 +40,25 @@
       "httpStatus": 200
     },
     "source": "live-rest",
-    "pagesFetched": 2,
-    "httpStatus": 200,
+    "pagesFetched": 1,
+    "httpStatus": 400,
     "blocker": null,
-    "notes": [],
+    "notes": [
+      "page 2: HTTP 400 (likely past last page)"
+    ],
     "perPage": 20,
-    "fetchedPostCount": 21,
+    "fetchedPostCount": 20,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9153,
+    "indexedRows": 9145,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 21,
+    "fetchedPosts": 20,
     "acceptedCandidates": 2,
-    "rejectedRows": 19,
+    "rejectedRows": 18,
     "byCompany": {
       "hasbro": {
         "accepted": 0,
@@ -110,7 +112,7 @@
     "byRejectReason": {
       "sponsor-newsletter": 3,
       "no-new-product-identity": 1,
-      "company-not-allowlisted": 8,
+      "company-not-allowlisted": 7,
       "already-in-oneshot": 3,
       "company-unknown": 3,
       "no-explicit-figure": 1
@@ -499,24 +501,6 @@
       "toyarkPostId": 599186,
       "title": "DC Multiverse – Absolute Batman Preview",
       "rationale": "Company/signal present but no explicitly named figure/variant."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "hiya",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/20/godzilla-singular-point-hiya-toys-godzilla-ultima-version-599174",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599174,
-      "title": "Godzilla Singular Point – Hiya Toys Godzilla Ultima Version",
-      "rationale": "Recognized hiya via class:companies-hiya-toys; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     }
   ],
   "applied": [],

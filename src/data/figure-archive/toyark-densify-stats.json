@@ -1,12 +1,12 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-09-26T17:55:29Z",
+  "finishedAt": "2026-09-27T17:58:53Z",
   "mode": "apply",
   "cap": 50,
   "acceptedCandidates": 2,
   "applied": 0,
   "skippedApply": 2,
-  "rejectedRows": 19,
+  "rejectedRows": 18,
   "withImage": 0,
   "aliasAdded": 0,
   "byCompany": {
@@ -62,7 +62,7 @@
   "byRejectReason": {
     "sponsor-newsletter": 3,
     "no-new-product-identity": 1,
-    "company-not-allowlisted": 8,
+    "company-not-allowlisted": 7,
     "already-in-oneshot": 3,
     "company-unknown": 3,
     "no-explicit-figure": 1
@@ -89,7 +89,7 @@
       "toyarkPostId": 599200
     }
   ],
-  "archiveSize": 29524,
+  "archiveSize": 29515,
   "fetchBlocker": null,
   "wroteOneshot": false,
   "comics": "untouched"
