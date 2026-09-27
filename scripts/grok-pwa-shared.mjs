@@ -157,37 +157,110 @@ export function renderInstallPageHtml(template, { host, url } = {}) {
     .replaceAll("{{APP_URL}}", escapeHtml(stripInstallParams(url)));
 }
 
-export function renderWebManifest(hostHeader) {
-  const name = appNameFromHost(hostHeader);
+const DEFAULT_MANIFEST_ICONS = [
+  {
+    src: "/__grok/icon-180.png",
+    sizes: "180x180",
+    type: "image/png",
+  },
+];
+
+const HEX_COLOR = /^#(?:[0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/;
+
+/** Conventional install icons an app can drop in public/. Baked at build time. */
+const PWA_ICON_FILES = [
+  ["public/icon-192.png", "/icon-192.png", "192x192", "any"],
+  ["public/icon-512.png", "/icon-512.png", "512x512", "any"],
+  ["public/icon-maskable-512.png", "/icon-maskable-512.png", "512x512", "maskable"],
+  ["public/apple-touch-icon.png", "/apple-touch-icon.png", "180x180", "any"],
+];
+
+function manifestText(value) {
+  return String(value ?? "")
+    .replace(/[\u0000-\u001f\u007f]/g, "")
+    .trim()
+    .slice(0, 64);
+}
+
+function manifestColor(value, fallback) {
+  const raw = String(value ?? "").trim();
+  return HEX_COLOR.test(raw) ? raw : fallback;
+}
+
+function manifestIcons(site = {}) {
+  if (!Array.isArray(site.icons)) return DEFAULT_MANIFEST_ICONS;
+  const icons = [];
+  for (const icon of site.icons) {
+    if (!icon || typeof icon !== "object") continue;
+    const src = String(icon.src ?? "");
+    if (!src.startsWith("/") || src.startsWith("//") || src.includes("..")) continue;
+    const sizes = String(icon.sizes ?? "");
+    if (!/^\d+x\d+$/.test(sizes)) continue;
+    const type = String(icon.type ?? "");
+    if (!/^image\/[a-z0-9.+-]+$/.test(type)) continue;
+    const entry = { src, sizes, type };
+    const purpose = String(icon.purpose ?? "");
+    if (purpose === "any" || purpose === "maskable" || purpose === "monochrome") {
+      entry.purpose = purpose;
+    }
+    icons.push(entry);
+  }
+  return icons.length > 0 ? icons : DEFAULT_MANIFEST_ICONS;
+}
+
+export function pwaIconsFromDisk(cwd = process.cwd()) {
+  const icons = [];
+  for (const [file, src, sizes, purpose] of PWA_ICON_FILES) {
+    if (!existsSync(join(cwd, file))) continue;
+    icons.push({ src, sizes, type: "image/png", purpose });
+  }
+  return icons;
+}
+
+export function appleTouchIconFromSite(site = {}) {
+  const icons = manifestIcons(site);
+  const apple = icons.find((icon) => icon.sizes === "180x180" && icon.src !== "/__grok/icon-180.png");
+  return apple?.src ?? "";
+}
+
+/**
+ * Host-slug naming stays the default. A baked site identity (title, colors,
+ * icons) wins so a rewritten Host — Envoy serves published apps as
+ * `*.vercel.app` — cannot fall back to "Grok App" / the platform icon.
+ */
+export function renderWebManifest(hostHeader, site = {}) {
+  const name = manifestText(site.title) || appNameFromHost(hostHeader);
+  const shortName = manifestText(site.shortName) || name;
   return JSON.stringify(
     {
       name,
-      short_name: name,
+      short_name: shortName,
       id: "/",
       start_url: "/",
       scope: "/",
       display: "standalone",
-      background_color: "#000000",
-      theme_color: "#000000",
-      icons: [
-        {
-          src: "/__grok/icon-180.png",
-          sizes: "180x180",
-          type: "image/png",
-        },
-      ],
+      background_color: manifestColor(site.backgroundColor, "#000000"),
+      theme_color: manifestColor(site.themeColor, "#000000"),
+      icons: manifestIcons(site),
     },
     null,
     2,
   );
 }
 
-export function grokPwaHeadTags(appName = DEFAULT_APP_NAME) {
+export function grokPwaHeadTags(appName = DEFAULT_APP_NAME, options = {}) {
+  const theme = manifestColor(options.themeColor, "#000000");
+  const appleIcon =
+    typeof options.appleTouchIcon === "string" &&
+    options.appleTouchIcon.startsWith("/") &&
+    !options.appleTouchIcon.startsWith("//")
+      ? options.appleTouchIcon
+      : "/__grok/icon-180.png";
   return [
     // Standalone display comes from the manifest ("display": "standalone");
     // the legacy *-web-app-capable metas it replaces are deliberately absent.
     ["manifest", '<link rel="manifest" href="/__grok/manifest.webmanifest">'],
-    ["apple-touch-icon", '<link rel="apple-touch-icon" href="/__grok/icon-180.png">'],
+    ["apple-touch-icon", `<link rel="apple-touch-icon" href="${escapeHtml(appleIcon)}">`],
     [
       "apple-mobile-web-app-title",
       `<meta name="apple-mobile-web-app-title" content="${escapeHtml(appName)}">`,
@@ -196,7 +269,7 @@ export function grokPwaHeadTags(appName = DEFAULT_APP_NAME) {
       "apple-mobile-web-app-status-bar-style",
       '<meta name="apple-mobile-web-app-status-bar-style" content="black">',
     ],
-    ["theme-color", '<meta name="theme-color" content="#000000">'],
+    ["theme-color", `<meta name="theme-color" content="${escapeHtml(theme)}">`],
   ];
 }
 
@@ -280,6 +353,9 @@ export function snapshotOgIdentity(cwd = process.cwd()) {
   if (existsSync(join(cwd, "public/x-banner.jpg"))) {
     site.banner = site.banner || "/x-banner.jpg";
   }
+  const icons = pwaIconsFromDisk(cwd);
+  if (icons.length > 0) site.icons = icons;
+  else delete site.icons;
   return { site };
 }
 
@@ -434,10 +510,14 @@ export function injectGrokPwaHead(html, ctx = {}) {
   );
   let next = stripShareMetaTags(html);
 
-  const missing = grokPwaHeadTags(appName)
+  const missing = grokPwaHeadTags(appName, {
+    themeColor: site.themeColor,
+    appleTouchIcon: appleTouchIconFromSite(site),
+  })
     .filter(([key]) => {
       if (key === "manifest") return !next.includes('href="/__grok/manifest.webmanifest"');
-      if (key === "apple-touch-icon") return !next.includes('href="/__grok/icon-180.png"');
+      // Any app-authored apple touch icon suppresses the platform default.
+      if (key === "apple-touch-icon") return !/rel=["']apple-touch-icon["']/i.test(next);
       return !next.includes(`name="${key}"`);
     })
     .map(([, tag]) => tag);

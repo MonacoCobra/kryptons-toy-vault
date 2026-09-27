@@ -13,8 +13,8 @@
   "backgroundColor": "#070B14",
   "enableNotifications": false,
   "startUrl": "/",
-  "iconUrl": "https://kryptons-toy-vault.grok.me/krypton-logo.png",
-  "maskableIconUrl": "https://kryptons-toy-vault.grok.me/krypton-logo.png",
+  "iconUrl": "https://kryptons-toy-vault.grok.me/icon-512.png",
+  "maskableIconUrl": "https://kryptons-toy-vault.grok.me/icon-maskable-512.png",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
     "path": "./android-release.keystore",
