@@ -641,6 +641,15 @@ def gcd_series_of_issues(store: Any, issue_ids: set[str]) -> dict[str, str]:
     return out
 
 
+DISTRIBUTION_LABEL_RE = re.compile(
+    r"^(?:standard edition\s*[-:]\s*)?(?:newsstand|direct)(?: edition| market| sales)?$")
+
+
+def is_distribution_label(name: str | None) -> bool:
+    """Newsstand / Direct edition labels (distinct printings, not the main row)."""
+    return bool(DISTRIBUTION_LABEL_RE.match(re.sub(r"\s+", " ", (name or "").strip().lower())))
+
+
 class VolumePresence:
     """Volume-aware "already in catalog" index (after the gcdIssueId check).
 
@@ -680,6 +689,10 @@ class VolumePresence:
             if not same_volume:
                 continue
             if not want:
+                if sid is not None and gcd_series is not None and is_distribution_label(v):
+                    # A linked Newsstand/Direct row is its own GCD issue (the gcdIssueId
+                    # check already ran), so it does not stand in for the main.
+                    continue
                 if not v or is_cover_a_name(v):
                     return True
             elif v == want:

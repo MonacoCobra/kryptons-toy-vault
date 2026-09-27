@@ -1359,6 +1359,22 @@ class VolumeAwarePresenceTest(unittest.TestCase):
         self.assertEqual(suf["12"], "(2016)")
         self.assertEqual(suf["11"], "(2016 Vol 2)")
 
+    def test_linked_newsstand_row_does_not_block_main(self):
+        pres = ingest.VolumePresence()
+        pres.add("Elektra", "18", "Marvel Comics", "Newsstand", "500", "2003-03-01", "2180600")
+        self.assertFalse(pres.conflict("Elektra", "18", "Marvel Comics", "", "500", "2003-03-01"))
+        self.assertTrue(pres.conflict("Elektra", "18", "Marvel Comics", "Newsstand", "500", "2003-03-01"))
+        # unlinked newsstand-labelled rows still count as the main (can't tell them apart)
+        pres2 = ingest.VolumePresence()
+        pres2.add("Elektra", "18", "Marvel Comics", "Newsstand", None, "2003-03-01")
+        self.assertTrue(pres2.conflict("Elektra", "18", "Marvel Comics", "", "500", "2003-03-01"))
+        # unlabeled linked row of the same volume still blocks
+        pres3 = ingest.VolumePresence()
+        pres3.add("Elektra", "18", "Marvel Comics", "", "500", "2003-03-01", "2180600")
+        self.assertTrue(pres3.conflict("Elektra", "18", "Marvel Comics", "", "500", "2003-03-01"))
+        self.assertTrue(ingest.is_distribution_label("Standard Edition - Newsstand"))
+        self.assertFalse(ingest.is_distribution_label("Cover A"))
+
     def test_volume_series_name(self):
         self.assertEqual(ingest.volume_series_name("Superman", "Superman", "(2011)"), "Superman (2011)")
         self.assertEqual(ingest.volume_series_name("Superman (2011)", "Superman", ""), "Superman")
