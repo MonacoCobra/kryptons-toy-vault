@@ -518,6 +518,12 @@ def has_year_suffix(name: str | None) -> bool:
     return bool(YEAR_SUFFIX_RE.search(str(name or "")))
 
 
+def volume_label_of(name: str | None) -> str:
+    """Normalized trailing ' (YYYY…)' volume label, or '' when there is none."""
+    m = YEAR_SUFFIX_RE.search(str(name or ""))
+    return re.sub(r"\s+", " ", m.group(0).strip().lower()) if m else ""
+
+
 def volume_group_key(series_name: str, dump_publisher: str) -> tuple[str, str]:
     label = catalog_publisher_label(series_name or "", dump_publisher or "")
     pub = locg.PUB_CANON.get(locg.norm_pub_key(label), label)
@@ -880,15 +886,24 @@ def infer_existing_prefix_indexed(
     publisher: str,
     prefix_index: dict[str, list[tuple[str, dict]]] | None = None,
 ) -> str | None:
-    """Same result as locg.infer_existing_prefix; uses series index when provided."""
-    if prefix_index is None:
-        return locg.infer_existing_prefix(existing_meta, series, publisher)
+    """Like locg.infer_existing_prefix, but volume-safe: only rows of the same
+    volume label (same ' (YYYY)' suffix or none) lend their id prefix, so a
+    1976 'Batman' issue never reuses the 'dc-batman-2016' prefix."""
     from collections import Counter
 
+    want = volume_label_of(series)
+    if prefix_index is None:
+        candidates = (
+            (cid, meta) for cid, meta in existing_meta.items()
+            if locg.series_names_match(meta.get("series"), series)
+        )
+    else:
+        candidates = iter(prefix_index.get(locg.series_match_key(series), ()))
     counts: Counter[str] = Counter()
-    key = locg.series_match_key(series)
-    for cid, meta in prefix_index.get(key, ()):
+    for cid, meta in candidates:
         if not locg.series_names_match(meta.get("series"), series):
+            continue
+        if volume_label_of(meta.get("series")) != want:
             continue
         if not bf.publisher_ok(meta.get("publisher"), publisher):
             continue

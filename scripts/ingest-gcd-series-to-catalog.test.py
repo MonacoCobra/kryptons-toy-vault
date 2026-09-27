@@ -1375,6 +1375,18 @@ class VolumeAwarePresenceTest(unittest.TestCase):
         self.assertTrue(ingest.is_distribution_label("Standard Edition - Newsstand"))
         self.assertFalse(ingest.is_distribution_label("Cover A"))
 
+    def test_prefix_reuse_is_volume_safe(self):
+        meta = {
+            "dc-batman-2016-1": {"series": "Batman (2016)", "issue": "1", "publisher": "DC Comics"},
+            "dc-batman-2016-2": {"series": "Batman (2016)", "issue": "2", "publisher": "DC Comics"},
+            "dc-batman-400": {"series": "Batman", "issue": "400", "publisher": "DC Comics"},
+        }
+        idx = ingest.build_prefix_index(meta)
+        self.assertEqual(ingest.infer_existing_prefix_indexed(meta, "Batman", "DC Comics", idx), "dc-batman")
+        self.assertEqual(ingest.infer_existing_prefix_indexed(meta, "Batman (2016)", "DC Comics", idx), "dc-batman-2016")
+        self.assertEqual(ingest.infer_existing_prefix_indexed(meta, "Batman", "DC Comics"), "dc-batman")
+        self.assertIsNone(ingest.infer_existing_prefix_indexed(meta, "Batman (1940)", "DC Comics", idx))
+
     def test_volume_series_name(self):
         self.assertEqual(ingest.volume_series_name("Superman", "Superman", "(2011)"), "Superman (2011)")
         self.assertEqual(ingest.volume_series_name("Superman (2011)", "Superman", ""), "Superman")
