@@ -1,38 +1,22 @@
 /**
  * Build-time catalog shards.
  *
- * Source of truth stays the ingest files (oneshot.json, sku maps, comics.ts,
- * cover maps, weekly-seed.json). This script only writes derived JSON under
- * public/catalog so the client can fetch the slice a screen needs.
+ * Source of truth stays the ingest files. scripts/catalog-source.mjs is the
+ * only reader: it uses the shared catalog loader when that module exists
+ * (the upcoming source-file split) and otherwise the current single files.
+ * This script only writes derived JSON under public/catalog.
  *
  * Run: node --max-old-space-size=6144 --import ./scripts/register-ts-paths.mjs --experimental-strip-types scripts/shard-catalog.mjs
  */
 import fs from "node:fs";
 import path from "node:path";
-import readline from "node:readline";
 import { fileURLToPath } from "node:url";
+import { catalogInputsAreFresh, loadComicInputs, loadFigureInputs } from "./catalog-source.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outFinal = path.join(root, "public/catalog");
 const outStaging = path.join(root, "public/catalog-staging");
 const lockDir = "/tmp/krypton-catalog-shard.lock";
-
-const SOURCE_PATHS = [
-  "src/data/comics.ts",
-  "src/data/figures.ts",
-  "src/data/figure-archive/oneshot.json",
-  "src/data/figure-image-urls.json",
-  "src/data/figure-sku-aliases.json",
-  "src/data/figure-sku-map.json",
-  "src/data/comic-cover-urls.json",
-  "src/data/comic-upc-map.json",
-  "src/lib/comic-format.ts",
-  "src/lib/comic-series.ts",
-  "src/lib/comic-variants.ts",
-  "src/lib/figure-property.ts",
-  "src/lib/catalog-shard.ts",
-  "scripts/shard-catalog.mjs",
-];
 
 const NOTEWORTHY_MS = 3 * 7 * 24 * 3600 * 1000;
 const SEARCH_SHARDS = 8;
@@ -74,36 +58,6 @@ async function withLock(fn) {
   } finally {
     fs.rmSync(lockDir, { recursive: true, force: true });
   }
-}
-
-function mtime(rel) {
-  try {
-    return fs.statSync(path.join(root, rel)).mtimeMs;
-  } catch {
-    return 0;
-  }
-}
-
-function isFresh() {
-  if (process.env.FORCE_CATALOG_SHARD === "1") return false;
-  const manifestPath = path.join(outFinal, "manifest.json");
-  if (!fs.existsSync(manifestPath)) return false;
-  const built = fs.statSync(manifestPath).mtimeMs;
-  return SOURCE_PATHS.every((rel) => mtime(rel) <= built);
-}
-
-function pal(s) {
-  const parts = String(s ?? "")
-    .split(",")
-    .map((p) => `#${String(p).replace(/^#/, "")}`);
-  return [parts[0] ?? "#1e3a8a", parts[1] ?? "#e30613", parts[2] ?? "#f8fafc"];
-}
-
-function people(s) {
-  return String(s ?? "")
-    .split(",")
-    .map((w) => w.trim())
-    .filter(Boolean);
 }
 
 function slug(s) {
@@ -193,72 +147,6 @@ function buildAliasToFigureId(doc) {
   return out;
 }
 
-/** Rows are JS literals. The trailing extra is `{ key: "value" }`, not JSON. */
-function parseComicRow(expr) {
-  try {
-    return JSON.parse(expr);
-  } catch {
-    const brace = expr.lastIndexOf(", {");
-    if (brace < 0 || !expr.endsWith("]")) throw new Error("not a row");
-    const head = expr.slice(0, brace);
-    let obj = expr.slice(brace + 2, -1);
-    obj = obj.replace(/([{,]\s*)([A-Za-z_][A-Za-z0-9_]*)\s*:/g, '$1"$2":');
-    return JSON.parse(`${head}, ${obj}]`);
-  }
-}
-
-async function readComics(normalizeComicFormat, coverUrls, upcMap) {
-  const comics = [];
-  let failures = 0;
-  const stream = fs.createReadStream(path.join(root, "src/data/comics.ts"), { encoding: "utf8" });
-  const rl = readline.createInterface({ input: stream, crlfDelay: Infinity });
-  let lineNo = 0;
-  for await (const line of rl) {
-    lineNo += 1;
-    const trimmed = line.trim();
-    if (!trimmed.startsWith("[")) continue;
-    const expr = trimmed.endsWith(",") ? trimmed.slice(0, -1) : trimmed;
-    let row;
-    try {
-      row = parseComicRow(expr);
-    } catch {
-      failures += 1;
-      if (failures <= 5) console.error(`[shard-catalog] unparsable comic line ${lineNo}: ${trimmed.slice(0, 180)}`);
-      continue;
-    }
-    if (!Array.isArray(row) || row.length < 13) continue;
-    const [id, series, issue, publisher, coverDate, writers, artists, description, msrp, format, demand, key, palette, extra] =
-      row;
-    const mapped = upcMap[id];
-    const comic = {
-      id,
-      series,
-      issue,
-      publisher,
-      coverDate,
-      writers: people(writers),
-      artists: people(artists),
-      description: description ?? "",
-      msrp,
-      format: normalizeComicFormat(format),
-      demand,
-      key: key === 1,
-      palette: pal(palette),
-    };
-    if (extra?.streetDate) comic.streetDate = extra.streetDate;
-    if (extra?.variant) comic.variant = extra.variant;
-    const upc = extra?.upc ?? mapped?.upc;
-    if (upc) comic.upc = upc;
-    const cover = extra?.cover ?? mapped?.coverUrl ?? coverUrls[id];
-    if (cover) comic.cover = cover;
-    comics.push(comic);
-    if (comics.length % 50000 === 0) console.log(`[shard-catalog] parsed ${comics.length} comics`);
-  }
-  if (failures) throw new Error(`[shard-catalog] ${failures} comic rows failed to parse`);
-  console.log(`[shard-catalog] parsed ${comics.length} comics`);
-  return comics;
-}
-
 function dateOf(c) {
   return c.streetDate || c.coverDate || "";
 }
@@ -288,10 +176,9 @@ async function shardComics() {
   const { comicFamilyKey } = await import("../src/lib/comic-variants.ts");
   const { shardId, comicBucketPath, upcBucketPath } = await import("../src/lib/catalog-shard.ts");
 
-  console.log("[shard-catalog] reading cover maps");
-  const coverUrls = JSON.parse(fs.readFileSync(path.join(root, "src/data/comic-cover-urls.json"), "utf8"));
-  let upcMap = JSON.parse(fs.readFileSync(path.join(root, "src/data/comic-upc-map.json"), "utf8"));
-  const comics = await readComics(normalizeComicFormat, coverUrls, upcMap);
+  const loaded = await loadComicInputs(root, normalizeComicFormat);
+  const comics = loaded.comics;
+  let upcMap = loaded.upcMap;
 
   const upcGroups = new Map();
   for (const [id, entry] of Object.entries(upcMap)) {
@@ -594,7 +481,7 @@ async function shardComics() {
 }
 
 async function shardFigures() {
-  const { FIGURES } = await import("../src/data/figures.ts");
+  const { figures: FIGURES, aliasDoc } = await loadFigureInputs(root);
   const { POPULAR_FRANCHISES } = await import("../src/lib/figure-property.ts");
   const { shardId, figureBucketPath, figureSetPath } = await import("../src/lib/catalog-shard.ts");
   console.log(`[shard-catalog] ${FIGURES.length} figures`);
@@ -731,7 +618,6 @@ async function shardFigures() {
   }
   console.log(`[shard-catalog] ${setFiles} figure sets`);
 
-  const aliasDoc = JSON.parse(fs.readFileSync(path.join(root, "src/data/figure-sku-aliases.json"), "utf8"));
   const aliases = buildAliasToFigureId(aliasDoc);
   for (const figure of FIGURES) {
     const sku = (figure.sku ?? "").trim();
@@ -795,7 +681,7 @@ async function build() {
 }
 
 await withLock(async () => {
-  if (isFresh()) {
+  if (await catalogInputsAreFresh(root, path.join(outFinal, "manifest.json"))) {
     console.log("[shard-catalog] fresh — skipping");
     return;
   }
