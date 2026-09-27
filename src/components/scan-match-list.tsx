@@ -1,5 +1,5 @@
 import { Plus } from "lucide-react";
-import { comicLabel } from "@/data/comics";
+import { comicLabel } from "@/lib/comic-label";
 import { ComicCover } from "@/components/comic-cover";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";

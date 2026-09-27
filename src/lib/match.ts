@@ -1,5 +1,5 @@
-import { comicLabel, mergeComics } from "@/data/comics";
-import { FIGURES } from "@/data/figures";
+import { mergeComicsInto } from "@/lib/catalog-search";
+import { comicLabel } from "@/lib/comic-label";
 import { rankComicsFromGuess, scoreName, type CoverGuess } from "@/lib/cover-match";
 import type { CatalogComic, CatalogFigure } from "@/lib/types";
 
@@ -11,18 +11,17 @@ export function matchComicsFromGuess(
   extras: CatalogComic[] = [],
   promoted: CatalogComic[] = [],
 ): CatalogComic[] {
-  return rankComicsFromGuess(guess, mergeComics(extras, promoted), limit);
+  return rankComicsFromGuess(guess, mergeComicsInto(promoted, extras), limit);
 }
 
-export function matchFigures(query: string, limit = 8): CatalogFigure[] {
+export function matchFigures(query: string, figures: CatalogFigure[], limit = 8): CatalogFigure[] {
   const q = query.trim();
   if (!q) return [];
-  return FIGURES.map((f) => ({
-    f,
-    s:
-      scoreName(`${f.name} ${f.subtitle} ${f.line}`, q) +
-      scoreName(f.company, q) * 0.2,
-  }))
+  return figures
+    .map((f) => ({
+      f,
+      s: scoreName(`${f.name} ${f.subtitle} ${f.line}`, q) + scoreName(f.company, q) * 0.2,
+    }))
     .filter((x) => x.s > 20)
     .sort((a, b) => b.s - a.s)
     .slice(0, limit)

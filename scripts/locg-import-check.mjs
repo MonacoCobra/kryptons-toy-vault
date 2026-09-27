@@ -72,8 +72,11 @@ const sampleText = readFileSync(
   new URL("../public/samples/locg-sample-export.csv", import.meta.url),
   "utf8",
 );
+const catalog = mergeComics();
+console.log(`catalog size: ${catalog.length}`);
+
 const sample = parseLocgSpreadsheet(sampleText);
-const sampleMatch = matchLocgRows(sample.rows);
+const sampleMatch = matchLocgRows(sample.rows, catalog);
 console.log(
   `sample CSV: ${sample.rows.length} rows → ${sampleMatch.matched} catalog / ${sampleMatch.unmatched} custom`,
 );
@@ -112,10 +115,7 @@ assert(ac1032.seriesYear === 2016, `year ${ac1032.seriesYear}`);
 const bat163 = user.rows.find((r) => r.title === "Batman #163");
 assert(bat163?.issue === "163" && bat163.seriesYear === 2016, JSON.stringify(bat163));
 
-const catalog = mergeComics();
-console.log(`catalog size: ${catalog.length}`);
-
-const userMatch = matchLocgRows(user.rows);
+const userMatch = matchLocgRows(user.rows, catalog);
 const rate = Math.round((userMatch.matched / user.rows.length) * 100);
 console.log(
   `user CSV: ${user.rows.length} rows → ${userMatch.matched} catalog (${rate}%) / ${userMatch.unmatched} custom`,

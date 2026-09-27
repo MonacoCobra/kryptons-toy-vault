@@ -9,7 +9,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { PulseBoard } from "@/components/pulse-board";
-import { useLiveComics, useLiveFigures } from "@/lib/live-store";
+import { useOwnedCatalog } from "@/lib/use-catalog";
 import { useHydrated, useVault } from "@/lib/store";
 import { weekKey } from "@/lib/utils";
 import {
@@ -28,8 +28,7 @@ export function PulseNotice() {
   const lastPulseNoticeWeek = useVault((s) => s.lastPulseNoticeWeek);
   const ensurePulseBaseline = useVault((s) => s.ensurePulseBaseline);
   const markPulseNoticeSeen = useVault((s) => s.markPulseNoticeSeen);
-  const liveFigures = useLiveFigures();
-  const liveComics = useLiveComics();
+  const ownedCatalog = useOwnedCatalog();
   const week = weekKey();
   const [open, setOpen] = useState(false);
 
@@ -37,17 +36,17 @@ export function PulseNotice() {
     () =>
       buildWeeklyPulse(
         { ownedFigures, ownedComics, pulseBaselines },
-        { figures: liveFigures, comics: liveComics },
+        { figures: ownedCatalog.figures, comics: ownedCatalog.comics },
         week,
       ),
-    [ownedFigures, ownedComics, pulseBaselines, liveFigures, liveComics, week],
+    [ownedFigures, ownedComics, pulseBaselines, ownedCatalog.figures, ownedCatalog.comics, week],
   );
 
   useEffect(() => {
     if (!hydrated) return;
     const snapshot = capturePulseSnapshot(
       { ownedFigures, ownedComics },
-      { figures: liveFigures, comics: liveComics },
+      { figures: ownedCatalog.figures, comics: ownedCatalog.comics },
       week,
     );
     ensurePulseBaseline(snapshot);
@@ -55,8 +54,8 @@ export function PulseNotice() {
     hydrated,
     ownedFigures,
     ownedComics,
-    liveFigures,
-    liveComics,
+    ownedCatalog.figures,
+    ownedCatalog.comics,
     week,
     ensurePulseBaseline,
   ]);

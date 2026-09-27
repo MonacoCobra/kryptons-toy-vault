@@ -1,4 +1,8 @@
 node_modules/
+
+# Derived catalog shards (rebuilt by scripts/shard-catalog.mjs from src/data)
+public/catalog/
+public/catalog-staging/
 dist/
 .DS_Store
 .env

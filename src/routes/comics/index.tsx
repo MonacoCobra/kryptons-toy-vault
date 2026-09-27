@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft, Camera, ChevronRight, Plus, Search } from "lucide-react";
-import { comicLabel, mergeComics, searchComics } from "@/data/comics";
+import { comicLabel } from "@/lib/comic-label";
 import { AddComicDialog } from "@/components/add-comic-dialog";
 import { ComicCover } from "@/components/comic-cover";
 import { VirtualGrid } from "@/components/virtual-grid";
@@ -18,37 +18,9 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { libraryCatalogRows, splitComicsClient } from "@/lib/comic-catalog";
-import {
-  catalogFromCustom,
-  COMIC_FORMAT_LABELS,
-  comicFormatLabel,
-  filterCollectedComics,
-  filterIssueComics,
-  isCollectedComic,
-} from "@/lib/comic-format";
-import {
-  assignSeriesRunYears,
-  buildCollectedSeriesList,
-  buildPublisherList,
-  buildSeriesList,
-  collectedComicMatchesSeries,
-  collectedCountByPublisher,
-  collectedSeriesIdentity,
-  collectedForPublisher,
-  comicMatchesSeries,
-  comicReleaseDate,
-  makeCollectedSeriesKey,
-  makeSeriesKey,
-  seriesDisplayLabel,
-  seriesRunYearFor,
-  sortCatalogComics,
-  sortCollectedVolumes,
-  sortPublisherList,
-  sortSeriesList,
-  type LadderSortMode,
-} from "@/lib/comic-series";
-import { collapseComicVariants } from "@/lib/comic-variants";
+import { COMIC_FORMAT_LABELS, comicFormatLabel, isCollectedComic } from "@/lib/comic-format";
+import { collectedSeriesIdentity, seriesDisplayLabel, seriesRunYearFor, type LadderSortMode } from "@/lib/comic-series";
+import { useComicsLadder } from "@/lib/use-comics-ladder";
 import { formatMonthYear, usd } from "@/lib/format";
 import { normalizePublisher } from "@/lib/locg-import";
 import { useEnsureComicLibrary, useLiveComics } from "@/lib/live-store";
@@ -108,7 +80,6 @@ function ComicsPage() {
   const customComics = useVault((s) => s.customComics);
   const extras = useLiveComics();
   const library = useEnsureComicLibrary(extras);
-  const libraryRows = useMemo(() => libraryCatalogRows(library), [library]);
   const [adding, setAdding] = useState<CatalogComic | null>(null);
   const [customOpen, setCustomOpen] = useState(false);
 
@@ -157,39 +128,6 @@ function ComicsPage() {
     void navigate({ search: (prev) => ({ ...prev, q: next }), replace: true });
   }, [qDebounced, navigate, search.q]);
 
-  const split = useMemo(() => {
-    if (library) {
-      return { noteworthy: library.noteworthy, archive: library.archive };
-    }
-    return splitComicsClient(extras);
-  }, [library, extras]);
-
-  const catalogAll = useMemo(
-    () => mergeComics(extras, libraryRows),
-    [extras, libraryRows],
-  );
-
-  const customCollected = useMemo(
-    () => Object.values(customComics).filter(isCollectedComic).map(catalogFromCustom),
-    [customComics],
-  );
-
-  const issueCatalog = useMemo(() => filterIssueComics(catalogAll), [catalogAll]);
-
-  const collectedCatalog = useMemo(() => {
-    const fromCatalog = filterCollectedComics(catalogAll);
-    if (customCollected.length === 0) return fromCatalog;
-    const seen = new Set(fromCatalog.map((c) => c.id));
-    const extra = customCollected.filter((c) => !seen.has(c.id));
-    return extra.length ? [...fromCatalog, ...extra] : fromCatalog;
-  }, [catalogAll, customCollected]);
-
-  const yearById = useMemo(() => assignSeriesRunYears(catalogAll), [catalogAll]);
-  const collectedCounts = useMemo(
-    () => collectedCountByPublisher(collectedCatalog),
-    [collectedCatalog],
-  );
-
   const level: LadderLevel = search.q
     ? "search"
     : viewingCollectedVolumes
@@ -202,163 +140,37 @@ function ComicsPage() {
             ? "series"
             : "publishers";
 
+  const {
+    publishers,
+    collectedCounts,
+    seriesList,
+    collectedSeries,
+    collectedEditionCount,
+    collectedFormatLabels,
+    collectedSample,
+    issueComics,
+    collectedComics,
+    filteredSearch,
+    filteredNoteworthy,
+    yearById,
+    loadingPublishers,
+    loadingDetail,
+    loadingRun,
+  } = useComicsLadder({
+    search,
+    extras,
+    library,
+    customComics,
+    owned,
+    ownedByCatalog,
+    ladderSort,
+    sort,
+    level,
+  });
+
   /** Volume # belongs on issue lists and inside a collected series, not on the series index. */
   const showIssueSort =
     viewingCollectedVolumes || ((level === "issues" || level === "search") && !inCollected);
-
-  const acquiredLookups = useMemo(() => {
-    const bySeries = new Map<string, string>();
-    const byPublisher = new Map<string, string>();
-    const byCollectedSeries = new Map<string, string>();
-    if (ladderSort !== "acquired") return { bySeries, byPublisher, byCollectedSeries };
-    const ownedList = Object.values(owned);
-    if (!ownedList.length) return { bySeries, byPublisher, byCollectedSeries };
-    const want = new Set<string>();
-    for (const entry of ownedList) {
-      if (entry.catalogId) want.add(entry.catalogId);
-    }
-    const byId = new Map<string, CatalogComic>();
-    if (want.size) {
-      for (const c of catalogAll) {
-        if (!want.has(c.id)) continue;
-        byId.set(c.id, c);
-        if (byId.size >= want.size) break;
-      }
-    }
-    for (const entry of ownedList) {
-      const comic =
-        (entry.catalogId ? byId.get(entry.catalogId) : undefined) ??
-        (entry.custom ? catalogFromCustom(entry.custom) : undefined);
-      if (!comic) continue;
-      const seriesKey = makeSeriesKey(comic.publisher, comic.series, seriesRunYearFor(comic, yearById));
-      const pubKey = normalizePublisher(comic.publisher);
-      if (!bySeries.has(seriesKey) || entry.addedAt > bySeries.get(seriesKey)!) {
-        bySeries.set(seriesKey, entry.addedAt);
-      }
-      if (!byPublisher.has(pubKey) || entry.addedAt > byPublisher.get(pubKey)!) {
-        byPublisher.set(pubKey, entry.addedAt);
-      }
-      if (isCollectedComic(comic)) {
-        const collectedKey = makeCollectedSeriesKey(comic.publisher, comic.series);
-        if (!byCollectedSeries.has(collectedKey) || entry.addedAt > byCollectedSeries.get(collectedKey)!) {
-          byCollectedSeries.set(collectedKey, entry.addedAt);
-        }
-      }
-    }
-    return { bySeries, byPublisher, byCollectedSeries };
-  }, [owned, catalogAll, yearById, ladderSort]);
-
-  const publishers = useMemo(() => {
-    const list = buildPublisherList(issueCatalog, yearById);
-    const seen = new Set(list.map((p) => normalizePublisher(p.publisher)));
-    const extra: typeof list = [];
-    const extraIndex = new Map<string, number>();
-    for (const c of collectedCatalog) {
-      const key = normalizePublisher(c.publisher);
-      if (seen.has(key)) continue;
-      const date = comicReleaseDate(c);
-      const idx = extraIndex.get(key);
-      if (idx == null) {
-        extraIndex.set(key, extra.length);
-        extra.push({ publisher: c.publisher, seriesCount: 0, issueCount: 0, latestDate: date });
-      } else if (date && date > extra[idx]!.latestDate) {
-        extra[idx]!.latestDate = date;
-      }
-    }
-    const merged = extra.length ? [...list, ...extra] : list;
-    return sortPublisherList(merged, ladderSort, acquiredLookups.byPublisher);
-  }, [issueCatalog, yearById, collectedCatalog, ladderSort, acquiredLookups]);
-
-  const seriesList = useMemo(() => {
-    if (!search.publisher) return [];
-    const list = buildSeriesList(issueCatalog, yearById, search.publisher);
-    return sortSeriesList(list, ladderSort, acquiredLookups.bySeries);
-  }, [issueCatalog, yearById, search.publisher, ladderSort, acquiredLookups]);
-
-  const publisherCollected = useMemo(() => {
-    if (!search.publisher) return [];
-    return collectedForPublisher(collectedCatalog, search.publisher);
-  }, [collectedCatalog, search.publisher]);
-
-  const collectedSeries = useMemo(() => {
-    if (!search.publisher) return [];
-    const list = buildCollectedSeriesList(publisherCollected, search.publisher);
-    return sortSeriesList(list, ladderSort, acquiredLookups.byCollectedSeries);
-  }, [search.publisher, publisherCollected, ladderSort, acquiredLookups]);
-
-  const issueComics = useMemo(() => {
-    if (level !== "issues" || !search.publisher || !search.series || search.year == null) return [];
-    let list = issueCatalog.filter((c) =>
-      comicMatchesSeries(
-        c,
-        { publisher: search.publisher!, seriesTitle: search.series!, year: search.year! },
-        yearById,
-      ),
-    );
-    if (search.keys) list = list.filter((c) => c.key);
-    list = collapseComicVariants(list);
-    return sortCatalogComics(list, sort, { ownedByCatalog, label: comicLabel });
-  }, [level, issueCatalog, search.publisher, search.series, search.year, search.keys, sort, yearById, ownedByCatalog]);
-
-  const collectedComics = useMemo(() => {
-    if (level !== "collected-volumes" || !search.publisher || !search.series) return [];
-    let list = publisherCollected.filter((c) =>
-      collectedComicMatchesSeries(c, { publisher: search.publisher!, seriesTitle: search.series! }),
-    );
-    if (search.keys) list = list.filter((c) => c.key);
-    if (sort === "issue") return sortCollectedVolumes(list);
-    return sortCatalogComics(list, sort, { ownedByCatalog, label: comicLabel });
-  }, [level, publisherCollected, search.publisher, search.series, search.keys, sort, ownedByCatalog]);
-
-  const filteredSearch = useMemo(() => {
-    if (level !== "search") return [];
-    let list = searchComics(search.q!, extras, libraryRows);
-    const q = search.q!.trim().toLowerCase();
-    const customHits = customCollected.filter((c) => {
-      const hay = `${c.series} ${c.issue} ${c.publisher} ${c.upc ?? ""} ${c.format} ${c.description}`.toLowerCase();
-      return hay.includes(q);
-    });
-    const seen = new Set(list.map((c) => c.id));
-    for (const c of customHits) {
-      if (!seen.has(c.id)) list.push(c);
-    }
-    if (search.publisher) {
-      const want = normalizePublisher(search.publisher);
-      list = list.filter((c) => normalizePublisher(c.publisher) === want);
-    }
-    if (search.section === "collected") {
-      list = filterCollectedComics(list);
-    }
-    if (search.section === "collected" && search.series) {
-      list = list.filter((c) =>
-        collectedComicMatchesSeries(c, {
-          publisher: search.publisher ?? c.publisher,
-          seriesTitle: search.series!,
-        }),
-      );
-    } else if (search.series && search.year != null) {
-      list = list.filter((c) =>
-        comicMatchesSeries(
-          c,
-          { publisher: search.publisher ?? c.publisher, seriesTitle: search.series!, year: search.year! },
-          yearById,
-        ),
-      );
-    } else if (search.series) {
-      list = list.filter((c) => c.series === search.series);
-    }
-    if (search.keys) list = list.filter((c) => c.key);
-    if (sort === "issue" && search.section === "collected") return sortCollectedVolumes(list);
-    return sortCatalogComics(list, sort, { ownedByCatalog, label: comicLabel });
-  }, [level, search, extras, libraryRows, customCollected, sort, yearById, ownedByCatalog]);
-
-  const filteredNoteworthy = useMemo(() => {
-    if (level !== "publishers") return [];
-    let list = filterIssueComics(split.noteworthy);
-    if (search.keys) list = list.filter((c) => c.key);
-    list = collapseComicVariants(list);
-    return sortCatalogComics(list, sort, { ownedByCatalog, label: comicLabel });
-  }, [level, split.noteworthy, search.keys, sort, ownedByCatalog]);
 
   function goUp() {
     if (level === "collected-volumes") {
@@ -569,7 +381,11 @@ function ComicsPage() {
               <h2 className="font-display text-lg tracking-wide uppercase">Publishers</h2>
               <p className="mt-1 text-xs text-muted">Step 1 of the ladder — pick a publisher to open its series.</p>
             </div>
-            {publishers.length === 0 ? (
+            {loadingPublishers ? (
+              <p className="rounded-lg bg-bg-elevated px-4 py-6 text-sm text-muted shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
+                Loading publishers…
+              </p>
+            ) : publishers.length === 0 ? (
               <p className="rounded-lg bg-bg-elevated px-4 py-6 text-sm text-muted shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
                 No publishers in this catalog slice yet.
               </p>
@@ -639,7 +455,7 @@ function ComicsPage() {
 
       {level === "series" ? (
         <>
-          {publisherCollected.length > 0 ? (
+          {collectedEditionCount > 0 ? (
             <section className="flex flex-col gap-3">
               <div>
                 <h2 className="font-display text-lg tracking-wide uppercase">Collected Editions</h2>
@@ -664,9 +480,9 @@ function ComicsPage() {
                 }
                 className="flex w-full min-w-0 items-center gap-3 rounded-lg bg-bg-elevated p-2 text-left shadow-[0_0_0_1px_rgba(214,230,255,0.08)] transition-colors hover:bg-surface"
               >
-                {(collectedSeries[0]?.sample ?? publisherCollected[0]) ? (
+                {collectedSample ? (
                   <ComicCover
-                    comic={(collectedSeries[0]?.sample ?? publisherCollected[0])!}
+                    comic={collectedSample}
                     resolveRemote
                     className="h-16 w-11 shrink-0 rounded-sm"
                   />
@@ -676,14 +492,14 @@ function ComicsPage() {
                 <span className="min-w-0 flex-1">
                   <span className="block truncate font-medium">Collected Editions</span>
                   <span className="text-xs text-muted">
-                    {publisherCollected.length} edition{publisherCollected.length === 1 ? "" : "s"}
+                    {collectedEditionCount} edition{collectedEditionCount === 1 ? "" : "s"}
                     {collectedSeries.length
                       ? ` · ${collectedSeries.length} series`
                       : ""}
                   </span>
                 </span>
                 <span className="flex flex-wrap justify-end gap-1">
-                  {[...new Set(publisherCollected.map((c) => comicFormatLabel(c.format)))].map((label) => (
+                  {collectedFormatLabels.map((label) => (
                     <Badge key={label} tone="ice">
                       {label}
                     </Badge>
@@ -700,14 +516,23 @@ function ComicsPage() {
                 Runs are split by start year so reboots do not merge. {seriesList.length} series.
               </p>
             </div>
-            {seriesList.length === 0 ? (
+            {loadingDetail ? (
+              <p className="rounded-lg bg-bg-elevated px-4 py-6 text-sm text-muted shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
+                Loading series…
+              </p>
+            ) : seriesList.length === 0 ? (
               <p className="rounded-lg bg-bg-elevated px-4 py-6 text-sm text-muted shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
                 No series under this publisher yet.
               </p>
             ) : (
-              <ul className="grid gap-2" data-sort={sort}>
-                {seriesList.map((s) => (
-                  <li key={s.key}>
+              <div data-sort={sort} data-testid="series-list" className="min-w-0 max-w-full">
+                <VirtualGrid
+                  items={seriesList}
+                  getKey={(s) => s.key}
+                  columns={COLLECTED_SERIES_COLUMNS}
+                  estimateRowHeight={92}
+                  gapClassName="gap-2"
+                  renderItem={(s) => (
                     <button
                       type="button"
                       onClick={() =>
@@ -739,9 +564,9 @@ function ComicsPage() {
                       {s.year ? <Badge tone="gold">{s.year}</Badge> : <Badge>Unknown</Badge>}
                       <ChevronRight className="size-4 shrink-0 text-muted" />
                     </button>
-                  </li>
-                ))}
-              </ul>
+                  )}
+                />
+              </div>
             )}
           </section>
         </>
@@ -755,6 +580,11 @@ function ComicsPage() {
               {search.publisher} · sorted by {SORT_LABEL[sort].toLowerCase()} · {issueComics.length} shown
             </p>
           </div>
+          {loadingRun ? (
+            <p className="rounded-lg bg-bg-elevated px-4 py-6 text-sm text-muted shadow-[0_0_0_1px_rgba(214,230,255,0.08)]">
+              Loading issues…
+            </p>
+          ) : (
           <ComicGrid
             comics={issueComics}
             ownedIds={ownedIds}
@@ -764,6 +594,7 @@ function ComicsPage() {
             emptyAction={() => setCustomOpen(true)}
             showSeriesYear={false}
           />
+          )}
         </section>
       ) : null}
 
@@ -773,7 +604,7 @@ function ComicsPage() {
             <h2 className="font-display text-lg tracking-wide uppercase">Collected Editions</h2>
             <p className="mt-1 text-xs text-muted">
               {search.publisher} · grouped by series · {collectedSeries.length} series ·{" "}
-              {publisherCollected.length} edition{publisherCollected.length === 1 ? "" : "s"}
+              {collectedEditionCount} edition{collectedEditionCount === 1 ? "" : "s"}
             </p>
           </div>
           {collectedSeries.length === 0 ? (

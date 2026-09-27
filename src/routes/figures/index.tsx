@@ -2,17 +2,18 @@ import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { LayoutGrid, List, Search } from "lucide-react";
 import { COMPANIES } from "@/data/companies";
-import { mergeFigures, searchFigures } from "@/data/figures";
 import { AddFigureDialog } from "@/components/add-figure-dialog";
+import { loadCatalogJson, loadFigureBrowse } from "@/lib/catalog-client";
+import { mergeFiguresInto, searchFigureList } from "@/lib/catalog-search";
+import type { FigureBrowseIndex } from "@/lib/catalog-shard";
 import { collapseFigureSets } from "@/lib/figure-sets";
 import {
   POPULAR_FRANCHISES,
   TRANSFORMERS_PARTIES,
   figureMatchesFranchise,
-  indexFranchiseBrowse,
   isFigureProperty,
   isTransformersParty,
-  reconcileBrowseSelection,
+  type FranchiseBrowseIndex,
 } from "@/lib/figure-property";
 import { FigureArt } from "@/components/figure-art";
 import { VirtualGrid } from "@/components/virtual-grid";
@@ -78,20 +79,77 @@ function FiguresPage() {
   useEnsureFigureLibrary(live);
   const extras = useFigureExtras();
   const [adding, setAdding] = useState<CatalogFigure | null>(null);
+  const [browseIndex, setBrowseIndex] = useState<FigureBrowseIndex | null>(null);
+  const [scopeFigures, setScopeFigures] = useState<CatalogFigure[] | null>(null);
+  const [loadedScope, setLoadedScope] = useState("");
 
-  const catalog = useMemo(() => mergeFigures(extras), [extras]);
+  useEffect(() => {
+    let cancel = false;
+    loadFigureBrowse()
+      .then((index) => {
+        if (cancel) return;
+        if (!index || Array.isArray(index) || !Array.isArray(index.companies)) {
+          setBrowseIndex({ total: 0, companies: [], franchises: [], parts: [] });
+          return;
+        }
+        setBrowseIndex(index);
+      })
+      .catch(() => {
+        if (!cancel) setBrowseIndex({ total: 0, companies: [], franchises: [], parts: [] });
+      });
+    return () => {
+      cancel = true;
+    };
+  }, []);
+
+  const scopePaths = useMemo(() => figureScopePaths(browseIndex, search), [browseIndex, search]);
+  const scopeKey = scopePaths?.join("|") ?? "";
+
+  useEffect(() => {
+    if (!scopePaths) return;
+    let cancel = false;
+    const key = scopePaths.join("|");
+    Promise.all(scopePaths.map((path) => loadCatalogJson<CatalogFigure[]>(path))).then((parts) => {
+      if (cancel) return;
+      setScopeFigures(parts.flatMap((part) => (Array.isArray(part) ? part : [])));
+      setLoadedScope(key);
+    });
+    return () => {
+      cancel = true;
+    };
+  }, [scopePaths]);
+
+  const scopeReady = Boolean(scopeFigures && loadedScope === scopeKey);
+  const catalog = useMemo(
+    () => (scopeReady && scopeFigures ? mergeFiguresInto(scopeFigures, extras) : []),
+    [scopeReady, scopeFigures, extras],
+  );
   const franchiseCounts = useMemo(() => {
     const counts = new Map<FigureProperty, number>();
-    for (const figure of collapseFigureSets(catalog)) {
-      if (!figure.property) continue;
-      counts.set(figure.property, (counts.get(figure.property) ?? 0) + 1);
+    for (const franchise of browseIndex?.franchises ?? []) {
+      counts.set(franchise.id as FigureProperty, franchise.count);
     }
     return counts;
-  }, [catalog]);
+  }, [browseIndex]);
   const browseParty = search.property === "transformers" ? search.party : undefined;
+  const ownedByCompany = useMemo(() => {
+    const map = new Map<string, number>();
+    if (!scopeReady) return map;
+    for (const figure of catalog) {
+      if (!owned[figure.id]) continue;
+      map.set(figure.company, (map.get(figure.company) ?? 0) + 1);
+    }
+    return map;
+  }, [catalog, owned, scopeReady]);
   const browse = useMemo(
-    () => indexFranchiseBrowse(catalog, search.property, browseParty, (id) => Boolean(owned[id])),
-    [catalog, owned, search.property, browseParty],
+    () =>
+      browseIndex
+        ? railsFromBrowse(browseIndex, search.property, browseParty, ownedByCompany)
+        : {
+            total: 0,
+            byCompany: new Map<string, { total: number; owned: number; lines: string[] }>(),
+          },
+    [browseIndex, browseParty, ownedByCompany, search.property],
   );
   const visibleCompanies = useMemo(() => {
     const withRows = (c: (typeof COMPANIES)[number]) => (browse.byCompany.get(c.id)?.total ?? 0) > 0;
@@ -104,8 +162,9 @@ function FiguresPage() {
   const lines = company ? (browse.byCompany.get(company.id)?.lines ?? []) : [];
 
   useEffect(() => {
-    const kept = reconcileBrowseSelection(
-      catalog,
+    if (!browseIndex) return;
+    const kept = reconcileFromBrowse(
+      browseIndex,
       { company: search.company, line: search.line },
       search.property,
       browseParty,
@@ -114,8 +173,8 @@ function FiguresPage() {
     void navigate({
       search: (prev) => {
         const party = prev.property === "transformers" ? prev.party : undefined;
-        const next = reconcileBrowseSelection(
-          catalog,
+        const next = reconcileFromBrowse(
+          browseIndex,
           { company: prev.company, line: prev.line },
           prev.property,
           party,
@@ -125,7 +184,7 @@ function FiguresPage() {
       },
       replace: true,
     });
-  }, [browseParty, catalog, navigate, search.company, search.line, search.property]);
+  }, [browseIndex, browseParty, navigate, search.company, search.line, search.property]);
   const layout = search.layout ?? "grid";
   const sort = search.sort ?? "release";
 
@@ -141,7 +200,8 @@ function FiguresPage() {
   }, [qDebounced, navigate, search.q]);
 
   const filtered = useMemo(() => {
-    let list = search.q ? searchFigures(search.q, extras) : [...catalog];
+    if (!scopeReady) return [];
+    let list = search.q ? searchFigureList(catalog, search.q) : [...catalog];
     if (search.company) list = list.filter((f) => f.company === search.company);
     if (search.line) list = list.filter((f) => f.line === search.line);
     if (search.view === "owned") list = list.filter((f) => owned[f.id]);
@@ -179,7 +239,7 @@ function FiguresPage() {
       return a.name.localeCompare(b.name);
     });
     return collapseFigureSets(list);
-  }, [search, owned, sort, extras, catalog]);
+  }, [search, owned, sort, catalog, scopeReady]);
 
   const ownedCount = filtered.filter((f) => owned[f.id]).length;
 
@@ -215,12 +275,14 @@ function FiguresPage() {
                   search: (prev) => {
                     const next = prev.property === franchise.id ? undefined : franchise.id;
                     const party = next === "transformers" ? prev.party : undefined;
-                    const kept = reconcileBrowseSelection(
-                      catalog,
-                      { company: prev.company, line: undefined },
-                      next,
-                      party,
-                    );
+                    const kept = browseIndex
+                      ? reconcileFromBrowse(
+                          browseIndex,
+                          { company: prev.company, line: undefined },
+                          next,
+                          party,
+                        )
+                      : { company: prev.company, line: undefined };
                     return {
                       ...prev,
                       property: next,
@@ -244,11 +306,9 @@ function FiguresPage() {
               onClick={() =>
                 navigate({
                   search: (prev) => {
-                    const kept = reconcileBrowseSelection(
-                      catalog,
-                      { company: prev.company, line: prev.line },
-                      "transformers",
-                    );
+                    const kept = browseIndex
+                      ? reconcileFromBrowse(browseIndex, { company: prev.company, line: prev.line }, "transformers")
+                      : { company: prev.company, line: prev.line };
                     return { ...prev, party: undefined, company: kept.company, line: kept.line };
                   },
                 })
@@ -264,12 +324,14 @@ function FiguresPage() {
                   navigate({
                     search: (prev) => {
                       const nextParty = prev.party === party.id ? undefined : party.id;
-                      const kept = reconcileBrowseSelection(
-                        catalog,
-                        { company: prev.company, line: prev.line },
-                        "transformers",
-                        nextParty,
-                      );
+                      const kept = browseIndex
+                        ? reconcileFromBrowse(
+                            browseIndex,
+                            { company: prev.company, line: prev.line },
+                            "transformers",
+                            nextParty,
+                          )
+                        : { company: prev.company, line: prev.line };
                       return {
                         ...prev,
                         property: "transformers",
@@ -308,6 +370,8 @@ function FiguresPage() {
           const stats = browse.byCompany.get(c.id);
           const total = stats?.total ?? 0;
           const have = stats?.owned ?? 0;
+          const countsReady =
+            scopeReady && (Boolean(search.property) || !search.company || search.company === c.id);
           return (
             <button
               key={c.id}
@@ -334,7 +398,7 @@ function FiguresPage() {
                 <span className="mt-0.5 block text-[10px] uppercase tracking-wide text-muted">Other / KO</span>
               ) : null}
               <span className="mt-1 block tabular text-xs">
-                {have}/{total}
+                {countsReady ? `${have}/${total}` : total}
               </span>
             </button>
           );
@@ -416,7 +480,7 @@ function FiguresPage() {
       <div className="flex items-center gap-3">
         <Progress value={filtered.length ? (ownedCount / filtered.length) * 100 : 0} />
         <span className="shrink-0 text-xs text-muted tabular">
-          {ownedCount} of {filtered.length}
+          {scopeReady ? `${ownedCount} of ${filtered.length}` : "Loading releases…"}
         </span>
       </div>
 
@@ -492,7 +556,7 @@ function FiguresPage() {
         />
       )}
 
-      {filtered.length === 0 ? (
+      {scopeReady && filtered.length === 0 ? (
         <p className="py-12 text-center text-sm text-muted">No releases match those filters.</p>
       ) : null}
 
@@ -501,6 +565,78 @@ function FiguresPage() {
       ) : null}
     </main>
   );
+}
+
+function figureScopePaths(index: FigureBrowseIndex | null, search: Search): string[] | null {
+  if (!index) return null;
+  if (search.property) {
+    const franchise = index.franchises.find((item) => item.id === search.property);
+    if (!franchise) return [];
+    if (search.property === "transformers" && search.party) {
+      const path = franchise.partyShards?.[search.party];
+      return path ? [path] : [];
+    }
+    return [franchise.shard];
+  }
+  if (search.company) {
+    const company = index.companies.find((item) => item.id === search.company);
+    return company ? [company.shard] : [];
+  }
+  return index.parts;
+}
+
+function railsFromBrowse(
+  index: FigureBrowseIndex,
+  property: FigureProperty | undefined,
+  party: TransformersParty | undefined,
+  ownedByCompany: Map<string, number>,
+): FranchiseBrowseIndex {
+  const byCompany = new Map<string, { total: number; owned: number; lines: string[] }>();
+  if (!property) {
+    for (const company of index.companies) {
+      byCompany.set(company.id, {
+        total: company.total,
+        owned: ownedByCompany.get(company.id) ?? 0,
+        lines: company.lines.map((line) => line.name),
+      });
+    }
+    return { total: index.total, byCompany };
+  }
+  const franchise = index.franchises.find((item) => item.id === property);
+  if (!franchise) return { total: 0, byCompany };
+  for (const company of franchise.companies) {
+    const partyStat = property === "transformers" && party ? company.parties?.[party] : undefined;
+    if (property === "transformers" && party && !partyStat?.total) continue;
+    byCompany.set(company.id, {
+      total: partyStat ? partyStat.total : company.total,
+      owned: ownedByCompany.get(company.id) ?? 0,
+      lines: partyStat ? partyStat.lines : company.lines,
+    });
+  }
+  let total = 0;
+  for (const row of byCompany.values()) total += row.total;
+  return { total, byCompany };
+}
+
+function reconcileFromBrowse(
+  index: FigureBrowseIndex,
+  selection: { company?: CompanyId; line?: string },
+  property?: FigureProperty,
+  party?: TransformersParty,
+): { company?: CompanyId; line?: string } {
+  if (!property) return { company: selection.company, line: selection.line };
+  if (!selection.company) return { company: undefined, line: undefined };
+  const franchise = index.franchises.find((item) => item.id === property);
+  const company = franchise?.companies.find((item) => item.id === selection.company);
+  if (!company) return { company: undefined, line: undefined };
+  if (property === "transformers" && party) {
+    const partyStat = company.parties?.[party];
+    if (!partyStat?.total) return { company: undefined, line: undefined };
+    const lineOk = !selection.line || partyStat.lines.includes(selection.line);
+    return { company: selection.company, line: lineOk ? selection.line : undefined };
+  }
+  const lineOk = !selection.line || company.lines.includes(selection.line);
+  return { company: selection.company, line: lineOk ? selection.line : undefined };
 }
 
 function FilterChip({

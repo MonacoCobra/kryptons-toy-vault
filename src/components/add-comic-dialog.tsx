@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { comicLabel } from "@/data/comics";
+import { comicLabel } from "@/lib/comic-label";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,

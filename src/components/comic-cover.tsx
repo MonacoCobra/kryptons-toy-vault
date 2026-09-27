@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { comicLabel } from "@/data/comics";
+import { comicLabel } from "@/lib/comic-label";
 import { getComicCover } from "@/lib/comic-covers";
 import type { CatalogComic, CustomComic } from "@/lib/types";
 import { cn, hashString } from "@/lib/utils";
