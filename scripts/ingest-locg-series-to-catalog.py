@@ -648,14 +648,9 @@ def series_meta_from_cache_or_fixture(
 def inject_rows(comics_ts: Path, rows: list, comment: str) -> int:
     if not rows:
         return 0
-    src = comics_ts.read_text()
-    marker = "];\n\nfunction pal"
-    if marker not in src:
-        raise SystemExit("comics.ts marker not found")
-    lines = [backlog.ts_literal(row) for row in rows]
-    block = f"\n  // {comment}\n" + "\n".join(lines) + "\n"
-    comics_ts.write_text(src.replace(marker, block + marker, 1))
-    return len(rows)
+    import data_shards
+
+    return data_shards.append_comic_rows(comics_ts, rows, note=comment)
 
 
 def upc_entry(catalog_id: str, parsed: dict) -> dict:
@@ -883,7 +878,14 @@ def main(argv: list[str] | None = None) -> int:
     existing_meta = bf.parse_comics_meta()
     upc_map = bf.load_json(root / "src/data/comic-upc-map.json", {})
     cover_urls = bf.load_json(root / "src/data/comic-cover-urls.json", {})
-    existing_locg = collect_locg_ids(upc_map, cover_urls, comics_ts.read_text())
+    import data_shards
+
+    comics_text = comics_ts.read_text(encoding="utf-8") if comics_ts.is_file() else ""
+    existing_locg = collect_locg_ids(upc_map, cover_urls, comics_text)
+    for row in data_shards.load_comic_rows(comics_ts):
+        extra = row[13] if len(row) > 13 and isinstance(row[13], dict) else {}
+        if extra.get("locgId"):
+            existing_locg.add(str(extra["locgId"]))
 
     pace = Pace(0.0 if fixture_dir else args.delay)
     all_rows: list = []

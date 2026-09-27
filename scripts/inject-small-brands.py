@@ -52,6 +52,10 @@ def now_iso() -> str:
 
 
 def load_json(path: Path) -> Any:
+    import data_shards
+
+    if data_shards.dataset_kind(path):
+        return data_shards.load_document(path, None)
     return json.loads(path.read_text())
 
 

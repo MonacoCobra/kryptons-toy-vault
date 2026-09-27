@@ -625,8 +625,10 @@ def write_line_index(line_key: str, products: list[dict]) -> Path:
 
 def merge_into_product_sku_index(products: list[dict], *, replace_shop: bool = True) -> dict:
     """Append/replace mephitsu shop rows in product-sku-index.json."""
+    import data_shards
+
     idx_path = ROOT / "src/data/figure-archive/product-sku-index.json"
-    index: list[dict] = json.loads(idx_path.read_text())
+    index: list[dict] = data_shards.load_array(idx_path)
     before = len(index)
     if replace_shop:
         index = [p for p in index if p.get("shop") != "mephitsu"]
@@ -652,7 +654,7 @@ def merge_into_product_sku_index(products: list[dict], *, replace_shop: bool = T
         }
         index.append(entry)
         added += 1
-    idx_path.write_text(json.dumps(index, indent=2, ensure_ascii=False) + "\n")
+    data_shards.save_array(idx_path, index)
     return {"before": before, "after": len(index), "added": added, "removedOldMephitsu": before - (len(index) - added)}
 
 
@@ -732,8 +734,10 @@ def main() -> int:
         all_products.extend(products)
 
     if args.resolve_gtin:
+        import data_shards
+
         idx_path = ROOT / "src/data/figure-archive/product-sku-index.json"
-        sku_index = json.loads(idx_path.read_text())
+        sku_index = data_shards.load_array(idx_path)
         # Group by line file rewrite
         by_line: dict[str, list[dict]] = {}
         for p in all_products:

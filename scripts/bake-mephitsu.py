@@ -707,7 +707,9 @@ def main() -> int:
         keys = args.lines or ["marvel-legends"]
 
     rows = json.loads(ONESHOT.read_text())
-    index = json.loads(SKU_INDEX.read_text()) if SKU_INDEX.exists() else []
+    import data_shards
+
+    index = data_shards.load_array(SKU_INDEX) if data_shards.dataset_exists(SKU_INDEX) else []
 
     reports = []
     for line in keys:

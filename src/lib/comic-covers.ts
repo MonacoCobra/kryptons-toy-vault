@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { z } from "zod";
 import { fetchLocgIssueById, normalizeUpc } from "@/lib/locg-upc";
-import upcMapJson from "@/data/comic-upc-map.json";
+import { UPC_MAP as upcMapJson } from "@/data/comic-upc-map/load";
 
 /**
  * Resolve real published cover art for catalog comics.

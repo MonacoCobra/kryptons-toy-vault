@@ -12,6 +12,11 @@ dist/
 __pycache__/
 *.pyc
 
+# Runtime locks for sharded catalog writers
+src/data/comics/.lock
+src/data/comic-upc-map/.lock
+src/data/figure-archive/product-sku-index/.lock
+
 # Official GCD dump drop (Lyra) + SQL→sqlite working copy — never commit
 gcd-dump/
 data/gcd/

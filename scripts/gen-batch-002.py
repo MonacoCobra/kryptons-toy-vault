@@ -20,12 +20,10 @@ FLOOR = "1986-10-01"
 TARGET_MIN, TARGET_MAX = 450, 500
 
 def parse_existing_ts():
-    src = COMICS_TS.read_text()
-    id_set, key_set = set(), set()
-    for m in re.finditer(r'\["([^"]+)",\s*"([^"]+)",\s*"([^"]+)",\s*"([^"]+)"', src):
-        id_set.add(m.group(1))
-        key_set.add(f"{m.group(2)}|{m.group(3)}|{m.group(4)}".lower())
-    return id_set, key_set
+    import sys
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import data_shards
+    return data_shards.comic_id_sets(COMICS_TS)
 
 def parse_batch001():
     data = json.loads(BATCH001.read_text())

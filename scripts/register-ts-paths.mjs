@@ -14,17 +14,35 @@ import path from "node:path";
 const src = ${JSON.stringify(src)};
 
 export async function resolve(specifier, context, nextResolve) {
-  if (specifier.startsWith("@/")) {
-    let target = src + "/" + specifier.slice(2);
+  const q = specifier.indexOf("?");
+  const bare = q === -1 ? specifier : specifier.slice(0, q);
+  const query = q === -1 ? "" : specifier.slice(q);
+  let resolved;
+  if (bare.startsWith("@/")) {
+    let target = src + "/" + bare.slice(2);
     if (!/\\.(ts|tsx|js|mjs|json)$/.test(target)) target += ".ts";
-    return nextResolve(pathToFileURL(target).href, context);
+    resolved = await nextResolve(pathToFileURL(target).href, context);
+  } else {
+    resolved = await nextResolve(bare, context);
   }
-  return nextResolve(specifier, context);
+  if (query) return { ...resolved, url: resolved.url + query };
+  return resolved;
 }
 
 export async function load(url, context, nextLoad) {
-  if (url.endsWith(".json")) {
-    const source = readFileSync(fileURLToPath(url), "utf8");
+  const q = url.indexOf("?");
+  const clean = q === -1 ? url : url.slice(0, q);
+  const query = q === -1 ? "" : url.slice(q);
+  if (query.split("&").includes("raw") || query.includes("raw")) {
+    const source = readFileSync(fileURLToPath(clean), "utf8");
+    return {
+      format: "module",
+      shortCircuit: true,
+      source: "export default " + JSON.stringify(source),
+    };
+  }
+  if (clean.endsWith(".json")) {
+    const source = readFileSync(fileURLToPath(clean), "utf8");
     return {
       format: "module",
       shortCircuit: true,

@@ -73,16 +73,21 @@ def now_iso() -> str:
 
 
 def load_json(path: Path, default):
+    import data_shards
+
+    if data_shards.dataset_kind(path):
+        return data_shards.load_document(path, default)
     if path.exists():
         return json.loads(path.read_text())
     return default
-
-
 def save_json(path: Path, data) -> None:
+    import data_shards
+
+    if data_shards.dataset_kind(path):
+        data_shards.save_document(path, data)
+        return
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
-
-
 def pub_rank(publisher: str) -> int:
     p = (publisher or "").lower()
     if (

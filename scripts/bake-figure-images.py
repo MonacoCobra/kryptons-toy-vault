@@ -28,6 +28,8 @@ from pathlib import Path
 ROOT = Path("/workspace/collection-app")
 SCRIPTS = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import data_shards  # noqa: E402
 
 from figure_oneshot.shopify_dump import STOREFRONTS, fetch_all_products, is_figure_like, tag_list  # noqa: E402
 
@@ -1669,11 +1671,11 @@ def main() -> None:
     sku_rematch_stats: dict | None = None
 
     if sku_first:
-        if not SKU_INDEX_JSON.exists():
+        if not data_shards.dataset_exists(SKU_INDEX_JSON):
             print(f"ERROR: {SKU_INDEX_JSON} missing — run bake-figure-skus.py --fetch first")
             raise SystemExit(1)
         print(f"=== SKU-first image rematch from {SKU_INDEX_JSON.name} ===")
-        sku_index = json.loads(SKU_INDEX_JSON.read_text())
+        sku_index = data_shards.load_array(SKU_INDEX_JSON)
         sku_to_prod = build_sku_to_image_entry(sku_index)
         sku_to_products = build_sku_to_products(sku_index)
         # score_pair needs enrich_index fields (_char, etc.)

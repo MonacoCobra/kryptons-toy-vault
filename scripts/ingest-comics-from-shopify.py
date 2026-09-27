@@ -68,8 +68,19 @@ BIG_TWO = {"marvel", "marvel comics", "dc", "dc comics"}
 def now_iso():
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 def load_json(path, default):
+    import data_shards
+
+    if data_shards.dataset_kind(path):
+        return data_shards.load_document(path, default)
     return json.loads(path.read_text()) if path.exists() else default
+
+
 def save_json(path, data):
+    import data_shards
+
+    if data_shards.dataset_kind(path):
+        data_shards.save_document(path, data)
+        return
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
 def normalize_upc(raw):
