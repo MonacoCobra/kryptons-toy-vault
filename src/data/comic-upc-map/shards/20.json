@@ -7964,6 +7964,15 @@
       "upc": "76194138622500121",
       "url": "https://www.comics.org/api/issue/2673788/"
     },
+    "dc-batgirl-2016-2002-25": {
+      "fetchedAt": "2026-09-27T18:49:25Z",
+      "gcdIssueId": "117660",
+      "source": "gcd",
+      "sourceId": "117660",
+      "title": "Batgirl #25",
+      "upc": "76194122200402511",
+      "url": "https://www.comics.org/api/issue/117660/"
+    },
     "dc-batgirl-2016-2014-30-newsstand": {
       "fetchedAt": "2026-09-27T18:29:24Z",
       "gcdIssueId": "2067199",
@@ -11568,6 +11577,15 @@
       "title": "Green Arrow",
       "upc": "76194130648302011"
     },
+    "dc-ga-2011-2005-46": {
+      "fetchedAt": "2026-09-27T18:49:26Z",
+      "gcdIssueId": "216829",
+      "source": "gcd",
+      "sourceId": "216829",
+      "title": "Green Arrow #46",
+      "upc": "76194122715304611",
+      "url": "https://www.comics.org/api/issue/216829/"
+    },
     "dc-ga-2011-2017-19": {
       "fetchedAt": "2026-09-17T23:21:20Z",
       "gcdIssueId": "1680362",
@@ -11772,6 +11790,22 @@
       "title": "Green Lantern #180",
       "upc": "07098930750610",
       "url": "https://www.comics.org/api/issue/2146957/"
+    },
+    "dc-gl-2005-1990-2": {
+      "fetchedAt": "2026-09-27T18:49:13Z",
+      "gcdIssueId": "48160",
+      "source": "gcd",
+      "sourceId": "48160",
+      "title": "Green Lantern #2",
+      "url": "https://www.comics.org/api/issue/48160/"
+    },
+    "dc-gl-2005-1990-7": {
+      "fetchedAt": "2026-09-27T18:49:13Z",
+      "gcdIssueId": "48806",
+      "source": "gcd",
+      "sourceId": "48806",
+      "title": "Green Lantern #7",
+      "url": "https://www.comics.org/api/issue/48806/"
     },
     "dc-gl-2005-2013-23-newsstand": {
       "fetchedAt": "2026-09-27T18:29:25Z",
@@ -13003,6 +13037,15 @@
       "upc": "76194138522801831",
       "url": "https://www.comics.org/api/issue/2825499/"
     },
+    "dc-jsa-2000-14": {
+      "fetchedAt": "2026-09-27T18:49:20Z",
+      "gcdIssueId": "63375",
+      "source": "gcd",
+      "sourceId": "63375",
+      "title": "JSA #14",
+      "upc": "76194121978301411",
+      "url": "https://www.comics.org/api/issue/63375/"
+    },
     "dc-jsa-2007-22": {
       "fetchedAt": "2026-09-08T21:51:07Z",
       "source": "metron",
@@ -13089,6 +13132,15 @@
       "title": "Justice League International #13",
       "upc": "0709893055505",
       "url": "https://www.comics.org/api/issue/1730213/"
+    },
+    "dc-justice-league-international-2012-10": {
+      "fetchedAt": "2026-09-27T18:49:15Z",
+      "gcdIssueId": "951381",
+      "source": "gcd",
+      "sourceId": "951381",
+      "title": "Justice League International #10",
+      "upc": "76194130510301011",
+      "url": "https://www.comics.org/api/issue/951381/"
     },
     "dc-justice-league-international-3": {
       "fetchedAt": "2026-09-20T22:01:13Z",
@@ -13560,6 +13612,14 @@
       "upc": "76194127779000211",
       "url": "https://www.comics.org/api/issue/546429/"
     },
+    "dc-mister-miracle-1990-12": {
+      "fetchedAt": "2026-09-27T18:49:07Z",
+      "gcdIssueId": "136158",
+      "source": "gcd",
+      "sourceId": "136158",
+      "title": "Mister Miracle #12",
+      "url": "https://www.comics.org/api/issue/136158/"
+    },
     "dc-mister-miracle-9": {
       "fetchedAt": "2026-09-17T20:36:46Z",
       "gcdIssueId": "1815874",
@@ -13782,6 +13842,33 @@
       "sourceId": "8738",
       "title": "Nightwing",
       "upc": "76194134174301411"
+    },
+    "dc-nightwing-2016-1999-33": {
+      "fetchedAt": "2026-09-27T18:49:15Z",
+      "gcdIssueId": "62834",
+      "source": "gcd",
+      "sourceId": "62834",
+      "title": "Nightwing #33",
+      "upc": "76194120739103311",
+      "url": "https://www.comics.org/api/issue/62834/"
+    },
+    "dc-nightwing-2016-2001-59": {
+      "fetchedAt": "2026-09-27T18:49:15Z",
+      "gcdIssueId": "69461",
+      "source": "gcd",
+      "sourceId": "69461",
+      "title": "Nightwing #59",
+      "upc": "76194120739105911",
+      "url": "https://www.comics.org/api/issue/69461/"
+    },
+    "dc-nightwing-2016-2003-85": {
+      "fetchedAt": "2026-09-27T18:49:15Z",
+      "gcdIssueId": "213994",
+      "source": "gcd",
+      "sourceId": "213994",
+      "title": "Nightwing #85",
+      "upc": "76194120739108511",
+      "url": "https://www.comics.org/api/issue/213994/"
     },
     "dc-nightwing-2016-2018-34": {
       "fetchedAt": "2026-09-14T06:08:10Z",
@@ -14775,6 +14862,14 @@
       "upc": "0709893120212",
       "url": "https://www.comics.org/api/issue/1317136/"
     },
+    "dc-ss-2016-1989-26": {
+      "fetchedAt": "2026-09-27T18:49:06Z",
+      "gcdIssueId": "46086",
+      "source": "gcd",
+      "sourceId": "46086",
+      "title": "Suicide Squad #26",
+      "url": "https://www.comics.org/api/issue/46086/"
+    },
     "dc-ss-2016-2017-22": {
       "fetchedAt": "2026-09-17T23:50:30Z",
       "gcdIssueId": "1723381",
@@ -15639,6 +15734,15 @@
       "upc": "76194123719003411",
       "url": "https://www.comics.org/api/issue/278470/"
     },
+    "dc-teen-titans-2007-44": {
+      "fetchedAt": "2026-09-27T18:48:54Z",
+      "gcdIssueId": "329917",
+      "source": "gcd",
+      "sourceId": "329917",
+      "title": "Teen Titans #44",
+      "upc": "76194123719004411",
+      "url": "https://www.comics.org/api/issue/329917/"
+    },
     "dc-teen-titans-2014-30": {
       "fetchedAt": "2026-09-27T18:29:30Z",
       "gcdIssueId": "1198506",
@@ -16211,6 +16315,14 @@
       "title": "Wonder Woman 1 2024 Edition #[nn]",
       "upc": "76194138827400111",
       "url": "https://www.comics.org/api/issue/2798958/"
+    },
+    "dc-wonder-woman-1990-39": {
+      "fetchedAt": "2026-09-27T18:49:06Z",
+      "gcdIssueId": "82430",
+      "source": "gcd",
+      "sourceId": "82430",
+      "title": "Wonder Woman #39",
+      "url": "https://www.comics.org/api/issue/82430/"
     },
     "dc-wonder-woman-2012-9-newsstand": {
       "fetchedAt": "2026-09-27T18:29:27Z",
