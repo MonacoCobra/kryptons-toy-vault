@@ -133503,6 +133503,75 @@
         }
       ],
       "seq": 369164
+    },
+    {
+      "row": [
+        "warr-eerie-135",
+        "Eerie",
+        "135",
+        "Warren",
+        "1982-10-01",
+        "",
+        "",
+        "Eerie #135",
+        2.5,
+        "single",
+        0.55,
+        0,
+        "111827,e5e7eb,f8fafc",
+        {
+          "gcdIssueId": "36780",
+          "streetDate": "1982-07-20"
+        }
+      ],
+      "seq": 369409
+    },
+    {
+      "row": [
+        "warr-eerie-129-newsstand",
+        "Eerie",
+        "129",
+        "Warren",
+        "1982-02-01",
+        "",
+        "",
+        "Eerie #129",
+        2.0,
+        "single",
+        0.55,
+        0,
+        "111827,e5e7eb,f8fafc",
+        {
+          "gcdIssueId": "2735190",
+          "streetDate": "1981-12-15",
+          "upc": "0709893792602",
+          "variant": "Newsstand"
+        }
+      ],
+      "seq": 369435
+    },
+    {
+      "row": [
+        "warr-goblin-1-direct",
+        "The Goblin",
+        "1",
+        "Warren",
+        "1982-06-01",
+        "",
+        "",
+        "The Goblin #1",
+        2.25,
+        "single",
+        0.8,
+        0,
+        "111827,e5e7eb,f8fafc",
+        {
+          "gcdIssueId": "2734190",
+          "streetDate": "1982-05-04",
+          "variant": "Direct"
+        }
+      ],
+      "seq": 369520
     }
   ]
 }
