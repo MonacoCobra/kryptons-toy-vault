@@ -528,14 +528,17 @@ def compute_volume_suffixes(
     series_rows: list[dict],
     publisher_names: dict[str, str],
     collected_series: set[str] | None = None,
+    issue_counts: dict[str, int] | None = None,
 ) -> dict[str, str]:
     """series id → "" (oldest volume / plain name) or "(YYYY)" / "(YYYY Vol N)".
 
     Only series whose (series_match_key, catalog publisher) group holds 2+ dump
     series appear in the result. Order: year_began, periodicals before
-    collected-edition series, then GCD id.
+    collected-edition series, longer runs (more main issues) before one-shots
+    within a year, then GCD id.
     """
     collected_series = collected_series or set()
+    issue_counts = issue_counts or {}
     groups: dict[tuple[str, str], list[dict]] = {}
     for row in series_rows:
         name = str(row.get("name") or "")
@@ -551,7 +554,12 @@ def compute_volume_suffixes(
         def order(r: dict) -> tuple:
             y = r.get("year_began")
             y = int(y) if str(y or "").isdigit() else 9999
-            return (y, 1 if str(r.get("id")) in collected_series else 0, int(r.get("id") or 0))
+            return (
+                y,
+                1 if str(r.get("id")) in collected_series else 0,
+                -int(issue_counts.get(str(r.get("id")), 0)),
+                int(r.get("id") or 0),
+            )
 
         rows = sorted(rows, key=order)
         used: Counter[int] = Counter()
@@ -595,15 +603,22 @@ def load_volume_suffixes(store: Any) -> dict[str, str]:
                 "HAVING SUM(CASE WHEN COALESCE(valid_isbn, '') <> '' OR COALESCE(isbn, '') <> '' "
                 "OR barcode LIKE '978%' OR barcode LIKE '979%' THEN 1 ELSE 0 END) * 2 >= COUNT(*)")
         }
-        return compute_volume_suffixes(series, pubs, collected)
+        counts = {
+            str(r[0]): int(r[1]) for r in con.execute(
+                "SELECT series_id, COUNT(*) FROM gcd_issue WHERE COALESCE(deleted, 0) = 0 "
+                "AND COALESCE(variant_of_id, 0) = 0 GROUP BY series_id")
+        }
+        return compute_volume_suffixes(series, pubs, collected, counts)
     series_map = getattr(store, "series", None)
     if isinstance(series_map, dict):
         pubs = {str(k): str(v.get("name") or "") for k, v in getattr(store, "publishers", {}).items()}
         collected: set[str] = set()
+        counts: dict[str, int] = {}
         for sid, issues in getattr(store, "issues", {}).items():
+            counts[str(sid)] = sum(1 for i in (issues or []) if not variant_of_id(i))
             if issues and sum(1 for i in issues if _has_isbn(i) or str(i.get("barcode") or "").startswith(("978", "979"))) * 2 >= len(issues):
                 collected.add(str(sid))
-        return compute_volume_suffixes(list(series_map.values()), pubs, collected)
+        return compute_volume_suffixes(list(series_map.values()), pubs, collected, counts)
     return {}
 
 

@@ -1349,6 +1349,16 @@ class VolumeAwarePresenceTest(unittest.TestCase):
         self.assertNotIn("6", suf)  # only volume with that name
         self.assertNotIn("7", suf)  # groups are per catalog publisher
 
+    def test_volume_suffixes_same_year_longer_run_first(self):
+        series = [
+            {"id": 10, "name": "Superman", "year_began": 1939, "publisher_id": 54},
+            {"id": 11, "name": "Superman", "year_began": 2016, "publisher_id": 54},  # one-shot
+            {"id": 12, "name": "Superman", "year_began": 2016, "publisher_id": 54},  # ongoing
+        ]
+        suf = ingest.compute_volume_suffixes(series, {"54": "DC"}, set(), {"11": 1, "12": 45})
+        self.assertEqual(suf["12"], "(2016)")
+        self.assertEqual(suf["11"], "(2016 Vol 2)")
+
     def test_volume_series_name(self):
         self.assertEqual(ingest.volume_series_name("Superman", "Superman", "(2011)"), "Superman (2011)")
         self.assertEqual(ingest.volume_series_name("Superman (2011)", "Superman", ""), "Superman")
