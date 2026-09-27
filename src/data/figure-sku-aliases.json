@@ -486,7 +486,9 @@
       "MLX97G4",
       "G0605",
       "HASF6547",
-      "F65475X00"
+      "F65475X00",
+      "HAS143761",
+      "id:hs8-hs-33"
     ],
     "ml5-ml-x97-wolverine": [
       "HAS324894",
@@ -11706,7 +11708,8 @@
       "F92295L00"
     ],
     "ml5-ml-mr-knight": [
-      "F38595L00"
+      "F38595L00",
+      "id:mlc-moonknight-mrknight"
     ],
     "ml5-ml-moon-knight-show": [
       "F38585X00"
@@ -12300,14 +12303,6 @@
       "F10085L00",
       "F03365L00",
       "F19595X00"
-    ],
-    "hs8-hs-33": [
-      "HASG2375",
-      "MLRGAM01",
-      "F7023",
-      "HBR-F70235L00-C",
-      "G2375",
-      "E5324AS00"
     ],
     "hs8-hs-32": [
       "E9293",
@@ -43801,6 +43796,27 @@
       "74472",
       "MF17377",
       "id:mf10-mf-39"
+    ],
+    "mlc-sugar-man": [
+      "id:d14ml-sugar-man-baf"
+    ],
+    "mlc-wildchild": [
+      "5010993682324",
+      "id:d14ml-wildchild-aoa2"
+    ],
+    "tb2-legends-annihilus": [
+      "id:tb4-baf-annihilus"
+    ],
+    "d14ml-caliban-baf": [
+      "id:mlc-caliban",
+      "id:ml3-ml-caliban-baf"
+    ],
+    "ml3-ml-apocalypse-baf": [
+      "MLAPOC1",
+      "id:mlc-apocalypse-aoa"
+    ],
+    "d14ml-spidey-india": [
+      "id:ml2-spiderman-india"
     ]
   },
   "aliasToFigureId": {
@@ -52659,12 +52675,6 @@
     "F10085L00": "hs8-hs-28",
     "F03365L00": "hs8-hs-28",
     "F19595X00": "hs8-hs-28",
-    "HASG2375": "hs8-hs-33",
-    "MLRGAM01": "hs8-hs-33",
-    "F7023": "hs8-hs-33",
-    "HBR-F70235L00-C": "hs8-hs-33",
-    "G2375": "hs8-hs-33",
-    "E5324AS00": "hs8-hs-33",
     "E9293": "hs8-hs-32",
     "MARVELLEGENDS-ROGUEPYRO-2PACK": "hs8-hs-32",
     "F65465X00": "hs8-hs-32",
@@ -67598,7 +67608,10 @@
     "id:sf-bandai-toydojo-gundam-1-100-mg-msz-006-zeta-gundam-ver-ka-model-kit": "sf-bandai-gundamplanet-mg-msz-006-zeta-gundam-ver-ka",
     "id:sf-bandai-gundamplanet-pg-unleashed-rx-78-2-gundam": "sf-bandai-toyarena-gundam-1-60-pg-unleashed-gundam-0079-rx-78-2-gundam-model-kit",
     "id:sf-bandai-japan-figure-mg-mobile-suit-gundam-f91-gundam-f91ver-2-0-1-100-scale-c": "sf-bandai-toyarena-gundam-1-100-mg-f-91-gundam-f91-2-0-model-kit",
-    "id:mf10-mf-39": "d14mcf-superman-inj"
+    "id:mf10-mf-39": "d14mcf-superman-inj",
+    "HAS143761": "ml5-ml-x97-gambit",
+    "5010993682324": "mlc-wildchild",
+    "MLAPOC1": "ml3-ml-apocalypse-baf"
   },
   "collapsed": [
     {
@@ -68302,6 +68315,90 @@
         "id:yolopark-g1-starscream-pre-assembled-model-kit"
       ],
       "reason": "Shelby (list row 251): AMK Pro G1 Starscream listed twice"
+    },
+    {
+      "keepId": "ml5-ml-x97-gambit",
+      "dropId": "hs8-hs-33",
+      "canonicalSku": "64725004",
+      "aliasesAdded": [
+        "HAS143761",
+        "id:hs8-hs-33"
+      ],
+      "reason": "Shelby (ML Bible probable duplicates, 'merge em'): same X-Men '97 Gambit (2023): hs8's UPC 5010996143761 (HAS143761) is the X-Men '97 Gambit per ActionFigure411. hs8's other codes (HASG2375/G2375, MLRGAM01, F7023/HBR-F70235L00-C, E5324AS00) are not verified as this figure (they look like retro/earlier Gambit releases), so they were not attached"
+    },
+    {
+      "keepId": "mlc-sugar-man",
+      "dropId": "d14ml-sugar-man-baf",
+      "canonicalSku": "MARVELLEGENDS-SUGARMANWAVE",
+      "aliasesAdded": [
+        "id:d14ml-sugar-man-baf"
+      ],
+      "reason": "Shelby (ML Bible probable duplicates, 'merge em'): same 2020 Age of Apocalypse Sugar Man Build-A-Figure (ActionFigure411 lists only one ML Sugar Man)"
+    },
+    {
+      "keepId": "mlc-wildchild",
+      "dropId": "d14ml-wildchild-aoa2",
+      "canonicalSku": "E9173",
+      "aliasesAdded": [
+        "5010993682324",
+        "id:d14ml-wildchild-aoa2"
+      ],
+      "reason": "Shelby (ML Bible probable duplicates, 'merge em'): same 2020 Age of Apocalypse (Sugar Man wave) Wild Child: E9173 keeper, dropped row's GTIN 5010993682324 comes from a cmdstore AoA Sugar Man series Wild Child listing"
+    },
+    {
+      "keepId": "ml5-ml-mr-knight",
+      "dropId": "mlc-moonknight-mrknight",
+      "canonicalSku": "5010994134723",
+      "aliasesAdded": [
+        "id:mlc-moonknight-mrknight"
+      ],
+      "reason": "Shelby (ML Bible probable duplicates, 'merge em'): same 2023 Disney+ Moon Knight Mr. Knight (only ML Mr. Knight figure; GTIN 5010994134723)"
+    },
+    {
+      "keepId": "tb2-legends-annihilus",
+      "dropId": "tb4-baf-annihilus",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:tb4-baf-annihilus"
+      ],
+      "reason": "Shelby (ML Bible probable duplicates, 'merge em'): same 2006 Annihilus Build-A-Figure (ActionFigure411 lists a single 2006 Annihilus BAF; purple/pink are running changes)"
+    },
+    {
+      "keepId": "d14ml-caliban-baf",
+      "dropId": "mlc-caliban",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:mlc-caliban"
+      ],
+      "reason": "Shelby (ML Bible probable duplicates, 'merge em'): same 2019 Caliban Build-A-Figure (Logan/X-Men wave; ActionFigure411 caliban-baf, only ML Caliban)"
+    },
+    {
+      "keepId": "d14ml-caliban-baf",
+      "dropId": "ml3-ml-caliban-baf",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:ml3-ml-caliban-baf"
+      ],
+      "reason": "Shelby (ML Bible probable duplicates, 'merge em'): same 2019 Caliban Build-A-Figure (Logan/X-Men wave; ActionFigure411 caliban-baf, only ML Caliban)"
+    },
+    {
+      "keepId": "ml3-ml-apocalypse-baf",
+      "dropId": "mlc-apocalypse-aoa",
+      "canonicalSku": "5010994140670",
+      "aliasesAdded": [
+        "MLAPOC1",
+        "id:mlc-apocalypse-aoa"
+      ],
+      "reason": "Shelby (ML Bible probable duplicates, 'merge em'): same Retro-card Apocalypse: both listing photos are the Retro Collection Apocalypse (legendztoys MLAPOC1 / cmdstore 5010994140670)"
+    },
+    {
+      "keepId": "d14ml-spidey-india",
+      "dropId": "ml2-spiderman-india",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:ml2-spiderman-india"
+      ],
+      "reason": "Shelby (ML Bible probable duplicates, 'merge em'): same Across the Spider-Verse Spider-Man India (Pavitr Prabhakar), the only ML Pavitr figure (F9172, 2024)"
     }
   ],
   "flagged": [
