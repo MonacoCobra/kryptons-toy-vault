@@ -162579,6 +162579,71 @@
         }
       ],
       "seq": 455050
+    },
+    {
+      "row": [
+        "dc-new-book-of-comics-2",
+        "New Book of Comics",
+        "2",
+        "DC Comics",
+        "1938-04-01",
+        "",
+        "",
+        "New Book of Comics #2",
+        0.1,
+        "single",
+        0.55,
+        0,
+        "1e3a8a,e30613,f8fafc",
+        {
+          "gcdIssueId": "128522"
+        }
+      ],
+      "seq": 455087
+    },
+    {
+      "row": [
+        "dc-det-20",
+        "Detective Comics",
+        "20",
+        "DC Comics",
+        "1938-10-01",
+        "",
+        "",
+        "Detective Comics #20",
+        0.1,
+        "single",
+        0.55,
+        0,
+        "1e3a8a,e30613,f8fafc",
+        {
+          "gcdIssueId": "345",
+          "streetDate": "1938-09-07"
+        }
+      ],
+      "seq": 455097
+    },
+    {
+      "row": [
+        "dc-movie-comics-2",
+        "Movie Comics",
+        "2",
+        "DC Comics",
+        "1939-05-01",
+        "",
+        "",
+        "Movie Comics #2",
+        0.1,
+        "single",
+        0.55,
+        0,
+        "1e3a8a,e30613,f8fafc",
+        {
+          "gcdIssueId": "206464",
+          "streetDate": "1939-01-01"
+        }
+      ],
+      "seq": 455162
     }
   ]
 }
