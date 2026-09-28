@@ -1,7 +1,7 @@
 {
-  "contentHash": "c11cefaa5cbbcbf450f8a44aa886b60b1a2f28a98a1bbdcbf714ae7eb5d7af94",
+  "contentHash": "643dd97cbdad83be4afef7e84f7602d6541ec73353dfa5663e35cad905953b73",
   "dataset": "comics",
-  "lastNote": "GCD series ingest (2202, 13714, 14126, 24870, 30150, 44165, 45285, 59651…; gcd-gated; floor 1938-01-01)",
+  "lastNote": "GCD series ingest (87240, 87241; gcd-gated; floor 1938-01-01)",
   "shardCount": 64,
   "shards": [
     {
@@ -17,7 +17,7 @@
       "id": "02"
     },
     {
-      "count": 7183,
+      "count": 7184,
       "id": "03"
     },
     {
@@ -153,7 +153,7 @@
       "id": "24"
     },
     {
-      "count": 7098,
+      "count": 7099,
       "id": "25"
     },
     {
@@ -261,5 +261,5 @@
       "id": "3f"
     }
   ],
-  "total": 456119
+  "total": 456121
 }
