@@ -1,0 +1,99 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-09-28",
+  "updatedAt": "2026-09-28T14:40:55Z",
+  "added": 36,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Page2 differed; merged unique products.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 588,
+    "ee_candidates": 131,
+    "bbts_candidates": 167,
+    "added": 36,
+    "skipped_dupes": 262,
+    "rejected_non_af": 244,
+    "unmapped_company": 46,
+    "postfilter_rejected": 0
+  },
+  "oneshotBefore": 29515,
+  "oneshotAfter": 29551,
+  "ee_added": 22,
+  "bbts_added": 14,
+  "samples": [
+    {
+      "sku": "SUP82845T",
+      "name": "Micronauts ReAction+ Time Traveler (Clear) 3 3/4-Inch ReAction+ Figure",
+      "id": "afmon-super7-micronauts-reaction-time-traveler-clear-3-3-4-inch-reaction-figure-sup82845t",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP82847T",
+      "name": "Micronauts Acroyear 3 3/4-Inch ReAction+ Figure",
+      "id": "afmon-super7-micronauts-acroyear-3-3-4-inch-reaction-figure-sup82847t",
+      "source": "ee"
+    },
+    {
+      "sku": "BFLL0017",
+      "name": "Legends of Lucha Libre Vampiro Coffin Box Resurrected Premium Action Figure",
+      "id": "afmon-bossfight-legends-of-lucha-libre-vampiro-coffin-box-resurrected-premium-action-figu-bfll0017",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2607",
+      "name": "Star Wars The Vintage Collection Plo Koon 3 3/4-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-plo-koon-3-3-4-inch-action-figure-hsg2607",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2423",
+      "name": "Marvel Legends Series Psylocke 6-Inch Action Figure",
+      "id": "afmon-hasbro-marvel-legends-series-psylocke-6-inch-action-figure-hsg2423",
+      "source": "ee"
+    },
+    {
+      "sku": "HSF9812",
+      "name": "Deadpool & Wolverine Marvel Legends Colossus Deluxe 6-Inch Scale Action Figure",
+      "id": "afmon-hasbro-deadpool-wolverine-marvel-legends-colossus-deluxe-6-inch-scale-action-figure-hsf9812",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2070",
+      "name": "G.I. Joe Classified Series Mad Marauders Footloose, Mutt, & Junkyard 6-Inch Action Figures",
+      "id": "afmon-hasbro-g-i-joe-classified-series-mad-marauders-footloose-mutt-junkyard-6-inch-action-hsg2070",
+      "source": "ee"
+    },
+    {
+      "sku": "MF17809",
+      "name": "DC Multiverse Darkseid vs. Orion 7-Inch Scale and Megafig Action Figure 2-Pack",
+      "id": "afmon-mcfarlane-dc-multiverse-darkseid-vs-orion-7-inch-scale-and-megafig-action-figure-2-p-mf17809",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84076",
+      "name": "Jujutsu Kaisen Mahito S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-jujutsu-kaisen-mahito-s-h-figuarts-action-figure-blfbas84076",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84077",
+      "name": "Jujutsu Kaisen Kento Nanami S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-jujutsu-kaisen-kento-nanami-s-h-figuarts-action-figure-blfbas84077",
+      "source": "ee"
+    },
+    {
+      "sku": "TH3Z0762",
+      "name": "Power Rangers Zeo Rangers FigZero 1:6 Scale Action Figure 5-Pack",
+      "id": "afmon-threezero-power-rangers-zeo-rangers-figzero-1-6-scale-action-figure-5-pack-th3z0762",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2081",
+      "name": "G.I. Joe Classified Series Deluxe Cobra Commander in Dress Uniform 6-Inch Action Figure",
+      "id": "afmon-hasbro-g-i-joe-classified-series-deluxe-cobra-commander-in-dress-uniform-6-inch-acti-hsg2081",
+      "source": "ee"
+    }
+  ]
+}
