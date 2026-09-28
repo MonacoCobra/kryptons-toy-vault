@@ -1208,6 +1208,28 @@ def manga_volume_format(fmt: str, publisher: str, issue: dict, parsed: dict) -> 
     return fmt if msrp is not None and 0 < msrp < 5 else "tpb"
 
 
+# US mass-market paperback lines (GCD publisher names, lower-cased): their comics
+# are strip-reprint / Mad / comic-book reprint paperbacks, so they land as "tpb"
+# (Collected Editions) rather than "single" or "annual". Book-only houses, so the
+# rule is safe for any year. Hallden; Fawcett (Dennis the Menace comic books) and
+# plain "Scholastic" (also prints floppies) are deliberately not listed.
+STRIP_PAPERBACK_PUBLISHERS = frozenset({
+    "new american library", "signet", "crest books", "gold medal books",
+    "warner books", "popular library", "tempo books", "ace books [1950s-1980s]",
+    "pocket books", "bantam books", "avon books", "berkley books",
+    "ballantine books", "pyramid books", "pyramid publications [1950s-1970s]",
+    "paperback library", "lancer books", "belmont books", "curtis books",
+    "macfadden books / macfadden-bartell corporation", "scholastic book services",
+})
+
+
+def strip_paperback_format(fmt: str, publisher: str) -> str:
+    """Mass-market strip-reprint paperback lines: "single"/"annual" → "tpb"."""
+    if fmt in ("single", "annual") and (publisher or "").strip().lower() in STRIP_PAPERBACK_PUBLISHERS:
+        return "tpb"
+    return fmt
+
+
 def publisher_from_series(series: dict, client: "GcdClient") -> str:
     pub = series.get("publisher")
     if isinstance(pub, dict):
@@ -1454,7 +1476,9 @@ def parse_issue(
         "variantOf": issue.get("variant_of"),
         "publishingFormat": issue.get("publishing_format") or series.get("publishing_format"),
     }
-    parsed["format"] = manga_volume_format(infer_format(series_name, parsed), publisher, issue, parsed)
+    parsed["format"] = strip_paperback_format(
+        manga_volume_format(infer_format(series_name, parsed), publisher, issue, parsed), publisher
+    )
     return parsed
 
 

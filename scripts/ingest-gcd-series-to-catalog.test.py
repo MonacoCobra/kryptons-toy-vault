@@ -1027,6 +1027,14 @@ class DumpIngestTest(unittest.TestCase):
         finally:
             gcd_dump.discover_dump_dir = real
 
+    def test_strip_paperback_publishers_default_to_tpb(self):
+        for pub in ("Gold Medal Books", "Crest Books", "Warner Books", "New American Library", "Tempo Books"):
+            self.assertEqual(ingest.strip_paperback_format("single", pub), "tpb", pub)
+            self.assertEqual(ingest.strip_paperback_format("annual", pub), "tpb", pub)
+        self.assertEqual(ingest.strip_paperback_format("hc", "Crest Books"), "hc")
+        for pub in ("Hallden; Fawcett", "Scholastic", "DC Comics", "Fawcett", ""):
+            self.assertEqual(ingest.strip_paperback_format("single", pub), "single", pub)
+
     def test_infer_format_maps_to_live_comic_format(self):
         cases = [
             ("Action Comics", {"title": "Action Comics #1"}, "single"),
