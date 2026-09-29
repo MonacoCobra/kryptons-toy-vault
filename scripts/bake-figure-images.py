@@ -25,13 +25,20 @@ from collections import Counter, defaultdict
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-ROOT = Path("/workspace/collection-app")
+ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import data_shards  # noqa: E402
 
 from figure_oneshot.shopify_dump import STOREFRONTS, fetch_all_products, is_figure_like, tag_list  # noqa: E402
+import audit_blocklist  # noqa: E402
+
+
+def _enforce_audit_blocks(rows: list[dict], urls: dict) -> None:
+    """Never re-attach audit-stripped photos/codes or recreate removed ids (figure-sku-aliases.json)."""
+    n = audit_blocklist.enforce(rows, image_urls=urls)
+    print(f"audit block list: reattached={audit_blocklist.total(n)} {n}")
 
 ARCHIVE_JSON = ROOT / "src/data/figure-archive/oneshot.json"
 URLS_JSON = ROOT / "src/data/figure-image-urls.json"
@@ -1711,6 +1718,7 @@ def main() -> None:
                     print(f"cleared shared imageUrl from {cleared} rows (sku-aware 1:1)")
                 urls = {r["id"]: r["imageUrl"] for r in rows if r.get("imageUrl")}
                 after_with = sum(1 for r in rows if r.get("imageUrl"))
+                _enforce_audit_blocks(rows, urls)
                 URLS_JSON.write_text(json.dumps(urls, indent=2, sort_keys=True) + "\n")
                 ARCHIVE_JSON.write_text(json.dumps(rows, indent=2) + "\n")
                 stats = {
@@ -1889,6 +1897,7 @@ def main() -> None:
     # Rebuild url map from oneshot (source of truth) + keep orphans only if still on a row
     urls = {r["id"]: r["imageUrl"] for r in rows if r.get("imageUrl")}
     # Merge any prior map entries that still match a row without imageUrl? No — oneshot wins.
+    _enforce_audit_blocks(rows, urls)
     URLS_JSON.write_text(json.dumps(urls, indent=2, sort_keys=True) + "\n")
     ARCHIVE_JSON.write_text(json.dumps(rows, indent=2) + "\n")
 

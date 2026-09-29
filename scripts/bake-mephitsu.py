@@ -39,6 +39,7 @@ assert _spec.loader
 _spec.loader.exec_module(bfi)
 
 from figure_identity import clean_code, is_gtin, is_listing_code, norm_text  # noqa: E402
+import audit_blocklist  # noqa: E402
 
 ONESHOT = ROOT / "src/data/figure-archive/oneshot.json"
 MEPH_DIR = ROOT / "src/data/figure-archive/mephitsu"
@@ -491,6 +492,7 @@ def apply_bake(
     }
 
     cleared_urls = load_cleared_image_urls()
+    blocks = audit_blocklist.load(doc=alias_doc or None)
 
     stats = {
         "matched": len(finals),
@@ -500,6 +502,8 @@ def apply_bake(
         "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 0,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
         "samples": [],
     }
 
@@ -509,6 +513,13 @@ def apply_bake(
         existing = clean_code(row.get("sku"))
         cand = clean_code(meph.get("sku"))
         listing = clean_code(meph.get("listingSku"))
+        # Audit block list: never re-attach stripped codes/photos to this figure.
+        if cand and blocks.code_blocked(row["id"], cand):
+            stats["blockedByAudit"] += 1
+            cand = None
+        if listing and blocks.code_blocked(row["id"], listing):
+            stats["blockedByAudit"] += 1
+            listing = None
 
         if cand and is_gtin(cand):
             if cand.upper() in used_gtins and (
@@ -558,6 +569,9 @@ def apply_bake(
                     stats["aliasesAttached"] += 1
 
         img = meph.get("imageUrl")
+        if img and not row.get("imageUrl") and blocks.image_blocked(row["id"], img):
+            stats["blockedByAudit"] += 1
+            img = None
         if img and not row.get("imageUrl"):
             block = image_fill_blocked(row, meph, img, cleared_urls)
             if block:
@@ -585,6 +599,9 @@ def apply_bake(
                 }
             )
 
+    # Final safety net: undo anything that still re-attached a stripped code/photo or a removed id.
+    enforced = audit_blocklist.enforce(rows, sku_map=sku_map, blocks=blocks)
+    stats["reattachedAfterEnforce"] = audit_blocklist.total(enforced)
     if not dry_run:
         ONESHOT.write_text(json.dumps(rows, indent=2, ensure_ascii=False) + "\n")
         SKU_MAP.write_text(json.dumps(sku_map, indent=2, ensure_ascii=False) + "\n")
@@ -608,6 +625,7 @@ def apply_bake(
                     bucket.append(c)
                 at[c] = fid
             ab[fid] = bucket
+        audit_blocklist.enforce([], alias_doc=alias_doc, blocks=blocks)
         ALIASES.write_text(json.dumps(alias_doc, indent=2, ensure_ascii=False) + "\n")
 
     return stats
@@ -728,6 +746,7 @@ def main() -> int:
             f"[{line}] matched={a['matched']} gtin+={a['gtinAssigned']} "
             f"upgrade={a['gtinUpgraded']} img+={a['imagesFilled']} "
             f"conflict={a['skippedGtinConflict']} "
+            f"auditBlocked={a['blockedByAudit']} reattached={a['reattachedAfterEnforce']} "
             f"gtin {report['before']['withGtin']}→{report['after']['withGtin']} "
             f"img {report['before']['withImage']}→{report['after']['withImage']}",
             flush=True,

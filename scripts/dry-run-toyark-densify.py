@@ -44,6 +44,10 @@ import urllib.request
 from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+if str(Path(__file__).resolve().parent) not in sys.path:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+import audit_blocklist  # noqa: E402
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -2139,6 +2143,11 @@ def main(argv: list[str] | None = None) -> int:
             index=index,
             cap=args.cap,
         )
+        # Audit block list: removed ids are never recreated, stripped codes/photos never re-attached.
+        _blocks = audit_blocklist.load(args.aliases) if Path(args.aliases).exists() else audit_blocklist.load()
+        _n = audit_blocklist.enforce(rows, alias_doc=aliases, image_urls=urls, sku_map=sku_map, blocks=_blocks)
+        apply_result["auditBlockReattached"] = audit_blocklist.total(_n)
+        print(f"audit block list: reattached={audit_blocklist.total(_n)} {_n}")
         if apply_result["applied"]:
             write_json(oneshot_path, rows)
             write_json(args.aliases, aliases)

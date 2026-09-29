@@ -35,9 +35,12 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
 
-ROOT = Path("/workspace/collection-app")
+ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS))
+import audit_blocklist  # noqa: E402
+
+AUDIT_COUNTS: dict[str, int] = {"blockedByAudit": 0, "reattachedAfterEnforce": 0}
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import data_shards  # noqa: E402
 
@@ -524,6 +527,8 @@ def apply_assignments(
 
     patched = 0
     upgraded = 0
+    blocks = audit_blocklist.load(ALIASES_JSON)
+    AUDIT_COUNTS["blockedByAudit"] = 0
     for sc, fig, p in finals:
         row = by_id.get(fig["id"])
         if not row:
@@ -531,6 +536,9 @@ def apply_assignments(
         existing = clean_sku(row.get("sku"))
         cand = clean_sku(p.get("sku"))
         if not cand or not is_gtin(cand):
+            continue
+        if blocks.code_blocked(row["id"], cand):
+            AUDIT_COUNTS["blockedByAudit"] += 1
             continue
         if existing and is_worse_sku(existing, cand, p):
             continue
@@ -553,7 +561,7 @@ def apply_assignments(
             row["tags"] = tags
             # Also alias listingSku from same product when present
             listing = clean_sku(p.get("listingSku"))
-            if listing and not is_gtin(listing):
+            if listing and not is_gtin(listing) and not blocks.code_blocked(row["id"], listing):
                 bucket = aliases_map.setdefault(row["id"], [])
                 if listing not in bucket and listing != cand:
                     bucket.append(listing)
@@ -567,6 +575,9 @@ def apply_assignments(
             continue
         listing = clean_sku(listing)
         if not listing or is_gtin(listing):
+            continue
+        if blocks.code_blocked(row["id"], listing):
+            AUDIT_COUNTS["blockedByAudit"] += 1
             continue
         # Never promote listing to primary here
         primary = clean_sku(row.get("sku"))
@@ -662,6 +673,14 @@ def main() -> int:
     patched, alias_attached, sku_map, aliases_map = apply_assignments(
         rows, finals, alias_hits, dry_run=dry_run
     )
+
+    # Audit block list safety net (stripped codes / removed ids never come back).
+    enforced = audit_blocklist.enforce(rows, sku_map=sku_map, blocks=audit_blocklist.load(ALIASES_JSON))
+    for fid in list(aliases_map):
+        if audit_blocklist.load(ALIASES_JSON).id_removed(fid):
+            aliases_map.pop(fid)
+    AUDIT_COUNTS["reattachedAfterEnforce"] = audit_blocklist.total(enforced)
+    print(f"audit block list: blocked={AUDIT_COUNTS['blockedByAudit']} reattached={AUDIT_COUNTS['reattachedAfterEnforce']}")
 
     after_with = sum(1 for r in rows if clean_sku(r.get("sku")))
     after_gtin = sum(1 for r in rows if clean_sku(r.get("sku")) and is_gtin(r.get("sku")))
@@ -788,6 +807,7 @@ def main() -> int:
                     rev[key] = fid
             if bucket:
                 by_fig[fid] = bucket
+        audit_blocklist.enforce([], alias_doc=alias_doc, blocks=audit_blocklist.load(doc=alias_doc))
         ALIASES_JSON.write_text(json.dumps(alias_doc, indent=2) + "\n")
         STATS_JSON.write_text(json.dumps(stats, indent=2) + "\n")
         # Refresh oneshot-stats sku coverage hint

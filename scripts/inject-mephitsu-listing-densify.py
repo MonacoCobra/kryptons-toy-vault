@@ -21,11 +21,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-ROOT = Path("/workspace/collection-app")
+ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 
 from figure_identity import clean_code, is_gtin  # noqa: E402
+import audit_blocklist  # noqa: E402
 
 ARCHIVE = ROOT / "src/data/figure-archive/oneshot.json"
 ALIASES = ROOT / "src/data/figure-sku-aliases.json"
@@ -641,6 +642,9 @@ def main() -> int:
             }
         )
 
+    # Audit block list: removed ids are never recreated, stripped codes/photos never re-attached.
+    _n = audit_blocklist.enforce(rows, alias_doc=aliases, image_urls=urls, sku_map=sku_map)
+    print(f"audit block list: reattached={audit_blocklist.total(_n)} {_n}")
     write_json(ARCHIVE, rows)
     write_json(ALIASES, aliases)
     write_json(SKU_MAP, sku_map)
