@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-09-29T05:28:21Z",
+  "finishedAt": "2026-09-29T18:03:20Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 2,
-  "applied": 0,
-  "skippedApply": 2,
-  "rejectedRows": 17,
-  "withImage": 0,
-  "aliasAdded": 0,
+  "acceptedCandidates": 1,
+  "applied": 1,
+  "skippedApply": 0,
+  "rejectedRows": 18,
+  "withImage": 1,
+  "aliasAdded": 5,
   "byCompany": {
     "hasbro": {
       "accepted": 0,
@@ -31,15 +31,15 @@
       "rejected": 1
     },
     "hottoys": {
-      "accepted": 0,
+      "accepted": 1,
       "rejected": 2
     },
     "mondo": {
-      "accepted": 1,
+      "accepted": 0,
       "rejected": 0
     },
     "threezero": {
-      "accepted": 1,
+      "accepted": 0,
       "rejected": 0
     },
     "enterbay": {
@@ -60,36 +60,37 @@
     }
   },
   "byRejectReason": {
-    "company-not-allowlisted": 8,
-    "sponsor-newsletter": 3,
+    "company-not-allowlisted": 9,
+    "company-unknown": 3,
+    "sponsor-newsletter": 2,
     "no-new-product-identity": 1,
-    "already-in-oneshot": 3,
-    "company-unknown": 2
+    "already-in-oneshot": 3
   },
-  "appliedIds": [],
-  "appliedSample": [],
-  "skippedSample": [
+  "appliedIds": [
+    "ta-0645a4b365de"
+  ],
+  "appliedSample": [
     {
-      "name": "Jean Grey",
-      "company": "mondo",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-1e6b92b47edb"
+      "id": "ta-0645a4b365de",
+      "name": "Riddler",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": 2027,
+      "variant": "Batman Forever – The",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Batman-Forever-Riddler-001.jpg",
+      "aliases": [
+        "MMS926",
+        "MMS926B"
       ],
-      "toyarkPostId": 599219
-    },
-    {
-      "name": "Bass",
-      "company": "threezero",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-e8f34a26add3"
-      ],
-      "toyarkPostId": 599200
+      "sourceUrl": "https://www.toyark.com/2026/09/29/batman-forever-hot-toys-the-riddler-figure-599502",
+      "toyarkPostId": 599502
     }
   ],
-  "archiveSize": 29334,
+  "skippedSample": [],
+  "archiveSize": 29351,
   "fetchBlocker": null,
-  "wroteOneshot": false,
+  "wroteOneshot": true,
   "comics": "untouched"
 }

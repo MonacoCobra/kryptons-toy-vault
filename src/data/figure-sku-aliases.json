@@ -43772,6 +43772,13 @@
     "sf-neca-store-teenage-mutant-ninja-turtles-mirage-comics-baxter-stockman-7-inch-": [
       "54349",
       "NE54349-01"
+    ],
+    "ta-0645a4b365de": [
+      "id:ta-0645a4b365de",
+      "toyark:599502",
+      "MMS926",
+      "MMS926B",
+      "https://www.toyark.com/2026/09/29/batman-forever-hot-toys-the-riddler-figure-599502"
     ]
   },
   "aliasToFigureId": {
@@ -67534,7 +67541,12 @@
     "id:lc5-lc-zordon": "pr2-mmpr-zordon",
     "id:lc5-lc-alpha5": "pr2-mmpr-alpha",
     "HAS290731": "cls5-cls-break",
-    "NE54349-01": "sf-neca-store-teenage-mutant-ninja-turtles-mirage-comics-baxter-stockman-7-inch-"
+    "NE54349-01": "sf-neca-store-teenage-mutant-ninja-turtles-mirage-comics-baxter-stockman-7-inch-",
+    "id:ta-0645a4b365de": "ta-0645a4b365de",
+    "toyark:599502": "ta-0645a4b365de",
+    "MMS926": "ta-0645a4b365de",
+    "MMS926B": "ta-0645a4b365de",
+    "https://www.toyark.com/2026/09/29/batman-forever-hot-toys-the-riddler-figure-599502": "ta-0645a4b365de"
   },
   "collapsed": [
     {
@@ -68568,7 +68580,7 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-09-29T05:28:15.847361+00:00",
+  "updatedAt": "2026-09-29T18:03:03.106958+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,

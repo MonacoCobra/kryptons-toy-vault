@@ -1,6 +1,6 @@
 {
   "source": "mephitsu-listing",
-  "finishedAt": "2026-09-29T05:26:08.709847+00:00",
+  "finishedAt": "2026-09-29T18:00:55.200902+00:00",
   "cap": 90,
   "added": 0,
   "withImage": 0,
@@ -66,8 +66,8 @@
     },
     {
       "id": "mph-05450976a0c6",
-      "reason": "name-line-exists",
-      "nl": "hasbro|gi joe classified|deep six"
+      "reason": "fingerprint-exists",
+      "fp": "hasbro|gi joe classified|deep six|2026"
     },
     {
       "id": "mph-1cd40eaffe03",
@@ -168,8 +168,8 @@
     },
     {
       "id": "mph-9d239ab2a54d",
-      "reason": "name-line-exists",
-      "nl": "hasbro|gi joe classified|breaker"
+      "reason": "fingerprint-exists",
+      "fp": "hasbro|gi joe classified|breaker|2025"
     },
     {
       "id": "mph-19fe57e1c3e6",
@@ -180,7 +180,7 @@
       "reason": "id-exists"
     }
   ],
-  "archiveSize": 29334,
+  "archiveSize": 29350,
   "caches": {
     "hasbro": 961,
     "jazwares": 313
