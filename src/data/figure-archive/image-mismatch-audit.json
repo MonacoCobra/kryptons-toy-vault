@@ -1,66 +1,149 @@
 {
-  "auditedAt": "2026-09-28T21:47:45.274880+00:00",
+  "auditedAt": "2026-09-29T15:58:16.345351+00:00",
   "mode": "apply",
   "refill": false,
   "counts": {
-    "oneshotRows": 29599,
-    "auditedWithImage": 17639,
-    "highMismatches": 1,
-    "softMismatches": 1113,
-    "cleared": 1,
+    "oneshotRows": 29350,
+    "auditedWithImage": 17613,
+    "highMismatches": 2,
+    "softMismatches": 1117,
+    "cleared": 2,
     "refilled": 0,
     "overlayDropped": 0,
-    "overlayRemaining": 14568
+    "overlayRemaining": 14524
   },
   "reasonCounts": {
-    "prior_sku_audit_cleared_url": 1
+    "product_multipack_vs_single": 1,
+    "score_pair_reject": 1,
+    "char_missing:alpha": 1
   },
   "cleared": [
     {
-      "figureId": "d14ml-cosmo",
+      "figureId": "mcf5-mcf-collector-batman-who",
       "clearedOneshot": true,
       "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_ceb9275dde65448f8c2efa34eedcdb10~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ceb9275dde65448f8c2efa34eedcdb10~mv2.png",
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg",
       "reasons": [
-        "prior_sku_audit_cleared_url"
+        "gtin:product_multipack_vs_single"
       ],
-      "name": "Cosmo (2023)",
-      "subtitle": "Guardians Vol. 3",
+      "name": "Batman Who Laughs",
+      "subtitle": "Collector Wave 5",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_ceb9275dde65448f8c2efa34eedcdb10~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ceb9275dde65448f8c2efa34eedcdb10~mv2.png",
-        "urlBestScore": 17.5,
-        "urlBestTitle": "Cosmo — GOTG Vol. 3 Cosmo BAF Wave · 2023 · Marvel Movies & TV",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg",
+        "gtin": "787926175684",
+        "gtinScore": 29.5,
+        "gtinTitle": "DC Multiverse 7 Inch Action Figure 2-Pack - Batman Who Laughs Knight Armor & The Merciless",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 47.0,
+        "urlBestTitle": "The Batman Who Laughs, — DC Collector Edition · 2025 · DC Multiverse",
         "urlBestShop": "mephitsu",
-        "urlProductCount": 94
+        "urlProductCount": 2
+      }
+    },
+    {
+      "figureId": "pr2-mmpr-alpha",
+      "clearedOneshot": true,
+      "clearedOverlay": false,
+      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg",
+      "reasons": [
+        "url:score_pair_reject",
+        "url:char_missing:alpha"
+      ],
+      "name": "Alpha 5",
+      "subtitle": "Mighty Morphin",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Zordon — Walmart · 2020 · Power Rangers",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
       }
     }
   ],
   "refilled": [],
   "highFlags": [
     {
-      "figureId": "d14ml-cosmo",
-      "name": "Cosmo (2023)",
-      "subtitle": "Guardians Vol. 3",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": null,
+      "figureId": "mcf5-mcf-collector-batman-who",
+      "name": "Batman Who Laughs",
+      "subtitle": "Collector Wave 5",
+      "line": "DC Multiverse Collector",
+      "company": "mcfarlane",
+      "sku": "787926175684",
       "reasons": [
-        "prior_sku_audit_cleared_url"
+        "gtin:product_multipack_vs_single"
       ],
       "level": "high",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_ceb9275dde65448f8c2efa34eedcdb10~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ceb9275dde65448f8c2efa34eedcdb10~mv2.png",
-        "urlBestScore": 17.5,
-        "urlBestTitle": "Cosmo — GOTG Vol. 3 Cosmo BAF Wave · 2023 · Marvel Movies & TV",
+        "imageUrl": "https://static.wixstatic.com/media/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg",
+        "gtin": "787926175684",
+        "gtinScore": 29.5,
+        "gtinTitle": "DC Multiverse 7 Inch Action Figure 2-Pack - Batman Who Laughs Knight Armor & The Merciless",
+        "gtinShop": "cmdstore",
+        "urlBestScore": 47.0,
+        "urlBestTitle": "The Batman Who Laughs, — DC Collector Edition · 2025 · DC Multiverse",
         "urlBestShop": "mephitsu",
-        "urlProductCount": 94
+        "urlProductCount": 2
       },
       "tags": [
+        "image-bake",
+        "img:mephitsu"
+      ]
+    },
+    {
+      "figureId": "pr2-mmpr-alpha",
+      "name": "Alpha 5",
+      "subtitle": "Mighty Morphin",
+      "line": "Lightning Collection",
+      "company": "hasbro",
+      "sku": null,
+      "reasons": [
+        "url:score_pair_reject",
+        "url:char_missing:alpha"
+      ],
+      "level": "high",
+      "evidence": {
+        "imageUrl": "https://static.wixstatic.com/media/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Zordon — Walmart · 2020 · Power Rangers",
+        "urlBestShop": "mephitsu",
+        "urlProductCount": 2
+      },
+      "tags": [
+        "image-bake",
         "img:mephitsu"
       ]
     }
   ],
   "softFlags": [
+    {
+      "figureId": "ml5-ml-wolverine-movie-dpw",
+      "name": "Wolverine (2024)",
+      "subtitle": "Deadpool & Wolverine Legends",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996283764",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-deadpool-wolverine-wave-2-wolverine-5010996283764.jpg?v=1723852865",
+        "gtin": "5010996283764",
+        "gtinScore": -1.0,
+        "gtinTitle": "Marvel Legends Deadpool & Wolverine 6 Inch Action Figure Wave 2 - Wolverine",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Marvel Legends Deadpool & Wolverine 6 Inch Action Figure Wave 2 - Wolverine",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-bake",
+        "image-sku",
+        "imgsku:cmdstore"
+      ]
+    },
     {
       "figureId": "ml5-ml-x97-magneto",
       "name": "Magneto (2024)",
@@ -91,28 +174,197 @@
       ]
     },
     {
-      "figureId": "lc5-lc-zordon",
-      "name": "Zordon",
-      "subtitle": "MMPR Lightning",
-      "line": "Lightning Collection",
+      "figureId": "ml5-ml-x97-morph",
+      "name": "Morph (2025)",
+      "subtitle": "X-Men '97 Legends",
+      "line": "Marvel Legends",
       "company": "hasbro",
-      "sku": "MMPR-ZORDAN-ALPHA5",
+      "sku": "5010996328175",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-x-men-97-wave-3-morph-5010996328175.jpg?v=1757032409",
+        "gtin": "5010996328175",
+        "gtinScore": -1.0,
+        "gtinTitle": "Marvel Legends X-Men '97 6 Inch Action Figure Wave 3 - Morph",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Marvel Legends X-Men '97 6 Inch Action Figure Wave 3 - Morph",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-bake",
+        "image-sku",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "ml5-ml-x97-rogue",
+      "name": "Rogue (2023)",
+      "subtitle": "X-Men '97 Legends",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "HAS143754",
       "reasons": [
         "url:score_pair_reject"
       ],
       "level": "soft",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg",
+        "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996143754a.jpg?v=1696533239",
         "urlBestScore": -1.0,
-        "urlBestTitle": "Zordon — Walmart · 2020 · Power Rangers",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 2
+        "urlBestTitle": "Marvel Legends Vintage Retro Series '97 X-Men Rogue Action Figure",
+        "urlBestShop": "toyarena",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:toyarena"
+      ]
+    },
+    {
+      "figureId": "ml5-ml-x97-storm",
+      "name": "Storm (2023)",
+      "subtitle": "X-Men '97 Legends",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996143778",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-retro-xmen-1997-wave-1-storm-5010996143778.jpg?v=1695177840",
+        "gtin": "5010996143778",
+        "gtinScore": -1.0,
+        "gtinTitle": "Marvel Legends Retro 6 Inch Action Figure X-Men '97 Wave 1 - Storm (Sub-Standard Packaging)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Marvel Legends Retro 6 Inch Action Figure X-Men '97 Wave 1 - Storm (Sub-Standard Packaging)",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
       },
       "tags": [
         "image-bake",
-        "img:mephitsu",
         "image-sku",
-        "imgsku:collecticon"
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "ml5-ml-x97-wolverine",
+      "name": "Wolverine (2023)",
+      "subtitle": "X-Men '97 Legends",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010996143785",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-retro-xmen-1997-wave-1-wolverine-5010996143785.jpg?v=1738266489",
+        "gtin": "5010996143785",
+        "gtinScore": -1.0,
+        "gtinTitle": "Marvel Legends Retro 6 Inch Action Figure X-Men '97 Wave 1 - Wolverine Reissue",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Marvel Legends Retro 6 Inch Action Figure X-Men '97 Wave 1 - Wolverine Reissue",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-bake",
+        "image-sku",
+        "imgsku:toyarena",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "ml5-ml-okoye",
+      "name": "Okoye (2022)",
+      "subtitle": "Black Panther",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "F3677",
+      "reasons": [
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/f3677-prod-blp-2-legends-desmoines5-0010-online-2000sq.jpg?v=1781087096",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Marvel Legends Black Panther 6-Inch Figures Wave 3 - Okoye",
+        "urlBestShop": "staractionfigures",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-bake",
+        "image-sku",
+        "imgsku:staractionfigures"
+      ]
+    },
+    {
+      "figureId": "ml5-ml-wasp-quantum",
+      "name": "Wasp (2023)",
+      "subtitle": "Quantumania",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "630509319831",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-ant-man-series-6-inch-wasp_image.gif?v=1723120842",
+        "gtin": "630509319831",
+        "gtinScore": -1.0,
+        "gtinTitle": "Marvel Legends Ant-Man 6 Inch Action Figure Ultron Series - Wasp (Shelf Wear Packaging)",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Marvel Legends Ant-Man 6 Inch Action Figure Ultron Series - Wasp (Shelf Wear Packaging)",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
+      ]
+    },
+    {
+      "figureId": "ml5-ml-loki-president",
+      "name": "Loki (2021)",
+      "subtitle": "Retro Kenner 3.75",
+      "line": "Marvel Legends",
+      "company": "hasbro",
+      "sku": "5010993849017",
+      "reasons": [
+        "gtin:score_pair_reject",
+        "url:score_pair_reject"
+      ],
+      "level": "soft",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-retro-wave-4-loki-5010993849017.jpg?v=1631746383",
+        "gtin": "5010993849017",
+        "gtinScore": -1.0,
+        "gtinTitle": "Marvel Legends Retro 3.75 Inch Action Figure Wave 4 - Loki",
+        "gtinShop": "cmdstore",
+        "urlBestScore": -1.0,
+        "urlBestTitle": "Marvel Legends Retro 3.75 Inch Action Figure Wave 4 - Loki",
+        "urlBestShop": "cmdstore",
+        "urlProductCount": 1
+      },
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:cmdstore"
       ]
     },
     {
@@ -2992,30 +3244,6 @@
         "image-sku",
         "image-bake",
         "imgsku:bossfight"
-      ]
-    },
-    {
-      "figureId": "mlc-morph-aoa",
-      "name": "Morph (2025)",
-      "subtitle": "Age of Apocalypse",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": "HAS328175",
-      "reasons": [
-        "url:score_pair_reject"
-      ],
-      "level": "soft",
-      "evidence": {
-        "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996328175b.webp?v=1758914899",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Marvel Legends Vintage Retro Series '97 X-Men Morph Action Figure",
-        "urlBestShop": "toyarena",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-bake",
-        "image-sku",
-        "imgsku:toyarena"
       ]
     },
     {
@@ -10657,30 +10885,6 @@
       ]
     },
     {
-      "figureId": "hs8-hs-34",
-      "name": "Morph (2022)",
-      "subtitle": "Marvel Legends X-Men 97",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": "G0806",
-      "reasons": [
-        "url:score_pair_reject"
-      ],
-      "level": "soft",
-      "evidence": {
-        "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/g0806-prod-xmn-legends-ent-1-011-2000px-300dpi.jpg?v=1781092803",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Marvel Legends 6 Inch X-Men '97 Retro Action Figure Wave 3 - Morph",
-        "urlBestShop": "staractionfigures",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-sku",
-        "image-bake",
-        "imgsku:staractionfigures"
-      ]
-    },
-    {
       "figureId": "mlc-druig",
       "name": "Druig (2021)",
       "subtitle": "Eternals",
@@ -12715,134 +12919,9 @@
       "tags": [
         "image-bake"
       ]
-    },
-    {
-      "figureId": "ml3-ml-lizard-baf",
-      "name": "Lizard (2022)",
-      "subtitle": "BAF",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": "5010994158514",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "url:score_pair_reject"
-      ],
-      "level": "soft",
-      "evidence": {
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-retro-spider-man-lizard-reissue-5010994158514.jpg?v=1788473726",
-        "gtin": "5010994158514",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends Retro 6 Inch Action Figure Spider-Man - Lizard Reissue (Pre-Order Ships Oct. 2026)",
-        "gtinShop": "cmdstore",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Marvel Legends Retro 6 Inch Action Figure Spider-Man - Lizard Reissue (Pre-Order Ships Oct. 2026)",
-        "urlBestShop": "cmdstore",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-bake",
-        "image-sku",
-        "imgsku:cmdstore"
-      ]
-    },
-    {
-      "figureId": "ml2-iceman-aes",
-      "name": "Iceman Astonishing (2021)",
-      "subtitle": "Astonishing",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": "G0592",
-      "reasons": [
-        "url:score_pair_reject"
-      ],
-      "level": "soft",
-      "evidence": {
-        "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/g05925l00-pkg-25-tif-2000px-300dpi.jpg?v=1781093167",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Marvel Legends Comic Secret Wars 6 Inch Action Figure - Iceman",
-        "urlBestShop": "staractionfigures",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-sku",
-        "image-bake",
-        "imgsku:staractionfigures"
-      ]
-    },
-    {
-      "figureId": "d14ml-abomination-baf",
-      "name": "Abomination (2021)",
-      "subtitle": "Build-A-Figure",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": "HAS401840",
-      "reasons": [
-        "url:score_pair_reject"
-      ],
-      "level": "soft",
-      "evidence": {
-        "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/apiuoibm6__81923.1465625745.jpg?v=1571609221",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Marvel Legends Abomination Series Iron Skull Action Figure",
-        "urlBestShop": "toyarena",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-bake",
-        "image-sku",
-        "imgsku:toyarena"
-      ]
-    },
-    {
-      "figureId": "sf-bossfight-vitruvian-h-a-c-k-s-series-z-hannah-alice-private-school-athletes",
-      "name": "Vitruvian H.A.C.K.S. Action Figure: Series Z",
-      "subtitle": "HANNAH & ALICE PRIVATE SCHOOL ATHLETES",
-      "line": "Blister Carded Action Figure",
-      "company": "bossfight",
-      "sku": "Z30201",
-      "reasons": [
-        "url:score_pair_reject"
-      ],
-      "level": "soft",
-      "evidence": {
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0862/6034/products/HannahAlice_b83842dd-aeaa-4a2f-8ff3-f70da8749377.png?v=1629997844",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Vitruvian H.A.C.K.S. Action Figure: Series Z - HANNAH & ALICE PRIVATE SCHOOL ATHLETES",
-        "urlBestShop": "bossfight",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-sku",
-        "image-bake",
-        "imgsku:bossfight"
-      ]
-    },
-    {
-      "figureId": "sf-bossfight-vitruvian-h-a-c-k-s-series-z-magenta-ladies",
-      "name": "Vitruvian H.A.C.K.S. Action Figure: Series Z",
-      "subtitle": "MAGENTA LADIES",
-      "line": "Blister Carded Action Figure",
-      "company": "bossfight",
-      "sku": "Z30203",
-      "reasons": [
-        "url:score_pair_reject"
-      ],
-      "level": "soft",
-      "evidence": {
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0862/6034/products/MagentaLadies_37018669-36cd-41a8-85b0-bdc8be61360b.jpg?v=1629999030",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Vitruvian H.A.C.K.S. Action Figure: Series Z - MAGENTA LADIES",
-        "urlBestShop": "bossfight",
-        "urlProductCount": 1
-      },
-      "tags": [
-        "image-sku",
-        "image-bake",
-        "imgsku:bossfight"
-      ]
     }
   ],
-  "softFlagsTruncated": 613,
+  "softFlagsTruncated": 617,
   "notes": [
     "High = auto-cleared on --apply (multipack-vs-single, hard theme, score_reject+char_missing, URL path cues, prior SKU-audit cleared URL).",
     "Soft = reported only; not cleared.",
@@ -12863,6 +12942,7 @@
     "https://static.wixstatic.com/media/adc447_0d71995110ad48f8ad15fceb52b52a6a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0d71995110ad48f8ad15fceb52b52a6a~mv2.jpg",
     "https://static.wixstatic.com/media/adc447_19da55c7d25948e783c743e272aea589~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_19da55c7d25948e783c743e272aea589~mv2.jpg",
     "https://static.wixstatic.com/media/adc447_2b7b5ecfe8d64d99a7f8012ce822cd2a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2b7b5ecfe8d64d99a7f8012ce822cd2a~mv2.jpg",
+    "https://static.wixstatic.com/media/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg",
     "https://static.wixstatic.com/media/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_30f3894502224d2b92b7b54551a4eaec~mv2.jpg",
     "https://static.wixstatic.com/media/adc447_35ba4b9ee17645ffb653b3e9f74600d0~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_35ba4b9ee17645ffb653b3e9f74600d0~mv2.jpg",
     "https://static.wixstatic.com/media/adc447_417ec9e51aa7413fafb24752ee36cb4e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_417ec9e51aa7413fafb24752ee36cb4e~mv2.jpg",
@@ -12896,6 +12976,7 @@
     "https://static.wixstatic.com/media/adc447_ebe10c6b96a34ba3829abc0a6ebb07d3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ebe10c6b96a34ba3829abc0a6ebb07d3~mv2.jpg",
     "https://static.wixstatic.com/media/adc447_ee66c9fd89ca42e7b8e565a5c9aecedf~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ee66c9fd89ca42e7b8e565a5c9aecedf~mv2.jpg",
     "https://static.wixstatic.com/media/adc447_f0e2a76250bc40d59a9cabc305a6d8b2~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f0e2a76250bc40d59a9cabc305a6d8b2~mv2.jpg",
+    "https://static.wixstatic.com/media/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg",
     "https://static.wixstatic.com/media/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f70ef300b6eb48a9a71d7b46d7473f9d~mv2.webp",
     "https://static.wixstatic.com/media/adc447_fccc913850dd4bc08dc26403494d6ed7~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_fccc913850dd4bc08dc26403494d6ed7~mv2.webp"
   ]
