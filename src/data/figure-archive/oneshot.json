@@ -1,35 +1,13 @@
 [
   {
-    "id": "ml5-ml-sabretooth-movie-dpw",
-    "name": "Sabretooth",
-    "subtitle": "Deadpool & Wolverine Legends",
-    "line": "Marvel Legends",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2032-06-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "marvel",
-      "legends",
-      "curated",
-      "image-bake",
-      "img:mephitsu"
-    ],
-    "source": "curated-bbts-wave5",
-    "imageUrl": "https://static.wixstatic.com/media/adc447_5471acfbe1ee4feaa662f058c2dacf6f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_5471acfbe1ee4feaa662f058c2dacf6f~mv2.jpg"
-  },
-  {
     "id": "ml5-ml-elektra-movie-dpw",
-    "name": "Elektra",
-    "subtitle": "Deadpool & Wolverine Legends",
+    "name": "Elektra (2017)",
+    "subtitle": "Man-Thing BAF Wave",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2032-03-01",
-    "msrp": 24.99,
+    "releaseDate": "2017-01-01",
+    "msrp": 19.99,
     "scale": "6\"",
     "demand": 1.3,
     "tags": [
@@ -38,7 +16,8 @@
       "legends",
       "curated",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave5",
     "imageUrl": "https://static.wixstatic.com/media/adc447_32feee2ebd3f47798631e8b3f376afbf~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_32feee2ebd3f47798631e8b3f376afbf~mv2.jpg"
@@ -107,37 +86,14 @@
     "sku": "5010996283764"
   },
   {
-    "id": "ml5-ml-x97-bastion",
-    "name": "Bastion",
-    "subtitle": "X-Men '97 Legends",
-    "line": "Marvel Legends",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2031-10-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "marvel",
-      "legends",
-      "curated",
-      "image-bake",
-      "img:mephitsu"
-    ],
-    "source": "curated-bbts-wave5",
-    "imageUrl": "https://static.wixstatic.com/media/adc447_81656dc2a8524455b331cb3e96f8783f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_81656dc2a8524455b331cb3e96f8783f~mv2.jpg",
-    "sku": null
-  },
-  {
     "id": "ml5-ml-x97-mister-sinister",
-    "name": "Mister Sinister",
-    "subtitle": "X-Men '97 Legends",
+    "name": "Mister Sinister (2019)",
+    "subtitle": "Wendigo BAF Wave",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2031-09-01",
-    "msrp": 24.99,
+    "releaseDate": "2019-01-01",
+    "msrp": 19.99,
     "scale": "6\"",
     "demand": 1.4,
     "tags": [
@@ -148,7 +104,8 @@
       "sku-alias",
       "alias:hasbro-pulse",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave5",
     "imageUrl": "https://static.wixstatic.com/media/adc447_889fe8a595954632a9a0787382498700~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_889fe8a595954632a9a0787382498700~mv2.jpg",
@@ -871,32 +828,6 @@
     "sku": null
   },
   {
-    "id": "cls5-cls-nightforce-flint",
-    "name": "Flint",
-    "subtitle": "Night Force Classified",
-    "line": "GI Joe Classified",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2030-03-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "gi-joe",
-      "classified",
-      "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "sku-alias",
-      "alias:toydojo",
-      "alias:hobbyfigures"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "5010993790395dmg",
-    "imageUrl": null
-  },
-  {
     "id": "shf5-goku-daima",
     "name": "Son Goku",
     "subtitle": "DAIMA Mini",
@@ -1147,27 +1078,6 @@
     "sku": "HAS146854"
   },
   {
-    "id": "lc5-lc-baboo",
-    "name": "Baboo",
-    "subtitle": "MMPR Lightning",
-    "line": "Lightning Collection",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-11-01",
-    "msrp": 22.99,
-    "scale": "6\"",
-    "demand": 1.2,
-    "tags": [
-      "hasbro",
-      "power-rangers",
-      "lightning",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "neca5-neca-chucky-tv",
     "name": "Chucky",
     "subtitle": "TV Series Ultimate",
@@ -1227,27 +1137,6 @@
       "kaiyodo",
       "revoltech",
       "amazing-yamaguchi",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "lc5-lc-squatt",
-    "name": "Squatt",
-    "subtitle": "MMPR Lightning",
-    "line": "Lightning Collection",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-10-01",
-    "msrp": 22.99,
-    "scale": "6\"",
-    "demand": 1.2,
-    "tags": [
-      "hasbro",
-      "power-rangers",
-      "lightning",
       "curated"
     ],
     "source": "curated-bbts-wave5",
@@ -1345,27 +1234,6 @@
       "kaiyodo",
       "revoltech",
       "amazing-yamaguchi",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "lc5-lc-skull",
-    "name": "Skull",
-    "subtitle": "MMPR Lightning",
-    "line": "Lightning Collection",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-09-01",
-    "msrp": 22.99,
-    "scale": "6\"",
-    "demand": 1.15,
-    "tags": [
-      "hasbro",
-      "power-rangers",
-      "lightning",
       "curated"
     ],
     "source": "curated-bbts-wave5",
@@ -1502,27 +1370,6 @@
     "source": "curated-bbts-wave5",
     "sku": "HAS210517",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996210517c.webp?v=1713473127"
-  },
-  {
-    "id": "lc5-lc-bulk",
-    "name": "Bulk",
-    "subtitle": "MMPR Lightning",
-    "line": "Lightning Collection",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-08-01",
-    "msrp": 22.99,
-    "scale": "6\"",
-    "demand": 1.15,
-    "tags": [
-      "hasbro",
-      "power-rangers",
-      "lightning",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "neca5-neca-freddy-ultimate2",
@@ -1919,25 +1766,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/4537807013262c.jpg?v=1617735194"
   },
   {
-    "id": "jak5-jak-wwe-gunther",
-    "name": "Gunther",
-    "subtitle": "JAKKS Elite Wave 5",
-    "line": "JAKKS Pacific",
-    "company": "jakks",
-    "kind": "figure",
-    "releaseDate": "2029-05-01",
-    "msrp": 14.99,
-    "scale": "4\"",
-    "demand": 1.3,
-    "tags": [
-      "jakks",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "lc5-lc-kimberly-mmpr-remaster",
     "name": "Kimberly Hart",
     "subtitle": "MMPR Remastered Lightning",
@@ -2091,25 +1919,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4537807220226a.webp?v=1711756094"
   },
   {
-    "id": "jak5-jak-wwe-punk",
-    "name": "CM Punk",
-    "subtitle": "JAKKS Elite Wave 5",
-    "line": "JAKKS Pacific",
-    "company": "jakks",
-    "kind": "figure",
-    "releaseDate": "2029-04-01",
-    "msrp": 14.99,
-    "scale": "4\"",
-    "demand": 1.35,
-    "tags": [
-      "jakks",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "lc5-lc-trini-mmpr-remaster",
     "name": "Trini Kwan",
     "subtitle": "MMPR Remastered Lightning",
@@ -2129,28 +1938,6 @@
     "source": "curated-bbts-wave5",
     "sku": null,
     "imageUrl": null
-  },
-  {
-    "id": "cls5-cls-hard-master",
-    "name": "Hard Master",
-    "subtitle": "Snake Eyes Movie Classified",
-    "line": "GI Joe Classified",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-04-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "hasbro",
-      "gi-joe",
-      "classified",
-      "curated",
-      "image-bake"
-    ],
-    "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN50916.jpg?v=1611455186",
-    "sku": null
   },
   {
     "id": "s75-s7-reaction-predator2",
@@ -2245,25 +2032,6 @@
     "imageUrl": null
   },
   {
-    "id": "jak5-jak-wwe-cody-elite",
-    "name": "Cody Rhodes",
-    "subtitle": "JAKKS Elite Wave 5",
-    "line": "JAKKS Pacific",
-    "company": "jakks",
-    "kind": "figure",
-    "releaseDate": "2029-03-01",
-    "msrp": 14.99,
-    "scale": "4\"",
-    "demand": 1.35,
-    "tags": [
-      "jakks",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "cls5-cls-scarlett-movie",
     "name": "Scarlett",
     "subtitle": "Snake Eyes Movie Classified",
@@ -2327,26 +2095,6 @@
     "imageUrl": null
   },
   {
-    "id": "neca5-neca-alien-romulus-andy",
-    "name": "Andy",
-    "subtitle": "Alien Romulus Ultimate",
-    "line": "Aliens Ultimate",
-    "company": "neca",
-    "kind": "figure",
-    "releaseDate": "2029-02-01",
-    "msrp": 34.99,
-    "scale": "7\"",
-    "demand": 1.35,
-    "tags": [
-      "neca",
-      "ultimate",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "mcf5-mcf-batman-longhalloween",
     "name": "Batman",
     "subtitle": "Long Halloween Multiverse",
@@ -2396,25 +2144,6 @@
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4537807220516a.jpg?v=1745527626",
     "sku": "KAI220516"
-  },
-  {
-    "id": "jak5-jak-sage",
-    "name": "Sage",
-    "subtitle": "Sonic the Hedgehog Wave 5",
-    "line": "Sonic the Hedgehog",
-    "company": "jakks",
-    "kind": "figure",
-    "releaseDate": "2029-02-01",
-    "msrp": 14.99,
-    "scale": "4\"",
-    "demand": 1.25,
-    "tags": [
-      "jakks",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "lc5-lc-zack-mmpr-remaster",
@@ -2480,26 +2209,6 @@
     "demand": 1.25,
     "tags": [
       "super7",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "neca5-neca-alien-romulus-rain",
-    "name": "Rain Carradine",
-    "subtitle": "Alien Romulus Ultimate",
-    "line": "Aliens Ultimate",
-    "company": "neca",
-    "kind": "figure",
-    "releaseDate": "2029-01-01",
-    "msrp": 34.99,
-    "scale": "7\"",
-    "demand": 1.35,
-    "tags": [
-      "neca",
-      "ultimate",
       "curated"
     ],
     "source": "curated-bbts-wave5",
@@ -2677,47 +2386,6 @@
     "imageUrl": null
   },
   {
-    "id": "neca5-neca-alien-romulus",
-    "name": "Offspring",
-    "subtitle": "Alien Romulus Ultimate",
-    "line": "Aliens Ultimate",
-    "company": "neca",
-    "kind": "figure",
-    "releaseDate": "2028-12-01",
-    "msrp": 34.99,
-    "scale": "7\"",
-    "demand": 1.45,
-    "tags": [
-      "neca",
-      "ultimate",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "ms5-ms-b60",
-    "name": "MS-B60 Hardhead",
-    "subtitle": "B Series Wave 5",
-    "line": "Magic Square",
-    "company": "magicsquare",
-    "kind": "figure",
-    "releaseDate": "2028-12-01",
-    "msrp": 65.0,
-    "scale": "1:24",
-    "demand": 1.25,
-    "tags": [
-      "magic-square",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "jak5-jak-shadow-super",
     "name": "Super Shadow",
     "subtitle": "Sonic the Hedgehog Wave 5",
@@ -2751,27 +2419,6 @@
       "hasbro",
       "power-rangers",
       "lightning",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "ct5-ct-55",
-    "name": "CT-55 Transmetal Megatron",
-    "subtitle": "Beast Wars LE",
-    "line": "Cang Toys Beast Wars",
-    "company": "cangtoys",
-    "kind": "figure",
-    "releaseDate": "2028-12-01",
-    "msrp": 110.0,
-    "scale": "1:24",
-    "demand": 1.4,
-    "tags": [
-      "cang-toys",
-      "transformers",
-      "3p",
       "curated"
     ],
     "source": "curated-bbts-wave5",
@@ -2830,27 +2477,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/teenage-mutant-ninja-turtles-original-sketch-leonardo-black-white-043377810612-pkg.jpg?v=1740600727"
   },
   {
-    "id": "ms5-ms-b59",
-    "name": "MS-B59 Chromedome",
-    "subtitle": "B Series Wave 5",
-    "line": "Magic Square",
-    "company": "magicsquare",
-    "kind": "figure",
-    "releaseDate": "2028-11-01",
-    "msrp": 65.0,
-    "scale": "1:24",
-    "demand": 1.25,
-    "tags": [
-      "magic-square",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "jak5-jak-sonic-werehog",
     "name": "Sonic Werehog",
     "subtitle": "Sonic the Hedgehog Wave 5",
@@ -2899,27 +2525,6 @@
     "sku": "5010996115126"
   },
   {
-    "id": "ct5-ct-54",
-    "name": "CT-54 Rampage",
-    "subtitle": "Beast Wars LE",
-    "line": "Cang Toys Beast Wars",
-    "company": "cangtoys",
-    "kind": "figure",
-    "releaseDate": "2028-11-01",
-    "msrp": 95.0,
-    "scale": "1:24",
-    "demand": 1.35,
-    "tags": [
-      "cang-toys",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "s75-s7-tmnt-rocksteady",
     "name": "Rocksteady",
     "subtitle": "ULTIMATES! Wave 5",
@@ -2962,27 +2567,6 @@
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/teenage-mutant-ninja-turtles-mutant-mayhem-superfly-043377832874.jpg?v=1714077980",
     "sku": "043377832874"
-  },
-  {
-    "id": "ms5-ms-b58",
-    "name": "MS-B58 Springer",
-    "subtitle": "B Series Wave 5",
-    "line": "Magic Square",
-    "company": "magicsquare",
-    "kind": "figure",
-    "releaseDate": "2028-10-01",
-    "msrp": 80.0,
-    "scale": "1:24",
-    "demand": 1.3,
-    "tags": [
-      "magic-square",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "jak5-jak-sonic-super",
@@ -3033,27 +2617,6 @@
     "sku": "630509808366"
   },
   {
-    "id": "ct5-ct-53",
-    "name": "CT-53 Depth Charge",
-    "subtitle": "Beast Wars LE",
-    "line": "Cang Toys Beast Wars",
-    "company": "cangtoys",
-    "kind": "figure",
-    "releaseDate": "2028-10-01",
-    "msrp": 90.0,
-    "scale": "1:24",
-    "demand": 1.3,
-    "tags": [
-      "cang-toys",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "s75-s7-tmnt-baxter",
     "name": "Baxter Stockman",
     "subtitle": "ULTIMATES! Wave 5",
@@ -3100,27 +2663,6 @@
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/teenage-mutant-ninja-turtles-mutant-mayhem-leonardo-043377832812.jpg?v=1732668522",
     "sku": "043377832812"
-  },
-  {
-    "id": "ms5-ms-b57",
-    "name": "MS-B57 Sandstorm",
-    "subtitle": "B Series Wave 5",
-    "line": "Magic Square",
-    "company": "magicsquare",
-    "kind": "figure",
-    "releaseDate": "2028-09-01",
-    "msrp": 75.0,
-    "scale": "1:24",
-    "demand": 1.25,
-    "tags": [
-      "magic-square",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "ml5-ml-okoye",
@@ -3182,27 +2724,6 @@
     "sku": "5010996177025"
   },
   {
-    "id": "ct5-ct-52",
-    "name": "CT-52 Tigerhawk",
-    "subtitle": "Beast Wars LE",
-    "line": "Cang Toys Beast Wars",
-    "company": "cangtoys",
-    "kind": "figure",
-    "releaseDate": "2028-09-01",
-    "msrp": 110.0,
-    "scale": "1:24",
-    "demand": 1.4,
-    "tags": [
-      "cang-toys",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "s75-s7-gijoe-spirit",
     "name": "Spirit",
     "subtitle": "ULTIMATES! Wave 5",
@@ -3240,48 +2761,6 @@
     "tags": [
       "playmates",
       "tmnt",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "ms5-ms-b56",
-    "name": "MS-B56 Broadside",
-    "subtitle": "B Series Wave 5",
-    "line": "Magic Square",
-    "company": "magicsquare",
-    "kind": "figure",
-    "releaseDate": "2028-08-01",
-    "msrp": 90.0,
-    "scale": "1:24",
-    "demand": 1.3,
-    "tags": [
-      "magic-square",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "ct5-ct-51",
-    "name": "CT-51 Optimal Optimus",
-    "subtitle": "Beast Wars LE",
-    "line": "Cang Toys Beast Wars",
-    "company": "cangtoys",
-    "kind": "figure",
-    "releaseDate": "2028-08-01",
-    "msrp": 120.0,
-    "scale": "1:24",
-    "demand": 1.4,
-    "tags": [
-      "cang-toys",
-      "transformers",
-      "3p",
       "curated"
     ],
     "source": "curated-bbts-wave5",
@@ -3329,48 +2808,6 @@
     "sku": null
   },
   {
-    "id": "ms5-ms-b55",
-    "name": "MS-B55 Punch Counterpunch",
-    "subtitle": "B Series Wave 5",
-    "line": "Magic Square",
-    "company": "magicsquare",
-    "kind": "figure",
-    "releaseDate": "2028-07-01",
-    "msrp": 70.0,
-    "scale": "1:24",
-    "demand": 1.25,
-    "tags": [
-      "magic-square",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "ct5-ct-50",
-    "name": "CT-50 King Poseidon",
-    "subtitle": "Seacon LE",
-    "line": "Cang Toys Seacon",
-    "company": "cangtoys",
-    "kind": "figure",
-    "releaseDate": "2028-07-01",
-    "msrp": 360.0,
-    "scale": "1:24",
-    "demand": 1.45,
-    "tags": [
-      "cang-toys",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "pm5-pm-mikey-soft-reissue",
     "name": "Michelangelo",
     "subtitle": "Classic Soft Head Reissue Wave 5",
@@ -3384,48 +2821,6 @@
     "tags": [
       "playmates",
       "tmnt",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "ms5-ms-b54",
-    "name": "MS-B54 Fortress Maximus",
-    "subtitle": "B Series Wave 5",
-    "line": "Magic Square",
-    "company": "magicsquare",
-    "kind": "figure",
-    "releaseDate": "2028-06-01",
-    "msrp": 400.0,
-    "scale": "1:24",
-    "demand": 1.5,
-    "tags": [
-      "magic-square",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "ct5-ct-49",
-    "name": "CT-49 Battle Gaia",
-    "subtitle": "Combatron Combiner",
-    "line": "Cang Toys Combiner",
-    "company": "cangtoys",
-    "kind": "figure",
-    "releaseDate": "2028-06-01",
-    "msrp": 300.0,
-    "scale": "1:24",
-    "demand": 1.35,
-    "tags": [
-      "cang-toys",
-      "transformers",
-      "3p",
       "curated"
     ],
     "source": "curated-bbts-wave5",
@@ -3454,95 +2849,6 @@
     "sku": null
   },
   {
-    "id": "ms5-ms-b53",
-    "name": "MS-B53 Metroplex",
-    "subtitle": "B Series Wave 5",
-    "line": "Magic Square",
-    "company": "magicsquare",
-    "kind": "figure",
-    "releaseDate": "2028-05-01",
-    "msrp": 350.0,
-    "scale": "1:24",
-    "demand": 1.5,
-    "tags": [
-      "magic-square",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "if5-if-ex65",
-    "name": "EX-65 Sideswipe Red",
-    "subtitle": "EX Series Repaint",
-    "line": "Iron Factory EX",
-    "company": "ironfactory",
-    "kind": "figure",
-    "releaseDate": "2028-05-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "iron-factory",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "ml5-ml-abomination",
-    "name": "Abomination",
-    "subtitle": "Shang-Chi",
-    "line": "Marvel Legends",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2028-05-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "marvel",
-      "legends",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "HAS401826",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/apimkgji7__96345.1465625754.jpg?v=1571609221"
-  },
-  {
-    "id": "ct5-ct-48",
-    "name": "CT-48 Raiden",
-    "subtitle": "Trainbot Combiner",
-    "line": "Cang Toys Combiner",
-    "company": "cangtoys",
-    "kind": "figure",
-    "releaseDate": "2028-05-01",
-    "msrp": 300.0,
-    "scale": "1:24",
-    "demand": 1.35,
-    "tags": [
-      "cang-toys",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "pm5-pm-raph-soft-reissue",
     "name": "Raphael",
     "subtitle": "Classic Soft Head Reissue Wave 5",
@@ -3556,69 +2862,6 @@
     "tags": [
       "playmates",
       "tmnt",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "ms5-ms-b52",
-    "name": "MS-B52 Omega Supreme",
-    "subtitle": "B Series Wave 5",
-    "line": "Magic Square",
-    "company": "magicsquare",
-    "kind": "figure",
-    "releaseDate": "2028-04-01",
-    "msrp": 200.0,
-    "scale": "1:24",
-    "demand": 1.45,
-    "tags": [
-      "magic-square",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "if5-if-ex64",
-    "name": "EX-64 Red Alert",
-    "subtitle": "EX Series Wave 5",
-    "line": "Iron Factory EX",
-    "company": "ironfactory",
-    "kind": "figure",
-    "releaseDate": "2028-04-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "iron-factory",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "ct5-ct-47",
-    "name": "CT-47 Liokaiser",
-    "subtitle": "Breastforce Combiner",
-    "line": "Cang Toys Combiner",
-    "company": "cangtoys",
-    "kind": "figure",
-    "releaseDate": "2028-04-01",
-    "msrp": 320.0,
-    "scale": "1:24",
-    "demand": 1.4,
-    "tags": [
-      "cang-toys",
-      "transformers",
-      "3p",
       "curated"
     ],
     "source": "curated-bbts-wave5",
@@ -3645,195 +2888,6 @@
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0307.JPG4.jpg?v=1785788839",
     "sku": null
-  },
-  {
-    "id": "ms5-ms-b51",
-    "name": "MS-B51 Sky Lynx",
-    "subtitle": "B Series Wave 5",
-    "line": "Magic Square",
-    "company": "magicsquare",
-    "kind": "figure",
-    "releaseDate": "2028-03-01",
-    "msrp": 140.0,
-    "scale": "1:24",
-    "demand": 1.4,
-    "tags": [
-      "magic-square",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "if5-if-ex63",
-    "name": "EX-63 Inferno",
-    "subtitle": "EX Series Wave 5",
-    "line": "Iron Factory EX",
-    "company": "ironfactory",
-    "kind": "figure",
-    "releaseDate": "2028-03-01",
-    "msrp": 60.0,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "iron-factory",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "ct5-ct-46",
-    "name": "CT-46 Dinoking",
-    "subtitle": "Dinobot Combiner Wave 5",
-    "line": "Cang Toys Combiner",
-    "company": "cangtoys",
-    "kind": "figure",
-    "releaseDate": "2028-03-01",
-    "msrp": 340.0,
-    "scale": "1:24",
-    "demand": 1.45,
-    "tags": [
-      "cang-toys",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "if5-if-ex62",
-    "name": "EX-62 Grapple",
-    "subtitle": "EX Series Wave 5",
-    "line": "Iron Factory EX",
-    "company": "ironfactory",
-    "kind": "figure",
-    "releaseDate": "2028-02-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.2,
-    "tags": [
-      "iron-factory",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "if5-if-ex61",
-    "name": "EX-61 Hoist",
-    "subtitle": "EX Series Wave 5",
-    "line": "Iron Factory EX",
-    "company": "ironfactory",
-    "kind": "figure",
-    "releaseDate": "2028-01-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.2,
-    "tags": [
-      "iron-factory",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "if5-if-ex60",
-    "name": "EX-60 Skids",
-    "subtitle": "EX Series Wave 5",
-    "line": "Iron Factory EX",
-    "company": "ironfactory",
-    "kind": "figure",
-    "releaseDate": "2027-12-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "iron-factory",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "if5-if-ex59",
-    "name": "EX-59 Tracks",
-    "subtitle": "EX Series Wave 5",
-    "line": "Iron Factory EX",
-    "company": "ironfactory",
-    "kind": "figure",
-    "releaseDate": "2027-11-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "iron-factory",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "if5-if-ex58",
-    "name": "EX-58 Defensor LE",
-    "subtitle": "EX Combiner Exclusive",
-    "line": "Iron Factory Combiner",
-    "company": "ironfactory",
-    "kind": "figure",
-    "releaseDate": "2027-10-01",
-    "msrp": 130.0,
-    "scale": "6\"",
-    "demand": 1.45,
-    "tags": [
-      "iron-factory",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "if5-if-ex57",
-    "name": "EX-57 Hot Spot LE",
-    "subtitle": "EX Series Exclusive",
-    "line": "Iron Factory EX",
-    "company": "ironfactory",
-    "kind": "figure",
-    "releaseDate": "2027-09-01",
-    "msrp": 75.0,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "iron-factory",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "ml5-ml-wasp-quantum",
@@ -3865,36 +2919,15 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-ant-man-series-6-inch-wasp_image.gif?v=1723120842"
   },
   {
-    "id": "if5-if-ex56",
-    "name": "EX-56 Blurr",
-    "subtitle": "EX Series Wave 5",
-    "line": "Iron Factory EX",
-    "company": "ironfactory",
-    "kind": "figure",
-    "releaseDate": "2027-08-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "iron-factory",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "ml5-ml-loki-president",
-    "name": "Loki",
-    "subtitle": "President",
+    "name": "Loki (2021)",
+    "subtitle": "Retro Kenner 3.75",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2027-05-01",
-    "msrp": 24.99,
-    "scale": "6\"",
+    "releaseDate": "2021-01-01",
+    "msrp": 9.99,
+    "scale": "3.75\"",
     "demand": 1.35,
     "tags": [
       "hasbro",
@@ -3905,7 +2938,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave5",
     "sku": "5010993849017",

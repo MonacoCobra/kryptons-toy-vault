@@ -11988,11 +11988,6 @@
       "GSC066652",
       "N-LF-161933"
     ],
-    "ml5-ml-sabretooth-movie-dpw": [
-      "F36935L00",
-      "F10095L00",
-      "F90215L00"
-    ],
     "mafex-no004-bane-the-dark-knight-rises": [
       "MFX216"
     ],
@@ -15397,10 +15392,6 @@
       "SUP7-RE-GIJOW1A-BRN-02",
       "SUP7-UL-GIJOW02-BRN-01",
       "F39835L21"
-    ],
-    "cls5-cls-nightforce-flint": [
-      "SUP81836",
-      "SUP7-UL-GIJOW02-FNT-01"
     ],
     "tfss-ss-constructicon-overload": [
       "G1091"
@@ -43827,6 +43818,19 @@
     "mlc-venom-classic": [
       "F9091",
       "F90915L00"
+    ],
+    "s73-gi joe-flint-ult": [
+      "SUP81836",
+      "SUP7-UL-GIJOW02-FNT-01"
+    ],
+    "mlc-sabretooth-classic2": [
+      "F36935L00"
+    ],
+    "ml6-ml-sabretooth-aos": [
+      "F10095L00"
+    ],
+    "mlc-sabretooth-weaponx": [
+      "F90215L00"
     ]
   },
   "aliasToFigureId": {
@@ -52489,9 +52493,9 @@
     "MAFC07022": "sf-goodsmile-us-figma-sekiro-dx-edition-64393",
     "GSC066652": "sf-goodsmile-us-figma-sekiro-dx-edition-64393",
     "N-LF-161933": "sf-goodsmile-us-figma-sekiro-dx-edition-64393",
-    "F36935L00": "ml5-ml-sabretooth-movie-dpw",
-    "F10095L00": "ml5-ml-sabretooth-movie-dpw",
-    "F90215L00": "ml5-ml-sabretooth-movie-dpw",
+    "F36935L00": "mlc-sabretooth-classic2",
+    "F10095L00": "ml6-ml-sabretooth-aos",
+    "F90215L00": "mlc-sabretooth-weaponx",
     "MFX216": "mafex-no004-bane-the-dark-knight-rises",
     "S7 80861": "sf-super7-sesame-street-reaction-figures-super-grover-w-chase",
     "SUP7-BB-SEST-10776": "sf-super7-sesame-street-reaction-figures-super-grover-w-chase",
@@ -54717,8 +54721,8 @@
     "SUP7-RE-GIJOW1A-BRN-02": "cls5-cls-cobra-island-baroness",
     "SUP7-UL-GIJOW02-BRN-01": "cls5-cls-cobra-island-baroness",
     "F39835L21": "cls5-cls-cobra-island-baroness",
-    "SUP81836": "cls5-cls-nightforce-flint",
-    "SUP7-UL-GIJOW02-FNT-01": "cls5-cls-nightforce-flint",
+    "SUP81836": "s73-gi joe-flint-ult",
+    "SUP7-UL-GIJOW02-FNT-01": "s73-gi joe-flint-ult",
     "G1091": "tfss-ss-constructicon-overload",
     "G0563": "tfss-ss-constructicon-mixmaster",
     "SUP7-UL-GIJOW02-LJY-01": "joec-lady-jaye-v2",
@@ -68611,7 +68615,7 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-09-27T17:58:49.103111+00:00",
+  "updatedAt": "2026-09-29T03:35:17.704768+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -68642,6 +68646,435 @@
       "removed": 51,
       "yearlyMembersAdded": 6,
       "galaxyLineAligned": 22
+    },
+    "dateAuditPhase2": {
+      "at": "2026-09-29T03:35:17.704768+00:00",
+      "removed": 46,
+      "repointed": 3,
+      "aliasesMoved": 5
     }
-  }
+  },
+  "removed": [
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-51",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-08-01); no such product found (No evidence Cang Toys CT-46..CT-55 exist; Cang Toys numbering is CT-01..~CT-08 + Chiyou sub-series)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-52",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-09-01); no such product found (No evidence Cang Toys CT-46..CT-55 exist; Cang Toys numbering is CT-01..~CT-08 + Chiyou sub-series)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-53",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-10-01); no such product found (No evidence Cang Toys CT-46..CT-55 exist; Cang Toys numbering is CT-01..~CT-08 + Chiyou sub-series)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-54",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-11-01); no such product found (No evidence Cang Toys CT-46..CT-55 exist; Cang Toys numbering is CT-01..~CT-08 + Chiyou sub-series)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-55",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-12-01); no such product found (No evidence Cang Toys CT-46..CT-55 exist; Cang Toys numbering is CT-01..~CT-08 + Chiyou sub-series)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-46",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-03-01); no such product found (No evidence Cang Toys CT-46..CT-55 exist; Cang Toys numbering is CT-01..~CT-08 + Chiyou sub-series)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-47",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-04-01); no such product found (No evidence Cang Toys CT-46..CT-55 exist; Cang Toys numbering is CT-01..~CT-08 + Chiyou sub-series)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-48",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-05-01); no such product found (No evidence Cang Toys CT-46..CT-55 exist; Cang Toys numbering is CT-01..~CT-08 + Chiyou sub-series)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-49",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-06-01); no such product found (No evidence Cang Toys CT-46..CT-55 exist; Cang Toys numbering is CT-01..~CT-08 + Chiyou sub-series)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-50",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-07-01); no such product found (No evidence Cang Toys CT-46..CT-55 exist; Cang Toys numbering is CT-01..~CT-08 + Chiyou sub-series)"
+    },
+    {
+      "keepId": null,
+      "dropId": "cls5-cls-hard-master",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: no Snake Eyes movie Classified Hard Master; real Hard Master rows already exist (d14joe-hard-master, joe2-hard-master)"
+    },
+    {
+      "keepId": null,
+      "dropId": "cls5-cls-nightforce-flint",
+      "canonicalSku": "5010993790395dmg",
+      "aliasesAdded": [],
+      "aliasesMoved": {
+        "SUP81836": "s73-gi joe-flint-ult",
+        "SUP7-UL-GIJOW02-FNT-01": "s73-gi joe-flint-ult"
+      },
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: no Night Force Classified Flint; sku 5010993790395 is Classified #26 Flint (already on joec-flint-v2 as HAS790395), aliases SUP81836/GIJOW02-FNT are Super7 ULTIMATES Wave 2 Flint (moved to s73-gi joe-flint-ult)"
+    },
+    {
+      "keepId": null,
+      "dropId": "lc5-lc-bulk",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2029-08-01); no such product found (Hasbro never made Lightning Bulk; Bulk exists as Super7 ULTIMATES! (2024))"
+    },
+    {
+      "keepId": null,
+      "dropId": "lc5-lc-skull",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2029-09-01); no such product found (Hasbro never made Lightning Skull; Skull exists as Super7 ULTIMATES! (2024))"
+    },
+    {
+      "keepId": null,
+      "dropId": "lc5-lc-squatt",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2029-10-01); no such product found (No Lightning Collection Squatt found)"
+    },
+    {
+      "keepId": null,
+      "dropId": "lc5-lc-baboo",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2029-11-01); no such product found (No Lightning Collection Baboo found)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ml5-ml-abomination",
+      "canonicalSku": "HAS401826",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: no Shang-Chi-wave Abomination beyond the 2021 BAF (d14ml-abomination-baf); sku HAS401826/photo are the 2016 Abomination-series Eel listing (toyarena)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ml5-ml-x97-bastion",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: no X-Men '97 Bastion figure exists; Bastion is already d14ml-bastion (2021); photo was the HasLab Sentinel (mlc-sentinel-haslab)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ml5-ml-sabretooth-movie-dpw",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {
+        "F36935L00": "mlc-sabretooth-classic2",
+        "F10095L00": "ml6-ml-sabretooth-aos",
+        "F90215L00": "mlc-sabretooth-weaponx"
+      },
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: no Deadpool & Wolverine Legends Sabretooth; photo is the 2022 Bonebreaker Sabretooth (ml2-sabretooth-aes); aliases moved to the products they belong to (F3693 classic, F9021 Logan vs Sabretooth, F1009 AoA)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex58",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2027-10-01); no such product found (Iron Factory EX-56/EX-57 are Iron Samurai Tetsybe (Ironhide) / Sekijoujien (Ratchet), not the names in this row; EX-56..65 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex56",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2027-08-01); no such product found (Iron Factory EX-56/EX-57 are Iron Samurai Tetsybe (Ironhide) / Sekijoujien (Ratchet), not the names in this row; EX-56..65 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex57",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2027-09-01); no such product found (Iron Factory EX-56/EX-57 are Iron Samurai Tetsybe (Ironhide) / Sekijoujien (Ratchet), not the names in this row; EX-56..65 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex59",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2027-11-01); no such product found (Iron Factory EX-56/EX-57 are Iron Samurai Tetsybe (Ironhide) / Sekijoujien (Ratchet), not the names in this row; EX-56..65 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex60",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2027-12-01); no such product found (Iron Factory EX-56/EX-57 are Iron Samurai Tetsybe (Ironhide) / Sekijoujien (Ratchet), not the names in this row; EX-56..65 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex61",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-01-01); no such product found (Iron Factory EX-56/EX-57 are Iron Samurai Tetsybe (Ironhide) / Sekijoujien (Ratchet), not the names in this row; EX-56..65 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex62",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-02-01); no such product found (Iron Factory EX-56/EX-57 are Iron Samurai Tetsybe (Ironhide) / Sekijoujien (Ratchet), not the names in this row; EX-56..65 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex63",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-03-01); no such product found (Iron Factory EX-56/EX-57 are Iron Samurai Tetsybe (Ironhide) / Sekijoujien (Ratchet), not the names in this row; EX-56..65 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex64",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-04-01); no such product found (Iron Factory EX-56/EX-57 are Iron Samurai Tetsybe (Ironhide) / Sekijoujien (Ratchet), not the names in this row; EX-56..65 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex65",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-05-01); no such product found (Iron Factory EX-56/EX-57 are Iron Samurai Tetsybe (Ironhide) / Sekijoujien (Ratchet), not the names in this row; EX-56..65 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "jak5-jak-wwe-cody-elite",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2029-03-01); no such product found (JAKKS has not held the WWE license since 2010 (WWE Elite is Mattel))"
+    },
+    {
+      "keepId": null,
+      "dropId": "jak5-jak-wwe-punk",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2029-04-01); no such product found (JAKKS has not held the WWE license since 2010 (WWE Elite is Mattel))"
+    },
+    {
+      "keepId": null,
+      "dropId": "jak5-jak-wwe-gunther",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2029-05-01); no such product found (JAKKS has not held the WWE license since 2010 (WWE Elite is Mattel))"
+    },
+    {
+      "keepId": null,
+      "dropId": "jak5-jak-sage",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2029-02-01); no such product found (No JAKKS 4\" Sage figure released or announced)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b51",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-03-01); no such product found (Magic Square MS-B51..B55 are the Lord of War (Bruticus) team (Heavy Gunner, Munitioner, Night Tracer, Tornado, Space Shuttle), not the names in this row; MS-B51..60 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b52",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-04-01); no such product found (Magic Square MS-B51..B55 are the Lord of War (Bruticus) team (Heavy Gunner, Munitioner, Night Tracer, Tornado, Space Shuttle), not the names in this row; MS-B51..60 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b53",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-05-01); no such product found (Magic Square MS-B51..B55 are the Lord of War (Bruticus) team (Heavy Gunner, Munitioner, Night Tracer, Tornado, Space Shuttle), not the names in this row; MS-B51..60 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b54",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-06-01); no such product found (Magic Square MS-B51..B55 are the Lord of War (Bruticus) team (Heavy Gunner, Munitioner, Night Tracer, Tornado, Space Shuttle), not the names in this row; MS-B51..60 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b55",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-07-01); no such product found (Magic Square MS-B51..B55 are the Lord of War (Bruticus) team (Heavy Gunner, Munitioner, Night Tracer, Tornado, Space Shuttle), not the names in this row; MS-B51..60 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b56",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-08-01); no such product found (Magic Square MS-B51..B55 are the Lord of War (Bruticus) team (Heavy Gunner, Munitioner, Night Tracer, Tornado, Space Shuttle), not the names in this row; MS-B51..60 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b57",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-09-01); no such product found (Magic Square MS-B51..B55 are the Lord of War (Bruticus) team (Heavy Gunner, Munitioner, Night Tracer, Tornado, Space Shuttle), not the names in this row; MS-B51..60 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b58",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-10-01); no such product found (Magic Square MS-B51..B55 are the Lord of War (Bruticus) team (Heavy Gunner, Munitioner, Night Tracer, Tornado, Space Shuttle), not the names in this row; MS-B51..60 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b59",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-11-01); no such product found (Magic Square MS-B51..B55 are the Lord of War (Bruticus) team (Heavy Gunner, Munitioner, Night Tracer, Tornado, Space Shuttle), not the names in this row; MS-B51..60 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b60",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-12-01); no such product found (Magic Square MS-B51..B55 are the Lord of War (Bruticus) team (Heavy Gunner, Munitioner, Night Tracer, Tornado, Space Shuttle), not the names in this row; MS-B51..60 names look invented)"
+    },
+    {
+      "keepId": null,
+      "dropId": "neca5-neca-alien-romulus",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2028-12-01); no such product found (NECA has not released/announced a Romulus Offspring figure)"
+    },
+    {
+      "keepId": null,
+      "dropId": "neca5-neca-alien-romulus-rain",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2029-01-01); no such product found (NECA has not released/announced Rain from Alien: Romulus)"
+    },
+    {
+      "keepId": null,
+      "dropId": "neca5-neca-alien-romulus-andy",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2029-02-01); no such product found (NECA has not released/announced Andy from Alien: Romulus)"
+    }
+  ]
 }
