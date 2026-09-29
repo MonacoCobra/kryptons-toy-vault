@@ -595,7 +595,7 @@
     "line": "S.H.Figuarts",
     "company": "shfiguarts",
     "kind": "figure",
-    "releaseDate": "2030-10-01",
+    "releaseDate": "2023-05-01",
     "msrp": 90.0,
     "scale": "6\"",
     "demand": 1.45,
@@ -643,11 +643,11 @@
   {
     "id": "shf5-denji-chainsaw",
     "name": "Denji",
-    "subtitle": "Chainsaw Hybrid",
+    "subtitle": "Chainsaw Man SHF",
     "line": "S.H.Figuarts",
     "company": "shfiguarts",
     "kind": "figure",
-    "releaseDate": "2030-08-01",
+    "releaseDate": "2024-02-01",
     "msrp": 90.0,
     "scale": "6\"",
     "demand": 1.45,
@@ -728,16 +728,10 @@
       "shfiguarts",
       "tamashii",
       "bandai",
-      "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
+      "curated"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "4573102649300",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/one-piece-the-raid-on-onigashima-sh-figuarts-roronoa-zoro-4573102649300-pkg.jpg?v=1695698106"
+    "imageUrl": null
   },
   {
     "id": "shf5-luffy-egghead",
@@ -773,12 +767,12 @@
   },
   {
     "id": "shf5-vegeta-daima",
-    "name": "Vegeta",
-    "subtitle": "DAIMA Mini",
+    "name": "Super Saiyan 3 Vegeta (Mini)",
+    "subtitle": "DAIMA Premium Bandai Exclusive",
     "line": "S.H.Figuarts",
     "company": "shfiguarts",
     "kind": "figure",
-    "releaseDate": "2030-03-01",
+    "releaseDate": "2025-10-01",
     "msrp": 80.0,
     "scale": "6\"",
     "demand": 1.35,
@@ -878,12 +872,12 @@
   },
   {
     "id": "cls5-cls-crimson-strike",
-    "name": "Crimson Strike Guard",
-    "subtitle": "Classified Exclusive",
+    "name": "Crimson Strike Team (Baroness, Tomax & Xamot)",
+    "subtitle": "Classified #82 Hasbro Pulse Exclusive",
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2030-02-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.35,
@@ -896,7 +890,8 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/gi_joe-classified-box-set-exclusive-crimson-strike-team-baroness_2c-tomax_2c-xamot-82-5010996150837-3.jpg?v=1727478217",
@@ -916,16 +911,10 @@
     "tags": [
       "neca",
       "ultimate",
-      "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
+      "curated"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "634482428818",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/shin-godzilla-2016-head-to-tail-series-12-inch-action-figure-shin-godzilla_image.gif?v=1723119107"
+    "imageUrl": null
   },
   {
     "id": "mcf5-mcf-collector-batman-who",
@@ -941,16 +930,10 @@
     "tags": [
       "mcfarlane",
       "dc",
-      "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
+      "curated"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "787926150674",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-batman-who-laughs-exclusive-batman-bat-raptor-gold-label-787926150671.jpg?v=1695763205"
+    "imageUrl": null
   },
   {
     "id": "cls5-cls-python-patrol-viper",
@@ -1001,32 +984,6 @@
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/41979_Evil_Dead_Ash_Cheryl.jpg?v=1760542183",
     "sku": null
-  },
-  {
-    "id": "cls5-cls-tiger-force-lifeline",
-    "name": "Lifeline",
-    "subtitle": "Tiger Force Classified",
-    "line": "GI Joe Classified",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-12-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "hasbro",
-      "gi-joe",
-      "classified",
-      "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "5010996361400",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/gi-joe-classified-wave-24-edwin-lifeline-steen-186-5010996361400.jpg?v=1760475925"
   },
   {
     "id": "neca5-neca-tiffany-tv",
@@ -1145,13 +1102,13 @@
   },
   {
     "id": "cls5-cls-retro-snake",
-    "name": "Snake Eyes",
-    "subtitle": "Retro Card Classified",
+    "name": "Snake Eyes & Polar Bear",
+    "subtitle": "Classified #161 Deluxe",
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2029-10-01",
-    "msrp": 24.99,
+    "releaseDate": "2025-08-01",
+    "msrp": 64.99,
     "scale": "6\"",
     "demand": 1.4,
     "tags": [
@@ -1168,31 +1125,6 @@
     "source": "curated-bbts-wave5",
     "sku": "5010996290687",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/gi-joe-classified-deluxe-snake-eyes-polar-bear-5010996290687.jpg?v=1741238830"
-  },
-  {
-    "id": "neca5-neca-michael-ultimate-kills",
-    "name": "Michael Myers",
-    "subtitle": "Halloween Kills Ultimate",
-    "line": "Horror Ultimate",
-    "company": "neca",
-    "kind": "figure",
-    "releaseDate": "2029-09-01",
-    "msrp": 34.99,
-    "scale": "7\"",
-    "demand": 1.4,
-    "tags": [
-      "neca",
-      "ultimate",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/halloween-kills-michael-myers-634482606445.jpg?v=1651624397",
-    "sku": "634482606445"
   },
   {
     "id": "mcf5-mcf-spawn-violator-gold",
@@ -1283,16 +1215,10 @@
     "tags": [
       "neca",
       "ultimate",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore"
+      "curated"
     ],
     "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/friday-the-13th-part-7-ultimate-jason-voorhees-634482420034.jpg?v=1703118517",
-    "sku": "634482420034"
+    "imageUrl": null
   },
   {
     "id": "mcf5-mcf-gl-john",
@@ -1308,16 +1234,10 @@
     "tags": [
       "mcfarlane",
       "dc",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore"
+      "curated"
     ],
     "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-baf-batman-ninja-series-6-inch-action-figure-john-stewart_pkg.jpg?v=1747154504",
-    "sku": "887961753608"
+    "imageUrl": null
   },
   {
     "id": "ky5-rev-godzilla-21",
@@ -1385,16 +1305,10 @@
     "tags": [
       "neca",
       "ultimate",
-      "curated",
-      "sku-bake",
-      "sku:nerdzoic",
-      "image-sku",
-      "image-bake",
-      "imgsku:nerdzoic"
+      "curated"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "634482398890",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0535/8125/0722/files/Untitleddesign_5-723050.jpg?v=1721080027"
+    "imageUrl": null
   },
   {
     "id": "mcf5-mcf-flash-godspeed",
@@ -1447,52 +1361,6 @@
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/kaiyodo-revoltech-no-13-eva-unit-04-action-figure-collectible_1_1765544396.webp?v=1765606257",
     "sku": "698887470896"
-  },
-  {
-    "id": "jak5-jak-nintendo-zelda-totk",
-    "name": "Zelda",
-    "subtitle": "Tears of the Kingdom JAKKS",
-    "line": "JAKKS Pacific",
-    "company": "jakks",
-    "kind": "figure",
-    "releaseDate": "2029-07-01",
-    "msrp": 14.99,
-    "scale": "4\"",
-    "demand": 1.35,
-    "tags": [
-      "jakks",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "lc5-lc-zordon",
-    "name": "Zordon",
-    "subtitle": "MMPR Lightning",
-    "line": "Lightning Collection",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-07-01",
-    "msrp": 22.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "power-rangers",
-      "lightning",
-      "curated",
-      "sku-bake",
-      "sku:collecticon",
-      "image-bake",
-      "img:mephitsu",
-      "image-sku",
-      "imgsku:collecticon"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "MMPR-ZORDAN-ALPHA5",
-    "imageUrl": "https://static.wixstatic.com/media/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg"
   },
   {
     "id": "cls5-cls-cobra-island-baroness",
@@ -1558,16 +1426,10 @@
     "tags": [
       "mcfarlane",
       "dc",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore"
+      "curated"
     ],
     "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-justice-league-movie-steppenwolf-series-6-inch-action-figure-wonder-woman_image.gif?v=1723132795",
-    "sku": "887961522389"
+    "imageUrl": null
   },
   {
     "id": "ky5-rev-eva01-new",
@@ -1594,79 +1456,6 @@
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4537807220974e.jpg?v=1772831118",
     "sku": "KAI220974"
-  },
-  {
-    "id": "jak5-jak-nintendo-link-totk",
-    "name": "Link",
-    "subtitle": "Tears of the Kingdom JAKKS",
-    "line": "JAKKS Pacific",
-    "company": "jakks",
-    "kind": "figure",
-    "releaseDate": "2029-06-01",
-    "msrp": 14.99,
-    "scale": "4\"",
-    "demand": 1.4,
-    "tags": [
-      "jakks",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "cls5-cls-cobra-island-destro",
-    "name": "Destro",
-    "subtitle": "Cobra Island Classified",
-    "line": "GI Joe Classified",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-06-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "gi-joe",
-      "classified",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena",
-      "sku:cooltoyden",
-      "sku-gtin",
-      "sku-alias",
-      "alias:toydojo",
-      "alias:hobbyfigures",
-      "imgsku:cooltoyden"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "29339252",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0144/1798/5584/products/71MEVfY6EqL._SL1000.jpg?v=1569306971"
-  },
-  {
-    "id": "lc5-lc-alpha5",
-    "name": "Alpha 5",
-    "subtitle": "MMPR Lightning",
-    "line": "Lightning Collection",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-06-01",
-    "msrp": 22.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "power-rangers",
-      "lightning",
-      "curated",
-      "image-bake"
-    ],
-    "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN0697-332.jpg?v=1702523507",
-    "sku": null
   },
   {
     "id": "s75-s7-reaction-ash2",
@@ -1701,16 +1490,10 @@
     "tags": [
       "neca",
       "ultimate",
-      "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
+      "curated"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "634482541081",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/teenage-mutant-ninja-turtles-turtles-in-time-7-inch-action-figure-foot-soldier_pkg.jpg?v=1723117354"
+    "imageUrl": null
   },
   {
     "id": "mcf5-mcf-superman-blue",
@@ -1727,17 +1510,11 @@
       "mcfarlane",
       "dc",
       "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore",
       "sku-alias",
       "alias:hobbyfigures"
     ],
     "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-return-of-superman-hal-jordan-armor-suit-787926174090.jpg?v=1749766264",
-    "sku": "787926174090"
+    "imageUrl": null
   },
   {
     "id": "ky5-ay-joker-killing",
@@ -1764,61 +1541,6 @@
     "source": "curated-bbts-wave5",
     "sku": "KAI013262",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/4537807013262c.jpg?v=1617735194"
-  },
-  {
-    "id": "lc5-lc-kimberly-mmpr-remaster",
-    "name": "Kimberly Hart",
-    "subtitle": "MMPR Remastered Lightning",
-    "line": "Lightning Collection",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-05-01",
-    "msrp": 22.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "power-rangers",
-      "lightning",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "cls5-cls-cobra-island-cc",
-    "name": "Cobra Commander",
-    "subtitle": "Cobra Island Classified",
-    "line": "GI Joe Classified",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-05-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.45,
-    "tags": [
-      "hasbro",
-      "gi-joe",
-      "classified",
-      "curated",
-      "sku-bake",
-      "sku:planet-af",
-      "image-sku",
-      "image-bake",
-      "imgsku:planet-af",
-      "sku:hasbro-pulse",
-      "sku-gtin",
-      "sku-alias",
-      "alias:toyarena",
-      "alias:planet-af",
-      "alias:hobbyfigures",
-      "alias:hasbro-pulse",
-      "imgsku:hasbro-pulse"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "08900000",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0169/6995/7440/products/02_b0bc9d54-f3a7-4157-9060-5213e90d6772.jpg?v=1597288940"
   },
   {
     "id": "s75-s7-reaction-dutch2",
@@ -1854,18 +1576,10 @@
       "neca",
       "ultimate",
       "curated",
-      "sku-bake",
-      "sku:planet-af",
-      "image-sku",
-      "image-bake",
-      "imgsku:planet-af",
-      "sku:cmdstore",
-      "sku-gtin",
-      "imgsku:cmdstore"
+      "sku-gtin"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "634482541753",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/teenage-mutant-ninja-turtles-turtles-in-time-ultimate-baxter-stockman-634482541753-pkg.jpg?v=1638402929"
+    "imageUrl": null
   },
   {
     "id": "mcf5-mcf-joker-hush-gold",
@@ -1881,16 +1595,10 @@
     "tags": [
       "mcfarlane",
       "dc",
-      "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
+      "curated"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "787926170184",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-dc-vs-vampires-exclusive-vampire-joker-gold-label-787926170184.jpg?v=1684171236"
+    "imageUrl": null
   },
   {
     "id": "ky5-ay-batman-hush",
@@ -1919,27 +1627,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4537807220226a.webp?v=1711756094"
   },
   {
-    "id": "lc5-lc-trini-mmpr-remaster",
-    "name": "Trini Kwan",
-    "subtitle": "MMPR Remastered Lightning",
-    "line": "Lightning Collection",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-04-01",
-    "msrp": 22.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "power-rangers",
-      "lightning",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "s75-s7-reaction-predator2",
     "name": "City Hunter",
     "subtitle": "ReAction Wave 5",
@@ -1960,12 +1647,12 @@
   },
   {
     "id": "neca5-neca-predator-badlands",
-    "name": "Predator",
-    "subtitle": "Badlands Ultimate",
+    "name": "Dek (Training Armor)",
+    "subtitle": "Predator: Badlands Ultimate",
     "line": "Predator Ultimate",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2029-03-01",
+    "releaseDate": "2026-01-01",
     "msrp": 34.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -1977,7 +1664,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave5",
     "sku": "634482517529",
@@ -1998,17 +1686,10 @@
       "mcfarlane",
       "dc",
       "curated",
-      "sku-bake",
-      "sku:staractionfigures",
-      "sku:cmdstore",
-      "sku-gtin",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
+      "sku-gtin"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "787926154993",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-movie-the-flash-exclusive-unmasked-batman-multiverse-gold-label-787926154993.jpg?v=1743630099"
+    "imageUrl": null
   },
   {
     "id": "ky5-ay-wolverine-brown",
@@ -2052,27 +1733,6 @@
     ],
     "source": "curated-bbts-wave5",
     "sku": "5010993662432repaint",
-    "imageUrl": null
-  },
-  {
-    "id": "lc5-lc-billy-mmpr-remaster",
-    "name": "Billy Cranston",
-    "subtitle": "MMPR Remastered Lightning",
-    "line": "Lightning Collection",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-03-01",
-    "msrp": 22.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "power-rangers",
-      "lightning",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
     "imageUrl": null
   },
   {
@@ -2146,27 +1806,6 @@
     "sku": "KAI220516"
   },
   {
-    "id": "lc5-lc-zack-mmpr-remaster",
-    "name": "Zack Taylor",
-    "subtitle": "MMPR Remastered Lightning",
-    "line": "Lightning Collection",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-02-01",
-    "msrp": 22.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "power-rangers",
-      "lightning",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "cls5-cls-storm-shadow-movie",
     "name": "Storm Shadow",
     "subtitle": "Snake Eyes Movie Classified",
@@ -2230,8 +1869,6 @@
       "mcfarlane",
       "dc",
       "curated",
-      "sku-bake",
-      "sku:cmdstore",
       "sku-alias",
       "alias:staractionfigures",
       "alias:toynk",
@@ -2240,7 +1877,6 @@
       "alias:kitsap"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "787926176520dmg",
     "imageUrl": null
   },
   {
@@ -2326,27 +1962,6 @@
     "sku": "5010993973422"
   },
   {
-    "id": "lc5-lc-jason-mmpr-remaster",
-    "name": "Jason Lee Scott",
-    "subtitle": "MMPR Remastered Lightning",
-    "line": "Lightning Collection",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2029-01-01",
-    "msrp": 22.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "power-rangers",
-      "lightning",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "s75-s7-motu-trapjaw",
     "name": "Trap Jaw",
     "subtitle": "ULTIMATES! Wave 5",
@@ -2405,27 +2020,6 @@
     "imageUrl": null
   },
   {
-    "id": "lc5-lc-tommy-mmpr-remaster",
-    "name": "Tommy Oliver",
-    "subtitle": "MMPR Remastered Lightning",
-    "line": "Lightning Collection",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2028-12-01",
-    "msrp": 22.99,
-    "scale": "6\"",
-    "demand": 1.45,
-    "tags": [
-      "hasbro",
-      "power-rangers",
-      "lightning",
-      "curated"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "s75-s7-tmnt-bebop",
     "name": "Bebop",
     "subtitle": "ULTIMATES! Wave 5",
@@ -2438,16 +2032,10 @@
     "demand": 1.35,
     "tags": [
       "super7",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore"
+      "curated"
     ],
     "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/teenage-mutant-ninja-turtles-ultimates-wave-7-robotic-bebop-840049820470.jpg?v=1729731060",
-    "sku": "840049820470"
+    "imageUrl": null
   },
   {
     "id": "pm5-pm-leo-tales-battle",
@@ -2464,17 +2052,10 @@
       "playmates",
       "tmnt",
       "curated",
-      "sku-bake",
-      "sku:hobbyfigures",
-      "sku:cmdstore",
-      "sku-gtin",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
+      "sku-gtin"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "043377810612",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/teenage-mutant-ninja-turtles-original-sketch-leonardo-black-white-043377810612-pkg.jpg?v=1740600727"
+    "imageUrl": null
   },
   {
     "id": "jak5-jak-sonic-werehog",
@@ -2498,11 +2079,11 @@
   {
     "id": "lc5-lc-red-dragonzord",
     "name": "Red Ranger",
-    "subtitle": "Dragonzord Armor Lightning",
+    "subtitle": "Mighty Morphin Remastered (F7386)",
     "line": "Lightning Collection",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2028-11-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -2512,13 +2093,13 @@
       "lightning",
       "curated",
       "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
       "alias:collecticon",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "sku-bake",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/power-rangers-lightning-collection-remastered-wave-3-red-ranger-5010996115126.jpg?v=1682646239",
@@ -2546,11 +2127,11 @@
   {
     "id": "pm5-pm-superfly-battle",
     "name": "Superfly",
-    "subtitle": "Mutant Mayhem Battle Wave 5",
+    "subtitle": "Mutant Mayhem Basic (043377832874)",
     "line": "Mutant Mayhem",
     "company": "playmates",
     "kind": "figure",
-    "releaseDate": "2028-10-01",
+    "releaseDate": "2023-01-01",
     "msrp": 14.99,
     "scale": "4.5\"",
     "demand": 1.35,
@@ -2562,7 +2143,8 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/teenage-mutant-ninja-turtles-mutant-mayhem-superfly-043377832874.jpg?v=1714077980",
@@ -2590,11 +2172,11 @@
   {
     "id": "lc5-lc-white-tiger",
     "name": "White Ranger",
-    "subtitle": "Tiger Power Lightning",
+    "subtitle": "Mighty Morphin (Lightning Collection Series 1)",
     "line": "Lightning Collection",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2028-10-01",
+    "releaseDate": "2019-01-01",
     "msrp": 22.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -2604,13 +2186,13 @@
       "lightning",
       "curated",
       "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
       "alias:collecticon",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "sku-bake",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/power-rangers-lightning-collection-series-1-6-inch-action-figure-white-ranger.jpg?v=1723119108",
@@ -2639,11 +2221,11 @@
   {
     "id": "pm5-pm-leo-mayhem-battle",
     "name": "Leonardo",
-    "subtitle": "Mutant Mayhem Battle Wave 5",
+    "subtitle": "Mutant Mayhem Basic (043377832812)",
     "line": "Mutant Mayhem",
     "company": "playmates",
     "kind": "figure",
-    "releaseDate": "2028-09-01",
+    "releaseDate": "2023-01-01",
     "msrp": 14.99,
     "scale": "4.5\"",
     "demand": 1.3,
@@ -2652,13 +2234,13 @@
       "tmnt",
       "curated",
       "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
       "alias:hobbyfigures",
-      "alias:solarisjapan"
+      "alias:solarisjapan",
+      "sku-bake",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/teenage-mutant-ninja-turtles-mutant-mayhem-leonardo-043377832812.jpg?v=1732668522",
@@ -2696,11 +2278,11 @@
   {
     "id": "lc5-lc-green-dragon",
     "name": "Green Ranger",
-    "subtitle": "Dragon Shield Lightning",
+    "subtitle": "Mighty Morphin Remastered (F7392)",
     "line": "Lightning Collection",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2028-09-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -2710,14 +2292,14 @@
       "lightning",
       "curated",
       "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
       "alias:toynk",
       "alias:collecticon",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "sku-bake",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/power-rangers-lightning-collection-remastered-wave-3-green-ranger-5010996177025.jpg?v=1682646290",
@@ -2736,16 +2318,10 @@
     "demand": 1.25,
     "tags": [
       "super7",
-      "curated",
-      "sku-bake",
-      "sku:hobbyfigures",
-      "image-sku",
-      "image-bake",
-      "imgsku:hobbyfigures"
+      "curated"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "SUP7-UL-CONAW05-VAL-01",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0611/4030/4091/products/Conan_the_Barbarian_Ultimates_Action_Figure_Valeria_Spirit_Battle_of_the_Mounds_18cm_5.jpg?v=1711244839"
+    "imageUrl": null
   },
   {
     "id": "pm5-pm-krang-android",
@@ -3022,13 +2598,13 @@
   },
   {
     "id": "ml5-ml-rescue",
-    "name": "Rescue",
-    "subtitle": "Iron Man",
+    "name": "Captain Marvel & Rescue (2021)",
+    "subtitle": "Infinity Saga 2-Pack (Amazon Exclusive)",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2027-01-01",
-    "msrp": 24.99,
+    "releaseDate": "2021-01-01",
+    "msrp": 52.99,
     "scale": "6\"",
     "demand": 1.3,
     "tags": [
@@ -3040,7 +2616,8 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave5",
     "sku": "HAS839865",
@@ -137824,30 +137401,6 @@
     "imageUrl": null
   },
   {
-    "id": "joec-tiger-force-lifeline",
-    "name": "Lifeline",
-    "subtitle": "Tiger Force",
-    "line": "GI Joe Classified",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-10-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "gi-joe",
-      "curated",
-      "sku-bake",
-      "sku:indemandtoys",
-      "image-sku",
-      "image-bake",
-      "imgsku:indemandtoys"
-    ],
-    "source": "curated",
-    "sku": "G2272",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0698/7730/1541/files/G22725L00_pkg_25_tif_2400px_133DPI.jpg?v=1760431983"
-  },
-  {
     "id": "bs6-bs-knights-ren",
     "name": "Knight of Ren",
     "subtitle": "TROS Wave6",
@@ -233911,11 +233464,11 @@
   {
     "id": "joec-classified-lifeline",
     "name": "Lifeline",
-    "subtitle": "Classified Series",
+    "subtitle": "Classified Series #186",
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-09-01",
+    "releaseDate": "2026-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.2,
@@ -233929,7 +233482,8 @@
       "imgsku:toyarena",
       "sku-alias",
       "alias:hobbyfigures",
-      "alias:kitsap"
+      "alias:kitsap",
+      "date-precision:year"
     ],
     "source": "curated",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996361400a.webp?v=1770946121",
@@ -618448,28 +618002,6 @@
     "sku": "HYEBG0330",
     "source": "ee",
     "imageUrl": "https://media.entertainmentearth.com/assets/images/058e6619663f4ba49f226555b6e2ea73lg.jpg"
-  },
-  {
-    "id": "afmon-hasbro-g-i-joe-classified-series-186-edwin-lifeline-steen-6-inch-ac-hsg2272",
-    "name": "G.I. Joe Classified Series #186 Edwin Lifeline Steen 6-Inch Action Figure",
-    "subtitle": "G.I. Joe Classified",
-    "line": "G.I. Joe Classified",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2026-09-21",
-    "msrp": 27.99,
-    "scale": "6\"",
-    "demand": 1.0,
-    "tags": [
-      "af-monitor",
-      "ee",
-      "hasbro",
-      "g-i-joe-classified",
-      "af-monitor-20260921"
-    ],
-    "sku": "HSG2272",
-    "source": "ee",
-    "imageUrl": "https://media.entertainmentearth.com/assets/images/5ae945b0cad7494cba75e1dd33d6ad04lg.jpg"
   },
   {
     "id": "afmon-hasbro-g-i-joe-classified-series-retro-cardback-david-crazylegs-tho-hsg2291",

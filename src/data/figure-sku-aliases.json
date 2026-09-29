@@ -4473,15 +4473,6 @@
     "d14ss-aoe-grimlock": [
       "G1888"
     ],
-    "cls5-cls-cobra-island-cc": [
-      "HASG2081",
-      "SSC222793",
-      "SUP817265",
-      "SUP7-OR-GIJO-12276-SET",
-      "SUP7-UL-GIJOW01-CCO-01",
-      "HPK4600000",
-      "HPE4300000"
-    ],
     "sf-neca-store-aliens-40th-anniversary-alien-queen-ultra-deluxe-boxed-figure": [
       "NE51800-01"
     ],
@@ -5866,11 +5857,6 @@
       "NE51720-01",
       "NEC517208",
       "NEC517192"
-    ],
-    "cls5-cls-cobra-island-destro": [
-      "HAS385066",
-      "SUP81837",
-      "SUP7-UL-GIJOW02-DES-01"
     ],
     "pm5-pm-leo-tales-battle": [
       "PLA40172"
@@ -9214,7 +9200,6 @@
       "MCF17427"
     ],
     "mcf5-mcf-batman-yearone": [
-      "176520",
       "MCF-152420-C",
       "MCF17552",
       "MCF17551",
@@ -9273,7 +9258,6 @@
       "787926156881dmg"
     ],
     "mcf5-mcf-superman-blue": [
-      "MCF17409",
       "MCF15686"
     ],
     "mcfdc-batman-collector-edition": [
@@ -9957,7 +9941,12 @@
     ],
     "joec-classified-lifeline": [
       "HASG2272",
-      "HSG2272"
+      "HSG2272",
+      "5010996361400",
+      "id:cls5-cls-tiger-force-lifeline",
+      "G2272",
+      "id:joec-tiger-force-lifeline",
+      "id:afmon-hasbro-g-i-joe-classified-series-186-edwin-lifeline-steen-6-inch-ac-hsg2272"
     ],
     "ss5-ss-shockwave-dotm": [
       "HASG0483"
@@ -10424,14 +10413,6 @@
     "pm-tmnt-mm-mikey": [
       "BOTI38738",
       "N-LF-140755"
-    ],
-    "pm5-pm-leo-mayhem-battle": [
-      "BOTI38736",
-      "N-LF-140747",
-      "HB93039",
-      "HB93040",
-      "PLA83863",
-      "BOTI38786"
     ],
     "ht-doctor-strange": [
       "HT911099"
@@ -13150,18 +13131,7 @@
       "HAS774166"
     ],
     "lc5-lc-white-tiger": [
-      "MMPR-NINJAWHITERANGER",
-      "SPECTRUM-MMPR-WHITERANGER",
-      "MMPR-WHITEDINORANGERWALGREENS",
-      "S.P.D-SHADOWRANGER",
-      "MMPR-WHITERANGER",
-      "MMPR-RANGERSLAYER",
-      "F77685L00",
-      "F61185L00",
-      "F39525L00",
-      "F46765X00",
-      "E5929AS00",
-      "E8660AS00"
+      "E5929AS00"
     ],
     "tfss-ss-core-freezer": [
       "F74885X00"
@@ -14145,30 +14115,10 @@
       "HSE0701YCJ"
     ],
     "lc5-lc-green-dragon": [
-      "HBR-F4509AX00-C",
-      "S.P.D-GREENRANGER",
-      "SPECTRUM-MMPR-GREENRANGER",
-      "MMPR-GREENRANGER",
-      "MMPR-PSYCHOGREENRANGER",
-      "MMPR-GEENRANGERPUTTY-2PACK",
-      "F73925X00",
-      "F4509AS00",
-      "F2059AS00",
-      "F29735L00",
-      "F2053AS00",
-      "E8966AS00",
-      "E89225L00"
+      "F73925X00"
     ],
     "lc5-lc-red-dragonzord": [
-      "MMPR-REDRANGER",
-      "F73865X00",
-      "F77715L00",
-      "E7755AS00",
-      "F74205L00",
-      "F51885X00",
-      "F68875L00",
-      "F29725L00",
-      "E8653AS00"
+      "F73865X00"
     ],
     "mlc-galactus-haslab": [
       "F41115L00",
@@ -43831,6 +43781,17 @@
     ],
     "mlc-sabretooth-weaponx": [
       "F90215L00"
+    ],
+    "neca-michael-kills": [
+      "634482606445",
+      "id:neca5-neca-michael-ultimate-kills"
+    ],
+    "pr2-mmpr-zordon": [
+      "MMPR-ZORDAN-ALPHA5",
+      "id:lc5-lc-zordon"
+    ],
+    "pr2-mmpr-alpha": [
+      "id:lc5-lc-alpha5"
     ]
   },
   "aliasToFigureId": {
@@ -47340,13 +47301,6 @@
     "TFSS-47HIGHTOWER": "d14ss-dotm-hightower",
     "HAS788781": "d14ss-bb-dropkick",
     "G1888": "d14ss-aoe-grimlock",
-    "HASG2081": "cls5-cls-cobra-island-cc",
-    "SSC222793": "cls5-cls-cobra-island-cc",
-    "SUP817265": "cls5-cls-cobra-island-cc",
-    "SUP7-OR-GIJO-12276-SET": "cls5-cls-cobra-island-cc",
-    "SUP7-UL-GIJOW01-CCO-01": "cls5-cls-cobra-island-cc",
-    "HPK4600000": "cls5-cls-cobra-island-cc",
-    "HPE4300000": "cls5-cls-cobra-island-cc",
     "NE51800-01": "sf-neca-store-aliens-40th-anniversary-alien-queen-ultra-deluxe-boxed-figure",
     "RE-TRAN-08168": "sf-super7-transformers-reaction-figures-optimus-primal-burning-red",
     "RE-TRANW06-WKG-01": "sf-super7-transformers-reaction-figures-wave-6-wreck-gar-g1",
@@ -48378,9 +48332,6 @@
     "NE51720-01": "sf-neca-store-alien-vs-predator-arachnoid-alien-action-figure-movie-deco",
     "NEC517208": "sf-neca-store-alien-vs-predator-arachnoid-alien-action-figure-movie-deco",
     "NEC517192": "sf-neca-store-alien-vs-predator-arachnoid-alien-action-figure-movie-deco",
-    "HAS385066": "cls5-cls-cobra-island-destro",
-    "SUP81837": "cls5-cls-cobra-island-destro",
-    "SUP7-UL-GIJOW02-DES-01": "cls5-cls-cobra-island-destro",
     "PLA40172": "pm5-pm-leo-tales-battle",
     "HAS150837": "cls5-cls-xamot",
     "HAS949540": "cls5-cls-xamot",
@@ -50795,7 +50746,6 @@
     "MCF17443": "mcfdc-batman-troika",
     "174274": "mcfdc-batman-knightquest",
     "MCF17427": "mcfdc-batman-knightquest",
-    "176520": "mcf5-mcf-batman-yearone",
     "MCF-152420-C": "mcf5-mcf-batman-yearone",
     "MCF17552": "mcf5-mcf-batman-yearone",
     "MCF17551": "mcf5-mcf-batman-yearone",
@@ -50832,7 +50782,6 @@
     "MF17473": "mf8-mf-30",
     "MF17367": "mf8-mf-30",
     "JUL218750": "mf8-mf-30",
-    "MCF17409": "mcf5-mcf-superman-blue",
     "MCF15686": "mcf5-mcf-superman-blue",
     "MCF17770": "mcfdc-batman-collector-edition",
     "MCF90209": "mf8-mf-18",
@@ -51547,12 +51496,6 @@
     "EXG-HDHMPT400634-C": "pm-tmnt-mm-don",
     "BOTI38738": "pm-tmnt-mm-mikey",
     "N-LF-140755": "pm-tmnt-mm-mikey",
-    "BOTI38736": "pm5-pm-leo-mayhem-battle",
-    "N-LF-140747": "pm5-pm-leo-mayhem-battle",
-    "HB93039": "pm5-pm-leo-mayhem-battle",
-    "HB93040": "pm5-pm-leo-mayhem-battle",
-    "PLA83863": "pm5-pm-leo-mayhem-battle",
-    "BOTI38786": "pm5-pm-leo-mayhem-battle",
     "HT911099": "ht-doctor-strange",
     "DC35314": "dcdclassic-x26-batman",
     "DCD BM ANIMATED SER NBA HARVEY BULLOCK": "dcdclassic-x26-batman",
@@ -53253,18 +53196,7 @@
     "F7234AX00": "tfss-ssge02-barricade",
     "HAS380791": "tfss-ssge02-barricade",
     "HAS774166": "tfss-ssge02-barricade",
-    "MMPR-NINJAWHITERANGER": "lc5-lc-white-tiger",
-    "SPECTRUM-MMPR-WHITERANGER": "lc5-lc-white-tiger",
-    "MMPR-WHITEDINORANGERWALGREENS": "lc5-lc-white-tiger",
-    "S.P.D-SHADOWRANGER": "lc5-lc-white-tiger",
-    "MMPR-WHITERANGER": "lc5-lc-white-tiger",
-    "MMPR-RANGERSLAYER": "lc5-lc-white-tiger",
-    "F77685L00": "lc5-lc-white-tiger",
-    "F61185L00": "lc5-lc-white-tiger",
-    "F39525L00": "lc5-lc-white-tiger",
-    "F46765X00": "lc5-lc-white-tiger",
     "E5929AS00": "lc5-lc-white-tiger",
-    "E8660AS00": "lc5-lc-white-tiger",
     "F74885X00": "tfss-ss-core-freezer",
     "C1416AX00": "bs3-bs-finn",
     "G2087": "d14ml-archangel",
@@ -53949,28 +53881,8 @@
     "HAS267388": "tfss-ssge09-ratchet",
     "HAS229751": "tfss-ssge05-cliff",
     "HSE0701YCJ": "tfss-ssge05-cliff",
-    "HBR-F4509AX00-C": "lc5-lc-green-dragon",
-    "S.P.D-GREENRANGER": "lc5-lc-green-dragon",
-    "SPECTRUM-MMPR-GREENRANGER": "lc5-lc-green-dragon",
-    "MMPR-GREENRANGER": "lc5-lc-green-dragon",
-    "MMPR-PSYCHOGREENRANGER": "lc5-lc-green-dragon",
-    "MMPR-GEENRANGERPUTTY-2PACK": "lc5-lc-green-dragon",
     "F73925X00": "lc5-lc-green-dragon",
-    "F4509AS00": "lc5-lc-green-dragon",
-    "F2059AS00": "lc5-lc-green-dragon",
-    "F29735L00": "lc5-lc-green-dragon",
-    "F2053AS00": "lc5-lc-green-dragon",
-    "E8966AS00": "lc5-lc-green-dragon",
-    "E89225L00": "lc5-lc-green-dragon",
-    "MMPR-REDRANGER": "lc5-lc-red-dragonzord",
     "F73865X00": "lc5-lc-red-dragonzord",
-    "F77715L00": "lc5-lc-red-dragonzord",
-    "E7755AS00": "lc5-lc-red-dragonzord",
-    "F74205L00": "lc5-lc-red-dragonzord",
-    "F51885X00": "lc5-lc-red-dragonzord",
-    "F68875L00": "lc5-lc-red-dragonzord",
-    "F29725L00": "lc5-lc-red-dragonzord",
-    "E8653AS00": "lc5-lc-red-dragonzord",
     "F41115L00": "mlc-galactus-haslab",
     "F34825L00": "mlc-galactus-haslab",
     "F01925L00": "d14ml-thanos-baf",
@@ -67639,7 +67551,11 @@
     "id:ml2-spiderman-india": "d14ml-spidey-india",
     "HAS328175": "ml5-ml-x97-morph",
     "HASG0806": "ml5-ml-x97-morph",
-    "G0806": "ml5-ml-x97-morph"
+    "G0806": "ml5-ml-x97-morph",
+    "5010996361400": "joec-classified-lifeline",
+    "G2272": "joec-classified-lifeline",
+    "634482606445": "neca-michael-kills",
+    "MMPR-ZORDAN-ALPHA5": "pr2-mmpr-zordon"
   },
   "collapsed": [
     {
@@ -68457,6 +68373,64 @@
         "id:hs8-hs-34"
       ],
       "reason": "Date audit phase 1: same X-Men '97 Morph (2025, G0806 / GTIN 5010996328175, AF411 marvel-legends-x-men-97-morph-11428); dropped row's sku G0806 is the same Hasbro code. Its alias F54375L00 is the 90s Animated (VHS) Morph F5437 (d14ml-morph-aoa2), a different product, so it was not carried"
+    },
+    {
+      "keepId": "joec-classified-lifeline",
+      "dropId": "cls5-cls-tiger-force-lifeline",
+      "canonicalSku": "HAS361400",
+      "aliasesAdded": [
+        "5010996361400",
+        "id:cls5-cls-tiger-force-lifeline"
+      ],
+      "reason": "Date audit phase 3: same product: Classified #186 Edwin 'Lifeline' Steen, Hasbro G2272 / GTIN 5010996361400 (keeper already carries HAS361400/HSG2272); preordered 2025-10-14, released 2026 (AF Barbecue review Apr 2026, EE in stock); dropped row's 'Tiger Force' title was invented"
+    },
+    {
+      "keepId": "joec-classified-lifeline",
+      "dropId": "joec-tiger-force-lifeline",
+      "canonicalSku": "HAS361400",
+      "aliasesAdded": [
+        "G2272",
+        "id:joec-tiger-force-lifeline"
+      ],
+      "reason": "Date audit phase 3: same product: Classified #186 Edwin 'Lifeline' Steen, Hasbro G2272 / GTIN 5010996361400 (keeper already carries HAS361400/HSG2272); preordered 2025-10-14, released 2026 (AF Barbecue review Apr 2026, EE in stock); dropped row's sku G2272 is the same Hasbro code"
+    },
+    {
+      "keepId": "joec-classified-lifeline",
+      "dropId": "afmon-hasbro-g-i-joe-classified-series-186-edwin-lifeline-steen-6-inch-ac-hsg2272",
+      "canonicalSku": "HAS361400",
+      "aliasesAdded": [
+        "id:afmon-hasbro-g-i-joe-classified-series-186-edwin-lifeline-steen-6-inch-ac-hsg2272"
+      ],
+      "reason": "Date audit phase 3: same product: Classified #186 Edwin 'Lifeline' Steen, Hasbro G2272 / GTIN 5010996361400 (keeper already carries HAS361400/HSG2272); preordered 2025-10-14, released 2026 (AF Barbecue review Apr 2026, EE in stock); dropped row's HSG2272 is the same code"
+    },
+    {
+      "keepId": "neca-michael-kills",
+      "dropId": "neca5-neca-michael-ultimate-kills",
+      "canonicalSku": "NEC606445",
+      "aliasesAdded": [
+        "634482606445",
+        "id:neca5-neca-michael-ultimate-kills"
+      ],
+      "reason": "Date audit phase 3: same product: GTIN 634482606445 (NECA item 60644, keeper sku NEC606445) Halloween Kills Michael Myers; dropped row's date 2029-09 was invented"
+    },
+    {
+      "keepId": "pr2-mmpr-zordon",
+      "dropId": "lc5-lc-zordon",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "MMPR-ZORDAN-ALPHA5",
+        "id:lc5-lc-zordon"
+      ],
+      "reason": "Date audit phase 3: the only Lightning Collection Zordon is the 2020 Walmart Zordon & Alpha 5 2-pack (UPC 5010993731107); dropped row sku MMPR-ZORDAN-ALPHA5 is that 2-pack; dropped date 2029-07 invented"
+    },
+    {
+      "keepId": "pr2-mmpr-alpha",
+      "dropId": "lc5-lc-alpha5",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:lc5-lc-alpha5"
+      ],
+      "reason": "Date audit phase 3: the only Lightning Collection Alpha 5 is the 2020 Walmart Zordon & Alpha 5 2-pack; dropped date 2029-06 invented"
     }
   ],
   "flagged": [
@@ -68615,7 +68589,7 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-09-29T03:35:17.704768+00:00",
+  "updatedAt": "2026-09-29T03:47:14.278147+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -68652,6 +68626,18 @@
       "removed": 46,
       "repointed": 3,
       "aliasesMoved": 5
+    },
+    "dateAuditPhase3a": {
+      "at": "2026-09-29T03:46:33.996928+00:00",
+      "removed": 10,
+      "repointed": 8,
+      "merged": 7,
+      "stripped": 16
+    },
+    "dateAuditPhase3b": {
+      "at": "2026-09-29T03:47:14.278147+00:00",
+      "removed": 0,
+      "repointed": 4
     }
   },
   "removed": [
@@ -69075,6 +69061,307 @@
       "aliasesMoved": {},
       "aliasesDropped": [],
       "reason": "Date audit phase 2: deleted nonexistent product: invented row from curated-bbts-wave5 (sequential date 2029-02-01); no such product found (NECA has not released/announced Andy from Alien: Romulus)"
+    },
+    {
+      "keepId": null,
+      "dropId": "cls5-cls-cobra-island-cc",
+      "canonicalSku": "08900000",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "08900000",
+        "HASG2081",
+        "HPE4300000",
+        "HPK4600000",
+        "SSC222793",
+        "SUP7-OR-GIJO-12276-SET",
+        "SUP7-UL-GIJOW01-CCO-01",
+        "SUP817265"
+      ],
+      "reason": "Date audit phase 3: deleted nonexistent product: no Cobra Island Classified Cobra Commander exists (Cobra Island Target line = Beach Head, Roadblock, Cobra Trooper, Baroness w/ C.O.I.L., Viper, Firefly, Major Bludd, Breaker, Barbecue; per AF411/FigureShelf/Toy Wizards checklists); codes were a PCS statue, Super7 and misc listings"
+    },
+    {
+      "keepId": null,
+      "dropId": "cls5-cls-cobra-island-destro",
+      "canonicalSku": "29339252",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "29339252",
+        "HAS385066",
+        "SUP7-UL-GIJOW02-DES-01",
+        "SUP81837"
+      ],
+      "reason": "Date audit phase 3: deleted nonexistent product: no Cobra Island Classified Destro exists (same checklists); sku 29339252 is the 25th Anniversary Destro comic pack"
+    },
+    {
+      "keepId": null,
+      "dropId": "jak5-jak-nintendo-link-totk",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 3: deleted nonexistent product: JAKKS never made a Tears of the Kingdom Link figure (JAKKS Zelda figures are Breath of the Wild based; TotK figures are figma/Hasbro)"
+    },
+    {
+      "keepId": null,
+      "dropId": "jak5-jak-nintendo-zelda-totk",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 3: deleted nonexistent product: JAKKS never made a Tears of the Kingdom Zelda figure"
+    },
+    {
+      "keepId": null,
+      "dropId": "lc5-lc-tommy-mmpr-remaster",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 3: deleted nonexistent product: no civilian \"Tommy Oliver\" MMPR Remastered Lightning figure exists (civilians only appear as extra heads; Remastered line has no civilian heads)"
+    },
+    {
+      "keepId": null,
+      "dropId": "lc5-lc-jason-mmpr-remaster",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 3: deleted nonexistent product: no civilian \"Jason Lee Scott\" MMPR Remastered Lightning figure exists (civilians only appear as extra heads; Remastered line has no civilian heads)"
+    },
+    {
+      "keepId": null,
+      "dropId": "lc5-lc-zack-mmpr-remaster",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 3: deleted nonexistent product: no civilian \"Zack Taylor\" MMPR Remastered Lightning figure exists (civilians only appear as extra heads; Remastered line has no civilian heads)"
+    },
+    {
+      "keepId": null,
+      "dropId": "lc5-lc-billy-mmpr-remaster",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 3: deleted nonexistent product: no civilian \"Billy Cranston\" MMPR Remastered Lightning figure exists (civilians only appear as extra heads; Remastered line has no civilian heads)"
+    },
+    {
+      "keepId": null,
+      "dropId": "lc5-lc-trini-mmpr-remaster",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 3: deleted nonexistent product: no civilian \"Trini Kwan\" MMPR Remastered Lightning figure exists (civilians only appear as extra heads; Remastered line has no civilian heads)"
+    },
+    {
+      "keepId": null,
+      "dropId": "lc5-lc-kimberly-mmpr-remaster",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 3: deleted nonexistent product: no civilian \"Kimberly Hart\" MMPR Remastered Lightning figure exists (civilians only appear as extra heads; Remastered line has no civilian heads)"
+    }
+  ],
+  "strippedCodes": [
+    {
+      "figureId": "lc5-lc-white-tiger",
+      "codes": [
+        "MMPR-NINJAWHITERANGER",
+        "SPECTRUM-MMPR-WHITERANGER",
+        "MMPR-WHITEDINORANGERWALGREENS",
+        "S.P.D-SHADOWRANGER",
+        "MMPR-WHITERANGER",
+        "MMPR-RANGERSLAYER",
+        "F77685L00",
+        "F61185L00",
+        "F39525L00",
+        "F46765X00",
+        "E8660AS00"
+      ],
+      "imageDropped": false,
+      "reason": "Date audit phase 3: codes belong to other products, not White Ranger Mighty Morphin (Lightning Collection Series 1)"
+    },
+    {
+      "figureId": "lc5-lc-green-dragon",
+      "codes": [
+        "HBR-F4509AX00-C",
+        "S.P.D-GREENRANGER",
+        "SPECTRUM-MMPR-GREENRANGER",
+        "MMPR-GREENRANGER",
+        "MMPR-PSYCHOGREENRANGER",
+        "MMPR-GEENRANGERPUTTY-2PACK",
+        "F4509AS00",
+        "F2059AS00",
+        "F29735L00",
+        "F2053AS00",
+        "E8966AS00",
+        "E89225L00"
+      ],
+      "imageDropped": false,
+      "reason": "Date audit phase 3: codes belong to other products, not Green Ranger Mighty Morphin Remastered (F7392)"
+    },
+    {
+      "figureId": "lc5-lc-red-dragonzord",
+      "codes": [
+        "MMPR-REDRANGER",
+        "F77715L00",
+        "E7755AS00",
+        "F74205L00",
+        "F51885X00",
+        "F68875L00",
+        "F29725L00",
+        "E8653AS00"
+      ],
+      "imageDropped": false,
+      "reason": "Date audit phase 3: codes belong to other products, not Red Ranger Mighty Morphin Remastered (F7386)"
+    },
+    {
+      "figureId": "pm5-pm-leo-mayhem-battle",
+      "codes": [
+        "BOTI38736",
+        "N-LF-140747",
+        "HB93039",
+        "HB93040",
+        "PLA83863",
+        "BOTI38786"
+      ],
+      "imageDropped": false,
+      "reason": "Date audit phase 3: codes belong to other products, not Leonardo Mutant Mayhem Basic (043377832812)"
+    },
+    {
+      "figureId": "mcf5-mcf-superman-blue",
+      "codes": [
+        "787926174090",
+        "MCF17409"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to Return of Superman Hal Jordan Armor Suit listing"
+    },
+    {
+      "figureId": "mcf5-mcf-wonderwoman-gold",
+      "codes": [
+        "887961522389"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to Mattel Justice League movie Wonder Woman (wrong company)"
+    },
+    {
+      "figureId": "mcf5-mcf-gl-john",
+      "codes": [
+        "887961753608"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to Mattel DC Multiverse Batman Ninja series John Stewart (wrong company)"
+    },
+    {
+      "figureId": "mcf5-mcf-collector-batman-who",
+      "codes": [
+        "787926150674"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to Batman & Bat-Raptor vehicle set listing"
+    },
+    {
+      "figureId": "mcf5-mcf-batman-yearone",
+      "codes": [
+        "787926176520dmg",
+        "176520"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to Batman Year Two B&W Accent Edition (belongs to mcfc-batman-year2)"
+    },
+    {
+      "figureId": "mcf5-mcf-batman-hush-gold",
+      "codes": [
+        "787926154993"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to The Flash movie Unmasked Batman listing"
+    },
+    {
+      "figureId": "mcf5-mcf-joker-hush-gold",
+      "codes": [
+        "787926170184"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to DC vs Vampires Vampire Joker Gold Label listing"
+    },
+    {
+      "figureId": "neca5-neca-godzilla-54-ultimate",
+      "codes": [
+        "634482428818"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to Shin Godzilla 2016 head-to-tail listing"
+    },
+    {
+      "figureId": "neca5-neca-jason-ultimate-p6",
+      "codes": [
+        "634482420034"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to Friday the 13th Part 7 Ultimate Jason listing"
+    },
+    {
+      "figureId": "neca5-neca-freddy-ultimate2",
+      "codes": [
+        "634482398890"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to Dream Warriors (Part 3) Ultimate Freddy listing"
+    },
+    {
+      "figureId": "neca5-neca-tmnt-mirage-baxter",
+      "codes": [
+        "634482541753"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to Turtles in Time Baxter Stockman listing"
+    },
+    {
+      "figureId": "neca5-neca-tmnt-mirage-foot",
+      "codes": [
+        "634482541081"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to Turtles in Time Foot Soldier listing"
+    },
+    {
+      "figureId": "pm5-pm-leo-tales-battle",
+      "codes": [
+        "043377810612"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to Original Sketch Leonardo B&W listing"
+    },
+    {
+      "figureId": "shf5-zoro-egghead",
+      "codes": [
+        "4573102649300"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to S.H.Figuarts Roronoa Zoro (Raid on Onigashima) listing"
+    },
+    {
+      "figureId": "s75-s7-tmnt-bebop",
+      "codes": [
+        "840049820470"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to Super7 TMNT Ultimates Wave 7 Robotic Bebop listing"
+    },
+    {
+      "figureId": "s75-s7-gijoe-spirit",
+      "codes": [
+        "SUP7-UL-CONAW05-VAL-01"
+      ],
+      "imageDropped": true,
+      "reason": "Date audit phase 3: barcode belongs to Super7 Conan Ultimates Valeria Spirit listing"
     }
   ]
 }
