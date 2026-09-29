@@ -68589,7 +68589,7 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-09-29T03:47:14.278147+00:00",
+  "updatedAt": "2026-09-29T03:49:50.710957+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -68638,6 +68638,17 @@
       "at": "2026-09-29T03:47:14.278147+00:00",
       "removed": 0,
       "repointed": 4
+    },
+    "dateAuditPhase4": {
+      "at": "2026-09-29T03:49:33.945828+00:00",
+      "removed": 0,
+      "ml_sheet": 23,
+      "meph": 16,
+      "unverified": 734,
+      "skipped": 41,
+      "likely_invented": 150,
+      "future_flagged": 61,
+      "keptEarlierVerified": 9
     }
   },
   "removed": [
