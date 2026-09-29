@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T17:58:53Z",
+  "generatedAt": "2026-09-29T05:28:21Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-09-20T17:58:51.584421+00:00",
+    "after": "2026-09-22T05:28:20.693174+00:00",
     "before": null
   },
   "fetch": {
@@ -41,24 +41,22 @@
     },
     "source": "live-rest",
     "pagesFetched": 1,
-    "httpStatus": 400,
+    "httpStatus": 200,
     "blocker": null,
-    "notes": [
-      "page 2: HTTP 400 (likely past last page)"
-    ],
+    "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 20,
+    "fetchedPostCount": 19,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9145,
+    "indexedRows": 9108,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 20,
+    "fetchedPosts": 19,
     "acceptedCandidates": 2,
-    "rejectedRows": 18,
+    "rejectedRows": 17,
     "byCompany": {
       "hasbro": {
         "accepted": 0,
@@ -66,7 +64,7 @@
       },
       "mcfarlane": {
         "accepted": 0,
-        "rejected": 1
+        "rejected": 0
       },
       "neca": {
         "accepted": 0,
@@ -110,12 +108,11 @@
       }
     },
     "byRejectReason": {
+      "company-not-allowlisted": 8,
       "sponsor-newsletter": 3,
       "no-new-product-identity": 1,
-      "company-not-allowlisted": 7,
       "already-in-oneshot": 3,
-      "company-unknown": 3,
-      "no-explicit-figure": 1
+      "company-unknown": 2
     },
     "applied": 0,
     "skippedApply": 2
@@ -161,6 +158,42 @@
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "storm",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/28/street-fighter-alpha-3-storm-arena-balrog-preview-599498",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599498,
+      "title": "Street Fighter Alpha 3 – Storm Arena Balrog Preview",
+      "rationale": "Recognized storm via class:companies-storm-collectibles; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "shfiguarts",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/28/marvel-gameverse-s-h-figuarts-venom-preview-599495",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599495,
+      "title": "Marvel Gameverse S.H. Figuarts Venom Preview",
+      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
     {
       "decision": "reject",
       "reason": "sponsor-newsletter",
@@ -447,60 +480,6 @@
       "toyarkPostId": 599267,
       "title": "TFSource News! Customer Appreciation Month, Everything is Back! Save up to $300 Off!",
       "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "kaiyodo",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/21/street-fighter-6-revoltech-cammy-and-chun-li-announced-599194",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599194,
-      "title": "Street Fighter 6 – Revoltech Cammy and Chun-Li Announced",
-      "rationale": "Recognized kaiyodo via class:companies-kaiyodo; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-unknown",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/21/dc-comics-beast-kingdom-absolute-batman-figure-preview-599190",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599190,
-      "title": "DC Comics – Beast Kingdom Absolute Batman Figure Preview",
-      "rationale": "No allowlisted companies-* class or unique body-text company."
-    },
-    {
-      "decision": "reject",
-      "reason": "no-explicit-figure",
-      "name": null,
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/09/21/dc-multiverse-absolute-batman-preview-599186",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/DC-Multiverse-Absolute-Batman-Preview-001.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599186,
-      "title": "DC Multiverse – Absolute Batman Preview",
-      "rationale": "Company/signal present but no explicitly named figure/variant."
     }
   ],
   "applied": [],

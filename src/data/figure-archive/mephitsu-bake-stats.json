@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-09-27T17:58:49.144608+00:00",
+  "bakedAt": "2026-09-29T05:28:15.897416+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-09-27T17:56:59.929349+00:00",
+      "bakedAt": "2026-09-29T05:26:30.032599+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 999,
@@ -39,6 +39,8 @@
         "imagesSkipped": 2,
         "aliasesAttached": 0,
         "skippedGtinConflict": 29,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
         "samples": [
           {
             "score": 65.5,
@@ -116,7 +118,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-27T17:57:08.459292+00:00",
+      "bakedAt": "2026-09-29T05:26:38.443613+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -127,31 +129,33 @@
         "already": 164
       },
       "before": {
-        "total": 431,
-        "withSku": 307,
-        "withGtin": 154,
-        "withListingPrimary": 153,
-        "withImage": 379,
-        "emptySku": 124,
-        "emptyImage": 52
+        "total": 426,
+        "withSku": 303,
+        "withGtin": 151,
+        "withListingPrimary": 152,
+        "withImage": 375,
+        "emptySku": 123,
+        "emptyImage": 51
       },
       "after": {
-        "total": 431,
-        "withSku": 307,
-        "withGtin": 154,
-        "withListingPrimary": 153,
-        "withImage": 379,
-        "emptySku": 124,
-        "emptyImage": 52
+        "total": 426,
+        "withSku": 304,
+        "withGtin": 153,
+        "withListingPrimary": 151,
+        "withImage": 375,
+        "emptySku": 122,
+        "emptyImage": 51
       },
       "apply": {
-        "matched": 170,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
+        "matched": 171,
+        "gtinAssigned": 2,
+        "gtinUpgraded": 1,
         "imagesFilled": 0,
         "imagesSkipped": 1,
-        "aliasesAttached": 0,
-        "skippedGtinConflict": 41,
+        "aliasesAttached": 1,
+        "skippedGtinConflict": 40,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
         "samples": [
           {
             "score": 72.5,
@@ -229,7 +233,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-27T17:57:11.872689+00:00",
+      "bakedAt": "2026-09-29T05:26:41.761847+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -240,20 +244,20 @@
         "already": 248
       },
       "before": {
-        "total": 561,
-        "withSku": 496,
+        "total": 562,
+        "withSku": 497,
         "withGtin": 289,
-        "withListingPrimary": 207,
-        "withImage": 484,
+        "withListingPrimary": 208,
+        "withImage": 485,
         "emptySku": 65,
         "emptyImage": 77
       },
       "after": {
-        "total": 561,
-        "withSku": 496,
+        "total": 562,
+        "withSku": 497,
         "withGtin": 289,
-        "withListingPrimary": 207,
-        "withImage": 484,
+        "withListingPrimary": 208,
+        "withImage": 485,
         "emptySku": 65,
         "emptyImage": 77
       },
@@ -265,6 +269,8 @@
         "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 5,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
         "samples": [
           {
             "score": 55.5,
@@ -342,7 +348,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-27T17:57:55.000366+00:00",
+      "bakedAt": "2026-09-29T05:27:22.782604+00:00",
       "line": "mcfarlane",
       "dryRun": false,
       "mephitsuCount": 2177,
@@ -353,31 +359,33 @@
         "already": 1013
       },
       "before": {
-        "total": 1303,
-        "withSku": 628,
-        "withGtin": 449,
+        "total": 1300,
+        "withSku": 622,
+        "withGtin": 443,
         "withListingPrimary": 179,
-        "withImage": 764,
-        "emptySku": 675,
-        "emptyImage": 539
+        "withImage": 758,
+        "emptySku": 678,
+        "emptyImage": 542
       },
       "after": {
-        "total": 1303,
-        "withSku": 628,
-        "withGtin": 449,
+        "total": 1300,
+        "withSku": 624,
+        "withGtin": 445,
         "withListingPrimary": 179,
-        "withImage": 764,
-        "emptySku": 675,
+        "withImage": 761,
+        "emptySku": 676,
         "emptyImage": 539
       },
       "apply": {
         "matched": 432,
-        "gtinAssigned": 0,
+        "gtinAssigned": 2,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 21,
+        "imagesFilled": 3,
+        "imagesSkipped": 22,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 66,
+        "skippedGtinConflict": 65,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
         "samples": [
           {
             "score": 63.0,
@@ -455,7 +463,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-27T17:58:24.188980+00:00",
+      "bakedAt": "2026-09-29T05:27:51.086087+00:00",
       "line": "neca",
       "dryRun": false,
       "mephitsuCount": 1493,
@@ -466,31 +474,33 @@
         "already": 483
       },
       "before": {
-        "total": 943,
-        "withSku": 715,
-        "withGtin": 337,
+        "total": 931,
+        "withSku": 709,
+        "withGtin": 331,
         "withListingPrimary": 378,
-        "withImage": 752,
-        "emptySku": 228,
-        "emptyImage": 191
+        "withImage": 745,
+        "emptySku": 222,
+        "emptyImage": 186
       },
       "after": {
-        "total": 943,
-        "withSku": 715,
-        "withGtin": 337,
-        "withListingPrimary": 378,
-        "withImage": 752,
-        "emptySku": 228,
-        "emptyImage": 191
+        "total": 931,
+        "withSku": 709,
+        "withGtin": 332,
+        "withListingPrimary": 377,
+        "withImage": 746,
+        "emptySku": 222,
+        "emptyImage": 185
       },
       "apply": {
-        "matched": 235,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
-        "imagesFilled": 0,
+        "matched": 234,
+        "gtinAssigned": 1,
+        "gtinUpgraded": 1,
+        "imagesFilled": 1,
         "imagesSkipped": 7,
-        "aliasesAttached": 0,
-        "skippedGtinConflict": 22,
+        "aliasesAttached": 1,
+        "skippedGtinConflict": 21,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
         "samples": [
           {
             "score": 60.0,
@@ -568,7 +578,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-27T17:58:40.382541+00:00",
+      "bakedAt": "2026-09-29T05:28:07.090289+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -579,31 +589,33 @@
         "already": 68
       },
       "before": {
-        "total": 2834,
-        "withSku": 2405,
-        "withGtin": 131,
-        "withListingPrimary": 2274,
-        "withImage": 2544,
-        "emptySku": 429,
-        "emptyImage": 290
+        "total": 2829,
+        "withSku": 2407,
+        "withGtin": 130,
+        "withListingPrimary": 2277,
+        "withImage": 2545,
+        "emptySku": 422,
+        "emptyImage": 284
       },
       "after": {
-        "total": 2834,
-        "withSku": 2405,
-        "withGtin": 131,
-        "withListingPrimary": 2274,
-        "withImage": 2544,
-        "emptySku": 429,
-        "emptyImage": 290
+        "total": 2829,
+        "withSku": 2407,
+        "withGtin": 130,
+        "withListingPrimary": 2277,
+        "withImage": 2546,
+        "emptySku": 422,
+        "emptyImage": 283
       },
       "apply": {
         "matched": 117,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
+        "imagesFilled": 1,
         "imagesSkipped": 4,
         "aliasesAttached": 0,
         "skippedGtinConflict": 12,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
         "samples": [
           {
             "score": 58.0,
@@ -681,7 +693,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-27T17:58:41.348338+00:00",
+      "bakedAt": "2026-09-29T05:28:08.090637+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -717,6 +729,8 @@
         "imagesSkipped": 22,
         "aliasesAttached": 0,
         "skippedGtinConflict": 0,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
         "samples": [
           {
             "score": 46.5,
@@ -794,7 +808,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-27T17:58:46.404984+00:00",
+      "bakedAt": "2026-09-29T05:28:13.100365+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -805,31 +819,33 @@
         "already": 89
       },
       "before": {
-        "total": 236,
-        "withSku": 90,
+        "total": 224,
+        "withSku": 89,
         "withGtin": 80,
-        "withListingPrimary": 10,
-        "withImage": 163,
-        "emptySku": 146,
-        "emptyImage": 73
+        "withListingPrimary": 9,
+        "withImage": 161,
+        "emptySku": 135,
+        "emptyImage": 63
       },
       "after": {
-        "total": 236,
-        "withSku": 90,
+        "total": 224,
+        "withSku": 89,
         "withGtin": 80,
-        "withListingPrimary": 10,
-        "withImage": 163,
-        "emptySku": 146,
-        "emptyImage": 73
+        "withListingPrimary": 9,
+        "withImage": 162,
+        "emptySku": 135,
+        "emptyImage": 62
       },
       "apply": {
-        "matched": 114,
+        "matched": 115,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
+        "imagesFilled": 1,
         "imagesSkipped": 2,
         "aliasesAttached": 0,
         "skippedGtinConflict": 23,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
         "samples": [
           {
             "score": 77.5,
@@ -907,7 +923,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-27T17:58:49.139142+00:00",
+      "bakedAt": "2026-09-29T05:28:15.891576+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,
@@ -943,6 +959,8 @@
         "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 0,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
         "samples": [
           {
             "score": 64.5,

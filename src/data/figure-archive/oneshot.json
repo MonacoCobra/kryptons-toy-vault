@@ -681,10 +681,16 @@
       "dc",
       "curated",
       "date-precision:year",
-      "date-unverified"
+      "date-unverified",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave5",
-    "imageUrl": null
+    "imageUrl": "https://static.wixstatic.com/media/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg",
+    "sku": "787926175684"
   },
   {
     "id": "cls5-cls-python-patrol-viper",
@@ -842,10 +848,12 @@
       "dc",
       "curated",
       "date-precision:year",
-      "date-unverified"
+      "date-unverified",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave5",
-    "imageUrl": null
+    "imageUrl": "https://static.wixstatic.com/media/adc447_0c78c997e04e42d882fdd2b57a01c7ec~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0c78c997e04e42d882fdd2b57a01c7ec~mv2.jpg"
   },
   {
     "id": "cls5-cls-retro-duke",
@@ -974,10 +982,12 @@
       "sku-alias",
       "alias:hobbyfigures",
       "date-precision:year",
-      "date-unverified"
+      "date-unverified",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave5",
-    "imageUrl": null
+    "imageUrl": "https://static.wixstatic.com/media/adc447_2a8f581d8fa64c4689c44e2c3ba8ff0a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2a8f581d8fa64c4689c44e2c3ba8ff0a~mv2.jpg"
   },
   {
     "id": "neca5-neca-predator-badlands",
@@ -1404,10 +1414,12 @@
       "super7",
       "curated",
       "date-precision:year",
-      "date-unverified"
+      "date-unverified",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave5",
-    "imageUrl": null
+    "imageUrl": "https://static.wixstatic.com/media/adc447_6d4a32d32b8648f7b3660caf492c450e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6d4a32d32b8648f7b3660caf492c450e~mv2.jpg"
   },
   {
     "id": "ml5-ml-wasp-quantum",
@@ -85244,9 +85256,12 @@
       "tmnt",
       "image-sku",
       "image-bake",
-      "imgsku:neca-store"
+      "imgsku:neca-store",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "sku": "NE54349-01",
+    "sku": "634482541753",
     "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/54349_UNP_8.jpg?v=1744737370",
     "source": "shopify"
   },
@@ -169405,11 +169420,14 @@
       "dc",
       "curated",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://static.wixstatic.com/media/adc447_f719a4dc0a5b44ed9546b06b2b98d13c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f719a4dc0a5b44ed9546b06b2b98d13c~mv2.jpg",
-    "sku": null
+    "sku": "787926150674"
   },
   {
     "id": "mcfdc-batman-troika",
@@ -170931,11 +170949,13 @@
       "sku-alias",
       "alias:kitsap",
       "date-precision:year",
-      "date-unverified"
+      "date-unverified",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996290731z_d4fc66e9-016c-4516-b5bb-d7f2c6654357.jpg?v=1755653072",
-    "sku": "HAS290731"
+    "sku": "29339252"
   },
   {
     "id": "d14bs-bs-bode2",
@@ -260259,11 +260279,13 @@
     "demand": 1.45,
     "tags": [
       "neca",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave2",
     "sku": null,
-    "imageUrl": null
+    "imageUrl": "https://static.wixstatic.com/media/adc447_591da24c7a7944fa91a73e532f0b8ca6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_591da24c7a7944fa91a73e532f0b8ca6~mv2.jpg"
   },
   {
     "id": "neca2-cryptkeeper",
@@ -315600,11 +315622,13 @@
     "tags": [
       "hasbro",
       "power-rangers",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave2",
     "sku": null,
-    "imageUrl": null
+    "imageUrl": "https://static.wixstatic.com/media/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg"
   },
   {
     "id": "fm8-fm-14",
@@ -589508,10 +589532,14 @@
       "mephitsu-listing",
       "gi-joe-classified",
       "gi-joe",
-      "classified"
+      "classified",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "mephitsu-listing",
-    "imageUrl": "https://static.wixstatic.com/media/adc447_1d984ad8d1b44d2fa1e538b08abd4583~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1d984ad8d1b44d2fa1e538b08abd4583~mv2.jpg"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_1d984ad8d1b44d2fa1e538b08abd4583~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1d984ad8d1b44d2fa1e538b08abd4583~mv2.jpg",
+    "sku": "5010996361400"
   },
   {
     "id": "mph-70a00a4a87f3",

@@ -10115,7 +10115,8 @@
       "id:hs8-hs-34"
     ],
     "cls5-cls-break": [
-      "G08525L00"
+      "G08525L00",
+      "HAS290731"
     ],
     "d14ml-ml-retro-ironman": [
       "HSG1593",
@@ -43769,7 +43770,8 @@
       "KAI220516"
     ],
     "sf-neca-store-teenage-mutant-ninja-turtles-mirage-comics-baxter-stockman-7-inch-": [
-      "54349"
+      "54349",
+      "NE54349-01"
     ]
   },
   "aliasToFigureId": {
@@ -67521,7 +67523,18 @@
     "G2272": "joec-classified-lifeline",
     "634482606445": "neca-michael-kills",
     "MMPR-ZORDAN-ALPHA5": "pr2-mmpr-zordon",
-    "KAI220516": "ky-ay-ay-032xf"
+    "KAI220516": "ky-ay-ay-032xf",
+    "id:cls5-cls-tiger-force-lifeline": "joec-classified-lifeline",
+    "id:joec-tiger-force-lifeline": "joec-classified-lifeline",
+    "id:afmon-hasbro-g-i-joe-classified-series-186-edwin-lifeline-steen-6-inch-ac-hsg2272": "joec-classified-lifeline",
+    "id:mlc-morph-aoa": "ml5-ml-x97-morph",
+    "id:ml3-ml-morph-aoa": "ml5-ml-x97-morph",
+    "id:hs8-hs-34": "ml5-ml-x97-morph",
+    "id:neca5-neca-michael-ultimate-kills": "neca-michael-kills",
+    "id:lc5-lc-zordon": "pr2-mmpr-zordon",
+    "id:lc5-lc-alpha5": "pr2-mmpr-alpha",
+    "HAS290731": "cls5-cls-break",
+    "NE54349-01": "sf-neca-store-teenage-mutant-ninja-turtles-mirage-comics-baxter-stockman-7-inch-"
   },
   "collapsed": [
     {
@@ -68555,7 +68568,7 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-09-29T04:08:34.631673+00:00",
+  "updatedAt": "2026-09-29T05:28:15.847361+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
