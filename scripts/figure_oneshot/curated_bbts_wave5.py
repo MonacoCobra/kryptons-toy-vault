@@ -9,16 +9,30 @@ Floor 1980; no imageUrl; AF only.
 """
 from __future__ import annotations
 
+import datetime as _dt
 import json
+import os
+import warnings
 from pathlib import Path
 
 FLOOR = "1980-01-01"
+# Max-date guard (date audit 2026-09-28): bbts_wave5_data.json was authored with a
+# per-brand month counter (row N = start + N months), which pushed 164 rows to
+# 2027-2032. Never emit a date beyond today + 24 months. Warn-only until the
+# catalog clean-up finishes; FIGURE_DATE_STRICT=1 makes it raise.
+_today = _dt.date.today()
+CEIL = _dt.date(_today.year + 2, _today.month, min(_today.day, 28)).isoformat()
 DATA = Path(__file__).with_name("bbts_wave5_data.json")
 
 
 def F(rid, name, subtitle, line, company, release, msrp, scale, demand, tags):
     if release < FLOOR:
         release = FLOOR
+    if release > CEIL:
+        msg = f"{rid}: release {release} beyond {CEIL} (placeholder date?)"
+        if os.environ.get("FIGURE_DATE_STRICT") == "1":
+            raise ValueError(msg)
+        warnings.warn(msg)
     return {
         "id": rid,
         "name": name,
