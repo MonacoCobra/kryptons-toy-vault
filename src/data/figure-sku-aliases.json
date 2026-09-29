@@ -146,7 +146,8 @@
     ],
     "shf-shf-batman": [
       "BAN259183",
-      "BAS58067-STD"
+      "BAS58067-STD",
+      "BAN637659"
     ],
     "shf2-yamcha": [
       "EBA655530",
@@ -3607,9 +3608,6 @@
     "bn3-rs-unicorn": [
       "BAN550200"
     ],
-    "neca5-neca-tmnt-mirage-baxter": [
-      "54349"
-    ],
     "tfss-ss-nemesis-2024": [
       "G03745L03",
       "TFSS-V-NEMESISPRIMEROTB-JAPAN",
@@ -4109,9 +4107,6 @@
     ],
     "tb7-38": [
       "Toybiz 48267 Famous cover Falcon"
-    ],
-    "mcf5-mcf-batman-hush-gold": [
-      "171990"
     ],
     "d14ml-ml-fan-thing": [
       "HAS283009",
@@ -5857,9 +5852,6 @@
       "NE51720-01",
       "NEC517208",
       "NEC517192"
-    ],
-    "pm5-pm-leo-tales-battle": [
-      "PLA40172"
     ],
     "cls5-cls-xamot": [
       "HAS150837",
@@ -9199,14 +9191,6 @@
       "174274",
       "MCF17427"
     ],
-    "mcf5-mcf-batman-yearone": [
-      "MCF-152420-C",
-      "MCF17552",
-      "MCF17551",
-      "MCF17652",
-      "DCMULTIVERSE-BLUEANIMATEDBATMAN",
-      "MF17418"
-    ],
     "d14mcf-superman-blackest": [
       "MCF-TM15482-C"
     ],
@@ -9317,9 +9301,6 @@
     "shf-shf-grogu": [
       "BAN654960",
       "SHFMANXGR"
-    ],
-    "shf5-batman-tsr": [
-      "BAN637659"
     ],
     "shf2-starlord": [
       "BAN590787",
@@ -12152,11 +12133,6 @@
     "sf-neca-store-sesame-street-ultimate-super-grover-7-inch-scale-action-figure": [
       "NE08624-06"
     ],
-    "shf5-ironman-mark85": [
-      "BAN143451",
-      "BAN177845",
-      "BAN851741"
-    ],
     "bn3-rs-justice": [
       "BAN656674",
       "BAN614452"
@@ -14377,10 +14353,6 @@
     ],
     "wwe-elite-dominik2": [
       "JPF02"
-    ],
-    "shf5-cap-worthy": [
-      "BAN052029",
-      "BAN074236"
     ],
     "shf5-ichigo-tybw": [
       "BAN673701",
@@ -43792,6 +43764,12 @@
     ],
     "pr2-mmpr-alpha": [
       "id:lc5-lc-alpha5"
+    ],
+    "ky-ay-ay-032xf": [
+      "KAI220516"
+    ],
+    "sf-neca-store-teenage-mutant-ninja-turtles-mirage-comics-baxter-stockman-7-inch-": [
+      "54349"
     ]
   },
   "aliasToFigureId": {
@@ -46671,7 +46649,7 @@
     "NECA 39889": "sf-neca-store-nightmare-on-elm-street-ultimate-part-2-freddy-7-scale-action-figu",
     "BAN687715": "bn7-52",
     "BAN550200": "bn3-rs-unicorn",
-    "54349": "neca5-neca-tmnt-mirage-baxter",
+    "54349": "sf-neca-store-teenage-mutant-ninja-turtles-mirage-comics-baxter-stockman-7-inch-",
     "G03745L03": "tfss-ss-nemesis-2024",
     "TFSS-V-NEMESISPRIMEROTB-JAPAN": "tfss-ss-nemesis-2024",
     "TFSS-V-NEMESISPRIMEBB-JAPAN": "tfss-ss-nemesis-2024",
@@ -47072,7 +47050,6 @@
     "F65795X00": "mlc-antman-classic",
     "EBA471860": "mx8-mx-05",
     "TOYBIZ 48267 FAMOUS COVER FALCON": "tb7-38",
-    "171990": "mcf5-mcf-batman-hush-gold",
     "HAS283009": "d14ml-ml-fan-thing",
     "HBR-F26485L05THG-C": "d14ml-ml-fan-thing",
     "HAS628360": "ml2-ironman-ultimate",
@@ -48332,7 +48309,6 @@
     "NE51720-01": "sf-neca-store-alien-vs-predator-arachnoid-alien-action-figure-movie-deco",
     "NEC517208": "sf-neca-store-alien-vs-predator-arachnoid-alien-action-figure-movie-deco",
     "NEC517192": "sf-neca-store-alien-vs-predator-arachnoid-alien-action-figure-movie-deco",
-    "PLA40172": "pm5-pm-leo-tales-battle",
     "HAS150837": "cls5-cls-xamot",
     "HAS949540": "cls5-cls-xamot",
     "HSF4025": "cls5-cls-xamot",
@@ -50746,12 +50722,6 @@
     "MCF17443": "mcfdc-batman-troika",
     "174274": "mcfdc-batman-knightquest",
     "MCF17427": "mcfdc-batman-knightquest",
-    "MCF-152420-C": "mcf5-mcf-batman-yearone",
-    "MCF17552": "mcf5-mcf-batman-yearone",
-    "MCF17551": "mcf5-mcf-batman-yearone",
-    "MCF17652": "mcf5-mcf-batman-yearone",
-    "DCMULTIVERSE-BLUEANIMATEDBATMAN": "mcf5-mcf-batman-yearone",
-    "MF17418": "mcf5-mcf-batman-yearone",
     "MCF-TM15482-C": "d14mcf-superman-blackest",
     "MCF-TM15219-C": "d14mcf-batman-zur",
     "MCF17964": "mcfdc-batman-and-robin",
@@ -50810,7 +50780,7 @@
     "BAN040828": "shf-shf-stormtrooper",
     "BAN654960": "shf-shf-grogu",
     "SHFMANXGR": "shf-shf-grogu",
-    "BAN637659": "shf5-batman-tsr",
+    "BAN637659": "shf-shf-batman",
     "BAN590787": "shf2-starlord",
     "BAN692849": "shf2-starlord",
     "BAN687500": "shf2-starlord",
@@ -52516,9 +52486,6 @@
     "NE45151-06": "sf-neca-store-dead-by-daylight-the-trapper-7-inch-scale-action-figure",
     "NE50030-06": "sf-neca-store-pee-wee-herman-ultimate-pee-wee-pals-7-inch-scale-action-figure",
     "NE08624-06": "sf-neca-store-sesame-street-ultimate-super-grover-7-inch-scale-action-figure",
-    "BAN143451": "shf5-ironman-mark85",
-    "BAN177845": "shf5-ironman-mark85",
-    "BAN851741": "shf5-ironman-mark85",
     "BAN656674": "bn3-rs-justice",
     "BAN614452": "bn3-rs-justice",
     "N-LF-138146": "bn3-rs-strike",
@@ -54077,8 +54044,6 @@
     "SUP7-RE-DEVOW01-WHP-01": "sf-super7-devo-reaction-figure-wave-1-whip-it-mark-mothersbaugh",
     "JMJ18": "sf-mattel-creations-masters-of-the-universe-x-thundercats-lion-o-action-figure-j",
     "JPF02": "wwe-elite-dominik2",
-    "BAN052029": "shf5-cap-worthy",
-    "BAN074236": "shf5-cap-worthy",
     "BAN673701": "shf5-ichigo-tybw",
     "BAS68165": "shf5-ichigo-tybw",
     "BAS65143": "shf5-ichigo-tybw",
@@ -67555,7 +67520,8 @@
     "5010996361400": "joec-classified-lifeline",
     "G2272": "joec-classified-lifeline",
     "634482606445": "neca-michael-kills",
-    "MMPR-ZORDAN-ALPHA5": "pr2-mmpr-zordon"
+    "MMPR-ZORDAN-ALPHA5": "pr2-mmpr-zordon",
+    "KAI220516": "ky-ay-ay-032xf"
   },
   "collapsed": [
     {
@@ -68589,7 +68555,7 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-09-29T03:49:50.710957+00:00",
+  "updatedAt": "2026-09-29T04:08:34.631673+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -68649,6 +68615,13 @@
       "likely_invented": 150,
       "future_flagged": 61,
       "keptEarlierVerified": 9
+    },
+    "dateAuditPhase5": {
+      "at": "2026-09-29T04:08:34.631673+00:00",
+      "removed": 200,
+      "inventedWave5Leftovers": 50,
+      "likelyInventedIfMsCt": 150,
+      "kept": 3
     }
   },
   "removed": [
@@ -69176,6 +69149,1850 @@
       "aliasesMoved": {},
       "aliasesDropped": [],
       "reason": "Date audit phase 3: deleted nonexistent product: no civilian \"Kimberly Hart\" MMPR Remastered Lightning figure exists (civilians only appear as extra heads; Remastered line has no civilian heads)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ky5-ay-spiderman-ver2-5",
+      "canonicalSku": "KAI221087",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "KAI221087"
+      ],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Spider-Man Amazing Yamaguchi Ver. 2.5' found; date 2029-01-01 was a placeholder; its codes belong to other listings (KAI221087 = Symbiote Spider-Man (Purple Ver.) NR106)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ky5-ay-deadpool-exclusive",
+      "canonicalSku": "KAI220516",
+      "aliasesAdded": [],
+      "aliasesMoved": {
+        "KAI220516": "ky-ay-ay-032xf"
+      },
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Deadpool Amazing Yamaguchi Exclusive' found; date 2029-01-01 was a placeholder; real codes moved to the matching catalog row (KAI220516 -> ky-ay-ay-032xf)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ky5-ay-wolverine-brown",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Wolverine Amazing Yamaguchi Brown Suit' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "ky5-ay-batman-hush",
+      "canonicalSku": "KAI220226",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "KAI220226"
+      ],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Batman Amazing Yamaguchi Hush' found; date 2029-01-01 was a placeholder; its codes belong to other listings (KAI220226 = Catwoman Arkham Knight NR022)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ky5-ay-joker-killing",
+      "canonicalSku": "KAI013262",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "KAI013262"
+      ],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'The Joker Amazing Yamaguchi Killing Joke' found; date 2029-01-01 was a placeholder; its codes belong to other listings (KAI013262 = AY Joker No.021)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ky5-ay-invincible-exclusive",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Invincible Amazing Yamaguchi Exclusive' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "ky5-ay-omni-man-exclusive",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Omni-Man Amazing Yamaguchi Exclusive' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "ky5-rev-eva01-new",
+      "canonicalSku": "KAI220974",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "KAI220974"
+      ],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'EVA Unit-01 Revoltech New Movie' found; date 2029-01-01 was a placeholder; its codes belong to other listings (KAI220974 = EVA Test Type-01 Rebuild 3.0 NR095)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ky5-rev-eva13",
+      "canonicalSku": "698887470896",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "698887470896"
+      ],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'EVA Unit-13 Revoltech' found; date 2029-01-01 was a placeholder; its codes belong to other listings (698887470896 = Revoltech No.13 EVA Unit-04)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ky5-rev-godzilla-21",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Godzilla Revoltech 2021' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "mcf5-mcf-batman-yearone",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "DCMULTIVERSE-BLUEANIMATEDBATMAN",
+        "MCF-152420-C",
+        "MCF17551",
+        "MCF17552",
+        "MCF17652",
+        "MF17418"
+      ],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Batman Year One Multiverse' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "mcf5-mcf-batman-longhalloween",
+      "canonicalSku": "MCF-15105_BAT-C",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "MCF-15105_BAT-C"
+      ],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Batman Long Halloween Multiverse' found; date 2029-01-01 was a placeholder; its codes belong to other listings (MCF-15105_BAT-C = The Batman 12-inch)"
+    },
+    {
+      "keepId": null,
+      "dropId": "mcf5-mcf-batman-hush-gold",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "171990"
+      ],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Batman Hush Gold Label Wave 5' found; date 2029-01-01 was a placeholder; its codes belong to other listings (171990 = Batman Hush (Sketch Edition) Gold Label)"
+    },
+    {
+      "keepId": null,
+      "dropId": "mcf5-mcf-joker-hush-gold",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'The Joker Hush Gold Label Wave 5' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "mcf5-mcf-spawn-violator-gold",
+      "canonicalSku": "MV001SB14",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "MV001SB14"
+      ],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Violator Spawn Gold Label Wave 5' found; date 2029-01-01 was a placeholder; its codes belong to other listings (MV001SB14 = Manga Violator)"
+    },
+    {
+      "keepId": null,
+      "dropId": "mcf5-mcf-spawn-gunslinger-gold",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Gunslinger Spawn Gold Label Wave 5' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "neca5-neca-godzilla-54-ultimate",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Godzilla 1954 Ultimate Wave 5' found; date 2030-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "neca5-neca-ghidorah-19-ultimate",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'King Ghidorah 2019 Ultimate Wave 5' found; date 2030-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "neca5-neca-freddy-ultimate2",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Freddy Krueger Ultimate Part 2 Wave 5' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "neca5-neca-jason-ultimate-p6",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Jason Voorhees Ultimate Part 6 Wave 5' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "neca5-neca-tiffany-tv",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Tiffany TV Series Ultimate' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "neca5-neca-ash-vs",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Ash Williams Ash vs Evil Dead Ultimate' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "neca5-neca-tmnt-mirage-baxter",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {
+        "54349": "sf-neca-store-teenage-mutant-ninja-turtles-mirage-comics-baxter-stockman-7-inch-"
+      },
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Baxter Stockman Mirage Ultimate Wave 5' found; date 2029-01-01 was a placeholder; real codes moved to the matching catalog row (54349 -> sf-neca-store-teenage-mutant-ninja-turtles-mirage-comics-baxter-stockman-7-inch-)"
+    },
+    {
+      "keepId": null,
+      "dropId": "neca5-neca-tmnt-mirage-foot",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Foot Soldier Mirage Ultimate Wave 5' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "pm5-pm-exo-jt-reissue",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'JT Marsh Exo-Squad Reissue Wave 5' found; date 2028-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "pm5-pm-krang-android",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Krang Android Body Wave 5' found; date 2028-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "pm5-pm-leo-soft-reissue",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Leonardo Classic Soft Head Reissue Wave 5' found; date 2028-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "pm5-pm-raph-soft-reissue",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Raphael Classic Soft Head Reissue Wave 5' found; date 2028-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "pm5-pm-don-soft-reissue",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Donatello Classic Soft Head Reissue Wave 5' found; date 2028-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "pm5-pm-mikey-soft-reissue",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Michelangelo Classic Soft Head Reissue Wave 5' found; date 2028-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "pm5-pm-shredder-soft-reissue",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Shredder Classic Soft Head Reissue Wave 5' found; date 2028-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "pm5-pm-leo-tales-battle",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "PLA40172"
+      ],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Leonardo Tales Battle Wave 5' found; date 2028-01-01 was a placeholder; its codes belong to other listings (PLA40172 = Tales of the TMNT Mix n Match Leonardo)"
+    },
+    {
+      "keepId": null,
+      "dropId": "shf5-zoro-egghead",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Roronoa Zoro Egghead' found; date 2030-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "shf5-gojo-hollow",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Satoru Gojo Hollow Purple Ver.' found; date 2030-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "shf5-sukuna-malevolent",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Ryomen Sukuna Malevolent Shrine' found; date 2030-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "shf5-tanjiro-entertainment",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Tanjiro Kamado Entertainment District' found; date 2030-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "shf5-batman-tsr",
+      "canonicalSku": "BAN580672",
+      "aliasesAdded": [],
+      "aliasesMoved": {
+        "BAN637659": "shf-shf-batman"
+      },
+      "aliasesDropped": [
+        "BAN580672"
+      ],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Batman The Batman SHF' found; date 2030-01-01 was a placeholder; its codes belong to other listings (BAN580672 = SHF 1989 Batman); real codes moved to the matching catalog row (BAN637659 -> shf-shf-batman)"
+    },
+    {
+      "keepId": null,
+      "dropId": "shf5-ironman-mark85",
+      "canonicalSku": "BAN567901",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "BAN143451",
+        "BAN177845",
+        "BAN567901",
+        "BAN851741"
+      ],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Iron Man Mark 85 SHF' found; date 2030-01-01 was a placeholder; its codes belong to other listings (BAN567901 = SHF Iron Man Mark XX Python)"
+    },
+    {
+      "keepId": null,
+      "dropId": "shf5-cap-worthy",
+      "canonicalSku": "BAN276265",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "BAN052029",
+        "BAN074236",
+        "BAN276265"
+      ],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Captain America Worthy SHF' found; date 2031-01-01 was a placeholder; its codes belong to other listings (BAN276265 = SHF Captain America Infinity War + effect)"
+    },
+    {
+      "keepId": null,
+      "dropId": "shf5-sasuke-final",
+      "canonicalSku": "BAN079293",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "BAN079293"
+      ],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Sasuke Uchiha Final Battle' found; date 2031-01-01 was a placeholder; its codes belong to other listings (BAN079293 = SHF Sasuke (Itachi Battle Ver.))"
+    },
+    {
+      "keepId": null,
+      "dropId": "shf5-ichigo-true",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Ichigo Kurosaki True Shikai' found; date 2031-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "s75-s7-reaction-predator2",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'City Hunter ReAction Wave 5' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "s75-s7-reaction-dutch2",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Dutch ReAction Jungle Wave 5' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "s75-s7-reaction-ash2",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Ash Williams ReAction Boomstick Wave 5' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "s75-s7-reaction-robocop2",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'RoboCop ReAction ED-209 Wave 5' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "s75-s7-gijoe-roadblock",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Roadblock ULTIMATES! Wave 5' found; date 2028-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "s75-s7-tmnt-baxter",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Baxter Stockman ULTIMATES! Wave 5' found; date 2028-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "s75-s7-motu-trapjaw",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Trap Jaw ULTIMATES! Wave 5' found; date 2028-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "s75-s7-motu-triklop",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Tri-Klops ULTIMATES! Wave 5' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "s75-s7-motu-orko",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented wave-5 row (bbts_wave5_data.json month-counter batch): no product 'Orko ULTIMATES! Wave 5' found; date 2029-01-01 was a placeholder"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-45",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-45 Airazor' (Beast Wars) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-44",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-44 Tigatron' (Beast Wars) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-43",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-43 Blackarachnia' (Beast Wars) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-42",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-42 Waspinator' (Beast Wars) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-41",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-41 Tarantulas' (Beast Wars) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-40",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-40 Megatron BW' (Beast Wars) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-39",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-39 Dinobot' (Beast Wars) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-38",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-38 Rhinox' (Beast Wars) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b50",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B50 Predaking' (Predacon Combiner) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-37",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-37 Rattrap' (Beast Wars) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b49",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B49 Abominus' (Terrorcon Combiner) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B49 is a different figure (catalog row magicsquare-ms-b49a50a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-36",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-36 Cheetor' (Beast Wars) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b48",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B48 Computron' (Technobot Combiner) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B48 is a different figure (catalog row magicsquare-ms-b48-power-king-devastator-g2-version-set-of-6)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-35",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-35 King of the Beasts' (Beast Wars) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b47",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B47 Menasor' (Stunticon Combiner) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B47 is a different figure (catalog row magicsquare-ms-b47b)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-34",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-34 Devastator' (Constructicon Combiner) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b46",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B46 Devastator' (Constructicon Combiner) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B46 is a different figure (catalog row magicsquare-ms-b46a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-33",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-33 Scavenger' (Constructicon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b45",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B45 Swoop' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex55",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-55 Sandstorm' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-32",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-32 Mixmaster' (Constructicon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b44",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B44 Sludge' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B44 is a different figure (catalog row magicsquare-ms-b44ex)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex54",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-54 Broadside' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-31",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-31 Long Haul' (Constructicon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b43",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B43 Snarl' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B43 is a different figure (catalog row magicsquare-ms-b43a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex53",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-53 Springer' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-53 is a different figure (catalog row ironfactory-ex-53s-lockdown)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-30",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-30 Bonecrusher' (Constructicon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b42",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B42 Slag' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B42 is a different figure (catalog row magicsquare-ms-b41a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex52",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-52 Arcee' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-52 is a different figure (catalog row ironfactory-ex-52s-twin-edged-blade-kochuu-norimune-drift)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-29",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-29 Hook' (Constructicon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b41",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B41 Grimlock' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex51",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-51 Kup' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-51 is a different figure (catalog row ironfactory-ex-51a-powerglide)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-28",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-28 Scrapper' (Constructicon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b40",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B40 Megatron' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B40 is a different figure (catalog row magicsquare-ms-b39a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex50",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-50 Hot Rod' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-50 is a different figure (catalog row ironfactory-ex-50k-kagemusha-boohmaru-grimlock)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-27",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-27 Damaged King' (Constructicon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b39",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B39 Optimus Prime' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex49",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-49 Perceptor' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-49 is a different figure (catalog row ironfactory-ex-49r-devcon-galaxy-ranger)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-26",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-26 Superion' (Aerialbot Combiner) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b38",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B38 Bumblebee' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex48",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-48 Blaster' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-25",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-25 Slingshot' (Aerialbot) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b37",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B37 Cliffjumper' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B37 is a different figure (catalog row magicsquare-ms-b37a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex47",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-47 Scourge' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-47 is a different figure (catalog row ironfactory-ex-47d-viod-tyrant-deul-galvatron)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-24",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-24 Air Raid' (Aerialbot) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b36",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B36 Trailbreaker' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B36 is a different figure (catalog row magicsquare-ms-b36d)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex46",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-46 Cyclonus' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-46 is a different figure (catalog row ironfactory-ex-46m-mukurokumoki-bonzaitron)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-23",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-23 Skydive' (Aerialbot) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b35",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B35 Smokescreen' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B35 is a different figure (catalog row magicsquare-ms-b35a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex45",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-45 Galvatron' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-45 is a different figure (catalog row ironfactory-ex-45m-kagami-shishimaru-lio-convoy-shatter-glass)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-22",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-22 Fireflash' (Aerialbot) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b34",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B34 Bluestreak' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex44",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-44 Rodimus' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-44 is a different figure (catalog row ironfactory-ex-44m-ultra-magnus-shattered-glass-version)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-21",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-21 Thunder Warrior' (Aerialbot) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b33",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B33 Sunstreaker' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B33 is a different figure (catalog row magicsquare-ms-b33x)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex43",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-43 Ultra Magnus' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-43 is a different figure (catalog row ironfactory-ex-43r-primal-commander-scarlet)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-20",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-20 Volcanicus' (Dinobot Combiner) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b32",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B32 Sideswipe' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B32 is a different figure (catalog row magicsquare-ms-b32a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex42",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-42 Megatron' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-42 is a different figure (catalog row ironfactory-ex-42z-absolute-zero-cryotek)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-19",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-19 Pterosaur' (Dinobot) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b31",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B31 Wheeljack' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B31 is a different figure (catalog row magicsquare-ms-b31a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex41",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-41 Optimus' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-41 is a different figure (catalog row ironfactory-ex-41s-shadow-wave-soundblaster)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-18",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-18 Ankylosaurus' (Dinobot) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b30",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B30 Hound' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex40",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-40 Sideswipe' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-40 is a different figure (catalog row ironfactory-ex-40m-mini-one-man-army-mirror-cliffjumper-blue)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-17",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-17 Spinosaurus' (Dinobot) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b29",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B29 Mirage' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B29 is a different figure (catalog row magicsquare-ms-b29d)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex39",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-39 Sunstreaker' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-39 is a different figure (catalog row ironfactory-ex-39d-dustfog-exhaust-sgc-convention-exclusive)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-16",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-16 Sharp Edge' (Dinobot) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b28",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B28 Prowl' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B28 is a different figure (catalog row magicsquare-ms-b28a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex38",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-38 Wheeljack' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-15",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-15 Feral Rex' (Dinobot) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b27",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B27 Jazz' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B27 is a different figure (catalog row magicsquare-ms-b27s)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex37",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-37 Trailbreaker' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-37 is a different figure (catalog row ironfactory-ex-37h-leadfoot-mirage)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-14",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-14 Piranacon' (Seacon Combiner) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b26",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B26 Ratchet' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex36",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-36 Hound' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-36 is a different figure (catalog row ironfactory-ex-36r-chaos-raven-the-fallen)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-13",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-13 Tentakil' (Seacon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b25",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B25 Ironhide' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex35",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-35 Mirage' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-12",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-12 Skalor' (Seacon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b24",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B24 Thundercracker' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex34",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-34 Jazz' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-11",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-11 Seawing' (Seacon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b23",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B23 Skywarp' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex33",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-33 Smokescreen' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-10",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-10 Overbite' (Seacon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b22",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B22 Starscream' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex32",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-32 Bluestreak' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-09",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-09 Nautilator' (Seacon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b21",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B21 Shockwave' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B21 is a different figure (catalog row magicsquare-ms-b21ex)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex31",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-31 Prowl' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-31 is a different figure (catalog row ironfactory-ex-31x-dubhe-tarn-w-combine-head-set-of-2)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-08",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-08 Snaptrap' (Seacon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b20",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B20 Soundwave' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex30",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-30 Ratchet' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-30 is a different figure (catalog row ironfactory-ex-30d-darkness-cygnus-jetfire-shattered-glass-ve)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-07",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-07 Sea King' (Seacon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b19",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B19 Scourge' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex29",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-29 Ironhide' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-06",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-06 Predaking' (Predacon Combiner) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b18",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B18 Cyclonus' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B18 is a different figure (catalog row magicsquare-ms-b18x)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex28",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-28 Frenzy' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-05",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-05 Snarl' (Predacon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b17",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B17 Galvatron' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B17 is a different figure (catalog row magicsquare-ms-b17s)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex27",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-27 Rumble' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-27 is a different figure (catalog row ironfactory-ex-27g-wing-guard-set-of-3)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-04",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-04 Tanker' (Predacon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b16",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B16 Ultra Magnus' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B16 is a different figure (catalog row magicsquare-ms-b16a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex26",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-26 Laserbeak' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-26 is a different figure (catalog row ironfactory-ex-26r-if-ex26r-racing-bros-retrograde-runabout-r)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-03",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-03 Hurricane' (Predacon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b15",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B15 Arcee' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex25",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-25 Ravage' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-02",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-02 Hunter' (Predacon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b14",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B14 Kup' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex24",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-24 Soundwave' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-24 is a different figure (catalog row ironfactory-if-ex24x-war-giant-catastrophe-bruticus-tf2000-colo)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ct5-ct-01",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'CT-01 Jungle King' (Predacon) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b13",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B13 Hot Rodimus' (B Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex23",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-23 Shockwave' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b12",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B12 Bruticus' (Despoiler Combiner) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex22",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-22 Nova Storm' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b11",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B11 Vortex' (Despoiler Set) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B11 is a different figure (catalog row magicsquare-ms-b11-2)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex21",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-21 Ion Storm' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b10",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B10 Swindle' (Despoiler Set) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B10 is a different figure (catalog row magicsquare-ms-b10a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex20",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-20 Acid Storm' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-20 is a different figure (catalog row ironfactory-ex-20p-phantoscope-nacelle)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b09",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B09 Blast' (Despoiler Set) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B09 is a different figure (catalog row magicsquare-ms-b09a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex19",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-19 Starscream' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b08",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B08 Assault' (Despoiler Set) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B08 is a different figure (catalog row magicsquare-ms-b08a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex18",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-18 Thundercracker' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-18 is a different figure (catalog row ironfactory-ex-18d-if-lordscorpion-dark-version)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b07",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B07 Despoiler' (Despoiler Set) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B07 is a different figure (catalog row magicsquare-ms-b07a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex17",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-17 Skywarp' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b06",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B06 Superion' (Light of Justice Combiner) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B06 is a different figure (catalog row magicsquare-ms-b06w)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex16",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-16 Defensor' (EX Combiner) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b05",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B05 Tornado' (Light of Justice) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex15",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-15 Rook' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b04",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B04 Hurricane' (Light of Justice) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B04 is a different figure (catalog row magicsquare-ms-b04t)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex14",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-14 Blades' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-14 is a different figure (catalog row ironfactory-ex-14n-if-nightmare-commander-nemesis-prime)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b03",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B03 Typhoon' (Light of Justice) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex13",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-13 Hot Spot' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b02",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B02 Light of Justice' (Light of Justice) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B02 is a different figure (catalog row magicsquare-ms-b02f)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex12",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-12 First Aid' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-12 is a different figure (catalog row ironfactory-ex-12g-genesic-blueflash-blue-flash-bluestreak)"
+    },
+    {
+      "keepId": null,
+      "dropId": "ms5-ms-b01",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'MS-B01 Architect' (Light of Justice) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real MS-B01 is a different figure (catalog row magicsquare-ms-b01a02a)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex11",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-11 Groove' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex10",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-10 Streetwise' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex09",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-09 Slipstream' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex08",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-08 Drift' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex07",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-07 Windbreaker' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex06",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-06 Wingsaber' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex05",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-05 Tyrant' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; the real EX-05 is a different figure (catalog row ironfactory-if-ex05h-iron-giant-s-maiden-windblade-hunter-redec)"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex04",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-04 Magnificus' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex03",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-03 Mania King' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex02",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-02 Loud Pedal' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
+    },
+    {
+      "keepId": null,
+      "dropId": "if5-if-ex01",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit phase 5: invented product: 'EX-01 Wing' (EX Series) from the bbts_wave5_data.json sequential batch; no barcode or listing, the number does not match that character; no product with that number and name found"
     }
   ],
   "strippedCodes": [
