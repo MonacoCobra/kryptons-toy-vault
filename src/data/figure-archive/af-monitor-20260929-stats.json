@@ -1,0 +1,99 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-09-29",
+  "updatedAt": "2026-09-29T14:30:00Z",
+  "added": 16,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Page2 differed; merged unique products.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 586,
+    "ee_candidates": 128,
+    "bbts_candidates": 165,
+    "added": 16,
+    "skipped_dupes": 277,
+    "rejected_non_af": 236,
+    "unmapped_company": 57,
+    "postfilter_rejected": 0
+  },
+  "oneshotBefore": 29334,
+  "oneshotAfter": 29350,
+  "ee_added": 14,
+  "bbts_added": 2,
+  "samples": [
+    {
+      "sku": "HSG2071",
+      "name": "Fantastic Four Marvel Legends Series Mole Man & Moloids 6-Inch Action Figures",
+      "id": "afmon-hasbro-fantastic-four-marvel-legends-series-mole-man-moloids-6-inch-action-figures-hsg2071",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG3111B",
+      "name": "Star Wars The Black Series 3 6-Inch Action Figures Wave 2 Case of 6",
+      "id": "afmon-hasbro-star-wars-the-black-series-3-6-inch-action-figures-wave-2-case-of-6-hsg3111b",
+      "source": "ee"
+    },
+    {
+      "sku": "MF18167",
+      "name": "DC Multiverse McFarlane Vault Collection Wave 1 Wonder Woman Classic 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-dc-multiverse-mcfarlane-vault-collection-wave-1-wonder-woman-classic-7-inc-mf18167",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG5062",
+      "name": "Deadpool & Wolverine Marvel Legends Series Deadpool (Concept Art) 6-Inch Action Figure",
+      "id": "afmon-hasbro-deadpool-wolverine-marvel-legends-series-deadpool-concept-art-6-inch-action-f-hsg5062",
+      "source": "ee"
+    },
+    {
+      "sku": "MF90329",
+      "name": "Spawn McFarlane Vault Collection Wave 1 Medieval Spawn 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-spawn-mcfarlane-vault-collection-wave-1-medieval-spawn-7-inch-scale-action-mf90329",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0746C",
+      "name": "Transformers Cyberworld Cyber Changers Wave 3 Case of 8",
+      "id": "afmon-hasbro-transformers-cyberworld-cyber-changers-wave-3-case-of-8-hsg0746c",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2280",
+      "name": "G.I. Joe Classified Series #199 Hydro-Viper 6-Inch Action Figure",
+      "id": "afmon-hasbro-g-i-joe-classified-series-199-hydro-viper-6-inch-action-figure-hsg2280",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAN93660A",
+      "name": "Vocaloid Snow Miku Collection 2027 Version Blind Box Mini-Figure Case of 8",
+      "id": "afmon-bandai-vocaloid-snow-miku-collection-2027-version-blind-box-mini-figure-case-of-blfban93660a",
+      "source": "ee"
+    },
+    {
+      "sku": "MZ76190",
+      "name": "Superman (2025) One:12 Collective Action Figure",
+      "id": "afmon-mezco-superman-2025-one-12-collective-action-figure-mz76190",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS68753",
+      "name": "X-Men Cyclops Gamerverse S.H.Figuarts Action Figure - Reissue",
+      "id": "afmon-bandai-x-men-cyclops-gamerverse-s-h-figuarts-action-figure-reissue-blfbas68753",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2110",
+      "name": "Marvel Super Heroes Magic: The Gathering Marvel Legends Series Malice (Sue Storm) 6-Inch Action Figure",
+      "id": "afmon-hasbro-marvel-super-heroes-magic-the-gathering-marvel-legends-series-malice-sue-stor-hsg2110",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2085",
+      "name": "G.I. Joe Classified Series Snake Eyes & Varmint ATV vs. Stealth Viper & Cobra Stealth Flight Pod (Trubble Bubble) Set",
+      "id": "afmon-hasbro-g-i-joe-classified-series-snake-eyes-varmint-atv-vs-stealth-viper-cobra-steal-hsg2085",
+      "source": "ee"
+    }
+  ]
+}
