@@ -10136,7 +10136,13 @@
       "F54395L00"
     ],
     "ml5-ml-x97-morph": [
-      "HSG0806"
+      "HSG0806",
+      "HAS328175",
+      "id:mlc-morph-aoa",
+      "HASG0806",
+      "id:ml3-ml-morph-aoa",
+      "G0806",
+      "id:hs8-hs-34"
     ],
     "cls5-cls-break": [
       "G08525L00"
@@ -12333,9 +12339,6 @@
     ],
     "d14ss-86-arcee": [
       "F72285X00"
-    ],
-    "hs8-hs-34": [
-      "F54375L00"
     ],
     "ky6-ay-monster-girl": [
       "KAI110480",
@@ -52700,7 +52703,6 @@
     "TFSS-10JAZZ": "tfss-ss86-jazz-alt",
     "F98785L00": "d14ss-86-ratchet",
     "F72285X00": "d14ss-86-arcee",
-    "F54375L00": "hs8-hs-34",
     "KAI110480": "ky6-ay-monster-girl",
     "KAI220271": "ky6-ay-monster-girl",
     "KAI220219": "ky6-ay-monster-girl",
@@ -67630,7 +67632,10 @@
     "id:mlc-caliban": "d14ml-caliban-baf",
     "id:ml3-ml-caliban-baf": "d14ml-caliban-baf",
     "id:mlc-apocalypse-aoa": "ml3-ml-apocalypse-baf",
-    "id:ml2-spiderman-india": "d14ml-spidey-india"
+    "id:ml2-spiderman-india": "d14ml-spidey-india",
+    "HAS328175": "ml5-ml-x97-morph",
+    "HASG0806": "ml5-ml-x97-morph",
+    "G0806": "ml5-ml-x97-morph"
   },
   "collapsed": [
     {
@@ -68418,6 +68423,36 @@
         "id:ml2-spiderman-india"
       ],
       "reason": "Shelby (ML Bible probable duplicates, 'merge em'): same Across the Spider-Verse Spider-Man India (Pavitr Prabhakar), the only ML Pavitr figure (F9172, 2024)"
+    },
+    {
+      "keepId": "ml5-ml-x97-morph",
+      "dropId": "mlc-morph-aoa",
+      "canonicalSku": "5010996328175",
+      "aliasesAdded": [
+        "HAS328175",
+        "id:mlc-morph-aoa"
+      ],
+      "reason": "Date audit phase 1: same X-Men '97 Morph (2025, G0806 / GTIN 5010996328175, AF411 marvel-legends-x-men-97-morph-11428); dropped row's HAS328175 is the same GTIN"
+    },
+    {
+      "keepId": "ml5-ml-x97-morph",
+      "dropId": "ml3-ml-morph-aoa",
+      "canonicalSku": "5010996328175",
+      "aliasesAdded": [
+        "HASG0806",
+        "id:ml3-ml-morph-aoa"
+      ],
+      "reason": "Date audit phase 1: same X-Men '97 Morph (2025, G0806 / GTIN 5010996328175, AF411 marvel-legends-x-men-97-morph-11428); dropped row's HASG0806 is the same Hasbro code (keeper alias HSG0806)"
+    },
+    {
+      "keepId": "ml5-ml-x97-morph",
+      "dropId": "hs8-hs-34",
+      "canonicalSku": "5010996328175",
+      "aliasesAdded": [
+        "G0806",
+        "id:hs8-hs-34"
+      ],
+      "reason": "Date audit phase 1: same X-Men '97 Morph (2025, G0806 / GTIN 5010996328175, AF411 marvel-legends-x-men-97-morph-11428); dropped row's sku G0806 is the same Hasbro code. Its alias F54375L00 is the 90s Animated (VHS) Morph F5437 (d14ml-morph-aoa2), a different product, so it was not carried"
     }
   ],
   "flagged": [
