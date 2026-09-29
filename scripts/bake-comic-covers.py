@@ -114,8 +114,45 @@ def pub_rank(publisher: str) -> int:
 
 
 def row_year(m: dict) -> int:
+    """Prefer explicit cover/release date year over series-name year."""
+    for key in ("coverDate", "releaseDate", "onSaleDate"):
+        raw = (m.get(key) or "")[:10]
+        if len(raw) >= 4 and raw[:4].isdigit():
+            return int(raw[:4])
     y = metron.cover_year(m)
     return y if y is not None else 0
+
+
+def cover_date_iso(m: dict) -> str | None:
+    for key in ("coverDate", "releaseDate", "onSaleDate"):
+        raw = (m.get(key) or "")[:10]
+        if len(raw) >= 10 and raw[4] == "-" and raw[7] == "-":
+            return raw
+        if len(raw) == 7 and raw[4] == "-":
+            return raw + "-01"
+        if len(raw) == 4 and raw.isdigit():
+            return raw + "-01-01"
+    return None
+
+
+def is_future_dated(m: dict, today: str | None = None) -> bool:
+    iso = cover_date_iso(m)
+    if not iso:
+        return False
+    day = today or datetime.now().strftime("%Y-%m-%d")
+    return iso > day
+
+
+def is_low_yield_target(m: dict) -> bool:
+    blob = " ".join(str(m.get(k) or "") for k in ("series", "title", "issue", "variant")).lower()
+    markers = (
+        "facsimile", "ashcan", "batman day", "superman day", "free comic book day",
+        "comicspro", "preview", "director's cut", "2025 edition", "2024 edition", "2026 edition",
+    )
+    if any(x in blob for x in markers):
+        return True
+    iss = (m.get("issue") or "").strip().lower().lstrip("#")
+    return iss in ("nn", "[nn]", "n/a", "")
 
 
 def is_named_variant(variant: str | None) -> bool:
@@ -131,19 +168,33 @@ def has_cover(cid: str, upc_map: dict, cover_urls: dict, meta_row: dict) -> bool
     return locg.row_has_cover(cid, upc_map=upc_map, cover_urls=cover_urls, meta_row=meta_row)
 
 
-def candidates(meta: dict, upc_map: dict, cover_urls: dict, min_year: int) -> list[str]:
-    """Prefer key (non-named-variant) comics, then newest year, then publisher rank."""
+def candidates(
+    meta: dict, upc_map: dict, cover_urls: dict, min_year: int, max_year: int | None = None
+) -> list[str]:
+    """Prefer key-flagged / non-variant comics; skip future-dated and facsimile/nn."""
     rows = []
+    today = datetime.now().strftime("%Y-%m-%d")
     for cid, m in meta.items():
         if has_cover(cid, upc_map, cover_urls, m):
             continue
+        if is_future_dated(m, today):
+            continue
         y = row_year(m)
-        if y and y < min_year:
+        if min_year and (not y or y < min_year):
+            continue
+        if max_year is not None and (not y or y > max_year):
             continue
         named = 1 if is_named_variant(m.get("variant")) else 0
-        rows.append((cid, y, named, pub_rank(m.get("publisher") or "")))
-    # Key comics first (named=0), then newest, then publisher priority.
-    rows.sort(key=lambda t: (t[2], -t[1], t[3], t[0]))
+        low = 1 if is_low_yield_target(m) else 0
+        key_flag = 0 if (m.get("key") or 0) else 1
+        try:
+            demand = -float(m.get("demand") or 0.0)
+        except (TypeError, ValueError):
+            demand = 0.0
+        rows.append(
+            (cid, y, key_flag, named, low, demand, pub_rank(m.get("publisher") or ""))
+        )
+    rows.sort(key=lambda t: (t[2], t[3], t[4], -t[1], t[5], t[6], t[0]))
     return [t[0] for t in rows]
 
 
@@ -169,37 +220,104 @@ def cv_get(url: str) -> dict:
     except urllib.error.HTTPError as e:
         if e.code in (420, 429):
             retry = e.headers.get("Retry-After") if e.headers else None
-            wait = int(retry) if retry and str(retry).isdigit() else 3600
-            wait = max(wait, 1800)
-            print(f"  CV HTTP {e.code} — pausing {wait}s (hour window)", file=sys.stderr)
-            time.sleep(min(wait, 3600))
+            print(
+                f"  CV HTTP {e.code} Retry-After={retry} — stopping CV for this run (pullback)",
+                file=sys.stderr,
+            )
+            raise RatePaused(f"Comic Vine {e.code}")
+        if e.code in (500, 502, 503, 504):
+            print(f"  CV HTTP {e.code} — stopping CV for this run (upstream)", file=sys.stderr)
             raise RatePaused(f"Comic Vine {e.code}")
         raise
 
 
-def score_cv(hit: dict, series: str, issue: str, variant: str | None) -> int:
-    num = (issue or "").lstrip("#").strip()
-    if num.lower() == "nn":
-        num = ""
-    want = num.lower()
+def issue_numbers(issue: str) -> list[str]:
+    raw = (issue or "").lstrip("#").strip().lower()
+    if not raw or raw in ("nn", "[nn]", "n/a"):
+        return []
+    nums = re.findall(r"\d+(?:\.\d+)?", raw)
+    if raw and raw not in nums:
+        nums = [raw] + [n for n in nums if n != raw]
+    out = []
+    for n in nums:
+        if n not in out:
+            out.append(n)
+    return out
+
+
+def series_year_hint(series: str) -> int | None:
+    m = re.search(r"\((\d{4})\)\s*$", (series or "").strip())
+    return int(m.group(1)) if m else None
+
+
+def score_cv(
+    hit: dict, series: str, issue: str, variant: str | None, catalog_year: int | None = None
+) -> int:
+    """Strict match: require issue number AND series agreement. Never guess."""
+    wants = issue_numbers(issue)
     series_core = series.lower().split("(")[0].strip()
-    vol = ((hit.get("volume") or {}).get("name") or "").lower()
-    iss = str(hit.get("issue_number") or "").lower()
+    vol = ((hit.get("volume") or {}).get("name") or "").lower().strip()
+    iss = str(hit.get("issue_number") or "").lower().strip()
     name = (hit.get("name") or "").lower()
     score = 0
-    if want and iss == want:
+    if wants:
+        iss_nums = re.findall(r"\d+(?:\.\d+)?", iss) or ([iss] if iss else [])
+        if not any(w == iss or w in iss_nums for w in wants):
+            return -99
         score += 5
-    if not want:
-        score += 2
+    else:
+        score += 1
+    if not series_core or not vol:
+        return -99
     if vol == series_core:
         score += 6
-    elif series_core and (series_core in vol or vol in series_core):
-        score += 3
+    else:
+        sc_tok = set(re.findall(r"[a-z0-9]+", series_core))
+        vol_tok = set(re.findall(r"[a-z0-9]+", vol))
+        if not sc_tok or not vol_tok:
+            return -99
+        if sc_tok == vol_tok:
+            score += 6
+        elif sc_tok <= vol_tok or vol_tok <= sc_tok:
+            longer, shorter = (sc_tok, vol_tok) if len(sc_tok) >= len(vol_tok) else (vol_tok, sc_tok)
+            if shorter < longer and len(longer) - len(shorter) >= 1:
+                return -99
+            score += 3
+        elif len(sc_tok & vol_tok) / max(len(sc_tok), len(vol_tok)) >= 0.8:
+            score += 3
+        else:
+            return -99
+    hit_cd = (hit.get("cover_date") or hit.get("coverDate") or "")[:10]
+    hit_year = int(hit_cd[:4]) if len(hit_cd) >= 4 and hit_cd[:4].isdigit() else None
+    yhint = series_year_hint(series)
+    if catalog_year and hit_year:
+        if abs(hit_year - catalog_year) > 1:
+            return -99
+        score += 3 if hit_year == catalog_year else 1
+    elif catalog_year and not hit_year:
+        return -99
+    elif yhint and hit_year and hit_year < yhint - 1:
+        return -99
+    vol_obj = hit.get("volume") or {}
+    vys = vol_obj.get("start_year") or vol_obj.get("year")
+    if yhint and vys:
+        try:
+            vys_i = int(vys)
+        except (TypeError, ValueError):
+            vys_i = None
+        if vys_i is not None:
+            if vys_i == yhint:
+                score += 4
+            elif abs(vys_i - yhint) > 1:
+                return -99
     img = hit.get("image") or {}
-    if img.get("super_url") or img.get("medium_url"):
+    cover = img.get("super_url") or img.get("medium_url") or img.get("original_url") or ""
+    if cover and "img_broken" not in cover:
         score += 1
+    else:
+        return -99
     if "w.i.p" in vol or "wip" in vol:
-        score -= 4
+        return -99
     if is_named_variant(variant):
         vcore = (variant or "").lower()
         if vcore in name or vcore in vol:
@@ -212,7 +330,9 @@ def score_cv(hit: dict, series: str, issue: str, variant: str | None) -> int:
     return score
 
 
-def cv_pick_cover(series: str, issue: str, variant: str | None, upc: str | None) -> dict | None:
+def cv_pick_cover(
+    series: str, issue: str, variant: str | None, upc: str | None, catalog_year: int | None = None
+) -> dict | None:
     key = cv_key()
     if not key:
         return None
@@ -230,7 +350,12 @@ def cv_pick_cover(series: str, issue: str, variant: str | None, upc: str | None)
         ck = f"search:{q.lower()}"
         if ck in cache:
             results = cache[ck]
+            need_dates = bool(catalog_year or series_year_hint(series))
+            if need_dates and results and not any(r.get("cover_date") for r in results):
+                results = None
         else:
+            results = None
+        if results is None:
             url = (
                 f"{CV_API}/search/?"
                 + urllib.parse.urlencode(
@@ -240,7 +365,7 @@ def cv_pick_cover(series: str, issue: str, variant: str | None, upc: str | None)
                         "resources": "issue",
                         "query": q,
                         "limit": "10",
-                        "field_list": "id,name,issue_number,barcode,image,volume",
+                        "field_list": "id,name,issue_number,barcode,image,volume,cover_date",
                     }
                 )
             )
@@ -254,6 +379,7 @@ def cv_pick_cover(series: str, issue: str, variant: str | None, upc: str | None)
                     "barcode": r.get("barcode"),
                     "image": r.get("image"),
                     "volume": r.get("volume"),
+                    "cover_date": r.get("cover_date"),
                 }
                 for r in results
             ]
@@ -262,14 +388,15 @@ def cv_pick_cover(series: str, issue: str, variant: str | None, upc: str | None)
         best = None
         best_score = -99
         for r in results:
-            sc = score_cv(r, series, issue, variant)
+            sc = score_cv(r, series, issue, variant, catalog_year)
             if sc > best_score:
                 best_score = sc
                 best = r
-        if best and best_score >= 5:
+        need = 11 if issue_numbers(issue) else 7
+        if best and best_score >= need:
             img = best.get("image") or {}
             cover = img.get("super_url") or img.get("medium_url") or img.get("original_url")
-            if cover:
+            if cover and "img_broken" not in cover:
                 save_json(CV_CACHE, cache)
                 return {
                     "coverUrl": cover,
@@ -386,7 +513,7 @@ def bake_one_cv(cid: str, m: dict, upc_map: dict) -> dict | None:
     issue = m.get("issue") or "1"
     variant = m.get("variant")
     upc = locg.normalize_upc(m.get("upc") or (upc_map.get(cid) or {}).get("upc"))
-    return cv_pick_cover(series, issue, variant, upc)
+    return cv_pick_cover(series, issue, variant, upc, catalog_year=row_year(m) or None)
 
 
 def bake_one_metron(cid: str, m: dict, auth: str, delay: float) -> dict | None:
@@ -430,6 +557,12 @@ def main() -> int:
     ap.add_argument("--limit", type=int, default=0, help="0 = no cap")
     ap.add_argument("--delay", type=float, default=0.0, help="Extra spacing; floors still apply")
     ap.add_argument("--min-year", type=int, default=2020)
+    ap.add_argument(
+        "--max-year",
+        type=int,
+        default=2025,
+        help="Skip cover years above this (0 = no max). Default 2025 avoids unreleased 2026 facsimiles.",
+    )
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--max-minutes", type=float, default=0)
     args = ap.parse_args()
@@ -437,13 +570,15 @@ def main() -> int:
     meta = locg.parse_comics_meta()
     upc_map = load_json(UPC_MAP, {})
     cover_urls = load_json(COVER_URLS, {})
-    ids = candidates(meta, upc_map, cover_urls, args.min_year)
+    max_year = None if args.max_year == 0 else args.max_year
+    ids = candidates(meta, upc_map, cover_urls, args.min_year, max_year)
     if args.limit > 0:
         ids = ids[: args.limit]
     before = len(cover_urls)
+    year_band = f"{args.min_year}-{max_year if max_year is not None else 'open'}"
     print(
         f"cover bake source={args.source} candidates={len(ids)} "
-        f"covers_before={before} min_year={args.min_year} "
+        f"covers_before={before} year_band={year_band} "
         f"cv_floor={CV_HOURLY_CAP}/hr interval>={CV_MIN_INTERVAL:.0f}s "
         f"metron_floor={metron.METRON_RPM}/min {metron.METRON_DAILY_CAP}/day "
         f"metron_daily_used={metron.load_daily().get('requests')}"
@@ -458,17 +593,41 @@ def main() -> int:
     auth = metron.load_auth_header() if "metron" in sources else None
     deadline = time.time() + args.max_minutes * 60 if args.max_minutes > 0 else None
     filled = 0
+    filled_cv = 0
+    filled_metron = 0
     skipped = 0
     errors = 0
     last_cv = 0.0
     details = []
+    stopped_reason = None
+
+    def _stats_payload():
+        return {
+            "updatedAt": now_iso(),
+            "source": args.source,
+            "yearBand": year_band,
+            "coversBefore": before,
+            "filled": filled,
+            "filledCv": filled_cv,
+            "filledMetron": filled_metron,
+            "skipped": skipped,
+            "misses": errors,
+            "stoppedReason": stopped_reason,
+            "cvHourlyCap": CV_HOURLY_CAP,
+            "cvMinInterval": CV_MIN_INTERVAL,
+            "metronRpm": metron.METRON_RPM,
+            "metronDailyCap": metron.METRON_DAILY_CAP,
+            "metronDailyUsed": metron.load_daily().get("requests"),
+            "details": details[-80:],
+        }
 
     try:
         for src in sources:
             for cid in ids:
                 if deadline and time.time() >= deadline:
+                    stopped_reason = (stopped_reason + "; " if stopped_reason else "") + "max-minutes reached"
                     print("max-minutes reached")
-                    return 0
+                    break
                 cover_urls = load_json(COVER_URLS, cover_urls)
                 upc_map = load_json(UPC_MAP, upc_map)
                 m = meta.get(cid) or {}
@@ -490,17 +649,20 @@ def main() -> int:
                     else:
                         hit = bake_one_metron(cid, m, auth, max(args.delay, metron.METRON_MIN_INTERVAL))
                 except RatePaused as e:
-                    print(f"stopping: {e}")
+                    reason = f"{e} — pulled back"
+                    print(f"stopping {src}: {reason}")
+                    stopped_reason = (stopped_reason + "; " if stopped_reason else "") + reason
                     break
                 except metron.DailyCapReached as e:
-                    print(f"stopping: {e}")
+                    reason = str(e)
+                    print(f"stopping {src}: {reason}")
+                    stopped_reason = (stopped_reason + "; " if stopped_reason else "") + reason
                     break
                 if not hit or not hit.get("coverUrl"):
                     errors += 1
-                    print(f"· {cid}: no {src} cover")
+                    print(f"· {cid}: no {src} cover", flush=True)
                     continue
                 locg.save_cover_urls_atomic({cid: hit["coverUrl"]})
-                # Optional coverUrl on existing map row only — never invent upc
                 ent = dict(upc_map.get(cid) or {})
                 if not ent.get("coverUrl"):
                     patch = {"coverUrl": hit["coverUrl"], "coverSource": hit.get("source")}
@@ -508,45 +670,29 @@ def main() -> int:
                         patch["coverSourceId"] = hit["sourceId"]
                     locg.save_upc_map_atomic({cid: {**ent, **patch}}) if cid in upc_map else None
                 filled += 1
+                if src == "cv":
+                    filled_cv += 1
+                else:
+                    filled_metron += 1
                 details.append({"id": cid, "source": src, "coverUrl": hit["coverUrl"]})
-                print(f"✓ {cid}: {src} {hit['coverUrl'][:80]}")
+                print(f"✓ {cid}: {src} {hit['coverUrl']}", flush=True)
                 if filled % 10 == 0:
-                    save_json(
-                        STATS,
-                        {
-                            "updatedAt": now_iso(),
-                            "source": args.source,
-                            "coversBefore": before,
-                            "filled": filled,
-                            "skipped": skipped,
-                            "misses": errors,
-                            "cvHourlyCap": CV_HOURLY_CAP,
-                            "cvMinInterval": CV_MIN_INTERVAL,
-                            "metronRpm": metron.METRON_RPM,
-                            "metronDailyCap": metron.METRON_DAILY_CAP,
-                            "metronDailyUsed": metron.load_daily().get("requests"),
-                            "details": details[-40:],
-                        },
-                    )
+                    save_json(STATS, _stats_payload())
+            else:
+                continue
+            if stopped_reason and "max-minutes" in stopped_reason:
+                break
     finally:
-        save_json(
-            STATS,
-            {
-                "updatedAt": now_iso(),
-                "source": args.source,
-                "coversBefore": before,
-                "filled": filled,
-                "skipped": skipped,
-                "misses": errors,
-                "cvHourlyCap": CV_HOURLY_CAP,
-                "cvMinInterval": CV_MIN_INTERVAL,
-                "metronRpm": metron.METRON_RPM,
-                "metronDailyCap": metron.METRON_DAILY_CAP,
-                "metronDailyUsed": metron.load_daily().get("requests"),
-                "details": details[-80:],
-            },
+        after = len(load_json(COVER_URLS, {}))
+        payload = _stats_payload()
+        payload["coversAfter"] = after
+        save_json(STATS, payload)
+        print(
+            f"done filled={filled} cv={filled_cv} metron={filled_metron} "
+            f"skipped={skipped} misses={errors} covers={before}->{after} "
+            f"stopped={stopped_reason or 'none'}",
+            flush=True,
         )
-        print(f"done filled={filled} skipped={skipped} misses={errors} covers_before={before}")
     return 0
 
 
