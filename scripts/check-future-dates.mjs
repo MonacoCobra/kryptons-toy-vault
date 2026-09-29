@@ -5,14 +5,19 @@
 //        placeholder class that bbts_wave5_data.json injected (commit 8b3d20ec).
 // WARN   future releaseDate from a source that is not an announcement feed.
 //
-// Mode: warn-only by default while the date clean-up (phases 3-4) is running.
-// Pass --strict (or FIGURE_DATE_STRICT=1) to exit non-zero on errors.
-// Allowlist ids in scripts/future-date-allowlist.json (JSON array).
+// Mode: strict (exit 1 on errors) since the date clean-up finished (phase 4).
+// Pass --warn (or FIGURE_DATE_STRICT=0) for warn-only.
+// Allowlist in scripts/future-date-allowlist.json: JSON array of ids or {id, reason}.
 import { readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
 export const MAX_MONTHS = 24;
 const LEGIT_SOURCES = ["toyark", "preorder", "announce", "inject-shelby", "curated-mpg"];
+
+export function loadAllow(file = "scripts/future-date-allowlist.json") {
+  if (!existsSync(file)) return new Set();
+  return new Set(JSON.parse(readFileSync(file, "utf8")).map((e) => (typeof e === "string" ? e : e.id)));
+}
 
 export function horizon(today = new Date(), months = MAX_MONTHS) {
   const d = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth() + months, today.getUTCDate()));
@@ -36,10 +41,9 @@ export function checkRows(rows, { today = new Date(), allow = new Set() } = {}) 
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const args = process.argv.slice(2);
-  const strict = args.includes("--strict") || process.env.FIGURE_DATE_STRICT === "1";
+  const strict = !(args.includes("--warn") || process.env.FIGURE_DATE_STRICT === "0");
   const file = args.find((a) => !a.startsWith("--")) || "src/data/figure-archive/oneshot.json";
-  const allowFile = "scripts/future-date-allowlist.json";
-  const allow = new Set(existsSync(allowFile) ? JSON.parse(readFileSync(allowFile, "utf8")) : []);
+  const allow = loadAllow();
   const { errors, warnings } = checkRows(JSON.parse(readFileSync(file, "utf8")), { allow });
   for (const e of errors) console.log(`${strict ? "ERROR" : "WARN(strict:error)"} ${e}`);
   for (const w of warnings) console.log(`WARN  ${w}`);

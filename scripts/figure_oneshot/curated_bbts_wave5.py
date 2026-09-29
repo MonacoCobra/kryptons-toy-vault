@@ -18,19 +18,25 @@ from pathlib import Path
 FLOOR = "1980-01-01"
 # Max-date guard (date audit 2026-09-28): bbts_wave5_data.json was authored with a
 # per-brand month counter (row N = start + N months), which pushed 164 rows to
-# 2027-2032. Never emit a date beyond today + 24 months. Warn-only until the
-# catalog clean-up finishes; FIGURE_DATE_STRICT=1 makes it raise.
+# 2027-2032. Never emit a date beyond today + 24 months. Strict since the
+# clean-up finished (raises unless the id is in scripts/future-date-allowlist.json);
+# FIGURE_DATE_STRICT=0 downgrades to a warning.
 _today = _dt.date.today()
 CEIL = _dt.date(_today.year + 2, _today.month, min(_today.day, 28)).isoformat()
 DATA = Path(__file__).with_name("bbts_wave5_data.json")
+_ALLOW_FILE = Path(__file__).resolve().parent.parent / "future-date-allowlist.json"
+_ALLOW = {
+    (e if isinstance(e, str) else e["id"])
+    for e in (json.loads(_ALLOW_FILE.read_text()) if _ALLOW_FILE.exists() else [])
+}
 
 
 def F(rid, name, subtitle, line, company, release, msrp, scale, demand, tags):
     if release < FLOOR:
         release = FLOOR
-    if release > CEIL:
+    if release > CEIL and rid not in _ALLOW:
         msg = f"{rid}: release {release} beyond {CEIL} (placeholder date?)"
-        if os.environ.get("FIGURE_DATE_STRICT") == "1":
+        if os.environ.get("FIGURE_DATE_STRICT") != "0":
             raise ValueError(msg)
         warnings.warn(msg)
     return {

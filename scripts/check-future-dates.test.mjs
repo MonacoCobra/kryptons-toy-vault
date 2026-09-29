@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { checkRows, horizon } from "./check-future-dates.mjs";
+import { readFileSync } from "node:fs";
+import { checkRows, horizon, loadAllow } from "./check-future-dates.mjs";
 
 const today = new Date(Date.UTC(2026, 8, 28));
 
@@ -23,4 +24,11 @@ test("flags placeholder-far dates as errors and near-future non-announcements as
 test("allowlist suppresses", () => {
   const { errors } = checkRows([{ id: "a", releaseDate: "2031-05-01" }], { today, allow: new Set(["a"]) });
   assert.equal(errors.length, 0);
+});
+
+test("catalog has no placeholder-far release dates (strict; allowlist in scripts/future-date-allowlist.json)", () => {
+  const rows = JSON.parse(readFileSync(new URL("../src/data/figure-archive/oneshot.json", import.meta.url), "utf8"));
+  const allow = loadAllow(new URL("./future-date-allowlist.json", import.meta.url).pathname);
+  const { errors } = checkRows(rows, { allow });
+  assert.deepEqual(errors, []);
 });
