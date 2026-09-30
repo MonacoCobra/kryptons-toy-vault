@@ -129155,7 +129155,9 @@
       "imgsku:toyarena",
       "sku-alias",
       "alias:toydojo",
-      "alias:collecticon"
+      "alias:collecticon",
+      "src:showzstore",
+      "showz:6124"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4904810909057a.jpg?v=1735345602",
@@ -149236,27 +149238,6 @@
     "imageUrl": null
   },
   {
-    "id": "dw6-dw-e-39",
-    "name": "DW-E39 Bronze Warden",
-    "subtitle": "EX Series",
-    "line": "Dr. Wu EX",
-    "company": "drwu",
-    "kind": "figure",
-    "releaseDate": "2024-07-01",
-    "msrp": 50.0,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "dr-wu",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "ccs8-ccs-43",
     "name": "Goro 1/12",
     "subtitle": "Mortal Kombat 1/12",
@@ -157445,27 +157426,6 @@
     "imageUrl": null
   },
   {
-    "id": "dw6-dw-e-38",
-    "name": "DW-E38 Silver Phantom",
-    "subtitle": "EX Series",
-    "line": "Dr. Wu EX",
-    "company": "drwu",
-    "kind": "figure",
-    "releaseDate": "2024-05-01",
-    "msrp": 50.0,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "dr-wu",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "ccs8-ccs-41",
     "name": "Noob Saibot 1/12",
     "subtitle": "Mortal Kombat 1/12",
@@ -164058,7 +164018,9 @@
       "sku-gtin",
       "sku-alias",
       "alias:collecticon",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "src:showzstore",
+      "showz:5336"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-masterpiece-riggorus-mp-56-195166267685-pkg.jpg?v=1712701773",
@@ -171712,7 +171674,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "src:showzstore",
+      "showz:5226"
     ],
     "source": "curated-bbts-wave3",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-collectors-rise-of-the-beasts-deluxe-bumblebee-4895250806917.jpg?v=1707779436",
@@ -181031,7 +180995,9 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "src:showzstore",
+      "showz:5219"
     ],
     "source": "curated-bbts-wave3",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4895250807334o.jpg?v=1715886100",
@@ -192632,27 +192598,6 @@
     "source": "curated-bbts-wave7",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0510/4448/3240/files/obrien04_2fce7665-9dc1-446a-b000-d22e1adbdc18.jpg?v=1772549842",
     "sku": "PO-01-068"
-  },
-  {
-    "id": "dw6-dw-e-33",
-    "name": "DW-E33 Sapphire Siren",
-    "subtitle": "EX Series",
-    "line": "Dr. Wu EX",
-    "company": "drwu",
-    "kind": "figure",
-    "releaseDate": "2023-07-01",
-    "msrp": 50.0,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "dr-wu",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "dam-pes2-breacher",
@@ -220474,27 +220419,6 @@
     "imageUrl": null
   },
   {
-    "id": "dw6-dw-e-30",
-    "name": "DW-E30 Plasma Hawk",
-    "subtitle": "EX Series",
-    "line": "Dr. Wu EX",
-    "company": "drwu",
-    "kind": "figure",
-    "releaseDate": "2023-01-01",
-    "msrp": 50.0,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "dr-wu",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "ccs8-ccs-25",
     "name": "Scorpion Inferno",
     "subtitle": "Special",
@@ -225823,27 +225747,6 @@
     "imageUrl": null
   },
   {
-    "id": "dw6-dw-e-29",
-    "name": "DW-E29 Glacier King",
-    "subtitle": "EX Series",
-    "line": "Dr. Wu EX",
-    "company": "drwu",
-    "kind": "figure",
-    "releaseDate": "2022-11-01",
-    "msrp": 50.0,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "dr-wu",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "ccs8-ccs-23",
     "name": "Scorpion Klassic",
     "subtitle": "Special",
@@ -226390,9 +226293,9 @@
   },
   {
     "id": "tz7-45",
-    "name": "DLX Shockwave",
+    "name": "MDLX Shockwave",
     "subtitle": "Transformers",
-    "line": "threezero DLX",
+    "line": "threezero MDLX",
     "company": "threezero",
     "kind": "figure",
     "releaseDate": "2022-10-01",
@@ -226408,7 +226311,10 @@
       "sku:toydojo",
       "image-sku",
       "image-bake",
-      "imgsku:toydojo"
+      "imgsku:toydojo",
+      "fix:showz-followup",
+      "src:showzstore",
+      "showz:7507"
     ],
     "source": "curated-bbts-wave7",
     "sku": "3Z03410",
@@ -260185,27 +260091,6 @@
     "imageUrl": null
   },
   {
-    "id": "na-h28",
-    "name": "Ratchet",
-    "subtitle": "H28 Ratchet",
-    "line": "Newage",
-    "company": "newage",
-    "kind": "figure",
-    "releaseDate": "2022-01-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "newage",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave4",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "neca-krang",
     "name": "Krang",
     "subtitle": "Animated Series",
@@ -262000,27 +261885,6 @@
       "curated"
     ],
     "source": "curated-bbts-wave4",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "dw6-dw-e-24",
-    "name": "DW-E24 Chrome Dome",
-    "subtitle": "EX Series",
-    "line": "Dr. Wu EX",
-    "company": "drwu",
-    "kind": "figure",
-    "releaseDate": "2022-01-01",
-    "msrp": 50.0,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "dr-wu",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
     "sku": null,
     "imageUrl": null
   },
@@ -266763,27 +266627,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0698/7730/1541/files/20231011_144240.jpg?v=1699269847"
   },
   {
-    "id": "tfmpm-mpm12",
-    "name": "Rampage",
-    "subtitle": "MPM-12",
-    "line": "Transformers Masterpiece Movie",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-11-01",
-    "msrp": 130.0,
-    "scale": "10\"",
-    "demand": 1.4,
-    "tags": [
-      "transformers",
-      "masterpiece",
-      "mpm",
-      "curated"
-    ],
-    "source": "curated-transformers",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "joe2-moray",
     "name": "Moray",
     "subtitle": "Underwater Elite",
@@ -267270,27 +267113,6 @@
       "curated"
     ],
     "source": "curated-bbts-wave7",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "dw6-dw-e-23",
-    "name": "DW-E23 Neon Ghost",
-    "subtitle": "EX Series",
-    "line": "Dr. Wu EX",
-    "company": "drwu",
-    "kind": "figure",
-    "releaseDate": "2021-11-01",
-    "msrp": 50.0,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "dr-wu",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
     "sku": null,
     "imageUrl": null
   },
@@ -279011,27 +278833,6 @@
     "imageUrl": null
   },
   {
-    "id": "na-h24",
-    "name": "Red Alert",
-    "subtitle": "H24 Red Alert",
-    "line": "Newage",
-    "company": "newage",
-    "kind": "figure",
-    "releaseDate": "2021-07-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "newage",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave4",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "nc9-nc-43",
     "name": "Ultimate Godzilla 2003",
     "subtitle": "Godzilla",
@@ -285440,7 +285241,7 @@
   {
     "id": "tfmpm-mpm11",
     "name": "Optimus Prime",
-    "subtitle": "MPM-11",
+    "subtitle": "MPM-12",
     "line": "Transformers Masterpiece Movie",
     "company": "hasbro",
     "kind": "figure",
@@ -285457,7 +285258,10 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:showz-followup",
+      "src:showzstore",
+      "showz:2968"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-masterpiece-bumblebee-optimus-prime-mpm-12-195166117065.jpg?v=1723157481",
@@ -326013,27 +325817,6 @@
     "imageUrl": null
   },
   {
-    "id": "dw6-dw-e-14",
-    "name": "DW-E14 Night Howler",
-    "subtitle": "EX Series",
-    "line": "Dr. Wu EX",
-    "company": "drwu",
-    "kind": "figure",
-    "releaseDate": "2020-05-01",
-    "msrp": 50.0,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "dr-wu",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "did8-did-38",
     "name": "SEAL Deluxe",
     "subtitle": "Special",
@@ -334944,11 +334727,14 @@
       "threezero",
       "dlx",
       "figzero",
-      "curated"
+      "curated",
+      "src:showzstore",
+      "showz:6631",
+      "img:showzstore"
     ],
     "source": "curated-bbts-wave7",
     "sku": null,
-    "imageUrl": null
+    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2410/products/22/9bb5c31409.jpg.500x500.jpg"
   },
   {
     "id": "tz9-tz-12",
@@ -341207,27 +340993,6 @@
     "imageUrl": null
   },
   {
-    "id": "dw6-dw-e-11",
-    "name": "DW-E11 Green Machine",
-    "subtitle": "EX Series",
-    "line": "Dr. Wu EX",
-    "company": "drwu",
-    "kind": "figure",
-    "releaseDate": "2019-11-01",
-    "msrp": 50.0,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "dr-wu",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "did8-did-35",
     "name": "D80181 WWII Nurse",
     "subtitle": "Support",
@@ -345925,7 +345690,9 @@
       "alias:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toydojo"
+      "imgsku:toydojo",
+      "src:showzstore",
+      "showz:1831"
     ],
     "source": "curated-transformers",
     "sku": "TKT-MP46",
@@ -347002,7 +346769,9 @@
       "imgsku:toyarena",
       "sku:cmdstore",
       "sku-gtin",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "src:showzstore",
+      "showz:1284"
     ],
     "source": "curated-bbts-wave7",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-movie-bumblebee-optimus-prime-4897056202641.jpg?v=1723123320",
@@ -347460,27 +347229,6 @@
       "curated"
     ],
     "source": "curated-bbts-wave10",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "na-h9",
-    "name": "Cragun",
-    "subtitle": "H9 Cliffjumper (yellow)",
-    "line": "Newage",
-    "company": "newage",
-    "kind": "figure",
-    "releaseDate": "2019-08-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.2,
-    "tags": [
-      "newage",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave4",
     "sku": null,
     "imageUrl": null
   },
@@ -349617,11 +349365,14 @@
       "threezero",
       "dlx",
       "figzero",
-      "curated"
+      "curated",
+      "src:showzstore",
+      "showz:5422",
+      "img:showzstore"
     ],
     "source": "curated-bbts-wave7",
     "sku": null,
-    "imageUrl": null
+    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2407/products/26/44828b9005.jpg.500x500.jpg"
   },
   {
     "id": "tz9-tz-09",
@@ -352565,27 +352316,6 @@
     "imageUrl": null
   },
   {
-    "id": "na-h8",
-    "name": "Dicko",
-    "subtitle": "H8 Tailgate",
-    "line": "Newage",
-    "company": "newage",
-    "kind": "figure",
-    "releaseDate": "2019-06-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "newage",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave4",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "nc9-nc-18",
     "name": "Ultimate Pennywise",
     "subtitle": "Horror",
@@ -354933,27 +354663,6 @@
     "imageUrl": null
   },
   {
-    "id": "dx96-dx9-k-03",
-    "name": "K3",
-    "subtitle": "K-Series",
-    "line": "DX9 K-Series",
-    "company": "dx9",
-    "kind": "figure",
-    "releaseDate": "2019-06-01",
-    "msrp": 75.0,
-    "scale": "1:24",
-    "demand": 1.35,
-    "tags": [
-      "dx9",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "dst-ms-nebula",
     "name": "Nebula",
     "subtitle": "Classic",
@@ -356016,27 +355725,6 @@
       "curated"
     ],
     "source": "curated-bbts-wave10",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "na-h7",
-    "name": "Danny",
-    "subtitle": "H7 Swerve",
-    "line": "Newage",
-    "company": "newage",
-    "kind": "figure",
-    "releaseDate": "2019-05-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.2,
-    "tags": [
-      "newage",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave4",
     "sku": null,
     "imageUrl": null
   },
@@ -357148,7 +356836,9 @@
       "sku-alias",
       "alias:toyarena",
       "alias:toynk",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "src:showzstore",
+      "showz:1240"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-masterpiece-series-bluestreak-mp18_image.gif?v=1723122671",
@@ -357950,7 +357640,9 @@
       "image-sku",
       "imgsku:toyarena",
       "sku-alias",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "src:showzstore",
+      "showz:5220"
     ],
     "source": "curated-bbts-wave7",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4895250808294q.jpg?v=1715886160",
@@ -359029,7 +358721,9 @@
       "sku-alias",
       "alias:toydojo",
       "alias:collecticon",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "src:showzstore",
+      "showz:0954"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-masterpiece-series-wheeljack-mp-21_image.gif?v=1723127780",
@@ -359496,27 +359190,6 @@
     "kind": "figure",
     "releaseDate": "2019-04-01",
     "msrp": 90.0,
-    "scale": "1:24",
-    "demand": 1.35,
-    "tags": [
-      "dx9",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "dx96-dx9-k-02",
-    "name": "K2",
-    "subtitle": "K-Series",
-    "line": "DX9 K-Series",
-    "company": "dx9",
-    "kind": "figure",
-    "releaseDate": "2019-04-01",
-    "msrp": 75.0,
     "scale": "1:24",
     "demand": 1.35,
     "tags": [
@@ -360452,27 +360125,6 @@
       "curated"
     ],
     "source": "curated-bbts-wave10",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "na-h6",
-    "name": "Rathion",
-    "subtitle": "H6 Hubcap",
-    "line": "Newage",
-    "company": "newage",
-    "kind": "figure",
-    "releaseDate": "2019-03-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.2,
-    "tags": [
-      "newage",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave4",
     "sku": null,
     "imageUrl": null
   },
@@ -362812,27 +362464,6 @@
     "imageUrl": null
   },
   {
-    "id": "na-h5",
-    "name": "Shrow",
-    "subtitle": "H5 Cliffjumper (red)",
-    "line": "Newage",
-    "company": "newage",
-    "kind": "figure",
-    "releaseDate": "2019-02-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "newage",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave4",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "nc9-nc-14",
     "name": "Ultimate Jason",
     "subtitle": "Horror",
@@ -364043,27 +363674,6 @@
     "imageUrl": null
   },
   {
-    "id": "dx96-dx9-k-01",
-    "name": "K1",
-    "subtitle": "K-Series",
-    "line": "DX9 K-Series",
-    "company": "dx9",
-    "kind": "figure",
-    "releaseDate": "2019-02-01",
-    "msrp": 75.0,
-    "scale": "1:24",
-    "demand": 1.35,
-    "tags": [
-      "dx9",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "dv9-dv-07",
     "name": "Street Demon C",
     "subtitle": "Street",
@@ -364765,27 +364375,6 @@
       "curated"
     ],
     "source": "curated-bbts-wave10",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "na-h4",
-    "name": "Legend of Sparklers",
-    "subtitle": "H4 Gears",
-    "line": "Newage",
-    "company": "newage",
-    "kind": "figure",
-    "releaseDate": "2019-01-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.2,
-    "tags": [
-      "newage",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave4",
     "sku": null,
     "imageUrl": null
   },
@@ -367317,7 +366906,9 @@
       "sku-gtin",
       "sku-alias",
       "alias:collecticon",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "src:showzstore",
+      "showz:1217"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-masterpiece-series-10-inch-action-figure-megatron-mp-36_image.gif?v=1723135085",
@@ -369923,27 +369514,6 @@
       "curated"
     ],
     "source": "curated-bbts-wave8",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "na-h3",
-    "name": "Mickey",
-    "subtitle": "H3 Bumblebee",
-    "line": "Newage",
-    "company": "newage",
-    "kind": "figure",
-    "releaseDate": "2018-10-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "newage",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave4",
     "sku": null,
     "imageUrl": null
   },
@@ -372848,27 +372418,6 @@
       "curated"
     ],
     "source": "curated-bbts-wave7",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "dw6-dw-e-04",
-    "name": "DW-E04 Dark Commander",
-    "subtitle": "EX Series",
-    "line": "Dr. Wu EX",
-    "company": "drwu",
-    "kind": "figure",
-    "releaseDate": "2018-09-01",
-    "msrp": 50.0,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "dr-wu",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
     "sku": null,
     "imageUrl": null
   },
@@ -376080,7 +375629,9 @@
       "alias:toydojo",
       "alias:toynk",
       "alias:collecticon",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "src:showzstore",
+      "showz:1024"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-masterpiece-series-prowl-mp17_image.gif?v=1723128582",
@@ -377131,27 +376682,6 @@
       "curated"
     ],
     "source": "curated-bbts-wave8",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "na-h1",
-    "name": "Wilson",
-    "subtitle": "H1 Cliffjumper",
-    "line": "Newage",
-    "company": "newage",
-    "kind": "figure",
-    "releaseDate": "2018-06-01",
-    "msrp": 55.0,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "newage",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave4",
     "sku": null,
     "imageUrl": null
   },
@@ -380525,27 +380055,6 @@
       "curated"
     ],
     "source": "curated-bbts-wave7",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "dw6-dw-e-02",
-    "name": "DW-E02 Blue Blaze",
-    "subtitle": "EX Series",
-    "line": "Dr. Wu EX",
-    "company": "drwu",
-    "kind": "figure",
-    "releaseDate": "2018-05-01",
-    "msrp": 50.0,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "dr-wu",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
     "sku": null,
     "imageUrl": null
   },
@@ -391208,27 +390717,6 @@
     "imageUrl": null
   },
   {
-    "id": "xt6-xt-mx-08",
-    "name": "MX-08",
-    "subtitle": "MX Series",
-    "line": "XTransbots MX",
-    "company": "xtransbots",
-    "kind": "figure",
-    "releaseDate": "2017-06-01",
-    "msrp": 110.0,
-    "scale": "1:24",
-    "demand": 1.35,
-    "tags": [
-      "xtransbots",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "ta8-ta-03",
     "name": "BWM-03 Panther",
     "subtitle": "Beast Wars Metal",
@@ -393312,27 +392800,6 @@
     "imageUrl": null
   },
   {
-    "id": "xt6-xt-mx-07",
-    "name": "MX-07",
-    "subtitle": "MX Series",
-    "line": "XTransbots MX",
-    "company": "xtransbots",
-    "kind": "figure",
-    "releaseDate": "2017-04-01",
-    "msrp": 110.0,
-    "scale": "1:24",
-    "demand": 1.35,
-    "tags": [
-      "xtransbots",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "ta8-ta-02",
     "name": "BWM-02 Tiger",
     "subtitle": "Beast Wars Metal",
@@ -395239,27 +394706,6 @@
     "source": "shopify"
   },
   {
-    "id": "xt6-xt-mx-06",
-    "name": "MX-06",
-    "subtitle": "MX Series",
-    "line": "XTransbots MX",
-    "company": "xtransbots",
-    "kind": "figure",
-    "releaseDate": "2017-02-01",
-    "msrp": 110.0,
-    "scale": "1:24",
-    "demand": 1.35,
-    "tags": [
-      "xtransbots",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "ta8-ta-01",
     "name": "BWM-01 Lion",
     "subtitle": "Beast Wars Metal",
@@ -397005,27 +396451,6 @@
     "imageUrl": null
   },
   {
-    "id": "xt6-xt-mx-05",
-    "name": "MX-05",
-    "subtitle": "MX Series",
-    "line": "XTransbots MX",
-    "company": "xtransbots",
-    "kind": "figure",
-    "releaseDate": "2016-12-01",
-    "msrp": 110.0,
-    "scale": "1:24",
-    "demand": 1.35,
-    "tags": [
-      "xtransbots",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "tbl8-tb-04",
     "name": "Arhian Pirate",
     "subtitle": "Fantasy",
@@ -398186,27 +397611,6 @@
       "curated"
     ],
     "source": "curated-bbts-wave9",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "xt6-xt-mx-04",
-    "name": "MX-04",
-    "subtitle": "MX Series",
-    "line": "XTransbots MX",
-    "company": "xtransbots",
-    "kind": "figure",
-    "releaseDate": "2016-10-01",
-    "msrp": 110.0,
-    "scale": "1:24",
-    "demand": 1.35,
-    "tags": [
-      "xtransbots",
-      "transformers",
-      "3p",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
     "sku": null,
     "imageUrl": null
   },
@@ -463085,7 +462489,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:8021"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/AMK_ROTB_Mirage-00.jpg?v=1788414442",
@@ -463110,7 +462516,9 @@
       "kit",
       "inject-small-brands",
       "sku-alias",
-      "alias:yolopark"
+      "alias:yolopark",
+      "src:showzstore",
+      "showz:8020"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/AMK_TLK_Optimus_Prime-00.jpg?v=1788406207",
@@ -463156,7 +462564,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:8078"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/Pro_TF6_Shockwave-00_1.jpg?v=1787626568",
@@ -463227,7 +462637,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:7950"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/BW-Blackarachnia-01.jpg?v=1781594132",
@@ -463321,7 +462733,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:7727"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/BW_DB-AMK-01.jpg?v=1774424892",
@@ -463344,7 +462758,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:7726"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/BW_OPL-AMK-01.jpg?v=1774520235",
@@ -463509,7 +462925,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:7448"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/PRO_ARCEE-01.jpg?v=1765957390",
@@ -463695,7 +463113,9 @@
       "kit",
       "inject-small-brands",
       "sku-alias",
-      "alias:yolopark"
+      "alias:yolopark",
+      "src:showzstore",
+      "showz:6776"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/rise_of_the_beasts_optimus_prime_amk_pro_01.jpg?v=1778584689",
@@ -463906,7 +463326,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:7021"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/Generation_1_Starscream_AMK_Series_01.jpg?v=1778584870",
@@ -463975,7 +463397,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:5619"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/the_last_knight_optimus_prime_amk_pro_series_01.jpg?v=1778584152",
@@ -464060,7 +463484,9 @@
       "kit",
       "inject-small-brands",
       "sku-alias",
-      "alias:yolopark"
+      "alias:yolopark",
+      "src:showzstore",
+      "showz:5138"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/rise_of_the_beast_optimus_primal_amk_series_01.jpg?v=1778582839",
@@ -464083,7 +463509,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:5258"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/rise_of_the_beast_scourge_amk_series_01.jpg?v=1778582955",
@@ -464106,7 +463534,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:5296"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/rise_of_the_beast_cheetor_amk_series_01.jpg?v=1778582934",
@@ -464129,7 +463559,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:5321"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/rise_of_the_beast_rhinox_amk_series_01.jpg?v=1778582979",
@@ -464152,7 +463584,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:5136"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/rise_of_the_beast_optimus_prime_amk_series_01.jpg?v=1778582817",
@@ -464175,7 +463609,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:6775"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/PRO_Scourge_27.jpg?v=1778584552",
@@ -464221,7 +463657,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:5618"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/ROTB-Mirage_7.jpg?v=1778584493",
@@ -464453,7 +463891,9 @@
       "yolopark",
       "amk",
       "kit",
-      "inject-small-brands"
+      "inject-small-brands",
+      "src:showzstore",
+      "showz:5137"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0727/0796/5212/files/AMK_Bumblebee_1.jpg?v=1778582778",
@@ -470685,7 +470125,9 @@
       "flametoys",
       "kit",
       "inject-model-kits",
-      "toyarena"
+      "toyarena",
+      "src:showzstore",
+      "showz:7310"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4897054516887a.webp?v=1786406480",
@@ -470731,7 +470173,9 @@
       "flametoys",
       "kit",
       "inject-model-kits",
-      "toyarena"
+      "toyarena",
+      "src:showzstore",
+      "showz:1979"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/4897054513633g_8150a5bf-3e05-4fd5-911e-81bd51c4f893.jpg?v=1594166633",
@@ -470754,7 +470198,9 @@
       "flametoys",
       "kit",
       "inject-model-kits",
-      "toyarena"
+      "toyarena",
+      "src:showzstore",
+      "showz:1707"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/4897054513107.jpg?v=1584130067",
@@ -470869,7 +470315,9 @@
       "flametoys",
       "kit",
       "inject-model-kits",
-      "toyarena"
+      "toyarena",
+      "src:showzstore",
+      "showz:3851"
     ],
     "source": "shopify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/4897054514074b.jpg?v=1658356559",
@@ -584431,7 +583879,7 @@
   {
     "id": "uniquetoys-ut-r05b",
     "name": "Desperado (Special Paint)",
-    "subtitle": "UT-R05B — Special Paint — MP Starscream homage",
+    "subtitle": "UT-R05B — Special Paint — Megatron (DOTM) homage",
     "line": "R Series",
     "company": "uniquetoys",
     "kind": "figure",
@@ -584446,7 +583894,8 @@
       "curated",
       "inject-tf3p-small-brands",
       "code:UT-R05B",
-      "image-bake"
+      "image-bake",
+      "fix:showz-followup"
     ],
     "source": "inject-tf3p-small-brands",
     "imageUrl": "https://www.thechosenprime.com/assets/images/3rd%20party/unique%20toys/r05b/utr05b-desperado-01.jpg"
@@ -584479,7 +583928,7 @@
   {
     "id": "uniquetoys-ut-r08",
     "name": "Dumb",
-    "subtitle": "UT-R08 — Huffer homage",
+    "subtitle": "UT-R08 — Skids homage",
     "line": "R Series",
     "company": "uniquetoys",
     "kind": "figure",
@@ -584496,7 +583945,8 @@
       "code:UT-R08",
       "image-bake",
       "src:showzstore",
-      "showz:6845"
+      "showz:6845",
+      "fix:showz-followup"
     ],
     "source": "inject-tf3p-small-brands",
     "imageUrl": "https://www.thechosenprime.com/assets/images/3rd%20party/unique%20toys/r08/utr08-dumb-01.jpg"
@@ -584504,7 +583954,7 @@
   {
     "id": "uniquetoys-ut-r07",
     "name": "Dumber",
-    "subtitle": "UT-R07 — Huffer homage",
+    "subtitle": "UT-R07 — Mudflap homage",
     "line": "R Series",
     "company": "uniquetoys",
     "kind": "figure",
@@ -584521,7 +583971,8 @@
       "code:UT-R07",
       "image-bake",
       "src:showzstore",
-      "showz:7241"
+      "showz:7241",
+      "fix:showz-followup"
     ],
     "source": "inject-tf3p-small-brands",
     "imageUrl": "https://www.thechosenprime.com/assets/images/3rd%20party/unique%20toys/r07/utr07-dumber-01.jpg"
@@ -584529,7 +583980,7 @@
   {
     "id": "uniquetoys-ut-r06",
     "name": "Red Dasher",
-    "subtitle": "UT-R06 — Sideswipe homage",
+    "subtitle": "UT-R06 — Dino homage",
     "line": "R Series",
     "company": "uniquetoys",
     "kind": "figure",
@@ -584544,7 +583995,10 @@
       "curated",
       "inject-tf3p-small-brands",
       "code:UT-R06",
-      "image-bake"
+      "image-bake",
+      "fix:showz-followup",
+      "src:showzstore",
+      "showz:5808"
     ],
     "source": "inject-tf3p-small-brands",
     "imageUrl": "https://www.thechosenprime.com/assets/images/3rd%20party/unique%20toys/r06/utr06-red-dasher-01.jpg"
@@ -584552,7 +584006,7 @@
   {
     "id": "uniquetoys-ut-y03",
     "name": "Sworder",
-    "subtitle": "UT-Y03 — Drift homage",
+    "subtitle": "UT-Y03 — Sandstorm homage",
     "line": "Unique Toys",
     "company": "uniquetoys",
     "kind": "figure",
@@ -584569,7 +584023,8 @@
       "code:UT-Y03",
       "image-bake",
       "src:showzstore",
-      "showz:0782"
+      "showz:0782",
+      "fix:showz-followup"
     ],
     "source": "inject-tf3p-small-brands",
     "imageUrl": "https://www.thechosenprime.com/assets/images/3rd%20party/unique%20toys/y03%20sworder/dx9-y03-sworder-01.jpg"
@@ -584577,7 +584032,7 @@
   {
     "id": "uniquetoys-ut-r01",
     "name": "Peru Kill",
-    "subtitle": "UT-R01 — Perceptor homage",
+    "subtitle": "UT-R01 — Lockdown homage",
     "line": "R Series",
     "company": "uniquetoys",
     "kind": "figure",
@@ -584594,7 +584049,8 @@
       "code:UT-R01",
       "image-bake",
       "src:showzstore",
-      "showz:0135"
+      "showz:0135",
+      "fix:showz-followup"
     ],
     "source": "inject-tf3p-small-brands",
     "imageUrl": "https://www.thechosenprime.com/assets/images/3rd%20party/unique%20toys/r01/r01-peru-kill-01.jpg"
@@ -584602,7 +584058,7 @@
   {
     "id": "uniquetoys-ut-r04",
     "name": "Nero",
-    "subtitle": "UT-R04 — Nemesis Prime homage",
+    "subtitle": "UT-R04 — Galvatron homage",
     "line": "R Series",
     "company": "uniquetoys",
     "kind": "figure",
@@ -584617,7 +584073,8 @@
       "curated",
       "inject-tf3p-small-brands",
       "code:UT-R04",
-      "image-bake"
+      "image-bake",
+      "fix:showz-followup"
     ],
     "source": "inject-tf3p-small-brands",
     "imageUrl": "https://www.thechosenprime.com/assets/images/3rd%20party/unique%20toys/r04/r04-nero-01.jpg"
@@ -584625,7 +584082,7 @@
   {
     "id": "uniquetoys-ut-r02d",
     "name": "Challenger (Battle Damaged)",
-    "subtitle": "UT-R02D — Battle Damaged — Ultra Magnus homage",
+    "subtitle": "UT-R02D — Battle Damaged — Optimus Prime homage",
     "line": "R Series",
     "company": "uniquetoys",
     "kind": "figure",
@@ -584640,7 +584097,8 @@
       "curated",
       "inject-tf3p-small-brands",
       "code:UT-R02D",
-      "image-bake"
+      "image-bake",
+      "fix:showz-followup"
     ],
     "source": "inject-tf3p-small-brands",
     "imageUrl": "https://www.thechosenprime.com/assets/images/3rd%20party/unique%20toys/r02d/r02d-challenger-01.jpg"
@@ -584648,7 +584106,7 @@
   {
     "id": "uniquetoys-utr-03",
     "name": "Dragoon",
-    "subtitle": "UTR-03 — Springer homage",
+    "subtitle": "UTR-03 — Megatron (AOE/TLK) homage",
     "line": "R Series",
     "company": "uniquetoys",
     "kind": "figure",
@@ -584665,7 +584123,8 @@
       "code:UTR-03",
       "image-bake",
       "src:showzstore",
-      "showz:0991"
+      "showz:0991",
+      "fix:showz-followup"
     ],
     "source": "inject-tf3p-small-brands",
     "imageUrl": "https://www.thechosenprime.com/assets/images/3rd%20party/unique%20toys/r03/r03-dragoon-01.jpg"
@@ -584696,7 +584155,7 @@
   {
     "id": "uniquetoys-ut-r02b",
     "name": "Black Challenger",
-    "subtitle": "UT-R02B — Ultra Magnus homage",
+    "subtitle": "UT-R02B — Optimus Prime homage",
     "line": "R Series",
     "company": "uniquetoys",
     "kind": "figure",
@@ -584711,7 +584170,8 @@
       "curated",
       "inject-tf3p-small-brands",
       "code:UT-R02B",
-      "image-bake"
+      "image-bake",
+      "fix:showz-followup"
     ],
     "source": "inject-tf3p-small-brands",
     "imageUrl": "https://www.thechosenprime.com/assets/images/3rd%20party/unique%20toys/r02b/r02b-black-challenger-01.jpg"
@@ -584765,7 +584225,7 @@
   {
     "id": "uniquetoys-ut-m05",
     "name": "Rage Winterchill",
-    "subtitle": "UT-M05 — Dinobot homage",
+    "subtitle": "UT-M05 — Vortex homage",
     "line": "Unique Toys",
     "company": "uniquetoys",
     "kind": "figure",
@@ -584782,7 +584242,8 @@
       "code:UT-M05",
       "image-bake",
       "src:showzstore",
-      "showz:0667"
+      "showz:0667",
+      "fix:showz-followup"
     ],
     "source": "inject-tf3p-small-brands",
     "imageUrl": "https://www.thechosenprime.com/assets/images/3rd%20party/unique%20toys/m05%20rage%20winterchill/m05-rage-winterchill-01.jpg"
@@ -586116,7 +585577,7 @@
   {
     "id": "uniquetoys-ut-r05",
     "name": "Desperado",
-    "subtitle": "UT-R05 — MP Starscream homage",
+    "subtitle": "UT-R05 — Megatron (DOTM) homage",
     "line": "R Series",
     "company": "uniquetoys",
     "kind": "figure",
@@ -586133,7 +585594,8 @@
       "image-bake",
       "code:UT-R05",
       "src:showzstore",
-      "showz:4992"
+      "showz:4992",
+      "fix:showz-followup"
     ],
     "source": "inject-tf3p-small-brands",
     "imageUrl": "https://www.thechosenprime.com/assets/images/3rd%20party/unique%20toys/r05/utr05-desperado-01.jpg"
@@ -586141,7 +585603,7 @@
   {
     "id": "uniquetoys-ut-r02",
     "name": "Challenger",
-    "subtitle": "UT-R02 — Ultra Magnus homage",
+    "subtitle": "UT-R02 — Optimus Prime homage",
     "line": "R Series",
     "company": "uniquetoys",
     "kind": "figure",
@@ -586156,7 +585618,8 @@
       "curated",
       "inject-tf3p-small-brands",
       "image-bake",
-      "code:UT-R02"
+      "code:UT-R02",
+      "fix:showz-followup"
     ],
     "source": "inject-tf3p-small-brands",
     "imageUrl": "https://www.thechosenprime.com/assets/images/3rd%20party/unique%20toys/r02/r02-challenger-01.jpg"
@@ -588080,9 +587543,13 @@
       "mdlx",
       "transformers",
       "curated",
-      "inject-shelby-densify"
+      "inject-shelby-densify",
+      "src:showzstore",
+      "showz:7509",
+      "img:showzstore"
     ],
-    "source": "inject-shelby-densify"
+    "source": "inject-shelby-densify",
+    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2512/products/17/0d33531eae.jpg.500x500.jpg"
   },
   {
     "id": "tz-mdlx-g2-combat-megatron",
@@ -646511,31 +645978,6 @@
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2407/products/08/ebd560362b.jpg.500x500.jpg"
   },
   {
-    "id": "takaratomy-mp-60-ginrai-optimus-prime-w-o-trailer",
-    "name": "MP-60 Ginrai Optimus Prime w/o Trailer",
-    "subtitle": "Show.Z #6124",
-    "line": "Transformers Masterpiece",
-    "company": "takaratomy",
-    "kind": "figure",
-    "releaseDate": "2024-04-01",
-    "msrp": 0.0,
-    "scale": "MP",
-    "demand": 1.0,
-    "tags": [
-      "takaratomy",
-      "transformers",
-      "1p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:6124"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "1p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2404/products/15/7fdf52b87e.jpg.500x500.jpg"
-  },
-  {
     "id": "takaratomy-c-01-missing-link-optimus-prime-toy-version-w-t",
     "name": "Missing Link C-01 Optimus Prime Toy Version w/ Trailer",
     "subtitle": "Show.Z #5450",
@@ -646637,32 +646079,6 @@
     "property": "transformers",
     "party": "1p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2309/products/15/5e477421ba.jpg.500x500.jpg"
-  },
-  {
-    "id": "takaratomy-mp-56-hoist",
-    "name": "MP-56+ Hoist",
-    "subtitle": "Show.Z #5336",
-    "line": "Transformers Masterpiece",
-    "company": "takaratomy",
-    "kind": "figure",
-    "releaseDate": "2023-07-01",
-    "msrp": 0.0,
-    "scale": "MP",
-    "demand": 1.0,
-    "tags": [
-      "takaratomy",
-      "transformers",
-      "1p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5336",
-      "code:MP-56+"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "1p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2307/products/12/42eb28e8f9.jpg.500x500.jpg"
   },
   {
     "id": "takaratomy-canon-decepticon-refraktor-eos-r5",
@@ -646817,32 +646233,6 @@
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2107/products/28/2d392f4b03.jpg.500x500.jpg"
   },
   {
-    "id": "takaratomy-mpm-12-optimus-prime",
-    "name": "MPM-12 Optimus Prime",
-    "subtitle": "Show.Z #2968",
-    "line": "Transformers Masterpiece",
-    "company": "takaratomy",
-    "kind": "figure",
-    "releaseDate": "2021-03-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "takaratomy",
-      "transformers",
-      "1p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:2968",
-      "code:MPM-12"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "1p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2103/products/02/f39002cf6e.jpg.500x500.jpg"
-  },
-  {
     "id": "takaratomy-mp-52-sw-skywarp",
     "name": "MP-52+SW Skywarp",
     "subtitle": "Show.Z #3068",
@@ -646969,32 +646359,6 @@
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2006/products/04/3e519f442d.jpg.500x500.jpg"
   },
   {
-    "id": "takaratomy-mp-46-blackwidow",
-    "name": "MP-46 Blackwidow",
-    "subtitle": "Show.Z #1831",
-    "line": "Transformers Masterpiece",
-    "company": "takaratomy",
-    "kind": "figure",
-    "releaseDate": "2019-11-01",
-    "msrp": 0.0,
-    "scale": "MP",
-    "demand": 1.0,
-    "tags": [
-      "takaratomy",
-      "transformers",
-      "1p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:1831",
-      "code:MP-46"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "1p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/1911/products/27/e854e43190.jpg.500x500.jpg"
-  },
-  {
     "id": "takaratomy-war-for-cybertron-siege-deluxe-wave-1-side",
     "name": "War for Cybertron Siege Deluxe Wave 1 Sideswipe Hound Cog Skytread Set of 4",
     "subtitle": "Show.Z #1181",
@@ -647018,58 +646382,6 @@
     "property": "transformers",
     "party": "1p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/1901/products/03/062b9c089a.jpg.500x500.jpg"
-  },
-  {
-    "id": "takaratomy-mp-36-mp36-megatron-takaratomy-mall-exclusive-ve",
-    "name": "MP-36+ MP36+ Megatron TakaraTomy Mall Exclusive Version w/ Commemorative Coins",
-    "subtitle": "Show.Z #1217",
-    "line": "Transformers Masterpiece",
-    "company": "takaratomy",
-    "kind": "figure",
-    "releaseDate": "2019-01-01",
-    "msrp": 0.0,
-    "scale": "MP",
-    "demand": 1.0,
-    "tags": [
-      "takaratomy",
-      "transformers",
-      "1p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:1217",
-      "code:MP-36+"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "1p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/1901/products/22/2f03ddcfe2.jpg.500x500.jpg"
-  },
-  {
-    "id": "takaratomy-mp-18-mp18-streak-bluestreak-limited-edition",
-    "name": "MP-18+ MP18+ Streak Bluestreak Limited Edition",
-    "subtitle": "Show.Z #1240",
-    "line": "Transformers Masterpiece",
-    "company": "takaratomy",
-    "kind": "figure",
-    "releaseDate": "2019-02-01",
-    "msrp": 0.0,
-    "scale": "MP",
-    "demand": 1.0,
-    "tags": [
-      "takaratomy",
-      "transformers",
-      "1p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:1240",
-      "code:MP-18+"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "1p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/1902/products/13/1437c4d28d.jpg.500x500.jpg"
   },
   {
     "id": "takaratomy-deluxe-autobots-warriors-ratchet-kup-perce",
@@ -647172,32 +646484,6 @@
     "property": "transformers",
     "party": "1p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/1809/products/20/441578db11.jpeg.500x500.jpeg"
-  },
-  {
-    "id": "takaratomy-mp-17-mp17-prowl-anime-color",
-    "name": "MP-17+ MP17+ Prowl Anime Color",
-    "subtitle": "Show.Z #1024",
-    "line": "Transformers Masterpiece",
-    "company": "takaratomy",
-    "kind": "figure",
-    "releaseDate": "2019-08-01",
-    "msrp": 0.0,
-    "scale": "MP",
-    "demand": 1.0,
-    "tags": [
-      "takaratomy",
-      "transformers",
-      "1p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:1024",
-      "code:MP-17+"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "1p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/1908/products/19/5f1e53bbe9.jpg.500x500.jpg"
   },
   {
     "id": "takaratomy-mp-09-mp09-rodimus-convoy-rodimus-prime-reissue",
@@ -647326,32 +646612,6 @@
     "property": "transformers",
     "party": "1p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/1807/products/16/9bc5a0260d.jpeg.500x500.jpeg"
-  },
-  {
-    "id": "takaratomy-mp-20-wheeljack-anime-color",
-    "name": "MP-20+ Wheeljack Anime Color",
-    "subtitle": "Show.Z #0954",
-    "line": "Transformers Masterpiece",
-    "company": "takaratomy",
-    "kind": "figure",
-    "releaseDate": "2019-03-01",
-    "msrp": 0.0,
-    "scale": "MP",
-    "demand": 1.0,
-    "tags": [
-      "takaratomy",
-      "transformers",
-      "1p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:0954",
-      "code:MP-20+"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "1p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/1903/products/19/50f6e8f164.jpg.500x500.jpg"
   },
   {
     "id": "takaratomy-ss07-studio-series-leader-class-grimlock",
@@ -647843,31 +647103,6 @@
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2603/products/10/8b963da571.jpg.500x500.jpg"
   },
   {
-    "id": "yolopark-beast-wars-blackarachnia-model-kit",
-    "name": "Beast Wars Blackarachnia Model Kit",
-    "subtitle": "Show.Z #7950",
-    "line": "Yolopark AMK",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2026-06-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:7950"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2606/products/26/e25b02217c.jpg.500x500.jpg"
-  },
-  {
     "id": "threezero-3z0904-transformers-rise-of-the-beasts-dlx-shatte",
     "name": "3Z0904 Transformers Rise of the Beasts DLX Shattered Glass Goldbug",
     "subtitle": "Show.Z #8095",
@@ -647894,107 +647129,6 @@
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2609/products/01/55a9cc5911.jpg.500x500.jpg"
   },
   {
-    "id": "yolopark-the-last-knight-optimus-prime-model-kit",
-    "name": "The Last Knight Optimus Prime Model Kit",
-    "subtitle": "Show.Z #8020",
-    "line": "Yolopark AMK",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2026-07-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:8020"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2607/products/25/084cbcbd70.png.500x500.png"
-  },
-  {
-    "id": "yolopark-rise-of-the-beasts-mirage-model-kit",
-    "name": "Rise of the Beasts Mirage Model Kit",
-    "subtitle": "Show.Z #8021",
-    "line": "Yolopark AMK",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2026-07-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:8021"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2607/products/25/173d411b7a.png.500x500.png"
-  },
-  {
-    "id": "yolopark-bumblebee-shockwave-model-kit",
-    "name": "Bumblebee Shockwave Model Kit",
-    "subtitle": "Show.Z #8078",
-    "line": "Yolopark AMK PRO",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2026-08-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:8078"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2608/products/26/51bea27d45.jpg.500x500.jpg"
-  },
-  {
-    "id": "threezero-3z0341-transformers-mdlx-shockwave",
-    "name": "3Z0341 Transformers MDLX Shockwave",
-    "subtitle": "Show.Z #7507",
-    "line": "threezero MDLX",
-    "company": "threezero",
-    "kind": "figure",
-    "releaseDate": "2025-12-01",
-    "msrp": 137.99,
-    "scale": "MDLX",
-    "demand": 1.0,
-    "tags": [
-      "threezero",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:7507",
-      "code:3Z0341"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2512/products/17/ab4d93b644.jpg.500x500.jpg"
-  },
-  {
     "id": "yolopark-generation-one-bumblebee-pre-assembled-mod",
     "name": "Generation One Bumblebee Pre-Assembled Model Kit",
     "subtitle": "Show.Z #7637",
@@ -648018,56 +647152,6 @@
     "property": "transformers",
     "party": "2p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2602/products/13/6e669fb5f3.jpg.500x500.jpg"
-  },
-  {
-    "id": "yolopark-beast-wars-optimus-primal-model-kit",
-    "name": "Beast Wars Optimus Primal Model Kit",
-    "subtitle": "Show.Z #7726",
-    "line": "Yolopark AMK",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2026-03-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:7726"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2603/products/27/a891a93e37.jpg.500x500.jpg"
-  },
-  {
-    "id": "yolopark-beast-wars-dinobot-model-kit",
-    "name": "Beast Wars Dinobot Model Kit",
-    "subtitle": "Show.Z #7727",
-    "line": "Yolopark AMK",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2026-03-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:7727"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2603/products/27/310e4ae671.jpg.500x500.jpg"
   },
   {
     "id": "threezero-3z0551-transformers-mdlx-optimus-prime-sleep-mode",
@@ -648246,32 +647330,6 @@
     "property": "transformers",
     "party": "2p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2510/products/28/a10e915f17.jpg.500x500.jpg"
-  },
-  {
-    "id": "threezero-3z0432-dlx-transformers-rise-of-the-beasts-optimu",
-    "name": "3Z0432 DLX Transformers Rise of the Beasts Optimus Prime",
-    "subtitle": "Show.Z #5219",
-    "line": "threezero DLX",
-    "company": "threezero",
-    "kind": "figure",
-    "releaseDate": "2025-08-01",
-    "msrp": 0.0,
-    "scale": "DLX",
-    "demand": 1.0,
-    "tags": [
-      "threezero",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5219",
-      "code:3Z0432"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2508/products/08/057a97d0df.jpg.500x500.jpg"
   },
   {
     "id": "flametoys-kuro-kara-kuri-ultra-magnus",
@@ -648501,31 +647559,6 @@
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2511/products/10/440b6af595.jpg.500x500.jpg"
   },
   {
-    "id": "yolopark-rise-of-the-beasts-arcee-pre-assembled-mod",
-    "name": "Rise of the Beasts Arcee Pre-Assembled Model Kit",
-    "subtitle": "Show.Z #7448",
-    "line": "Yolopark AMK PRO",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2025-12-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:7448"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2512/photo/db2d7e048b.jpg.500x500.jpg"
-  },
-  {
     "id": "threezero-3z1097-transformers-mdlx-shockwave-exclusive-vers",
     "name": "3Z1097 Transformers MDLX Shockwave Exclusive Version",
     "subtitle": "Show.Z #7508",
@@ -648550,31 +647583,6 @@
     "property": "transformers",
     "party": "2p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2512/products/17/5c6a2b0708.jpg.500x500.jpg"
-  },
-  {
-    "id": "threezero-3z0887-transformers-mdlx-ramjet",
-    "name": "3Z0887 Transformers MDLX Ramjet",
-    "subtitle": "Show.Z #7509",
-    "line": "threezero MDLX",
-    "company": "threezero",
-    "kind": "figure",
-    "releaseDate": "2025-12-01",
-    "msrp": 0.0,
-    "scale": "MDLX",
-    "demand": 1.0,
-    "tags": [
-      "threezero",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:7509"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2512/products/17/0d33531eae.jpg.500x500.jpg"
   },
   {
     "id": "threezero-3z0855-transformers-mdlx-lost-light-rodimus-prime",
@@ -648652,31 +647660,6 @@
     "property": "transformers",
     "party": "2p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2509/products/05/51a420fb61.jpg.500x500.jpg"
-  },
-  {
-    "id": "flametoys-furai-model-wingblade-optimus-prime-animat",
-    "name": "Furai Model Wingblade Optimus Prime Animated Version",
-    "subtitle": "Show.Z #7310",
-    "line": "Furai Model",
-    "company": "flametoys",
-    "kind": "figure",
-    "releaseDate": "2025-09-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "flametoys",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:7310"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2509/photo/7d8171930f.jpg.500x500.jpg"
   },
   {
     "id": "yolopark-one-final-form-op-megatron-bouns-set",
@@ -648780,31 +647763,6 @@
     "property": "transformers",
     "party": "2p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2510/products/09/980f6c967e.jpg.500x500.jpg"
-  },
-  {
-    "id": "yolopark-generation-1-19cm-starscream-pre-assembled",
-    "name": "Generation 1 - 19cm Starscream Pre-Assembled Model Kit",
-    "subtitle": "Show.Z #7021",
-    "line": "Yolopark AMK",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2025-05-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:7021"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2505/products/05/bd51991dcb.jpg.500x500.jpg"
   },
   {
     "id": "blokees-one-exclusive-silver-tracker",
@@ -649091,56 +648049,6 @@
     "setRole": "parent"
   },
   {
-    "id": "yolopark-rise-of-the-beasts-scourge-pre-assembled-m",
-    "name": "Rise of the Beasts Scourge Pre-Assembled Model Kit",
-    "subtitle": "Show.Z #6775",
-    "line": "Yolopark AMK PRO",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2025-01-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:6775"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2501/products/14/82332a0c83.jpg.500x500.jpg"
-  },
-  {
-    "id": "yolopark-rise-of-the-beasts-optimus-prime-pre-assem",
-    "name": "Rise of the Beasts Optimus Prime Pre-Assembled Model Kit",
-    "subtitle": "Show.Z #6776",
-    "line": "Yolopark AMK PRO",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2025-03-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:6776"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2503/products/28/714821e337.jpg.500x500.jpg"
-  },
-  {
     "id": "threezero-3z0841-mdlx-transformers-one-optimus-prime",
     "name": "3Z0841 MDLX Transformers One Optimus Prime",
     "subtitle": "Show.Z #6530",
@@ -649241,32 +648149,6 @@
     "property": "transformers",
     "party": "2p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2410/photo/11bed5d546.jpg.500x500.jpg"
-  },
-  {
-    "id": "threezero-3z0471-transformers-age-of-extinction-dlx-lockdow",
-    "name": "3Z0471 Transformers Age of Extinction DLX Lockdown Standard Version",
-    "subtitle": "Show.Z #6631",
-    "line": "threezero DLX",
-    "company": "threezero",
-    "kind": "figure",
-    "releaseDate": "2024-10-01",
-    "msrp": 0.0,
-    "scale": "DLX",
-    "demand": 1.0,
-    "tags": [
-      "threezero",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:6631",
-      "code:3Z0471"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2410/products/22/9bb5c31409.jpg.500x500.jpg"
   },
   {
     "id": "threezero-3z0650-transformers-bumblebee-dlx-optimus-prime-c",
@@ -650080,56 +648962,6 @@
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2309/products/21/fa67f908d3.jpg.500x500.jpg"
   },
   {
-    "id": "yolopark-rise-of-the-beasts-mirage-pre-assembled-mo",
-    "name": "Rise of the Beasts Mirage Pre-Assembled Model Kit",
-    "subtitle": "Show.Z #5618",
-    "line": "Yolopark AMK PRO",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2024-12-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5618"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2412/photo/6d612771fc.jpg.500x500.jpg"
-  },
-  {
-    "id": "yolopark-the-last-knight-optimus-prime-pre-assemble",
-    "name": "The Last Knight Optimus Prime Pre-Assembled Model Kit",
-    "subtitle": "Show.Z #5619",
-    "line": "Yolopark AMK PRO",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2024-10-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5619"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2410/photo/872e1d6d22.jpg.500x500.jpg"
-  },
-  {
     "id": "yolopark-soundwave-pre-assembled-model-kit",
     "name": "Soundwave Pre-Assembled Model Kit",
     "subtitle": "Show.Z #5621",
@@ -650180,107 +649012,6 @@
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2306/products/15/bd9f710fd9.jpg.500x500.jpg"
   },
   {
-    "id": "yolopark-rise-of-the-beasts-scourge-model-kit",
-    "name": "Rise of the Beasts Scourge Model Kit",
-    "subtitle": "Show.Z #5258",
-    "line": "Yolopark AMK",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2023-10-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5258"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2310/products/10/c71537c856.jpg.500x500.jpg"
-  },
-  {
-    "id": "yolopark-rise-of-the-beasts-cheetor-model-kit",
-    "name": "Rise of the Beasts Cheetor Model Kit",
-    "subtitle": "Show.Z #5296",
-    "line": "Yolopark AMK",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2023-10-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5296"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2310/products/17/cdd5664a57.jpg.500x500.jpg"
-  },
-  {
-    "id": "yolopark-rise-of-the-beasts-rhinox-model-kit",
-    "name": "Rise of the Beasts Rhinox Model Kit",
-    "subtitle": "Show.Z #5321",
-    "line": "Yolopark AMK",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2023-10-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5321"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2310/products/10/555880d11f.jpg.500x500.jpg"
-  },
-  {
-    "id": "threezero-3z0564-dlx-transformers-rise-of-the-beasts-mirage",
-    "name": "3Z0564 DLX Transformers Rise of the Beasts Mirage",
-    "subtitle": "Show.Z #5422",
-    "line": "threezero DLX",
-    "company": "threezero",
-    "kind": "figure",
-    "releaseDate": "2024-07-01",
-    "msrp": 0.0,
-    "scale": "DLX",
-    "demand": 1.0,
-    "tags": [
-      "threezero",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5422",
-      "code:3Z0564"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2407/products/26/44828b9005.jpg.500x500.jpg"
-  },
-  {
     "id": "threezero-dlx-transformers-rise-of-the-beasts-scourg",
     "name": "DLX Transformers Rise of the Beasts Scourge",
     "subtitle": "Show.Z #5423",
@@ -650304,81 +649035,6 @@
     "property": "transformers",
     "party": "2p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2310/products/23/a0836cc826.jpg.500x500.jpg"
-  },
-  {
-    "id": "yolopark-rise-of-the-beasts-optimus-prime-model-kit",
-    "name": "Rise of the Beasts Optimus Prime Model Kit",
-    "subtitle": "Show.Z #5136",
-    "line": "Yolopark AMK",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2023-05-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5136"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2305/products/05/ada3442fd3.jpg.500x500.jpg"
-  },
-  {
-    "id": "yolopark-rise-of-the-beasts-bumblebee-model-kit",
-    "name": "Rise of the Beasts Bumblebee Model Kit",
-    "subtitle": "Show.Z #5137",
-    "line": "Yolopark AMK",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2023-05-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5137"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2305/products/05/7f4652bc8a.jpg.500x500.jpg"
-  },
-  {
-    "id": "yolopark-rise-of-the-beasts-optimus-primal-model-ki",
-    "name": "Rise of the Beasts Optimus Primal Model Kit",
-    "subtitle": "Show.Z #5138",
-    "line": "Yolopark AMK",
-    "company": "yolopark",
-    "kind": "kit",
-    "releaseDate": "2023-05-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "yolopark",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5138"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2305/products/05/922f5e3a58.jpg.500x500.jpg"
   },
   {
     "id": "flametoys-furai-action-beast-war-optimus-primal-w-pr",
@@ -650429,57 +649085,6 @@
     "property": "transformers",
     "party": "2p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2306/products/06/04612b8635.jpg.500x500.jpg"
-  },
-  {
-    "id": "threezero-3z0565-dlx-transformers-rise-of-the-beasts-optimu",
-    "name": "3Z0565 DLX Transformers Rise of the Beasts Optimus Primal",
-    "subtitle": "Show.Z #5220",
-    "line": "threezero DLX",
-    "company": "threezero",
-    "kind": "figure",
-    "releaseDate": "2023-08-01",
-    "msrp": 0.0,
-    "scale": "DLX",
-    "demand": 1.0,
-    "tags": [
-      "threezero",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5220",
-      "code:3Z0565"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2308/products/23/22393db5ff.jpg.500x500.jpg"
-  },
-  {
-    "id": "threezero-dlx-transformers-rise-of-the-beasts-bumble",
-    "name": "DLX Transformers Rise of the Beasts Bumblebee",
-    "subtitle": "Show.Z #5226",
-    "line": "threezero DLX",
-    "company": "threezero",
-    "kind": "figure",
-    "releaseDate": "2023-06-01",
-    "msrp": 0.0,
-    "scale": "DLX",
-    "demand": 1.0,
-    "tags": [
-      "threezero",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5226"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2306/products/07/b439a9da15.jpg.500x500.jpg"
   },
   {
     "id": "flametoys-furai-model-hound-model-kit",
@@ -650885,31 +649490,6 @@
     "property": "transformers",
     "party": "2p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2208/products/16/afa5eef34e.jpg.500x500.jpg"
-  },
-  {
-    "id": "flametoys-furai-model-leo-prime-model-kit",
-    "name": "Furai Model Leo Prime Model Kit",
-    "subtitle": "Show.Z #3851",
-    "line": "Furai Model",
-    "company": "flametoys",
-    "kind": "kit",
-    "releaseDate": "2022-01-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "flametoys",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:3851"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2201/products/17/bb4b57f5c3.jpg.500x500.jpg"
   },
   {
     "id": "yolopark-iies-transformers-bumblebee-cybortronian-o",
@@ -651662,32 +650242,6 @@
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2001/products/02/31a44c2496.jpg.500x500.jpg"
   },
   {
-    "id": "flametoys-furai-model-12-optimus-prime-model-kit-g1",
-    "name": "Furai Model 12 Optimus Prime Model Kit G1 Version",
-    "subtitle": "Show.Z #1979",
-    "line": "Furai Model",
-    "company": "flametoys",
-    "kind": "kit",
-    "releaseDate": "2020-01-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "flametoys",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:1979",
-      "lv-list-row:254"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2001/products/28/7d979fb7ea.jpg.500x500.jpg"
-  },
-  {
     "id": "flametoys-furai-model-idw-megatron-model-kit-decepti",
     "name": "Furai Model IDW Megatron Model Kit Decepticon Version",
     "subtitle": "Show.Z #2010",
@@ -651813,31 +650367,6 @@
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2002/products/24/be4631b730.jpg.500x500.jpg"
   },
   {
-    "id": "flametoys-furai-model-devastator-model-kit",
-    "name": "Furai Model Devastator Model Kit",
-    "subtitle": "Show.Z #1707",
-    "line": "Furai Model",
-    "company": "flametoys",
-    "kind": "kit",
-    "releaseDate": "2020-03-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "flametoys",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:1707"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2003/products/06/4a386cede0.jpg.500x500.jpg"
-  },
-  {
     "id": "flametoys-furai-model-idw-optimus-prime-battle-damag",
     "name": "Furai Model IDW Optimus Prime Battle Damaged Version",
     "subtitle": "Show.Z #1828",
@@ -651937,32 +650466,6 @@
     "property": "transformers",
     "party": "2p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/1909/products/22/8e43e371a9.jpg.500x500.jpg"
-  },
-  {
-    "id": "threezero-3z0159-transformers-bumblebee-dlx-optimus-prime",
-    "name": "3Z0159 Transformers Bumblebee DLX Optimus Prime",
-    "subtitle": "Show.Z #1284",
-    "line": "threezero DLX",
-    "company": "threezero",
-    "kind": "figure",
-    "releaseDate": "2021-03-01",
-    "msrp": 0.0,
-    "scale": "DLX",
-    "demand": 1.0,
-    "tags": [
-      "threezero",
-      "transformers",
-      "2p",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:1284",
-      "code:3Z0159"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "2p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2103/products/29/09789fc990.jpg.500x500.jpg"
   },
   {
     "id": "threezero-3a-bumblebee-deluxe-figure-transformers-dl",
@@ -652246,7 +650749,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:3032",
-      "code:MX-4"
+      "code:MX-4",
+      "stub-merged:xt6-xt-mx-04"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -661187,7 +659691,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:6548",
-      "code:MX-8"
+      "code:MX-8",
+      "stub-merged:xt6-xt-mx-08"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -662626,7 +661131,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:6274",
-      "code:MX-5"
+      "code:MX-5",
+      "stub-merged:xt6-xt-mx-05"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -664827,33 +663333,6 @@
     "property": "transformers",
     "party": "3p",
     "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2312/products/28/535497d880.jpg.500x500.jpg"
-  },
-  {
-    "id": "uniquetoys-r-06-dino",
-    "name": "R-06 Dino",
-    "subtitle": "Show.Z #5808",
-    "line": "Unique Toys",
-    "company": "uniquetoys",
-    "kind": "figure",
-    "releaseDate": "2023-12-01",
-    "msrp": 0.0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "uniquetoys",
-      "transformers",
-      "3p",
-      "ko",
-      "curated",
-      "inject-showzstore-3p-official",
-      "src:showzstore",
-      "showz:5808",
-      "code:R-06"
-    ],
-    "source": "inject-showzstore-3p-official",
-    "property": "transformers",
-    "party": "3p",
-    "imageUrl": "https://ueeshop.ly200-cdn.com/u_file/UPAD/UPAD468/2312/products/06/8883e66560.jpg.500x500.jpg"
   },
   {
     "id": "ironfactory-ex-50k-kagemusha-boohmaru-grimlock",
@@ -672138,7 +670617,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:3492",
-      "code:MX-6"
+      "code:MX-6",
+      "stub-merged:xt6-xt-mx-06"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -672165,7 +670645,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:3493",
-      "code:MX-7"
+      "code:MX-7",
+      "stub-merged:xt6-xt-mx-07"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -681621,7 +680102,8 @@
       "curated",
       "inject-showzstore-3p-official",
       "src:showzstore",
-      "showz:0639"
+      "showz:0639",
+      "stub-merged:dx96-dx9-k-03"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -683077,7 +681559,8 @@
       "curated",
       "inject-showzstore-3p-official",
       "src:showzstore",
-      "showz:0424"
+      "showz:0424",
+      "stub-merged:dx96-dx9-k-02"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -683341,7 +681824,8 @@
       "curated",
       "inject-showzstore-3p-official",
       "src:showzstore",
-      "showz:0189"
+      "showz:0189",
+      "stub-merged:dx96-dx9-k-01"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",

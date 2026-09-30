@@ -11,7 +11,8 @@ Order of operations:
   3. pairs/merge    - drop the Showzstore row into the proper keeper (keeper msrp/date/sku/name untouched;
                       aliases + id:<dropId> moved; image copied only if keeper has none)
   4. pairs/mergeStub- drop a code-only curated stub into the named Showzstore row; carry the stub's
-                      msrp/demand/sku/aliases (Showz prices are never copied onto a proper row)
+                      sku/aliases only. Stub msrp/demand are template values and are NOT carried;
+                      the keeper msrp is set to 0 (unknown).
   keepBoth / unsure pairs are report-only.
 
   python3 scripts/showz-followup-fixes.py            # dry run (default)
@@ -158,11 +159,15 @@ def main() -> None:
         else:  # mergeStub: proper stub -> named Showz row
             if drop.get("source") in SHOWZ_SOURCES or keep.get("source") not in SHOWZ_SOURCES:
                 problems.append({"pair": [drop_id, keep_id], "problem": "mergeStub expects proper stub -> Showz keep"}); continue
+            # Stub msrp/demand are flat template values ($110 every MX, $75 every K) -> not carried
+            # (Shelby, 2026-09-30). MSRP stays 0 = unknown until a sourced price exists.
             carried = {}
-            for fld in ("msrp", "demand", "sku"):
-                if drop.get(fld) not in (None, "", 0, 0.0) and keep.get(fld) != drop.get(fld):
-                    carried[fld] = {"from": keep.get(fld), "to": drop.get(fld)}
-                    keep[fld] = drop[fld]
+            if drop.get("sku") not in (None, "") and not keep.get("sku"):
+                carried["sku"] = {"from": keep.get("sku"), "to": drop["sku"]}
+                keep["sku"] = drop["sku"]
+            if keep.get("msrp") not in (0, 0.0, None):
+                carried["msrp"] = {"from": keep.get("msrp"), "to": 0.0}
+            keep["msrp"] = 0.0
             ensure_tag(keep, f"stub-merged:{drop_id}")
             moved, left = move_aliases(drop_id, keep_id, [])
             image_filled = False

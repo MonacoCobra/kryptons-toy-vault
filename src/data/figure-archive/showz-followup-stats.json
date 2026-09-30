@@ -1,0 +1,1024 @@
+{
+  "dryRun": false,
+  "at": "2026-09-30T20:36:24.719918+00:00",
+  "rowsBefore": 29430,
+  "rowsAfter": 29361,
+  "fixesApplied": 16,
+  "inventedDeleted": 22,
+  "merged": 39,
+  "stubMerged": 8,
+  "reportOnly": {
+    "keepBoth": 69,
+    "unsure": 18
+  },
+  "imagesFilled": 3,
+  "integrity": {
+    "before": {
+      "rows": 29430,
+      "duplicateIds": 0,
+      "danglingAliases": 10,
+      "danglingSetIds": 0
+    },
+    "after": {
+      "rows": 29361,
+      "duplicateIds": 0,
+      "danglingAliases": 10,
+      "danglingSetIds": 0
+    },
+    "newDanglingAliases": [],
+    "newDanglingSetIds": []
+  },
+  "problems": [],
+  "fixes": [
+    {
+      "id": "tfmpm-mpm11",
+      "field": "subtitle",
+      "old": "MPM-11",
+      "new": "MPM-12"
+    },
+    {
+      "id": "tz7-45",
+      "field": "name",
+      "old": "DLX Shockwave",
+      "new": "MDLX Shockwave"
+    },
+    {
+      "id": "tz7-45",
+      "field": "line",
+      "old": "threezero DLX",
+      "new": "threezero MDLX"
+    },
+    {
+      "id": "uniquetoys-ut-r01",
+      "field": "subtitle",
+      "old": "UT-R01 — Perceptor homage",
+      "new": "UT-R01 — Lockdown homage"
+    },
+    {
+      "id": "uniquetoys-ut-r02",
+      "field": "subtitle",
+      "old": "UT-R02 — Ultra Magnus homage",
+      "new": "UT-R02 — Optimus Prime homage"
+    },
+    {
+      "id": "uniquetoys-ut-r02b",
+      "field": "subtitle",
+      "old": "UT-R02B — Ultra Magnus homage",
+      "new": "UT-R02B — Optimus Prime homage"
+    },
+    {
+      "id": "uniquetoys-ut-r02d",
+      "field": "subtitle",
+      "old": "UT-R02D — Battle Damaged — Ultra Magnus homage",
+      "new": "UT-R02D — Battle Damaged — Optimus Prime homage"
+    },
+    {
+      "id": "uniquetoys-utr-03",
+      "field": "subtitle",
+      "old": "UTR-03 — Springer homage",
+      "new": "UTR-03 — Megatron (AOE/TLK) homage"
+    },
+    {
+      "id": "uniquetoys-ut-r04",
+      "field": "subtitle",
+      "old": "UT-R04 — Nemesis Prime homage",
+      "new": "UT-R04 — Galvatron homage"
+    },
+    {
+      "id": "uniquetoys-ut-r05",
+      "field": "subtitle",
+      "old": "UT-R05 — MP Starscream homage",
+      "new": "UT-R05 — Megatron (DOTM) homage"
+    },
+    {
+      "id": "uniquetoys-ut-r05b",
+      "field": "subtitle",
+      "old": "UT-R05B — Special Paint — MP Starscream homage",
+      "new": "UT-R05B — Special Paint — Megatron (DOTM) homage"
+    },
+    {
+      "id": "uniquetoys-ut-r06",
+      "field": "subtitle",
+      "old": "UT-R06 — Sideswipe homage",
+      "new": "UT-R06 — Dino homage"
+    },
+    {
+      "id": "uniquetoys-ut-r07",
+      "field": "subtitle",
+      "old": "UT-R07 — Huffer homage",
+      "new": "UT-R07 — Mudflap homage"
+    },
+    {
+      "id": "uniquetoys-ut-r08",
+      "field": "subtitle",
+      "old": "UT-R08 — Huffer homage",
+      "new": "UT-R08 — Skids homage"
+    },
+    {
+      "id": "uniquetoys-ut-y03",
+      "field": "subtitle",
+      "old": "UT-Y03 — Drift homage",
+      "new": "UT-Y03 — Sandstorm homage"
+    },
+    {
+      "id": "uniquetoys-ut-m05",
+      "field": "subtitle",
+      "old": "UT-M05 — Dinobot homage",
+      "new": "UT-M05 — Vortex homage"
+    }
+  ],
+  "deleted": [
+    {
+      "id": "na-h1",
+      "name": "Wilson",
+      "subtitle": "H1 Cliffjumper",
+      "aliasesDropped": []
+    },
+    {
+      "id": "na-h3",
+      "name": "Mickey",
+      "subtitle": "H3 Bumblebee",
+      "aliasesDropped": []
+    },
+    {
+      "id": "na-h4",
+      "name": "Legend of Sparklers",
+      "subtitle": "H4 Gears",
+      "aliasesDropped": []
+    },
+    {
+      "id": "na-h5",
+      "name": "Shrow",
+      "subtitle": "H5 Cliffjumper (red)",
+      "aliasesDropped": []
+    },
+    {
+      "id": "na-h6",
+      "name": "Rathion",
+      "subtitle": "H6 Hubcap",
+      "aliasesDropped": []
+    },
+    {
+      "id": "na-h7",
+      "name": "Danny",
+      "subtitle": "H7 Swerve",
+      "aliasesDropped": []
+    },
+    {
+      "id": "na-h8",
+      "name": "Dicko",
+      "subtitle": "H8 Tailgate",
+      "aliasesDropped": []
+    },
+    {
+      "id": "na-h9",
+      "name": "Cragun",
+      "subtitle": "H9 Cliffjumper (yellow)",
+      "aliasesDropped": []
+    },
+    {
+      "id": "na-h24",
+      "name": "Red Alert",
+      "subtitle": "H24 Red Alert",
+      "aliasesDropped": []
+    },
+    {
+      "id": "na-h28",
+      "name": "Ratchet",
+      "subtitle": "H28 Ratchet",
+      "aliasesDropped": []
+    },
+    {
+      "id": "dw6-dw-e-02",
+      "name": "DW-E02 Blue Blaze",
+      "subtitle": "EX Series",
+      "aliasesDropped": []
+    },
+    {
+      "id": "dw6-dw-e-04",
+      "name": "DW-E04 Dark Commander",
+      "subtitle": "EX Series",
+      "aliasesDropped": []
+    },
+    {
+      "id": "dw6-dw-e-11",
+      "name": "DW-E11 Green Machine",
+      "subtitle": "EX Series",
+      "aliasesDropped": []
+    },
+    {
+      "id": "dw6-dw-e-14",
+      "name": "DW-E14 Night Howler",
+      "subtitle": "EX Series",
+      "aliasesDropped": []
+    },
+    {
+      "id": "dw6-dw-e-23",
+      "name": "DW-E23 Neon Ghost",
+      "subtitle": "EX Series",
+      "aliasesDropped": []
+    },
+    {
+      "id": "dw6-dw-e-24",
+      "name": "DW-E24 Chrome Dome",
+      "subtitle": "EX Series",
+      "aliasesDropped": []
+    },
+    {
+      "id": "dw6-dw-e-29",
+      "name": "DW-E29 Glacier King",
+      "subtitle": "EX Series",
+      "aliasesDropped": []
+    },
+    {
+      "id": "dw6-dw-e-30",
+      "name": "DW-E30 Plasma Hawk",
+      "subtitle": "EX Series",
+      "aliasesDropped": []
+    },
+    {
+      "id": "dw6-dw-e-33",
+      "name": "DW-E33 Sapphire Siren",
+      "subtitle": "EX Series",
+      "aliasesDropped": []
+    },
+    {
+      "id": "dw6-dw-e-38",
+      "name": "DW-E38 Silver Phantom",
+      "subtitle": "EX Series",
+      "aliasesDropped": []
+    },
+    {
+      "id": "dw6-dw-e-39",
+      "name": "DW-E39 Bronze Warden",
+      "subtitle": "EX Series",
+      "aliasesDropped": []
+    },
+    {
+      "id": "tfmpm-mpm12",
+      "name": "Rampage",
+      "subtitle": "MPM-12",
+      "aliasesDropped": []
+    }
+  ],
+  "merges": [
+    {
+      "action": "merge",
+      "dropId": "takaratomy-mp-60-ginrai-optimus-prime-w-o-trailer",
+      "keepId": "tfmp-mp60",
+      "dropName": "MP-60 Ginrai Optimus Prime w/o Trailer",
+      "keepName": "Ginrai",
+      "keepMsrp": 180.0,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ6124",
+        "id:takaratomy-mp-60-ginrai-optimus-prime-w-o-trailer"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "takaratomy-mp-56-hoist",
+      "keepId": "tfmp-mp56p",
+      "dropName": "MP-56+ Hoist",
+      "keepName": "Riggorus",
+      "keepMsrp": 145.0,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ5336",
+        "MP-56+",
+        "id:takaratomy-mp-56-hoist"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "takaratomy-mpm-12-optimus-prime",
+      "keepId": "tfmpm-mpm11",
+      "dropName": "MPM-12 Optimus Prime",
+      "keepName": "Optimus Prime",
+      "keepMsrp": 170.0,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ2968",
+        "MPM-12",
+        "id:takaratomy-mpm-12-optimus-prime"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "takaratomy-mp-46-blackwidow",
+      "keepId": "tfmp-mp46",
+      "dropName": "MP-46 Blackwidow",
+      "keepName": "Blackarachnia",
+      "keepMsrp": 140.0,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ1831",
+        "MP-46",
+        "id:takaratomy-mp-46-blackwidow"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "takaratomy-mp-36-mp36-megatron-takaratomy-mall-exclusive-ve",
+      "keepId": "tfmp-mp36p",
+      "dropName": "MP-36+ MP36+ Megatron TakaraTomy Mall Exclusive Version w/ Commemorative Coins",
+      "keepName": "Megatron",
+      "keepMsrp": 170.0,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ1217",
+        "MP-36+",
+        "id:takaratomy-mp-36-mp36-megatron-takaratomy-mall-exclusive-ve"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "takaratomy-mp-18-mp18-streak-bluestreak-limited-edition",
+      "keepId": "tfmp-mp18p",
+      "dropName": "MP-18+ MP18+ Streak Bluestreak Limited Edition",
+      "keepName": "Bluestreak",
+      "keepMsrp": 120.0,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ1240",
+        "MP-18+",
+        "id:takaratomy-mp-18-mp18-streak-bluestreak-limited-edition"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "takaratomy-mp-17-mp17-prowl-anime-color",
+      "keepId": "tfmp-mp17p",
+      "dropName": "MP-17+ MP17+ Prowl Anime Color",
+      "keepName": "Prowl",
+      "keepMsrp": 120.0,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ1024",
+        "MP-17+",
+        "id:takaratomy-mp-17-mp17-prowl-anime-color"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "takaratomy-mp-20-wheeljack-anime-color",
+      "keepId": "tfmp-mp20p",
+      "dropName": "MP-20+ Wheeljack Anime Color",
+      "keepName": "Wheeljack",
+      "keepMsrp": 125.0,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ0954",
+        "MP-20+",
+        "id:takaratomy-mp-20-wheeljack-anime-color"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-beast-wars-blackarachnia-model-kit",
+      "keepId": "sf-yolopark-transformers-beast-wars-blackarachnia-amk-series",
+      "dropName": "Beast Wars Blackarachnia Model Kit",
+      "keepName": "Blackarachnia",
+      "keepMsrp": 26.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ7950",
+        "id:yolopark-beast-wars-blackarachnia-model-kit"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-the-last-knight-optimus-prime-model-kit",
+      "keepId": "sf-yolopark-amk-the_last_knight-optimus_prime",
+      "dropName": "The Last Knight Optimus Prime Model Kit",
+      "keepName": "Optimus Prime",
+      "keepMsrp": 29.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ8020",
+        "id:yolopark-the-last-knight-optimus-prime-model-kit"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-rise-of-the-beasts-mirage-model-kit",
+      "keepId": "sf-yolopark-amk-rotb-mirage",
+      "dropName": "Rise of the Beasts Mirage Model Kit",
+      "keepName": "Mirage",
+      "keepMsrp": 29.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ8021",
+        "id:yolopark-rise-of-the-beasts-mirage-model-kit"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-bumblebee-shockwave-model-kit",
+      "keepId": "sf-yolopark-amk-pro-bumblebee2018-shockwave",
+      "dropName": "Bumblebee Shockwave Model Kit",
+      "keepName": "Shockwave",
+      "keepMsrp": 62.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ8078",
+        "id:yolopark-bumblebee-shockwave-model-kit"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "threezero-3z0341-transformers-mdlx-shockwave",
+      "keepId": "tz7-45",
+      "dropName": "3Z0341 Transformers MDLX Shockwave",
+      "keepName": "MDLX Shockwave",
+      "keepMsrp": 180.0,
+      "droppedMsrp": 137.99,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ7507",
+        "3Z0341",
+        "id:threezero-3z0341-transformers-mdlx-shockwave"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-beast-wars-optimus-primal-model-kit",
+      "keepId": "sf-yolopark-transformers-beast-wars-optimus-primal-amk-series",
+      "dropName": "Beast Wars Optimus Primal Model Kit",
+      "keepName": "Optimus Primal",
+      "keepMsrp": 29.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ7726",
+        "id:yolopark-beast-wars-optimus-primal-model-kit"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-beast-wars-dinobot-model-kit",
+      "keepId": "sf-yolopark-transformers-beast-wars-dinobot-amk-series",
+      "dropName": "Beast Wars Dinobot Model Kit",
+      "keepName": "Dinobot",
+      "keepMsrp": 29.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ7727",
+        "id:yolopark-beast-wars-dinobot-model-kit"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "threezero-3z0432-dlx-transformers-rise-of-the-beasts-optimu",
+      "keepId": "tz3-dlx-optimus-rotb",
+      "dropName": "3Z0432 DLX Transformers Rise of the Beasts Optimus Prime",
+      "keepName": "Optimus Prime",
+      "keepMsrp": 200.0,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ5219",
+        "3Z0432",
+        "id:threezero-3z0432-dlx-transformers-rise-of-the-beasts-optimu"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-rise-of-the-beasts-arcee-pre-assembled-mod",
+      "keepId": "sf-yolopark-amk-pro-rotb-arcee",
+      "dropName": "Rise of the Beasts Arcee Pre-Assembled Model Kit",
+      "keepName": "Arcee",
+      "keepMsrp": 45.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ7448",
+        "id:yolopark-rise-of-the-beasts-arcee-pre-assembled-mod"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "threezero-3z0887-transformers-mdlx-ramjet",
+      "keepId": "tz-mdlx-ramjet",
+      "dropName": "3Z0887 Transformers MDLX Ramjet",
+      "keepName": "Ramjet",
+      "keepMsrp": 169.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ7509",
+        "id:threezero-3z0887-transformers-mdlx-ramjet"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": true
+    },
+    {
+      "action": "merge",
+      "dropId": "flametoys-furai-model-wingblade-optimus-prime-animat",
+      "keepId": "sf-flametoys-toyarena-flame-toys-furai-44-transformers-wingblade-optimus-prime-a",
+      "dropName": "Furai Model Wingblade Optimus Prime Animated Version",
+      "keepName": "Wingblade Optimus Prime (Animated)",
+      "keepMsrp": 72.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ7310",
+        "id:flametoys-furai-model-wingblade-optimus-prime-animat"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-generation-1-19cm-starscream-pre-assembled",
+      "keepId": "sf-yolopark-transformers-g1-starscream-amk-series",
+      "dropName": "Generation 1 - 19cm Starscream Pre-Assembled Model Kit",
+      "keepName": "Starscream",
+      "keepMsrp": 26.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ7021",
+        "id:yolopark-generation-1-19cm-starscream-pre-assembled"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-rise-of-the-beasts-scourge-pre-assembled-m",
+      "keepId": "sf-yolopark-amk-pro-rotb-scourge",
+      "dropName": "Rise of the Beasts Scourge Pre-Assembled Model Kit",
+      "keepName": "Scourge",
+      "keepMsrp": 56.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ6775",
+        "id:yolopark-rise-of-the-beasts-scourge-pre-assembled-m"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-rise-of-the-beasts-optimus-prime-pre-assem",
+      "keepId": "sf-yolopark-transformers-rotb-optimus-prime-amk-pro-series",
+      "dropName": "Rise of the Beasts Optimus Prime Pre-Assembled Model Kit",
+      "keepName": "Optimus Prime",
+      "keepMsrp": 59.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ6776",
+        "id:yolopark-rise-of-the-beasts-optimus-prime-pre-assem"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "threezero-3z0471-transformers-age-of-extinction-dlx-lockdow",
+      "keepId": "tz7-12",
+      "dropName": "3Z0471 Transformers Age of Extinction DLX Lockdown Standard Version",
+      "keepName": "Lockdown",
+      "keepMsrp": 180.0,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ6631",
+        "3Z0471",
+        "id:threezero-3z0471-transformers-age-of-extinction-dlx-lockdow"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": true
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-rise-of-the-beasts-mirage-pre-assembled-mo",
+      "keepId": "sf-yolopark-rotb-16cm-mirage-amk-pro",
+      "dropName": "Rise of the Beasts Mirage Pre-Assembled Model Kit",
+      "keepName": "Mirage",
+      "keepMsrp": 53.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ5618",
+        "id:yolopark-rise-of-the-beasts-mirage-pre-assembled-mo"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-the-last-knight-optimus-prime-pre-assemble",
+      "keepId": "sf-yolopark-the-last-knight-20cm-optimus-prime-model-kit",
+      "dropName": "The Last Knight Optimus Prime Pre-Assembled Model Kit",
+      "keepName": "Optimus Prime",
+      "keepMsrp": 59.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ5619",
+        "id:yolopark-the-last-knight-optimus-prime-pre-assemble"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-rise-of-the-beasts-scourge-model-kit",
+      "keepId": "sf-yolopark-rise-of-the-beasts-amk-scourge",
+      "dropName": "Rise of the Beasts Scourge Model Kit",
+      "keepName": "Scourge",
+      "keepMsrp": 29.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ5258",
+        "id:yolopark-rise-of-the-beasts-scourge-model-kit"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-rise-of-the-beasts-cheetor-model-kit",
+      "keepId": "sf-yolopark-rise-of-the-beasts-amk-cheetor",
+      "dropName": "Rise of the Beasts Cheetor Model Kit",
+      "keepName": "Cheetor",
+      "keepMsrp": 29.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ5296",
+        "id:yolopark-rise-of-the-beasts-cheetor-model-kit"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-rise-of-the-beasts-rhinox-model-kit",
+      "keepId": "sf-yolopark-rise-of-the-beasts-amk-rhinox",
+      "dropName": "Rise of the Beasts Rhinox Model Kit",
+      "keepName": "Rhinox",
+      "keepMsrp": 29.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ5321",
+        "id:yolopark-rise-of-the-beasts-rhinox-model-kit"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "threezero-3z0564-dlx-transformers-rise-of-the-beasts-mirage",
+      "keepId": "tz7-06",
+      "dropName": "3Z0564 DLX Transformers Rise of the Beasts Mirage",
+      "keepName": "Mirage",
+      "keepMsrp": 170.0,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ5422",
+        "3Z0564",
+        "id:threezero-3z0564-dlx-transformers-rise-of-the-beasts-mirage"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": true
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-rise-of-the-beasts-optimus-prime-model-kit",
+      "keepId": "sf-yolopark-rise-of-the-beasts-amk-optimus-prime",
+      "dropName": "Rise of the Beasts Optimus Prime Model Kit",
+      "keepName": "Optimus Prime",
+      "keepMsrp": 29.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ5136",
+        "id:yolopark-rise-of-the-beasts-optimus-prime-model-kit"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-rise-of-the-beasts-bumblebee-model-kit",
+      "keepId": "sf-yolopark-rise-of-the-beasts-amk-bumblebee",
+      "dropName": "Rise of the Beasts Bumblebee Model Kit",
+      "keepName": "Bumblebee",
+      "keepMsrp": 29.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ5137",
+        "id:yolopark-rise-of-the-beasts-bumblebee-model-kit"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "yolopark-rise-of-the-beasts-optimus-primal-model-ki",
+      "keepId": "sf-yolopark-rise-of-the-beasts-amk-optimus-primal",
+      "dropName": "Rise of the Beasts Optimus Primal Model Kit",
+      "keepName": "Optimus Primal",
+      "keepMsrp": 29.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ5138",
+        "id:yolopark-rise-of-the-beasts-optimus-primal-model-ki"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "threezero-3z0565-dlx-transformers-rise-of-the-beasts-optimu",
+      "keepId": "tz7-03",
+      "dropName": "3Z0565 DLX Transformers Rise of the Beasts Optimus Primal",
+      "keepName": "Optimus Primal",
+      "keepMsrp": 200.0,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ5220",
+        "3Z0565",
+        "id:threezero-3z0565-dlx-transformers-rise-of-the-beasts-optimu"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "threezero-dlx-transformers-rise-of-the-beasts-bumble",
+      "keepId": "tz3-dlx-bumblebee-rotb",
+      "dropName": "DLX Transformers Rise of the Beasts Bumblebee",
+      "keepName": "Bumblebee",
+      "keepMsrp": 170.0,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ5226",
+        "id:threezero-dlx-transformers-rise-of-the-beasts-bumble"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "flametoys-furai-model-leo-prime-model-kit",
+      "keepId": "sf-flametoys-toyarena-flame-toys-furai-26-transformers-leo-prime-model-kit",
+      "dropName": "Furai Model Leo Prime Model Kit",
+      "keepName": "Transformers Leo Prime",
+      "keepMsrp": 79.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ3851",
+        "id:flametoys-furai-model-leo-prime-model-kit"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "flametoys-furai-model-12-optimus-prime-model-kit-g1",
+      "keepId": "sf-flametoys-toyarena-flame-toys-furai-12-transformers-optimus-prime-g1-ver-mode",
+      "dropName": "Furai Model 12 Optimus Prime Model Kit G1 Version",
+      "keepName": "Optimus Prime (G1 Ver.)",
+      "keepMsrp": 39.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ1979",
+        "id:flametoys-furai-model-12-optimus-prime-model-kit-g1"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "flametoys-furai-model-devastator-model-kit",
+      "keepId": "sf-flametoys-toyarena-flame-toys-furai-model-transformers-devastator-model-kit",
+      "dropName": "Furai Model Devastator Model Kit",
+      "keepName": "Devastator",
+      "keepMsrp": 74.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ1707",
+        "id:flametoys-furai-model-devastator-model-kit"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "threezero-3z0159-transformers-bumblebee-dlx-optimus-prime",
+      "keepId": "tz7-07",
+      "dropName": "3Z0159 Transformers Bumblebee DLX Optimus Prime",
+      "keepName": "Optimus Prime",
+      "keepMsrp": 200.0,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ1284",
+        "3Z0159",
+        "id:threezero-3z0159-transformers-bumblebee-dlx-optimus-prime"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "mergeStub",
+      "dropId": "xt6-xt-mx-04",
+      "keepId": "xtransbots-mx-4-abaddon-galvatron",
+      "dropName": "MX-04",
+      "keepName": "MX-4 Abaddon Galvatron",
+      "keepMsrp": 0.0,
+      "droppedMsrp": 110.0,
+      "carried": {},
+      "aliasesMoved": [
+        "id:xt6-xt-mx-04"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "mergeStub",
+      "dropId": "xt6-xt-mx-08",
+      "keepId": "xtransbots-mx-8-mx-viii-aegis-trailbreaker",
+      "dropName": "MX-08",
+      "keepName": "MX-VIII MX-8 Aegis Trailbreaker",
+      "keepMsrp": 0.0,
+      "droppedMsrp": 110.0,
+      "carried": {},
+      "aliasesMoved": [
+        "id:xt6-xt-mx-08"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "mergeStub",
+      "dropId": "xt6-xt-mx-05",
+      "keepId": "xtransbots-mx-5-dante-inferno",
+      "dropName": "MX-05",
+      "keepName": "MX-5 Dante Inferno",
+      "keepMsrp": 0.0,
+      "droppedMsrp": 110.0,
+      "carried": {},
+      "aliasesMoved": [
+        "id:xt6-xt-mx-05"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "merge",
+      "dropId": "uniquetoys-r-06-dino",
+      "keepId": "uniquetoys-ut-r06",
+      "dropName": "R-06 Dino",
+      "keepName": "Red Dasher",
+      "keepMsrp": 159.99,
+      "droppedMsrp": 0.0,
+      "carried": {},
+      "aliasesMoved": [
+        "SHOWZ5808",
+        "R-06",
+        "id:uniquetoys-r-06-dino"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "mergeStub",
+      "dropId": "xt6-xt-mx-06",
+      "keepId": "xtransbots-mx-6-da-vinci-grapple",
+      "dropName": "MX-06",
+      "keepName": "MX-6 Da Vinci Grapple",
+      "keepMsrp": 0.0,
+      "droppedMsrp": 110.0,
+      "carried": {},
+      "aliasesMoved": [
+        "id:xt6-xt-mx-06"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "mergeStub",
+      "dropId": "xt6-xt-mx-07",
+      "keepId": "xtransbots-mx-7-tirador-artfire-limited-version",
+      "dropName": "MX-07",
+      "keepName": "MX-7 Tirador Artfire Limited Version",
+      "keepMsrp": 0.0,
+      "droppedMsrp": 110.0,
+      "carried": {},
+      "aliasesMoved": [
+        "id:xt6-xt-mx-07"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "mergeStub",
+      "dropId": "dx96-dx9-k-03",
+      "keepId": "dx9-k3-la-hire-rodimus-hot-rod",
+      "dropName": "K3",
+      "keepName": "K3 La Hire Rodimus Hot Rod",
+      "keepMsrp": 0.0,
+      "droppedMsrp": 75.0,
+      "carried": {},
+      "aliasesMoved": [
+        "id:dx96-dx9-k-03"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "mergeStub",
+      "dropId": "dx96-dx9-k-02",
+      "keepId": "dx9-k2-ancestrod-hot-rod",
+      "dropName": "K2",
+      "keepName": "K2 Ancestrod Hot Rod",
+      "keepMsrp": 0.0,
+      "droppedMsrp": 75.0,
+      "carried": {},
+      "aliasesMoved": [
+        "id:dx96-dx9-k-02"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "action": "mergeStub",
+      "dropId": "dx96-dx9-k-01",
+      "keepId": "dx9-k1-freeman-bastion",
+      "dropName": "K1",
+      "keepName": "K1 Freeman (Bastion)",
+      "keepMsrp": 0.0,
+      "droppedMsrp": 75.0,
+      "carried": {},
+      "aliasesMoved": [
+        "id:dx96-dx9-k-01"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    }
+  ]
+}

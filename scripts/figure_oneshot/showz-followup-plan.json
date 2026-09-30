@@ -1891,7 +1891,7 @@
       "analyzerProperId": "xt6-xt-mx-04",
       "properName": "MX-04",
       "action": "mergeStub",
-      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry an id: alias (stub msrp/demand are flat template values and are not carried; MSRP set to 0 = unknown, per Shelby 2026-09-30), then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
       "sources": [
         "https://www.tfsafari.com/products/xtransbots-mx-4-abaddon-galvatron-25cm-9-84",
         "https://toys.tfw2005.com/abaddon-43171",
@@ -1938,7 +1938,7 @@
       "analyzerProperId": "xt6-xt-mx-08",
       "properName": "MX-08",
       "action": "mergeStub",
-      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry an id: alias (stub msrp/demand are flat template values and are not carried; MSRP set to 0 = unknown, per Shelby 2026-09-30), then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
       "sources": [
         "https://www.tfs-express.com/x-transbots/533-x-transbots-mx-8t-mx-viiit-aegis-reissue.html",
         "showzstore.com product p6548"
@@ -1997,7 +1997,7 @@
       "analyzerProperId": "xt6-xt-mx-05",
       "properName": "MX-05",
       "action": "mergeStub",
-      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry an id: alias (stub msrp/demand are flat template values and are not carried; MSRP set to 0 = unknown, per Shelby 2026-09-30), then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
       "sources": [
         "https://news.tfw2005.com/2021/09/14/x-transbots-mx-v-dante-mx-vi-da-vinci-mx-vii-tirador-color-renders-masterpiece-scale-g1-inferno-grapple-artfire-441030",
         "showzstore.com product p6274"
@@ -2228,7 +2228,7 @@
       "analyzerProperId": "xt6-xt-mx-06",
       "properName": "MX-06",
       "action": "mergeStub",
-      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry an id: alias (stub msrp/demand are flat template values and are not carried; MSRP set to 0 = unknown, per Shelby 2026-09-30), then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
       "sources": [
         "https://news.tfw2005.com/2021/09/14/x-transbots-mx-v-dante-mx-vi-da-vinci-mx-vii-tirador-color-renders-masterpiece-scale-g1-inferno-grapple-artfire-441030",
         "showzstore.com product p3492"
@@ -2245,7 +2245,7 @@
       "analyzerProperId": "xt6-xt-mx-07",
       "properName": "MX-07",
       "action": "mergeStub",
-      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry an id: alias (stub msrp/demand are flat template values and are not carried; MSRP set to 0 = unknown, per Shelby 2026-09-30), then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
       "sources": [
         "https://news.tfw2005.com/2021/09/14/x-transbots-mx-v-dante-mx-vi-da-vinci-mx-vii-tirador-color-renders-masterpiece-scale-g1-inferno-grapple-artfire-441030",
         "showzstore.com product p3493"
@@ -2454,7 +2454,7 @@
       "analyzerProperId": "dx96-dx9-k-03",
       "properName": "K3",
       "action": "mergeStub",
-      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry an id: alias (stub msrp/demand are flat template values and are not carried; MSRP set to 0 = unknown, per Shelby 2026-09-30), then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
       "sources": [
         "https://www.tfsafari.com/products/dx9-toys-k-3-k3-la-hire-hot-rod-rodimus-reissue-24cm",
         "showzstore.com product p0639"
@@ -2471,7 +2471,7 @@
       "analyzerProperId": "dx96-dx9-k-02",
       "properName": "K2",
       "action": "mergeStub",
-      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry an id: alias (stub msrp/demand are flat template values and are not carried; MSRP set to 0 = unknown, per Shelby 2026-09-30), then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
       "sources": [
         "https://tfsource.com/dx9/k2-ancestrod/",
         "showzstore.com product p0424"
@@ -2488,7 +2488,7 @@
       "analyzerProperId": "dx96-dx9-k-01",
       "properName": "K1",
       "action": "mergeStub",
-      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry an id: alias (stub msrp/demand are flat template values and are not carried; MSRP set to 0 = unknown, per Shelby 2026-09-30), then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
       "sources": [
         "https://tfsource.com/dx9/k1-freeman/",
         "showzstore.com product p0189"
