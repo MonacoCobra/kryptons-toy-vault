@@ -195979,7 +195979,6 @@
       "imgsku:hobbyfigures"
     ],
     "source": "curated-transformers",
-    "sku": "HASF9849",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0611/4030/4091/files/Transformers-One-Studio-Series-Deluxe-Class-Action-0.jpg?v=1723597765"
   },
   {
@@ -217860,13 +217859,13 @@
   {
     "id": "ss5-ss-megatron-tlk",
     "name": "Megatron",
-    "subtitle": "The Last Knight",
+    "subtitle": "SS-114 Transformers One",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2026-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
+    "releaseDate": "2024",
+    "msrp": 27.99,
+    "scale": "Deluxe",
     "demand": 1.3,
     "tags": [
       "hasbro",
@@ -217878,10 +217877,12 @@
       "image-sku",
       "image-bake",
       "imgsku:toyarena",
-      "date-precision:year"
+      "date-precision:year",
+      "fix:ss-relabel",
+      "sku-gtin"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "HAS265216",
+    "sku": "195166265216",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/195166265216a.webp?v=1730502571"
   },
   {

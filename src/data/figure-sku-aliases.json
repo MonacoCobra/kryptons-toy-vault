@@ -9978,14 +9978,12 @@
       "HASF8341"
     ],
     "tfss-ss-one-megatron": [
-      "TFSS-TF1-D-MEGATRON",
       "HAS180951",
       "HASG1790",
       "PF-SS-03-MEGATRONJP",
       "PF-SS-03-MEGATRON",
       "E0775AX00",
-      "F7244AX00",
-      "id:ss6-ss-megatron-tfone"
+      "F7244AX00"
     ],
     "ss4-ss86-ratchet": [
       "TFSS-86BRAWNRATCHET",
@@ -43755,6 +43753,13 @@
       "id:ss6-ss-optimus-tfone",
       "TFSS-TF1-D-OPTIMUSPRIME",
       "G0221"
+    ],
+    "ss5-ss-megatron-tlk": [
+      "id:ss6-ss-megatron-tfone",
+      "TFSS-TF1-D-MEGATRON",
+      "HAS265216",
+      "F9849",
+      "HASF9849"
     ]
   },
   "aliasToFigureId": {
@@ -51224,7 +51229,7 @@
     "HSG0020": "bsc-k2-andor",
     "HASF8772": "tfss-ss-megatron-concept",
     "HASF8341": "d14ml-sandman-nwh",
-    "TFSS-TF1-D-MEGATRON": "tfss-ss-one-megatron",
+    "TFSS-TF1-D-MEGATRON": "ss5-ss-megatron-tlk",
     "HAS180951": "tfss-ss-one-megatron",
     "HASG1790": "tfss-ss-one-megatron",
     "PF-SS-03-MEGATRONJP": "tfss-ss-one-megatron",
@@ -67571,7 +67576,7 @@
     "id:hs8-hs-43": "tfss-ss-86-jazz-2025",
     "id:ss6-ss-starscream-tfone": "tfss-ss-one-starscream",
     "id:ss6-ss-sentinel-tfone": "tfss-ss-one-sentinel",
-    "id:ss6-ss-megatron-tfone": "tfss-ss-one-megatron",
+    "id:ss6-ss-megatron-tfone": "ss5-ss-megatron-tlk",
     "id:ss5-ss-apelinq": "tfss-ss116-apelinq",
     "id:ss6-ss-optimus-tfone": "tfss-ss112-optimus-prime",
     "id:ss6-ss-elita-tfone": "tfss-ss-one-elita",
@@ -67673,7 +67678,10 @@
     "id:d14ss-dotm-soundwave": "tfc-soundwave-ss12",
     "id:afmon-hasbro-transformers-optimus-prime-awakening-studio-series-deluxe-class-bumblebee-bbts-197679": "afmon-hasbro-transformers-studio-series-transformers-optimus-prime-awakening-bumblebee-hsg5856",
     "id:d14ss-86-elita": "tfss-ss-one-elita",
-    "id:d14ss-dotm-starscream": "tfss-ss-one-starscream"
+    "id:d14ss-dotm-starscream": "tfss-ss-one-starscream",
+    "HAS265216": "ss5-ss-megatron-tlk",
+    "F9849": "ss5-ss-megatron-tlk",
+    "HASF9849": "ss5-ss-megatron-tlk"
   },
   "collapsed": [
     {
@@ -70750,6 +70758,19 @@
         "G0221"
       ],
       "reason": "Studio Series TF One follow-up 2026-09-30: tfss-ss-one-optimus relabelled as MTMTE WFC Voyager Optimus Prime (its EAN/image); TF One 112 Optimus Prime aliases moved to new row. Sources: https://tfwiki.net/wiki/Studio_Series; https://shop.hasbro.com/en-us/product/transformers-studio-series-deluxe-transformers-one-112-optimus-prime-4-5-action-figure-8-plus/G0221"
+    },
+    {
+      "keepId": "ss5-ss-megatron-tlk",
+      "dropId": null,
+      "canonicalSku": "195166265216",
+      "aliasesAdded": [
+        "id:ss6-ss-megatron-tfone",
+        "TFSS-TF1-D-MEGATRON",
+        "HAS265216",
+        "F9849",
+        "HASF9849"
+      ],
+      "reason": "Studio Series TF One follow-up 2026-09-30: ss5-ss-megatron-tlk relabelled SS-114 Transformers One Megatron (F9849, UPC 195166265216); TF One Megatron aliases moved from tfss-ss-one-megatron; wrong code HASF9849 removed from tfss-ssge04-megatron. Sources: https://tfwiki.net/wiki/Studio_Series; https://www.amazon.com/dp/B0CSH7FD61"
     }
   ],
   "flagged": [
