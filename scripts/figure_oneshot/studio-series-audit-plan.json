@@ -1,0 +1,4983 @@
+{
+ "generatedAt": "2026-09-30",
+ "scope": "Hasbro Transformers Studio Series rows (d14ss-*, tfss-*, tfc-*, BBTS wave rows, EE/afmon, legendsverse) + 12 TakaraTomy Showzstore SS rows",
+ "sources": {
+  "tfwiki": "https://tfwiki.net/wiki/Studio_Series (raw wikitext fetched 2026-09-30)",
+  "upcs": "TFW2005 Studio Series stock-photo/UPC thread; retailer image filenames carrying SS number + UPC (Shopify CDN listings)"
+ },
+ "rules": [
+  "Row identity = character + film claim; d14ss numbers are sequential placeholders and BBTS-wave dates/prices are placeholders, so they are evidence only when a UPC/image corroborates.",
+  "Keeper = curated-transformers > curated > EE > other; merges move aliases + id:<dropId> (keeper msrp/sku/image untouched).",
+  "Year fixed to YYYY-01-01 only when outside TFWiki year (±Oct-Dec/Jan-Feb tolerance); month is not sourced.",
+  "SKU/UPC/image mismatches are flagged, not changed."
+ ],
+ "counts": {
+  "rowsAudited": 383,
+  "correct": 120,
+  "fixFields": 68,
+  "merge": 111,
+  "deleteInvented": 32,
+  "unsure": 52,
+  "missingReleases": 96
+ },
+ "correct": [
+  {
+   "id": "takaratomy-ss07-studio-series-leader-class-grimlock",
+   "ref": "TakaraTomy SS07"
+  },
+  {
+   "id": "takaratomy-ss-08-studio-series-leader-class-blackout",
+   "ref": "TakaraTomy SS-08"
+  },
+  {
+   "id": "takaratomy-ss-12-studio-series-voyager-class-brawl",
+   "ref": "TakaraTomy SS-12"
+  },
+  {
+   "id": "takaratomy-ss05-studio-series-optimus-prime",
+   "ref": "TakaraTomy SS05"
+  },
+  {
+   "id": "takaratomy-ss06-studio-series-starscream",
+   "ref": "TakaraTomy SS06"
+  },
+  {
+   "id": "takaratomy-ss02-studio-series-stinger",
+   "ref": "TakaraTomy SS02"
+  },
+  {
+   "id": "tfss-ss-one-alpha",
+   "ref": "(unnumbered) Alpha Trion (One) — 2026 Voyager Class"
+  },
+  {
+   "id": "tfss-ss-one-thundercracker",
+   "ref": "(unnumbered) Thundercracker (One) — 2026 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-one-soundwave",
+   "ref": "(unnumbered) Soundwave (One) — 2026 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-one-orion",
+   "ref": "(unnumbered) Orion Pax (One) — 2026 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-one-airachnid",
+   "ref": "(unnumbered) Airachnid (One) — 2026 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-dotm-shockwave-leader",
+   "ref": "(unnumbered) Shockwave (Dark of the Moon w/ Brains, Wheelie, and Paratrooper, package refresh) — 2025 Leader Class"
+  },
+  {
+   "id": "tfss-ss-aoe-optimus-leader",
+   "ref": "(unnumbered) Optimus Prime (Age of Extinction) — 2025 Leader Class"
+  },
+  {
+   "id": "tfss-ss-86-megatron-2025",
+   "ref": "(unnumbered) Megatron (The Movie) — 2025 Leader Class"
+  },
+  {
+   "id": "tfss-ss-86-grimlock-2025",
+   "ref": "(unnumbered) Dinobot Grimlock / Autobot Wheelie (The Movie, package refresh) — 2025 Leader Class"
+  },
+  {
+   "id": "tfss-ss-constructicon-overload",
+   "ref": "(unnumbered) Constructicon Overload (Revenge of the Fallen, package refresh) — 2025 MTMTE Collection Leader Class"
+  },
+  {
+   "id": "tfss-ss-86-jazz-2025",
+   "ref": "(unnumbered) Autobot Jazz (The Movie, package refresh) — 2025 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-devastation-wheeljack",
+   "ref": "(unnumbered) Wheeljack (Devastation) — 2025 MTMTE Collection Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-devastation-sideswipe",
+   "ref": "(unnumbered) Sideswipe (Devastation) — 2025 MTMTE Collection Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-constructicon-hook-lh",
+   "ref": "(unnumbered) Constructicon Hook / Constructicon Long Haul (The Movie) — 2025 Commander Class"
+  },
+  {
+   "id": "tfss-ssge-thundercracker-wfc",
+   "ref": "(unnumbered) Thundercracker (War for Cybertron) — 2025 Voyager Class"
+  },
+  {
+   "id": "tfss-ss-devastation-optimus",
+   "ref": "(unnumbered) Devastation Optimus Prime (Devastation) — 2025 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-one-starscream",
+   "ref": "(unnumbered) Starscream (One) — 2025 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-one-sentinel",
+   "ref": "(unnumbered) Sentinel Prime (One) — 2025 Voyager Class"
+  },
+  {
+   "id": "tfss-ss-constructicon-scavenger",
+   "ref": "(unnumbered) Constructicon Scavenger (The Movie) — 2025 Deluxe Class"
+  },
+  {
+   "id": "tfss-ssge-ironhide-wfc",
+   "ref": "(unnumbered) Ironhide (War for Cybertron) — 2025 Voyager Class"
+  },
+  {
+   "id": "tfss-ss-constructicon-mixmaster",
+   "ref": "(unnumbered) Constructicon Mixmaster (The Movie) — 2025 Voyager Class"
+  },
+  {
+   "id": "tfss-ss-one-megatron",
+   "ref": "114 Megatron (One) — 2024 Deluxe Class"
+  },
+  {
+   "id": "ss6-ss-b-127",
+   "ref": "(unnumbered) B-127/Bumblebee (One) — 2025 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss116-apelinq",
+   "ref": "116 / 118 Apelinq (Rise of the Beasts) — 2025 Leader Class"
+  },
+  {
+   "id": "tfss-ss-one-optimus",
+   "ref": "112 Optimus Prime (One) — 2024 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-one-elita",
+   "ref": "(unnumbered) Elita-1 (One) — 2025 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss116-bb-vw",
+   "ref": "116 Bumblebee (Bumblebee Beetle) — 2025 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-constructicon-scrapper",
+   "ref": "(unnumbered) Constructicon Scrapper (The Movie) — 2025 Voyager Class"
+  },
+  {
+   "id": "tfss-ss86-galvatron-31",
+   "ref": "86-31 Galvatron (The Movie) — 2025 Leader Class"
+  },
+  {
+   "id": "tfss-ss-constructicon-bonecrusher",
+   "ref": "(unnumbered) Constructicon Bonecrusher (The Movie) — 2025 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss117-hatchet",
+   "ref": "94 / 117 Decepticon Hatchet (Dark of the Moon) — 2025 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss86-springer-30",
+   "ref": "86-30 Autobot Springer (The Movie) — 2024 Leader Class"
+  },
+  {
+   "id": "tfss-ss86-scourge-alt",
+   "ref": "86-05 Scourge (The Movie) — 2021 Voyager Class"
+  },
+  {
+   "id": "tfss-ssge10-bb-react",
+   "ref": "+10 Gamer Edition Bumblebee (Reactivate) — 2024 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss86-bb-29",
+   "ref": "86-29 Bumblebee (The Movie) — 2024 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-sunstreaker-concept",
+   "ref": "111 Concept Art Sunstreaker (Bumblebee) — 2024 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss86-swoop",
+   "ref": "86-26 Dinobot Swoop (The Movie) — 2024 Leader Class"
+  },
+  {
+   "id": "tfss-ss-skywarp-2024",
+   "ref": "113 Skywarp (Bumblebee) — 2024 Voyager Class"
+  },
+  {
+   "id": "tfss-ssge09-ratchet",
+   "ref": "+09 Gamer Edition Autobot Ratchet (War for Cybertron) — 2024 Voyager Class"
+  },
+  {
+   "id": "tfss-ss86-blaster",
+   "ref": "86-25 Autobot Blaster & Eject (The Movie) — 2024 Voyager Class"
+  },
+  {
+   "id": "tfss-ss-core-starscream",
+   "ref": "(unnumbered) Starscream (Bumblebee) — 2024 Core Class"
+  },
+  {
+   "id": "tfss-ss-shockwave-2024",
+   "ref": "110 Shockwave (Bumblebee) — 2024 Voyager Class"
+  },
+  {
+   "id": "tfss-ssge08-soldier",
+   "ref": "+08 Gamer Edition Decepticon Soldier (War for Cybertron) — 2024 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss86-ultramagnus-cmd",
+   "ref": "86-21 Ultra Magnus (The Movie) — 2023 Commander Class"
+  },
+  {
+   "id": "tfss-ssge07-sideswipe",
+   "ref": "+07 Gamer Edition Sideswipe (War for Cybertron) — 2024 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss86-perceptor-alt",
+   "ref": "86-11 Perceptor (The Movie) — 2022 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-core-mohawk",
+   "ref": "(unnumbered) Decepticon Mohawk (The Last Knight) — 2024 Core Class"
+  },
+  {
+   "id": "tfss-ss-megatron-concept",
+   "ref": "109 Concept Art Megatron (Bumblebee) — 2024 Leader Class"
+  },
+  {
+   "id": "tfss-ss86-arcee-alt",
+   "ref": "86-16 Arcee (The Movie) — 2022 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-core-steeljaw",
+   "ref": "(unnumbered) Steeljaw (The Movie) — 2024 Core Class"
+  },
+  {
+   "id": "tfss-ss86-snarl-alt",
+   "ref": "86-19 Dinobot Snarl (The Movie) — 2023 Leader Class"
+  },
+  {
+   "id": "tfss-ss86-sludge",
+   "ref": "86-15 Dinobot Sludge (The Movie) — 2022 Leader Class"
+  },
+  {
+   "id": "tfss-ss-scorponok-rotb",
+   "ref": "107 Predacon Scorponok (Rise of the Beasts) — 2024 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss86-kup-alt",
+   "ref": "86-02 Kup (The Movie) — 2021 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss86-hotrod-alt",
+   "ref": "86-04 Autobot Hot Rod (The Movie) — 2021 Voyager Class"
+  },
+  {
+   "id": "tfss-ssge06-starscream",
+   "ref": "+06 Gamer Edition Starscream (War for Cybertron) — 2024 Voyager Class"
+  },
+  {
+   "id": "tfss-ss86-scrapheap",
+   "ref": "86-24 Junkion Scrapheap (The Movie) — 2024 Voyager Class"
+  },
+  {
+   "id": "tfss-ss86-grimlock-wheelie",
+   "ref": "86-06 Grimlock & Autobot Wheelie (The Movie) — 2021 Leader Class"
+  },
+  {
+   "id": "tfss-ss86-ratchet-alt",
+   "ref": "86-23 Autobot Ratchet (The Movie) — 2023 Voyager Class"
+  },
+  {
+   "id": "tfss-ss86-blurr-alt",
+   "ref": "86-03 Blurr (The Movie) — 2021 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss100-bumblebee",
+   "ref": "100 Bumblebee (Rise of the Beasts) — 2023 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss86-brawn-alt",
+   "ref": "86-22 Brawn (The Movie) — 2023 Deluxe Class"
+  },
+  {
+   "id": "ss6-ss-arcee-rotb",
+   "ref": "(unnumbered) Arcee (Rise of the Beasts) — 2023 Core Class"
+  },
+  {
+   "id": "tfss-ss99-battletrap",
+   "ref": "99 Battletrap (Rise of the Beasts) — 2023 Voyager Class"
+  },
+  {
+   "id": "tfss-ss-core-freezer",
+   "ref": "(unnumbered) Terrorcon Freezer (Rise of the Beasts) — 2023 Core Class"
+  },
+  {
+   "id": "tfss-ss-core-novakane",
+   "ref": "(unnumbered) Terrorcon Novakane (Rise of the Beasts) — 2023 Core Class"
+  },
+  {
+   "id": "tfss-ss-core-noah",
+   "ref": "(unnumbered) Noah Díaz Exo-Suit (Rise of the Beasts) — 2023 Core Class"
+  },
+  {
+   "id": "tfss-ssge05-cliff",
+   "ref": "+05 Gamer Edition Cliffjumper (War for Cybertron) — 2023 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss98-cheetor",
+   "ref": "98 Cheetor (Rise of the Beasts) — 2023 Voyager Class"
+  },
+  {
+   "id": "tfss-ss97-airazor",
+   "ref": "97 Airazor (Rise of the Beasts) — 2023 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss61-sentinel",
+   "ref": "61 Sentinel Prime (Dark of the Moon) — 2020 Voyager Class"
+  },
+  {
+   "id": "tfss-ssge04-megatron",
+   "ref": "+04 Gamer Edition Megatron (War for Cybertron) — 2023 Voyager Class"
+  },
+  {
+   "id": "tfss-ss-core-ironhide",
+   "ref": "(unnumbered) Ironhide (The Movie) — 2023 Core Class"
+  },
+  {
+   "id": "tfss-ssge03-optimus",
+   "ref": "+03 Gamer Edition Optimus Prime (War for Cybertron) — 2023 Voyager Class"
+  },
+  {
+   "id": "tfss-ss-core-frenzy",
+   "ref": "(unnumbered) Decepticon Frenzy (Red) (The Movie) — 2023 Core Class"
+  },
+  {
+   "id": "tfss-ssge02-barricade",
+   "ref": "+02 Gamer Edition Barricade (War for Cybertron) — 2023 Deluxe Class"
+  },
+  {
+   "id": "tfss-ssge01-bb",
+   "ref": "+01 Gamer Edition Bumblebee (War for Cybertron) — 2023 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss86-jazz-alt",
+   "ref": "86-01 Autobot Jazz (The Movie) — 2021 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss86-ironhide-alt",
+   "ref": "86-17 Ironhide (The Movie) — 2022 Voyager Class"
+  },
+  {
+   "id": "tfss-ss91-fallen",
+   "ref": "91 The Fallen (Revenge of the Fallen) — 2022 Leader Class"
+  },
+  {
+   "id": "tfss-ss90-galvatron",
+   "ref": "90 Galvatron (Age of Extinction) — 2022 Voyager Class"
+  },
+  {
+   "id": "tfss-ss89-thundercracker",
+   "ref": "89 Thundercracker (Bumblebee) — 2022 Voyager Class"
+  },
+  {
+   "id": "tfss-ss-core-wheelie",
+   "ref": "(unnumbered) Autobot Wheelie (The Movie) — 2022 Core Class"
+  },
+  {
+   "id": "tfss-ss88-sideways",
+   "ref": "88 Sideways (Revenge of the Fallen) — 2022 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss-core-ratchet",
+   "ref": "(unnumbered) Autobot Ratchet (The Movie) — 2022 Core Class"
+  },
+  {
+   "id": "tfss-ss-core-laserbeak",
+   "ref": "(unnumbered) Laserbeak (Dark of the Moon) — 2022 Core Class"
+  },
+  {
+   "id": "tfss-ss87-bumblebee",
+   "ref": "87 Bumblebee (Dark of the Moon) — 2022 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss86-junkheap",
+   "ref": "86-14 Junkheap (The Movie) — 2022 Voyager Class"
+  },
+  {
+   "id": "tfss-ss-core-spike",
+   "ref": "(unnumbered) Exo-Suit Spike Witwicky (The Movie) — 2022 Core Class"
+  },
+  {
+   "id": "tfss-ss86-coronation-ss",
+   "ref": "86-12 Coronation Starscream (The Movie) — 2022 Leader Class"
+  },
+  {
+   "id": "tfss-ss-core-shockwave",
+   "ref": "(unnumbered) Shockwave (Bumblebee) — 2022 Core Class"
+  },
+  {
+   "id": "tfss-ss-core-ravage",
+   "ref": "(unnumbered) Ravage (Bumblebee) — 2022 Core Class"
+  },
+  {
+   "id": "tfss-ss86-sweep",
+   "ref": "86-10 Decepticon Sweep (The Movie) — 2021 Voyager Class"
+  },
+  {
+   "id": "tfss-ss86-wreckgar",
+   "ref": "86-09 Wreck-Gar (The Movie) — 2021 Voyager Class"
+  },
+  {
+   "id": "tfss-ss76-thrust",
+   "ref": "76 Thrust (Bumblebee) — 2021 Voyager Class"
+  },
+  {
+   "id": "tfss-ss86-gnaw-alt",
+   "ref": "86-08 Gnaw (The Movie) — 2021 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss86-slug-daniel",
+   "ref": "86-07 Dinobot Slug & Daniel Witwicky (The Movie) — 2021 Leader Class"
+  },
+  {
+   "id": "tfss-ss72-starscream-bb",
+   "ref": "72 Starscream (Bumblebee) — 2021 Voyager Class"
+  },
+  {
+   "id": "tfss-ss67-skipjack",
+   "ref": "67 Constructicon Skipjack (Revenge of the Fallen) — 2020 Voyager Class"
+  },
+  {
+   "id": "tfss-ss69-devastator",
+   "ref": "69 Devastator (Revenge of the Fallen) — 2020 Multi-packs"
+  },
+  {
+   "id": "tfss-ss66-overload",
+   "ref": "66 Constructicon Overload (Revenge of the Fallen) — 2020 Leader Class"
+  },
+  {
+   "id": "d14ss-tlk-hotrod",
+   "ref": "50 WWII Autobot Hot Rod (The Last Knight) — 2020 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss65-blitzwing",
+   "ref": "65 Blitzwing (Bumblebee) — 2020 Voyager Class"
+  },
+  {
+   "id": "tfss-ss62-soundwave",
+   "ref": "62 Soundwave (Revenge of the Fallen) — 2020 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss60-scrapper",
+   "ref": "60 Constructicon Scrapper (Revenge of the Fallen) — 2020 Voyager Class"
+  },
+  {
+   "id": "tfss-ss59-shatter",
+   "ref": "59 Shatter (Bumblebee Harrier) — 2020 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss58-roadbuster",
+   "ref": "58 Roadbuster (Dark of the Moon) — 2020 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss57-bb-offroad",
+   "ref": "57 Offroad Bumblebee (Bumblebee) — 2020 Deluxe Class"
+  },
+  {
+   "id": "tfss-ss56-shockwave",
+   "ref": "56 Shockwave (Dark of the Moon w/ Brains, Wheelie, and Paratrooper) — 2020 Leader Class"
+  },
+  {
+   "id": "tfss-ss55-scavenger",
+   "ref": "55 Constructicon Scavenger (Revenge of the Fallen) — 2020 Leader Class"
+  },
+  {
+   "id": "tfss-ss54-megatron",
+   "ref": "54 Megatron (Transformers) — 2020 Voyager Class"
+  },
+  {
+   "id": "tfss-ss53-mixmaster",
+   "ref": "53 Constructicon Mixmaster (Revenge of the Fallen) — 2020 Voyager Class"
+  },
+  {
+   "id": "d14ss-aoe-stinger",
+   "ref": "02 Decepticon Stinger (Age of Extinction) — 2018 Deluxe Class"
+  },
+  {
+   "id": "tfc-bumblebee-ss01",
+   "ref": "01 Bumblebee (Transformers 1977 Camaro) — 2018 Deluxe Class"
+  }
+ ],
+ "fixFields": [
+  {
+   "id": "d14ss-86-gnaw",
+   "ref": "86-08 Gnaw (The Movie, package refresh) — 2024 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-86-24 The Movie",
+     "new": "SS-86-08 The Movie (package refresh)"
+    }
+   },
+   "why": "number",
+   "evidence": "UPC 195166250557 image = Gnaw reissue (2024 refresh)",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ss86-optimus-cmd",
+   "ref": "86-31 Optimus Prime (The Movie) — 2024 Commander Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-86 Commander The Movie",
+     "new": "SS-86-31 The Movie Commander"
+    }
+   },
+   "why": "number",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss6-ss-optimus-bb",
+   "ref": "38 Optimus Prime (Bumblebee) — 2019 Voyager Class",
+   "set": {
+    "subtitle": {
+     "old": "Bumblebee Movie Wave6",
+     "new": "SS-38 Bumblebee"
+    },
+    "releaseDate": {
+     "old": "2024-10-01",
+     "new": "2019-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-cyclonus",
+   "ref": "(unnumbered) Cyclonus (The Movie) — 2026 Voyager Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-86",
+     "new": "The Movie Voyager 2026"
+    },
+    "releaseDate": {
+     "old": "2024-05-01",
+     "new": "2026-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ssge11-skywarp",
+   "ref": "+11 Gamer Edition Skywarp (War for Cybertron) — 2025 Voyager Class",
+   "set": {
+    "releaseDate": {
+     "old": "2024-09-01",
+     "new": "2025-01-01"
+    }
+   },
+   "why": "year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "afmon-hasbro-shockwave-hsg2191",
+   "ref": "(unnumbered) Shockwave (The Movie) — 2026 Voyager Class",
+   "set": {
+    "subtitle": {
+     "old": "Transformers Studio Series",
+     "new": "The Movie Voyager 2026"
+    }
+   },
+   "why": "film-added",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ss115-doublepunch",
+   "ref": "115 Double Punch (Rise of the Beasts) — 2025 Deluxe Class",
+   "set": {
+    "releaseDate": {
+     "old": "2024-08-01",
+     "new": "2025-01-01"
+    }
+   },
+   "why": "year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-soundwave",
+   "ref": "(unnumbered) Soundwave / Buzzsaw / Laserbeak / Ravage (The Movie) — 2026 Leader Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-86",
+     "new": "The Movie Leader 2026"
+    },
+    "releaseDate": {
+     "old": "2023-11-01",
+     "new": "2026-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ss-nemesis-2024",
+   "ref": "(unnumbered) Nemesis Prime (The Last Knight) — 2026 Leader Class",
+   "set": {
+    "subtitle": {
+     "old": "Voyager Exclusive",
+     "new": "TLK Leader 2026"
+    },
+    "releaseDate": {
+     "old": "2024-07-01",
+     "new": "2026-01-01"
+    }
+   },
+   "why": "class year subtitle",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-86-kup",
+   "ref": "86-02BB Kup (The Movie) — 2022 Buzzworthy Bumblebee Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-86-13 The Movie",
+     "new": "SS-86-02BB The Movie (Buzzworthy Bumblebee)"
+    },
+    "releaseDate": {
+     "old": "2024-01-01",
+     "new": "2022-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "SKU/image = Buzzworthy 86-02BB Kup",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "hs8-hs-26",
+   "ref": "(unnumbered) Autobot Hot Rod (The Movie) — 2026 MTMTE Collection Voyager Class",
+   "set": {
+    "releaseDate": {
+     "old": "2022-02-01",
+     "new": "2026-01-01"
+    }
+   },
+   "why": "year",
+   "evidence": "UPC 5010996367907 / image = 2026 exclusive Voyager Hot Rod (MTMTE)",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-rotb-wheeljack",
+   "ref": "108 Wheeljack (Rise of the Beasts) — 2024 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-113 ROTB",
+     "new": "SS-108 ROTB"
+    }
+   },
+   "why": "number",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-thundercracker",
+   "ref": "(unnumbered) Thundercracker (The Movie) — 2026 Voyager Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-86",
+     "new": "The Movie Voyager 2026"
+    },
+    "releaseDate": {
+     "old": "2023-10-01",
+     "new": "2026-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-skywarp",
+   "ref": "(unnumbered) Skywarp (The Movie) — 2026 Voyager Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-86",
+     "new": "The Movie Voyager 2026"
+    },
+    "releaseDate": {
+     "old": "2023-10-01",
+     "new": "2026-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-rotb-nightbird",
+   "ref": "104 Nightbird (Rise of the Beasts) — 2023 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-109 ROTB",
+     "new": "SS-104 ROTB"
+    }
+   },
+   "why": "number",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-dotm-chromia",
+   "ref": "52 Chromia • Arcee • Elita-1 (Revenge of the Fallen) — 2020 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-17 DOTM",
+     "new": "SS-52 ROTF"
+    },
+    "releaseDate": {
+     "old": "2019-01-01",
+     "new": "2020-01-01"
+    },
+    "name": {
+     "old": "Chromia",
+     "new": "Chromia, Arcee & Elita-1"
+    }
+   },
+   "why": "number film year name",
+   "evidence": "SKU TFSS53-MOTORCYCLESISTERS = 52 Chromia/Arcee/Elita-1 3-pack (ROTF)",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-rotb-rhinox",
+   "ref": "103 Rhinox (Rise of the Beasts) — 2023 Voyager Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-107 ROTB",
+     "new": "SS-103 ROTB"
+    }
+   },
+   "why": "number",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "hs8-hs-44",
+   "ref": "(unnumbered) Prowl (The Movie) — 2026 MTMTE Collection Deluxe Class",
+   "set": {
+    "releaseDate": {
+     "old": "2023-08-01",
+     "new": "2026-01-01"
+    }
+   },
+   "why": "year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-hound",
+   "ref": "(unnumbered) Autobot Hound (The Movie, package refresh from Generations Selects) — 2026 MTMTE Collection Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-86",
+     "new": "The Movie Deluxe 2026 (package refresh)"
+    },
+    "releaseDate": {
+     "old": "2023-08-01",
+     "new": "2026-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "UPC 5010996367921 / image = exclusive Deluxe Hound (2026 MTMTE)",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-wheeljack",
+   "ref": "(unnumbered) Wheeljack (The Movie, package refresh from Generations Selects) — 2026 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-86",
+     "new": "The Movie Deluxe 2026 (package refresh)"
+    },
+    "releaseDate": {
+     "old": "2023-07-01",
+     "new": "2026-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-mirage",
+   "ref": "105 Autobot Mirage (Rise of the Beasts) — 2023 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-86",
+     "new": "SS-105 ROTB"
+    }
+   },
+   "why": "number film",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-sunstreaker",
+   "ref": "(unnumbered) Sunstreaker (The Movie, package refresh from Generations Selects) — 2026 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-86",
+     "new": "The Movie Deluxe 2026 (package refresh)"
+    },
+    "releaseDate": {
+     "old": "2023-06-01",
+     "new": "2026-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-sideswipe",
+   "ref": "78 Sideswipe (Revenge of the Fallen) — 2021 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-86",
+     "new": "SS-78 ROTF"
+    },
+    "releaseDate": {
+     "old": "2023-06-01",
+     "new": "2021-01-01"
+    }
+   },
+   "why": "number film year",
+   "evidence": "UPC 630509991051 / retailer image = 2021 Deluxe Sideswipe (78 ROTF); no Movie Sideswipe exists",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-rotb-scourge",
+   "ref": "(unnumbered) Scourge (Rise of the Beasts, package refresh) — 2026 Leader Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-104 ROTB",
+     "new": "ROTB Leader 2026 (package refresh)"
+    },
+    "releaseDate": {
+     "old": "2023-06-01",
+     "new": "2026-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "UPC 5010996376008 image = 2026 Leader Scourge (ROTB) refresh",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-rotb-primal",
+   "ref": "106 Optimus Primal (Rise of the Beasts) — 2023 Leader Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-102 ROTB",
+     "new": "SS-106 ROTB"
+    }
+   },
+   "why": "number",
+   "evidence": "UPC 195166203232 / image = 2023 Leader Optimus Primal (106)",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-megatron-dotm",
+   "ref": "34 Megatron (Dark of the Moon w/ Igor) — 2019 Leader Class",
+   "set": {
+    "subtitle": {
+     "old": "Dark of the Moon",
+     "new": "SS-34 DOTM"
+    },
+    "releaseDate": {
+     "old": "2023-01-01",
+     "new": "2019-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-optimus-dotm",
+   "ref": "44BB Optimus Prime (Dark of the Moon) — 2023 Buzzworthy Bumblebee Leader Class",
+   "set": {
+    "subtitle": {
+     "old": "Dark of the Moon",
+     "new": "SS-44BB DOTM (Buzzworthy Bumblebee)"
+    },
+    "releaseDate": {
+     "old": "2022-01-01",
+     "new": "2023-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "SKU/image = Buzzworthy 44BB Optimus Prime (DOTM)",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ss93-hotrod",
+   "ref": "93 Autobot Hot Rod (The Last Knight) — 2022 Deluxe Class",
+   "set": {
+    "releaseDate": {
+     "old": "2023-03-01",
+     "new": "2022-01-01"
+    }
+   },
+   "why": "year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-cogman",
+   "ref": "39 Cogman (The Last Knight) — 2019 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "The Last Knight",
+     "new": "SS-39 TLK"
+    }
+   },
+   "why": "number",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-cliffjumper",
+   "ref": "(unnumbered) Cliffjumper (The Movie) — 2026 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-86",
+     "new": "The Movie Deluxe 2026"
+    },
+    "releaseDate": {
+     "old": "2023-03-01",
+     "new": "2026-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ss92-crosshairs",
+   "ref": "92 Crosshairs (The Last Knight) — 2022 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-92 AOE",
+     "new": "SS-92 TLK"
+    }
+   },
+   "why": "film",
+   "evidence": "92 Crosshairs is The Last Knight (TFWiki)",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-lockdown",
+   "ref": "11 Lockdown (Age of Extinction) — 2018 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "Age of Extinction",
+     "new": "SS-11 AOE"
+    }
+   },
+   "why": "number",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-optimus-aoy",
+   "ref": "(unnumbered) Optimus Prime (Age of Extinction) — 2026 Voyager Class",
+   "set": {
+    "releaseDate": {
+     "old": "2025-01-01",
+     "new": "2026-01-01"
+    }
+   },
+   "why": "year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-2007-ratchet",
+   "ref": "04 Autobot Ratchet (Transformers) — 2018 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-78 2007 Film",
+     "new": "SS-04 2007 Film"
+    },
+    "releaseDate": {
+     "old": "2022-07-01",
+     "new": "2018-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-2007-ironhide",
+   "ref": "14 Autobot Ironhide (Transformers) — 2018 Voyager Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-77 2007 Film",
+     "new": "SS-14 2007 Film"
+    },
+    "releaseDate": {
+     "old": "2022-06-01",
+     "new": "2018-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ss85-arcee",
+   "ref": "85 Arcee (Bumblebee) — 2022 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-85 2007 Film",
+     "new": "SS-85 Bumblebee"
+    }
+   },
+   "why": "film",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ss84-ironhide",
+   "ref": "84 Ironhide (Bumblebee) — 2022 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-84 2007 Film",
+     "new": "SS-84 Bumblebee"
+    }
+   },
+   "why": "film",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-2007-blackout",
+   "ref": "08 Decepticon Blackout (Transformers w/ Scorponok) — 2018 Leader Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-76 2007 Film",
+     "new": "SS-08 2007 Film"
+    },
+    "releaseDate": {
+     "old": "2022-05-01",
+     "new": "2018-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ss83-soundwave",
+   "ref": "83 Soundwave (Bumblebee) — 2022 Voyager Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-83 2007 Film",
+     "new": "SS-83 Bumblebee"
+    }
+   },
+   "why": "film",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ss86-cliff-alt",
+   "ref": "86-13BB Cliffjumper (The Movie) — 2022 Buzzworthy Bumblebee Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-86-13 The Movie",
+     "new": "SS-86-13BB The Movie (Buzzworthy Bumblebee)"
+    }
+   },
+   "why": "number",
+   "evidence": "86-13 exists only as 86-13BB (Buzzworthy)",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-2007-bonecrusher",
+   "ref": "33 Bonecrusher (Transformers) — 2019 Voyager Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-75 2007 Film",
+     "new": "SS-33 2007 Film"
+    },
+    "releaseDate": {
+     "old": "2022-04-01",
+     "new": "2019-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ss81-wheeljack",
+   "ref": "81 Wheeljack (Bumblebee) — 2022 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-81 2007 Film",
+     "new": "SS-81 Bumblebee"
+    }
+   },
+   "why": "film",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ss82-ratchet",
+   "ref": "82 Autobot Ratchet (Bumblebee) — 2022 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-82 2007 Film",
+     "new": "SS-82 Bumblebee"
+    }
+   },
+   "why": "film",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-2007-barricade",
+   "ref": "28 Barricade (Transformers) — 2019 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-74 2007 Film",
+     "new": "SS-28 2007 Film"
+    },
+    "releaseDate": {
+     "old": "2022-03-01",
+     "new": "2019-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-2007-jazz",
+   "ref": "10 Autobot Jazz (Transformers) — 2018 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-73 2007 Film",
+     "new": "SS-10 2007 Film"
+    },
+    "releaseDate": {
+     "old": "2022-02-01",
+     "new": "2018-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ss80-brawn",
+   "ref": "80 Brawn (Bumblebee) — 2022 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-80 2007 Film",
+     "new": "SS-80 Bumblebee"
+    }
+   },
+   "why": "film",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfc-starscream-ss03",
+   "ref": "06 Starscream (Transformers) — 2018 Voyager Class",
+   "set": {
+    "subtitle": {
+     "old": "DOTM SS-03",
+     "new": "SS-06 2007 Film"
+    }
+   },
+   "why": "number film",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfc-optimus-ss32",
+   "ref": "32 Optimus Prime (<!--Verbatim on the packaging.-->Transformers) — 2019 Voyager Class",
+   "set": {
+    "subtitle": {
+     "old": "Bumblebee SS-32",
+     "new": "SS-32 2007 Film"
+    }
+   },
+   "why": "film",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-bb-wheels",
+   "ref": "64 Cliffjumper (Bumblebee) — 2020 Deluxe Class",
+   "set": {
+    "releaseDate": {
+     "old": "2021-07-01",
+     "new": "2020-01-01"
+    }
+   },
+   "why": "year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ss73-grindor",
+   "ref": "73 Grindor & Ravage (Revenge of the Fallen) — 2021 Leader Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-73 DOTM",
+     "new": "SS-73 ROTF"
+    }
+   },
+   "why": "film",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-shatter",
+   "ref": "40 Shatter (Bumblebee Plymouth) — 2019 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "Bumblebee Movie",
+     "new": "SS-40 Bumblebee"
+    },
+    "releaseDate": {
+     "old": "2021-01-01",
+     "new": "2019-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-dotm-hightower",
+   "ref": "47 Constructicon Hightower (Revenge of the Fallen) — 2019 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-24 DOTM",
+     "new": "SS-47 ROTF"
+    }
+   },
+   "why": "number film",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-dropkick",
+   "ref": "22 Dropkick (Bumblebee SuperCobra) — 2018 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "Bumblebee Movie",
+     "new": "SS-22 Bumblebee"
+    }
+   },
+   "why": "number",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-dotm-crowbar",
+   "ref": "03 Crowbar (Dark of the Moon) — 2018 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-23 DOTM",
+     "new": "SS-03 DOTM"
+    },
+    "releaseDate": {
+     "old": "2019-07-01",
+     "new": "2018-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-dotm-wheeljack",
+   "ref": "(unnumbered) Wheeljack (Que) (Dark of the Moon) — 2025 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-22 DOTM",
+     "new": "DOTM Deluxe 2025"
+    },
+    "releaseDate": {
+     "old": "2019-06-01",
+     "new": "2025-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "afmon-hasbro-barricade-hsg1928",
+   "ref": "(unnumbered) Barricade (The Last Knight) — 2026 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "Transformers Studio Series",
+     "new": "TLK Deluxe 2026"
+    }
+   },
+   "why": "film-added",
+   "evidence": "2026 Deluxe Barricade = TLK Barricade",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-dotm-topspin",
+   "ref": "63 Autobot Topspin (Dark of the Moon) — 2020 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-21 DOTM",
+     "new": "SS-63 DOTM"
+    },
+    "releaseDate": {
+     "old": "2019-05-01",
+     "new": "2020-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-dotm-leadfoot",
+   "ref": "68 Leadfoot (Dark of the Moon w/ Steeljaw) — 2020 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-19 DOTM",
+     "new": "SS-68 DOTM"
+    },
+    "releaseDate": {
+     "old": "2019-03-01",
+     "new": "2020-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-dotm-sideswipe",
+   "ref": "29 Sideswipe (Dark of the Moon) — 2019 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-16 DOTM",
+     "new": "SS-29 DOTM"
+    }
+   },
+   "why": "number",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-dotm-ratchet",
+   "ref": "16 Autobot Ratchet (Dark of the Moon) — 2018 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-15 DOTM",
+     "new": "SS-16 DOTM"
+    }
+   },
+   "why": "number",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfc-grimlock-ss09",
+   "ref": "07 Grimlock (Age of Extinction) — 2018 Leader Class",
+   "set": {
+    "subtitle": {
+     "old": "AOE SS-09",
+     "new": "SS-07 AOE"
+    }
+   },
+   "why": "number",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-aoe-drift",
+   "ref": "45 Autobot Drift (Age of Extinction) — 2019 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-08 AOE",
+     "new": "SS-45 AOE"
+    },
+    "releaseDate": {
+     "old": "2018-09-01",
+     "new": "2019-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-dotm-megatron",
+   "ref": "13 Megatron (Revenge of the Fallen) — 2018 Voyager Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-13 DOTM",
+     "new": "SS-13 ROTF"
+    }
+   },
+   "why": "film",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfc-soundwave-ss12",
+   "ref": "51 Soundwave (Dark of the Moon w/ Laserbeak) — 2020 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "DOTM SS-12",
+     "new": "SS-51 DOTM"
+    },
+    "releaseDate": {
+     "old": "2018-07-01",
+     "new": "2020-01-01"
+    }
+   },
+   "why": "number year",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-aoe-optimus",
+   "ref": "05 Optimus Prime (Revenge of the Fallen) — 2018 Voyager Class",
+   "set": {
+    "subtitle": {
+     "old": "SS-05 AOE",
+     "new": "SS-05 ROTF"
+    }
+   },
+   "why": "film",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "afmon-hasbro-grimlock-hsg1888",
+   "ref": "(unnumbered) Grimlock (Age of Extinction) — 2026 Titan Class",
+   "set": {
+    "subtitle": {
+     "old": "Transformers Studio Series",
+     "new": "AOE Titan 2026"
+    }
+   },
+   "why": "film-added",
+   "evidence": "$189.99 2026 = Titan Class Grimlock (AOE)",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "afmon-hasbro-autobot-windcharger-hsg1927",
+   "ref": "(unnumbered) Windcharger (The Movie) — 2026 Deluxe Class",
+   "set": {
+    "subtitle": {
+     "old": "Transformers Studio Series",
+     "new": "The Movie Deluxe 2026"
+    }
+   },
+   "why": "film-added",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "afmon-hasbro-transformers-studio-series-transformers-optimus-prime-awakening-bumblebee-hsg5856",
+   "ref": "(unnumbered) Bumblebee (Optimus Prime: Awakening) — 2027 Deluxe Class",
+   "set": {
+    "name": {
+     "old": "Transformers Studio Series Transformers Optimus Prime: Awakening Bumblebee",
+     "new": "Bumblebee"
+    },
+    "subtitle": {
+     "old": "Transformers Studio Series Transforme...",
+     "new": "Optimus Prime: Awakening Deluxe"
+    }
+   },
+   "why": "name subtitle",
+   "evidence": "",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  }
+ ],
+ "merge": [
+  {
+   "dropId": "ss6-ss-alpha-trion",
+   "keepId": "tfss-ss-one-alpha",
+   "ref": "(unnumbered) Alpha Trion (One) — 2026 Voyager Class",
+   "dropName": "Alpha Trion",
+   "dropSubtitle": "TF One Wave6",
+   "reason": "Same release as tfss-ss-one-alpha: (unnumbered) Alpha Trion (One) — 2026 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "afmon-hasbro-soundwave-hsg2200",
+   "keepId": "tfss-ss-one-soundwave",
+   "ref": "(unnumbered) Soundwave (One) — 2026 Deluxe Class",
+   "dropName": "Soundwave",
+   "dropSubtitle": "Transformers Studio Series",
+   "reason": "Same release as tfss-ss-one-soundwave: (unnumbered) Soundwave (One) — 2026 Deluxe Class. $27.99 2026 Deluxe Soundwave = Transformers One Soundwave",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-airachnid",
+   "keepId": "tfss-ss-one-airachnid",
+   "ref": "(unnumbered) Airachnid (One) — 2026 Deluxe Class",
+   "dropName": "Airachnid",
+   "dropSubtitle": "TF One Wave6",
+   "reason": "Same release as tfss-ss-one-airachnid: (unnumbered) Airachnid (One) — 2026 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-shockwave-dotm",
+   "keepId": "tfss-ss-dotm-shockwave-leader",
+   "ref": "(unnumbered) Shockwave (Dark of the Moon w/ Brains, Wheelie, and Paratrooper, package refresh) — 2025 Leader Class",
+   "dropName": "Shockwave",
+   "dropSubtitle": "Dark of the Moon",
+   "reason": "Same release as tfss-ss-dotm-shockwave-leader: (unnumbered) Shockwave (Dark of the Moon w/ Brains, Wheelie, and Paratrooper, package refresh) — 2025 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "hs8-hs-22",
+   "keepId": "tfss-ss-86-megatron-2025",
+   "ref": "(unnumbered) Megatron (The Movie) — 2025 Leader Class",
+   "dropName": "Megatron",
+   "dropSubtitle": "Studio Series 86",
+   "reason": "Same release as tfss-ss-86-megatron-2025: (unnumbered) Megatron (The Movie) — 2025 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "hs8-hs-43",
+   "keepId": "tfss-ss-86-jazz-2025",
+   "ref": "(unnumbered) Autobot Jazz (The Movie, package refresh) — 2025 Deluxe Class",
+   "dropName": "Jazz",
+   "dropSubtitle": "Studio Series 86",
+   "reason": "Same release as tfss-ss-86-jazz-2025: (unnumbered) Autobot Jazz (The Movie, package refresh) — 2025 Deluxe Class. SKU 5010996301147 = tfss-ss-86-jazz-2025 UPC",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-starscream-tfone",
+   "keepId": "tfss-ss-one-starscream",
+   "ref": "(unnumbered) Starscream (One) — 2025 Deluxe Class",
+   "dropName": "Starscream",
+   "dropSubtitle": "TF One Wave6",
+   "reason": "Same release as tfss-ss-one-starscream: (unnumbered) Starscream (One) — 2025 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-sentinel-tfone",
+   "keepId": "tfss-ss-one-sentinel",
+   "ref": "(unnumbered) Sentinel Prime (One) — 2025 Voyager Class",
+   "dropName": "Sentinel Prime",
+   "dropSubtitle": "TF One Wave6",
+   "reason": "Same release as tfss-ss-one-sentinel: (unnumbered) Sentinel Prime (One) — 2025 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-megatron-tfone",
+   "keepId": "tfss-ss-one-megatron",
+   "ref": "114 Megatron (One) — 2024 Deluxe Class",
+   "dropName": "Megatron",
+   "dropSubtitle": "TF One Wave6",
+   "reason": "Same release as tfss-ss-one-megatron: 114 Megatron (One) — 2024 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-apelinq",
+   "keepId": "tfss-ss116-apelinq",
+   "ref": "116 / 118 Apelinq (Rise of the Beasts) — 2025 Leader Class",
+   "dropName": "Apelinq",
+   "dropSubtitle": "Rise of the Beasts",
+   "reason": "Same release as tfss-ss116-apelinq: 116 / 118 Apelinq (Rise of the Beasts) — 2025 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-optimus-tfone",
+   "keepId": "tfss-ss-one-optimus",
+   "ref": "112 Optimus Prime (One) — 2024 Deluxe Class",
+   "dropName": "Optimus Prime",
+   "dropSubtitle": "TF One Wave6",
+   "reason": "Same release as tfss-ss-one-optimus: 112 Optimus Prime (One) — 2024 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-elita-tfone",
+   "keepId": "tfss-ss-one-elita",
+   "ref": "(unnumbered) Elita-1 (One) — 2025 Deluxe Class",
+   "dropName": "Elita-1",
+   "dropSubtitle": "TF One Wave6",
+   "reason": "Same release as tfss-ss-one-elita: (unnumbered) Elita-1 (One) — 2025 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-86-galvatron",
+   "keepId": "tfss-ss86-galvatron-31",
+   "ref": "86-31 Galvatron (The Movie) — 2025 Leader Class",
+   "dropName": "Galvatron",
+   "dropSubtitle": "SS-86-23 The Movie",
+   "reason": "Same release as tfss-ss86-galvatron-31: 86-31 Galvatron (The Movie) — 2025 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-galvatron",
+   "keepId": "tfss-ss86-galvatron-31",
+   "ref": "86-31 Galvatron (The Movie) — 2025 Leader Class",
+   "dropName": "Galvatron",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as tfss-ss86-galvatron-31: 86-31 Galvatron (The Movie) — 2025 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-galvatron-86",
+   "keepId": "tfss-ss86-galvatron-31",
+   "ref": "86-31 Galvatron (The Movie) — 2025 Leader Class",
+   "dropName": "Galvatron",
+   "dropSubtitle": "86 Movie",
+   "reason": "Same release as tfss-ss86-galvatron-31: 86-31 Galvatron (The Movie) — 2025 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-bb-optimus",
+   "keepId": "ss6-ss-optimus-bb",
+   "ref": "38 Optimus Prime (Bumblebee) — 2019 Voyager Class",
+   "dropName": "Optimus Prime",
+   "dropSubtitle": "SS-32 Bumblebee",
+   "reason": "Same release as ss6-ss-optimus-bb: 38 Optimus Prime (Bumblebee) — 2019 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-86-cyclonus",
+   "keepId": "ss4-ss86-cyclonus",
+   "ref": "(unnumbered) Cyclonus (The Movie) — 2026 Voyager Class",
+   "dropName": "Cyclonus",
+   "dropSubtitle": "SS-86-22 The Movie",
+   "reason": "Same release as ss4-ss86-cyclonus: (unnumbered) Cyclonus (The Movie) — 2026 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-cyclonus-86",
+   "keepId": "ss4-ss86-cyclonus",
+   "ref": "(unnumbered) Cyclonus (The Movie) — 2026 Voyager Class",
+   "dropName": "Cyclonus",
+   "dropSubtitle": "86 Movie",
+   "reason": "Same release as ss4-ss86-cyclonus: (unnumbered) Cyclonus (The Movie) — 2026 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-springer",
+   "keepId": "tfss-ss86-springer-30",
+   "ref": "86-30 Autobot Springer (The Movie) — 2024 Leader Class",
+   "dropName": "Springer",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as tfss-ss86-springer-30: 86-30 Autobot Springer (The Movie) — 2024 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-86-springer",
+   "keepId": "tfss-ss86-springer-30",
+   "ref": "86-30 Autobot Springer (The Movie) — 2024 Leader Class",
+   "dropName": "Springer",
+   "dropSubtitle": "SS-86-15 The Movie",
+   "reason": "Same release as tfss-ss86-springer-30: 86-30 Autobot Springer (The Movie) — 2024 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-springer-86",
+   "keepId": "tfss-ss86-springer-30",
+   "ref": "86-30 Autobot Springer (The Movie) — 2024 Leader Class",
+   "dropName": "Springer",
+   "dropSubtitle": "86 Movie",
+   "reason": "Same release as tfss-ss86-springer-30: 86-30 Autobot Springer (The Movie) — 2024 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-86-scourge",
+   "keepId": "tfss-ss86-scourge-alt",
+   "ref": "86-05 Scourge (The Movie) — 2021 Voyager Class",
+   "dropName": "Scourge",
+   "dropSubtitle": "SS-86-21 The Movie",
+   "reason": "Same release as tfss-ss86-scourge-alt: 86-05 Scourge (The Movie) — 2021 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-scourge-86",
+   "keepId": "tfss-ss86-scourge-alt",
+   "ref": "86-05 Scourge (The Movie) — 2021 Voyager Class",
+   "dropName": "Scourge",
+   "dropSubtitle": "86 Movie",
+   "reason": "Same release as tfss-ss86-scourge-alt: 86-05 Scourge (The Movie) — 2021 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-86-shockwave",
+   "keepId": "afmon-hasbro-shockwave-hsg2191",
+   "ref": "(unnumbered) Shockwave (The Movie) — 2026 Voyager Class",
+   "dropName": "Shockwave",
+   "dropSubtitle": "SS-86-20 The Movie",
+   "reason": "Same release as afmon-hasbro-shockwave-hsg2191: (unnumbered) Shockwave (The Movie) — 2026 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-shockwave",
+   "keepId": "afmon-hasbro-shockwave-hsg2191",
+   "ref": "(unnumbered) Shockwave (The Movie) — 2026 Voyager Class",
+   "dropName": "Shockwave",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as afmon-hasbro-shockwave-hsg2191: (unnumbered) Shockwave (The Movie) — 2026 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-shockwave-86",
+   "keepId": "afmon-hasbro-shockwave-hsg2191",
+   "ref": "(unnumbered) Shockwave (The Movie) — 2026 Voyager Class",
+   "dropName": "Shockwave",
+   "dropSubtitle": "86 Movie",
+   "reason": "Same release as afmon-hasbro-shockwave-hsg2191: (unnumbered) Shockwave (The Movie) — 2026 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-86-bumblebee",
+   "keepId": "tfss-ss86-bb-29",
+   "ref": "86-29 Bumblebee (The Movie) — 2024 Deluxe Class",
+   "dropName": "Bumblebee",
+   "dropSubtitle": "SS-86-06 The Movie",
+   "reason": "Same release as tfss-ss86-bb-29: 86-29 Bumblebee (The Movie) — 2024 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-bumblebee",
+   "keepId": "tfss-ss86-bb-29",
+   "ref": "86-29 Bumblebee (The Movie) — 2024 Deluxe Class",
+   "dropName": "Bumblebee",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as tfss-ss86-bb-29: 86-29 Bumblebee (The Movie) — 2024 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "hs8-hs-23",
+   "keepId": "tfss-ss86-bb-29",
+   "ref": "86-29 Bumblebee (The Movie) — 2024 Deluxe Class",
+   "dropName": "Bumblebee",
+   "dropSubtitle": "Studio Series 86",
+   "reason": "Same release as tfss-ss86-bb-29: 86-29 Bumblebee (The Movie) — 2024 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "hs10-hs-25",
+   "keepId": "tfss-ss86-bb-29",
+   "ref": "86-29 Bumblebee (The Movie) — 2024 Deluxe Class",
+   "dropName": "Studio Series 86 Bumblebee",
+   "dropSubtitle": "Studio Series",
+   "reason": "Same release as tfss-ss86-bb-29: 86-29 Bumblebee (The Movie) — 2024 Deluxe Class. SKU 5010996232335 = tfss-ss86-bb-29 UPC (86-29 Bumblebee)",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-86-soundwave",
+   "keepId": "ss4-ss86-soundwave",
+   "ref": "(unnumbered) Soundwave / Buzzsaw / Laserbeak / Ravage (The Movie) — 2026 Leader Class",
+   "dropName": "Soundwave",
+   "dropSubtitle": "SS-86-19 The Movie",
+   "reason": "Same release as ss4-ss86-soundwave: (unnumbered) Soundwave / Buzzsaw / Laserbeak / Ravage (The Movie) — 2026 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "hs8-hs-45",
+   "keepId": "ss4-ss86-soundwave",
+   "ref": "(unnumbered) Soundwave / Buzzsaw / Laserbeak / Ravage (The Movie) — 2026 Leader Class",
+   "dropName": "Soundwave",
+   "dropSubtitle": "Studio Series 86",
+   "reason": "Same release as ss4-ss86-soundwave: (unnumbered) Soundwave / Buzzsaw / Laserbeak / Ravage (The Movie) — 2026 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-soundwave-86",
+   "keepId": "ss4-ss86-soundwave",
+   "ref": "(unnumbered) Soundwave / Buzzsaw / Laserbeak / Ravage (The Movie) — 2026 Leader Class",
+   "dropName": "Soundwave",
+   "dropSubtitle": "86 Movie",
+   "reason": "Same release as ss4-ss86-soundwave: (unnumbered) Soundwave / Buzzsaw / Laserbeak / Ravage (The Movie) — 2026 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-swoop-86",
+   "keepId": "tfss-ss86-swoop",
+   "ref": "86-26 Dinobot Swoop (The Movie) — 2024 Leader Class",
+   "dropName": "Swoop",
+   "dropSubtitle": "86 Movie Wave6",
+   "reason": "Same release as tfss-ss86-swoop: 86-26 Dinobot Swoop (The Movie) — 2024 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-swoop",
+   "keepId": "tfss-ss86-swoop",
+   "ref": "86-26 Dinobot Swoop (The Movie) — 2024 Leader Class",
+   "dropName": "Swoop",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as tfss-ss86-swoop: 86-26 Dinobot Swoop (The Movie) — 2024 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-blaster",
+   "keepId": "tfss-ss86-blaster",
+   "ref": "86-25 Autobot Blaster & Eject (The Movie) — 2024 Voyager Class",
+   "dropName": "Blaster",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as tfss-ss86-blaster: 86-25 Autobot Blaster & Eject (The Movie) — 2024 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-ultra-magnus",
+   "keepId": "tfss-ss86-ultramagnus-cmd",
+   "ref": "86-21 Ultra Magnus (The Movie) — 2023 Commander Class",
+   "dropName": "Ultra Magnus",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as tfss-ss86-ultramagnus-cmd: 86-21 Ultra Magnus (The Movie) — 2023 Commander Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-86-ultras",
+   "keepId": "tfss-ss86-ultramagnus-cmd",
+   "ref": "86-21 Ultra Magnus (The Movie) — 2023 Commander Class",
+   "dropName": "Ultra Magnus",
+   "dropSubtitle": "SS-86-14 The Movie",
+   "reason": "Same release as tfss-ss86-ultramagnus-cmd: 86-21 Ultra Magnus (The Movie) — 2023 Commander Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-ultrmagnus-86",
+   "keepId": "tfss-ss86-ultramagnus-cmd",
+   "ref": "86-21 Ultra Magnus (The Movie) — 2023 Commander Class",
+   "dropName": "Ultra Magnus",
+   "dropSubtitle": "86 Movie",
+   "reason": "Same release as tfss-ss86-ultramagnus-cmd: 86-21 Ultra Magnus (The Movie) — 2023 Commander Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-86-perceptor",
+   "keepId": "tfss-ss86-perceptor-alt",
+   "ref": "86-11 Perceptor (The Movie) — 2022 Deluxe Class",
+   "dropName": "Perceptor",
+   "dropSubtitle": "SS-86-16 The Movie",
+   "reason": "Same release as tfss-ss86-perceptor-alt: 86-11 Perceptor (The Movie) — 2022 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-arcee",
+   "keepId": "tfss-ss86-arcee-alt",
+   "ref": "86-16 Arcee (The Movie) — 2022 Deluxe Class",
+   "dropName": "Arcee",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as tfss-ss86-arcee-alt: 86-16 Arcee (The Movie) — 2022 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-86-arcee",
+   "keepId": "tfss-ss86-arcee-alt",
+   "ref": "86-16 Arcee (The Movie) — 2022 Deluxe Class",
+   "dropName": "Arcee",
+   "dropSubtitle": "SS-86-08 The Movie",
+   "reason": "Same release as tfss-ss86-arcee-alt: 86-16 Arcee (The Movie) — 2022 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-arcee-86",
+   "keepId": "tfss-ss86-arcee-alt",
+   "ref": "86-16 Arcee (The Movie) — 2022 Deluxe Class",
+   "dropName": "Arcee",
+   "dropSubtitle": "86 Movie",
+   "reason": "Same release as tfss-ss86-arcee-alt: 86-16 Arcee (The Movie) — 2022 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-snarl-86",
+   "keepId": "tfss-ss86-snarl-alt",
+   "ref": "86-19 Dinobot Snarl (The Movie) — 2023 Leader Class",
+   "dropName": "Snarl",
+   "dropSubtitle": "86 Movie Wave6",
+   "reason": "Same release as tfss-ss86-snarl-alt: 86-19 Dinobot Snarl (The Movie) — 2023 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-snarl",
+   "keepId": "tfss-ss86-snarl-alt",
+   "ref": "86-19 Dinobot Snarl (The Movie) — 2023 Leader Class",
+   "dropName": "Snarl",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as tfss-ss86-snarl-alt: 86-19 Dinobot Snarl (The Movie) — 2023 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-sludge-86",
+   "keepId": "tfss-ss86-sludge",
+   "ref": "86-15 Dinobot Sludge (The Movie) — 2022 Leader Class",
+   "dropName": "Sludge",
+   "dropSubtitle": "86 Movie Wave6",
+   "reason": "Same release as tfss-ss86-sludge: 86-15 Dinobot Sludge (The Movie) — 2022 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-sludge",
+   "keepId": "tfss-ss86-sludge",
+   "ref": "86-15 Dinobot Sludge (The Movie) — 2022 Leader Class",
+   "dropName": "Sludge",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as tfss-ss86-sludge: 86-15 Dinobot Sludge (The Movie) — 2022 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-kup",
+   "keepId": "tfss-ss86-kup-alt",
+   "ref": "86-02 Kup (The Movie) — 2021 Deluxe Class",
+   "dropName": "Kup",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as tfss-ss86-kup-alt: 86-02 Kup (The Movie) — 2021 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-kup-86",
+   "keepId": "tfss-ss86-kup-alt",
+   "ref": "86-02 Kup (The Movie) — 2021 Deluxe Class",
+   "dropName": "Kup",
+   "dropSubtitle": "86 Movie",
+   "reason": "Same release as tfss-ss86-kup-alt: 86-02 Kup (The Movie) — 2021 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-hotrod",
+   "keepId": "tfss-ss86-hotrod-alt",
+   "ref": "86-04 Autobot Hot Rod (The Movie) — 2021 Voyager Class",
+   "dropName": "Hot Rod",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as tfss-ss86-hotrod-alt: 86-04 Autobot Hot Rod (The Movie) — 2021 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-hotrod-86",
+   "keepId": "tfss-ss86-hotrod-alt",
+   "ref": "86-04 Autobot Hot Rod (The Movie) — 2021 Voyager Class",
+   "dropName": "Hot Rod",
+   "dropSubtitle": "86 Movie",
+   "reason": "Same release as tfss-ss86-hotrod-alt: 86-04 Autobot Hot Rod (The Movie) — 2021 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-86-hotrod",
+   "keepId": "hs8-hs-26",
+   "ref": "(unnumbered) Autobot Hot Rod (The Movie) — 2026 MTMTE Collection Voyager Class",
+   "dropName": "Hot Rod",
+   "dropSubtitle": "SS-86-12 The Movie",
+   "reason": "Same release as hs8-hs-26: (unnumbered) Autobot Hot Rod (The Movie) — 2026 MTMTE Collection Voyager Class. same UPC 5010996367907 as hs8-hs-26",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-grimlock",
+   "keepId": "tfss-ss86-grimlock-wheelie",
+   "ref": "86-06 Grimlock & Autobot Wheelie (The Movie) — 2021 Leader Class",
+   "dropName": "Grimlock",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as tfss-ss86-grimlock-wheelie: 86-06 Grimlock & Autobot Wheelie (The Movie) — 2021 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-grimlock-86",
+   "keepId": "tfss-ss86-grimlock-wheelie",
+   "ref": "86-06 Grimlock & Autobot Wheelie (The Movie) — 2021 Leader Class",
+   "dropName": "Grimlock",
+   "dropSubtitle": "86 Movie",
+   "reason": "Same release as tfss-ss86-grimlock-wheelie: 86-06 Grimlock & Autobot Wheelie (The Movie) — 2021 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-wheeljack-rotb",
+   "keepId": "d14ss-rotb-wheeljack",
+   "ref": "108 Wheeljack (Rise of the Beasts) — 2024 Deluxe Class",
+   "dropName": "Wheeljack",
+   "dropSubtitle": "ROTB Wave6",
+   "reason": "Same release as d14ss-rotb-wheeljack: 108 Wheeljack (Rise of the Beasts) — 2024 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-86-blurr",
+   "keepId": "tfss-ss86-blurr-alt",
+   "ref": "86-03 Blurr (The Movie) — 2021 Deluxe Class",
+   "dropName": "Blurr",
+   "dropSubtitle": "SS-86-11 The Movie",
+   "reason": "Same release as tfss-ss86-blurr-alt: 86-03 Blurr (The Movie) — 2021 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-blurr-86",
+   "keepId": "tfss-ss86-blurr-alt",
+   "ref": "86-03 Blurr (The Movie) — 2021 Deluxe Class",
+   "dropName": "Blurr",
+   "dropSubtitle": "86 Movie Wave6",
+   "reason": "Same release as tfss-ss86-blurr-alt: 86-03 Blurr (The Movie) — 2021 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "lv-hasbro-transformers-studio-series-the-transformers-the-movie-studio-series-86-voyager-class-skyw",
+   "keepId": "ss4-ss86-skywarp",
+   "ref": "(unnumbered) Skywarp (The Movie) — 2026 Voyager Class",
+   "dropName": "The Transformers: The Movie Studio Series 86 Voyager Class Skywarp",
+   "dropSubtitle": "",
+   "reason": "Same release as ss4-ss86-skywarp: (unnumbered) Skywarp (The Movie) — 2026 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-rotb-bumblebee",
+   "keepId": "tfss-ss100-bumblebee",
+   "ref": "100 Bumblebee (Rise of the Beasts) — 2023 Deluxe Class",
+   "dropName": "Bumblebee",
+   "dropSubtitle": "SS-111 ROTB",
+   "reason": "Same release as tfss-ss100-bumblebee: 100 Bumblebee (Rise of the Beasts) — 2023 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-rotb-arcee",
+   "keepId": "ss6-ss-arcee-rotb",
+   "ref": "(unnumbered) Arcee (Rise of the Beasts) — 2023 Core Class",
+   "dropName": "Arcee",
+   "dropSubtitle": "SS-112 ROTB",
+   "reason": "Same release as ss6-ss-arcee-rotb: (unnumbered) Arcee (Rise of the Beasts) — 2023 Core Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-nightbird-rotb",
+   "keepId": "d14ss-rotb-nightbird",
+   "ref": "104 Nightbird (Rise of the Beasts) — 2023 Deluxe Class",
+   "dropName": "Nightbird",
+   "dropSubtitle": "ROTB Wave6",
+   "reason": "Same release as d14ss-rotb-nightbird: 104 Nightbird (Rise of the Beasts) — 2023 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-86-chromia",
+   "keepId": "d14ss-dotm-chromia",
+   "ref": "52 Chromia • Arcee • Elita-1 (Revenge of the Fallen) — 2020 Deluxe Class",
+   "dropName": "Chromia",
+   "dropSubtitle": "SS-86-09 The Movie",
+   "reason": "Same release as d14ss-dotm-chromia: 52 Chromia • Arcee • Elita-1 (Revenge of the Fallen) — 2020 Deluxe Class. image UPC 630509900657 = 52 Chromia/Arcee/Elita-1 3-pack",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss109-battletrap",
+   "keepId": "tfss-ss99-battletrap",
+   "ref": "99 Battletrap (Rise of the Beasts) — 2023 Voyager Class",
+   "dropName": "Battletrap",
+   "dropSubtitle": "Rise of the Beasts",
+   "reason": "Same release as tfss-ss99-battletrap: 99 Battletrap (Rise of the Beasts) — 2023 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-rotb-battletrap",
+   "keepId": "tfss-ss99-battletrap",
+   "ref": "99 Battletrap (Rise of the Beasts) — 2023 Voyager Class",
+   "dropName": "Battletrap",
+   "dropSubtitle": "SS-108 ROTB",
+   "reason": "Same release as tfss-ss99-battletrap: 99 Battletrap (Rise of the Beasts) — 2023 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-battletrap",
+   "keepId": "tfss-ss99-battletrap",
+   "ref": "99 Battletrap (Rise of the Beasts) — 2023 Voyager Class",
+   "dropName": "Battletrap",
+   "dropSubtitle": "ROTB Wave6",
+   "reason": "Same release as tfss-ss99-battletrap: 99 Battletrap (Rise of the Beasts) — 2023 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-rhinox-rotb",
+   "keepId": "d14ss-rotb-rhinox",
+   "ref": "103 Rhinox (Rise of the Beasts) — 2023 Voyager Class",
+   "dropName": "Rhinox",
+   "dropSubtitle": "ROTB Wave6",
+   "reason": "Same release as d14ss-rotb-rhinox: 103 Rhinox (Rise of the Beasts) — 2023 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-prowl",
+   "keepId": "hs8-hs-44",
+   "ref": "(unnumbered) Prowl (The Movie) — 2026 MTMTE Collection Deluxe Class",
+   "dropName": "Prowl",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as hs8-hs-44: (unnumbered) Prowl (The Movie) — 2026 MTMTE Collection Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-freeza",
+   "keepId": "tfss-ss-core-freezer",
+   "ref": "(unnumbered) Terrorcon Freezer (Rise of the Beasts) — 2023 Core Class",
+   "dropName": "Freezer",
+   "dropSubtitle": "ROTB Wave6",
+   "reason": "Same release as tfss-ss-core-freezer: (unnumbered) Terrorcon Freezer (Rise of the Beasts) — 2023 Core Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-rotb-mirage",
+   "keepId": "ss4-ss86-mirage",
+   "ref": "105 Autobot Mirage (Rise of the Beasts) — 2023 Deluxe Class",
+   "dropName": "Mirage",
+   "dropSubtitle": "SS-103 ROTB",
+   "reason": "Same release as ss4-ss86-mirage: 105 Autobot Mirage (Rise of the Beasts) — 2023 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-mirage-rotb",
+   "keepId": "ss4-ss86-mirage",
+   "ref": "105 Autobot Mirage (Rise of the Beasts) — 2023 Deluxe Class",
+   "dropName": "Mirage",
+   "dropSubtitle": "ROTB Wave6",
+   "reason": "Same release as ss4-ss86-mirage: 105 Autobot Mirage (Rise of the Beasts) — 2023 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-rotb-cheetor",
+   "keepId": "tfss-ss98-cheetor",
+   "ref": "98 Cheetor (Rise of the Beasts) — 2023 Voyager Class",
+   "dropName": "Cheetor",
+   "dropSubtitle": "SS-106 ROTB",
+   "reason": "Same release as tfss-ss98-cheetor: 98 Cheetor (Rise of the Beasts) — 2023 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-cheetor-rotb",
+   "keepId": "tfss-ss98-cheetor",
+   "ref": "98 Cheetor (Rise of the Beasts) — 2023 Voyager Class",
+   "dropName": "Cheetor",
+   "dropSubtitle": "ROTB Wave6",
+   "reason": "Same release as tfss-ss98-cheetor: 98 Cheetor (Rise of the Beasts) — 2023 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-rotb-airazor",
+   "keepId": "tfss-ss97-airazor",
+   "ref": "97 Airazor (Rise of the Beasts) — 2023 Deluxe Class",
+   "dropName": "Airazor",
+   "dropSubtitle": "SS-105 ROTB",
+   "reason": "Same release as tfss-ss97-airazor: 97 Airazor (Rise of the Beasts) — 2023 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-airazor-rotb",
+   "keepId": "tfss-ss97-airazor",
+   "ref": "97 Airazor (Rise of the Beasts) — 2023 Deluxe Class",
+   "dropName": "Airazor",
+   "dropSubtitle": "ROTB Wave6",
+   "reason": "Same release as tfss-ss97-airazor: 97 Airazor (Rise of the Beasts) — 2023 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-sentinel",
+   "keepId": "tfss-ss61-sentinel",
+   "ref": "61 Sentinel Prime (Dark of the Moon) — 2020 Voyager Class",
+   "dropName": "Sentinel Prime",
+   "dropSubtitle": "Dark of the Moon",
+   "reason": "Same release as tfss-ss61-sentinel: 61 Sentinel Prime (Dark of the Moon) — 2020 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-dotm-sentinel",
+   "keepId": "tfss-ss61-sentinel",
+   "ref": "61 Sentinel Prime (Dark of the Moon) — 2020 Voyager Class",
+   "dropName": "Sentinel Prime",
+   "dropSubtitle": "SS-18 DOTM",
+   "reason": "Same release as tfss-ss61-sentinel: 61 Sentinel Prime (Dark of the Moon) — 2020 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss6-ss-optimus-primal-rotb",
+   "keepId": "d14ss-rotb-primal",
+   "ref": "106 Optimus Primal (Rise of the Beasts) — 2023 Leader Class",
+   "dropName": "Optimus Primal",
+   "dropSubtitle": "ROTB Wave6",
+   "reason": "Same release as d14ss-rotb-primal: 106 Optimus Primal (Rise of the Beasts) — 2023 Leader Class. same UPC 195166203232",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-ironhide",
+   "keepId": "tfss-ss-core-ironhide",
+   "ref": "(unnumbered) Ironhide (The Movie) — 2023 Core Class",
+   "dropName": "Ironhide",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as tfss-ss-core-ironhide: (unnumbered) Ironhide (The Movie) — 2023 Core Class. SKU 5010996126627 = tfss-ss-core-ironhide UPC",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-hotrod-tlk",
+   "keepId": "tfss-ss93-hotrod",
+   "ref": "93 Autobot Hot Rod (The Last Knight) — 2022 Deluxe Class",
+   "dropName": "Hot Rod",
+   "dropSubtitle": "The Last Knight",
+   "reason": "Same release as tfss-ss93-hotrod: 93 Autobot Hot Rod (The Last Knight) — 2022 Deluxe Class. image = SS-96 (Takara no.) TLK Hot Rod deluxe = Hasbro 93",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-tlk-cogman",
+   "keepId": "ss5-ss-cogman",
+   "ref": "39 Cogman (The Last Knight) — 2019 Deluxe Class",
+   "dropName": "Cogman",
+   "dropSubtitle": "SS-47 TLK",
+   "reason": "Same release as ss5-ss-cogman: 39 Cogman (The Last Knight) — 2019 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss4-ss86-jazz",
+   "keepId": "tfss-ss86-jazz-alt",
+   "ref": "86-01 Autobot Jazz (The Movie) — 2021 Deluxe Class",
+   "dropName": "Jazz",
+   "dropSubtitle": "SS-86",
+   "reason": "Same release as tfss-ss86-jazz-alt: 86-01 Autobot Jazz (The Movie) — 2021 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-jazz-86",
+   "keepId": "tfss-ss86-jazz-alt",
+   "ref": "86-01 Autobot Jazz (The Movie) — 2021 Deluxe Class",
+   "dropName": "Jazz",
+   "dropSubtitle": "86 Movie",
+   "reason": "Same release as tfss-ss86-jazz-alt: 86-01 Autobot Jazz (The Movie) — 2021 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-ironhide-86",
+   "keepId": "tfss-ss86-ironhide-alt",
+   "ref": "86-17 Ironhide (The Movie) — 2022 Voyager Class",
+   "dropName": "Ironhide",
+   "dropSubtitle": "86 Movie",
+   "reason": "Same release as tfss-ss86-ironhide-alt: 86-17 Ironhide (The Movie) — 2022 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-aoe-crosshairs",
+   "keepId": "tfss-ss92-crosshairs",
+   "ref": "92 Crosshairs (The Last Knight) — 2022 Deluxe Class",
+   "dropName": "Crosshairs",
+   "dropSubtitle": "SS-07 AOE",
+   "reason": "Same release as tfss-ss92-crosshairs: 92 Crosshairs (The Last Knight) — 2022 Deluxe Class. UPC 195166181677 = tfss-ss92-crosshairs UPC",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-galvatron-aoy",
+   "keepId": "tfss-ss90-galvatron",
+   "ref": "90 Galvatron (Age of Extinction) — 2022 Voyager Class",
+   "dropName": "Galvatron",
+   "dropSubtitle": "Age of Extinction",
+   "reason": "Same release as tfss-ss90-galvatron: 90 Galvatron (Age of Extinction) — 2022 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-aoe-galvatron",
+   "keepId": "tfss-ss90-galvatron",
+   "ref": "90 Galvatron (Age of Extinction) — 2022 Voyager Class",
+   "dropName": "Galvatron",
+   "dropSubtitle": "SS-04 AOE",
+   "reason": "Same release as tfss-ss90-galvatron: 90 Galvatron (Age of Extinction) — 2022 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-aoe-lockdown",
+   "keepId": "ss5-ss-lockdown",
+   "ref": "11 Lockdown (Age of Extinction) — 2018 Deluxe Class",
+   "dropName": "Lockdown",
+   "dropSubtitle": "SS-11 AOE",
+   "reason": "Same release as ss5-ss-lockdown: 11 Lockdown (Age of Extinction) — 2018 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-bb-arcee",
+   "keepId": "tfss-ss85-arcee",
+   "ref": "85 Arcee (Bumblebee) — 2022 Deluxe Class",
+   "dropName": "Arcee",
+   "dropSubtitle": "SS-42 Bumblebee",
+   "reason": "Same release as tfss-ss85-arcee: 85 Arcee (Bumblebee) — 2022 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-starscream-86",
+   "keepId": "tfss-ss86-coronation-ss",
+   "ref": "86-12 Coronation Starscream (The Movie) — 2022 Leader Class",
+   "dropName": "Starscream",
+   "dropSubtitle": "86 Movie",
+   "reason": "Same release as tfss-ss86-coronation-ss: 86-12 Coronation Starscream (The Movie) — 2022 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-bb-soundwave",
+   "keepId": "tfss-ss83-soundwave",
+   "ref": "83 Soundwave (Bumblebee) — 2022 Voyager Class",
+   "dropName": "Soundwave",
+   "dropSubtitle": "SS-43 Bumblebee",
+   "reason": "Same release as tfss-ss83-soundwave: 83 Soundwave (Bumblebee) — 2022 Voyager Class. Bumblebee-film Soundwave = 83 (only one)",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-bb-wheeljack",
+   "keepId": "tfss-ss81-wheeljack",
+   "ref": "81 Wheeljack (Bumblebee) — 2022 Deluxe Class",
+   "dropName": "Wheeljack",
+   "dropSubtitle": "SS-41 Bumblebee",
+   "reason": "Same release as tfss-ss81-wheeljack: 81 Wheeljack (Bumblebee) — 2022 Deluxe Class. Bumblebee-film Wheeljack = 81 (only one)",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-bb-ratchet",
+   "keepId": "tfss-ss82-ratchet",
+   "ref": "82 Autobot Ratchet (Bumblebee) — 2022 Deluxe Class",
+   "dropName": "Ratchet",
+   "dropSubtitle": "SS-40 Bumblebee",
+   "reason": "Same release as tfss-ss82-ratchet: 82 Autobot Ratchet (Bumblebee) — 2022 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-2007-starscream",
+   "keepId": "tfc-starscream-ss03",
+   "ref": "06 Starscream (Transformers) — 2018 Voyager Class",
+   "dropName": "Starscream",
+   "dropSubtitle": "SS-72 2007 Film",
+   "reason": "Same release as tfc-starscream-ss03: 06 Starscream (Transformers) — 2018 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-2007-optimus",
+   "keepId": "tfc-optimus-ss32",
+   "ref": "32 Optimus Prime (<!--Verbatim on the packaging.-->Transformers) — 2019 Voyager Class",
+   "dropName": "Optimus Prime",
+   "dropSubtitle": "SS-71 2007 Film",
+   "reason": "Same release as tfc-optimus-ss32: 32 Optimus Prime (<!--Verbatim on the packaging.-->Transformers) — 2019 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-aoe-slug",
+   "keepId": "tfss-ss86-slug-daniel",
+   "ref": "86-07 Dinobot Slug & Daniel Witwicky (The Movie) — 2021 Leader Class",
+   "dropName": "Slug",
+   "dropSubtitle": "SS-31 AOE",
+   "reason": "Same release as tfss-ss86-slug-daniel: 86-07 Dinobot Slug & Daniel Witwicky (The Movie) — 2021 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-dotm-devastator",
+   "keepId": "tfss-ss69-devastator",
+   "ref": "69 Devastator (Revenge of the Fallen) — 2020 Multi-packs",
+   "dropName": "Devastator",
+   "dropSubtitle": "SS-28 DOTM",
+   "reason": "Same release as tfss-ss69-devastator: 69 Devastator (Revenge of the Fallen) — 2020 Multi-packs. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-bb-blitzwing",
+   "keepId": "tfss-ss65-blitzwing",
+   "ref": "65 Blitzwing (Bumblebee) — 2020 Voyager Class",
+   "dropName": "Blitzwing",
+   "dropSubtitle": "SS-51 Bumblebee",
+   "reason": "Same release as tfss-ss65-blitzwing: 65 Blitzwing (Bumblebee) — 2020 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "ss5-ss-blitzwing",
+   "keepId": "tfss-ss65-blitzwing",
+   "ref": "65 Blitzwing (Bumblebee) — 2020 Voyager Class",
+   "dropName": "Blitzwing",
+   "dropSubtitle": "Bumblebee Movie",
+   "reason": "Same release as tfss-ss65-blitzwing: 65 Blitzwing (Bumblebee) — 2020 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-dotm-roadbuster",
+   "keepId": "tfss-ss58-roadbuster",
+   "ref": "58 Roadbuster (Dark of the Moon) — 2020 Deluxe Class",
+   "dropName": "Roadbuster",
+   "dropSubtitle": "SS-20 DOTM",
+   "reason": "Same release as tfss-ss58-roadbuster: 58 Roadbuster (Dark of the Moon) — 2020 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "tfc-shockwave-ss10",
+   "keepId": "tfss-ss56-shockwave",
+   "ref": "56 Shockwave (Dark of the Moon w/ Brains, Wheelie, and Paratrooper) — 2020 Leader Class",
+   "dropName": "Shockwave",
+   "dropSubtitle": "DOTM SS-10",
+   "reason": "Same release as tfss-ss56-shockwave: 56 Shockwave (Dark of the Moon w/ Brains, Wheelie, and Paratrooper) — 2020 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-dotm-shockwave",
+   "keepId": "tfss-ss56-shockwave",
+   "ref": "56 Shockwave (Dark of the Moon w/ Brains, Wheelie, and Paratrooper) — 2020 Leader Class",
+   "dropName": "Shockwave",
+   "dropSubtitle": "SS-10 DOTM",
+   "reason": "Same release as tfss-ss56-shockwave: 56 Shockwave (Dark of the Moon w/ Brains, Wheelie, and Paratrooper) — 2020 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-dotm-scavenger",
+   "keepId": "tfss-ss55-scavenger",
+   "ref": "55 Constructicon Scavenger (Revenge of the Fallen) — 2020 Leader Class",
+   "dropName": "Scavenger",
+   "dropSubtitle": "SS-27 DOTM",
+   "reason": "Same release as tfss-ss55-scavenger: 55 Constructicon Scavenger (Revenge of the Fallen) — 2020 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-dotm-mixmaster",
+   "keepId": "tfss-ss53-mixmaster",
+   "ref": "53 Constructicon Mixmaster (Revenge of the Fallen) — 2020 Voyager Class",
+   "dropName": "Mixmaster",
+   "dropSubtitle": "SS-26 DOTM",
+   "reason": "Same release as tfss-ss53-mixmaster: 53 Constructicon Mixmaster (Revenge of the Fallen) — 2020 Voyager Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-bb-shatter",
+   "keepId": "ss5-ss-shatter",
+   "ref": "40 Shatter (Bumblebee Plymouth) — 2019 Deluxe Class",
+   "dropName": "Shatter",
+   "dropSubtitle": "SS-39 Bumblebee",
+   "reason": "Same release as ss5-ss-shatter: 40 Shatter (Bumblebee Plymouth) — 2019 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-bb-dropkick",
+   "keepId": "ss5-ss-dropkick",
+   "ref": "22 Dropkick (Bumblebee SuperCobra) — 2018 Deluxe Class",
+   "dropName": "Dropkick",
+   "dropSubtitle": "SS-38 Bumblebee",
+   "reason": "Same release as ss5-ss-dropkick: 22 Dropkick (Bumblebee SuperCobra) — 2018 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-tlk-barricade",
+   "keepId": "afmon-hasbro-barricade-hsg1928",
+   "ref": "(unnumbered) Barricade (The Last Knight) — 2026 Deluxe Class",
+   "dropName": "Barricade",
+   "dropSubtitle": "SS-36 TLK",
+   "reason": "Same release as afmon-hasbro-barricade-hsg1928: (unnumbered) Barricade (The Last Knight) — 2026 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-aoe-grimlock",
+   "keepId": "tfc-grimlock-ss09",
+   "ref": "07 Grimlock (Age of Extinction) — 2018 Leader Class",
+   "dropName": "Grimlock",
+   "dropSubtitle": "SS-09 AOE",
+   "reason": "Same release as tfc-grimlock-ss09: 07 Grimlock (Age of Extinction) — 2018 Leader Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-dotm-soundwave",
+   "keepId": "tfc-soundwave-ss12",
+   "ref": "51 Soundwave (Dark of the Moon w/ Laserbeak) — 2020 Deluxe Class",
+   "dropName": "Soundwave",
+   "dropSubtitle": "SS-12 DOTM",
+   "reason": "Same release as tfc-soundwave-ss12: 51 Soundwave (Dark of the Moon w/ Laserbeak) — 2020 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "afmon-hasbro-transformers-optimus-prime-awakening-studio-series-deluxe-class-bumblebee-bbts-197679",
+   "keepId": "afmon-hasbro-transformers-studio-series-transformers-optimus-prime-awakening-bumblebee-hsg5856",
+   "ref": "(unnumbered) Bumblebee (Optimus Prime: Awakening) — 2027 Deluxe Class",
+   "dropName": "Transformers Optimus Prime: Awakening Studio Series Deluxe Class Bumblebee Action Figure",
+   "dropSubtitle": "Transformers Optimus Prime: Awakening...",
+   "reason": "Same release as afmon-hasbro-transformers-studio-series-transformers-optimus-prime-awakening-bumblebee-hsg5856: (unnumbered) Bumblebee (Optimus Prime: Awakening) — 2027 Deluxe Class. ",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "dropId": "d14ss-86-elita",
+   "keepId": "tfss-ss-one-elita",
+   "reason": "No Movie Elita-1 in Hasbro SS; row code G1851 is already an alias of tfss-ss-one-elita (Transformers One Elita-1).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "ref": "(invented claim; code corroborates keeper)",
+   "dropName": "Elita-1",
+   "dropSubtitle": "SS-86-10 The Movie"
+  },
+  {
+   "dropId": "d14ss-dotm-starscream",
+   "keepId": "tfss-ss-one-starscream",
+   "reason": "No DOTM Starscream in Hasbro SS; row code G0566 and image are the Transformers One Starscream (same code on ss6-ss-starscream-tfone).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "ref": "(invented claim; code corroborates keeper)",
+   "dropName": "Starscream",
+   "dropSubtitle": "SS-03 DOTM"
+  }
+ ],
+ "deleteInvented": [
+  {
+   "id": "d14ss-86-bombshell",
+   "name": "Bombshell",
+   "subtitle": "SS-86-27 The Movie",
+   "sku": null,
+   "reason": "Insecticons were never sold individually in Hasbro Studio Series; only the 2026 MTMTE Bombshell/Shrapnel/Kickback 3-pack exists (listed as missing).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-86-kickback",
+   "name": "Kickback",
+   "subtitle": "SS-86-26 The Movie",
+   "sku": null,
+   "reason": "Insecticons were never sold individually in Hasbro Studio Series; only the 2026 MTMTE Bombshell/Shrapnel/Kickback 3-pack exists (listed as missing).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-86-sharpnel",
+   "name": "Sharpnel",
+   "subtitle": "SS-86-25 The Movie",
+   "sku": null,
+   "reason": "Insecticons were never sold individually in Hasbro Studio Series; only the 2026 MTMTE Bombshell/Shrapnel/Kickback 3-pack exists (listed as missing).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss6-ss-predaking",
+   "name": "Predaking",
+   "subtitle": "Studio Series Wave6",
+   "sku": null,
+   "reason": "No Studio Series release of this G1 combiner exists (TFWiki Studio Series list); placeholder $24.99, no SKU.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss6-ss-abominus",
+   "name": "Abominus",
+   "subtitle": "Studio Series Wave6",
+   "sku": null,
+   "reason": "No Studio Series release of this G1 combiner exists (TFWiki Studio Series list); placeholder $24.99, no SKU.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss6-ss-defensor-ss",
+   "name": "Defensor",
+   "subtitle": "Studio Series Wave6",
+   "sku": null,
+   "reason": "No Studio Series release of this G1 combiner exists (TFWiki Studio Series list); placeholder $24.99, no SKU.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss6-ss-computron",
+   "name": "Computron",
+   "subtitle": "Studio Series Wave6",
+   "sku": null,
+   "reason": "No Studio Series release of this G1 combiner exists (TFWiki Studio Series list); placeholder $24.99, no SKU.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss6-ss-superion-ss",
+   "name": "Superion",
+   "subtitle": "Studio Series Wave6",
+   "sku": null,
+   "reason": "No Studio Series release of this G1 combiner exists (TFWiki Studio Series list); placeholder $24.99, no SKU.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss6-ss-bruticus-ss",
+   "name": "Bruticus",
+   "subtitle": "Studio Series Wave6",
+   "sku": null,
+   "reason": "No Studio Series release of this G1 combiner exists (TFWiki Studio Series list); placeholder $24.99, no SKU.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss6-ss-menasor-ss",
+   "name": "Menasor",
+   "subtitle": "Studio Series Wave6",
+   "sku": null,
+   "reason": "No Studio Series release of this G1 combiner exists (TFWiki Studio Series list); placeholder $24.99, no SKU.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss6-ss-slag-86",
+   "name": "Slag",
+   "subtitle": "86 Movie Wave6",
+   "sku": "HSF0715",
+   "reason": "No Studio Series Slag release exists (TFWiki lists Slug only, 86-07).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-slag",
+   "name": "Slag",
+   "subtitle": "SS-86",
+   "sku": null,
+   "reason": "No Studio Series Slag release exists (TFWiki lists Slug only, 86-07).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-rotb-strato",
+   "name": "Stratosphere",
+   "subtitle": "SS-114 ROTB",
+   "sku": null,
+   "reason": "No Studio Series Stratosphere exists (TFWiki Studio Series list).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss111-transit",
+   "name": "Transit",
+   "subtitle": "Rise of the Beasts",
+   "sku": null,
+   "reason": "No Studio Series Transit exists (TFWiki Studio Series list).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-rotb-transit",
+   "name": "Transit",
+   "subtitle": "SS-110 ROTB",
+   "sku": null,
+   "reason": "No Studio Series Transit exists (TFWiki Studio Series list).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-trailbreaker",
+   "name": "Trailbreaker",
+   "subtitle": "SS-86",
+   "sku": null,
+   "reason": "No Studio Series release of this character exists (TFWiki Studio Series list).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss6-ss-transit",
+   "name": "Transit",
+   "subtitle": "ROTB Wave6",
+   "sku": null,
+   "reason": "No Studio Series Transit exists (TFWiki Studio Series list).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-bluestreak",
+   "name": "Bluestreak",
+   "subtitle": "SS-86",
+   "sku": null,
+   "reason": "No Studio Series release of this character exists (TFWiki Studio Series list).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss6-ss-stratosphere",
+   "name": "Stratosphere",
+   "subtitle": "ROTB Wave6",
+   "sku": null,
+   "reason": "No Studio Series Stratosphere exists (TFWiki Studio Series list).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-86-cup",
+   "name": "Cup",
+   "subtitle": "SS-86-02 The Movie",
+   "sku": null,
+   "reason": "No Studio Series Cup (Kup) other than 86-02 Kup; \"Cup\" SS-86-02 at $14.99 with no SKU is invented (86-02 Kup already present).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-86-unicron",
+   "name": "Unicron",
+   "subtitle": "HasLab The Movie",
+   "sku": null,
+   "reason": "No Studio Series Unicron exists (HasLab Unicron is War for Cybertron, not Studio Series).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-optimus-tlk",
+   "name": "Optimus Prime",
+   "subtitle": "The Last Knight",
+   "sku": null,
+   "reason": "No Hasbro Studio Series Optimus Prime from The Last Knight exists (TFWiki Studio Series list); row has no SKU/UPC.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-unircron-86",
+   "name": "Unicron",
+   "subtitle": "86 Movie",
+   "sku": null,
+   "reason": "No Studio Series Unicron exists (HasLab Unicron is War for Cybertron, not Studio Series).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-bb-optimus-chase",
+   "name": "Optimus Prime",
+   "subtitle": "SS-68 Chase Bumblebee",
+   "sku": null,
+   "reason": "No \"Chase\"/\"Corp\" Optimus Prime variant exists in Hasbro Studio Series (TFWiki); only 38 Optimus Prime (Bumblebee).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-bb-optimus-corp",
+   "name": "Optimus Prime",
+   "subtitle": "SS-63 Corp Bumblebee",
+   "sku": null,
+   "reason": "No \"Chase\"/\"Corp\" Optimus Prime variant exists in Hasbro Studio Series (TFWiki); only 38 Optimus Prime (Bumblebee).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-tlk-infernocus",
+   "name": "Infernocus",
+   "subtitle": "SS-52 TLK",
+   "sku": null,
+   "reason": "No Studio Series release of this TLK character exists (TFWiki Studio Series list).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-aoe-slash",
+   "name": "Slash",
+   "subtitle": "SS-46 AOE",
+   "sku": null,
+   "reason": "No Hasbro Studio Series release of this AOE Dinobot/character (TFWiki Studio Series list).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-stratosphere",
+   "name": "Stratosphere",
+   "subtitle": "Rise of the Beasts",
+   "sku": null,
+   "reason": "No Studio Series Stratosphere exists (TFWiki Studio Series list).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-aoe-strafe",
+   "name": "Strafe",
+   "subtitle": "SS-30 AOE",
+   "sku": null,
+   "reason": "No Hasbro Studio Series release of this AOE Dinobot/character (TFWiki Studio Series list).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-aoe-snooper",
+   "name": "Snooper",
+   "subtitle": "SS-29 AOE",
+   "sku": null,
+   "reason": "No Hasbro Studio Series release of this AOE Dinobot/character (TFWiki Studio Series list).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-tlk-nitro",
+   "name": "Nitro Zeus",
+   "subtitle": "SS-37 TLK",
+   "sku": null,
+   "reason": "No Studio Series release of this TLK character exists (TFWiki Studio Series list).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-tlk-optimus",
+   "name": "Optimus Prime",
+   "subtitle": "SS-34 TLK",
+   "sku": null,
+   "reason": "No Hasbro Studio Series Optimus Prime from The Last Knight exists (TFWiki Studio Series list); row has no SKU/UPC.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  }
+ ],
+ "unsure": [
+  {
+   "id": "ss4-ss86-perceptor",
+   "name": "Perceptor",
+   "subtitle": "SS-86",
+   "reason": "Movie Perceptor = 86-11 (2022) or 2025 MTMTE Perceptor/Ratbat/Ramhorn pack; attached UPC suggests the exclusive.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-86-starscream",
+   "name": "Starscream",
+   "subtitle": "SS-86-18 The Movie",
+   "reason": "\"The Movie Starscream\" matches 86-12 Coronation Starscream (2022 Leader) or 2026 MTMTE Voyager Starscream; attached SKU/image belongs to another product (GE +06 / Takara TS-10 / TF One Starscream).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-scourge",
+   "name": "Scourge",
+   "subtitle": "SS-86",
+   "reason": "Scourge: claim (ROTB / Movie) and attached code (G2189 / ROTB Leader UPC) disagree; 101 (2023), 2026 ROTB refresh, 86-05 and 2026 MTMTE Scourge all exist.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-86-megatron",
+   "name": "Megatron",
+   "subtitle": "SS-86-17 The Movie",
+   "reason": "\"The Movie Megatron\" = 2025 Leader, 2026 MTMTE Leader or 2026 Battle Damage LE; no evidence picks one (ss4 image suggests the BD exclusive).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-starscream",
+   "name": "Starscream",
+   "subtitle": "SS-86",
+   "reason": "\"The Movie Starscream\" matches 86-12 Coronation Starscream (2022 Leader) or 2026 MTMTE Voyager Starscream; attached SKU/image belongs to another product (GE +06 / Takara TS-10 / TF One Starscream).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-megatron",
+   "name": "Megatron",
+   "subtitle": "SS-86",
+   "reason": "\"The Movie Megatron\" = 2025 Leader, 2026 MTMTE Leader or 2026 Battle Damage LE; no evidence picks one (ss4 image suggests the BD exclusive).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-86-cliff",
+   "name": "Cliffjumper",
+   "subtitle": "SS-86-07 The Movie",
+   "reason": "Movie Cliffjumper = 86-13BB (2022) or 2026 Deluxe; code HSG2197 unverified.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss6-ss-scourge-rotb",
+   "name": "Scourge",
+   "subtitle": "ROTB Wave6",
+   "reason": "Scourge: claim (ROTB / Movie) and attached code (G2189 / ROTB Leader UPC) disagree; 101 (2023), 2026 ROTB refresh, 86-05 and 2026 MTMTE Scourge all exist.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfss-ss-core-rumble",
+   "name": "Rumble",
+   "subtitle": "Core Class Blue",
+   "reason": "Claim \"Core Class Blue\" = 2022 Core Decepticon Rumble (Blue, The Movie), but attached UPC 5010996208316 / image is the 2024 Core Concept Art Rumble (Bumblebee film); row date 2023 fits neither.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-86-ratchet",
+   "name": "Ratchet",
+   "subtitle": "SS-86-05 The Movie",
+   "reason": "\"The Movie Ratchet\" = 2022 Core, 86-23 Voyager (2023) or 86-28 (2-pack); ss4 UPC 195166158532 is 82 Ratchet (Bumblebee film).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "tfc-optimus-rotb",
+   "name": "Optimus Prime",
+   "subtitle": "Rise of the Beasts",
+   "reason": "ROTB Optimus Prime = 102BB (2023, Buzzworthy) or 102 (2025 regular line); $54.99 rows suggest a non-SS Leader. Rows may be duplicates of each other.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-rotb-optimus",
+   "name": "Optimus Prime",
+   "subtitle": "SS-101 ROTB",
+   "reason": "ROTB Optimus Prime = 102BB (2023, Buzzworthy) or 102 (2025 regular line); $54.99 rows suggest a non-SS Leader. Rows may be duplicates of each other.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-ratchet",
+   "name": "Ratchet",
+   "subtitle": "SS-86",
+   "reason": "\"The Movie Ratchet\" = 2022 Core, 86-23 Voyager (2023) or 86-28 (2-pack); ss4 UPC 195166158532 is 82 Ratchet (Bumblebee film).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-86-ironhide",
+   "name": "Ironhide",
+   "subtitle": "SS-86-04 The Movie",
+   "reason": "\"The Movie Ironhide\" = 86-17 Voyager, 2023 Core, or 86-24BB; attached UPC is the 2025 WFC Ironhide.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-86-jazz",
+   "name": "Jazz",
+   "subtitle": "SS-86-03 The Movie",
+   "reason": "Movie Jazz = 86-01 (2021) or 2025 package refresh; no evidence picks one.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-86-optimus",
+   "name": "Optimus Prime",
+   "subtitle": "SS-86-01 The Movie",
+   "reason": "\"The Movie Optimus Prime\" = 86-31 Commander (2024), 86-31 Battle Damage LE (2025) or 2026 MTMTE Leader; no evidence picks one.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss4-ss86-optimus",
+   "name": "Optimus Prime",
+   "subtitle": "SS-86",
+   "reason": "\"The Movie Optimus Prime\" = 86-31 Commander (2024), 86-31 Battle Damage LE (2025) or 2026 MTMTE Leader; no evidence picks one.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss6-ss-optimus-rotb",
+   "name": "Optimus Prime",
+   "subtitle": "ROTB Wave6",
+   "reason": "ROTB Optimus Prime = 102BB (2023, Buzzworthy) or 102 (2025 regular line); $54.99 rows suggest a non-SS Leader. Rows may be duplicates of each other.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-megatron-tlk",
+   "name": "Megatron",
+   "subtitle": "The Last Knight",
+   "reason": "Only TLK Megatron in Hasbro SS is the 2027-wave Leader; d14ss row (2019) carries a 2023 Voyager UPC; ss5 row (2026) may be that Leader but unconfirmed.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-grimlock-aoy",
+   "name": "Grimlock",
+   "subtitle": "Age of Extinction",
+   "reason": "Grimlock: row claim (86 / AOE) and attached UPC (07BB Buzzworthy / Titan 2026) disagree; several real Grimlock releases fit.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-2007-frenzy",
+   "name": "Frenzy",
+   "subtitle": "SS-79 2007 Film",
+   "reason": "No 2007-film Frenzy in Hasbro SS; attached UPC is 2024 Core Concept Art Frenzy (Bumblebee film).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "hs10-hs-43",
+   "name": "SS86 Kup",
+   "subtitle": "Studio Series",
+   "reason": "Generic \"Studio Series 86 <name>\" BBTS placeholder; several Movie releases of the character exist and the SKU belongs to an unrelated product.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-devastator-86",
+   "name": "Devastator",
+   "subtitle": "86 Movie",
+   "reason": "\"86 Movie Devastator\" is a retailer bundle of the six 2025 Movie Constructicons, not a Hasbro product; leave for manual decision.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-ratchet-86",
+   "name": "Ratchet",
+   "subtitle": "86 Movie",
+   "reason": "\"The Movie Ratchet\" = 2022 Core, 86-23 Voyager (2023) or 86-28 (2-pack); ss4 UPC 195166158532 is 82 Ratchet (Bumblebee film).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "hs8-hs-25",
+   "name": "Grimlock",
+   "subtitle": "Studio Series 86",
+   "reason": "Grimlock: row claim (86 / AOE) and attached UPC (07BB Buzzworthy / Titan 2026) disagree; several real Grimlock releases fit.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "hs8-hs-24",
+   "name": "Starscream",
+   "subtitle": "Studio Series 86",
+   "reason": "\"The Movie Starscream\" matches 86-12 Coronation Starscream (2022 Leader) or 2026 MTMTE Voyager Starscream; attached SKU/image belongs to another product (GE +06 / Takara TS-10 / TF One Starscream).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "hs10-hs-35",
+   "name": "SS86 Dinobot Deluxe",
+   "subtitle": "Studio Series",
+   "reason": "SKU DK-32 / $80 looks like a third-party upgrade kit, not a Hasbro Studio Series figure; company fix is out of scope.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-2007-bumblebee",
+   "name": "Bumblebee",
+   "subtitle": "SS-70 2007 Film",
+   "reason": "2007-film Bumblebee = 01/27 Clunker/49 Concept Camaro/27BB; attached UPC 630509984558 is 70 B-127 (Bumblebee film).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "hs8-hs-21",
+   "name": "Optimus Prime",
+   "subtitle": "Studio Series 86",
+   "reason": "\"The Movie Optimus Prime\" = 86-31 Commander (2024), 86-31 Battle Damage LE (2025) or 2026 MTMTE Leader; no evidence picks one.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "hs10-hs-26",
+   "name": "Studio Series 86 Starscream",
+   "subtitle": "Studio Series",
+   "reason": "Generic \"Studio Series 86 <name>\" BBTS placeholder; several Movie releases of the character exist and the SKU belongs to an unrelated product.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-megatron-86",
+   "name": "Megatron",
+   "subtitle": "86 Movie",
+   "reason": "\"The Movie Megatron\" = 2025 Leader, 2026 MTMTE Leader or 2026 Battle Damage LE; no evidence picks one (ss4 image suggests the BD exclusive).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-optimus-86",
+   "name": "Optimus Prime",
+   "subtitle": "86 Movie",
+   "reason": "\"The Movie Optimus Prime\" = 86-31 Commander (2024), 86-31 Battle Damage LE (2025) or 2026 MTMTE Leader; no evidence picks one.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "hs10-hs-24",
+   "name": "Studio Series 86 Megatron",
+   "subtitle": "Studio Series",
+   "reason": "Generic \"Studio Series 86 <name>\" BBTS placeholder; several Movie releases of the character exist and the SKU belongs to an unrelated product.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "hs10-hs-23",
+   "name": "Studio Series 86 Optimus",
+   "subtitle": "Studio Series",
+   "reason": "Generic \"Studio Series 86 <name>\" BBTS placeholder; several Movie releases of the character exist and the SKU belongs to an unrelated product.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-tlk-drift",
+   "name": "Drift",
+   "subtitle": "SS-48 TLK",
+   "reason": "Claim TLK Drift = 2024 Deluxe Drift (TLK) or 36 Drift & Mini-Dinobots; attached image/UPC is 45 Drift (AOE).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-aoe-snarl",
+   "name": "Snarl",
+   "subtitle": "SS-45 AOE",
+   "reason": "No AOE Snarl in Hasbro SS; code HSG2188 unverified (Movie Snarl 86-19 or 2026 refresh).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-bb-bumblebee",
+   "name": "Bumblebee",
+   "subtitle": "SS-49 Volkswagen",
+   "reason": "Bumblebee-film Beetle/Camaro Bumblebee exists as 18 (2018), 15 (w/ Charlie), 57 Offroad, 116 Beetle (2025); row gives no number/UPC that picks one (ss5 SKU is the 2026 AOE Bumblebee).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-bb-shockwave",
+   "name": "Shockwave",
+   "subtitle": "SS-44 Bumblebee",
+   "reason": "Bumblebee-film Shockwave = 2022 Core or 110 Voyager (2024); row is 2020/$39.99 and carries the 2026 Movie Shockwave code G2191.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-dotm-longhaul",
+   "name": "Long Haul",
+   "subtitle": "SS-25 DOTM",
+   "reason": "No DOTM Long Haul; Hasbro Long Haul = 42 ROTF Voyager (2019) or 2025 Commander Hook/Long Haul; attached UPC is the Commander.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "ss5-ss-bumblebee-bb",
+   "name": "Bumblebee",
+   "subtitle": "Bumblebee Movie",
+   "reason": "Bumblebee-film Beetle/Camaro Bumblebee exists as 18 (2018), 15 (w/ Charlie), 57 Offroad, 116 Beetle (2025); row gives no number/UPC that picks one (ss5 SKU is the 2026 AOE Bumblebee).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-tlk-megatron",
+   "name": "Megatron",
+   "subtitle": "SS-35 TLK",
+   "reason": "Only TLK Megatron in Hasbro SS is the 2027-wave Leader; d14ss row (2019) carries a 2023 Voyager UPC; ss5 row (2026) may be that Leader but unconfirmed.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-tlk-bumblebee",
+   "name": "Bumblebee",
+   "subtitle": "SS-33 TLK",
+   "reason": "TLK Bumblebee = 26 WWII Bumblebee (2019), 26BB, or 25 (2016 Camaro, Then & Now 2-pack); row gives no disambiguating evidence.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-dotm-ironhide",
+   "name": "Ironhide",
+   "subtitle": "SS-14 DOTM",
+   "reason": "No DOTM Ironhide in Hasbro SS; row number SS-14 suggests 14 (2007 film) but attached UPC 195166181592 is the 2022 Ironhide (84, Bumblebee film).",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-aoe-hound",
+   "name": "Hound",
+   "subtitle": "SS-06 AOE",
+   "reason": "No AOE Hound in Hasbro SS; code G2252 (2025 packaging) unverified.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "d14ss-aoe-bumblebee",
+   "name": "Bumblebee",
+   "subtitle": "SS-01 AOE",
+   "reason": "AOE Bumblebee = 79BB High Octane (2021, Buzzworthy 2-pack) or 2026 Deluxe; row 2018 SS-01 has no evidence.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "afmon-hasbro-transformers-studio-series-leader-wave-5-case-of-2-hsg0374e",
+   "name": "Transformers Studio Series Leader Wave 5 Case of 2",
+   "subtitle": "Wave 5",
+   "reason": "Retail case assortment (2 figures), not a single release.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "takaratomy-ss-35-studio-series-leader-class-jetfire-jet-fir",
+   "name": "Studio Series SS-35 Leader Class Jetfire Jet Fire",
+   "subtitle": "Show.Z #1273",
+   "reason": "Showzstore Takara row uses the Hasbro number; TFWiki TakaraTomy list has Takara SS-26 Jetfire (SS-35 = KSI Boss). Either the Takara number is wrong or this is the Hasbro release mislabelled takaratomy.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "takaratomy-ss34-studio-series-34-ss-34-leader-class-megatr",
+   "name": "Studio Series 34 SS34 SS-34 Leader Class Megatron",
+   "subtitle": "Show.Z #1275",
+   "reason": "Showzstore Takara row uses the Hasbro number; TFWiki TakaraTomy list has Takara SS-27 Megatron (SS-34 = Long Haul). Either the Takara number is wrong or this is the Hasbro release mislabelled takaratomy.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "takaratomy-ss11-studio-series-ss-11-deluxe-class-lockdown",
+   "name": "Studio Series SS11 SS-11 Deluxe Class Lockdown",
+   "subtitle": "Show.Z #0813",
+   "reason": "Showzstore Takara row uses the Hasbro number; TFWiki TakaraTomy list has Takara SS-10 Lockdown (SS-11 = Megatron). Either the Takara number is wrong or this is the Hasbro release mislabelled takaratomy.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "takaratomy-ss10-studio-series-ss-10-deluxe-class-jazz",
+   "name": "Studio Series SS10 SS-10 Deluxe Class Jazz",
+   "subtitle": "Show.Z #0814",
+   "reason": "Showzstore Takara row uses the Hasbro number; TFWiki TakaraTomy list has Takara SS-09 Jazz (Takara SS-10 = Lockdown). Either the Takara number is wrong or this is the Hasbro release mislabelled takaratomy.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "takaratomy-ss14-studio-series-ss-14-voyager-class-ironhide",
+   "name": "Studio Series SS14 SS-14 Voyager Class Ironhide",
+   "subtitle": "Show.Z #0849",
+   "reason": "Showzstore Takara row uses the Hasbro number; TFWiki TakaraTomy list has Takara SS-15 Ironhide (SS-14 = Ratchet). Either the Takara number is wrong or this is the Hasbro release mislabelled takaratomy.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  },
+  {
+   "id": "takaratomy-ss13-studio-series-ss-13-voyager-class-megatron",
+   "name": "Studio Series SS13 SS-13 Voyager Class Megatron",
+   "subtitle": "Show.Z #0742",
+   "reason": "Showzstore Takara row uses the Hasbro number; TFWiki TakaraTomy list has Takara SS-11 Megatron (SS-13 = Shadow Raider). Either the Takara number is wrong or this is the Hasbro release mislabelled takaratomy.",
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ]
+  }
+ ],
+ "missing": [
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "17",
+   "name": "Shadow Raider",
+   "film": "Age of Extinction",
+   "year": 2018,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "18",
+   "name": "Bumblebee",
+   "film": "Bumblebee Beetle",
+   "year": 2018,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "23",
+   "name": "KSI Sentry",
+   "film": "Age of Extinction",
+   "year": 2018,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "12",
+   "name": "Decepticon Brawl",
+   "film": "Transformers",
+   "year": 2018,
+   "class": "Voyager Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-86-starscream",
+    "ss4-ss86-starscream",
+    "hs8-hs-24",
+    "hs10-hs-26"
+   ],
+   "num": "21",
+   "name": "Starscream",
+   "film": "Revenge of the Fallen",
+   "year": 2018,
+   "class": "Voyager Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "09",
+   "name": "Thundercracker",
+   "film": "Dark of the Moon",
+   "year": 2018,
+   "class": "Voyager Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "15",
+   "name": "Bumblebee",
+   "film": "Bumblebee 1977 Camaro, w/ Charlie",
+   "year": 2018,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "19",
+   "name": "Vol. 1 Retro Rock Garage",
+   "film": "Bumblebee",
+   "year": 2018,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "multipack"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "20",
+   "name": "Vol. 2 Retro Pop Highway",
+   "film": "Bumblebee",
+   "year": 2018,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "multipack"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Bumblebee Then & Now Two-Pack",
+   "film": null,
+   "year": 2018,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "multipack"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "01",
+   "name": "Bumblebee",
+   "film": "Transformers 1977 Camaro",
+   "year": 2018,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "01",
+   "name": "Bumblebee",
+   "film": "Transformers 1977 Camaro",
+   "year": 2018,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "08",
+   "name": "Decepticon Blackout",
+   "film": "Transformers w/ Scorponok",
+   "year": 2018,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "26",
+   "name": "WWII Bumblebee",
+   "film": "The Last Knight",
+   "year": 2019,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "27",
+   "name": "Clunker Bumblebee",
+   "film": "Transformers",
+   "year": 2019,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "30",
+   "name": "Crankcase",
+   "film": "Dark of the Moon",
+   "year": 2019,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "41",
+   "name": "Constructicon Scrapmetal",
+   "film": "Revenge of the Fallen",
+   "year": 2019,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "46",
+   "name": "Dropkick",
+   "film": "Bumblebee Javelin",
+   "year": 2019,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "37",
+   "name": "Constructicon Rampage",
+   "film": "Revenge of the Fallen",
+   "year": 2019,
+   "class": "Voyager Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-dotm-longhaul"
+   ],
+   "num": "42",
+   "name": "Constructicon Long Haul",
+   "film": "Revenge of the Fallen",
+   "year": 2019,
+   "class": "Voyager Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "43",
+   "name": "KSI Boss",
+   "film": "Age of Extinction",
+   "year": 2019,
+   "class": "Voyager Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "35",
+   "name": "Jetfire",
+   "film": "Revenge of the Fallen",
+   "year": 2019,
+   "class": "Leader Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ],
+   "num": "44",
+   "name": "Optimus Prime",
+   "film": "Dark of the Moon",
+   "year": 2019,
+   "class": "Leader Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-86-megatron",
+    "ss4-ss86-megatron",
+    "ss5-ss-megatron-tlk",
+    "ss5-ss-megatron-86",
+    "hs10-hs-24",
+    "d14ss-tlk-megatron"
+   ],
+   "num": "31",
+   "name": "Battle Damaged Megatron",
+   "film": "Revenge of the Fallen",
+   "year": 2019,
+   "class": "Voyager Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-86-megatron",
+    "ss4-ss86-megatron",
+    "ss5-ss-megatron-tlk",
+    "ss5-ss-megatron-86",
+    "hs10-hs-24",
+    "d14ss-tlk-megatron"
+   ],
+   "num": "48",
+   "name": "As Seen In Parks Megatron",
+   "film": "Transformers: The Ride – 3D",
+   "year": 2019,
+   "class": "Leader Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-tlk-drift"
+   ],
+   "num": "36",
+   "name": "Autobot Drift & Dinobot&nbsp;'Tops, Dinobot&nbsp;Pterry, Dinobot&nbsp;Sharp&nbsp;T",
+   "film": "The Last Knight",
+   "year": 2019,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "49",
+   "name": "Bumblebee",
+   "film": "Transformers 2008 Concept Camaro",
+   "year": 2020,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "15BB",
+   "name": "Bumblebee",
+   "film": "Bumblebee 1977 Camaro w/ Charlie",
+   "year": 2020,
+   "class": "Buzzworthy Bumblebee Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "26BB",
+   "name": "WWII Bumblebee",
+   "film": "The Last Knight",
+   "year": 2020,
+   "class": "Buzzworthy Bumblebee Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "40BB",
+   "name": "Shatter",
+   "film": "Bumblebee Plymouth",
+   "year": 2020,
+   "class": "Buzzworthy Bumblebee Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "74BB",
+   "name": "Bumblebee",
+   "film": "Revenge of the Fallen w/ Sam Witwicky",
+   "year": 2020,
+   "class": "Buzzworthy Bumblebee Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "70",
+   "name": "B-127",
+   "film": "Bumblebee",
+   "year": 2021,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "71",
+   "name": "Autobot Dino",
+   "film": "Dark of the Moon",
+   "year": 2021,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "74",
+   "name": "Bumblebee",
+   "film": "Revenge of the Fallen w/ Sam Witwicky",
+   "year": 2021,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "75",
+   "name": "Jolt",
+   "film": "Revenge of the Fallen",
+   "year": 2021,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "18BB",
+   "name": "Bumblebee VS 46BB Dropkick",
+   "film": "Bumblebee",
+   "year": 2021,
+   "class": "Buzzworthy Bumblebee Battle Packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "27BB",
+   "name": "Clunker Bumblebee VS 28BB Barricade",
+   "film": "Transformers",
+   "year": 2021,
+   "class": "Buzzworthy Bumblebee Battle Packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "79BB",
+   "name": "High Octane Bumblebee VS 02BB Decepticon Stinger",
+   "film": "Age of Extinction",
+   "year": 2021,
+   "class": "Buzzworthy Bumblebee Battle Packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "tfss-ss-core-rumble"
+   ],
+   "num": null,
+   "name": "Decepticon Rumble (Blue)",
+   "film": "The Movie",
+   "year": 2022,
+   "class": "Core Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "86-04",
+   "name": "Autobot Hot Rod",
+   "film": "The Movie, package refresh",
+   "year": 2022,
+   "class": "Voyager Class",
+   "refresh": true,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": "77",
+   "name": "N.E.S.T. Bumblebee",
+   "film": "Bumblebee w/ \"mini figure\"",
+   "year": 2022,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "70BB",
+   "name": "B-127",
+   "film": "Bumblebee",
+   "year": 2022,
+   "class": "Buzzworthy Bumblebee Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Movie 1 15th Anniversary Multipack",
+   "film": "Transformers",
+   "year": 2022,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "multipack"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-aoe-hound"
+   ],
+   "num": "86-18BB",
+   "name": "Autobot Hound",
+   "film": "The Movie",
+   "year": 2022,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "94BB",
+   "name": "Hatchet",
+   "film": "Dark of the Moon",
+   "year": 2022,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": null,
+   "name": "Bumblebee",
+   "film": "Bumblebee Beetle",
+   "year": 2022,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": null,
+   "name": "Bumblebee",
+   "film": "Dark of the Moon",
+   "year": 2023,
+   "class": "Core Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Optimus Primal",
+   "film": "Rise of the Beasts",
+   "year": 2023,
+   "class": "Core Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "ss4-ss86-scourge",
+    "ss6-ss-scourge-rotb"
+   ],
+   "num": "101",
+   "name": "Scourge",
+   "film": "Rise of the Beasts",
+   "year": 2023,
+   "class": "Leader Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-86-ratchet",
+    "ss4-ss86-ratchet",
+    "ss5-ss-ratchet-86"
+   ],
+   "num": "96BB",
+   "name": "N.E.S.T. Autobot Ratchet",
+   "film": "Dark of the Moon",
+   "year": 2023,
+   "class": "Buzzworthy Bumblebee Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "95BB",
+   "name": "N.E.S.T. Bonecrusher",
+   "film": "Transformers",
+   "year": 2023,
+   "class": "Buzzworthy Bumblebee Voyager Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ],
+   "num": "102BB",
+   "name": "Optimus Prime",
+   "film": "Rise of the Beasts",
+   "year": 2023,
+   "class": "Buzzworthy Bumblebee Voyager Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "ss5-ss-grimlock-aoy",
+    "hs8-hs-25"
+   ],
+   "num": "07BB",
+   "name": "Grimlock",
+   "film": "Age of Extinction",
+   "year": 2023,
+   "class": "Buzzworthy Bumblebee Leader Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-86-ironhide",
+    "d14ss-dotm-ironhide"
+   ],
+   "num": "86-24BB",
+   "name": "Ironhide / 86-20BB Prowl",
+   "film": "The Movie",
+   "year": 2023,
+   "class": "Buzzworthy Bumblebee multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Movie 1 15th Anniversary Decepticon Multipack",
+   "film": "Transformers",
+   "year": 2023,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "multipack"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "tfss-ss-core-rumble"
+   ],
+   "num": null,
+   "name": "Concept Art Decepticon Rumble",
+   "film": "Bumblebee",
+   "year": 2024,
+   "class": "Core Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-frenzy"
+   ],
+   "num": null,
+   "name": "Concept Art Decepticon Frenzy",
+   "film": "Bumblebee",
+   "year": 2024,
+   "class": "Core Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-tlk-drift"
+   ],
+   "num": null,
+   "name": "Drift",
+   "film": "The Last Knight",
+   "year": 2024,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Gamer Edition Lifeline",
+   "film": "Reactivate",
+   "year": 2024,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "106",
+   "name": "Optimus Primal",
+   "film": "Rise of the Beasts, package refresh",
+   "year": 2024,
+   "class": "Leader Class",
+   "refresh": true,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": "86-27",
+   "name": "Brawn / 86-28 Autobot Ratchet",
+   "film": "The Movie",
+   "year": 2024,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Revenge of the Fallen 15th Anniversary Autobot Multipack",
+   "film": "Revenge of the Fallen",
+   "year": 2024,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "multipack"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ],
+   "num": "112",
+   "name": "Optimus Prime (Limited Edition Battle Damage Ver.)",
+   "film": "One",
+   "year": 2024,
+   "class": "Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Concept Art KSI Widow",
+   "film": "Age of Extinction",
+   "year": 2025,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ],
+   "num": "102",
+   "name": "Optimus Prime",
+   "film": "Rise of the Beasts, package refresh",
+   "year": 2025,
+   "class": "Voyager Class",
+   "refresh": true,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ],
+   "num": null,
+   "name": "Optimus Prime",
+   "film": "War for Cybertron",
+   "year": 2025,
+   "class": "MTMTE Collection Voyager Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-86-megatron",
+    "ss4-ss86-megatron",
+    "ss5-ss-megatron-tlk",
+    "ss5-ss-megatron-86",
+    "hs10-hs-24",
+    "d14ss-tlk-megatron"
+   ],
+   "num": null,
+   "name": "Megatron",
+   "film": "War for Cybertron",
+   "year": 2025,
+   "class": "MTMTE Collection Voyager Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Elite Seeker / Ground Soldier",
+   "film": "Devastation",
+   "year": 2025,
+   "class": "MTMTE Collection Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "ss4-ss86-perceptor"
+   ],
+   "num": null,
+   "name": "Autobot Perceptor / Ratbat / Ramhorn",
+   "film": "The Movie",
+   "year": 2025,
+   "class": "MTMTE Collection Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Revenge of the Fallen 3 Pack",
+   "film": "Revenge of the Fallen",
+   "year": 2025,
+   "class": "MTMTE Collection Multi-packs",
+   "refresh": false,
+   "kind": "multipack"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ],
+   "num": "86-31",
+   "name": "Optimus Prime (Battle Damage Limited Edition)",
+   "film": "The Movie",
+   "year": 2025,
+   "class": "MTMTE Collection Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": null,
+   "name": "Bumblebee",
+   "film": "Devastation",
+   "year": 2026,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Kranix",
+   "film": "The Movie",
+   "year": 2026,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ],
+   "num": null,
+   "name": "Bumblebee",
+   "film": "Age of Extinction",
+   "year": 2026,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Astrotrain",
+   "film": "The Movie",
+   "year": 2026,
+   "class": "Leader Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-aoe-snarl"
+   ],
+   "num": null,
+   "name": "Dinobot Snarl",
+   "film": "The Movie, package refresh",
+   "year": 2026,
+   "class": "Leader Class",
+   "refresh": true,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Blitzwing",
+   "film": "The Movie",
+   "year": 2026,
+   "class": "Leader Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "ss4-ss86-scourge",
+    "ss6-ss-scourge-rotb"
+   ],
+   "num": null,
+   "name": "Scourge",
+   "film": "The Movie, package refresh",
+   "year": 2026,
+   "class": "MTMTE Collection Voyager Class",
+   "refresh": true,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-86-starscream",
+    "ss4-ss86-starscream",
+    "hs8-hs-24",
+    "hs10-hs-26"
+   ],
+   "num": null,
+   "name": "Starscream",
+   "film": "The Movie",
+   "year": 2026,
+   "class": "MTMTE Collection Voyager Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-86-megatron",
+    "ss4-ss86-megatron",
+    "ss5-ss-megatron-tlk",
+    "ss5-ss-megatron-86",
+    "hs10-hs-24",
+    "d14ss-tlk-megatron"
+   ],
+   "num": null,
+   "name": "Megatron",
+   "film": "The Movie",
+   "year": 2026,
+   "class": "MTMTE Collection Leader Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ],
+   "num": null,
+   "name": "Optimus Prime",
+   "film": "The Movie",
+   "year": 2026,
+   "class": "MTMTE Collection Leader Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Insecticon Bombshell / Insecticon Shrapnel / Insecticon Kickback",
+   "film": "The Movie",
+   "year": 2026,
+   "class": "MTMTE Collection Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ],
+   "num": null,
+   "name": "Optimus Prime",
+   "film": "Energon Universe",
+   "year": 2026,
+   "class": "MTMTE Collection Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "ss5-ss-grimlock-aoy",
+    "hs8-hs-25"
+   ],
+   "num": null,
+   "name": "Dinobot Grimlock (Battle Damage Limited Edition) / Autobot Wheelie",
+   "film": "The Movie",
+   "year": 2026,
+   "class": "MTMTE Collection Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-86-megatron",
+    "ss4-ss86-megatron",
+    "ss5-ss-megatron-tlk",
+    "ss5-ss-megatron-86",
+    "hs10-hs-24",
+    "d14ss-tlk-megatron"
+   ],
+   "num": null,
+   "name": "Megatron (Battle Damage Limited Edition)",
+   "film": "The Movie",
+   "year": 2026,
+   "class": "MTMTE Collection Multi-packs",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-bb-shockwave"
+   ],
+   "num": null,
+   "name": "Shockwave",
+   "film": "One",
+   "year": 2027,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Autobot Wheelie",
+   "film": "The Movie",
+   "year": 2027,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Allicon",
+   "film": "The Movie, package refresh from Earthrise",
+   "year": 2027,
+   "class": "Deluxe Class",
+   "refresh": true,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Autobot Nautica",
+   "film": "IDW Publishing",
+   "year": 2027,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Red Alert",
+   "film": "The Transformers",
+   "year": 2027,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Crosshairs",
+   "film": "Age of Extinction",
+   "year": 2027,
+   "class": "Deluxe Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [
+    "d14ss-86-megatron",
+    "ss4-ss86-megatron",
+    "ss5-ss-megatron-tlk",
+    "ss5-ss-megatron-86",
+    "hs10-hs-24",
+    "d14ss-tlk-megatron"
+   ],
+   "num": null,
+   "name": "Megatron",
+   "film": "The Last Knight",
+   "year": 2027,
+   "class": "Leader Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Dinobot Swoop",
+   "film": "The Movie, package refresh",
+   "year": 2027,
+   "class": "Leader Class",
+   "refresh": true,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Scorn",
+   "film": "Age of Extinction",
+   "year": 2027,
+   "class": "Titan Class",
+   "refresh": false,
+   "kind": "figure"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Seeker Storm Pack",
+   "film": "The Transformers",
+   "year": 2027,
+   "class": "Exclusives",
+   "refresh": false,
+   "kind": "multipack"
+  },
+  {
+   "possiblyCoveredByUnsure": [],
+   "num": null,
+   "name": "Shredhead",
+   "film": "Energon Universe",
+   "year": 2027,
+   "class": "Exclusives",
+   "refresh": false,
+   "kind": "figure"
+  }
+ ],
+ "flags": [
+  {
+   "id": "ss6-ss-optimus-bb",
+   "flag": "msrpVsClass",
+   "msrp": 24.99,
+   "class": "Voyager"
+  },
+  {
+   "id": "ss4-ss86-cyclonus",
+   "flag": "msrpVsClass",
+   "msrp": 24.99,
+   "class": "Voyager"
+  },
+  {
+   "id": "ss4-ss86-soundwave",
+   "flag": "msrpVsClass",
+   "msrp": 24.99,
+   "class": "Leader"
+  },
+  {
+   "id": "tfss-ss-nemesis-2024",
+   "flag": "msrpVsClass",
+   "msrp": 129.99,
+   "class": "Leader"
+  },
+  {
+   "id": "hs8-hs-26",
+   "flag": "msrpVsClass",
+   "msrp": 24.99,
+   "class": "Voyager"
+  },
+  {
+   "id": "ss4-ss86-thundercracker",
+   "flag": "msrpVsClass",
+   "msrp": 24.99,
+   "class": "Voyager"
+  },
+  {
+   "id": "ss4-ss86-skywarp",
+   "flag": "msrpVsClass",
+   "msrp": 24.99,
+   "class": "Voyager"
+  },
+  {
+   "id": "ss6-ss-arcee-rotb",
+   "flag": "msrpVsClass",
+   "msrp": 24.99,
+   "class": "Core"
+  },
+  {
+   "id": "ss5-ss-megatron-dotm",
+   "flag": "msrpVsClass",
+   "msrp": 24.99,
+   "class": "Leader"
+  },
+  {
+   "id": "ss5-ss-optimus-dotm",
+   "flag": "msrpVsClass",
+   "msrp": 24.99,
+   "class": "Leader"
+  },
+  {
+   "id": "ss5-ss-optimus-aoy",
+   "flag": "msrpVsClass",
+   "msrp": 24.99,
+   "class": "Voyager"
+  },
+  {
+   "id": "tfc-starscream-ss03",
+   "flag": "msrpVsClass",
+   "msrp": 24.99,
+   "class": "Voyager"
+  },
+  {
+   "id": "tfss-ss56-shockwave",
+   "flag": "msrpVsClass",
+   "msrp": 44.99,
+   "class": "Leader"
+  },
+  {
+   "id": "tfss-ss55-scavenger",
+   "flag": "msrpVsClass",
+   "msrp": 44.99,
+   "class": "Leader"
+  }
+ ]
+}
