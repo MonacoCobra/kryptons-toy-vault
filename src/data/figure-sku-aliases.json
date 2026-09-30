@@ -1377,7 +1377,6 @@
       "MATTJHK09"
     ],
     "tfss-ss86-optimus-cmd": [
-      "G0221",
       "HSF8514",
       "STUDIOSERIES-86OPTIMUSPRIME"
     ],
@@ -8196,7 +8195,6 @@
     "tfss-ss-one-optimus": [
       "F71245L00",
       "G3492",
-      "TFSS-TF1-D-OPTIMUSPRIME",
       "HAS195438",
       "HAS178936",
       "G1789",
@@ -8221,8 +8219,7 @@
       "E0738AX00",
       "E3747AS00",
       "DK-15",
-      "DK62",
-      "id:ss6-ss-optimus-tfone"
+      "DK62"
     ],
     "hs8-hs-16": [
       "F47695X00",
@@ -43753,6 +43750,11 @@
     ],
     "afmon-hasbro-transformers-studio-series-transformers-optimus-prime-awakening-bumblebee-hsg5856": [
       "id:afmon-hasbro-transformers-optimus-prime-awakening-studio-series-deluxe-class-bumblebee-bbts-197679"
+    ],
+    "tfss-ss112-optimus-prime": [
+      "id:ss6-ss-optimus-tfone",
+      "TFSS-TF1-D-OPTIMUSPRIME",
+      "G0221"
     ]
   },
   "aliasToFigureId": {
@@ -44761,7 +44763,7 @@
     "DCD 34097": "dcdclassic-sup-s1-superman",
     "DCD33941": "dcdclassic-sup-s1-superman",
     "MATTJHK09": "motu-og-beastman-200x",
-    "G0221": "tfss-ss86-optimus-cmd",
+    "G0221": "tfss-ss112-optimus-prime",
     "HSF8514": "tfss-ss86-optimus-cmd",
     "STUDIOSERIES-86OPTIMUSPRIME": "tfss-ss86-optimus-cmd",
     "JHJ97": "motu-og-skeletor-200x",
@@ -50011,7 +50013,7 @@
     "G0956": "cls5-cls-mindbender",
     "F71245L00": "tfss-ss-one-optimus",
     "G3492": "tfss-ss-one-optimus",
-    "TFSS-TF1-D-OPTIMUSPRIME": "tfss-ss-one-optimus",
+    "TFSS-TF1-D-OPTIMUSPRIME": "tfss-ss112-optimus-prime",
     "HAS195438": "tfss-ss-one-optimus",
     "HAS178936": "tfss-ss-one-optimus",
     "G1789": "tfss-ss-one-optimus",
@@ -67571,7 +67573,7 @@
     "id:ss6-ss-sentinel-tfone": "tfss-ss-one-sentinel",
     "id:ss6-ss-megatron-tfone": "tfss-ss-one-megatron",
     "id:ss5-ss-apelinq": "tfss-ss116-apelinq",
-    "id:ss6-ss-optimus-tfone": "tfss-ss-one-optimus",
+    "id:ss6-ss-optimus-tfone": "tfss-ss112-optimus-prime",
     "id:ss6-ss-elita-tfone": "tfss-ss-one-elita",
     "id:d14ss-86-galvatron": "tfss-ss86-galvatron-31",
     "id:ss4-ss86-galvatron": "tfss-ss86-galvatron-31",
@@ -70737,6 +70739,17 @@
         "id:d14ss-dotm-starscream"
       ],
       "reason": "Studio Series audit 2026-09-30 (merge): No DOTM Starscream in Hasbro SS; row code G0566 and image are the Transformers One Starscream (same code on ss6-ss-starscream-tfone). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss112-optimus-prime",
+      "dropId": null,
+      "canonicalSku": "5010996232328",
+      "aliasesAdded": [
+        "id:ss6-ss-optimus-tfone",
+        "TFSS-TF1-D-OPTIMUSPRIME",
+        "G0221"
+      ],
+      "reason": "Studio Series TF One follow-up 2026-09-30: tfss-ss-one-optimus relabelled as MTMTE WFC Voyager Optimus Prime (its EAN/image); TF One 112 Optimus Prime aliases moved to new row. Sources: https://tfwiki.net/wiki/Studio_Series; https://shop.hasbro.com/en-us/product/transformers-studio-series-deluxe-transformers-one-112-optimus-prime-4-5-action-figure-8-plus/G0221"
     }
   ],
   "flagged": [

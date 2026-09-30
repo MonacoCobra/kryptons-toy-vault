@@ -141693,13 +141693,13 @@
   {
     "id": "tfss-ss-one-optimus",
     "name": "Optimus Prime",
-    "subtitle": "SS-112 Transformers One",
+    "subtitle": "WFC Voyager 2025 (MTMTE Collection)",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-09-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
+    "releaseDate": "2025",
+    "msrp": 34.99,
+    "scale": "Voyager",
     "demand": 1.45,
     "tags": [
       "transformers",
@@ -141718,11 +141718,16 @@
       "alias:toydojo",
       "alias:toynk",
       "alias:hobbyfigures",
-      "fix:ss-audit"
+      "fix:ss-audit",
+      "mtmte-collection",
+      "exclusive",
+      "date-precision:year",
+      "fix:ss-relabel"
     ],
     "source": "curated-transformers",
     "sku": "5010996346179",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-exclusive-optimus-prime-5010996346179.jpg?v=1749853353"
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-exclusive-optimus-prime-5010996346179.jpg?v=1749853353",
+    "exclusive": "Target"
   },
   {
     "id": "joe2-mutt",
@@ -141773,13 +141778,13 @@
   {
     "id": "tfss-ss-one-megatron",
     "name": "Megatron",
-    "subtitle": "SS-114 Transformers One",
+    "subtitle": "WFC Voyager 2025 (MTMTE Collection)",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-09-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
+    "releaseDate": "2025",
+    "msrp": 34.99,
+    "scale": "Voyager",
     "demand": 1.45,
     "tags": [
       "transformers",
@@ -141795,11 +141800,16 @@
       "alias:toyarena",
       "alias:hobbyfigures",
       "alias:hasbro-pulse",
-      "fix:ss-audit"
+      "fix:ss-audit",
+      "mtmte-collection",
+      "exclusive",
+      "date-precision:year",
+      "fix:ss-relabel"
     ],
     "source": "curated-transformers",
     "sku": "5010996346049",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-exclusive-megatron-5010996346049.jpg?v=1749853353"
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-exclusive-megatron-5010996346049.jpg?v=1749853353",
+    "exclusive": "Target"
   },
   {
     "id": "d14bs-kay",
@@ -709601,5 +709611,30 @@
     ],
     "source": "tfwiki-studio-series-announce",
     "exclusive": "Hasbro Pulse"
+  },
+  {
+    "id": "tfss-ss112-optimus-prime",
+    "name": "Optimus Prime",
+    "subtitle": "SS-112 Transformers One",
+    "line": "Transformers Studio Series",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2024",
+    "msrp": 27.99,
+    "scale": "Deluxe",
+    "demand": 1.0,
+    "tags": [
+      "transformers",
+      "studio-series",
+      "tfwiki",
+      "ss-audit-add",
+      "date-precision:year",
+      "sku-gtin",
+      "image-sku",
+      "imgsku:cmdstore"
+    ],
+    "source": "tfwiki-studio-series",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0432/8397/2262/files/transformers-studio-series-deluxe-class-level-optimus-prime-112-5010996247544-pkg.jpg?v=1720818267",
+    "sku": "5010996232328"
   }
 ]

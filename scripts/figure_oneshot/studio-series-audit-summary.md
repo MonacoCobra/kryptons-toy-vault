@@ -218,3 +218,16 @@ Dry run: `python3 scripts/studio-series-audit.py`. Apply: `python3 scripts/studi
 - 11 already have an existing row carrying their EAN or product code: 70 B-127, 101 Scourge, 07BB Grimlock, Concept Art Rumble, Concept Art Frenzy, MTMTE Perceptor pack, 2026 AOE Bumblebee, 2026 Snarl refresh, 2026 MTMTE Leader Megatron, MTMTE WFC Optimus Prime, and MTMTE WFC Megatron.
 
 New flag: tfss-ss-one-optimus and tfss-ss-one-megatron (labelled SS-112/SS-114 Transformers One Deluxe) carry the EAN and product image of the 2025 MTMTE War for Cybertron Voyager Optimus Prime (5010996346179) and Megatron (5010996346049). They were left unchanged.
+
+## TF One follow-up (2026-09-30)
+
+`scripts/studio-series-tfone-relabel.py`:
+- tfss-ss-one-optimus and tfss-ss-one-megatron were relabelled as the 2025 MTMTE Collection War for Cybertron Voyager Optimus Prime and Megatron (Target exclusives; unnumbered on TFWiki). Changes: subtitle, class Voyager, year-only 2025, MSRP $34.99 per actionfigure411. Ids, EAN and image are unchanged.
+- Added tfss-ss112-optimus-prime (TFWiki 2024 Deluxe "112 Optimus Prime (One)"): Hasbro G0221, EAN 5010996232328, MSRP $27.99 (shop.hasbro.com), cmdstore #112 image.
+- Moved three TF One aliases to the new row: id:ss6-ss-optimus-tfone, TFSS-TF1-D-OPTIMUSPRIME, and G0221 (G0221 was previously on tfss-ss86-optimus-cmd).
+- 114 Megatron (One) was not added: unsure row ss5-ss-megatron-tlk already carries its code HAS265216 and an image named 195166265216 (the F9849 TF One Megatron EAN). That row needs relabelling.
+
+Further flags:
+- tfss-ssge04-megatron has sku HASF9849, which is the TF One Megatron product number.
+- tfss-ss-one-megatron still holds aliases id:ss6-ss-megatron-tfone and TFSS-TF1-D-MEGATRON, which are TF One Megatron identity.
+- hs8-hs-21 holds alias HAS232328.
