@@ -19,8 +19,9 @@ Dry run: `python3 scripts/studio-series-audit.py`. Apply: `python3 scripts/studi
 
 - d14ss-* numbers are made-up sequences (AOE 01–11, DOTM 12–28, 2007 70–79, ROTB 101–114, 86-01..27). Row identity was taken from character + film, and each number was then corrected from TFWiki.
 - BBTS-wave rows (ss4/ss5/ss6/hs8/hs10) use placeholder $24.99 prices and made-up dates. Most are duplicates of tfss-* rows.
+- Merge image fill: d14ss-bb-soundwave's image is an SS-62 Soundwave (ROTF Deluxe) package shot, so it is not copied onto tfss-ss83-soundwave (`noImageFill` in the plan). The only image filled is d14ss-dotm-chromia (UPC 630509900657 = 52 Chromia/Arcee/Elita-1).
 - Many rows carry a SKU, UPC or image that belongs to a different product. These are flagged rather than changed; aliases move along with merges exactly as they are today.
-- A year is changed only when it falls outside the TFWiki release year (with Oct–Dec / Jan–Feb tolerance) and is set to YYYY-01-01, because no source gives the month.
+- A year is changed only when it falls outside the TFWiki release year (with Oct–Dec / Jan–Feb tolerance) and is stored year-only ("2019", tagged `date-precision:year`), because no source gives the month. No YYYY-01-01 placeholder dates are written; `formatDate` shows a year-only date as just the year.
 
 ## Examples
 

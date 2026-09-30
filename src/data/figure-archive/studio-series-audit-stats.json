@@ -1,0 +1,2391 @@
+{
+  "dryRun": false,
+  "at": "2026-09-30T21:01:19.508305+00:00",
+  "rowsBefore": 29361,
+  "rowsAfter": 29218,
+  "expectedDelta": 143,
+  "fieldChanges": 99,
+  "rowsFixed": 68,
+  "inventedDeleted": 32,
+  "merged": 111,
+  "reportOnly": {
+    "correct": 120,
+    "unsure": 52,
+    "missing": 96,
+    "flags": 14
+  },
+  "imagesFilled": 1,
+  "integrity": {
+    "before": {
+      "rows": 29361,
+      "duplicateIds": 0,
+      "danglingAliases": 10,
+      "danglingSetIds": 0
+    },
+    "after": {
+      "rows": 29218,
+      "duplicateIds": 0,
+      "danglingAliases": 10,
+      "danglingSetIds": 0
+    },
+    "newDanglingAliases": [],
+    "newDanglingSetIds": []
+  },
+  "problems": [],
+  "fixes": [
+    {
+      "id": "d14ss-86-gnaw",
+      "field": "subtitle",
+      "old": "SS-86-24 The Movie",
+      "new": "SS-86-08 The Movie (package refresh)"
+    },
+    {
+      "id": "tfss-ss86-optimus-cmd",
+      "field": "subtitle",
+      "old": "SS-86 Commander The Movie",
+      "new": "SS-86-31 The Movie Commander"
+    },
+    {
+      "id": "ss6-ss-optimus-bb",
+      "field": "subtitle",
+      "old": "Bumblebee Movie Wave6",
+      "new": "SS-38 Bumblebee"
+    },
+    {
+      "id": "ss6-ss-optimus-bb",
+      "field": "releaseDate",
+      "old": "2024-10-01",
+      "new": "2019"
+    },
+    {
+      "id": "ss4-ss86-cyclonus",
+      "field": "subtitle",
+      "old": "SS-86",
+      "new": "The Movie Voyager 2026"
+    },
+    {
+      "id": "ss4-ss86-cyclonus",
+      "field": "releaseDate",
+      "old": "2024-05-01",
+      "new": "2026"
+    },
+    {
+      "id": "tfss-ssge11-skywarp",
+      "field": "releaseDate",
+      "old": "2024-09-01",
+      "new": "2025"
+    },
+    {
+      "id": "afmon-hasbro-shockwave-hsg2191",
+      "field": "subtitle",
+      "old": "Transformers Studio Series",
+      "new": "The Movie Voyager 2026"
+    },
+    {
+      "id": "tfss-ss115-doublepunch",
+      "field": "releaseDate",
+      "old": "2024-08-01",
+      "new": "2025"
+    },
+    {
+      "id": "ss4-ss86-soundwave",
+      "field": "subtitle",
+      "old": "SS-86",
+      "new": "The Movie Leader 2026"
+    },
+    {
+      "id": "ss4-ss86-soundwave",
+      "field": "releaseDate",
+      "old": "2023-11-01",
+      "new": "2026"
+    },
+    {
+      "id": "tfss-ss-nemesis-2024",
+      "field": "subtitle",
+      "old": "Voyager Exclusive",
+      "new": "TLK Leader 2026"
+    },
+    {
+      "id": "tfss-ss-nemesis-2024",
+      "field": "releaseDate",
+      "old": "2024-07-01",
+      "new": "2026"
+    },
+    {
+      "id": "d14ss-86-kup",
+      "field": "subtitle",
+      "old": "SS-86-13 The Movie",
+      "new": "SS-86-02BB The Movie (Buzzworthy Bumblebee)"
+    },
+    {
+      "id": "d14ss-86-kup",
+      "field": "releaseDate",
+      "old": "2024-01-01",
+      "new": "2022"
+    },
+    {
+      "id": "hs8-hs-26",
+      "field": "releaseDate",
+      "old": "2022-02-01",
+      "new": "2026"
+    },
+    {
+      "id": "d14ss-rotb-wheeljack",
+      "field": "subtitle",
+      "old": "SS-113 ROTB",
+      "new": "SS-108 ROTB"
+    },
+    {
+      "id": "ss4-ss86-thundercracker",
+      "field": "subtitle",
+      "old": "SS-86",
+      "new": "The Movie Voyager 2026"
+    },
+    {
+      "id": "ss4-ss86-thundercracker",
+      "field": "releaseDate",
+      "old": "2023-10-01",
+      "new": "2026"
+    },
+    {
+      "id": "ss4-ss86-skywarp",
+      "field": "subtitle",
+      "old": "SS-86",
+      "new": "The Movie Voyager 2026"
+    },
+    {
+      "id": "ss4-ss86-skywarp",
+      "field": "releaseDate",
+      "old": "2023-10-01",
+      "new": "2026"
+    },
+    {
+      "id": "d14ss-rotb-nightbird",
+      "field": "subtitle",
+      "old": "SS-109 ROTB",
+      "new": "SS-104 ROTB"
+    },
+    {
+      "id": "d14ss-dotm-chromia",
+      "field": "subtitle",
+      "old": "SS-17 DOTM",
+      "new": "SS-52 ROTF"
+    },
+    {
+      "id": "d14ss-dotm-chromia",
+      "field": "releaseDate",
+      "old": "2019-01-01",
+      "new": "2020"
+    },
+    {
+      "id": "d14ss-dotm-chromia",
+      "field": "name",
+      "old": "Chromia",
+      "new": "Chromia, Arcee & Elita-1"
+    },
+    {
+      "id": "d14ss-rotb-rhinox",
+      "field": "subtitle",
+      "old": "SS-107 ROTB",
+      "new": "SS-103 ROTB"
+    },
+    {
+      "id": "hs8-hs-44",
+      "field": "releaseDate",
+      "old": "2023-08-01",
+      "new": "2026"
+    },
+    {
+      "id": "ss4-ss86-hound",
+      "field": "subtitle",
+      "old": "SS-86",
+      "new": "The Movie Deluxe 2026 (package refresh)"
+    },
+    {
+      "id": "ss4-ss86-hound",
+      "field": "releaseDate",
+      "old": "2023-08-01",
+      "new": "2026"
+    },
+    {
+      "id": "ss4-ss86-wheeljack",
+      "field": "subtitle",
+      "old": "SS-86",
+      "new": "The Movie Deluxe 2026 (package refresh)"
+    },
+    {
+      "id": "ss4-ss86-wheeljack",
+      "field": "releaseDate",
+      "old": "2023-07-01",
+      "new": "2026"
+    },
+    {
+      "id": "ss4-ss86-mirage",
+      "field": "subtitle",
+      "old": "SS-86",
+      "new": "SS-105 ROTB"
+    },
+    {
+      "id": "ss4-ss86-sunstreaker",
+      "field": "subtitle",
+      "old": "SS-86",
+      "new": "The Movie Deluxe 2026 (package refresh)"
+    },
+    {
+      "id": "ss4-ss86-sunstreaker",
+      "field": "releaseDate",
+      "old": "2023-06-01",
+      "new": "2026"
+    },
+    {
+      "id": "ss4-ss86-sideswipe",
+      "field": "subtitle",
+      "old": "SS-86",
+      "new": "SS-78 ROTF"
+    },
+    {
+      "id": "ss4-ss86-sideswipe",
+      "field": "releaseDate",
+      "old": "2023-06-01",
+      "new": "2021"
+    },
+    {
+      "id": "d14ss-rotb-scourge",
+      "field": "subtitle",
+      "old": "SS-104 ROTB",
+      "new": "ROTB Leader 2026 (package refresh)"
+    },
+    {
+      "id": "d14ss-rotb-scourge",
+      "field": "releaseDate",
+      "old": "2023-06-01",
+      "new": "2026"
+    },
+    {
+      "id": "d14ss-rotb-primal",
+      "field": "subtitle",
+      "old": "SS-102 ROTB",
+      "new": "SS-106 ROTB"
+    },
+    {
+      "id": "ss5-ss-megatron-dotm",
+      "field": "subtitle",
+      "old": "Dark of the Moon",
+      "new": "SS-34 DOTM"
+    },
+    {
+      "id": "ss5-ss-megatron-dotm",
+      "field": "releaseDate",
+      "old": "2023-01-01",
+      "new": "2019"
+    },
+    {
+      "id": "ss5-ss-optimus-dotm",
+      "field": "subtitle",
+      "old": "Dark of the Moon",
+      "new": "SS-44BB DOTM (Buzzworthy Bumblebee)"
+    },
+    {
+      "id": "ss5-ss-optimus-dotm",
+      "field": "releaseDate",
+      "old": "2022-01-01",
+      "new": "2023"
+    },
+    {
+      "id": "tfss-ss93-hotrod",
+      "field": "releaseDate",
+      "old": "2023-03-01",
+      "new": "2022"
+    },
+    {
+      "id": "ss5-ss-cogman",
+      "field": "subtitle",
+      "old": "The Last Knight",
+      "new": "SS-39 TLK"
+    },
+    {
+      "id": "ss4-ss86-cliffjumper",
+      "field": "subtitle",
+      "old": "SS-86",
+      "new": "The Movie Deluxe 2026"
+    },
+    {
+      "id": "ss4-ss86-cliffjumper",
+      "field": "releaseDate",
+      "old": "2023-03-01",
+      "new": "2026"
+    },
+    {
+      "id": "tfss-ss92-crosshairs",
+      "field": "subtitle",
+      "old": "SS-92 AOE",
+      "new": "SS-92 TLK"
+    },
+    {
+      "id": "ss5-ss-lockdown",
+      "field": "subtitle",
+      "old": "Age of Extinction",
+      "new": "SS-11 AOE"
+    },
+    {
+      "id": "ss5-ss-optimus-aoy",
+      "field": "releaseDate",
+      "old": "2025-01-01",
+      "new": "2026"
+    },
+    {
+      "id": "d14ss-2007-ratchet",
+      "field": "subtitle",
+      "old": "SS-78 2007 Film",
+      "new": "SS-04 2007 Film"
+    },
+    {
+      "id": "d14ss-2007-ratchet",
+      "field": "releaseDate",
+      "old": "2022-07-01",
+      "new": "2018"
+    },
+    {
+      "id": "d14ss-2007-ironhide",
+      "field": "subtitle",
+      "old": "SS-77 2007 Film",
+      "new": "SS-14 2007 Film"
+    },
+    {
+      "id": "d14ss-2007-ironhide",
+      "field": "releaseDate",
+      "old": "2022-06-01",
+      "new": "2018"
+    },
+    {
+      "id": "tfss-ss85-arcee",
+      "field": "subtitle",
+      "old": "SS-85 2007 Film",
+      "new": "SS-85 Bumblebee"
+    },
+    {
+      "id": "tfss-ss84-ironhide",
+      "field": "subtitle",
+      "old": "SS-84 2007 Film",
+      "new": "SS-84 Bumblebee"
+    },
+    {
+      "id": "d14ss-2007-blackout",
+      "field": "subtitle",
+      "old": "SS-76 2007 Film",
+      "new": "SS-08 2007 Film"
+    },
+    {
+      "id": "d14ss-2007-blackout",
+      "field": "releaseDate",
+      "old": "2022-05-01",
+      "new": "2018"
+    },
+    {
+      "id": "tfss-ss83-soundwave",
+      "field": "subtitle",
+      "old": "SS-83 2007 Film",
+      "new": "SS-83 Bumblebee"
+    },
+    {
+      "id": "tfss-ss86-cliff-alt",
+      "field": "subtitle",
+      "old": "SS-86-13 The Movie",
+      "new": "SS-86-13BB The Movie (Buzzworthy Bumblebee)"
+    },
+    {
+      "id": "d14ss-2007-bonecrusher",
+      "field": "subtitle",
+      "old": "SS-75 2007 Film",
+      "new": "SS-33 2007 Film"
+    },
+    {
+      "id": "d14ss-2007-bonecrusher",
+      "field": "releaseDate",
+      "old": "2022-04-01",
+      "new": "2019"
+    },
+    {
+      "id": "tfss-ss81-wheeljack",
+      "field": "subtitle",
+      "old": "SS-81 2007 Film",
+      "new": "SS-81 Bumblebee"
+    },
+    {
+      "id": "tfss-ss82-ratchet",
+      "field": "subtitle",
+      "old": "SS-82 2007 Film",
+      "new": "SS-82 Bumblebee"
+    },
+    {
+      "id": "d14ss-2007-barricade",
+      "field": "subtitle",
+      "old": "SS-74 2007 Film",
+      "new": "SS-28 2007 Film"
+    },
+    {
+      "id": "d14ss-2007-barricade",
+      "field": "releaseDate",
+      "old": "2022-03-01",
+      "new": "2019"
+    },
+    {
+      "id": "d14ss-2007-jazz",
+      "field": "subtitle",
+      "old": "SS-73 2007 Film",
+      "new": "SS-10 2007 Film"
+    },
+    {
+      "id": "d14ss-2007-jazz",
+      "field": "releaseDate",
+      "old": "2022-02-01",
+      "new": "2018"
+    },
+    {
+      "id": "tfss-ss80-brawn",
+      "field": "subtitle",
+      "old": "SS-80 2007 Film",
+      "new": "SS-80 Bumblebee"
+    },
+    {
+      "id": "tfc-starscream-ss03",
+      "field": "subtitle",
+      "old": "DOTM SS-03",
+      "new": "SS-06 2007 Film"
+    },
+    {
+      "id": "tfc-optimus-ss32",
+      "field": "subtitle",
+      "old": "Bumblebee SS-32",
+      "new": "SS-32 2007 Film"
+    },
+    {
+      "id": "d14ss-bb-wheels",
+      "field": "releaseDate",
+      "old": "2021-07-01",
+      "new": "2020"
+    },
+    {
+      "id": "tfss-ss73-grindor",
+      "field": "subtitle",
+      "old": "SS-73 DOTM",
+      "new": "SS-73 ROTF"
+    },
+    {
+      "id": "ss5-ss-shatter",
+      "field": "subtitle",
+      "old": "Bumblebee Movie",
+      "new": "SS-40 Bumblebee"
+    },
+    {
+      "id": "ss5-ss-shatter",
+      "field": "releaseDate",
+      "old": "2021-01-01",
+      "new": "2019"
+    },
+    {
+      "id": "d14ss-dotm-hightower",
+      "field": "subtitle",
+      "old": "SS-24 DOTM",
+      "new": "SS-47 ROTF"
+    },
+    {
+      "id": "ss5-ss-dropkick",
+      "field": "subtitle",
+      "old": "Bumblebee Movie",
+      "new": "SS-22 Bumblebee"
+    },
+    {
+      "id": "d14ss-dotm-crowbar",
+      "field": "subtitle",
+      "old": "SS-23 DOTM",
+      "new": "SS-03 DOTM"
+    },
+    {
+      "id": "d14ss-dotm-crowbar",
+      "field": "releaseDate",
+      "old": "2019-07-01",
+      "new": "2018"
+    },
+    {
+      "id": "d14ss-dotm-wheeljack",
+      "field": "subtitle",
+      "old": "SS-22 DOTM",
+      "new": "DOTM Deluxe 2025"
+    },
+    {
+      "id": "d14ss-dotm-wheeljack",
+      "field": "releaseDate",
+      "old": "2019-06-01",
+      "new": "2025"
+    },
+    {
+      "id": "afmon-hasbro-barricade-hsg1928",
+      "field": "subtitle",
+      "old": "Transformers Studio Series",
+      "new": "TLK Deluxe 2026"
+    },
+    {
+      "id": "d14ss-dotm-topspin",
+      "field": "subtitle",
+      "old": "SS-21 DOTM",
+      "new": "SS-63 DOTM"
+    },
+    {
+      "id": "d14ss-dotm-topspin",
+      "field": "releaseDate",
+      "old": "2019-05-01",
+      "new": "2020"
+    },
+    {
+      "id": "d14ss-dotm-leadfoot",
+      "field": "subtitle",
+      "old": "SS-19 DOTM",
+      "new": "SS-68 DOTM"
+    },
+    {
+      "id": "d14ss-dotm-leadfoot",
+      "field": "releaseDate",
+      "old": "2019-03-01",
+      "new": "2020"
+    },
+    {
+      "id": "d14ss-dotm-sideswipe",
+      "field": "subtitle",
+      "old": "SS-16 DOTM",
+      "new": "SS-29 DOTM"
+    },
+    {
+      "id": "d14ss-dotm-ratchet",
+      "field": "subtitle",
+      "old": "SS-15 DOTM",
+      "new": "SS-16 DOTM"
+    },
+    {
+      "id": "tfc-grimlock-ss09",
+      "field": "subtitle",
+      "old": "AOE SS-09",
+      "new": "SS-07 AOE"
+    },
+    {
+      "id": "d14ss-aoe-drift",
+      "field": "subtitle",
+      "old": "SS-08 AOE",
+      "new": "SS-45 AOE"
+    },
+    {
+      "id": "d14ss-aoe-drift",
+      "field": "releaseDate",
+      "old": "2018-09-01",
+      "new": "2019"
+    },
+    {
+      "id": "d14ss-dotm-megatron",
+      "field": "subtitle",
+      "old": "SS-13 DOTM",
+      "new": "SS-13 ROTF"
+    },
+    {
+      "id": "tfc-soundwave-ss12",
+      "field": "subtitle",
+      "old": "DOTM SS-12",
+      "new": "SS-51 DOTM"
+    },
+    {
+      "id": "tfc-soundwave-ss12",
+      "field": "releaseDate",
+      "old": "2018-07-01",
+      "new": "2020"
+    },
+    {
+      "id": "d14ss-aoe-optimus",
+      "field": "subtitle",
+      "old": "SS-05 AOE",
+      "new": "SS-05 ROTF"
+    },
+    {
+      "id": "afmon-hasbro-grimlock-hsg1888",
+      "field": "subtitle",
+      "old": "Transformers Studio Series",
+      "new": "AOE Titan 2026"
+    },
+    {
+      "id": "afmon-hasbro-autobot-windcharger-hsg1927",
+      "field": "subtitle",
+      "old": "Transformers Studio Series",
+      "new": "The Movie Deluxe 2026"
+    },
+    {
+      "id": "afmon-hasbro-transformers-studio-series-transformers-optimus-prime-awakening-bumblebee-hsg5856",
+      "field": "name",
+      "old": "Transformers Studio Series Transformers Optimus Prime: Awakening Bumblebee",
+      "new": "Bumblebee"
+    },
+    {
+      "id": "afmon-hasbro-transformers-studio-series-transformers-optimus-prime-awakening-bumblebee-hsg5856",
+      "field": "subtitle",
+      "old": "Transformers Studio Series Transforme...",
+      "new": "Optimus Prime: Awakening Deluxe"
+    }
+  ],
+  "deleted": [
+    {
+      "id": "d14ss-86-bombshell",
+      "name": "Bombshell",
+      "subtitle": "SS-86-27 The Movie",
+      "aliasesDropped": []
+    },
+    {
+      "id": "d14ss-86-kickback",
+      "name": "Kickback",
+      "subtitle": "SS-86-26 The Movie",
+      "aliasesDropped": []
+    },
+    {
+      "id": "d14ss-86-sharpnel",
+      "name": "Sharpnel",
+      "subtitle": "SS-86-25 The Movie",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss6-ss-predaking",
+      "name": "Predaking",
+      "subtitle": "Studio Series Wave6",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss6-ss-abominus",
+      "name": "Abominus",
+      "subtitle": "Studio Series Wave6",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss6-ss-defensor-ss",
+      "name": "Defensor",
+      "subtitle": "Studio Series Wave6",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss6-ss-computron",
+      "name": "Computron",
+      "subtitle": "Studio Series Wave6",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss6-ss-superion-ss",
+      "name": "Superion",
+      "subtitle": "Studio Series Wave6",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss6-ss-bruticus-ss",
+      "name": "Bruticus",
+      "subtitle": "Studio Series Wave6",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss6-ss-menasor-ss",
+      "name": "Menasor",
+      "subtitle": "Studio Series Wave6",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss6-ss-slag-86",
+      "name": "Slag",
+      "subtitle": "86 Movie Wave6",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss4-ss86-slag",
+      "name": "Slag",
+      "subtitle": "SS-86",
+      "aliasesDropped": []
+    },
+    {
+      "id": "d14ss-rotb-strato",
+      "name": "Stratosphere",
+      "subtitle": "SS-114 ROTB",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss4-ss111-transit",
+      "name": "Transit",
+      "subtitle": "Rise of the Beasts",
+      "aliasesDropped": []
+    },
+    {
+      "id": "d14ss-rotb-transit",
+      "name": "Transit",
+      "subtitle": "SS-110 ROTB",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss4-ss86-trailbreaker",
+      "name": "Trailbreaker",
+      "subtitle": "SS-86",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss6-ss-transit",
+      "name": "Transit",
+      "subtitle": "ROTB Wave6",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss4-ss86-bluestreak",
+      "name": "Bluestreak",
+      "subtitle": "SS-86",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss6-ss-stratosphere",
+      "name": "Stratosphere",
+      "subtitle": "ROTB Wave6",
+      "aliasesDropped": []
+    },
+    {
+      "id": "d14ss-86-cup",
+      "name": "Cup",
+      "subtitle": "SS-86-02 The Movie",
+      "aliasesDropped": []
+    },
+    {
+      "id": "d14ss-86-unicron",
+      "name": "Unicron",
+      "subtitle": "HasLab The Movie",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss5-ss-optimus-tlk",
+      "name": "Optimus Prime",
+      "subtitle": "The Last Knight",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss5-ss-unircron-86",
+      "name": "Unicron",
+      "subtitle": "86 Movie",
+      "aliasesDropped": []
+    },
+    {
+      "id": "d14ss-bb-optimus-chase",
+      "name": "Optimus Prime",
+      "subtitle": "SS-68 Chase Bumblebee",
+      "aliasesDropped": []
+    },
+    {
+      "id": "d14ss-bb-optimus-corp",
+      "name": "Optimus Prime",
+      "subtitle": "SS-63 Corp Bumblebee",
+      "aliasesDropped": []
+    },
+    {
+      "id": "d14ss-tlk-infernocus",
+      "name": "Infernocus",
+      "subtitle": "SS-52 TLK",
+      "aliasesDropped": []
+    },
+    {
+      "id": "d14ss-aoe-slash",
+      "name": "Slash",
+      "subtitle": "SS-46 AOE",
+      "aliasesDropped": []
+    },
+    {
+      "id": "ss5-ss-stratosphere",
+      "name": "Stratosphere",
+      "subtitle": "Rise of the Beasts",
+      "aliasesDropped": []
+    },
+    {
+      "id": "d14ss-aoe-strafe",
+      "name": "Strafe",
+      "subtitle": "SS-30 AOE",
+      "aliasesDropped": []
+    },
+    {
+      "id": "d14ss-aoe-snooper",
+      "name": "Snooper",
+      "subtitle": "SS-29 AOE",
+      "aliasesDropped": []
+    },
+    {
+      "id": "d14ss-tlk-nitro",
+      "name": "Nitro Zeus",
+      "subtitle": "SS-37 TLK",
+      "aliasesDropped": []
+    },
+    {
+      "id": "d14ss-tlk-optimus",
+      "name": "Optimus Prime",
+      "subtitle": "SS-34 TLK",
+      "aliasesDropped": []
+    }
+  ],
+  "merges": [
+    {
+      "dropId": "ss6-ss-alpha-trion",
+      "keepId": "tfss-ss-one-alpha",
+      "dropName": "Alpha Trion",
+      "dropSubtitle": "TF One Wave6",
+      "keepName": "Alpha Trion",
+      "ref": "(unnumbered) Alpha Trion (One) — 2026 Voyager Class",
+      "aliasesMoved": [
+        "HAS348661",
+        "id:ss6-ss-alpha-trion"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "afmon-hasbro-soundwave-hsg2200",
+      "keepId": "tfss-ss-one-soundwave",
+      "dropName": "Soundwave",
+      "dropSubtitle": "Transformers Studio Series",
+      "keepName": "Soundwave",
+      "ref": "(unnumbered) Soundwave (One) — 2026 Deluxe Class",
+      "aliasesMoved": [
+        "HSG2200",
+        "id:afmon-hasbro-soundwave-hsg2200"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-airachnid",
+      "keepId": "tfss-ss-one-airachnid",
+      "dropName": "Airachnid",
+      "dropSubtitle": "TF One Wave6",
+      "keepName": "Airachnid",
+      "ref": "(unnumbered) Airachnid (One) — 2026 Deluxe Class",
+      "aliasesMoved": [
+        "id:ss6-ss-airachnid"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-shockwave-dotm",
+      "keepId": "tfss-ss-dotm-shockwave-leader",
+      "dropName": "Shockwave",
+      "dropSubtitle": "Dark of the Moon",
+      "keepName": "Shockwave",
+      "ref": "(unnumbered) Shockwave (Dark of the Moon w/ Brains, Wheelie, and Paratrooper, package refresh) — 2025 Leader Class",
+      "aliasesMoved": [
+        "HASG0483",
+        "id:ss5-ss-shockwave-dotm"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "hs8-hs-22",
+      "keepId": "tfss-ss-86-megatron-2025",
+      "dropName": "Megatron",
+      "dropSubtitle": "Studio Series 86",
+      "keepName": "Megatron",
+      "ref": "(unnumbered) Megatron (The Movie) — 2025 Leader Class",
+      "aliasesMoved": [
+        "HAS900640",
+        "HAS223520",
+        "TFGMEG1",
+        "HSE0702M",
+        "G1790",
+        "E6254AS00",
+        "id:hs8-hs-22"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "hs8-hs-43",
+      "keepId": "tfss-ss-86-jazz-2025",
+      "dropName": "Jazz",
+      "dropSubtitle": "Studio Series 86",
+      "keepName": "Jazz",
+      "ref": "(unnumbered) Autobot Jazz (The Movie, package refresh) — 2025 Deluxe Class",
+      "aliasesMoved": [
+        "HAS978335",
+        "HSF0709",
+        "TFSS-86JAZZ",
+        "F0709AS00",
+        "TFSS-10JAZZ-15THLOOSE",
+        "id:hs8-hs-43"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-starscream-tfone",
+      "keepId": "tfss-ss-one-starscream",
+      "dropName": "Starscream",
+      "dropSubtitle": "TF One Wave6",
+      "keepName": "Starscream",
+      "ref": "(unnumbered) Starscream (One) — 2025 Deluxe Class",
+      "aliasesMoved": [
+        "id:ss6-ss-starscream-tfone"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-sentinel-tfone",
+      "keepId": "tfss-ss-one-sentinel",
+      "dropName": "Sentinel Prime",
+      "dropSubtitle": "TF One Wave6",
+      "keepName": "Sentinel Prime",
+      "ref": "(unnumbered) Sentinel Prime (One) — 2025 Voyager Class",
+      "aliasesMoved": [
+        "id:ss6-ss-sentinel-tfone"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-megatron-tfone",
+      "keepId": "tfss-ss-one-megatron",
+      "dropName": "Megatron",
+      "dropSubtitle": "TF One Wave6",
+      "keepName": "Megatron",
+      "ref": "114 Megatron (One) — 2024 Deluxe Class",
+      "aliasesMoved": [
+        "F7244AX00",
+        "id:ss6-ss-megatron-tfone"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-apelinq",
+      "keepId": "tfss-ss116-apelinq",
+      "dropName": "Apelinq",
+      "dropSubtitle": "Rise of the Beasts",
+      "keepName": "Apelinq",
+      "ref": "116 / 118 Apelinq (Rise of the Beasts) — 2025 Leader Class",
+      "aliasesMoved": [
+        "HBR-G0480-C",
+        "G0480",
+        "id:ss5-ss-apelinq"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-optimus-tfone",
+      "keepId": "tfss-ss-one-optimus",
+      "dropName": "Optimus Prime",
+      "dropSubtitle": "TF One Wave6",
+      "keepName": "Optimus Prime",
+      "ref": "112 Optimus Prime (One) — 2024 Deluxe Class",
+      "aliasesMoved": [
+        "DK-15",
+        "DK62",
+        "id:ss6-ss-optimus-tfone"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-elita-tfone",
+      "keepId": "tfss-ss-one-elita",
+      "dropName": "Elita-1",
+      "dropSubtitle": "TF One Wave6",
+      "keepName": "Elita-1",
+      "ref": "(unnumbered) Elita-1 (One) — 2025 Deluxe Class",
+      "aliasesMoved": [
+        "id:ss6-ss-elita-tfone"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-86-galvatron",
+      "keepId": "tfss-ss86-galvatron-31",
+      "dropName": "Galvatron",
+      "dropSubtitle": "SS-86-23 The Movie",
+      "keepName": "Galvatron",
+      "ref": "86-31 Galvatron (The Movie) — 2025 Leader Class",
+      "aliasesMoved": [
+        "id:d14ss-86-galvatron"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-galvatron",
+      "keepId": "tfss-ss86-galvatron-31",
+      "dropName": "Galvatron",
+      "dropSubtitle": "SS-86",
+      "keepName": "Galvatron",
+      "ref": "86-31 Galvatron (The Movie) — 2025 Leader Class",
+      "aliasesMoved": [
+        "id:ss4-ss86-galvatron"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-galvatron-86",
+      "keepId": "tfss-ss86-galvatron-31",
+      "dropName": "Galvatron",
+      "dropSubtitle": "86 Movie",
+      "keepName": "Galvatron",
+      "ref": "86-31 Galvatron (The Movie) — 2025 Leader Class",
+      "aliasesMoved": [
+        "HSG0481",
+        "HBR-G0481-C",
+        "id:ss5-ss-galvatron-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-bb-optimus",
+      "keepId": "ss6-ss-optimus-bb",
+      "dropName": "Optimus Prime",
+      "dropSubtitle": "SS-32 Bumblebee",
+      "keepName": "Optimus Prime",
+      "ref": "38 Optimus Prime (Bumblebee) — 2019 Voyager Class",
+      "aliasesMoved": [
+        "id:d14ss-bb-optimus"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-86-cyclonus",
+      "keepId": "ss4-ss86-cyclonus",
+      "dropName": "Cyclonus",
+      "dropSubtitle": "SS-86-22 The Movie",
+      "keepName": "Cyclonus",
+      "ref": "(unnumbered) Cyclonus (The Movie) — 2026 Voyager Class",
+      "aliasesMoved": [
+        "id:d14ss-86-cyclonus"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-cyclonus-86",
+      "keepId": "ss4-ss86-cyclonus",
+      "dropName": "Cyclonus",
+      "dropSubtitle": "86 Movie",
+      "keepName": "Cyclonus",
+      "ref": "(unnumbered) Cyclonus (The Movie) — 2026 Voyager Class",
+      "aliasesMoved": [
+        "id:ss5-ss-cyclonus-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-springer",
+      "keepId": "tfss-ss86-springer-30",
+      "dropName": "Springer",
+      "dropSubtitle": "SS-86",
+      "keepName": "Springer",
+      "ref": "86-30 Autobot Springer (The Movie) — 2024 Leader Class",
+      "aliasesMoved": [
+        "id:ss4-ss86-springer"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-86-springer",
+      "keepId": "tfss-ss86-springer-30",
+      "dropName": "Springer",
+      "dropSubtitle": "SS-86-15 The Movie",
+      "keepName": "Springer",
+      "ref": "86-30 Autobot Springer (The Movie) — 2024 Leader Class",
+      "aliasesMoved": [
+        "id:d14ss-86-springer"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-springer-86",
+      "keepId": "tfss-ss86-springer-30",
+      "dropName": "Springer",
+      "dropSubtitle": "86 Movie",
+      "keepName": "Springer",
+      "ref": "86-30 Autobot Springer (The Movie) — 2024 Leader Class",
+      "aliasesMoved": [
+        "F8774AZ00",
+        "id:ss5-ss-springer-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-86-scourge",
+      "keepId": "tfss-ss86-scourge-alt",
+      "dropName": "Scourge",
+      "dropSubtitle": "SS-86-21 The Movie",
+      "keepName": "Scourge",
+      "ref": "86-05 Scourge (The Movie) — 2021 Voyager Class",
+      "aliasesMoved": [
+        "F0713AS00",
+        "id:d14ss-86-scourge"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-scourge-86",
+      "keepId": "tfss-ss86-scourge-alt",
+      "dropName": "Scourge",
+      "dropSubtitle": "86 Movie",
+      "keepName": "Scourge",
+      "ref": "86-05 Scourge (The Movie) — 2021 Voyager Class",
+      "aliasesMoved": [
+        "HSF0713",
+        "HAS376008",
+        "TFS-SCU1",
+        "F7246AX00",
+        "id:ss5-ss-scourge-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-86-shockwave",
+      "keepId": "afmon-hasbro-shockwave-hsg2191",
+      "dropName": "Shockwave",
+      "dropSubtitle": "SS-86-20 The Movie",
+      "keepName": "Shockwave",
+      "ref": "(unnumbered) Shockwave (The Movie) — 2026 Voyager Class",
+      "aliasesMoved": [
+        "id:d14ss-86-shockwave"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-shockwave",
+      "keepId": "afmon-hasbro-shockwave-hsg2191",
+      "dropName": "Shockwave",
+      "dropSubtitle": "SS-86",
+      "keepName": "Shockwave",
+      "ref": "(unnumbered) Shockwave (The Movie) — 2026 Voyager Class",
+      "aliasesMoved": [
+        "id:ss4-ss86-shockwave"
+      ],
+      "aliasesLeftAlone": [
+        {
+          "code": "HSG2191",
+          "pointsAt": "afmon-hasbro-shockwave-hsg2191"
+        }
+      ],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-shockwave-86",
+      "keepId": "afmon-hasbro-shockwave-hsg2191",
+      "dropName": "Shockwave",
+      "dropSubtitle": "86 Movie",
+      "keepName": "Shockwave",
+      "ref": "(unnumbered) Shockwave (The Movie) — 2026 Voyager Class",
+      "aliasesMoved": [
+        "HAS6348647PRE",
+        "id:ss5-ss-shockwave-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-86-bumblebee",
+      "keepId": "tfss-ss86-bb-29",
+      "dropName": "Bumblebee",
+      "dropSubtitle": "SS-86-06 The Movie",
+      "keepName": "Bumblebee",
+      "ref": "86-29 Bumblebee (The Movie) — 2024 Deluxe Class",
+      "aliasesMoved": [
+        "id:d14ss-86-bumblebee"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-bumblebee",
+      "keepId": "tfss-ss86-bb-29",
+      "dropName": "Bumblebee",
+      "dropSubtitle": "SS-86",
+      "keepName": "Bumblebee",
+      "ref": "86-29 Bumblebee (The Movie) — 2024 Deluxe Class",
+      "aliasesMoved": [
+        "HAS348623",
+        "id:ss4-ss86-bumblebee"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "hs8-hs-23",
+      "keepId": "tfss-ss86-bb-29",
+      "dropName": "Bumblebee",
+      "dropSubtitle": "Studio Series 86",
+      "keepName": "Bumblebee",
+      "ref": "86-29 Bumblebee (The Movie) — 2024 Deluxe Class",
+      "aliasesMoved": [
+        "HSG0220",
+        "HSE0701YBB",
+        "G0220",
+        "id:hs8-hs-23"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "hs10-hs-25",
+      "keepId": "tfss-ss86-bb-29",
+      "dropName": "Studio Series 86 Bumblebee",
+      "dropSubtitle": "Studio Series",
+      "keepName": "Bumblebee",
+      "ref": "86-29 Bumblebee (The Movie) — 2024 Deluxe Class",
+      "aliasesMoved": [
+        "TFSS-BUZZWORTHY-86IRONHIDE",
+        "HAS774227",
+        "N-LF-151572",
+        "F7235",
+        "DK53",
+        "G2199IS",
+        "HASF8753",
+        "HASF8749",
+        "TFSSEX-C-CLEARBB",
+        "TFSS-C-DOTMBB-JAPAN",
+        "TFSS-L-BUZZWORTHYGRIMLOCK",
+        "TFSS-D-WFC-BUMBLEBEE-JAPAN",
+        "TFSS-C-BUMBLEBEE",
+        "TFSS-D-BUMBLEBEEROTB-JAPAN",
+        "TFSS-D-BUMBLEBEEDOTM-JAPAN",
+        "TFSS-NESTBONECRUSHER",
+        "TFSSEX-RUSTYVWBB",
+        "TFSS-26WWIIBB",
+        "TFSS-19BBGIFTSET",
+        "E3698AS00",
+        "id:hs10-hs-25"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-86-soundwave",
+      "keepId": "ss4-ss86-soundwave",
+      "dropName": "Soundwave",
+      "dropSubtitle": "SS-86-19 The Movie",
+      "keepName": "Soundwave",
+      "ref": "(unnumbered) Soundwave / Buzzsaw / Laserbeak / Ravage (The Movie) — 2026 Leader Class",
+      "aliasesMoved": [
+        "id:d14ss-86-soundwave"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "hs8-hs-45",
+      "keepId": "ss4-ss86-soundwave",
+      "dropName": "Soundwave",
+      "dropSubtitle": "Studio Series 86",
+      "keepName": "Soundwave",
+      "ref": "(unnumbered) Soundwave / Buzzsaw / Laserbeak / Ravage (The Movie) — 2026 Leader Class",
+      "aliasesMoved": [
+        "id:hs8-hs-45"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-soundwave-86",
+      "keepId": "ss4-ss86-soundwave",
+      "dropName": "Soundwave",
+      "dropSubtitle": "86 Movie",
+      "keepName": "Soundwave",
+      "ref": "(unnumbered) Soundwave / Buzzsaw / Laserbeak / Ravage (The Movie) — 2026 Leader Class",
+      "aliasesMoved": [
+        "id:ss5-ss-soundwave-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-swoop-86",
+      "keepId": "tfss-ss86-swoop",
+      "dropName": "Swoop",
+      "dropSubtitle": "86 Movie Wave6",
+      "keepName": "Swoop",
+      "ref": "86-26 Dinobot Swoop (The Movie) — 2024 Leader Class",
+      "aliasesMoved": [
+        "F8773AZ01",
+        "id:ss6-ss-swoop-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-swoop",
+      "keepId": "tfss-ss86-swoop",
+      "dropName": "Swoop",
+      "dropSubtitle": "SS-86",
+      "keepName": "Swoop",
+      "ref": "86-26 Dinobot Swoop (The Movie) — 2024 Leader Class",
+      "aliasesMoved": [
+        "id:ss4-ss86-swoop"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-blaster",
+      "keepId": "tfss-ss86-blaster",
+      "dropName": "Blaster",
+      "dropSubtitle": "SS-86",
+      "keepName": "Blaster & Eject",
+      "ref": "86-25 Autobot Blaster & Eject (The Movie) — 2024 Voyager Class",
+      "aliasesMoved": [
+        "HSF9654",
+        "F96545L00",
+        "BEASTAWAKENING-JP-BURNINGPLASMA",
+        "F9654",
+        "id:ss4-ss86-blaster"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-ultra-magnus",
+      "keepId": "tfss-ss86-ultramagnus-cmd",
+      "dropName": "Ultra Magnus",
+      "dropSubtitle": "SS-86",
+      "keepName": "Ultra Magnus",
+      "ref": "86-21 Ultra Magnus (The Movie) — 2023 Commander Class",
+      "aliasesMoved": [
+        "STUDIOSERIES-86ULTRAMAGNUS",
+        "F61625L00",
+        "N-LF-147538",
+        "STUDIOSERIES-86ULTRAMAGNUS-JP",
+        "id:ss4-ss86-ultra-magnus"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-86-ultras",
+      "keepId": "tfss-ss86-ultramagnus-cmd",
+      "dropName": "Ultra Magnus",
+      "dropSubtitle": "SS-86-14 The Movie",
+      "keepName": "Ultra Magnus",
+      "ref": "86-21 Ultra Magnus (The Movie) — 2023 Commander Class",
+      "aliasesMoved": [
+        "id:d14ss-86-ultras"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-ultrmagnus-86",
+      "keepId": "tfss-ss86-ultramagnus-cmd",
+      "dropName": "Ultra Magnus",
+      "dropSubtitle": "86 Movie",
+      "keepName": "Ultra Magnus",
+      "ref": "86-21 Ultra Magnus (The Movie) — 2023 Commander Class",
+      "aliasesMoved": [
+        "F6162RR",
+        "id:ss5-ss-ultrmagnus-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-86-perceptor",
+      "keepId": "tfss-ss86-perceptor-alt",
+      "dropName": "Perceptor",
+      "dropSubtitle": "SS-86-16 The Movie",
+      "keepName": "Perceptor",
+      "ref": "86-11 Perceptor (The Movie) — 2022 Deluxe Class",
+      "aliasesMoved": [
+        "id:d14ss-86-perceptor"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-arcee",
+      "keepId": "tfss-ss86-arcee-alt",
+      "dropName": "Arcee",
+      "dropSubtitle": "SS-86",
+      "keepName": "Arcee",
+      "ref": "86-16 Arcee (The Movie) — 2022 Deluxe Class",
+      "aliasesMoved": [
+        "id:ss4-ss86-arcee"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-86-arcee",
+      "keepId": "tfss-ss86-arcee-alt",
+      "dropName": "Arcee",
+      "dropSubtitle": "SS-86-08 The Movie",
+      "keepName": "Arcee",
+      "ref": "86-16 Arcee (The Movie) — 2022 Deluxe Class",
+      "aliasesMoved": [
+        "F72285X00",
+        "id:d14ss-86-arcee"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-arcee-86",
+      "keepId": "tfss-ss86-arcee-alt",
+      "dropName": "Arcee",
+      "dropSubtitle": "86 Movie",
+      "keepName": "Arcee",
+      "ref": "86-16 Arcee (The Movie) — 2022 Deluxe Class",
+      "aliasesMoved": [
+        "HAS181639",
+        "HSF4480",
+        "F4480AS00",
+        "F7228",
+        "id:ss5-ss-arcee-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-snarl-86",
+      "keepId": "tfss-ss86-snarl-alt",
+      "dropName": "Snarl",
+      "dropSubtitle": "86 Movie Wave6",
+      "keepName": "Snarl",
+      "ref": "86-19 Dinobot Snarl (The Movie) — 2023 Leader Class",
+      "aliasesMoved": [
+        "TFSSNAR1",
+        "F7247AX00",
+        "id:ss6-ss-snarl-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-snarl",
+      "keepId": "tfss-ss86-snarl-alt",
+      "dropName": "Snarl",
+      "dropSubtitle": "SS-86",
+      "keepName": "Snarl",
+      "ref": "86-19 Dinobot Snarl (The Movie) — 2023 Leader Class",
+      "aliasesMoved": [
+        "G2188",
+        "HASG2188",
+        "id:ss4-ss86-snarl"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-sludge-86",
+      "keepId": "tfss-ss86-sludge",
+      "dropName": "Sludge",
+      "dropSubtitle": "86 Movie Wave6",
+      "keepName": "Sludge",
+      "ref": "86-15 Dinobot Sludge (The Movie) — 2022 Leader Class",
+      "aliasesMoved": [
+        "HAS169866",
+        "id:ss6-ss-sludge-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-sludge",
+      "keepId": "tfss-ss86-sludge",
+      "dropName": "Sludge",
+      "dropSubtitle": "SS-86",
+      "keepName": "Sludge",
+      "ref": "86-15 Dinobot Sludge (The Movie) — 2022 Leader Class",
+      "aliasesMoved": [
+        "F3203AX00",
+        "HASF7247",
+        "id:ss4-ss86-sludge"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-kup",
+      "keepId": "tfss-ss86-kup-alt",
+      "dropName": "Kup",
+      "dropSubtitle": "SS-86",
+      "keepName": "Kup",
+      "ref": "86-02 Kup (The Movie) — 2021 Deluxe Class",
+      "aliasesMoved": [
+        "TFSS-86KUP",
+        "F44815L00",
+        "id:ss4-ss86-kup"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-kup-86",
+      "keepId": "tfss-ss86-kup-alt",
+      "dropName": "Kup",
+      "dropSubtitle": "86 Movie",
+      "keepName": "Kup",
+      "ref": "86-02 Kup (The Movie) — 2021 Deluxe Class",
+      "aliasesMoved": [
+        "F0710AS00",
+        "id:ss5-ss-kup-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-hotrod",
+      "keepId": "tfss-ss86-hotrod-alt",
+      "dropName": "Hot Rod",
+      "dropSubtitle": "SS-86",
+      "keepName": "Hot Rod",
+      "ref": "86-04 Autobot Hot Rod (The Movie) — 2021 Voyager Class",
+      "aliasesMoved": [
+        "TFSS-86HOTRODVARIANT",
+        "TFSS-86HOTROD",
+        "HASG2254",
+        "TFSS-MTMTE-V-HOTROD",
+        "id:ss4-ss86-hotrod"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-hotrod-86",
+      "keepId": "tfss-ss86-hotrod-alt",
+      "dropName": "Hot Rod",
+      "dropSubtitle": "86 Movie",
+      "keepName": "Hot Rod",
+      "ref": "86-04 Autobot Hot Rod (The Movie) — 2021 Voyager Class",
+      "aliasesMoved": [
+        "id:ss5-ss-hotrod-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-86-hotrod",
+      "keepId": "hs8-hs-26",
+      "dropName": "Hot Rod",
+      "dropSubtitle": "SS-86-12 The Movie",
+      "keepName": "Hot Rod",
+      "ref": "(unnumbered) Autobot Hot Rod (The Movie) — 2026 MTMTE Collection Voyager Class",
+      "aliasesMoved": [
+        "id:d14ss-86-hotrod"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-grimlock",
+      "keepId": "tfss-ss86-grimlock-wheelie",
+      "dropName": "Grimlock",
+      "dropSubtitle": "SS-86",
+      "keepName": "Grimlock & Wheelie",
+      "ref": "86-06 Grimlock & Autobot Wheelie (The Movie) — 2021 Leader Class",
+      "aliasesMoved": [
+        "F71185L00",
+        "id:ss4-ss86-grimlock"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-grimlock-86",
+      "keepId": "tfss-ss86-grimlock-wheelie",
+      "dropName": "Grimlock",
+      "dropSubtitle": "86 Movie",
+      "keepName": "Grimlock & Wheelie",
+      "ref": "86-06 Grimlock & Autobot Wheelie (The Movie) — 2021 Leader Class",
+      "aliasesMoved": [
+        "id:ss5-ss-grimlock-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-wheeljack-rotb",
+      "keepId": "d14ss-rotb-wheeljack",
+      "dropName": "Wheeljack",
+      "dropSubtitle": "ROTB Wave6",
+      "keepName": "Wheeljack",
+      "ref": "108 Wheeljack (Rise of the Beasts) — 2024 Deluxe Class",
+      "aliasesMoved": [
+        "id:ss6-ss-wheeljack-rotb"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-86-blurr",
+      "keepId": "tfss-ss86-blurr-alt",
+      "dropName": "Blurr",
+      "dropSubtitle": "SS-86-11 The Movie",
+      "keepName": "Blurr",
+      "ref": "86-03 Blurr (The Movie) — 2021 Deluxe Class",
+      "aliasesMoved": [
+        "id:d14ss-86-blurr"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-blurr-86",
+      "keepId": "tfss-ss86-blurr-alt",
+      "dropName": "Blurr",
+      "dropSubtitle": "86 Movie Wave6",
+      "keepName": "Blurr",
+      "ref": "86-03 Blurr (The Movie) — 2021 Deluxe Class",
+      "aliasesMoved": [
+        "F0711AS00",
+        "id:ss6-ss-blurr-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "lv-hasbro-transformers-studio-series-the-transformers-the-movie-studio-series-86-voyager-class-skyw",
+      "keepId": "ss4-ss86-skywarp",
+      "dropName": "The Transformers: The Movie Studio Series 86 Voyager Class Skywarp",
+      "dropSubtitle": "",
+      "keepName": "Skywarp",
+      "ref": "(unnumbered) Skywarp (The Movie) — 2026 Voyager Class",
+      "aliasesMoved": [
+        "id:lv-hasbro-transformers-studio-series-the-transformers-the-movie-studio-series-86-voyager-class-skyw"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-rotb-bumblebee",
+      "keepId": "tfss-ss100-bumblebee",
+      "dropName": "Bumblebee",
+      "dropSubtitle": "SS-111 ROTB",
+      "keepName": "Bumblebee",
+      "ref": "100 Bumblebee (Rise of the Beasts) — 2023 Deluxe Class",
+      "aliasesMoved": [
+        "id:d14ss-rotb-bumblebee"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-rotb-arcee",
+      "keepId": "ss6-ss-arcee-rotb",
+      "dropName": "Arcee",
+      "dropSubtitle": "SS-112 ROTB",
+      "keepName": "Arcee",
+      "ref": "(unnumbered) Arcee (Rise of the Beasts) — 2023 Core Class",
+      "aliasesMoved": [
+        "id:d14ss-rotb-arcee"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-nightbird-rotb",
+      "keepId": "d14ss-rotb-nightbird",
+      "dropName": "Nightbird",
+      "dropSubtitle": "ROTB Wave6",
+      "keepName": "Nightbird",
+      "ref": "104 Nightbird (Rise of the Beasts) — 2023 Deluxe Class",
+      "aliasesMoved": [
+        "id:ss6-ss-nightbird-rotb"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-86-chromia",
+      "keepId": "d14ss-dotm-chromia",
+      "dropName": "Chromia",
+      "dropSubtitle": "SS-86-09 The Movie",
+      "keepName": "Chromia, Arcee & Elita-1",
+      "ref": "52 Chromia • Arcee • Elita-1 (Revenge of the Fallen) — 2020 Deluxe Class",
+      "aliasesMoved": [
+        "id:d14ss-86-chromia"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": true
+    },
+    {
+      "dropId": "ss4-ss109-battletrap",
+      "keepId": "tfss-ss99-battletrap",
+      "dropName": "Battletrap",
+      "dropSubtitle": "Rise of the Beasts",
+      "keepName": "Battletrap",
+      "ref": "99 Battletrap (Rise of the Beasts) — 2023 Voyager Class",
+      "aliasesMoved": [
+        "F7241AX00",
+        "id:ss4-ss109-battletrap"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-rotb-battletrap",
+      "keepId": "tfss-ss99-battletrap",
+      "dropName": "Battletrap",
+      "dropSubtitle": "SS-108 ROTB",
+      "keepName": "Battletrap",
+      "ref": "99 Battletrap (Rise of the Beasts) — 2023 Voyager Class",
+      "aliasesMoved": [
+        "id:d14ss-rotb-battletrap"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-battletrap",
+      "keepId": "tfss-ss99-battletrap",
+      "dropName": "Battletrap",
+      "dropSubtitle": "ROTB Wave6",
+      "keepName": "Battletrap",
+      "ref": "99 Battletrap (Rise of the Beasts) — 2023 Voyager Class",
+      "aliasesMoved": [
+        "id:ss6-ss-battletrap"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-rhinox-rotb",
+      "keepId": "d14ss-rotb-rhinox",
+      "dropName": "Rhinox",
+      "dropSubtitle": "ROTB Wave6",
+      "keepName": "Rhinox",
+      "ref": "103 Rhinox (Rise of the Beasts) — 2023 Voyager Class",
+      "aliasesMoved": [
+        "id:ss6-ss-rhinox-rotb"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-prowl",
+      "keepId": "hs8-hs-44",
+      "dropName": "Prowl",
+      "dropSubtitle": "SS-86",
+      "keepName": "Prowl",
+      "ref": "(unnumbered) Prowl (The Movie) — 2026 MTMTE Collection Deluxe Class",
+      "aliasesMoved": [
+        "id:ss4-ss86-prowl"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-freeza",
+      "keepId": "tfss-ss-core-freezer",
+      "dropName": "Freezer",
+      "dropSubtitle": "ROTB Wave6",
+      "keepName": "Freezer",
+      "ref": "(unnumbered) Terrorcon Freezer (Rise of the Beasts) — 2023 Core Class",
+      "aliasesMoved": [
+        "id:ss6-ss-freeza"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-rotb-mirage",
+      "keepId": "ss4-ss86-mirage",
+      "dropName": "Mirage",
+      "dropSubtitle": "SS-103 ROTB",
+      "keepName": "Mirage",
+      "ref": "105 Autobot Mirage (Rise of the Beasts) — 2023 Deluxe Class",
+      "aliasesMoved": [
+        "id:d14ss-rotb-mirage"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-mirage-rotb",
+      "keepId": "ss4-ss86-mirage",
+      "dropName": "Mirage",
+      "dropSubtitle": "ROTB Wave6",
+      "keepName": "Mirage",
+      "ref": "105 Autobot Mirage (Rise of the Beasts) — 2023 Deluxe Class",
+      "aliasesMoved": [
+        "id:ss6-ss-mirage-rotb"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-rotb-cheetor",
+      "keepId": "tfss-ss98-cheetor",
+      "dropName": "Cheetor",
+      "dropSubtitle": "SS-106 ROTB",
+      "keepName": "Cheetor",
+      "ref": "98 Cheetor (Rise of the Beasts) — 2023 Voyager Class",
+      "aliasesMoved": [
+        "id:d14ss-rotb-cheetor"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-cheetor-rotb",
+      "keepId": "tfss-ss98-cheetor",
+      "dropName": "Cheetor",
+      "dropSubtitle": "ROTB Wave6",
+      "keepName": "Cheetor",
+      "ref": "98 Cheetor (Rise of the Beasts) — 2023 Voyager Class",
+      "aliasesMoved": [
+        "id:ss6-ss-cheetor-rotb"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-rotb-airazor",
+      "keepId": "tfss-ss97-airazor",
+      "dropName": "Airazor",
+      "dropSubtitle": "SS-105 ROTB",
+      "keepName": "Airazor",
+      "ref": "97 Airazor (Rise of the Beasts) — 2023 Deluxe Class",
+      "aliasesMoved": [
+        "id:d14ss-rotb-airazor"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-airazor-rotb",
+      "keepId": "tfss-ss97-airazor",
+      "dropName": "Airazor",
+      "dropSubtitle": "ROTB Wave6",
+      "keepName": "Airazor",
+      "ref": "97 Airazor (Rise of the Beasts) — 2023 Deluxe Class",
+      "aliasesMoved": [
+        "id:ss6-ss-airazor-rotb"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-sentinel",
+      "keepId": "tfss-ss61-sentinel",
+      "dropName": "Sentinel Prime",
+      "dropSubtitle": "Dark of the Moon",
+      "keepName": "Sentinel Prime",
+      "ref": "61 Sentinel Prime (Dark of the Moon) — 2020 Voyager Class",
+      "aliasesMoved": [
+        "id:ss5-ss-sentinel"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-dotm-sentinel",
+      "keepId": "tfss-ss61-sentinel",
+      "dropName": "Sentinel Prime",
+      "dropSubtitle": "SS-18 DOTM",
+      "keepName": "Sentinel Prime",
+      "ref": "61 Sentinel Prime (Dark of the Moon) — 2020 Voyager Class",
+      "aliasesMoved": [
+        "id:d14ss-dotm-sentinel"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss6-ss-optimus-primal-rotb",
+      "keepId": "d14ss-rotb-primal",
+      "dropName": "Optimus Primal",
+      "dropSubtitle": "ROTB Wave6",
+      "keepName": "Optimus Primal",
+      "ref": "106 Optimus Primal (Rise of the Beasts) — 2023 Leader Class",
+      "aliasesMoved": [
+        "id:ss6-ss-optimus-primal-rotb"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-ironhide",
+      "keepId": "tfss-ss-core-ironhide",
+      "dropName": "Ironhide",
+      "dropSubtitle": "SS-86",
+      "keepName": "Ironhide",
+      "ref": "(unnumbered) Ironhide (The Movie) — 2023 Core Class",
+      "aliasesMoved": [
+        "F3175AS20",
+        "HASG0559",
+        "id:ss4-ss86-ironhide"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-hotrod-tlk",
+      "keepId": "tfss-ss93-hotrod",
+      "dropName": "Hot Rod",
+      "dropSubtitle": "The Last Knight",
+      "keepName": "Hot Rod",
+      "ref": "93 Autobot Hot Rod (The Last Knight) — 2022 Deluxe Class",
+      "aliasesMoved": [
+        "TFSS-D-HOTROD",
+        "TFSS50-WW2HOTROD",
+        "F3169AS20",
+        "N-LF-142225",
+        "id:ss5-ss-hotrod-tlk"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-tlk-cogman",
+      "keepId": "ss5-ss-cogman",
+      "dropName": "Cogman",
+      "dropSubtitle": "SS-47 TLK",
+      "keepName": "Cogman",
+      "ref": "39 Cogman (The Last Knight) — 2019 Deluxe Class",
+      "aliasesMoved": [
+        "id:d14ss-tlk-cogman"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss4-ss86-jazz",
+      "keepId": "tfss-ss86-jazz-alt",
+      "dropName": "Jazz",
+      "dropSubtitle": "SS-86",
+      "keepName": "Jazz",
+      "ref": "86-01 Autobot Jazz (The Movie) — 2021 Deluxe Class",
+      "aliasesMoved": [
+        "id:ss4-ss86-jazz"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-jazz-86",
+      "keepId": "tfss-ss86-jazz-alt",
+      "dropName": "Jazz",
+      "dropSubtitle": "86 Movie",
+      "keepName": "Jazz",
+      "ref": "86-01 Autobot Jazz (The Movie) — 2021 Deluxe Class",
+      "aliasesMoved": [
+        "id:ss5-ss-jazz-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-ironhide-86",
+      "keepId": "tfss-ss86-ironhide-alt",
+      "dropName": "Ironhide",
+      "dropSubtitle": "86 Movie",
+      "keepName": "Ironhide",
+      "ref": "86-17 Ironhide (The Movie) — 2022 Voyager Class",
+      "aliasesMoved": [
+        "F7489",
+        "HAS301161",
+        "HBR-229135-C",
+        "id:ss5-ss-ironhide-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-aoe-crosshairs",
+      "keepId": "tfss-ss92-crosshairs",
+      "dropName": "Crosshairs",
+      "dropSubtitle": "SS-07 AOE",
+      "keepName": "Crosshairs",
+      "ref": "92 Crosshairs (The Last Knight) — 2022 Deluxe Class",
+      "aliasesMoved": [
+        "id:d14ss-aoe-crosshairs"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-galvatron-aoy",
+      "keepId": "tfss-ss90-galvatron",
+      "dropName": "Galvatron",
+      "dropSubtitle": "Age of Extinction",
+      "keepName": "Galvatron",
+      "ref": "90 Galvatron (Age of Extinction) — 2022 Voyager Class",
+      "aliasesMoved": [
+        "HAS181042",
+        "HBR-F3176AX21-C",
+        "F3176AS20",
+        "id:ss5-ss-galvatron-aoy"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-aoe-galvatron",
+      "keepId": "tfss-ss90-galvatron",
+      "dropName": "Galvatron",
+      "dropSubtitle": "SS-04 AOE",
+      "keepName": "Galvatron",
+      "ref": "90 Galvatron (Age of Extinction) — 2022 Voyager Class",
+      "aliasesMoved": [
+        "id:d14ss-aoe-galvatron"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-aoe-lockdown",
+      "keepId": "ss5-ss-lockdown",
+      "dropName": "Lockdown",
+      "dropSubtitle": "SS-11 AOE",
+      "keepName": "Lockdown",
+      "ref": "11 Lockdown (Age of Extinction) — 2018 Deluxe Class",
+      "aliasesMoved": [
+        "E0747AX00",
+        "id:d14ss-aoe-lockdown"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-bb-arcee",
+      "keepId": "tfss-ss85-arcee",
+      "dropName": "Arcee",
+      "dropSubtitle": "SS-42 Bumblebee",
+      "keepName": "Arcee",
+      "ref": "85 Arcee (Bumblebee) — 2022 Deluxe Class",
+      "aliasesMoved": [
+        "id:d14ss-bb-arcee"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-starscream-86",
+      "keepId": "tfss-ss86-coronation-ss",
+      "dropName": "Starscream",
+      "dropSubtitle": "86 Movie",
+      "keepName": "Coronation Starscream",
+      "ref": "86-12 Coronation Starscream (The Movie) — 2022 Leader Class",
+      "aliasesMoved": [
+        "id:ss5-ss-starscream-86"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-bb-soundwave",
+      "keepId": "tfss-ss83-soundwave",
+      "dropName": "Soundwave",
+      "dropSubtitle": "SS-43 Bumblebee",
+      "keepName": "Soundwave",
+      "ref": "83 Soundwave (Bumblebee) — 2022 Voyager Class",
+      "aliasesMoved": [
+        "id:d14ss-bb-soundwave"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-bb-wheeljack",
+      "keepId": "tfss-ss81-wheeljack",
+      "dropName": "Wheeljack",
+      "dropSubtitle": "SS-41 Bumblebee",
+      "keepName": "Wheeljack",
+      "ref": "81 Wheeljack (Bumblebee) — 2022 Deluxe Class",
+      "aliasesMoved": [
+        "G2198",
+        "TFSS-D-BBWHEELJACK",
+        "id:d14ss-bb-wheeljack"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-bb-ratchet",
+      "keepId": "tfss-ss82-ratchet",
+      "dropName": "Ratchet",
+      "dropSubtitle": "SS-40 Bumblebee",
+      "keepName": "Ratchet",
+      "ref": "82 Autobot Ratchet (Bumblebee) — 2022 Deluxe Class",
+      "aliasesMoved": [
+        "HAS206185",
+        "HBR-F71015L00-C",
+        "id:d14ss-bb-ratchet"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-2007-starscream",
+      "keepId": "tfc-starscream-ss03",
+      "dropName": "Starscream",
+      "dropSubtitle": "SS-72 2007 Film",
+      "keepName": "Starscream",
+      "ref": "06 Starscream (Transformers) — 2018 Voyager Class",
+      "aliasesMoved": [
+        "id:d14ss-2007-starscream"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-2007-optimus",
+      "keepId": "tfc-optimus-ss32",
+      "dropName": "Optimus Prime",
+      "dropSubtitle": "SS-71 2007 Film",
+      "keepName": "Optimus Prime",
+      "ref": "32 Optimus Prime (<!--Verbatim on the packaging.-->Transformers) — 2019 Voyager Class",
+      "aliasesMoved": [
+        "id:d14ss-2007-optimus"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-aoe-slug",
+      "keepId": "tfss-ss86-slug-daniel",
+      "dropName": "Slug",
+      "dropSubtitle": "SS-31 AOE",
+      "keepName": "Slug & Daniel",
+      "ref": "86-07 Dinobot Slug & Daniel Witwicky (The Movie) — 2021 Leader Class",
+      "aliasesMoved": [
+        "id:d14ss-aoe-slug"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-dotm-devastator",
+      "keepId": "tfss-ss69-devastator",
+      "dropName": "Devastator",
+      "dropSubtitle": "SS-28 DOTM",
+      "keepName": "Devastator",
+      "ref": "69 Devastator (Revenge of the Fallen) — 2020 Multi-packs",
+      "aliasesMoved": [
+        "id:d14ss-dotm-devastator"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-bb-blitzwing",
+      "keepId": "tfss-ss65-blitzwing",
+      "dropName": "Blitzwing",
+      "dropSubtitle": "SS-51 Bumblebee",
+      "keepName": "Blitzwing",
+      "ref": "65 Blitzwing (Bumblebee) — 2020 Voyager Class",
+      "aliasesMoved": [
+        "id:d14ss-bb-blitzwing"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "ss5-ss-blitzwing",
+      "keepId": "tfss-ss65-blitzwing",
+      "dropName": "Blitzwing",
+      "dropSubtitle": "Bumblebee Movie",
+      "keepName": "Blitzwing",
+      "ref": "65 Blitzwing (Bumblebee) — 2020 Voyager Class",
+      "aliasesMoved": [
+        "E8294AS00",
+        "id:ss5-ss-blitzwing"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-dotm-roadbuster",
+      "keepId": "tfss-ss58-roadbuster",
+      "dropName": "Roadbuster",
+      "dropSubtitle": "SS-20 DOTM",
+      "keepName": "Roadbuster",
+      "ref": "58 Roadbuster (Dark of the Moon) — 2020 Deluxe Class",
+      "aliasesMoved": [
+        "E7200AS00",
+        "id:d14ss-dotm-roadbuster"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "tfc-shockwave-ss10",
+      "keepId": "tfss-ss56-shockwave",
+      "dropName": "Shockwave",
+      "dropSubtitle": "DOTM SS-10",
+      "keepName": "Shockwave",
+      "ref": "56 Shockwave (Dark of the Moon w/ Brains, Wheelie, and Paratrooper) — 2020 Leader Class",
+      "aliasesMoved": [
+        "id:tfc-shockwave-ss10"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-dotm-shockwave",
+      "keepId": "tfss-ss56-shockwave",
+      "dropName": "Shockwave",
+      "dropSubtitle": "SS-10 DOTM",
+      "keepName": "Shockwave",
+      "ref": "56 Shockwave (Dark of the Moon w/ Brains, Wheelie, and Paratrooper) — 2020 Leader Class",
+      "aliasesMoved": [
+        "id:d14ss-dotm-shockwave"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-dotm-scavenger",
+      "keepId": "tfss-ss55-scavenger",
+      "dropName": "Scavenger",
+      "dropSubtitle": "SS-27 DOTM",
+      "keepName": "Scavenger",
+      "ref": "55 Constructicon Scavenger (Revenge of the Fallen) — 2020 Leader Class",
+      "aliasesMoved": [
+        "HSG0570",
+        "id:d14ss-dotm-scavenger"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-dotm-mixmaster",
+      "keepId": "tfss-ss53-mixmaster",
+      "dropName": "Mixmaster",
+      "dropSubtitle": "SS-26 DOTM",
+      "keepName": "Mixmaster",
+      "ref": "53 Constructicon Mixmaster (Revenge of the Fallen) — 2020 Voyager Class",
+      "aliasesMoved": [
+        "id:d14ss-dotm-mixmaster"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-bb-shatter",
+      "keepId": "ss5-ss-shatter",
+      "dropName": "Shatter",
+      "dropSubtitle": "SS-39 Bumblebee",
+      "keepName": "Shatter",
+      "ref": "40 Shatter (Bumblebee Plymouth) — 2019 Deluxe Class",
+      "aliasesMoved": [
+        "id:d14ss-bb-shatter"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-bb-dropkick",
+      "keepId": "ss5-ss-dropkick",
+      "dropName": "Dropkick",
+      "dropSubtitle": "SS-38 Bumblebee",
+      "keepName": "Dropkick",
+      "ref": "22 Dropkick (Bumblebee SuperCobra) — 2018 Deluxe Class",
+      "aliasesMoved": [
+        "HAS788781",
+        "id:d14ss-bb-dropkick"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-tlk-barricade",
+      "keepId": "afmon-hasbro-barricade-hsg1928",
+      "dropName": "Barricade",
+      "dropSubtitle": "SS-36 TLK",
+      "keepName": "Barricade",
+      "ref": "(unnumbered) Barricade (The Last Knight) — 2026 Deluxe Class",
+      "aliasesMoved": [
+        "HASG1928",
+        "TFSS-D-TLK-BARRICADE",
+        "TFSS-28BARRICADE-15THLOOSE",
+        "TFSS-28BARRICADE",
+        "E3700AS00",
+        "id:d14ss-tlk-barricade"
+      ],
+      "aliasesLeftAlone": [
+        {
+          "code": "HSG1928",
+          "pointsAt": "afmon-hasbro-barricade-hsg1928"
+        }
+      ],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-aoe-grimlock",
+      "keepId": "tfc-grimlock-ss09",
+      "dropName": "Grimlock",
+      "dropSubtitle": "SS-09 AOE",
+      "keepName": "Grimlock",
+      "ref": "07 Grimlock (Age of Extinction) — 2018 Leader Class",
+      "aliasesMoved": [
+        "G1888",
+        "id:d14ss-aoe-grimlock"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-dotm-soundwave",
+      "keepId": "tfc-soundwave-ss12",
+      "dropName": "Soundwave",
+      "dropSubtitle": "SS-12 DOTM",
+      "keepName": "Soundwave",
+      "ref": "51 Soundwave (Dark of the Moon w/ Laserbeak) — 2020 Deluxe Class",
+      "aliasesMoved": [
+        "id:d14ss-dotm-soundwave"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "afmon-hasbro-transformers-optimus-prime-awakening-studio-series-deluxe-class-bumblebee-bbts-197679",
+      "keepId": "afmon-hasbro-transformers-studio-series-transformers-optimus-prime-awakening-bumblebee-hsg5856",
+      "dropName": "Transformers Optimus Prime: Awakening Studio Series Deluxe Class Bumblebee Action Figure",
+      "dropSubtitle": "Transformers Optimus Prime: Awakening...",
+      "keepName": "Bumblebee",
+      "ref": "(unnumbered) Bumblebee (Optimus Prime: Awakening) — 2027 Deluxe Class",
+      "aliasesMoved": [
+        "id:afmon-hasbro-transformers-optimus-prime-awakening-studio-series-deluxe-class-bumblebee-bbts-197679"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-86-elita",
+      "keepId": "tfss-ss-one-elita",
+      "dropName": "Elita-1",
+      "dropSubtitle": "SS-86-10 The Movie",
+      "keepName": "Elita-1",
+      "ref": "(invented claim; code corroborates keeper)",
+      "aliasesMoved": [
+        "id:d14ss-86-elita"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    },
+    {
+      "dropId": "d14ss-dotm-starscream",
+      "keepId": "tfss-ss-one-starscream",
+      "dropName": "Starscream",
+      "dropSubtitle": "SS-03 DOTM",
+      "keepName": "Starscream",
+      "ref": "(invented claim; code corroborates keeper)",
+      "aliasesMoved": [
+        "id:d14ss-dotm-starscream"
+      ],
+      "aliasesLeftAlone": [],
+      "imageFilled": false
+    }
+  ]
+}

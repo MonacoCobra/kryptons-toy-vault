@@ -3806,9 +3806,6 @@
     "mcf6-mcf-batman-plat": [
       "MCF17641"
     ],
-    "ss4-ss86-bumblebee": [
-      "HAS348623"
-    ],
     "mcfdc-riddler-the-batman": [
       "156683"
     ],
@@ -4508,22 +4505,9 @@
       "E4710AS00",
       "HAS786640"
     ],
-    "d14ss-dotm-scavenger": [
-      "HSG0570"
-    ],
-    "d14ss-bb-wheeljack": [
-      "G2198",
-      "TFSS-D-BBWHEELJACK"
-    ],
     "d14ss-dotm-hightower": [
       "HAS788798",
       "TFSS-47HIGHTOWER"
-    ],
-    "d14ss-bb-dropkick": [
-      "HAS788781"
-    ],
-    "d14ss-aoe-grimlock": [
-      "G1888"
     ],
     "sf-neca-store-aliens-40th-anniversary-alien-queen-ultra-deluxe-boxed-figure": [
       "NE51800-01"
@@ -5182,10 +5166,6 @@
       "BAN616982",
       "N-LF-135144",
       "N-LF-142387"
-    ],
-    "d14ss-bb-ratchet": [
-      "HAS206185",
-      "HBR-F71015L00-C"
     ],
     "tfmp-mp38p": [
       "TAK154266",
@@ -6069,10 +6049,6 @@
       "HAS244468",
       "HAS839285"
     ],
-    "ss5-ss-apelinq": [
-      "HBR-G0480-C",
-      "G0480"
-    ],
     "bsc-jannah": [
       "E6055",
       "SWRAND010"
@@ -6366,9 +6342,6 @@
       "C3292",
       "HAS588558",
       "B3841AS00"
-    ],
-    "ss6-ss-alpha-trion": [
-      "HAS348661"
     ],
     "bs6-bs-cassian-rogue": [
       "G1553"
@@ -6752,7 +6725,9 @@
       "DNADK83",
       "HSG1932",
       "HASG1932",
-      "TFSS-TF1-V-ALPHATRION"
+      "TFSS-TF1-V-ALPHATRION",
+      "HAS348661",
+      "id:ss6-ss-alpha-trion"
     ],
     "d14ml-ml-gamerverse-miles": [
       "G0839",
@@ -7375,7 +7350,8 @@
     "tfss-ss-one-airachnid": [
       "G1929",
       "HSG1929",
-      "TFSS-TF1-D-AIRACHNID"
+      "TFSS-TF1-D-AIRACHNID",
+      "id:ss6-ss-airachnid"
     ],
     "d14ml-ml-gamerverse-venom": [
       "G0597",
@@ -7729,7 +7705,9 @@
       "F8765AX00",
       "F3201AS00",
       "F0790AS00",
-      "E0774AX00"
+      "E0774AX00",
+      "id:ss6-ss-starscream-tfone",
+      "id:d14ss-dotm-starscream"
     ],
     "hs8-hs-04": [
       "HBR-F26485L04VEN-C",
@@ -8241,7 +8219,10 @@
       "TFSS-38OPTIMUS",
       "TFSS-05OP",
       "E0738AX00",
-      "E3747AS00"
+      "E3747AS00",
+      "DK-15",
+      "DK62",
+      "id:ss6-ss-optimus-tfone"
     ],
     "hs8-hs-16": [
       "F47695X00",
@@ -9454,7 +9435,8 @@
       "G2200",
       "F35175L00",
       "F3173AS00",
-      "E7197AS00"
+      "E7197AS00",
+      "id:afmon-hasbro-soundwave-hsg2200"
     ],
     "bs5-bs-grogu": [
       "HAS417329",
@@ -9613,7 +9595,9 @@
       "TFSS-BUZZWORTHY-BBVSDROPKICK",
       "TFSS-46DROPKICK",
       "TFSS-22DROPKICK",
-      "E0958AS00"
+      "E0958AS00",
+      "HAS788781",
+      "id:d14ss-bb-dropkick"
     ],
     "cls5-cls-zartan": [
       "HAS789801",
@@ -9629,13 +9613,6 @@
       "GIJOE-RETRO-LADYJAYE",
       "F47655X00",
       "F09655L00"
-    ],
-    "hs8-hs-43": [
-      "HAS978335",
-      "HSF0709",
-      "TFSS-86JAZZ",
-      "F0709AS00",
-      "TFSS-10JAZZ-15THLOOSE"
     ],
     "tfmp-mp51": [
       "TAK133445",
@@ -9701,10 +9678,6 @@
     "joec-classified-torpedo": [
       "GITORP",
       "F74675X00"
-    ],
-    "ss4-ss86-snarl": [
-      "G2188",
-      "HASG2188"
     ],
     "mlc-medusa": [
       "G1870",
@@ -9869,12 +9842,6 @@
       "HSG1888",
       "HASG1888"
     ],
-    "ss4-ss86-blaster": [
-      "HSF9654",
-      "F96545L00",
-      "BEASTAWAKENING-JP-BURNINGPLASMA",
-      "F9654"
-    ],
     "ss4-ss86-wheeljack": [
       "HSG2198",
       "HAS181585",
@@ -9891,7 +9858,9 @@
     "tfss-ss-one-elita": [
       "HSG1851",
       "HASG1851",
-      "TFSS-TF1-D-ELITA1"
+      "TFSS-TF1-D-ELITA1",
+      "id:ss6-ss-elita-tfone",
+      "id:d14ss-86-elita"
     ],
     "tfss-ss-core-rumble": [
       "F87495",
@@ -9905,11 +9874,6 @@
       "HAS243621",
       "F8752",
       "F87525X00"
-    ],
-    "hs8-hs-23": [
-      "HSG0220",
-      "HSE0701YBB",
-      "G0220"
     ],
     "tfmp-mp60": [
       "MP60",
@@ -10006,9 +9970,6 @@
       "id:joec-tiger-force-lifeline",
       "id:afmon-hasbro-g-i-joe-classified-series-186-edwin-lifeline-steen-6-inch-ac-hsg2272"
     ],
-    "ss5-ss-shockwave-dotm": [
-      "HASG0483"
-    ],
     "bsc-k2-andor": [
       "HASG0020",
       "HSG0020"
@@ -10025,7 +9986,9 @@
       "HASG1790",
       "PF-SS-03-MEGATRONJP",
       "PF-SS-03-MEGATRON",
-      "E0775AX00"
+      "E0775AX00",
+      "F7244AX00",
+      "id:ss6-ss-megatron-tfone"
     ],
     "ss4-ss86-ratchet": [
       "TFSS-86BRAWNRATCHET",
@@ -10038,7 +10001,35 @@
       "E0977AS00"
     ],
     "tfss-ss86-bb-29": [
-      "TFSS-D-86BUMBLEBEE"
+      "TFSS-D-86BUMBLEBEE",
+      "id:d14ss-86-bumblebee",
+      "HAS348623",
+      "id:ss4-ss86-bumblebee",
+      "HSG0220",
+      "HSE0701YBB",
+      "G0220",
+      "id:hs8-hs-23",
+      "TFSS-BUZZWORTHY-86IRONHIDE",
+      "HAS774227",
+      "N-LF-151572",
+      "F7235",
+      "DK53",
+      "G2199IS",
+      "HASF8753",
+      "HASF8749",
+      "TFSSEX-C-CLEARBB",
+      "TFSS-C-DOTMBB-JAPAN",
+      "TFSS-L-BUZZWORTHYGRIMLOCK",
+      "TFSS-D-WFC-BUMBLEBEE-JAPAN",
+      "TFSS-C-BUMBLEBEE",
+      "TFSS-D-BUMBLEBEEROTB-JAPAN",
+      "TFSS-D-BUMBLEBEEDOTM-JAPAN",
+      "TFSS-NESTBONECRUSHER",
+      "TFSSEX-RUSTYVWBB",
+      "TFSS-26WWIIBB",
+      "TFSS-19BBGIFTSET",
+      "E3698AS00",
+      "id:hs10-hs-25"
     ],
     "d14ss-86-gnaw": [
       "TFSS-86GNAW-SMALLBOX",
@@ -10055,7 +10046,8 @@
     "hs8-hs-44": [
       "TFSS-BUZZWORTHY-86PROWL",
       "TFSS-BUZZWORTHY-86PROWLIRONHIDE",
-      "F71295L00"
+      "F71295L00",
+      "id:ss4-ss86-prowl"
     ],
     "ss4-ss86-cliffjumper": [
       "TFSS-86CLIFFJUMPER-BUZZWORTHY",
@@ -10085,14 +10077,14 @@
     "ss5-ss-shatter": [
       "TFSS-BUZZWORTHY-40SHATTERCAR",
       "TFSS-40SHATTER",
-      "E3831AS00"
+      "E3831AS00",
+      "id:d14ss-bb-shatter"
     ],
     "tfss-ss86-blurr-alt": [
-      "TFSS-86BLURR"
-    ],
-    "ss4-ss86-kup": [
-      "TFSS-86KUP",
-      "F44815L00"
+      "TFSS-86BLURR",
+      "id:d14ss-86-blurr",
+      "F0711AS00",
+      "id:ss6-ss-blurr-86"
     ],
     "bsc-snowtrooper": [
       "SW-40TH-IMPERIALSNOWTROOPER",
@@ -10135,7 +10127,8 @@
     ],
     "ss5-ss-cogman": [
       "TFSS-39COGMAN",
-      "E4700AS00"
+      "E4700AS00",
+      "id:d14ss-tlk-cogman"
     ],
     "tfmp-mp05g": [
       "MP05G-MEGATRONGOLD"
@@ -10160,10 +10153,8 @@
       "HSG1931",
       "G0534",
       "HASG1931",
-      "HSG0534"
-    ],
-    "ss4-ss86-shockwave": [
-      "HSG2191"
+      "HSG0534",
+      "id:lv-hasbro-transformers-studio-series-the-transformers-the-movie-studio-series-86-voyager-class-skyw"
     ],
     "ml2-beast-aes": [
       "HSG0813"
@@ -10282,13 +10273,13 @@
       "F74065L00"
     ],
     "tfss-ss-core-ironhide": [
-      "F74895X00"
+      "F74895X00",
+      "F3175AS20",
+      "HASG0559",
+      "id:ss4-ss86-ironhide"
     ],
     "mlc-cyclops-astounding": [
       "F65595L00"
-    ],
-    "ss4-ss109-battletrap": [
-      "F7241AX00"
     ],
     "tfss-ss-core-laserbeak": [
       "F31445L00",
@@ -10308,16 +10299,8 @@
       "HAS112141",
       "HBR-F31355L02R-C"
     ],
-    "ss4-ss86-ironhide": [
-      "F3175AS20",
-      "HASG0559"
-    ],
     "cls5-cls-zarana": [
       "F40265X00"
-    ],
-    "ss4-ss86-sludge": [
-      "F3203AX00",
-      "HASF7247"
     ],
     "tfss-ss-core-shockwave": [
       "F31395L00",
@@ -10350,12 +10333,6 @@
     ],
     "d14ml-spidey-bg": [
       "F30195L00"
-    ],
-    "d14ss-86-scourge": [
-      "F0713AS00"
-    ],
-    "ss5-ss-blitzwing": [
-      "E8294AS00"
     ],
     "ml5-ml-vulture": [
       "E81245L00"
@@ -10527,9 +10504,6 @@
       "TFSS-29SIDESWIPE",
       "F0789AS00",
       "E3726AS00"
-    ],
-    "ss4-ss86-grimlock": [
-      "F71185L00"
     ],
     "lc6-lc-red-is": [
       "F51845L00",
@@ -11203,7 +11177,8 @@
       "HSG0560",
       "HASG0560",
       "TFSS-TF1-V-SENTINELPRIME",
-      "E7312AS00"
+      "E7312AS00",
+      "id:ss6-ss-sentinel-tfone"
     ],
     "d14ml-killmonger": [
       "HAS786893",
@@ -11553,7 +11528,8 @@
     "hs8-hs-26": [
       "HSF0712",
       "F0712AS00",
-      "HAS181653"
+      "HAS181653",
+      "id:d14ss-86-hotrod"
     ],
     "d14bs-fox": [
       "HBR-E61245L00-C",
@@ -11628,13 +11604,12 @@
     ],
     "tfss-ss86-blaster": [
       "TFSS-V-TFTM-BLASTER",
-      "HASF9654"
-    ],
-    "ss4-ss86-ultra-magnus": [
-      "STUDIOSERIES-86ULTRAMAGNUS",
-      "F61625L00",
-      "N-LF-147538",
-      "STUDIOSERIES-86ULTRAMAGNUS-JP"
+      "HASF9654",
+      "HSF9654",
+      "F96545L00",
+      "BEASTAWAKENING-JP-BURNINGPLASMA",
+      "F9654",
+      "id:ss4-ss86-blaster"
     ],
     "tfss-ss-core-spike": [
       "TFSS-C-SPIKEWITWICKY-JAPAN",
@@ -11643,18 +11618,6 @@
       "F3142",
       "TFSS-C-NOAH",
       "F74915X00"
-    ],
-    "ss5-ss-hotrod-tlk": [
-      "TFSS-D-HOTROD",
-      "TFSS50-WW2HOTROD",
-      "F3169AS20",
-      "N-LF-142225"
-    ],
-    "ss4-ss86-hotrod": [
-      "TFSS-86HOTRODVARIANT",
-      "TFSS-86HOTROD",
-      "HASG2254",
-      "TFSS-MTMTE-V-HOTROD"
     ],
     "tfss-ss86-wreckgar": [
       "TFSS-86WRECKGARBUBBLE",
@@ -11666,12 +11629,14 @@
     "tfss-ss86-coronation-ss": [
       "TFSS-86STARSCREAM",
       "TFSS-86STARSCREAM-JP",
-      "HSF3201"
+      "HSF3201",
+      "id:ss5-ss-starscream-86"
     ],
     "tfss-ss86-slug-daniel": [
       "TFSS-86SLAGDANIEL",
       "F0715AX00",
-      "HAS989652"
+      "HAS989652",
+      "id:d14ss-aoe-slug"
     ],
     "bsc-obiwan-anh": [
       "SW-50THBENKENOBI",
@@ -12370,13 +12335,12 @@
       "E96595L00"
     ],
     "tfss-ss86-jazz-alt": [
-      "TFSS-10JAZZ"
+      "TFSS-10JAZZ",
+      "id:ss4-ss86-jazz",
+      "id:ss5-ss-jazz-86"
     ],
     "d14ss-86-ratchet": [
       "F98785L00"
-    ],
-    "d14ss-86-arcee": [
-      "F72285X00"
     ],
     "ky6-ay-monster-girl": [
       "KAI110480",
@@ -12849,17 +12813,16 @@
       "FHTD-SKEFIGHT",
       "FHTD-GOSKELET2"
     ],
-    "hs8-hs-22": [
+    "tfss-ss-86-megatron-2025": [
+      "HAS791279",
+      "F8772",
       "HAS900640",
       "HAS223520",
       "TFGMEG1",
       "HSE0702M",
       "G1790",
-      "E6254AS00"
-    ],
-    "tfss-ss-86-megatron-2025": [
-      "HAS791279",
-      "F8772"
+      "E6254AS00",
+      "id:hs8-hs-22"
     ],
     "ml2-ironman-model70": [
       "HAS142528",
@@ -12895,9 +12858,6 @@
     ],
     "mlc-blade-2099": [
       "F66275X00"
-    ],
-    "ss6-ss-megatron-tfone": [
-      "F7244AX00"
     ],
     "pr2-turbo-red": [
       "F8211AS00"
@@ -12984,9 +12944,6 @@
     "sf-neca-store-christmas-story-8-clothed-figure-old-man": [
       "NEC-40004-C"
     ],
-    "ss5-ss-shockwave-86": [
-      "HAS6348647PRE"
-    ],
     "ss5-ss-ratchet-86": [
       "HAS223544",
       "TFRATC1",
@@ -12995,12 +12952,6 @@
       "F9878",
       "F7243AX00",
       "HAS629022"
-    ],
-    "ss5-ss-arcee-86": [
-      "HAS181639",
-      "HSF4480",
-      "F4480AS00",
-      "F7228"
     ],
     "mlc-blackcat": [
       "F0864",
@@ -13119,26 +13070,8 @@
       "E9362",
       "E93625X00"
     ],
-    "ss5-ss-galvatron-86": [
-      "HSG0481",
-      "HBR-G0481-C"
-    ],
-    "ss5-ss-scourge-86": [
-      "HSF0713",
-      "HAS376008",
-      "TFS-SCU1",
-      "F7246AX00"
-    ],
     "d14ml-ml-classic-enchantress": [
       "G0823"
-    ],
-    "ss5-ss-ironhide-86": [
-      "F7489",
-      "HAS301161",
-      "HBR-229135-C"
-    ],
-    "ss5-ss-springer-86": [
-      "F8774AZ00"
     ],
     "ml6-ml-vision-white": [
       "F90145X00",
@@ -13166,9 +13099,6 @@
       "HAS789771",
       "HBR-99547-C",
       "G0621"
-    ],
-    "ss5-ss-kup-86": [
-      "F0710AS00"
     ],
     "o12t-278-king-conan-one-12-collective": [
       "MEZ764314"
@@ -13207,7 +13137,8 @@
       "E5929AS00"
     ],
     "tfss-ss-core-freezer": [
-      "F74885X00"
+      "F74885X00",
+      "id:ss6-ss-freeza"
     ],
     "bs3-bs-finn": [
       "C1416AX00"
@@ -13284,11 +13215,14 @@
     ],
     "tfss-ss97-airazor": [
       "TFSS-D-ROTB-AIRAZOR",
-      "F7232AX00"
+      "F7232AX00",
+      "id:d14ss-rotb-airazor",
+      "id:ss6-ss-airazor-rotb"
     ],
     "tfss-ss92-crosshairs": [
       "TFSS-D-CROSSHAIRS",
-      "F3165AS20"
+      "F3165AS20",
+      "id:d14ss-aoe-crosshairs"
     ],
     "tfss-ss88-sideways": [
       "TFSS-D-SIDEWAYS",
@@ -13336,13 +13270,12 @@
       "E8654AS00"
     ],
     "tfss-ss98-cheetor": [
-      "F7240AX00"
+      "F7240AX00",
+      "id:d14ss-rotb-cheetor",
+      "id:ss6-ss-cheetor-rotb"
     ],
     "ml6-ml-hydra-trooper": [
       "E96965L00"
-    ],
-    "d14ss-dotm-roadbuster": [
-      "E7200AS00"
     ],
     "pm9-pm-44": [
       "PLA39870",
@@ -13543,11 +13476,6 @@
       "E1389AS00",
       "E1390AS00"
     ],
-    "ss5-ss-galvatron-aoy": [
-      "HAS181042",
-      "HBR-F3176AX21-C",
-      "F3176AS20"
-    ],
     "cls4-retro-ladyjaye": [
       "HAS797363SW",
       "F10045X00"
@@ -13587,9 +13515,6 @@
     ],
     "ml2-ironman-modular": [
       "F03555L00"
-    ],
-    "d14ss-aoe-lockdown": [
-      "E0747AX00"
     ],
     "pm-tmnt-tales-don": [
       "SUP81182",
@@ -13923,13 +13848,10 @@
     "bn-zeta": [
       "BAS73687"
     ],
-    "ss6-ss-optimus-tfone": [
-      "DK-15",
-      "DK62"
-    ],
     "ss6-ss-optimus-bb": [
       "F7121",
-      "E4629"
+      "E4629",
+      "id:d14ss-bb-optimus"
     ],
     "cls6-cls-spirit-ironknife": [
       "GIJOE-CLASSIFIED-SPIRITIRONKNIFE"
@@ -14013,29 +13935,16 @@
       "BTN64950-8"
     ],
     "tfss-ss-dotm-shockwave-leader": [
-      "HAS899395"
-    ],
-    "ss6-ss-sludge-86": [
-      "HAS169866"
-    ],
-    "ss6-ss-snarl-86": [
-      "TFSSNAR1",
-      "F7247AX00"
-    ],
-    "ss5-ss-ultrmagnus-86": [
-      "F6162RR"
+      "HAS899395",
+      "HASG0483",
+      "id:ss5-ss-shockwave-dotm"
     ],
     "tfss-ss65-blitzwing": [
       "HASG2187",
-      "G2187"
-    ],
-    "d14ss-tlk-barricade": [
-      "HASG1928",
-      "TFSS-D-TLK-BARRICADE",
-      "TFSS-28BARRICADE-15THLOOSE",
-      "TFSS-28BARRICADE",
-      "HSG1928",
-      "E3700AS00"
+      "G2187",
+      "id:d14ss-bb-blitzwing",
+      "E8294AS00",
+      "id:ss5-ss-blitzwing"
     ],
     "tfss-ss91-fallen": [
       "SS-ROTF15TH-AUTOBOT5PACK",
@@ -14054,7 +13963,8 @@
     "d14ss-rotb-nightbird": [
       "TFSS-D-ROTB-NIGHTBIRD",
       "HSF7239",
-      "F7239AX00"
+      "F7239AX00",
+      "id:ss6-ss-nightbird-rotb"
     ],
     "d14ss-dotm-crowbar": [
       "TFSS-03CROWBAR",
@@ -14066,15 +13976,10 @@
     "d14ss-dotm-leadfoot": [
       "TFSS-LEADFOOT"
     ],
-    "ss6-ss-swoop-86": [
-      "F8773AZ01"
-    ],
     "d14ss-rotb-rhinox": [
       "F7245AX00",
-      "HSF7245"
-    ],
-    "ss6-ss-blurr-86": [
-      "F0711AS00"
+      "HSF7245",
+      "id:ss6-ss-rhinox-rotb"
     ],
     "tfss-ss66-overload": [
       "E7217AS00"
@@ -14617,7 +14522,8 @@
       "HAS267395"
     ],
     "tfss-ss53-mixmaster": [
-      "HAS900596"
+      "HAS900596",
+      "id:d14ss-dotm-mixmaster"
     ],
     "d14joe-destro-v2": [
       "HPE4200000"
@@ -14717,7 +14623,10 @@
     ],
     "tfss-ss82-ratchet": [
       "HAS158532",
-      "HSF3163"
+      "HSF3163",
+      "HAS206185",
+      "HBR-F71015L00-C",
+      "id:d14ss-bb-ratchet"
     ],
     "d14ss-rotb-primal": [
       "N-LF-147539",
@@ -14725,7 +14634,8 @@
       "TFSS-L-ROTB-OPTIMUSPRIMAL-JP",
       "TFSS-L-ROTB-OPTIMUSPRIMAL",
       "HSF7248",
-      "HSF7897"
+      "HSF7897",
+      "id:ss6-ss-optimus-primal-rotb"
     ],
     "ml4-omega-red": [
       "F0340",
@@ -14741,7 +14651,10 @@
       "E6344AS00"
     ],
     "tfss-ss81-wheeljack": [
-      "F3167"
+      "F3167",
+      "G2198",
+      "TFSS-D-BBWHEELJACK",
+      "id:d14ss-bb-wheeljack"
     ],
     "ml6-ml-groot-vol3": [
       "HBR-F64825L00-C",
@@ -14867,7 +14780,10 @@
       "DK-24",
       "TFSS-86GRIMLOCKWHEELIE",
       "HASG0485",
-      "TFSS-86GRIMLOCKWHEELIE-REISSUE"
+      "TFSS-86GRIMLOCKWHEELIE-REISSUE",
+      "F71185L00",
+      "id:ss4-ss86-grimlock",
+      "id:ss5-ss-grimlock-86"
     ],
     "mlc-bishop-classic": [
       "F38565L00"
@@ -15072,28 +14988,6 @@
       "TFSS-21STARSCREAM",
       "TFSS-06STARSCREAM",
       "G13715L00"
-    ],
-    "hs10-hs-25": [
-      "TFSS-BUZZWORTHY-86IRONHIDE",
-      "HAS774227",
-      "N-LF-151572",
-      "F7235",
-      "DK53",
-      "G2199IS",
-      "HASF8753",
-      "HASF8749",
-      "TFSSEX-C-CLEARBB",
-      "TFSS-C-DOTMBB-JAPAN",
-      "TFSS-L-BUZZWORTHYGRIMLOCK",
-      "TFSS-D-WFC-BUMBLEBEE-JAPAN",
-      "TFSS-C-BUMBLEBEE",
-      "TFSS-D-BUMBLEBEEROTB-JAPAN",
-      "TFSS-D-BUMBLEBEEDOTM-JAPAN",
-      "TFSS-NESTBONECRUSHER",
-      "TFSSEX-RUSTYVWBB",
-      "TFSS-26WWIIBB",
-      "TFSS-19BBGIFTSET",
-      "E3698AS00"
     ],
     "joe2-python-viper": [
       "GIJOE-CLASSIFIED-VIPER"
@@ -15375,7 +15269,10 @@
       "G1831"
     ],
     "tfss-ss116-apelinq": [
-      "HAS278308"
+      "HAS278308",
+      "HBR-G0480-C",
+      "G0480",
+      "id:ss5-ss-apelinq"
     ],
     "cls5-cls-firefly-v2": [
       "THZ800953"
@@ -15447,7 +15344,9 @@
       "F90325X00"
     ],
     "ss4-ss86-mirage": [
-      "F7231AX00"
+      "F7231AX00",
+      "id:d14ss-rotb-mirage",
+      "id:ss6-ss-mirage-rotb"
     ],
     "ml2-domino-aes": [
       "E1567AS00",
@@ -32644,7 +32543,13 @@
       "HSG1927"
     ],
     "afmon-hasbro-barricade-hsg1928": [
-      "HSG1928"
+      "HSG1928",
+      "HASG1928",
+      "TFSS-D-TLK-BARRICADE",
+      "TFSS-28BARRICADE-15THLOOSE",
+      "TFSS-28BARRICADE",
+      "E3700AS00",
+      "id:d14ss-tlk-barricade"
     ],
     "afmon-hasbro-nexus-prime-hsg2001": [
       "HSG2001"
@@ -32659,10 +32564,11 @@
       "HSG2084"
     ],
     "afmon-hasbro-shockwave-hsg2191": [
-      "HSG2191"
-    ],
-    "afmon-hasbro-soundwave-hsg2200": [
-      "HSG2200"
+      "HSG2191",
+      "id:d14ss-86-shockwave",
+      "id:ss4-ss86-shockwave",
+      "HAS6348647PRE",
+      "id:ss5-ss-shockwave-86"
     ],
     "afmon-hasbro-dallas-cowboys-starblitz-hsg2333": [
       "HSG2333"
@@ -43667,6 +43573,186 @@
     "tz3-dlx-bumblebee-rotb": [
       "SHOWZ5226",
       "id:threezero-dlx-transformers-rise-of-the-beasts-bumble"
+    ],
+    "tfss-ss-86-jazz-2025": [
+      "HAS978335",
+      "HSF0709",
+      "TFSS-86JAZZ",
+      "F0709AS00",
+      "TFSS-10JAZZ-15THLOOSE",
+      "id:hs8-hs-43"
+    ],
+    "tfss-ss86-galvatron-31": [
+      "id:d14ss-86-galvatron",
+      "id:ss4-ss86-galvatron",
+      "HSG0481",
+      "HBR-G0481-C",
+      "id:ss5-ss-galvatron-86"
+    ],
+    "ss4-ss86-cyclonus": [
+      "id:d14ss-86-cyclonus",
+      "id:ss5-ss-cyclonus-86"
+    ],
+    "tfss-ss86-springer-30": [
+      "id:ss4-ss86-springer",
+      "id:d14ss-86-springer",
+      "F8774AZ00",
+      "id:ss5-ss-springer-86"
+    ],
+    "tfss-ss86-scourge-alt": [
+      "F0713AS00",
+      "id:d14ss-86-scourge",
+      "HSF0713",
+      "HAS376008",
+      "TFS-SCU1",
+      "F7246AX00",
+      "id:ss5-ss-scourge-86"
+    ],
+    "ss4-ss86-soundwave": [
+      "id:d14ss-86-soundwave",
+      "id:hs8-hs-45",
+      "id:ss5-ss-soundwave-86"
+    ],
+    "tfss-ss86-swoop": [
+      "F8773AZ01",
+      "id:ss6-ss-swoop-86",
+      "id:ss4-ss86-swoop"
+    ],
+    "tfss-ss86-ultramagnus-cmd": [
+      "STUDIOSERIES-86ULTRAMAGNUS",
+      "F61625L00",
+      "N-LF-147538",
+      "STUDIOSERIES-86ULTRAMAGNUS-JP",
+      "id:ss4-ss86-ultra-magnus",
+      "id:d14ss-86-ultras",
+      "F6162RR",
+      "id:ss5-ss-ultrmagnus-86"
+    ],
+    "tfss-ss86-perceptor-alt": [
+      "id:d14ss-86-perceptor"
+    ],
+    "tfss-ss86-arcee-alt": [
+      "id:ss4-ss86-arcee",
+      "F72285X00",
+      "id:d14ss-86-arcee",
+      "HAS181639",
+      "HSF4480",
+      "F4480AS00",
+      "F7228",
+      "id:ss5-ss-arcee-86"
+    ],
+    "tfss-ss86-snarl-alt": [
+      "TFSSNAR1",
+      "F7247AX00",
+      "id:ss6-ss-snarl-86",
+      "G2188",
+      "HASG2188",
+      "id:ss4-ss86-snarl"
+    ],
+    "tfss-ss86-sludge": [
+      "HAS169866",
+      "id:ss6-ss-sludge-86",
+      "F3203AX00",
+      "HASF7247",
+      "id:ss4-ss86-sludge"
+    ],
+    "tfss-ss86-kup-alt": [
+      "TFSS-86KUP",
+      "F44815L00",
+      "id:ss4-ss86-kup",
+      "F0710AS00",
+      "id:ss5-ss-kup-86"
+    ],
+    "tfss-ss86-hotrod-alt": [
+      "TFSS-86HOTRODVARIANT",
+      "TFSS-86HOTROD",
+      "HASG2254",
+      "TFSS-MTMTE-V-HOTROD",
+      "id:ss4-ss86-hotrod",
+      "id:ss5-ss-hotrod-86"
+    ],
+    "d14ss-rotb-wheeljack": [
+      "id:ss6-ss-wheeljack-rotb"
+    ],
+    "tfss-ss100-bumblebee": [
+      "id:d14ss-rotb-bumblebee"
+    ],
+    "ss6-ss-arcee-rotb": [
+      "id:d14ss-rotb-arcee"
+    ],
+    "d14ss-dotm-chromia": [
+      "id:d14ss-86-chromia"
+    ],
+    "tfss-ss99-battletrap": [
+      "F7241AX00",
+      "id:ss4-ss109-battletrap",
+      "id:d14ss-rotb-battletrap",
+      "id:ss6-ss-battletrap"
+    ],
+    "tfss-ss61-sentinel": [
+      "id:ss5-ss-sentinel",
+      "id:d14ss-dotm-sentinel"
+    ],
+    "tfss-ss93-hotrod": [
+      "TFSS-D-HOTROD",
+      "TFSS50-WW2HOTROD",
+      "F3169AS20",
+      "N-LF-142225",
+      "id:ss5-ss-hotrod-tlk"
+    ],
+    "tfss-ss86-ironhide-alt": [
+      "F7489",
+      "HAS301161",
+      "HBR-229135-C",
+      "id:ss5-ss-ironhide-86"
+    ],
+    "tfss-ss90-galvatron": [
+      "HAS181042",
+      "HBR-F3176AX21-C",
+      "F3176AS20",
+      "id:ss5-ss-galvatron-aoy",
+      "id:d14ss-aoe-galvatron"
+    ],
+    "ss5-ss-lockdown": [
+      "E0747AX00",
+      "id:d14ss-aoe-lockdown"
+    ],
+    "tfss-ss85-arcee": [
+      "id:d14ss-bb-arcee"
+    ],
+    "tfss-ss83-soundwave": [
+      "id:d14ss-bb-soundwave"
+    ],
+    "tfc-starscream-ss03": [
+      "id:d14ss-2007-starscream"
+    ],
+    "tfc-optimus-ss32": [
+      "id:d14ss-2007-optimus"
+    ],
+    "tfss-ss69-devastator": [
+      "id:d14ss-dotm-devastator"
+    ],
+    "tfss-ss58-roadbuster": [
+      "E7200AS00",
+      "id:d14ss-dotm-roadbuster"
+    ],
+    "tfss-ss56-shockwave": [
+      "id:tfc-shockwave-ss10",
+      "id:d14ss-dotm-shockwave"
+    ],
+    "tfss-ss55-scavenger": [
+      "HSG0570",
+      "id:d14ss-dotm-scavenger"
+    ],
+    "tfc-grimlock-ss09": [
+      "G1888",
+      "id:d14ss-aoe-grimlock"
+    ],
+    "tfc-soundwave-ss12": [
+      "id:d14ss-dotm-soundwave"
+    ],
+    "afmon-hasbro-transformers-studio-series-transformers-optimus-prime-awakening-bumblebee-hsg5856": [
+      "id:afmon-hasbro-transformers-optimus-prime-awakening-studio-series-deluxe-class-bumblebee-bbts-197679"
     ]
   },
   "aliasToFigureId": {
@@ -46648,7 +46734,7 @@
     "F22355L00": "cls6-cls-stalker-w6",
     "G0484": "ss4-ss86-megatron",
     "MCF17641": "mcf6-mcf-batman-plat",
-    "HAS348623": "ss4-ss86-bumblebee",
+    "HAS348623": "tfss-ss86-bb-29",
     "156683": "mcfdc-riddler-the-batman",
     "G0566": "hs8-hs-24",
     "MCF151268": "mf10-mf-04",
@@ -47168,13 +47254,13 @@
     "TFSS-36DRIFT": "d14ss-tlk-drift",
     "E4710AS00": "d14ss-tlk-drift",
     "HAS786640": "d14ss-tlk-drift",
-    "HSG0570": "d14ss-dotm-scavenger",
-    "G2198": "d14ss-bb-wheeljack",
-    "TFSS-D-BBWHEELJACK": "d14ss-bb-wheeljack",
+    "HSG0570": "tfss-ss55-scavenger",
+    "G2198": "tfss-ss81-wheeljack",
+    "TFSS-D-BBWHEELJACK": "tfss-ss81-wheeljack",
     "HAS788798": "d14ss-dotm-hightower",
     "TFSS-47HIGHTOWER": "d14ss-dotm-hightower",
-    "HAS788781": "d14ss-bb-dropkick",
-    "G1888": "d14ss-aoe-grimlock",
+    "HAS788781": "ss5-ss-dropkick",
+    "G1888": "tfc-grimlock-ss09",
     "NE51800-01": "sf-neca-store-aliens-40th-anniversary-alien-queen-ultra-deluxe-boxed-figure",
     "RE-TRAN-08168": "sf-super7-transformers-reaction-figures-optimus-primal-burning-red",
     "RE-TRANW06-WKG-01": "sf-super7-transformers-reaction-figures-wave-6-wreck-gar-g1",
@@ -47651,8 +47737,8 @@
     "BAN616982": "bn7-07",
     "N-LF-135144": "bn7-07",
     "N-LF-142387": "bn7-07",
-    "HAS206185": "d14ss-bb-ratchet",
-    "HBR-F71015L00-C": "d14ss-bb-ratchet",
+    "HAS206185": "tfss-ss82-ratchet",
+    "HBR-F71015L00-C": "tfss-ss82-ratchet",
     "TAK154266": "tfmp-mp38p",
     "MP38BURNINGCONOVY-USA": "tfmp-mp38p",
     "NE42055-01": "sf-neca-store-robocop-ed-209-deluxe-boxed-action-figure-with-sound",
@@ -48293,8 +48379,8 @@
     "KAI013415": "ky-ay-ay-023",
     "HAS244468": "mlc-quicksilver-aou",
     "HAS839285": "mlc-quicksilver-aou",
-    "HBR-G0480-C": "ss5-ss-apelinq",
-    "G0480": "ss5-ss-apelinq",
+    "HBR-G0480-C": "tfss-ss116-apelinq",
+    "G0480": "tfss-ss116-apelinq",
     "E6055": "bsc-jannah",
     "SWRAND010": "bsc-jannah",
     "SWPOAPR0136": "d14bs-bs-ewok-teebo",
@@ -48482,7 +48568,7 @@
     "C3292": "bs4-poe-tros",
     "HAS588558": "bs4-poe-tros",
     "B3841AS00": "bs4-poe-tros",
-    "HAS348661": "ss6-ss-alpha-trion",
+    "HAS348661": "tfss-ss-one-alpha",
     "G1553": "bs6-bs-cassian-rogue",
     "N-LF-162642": "mafex-no160-moff-gideon-the-mandalorian",
     "HAS825417": "bs5-bs-death-trooper",
@@ -50740,7 +50826,7 @@
     "HAS380517": "tfss-ss-one-soundwave",
     "HAS153438": "tfss-ss-one-soundwave",
     "HAS900633": "tfss-ss-one-soundwave",
-    "HSG2200": "afmon-hasbro-soundwave-hsg2200",
+    "HSG2200": "tfss-ss-one-soundwave",
     "HSG1904": "tfss-ss-one-soundwave",
     "HSE0702QSW": "tfss-ss-one-soundwave",
     "G1381": "tfss-ss-one-soundwave",
@@ -50870,11 +50956,11 @@
     "GIJOE-RETRO-LADYJAYE": "cls5-cls-lady-jaye",
     "F47655X00": "cls5-cls-lady-jaye",
     "F09655L00": "cls5-cls-lady-jaye",
-    "HAS978335": "hs8-hs-43",
-    "HSF0709": "hs8-hs-43",
-    "TFSS-86JAZZ": "hs8-hs-43",
-    "F0709AS00": "hs8-hs-43",
-    "TFSS-10JAZZ-15THLOOSE": "hs8-hs-43",
+    "HAS978335": "tfss-ss-86-jazz-2025",
+    "HSF0709": "tfss-ss-86-jazz-2025",
+    "TFSS-86JAZZ": "tfss-ss-86-jazz-2025",
+    "F0709AS00": "tfss-ss-86-jazz-2025",
+    "TFSS-10JAZZ-15THLOOSE": "tfss-ss-86-jazz-2025",
     "TAK133445": "tfmp-mp51",
     "TKT-MP51": "tfmp-mp51",
     "MP51-ARCEE-JP": "tfmp-mp51",
@@ -50915,8 +51001,8 @@
     "F65495X00": "ml5-ml-x97-storm",
     "GITORP": "joec-classified-torpedo",
     "F74675X00": "joec-classified-torpedo",
-    "G2188": "ss4-ss86-snarl",
-    "HASG2188": "ss4-ss86-snarl",
+    "G2188": "tfss-ss86-snarl-alt",
+    "HASG2188": "tfss-ss86-snarl-alt",
     "G1870": "mlc-medusa",
     "HASG1870": "mlc-medusa",
     "G1868": "mlc-black-bolt",
@@ -51054,10 +51140,10 @@
     "E81165L00": "mlc-thing",
     "HSG1888": "afmon-hasbro-grimlock-hsg1888",
     "HASG1888": "ss5-ss-grimlock-aoy",
-    "HSF9654": "ss4-ss86-blaster",
-    "F96545L00": "ss4-ss86-blaster",
-    "BEASTAWAKENING-JP-BURNINGPLASMA": "ss4-ss86-blaster",
-    "F9654": "ss4-ss86-blaster",
+    "HSF9654": "tfss-ss86-blaster",
+    "F96545L00": "tfss-ss86-blaster",
+    "BEASTAWAKENING-JP-BURNINGPLASMA": "tfss-ss86-blaster",
+    "F9654": "tfss-ss86-blaster",
     "HSG2198": "ss4-ss86-wheeljack",
     "HAS181585": "ss4-ss86-wheeljack",
     "N-LF-136592": "ss4-ss86-wheeljack",
@@ -51081,9 +51167,9 @@
     "HAS243621": "tfss-ss-core-steeljaw",
     "F8752": "tfss-ss-core-steeljaw",
     "F87525X00": "tfss-ss-core-steeljaw",
-    "HSG0220": "hs8-hs-23",
-    "HSE0701YBB": "hs8-hs-23",
-    "G0220": "hs8-hs-23",
+    "HSG0220": "tfss-ss86-bb-29",
+    "HSE0701YBB": "tfss-ss86-bb-29",
+    "G0220": "tfss-ss86-bb-29",
     "MP60": "tfmp-mp60",
     "MP60-GINRAI-JP": "tfmp-mp60",
     "MP14C": "tfmp-mp14c",
@@ -51131,7 +51217,7 @@
     "HASG2080": "ml4-nimrod",
     "HASG2272": "joec-classified-lifeline",
     "HSG2272": "joec-classified-lifeline",
-    "HASG0483": "ss5-ss-shockwave-dotm",
+    "HASG0483": "tfss-ss-dotm-shockwave-leader",
     "HASG0020": "bsc-k2-andor",
     "HSG0020": "bsc-k2-andor",
     "HASF8772": "tfss-ss-megatron-concept",
@@ -51179,8 +51265,8 @@
     "TFSS-40SHATTER": "ss5-ss-shatter",
     "E3831AS00": "ss5-ss-shatter",
     "TFSS-86BLURR": "tfss-ss86-blurr-alt",
-    "TFSS-86KUP": "ss4-ss86-kup",
-    "F44815L00": "ss4-ss86-kup",
+    "TFSS-86KUP": "tfss-ss86-kup-alt",
+    "F44815L00": "tfss-ss86-kup-alt",
     "SW-40TH-IMPERIALSNOWTROOPER": "bsc-snowtrooper",
     "HAS214331": "bsc-snowtrooper",
     "F8334": "bsc-snowtrooper",
@@ -51273,7 +51359,7 @@
     "F74065L00": "d14ml-kraglin",
     "F74895X00": "tfss-ss-core-ironhide",
     "F65595L00": "mlc-cyclops-astounding",
-    "F7241AX00": "ss4-ss109-battletrap",
+    "F7241AX00": "tfss-ss99-battletrap",
     "F31445L00": "tfss-ss-core-laserbeak",
     "HAS115579": "tfss-ss-core-laserbeak",
     "F41405S00": "cls5-cls-serpentor",
@@ -51284,11 +51370,11 @@
     "F31435L00": "tfss-ss-core-ratchet",
     "HAS112141": "tfss-ss-core-ratchet",
     "HBR-F31355L02R-C": "tfss-ss-core-ratchet",
-    "F3175AS20": "ss4-ss86-ironhide",
-    "HASG0559": "ss4-ss86-ironhide",
+    "F3175AS20": "tfss-ss-core-ironhide",
+    "HASG0559": "tfss-ss-core-ironhide",
     "F40265X00": "cls5-cls-zarana",
-    "F3203AX00": "ss4-ss86-sludge",
-    "HASF7247": "ss4-ss86-sludge",
+    "F3203AX00": "tfss-ss86-sludge",
+    "HASF7247": "tfss-ss86-sludge",
     "F31395L00": "tfss-ss-core-shockwave",
     "HAS934287": "tfss-ss-core-shockwave",
     "F3139": "tfss-ss-core-shockwave",
@@ -51305,8 +51391,8 @@
     "HBR-F90775X00-C": "mlc-ikaris",
     "F90775X00": "mlc-ikaris",
     "F30195L00": "d14ml-spidey-bg",
-    "F0713AS00": "d14ss-86-scourge",
-    "E8294AS00": "ss5-ss-blitzwing",
+    "F0713AS00": "tfss-ss86-scourge-alt",
+    "E8294AS00": "tfss-ss65-blitzwing",
     "E81245L00": "ml5-ml-vulture",
     "E3957AS00": "d14ml-spidey-stealth",
     "E5790AS00": "mlc-killmonger",
@@ -51400,7 +51486,7 @@
     "TFSS-29SIDESWIPE": "ss4-ss86-sideswipe",
     "F0789AS00": "ss4-ss86-sideswipe",
     "E3726AS00": "ss4-ss86-sideswipe",
-    "F71185L00": "ss4-ss86-grimlock",
+    "F71185L00": "tfss-ss86-grimlock-wheelie",
     "F51845L00": "lc6-lc-red-is",
     "F53705L00": "lc6-lc-red-is",
     "F29715L00": "lc6-lc-red-is",
@@ -52079,24 +52165,24 @@
     "F70885L00": "ml2-bucky-cap",
     "TFSS-V-TFTM-BLASTER": "tfss-ss86-blaster",
     "HASF9654": "tfss-ss86-blaster",
-    "STUDIOSERIES-86ULTRAMAGNUS": "ss4-ss86-ultra-magnus",
-    "F61625L00": "ss4-ss86-ultra-magnus",
-    "N-LF-147538": "ss4-ss86-ultra-magnus",
-    "STUDIOSERIES-86ULTRAMAGNUS-JP": "ss4-ss86-ultra-magnus",
+    "STUDIOSERIES-86ULTRAMAGNUS": "tfss-ss86-ultramagnus-cmd",
+    "F61625L00": "tfss-ss86-ultramagnus-cmd",
+    "N-LF-147538": "tfss-ss86-ultramagnus-cmd",
+    "STUDIOSERIES-86ULTRAMAGNUS-JP": "tfss-ss86-ultramagnus-cmd",
     "TFSS-C-SPIKEWITWICKY-JAPAN": "tfss-ss-core-spike",
     "TFSS-86SPIKE": "tfss-ss-core-spike",
     "F31425L00": "tfss-ss-core-spike",
     "F3142": "tfss-ss-core-spike",
     "TFSS-C-NOAH": "tfss-ss-core-spike",
     "F74915X00": "tfss-ss-core-spike",
-    "TFSS-D-HOTROD": "ss5-ss-hotrod-tlk",
-    "TFSS50-WW2HOTROD": "ss5-ss-hotrod-tlk",
-    "F3169AS20": "ss5-ss-hotrod-tlk",
-    "N-LF-142225": "ss5-ss-hotrod-tlk",
-    "TFSS-86HOTRODVARIANT": "ss4-ss86-hotrod",
-    "TFSS-86HOTROD": "ss4-ss86-hotrod",
-    "HASG2254": "ss4-ss86-hotrod",
-    "TFSS-MTMTE-V-HOTROD": "ss4-ss86-hotrod",
+    "TFSS-D-HOTROD": "tfss-ss93-hotrod",
+    "TFSS50-WW2HOTROD": "tfss-ss93-hotrod",
+    "F3169AS20": "tfss-ss93-hotrod",
+    "N-LF-142225": "tfss-ss93-hotrod",
+    "TFSS-86HOTRODVARIANT": "tfss-ss86-hotrod-alt",
+    "TFSS-86HOTROD": "tfss-ss86-hotrod-alt",
+    "HASG2254": "tfss-ss86-hotrod-alt",
+    "TFSS-MTMTE-V-HOTROD": "tfss-ss86-hotrod-alt",
     "TFSS-86WRECKGARBUBBLE": "tfss-ss86-wreckgar",
     "TFSS-86WRECKGAR": "tfss-ss86-wreckgar",
     "HSF0792": "tfss-ss86-wreckgar",
@@ -52513,7 +52599,7 @@
     "E96595L00": "hs8-hs-31",
     "TFSS-10JAZZ": "tfss-ss86-jazz-alt",
     "F98785L00": "d14ss-86-ratchet",
-    "F72285X00": "d14ss-86-arcee",
+    "F72285X00": "tfss-ss86-arcee-alt",
     "KAI110480": "ky6-ay-monster-girl",
     "KAI220271": "ky6-ay-monster-girl",
     "KAI220219": "ky6-ay-monster-girl",
@@ -52848,12 +52934,12 @@
     "FHTD-RIX": "fh9-fh-07",
     "FHTD-SKEFIGHT": "fh9-fh-07",
     "FHTD-GOSKELET2": "fh9-fh-07",
-    "HAS900640": "hs8-hs-22",
-    "HAS223520": "hs8-hs-22",
-    "TFGMEG1": "hs8-hs-22",
-    "HSE0702M": "hs8-hs-22",
-    "G1790": "hs8-hs-22",
-    "E6254AS00": "hs8-hs-22",
+    "HAS900640": "tfss-ss-86-megatron-2025",
+    "HAS223520": "tfss-ss-86-megatron-2025",
+    "TFGMEG1": "tfss-ss-86-megatron-2025",
+    "HSE0702M": "tfss-ss-86-megatron-2025",
+    "G1790": "tfss-ss-86-megatron-2025",
+    "E6254AS00": "tfss-ss-86-megatron-2025",
     "HAS791279": "tfss-ss-86-megatron-2025",
     "F8772": "tfss-ss-86-megatron-2025",
     "HAS142528": "ml2-ironman-model70",
@@ -52874,7 +52960,7 @@
     "F83765X00": "cls6-cls-buzzer",
     "F74715X00": "cls6-cls-ripper",
     "F66275X00": "mlc-blade-2099",
-    "F7244AX00": "ss6-ss-megatron-tfone",
+    "F7244AX00": "tfss-ss-one-megatron",
     "F8211AS00": "pr2-turbo-red",
     "F4514AS20": "pr2-dino-black",
     "F51795L00": "lc6-lc-dragonzord-w6",
@@ -52911,7 +52997,7 @@
     "MTSUPGR2": "mcfdc-supergirl-2026",
     "MF17859": "mcfdc-supergirl-2026",
     "NEC-40004-C": "sf-neca-store-christmas-story-8-clothed-figure-old-man",
-    "HAS6348647PRE": "ss5-ss-shockwave-86",
+    "HAS6348647PRE": "afmon-hasbro-shockwave-hsg2191",
     "HAS223544": "ss5-ss-ratchet-86",
     "TFRATC1": "ss5-ss-ratchet-86",
     "HSF7243": "ss5-ss-ratchet-86",
@@ -52919,10 +53005,10 @@
     "F9878": "ss5-ss-ratchet-86",
     "F7243AX00": "ss5-ss-ratchet-86",
     "HAS629022": "ss5-ss-ratchet-86",
-    "HAS181639": "ss5-ss-arcee-86",
-    "HSF4480": "ss5-ss-arcee-86",
-    "F4480AS00": "ss5-ss-arcee-86",
-    "F7228": "ss5-ss-arcee-86",
+    "HAS181639": "tfss-ss86-arcee-alt",
+    "HSF4480": "tfss-ss86-arcee-alt",
+    "F4480AS00": "tfss-ss86-arcee-alt",
+    "F7228": "tfss-ss86-arcee-alt",
     "F0864": "mlc-blackcat",
     "HAS767335": "mlc-blackcat",
     "F08645L00": "mlc-blackcat",
@@ -53014,17 +53100,17 @@
     "E86095L00": "ml6-ml-usagent",
     "E9362": "bs6-bs-armorer",
     "E93625X00": "bs6-bs-armorer",
-    "HSG0481": "ss5-ss-galvatron-86",
-    "HBR-G0481-C": "ss5-ss-galvatron-86",
-    "HSF0713": "ss5-ss-scourge-86",
-    "HAS376008": "ss5-ss-scourge-86",
-    "TFS-SCU1": "ss5-ss-scourge-86",
-    "F7246AX00": "ss5-ss-scourge-86",
+    "HSG0481": "tfss-ss86-galvatron-31",
+    "HBR-G0481-C": "tfss-ss86-galvatron-31",
+    "HSF0713": "tfss-ss86-scourge-alt",
+    "HAS376008": "tfss-ss86-scourge-alt",
+    "TFS-SCU1": "tfss-ss86-scourge-alt",
+    "F7246AX00": "tfss-ss86-scourge-alt",
     "G0823": "d14ml-ml-classic-enchantress",
-    "F7489": "ss5-ss-ironhide-86",
-    "HAS301161": "ss5-ss-ironhide-86",
-    "HBR-229135-C": "ss5-ss-ironhide-86",
-    "F8774AZ00": "ss5-ss-springer-86",
+    "F7489": "tfss-ss86-ironhide-alt",
+    "HAS301161": "tfss-ss86-ironhide-alt",
+    "HBR-229135-C": "tfss-ss86-ironhide-alt",
+    "F8774AZ00": "tfss-ss86-springer-30",
     "F90145X00": "ml6-ml-vision-white",
     "F58855L00": "ml6-ml-vision-white",
     "F0326": "ml6-ml-vision-white",
@@ -53040,7 +53126,7 @@
     "HAS789771": "mlc-thanos-classic",
     "HBR-99547-C": "mlc-thanos-classic",
     "G0621": "mlc-thanos-classic",
-    "F0710AS00": "ss5-ss-kup-86",
+    "F0710AS00": "tfss-ss86-kup-alt",
     "MEZ764314": "o12t-278-king-conan-one-12-collective",
     "N-LF-141786": "d14mcf-nekron",
     "175929": "mcf2-damian-gold",
@@ -53148,7 +53234,7 @@
     "E8654AS00": "pr2-mmpr-trini",
     "F7240AX00": "tfss-ss98-cheetor",
     "E96965L00": "ml6-ml-hydra-trooper",
-    "E7200AS00": "d14ss-dotm-roadbuster",
+    "E7200AS00": "tfss-ss58-roadbuster",
     "PLA39870": "pm9-pm-44",
     "PLA38749": "pm9-pm-44",
     "PLA38789": "pm9-pm-44",
@@ -53320,9 +53406,9 @@
     "MARVELLEGENDS-WORTHYCAP": "d14ml-marvel-boy",
     "E1389AS00": "d14ml-marvel-boy",
     "E1390AS00": "d14ml-marvel-boy",
-    "HAS181042": "ss5-ss-galvatron-aoy",
-    "HBR-F3176AX21-C": "ss5-ss-galvatron-aoy",
-    "F3176AS20": "ss5-ss-galvatron-aoy",
+    "HAS181042": "tfss-ss90-galvatron",
+    "HBR-F3176AX21-C": "tfss-ss90-galvatron",
+    "F3176AS20": "tfss-ss90-galvatron",
     "HAS797363SW": "cls4-retro-ladyjaye",
     "F10045X00": "cls4-retro-ladyjaye",
     "F9070": "d14ml-ml-retro-hulk",
@@ -53341,7 +53427,7 @@
     "F30655L00": "lc6-lc-black-cosmic",
     "F10035X00": "joe2-retro-duke",
     "F03555L00": "ml2-ironman-modular",
-    "E0747AX00": "d14ss-aoe-lockdown",
+    "E0747AX00": "ss5-ss-lockdown",
     "SUP81182": "pm-tmnt-tales-don",
     "PLA40173": "pm-tmnt-tales-don",
     "PLA83867": "pm-tmnt-tales-mikey",
@@ -53587,8 +53673,8 @@
     "N-LF-149129": "bn7-46",
     "N-LF-145032": "bn7-54",
     "BAS73687": "bn-zeta",
-    "DK-15": "ss6-ss-optimus-tfone",
-    "DK62": "ss6-ss-optimus-tfone",
+    "DK-15": "tfss-ss-one-optimus",
+    "DK62": "tfss-ss-one-optimus",
     "F7121": "ss6-ss-optimus-bb",
     "E4629": "ss6-ss-optimus-bb",
     "GIJOE-CLASSIFIED-SPIRITIRONKNIFE": "cls6-cls-spirit-ironknife",
@@ -53641,18 +53727,18 @@
     "TAK614968": "tfmp-mp46",
     "BTN64950-8": "shf6-himeno-csm",
     "HAS899395": "tfss-ss-dotm-shockwave-leader",
-    "HAS169866": "ss6-ss-sludge-86",
-    "TFSSNAR1": "ss6-ss-snarl-86",
-    "F7247AX00": "ss6-ss-snarl-86",
-    "F6162RR": "ss5-ss-ultrmagnus-86",
+    "HAS169866": "tfss-ss86-sludge",
+    "TFSSNAR1": "tfss-ss86-snarl-alt",
+    "F7247AX00": "tfss-ss86-snarl-alt",
+    "F6162RR": "tfss-ss86-ultramagnus-cmd",
     "HASG2187": "tfss-ss65-blitzwing",
     "G2187": "tfss-ss65-blitzwing",
-    "HASG1928": "d14ss-tlk-barricade",
-    "TFSS-D-TLK-BARRICADE": "d14ss-tlk-barricade",
-    "TFSS-28BARRICADE-15THLOOSE": "d14ss-tlk-barricade",
-    "TFSS-28BARRICADE": "d14ss-tlk-barricade",
+    "HASG1928": "afmon-hasbro-barricade-hsg1928",
+    "TFSS-D-TLK-BARRICADE": "afmon-hasbro-barricade-hsg1928",
+    "TFSS-28BARRICADE-15THLOOSE": "afmon-hasbro-barricade-hsg1928",
+    "TFSS-28BARRICADE": "afmon-hasbro-barricade-hsg1928",
     "HSG1928": "afmon-hasbro-barricade-hsg1928",
-    "E3700AS00": "d14ss-tlk-barricade",
+    "E3700AS00": "afmon-hasbro-barricade-hsg1928",
     "SS-ROTF15TH-AUTOBOT5PACK": "tfss-ss91-fallen",
     "F0788AS00": "tfss-ss91-fallen",
     "E4469AS00": "tfss-ss91-fallen",
@@ -53672,10 +53758,10 @@
     "E0741AS00": "d14ss-dotm-crowbar",
     "TFSS63-TOPSPIN": "d14ss-dotm-topspin",
     "TFSS-LEADFOOT": "d14ss-dotm-leadfoot",
-    "F8773AZ01": "ss6-ss-swoop-86",
+    "F8773AZ01": "tfss-ss86-swoop",
     "F7245AX00": "d14ss-rotb-rhinox",
     "HSF7245": "d14ss-rotb-rhinox",
-    "F0711AS00": "ss6-ss-blurr-86",
+    "F0711AS00": "tfss-ss86-blurr-alt",
     "E7217AS00": "tfss-ss66-overload",
     "E7679AS00": "d14ml-patriot",
     "WC77485": "o12t-178-dr-fate-one-12-collective",
@@ -54308,26 +54394,26 @@
     "TFSS-21STARSCREAM": "hs10-hs-26",
     "TFSS-06STARSCREAM": "hs10-hs-26",
     "G13715L00": "hs10-hs-26",
-    "TFSS-BUZZWORTHY-86IRONHIDE": "hs10-hs-25",
-    "HAS774227": "hs10-hs-25",
-    "N-LF-151572": "hs10-hs-25",
-    "F7235": "hs10-hs-25",
-    "DK53": "hs10-hs-25",
-    "G2199IS": "hs10-hs-25",
-    "HASF8753": "hs10-hs-25",
-    "HASF8749": "hs10-hs-25",
-    "TFSSEX-C-CLEARBB": "hs10-hs-25",
-    "TFSS-C-DOTMBB-JAPAN": "hs10-hs-25",
-    "TFSS-L-BUZZWORTHYGRIMLOCK": "hs10-hs-25",
-    "TFSS-D-WFC-BUMBLEBEE-JAPAN": "hs10-hs-25",
-    "TFSS-C-BUMBLEBEE": "hs10-hs-25",
-    "TFSS-D-BUMBLEBEEROTB-JAPAN": "hs10-hs-25",
-    "TFSS-D-BUMBLEBEEDOTM-JAPAN": "hs10-hs-25",
-    "TFSS-NESTBONECRUSHER": "hs10-hs-25",
-    "TFSSEX-RUSTYVWBB": "hs10-hs-25",
-    "TFSS-26WWIIBB": "hs10-hs-25",
-    "TFSS-19BBGIFTSET": "hs10-hs-25",
-    "E3698AS00": "hs10-hs-25",
+    "TFSS-BUZZWORTHY-86IRONHIDE": "tfss-ss86-bb-29",
+    "HAS774227": "tfss-ss86-bb-29",
+    "N-LF-151572": "tfss-ss86-bb-29",
+    "F7235": "tfss-ss86-bb-29",
+    "DK53": "tfss-ss86-bb-29",
+    "G2199IS": "tfss-ss86-bb-29",
+    "HASF8753": "tfss-ss86-bb-29",
+    "HASF8749": "tfss-ss86-bb-29",
+    "TFSSEX-C-CLEARBB": "tfss-ss86-bb-29",
+    "TFSS-C-DOTMBB-JAPAN": "tfss-ss86-bb-29",
+    "TFSS-L-BUZZWORTHYGRIMLOCK": "tfss-ss86-bb-29",
+    "TFSS-D-WFC-BUMBLEBEE-JAPAN": "tfss-ss86-bb-29",
+    "TFSS-C-BUMBLEBEE": "tfss-ss86-bb-29",
+    "TFSS-D-BUMBLEBEEROTB-JAPAN": "tfss-ss86-bb-29",
+    "TFSS-D-BUMBLEBEEDOTM-JAPAN": "tfss-ss86-bb-29",
+    "TFSS-NESTBONECRUSHER": "tfss-ss86-bb-29",
+    "TFSSEX-RUSTYVWBB": "tfss-ss86-bb-29",
+    "TFSS-26WWIIBB": "tfss-ss86-bb-29",
+    "TFSS-19BBGIFTSET": "tfss-ss86-bb-29",
+    "E3698AS00": "tfss-ss86-bb-29",
     "GIJOE-CLASSIFIED-VIPER": "joe2-python-viper",
     "F4513AS20": "pr2-lostgalaxy-pink",
     "F82065L00": "plc-silver-space",
@@ -67474,7 +67560,118 @@
     "id:xt6-xt-mx-07": "xtransbots-mx-7-tirador-artfire-limited-version",
     "id:dx96-dx9-k-03": "dx9-k3-la-hire-rodimus-hot-rod",
     "id:dx96-dx9-k-02": "dx9-k2-ancestrod-hot-rod",
-    "id:dx96-dx9-k-01": "dx9-k1-freeman-bastion"
+    "id:dx96-dx9-k-01": "dx9-k1-freeman-bastion",
+    "id:ss6-ss-alpha-trion": "tfss-ss-one-alpha",
+    "id:afmon-hasbro-soundwave-hsg2200": "tfss-ss-one-soundwave",
+    "id:ss6-ss-airachnid": "tfss-ss-one-airachnid",
+    "id:ss5-ss-shockwave-dotm": "tfss-ss-dotm-shockwave-leader",
+    "id:hs8-hs-22": "tfss-ss-86-megatron-2025",
+    "id:hs8-hs-43": "tfss-ss-86-jazz-2025",
+    "id:ss6-ss-starscream-tfone": "tfss-ss-one-starscream",
+    "id:ss6-ss-sentinel-tfone": "tfss-ss-one-sentinel",
+    "id:ss6-ss-megatron-tfone": "tfss-ss-one-megatron",
+    "id:ss5-ss-apelinq": "tfss-ss116-apelinq",
+    "id:ss6-ss-optimus-tfone": "tfss-ss-one-optimus",
+    "id:ss6-ss-elita-tfone": "tfss-ss-one-elita",
+    "id:d14ss-86-galvatron": "tfss-ss86-galvatron-31",
+    "id:ss4-ss86-galvatron": "tfss-ss86-galvatron-31",
+    "id:ss5-ss-galvatron-86": "tfss-ss86-galvatron-31",
+    "id:d14ss-bb-optimus": "ss6-ss-optimus-bb",
+    "id:d14ss-86-cyclonus": "ss4-ss86-cyclonus",
+    "id:ss5-ss-cyclonus-86": "ss4-ss86-cyclonus",
+    "id:ss4-ss86-springer": "tfss-ss86-springer-30",
+    "id:d14ss-86-springer": "tfss-ss86-springer-30",
+    "id:ss5-ss-springer-86": "tfss-ss86-springer-30",
+    "id:d14ss-86-scourge": "tfss-ss86-scourge-alt",
+    "id:ss5-ss-scourge-86": "tfss-ss86-scourge-alt",
+    "id:d14ss-86-shockwave": "afmon-hasbro-shockwave-hsg2191",
+    "id:ss4-ss86-shockwave": "afmon-hasbro-shockwave-hsg2191",
+    "id:ss5-ss-shockwave-86": "afmon-hasbro-shockwave-hsg2191",
+    "id:d14ss-86-bumblebee": "tfss-ss86-bb-29",
+    "id:ss4-ss86-bumblebee": "tfss-ss86-bb-29",
+    "id:hs8-hs-23": "tfss-ss86-bb-29",
+    "id:hs10-hs-25": "tfss-ss86-bb-29",
+    "id:d14ss-86-soundwave": "ss4-ss86-soundwave",
+    "id:hs8-hs-45": "ss4-ss86-soundwave",
+    "id:ss5-ss-soundwave-86": "ss4-ss86-soundwave",
+    "id:ss6-ss-swoop-86": "tfss-ss86-swoop",
+    "id:ss4-ss86-swoop": "tfss-ss86-swoop",
+    "id:ss4-ss86-blaster": "tfss-ss86-blaster",
+    "id:ss4-ss86-ultra-magnus": "tfss-ss86-ultramagnus-cmd",
+    "id:d14ss-86-ultras": "tfss-ss86-ultramagnus-cmd",
+    "id:ss5-ss-ultrmagnus-86": "tfss-ss86-ultramagnus-cmd",
+    "id:d14ss-86-perceptor": "tfss-ss86-perceptor-alt",
+    "id:ss4-ss86-arcee": "tfss-ss86-arcee-alt",
+    "id:d14ss-86-arcee": "tfss-ss86-arcee-alt",
+    "id:ss5-ss-arcee-86": "tfss-ss86-arcee-alt",
+    "id:ss6-ss-snarl-86": "tfss-ss86-snarl-alt",
+    "id:ss4-ss86-snarl": "tfss-ss86-snarl-alt",
+    "id:ss6-ss-sludge-86": "tfss-ss86-sludge",
+    "id:ss4-ss86-sludge": "tfss-ss86-sludge",
+    "id:ss4-ss86-kup": "tfss-ss86-kup-alt",
+    "id:ss5-ss-kup-86": "tfss-ss86-kup-alt",
+    "id:ss4-ss86-hotrod": "tfss-ss86-hotrod-alt",
+    "id:ss5-ss-hotrod-86": "tfss-ss86-hotrod-alt",
+    "id:d14ss-86-hotrod": "hs8-hs-26",
+    "id:ss4-ss86-grimlock": "tfss-ss86-grimlock-wheelie",
+    "id:ss5-ss-grimlock-86": "tfss-ss86-grimlock-wheelie",
+    "id:ss6-ss-wheeljack-rotb": "d14ss-rotb-wheeljack",
+    "id:d14ss-86-blurr": "tfss-ss86-blurr-alt",
+    "id:ss6-ss-blurr-86": "tfss-ss86-blurr-alt",
+    "id:lv-hasbro-transformers-studio-series-the-transformers-the-movie-studio-series-86-voyager-class-skyw": "ss4-ss86-skywarp",
+    "id:d14ss-rotb-bumblebee": "tfss-ss100-bumblebee",
+    "id:d14ss-rotb-arcee": "ss6-ss-arcee-rotb",
+    "id:ss6-ss-nightbird-rotb": "d14ss-rotb-nightbird",
+    "id:d14ss-86-chromia": "d14ss-dotm-chromia",
+    "id:ss4-ss109-battletrap": "tfss-ss99-battletrap",
+    "id:d14ss-rotb-battletrap": "tfss-ss99-battletrap",
+    "id:ss6-ss-battletrap": "tfss-ss99-battletrap",
+    "id:ss6-ss-rhinox-rotb": "d14ss-rotb-rhinox",
+    "id:ss4-ss86-prowl": "hs8-hs-44",
+    "id:ss6-ss-freeza": "tfss-ss-core-freezer",
+    "id:d14ss-rotb-mirage": "ss4-ss86-mirage",
+    "id:ss6-ss-mirage-rotb": "ss4-ss86-mirage",
+    "id:d14ss-rotb-cheetor": "tfss-ss98-cheetor",
+    "id:ss6-ss-cheetor-rotb": "tfss-ss98-cheetor",
+    "id:d14ss-rotb-airazor": "tfss-ss97-airazor",
+    "id:ss6-ss-airazor-rotb": "tfss-ss97-airazor",
+    "id:ss5-ss-sentinel": "tfss-ss61-sentinel",
+    "id:d14ss-dotm-sentinel": "tfss-ss61-sentinel",
+    "id:ss6-ss-optimus-primal-rotb": "d14ss-rotb-primal",
+    "id:ss4-ss86-ironhide": "tfss-ss-core-ironhide",
+    "id:ss5-ss-hotrod-tlk": "tfss-ss93-hotrod",
+    "id:d14ss-tlk-cogman": "ss5-ss-cogman",
+    "id:ss4-ss86-jazz": "tfss-ss86-jazz-alt",
+    "id:ss5-ss-jazz-86": "tfss-ss86-jazz-alt",
+    "id:ss5-ss-ironhide-86": "tfss-ss86-ironhide-alt",
+    "id:d14ss-aoe-crosshairs": "tfss-ss92-crosshairs",
+    "id:ss5-ss-galvatron-aoy": "tfss-ss90-galvatron",
+    "id:d14ss-aoe-galvatron": "tfss-ss90-galvatron",
+    "id:d14ss-aoe-lockdown": "ss5-ss-lockdown",
+    "id:d14ss-bb-arcee": "tfss-ss85-arcee",
+    "id:ss5-ss-starscream-86": "tfss-ss86-coronation-ss",
+    "id:d14ss-bb-soundwave": "tfss-ss83-soundwave",
+    "id:d14ss-bb-wheeljack": "tfss-ss81-wheeljack",
+    "id:d14ss-bb-ratchet": "tfss-ss82-ratchet",
+    "id:d14ss-2007-starscream": "tfc-starscream-ss03",
+    "id:d14ss-2007-optimus": "tfc-optimus-ss32",
+    "id:d14ss-aoe-slug": "tfss-ss86-slug-daniel",
+    "id:d14ss-dotm-devastator": "tfss-ss69-devastator",
+    "id:d14ss-bb-blitzwing": "tfss-ss65-blitzwing",
+    "id:ss5-ss-blitzwing": "tfss-ss65-blitzwing",
+    "id:d14ss-dotm-roadbuster": "tfss-ss58-roadbuster",
+    "id:tfc-shockwave-ss10": "tfss-ss56-shockwave",
+    "id:d14ss-dotm-shockwave": "tfss-ss56-shockwave",
+    "id:d14ss-dotm-scavenger": "tfss-ss55-scavenger",
+    "id:d14ss-dotm-mixmaster": "tfss-ss53-mixmaster",
+    "id:d14ss-bb-shatter": "ss5-ss-shatter",
+    "id:d14ss-bb-dropkick": "ss5-ss-dropkick",
+    "id:d14ss-tlk-barricade": "afmon-hasbro-barricade-hsg1928",
+    "id:d14ss-aoe-grimlock": "tfc-grimlock-ss09",
+    "id:d14ss-dotm-soundwave": "tfc-soundwave-ss12",
+    "id:afmon-hasbro-transformers-optimus-prime-awakening-studio-series-deluxe-class-bumblebee-bbts-197679": "afmon-hasbro-transformers-studio-series-transformers-optimus-prime-awakening-bumblebee-hsg5856",
+    "id:d14ss-86-elita": "tfss-ss-one-elita",
+    "id:d14ss-dotm-starscream": "tfss-ss-one-starscream"
   },
   "collapsed": [
     {
@@ -69430,6 +69627,1116 @@
         "id:dx96-dx9-k-01"
       ],
       "reason": "Showz follow-up 2026-09-30 (mergeStub): Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry an id: alias (stub msrp/demand are flat template values and are not carried; MSRP set to 0 = unknown, per Shelby 2026-09-30), then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10)."
+    },
+    {
+      "keepId": "tfss-ss-one-alpha",
+      "dropId": "ss6-ss-alpha-trion",
+      "canonicalSku": "5010996348661",
+      "aliasesAdded": [
+        "HAS348661",
+        "id:ss6-ss-alpha-trion"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss-one-alpha: (unnumbered) Alpha Trion (One) — 2026 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss-one-soundwave",
+      "dropId": "afmon-hasbro-soundwave-hsg2200",
+      "canonicalSku": "5010996380517",
+      "aliasesAdded": [
+        "HSG2200",
+        "id:afmon-hasbro-soundwave-hsg2200"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss-one-soundwave: (unnumbered) Soundwave (One) — 2026 Deluxe Class. $27.99 2026 Deluxe Soundwave = Transformers One Soundwave Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss-one-airachnid",
+      "dropId": "ss6-ss-airachnid",
+      "canonicalSku": "5010996380036",
+      "aliasesAdded": [
+        "id:ss6-ss-airachnid"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss-one-airachnid: (unnumbered) Airachnid (One) — 2026 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss-dotm-shockwave-leader",
+      "dropId": "ss5-ss-shockwave-dotm",
+      "canonicalSku": "5010996297938",
+      "aliasesAdded": [
+        "HASG0483",
+        "id:ss5-ss-shockwave-dotm"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss-dotm-shockwave-leader: (unnumbered) Shockwave (Dark of the Moon w/ Brains, Wheelie, and Paratrooper, package refresh) — 2025 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss-86-megatron-2025",
+      "dropId": "hs8-hs-22",
+      "canonicalSku": "5010996319876",
+      "aliasesAdded": [
+        "HAS900640",
+        "HAS223520",
+        "TFGMEG1",
+        "HSE0702M",
+        "G1790",
+        "E6254AS00",
+        "id:hs8-hs-22"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss-86-megatron-2025: (unnumbered) Megatron (The Movie) — 2025 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss-86-jazz-2025",
+      "dropId": "hs8-hs-43",
+      "canonicalSku": "5010996301147",
+      "aliasesAdded": [
+        "HAS978335",
+        "HSF0709",
+        "TFSS-86JAZZ",
+        "F0709AS00",
+        "TFSS-10JAZZ-15THLOOSE",
+        "id:hs8-hs-43"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss-86-jazz-2025: (unnumbered) Autobot Jazz (The Movie, package refresh) — 2025 Deluxe Class. SKU 5010996301147 = tfss-ss-86-jazz-2025 UPC Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss-one-starscream",
+      "dropId": "ss6-ss-starscream-tfone",
+      "canonicalSku": "5010996408495",
+      "aliasesAdded": [
+        "id:ss6-ss-starscream-tfone"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss-one-starscream: (unnumbered) Starscream (One) — 2025 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss-one-sentinel",
+      "dropId": "ss6-ss-sentinel-tfone",
+      "canonicalSku": "5010996301178",
+      "aliasesAdded": [
+        "id:ss6-ss-sentinel-tfone"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss-one-sentinel: (unnumbered) Sentinel Prime (One) — 2025 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss-one-megatron",
+      "dropId": "ss6-ss-megatron-tfone",
+      "canonicalSku": "5010996346049",
+      "aliasesAdded": [
+        "F7244AX00",
+        "id:ss6-ss-megatron-tfone"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss-one-megatron: 114 Megatron (One) — 2024 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss116-apelinq",
+      "dropId": "ss5-ss-apelinq",
+      "canonicalSku": "195166278308",
+      "aliasesAdded": [
+        "HBR-G0480-C",
+        "G0480",
+        "id:ss5-ss-apelinq"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss116-apelinq: 116 / 118 Apelinq (Rise of the Beasts) — 2025 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss-one-optimus",
+      "dropId": "ss6-ss-optimus-tfone",
+      "canonicalSku": "5010996346179",
+      "aliasesAdded": [
+        "DK-15",
+        "DK62",
+        "id:ss6-ss-optimus-tfone"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss-one-optimus: 112 Optimus Prime (One) — 2024 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss-one-elita",
+      "dropId": "ss6-ss-elita-tfone",
+      "canonicalSku": "5010996323446",
+      "aliasesAdded": [
+        "id:ss6-ss-elita-tfone"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss-one-elita: (unnumbered) Elita-1 (One) — 2025 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-galvatron-31",
+      "dropId": "d14ss-86-galvatron",
+      "canonicalSku": "195166278315",
+      "aliasesAdded": [
+        "id:d14ss-86-galvatron"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-galvatron-31: 86-31 Galvatron (The Movie) — 2025 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-galvatron-31",
+      "dropId": "ss4-ss86-galvatron",
+      "canonicalSku": "195166278315",
+      "aliasesAdded": [
+        "id:ss4-ss86-galvatron"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-galvatron-31: 86-31 Galvatron (The Movie) — 2025 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-galvatron-31",
+      "dropId": "ss5-ss-galvatron-86",
+      "canonicalSku": "195166278315",
+      "aliasesAdded": [
+        "HSG0481",
+        "HBR-G0481-C",
+        "id:ss5-ss-galvatron-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-galvatron-31: 86-31 Galvatron (The Movie) — 2025 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "ss6-ss-optimus-bb",
+      "dropId": "d14ss-bb-optimus",
+      "canonicalSku": "E7112",
+      "aliasesAdded": [
+        "id:d14ss-bb-optimus"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as ss6-ss-optimus-bb: 38 Optimus Prime (Bumblebee) — 2019 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "ss4-ss86-cyclonus",
+      "dropId": "d14ss-86-cyclonus",
+      "canonicalSku": "5010996376084",
+      "aliasesAdded": [
+        "id:d14ss-86-cyclonus"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as ss4-ss86-cyclonus: (unnumbered) Cyclonus (The Movie) — 2026 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "ss4-ss86-cyclonus",
+      "dropId": "ss5-ss-cyclonus-86",
+      "canonicalSku": "5010996376084",
+      "aliasesAdded": [
+        "id:ss5-ss-cyclonus-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as ss4-ss86-cyclonus: (unnumbered) Cyclonus (The Movie) — 2026 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-springer-30",
+      "dropId": "ss4-ss86-springer",
+      "canonicalSku": "195166256795",
+      "aliasesAdded": [
+        "id:ss4-ss86-springer"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-springer-30: 86-30 Autobot Springer (The Movie) — 2024 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-springer-30",
+      "dropId": "d14ss-86-springer",
+      "canonicalSku": "195166256795",
+      "aliasesAdded": [
+        "id:d14ss-86-springer"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-springer-30: 86-30 Autobot Springer (The Movie) — 2024 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-springer-30",
+      "dropId": "ss5-ss-springer-86",
+      "canonicalSku": "195166256795",
+      "aliasesAdded": [
+        "F8774AZ00",
+        "id:ss5-ss-springer-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-springer-30: 86-30 Autobot Springer (The Movie) — 2024 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-scourge-alt",
+      "dropId": "d14ss-86-scourge",
+      "canonicalSku": "G2189",
+      "aliasesAdded": [
+        "F0713AS00",
+        "id:d14ss-86-scourge"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-scourge-alt: 86-05 Scourge (The Movie) — 2021 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-scourge-alt",
+      "dropId": "ss5-ss-scourge-86",
+      "canonicalSku": "G2189",
+      "aliasesAdded": [
+        "HSF0713",
+        "HAS376008",
+        "TFS-SCU1",
+        "F7246AX00",
+        "id:ss5-ss-scourge-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-scourge-alt: 86-05 Scourge (The Movie) — 2021 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "afmon-hasbro-shockwave-hsg2191",
+      "dropId": "d14ss-86-shockwave",
+      "canonicalSku": "HSG2191",
+      "aliasesAdded": [
+        "id:d14ss-86-shockwave"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as afmon-hasbro-shockwave-hsg2191: (unnumbered) Shockwave (The Movie) — 2026 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "afmon-hasbro-shockwave-hsg2191",
+      "dropId": "ss4-ss86-shockwave",
+      "canonicalSku": "HSG2191",
+      "aliasesAdded": [
+        "id:ss4-ss86-shockwave"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as afmon-hasbro-shockwave-hsg2191: (unnumbered) Shockwave (The Movie) — 2026 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "afmon-hasbro-shockwave-hsg2191",
+      "dropId": "ss5-ss-shockwave-86",
+      "canonicalSku": "HSG2191",
+      "aliasesAdded": [
+        "HAS6348647PRE",
+        "id:ss5-ss-shockwave-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as afmon-hasbro-shockwave-hsg2191: (unnumbered) Shockwave (The Movie) — 2026 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-bb-29",
+      "dropId": "d14ss-86-bumblebee",
+      "canonicalSku": "5010996232335",
+      "aliasesAdded": [
+        "id:d14ss-86-bumblebee"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-bb-29: 86-29 Bumblebee (The Movie) — 2024 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-bb-29",
+      "dropId": "ss4-ss86-bumblebee",
+      "canonicalSku": "5010996232335",
+      "aliasesAdded": [
+        "HAS348623",
+        "id:ss4-ss86-bumblebee"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-bb-29: 86-29 Bumblebee (The Movie) — 2024 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-bb-29",
+      "dropId": "hs8-hs-23",
+      "canonicalSku": "5010996232335",
+      "aliasesAdded": [
+        "HSG0220",
+        "HSE0701YBB",
+        "G0220",
+        "id:hs8-hs-23"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-bb-29: 86-29 Bumblebee (The Movie) — 2024 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-bb-29",
+      "dropId": "hs10-hs-25",
+      "canonicalSku": "5010996232335",
+      "aliasesAdded": [
+        "TFSS-BUZZWORTHY-86IRONHIDE",
+        "HAS774227",
+        "N-LF-151572",
+        "F7235",
+        "DK53",
+        "G2199IS",
+        "HASF8753",
+        "HASF8749",
+        "TFSSEX-C-CLEARBB",
+        "TFSS-C-DOTMBB-JAPAN",
+        "TFSS-L-BUZZWORTHYGRIMLOCK",
+        "TFSS-D-WFC-BUMBLEBEE-JAPAN",
+        "TFSS-C-BUMBLEBEE",
+        "TFSS-D-BUMBLEBEEROTB-JAPAN",
+        "TFSS-D-BUMBLEBEEDOTM-JAPAN",
+        "TFSS-NESTBONECRUSHER",
+        "TFSSEX-RUSTYVWBB",
+        "TFSS-26WWIIBB",
+        "TFSS-19BBGIFTSET",
+        "E3698AS00",
+        "id:hs10-hs-25"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-bb-29: 86-29 Bumblebee (The Movie) — 2024 Deluxe Class. SKU 5010996232335 = tfss-ss86-bb-29 UPC (86-29 Bumblebee) Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "ss4-ss86-soundwave",
+      "dropId": "d14ss-86-soundwave",
+      "canonicalSku": "5010996349873",
+      "aliasesAdded": [
+        "id:d14ss-86-soundwave"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as ss4-ss86-soundwave: (unnumbered) Soundwave / Buzzsaw / Laserbeak / Ravage (The Movie) — 2026 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "ss4-ss86-soundwave",
+      "dropId": "hs8-hs-45",
+      "canonicalSku": "5010996349873",
+      "aliasesAdded": [
+        "id:hs8-hs-45"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as ss4-ss86-soundwave: (unnumbered) Soundwave / Buzzsaw / Laserbeak / Ravage (The Movie) — 2026 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "ss4-ss86-soundwave",
+      "dropId": "ss5-ss-soundwave-86",
+      "canonicalSku": "5010996349873",
+      "aliasesAdded": [
+        "id:ss5-ss-soundwave-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as ss4-ss86-soundwave: (unnumbered) Soundwave / Buzzsaw / Laserbeak / Ravage (The Movie) — 2026 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-swoop",
+      "dropId": "ss6-ss-swoop-86",
+      "canonicalSku": "TFSWOOP2",
+      "aliasesAdded": [
+        "F8773AZ01",
+        "id:ss6-ss-swoop-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-swoop: 86-26 Dinobot Swoop (The Movie) — 2024 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-swoop",
+      "dropId": "ss4-ss86-swoop",
+      "canonicalSku": "TFSWOOP2",
+      "aliasesAdded": [
+        "id:ss4-ss86-swoop"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-swoop: 86-26 Dinobot Swoop (The Movie) — 2024 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-blaster",
+      "dropId": "ss4-ss86-blaster",
+      "canonicalSku": "5010996211859",
+      "aliasesAdded": [
+        "HSF9654",
+        "F96545L00",
+        "BEASTAWAKENING-JP-BURNINGPLASMA",
+        "F9654",
+        "id:ss4-ss86-blaster"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-blaster: 86-25 Autobot Blaster & Eject (The Movie) — 2024 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-ultramagnus-cmd",
+      "dropId": "ss4-ss86-ultra-magnus",
+      "canonicalSku": "5010996147394dmg",
+      "aliasesAdded": [
+        "STUDIOSERIES-86ULTRAMAGNUS",
+        "F61625L00",
+        "N-LF-147538",
+        "STUDIOSERIES-86ULTRAMAGNUS-JP",
+        "id:ss4-ss86-ultra-magnus"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-ultramagnus-cmd: 86-21 Ultra Magnus (The Movie) — 2023 Commander Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-ultramagnus-cmd",
+      "dropId": "d14ss-86-ultras",
+      "canonicalSku": "5010996147394dmg",
+      "aliasesAdded": [
+        "id:d14ss-86-ultras"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-ultramagnus-cmd: 86-21 Ultra Magnus (The Movie) — 2023 Commander Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-ultramagnus-cmd",
+      "dropId": "ss5-ss-ultrmagnus-86",
+      "canonicalSku": "5010996147394dmg",
+      "aliasesAdded": [
+        "F6162RR",
+        "id:ss5-ss-ultrmagnus-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-ultramagnus-cmd: 86-21 Ultra Magnus (The Movie) — 2023 Commander Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-perceptor-alt",
+      "dropId": "d14ss-86-perceptor",
+      "canonicalSku": "HAS181660",
+      "aliasesAdded": [
+        "id:d14ss-86-perceptor"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-perceptor-alt: 86-11 Perceptor (The Movie) — 2022 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-arcee-alt",
+      "dropId": "ss4-ss86-arcee",
+      "canonicalSku": "630509900657",
+      "aliasesAdded": [
+        "id:ss4-ss86-arcee"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-arcee-alt: 86-16 Arcee (The Movie) — 2022 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-arcee-alt",
+      "dropId": "d14ss-86-arcee",
+      "canonicalSku": "630509900657",
+      "aliasesAdded": [
+        "F72285X00",
+        "id:d14ss-86-arcee"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-arcee-alt: 86-16 Arcee (The Movie) — 2022 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-arcee-alt",
+      "dropId": "ss5-ss-arcee-86",
+      "canonicalSku": "630509900657",
+      "aliasesAdded": [
+        "HAS181639",
+        "HSF4480",
+        "F4480AS00",
+        "F7228",
+        "id:ss5-ss-arcee-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-arcee-alt: 86-16 Arcee (The Movie) — 2022 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-snarl-alt",
+      "dropId": "ss6-ss-snarl-86",
+      "canonicalSku": "5010996348715",
+      "aliasesAdded": [
+        "TFSSNAR1",
+        "F7247AX00",
+        "id:ss6-ss-snarl-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-snarl-alt: 86-19 Dinobot Snarl (The Movie) — 2023 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-snarl-alt",
+      "dropId": "ss4-ss86-snarl",
+      "canonicalSku": "5010996348715",
+      "aliasesAdded": [
+        "G2188",
+        "HASG2188",
+        "id:ss4-ss86-snarl"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-snarl-alt: 86-19 Dinobot Snarl (The Movie) — 2023 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-sludge",
+      "dropId": "ss6-ss-sludge-86",
+      "canonicalSku": "HSF3203",
+      "aliasesAdded": [
+        "HAS169866",
+        "id:ss6-ss-sludge-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-sludge: 86-15 Dinobot Sludge (The Movie) — 2022 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-sludge",
+      "dropId": "ss4-ss86-sludge",
+      "canonicalSku": "HSF3203",
+      "aliasesAdded": [
+        "F3203AX00",
+        "HASF7247",
+        "id:ss4-ss86-sludge"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-sludge: 86-15 Dinobot Sludge (The Movie) — 2022 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-kup-alt",
+      "dropId": "ss4-ss86-kup",
+      "canonicalSku": "HAS978236",
+      "aliasesAdded": [
+        "TFSS-86KUP",
+        "F44815L00",
+        "id:ss4-ss86-kup"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-kup-alt: 86-02 Kup (The Movie) — 2021 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-kup-alt",
+      "dropId": "ss5-ss-kup-86",
+      "canonicalSku": "HAS978236",
+      "aliasesAdded": [
+        "F0710AS00",
+        "id:ss5-ss-kup-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-kup-alt: 86-02 Kup (The Movie) — 2021 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-hotrod-alt",
+      "dropId": "ss4-ss86-hotrod",
+      "canonicalSku": "195166181653",
+      "aliasesAdded": [
+        "TFSS-86HOTRODVARIANT",
+        "TFSS-86HOTROD",
+        "HASG2254",
+        "TFSS-MTMTE-V-HOTROD",
+        "id:ss4-ss86-hotrod"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-hotrod-alt: 86-04 Autobot Hot Rod (The Movie) — 2021 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-hotrod-alt",
+      "dropId": "ss5-ss-hotrod-86",
+      "canonicalSku": "195166181653",
+      "aliasesAdded": [
+        "id:ss5-ss-hotrod-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-hotrod-alt: 86-04 Autobot Hot Rod (The Movie) — 2021 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "hs8-hs-26",
+      "dropId": "d14ss-86-hotrod",
+      "canonicalSku": "5010996367907",
+      "aliasesAdded": [
+        "id:d14ss-86-hotrod"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as hs8-hs-26: (unnumbered) Autobot Hot Rod (The Movie) — 2026 MTMTE Collection Voyager Class. same UPC 5010996367907 as hs8-hs-26 Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-grimlock-wheelie",
+      "dropId": "ss4-ss86-grimlock",
+      "canonicalSku": "HAS319869",
+      "aliasesAdded": [
+        "F71185L00",
+        "id:ss4-ss86-grimlock"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-grimlock-wheelie: 86-06 Grimlock & Autobot Wheelie (The Movie) — 2021 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-grimlock-wheelie",
+      "dropId": "ss5-ss-grimlock-86",
+      "canonicalSku": "HAS319869",
+      "aliasesAdded": [
+        "id:ss5-ss-grimlock-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-grimlock-wheelie: 86-06 Grimlock & Autobot Wheelie (The Movie) — 2021 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "d14ss-rotb-wheeljack",
+      "dropId": "ss6-ss-wheeljack-rotb",
+      "canonicalSku": "5010996346353",
+      "aliasesAdded": [
+        "id:ss6-ss-wheeljack-rotb"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as d14ss-rotb-wheeljack: 108 Wheeljack (Rise of the Beasts) — 2024 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-blurr-alt",
+      "dropId": "d14ss-86-blurr",
+      "canonicalSku": "630509978281",
+      "aliasesAdded": [
+        "id:d14ss-86-blurr"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-blurr-alt: 86-03 Blurr (The Movie) — 2021 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-blurr-alt",
+      "dropId": "ss6-ss-blurr-86",
+      "canonicalSku": "630509978281",
+      "aliasesAdded": [
+        "F0711AS00",
+        "id:ss6-ss-blurr-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-blurr-alt: 86-03 Blurr (The Movie) — 2021 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "ss4-ss86-skywarp",
+      "dropId": "lv-hasbro-transformers-studio-series-the-transformers-the-movie-studio-series-86-voyager-class-skyw",
+      "canonicalSku": "5010996348630",
+      "aliasesAdded": [
+        "id:lv-hasbro-transformers-studio-series-the-transformers-the-movie-studio-series-86-voyager-class-skyw"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as ss4-ss86-skywarp: (unnumbered) Skywarp (The Movie) — 2026 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss100-bumblebee",
+      "dropId": "d14ss-rotb-bumblebee",
+      "canonicalSku": "195166181622",
+      "aliasesAdded": [
+        "id:d14ss-rotb-bumblebee"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss100-bumblebee: 100 Bumblebee (Rise of the Beasts) — 2023 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "ss6-ss-arcee-rotb",
+      "dropId": "d14ss-rotb-arcee",
+      "canonicalSku": "HAS199463",
+      "aliasesAdded": [
+        "id:d14ss-rotb-arcee"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as ss6-ss-arcee-rotb: (unnumbered) Arcee (Rise of the Beasts) — 2023 Core Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "d14ss-rotb-nightbird",
+      "dropId": "ss6-ss-nightbird-rotb",
+      "canonicalSku": "195166229744",
+      "aliasesAdded": [
+        "id:ss6-ss-nightbird-rotb"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as d14ss-rotb-nightbird: 104 Nightbird (Rise of the Beasts) — 2023 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "d14ss-dotm-chromia",
+      "dropId": "d14ss-86-chromia",
+      "canonicalSku": "TFSS53-MOTORCYCLESISTERS",
+      "aliasesAdded": [
+        "id:d14ss-86-chromia"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as d14ss-dotm-chromia: 52 Chromia • Arcee • Elita-1 (Revenge of the Fallen) — 2020 Deluxe Class. image UPC 630509900657 = 52 Chromia/Arcee/Elita-1 3-pack Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss99-battletrap",
+      "dropId": "ss4-ss109-battletrap",
+      "canonicalSku": "195166209654",
+      "aliasesAdded": [
+        "F7241AX00",
+        "id:ss4-ss109-battletrap"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss99-battletrap: 99 Battletrap (Rise of the Beasts) — 2023 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss99-battletrap",
+      "dropId": "d14ss-rotb-battletrap",
+      "canonicalSku": "195166209654",
+      "aliasesAdded": [
+        "id:d14ss-rotb-battletrap"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss99-battletrap: 99 Battletrap (Rise of the Beasts) — 2023 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss99-battletrap",
+      "dropId": "ss6-ss-battletrap",
+      "canonicalSku": "195166209654",
+      "aliasesAdded": [
+        "id:ss6-ss-battletrap"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss99-battletrap: 99 Battletrap (Rise of the Beasts) — 2023 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "d14ss-rotb-rhinox",
+      "dropId": "ss6-ss-rhinox-rotb",
+      "canonicalSku": "195166223537",
+      "aliasesAdded": [
+        "id:ss6-ss-rhinox-rotb"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as d14ss-rotb-rhinox: 103 Rhinox (Rise of the Beasts) — 2023 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "hs8-hs-44",
+      "dropId": "ss4-ss86-prowl",
+      "canonicalSku": "5010996408389",
+      "aliasesAdded": [
+        "id:ss4-ss86-prowl"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as hs8-hs-44: (unnumbered) Prowl (The Movie) — 2026 MTMTE Collection Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss-core-freezer",
+      "dropId": "ss6-ss-freeza",
+      "canonicalSku": "HAS199456",
+      "aliasesAdded": [
+        "id:ss6-ss-freeza"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss-core-freezer: (unnumbered) Terrorcon Freezer (Rise of the Beasts) — 2023 Core Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "ss4-ss86-mirage",
+      "dropId": "d14ss-rotb-mirage",
+      "canonicalSku": "195166229775",
+      "aliasesAdded": [
+        "id:d14ss-rotb-mirage"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as ss4-ss86-mirage: 105 Autobot Mirage (Rise of the Beasts) — 2023 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "ss4-ss86-mirage",
+      "dropId": "ss6-ss-mirage-rotb",
+      "canonicalSku": "195166229775",
+      "aliasesAdded": [
+        "id:ss6-ss-mirage-rotb"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as ss4-ss86-mirage: 105 Autobot Mirage (Rise of the Beasts) — 2023 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss98-cheetor",
+      "dropId": "d14ss-rotb-cheetor",
+      "canonicalSku": "195166209647",
+      "aliasesAdded": [
+        "id:d14ss-rotb-cheetor"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss98-cheetor: 98 Cheetor (Rise of the Beasts) — 2023 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss98-cheetor",
+      "dropId": "ss6-ss-cheetor-rotb",
+      "canonicalSku": "195166209647",
+      "aliasesAdded": [
+        "id:ss6-ss-cheetor-rotb"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss98-cheetor: 98 Cheetor (Rise of the Beasts) — 2023 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss97-airazor",
+      "dropId": "d14ss-rotb-airazor",
+      "canonicalSku": "195166216836",
+      "aliasesAdded": [
+        "id:d14ss-rotb-airazor"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss97-airazor: 97 Airazor (Rise of the Beasts) — 2023 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss97-airazor",
+      "dropId": "ss6-ss-airazor-rotb",
+      "canonicalSku": "195166216836",
+      "aliasesAdded": [
+        "id:ss6-ss-airazor-rotb"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss97-airazor: 97 Airazor (Rise of the Beasts) — 2023 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss61-sentinel",
+      "dropId": "ss5-ss-sentinel",
+      "canonicalSku": "G0560",
+      "aliasesAdded": [
+        "id:ss5-ss-sentinel"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss61-sentinel: 61 Sentinel Prime (Dark of the Moon) — 2020 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss61-sentinel",
+      "dropId": "d14ss-dotm-sentinel",
+      "canonicalSku": "G0560",
+      "aliasesAdded": [
+        "id:d14ss-dotm-sentinel"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss61-sentinel: 61 Sentinel Prime (Dark of the Moon) — 2020 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "d14ss-rotb-primal",
+      "dropId": "ss6-ss-optimus-primal-rotb",
+      "canonicalSku": "195166203232",
+      "aliasesAdded": [
+        "id:ss6-ss-optimus-primal-rotb"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as d14ss-rotb-primal: 106 Optimus Primal (Rise of the Beasts) — 2023 Leader Class. same UPC 195166203232 Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss-core-ironhide",
+      "dropId": "ss4-ss86-ironhide",
+      "canonicalSku": "5010996126627",
+      "aliasesAdded": [
+        "F3175AS20",
+        "HASG0559",
+        "id:ss4-ss86-ironhide"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss-core-ironhide: (unnumbered) Ironhide (The Movie) — 2023 Core Class. SKU 5010996126627 = tfss-ss-core-ironhide UPC Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss93-hotrod",
+      "dropId": "ss5-ss-hotrod-tlk",
+      "canonicalSku": "195166151069",
+      "aliasesAdded": [
+        "TFSS-D-HOTROD",
+        "TFSS50-WW2HOTROD",
+        "F3169AS20",
+        "N-LF-142225",
+        "id:ss5-ss-hotrod-tlk"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss93-hotrod: 93 Autobot Hot Rod (The Last Knight) — 2022 Deluxe Class. image = SS-96 (Takara no.) TLK Hot Rod deluxe = Hasbro 93 Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "ss5-ss-cogman",
+      "dropId": "d14ss-tlk-cogman",
+      "canonicalSku": "HAS778829",
+      "aliasesAdded": [
+        "id:d14ss-tlk-cogman"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as ss5-ss-cogman: 39 Cogman (The Last Knight) — 2019 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-jazz-alt",
+      "dropId": "ss4-ss86-jazz",
+      "canonicalSku": "HSG1725",
+      "aliasesAdded": [
+        "id:ss4-ss86-jazz"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-jazz-alt: 86-01 Autobot Jazz (The Movie) — 2021 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-jazz-alt",
+      "dropId": "ss5-ss-jazz-86",
+      "canonicalSku": "HSG1725",
+      "aliasesAdded": [
+        "id:ss5-ss-jazz-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-jazz-alt: 86-01 Autobot Jazz (The Movie) — 2021 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-ironhide-alt",
+      "dropId": "ss5-ss-ironhide-86",
+      "canonicalSku": "195166181066",
+      "aliasesAdded": [
+        "F7489",
+        "HAS301161",
+        "HBR-229135-C",
+        "id:ss5-ss-ironhide-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-ironhide-alt: 86-17 Ironhide (The Movie) — 2022 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss92-crosshairs",
+      "dropId": "d14ss-aoe-crosshairs",
+      "canonicalSku": "195166181677",
+      "aliasesAdded": [
+        "id:d14ss-aoe-crosshairs"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss92-crosshairs: 92 Crosshairs (The Last Knight) — 2022 Deluxe Class. UPC 195166181677 = tfss-ss92-crosshairs UPC Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss90-galvatron",
+      "dropId": "ss5-ss-galvatron-aoy",
+      "canonicalSku": "4904810991465",
+      "aliasesAdded": [
+        "HAS181042",
+        "HBR-F3176AX21-C",
+        "F3176AS20",
+        "id:ss5-ss-galvatron-aoy"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss90-galvatron: 90 Galvatron (Age of Extinction) — 2022 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss90-galvatron",
+      "dropId": "d14ss-aoe-galvatron",
+      "canonicalSku": "4904810991465",
+      "aliasesAdded": [
+        "id:d14ss-aoe-galvatron"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss90-galvatron: 90 Galvatron (Age of Extinction) — 2022 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "ss5-ss-lockdown",
+      "dropId": "d14ss-aoe-lockdown",
+      "canonicalSku": "TFSS-11LOCKDOWN",
+      "aliasesAdded": [
+        "E0747AX00",
+        "id:d14ss-aoe-lockdown"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as ss5-ss-lockdown: 11 Lockdown (Age of Extinction) — 2018 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss85-arcee",
+      "dropId": "d14ss-bb-arcee",
+      "canonicalSku": "HAS181608",
+      "aliasesAdded": [
+        "id:d14ss-bb-arcee"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss85-arcee: 85 Arcee (Bumblebee) — 2022 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-coronation-ss",
+      "dropId": "ss5-ss-starscream-86",
+      "canonicalSku": "195166153421",
+      "aliasesAdded": [
+        "id:ss5-ss-starscream-86"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-coronation-ss: 86-12 Coronation Starscream (The Movie) — 2022 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss83-soundwave",
+      "dropId": "d14ss-bb-soundwave",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:d14ss-bb-soundwave"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss83-soundwave: 83 Soundwave (Bumblebee) — 2022 Voyager Class. Bumblebee-film Soundwave = 83 (only one) Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss81-wheeljack",
+      "dropId": "d14ss-bb-wheeljack",
+      "canonicalSku": "G0567",
+      "aliasesAdded": [
+        "G2198",
+        "TFSS-D-BBWHEELJACK",
+        "id:d14ss-bb-wheeljack"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss81-wheeljack: 81 Wheeljack (Bumblebee) — 2022 Deluxe Class. Bumblebee-film Wheeljack = 81 (only one) Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss82-ratchet",
+      "dropId": "d14ss-bb-ratchet",
+      "canonicalSku": "TFSS-D-BBRATCHET",
+      "aliasesAdded": [
+        "HAS206185",
+        "HBR-F71015L00-C",
+        "id:d14ss-bb-ratchet"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss82-ratchet: 82 Autobot Ratchet (Bumblebee) — 2022 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfc-starscream-ss03",
+      "dropId": "d14ss-2007-starscream",
+      "canonicalSku": "630509628179",
+      "aliasesAdded": [
+        "id:d14ss-2007-starscream"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfc-starscream-ss03: 06 Starscream (Transformers) — 2018 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfc-optimus-ss32",
+      "dropId": "d14ss-2007-optimus",
+      "canonicalSku": "630509769964",
+      "aliasesAdded": [
+        "id:d14ss-2007-optimus"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfc-optimus-ss32: 32 Optimus Prime (<!--Verbatim on the packaging.-->Transformers) — 2019 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss86-slug-daniel",
+      "dropId": "d14ss-aoe-slug",
+      "canonicalSku": "TFSLUG86",
+      "aliasesAdded": [
+        "id:d14ss-aoe-slug"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss86-slug-daniel: 86-07 Dinobot Slug & Daniel Witwicky (The Movie) — 2021 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss69-devastator",
+      "dropId": "d14ss-dotm-devastator",
+      "canonicalSku": "TFSS86DEVASTATOR",
+      "aliasesAdded": [
+        "id:d14ss-dotm-devastator"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss69-devastator: 69 Devastator (Revenge of the Fallen) — 2020 Multi-packs.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss65-blitzwing",
+      "dropId": "d14ss-bb-blitzwing",
+      "canonicalSku": "5010996376015",
+      "aliasesAdded": [
+        "id:d14ss-bb-blitzwing"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss65-blitzwing: 65 Blitzwing (Bumblebee) — 2020 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss65-blitzwing",
+      "dropId": "ss5-ss-blitzwing",
+      "canonicalSku": "5010996376015",
+      "aliasesAdded": [
+        "E8294AS00",
+        "id:ss5-ss-blitzwing"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss65-blitzwing: 65 Blitzwing (Bumblebee) — 2020 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss58-roadbuster",
+      "dropId": "d14ss-dotm-roadbuster",
+      "canonicalSku": "630509900619",
+      "aliasesAdded": [
+        "E7200AS00",
+        "id:d14ss-dotm-roadbuster"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss58-roadbuster: 58 Roadbuster (Dark of the Moon) — 2020 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss56-shockwave",
+      "dropId": "tfc-shockwave-ss10",
+      "canonicalSku": "HSG0483",
+      "aliasesAdded": [
+        "id:tfc-shockwave-ss10"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss56-shockwave: 56 Shockwave (Dark of the Moon w/ Brains, Wheelie, and Paratrooper) — 2020 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss56-shockwave",
+      "dropId": "d14ss-dotm-shockwave",
+      "canonicalSku": "HSG0483",
+      "aliasesAdded": [
+        "id:d14ss-dotm-shockwave"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss56-shockwave: 56 Shockwave (Dark of the Moon w/ Brains, Wheelie, and Paratrooper) — 2020 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss55-scavenger",
+      "dropId": "d14ss-dotm-scavenger",
+      "canonicalSku": "5010996323439",
+      "aliasesAdded": [
+        "HSG0570",
+        "id:d14ss-dotm-scavenger"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss55-scavenger: 55 Constructicon Scavenger (Revenge of the Fallen) — 2020 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss53-mixmaster",
+      "dropId": "d14ss-dotm-mixmaster",
+      "canonicalSku": "5010996323521",
+      "aliasesAdded": [
+        "id:d14ss-dotm-mixmaster"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfss-ss53-mixmaster: 53 Constructicon Mixmaster (Revenge of the Fallen) — 2020 Voyager Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "ss5-ss-shatter",
+      "dropId": "d14ss-bb-shatter",
+      "canonicalSku": "HAS788835",
+      "aliasesAdded": [
+        "id:d14ss-bb-shatter"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as ss5-ss-shatter: 40 Shatter (Bumblebee Plymouth) — 2019 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "ss5-ss-dropkick",
+      "dropId": "d14ss-bb-dropkick",
+      "canonicalSku": "HAS707591",
+      "aliasesAdded": [
+        "HAS788781",
+        "id:d14ss-bb-dropkick"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as ss5-ss-dropkick: 22 Dropkick (Bumblebee SuperCobra) — 2018 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "afmon-hasbro-barricade-hsg1928",
+      "dropId": "d14ss-tlk-barricade",
+      "canonicalSku": "HSG1928",
+      "aliasesAdded": [
+        "HASG1928",
+        "TFSS-D-TLK-BARRICADE",
+        "TFSS-28BARRICADE-15THLOOSE",
+        "TFSS-28BARRICADE",
+        "E3700AS00",
+        "id:d14ss-tlk-barricade"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as afmon-hasbro-barricade-hsg1928: (unnumbered) Barricade (The Last Knight) — 2026 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfc-grimlock-ss09",
+      "dropId": "d14ss-aoe-grimlock",
+      "canonicalSku": "5010996400642",
+      "aliasesAdded": [
+        "G1888",
+        "id:d14ss-aoe-grimlock"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfc-grimlock-ss09: 07 Grimlock (Age of Extinction) — 2018 Leader Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfc-soundwave-ss12",
+      "dropId": "d14ss-dotm-soundwave",
+      "canonicalSku": "630509900701",
+      "aliasesAdded": [
+        "id:d14ss-dotm-soundwave"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as tfc-soundwave-ss12: 51 Soundwave (Dark of the Moon w/ Laserbeak) — 2020 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "afmon-hasbro-transformers-studio-series-transformers-optimus-prime-awakening-bumblebee-hsg5856",
+      "dropId": "afmon-hasbro-transformers-optimus-prime-awakening-studio-series-deluxe-class-bumblebee-bbts-197679",
+      "canonicalSku": "HSG5856",
+      "aliasesAdded": [
+        "id:afmon-hasbro-transformers-optimus-prime-awakening-studio-series-deluxe-class-bumblebee-bbts-197679"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): Same release as afmon-hasbro-transformers-studio-series-transformers-optimus-prime-awakening-bumblebee-hsg5856: (unnumbered) Bumblebee (Optimus Prime: Awakening) — 2027 Deluxe Class.  Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss-one-elita",
+      "dropId": "d14ss-86-elita",
+      "canonicalSku": "5010996323446",
+      "aliasesAdded": [
+        "id:d14ss-86-elita"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): No Movie Elita-1 in Hasbro SS; row code G1851 is already an alias of tfss-ss-one-elita (Transformers One Elita-1). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": "tfss-ss-one-starscream",
+      "dropId": "d14ss-dotm-starscream",
+      "canonicalSku": "5010996408495",
+      "aliasesAdded": [
+        "id:d14ss-dotm-starscream"
+      ],
+      "reason": "Studio Series audit 2026-09-30 (merge): No DOTM Starscream in Hasbro SS; row code G0566 and image are the Transformers One Starscream (same code on ss6-ss-starscream-tfone). Sources: https://tfwiki.net/wiki/Studio_Series"
     }
   ],
   "flagged": [
@@ -69588,7 +70895,7 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-09-30T20:36:24.719918+00:00",
+  "updatedAt": "2026-09-30T21:01:19.508305+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -69666,6 +70973,12 @@
       "removed": 69,
       "fixes": 16,
       "invented": 22
+    },
+    "studioSeriesAudit": {
+      "at": "2026-09-30T21:01:19.508305+00:00",
+      "removed": 143,
+      "fixes": 99,
+      "invented": 32
     }
   },
   "removed": [
@@ -72235,6 +73548,294 @@
       "aliasesMoved": {},
       "aliasesDropped": [],
       "reason": "Showz follow-up 2026-09-30: Invented product: no Masterpiece Movie Series Rampage exists; MPM-12 is Optimus Prime (Bumblebee film), MPM-12N Nemesis Prime. Row has no SKU/image. Sources: https://tfwiki.net/wiki/Masterpiece_Movie_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-86-bombshell",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: Insecticons were never sold individually in Hasbro Studio Series; only the 2026 MTMTE Bombshell/Shrapnel/Kickback 3-pack exists (listed as missing). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-86-kickback",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: Insecticons were never sold individually in Hasbro Studio Series; only the 2026 MTMTE Bombshell/Shrapnel/Kickback 3-pack exists (listed as missing). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-86-sharpnel",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: Insecticons were never sold individually in Hasbro Studio Series; only the 2026 MTMTE Bombshell/Shrapnel/Kickback 3-pack exists (listed as missing). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss6-ss-predaking",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series release of this G1 combiner exists (TFWiki Studio Series list); placeholder $24.99, no SKU. Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss6-ss-abominus",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series release of this G1 combiner exists (TFWiki Studio Series list); placeholder $24.99, no SKU. Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss6-ss-defensor-ss",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series release of this G1 combiner exists (TFWiki Studio Series list); placeholder $24.99, no SKU. Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss6-ss-computron",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series release of this G1 combiner exists (TFWiki Studio Series list); placeholder $24.99, no SKU. Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss6-ss-superion-ss",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series release of this G1 combiner exists (TFWiki Studio Series list); placeholder $24.99, no SKU. Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss6-ss-bruticus-ss",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series release of this G1 combiner exists (TFWiki Studio Series list); placeholder $24.99, no SKU. Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss6-ss-menasor-ss",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series release of this G1 combiner exists (TFWiki Studio Series list); placeholder $24.99, no SKU. Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss6-ss-slag-86",
+      "canonicalSku": "HSF0715",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series Slag release exists (TFWiki lists Slug only, 86-07). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss4-ss86-slag",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series Slag release exists (TFWiki lists Slug only, 86-07). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-rotb-strato",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series Stratosphere exists (TFWiki Studio Series list). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss4-ss111-transit",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series Transit exists (TFWiki Studio Series list). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-rotb-transit",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series Transit exists (TFWiki Studio Series list). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss4-ss86-trailbreaker",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series release of this character exists (TFWiki Studio Series list). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss6-ss-transit",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series Transit exists (TFWiki Studio Series list). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss4-ss86-bluestreak",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series release of this character exists (TFWiki Studio Series list). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss6-ss-stratosphere",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series Stratosphere exists (TFWiki Studio Series list). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-86-cup",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series Cup (Kup) other than 86-02 Kup; \"Cup\" SS-86-02 at $14.99 with no SKU is invented (86-02 Kup already present). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-86-unicron",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series Unicron exists (HasLab Unicron is War for Cybertron, not Studio Series). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss5-ss-optimus-tlk",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Hasbro Studio Series Optimus Prime from The Last Knight exists (TFWiki Studio Series list); row has no SKU/UPC. Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss5-ss-unircron-86",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series Unicron exists (HasLab Unicron is War for Cybertron, not Studio Series). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-bb-optimus-chase",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No \"Chase\"/\"Corp\" Optimus Prime variant exists in Hasbro Studio Series (TFWiki); only 38 Optimus Prime (Bumblebee). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-bb-optimus-corp",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No \"Chase\"/\"Corp\" Optimus Prime variant exists in Hasbro Studio Series (TFWiki); only 38 Optimus Prime (Bumblebee). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-tlk-infernocus",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series release of this TLK character exists (TFWiki Studio Series list). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-aoe-slash",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Hasbro Studio Series release of this AOE Dinobot/character (TFWiki Studio Series list). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "ss5-ss-stratosphere",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series Stratosphere exists (TFWiki Studio Series list). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-aoe-strafe",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Hasbro Studio Series release of this AOE Dinobot/character (TFWiki Studio Series list). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-aoe-snooper",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Hasbro Studio Series release of this AOE Dinobot/character (TFWiki Studio Series list). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-tlk-nitro",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Studio Series release of this TLK character exists (TFWiki Studio Series list). Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "d14ss-tlk-optimus",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Studio Series audit 2026-09-30: No Hasbro Studio Series Optimus Prime from The Last Knight exists (TFWiki Studio Series list); row has no SKU/UPC. Sources: https://tfwiki.net/wiki/Studio_Series"
     }
   ],
   "strippedCodes": [

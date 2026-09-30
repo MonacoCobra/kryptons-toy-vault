@@ -57128,7 +57128,8 @@
       "alias:staractionfigures",
       "alias:toydojo",
       "alias:hobbyfigures",
-      "alias:collecticon"
+      "alias:collecticon",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-2026-wave-1-alpha-trion-5010996348661.jpg?v=1758922405",
@@ -62427,7 +62428,8 @@
       "alias:indemandtoys",
       "alias:collecticon",
       "alias:nerdzoic",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2026-wave-5-soundwave-transformers-one-5010996380517.jpg?v=1776202369",
@@ -67501,7 +67503,8 @@
       "sku-alias",
       "alias:staractionfigures",
       "alias:toydojo",
-      "alias:collecticon"
+      "alias:collecticon",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2026-wave-1-airachnid-5010996380036.jpg?v=1758922408",
@@ -75724,7 +75727,8 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:toyarena"
+      "alias:toyarena",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-leader-class-2025-wave-2-shockwave-5010996297938.jpg?v=1736889513",
@@ -82871,7 +82875,8 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:toyarena",
-      "alias:indemandtoys"
+      "alias:indemandtoys",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-leader-class-2025-wave-3-megatron-5010996319876.jpg?v=1750969428",
@@ -101888,7 +101893,8 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2025-wave-2-jazz-5010996301147.jpg?v=1736889584",
@@ -109056,61 +109062,6 @@
     "source": "curated-bbts-wave4",
     "sku": "5010996243683",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-exclusive-r5-d5-bd-72-pit-droids-5010996243683.jpg?v=1717457245"
-  },
-  {
-    "id": "ss6-ss-alpha-trion",
-    "name": "Alpha Trion",
-    "subtitle": "TF One Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2025-04-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.45,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena",
-      "sku:japan-figure",
-      "sku-gtin",
-      "imgsku:japan-figure"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "4904810941408",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/takara-tomy-studio-series-transformers-ts-22-alpha-trion-figure_1_1778485542.webp?v=1778485726"
-  },
-  {
-    "id": "ss6-ss-airachnid",
-    "name": "Airachnid",
-    "subtitle": "TF One Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2025-04-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "HAS380036",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996380036a.webp?v=1766167722"
   },
   {
     "id": "gc6-gc-solo07",
@@ -120663,32 +120614,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/IMG_3996.JPG?v=1571609218"
   },
   {
-    "id": "ss6-ss-starscream-tfone",
-    "name": "Starscream",
-    "subtitle": "TF One Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2025-03-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toydojo",
-      "image-sku",
-      "image-bake",
-      "imgsku:toydojo"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "HSG0566",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0564/2783/9650/files/0264469cef5948b097a662a2f59b7f54xl_015c0ac7-809b-405d-a23d-a17910632d64.webp?v=1750959513"
-  },
-  {
     "id": "ml6-ml-starlord-vol3",
     "name": "Star-Lord (2023)",
     "subtitle": "Vol. 3 Wave6",
@@ -120746,37 +120671,12 @@
       "alias:toydojo",
       "alias:hobbyfigures",
       "alias:collecticon",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-2025-wave-1-sentinel-prime-5010996301178-pkg.jpg?v=1744747512",
     "sku": "5010996301178"
-  },
-  {
-    "id": "ss6-ss-sentinel-tfone",
-    "name": "Sentinel Prime",
-    "subtitle": "TF One Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2025-03-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.45,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "HAS301178",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996301178a.webp?v=1746139694"
   },
   {
     "id": "tfss-ss-constructicon-scavenger",
@@ -121159,26 +121059,6 @@
     "source": "curated-densify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN8970-3.jpg?v=1733288946",
     "sku": null
-  },
-  {
-    "id": "d14ss-86-bombshell",
-    "name": "Bombshell",
-    "subtitle": "SS-86-27 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2025-03-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.25,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "fm-thundercats-tygra-fm",
@@ -123402,7 +123282,8 @@
       "alias:indemandtoys",
       "alias:hobbyfigures",
       "alias:collecticon",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-exclusive-starscream-5010996408495.jpg?v=1780680719",
@@ -123581,34 +123462,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-2025-wave-3-nightsister-merrin-28-5010996309266.jpg?v=1745444982"
   },
   {
-    "id": "ss6-ss-megatron-tfone",
-    "name": "Megatron",
-    "subtitle": "TF One Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2025-02-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.5,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toydojo",
-      "sku-alias",
-      "alias:hasbro-pulse",
-      "image-sku",
-      "image-bake",
-      "imgsku:toydojo"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "HSF9849",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0564/2783/9650/files/01ae91ff-b2d0-479c-890f-85ad919fb1ec.webp?v=1730142704"
-  },
-  {
     "id": "ml5-ml-kingpin",
     "name": "Kingpin (2025)",
     "subtitle": "Spider-Man",
@@ -123638,26 +123491,6 @@
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010993731718.webp?v=1769735266",
     "sku": "HAS731718"
-  },
-  {
-    "id": "d14ss-86-kickback",
-    "name": "Kickback",
-    "subtitle": "SS-86-26 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2025-02-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.25,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "mlc-kang-classic",
@@ -123884,7 +123717,8 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:toyarena"
+      "alias:toyarena",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-leader-class-2025-wave-1-apelinq-116-195166278308.jpg?v=1730501107",
@@ -126375,26 +126209,6 @@
     "imageUrl": "https://static.wixstatic.com/media/adc447_a968488f26b7457c9adeb3bc9dd4dd12~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a968488f26b7457c9adeb3bc9dd4dd12~mv2.jpg"
   },
   {
-    "id": "d14ss-86-sharpnel",
-    "name": "Sharpnel",
-    "subtitle": "SS-86-25 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2025-01-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.25,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "joec-scrap-iron",
     "name": "Scrap-Iron",
     "subtitle": "Anti-Armor",
@@ -126441,35 +126255,6 @@
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN3152-5.jpg?v=1672433172",
     "sku": null
-  },
-  {
-    "id": "ss6-ss-optimus-tfone",
-    "name": "Optimus Prime",
-    "subtitle": "TF One Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2025-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.5,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toydojo",
-      "sku-alias",
-      "alias:toyarena",
-      "alias:toydojo",
-      "image-sku",
-      "image-bake",
-      "imgsku:toydojo"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "G02215L00",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0564/2783/9650/files/e3eb8d1b-6cb0-4930-868a-20a3256d0ccc.webp?v=1721071174"
   },
   {
     "id": "d14joe-nunchuk",
@@ -126727,37 +126512,12 @@
       "sku-alias",
       "alias:toydojo",
       "alias:hobbyfigures",
-      "alias:collecticon"
+      "alias:collecticon",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2025-wave-1-elita-1-5010996323446-pkg.jpg?v=1770066912",
     "sku": "5010996323446"
-  },
-  {
-    "id": "ss6-ss-elita-tfone",
-    "name": "Elita-1",
-    "subtitle": "TF One Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2025-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "HAS323446",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996323446a.webp?v=1755297918"
   },
   {
     "id": "ml4-elektra-red",
@@ -129105,7 +128865,7 @@
   {
     "id": "d14ss-86-gnaw",
     "name": "Gnaw",
-    "subtitle": "SS-86-24 The Movie",
+    "subtitle": "SS-86-08 The Movie (package refresh)",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -129127,7 +128887,8 @@
       "alias:toyarena",
       "alias:toynk",
       "alias:toydojo",
-      "alias:indemandtoys"
+      "alias:indemandtoys",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2024-wave-2-gnaw-reissue-195166250557.jpg?v=1712353892",
@@ -133381,7 +133142,7 @@
   {
     "id": "tfss-ss86-optimus-cmd",
     "name": "Optimus Prime",
-    "subtitle": "SS-86 Commander The Movie",
+    "subtitle": "SS-86-31 The Movie Commander",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -133402,7 +133163,8 @@
       "alias:collecticon",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "5010996211835",
@@ -133602,31 +133364,6 @@
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/gi-joe-classified-wave-25-hydro-viper-199-5010996361530.jpg?v=1771369221",
     "sku": "5010996361530"
-  },
-  {
-    "id": "d14ss-86-galvatron",
-    "name": "Galvatron",
-    "subtitle": "SS-86-23 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-11-01",
-    "msrp": 59.99,
-    "scale": "Leader",
-    "demand": 1.55,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:staractionfigures",
-      "image-sku",
-      "image-bake",
-      "imgsku:staractionfigures"
-    ],
-    "source": "curated-densify",
-    "sku": "G0481",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/g0481as00-combo-24-2400px-133dpi.jpg?v=1781090404"
   },
   {
     "id": "joec-classified-duke-reset",
@@ -136346,11 +136083,11 @@
   {
     "id": "ss6-ss-optimus-bb",
     "name": "Optimus Prime",
-    "subtitle": "Bumblebee Movie Wave6",
+    "subtitle": "SS-38 Bumblebee",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-10-01",
+    "releaseDate": "2019",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
@@ -136365,7 +136102,9 @@
       "alias:indemandtoys",
       "image-sku",
       "image-bake",
-      "imgsku:staractionfigures"
+      "imgsku:staractionfigures",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave6",
     "sku": "E7112",
@@ -136520,7 +136259,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "195166278315",
@@ -136574,31 +136314,6 @@
     "source": "curated-densify",
     "imageUrl": "https://static.wixstatic.com/media/adc447_61e15b1e8f1046b19efb174aa25c3304~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_61e15b1e8f1046b19efb174aa25c3304~mv2.jpg",
     "sku": null
-  },
-  {
-    "id": "d14ss-86-cyclonus",
-    "name": "Cyclonus",
-    "subtitle": "SS-86-22 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-10-01",
-    "msrp": 49.99,
-    "scale": "Voyager",
-    "demand": 1.4,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "G04785L05",
-    "imageUrl": null
   },
   {
     "id": "joec-classified-cobra-commander-reset",
@@ -141690,7 +141405,8 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-leader-class-2024-wave-3-springer-30-195166256795.jpg?v=1715903426",
@@ -141731,7 +141447,7 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-09-01",
+    "releaseDate": "2025",
     "msrp": 34.99,
     "scale": "Voyager",
     "demand": 1.35,
@@ -141745,7 +141461,9 @@
       "image-bake",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:toyarena"
+      "alias:toyarena",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "195166277790",
@@ -141776,33 +141494,6 @@
     "source": "curated-bbts-wave3",
     "sku": "5010996142023",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-disney-ahsoka-box-art-2023-wave-3b-shin-hati-5010996142023.jpg?v=1696631592"
-  },
-  {
-    "id": "d14ss-86-scourge",
-    "name": "Scourge",
-    "subtitle": "SS-86-21 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-09-01",
-    "msrp": 49.99,
-    "scale": "Voyager",
-    "demand": 1.4,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore",
-      "sku-alias",
-      "alias:hasbro-pulse"
-    ],
-    "source": "curated-densify",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-voyager-class-2021-wave-1-scourge-86-05-630509974948.jpg?v=1697586085",
-    "sku": "630509974948"
   },
   {
     "id": "ml5-ml-rhino",
@@ -141923,27 +141614,6 @@
     "sku": "GIRVIP01"
   },
   {
-    "id": "ss6-ss-predaking",
-    "name": "Predaking",
-    "subtitle": "Studio Series Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-09-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.55,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "bs6-bs-poe-tros",
     "name": "Poe Dameron",
     "subtitle": "TROS Wave6",
@@ -142047,7 +141717,8 @@
       "alias:toyarena",
       "alias:toydojo",
       "alias:toynk",
-      "alias:hobbyfigures"
+      "alias:hobbyfigures",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "5010996346179",
@@ -142123,7 +141794,8 @@
       "alias:collecticon",
       "alias:toyarena",
       "alias:hobbyfigures",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "5010996346049",
@@ -142594,27 +142266,6 @@
     "source": "curated",
     "sku": "HBR-219371_BA-C",
     "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/products/HBR-219371_BA-CA.jpg?v=1679857502"
-  },
-  {
-    "id": "ss6-ss-abominus",
-    "name": "Abominus",
-    "subtitle": "Studio Series Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-09-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.45,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "ml6-ml-abomination-w6",
@@ -145377,32 +145028,6 @@
     "imageUrl": null
   },
   {
-    "id": "d14ss-86-shockwave",
-    "name": "Shockwave",
-    "subtitle": "SS-86-20 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-08-01",
-    "msrp": 49.99,
-    "scale": "Voyager",
-    "demand": 1.45,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-bake",
-      "img:mephitsu",
-      "image-sku",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "G04785L04",
-    "imageUrl": "https://static.wixstatic.com/media/adc447_641b9d7af05445fea053c84cb7d205a2~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_641b9d7af05445fea053c84cb7d205a2~mv2.jpg"
-  },
-  {
     "id": "ml6-ml-shehulk-attorney",
     "name": "She-Hulk Attorney (2024)",
     "subtitle": "Attorney Wave6",
@@ -145762,7 +145387,7 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-08-01",
+    "releaseDate": "2025",
     "msrp": 24.99,
     "scale": "Deluxe",
     "demand": 1.2,
@@ -145780,53 +145405,13 @@
       "alias:collecticon",
       "alias:kitsap",
       "alias:hobbyfigures",
-      "alias:toyarena"
+      "alias:toyarena",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2025-wave-1-double-punch-115-195166280554.jpg?v=1730501107",
     "sku": "195166280554"
-  },
-  {
-    "id": "ss6-ss-defensor-ss",
-    "name": "Defensor",
-    "subtitle": "Studio Series Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-08-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.45,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "ss6-ss-computron",
-    "name": "Computron",
-    "subtitle": "Studio Series Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-08-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.45,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "d14bs-bs-wolffe-ahsoka",
@@ -145914,7 +145499,8 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:collecticon"
+      "alias:collecticon",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-level-bumblebee-29-5010996232335.jpg?v=1718399195",
@@ -148565,27 +148151,6 @@
     "imageUrl": null
   },
   {
-    "id": "ss6-ss-superion-ss",
-    "name": "Superion",
-    "subtitle": "Studio Series Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-07-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.5,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "tfss-ss-sunstreaker-concept",
     "name": "Sunstreaker",
     "subtitle": "SS-111 Concept Art",
@@ -148613,57 +148178,6 @@
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2024-wave-2-sunstreaker-195166249759_67aa2916-8b4d-4144-b441-9c536a01e4ee.jpg?v=1781203010",
     "sku": "195166249759dmg"
-  },
-  {
-    "id": "ss4-ss86-springer",
-    "name": "Springer",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-07-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toydojo",
-      "image-sku",
-      "image-bake",
-      "imgsku:toydojo"
-    ],
-    "source": "curated-bbts-wave4",
-    "sku": "HSF8774",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0564/2783/9650/files/e8d44d5a-7413-43d1-820c-56e3a37737ee.webp?v=1715715918"
-  },
-  {
-    "id": "d14ss-86-soundwave",
-    "name": "Soundwave",
-    "subtitle": "SS-86-19 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-07-01",
-    "msrp": 49.99,
-    "scale": "Voyager",
-    "demand": 1.5,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:staractionfigures",
-      "image-sku",
-      "image-bake",
-      "imgsku:staractionfigures"
-    ],
-    "source": "curated-densify",
-    "sku": "G1904",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/G19045L00_combo_25-S.jpg?v=1785759863"
   },
   {
     "id": "ml5-ml-shocker",
@@ -148824,11 +148338,11 @@
   {
     "id": "tfss-ss-nemesis-2024",
     "name": "Nemesis Prime",
-    "subtitle": "Voyager Exclusive",
+    "subtitle": "TLK Leader 2026",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-07-01",
+    "releaseDate": "2026",
     "msrp": 129.99,
     "scale": "Voyager",
     "demand": 1.55,
@@ -148847,7 +148361,9 @@
       "alias:staractionfigures",
       "alias:toydojo",
       "alias:toyarena",
-      "alias:hobbyfigures"
+      "alias:hobbyfigures",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-leader-class-2026-wave-1-nemesis-prime-5010996348692.jpg?v=1758922099",
@@ -149143,27 +148659,6 @@
       "curated"
     ],
     "source": "curated-bbts-wave4",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "ss6-ss-bruticus-ss",
-    "name": "Bruticus",
-    "subtitle": "Studio Series Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-07-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.5,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
     "sku": null,
     "imageUrl": null
   },
@@ -153154,7 +152649,8 @@
       "sku:legendztoys",
       "image-sku",
       "image-bake",
-      "imgsku:legendztoys"
+      "imgsku:legendztoys",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "TFSWOOP2",
@@ -153418,27 +152914,6 @@
     ],
     "source": "curated-bbts-wave3",
     "sku": "HASF7055",
-    "imageUrl": null
-  },
-  {
-    "id": "ss6-ss-menasor-ss",
-    "name": "Menasor",
-    "subtitle": "Studio Series Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-06-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.5,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
     "imageUrl": null
   },
   {
@@ -153757,37 +153232,6 @@
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-droids-boba-fett-5010996386816.jpg?v=1780680707",
     "sku": "5010996386816"
-  },
-  {
-    "id": "ss4-ss86-blaster",
-    "name": "Blaster",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-06-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena",
-      "sku-alias",
-      "alias:toydojo",
-      "alias:hasbro-pulse",
-      "alias:collecticon",
-      "alias:indemandtoys"
-    ],
-    "source": "curated-bbts-wave4",
-    "sku": "HAS211859",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996211859h.webp?v=1713467637"
   },
   {
     "id": "d14joe-billy",
@@ -156954,32 +156398,6 @@
     "sku": "5010993964369"
   },
   {
-    "id": "ss4-ss86-galvatron",
-    "name": "Galvatron",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-05-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-bbts-wave4",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-voyager-class-2022-wave-3-galvatron-195166181042.jpg?v=1697586000",
-    "sku": "195166181042"
-  },
-  {
     "id": "joec-frostbite",
     "name": "Frostbite",
     "subtitle": "Snow Cat Driver",
@@ -157191,11 +156609,11 @@
   {
     "id": "ss4-ss86-cyclonus",
     "name": "Cyclonus",
-    "subtitle": "SS-86",
+    "subtitle": "The Movie Voyager 2026",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-05-01",
+    "releaseDate": "2026",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -157208,7 +156626,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-2026-wave-4-cyclonus-5010996376084.jpg?v=1777664039",
@@ -159426,61 +158846,6 @@
     "imageUrl": null
   },
   {
-    "id": "ss4-ss86-ultra-magnus",
-    "name": "Ultra Magnus",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-04-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "sku-alias",
-      "alias:collecticon",
-      "alias:hasbro-pulse",
-      "alias:solarisjapan"
-    ],
-    "source": "curated-bbts-wave4",
-    "sku": "5010996147394",
-    "imageUrl": null
-  },
-  {
-    "id": "ss6-ss-swoop-86",
-    "name": "Swoop",
-    "subtitle": "86 Movie Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-04-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena",
-      "sku-alias",
-      "alias:hasbro-pulse"
-    ],
-    "source": "curated-bbts-wave6",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/195166256573A.jpg?v=1719616315",
-    "sku": "HAS256573"
-  },
-  {
     "id": "d14joe-stormshadow-arctic",
     "name": "Storm Shadow",
     "subtitle": "Arctic Mission",
@@ -159642,31 +159007,6 @@
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN6157_2_086e8cea-21c6-4f3b-865c-662399fd1aa3.jpg?v=1601234804",
     "sku": null
-  },
-  {
-    "id": "d14ss-86-perceptor",
-    "name": "Perceptor",
-    "subtitle": "SS-86-16 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-04-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.35,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "195166181660",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-deluxe-class-2021-wave-4-perceptor-195166158556-pkg.jpg?v=1697585880"
   },
   {
     "id": "tfss-ss-core-mohawk",
@@ -160086,7 +159426,8 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:collecticon",
-      "alias:hobbyfigures"
+      "alias:hobbyfigures",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-blaster-eject-5010996211859.jpg?v=1763512071",
@@ -160120,32 +159461,6 @@
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/star-wars-the-black-series-box-art-2022-wave-4-bix-caleen-5010994179304.jpg?v=1665517040",
     "sku": "5010994179304"
-  },
-  {
-    "id": "ss4-ss86-arcee",
-    "name": "Arcee",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-04-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-bbts-wave4",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-deluxe-class-2022-wave-3-arcee-195166181639.jpg?v=1697586029",
-    "sku": "195166181639"
   },
   {
     "id": "gc6-gc-solo05",
@@ -163752,31 +163067,6 @@
     "sku": "5010996243621"
   },
   {
-    "id": "d14ss-86-springer",
-    "name": "Springer",
-    "subtitle": "SS-86-15 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-03-01",
-    "msrp": 49.99,
-    "scale": "Voyager",
-    "demand": 1.4,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:hobbyfigures",
-      "image-sku",
-      "image-bake",
-      "imgsku:hobbyfigures"
-    ],
-    "source": "curated-densify",
-    "sku": "HASF8774",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0611/4030/4091/files/The-Transformers-The-Movie-Studio-Series-Leader-Cl-6.jpg?v=1716512837"
-  },
-  {
     "id": "ml5-ml-spidergwen-v2",
     "name": "Spider-Gwen (2024)",
     "subtitle": "Ghost-Spider v2",
@@ -163808,35 +163098,6 @@
     "sku": "5010996237880"
   },
   {
-    "id": "ss6-ss-snarl-86",
-    "name": "Snarl",
-    "subtitle": "86 Movie Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-03-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena",
-      "sku-alias",
-      "alias:legendztoys",
-      "alias:hasbro-pulse"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "HAS348715",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996373045b.jpg?v=1777587536"
-  },
-  {
     "id": "d14joe-snakeeyes-desert",
     "name": "Snake Eyes",
     "subtitle": "Desert Mission",
@@ -163863,34 +163124,6 @@
     "source": "curated-densify",
     "sku": "5010996106155",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/gi-joe-classified-desert-commando-snake-eyes-92-5010996106155.jpg?v=1694136384"
-  },
-  {
-    "id": "ss6-ss-sludge-86",
-    "name": "Sludge",
-    "subtitle": "86 Movie Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-03-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:legendztoys",
-      "image-sku",
-      "image-bake",
-      "imgsku:legendztoys",
-      "sku-alias",
-      "alias:toyarena"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "TFSLUDG1",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0704/5169/1800/files/Transformers-Studio-Series-Dinobot-Leader-Sludge.png?v=1686189676"
   },
   {
     "id": "cls6-cls-short-fuse",
@@ -164154,35 +163387,6 @@
     "sku": "G2080"
   },
   {
-    "id": "ss4-ss86-kup",
-    "name": "Kup",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-03-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore",
-      "sku-alias",
-      "alias:collecticon",
-      "alias:hasbro-pulse"
-    ],
-    "source": "curated-bbts-wave4",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-deluxe-class-2021-wave-1-blurr-86-03-630509978281-pkg.png?v=1697586097",
-    "sku": "630509978236"
-  },
-  {
     "id": "lc6-lc-king-mondo",
     "name": "King Mondo",
     "subtitle": "Zeo Wave6",
@@ -164253,35 +163457,6 @@
     "source": "curated-bbts-wave3",
     "sku": "G0074",
     "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/g0074-prod-sw-bl-dlx-fig-4-0001-white.jpg?v=1781089988"
-  },
-  {
-    "id": "ss4-ss86-hotrod",
-    "name": "Hot Rod",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-03-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore",
-      "sku-alias",
-      "alias:collecticon",
-      "alias:planet-af"
-    ],
-    "source": "curated-bbts-wave4",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-voyager-class-2021-wave-1-hot-rod-86-04-630509974931.jpg?v=1697586097",
-    "sku": "630509974931"
   },
   {
     "id": "cls5-cls-grunts",
@@ -167130,31 +166305,6 @@
     "imageUrl": null
   },
   {
-    "id": "d14ss-86-ultras",
-    "name": "Ultra Magnus",
-    "subtitle": "SS-86-14 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-02-01",
-    "msrp": 59.99,
-    "scale": "Leader",
-    "demand": 1.5,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:toydojo",
-      "image-sku",
-      "image-bake",
-      "imgsku:toydojo"
-    ],
-    "source": "curated-densify",
-    "sku": "HSF6162",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0564/2783/9650/files/44b59f80-f6fc-4031-bad9-38b0031a60d5.jpg?v=1692945440"
-  },
-  {
     "id": "bs6-bs-tech-w6",
     "name": "Tech",
     "subtitle": "Bad Batch Wave6",
@@ -167185,32 +166335,6 @@
     "source": "curated-bbts-wave6",
     "sku": "5010996106919",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-box-art-exclusive-tech-mercenary-gear-5010996106919.jpg?v=1710273016"
-  },
-  {
-    "id": "ss4-ss86-swoop",
-    "name": "Swoop",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-02-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-bbts-wave4",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-leader-class-2024-wave-3-swoop-195166256573.jpg?v=1712266751",
-    "sku": "195166256573"
   },
   {
     "id": "tfss-ssge06-starscream",
@@ -167283,61 +166407,6 @@
     "source": "curated-bbts-wave2",
     "sku": null,
     "imageUrl": null
-  },
-  {
-    "id": "ss4-ss86-snarl",
-    "name": "Snarl",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-02-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.2,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore",
-      "sku-alias",
-      "alias:staractionfigures",
-      "alias:planet-af"
-    ],
-    "source": "curated-bbts-wave4",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-leader-class-2023-wave-2-snarl-195166203249.jpg?v=1682972457",
-    "sku": "195166203249"
-  },
-  {
-    "id": "ss6-ss-slag-86",
-    "name": "Slag",
-    "subtitle": "86 Movie Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-02-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toydojo",
-      "image-sku",
-      "image-bake",
-      "imgsku:toydojo"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "HSF0715",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0564/2783/9650/products/STL197725_7.jpg?v=1621627514"
   },
   {
     "id": "d14ml-ml-classic-satana",
@@ -170281,56 +169350,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0704/5169/1800/files/G.I.-Joe-Classified-Series-Snake-Eyes-Walmart-Exclusive-Retro.png?v=1689556645"
   },
   {
-    "id": "ss4-ss86-sludge",
-    "name": "Sludge",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.2,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore",
-      "sku-alias",
-      "alias:hasbro-pulse",
-      "alias:hobbyfigures"
-    ],
-    "source": "curated-bbts-wave4",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-leader-class-dinobot-sludge-195166169866-pkg.png?v=1697585985",
-    "sku": "195166169866"
-  },
-  {
-    "id": "ss4-ss86-slag",
-    "name": "Slag",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated"
-    ],
-    "source": "curated-bbts-wave4",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "mlc-silver-surfer-retro",
     "name": "Silver Surfer (2025)",
     "subtitle": "Retro",
@@ -170507,11 +169526,11 @@
   {
     "id": "d14ss-86-kup",
     "name": "Kup",
-    "subtitle": "SS-86-13 The Movie",
+    "subtitle": "SS-86-02BB The Movie (Buzzworthy Bumblebee)",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-01-01",
+    "releaseDate": "2022",
     "msrp": 29.99,
     "scale": "Deluxe",
     "demand": 1.3,
@@ -170523,7 +169542,9 @@
       "sku:collecticon",
       "image-sku",
       "image-bake",
-      "imgsku:collecticon"
+      "imgsku:collecticon",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "TFSS-86KUP-BUZZWORTHY",
@@ -173250,26 +172271,6 @@
     "sku": "5010993789771"
   },
   {
-    "id": "d14ss-rotb-strato",
-    "name": "Stratosphere",
-    "subtitle": "SS-114 ROTB",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-12-01",
-    "msrp": 59.99,
-    "scale": "Leader",
-    "demand": 1.35,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "cls5-cls-steeler",
     "name": "Steeler",
     "subtitle": "Classified",
@@ -173532,28 +172533,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996356178b.webp?v=1763516508"
   },
   {
-    "id": "d14ss-86-hotrod",
-    "name": "Hot Rod",
-    "subtitle": "SS-86-12 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-12-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.45,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "5010996367907dmg",
-    "imageUrl": null
-  },
-  {
     "id": "joe2-hard-master",
     "name": "Hard Master",
     "subtitle": "Arashikage",
@@ -173572,34 +172551,6 @@
     "source": "curated-bbts-wave2",
     "sku": null,
     "imageUrl": null
-  },
-  {
-    "id": "ss4-ss86-grimlock",
-    "name": "Grimlock",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-12-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.45,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore",
-      "sku-alias",
-      "alias:hasbro-pulse"
-    ],
-    "source": "curated-bbts-wave4",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-leader-class-2021-wave-1-grimlock-86-06-630509977321-pkg.jpg?v=1697586097",
-    "sku": "630509977321"
   },
   {
     "id": "bs6-bs-gree",
@@ -175910,7 +174861,7 @@
   {
     "id": "d14ss-rotb-wheeljack",
     "name": "Wheeljack",
-    "subtitle": "SS-113 ROTB",
+    "subtitle": "SS-108 ROTB",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -175926,7 +174877,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "5010996346353",
@@ -176037,11 +174989,11 @@
   {
     "id": "ss4-ss86-soundwave",
     "name": "Soundwave",
-    "subtitle": "SS-86",
+    "subtitle": "The Movie Leader 2026",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-11-01",
+    "releaseDate": "2026",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -176054,39 +175006,13 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave4",
     "sku": "5010996349873",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-leader-class-2026-wave-1-soundwave-5010996349873.jpg?v=1758922099"
-  },
-  {
-    "id": "ss4-ss86-shockwave",
-    "name": "Shockwave",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-11-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore",
-      "sku-alias",
-      "alias:kitsap"
-    ],
-    "source": "curated-bbts-wave4",
-    "sku": "5010996348647",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-2026-wave-2-shockwave-5010996348647.jpg?v=1771369358"
   },
   {
     "id": "plc-shadow-spd",
@@ -176521,59 +175447,6 @@
     "source": "curated-bbts-wave4",
     "sku": "5010996298089",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-2025-wave-2-clone-captain-rex-16-5010996298089.jpg?v=1738208379"
-  },
-  {
-    "id": "d14ss-86-blurr",
-    "name": "Blurr",
-    "subtitle": "SS-86-11 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-11-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.3,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena"
-    ],
-    "source": "curated-densify",
-    "sku": "HAS978281",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/630509978281a.jpg?v=1613688059"
-  },
-  {
-    "id": "ss6-ss-blurr-86",
-    "name": "Blurr",
-    "subtitle": "86 Movie Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-11-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toydojo",
-      "sku-alias",
-      "alias:hasbro-pulse",
-      "image-sku",
-      "image-bake",
-      "imgsku:toydojo"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "HSF0711",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0564/2783/9650/products/cover__21130.jpg?v=1621625412"
   },
   {
     "id": "ml4-bishop-future",
@@ -179386,34 +178259,13 @@
     "imageUrl": null
   },
   {
-    "id": "ss4-ss111-transit",
-    "name": "Transit",
-    "subtitle": "Rise of the Beasts",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-10-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.2,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated"
-    ],
-    "source": "curated-bbts-wave4",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "ss4-ss86-thundercracker",
     "name": "Thundercracker",
-    "subtitle": "SS-86",
+    "subtitle": "The Movie Voyager 2026",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-10-01",
+    "releaseDate": "2026",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -179427,7 +178279,9 @@
       "sku:cmdstore",
       "image-sku",
       "imgsku:cmdstore",
-      "sku-gtin"
+      "sku-gtin",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-2025-wave-3-thundercracker-5010996323545.jpg?v=1750969442",
@@ -179462,11 +178316,11 @@
   {
     "id": "ss4-ss86-skywarp",
     "name": "Skywarp",
-    "subtitle": "SS-86",
+    "subtitle": "The Movie Voyager 2026",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-10-01",
+    "releaseDate": "2026",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -179483,7 +178337,9 @@
       "sku-alias",
       "alias:kitsap",
       "alias:staractionfigures",
-      "alias:planet-af"
+      "alias:planet-af",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-2026-wave-2-skywarp-5010996348630.jpg?v=1771369357",
@@ -179698,31 +178554,6 @@
     "sku": "HAS219930"
   },
   {
-    "id": "d14ss-86-elita",
-    "name": "Elita-1",
-    "subtitle": "SS-86-10 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-10-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.35,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:staractionfigures",
-      "image-sku",
-      "image-bake",
-      "imgsku:staractionfigures"
-    ],
-    "source": "curated-densify",
-    "sku": "G1851",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/g1851xc00-combo-25-s.jpg?v=1781090253"
-  },
-  {
     "id": "ml2-elektra-hand",
     "name": "Elektra (2022)",
     "subtitle": "The Hand",
@@ -179925,31 +178756,6 @@
     "sku": "5010993813414"
   },
   {
-    "id": "d14ss-rotb-bumblebee",
-    "name": "Bumblebee",
-    "subtitle": "SS-111 ROTB",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-10-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.25,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "5010996145741",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-core-class-2023-wave-3-bumblebee-5010996145741.jpg?v=1697585921"
-  },
-  {
     "id": "joec-breaker",
     "name": "Breaker",
     "subtitle": "Communications",
@@ -180025,31 +178831,6 @@
     "source": "curated-bbts-wave2",
     "sku": null,
     "imageUrl": null
-  },
-  {
-    "id": "d14ss-rotb-arcee",
-    "name": "Arcee",
-    "subtitle": "SS-112 ROTB",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-10-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.3,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:collecticon",
-      "image-sku",
-      "image-bake",
-      "imgsku:collecticon"
-    ],
-    "source": "curated-densify",
-    "sku": "TFSS-86ARCEE",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0076/4103/8906/products/transformers-movie-studio-series-86-16-arcee-g1-deluxe-tftm-box-package-front.jpg?v=1653662207"
   },
   {
     "id": "gc6-gc-solo04",
@@ -183674,31 +182455,12 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-commander-class-ultra-magnus-21-5010996147394_df712326-ec00-4a56-b16c-7d530f0e6e86.jpg?v=1781202998",
     "sku": "5010996147394dmg"
-  },
-  {
-    "id": "d14ss-rotb-transit",
-    "name": "Transit",
-    "subtitle": "SS-110 ROTB",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-09-01",
-    "msrp": 49.99,
-    "scale": "Voyager",
-    "demand": 1.25,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "joec-classified-torpedo",
@@ -183812,30 +182574,6 @@
     "source": "curated-bbts-wave6",
     "sku": "630509713561",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-inifnite-monster-venom-series-6-inch-action-figure-spider-ham.jpg?v=1705967727"
-  },
-  {
-    "id": "hs8-hs-45",
-    "name": "Soundwave",
-    "subtitle": "Studio Series 86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-09-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.5,
-    "tags": [
-      "hasbro",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena"
-    ],
-    "source": "curated-bbts-wave8",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996364562a.webp?v=1765252005",
-    "sku": "HAS364562PRE2"
   },
   {
     "id": "mlc-rogue-aoa2",
@@ -183999,7 +182737,7 @@
   {
     "id": "d14ss-rotb-nightbird",
     "name": "Nightbird",
-    "subtitle": "SS-109 ROTB",
+    "subtitle": "SS-104 ROTB",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -184019,7 +182757,8 @@
       "sku-alias",
       "alias:collecticon",
       "alias:kitsap",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-deluxe-class-2023-wave-4-nightbird-104-195166229744.jpg?v=1697585851",
@@ -184354,31 +183093,6 @@
     "sku": "F3112"
   },
   {
-    "id": "d14ss-86-chromia",
-    "name": "Chromia",
-    "subtitle": "SS-86-09 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-09-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.3,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:staractionfigures",
-      "image-sku",
-      "image-bake",
-      "imgsku:staractionfigures"
-    ],
-    "source": "curated-densify",
-    "sku": "E7198",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/e7198as00-630509900657-pkg-19-s.jpg?v=1781094819"
-  },
-  {
     "id": "bs3-bs-cere",
     "name": "Cere Junda",
     "subtitle": "Jedi Survivor",
@@ -184536,34 +183250,6 @@
     "source": "curated",
     "imageUrl": "https://static.wixstatic.com/media/adc447_4b73b31065224b90bd7732b1d4dff719~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_4b73b31065224b90bd7732b1d4dff719~mv2.jpg",
     "sku": null
-  },
-  {
-    "id": "ss4-ss109-battletrap",
-    "name": "Battletrap",
-    "subtitle": "Rise of the Beasts",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-09-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:indemandtoys",
-      "sku-alias",
-      "alias:hasbro-pulse",
-      "image-sku",
-      "image-bake",
-      "imgsku:indemandtoys"
-    ],
-    "source": "curated-bbts-wave4",
-    "sku": "E0702",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0698/7730/1541/files/3_667218a1-cbc6-4fb6-a8ec-bb401ccf0454.jpg?v=1770203767"
   },
   {
     "id": "lc6-lc-baboo",
@@ -187926,27 +186612,6 @@
     "sku": "F3690"
   },
   {
-    "id": "ss4-ss86-trailbreaker",
-    "name": "Trailbreaker",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-08-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.2,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated"
-    ],
-    "source": "curated-bbts-wave4",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "d14ml-the-leader-baf",
     "name": "The Leader (2023)",
     "subtitle": "Build-A-Figure",
@@ -188201,7 +186866,7 @@
   {
     "id": "d14ss-rotb-rhinox",
     "name": "Rhinox",
-    "subtitle": "SS-107 ROTB",
+    "subtitle": "SS-103 ROTB",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -188220,7 +186885,8 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:hasbro-pulse",
-      "alias:toydojo"
+      "alias:toydojo",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-voyager-class-2023-wave-3-rhinox-195166223537.jpg?v=1697585909",
@@ -188284,7 +186950,7 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-08-01",
+    "releaseDate": "2026",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -188298,7 +186964,9 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:collecticon",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-exclusive-prowl-5010996408389.jpg?v=1780680726",
@@ -188407,11 +187075,11 @@
   {
     "id": "ss4-ss86-hound",
     "name": "Hound",
-    "subtitle": "SS-86",
+    "subtitle": "The Movie Deluxe 2026 (package refresh)",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-08-01",
+    "releaseDate": "2026",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.25,
@@ -188424,7 +187092,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-exclusive-hound-5010996367921.jpg?v=1768427845",
@@ -188531,7 +187201,8 @@
       "image-sku",
       "imgsku:toyarena",
       "sku-alias",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010994199456.jpg?v=1690327012",
@@ -188612,53 +187283,6 @@
     "source": "curated-bbts-wave4",
     "sku": "HAS979370",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/5010993979370.jpg?v=1672857134"
-  },
-  {
-    "id": "d14ss-rotb-battletrap",
-    "name": "Battletrap",
-    "subtitle": "SS-108 ROTB",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-08-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.25,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "d14ss-86-arcee",
-    "name": "Arcee",
-    "subtitle": "SS-86-08 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-08-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.4,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore",
-      "sku-alias",
-      "alias:hasbro-pulse"
-    ],
-    "source": "curated-densify",
-    "sku": "195166181608",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-deluxe-class-2022-wave-2-arcee-195166181608.jpg?v=1697585985"
   },
   {
     "id": "bs4-fives",
@@ -191371,11 +189995,11 @@
   {
     "id": "ss4-ss86-wheeljack",
     "name": "Wheeljack",
-    "subtitle": "SS-86",
+    "subtitle": "The Movie Deluxe 2026 (package refresh)",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-07-01",
+    "releaseDate": "2026",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -191395,32 +190019,13 @@
       "alias:solarisjapan",
       "alias:hobbyfigures",
       "alias:collecticon",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2026-wave-2-wheeljack-5010996380494.jpg?v=1771369316",
     "sku": "5010996380494"
-  },
-  {
-    "id": "ss6-ss-transit",
-    "name": "Transit",
-    "subtitle": "ROTB Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-07-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "joec-classified-trackviper",
@@ -191574,35 +190179,6 @@
     "source": "curated-bbts-wave2",
     "sku": "5010996283023",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-fantastic-four-silver-surfer-5010996283023.jpg?v=1773692688"
-  },
-  {
-    "id": "ss5-ss-shockwave-dotm",
-    "name": "Shockwave",
-    "subtitle": "Dark of the Moon",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2025-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena",
-      "sku-alias",
-      "alias:hobbyfigures",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996297938a.webp?v=1742345774",
-    "sku": "HAS297938"
   },
   {
     "id": "cls4-retro-shipwreck",
@@ -191778,7 +190354,7 @@
   {
     "id": "ss4-ss86-mirage",
     "name": "Mirage",
-    "subtitle": "SS-86",
+    "subtitle": "SS-105 ROTB",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -191797,7 +190373,8 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-deluxe-class-2023-wave-4-mirage-105-195166229775.jpg?v=1697585949",
@@ -191858,35 +190435,6 @@
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/power-rangers-lightning-collection-series-1-6-inch-action-figure-lord-zedd.jpg?v=1723119025",
     "sku": "630509808373"
-  },
-  {
-    "id": "hs8-hs-43",
-    "name": "Jazz",
-    "subtitle": "Studio Series 86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-07-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena",
-      "sku-alias",
-      "alias:toyarena",
-      "alias:toydojo",
-      "alias:collecticon",
-      "alias:hasbro-pulse"
-    ],
-    "source": "curated-bbts-wave8",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996301147a.webp?v=1747339738",
-    "sku": "HAS301147"
   },
   {
     "id": "d14bs-army-tr",
@@ -191981,32 +190529,6 @@
     "source": "curated",
     "imageUrl": "https://static.wixstatic.com/media/adc447_70d9db4256714c829347cf562272ee9e~mv2.jpg/v1/fit/w_96,h_100/adc447_70d9db4256714c829347cf562272ee9e~mv2.jpg",
     "sku": null
-  },
-  {
-    "id": "ss6-ss-freeza",
-    "name": "Freezer",
-    "subtitle": "ROTB Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-07-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "5010994199456",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-wave-5-terrorcon-freezer-5010994199456-pkg.jpg?v=1697586029"
   },
   {
     "id": "mlc-daredevil-shadowland",
@@ -192190,31 +190712,6 @@
     "sku": "630509263387"
   },
   {
-    "id": "d14ss-rotb-cheetor",
-    "name": "Cheetor",
-    "subtitle": "SS-106 ROTB",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-07-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.3,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:indemandtoys",
-      "image-sku",
-      "image-bake",
-      "imgsku:indemandtoys"
-    ],
-    "source": "curated-densify",
-    "sku": "E0702CT",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0698/7730/1541/files/be8453b2beb06d92d31bb094cae2808eb197f42d_9eafb0ac-27e3-4414-b270-90634781ff33.jpg?v=1770204051"
-  },
-  {
     "id": "ml6-ml-carnage-toxin",
     "name": "Carnage Toxin's Prey (2023)",
     "subtitle": "Toxin's Prey Wave6",
@@ -192360,31 +190857,6 @@
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCF0101_4c9d8f40-208f-4f05-9dbf-6361f1e00eff.jpg?v=1788573004",
     "sku": null
-  },
-  {
-    "id": "d14ss-rotb-airazor",
-    "name": "Airazor",
-    "subtitle": "SS-105 ROTB",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-07-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.3,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:toynk",
-      "image-sku",
-      "image-bake",
-      "imgsku:toynk"
-    ],
-    "source": "curated-densify",
-    "sku": "HBR-21683-C",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/HBR-21683-C-1.jpg?v=1760156733"
   },
   {
     "id": "ml6-ml-agent-venom",
@@ -196916,11 +195388,11 @@
   {
     "id": "ss4-ss86-sunstreaker",
     "name": "Sunstreaker",
-    "subtitle": "SS-86",
+    "subtitle": "The Movie Deluxe 2026 (package refresh)",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-06-01",
+    "releaseDate": "2026",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.25,
@@ -196938,7 +195410,9 @@
       "alias:staractionfigures",
       "alias:toydojo",
       "alias:hobbyfigures",
-      "alias:collecticon"
+      "alias:collecticon",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2026-wave-2-sunstreaker-5010996380043.jpg?v=1771369300",
@@ -197204,7 +195678,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "5010996348715",
@@ -197213,11 +195688,11 @@
   {
     "id": "ss4-ss86-sideswipe",
     "name": "Sideswipe",
-    "subtitle": "SS-86",
+    "subtitle": "SS-78 ROTF",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-06-01",
+    "releaseDate": "2021",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -197235,47 +195710,22 @@
       "alias:staractionfigures",
       "alias:hobbyfigures",
       "alias:collecticon",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-deluxe-class-wave-4-sideswipe-630509991051-pkg.jpg?v=1697585896",
     "sku": "630509991051"
   },
   {
-    "id": "ss5-ss-sentinel",
-    "name": "Sentinel Prime",
-    "subtitle": "Dark of the Moon",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2020-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:collecticon",
-      "image-sku",
-      "image-bake",
-      "imgsku:collecticon",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "TFSS-SENTINELPRIME",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0076/4103/8906/products/transformers-movie-studio-series-61-voyager-sentinel-prime-box-package-front.png?v=1583128989"
-  },
-  {
     "id": "d14ss-rotb-scourge",
     "name": "Scourge",
-    "subtitle": "SS-104 ROTB",
+    "subtitle": "ROTB Leader 2026 (package refresh)",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-06-01",
+    "releaseDate": "2026",
     "msrp": 49.99,
     "scale": "Voyager",
     "demand": 1.4,
@@ -197287,7 +195737,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-leader-class-2026-wave-4-scourge-rise-of-the-beasts-5010996376008.jpg?v=1776202346",
@@ -197439,7 +195891,7 @@
   {
     "id": "d14ss-rotb-primal",
     "name": "Optimus Primal",
-    "subtitle": "SS-102 ROTB",
+    "subtitle": "SS-106 ROTB",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -197459,7 +195911,8 @@
       "sku-alias",
       "alias:solarisjapan",
       "alias:collecticon",
-      "alias:kitsap"
+      "alias:kitsap",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-leader-class-2023-wave-3-optimus-primal-195166203232.jpg?v=1697585934",
@@ -197493,32 +195946,6 @@
     "source": "curated-bbts-wave3",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-retro-wave-7-nova-5010993954490.jpg?v=1654809284",
     "sku": "5010993954490"
-  },
-  {
-    "id": "ss6-ss-nightbird-rotb",
-    "name": "Nightbird",
-    "subtitle": "ROTB Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-06-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena"
-    ],
-    "source": "curated-bbts-wave6",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/195166229744a.jpg?v=1705091048",
-    "sku": "HAS229744"
   },
   {
     "id": "tfss-ssge04-megatron",
@@ -197637,7 +196064,8 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-core-class-2023-wave-2-ironhide-5010996126627.jpg?v=1697586097",
@@ -197956,31 +196384,6 @@
     "imageUrl": "https://static.wixstatic.com/media/adc447_97c1df44e5e246908d472611ae6fa99e~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_97c1df44e5e246908d472611ae6fa99e~mv2.webp"
   },
   {
-    "id": "d14ss-86-bumblebee",
-    "name": "Bumblebee",
-    "subtitle": "SS-86-06 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-06-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.35,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "5010996348623",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-bumblebee-devastation-5010996348623.jpg?v=1774650329"
-  },
-  {
     "id": "tfss-ss100-bumblebee",
     "name": "Bumblebee",
     "subtitle": "SS-100 ROTB",
@@ -197999,7 +196402,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "195166181622",
@@ -198054,27 +196458,6 @@
     "source": "curated-bbts-wave3",
     "sku": "5010993813377",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-box-art-wave-4-bo-katan-kryze-5010993813377.jpg?v=1723114804"
-  },
-  {
-    "id": "ss6-ss-battletrap",
-    "name": "Battletrap",
-    "subtitle": "ROTB Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-06-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "d14ml-ml-classic-annihilus",
@@ -201586,32 +199969,6 @@
     "sku": "5010996208316"
   },
   {
-    "id": "ss6-ss-rhinox-rotb",
-    "name": "Rhinox",
-    "subtitle": "ROTB Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-05-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "HAS223537",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/195166223537a.jpg?v=1705090964"
-  },
-  {
     "id": "d14lc-jungle-fury-red",
     "name": "Red Jungle Fury Ranger",
     "subtitle": "Jungle Fury",
@@ -201683,32 +200040,6 @@
     "source": "curated",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996322586b.webp?v=1763517034",
     "sku": "HAS322586"
-  },
-  {
-    "id": "ss4-ss86-prowl",
-    "name": "Prowl",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-05-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:japan-figure",
-      "image-sku",
-      "image-bake",
-      "imgsku:japan-figure"
-    ],
-    "source": "curated-bbts-wave4",
-    "sku": "4904810072461",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/takara-tomy-transformers-studio-series-ts-38-prowl-figure_1_1784025724.webp?v=1784110593"
   },
   {
     "id": "tfc-optimus-rotb",
@@ -201831,38 +200162,13 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996361448a.webp?v=1770946427"
   },
   {
-    "id": "d14ss-rotb-mirage",
-    "name": "Mirage",
-    "subtitle": "SS-103 ROTB",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-05-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.3,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:collecticon",
-      "image-sku",
-      "image-bake",
-      "imgsku:collecticon"
-    ],
-    "source": "curated-densify",
-    "sku": "TFSS-D-ROTB-MIRAGE",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0076/4103/8906/files/transformers-movie-studio-series-105-mirage-deluxe-rise-of-the-beasts-rotb-box-package-front.jpg?v=1687280646"
-  },
-  {
     "id": "ss5-ss-megatron-dotm",
     "name": "Megatron",
-    "subtitle": "Dark of the Moon",
+    "subtitle": "SS-34 DOTM",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-01-01",
+    "releaseDate": "2019",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -201877,7 +200183,8 @@
       "image-bake",
       "imgsku:toyarena",
       "date-precision:year",
-      "date-unverified"
+      "date-unverified",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave5",
     "sku": "HAS346049",
@@ -202407,7 +200714,8 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-voyager-class-butch-195166209647-pkg.jpg?v=1697586043",
@@ -202438,27 +200746,6 @@
     "source": "curated-bbts-wave6",
     "sku": "G1557",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0698/7730/1541/files/G1557_PROD_SW_BL_FOLD_018_white.jpg?v=1737630532"
-  },
-  {
-    "id": "ss4-ss86-bluestreak",
-    "name": "Bluestreak",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-05-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated"
-    ],
-    "source": "curated-bbts-wave4",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "ml2-beta-ray",
@@ -202504,7 +200791,8 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-voyager-class-battletrap-195166209654-pkg.jpg?v=1697586012",
@@ -205857,11 +204145,11 @@
   {
     "id": "ss5-ss-optimus-dotm",
     "name": "Optimus Prime",
-    "subtitle": "Dark of the Moon",
+    "subtitle": "SS-44BB DOTM (Buzzworthy Bumblebee)",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-01-01",
+    "releaseDate": "2023",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -205877,7 +204165,8 @@
       "image-sku",
       "image-bake",
       "imgsku:collecticon",
-      "date-precision:year"
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave5",
     "sku": "TFSS-BUZZWORTHYOPTIMUSJETWING",
@@ -206140,35 +204429,6 @@
     "sku": "5010996301161"
   },
   {
-    "id": "ss4-ss86-ironhide",
-    "name": "Ironhide",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-04-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena",
-      "sku-alias",
-      "alias:hasbro-pulse",
-      "alias:hobbyfigures"
-    ],
-    "source": "curated-bbts-wave4",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996126627a.jpg?v=1683076516",
-    "sku": "HAS126627"
-  },
-  {
     "id": "joec-classified-hydroviper",
     "name": "Hydro-Viper",
     "subtitle": "Classified Series",
@@ -206309,32 +204569,6 @@
     "source": "curated-bbts-wave2",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN0519-3.jpg?v=1660180785",
     "sku": null
-  },
-  {
-    "id": "ss6-ss-cheetor-rotb",
-    "name": "Cheetor",
-    "subtitle": "ROTB Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-04-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "HAS209647",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/195166209647D.jpg?v=1705019387"
   },
   {
     "id": "d14ml-cassandra-nova",
@@ -206565,37 +204799,12 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:collecticon",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-deluxe-class-2022-wave-5-airazor-195166216836-pkg.jpg?v=1697586085",
     "sku": "195166216836"
-  },
-  {
-    "id": "ss6-ss-airazor-rotb",
-    "name": "Airazor",
-    "subtitle": "ROTB Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-04-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena"
-    ],
-    "source": "curated-bbts-wave6",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/195166216836a.jpg?v=1677028830",
-    "sku": "HAS216836"
   },
   {
     "id": "gc6-gc-solo03",
@@ -210918,27 +209127,6 @@
     "sku": "5010993694884"
   },
   {
-    "id": "ss6-ss-stratosphere",
-    "name": "Stratosphere",
-    "subtitle": "ROTB Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-03-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "cls4-retro-snake",
     "name": "Snake Eyes",
     "subtitle": "Retro Carded",
@@ -211174,32 +209362,6 @@
     "sku": "5010996120618"
   },
   {
-    "id": "ss6-ss-optimus-primal-rotb",
-    "name": "Optimus Primal",
-    "subtitle": "ROTB Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-03-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.5,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "HAS203232",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/195166256542a.jpg?v=1704931638"
-  },
-  {
     "id": "ml6-ml-magneto-aos",
     "name": "Magneto Age of Apocalypse (2023)",
     "subtitle": "Age of Apocalypse Wave6",
@@ -211336,7 +209498,7 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-03-01",
+    "releaseDate": "2022",
     "msrp": 24.99,
     "scale": "Deluxe",
     "demand": 1.3,
@@ -211348,7 +209510,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "195166151069",
@@ -211436,7 +209600,7 @@
   {
     "id": "ss5-ss-cogman",
     "name": "Cogman",
-    "subtitle": "The Last Knight",
+    "subtitle": "SS-39 TLK",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -211457,7 +209621,8 @@
       "sku-alias",
       "alias:collecticon",
       "alias:hasbro-pulse",
-      "date-precision:year"
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/630509778829_b.jpg?v=1705090034",
@@ -211466,11 +209631,11 @@
   {
     "id": "ss4-ss86-cliffjumper",
     "name": "Cliffjumper",
-    "subtitle": "SS-86",
+    "subtitle": "The Movie Deluxe 2026",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-03-01",
+    "releaseDate": "2026",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.25,
@@ -211487,7 +209652,9 @@
       "sku-alias",
       "alias:collecticon",
       "alias:hasbro-pulse",
-      "alias:nerdzoic"
+      "alias:nerdzoic",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2026-wave-6-cliffjumper-5010996380470.jpg?v=1777664038",
@@ -211550,35 +209717,6 @@
     "source": "curated-transformers",
     "sku": "195166265223",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2024-wave-4-bumblebee-gamer-edition-195166265223-pkg.jpg?v=1729644074"
-  },
-  {
-    "id": "ss4-ss86-bumblebee",
-    "name": "Bumblebee",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-03-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena",
-      "sku:cmdstore",
-      "sku-gtin",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-bbts-wave4",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2025-wave-1-bumblebee-117-195166283203.jpg?v=1761681102",
-    "sku": "195166283203"
   },
   {
     "id": "lc6-lc-blue-cosmic",
@@ -215264,32 +213402,6 @@
     "imageUrl": null
   },
   {
-    "id": "ss6-ss-wheeljack-rotb",
-    "name": "Wheeljack",
-    "subtitle": "ROTB Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-02-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena"
-    ],
-    "source": "curated-bbts-wave6",
-    "sku": "HAS380494",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996380647a.webp?v=1778788585"
-  },
-  {
     "id": "mlc-usagent",
     "name": "U.S. Agent (2022)",
     "subtitle": "Thunderbolts",
@@ -215723,32 +213835,6 @@
     "source": "curated-bbts-wave6"
   },
   {
-    "id": "ss4-ss86-jazz",
-    "name": "Jazz",
-    "subtitle": "SS-86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-02-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-bbts-wave4",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-deluxe-class-2021-wave-1-jazz-86-01-630509978335-pkg.jpg?v=1697586111",
-    "sku": "630509978335"
-  },
-  {
     "id": "tfss-ss86-ironhide-alt",
     "name": "Ironhide",
     "subtitle": "SS-86-17 The Movie",
@@ -215767,43 +213853,12 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "195166181066",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-voyager-class-2022-wave-4-ironhide-195166166995.jpg?v=1697586059"
-  },
-  {
-    "id": "ss5-ss-hotrod-tlk",
-    "name": "Hot Rod",
-    "subtitle": "The Last Knight",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:collecticon",
-      "sku-alias",
-      "alias:collecticon",
-      "alias:hasbro-pulse",
-      "alias:solarisjapan",
-      "image-sku",
-      "image-bake",
-      "imgsku:collecticon",
-      "date-precision:year",
-      "date-unverified"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "TFSS-D-HOTROD-JAPAN",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0076/4103/8906/products/transformers-movie-studio-series-SS-96-hot-rod-deluxe-TLK-the-last-knight-takaratomy-japan-box-package-front.jpg?v=1678343105"
   },
   {
     "id": "joec-heavy-duty",
@@ -215965,29 +214020,9 @@
     "sku": "653569874416"
   },
   {
-    "id": "d14ss-86-cup",
-    "name": "Cup",
-    "subtitle": "SS-86-02 The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-02-01",
-    "msrp": 14.99,
-    "scale": "Core",
-    "demand": 1.2,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "tfss-ss92-crosshairs",
     "name": "Crosshairs",
-    "subtitle": "SS-92 AOE",
+    "subtitle": "SS-92 TLK",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -216006,7 +214041,8 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:collecticon",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-deluxe-class-2022-wave-4-crosshairs-195166181677.jpg?v=1697586000",
@@ -216140,7 +214176,8 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave6",
     "sku": "HAS199463",
@@ -219811,32 +217848,6 @@
     "sku": "G2273"
   },
   {
-    "id": "ss6-ss-mirage-rotb",
-    "name": "Mirage",
-    "subtitle": "ROTB Wave6",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena"
-    ],
-    "source": "curated-bbts-wave6",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/195166229775a.jpg?v=1705091067",
-    "sku": "HAS229775"
-  },
-  {
     "id": "ss5-ss-megatron-tlk",
     "name": "Megatron",
     "subtitle": "The Last Knight",
@@ -222344,26 +220355,6 @@
     "sku": "HIY200250"
   },
   {
-    "id": "d14ss-86-unicron",
-    "name": "Unicron",
-    "subtitle": "HasLab The Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2022-12-01",
-    "msrp": 299.99,
-    "scale": "HasLab",
-    "demand": 1.9,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "joec-range-viper",
     "name": "Range-Viper",
     "subtitle": "Wilderness",
@@ -222431,29 +220422,6 @@
     ],
     "source": "curated-bbts-wave5",
     "sku": "HAS317179",
-    "imageUrl": null
-  },
-  {
-    "id": "ss5-ss-optimus-tlk",
-    "name": "Optimus Prime",
-    "subtitle": "The Last Knight",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2022-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "date-precision:year",
-      "date-unverified"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
     "imageUrl": null
   },
   {
@@ -225457,7 +223425,8 @@
       "sku:japan-figure",
       "image-sku",
       "image-bake",
-      "imgsku:japan-figure"
+      "imgsku:japan-figure",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "4904810991465",
@@ -227924,7 +225893,7 @@
   {
     "id": "ss5-ss-lockdown",
     "name": "Lockdown",
-    "subtitle": "Age of Extinction",
+    "subtitle": "SS-11 AOE",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -227942,7 +225911,8 @@
       "image-sku",
       "image-bake",
       "imgsku:collecticon",
-      "date-precision:year"
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave5",
     "sku": "TFSS-11LOCKDOWN",
@@ -232412,38 +230382,6 @@
     "sku": "5010994172640"
   },
   {
-    "id": "ss5-ss-galvatron-aoy",
-    "name": "Galvatron",
-    "subtitle": "Age of Extinction",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2022-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toynk",
-      "sku-alias",
-      "alias:toyarena",
-      "alias:toynk",
-      "alias:hasbro-pulse",
-      "image-sku",
-      "image-bake",
-      "imgsku:toynk",
-      "date-precision:year",
-      "date-unverified"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "HBR-F3176-C",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/HBR-F3176-C-1.jpg?v=1716302134"
-  },
-  {
     "id": "bs3-bs-palpatine-tros",
     "name": "Emperor Palpatine",
     "subtitle": "TROS BAF",
@@ -232593,7 +230531,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "630509900657",
@@ -235828,7 +233767,8 @@
       "sku:toydojo",
       "image-sku",
       "image-bake",
-      "imgsku:toydojo"
+      "imgsku:toydojo",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "HSF3203",
@@ -235971,7 +233911,7 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2025-01-01",
+    "releaseDate": "2026",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -235994,7 +233934,8 @@
       "alias:indemandtoys",
       "alias:hobbyfigures",
       "alias:collecticon",
-      "date-precision:year"
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-2026-wave-4-optimus-prime-age-of-extinction-5010996376077.jpg?v=1787602955",
@@ -239078,11 +237019,11 @@
   {
     "id": "d14ss-2007-ratchet",
     "name": "Ratchet",
-    "subtitle": "SS-78 2007 Film",
+    "subtitle": "SS-04 2007 Film",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-07-01",
+    "releaseDate": "2018",
     "msrp": 29.99,
     "scale": "Deluxe",
     "demand": 1.25,
@@ -239094,7 +237035,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "630509629022",
@@ -244571,35 +242514,6 @@
     "sku": "5010996192165"
   },
   {
-    "id": "ss5-ss-shockwave-86",
-    "name": "Shockwave",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2026-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena",
-      "sku-alias",
-      "alias:toyarena",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996348647a.webp?v=1777738913",
-    "sku": "HAS348647"
-  },
-  {
     "id": "joec-classified-shipwreck",
     "name": "Shipwreck",
     "subtitle": "Classified Series",
@@ -244903,11 +242817,11 @@
   {
     "id": "d14ss-2007-ironhide",
     "name": "Ironhide",
-    "subtitle": "SS-77 2007 Film",
+    "subtitle": "SS-14 2007 Film",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-06-01",
+    "releaseDate": "2018",
     "msrp": 49.99,
     "scale": "Voyager",
     "demand": 1.3,
@@ -244919,7 +242833,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "630509707560",
@@ -245083,7 +242999,7 @@
   {
     "id": "tfss-ss85-arcee",
     "name": "Arcee",
-    "subtitle": "SS-85 2007 Film",
+    "subtitle": "SS-85 Bumblebee",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -245099,7 +243015,8 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "HAS181608",
@@ -248081,33 +245998,6 @@
     "sku": "HAS158514"
   },
   {
-    "id": "ss5-ss-starscream-86",
-    "name": "Starscream",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2022-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "HAS153421",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/195166153421a_41b89792-56b0-4be7-a3f0-431a9f9dcca1.jpg?v=1649447989"
-  },
-  {
     "id": "d14ml-ml-spidey-ben",
     "name": "Spider-Man Ben Reilly Retro (2022)",
     "subtitle": "Ben Reilly Retro",
@@ -248346,7 +246236,7 @@
   {
     "id": "tfss-ss84-ironhide",
     "name": "Ironhide",
-    "subtitle": "SS-84 2007 Film",
+    "subtitle": "SS-84 Bumblebee",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -248364,7 +246254,8 @@
       "alias:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:collecticon"
+      "imgsku:collecticon",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "TFSS-D-IRONHIDE",
@@ -248513,11 +246404,11 @@
   {
     "id": "d14ss-2007-blackout",
     "name": "Blackout",
-    "subtitle": "SS-76 2007 Film",
+    "subtitle": "SS-08 2007 Film",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-05-01",
+    "releaseDate": "2018",
     "msrp": 59.99,
     "scale": "Leader",
     "demand": 1.4,
@@ -248531,7 +246422,9 @@
       "alias:hasbro-pulse",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "630509627837",
@@ -251079,7 +248972,7 @@
   {
     "id": "tfss-ss83-soundwave",
     "name": "Soundwave",
-    "subtitle": "SS-83 2007 Film",
+    "subtitle": "SS-83 Bumblebee",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -251090,34 +248983,11 @@
     "tags": [
       "transformers",
       "studio-series",
-      "curated"
+      "curated",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "ss5-ss-soundwave-86",
-    "name": "Soundwave",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2026-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "HAS349873",
     "imageUrl": null
   },
   {
@@ -251400,7 +249270,7 @@
   {
     "id": "tfss-ss86-cliff-alt",
     "name": "Cliffjumper",
-    "subtitle": "SS-86-13 The Movie",
+    "subtitle": "SS-86-13BB The Movie (Buzzworthy Bumblebee)",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -251416,7 +249286,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "630509932535",
@@ -251425,11 +249296,11 @@
   {
     "id": "d14ss-2007-bonecrusher",
     "name": "Bonecrusher",
-    "subtitle": "SS-75 2007 Film",
+    "subtitle": "SS-33 2007 Film",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-04-01",
+    "releaseDate": "2019",
     "msrp": 49.99,
     "scale": "Voyager",
     "demand": 1.25,
@@ -251445,7 +249316,9 @@
       "alias:hasbro-pulse",
       "image-sku",
       "image-bake",
-      "imgsku:japan-figure"
+      "imgsku:japan-figure",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "4904810991533",
@@ -254867,7 +252740,7 @@
   {
     "id": "tfss-ss81-wheeljack",
     "name": "Wheeljack",
-    "subtitle": "SS-81 2007 Film",
+    "subtitle": "SS-81 Bumblebee",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -254885,7 +252758,8 @@
       "alias:toydojo",
       "image-sku",
       "image-bake",
-      "imgsku:staractionfigures"
+      "imgsku:staractionfigures",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "G0567",
@@ -255079,7 +252953,7 @@
   {
     "id": "tfss-ss82-ratchet",
     "name": "Ratchet",
-    "subtitle": "SS-82 2007 Film",
+    "subtitle": "SS-82 Bumblebee",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -255098,7 +252972,8 @@
       "alias:toydojo",
       "image-sku",
       "image-bake",
-      "imgsku:collecticon"
+      "imgsku:collecticon",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "TFSS-D-BBRATCHET",
@@ -255546,11 +253421,11 @@
   {
     "id": "d14ss-2007-barricade",
     "name": "Barricade",
-    "subtitle": "SS-74 2007 Film",
+    "subtitle": "SS-28 2007 Film",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-03-01",
+    "releaseDate": "2019",
     "msrp": 29.99,
     "scale": "Deluxe",
     "demand": 1.3,
@@ -255564,7 +253439,9 @@
       "sku-gtin",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "630509774166",
@@ -258479,11 +256356,11 @@
   {
     "id": "d14ss-2007-jazz",
     "name": "Jazz",
-    "subtitle": "SS-73 2007 Film",
+    "subtitle": "SS-10 2007 Film",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-02-01",
+    "releaseDate": "2018",
     "msrp": 29.99,
     "scale": "Deluxe",
     "demand": 1.35,
@@ -258495,42 +256372,13 @@
       "sku:collecticon",
       "image-sku",
       "image-bake",
-      "imgsku:collecticon"
+      "imgsku:collecticon",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "TFSS-TFTM-JAZZ-PR",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0076/4103/8906/files/transformers-movie-studio-series-autobot-jazz-deluxe-tftm-86-hasbro-usa-box-package-front.jpg?v=1736805367"
-  },
-  {
-    "id": "ss5-ss-ironhide-86",
-    "name": "Ironhide",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2022-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "sku-alias",
-      "alias:indemandtoys",
-      "alias:toyarena",
-      "alias:toynk",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "HAS181066",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/195166181066a.jpg?v=1665449254"
   },
   {
     "id": "bs5-bs-hunter",
@@ -258568,7 +256416,7 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-02-01",
+    "releaseDate": "2026",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
@@ -258583,7 +256431,9 @@
       "sku-alias",
       "alias:toydojo",
       "alias:hasbro-pulse",
-      "alias:toyarena"
+      "alias:toyarena",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave8",
     "sku": "5010996367907",
@@ -258665,7 +256515,8 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:collecticon",
-      "alias:toydojo"
+      "alias:toydojo",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-leader-class-2021-wave-4-coronation-starscream-195166153421.jpg?v=1697585881",
@@ -258721,7 +256572,7 @@
   {
     "id": "tfss-ss80-brawn",
     "name": "Brawn",
-    "subtitle": "SS-80 2007 Film",
+    "subtitle": "SS-80 Bumblebee",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -258739,7 +256590,8 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:toyarena"
+      "alias:toyarena",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-deluxe-class-2022-wave-1-brawn-195166158518.jpg?v=1697585908",
@@ -261286,26 +259138,6 @@
     "sku": "630509838370"
   },
   {
-    "id": "d14ss-2007-starscream",
-    "name": "Starscream",
-    "subtitle": "SS-72 2007 Film",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2022-01-01",
-    "msrp": 49.99,
-    "scale": "Voyager",
-    "demand": 1.35,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "d14ml-spidey-integ",
     "name": "Spider-Man Integrated Suit (2022)",
     "subtitle": "Integrated Suit",
@@ -261490,33 +259322,6 @@
     ],
     "source": "curated-densify",
     "sku": "HAS273904"
-  },
-  {
-    "id": "ss5-ss-jazz-86",
-    "name": "Jazz",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:indemandtoys",
-      "image-sku",
-      "image-bake",
-      "imgsku:indemandtoys",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "G1725",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0698/7730/1541/files/671736199f2a4c9bacf3b5daadeccb8bxl.jpg?v=1748866152"
   },
   {
     "id": "d14joe-heavy-duty",
@@ -263999,26 +261804,6 @@
     "sku": "5010993809004"
   },
   {
-    "id": "d14ss-2007-optimus",
-    "name": "Optimus Prime",
-    "subtitle": "SS-71 2007 Film",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-12-01",
-    "msrp": 49.99,
-    "scale": "Voyager",
-    "demand": 1.4,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "ml2-magneto-aes",
     "name": "Magneto (2021)",
     "subtitle": "Astonishing",
@@ -264112,33 +261897,6 @@
     "source": "curated-bbts-wave2",
     "sku": "5010996404879",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-spider-man-day-deluxe-hulk-5010996404879.jpg?v=1783757605"
-  },
-  {
-    "id": "ss5-ss-grimlock-86",
-    "name": "Grimlock",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toydojo",
-      "image-sku",
-      "image-bake",
-      "imgsku:toydojo",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "HSG0485",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0564/2783/9650/files/360c9dcc088b4ca5aae5a698cc57a90exl_2ac211db-9dab-42b0-aecc-2971ec95daaa.webp?v=1750795894"
   },
   {
     "id": "bs5-bs-gregor",
@@ -266519,29 +264277,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/star-wars-the-black-series-the-bad-batc-box-art-deluxe-bad-batch-wrecker-5010993873739.jpg?v=1637968447"
   },
   {
-    "id": "ss5-ss-unircron-86",
-    "name": "Unicron",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.55,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "date-precision:year",
-      "date-unverified"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "d14ml-spidey-future",
     "name": "Spider-Man Future Foundation (2020)",
     "subtitle": "Future Foundation",
@@ -266901,33 +264636,6 @@
     "source": "curated-densify",
     "sku": "630509984558",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-deluxe-class-2021-wave-2-bumblebee-70-630509984558-pkg.jpg?v=1697586144"
-  },
-  {
-    "id": "hs8-hs-23",
-    "name": "Bumblebee",
-    "subtitle": "Studio Series 86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-11-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.45,
-    "tags": [
-      "hasbro",
-      "curated",
-      "sku-bake",
-      "sku:legendztoys",
-      "image-sku",
-      "image-bake",
-      "imgsku:legendztoys",
-      "sku-alias",
-      "alias:toydojo",
-      "alias:indemandtoys"
-    ],
-    "source": "curated-bbts-wave8",
-    "sku": "TFBUMB2",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0704/5169/1800/files/transformers-studio-series-deluxe-transformers-the-movie-86-bumblebee_3.jpg?v=1717375223"
   },
   {
     "id": "gt7-gt-35",
@@ -269559,38 +267267,6 @@
     "sku": "5010996328427"
   },
   {
-    "id": "ss5-ss-scourge-86",
-    "name": "Scourge",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "sku-alias",
-      "alias:toydojo",
-      "alias:toyarena",
-      "alias:legendztoys",
-      "alias:hasbro-pulse",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "HAS974948",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/630509974948a.jpg?v=1617992644"
-  },
-  {
     "id": "tfmp-mp54",
     "name": "Reboost",
     "subtitle": "MP-54",
@@ -269661,7 +267337,8 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "HAS181660",
@@ -269686,36 +267363,6 @@
     "source": "curated-densify",
     "sku": null,
     "imageUrl": null
-  },
-  {
-    "id": "hs8-hs-22",
-    "name": "Megatron",
-    "subtitle": "Studio Series 86",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-10-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.5,
-    "tags": [
-      "hasbro",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena",
-      "sku-alias",
-      "alias:toyarena",
-      "alias:legendztoys",
-      "alias:toydojo",
-      "alias:indemandtoys",
-      "alias:hasbro-pulse"
-    ],
-    "source": "curated-bbts-wave8",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996319876a.webp?v=1754609022",
-    "sku": "HAS319876"
   },
   {
     "id": "d14ml-knull-baf",
@@ -273447,26 +271094,6 @@
     "sku": "5010993835430"
   },
   {
-    "id": "d14ss-bb-optimus-chase",
-    "name": "Optimus Prime",
-    "subtitle": "SS-68 Chase Bumblebee",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-09-01",
-    "msrp": 49.99,
-    "scale": "Voyager",
-    "demand": 1.35,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "hs8-hs-21",
     "name": "Optimus Prime",
     "subtitle": "Studio Series 86",
@@ -273669,33 +271296,6 @@
     "source": "curated-bbts-wave2",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996234285a.webp?v=1719616229",
     "sku": "HAS234285"
-  },
-  {
-    "id": "ss5-ss-cyclonus-86",
-    "name": "Cyclonus",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2026-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:nerdzoic",
-      "image-sku",
-      "image-bake",
-      "imgsku:nerdzoic",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "G2193",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0535/8125/0722/files/G21935L00_main_26.jpg?v=1777388813"
   },
   {
     "id": "d14ml-ml-whatif-cap",
@@ -277394,36 +274994,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/e1573eu40-5010993469925-pkg-17-s.jpg?v=1781089487"
   },
   {
-    "id": "ss5-ss-galvatron-86",
-    "name": "Galvatron",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2025-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena",
-      "sku-alias",
-      "alias:toydojo",
-      "alias:toynk",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/195166278315a.jpg?v=1738885321",
-    "sku": "HAS278315"
-  },
-  {
     "id": "d14joe-destro-v2",
     "name": "Destro",
     "subtitle": "Classified #06 V2",
@@ -280073,35 +277643,6 @@
     "sku": "630509989720"
   },
   {
-    "id": "ss5-ss-springer-86",
-    "name": "Springer",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2024-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena",
-      "sku-alias",
-      "alias:hasbro-pulse",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/195166256795a.webp?v=1720826823",
-    "sku": "HAS256795"
-  },
-  {
     "id": "joec-snake-eyes-movie",
     "name": "Snake Eyes",
     "subtitle": "Movie",
@@ -280467,7 +278008,7 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-07-01",
+    "releaseDate": "2020",
     "msrp": 29.99,
     "scale": "Deluxe",
     "demand": 1.25,
@@ -280479,7 +278020,9 @@
       "sku:collecticon",
       "image-sku",
       "image-bake",
-      "imgsku:collecticon"
+      "imgsku:collecticon",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "TFSS64-CLIFFJUMPER",
@@ -284968,35 +282511,6 @@
     "sku": "HAS384973"
   },
   {
-    "id": "ss5-ss-ultrmagnus-86",
-    "name": "Ultra Magnus",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "sku-alias",
-      "alias:indemandtoys",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "HAS147394",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996147394a.webp?v=1705086182"
-  },
-  {
     "id": "d14ml-terrax",
     "name": "Terrax Herald (2022)",
     "subtitle": "Herald",
@@ -285215,26 +282729,6 @@
       "curated"
     ],
     "source": "curated",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "d14ss-bb-optimus-corp",
-    "name": "Optimus Prime",
-    "subtitle": "SS-63 Corp Bumblebee",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-06-01",
-    "msrp": 49.99,
-    "scale": "Voyager",
-    "demand": 1.4,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
     "sku": null,
     "imageUrl": null
   },
@@ -288598,7 +286092,8 @@
       "sku-alias",
       "alias:collecticon",
       "alias:hasbro-pulse",
-      "alias:toyarena"
+      "alias:toyarena",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "TFSLUG86",
@@ -289109,38 +286604,6 @@
     "source": "curated",
     "sku": "5010993914364",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/star-wars-the-black-series-box-art-wave-6-bib-fortuna-5010993914364.jpg?v=1642607991"
-  },
-  {
-    "id": "ss5-ss-arcee-86",
-    "name": "Arcee",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2022-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore",
-      "sku-alias",
-      "alias:toyarena",
-      "alias:toydojo",
-      "alias:hasbro-pulse",
-      "alias:indemandtoys",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-wave-5-arcee-5010994199463-pkg.jpg?v=1697586044",
-    "sku": "5010994199463"
   },
   {
     "id": "hy10-hy-44",
@@ -291890,35 +289353,6 @@
     "sku": "5010993856510"
   },
   {
-    "id": "ss5-ss-kup-86",
-    "name": "Kup",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.3,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toydojo",
-      "sku-alias",
-      "alias:hasbro-pulse",
-      "image-sku",
-      "image-bake",
-      "imgsku:toydojo",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "HSF0710",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0564/2783/9650/products/cover__42742.jpg?v=1621625419"
-  },
-  {
     "id": "ml2-jean-grey-phoenix",
     "name": "Jean Grey (2021)",
     "subtitle": "Phoenix",
@@ -291946,7 +289380,7 @@
   {
     "id": "tfss-ss73-grindor",
     "name": "Grindor & Ravage",
-    "subtitle": "SS-73 DOTM",
+    "subtitle": "SS-73 ROTF",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -291966,7 +289400,8 @@
       "sku-alias",
       "alias:collecticon",
       "alias:toyarena",
-      "alias:toydojo"
+      "alias:toydojo",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-leader-class-2021-wave-3-grindor-ravage-630509991099.jpg?v=1697585908",
@@ -295515,33 +292950,6 @@
     "sku": "5010993772971"
   },
   {
-    "id": "ss5-ss-hotrod-86",
-    "name": "Hot Rod",
-    "subtitle": "86 Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "HAS151069",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/630509974931a.jpg?v=1626736821"
-  },
-  {
     "id": "mlc-havok-classic",
     "name": "Havok X-Factor (2022)",
     "subtitle": "X-Factor",
@@ -295635,7 +293043,8 @@
       "sku-alias",
       "alias:toydojo",
       "alias:collecticon",
-      "alias:hobbyfigures"
+      "alias:hobbyfigures",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996322869a.webp?v=1757030479",
@@ -301096,40 +298505,6 @@
     "imageUrl": null
   },
   {
-    "id": "hs10-hs-25",
-    "name": "Studio Series 86 Bumblebee",
-    "subtitle": "Studio Series",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.5,
-    "tags": [
-      "hasbro",
-      "marvel-legends",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena",
-      "sku-alias",
-      "alias:collecticon",
-      "alias:toyarena",
-      "alias:solarisjapan",
-      "alias:staractionfigures",
-      "alias:toydojo",
-      "alias:indemandtoys",
-      "alias:hobbyfigures",
-      "alias:hasbro-pulse"
-    ],
-    "source": "curated-bbts-wave10",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996232335a.webp?v=1720827990",
-    "sku": "HAS232335"
-  },
-  {
     "id": "d14ml-storm-aoa",
     "name": "Storm Age of Apocalypse (2021)",
     "subtitle": "Age of Apocalypse",
@@ -301278,26 +298653,6 @@
     "source": "curated-bbts-wave2",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-retro-wave-4-stealth-armor-iron-man-5010993848850.jpg?v=1631746384",
     "sku": "5010993848850"
-  },
-  {
-    "id": "d14ss-tlk-infernocus",
-    "name": "Infernocus",
-    "subtitle": "SS-52 TLK",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-01-01",
-    "msrp": 54.99,
-    "scale": "Leader",
-    "demand": 1.4,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "d14bs-incin-tr",
@@ -303412,7 +300767,8 @@
       "sku:staractionfigures",
       "image-sku",
       "image-bake",
-      "imgsku:staractionfigures"
+      "imgsku:staractionfigures",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "G2189",
@@ -303579,7 +300935,8 @@
       "sku:toydojo",
       "image-sku",
       "image-bake",
-      "imgsku:toydojo"
+      "imgsku:toydojo",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "TFSS86DEVASTATOR",
@@ -303615,38 +300972,6 @@
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-masterpiece-generation-one-arcee-mp-51-4904810133445-pkg.jpg?v=1723115022",
     "sku": "4904810133445"
-  },
-  {
-    "id": "ss5-ss-apelinq",
-    "name": "Apelinq",
-    "subtitle": "Rise of the Beasts",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2020-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:toynk",
-      "sku:japan-figure",
-      "sku-gtin",
-      "sku-alias",
-      "alias:indemandtoys",
-      "image-sku",
-      "image-bake",
-      "imgsku:japan-figure",
-      "date-precision:year",
-      "date-unverified"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "4904810991489",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/Takara-Tomy-Transformers-The-Movie-Studio-Series-Ss146-Apelinq-Action-Figure-4904810991489-0.jpg?v=1738501665"
   },
   {
     "id": "fm8-fm-16",
@@ -306072,7 +303397,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "195166181653",
@@ -306201,7 +303527,8 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:collecticon"
+      "alias:collecticon",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-deluxe-class-2021-wave-1-blurr-86-03-630509978281-pkg.jpg?v=1697586111",
@@ -308538,7 +305865,8 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "HAS978236",
@@ -308565,7 +305893,8 @@
       "alias:collecticon",
       "image-sku",
       "image-bake",
-      "imgsku:toydojo"
+      "imgsku:toydojo",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "HSG1725",
@@ -308739,7 +306068,8 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:hobbyfigures",
-      "alias:nerdzoic"
+      "alias:nerdzoic",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-leader-class-2026-wave-4-blitzwing-5010996376015.jpg?v=1777664026",
@@ -312022,31 +309352,6 @@
     "sku": "5010996124791"
   },
   {
-    "id": "d14ss-tlk-cogman",
-    "name": "Cogman",
-    "subtitle": "SS-47 TLK",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2020-09-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.3,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "630509778829",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-movie-studios-series-deluxe-class-5-inch-action-figure-cogman-39.jpg?v=1723135416"
-  },
-  {
     "id": "bsc-wolfpack",
     "name": "Clone Trooper",
     "subtitle": "Wolfpack",
@@ -312162,31 +309467,6 @@
     "source": "curated-bbts-wave3",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-credit-collection-cara-dune-5010993772254.jpg?v=1723114717",
     "sku": "5010993772254"
-  },
-  {
-    "id": "d14ss-bb-blitzwing",
-    "name": "Blitzwing",
-    "subtitle": "SS-51 Bumblebee",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2020-09-01",
-    "msrp": 54.99,
-    "scale": "Leader",
-    "demand": 1.45,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:toydojo",
-      "image-sku",
-      "image-bake",
-      "imgsku:toydojo"
-    ],
-    "source": "curated-densify",
-    "sku": "HSG2187",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0564/2783/9650/files/2f5fe0497c32491f9b28db77e042ea68xl.webp?v=1777397473"
   },
   {
     "id": "ml3-ml-apocalypse-baf",
@@ -315001,26 +312281,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-voyager-class-2022-wave-1-soundwave-195166153438-pkg.jpg?v=1697585922"
   },
   {
-    "id": "d14ss-aoe-slash",
-    "name": "Slash",
-    "subtitle": "SS-46 AOE",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2020-08-01",
-    "msrp": 29.99,
-    "scale": "Deluxe",
-    "demand": 1.2,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "d14ml-shaw-hf",
     "name": "Sebastian Shaw (2020)",
     "subtitle": "Hellfire Club",
@@ -317750,7 +315010,8 @@
       "sku:staractionfigures",
       "image-sku",
       "image-bake",
-      "imgsku:staractionfigures"
+      "imgsku:staractionfigures",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "G0560",
@@ -325250,31 +322511,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-spider-man-across-the-spider-verse-wave-2-spider-man-2099-5010996237804.jpg?v=1729122439"
   },
   {
-    "id": "d14ss-aoe-slug",
-    "name": "Slug",
-    "subtitle": "SS-31 AOE",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2020-05-01",
-    "msrp": 39.99,
-    "scale": "Voyager",
-    "demand": 1.25,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-leader-class-2021-wave-3-dinobot-slug-and-daniel-witwicky-630509989652.jpg?v=1697586169",
-    "sku": "630509989652"
-  },
-  {
     "id": "tfss-ss59-shatter",
     "name": "Shatter",
     "subtitle": "SS-59 Bumblebee",
@@ -327540,49 +324776,6 @@
     "sku": "5010993882762"
   },
   {
-    "id": "ss5-ss-stratosphere",
-    "name": "Stratosphere",
-    "subtitle": "Rise of the Beasts",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2020-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.25,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "date-precision:year",
-      "date-unverified"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "d14ss-aoe-strafe",
-    "name": "Strafe",
-    "subtitle": "SS-30 AOE",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2020-04-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
-    "demand": 1.2,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "joe2-scarlett-v2",
     "name": "Scarlett",
     "subtitle": "Version 2",
@@ -327626,7 +324819,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "630509900619",
@@ -330688,26 +327882,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-12-inch-action-figure-giant-series-spider-man_image.gif?v=1723127309"
   },
   {
-    "id": "d14ss-aoe-snooper",
-    "name": "Snooper",
-    "subtitle": "SS-29 AOE",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2020-03-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
-    "demand": 1.15,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "mlc-rescue",
     "name": "Rescue (2020)",
     "subtitle": "Pepper Potts",
@@ -333493,7 +330667,8 @@
       "sku:toydojo",
       "image-sku",
       "image-bake",
-      "imgsku:toydojo"
+      "imgsku:toydojo",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "sku": "HSG0483",
@@ -336148,31 +333323,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996300522a.webp?v=1747338851"
   },
   {
-    "id": "d14ss-bb-soundwave",
-    "name": "Soundwave",
-    "subtitle": "SS-43 Bumblebee",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2020-01-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
-    "demand": 1.35,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "630509900633",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2020-wave-3-6-inch-action-figure-tf2-soundwave-62_pkg.jpg?v=1723123507"
-  },
-  {
     "id": "tfmp-mp19p",
     "name": "Smokescreen",
     "subtitle": "MP-19+",
@@ -336226,7 +333376,8 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2025-wave-3-scavenger-5010996323439.jpg?v=1750969428",
@@ -336423,26 +333574,6 @@
     "source": "curated-densify",
     "sku": "G1318",
     "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/g1318bs00-pkg-25-s.jpg?v=1781093159"
-  },
-  {
-    "id": "d14ss-dotm-devastator",
-    "name": "Devastator",
-    "subtitle": "SS-28 DOTM",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2020-01-01",
-    "msrp": 79.99,
-    "scale": "Leader",
-    "demand": 1.55,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "mlc-daredevil-yellow",
@@ -340451,33 +337582,6 @@
     "sku": "195166255941"
   },
   {
-    "id": "d14ss-dotm-scavenger",
-    "name": "Scavenger",
-    "subtitle": "SS-27 DOTM",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2019-11-01",
-    "msrp": 29.99,
-    "scale": "Voyager",
-    "demand": 1.2,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:toydojo",
-      "sku:cmdstore",
-      "sku-gtin",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "630509899401",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-dark-of-the-moon-leader-class-8-inch-action-figure-scavenger-55_pkg.jpg?v=1723115148"
-  },
-  {
     "id": "d14lc-putty",
     "name": "Putty Patroller",
     "subtitle": "MMPR",
@@ -340519,7 +337623,8 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:toyarena"
+      "alias:toyarena",
+      "fix:ss-audit"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-2025-wave-3-mixmaster-5010996323521.jpg?v=1750969442",
@@ -340680,31 +337785,6 @@
     "source": "curated",
     "sku": "F64725L00set4",
     "imageUrl": "https://static.wixstatic.com/media/adc447_68c831c9473849c8b06775cd4ef2f0d5~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_68c831c9473849c8b06775cd4ef2f0d5~mv2.jpg"
-  },
-  {
-    "id": "d14ss-bb-arcee",
-    "name": "Arcee",
-    "subtitle": "SS-42 Bumblebee",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2019-11-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
-    "demand": 1.3,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:collecticon",
-      "image-sku",
-      "image-bake",
-      "imgsku:collecticon"
-    ],
-    "source": "curated-densify",
-    "sku": "TFSS-D-ARCEE",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0076/4103/8906/products/transformers-movie-studio-series-85-deluxe-arcee-cybertronian-bumblebee-film-box-package-front-photo.jpg?v=1651381577"
   },
   {
     "id": "hy10-hy-35",
@@ -342669,35 +339749,6 @@
     "sku": "5010996430526"
   },
   {
-    "id": "d14ss-bb-wheeljack",
-    "name": "Wheeljack",
-    "subtitle": "SS-41 Bumblebee",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2019-10-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
-    "demand": 1.25,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:staractionfigures",
-      "sku:cmdstore",
-      "sku-gtin",
-      "sku-alias",
-      "alias:collecticon",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "195166219738",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2024-wave-1-wheeljack-108-195166219738.jpg?v=1699582116"
-  },
-  {
     "id": "d14ml-ml-retro-surfer",
     "name": "Silver Surfer Retro Card (2018)",
     "subtitle": "Retro Card",
@@ -342809,31 +339860,6 @@
     "sku": "5010993954698"
   },
   {
-    "id": "d14ss-dotm-mixmaster",
-    "name": "Mixmaster",
-    "subtitle": "SS-26 DOTM",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2019-10-01",
-    "msrp": 29.99,
-    "scale": "Voyager",
-    "demand": 1.25,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:toydojo",
-      "image-sku",
-      "image-bake",
-      "imgsku:toydojo"
-    ],
-    "source": "curated-densify",
-    "sku": "HSG0563",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0564/2783/9650/files/97c10cf77962464899b856a6ab9a3ab4xl_1.webp?v=1750785783"
-  },
-  {
     "id": "hs10-hs-10",
     "name": "Marvel Legends Jean Grey (2019)",
     "subtitle": "Marvel Legends",
@@ -342918,35 +339944,6 @@
     "source": "curated",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-2012-wave-1-ghost-rider_image.gif?v=1723129373",
     "sku": "653569690474"
-  },
-  {
-    "id": "ss5-ss-blitzwing",
-    "name": "Blitzwing",
-    "subtitle": "Bumblebee Movie",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2020-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.35,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "studio-series",
-      "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "sku-alias",
-      "alias:hasbro-pulse",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave5",
-    "sku": "630509918232",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-2020-wave-3-7-inch-action-figure-blitzwing-65_pkg.jpg?v=1723123549"
   },
   {
     "id": "mlc-blackcat",
@@ -345319,11 +342316,11 @@
   {
     "id": "ss5-ss-shatter",
     "name": "Shatter",
-    "subtitle": "Bumblebee Movie",
+    "subtitle": "SS-40 Bumblebee",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-01-01",
+    "releaseDate": "2019",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -345340,7 +342337,8 @@
       "sku-alias",
       "alias:collecticon",
       "alias:hasbro-pulse",
-      "date-precision:year"
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/630509788835_b.jpg?v=1705089059",
@@ -345392,35 +342390,6 @@
     "source": "curated-densify",
     "sku": null,
     "imageUrl": null
-  },
-  {
-    "id": "d14ss-bb-ratchet",
-    "name": "Ratchet",
-    "subtitle": "SS-40 Bumblebee",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2019-09-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
-    "demand": 1.2,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:toyarena",
-      "sku:japan-figure",
-      "sku-gtin",
-      "sku-alias",
-      "alias:toynk",
-      "image-sku",
-      "image-bake",
-      "imgsku:japan-figure"
-    ],
-    "source": "curated-densify",
-    "sku": "4904810934639",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/Transformers-The-Movie-Studio-Series-Ss-Ge09-Ratchet-4904810934639-0.jpg?v=1744002795"
   },
   {
     "id": "ml3-ml-proxima",
@@ -348184,31 +345153,6 @@
     "imageUrl": null
   },
   {
-    "id": "d14ss-bb-shatter",
-    "name": "Shatter",
-    "subtitle": "SS-39 Bumblebee",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2019-08-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
-    "demand": 1.25,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "630509788835",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-movie-studios-series-deluxe-class-5-inch-action-figure-shatter-40.jpg?v=1723132156"
-  },
-  {
     "id": "d14bs-sand-tr",
     "name": "Sandtrooper",
     "subtitle": "A New Hope",
@@ -348350,7 +345294,7 @@
   {
     "id": "d14ss-dotm-hightower",
     "name": "Hightower",
-    "subtitle": "SS-24 DOTM",
+    "subtitle": "SS-47 ROTF",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -348370,43 +345314,17 @@
       "alias:collecticon",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "630509788798",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-6-inch-action-constructicon-hightower-47.jpg?v=1723125057"
   },
   {
-    "id": "d14ss-bb-dropkick",
-    "name": "Dropkick",
-    "subtitle": "SS-38 Bumblebee",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2019-08-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
-    "demand": 1.25,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:toyarena",
-      "sku:cmdstore",
-      "sku-gtin",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "630509707591",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-movie-studios-series-deluxe-class-5-inch-action-figure-dropkick-22.jpg?v=1723115106"
-  },
-  {
     "id": "ss5-ss-dropkick",
     "name": "Dropkick",
-    "subtitle": "Bumblebee Movie",
+    "subtitle": "SS-22 Bumblebee",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -348428,7 +345346,8 @@
       "alias:toyarena",
       "alias:collecticon",
       "alias:hasbro-pulse",
-      "date-precision:year"
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/630509707591_b.jpg?v=1705088942",
@@ -350581,26 +347500,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-rebels-series-sabine-wren-5010993744015.jpg?v=1721431793"
   },
   {
-    "id": "d14ss-tlk-nitro",
-    "name": "Nitro Zeus",
-    "subtitle": "SS-37 TLK",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2019-07-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
-    "demand": 1.25,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "mlc-nick-fury",
     "name": "Nick Fury (2019)",
     "subtitle": "Classic",
@@ -350842,11 +347741,11 @@
   {
     "id": "d14ss-dotm-crowbar",
     "name": "Crowbar",
-    "subtitle": "SS-23 DOTM",
+    "subtitle": "SS-03 DOTM",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-07-01",
+    "releaseDate": "2018",
     "msrp": 24.99,
     "scale": "Deluxe",
     "demand": 1.15,
@@ -350861,7 +347760,9 @@
       "alias:hasbro-pulse",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "630509629039",
@@ -353696,11 +350597,11 @@
   {
     "id": "d14ss-dotm-wheeljack",
     "name": "Wheeljack",
-    "subtitle": "SS-22 DOTM",
+    "subtitle": "DOTM Deluxe 2025",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-06-01",
+    "releaseDate": "2025",
     "msrp": 24.99,
     "scale": "Deluxe",
     "demand": 1.25,
@@ -353712,7 +350613,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-deluxe-class-2022-wave-1-wheeljack-195166160016.jpg?v=1697585934",
@@ -354143,36 +351046,6 @@
     "source": "curated-transformers",
     "sku": "MP-21RCOIN",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/MP-21RCOIN.JPG?v=1571609183"
-  },
-  {
-    "id": "d14ss-tlk-barricade",
-    "name": "Barricade",
-    "subtitle": "SS-36 TLK",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2019-06-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
-    "demand": 1.25,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore",
-      "sku-alias",
-      "alias:hobbyfigures",
-      "alias:collecticon",
-      "alias:kitsap",
-      "alias:hasbro-pulse"
-    ],
-    "source": "curated-densify",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-2026-wave-1-barricade-5010996380791.jpg?v=1758922409",
-    "sku": "5010996380791"
   },
   {
     "id": "d14ml-archangel",
@@ -356562,11 +353435,11 @@
   {
     "id": "d14ss-dotm-topspin",
     "name": "Topspin",
-    "subtitle": "SS-21 DOTM",
+    "subtitle": "SS-63 DOTM",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-05-01",
+    "releaseDate": "2020",
     "msrp": 24.99,
     "scale": "Deluxe",
     "demand": 1.2,
@@ -356580,7 +353453,9 @@
       "alias:collecticon",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "HAS932542",
@@ -358828,33 +355703,6 @@
     "imageUrl": null
   },
   {
-    "id": "d14ss-dotm-roadbuster",
-    "name": "Roadbuster",
-    "subtitle": "SS-20 DOTM",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2019-04-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
-    "demand": 1.2,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:collecticon",
-      "sku-alias",
-      "alias:hasbro-pulse",
-      "image-sku",
-      "image-bake",
-      "imgsku:collecticon"
-    ],
-    "source": "curated-densify",
-    "sku": "TFSS-ROADBUSTER",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0076/4103/8906/products/transformers-movie-studio-series-58-deluxe-roadbuaster-DOTM-wrecker-box-package.jpg?v=1581704766"
-  },
-  {
     "id": "bsc-padme-tcw",
     "name": "Padmé Amidala",
     "subtitle": "Clone Wars",
@@ -358870,26 +355718,6 @@
       "curated"
     ],
     "source": "curated",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
-    "id": "d14ss-tlk-optimus",
-    "name": "Optimus Prime",
-    "subtitle": "SS-34 TLK",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2019-04-01",
-    "msrp": 39.99,
-    "scale": "Voyager",
-    "demand": 1.3,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
     "sku": null,
     "imageUrl": null
   },
@@ -360914,7 +357742,7 @@
   {
     "id": "tfc-optimus-ss32",
     "name": "Optimus Prime",
-    "subtitle": "Bumblebee SS-32",
+    "subtitle": "SS-32 2007 Film",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -360930,31 +357758,12 @@
       "sku-gtin",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated",
     "sku": "630509769964",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-movie-studio-series-voyager-class-7-inch-action-figure-optimus-prime-32.jpg?v=1723132255"
-  },
-  {
-    "id": "d14ss-bb-optimus",
-    "name": "Optimus Prime",
-    "subtitle": "SS-32 Bumblebee",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2019-03-01",
-    "msrp": 49.99,
-    "scale": "Voyager",
-    "demand": 1.35,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "bsc-obiwan-tcw",
@@ -361056,11 +357865,11 @@
   {
     "id": "d14ss-dotm-leadfoot",
     "name": "Leadfoot",
-    "subtitle": "SS-19 DOTM",
+    "subtitle": "SS-68 DOTM",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-03-01",
+    "releaseDate": "2020",
     "msrp": 24.99,
     "scale": "Deluxe",
     "demand": 1.2,
@@ -361074,7 +357883,9 @@
       "alias:collecticon",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "HAS705207",
@@ -363151,31 +359962,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/6957534204265a.webp?v=1786562070"
   },
   {
-    "id": "d14ss-dotm-sentinel",
-    "name": "Sentinel Prime",
-    "subtitle": "SS-18 DOTM",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2019-02-01",
-    "msrp": 49.99,
-    "scale": "Leader",
-    "demand": 1.4,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "630509900558",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-voyager-class-2020-wave-2-7-inch-action-figure-sentinel-prime-61.jpg?v=1723125023"
-  },
-  {
     "id": "tfc-siege-megatron",
     "name": "Megatron",
     "subtitle": "Siege",
@@ -365228,12 +362014,12 @@
   },
   {
     "id": "d14ss-dotm-chromia",
-    "name": "Chromia",
-    "subtitle": "SS-17 DOTM",
+    "name": "Chromia, Arcee & Elita-1",
+    "subtitle": "SS-52 ROTF",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-01-01",
+    "releaseDate": "2020",
     "msrp": 24.99,
     "scale": "Deluxe",
     "demand": 1.25,
@@ -365245,11 +362031,13 @@
       "sku:collecticon",
       "image-sku",
       "image-bake",
-      "imgsku:collecticon"
+      "imgsku:collecticon",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "TFSS53-MOTORCYCLESISTERS",
-    "imageUrl": null
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/e7198as00-630509900657-pkg-19-s.jpg?v=1781094819"
   },
   {
     "id": "d14bs-chirrut",
@@ -366860,7 +363648,7 @@
   {
     "id": "d14ss-dotm-sideswipe",
     "name": "Sideswipe",
-    "subtitle": "SS-16 DOTM",
+    "subtitle": "SS-29 DOTM",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -366876,7 +363664,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "5010996346315",
@@ -368424,7 +365213,7 @@
   {
     "id": "d14ss-dotm-ratchet",
     "name": "Ratchet",
-    "subtitle": "SS-15 DOTM",
+    "subtitle": "SS-16 DOTM",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -368435,7 +365224,8 @@
     "tags": [
       "transformers",
       "studio-series",
-      "densify"
+      "densify",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": null,
@@ -370220,28 +367010,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-retro-xmen-1997-wave-1-rogue-5010996143754_59ad0aea-b716-4d72-a5ed-c5a71b79f7b0.jpg?v=1779897311"
   },
   {
-    "id": "d14ss-aoe-lockdown",
-    "name": "Lockdown",
-    "subtitle": "SS-11 AOE",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2018-10-01",
-    "msrp": 29.99,
-    "scale": "Voyager",
-    "demand": 1.4,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-alias",
-      "alias:hasbro-pulse"
-    ],
-    "source": "curated-densify",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "d14ss-dotm-ironhide",
     "name": "Ironhide",
     "subtitle": "SS-14 DOTM",
@@ -371898,55 +368666,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-venom-let-there-be-carnage-venom-5010996244284.jpg?v=1721678448"
   },
   {
-    "id": "tfc-shockwave-ss10",
-    "name": "Shockwave",
-    "subtitle": "DOTM SS-10",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2018-09-01",
-    "msrp": 49.99,
-    "scale": "Leader",
-    "demand": 1.35,
-    "tags": [
-      "transformers",
-      "curated",
-      "sku-bake",
-      "sku:staractionfigures",
-      "image-sku",
-      "image-bake",
-      "imgsku:staractionfigures"
-    ],
-    "source": "curated",
-    "sku": "G0483",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/g04835l00-combo-24-2400px-133dpi.jpg?v=1781090821"
-  },
-  {
-    "id": "d14ss-dotm-shockwave",
-    "name": "Shockwave",
-    "subtitle": "SS-10 DOTM",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2018-09-01",
-    "msrp": 49.99,
-    "scale": "Leader",
-    "demand": 1.35,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "630509899395",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-dark-of-the-moon-leader-class-8-inch-action-figure-shockwave-56_pkg.jpg?v=1723115052"
-  },
-  {
     "id": "d14ml-rhino-baf",
     "name": "Rhino (2018)",
     "subtitle": "Build-A-Figure",
@@ -372051,7 +368770,7 @@
   {
     "id": "tfc-grimlock-ss09",
     "name": "Grimlock",
-    "subtitle": "AOE SS-09",
+    "subtitle": "SS-07 AOE",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -372066,38 +368785,12 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-titan-class-grimlock-5010996400642.jpg?v=1773794380",
     "sku": "5010996400642"
-  },
-  {
-    "id": "d14ss-aoe-grimlock",
-    "name": "Grimlock",
-    "subtitle": "SS-09 AOE",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2018-09-01",
-    "msrp": 49.99,
-    "scale": "Leader",
-    "demand": 1.4,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:staractionfigures",
-      "sku:cmdstore",
-      "sku-gtin",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
-    ],
-    "source": "curated-densify",
-    "sku": "630509627844",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-movie-studio-series-leader-class-10-inch-action-figure-grimlock-07_image.gif?v=1784744294"
   },
   {
     "id": "d14ml-killmonger",
@@ -372130,11 +368823,11 @@
   {
     "id": "d14ss-aoe-drift",
     "name": "Drift",
-    "subtitle": "SS-08 AOE",
+    "subtitle": "SS-45 AOE",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2018-09-01",
+    "releaseDate": "2019",
     "msrp": 24.99,
     "scale": "Deluxe",
     "demand": 1.25,
@@ -372146,7 +368839,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "630509786640",
@@ -373858,7 +370553,7 @@
   {
     "id": "d14ss-dotm-megatron",
     "name": "Megatron",
-    "subtitle": "SS-13 DOTM",
+    "subtitle": "SS-13 ROTF",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -373874,7 +370569,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "630509652204",
@@ -373958,31 +370654,6 @@
     "source": "curated-densify",
     "sku": "G2252",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0698/7730/1541/files/G22525L00_pkg_25_tif_2000px_300DPI.jpg?v=1768296178"
-  },
-  {
-    "id": "d14ss-aoe-crosshairs",
-    "name": "Crosshairs",
-    "subtitle": "SS-07 AOE",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2018-08-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
-    "demand": 1.2,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "image-bake",
-      "imgsku:toyarena"
-    ],
-    "source": "curated-densify",
-    "sku": "HAS181677",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/195166181677a.jpg?v=1669148144"
   },
   {
     "id": "tfmp-mp42",
@@ -375531,11 +372202,11 @@
   {
     "id": "tfc-soundwave-ss12",
     "name": "Soundwave",
-    "subtitle": "DOTM SS-12",
+    "subtitle": "SS-51 DOTM",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2018-07-01",
+    "releaseDate": "2020",
     "msrp": 24.99,
     "scale": "Deluxe",
     "demand": 1.3,
@@ -375546,36 +372217,13 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "fix:ss-audit"
     ],
     "source": "curated",
     "sku": "630509900701",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-deluxe-class-6-inch-action-figure-tf3-soundwave_pkg.jpg?v=1723123979"
-  },
-  {
-    "id": "d14ss-dotm-soundwave",
-    "name": "Soundwave",
-    "subtitle": "SS-12 DOTM",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2018-07-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
-    "demand": 1.3,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:planet-af",
-      "image-sku",
-      "image-bake",
-      "imgsku:planet-af"
-    ],
-    "source": "curated-densify",
-    "sku": "HASG2200",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0875/5896/files/x_hasg2200.jpg?v=1779359835"
   },
   {
     "id": "d14ml-rogue-80s",
@@ -375640,7 +372288,7 @@
   {
     "id": "d14ss-aoe-optimus",
     "name": "Optimus Prime",
-    "subtitle": "SS-05 AOE",
+    "subtitle": "SS-05 ROTF",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -375658,7 +372306,8 @@
       "sku-gtin",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated-densify",
     "sku": "630509628162",
@@ -375772,31 +372421,6 @@
     "source": "curated",
     "sku": "630509552658",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-guardians-of-the-galaxy-exclusive-8-inch-groot-evolution-exclusive_image.gif?v=1723124454"
-  },
-  {
-    "id": "d14ss-aoe-galvatron",
-    "name": "Galvatron",
-    "subtitle": "SS-04 AOE",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2018-07-01",
-    "msrp": 29.99,
-    "scale": "Voyager",
-    "demand": 1.35,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:hobbyfigures",
-      "image-sku",
-      "image-bake",
-      "imgsku:hobbyfigures"
-    ],
-    "source": "curated-densify",
-    "sku": "HASG0481",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0611/4030/4091/files/The-Transformers-The-Movie-Studio-Series-Leader-Cl-9.jpg?v=1730769813"
   },
   {
     "id": "bsc-enfys",
@@ -377487,7 +374111,7 @@
   {
     "id": "tfc-starscream-ss03",
     "name": "Starscream",
-    "subtitle": "DOTM SS-03",
+    "subtitle": "SS-06 2007 Film",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -377502,36 +374126,12 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "fix:ss-audit"
     ],
     "source": "curated",
     "sku": "630509628179",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-movie-studio-series-voyager-class-8-inch-action-figure-starscream-06_image.gif?v=1784744777"
-  },
-  {
-    "id": "d14ss-dotm-starscream",
-    "name": "Starscream",
-    "subtitle": "SS-03 DOTM",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2018-06-01",
-    "msrp": 24.99,
-    "scale": "Deluxe",
-    "demand": 1.25,
-    "tags": [
-      "transformers",
-      "studio-series",
-      "densify",
-      "sku-bake",
-      "sku:hobbyfigures",
-      "image-sku",
-      "image-bake",
-      "imgsku:hobbyfigures"
-    ],
-    "source": "curated-densify",
-    "sku": "HASG0566",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0611/4030/4091/files/Transformers-One-Studio-Series-Deluxe-Class-Action-8550.jpg?v=1750987280"
   },
   {
     "id": "mlc-rocket",
@@ -601980,7 +598580,7 @@
   {
     "id": "afmon-hasbro-grimlock-hsg1888",
     "name": "Grimlock",
-    "subtitle": "Transformers Studio Series",
+    "subtitle": "AOE Titan 2026",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -601993,7 +598593,8 @@
       "ee",
       "hasbro",
       "transformers-studio-series",
-      "af-monitor-20260916"
+      "af-monitor-20260916",
+      "fix:ss-audit"
     ],
     "sku": "HSG1888",
     "source": "ee",
@@ -602002,7 +598603,7 @@
   {
     "id": "afmon-hasbro-autobot-windcharger-hsg1927",
     "name": "Autobot Windcharger",
-    "subtitle": "Transformers Studio Series",
+    "subtitle": "The Movie Deluxe 2026",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -602015,7 +598616,8 @@
       "ee",
       "hasbro",
       "transformers-studio-series",
-      "af-monitor-20260916"
+      "af-monitor-20260916",
+      "fix:ss-audit"
     ],
     "sku": "HSG1927",
     "source": "ee",
@@ -602024,7 +598626,7 @@
   {
     "id": "afmon-hasbro-barricade-hsg1928",
     "name": "Barricade",
-    "subtitle": "Transformers Studio Series",
+    "subtitle": "TLK Deluxe 2026",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -602037,7 +598639,8 @@
       "ee",
       "hasbro",
       "transformers-studio-series",
-      "af-monitor-20260916"
+      "af-monitor-20260916",
+      "fix:ss-audit"
     ],
     "sku": "HSG1928",
     "source": "ee",
@@ -602134,7 +598737,7 @@
   {
     "id": "afmon-hasbro-shockwave-hsg2191",
     "name": "Shockwave",
-    "subtitle": "Transformers Studio Series",
+    "subtitle": "The Movie Voyager 2026",
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
@@ -602147,33 +598750,12 @@
       "ee",
       "hasbro",
       "transformers-studio-series",
-      "af-monitor-20260916"
+      "af-monitor-20260916",
+      "fix:ss-audit"
     ],
     "sku": "HSG2191",
     "source": "ee",
     "imageUrl": "https://media.entertainmentearth.com/assets/images/dc08de377e1e43d18c23bc2f3a209e9elg.jpg"
-  },
-  {
-    "id": "afmon-hasbro-soundwave-hsg2200",
-    "name": "Soundwave",
-    "subtitle": "Transformers Studio Series",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2026-09-16",
-    "msrp": 27.99,
-    "scale": "6\"",
-    "demand": 1.0,
-    "tags": [
-      "af-monitor",
-      "ee",
-      "hasbro",
-      "transformers-studio-series",
-      "af-monitor-20260916"
-    ],
-    "sku": "HSG2200",
-    "source": "ee",
-    "imageUrl": "https://media.entertainmentearth.com/assets/images/ba0d828023b942c3967698892aea206blg.jpg"
   },
   {
     "id": "afmon-hasbro-dallas-cowboys-starblitz-hsg2333",
@@ -636916,8 +633498,8 @@
   },
   {
     "id": "afmon-hasbro-transformers-studio-series-transformers-optimus-prime-awakening-bumblebee-hsg5856",
-    "name": "Transformers Studio Series Transformers Optimus Prime: Awakening Bumblebee",
-    "subtitle": "Transformers Studio Series Transforme...",
+    "name": "Bumblebee",
+    "subtitle": "Optimus Prime: Awakening Deluxe",
     "line": "Transformers Studio Series Transforme...",
     "company": "hasbro",
     "kind": "figure",
@@ -636930,7 +633512,8 @@
       "ee",
       "hasbro",
       "transformers-studio-series-transforme",
-      "af-monitor-20260923"
+      "af-monitor-20260923",
+      "fix:ss-audit"
     ],
     "sku": "HSG5856",
     "source": "ee",
@@ -637511,28 +634094,6 @@
     "sku": "BBTS-198129",
     "source": "bbts",
     "imageUrl": "https://images.bigbadtoystore.com/images/product/198129/46df5f5c-7611-4d2c-8c7f-0a88c7d35464/360w.png"
-  },
-  {
-    "id": "afmon-hasbro-transformers-optimus-prime-awakening-studio-series-deluxe-class-bumblebee-bbts-197679",
-    "name": "Transformers Optimus Prime: Awakening Studio Series Deluxe Class Bumblebee Action Figure",
-    "subtitle": "Transformers Optimus Prime: Awakening...",
-    "line": "Transformers Optimus Prime: Awakening...",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2026-09-23",
-    "msrp": 29.99,
-    "scale": "6\"",
-    "demand": 1.0,
-    "tags": [
-      "af-monitor",
-      "bbts",
-      "hasbro",
-      "transformers-optimus-prime-awakening",
-      "af-monitor-20260923"
-    ],
-    "sku": "BBTS-197679",
-    "source": "bbts",
-    "imageUrl": "https://images.bigbadtoystore.com/images/product/197679/b571b8df-4ac6-4858-bfae-a88abf115f6d/360w.png"
   },
   {
     "id": "afmon-joytoy-warhammer-the-horus-heresy-word-bearers-mkvi-tactical-sergeant-with-power-bbts-198229",
@@ -706283,27 +702844,6 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:192"
-    ],
-    "source": "legendsverse-export-shelby"
-  },
-  {
-    "id": "lv-hasbro-transformers-studio-series-the-transformers-the-movie-studio-series-86-voyager-class-skyw",
-    "name": "The Transformers: The Movie Studio Series 86 Voyager Class Skywarp",
-    "subtitle": "",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2026-01-01",
-    "msrp": 0,
-    "scale": "",
-    "demand": 1.0,
-    "tags": [
-      "hasbro",
-      "transformers",
-      "legendsverse-export",
-      "shelby-collection",
-      "date-precision:year",
-      "lv-list-row:270"
     ],
     "source": "legendsverse-export-shelby"
   },

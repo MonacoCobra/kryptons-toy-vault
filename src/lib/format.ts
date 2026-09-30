@@ -34,6 +34,8 @@ export function formatDate(iso?: string | number | null): string {
   if (iso == null || iso === "") return "—";
   const s = String(iso).replace(/\u0000/g, "").trim();
   if (!s) return "—";
+  // Year-only release dates ("2019") are stored when no source gives a month.
+  if (/^\d{4}$/.test(s)) return s;
   const d = new Date(s + (s.length <= 10 ? "T00:00:00" : ""));
   if (Number.isNaN(d.getTime())) return s;
   return d.toLocaleDateString("en-US", {
@@ -47,6 +49,8 @@ export function formatMonthYear(iso?: string | number | null): string {
   if (iso == null || iso === "") return "—";
   const s = String(iso).replace(/\u0000/g, "").trim();
   if (!s) return "—";
+  // Year-only release dates ("2019") are stored when no source gives a month.
+  if (/^\d{4}$/.test(s)) return s;
   const d = new Date(s + (s.length <= 10 ? "T00:00:00" : ""));
   if (Number.isNaN(d.getTime())) return s;
   return d.toLocaleDateString("en-US", { month: "short", year: "numeric" });

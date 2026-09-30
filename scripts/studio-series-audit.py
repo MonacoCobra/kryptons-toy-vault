@@ -23,6 +23,7 @@ Order of operations:
 from __future__ import annotations
 
 import argparse
+import re
 import json
 from collections import Counter
 from datetime import datetime, timezone
@@ -85,6 +86,9 @@ def main() -> None:
         for k, v in f["set"].items():
             r[k] = v["new"]
             fixed.append({"id": f["id"], "field": k, "old": v["old"], "new": v["new"]})
+            if k == "releaseDate" and re.fullmatch(r"\d{4}", str(v["new"])):
+                # year-only date: no source gives a month, so none is invented
+                ensure_tag(r, "date-precision:year")
         ensure_tag(r, TAG)
 
     # 2. invented rows
@@ -146,7 +150,7 @@ def main() -> None:
             problems.append({"merge": [drop_id, keep_id], "problem": "drop row is listed as correct/unsure"}); continue
         moved, left = move_aliases(drop_id, keep_id)
         image_filled = False
-        if drop.get("imageUrl") and not keep.get("imageUrl") and not baked.get(keep_id):
+        if drop.get("imageUrl") and not keep.get("imageUrl") and not baked.get(keep_id) and not m.get("noImageFill"):
             keep["imageUrl"] = drop["imageUrl"]; image_filled = True
         ensure_tag(keep, TAG)
         drop_ids.add(drop_id)

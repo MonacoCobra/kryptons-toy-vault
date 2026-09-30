@@ -8,7 +8,7 @@
  "rules": [
   "Row identity = character + film claim; d14ss numbers are sequential placeholders and BBTS-wave dates/prices are placeholders, so they are evidence only when a UPC/image corroborates.",
   "Keeper = curated-transformers > curated > EE > other; merges move aliases + id:<dropId> (keeper msrp/sku/image untouched).",
-  "Year fixed to YYYY-01-01 only when outside TFWiki year (±Oct-Dec/Jan-Feb tolerance); month is not sourced.",
+  "Year fixed to year-only \"YYYY\" (no invented month/day; tagged date-precision:year) only when outside TFWiki year (±Oct-Dec/Jan-Feb tolerance); month is not sourced.",
   "SKU/UPC/image mismatches are flagged, not changed."
  ],
  "counts": {
@@ -543,7 +543,7 @@
     },
     "releaseDate": {
      "old": "2024-10-01",
-     "new": "2019-01-01"
+     "new": "2019"
     }
    },
    "why": "number year",
@@ -562,7 +562,7 @@
     },
     "releaseDate": {
      "old": "2024-05-01",
-     "new": "2026-01-01"
+     "new": "2026"
     }
    },
    "why": "number year",
@@ -577,7 +577,7 @@
    "set": {
     "releaseDate": {
      "old": "2024-09-01",
-     "new": "2025-01-01"
+     "new": "2025"
     }
    },
    "why": "year",
@@ -607,7 +607,7 @@
    "set": {
     "releaseDate": {
      "old": "2024-08-01",
-     "new": "2025-01-01"
+     "new": "2025"
     }
    },
    "why": "year",
@@ -626,7 +626,7 @@
     },
     "releaseDate": {
      "old": "2023-11-01",
-     "new": "2026-01-01"
+     "new": "2026"
     }
    },
    "why": "number year",
@@ -645,7 +645,7 @@
     },
     "releaseDate": {
      "old": "2024-07-01",
-     "new": "2026-01-01"
+     "new": "2026"
     }
    },
    "why": "class year subtitle",
@@ -664,7 +664,7 @@
     },
     "releaseDate": {
      "old": "2024-01-01",
-     "new": "2022-01-01"
+     "new": "2022"
     }
    },
    "why": "number year",
@@ -679,7 +679,7 @@
    "set": {
     "releaseDate": {
      "old": "2022-02-01",
-     "new": "2026-01-01"
+     "new": "2026"
     }
    },
    "why": "year",
@@ -713,7 +713,7 @@
     },
     "releaseDate": {
      "old": "2023-10-01",
-     "new": "2026-01-01"
+     "new": "2026"
     }
    },
    "why": "number year",
@@ -732,7 +732,7 @@
     },
     "releaseDate": {
      "old": "2023-10-01",
-     "new": "2026-01-01"
+     "new": "2026"
     }
    },
    "why": "number year",
@@ -766,7 +766,7 @@
     },
     "releaseDate": {
      "old": "2019-01-01",
-     "new": "2020-01-01"
+     "new": "2020"
     },
     "name": {
      "old": "Chromia",
@@ -800,7 +800,7 @@
    "set": {
     "releaseDate": {
      "old": "2023-08-01",
-     "new": "2026-01-01"
+     "new": "2026"
     }
    },
    "why": "year",
@@ -819,7 +819,7 @@
     },
     "releaseDate": {
      "old": "2023-08-01",
-     "new": "2026-01-01"
+     "new": "2026"
     }
    },
    "why": "number year",
@@ -838,7 +838,7 @@
     },
     "releaseDate": {
      "old": "2023-07-01",
-     "new": "2026-01-01"
+     "new": "2026"
     }
    },
    "why": "number year",
@@ -872,7 +872,7 @@
     },
     "releaseDate": {
      "old": "2023-06-01",
-     "new": "2026-01-01"
+     "new": "2026"
     }
    },
    "why": "number year",
@@ -891,7 +891,7 @@
     },
     "releaseDate": {
      "old": "2023-06-01",
-     "new": "2021-01-01"
+     "new": "2021"
     }
    },
    "why": "number film year",
@@ -910,7 +910,7 @@
     },
     "releaseDate": {
      "old": "2023-06-01",
-     "new": "2026-01-01"
+     "new": "2026"
     }
    },
    "why": "number year",
@@ -944,7 +944,7 @@
     },
     "releaseDate": {
      "old": "2023-01-01",
-     "new": "2019-01-01"
+     "new": "2019"
     }
    },
    "why": "number year",
@@ -963,7 +963,7 @@
     },
     "releaseDate": {
      "old": "2022-01-01",
-     "new": "2023-01-01"
+     "new": "2023"
     }
    },
    "why": "number year",
@@ -978,7 +978,7 @@
    "set": {
     "releaseDate": {
      "old": "2023-03-01",
-     "new": "2022-01-01"
+     "new": "2022"
     }
    },
    "why": "year",
@@ -1012,7 +1012,7 @@
     },
     "releaseDate": {
      "old": "2023-03-01",
-     "new": "2026-01-01"
+     "new": "2026"
     }
    },
    "why": "number year",
@@ -1057,7 +1057,7 @@
    "set": {
     "releaseDate": {
      "old": "2025-01-01",
-     "new": "2026-01-01"
+     "new": "2026"
     }
    },
    "why": "year",
@@ -1076,7 +1076,7 @@
     },
     "releaseDate": {
      "old": "2022-07-01",
-     "new": "2018-01-01"
+     "new": "2018"
     }
    },
    "why": "number year",
@@ -1095,7 +1095,7 @@
     },
     "releaseDate": {
      "old": "2022-06-01",
-     "new": "2018-01-01"
+     "new": "2018"
     }
    },
    "why": "number year",
@@ -1144,7 +1144,7 @@
     },
     "releaseDate": {
      "old": "2022-05-01",
-     "new": "2018-01-01"
+     "new": "2018"
     }
    },
    "why": "number year",
@@ -1193,7 +1193,7 @@
     },
     "releaseDate": {
      "old": "2022-04-01",
-     "new": "2019-01-01"
+     "new": "2019"
     }
    },
    "why": "number year",
@@ -1242,7 +1242,7 @@
     },
     "releaseDate": {
      "old": "2022-03-01",
-     "new": "2019-01-01"
+     "new": "2019"
     }
    },
    "why": "number year",
@@ -1261,7 +1261,7 @@
     },
     "releaseDate": {
      "old": "2022-02-01",
-     "new": "2018-01-01"
+     "new": "2018"
     }
    },
    "why": "number year",
@@ -1321,7 +1321,7 @@
    "set": {
     "releaseDate": {
      "old": "2021-07-01",
-     "new": "2020-01-01"
+     "new": "2020"
     }
    },
    "why": "year",
@@ -1355,7 +1355,7 @@
     },
     "releaseDate": {
      "old": "2021-01-01",
-     "new": "2019-01-01"
+     "new": "2019"
     }
    },
    "why": "number year",
@@ -1404,7 +1404,7 @@
     },
     "releaseDate": {
      "old": "2019-07-01",
-     "new": "2018-01-01"
+     "new": "2018"
     }
    },
    "why": "number year",
@@ -1423,7 +1423,7 @@
     },
     "releaseDate": {
      "old": "2019-06-01",
-     "new": "2025-01-01"
+     "new": "2025"
     }
    },
    "why": "number year",
@@ -1457,7 +1457,7 @@
     },
     "releaseDate": {
      "old": "2019-05-01",
-     "new": "2020-01-01"
+     "new": "2020"
     }
    },
    "why": "number year",
@@ -1476,7 +1476,7 @@
     },
     "releaseDate": {
      "old": "2019-03-01",
-     "new": "2020-01-01"
+     "new": "2020"
     }
    },
    "why": "number year",
@@ -1540,7 +1540,7 @@
     },
     "releaseDate": {
      "old": "2018-09-01",
-     "new": "2019-01-01"
+     "new": "2019"
     }
    },
    "why": "number year",
@@ -1574,7 +1574,7 @@
     },
     "releaseDate": {
      "old": "2018-07-01",
-     "new": "2020-01-01"
+     "new": "2020"
     }
    },
    "why": "number year",
@@ -2637,7 +2637,8 @@
    "reason": "Same release as tfss-ss83-soundwave: 83 Soundwave (Bumblebee) — 2022 Voyager Class. Bumblebee-film Soundwave = 83 (only one)",
    "sources": [
     "https://tfwiki.net/wiki/Studio_Series"
-   ]
+   ],
+   "noImageFill": "drop image is SS-62 Soundwave (ROTF Deluxe 2020 wave 3 package shot), not 83 Soundwave; not copied to keeper"
   },
   {
    "dropId": "d14ss-bb-wheeljack",
