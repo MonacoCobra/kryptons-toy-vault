@@ -1,0 +1,99 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-09-30",
+  "updatedAt": "2026-09-30T14:22:15Z",
+  "added": 44,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Page2 differed; merged unique products.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 583,
+    "ee_candidates": 143,
+    "bbts_candidates": 165,
+    "added": 44,
+    "skipped_dupes": 264,
+    "rejected_non_af": 221,
+    "unmapped_company": 54,
+    "postfilter_rejected": 0
+  },
+  "oneshotBefore": 29345,
+  "oneshotAfter": 29389,
+  "ee_added": 32,
+  "bbts_added": 12,
+  "samples": [
+    {
+      "sku": "MF10708",
+      "name": "NHL McFarlane's SportsPicks Quebec Nordiques Retro Nathan MacKinnon 7-Inch Scale Posed Figure",
+      "id": "afmon-mcfarlane-nhl-mcfarlane-s-sportspicks-quebec-nordiques-retro-nathan-mackinnon-7-inch-mf10708",
+      "source": "ee"
+    },
+    {
+      "sku": "MF10705",
+      "name": "NHL McFarlane's SportsPicks Dallas Stars Retro Mikko Rantanen 7-Inch Scale Posed Figure",
+      "id": "afmon-mcfarlane-nhl-mcfarlane-s-sportspicks-dallas-stars-retro-mikko-rantanen-7-inch-scale-mf10705",
+      "source": "ee"
+    },
+    {
+      "sku": "MF10706",
+      "name": "NHL McFarlane's SportsPicks Hartford Whalers Retro Sebastian Aho 7-Inch Scale Posed Figure",
+      "id": "afmon-mcfarlane-nhl-mcfarlane-s-sportspicks-hartford-whalers-retro-sebastian-aho-7-inch-sc-mf10706",
+      "source": "ee"
+    },
+    {
+      "sku": "MF10704",
+      "name": "NHL McFarlane's SportsPicks New York Rangers Centennial Adam Fox 7-Inch Scale Posed Figure",
+      "id": "afmon-mcfarlane-nhl-mcfarlane-s-sportspicks-new-york-rangers-centennial-adam-fox-7-inch-sc-mf10704",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0473F",
+      "name": "Transformers Generations Age of the Primes Voyager Wave 6 Case of 3",
+      "id": "afmon-hasbro-transformers-generations-age-of-the-primes-voyager-wave-6-case-of-3-hsg0473f",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2809",
+      "name": "Star Wars The Black Series Mon Calamari (Halloween Edition) 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-black-series-mon-calamari-halloween-edition-6-inch-action-figur-hsg2809",
+      "source": "ee"
+    },
+    {
+      "sku": "BA36181",
+      "name": "Dragon Ball Stars Frieza 1st Form Action Figure",
+      "id": "afmon-bandai-dragon-ball-stars-frieza-1st-form-action-figure-ba36181",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2781",
+      "name": "Star Wars The Black Series Dathomir Witch (Halloween Edition) 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-black-series-dathomir-witch-halloween-edition-6-inch-action-fig-hsg2781",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0374E",
+      "name": "Transformers Studio Series Leader Wave 5 Case of 2",
+      "id": "afmon-hasbro-transformers-studio-series-leader-wave-5-case-of-2-hsg0374e",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2595",
+      "name": "Star Wars The Black Series Gaming Greats Republic Trooper Star Wars: The Old Republic 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-black-series-gaming-greats-republic-trooper-star-wars-the-old-r-hsg2595",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2297",
+      "name": "G.I. Joe Classified Series Retro Cardback Cobra Valkyrie 6-Inch Action Figure",
+      "id": "afmon-hasbro-g-i-joe-classified-series-retro-cardback-cobra-valkyrie-6-inch-action-figure-hsg2297",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2606",
+      "name": "Star Wars The Vintage Collection Luuke Skywalker 3 3/4-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-luuke-skywalker-3-3-4-inch-action-figure-hsg2606",
+      "source": "ee"
+    }
+  ]
+}
