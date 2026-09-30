@@ -1,131 +1,66 @@
 {
-  "auditedAt": "2026-09-29T15:58:16.345351+00:00",
+  "auditedAt": "2026-09-30T21:51:33.695679+00:00",
   "mode": "apply",
   "refill": false,
   "counts": {
-    "oneshotRows": 29350,
-    "auditedWithImage": 17613,
-    "highMismatches": 2,
+    "oneshotRows": 29298,
+    "auditedWithImage": 17471,
+    "highMismatches": 1,
     "softMismatches": 1117,
-    "cleared": 2,
+    "cleared": 1,
     "refilled": 0,
     "overlayDropped": 0,
     "overlayRemaining": 14524
   },
   "reasonCounts": {
-    "product_multipack_vs_single": 1,
     "score_pair_reject": 1,
-    "char_missing:alpha": 1
+    "char_missing:concept": 1
   },
   "cleared": [
     {
-      "figureId": "mcf5-mcf-collector-batman-who",
+      "figureId": "tfss-ss-concept-ksi-widow",
       "clearedOneshot": true,
       "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg",
+      "clearedImageUrl": "https://cdn.shopify.com/s/files/1/0432/8397/2262/files/transformers-studio-series-deluxe-class-2025-wave-3-ksi-widow-5010996323477.jpg?v=1750978046",
       "reasons": [
-        "gtin:product_multipack_vs_single"
+        "gtin:score_pair_reject",
+        "gtin:char_missing:concept"
       ],
-      "name": "Batman Who Laughs",
-      "subtitle": "Collector Wave 5",
+      "name": "Concept Art KSI Widow",
+      "subtitle": "AOE Deluxe 2025",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg",
-        "gtin": "787926175684",
-        "gtinScore": 29.5,
-        "gtinTitle": "DC Multiverse 7 Inch Action Figure 2-Pack - Batman Who Laughs Knight Armor & The Merciless",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 47.0,
-        "urlBestTitle": "The Batman Who Laughs, — DC Collector Edition · 2025 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 2
-      }
-    },
-    {
-      "figureId": "pr2-mmpr-alpha",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg",
-      "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:alpha"
-      ],
-      "name": "Alpha 5",
-      "subtitle": "Mighty Morphin",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Zordon — Walmart · 2020 · Power Rangers",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 2
-      }
-    },
-    {
-      "figureId": "tfss-ssge04-megatron",
-      "clearedOneshot": true,
-      "clearedOverlay": true,
-      "clearedImageUrl": "https://cdn.shopify.com/s/files/1/0611/4030/4091/files/Transformers-One-Studio-Series-Deluxe-Class-Action-0.jpg?v=1723597765",
-      "reasons": [
-        "manual:studio-series-audit-wrong-product"
-      ],
-      "name": "Megatron",
-      "subtitle": "SS-04GE Gamer Edition",
-      "evidence": {
-        "imageUrl": "https://cdn.shopify.com/s/files/1/0611/4030/4091/files/Transformers-One-Studio-Series-Deluxe-Class-Action-0.jpg?v=1723597765",
-        "note": "Image is a Transformers One Studio Series Deluxe product photo (filename \"Transformers-One-Studio-Series-Deluxe-Class-Action\"); row is SS-04GE Gamer Edition Megatron (War for Cybertron, 2023 Voyager). Found in the 2026-09-30 Studio Series audit; cleared by hand 2026-09-30."
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0432/8397/2262/files/transformers-studio-series-deluxe-class-2025-wave-3-ksi-widow-5010996323477.jpg?v=1750978046",
+        "gtin": "5010996323477",
+        "gtinScore": -1.0,
+        "gtinTitle": "Transformers Studio Series 6 Inch Action Figure Deluxe Class (2025 Wave 3) - KSI Widow",
+        "gtinShop": "cmdstore"
       }
     }
   ],
   "refilled": [],
   "highFlags": [
     {
-      "figureId": "mcf5-mcf-collector-batman-who",
-      "name": "Batman Who Laughs",
-      "subtitle": "Collector Wave 5",
-      "line": "DC Multiverse Collector",
-      "company": "mcfarlane",
-      "sku": "787926175684",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2befa2c1439d490e86850cd252acf6f6~mv2.jpg",
-        "gtin": "787926175684",
-        "gtinScore": 29.5,
-        "gtinTitle": "DC Multiverse 7 Inch Action Figure 2-Pack - Batman Who Laughs Knight Armor & The Merciless",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 47.0,
-        "urlBestTitle": "The Batman Who Laughs, — DC Collector Edition · 2025 · DC Multiverse",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 2
-      },
-      "tags": [
-        "image-bake",
-        "img:mephitsu"
-      ]
-    },
-    {
-      "figureId": "pr2-mmpr-alpha",
-      "name": "Alpha 5",
-      "subtitle": "Mighty Morphin",
-      "line": "Lightning Collection",
+      "figureId": "tfss-ss-concept-ksi-widow",
+      "name": "Concept Art KSI Widow",
+      "subtitle": "AOE Deluxe 2025",
+      "line": "Transformers Studio Series",
       "company": "hasbro",
-      "sku": null,
+      "sku": "5010996323477",
       "reasons": [
-        "url:score_pair_reject",
-        "url:char_missing:alpha"
+        "gtin:score_pair_reject",
+        "gtin:char_missing:concept"
       ],
       "level": "high",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f1f946d9464640f499aaddd717a1a715~mv2.jpeg",
-        "urlBestScore": -1.0,
-        "urlBestTitle": "Zordon — Walmart · 2020 · Power Rangers",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 2
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0432/8397/2262/files/transformers-studio-series-deluxe-class-2025-wave-3-ksi-widow-5010996323477.jpg?v=1750978046",
+        "gtin": "5010996323477",
+        "gtinScore": -1.0,
+        "gtinTitle": "Transformers Studio Series 6 Inch Action Figure Deluxe Class (2025 Wave 3) - KSI Widow",
+        "gtinShop": "cmdstore"
       },
       "tags": [
-        "image-bake",
-        "img:mephitsu"
+        "image-sku",
+        "imgsku:cmdstore"
       ]
     }
   ],
@@ -12942,11 +12877,11 @@
     "Soft = reported only; not cleared.",
     "Clears BOTH oneshot.imageUrl and figure-image-urls.json (resolveFigureImageUrl falls through to overlay).",
     "Refill is GTIN-only, high-confidence, never multipack→single, never invents SKUs/images.",
-    "Comics/UPC and Mephitsu crawl paths untouched.",
-    "2026-09-30 manual clear (Studio Series audit): tfss-ssge04-megatron wrong Transformers One photo; appended to cleared + clearedUrlLedger, counts reflect the 2026-09-29 run only."
+    "Comics/UPC and Mephitsu crawl paths untouched."
   ],
   "clearedUrlLedger": [
     "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-box-set-exclusive-marvel-ant-man-5-pack-sdcc-2015_image.gif?v=1723126872",
+    "https://cdn.shopify.com/s/files/1/0432/8397/2262/files/transformers-studio-series-deluxe-class-2025-wave-3-ksi-widow-5010996323477.jpg?v=1750978046",
     "https://cdn.shopify.com/s/files/1/0611/4030/4091/files/Transformers-One-Studio-Series-Deluxe-Class-Action-0.jpg?v=1723597765",
     "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996143761z.webp?v=1724265737",
     "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996355904.webp?v=1766181682",
