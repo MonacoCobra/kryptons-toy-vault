@@ -1,0 +1,2506 @@
+{
+  "generated": "2026-09-30T20:18:36.839045+00:00",
+  "generatedFrom": "origin/main d1be5b78 via find_showz_dupes.py report (134 non-trivial pairs)",
+  "note": "Review-first. Dry run by default: python3 scripts/showz-followup-fixes.py [--apply]. Never copies Showzstore prices onto proper rows.",
+  "fixes": [
+    {
+      "id": "tfmpm-mpm11",
+      "field": "subtitle",
+      "old": "MPM-11",
+      "new": "MPM-12",
+      "bucket": "2-code-collision",
+      "reason": "Row name, UPC 195166117065 and image are MPM-12 Optimus Prime (Bumblebee film); MPM-11 is Ratchet.",
+      "sources": [
+        "https://tfwiki.net/wiki/Masterpiece_Movie_Series"
+      ]
+    },
+    {
+      "id": "tz7-45",
+      "field": "name",
+      "old": "DLX Shockwave",
+      "new": "MDLX Shockwave",
+      "bucket": "6-other-low",
+      "reason": "sku 3Z03410 and the image file name both identify threezero MDLX Shockwave (3Z0341).",
+      "sources": [
+        "https://tformers.com/55998"
+      ]
+    },
+    {
+      "id": "tz7-45",
+      "field": "line",
+      "old": "threezero DLX",
+      "new": "threezero MDLX",
+      "bucket": "6-other-low",
+      "reason": "Same product as above: the MDLX line.",
+      "sources": [
+        "https://tformers.com/55998"
+      ]
+    },
+    {
+      "id": "uniquetoys-ut-r01",
+      "field": "subtitle",
+      "old": "UT-R01 — Perceptor homage",
+      "new": "UT-R01 — Lockdown homage",
+      "bucket": "4-unique-toys-subtitle",
+      "reason": "Homage character confirmed by retailer/review listing (TFSafari product titles: R02 AOE/TLK Optimus Prime, R03 AOE/TLK Megatron, R04 Bayverse Galvatron, R05 Oil Tanker Megatron, R06 DOTM Dino, R07 Mudflap, R08 Skids, Y03 Sandstorm, M05 Vortex; R-01 = AOE Lockdown per Fingers On Plastic review).",
+      "sources": [
+        "http://www.fingersonplastic.co.uk/transformers/unique-toys-r-01-peru-kill/"
+      ]
+    },
+    {
+      "id": "uniquetoys-ut-r02",
+      "field": "subtitle",
+      "old": "UT-R02 — Ultra Magnus homage",
+      "new": "UT-R02 — Optimus Prime homage",
+      "bucket": "4-unique-toys-subtitle",
+      "reason": "Homage character confirmed by retailer/review listing (TFSafari product titles: R02 AOE/TLK Optimus Prime, R03 AOE/TLK Megatron, R04 Bayverse Galvatron, R05 Oil Tanker Megatron, R06 DOTM Dino, R07 Mudflap, R08 Skids, Y03 Sandstorm, M05 Vortex; R-01 = AOE Lockdown per Fingers On Plastic review).",
+      "sources": [
+        "https://www.tfsafari.com/collections/ut-unique-toys"
+      ]
+    },
+    {
+      "id": "uniquetoys-ut-r02b",
+      "field": "subtitle",
+      "old": "UT-R02B — Ultra Magnus homage",
+      "new": "UT-R02B — Optimus Prime homage",
+      "bucket": "4-unique-toys-subtitle",
+      "reason": "Homage character confirmed by retailer/review listing (TFSafari product titles: R02 AOE/TLK Optimus Prime, R03 AOE/TLK Megatron, R04 Bayverse Galvatron, R05 Oil Tanker Megatron, R06 DOTM Dino, R07 Mudflap, R08 Skids, Y03 Sandstorm, M05 Vortex; R-01 = AOE Lockdown per Fingers On Plastic review).",
+      "sources": [
+        "https://www.tfsafari.com/collections/ut-unique-toys"
+      ]
+    },
+    {
+      "id": "uniquetoys-ut-r02d",
+      "field": "subtitle",
+      "old": "UT-R02D — Battle Damaged — Ultra Magnus homage",
+      "new": "UT-R02D — Battle Damaged — Optimus Prime homage",
+      "bucket": "4-unique-toys-subtitle",
+      "reason": "Homage character confirmed by retailer/review listing (TFSafari product titles: R02 AOE/TLK Optimus Prime, R03 AOE/TLK Megatron, R04 Bayverse Galvatron, R05 Oil Tanker Megatron, R06 DOTM Dino, R07 Mudflap, R08 Skids, Y03 Sandstorm, M05 Vortex; R-01 = AOE Lockdown per Fingers On Plastic review).",
+      "sources": [
+        "https://www.tfsafari.com/collections/ut-unique-toys"
+      ]
+    },
+    {
+      "id": "uniquetoys-utr-03",
+      "field": "subtitle",
+      "old": "UTR-03 — Springer homage",
+      "new": "UTR-03 — Megatron (AOE/TLK) homage",
+      "bucket": "4-unique-toys-subtitle",
+      "reason": "Homage character confirmed by retailer/review listing (TFSafari product titles: R02 AOE/TLK Optimus Prime, R03 AOE/TLK Megatron, R04 Bayverse Galvatron, R05 Oil Tanker Megatron, R06 DOTM Dino, R07 Mudflap, R08 Skids, Y03 Sandstorm, M05 Vortex; R-01 = AOE Lockdown per Fingers On Plastic review).",
+      "sources": [
+        "https://www.tfsafari.com/collections/ut-unique-toys"
+      ]
+    },
+    {
+      "id": "uniquetoys-ut-r04",
+      "field": "subtitle",
+      "old": "UT-R04 — Nemesis Prime homage",
+      "new": "UT-R04 — Galvatron homage",
+      "bucket": "4-unique-toys-subtitle",
+      "reason": "Homage character confirmed by retailer/review listing (TFSafari product titles: R02 AOE/TLK Optimus Prime, R03 AOE/TLK Megatron, R04 Bayverse Galvatron, R05 Oil Tanker Megatron, R06 DOTM Dino, R07 Mudflap, R08 Skids, Y03 Sandstorm, M05 Vortex; R-01 = AOE Lockdown per Fingers On Plastic review).",
+      "sources": [
+        "https://www.tfsafari.com/collections/ut-unique-toys"
+      ]
+    },
+    {
+      "id": "uniquetoys-ut-r05",
+      "field": "subtitle",
+      "old": "UT-R05 — MP Starscream homage",
+      "new": "UT-R05 — Megatron (DOTM) homage",
+      "bucket": "4-unique-toys-subtitle",
+      "reason": "Homage character confirmed by retailer/review listing (TFSafari product titles: R02 AOE/TLK Optimus Prime, R03 AOE/TLK Megatron, R04 Bayverse Galvatron, R05 Oil Tanker Megatron, R06 DOTM Dino, R07 Mudflap, R08 Skids, Y03 Sandstorm, M05 Vortex; R-01 = AOE Lockdown per Fingers On Plastic review).",
+      "sources": [
+        "https://www.tfsafari.com/collections/ut-unique-toys"
+      ]
+    },
+    {
+      "id": "uniquetoys-ut-r05b",
+      "field": "subtitle",
+      "old": "UT-R05B — Special Paint — MP Starscream homage",
+      "new": "UT-R05B — Special Paint — Megatron (DOTM) homage",
+      "bucket": "4-unique-toys-subtitle",
+      "reason": "Homage character confirmed by retailer/review listing (TFSafari product titles: R02 AOE/TLK Optimus Prime, R03 AOE/TLK Megatron, R04 Bayverse Galvatron, R05 Oil Tanker Megatron, R06 DOTM Dino, R07 Mudflap, R08 Skids, Y03 Sandstorm, M05 Vortex; R-01 = AOE Lockdown per Fingers On Plastic review).",
+      "sources": [
+        "https://www.tfsafari.com/collections/ut-unique-toys"
+      ]
+    },
+    {
+      "id": "uniquetoys-ut-r06",
+      "field": "subtitle",
+      "old": "UT-R06 — Sideswipe homage",
+      "new": "UT-R06 — Dino homage",
+      "bucket": "4-unique-toys-subtitle",
+      "reason": "Homage character confirmed by retailer/review listing (TFSafari product titles: R02 AOE/TLK Optimus Prime, R03 AOE/TLK Megatron, R04 Bayverse Galvatron, R05 Oil Tanker Megatron, R06 DOTM Dino, R07 Mudflap, R08 Skids, Y03 Sandstorm, M05 Vortex; R-01 = AOE Lockdown per Fingers On Plastic review).",
+      "sources": [
+        "https://www.tfsafari.com/collections/ut-unique-toys"
+      ]
+    },
+    {
+      "id": "uniquetoys-ut-r07",
+      "field": "subtitle",
+      "old": "UT-R07 — Huffer homage",
+      "new": "UT-R07 — Mudflap homage",
+      "bucket": "4-unique-toys-subtitle",
+      "reason": "Homage character confirmed by retailer/review listing (TFSafari product titles: R02 AOE/TLK Optimus Prime, R03 AOE/TLK Megatron, R04 Bayverse Galvatron, R05 Oil Tanker Megatron, R06 DOTM Dino, R07 Mudflap, R08 Skids, Y03 Sandstorm, M05 Vortex; R-01 = AOE Lockdown per Fingers On Plastic review).",
+      "sources": [
+        "https://www.tfsafari.com/collections/ut-unique-toys"
+      ]
+    },
+    {
+      "id": "uniquetoys-ut-r08",
+      "field": "subtitle",
+      "old": "UT-R08 — Huffer homage",
+      "new": "UT-R08 — Skids homage",
+      "bucket": "4-unique-toys-subtitle",
+      "reason": "Homage character confirmed by retailer/review listing (TFSafari product titles: R02 AOE/TLK Optimus Prime, R03 AOE/TLK Megatron, R04 Bayverse Galvatron, R05 Oil Tanker Megatron, R06 DOTM Dino, R07 Mudflap, R08 Skids, Y03 Sandstorm, M05 Vortex; R-01 = AOE Lockdown per Fingers On Plastic review).",
+      "sources": [
+        "https://www.tfsafari.com/collections/ut-unique-toys"
+      ]
+    },
+    {
+      "id": "uniquetoys-ut-y03",
+      "field": "subtitle",
+      "old": "UT-Y03 — Drift homage",
+      "new": "UT-Y03 — Sandstorm homage",
+      "bucket": "4-unique-toys-subtitle",
+      "reason": "Homage character confirmed by retailer/review listing (TFSafari product titles: R02 AOE/TLK Optimus Prime, R03 AOE/TLK Megatron, R04 Bayverse Galvatron, R05 Oil Tanker Megatron, R06 DOTM Dino, R07 Mudflap, R08 Skids, Y03 Sandstorm, M05 Vortex; R-01 = AOE Lockdown per Fingers On Plastic review).",
+      "sources": [
+        "https://www.tfsafari.com/collections/ut-unique-toys"
+      ]
+    },
+    {
+      "id": "uniquetoys-ut-m05",
+      "field": "subtitle",
+      "old": "UT-M05 — Dinobot homage",
+      "new": "UT-M05 — Vortex homage",
+      "bucket": "4-unique-toys-subtitle",
+      "reason": "Homage character confirmed by retailer/review listing (TFSafari product titles: R02 AOE/TLK Optimus Prime, R03 AOE/TLK Megatron, R04 Bayverse Galvatron, R05 Oil Tanker Megatron, R06 DOTM Dino, R07 Mudflap, R08 Skids, Y03 Sandstorm, M05 Vortex; R-01 = AOE Lockdown per Fingers On Plastic review).",
+      "sources": [
+        "https://www.tfsafari.com/collections/ut-unique-toys"
+      ]
+    }
+  ],
+  "deleteInvented": [
+    {
+      "id": "na-h1",
+      "bucket": "2-code-collision",
+      "name": "Wilson",
+      "subtitle": "H1 Cliffjumper",
+      "source": "curated-bbts-wave4",
+      "reason": "Invented product: 'Wilson' / 'H1 Cliffjumper' (curated-bbts-wave4 sequential batch, no SKU/image/listing). NewAge H1 is H1 Flipper (Bumblebee).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "https://www.junkionhq.com/2019/03/06/newage-h3-harry/"
+      ]
+    },
+    {
+      "id": "na-h3",
+      "bucket": "2-code-collision",
+      "name": "Mickey",
+      "subtitle": "H3 Bumblebee",
+      "source": "curated-bbts-wave4",
+      "reason": "Invented product: 'Mickey' / 'H3 Bumblebee' (curated-bbts-wave4 sequential batch, no SKU/image/listing). NewAge H3 is H3 Harry (Prowl).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "https://www.junkionhq.com/2019/03/06/newage-h3-harry/"
+      ]
+    },
+    {
+      "id": "na-h4",
+      "bucket": "2-code-collision",
+      "name": "Legend of Sparklers",
+      "subtitle": "H4 Gears",
+      "source": "curated-bbts-wave4",
+      "reason": "Invented product: 'Legend of Sparklers' / 'H4 Gears' (curated-bbts-wave4 sequential batch, no SKU/image/listing). NewAge H4 is H4 Murphy (Bluestreak).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "https://www.junkionhq.com/2019/03/06/newage-h3-harry/"
+      ]
+    },
+    {
+      "id": "na-h5",
+      "bucket": "2-code-collision",
+      "name": "Shrow",
+      "subtitle": "H5 Cliffjumper (red)",
+      "source": "curated-bbts-wave4",
+      "reason": "Invented product: 'Shrow' / 'H5 Cliffjumper (red)' (curated-bbts-wave4 sequential batch, no SKU/image/listing). NewAge H5 is H5 Maverick (Smokescreen).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "https://www.junkionhq.com/2019/03/06/newage-h3-harry/"
+      ]
+    },
+    {
+      "id": "na-h6",
+      "bucket": "2-code-collision",
+      "name": "Rathion",
+      "subtitle": "H6 Hubcap",
+      "source": "curated-bbts-wave4",
+      "reason": "Invented product: 'Rathion' / 'H6 Hubcap' (curated-bbts-wave4 sequential batch, no SKU/image/listing). NewAge H6 is H6 Max (Cosmos).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "https://www.junkionhq.com/2019/03/06/newage-h3-harry/"
+      ]
+    },
+    {
+      "id": "na-h7",
+      "bucket": "2-code-collision",
+      "name": "Danny",
+      "subtitle": "H7 Swerve",
+      "source": "curated-bbts-wave4",
+      "reason": "Invented product: 'Danny' / 'H7 Swerve' (curated-bbts-wave4 sequential batch, no SKU/image/listing). NewAge H7 is H7 McCoy (Ironhide).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "https://www.junkionhq.com/2019/03/06/newage-h3-harry/"
+      ]
+    },
+    {
+      "id": "na-h8",
+      "bucket": "2-code-collision",
+      "name": "Dicko",
+      "subtitle": "H8 Tailgate",
+      "source": "curated-bbts-wave4",
+      "reason": "Invented product: 'Dicko' / 'H8 Tailgate' (curated-bbts-wave4 sequential batch, no SKU/image/listing). NewAge H8 is H8 Miller (Ratchet).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "https://www.junkionhq.com/2019/03/06/newage-h3-harry/"
+      ]
+    },
+    {
+      "id": "na-h9",
+      "bucket": "2-code-collision",
+      "name": "Cragun",
+      "subtitle": "H9 Cliffjumper (yellow)",
+      "source": "curated-bbts-wave4",
+      "reason": "Invented product: 'Cragun' / 'H9 Cliffjumper (yellow)' (curated-bbts-wave4 sequential batch, no SKU/image/listing). NewAge H9 is H9 Agamemnon (Megatron).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "https://www.junkionhq.com/2019/03/06/newage-h3-harry/"
+      ]
+    },
+    {
+      "id": "na-h24",
+      "bucket": "2-code-collision",
+      "name": "Red Alert",
+      "subtitle": "H24 Red Alert",
+      "source": "curated-bbts-wave4",
+      "reason": "Invented product: 'Red Alert' / 'H24 Red Alert' (curated-bbts-wave4 sequential batch, no SKU/image/listing). NewAge H24 is H24 Macchio (SG Megatron).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "https://www.junkionhq.com/2019/03/06/newage-h3-harry/"
+      ]
+    },
+    {
+      "id": "na-h28",
+      "bucket": "2-code-collision",
+      "name": "Ratchet",
+      "subtitle": "H28 Ratchet",
+      "source": "curated-bbts-wave4",
+      "reason": "Invented product: 'Ratchet' / 'H28 Ratchet' (curated-bbts-wave4 sequential batch, no SKU/image/listing). NewAge H28 is H28 Octavian (Ultra Magnus).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "https://www.junkionhq.com/2019/03/06/newage-h3-harry/"
+      ]
+    },
+    {
+      "id": "dw6-dw-e-02",
+      "bucket": "2-code-collision",
+      "name": "DW-E02 Blue Blaze",
+      "subtitle": "EX Series",
+      "source": "curated-bbts-wave6",
+      "reason": "Invented product: 'DW-E02 Blue Blaze' (curated-bbts-wave6 batch, no SKU/image/listing). Dr. Wu DW-E02 is DW-E02 Monitor Officer (Soundwave).",
+      "sources": [
+        "https://www.tfsafari.com/products/dr-wu-mechanic-studio-extreme-warfare-dw-e01-destroy-emperpo-galvatron-dw-e02-monitor-officer-soundwave-legends-class-fit-to-earthrise-titan-class-2-in-1-set-6cm-4-6",
+        "Show.Z Dr. Wu listings (retailer)"
+      ]
+    },
+    {
+      "id": "dw6-dw-e-04",
+      "bucket": "2-code-collision",
+      "name": "DW-E04 Dark Commander",
+      "subtitle": "EX Series",
+      "source": "curated-bbts-wave6",
+      "reason": "Invented product: 'DW-E04 Dark Commander' (curated-bbts-wave6 batch, no SKU/image/listing). Dr. Wu DW-E04 is DW-E04 Prime Commander (Optimus Prime).",
+      "sources": [
+        "https://www.tfsafari.com/products/dr-wu-mechanic-studio-extreme-warfare-dw-e04-dwe04-prime-commander-optimus-prime-w-convoy-legends-class-core-class-fit-to-earthrise-titan-class-6cm-4-6",
+        "Show.Z Dr. Wu listings (retailer)"
+      ]
+    },
+    {
+      "id": "dw6-dw-e-11",
+      "bucket": "2-code-collision",
+      "name": "DW-E11 Green Machine",
+      "subtitle": "EX Series",
+      "source": "curated-bbts-wave6",
+      "reason": "Invented product: 'DW-E11 Green Machine' (curated-bbts-wave6 batch, no SKU/image/listing). Dr. Wu DW-E11 is DW-E11 Acid Rain/Acid Storm (Rainmaker).",
+      "sources": [
+        "https://news.tfw2005.com/2022/02/28/dr-wu-dw-e11-acid-rain-dw-e14-purple-lightning-dw-e17-solar-wind-micromaster-scale-g1-rainmakers-color-prototypes-450920",
+        "Show.Z Dr. Wu listings (retailer)"
+      ]
+    },
+    {
+      "id": "dw6-dw-e-14",
+      "bucket": "2-code-collision",
+      "name": "DW-E14 Night Howler",
+      "subtitle": "EX Series",
+      "source": "curated-bbts-wave6",
+      "reason": "Invented product: 'DW-E14 Night Howler' (curated-bbts-wave6 batch, no SKU/image/listing). Dr. Wu DW-E14 is DW-E14 Purple Lightning (Rainmaker; the Show.Z set lists E14 as Bitstream).",
+      "sources": [
+        "https://news.tfw2005.com/2022/02/28/dr-wu-dw-e11-acid-rain-dw-e14-purple-lightning-dw-e17-solar-wind-micromaster-scale-g1-rainmakers-color-prototypes-450920",
+        "Show.Z Dr. Wu listings (retailer)"
+      ]
+    },
+    {
+      "id": "dw6-dw-e-23",
+      "bucket": "2-code-collision",
+      "name": "DW-E23 Neon Ghost",
+      "subtitle": "EX Series",
+      "source": "curated-bbts-wave6",
+      "reason": "Invented product: 'DW-E23 Neon Ghost' (curated-bbts-wave6 batch, no SKU/image/listing). Dr. Wu DW-E23 is DW-E23 Tactical Commander (Ultra Magnus armor).",
+      "sources": [
+        "https://news.tfw2005.com/2023/06/20/dr-wu-dw-e23-tactical-commander-micromaster-scale-ultra-magnus-new-color-variants-487534",
+        "Show.Z Dr. Wu listings (retailer)"
+      ]
+    },
+    {
+      "id": "dw6-dw-e-24",
+      "bucket": "2-code-collision",
+      "name": "DW-E24 Chrome Dome",
+      "subtitle": "EX Series",
+      "source": "curated-bbts-wave6",
+      "reason": "Invented product: 'DW-E24 Chrome Dome' (curated-bbts-wave6 batch, no SKU/image/listing). Dr. Wu DW-E24 is DW-E24 Firefighters (Inferno).",
+      "sources": [
+        "Show.Z Dr. Wu listings (retailer)"
+      ]
+    },
+    {
+      "id": "dw6-dw-e-29",
+      "bucket": "2-code-collision",
+      "name": "DW-E29 Glacier King",
+      "subtitle": "EX Series",
+      "source": "curated-bbts-wave6",
+      "reason": "Invented product: 'DW-E29 Glacier King' (curated-bbts-wave6 batch, no SKU/image/listing). Dr. Wu DW-E29 is DW-E29 Destroy Planet.",
+      "sources": [
+        "https://tfsource.com/3rd-party-figures/dw-e29-destroy-planet-and-dw-e01m-destroy-emperor-set-of-2-dr-wu/",
+        "Show.Z Dr. Wu listings (retailer)"
+      ]
+    },
+    {
+      "id": "dw6-dw-e-30",
+      "bucket": "2-code-collision",
+      "name": "DW-E30 Plasma Hawk",
+      "subtitle": "EX Series",
+      "source": "curated-bbts-wave6",
+      "reason": "Invented product: 'DW-E30 Plasma Hawk' (curated-bbts-wave6 batch, no SKU/image/listing). Dr. Wu DW-E30 is DW-E30 Iron Jack (Wheeljack).",
+      "sources": [
+        "https://www.robotkingdom.com/dwe33e30m.html",
+        "Show.Z Dr. Wu listings (retailer)"
+      ]
+    },
+    {
+      "id": "dw6-dw-e-33",
+      "bucket": "2-code-collision",
+      "name": "DW-E33 Sapphire Siren",
+      "subtitle": "EX Series",
+      "source": "curated-bbts-wave6",
+      "reason": "Invented product: 'DW-E33 Sapphire Siren' (curated-bbts-wave6 batch, no SKU/image/listing). Dr. Wu DW-E33 is DW-E33 Hammer.",
+      "sources": [
+        "https://www.robotkingdom.com/dwe33e30m.html",
+        "Show.Z Dr. Wu listings (retailer)"
+      ]
+    },
+    {
+      "id": "dw6-dw-e-38",
+      "bucket": "2-code-collision",
+      "name": "DW-E38 Silver Phantom",
+      "subtitle": "EX Series",
+      "source": "curated-bbts-wave6",
+      "reason": "Invented product: 'DW-E38 Silver Phantom' (curated-bbts-wave6 batch, no SKU/image/listing). Dr. Wu DW-E38 is DW-E38 Pulse Gun (Shockwave).",
+      "sources": [
+        "https://news.tfw2005.com/2025/05/24/dr-wu-dw-e37-leap-dw-e38-pulse-gun-dw-e-39-wheel-hub-micromaster-scale-cliffjumper-shocwave-hubcap-color-prototypes-538408",
+        "Show.Z Dr. Wu listings (retailer)"
+      ]
+    },
+    {
+      "id": "dw6-dw-e-39",
+      "bucket": "2-code-collision",
+      "name": "DW-E39 Bronze Warden",
+      "subtitle": "EX Series",
+      "source": "curated-bbts-wave6",
+      "reason": "Invented product: 'DW-E39 Bronze Warden' (curated-bbts-wave6 batch, no SKU/image/listing). Dr. Wu DW-E39 is DW-E39 Wheel Hub (Hubcap).",
+      "sources": [
+        "https://news.tfw2005.com/2025/05/24/dr-wu-dw-e37-leap-dw-e38-pulse-gun-dw-e-39-wheel-hub-micromaster-scale-cliffjumper-shocwave-hubcap-color-prototypes-538408",
+        "Show.Z Dr. Wu listings (retailer)"
+      ]
+    },
+    {
+      "id": "tfmpm-mpm12",
+      "bucket": "2-code-collision",
+      "name": "Rampage",
+      "subtitle": "MPM-12",
+      "source": "curated-transformers",
+      "reason": "Invented product: no Masterpiece Movie Series Rampage exists; MPM-12 is Optimus Prime (Bumblebee film), MPM-12N Nemesis Prime. Row has no SKU/image.",
+      "sources": [
+        "https://tfwiki.net/wiki/Masterpiece_Movie_Series"
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "unbranded-g1-starscream",
+      "showzStoreId": "5814",
+      "showzName": "G1 Starscream",
+      "analyzerProperId": "unbranded-f01",
+      "properName": "F01 Starscream",
+      "action": "keepBoth",
+      "reason": "No-brand G1 Starscream is not the F01 movie (MPM-10) Starscream KO.",
+      "sources": [
+        "showzstore.com product p5814"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "takaratomy-c-14-missing-link-ironhide",
+      "showzStoreId": "7861",
+      "showzName": "Missing Link C-14 Ironhide",
+      "analyzerProperId": "tt4-mpg-ex-08",
+      "properName": "Ironhide",
+      "action": "keepBoth",
+      "reason": "Missing Link C-14 Ironhide is not an MPG Ex exclusive Ironhide (different lines). tt4-mpg-ex-08 (curated-bbts-wave4) is itself unverified.",
+      "sources": [
+        "showzstore.com product p7861"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "takaratomy-mpm-03-bumblebee-premium-paint-version",
+      "showzStoreId": "6359",
+      "showzName": "MPM-03 Bumblebee Premium Paint Version",
+      "analyzerProperId": "tfmpm-mpm03",
+      "properName": "Bumblebee",
+      "action": "keepBoth",
+      "reason": "MPM-03 Bumblebee Premium Paint Version is a distinct paint variant of MPM-03. Name already states it.",
+      "sources": [
+        "showzstore.com product p6359"
+      ]
+    },
+    {
+      "bucket": "1-medium",
+      "category": "showz-adds-variant-words-proper-has-none",
+      "showzId": "takaratomy-mp-60-ginrai-optimus-prime-w-o-trailer",
+      "showzStoreId": "6124",
+      "showzName": "MP-60 Ginrai Optimus Prime w/o Trailer",
+      "analyzerProperId": "tfmp-mp60",
+      "properName": "Ginrai",
+      "action": "merge",
+      "reason": "MP-60 Ginrai was released alone; the trailer came separately as MPG-09 Super Ginrai, so \"w/o trailer\" is the standard MP-60.",
+      "sources": [
+        "https://tfwiki.net/wiki/Masterpiece",
+        "showzstore.com product p6124"
+      ],
+      "dropId": "takaratomy-mp-60-ginrai-optimus-prime-w-o-trailer",
+      "keepId": "tfmp-mp60"
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "takaratomy-mp-56-hoist",
+      "showzStoreId": "5336",
+      "showzName": "MP-56+ Hoist",
+      "analyzerProperId": "tfmp-mp56p",
+      "properName": "Riggorus",
+      "action": "merge",
+      "reason": "MP-56+ is Riggorus (2024-03-30); Hoist is MP-58. Show.Z page sku is TAKARA-MP56+ and its reviews describe Riggorus, so the Show.Z title is a typo for the same product.",
+      "sources": [
+        "https://tfwiki.net/wiki/Masterpiece",
+        "showzstore.com product p5336"
+      ],
+      "dropId": "takaratomy-mp-56-hoist",
+      "keepId": "tfmp-mp56p"
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "takaratomy-mpm-12-optimus-prime",
+      "showzStoreId": "2968",
+      "showzName": "MPM-12 Optimus Prime",
+      "analyzerProperId": "tfmpm-mpm12",
+      "properName": "Rampage",
+      "action": "merge",
+      "reason": "MPM-12 is Optimus Prime (Bumblebee film). tfmpm-mpm11 already carries the MPM-12 Optimus Prime UPC 195166117065 and image; fix its code MPM-11 -> MPM-12 first, then merge.",
+      "sources": [
+        "https://tfwiki.net/wiki/Masterpiece_Movie_Series",
+        "showzstore.com product p2968"
+      ],
+      "dropId": "takaratomy-mpm-12-optimus-prime",
+      "keepId": "tfmpm-mpm11"
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "takaratomy-mpm-11-ratchet",
+      "showzStoreId": "2264",
+      "showzName": "MPM-11 Ratchet",
+      "analyzerProperId": "tfmpm-mpm11",
+      "properName": "Optimus Prime",
+      "action": "keepBoth",
+      "reason": "MPM-11 is Ratchet. After tfmpm-mpm11 is corrected to MPM-12 Optimus Prime there is no other MPM-11 row, so the Show.Z MPM-11 Ratchet row stays as the only listing.",
+      "sources": [
+        "https://tfwiki.net/wiki/Masterpiece_Movie_Series",
+        "showzstore.com product p2264"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "takaratomy-mp-46-blackwidow",
+      "showzStoreId": "1831",
+      "showzName": "MP-46 Blackwidow",
+      "analyzerProperId": "tfmp-mp46",
+      "properName": "Blackarachnia",
+      "action": "merge",
+      "reason": "MP-46 Blackwidow is the Japanese name of Blackarachnia; same toy (2019-11-23).",
+      "sources": [
+        "https://tfwiki.net/wiki/Masterpiece",
+        "showzstore.com product p1831"
+      ],
+      "dropId": "takaratomy-mp-46-blackwidow",
+      "keepId": "tfmp-mp46"
+    },
+    {
+      "bucket": "1-medium",
+      "category": "soft-variant-diff",
+      "showzId": "takaratomy-mp-36-mp36-megatron-takaratomy-mall-exclusive-ve",
+      "showzStoreId": "1217",
+      "showzName": "MP-36+ MP36+ Megatron TakaraTomy Mall Exclusive Version w/ Commemorative Coins",
+      "analyzerProperId": "tfmp-mp36p",
+      "properName": "Megatron",
+      "action": "merge",
+      "reason": "MP-36+ Megatron (2018-12-29) is one release; TakaraTomy Mall commemorative coins were a purchase bonus (Show.Z page title itself reads \"MP-36+ Megatron Masterpiece Anime Color\").",
+      "sources": [
+        "https://tfwiki.net/wiki/Masterpiece",
+        "showzstore.com product p1217"
+      ],
+      "dropId": "takaratomy-mp-36-mp36-megatron-takaratomy-mall-exclusive-ve",
+      "keepId": "tfmp-mp36p"
+    },
+    {
+      "bucket": "1-medium",
+      "category": "soft-variant-diff",
+      "showzId": "takaratomy-mp-18-mp18-streak-bluestreak-limited-edition",
+      "showzStoreId": "1240",
+      "showzName": "MP-18+ MP18+ Streak Bluestreak Limited Edition",
+      "analyzerProperId": "tfmp-mp18p",
+      "properName": "Bluestreak",
+      "action": "merge",
+      "reason": "MP-18+ Streak (2019-07-27) is one release; Show.Z page title reads \"MP-18+ Streak Bluestreak Anime Color\" (\"Limited Edition\" is listing copy).",
+      "sources": [
+        "https://tfwiki.net/wiki/Masterpiece",
+        "showzstore.com product p1240"
+      ],
+      "dropId": "takaratomy-mp-18-mp18-streak-bluestreak-limited-edition",
+      "keepId": "tfmp-mp18p"
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "takaratomy-ss-35-studio-series-leader-class-jetfire-jet-fir",
+      "showzStoreId": "1273",
+      "showzName": "Studio Series SS-35 Leader Class Jetfire Jet Fire",
+      "analyzerProperId": "d14ss-tlk-megatron",
+      "properName": "Megatron",
+      "action": "unsure",
+      "reason": "Show.Z calls this Takara but uses the Hasbro number (Hasbro 35 Jetfire ROTF / 34 Megatron DOTM / 10 Jazz; Takara SS-35 is KSI Boss, SS-34 Long Haul, SS-09 Jazz). Unclear whether it is the Takara or the Hasbro unit. The paired proper row is not the same character anyway (d14ss numbering is invented; see provenance flags).",
+      "sources": [
+        "https://tfwiki.net/wiki/Studio_Series",
+        "https://news.tfw2005.com/2018/05/30/takara-tomy-studio-series-wave-2-listings-and-stock-images-364578",
+        "showzstore.com product p1273"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "takaratomy-ss34-studio-series-34-ss-34-leader-class-megatr",
+      "showzStoreId": "1275",
+      "showzName": "Studio Series 34 SS34 SS-34 Leader Class Megatron",
+      "analyzerProperId": "d14ss-tlk-optimus",
+      "properName": "Optimus Prime",
+      "action": "unsure",
+      "reason": "Show.Z calls this Takara but uses the Hasbro number (Hasbro 35 Jetfire ROTF / 34 Megatron DOTM / 10 Jazz; Takara SS-35 is KSI Boss, SS-34 Long Haul, SS-09 Jazz). Unclear whether it is the Takara or the Hasbro unit. The paired proper row is not the same character anyway (d14ss numbering is invented; see provenance flags).",
+      "sources": [
+        "https://tfwiki.net/wiki/Studio_Series",
+        "https://news.tfw2005.com/2018/05/30/takara-tomy-studio-series-wave-2-listings-and-stock-images-364578",
+        "showzstore.com product p1275"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "takaratomy-mp10g-mp-10g-masterpiece-optimus-prime-gold-lago",
+      "showzStoreId": "1010",
+      "showzName": "MP10G MP-10G Masterpiece Optimus Prime Gold Lagoon Edition",
+      "analyzerProperId": "tfmp-hasbro-mp-ecto",
+      "properName": "Optimus Prime",
+      "action": "keepBoth",
+      "reason": "MP-10G Golden Lagoon Convoy (2018) and MP-10G Ecto-35 Edition (2019) are distinct releases.",
+      "sources": [
+        "https://tfwiki.net/wiki/Masterpiece",
+        "showzstore.com product p1010"
+      ]
+    },
+    {
+      "bucket": "1-medium",
+      "category": "showz-adds-variant-words-proper-has-none",
+      "showzId": "takaratomy-mp-17-mp17-prowl-anime-color",
+      "showzStoreId": "1024",
+      "showzName": "MP-17+ MP17+ Prowl Anime Color",
+      "analyzerProperId": "tfmp-mp17p",
+      "properName": "Prowl",
+      "action": "merge",
+      "reason": "MP-17+ Prowl (2018-09-29) is itself the anime-colour release.",
+      "sources": [
+        "https://tfwiki.net/wiki/Masterpiece",
+        "showzstore.com product p1024"
+      ],
+      "dropId": "takaratomy-mp-17-mp17-prowl-anime-color",
+      "keepId": "tfmp-mp17p"
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "takaratomy-mp-09-mp09-rodimus-convoy-rodimus-prime-reissue",
+      "showzStoreId": "1138",
+      "showzName": "MP-09 MP09 Rodimus Convoy Rodimus Prime Reissue w/ Coin",
+      "analyzerProperId": "tfmp-mp09",
+      "properName": "Rodimus Prime",
+      "action": "keepBoth",
+      "reason": "MP-09 reissue with coin is a later production run (different release year) of MP-09 (2011).",
+      "sources": [
+        "https://tfwiki.net/wiki/Masterpiece",
+        "showzstore.com product p1138"
+      ]
+    },
+    {
+      "bucket": "1-medium",
+      "category": "takara-vs-hasbro-release",
+      "showzId": "takaratomy-ss11-studio-series-ss-11-deluxe-class-lockdown",
+      "showzStoreId": "0813",
+      "showzName": "Studio Series SS11 SS-11 Deluxe Class Lockdown",
+      "analyzerProperId": "d14ss-aoe-lockdown",
+      "properName": "Lockdown",
+      "action": "unsure",
+      "reason": "Takara Studio Series is a separate release from Hasbro (keep apart), but this Show.Z listing uses the Hasbro number: Takara numbering is SS-09 Jazz, SS-10 Lockdown, SS-11 Megatron (ROTF), SS-15 Ironhide. Cannot tell whether Show.Z sold the Takara or Hasbro unit. The paired d14ss-* Hasbro row also carries invented movie/number labels (see provenance flags).",
+      "sources": [
+        "https://tfwiki.net/wiki/Studio_Series",
+        "https://news.tfw2005.com/2018/05/30/takara-tomy-studio-series-wave-2-listings-and-stock-images-364578",
+        "showzstore.com product p0813"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "takaratomy-ss10-studio-series-ss-10-deluxe-class-jazz",
+      "showzStoreId": "0814",
+      "showzName": "Studio Series SS10 SS-10 Deluxe Class Jazz",
+      "analyzerProperId": "tfc-shockwave-ss10",
+      "properName": "Shockwave",
+      "action": "unsure",
+      "reason": "Show.Z calls this Takara but uses the Hasbro number (Hasbro 35 Jetfire ROTF / 34 Megatron DOTM / 10 Jazz; Takara SS-35 is KSI Boss, SS-34 Long Haul, SS-09 Jazz). Unclear whether it is the Takara or the Hasbro unit. The paired proper row is not the same character anyway (d14ss numbering is invented; see provenance flags).",
+      "sources": [
+        "https://tfwiki.net/wiki/Studio_Series",
+        "https://news.tfw2005.com/2018/05/30/takara-tomy-studio-series-wave-2-listings-and-stock-images-364578",
+        "showzstore.com product p0814"
+      ]
+    },
+    {
+      "bucket": "1-medium",
+      "category": "takara-vs-hasbro-release",
+      "showzId": "takaratomy-ss14-studio-series-ss-14-voyager-class-ironhide",
+      "showzStoreId": "0849",
+      "showzName": "Studio Series SS14 SS-14 Voyager Class Ironhide",
+      "analyzerProperId": "d14ss-dotm-ironhide",
+      "properName": "Ironhide",
+      "action": "unsure",
+      "reason": "Takara Studio Series is a separate release from Hasbro (keep apart), but this Show.Z listing uses the Hasbro number: Takara numbering is SS-09 Jazz, SS-10 Lockdown, SS-11 Megatron (ROTF), SS-15 Ironhide. Cannot tell whether Show.Z sold the Takara or Hasbro unit. The paired d14ss-* Hasbro row also carries invented movie/number labels (see provenance flags).",
+      "sources": [
+        "https://tfwiki.net/wiki/Studio_Series",
+        "https://news.tfw2005.com/2018/05/30/takara-tomy-studio-series-wave-2-listings-and-stock-images-364578",
+        "showzstore.com product p0849"
+      ]
+    },
+    {
+      "bucket": "1-medium",
+      "category": "showz-adds-variant-words-proper-has-none",
+      "showzId": "takaratomy-mp-20-wheeljack-anime-color",
+      "showzStoreId": "0954",
+      "showzName": "MP-20+ Wheeljack Anime Color",
+      "analyzerProperId": "tfmp-mp20p",
+      "properName": "Wheeljack",
+      "action": "merge",
+      "reason": "MP-20+ Wheeljack (2019-03) is itself the anime-colour release.",
+      "sources": [
+        "https://tfwiki.net/wiki/Masterpiece",
+        "showzstore.com product p0954"
+      ],
+      "dropId": "takaratomy-mp-20-wheeljack-anime-color",
+      "keepId": "tfmp-mp20p"
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "takaratomy-ss07-studio-series-leader-class-grimlock",
+      "showzStoreId": "0711",
+      "showzName": "Studio Series SS07 Leader Class Grimlock",
+      "analyzerProperId": "d14ss-aoe-crosshairs",
+      "properName": "Crosshairs",
+      "action": "keepBoth",
+      "reason": "Takara SS-07 Grimlock / SS-08 Blackout / SS-12 Brawl / SS-06 Starscream is a real Takara release (numbering matches). Keep separate from Hasbro. The paired Hasbro row (d14ss-aoe-crosshairs \"SS-07\", d14ss-aoe-drift \"SS-08\", tfc-soundwave-ss12, d14ss-aoe-hound \"SS-06\") is a different character with an invented number (flagged).",
+      "sources": [
+        "https://tfwiki.net/wiki/Studio_Series",
+        "https://news.tfw2005.com/2018/05/30/takara-tomy-studio-series-wave-2-listings-and-stock-images-364578",
+        "showzstore.com product p0711"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "takaratomy-ss-08-studio-series-leader-class-blackout",
+      "showzStoreId": "0712",
+      "showzName": "Studio Series Leader Class Blackout SS-08",
+      "analyzerProperId": "d14ss-aoe-drift",
+      "properName": "Drift",
+      "action": "keepBoth",
+      "reason": "Takara SS-07 Grimlock / SS-08 Blackout / SS-12 Brawl / SS-06 Starscream is a real Takara release (numbering matches). Keep separate from Hasbro. The paired Hasbro row (d14ss-aoe-crosshairs \"SS-07\", d14ss-aoe-drift \"SS-08\", tfc-soundwave-ss12, d14ss-aoe-hound \"SS-06\") is a different character with an invented number (flagged).",
+      "sources": [
+        "https://tfwiki.net/wiki/Studio_Series",
+        "https://news.tfw2005.com/2018/05/30/takara-tomy-studio-series-wave-2-listings-and-stock-images-364578",
+        "showzstore.com product p0712"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "takaratomy-ss-12-studio-series-voyager-class-brawl",
+      "showzStoreId": "0741",
+      "showzName": "Studio Series SS-12 Voyager Class Brawl",
+      "analyzerProperId": "tfc-soundwave-ss12",
+      "properName": "Soundwave",
+      "action": "keepBoth",
+      "reason": "Takara SS-07 Grimlock / SS-08 Blackout / SS-12 Brawl / SS-06 Starscream is a real Takara release (numbering matches). Keep separate from Hasbro. The paired Hasbro row (d14ss-aoe-crosshairs \"SS-07\", d14ss-aoe-drift \"SS-08\", tfc-soundwave-ss12, d14ss-aoe-hound \"SS-06\") is a different character with an invented number (flagged).",
+      "sources": [
+        "https://tfwiki.net/wiki/Studio_Series",
+        "https://news.tfw2005.com/2018/05/30/takara-tomy-studio-series-wave-2-listings-and-stock-images-364578",
+        "showzstore.com product p0741"
+      ]
+    },
+    {
+      "bucket": "1-medium",
+      "category": "takara-vs-hasbro-release",
+      "showzId": "takaratomy-ss13-studio-series-ss-13-voyager-class-megatron",
+      "showzStoreId": "0742",
+      "showzName": "Studio Series SS13 SS-13 Voyager Class Megatron",
+      "analyzerProperId": "d14ss-dotm-megatron",
+      "properName": "Megatron",
+      "action": "unsure",
+      "reason": "Takara Studio Series is a separate release from Hasbro (keep apart), but this Show.Z listing uses the Hasbro number: Takara numbering is SS-09 Jazz, SS-10 Lockdown, SS-11 Megatron (ROTF), SS-15 Ironhide. Cannot tell whether Show.Z sold the Takara or Hasbro unit. The paired d14ss-* Hasbro row also carries invented movie/number labels (see provenance flags).",
+      "sources": [
+        "https://tfwiki.net/wiki/Studio_Series",
+        "https://news.tfw2005.com/2018/05/30/takara-tomy-studio-series-wave-2-listings-and-stock-images-364578",
+        "showzstore.com product p0742"
+      ]
+    },
+    {
+      "bucket": "1-medium",
+      "category": "takara-vs-hasbro-release",
+      "showzId": "takaratomy-ss05-studio-series-optimus-prime",
+      "showzStoreId": "0628",
+      "showzName": "Studio Series SS05 Optimus Prime",
+      "analyzerProperId": "d14ss-aoe-optimus",
+      "properName": "Optimus Prime",
+      "action": "keepBoth",
+      "reason": "Takara Studio Series SS-05 Optimus Prime / SS-02 Stinger is a distinct release from the Hasbro #05/#02 (Takara/Hasbro equivalence only approved for MP/MPM/Missing Link/Overgear). Show.Z name already says Takara.",
+      "sources": [
+        "https://tfwiki.net/wiki/Studio_Series",
+        "showzstore.com product p0628"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "takaratomy-ss06-studio-series-starscream",
+      "showzStoreId": "0629",
+      "showzName": "Studio Series SS06 Starscream",
+      "analyzerProperId": "d14ss-aoe-hound",
+      "properName": "Hound",
+      "action": "keepBoth",
+      "reason": "Takara SS-07 Grimlock / SS-08 Blackout / SS-12 Brawl / SS-06 Starscream is a real Takara release (numbering matches). Keep separate from Hasbro. The paired Hasbro row (d14ss-aoe-crosshairs \"SS-07\", d14ss-aoe-drift \"SS-08\", tfc-soundwave-ss12, d14ss-aoe-hound \"SS-06\") is a different character with an invented number (flagged).",
+      "sources": [
+        "https://tfwiki.net/wiki/Studio_Series",
+        "https://news.tfw2005.com/2018/05/30/takara-tomy-studio-series-wave-2-listings-and-stock-images-364578",
+        "showzstore.com product p0629"
+      ]
+    },
+    {
+      "bucket": "1-medium",
+      "category": "takara-vs-hasbro-release",
+      "showzId": "takaratomy-ss02-studio-series-stinger",
+      "showzStoreId": "0630",
+      "showzName": "Studio Series SS02 Stinger",
+      "analyzerProperId": "d14ss-aoe-stinger",
+      "properName": "Stinger",
+      "action": "keepBoth",
+      "reason": "Takara Studio Series SS-05 Optimus Prime / SS-02 Stinger is a distinct release from the Hasbro #05/#02 (Takara/Hasbro equivalence only approved for MP/MPM/Missing Link/Overgear). Show.Z name already says Takara.",
+      "sources": [
+        "https://tfwiki.net/wiki/Studio_Series",
+        "showzstore.com product p0630"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-beast-wars-blackarachnia-model-kit",
+      "showzStoreId": "7950",
+      "showzName": "Beast Wars Blackarachnia Model Kit",
+      "analyzerProperId": "sf-yolopark-transformers-beast-wars-blackarachnia-amk-series",
+      "properName": "Blackarachnia",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p7950",
+        "keeper line: Yolopark AMK"
+      ],
+      "dropId": "yolopark-beast-wars-blackarachnia-model-kit",
+      "keepId": "sf-yolopark-transformers-beast-wars-blackarachnia-amk-series"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-the-last-knight-optimus-prime-model-kit",
+      "showzStoreId": "8020",
+      "showzName": "The Last Knight Optimus Prime Model Kit",
+      "analyzerProperId": "sf-yolopark-amk-the_last_knight-optimus_prime",
+      "properName": "Optimus Prime",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p8020",
+        "keeper line: Yolopark AMK"
+      ],
+      "dropId": "yolopark-the-last-knight-optimus-prime-model-kit",
+      "keepId": "sf-yolopark-amk-the_last_knight-optimus_prime"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-rise-of-the-beasts-mirage-model-kit",
+      "showzStoreId": "8021",
+      "showzName": "Rise of the Beasts Mirage Model Kit",
+      "analyzerProperId": "sf-yolopark-amk-rotb-mirage",
+      "properName": "Mirage",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p8021",
+        "keeper line: Yolopark AMK"
+      ],
+      "dropId": "yolopark-rise-of-the-beasts-mirage-model-kit",
+      "keepId": "sf-yolopark-amk-rotb-mirage"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-bumblebee-shockwave-model-kit",
+      "showzStoreId": "8078",
+      "showzName": "Bumblebee Shockwave Model Kit",
+      "analyzerProperId": "sf-yolopark-amk-pro-bumblebee2018-shockwave",
+      "properName": "Shockwave",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p8078",
+        "keeper line: Yolopark AMK PRO"
+      ],
+      "dropId": "yolopark-bumblebee-shockwave-model-kit",
+      "keepId": "sf-yolopark-amk-pro-bumblebee2018-shockwave"
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "threezero-3z0341-transformers-mdlx-shockwave",
+      "showzStoreId": "7507",
+      "showzName": "3Z0341 Transformers MDLX Shockwave",
+      "analyzerProperId": "tz7-45",
+      "properName": "DLX Shockwave",
+      "action": "merge",
+      "reason": "tz7-45 sku 3Z03410 and image \"MDLX_Transformers_Shockwave\" show it is the MDLX Shockwave (3Z0341), mislabelled \"DLX\". Fix name/line first, then merge.",
+      "sources": [
+        "https://tformers.com/55998",
+        "showzstore.com product p7507"
+      ],
+      "dropId": "threezero-3z0341-transformers-mdlx-shockwave",
+      "keepId": "tz7-45"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-beast-wars-optimus-primal-model-kit",
+      "showzStoreId": "7726",
+      "showzName": "Beast Wars Optimus Primal Model Kit",
+      "analyzerProperId": "sf-yolopark-transformers-beast-wars-optimus-primal-amk-series",
+      "properName": "Optimus Primal",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p7726",
+        "keeper line: Yolopark AMK"
+      ],
+      "dropId": "yolopark-beast-wars-optimus-primal-model-kit",
+      "keepId": "sf-yolopark-transformers-beast-wars-optimus-primal-amk-series"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-beast-wars-dinobot-model-kit",
+      "showzStoreId": "7727",
+      "showzName": "Beast Wars Dinobot Model Kit",
+      "analyzerProperId": "sf-yolopark-transformers-beast-wars-dinobot-amk-series",
+      "properName": "Dinobot",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p7727",
+        "keeper line: Yolopark AMK"
+      ],
+      "dropId": "yolopark-beast-wars-dinobot-model-kit",
+      "keepId": "sf-yolopark-transformers-beast-wars-dinobot-amk-series"
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "threezero-3z0551-transformers-mdlx-optimus-prime-sleep-mode",
+      "showzStoreId": "6901",
+      "showzName": "3Z0551 Transformers MDLX Optimus Prime Sleep Mode",
+      "analyzerProperId": "tz3-dlx-prime-one",
+      "properName": "Optimus Prime",
+      "action": "keepBoth",
+      "reason": "A different threezero product (sleep-mode / Nemesis / Transformers One MDLX D-16 / Cybertron-mode event exclusive / Vintage Animation MDLX). The proper row only matched through a polluted alias list. Show.Z name is already specific.",
+      "sources": [
+        "showzstore.com product p6901"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "threezero-3z0884-transformers-rise-of-the-beasts-dlx-nemesi",
+      "showzStoreId": "7192",
+      "showzName": "3Z0884 Transformers Rise of the Beasts DLX Nemesis Prime",
+      "analyzerProperId": "tz9-tz-13",
+      "properName": "DLX Optimus Prime",
+      "action": "keepBoth",
+      "reason": "A different threezero product (sleep-mode / Nemesis / Transformers One MDLX D-16 / Cybertron-mode event exclusive / Vintage Animation MDLX). The proper row only matched through a polluted alias list. Show.Z name is already specific.",
+      "sources": [
+        "showzstore.com product p7192"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "threezero-3z1046-transformers-dlx-jazz-deluxe-version",
+      "showzStoreId": "7304",
+      "showzName": "3Z1046 Transformers DLX Jazz Deluxe Version",
+      "analyzerProperId": "tz7-46",
+      "properName": "DLX Jazz",
+      "action": "unsure",
+      "reason": "See 3Z0900: tz7-46 sku is 3Z1046 (Deluxe Version) but it also aliases standard 3Z0900 and MDLX 3Z0338.",
+      "sources": [
+        "showzstore.com product p7304"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "flametoys-furai-model-optimus-prime-animated-version",
+      "showzStoreId": "7311",
+      "showzName": "Furai Model Optimus Prime Animated Version",
+      "analyzerProperId": "sf-flametoys-toyarena-flame-toys-furai-12-transformers-optimus-prime-g1-ver-mode",
+      "properName": "Optimus Prime (G1 Ver.)",
+      "action": "keepBoth",
+      "reason": "Furai Model Optimus Prime Animated is not Furai 12 G1 Ver.",
+      "sources": [
+        "showzstore.com product p7311"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "threezero-3z0559-transformers-bumblebee-premium-ultra-magnu",
+      "showzStoreId": "7410",
+      "showzName": "3Z0559 Transformers: Bumblebee Premium Ultra Magnus",
+      "analyzerProperId": "tz-bumblebee-dlx",
+      "properName": "Bumblebee",
+      "action": "keepBoth",
+      "reason": "3Z0559 Premium Ultra Magnus is not the Bumblebee DLX. tz-bumblebee-dlx itself is conflated (EAN image = Premium Blitzwing, alias 3Z0559); flagged.",
+      "sources": [
+        "showzstore.com product p7410"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "threezero-3z0432-dlx-transformers-rise-of-the-beasts-optimu",
+      "showzStoreId": "5219",
+      "showzName": "3Z0432 DLX Transformers Rise of the Beasts Optimus Prime",
+      "analyzerProperId": "tz3-dlx-optimus-rotb",
+      "properName": "Optimus Prime",
+      "action": "merge",
+      "reason": "threezero 3Z0432 is the Rise of the Beasts DLX Optimus Prime (only one standard release) = tz3-dlx-optimus-rotb.",
+      "sources": [
+        "https://www.threezerohk.com/shop/transformers-rise-of-the-beasts-dlx-optimus-prime-6776",
+        "showzstore.com product p5219"
+      ],
+      "dropId": "threezero-3z0432-dlx-transformers-rise-of-the-beasts-optimu",
+      "keepId": "tz3-dlx-optimus-rotb"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "flametoys-kuro-kara-kuri-ultra-magnus",
+      "showzStoreId": "6095",
+      "showzName": "Kuro Kara Kuri Ultra Magnus",
+      "analyzerProperId": "ft6-ft-kkk-ultra-magnus",
+      "properName": "Ultra Magnus",
+      "action": "unsure",
+      "reason": "Character matches, but ft6-ft-kkk-ultra-magnus comes from the ft6 Kuro Kara Kuri batch (curated-bbts-wave6): no SKU, release dates two months apart, round MSRPs, and several characters with no known KKK release. Audit the batch before merging real listings into it.",
+      "sources": [
+        "showzstore.com product p6095"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "threezero-3z0336-mdlx-g1-starscream",
+      "showzStoreId": "5006",
+      "showzName": "3Z0336 MDLX G1 Starscream",
+      "analyzerProperId": "tz7-44",
+      "properName": "DLX Starscream",
+      "action": "keepBoth",
+      "reason": "3Z0336 MDLX G1 Starscream is not tz7-44 (3Z0943 Bumblebee-film DLX Starscream); tz7-44 alias 3Z0336 looks wrong (flagged).",
+      "sources": [
+        "showzstore.com product p5006"
+      ]
+    },
+    {
+      "bucket": "1-medium",
+      "category": "proper-code-only-in-alias",
+      "showzId": "threezero-3z0174-dlx-transformers-bumblebee-arcee",
+      "showzStoreId": "5093",
+      "showzName": "3Z0174 DLX Transformers: Bumblebee Arcee",
+      "analyzerProperId": "tz9-tz-15",
+      "properName": "DLX Bumblebee",
+      "action": "keepBoth",
+      "reason": "3Z0174 is threezero DLX Arcee (Bumblebee film), a different character from DLX Bumblebee. The 3Z01740W0 alias on tz9-tz-15 looks wrong (flagged, not changed).",
+      "sources": [
+        "showzstore.com product p5093"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-rise-of-the-beasts-arcee-pre-assembled-mod",
+      "showzStoreId": "7448",
+      "showzName": "Rise of the Beasts Arcee Pre-Assembled Model Kit",
+      "analyzerProperId": "sf-yolopark-amk-pro-rotb-arcee",
+      "properName": "Arcee",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p7448",
+        "keeper line: Yolopark AMK PRO"
+      ],
+      "dropId": "yolopark-rise-of-the-beasts-arcee-pre-assembled-mod",
+      "keepId": "sf-yolopark-amk-pro-rotb-arcee"
+    },
+    {
+      "bucket": "1-medium",
+      "category": "proper-code-only-in-alias",
+      "showzId": "threezero-3z0887-transformers-mdlx-ramjet",
+      "showzStoreId": "7509",
+      "showzName": "3Z0887 Transformers MDLX Ramjet",
+      "analyzerProperId": "tz-mdlx-ramjet",
+      "properName": "Ramjet",
+      "action": "merge",
+      "reason": "Same threezero SKU 3Z0887 (MDLX Ramjet); proper row already aliases 3Z0887.",
+      "sources": [
+        "https://threezerohk.com/shop/transformers-mdlx-ramjet-7015",
+        "showzstore.com product p7509"
+      ],
+      "dropId": "threezero-3z0887-transformers-mdlx-ramjet",
+      "keepId": "tz-mdlx-ramjet"
+    },
+    {
+      "bucket": "1-medium",
+      "category": "proper-code-only-in-alias",
+      "showzId": "threezero-3z0900-transformers-dlx-jazz",
+      "showzStoreId": "7303",
+      "showzName": "3Z0900 Transformers DLX Jazz",
+      "analyzerProperId": "tz7-46",
+      "properName": "DLX Jazz",
+      "action": "unsure",
+      "reason": "tz7-46 is conflated: sku 3Z10460W0 (= 3Z1046 DLX Jazz Deluxe Version) but aliases 3Z09000W0 (standard DLX Jazz) and 3Z0338 (MDLX Jazz). Needs a decision on which release tz7-46 represents.",
+      "sources": [
+        "showzstore.com product p7303",
+        "showzstore.com product p7304"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "flametoys-furai-model-wingblade-optimus-prime-animat",
+      "showzStoreId": "7310",
+      "showzName": "Furai Model Wingblade Optimus Prime Animated Version",
+      "analyzerProperId": "sf-flametoys-toyarena-flame-toys-furai-44-transformers-wingblade-optimus-prime-a",
+      "properName": "Wingblade Optimus Prime (Animated)",
+      "action": "merge",
+      "reason": "Flame Toys Furai 44 Wingblade Optimus Prime (Animated). Name and variant match exactly.",
+      "sources": [
+        "showzstore.com product p7310"
+      ],
+      "dropId": "flametoys-furai-model-wingblade-optimus-prime-animat",
+      "keepId": "sf-flametoys-toyarena-flame-toys-furai-44-transformers-wingblade-optimus-prime-a"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-generation-1-19cm-starscream-pre-assembled",
+      "showzStoreId": "7021",
+      "showzName": "Generation 1 - 19cm Starscream Pre-Assembled Model Kit",
+      "analyzerProperId": "sf-yolopark-transformers-g1-starscream-amk-series",
+      "properName": "Starscream",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p7021",
+        "keeper line: Yolopark AMK"
+      ],
+      "dropId": "yolopark-generation-1-19cm-starscream-pre-assembled",
+      "keepId": "sf-yolopark-transformers-g1-starscream-amk-series"
+    },
+    {
+      "bucket": "1-medium",
+      "category": "proper-code-only-in-alias",
+      "showzId": "threezero-3z0202-transformers-war-for-cybertron-trilogy-dlx",
+      "showzStoreId": "6866",
+      "showzName": "3Z0202 Transformers War for Cybertron Trilogy DLX Optimus Prime",
+      "analyzerProperId": "tz3-dlx-prime-one",
+      "properName": "Optimus Prime",
+      "action": "unsure",
+      "reason": "tz3-dlx-prime-one is named \"Transformers One DLX\" but its EAN 4897056203204 + image are the War for Cybertron DLX Optimus Prime (= 3Z0202). Could be a merge after tz3-dlx-prime-one is renamed; not proposed without a direct EAN→3Z0202 source.",
+      "sources": [
+        "showzstore.com product p6866"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "threezero-3z0935-transformers-rise-of-the-beasts-dlx-optimu",
+      "showzStoreId": "6994",
+      "showzName": "3Z0935 Transformers Rise of the Beasts DLX Optimus Primal Exclusive Version",
+      "analyzerProperId": "tz7-03",
+      "properName": "Optimus Primal",
+      "action": "keepBoth",
+      "reason": "3Z0935 is the Exclusive Version of ROTB DLX Optimus Primal; the standard release is tz7-03. Name already says \"Exclusive Version\".",
+      "sources": [
+        "showzstore.com product p6994"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-rise-of-the-beasts-scourge-pre-assembled-m",
+      "showzStoreId": "6775",
+      "showzName": "Rise of the Beasts Scourge Pre-Assembled Model Kit",
+      "analyzerProperId": "sf-yolopark-rise-of-the-beasts-amk-scourge",
+      "properName": "Scourge",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p6775",
+        "keeper line: Yolopark AMK PRO"
+      ],
+      "dropId": "yolopark-rise-of-the-beasts-scourge-pre-assembled-m",
+      "keepId": "sf-yolopark-amk-pro-rotb-scourge"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-rise-of-the-beasts-optimus-prime-pre-assem",
+      "showzStoreId": "6776",
+      "showzName": "Rise of the Beasts Optimus Prime Pre-Assembled Model Kit",
+      "analyzerProperId": "sf-yolopark-transformers-rotb-optimus-prime-amk-pro-series",
+      "properName": "Optimus Prime",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p6776",
+        "keeper line: Yolopark AMK PRO"
+      ],
+      "dropId": "yolopark-rise-of-the-beasts-optimus-prime-pre-assem",
+      "keepId": "sf-yolopark-transformers-rotb-optimus-prime-amk-pro-series"
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "threezero-3z0841-mdlx-transformers-one-optimus-prime",
+      "showzStoreId": "6530",
+      "showzName": "3Z0841 MDLX Transformers One Optimus Prime",
+      "analyzerProperId": "tz3-dlx-prime-one",
+      "properName": "Optimus Prime",
+      "action": "keepBoth",
+      "reason": "3Z0841 MDLX Transformers One Optimus Prime is not a DLX.",
+      "sources": [
+        "showzstore.com product p6530"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "threezero-3z0842-transformers-one-mdlx-d16-megatron",
+      "showzStoreId": "6532",
+      "showzName": "3Z0842 Transformers One MDLX D16 Megatron",
+      "analyzerProperId": "tz9-tz-14",
+      "properName": "DLX Megatron",
+      "action": "keepBoth",
+      "reason": "A different threezero product (sleep-mode / Nemesis / Transformers One MDLX D-16 / Cybertron-mode event exclusive / Vintage Animation MDLX). The proper row only matched through a polluted alias list. Show.Z name is already specific.",
+      "sources": [
+        "showzstore.com product p6532"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "threezero-3z0471-transformers-age-of-extinction-dlx-lockdow",
+      "showzStoreId": "6631",
+      "showzName": "3Z0471 Transformers Age of Extinction DLX Lockdown Standard Version",
+      "analyzerProperId": "tz7-12",
+      "properName": "Lockdown",
+      "action": "merge",
+      "reason": "threezero AOE DLX Lockdown Standard Version (3Z0471) = tz7-12 \"Lockdown DLX Age of Extinction\". The event exclusive 3Z0811 stays a separate Show.Z row.",
+      "sources": [
+        "showzstore.com product p6631"
+      ],
+      "dropId": "threezero-3z0471-transformers-age-of-extinction-dlx-lockdow",
+      "keepId": "tz7-12"
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "weak-name-match",
+      "showzId": "threezero-3z0650-transformers-bumblebee-dlx-optimus-prime-c",
+      "showzStoreId": "6640",
+      "showzName": "3Z0650 Transformers Bumblebee DLX Optimus Prime Cybertron Mode",
+      "analyzerProperId": "tz3-dlx-prime-one",
+      "properName": "Optimus Prime",
+      "action": "keepBoth",
+      "reason": "3Z0650 Bumblebee-film DLX Optimus Prime Cybertron Mode is a separate release.",
+      "sources": [
+        "showzstore.com product p6640"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "threezero-3z0930-transformers-bumblebee-dlx-optimus-prime-c",
+      "showzStoreId": "6643",
+      "showzName": "3Z0930 Transformers Bumblebee DLX Optimus Prime Cybertron Mode Event Exclusive Version",
+      "analyzerProperId": "tz3-dlx-prime-one",
+      "properName": "Optimus Prime",
+      "action": "keepBoth",
+      "reason": "A different threezero product (sleep-mode / Nemesis / Transformers One MDLX D-16 / Cybertron-mode event exclusive / Vintage Animation MDLX). The proper row only matched through a polluted alias list. Show.Z name is already specific.",
+      "sources": [
+        "showzstore.com product p6643"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "yolopark-d-16-one-megatron-cog-less-mode-pre-assembled-m",
+      "showzStoreId": "6416",
+      "showzName": "One D-16 Megatron Cog-Less Mode Pre-Assembled Model Kit",
+      "analyzerProperId": "sf-yolopark-transformers-one-megatron-cogged-mode-model-kit",
+      "properName": "D-16 [Megatron] Cogged Mode",
+      "action": "keepBoth",
+      "reason": "Yolopark Transformers One D-16 Cog-Less Mode vs Cogged Mode are separate kits.",
+      "sources": [
+        "showzstore.com product p6416"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-bumblebee-shockwave-pre-assembled-model-ki",
+      "showzStoreId": "6420",
+      "showzName": "Bumblebee Shockwave Pre-Assembled Model Kit",
+      "analyzerProperId": "sf-yolopark-amk-pro-bumblebee2018-shockwave",
+      "properName": "Shockwave",
+      "action": "unsure",
+      "reason": "Two Show.Z AMK Pro Bumblebee-film Shockwave listings (#6420 from 2024-07 and #8078, a 2026 pre-order). #8078 is merged into the 2026 proper row; #6420 may be the original 2024 run or a duplicate listing.",
+      "sources": [
+        "showzstore.com product p6420",
+        "showzstore.com product p8078"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "threezero-3z0850-mdlx-transformers-one-elita",
+      "showzStoreId": "6529",
+      "showzName": "3Z0850 MDLX Transformers One Elita",
+      "analyzerProperId": "tz3-dlx-elita",
+      "properName": "Elita-1",
+      "action": "unsure",
+      "reason": "tz3-dlx-elita \"Transformers One DLX Elita-1\" aliases 3Z0850 (MDLX Elita). Unclear whether a DLX Elita exists or the row is the MDLX mislabelled.",
+      "sources": [
+        "showzstore.com product p6529"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "threezero-3z0338-transformers-mdlx-jazz",
+      "showzStoreId": "6346",
+      "showzName": "3Z0338 Transformers MDLX Jazz",
+      "analyzerProperId": "tz7-46",
+      "properName": "DLX Jazz",
+      "action": "keepBoth",
+      "reason": "3Z0338 MDLX Jazz is not a DLX Jazz (different scale line).",
+      "sources": [
+        "showzstore.com product p6346"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "flametoys-kuro-kara-kuri-starscream",
+      "showzStoreId": "6097",
+      "showzName": "Kuro Kara Kuri Starscream",
+      "analyzerProperId": "ft6-ft-kkk-starscream",
+      "properName": "Starscream",
+      "action": "unsure",
+      "reason": "Character matches, but ft6-ft-kkk-starscream comes from the ft6 Kuro Kara Kuri batch (curated-bbts-wave6): no SKU, release dates two months apart, round MSRPs, and several characters with no known KKK release. Audit the batch before merging real listings into it.",
+      "sources": [
+        "showzstore.com product p6097"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "threezero-3z0579-the-last-knight-optimus-prime-deluxe-versi",
+      "showzStoreId": "5987",
+      "showzName": "3Z0579 The Last Knight Optimus Prime Deluxe Version",
+      "analyzerProperId": "tz9-tz-13",
+      "properName": "DLX Optimus Prime",
+      "action": "keepBoth",
+      "reason": "3Z0579 TLK Optimus Prime Deluxe Version is not tz9-tz-13 (Bumblebee-film Cybertron-mode DLX Optimus by image/EAN).",
+      "sources": [
+        "showzstore.com product p5987"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "threezero-3z0693-mdlx-bumblebee-vintage-animation-edition",
+      "showzStoreId": "5996",
+      "showzName": "3Z0693 MDLX Bumblebee Vintage Animation Edition",
+      "analyzerProperId": "tz9-tz-15",
+      "properName": "DLX Bumblebee",
+      "action": "keepBoth",
+      "reason": "A different threezero product (sleep-mode / Nemesis / Transformers One MDLX D-16 / Cybertron-mode event exclusive / Vintage Animation MDLX). The proper row only matched through a polluted alias list. Show.Z name is already specific.",
+      "sources": [
+        "showzstore.com product p5996"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "threezero-mdlx-megatron-g2-version",
+      "showzStoreId": "5807",
+      "showzName": "MDLX Megatron G2 Version",
+      "analyzerProperId": "tz-mdlx-megatron-1986",
+      "properName": "Megatron",
+      "action": "keepBoth",
+      "reason": "MDLX Megatron G2 Version is a separate redeco from the 2026 1986 Movie Edition.",
+      "sources": [
+        "showzstore.com product p5807"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "threezero-mdlx-shattered-glass-optimus-prime",
+      "showzStoreId": "5492",
+      "showzName": "MDLX Shattered Glass Optimus Prime",
+      "analyzerProperId": "tz-mdlx-optimus-1986",
+      "properName": "Optimus Prime",
+      "action": "keepBoth",
+      "reason": "MDLX Shattered Glass Optimus Prime is a separate redeco from the 2026 1986 Movie Edition.",
+      "sources": [
+        "showzstore.com product p5492"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-rise-of-the-beasts-mirage-pre-assembled-mo",
+      "showzStoreId": "5618",
+      "showzName": "Rise of the Beasts Mirage Pre-Assembled Model Kit",
+      "analyzerProperId": "sf-yolopark-amk-rotb-mirage",
+      "properName": "Mirage",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p5618",
+        "keeper line: Yolopark AMK PRO"
+      ],
+      "dropId": "yolopark-rise-of-the-beasts-mirage-pre-assembled-mo",
+      "keepId": "sf-yolopark-rotb-16cm-mirage-amk-pro"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-the-last-knight-optimus-prime-pre-assemble",
+      "showzStoreId": "5619",
+      "showzName": "The Last Knight Optimus Prime Pre-Assembled Model Kit",
+      "analyzerProperId": "sf-yolopark-amk-the_last_knight-optimus_prime",
+      "properName": "Optimus Prime",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p5619",
+        "keeper line: Yolopark AMK PRO"
+      ],
+      "dropId": "yolopark-the-last-knight-optimus-prime-pre-assemble",
+      "keepId": "sf-yolopark-the-last-knight-20cm-optimus-prime-model-kit"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-rise-of-the-beasts-scourge-model-kit",
+      "showzStoreId": "5258",
+      "showzName": "Rise of the Beasts Scourge Model Kit",
+      "analyzerProperId": "sf-yolopark-rise-of-the-beasts-amk-scourge",
+      "properName": "Scourge",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p5258",
+        "keeper line: Yolopark AMK"
+      ],
+      "dropId": "yolopark-rise-of-the-beasts-scourge-model-kit",
+      "keepId": "sf-yolopark-rise-of-the-beasts-amk-scourge"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-rise-of-the-beasts-cheetor-model-kit",
+      "showzStoreId": "5296",
+      "showzName": "Rise of the Beasts Cheetor Model Kit",
+      "analyzerProperId": "sf-yolopark-rise-of-the-beasts-amk-cheetor",
+      "properName": "Cheetor",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p5296",
+        "keeper line: Yolopark AMK"
+      ],
+      "dropId": "yolopark-rise-of-the-beasts-cheetor-model-kit",
+      "keepId": "sf-yolopark-rise-of-the-beasts-amk-cheetor"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-rise-of-the-beasts-rhinox-model-kit",
+      "showzStoreId": "5321",
+      "showzName": "Rise of the Beasts Rhinox Model Kit",
+      "analyzerProperId": "sf-yolopark-rise-of-the-beasts-amk-rhinox",
+      "properName": "Rhinox",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p5321",
+        "keeper line: Yolopark AMK"
+      ],
+      "dropId": "yolopark-rise-of-the-beasts-rhinox-model-kit",
+      "keepId": "sf-yolopark-rise-of-the-beasts-amk-rhinox"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "threezero-3z0564-dlx-transformers-rise-of-the-beasts-mirage",
+      "showzStoreId": "5422",
+      "showzName": "3Z0564 DLX Transformers Rise of the Beasts Mirage",
+      "analyzerProperId": "tz7-06",
+      "properName": "Mirage",
+      "action": "merge",
+      "reason": "threezero 3Z0564 = ROTB DLX Mirage = tz7-06.",
+      "sources": [
+        "https://toymarks.com/threezero-3z05640w0-transformers-rise-of-the-beasts-dlx-mirage",
+        "showzstore.com product p5422"
+      ],
+      "dropId": "threezero-3z0564-dlx-transformers-rise-of-the-beasts-mirage",
+      "keepId": "tz7-06"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-rise-of-the-beasts-optimus-prime-model-kit",
+      "showzStoreId": "5136",
+      "showzName": "Rise of the Beasts Optimus Prime Model Kit",
+      "analyzerProperId": "sf-yolopark-transformers-rotb-optimus-prime-amk-pro-series",
+      "properName": "Optimus Prime",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p5136",
+        "keeper line: Yolopark AMK"
+      ],
+      "dropId": "yolopark-rise-of-the-beasts-optimus-prime-model-kit",
+      "keepId": "sf-yolopark-rise-of-the-beasts-amk-optimus-prime"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-rise-of-the-beasts-bumblebee-model-kit",
+      "showzStoreId": "5137",
+      "showzName": "Rise of the Beasts Bumblebee Model Kit",
+      "analyzerProperId": "sf-yolopark-rise-of-the-beasts-amk-bumblebee",
+      "properName": "Bumblebee",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p5137",
+        "keeper line: Yolopark AMK"
+      ],
+      "dropId": "yolopark-rise-of-the-beasts-bumblebee-model-kit",
+      "keepId": "sf-yolopark-rise-of-the-beasts-amk-bumblebee"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "yolopark-rise-of-the-beasts-optimus-primal-model-ki",
+      "showzStoreId": "5138",
+      "showzName": "Rise of the Beasts Optimus Primal Model Kit",
+      "analyzerProperId": "sf-yolopark-rise-of-the-beasts-amk-optimus-primal",
+      "properName": "Optimus Primal",
+      "action": "merge",
+      "reason": "Same Yolopark kit: the series on the Show.Z page title (\"AMK Series\" or \"AMK Pro Series\") and the character/film match the keeper line. Where the analyzer paired an AMK listing with an AMK Pro row (or the reverse), this retargets to the matching series.",
+      "sources": [
+        "showzstore.com product p5138",
+        "keeper line: Yolopark AMK"
+      ],
+      "dropId": "yolopark-rise-of-the-beasts-optimus-primal-model-ki",
+      "keepId": "sf-yolopark-rise-of-the-beasts-amk-optimus-primal"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "threezero-3z0565-dlx-transformers-rise-of-the-beasts-optimu",
+      "showzStoreId": "5220",
+      "showzName": "3Z0565 DLX Transformers Rise of the Beasts Optimus Primal",
+      "analyzerProperId": "tz7-03",
+      "properName": "Optimus Primal",
+      "action": "merge",
+      "reason": "threezero 3Z0565 ROTB DLX Optimus Primal = EAN 4895250808294 = tz7-03 sku THZ808294.",
+      "sources": [
+        "https://www.quick-toy.com/transformers-rise-of-the-beasts-optimus-primal-dlx-scale-collectible-p-50977",
+        "showzstore.com product p5220"
+      ],
+      "dropId": "threezero-3z0565-dlx-transformers-rise-of-the-beasts-optimu",
+      "keepId": "tz7-03"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "threezero-dlx-transformers-rise-of-the-beasts-bumble",
+      "showzStoreId": "5226",
+      "showzName": "DLX Transformers Rise of the Beasts Bumblebee",
+      "analyzerProperId": "tz3-dlx-bumblebee-rotb",
+      "properName": "Bumblebee",
+      "action": "merge",
+      "reason": "threezero ROTB DLX Bumblebee (single standard release) = tz3-dlx-bumblebee-rotb (EAN 4895250806917).",
+      "sources": [
+        "showzstore.com product p5226"
+      ],
+      "dropId": "threezero-dlx-transformers-rise-of-the-beasts-bumble",
+      "keepId": "tz3-dlx-bumblebee-rotb"
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "showz-multipack",
+      "showzId": "threezero-3z0160-hasbro-ex-3z04121w0-dlx-shattered-glass-so",
+      "showzStoreId": "4360",
+      "showzName": "Hasbro 3Z0160-EX 3Z04121W0 DLX Shattered Glass Soundwave & Ravage w/ LED",
+      "analyzerProperId": "tz7-43",
+      "properName": "DLX Soundwave",
+      "action": "keepBoth",
+      "reason": "Multipack (Hasbro-exclusive SG Soundwave & Ravage 3Z0160-EX) vs single DLX Soundwave.",
+      "sources": [
+        "showzstore.com product p4360"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "threezero-studio-transformers-mdlx-megatron",
+      "showzStoreId": "4386",
+      "showzName": "Studio Transformers MDLX Megatron",
+      "analyzerProperId": "tz-mdlx-megatron-1986",
+      "properName": "Megatron",
+      "action": "keepBoth",
+      "reason": "threezero MDLX (2021-22 original G1 release) is not the 2026 \"1986 Movie Edition\" (3Z1161-3Z1163).",
+      "sources": [
+        "showzstore.com product p4386"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "flametoys-furai-model-leo-prime-model-kit",
+      "showzStoreId": "3851",
+      "showzName": "Furai Model Leo Prime Model Kit",
+      "analyzerProperId": "sf-flametoys-toyarena-flame-toys-furai-26-transformers-leo-prime-model-kit",
+      "properName": "Transformers Leo Prime",
+      "action": "merge",
+      "reason": "Flame Toys Furai Model 26 Leo Prime model kit.",
+      "sources": [
+        "showzstore.com product p3851"
+      ],
+      "dropId": "flametoys-furai-model-leo-prime-model-kit",
+      "keepId": "sf-flametoys-toyarena-flame-toys-furai-26-transformers-leo-prime-model-kit"
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "threezero-studio-transformers-mdlx-bumblebee",
+      "showzStoreId": "3442",
+      "showzName": "Studio Transformers MDLX Bumblebee",
+      "analyzerProperId": "tz-mdlx-bumblebee-1986",
+      "properName": "Bumblebee",
+      "action": "keepBoth",
+      "reason": "threezero MDLX (2021-22 original G1 release) is not the 2026 \"1986 Movie Edition\" (3Z1161-3Z1163).",
+      "sources": [
+        "showzstore.com product p3442"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "threezero-studio-transformers-mdlx-optimus-prime",
+      "showzStoreId": "3564",
+      "showzName": "Studio Transformers MDLX Optimus Prime",
+      "analyzerProperId": "tz-mdlx-optimus-1986",
+      "properName": "Optimus Prime",
+      "action": "keepBoth",
+      "reason": "threezero MDLX (2021-22 original G1 release) is not the 2026 \"1986 Movie Edition\" (3Z1161-3Z1163).",
+      "sources": [
+        "showzstore.com product p3564"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "flametoys-furai-model-arcee-model-kit-of-reissue",
+      "showzStoreId": "2889",
+      "showzName": "Furai Model Arcee Model Kit of Reissue",
+      "analyzerProperId": "sf-flametoys-toyarena-flame-toys-furai-28-transformers-arcee-model-kit",
+      "properName": "Arcee",
+      "action": "keepBoth",
+      "reason": "Furai Model Arcee reissue is a later run than the Furai 28 Arcee kit.",
+      "sources": [
+        "showzstore.com product p2889"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "flametoys-furai-action-leo-prime",
+      "showzStoreId": "2890",
+      "showzName": "Furai Action Leo Prime",
+      "analyzerProperId": "sf-flametoys-toyarena-flame-toys-furai-26-transformers-leo-prime-model-kit",
+      "properName": "Transformers Leo Prime",
+      "action": "keepBoth",
+      "reason": "Furai ACTION Leo Prime is a pre-built action figure, not the Furai Model 26 kit.",
+      "sources": [
+        "showzstore.com product p2890"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "flametoys-kuro-kara-kuri-04sg-shattered-glass-optimu",
+      "showzStoreId": "2933",
+      "showzName": "Kuro Kara Kuri 04SG Shattered Glass Optimus Prime",
+      "analyzerProperId": "ft6-ft-kkk-optimus-movie",
+      "properName": "Optimus Prime Movie",
+      "action": "unsure",
+      "reason": "KKK 04SG Shattered Glass is a variant; the paired ft6-ft-kkk-optimus-movie is from the templated ft6 batch.",
+      "sources": [
+        "showzstore.com product p2933"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "threezero-x-hasbro-dlx-the-last-knight-bumblebee",
+      "showzStoreId": "2671",
+      "showzName": "X Hasbro DLX The Last Knight Bumblebee",
+      "analyzerProperId": "afmon-threezero-bumblebee-th3z0164",
+      "properName": "Bumblebee",
+      "action": "unsure",
+      "reason": "Show.Z lists the 2020 DLX TLK Bumblebee. afmon-threezero-bumblebee-th3z0164 is a 2026-09 EE listing (TH3Z0164) that may be a reissue. Release year unclear.",
+      "sources": [
+        "showzstore.com product p2671"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "flametoys-kuro-kara-kuri-04-optimus-prime",
+      "showzStoreId": "1950",
+      "showzName": "Kuro Kara Kuri 04 Optimus Prime",
+      "analyzerProperId": "ft6-ft-kkk-optimus-movie",
+      "properName": "Optimus Prime Movie",
+      "action": "unsure",
+      "reason": "Character matches, but ft6-ft-kkk-optimus-movie comes from the ft6 Kuro Kara Kuri batch (curated-bbts-wave6): no SKU, release dates two months apart, round MSRPs, and several characters with no known KKK release. Audit the batch before merging real listings into it.",
+      "sources": [
+        "showzstore.com product p1950"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "flametoys-furai-model-12-optimus-prime-model-kit-g1",
+      "showzStoreId": "1979",
+      "showzName": "Furai Model 12 Optimus Prime Model Kit G1 Version",
+      "analyzerProperId": "sf-flametoys-toyarena-flame-toys-furai-12-transformers-optimus-prime-g1-ver-mode",
+      "properName": "Optimus Prime (G1 Ver.)",
+      "action": "merge",
+      "reason": "Flame Toys Furai Model 12 Optimus Prime G1 Ver.; the number and variant match.",
+      "sources": [
+        "showzstore.com product p1979"
+      ],
+      "dropId": "flametoys-furai-model-12-optimus-prime-model-kit-g1",
+      "keepId": "sf-flametoys-toyarena-flame-toys-furai-12-transformers-optimus-prime-g1-ver-mode"
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "flametoys-furai-model-idw-windblade-model-kit-reissu",
+      "showzStoreId": "2020",
+      "showzName": "Furai Model IDW Windblade Model Kit Reissue",
+      "analyzerProperId": "sf-flametoys-toyarena-flame-toys-furai-action-transformers-windblade-action-figu",
+      "properName": "Windblade",
+      "action": "keepBoth",
+      "reason": "Furai MODEL IDW Windblade kit reissue is not the Furai ACTION Windblade figure.",
+      "sources": [
+        "showzstore.com product p2020"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "flametoys-furai-model-devastator-model-kit",
+      "showzStoreId": "1707",
+      "showzName": "Furai Model Devastator Model Kit",
+      "analyzerProperId": "sf-flametoys-toyarena-flame-toys-furai-model-transformers-devastator-model-kit",
+      "properName": "Devastator",
+      "action": "merge",
+      "reason": "Flame Toys Furai Model Devastator; one release.",
+      "sources": [
+        "showzstore.com product p1707"
+      ],
+      "dropId": "flametoys-furai-model-devastator-model-kit",
+      "keepId": "sf-flametoys-toyarena-flame-toys-furai-model-transformers-devastator-model-kit"
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "flametoys-furai-model-idw-optimus-prime-battle-damag",
+      "showzStoreId": "1828",
+      "showzName": "Furai Model IDW Optimus Prime Battle Damaged Version",
+      "analyzerProperId": "sf-flametoys-toyarena-flame-toys-furai-12-transformers-optimus-prime-g1-ver-mode",
+      "properName": "Optimus Prime (G1 Ver.)",
+      "action": "keepBoth",
+      "reason": "Furai Model IDW Optimus Prime Battle Damaged is not Furai 12 G1 Ver.",
+      "sources": [
+        "showzstore.com product p1828"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "flametoys-furai-model-03-optimus-prime-op-idw-model",
+      "showzStoreId": "1468",
+      "showzName": "Furai Model 03 Optimus Prime OP IDW Model Kit",
+      "analyzerProperId": "sf-flametoys-toyarena-flame-toys-furai-12-transformers-optimus-prime-g1-ver-mode",
+      "properName": "Optimus Prime (G1 Ver.)",
+      "action": "keepBoth",
+      "reason": "Furai Model 03 IDW Optimus Prime is not Furai 12 G1 Ver.",
+      "sources": [
+        "showzstore.com product p1468"
+      ]
+    },
+    {
+      "bucket": "5-name-only",
+      "category": "name-only-match",
+      "showzId": "threezero-3z0159-transformers-bumblebee-dlx-optimus-prime",
+      "showzStoreId": "1284",
+      "showzName": "3Z0159 Transformers Bumblebee DLX Optimus Prime",
+      "analyzerProperId": "tz7-07",
+      "properName": "Optimus Prime",
+      "action": "merge",
+      "reason": "threezero 3Z0159 = Bumblebee-film DLX Optimus Prime = tz7-07 (EAN 4897056202641).",
+      "sources": [
+        "https://www.threezerohk.com/shop/transformers-bumblebee-dlx-optimus-prime-6574",
+        "showzstore.com product p1284"
+      ],
+      "dropId": "threezero-3z0159-transformers-bumblebee-dlx-optimus-prime",
+      "keepId": "tz7-07"
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "flametoys-kuro-kara-kuri-drift-reissue",
+      "showzStoreId": "0289",
+      "showzName": "Kuro Kara Kuri Drift Reissue",
+      "analyzerProperId": "ft6-ft-kkk-drift",
+      "properName": "Drift",
+      "action": "unsure",
+      "reason": "KKK Drift Reissue (2017) vs ft6-ft-kkk-drift (templated ft6 batch, date 2024-04).",
+      "sources": [
+        "showzstore.com product p0289"
+      ]
+    },
+    {
+      "bucket": "3-code-only-stub",
+      "category": "proper-is-code-only-stub",
+      "showzId": "xtransbots-mx-4-abaddon-galvatron",
+      "showzStoreId": "3032",
+      "showzName": "MX-4 Abaddon Galvatron",
+      "analyzerProperId": "xt6-xt-mx-04",
+      "properName": "MX-04",
+      "action": "mergeStub",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "sources": [
+        "https://www.tfsafari.com/products/xtransbots-mx-4-abaddon-galvatron-25cm-9-84",
+        "https://toys.tfw2005.com/abaddon-43171",
+        "showzstore.com product p3032"
+      ],
+      "dropId": "xt6-xt-mx-04",
+      "keepId": "xtransbots-mx-4-abaddon-galvatron"
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "newage-h27w-conquest-h28-octavian-armored-ultra-magnus",
+      "showzStoreId": "2476",
+      "showzName": "H27W Conquest & H28 Octavian Armored Ultra Magnus",
+      "analyzerProperId": "na-h28",
+      "properName": "Ratchet",
+      "action": "keepBoth",
+      "reason": "Show.Z row is a 2-pack (H27W + H28 Octavian Ultra Magnus); the paired proper row na-h28 is invented (deleted separately).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "showzstore.com product p2476"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "showz-multipack",
+      "showzId": "magicsquare-ms-w02-b61-adjutant-ultra-magnus-b62-chief-of-sta",
+      "showzStoreId": "7499",
+      "showzName": "MS-W02 B61 Adjutant Ultra Magnus & B62 Chief of Staff Sixshot Set of 2",
+      "analyzerProperId": "magicsquare-ms-b62",
+      "properName": "Chief Of Staff",
+      "action": "keepBoth",
+      "reason": "Magic Square MS-W02 two-pack (B61 + B62) vs single MS-B62.",
+      "sources": [
+        "showzstore.com product p7499"
+      ]
+    },
+    {
+      "bucket": "3-code-only-stub",
+      "category": "proper-is-code-only-stub",
+      "showzId": "xtransbots-mx-8-mx-viii-aegis-trailbreaker",
+      "showzStoreId": "6548",
+      "showzName": "MX-VIII MX-8 Aegis Trailbreaker",
+      "analyzerProperId": "xt6-xt-mx-08",
+      "properName": "MX-08",
+      "action": "mergeStub",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "sources": [
+        "https://www.tfs-express.com/x-transbots/533-x-transbots-mx-8t-mx-viiit-aegis-reissue.html",
+        "showzstore.com product p6548"
+      ],
+      "dropId": "xt6-xt-mx-08",
+      "keepId": "xtransbots-mx-8-mx-viii-aegis-trailbreaker"
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e39-mechanic-studio-wheel-hub-hubcap-dw-e38b-p",
+      "showzStoreId": "6250",
+      "showzName": "Mechanic Studio DW-E39 Wheel Hub hubcap & DW-E38B Pulse Gun Shockwave Black Version Set of 2",
+      "analyzerProperId": "dw6-dw-e-39",
+      "properName": "DW-E39 Bronze Warden",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-39 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p6250"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e37-mechanic-studio-leap-cliffjumper-dw-e38-pu",
+      "showzStoreId": "6251",
+      "showzName": "Mechanic Studio DW-E37 Leap Cliffjumper & DW-E38 Pulse Gun Shockwave Toy Color Version Set of 2",
+      "analyzerProperId": "dw6-dw-e-38",
+      "properName": "DW-E38 Silver Phantom",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-38 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p6251"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e37-mechanic-studio-leap-cliffjumper-dw-e38-pu-6252",
+      "showzStoreId": "6252",
+      "showzName": "Mechanic Studio DW-E37 Leap Cliffjumper & DW-E38 Pulse Gun Shockwave Comic Version Set of 2",
+      "analyzerProperId": "dw6-dw-e-38",
+      "properName": "DW-E38 Silver Phantom",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-38 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p6252"
+      ]
+    },
+    {
+      "bucket": "3-code-only-stub",
+      "category": "proper-is-code-only-stub",
+      "showzId": "xtransbots-mx-5-dante-inferno",
+      "showzStoreId": "6274",
+      "showzName": "MX-5 Dante Inferno",
+      "analyzerProperId": "xt6-xt-mx-05",
+      "properName": "MX-05",
+      "action": "mergeStub",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "sources": [
+        "https://news.tfw2005.com/2021/09/14/x-transbots-mx-v-dante-mx-vi-da-vinci-mx-vii-tirador-color-renders-masterpiece-scale-g1-inferno-grapple-artfire-441030",
+        "showzstore.com product p6274"
+      ],
+      "dropId": "xt6-xt-mx-05",
+      "keepId": "xtransbots-mx-5-dante-inferno"
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e33-mechanic-studio-hammer-bulkhead-dw-e30m-ir",
+      "showzStoreId": "6184",
+      "showzName": "Mechanic Studio DW-E33 Hammer Bulkhead & DW-E30M Iron Jack Wheeljack Shattered Glass Version Set of 2",
+      "analyzerProperId": "dw6-dw-e-33",
+      "properName": "DW-E33 Sapphire Siren",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-33 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p6184"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e30-mechanic-studio-iron-jack-wheeljack-dw-e24",
+      "showzStoreId": "6185",
+      "showzName": "Mechanic Studio DW-E30 Iron Jack Wheeljack & DW-E24M FireFighters Inferno Shattered Glass Version Set of 2",
+      "analyzerProperId": "dw6-dw-e-30",
+      "properName": "DW-E30 Plasma Hawk",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-30 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p6185"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "dx9-d-15-kukinski-dead-end-g2-version",
+      "showzStoreId": "5921",
+      "showzName": "D-15 Kukinski Dead End G2 Version",
+      "analyzerProperId": "dx96-dx9-w-24",
+      "properName": "D15",
+      "action": "unsure",
+      "reason": "dx96-dx9-w-24 is a code-only \"D15\" template row filed under \"War in Pocket\" (curated-bbts-wave6). DX9 D-15 is Kukinski; the Show.Z row is the G2 variant, so it is not a merge either way. Leave for a wave6 batch audit.",
+      "sources": [
+        "showzstore.com product p5921"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e01c-destroy-emperor-galvatron-dw-e29-destroy-p",
+      "showzStoreId": "6047",
+      "showzName": "DW-E01C Destroy Emperor Galvatron & DW-E29 Destroy Planet Grand Galvatron Japanese Version Set of 2",
+      "analyzerProperId": "dw6-dw-e-29",
+      "properName": "DW-E29 Glacier King",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-29 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p6047"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e01m-destroy-emperor-galvatron-dw-e29-destroy-p",
+      "showzStoreId": "6048",
+      "showzName": "DW-E01M Destroy Emperor Galvatron & DW-E29 Destroy Planet Grand Galvatron Comic Version Set of 2",
+      "analyzerProperId": "dw6-dw-e-29",
+      "properName": "DW-E29 Glacier King",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-29 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p6048"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e01s-destroy-emperor-galvatron-dw-e29-destroy-p",
+      "showzStoreId": "6049",
+      "showzName": "DW-E01S Destroy Emperor Galvatron & DW-E29 Destroy Planet Grand Galvatron Transparent Version Set of 2",
+      "analyzerProperId": "dw6-dw-e-29",
+      "properName": "DW-E29 Glacier King",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-29 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p6049"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "uniquetoys-r-06-dino",
+      "showzStoreId": "5808",
+      "showzName": "R-06 Dino",
+      "analyzerProperId": "uniquetoys-ut-r06",
+      "properName": "Red Dasher",
+      "action": "merge",
+      "reason": "Unique Toys R-06 Red Dasher is the DOTM Dino homage, so the Show.Z \"R-06 Dino\" row is the same product. Fix the keeper subtitle (Sideswipe -> Dino) as well.",
+      "sources": [
+        "https://www.tfsafari.com/collections/ut-unique-toys",
+        "showzstore.com product p5808"
+      ],
+      "dropId": "uniquetoys-r-06-dino",
+      "keepId": "uniquetoys-ut-r06"
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e24-firefighters-inferno",
+      "showzStoreId": "5604",
+      "showzName": "DW-E24 Firefighters Inferno",
+      "analyzerProperId": "dw6-dw-e-24",
+      "properName": "DW-E24 Chrome Dome",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-24 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p5604"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e23-tactical-commander-ultra-magnus-gray-trial",
+      "showzStoreId": "5348",
+      "showzName": "DW-E23 Tactical Commander Ultra Magnus Gray Trial Version",
+      "analyzerProperId": "dw6-dw-e-23",
+      "properName": "DW-E23 Neon Ghost",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-23 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p5348"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "uniquetoys-r-04-nero-galvatron-youth-version",
+      "showzStoreId": "4487",
+      "showzName": "R-04 Nero Galvatron Youth Version",
+      "analyzerProperId": "uniquetoys-ut-r04",
+      "properName": "Nero",
+      "action": "keepBoth",
+      "reason": "R-04 Nero Youth Version is a separate Unique Toys release (TFSafari lists it apart from standard R-04 Nero). Name already says so.",
+      "sources": [
+        "https://www.tfsafari.com/collections/ut-unique-toys",
+        "showzstore.com product p4487"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e10b-black-seaspray-dw-e11-acid-storm-set-of-2",
+      "showzStoreId": "3886",
+      "showzName": "DW-E10B Black Seaspray & DW-E11 Acid Storm Set of 2",
+      "analyzerProperId": "dw6-dw-e-11",
+      "properName": "DW-E11 Green Machine",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-11 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p3886"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e13w-sky-ghost-powerglide-dw-e14-bitstream-set",
+      "showzStoreId": "3887",
+      "showzName": "DW-E13W Sky Ghost Powerglide & DW-E14 Bitstream Set of 2",
+      "analyzerProperId": "dw6-dw-e-14",
+      "properName": "DW-E14 Night Howler",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-14 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p3887"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e04-roller-for-prime-commander-optimus-prime-g",
+      "showzStoreId": "3903",
+      "showzName": "Roller for DW-E04 Prime Commander Optimus Prime Grey Version",
+      "analyzerProperId": "dw6-dw-e-04",
+      "properName": "DW-E04 Dark Commander",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-04 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p3903"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e04-roller-for-prime-commander-optimus-prime-b",
+      "showzStoreId": "3904",
+      "showzName": "Roller for DW-E04 Prime Commander Optimus Prime Blue Version",
+      "analyzerProperId": "dw6-dw-e-04",
+      "properName": "DW-E04 Dark Commander",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-04 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p3904"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "uniquetoys-r-02-challenger-optimus-prime-2nd-edition",
+      "showzStoreId": "3691",
+      "showzName": "R-02 Challenger Optimus Prime 2nd Edition",
+      "analyzerProperId": "uniquetoys-ut-r02",
+      "properName": "Challenger",
+      "action": "keepBoth",
+      "reason": "R-02 Challenger 2nd Edition/2nd run is a later production run; name already says so.",
+      "sources": [
+        "showzstore.com product p3691"
+      ]
+    },
+    {
+      "bucket": "3-code-only-stub",
+      "category": "proper-is-code-only-stub",
+      "showzId": "xtransbots-mx-6-da-vinci-grapple",
+      "showzStoreId": "3492",
+      "showzName": "MX-6 Da Vinci Grapple",
+      "analyzerProperId": "xt6-xt-mx-06",
+      "properName": "MX-06",
+      "action": "mergeStub",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "sources": [
+        "https://news.tfw2005.com/2021/09/14/x-transbots-mx-v-dante-mx-vi-da-vinci-mx-vii-tirador-color-renders-masterpiece-scale-g1-inferno-grapple-artfire-441030",
+        "showzstore.com product p3492"
+      ],
+      "dropId": "xt6-xt-mx-06",
+      "keepId": "xtransbots-mx-6-da-vinci-grapple"
+    },
+    {
+      "bucket": "3-code-only-stub",
+      "category": "proper-is-code-only-stub",
+      "showzId": "xtransbots-mx-7-tirador-artfire-limited-version",
+      "showzStoreId": "3493",
+      "showzName": "MX-7 Tirador Artfire Limited Version",
+      "analyzerProperId": "xt6-xt-mx-07",
+      "properName": "MX-07",
+      "action": "mergeStub",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "sources": [
+        "https://news.tfw2005.com/2021/09/14/x-transbots-mx-v-dante-mx-vi-da-vinci-mx-vii-tirador-color-renders-masterpiece-scale-g1-inferno-grapple-artfire-441030",
+        "showzstore.com product p3493"
+      ],
+      "dropId": "xt6-xt-mx-07",
+      "keepId": "xtransbots-mx-7-tirador-artfire-limited-version"
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "newage-h24-macchio-megatron-shattered-glass-version",
+      "showzStoreId": "2763",
+      "showzName": "H24 Macchio Megatron Shattered Glass Version",
+      "analyzerProperId": "na-h24",
+      "properName": "Red Alert",
+      "action": "keepBoth",
+      "reason": "The Show.Z NewAge row is correct for its code; the paired proper row na-h24 is invented (deleted separately).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "showzstore.com product p2763"
+      ]
+    },
+    {
+      "bucket": "6-other-low",
+      "category": "variant-mismatch",
+      "showzId": "toyworld-tw-f01-knight-orion-optimus-prime-normal-version",
+      "showzStoreId": "2679",
+      "showzName": "TW-F01 Knight Orion Optimus Prime Normal Version",
+      "analyzerProperId": "toyworld-tw-f01d",
+      "properName": "Knight Orion",
+      "action": "keepBoth",
+      "reason": "TW-F01 Normal Version vs TW-F01D Deluxe Version are separate SKUs.",
+      "sources": [
+        "showzstore.com product p2679"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "drwu-dw-e01b-destroy-emperpo-galvatron-black-version-dw",
+      "showzStoreId": "2754",
+      "showzName": "DW-E01B Destroy Emperpo Galvatron Black Version & DW-E02 Monitor Officer Soundwave Set of 2",
+      "analyzerProperId": "dw6-dw-e-02",
+      "properName": "DW-E02 Blue Blaze",
+      "action": "keepBoth",
+      "reason": "Keep the Show.Z Dr. Wu listing (real set, variant or accessory). The paired proper row dw6-dw-e-02 has an invented name and is proposed for deletion.",
+      "sources": [
+        "showzstore.com product p2754"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "toyworld-tw-f09-nemesis-prime-black-version",
+      "showzStoreId": "2331",
+      "showzName": "TW-F09 Nemesis Prime Black Version",
+      "analyzerProperId": "toyworld-tw-f09",
+      "properName": "Freedom Leader",
+      "action": "keepBoth",
+      "reason": "TW-F09 Nemesis Prime Black Version is a redeco of TW-F09 Freedom Leader; Show.Z name already states the variant.",
+      "sources": [
+        "showzstore.com product p2331"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "newage-repair-kit-for-h9-agamemnon-megatron",
+      "showzStoreId": "1970",
+      "showzName": "Repair Kit for H9 Agamemnon Megatron",
+      "analyzerProperId": "na-h9",
+      "properName": "Cragun",
+      "action": "keepBoth",
+      "reason": "The Show.Z NewAge row is correct for its code; the paired proper row na-h9 is invented (deleted separately).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "showzstore.com product p1970"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "newage-h-9-agamemnon-megatron",
+      "showzStoreId": "1580",
+      "showzName": "H-9 Agamemnon Megatron",
+      "analyzerProperId": "na-h9",
+      "properName": "Cragun",
+      "action": "keepBoth",
+      "reason": "The Show.Z NewAge row is correct for its code; the paired proper row na-h9 is invented (deleted separately).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "showzstore.com product p1580"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "newage-h-7-mccoy-ironhide",
+      "showzStoreId": "1322",
+      "showzName": "H-7 Mccoy Ironhide",
+      "analyzerProperId": "na-h7",
+      "properName": "Danny",
+      "action": "keepBoth",
+      "reason": "The Show.Z NewAge row is correct for its code; the paired proper row na-h7 is invented (deleted separately).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "showzstore.com product p1322"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "newage-h-8-miller-ratchet",
+      "showzStoreId": "1323",
+      "showzName": "H-8 Miller Ratchet",
+      "analyzerProperId": "na-h8",
+      "properName": "Dicko",
+      "action": "keepBoth",
+      "reason": "The Show.Z NewAge row is correct for its code; the paired proper row na-h8 is invented (deleted separately).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "showzstore.com product p1323"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "newage-na-h4-h-4-murphy-silverstreak",
+      "showzStoreId": "1348",
+      "showzName": "NA H4 H-4 Murphy Silverstreak",
+      "analyzerProperId": "na-h4",
+      "properName": "Legend of Sparklers",
+      "action": "keepBoth",
+      "reason": "The Show.Z NewAge row is correct for its code; the paired proper row na-h4 is invented (deleted separately).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "showzstore.com product p1348"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "newage-h-5-maverick-smokescreen",
+      "showzStoreId": "1351",
+      "showzName": "H-5 Maverick Smokescreen",
+      "analyzerProperId": "na-h5",
+      "properName": "Shrow",
+      "action": "keepBoth",
+      "reason": "The Show.Z NewAge row is correct for its code; the paired proper row na-h5 is invented (deleted separately).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "showzstore.com product p1351"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "newage-na-h6-max-king-kong-cosmo",
+      "showzStoreId": "1165",
+      "showzName": "NA H6 Max King Kong Cosmo",
+      "analyzerProperId": "na-h6",
+      "properName": "Rathion",
+      "action": "keepBoth",
+      "reason": "The Show.Z NewAge row is correct for its code; the paired proper row na-h6 is invented (deleted separately).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "showzstore.com product p1165"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "newage-na-h3-harry-prowl",
+      "showzStoreId": "1188",
+      "showzName": "NA H3 Harry Prowl",
+      "analyzerProperId": "na-h3",
+      "properName": "Mickey",
+      "action": "keepBoth",
+      "reason": "The Show.Z NewAge row is correct for its code; the paired proper row na-h3 is invented (deleted separately).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "showzstore.com product p1188"
+      ]
+    },
+    {
+      "bucket": "2-code-collision",
+      "category": "code-collision-names-disagree",
+      "showzId": "newage-mp-21-h1-bumblebee-na-01-flipper",
+      "showzStoreId": "0740",
+      "showzName": "H1 Bumblebee MP-21 NA-01 Flipper",
+      "analyzerProperId": "na-h1",
+      "properName": "Wilson",
+      "action": "keepBoth",
+      "reason": "The Show.Z NewAge row is correct for its code; the paired proper row na-h1 is invented (deleted separately).",
+      "sources": [
+        "https://www.newagecollector.com/",
+        "showzstore.com product p0740"
+      ]
+    },
+    {
+      "bucket": "3-code-only-stub",
+      "category": "proper-is-code-only-stub",
+      "showzId": "dx9-k3-la-hire-rodimus-hot-rod",
+      "showzStoreId": "0639",
+      "showzName": "K3 La Hire Rodimus Hot Rod",
+      "analyzerProperId": "dx96-dx9-k-03",
+      "properName": "K3",
+      "action": "mergeStub",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "sources": [
+        "https://www.tfsafari.com/products/dx9-toys-k-3-k3-la-hire-hot-rod-rodimus-reissue-24cm",
+        "showzstore.com product p0639"
+      ],
+      "dropId": "dx96-dx9-k-03",
+      "keepId": "dx9-k3-la-hire-rodimus-hot-rod"
+    },
+    {
+      "bucket": "3-code-only-stub",
+      "category": "proper-is-code-only-stub",
+      "showzId": "dx9-k2-ancestrod-hot-rod",
+      "showzStoreId": "0424",
+      "showzName": "K2 Ancestrod Hot Rod",
+      "analyzerProperId": "dx96-dx9-k-02",
+      "properName": "K2",
+      "action": "mergeStub",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "sources": [
+        "https://tfsource.com/dx9/k2-ancestrod/",
+        "showzstore.com product p0424"
+      ],
+      "dropId": "dx96-dx9-k-02",
+      "keepId": "dx9-k2-ancestrod-hot-rod"
+    },
+    {
+      "bucket": "3-code-only-stub",
+      "category": "proper-is-code-only-stub",
+      "showzId": "dx9-k1-freeman-bastion",
+      "showzStoreId": "0189",
+      "showzName": "K1 Freeman (Bastion)",
+      "analyzerProperId": "dx96-dx9-k-01",
+      "properName": "K1",
+      "action": "mergeStub",
+      "reason": "Proper row is a code-only template stub (no name, SKU, image or aliases). Keep the named, sourced Show.Z row, carry the stub msrp and demand plus an id: alias, then drop the stub. Stub release dates are not carried: they are template values that conflict with sources (e.g. MX-IV Abaddon shipped 2026-01, not 2016-10).",
+      "sources": [
+        "https://tfsource.com/dx9/k1-freeman/",
+        "showzstore.com product p0189"
+      ],
+      "dropId": "dx96-dx9-k-01",
+      "keepId": "dx9-k1-freeman-bastion"
+    }
+  ],
+  "provenanceFlags": [
+    "d14ss-* (109 rows, curated-densify): Studio Series numbers/film labels are invented, and several rows carry SKUs/images of other products (e.g. d14ss-aoe-crosshairs \"SS-07 AOE\" = Hasbro 92 TLK Crosshairs; d14ss-dotm-megatron UPC 630509652204 = Hasbro 13 ROTF Megatron; d14ss-tlk-megatron \"SS-35\" but Hasbro 35 is ROTF Jetfire). Needs its own audit against https://tfwiki.net/wiki/Studio_Series.",
+    "na-h10..na-h55 (curated-bbts-wave4): the rest of the NewAge batch is also mostly invented (e.g. na-h13 \"Lucifer / H13 Starscream\" is right, but na-h14 \"Leviathan / H14 Skywarp\" should be Thundercracker, na-h10 \"Abadon / H10 Runabout\" should be Kickback). Out of scope here.",
+    "dw6-* (curated-bbts-wave6), xt6-* (MX-03..MX-30, \"Combiner Limb\", \"Chrome Exclusive\"), dx96-* (K4..K10, \"War in Pocket\" names), ft6-ft-kkk-*: templated sequential batches. Stub MSRPs are flat ($110 for every MX, $75 for every K). Recommend the date-audit invented-row pass covers waves 4 and 6 next.",
+    "threezero rows tz9-tz-13/14/15, tz3-dlx-prime-one, tz7-46, tz-bumblebee-dlx carry polluted alias lists (up to 14 different 3Z codes per row). Alias cleanup not proposed without per-code sources."
+  ]
+}
