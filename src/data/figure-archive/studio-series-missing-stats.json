@@ -1,0 +1,26 @@
+{
+  "dryRun": false,
+  "at": "2026-09-30T21:07:51.079629+00:00",
+  "rowsBefore": 29218,
+  "rowsAfter": 29297,
+  "added": 79,
+  "skippedInPlan": 17,
+  "withSku": 4,
+  "withImage": 3,
+  "withMsrp": 2,
+  "integrity": {
+    "before": {
+      "rows": 29218,
+      "duplicateIds": 0,
+      "danglingAliases": 10,
+      "danglingSetIds": 0
+    },
+    "after": {
+      "rows": 29297,
+      "duplicateIds": 0,
+      "danglingAliases": 10,
+      "danglingSetIds": 0
+    }
+  },
+  "problems": []
+}

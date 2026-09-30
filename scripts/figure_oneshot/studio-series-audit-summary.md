@@ -208,3 +208,13 @@ Dry run: `python3 scripts/studio-series-audit.py`. Apply: `python3 scripts/studi
 - tfc-starscream-ss03: msrp 24.99 looks wrong for Voyager
 - tfss-ss56-shockwave: msrp 44.99 looks wrong for Leader
 - tfss-ss55-scavenger: msrp 44.99 looks wrong for Leader
+
+## Missing releases added (2026-09-30)
+
+`scripts/studio-series-add-missing.py` + `studio-series-missing-plan.json`: 79 of the 96 missing TFWiki releases were added as new `tfss-*` rows (hasbro, Transformers Studio Series). All 79 have year-only dates tagged `date-precision:year`; 11 are 2027 announcements (source `tfwiki-studio-series-announce`). Multipacks are one row each with no set members, so no pack member duplicates an existing single. EAN/image/MSRP were added only where sourced: 4 EANs, 3 images, 2 MSRPs.
+
+17 were skipped:
+- 6 are cancelled per TFWiki: 86-18BB Hound, 94BB Hatchet, Buzzworthy Beetle Bumblebee, Core Optimus Primal, 2024 Deluxe Drift (TLK), and GE Lifeline.
+- 11 already have an existing row carrying their EAN or product code: 70 B-127, 101 Scourge, 07BB Grimlock, Concept Art Rumble, Concept Art Frenzy, MTMTE Perceptor pack, 2026 AOE Bumblebee, 2026 Snarl refresh, 2026 MTMTE Leader Megatron, MTMTE WFC Optimus Prime, and MTMTE WFC Megatron.
+
+New flag: tfss-ss-one-optimus and tfss-ss-one-megatron (labelled SS-112/SS-114 Transformers One Deluxe) carry the EAN and product image of the 2025 MTMTE War for Cybertron Voyager Optimus Prime (5010996346179) and Megatron (5010996346049). They were left unchanged.

@@ -1,0 +1,3389 @@
+{
+ "generatedAt": "2026-09-30",
+ "basis": "studio-series-audit-plan.json \"missing\" (96 TFWiki Hasbro releases with no catalog row)",
+ "rules": [
+  "One row per retail product; multipacks are a single row (no set members), so no pack member duplicates an existing single row.",
+  "releaseDate is year-only (TFWiki gives no month) and tagged date-precision:year.",
+  "sku, imageUrl and msrp only where sourced (sku = EAN confirmed by 2+ sources; image = retailer listing whose filename carries that EAN; msrp = actionfigure411 US retail). Otherwise sku/image omitted, msrp 0.",
+  "Cancelled TFWiki entries are skipped; entries whose EAN/product code already sits on an existing (unsure) row are skipped to avoid a duplicate.",
+  "2027 announcements use source tfwiki-studio-series-announce (announcement feed for the future-date guard)."
+ ],
+ "counts": {
+  "missing": 96,
+  "added": 79,
+  "skipped": 17
+ },
+ "rows": [
+  {
+   "id": "tfss-ss17-shadow-raider",
+   "name": "Shadow Raider",
+   "subtitle": "SS-17 AOE",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2018",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss18-bumblebee",
+   "name": "Bumblebee",
+   "subtitle": "SS-18 Bumblebee (Beetle)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2018",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss23-ksi-sentry",
+   "name": "KSI Sentry",
+   "subtitle": "SS-23 AOE",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2018",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss12-brawl",
+   "name": "Brawl",
+   "subtitle": "SS-12 2007 Film",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2018",
+   "msrp": 0,
+   "scale": "Voyager",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss21-starscream",
+   "name": "Starscream",
+   "subtitle": "SS-21 ROTF",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2018",
+   "msrp": 0,
+   "scale": "Voyager",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss09-thundercracker",
+   "name": "Thundercracker",
+   "subtitle": "SS-09 DOTM",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2018",
+   "msrp": 0,
+   "scale": "Voyager",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Toys\"R\"Us"
+  },
+  {
+   "id": "tfss-ss15-bumblebee-charlie",
+   "name": "Bumblebee & Charlie",
+   "subtitle": "SS-15 Bumblebee (1977 Camaro)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2018",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Toys\"R\"Us (Canada) / online"
+  },
+  {
+   "id": "tfss-ss19-retro-rock-garage",
+   "name": "Retro Rock Garage (Bumblebee, Dairu & Uruaz)",
+   "subtitle": "SS-19 Bumblebee Vol. 1",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2018",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "SDCC 2018 / Hasbro Toy Shop"
+  },
+  {
+   "id": "tfss-ss20-retro-pop-highway",
+   "name": "Retro Pop Highway (Bumblebee, Uriad & Zauru)",
+   "subtitle": "SS-20 Bumblebee Vol. 2",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2018",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Online exclusive"
+  },
+  {
+   "id": "tfss-ss24-25-bumblebee-then-now",
+   "name": "Bumblebee Then & Now Two-Pack",
+   "subtitle": "SS-24 Bumblebee / SS-25 TLK",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2018",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target / BigBadToyStore (US), Kmart (AU)"
+  },
+  {
+   "id": "tfss-ss01-bumblebee-bd-sg-tru",
+   "name": "Battle Damaged Bumblebee",
+   "subtitle": "SS-01 2007 Film (Singapore Toys\"R\"Us giveaway)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2018",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "promo-giveaway"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Toys\"R\"Us Singapore (giveaway)"
+  },
+  {
+   "id": "tfss-ss01-bumblebee-bd-taobao",
+   "name": "Battle Damaged Bumblebee",
+   "subtitle": "SS-01 2007 Film (China TaoBao lucky draw)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2018",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "promo-giveaway"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Hasbro China TaoBao (lucky draw)"
+  },
+  {
+   "id": "tfss-ss08-blackout-camo-taobao",
+   "name": "Blackout (Camouflage)",
+   "subtitle": "SS-08 2007 Film (China TaoBao lucky draw)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2018",
+   "msrp": 0,
+   "scale": "Leader",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "promo-giveaway"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Hasbro China TaoBao (lucky draw)"
+  },
+  {
+   "id": "tfss-ss26-wwii-bumblebee",
+   "name": "WWII Bumblebee",
+   "subtitle": "SS-26 TLK",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2019",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss27-clunker-bumblebee",
+   "name": "Clunker Bumblebee",
+   "subtitle": "SS-27 2007 Film",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2019",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss30-crankcase",
+   "name": "Crankcase",
+   "subtitle": "SS-30 DOTM",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2019",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss41-scrapmetal",
+   "name": "Scrapmetal",
+   "subtitle": "SS-41 ROTF",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2019",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss46-dropkick",
+   "name": "Dropkick",
+   "subtitle": "SS-46 Bumblebee (Javelin)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2019",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss37-rampage",
+   "name": "Rampage",
+   "subtitle": "SS-37 ROTF",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2019",
+   "msrp": 0,
+   "scale": "Voyager",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss42-long-haul",
+   "name": "Long Haul",
+   "subtitle": "SS-42 ROTF",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2019",
+   "msrp": 0,
+   "scale": "Voyager",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss43-ksi-boss",
+   "name": "KSI Boss",
+   "subtitle": "SS-43 AOE",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2019",
+   "msrp": 0,
+   "scale": "Voyager",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss35-jetfire",
+   "name": "Jetfire",
+   "subtitle": "SS-35 ROTF",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2019",
+   "msrp": 0,
+   "scale": "Leader",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss44-optimus-prime",
+   "name": "Optimus Prime",
+   "subtitle": "SS-44 DOTM",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2019",
+   "msrp": 0,
+   "scale": "Leader",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss31-megatron-bd",
+   "name": "Battle Damaged Megatron",
+   "subtitle": "SS-31 ROTF",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2019",
+   "msrp": 0,
+   "scale": "Voyager",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target (US) / Toys\"R\"Us (Canada)"
+  },
+  {
+   "id": "tfss-ss48-megatron-parks",
+   "name": "As Seen In Parks Megatron",
+   "subtitle": "SS-48 Transformers: The Ride 3D",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2019",
+   "msrp": 0,
+   "scale": "Leader",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Universal Studios"
+  },
+  {
+   "id": "tfss-ss36-drift-dinobots",
+   "name": "Drift & Dinobots 'Tops, Pterry & Sharp T",
+   "subtitle": "SS-36 TLK",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2019",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Online exclusive"
+  },
+  {
+   "id": "tfss-ss49-bumblebee-concept-camaro",
+   "name": "Bumblebee",
+   "subtitle": "SS-49 2007 Film (2008 Concept Camaro)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2020",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss15bb-bumblebee-charlie",
+   "name": "Bumblebee & Charlie",
+   "subtitle": "SS-15BB Bumblebee (Buzzworthy Bumblebee)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2020",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "buzzworthy-bumblebee"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss26bb-wwii-bumblebee",
+   "name": "WWII Bumblebee",
+   "subtitle": "SS-26BB TLK (Buzzworthy Bumblebee)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2020",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "buzzworthy-bumblebee"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss40bb-shatter",
+   "name": "Shatter",
+   "subtitle": "SS-40BB Bumblebee (Buzzworthy Bumblebee)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2020",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "buzzworthy-bumblebee"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss74bb-bumblebee-sam",
+   "name": "Bumblebee & Sam Witwicky",
+   "subtitle": "SS-74BB ROTF (Buzzworthy Bumblebee)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2020",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "buzzworthy-bumblebee"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss71-dino",
+   "name": "Dino",
+   "subtitle": "SS-71 DOTM",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2021",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss74-bumblebee-sam",
+   "name": "Bumblebee & Sam Witwicky",
+   "subtitle": "SS-74 ROTF",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2021",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss75-jolt",
+   "name": "Jolt",
+   "subtitle": "SS-75 ROTF",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2021",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss18bb-46bb-bumblebee-dropkick",
+   "name": "Bumblebee vs. Dropkick",
+   "subtitle": "SS-18BB / SS-46BB Bumblebee (Buzzworthy Bumblebee Battle Pack)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2021",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "buzzworthy-bumblebee",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss27bb-28bb-bumblebee-barricade",
+   "name": "Clunker Bumblebee vs. Barricade",
+   "subtitle": "SS-27BB / SS-28BB 2007 Film (Buzzworthy Bumblebee Battle Pack)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2021",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "buzzworthy-bumblebee",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss79bb-02bb-bumblebee-stinger",
+   "name": "High Octane Bumblebee vs. Stinger",
+   "subtitle": "SS-79BB / SS-02BB AOE (Buzzworthy Bumblebee Battle Pack)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2021",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "buzzworthy-bumblebee",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss-core-rumble-blue-2022",
+   "name": "Rumble (Blue)",
+   "subtitle": "The Movie Core 2022",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2022",
+   "msrp": 0,
+   "scale": "Core",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss86-04-hotrod-refresh",
+   "name": "Hot Rod",
+   "subtitle": "SS-86-04 The Movie (package refresh)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2022",
+   "msrp": 0,
+   "scale": "Voyager",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "package-refresh"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss77-nest-bumblebee",
+   "name": "N.E.S.T. Bumblebee",
+   "subtitle": "SS-77 Bumblebee",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2022",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Online exclusive"
+  },
+  {
+   "id": "tfss-ss70bb-b127",
+   "name": "B-127",
+   "subtitle": "SS-70BB Bumblebee (Buzzworthy Bumblebee)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2022",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "buzzworthy-bumblebee"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss-2007-15th-anniversary-autobots",
+   "name": "15th Anniversary Autobot Multipack (Ratchet, Jazz, Ironhide, Optimus Prime & Bumblebee)",
+   "subtitle": "2007 Film Multipack 2022",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2022",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Amazon"
+  },
+  {
+   "id": "tfss-ss-core-bumblebee-dotm",
+   "name": "Bumblebee",
+   "subtitle": "DOTM Core 2023",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2023",
+   "msrp": 0,
+   "scale": "Core",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss96bb-nest-ratchet",
+   "name": "N.E.S.T. Ratchet",
+   "subtitle": "SS-96BB DOTM (Buzzworthy Bumblebee)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2023",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "buzzworthy-bumblebee"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss95bb-nest-bonecrusher",
+   "name": "N.E.S.T. Bonecrusher",
+   "subtitle": "SS-95BB 2007 Film (Buzzworthy Bumblebee)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2023",
+   "msrp": 0,
+   "scale": "Voyager",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "buzzworthy-bumblebee"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss102bb-optimus-prime",
+   "name": "Optimus Prime",
+   "subtitle": "SS-102BB ROTB (Buzzworthy Bumblebee)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2023",
+   "msrp": 0,
+   "scale": "Voyager",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "buzzworthy-bumblebee"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss86-24bb-20bb-ironhide-prowl",
+   "name": "Ironhide & Prowl",
+   "subtitle": "SS-86-24BB / SS-86-20BB The Movie (Buzzworthy Bumblebee)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2023",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "buzzworthy-bumblebee",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss-2007-15th-anniversary-decepticons",
+   "name": "15th Anniversary Decepticon Multipack (Starscream, Blackout & Scorponok, Barricade, Megatron)",
+   "subtitle": "2007 Film Multipack 2023",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2023",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Amazon"
+  },
+  {
+   "id": "tfss-ss106-optimus-primal-refresh",
+   "name": "Optimus Primal",
+   "subtitle": "SS-106 ROTB (package refresh)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2024",
+   "msrp": 0,
+   "scale": "Leader",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "package-refresh"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss86-27-28-brawn-ratchet",
+   "name": "Brawn & Ratchet",
+   "subtitle": "SS-86-27 / SS-86-28 The Movie",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2024",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss-rotf-15th-anniversary-autobots",
+   "name": "ROTF 15th Anniversary Autobot Multipack (Optimus Prime, Jetfire, Chromia, Arcee & Elita-1)",
+   "subtitle": "ROTF Multipack 2024",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2024",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Amazon"
+  },
+  {
+   "id": "tfss-ss112-optimus-prime-bd-hk",
+   "name": "Optimus Prime (Limited Edition Battle Damage Ver.)",
+   "subtitle": "SS-112 Transformers One (Hasbro HK Fans Expo 2024)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2024",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "promo-giveaway"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Hasbro Hong Kong Fans Expo 2024 (giveaway)"
+  },
+  {
+   "id": "tfss-ss-concept-ksi-widow",
+   "name": "Concept Art KSI Widow",
+   "subtitle": "AOE Deluxe 2025",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2025",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "sku-gtin",
+    "sku:tfw2005",
+    "image-sku",
+    "imgsku:cmdstore"
+   ],
+   "source": "tfwiki-studio-series",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0432/8397/2262/files/transformers-studio-series-deluxe-class-2025-wave-3-ksi-widow-5010996323477.jpg?v=1750978046",
+   "sku": "5010996323477"
+  },
+  {
+   "id": "tfss-ss102-optimus-prime-refresh",
+   "name": "Optimus Prime",
+   "subtitle": "SS-102 ROTB (package refresh)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2025",
+   "msrp": 0,
+   "scale": "Voyager",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "package-refresh"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss-devastation-seeker-soldier-mtmte",
+   "name": "Elite Seeker & Ground Soldier",
+   "subtitle": "Devastation Multipack 2025 (MTMTE Collection)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2025",
+   "msrp": 59.99,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "mtmte-collection",
+    "multipack",
+    "sku-gtin",
+    "sku:tfw2005",
+    "image-sku",
+    "imgsku:cmdstore"
+   ],
+   "source": "tfwiki-studio-series",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0432/8397/2262/files/transformers-studio-series-deluxe-class-2-pack-elite-seeker-ground-soldier-5010996318503.jpg?v=1749080360",
+   "sku": "5010996318503",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss-rotf-3pack-fallen-megatron-soundwave",
+   "name": "ROTF 3-Pack (The Fallen, Megatron & Soundwave)",
+   "subtitle": "ROTF Multipack 2025",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2025",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "multipack",
+    "sku-gtin",
+    "sku:tfw2005"
+   ],
+   "source": "tfwiki-studio-series",
+   "sku": "5010996337238",
+   "exclusive": "Amazon"
+  },
+  {
+   "id": "tfss-ss86-31-optimus-prime-bd-hk",
+   "name": "Optimus Prime (Battle Damage Limited Edition)",
+   "subtitle": "SS-86-31 The Movie (Hasbro HK Fans Expo 2025)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2025",
+   "msrp": 0,
+   "scale": "Commander",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "promo-giveaway"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Hasbro Hong Kong Fans Expo 2025 (giveaway)"
+  },
+  {
+   "id": "tfss-ss-devastation-bumblebee",
+   "name": "Bumblebee",
+   "subtitle": "Devastation Deluxe 2026",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2026",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss-86-kranix",
+   "name": "Kranix",
+   "subtitle": "The Movie Deluxe 2026",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2026",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss-86-astrotrain",
+   "name": "Astrotrain",
+   "subtitle": "The Movie Leader 2026",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2026",
+   "msrp": 59.99,
+   "scale": "Leader",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "sku-gtin",
+    "sku:tfw2005",
+    "image-sku",
+    "imgsku:cmdstore"
+   ],
+   "source": "tfwiki-studio-series",
+   "imageUrl": "https://cdn.shopify.com/s/files/1/0432/8397/2262/files/transformers-studio-series-leader-class-2026-wave-2-astrotrain-5010996348708.jpg?v=1771365167",
+   "sku": "5010996348708"
+  },
+  {
+   "id": "tfss-ss-86-blitzwing",
+   "name": "Blitzwing",
+   "subtitle": "The Movie Leader 2026",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2026",
+   "msrp": 0,
+   "scale": "Leader",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year"
+   ],
+   "source": "tfwiki-studio-series"
+  },
+  {
+   "id": "tfss-ss-86-scourge-mtmte-refresh",
+   "name": "Scourge",
+   "subtitle": "The Movie Voyager 2026 (MTMTE Collection, package refresh)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2026",
+   "msrp": 0,
+   "scale": "Voyager",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "mtmte-collection",
+    "package-refresh"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss-86-starscream-mtmte",
+   "name": "Starscream",
+   "subtitle": "The Movie Voyager 2026 (MTMTE Collection)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2026",
+   "msrp": 0,
+   "scale": "Voyager",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "mtmte-collection"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss-86-optimus-mtmte-leader",
+   "name": "Optimus Prime",
+   "subtitle": "The Movie Leader 2026 (MTMTE Collection)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2026",
+   "msrp": 0,
+   "scale": "Leader",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "mtmte-collection"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss-86-insecticons-mtmte",
+   "name": "Insecticons Bombshell, Shrapnel & Kickback",
+   "subtitle": "The Movie Multipack 2026 (MTMTE Collection)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2026",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "mtmte-collection",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Target"
+  },
+  {
+   "id": "tfss-ss-eu-optimus-pulse",
+   "name": "Optimus Prime",
+   "subtitle": "Energon Universe 2026 (Hasbro Pulse)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2026",
+   "msrp": 0,
+   "scale": "",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Hasbro Pulse"
+  },
+  {
+   "id": "tfss-ss-86-grimlock-bd-wheelie-hk",
+   "name": "Grimlock (Battle Damage Limited Edition) & Wheelie",
+   "subtitle": "The Movie 2026 (Hasbro HK Fans Expo 2026)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2026",
+   "msrp": 0,
+   "scale": "",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "promo-giveaway"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Hasbro Hong Kong Fans Expo 2026 (giveaway)"
+  },
+  {
+   "id": "tfss-ss-86-megatron-bd-hk",
+   "name": "Megatron (Battle Damage Limited Edition)",
+   "subtitle": "The Movie 2026 (Hasbro HK Fans Expo 2026)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2026",
+   "msrp": 0,
+   "scale": "",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "exclusive",
+    "promo-giveaway"
+   ],
+   "source": "tfwiki-studio-series",
+   "exclusive": "Hasbro Hong Kong Fans Expo 2026 (giveaway)"
+  },
+  {
+   "id": "tfss-ss-one-shockwave",
+   "name": "Shockwave",
+   "subtitle": "Transformers One Deluxe 2027",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2027",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "announcement"
+   ],
+   "source": "tfwiki-studio-series-announce"
+  },
+  {
+   "id": "tfss-ss-86-wheelie-2027",
+   "name": "Wheelie",
+   "subtitle": "The Movie Deluxe 2027",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2027",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "announcement"
+   ],
+   "source": "tfwiki-studio-series-announce"
+  },
+  {
+   "id": "tfss-ss-86-allicon-refresh",
+   "name": "Allicon",
+   "subtitle": "The Movie Deluxe 2027 (package refresh from Earthrise)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2027",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "announcement",
+    "package-refresh"
+   ],
+   "source": "tfwiki-studio-series-announce"
+  },
+  {
+   "id": "tfss-ss-idw-nautica",
+   "name": "Nautica",
+   "subtitle": "IDW Deluxe 2027",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2027",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "announcement"
+   ],
+   "source": "tfwiki-studio-series-announce"
+  },
+  {
+   "id": "tfss-ss-g1-red-alert",
+   "name": "Red Alert",
+   "subtitle": "The Transformers Deluxe 2027",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2027",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "announcement"
+   ],
+   "source": "tfwiki-studio-series-announce"
+  },
+  {
+   "id": "tfss-ss-aoe-crosshairs-2027",
+   "name": "Crosshairs",
+   "subtitle": "AOE Deluxe 2027",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2027",
+   "msrp": 0,
+   "scale": "Deluxe",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "announcement"
+   ],
+   "source": "tfwiki-studio-series-announce"
+  },
+  {
+   "id": "tfss-ss-tlk-megatron-2027",
+   "name": "Megatron",
+   "subtitle": "TLK Leader 2027",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2027",
+   "msrp": 0,
+   "scale": "Leader",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "announcement"
+   ],
+   "source": "tfwiki-studio-series-announce"
+  },
+  {
+   "id": "tfss-ss-86-swoop-refresh",
+   "name": "Swoop",
+   "subtitle": "The Movie Leader 2027 (package refresh)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2027",
+   "msrp": 0,
+   "scale": "Leader",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "announcement",
+    "package-refresh"
+   ],
+   "source": "tfwiki-studio-series-announce"
+  },
+  {
+   "id": "tfss-ss-aoe-scorn",
+   "name": "Scorn",
+   "subtitle": "AOE Titan 2027",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2027",
+   "msrp": 0,
+   "scale": "Titan",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "announcement"
+   ],
+   "source": "tfwiki-studio-series-announce"
+  },
+  {
+   "id": "tfss-ss-seeker-storm-pack",
+   "name": "Seeker Storm Pack (Sunstorm, Acid Storm, Ion Storm & Nova Storm)",
+   "subtitle": "The Transformers Multipack 2027 (Hasbro Pulse)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2027",
+   "msrp": 0,
+   "scale": "Multipack",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "announcement",
+    "exclusive",
+    "multipack"
+   ],
+   "source": "tfwiki-studio-series-announce",
+   "exclusive": "Hasbro Pulse"
+  },
+  {
+   "id": "tfss-ss-eu-shredhead",
+   "name": "Shredhead",
+   "subtitle": "Energon Universe 2027 (Hasbro Pulse)",
+   "line": "Transformers Studio Series",
+   "company": "hasbro",
+   "kind": "figure",
+   "releaseDate": "2027",
+   "msrp": 0,
+   "scale": "",
+   "demand": 1.0,
+   "tags": [
+    "transformers",
+    "studio-series",
+    "tfwiki",
+    "ss-audit-add",
+    "date-precision:year",
+    "announcement",
+    "exclusive"
+   ],
+   "source": "tfwiki-studio-series-announce",
+   "exclusive": "Hasbro Pulse"
+  }
+ ],
+ "entries": [
+  {
+   "id": "tfss-ss17-shadow-raider",
+   "tfwiki": {
+    "num": "17",
+    "name": "Shadow Raider",
+    "film": "Age of Extinction",
+    "year": 2018,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss18-bumblebee",
+   "tfwiki": {
+    "num": "18",
+    "name": "Bumblebee",
+    "film": "Bumblebee Beetle",
+    "year": 2018,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss23-ksi-sentry",
+   "tfwiki": {
+    "num": "23",
+    "name": "KSI Sentry",
+    "film": "Age of Extinction",
+    "year": 2018,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss12-brawl",
+   "tfwiki": {
+    "num": "12",
+    "name": "Decepticon Brawl",
+    "film": "Transformers",
+    "year": 2018,
+    "class": "Voyager Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss21-starscream",
+   "tfwiki": {
+    "num": "21",
+    "name": "Starscream",
+    "film": "Revenge of the Fallen",
+    "year": 2018,
+    "class": "Voyager Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-86-starscream",
+    "ss4-ss86-starscream",
+    "hs8-hs-24",
+    "hs10-hs-26"
+   ]
+  },
+  {
+   "id": "tfss-ss09-thundercracker",
+   "tfwiki": {
+    "num": "09",
+    "name": "Thundercracker",
+    "film": "Dark of the Moon",
+    "year": 2018,
+    "class": "Voyager Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss15-bumblebee-charlie",
+   "tfwiki": {
+    "num": "15",
+    "name": "Bumblebee",
+    "film": "Bumblebee 1977 Camaro, w/ Charlie",
+    "year": 2018,
+    "class": "Multi-packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss19-retro-rock-garage",
+   "tfwiki": {
+    "num": "19",
+    "name": "Vol. 1 Retro Rock Garage",
+    "film": "Bumblebee",
+    "year": 2018,
+    "class": "Multi-packs",
+    "kind": "multipack",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss20-retro-pop-highway",
+   "tfwiki": {
+    "num": "20",
+    "name": "Vol. 2 Retro Pop Highway",
+    "film": "Bumblebee",
+    "year": 2018,
+    "class": "Multi-packs",
+    "kind": "multipack",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss24-25-bumblebee-then-now",
+   "tfwiki": {
+    "num": null,
+    "name": "Bumblebee Then & Now Two-Pack",
+    "film": null,
+    "year": 2018,
+    "class": "Multi-packs",
+    "kind": "multipack",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss01-bumblebee-bd-sg-tru",
+   "tfwiki": {
+    "num": "01",
+    "name": "Bumblebee",
+    "film": "Transformers 1977 Camaro",
+    "year": 2018,
+    "class": "Multi-packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss01-bumblebee-bd-taobao",
+   "tfwiki": {
+    "num": "01",
+    "name": "Bumblebee",
+    "film": "Transformers 1977 Camaro",
+    "year": 2018,
+    "class": "Multi-packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss08-blackout-camo-taobao",
+   "tfwiki": {
+    "num": "08",
+    "name": "Decepticon Blackout",
+    "film": "Transformers w/ Scorponok",
+    "year": 2018,
+    "class": "Multi-packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss26-wwii-bumblebee",
+   "tfwiki": {
+    "num": "26",
+    "name": "WWII Bumblebee",
+    "film": "The Last Knight",
+    "year": 2019,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss27-clunker-bumblebee",
+   "tfwiki": {
+    "num": "27",
+    "name": "Clunker Bumblebee",
+    "film": "Transformers",
+    "year": 2019,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss30-crankcase",
+   "tfwiki": {
+    "num": "30",
+    "name": "Crankcase",
+    "film": "Dark of the Moon",
+    "year": 2019,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss41-scrapmetal",
+   "tfwiki": {
+    "num": "41",
+    "name": "Constructicon Scrapmetal",
+    "film": "Revenge of the Fallen",
+    "year": 2019,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss46-dropkick",
+   "tfwiki": {
+    "num": "46",
+    "name": "Dropkick",
+    "film": "Bumblebee Javelin",
+    "year": 2019,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss37-rampage",
+   "tfwiki": {
+    "num": "37",
+    "name": "Constructicon Rampage",
+    "film": "Revenge of the Fallen",
+    "year": 2019,
+    "class": "Voyager Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss42-long-haul",
+   "tfwiki": {
+    "num": "42",
+    "name": "Constructicon Long Haul",
+    "film": "Revenge of the Fallen",
+    "year": 2019,
+    "class": "Voyager Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-dotm-longhaul"
+   ]
+  },
+  {
+   "id": "tfss-ss43-ksi-boss",
+   "tfwiki": {
+    "num": "43",
+    "name": "KSI Boss",
+    "film": "Age of Extinction",
+    "year": 2019,
+    "class": "Voyager Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss35-jetfire",
+   "tfwiki": {
+    "num": "35",
+    "name": "Jetfire",
+    "film": "Revenge of the Fallen",
+    "year": 2019,
+    "class": "Leader Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss44-optimus-prime",
+   "tfwiki": {
+    "num": "44",
+    "name": "Optimus Prime",
+    "film": "Dark of the Moon",
+    "year": 2019,
+    "class": "Leader Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ]
+  },
+  {
+   "id": "tfss-ss31-megatron-bd",
+   "tfwiki": {
+    "num": "31",
+    "name": "Battle Damaged Megatron",
+    "film": "Revenge of the Fallen",
+    "year": 2019,
+    "class": "Voyager Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-86-megatron",
+    "ss4-ss86-megatron",
+    "ss5-ss-megatron-tlk",
+    "ss5-ss-megatron-86",
+    "hs10-hs-24",
+    "d14ss-tlk-megatron"
+   ]
+  },
+  {
+   "id": "tfss-ss48-megatron-parks",
+   "tfwiki": {
+    "num": "48",
+    "name": "As Seen In Parks Megatron",
+    "film": "Transformers: The Ride – 3D",
+    "year": 2019,
+    "class": "Leader Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-86-megatron",
+    "ss4-ss86-megatron",
+    "ss5-ss-megatron-tlk",
+    "ss5-ss-megatron-86",
+    "hs10-hs-24",
+    "d14ss-tlk-megatron"
+   ]
+  },
+  {
+   "id": "tfss-ss36-drift-dinobots",
+   "tfwiki": {
+    "num": "36",
+    "name": "Autobot Drift & Dinobot&nbsp;'Tops, Dinobot&nbsp;Pterry, Dinobot&nbsp;Sharp&nbsp;T",
+    "film": "The Last Knight",
+    "year": 2019,
+    "class": "Multi-packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-tlk-drift"
+   ]
+  },
+  {
+   "id": "tfss-ss49-bumblebee-concept-camaro",
+   "tfwiki": {
+    "num": "49",
+    "name": "Bumblebee",
+    "film": "Transformers 2008 Concept Camaro",
+    "year": 2020,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss15bb-bumblebee-charlie",
+   "tfwiki": {
+    "num": "15BB",
+    "name": "Bumblebee",
+    "film": "Bumblebee 1977 Camaro w/ Charlie",
+    "year": 2020,
+    "class": "Buzzworthy Bumblebee Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss26bb-wwii-bumblebee",
+   "tfwiki": {
+    "num": "26BB",
+    "name": "WWII Bumblebee",
+    "film": "The Last Knight",
+    "year": 2020,
+    "class": "Buzzworthy Bumblebee Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss40bb-shatter",
+   "tfwiki": {
+    "num": "40BB",
+    "name": "Shatter",
+    "film": "Bumblebee Plymouth",
+    "year": 2020,
+    "class": "Buzzworthy Bumblebee Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss74bb-bumblebee-sam",
+   "tfwiki": {
+    "num": "74BB",
+    "name": "Bumblebee",
+    "film": "Revenge of the Fallen w/ Sam Witwicky",
+    "year": 2020,
+    "class": "Buzzworthy Bumblebee Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss71-dino",
+   "tfwiki": {
+    "num": "71",
+    "name": "Autobot Dino",
+    "film": "Dark of the Moon",
+    "year": 2021,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss74-bumblebee-sam",
+   "tfwiki": {
+    "num": "74",
+    "name": "Bumblebee",
+    "film": "Revenge of the Fallen w/ Sam Witwicky",
+    "year": 2021,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss75-jolt",
+   "tfwiki": {
+    "num": "75",
+    "name": "Jolt",
+    "film": "Revenge of the Fallen",
+    "year": 2021,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss18bb-46bb-bumblebee-dropkick",
+   "tfwiki": {
+    "num": "18BB",
+    "name": "Bumblebee VS 46BB Dropkick",
+    "film": "Bumblebee",
+    "year": 2021,
+    "class": "Buzzworthy Bumblebee Battle Packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss27bb-28bb-bumblebee-barricade",
+   "tfwiki": {
+    "num": "27BB",
+    "name": "Clunker Bumblebee VS 28BB Barricade",
+    "film": "Transformers",
+    "year": 2021,
+    "class": "Buzzworthy Bumblebee Battle Packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss79bb-02bb-bumblebee-stinger",
+   "tfwiki": {
+    "num": "79BB",
+    "name": "High Octane Bumblebee VS 02BB Decepticon Stinger",
+    "film": "Age of Extinction",
+    "year": 2021,
+    "class": "Buzzworthy Bumblebee Battle Packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss-core-rumble-blue-2022",
+   "tfwiki": {
+    "num": null,
+    "name": "Decepticon Rumble (Blue)",
+    "film": "The Movie",
+    "year": 2022,
+    "class": "Core Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "tfss-ss-core-rumble"
+   ]
+  },
+  {
+   "id": "tfss-ss86-04-hotrod-refresh",
+   "tfwiki": {
+    "num": "86-04",
+    "name": "Autobot Hot Rod",
+    "film": "The Movie, package refresh",
+    "year": 2022,
+    "class": "Voyager Class",
+    "kind": "figure",
+    "refresh": true
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss77-nest-bumblebee",
+   "tfwiki": {
+    "num": "77",
+    "name": "N.E.S.T. Bumblebee",
+    "film": "Bumblebee w/ \"mini figure\"",
+    "year": 2022,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss70bb-b127",
+   "tfwiki": {
+    "num": "70BB",
+    "name": "B-127",
+    "film": "Bumblebee",
+    "year": 2022,
+    "class": "Buzzworthy Bumblebee Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-2007-15th-anniversary-autobots",
+   "tfwiki": {
+    "num": null,
+    "name": "Movie 1 15th Anniversary Multipack",
+    "film": "Transformers",
+    "year": 2022,
+    "class": "Multi-packs",
+    "kind": "multipack",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-core-bumblebee-dotm",
+   "tfwiki": {
+    "num": null,
+    "name": "Bumblebee",
+    "film": "Dark of the Moon",
+    "year": 2023,
+    "class": "Core Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss96bb-nest-ratchet",
+   "tfwiki": {
+    "num": "96BB",
+    "name": "N.E.S.T. Autobot Ratchet",
+    "film": "Dark of the Moon",
+    "year": 2023,
+    "class": "Buzzworthy Bumblebee Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-86-ratchet",
+    "ss4-ss86-ratchet",
+    "ss5-ss-ratchet-86"
+   ]
+  },
+  {
+   "id": "tfss-ss95bb-nest-bonecrusher",
+   "tfwiki": {
+    "num": "95BB",
+    "name": "N.E.S.T. Bonecrusher",
+    "film": "Transformers",
+    "year": 2023,
+    "class": "Buzzworthy Bumblebee Voyager Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss102bb-optimus-prime",
+   "tfwiki": {
+    "num": "102BB",
+    "name": "Optimus Prime",
+    "film": "Rise of the Beasts",
+    "year": 2023,
+    "class": "Buzzworthy Bumblebee Voyager Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ]
+  },
+  {
+   "id": "tfss-ss86-24bb-20bb-ironhide-prowl",
+   "tfwiki": {
+    "num": "86-24BB",
+    "name": "Ironhide / 86-20BB Prowl",
+    "film": "The Movie",
+    "year": 2023,
+    "class": "Buzzworthy Bumblebee multi-packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-86-ironhide",
+    "d14ss-dotm-ironhide"
+   ]
+  },
+  {
+   "id": "tfss-ss-2007-15th-anniversary-decepticons",
+   "tfwiki": {
+    "num": null,
+    "name": "Movie 1 15th Anniversary Decepticon Multipack",
+    "film": "Transformers",
+    "year": 2023,
+    "class": "Multi-packs",
+    "kind": "multipack",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss106-optimus-primal-refresh",
+   "tfwiki": {
+    "num": "106",
+    "name": "Optimus Primal",
+    "film": "Rise of the Beasts, package refresh",
+    "year": 2024,
+    "class": "Leader Class",
+    "kind": "figure",
+    "refresh": true
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss86-27-28-brawn-ratchet",
+   "tfwiki": {
+    "num": "86-27",
+    "name": "Brawn / 86-28 Autobot Ratchet",
+    "film": "The Movie",
+    "year": 2024,
+    "class": "Multi-packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-rotf-15th-anniversary-autobots",
+   "tfwiki": {
+    "num": null,
+    "name": "Revenge of the Fallen 15th Anniversary Autobot Multipack",
+    "film": "Revenge of the Fallen",
+    "year": 2024,
+    "class": "Multi-packs",
+    "kind": "multipack",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss112-optimus-prime-bd-hk",
+   "tfwiki": {
+    "num": "112",
+    "name": "Optimus Prime (Limited Edition Battle Damage Ver.)",
+    "film": "One",
+    "year": 2024,
+    "class": "Multi-packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ]
+  },
+  {
+   "id": "tfss-ss-concept-ksi-widow",
+   "tfwiki": {
+    "num": null,
+    "name": "Concept Art KSI Widow",
+    "film": "Age of Extinction",
+    "year": 2025,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series",
+    "https://www.tfw2005.com/boards/threads/all-currently-known-2025-studio-series-product-numbers-and-barcodes.1279210/",
+    "https://www.1001hobbies.com/mini-figures/826565-hasbro-bm-246151-transformers-ksi-widow-studio-series-deluxe-figur-5010996323477.html",
+    "https://cmdstore.com/products/transformers-studio-series-deluxe-class-2025-wave-3-ksi-widow-5010996323477"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss102-optimus-prime-refresh",
+   "tfwiki": {
+    "num": "102",
+    "name": "Optimus Prime",
+    "film": "Rise of the Beasts, package refresh",
+    "year": 2025,
+    "class": "Voyager Class",
+    "kind": "figure",
+    "refresh": true
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ]
+  },
+  {
+   "id": "tfss-ss-devastation-seeker-soldier-mtmte",
+   "tfwiki": {
+    "num": null,
+    "name": "Elite Seeker / Ground Soldier",
+    "film": "Devastation",
+    "year": 2025,
+    "class": "MTMTE Collection Multi-packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series",
+    "https://www.tfw2005.com/boards/threads/all-currently-known-2025-studio-series-product-numbers-and-barcodes.1279210/",
+    "https://www.actionfigure411.com/transformers/studio-series/multi-packs/devastation-ground-soldier-and-elite-seeker-mtmte-collection-10447.php",
+    "https://cmdstore.com/products/transformers-studio-series-deluxe-class-2-pack-elite-seeker-ground-soldier-5010996318503"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-rotf-3pack-fallen-megatron-soundwave",
+   "tfwiki": {
+    "num": null,
+    "name": "Revenge of the Fallen 3 Pack",
+    "film": "Revenge of the Fallen",
+    "year": 2025,
+    "class": "MTMTE Collection Multi-packs",
+    "kind": "multipack",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series",
+    "https://www.tfw2005.com/boards/threads/all-currently-known-2025-studio-series-product-numbers-and-barcodes.1279210/",
+    "https://www.toysrus.com.hk/en-hk/transformers-studio-series-transformers%3A-revenge-of-the-fallen-converting-action-figure-3-pack-10105178.html"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss86-31-optimus-prime-bd-hk",
+   "tfwiki": {
+    "num": "86-31",
+    "name": "Optimus Prime (Battle Damage Limited Edition)",
+    "film": "The Movie",
+    "year": 2025,
+    "class": "MTMTE Collection Multi-packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ]
+  },
+  {
+   "id": "tfss-ss-devastation-bumblebee",
+   "tfwiki": {
+    "num": null,
+    "name": "Bumblebee",
+    "film": "Devastation",
+    "year": 2026,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-2007-bumblebee",
+    "d14ss-bb-bumblebee",
+    "ss5-ss-bumblebee-bb",
+    "d14ss-tlk-bumblebee",
+    "d14ss-aoe-bumblebee"
+   ]
+  },
+  {
+   "id": "tfss-ss-86-kranix",
+   "tfwiki": {
+    "num": null,
+    "name": "Kranix",
+    "film": "The Movie",
+    "year": 2026,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-86-astrotrain",
+   "tfwiki": {
+    "num": null,
+    "name": "Astrotrain",
+    "film": "The Movie",
+    "year": 2026,
+    "class": "Leader Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series",
+    "https://www.tfw2005.com/boards/threads/all-currently-known-2025-studio-series-product-numbers-and-barcodes.1279210/",
+    "https://www.actionfigure411.com/transformers/studio-series/leader-class/astrotrain-the-movie-13016.php",
+    "https://cmdstore.com/products/transformers-studio-series-leader-class-2026-wave-2-astrotrain-5010996348708"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-86-blitzwing",
+   "tfwiki": {
+    "num": null,
+    "name": "Blitzwing",
+    "film": "The Movie",
+    "year": 2026,
+    "class": "Leader Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-86-scourge-mtmte-refresh",
+   "tfwiki": {
+    "num": null,
+    "name": "Scourge",
+    "film": "The Movie, package refresh",
+    "year": 2026,
+    "class": "MTMTE Collection Voyager Class",
+    "kind": "figure",
+    "refresh": true
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "ss4-ss86-scourge",
+    "ss6-ss-scourge-rotb"
+   ]
+  },
+  {
+   "id": "tfss-ss-86-starscream-mtmte",
+   "tfwiki": {
+    "num": null,
+    "name": "Starscream",
+    "film": "The Movie",
+    "year": 2026,
+    "class": "MTMTE Collection Voyager Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-86-starscream",
+    "ss4-ss86-starscream",
+    "hs8-hs-24",
+    "hs10-hs-26"
+   ]
+  },
+  {
+   "id": "tfss-ss-86-optimus-mtmte-leader",
+   "tfwiki": {
+    "num": null,
+    "name": "Optimus Prime",
+    "film": "The Movie",
+    "year": 2026,
+    "class": "MTMTE Collection Leader Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ]
+  },
+  {
+   "id": "tfss-ss-86-insecticons-mtmte",
+   "tfwiki": {
+    "num": null,
+    "name": "Insecticon Bombshell / Insecticon Shrapnel / Insecticon Kickback",
+    "film": "The Movie",
+    "year": 2026,
+    "class": "MTMTE Collection Multi-packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-eu-optimus-pulse",
+   "tfwiki": {
+    "num": null,
+    "name": "Optimus Prime",
+    "film": "Energon Universe",
+    "year": 2026,
+    "class": "MTMTE Collection Multi-packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "tfc-optimus-rotb",
+    "d14ss-rotb-optimus",
+    "d14ss-86-optimus",
+    "ss4-ss86-optimus",
+    "ss6-ss-optimus-rotb",
+    "hs8-hs-21",
+    "ss5-ss-optimus-86"
+   ]
+  },
+  {
+   "id": "tfss-ss-86-grimlock-bd-wheelie-hk",
+   "tfwiki": {
+    "num": null,
+    "name": "Dinobot Grimlock (Battle Damage Limited Edition) / Autobot Wheelie",
+    "film": "The Movie",
+    "year": 2026,
+    "class": "MTMTE Collection Multi-packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "ss5-ss-grimlock-aoy",
+    "hs8-hs-25"
+   ]
+  },
+  {
+   "id": "tfss-ss-86-megatron-bd-hk",
+   "tfwiki": {
+    "num": null,
+    "name": "Megatron (Battle Damage Limited Edition)",
+    "film": "The Movie",
+    "year": 2026,
+    "class": "MTMTE Collection Multi-packs",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-86-megatron",
+    "ss4-ss86-megatron",
+    "ss5-ss-megatron-tlk",
+    "ss5-ss-megatron-86",
+    "hs10-hs-24",
+    "d14ss-tlk-megatron"
+   ]
+  },
+  {
+   "id": "tfss-ss-one-shockwave",
+   "tfwiki": {
+    "num": null,
+    "name": "Shockwave",
+    "film": "One",
+    "year": 2027,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-bb-shockwave"
+   ]
+  },
+  {
+   "id": "tfss-ss-86-wheelie-2027",
+   "tfwiki": {
+    "num": null,
+    "name": "Autobot Wheelie",
+    "film": "The Movie",
+    "year": 2027,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-86-allicon-refresh",
+   "tfwiki": {
+    "num": null,
+    "name": "Allicon",
+    "film": "The Movie, package refresh from Earthrise",
+    "year": 2027,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": true
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-idw-nautica",
+   "tfwiki": {
+    "num": null,
+    "name": "Autobot Nautica",
+    "film": "IDW Publishing",
+    "year": 2027,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-g1-red-alert",
+   "tfwiki": {
+    "num": null,
+    "name": "Red Alert",
+    "film": "The Transformers",
+    "year": 2027,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-aoe-crosshairs-2027",
+   "tfwiki": {
+    "num": null,
+    "name": "Crosshairs",
+    "film": "Age of Extinction",
+    "year": 2027,
+    "class": "Deluxe Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-tlk-megatron-2027",
+   "tfwiki": {
+    "num": null,
+    "name": "Megatron",
+    "film": "The Last Knight",
+    "year": 2027,
+    "class": "Leader Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": [
+    "d14ss-86-megatron",
+    "ss4-ss86-megatron",
+    "ss5-ss-megatron-tlk",
+    "ss5-ss-megatron-86",
+    "hs10-hs-24",
+    "d14ss-tlk-megatron"
+   ]
+  },
+  {
+   "id": "tfss-ss-86-swoop-refresh",
+   "tfwiki": {
+    "num": null,
+    "name": "Dinobot Swoop",
+    "film": "The Movie, package refresh",
+    "year": 2027,
+    "class": "Leader Class",
+    "kind": "figure",
+    "refresh": true
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-aoe-scorn",
+   "tfwiki": {
+    "num": null,
+    "name": "Scorn",
+    "film": "Age of Extinction",
+    "year": 2027,
+    "class": "Titan Class",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-seeker-storm-pack",
+   "tfwiki": {
+    "num": null,
+    "name": "Seeker Storm Pack",
+    "film": "The Transformers",
+    "year": 2027,
+    "class": "Exclusives",
+    "kind": "multipack",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  },
+  {
+   "id": "tfss-ss-eu-shredhead",
+   "tfwiki": {
+    "num": null,
+    "name": "Shredhead",
+    "film": "Energon Universe",
+    "year": 2027,
+    "class": "Exclusives",
+    "kind": "figure",
+    "refresh": false
+   },
+   "sources": [
+    "https://tfwiki.net/wiki/Studio_Series"
+   ],
+   "possiblyOverlapsUnsure": []
+  }
+ ],
+ "skipped": [
+  {
+   "idx": 31,
+   "num": "70",
+   "name": "B-127",
+   "film": "Bumblebee",
+   "year": 2021,
+   "reason": "Already in catalog: unsure row d14ss-2007-bumblebee carries UPC 630509984558, the 2020-listed Deluxe \"TF6\" Bumblebee = 70 B-127 (Seibertron/TFW2005 Walmart listings). Adding a row would duplicate that GTIN; left for the unsure-row decision."
+  },
+  {
+   "idx": 43,
+   "num": "86-18BB",
+   "name": "Autobot Hound",
+   "film": "The Movie",
+   "year": 2022,
+   "reason": "Cancelled: TFWiki lists 86-18BB Hound under \"Buzzworthy Bumblebee Deluxe Class (canceled)\" (2022); never released in this form."
+  },
+  {
+   "idx": 44,
+   "num": "94BB",
+   "name": "Hatchet",
+   "film": "Dark of the Moon",
+   "year": 2022,
+   "reason": "Cancelled: TFWiki lists 94BB Hatchet under \"Buzzworthy Bumblebee Deluxe Class (canceled)\" (2022); Hatchet later came out as SS-117 (existing row tfss-ss117-hatchet)."
+  },
+  {
+   "idx": 45,
+   "num": null,
+   "name": "Bumblebee",
+   "film": "Bumblebee Beetle",
+   "year": 2022,
+   "reason": "Cancelled: TFWiki lists Buzzworthy Beetle Bumblebee under \"Buzzworthy Bumblebee Deluxe Class (canceled)\" (2022); later released as SS-116 (existing row tfss-ss116-bb-vw)."
+  },
+  {
+   "idx": 47,
+   "num": null,
+   "name": "Optimus Primal",
+   "film": "Rise of the Beasts",
+   "year": 2023,
+   "reason": "Cancelled: TFWiki lists the ROTB Core Class Optimus Primal under \"Cancelled\" (2023)."
+  },
+  {
+   "idx": 48,
+   "num": "101",
+   "name": "Scourge",
+   "film": "Rise of the Beasts",
+   "year": 2023,
+   "reason": "Already in catalog: unsure row ss4-ss86-scourge carries UPC 195166203256 = ROTB Leader Scourge (101) per the 2023 Walmart listing (tformers.com). Not duplicated."
+  },
+  {
+   "idx": 52,
+   "num": "07BB",
+   "name": "Grimlock",
+   "film": "Age of Extinction",
+   "year": 2023,
+   "reason": "Already in catalog: unsure row hs8-hs-25 carries EAN 5010996137982 = 07BB Buzzworthy Leader Grimlock (Target TCIN listing via tformers.com). Not duplicated."
+  },
+  {
+   "idx": 55,
+   "num": null,
+   "name": "Concept Art Decepticon Rumble",
+   "film": "Bumblebee",
+   "year": 2024,
+   "reason": "Already in catalog: unsure row tfss-ss-core-rumble carries EAN 5010996208316 = Core Concept Art Rumble (Seibertron/cmdstore). Not duplicated."
+  },
+  {
+   "idx": 56,
+   "num": null,
+   "name": "Concept Art Decepticon Frenzy",
+   "film": "Bumblebee",
+   "year": 2024,
+   "reason": "Already in catalog: unsure row d14ss-2007-frenzy carries EAN 5010996263681 = Core Concept Art Frenzy (F8753; Hasbro instructions/retailers). Not duplicated."
+  },
+  {
+   "idx": 57,
+   "num": null,
+   "name": "Drift",
+   "film": "The Last Knight",
+   "year": 2024,
+   "reason": "Cancelled: TFWiki lists 2024 Deluxe Drift (The Last Knight) under \"Canceled\"."
+  },
+  {
+   "idx": 58,
+   "num": null,
+   "name": "Gamer Edition Lifeline",
+   "film": "Reactivate",
+   "year": 2024,
+   "reason": "Cancelled: TFWiki lists 2024 Deluxe Gamer Edition Lifeline (Reactivate) under \"Canceled\"."
+  },
+  {
+   "idx": 65,
+   "num": null,
+   "name": "Optimus Prime",
+   "film": "War for Cybertron",
+   "year": 2025,
+   "reason": "Already in catalog (by EAN + image): EAN 5010996346179 (G1789 MTMTE WFC Voyager Optimus Prime; TFW2005, actionfigure411) and its cmdstore product image sit on tfss-ss-one-optimus (labelled SS-112 Transformers One Deluxe). Not duplicated; that row's SKU/image vs label needs a decision."
+  },
+  {
+   "idx": 66,
+   "num": null,
+   "name": "Megatron",
+   "film": "War for Cybertron",
+   "year": 2025,
+   "reason": "Already in catalog (by EAN + image): EAN 5010996346049 (G1790 MTMTE WFC Voyager Megatron; TFW2005, actionfigure411) and its cmdstore product image sit on tfss-ss-one-megatron (labelled SS-114 Transformers One Deluxe). Not duplicated; that row's SKU/image vs label needs a decision."
+  },
+  {
+   "idx": 68,
+   "num": null,
+   "name": "Autobot Perceptor / Ratbat / Ramhorn",
+   "film": "The Movie",
+   "year": 2025,
+   "reason": "Already in catalog: unsure row ss4-ss86-perceptor carries EAN 5010996318480 = MTMTE Perceptor/Ratbat/Ramhorn (G1371; TFW2005, Target TCIN). Not duplicated."
+  },
+  {
+   "idx": 73,
+   "num": null,
+   "name": "Bumblebee",
+   "film": "Age of Extinction",
+   "year": 2026,
+   "reason": "Already in catalog: unsure row ss5-ss-bumblebee-bb carries EAN 5010996380524 = 2026 AOE Deluxe Bumblebee (HASG2199). Not duplicated."
+  },
+  {
+   "idx": 75,
+   "num": null,
+   "name": "Dinobot Snarl",
+   "film": "The Movie, package refresh",
+   "year": 2026,
+   "reason": "Already in catalog: unsure row d14ss-aoe-snarl carries code HSG2188 = G2188 \"TFTM\" Dinobot Snarl (refresh) (TFW2005 2025+ product-number list). Not duplicated."
+  },
+  {
+   "idx": 79,
+   "num": null,
+   "name": "Megatron",
+   "film": "The Movie",
+   "year": 2026,
+   "reason": "Already in catalog: unsure row ss4-ss86-megatron carries EAN 5010996367884 = 2026 MTMTE/40th anniversary Leader Megatron (retailers); ss5-ss-megatron-86 carries G2255 (same product). Not duplicated."
+  }
+ ]
+}
