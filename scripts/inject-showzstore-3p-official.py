@@ -512,6 +512,35 @@ def figure_id(company: str, codes: list[str], name: str) -> str:
     return rid[:78].strip("-") or f"{company}-showz"
 
 
+DEPOSIT_IDS_PATH = SCRIPTS / "figure_oneshot/showz-deposit-msrp-reset.json"
+
+
+def _deposit_showz_ids() -> set[str]:
+    if not DEPOSIT_IDS_PATH.exists():
+        return set()
+    rows = json.loads(DEPOSIT_IDS_PATH.read_text()).get("rows") or []
+    return {str(r.get("showzId")) for r in rows if r.get("showzId")}
+
+
+DEPOSIT_SHOWZ_IDS = _deposit_showz_ids()
+
+
+def listing_msrp(raw: dict) -> float:
+    """Full price only. Pre-order cards read "Dep. $10.00 / Full Unknown"; a deposit is not an MSRP.
+
+    Uses the crawl's price_text / price_is_deposit when present, and the 2026-09-23
+    deposit list for packs crawled before those fields existed. Unknown -> 0.0.
+    """
+    text = str(raw.get("price_text") or "")
+    full = re.search(r"Full\s*\$\s*([\d,]+(?:\.\d+)?)", text)
+    if full:
+        return float(full.group(1).replace(",", ""))
+    if raw.get("price_is_deposit") or re.search(r"\bDep\.", text) or str(raw.get("id")) in DEPOSIT_SHOWZ_IDS:
+        return 0.0
+    price = raw.get("price_usd")
+    return float(price) if isinstance(price, (int, float)) else 0.0
+
+
 def normalize_listing(
     raw: dict,
     *,
@@ -536,8 +565,7 @@ def normalize_listing(
     image = raw.get("image") or ""
     if not (isinstance(image, str) and image.startswith("http")):
         image = ""
-    price = raw.get("price_usd")
-    msrp = float(price) if isinstance(price, (int, float)) else 0.0
+    msrp = listing_msrp(raw)
     return {
         "showzId": str(raw["id"]),
         "url": raw.get("url") or "",

@@ -1,0 +1,797 @@
+{
+  "generated": "2026-09-29",
+  "generatedFrom": {
+    "repo": "/workspace/showz-dupes/wt",
+    "head": "2983c6b1a17b242bb88d9bbaf3a732894ad18e94"
+  },
+  "note": "High-confidence Showzstore duplicates only (same company or Takara-made line on a Hasbro-labelled catalog row, identical product code, identical variant flags, character name agrees, single best proper row). Edit this list before --apply if any pair looks wrong.",
+  "pairs": [
+    {
+      "dropId": "takaratomy-mp-57-skyfire",
+      "keepId": "tfmp-mp57",
+      "dropName": "MP-57 Skyfire",
+      "keepName": "Skyfire",
+      "keepSubtitle": "MP-57 Jetfire",
+      "showzStoreIds": [
+        "4156"
+      ],
+      "codes": [
+        "MP57"
+      ],
+      "reason": "code MP57; name 1/1 ['skyfire']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-d-01-missing-link-soundwave",
+      "keepId": "afmon-hasbro-transformers-missing-link-d-01-soundwave-hsg4391",
+      "dropName": "Missing Link D-01 Soundwave",
+      "keepName": "Transformers Missing Link D-01 Soundwave",
+      "keepSubtitle": "Transformers Missing Link D-01 Soundwave",
+      "showzStoreIds": [
+        "8036"
+      ],
+      "codes": [
+        "D1"
+      ],
+      "reason": "code D1; name 1/1 ['soundwave']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-d-02-missing-link-soundwave-anime-version",
+      "keepId": "afmon-hasbro-transformers-missing-link-d-02-soundwave-anime-type-hsg4392",
+      "dropName": "Missing Link D-02 Soundwave Anime Version",
+      "keepName": "Transformers Missing Link D-02 Soundwave (Anime Type)",
+      "keepSubtitle": "Anime Type",
+      "showzStoreIds": [
+        "8037"
+      ],
+      "codes": [
+        "D2"
+      ],
+      "reason": "code D2; name 1/1 ['soundwave']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-og-03-overgear-optimus-prime",
+      "keepId": "afmon-hasbro-transformers-overgear-series-og-03-optim-hsg4385",
+      "dropName": "Overgear OG-03 Optimus Prime",
+      "keepName": "Optimus Prime",
+      "keepSubtitle": "Transformers Overgear OG-03",
+      "showzStoreIds": [
+        "7864"
+      ],
+      "codes": [
+        "OG3"
+      ],
+      "reason": "code OG3; name 3/3 ['overgear', 'optimus', 'prime']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-c-12-missing-link-grimlock",
+      "keepId": "afmon-hasbro-c-12-grimlock-hsg5243",
+      "dropName": "Missing Link C-12 Grimlock",
+      "keepName": "C-12 Grimlock",
+      "keepSubtitle": "Transformers Missing Link",
+      "showzStoreIds": [
+        "7566"
+      ],
+      "codes": [
+        "C12"
+      ],
+      "reason": "code C12; name 1/1 ['grimlock']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mpm-15-decepticon-brawl",
+      "keepId": "tfmpm-mpm15",
+      "dropName": "MPM-15 Decepticon Brawl",
+      "keepName": "Brawl",
+      "keepSubtitle": "MPM-15",
+      "showzStoreIds": [
+        "6188"
+      ],
+      "codes": [
+        "MPM15"
+      ],
+      "reason": "code MPM15; name 1/2 ['brawl']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-59-rhinox",
+      "keepId": "tfmp-mp59",
+      "dropName": "MP-59 Rhinox",
+      "keepName": "Rhinox",
+      "keepSubtitle": "MP-59 Beast Wars",
+      "showzStoreIds": [
+        "5615"
+      ],
+      "codes": [
+        "MP59"
+      ],
+      "reason": "code MP59; name 1/1 ['rhinox']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-44s-optimus-prime",
+      "keepId": "tfmp-mp44s",
+      "dropName": "MP-44S Optimus Prime",
+      "keepName": "Optimus Prime",
+      "keepSubtitle": "MP-44S",
+      "showzStoreIds": [
+        "5338"
+      ],
+      "codes": [
+        "MP44S"
+      ],
+      "reason": "code MP44S; name 2/2 ['optimus', 'prime']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mpm-14-bonecrusher",
+      "keepId": "tfmpm-mpm14",
+      "dropName": "MPM-14 Bonecrusher",
+      "keepName": "Bonecrusher",
+      "keepSubtitle": "MPM-14",
+      "showzStoreIds": [
+        "5360"
+      ],
+      "codes": [
+        "MPM14"
+      ],
+      "reason": "code MPM14; name 1/1 ['bonecrusher']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-58-hoist",
+      "keepId": "tfmp-mp58",
+      "dropName": "MP-58 Hoist",
+      "keepName": "Hoist",
+      "keepSubtitle": "MP-58",
+      "showzStoreIds": [
+        "5205"
+      ],
+      "codes": [
+        "MP58"
+      ],
+      "reason": "code MP58; name 1/1 ['hoist']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-48-dark-amber-leo-prime",
+      "keepId": "tfmp-mp48p",
+      "dropName": "MP-48+ Dark Amber Leo Prime",
+      "keepName": "Dark Amber Leo Prime",
+      "keepSubtitle": "MP-48+",
+      "showzStoreIds": [
+        "4244"
+      ],
+      "codes": [
+        "MP48+"
+      ],
+      "reason": "code MP48+; name 4/4 ['dark', 'amber', 'leo', 'prime']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mpm-13-blackout",
+      "keepId": "tfmpm-mpm13",
+      "dropName": "MPM-13 Blackout",
+      "keepName": "Blackout",
+      "keepSubtitle": "MPM-13",
+      "showzStoreIds": [
+        "4082"
+      ],
+      "codes": [
+        "MPM13"
+      ],
+      "reason": "code MPM13; name 1/1 ['blackout']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-56-trailbreaker",
+      "keepId": "tfmp-mp56",
+      "dropName": "MP-56 Trailbreaker",
+      "keepName": "Trailbreaker",
+      "keepSubtitle": "MP-56",
+      "showzStoreIds": [
+        "4085"
+      ],
+      "codes": [
+        "MP56"
+      ],
+      "reason": "code MP56; name 1/1 ['trailbreaker']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-55-nightbird",
+      "keepId": "tfmp-mp55",
+      "dropName": "MP-55 Nightbird",
+      "keepName": "Nightbird Shadow",
+      "keepSubtitle": "MP-55",
+      "showzStoreIds": [
+        "3339"
+      ],
+      "codes": [
+        "MP55"
+      ],
+      "reason": "code MP55; name 1/1 ['nightbird']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-53-skids",
+      "keepId": "tfmp-mp53",
+      "dropName": "MP-53 Skids",
+      "keepName": "Skids",
+      "keepSubtitle": "MP-53",
+      "showzStoreIds": [
+        "3079"
+      ],
+      "codes": [
+        "MP53"
+      ],
+      "reason": "code MP53; name 1/1 ['skids']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-54-reboost",
+      "keepId": "tfmp-mp54",
+      "dropName": "MP-54 Reboost",
+      "keepName": "Reboost",
+      "keepSubtitle": "MP-54",
+      "showzStoreIds": [
+        "3080"
+      ],
+      "codes": [
+        "MP54"
+      ],
+      "reason": "code MP54; name 1/1 ['reboost']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-52-thundercracker",
+      "keepId": "tfmp-mp52tc",
+      "dropName": "MP-52+ Thundercracker",
+      "keepName": "Thundercracker",
+      "keepSubtitle": "MP-52+ Thundercracker",
+      "showzStoreIds": [
+        "2873"
+      ],
+      "codes": [
+        "MP52+"
+      ],
+      "reason": "code MP52+; name 1/1 ['thundercracker']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-52-starscream-version-2-0",
+      "keepId": "tfmp-mp52",
+      "dropName": "MP-52 Starscream Version 2.0",
+      "keepName": "Starscream",
+      "keepSubtitle": "MP-52 Ver.2.0",
+      "showzStoreIds": [
+        "2450"
+      ],
+      "codes": [
+        "MP52"
+      ],
+      "reason": "code MP52; name 1/1 ['starscream']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-50-tigatron",
+      "keepId": "tfmp-mp50",
+      "dropName": "MP-50 Tigatron",
+      "keepName": "Tigatron",
+      "keepSubtitle": "MP-50 Beast Wars",
+      "showzStoreIds": [
+        "2049"
+      ],
+      "codes": [
+        "MP50"
+      ],
+      "reason": "code MP50; name 1/1 ['tigatron']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-39-spinout",
+      "keepId": "tfmp-mp39p",
+      "dropName": "MP-39+ Spinout",
+      "keepName": "Spinout",
+      "keepSubtitle": "MP-39+",
+      "showzStoreIds": [
+        "2203"
+      ],
+      "codes": [
+        "MP39+"
+      ],
+      "reason": "code MP39+; name 1/1 ['spinout']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-51-arcee",
+      "keepId": "tfmp-mp51",
+      "dropName": "MP-51 Arcee",
+      "keepName": "Arcee",
+      "keepSubtitle": "MP-51",
+      "showzStoreIds": [
+        "2209"
+      ],
+      "codes": [
+        "MP51"
+      ],
+      "reason": "code MP51; name 1/1 ['arcee']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-49-black-convoy",
+      "keepId": "tfmp-mp49",
+      "dropName": "MP-49 Black Convoy",
+      "keepName": "Nemesis Prime",
+      "keepSubtitle": "MP-49 Black Convoy",
+      "showzStoreIds": [
+        "1860"
+      ],
+      "codes": [
+        "MP49"
+      ],
+      "reason": "code MP49; name 2/2 ['black', 'convoy']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-19-smokescreen",
+      "keepId": "tfmp-mp19p",
+      "dropName": "MP-19+ Smokescreen",
+      "keepName": "Smokescreen",
+      "keepSubtitle": "MP-19+",
+      "showzStoreIds": [
+        "1994"
+      ],
+      "codes": [
+        "MP19+"
+      ],
+      "reason": "code MP19+; name 1/1 ['smokescreen']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-48-lio-convoy-w-bonus",
+      "keepId": "tfmp-mp48",
+      "dropName": "MP-48 Lio Convoy w/ Bonus",
+      "keepName": "Lio Convoy",
+      "keepSubtitle": "MP-48 Beast Wars",
+      "showzStoreIds": [
+        "2018"
+      ],
+      "codes": [
+        "MP48"
+      ],
+      "reason": "code MP48; name 2/2 ['lio', 'convoy']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-47-hound",
+      "keepId": "tfmp-mp47",
+      "dropName": "MP-47 Hound",
+      "keepName": "Hound",
+      "keepSubtitle": "MP-47",
+      "showzStoreIds": [
+        "1642"
+      ],
+      "codes": [
+        "MP47"
+      ],
+      "reason": "code MP47; name 1/1 ['hound']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-43-mp43-beast-wars-bw-megatron-w-o-coin",
+      "keepId": "tfmp-mp43",
+      "dropName": "MP-43 MP43 Beast Wars BW Megatron w/o Coin",
+      "keepName": "Megatron",
+      "keepSubtitle": "MP-43 Beast Wars",
+      "showzStoreIds": [
+        "1433"
+      ],
+      "codes": [
+        "MP43"
+      ],
+      "reason": "code MP43; name 1/1 ['megatron']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-34-cheetor",
+      "keepId": "tfmp-mp34",
+      "dropName": "MP-34 Cheetor",
+      "keepName": "Cheetor",
+      "keepSubtitle": "MP-34 Beast Wars",
+      "showzStoreIds": [
+        "1157"
+      ],
+      "codes": [
+        "MP34"
+      ],
+      "reason": "code MP34; name 1/1 ['cheetor']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mpm-06-ironhide-movie-series",
+      "keepId": "tfmpm-mpm06",
+      "dropName": "MPM-06 Ironhide Movie Series",
+      "keepName": "Ironhide",
+      "keepSubtitle": "MPM-06",
+      "showzStoreIds": [
+        "1160"
+      ],
+      "codes": [
+        "MPM6"
+      ],
+      "reason": "code MPM6; name 1/1 ['ironhide']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-45-mp45-bumblebee-g1-version-2-0-ver-2",
+      "keepId": "tfmp-mp45",
+      "dropName": "MP-45 MP45 Bumblebee G1 Version 2.0 Ver. 2",
+      "keepName": "Bumblebee",
+      "keepSubtitle": "MP-45 Ver.2.0",
+      "showzStoreIds": [
+        "1242"
+      ],
+      "codes": [
+        "MP45"
+      ],
+      "reason": "code MP45; name 1/1 ['bumblebee']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-34s-cheetor-shadow-panther",
+      "keepId": "tfmp-mp34s",
+      "dropName": "MP-34S Cheetor Shadow Panther",
+      "keepName": "Shadow Panther",
+      "keepSubtitle": "MP-34S Beast Wars",
+      "showzStoreIds": [
+        "0970"
+      ],
+      "codes": [
+        "MP34S"
+      ],
+      "reason": "code MP34S; name 2/3 ['shadow', 'panther']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mpm-07-masterpiece-bumblebee",
+      "keepId": "tfmpm-mpm07",
+      "dropName": "MPM-07 Masterpiece Bumblebee",
+      "keepName": "Bumblebee",
+      "keepSubtitle": "MPM-07",
+      "showzStoreIds": [
+        "1051"
+      ],
+      "codes": [
+        "MPM7"
+      ],
+      "reason": "code MPM7; name 1/1 ['bumblebee']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-42-masterpiece-cordon-diaclone-sunstreaker",
+      "keepId": "tfmp-mp42",
+      "dropName": "MP-42 Masterpiece Cordon Diaclone Sunstreaker",
+      "keepName": "Cordon",
+      "keepSubtitle": "MP-42",
+      "showzStoreIds": [
+        "1083"
+      ],
+      "codes": [
+        "MP42"
+      ],
+      "reason": "code MP42; name 1/3 ['cordon']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-44-optimus-prime-version-3-0",
+      "keepId": "tfmp-mp44",
+      "dropName": "MP-44 Optimus Prime Version 3.0",
+      "keepName": "Optimus Prime",
+      "keepSubtitle": "MP-44 Convoy 3.0",
+      "showzStoreIds": [
+        "1143"
+      ],
+      "codes": [
+        "MP44"
+      ],
+      "reason": "code MP44; name 2/2 ['optimus', 'prime']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-29-destron-laserwave-shockwave",
+      "keepId": "tfmp-mp29p",
+      "dropName": "MP-29+Destron Laserwave Shockwave",
+      "keepName": "Shockwave",
+      "keepSubtitle": "MP-29+",
+      "showzStoreIds": [
+        "1144"
+      ],
+      "codes": [
+        "MP29+"
+      ],
+      "reason": "code MP29+; name 1/2 ['shockwave']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-32-optimus-primal-beast-convoy-beast-war",
+      "keepId": "tfmp-mp32",
+      "dropName": "MP-32 Optimus Primal Beast Convoy Beast War",
+      "keepName": "Optimus Primal",
+      "keepSubtitle": "MP-32 Beast Wars",
+      "showzStoreIds": [
+        "0912"
+      ],
+      "codes": [
+        "MP32"
+      ],
+      "reason": "code MP32; name 2/3 ['optimus', 'primal']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-10b-mp10b-optimus-prime-black-convoy-version",
+      "keepId": "tfmp-mp10b",
+      "dropName": "MP-10B MP10B Optimus Prime Black Convoy Version",
+      "keepName": "Nemesis Prime",
+      "keepSubtitle": "MP-10B Black Convoy",
+      "showzStoreIds": [
+        "0772"
+      ],
+      "codes": [
+        "MP10B"
+      ],
+      "reason": "code MP10B; name 3/4 ['prime', 'black', 'convoy']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-21-mp21-bumblebee",
+      "keepId": "tfmp-mp21",
+      "dropName": "MP-21 Mp21 Bumblebee",
+      "keepName": "Bumblebee",
+      "keepSubtitle": "MP-21 Bumble",
+      "showzStoreIds": [
+        "0611"
+      ],
+      "codes": [
+        "MP21"
+      ],
+      "reason": "code MP21; name 1/1 ['bumblebee']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-39-sunstreaker",
+      "keepId": "tfmp-mp39",
+      "dropName": "MP-39 Sunstreaker",
+      "keepName": "Sunstreaker",
+      "keepSubtitle": "MP-39",
+      "showzStoreIds": [
+        "0496"
+      ],
+      "codes": [
+        "MP39"
+      ],
+      "reason": "code MP39; name 1/1 ['sunstreaker']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mpm-03-bumblebee",
+      "keepId": "tfmpm-mpm03",
+      "dropName": "MPM-03 Bumblebee",
+      "keepName": "Bumblebee",
+      "keepSubtitle": "MPM-03",
+      "showzStoreIds": [
+        "0164"
+      ],
+      "codes": [
+        "MPM3"
+      ],
+      "reason": "code MPM3; name 1/1 ['bumblebee']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mpm04-mpm-04-optimus-prime-movie-series",
+      "keepId": "tfmpm-mpm04",
+      "dropName": "MPM04 MPM-04 Optimus Prime Movie Series",
+      "keepName": "Optimus Prime",
+      "keepSubtitle": "MPM-04",
+      "showzStoreIds": [
+        "0222"
+      ],
+      "codes": [
+        "MPM4"
+      ],
+      "reason": "code MPM4; name 2/2 ['optimus', 'prime']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-37-artfire",
+      "keepId": "tfmp-mp37",
+      "dropName": "MP-37 Artfire",
+      "keepName": "Artfire",
+      "keepSubtitle": "MP-37",
+      "showzStoreIds": [
+        "0247"
+      ],
+      "codes": [
+        "MP37"
+      ],
+      "reason": "code MP37; name 1/1 ['artfire']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "takaratomy-mp-40-targetmaster-hot-rodimus",
+      "keepId": "tfmp-mp40",
+      "dropName": "MP-40 Targetmaster Hot Rodimus",
+      "keepName": "Hot Rod",
+      "keepSubtitle": "MP-40 Targetmaster",
+      "showzStoreIds": [
+        "0248"
+      ],
+      "codes": [
+        "MP40"
+      ],
+      "reason": "code MP40; name 2/3 ['targetmaster', 'hot']; company takaratomy(showz) vs hasbro(proper)"
+    },
+    {
+      "dropId": "threezero-3z0885-transformers-rise-of-the-beasts-dlx-optimu",
+      "keepId": "tz-optimus-primal",
+      "dropName": "3Z0885 Transformers Rise of the Beasts DLX Optimus Primal",
+      "keepName": "Optimus Primal",
+      "keepSubtitle": "ROTB DLX",
+      "showzStoreIds": [
+        "7426"
+      ],
+      "codes": [
+        "3Z885"
+      ],
+      "reason": "code 3Z885; name 3/5 ['dlx', 'optimus', 'primal']"
+    },
+    {
+      "dropId": "threezero-3z0943-transformers-bumblebee-dlx-starscream",
+      "keepId": "tz7-44",
+      "dropName": "3Z0943 Transformers Bumblebee DLX Starscream",
+      "keepName": "DLX Starscream",
+      "keepSubtitle": "Transformers",
+      "showzStoreIds": [
+        "7360"
+      ],
+      "codes": [
+        "3Z943"
+      ],
+      "reason": "code 3Z943; name 2/3 ['dlx', 'starscream']"
+    },
+    {
+      "dropId": "uniquetoys-m-05-ut-rage-winterchill-vortex-ragnaros",
+      "keepId": "uniquetoys-ut-m05",
+      "dropName": "UT M-05 Rage Winterchill Vortex Ragnaros",
+      "keepName": "Rage Winterchill",
+      "keepSubtitle": "UT-M05 — Dinobot homage",
+      "showzStoreIds": [
+        "0667"
+      ],
+      "codes": [
+        "M5"
+      ],
+      "reason": "code M5; name 2/4 ['rage', 'winterchill']"
+    },
+    {
+      "dropId": "uniquetoys-r-11-buzz-guardian-bumblebee",
+      "keepId": "uniquetoys-ut-r11",
+      "dropName": "R-11 Buzz Guardian Bumblebee",
+      "keepName": "Buzz Guardian",
+      "keepSubtitle": "UT-R11 — Bumblebee homage",
+      "showzStoreIds": [
+        "7806"
+      ],
+      "codes": [
+        "R11"
+      ],
+      "reason": "code R11; name 3/3 ['buzz', 'guardian', 'bumblebee']"
+    },
+    {
+      "dropId": "uniquetoys-r-07-dumber-mudflap",
+      "keepId": "uniquetoys-ut-r07",
+      "dropName": "R-07 Dumber Mudflap",
+      "keepName": "Dumber",
+      "keepSubtitle": "UT-R07 — Huffer homage",
+      "showzStoreIds": [
+        "7241"
+      ],
+      "codes": [
+        "R7"
+      ],
+      "reason": "code R7; name 1/2 ['dumber']"
+    },
+    {
+      "dropId": "uniquetoys-r-08-dumb-skids",
+      "keepId": "uniquetoys-ut-r08",
+      "dropName": "R-08 Dumb Skids",
+      "keepName": "Dumb",
+      "keepSubtitle": "UT-R08 — Huffer homage",
+      "showzStoreIds": [
+        "6845"
+      ],
+      "codes": [
+        "R8"
+      ],
+      "reason": "code R8; name 1/2 ['dumb']"
+    },
+    {
+      "dropId": "magicsquare-ms-g04-truck-boy-optimus-prime",
+      "keepId": "magicsquare-g04",
+      "dropName": "MS-G04 Truck Boy Optimus Prime",
+      "keepName": "Truck Boy",
+      "keepSubtitle": "G04 — Optimus Prime homage",
+      "showzStoreIds": [
+        "5594"
+      ],
+      "codes": [
+        "G4",
+        "MSG4"
+      ],
+      "reason": "code G4; name 4/4 ['truck', 'boy', 'optimus', 'prime']"
+    },
+    {
+      "dropId": "uniquetoys-r-05-desperado-megatron-original-version",
+      "keepId": "uniquetoys-ut-r05",
+      "dropName": "R-05 Desperado Megatron Original Version",
+      "keepName": "Desperado",
+      "keepSubtitle": "UT-R05 — MP Starscream homage",
+      "showzStoreIds": [
+        "4992"
+      ],
+      "codes": [
+        "R5"
+      ],
+      "reason": "code R5; name 1/2 ['desperado']"
+    },
+    {
+      "dropId": "magicsquare-ms-g03-blueberry-girl-chromia",
+      "keepId": "magicsquare-g03",
+      "dropName": "MS-G03 Blueberry Girl Chromia",
+      "keepName": "Blueberry Girl",
+      "keepSubtitle": "G03 — Arcee homage",
+      "showzStoreIds": [
+        "4851"
+      ],
+      "codes": [
+        "G3",
+        "MSG3"
+      ],
+      "reason": "code G3; name 2/3 ['blueberry', 'girl']"
+    },
+    {
+      "dropId": "magicsquare-ms-g02-little-ninja-nightbird",
+      "keepId": "magicsquare-g02",
+      "dropName": "MS-G02 Little Ninja Nightbird",
+      "keepName": "Little Ninja",
+      "keepSubtitle": "G02 — Nightbird homage",
+      "showzStoreIds": [
+        "3205"
+      ],
+      "codes": [
+        "G2",
+        "MSG2"
+      ],
+      "reason": "code G2; name 3/3 ['little', 'ninja', 'nightbird']"
+    },
+    {
+      "dropId": "newage-na-h2-h-2-manero-jazz",
+      "keepId": "na-h2",
+      "dropName": "NA H2 H-2 Manero Jazz",
+      "keepName": "Manero",
+      "keepSubtitle": "H2 Jazz",
+      "showzStoreIds": [
+        "1298"
+      ],
+      "codes": [
+        "H2"
+      ],
+      "reason": "code H2; name 2/2 ['manero', 'jazz']"
+    },
+    {
+      "dropId": "uniquetoys-r-03-dragoon-aoe-tlk-megatron",
+      "keepId": "uniquetoys-utr-03",
+      "dropName": "R-03 Dragoon AOE/TLK Megatron",
+      "keepName": "Dragoon",
+      "keepSubtitle": "UTR-03 — Springer homage",
+      "showzStoreIds": [
+        "0991"
+      ],
+      "codes": [
+        "R3"
+      ],
+      "reason": "code R3; name 1/4 ['dragoon']"
+    },
+    {
+      "dropId": "uniquetoys-y-03-ut-y03-sworder-sandstorm",
+      "keepId": "uniquetoys-ut-y03",
+      "dropName": "UT Y-03 Y03 Sworder Sandstorm",
+      "keepName": "Sworder",
+      "keepSubtitle": "UT-Y03 — Drift homage",
+      "showzStoreIds": [
+        "0782"
+      ],
+      "codes": [
+        "Y3"
+      ],
+      "reason": "code Y3; name 1/2 ['sworder']"
+    },
+    {
+      "dropId": "uniquetoys-r-01-ut-peru-kill-aoe-lockdown",
+      "keepId": "uniquetoys-ut-r01",
+      "dropName": "UT R-01 Peru Kill AOE Lockdown",
+      "keepName": "Peru Kill",
+      "keepSubtitle": "UT-R01 — Perceptor homage",
+      "showzStoreIds": [
+        "0135"
+      ],
+      "codes": [
+        "R1"
+      ],
+      "reason": "code R1; name 2/4 ['peru', 'kill']"
+    }
+  ]
+}
