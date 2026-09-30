@@ -238,3 +238,7 @@ Further flags:
 - ss5-ss-megatron-tlk is relabelled as SS-114 Transformers One Megatron: Deluxe, year-only 2024, UPC 195166265216, MSRP $27.99. The row carried code HAS265216 and an image named 195166265216 (Hasbro F9849).
 - Aliases id:ss6-ss-megatron-tfone and TFSS-TF1-D-MEGATRON moved to it from tfss-ss-one-megatron. HAS265216, F9849 and HASF9849 were added as aliases on it.
 - The wrong code HASF9849 was removed from tfss-ssge04-megatron (row sku and baked sku map). That row is otherwise unchanged; its image is still a Transformers One Deluxe image (flag).
+
+## Step 5 — cleared wrong photo on tfss-ssge04-megatron (2026-09-30)
+
+Removed the Transformers One Studio Series Deluxe photo from tfss-ssge04-megatron (oneshot imageUrl, image tags and figure-image-urls.json overlay). Recorded it in image-mismatch-audit.json `cleared` + `clearedUrlLedger`, following the clear_figure_image convention.

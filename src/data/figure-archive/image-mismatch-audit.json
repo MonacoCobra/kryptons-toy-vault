@@ -58,6 +58,21 @@
         "urlBestShop": "mephitsu",
         "urlProductCount": 2
       }
+    },
+    {
+      "figureId": "tfss-ssge04-megatron",
+      "clearedOneshot": true,
+      "clearedOverlay": true,
+      "clearedImageUrl": "https://cdn.shopify.com/s/files/1/0611/4030/4091/files/Transformers-One-Studio-Series-Deluxe-Class-Action-0.jpg?v=1723597765",
+      "reasons": [
+        "manual:studio-series-audit-wrong-product"
+      ],
+      "name": "Megatron",
+      "subtitle": "SS-04GE Gamer Edition",
+      "evidence": {
+        "imageUrl": "https://cdn.shopify.com/s/files/1/0611/4030/4091/files/Transformers-One-Studio-Series-Deluxe-Class-Action-0.jpg?v=1723597765",
+        "note": "Image is a Transformers One Studio Series Deluxe product photo (filename \"Transformers-One-Studio-Series-Deluxe-Class-Action\"); row is SS-04GE Gamer Edition Megatron (War for Cybertron, 2023 Voyager). Found in the 2026-09-30 Studio Series audit; cleared by hand 2026-09-30."
+      }
     }
   ],
   "refilled": [],
@@ -12927,10 +12942,12 @@
     "Soft = reported only; not cleared.",
     "Clears BOTH oneshot.imageUrl and figure-image-urls.json (resolveFigureImageUrl falls through to overlay).",
     "Refill is GTIN-only, high-confidence, never multipack→single, never invents SKUs/images.",
-    "Comics/UPC and Mephitsu crawl paths untouched."
+    "Comics/UPC and Mephitsu crawl paths untouched.",
+    "2026-09-30 manual clear (Studio Series audit): tfss-ssge04-megatron wrong Transformers One photo; appended to cleared + clearedUrlLedger, counts reflect the 2026-09-29 run only."
   ],
   "clearedUrlLedger": [
     "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-box-set-exclusive-marvel-ant-man-5-pack-sdcc-2015_image.gif?v=1723126872",
+    "https://cdn.shopify.com/s/files/1/0611/4030/4091/files/Transformers-One-Studio-Series-Deluxe-Class-Action-0.jpg?v=1723597765",
     "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996143761z.webp?v=1724265737",
     "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996355904.webp?v=1766181682",
     "https://cdn.shopify.com/s/files/1/2637/6278/products/5010993842841a.jpg?v=1631048687",
