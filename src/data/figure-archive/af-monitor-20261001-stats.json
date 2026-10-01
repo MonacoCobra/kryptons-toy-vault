@@ -1,0 +1,99 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-01",
+  "updatedAt": "2026-10-01T14:28:19Z",
+  "added": 26,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Page2 differed; merged unique products.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 320,
+    "ee_candidates": 41,
+    "bbts_candidates": 164,
+    "added": 26,
+    "skipped_dupes": 179,
+    "rejected_non_af": 74,
+    "unmapped_company": 41,
+    "postfilter_rejected": 0
+  },
+  "oneshotBefore": 29298,
+  "oneshotAfter": 29324,
+  "ee_added": 24,
+  "bbts_added": 2,
+  "samples": [
+    {
+      "sku": "HSG2194",
+      "name": "Transformers Studio Series Age of Extinction Voyager Class Optimus Prime",
+      "id": "afmon-hasbro-transformers-studio-series-age-of-extinction-voyager-class-optimus-prime-hsg2194",
+      "source": "ee"
+    },
+    {
+      "sku": "JK433374",
+      "name": "The Simpsons Treehouse of Horror Grim Reaper Homer Simpson Deluxe 5-Inch Action Figure",
+      "id": "afmon-jakks-the-simpsons-treehouse-of-horror-grim-reaper-homer-simpson-deluxe-5-inch-acti-jk433374",
+      "source": "ee"
+    },
+    {
+      "sku": "JK433384",
+      "name": "The Simpsons Treehouse of Horror Vampire Krusty the Clown Deluxe 5-Inch Action Figure",
+      "id": "afmon-jakks-the-simpsons-treehouse-of-horror-vampire-krusty-the-clown-deluxe-5-inch-actio-jk433384",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2931",
+      "name": "Transformers Age of the Primes Voyager Class Sentinel Prime",
+      "id": "afmon-hasbro-transformers-age-of-the-primes-voyager-class-sentinel-prime-hsg2931",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2335",
+      "name": "Transformers NFL Green Bay Packers Tundra Prime",
+      "id": "afmon-hasbro-transformers-nfl-green-bay-packers-tundra-prime-hsg2335",
+      "source": "ee"
+    },
+    {
+      "sku": "MF18203",
+      "name": "DC Multiverse McFarlane Vault Collection Wave 1 Superman Action Comics #1 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-dc-multiverse-mcfarlane-vault-collection-wave-1-superman-action-comics-1-7-mf18203",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0630",
+      "name": "Fantastic Four Retro Marvel Legends She-Hulk 6-Inch Action Figure",
+      "id": "afmon-hasbro-fantastic-four-retro-marvel-legends-she-hulk-6-inch-action-figure-hsg0630",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2424",
+      "name": "Marvel Legends Series Ghost Rider (Robbie Reyes) 6-Inch Action Figure",
+      "id": "afmon-hasbro-marvel-legends-series-ghost-rider-robbie-reyes-6-inch-action-figure-hsg2424",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2265",
+      "name": "Transformers Age of the Primes Decepticon Monstructor Combiner Figure Set",
+      "id": "afmon-hasbro-transformers-age-of-the-primes-decepticon-monstructor-combiner-figure-set-hsg2265",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2296",
+      "name": "G.I. Joe Classified Series Retro Cardback Vincent R. Falcon Falcone 6-Inch Action Figure",
+      "id": "afmon-hasbro-g-i-joe-classified-series-retro-cardback-vincent-r-falcon-falcone-6-inch-acti-hsg2296",
+      "source": "ee"
+    },
+    {
+      "sku": "MTJRY35",
+      "name": "KPop Demon Hunters Saja Boys Baby Soda Pop Action Figure",
+      "id": "afmon-mattel-kpop-demon-hunters-saja-boys-baby-soda-pop-action-figure-mtjry35",
+      "source": "ee"
+    },
+    {
+      "sku": "HSF9225E",
+      "name": "G.I. Joe Classified Retro 6-Inch Action Figures Wave 5 Case of 4",
+      "id": "afmon-hasbro-g-i-joe-classified-retro-6-inch-action-figures-wave-5-case-of-4-hsf9225e",
+      "source": "ee"
+    }
+  ]
+}
