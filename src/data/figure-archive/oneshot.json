@@ -598659,9 +598659,12 @@
       "hasbro",
       "transformers-studio-series",
       "af-monitor-20260916",
-      "fix:ss-audit"
+      "fix:ss-audit",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "sku": "HSG1928",
+    "sku": "5010996380791",
     "source": "ee",
     "imageUrl": "https://media.entertainmentearth.com/assets/images/9580d187f11f4b0fa985039b994d2a09lg.jpg"
   },
@@ -707837,9 +707840,16 @@
       "wave12",
       "mcfarlane",
       "jsa",
-      "collector-edition"
+      "collector-edition",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-dc-gap-wave12"
+    "source": "curated-dc-gap-wave12",
+    "sku": "787926172799",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_803de3d04f9343cd954ac9214f35a2af~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_803de3d04f9343cd954ac9214f35a2af~mv2.jpg"
   },
   {
     "id": "mcf-tnba-w12-creeper",
@@ -707857,9 +707867,16 @@
       "af-checklist",
       "wave12",
       "mcfarlane",
-      "tnba"
+      "tnba",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-dc-gap-wave12"
+    "source": "curated-dc-gap-wave12",
+    "sku": "787926177572",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_c51278f3f07e47ddbe69cfe061f433b8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c51278f3f07e47ddbe69cfe061f433b8~mv2.jpg"
   },
   {
     "id": "dcd-gl-w12-ganthet",
@@ -709247,9 +709264,16 @@
       "studio-series",
       "tfwiki",
       "ss-audit-add",
-      "date-precision:year"
+      "date-precision:year",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "tfwiki-studio-series"
+    "source": "tfwiki-studio-series",
+    "sku": "5010996380500",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_7d5e537296a64191871b59278ed5689a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7d5e537296a64191871b59278ed5689a~mv2.jpg"
   },
   {
     "id": "tfss-ss-86-astrotrain",
@@ -709476,9 +709500,16 @@
       "tfwiki",
       "ss-audit-add",
       "date-precision:year",
-      "announcement"
+      "announcement",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "tfwiki-studio-series-announce"
+    "source": "tfwiki-studio-series-announce",
+    "sku": "5010996348647",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_641b9d7af05445fea053c84cb7d205a2~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_641b9d7af05445fea053c84cb7d205a2~mv2.jpg"
   },
   {
     "id": "tfss-ss-86-wheelie-2027",
@@ -709497,9 +709528,12 @@
       "tfwiki",
       "ss-audit-add",
       "date-precision:year",
-      "announcement"
+      "announcement",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "tfwiki-studio-series-announce"
+    "source": "tfwiki-studio-series-announce",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_6f833a49ab3d455dbf0143dd78596ce4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6f833a49ab3d455dbf0143dd78596ce4~mv2.jpg"
   },
   {
     "id": "tfss-ss-86-allicon-refresh",
@@ -709519,9 +709553,12 @@
       "ss-audit-add",
       "date-precision:year",
       "announcement",
-      "package-refresh"
+      "package-refresh",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "tfwiki-studio-series-announce"
+    "source": "tfwiki-studio-series-announce",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_2e911a15762249f48b86f90de7457eeb~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2e911a15762249f48b86f90de7457eeb~mv2.jpg"
   },
   {
     "id": "tfss-ss-idw-nautica",
@@ -709646,9 +709683,12 @@
       "tfwiki",
       "ss-audit-add",
       "date-precision:year",
-      "announcement"
+      "announcement",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "tfwiki-studio-series-announce"
+    "source": "tfwiki-studio-series-announce",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_56bb2f0e2a394e9199e15b0aeec77fe5~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_56bb2f0e2a394e9199e15b0aeec77fe5~mv2.jpg"
   },
   {
     "id": "tfss-ss-seeker-storm-pack",

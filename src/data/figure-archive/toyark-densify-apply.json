@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T18:03:20Z",
+  "generatedAt": "2026-10-01T05:20:32Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-09-22T18:03:18.471017+00:00",
+    "after": "2026-09-24T05:20:31.226665+00:00",
     "before": null
   },
   "fetch": {
@@ -45,17 +45,17 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 19,
+    "fetchedPostCount": 18,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9117,
+    "indexedRows": 9077,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 19,
-    "acceptedCandidates": 1,
+    "fetchedPosts": 18,
+    "acceptedCandidates": 0,
     "rejectedRows": 18,
     "byCompany": {
       "hasbro": {
@@ -79,8 +79,8 @@
         "rejected": 1
       },
       "hottoys": {
-        "accepted": 1,
-        "rejected": 2
+        "accepted": 0,
+        "rejected": 1
       },
       "mondo": {
         "accepted": 0,
@@ -108,43 +108,35 @@
       }
     },
     "byRejectReason": {
-      "company-not-allowlisted": 9,
+      "company-not-allowlisted": 10,
       "company-unknown": 3,
+      "already-in-oneshot": 2,
       "sponsor-newsletter": 2,
-      "no-new-product-identity": 1,
-      "already-in-oneshot": 3
+      "no-new-product-identity": 1
     },
-    "applied": 1,
+    "applied": 0,
     "skippedApply": 0
   },
-  "candidates": [
-    {
-      "decision": "accept",
-      "name": "Riddler",
-      "company": "hottoys",
-      "line": "Hot Toys MMS",
-      "year": 2027,
-      "releaseWindow": null,
-      "variant": "Batman Forever – The",
-      "sourceUrl": "https://www.toyark.com/2026/09/29/batman-forever-hot-toys-the-riddler-figure-599502",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Batman-Forever-Riddler-001.jpg",
-      "aliases": [
-        "MMS926",
-        "MMS926B"
-      ],
-      "codes": [
-        "MMS926",
-        "MMS926B"
-      ],
-      "gtin": null,
-      "toyarkPostId": 599502,
-      "postYear": 2026,
-      "pack": null,
-      "title": "Batman Forever – Hot Toys The Riddler Figure",
-      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys MMS; variant=Batman Forever – The; year=2027; aliases-from-source=MMS926,MMS926B; new/reveal/pre-order/official-image signal"
-    }
-  ],
+  "candidates": [],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "mattel",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/29/mattel-creations-x-dc-event-at-nycc-get-ready-599536",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599536,
+      "title": "Mattel Creations x DC Event at NYCC – Get Ready!",
+      "rationale": "Recognized mattel via class:companies-mattel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
     {
       "decision": "reject",
       "reason": "company-not-allowlisted",
@@ -180,6 +172,33 @@
       "toyarkPostId": 599527,
       "title": "Joy Toy Announces Super Street Fighter II Turbo License",
       "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
+    {
+      "decision": "reject",
+      "reason": "already-in-oneshot",
+      "name": "Riddler",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": "Batman Forever – The",
+      "sourceUrl": "https://www.toyark.com/2026/09/29/batman-forever-hot-toys-the-riddler-figure-599502",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Batman-Forever-Riddler-001.jpg",
+      "aliases": [
+        "MMS926",
+        "MMS926B"
+      ],
+      "codes": [
+        "MMS926",
+        "MMS926B"
+      ],
+      "gtin": null,
+      "toyarkPostId": 599502,
+      "title": "Batman Forever – Hot Toys The Riddler Figure",
+      "oneshotIds": [
+        "ta-0645a4b365de"
+      ],
+      "rationale": "Identity key already in oneshot (ta-0645a4b365de)."
     },
     {
       "decision": "reject",
@@ -435,84 +454,16 @@
       "toyarkPostId": 599312,
       "title": "MAFEX Batman, Batgirl, and Neo Pre-Orders",
       "rationale": "No allowlisted companies-* class or unique body-text company."
-    },
-    {
-      "decision": "reject",
-      "reason": "already-in-oneshot",
-      "name": "Black Widow",
-      "company": "hottoys",
-      "line": "Hot Toys MMS",
-      "year": 2027,
-      "releaseWindow": null,
-      "variant": "Avengers: Age of Ultron – Artisan Edition",
-      "sourceUrl": "https://www.toyark.com/2026/09/23/avengers-age-of-ultron-hot-toys-black-widow-artisan-edition-599293",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Avengers-AoU-Black-Widow-Artisan-001.jpg",
-      "aliases": [
-        "MMS925AE"
-      ],
-      "codes": [
-        "MMS925AE"
-      ],
-      "gtin": null,
-      "toyarkPostId": 599293,
-      "title": "Avengers: Age of Ultron – Hot Toys Black Widow Artisan Edition",
-      "oneshotIds": [
-        "ta-444d407ddf53"
-      ],
-      "rationale": "Identity key already in oneshot (ta-444d407ddf53)."
-    },
-    {
-      "decision": "reject",
-      "reason": "already-in-oneshot",
-      "name": "Tomorrow",
-      "company": "hottoys",
-      "line": "Hot Toys",
-      "year": 2027,
-      "releaseWindow": null,
-      "variant": "Death Stranding 2: On the Beach",
-      "sourceUrl": "https://www.toyark.com/2026/09/23/death-stranding-2-on-the-beach-hot-toys-tomorrow-figure-599274",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Death-Stranding-2-Tomorrow-002.jpg",
-      "aliases": [
-        "VGM93AE"
-      ],
-      "codes": [
-        "VGM93AE"
-      ],
-      "gtin": null,
-      "toyarkPostId": 599274,
-      "title": "Death Stranding 2: On the Beach – Hot Toys Tomorrow Figure",
-      "oneshotIds": [
-        "ta-d8730bd350b5"
-      ],
-      "rationale": "Identity key already in oneshot (ta-d8730bd350b5)."
     }
   ],
-  "applied": [
-    {
-      "id": "ta-0645a4b365de",
-      "name": "Riddler",
-      "company": "hottoys",
-      "line": "Hot Toys MMS",
-      "year": 2027,
-      "variant": "Batman Forever – The",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Batman-Forever-Riddler-001.jpg",
-      "aliases": [
-        "MMS926",
-        "MMS926B"
-      ],
-      "sourceUrl": "https://www.toyark.com/2026/09/29/batman-forever-hot-toys-the-riddler-figure-599502",
-      "toyarkPostId": 599502
-    }
-  ],
+  "applied": [],
   "applySkipped": [],
   "applyStats": {
-    "accepted": 1,
-    "applied": 1,
+    "accepted": 0,
+    "applied": 0,
     "skippedApply": 0,
-    "aliasAdded": 5,
-    "withImage": 1,
+    "aliasAdded": 0,
+    "withImage": 0,
     "cap": 50,
     "blocker": null
   }

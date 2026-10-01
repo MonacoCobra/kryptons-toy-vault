@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-09-29T18:03:03.165379+00:00",
+  "bakedAt": "2026-10-01T05:20:19.600562+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-09-29T18:01:16.701613+00:00",
+      "bakedAt": "2026-10-01T05:18:10.017797+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 999,
@@ -14,20 +14,20 @@
         "already": 519
       },
       "before": {
-        "total": 468,
-        "withSku": 396,
+        "total": 471,
+        "withSku": 399,
         "withGtin": 256,
-        "withListingPrimary": 140,
-        "withImage": 400,
+        "withListingPrimary": 143,
+        "withImage": 403,
         "emptySku": 72,
         "emptyImage": 68
       },
       "after": {
-        "total": 468,
-        "withSku": 396,
+        "total": 471,
+        "withSku": 399,
         "withGtin": 256,
-        "withListingPrimary": 140,
-        "withImage": 400,
+        "withListingPrimary": 143,
+        "withImage": 403,
         "emptySku": 72,
         "emptyImage": 68
       },
@@ -118,7 +118,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-29T18:01:25.118907+00:00",
+      "bakedAt": "2026-10-01T05:18:20.571041+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -129,20 +129,20 @@
         "already": 164
       },
       "before": {
-        "total": 428,
-        "withSku": 306,
+        "total": 429,
+        "withSku": 307,
         "withGtin": 153,
-        "withListingPrimary": 153,
-        "withImage": 377,
+        "withListingPrimary": 154,
+        "withImage": 378,
         "emptySku": 122,
         "emptyImage": 51
       },
       "after": {
-        "total": 428,
-        "withSku": 306,
+        "total": 429,
+        "withSku": 307,
         "withGtin": 153,
-        "withListingPrimary": 153,
-        "withImage": 377,
+        "withListingPrimary": 154,
+        "withImage": 378,
         "emptySku": 122,
         "emptyImage": 51
       },
@@ -233,7 +233,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-29T18:01:28.544822+00:00",
+      "bakedAt": "2026-10-01T05:18:24.492746+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -244,34 +244,43 @@
         "already": 248
       },
       "before": {
-        "total": 563,
-        "withSku": 498,
-        "withGtin": 289,
-        "withListingPrimary": 209,
-        "withImage": 486,
-        "emptySku": 65,
-        "emptyImage": 77
+        "total": 503,
+        "withSku": 402,
+        "withGtin": 260,
+        "withListingPrimary": 142,
+        "withImage": 395,
+        "emptySku": 101,
+        "emptyImage": 108
       },
       "after": {
-        "total": 563,
-        "withSku": 498,
-        "withGtin": 289,
-        "withListingPrimary": 209,
-        "withImage": 486,
-        "emptySku": 65,
-        "emptyImage": 77
+        "total": 503,
+        "withSku": 404,
+        "withGtin": 263,
+        "withListingPrimary": 141,
+        "withImage": 400,
+        "emptySku": 99,
+        "emptyImage": 103
       },
       "apply": {
-        "matched": 28,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
-        "imagesFilled": 0,
+        "matched": 35,
+        "gtinAssigned": 3,
+        "gtinUpgraded": 1,
+        "imagesFilled": 5,
         "imagesSkipped": 0,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 5,
+        "skippedGtinConflict": 4,
         "blockedByAudit": 0,
         "reattachedAfterEnforce": 0,
         "samples": [
+          {
+            "score": 57.5,
+            "figureId": "tfss-ss-one-shockwave",
+            "name": "Shockwave",
+            "mephitsu": "Shockwave",
+            "wave": "Deluxe Class Wave 33",
+            "sku": "5010996348647",
+            "image": true
+          },
           {
             "score": 55.5,
             "figureId": "tfss-ss-one-alpha",
@@ -291,64 +300,55 @@
             "image": true
           },
           {
-            "score": 55.5,
-            "figureId": "afmon-hasbro-grimlock-hsg1888",
-            "name": "Grimlock",
-            "mephitsu": "Grimlock",
-            "wave": "Titan Class Wave 1",
-            "sku": "HSG1888",
+            "score": 55.0,
+            "figureId": "ss4-ss86-cyclonus",
+            "name": "Cyclonus",
+            "mephitsu": "Cyclonus",
+            "wave": "Voyager Class Wave 32",
+            "sku": "5010996376084",
             "image": true
           },
           {
-            "score": 55.5,
-            "figureId": "afmon-hasbro-barricade-hsg1928",
-            "name": "Barricade",
-            "mephitsu": "Barricade",
-            "wave": "Deluxe Class Wave 30",
-            "sku": "HSG1928",
+            "score": 55.0,
+            "figureId": "ss4-ss86-soundwave",
+            "name": "Soundwave",
+            "mephitsu": "Soundwave",
+            "wave": "Leader Class Wave 20",
+            "sku": "5010996349873",
             "image": true
           },
           {
-            "score": 55.5,
+            "score": 55.0,
+            "figureId": "ss4-ss86-thundercracker",
+            "name": "Thundercracker",
+            "mephitsu": "Thundercracker",
+            "wave": "Voyager Class Wave 30",
+            "sku": "5010996323545",
+            "image": true
+          },
+          {
+            "score": 55.0,
+            "figureId": "ss4-ss86-skywarp",
+            "name": "Skywarp",
+            "mephitsu": "Skywarp",
+            "wave": "Voyager Class Wave 31",
+            "sku": "5010996348630",
+            "image": true
+          },
+          {
+            "score": 55.0,
             "figureId": "afmon-hasbro-shockwave-hsg2191",
             "name": "Shockwave",
             "mephitsu": "Shockwave",
-            "wave": "Deluxe Class Wave 33",
+            "wave": "Voyager Class Wave 31",
             "sku": "HSG2191",
-            "image": true
-          },
-          {
-            "score": 55.5,
-            "figureId": "afmon-hasbro-soundwave-hsg2200",
-            "name": "Soundwave",
-            "mephitsu": "Soundwave",
-            "wave": "Deluxe Class Wave 32",
-            "sku": "HSG2200",
-            "image": true
-          },
-          {
-            "score": 51.0,
-            "figureId": "hs8-hs-21",
-            "name": "Optimus Prime",
-            "mephitsu": "Optimus Prime",
-            "wave": "Voyager Class Wave 32",
-            "sku": "G0482",
-            "image": true
-          },
-          {
-            "score": 50.5,
-            "figureId": "tfss-ss-one-thundercracker",
-            "name": "Thundercracker",
-            "mephitsu": "Thundercracker",
-            "wave": "Deluxe Class Wave 31",
-            "sku": "5010996380487",
             "image": true
           }
         ]
       }
     },
     {
-      "bakedAt": "2026-09-29T18:02:10.478172+00:00",
+      "bakedAt": "2026-10-01T05:19:16.524028+00:00",
       "line": "mcfarlane",
       "dryRun": false,
       "mephitsuCount": 2177,
@@ -359,28 +359,28 @@
         "already": 1013
       },
       "before": {
-        "total": 1302,
-        "withSku": 626,
+        "total": 1308,
+        "withSku": 630,
         "withGtin": 445,
-        "withListingPrimary": 181,
-        "withImage": 762,
-        "emptySku": 676,
-        "emptyImage": 540
+        "withListingPrimary": 185,
+        "withImage": 766,
+        "emptySku": 678,
+        "emptyImage": 542
       },
       "after": {
-        "total": 1302,
-        "withSku": 626,
-        "withGtin": 445,
-        "withListingPrimary": 181,
-        "withImage": 762,
+        "total": 1308,
+        "withSku": 632,
+        "withGtin": 447,
+        "withListingPrimary": 185,
+        "withImage": 768,
         "emptySku": 676,
         "emptyImage": 540
       },
       "apply": {
-        "matched": 432,
-        "gtinAssigned": 0,
+        "matched": 434,
+        "gtinAssigned": 2,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
+        "imagesFilled": 2,
         "imagesSkipped": 23,
         "aliasesAttached": 0,
         "skippedGtinConflict": 65,
@@ -463,7 +463,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-29T18:02:38.402095+00:00",
+      "bakedAt": "2026-10-01T05:19:49.809798+00:00",
       "line": "neca",
       "dryRun": false,
       "mephitsuCount": 1493,
@@ -578,7 +578,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-29T18:02:54.254328+00:00",
+      "bakedAt": "2026-10-01T05:20:08.959168+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -589,20 +589,20 @@
         "already": 68
       },
       "before": {
-        "total": 2829,
-        "withSku": 2407,
+        "total": 2830,
+        "withSku": 2408,
         "withGtin": 130,
-        "withListingPrimary": 2277,
-        "withImage": 2546,
+        "withListingPrimary": 2278,
+        "withImage": 2547,
         "emptySku": 422,
         "emptyImage": 283
       },
       "after": {
-        "total": 2829,
-        "withSku": 2407,
+        "total": 2830,
+        "withSku": 2408,
         "withGtin": 130,
-        "withListingPrimary": 2277,
-        "withImage": 2546,
+        "withListingPrimary": 2278,
+        "withImage": 2547,
         "emptySku": 422,
         "emptyImage": 283
       },
@@ -693,7 +693,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-29T18:02:55.231647+00:00",
+      "bakedAt": "2026-10-01T05:20:10.127101+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -808,7 +808,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-29T18:03:00.380629+00:00",
+      "bakedAt": "2026-10-01T05:20:16.200952+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -923,7 +923,7 @@
       }
     },
     {
-      "bakedAt": "2026-09-29T18:03:03.158958+00:00",
+      "bakedAt": "2026-10-01T05:20:19.594019+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,

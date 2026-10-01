@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-09-29T18:03:20Z",
+  "finishedAt": "2026-10-01T05:20:32Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 1,
-  "applied": 1,
+  "acceptedCandidates": 0,
+  "applied": 0,
   "skippedApply": 0,
   "rejectedRows": 18,
-  "withImage": 1,
-  "aliasAdded": 5,
+  "withImage": 0,
+  "aliasAdded": 0,
   "byCompany": {
     "hasbro": {
       "accepted": 0,
@@ -31,8 +31,8 @@
       "rejected": 1
     },
     "hottoys": {
-      "accepted": 1,
-      "rejected": 2
+      "accepted": 0,
+      "rejected": 1
     },
     "mondo": {
       "accepted": 0,
@@ -60,37 +60,17 @@
     }
   },
   "byRejectReason": {
-    "company-not-allowlisted": 9,
+    "company-not-allowlisted": 10,
     "company-unknown": 3,
+    "already-in-oneshot": 2,
     "sponsor-newsletter": 2,
-    "no-new-product-identity": 1,
-    "already-in-oneshot": 3
+    "no-new-product-identity": 1
   },
-  "appliedIds": [
-    "ta-0645a4b365de"
-  ],
-  "appliedSample": [
-    {
-      "id": "ta-0645a4b365de",
-      "name": "Riddler",
-      "company": "hottoys",
-      "line": "Hot Toys MMS",
-      "year": 2027,
-      "variant": "Batman Forever – The",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Batman-Forever-Riddler-001.jpg",
-      "aliases": [
-        "MMS926",
-        "MMS926B"
-      ],
-      "sourceUrl": "https://www.toyark.com/2026/09/29/batman-forever-hot-toys-the-riddler-figure-599502",
-      "toyarkPostId": 599502
-    }
-  ],
+  "appliedIds": [],
+  "appliedSample": [],
   "skippedSample": [],
-  "archiveSize": 29351,
+  "archiveSize": 29298,
   "fetchBlocker": null,
-  "wroteOneshot": true,
+  "wroteOneshot": false,
   "comics": "untouched"
 }
