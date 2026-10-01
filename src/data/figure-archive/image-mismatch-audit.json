@@ -1,581 +1,124 @@
 {
-  "auditedAt": "2026-10-01T15:56:30.066525+00:00",
+  "auditedAt": "2026-10-01T21:53:52.738119+00:00",
   "mode": "apply",
   "refill": false,
   "counts": {
-    "oneshotRows": 29324,
-    "auditedWithImage": 17652,
-    "highMismatches": 15,
+    "oneshotRows": 29372,
+    "auditedWithImage": 17638,
+    "highMismatches": 3,
     "softMismatches": 1112,
-    "cleared": 15,
+    "cleared": 3,
     "refilled": 0,
     "overlayDropped": 0,
-    "overlayRemaining": 14523
+    "overlayRemaining": 14524
   },
   "reasonCounts": {
-    "score_pair_reject": 7,
-    "product_multipack_vs_single": 10,
-    "url_path_multipack": 7
+    "prior_sku_audit_cleared_url": 3
   },
   "cleared": [
     {
-      "figureId": "ml5-ml-x97-gambit",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://static.wixstatic.com/media/adc447_6166a228c6884ddcbaa74b3e5b4f201d~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6166a228c6884ddcbaa74b3e5b4f201d~mv2.jpg",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Gambit (2023)",
-      "subtitle": "X-Men '97 Legends",
-      "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_6166a228c6884ddcbaa74b3e5b4f201d~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6166a228c6884ddcbaa74b3e5b4f201d~mv2.jpg",
-        "gtin": "64725004",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends Retro 6 Inch Action Figure X-Men '97 Wave 1 - Set of 4 Magneto Gambit Bishop Storm",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 35.0,
-        "urlBestTitle": "Gambit — X-Men '97 Wave 1 · 2023 · Animated and TV",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
-      }
-    },
-    {
-      "figureId": "ml4-luke-cage-hero",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/iron-fist-and-luke-cage-8496.jpg",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Luke Cage (2024)",
-      "subtitle": "Hero for Hire",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/iron-fist-and-luke-cage-8496.jpg",
-        "gtin": "630509712212",
-        "gtinScore": 14.83,
-        "gtinTitle": "Marvel Legends 6 Inch Action Figure Netflix Series 2-Pack - Luke Cage & Claire Temple (Shelf Wear Packaging)",
-        "gtinShop": "cmdstore"
-      }
-    },
-    {
-      "figureId": "ml4-iron-fist-immortal",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/iron-fist-and-luke-cage-8496.jpg",
-      "reasons": [
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Iron Fist (2024)",
-      "subtitle": "Immortal",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/iron-fist-and-luke-cage-8496.jpg",
-        "gtin": "5010996246264",
-        "gtinScore": 14.83,
-        "gtinTitle": "Marvel Legends 85th Anniversary 6 Inch Action Figure 2-Pack - Iron Fist and Luke Cage",
-        "gtinShop": "cmdstore"
-      }
-    },
-    {
-      "figureId": "ml6-ml-wong-w6",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/doctor-strange-wong-and-bats-8900.jpg",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Wong (2024)",
-      "subtitle": "Wave6",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/doctor-strange-wong-and-bats-8900.jpg",
-        "gtin": "5010996246578",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends Doctor Strange 6 Inch Action Figure 2-Pack - Doctor Strange with Wong & Bats",
-        "gtinShop": "cmdstore"
-      }
-    },
-    {
-      "figureId": "mlc-gladiator",
+      "figureId": "mlc-deathbird",
       "clearedOneshot": true,
       "clearedOverlay": false,
       "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/deathbird-gladiator-12092.jpg",
       "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
+        "prior_sku_audit_cleared_url"
       ],
-      "name": "Gladiator Shi'ar Imperial Guard (2025)",
-      "subtitle": "Shi'ar Imperial Guard",
+      "name": "Deathbird Shi'ar (2025)",
+      "subtitle": "Shi'ar",
       "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/deathbird-gladiator-12092.jpg",
-        "gtin": "5010996282866",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends X-Men 6 Inch Action Figure 2-Pack - Deathbird and Gladiator",
-        "gtinShop": "cmdstore"
+        "imageUrl": "https://www.actionfigure411.com/marvel/images/deathbird-gladiator-12092.jpg"
       }
     },
     {
-      "figureId": "ml6-ml-silk",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/silk-and-doctor-octopus-2-pack-4091.jpg",
-      "reasons": [
-        "url_path_multipack",
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Silk (2022)",
-      "subtitle": "Wave6",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/silk-and-doctor-octopus-2-pack-4091.jpg",
-        "gtin": "5010994154967",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends Spider-Man 6 Inch Action Figure 2-Pack Exclusive - Silk and Doctor Octopus (Shelf Wear packaging)",
-        "gtinShop": "cmdstore"
-      }
-    },
-    {
-      "figureId": "ml6-ml-venom-space",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/mania-and-venom-space-knight-2-pack-6856.jpg",
-      "reasons": [
-        "url_path_multipack"
-      ],
-      "name": "Venom (2023)",
-      "subtitle": "Space Knight Wave6",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/mania-and-venom-space-knight-2-pack-6856.jpg"
-      }
-    },
-    {
-      "figureId": "mlc-morbius-classic2",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/six-armed-spider-man-vs-morbius-6900.jpg",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Morbius (2023)",
-      "subtitle": "Classic",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/six-armed-spider-man-vs-morbius-6900.jpg",
-        "gtin": "5010996145994",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends Spider-Man 6 Inch Action Figure 2-Pack Exclusive - 6 Arm Spider-Man & Morbius",
-        "gtinShop": "cmdstore"
-      }
-    },
-    {
-      "figureId": "mlc-silk",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/silk-and-doctor-octopus-2-pack-4091.jpg",
-      "reasons": [
-        "url_path_multipack"
-      ],
-      "name": "Silk Cindy Moon (2022)",
-      "subtitle": "Cindy Moon",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/silk-and-doctor-octopus-2-pack-4091.jpg"
-      }
-    },
-    {
-      "figureId": "mlc-sersi",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/sersi-3187.jpg",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Sersi (2021)",
-      "subtitle": "Eternals",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/sersi-3187.jpg",
-        "gtin": "5010996142573",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends 60th Anniversary 6 Inch Action Figure 2-Pack Exclusive - Black Knight & Sersi",
-        "gtinShop": "cmdstore"
-      }
-    },
-    {
-      "figureId": "d14ml-ned-nwh",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/peter-parker-and-ned-leeds-2-pack-4148.jpg",
-      "reasons": [
-        "url_path_multipack",
-        "gtin:product_multipack_vs_single"
-      ],
-      "name": "Ned Leeds (2022)",
-      "subtitle": "No Way Home",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/peter-parker-and-ned-leeds-2-pack-4148.jpg",
-        "gtin": "5010994153755",
-        "gtinScore": 14.83,
-        "gtinTitle": "Marvel Legends Spider-Man 6 Inch Action Figure Movie 2-Pack - Ned Leeds & Peter Parker",
-        "gtinShop": "cmdstore"
-      }
-    },
-    {
-      "figureId": "d14ml-moondragon",
+      "figureId": "ml3-ml-moondragon",
       "clearedOneshot": true,
       "clearedOverlay": false,
       "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/drax-the-destroyer-and-moondragon-6720.jpg",
       "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
+        "prior_sku_audit_cleared_url"
       ],
-      "name": "Moondragon Classic (2023)",
-      "subtitle": "Classic",
+      "name": "Moondragon (2023)",
+      "subtitle": "BAF Wave",
       "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/drax-the-destroyer-and-moondragon-6720.jpg",
-        "gtin": "5010996145949",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends Guardians Of The Galaxy 6 Inch Action Figure 2-Pack - Drax & Moondragon",
-        "gtinShop": "cmdstore"
+        "imageUrl": "https://www.actionfigure411.com/marvel/images/drax-the-destroyer-and-moondragon-6720.jpg"
       }
     },
     {
-      "figureId": "d14ml-melina",
+      "figureId": "ml3-ml-deathbird",
       "clearedOneshot": true,
       "clearedOverlay": false,
-      "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/red-guardian-melina-vostokoff-2-pack-1944.jpg",
+      "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/deathbird-gladiator-12092.jpg",
       "reasons": [
-        "url_path_multipack"
+        "prior_sku_audit_cleared_url"
       ],
-      "name": "Melina Vostokoff (2021)",
-      "subtitle": "Black Widow",
+      "name": "Deathbird (2025)",
+      "subtitle": "BAF",
       "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/red-guardian-melina-vostokoff-2-pack-1944.jpg"
-      }
-    },
-    {
-      "figureId": "lv-hasbro-marvel-legends-hyperion-2023",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/hyperion-doctor-spectrum-2-pack-6172.jpg",
-      "reasons": [
-        "url_path_multipack"
-      ],
-      "name": "Hyperion (2023)",
-      "subtitle": "",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/hyperion-doctor-spectrum-2-pack-6172.jpg"
-      }
-    },
-    {
-      "figureId": "lv-hasbro-marvel-legends-doctor-spectrum-2023",
-      "clearedOneshot": true,
-      "clearedOverlay": false,
-      "clearedImageUrl": "https://www.actionfigure411.com/marvel/images/hyperion-doctor-spectrum-2-pack-6172.jpg",
-      "reasons": [
-        "url_path_multipack"
-      ],
-      "name": "Doctor Spectrum (2023)",
-      "subtitle": "",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/hyperion-doctor-spectrum-2-pack-6172.jpg"
+        "imageUrl": "https://www.actionfigure411.com/marvel/images/deathbird-gladiator-12092.jpg"
       }
     }
   ],
   "refilled": [],
   "highFlags": [
     {
-      "figureId": "ml5-ml-x97-gambit",
-      "name": "Gambit (2023)",
-      "subtitle": "X-Men '97 Legends",
+      "figureId": "mlc-deathbird",
+      "name": "Deathbird Shi'ar (2025)",
+      "subtitle": "Shi'ar",
       "line": "Marvel Legends",
       "company": "hasbro",
-      "sku": "64725004",
+      "sku": "HAS282866",
       "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
+        "prior_sku_audit_cleared_url"
       ],
       "level": "high",
       "evidence": {
-        "imageUrl": "https://static.wixstatic.com/media/adc447_6166a228c6884ddcbaa74b3e5b4f201d~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6166a228c6884ddcbaa74b3e5b4f201d~mv2.jpg",
-        "gtin": "64725004",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends Retro 6 Inch Action Figure X-Men '97 Wave 1 - Set of 4 Magneto Gambit Bishop Storm",
-        "gtinShop": "cmdstore",
-        "urlBestScore": 35.0,
-        "urlBestTitle": "Gambit — X-Men '97 Wave 1 · 2023 · Animated and TV",
-        "urlBestShop": "mephitsu",
-        "urlProductCount": 1
+        "imageUrl": "https://www.actionfigure411.com/marvel/images/deathbird-gladiator-12092.jpg"
       },
-      "tags": []
+      "tags": [
+        "image-sku",
+        "imgsku:toyarena"
+      ]
     },
     {
-      "figureId": "ml4-luke-cage-hero",
-      "name": "Luke Cage (2024)",
-      "subtitle": "Hero for Hire",
+      "figureId": "ml3-ml-moondragon",
+      "name": "Moondragon (2023)",
+      "subtitle": "BAF Wave",
       "line": "Marvel Legends",
       "company": "hasbro",
-      "sku": "630509712212",
+      "sku": "HASF7055",
       "reasons": [
-        "gtin:product_multipack_vs_single"
+        "prior_sku_audit_cleared_url"
       ],
       "level": "high",
       "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/iron-fist-and-luke-cage-8496.jpg",
-        "gtin": "630509712212",
-        "gtinScore": 14.83,
-        "gtinTitle": "Marvel Legends 6 Inch Action Figure Netflix Series 2-Pack - Luke Cage & Claire Temple (Shelf Wear Packaging)",
-        "gtinShop": "cmdstore"
+        "imageUrl": "https://www.actionfigure411.com/marvel/images/drax-the-destroyer-and-moondragon-6720.jpg"
       },
-      "tags": []
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:hobbyfigures"
+      ]
     },
     {
-      "figureId": "ml4-iron-fist-immortal",
-      "name": "Iron Fist (2024)",
-      "subtitle": "Immortal",
+      "figureId": "ml3-ml-deathbird",
+      "name": "Deathbird (2025)",
+      "subtitle": "BAF",
       "line": "Marvel Legends",
       "company": "hasbro",
-      "sku": "5010996246264",
+      "sku": "HASG0582",
       "reasons": [
-        "gtin:product_multipack_vs_single"
+        "prior_sku_audit_cleared_url"
       ],
       "level": "high",
       "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/iron-fist-and-luke-cage-8496.jpg",
-        "gtin": "5010996246264",
-        "gtinScore": 14.83,
-        "gtinTitle": "Marvel Legends 85th Anniversary 6 Inch Action Figure 2-Pack - Iron Fist and Luke Cage",
-        "gtinShop": "cmdstore"
+        "imageUrl": "https://www.actionfigure411.com/marvel/images/deathbird-gladiator-12092.jpg"
       },
-      "tags": []
-    },
-    {
-      "figureId": "ml6-ml-wong-w6",
-      "name": "Wong (2024)",
-      "subtitle": "Wave6",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": "5010996246578",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/doctor-strange-wong-and-bats-8900.jpg",
-        "gtin": "5010996246578",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends Doctor Strange 6 Inch Action Figure 2-Pack - Doctor Strange with Wong & Bats",
-        "gtinShop": "cmdstore"
-      },
-      "tags": []
-    },
-    {
-      "figureId": "mlc-gladiator",
-      "name": "Gladiator Shi'ar Imperial Guard (2025)",
-      "subtitle": "Shi'ar Imperial Guard",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": "5010996282866",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/deathbird-gladiator-12092.jpg",
-        "gtin": "5010996282866",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends X-Men 6 Inch Action Figure 2-Pack - Deathbird and Gladiator",
-        "gtinShop": "cmdstore"
-      },
-      "tags": []
-    },
-    {
-      "figureId": "ml6-ml-silk",
-      "name": "Silk (2022)",
-      "subtitle": "Wave6",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": "5010994154967",
-      "reasons": [
-        "url_path_multipack",
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/silk-and-doctor-octopus-2-pack-4091.jpg",
-        "gtin": "5010994154967",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends Spider-Man 6 Inch Action Figure 2-Pack Exclusive - Silk and Doctor Octopus (Shelf Wear packaging)",
-        "gtinShop": "cmdstore"
-      },
-      "tags": []
-    },
-    {
-      "figureId": "ml6-ml-venom-space",
-      "name": "Venom (2023)",
-      "subtitle": "Space Knight Wave6",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": null,
-      "reasons": [
-        "url_path_multipack"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/mania-and-venom-space-knight-2-pack-6856.jpg"
-      },
-      "tags": []
-    },
-    {
-      "figureId": "mlc-morbius-classic2",
-      "name": "Morbius (2023)",
-      "subtitle": "Classic",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": "5010996145994",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/six-armed-spider-man-vs-morbius-6900.jpg",
-        "gtin": "5010996145994",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends Spider-Man 6 Inch Action Figure 2-Pack Exclusive - 6 Arm Spider-Man & Morbius",
-        "gtinShop": "cmdstore"
-      },
-      "tags": []
-    },
-    {
-      "figureId": "mlc-silk",
-      "name": "Silk Cindy Moon (2022)",
-      "subtitle": "Cindy Moon",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": null,
-      "reasons": [
-        "url_path_multipack"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/silk-and-doctor-octopus-2-pack-4091.jpg"
-      },
-      "tags": []
-    },
-    {
-      "figureId": "mlc-sersi",
-      "name": "Sersi (2021)",
-      "subtitle": "Eternals",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": "5010996142573",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/sersi-3187.jpg",
-        "gtin": "5010996142573",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends 60th Anniversary 6 Inch Action Figure 2-Pack Exclusive - Black Knight & Sersi",
-        "gtinShop": "cmdstore"
-      },
-      "tags": []
-    },
-    {
-      "figureId": "d14ml-ned-nwh",
-      "name": "Ned Leeds (2022)",
-      "subtitle": "No Way Home",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": "5010994153755",
-      "reasons": [
-        "url_path_multipack",
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/peter-parker-and-ned-leeds-2-pack-4148.jpg",
-        "gtin": "5010994153755",
-        "gtinScore": 14.83,
-        "gtinTitle": "Marvel Legends Spider-Man 6 Inch Action Figure Movie 2-Pack - Ned Leeds & Peter Parker",
-        "gtinShop": "cmdstore"
-      },
-      "tags": []
-    },
-    {
-      "figureId": "d14ml-moondragon",
-      "name": "Moondragon Classic (2023)",
-      "subtitle": "Classic",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": "5010996145949",
-      "reasons": [
-        "gtin:score_pair_reject",
-        "gtin:product_multipack_vs_single"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/drax-the-destroyer-and-moondragon-6720.jpg",
-        "gtin": "5010996145949",
-        "gtinScore": -1.0,
-        "gtinTitle": "Marvel Legends Guardians Of The Galaxy 6 Inch Action Figure 2-Pack - Drax & Moondragon",
-        "gtinShop": "cmdstore"
-      },
-      "tags": []
-    },
-    {
-      "figureId": "d14ml-melina",
-      "name": "Melina Vostokoff (2021)",
-      "subtitle": "Black Widow",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": null,
-      "reasons": [
-        "url_path_multipack"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/red-guardian-melina-vostokoff-2-pack-1944.jpg"
-      },
-      "tags": []
-    },
-    {
-      "figureId": "lv-hasbro-marvel-legends-hyperion-2023",
-      "name": "Hyperion (2023)",
-      "subtitle": "",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": null,
-      "reasons": [
-        "url_path_multipack"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/hyperion-doctor-spectrum-2-pack-6172.jpg"
-      },
-      "tags": []
-    },
-    {
-      "figureId": "lv-hasbro-marvel-legends-doctor-spectrum-2023",
-      "name": "Doctor Spectrum (2023)",
-      "subtitle": "",
-      "line": "Marvel Legends",
-      "company": "hasbro",
-      "sku": null,
-      "reasons": [
-        "url_path_multipack"
-      ],
-      "level": "high",
-      "evidence": {
-        "imageUrl": "https://www.actionfigure411.com/marvel/images/hyperion-doctor-spectrum-2-pack-6172.jpg"
-      },
-      "tags": []
+      "tags": [
+        "image-sku",
+        "image-bake",
+        "imgsku:planet-af"
+      ]
     }
   ],
   "softFlags": [
