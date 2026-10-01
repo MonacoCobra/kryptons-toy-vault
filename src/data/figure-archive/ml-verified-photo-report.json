@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-10-01T02:48:24.830973+00:00",
+  "manifest": "matched_photos.json",
+  "manifestSha256": "158c5a12dc975534904dcf658449d42d94400d19a9c793bcc9d8486324ef8c14",
+  "manifestRows": 1995,
+  "dryRun": false,
+  "display": {
+    "applied": {
+      "new": 149,
+      "replaced": 33,
+      "already_correct": 5
+    },
+    "appliedTotal": 187,
+    "skipped": {
+      "ambiguous_multiple_figures": 2,
+      "ambiguous_multiple_photos": 5,
+      "no_catalog_figure": 1460,
+      "second_photo_not_used": 33,
+      "wave_or_year_conflict": 308
+    },
+    "skippedTotal": 1808
+  },
+  "mephitsuArchive": {
+    "confirmed_same_url": 1679,
+    "replaced": 173,
+    "missing_product": 0,
+    "status_disagrees": 0
+  },
+  "notes": [
+    "Display counts are Marvel Legends listings the app renders (oneshot imageUrl, else figure-image-urls).",
+    "already_correct: mapped, and that listing already showed this photo.",
+    "new: listing had no photo.",
+    "replaced: listing showed a different photo; it now shows the audited one.",
+    "Mephitsu archive replacements update marvel-legends.json only. They do not by themselves change the UI.",
+    "second_photo_not_used: the listing was already given the photo from its own catalog id; a second audited photo of that same figure was left unused.",
+    "no_catalog_figure: no Marvel Legends listing shares that character, line, and year.",
+    "wave_or_year_conflict: a listing shares the character and year, but the wave/series does not agree.",
+    "Unmapped rows were not guessed. See ml-verified-photo-unmapped.csv."
+  ]
+}
