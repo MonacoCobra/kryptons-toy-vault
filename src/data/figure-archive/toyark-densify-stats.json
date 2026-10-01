@@ -1,12 +1,12 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-10-01T05:20:32Z",
+  "finishedAt": "2026-10-01T17:58:07Z",
   "mode": "apply",
   "cap": 50,
   "acceptedCandidates": 0,
   "applied": 0,
   "skippedApply": 0,
-  "rejectedRows": 18,
+  "rejectedRows": 19,
   "withImage": 0,
   "aliasAdded": 0,
   "byCompany": {
@@ -16,7 +16,7 @@
     },
     "mcfarlane": {
       "accepted": 0,
-      "rejected": 0
+      "rejected": 1
     },
     "neca": {
       "accepted": 0,
@@ -60,16 +60,17 @@
     }
   },
   "byRejectReason": {
-    "company-not-allowlisted": 10,
-    "company-unknown": 3,
-    "already-in-oneshot": 2,
     "sponsor-newsletter": 2,
+    "company-not-allowlisted": 11,
+    "company-unknown": 2,
+    "missing-line": 1,
+    "already-in-oneshot": 2,
     "no-new-product-identity": 1
   },
   "appliedIds": [],
   "appliedSample": [],
   "skippedSample": [],
-  "archiveSize": 29298,
+  "archiveSize": 29325,
   "fetchBlocker": null,
   "wroteOneshot": false,
   "comics": "untouched"
