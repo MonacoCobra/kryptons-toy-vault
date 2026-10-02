@@ -1,34 +1,111 @@
 {
   "source": "mephitsu-listing",
-  "finishedAt": "2026-10-01T17:55:17.808010+00:00",
+  "finishedAt": "2026-10-02T05:26:33.312931+00:00",
   "cap": 90,
-  "added": 1,
-  "withImage": 1,
-  "skipped": 370,
+  "added": 8,
+  "withImage": 8,
+  "skipped": 371,
   "counts": {
-    "hasbro-gijoe-classified": 1
+    "hasbro-street-fighter": 8
   },
   "byLine": {
-    "GI Joe Classified": 1
+    "Street Fighter": 8
   },
   "byCompany": {
-    "hasbro": 1
+    "hasbro": 8
   },
-  "aliasAdded": 2,
+  "aliasAdded": 16,
   "addedSample": [
     {
-      "id": "mph-713daeafb5b9",
-      "name": "D.I.R.E. Hawk",
+      "id": "mph-1024b056b6fc",
+      "name": "Akuma",
       "company": "hasbro",
-      "line": "GI Joe Classified",
+      "line": "Street Fighter",
       "year": 2026,
-      "bucket": "hasbro-gijoe-classified",
+      "bucket": "hasbro-street-fighter",
+      "image": true,
+      "exclusive": "Walmart (US) / Fan Channel (UK)"
+    },
+    {
+      "id": "mph-bae310cf7a8b",
+      "name": "Blanka",
+      "company": "hasbro",
+      "line": "Street Fighter",
+      "year": 2026,
+      "bucket": "hasbro-street-fighter",
+      "image": true,
+      "exclusive": "Walmart (US) / Fan Channel (UK)"
+    },
+    {
+      "id": "mph-5fac4305c77a",
+      "name": "Chun-Li",
+      "company": "hasbro",
+      "line": "Street Fighter",
+      "year": 2026,
+      "bucket": "hasbro-street-fighter",
+      "image": true,
+      "exclusive": "Walmart (US) / Fan Channel (UK)"
+    },
+    {
+      "id": "mph-33e2ec418cdf",
+      "name": "Guile",
+      "company": "hasbro",
+      "line": "Street Fighter",
+      "year": 2026,
+      "bucket": "hasbro-street-fighter",
+      "image": true,
+      "exclusive": "Walmart (US) / Fan Channel (UK)"
+    },
+    {
+      "id": "mph-aee2275de592",
+      "name": "Ken",
+      "company": "hasbro",
+      "line": "Street Fighter",
+      "year": 2026,
+      "bucket": "hasbro-street-fighter",
+      "image": true,
+      "exclusive": "Walmart (US) / Fan Channel (UK)"
+    },
+    {
+      "id": "mph-92ac6fd8a96e",
+      "name": "M. Bison",
+      "company": "hasbro",
+      "line": "Street Fighter",
+      "year": 2026,
+      "bucket": "hasbro-street-fighter",
+      "image": true,
+      "exclusive": "Walmart (US) / Fan Channel (UK)"
+    },
+    {
+      "id": "mph-1355df90ff46",
+      "name": "Ryu",
+      "company": "hasbro",
+      "line": "Street Fighter",
+      "year": 2026,
+      "bucket": "hasbro-street-fighter",
+      "image": true,
+      "exclusive": "Walmart (US) / Fan Channel (UK)"
+    },
+    {
+      "id": "mph-9235c62b94fe",
+      "name": "Ryu TBC",
+      "company": "hasbro",
+      "line": "Street Fighter",
+      "year": 2026,
+      "bucket": "hasbro-street-fighter",
       "image": true,
       "exclusive": "Walmart (US) / Fan Channel (UK)"
     }
   ],
   "addedIds": [
-    "mph-713daeafb5b9"
+    "mph-1024b056b6fc",
+    "mph-bae310cf7a8b",
+    "mph-5fac4305c77a",
+    "mph-33e2ec418cdf",
+    "mph-aee2275de592",
+    "mph-92ac6fd8a96e",
+    "mph-1355df90ff46",
+    "mph-9235c62b94fe"
   ],
   "skippedSample": [
     {
@@ -77,6 +154,10 @@
     },
     {
       "id": "mph-71ded2a8a1a9",
+      "reason": "id-exists"
+    },
+    {
+      "id": "mph-713daeafb5b9",
       "reason": "id-exists"
     },
     {
@@ -193,15 +274,11 @@
     {
       "id": "mph-19fe57e1c3e6",
       "reason": "id-exists"
-    },
-    {
-      "id": "mph-165193deac4a",
-      "reason": "id-exists"
     }
   ],
-  "archiveSize": 29325,
+  "archiveSize": 29380,
   "caches": {
-    "hasbro": 962,
+    "hasbro": 966,
     "jazwares": 313
   }
 }

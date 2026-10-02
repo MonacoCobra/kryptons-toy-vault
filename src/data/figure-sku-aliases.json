@@ -43764,6 +43764,38 @@
     "mph-713daeafb5b9": [
       "id:mph-713daeafb5b9",
       "mephitsu:713daeaf-b5b9-4ab2-b554-759ed08f75c0"
+    ],
+    "mph-1024b056b6fc": [
+      "id:mph-1024b056b6fc",
+      "mephitsu:1024b056-b6fc-4e6c-bfe1-5fddd80df0fb"
+    ],
+    "mph-bae310cf7a8b": [
+      "id:mph-bae310cf7a8b",
+      "mephitsu:bae310cf-7a8b-4ac9-94af-a1b709fa7f35"
+    ],
+    "mph-5fac4305c77a": [
+      "id:mph-5fac4305c77a",
+      "mephitsu:5fac4305-c77a-4fc6-b279-6af6bd0cb320"
+    ],
+    "mph-33e2ec418cdf": [
+      "id:mph-33e2ec418cdf",
+      "mephitsu:33e2ec41-8cdf-409c-96dc-d6ec2c646b3e"
+    ],
+    "mph-aee2275de592": [
+      "id:mph-aee2275de592",
+      "mephitsu:aee2275d-e592-4e7a-b76e-60764b3b6cef"
+    ],
+    "mph-92ac6fd8a96e": [
+      "id:mph-92ac6fd8a96e",
+      "mephitsu:92ac6fd8-a96e-4202-ac13-7dc20618459c"
+    ],
+    "mph-1355df90ff46": [
+      "id:mph-1355df90ff46",
+      "mephitsu:1355df90-ff46-4d40-9813-55499136039b"
+    ],
+    "mph-9235c62b94fe": [
+      "id:mph-9235c62b94fe",
+      "mephitsu:9235c62b-94fe-4bb7-a00c-ee894e5888b9"
     ]
   },
   "aliasToFigureId": {
@@ -67687,7 +67719,23 @@
     "F9849": "ss5-ss-megatron-tlk",
     "HASF9849": "ss5-ss-megatron-tlk",
     "id:mph-713daeafb5b9": "mph-713daeafb5b9",
-    "mephitsu:713daeaf-b5b9-4ab2-b554-759ed08f75c0": "mph-713daeafb5b9"
+    "mephitsu:713daeaf-b5b9-4ab2-b554-759ed08f75c0": "mph-713daeafb5b9",
+    "id:mph-1024b056b6fc": "mph-1024b056b6fc",
+    "mephitsu:1024b056-b6fc-4e6c-bfe1-5fddd80df0fb": "mph-1024b056b6fc",
+    "id:mph-bae310cf7a8b": "mph-bae310cf7a8b",
+    "mephitsu:bae310cf-7a8b-4ac9-94af-a1b709fa7f35": "mph-bae310cf7a8b",
+    "id:mph-5fac4305c77a": "mph-5fac4305c77a",
+    "mephitsu:5fac4305-c77a-4fc6-b279-6af6bd0cb320": "mph-5fac4305c77a",
+    "id:mph-33e2ec418cdf": "mph-33e2ec418cdf",
+    "mephitsu:33e2ec41-8cdf-409c-96dc-d6ec2c646b3e": "mph-33e2ec418cdf",
+    "id:mph-aee2275de592": "mph-aee2275de592",
+    "mephitsu:aee2275d-e592-4e7a-b76e-60764b3b6cef": "mph-aee2275de592",
+    "id:mph-92ac6fd8a96e": "mph-92ac6fd8a96e",
+    "mephitsu:92ac6fd8-a96e-4202-ac13-7dc20618459c": "mph-92ac6fd8a96e",
+    "id:mph-1355df90ff46": "mph-1355df90ff46",
+    "mephitsu:1355df90-ff46-4d40-9813-55499136039b": "mph-1355df90ff46",
+    "id:mph-9235c62b94fe": "mph-9235c62b94fe",
+    "mephitsu:9235c62b-94fe-4bb7-a00c-ee894e5888b9": "mph-9235c62b94fe"
   },
   "collapsed": [
     {
@@ -70935,7 +70983,7 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-10-01T17:58:02.214452+00:00",
+  "updatedAt": "2026-10-02T05:29:07.222532+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,

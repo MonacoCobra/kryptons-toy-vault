@@ -274,7 +274,10 @@ def is_skip_product(p: dict, *, company: str) -> str | None:
     if " & " in name or re.search(r"\band\b", name, re.I):
         # dual figure packs / figure+pet — skip for singles densify
         return "dual-name"
-    if VEHICLE_RE.search(name) or VEHICLE_RE.search(title):
+    # Scrub "Street Fighter" so bare \bfighter\b does not false-positive the line name
+    scrub_name = re.sub(r"street\s+fighter", " ", name, flags=re.I)
+    scrub_title = re.sub(r"street\s+fighter", " ", title, flags=re.I)
+    if VEHICLE_RE.search(scrub_name) or VEHICLE_RE.search(scrub_title):
         return "vehicle"
     y = parse_year(p)
     if y is None:
