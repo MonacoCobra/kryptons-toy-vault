@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-10-02T05:25:11Z",
+  "finishedAt": "2026-10-02T22:29:13Z",
   "mode": "apply",
-  "cap": 50,
-  "acceptedCandidates": 0,
-  "applied": 0,
+  "cap": 1,
+  "acceptedCandidates": 1,
+  "applied": 1,
   "skippedApply": 0,
-  "rejectedRows": 19,
-  "withImage": 0,
-  "aliasAdded": 0,
+  "rejectedRows": 0,
+  "withImage": 1,
+  "aliasAdded": 3,
   "byCompany": {
     "hasbro": {
       "accepted": 0,
@@ -16,11 +16,11 @@
     },
     "mcfarlane": {
       "accepted": 0,
-      "rejected": 1
+      "rejected": 0
     },
     "neca": {
       "accepted": 0,
-      "rejected": 1
+      "rejected": 0
     },
     "jazwares": {
       "accepted": 0,
@@ -28,11 +28,11 @@
     },
     "super7": {
       "accepted": 0,
-      "rejected": 1
+      "rejected": 0
     },
     "hottoys": {
-      "accepted": 0,
-      "rejected": 1
+      "accepted": 1,
+      "rejected": 0
     },
     "mondo": {
       "accepted": 0,
@@ -59,19 +59,29 @@
       "rejected": 0
     }
   },
-  "byRejectReason": {
-    "sponsor-newsletter": 2,
-    "company-not-allowlisted": 11,
-    "company-unknown": 2,
-    "missing-line": 1,
-    "already-in-oneshot": 2,
-    "no-new-product-identity": 1
-  },
-  "appliedIds": [],
-  "appliedSample": [],
+  "byRejectReason": {},
+  "appliedIds": [
+    "ta-d9a16d3350aa"
+  ],
+  "appliedSample": [
+    {
+      "id": "ta-d9a16d3350aa",
+      "name": "Steve Rogers",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": 2026,
+      "variant": "Avengers: Doomsday",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Avengers-Doomsday-Steve-Rogers-010.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/02/avengers-doomsday-hot-toys-steve-rogers-figure-599629",
+      "toyarkPostId": 599629
+    }
+  ],
   "skippedSample": [],
-  "archiveSize": 29372,
+  "archiveSize": 29475,
   "fetchBlocker": null,
-  "wroteOneshot": false,
+  "wroteOneshot": true,
   "comics": "untouched"
 }
