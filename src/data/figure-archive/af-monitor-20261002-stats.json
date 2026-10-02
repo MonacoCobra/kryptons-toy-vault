@@ -1,0 +1,99 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-02",
+  "updatedAt": "2026-10-02T14:26:58Z",
+  "added": 45,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Page2 differed; merged unique products.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 320,
+    "ee_candidates": 36,
+    "bbts_candidates": 170,
+    "added": 45,
+    "skipped_dupes": 161,
+    "rejected_non_af": 83,
+    "unmapped_company": 31,
+    "postfilter_rejected": 0
+  },
+  "oneshotBefore": 29380,
+  "oneshotAfter": 29425,
+  "ee_added": 21,
+  "bbts_added": 24,
+  "samples": [
+    {
+      "sku": "HSG2687",
+      "name": "Star Wars Titan Series 12-Inch Darth Maul Action Figure",
+      "id": "afmon-hasbro-star-wars-titan-series-12-inch-darth-maul-action-figure-hsg2687",
+      "source": "ee"
+    },
+    {
+      "sku": "HSE1914",
+      "name": "Transformers Generations Power of the Primes Throne of the Primes Optimal Optimus",
+      "id": "afmon-hasbro-transformers-generations-power-of-the-primes-throne-of-the-primes-optimal-opt-hse1914",
+      "source": "ee"
+    },
+    {
+      "sku": "BA03820",
+      "name": "Gundam MS-06S Zaku II Char's Custom Model ANIME Version Robot Spirits Action Figure - Reissue",
+      "id": "afmon-bandai-gundam-ms-06s-zaku-ii-char-s-custom-model-anime-version-robot-spirits-action-ba03820",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS63988",
+      "name": "Spider-Man: Across the Spider-Verse Spider-Gwen S.H.Figuarts Action Figure - Reissue",
+      "id": "afmon-bandai-spider-man-across-the-spider-verse-spider-gwen-s-h-figuarts-action-figure-blfbas63988",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS66043",
+      "name": "Street Fighter Chun-Li Outfit 2 S.H.Figuarts Action Figure - Reissue",
+      "id": "afmon-bandai-street-fighter-chun-li-outfit-2-s-h-figuarts-action-figure-reissue-blfbas66043",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84769",
+      "name": "Ultraman Jack S.H.Figuarts Action Figure - Reissue",
+      "id": "afmon-bandai-ultraman-jack-s-h-figuarts-action-figure-reissue-blfbas84769",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84080",
+      "name": "Demon Slayer Tengen Uzui S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-demon-slayer-tengen-uzui-s-h-figuarts-action-figure-blfbas84080",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84092",
+      "name": "Spider-Man: Across the Spider-Verse Miles G. Morales 42 Miles on the Prowlers Path S.H. Figuarts Action Figure",
+      "id": "afmon-bandai-spider-man-across-the-spider-verse-miles-g-morales-42-miles-on-the-prowle-blfbas84092",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS69784",
+      "name": "Dragon Ball Super Saiyan God Son Goku God Aura S.H.Figuarts Action Figure - Reissue",
+      "id": "afmon-bandai-dragon-ball-super-saiyan-god-son-goku-god-aura-s-h-figuarts-action-figure-blfbas69784",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS73991",
+      "name": "My Hero Academia One For All Plus Ultra Option Part Set S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-my-hero-academia-one-for-all-plus-ultra-option-part-set-s-h-figuarts-acti-blfbas73991",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS69785",
+      "name": "Dragon Ball Super Saiyan God Super Saiyan Son Goku Blue Power Transcending Limits S.H.Figuarts Action Figure - Reissue",
+      "id": "afmon-bandai-dragon-ball-super-saiyan-god-super-saiyan-son-goku-blue-power-transcendin-blfbas69785",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS73955",
+      "name": "Patlabor Griffon Twin Unit Set Robot Spirits Action Figure",
+      "id": "afmon-bandai-patlabor-griffon-twin-unit-set-robot-spirits-action-figure-blfbas73955",
+      "source": "ee"
+    }
+  ]
+}
