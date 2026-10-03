@@ -607107,7 +607107,7 @@
     "company": "bossfight",
     "kind": "figure",
     "releaseDate": "2026-09-18",
-    "msrp": 0.0,
+    "msrp": 64.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -607116,7 +607116,8 @@
       "bossfight",
       "boss-fight-studio",
       "af-monitor-20260918",
-      "bbts-var:376438"
+      "bbts-var:376438",
+      "msrp:bbts"
     ],
     "sku": "BBTS-191964",
     "source": "bbts",
@@ -634160,7 +634161,7 @@
     "company": "mcfarlane",
     "kind": "figure",
     "releaseDate": "2026-09-23",
-    "msrp": 0.0,
+    "msrp": 34.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -634171,7 +634172,8 @@
       "af-monitor-20260923",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "msrp:bbts"
     ],
     "sku": "787926170917",
     "source": "bbts",
@@ -634207,7 +634209,7 @@
     "company": "dcdirect",
     "kind": "figure",
     "releaseDate": "2026-09-23",
-    "msrp": 0.0,
+    "msrp": 27.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -634215,7 +634217,8 @@
       "bbts",
       "dcdirect",
       "dc-direct",
-      "af-monitor-20260923"
+      "af-monitor-20260923",
+      "msrp:bbts"
     ],
     "sku": "BBTS-196666",
     "source": "bbts",
@@ -634273,7 +634276,7 @@
     "company": "mcfarlane",
     "kind": "figure",
     "releaseDate": "2026-09-23",
-    "msrp": 0.0,
+    "msrp": 34.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -634284,7 +634287,8 @@
       "af-monitor-20260923",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "msrp:bbts"
     ],
     "sku": "787926175165",
     "source": "bbts"
@@ -635267,7 +635271,7 @@
     "company": "hasbro",
     "kind": "figure",
     "releaseDate": "2026-09-23",
-    "msrp": 0.0,
+    "msrp": 12.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -635275,7 +635279,8 @@
       "bbts",
       "hasbro",
       "hasbro",
-      "af-monitor-20260923"
+      "af-monitor-20260923",
+      "msrp:bbts"
     ],
     "sku": "BBTS-196795",
     "source": "bbts",
@@ -635289,7 +635294,7 @@
     "company": "hasbro",
     "kind": "figure",
     "releaseDate": "2026-09-23",
-    "msrp": 0.0,
+    "msrp": 12.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -635297,7 +635302,8 @@
       "bbts",
       "hasbro",
       "hasbro",
-      "af-monitor-20260923"
+      "af-monitor-20260923",
+      "msrp:bbts"
     ],
     "sku": "BBTS-196796",
     "source": "bbts",
@@ -635311,7 +635317,7 @@
     "company": "hasbro",
     "kind": "figure",
     "releaseDate": "2026-09-23",
-    "msrp": 0.0,
+    "msrp": 12.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -635319,7 +635325,8 @@
       "bbts",
       "hasbro",
       "hasbro",
-      "af-monitor-20260923"
+      "af-monitor-20260923",
+      "msrp:bbts"
     ],
     "sku": "BBTS-196793",
     "source": "bbts",
@@ -641612,7 +641619,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2025-03-01",
-    "msrp": 0.0,
+    "msrp": 94.99,
     "scale": "",
     "demand": 1.0,
     "tags": [
@@ -641623,7 +641630,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:6914",
-      "code:C-08"
+      "code:C-08",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642052,7 +642060,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2025-10-01",
-    "msrp": 0.0,
+    "msrp": 131.99,
     "scale": "",
     "demand": 1.0,
     "tags": [
@@ -642063,7 +642071,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:7223",
-      "code:C-01N"
+      "code:C-01N",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642078,7 +642087,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2025-10-01",
-    "msrp": 0.0,
+    "msrp": 224.99,
     "scale": "",
     "demand": 1.0,
     "tags": [
@@ -642089,7 +642098,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:7268",
-      "code:C-10"
+      "code:C-10",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642130,7 +642140,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2025-06-01",
-    "msrp": 0.0,
+    "msrp": 94.99,
     "scale": "",
     "demand": 1.0,
     "tags": [
@@ -642141,7 +642151,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:7106",
-      "code:C-09"
+      "code:C-09",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642156,7 +642167,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2025-03-01",
-    "msrp": 0.0,
+    "msrp": 94.99,
     "scale": "",
     "demand": 1.0,
     "tags": [
@@ -642167,7 +642178,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:6913",
-      "code:C-07"
+      "code:C-07",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642182,7 +642194,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2024-12-01",
-    "msrp": 0.0,
+    "msrp": 84.99,
     "scale": "",
     "demand": 1.0,
     "tags": [
@@ -642193,7 +642205,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:6753",
-      "code:C-05"
+      "code:C-05",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642208,7 +642221,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2024-12-01",
-    "msrp": 0.0,
+    "msrp": 84.99,
     "scale": "",
     "demand": 1.0,
     "tags": [
@@ -642219,7 +642232,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:6754",
-      "code:C-06"
+      "code:C-06",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642234,7 +642248,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2024-08-01",
-    "msrp": 0.0,
+    "msrp": 159.99,
     "scale": "",
     "demand": 1.0,
     "tags": [
@@ -642245,7 +642259,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:6486",
-      "code:C-01S"
+      "code:C-01S",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642260,7 +642275,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2024-05-01",
-    "msrp": 0.0,
+    "msrp": 39.99,
     "scale": "",
     "demand": 1.0,
     "tags": [
@@ -642271,7 +642286,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:6226",
-      "code:C-03"
+      "code:C-03",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642286,7 +642302,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2024-05-01",
-    "msrp": 0.0,
+    "msrp": 39.99,
     "scale": "",
     "demand": 1.0,
     "tags": [
@@ -642297,7 +642313,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:6228",
-      "code:C-04"
+      "code:C-04",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642363,7 +642380,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2023-08-01",
-    "msrp": 0.0,
+    "msrp": 119.99,
     "scale": "",
     "demand": 1.0,
     "tags": [
@@ -642374,7 +642391,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:5450",
-      "code:C-01"
+      "code:C-01",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642389,7 +642407,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2023-08-01",
-    "msrp": 0.0,
+    "msrp": 69.99,
     "scale": "",
     "demand": 1.0,
     "tags": [
@@ -642400,7 +642418,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:5451",
-      "code:C-02"
+      "code:C-02",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642440,7 +642459,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2023-09-01",
-    "msrp": 0.0,
+    "msrp": 169.99,
     "scale": "",
     "demand": 1.0,
     "tags": [
@@ -642451,7 +642470,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:5565",
-      "code:MPM-11D"
+      "code:MPM-11D",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642592,7 +642612,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2021-07-01",
-    "msrp": 0.0,
+    "msrp": 89.99,
     "scale": "MP",
     "demand": 1.0,
     "tags": [
@@ -642603,7 +642623,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:3340",
-      "code:MP-53+"
+      "code:MP-53+",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642618,7 +642639,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2021-04-01",
-    "msrp": 0.0,
+    "msrp": 237.99,
     "scale": "MP",
     "demand": 1.0,
     "tags": [
@@ -642629,7 +642650,8 @@
       "inject-showzstore-3p-official",
       "src:showzstore",
       "showz:3068",
-      "code:MP-52+SW"
+      "code:MP-52+SW",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642719,7 +642741,7 @@
     "company": "takaratomy",
     "kind": "figure",
     "releaseDate": "2020-06-01",
-    "msrp": 0.0,
+    "msrp": 119.99,
     "scale": "",
     "demand": 1.0,
     "tags": [
@@ -642729,7 +642751,8 @@
       "curated",
       "inject-showzstore-3p-official",
       "src:showzstore",
-      "showz:2264"
+      "showz:2264",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -642897,7 +642920,7 @@
     "company": "hasbro",
     "kind": "figure",
     "releaseDate": "2018-06-01",
-    "msrp": 0.0,
+    "msrp": 159.99,
     "scale": "Titan Class",
     "demand": 1.0,
     "tags": [
@@ -642909,7 +642932,8 @@
       "src:showzstore",
       "showz:0794",
       "tf-densify-fix",
-      "power-of-the-primes"
+      "power-of-the-primes",
+      "msrp:af411"
     ],
     "source": "inject-showzstore-3p-official",
     "property": "transformers",
@@ -694445,7 +694469,7 @@
     "company": "mcfarlane",
     "kind": "figure",
     "releaseDate": "2026-09-24",
-    "msrp": 0.0,
+    "msrp": 34.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -694453,7 +694477,8 @@
       "bbts",
       "mcfarlane",
       "mcfarlane-toys",
-      "af-monitor-20260924"
+      "af-monitor-20260924",
+      "msrp:bbts"
     ],
     "sku": "BBTS-198056",
     "source": "bbts",
@@ -695129,7 +695154,7 @@
     "company": "mcfarlane",
     "kind": "figure",
     "releaseDate": "2026-09-24",
-    "msrp": 0.0,
+    "msrp": 22.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -695137,7 +695162,8 @@
       "bbts",
       "mcfarlane",
       "mcfarlane-toys",
-      "af-monitor-20260924"
+      "af-monitor-20260924",
+      "msrp:bbts"
     ],
     "sku": "BBTS-196758",
     "source": "bbts",
@@ -695151,7 +695177,7 @@
     "company": "mcfarlane",
     "kind": "figure",
     "releaseDate": "2026-09-24",
-    "msrp": 0.0,
+    "msrp": 22.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -695159,7 +695185,8 @@
       "bbts",
       "mcfarlane",
       "mcfarlane-toys",
-      "af-monitor-20260924"
+      "af-monitor-20260924",
+      "msrp:bbts"
     ],
     "sku": "BBTS-196757",
     "source": "bbts",
@@ -695173,7 +695200,7 @@
     "company": "mcfarlane",
     "kind": "figure",
     "releaseDate": "2026-09-24",
-    "msrp": 0.0,
+    "msrp": 22.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -695181,7 +695208,8 @@
       "bbts",
       "mcfarlane",
       "mcfarlane-toys",
-      "af-monitor-20260924"
+      "af-monitor-20260924",
+      "msrp:bbts"
     ],
     "sku": "BBTS-196760",
     "source": "bbts",
@@ -695195,7 +695223,7 @@
     "company": "mcfarlane",
     "kind": "figure",
     "releaseDate": "2026-09-24",
-    "msrp": 0.0,
+    "msrp": 22.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -695203,7 +695231,8 @@
       "bbts",
       "mcfarlane",
       "mcfarlane-toys",
-      "af-monitor-20260924"
+      "af-monitor-20260924",
+      "msrp:bbts"
     ],
     "sku": "BBTS-196763",
     "source": "bbts",
@@ -695217,7 +695246,7 @@
     "company": "mcfarlane",
     "kind": "figure",
     "releaseDate": "2026-09-24",
-    "msrp": 0.0,
+    "msrp": 22.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -695225,7 +695254,8 @@
       "bbts",
       "mcfarlane",
       "mcfarlane-toys",
-      "af-monitor-20260924"
+      "af-monitor-20260924",
+      "msrp:bbts"
     ],
     "sku": "BBTS-196764",
     "source": "bbts",
@@ -695239,7 +695269,7 @@
     "company": "mcfarlane",
     "kind": "figure",
     "releaseDate": "2026-09-24",
-    "msrp": 0.0,
+    "msrp": 22.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -695247,7 +695277,8 @@
       "bbts",
       "mcfarlane",
       "mcfarlane-toys",
-      "af-monitor-20260924"
+      "af-monitor-20260924",
+      "msrp:bbts"
     ],
     "sku": "BBTS-196762",
     "source": "bbts",
@@ -699270,7 +699301,7 @@
     "company": "mezco",
     "kind": "figure",
     "releaseDate": "2026-09-25",
-    "msrp": 0.0,
+    "msrp": 130.0,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -699278,7 +699309,8 @@
       "bbts",
       "mezco",
       "one-12-collective",
-      "af-monitor-20260925"
+      "af-monitor-20260925",
+      "msrp:bbts"
     ],
     "sku": "BBTS-197928",
     "source": "bbts",
