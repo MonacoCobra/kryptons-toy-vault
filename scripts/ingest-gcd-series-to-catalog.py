@@ -1065,16 +1065,65 @@ def parse_gcd_date(*candidates: str | None) -> str | None:
     return None
 
 
-def parse_gcd_price(raw: str | None) -> float | None:
-    if not raw:
-        return None
-    m = re.search(r"(\d+(?:\.\d{1,2})?)", str(raw).replace(",", ""))
-    if not m:
-        return None
+# One "<amount> <CUR>" pair inside a GCD price string. The amount must stand
+# alone: not glued to a preceding digit/dot/colon/dash/letter or "digit space"
+# (so "11..95", "2:50", "2 95", "o.10", "0.25.USD" never yield a number).
+_GCD_PRICE_PAIR_RE = re.compile(
+    r"(?<![\w.,:\-])(?<!\d\s)"
+    r"(\d{1,3}(?:,\d{3})+(?:\.\d{1,2})?|\d+(?:[.,]\d{1,2})?|\.\d{1,2})"
+    r"(?![\d.,:\-])\s*(?:\]\s*)?\[?([A-Za-z]{3})(?![A-Za-z])"
+)
+# Currency-first form, accepted only as a whole ";" part: "USD 49.99; CAD 55.99".
+_GCD_PRICE_PREFIX_RE = re.compile(
+    r"\s*([A-Za-z]{3})\s+(\d{1,3}(?:,\d{3})+(?:\.\d{1,2})?|\d+(?:[.,]\d{1,2})?|\.\d{1,2})\s*"
+)
+
+
+def _gcd_amount(token: str) -> float | None:
+    t = token
+    if re.fullmatch(r"\d{1,3}(?:,\d{3})+(?:\.\d{1,2})?", t):
+        t = t.replace(",", "")
+    elif re.fullmatch(r"\d+,\d{1,2}", t):
+        t = t.replace(",", ".")
     try:
-        return float(m.group(1))
+        return float(t)
     except ValueError:
         return None
+
+
+def gcd_price_amounts(raw: str | None) -> list[tuple[float, str, bool]]:
+    """Every well-formed (amount, CURRENCY, bracketed) pair in a GCD price string."""
+    out: list[tuple[float, str, bool]] = []
+    for part in str(raw or "").split(";"):
+        m = _GCD_PRICE_PREFIX_RE.fullmatch(part)
+        if m:
+            amount = _gcd_amount(m.group(2))
+            if amount is not None:
+                out.append((amount, m.group(1).upper(), False))
+            continue
+        for m in _GCD_PRICE_PAIR_RE.finditer(part):
+            amount = _gcd_amount(m.group(1))
+            if amount is None:
+                continue
+            bracketed = part[: m.start()].count("[") > part[: m.start()].count("]")
+            out.append((amount, m.group(2).upper(), bracketed))
+    return out
+
+
+def parse_gcd_price(raw: str | None) -> float | None:
+    """US cover price from a GCD price string, or None.
+
+    GCD lists every printed price ("19.99 GBP; 25.00 USD; 34.00 CAD"), so only
+    the USD amount counts: the first one printed on the cover, else the first
+    bracketed one (GCD brackets a known price that is not printed). No USD,
+    0.00 / FREE, or a malformed number ("49..99 USD") -> None; never a guess.
+    """
+    pairs = [(a, b) for a, cur, b in gcd_price_amounts(raw) if cur == "USD"]
+    if not pairs:
+        return None
+    printed = [a for a, b in pairs if not b]
+    amount = (printed or [a for a, _ in pairs])[0]
+    return amount if amount > 0 else None
 
 
 def clean_credit(raw: str | None) -> str:

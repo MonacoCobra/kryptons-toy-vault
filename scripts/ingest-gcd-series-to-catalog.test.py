@@ -1027,6 +1027,38 @@ class DumpIngestTest(unittest.TestCase):
         finally:
             gcd_dump.discover_dump_dir = real
 
+    def test_parse_gcd_price_returns_usd_only(self):
+        cases = {
+            "19.99 GBP; 25.00 USD; 34.00 CAD": 25.0,
+            "2.00 CAD; 1.70 USD": 1.7,
+            "2.00 CAD: 1.70 USD": 1.7,
+            "1.75 USD: 2.65 CAD": 1.75,
+            "0.25 USD": 0.25,
+            ".15 USD": 0.15,
+            "7 USD": 7.0,
+            "0,50 USD": 0.5,
+            "3.95USD": 3.95,
+            "12.95 USd": 12.95,
+            "[2.00 USD]": 2.0,
+            "4.99 USD [30.00 USD]": 4.99,
+            "0.00 FREE [1.50 USD]": 1.5,
+            "4.99 USD (cover): 5.99 USD (indicia): $9.50 CAD": 4.99,
+            "USD 49.99; CAD 55.99": 49.99,
+            "CAD 55.99; USD 49.99": 49.99,
+            "39.99 USD; CAD 53.99": 39.99,
+            "3.99 [USD]; 3.99 [CAD]": 3.99,
+        }
+        for raw, want in cases.items():
+            self.assertEqual(ingest.parse_gcd_price(raw), want, raw)
+
+    def test_parse_gcd_price_none_without_usd_or_when_malformed(self):
+        for raw in (
+            None, "", "[none]", "?", "0.10", "2.50 GBP", "2.00 CAD", "6d [0-0-6 GBP]", "999 JPY",
+            "1,99 EUR", "0.00 USD", "0.00 FREE", "49..99 USD", "11..95 USD", "2:50 USD",
+            "2 95 USD", "2-00 USD", "o.10 USD", "0.1O USD", "0.25.USD", "24.95 USDD", "USD 5.75 CAD", "CAD 4.99",
+        ):
+            self.assertIsNone(ingest.parse_gcd_price(raw), raw)
+
     def test_strip_paperback_publishers_default_to_tpb(self):
         for pub in ("Gold Medal Books", "Crest Books", "Warner Books", "New American Library", "Tempo Books"):
             self.assertEqual(ingest.strip_paperback_format("single", pub), "tpb", pub)
