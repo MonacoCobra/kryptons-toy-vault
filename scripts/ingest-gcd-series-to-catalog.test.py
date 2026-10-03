@@ -1041,7 +1041,10 @@ class DumpIngestTest(unittest.TestCase):
             "12.95 USd": 12.95,
             "[2.00 USD]": 2.0,
             "4.99 USD [30.00 USD]": 4.99,
-            "0.00 FREE [1.50 USD]": 1.5,
+            "0.10 USD [0.00 FREE]": 0.1,
+            "0.10 USD; 0.00 FREE": 0.1,
+            "[5.00 USD; 7.00 USD] (see notes)": 5.0,
+            "265.00 FF; 47.50 CAD; 31.95 USD": 31.95,
             "4.99 USD (cover): 5.99 USD (indicia): $9.50 CAD": 4.99,
             "USD 49.99; CAD 55.99": 49.99,
             "CAD 55.99; USD 49.99": 49.99,
@@ -1056,6 +1059,8 @@ class DumpIngestTest(unittest.TestCase):
             None, "", "[none]", "?", "0.10", "2.50 GBP", "2.00 CAD", "6d [0-0-6 GBP]", "999 JPY",
             "1,99 EUR", "0.00 USD", "0.00 FREE", "49..99 USD", "11..95 USD", "2:50 USD",
             "2 95 USD", "2-00 USD", "o.10 USD", "0.1O USD", "0.25.USD", "24.95 USDD", "USD 5.75 CAD", "CAD 4.99",
+            "0.00 FREE [1.50 USD]", "0.00 FREE; 2.25 USD; 3.75 CAD", "0.00 FREE; 4.99 USD (packs of 25)",
+            "4.99 USD (packs of 25)", "Yearly subscription 3.00 USD",
         ):
             self.assertIsNone(ingest.parse_gcd_price(raw), raw)
 

@@ -1079,6 +1079,11 @@ _GCD_PRICE_PREFIX_RE = re.compile(
 )
 
 
+_GCD_PRINTED_FREE_RE = re.compile(r"(?<![\d.])0*(?:\.0+)?\s*FREE\b", re.I)
+# Prices that are not a single copy's cover price.
+_GCD_NOT_COVER_RE = re.compile(r"packs? of|package of|for \d+ issues|subscription", re.I)
+
+
 def _gcd_amount(token: str) -> float | None:
     t = token
     if re.fullmatch(r"\d{1,3}(?:,\d{3})+(?:\.\d{1,2})?", t):
@@ -1094,7 +1099,11 @@ def _gcd_amount(token: str) -> float | None:
 def gcd_price_amounts(raw: str | None) -> list[tuple[float, str, bool]]:
     """Every well-formed (amount, CURRENCY, bracketed) pair in a GCD price string."""
     out: list[tuple[float, str, bool]] = []
-    for part in str(raw or "").split(";"):
+    text = str(raw or "")
+    offset = 0
+    for part in text.split(";"):
+        before = text[:offset]
+        offset += len(part) + 1
         m = _GCD_PRICE_PREFIX_RE.fullmatch(part)
         if m:
             amount = _gcd_amount(m.group(2))
@@ -1105,7 +1114,8 @@ def gcd_price_amounts(raw: str | None) -> list[tuple[float, str, bool]]:
             amount = _gcd_amount(m.group(1))
             if amount is None:
                 continue
-            bracketed = part[: m.start()].count("[") > part[: m.start()].count("]")
+            lead = before + part[: m.start()]
+            bracketed = lead.count("[") > lead.count("]")
             out.append((amount, m.group(2).upper(), bracketed))
     return out
 
@@ -1116,13 +1126,24 @@ def parse_gcd_price(raw: str | None) -> float | None:
     GCD lists every printed price ("19.99 GBP; 25.00 USD; 34.00 CAD"), so only
     the USD amount counts: the first one printed on the cover, else the first
     bracketed one (GCD brackets a known price that is not printed). No USD,
-    0.00 / FREE, or a malformed number ("49..99 USD") -> None; never a guess.
+    0.00, a printed FREE (giveaway), pack/subscription prices, or a malformed
+    number ("49..99 USD") -> None; never a guess.
     """
-    pairs = [(a, b) for a, cur, b in gcd_price_amounts(raw) if cur == "USD"]
+    text = str(raw or "")
+    # Printed prices are listed most prominent first. When that is "0.00 FREE"
+    # the copy is a giveaway: a USD after it is a retailer pack price or a
+    # reference price, not its cover price. ("0.10 USD; 0.00 FREE" keeps 0.10.)
+    printed = re.sub(r"\[[^\]]*\]?", " ", text)
+    free = _GCD_PRINTED_FREE_RE.search(printed)
+    first_usd = next((m for m in _GCD_PRICE_PAIR_RE.finditer(printed) if m.group(2).upper() == "USD"), None)
+    if free and (first_usd is None or free.start() < first_usd.start()):
+        return None
+    usable = ";".join(part for part in text.split(";") if not _GCD_NOT_COVER_RE.search(part))
+    pairs = [(a, b) for a, cur, b in gcd_price_amounts(usable) if cur == "USD"]
     if not pairs:
         return None
-    printed = [a for a, b in pairs if not b]
-    amount = (printed or [a for a, _ in pairs])[0]
+    on_cover = [a for a, b in pairs if not b]
+    amount = (on_cover or [a for a, _ in pairs])[0]
     return amount if amount > 0 else None
 
 
