@@ -44398,6 +44398,72 @@
     ],
     "tfpotp-leader-evolution-rodimus-unicronus": [
       "HAS662739"
+    ],
+    "tflu-voyager-g1-universe-ramjet": [
+      "G1036",
+      "HAS285294"
+    ],
+    "tflu-voyager-comic-universe-tarn": [
+      "G1037",
+      "HAS285287"
+    ],
+    "tflu-commander-beast-wars-universe-magmatron": [
+      "F8513",
+      "HAS193056"
+    ],
+    "tflu-deluxe-star-raider-cannonball": [
+      "G0231",
+      "HASG0231"
+    ],
+    "tflu-deluxe-star-raider-filch": [
+      "G0234"
+    ],
+    "tflu-deluxe-star-raider-lockdown": [
+      "G0233",
+      "HASG0233"
+    ],
+    "tflu-deluxe-star-raider-road-pig": [
+      "G0232",
+      "HASG0232"
+    ],
+    "tflu-leader-star-raider-thundertron-nightstrike-calcitron": [
+      "G0236",
+      "HAS254221"
+    ],
+    "tflu-amazon-wrecker-malleus-minotaurus-chop-shop-barrage": [
+      "HAS240514"
+    ],
+    "tflu-amazon-prime-universe-breakdown-windsweeper": [
+      "HAS240538"
+    ],
+    "tflu-amazon-decepticon-bludgeon-decepticon-rukus": [
+      "G0182"
+    ],
+    "tflu-selects-go-bot-guardians-3-pack": [
+      "F9650",
+      "HAS232366",
+      "HASF9650",
+      "HSF9650"
+    ],
+    "tflu-pulse-dinoking": [
+      "G0181",
+      "HAS263322"
+    ],
+    "tflu-target-origin-wheeljack": [
+      "F9688"
+    ],
+    "tflu-target-versus-4-pack": [
+      "HAS257406"
+    ],
+    "tfl22-target-heroic-maximal-dinobot": [
+      "HAS145842"
+    ],
+    "tfpotp-walgreens-wreck-gar": [
+      "HAS691111"
+    ],
+    "tfl-haslab-liokaiser": [
+      "G22675L00",
+      "G2267"
     ]
   },
   "aliasToFigureId": {
@@ -68611,7 +68677,37 @@
     "E1147": "tfpotp-leader-evolution-optimus-prime",
     "HAS620777": "tfpotp-leader-evolution-optimus-prime",
     "HAS620784": "tfpotp-leader-evolution-rodimus-prime",
-    "HAS662739": "tfpotp-leader-evolution-rodimus-unicronus"
+    "HAS662739": "tfpotp-leader-evolution-rodimus-unicronus",
+    "G1036": "tflu-voyager-g1-universe-ramjet",
+    "HAS285294": "tflu-voyager-g1-universe-ramjet",
+    "G1037": "tflu-voyager-comic-universe-tarn",
+    "HAS285287": "tflu-voyager-comic-universe-tarn",
+    "F8513": "tflu-commander-beast-wars-universe-magmatron",
+    "HAS193056": "tflu-commander-beast-wars-universe-magmatron",
+    "G0231": "tflu-deluxe-star-raider-cannonball",
+    "HASG0231": "tflu-deluxe-star-raider-cannonball",
+    "G0234": "tflu-deluxe-star-raider-filch",
+    "G0233": "tflu-deluxe-star-raider-lockdown",
+    "HASG0233": "tflu-deluxe-star-raider-lockdown",
+    "G0232": "tflu-deluxe-star-raider-road-pig",
+    "HASG0232": "tflu-deluxe-star-raider-road-pig",
+    "G0236": "tflu-leader-star-raider-thundertron-nightstrike-calcitron",
+    "HAS254221": "tflu-leader-star-raider-thundertron-nightstrike-calcitron",
+    "HAS240514": "tflu-amazon-wrecker-malleus-minotaurus-chop-shop-barrage",
+    "HAS240538": "tflu-amazon-prime-universe-breakdown-windsweeper",
+    "G0182": "tflu-amazon-decepticon-bludgeon-decepticon-rukus",
+    "F9650": "tflu-selects-go-bot-guardians-3-pack",
+    "HAS232366": "tflu-selects-go-bot-guardians-3-pack",
+    "HASF9650": "tflu-selects-go-bot-guardians-3-pack",
+    "HSF9650": "tflu-selects-go-bot-guardians-3-pack",
+    "G0181": "tflu-pulse-dinoking",
+    "HAS263322": "tflu-pulse-dinoking",
+    "F9688": "tflu-target-origin-wheeljack",
+    "HAS257406": "tflu-target-versus-4-pack",
+    "HAS145842": "tfl22-target-heroic-maximal-dinobot",
+    "HAS691111": "tfpotp-walgreens-wreck-gar",
+    "G22675L00": "tfl-haslab-liokaiser",
+    "G2267": "tfl-haslab-liokaiser"
   },
   "collapsed": [
     {
@@ -71859,7 +71955,7 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-10-03T03:59:35.243889+00:00",
+  "updatedAt": "2026-10-03T04:03:16.107990+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -71953,6 +72049,16 @@
       "removed": 0,
       "added": 205,
       "fixed": 12
+    },
+    "tfDensify2": {
+      "at": "2026-10-03T04:02:57.132697+00:00",
+      "removed": 0,
+      "added": 20,
+      "msrp": 185
+    },
+    "tfDensify2b": {
+      "at": "2026-10-03T04:03:16.107990+00:00",
+      "removed": 0
     }
   },
   "removed": [
