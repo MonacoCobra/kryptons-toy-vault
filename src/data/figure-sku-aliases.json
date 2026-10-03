@@ -111,7 +111,6 @@
     "tfc-siege-ultragnus": [
       "HAS747405",
       "HAS994268",
-      "HAS321787",
       "HAS668556",
       "HAS145729",
       "HAS789030",
@@ -119,7 +118,6 @@
       "G4412",
       "MLC10",
       "HBR-HSB2443-C",
-      "G1374",
       "GEN-SG-ULTRAMAGNUS",
       "F41185L00",
       "F07005L00"
@@ -11105,7 +11103,6 @@
     ],
     "tfss-ss-one-sentinel": [
       "BAN900558",
-      "HSG2931",
       "DK64",
       "HSG0560",
       "HASG0560",
@@ -11410,10 +11407,8 @@
       "HAS941989",
       "HAS796953",
       "HAS900657",
-      "HASG1972",
       "G1099",
-      "GEN-SG-JETFIRE",
-      "G1972"
+      "GEN-SG-JETFIRE"
     ],
     "bs4-paz-vizsla": [
       "H5538",
@@ -12104,7 +12099,6 @@
       "HSF0384",
       "HAS399632",
       "HAS433985",
-      "HAS314710",
       "HAS948612",
       "HAS294797",
       "HAS257338",
@@ -12131,15 +12125,11 @@
       "HAS767021",
       "HAS174693",
       "HAS783817",
-      "HASG3362",
       "HASG3492",
-      "G3362",
       "G4385",
       "G3484",
-      "G0470",
       "G0153",
       "DCS07",
-      "HSG0470",
       "HSG0831",
       "HSG2144",
       "HSF0859",
@@ -12165,7 +12155,6 @@
       "TFBLKROTBOPRLEAD",
       "f0859",
       "F6735",
-      "HASG0470",
       "HASF7663",
       "HSG3492",
       "F06995L00",
@@ -15568,15 +15557,11 @@
       "BAS65158"
     ],
     "tfc-kingdom-dinobot": [
-      "HAS367754",
       "HAS962849",
       "HAS851218",
       "TFGRIM02",
       "TFGRIM01",
-      "G2264",
-      "G1375",
-      "HBR-F40955L00-C",
-      "HASG2264"
+      "HBR-F40955L00-C"
     ],
     "tfc-earthrise-megatron": [
       "HAS320124",
@@ -15589,7 +15574,6 @@
       "HAS516315",
       "HAS834532",
       "HAS836246",
-      "HASG3363",
       "F9736",
       "F9386",
       "HSF0366B-M",
@@ -32438,7 +32422,11 @@
       "id:d14ss-tlk-barricade"
     ],
     "afmon-hasbro-nexus-prime-hsg2001": [
-      "HSG2001"
+      "HSG2001",
+      "5010996356147",
+      "G2001",
+      "HAS356147",
+      "HASG2001"
     ],
     "afmon-hasbro-nimrod-hsg2080": [
       "HSG2080"
@@ -44464,6 +44452,363 @@
     "tfl-haslab-liokaiser": [
       "G22675L00",
       "G2267"
+    ],
+    "tfaotp-voyager-autobot-red-alert": [
+      "G1008",
+      "HAS285331",
+      "HSG1008",
+      "HASG1008",
+      "tcin:1013380230"
+    ],
+    "tfaotp-deluxe-aerialbot-air-raid": [
+      "G1023",
+      "HSG1023",
+      "HAS285348"
+    ],
+    "tfaotp-deluxe-aerialbot-slingshot": [
+      "G1032",
+      "HSG1032",
+      "HAS285454"
+    ],
+    "tfaotp-deluxe-the-thirteen-solus-prime": [
+      "G1022",
+      "HASG1022",
+      "HSG1022",
+      "HAS285430"
+    ],
+    "tfaotp-deluxe-fugitive-waspinator": [
+      "G1025",
+      "HASG1025",
+      "HSG1025",
+      "HAS285447"
+    ],
+    "tfaotp-deluxe-the-thirteen-alchemist-prime": [
+      "G1026",
+      "HSG1026",
+      "HBR-G1026-C",
+      "HASG1026",
+      "HAS327154"
+    ],
+    "tfaotp-deluxe-decepticon-crasher": [
+      "G1027",
+      "HASG1027",
+      "HAS327161",
+      "HSG1027"
+    ],
+    "tfaotp-deluxe-combaticon-vortex": [
+      "G1028",
+      "HSG1028",
+      "HAS327147"
+    ],
+    "tfaotp-deluxe-aerialbot-fireflight": [
+      "G1024",
+      "HSG1024",
+      "HAS334152"
+    ],
+    "tfaotp-deluxe-the-thirteen-micronus-prime": [
+      "G1029",
+      "HSG1029",
+      "HASG1029",
+      "HAS332998"
+    ],
+    "tfaotp-deluxe-aerialbot-skydive": [
+      "G1031",
+      "HAS332950",
+      "HSG1031",
+      "HASG1031"
+    ],
+    "tfaotp-deluxe-venin": [
+      "G1030",
+      "HAS332974",
+      "HASG1030",
+      "HSG1030"
+    ],
+    "tfaotp-deluxe-combaticon-blast-off": [
+      "G2006",
+      "HSG2006",
+      "HAS380890"
+    ],
+    "tfaotp-deluxe-junkion-jalopy": [
+      "G2009",
+      "HSG2009",
+      "HASG2009",
+      "HAS380913"
+    ],
+    "tfaotp-deluxe-quickstrike": [
+      "G2007",
+      "HAS380937",
+      "HSG2007",
+      "HASG2007"
+    ],
+    "tfaotp-deluxe-the-thirteen-quintus-prime": [
+      "G2004",
+      "HSG2004",
+      "HAS380906",
+      "HASG2004"
+    ],
+    "afmon-hasbro-transformers-age-of-the-primes-deluxe-class-targetmaster-sureshot-hsg2005": [
+      "5010996380920",
+      "G2005",
+      "HAS380920",
+      "HASG2005"
+    ],
+    "tfaotp-deluxe-cliffjumper": [
+      "G2018",
+      "HASG2018",
+      "HSG2018",
+      "HAS380944"
+    ],
+    "tfaotp-deluxe-autobot-powerglide": [
+      "G2010",
+      "HASG2010",
+      "HSG2010",
+      "HAS380968"
+    ],
+    "tfaotp-deluxe-autobot-ratchet": [
+      "G2012",
+      "HSG2012",
+      "HASG2012",
+      "HAS380999"
+    ],
+    "tfaotp-deluxe-smokescreen": [
+      "G2008",
+      "HAS381026",
+      "HSG2008",
+      "HASG2008"
+    ],
+    "tfaotp-deluxe-swerve": [
+      "G2011",
+      "HSG2011",
+      "HASG2011",
+      "HAS381002"
+    ],
+    "tfaotp-deluxe-autobot-blanker": [
+      "G2016",
+      "G2016IS",
+      "HASG2016",
+      "HSG2016",
+      "HAS381019"
+    ],
+    "tfaotp-deluxe-fangry": [
+      "G2017",
+      "HSG2017",
+      "G2017IS",
+      "HAS380982"
+    ],
+    "tfaotp-deluxe-autobot-joyride": [
+      "G2013",
+      "HSG2013",
+      "G2013IS",
+      "HAS380975",
+      "HASG2013"
+    ],
+    "tfaotp-deluxe-autobot-tailgate": [
+      "G2014",
+      "HSG2014",
+      "G2014IS",
+      "HAS380951"
+    ],
+    "tfaotp-voyager-the-thirteen-prima-prime": [
+      "G1007",
+      "HSG1007",
+      "HBR-G1007-C",
+      "HASG1007"
+    ],
+    "tfaotp-voyager-rescue-bot-heatwave": [
+      "G1018",
+      "HAS319708",
+      "HSG1018",
+      "HASG1018"
+    ],
+    "tfaotp-voyager-sky-byte": [
+      "G1019",
+      "HAS319692",
+      "HASG1019",
+      "HSG1019"
+    ],
+    "tfaotp-voyager-the-thirteen-alpha-trion": [
+      "G1020",
+      "HASG1020",
+      "HSG1020",
+      "HAS319890"
+    ],
+    "tfaotp-voyager-flatline": [
+      "G1021",
+      "HAS319883",
+      "HSG1021",
+      "HASG1021"
+    ],
+    "tfaotp-voyager-the-thirteen-amalgamous-prime": [
+      "G1996",
+      "HSG1996",
+      "HASG1996",
+      "HAS356062"
+    ],
+    "tfaotp-voyager-combaticon-brawl": [
+      "G1997",
+      "HAS356116",
+      "HSG1997"
+    ],
+    "tfaotp-voyager-junkion-wreck-gar": [
+      "G1998",
+      "HAS356130",
+      "HSG1998",
+      "HASG1998"
+    ],
+    "tfaotp-voyager-sideways": [
+      "G1999",
+      "HASG1999",
+      "HSG1999"
+    ],
+    "tfaotp-voyager-combaticon-swindle": [
+      "G2002",
+      "HSG2002",
+      "G2002IS",
+      "HAS356154"
+    ],
+    "tfaotp-voyager-the-thirteen-vector-prime": [
+      "G2003",
+      "HASG2003",
+      "HSG2003",
+      "G2003IS",
+      "HAS356093"
+    ],
+    "tfaotp-leader-g2-universe-grimlock-autobot-wheelie": [
+      "G0487",
+      "HSG0487",
+      "HAS299505"
+    ],
+    "tfaotp-leader-the-thirteen-megatronus-the-fallen": [
+      "G0486",
+      "HASG0486",
+      "HSG0486",
+      "HAS299499"
+    ],
+    "tfaotp-leader-the-thirteen-onyx-prime": [
+      "G0488",
+      "HAS319715",
+      "HSG0488",
+      "HASG0488"
+    ],
+    "tfaotp-leader-maximal-big-convoy": [
+      "G1906",
+      "HAS368126",
+      "HSG1906",
+      "HASG1906"
+    ],
+    "tfaotp-leader-razorclaw": [
+      "G1907",
+      "HAS368133",
+      "HSG1907",
+      "HASG1907"
+    ],
+    "tfaotp-leader-the-thirteen-liege-maximo": [
+      "G1908",
+      "HAS368140",
+      "HASG1908",
+      "HSG1908"
+    ],
+    "afmon-hasbro-transformers-age-of-the-primes-leader-class-herald-of-unicro-hsg2784": [
+      "5010996372604",
+      "G2784",
+      "HAS372604",
+      "G2784IS"
+    ],
+    "tfaotp-leader-decepticon-megazarak": [
+      "G2783",
+      "HAS372598",
+      "HSG2783"
+    ],
+    "tfaotp-commander-aerialbot-silverbolt": [
+      "G0752",
+      "HAS314567",
+      "HSG0752"
+    ],
+    "afmon-hasbro-transformers-generations-age-of-the-primes-commander-onslaug-hsg1966": [
+      "5010996367983",
+      "G1966",
+      "HAS367983"
+    ],
+    "tfaotp-commander-armada-jetfire": [
+      "G1972",
+      "HSG1972",
+      "HASG1972",
+      "G19725L00"
+    ],
+    "tfaotp-titan-the-thirteen-star-optimus-prime": [
+      "G0470",
+      "HASG0470",
+      "HSG0470",
+      "HAS314710"
+    ],
+    "tfaotp-walmart-excellion": [
+      "G1490",
+      "HAS312921",
+      "HASG1490",
+      "G14905L00"
+    ],
+    "tfaotp-walmart-sideways-cybertron": [
+      "G1489",
+      "HAS318466",
+      "HASG1489"
+    ],
+    "tfaotp-walmart-dark-energon-cybertronic": [
+      "G2257",
+      "HASG2257"
+    ],
+    "tfaotp-walmart-dark-energon-megatron": [
+      "G3363",
+      "HASG3363",
+      "G3363IS"
+    ],
+    "tfaotp-walmart-energon-cybertread": [
+      "G2256",
+      "HASG2256",
+      "G2256IS"
+    ],
+    "tfaotp-walmart-energon-optimus-prime": [
+      "G3362",
+      "HASG3362"
+    ],
+    "tfaotp-amazon-carnivac-vs-fisitron": [
+      "G1376",
+      "HAS318527"
+    ],
+    "tfaotp-amazon-autobot-sandstorm-vs-slugslinger": [
+      "HAS327468"
+    ],
+    "tfaotp-amazon-spinister-vs-topspin": [
+      "G1377",
+      "HAS318558",
+      "HSG1377"
+    ],
+    "tfaotp-target-ultra-magnus-autobot-bumper-vs-horri-bull-ne": [
+      "G1374",
+      "HAS321787"
+    ],
+    "tfaotp-selects-trypticon": [
+      "G1092",
+      "HASG1092",
+      "HAS288820",
+      "HSG1092"
+    ],
+    "tfaotp-selects-g2-universe-dinobot-snarl-g2-universe-dinobo": [
+      "G1375"
+    ],
+    "tfaotp-selects-g2-dinobot-swoop-g2-dinobot-sludge": [
+      "G2264",
+      "HASG2264",
+      "HAS367754"
+    ],
+    "afmon-hasbro-transformers-age-of-the-primes-generations-selects-mirage-ironhide-and-bluest-hsg2266": [
+      "5010996393029",
+      "G2266",
+      "HASG2266"
+    ],
+    "afmon-hasbro-transformers-age-of-the-primes-voyager-class-sentinel-prime-hsg2931": [
+      "5010996403995",
+      "G2931",
+      "G2931IS"
     ]
   },
   "aliasToFigureId": {
@@ -44586,7 +44931,6 @@
     "N-LF-149262": "shf-shf-naruto",
     "HAS747405": "tfc-siege-ultragnus",
     "HAS994268": "tfc-siege-ultragnus",
-    "HAS321787": "tfc-siege-ultragnus",
     "HAS668556": "tfc-siege-ultragnus",
     "HAS145729": "tfc-siege-ultragnus",
     "HAS789030": "tfc-siege-ultragnus",
@@ -44594,7 +44938,6 @@
     "G4412": "tfc-siege-ultragnus",
     "MLC10": "tfc-siege-ultragnus",
     "HBR-HSB2443-C": "tfc-siege-ultragnus",
-    "G1374": "tfc-siege-ultragnus",
     "GEN-SG-ULTRAMAGNUS": "tfc-siege-ultragnus",
     "F41185L00": "tfc-siege-ultragnus",
     "F07005L00": "tfc-siege-ultragnus",
@@ -52512,7 +52855,6 @@
     "F6484": "d14ml-ml-whatif-cap",
     "F0331": "d14ml-ml-whatif-cap",
     "BAN900558": "tfss-ss-one-sentinel",
-    "HSG2931": "tfss-ss-one-sentinel",
     "DK64": "tfss-ss-one-sentinel",
     "HSG0560": "tfss-ss-one-sentinel",
     "HASG0560": "tfss-ss-one-sentinel",
@@ -52728,10 +53070,8 @@
     "HAS941989": "tfc-siege-jetfire",
     "HAS796953": "tfc-siege-jetfire",
     "HAS900657": "tfc-siege-jetfire",
-    "HASG1972": "tfc-siege-jetfire",
     "G1099": "tfc-siege-jetfire",
     "GEN-SG-JETFIRE": "tfc-siege-jetfire",
-    "G1972": "tfc-siege-jetfire",
     "H5538": "bs4-paz-vizsla",
     "HASF9544": "bs4-paz-vizsla",
     "HSF0712": "hs8-hs-26",
@@ -53098,7 +53438,6 @@
     "HSF0384": "tfc-earthrise-optimus",
     "HAS399632": "tfc-earthrise-optimus",
     "HAS433985": "tfc-earthrise-optimus",
-    "HAS314710": "tfc-earthrise-optimus",
     "HAS948612": "tfc-earthrise-optimus",
     "HAS294797": "tfc-earthrise-optimus",
     "HAS257338": "tfc-earthrise-optimus",
@@ -53125,15 +53464,11 @@
     "HAS767021": "tfc-earthrise-optimus",
     "HAS174693": "tfc-earthrise-optimus",
     "HAS783817": "tfc-earthrise-optimus",
-    "HASG3362": "tfc-earthrise-optimus",
     "HASG3492": "tfc-earthrise-optimus",
-    "G3362": "tfc-earthrise-optimus",
     "G4385": "tfc-earthrise-optimus",
     "G3484": "tfc-earthrise-optimus",
-    "G0470": "tfc-earthrise-optimus",
     "G0153": "tfc-earthrise-optimus",
     "DCS07": "tfc-earthrise-optimus",
-    "HSG0470": "tfc-earthrise-optimus",
     "HSG0831": "tfc-earthrise-optimus",
     "HSG2144": "tfc-earthrise-optimus",
     "HSF0859": "tfc-earthrise-optimus",
@@ -53159,7 +53494,6 @@
     "TFBLKROTBOPRLEAD": "tfc-earthrise-optimus",
     "F0859": "tfc-earthrise-optimus",
     "F6735": "tfc-earthrise-optimus",
-    "HASG0470": "tfc-earthrise-optimus",
     "HASF7663": "tfc-earthrise-optimus",
     "HSG3492": "tfc-earthrise-optimus",
     "F06995L00": "tfc-earthrise-optimus",
@@ -55412,15 +55746,11 @@
     "BAN651587PO2": "shf6-todo",
     "BTN65158": "shf6-todo",
     "BAS65158": "shf6-todo",
-    "HAS367754": "tfc-kingdom-dinobot",
     "HAS962849": "tfc-kingdom-dinobot",
     "HAS851218": "tfc-kingdom-dinobot",
     "TFGRIM02": "tfc-kingdom-dinobot",
     "TFGRIM01": "tfc-kingdom-dinobot",
-    "G2264": "tfc-kingdom-dinobot",
-    "G1375": "tfc-kingdom-dinobot",
     "HBR-F40955L00-C": "tfc-kingdom-dinobot",
-    "HASG2264": "tfc-kingdom-dinobot",
     "HAS320124": "tfc-earthrise-megatron",
     "HAS959632": "tfc-earthrise-megatron",
     "HAS274116": "tfc-earthrise-megatron",
@@ -55431,7 +55761,6 @@
     "HAS516315": "tfc-earthrise-megatron",
     "HAS834532": "tfc-earthrise-megatron",
     "HAS836246": "tfc-earthrise-megatron",
-    "HASG3363": "tfc-earthrise-megatron",
     "F9736": "tfc-earthrise-megatron",
     "F9386": "tfc-earthrise-megatron",
     "HSF0366B-M": "tfc-earthrise-megatron",
@@ -68707,7 +69036,240 @@
     "HAS145842": "tfl22-target-heroic-maximal-dinobot",
     "HAS691111": "tfpotp-walgreens-wreck-gar",
     "G22675L00": "tfl-haslab-liokaiser",
-    "G2267": "tfl-haslab-liokaiser"
+    "G2267": "tfl-haslab-liokaiser",
+    "G1008": "tfaotp-voyager-autobot-red-alert",
+    "HAS285331": "tfaotp-voyager-autobot-red-alert",
+    "HSG1008": "tfaotp-voyager-autobot-red-alert",
+    "HASG1008": "tfaotp-voyager-autobot-red-alert",
+    "tcin:1013380230": "tfaotp-voyager-autobot-red-alert",
+    "G1023": "tfaotp-deluxe-aerialbot-air-raid",
+    "HSG1023": "tfaotp-deluxe-aerialbot-air-raid",
+    "HAS285348": "tfaotp-deluxe-aerialbot-air-raid",
+    "G1032": "tfaotp-deluxe-aerialbot-slingshot",
+    "HSG1032": "tfaotp-deluxe-aerialbot-slingshot",
+    "HAS285454": "tfaotp-deluxe-aerialbot-slingshot",
+    "G1022": "tfaotp-deluxe-the-thirteen-solus-prime",
+    "HASG1022": "tfaotp-deluxe-the-thirteen-solus-prime",
+    "HSG1022": "tfaotp-deluxe-the-thirteen-solus-prime",
+    "HAS285430": "tfaotp-deluxe-the-thirteen-solus-prime",
+    "G1025": "tfaotp-deluxe-fugitive-waspinator",
+    "HASG1025": "tfaotp-deluxe-fugitive-waspinator",
+    "HSG1025": "tfaotp-deluxe-fugitive-waspinator",
+    "HAS285447": "tfaotp-deluxe-fugitive-waspinator",
+    "G1026": "tfaotp-deluxe-the-thirteen-alchemist-prime",
+    "HSG1026": "tfaotp-deluxe-the-thirteen-alchemist-prime",
+    "HBR-G1026-C": "tfaotp-deluxe-the-thirteen-alchemist-prime",
+    "HASG1026": "tfaotp-deluxe-the-thirteen-alchemist-prime",
+    "HAS327154": "tfaotp-deluxe-the-thirteen-alchemist-prime",
+    "G1027": "tfaotp-deluxe-decepticon-crasher",
+    "HASG1027": "tfaotp-deluxe-decepticon-crasher",
+    "HAS327161": "tfaotp-deluxe-decepticon-crasher",
+    "HSG1027": "tfaotp-deluxe-decepticon-crasher",
+    "G1028": "tfaotp-deluxe-combaticon-vortex",
+    "HSG1028": "tfaotp-deluxe-combaticon-vortex",
+    "HAS327147": "tfaotp-deluxe-combaticon-vortex",
+    "G1024": "tfaotp-deluxe-aerialbot-fireflight",
+    "HSG1024": "tfaotp-deluxe-aerialbot-fireflight",
+    "HAS334152": "tfaotp-deluxe-aerialbot-fireflight",
+    "G1029": "tfaotp-deluxe-the-thirteen-micronus-prime",
+    "HSG1029": "tfaotp-deluxe-the-thirteen-micronus-prime",
+    "HASG1029": "tfaotp-deluxe-the-thirteen-micronus-prime",
+    "HAS332998": "tfaotp-deluxe-the-thirteen-micronus-prime",
+    "G1031": "tfaotp-deluxe-aerialbot-skydive",
+    "HAS332950": "tfaotp-deluxe-aerialbot-skydive",
+    "HSG1031": "tfaotp-deluxe-aerialbot-skydive",
+    "HASG1031": "tfaotp-deluxe-aerialbot-skydive",
+    "G1030": "tfaotp-deluxe-venin",
+    "HAS332974": "tfaotp-deluxe-venin",
+    "HASG1030": "tfaotp-deluxe-venin",
+    "HSG1030": "tfaotp-deluxe-venin",
+    "G2006": "tfaotp-deluxe-combaticon-blast-off",
+    "HSG2006": "tfaotp-deluxe-combaticon-blast-off",
+    "HAS380890": "tfaotp-deluxe-combaticon-blast-off",
+    "G2009": "tfaotp-deluxe-junkion-jalopy",
+    "HSG2009": "tfaotp-deluxe-junkion-jalopy",
+    "HASG2009": "tfaotp-deluxe-junkion-jalopy",
+    "HAS380913": "tfaotp-deluxe-junkion-jalopy",
+    "G2007": "tfaotp-deluxe-quickstrike",
+    "HAS380937": "tfaotp-deluxe-quickstrike",
+    "HSG2007": "tfaotp-deluxe-quickstrike",
+    "HASG2007": "tfaotp-deluxe-quickstrike",
+    "G2004": "tfaotp-deluxe-the-thirteen-quintus-prime",
+    "HSG2004": "tfaotp-deluxe-the-thirteen-quintus-prime",
+    "HAS380906": "tfaotp-deluxe-the-thirteen-quintus-prime",
+    "HASG2004": "tfaotp-deluxe-the-thirteen-quintus-prime",
+    "5010996380920": "afmon-hasbro-transformers-age-of-the-primes-deluxe-class-targetmaster-sureshot-hsg2005",
+    "G2005": "afmon-hasbro-transformers-age-of-the-primes-deluxe-class-targetmaster-sureshot-hsg2005",
+    "HAS380920": "afmon-hasbro-transformers-age-of-the-primes-deluxe-class-targetmaster-sureshot-hsg2005",
+    "HASG2005": "afmon-hasbro-transformers-age-of-the-primes-deluxe-class-targetmaster-sureshot-hsg2005",
+    "G2018": "tfaotp-deluxe-cliffjumper",
+    "HASG2018": "tfaotp-deluxe-cliffjumper",
+    "HSG2018": "tfaotp-deluxe-cliffjumper",
+    "HAS380944": "tfaotp-deluxe-cliffjumper",
+    "G2010": "tfaotp-deluxe-autobot-powerglide",
+    "HASG2010": "tfaotp-deluxe-autobot-powerglide",
+    "HSG2010": "tfaotp-deluxe-autobot-powerglide",
+    "HAS380968": "tfaotp-deluxe-autobot-powerglide",
+    "G2012": "tfaotp-deluxe-autobot-ratchet",
+    "HSG2012": "tfaotp-deluxe-autobot-ratchet",
+    "HASG2012": "tfaotp-deluxe-autobot-ratchet",
+    "HAS380999": "tfaotp-deluxe-autobot-ratchet",
+    "G2008": "tfaotp-deluxe-smokescreen",
+    "HAS381026": "tfaotp-deluxe-smokescreen",
+    "HSG2008": "tfaotp-deluxe-smokescreen",
+    "HASG2008": "tfaotp-deluxe-smokescreen",
+    "G2011": "tfaotp-deluxe-swerve",
+    "HSG2011": "tfaotp-deluxe-swerve",
+    "HASG2011": "tfaotp-deluxe-swerve",
+    "HAS381002": "tfaotp-deluxe-swerve",
+    "G2016": "tfaotp-deluxe-autobot-blanker",
+    "G2016IS": "tfaotp-deluxe-autobot-blanker",
+    "HASG2016": "tfaotp-deluxe-autobot-blanker",
+    "HSG2016": "tfaotp-deluxe-autobot-blanker",
+    "HAS381019": "tfaotp-deluxe-autobot-blanker",
+    "G2017": "tfaotp-deluxe-fangry",
+    "HSG2017": "tfaotp-deluxe-fangry",
+    "G2017IS": "tfaotp-deluxe-fangry",
+    "HAS380982": "tfaotp-deluxe-fangry",
+    "G2013": "tfaotp-deluxe-autobot-joyride",
+    "HSG2013": "tfaotp-deluxe-autobot-joyride",
+    "G2013IS": "tfaotp-deluxe-autobot-joyride",
+    "HAS380975": "tfaotp-deluxe-autobot-joyride",
+    "HASG2013": "tfaotp-deluxe-autobot-joyride",
+    "G2014": "tfaotp-deluxe-autobot-tailgate",
+    "HSG2014": "tfaotp-deluxe-autobot-tailgate",
+    "G2014IS": "tfaotp-deluxe-autobot-tailgate",
+    "HAS380951": "tfaotp-deluxe-autobot-tailgate",
+    "G1007": "tfaotp-voyager-the-thirteen-prima-prime",
+    "HSG1007": "tfaotp-voyager-the-thirteen-prima-prime",
+    "HBR-G1007-C": "tfaotp-voyager-the-thirteen-prima-prime",
+    "HASG1007": "tfaotp-voyager-the-thirteen-prima-prime",
+    "G1018": "tfaotp-voyager-rescue-bot-heatwave",
+    "HAS319708": "tfaotp-voyager-rescue-bot-heatwave",
+    "HSG1018": "tfaotp-voyager-rescue-bot-heatwave",
+    "HASG1018": "tfaotp-voyager-rescue-bot-heatwave",
+    "G1019": "tfaotp-voyager-sky-byte",
+    "HAS319692": "tfaotp-voyager-sky-byte",
+    "HASG1019": "tfaotp-voyager-sky-byte",
+    "HSG1019": "tfaotp-voyager-sky-byte",
+    "G1020": "tfaotp-voyager-the-thirteen-alpha-trion",
+    "HASG1020": "tfaotp-voyager-the-thirteen-alpha-trion",
+    "HSG1020": "tfaotp-voyager-the-thirteen-alpha-trion",
+    "HAS319890": "tfaotp-voyager-the-thirteen-alpha-trion",
+    "G1021": "tfaotp-voyager-flatline",
+    "HAS319883": "tfaotp-voyager-flatline",
+    "HSG1021": "tfaotp-voyager-flatline",
+    "HASG1021": "tfaotp-voyager-flatline",
+    "G1996": "tfaotp-voyager-the-thirteen-amalgamous-prime",
+    "HSG1996": "tfaotp-voyager-the-thirteen-amalgamous-prime",
+    "HASG1996": "tfaotp-voyager-the-thirteen-amalgamous-prime",
+    "HAS356062": "tfaotp-voyager-the-thirteen-amalgamous-prime",
+    "G1997": "tfaotp-voyager-combaticon-brawl",
+    "HAS356116": "tfaotp-voyager-combaticon-brawl",
+    "HSG1997": "tfaotp-voyager-combaticon-brawl",
+    "G1998": "tfaotp-voyager-junkion-wreck-gar",
+    "HAS356130": "tfaotp-voyager-junkion-wreck-gar",
+    "HSG1998": "tfaotp-voyager-junkion-wreck-gar",
+    "HASG1998": "tfaotp-voyager-junkion-wreck-gar",
+    "5010996356147": "afmon-hasbro-nexus-prime-hsg2001",
+    "G2001": "afmon-hasbro-nexus-prime-hsg2001",
+    "HAS356147": "afmon-hasbro-nexus-prime-hsg2001",
+    "HASG2001": "afmon-hasbro-nexus-prime-hsg2001",
+    "G1999": "tfaotp-voyager-sideways",
+    "HASG1999": "tfaotp-voyager-sideways",
+    "HSG1999": "tfaotp-voyager-sideways",
+    "G2002": "tfaotp-voyager-combaticon-swindle",
+    "HSG2002": "tfaotp-voyager-combaticon-swindle",
+    "G2002IS": "tfaotp-voyager-combaticon-swindle",
+    "HAS356154": "tfaotp-voyager-combaticon-swindle",
+    "G2003": "tfaotp-voyager-the-thirteen-vector-prime",
+    "HASG2003": "tfaotp-voyager-the-thirteen-vector-prime",
+    "HSG2003": "tfaotp-voyager-the-thirteen-vector-prime",
+    "G2003IS": "tfaotp-voyager-the-thirteen-vector-prime",
+    "HAS356093": "tfaotp-voyager-the-thirteen-vector-prime",
+    "G0487": "tfaotp-leader-g2-universe-grimlock-autobot-wheelie",
+    "HSG0487": "tfaotp-leader-g2-universe-grimlock-autobot-wheelie",
+    "HAS299505": "tfaotp-leader-g2-universe-grimlock-autobot-wheelie",
+    "G0486": "tfaotp-leader-the-thirteen-megatronus-the-fallen",
+    "HASG0486": "tfaotp-leader-the-thirteen-megatronus-the-fallen",
+    "HSG0486": "tfaotp-leader-the-thirteen-megatronus-the-fallen",
+    "HAS299499": "tfaotp-leader-the-thirteen-megatronus-the-fallen",
+    "G0488": "tfaotp-leader-the-thirteen-onyx-prime",
+    "HAS319715": "tfaotp-leader-the-thirteen-onyx-prime",
+    "HSG0488": "tfaotp-leader-the-thirteen-onyx-prime",
+    "HASG0488": "tfaotp-leader-the-thirteen-onyx-prime",
+    "G1906": "tfaotp-leader-maximal-big-convoy",
+    "HAS368126": "tfaotp-leader-maximal-big-convoy",
+    "HSG1906": "tfaotp-leader-maximal-big-convoy",
+    "HASG1906": "tfaotp-leader-maximal-big-convoy",
+    "G1907": "tfaotp-leader-razorclaw",
+    "HAS368133": "tfaotp-leader-razorclaw",
+    "HSG1907": "tfaotp-leader-razorclaw",
+    "HASG1907": "tfaotp-leader-razorclaw",
+    "G1908": "tfaotp-leader-the-thirteen-liege-maximo",
+    "HAS368140": "tfaotp-leader-the-thirteen-liege-maximo",
+    "HASG1908": "tfaotp-leader-the-thirteen-liege-maximo",
+    "HSG1908": "tfaotp-leader-the-thirteen-liege-maximo",
+    "5010996372604": "afmon-hasbro-transformers-age-of-the-primes-leader-class-herald-of-unicro-hsg2784",
+    "G2784": "afmon-hasbro-transformers-age-of-the-primes-leader-class-herald-of-unicro-hsg2784",
+    "HAS372604": "afmon-hasbro-transformers-age-of-the-primes-leader-class-herald-of-unicro-hsg2784",
+    "G2784IS": "afmon-hasbro-transformers-age-of-the-primes-leader-class-herald-of-unicro-hsg2784",
+    "G2783": "tfaotp-leader-decepticon-megazarak",
+    "HAS372598": "tfaotp-leader-decepticon-megazarak",
+    "HSG2783": "tfaotp-leader-decepticon-megazarak",
+    "G0752": "tfaotp-commander-aerialbot-silverbolt",
+    "HAS314567": "tfaotp-commander-aerialbot-silverbolt",
+    "HSG0752": "tfaotp-commander-aerialbot-silverbolt",
+    "5010996367983": "afmon-hasbro-transformers-generations-age-of-the-primes-commander-onslaug-hsg1966",
+    "G1966": "afmon-hasbro-transformers-generations-age-of-the-primes-commander-onslaug-hsg1966",
+    "HAS367983": "afmon-hasbro-transformers-generations-age-of-the-primes-commander-onslaug-hsg1966",
+    "G1972": "tfaotp-commander-armada-jetfire",
+    "HSG1972": "tfaotp-commander-armada-jetfire",
+    "HASG1972": "tfaotp-commander-armada-jetfire",
+    "G19725L00": "tfaotp-commander-armada-jetfire",
+    "G0470": "tfaotp-titan-the-thirteen-star-optimus-prime",
+    "HASG0470": "tfaotp-titan-the-thirteen-star-optimus-prime",
+    "HSG0470": "tfaotp-titan-the-thirteen-star-optimus-prime",
+    "HAS314710": "tfaotp-titan-the-thirteen-star-optimus-prime",
+    "G1490": "tfaotp-walmart-excellion",
+    "HAS312921": "tfaotp-walmart-excellion",
+    "HASG1490": "tfaotp-walmart-excellion",
+    "G14905L00": "tfaotp-walmart-excellion",
+    "G1489": "tfaotp-walmart-sideways-cybertron",
+    "HAS318466": "tfaotp-walmart-sideways-cybertron",
+    "HASG1489": "tfaotp-walmart-sideways-cybertron",
+    "G2257": "tfaotp-walmart-dark-energon-cybertronic",
+    "HASG2257": "tfaotp-walmart-dark-energon-cybertronic",
+    "G3363": "tfaotp-walmart-dark-energon-megatron",
+    "HASG3363": "tfaotp-walmart-dark-energon-megatron",
+    "G3363IS": "tfaotp-walmart-dark-energon-megatron",
+    "G2256": "tfaotp-walmart-energon-cybertread",
+    "HASG2256": "tfaotp-walmart-energon-cybertread",
+    "G2256IS": "tfaotp-walmart-energon-cybertread",
+    "G3362": "tfaotp-walmart-energon-optimus-prime",
+    "HASG3362": "tfaotp-walmart-energon-optimus-prime",
+    "G1376": "tfaotp-amazon-carnivac-vs-fisitron",
+    "HAS318527": "tfaotp-amazon-carnivac-vs-fisitron",
+    "HAS327468": "tfaotp-amazon-autobot-sandstorm-vs-slugslinger",
+    "G1377": "tfaotp-amazon-spinister-vs-topspin",
+    "HAS318558": "tfaotp-amazon-spinister-vs-topspin",
+    "HSG1377": "tfaotp-amazon-spinister-vs-topspin",
+    "G1374": "tfaotp-target-ultra-magnus-autobot-bumper-vs-horri-bull-ne",
+    "HAS321787": "tfaotp-target-ultra-magnus-autobot-bumper-vs-horri-bull-ne",
+    "G1092": "tfaotp-selects-trypticon",
+    "HASG1092": "tfaotp-selects-trypticon",
+    "HAS288820": "tfaotp-selects-trypticon",
+    "HSG1092": "tfaotp-selects-trypticon",
+    "G1375": "tfaotp-selects-g2-universe-dinobot-snarl-g2-universe-dinobo",
+    "G2264": "tfaotp-selects-g2-dinobot-swoop-g2-dinobot-sludge",
+    "HASG2264": "tfaotp-selects-g2-dinobot-swoop-g2-dinobot-sludge",
+    "HAS367754": "tfaotp-selects-g2-dinobot-swoop-g2-dinobot-sludge",
+    "5010996393029": "afmon-hasbro-transformers-age-of-the-primes-generations-selects-mirage-ironhide-and-bluest-hsg2266",
+    "G2266": "afmon-hasbro-transformers-age-of-the-primes-generations-selects-mirage-ironhide-and-bluest-hsg2266",
+    "HASG2266": "afmon-hasbro-transformers-age-of-the-primes-generations-selects-mirage-ironhide-and-bluest-hsg2266",
+    "5010996403995": "afmon-hasbro-transformers-age-of-the-primes-voyager-class-sentinel-prime-hsg2931",
+    "G2931": "afmon-hasbro-transformers-age-of-the-primes-voyager-class-sentinel-prime-hsg2931",
+    "G2931IS": "afmon-hasbro-transformers-age-of-the-primes-voyager-class-sentinel-prime-hsg2931"
   },
   "collapsed": [
     {
@@ -71955,7 +72517,7 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-10-03T04:03:16.107990+00:00",
+  "updatedAt": "2026-10-03T04:28:54.011120+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -72059,6 +72621,12 @@
     "tfDensify2b": {
       "at": "2026-10-03T04:03:16.107990+00:00",
       "removed": 0
+    },
+    "aotpDensify": {
+      "at": "2026-10-03T04:28:54.011120+00:00",
+      "removed": 0,
+      "added": 60,
+      "fixed": 13
     }
   },
   "removed": [
@@ -75375,6 +75943,70 @@
       "imageDropped": false,
       "imageUrls": [],
       "reason": "TF densify: codes belong to Power of the Primes Evolution Optimus Prime (630509620777/E1147) and Legacy Laser Optimus Prime (F3061), not this figure"
+    },
+    {
+      "figureId": "tfc-siege-jetfire",
+      "codes": [
+        "HASG1972",
+        "G1972"
+      ],
+      "imageDropped": false,
+      "imageUrls": [],
+      "reason": "AotP densify: codes belong to Age of the Primes Armada Jetfire"
+    },
+    {
+      "figureId": "tfc-earthrise-optimus",
+      "codes": [
+        "HAS314710",
+        "HASG3362",
+        "G3362",
+        "G0470",
+        "HSG0470",
+        "HASG0470"
+      ],
+      "imageDropped": false,
+      "imageUrls": [],
+      "reason": "AotP densify: codes belong to Age of the Primes Energon Optimus Prime, The Thirteen Star Optimus Prime"
+    },
+    {
+      "figureId": "tfc-earthrise-megatron",
+      "codes": [
+        "HASG3363"
+      ],
+      "imageDropped": false,
+      "imageUrls": [],
+      "reason": "AotP densify: codes belong to Age of the Primes Dark Energon Megatron"
+    },
+    {
+      "figureId": "tfc-siege-ultragnus",
+      "codes": [
+        "HAS321787",
+        "G1374"
+      ],
+      "imageDropped": false,
+      "imageUrls": [],
+      "reason": "AotP densify: codes belong to Age of the Primes Ultra Magnus, Autobot Bumper vs. Horri-Bull, Nemesis Prime"
+    },
+    {
+      "figureId": "tfc-kingdom-dinobot",
+      "codes": [
+        "HAS367754",
+        "G2264",
+        "G1375",
+        "HASG2264"
+      ],
+      "imageDropped": false,
+      "imageUrls": [],
+      "reason": "AotP densify: codes belong to Age of the Primes G2 Dinobot Swoop / G2 Dinobot Sludge, G2 Universe Dinobot Snarl / G2 Universe Dinobot Slug"
+    },
+    {
+      "figureId": "tfss-ss-one-sentinel",
+      "codes": [
+        "HSG2931"
+      ],
+      "imageDropped": false,
+      "imageUrls": [],
+      "reason": "AotP densify: codes belong to Age of the Primes Sentinel Prime"
     }
   ]
 }
