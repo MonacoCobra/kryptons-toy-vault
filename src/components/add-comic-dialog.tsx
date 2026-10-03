@@ -44,8 +44,9 @@ export function AddComicDialog({
 
   const label = comic ? comicLabel(comic) : custom ? comicLabel(custom) : "Custom issue";
   const [acquiredDate, setAcquiredDate] = useState(existing?.acquiredDate ?? new Date().toISOString().slice(0, 10));
+  const coverPrice = comic?.msrp ?? custom?.msrp ?? null;
   const [acquiredPrice, setAcquiredPrice] = useState(
-    existing?.acquiredPrice?.toString() ?? (comic?.msrp ?? custom?.msrp ?? 4.99).toString(),
+    existing?.acquiredPrice?.toString() ?? "",
   );
   const [grade, setGrade] = useState<ComicGrade>(existing?.grade ?? "raw");
   const [notes, setNotes] = useState(existing?.notes ?? "");
@@ -55,12 +56,12 @@ export function AddComicDialog({
     if (!open) return;
     setAcquiredDate(existing?.acquiredDate ?? new Date().toISOString().slice(0, 10));
     setAcquiredPrice(
-      existing?.acquiredPrice?.toString() ?? (comic?.msrp ?? custom?.msrp ?? 4.99).toString(),
+      existing?.acquiredPrice?.toString() ?? "",
     );
     setGrade(existing?.grade ?? "raw");
     setNotes(existing?.notes ?? "");
     setPhoto(existing?.photoDataUrl ?? initialPhoto);
-  }, [open, comic?.id, custom?.id, existing?.id, existing?.acquiredDate, existing?.acquiredPrice, existing?.grade, existing?.notes, existing?.photoDataUrl, comic?.msrp, custom?.msrp, initialPhoto]);
+  }, [open, comic?.id, custom?.id, existing?.id, existing?.acquiredDate, existing?.acquiredPrice, existing?.grade, existing?.notes, existing?.photoDataUrl, initialPhoto]);
 
   async function onFile(file?: File) {
     if (!file) return;
@@ -141,6 +142,7 @@ export function AddComicDialog({
               min="0"
               step="0.01"
               value={acquiredPrice}
+              placeholder={coverPrice ? `Cover ${coverPrice.toFixed(2)}` : "Unknown"}
               onChange={(e) => setAcquiredPrice(e.target.value)}
             />
           </div>

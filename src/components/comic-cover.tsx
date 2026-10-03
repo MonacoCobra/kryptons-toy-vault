@@ -11,7 +11,7 @@ type CoverSource = Pick<CatalogComic, "series" | "issue" | "publisher" | "varian
   key?: boolean;
   id?: string;
   coverDate?: string;
-  msrp?: number;
+  msrp?: number | null;
   cover?: string;
 };
 

@@ -844,7 +844,7 @@ function CustomComicDialog({
   const [issue, setIssue] = useState("");
   const [publisher, setPublisher] = useState("");
   const [coverDate, setCoverDate] = useState("");
-  const [msrp, setMsrp] = useState("4.99");
+  const [msrp, setMsrp] = useState("");
   const [format, setFormat] = useState<ComicFormat>(collected ? "tpb" : "single");
   const [variant, setVariant] = useState("");
   const [draft, setDraft] = useState<CustomComic | null>(null);
@@ -862,7 +862,7 @@ function CustomComicDialog({
       issue: issue.trim() || "nn",
       publisher: publisher.trim() || "Unknown",
       coverDate: coverDate || undefined,
-      msrp: msrp ? Number(msrp) : undefined,
+      msrp: Number(msrp) > 0 ? Number(msrp) : undefined,
       format,
       variant: variant.trim() || undefined,
     };

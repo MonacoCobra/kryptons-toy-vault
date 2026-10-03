@@ -23,7 +23,7 @@ type CatalogRow = {
   writers: unknown;
   artists: unknown;
   description: string;
-  msrp: number;
+  msrp: number | string | null;
   format: string;
   variant: string | null;
   upc: string | null;
@@ -115,7 +115,7 @@ function rowToComic(row: CatalogRow): CatalogComic {
     writers: peopleField(row.writers),
     artists: peopleField(row.artists),
     description: cleanStr(row.description),
-    msrp: Number(row.msrp) || 4.99,
+    msrp: Number(row.msrp) > 0 ? Number(row.msrp) : null,
     format: normalizeComicFormat(row.format),
     variant: variant || undefined,
     upc: upc || undefined,
@@ -163,7 +163,7 @@ function asComic(value: unknown): CatalogComic | null {
     writers: peopleField(raw.writers),
     artists: peopleField(raw.artists),
     description: cleanStr(raw.description),
-    msrp: Number(raw.msrp) || 4.99,
+    msrp: Number(raw.msrp) > 0 ? Number(raw.msrp) : null,
     format: normalizeComicFormat(raw.format),
     variant: variant || undefined,
     upc: cleanStr(raw.upc) || undefined,
@@ -241,7 +241,7 @@ async function upsertPermanent(comics: CatalogComic[], sourceWeek: string): Prom
           JSON.stringify(c.writers ?? []),
           JSON.stringify(c.artists ?? []),
           c.description || "",
-          c.msrp ?? 4.99,
+          c.msrp && c.msrp > 0 ? c.msrp : null,
           c.format || "single",
           c.variant ?? null,
           c.upc ?? null,

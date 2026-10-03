@@ -318,7 +318,8 @@ export type CatalogFigure = {
   company: CompanyId;
   kind: ItemKind;
   releaseDate: string;
-  msrp: number;
+  /** Retail price; null when unknown (never a placeholder). */
+  msrp: number | null;
   scale: string;
   sku?: string;
   exclusive?: string;
@@ -357,7 +358,8 @@ export type CatalogComic = {
   writers: string[];
   artists: string[];
   description: string;
-  msrp: number;
+  /** Cover price; null when unknown (never a placeholder). */
+  msrp: number | null;
   format: ComicFormat;
   variant?: string;
   upc?: string;

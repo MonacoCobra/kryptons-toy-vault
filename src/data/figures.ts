@@ -598,7 +598,7 @@ function archiveToFigure(r: ArchiveRow): CatalogFigure {
     company: r.company,
     kind: r.kind,
     releaseDate: r.releaseDate,
-    msrp: r.msrp,
+    msrp: r.msrp > 0 ? r.msrp : null,
     scale: r.scale,
     demand: r.demand,
     tags: r.tags,

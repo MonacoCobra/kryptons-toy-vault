@@ -29,7 +29,7 @@ export function AddFigureDialog({
   const addFigure = useVault((s) => s.addFigure);
   const updateFigure = useVault((s) => s.updateFigure);
   const [acquiredDate, setAcquiredDate] = useState(existing?.acquiredDate ?? new Date().toISOString().slice(0, 10));
-  const [acquiredPrice, setAcquiredPrice] = useState(existing?.acquiredPrice?.toString() ?? figure.msrp.toString());
+  const [acquiredPrice, setAcquiredPrice] = useState(existing?.acquiredPrice?.toString() ?? "");
   const [condition, setCondition] = useState<Condition>(existing?.condition ?? "mib");
   const [notes, setNotes] = useState(existing?.notes ?? "");
   const [photo, setPhoto] = useState(existing?.photoDataUrl);
@@ -81,6 +81,7 @@ export function AddFigureDialog({
               min="0"
               step="0.01"
               value={acquiredPrice}
+              placeholder={figure.msrp ? `MSRP ${figure.msrp.toFixed(2)}` : "Unknown"}
               onChange={(e) => setAcquiredPrice(e.target.value)}
             />
           </div>

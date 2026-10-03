@@ -83,6 +83,8 @@ async function ensureTable(client) {
   const mig = join(ROOT, "migrations/0006_figure_catalog.sql");
   const sql = readFileSync(mig, "utf8");
   await client.query(sql);
+  // Unknown MSRP is stored as null (no invented default).
+  await client.query(readFileSync(join(ROOT, "migrations/0008_msrp_nullable.sql"), "utf8"));
 }
 
 async function main() {
@@ -154,7 +156,7 @@ async function main() {
           f.company,
           f.kind || "figure",
           f.releaseDate,
-          Number(f.msrp) || 24.99,
+          Number(f.msrp) > 0 ? Number(f.msrp) : null,
           f.scale || '6"',
           Number(f.demand) || 1,
           JSON.stringify(tags),

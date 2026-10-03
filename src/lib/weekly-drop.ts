@@ -195,6 +195,12 @@ function num(value: unknown, fallback: number): number {
   return Number.isFinite(n) ? n : fallback;
 }
 
+/** Price parser: missing / unparseable / non-positive → null (unknown). Never a made-up default. */
+function price(value: unknown): number | null {
+  const n = typeof value === "number" ? value : Number.parseFloat(str(value).replace(/[^0-9.]/g, ""));
+  return Number.isFinite(n) && n > 0 ? n : null;
+}
+
 function dateish(value: unknown, fallback: string): string {
   const s = str(value);
   const m = s.match(/(\d{4}-\d{2}-\d{2})/);
@@ -435,7 +441,7 @@ function normalizeComics(rows: unknown[], week: string, fallbackDate: string): C
       writers: people(r.writers),
       artists: people(r.artists),
       description: str(r.description) || `Street date ${street}.`,
-      msrp: num(r.msrp, 4.99),
+      msrp: price(r.msrp),
       format: asFormat(r.format, series),
       variant: variant || undefined,
       demand: 1,
@@ -473,7 +479,7 @@ function normalizeFigures(rows: unknown[], week: string, fallbackDate: string): 
         company,
         kind,
         releaseDate: dateish(r.releaseDate, fallbackDate),
-        msrp: num(r.msrp, kind === "kit" ? 49.99 : 24.99),
+        msrp: price(r.msrp),
         scale: str(r.scale) || (kind === "kit" ? "1/144" : '6"'),
         exclusive: str(r.exclusive) || undefined,
         imageUrl: (() => {
@@ -513,7 +519,7 @@ function coerceCachedComics(rows: unknown[], week: string): CatalogComic[] {
       writers: people(r.writers),
       artists: people(r.artists),
       description: str(r.description) || `Street date ${street}.`,
-      msrp: num(r.msrp, 4.99),
+      msrp: price(r.msrp),
       format: asFormat(r.format, series),
       variant: variant || undefined,
       demand: num(r.demand, 1),

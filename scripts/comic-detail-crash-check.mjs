@@ -43,7 +43,7 @@ function normalizeSeedComic(row, weekKey) {
     writers: typeof row.writers === "string" ? row.writers : row.writers,
     artists: typeof row.artists === "string" ? row.artists : row.artists,
     description: row.description || `Street date ${street}.`,
-    msrp: Number(row.msrp) || 4.99,
+    msrp: Number(row.msrp) > 0 ? Number(row.msrp) : null,
     format: row.format || "single",
     variant: variant || undefined,
     demand: 1,

@@ -66,7 +66,7 @@ export function catalogFromCustom(custom: CustomComic): CatalogComic {
     writers: custom.writers ?? [],
     artists: custom.artists ?? [],
     description: custom.description ?? "",
-    msrp: custom.msrp ?? 0,
+    msrp: custom.msrp && custom.msrp > 0 ? custom.msrp : null,
     format: normalizeComicFormat(custom.format),
     variant: custom.variant,
     upc: custom.upc,

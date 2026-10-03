@@ -32,7 +32,7 @@ type FigureRow = {
   company: string;
   kind: string;
   release_date: string;
-  msrp: number;
+  msrp: number | string | null;
   scale: string;
   demand: number;
   tags: unknown;
@@ -50,7 +50,7 @@ export type FigureOverlayInput = {
   company: string;
   kind?: string;
   releaseDate: string;
-  msrp: number;
+  msrp: number | null;
   scale: string;
   demand: number;
   tags: string[] | string;
@@ -94,7 +94,7 @@ function rowToFigure(row: FigureRow): CatalogFigure {
     company: row.company as CompanyId,
     kind: (row.kind as ItemKind) || "figure",
     releaseDate: row.release_date,
-    msrp: Number(row.msrp) || 24.99,
+    msrp: Number(row.msrp) > 0 ? Number(row.msrp) : null,
     scale: row.scale || '6"',
     demand: Number(row.demand) || 1,
     tags: asArray(row.tags).map(String),
@@ -130,8 +130,11 @@ export function validateFigureOverlayInput(raw: unknown): CatalogFigure | null {
   if (kind !== "figure" && kind !== "kit") return null;
   if (releaseDate < RELEASE_FLOOR) return null;
   if (!Number.isFinite(Date.parse(releaseDate))) return null;
-  const msrp = Number(r.msrp);
-  if (!Number.isFinite(msrp) || msrp < 0) return null;
+  // Missing / blank / 0 MSRP means "unknown" (null) — never a made-up default.
+  const msrpIn: unknown = r.msrp;
+  const rawMsrp = msrpIn === null || msrpIn === undefined || msrpIn === "" ? 0 : Number(msrpIn);
+  if (!Number.isFinite(rawMsrp) || rawMsrp < 0) return null;
+  const msrp = rawMsrp > 0 ? rawMsrp : null;
   const demand = Number(r.demand);
   if (!Number.isFinite(demand) || demand <= 0) return null;
   const scale = typeof r.scale === "string" && r.scale.trim() ? r.scale.trim() : '6"';
@@ -261,7 +264,7 @@ async function upsertOverlayRows(figures: CatalogFigure[]): Promise<FigureUpsert
             f.company,
             f.kind || "figure",
             f.releaseDate,
-            f.msrp ?? 24.99,
+            f.msrp && f.msrp > 0 ? f.msrp : null,
             f.scale || '6"',
             f.demand ?? 1,
             JSON.stringify(f.tags ?? []),

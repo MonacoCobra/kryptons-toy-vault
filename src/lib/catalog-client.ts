@@ -195,7 +195,7 @@ function expandRow(shard: ComicSearchShard, row: SearchRow): CatalogComic {
     writers,
     artists,
     description: row[16] ?? "",
-    msrp: row[10],
+    msrp: Number(row[10]) > 0 ? Number(row[10]) : null,
     format: (row[4] || "single") as CatalogComic["format"],
     variant: row[5] || undefined,
     upc: row[6] || undefined,

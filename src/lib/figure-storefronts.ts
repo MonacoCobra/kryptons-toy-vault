@@ -245,7 +245,8 @@ function mapProduct(
   if (!name) return null;
   const kind = kindFor(p);
   const variant = p.variants?.[0];
-  const msrp = parseMoney(variant?.price) || (kind === "kit" ? 49.99 : 24.99);
+  const listed = parseMoney(variant?.price);
+  const msrp = listed > 0 ? listed : null;
   const imageUrl = p.images?.find((i) => i.src)?.src;
   const tags = new Set<string>(["this-week", "storefront", source.id, source.company, kind]);
   for (const t of tagList(p.tags).slice(0, 8)) tags.add(t.toLowerCase());
