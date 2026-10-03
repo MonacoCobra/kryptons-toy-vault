@@ -21,10 +21,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { COMIC_FORMAT_LABELS, comicFormatLabel, isCollectedComic } from "@/lib/comic-format";
 import { collectedSeriesIdentity, seriesDisplayLabel, seriesRunYearFor, type LadderSortMode } from "@/lib/comic-series";
 import { useComicsLadder } from "@/lib/use-comics-ladder";
-import { formatMonthYear, usd } from "@/lib/format";
+import { formatMonthYear, usdOrDash } from "@/lib/format";
 import { normalizePublisher } from "@/lib/locg-import";
 import { useEnsureComicLibrary, useLiveComics } from "@/lib/live-store";
-import { comicEstimate } from "@/lib/market";
+import { msrpPrice } from "@/lib/vault-math";
 import { useVault } from "@/lib/store";
 import type { CatalogComic, ComicFormat, CustomComic } from "@/lib/types";
 import { cn, slug } from "@/lib/utils";
@@ -762,7 +762,6 @@ function ComicGrid({
       renderItem={(comic) => {
         const have = ownedIds.has(comic.id);
         const want = Boolean(wanted[comic.id]);
-        const est = comicEstimate(comic);
         const year = seriesRunYearFor(comic, yearById);
         const isCustom = comic.id.startsWith("custom-");
         const cover = <ComicCover comic={comic} resolveRemote className="aspect-2/3" />;
@@ -795,7 +794,7 @@ function ComicGrid({
                 {isCustom ? <Badge>Custom</Badge> : null}
               </div>
               <div className="flex items-center justify-between">
-                <span className="tabular text-sm text-gold">{usd(est)}</span>
+                <span className="tabular text-sm text-gold">{usdOrDash(msrpPrice(comic.msrp))}</span>
                 <Button size="sm" variant="ghost" onClick={() => onAdd(comic)}>
                   {have ? "Edit" : "Add"}
                 </Button>

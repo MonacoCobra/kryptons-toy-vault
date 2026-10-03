@@ -36,7 +36,7 @@ export function PulseDeltaCard({
           <p className={cn("font-display text-3xl tracking-wide tabular", valTone)}>
             {formatValueDelta(delta.value)}
           </p>
-          <p className="mt-1 text-xs text-subtle">{usd(current.value)} est.</p>
+          <p className="mt-1 text-xs text-subtle">{usd(current.value)} total</p>
         </div>
       </div>
     </div>

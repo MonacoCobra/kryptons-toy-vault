@@ -4,11 +4,11 @@ import { comicLabel } from "@/lib/comic-label";
 import { ComicCover } from "@/components/comic-cover";
 import { FigureArt } from "@/components/figure-art";
 import { Button } from "@/components/ui/button";
-import { usd } from "@/lib/format";
+import { usdOrDash } from "@/lib/format";
 import { useFigureExtras, useLiveComics } from "@/lib/live-store";
-import { comicEstimate, figureMarket } from "@/lib/market";
 import { useVault } from "@/lib/store";
 import { useResolvedCatalog } from "@/lib/use-catalog";
+import { msrpPrice } from "@/lib/vault-math";
 
 export const Route = createFileRoute("/wishlist")({ component: WishlistPage });
 
@@ -59,7 +59,7 @@ function WishlistPage() {
                     </Link>
                     <p className="text-xs text-muted">{f.line}</p>
                   </div>
-                  <p className="tabular text-sm text-gold">{usd(figureMarket(f).estimate)}</p>
+                  <p className="tabular text-sm text-gold">MSRP {usdOrDash(msrpPrice(f.msrp))}</p>
                   <Button size="sm" variant="ghost" onClick={() => toggleWantFigure(f.id)}>
                     Drop
                   </Button>
@@ -91,7 +91,7 @@ function WishlistPage() {
                     </Link>
                     <p className="text-xs text-muted">{c.publisher}</p>
                   </div>
-                  <p className="tabular text-sm text-gold">{usd(comicEstimate(c))}</p>
+                  <p className="tabular text-sm text-gold">Cover {usdOrDash(msrpPrice(c.msrp))}</p>
                   <Button size="sm" variant="ghost" onClick={() => toggleWantComic(c.id)}>
                     Drop
                   </Button>

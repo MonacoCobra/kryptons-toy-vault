@@ -8,14 +8,13 @@ import { FigureArt } from "@/components/figure-art";
 import { FigureSetScroller } from "@/components/figure-set-scroller";
 import { POPULAR_FRANCHISES, TRANSFORMERS_PARTIES } from "@/lib/figure-property";
 import { getFigureSetMembers } from "@/lib/figure-sets";
-import { MarketEstimate } from "@/components/market-estimate";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { formatDate, usd } from "@/lib/format";
+import { formatDate, usdOrDash } from "@/lib/format";
 import { useEnsureFigureLibrary, useFigureExtras, useFigureLib, useLiveDrop, useLiveFigures } from "@/lib/live-store";
-import { figureHistory, figureMarket } from "@/lib/market";
 import { CONDITIONS, useVault } from "@/lib/store";
 import type { CatalogFigure } from "@/lib/types";
+import { itemValue, msrpPrice, paidPrice } from "@/lib/vault-math";
 
 export const Route = createFileRoute("/figures/$figureId")({
   component: FigureDetail,
@@ -70,10 +69,8 @@ function FigureDetail() {
   if (!figure) throw notFound();
 
   const company = COMPANY_BY_ID[figure.company];
-  const market = figureMarket(figure);
-  const prev = figureMarket(figure, -1).estimate;
-  const deltaPct = prev ? ((market.estimate - prev) / prev) * 100 : 0;
-  const history = figureHistory(figure, 12);
+  const msrp = msrpPrice(figure.msrp);
+  const paid = paidPrice(owned?.acquiredPrice);
   const condLabel = CONDITIONS.find((c) => c.id === owned?.condition)?.label;
 
   return (
@@ -138,35 +135,19 @@ function FigureDetail() {
 
         <dl className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           <Meta label="Release" value={formatDate(figure.releaseDate)} />
-          <Meta label="MSRP" value={usd(figure.msrp)} />
+          <Meta label="MSRP" value={usdOrDash(msrp)} />
           <Meta label="SKU" value={figure.sku ?? "—"} />
           <Meta label="Scale" value={figure.scale} />
         </dl>
-
-        <MarketEstimate
-          kind="figure"
-          item={figure}
-          fallbackComps={market.comps}
-          fallbackEstimate={market.estimate}
-          history={history}
-          deltaPct={deltaPct}
-        />
 
         {owned ? (
           <section className="rounded-xl bg-bg-elevated p-4 shadow-[var(--shadow-border)]">
             <h2 className="font-display text-xl tracking-wide uppercase">Your copy</h2>
             <dl className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
               <Meta label="Acquired" value={formatDate(owned.acquiredDate)} />
-              <Meta label="You paid" value={owned.acquiredPrice != null ? usd(owned.acquiredPrice) : "—"} />
+              <Meta label="You paid" value={usdOrDash(paid)} />
               <Meta label="Condition" value={condLabel ?? "—"} />
-              <Meta
-                label="Spread"
-                value={
-                  owned.acquiredPrice != null
-                    ? usd(market.estimate - owned.acquiredPrice)
-                    : "—"
-                }
-              />
+              <Meta label="Counts as" value={usdOrDash(itemValue(paid, msrp))} />
             </dl>
             {owned.notes ? <p className="mt-3 text-sm text-muted">{owned.notes}</p> : null}
           </section>

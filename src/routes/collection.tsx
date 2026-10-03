@@ -8,13 +8,12 @@ import { FigureArt } from "@/components/figure-art";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { formatDate, usd } from "@/lib/format";
+import { formatDate, usd, usdOrDash } from "@/lib/format";
 import { useFigureExtras, useLiveComics } from "@/lib/live-store";
-import { comicEstimate, figureMarket } from "@/lib/market";
 import { useVault } from "@/lib/store";
 import { DisplaysGallery } from "@/components/displays-gallery";
 import { useOwnedCatalog } from "@/lib/use-catalog";
-import { summarizeVault } from "@/lib/vault-math";
+import { itemValue, msrpPrice, paidPrice, summarizeVault } from "@/lib/vault-math";
 
 export const Route = createFileRoute("/collection")({ component: CollectionPage });
 
@@ -83,8 +82,19 @@ function CollectionPage() {
         <div>
           <h1 className="font-display text-3xl tracking-wide uppercase">Collection</h1>
           <p className="mt-2 text-sm text-muted">
-            {stats.figureCount} figures · {stats.comicCount} comics · {usd(stats.value, 0)} estimated
+            {stats.figureCount} figures · {stats.comicCount} comics
           </p>
+          <p className="mt-1 text-sm tabular">
+            <span className="text-muted">Paid</span> {usd(stats.all.paid, 0)}
+            <span className="text-subtle"> · </span>
+            <span className="text-muted">MSRP</span> {usd(stats.all.msrp, 0)}
+            <span className="text-subtle"> · </span>
+            <span className="text-muted">Total</span> <span className="text-gold">{usd(stats.all.total, 0)}</span>
+            {stats.all.missing ? (
+              <span className="text-xs text-subtle"> · {stats.all.missing} with no price</span>
+            ) : null}
+          </p>
+          <p className="mt-1 text-xs text-subtle">Total counts each item at the price you paid, or its MSRP when none is entered.</p>
         </div>
         <div className="flex flex-wrap gap-2">
           <Button variant="secondary" asChild>
@@ -115,7 +125,8 @@ function CollectionPage() {
             <ul className="grid gap-2">
               {figures.map(({ owned, figure }) => {
                 if (!figure) return null;
-                const est = figureMarket(figure).estimate;
+                const paid = paidPrice(owned.acquiredPrice);
+                const msrp = msrpPrice(figure.msrp);
                 return (
                   <li
                     key={owned.figureId}
@@ -138,9 +149,9 @@ function CollectionPage() {
                     </div>
                     <div className="flex flex-col items-end gap-2">
                       <div className="text-right">
-                        <p className="tabular text-sm text-gold">{usd(est)}</p>
+                        <p className="tabular text-sm text-gold">{usdOrDash(itemValue(paid, msrp))}</p>
                         <p className="tabular text-xs text-subtle">
-                          paid {owned.acquiredPrice != null ? usd(owned.acquiredPrice) : "—"}
+                          paid {usdOrDash(paid)} · MSRP {usdOrDash(msrp)}
                         </p>
                       </div>
                       <Button
@@ -171,7 +182,8 @@ function CollectionPage() {
                 const catalog = owned.catalogId
                   ? comicById.get(owned.catalogId) ?? liveComics.find((c) => c.id === owned.catalogId)
                   : undefined;
-                const est = catalog ? comicEstimate(catalog) : owned.acquiredPrice ?? 0;
+                const paid = paidPrice(owned.acquiredPrice);
+                const cover = msrpPrice(catalog?.msrp ?? owned.custom?.msrp);
                 const isCustom = Boolean(owned.custom && !owned.catalogId);
                 return (
                   <li
@@ -195,9 +207,9 @@ function CollectionPage() {
                     </div>
                     <div className="flex flex-col items-end gap-2">
                       <div className="text-right">
-                        <p className="tabular text-sm text-gold">{usd(est)}</p>
+                        <p className="tabular text-sm text-gold">{usdOrDash(itemValue(paid, cover))}</p>
                         <p className="tabular text-xs text-subtle">
-                          paid {owned.acquiredPrice != null ? usd(owned.acquiredPrice) : "—"}
+                          paid {usdOrDash(paid)} · cover {usdOrDash(cover)}
                         </p>
                       </div>
                       <Button

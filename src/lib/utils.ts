@@ -14,17 +14,6 @@ export function hashString(s: string): number {
   return h >>> 0;
 }
 
-export function mulberry32(seed: number) {
-  let a = seed >>> 0;
-  return () => {
-    a += 0x6d2b79f5;
-    let t = a;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-
 export function isoWeek(d = new Date()): { year: number; week: number } {
   const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
   const day = date.getUTCDay() || 7;
@@ -41,21 +30,6 @@ export function weekKey(d = new Date()): string {
 
 export function clamp(n: number, min: number, max: number) {
   return Math.min(max, Math.max(min, n));
-}
-
-export function median(values: number[]): number {
-  if (values.length === 0) return 0;
-  const s = [...values].sort((a, b) => a - b);
-  const mid = Math.floor(s.length / 2);
-  return s.length % 2 ? s[mid]! : (s[mid - 1]! + s[mid]!) / 2;
-}
-
-/** Arithmetic mean of up to `limit` values (default: all). Empty → 0. */
-export function mean(values: number[], limit = values.length): number {
-  const slice = values.slice(0, Math.max(0, limit));
-  if (slice.length === 0) return 0;
-  const sum = slice.reduce((a, b) => a + b, 0);
-  return sum / slice.length;
 }
 
 export function slug(s: string) {

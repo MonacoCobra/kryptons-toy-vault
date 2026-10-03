@@ -6,16 +6,15 @@ import { comicLabel } from "@/lib/comic-label";
 import { AddComicDialog } from "@/components/add-comic-dialog";
 import { ComicCover } from "@/components/comic-cover";
 import { ComicVariantScroller } from "@/components/comic-variant-scroller";
-import { MarketEstimate } from "@/components/market-estimate";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { libraryCatalogRows } from "@/lib/comic-catalog";
 import { comicFormatLabel, isCollectedComic } from "@/lib/comic-format";
 import { seriesBaseTitle, seriesDisplayLabel, seriesRunYearFor } from "@/lib/comic-series";
 import { getComicVariants } from "@/lib/comic-variants";
-import { formatMonthYear, usd } from "@/lib/format";
+import { formatMonthYear, usdOrDash } from "@/lib/format";
 import { useComicLib, useEnsureComicLibrary, useLiveComics, useLiveDrop } from "@/lib/live-store";
-import { comicHistory, comicMarket } from "@/lib/market";
+import { itemValue, msrpPrice, paidPrice } from "@/lib/vault-math";
 import { GRADES, useVault } from "@/lib/store";
 import type { CatalogComic } from "@/lib/types";
 
@@ -82,10 +81,8 @@ function ComicDetail() {
     throw notFound();
   }
 
-  const market = comicMarket(comic);
-  const prev = comicMarket(comic, -1).estimate;
-  const deltaPct = prev ? ((market.estimate - prev) / prev) * 100 : 0;
-  const history = comicHistory(comic, 12);
+  const cover = msrpPrice(comic.msrp);
+  const paid = paidPrice(owned?.acquiredPrice);
   const gradeLabel = GRADES.find((g) => g.id === owned?.grade)?.label;
 
   return (
@@ -124,28 +121,20 @@ function ComicDetail() {
 
         <dl className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           <Meta label="Cover date" value={formatMonthYear(comic.coverDate)} />
-          <Meta label="Cover price" value={usd(comic.msrp)} />
+          <Meta label="Cover price" value={usdOrDash(cover)} />
           <Meta label="Writer" value={peopleList(comic.writers)} />
           <Meta label="Artist" value={peopleList(comic.artists)} />
           <Meta label="UPC / ISBN" value={comic.upc ?? "—"} />
         </dl>
 
-        <MarketEstimate
-          kind="comic"
-          item={comic}
-          fallbackComps={market.comps}
-          fallbackEstimate={market.estimate}
-          history={history}
-          deltaPct={deltaPct}
-        />
-
         {owned ? (
           <section className="rounded-xl bg-bg-elevated p-4 shadow-[var(--shadow-border)]">
             <h2 className="font-display text-xl tracking-wide uppercase">Your copy</h2>
-            <dl className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-3">
+            <dl className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
               <Meta label="Acquired" value={owned.acquiredDate ?? "—"} />
-              <Meta label="You paid" value={owned.acquiredPrice != null ? usd(owned.acquiredPrice) : "—"} />
+              <Meta label="You paid" value={usdOrDash(paid)} />
               <Meta label="Grade" value={gradeLabel ?? "Raw"} />
+              <Meta label="Counts as" value={usdOrDash(itemValue(paid, cover))} />
             </dl>
             {owned.notes ? <p className="mt-3 text-sm text-muted">{owned.notes}</p> : null}
           </section>

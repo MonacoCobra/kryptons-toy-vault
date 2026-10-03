@@ -337,19 +337,6 @@ export type CatalogFigure = {
   setRole?: FigureSetRole;
 };
 
-export type SoldComp = {
-  price: number;
-  date: string;
-  condition: string;
-  title: string;
-  /** Sold listing URL when sourced from eBay. */
-  url?: string;
-  /** "soldcomps" = real eBay sale; "synthetic" = modeled, never shown as a sale. */
-  source?: "ebay" | "soldcomps" | "synthetic";
-  /** Best offer accepted: the listed price is an upper bound on the real sale. */
-  bestOffer?: boolean;
-};
-
 export type OwnedFigure = {
   figureId: string;
   acquiredDate?: string;
@@ -430,6 +417,8 @@ export type PulseSlice = {
 /** Baseline collection totals captured at the start of an ISO week. */
 export type PulseBaseline = {
   week: string;
+  /** "paid-msrp" = value is price paid, falling back to MSRP. Older baselines used estimates. */
+  basis?: "paid-msrp";
   figures: PulseSlice;
   comics: PulseSlice;
   total: PulseSlice;

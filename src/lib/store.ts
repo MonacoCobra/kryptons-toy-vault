@@ -199,7 +199,7 @@ export const useVault = create<VaultState & Actions>()(
       clearVault: () => set(empty()),
       ensurePulseBaseline: (baseline) =>
         set((s) => {
-          if (s.pulseBaselines[baseline.week]) return s;
+          if (s.pulseBaselines[baseline.week]?.basis === baseline.basis) return s;
           return {
             pulseBaselines: { ...s.pulseBaselines, [baseline.week]: baseline },
           };

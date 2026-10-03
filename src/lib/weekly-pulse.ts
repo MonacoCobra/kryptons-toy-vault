@@ -33,11 +33,12 @@ export function capturePulseSnapshot(
   week = weekKey(),
 ): PulseBaseline {
   const stats = summarizeVault(state, extras);
-  const figures = slice(stats.figureCount, stats.figureValue);
-  const comics = slice(stats.comicCount, stats.comicValue);
-  const total = slice(figures.count + comics.count, stats.value);
+  const figures = slice(stats.figures.count, stats.figures.total);
+  const comics = slice(stats.comics.count, stats.comics.total);
+  const total = slice(stats.all.count, stats.all.total);
   return {
     week,
+    basis: "paid-msrp",
     figures,
     comics,
     total,
@@ -51,7 +52,9 @@ export function buildWeeklyPulse(
   week = weekKey(),
 ): WeeklyPulse {
   const current = capturePulseSnapshot(state, extras, week);
-  const baseline = state.pulseBaselines[week] ?? null;
+  const stored = state.pulseBaselines[week];
+  // Baselines captured under the old estimate model aren't comparable.
+  const baseline = stored?.basis === "paid-msrp" ? stored : null;
   return {
     week,
     figures: { current: current.figures, delta: delta(current.figures, baseline?.figures) },

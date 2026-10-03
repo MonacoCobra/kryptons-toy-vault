@@ -9,6 +9,11 @@ export function usd(n: number, digits = 2): string {
   });
 }
 
+/** Currency, or "—" when the price is unknown. */
+export function usdOrDash(n: number | null | undefined, digits = 2): string {
+  return typeof n === "number" && Number.isFinite(n) ? usd(n, digits) : "—";
+}
+
 export function usdCompact(n: number): string {
   if (Math.abs(n) >= 1000) {
     return n.toLocaleString("en-US", {

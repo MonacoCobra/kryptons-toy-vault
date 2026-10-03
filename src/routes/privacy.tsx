@@ -75,10 +75,6 @@ function PrivacyPage() {
             Mephitsu, and similar sources. Those are published catalog assets, not your personal
             data.
           </p>
-          <p>
-            Sold-comp estimates use public marketplace listings for catalog items. That lookup
-            does not send your private collection or identity.
-          </p>
         </PolicyCard>
       </section>
 

@@ -1,10 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
-import { ArrowDownRight, ArrowUpRight, Images } from "lucide-react";
+import { Images } from "lucide-react";
 import { comicLabel } from "@/lib/comic-label";
 import { FigureArt } from "@/components/figure-art";
 import { ComicCover } from "@/components/comic-cover";
-import { pct, usd } from "@/lib/format";
+import { usd } from "@/lib/format";
 import { useLiveComics, useLiveDrop, useLiveFigures } from "@/lib/live-store";
 import { useVault } from "@/lib/store";
 import { useCatalogManifest, useOwnedCatalog } from "@/lib/use-catalog";
@@ -31,7 +31,6 @@ function Home() {
     figures: manifest?.figures ?? 0,
     comics: manifest?.comics ?? 0,
   };
-  const gainUp = stats.gain >= 0;
   const week = weekKey();
   const newFigures = liveFigures.slice(0, 8);
   const newComics = liveComics.length ? liveComics.slice(0, 10) : (manifest?.recentComics ?? []).slice(0, 10);
@@ -54,21 +53,25 @@ function Home() {
         </h1>
       </section>
 
-      <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
         <StatCard
-          label="Vault estimate"
-          value={usd(stats.value, 0)}
-          hint="Median of recent sold comps"
+          label="Collection total"
+          value={usd(stats.all.total, 0)}
+          hint={
+            stats.all.missing
+              ? `Paid, else MSRP · ${stats.all.missing} item${stats.all.missing === 1 ? "" : "s"} with no price`
+              : "Price paid, else MSRP"
+          }
         />
         <StatCard
-          label="Cost basis"
-          value={usd(stats.cost, 0)}
-          hint={
-            <span className={gainUp ? "text-gain" : "text-loss"}>
-              {gainUp ? <ArrowUpRight className="inline size-3.5" /> : <ArrowDownRight className="inline size-3.5" />}{" "}
-              {usd(Math.abs(stats.gain), 0)} ({pct(stats.gainPct)})
-            </span>
-          }
+          label="Paid"
+          value={usd(stats.all.paid, 0)}
+          hint={`${stats.all.paidCount} of ${stats.all.count} items with a price paid`}
+        />
+        <StatCard
+          label="MSRP"
+          value={usd(stats.all.msrp, 0)}
+          hint={`${stats.all.msrpCount} of ${stats.all.count} items with an MSRP / cover price`}
         />
         <StatCard
           label="Action Figures"

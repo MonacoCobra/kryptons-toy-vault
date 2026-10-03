@@ -27,7 +27,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "Krypton's Toy Vault — figures, kits, and comics with live weekly street lists, cover scans, and sold-comp estimates.",
+          "Krypton's Toy Vault — figures, kits, and comics with live weekly street lists, and cover scans.",
       },
       { name: "theme-color", content: "#E30613" },
     ],

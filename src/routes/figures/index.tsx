@@ -22,9 +22,9 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
-import { usd } from "@/lib/format";
+import { usdOrDash } from "@/lib/format";
 import { useEnsureFigureLibrary, useFigureExtras, useLiveFigures } from "@/lib/live-store";
-import { figureMarket } from "@/lib/market";
+import { msrpPrice } from "@/lib/vault-math";
 import { useVault } from "@/lib/store";
 import type { CatalogFigure, CompanyId, FigureProperty, TransformersParty } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -248,7 +248,7 @@ function FiguresPage() {
       <header>
         <h1 className="font-display text-3xl tracking-wide uppercase">Action Figures</h1>
         <p className="mt-2 max-w-2xl text-sm text-muted">
-          Tick what you own, add a shelf photo, and follow the weekly sold-comp estimate.
+          Tick what you own, note what you paid, and add a shelf photo.
           New action figures fold in automatically.
         </p>
       </header>
@@ -493,7 +493,6 @@ function FiguresPage() {
           gapClassName="gap-2"
           renderItem={(figure) => {
             const have = Boolean(owned[figure.id]);
-            const est = figureMarket(figure).estimate;
             return (
               <div className="flex items-center gap-3 rounded-lg bg-bg-elevated p-2 shadow-[var(--shadow-border)]">
                 <Link to="/figures/$figureId" params={{ figureId: figure.id }} className="shrink-0">
@@ -507,7 +506,7 @@ function FiguresPage() {
                     {figure.line} · {figure.subtitle}
                   </p>
                 </div>
-                <p className="hidden tabular text-sm text-gold sm:block">{usd(est)}</p>
+                <p className="hidden tabular text-sm text-gold sm:block">MSRP {usdOrDash(msrpPrice(figure.msrp))}</p>
                 <Button size="sm" variant={have ? "secondary" : "default"} onClick={() => setAdding(figure)}>
                   {have ? "Edit" : "Add"}
                 </Button>
@@ -524,7 +523,6 @@ function FiguresPage() {
           renderItem={(figure) => {
             const have = Boolean(owned[figure.id]);
             const want = Boolean(wanted[figure.id]);
-            const est = figureMarket(figure).estimate;
             return (
               <div className="overflow-hidden rounded-lg bg-bg-elevated shadow-[var(--shadow-border)]">
                 <Link to="/figures/$figureId" params={{ figureId: figure.id }} className="block">
@@ -542,10 +540,7 @@ function FiguresPage() {
                     <p className="font-medium leading-snug">{figure.name}</p>
                     <p className="text-xs text-subtle">{figure.subtitle}</p>
                   </div>
-                  <div className="flex items-end justify-between gap-2">
-                    <p className="tabular text-sm text-gold">{usd(est)}</p>
-                    <p className="tabular text-xs text-subtle">MSRP {usd(figure.msrp)}</p>
-                  </div>
+                  <p className="tabular text-sm text-gold">MSRP {usdOrDash(msrpPrice(figure.msrp))}</p>
                   <Button size="sm" variant={have ? "secondary" : "default"} onClick={() => setAdding(figure)}>
                     {have ? "Edit entry" : "Add to vault"}
                   </Button>

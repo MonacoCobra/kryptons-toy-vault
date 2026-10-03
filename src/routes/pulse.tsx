@@ -55,8 +55,8 @@ function PulsePage() {
       <header>
         <h1 className="font-display text-4xl tracking-wide uppercase">This week</h1>
         <p className="mt-2 text-sm text-muted">
-          Qty and estimate changes since the start of {week}. Toys and comics use mixed-condition
-          eBay sold averages when available.
+          Item count and collection total changes since the start of {week}. Each item counts at the
+          price you paid, or its MSRP / cover price when no price is entered.
         </p>
         <p className="mt-4 font-display text-3xl tracking-wide text-gold tabular">{headline}</p>
       </header>
@@ -64,8 +64,8 @@ function PulsePage() {
       <PulseBoard pulse={pulse} />
 
       <p className="text-xs leading-relaxed text-subtle">
-        Baseline locks on your first visit each ISO week. Adding pieces or market moves show up as
-        clean deltas here — and in the weekly popup.
+        Baseline locks on your first visit each ISO week. Adding or removing pieces and editing
+        what you paid show up as clean deltas here — and in the weekly popup.
       </p>
     </main>
   );

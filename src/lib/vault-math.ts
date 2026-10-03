@@ -1,74 +1,107 @@
-import { comicEstimate, comicHistory, figureHistory, figureMarket } from "@/lib/market";
 import type { CatalogComic, CatalogFigure, VaultState } from "@/lib/types";
 
+/** A real price: finite and > 0 (catalog MSRP 0 / missing means "unknown"). */
+function positive(n: number | null | undefined): number | null {
+  return typeof n === "number" && Number.isFinite(n) && n > 0 ? n : null;
+}
+
+/** What the owner paid, when entered (0 counts — e.g. a gift). */
+export function paidPrice(acquiredPrice: number | null | undefined): number | null {
+  return typeof acquiredPrice === "number" && Number.isFinite(acquiredPrice) && acquiredPrice >= 0
+    ? acquiredPrice
+    : null;
+}
+
+/** MSRP / cover price when known. */
+export function msrpPrice(msrp: number | null | undefined): number | null {
+  return positive(msrp);
+}
+
+/** Per-item value: price paid if set, else MSRP; null when neither is known. */
+export function itemValue(
+  acquiredPrice: number | null | undefined,
+  msrp: number | null | undefined,
+): number | null {
+  return paidPrice(acquiredPrice) ?? msrpPrice(msrp);
+}
+
+type Totals = {
+  count: number;
+  /** Sum of prices paid (items with a price paid). */
+  paid: number;
+  paidCount: number;
+  /** Sum of MSRP / cover prices (items with a known MSRP). */
+  msrp: number;
+  msrpCount: number;
+  /** Sum of per-item value (paid, falling back to MSRP). */
+  total: number;
+  /** Items with neither a price paid nor an MSRP. */
+  missing: number;
+};
+
+function emptyTotals(): Totals {
+  return { count: 0, paid: 0, paidCount: 0, msrp: 0, msrpCount: 0, total: 0, missing: 0 };
+}
+
+function add(t: Totals, acquiredPrice: number | null | undefined, msrp: number | null | undefined) {
+  t.count += 1;
+  const paid = paidPrice(acquiredPrice);
+  const retail = msrpPrice(msrp);
+  if (paid != null) {
+    t.paid += paid;
+    t.paidCount += 1;
+  }
+  if (retail != null) {
+    t.msrp += retail;
+    t.msrpCount += 1;
+  }
+  const value = paid ?? retail;
+  if (value == null) t.missing += 1;
+  else t.total += value;
+}
+
+function rounded(t: Totals): Totals {
+  const r = (n: number) => Math.round(n * 100) / 100;
+  return { ...t, paid: r(t.paid), msrp: r(t.msrp), total: r(t.total) };
+}
+
+/**
+ * Collection totals from what was paid and MSRP only — no market estimates.
+ * Owned figures whose catalog row isn't loaded yet still count, with no MSRP.
+ */
 export function summarizeVault(
   state: Pick<VaultState, "ownedFigures" | "ownedComics">,
   extras?: { figures?: CatalogFigure[]; comics?: CatalogComic[] },
 ) {
-  let figureValue = 0;
-  let figureCost = 0;
-  let comicValue = 0;
-  let comicCost = 0;
-  const historyMap = new Map<string, number>();
-  const figMap: Record<string, CatalogFigure> = {};
-  for (const f of extras?.figures ?? []) figMap[f.id] = f;
-  const comicMap: Record<string, CatalogComic> = {};
-  for (const c of extras?.comics ?? []) comicMap[c.id] = c;
+  const figMap = new Map((extras?.figures ?? []).map((f) => [f.id, f]));
+  const comicMap = new Map((extras?.comics ?? []).map((c) => [c.id, c]));
+  const figures = emptyTotals();
+  const comics = emptyTotals();
 
   for (const owned of Object.values(state.ownedFigures)) {
-    const fig = figMap[owned.figureId];
-    if (!fig) continue;
-    const est = figureMarket(fig).estimate;
-    figureValue += est;
-    figureCost += owned.acquiredPrice ?? fig.msrp;
-    for (const p of figureHistory(fig, 12)) {
-      historyMap.set(p.label, (historyMap.get(p.label) ?? 0) + p.value);
-    }
+    add(figures, owned.acquiredPrice, figMap.get(owned.figureId)?.msrp);
   }
-
   for (const owned of Object.values(state.ownedComics)) {
-    const comic = owned.catalogId ? comicMap[owned.catalogId] : undefined;
-    const est = comic
-      ? comicEstimate(comic)
-      : owned.acquiredPrice ?? owned.custom?.msrp ?? 4.99;
-    comicValue += est;
-    comicCost += owned.acquiredPrice ?? comic?.msrp ?? owned.custom?.msrp ?? 0;
-    if (comic) {
-      for (const p of comicHistory(comic, 12)) {
-        historyMap.set(p.label, (historyMap.get(p.label) ?? 0) + p.value);
-      }
-    }
+    const comic = owned.catalogId ? comicMap.get(owned.catalogId) : undefined;
+    add(comics, owned.acquiredPrice, comic?.msrp ?? owned.custom?.msrp);
   }
 
-  const value = figureValue + comicValue;
-  const cost = figureCost + comicCost;
-  const history = [...historyMap.entries()].map(([label, v]) => ({
-    label,
-    value: Math.round(v * 100) / 100,
-  }));
-
-  const catalogFigures = extras?.figures ?? [];
-  const byCompany = catalogFigures.reduce(
-    (acc, f) => {
-      const row = acc[f.company] ?? { total: 0, owned: 0 };
-      row.total += 1;
-      if (state.ownedFigures[f.id]) row.owned += 1;
-      acc[f.company] = row;
-      return acc;
-    },
-    {} as Record<string, { total: number; owned: number }>,
-  );
+  const all = emptyTotals();
+  for (const t of [figures, comics]) {
+    all.count += t.count;
+    all.paid += t.paid;
+    all.paidCount += t.paidCount;
+    all.msrp += t.msrp;
+    all.msrpCount += t.msrpCount;
+    all.total += t.total;
+    all.missing += t.missing;
+  }
 
   return {
-    figureValue,
-    comicValue,
-    value,
-    cost,
-    gain: value - cost,
-    gainPct: cost ? ((value - cost) / cost) * 100 : 0,
-    figureCount: Object.keys(state.ownedFigures).length,
-    comicCount: Object.keys(state.ownedComics).length,
-    history,
-    byCompany,
+    figures: rounded(figures),
+    comics: rounded(comics),
+    all: rounded(all),
+    figureCount: figures.count,
+    comicCount: comics.count,
   };
 }
