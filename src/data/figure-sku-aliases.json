@@ -72517,7 +72517,7 @@
       "reason": "distinct GTINs — leave both"
     }
   ],
-  "updatedAt": "2026-10-03T04:28:54.011120+00:00",
+  "updatedAt": "2026-10-03T04:51:08.172064+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -72627,6 +72627,11 @@
       "removed": 0,
       "added": 60,
       "fixed": 13
+    },
+    "aotpWave7": {
+      "at": "2026-10-03T04:51:08.172064+00:00",
+      "removed": 2,
+      "added": 6
     }
   },
   "removed": [
@@ -75484,6 +75489,28 @@
       "aliasesMoved": {},
       "aliasesDropped": [],
       "reason": "Studio Series audit 2026-09-30: No Hasbro Studio Series Optimus Prime from The Last Knight exists (TFWiki Studio Series list); row has no SKU/UPC. Sources: https://tfwiki.net/wiki/Studio_Series"
+    },
+    {
+      "keepId": null,
+      "dropId": "afmon-hasbro-transformers-generations-age-of-the-primes-leader-wave-5-cas-hsg0471e",
+      "canonicalSku": "HSG0471E",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "HSG0471E"
+      ],
+      "reason": "Retailer case pack (assortment code HSG0471E), not a single figure; Shelby approved deletion 2026-10-02. Case code is an assortment number, not a figure barcode; nothing moved."
+    },
+    {
+      "keepId": null,
+      "dropId": "afmon-hasbro-transformers-generations-age-of-the-primes-voyager-wave-6-case-of-3-hsg0473f",
+      "canonicalSku": "HSG0473F",
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [
+        "HSG0473F"
+      ],
+      "reason": "Retailer case pack (assortment code HSG0473F), not a single figure; Shelby approved deletion 2026-10-02. Case code is an assortment number, not a figure barcode; nothing moved."
     }
   ],
   "strippedCodes": [
