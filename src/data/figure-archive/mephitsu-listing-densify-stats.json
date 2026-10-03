@@ -1,112 +1,16 @@
 {
   "source": "mephitsu-listing",
-  "finishedAt": "2026-10-02T05:26:33.312931+00:00",
+  "finishedAt": "2026-10-03T05:20:41.016522+00:00",
   "cap": 90,
-  "added": 8,
-  "withImage": 8,
-  "skipped": 371,
-  "counts": {
-    "hasbro-street-fighter": 8
-  },
-  "byLine": {
-    "Street Fighter": 8
-  },
-  "byCompany": {
-    "hasbro": 8
-  },
-  "aliasAdded": 16,
-  "addedSample": [
-    {
-      "id": "mph-1024b056b6fc",
-      "name": "Akuma",
-      "company": "hasbro",
-      "line": "Street Fighter",
-      "year": 2026,
-      "bucket": "hasbro-street-fighter",
-      "image": true,
-      "exclusive": "Walmart (US) / Fan Channel (UK)"
-    },
-    {
-      "id": "mph-bae310cf7a8b",
-      "name": "Blanka",
-      "company": "hasbro",
-      "line": "Street Fighter",
-      "year": 2026,
-      "bucket": "hasbro-street-fighter",
-      "image": true,
-      "exclusive": "Walmart (US) / Fan Channel (UK)"
-    },
-    {
-      "id": "mph-5fac4305c77a",
-      "name": "Chun-Li",
-      "company": "hasbro",
-      "line": "Street Fighter",
-      "year": 2026,
-      "bucket": "hasbro-street-fighter",
-      "image": true,
-      "exclusive": "Walmart (US) / Fan Channel (UK)"
-    },
-    {
-      "id": "mph-33e2ec418cdf",
-      "name": "Guile",
-      "company": "hasbro",
-      "line": "Street Fighter",
-      "year": 2026,
-      "bucket": "hasbro-street-fighter",
-      "image": true,
-      "exclusive": "Walmart (US) / Fan Channel (UK)"
-    },
-    {
-      "id": "mph-aee2275de592",
-      "name": "Ken",
-      "company": "hasbro",
-      "line": "Street Fighter",
-      "year": 2026,
-      "bucket": "hasbro-street-fighter",
-      "image": true,
-      "exclusive": "Walmart (US) / Fan Channel (UK)"
-    },
-    {
-      "id": "mph-92ac6fd8a96e",
-      "name": "M. Bison",
-      "company": "hasbro",
-      "line": "Street Fighter",
-      "year": 2026,
-      "bucket": "hasbro-street-fighter",
-      "image": true,
-      "exclusive": "Walmart (US) / Fan Channel (UK)"
-    },
-    {
-      "id": "mph-1355df90ff46",
-      "name": "Ryu",
-      "company": "hasbro",
-      "line": "Street Fighter",
-      "year": 2026,
-      "bucket": "hasbro-street-fighter",
-      "image": true,
-      "exclusive": "Walmart (US) / Fan Channel (UK)"
-    },
-    {
-      "id": "mph-9235c62b94fe",
-      "name": "Ryu TBC",
-      "company": "hasbro",
-      "line": "Street Fighter",
-      "year": 2026,
-      "bucket": "hasbro-street-fighter",
-      "image": true,
-      "exclusive": "Walmart (US) / Fan Channel (UK)"
-    }
-  ],
-  "addedIds": [
-    "mph-1024b056b6fc",
-    "mph-bae310cf7a8b",
-    "mph-5fac4305c77a",
-    "mph-33e2ec418cdf",
-    "mph-aee2275de592",
-    "mph-92ac6fd8a96e",
-    "mph-1355df90ff46",
-    "mph-9235c62b94fe"
-  ],
+  "added": 0,
+  "withImage": 0,
+  "skipped": 379,
+  "counts": {},
+  "byLine": {},
+  "byCompany": {},
+  "aliasAdded": 0,
+  "addedSample": [],
+  "addedIds": [],
   "skippedSample": [
     {
       "id": "mph-84c3186acad7",
@@ -276,7 +180,7 @@
       "reason": "id-exists"
     }
   ],
-  "archiveSize": 29380,
+  "archiveSize": 29764,
   "caches": {
     "hasbro": 966,
     "jazwares": 313

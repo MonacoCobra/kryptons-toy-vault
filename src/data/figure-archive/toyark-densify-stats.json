@@ -1,22 +1,22 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-10-02T22:29:13Z",
+  "finishedAt": "2026-10-03T05:23:31Z",
   "mode": "apply",
-  "cap": 1,
-  "acceptedCandidates": 1,
+  "cap": 50,
+  "acceptedCandidates": 2,
   "applied": 1,
-  "skippedApply": 0,
-  "rejectedRows": 0,
+  "skippedApply": 1,
+  "rejectedRows": 12,
   "withImage": 1,
   "aliasAdded": 3,
   "byCompany": {
     "hasbro": {
-      "accepted": 0,
+      "accepted": 1,
       "rejected": 0
     },
     "mcfarlane": {
       "accepted": 0,
-      "rejected": 0
+      "rejected": 1
     },
     "neca": {
       "accepted": 0,
@@ -32,7 +32,7 @@
     },
     "hottoys": {
       "accepted": 1,
-      "rejected": 0
+      "rejected": 1
     },
     "mondo": {
       "accepted": 0,
@@ -59,28 +59,44 @@
       "rejected": 0
     }
   },
-  "byRejectReason": {},
+  "byRejectReason": {
+    "company-not-allowlisted": 7,
+    "sponsor-newsletter": 1,
+    "company-unknown": 2,
+    "missing-line": 1,
+    "already-in-oneshot": 1
+  },
   "appliedIds": [
-    "ta-d9a16d3350aa"
+    "ta-3fcb696912ec"
   ],
   "appliedSample": [
     {
-      "id": "ta-d9a16d3350aa",
-      "name": "Steve Rogers",
-      "company": "hottoys",
-      "line": "Hot Toys",
+      "id": "ta-3fcb696912ec",
+      "name": "Star Wars Stream for October 26 – 2027 New Era Reveals and More",
+      "company": "hasbro",
+      "line": "Star Wars Black Series",
       "year": 2026,
-      "variant": "Avengers: Doomsday",
+      "variant": null,
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Avengers-Doomsday-Steve-Rogers-010.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Star-Wars-New-Era-Launch-01.jpg",
       "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/02/avengers-doomsday-hot-toys-steve-rogers-figure-599629",
+      "sourceUrl": "https://www.toyark.com/2026/10/02/star-wars-stream-for-october-26-2027-new-era-reveals-and-more-599654",
+      "toyarkPostId": 599654
+    }
+  ],
+  "skippedSample": [
+    {
+      "name": "Steve Rogers",
+      "company": "hottoys",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-d9a16d3350aa"
+      ],
       "toyarkPostId": 599629
     }
   ],
-  "skippedSample": [],
-  "archiveSize": 29475,
+  "archiveSize": 29765,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"

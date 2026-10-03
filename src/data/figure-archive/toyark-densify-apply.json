@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T22:29:12Z",
+  "generatedAt": "2026-10-03T05:23:30Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -21,12 +21,12 @@
       "exo6"
     ],
     "writes": "oneshot + aliases + image-urls + sku-map (GTIN only) — comics untouched",
-    "cap": 1,
+    "cap": 50,
     "idScheme": "ta-<sha1[:12] of postId+name+company+line+variant>"
   },
   "window": {
     "days": 7,
-    "after": "2026-09-25T22:29:12.507559+00:00",
+    "after": "2026-09-26T05:23:29.777572+00:00",
     "before": null
   },
   "fetch": {
@@ -36,39 +36,35 @@
       "ok": true,
       "wpJsonAllowed": true,
       "feedDisallowed": true,
-      "note": "Replay (--posts-json): skipped live robots.txt fetch.",
-      "httpStatus": null
+      "note": "Prefer REST over RSS. /feed/ is disallowed for User-agent: *.",
+      "httpStatus": 200
     },
-    "source": "posts-json-replay",
-    "replayPath": "ta599629-posts.json",
-    "pagesFetched": 0,
-    "httpStatus": null,
+    "source": "live-rest",
+    "pagesFetched": 1,
+    "httpStatus": 200,
     "blocker": null,
-    "notes": [
-      "Replayed saved WP REST payload (same /wp-json/wp/v2/posts?_embed=1 shape). Date window still applied.",
-      "Live urllib fetch skipped because --posts-json was set."
-    ],
+    "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 1,
+    "fetchedPostCount": 14,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9112,
+    "indexedRows": 9402,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 1,
-    "acceptedCandidates": 1,
-    "rejectedRows": 0,
+    "fetchedPosts": 14,
+    "acceptedCandidates": 2,
+    "rejectedRows": 12,
     "byCompany": {
       "hasbro": {
-        "accepted": 0,
+        "accepted": 1,
         "rejected": 0
       },
       "mcfarlane": {
         "accepted": 0,
-        "rejected": 0
+        "rejected": 1
       },
       "neca": {
         "accepted": 0,
@@ -84,7 +80,7 @@
       },
       "hottoys": {
         "accepted": 1,
-        "rejected": 0
+        "rejected": 1
       },
       "mondo": {
         "accepted": 0,
@@ -111,11 +107,36 @@
         "rejected": 0
       }
     },
-    "byRejectReason": {},
+    "byRejectReason": {
+      "company-not-allowlisted": 7,
+      "sponsor-newsletter": 1,
+      "company-unknown": 2,
+      "missing-line": 1,
+      "already-in-oneshot": 1
+    },
     "applied": 1,
-    "skippedApply": 0
+    "skippedApply": 1
   },
   "candidates": [
+    {
+      "decision": "accept",
+      "name": "Star Wars Stream for October 26 – 2027 New Era Reveals and More",
+      "company": "hasbro",
+      "line": "Star Wars Black Series",
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/02/star-wars-stream-for-october-26-2027-new-era-reveals-and-more-599654",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Star-Wars-New-Era-Launch-01.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599654,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Star Wars Stream for October 26 – 2027 New Era Reveals and More",
+      "rationale": "hasbro via class:companies-hasbro; line=Star Wars Black Series; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
     {
       "decision": "accept",
       "name": "Steve Rogers",
@@ -136,31 +157,271 @@
       "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; variant=Avengers: Doomsday; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
     }
   ],
-  "rejects": [],
+  "rejects": [
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "shfiguarts",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/02/marvel-gameverse-s-h-figuarts-venom-images-and-details-599571",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599571,
+      "title": "Marvel Gameverse S.H. Figuarts Venom Images and Details – UPDATE",
+      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "shfiguarts",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/02/spider-man-across-the-spider-verse-s-h-figuarts-spider-man-2099-and-miles-g-morales-update-599588",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599588,
+      "title": "Spider-Man: Across the Spider-Verse – S.H. Figuarts Spider-Man 2099 and Miles G. Morales Pre-Orders",
+      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "sponsor-newsletter",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/01/bbts-news-tomb-raider-fallout-tmnt-anime-sales-street-fighter-kpop-demon-hunters-and-more-599626",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599626,
+      "title": "BBTS News – Tomb Raider, Fallout, TMNT & anime sales, Street Fighter, KPop Demon Hunters and More",
+      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "storm",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/01/street-fighter-alpha-3-storm-arena-balrog-pre-order-599603",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599603,
+      "title": "Street Fighter Alpha 3 – Storm Arena Balrog Pre-Order",
+      "rationale": "Recognized storm via class:companies-storm-collectibles; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/01/shin-godzilla-nendoroid-godzilla-2nd-form-599580",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599580,
+      "title": "Shin Godzilla – Nendoroid Godzilla 2nd Form",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
+    {
+      "decision": "reject",
+      "reason": "missing-line",
+      "name": "Lara Croft",
+      "company": "mcfarlane",
+      "line": null,
+      "year": 2027,
+      "releaseWindow": "March 2027",
+      "variant": "Tomb Raider: Legacy of Atlantis – Elite Edition Deluxe",
+      "sourceUrl": "https://www.toyark.com/2026/10/01/tomb-raider-legacy-of-atlantis-mcfarlane-elite-edition-lara-croft-deluxe-action-figure-599565",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/McFarlane-Elite-Lara-Croft-003.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599565,
+      "title": "Tomb Raider: Legacy of Atlantis – McFarlane Elite Edition Lara Croft Deluxe Action Figure",
+      "rationale": "Recognizable company but no line/subline in class_list or prose."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "mattel",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/29/mattel-creations-x-dc-event-at-nycc-get-ready-599536",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599536,
+      "title": "Mattel Creations x DC Event at NYCC – Get Ready!",
+      "rationale": "Recognized mattel via class:companies-mattel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "shfiguarts",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/29/spider-man-across-the-spider-verse-s-h-figuarts-spider-man-2099-and-miles-g-morales-599530",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599530,
+      "title": "Spider-Man: Across the Spider-Verse – S.H. Figuarts Spider-Man 2099 and Miles G. Morales",
+      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/29/joy-toy-announces-super-street-fighter-ii-turbo-license-599527",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599527,
+      "title": "Joy Toy Announces Super Street Fighter II Turbo License",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
+    {
+      "decision": "reject",
+      "reason": "already-in-oneshot",
+      "name": "Riddler",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": "Batman Forever – The",
+      "sourceUrl": "https://www.toyark.com/2026/09/29/batman-forever-hot-toys-the-riddler-figure-599502",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Hot-Toys-Batman-Forever-Riddler-001.jpg",
+      "aliases": [
+        "MMS926",
+        "MMS926B"
+      ],
+      "codes": [
+        "MMS926",
+        "MMS926B"
+      ],
+      "gtin": null,
+      "toyarkPostId": 599502,
+      "title": "Batman Forever – Hot Toys The Riddler Figure",
+      "oneshotIds": [
+        "ta-0645a4b365de"
+      ],
+      "rationale": "Identity key already in oneshot (ta-0645a4b365de)."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "storm",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/28/street-fighter-alpha-3-storm-arena-balrog-preview-599498",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599498,
+      "title": "Street Fighter Alpha 3 – Storm Arena Balrog Preview",
+      "rationale": "Recognized storm via class:companies-storm-collectibles; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "shfiguarts",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/09/28/marvel-gameverse-s-h-figuarts-venom-preview-599495",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599495,
+      "title": "Marvel Gameverse S.H. Figuarts Venom Preview",
+      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    }
+  ],
   "applied": [
     {
-      "id": "ta-d9a16d3350aa",
-      "name": "Steve Rogers",
-      "company": "hottoys",
-      "line": "Hot Toys",
+      "id": "ta-3fcb696912ec",
+      "name": "Star Wars Stream for October 26 – 2027 New Era Reveals and More",
+      "company": "hasbro",
+      "line": "Star Wars Black Series",
       "year": 2026,
-      "variant": "Avengers: Doomsday",
+      "variant": null,
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Avengers-Doomsday-Steve-Rogers-010.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Star-Wars-New-Era-Launch-01.jpg",
       "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/02/avengers-doomsday-hot-toys-steve-rogers-figure-599629",
+      "sourceUrl": "https://www.toyark.com/2026/10/02/star-wars-stream-for-october-26-2027-new-era-reveals-and-more-599654",
+      "toyarkPostId": 599654
+    }
+  ],
+  "applySkipped": [
+    {
+      "name": "Steve Rogers",
+      "company": "hottoys",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-d9a16d3350aa"
+      ],
       "toyarkPostId": 599629
     }
   ],
-  "applySkipped": [],
   "applyStats": {
-    "accepted": 1,
+    "accepted": 2,
     "applied": 1,
-    "skippedApply": 0,
+    "skippedApply": 1,
     "aliasAdded": 3,
     "withImage": 1,
-    "cap": 1,
+    "cap": 50,
     "blocker": null
+  },
+  "nightScrub": {
+    "removedId": "ta-3fcb696912ec",
+    "reason": "ToyArk post is livestream/announcement title, not a figure SKU; scrubbed before push"
   }
 }
