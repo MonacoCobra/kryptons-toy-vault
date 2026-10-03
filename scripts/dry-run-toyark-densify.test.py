@@ -51,6 +51,59 @@ def _seed_row() -> dict:
     }
 
 
+STREAM_TITLE = "Star Wars Stream for October 26 – 2027 New Era Reveals and More"
+
+
+def _stream_post() -> dict:
+    return {
+        "id": 599654,
+        "date": "2026-10-02T18:00:00",
+        "link": "https://www.toyark.com/2026/10/02/star-wars-stream-for-october-26-2027-new-era-reveals-and-more-599654",
+        "title": {"rendered": "Star Wars Stream for October 26 &#8211; 2027 New Era Reveals and More"},
+        "excerpt": {"rendered": "<p>Hasbro will reveal new Star Wars The Black Series figures.</p>"},
+        "content": {"rendered": "<p>Hasbro announced a Star Wars stream with new Black Series reveals, pre-orders and more.</p>"},
+        "class_list": ["post", "category-star-wars", "companies-hasbro", "tag-black-series"],
+    }
+
+
+class ToyarkNewsPostTests(unittest.TestCase):
+    def test_stream_title_rejected_by_content_filter(self) -> None:
+        cr = mod.content_reject_reason(["companies-hasbro"], STREAM_TITLE, STREAM_TITLE)
+        self.assertIsNotNone(cr)
+        assert cr is not None
+        self.assertEqual(cr[0], "news-event-post")
+
+    def test_stream_post_never_accepted(self) -> None:
+        index = mod.OneshotIndex([], set(mod.ALLOWLIST))
+        accepts, rejects = mod.evaluate_post(_stream_post(), allow=set(mod.ALLOWLIST), index=index)
+        self.assertEqual(accepts, [], f"news post accepted: {accepts}")
+        self.assertTrue(rejects)
+        self.assertIn(rejects[0]["reason"], {"news-event-post", "no-single-product-name"})
+
+    def test_news_event_keywords(self) -> None:
+        for title in (
+            "Hasbro Pulse Livestream Recap",
+            "Marvel Legends Panel at NYCC",
+            "Weekly Toy Roundup",
+            "BBTS News – Marvel, Transformers and More",
+            "Mattel Creations Event at SDCC",
+            "Hasbro Reveals at Pulse Con",
+        ):
+            self.assertIsNotNone(mod.content_reject_reason([], title, title), title)
+        self.assertIsNone(
+            mod.content_reject_reason([], "Avengers: Doomsday – Hot Toys Steve Rogers Figure", "")
+        )
+
+    def test_single_product_name_guard(self) -> None:
+        self.assertIsNotNone(mod.single_product_name_problem(STREAM_TITLE, STREAM_TITLE))
+        self.assertIsNotNone(mod.single_product_name_problem("2027 New Era", STREAM_TITLE))
+        self.assertIsNone(mod.single_product_name_problem("Steve Rogers", "x"))
+        self.assertIsNone(mod.single_product_name_problem("Batman Arctic Suit", "x"))
+        self.assertIsNone(
+            mod.single_product_name_problem("Deadpool & Wolverine – Hot Toys Wolverine", "x")
+        )
+
+
 class ToyarkApplyTests(unittest.TestCase):
     def test_apply_refuses_non_list_oneshot(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

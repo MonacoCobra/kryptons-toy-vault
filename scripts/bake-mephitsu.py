@@ -100,10 +100,28 @@ def figure_is_pack(fig: dict) -> bool:
     return bool(PACK_RE.search(blob))
 
 
+CLASS_RE = re.compile(
+    r"\b(core|deluxe|voyager|leader|commander|titan|legends|ultra|warrior)\b(?:\s+class)?", re.I
+)
+
+
+def _class_of(text: str) -> str | None:
+    m = CLASS_RE.search(text or "")
+    return m.group(1).lower() if m else None
+
+
 def image_fill_blocked(fig: dict, meph: dict, img: str, cleared: set[str]) -> str | None:
     """Return reason if this Mephitsu photo must not fill the figure row."""
     if img in cleared:
         return "cleared_audit_url"
+    # Size-class clash (e.g. Leader Class listing photo onto a Deluxe row).
+    meph_cls = next(
+        (c for c in (_class_of(t) for t in (meph.get("tags") or []) if "class" in str(t).lower()) if c),
+        None,
+    )
+    fig_cls = _class_of(str(fig.get("scale") or "")) or _class_of(str(fig.get("subtitle") or ""))
+    if meph_cls and fig_cls and meph_cls != fig_cls:
+        return "class_mismatch"
     prod_blob = " ".join(
         str(x or "")
         for x in (meph.get("title"), meph.get("name"), meph.get("subtitle"), meph.get("wave"))
@@ -123,6 +141,62 @@ def image_fill_blocked(fig: dict, meph: dict, img: str, cleared: set[str]) -> st
         tokens = [t for t in fname.split() if len(t) > 2]
         if tokens and not any(t in prod_n for t in tokens):
             return "title_name_mismatch"
+    return None
+
+
+def load_twin_codes() -> dict[str, set[str]]:
+    """productId -> every barcode/sku/listing code Mephitsu exposes for it across line files.
+
+    The same Mephitsu product appears in several hub files (e.g. hasbro.json with no barcode,
+    transformers.json with one), so the photo check must see all of them.
+    """
+    out: dict[str, set[str]] = {}
+    if not MEPH_DIR.exists():
+        return out
+    for path in MEPH_DIR.glob("*.json"):
+        try:
+            prods = json.loads(path.read_text()).get("products") or []
+        except Exception:
+            continue
+        for p in prods:
+            pid = p.get("productId") or p.get("mephitsuId")
+            if not pid:
+                continue
+            for k in ("sku", "barcode", "listingSku"):
+                c = clean_code(p.get(k))
+                if c:
+                    out.setdefault(str(pid), set()).add(c)
+    return out
+
+
+def listing_photo_veto(
+    row: dict,
+    meph: dict,
+    blocks: Any,
+    gtin_owner: dict[str, str],
+    alias_owner: dict[str, str],
+    twin_codes: dict[str, set[str]],
+) -> str | None:
+    """Reason the listing's photo must not fill `row` because of the listing's own codes."""
+    codes = {clean_code(meph.get(k)) for k in ("sku", "barcode", "listingSku")}
+    pid = meph.get("productId") or meph.get("mephitsuId")
+    if pid:
+        codes |= twin_codes.get(str(pid), set())
+    codes.discard(None)
+    codes.discard("")
+    own = {str(row.get("sku") or "").upper()}
+    for c in sorted(codes):
+        if blocks.code_blocked(row["id"], c):
+            return f"listing_code_audit_blocked:{c}"
+        if c.upper() in own:
+            continue
+        other = gtin_owner.get(c.upper())
+        if is_gtin(c) and other and other != row["id"]:
+            return f"listing_gtin_owned_by:{other}"
+        for k in audit_blocklist.code_keys(c):
+            o = alias_owner.get(k)
+            if o and o != row["id"]:
+                return f"listing_code_owned_by:{o}"
     return None
 
 
@@ -493,6 +567,14 @@ def apply_bake(
 
     cleared_urls = load_cleared_image_urls()
     blocks = audit_blocklist.load(doc=alias_doc or None)
+    gtin_owner = {
+        str(r.get("sku")).upper(): r["id"] for r in rows if r.get("sku") and is_gtin(r.get("sku"))
+    }
+    alias_owner: dict[str, str] = {}
+    for k, v in (alias_doc.get("aliasToFigureId") or {}).items():
+        for key in audit_blocklist.code_keys(k):
+            alias_owner.setdefault(key, str(v))
+    twin_codes = load_twin_codes()
 
     stats = {
         "matched": len(finals),
@@ -513,6 +595,7 @@ def apply_bake(
         existing = clean_code(row.get("sku"))
         cand = clean_code(meph.get("sku"))
         listing = clean_code(meph.get("listingSku"))
+        photo_veto = listing_photo_veto(row, meph, blocks, gtin_owner, alias_owner, twin_codes)
         # Audit block list: never re-attach stripped codes/photos to this figure.
         if cand and blocks.code_blocked(row["id"], cand):
             stats["blockedByAudit"] += 1
@@ -571,6 +654,14 @@ def apply_bake(
         img = meph.get("imageUrl")
         if img and not row.get("imageUrl") and blocks.image_blocked(row["id"], img):
             stats["blockedByAudit"] += 1
+            img = None
+        if img and not row.get("imageUrl") and photo_veto:
+            # The listing's own barcode is blocked for / owned by another row, so its
+            # photo is that other product's photo, not this figure's.
+            stats["imagesSkipped"] += 1
+            stats.setdefault("photoVetoes", []).append(
+                {"figureId": row["id"], "mephitsu": meph.get("title"), "reason": photo_veto}
+            )
             img = None
         if img and not row.get("imageUrl"):
             block = image_fill_blocked(row, meph, img, cleared_urls)

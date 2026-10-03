@@ -15,6 +15,8 @@ Policy:
   - Allowlist: hasbro, mcfarlane, neca, jazwares, plus Super7 and premium
     1/6 makers that already exist as CompanyIds (hottoys, mondo, threezero,
     enterbay, asmus, starace, exo6). No invented company ids (no sideshow).
+  - Filter out stream/livestream/panel/reveals/"and more"/roundup/news/event posts
+    and posts without a single product name
   - Filter out sponsor newsletters, sales/deals, customs, photo-of-the-day,
     pure review/in-hand with no new product identity, vehicles/props-only,
     and non-figure entertainment news
@@ -222,6 +224,13 @@ POTD_RE = re.compile(r"\b(?:photo\s+of\s+the\s+day|potd|daily\s+photo)\b", re.I)
 ENTERTAINMENT_RE = re.compile(
     r"\b(?:trailer|casting\s+news|box\s+office|release\s+date\s+moved|"
     r"tv\s+spot|movie\s+review|episode\s+recap)\b",
+    re.I,
+)
+# News / event / stream posts never name a single product (e.g. "Star Wars Stream for
+# October 26 – 2027 New Era Reveals and More"). Title-level hard reject.
+NEWS_EVENT_RE = re.compile(
+    r"\b(?:live[\s\-]?stream(?:s|ing|ed)?|stream(?:s|ing|ed)?|panels?|reveals|"
+    r"and\s+more|round[\s\-]?ups?|news|events?)\b",
     re.I,
 )
 PROP_RE = re.compile(
@@ -527,6 +536,12 @@ def content_reject_reason(classes: list[str], title: str, blob: str) -> tuple[st
         SALES_RE.search(title) and SPONSOR_RE.search(blob + " " + title)
     ):
         return "sales-deals", "Sales / deals / sponsor update, not a new-figure reveal."
+    m = NEWS_EVENT_RE.search(title)
+    if m:
+        return (
+            "news-event-post",
+            f"Stream / panel / reveals / roundup / news / event post ({m.group(0)!r}) — not a single product.",
+        )
     if POTD_RE.search(title) or POTD_RE.search(blob[:400]):
         return "photo-of-the-day", "Photo-of-the-day / daily photo post."
     if CUSTOM_RE.search(title) or re.search(r"\bcustom\s+figure\b", blob, re.I):
@@ -547,6 +562,26 @@ def content_reject_reason(classes: list[str], title: str, blob: str) -> tuple[st
             return "vehicles-props-only", "Title is a prop/vehicle/replica, not a figure."
         if VEHICLE_ONLY_RE.search(title) and not re.search(r"\bfigure\b", title, re.I):
             return "vehicles-props-only", "Title is vehicle/playset-only."
+    return None
+
+
+def single_product_name_problem(name: str, title: str) -> str | None:
+    """Why `name` is not one product's name (None when it looks like a single product)."""
+    n = re.sub(r"\s+", " ", (name or "").strip())
+    if not n:
+        return "empty name"
+    if NEWS_EVENT_RE.search(n):
+        return "name reads like a news/event headline"
+    # "Franchise – Product" is normal; judge the product side of the dash.
+    product = re.split(r"\s[–—]\s|\s-\s", n)[-1].strip()
+    if not product:
+        return "no product after the headline dash"
+    if re.match(r"^(?:19|20)\d\d\b", product):
+        return "product part starts with a year, not a product name"
+    if product.count(",") >= 2:
+        return "name lists several items"
+    if len(product.split()) > 10:
+        return "name too long for a single product"
     return None
 
 
@@ -1316,6 +1351,29 @@ def evaluate_post(
         spec_line = (spec.get("line") or line or "").strip()
         variant = (spec.get("variant") or "").strip()
         raw = spec.get("raw") or name
+        problem = single_product_name_problem(name, title) if name else None
+        if problem:
+            rejects.append(
+                {
+                    "decision": "reject",
+                    "reason": "no-single-product-name",
+                    "name": name,
+                    "company": company,
+                    "line": spec_line or None,
+                    "year": year,
+                    "releaseWindow": window,
+                    "variant": variant or None,
+                    "sourceUrl": source,
+                    "imageUrl": image,
+                    "aliases": codes,
+                    "codes": codes,
+                    "gtin": gtin,
+                    "toyarkPostId": pid,
+                    "title": title,
+                    "rationale": f"No single product name: {problem}.",
+                }
+            )
+            continue
         if not name:
             rejects.append(
                 {
