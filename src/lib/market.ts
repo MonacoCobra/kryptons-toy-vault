@@ -1,4 +1,5 @@
 import type { CatalogComic, CatalogFigure, SoldComp } from "@/lib/types";
+import { cachedFigureComps } from "@/lib/market-comps-cache";
 import { hashString, isoWeek, mean, mulberry32 } from "@/lib/utils";
 
 const CONDITION_WEIGHTS = [
@@ -118,11 +119,27 @@ function shiftedWeek(weekShift = 0) {
   return { year: y, week: w };
 }
 
+/** Real eBay sold comps (SoldComps cache) for a figure when ≥3 matching sales exist. */
+export function realFigureComps(figure: Pick<CatalogFigure, "id">): SoldComp[] | null {
+  const row = cachedFigureComps(figure.id);
+  if (!row || row.status !== "ok" || !row.comps.length) return null;
+  return row.comps.map((c) => ({ ...c, source: "soldcomps" as const }));
+}
+
+/**
+ * Figure value. `real: true` = average of the 5 most recent matching eBay sales
+ * (SoldComps cache). Otherwise a modeled estimate (MSRP × demand) — its comps are
+ * synthetic and must never be displayed as sales.
+ */
 export function figureMarket(figure: CatalogFigure, weekShift = 0) {
   const { year, week } = shiftedWeek(weekShift);
+  const real = realFigureComps(figure);
+  if (real) {
+    return { comps: real, estimate: estimateFromComps(real), year, week, real: true as const };
+  }
   const comps = compsForFigure(figure, year, week);
   const estimate = estimateFromComps(comps);
-  return { comps, estimate, year, week };
+  return { comps, estimate, year, week, real: false as const };
 }
 
 export function figureHistory(figure: CatalogFigure, weeks = 12) {

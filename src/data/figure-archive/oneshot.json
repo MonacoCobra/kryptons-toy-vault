@@ -720874,7 +720874,7 @@
     "company": "hasbro",
     "kind": "figure",
     "releaseDate": "2025-01-01",
-    "msrp": 0,
+    "msrp": 109.99,
     "scale": "Multipack",
     "demand": 1.0,
     "tags": [
@@ -720888,7 +720888,8 @@
       "multipack",
       "sku:listing",
       "imgsku:listing",
-      "sku-alias"
+      "sku-alias",
+      "msrp:af411"
     ],
     "source": "tfwiki-aotp",
     "sku": "5010996327611",

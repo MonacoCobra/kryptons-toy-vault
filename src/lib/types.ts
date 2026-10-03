@@ -344,7 +344,10 @@ export type SoldComp = {
   title: string;
   /** Sold listing URL when sourced from eBay. */
   url?: string;
-  source?: "ebay" | "synthetic";
+  /** "soldcomps" = real eBay sale; "synthetic" = modeled, never shown as a sale. */
+  source?: "ebay" | "soldcomps" | "synthetic";
+  /** Best offer accepted: the listed price is an upper bound on the real sale. */
+  bestOffer?: boolean;
 };
 
 export type OwnedFigure = {

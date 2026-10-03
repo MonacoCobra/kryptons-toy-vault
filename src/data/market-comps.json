@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "source": "soldcomps",
+  "about": "Real eBay sold comps from api.sold-comps.com via scripts/soldcomps-refresh.mjs (box-side). Avg of 5 most recent matching sales; refresh ≥30 days.",
+  "budget": {
+    "remaining": 99,
+    "resetAt": "2026-11-03T20:09:06.544Z",
+    "checkedAt": "2026-10-03T20:11:43.000Z",
+    "note": "Last known SoldComps quota from response headers (free plan, 100/month)."
+  },
+  "figures": {
+    "tfaotp-selects-g2-universe-dinobot-snarl-g2-universe-dinobo": {
+      "figureId": "tfaotp-selects-g2-universe-dinobot-snarl-g2-universe-dinobo",
+      "source": "soldcomps",
+      "keyword": "age of the primes snarl slug",
+      "fetchedAt": "2026-10-03T20:11:43.302Z",
+      "status": "ok",
+      "estimate": 78.8,
+      "comps": [
+        {
+          "price": 75,
+          "date": "2026-10-03",
+          "condition": "Brand New",
+          "title": "G2 Universe Dinobot Snarl & Slug (Slag) 2 Pack Transformers: Age of the Primes",
+          "url": "https://www.ebay.com/itm/178528287745?nordt=true",
+          "bestOffer": false
+        },
+        {
+          "price": 74.99,
+          "date": "2026-10-02",
+          "condition": "Brand New",
+          "title": "Transformers Age Of The Primes - G2 Universe Dinobot Snarl and Slug 2 Pack",
+          "url": "https://www.ebay.com/itm/117431753959?nordt=true",
+          "bestOffer": false
+        },
+        {
+          "price": 79,
+          "date": "2026-09-30",
+          "condition": "Brand New",
+          "title": "Transformers Age Of The Primes G2 Universe Dinobots Snarl and Slug 2 Pack",
+          "url": "https://www.ebay.com/itm/178526069010?nordt=true",
+          "bestOffer": false
+        },
+        {
+          "price": 81.99,
+          "date": "2026-09-30",
+          "condition": "Brand New",
+          "title": "G2 Universe Dinobot Snarl & Slug  2 Pack Transformers Age of the Primes💥",
+          "url": "https://www.ebay.com/itm/206586796982?nordt=true",
+          "bestOffer": false
+        },
+        {
+          "price": 83,
+          "date": "2026-09-30",
+          "condition": "Brand New",
+          "title": "Transformers Age Of The Primes - G2 Universe Dinobot Snarl and Slug 2 Pack",
+          "url": "https://www.ebay.com/itm/318919136195?nordt=true",
+          "bestOffer": true
+        }
+      ],
+      "passing": 29,
+      "totalItems": 33,
+      "bestOfferInAvg": 1,
+      "conditionBasis": "new"
+    }
+  }
+}
