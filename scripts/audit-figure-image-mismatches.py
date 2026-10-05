@@ -11,6 +11,12 @@ For every figure with an image (oneshot and/or overlay):
       product whose title hard-disagrees (and no co-indexed product high-matches)
       → CLEAR.
   (c) Conservative: only auto-clear high-confidence mismatches; soft flags reported.
+  (d) Character-name check strips faction/universe/group prefixes and tolerates
+      spacing/minor spelling differences (never key only on a faction first word).
+  (e) Never auto-clear when figure GTIN/barcode (or SKU alias) matches the product
+      the photo came from — flag soft at most.
+  (f) Apply safety cap: if a run would clear more than APPLY_CLEAR_CAP photos,
+      write the report only and skip clears.
 
 Optional --refill: SKU-first re-attach image only when GTIN product title
 high-confidence matches the figure (never multipack onto single). Never invents.
@@ -26,6 +32,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import difflib
 import importlib.util
 import json
 import re
@@ -49,6 +56,10 @@ IMG_INDEX_JSON = ROOT / "src/data/figure-archive/product-image-index.json"
 URLS_JSON = ROOT / "src/data/figure-image-urls.json"
 REPORT_JSON = ROOT / "src/data/figure-archive/image-mismatch-audit.json"
 SKU_AUDIT_JSON = ROOT / "src/data/figure-archive/sku-mismatch-audit.json"
+ALIASES_JSON = ROOT / "src/data/figure-sku-aliases.json"
+
+APPLY_CLEAR_CAP = 15  # refuse clears when a single --apply would exceed this
+FUZZY_TOKEN_RATIO = 0.84
 
 _spec = importlib.util.spec_from_file_location("bake_figure_images", SCRIPTS / "bake-figure-images.py")
 _bfi = importlib.util.module_from_spec(_spec)
@@ -76,6 +87,156 @@ WEAK = {
     "dc", "multiverse", "classified", "origins", "masterverse", "collection",
     "pack", "set", "anniversary", "studio", "studios", "infinite",
 }
+
+
+# Leading faction / universe / group words — retailer titles often omit these
+# ("Autobot Skids" vs "Legacy Deluxe Wave 1 - Skids").
+FACTION_WORDS = {
+    "autobot", "decepticon", "maximal", "predacon", "terrorcon",
+    "dinobot", "insecticon", "constructicon", "stunticon", "combaticon",
+    "aerialbot", "protectobot", "seacon", "technobot", "battlecon",
+}
+
+# Continuity / group phrases stripped from the start of a figure name (repeatable).
+_NAME_PREFIX_RES: list[re.Pattern[str]] = [
+    re.compile(r"^the\s+thirteen\s+", re.I),
+    re.compile(r"^robots\s+in\s+disguise(?:\s+\d+)?(?:\s+universe)?\s+", re.I),
+    re.compile(r"^rescue\s+bots?(?:\s+universe)?\s+", re.I),
+    re.compile(
+        r"^beast\s+wars(?:\s+(?:ii|2|neo))?(?:\s+universe)?\s+",
+        re.I,
+    ),
+    re.compile(r"^g1\s+triple\s+changer\s+", re.I),
+    re.compile(r"^evolution\s+", re.I),  # POTP "Evolution Optimus Prime"
+    re.compile(r"^fugitive\s+", re.I),
+    # "<continuity> Universe …" (Armada/G1/Prime/Infernac/Comic/…)
+    re.compile(
+        r"^(?:armada|g1|g2|prime|predacon|cybertron|diaclone|animated|"
+        r"cyberverse|energon|infernac|comic|victory|beast|rescue|"
+        r"transformers)\s+universe\s+",
+        re.I,
+    ),
+    # Generic single-token "X Universe " (keeps "Masters of the Universe" intact —
+    # that phrase has "of the" between masters and universe).
+    re.compile(r"^[a-z0-9]+\s+universe\s+", re.I),
+    # Bare faction word at start
+    re.compile(
+        r"^(?:" + "|".join(sorted(FACTION_WORDS)) + r")\s+",
+        re.I,
+    ),
+]
+
+
+def strip_faction_universe_prefix(name: str) -> str:
+    """Remove leading faction/universe/group prefixes; repeat until stable."""
+    n = (name or "").strip()
+    # Work on a display-ish string; keep original separators for readability.
+    prev = None
+    while prev != n:
+        prev = n
+        for rx in _NAME_PREFIX_RES:
+            n2 = rx.sub("", n, count=1).strip()
+            if n2 != n:
+                n = n2
+                break
+    return n
+
+
+def compact_alnum(s: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", (s or "").lower())
+
+
+def character_name_tokens(name: str) -> list[str]:
+    """Significant character tokens after stripping faction/universe prefixes."""
+    stripped = strip_faction_universe_prefix(name)
+    toks = name_tokens(stripped)
+    # Drop any residual faction words (e.g. "Autobot Peacemaker" mid-name after lead strip)
+    return [t for t in toks if t not in FACTION_WORDS]
+
+
+def token_matches_product(tok: str, prod_toks: set[str], prod_blob: str) -> bool:
+    """Exact / compacted / fuzzy token match against a product title blob."""
+    if not tok:
+        return True
+    if tok in prod_toks or tok in prod_blob:
+        return True
+    prod_compact = compact_alnum(prod_blob)
+    if tok in prod_compact or compact_alnum(tok) in prod_compact:
+        return True
+    # Fuzzy vs individual product tokens
+    for pt in prod_toks:
+        if difflib.SequenceMatcher(None, tok, pt).ratio() >= FUZZY_TOKEN_RATIO:
+            return True
+        if difflib.SequenceMatcher(None, compact_alnum(tok), compact_alnum(pt)).ratio() >= FUZZY_TOKEN_RATIO:
+            return True
+    # Spaced retailer spellings: "beach comber" ↔ beachcomber; "shadow striker" ↔ shadowstriker
+    words = prod_blob.split()
+    for i in range(len(words)):
+        for j in range(i + 1, min(i + 4, len(words) + 1)):
+            chunk = "".join(words[i:j])
+            if chunk == tok:
+                return True
+            if difflib.SequenceMatcher(None, tok, chunk).ratio() >= FUZZY_TOKEN_RATIO:
+                return True
+    return False
+
+
+def load_sku_aliases() -> dict[str, list[str]]:
+    if not ALIASES_JSON.exists():
+        return {}
+    try:
+        doc = json.loads(ALIASES_JSON.read_text())
+    except Exception:
+        return {}
+    raw = doc.get("aliasesByFigureId") or {}
+    out: dict[str, list[str]] = {}
+    for fid, aliases in raw.items():
+        if isinstance(aliases, list):
+            out[str(fid)] = [str(a) for a in aliases]
+    return out
+
+
+def figure_identity_codes(fig: dict, aliases_by_id: dict[str, list[str]]) -> set[str]:
+    """Figure GTIN/sku plus known listing aliases (normalized)."""
+    codes: set[str] = set()
+
+    def add(raw: Any) -> None:
+        c = clean_code(raw)
+        if not c or str(c).startswith("id:"):
+            return
+        codes.add(c)
+        if c.isdigit():
+            codes.add(c.lstrip("0") or "0")
+
+    add(fig.get("sku"))
+    add(fig.get("barcode"))
+    add(fig.get("gtin"))
+    for a in aliases_by_id.get(str(fig.get("id") or ""), []) or []:
+        add(a)
+    return codes
+
+
+def product_identity_codes(prod: dict) -> set[str]:
+    codes: set[str] = set()
+
+    def add(raw: Any) -> None:
+        c = clean_code(raw)
+        if not c:
+            return
+        codes.add(c)
+        if c.isdigit():
+            codes.add(c.lstrip("0") or "0")
+
+    for field in ("sku", "barcode", "listingSku"):
+        add(prod.get(field))
+    return codes
+
+
+def codes_overlap(fig_codes: set[str], prod: dict) -> bool:
+    if not fig_codes:
+        return False
+    return bool(fig_codes & product_identity_codes(prod))
+
 
 THEME_CONFLICTS: list[tuple[set[str], set[str], str]] = [
     ({"skrull"}, {"deadpool", "wolverine"}, "theme_skrull_vs_dpw"),
@@ -230,12 +391,21 @@ def detect_reasons(fig: dict, prod: dict, score: float) -> list[str]:
     ) and not figure_is_pack(fig):
         reasons.append("product_multipack_vs_single")
 
-    if fig_name_toks:
-        first = fig_name_toks[0]
-        if first not in prod_toks and first not in prod_blob:
-            joined = "".join(fig_name_toks)
-            if joined not in prod_blob.replace(" ", ""):
-                reasons.append(f"char_missing:{first}")
+    # Character check: ignore faction/universe prefixes; match remaining tokens
+    # with spacing/hyphen normalization and light fuzzy tolerance.
+    # Pass when ANY remaining character token hits the product (e.g. "Laser Optimus
+    # Prime" vs title ending in "Optimus Prime", or "Powerlinx Hot Shot" vs "Hot Shot").
+    char_toks = character_name_tokens(fig.get("name") or "")
+    if not char_toks:
+        char_toks = fig_name_toks
+    if char_toks:
+        any_hit = any(token_matches_product(t, prod_toks, prod_blob) for t in char_toks)
+        joined = "".join(char_toks)
+        joined_hit = joined in compact_alnum(prod_blob) or token_matches_product(
+            joined, prod_toks, prod_blob
+        )
+        if not any_hit and not joined_hit:
+            reasons.append(f"char_missing:{char_toks[0]}")
 
     for prod_need, fig_need, label in THEME_CONFLICTS:
         if prod_need & set(tokens(prod_blob)) and fig_need & set(tokens(fig_blob)):
@@ -397,6 +567,7 @@ def audit_figure(
     by_gtin: dict[str, list[dict]],
     by_url: dict[str, list[dict]],
     prior_cleared: set[str],
+    aliases_by_id: dict[str, list[str]] | None = None,
 ) -> dict[str, Any] | None:
     """Return flag entry or None if ok."""
     reasons: list[str] = []
@@ -485,6 +656,35 @@ def audit_figure(
         if only_path_pack and url_sc is not None and url_sc >= URL_KEEP_MIN:
             level = "soft"
             reasons.append("demoted:url_path_multipack_strong_title")
+
+    # Never auto-clear when the figure's own barcode/GTIN (or SKU alias) matches
+    # the product the photo came from. Only the photo's reverse-indexed product(s)
+    # and/or a GTIN-joined product that actually supplies this imageUrl count —
+    # a bare GTIN hit on a different listing must not demote a real mismatch.
+    fig_codes = figure_identity_codes(fig, aliases_by_id or {})
+    photo_match = False
+    if fig_codes:
+        for p in url_prods:
+            if codes_overlap(fig_codes, p):
+                photo_match = True
+                break
+        if not photo_match and evidence.get("gtin"):
+            sku = clean_code(fig.get("sku"))
+            if sku and is_gtin(sku):
+                for p in lookup_gtin(by_gtin, sku):
+                    if not codes_overlap(fig_codes, p):
+                        continue
+                    if norm_url(str(p.get("imageUrl") or "")) == nu:
+                        photo_match = True
+                        break
+    if photo_match:
+        evidence["barcodeMatchedPhotoProduct"] = True
+        if "barcode_match_photo_product" not in reasons:
+            reasons.append("barcode_match_photo_product")
+        if level == "high":
+            level = "soft"
+            reasons.append("demoted:barcode_match_photo_product")
+
     return {
         "figureId": fig["id"],
         "name": fig.get("name"),
@@ -524,7 +724,11 @@ def main() -> int:
     by_gtin = build_gtin_index(sku_index)
     by_url = build_url_index([sku_index, img_index])
     prior_cleared = load_prior_cleared_urls()
-    print(f"gtins={len(by_gtin)} urls={len(by_url)} prior_cleared_urls={len(prior_cleared)}")
+    aliases_by_id = load_sku_aliases()
+    print(
+        f"gtins={len(by_gtin)} urls={len(by_url)} prior_cleared_urls={len(prior_cleared)} "
+        f"sku_alias_figs={len(aliases_by_id)}"
+    )
 
     audited = 0
     high_flags: list[dict] = []
@@ -536,7 +740,12 @@ def main() -> int:
             continue
         audited += 1
         flag = audit_figure(
-            fig, img, by_gtin=by_gtin, by_url=by_url, prior_cleared=prior_cleared
+            fig,
+            img,
+            by_gtin=by_gtin,
+            by_url=by_url,
+            prior_cleared=prior_cleared,
+            aliases_by_id=aliases_by_id,
         )
         if not flag:
             continue
@@ -548,6 +757,15 @@ def main() -> int:
     cleared: list[dict] = []
     refilled: list[dict] = []
     overlay_dropped = 0
+    apply_blocked_by_cap = False
+
+    if apply and len(high_flags) > APPLY_CLEAR_CAP:
+        apply_blocked_by_cap = True
+        print(
+            f"SAFETY CAP: would clear {len(high_flags)} photos "
+            f"(>{APPLY_CLEAR_CAP}); writing report only — human review required."
+        )
+        apply = False
 
     if apply:
         by_id = {r["id"]: r for r in rows}
@@ -597,10 +815,13 @@ def main() -> int:
         URLS_JSON.write_text(json.dumps(overlay, indent=2, ensure_ascii=False) + "\n")
         overlay_dropped = sum(1 for a in cleared if a.get("clearedOverlay"))
 
+    mode = "apply" if apply else ("dry-run-cap-blocked" if apply_blocked_by_cap else "dry-run")
     report = {
         "auditedAt": datetime.now(timezone.utc).isoformat(),
-        "mode": "apply" if apply else "dry-run",
+        "mode": mode,
         "refill": bool(args.refill and apply),
+        "applyClearCap": APPLY_CLEAR_CAP,
+        "applyBlockedByCap": apply_blocked_by_cap,
         "counts": {
             "oneshotRows": len(rows),
             "auditedWithImage": audited,
@@ -610,6 +831,7 @@ def main() -> int:
             "refilled": len(refilled),
             "overlayDropped": overlay_dropped,
             "overlayRemaining": len(overlay),
+            "wouldHaveCleared": len(high_flags) if apply_blocked_by_cap else len(cleared),
         },
         "reasonCounts": dict(
             Counter(
@@ -626,6 +848,9 @@ def main() -> int:
         "notes": [
             "High = auto-cleared on --apply (multipack-vs-single, hard theme, score_reject+char_missing, URL path cues, prior SKU-audit cleared URL).",
             "Soft = reported only; not cleared.",
+            "Character check strips faction/universe/group prefixes and tolerates spacing/minor spelling (fuzzy).",
+            "Barcode/GTIN (or SKU alias) match to the photo's product demotes high→soft; never auto-cleared.",
+            f"Apply safety cap: if high clears would exceed {APPLY_CLEAR_CAP}, report only (mode dry-run-cap-blocked).",
             "Clears BOTH oneshot.imageUrl and figure-image-urls.json (resolveFigureImageUrl falls through to overlay).",
             "Refill is GTIN-only, high-confidence, never multipack→single, never invents SKUs/images.",
             "Comics/UPC and Mephitsu crawl paths untouched.",
@@ -657,7 +882,10 @@ def main() -> int:
     REPORT_JSON.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n")
 
     print(f"audited={audited} high={len(high_flags)} soft={len(soft_flags)}")
-    print(f"cleared={len(cleared)} refilled={len(refilled)} apply={apply}")
+    print(
+        f"cleared={len(cleared)} refilled={len(refilled)} apply={apply} "
+        f"cap_blocked={apply_blocked_by_cap}"
+    )
     print(f"report={REPORT_JSON}")
     # Spotlight Elektra / D&W
     for e in high_flags + soft_flags:
