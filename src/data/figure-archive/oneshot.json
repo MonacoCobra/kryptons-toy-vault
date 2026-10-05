@@ -16578,12 +16578,12 @@
   },
   {
     "id": "ml4-toad-classic",
-    "name": "Toad (2026)",
+    "name": "Toad (2022)",
     "subtitle": "Brotherhood",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2026-05-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.15,
@@ -16596,7 +16596,8 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-20th-anniversary-toad-5010993956609_548fffc6-3a61-47a1-a08b-25893e3d1d4d.jpg?v=1661382390",
@@ -57073,12 +57074,12 @@
   },
   {
     "id": "ml4-avalanche",
-    "name": "Avalanche (2026)",
+    "name": "Avalanche (2023)",
     "subtitle": "Brotherhood",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2026-04-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.2,
@@ -57091,7 +57092,8 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-retro-x-men-classic-series-2-avalanche-5010994140625.jpg?v=1665517031",
@@ -62546,12 +62548,12 @@
   },
   {
     "id": "ml4-black-tom",
-    "name": "Black Tom Cassidy (2026)",
+    "name": "Black Tom Cassidy (2020)",
     "subtitle": "Brotherhood",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2026-03-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.2,
@@ -62567,7 +62569,8 @@
       "sku-gtin",
       "image-sku",
       "imgsku:cmdstore",
-      "imgsku:mephitsu"
+      "imgsku:mephitsu",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-deadpool-baf-strong-guy-series-black-tom-cassidy-5010993697960.jpg?v=1723125040",
@@ -64786,7 +64789,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2026-02-01",
+    "releaseDate": "2025-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.35,
@@ -64808,7 +64811,8 @@
       "alias:hasbro-pulse",
       "alias:staractionfigures",
       "imgsku:cmdstore",
-      "lv-list-row:104"
+      "lv-list-row:104",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-riders-series-6-inch-action-figure-vehicle-set-professor-x-with-hover-chair.jpg?v=1726868732",
@@ -67418,7 +67422,9 @@
       "image-sku",
       "imgsku:toyarena",
       "sku-alias",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/marvel-legends-series-6-inch-action-figure-iceman--0E112E34.pt01.zoom.jpg?v=1571609219",
@@ -69558,7 +69564,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2025-12-01",
+    "releaseDate": "2025-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.25,
@@ -69571,7 +69577,9 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": "HAS140724",
@@ -79756,7 +79764,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2025-09-01",
+    "releaseDate": "2025-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -79767,7 +79775,9 @@
       "curated",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "630509794690"
@@ -79779,7 +79789,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2025-09-01",
+    "releaseDate": "2025-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.25,
@@ -79787,7 +79797,9 @@
       "hasbro",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -82900,7 +82912,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2025-08-01",
+    "releaseDate": "2025-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -82916,7 +82928,9 @@
       "image-sku",
       "image-bake",
       "imgsku:nerdzoic",
-      "imgsku:mephitsu"
+      "imgsku:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "21630509803484",
@@ -82955,12 +82969,12 @@
   },
   {
     "id": "ml4-dormammu",
-    "name": "Dormammu (2025)",
+    "name": "Dormammu (2017)",
     "subtitle": "BAF",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2025-08-01",
+    "releaseDate": "2017-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -82973,7 +82987,8 @@
       "sku-bake",
       "sku:kitsap",
       "image-sku",
-      "imgsku:kitsap"
+      "imgsku:kitsap",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0746/8849/5928/products/202102-0000338206.jpg?v=1682549824",
@@ -108835,7 +108850,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2025-04-01",
+    "releaseDate": "2025-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.35,
@@ -108851,7 +108866,9 @@
       "imgsku:toyarena",
       "sku-alias",
       "alias:kitsap",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010994179984e.jpg?v=1697752712",
@@ -120765,12 +120782,12 @@
   },
   {
     "id": "ml4-moon-knight-mrknight",
-    "name": "Moon Knight Mr. Knight (2024)",
+    "name": "Moon Knight Mr. Knight (2022)",
     "subtitle": "Mr. Knight",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2025-03-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -120790,7 +120807,8 @@
       "alias:hobbyfigures",
       "alias:collecticon",
       "alias:nerdzoic",
-      "alias:kitsap"
+      "alias:kitsap",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-rivlas-deluxe-moon-knight-5010996411266.jpg?v=1776956502",
@@ -123322,7 +123340,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2025-02-01",
+    "releaseDate": "2025-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -123331,7 +123349,9 @@
       "marvel",
       "legends",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN3718-44.jpg?v=1683689283",
@@ -123657,7 +123677,7 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2025-02-01",
+    "releaseDate": "2025-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -123675,7 +123695,8 @@
       "sku-gtin",
       "sku-alias",
       "alias:solarisjapan",
-      "imgsku:japan-figure"
+      "imgsku:japan-figure",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/Bumblebee-2018--Megatron--Leader-Class--Studio-Series-Ss127-Hasbro-Takara-Tomy-4904810918585-0.jpg?v=1730527885",
@@ -126607,7 +126628,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-black-panther-legacy-black-panther-5010994104894.jpg?v=1651522937",
@@ -128442,7 +128465,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-12-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -128460,7 +128483,9 @@
       "alias:hasbro-pulse",
       "alias:staractionfigures",
       "alias:toynk",
-      "alias:kitsap"
+      "alias:kitsap",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-retro-vision-5010993986064.jpg?v=1635533617",
@@ -133302,7 +133327,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-11-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -133313,7 +133338,9 @@
       "curated",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": "5010996246264"
@@ -133450,12 +133477,12 @@
   },
   {
     "id": "ml6-ml-america-chavez",
-    "name": "America Chavez (2024)",
+    "name": "America Chavez (2022)",
     "subtitle": "Wave6",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-11-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -133472,7 +133499,8 @@
       "sku-alias",
       "alias:hasbro-pulse",
       "alias:nerdzoic",
-      "imgsku:mephitsu"
+      "imgsku:mephitsu",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-doctor-strange-baf-rintrah-america-chavez-5010993790906.jpg?v=1640331046",
@@ -136070,7 +136098,7 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019",
+    "releaseDate": "2019-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
@@ -141946,14 +141974,16 @@
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-09-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.2,
     "tags": [
       "hasbro",
       "gi-joe",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave2",
     "sku": null,
@@ -142264,7 +142294,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-09-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.35,
@@ -142277,7 +142307,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-hulk-deluxe-abomination-5010996362278.jpg?v=1769820356",
@@ -145168,7 +145200,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-08-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
@@ -145187,7 +145219,9 @@
       "sku-alias",
       "alias:staractionfigures",
       "alias:toyarena",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-x-men-juggernaut-series-6-inch-action-figure-phoenix_image.gif?v=1723131457",
@@ -148468,7 +148502,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-07-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -148480,7 +148514,9 @@
       "sku-bake",
       "sku:toyarena",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "630509833627"
@@ -148636,7 +148672,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-07-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.2,
@@ -148644,7 +148680,9 @@
       "hasbro",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -155957,7 +155995,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-05-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
@@ -155976,7 +156014,9 @@
       "alias:staractionfigures",
       "alias:hasbro-pulse",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-avengers-endgame-deluxe-thor-5010993839414.jpg?v=1630528523",
@@ -155989,7 +156029,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-05-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.2,
@@ -155997,7 +156037,9 @@
       "hasbro",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -159273,12 +159315,12 @@
   },
   {
     "id": "ml4-donald-pierce",
-    "name": "Donald Pierce (2024)",
+    "name": "Donald Pierce (2020)",
     "subtitle": "Hellfire Club",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-04-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.2,
@@ -159287,7 +159329,8 @@
       "marvel",
       "legends",
       "curated",
-      "img:mephitsu"
+      "img:mephitsu",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://static.wixstatic.com/media/adc447_79bb6bd82e254dfa9047b81519be772f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_79bb6bd82e254dfa9047b81519be772f~mv2.jpg",
@@ -163128,7 +163171,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-03-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -163139,7 +163182,9 @@
       "curated",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "5010996222534"
@@ -166535,7 +166580,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-02-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.35,
@@ -166543,7 +166588,9 @@
       "hasbro",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -166798,7 +166845,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-02-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.35,
@@ -166813,7 +166860,9 @@
       "sku-gtin",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "653569254256",
@@ -169216,7 +169265,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2024-01-01",
+    "releaseDate": "2025-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.35,
@@ -169236,7 +169285,8 @@
       "alias:hasbro-pulse",
       "alias:planet-af",
       "alias:toynk",
-      "alias:kitsap"
+      "alias:kitsap",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/marvel-legends-captain-america-baf-flight-gear-us-agent-5010993790814.jpg?v=1622231713",
@@ -169725,7 +169775,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-retro-x-men-97-wave-2-goblin-queen-5010996201966.jpg?v=1706839411",
@@ -172291,7 +172343,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-12-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -172304,7 +172356,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": "5010996322586",
@@ -175110,7 +175164,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-11-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -175120,7 +175174,9 @@
       "legends",
       "curated",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://static.wixstatic.com/media/adc447_3dd5f6b2d6784edab7e293d74f4a1c61~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_3dd5f6b2d6784edab7e293d74f4a1c61~mv2.jpg"
@@ -182522,7 +182578,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-09-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -182536,7 +182592,9 @@
       "image-sku",
       "image-bake",
       "imgsku:cmdstore",
-      "imgsku:mephitsu"
+      "imgsku:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "630509713561",
@@ -186729,7 +186787,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-08-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.35,
@@ -186748,7 +186806,8 @@
       "sku-alias",
       "alias:staractionfigures",
       "imgsku:cmdstore",
-      "lv-list-row:13"
+      "lv-list-row:13",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legend-infinite-avengers-wave-2-6-inch-spider-woman_image.gif?v=1723135882",
@@ -187074,7 +187133,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-08-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -187083,7 +187142,9 @@
       "marvel",
       "legends",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN3614-53.jpg?v=1683578859",
@@ -190684,7 +190745,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-07-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -190697,7 +190758,9 @@
       "sku:toydojo",
       "image-sku",
       "image-bake",
-      "imgsku:toydojo"
+      "imgsku:toydojo",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "F9090",
@@ -195580,7 +195643,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-06-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -195593,7 +195656,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "5010996282620",
@@ -199809,7 +199874,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-05-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.2,
@@ -199822,7 +199887,8 @@
       "sku-bake",
       "sku:staractionfigures",
       "image-sku",
-      "imgsku:staractionfigures"
+      "imgsku:staractionfigures",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/f3688-prod-mvl-screech2-0010-online-2000sq.jpg?v=1781086336",
@@ -199880,12 +199946,12 @@
   },
   {
     "id": "ml6-ml-sabretooth-aos",
-    "name": "Sabretooth (2023)",
+    "name": "Sabretooth (2021)",
     "subtitle": "Age of Apocalypse Wave6",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-05-01",
+    "releaseDate": "2021-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -199896,7 +199962,8 @@
       "curated",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": "5010996202086"
@@ -204139,7 +204206,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-04-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -204152,7 +204219,9 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996201973e_0a1d3e16-3ad0-4410-beba-e882c92b2a2f.webp?v=1711154373",
@@ -209321,12 +209390,12 @@
   },
   {
     "id": "ml6-ml-magneto-aos",
-    "name": "Magneto Age of Apocalypse (2023)",
+    "name": "Magneto Age of Apocalypse (2021)",
     "subtitle": "Age of Apocalypse Wave6",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-03-01",
+    "releaseDate": "2021-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -209339,7 +209408,8 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996201959e.webp?v=1711054879",
@@ -213778,7 +213848,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-02-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
@@ -213787,7 +213857,8 @@
       "marvel",
       "legends",
       "curated",
-      "lv-list-row:50"
+      "lv-list-row:50",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6"
   },
@@ -214119,7 +214190,7 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2023-02-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -214133,7 +214204,8 @@
       "image-sku",
       "image-bake",
       "imgsku:toyarena",
-      "fix:ss-audit"
+      "fix:ss-audit",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": "HAS199463",
@@ -225986,7 +226058,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-10-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.35,
@@ -226000,7 +226072,9 @@
       "alias:hasbro-pulse",
       "image-sku",
       "image-bake",
-      "imgsku:staractionfigures"
+      "imgsku:staractionfigures",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave2",
     "sku": "E9286",
@@ -226013,7 +226087,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-10-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -226025,7 +226099,9 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave2",
     "sku": "HAS142443",
@@ -229915,14 +229991,16 @@
     "line": "Hasbro Special",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-09-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
     "tags": [
       "hasbro",
       "marvel-legends",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": null,
@@ -230286,7 +230364,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-09-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -230300,7 +230378,8 @@
       "image-bake",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave2",
     "sku": "5010993842629",
@@ -233683,14 +233762,16 @@
     "line": "Hasbro Special",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-08-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
     "tags": [
       "hasbro",
       "marvel-legends",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": null,
@@ -236920,14 +237001,15 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-07-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
     "tags": [
       "hasbro",
       "marvel-legends",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "sku": null,
@@ -242889,7 +242971,7 @@
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-06-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
@@ -242901,7 +242983,8 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996108531d.webp?v=1685669001",
@@ -242964,7 +243047,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-06-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -242982,7 +243065,9 @@
       "alias:kitsap",
       "alias:hasbro-pulse",
       "alias:toyarena",
-      "alias:collecticon"
+      "alias:collecticon",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave2",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0704/5169/1800/files/xmen-marvel-legends-age-of-apocalypse-gambit-6inch-action-figure_2.png?v=1742065801",
@@ -246371,14 +246456,16 @@
     "line": "Star Wars Black Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-05-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
     "tags": [
       "hasbro",
       "marvel-legends",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": null,
@@ -249034,14 +249121,16 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-04-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.55,
     "tags": [
       "hasbro",
       "marvel-legends",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": null,
@@ -253047,14 +253136,15 @@
     "line": "Power Rangers Lightning Collection",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-03-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
     "tags": [
       "hasbro",
       "marvel-legends",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "sku": null,
@@ -256476,7 +256566,7 @@
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2022-02-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -256490,7 +256580,9 @@
       "alias:collecticon",
       "image-sku",
       "image-bake",
-      "imgsku:legendztoys"
+      "imgsku:legendztoys",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": "GIFIRE1",
@@ -259421,7 +259513,9 @@
     "tags": [
       "hasbro",
       "marvel-legends",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": null,
@@ -259446,7 +259540,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave2",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/power-rangers-lightning-collection-1-144-scale-space-astro-megazord-mz-0602-5010994186975_3b1dc43b-b39b-411e-9bc4-5119e91aedde.jpg?v=1680562617",
@@ -261751,19 +261847,20 @@
   },
   {
     "id": "hs10-hs-36",
-    "name": "ML Retro Spider-Man (2021)",
+    "name": "ML Retro Spider-Man (2020)",
     "subtitle": "Marvel Legends",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-12-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
     "tags": [
       "hasbro",
       "marvel-legends",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "sku": null,
@@ -264237,7 +264334,7 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-11-01",
+    "releaseDate": "2021-01-01",
     "msrp": 80.0,
     "scale": "6\"",
     "demand": 1.55,
@@ -264249,7 +264346,9 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": "DK-32",
@@ -267223,14 +267322,16 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-10-01",
+    "releaseDate": "2021-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
     "tags": [
       "hasbro",
       "marvel",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave2",
     "sku": null,
@@ -267362,7 +267463,7 @@
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-10-01",
+    "releaseDate": "2021-01-01",
     "msrp": 50.0,
     "scale": "6\"",
     "demand": 1.4,
@@ -267380,7 +267481,9 @@
       "alias:planet-af",
       "alias:toydojo",
       "alias:hobbyfigures",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996234346c.webp?v=1727998468",
@@ -270910,7 +271013,7 @@
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-09-01",
+    "releaseDate": "2021-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.15,
@@ -270918,7 +271021,9 @@
       "hasbro",
       "gi-joe",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave2",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN3894_4.jpg?v=1590954447",
@@ -271170,7 +271275,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-09-01",
+    "releaseDate": "2021-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.25,
@@ -271182,7 +271287,9 @@
       "sku:staractionfigures",
       "image-sku",
       "image-bake",
-      "imgsku:staractionfigures"
+      "imgsku:staractionfigures",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave2",
     "sku": "G0592",
@@ -271274,14 +271381,16 @@
     "line": "Star Wars Black Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-09-01",
+    "releaseDate": "2021-01-01",
     "msrp": 60.0,
     "scale": "6\"",
     "demand": 1.45,
     "tags": [
       "hasbro",
       "marvel-legends",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": null,
@@ -274862,19 +274971,20 @@
   },
   {
     "id": "hs10-hs-32",
-    "name": "ML BAF Bonebreaker Wave (2021)",
+    "name": "ML BAF Bonebreaker Wave (2022)",
     "subtitle": "Marvel Legends",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-08-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.4,
     "tags": [
       "hasbro",
       "marvel-legends",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "sku": null,
@@ -277670,7 +277780,7 @@
     "line": "Lightning Collection",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-07-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "6\"",
     "demand": 1.25,
@@ -277681,7 +277791,9 @@
       "sku-alias",
       "alias:hasbro-pulse",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave2",
     "imageUrl": "https://static.wixstatic.com/media/adc447_3b9f02151d4149e3adf0d252c1bb3123~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_3b9f02151d4149e3adf0d252c1bb3123~mv2.jpg",
@@ -277764,14 +277876,16 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-07-01",
+    "releaseDate": "2021-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
     "tags": [
       "hasbro",
       "marvel-legends",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": null,
@@ -277997,7 +278111,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-07-01",
+    "releaseDate": "2021-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.3,
@@ -278011,7 +278125,9 @@
       "image-sku",
       "imgsku:toyarena",
       "sku-alias",
-      "alias:kitsap"
+      "alias:kitsap",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave2",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996322548a.webp?v=1763516805",
@@ -282778,14 +282894,15 @@
     "line": "Power Rangers Lightning Collection",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-06-01",
+    "releaseDate": "2023-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
     "tags": [
       "hasbro",
       "marvel-legends",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "sku": null,
@@ -282822,7 +282939,7 @@
     "line": "Lightning Collection",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-06-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "6\"",
     "demand": 1.25,
@@ -282836,7 +282953,8 @@
       "sku-alias",
       "alias:hasbro-pulse",
       "image-sku",
-      "imgsku:collecticon"
+      "imgsku:collecticon",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave2",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0076/4103/8906/products/hasbro-power-rangers-lightning-collection-zeo-green-ranger-box-package-front.jpg?v=1614905207",
@@ -283050,7 +283168,7 @@
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-06-01",
+    "releaseDate": "2021-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.25,
@@ -283065,7 +283183,9 @@
       "alias:hasbro-pulse",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave2",
     "sku": "HAS234407",
@@ -286228,7 +286348,7 @@
     "line": "Power Rangers Lightning Collection",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-05-01",
+    "releaseDate": "2019-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.55,
@@ -286240,7 +286360,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/power-rangers-lightning-collection-series-1-6-inch-action-figure-spd-shadow-ranger.jpg?v=1723119044",
@@ -289236,7 +289357,7 @@
     "line": "Power Rangers Lightning Collection",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-04-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.55,
@@ -289254,7 +289375,8 @@
       "sku-alias",
       "alias:legendztoys",
       "alias:hasbro-pulse",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/power-rangers-lightning-collection-spd-a-squad-green-ranger-5010993856510.jpg?v=1639084251",
@@ -292762,7 +292884,7 @@
     "line": "Power Rangers Lightning Collection",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-03-01",
+    "releaseDate": "2021-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -292776,7 +292898,9 @@
       "alias:toynk",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/power-rangers-lightning-collection-6-inch-action-figure-red-ranger-classic.jpg?v=1723118746",
@@ -295432,7 +295556,7 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2021-02-01",
+    "releaseDate": "2022-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -295453,7 +295577,8 @@
       "alias:toydojo",
       "alias:hobbyfigures",
       "alias:collecticon",
-      "alias:kitsap"
+      "alias:kitsap",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996348630a.webp?v=1781822955",
@@ -300575,7 +300700,7 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2020-12-01",
+    "releaseDate": "2025-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.55,
@@ -300591,7 +300716,8 @@
       "sku-alias",
       "alias:toydojo",
       "alias:planet-af",
-      "alias:collecticon"
+      "alias:collecticon",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "sku": "HAS380043",
@@ -303086,7 +303212,7 @@
     "line": "Transformers Studio Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2020-11-01",
+    "releaseDate": "2024-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.55,
@@ -303105,7 +303231,8 @@
       "alias:toyarena",
       "alias:legendztoys",
       "alias:hasbro-pulse",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studio-series-leade-class-exclusive-battle-damaged-optimus-prime-5010996350695.jpg?v=1773066763",
@@ -305918,7 +306045,7 @@
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2020-10-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -305932,7 +306059,9 @@
       "image-bake",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:collecticon"
+      "alias:collecticon",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": "5010993736966",
@@ -309278,7 +309407,7 @@
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2020-09-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
@@ -309293,7 +309422,8 @@
       "sku-alias",
       "alias:collecticon",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "sku": "83465042",
@@ -312441,7 +312571,7 @@
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2020-08-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -312455,7 +312585,8 @@
       "image-sku",
       "imgsku:toyarena",
       "sku-alias",
-      "alias:collecticon"
+      "alias:collecticon",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996395757a.webp?v=1782167139",
@@ -315194,7 +315325,7 @@
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2020-07-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -315206,7 +315337,9 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996238498.webp?v=1727474757",
@@ -319087,7 +319220,7 @@
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2020-06-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.55,
@@ -319099,7 +319232,8 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996247858o.jpg?v=1755023484",
@@ -322651,7 +322785,7 @@
     "line": "GI Joe Classified",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2020-05-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.55,
@@ -322666,7 +322800,8 @@
       "imgsku:cooltoyden",
       "sku:cmdstore",
       "sku-gtin",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/gi-joe-origins-movie-classified-series-1-snake-eyes-5010993738373.jpg?v=1624379906",
@@ -324976,7 +325111,7 @@
     "line": "Star Wars Black Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2020-04-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.55,
@@ -324996,7 +325131,9 @@
       "alias:toynk",
       "alias:hobbyfigures",
       "alias:collecticon",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": "5010996366047",
@@ -328044,7 +328181,7 @@
     "line": "Star Wars Black Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2020-03-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -328056,7 +328193,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-2024-wave-4a-ahsoka-tano-peridea-11-5010996269584.jpg?v=1723852893",
@@ -330862,7 +331001,7 @@
     "line": "Star Wars Black Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2020-02-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -330877,7 +331016,9 @@
       "imgsku:toyarena",
       "sku:cmdstore",
       "sku-gtin",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-white-box-deluxe-the-mandalorian-grogu-01-5010996425478.jpg?v=1775767334",
@@ -333485,7 +333626,9 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": "HAS175559",
@@ -335400,7 +335543,7 @@
     "line": "Star Wars Black Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-12-01",
+    "releaseDate": "2019-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.55,
@@ -335412,7 +335555,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": "630509251773",
@@ -337607,7 +337752,7 @@
     "line": "Star Wars Black Series",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-11-01",
+    "releaseDate": "2019-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -337619,7 +337764,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/star-wars-the-black-series-2025-wave-1a-luke-skywalker-09-5010996282002.jpg?v=1727202233",
@@ -339729,7 +339876,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-10-01",
+    "releaseDate": "2019-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.45,
@@ -339747,7 +339894,9 @@
       "sku-alias",
       "alias:hobbyfigures",
       "alias:nerdzoic",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/hasbro-marvel-legends-action-figures-series-3-marvel-girl-rachel-grey_image.gif?v=1723129345",
@@ -342282,12 +342431,12 @@
   },
   {
     "id": "hs10-hs-09",
-    "name": "Marvel Legends Magneto AOA (2019)",
+    "name": "Marvel Legends Magneto AOA (2021)",
     "subtitle": "Marvel Legends",
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-09-01",
+    "releaseDate": "2021-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -342302,7 +342451,8 @@
       "sku-alias",
       "alias:toyarena",
       "alias:indemandtoys",
-      "alias:nerdzoic"
+      "alias:nerdzoic",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave10",
     "sku": "630509355228"
@@ -345124,7 +345274,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-08-01",
+    "releaseDate": "2019-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.55,
@@ -345143,7 +345293,9 @@
       "alias:nerdzoic",
       "alias:kitsap",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": "G20315L00",
@@ -347418,7 +347570,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-07-01",
+    "releaseDate": "2019-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -347441,7 +347593,9 @@
       "alias:collecticon",
       "alias:nerdzoic",
       "alias:hasbro-pulse",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-captain-america-winter-soldier-wave-1-6-inch-wwii-captain-america_image.gif?v=1705968007",
@@ -350633,7 +350787,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-06-01",
+    "releaseDate": "2019-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -350657,7 +350811,9 @@
       "alias:collecticon",
       "alias:nerdzoic",
       "alias:kitsap",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-dr-strange-series-6-inch-marvel-now-iron-man_image.gif?v=1723129372",
@@ -353423,7 +353579,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-05-01",
+    "releaseDate": "2019-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -353433,7 +353589,9 @@
       "curated",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": "5010994171391"
@@ -355575,7 +355733,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-04-01",
+    "releaseDate": "2019-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -355595,7 +355753,9 @@
       "alias:nerdzoic",
       "alias:toyarena",
       "alias:staractionfigures",
-      "imgsku:nerdzoic"
+      "imgsku:nerdzoic",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0535/8125/0722/files/UNLISTED.png?v=1779383923",
@@ -357672,7 +357832,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-03-01",
+    "releaseDate": "2019-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.5,
@@ -357701,7 +357861,9 @@
       "alias:hasbro-pulse",
       "alias:planet-af",
       "alias:cooltoyden",
-      "imgsku:nerdzoic"
+      "imgsku:nerdzoic",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0535/8125/0722/files/2_e2867b5f-966a-46d6-950e-45912822004a.png?v=1777404416",
@@ -359836,7 +359998,7 @@
     "line": "Marvel Legends",
     "company": "hasbro",
     "kind": "figure",
-    "releaseDate": "2019-02-01",
+    "releaseDate": "2019-01-01",
     "msrp": 24.99,
     "scale": "6\"",
     "demand": 1.55,
@@ -359853,7 +360015,9 @@
       "alias:staractionfigures",
       "alias:toydojo",
       "alias:collecticon",
-      "alias:nerdzoic"
+      "alias:nerdzoic",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave10",
     "sku": "HAS842841"
