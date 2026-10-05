@@ -1,0 +1,99 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-05",
+  "updatedAt": "2026-10-05T14:32:54Z",
+  "added": 46,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Page2 differed; merged unique products.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 318,
+    "ee_candidates": 27,
+    "bbts_candidates": 168,
+    "added": 46,
+    "skipped_dupes": 149,
+    "rejected_non_af": 90,
+    "unmapped_company": 33,
+    "postfilter_rejected": 0
+  },
+  "oneshotBefore": 29764,
+  "oneshotAfter": 29810,
+  "ee_added": 16,
+  "bbts_added": 30,
+  "samples": [
+    {
+      "sku": "SUP80902",
+      "name": "Sesame Street Big Bird and Mr. Snuffleupagus 3 3/4-Inch ReAction Figures",
+      "id": "afmon-super7-sesame-street-big-bird-and-mr-snuffleupagus-3-3-4-inch-reaction-figures-sup80902",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP82824",
+      "name": "Godzilla Ultimates (Millennium) 8-Inch Scale Action Figure",
+      "id": "afmon-super7-godzilla-ultimates-millennium-8-inch-scale-action-figure-sup82824",
+      "source": "ee"
+    },
+    {
+      "sku": "HSE2933",
+      "name": "Deadpool Titan Hero Series 12-inch Deadpool Action Figure",
+      "id": "afmon-hasbro-deadpool-titan-hero-series-12-inch-deadpool-action-figure-hse2933",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2067",
+      "name": "Marvel Legends Maximum Series Thor 6-Inch Action Figure",
+      "id": "afmon-hasbro-marvel-legends-maximum-series-thor-6-inch-action-figure-hsg2067",
+      "source": "ee"
+    },
+    {
+      "sku": "KTGN257",
+      "name": "My Hero Academia CK-M06 Katsuki Bakugo Collekazaro Action Figure",
+      "id": "afmon-takaratomy-my-hero-academia-ck-m06-katsuki-bakugo-collekazaro-action-figure-ktgn257",
+      "source": "ee"
+    },
+    {
+      "sku": "KTGN258",
+      "name": "My Hero Academia CK-M07 Armored All Might Collekazaro Action Figure",
+      "id": "afmon-takaratomy-my-hero-academia-ck-m07-armored-all-might-collekazaro-action-figure-ktgn258",
+      "source": "ee"
+    },
+    {
+      "sku": "KTGN259",
+      "name": "My Hero Academia CK-M08 Hawks Collekazaro Action Figure",
+      "id": "afmon-takaratomy-my-hero-academia-ck-m08-hawks-collekazaro-action-figure-ktgn259",
+      "source": "ee"
+    },
+    {
+      "sku": "KTGN260",
+      "name": "My Hero Academia CK-M09 Dabi Collekazaro Action Figure",
+      "id": "afmon-takaratomy-my-hero-academia-ck-m09-dabi-collekazaro-action-figure-ktgn260",
+      "source": "ee"
+    },
+    {
+      "sku": "KTGN238",
+      "name": "Ronin Warriors T-Spark Toyrise Gai of the Heat Action Figure",
+      "id": "afmon-takaratomy-ronin-warriors-t-spark-toyrise-gai-of-the-heat-action-figure-ktgn238",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG3522",
+      "name": "Avengers Doomsday Doctor Doom Action FX Figure",
+      "id": "afmon-hasbro-avengers-doomsday-doctor-doom-action-fx-figure-hsg3522",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2653A",
+      "name": "Avengers Doomsday ActionVerse 4 1/2-Inch Action Figures Case of 6",
+      "id": "afmon-hasbro-avengers-doomsday-actionverse-4-1-2-inch-action-figures-case-of-6-hsg2653a",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2651A",
+      "name": "Avengers Doomsday Titan Series 12-Inch Action Figures Case of 4",
+      "id": "afmon-hasbro-avengers-doomsday-titan-series-12-inch-action-figures-case-of-4-hsg2651a",
+      "source": "ee"
+    }
+  ]
+}
