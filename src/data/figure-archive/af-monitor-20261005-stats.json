@@ -2,7 +2,7 @@
   "source": "lyra-weekday-af-monitor",
   "date": "2026-10-05",
   "updatedAt": "2026-10-05T14:32:54Z",
-  "added": 46,
+  "added": 34,
   "skipped": [],
   "ingestPath": "oneshot-fallback",
   "databaseUrl": false,
@@ -12,16 +12,16 @@
     "candidates_seen": 318,
     "ee_candidates": 27,
     "bbts_candidates": 168,
-    "added": 46,
-    "skipped_dupes": 149,
-    "rejected_non_af": 90,
+    "added": 34,
+    "skipped_dupes": 159,
+    "rejected_non_af": 92,
     "unmapped_company": 33,
     "postfilter_rejected": 0
   },
   "oneshotBefore": 29764,
-  "oneshotAfter": 29810,
-  "ee_added": 16,
-  "bbts_added": 30,
+  "oneshotAfter": 29798,
+  "ee_added": 14,
+  "bbts_added": 20,
   "samples": [
     {
       "sku": "SUP80902",
@@ -84,16 +84,38 @@
       "source": "ee"
     },
     {
-      "sku": "HSG2653A",
-      "name": "Avengers Doomsday ActionVerse 4 1/2-Inch Action Figures Case of 6",
-      "id": "afmon-hasbro-avengers-doomsday-actionverse-4-1-2-inch-action-figures-case-of-6-hsg2653a",
+      "sku": "HSG2650",
+      "name": "Avengers Doomsday Power-Glow Doctor Doom 10-Inch Electronic Action Figure",
+      "id": "afmon-hasbro-avengers-doomsday-power-glow-doctor-doom-10-inch-electronic-action-figure-hsg2650",
       "source": "ee"
     },
     {
-      "sku": "HSG2651A",
-      "name": "Avengers Doomsday Titan Series 12-Inch Action Figures Case of 4",
-      "id": "afmon-hasbro-avengers-doomsday-titan-series-12-inch-action-figures-case-of-4-hsg2651a",
+      "sku": "BFIC0011",
+      "name": "Orc Warrior Chieftain Immortal Champions 5 1/2-Inch Action Figure",
+      "id": "afmon-bossfight-orc-warrior-chieftain-immortal-champions-5-1-2-inch-action-figure-bfic0011",
       "source": "ee"
     }
-  ]
+  ],
+  "commit": "e9f4bf02",
+  "postReview": {
+    "crossRetailerOrExistingDupesAliased": {
+      "BBTS-194910": "mcf-dc-super-pow-batman-1990s-wave-15",
+      "BBTS-194909": "mcf-dc-super-pow-batgirl-wave-15",
+      "BBTS-194905": "mcf-dc-super-pow-harley-quinn-wave-15",
+      "BBTS-194908": "mcf-dc-super-pow-red-tornado-wave-15",
+      "BBTS-194907": "mcf-dc-super-pow-superman-blue-wave-15",
+      "BBTS-194906": "mcf-dc-super-pow-superman-red-wave-15",
+      "BBTS-198413": "afmon-mcfarlane-dc-super-powers-wave-15-4-1-2-inch-scale-action-figure-case--mf18080ar",
+      "BBTS-198732": "afmon-bossfight-bloodsteel-emissary-immortal-champions-5-1-2-inch-action-figure-bfic0010",
+      "BBTS-198731": "afmon-bossfight-orc-warrior-chieftain-immortal-champions-5-1-2-inch-action-figure-bfic0011",
+      "BBTS-198701": "afmon-mcfarlane-call-of-duty-modern-warfare-4-ghost-mcfarlane-elite-edition-19-7-inch-delu-mf12854"
+    },
+    "casePacksDropped": [
+      "HSG2651A",
+      "HSG2653A"
+    ],
+    "companyFix": {
+      "BBTS-198834": "playmates->heatboys"
+    }
+  }
 }
