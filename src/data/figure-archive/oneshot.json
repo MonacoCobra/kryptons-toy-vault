@@ -120808,7 +120808,8 @@
       "alias:collecticon",
       "alias:nerdzoic",
       "alias:kitsap",
-      "date-precision:year"
+      "date-precision:year",
+      "identity-collapse"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-rivlas-deluxe-moon-knight-5010996411266.jpg?v=1776956502",
@@ -186550,7 +186551,8 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:hasbro-pulse",
-      "date-precision:year"
+      "date-precision:year",
+      "identity-collapse"
     ],
     "source": "curated-bbts-wave5",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/power-rangers-lightning-collection-wave-6-zeo-red-ranger-630509960422_pkg.jpg?v=1742412163",
@@ -190274,7 +190276,9 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:hasbro-pulse"
+      "alias:hasbro-pulse",
+      "date-precision:year",
+      "identity-collapse"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/power-rangers-lightning-collection-deluxe-rita-repulsa-5010996135865.jpg?v=1682646252",
@@ -209387,33 +209391,6 @@
     "source": "curated",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-generations-legacy-core-classe-wave-5-optimus-prime-5010996120618.jpg?v=1705013016",
     "sku": "5010996120618"
-  },
-  {
-    "id": "ml6-ml-magneto-aos",
-    "name": "Magneto Age of Apocalypse (2021)",
-    "subtitle": "Age of Apocalypse Wave6",
-    "line": "Marvel Legends",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2021-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.5,
-    "tags": [
-      "hasbro",
-      "marvel",
-      "legends",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave6",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996201959e.webp?v=1711054879",
-    "sku": "HAS201959"
   },
   {
     "id": "bsc-luthen",
@@ -236995,27 +236972,6 @@
     "sku": "5010996142573"
   },
   {
-    "id": "hs10-hs-43",
-    "name": "SS86 Kup",
-    "subtitle": "Studio Series",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2020-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.4,
-    "tags": [
-      "hasbro",
-      "marvel-legends",
-      "curated",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave10",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "lc5-lc-red-smf",
     "name": "Red Super Megaforce Ranger",
     "subtitle": "Super Megaforce",
@@ -242656,26 +242612,6 @@
     "source": "curated",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-infinite-spider-man-wave-3-6-inch-ms-marvel-kamala-khan_image.gif?v=1705967467",
     "sku": "630509490547"
-  },
-  {
-    "id": "ml2-moonknight-mrknight",
-    "name": "Mr. Knight (2022)",
-    "subtitle": "Midnight Mission",
-    "line": "Marvel Legends",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2022-06-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.45,
-    "tags": [
-      "hasbro",
-      "marvel",
-      "curated"
-    ],
-    "source": "curated-bbts-wave2",
-    "sku": null,
-    "imageUrl": null
   },
   {
     "id": "ml2-moonknight-mvc",
@@ -253130,27 +253066,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0169/6995/7440/products/189237_Anoiu_ae_1.jpg?v=1627476856"
   },
   {
-    "id": "hs10-hs-39",
-    "name": "LC Zeo Ranger V",
-    "subtitle": "Lightning Collection",
-    "line": "Power Rangers Lightning Collection",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2020-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.45,
-    "tags": [
-      "hasbro",
-      "marvel-legends",
-      "curated",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave10",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "ml3-ml-knull-baf",
     "name": "Knull (2022)",
     "subtitle": "BAF",
@@ -256533,7 +256448,18 @@
       "sku-alias",
       "alias:collecticon",
       "alias:toydojo",
-      "fix:ss-audit"
+      "fix:ss-audit",
+      "hasbro",
+      "sku:toyarena",
+      "imgsku:toyarena",
+      "alias:staractionfigures",
+      "alias:indemandtoys",
+      "alias:toyarena",
+      "alias:legendztoys",
+      "alias:hobbyfigures",
+      "alias:kitsap",
+      "date-precision:year",
+      "identity-collapse"
     ],
     "source": "curated-transformers",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/transformers-studios-series-leader-class-2021-wave-4-coronation-starscream-195166153421.jpg?v=1697585881",
@@ -282888,27 +282814,6 @@
     "imageUrl": null
   },
   {
-    "id": "hs10-hs-30",
-    "name": "Lightning Collection Rita",
-    "subtitle": "Lightning Collection",
-    "line": "Power Rangers Lightning Collection",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2023-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.45,
-    "tags": [
-      "hasbro",
-      "marvel-legends",
-      "curated",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave10",
-    "sku": null,
-    "imageUrl": null
-  },
-  {
     "id": "bsc-hera",
     "name": "Hera Syndulla",
     "subtitle": "Rebels",
@@ -295550,41 +295455,6 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/g2539-prod-sw-bl-hermes-029-white.jpg?v=1781093690"
   },
   {
-    "id": "hs10-hs-26",
-    "name": "Studio Series 86 Starscream",
-    "subtitle": "Studio Series",
-    "line": "Transformers Studio Series",
-    "company": "hasbro",
-    "kind": "figure",
-    "releaseDate": "2022-01-01",
-    "msrp": 24.99,
-    "scale": "6\"",
-    "demand": 1.5,
-    "tags": [
-      "hasbro",
-      "marvel-legends",
-      "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:toyarena",
-      "image-sku",
-      "imgsku:toyarena",
-      "sku-alias",
-      "alias:staractionfigures",
-      "alias:indemandtoys",
-      "alias:toyarena",
-      "alias:legendztoys",
-      "alias:toydojo",
-      "alias:hobbyfigures",
-      "alias:collecticon",
-      "alias:kitsap",
-      "date-precision:year"
-    ],
-    "source": "curated-bbts-wave10",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/5010996348630a.webp?v=1781822955",
-    "sku": "HAS348630"
-  },
-  {
     "id": "tfss-ss72-starscream-bb",
     "name": "Starscream",
     "subtitle": "SS-72 Bumblebee",
@@ -305885,7 +305755,10 @@
       "image-sku",
       "image-bake",
       "imgsku:toyarena",
-      "fix:ss-audit"
+      "fix:ss-audit",
+      "hasbro",
+      "date-precision:year",
+      "identity-collapse"
     ],
     "source": "curated-transformers",
     "sku": "HAS978236",
@@ -342452,7 +342325,13 @@
       "alias:toyarena",
       "alias:indemandtoys",
       "alias:nerdzoic",
-      "date-precision:year"
+      "date-precision:year",
+      "marvel",
+      "legends",
+      "image-bake",
+      "image-sku",
+      "imgsku:toyarena",
+      "identity-collapse"
     ],
     "source": "curated-bbts-wave10",
     "sku": "630509355228"
