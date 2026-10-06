@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Inject curated DC gap wave15 into oneshot archive. No Build Publish."""
+"""Inject curated DC gap wave16 into oneshot archive. No Build Publish."""
 from __future__ import annotations
 import json, sys
 from collections import Counter
@@ -8,11 +8,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from figure_oneshot.curated_dc_gap_wave15 import build_dc_gap_wave15
+from figure_oneshot.curated_dc_gap_wave16 import build_dc_gap_wave16
 
 ARCHIVE = ROOT / "src/data/figure-archive/oneshot.json"
-STATS = ROOT / "src/data/figure-archive/dc-gap-wave15-inject-stats.json"
-SOURCE = "curated-dc-gap-wave15"
+STATS = ROOT / "src/data/figure-archive/dc-gap-wave16-inject-stats.json"
+SOURCE = "curated-dc-gap-wave16"
 
 def row_key(r: dict) -> str:
     return "|".join([
@@ -23,7 +23,7 @@ def row_key(r: dict) -> str:
     ])
 
 def main() -> None:
-    curated = build_dc_gap_wave15()
+    curated = build_dc_gap_wave16()
     rows: list[dict] = json.loads(ARCHIVE.read_text())
     before = len(rows)
     ids = {r["id"] for r in rows}
