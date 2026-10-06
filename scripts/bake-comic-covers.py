@@ -15,6 +15,22 @@ Published caps (looked up 2026-09-13), then a notch under:
     and ≤2500/day (half). Always read X-RateLimit-* / Retry-After. On 429
     stop and back off harder — no retry-hammer. Shares daily/rate files
     with scripts/backfill-comic-upcs-metron.py.
+
+Run-time controls (2026-10-06, after interrupted Oct 2 / Oct 5 routine runs):
+
+  * Comic Vine spacing is enforced per HTTP request (--cv-interval, floor
+    24s, default 36s). Cache hits make no request and never sleep.
+  * Persisted miss list (scripts/comic-cover-miss-list.json): a comic that
+    misses on a source is skipped on that source for --miss-ttl-days (14).
+    Errors and rate pauses are not recorded as misses.
+  * Metron backoff is capped at METRON_BACKOFF_CAP (120s); a longer reset
+    window or any 429 stops the Metron source for this run.
+  * --max-minutes is a per-source wall-clock budget; --max-requests caps
+    live HTTP requests per source (handy for tiny tests).
+  * Checkout root: --root PATH or KTV_ROOT env (default
+    /workspace/collection-app). Metron daily/rate counters stay shared at
+    the default checkout (they live in backfill-comic-upcs-metron.py) so the
+    polite limits hold across every process on the box.
 """
 from __future__ import annotations
 
@@ -31,17 +47,45 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT = Path("/workspace/collection-app")
+DEFAULT_ROOT = Path("/workspace/collection-app")
+
+
+def _resolve_root() -> Path:
+    """--root PATH / --root=PATH on the command line, else $KTV_ROOT, else default."""
+    argv = sys.argv[1:]
+    for i, a in enumerate(argv):
+        if a == "--root" and i + 1 < len(argv):
+            return Path(argv[i + 1]).expanduser().resolve()
+        if a.startswith("--root="):
+            return Path(a.split("=", 1)[1]).expanduser().resolve()
+    env = os.environ.get("KTV_ROOT", "").strip()
+    if env:
+        return Path(env).expanduser().resolve()
+    return DEFAULT_ROOT
+
+
+ROOT = _resolve_root()
 SCRIPTS = ROOT / "scripts"
+if not (SCRIPTS / "data_shards.py").is_file():
+    raise SystemExit(f"bake-comic-covers: {ROOT} does not look like a collection-app checkout")
+# data_shards / helper modules must come from the selected checkout.
+sys.path.insert(0, str(SCRIPTS))
 COVER_URLS = ROOT / "src/data/comic-cover-urls.json"
 UPC_MAP = ROOT / "src/data/comic-upc-map.json"
 STATS = SCRIPTS / "comic-cover-bake-stats.json"
 CV_KEY_FILE = Path("/home/box/.config/krypton/comicvine-api-key")
 CV_CACHE = SCRIPTS / "comic-cover-cv-cache.json"
+MISS_LIST = SCRIPTS / "comic-cover-miss-list.json"
+MISS_TTL_DAYS_DEFAULT = 14.0
+METRON_BACKOFF_CAP = 120  # seconds; longer waits stop the Metron source instead
+UPC_RELOAD_SECONDS = 60.0  # upc map is ~64 shards (~1s to load); refresh at most once a minute
 
 # Official 200/resource/hour; polite notch-under.
 CV_HOURLY_CAP = 150
 CV_MIN_INTERVAL = max(2.0, 3600.0 / CV_HOURLY_CAP)  # 24s
+# Per-request spacing (an item can make 2 CV calls: UPC + series query).
+# Pulled back to 36s (~100/hr) after repeated 420s 2026-10-01..04.
+CV_REQUEST_INTERVAL = 36.0
 CV_API = "https://comicvine.gamespot.com/api"
 CV_UA = (
     "KryptonsToyVault/1.0 (personal collection; cv cover bake; "
@@ -212,7 +256,36 @@ class RatePaused(Exception):
     pass
 
 
+class RequestBudgetReached(Exception):
+    pass
+
+
+# Live HTTP request accounting (per source) for --max-requests and stats.
+REQUESTS = {"cv": 0, "metron": 0}
+MAX_REQUESTS = {"cv": 0, "metron": 0}  # 0 = no cap
+_cv_last_request = 0.0
+# Set when a Metron call fails with a non-429 HTTP error, so that item is not
+# recorded as a genuine miss.
+_metron_http_error = False
+
+
+def _count_request(src: str) -> None:
+    cap = MAX_REQUESTS.get(src) or 0
+    if cap and REQUESTS[src] >= cap:
+        raise RequestBudgetReached(f"{src} max-requests {cap} reached")
+    REQUESTS[src] += 1
+
+
 def cv_get(url: str) -> dict:
+    """One Comic Vine HTTP request, spaced >= CV_REQUEST_INTERVAL from the last one."""
+    global _cv_last_request
+    _count_request("cv")
+    gap = max(CV_MIN_INTERVAL, CV_REQUEST_INTERVAL)
+    if _cv_last_request:
+        wait = gap - (time.time() - _cv_last_request)
+        if wait > 0:
+            time.sleep(wait)
+    _cv_last_request = time.time()
     req = urllib.request.Request(url, headers={"User-Agent": CV_UA})
     try:
         with urllib.request.urlopen(req, timeout=30) as res:
@@ -420,10 +493,12 @@ def metron_image(detail: dict) -> str | None:
 
 
 def metron_get(url: str, auth: str, delay: float) -> dict | None:
+    global _metron_http_error
     if metron.daily_remaining() <= 0:
         raise metron.DailyCapReached(
             f"Metron daily cap {metron.METRON_DAILY_CAP} reached for {metron._utc_day()}"
         )
+    _count_request("metron")
     extra = max(0.0, float(delay or 0.0) - metron.METRON_MIN_INTERVAL)
     metron.wait_for_rate_slot(extra_delay=extra)
     req = urllib.request.Request(
@@ -453,18 +528,28 @@ def metron_get(url: str, auth: str, delay: float) -> dict | None:
                 wait = 60
                 if reset and str(reset).isdigit():
                     wait = max(1, int(reset) - int(time.time()))
+                body = json.loads(resp.read().decode("utf-8", "replace"))
+                if wait > METRON_BACKOFF_CAP:
+                    print(
+                        f"  metron header remaining=0, reset in {wait}s > {METRON_BACKOFF_CAP}s cap — stopping Metron",
+                        file=sys.stderr,
+                    )
+                    raise RatePaused(f"Metron rate window exhausted (reset in {wait}s)")
                 print(f"  metron header remaining=0 — backing off {wait}s", file=sys.stderr)
-                time.sleep(min(wait, 3600))
+                time.sleep(wait)
+                return body
             return json.loads(resp.read().decode("utf-8", "replace"))
     except urllib.error.HTTPError as e:
         retry = e.headers.get("Retry-After") if e.headers else None
-        wait = int(retry) if retry and str(retry).isdigit() else 120
         if e.code == 429:
-            print(f"  Metron HTTP 429 Retry-After={retry} — stopping after {wait}s backoff", file=sys.stderr)
-            time.sleep(min(max(wait, 120), 1800))
+            # No long sleep: stop the source and let the next run (and the
+            # shared rate file) take care of spacing.
+            print(f"  Metron HTTP 429 Retry-After={retry} — stopping Metron for this run", file=sys.stderr)
+            metron.bump_daily()
             raise RatePaused("Metron 429")
         print(f"  Metron HTTP {e.code} {url}", file=sys.stderr)
         metron.bump_daily()
+        _metron_http_error = True
         return None
 
 
@@ -551,8 +636,60 @@ def bake_one_metron(cid: str, m: dict, auth: str, delay: float) -> dict | None:
     }
 
 
+def load_miss_list() -> dict:
+    data = load_json(MISS_LIST, {})
+    if not isinstance(data, dict):
+        data = {}
+    for src in ("cv", "metron"):
+        if not isinstance(data.get(src), dict):
+            data[src] = {}
+    return data
+
+
+def _parse_iso(ts: str | None) -> float | None:
+    if not ts:
+        return None
+    try:
+        return datetime.strptime(ts, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc).timestamp()
+    except ValueError:
+        return None
+
+
+def recently_missed(misses: dict, src: str, cid: str, ttl_days: float) -> bool:
+    if ttl_days <= 0:
+        return False
+    ent = (misses.get(src) or {}).get(cid)
+    if not isinstance(ent, dict):
+        return False
+    at = _parse_iso(ent.get("lastMissAt"))
+    return at is not None and (time.time() - at) < ttl_days * 86400
+
+
+def record_miss(misses: dict, src: str, cid: str) -> None:
+    ent = dict((misses.get(src) or {}).get(cid) or {})
+    ent["lastMissAt"] = now_iso()
+    ent["count"] = int(ent.get("count") or 0) + 1
+    misses.setdefault(src, {})[cid] = ent
+
+
+def save_miss_list(misses: dict, ttl_days: float) -> None:
+    """Persist, dropping entries older than 4x the TTL so the file stays small."""
+    horizon = max(ttl_days, MISS_TTL_DAYS_DEFAULT) * 4 * 86400
+    now = time.time()
+    out = {}
+    for src in ("cv", "metron"):
+        keep = {}
+        for cid, ent in sorted((misses.get(src) or {}).items()):
+            at = _parse_iso((ent or {}).get("lastMissAt"))
+            if at is not None and now - at < horizon:
+                keep[cid] = ent
+        out[src] = keep
+    save_json(MISS_LIST, out)
+
+
 def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__)
+    global CV_REQUEST_INTERVAL, _metron_http_error
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--source", choices=["cv", "metron", "both"], default="cv")
     ap.add_argument("--limit", type=int, default=0, help="0 = no cap")
     ap.add_argument("--delay", type=float, default=0.0, help="Extra spacing; floors still apply")
@@ -563,43 +700,81 @@ def main() -> int:
         default=2025,
         help="Skip cover years above this (0 = no max). Default 2025 avoids unreleased 2026 facsimiles.",
     )
-    ap.add_argument("--dry-run", action="store_true")
-    ap.add_argument("--max-minutes", type=float, default=0)
+    ap.add_argument("--dry-run", action="store_true", help="List candidates (after miss-list filter); no requests")
+    ap.add_argument(
+        "--max-minutes",
+        type=float,
+        default=0,
+        help="Wall-clock budget PER SOURCE in minutes (0 = none); with --source both each pass gets its own budget",
+    )
+    ap.add_argument("--max-requests", type=int, default=0, help="Cap live HTTP requests per source (0 = none)")
+    ap.add_argument(
+        "--cv-interval",
+        type=float,
+        default=CV_REQUEST_INTERVAL,
+        help=f"Seconds between Comic Vine HTTP requests (floor {CV_MIN_INTERVAL:.0f}s; default {CV_REQUEST_INTERVAL:.0f}s)",
+    )
+    ap.add_argument(
+        "--miss-ttl-days",
+        type=float,
+        default=MISS_TTL_DAYS_DEFAULT,
+        help="Skip a comic on a source for this many days after it missed there (0 = retry everything)",
+    )
+    ap.add_argument(
+        "--root",
+        default=str(ROOT),
+        help="Checkout to read/write (also $KTV_ROOT). Default /workspace/collection-app",
+    )
     args = ap.parse_args()
+    CV_REQUEST_INTERVAL = max(CV_MIN_INTERVAL, float(args.cv_interval), float(args.delay or 0.0))
+    MAX_REQUESTS["cv"] = MAX_REQUESTS["metron"] = max(0, int(args.max_requests or 0))
 
     meta = locg.parse_comics_meta()
     upc_map = load_json(UPC_MAP, {})
     cover_urls = load_json(COVER_URLS, {})
     max_year = None if args.max_year == 0 else args.max_year
-    ids = candidates(meta, upc_map, cover_urls, args.min_year, max_year)
-    if args.limit > 0:
-        ids = ids[: args.limit]
+    sources = ["cv", "metron"] if args.source == "both" else [args.source]
+    misses = load_miss_list()
+    ttl = float(args.miss_ttl_days or 0.0)
+    all_ids = candidates(meta, upc_map, cover_urls, args.min_year, max_year)
+    # --limit applies per source after dropping comics that recently missed on
+    # that source, so the daily slots go to comics not yet tried.
+    per_source: dict[str, list[str]] = {}
+    recent_skips: dict[str, int] = {}
+    for src in sources:
+        fresh = [cid for cid in all_ids if not recently_missed(misses, src, cid, ttl)]
+        recent_skips[src] = len(all_ids) - len(fresh)
+        per_source[src] = fresh[: args.limit] if args.limit > 0 else fresh
     before = len(cover_urls)
     year_band = f"{args.min_year}-{max_year if max_year is not None else 'open'}"
     print(
-        f"cover bake source={args.source} candidates={len(ids)} "
-        f"covers_before={before} year_band={year_band} "
-        f"cv_floor={CV_HOURLY_CAP}/hr interval>={CV_MIN_INTERVAL:.0f}s "
+        f"cover bake root={ROOT} source={args.source} pool={len(all_ids)} "
+        + " ".join(f"{s}_candidates={len(per_source[s])} {s}_recent_miss_skips={recent_skips[s]}" for s in sources)
+        + f" covers_before={before} year_band={year_band} "
+        f"cv_floor={CV_HOURLY_CAP}/hr per-request interval={CV_REQUEST_INTERVAL:.0f}s "
         f"metron_floor={metron.METRON_RPM}/min {metron.METRON_DAILY_CAP}/day "
-        f"metron_daily_used={metron.load_daily().get('requests')}"
+        f"metron_daily_used={metron.load_daily().get('requests')} "
+        f"miss_ttl={ttl:g}d max_minutes_per_source={args.max_minutes:g} max_requests={args.max_requests}",
+        flush=True,
     )
     if args.dry_run:
-        for cid in ids[:12]:
-            m = meta[cid]
-            print(f"  {cid}  {m.get('series')} #{m.get('issue')}  {m.get('publisher')}  {m.get('coverDate')}")
+        for src in sources:
+            print(f"[{src}] first candidates:")
+            for cid in per_source[src][:12]:
+                m = meta[cid]
+                print(f"  {cid}  {m.get('series')} #{m.get('issue')}  {m.get('publisher')}  {m.get('coverDate')}")
         return 0
 
-    sources = ["cv", "metron"] if args.source == "both" else [args.source]
     auth = metron.load_auth_header() if "metron" in sources else None
-    deadline = time.time() + args.max_minutes * 60 if args.max_minutes > 0 else None
     filled = 0
     filled_cv = 0
     filled_metron = 0
     skipped = 0
     errors = 0
-    last_cv = 0.0
+    failures = 0
     details = []
     stopped_reason = None
+    source_minutes: dict[str, float] = {}
 
     def _stats_payload():
         return {
@@ -612,6 +787,12 @@ def main() -> int:
             "filledMetron": filled_metron,
             "skipped": skipped,
             "misses": errors,
+            "errors": failures,
+            "recentMissSkips": recent_skips,
+            "missTtlDays": ttl,
+            "requests": dict(REQUESTS),
+            "sourceMinutes": source_minutes,
+            "cvRequestInterval": CV_REQUEST_INTERVAL,
             "stoppedReason": stopped_reason,
             "cvHourlyCap": CV_HOURLY_CAP,
             "cvMinInterval": CV_MIN_INTERVAL,
@@ -621,15 +802,24 @@ def main() -> int:
             "details": details[-80:],
         }
 
+    def _stop(reason: str) -> None:
+        nonlocal stopped_reason
+        stopped_reason = (stopped_reason + "; " if stopped_reason else "") + reason
+
     try:
         for src in sources:
-            for cid in ids:
+            t0 = time.time()
+            deadline = t0 + args.max_minutes * 60 if args.max_minutes > 0 else None
+            upc_loaded_at = time.time()
+            for cid in per_source[src]:
                 if deadline and time.time() >= deadline:
-                    stopped_reason = (stopped_reason + "; " if stopped_reason else "") + "max-minutes reached"
-                    print("max-minutes reached")
+                    _stop(f"{src} max-minutes {args.max_minutes:g} reached")
+                    print(f"{src}: max-minutes reached", flush=True)
                     break
                 cover_urls = load_json(COVER_URLS, cover_urls)
-                upc_map = load_json(UPC_MAP, upc_map)
+                if time.time() - upc_loaded_at >= UPC_RELOAD_SECONDS:
+                    upc_map = load_json(UPC_MAP, upc_map)
+                    upc_loaded_at = time.time()
                 m = meta.get(cid) or {}
                 if has_cover(cid, upc_map, cover_urls, m):
                     skipped += 1
@@ -637,30 +827,42 @@ def main() -> int:
                 if src == "metron" and is_named_variant(m.get("variant")):
                     skipped += 1
                     continue
+                _metron_http_error = False
                 try:
                     if src == "cv":
-                        wait = max(CV_MIN_INTERVAL, float(args.delay or 0.0)) - (
-                            time.time() - last_cv
-                        )
-                        if last_cv and wait > 0:
-                            time.sleep(wait)
                         hit = bake_one_cv(cid, m, upc_map)
-                        last_cv = time.time()
                     else:
                         hit = bake_one_metron(cid, m, auth, max(args.delay, metron.METRON_MIN_INTERVAL))
                 except RatePaused as e:
                     reason = f"{e} — pulled back"
-                    print(f"stopping {src}: {reason}")
-                    stopped_reason = (stopped_reason + "; " if stopped_reason else "") + reason
+                    print(f"stopping {src}: {reason}", flush=True)
+                    _stop(reason)
                     break
                 except metron.DailyCapReached as e:
-                    reason = str(e)
-                    print(f"stopping {src}: {reason}")
-                    stopped_reason = (stopped_reason + "; " if stopped_reason else "") + reason
+                    print(f"stopping {src}: {e}", flush=True)
+                    _stop(str(e))
                     break
+                except RequestBudgetReached as e:
+                    print(f"stopping {src}: {e}", flush=True)
+                    _stop(str(e))
+                    break
+                except (urllib.error.URLError, TimeoutError, OSError, ValueError) as e:
+                    # Network/parse trouble on one item: log, do not record a miss, move on.
+                    failures += 1
+                    print(f"! {cid}: {src} error {type(e).__name__}: {e}", flush=True)
+                    if failures >= 10:
+                        _stop(f"{src} too many errors")
+                        break
+                    continue
                 if not hit or not hit.get("coverUrl"):
                     errors += 1
-                    print(f"· {cid}: no {src} cover", flush=True)
+                    if src == "metron" and _metron_http_error:
+                        print(f"· {cid}: no {src} cover (HTTP error; not recorded as miss)", flush=True)
+                    else:
+                        record_miss(misses, src, cid)
+                        print(f"· {cid}: no {src} cover", flush=True)
+                    if errors % 10 == 0:
+                        save_miss_list(misses, ttl)
                     continue
                 locg.save_cover_urls_atomic({cid: hit["coverUrl"]})
                 ent = dict(upc_map.get(cid) or {})
@@ -669,6 +871,7 @@ def main() -> int:
                     if hit.get("sourceId"):
                         patch["coverSourceId"] = hit["sourceId"]
                     locg.save_upc_map_atomic({cid: {**ent, **patch}}) if cid in upc_map else None
+                (misses.get(src) or {}).pop(cid, None)
                 filled += 1
                 if src == "cv":
                     filled_cv += 1
@@ -678,18 +881,17 @@ def main() -> int:
                 print(f"✓ {cid}: {src} {hit['coverUrl']}", flush=True)
                 if filled % 10 == 0:
                     save_json(STATS, _stats_payload())
-            else:
-                continue
-            if stopped_reason and "max-minutes" in stopped_reason:
-                break
+            source_minutes[src] = round((time.time() - t0) / 60.0, 2)
     finally:
+        save_miss_list(misses, ttl)
         after = len(load_json(COVER_URLS, {}))
         payload = _stats_payload()
         payload["coversAfter"] = after
         save_json(STATS, payload)
         print(
             f"done filled={filled} cv={filled_cv} metron={filled_metron} "
-            f"skipped={skipped} misses={errors} covers={before}->{after} "
+            f"skipped={skipped} misses={errors} errors={failures} covers={before}->{after} "
+            f"requests={REQUESTS} minutes={source_minutes} "
             f"stopped={stopped_reason or 'none'}",
             flush=True,
         )
