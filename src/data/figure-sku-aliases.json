@@ -33751,7 +33751,10 @@
     "ta-3a7f2e730bb9": [
       "id:ta-3a7f2e730bb9",
       "toyark:599270",
-      "https://www.toyark.com/2026/09/23/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270"
+      "https://www.toyark.com/2026/09/23/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270",
+      "id:ta-86225fd3def6",
+      "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270",
+      "634482086391"
     ],
     "unbranded-rt-07ex": [
       "RT07EX",
@@ -43227,10 +43230,6 @@
     ],
     "sf-blokees-evangelion-fantastics-asuka-entry-plug": [
       "73571-2"
-    ],
-    "ta-86225fd3def6": [
-      "id:ta-86225fd3def6",
-      "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270"
     ],
     "d14ml-jean-phoenix": [
       "HASF9134"
@@ -68432,8 +68431,8 @@
     "73572-2": "sf-blokees-evangelion-fantastics-rei-entry-plug",
     "73573-2": "sf-blokees-evangelion-fantastics-mari-entry-plug",
     "73571-2": "sf-blokees-evangelion-fantastics-asuka-entry-plug",
-    "id:ta-86225fd3def6": "ta-86225fd3def6",
-    "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270": "ta-86225fd3def6",
+    "id:ta-86225fd3def6": "ta-3a7f2e730bb9",
+    "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270": "ta-3a7f2e730bb9",
     "4573102607652": "sf-bandai-toyarena-gundam-1-60-pg-unleashed-gundam-0079-rx-78-2-gundam-model-kit",
     "HASF9134": "d14ml-jean-phoenix",
     "id:yolopark-g1-starscream-pre-assembled-model-kit": "sf-yolopark-transformers-generation-1-20cm-starscream-model-kit-amk-pro-series",
@@ -69335,7 +69334,8 @@
     "BBTS-199035": "ta-d9a16d3350aa",
     "id:ta-7bf0f6dadbb9": "ta-7bf0f6dadbb9",
     "toyark:599798": "ta-7bf0f6dadbb9",
-    "https://www.toyark.com/2026/10/06/the-texas-chainsaw-massacre-the-beginning-neca-leatherface-re-release-599798": "ta-7bf0f6dadbb9"
+    "https://www.toyark.com/2026/10/06/the-texas-chainsaw-massacre-the-beginning-neca-leatherface-re-release-599798": "ta-7bf0f6dadbb9",
+    "634482086391": "ta-3a7f2e730bb9"
   },
   "collapsed": [
     {
@@ -72479,6 +72479,17 @@
         "id:ml6-ml-magneto-aos"
       ],
       "reason": "Date-verify batch 7 (Shelby 2026-10-05): same Marvel Legends Age of Apocalypse Magneto / Colossus BAF (Hasbro ML, 2021). Keep hs10 (title with year + fuller aliases). Do NOT move ml6 sku HAS201959 / image (those resolve to X-Men '97 Magneto 5010996201959)."
+    },
+    {
+      "keepId": "ta-3a7f2e730bb9",
+      "dropId": "ta-86225fd3def6",
+      "canonicalSku": "634482086391",
+      "aliasesAdded": [
+        "id:ta-86225fd3def6",
+        "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270",
+        "634482086391"
+      ],
+      "reason": "ToyArk MSRP follow-up (Shelby 2026-10-06): same NECA Ultimate Big Bird (Blue Version) 2026 Con/NYCC exclusive — both rows from ToyArk post 599270 (original + *UPDATE* repost), same image; NECA store UPC 634482086391 (NE08639-01). Keep ta-3a7f2e730bb9 (clean subtitle, toyark:599270 alias); drop ta-86225fd3def6 (*UPDATE* duplicate); moved its id + 09/25 URL aliases; added UPC alias."
     }
   ],
   "flagged": [
@@ -72651,7 +72662,7 @@
       "reason": "REFUSED: distinct product GTINs. lc5 UPC 630509808366 is Lightning Collection White Ranger (AF411); hs10 UPC 630509808380 + image are S.P.D. Shadow Ranger (AF411). Character-name collision only. Shadow Ranger already exists as plc-shadow-spd."
     }
   ],
-  "updatedAt": "2026-10-06T18:02:25.023549+00:00",
+  "updatedAt": "2026-10-06T18:10:12.555910+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -72778,6 +72789,14 @@
         "hs10-hs-43",
         "ml2-moonknight-mrknight",
         "ml6-ml-magneto-aos"
+      ]
+    },
+    "toyarkBigBirdMerge": {
+      "at": "2026-10-06T18:10:12.555910+00:00",
+      "merged": 1,
+      "refused": 0,
+      "dropIds": [
+        "ta-86225fd3def6"
       ]
     }
   },
@@ -75748,6 +75767,24 @@
       },
       "aliasesDropped": [],
       "reason": "Date-verify batch 7 (Shelby 2026-10-05): same Marvel Legends Age of Apocalypse Magneto / Colossus BAF (Hasbro ML, 2021). Keep hs10 (title with year + fuller aliases). Do NOT move ml6 sku HAS201959 / image (those resolve to X-Men '97 Magneto 5010996201959)."
+    },
+    {
+      "keepId": "ta-3a7f2e730bb9",
+      "dropId": "ta-86225fd3def6",
+      "canonicalSku": "634482086391",
+      "aliasesAdded": [
+        "id:ta-86225fd3def6",
+        "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270",
+        "634482086391"
+      ],
+      "aliasesMoved": {
+        "ta-86225fd3def6": [
+          "id:ta-86225fd3def6",
+          "https://www.toyark.com/2026/09/25/sesame-street-neca-nycc-2026-exclusive-blue-big-bird-599270"
+        ]
+      },
+      "aliasesDropped": [],
+      "reason": "ToyArk MSRP follow-up (Shelby 2026-10-06): same NECA Ultimate Big Bird (Blue Version) 2026 Con/NYCC exclusive — both rows from ToyArk post 599270 (original + *UPDATE* repost), same image; NECA store UPC 634482086391 (NE08639-01). Keep ta-3a7f2e730bb9 (clean subtitle, toyark:599270 alias); drop ta-86225fd3def6 (*UPDATE* duplicate); moved its id + 09/25 URL aliases; added UPC alias."
     }
   ],
   "strippedCodes": [

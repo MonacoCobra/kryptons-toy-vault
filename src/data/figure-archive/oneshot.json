@@ -616106,14 +616106,15 @@
     "company": "mondo",
     "kind": "figure",
     "releaseDate": "2026-01-01",
-    "msrp": null,
+    "msrp": 245.0,
     "scale": "1/6",
     "demand": 1.3,
     "tags": [
       "toyark",
       "toyark-densify",
       "mondo",
-      "toyark-599219"
+      "toyark-599219",
+      "msrp:mondo"
     ],
     "source": "toyark-densify",
     "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/Mondo-Jean-Grey-LE-Figure-018.jpg"
@@ -635609,14 +635610,15 @@
     "company": "neca",
     "kind": "figure",
     "releaseDate": "2026-01-01",
-    "msrp": null,
+    "msrp": 59.99,
     "scale": "7\"",
     "demand": 1.3,
     "tags": [
       "toyark",
       "toyark-densify",
       "neca",
-      "toyark-599270"
+      "toyark-599270",
+      "msrp:neca"
     ],
     "source": "toyark-densify",
     "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Blue-Big-Bird-Preview.jpg"
@@ -699703,26 +699705,6 @@
     "sku": "BBTS-197928",
     "source": "bbts",
     "imageUrl": "https://images.bigbadtoystore.com/images/product/197928/46c82cb0-068c-4ada-a104-40e677050aa1/360w.png"
-  },
-  {
-    "id": "ta-86225fd3def6",
-    "name": "Big Bird",
-    "subtitle": "Sesame Street – NYCC 2026 Exclusive Blue *UPDATE* · 2026",
-    "line": "NECA Ultimate",
-    "company": "neca",
-    "kind": "figure",
-    "releaseDate": "2026-01-01",
-    "msrp": null,
-    "scale": "7\"",
-    "demand": 1.3,
-    "tags": [
-      "toyark",
-      "toyark-densify",
-      "neca",
-      "toyark-599270"
-    ],
-    "source": "toyark-densify",
-    "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/09/NECA-Blue-Big-Bird-Preview.jpg"
   },
   {
     "id": "lv-hasbro-marvel-legends-nemesis-nemesis-baf-2025",
