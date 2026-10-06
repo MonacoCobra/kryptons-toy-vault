@@ -1,25 +1,25 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-10-03T05:23:31Z",
+  "finishedAt": "2026-10-06T18:01:29Z",
   "mode": "apply",
   "cap": 50,
   "acceptedCandidates": 2,
   "applied": 1,
   "skippedApply": 1,
-  "rejectedRows": 12,
+  "rejectedRows": 11,
   "withImage": 1,
   "aliasAdded": 3,
   "byCompany": {
     "hasbro": {
-      "accepted": 1,
-      "rejected": 0
+      "accepted": 0,
+      "rejected": 1
     },
     "mcfarlane": {
       "accepted": 0,
       "rejected": 1
     },
     "neca": {
-      "accepted": 0,
+      "accepted": 1,
       "rejected": 0
     },
     "jazwares": {
@@ -32,7 +32,7 @@
     },
     "hottoys": {
       "accepted": 1,
-      "rejected": 1
+      "rejected": 0
     },
     "mondo": {
       "accepted": 0,
@@ -60,29 +60,29 @@
     }
   },
   "byRejectReason": {
-    "company-not-allowlisted": 7,
+    "missing-line": 2,
+    "company-not-allowlisted": 6,
+    "news-event-post": 1,
     "sponsor-newsletter": 1,
-    "company-unknown": 2,
-    "missing-line": 1,
-    "already-in-oneshot": 1
+    "company-unknown": 1
   },
   "appliedIds": [
-    "ta-3fcb696912ec"
+    "ta-7bf0f6dadbb9"
   ],
   "appliedSample": [
     {
-      "id": "ta-3fcb696912ec",
-      "name": "Star Wars Stream for October 26 – 2027 New Era Reveals and More",
-      "company": "hasbro",
-      "line": "Star Wars Black Series",
+      "id": "ta-7bf0f6dadbb9",
+      "name": "Leatherface",
+      "company": "neca",
+      "line": "NECA Ultimate",
       "year": 2026,
-      "variant": null,
+      "variant": "The Texas Chainsaw Massacre: The Beginning – Re-Release",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Star-Wars-New-Era-Launch-01.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-TCM-The-Beginning-Leatherface-Reissue-Preview.jpg",
       "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/02/star-wars-stream-for-october-26-2027-new-era-reveals-and-more-599654",
-      "toyarkPostId": 599654
+      "sourceUrl": "https://www.toyark.com/2026/10/06/the-texas-chainsaw-massacre-the-beginning-neca-leatherface-re-release-599798",
+      "toyarkPostId": 599798
     }
   ],
   "skippedSample": [
@@ -96,7 +96,7 @@
       "toyarkPostId": 599629
     }
   ],
-  "archiveSize": 29765,
+  "archiveSize": 29874,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"

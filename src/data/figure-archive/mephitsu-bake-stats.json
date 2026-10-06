@@ -1,124 +1,9 @@
 {
-  "bakedAt": "2026-10-03T05:23:17.165887+00:00",
+  "bakedAt": "2026-10-06T18:02:25.085766+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-10-03T05:21:08.863010+00:00",
-      "line": "black-series",
-      "dryRun": false,
-      "mephitsuCount": 999,
-      "mephitsuWithGtin": 519,
-      "enrichStats": {
-        "listing": 0,
-        "fuzzy": 0,
-        "already": 519
-      },
-      "before": {
-        "total": 472,
-        "withSku": 400,
-        "withGtin": 256,
-        "withListingPrimary": 144,
-        "withImage": 404,
-        "emptySku": 72,
-        "emptyImage": 68
-      },
-      "after": {
-        "total": 472,
-        "withSku": 400,
-        "withGtin": 256,
-        "withListingPrimary": 144,
-        "withImage": 404,
-        "emptySku": 72,
-        "emptyImage": 68
-      },
-      "apply": {
-        "matched": 209,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 2,
-        "aliasesAttached": 0,
-        "skippedGtinConflict": 29,
-        "blockedByAudit": 0,
-        "reattachedAfterEnforce": 0,
-        "samples": [
-          {
-            "score": 65.5,
-            "figureId": "bs5-bs-cad-bane",
-            "name": "Cad Bane",
-            "mephitsu": "Cad Bane",
-            "wave": "Target IUS) / Fan Channel",
-            "sku": "5010996222701",
-            "image": true
-          },
-          {
-            "score": 65.5,
-            "figureId": "bs5-bs-fennec",
-            "name": "Fennec Shand",
-            "mephitsu": "Fennec Shand",
-            "wave": "Galaxy Collection Wave 6",
-            "sku": "HAS828050",
-            "image": true
-          },
-          {
-            "score": 63.0,
-            "figureId": "bs4-jango",
-            "name": "Jango Fett",
-            "mephitsu": "Jango Fett",
-            "wave": "Galaxy Collection Wave 24",
-            "sku": "5010996366061",
-            "image": true
-          },
-          {
-            "score": 63.0,
-            "figureId": "bsc-gamorrean",
-            "name": "Gamorrean Guard",
-            "mephitsu": "Gamorrean Guard",
-            "wave": "40th Anniversary  Deluxe",
-            "sku": "F6856",
-            "image": true
-          },
-          {
-            "score": 63.0,
-            "figureId": "bsc-bib-fortuna",
-            "name": "Bib Fortuna",
-            "mephitsu": "Bib Fortuna",
-            "wave": "40th Anniversary  Wave 7",
-            "sku": "5010993914364",
-            "image": true
-          },
-          {
-            "score": 63.0,
-            "figureId": "bs5-bs-palpatine-rotj",
-            "name": "Emperor Palpatine",
-            "mephitsu": "Emperor Palpatine",
-            "wave": "40th Anniversary  Wave 7",
-            "sku": "HAS959648",
-            "image": true
-          },
-          {
-            "score": 63.0,
-            "figureId": "d14bs-anakin-aotc",
-            "name": "Anakin Skywalker",
-            "mephitsu": "Anakin Skywalker",
-            "wave": "25",
-            "sku": "SW-ANAKINSKYWALKERPADAWAN",
-            "image": true
-          },
-          {
-            "score": 63.0,
-            "figureId": "d14bs-bs-jabba",
-            "name": "Jabba the Hutt",
-            "mephitsu": "Jabba the Hutt",
-            "wave": "Shop Disney / Hasbro Pulse 40th Anniversary  Deluxe",
-            "sku": "HAS993285",
-            "image": true
-          }
-        ]
-      }
-    },
-    {
-      "bakedAt": "2026-10-03T05:21:18.940681+00:00",
+      "bakedAt": "2026-10-06T18:01:45.849108+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -233,7 +118,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-03T05:21:24.190747+00:00",
+      "bakedAt": "2026-10-06T18:01:51.836160+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -244,32 +129,32 @@
         "already": 248
       },
       "before": {
-        "total": 801,
-        "withSku": 633,
+        "total": 799,
+        "withSku": 632,
         "withGtin": 485,
-        "withListingPrimary": 148,
-        "withImage": 628,
-        "emptySku": 168,
-        "emptyImage": 173
+        "withListingPrimary": 147,
+        "withImage": 627,
+        "emptySku": 167,
+        "emptyImage": 172
       },
       "after": {
-        "total": 801,
-        "withSku": 633,
+        "total": 799,
+        "withSku": 632,
         "withGtin": 485,
-        "withListingPrimary": 148,
-        "withImage": 630,
-        "emptySku": 168,
-        "emptyImage": 171
+        "withListingPrimary": 147,
+        "withImage": 627,
+        "emptySku": 167,
+        "emptyImage": 172
       },
       "apply": {
         "matched": 46,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 2,
+        "imagesFilled": 0,
         "imagesSkipped": 0,
         "aliasesAttached": 0,
         "skippedGtinConflict": 6,
-        "blockedByAudit": 1,
+        "blockedByAudit": 3,
         "reattachedAfterEnforce": 0,
         "samples": [
           {
@@ -348,467 +233,122 @@
       }
     },
     {
-      "bakedAt": "2026-10-03T05:22:13.764693+00:00",
-      "line": "mcfarlane",
+      "bakedAt": "2026-10-06T18:02:15.229899+00:00",
+      "line": "black-series",
       "dryRun": false,
-      "mephitsuCount": 2177,
-      "mephitsuWithGtin": 1013,
+      "mephitsuCount": 999,
+      "mephitsuWithGtin": 519,
       "enrichStats": {
         "listing": 0,
         "fuzzy": 0,
-        "already": 1013
+        "already": 519
       },
       "before": {
-        "total": 1315,
-        "withSku": 636,
-        "withGtin": 447,
-        "withListingPrimary": 189,
-        "withImage": 772,
-        "emptySku": 679,
-        "emptyImage": 543
-      },
-      "after": {
-        "total": 1315,
-        "withSku": 636,
-        "withGtin": 447,
-        "withListingPrimary": 189,
-        "withImage": 772,
-        "emptySku": 679,
-        "emptyImage": 543
-      },
-      "apply": {
-        "matched": 434,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 23,
-        "aliasesAttached": 0,
-        "skippedGtinConflict": 65,
-        "blockedByAudit": 0,
-        "reattachedAfterEnforce": 0,
-        "samples": [
-          {
-            "score": 63.0,
-            "figureId": "mf8-mf-35",
-            "name": "Harley Quinn",
-            "mephitsu": "Harley Quinn",
-            "wave": "Gold Label GameStop",
-            "sku": "787926177268",
-            "image": false
-          },
-          {
-            "score": 63.0,
-            "figureId": "mcf-w2-mister-zsasz-dc-multiverse-gold-label",
-            "name": "Mister Zsasz",
-            "mephitsu": "Mister Zsasz",
-            "wave": "Gold Label McFarlane Store",
-            "sku": "787926171594",
-            "image": true
-          },
-          {
-            "score": 62.5,
-            "figureId": "mcfdc-lex-2025-movie",
-            "name": "Lex Luthor",
-            "mephitsu": "Lex Luthor",
-            "wave": "Superman Movie Series, Theatrical Edition",
-            "sku": "787926174533",
-            "image": true
-          },
-          {
-            "score": 62.5,
-            "figureId": "d14mcf-ww-ce42",
-            "name": "Wonder Woman",
-            "mephitsu": "Wonder Woman",
-            "wave": "Collector Edition",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 60.5,
-            "figureId": "mcf-mega-sunken-citadel-pirate-aquaman-lost-kingdom-megafig",
-            "name": "Sunken Citadel Pirate",
-            "mephitsu": "Sunken Citadel Pirate",
-            "wave": "Aquaman and the Lost Kingdom",
-            "sku": "787926155488",
-            "image": true
-          },
-          {
-            "score": 60.5,
-            "figureId": "mcf-w2-superman-with-krypto-deluxe-theatrical-superman-movie",
-            "name": "Superman with Krypto",
-            "mephitsu": "Superman with Krypto",
-            "wave": "Superman Movie Series, Theatrical Edition",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 58.0,
-            "figureId": "mf8-mf-40",
-            "name": "Martian Manhunter",
-            "mephitsu": "Martian Manhunter",
-            "wave": "Gold Label, Target (US)",
-            "sku": "787926152531",
-            "image": true
-          },
-          {
-            "score": 58.0,
-            "figureId": "d14mcf-donna-titans",
-            "name": "Donna Troy",
-            "mephitsu": "Donna Troy",
-            "wave": "Titans BAF Wave",
-            "sku": "787926156478",
-            "image": true
-          }
-        ]
-      }
-    },
-    {
-      "bakedAt": "2026-10-03T05:22:47.098478+00:00",
-      "line": "neca",
-      "dryRun": false,
-      "mephitsuCount": 1493,
-      "mephitsuWithGtin": 483,
-      "enrichStats": {
-        "listing": 0,
-        "fuzzy": 0,
-        "already": 483
-      },
-      "before": {
-        "total": 931,
-        "withSku": 709,
-        "withGtin": 332,
-        "withListingPrimary": 377,
-        "withImage": 746,
-        "emptySku": 222,
-        "emptyImage": 185
-      },
-      "after": {
-        "total": 931,
-        "withSku": 709,
-        "withGtin": 332,
-        "withListingPrimary": 377,
-        "withImage": 746,
-        "emptySku": 222,
-        "emptyImage": 185
-      },
-      "apply": {
-        "matched": 234,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 7,
-        "aliasesAttached": 0,
-        "skippedGtinConflict": 21,
-        "blockedByAudit": 0,
-        "reattachedAfterEnforce": 0,
-        "samples": [
-          {
-            "score": 60.0,
-            "figureId": "sf-neca-store-harry-potter-legacy-collection-harry-potter-7-inch-scale-action-fi",
-            "name": "Harry Potter",
-            "mephitsu": "Harry Potter",
-            "wave": "Harry Potter Legacy Collection Wave 1",
-            "sku": "634482600153",
-            "image": true
-          },
-          {
-            "score": 60.0,
-            "figureId": "neca-freddy",
-            "name": "Freddy Krueger",
-            "mephitsu": "Freddy Krueger",
-            "wave": "Nightmare on Elm Street 3 ; Dream Warriors",
-            "sku": "634482398999",
-            "image": true
-          },
-          {
-            "score": 57.5,
-            "figureId": "neca-jason",
-            "name": "Jason Voorhees",
-            "mephitsu": "Jason Voorhees",
-            "wave": "Ultimate, Friday the 13th Part 2 (re-issue)",
-            "sku": "344823970080",
-            "image": true
-          },
-          {
-            "score": 55.5,
-            "figureId": "d14neca-tmnt-casey-toon",
-            "name": "Casey Jones",
-            "mephitsu": "Casey Jones",
-            "wave": "Cartoon 2-Packs, Series 3 (Target US)",
-            "sku": "634482543481",
-            "image": true
-          },
-          {
-            "score": 55.5,
-            "figureId": "d14neca-tmnt-april-toon",
-            "name": "April O'Neil",
-            "mephitsu": "April O'Neil",
-            "wave": "Cartoon 2-Packs, Series 3 (Target US)",
-            "sku": "634482542064",
-            "image": true
-          },
-          {
-            "score": 55.5,
-            "figureId": "neca2-tmnt-foot-soldier",
-            "name": "Foot Soldier",
-            "mephitsu": "Foot Soldier",
-            "wave": "Cartoon 2-Packs, Series 3 (Target US)",
-            "sku": "634482541555",
-            "image": true
-          },
-          {
-            "score": 55.0,
-            "figureId": "neca4-ult-predator-city",
-            "name": "City Hunter",
-            "mephitsu": "City Hunter",
-            "wave": "Ultimate, 30th Anniversary",
-            "sku": "634482514283",
-            "image": true
-          },
-          {
-            "score": 55.0,
-            "figureId": "neca3-ult-predator-fuge",
-            "name": "Fugitive Predator",
-            "mephitsu": "Fugitive Predator",
-            "wave": "Ultimate",
-            "sku": "634482515723",
-            "image": true
-          }
-        ]
-      }
-    },
-    {
-      "bakedAt": "2026-10-03T05:23:06.464150+00:00",
-      "line": "super7",
-      "dryRun": false,
-      "mephitsuCount": 520,
-      "mephitsuWithGtin": 68,
-      "enrichStats": {
-        "listing": 0,
-        "fuzzy": 0,
-        "already": 68
-      },
-      "before": {
-        "total": 2832,
-        "withSku": 2410,
-        "withGtin": 130,
-        "withListingPrimary": 2280,
-        "withImage": 2549,
-        "emptySku": 422,
-        "emptyImage": 283
-      },
-      "after": {
-        "total": 2832,
-        "withSku": 2410,
-        "withGtin": 130,
-        "withListingPrimary": 2280,
-        "withImage": 2549,
-        "emptySku": 422,
-        "emptyImage": 283
-      },
-      "apply": {
-        "matched": 117,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 4,
-        "aliasesAttached": 0,
-        "skippedGtinConflict": 12,
-        "blockedByAudit": 0,
-        "reattachedAfterEnforce": 0,
-        "samples": [
-          {
-            "score": 58.0,
-            "figureId": "s73-silverhawks-monstar",
-            "name": "Mon*Star",
-            "mephitsu": "Mon*Star",
-            "wave": "Silverhawks Series 1",
-            "sku": "840049818439",
-            "image": true
-          },
-          {
-            "score": 58.0,
-            "figureId": "s73-gi joe-cobra-commander-ult",
-            "name": "Cobra Commander",
-            "mephitsu": "Cobra Commander",
-            "wave": "GI Joe Series 1",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 58.0,
-            "figureId": "s73-gi joe-stormshadow-ult",
-            "name": "Storm Shadow",
-            "mephitsu": "Storm Shadow",
-            "wave": "GI Joe Series 3",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 58.0,
-            "figureId": "d14s7u-ult-tmnt-foot",
-            "name": "Foot Soldier",
-            "mephitsu": "Foot Soldier",
-            "wave": "TMNT Series 13",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 58.0,
-            "figureId": "s7c-ult-tmnt-baxter",
-            "name": "Baxter Stockman",
-            "mephitsu": "Baxter Stockman",
-            "wave": "TMNT Series 1",
-            "sku": null,
-            "image": false
-          },
-          {
-            "score": 58.0,
-            "figureId": "s7c-ult-tmnt-casey",
-            "name": "Casey Jones",
-            "mephitsu": "Casey Jones",
-            "wave": "TMNT Series 13",
-            "sku": "SUP811843",
-            "image": true
-          },
-          {
-            "score": 58.0,
-            "figureId": "s7c-ult-tmnt-april",
-            "name": "April O'Neil",
-            "mephitsu": "April O'Neil",
-            "wave": "TMNT Series 14",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 53.0,
-            "figureId": "s73-silverhawks-quicksilver",
-            "name": "Quicksilver",
-            "mephitsu": "Quicksilver",
-            "wave": "Silverhawks Series 1",
-            "sku": "840049813342",
-            "image": true
-          }
-        ]
-      }
-    },
-    {
-      "bakedAt": "2026-10-03T05:23:07.647182+00:00",
-      "line": "diamond-select",
-      "dryRun": false,
-      "mephitsuCount": 597,
-      "mephitsuWithGtin": 2,
-      "enrichStats": {
-        "listing": 0,
-        "fuzzy": 0,
-        "already": 2
-      },
-      "before": {
-        "total": 103,
-        "withSku": 22,
-        "withGtin": 2,
-        "withListingPrimary": 20,
-        "withImage": 35,
-        "emptySku": 81,
+        "total": 472,
+        "withSku": 400,
+        "withGtin": 256,
+        "withListingPrimary": 144,
+        "withImage": 404,
+        "emptySku": 72,
         "emptyImage": 68
       },
       "after": {
-        "total": 103,
-        "withSku": 22,
-        "withGtin": 2,
-        "withListingPrimary": 20,
-        "withImage": 35,
-        "emptySku": 81,
+        "total": 472,
+        "withSku": 400,
+        "withGtin": 256,
+        "withListingPrimary": 144,
+        "withImage": 404,
+        "emptySku": 72,
         "emptyImage": 68
       },
       "apply": {
-        "matched": 53,
+        "matched": 209,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
         "imagesFilled": 0,
-        "imagesSkipped": 22,
+        "imagesSkipped": 2,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 0,
+        "skippedGtinConflict": 29,
         "blockedByAudit": 0,
         "reattachedAfterEnforce": 0,
         "samples": [
           {
-            "score": 46.5,
-            "figureId": "dst-ms-iron-spider",
-            "name": "Iron Spider",
-            "mephitsu": "Iron-Spider, Infinity War",
-            "wave": "MCU, Avengers Infinity War",
-            "sku": "DCD84034",
+            "score": 65.5,
+            "figureId": "bs5-bs-cad-bane",
+            "name": "Cad Bane",
+            "mephitsu": "Cad Bane",
+            "wave": "Target IUS) / Fan Channel",
+            "sku": "5010996222701",
             "image": true
           },
           {
-            "score": 39.0,
-            "figureId": "dst-dst-mrfreeze-animated",
-            "name": "Mr. Freeze",
-            "mephitsu": "Mr Freeze",
-            "wave": "Series 4",
-            "sku": null,
+            "score": 65.5,
+            "figureId": "bs5-bs-fennec",
+            "name": "Fennec Shand",
+            "mephitsu": "Fennec Shand",
+            "wave": "Galaxy Collection Wave 6",
+            "sku": "HAS828050",
             "image": true
           },
           {
-            "score": 36.5,
-            "figureId": "dst-ms-shehulk",
-            "name": "She-Hulk",
-            "mephitsu": "She-Hulk",
-            "wave": "Wizard World (Fans Choice)",
-            "sku": null,
-            "image": false
-          },
-          {
-            "score": 36.5,
-            "figureId": "dst-ms-winter",
-            "name": "Winter Soldier",
-            "mephitsu": "Winter Soldier",
-            "wave": "Disney Store",
-            "sku": "DCD 17885 MVL SELECT DIS WINTER SOLDIER",
+            "score": 63.0,
+            "figureId": "bs4-jango",
+            "name": "Jango Fett",
+            "mephitsu": "Jango Fett",
+            "wave": "Galaxy Collection Wave 24",
+            "sku": "5010996366061",
             "image": true
           },
           {
-            "score": 36.5,
-            "figureId": "dst-ms-symbiote",
-            "name": "Symbiote Spider-Man",
-            "mephitsu": "Symbiote Spider-Man",
-            "wave": "General",
-            "sku": null,
-            "image": false
-          },
-          {
-            "score": 36.5,
-            "figureId": "dst-ms-gwen",
-            "name": "Spider-Gwen",
-            "mephitsu": "Spider-Gwen",
-            "wave": "General",
-            "sku": "DST-18223-C",
+            "score": 63.0,
+            "figureId": "bsc-gamorrean",
+            "name": "Gamorrean Guard",
+            "mephitsu": "Gamorrean Guard",
+            "wave": "40th Anniversary  Deluxe",
+            "sku": "F6856",
             "image": true
           },
           {
-            "score": 36.5,
-            "figureId": "dst-ms-silver-surfer",
-            "name": "Silver Surfer",
-            "mephitsu": "Silver Surfer",
-            "wave": "General",
-            "sku": null,
-            "image": false
+            "score": 63.0,
+            "figureId": "bsc-bib-fortuna",
+            "name": "Bib Fortuna",
+            "mephitsu": "Bib Fortuna",
+            "wave": "40th Anniversary  Wave 7",
+            "sku": "5010993914364",
+            "image": true
           },
           {
-            "score": 36.5,
-            "figureId": "dst-ms-scarlet-witch",
-            "name": "Scarlet Witch",
-            "mephitsu": "Scarlet Witch",
-            "wave": "General",
-            "sku": null,
+            "score": 63.0,
+            "figureId": "bs5-bs-palpatine-rotj",
+            "name": "Emperor Palpatine",
+            "mephitsu": "Emperor Palpatine",
+            "wave": "40th Anniversary  Wave 7",
+            "sku": "HAS959648",
+            "image": true
+          },
+          {
+            "score": 63.0,
+            "figureId": "d14bs-anakin-aotc",
+            "name": "Anakin Skywalker",
+            "mephitsu": "Anakin Skywalker",
+            "wave": "25",
+            "sku": "SW-ANAKINSKYWALKERPADAWAN",
+            "image": true
+          },
+          {
+            "score": 63.0,
+            "figureId": "d14bs-bs-jabba",
+            "name": "Jabba the Hutt",
+            "mephitsu": "Jabba the Hutt",
+            "wave": "Shop Disney / Hasbro Pulse 40th Anniversary  Deluxe",
+            "sku": "HAS993285",
             "image": true
           }
         ]
       }
     },
     {
-      "bakedAt": "2026-10-03T05:23:13.886436+00:00",
+      "bakedAt": "2026-10-06T18:02:21.523358+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -819,22 +359,22 @@
         "already": 89
       },
       "before": {
-        "total": 224,
+        "total": 222,
         "withSku": 89,
         "withGtin": 80,
         "withListingPrimary": 9,
         "withImage": 161,
-        "emptySku": 135,
-        "emptyImage": 63
+        "emptySku": 133,
+        "emptyImage": 61
       },
       "after": {
-        "total": 224,
+        "total": 222,
         "withSku": 89,
         "withGtin": 80,
         "withListingPrimary": 9,
         "withImage": 161,
-        "emptySku": 135,
-        "emptyImage": 63
+        "emptySku": 133,
+        "emptyImage": 61
       },
       "apply": {
         "matched": 115,
@@ -923,7 +463,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-03T05:23:17.159757+00:00",
+      "bakedAt": "2026-10-06T18:02:25.079534+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,

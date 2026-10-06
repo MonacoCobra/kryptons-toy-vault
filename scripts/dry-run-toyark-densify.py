@@ -1591,7 +1591,7 @@ def stable_id(
 
 
 def defaults_for_company_line(company: str, line: str) -> tuple[float, str, float]:
-    """Honest catalog defaults (msrp, scale, demand). Not sourced from Toyark."""
+    """Catalog defaults (msrp, scale, demand). Not sourced from Toyark; msrp is NOT written to rows (unknown price stays null)."""
     low = (line or "").lower()
     if company in {"hottoys", "enterbay", "asmus", "starace", "exo6"} or "mms" in low:
         return 280.0, "1/6", 1.35
@@ -1665,7 +1665,9 @@ def make_oneshot_row(
     name = str(cand.get("name") or "").strip()
     variant = cand.get("variant") or None
     window = cand.get("releaseWindow") or None
-    msrp, scale, demand = defaults_for_company_line(company, line)
+    _default_msrp, scale, demand = defaults_for_company_line(company, line)
+    # Never invent a price: ToyArk posts carry no structured MSRP, so leave it
+    # null (shown as "—") until a real source (BBTS regular / AF411) fills it.
     pid = cand.get("toyarkPostId")
     tags = ["toyark", "toyark-densify", company, SOURCE]
     if pid is not None and str(pid).strip():
@@ -1686,7 +1688,7 @@ def make_oneshot_row(
         "company": company,
         "kind": "figure",
         "releaseDate": f"{year}-01-01",
-        "msrp": float(msrp),
+        "msrp": None,
         "scale": scale,
         "demand": float(demand),
         "tags": tags2,
