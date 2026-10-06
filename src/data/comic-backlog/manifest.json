@@ -5,11 +5,8 @@
     500
   ],
   "lastInjectedAt": "2026-10-05",
-  "lastInjectedBatch": "batch-042-gcd-marvel-2001-gap",
-  "queued": [
-    "batch-044-gcd-us-indie-modern-gap",
-    "batch-043-gcd-marvel-image-indie-gap"
-  ],
+  "lastInjectedBatch": "batch-044-gcd-us-indie-modern-gap",
+  "queued": [],
   "injected": [
     "batch-001",
     "batch-002",
@@ -51,9 +48,11 @@
     "batch-039-gcd-marvel-image-sparse",
     "batch-040-gcd-us-indie-zero-thin",
     "batch-041-gcd-dc-2001-gap",
-    "batch-042-gcd-marvel-2001-gap"
+    "batch-042-gcd-marvel-2001-gap",
+    "batch-043-gcd-marvel-image-indie-gap",
+    "batch-044-gcd-us-indie-modern-gap"
   ],
   "floor": "1980-01-01",
-  "notes": "batch-006 DC; batch-007 Marvel; batch-008 Image; batch-009 indie; batch-010 Archie/Titan/Rebellion; batch-011 Vertigo/Black Label/WildStorm/Milestone/CrossGen/Eclipse/First/Avatar + SW/TF/Joe/Hellboy; batch-012 flagship thin densify (GA/HQ/SS/BoP, Marvel DS/BP/Silver Surfer/Excalibur/Punisher/New Warriors/X-Force late, Skybound Void Rivals+continuations, Image Geiger/Oblivion/Fire Power, Pacific≥1980, Eclipse leftovers); floor 1980-01-01; batch-013 Absolute/Black Label/Ultimate2020s/Hellboy/Invincible/TWD Deluxe/Sandman Universe (+835); batch-014 DC JSA/Booster/Shazam/Catwoman2002/Titans/SwampThing densify; batch-015 Marvel She-Hulk/Black Widow/Spider-Woman + Guardians/Miles/Moon Knight densify + Spider-Gwen; batch-016 Marvel street-level (Elektra/Iron Fist/Luke Cage/WS/Thunderbolts/Exiles/YA) + Image Black Hammer/Die/Isola/Bitter Root/Farmhand/Rat Queens/Wytches + Angel; batch-022 Dark Horse GCD densify; batch-023 IDW GCD densify (TMNT/TF/GIJoe/Sonic/Trek); batch-025 GCD Marvel sparse + DH/Valiant/IDW/Archie/Fantagraphics densify (+1184); batch-027 GCD Oni/Fantagraphics/Antarctic + Image sparse densify (+826); batch-028 AfterShock GCD densify (+500); batch-029 Rebellion GCD densify (+500); queued for inject ~2026-10-09; batch-031/032 queued 2026-09-28 (GCD gap-fill alt-press + Eclipse/First); next inject ~2026-10-14 (21 days after 2026-09-23); batch-033 queued 2026-09-29 (GCD classic US indie Mirage/Pacific/WaRP/…); weekday vault gap fill; batch-034 queued 2026-09-29 (GCD classic US indie Mirage/Pacific/WaRP/…); weekday vault gap fill; batch-035 queued 2026-09-30 (GCD US indie Chaos!/Caliber/SLG/…); weekday vault gap fill; batch-036 queued 2026-09-30 (GCD US indie Speakeasy/Action Lab/Mad Cave/…); weekday vault gap fill; batch-037/038 queued 2026-10-01 (GCD Marvel sparse + US indie underserved); weekday vault gap fill; batch-039/040 queued 2026-10-02 (GCD Marvel/Image sparse + US indie zero/thin); weekday vault gap fill; batch-041/042 queued 2026-10-05 (GCD DC 2001+ gap + Marvel 2001+ gap); Monday archive growth; batch-043/044 queued 2026-10-05 (GCD Marvel majors 1980-84/2001+ + Image + US indie gap; US indie modern Massive/DSTLRY/Bad Idea/Avatar/Fantagraphics); weekday vault gap fill",
-  "pruneNote": "2026-09-13: pruned unverified catalog rows (37995 → 4257); batch JSON history retained as audit trail. Glyph should stop hunting pruned ids."
+  "notes": "batch-006 DC; batch-007 Marvel; batch-008 Image; batch-009 indie; batch-010 Archie/Titan/Rebellion; batch-011 Vertigo/Black Label/WildStorm/Milestone/CrossGen/Eclipse/First/Avatar + SW/TF/Joe/Hellboy; batch-012 flagship thin densify (GA/HQ/SS/BoP, Marvel DS/BP/Silver Surfer/Excalibur/Punisher/New Warriors/X-Force late, Skybound Void Rivals+continuations, Image Geiger/Oblivion/Fire Power, Pacific\u22651980, Eclipse leftovers); floor 1980-01-01; batch-013 Absolute/Black Label/Ultimate2020s/Hellboy/Invincible/TWD Deluxe/Sandman Universe (+835); batch-014 DC JSA/Booster/Shazam/Catwoman2002/Titans/SwampThing densify; batch-015 Marvel She-Hulk/Black Widow/Spider-Woman + Guardians/Miles/Moon Knight densify + Spider-Gwen; batch-016 Marvel street-level (Elektra/Iron Fist/Luke Cage/WS/Thunderbolts/Exiles/YA) + Image Black Hammer/Die/Isola/Bitter Root/Farmhand/Rat Queens/Wytches + Angel; batch-022 Dark Horse GCD densify; batch-023 IDW GCD densify (TMNT/TF/GIJoe/Sonic/Trek); batch-025 GCD Marvel sparse + DH/Valiant/IDW/Archie/Fantagraphics densify (+1184); batch-027 GCD Oni/Fantagraphics/Antarctic + Image sparse densify (+826); batch-028 AfterShock GCD densify (+500); batch-029 Rebellion GCD densify (+500); queued for inject ~2026-10-09; batch-031/032 queued 2026-09-28 (GCD gap-fill alt-press + Eclipse/First); next inject ~2026-10-14 (21 days after 2026-09-23); batch-033 queued 2026-09-29 (GCD classic US indie Mirage/Pacific/WaRP/\u2026); weekday vault gap fill; batch-034 queued 2026-09-29 (GCD classic US indie Mirage/Pacific/WaRP/\u2026); weekday vault gap fill; batch-035 queued 2026-09-30 (GCD US indie Chaos!/Caliber/SLG/\u2026); weekday vault gap fill; batch-036 queued 2026-09-30 (GCD US indie Speakeasy/Action Lab/Mad Cave/\u2026); weekday vault gap fill; batch-037/038 queued 2026-10-01 (GCD Marvel sparse + US indie underserved); weekday vault gap fill; batch-039/040 queued 2026-10-02 (GCD Marvel/Image sparse + US indie zero/thin); weekday vault gap fill; batch-041/042 queued 2026-10-05 (GCD DC 2001+ gap + Marvel 2001+ gap); Monday archive growth; batch-043/044 queued 2026-10-05 (GCD Marvel majors 1980-84/2001+ + Image + US indie gap; US indie modern Massive/DSTLRY/Bad Idea/Avatar/Fantagraphics); weekday vault gap fill",
+  "pruneNote": "2026-09-13: pruned unverified catalog rows (37995 \u2192 4257); batch JSON history retained as audit trail. Glyph should stop hunting pruned ids."
 }
