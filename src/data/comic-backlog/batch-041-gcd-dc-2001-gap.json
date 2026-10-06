@@ -2,7 +2,7 @@
   "id": "batch-041-gcd-dc-2001-gap",
   "title": "GCD gap-fill: DC Comics 2001+ series densify",
   "created": "2026-10-05",
-  "status": "queued",
+  "status": "injected",
   "focus": "Monday archive growth stockpile; GCD dump mains-only; DC (pub 54) issues dated 2001+ missing from catalog (outside Glyph's DC 1985-2000 lane); verified gcdIssueId; series ordered by missing-issue count; post-audit: dropped rows already in catalog under year-suffixed series labels and rows whose series label year did not match the GCD volume",
   "source": "gcd-dump",
   "addedCount": 79,

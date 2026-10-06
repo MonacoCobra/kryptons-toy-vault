@@ -1,0 +1,9368 @@
+{
+  "id": "batch-043-gcd-marvel-image-indie-gap",
+  "title": "GCD gap-fill: Marvel majors + Image + US indie densify",
+  "created": "2026-10-05",
+  "status": "queued",
+  "focus": "Weekday vault gap fill 2026-10-05; GCD dump mains-only; floor 1980; Marvel (pub 78) 1980-84 + 2001+ (outside Meph's 1985-2000 lane), then Image (709), then US indie (Dark Horse/IDW/Boom/Dynamite/...); verified gcdIssueId; deduped vs catalog",
+  "source": "gcd-dump",
+  "addedCount": 488,
+  "byPublisher": {
+    "Marvel Comics": 114,
+    "Antarctic Press": 75,
+    "Image": 66,
+    "Dark Horse": 52,
+    "Avatar Press": 38,
+    "IDW": 32,
+    "Image Comics": 22,
+    "Image / Top Cow": 20,
+    "Boom! Studios": 13,
+    "Dynamite Entertainment": 13,
+    "Oni Press": 12,
+    "Scholastic": 12,
+    "Massive": 7,
+    "Fantagraphics": 6,
+    "IDW Publishing": 4,
+    "Top Cow / Image": 1,
+    "Dynamite": 1
+  },
+  "rows": [
+    [
+      "mv-moonknight-1981-18",
+      "Moon Knight",
+      "18",
+      "Marvel Comics",
+      "1982-04-01",
+      "",
+      "",
+      "Moon Knight #18",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-01-05",
+        "gcdIssueId": "36286"
+      }
+    ],
+    [
+      "mv-moonknight-1981-19",
+      "Moon Knight",
+      "19",
+      "Marvel Comics",
+      "1982-05-01",
+      "",
+      "",
+      "Moon Knight #19",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-02-02",
+        "gcdIssueId": "36373"
+      }
+    ],
+    [
+      "mv-moonknight-1981-20",
+      "Moon Knight",
+      "20",
+      "Marvel Comics",
+      "1982-06-01",
+      "",
+      "",
+      "Moon Knight #20",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-03-02",
+        "gcdIssueId": "36449"
+      }
+    ],
+    [
+      "mv-moonknight-1981-21",
+      "Moon Knight",
+      "21",
+      "Marvel Comics",
+      "1982-07-01",
+      "",
+      "",
+      "Moon Knight #21",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-03-30",
+        "gcdIssueId": "36526"
+      }
+    ],
+    [
+      "mv-moonknight-1981-22",
+      "Moon Knight",
+      "22",
+      "Marvel Comics",
+      "1982-08-01",
+      "",
+      "",
+      "Moon Knight #22",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-05-04",
+        "gcdIssueId": "36605"
+      }
+    ],
+    [
+      "mv-moonknight-1981-23",
+      "Moon Knight",
+      "23",
+      "Marvel Comics",
+      "1982-09-01",
+      "",
+      "",
+      "Moon Knight #23",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-06-01",
+        "gcdIssueId": "36681"
+      }
+    ],
+    [
+      "mv-moonknight-1981-24",
+      "Moon Knight",
+      "24",
+      "Marvel Comics",
+      "1982-10-01",
+      "",
+      "",
+      "Moon Knight #24",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-06-29",
+        "gcdIssueId": "36762"
+      }
+    ],
+    [
+      "mv-moonknight-1981-25",
+      "Moon Knight",
+      "25",
+      "Marvel Comics",
+      "1982-11-01",
+      "",
+      "",
+      "Moon Knight #25",
+      1.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-08-03",
+        "gcdIssueId": "36844"
+      }
+    ],
+    [
+      "mv-moonknight-1981-26",
+      "Moon Knight",
+      "26",
+      "Marvel Comics",
+      "1982-12-01",
+      "",
+      "",
+      "Moon Knight #26",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-08-31",
+        "gcdIssueId": "36927"
+      }
+    ],
+    [
+      "mv-moonknight-1981-27",
+      "Moon Knight",
+      "27",
+      "Marvel Comics",
+      "1983-01-01",
+      "",
+      "",
+      "Moon Knight #27",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-10-05",
+        "gcdIssueId": "37061"
+      }
+    ],
+    [
+      "mv-moonknight-1981-28",
+      "Moon Knight",
+      "28",
+      "Marvel Comics",
+      "1983-02-01",
+      "",
+      "",
+      "Moon Knight #28",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-11-02",
+        "gcdIssueId": "37138"
+      }
+    ],
+    [
+      "mv-moonknight-1981-29",
+      "Moon Knight",
+      "29",
+      "Marvel Comics",
+      "1983-03-01",
+      "",
+      "",
+      "Moon Knight #29",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-11-30",
+        "gcdIssueId": "37235"
+      }
+    ],
+    [
+      "mv-moonknight-1981-30",
+      "Moon Knight",
+      "30",
+      "Marvel Comics",
+      "1983-04-01",
+      "",
+      "",
+      "Moon Knight #30",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1983-01-04",
+        "gcdIssueId": "37323"
+      }
+    ],
+    [
+      "mv-ghost-rider-1975-50",
+      "Ghost Rider (1973)",
+      "50",
+      "Marvel Comics",
+      "1980-11-01",
+      "",
+      "",
+      "Ghost Rider #50",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "gcdIssueId": "34844"
+      }
+    ],
+    [
+      "mv-ghost-rider-1975-53",
+      "Ghost Rider (1973)",
+      "53",
+      "Marvel Comics",
+      "1981-02-01",
+      "",
+      "",
+      "Ghost Rider #53",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "gcdIssueId": "35111"
+      }
+    ],
+    [
+      "mv-ghost-rider-1975-54",
+      "Ghost Rider (1973)",
+      "54",
+      "Marvel Comics",
+      "1981-03-01",
+      "",
+      "",
+      "Ghost Rider #54",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "gcdIssueId": "35192"
+      }
+    ],
+    [
+      "mv-ghost-rider-1975-64",
+      "Ghost Rider (1973)",
+      "64",
+      "Marvel Comics",
+      "1982-01-01",
+      "",
+      "",
+      "Ghost Rider #64",
+      0.6,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1981-10-06",
+        "gcdIssueId": "36021"
+      }
+    ],
+    [
+      "mv-ghost-rider-1975-65",
+      "Ghost Rider (1973)",
+      "65",
+      "Marvel Comics",
+      "1982-02-01",
+      "",
+      "",
+      "Ghost Rider #65",
+      0.6,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1981-01-01",
+        "gcdIssueId": "36104"
+      }
+    ],
+    [
+      "mv-ghost-rider-1975-66",
+      "Ghost Rider (1973)",
+      "66",
+      "Marvel Comics",
+      "1982-03-01",
+      "",
+      "",
+      "Ghost Rider #66",
+      0.6,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1981-12-01",
+        "gcdIssueId": "36192"
+      }
+    ],
+    [
+      "mv-ghost-rider-1975-67",
+      "Ghost Rider (1973)",
+      "67",
+      "Marvel Comics",
+      "1982-04-01",
+      "",
+      "",
+      "Ghost Rider #67",
+      0.6,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-01-05",
+        "gcdIssueId": "36277"
+      }
+    ],
+    [
+      "mv-ghost-rider-1975-68",
+      "Ghost Rider (1973)",
+      "68",
+      "Marvel Comics",
+      "1982-05-01",
+      "",
+      "",
+      "Ghost Rider #68",
+      0.6,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1981-12-01",
+        "gcdIssueId": "36362"
+      }
+    ],
+    [
+      "mv-ghost-rider-1975-69",
+      "Ghost Rider (1973)",
+      "69",
+      "Marvel Comics",
+      "1982-06-01",
+      "",
+      "",
+      "Ghost Rider #69",
+      0.6,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-03-02",
+        "gcdIssueId": "36439"
+      }
+    ],
+    [
+      "mv-ghost-rider-1975-70",
+      "Ghost Rider (1973)",
+      "70",
+      "Marvel Comics",
+      "1982-07-01",
+      "",
+      "",
+      "Ghost Rider #70",
+      0.6,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-03-30",
+        "gcdIssueId": "36514"
+      }
+    ],
+    [
+      "mv-ghost-rider-1975-71",
+      "Ghost Rider (1973)",
+      "71",
+      "Marvel Comics",
+      "1982-08-01",
+      "",
+      "",
+      "Ghost Rider #71",
+      0.6,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-05-04",
+        "gcdIssueId": "36595"
+      }
+    ],
+    [
+      "mv-ghost-rider-1975-72",
+      "Ghost Rider (1973)",
+      "72",
+      "Marvel Comics",
+      "1982-09-01",
+      "",
+      "",
+      "Ghost Rider #72",
+      0.6,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-06-01",
+        "gcdIssueId": "36669"
+      }
+    ],
+    [
+      "mv-wolverine-2011-5",
+      "Wolverine",
+      "5",
+      "Marvel Comics",
+      "2011-03-01",
+      "",
+      "",
+      "Wolverine #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960607152400511",
+        "streetDate": "2011-01-19",
+        "gcdIssueId": "797786"
+      }
+    ],
+    [
+      "mv-wolverine-2011-14",
+      "Wolverine",
+      "14",
+      "Marvel Comics",
+      "2011-10-01",
+      "",
+      "",
+      "Wolverine #14",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960607152401411",
+        "streetDate": "2011-08-24",
+        "gcdIssueId": "871103"
+      }
+    ],
+    [
+      "mv-wolverine-2011-15",
+      "Wolverine",
+      "15",
+      "Marvel Comics",
+      "2011-11-01",
+      "",
+      "",
+      "Wolverine #15",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960607152401511",
+        "streetDate": "2011-09-07",
+        "gcdIssueId": "874817"
+      }
+    ],
+    [
+      "mv-wolverine-2011-16",
+      "Wolverine",
+      "16",
+      "Marvel Comics",
+      "2011-11-01",
+      "",
+      "",
+      "Wolverine #16",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960607152401611",
+        "streetDate": "2011-09-28",
+        "gcdIssueId": "879990"
+      }
+    ],
+    [
+      "mv-wolverine-2011-17",
+      "Wolverine",
+      "17",
+      "Marvel Comics",
+      "2011-12-01",
+      "",
+      "",
+      "Wolverine #17",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960607152401711",
+        "streetDate": "2011-10-19",
+        "gcdIssueId": "887176"
+      }
+    ],
+    [
+      "mv-wolverine-2012-19",
+      "Wolverine",
+      "19",
+      "Marvel Comics",
+      "2012-01-01",
+      "",
+      "",
+      "Wolverine #19",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960607152401911",
+        "streetDate": "2011-11-30",
+        "gcdIssueId": "899428"
+      }
+    ],
+    [
+      "mv-wolverine-20",
+      "Wolverine",
+      "20",
+      "Marvel Comics",
+      "2012-02-01",
+      "",
+      "",
+      "Wolverine #20",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960607152402011",
+        "streetDate": "2011-12-21",
+        "gcdIssueId": "901964"
+      }
+    ],
+    [
+      "mv-msmarvel-1977-32",
+      "Ms. Marvel",
+      "32",
+      "Marvel Comics",
+      "2008-12-01",
+      "",
+      "",
+      "Ms. Marvel #32",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960605828003211",
+        "streetDate": "2008-10-22",
+        "gcdIssueId": "545782"
+      }
+    ],
+    [
+      "mv-msmarvel-1977-33",
+      "Ms. Marvel",
+      "33",
+      "Marvel Comics",
+      "2009-01-01",
+      "",
+      "",
+      "Ms. Marvel #33",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960605828003311",
+        "streetDate": "2008-11-26",
+        "gcdIssueId": "556938"
+      }
+    ],
+    [
+      "mv-msmarvel-1977-36",
+      "Ms. Marvel",
+      "36",
+      "Marvel Comics",
+      "2009-04-01",
+      "",
+      "",
+      "Ms. Marvel #36",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960605828003611",
+        "streetDate": "2009-02-25",
+        "gcdIssueId": "576170"
+      }
+    ],
+    [
+      "mv-msmarvel-1977-37",
+      "Ms. Marvel",
+      "37",
+      "Marvel Comics",
+      "2009-05-01",
+      "",
+      "",
+      "Ms. Marvel #37",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960605828003711",
+        "streetDate": "2009-03-25",
+        "gcdIssueId": "596094"
+      }
+    ],
+    [
+      "mv-nova-2009-30",
+      "Nova (2007)",
+      "30",
+      "Marvel Comics",
+      "2009-12-01",
+      "",
+      "",
+      "Nova #30",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960606064103011",
+        "streetDate": "2009-10-28",
+        "gcdIssueId": "671795"
+      }
+    ],
+    [
+      "mv-nova-2010-31",
+      "Nova (2007)",
+      "31",
+      "Marvel Comics",
+      "2010-01-01",
+      "",
+      "",
+      "Nova #31",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960606064103111",
+        "streetDate": "2009-11-04",
+        "gcdIssueId": "681472"
+      }
+    ],
+    [
+      "mv-newxmen-2004-1",
+      "New X-Men",
+      "1",
+      "Marvel Comics",
+      "2004-07-01",
+      "",
+      "",
+      "New X-Men #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960605544900111",
+        "streetDate": "2004-05-19",
+        "gcdIssueId": "291228"
+      }
+    ],
+    [
+      "mv-marvel-fanfare-1982-1",
+      "Marvel Fanfare",
+      "1",
+      "Marvel Comics",
+      "1982-03-01",
+      "",
+      "",
+      "Marvel Fanfare #1",
+      1.25,
+      "single",
+      0.8,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1981-11-17",
+        "gcdIssueId": "36197"
+      }
+    ],
+    [
+      "mv-marvel-fanfare-1982-2",
+      "Marvel Fanfare",
+      "2",
+      "Marvel Comics",
+      "1982-05-01",
+      "",
+      "",
+      "Marvel Fanfare #2",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-02-09",
+        "gcdIssueId": "36366"
+      }
+    ],
+    [
+      "mv-marvel-fanfare-1982-3",
+      "Marvel Fanfare",
+      "3",
+      "Marvel Comics",
+      "1982-07-01",
+      "",
+      "",
+      "Marvel Fanfare #3",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-04-06",
+        "gcdIssueId": "36518"
+      }
+    ],
+    [
+      "mv-marvel-fanfare-1982-4",
+      "Marvel Fanfare",
+      "4",
+      "Marvel Comics",
+      "1982-09-01",
+      "",
+      "",
+      "Marvel Fanfare #4",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-06-08",
+        "gcdIssueId": "36675"
+      }
+    ],
+    [
+      "mv-marvel-fanfare-1982-5",
+      "Marvel Fanfare",
+      "5",
+      "Marvel Comics",
+      "1982-11-01",
+      "",
+      "",
+      "Marvel Fanfare #5",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-08-10",
+        "gcdIssueId": "36838"
+      }
+    ],
+    [
+      "mv-marvel-fanfare-1983-6",
+      "Marvel Fanfare",
+      "6",
+      "Marvel Comics",
+      "1983-01-01",
+      "",
+      "",
+      "Marvel Fanfare #6",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1982-10-05",
+        "gcdIssueId": "37055"
+      }
+    ],
+    [
+      "mv-thor-2003-3",
+      "Thor",
+      "3",
+      "Marvel Comics",
+      "2003-07-01",
+      "",
+      "",
+      "Gods on Earth",
+      21.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078511126952199",
+        "streetDate": "2003-05-07",
+        "gcdIssueId": "1098171"
+      }
+    ],
+    [
+      "mv-thor-2003-4",
+      "Thor",
+      "4",
+      "Marvel Comics",
+      "2003-01-01",
+      "",
+      "",
+      "Spiral",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078511127651999",
+        "gcdIssueId": "1098172"
+      }
+    ],
+    [
+      "mv-thor-2004-5",
+      "Thor",
+      "5",
+      "Marvel Comics",
+      "2004-05-05",
+      "",
+      "",
+      "The Reigning",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "2004-05-05",
+        "gcdIssueId": "1098173"
+      }
+    ],
+    [
+      "mv-thor-2004-6",
+      "Thor",
+      "6",
+      "Marvel Comics",
+      "2004-08-04",
+      "",
+      "",
+      "Gods and Men",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "2004-08-04",
+        "gcdIssueId": "1098174"
+      }
+    ],
+    [
+      "mv-alien-legion-1984-1",
+      "Alien Legion",
+      "1",
+      "Marvel Comics",
+      "1984-04-01",
+      "",
+      "",
+      "Alien Legion #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1984-02-28",
+        "gcdIssueId": "38550"
+      }
+    ],
+    [
+      "mv-alien-legion-1984-2",
+      "Alien Legion",
+      "2",
+      "Marvel Comics",
+      "1984-06-01",
+      "",
+      "",
+      "Alien Legion #2",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1984-04-23",
+        "gcdIssueId": "38770"
+      }
+    ],
+    [
+      "mv-alien-legion-1984-3",
+      "Alien Legion",
+      "3",
+      "Marvel Comics",
+      "1984-08-01",
+      "",
+      "",
+      "Alien Legion #3",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1984-06-12",
+        "gcdIssueId": "38986"
+      }
+    ],
+    [
+      "mv-alien-legion-1984-4",
+      "Alien Legion",
+      "4",
+      "Marvel Comics",
+      "1984-10-01",
+      "",
+      "",
+      "Alien Legion #4",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1984-08-14",
+        "gcdIssueId": "39185"
+      }
+    ],
+    [
+      "mv-alien-legion-1984-5",
+      "Alien Legion",
+      "5",
+      "Marvel Comics",
+      "1984-12-01",
+      "",
+      "",
+      "Alien Legion #5",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "gcdIssueId": "39401"
+      }
+    ],
+    [
+      "mv-terror-inc-2007-1",
+      "Terror Inc. (2008)",
+      "1",
+      "Marvel Comics",
+      "2007-10-01",
+      "",
+      "",
+      "Terror, Inc. #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960606152500111",
+        "streetDate": "2007-08-15",
+        "gcdIssueId": "374567"
+      }
+    ],
+    [
+      "mv-terror-inc-2007-2",
+      "Terror Inc. (2008)",
+      "2",
+      "Marvel Comics",
+      "2007-11-01",
+      "",
+      "",
+      "Terror, Inc. #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960606152500211",
+        "streetDate": "2007-09-19",
+        "gcdIssueId": "374568"
+      }
+    ],
+    [
+      "mv-terror-inc-2007-3",
+      "Terror Inc. (2008)",
+      "3",
+      "Marvel Comics",
+      "2007-12-01",
+      "",
+      "",
+      "Terror, Inc. #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960606152500311",
+        "streetDate": "2007-10-17",
+        "gcdIssueId": "374569"
+      }
+    ],
+    [
+      "mv-terror-inc-2008-4",
+      "Terror Inc. (2008)",
+      "4",
+      "Marvel Comics",
+      "2008-01-01",
+      "",
+      "",
+      "Terror, Inc. #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960606152500411",
+        "streetDate": "2007-12-19",
+        "gcdIssueId": "374570"
+      }
+    ],
+    [
+      "mv-terror-inc-2008-5",
+      "Terror Inc. (2008)",
+      "5",
+      "Marvel Comics",
+      "2008-04-01",
+      "",
+      "",
+      "Terror, Inc. #5",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960606152500511",
+        "streetDate": "2008-02-20",
+        "gcdIssueId": "374571"
+      }
+    ],
+    [
+      "mv-unbeatable-squirrel-girl-2016-9",
+      "The Unbeatable Squirrel Girl (2015)",
+      "9",
+      "Marvel Comics",
+      "2016-08-01",
+      "",
+      "",
+      "The Unbeatable Squirrel Girl #9",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960608340400911",
+        "streetDate": "2016-06-29",
+        "gcdIssueId": "1593805"
+      }
+    ],
+    [
+      "mv-unbeatable-squirrel-girl-2016-10",
+      "The Unbeatable Squirrel Girl (2015)",
+      "10",
+      "Marvel Comics",
+      "2016-09-01",
+      "",
+      "",
+      "The Unbeatable Squirrel Girl #10",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960608340401011",
+        "streetDate": "2016-07-27",
+        "gcdIssueId": "1605833"
+      }
+    ],
+    [
+      "mv-unbeatable-squirrel-girl-2016-11",
+      "The Unbeatable Squirrel Girl (2015)",
+      "11",
+      "Marvel Comics",
+      "2016-10-01",
+      "",
+      "",
+      "The Unbeatable Squirrel Girl #11",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960608340401111",
+        "streetDate": "2016-08-24",
+        "gcdIssueId": "1618251"
+      }
+    ],
+    [
+      "mv-cloakedagger-1983-2",
+      "Cloak and Dagger",
+      "2",
+      "Marvel Comics",
+      "1983-11-01",
+      "",
+      "",
+      "Cloak and Dagger #2",
+      0.6,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1983-07-19",
+        "gcdIssueId": "37944"
+      }
+    ],
+    [
+      "mv-cloakedagger-1983-3",
+      "Cloak and Dagger",
+      "3",
+      "Marvel Comics",
+      "1983-12-01",
+      "",
+      "",
+      "Cloak and Dagger #3",
+      0.6,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1983-08-16",
+        "gcdIssueId": "38049"
+      }
+    ],
+    [
+      "mv-cloakedagger-1984-4",
+      "Cloak and Dagger",
+      "4",
+      "Marvel Comics",
+      "1984-01-01",
+      "",
+      "",
+      "Cloak and Dagger #4",
+      0.6,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1983-09-20",
+        "gcdIssueId": "38204"
+      }
+    ],
+    [
+      "mv-westcoast-1984-4",
+      "West Coast Avengers",
+      "4",
+      "Marvel Comics",
+      "1984-12-01",
+      "",
+      "",
+      "West Coast Avengers #4",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1984-08-06",
+        "gcdIssueId": "39438"
+      }
+    ],
+    [
+      "mv-thor-2008-9",
+      "Thor",
+      "9",
+      "Marvel Comics",
+      "2008-07-01",
+      "",
+      "",
+      "Thor #9",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960605673600911",
+        "streetDate": "2008-05-28",
+        "gcdIssueId": "529394"
+      }
+    ],
+    [
+      "mv-thor-2008-10",
+      "Thor",
+      "10",
+      "Marvel Comics",
+      "2008-09-01",
+      "",
+      "",
+      "Thor #10",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960605673601011",
+        "streetDate": "2008-07-30",
+        "gcdIssueId": "536089"
+      }
+    ],
+    [
+      "mv-thor-2008-11",
+      "Thor",
+      "11",
+      "Marvel Comics",
+      "2008-11-01",
+      "",
+      "",
+      "Thor #11",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960605673601111",
+        "streetDate": "2008-10-29",
+        "gcdIssueId": "545950"
+      }
+    ],
+    [
+      "mv-thor-2009-12",
+      "Thor",
+      "12",
+      "Marvel Comics",
+      "2009-01-01",
+      "",
+      "",
+      "Thor #12",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960605673601211",
+        "streetDate": "2008-12-24",
+        "gcdIssueId": "560163"
+      }
+    ],
+    [
+      "mv-avengers-earth-s-mightiest-heroes-2011-2",
+      "The Avengers: Earth's Mightiest Heroes (2012)",
+      "2",
+      "Marvel Comics",
+      "2011-02-01",
+      "",
+      "",
+      "Avengers: Earth's Mightiest Heroes #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960607507200211",
+        "streetDate": "2010-12-01",
+        "gcdIssueId": "791632"
+      }
+    ],
+    [
+      "mv-avengers-earth-s-mightiest-heroes-2011-3",
+      "The Avengers: Earth's Mightiest Heroes (2012)",
+      "3",
+      "Marvel Comics",
+      "2011-03-01",
+      "",
+      "",
+      "Avengers: Earth's Mightiest Heroes #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960607507200311",
+        "streetDate": "2011-01-05",
+        "gcdIssueId": "795621"
+      }
+    ],
+    [
+      "mv-avengers-earth-s-mightiest-heroes-2011-4",
+      "The Avengers: Earth's Mightiest Heroes (2012)",
+      "4",
+      "Marvel Comics",
+      "2011-04-01",
+      "",
+      "",
+      "Avengers: Earth's Mightiest Heroes #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960607507200411",
+        "streetDate": "2011-02-09",
+        "gcdIssueId": "806114"
+      }
+    ],
+    [
+      "mv-x-men-red-by-al-ewing-1",
+      "X-Men: Red by Al Ewing",
+      "1",
+      "Marvel Comics",
+      "2022-11-02",
+      "",
+      "",
+      "X-Men: Red by Al Ewing #1",
+      17.99,
+      "single",
+      0.8,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978130293283151799",
+        "streetDate": "2022-11-02",
+        "gcdIssueId": "2446286"
+      }
+    ],
+    [
+      "mv-x-men-red-by-al-ewing-2",
+      "X-Men: Red by Al Ewing",
+      "2",
+      "Marvel Comics",
+      "2023-03-15",
+      "",
+      "",
+      "X-Men: Red by Al Ewing #2",
+      15.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978130294752151599",
+        "streetDate": "2023-03-15",
+        "gcdIssueId": "2505767"
+      }
+    ],
+    [
+      "mv-x-men-red-by-al-ewing-3",
+      "X-Men: Red by Al Ewing",
+      "3",
+      "Marvel Comics",
+      "2023-10-18",
+      "",
+      "",
+      "X-Men: Red by Al Ewing #3",
+      15.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978130295228051599",
+        "streetDate": "2023-10-18",
+        "gcdIssueId": "2573049"
+      }
+    ],
+    [
+      "mv-x-men-red-by-al-ewing-4",
+      "X-Men: Red by Al Ewing",
+      "4",
+      "Marvel Comics",
+      "2024-03-13",
+      "",
+      "",
+      "X-Men: Red by Al Ewing #4",
+      17.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978130295343051799",
+        "streetDate": "2024-03-13",
+        "gcdIssueId": "2613082"
+      }
+    ],
+    [
+      "mv-red-sonja-1983-1",
+      "Red Sonja (1983)",
+      "1",
+      "Marvel Comics",
+      "1983-08-01",
+      "",
+      "",
+      "Red Sonja #1",
+      1.0,
+      "single",
+      0.8,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1983-04-15",
+        "gcdIssueId": "86674"
+      }
+    ],
+    [
+      "mv-red-sonja-1983-2",
+      "Red Sonja (1983)",
+      "2",
+      "Marvel Comics",
+      "1983-10-01",
+      "",
+      "",
+      "Red Sonja #2",
+      1.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "1983-06-07",
+        "gcdIssueId": "86675"
+      }
+    ],
+    [
+      "mv-age-of-apocalypse-2012-3",
+      "Age of Apocalypse (2012)",
+      "3",
+      "Marvel Comics",
+      "2012-07-01",
+      "",
+      "",
+      "Age of Apocalypse #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960607747200311",
+        "streetDate": "2012-05-02",
+        "gcdIssueId": "942141"
+      }
+    ],
+    [
+      "mv-age-of-apocalypse-2012-5",
+      "Age of Apocalypse (2012)",
+      "5",
+      "Marvel Comics",
+      "2012-09-01",
+      "",
+      "",
+      "Age of Apocalypse #5",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960607747200511",
+        "streetDate": "2012-07-04",
+        "gcdIssueId": "956083"
+      }
+    ],
+    [
+      "mv-hawkeye-2013-16",
+      "Hawkeye (2012)",
+      "16",
+      "Marvel Comics",
+      "2014-02-01",
+      "",
+      "",
+      "Hawkeye #16",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960607907001611",
+        "streetDate": "2014-01-22",
+        "gcdIssueId": "1174468"
+      }
+    ],
+    [
+      "mv-blackcat-2020-11",
+      "Black Cat",
+      "11",
+      "Marvel Comics",
+      "2020-08-01",
+      "",
+      "",
+      "Black Cat #11",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960609420201111",
+        "streetDate": "2020-06-10",
+        "gcdIssueId": "2119754"
+      }
+    ],
+    [
+      "mv-amazing-fantasy-1962-1",
+      "Amazing Fantasy",
+      "1",
+      "Marvel Comics",
+      "2004-08-01",
+      "",
+      "",
+      "Amazing Fantasy #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960605564700111",
+        "streetDate": "2004-06-30",
+        "gcdIssueId": "271173"
+      }
+    ],
+    [
+      "mv-x-men-phoenix-warsong-2007-nn",
+      "X-Men: Phoenix - Warsong",
+      "[nn]",
+      "Marvel Comics",
+      "2007-01-01",
+      "",
+      "",
+      "X-Men: Phoenix - Warsong #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "gcdIssueId": "374808"
+      }
+    ],
+    [
+      "mv-spider-man-red-sonja-2008-nn",
+      "Spider-Man / Red Sonja",
+      "[nn]",
+      "Marvel Comics",
+      "2008-03-01",
+      "",
+      "",
+      "Spider-Man / Red Sonja #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "9780785132103",
+        "gcdIssueId": "641486"
+      }
+    ],
+    [
+      "mv-marvel-illustrated-last-of-mohicans-2008-nn",
+      "Marvel Illustrated: Last of the Mohicans",
+      "[nn]",
+      "Marvel Comics",
+      "2008-03-12",
+      "",
+      "",
+      "Marvel Illustrated: The Last of the Mohicans #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078512443651999",
+        "streetDate": "2008-03-12",
+        "gcdIssueId": "762815"
+      }
+    ],
+    [
+      "mv-x-necrosha-2010-nn",
+      "X-Necrosha",
+      "[nn]",
+      "Marvel Comics",
+      "2010-06-30",
+      "",
+      "",
+      "X-Necrosha #[nn]",
+      39.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078514674253999",
+        "streetDate": "2010-06-30",
+        "gcdIssueId": "791885"
+      }
+    ],
+    [
+      "mv-captain-america-man-out-of-time-2011-nn",
+      "Captain America: Man Out of Time",
+      "[nn]",
+      "Marvel Comics",
+      "2011-05-25",
+      "",
+      "",
+      "Captain America: Man Out of Time #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078515128951999",
+        "streetDate": "2011-05-25",
+        "gcdIssueId": "852238"
+      }
+    ],
+    [
+      "mv-punisher-war-zone-2009-nn",
+      "Punisher: War Zone",
+      "[nn]",
+      "Marvel Comics",
+      "2009-08-12",
+      "",
+      "",
+      "Punisher: War Zone #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078513260851999",
+        "streetDate": "2009-08-12",
+        "gcdIssueId": "945610"
+      }
+    ],
+    [
+      "mv-torch-2010-nn",
+      "The Torch",
+      "[nn]",
+      "Marvel Comics",
+      "2010-01-01",
+      "",
+      "",
+      "The Torch #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "streetDate": "2010-01-01",
+        "gcdIssueId": "1105164"
+      }
+    ],
+    [
+      "mv-supreme-power-nighthawk-2009-nn",
+      "Supreme Power: Nighthawk",
+      "[nn]",
+      "Marvel Comics",
+      "2009-10-07",
+      "",
+      "",
+      "Supreme Power: Nighthawk #[nn]",
+      24.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078513775752499",
+        "streetDate": "2009-10-07",
+        "gcdIssueId": "996441"
+      }
+    ],
+    [
+      "mv-all-new-x-men-2013-13",
+      "All-New X-Men",
+      "13",
+      "Marvel Comics",
+      "2013-08-01",
+      "",
+      "",
+      "All-New X-Men #13",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "75960607900101311",
+        "streetDate": "2013-06-26",
+        "gcdIssueId": "1123994"
+      }
+    ],
+    [
+      "mv-x-men-manifest-destiny-2009-nn",
+      "X-Men: Manifest Destiny",
+      "[nn]",
+      "Marvel Comics",
+      "2009-05-13",
+      "",
+      "",
+      "X-Men: Manifest Destiny #[nn]",
+      29.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078513818152999",
+        "streetDate": "2009-05-13",
+        "gcdIssueId": "1036296"
+      }
+    ],
+    [
+      "mv-shanna-she-devil-2006-nn",
+      "Shanna, the She-Devil (2005)",
+      "[nn]",
+      "Marvel Comics",
+      "2006-11-08",
+      "",
+      "",
+      "Shanna the She-Devil #[nn]",
+      16.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078511038551699",
+        "streetDate": "2006-11-08",
+        "gcdIssueId": "1093469"
+      }
+    ],
+    [
+      "mv-fantastic-four-1234-2011-nn",
+      "Fantastic Four: 1234",
+      "[nn]",
+      "Marvel Comics",
+      "2011-10-05",
+      "",
+      "",
+      "Fantastic Four: 1234 #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078515896751999",
+        "streetDate": "2011-10-05",
+        "gcdIssueId": "1109051"
+      }
+    ],
+    [
+      "mv-stt-2010-nn",
+      "Strange Tales",
+      "[nn]",
+      "Marvel Comics",
+      "2010-08-18",
+      "",
+      "",
+      "Strange Tales #[nn]",
+      24.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078512802152499",
+        "streetDate": "2010-08-18",
+        "gcdIssueId": "1124037"
+      }
+    ],
+    [
+      "mv-punishermax-kingpin-2010-nn",
+      "PunisherMax: Kingpin",
+      "[nn]",
+      "Marvel Comics",
+      "2010-06-16",
+      "",
+      "",
+      "PunisherMax: Kingpin #[nn]",
+      24.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078514596752499",
+        "streetDate": "2010-06-16",
+        "gcdIssueId": "1130471"
+      }
+    ],
+    [
+      "mv-x-men-noir-2009-nn",
+      "X-Men Noir",
+      "[nn]",
+      "Marvel Comics",
+      "2009-06-10",
+      "",
+      "",
+      "X-Men Noir #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078513946151999",
+        "streetDate": "2009-06-10",
+        "gcdIssueId": "1146694"
+      }
+    ],
+    [
+      "mv-x-men-noir-mark-of-cain-2010-nn",
+      "X-Men Noir: Mark of Cain",
+      "[nn]",
+      "Marvel Comics",
+      "2010-06-23",
+      "",
+      "",
+      "X-Men Noir: Mark of Cain #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078514275151999",
+        "streetDate": "2010-06-23",
+        "gcdIssueId": "1146739"
+      }
+    ],
+    [
+      "mv-spider-man-noir-eyes-without-face-2010-nn",
+      "Spider-Man Noir: Eyes Without a Face",
+      "[nn]",
+      "Marvel Comics",
+      "2010-06-02",
+      "",
+      "",
+      "Spider-Man Noir: Eyes Without a Face #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078514444151999",
+        "streetDate": "2010-06-02",
+        "gcdIssueId": "1148200"
+      }
+    ],
+    [
+      "mv-daken-dark-wolverine-empire-2011-nn",
+      "Daken: Dark Wolverine - Empire",
+      "[nn]",
+      "Marvel Comics",
+      "2011-02-09",
+      "",
+      "",
+      "Empire",
+      24.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078514705352499",
+        "streetDate": "2011-02-09",
+        "gcdIssueId": "1175392"
+      }
+    ],
+    [
+      "mv-siege-embedded-2010-nn",
+      "Siege: Embedded",
+      "[nn]",
+      "Marvel Comics",
+      "2010-07-21",
+      "",
+      "",
+      "Siege: Embedded #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078514764051999",
+        "streetDate": "2010-07-21",
+        "gcdIssueId": "1204295"
+      }
+    ],
+    [
+      "mv-astonishing-spider-man-wolverine-2012-nn",
+      "Astonishing Spider-Man & Wolverine",
+      "[nn]",
+      "Marvel Comics",
+      "2012-01-25",
+      "",
+      "",
+      "Astonishing Spider-Man & Wolverine #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078514080151999",
+        "streetDate": "2012-01-25",
+        "gcdIssueId": "1211725"
+      }
+    ],
+    [
+      "mv-fear-itself-fearless-2012-nn",
+      "Fear Itself: The Fearless",
+      "[nn]",
+      "Marvel Comics",
+      "2012-07-04",
+      "",
+      "",
+      "Fear Itself: The Fearless #[nn]",
+      34.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078516343553499",
+        "streetDate": "2012-07-04",
+        "gcdIssueId": "1213028"
+      }
+    ],
+    [
+      "mv-destroyer-2009-nn",
+      "The Destroyer",
+      "[nn]",
+      "Marvel Comics",
+      "2009-11-18",
+      "",
+      "",
+      "Destroyer #[nn]",
+      24.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078514246152499",
+        "streetDate": "2009-11-18",
+        "gcdIssueId": "1262086"
+      }
+    ],
+    [
+      "mv-life-of-captain-marvel-2019-nn",
+      "The Life of Captain Marvel (2018)",
+      "[nn]",
+      "Marvel Comics",
+      "2019-01-01",
+      "",
+      "",
+      "The Life of Captain Marvel #[nn]",
+      24.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978130292122452499",
+        "streetDate": "2020-12-20",
+        "gcdIssueId": "2268299"
+      }
+    ],
+    [
+      "mv-inferno-2022-nn",
+      "Inferno (2021)",
+      "[nn]",
+      "Marvel Comics",
+      "2022-12-07",
+      "",
+      "",
+      "Inferno #[nn]",
+      34.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978130293282453499",
+        "streetDate": "2022-12-07",
+        "gcdIssueId": "2460408"
+      }
+    ],
+    [
+      "mv-george-romero-s-empire-of-dead-2015-2015-nn",
+      "George Romero's Empire of the Dead: Act Two",
+      "[nn]",
+      "Marvel Comics",
+      "2015-03-11",
+      "",
+      "",
+      "George Romero's Empire of the Dead: Act Two #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078518519251999",
+        "streetDate": "2015-03-11",
+        "gcdIssueId": "2587814"
+      }
+    ],
+    [
+      "mv-halo-fall-of-reach-boot-camp-2011-nn",
+      "Halo: Fall of Reach - Boot Camp",
+      "[nn]",
+      "Marvel Comics",
+      "2011-01-01",
+      "",
+      "",
+      "Halo: Fall of Reach - Boot Camp #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "gcdIssueId": "2754819"
+      }
+    ],
+    [
+      "mv-spider-man-and-fantastic-four-2011-nn",
+      "Spider-Man and the Fantastic Four",
+      "[nn]",
+      "Marvel Comics",
+      "2011-01-01",
+      "",
+      "",
+      "Spider-Man and the Fantastic Four #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "gcdIssueId": "2760277"
+      }
+    ],
+    [
+      "mv-spider-man-secret-wars-2009-nn",
+      "Spider-Man & the Secret Wars (2010)",
+      "[nn]",
+      "Marvel Comics",
+      "2009-01-01",
+      "",
+      "",
+      "Spider-Man & the Secret Wars #[nn]",
+      7.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "upc": "978078515345050799",
+        "gcdIssueId": "2800132"
+      }
+    ],
+    [
+      "mv-onslaught-reborn-2008-nn",
+      "Onslaught Reborn",
+      "[nn]",
+      "Marvel Comics",
+      "2008-01-01",
+      "",
+      "",
+      "Onslaught Reborn #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "gcdIssueId": "2851744"
+      }
+    ],
+    [
+      "mv-captain-america-chosen-2008-nn",
+      "Captain America: The Chosen",
+      "[nn]",
+      "Marvel Comics",
+      "2008-01-01",
+      "",
+      "",
+      "Captain America: The Chosen #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,1e3a8a,f8fafc",
+      {
+        "gcdIssueId": "2855151"
+      }
+    ],
+    [
+      "im-twd-2004-12",
+      "The Walking Dead",
+      "12",
+      "Image Comics",
+      "2004-09-01",
+      "",
+      "",
+      "The Walking Dead #12",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073001211",
+        "gcdIssueId": "260215"
+      }
+    ],
+    [
+      "im-twd-2004-13",
+      "The Walking Dead",
+      "13",
+      "Image Comics",
+      "2004-10-01",
+      "",
+      "",
+      "The Walking Dead #13",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073001311",
+        "gcdIssueId": "260216"
+      }
+    ],
+    [
+      "im-twd-2004-14",
+      "The Walking Dead",
+      "14",
+      "Image Comics",
+      "2004-11-01",
+      "",
+      "",
+      "The Walking Dead #14",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073001411",
+        "gcdIssueId": "260217"
+      }
+    ],
+    [
+      "im-twd-2005-15",
+      "The Walking Dead",
+      "15",
+      "Image Comics",
+      "2005-01-01",
+      "",
+      "",
+      "The Walking Dead #15",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073001511",
+        "gcdIssueId": "260218"
+      }
+    ],
+    [
+      "im-twd-2005-16",
+      "The Walking Dead",
+      "16",
+      "Image Comics",
+      "2005-02-01",
+      "",
+      "",
+      "The Walking Dead #16",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073001611",
+        "gcdIssueId": "260219"
+      }
+    ],
+    [
+      "im-twd-2005-22",
+      "The Walking Dead",
+      "22",
+      "Image Comics",
+      "2005-10-01",
+      "",
+      "",
+      "The Walking Dead #22",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073002211",
+        "gcdIssueId": "260225"
+      }
+    ],
+    [
+      "im-twd-2005-23",
+      "The Walking Dead",
+      "23",
+      "Image Comics",
+      "2005-11-01",
+      "",
+      "",
+      "The Walking Dead #23",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073002311",
+        "gcdIssueId": "260226"
+      }
+    ],
+    [
+      "im-twd-2005-24",
+      "The Walking Dead",
+      "24",
+      "Image Comics",
+      "2005-11-01",
+      "",
+      "",
+      "The Walking Dead #24",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073002411",
+        "gcdIssueId": "338493"
+      }
+    ],
+    [
+      "im-twd-2006-25",
+      "The Walking Dead",
+      "25",
+      "Image Comics",
+      "2006-01-01",
+      "",
+      "",
+      "The Walking Dead #25",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073002511",
+        "gcdIssueId": "338494"
+      }
+    ],
+    [
+      "im-twd-2006-26",
+      "The Walking Dead",
+      "26",
+      "Image Comics",
+      "2006-03-01",
+      "",
+      "",
+      "The Walking Dead #26",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073002611",
+        "gcdIssueId": "338495"
+      }
+    ],
+    [
+      "im-twd-2006-27",
+      "The Walking Dead",
+      "27",
+      "Image Comics",
+      "2006-04-01",
+      "",
+      "",
+      "The Walking Dead #27",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073002711",
+        "gcdIssueId": "338496"
+      }
+    ],
+    [
+      "im-twd-2006-28",
+      "The Walking Dead",
+      "28",
+      "Image Comics",
+      "2006-05-01",
+      "",
+      "",
+      "The Walking Dead #28",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073002811",
+        "gcdIssueId": "338497"
+      }
+    ],
+    [
+      "im-twd-2006-29",
+      "The Walking Dead",
+      "29",
+      "Image Comics",
+      "2006-06-01",
+      "",
+      "",
+      "The Walking Dead #29",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073002911",
+        "gcdIssueId": "338498"
+      }
+    ],
+    [
+      "im-twd-2006-30",
+      "The Walking Dead",
+      "30",
+      "Image Comics",
+      "2006-08-01",
+      "",
+      "",
+      "The Walking Dead #30",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073003011",
+        "gcdIssueId": "338499"
+      }
+    ],
+    [
+      "im-twd-2006-31",
+      "The Walking Dead",
+      "31",
+      "Image Comics",
+      "2006-09-01",
+      "",
+      "",
+      "The Walking Dead #31",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073003111",
+        "gcdIssueId": "371321"
+      }
+    ],
+    [
+      "im-twd-2006-32",
+      "The Walking Dead",
+      "32",
+      "Image Comics",
+      "2006-11-01",
+      "",
+      "",
+      "The Walking Dead #32",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300073003211",
+        "gcdIssueId": "371322"
+      }
+    ],
+    [
+      "im-sd-1993-4",
+      "Savage Dragon",
+      "4",
+      "Image Comics",
+      "1993-09-01",
+      "",
+      "",
+      "Savage Dragon #4",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "53604"
+      }
+    ],
+    [
+      "im-sd-1993-5",
+      "Savage Dragon",
+      "5",
+      "Image Comics",
+      "1993-10-01",
+      "",
+      "",
+      "Savage Dragon #5",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "53772"
+      }
+    ],
+    [
+      "im-sd-1995-18",
+      "Savage Dragon",
+      "18",
+      "Image Comics",
+      "1995-03-01",
+      "",
+      "",
+      "Savage Dragon #18",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "56724"
+      }
+    ],
+    [
+      "im-witchblade-1996-2",
+      "Witchblade",
+      "2",
+      "Image / Top Cow",
+      "1996-01-01",
+      "",
+      "",
+      "Witchblade #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "69630"
+      }
+    ],
+    [
+      "im-witchblade-1996-3",
+      "Witchblade",
+      "3",
+      "Image / Top Cow",
+      "1996-03-01",
+      "",
+      "",
+      "Witchblade #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "69631"
+      }
+    ],
+    [
+      "im-witchblade-1996-4",
+      "Witchblade",
+      "4",
+      "Image / Top Cow",
+      "1996-04-01",
+      "",
+      "",
+      "Witchblade #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "69632"
+      }
+    ],
+    [
+      "im-witchblade-1996-5",
+      "Witchblade",
+      "5",
+      "Image / Top Cow",
+      "1996-05-01",
+      "",
+      "",
+      "Witchblade #5",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "69633"
+      }
+    ],
+    [
+      "im-witchblade-1996-7",
+      "Witchblade",
+      "7",
+      "Image / Top Cow",
+      "1996-07-01",
+      "",
+      "",
+      "Witchblade #7",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "69635"
+      }
+    ],
+    [
+      "im-witchblade-1997-12",
+      "Witchblade",
+      "12",
+      "Image / Top Cow",
+      "1997-03-01",
+      "",
+      "",
+      "Witchblade #12",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "69650"
+      }
+    ],
+    [
+      "im-witchblade-1997-16",
+      "Witchblade",
+      "16",
+      "Image / Top Cow",
+      "1997-08-01",
+      "",
+      "",
+      "Witchblade #16",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "69654"
+      }
+    ],
+    [
+      "im-witchblade-1998-20",
+      "Witchblade",
+      "20",
+      "Image / Top Cow",
+      "1998-02-01",
+      "",
+      "",
+      "Witchblade #20",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "69658"
+      }
+    ],
+    [
+      "im-witchblade-1998-21",
+      "Witchblade",
+      "21",
+      "Image / Top Cow",
+      "1998-03-01",
+      "",
+      "",
+      "Witchblade #21",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "69659"
+      }
+    ],
+    [
+      "im-witchblade-1998-22",
+      "Witchblade",
+      "22",
+      "Image / Top Cow",
+      "1998-05-01",
+      "",
+      "",
+      "Witchblade #22",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "1998-01-01",
+        "gcdIssueId": "69660"
+      }
+    ],
+    [
+      "im-darkness-1997-2",
+      "The Darkness",
+      "2",
+      "Image / Top Cow",
+      "1997-01-10",
+      "",
+      "",
+      "The Darkness #2",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "59810"
+      }
+    ],
+    [
+      "im-darkness-1997-3",
+      "The Darkness",
+      "3",
+      "Image / Top Cow",
+      "1997-03-01",
+      "",
+      "",
+      "The Darkness #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "60047"
+      }
+    ],
+    [
+      "im-darkness-1997-4",
+      "The Darkness",
+      "4",
+      "Image / Top Cow",
+      "1997-05-01",
+      "",
+      "",
+      "The Darkness #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "60276"
+      }
+    ],
+    [
+      "im-darkness-1997-5",
+      "The Darkness",
+      "5",
+      "Image / Top Cow",
+      "1997-06-01",
+      "",
+      "",
+      "The Darkness #5",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "60381"
+      }
+    ],
+    [
+      "im-darkness-1997-6",
+      "The Darkness",
+      "6",
+      "Image / Top Cow",
+      "1997-07-01",
+      "",
+      "",
+      "The Darkness #6",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "60494"
+      }
+    ],
+    [
+      "im-darkness-1998-13",
+      "The Darkness",
+      "13",
+      "Image / Top Cow",
+      "1998-03-01",
+      "",
+      "",
+      "The Darkness #13",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "124064"
+      }
+    ],
+    [
+      "im-darkness-1998-14",
+      "The Darkness",
+      "14",
+      "Image / Top Cow",
+      "1998-04-01",
+      "",
+      "",
+      "The Darkness #14",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "124065"
+      }
+    ],
+    [
+      "im-darkness-1998-16",
+      "The Darkness",
+      "16",
+      "Image / Top Cow",
+      "1998-07-01",
+      "",
+      "",
+      "The Darkness #16",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "124067"
+      }
+    ],
+    [
+      "im-darkness-1999-23",
+      "The Darkness",
+      "23",
+      "Image / Top Cow",
+      "1999-07-01",
+      "",
+      "",
+      "The Darkness #23",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985307603202311",
+        "gcdIssueId": "124074"
+      }
+    ],
+    [
+      "im-noble-causes-2006-5",
+      "Noble Causes",
+      "5",
+      "Image",
+      "2006-01-01",
+      "",
+      "",
+      "Betrayals",
+      14.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "978158240578001499",
+        "gcdIssueId": "1043390"
+      }
+    ],
+    [
+      "im-noble-causes-2006-6",
+      "Noble Causes",
+      "6",
+      "Image",
+      "2006-11-01",
+      "",
+      "",
+      "Hidden Agendas",
+      15.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "978158240706751599",
+        "gcdIssueId": "1043391"
+      }
+    ],
+    [
+      "im-noble-causes-2007-7",
+      "Noble Causes",
+      "7",
+      "Image",
+      "2007-10-10",
+      "",
+      "",
+      "Powerless",
+      15.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "978158240848451599",
+        "streetDate": "2007-10-10",
+        "gcdIssueId": "1043392"
+      }
+    ],
+    [
+      "im-noble-causes-2008-8",
+      "Noble Causes",
+      "8",
+      "Image",
+      "2008-12-01",
+      "",
+      "",
+      "Star-Crossed",
+      15.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "978160706038351599",
+        "gcdIssueId": "1043393"
+      }
+    ],
+    [
+      "im-noble-causes-2009-9",
+      "Noble Causes",
+      "9",
+      "Image",
+      "2009-12-01",
+      "",
+      "",
+      "Five Years Later",
+      14.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "978160706162551499",
+        "gcdIssueId": "1043394"
+      }
+    ],
+    [
+      "im-noble-causes-2010-10",
+      "Noble Causes",
+      "10",
+      "Image",
+      "2010-08-01",
+      "",
+      "",
+      "Ever After",
+      12.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "978160706297451299",
+        "gcdIssueId": "1043388"
+      }
+    ],
+    [
+      "im-lazarus-2013-3",
+      "Lazarus (2013)",
+      "3",
+      "Image",
+      "2013-08-01",
+      "",
+      "",
+      "Lazarus #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301364800311",
+        "streetDate": "2013-08-28",
+        "gcdIssueId": "1139366"
+      }
+    ],
+    [
+      "im-lazarus-2013-5",
+      "Lazarus (2013)",
+      "5",
+      "Image",
+      "2013-12-01",
+      "",
+      "",
+      "Lazarus #5",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301364800511",
+        "streetDate": "2013-12-11",
+        "gcdIssueId": "1168367"
+      }
+    ],
+    [
+      "im-lazarus-2014-6",
+      "Lazarus (2013)",
+      "6",
+      "Image",
+      "2014-02-01",
+      "",
+      "",
+      "Lazarus #6",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301364800611",
+        "streetDate": "2014-02-05",
+        "gcdIssueId": "1177649"
+      }
+    ],
+    [
+      "im-lazarus-2014-7",
+      "Lazarus (2013)",
+      "7",
+      "Image",
+      "2014-03-01",
+      "",
+      "",
+      "Lazarus #7",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301364800711",
+        "streetDate": "2014-03-19",
+        "gcdIssueId": "1189749"
+      }
+    ],
+    [
+      "im-lazarus-2014-8",
+      "Lazarus (2013)",
+      "8",
+      "Image",
+      "2014-04-01",
+      "",
+      "",
+      "Lazarus #8",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301364800811",
+        "streetDate": "2014-04-23",
+        "gcdIssueId": "1198555"
+      }
+    ],
+    [
+      "im-descender-2016-2",
+      "Descender",
+      "2",
+      "Image Comics",
+      "2016-05-04",
+      "",
+      "",
+      "Machine Moon",
+      14.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "978163215676151499",
+        "streetDate": "2016-05-04",
+        "gcdIssueId": "1775469"
+      }
+    ],
+    [
+      "im-birthright-2014-3",
+      "Birthright",
+      "3",
+      "Image",
+      "2014-12-01",
+      "",
+      "",
+      "Birthright #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301715800311",
+        "streetDate": "2014-12-03",
+        "gcdIssueId": "1287858"
+      }
+    ],
+    [
+      "im-birthright-2015-5",
+      "Birthright",
+      "5",
+      "Image",
+      "2015-02-01",
+      "",
+      "",
+      "Birthright #5",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301715800511",
+        "streetDate": "2015-01-01",
+        "gcdIssueId": "1324390"
+      }
+    ],
+    [
+      "im-birthright-2015-6",
+      "Birthright",
+      "6",
+      "Image",
+      "2015-04-08",
+      "",
+      "",
+      "Birthright #6",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301715800611",
+        "streetDate": "2015-04-08",
+        "gcdIssueId": "1339818"
+      }
+    ],
+    [
+      "im-firebreather-2003-2",
+      "Firebreather (2004)",
+      "2",
+      "Image",
+      "2003-02-01",
+      "",
+      "",
+      "Firebreather #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985310505300211",
+        "gcdIssueId": "747790"
+      }
+    ],
+    [
+      "im-firebreather-2003-3",
+      "Firebreather (2004)",
+      "3",
+      "Image",
+      "2003-03-01",
+      "",
+      "",
+      "Firebreather #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985310505300311",
+        "gcdIssueId": "747791"
+      }
+    ],
+    [
+      "im-firebreather-2003-4",
+      "Firebreather (2004)",
+      "4",
+      "Image",
+      "2003-04-01",
+      "",
+      "",
+      "Firebreather #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985310505300411",
+        "gcdIssueId": "747792"
+      }
+    ],
+    [
+      "im-morning-glories-2011-7",
+      "Morning Glories",
+      "7",
+      "Image",
+      "2011-02-01",
+      "",
+      "",
+      "Morning Glories #7",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "2011-02-23",
+        "gcdIssueId": "808060"
+      }
+    ],
+    [
+      "im-morning-glories-2011-8",
+      "Morning Glories",
+      "8",
+      "Image",
+      "2011-03-01",
+      "",
+      "",
+      "Morning Glories #8",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "2011-03-16",
+        "gcdIssueId": "814197"
+      }
+    ],
+    [
+      "im-morning-glories-2011-9",
+      "Morning Glories",
+      "9",
+      "Image",
+      "2011-04-01",
+      "",
+      "",
+      "Morning Glories #9",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "2011-04-27",
+        "gcdIssueId": "824310"
+      }
+    ],
+    [
+      "im-morning-glories-2011-10",
+      "Morning Glories",
+      "10",
+      "Image",
+      "2011-06-01",
+      "",
+      "",
+      "Morning Glories #10",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "2011-06-08",
+        "gcdIssueId": "846855"
+      }
+    ],
+    [
+      "im-sex-2013-3",
+      "Sex",
+      "3",
+      "Image",
+      "2013-05-01",
+      "",
+      "",
+      "Sex #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "2013-05-22",
+        "gcdIssueId": "1115098"
+      }
+    ],
+    [
+      "im-sex-2013-4",
+      "Sex",
+      "4",
+      "Image",
+      "2013-06-01",
+      "",
+      "",
+      "Sex #4",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "2013-06-26",
+        "gcdIssueId": "1123929"
+      }
+    ],
+    [
+      "im-sex-2013-5",
+      "Sex",
+      "5",
+      "Image",
+      "2013-07-01",
+      "",
+      "",
+      "Sex #5",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "2013-07-31",
+        "gcdIssueId": "1132450"
+      }
+    ],
+    [
+      "im-sex-2013-6",
+      "Sex",
+      "6",
+      "Image",
+      "2013-08-01",
+      "",
+      "",
+      "Sex #6",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "2013-08-28",
+        "gcdIssueId": "1139395"
+      }
+    ],
+    [
+      "im-death-jr-2005-3",
+      "Death, Jr. (2005)",
+      "3",
+      "Image",
+      "2005-08-31",
+      "",
+      "",
+      "Death, Jr. #3",
+      4.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300284000311",
+        "streetDate": "2005-08-31",
+        "gcdIssueId": "538923"
+      }
+    ],
+    [
+      "im-chew-2010-10",
+      "Chew",
+      "10",
+      "Image Comics",
+      "2010-04-14",
+      "",
+      "",
+      "Chew #10",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300808801011",
+        "streetDate": "2010-04-14",
+        "gcdIssueId": "745766"
+      }
+    ],
+    [
+      "im-chew-2010-11",
+      "Chew",
+      "11",
+      "Image Comics",
+      "2010-06-01",
+      "",
+      "",
+      "Chew #11",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "2010-06-09",
+        "gcdIssueId": "760865"
+      }
+    ],
+    [
+      "im-skullkickers-2010-4",
+      "Skullkickers",
+      "4",
+      "Image",
+      "2010-12-22",
+      "",
+      "",
+      "Skullkickers #4",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "2010-12-22",
+        "gcdIssueId": "794318"
+      }
+    ],
+    [
+      "im-skullkickers-2011-5",
+      "Skullkickers",
+      "5",
+      "Image",
+      "2011-01-26",
+      "",
+      "",
+      "Skullkickers #5",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "2011-01-26",
+        "gcdIssueId": "799486"
+      }
+    ],
+    [
+      "im-skullkickers-2011-6",
+      "Skullkickers",
+      "6",
+      "Image",
+      "2011-02-01",
+      "",
+      "",
+      "Skullkickers #6",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "2011-02-23",
+        "gcdIssueId": "808062"
+      }
+    ],
+    [
+      "im-alex-ada-2013-2",
+      "Alex + Ada",
+      "2",
+      "Image",
+      "2013-12-01",
+      "",
+      "",
+      "Alex + Ada #2",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301507900211",
+        "streetDate": "2013-12-11",
+        "gcdIssueId": "1168384"
+      }
+    ],
+    [
+      "im-trees-2014-2",
+      "Trees",
+      "2",
+      "Image",
+      "2014-06-01",
+      "",
+      "",
+      "Trees #2",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301628100211",
+        "streetDate": "2014-06-25",
+        "gcdIssueId": "1216238"
+      }
+    ],
+    [
+      "im-trees-2014-3",
+      "Trees",
+      "3",
+      "Image",
+      "2014-07-01",
+      "",
+      "",
+      "Trees #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301628100311",
+        "streetDate": "2014-07-23",
+        "gcdIssueId": "1244872"
+      }
+    ],
+    [
+      "im-shutter-2014-3",
+      "Shutter",
+      "3",
+      "Image",
+      "2014-06-01",
+      "",
+      "",
+      "Shutter #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301600700311",
+        "streetDate": "2014-06-11",
+        "gcdIssueId": "1212847"
+      }
+    ],
+    [
+      "im-shutter-2014-4",
+      "Shutter",
+      "4",
+      "Image",
+      "2014-07-01",
+      "",
+      "",
+      "Shutter #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301600700411",
+        "streetDate": "2014-07-09",
+        "gcdIssueId": "1236838"
+      }
+    ],
+    [
+      "im-shutter-2014-5",
+      "Shutter",
+      "5",
+      "Image",
+      "2014-08-01",
+      "",
+      "",
+      "Shutter #5",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301600700511",
+        "streetDate": "2014-08-13",
+        "gcdIssueId": "1246783"
+      }
+    ],
+    [
+      "im-spread-2014-3",
+      "Spread",
+      "3",
+      "Image",
+      "2014-09-01",
+      "",
+      "",
+      "Spread #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301661800311",
+        "streetDate": "2014-09-10",
+        "gcdIssueId": "1251451"
+      }
+    ],
+    [
+      "im-spread-2014-4",
+      "Spread",
+      "4",
+      "Image",
+      "2014-11-05",
+      "",
+      "",
+      "Spread #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301661800411",
+        "streetDate": "2014-11-05",
+        "gcdIssueId": "1273199"
+      }
+    ],
+    [
+      "im-spread-2015-5",
+      "Spread",
+      "5",
+      "Image",
+      "2015-01-21",
+      "",
+      "",
+      "Spread #5",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301661800511",
+        "streetDate": "2015-01-21",
+        "gcdIssueId": "1309457"
+      }
+    ],
+    [
+      "im-low-2014-3",
+      "Low",
+      "3",
+      "Image",
+      "2014-09-01",
+      "",
+      "",
+      "Low #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301657100311",
+        "streetDate": "2014-09-24",
+        "gcdIssueId": "1256173"
+      }
+    ],
+    [
+      "im-low-2014-4",
+      "Low",
+      "4",
+      "Image",
+      "2014-10-01",
+      "",
+      "",
+      "Low #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301657100411",
+        "streetDate": "2014-10-29",
+        "gcdIssueId": "1267461"
+      }
+    ],
+    [
+      "im-low-2014-5",
+      "Low",
+      "5",
+      "Image",
+      "2014-12-01",
+      "",
+      "",
+      "Low #5",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301657100511",
+        "streetDate": "2014-12-03",
+        "gcdIssueId": "1287863"
+      }
+    ],
+    [
+      "im-rumble-2015-4",
+      "Rumble",
+      "4",
+      "Image",
+      "2015-03-25",
+      "",
+      "",
+      "Rumble #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301781300411",
+        "streetDate": "2015-03-25",
+        "gcdIssueId": "1333431"
+      }
+    ],
+    [
+      "im-mage-1997-1",
+      "Mage",
+      "1",
+      "Image",
+      "1997-07-01",
+      "",
+      "",
+      "Mage #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985313001700111",
+        "gcdIssueId": "60522"
+      }
+    ],
+    [
+      "im-mage-1997-2",
+      "Mage",
+      "2",
+      "Image",
+      "1997-08-01",
+      "",
+      "",
+      "Mage #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985313001700211",
+        "gcdIssueId": "60634"
+      }
+    ],
+    [
+      "im-satellite-sam-2013-3",
+      "Satellite Sam",
+      "3",
+      "Image",
+      "2013-09-01",
+      "",
+      "",
+      "Satellite Sam #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301368600311",
+        "streetDate": "2013-09-04",
+        "gcdIssueId": "1140369"
+      }
+    ],
+    [
+      "im-pretty-deadly-2013-2",
+      "Pretty Deadly",
+      "2",
+      "Image",
+      "2013-11-01",
+      "",
+      "",
+      "Pretty Deadly #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301445400211",
+        "streetDate": "2013-11-27",
+        "gcdIssueId": "1164963"
+      }
+    ],
+    [
+      "im-pretty-deadly-2013-3",
+      "Pretty Deadly",
+      "3",
+      "Image",
+      "2013-12-01",
+      "",
+      "",
+      "Pretty Deadly #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301445400311",
+        "streetDate": "2013-12-18",
+        "gcdIssueId": "1170960"
+      }
+    ],
+    [
+      "im-velvet-2013-2",
+      "Velvet",
+      "2",
+      "Image",
+      "2013-12-01",
+      "",
+      "",
+      "Velvet #2",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301446100211",
+        "streetDate": "2013-12-04",
+        "gcdIssueId": "1165657"
+      }
+    ],
+    [
+      "im-velvet-2014-3",
+      "Velvet",
+      "3",
+      "Image",
+      "2014-01-01",
+      "",
+      "",
+      "Velvet #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301446100311",
+        "streetDate": "2014-01-15",
+        "gcdIssueId": "1173584"
+      }
+    ],
+    [
+      "im-southern-bastards-2014-4",
+      "Southern Bastards",
+      "4",
+      "Image",
+      "2014-09-03",
+      "",
+      "",
+      "Southern Bastards #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301598700411",
+        "streetDate": "2014-09-03",
+        "gcdIssueId": "1249528"
+      }
+    ],
+    [
+      "im-copperhead-2014-3",
+      "Copperhead",
+      "3",
+      "Image",
+      "2014-11-01",
+      "",
+      "",
+      "Copperhead #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301704200311",
+        "streetDate": "2014-11-12",
+        "gcdIssueId": "1279780"
+      }
+    ],
+    [
+      "im-copperhead-2014-4",
+      "Copperhead",
+      "4",
+      "Image",
+      "2014-12-01",
+      "",
+      "",
+      "Copperhead #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301704200411",
+        "streetDate": "2014-12-10",
+        "gcdIssueId": "1288578"
+      }
+    ],
+    [
+      "im-astounding-wolf-man-2007-4",
+      "The Astounding Wolf-Man",
+      "4",
+      "Image",
+      "2007-12-12",
+      "",
+      "",
+      "The Astounding Wolf-Man #4",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300486800411",
+        "streetDate": "2007-12-12",
+        "gcdIssueId": "394910"
+      }
+    ],
+    [
+      "im-wanted-2005-nn",
+      "Wanted",
+      "[nn]",
+      "Top Cow / Image",
+      "2005-05-01",
+      "",
+      "",
+      "Wanted #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "9781582404806",
+        "gcdIssueId": "538798"
+      }
+    ],
+    [
+      "im-witchblade-1996-1-2",
+      "Witchblade",
+      "1/2",
+      "Image / Top Cow",
+      "1996-02-01",
+      "",
+      "",
+      "Witchblade #1/2",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "1996-01-01",
+        "gcdIssueId": "744721"
+      }
+    ],
+    [
+      "im-thief-of-thieves-2012-3",
+      "Thief of Thieves",
+      "3",
+      "Image",
+      "2012-04-01",
+      "",
+      "",
+      "Thief of Thieves #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301159000311",
+        "streetDate": "2012-04-11",
+        "gcdIssueId": "936529"
+      }
+    ],
+    [
+      "im-peter-panzerfaust-2012-5",
+      "Peter Panzerfaust",
+      "5",
+      "Image",
+      "2012-07-01",
+      "",
+      "",
+      "Peter Panzerfaust #5",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301163700511",
+        "streetDate": "2012-07-11",
+        "gcdIssueId": "957573"
+      }
+    ],
+    [
+      "im-revival-2013-8",
+      "Revival",
+      "8",
+      "Image",
+      "2013-03-01",
+      "",
+      "",
+      "Revival #8",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301207800811",
+        "streetDate": "2013-03-20",
+        "gcdIssueId": "1095393"
+      }
+    ],
+    [
+      "im-ghosted-2013-4",
+      "Ghosted",
+      "4",
+      "Image",
+      "2013-10-01",
+      "",
+      "",
+      "Ghosted #4",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301369300411",
+        "streetDate": "2013-10-09",
+        "gcdIssueId": "1145531"
+      }
+    ],
+    [
+      "im-rocket-girl-2013-2",
+      "Rocket Girl",
+      "2",
+      "Image",
+      "2013-11-01",
+      "",
+      "",
+      "Rocket Girl #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301485000211",
+        "streetDate": "2013-11-13",
+        "gcdIssueId": "1158676"
+      }
+    ],
+    [
+      "im-egos-2014-2",
+      "EGOs",
+      "2",
+      "Image",
+      "2014-02-01",
+      "",
+      "",
+      "EGOs #2",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301550500211",
+        "streetDate": "2014-02-12",
+        "gcdIssueId": "1179236"
+      }
+    ],
+    [
+      "im-fuse-2014-4",
+      "The Fuse",
+      "4",
+      "Image",
+      "2014-05-01",
+      "",
+      "",
+      "The Fuse #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301559800411",
+        "streetDate": "2014-05-28",
+        "gcdIssueId": "1208427"
+      }
+    ],
+    [
+      "im-manifest-destiny-2014-8",
+      "Manifest Destiny",
+      "8",
+      "Image",
+      "2014-07-01",
+      "",
+      "",
+      "Manifest Destiny #8",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301510900811",
+        "streetDate": "2014-07-16",
+        "gcdIssueId": "1243261"
+      }
+    ],
+    [
+      "im-fade-out-2014-3",
+      "The Fade Out",
+      "3",
+      "Image",
+      "2014-11-12",
+      "",
+      "",
+      "The Fade Out #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301690800311",
+        "streetDate": "2014-11-12",
+        "gcdIssueId": "1279781"
+      }
+    ],
+    [
+      "im-rasputin-2014-2",
+      "Rasputin",
+      "2",
+      "Image",
+      "2014-11-01",
+      "",
+      "",
+      "Rasputin #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301714100211",
+        "streetDate": "2014-11-26",
+        "gcdIssueId": "1284525"
+      }
+    ],
+    [
+      "im-humans-2014-2",
+      "The Humans",
+      "2",
+      "Image",
+      "2014-12-01",
+      "",
+      "",
+      "The Humans #2",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301760800211",
+        "streetDate": "2014-12-03",
+        "gcdIssueId": "1287862"
+      }
+    ],
+    [
+      "im-wayward-2014-5",
+      "Wayward",
+      "5",
+      "Image",
+      "2014-12-01",
+      "",
+      "",
+      "Wayward #5",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301696000511",
+        "streetDate": "2014-12-17",
+        "gcdIssueId": "1294494"
+      }
+    ],
+    [
+      "im-plutona-2016-nn",
+      "Plutona",
+      "[nn]",
+      "Image",
+      "2016-01-01",
+      "",
+      "",
+      "Plutona #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "2456986"
+      }
+    ],
+    [
+      "dh-usagi-yojimbo-2014-28",
+      "Usagi Yojimbo",
+      "28",
+      "Dark Horse",
+      "2014-07-02",
+      "",
+      "",
+      "Red Scorpion",
+      17.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978161655398251799",
+        "streetDate": "2014-07-02",
+        "gcdIssueId": "1219911"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-2014-2",
+      "Dark Horse Presents (2014)",
+      "2",
+      "Dark Horse",
+      "2014-09-01",
+      "",
+      "",
+      "Dark Horse Presents #2",
+      4.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156824116700211",
+        "streetDate": "2014-09-17",
+        "gcdIssueId": "1253126"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-2014-3",
+      "Dark Horse Presents (2014)",
+      "3",
+      "Dark Horse",
+      "2014-10-01",
+      "",
+      "",
+      "Dark Horse Presents #3",
+      4.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156824116700311",
+        "streetDate": "2014-10-15",
+        "gcdIssueId": "1263443"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-2014-4",
+      "Dark Horse Presents (2014)",
+      "4",
+      "Dark Horse",
+      "2014-11-01",
+      "",
+      "",
+      "Dark Horse Presents #4",
+      4.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156824116700411",
+        "streetDate": "2014-11-19",
+        "gcdIssueId": "1281066"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-2014-5",
+      "Dark Horse Presents (2014)",
+      "5",
+      "Dark Horse",
+      "2014-12-01",
+      "",
+      "",
+      "Dark Horse Presents #5",
+      4.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156824116700511",
+        "streetDate": "2014-12-17",
+        "gcdIssueId": "1294385"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-2015-6",
+      "Dark Horse Presents (2014)",
+      "6",
+      "Dark Horse",
+      "2015-01-21",
+      "",
+      "",
+      "Dark Horse Presents #6",
+      4.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156824116700611",
+        "streetDate": "2015-01-21",
+        "gcdIssueId": "1309173"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-2015-9",
+      "Dark Horse Presents (2014)",
+      "9",
+      "Dark Horse",
+      "2015-04-15",
+      "",
+      "",
+      "Dark Horse Presents #9",
+      4.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156824116700911",
+        "streetDate": "2015-04-15",
+        "gcdIssueId": "1340841"
+      }
+    ],
+    [
+      "dh-captain-midnight-2015-4",
+      "Captain Midnight (2013)",
+      "4",
+      "Dark Horse",
+      "2015-01-28",
+      "",
+      "",
+      "Crash and Burn",
+      14.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978161655518451499",
+        "streetDate": "2015-01-28",
+        "gcdIssueId": "1380051"
+      }
+    ],
+    [
+      "dh-captain-midnight-2015-5",
+      "Captain Midnight (2013)",
+      "5",
+      "Dark Horse",
+      "2015-05-01",
+      "",
+      "",
+      "Lost Time",
+      14.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978161655644051499",
+        "streetDate": "2015-06-03",
+        "gcdIssueId": "1384522"
+      }
+    ],
+    [
+      "dh-captain-midnight-2015-6",
+      "Captain Midnight (2013)",
+      "6",
+      "Dark Horse",
+      "2015-10-21",
+      "",
+      "",
+      "Marked for Death - Reign of the Archon",
+      14.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978161655770651499",
+        "streetDate": "2015-10-21",
+        "gcdIssueId": "1480428"
+      }
+    ],
+    [
+      "dh-fear-agent-2014-1",
+      "Fear Agent",
+      "1",
+      "Dark Horse",
+      "2014-04-15",
+      "",
+      "",
+      "Re-Ignition",
+      9.99,
+      "single",
+      0.8,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978161655536850999",
+        "streetDate": "2014-04-15",
+        "gcdIssueId": "2745450"
+      }
+    ],
+    [
+      "dh-fear-agent-2014-2",
+      "Fear Agent",
+      "2",
+      "Dark Horse",
+      "2014-05-13",
+      "",
+      "",
+      "My War",
+      16.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978161655451451699",
+        "streetDate": "2014-05-13",
+        "gcdIssueId": "2745451"
+      }
+    ],
+    [
+      "dh-fear-agent-2014-3",
+      "Fear Agent",
+      "3",
+      "Dark Horse",
+      "2014-06-17",
+      "",
+      "",
+      "The Last Goodbye",
+      16.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978161655452151699",
+        "streetDate": "2014-06-17",
+        "gcdIssueId": "2745452"
+      }
+    ],
+    [
+      "dh-fear-agent-2014-4",
+      "Fear Agent",
+      "4",
+      "Dark Horse",
+      "2014-07-15",
+      "",
+      "",
+      "Hatchet Job",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978161655453851699",
+        "streetDate": "2014-07-15",
+        "gcdIssueId": "2745453"
+      }
+    ],
+    [
+      "dh-fear-agent-2014-6",
+      "Fear Agent",
+      "6",
+      "Dark Horse",
+      "2014-09-16",
+      "",
+      "",
+      "Out of Step",
+      9.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978161655455251699",
+        "streetDate": "2014-09-16",
+        "gcdIssueId": "2745455"
+      }
+    ],
+    [
+      "dh-abe-sapien-2013-1",
+      "Abe Sapien (2013)",
+      "1",
+      "Dark Horse",
+      "2013-04-01",
+      "",
+      "",
+      "Abe Sapien #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156821535900111",
+        "streetDate": "2013-04-03",
+        "gcdIssueId": "1100158"
+      }
+    ],
+    [
+      "dh-abe-sapien-2013-6",
+      "Abe Sapien (2013)",
+      "6",
+      "Dark Horse",
+      "2013-10-01",
+      "",
+      "",
+      "Abe Sapien #6",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156821535900611",
+        "streetDate": "2013-10-09",
+        "gcdIssueId": "1145495"
+      }
+    ],
+    [
+      "dh-occultist-2013-1",
+      "The Occultist",
+      "1",
+      "Dark Horse",
+      "2013-10-01",
+      "",
+      "",
+      "The Occultist #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156823021500111",
+        "streetDate": "2013-10-02",
+        "gcdIssueId": "1143292"
+      }
+    ],
+    [
+      "dh-occultist-2013-2",
+      "The Occultist",
+      "2",
+      "Dark Horse",
+      "2013-11-01",
+      "",
+      "",
+      "The Occultist #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156823021500211",
+        "streetDate": "2013-11-06",
+        "gcdIssueId": "1156742"
+      }
+    ],
+    [
+      "dh-courageous-princess-2015-1",
+      "The Courageous Princess",
+      "1",
+      "Dark Horse",
+      "2015-03-18",
+      "",
+      "",
+      "Beyond the Hundred Kingdoms",
+      19.99,
+      "single",
+      0.8,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "9781616557225",
+        "streetDate": "2015-03-18",
+        "gcdIssueId": "2792078"
+      }
+    ],
+    [
+      "dh-courageous-princess-2015-2",
+      "The Courageous Princess",
+      "2",
+      "Dark Horse",
+      "2015-06-03",
+      "",
+      "",
+      "The Unremembered Lands",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "9781616557232",
+        "streetDate": "2015-06-03",
+        "gcdIssueId": "1384523"
+      }
+    ],
+    [
+      "dh-courageous-princess-2015-3",
+      "The Courageous Princess",
+      "3",
+      "Dark Horse",
+      "2015-09-16",
+      "",
+      "",
+      "The Dragon Queen",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "9781616557249",
+        "streetDate": "2015-09-16",
+        "gcdIssueId": "1458246"
+      }
+    ],
+    [
+      "dh-star-wars-high-republic-adventures-phase-2025-2024-1",
+      "Star Wars: The High Republic Adventures (Phase III) - Echoes of Fear",
+      "1",
+      "Dark Horse",
+      "2024-09-04",
+      "",
+      "",
+      "Star Wars: The High Republic Adventures (Phase III) - Echoes of Fear #1",
+      4.99,
+      "single",
+      0.8,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156801260600111",
+        "streetDate": "2024-09-04",
+        "gcdIssueId": "2654591"
+      }
+    ],
+    [
+      "dh-star-wars-high-republic-adventures-phase-2025-2",
+      "Star Wars: The High Republic Adventures (Phase III) - Echoes of Fear",
+      "2",
+      "Dark Horse",
+      "2024-10-09",
+      "",
+      "",
+      "Star Wars: The High Republic Adventures (Phase III) - Echoes of Fear #2",
+      4.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156801260600211",
+        "streetDate": "2024-10-09",
+        "gcdIssueId": "2662936"
+      }
+    ],
+    [
+      "dh-star-wars-high-republic-adventures-phase-2025-3",
+      "Star Wars: The High Republic Adventures (Phase III) - Echoes of Fear",
+      "3",
+      "Dark Horse",
+      "2024-11-27",
+      "",
+      "",
+      "Star Wars: The High Republic Adventures (Phase III) - Echoes of Fear #3",
+      4.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156801260600311",
+        "streetDate": "2024-11-27",
+        "gcdIssueId": "2682311"
+      }
+    ],
+    [
+      "dh-emily-strange-2009-2",
+      "Emily the Strange (2007)",
+      "2",
+      "Dark Horse",
+      "2009-09-09",
+      "",
+      "",
+      "Rock, Death, Fake, Revenge, and Alone",
+      19.95,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "9781595822215",
+        "streetDate": "2009-09-09",
+        "gcdIssueId": "714314"
+      }
+    ],
+    [
+      "dh-aliens-predator-deadliest-of-species-1997-nn",
+      "Aliens / Predator: The Deadliest of the Species",
+      "[nn]",
+      "Dark Horse",
+      "1997-06-01",
+      "",
+      "",
+      "Aliens / Predator: Deadliest of the Species #[nn]",
+      99.95,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "9781569711828",
+        "gcdIssueId": "552791"
+      }
+    ],
+    [
+      "dh-gunsmith-cats-2002-9",
+      "Gunsmith Cats (1996)",
+      "9",
+      "Dark Horse",
+      "2002-01-01",
+      "",
+      "",
+      "Misty's Run",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "556202"
+      }
+    ],
+    [
+      "dh-hellboy-seed-of-destruction-2008-nn",
+      "Hellboy: Seed of Destruction",
+      "[nn]",
+      "Dark Horse",
+      "2008-06-01",
+      "",
+      "",
+      "Hellboy: Seed of Destruction #[nn]",
+      24.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "9781596176041",
+        "gcdIssueId": "704116"
+      }
+    ],
+    [
+      "dh-star-wars-episode-i-phantom-menace-2007-nn",
+      "Star Wars: Episode I The Phantom Menace",
+      "[nn]",
+      "Dark Horse",
+      "2007-08-29",
+      "",
+      "",
+      "Star Wars: Episode I The Phantom Menace #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978159307812650995",
+        "streetDate": "2007-08-29",
+        "gcdIssueId": "715382"
+      }
+    ],
+    [
+      "dh-star-wars-episode-ii-attack-of-2002-nn",
+      "Star Wars: Episode II - Attack of the Clones",
+      "[nn]",
+      "Dark Horse",
+      "2002-04-24",
+      "",
+      "",
+      "Star Wars: Episode II - Attack of the Clones #[nn]",
+      17.95,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978156971609051795",
+        "streetDate": "2002-04-24",
+        "gcdIssueId": "715390"
+      }
+    ],
+    [
+      "dh-tale-of-one-bad-rat-2010-nn",
+      "The Tale of One Bad Rat",
+      "[nn]",
+      "Dark Horse",
+      "2010-05-01",
+      "",
+      "",
+      "The Tale of One Bad Rat #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978159582493651999",
+        "streetDate": "2010-04-28",
+        "gcdIssueId": "752707"
+      }
+    ],
+    [
+      "dh-aliens-earth-war-1991-nn",
+      "Aliens: Earth War",
+      "[nn]",
+      "Dark Horse",
+      "1991-01-01",
+      "",
+      "",
+      "Aliens: Earth War #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "streetDate": "1991-01-01",
+        "gcdIssueId": "800195"
+      }
+    ],
+    [
+      "dh-freaks-of-heartland-2012-nn",
+      "Freaks of the Heartland",
+      "[nn]",
+      "Dark Horse",
+      "2012-07-01",
+      "",
+      "",
+      "Freaks of the Heartland #[nn]",
+      29.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978159582968952999",
+        "streetDate": "2012-07-04",
+        "gcdIssueId": "956014"
+      }
+    ],
+    [
+      "dh-big-guy-and-rusty-boy-robot-2015-nn",
+      "The Big Guy and Rusty the Boy Robot",
+      "[nn]",
+      "Dark Horse",
+      "2015-10-14",
+      "",
+      "",
+      "The Big Guy and Rusty the Boy Robot #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978161655853651999",
+        "streetDate": "2015-10-14",
+        "gcdIssueId": "1476734"
+      }
+    ],
+    [
+      "dh-girl-crazy-2016-nn",
+      "Girl Crazy",
+      "[nn]",
+      "Dark Horse",
+      "2016-01-06",
+      "",
+      "",
+      "Girl Crazy #[nn]",
+      17.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978161655841351799",
+        "streetDate": "2016-01-06",
+        "gcdIssueId": "1523732"
+      }
+    ],
+    [
+      "dh-badlands-2018-nn",
+      "Badlands",
+      "[nn]",
+      "Dark Horse",
+      "2018-03-14",
+      "",
+      "",
+      "Badlands #[nn]",
+      17.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978150670542251799",
+        "streetDate": "2018-03-14",
+        "gcdIssueId": "1791348"
+      }
+    ],
+    [
+      "dh-fight-club-2-2018-nn",
+      "Fight Club 2",
+      "[nn]",
+      "Dark Horse",
+      "2018-05-01",
+      "",
+      "",
+      "Fight Club 2 #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978150670628351999",
+        "streetDate": "2018-04-18",
+        "gcdIssueId": "1800561"
+      }
+    ],
+    [
+      "dh-horror-of-collier-county-2019-nn",
+      "The Horror of Collier County",
+      "[nn]",
+      "Dark Horse",
+      "2019-05-15",
+      "",
+      "",
+      "The Horror of Collier County #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978150670995651999",
+        "streetDate": "2019-05-15",
+        "gcdIssueId": "1963633"
+      }
+    ],
+    [
+      "dh-city-of-others-2019-nn",
+      "City of Others",
+      "[nn]",
+      "Dark Horse",
+      "2019-06-05",
+      "",
+      "",
+      "City of Others #[nn]",
+      29.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "9781506712024",
+        "streetDate": "2019-06-05",
+        "gcdIssueId": "1974216"
+      }
+    ],
+    [
+      "dh-archie-vs-predator-2019-nn",
+      "Archie vs. Predator",
+      "[nn]",
+      "Dark Horse",
+      "2019-08-21",
+      "",
+      "",
+      "Archie vs. Predator #[nn]",
+      17.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978150671466051799",
+        "streetDate": "2019-08-21",
+        "gcdIssueId": "2010657"
+      }
+    ],
+    [
+      "dh-47-ronin-2021-nn",
+      "47 Ronin",
+      "[nn]",
+      "Dark Horse",
+      "2021-01-13",
+      "",
+      "",
+      "47 Ronin #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "9781506717999",
+        "streetDate": "2021-01-13",
+        "gcdIssueId": "2184993"
+      }
+    ],
+    [
+      "dh-breath-of-bones-tale-of-golem-2021-nn",
+      "Breath of Bones: A Tale of the Golem",
+      "[nn]",
+      "Dark Horse",
+      "2021-05-12",
+      "",
+      "",
+      "Breath of Bones: A Tale of the Golem #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "9781506722351",
+        "streetDate": "2021-05-12",
+        "gcdIssueId": "2222318"
+      }
+    ],
+    [
+      "dh-shaolin-cowboy-who-ll-stop-reign-2021-nn",
+      "Shaolin Cowboy: Who'll Stop the Reign?",
+      "[nn]",
+      "Dark Horse",
+      "2021-06-09",
+      "",
+      "",
+      "The Shaolin Cowboy: Who'll Stop the Reign? #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978150672204751999",
+        "streetDate": "2021-06-09",
+        "gcdIssueId": "2228939"
+      }
+    ],
+    [
+      "dh-hellboy-weird-tales-2022-nn",
+      "Hellboy: Weird Tales",
+      "[nn]",
+      "Dark Horse",
+      "2022-11-09",
+      "",
+      "",
+      "Hellboy: Weird Tales #[nn]",
+      24.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978150673384552499",
+        "streetDate": "2022-11-09",
+        "gcdIssueId": "2448401"
+      }
+    ],
+    [
+      "dh-star-wars-high-republic-adventures-phase-2024-2024-1",
+      "Star Wars: The High Republic Adventures (Phase III) - Saber for Hire",
+      "1",
+      "Dark Horse",
+      "2024-04-17",
+      "",
+      "",
+      "Star Wars: The High Republic Adventures (Phase III) - Saber for Hire #1",
+      4.99,
+      "single",
+      0.8,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156801207100111",
+        "streetDate": "2024-04-17",
+        "gcdIssueId": "2622659"
+      }
+    ],
+    [
+      "dh-curse-of-dracula-2013-nn",
+      "The Curse of Dracula",
+      "[nn]",
+      "Dark Horse",
+      "2013-01-01",
+      "",
+      "",
+      "The Curse of Dracula #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "2668954"
+      }
+    ],
+    [
+      "dh-hard-boiled-2023-nn",
+      "Hard Boiled",
+      "[nn]",
+      "Dark Horse",
+      "2023-03-29",
+      "",
+      "",
+      "Hard Boiled #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978150673109451999",
+        "streetDate": "2023-03-29",
+        "gcdIssueId": "2709072"
+      }
+    ],
+    [
+      "dh-hellgate-london-2007-nn",
+      "Hellgate: London",
+      "[nn]",
+      "Dark Horse",
+      "2007-10-31",
+      "",
+      "",
+      "Hellgate London #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "streetDate": "2007-10-31",
+        "gcdIssueId": "2709746"
+      }
+    ],
+    [
+      "dh-star-wars-high-republic-adventures-phase-2025-2025-nn",
+      "Star Wars: The High Republic Adventures (Phase III) - Echoes of Fear",
+      "[nn]",
+      "Dark Horse",
+      "2025-04-23",
+      "",
+      "",
+      "Star Wars: The High Republic Adventures (Phase III) - Echoes of Fear #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978150674275551999",
+        "streetDate": "2025-04-23",
+        "gcdIssueId": "2729061"
+      }
+    ],
+    [
+      "dh-star-wars-2014-nn",
+      "Star Wars",
+      "[nn]",
+      "Dark Horse",
+      "2014-07-23",
+      "",
+      "",
+      "The Star Wars #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978161655425551999",
+        "streetDate": "2014-07-23",
+        "gcdIssueId": "2745486"
+      }
+    ],
+    [
+      "dh-rat-god-2025-nn",
+      "Rat God",
+      "[nn]",
+      "Dark Horse",
+      "2025-11-18",
+      "",
+      "",
+      "Rat God #[nn]",
+      39.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978150674009653999",
+        "streetDate": "2025-11-18",
+        "gcdIssueId": "2786436"
+      }
+    ],
+    [
+      "idw-doctor-who-2012-13",
+      "Doctor Who",
+      "13",
+      "IDW",
+      "2012-01-01",
+      "",
+      "",
+      "Doctor Who #13",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771400208901311",
+        "streetDate": "2012-01-11",
+        "gcdIssueId": "904819"
+      }
+    ],
+    [
+      "idw-doctor-who-2012-14",
+      "Doctor Who",
+      "14",
+      "IDW",
+      "2012-02-01",
+      "",
+      "",
+      "Doctor Who #14",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771400208901411",
+        "streetDate": "2012-02-01",
+        "gcdIssueId": "911617"
+      }
+    ],
+    [
+      "idw-doctor-who-2012-15",
+      "Doctor Who",
+      "15",
+      "IDW",
+      "2012-03-14",
+      "",
+      "",
+      "Doctor Who #15",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771400208901511",
+        "streetDate": "2012-03-14",
+        "gcdIssueId": "930353"
+      }
+    ],
+    [
+      "idw-doctor-who-2012-16",
+      "Doctor Who",
+      "16",
+      "IDW",
+      "2012-04-01",
+      "",
+      "",
+      "Doctor Who #16",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771400208901611",
+        "streetDate": "2012-04-18",
+        "gcdIssueId": "940715"
+      }
+    ],
+    [
+      "idw-30days-2018-4",
+      "30 Days of Night",
+      "4",
+      "IDW Publishing",
+      "2018-03-01",
+      "",
+      "",
+      "30 Days of Night #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "gcdIssueId": "1927904"
+      }
+    ],
+    [
+      "idw-30days-2018-5",
+      "30 Days of Night",
+      "5",
+      "IDW Publishing",
+      "2018-04-01",
+      "",
+      "",
+      "30 Days of Night #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "gcdIssueId": "1927905"
+      }
+    ],
+    [
+      "idw-30days-2018-6",
+      "30 Days of Night",
+      "6",
+      "IDW Publishing",
+      "2018-05-01",
+      "",
+      "",
+      "30 Days of Night #6",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "gcdIssueId": "1927906"
+      }
+    ],
+    [
+      "idw-my-little-pony-2024-3",
+      "My Little Pony",
+      "3",
+      "IDW",
+      "2024-02-06",
+      "",
+      "",
+      "Cookies, Conundrums, and Crafts",
+      9.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "979888724058950999",
+        "streetDate": "2024-02-06",
+        "gcdIssueId": "2608634"
+      }
+    ],
+    [
+      "idw-my-little-pony-2024-4",
+      "My Little Pony",
+      "4",
+      "IDW",
+      "2024-07-02",
+      "",
+      "",
+      "Sister Switch",
+      9.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "979888724099250999",
+        "streetDate": "2024-07-02",
+        "gcdIssueId": "2643547"
+      }
+    ],
+    [
+      "idw-angel-2010-1",
+      "Angel (2009)",
+      "1",
+      "IDW",
+      "2010-07-01",
+      "",
+      "",
+      "Immortality for Dummies",
+      24.99,
+      "single",
+      0.8,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "9781600106897",
+        "gcdIssueId": "2683712"
+      }
+    ],
+    [
+      "idw-angel-2010-2",
+      "Angel (2009)",
+      "2",
+      "IDW",
+      "2010-11-01",
+      "",
+      "",
+      "Crown Prince Syndrome",
+      24.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "9781600107894",
+        "gcdIssueId": "2683713"
+      }
+    ],
+    [
+      "idw-angel-2011-3",
+      "Angel (2009)",
+      "3",
+      "IDW",
+      "2011-06-01",
+      "",
+      "",
+      "The Wolf, the Ram, and the Heart",
+      24.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "9781600109447",
+        "gcdIssueId": "2683714"
+      }
+    ],
+    [
+      "idw-eternal-descent-2013-2",
+      "Eternal Descent",
+      "2",
+      "IDW",
+      "2013-02-01",
+      "",
+      "",
+      "Eternal Descent #2",
+      24.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "978161377510352499",
+        "streetDate": "2013-03-20",
+        "gcdIssueId": "1096124"
+      }
+    ],
+    [
+      "idw-teenage-mutant-ninja-turtles-armageddon-game-2023-1",
+      "Teenage Mutant Ninja Turtles: The Armageddon Game - The Alliance",
+      "1",
+      "IDW",
+      "2022-11-09",
+      "",
+      "",
+      "Teenage Mutant Ninja Turtles: The Armageddon Game - The Alliance #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771403089100111",
+        "streetDate": "2022-11-09",
+        "gcdIssueId": "2451244"
+      }
+    ],
+    [
+      "idw-teenage-mutant-ninja-turtles-armageddon-game-2023-2",
+      "Teenage Mutant Ninja Turtles: The Armageddon Game - The Alliance",
+      "2",
+      "IDW",
+      "2022-12-14",
+      "",
+      "",
+      "Teenage Mutant Ninja Turtles: The Armageddon Game - The Alliance #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771403089100211",
+        "streetDate": "2022-12-14",
+        "gcdIssueId": "2465957"
+      }
+    ],
+    [
+      "idw-mystery-society-2013-nn",
+      "Mystery Society",
+      "[nn]",
+      "IDW",
+      "2013-09-01",
+      "",
+      "",
+      "Mystery Society #[nn]",
+      27.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "978161377683452799",
+        "streetDate": "2013-10-02",
+        "gcdIssueId": "1144944"
+      }
+    ],
+    [
+      "idw-judge-dredd-classics-dark-judges-2018-nn",
+      "Judge Dredd Classics: Dark Judges",
+      "[nn]",
+      "IDW",
+      "2018-01-01",
+      "",
+      "",
+      "Judge Dredd Classics: The Dark Judges #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "9781684050444",
+        "gcdIssueId": "1771344"
+      }
+    ],
+    [
+      "idw-g-i-joe-real-american-hero-2018-2019-nn",
+      "G.I. Joe: A Real American Hero: Silent Option",
+      "[nn]",
+      "IDW",
+      "2019-04-01",
+      "",
+      "",
+      "G.I. Joe: A Real American Hero: Silent Option #[nn]",
+      17.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "978168405455851799",
+        "streetDate": "2019-05-01",
+        "gcdIssueId": "1958939"
+      }
+    ],
+    [
+      "idw-rise-of-teenage-mutant-ninja-turtles-2018-2",
+      "Rise of the Teenage Mutant Ninja Turtles: Sound Off!",
+      "2",
+      "IDW",
+      "2019-08-21",
+      "",
+      "",
+      "Rise of the Teenage Mutant Ninja Turtles: Sound Off! #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771401823300211",
+        "streetDate": "2019-08-21",
+        "gcdIssueId": "2011844"
+      }
+    ],
+    [
+      "idw-transformers-movie-prequel-2007-nn",
+      "Transformers: Movie Prequel",
+      "[nn]",
+      "IDW",
+      "2007-01-01",
+      "",
+      "",
+      "Transformers Movie Prequel #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "gcdIssueId": "2074007"
+      }
+    ],
+    [
+      "idw-transformers-last-stand-of-wreckers-2012-nn",
+      "Transformers: Last Stand of the Wreckers",
+      "[nn]",
+      "IDW",
+      "2012-01-01",
+      "",
+      "",
+      "The Transformers: Last Stand of the Wreckers #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "gcdIssueId": "2385096"
+      }
+    ],
+    [
+      "idw-g-i-joe-real-american-hero-2022-2022-nn",
+      "G.I. Joe: A Real American Hero -- Saturday Morning Adventures",
+      "[nn]",
+      "IDW",
+      "2022-10-12",
+      "",
+      "",
+      "G.I. Joe: A Real American Hero -- Saturday Morning Adventures #[nn]",
+      12.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "978168405945451299",
+        "streetDate": "2022-10-12",
+        "gcdIssueId": "2441148"
+      }
+    ],
+    [
+      "idw-teenage-mutant-ninja-turtles-armageddon-game-2023-2023-nn",
+      "Teenage Mutant Ninja Turtles: The Armageddon Game - The Alliance",
+      "[nn]",
+      "IDW",
+      "2023-09-19",
+      "",
+      "",
+      "Teenage Mutant Ninja Turtles: The Armageddon Game - The Alliance #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "978168405994251999",
+        "streetDate": "2023-09-19",
+        "gcdIssueId": "2571904"
+      }
+    ],
+    [
+      "idw-30days-2018-nn",
+      "30 Days of Night",
+      "[nn]",
+      "IDW Publishing",
+      "2018-09-01",
+      "",
+      "",
+      "30 Days of Night #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "9781684053094",
+        "gcdIssueId": "2680873"
+      }
+    ],
+    [
+      "idw-aleister-arcane-2016-nn",
+      "Aleister Arcane",
+      "[nn]",
+      "IDW",
+      "2016-12-01",
+      "",
+      "",
+      "Aleister Arcane #[nn]",
+      17.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "9781631408281",
+        "gcdIssueId": "2682531"
+      }
+    ],
+    [
+      "idw-csi-crime-scene-investigation-bad-rap-2008-nn",
+      "CSI: Crime Scene Investigation - Bad Rap",
+      "[nn]",
+      "IDW",
+      "2008-03-01",
+      "",
+      "",
+      "CSI: Crime Scene Investigation - Bad Rap #[nn]",
+      11.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "9781600102028",
+        "gcdIssueId": "2702227"
+      }
+    ],
+    [
+      "idw-csi-crime-scene-investigation-dominos-2008-nn",
+      "CSI: Crime Scene Investigation - Dominos",
+      "[nn]",
+      "IDW",
+      "2008-06-01",
+      "",
+      "",
+      "CSI: Crime Scene Investigation - Dominos #[nn]",
+      11.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "9781600101717",
+        "gcdIssueId": "2702235"
+      }
+    ],
+    [
+      "idw-csi-crime-scene-investigation-secret-identity-2008-nn",
+      "CSI: Crime Scene Investigation - Secret Identity",
+      "[nn]",
+      "IDW",
+      "2008-07-01",
+      "",
+      "",
+      "CSI: Crime Scene Investigation - Secret Identity #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "9781600101878",
+        "gcdIssueId": "2702537"
+      }
+    ],
+    [
+      "idw-doctor-who-forgotten-2013-nn",
+      "Doctor Who: The Forgotten",
+      "[nn]",
+      "IDW",
+      "2013-03-01",
+      "",
+      "",
+      "Doctor Who: The Forgotten #[nn]",
+      24.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "9781613775592",
+        "gcdIssueId": "2708183"
+      }
+    ],
+    [
+      "idw-g-i-joe-hearts-minds-2013-nn",
+      "G.I. Joe: Hearts & Minds",
+      "[nn]",
+      "IDW",
+      "2013-06-01",
+      "",
+      "",
+      "G.I. Joe: Hearts & Minds #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "9781613776674",
+        "gcdIssueId": "2721333"
+      }
+    ],
+    [
+      "idw-grumpy-old-monsters-2004-nn",
+      "Grumpy Old Monsters",
+      "[nn]",
+      "IDW",
+      "2004-10-01",
+      "",
+      "",
+      "Grumpy Old Monsters #[nn]",
+      13.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "9781932382358",
+        "gcdIssueId": "2726707"
+      }
+    ],
+    [
+      "idw-keep-2011-nn",
+      "The Keep",
+      "[nn]",
+      "IDW",
+      "2011-10-01",
+      "",
+      "",
+      "The Keep #[nn]",
+      24.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "9781613770504",
+        "gcdIssueId": "2733223"
+      }
+    ],
+    [
+      "idw-last-unicorn-2014-nn",
+      "The Last Unicorn",
+      "[nn]",
+      "IDW",
+      "2014-10-01",
+      "",
+      "",
+      "The Last Unicorn #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "9781631401275",
+        "gcdIssueId": "2733925"
+      }
+    ],
+    [
+      "idw-batman-teenage-mutant-ninja-turtles-adventures-2025-nn",
+      "Batman / Teenage Mutant Ninja Turtles Adventures",
+      "[nn]",
+      "IDW",
+      "2025-09-23",
+      "",
+      "",
+      "Batman / Teenage Mutant Ninja Turtles Adventures #[nn]",
+      21.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "979888724339952199",
+        "streetDate": "2025-09-23",
+        "gcdIssueId": "2773062"
+      }
+    ],
+    [
+      "idw-dying-is-easy-2025-nn",
+      "Dying Is Easy",
+      "[nn]",
+      "IDW",
+      "2025-11-04",
+      "",
+      "",
+      "Dying Is Easy #[nn]",
+      17.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "979888724351151799",
+        "streetDate": "2025-11-04",
+        "gcdIssueId": "2782862"
+      }
+    ],
+    [
+      "idw-beneath-trees-where-nobody-sees-2026-nn",
+      "Beneath the Trees Where Nobody Sees",
+      "[nn]",
+      "IDW",
+      "2026-07-21",
+      "",
+      "",
+      "Beneath the Trees Where Nobody Sees #[nn]",
+      29.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "979888724204052999",
+        "streetDate": "2026-07-21",
+        "gcdIssueId": "2853615"
+      }
+    ],
+    [
+      "boom-peanuts-2013-5",
+      "Peanuts (2012)",
+      "5",
+      "Boom! Studios",
+      "2013-01-01",
+      "",
+      "",
+      "Peanuts #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "1e3a8a,c2410c,f8fafc",
+      {
+        "upc": "84428400309400511",
+        "streetDate": "2013-01-23",
+        "gcdIssueId": "1052569"
+      }
+    ],
+    [
+      "boom-peanuts-2013-7",
+      "Peanuts (2012)",
+      "7",
+      "Boom! Studios",
+      "2013-03-01",
+      "",
+      "",
+      "Peanuts #7",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "1e3a8a,c2410c,f8fafc",
+      {
+        "upc": "84428400309400711",
+        "streetDate": "2013-03-27",
+        "gcdIssueId": "1096921"
+      }
+    ],
+    [
+      "boom-peanuts-2013-8",
+      "Peanuts (2012)",
+      "8",
+      "Boom! Studios",
+      "2013-04-01",
+      "",
+      "",
+      "Peanuts #8",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "1e3a8a,c2410c,f8fafc",
+      {
+        "upc": "84428400309400811",
+        "streetDate": "2013-04-24",
+        "gcdIssueId": "1106022"
+      }
+    ],
+    [
+      "boom-peanuts-2013-9",
+      "Peanuts (2012)",
+      "9",
+      "Boom! Studios",
+      "2013-06-01",
+      "",
+      "",
+      "Peanuts #9",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "1e3a8a,c2410c,f8fafc",
+      {
+        "upc": "84428400309400911",
+        "streetDate": "2013-06-26",
+        "gcdIssueId": "1124015"
+      }
+    ],
+    [
+      "boom-peanuts-2013-10",
+      "Peanuts (2012)",
+      "10",
+      "Boom! Studios",
+      "2013-07-01",
+      "",
+      "",
+      "Peanuts #10",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "1e3a8a,c2410c,f8fafc",
+      {
+        "upc": "84428400309401011",
+        "streetDate": "2013-07-24",
+        "gcdIssueId": "1131293"
+      }
+    ],
+    [
+      "boom-woods-2014-5",
+      "The Woods",
+      "5",
+      "Boom! Studios",
+      "2014-09-01",
+      "",
+      "",
+      "The Woods #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "1e3a8a,c2410c,f8fafc",
+      {
+        "upc": "84428400380300511",
+        "streetDate": "2014-09-03",
+        "gcdIssueId": "1250744"
+      }
+    ],
+    [
+      "boom-woods-2014-6",
+      "The Woods",
+      "6",
+      "Boom! Studios",
+      "2014-10-01",
+      "",
+      "",
+      "The Woods #6",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "1e3a8a,c2410c,f8fafc",
+      {
+        "upc": "84428400380300611",
+        "streetDate": "2014-10-01",
+        "gcdIssueId": "1260249"
+      }
+    ],
+    [
+      "boom-woods-2014-7",
+      "The Woods",
+      "7",
+      "Boom! Studios",
+      "2014-11-01",
+      "",
+      "",
+      "The Woods #7",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "1e3a8a,c2410c,f8fafc",
+      {
+        "upc": "84428400380300711",
+        "streetDate": "2014-11-05",
+        "gcdIssueId": "1273215"
+      }
+    ],
+    [
+      "boom-woods-2014-8",
+      "The Woods",
+      "8",
+      "Boom! Studios",
+      "2014-12-01",
+      "",
+      "",
+      "The Woods #8",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "1e3a8a,c2410c,f8fafc",
+      {
+        "upc": "84428400380300811",
+        "streetDate": "2014-12-03",
+        "gcdIssueId": "1287916"
+      }
+    ],
+    [
+      "boom-woods-2015-9",
+      "The Woods",
+      "9",
+      "Boom! Studios",
+      "2015-01-01",
+      "",
+      "",
+      "The Woods #9",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "1e3a8a,c2410c,f8fafc",
+      {
+        "upc": "84428400380300911",
+        "streetDate": "2015-01-07",
+        "gcdIssueId": "1301067"
+      }
+    ],
+    [
+      "boom-suicide-risk-2013-4",
+      "Suicide Risk",
+      "4",
+      "Boom! Studios",
+      "2013-08-01",
+      "",
+      "",
+      "Suicide Risk #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "1e3a8a,c2410c,f8fafc",
+      {
+        "upc": "84428400329200411",
+        "streetDate": "2013-08-07",
+        "gcdIssueId": "1133461"
+      }
+    ],
+    [
+      "boom-suicide-risk-2013-6",
+      "Suicide Risk",
+      "6",
+      "Boom! Studios",
+      "2013-10-01",
+      "",
+      "",
+      "Suicide Risk #6",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "1e3a8a,c2410c,f8fafc",
+      {
+        "upc": "84428400329200611",
+        "streetDate": "2013-10-02",
+        "gcdIssueId": "1143410"
+      }
+    ],
+    [
+      "boom-mouse-guard-legends-of-guard-2013-4",
+      "Mouse Guard: Legends of the Guard (2013)",
+      "4",
+      "Boom! Studios",
+      "2013-10-01",
+      "",
+      "",
+      "Mouse Guard: Legends of the Guard #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "1e3a8a,c2410c,f8fafc",
+      {
+        "upc": "81141501071920401",
+        "gcdIssueId": "1319053"
+      }
+    ],
+    [
+      "dyn-army-of-darkness-2012-5",
+      "Army of Darkness (2013)",
+      "5",
+      "Dynamite Entertainment",
+      "2012-09-01",
+      "",
+      "",
+      "Army of Darkness #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "ea580c,111827,f8fafc",
+      {
+        "upc": "72513018676800511",
+        "streetDate": "2012-09-05",
+        "gcdIssueId": "997986"
+      }
+    ],
+    [
+      "dyn-army-of-darkness-2012-6",
+      "Army of Darkness (2013)",
+      "6",
+      "Dynamite Entertainment",
+      "2012-10-01",
+      "",
+      "",
+      "Army of Darkness #6",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "ea580c,111827,f8fafc",
+      {
+        "upc": "72513018676800611",
+        "streetDate": "2012-10-31",
+        "gcdIssueId": "1028973"
+      }
+    ],
+    [
+      "dyn-army-of-darkness-2012-7",
+      "Army of Darkness (2013)",
+      "7",
+      "Dynamite Entertainment",
+      "2012-12-01",
+      "",
+      "",
+      "Army of Darkness #7",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "ea580c,111827,f8fafc",
+      {
+        "upc": "72513018676800711",
+        "streetDate": "2012-12-12",
+        "gcdIssueId": "1037981"
+      }
+    ],
+    [
+      "dyn-army-of-darkness-2013-8",
+      "Army of Darkness (2013)",
+      "8",
+      "Dynamite Entertainment",
+      "2013-01-01",
+      "",
+      "",
+      "Army of Darkness #8",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "ea580c,111827,f8fafc",
+      {
+        "upc": "72513018676800811",
+        "streetDate": "2013-01-09",
+        "gcdIssueId": "1049333"
+      }
+    ],
+    [
+      "dyn-army-of-darkness-2013-10",
+      "Army of Darkness (2013)",
+      "10",
+      "Dynamite Entertainment",
+      "2013-02-01",
+      "",
+      "",
+      "Army of Darkness #10",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "ea580c,111827,f8fafc",
+      {
+        "upc": "72513018676801011",
+        "streetDate": "2013-02-06",
+        "gcdIssueId": "1070912"
+      }
+    ],
+    [
+      "dyn-army-of-darkness-2013-11",
+      "Army of Darkness (2013)",
+      "11",
+      "Dynamite Entertainment",
+      "2013-02-01",
+      "",
+      "",
+      "Army of Darkness #11",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "ea580c,111827,f8fafc",
+      {
+        "upc": "72513018676801111",
+        "streetDate": "2013-02-27",
+        "gcdIssueId": "1087086"
+      }
+    ],
+    [
+      "dyn-army-of-darkness-2013-12",
+      "Army of Darkness (2013)",
+      "12",
+      "Dynamite Entertainment",
+      "2013-04-01",
+      "",
+      "",
+      "Army of Darkness #12",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "ea580c,111827,f8fafc",
+      {
+        "upc": "72513018676801211",
+        "streetDate": "2013-04-03",
+        "gcdIssueId": "1098878"
+      }
+    ],
+    [
+      "dyn-army-of-darkness-2013-13",
+      "Army of Darkness (2013)",
+      "13",
+      "Dynamite Entertainment",
+      "2013-05-01",
+      "",
+      "",
+      "Army of Darkness #13",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "ea580c,111827,f8fafc",
+      {
+        "upc": "72513018676801311",
+        "streetDate": "2013-05-01",
+        "gcdIssueId": "1108058"
+      }
+    ],
+    [
+      "dyn-army-of-darkness-2015-3",
+      "Army of Darkness (2013)",
+      "3",
+      "Dynamite Entertainment",
+      "2015-02-11",
+      "",
+      "",
+      "Army of Darkness #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "ea580c,111827,f8fafc",
+      {
+        "streetDate": "2015-02-11",
+        "gcdIssueId": "1317619"
+      }
+    ],
+    [
+      "dyn-vampirella-2019-0",
+      "Vampirella (2019)",
+      "0",
+      "Dynamite",
+      "2019-05-04",
+      "",
+      "",
+      "Vampirella #0",
+      0.0,
+      "single",
+      0.8,
+      0,
+      "ea580c,111827,f8fafc",
+      {
+        "upc": "725130278708",
+        "streetDate": "2019-05-04",
+        "gcdIssueId": "1959921"
+      }
+    ],
+    [
+      "dyn-bob-s-burgers-2015-nn",
+      "Bob's Burgers (2015)",
+      "[nn]",
+      "Dynamite Entertainment",
+      "2015-03-18",
+      "",
+      "",
+      "Bob's Burgers #[nn]",
+      17.99,
+      "single",
+      0.55,
+      0,
+      "ea580c,111827,f8fafc",
+      {
+        "upc": "978160690660651799",
+        "streetDate": "2015-03-18",
+        "gcdIssueId": "1331635"
+      }
+    ],
+    [
+      "dyn-kiss-demon-2017-nn",
+      "KISS: The Demon",
+      "[nn]",
+      "Dynamite Entertainment",
+      "2017-01-01",
+      "",
+      "",
+      "Kiss: The Demon #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "ea580c,111827,f8fafc",
+      {
+        "gcdIssueId": "1720614"
+      }
+    ],
+    [
+      "dyn-james-bond-felix-leiter-2019-nn",
+      "James Bond: Felix Leiter",
+      "[nn]",
+      "Dynamite Entertainment",
+      "2019-12-04",
+      "",
+      "",
+      "James Bond: Felix Leiter #[nn]",
+      19.99,
+      "single",
+      0.55,
+      0,
+      "ea580c,111827,f8fafc",
+      {
+        "upc": "978152411265351999",
+        "streetDate": "2019-12-04",
+        "gcdIssueId": "2044924"
+      }
+    ],
+    [
+      "dyn-george-r-r-martin-s-clash-2020-13",
+      "George R.R. Martin's A Clash of Kings (2020)",
+      "13",
+      "Dynamite Entertainment",
+      "2021-05-26",
+      "",
+      "",
+      "George R.R. Martin's A Clash of Kings #13",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "ea580c,111827,f8fafc",
+      {
+        "upc": "72513028822613011",
+        "streetDate": "2021-05-26",
+        "gcdIssueId": "2225623"
+      }
+    ],
+    [
+      "anta-ninja-high-school-0",
+      "Ninja High School (1994)",
+      "0",
+      "Antarctic Press",
+      "1994-05-01",
+      "",
+      "",
+      "Ninja High School #0",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "259029"
+      }
+    ],
+    [
+      "anta-ninja-high-school-40",
+      "Ninja High School (1994)",
+      "40",
+      "Antarctic Press",
+      "1994-06-01",
+      "",
+      "",
+      "Ninja High School #40",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "258933"
+      }
+    ],
+    [
+      "anta-ninja-high-school-41",
+      "Ninja High School (1994)",
+      "41",
+      "Antarctic Press",
+      "1994-07-01",
+      "",
+      "",
+      "Ninja High School #41",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "258934"
+      }
+    ],
+    [
+      "anta-ninja-high-school-42",
+      "Ninja High School (1994)",
+      "42",
+      "Antarctic Press",
+      "1994-09-01",
+      "",
+      "",
+      "Ninja High School #42",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "258935"
+      }
+    ],
+    [
+      "anta-ninja-high-school-43",
+      "Ninja High School (1994)",
+      "43",
+      "Antarctic Press",
+      "1994-11-01",
+      "",
+      "",
+      "Ninja High School #43",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "258936"
+      }
+    ],
+    [
+      "anta-ninja-high-school-44",
+      "Ninja High School (1994)",
+      "44",
+      "Antarctic Press",
+      "1995-01-01",
+      "",
+      "",
+      "Ninja High School #44",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "258937"
+      }
+    ],
+    [
+      "anta-ninja-high-school-45",
+      "Ninja High School (1994)",
+      "45",
+      "Antarctic Press",
+      "1995-03-01",
+      "",
+      "",
+      "Ninja High School #45",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "258938"
+      }
+    ],
+    [
+      "anta-ninja-high-school-46",
+      "Ninja High School (1994)",
+      "46",
+      "Antarctic Press",
+      "1995-05-01",
+      "",
+      "",
+      "Ninja High School #46",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "258939"
+      }
+    ],
+    [
+      "anta-ninja-high-school-47",
+      "Ninja High School (1994)",
+      "47",
+      "Antarctic Press",
+      "1995-07-01",
+      "",
+      "",
+      "Ninja High School #47",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "258940"
+      }
+    ],
+    [
+      "anta-ninja-high-school-48",
+      "Ninja High School (1994)",
+      "48",
+      "Antarctic Press",
+      "1995-09-01",
+      "",
+      "",
+      "Ninja High School #48",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "258941"
+      }
+    ],
+    [
+      "anta-ninja-high-school-49",
+      "Ninja High School (1994)",
+      "49",
+      "Antarctic Press",
+      "1995-11-01",
+      "",
+      "",
+      "Ninja High School #49",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "258942"
+      }
+    ],
+    [
+      "anta-ninja-high-school-50",
+      "Ninja High School (1994)",
+      "50",
+      "Antarctic Press",
+      "1996-01-01",
+      "",
+      "",
+      "Ninja High School #50",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "258943"
+      }
+    ],
+    [
+      "anta-ninja-high-school-51",
+      "Ninja High School (1994)",
+      "51",
+      "Antarctic Press",
+      "1996-04-10",
+      "",
+      "",
+      "Ninja High School #51",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "258944"
+      }
+    ],
+    [
+      "anta-ninja-high-school-52",
+      "Ninja High School (1994)",
+      "52",
+      "Antarctic Press",
+      "1996-06-10",
+      "",
+      "",
+      "Ninja High School #52",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "258945"
+      }
+    ],
+    [
+      "anta-ninja-high-school-53",
+      "Ninja High School (1994)",
+      "53",
+      "Antarctic Press",
+      "1996-09-10",
+      "",
+      "",
+      "Ninja High School #53",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "16107211414653111",
+        "gcdIssueId": "258946"
+      }
+    ],
+    [
+      "anta-ninja-high-school-54",
+      "Ninja High School (1994)",
+      "54",
+      "Antarctic Press",
+      "1996-11-10",
+      "",
+      "",
+      "Ninja High School #54",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001705411",
+        "gcdIssueId": "258947"
+      }
+    ],
+    [
+      "anta-ninja-high-school-55",
+      "Ninja High School (1994)",
+      "55",
+      "Antarctic Press",
+      "1997-01-01",
+      "",
+      "",
+      "Ninja High School #55",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001705511",
+        "gcdIssueId": "258948"
+      }
+    ],
+    [
+      "anta-ninja-high-school-56",
+      "Ninja High School (1994)",
+      "56",
+      "Antarctic Press",
+      "1997-03-10",
+      "",
+      "",
+      "Ninja High School #56",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001705611",
+        "gcdIssueId": "258949"
+      }
+    ],
+    [
+      "anta-ninja-high-school-57",
+      "Ninja High School (1994)",
+      "57",
+      "Antarctic Press",
+      "1997-05-01",
+      "",
+      "",
+      "Ninja High School #57",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001705711",
+        "gcdIssueId": "258950"
+      }
+    ],
+    [
+      "anta-ninja-high-school-58",
+      "Ninja High School (1994)",
+      "58",
+      "Antarctic Press",
+      "1997-08-10",
+      "",
+      "",
+      "Ninja High School #58",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001705811",
+        "gcdIssueId": "258951"
+      }
+    ],
+    [
+      "anta-ninja-high-school-59",
+      "Ninja High School (1994)",
+      "59",
+      "Antarctic Press",
+      "1997-10-10",
+      "",
+      "",
+      "Ninja High School #59",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001705911",
+        "gcdIssueId": "258952"
+      }
+    ],
+    [
+      "anta-ninja-high-school-60",
+      "Ninja High School (1994)",
+      "60",
+      "Antarctic Press",
+      "1997-12-10",
+      "",
+      "",
+      "Ninja High School #60",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001706011",
+        "gcdIssueId": "258953"
+      }
+    ],
+    [
+      "anta-ninja-high-school-61",
+      "Ninja High School (1994)",
+      "61",
+      "Antarctic Press",
+      "1998-02-10",
+      "",
+      "",
+      "Ninja High School #61",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001706111",
+        "gcdIssueId": "258954"
+      }
+    ],
+    [
+      "anta-ninja-high-school-62",
+      "Ninja High School (1994)",
+      "62",
+      "Antarctic Press",
+      "1998-04-01",
+      "",
+      "",
+      "Ninja High School #62",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001706211",
+        "gcdIssueId": "258955"
+      }
+    ],
+    [
+      "anta-ninja-high-school-63",
+      "Ninja High School (1994)",
+      "63",
+      "Antarctic Press",
+      "1998-06-10",
+      "",
+      "",
+      "Ninja High School #63",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001706311",
+        "gcdIssueId": "258956"
+      }
+    ],
+    [
+      "anta-ninja-high-school-64",
+      "Ninja High School (1994)",
+      "64",
+      "Antarctic Press",
+      "1998-08-01",
+      "",
+      "",
+      "Ninja High School #64",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001706411",
+        "gcdIssueId": "258957"
+      }
+    ],
+    [
+      "anta-ninja-high-school-65",
+      "Ninja High School (1994)",
+      "65",
+      "Antarctic Press",
+      "1998-10-01",
+      "",
+      "",
+      "Ninja High School #65",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61027114001706511",
+        "gcdIssueId": "258958"
+      }
+    ],
+    [
+      "anta-ninja-high-school-66",
+      "Ninja High School (1994)",
+      "66",
+      "Antarctic Press",
+      "1998-12-01",
+      "",
+      "",
+      "Ninja High School #66",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001706611",
+        "gcdIssueId": "258959"
+      }
+    ],
+    [
+      "anta-ninja-high-school-67",
+      "Ninja High School (1994)",
+      "67",
+      "Antarctic Press",
+      "1999-03-01",
+      "",
+      "",
+      "Ninja High School #67",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001706711",
+        "gcdIssueId": "258960"
+      }
+    ],
+    [
+      "anta-ninja-high-school-68",
+      "Ninja High School (1994)",
+      "68",
+      "Antarctic Press",
+      "1999-04-01",
+      "",
+      "",
+      "Ninja High School #68",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001706811",
+        "gcdIssueId": "258961"
+      }
+    ],
+    [
+      "anta-ninja-high-school-69",
+      "Ninja High School (1994)",
+      "69",
+      "Antarctic Press",
+      "1999-06-30",
+      "",
+      "",
+      "Ninja High School #69",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001706911",
+        "streetDate": "1999-06-30",
+        "gcdIssueId": "258962"
+      }
+    ],
+    [
+      "anta-ninja-high-school-70",
+      "Ninja High School (1994)",
+      "70",
+      "Antarctic Press",
+      "1999-08-01",
+      "",
+      "",
+      "Ninja High School #70",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001707011",
+        "gcdIssueId": "258963"
+      }
+    ],
+    [
+      "anta-ninja-high-school-71",
+      "Ninja High School (1994)",
+      "71",
+      "Antarctic Press",
+      "1999-10-01",
+      "",
+      "",
+      "Ninja High School #71",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001707111",
+        "gcdIssueId": "258964"
+      }
+    ],
+    [
+      "anta-ninja-high-school-72",
+      "Ninja High School (1994)",
+      "72",
+      "Antarctic Press",
+      "1999-12-01",
+      "",
+      "",
+      "Ninja High School #72",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114001707211",
+        "gcdIssueId": "258965"
+      }
+    ],
+    [
+      "anta-genus-1",
+      "Genus",
+      "1",
+      "Antarctic Press",
+      "1993-06-01",
+      "",
+      "",
+      "Genus #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289192"
+      }
+    ],
+    [
+      "anta-genus-2",
+      "Genus",
+      "2",
+      "Antarctic Press",
+      "1993-09-01",
+      "",
+      "",
+      "Genus #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289193"
+      }
+    ],
+    [
+      "anta-genus-3",
+      "Genus",
+      "3",
+      "Antarctic Press",
+      "1993-11-01",
+      "",
+      "",
+      "Genus #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289194"
+      }
+    ],
+    [
+      "anta-genus-4",
+      "Genus",
+      "4",
+      "Antarctic Press",
+      "1994-01-01",
+      "",
+      "",
+      "Genus #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289195"
+      }
+    ],
+    [
+      "anta-genus-5",
+      "Genus",
+      "5",
+      "Antarctic Press",
+      "1994-03-01",
+      "",
+      "",
+      "Genus #5",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289196"
+      }
+    ],
+    [
+      "anta-genus-6",
+      "Genus",
+      "6",
+      "Antarctic Press",
+      "1994-05-01",
+      "",
+      "",
+      "Genus #6",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289197"
+      }
+    ],
+    [
+      "anta-genus-7",
+      "Genus",
+      "7",
+      "Antarctic Press",
+      "1994-07-01",
+      "",
+      "",
+      "Genus #7",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289198"
+      }
+    ],
+    [
+      "anta-genus-8",
+      "Genus",
+      "8",
+      "Antarctic Press",
+      "1994-09-01",
+      "",
+      "",
+      "Genus #8",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289199"
+      }
+    ],
+    [
+      "anta-genus-9",
+      "Genus",
+      "9",
+      "Antarctic Press",
+      "1994-11-01",
+      "",
+      "",
+      "Genus #9",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289200"
+      }
+    ],
+    [
+      "anta-genus-10",
+      "Genus",
+      "10",
+      "Antarctic Press",
+      "1995-01-01",
+      "",
+      "",
+      "Genus #10",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289201"
+      }
+    ],
+    [
+      "anta-genus-11",
+      "Genus",
+      "11",
+      "Antarctic Press",
+      "1995-03-01",
+      "",
+      "",
+      "Genus #11",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289202"
+      }
+    ],
+    [
+      "anta-genus-12",
+      "Genus",
+      "12",
+      "Antarctic Press",
+      "1995-05-01",
+      "",
+      "",
+      "Genus #12",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289203"
+      }
+    ],
+    [
+      "anta-genus-13",
+      "Genus",
+      "13",
+      "Antarctic Press",
+      "1995-07-01",
+      "",
+      "",
+      "Genus #13",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289204"
+      }
+    ],
+    [
+      "anta-genus-14",
+      "Genus",
+      "14",
+      "Antarctic Press",
+      "1995-09-01",
+      "",
+      "",
+      "Genus #14",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289205"
+      }
+    ],
+    [
+      "anta-genus-15",
+      "Genus",
+      "15",
+      "Antarctic Press",
+      "1995-11-01",
+      "",
+      "",
+      "Genus #15",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289206"
+      }
+    ],
+    [
+      "anta-genus-16",
+      "Genus",
+      "16",
+      "Antarctic Press",
+      "1996-01-01",
+      "",
+      "",
+      "Genus #16",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289207"
+      }
+    ],
+    [
+      "anta-genus-17",
+      "Genus",
+      "17",
+      "Antarctic Press",
+      "1996-03-01",
+      "",
+      "",
+      "Genus #17",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289208"
+      }
+    ],
+    [
+      "anta-genus-18",
+      "Genus",
+      "18",
+      "Antarctic Press",
+      "1996-05-10",
+      "",
+      "",
+      "Genus #18",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289209"
+      }
+    ],
+    [
+      "anta-genus-19",
+      "Genus",
+      "19",
+      "Antarctic Press",
+      "1996-07-01",
+      "",
+      "",
+      "Genus #19",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289210"
+      }
+    ],
+    [
+      "anta-genus-20",
+      "Genus",
+      "20",
+      "Antarctic Press",
+      "1996-09-01",
+      "",
+      "",
+      "Genus #20",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289211"
+      }
+    ],
+    [
+      "anta-genus-21",
+      "Genus",
+      "21",
+      "Antarctic Press",
+      "1996-11-10",
+      "",
+      "",
+      "Genus #21",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289212"
+      }
+    ],
+    [
+      "anta-genus-22",
+      "Genus",
+      "22",
+      "Antarctic Press",
+      "1997-01-10",
+      "",
+      "",
+      "Genus #22",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289213"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-1",
+      "Warrior Nun: Black and White",
+      "1",
+      "Antarctic Press",
+      "1997-02-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123005300111",
+        "gcdIssueId": "131752"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-2",
+      "Warrior Nun: Black and White",
+      "2",
+      "Antarctic Press",
+      "1997-04-10",
+      "",
+      "",
+      "Warrior Nun: Black and White #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003900211",
+        "gcdIssueId": "131753"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-3",
+      "Warrior Nun: Black and White",
+      "3",
+      "Antarctic Press",
+      "1997-06-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003900311",
+        "gcdIssueId": "131754"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-4",
+      "Warrior Nun: Black and White",
+      "4",
+      "Antarctic Press",
+      "1997-08-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003900411",
+        "gcdIssueId": "131755"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-5",
+      "Warrior Nun: Black and White",
+      "5",
+      "Antarctic Press",
+      "1997-10-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #5",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003900511",
+        "gcdIssueId": "131756"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-6",
+      "Warrior Nun: Black and White",
+      "6",
+      "Antarctic Press",
+      "1997-12-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #6",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003900611",
+        "gcdIssueId": "131757"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-7",
+      "Warrior Nun: Black and White",
+      "7",
+      "Antarctic Press",
+      "1998-02-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #7",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003900711",
+        "gcdIssueId": "131758"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-8",
+      "Warrior Nun: Black and White",
+      "8",
+      "Antarctic Press",
+      "1998-03-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #8",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003900811",
+        "gcdIssueId": "131759"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-9",
+      "Warrior Nun: Black and White",
+      "9",
+      "Antarctic Press",
+      "1998-04-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #9",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003900911",
+        "gcdIssueId": "131760"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-10",
+      "Warrior Nun: Black and White",
+      "10",
+      "Antarctic Press",
+      "1998-05-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #10",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003901011",
+        "gcdIssueId": "131761"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-11",
+      "Warrior Nun: Black and White",
+      "11",
+      "Antarctic Press",
+      "1998-06-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #11",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61027123003901111",
+        "gcdIssueId": "131762"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-12",
+      "Warrior Nun: Black and White",
+      "12",
+      "Antarctic Press",
+      "1998-07-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #12",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003901211",
+        "gcdIssueId": "131763"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-13",
+      "Warrior Nun: Black and White",
+      "13",
+      "Antarctic Press",
+      "1998-09-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #13",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003901311",
+        "gcdIssueId": "131764"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-14",
+      "Warrior Nun: Black and White",
+      "14",
+      "Antarctic Press",
+      "1998-10-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #14",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003901411",
+        "gcdIssueId": "131765"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-15",
+      "Warrior Nun: Black and White",
+      "15",
+      "Antarctic Press",
+      "1998-11-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #15",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003901511",
+        "gcdIssueId": "131766"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-16",
+      "Warrior Nun: Black and White",
+      "16",
+      "Antarctic Press",
+      "1999-01-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #16",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003901611",
+        "gcdIssueId": "131767"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-17",
+      "Warrior Nun: Black and White",
+      "17",
+      "Antarctic Press",
+      "1999-02-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #17",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003901711",
+        "gcdIssueId": "131768"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-18",
+      "Warrior Nun: Black and White",
+      "18",
+      "Antarctic Press",
+      "1999-03-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #18",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003901811",
+        "gcdIssueId": "131769"
+      }
+    ],
+    [
+      "anta-warrior-nun-black-and-white-20",
+      "Warrior Nun: Black and White",
+      "20",
+      "Antarctic Press",
+      "1999-05-01",
+      "",
+      "",
+      "Warrior Nun: Black and White #20",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072123003902011",
+        "gcdIssueId": "131771"
+      }
+    ],
+    [
+      "onip-oni-double-feature-1",
+      "Oni Double Feature",
+      "1",
+      "Oni Press",
+      "1998-01-01",
+      "",
+      "",
+      "Oni Double Feature #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "131492"
+      }
+    ],
+    [
+      "onip-oni-double-feature-2",
+      "Oni Double Feature",
+      "2",
+      "Oni Press",
+      "1998-02-01",
+      "",
+      "",
+      "Oni Double Feature #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "131493"
+      }
+    ],
+    [
+      "onip-oni-double-feature-3",
+      "Oni Double Feature",
+      "3",
+      "Oni Press",
+      "1998-03-01",
+      "",
+      "",
+      "Oni Double Feature #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "131494"
+      }
+    ],
+    [
+      "onip-oni-double-feature-4",
+      "Oni Double Feature",
+      "4",
+      "Oni Press",
+      "1998-04-01",
+      "",
+      "",
+      "Oni Double Feature #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "131495"
+      }
+    ],
+    [
+      "onip-oni-double-feature-5",
+      "Oni Double Feature",
+      "5",
+      "Oni Press",
+      "1998-05-01",
+      "",
+      "",
+      "Oni Double Feature #5",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "131496"
+      }
+    ],
+    [
+      "onip-oni-double-feature-6",
+      "Oni Double Feature",
+      "6",
+      "Oni Press",
+      "1998-06-01",
+      "",
+      "",
+      "Oni Double Feature #6",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1998-01-01",
+        "gcdIssueId": "131497"
+      }
+    ],
+    [
+      "onip-oni-double-feature-7",
+      "Oni Double Feature",
+      "7",
+      "Oni Press",
+      "1998-07-01",
+      "",
+      "",
+      "Oni Double Feature #7",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "131498"
+      }
+    ],
+    [
+      "onip-oni-double-feature-8",
+      "Oni Double Feature",
+      "8",
+      "Oni Press",
+      "1998-08-01",
+      "",
+      "",
+      "Oni Double Feature #8",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "131499"
+      }
+    ],
+    [
+      "onip-oni-double-feature-9",
+      "Oni Double Feature",
+      "9",
+      "Oni Press",
+      "1998-10-01",
+      "",
+      "",
+      "Oni Double Feature #9",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "131500"
+      }
+    ],
+    [
+      "onip-oni-double-feature-10",
+      "Oni Double Feature",
+      "10",
+      "Oni Press",
+      "1998-11-01",
+      "",
+      "",
+      "Oni Double Feature #10",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "131501"
+      }
+    ],
+    [
+      "onip-oni-double-feature-11",
+      "Oni Double Feature",
+      "11",
+      "Oni Press",
+      "1999-02-01",
+      "",
+      "",
+      "Oni Double Feature #11",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "131502"
+      }
+    ],
+    [
+      "onip-oni-double-feature-12",
+      "Oni Double Feature",
+      "12",
+      "Oni Press",
+      "1999-05-01",
+      "",
+      "",
+      "Oni Double Feature #12",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "131503"
+      }
+    ],
+    [
+      "fant-los-tejanos-nn",
+      "Los Tejanos",
+      "[nn]",
+      "Fantagraphics",
+      "1982-06-01",
+      "",
+      "",
+      "Los Tejanos #[nn]",
+      6.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "799762"
+      }
+    ],
+    [
+      "fant-focus-on-john-byrne-nn",
+      "Focus on John Byrne",
+      "[nn]",
+      "Fantagraphics",
+      "1984-01-01",
+      "",
+      "",
+      "Focus on John Byrne #[nn]",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2185359"
+      }
+    ],
+    [
+      "fant-comic-art-show-cartoons-in-painting-nn",
+      "The Comic Art Show: Cartoons in Painting and Popular Culture",
+      "[nn]",
+      "Fantagraphics",
+      "1983-07-01",
+      "",
+      "",
+      "The Comic Art Show: Cartoons in Painting and Popular Culture #[nn]",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2200885"
+      }
+    ],
+    [
+      "fant-best-of-amazing-heroes-1",
+      "The Best of Amazing Heroes",
+      "1",
+      "Fantagraphics",
+      "1982-01-01",
+      "",
+      "",
+      "The Best of Amazing Heroes #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2293999"
+      }
+    ],
+    [
+      "fant-elfquest-gatherum-nn",
+      "The Elfquest Gatherum",
+      "[nn]",
+      "Fantagraphics",
+      "1981-01-01",
+      "",
+      "",
+      "The Elfquest Gatherum #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2473099"
+      }
+    ],
+    [
+      "fant-palestine-2024-nn",
+      "Palestine",
+      "[nn]",
+      "Fantagraphics",
+      "2024-01-01",
+      "",
+      "",
+      "Palestine #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2655829"
+      }
+    ],
+    [
+      "avat-donna-mia-0",
+      "Donna Mia",
+      "0",
+      "Avatar Press",
+      "1997-10-01",
+      "",
+      "",
+      "Donna Mia #0",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1997-01-01",
+        "gcdIssueId": "350682"
+      }
+    ],
+    [
+      "avat-donna-mia-giant-size-1",
+      "Donna Mia Giant-Size",
+      "1",
+      "Avatar Press",
+      "1997-05-01",
+      "",
+      "",
+      "Donna Mia Giant-Size #1",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1997-01-01",
+        "gcdIssueId": "716703"
+      }
+    ],
+    [
+      "avat-widow-0",
+      "Widow",
+      "0",
+      "Avatar Press",
+      "1997-12-01",
+      "",
+      "",
+      "Widow #0",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "741389"
+      }
+    ],
+    [
+      "avat-pandora-razor-1",
+      "Pandora / Razor",
+      "1",
+      "Avatar Press",
+      "1999-01-01",
+      "",
+      "",
+      "Pandora / Razor #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "743466"
+      }
+    ],
+    [
+      "avat-razor-ravening-1",
+      "Razor: The Ravening",
+      "1",
+      "Avatar Press",
+      "1999-09-01",
+      "",
+      "",
+      "Razor: The Ravening #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "744144"
+      }
+    ],
+    [
+      "avat-donna-mia-pinup-1",
+      "Donna Mia Pinup",
+      "1",
+      "Avatar Press",
+      "1997-09-01",
+      "",
+      "",
+      "Donna Mia Pinup #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "745561"
+      }
+    ],
+    [
+      "avat-pandora-widow-1",
+      "Pandora / Widow",
+      "1",
+      "Avatar Press",
+      "1997-09-01",
+      "",
+      "",
+      "Pandora / Widow #1",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748320"
+      }
+    ],
+    [
+      "avat-pandora-s-chest-1",
+      "Pandora's Chest",
+      "1",
+      "Avatar Press",
+      "1999-07-01",
+      "",
+      "",
+      "Pandora's Chest #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "805647"
+      }
+    ],
+    [
+      "avat-pandora-nudes-nn",
+      "Pandora: Nudes",
+      "[nn]",
+      "Avatar Press",
+      "1998-04-01",
+      "",
+      "",
+      "Pandora: Nudes #[nn]",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "805655"
+      }
+    ],
+    [
+      "avat-pandora-special-1",
+      "Pandora Special",
+      "1",
+      "Avatar Press",
+      "1997-06-01",
+      "",
+      "",
+      "Pandora Special #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "805659"
+      }
+    ],
+    [
+      "avat-pandora-pinup-1",
+      "Pandora Pinup",
+      "1",
+      "Avatar Press",
+      "1997-07-01",
+      "",
+      "",
+      "Pandora Pinup #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "805660"
+      }
+    ],
+    [
+      "avat-pandora-widow-arachnephobia-1",
+      "Pandora / Widow: Arachnephobia",
+      "1",
+      "Avatar Press",
+      "1998-10-01",
+      "",
+      "",
+      "Pandora / Widow: Arachnephobia #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "805662"
+      }
+    ],
+    [
+      "avat-snowman-1944-special-1",
+      "Snowman 1944 Special",
+      "1",
+      "Avatar Press",
+      "1997-10-01",
+      "",
+      "",
+      "Snowman 1944 Special #1",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "806145"
+      }
+    ],
+    [
+      "avat-snowman-horror-show-1",
+      "Snowman Horror Show",
+      "1",
+      "Avatar Press",
+      "1998-03-01",
+      "",
+      "",
+      "Snowman Horror Show #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "806146"
+      }
+    ],
+    [
+      "avat-lookers-allure-of-serpent-1",
+      "Lookers: Allure of the Serpent",
+      "1",
+      "Avatar Press",
+      "1999-02-24",
+      "",
+      "",
+      "Lookers: Allure of the Serpent #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1999-02-24",
+        "gcdIssueId": "806237"
+      }
+    ],
+    [
+      "avat-lookers-slaves-of-anubis-1",
+      "Lookers: Slaves of Anubis",
+      "1",
+      "Avatar Press",
+      "1998-11-01",
+      "",
+      "",
+      "Lookers: Slaves of Anubis #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1998-12-16",
+        "gcdIssueId": "806238"
+      }
+    ],
+    [
+      "avat-lookers-combo-special-1",
+      "Lookers Combo Special",
+      "1",
+      "Avatar Press",
+      "1997-12-01",
+      "",
+      "",
+      "Lookers Combo Special #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "806239"
+      }
+    ],
+    [
+      "avat-dreamwalker-summer-rain-1",
+      "Dreamwalker: Summer Rain",
+      "1",
+      "Avatar Press",
+      "1999-07-21",
+      "",
+      "",
+      "Dreamwalker: Summer Rain #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1999-07-21",
+        "gcdIssueId": "806595"
+      }
+    ],
+    [
+      "avat-webwitch-prelude-to-war-1",
+      "Webwitch Prelude to War",
+      "1",
+      "Avatar Press",
+      "1998-02-01",
+      "",
+      "",
+      "Webwitch Prelude to War #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "806647"
+      }
+    ],
+    [
+      "avat-webwitch-war-2",
+      "Webwitch War",
+      "2",
+      "Avatar Press",
+      "1998-06-24",
+      "",
+      "",
+      "Webwitch War #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1998-06-24",
+        "gcdIssueId": "806696"
+      }
+    ],
+    [
+      "avat-mercy-nudes-1",
+      "Mercy Nudes",
+      "1",
+      "Avatar Press",
+      "1999-05-01",
+      "",
+      "",
+      "Mercy Nudes #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "806765"
+      }
+    ],
+    [
+      "avat-allura-nudes-1",
+      "Allura Nudes",
+      "1",
+      "Avatar Press",
+      "1999-08-01",
+      "",
+      "",
+      "Allura Nudes #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "807022"
+      }
+    ],
+    [
+      "avat-allura-special-1",
+      "Allura Special",
+      "1",
+      "Avatar Press",
+      "1998-07-01",
+      "",
+      "",
+      "Allura Special #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "807023"
+      }
+    ],
+    [
+      "avat-quantum-mechanics-1",
+      "Quantum Mechanics",
+      "1",
+      "Avatar Press",
+      "1999-04-01",
+      "",
+      "",
+      "Quantum Mechanics #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "807030"
+      }
+    ],
+    [
+      "avat-secrets-of-ravening-1",
+      "Secrets of the Ravening",
+      "1",
+      "Avatar Press",
+      "1999-08-01",
+      "",
+      "",
+      "Secrets of the Ravening #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "807031"
+      }
+    ],
+    [
+      "avat-nira-x-history-1",
+      "Nira X: History",
+      "1",
+      "Avatar Press",
+      "1999-04-01",
+      "",
+      "",
+      "Nira X: History #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1111334"
+      }
+    ],
+    [
+      "avat-furies-0",
+      "Furies",
+      "0",
+      "Avatar Press",
+      "1997-03-01",
+      "",
+      "",
+      "Furies #0",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1136933"
+      }
+    ],
+    [
+      "avat-faust-777-wraith-fearbook-nn",
+      "Faust 777: The Wraith Fearbook",
+      "[nn]",
+      "Avatar Press",
+      "1998-09-01",
+      "",
+      "",
+      "Faust 777: The Wraith Fearbook #[nn]",
+      15.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1145175"
+      }
+    ],
+    [
+      "avat-silhouette-special-1",
+      "Silhouette Special",
+      "1",
+      "Avatar Press",
+      "1997-06-01",
+      "",
+      "",
+      "Silhouette Special #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1155554"
+      }
+    ],
+    [
+      "avat-twilight-2",
+      "Twilight",
+      "2",
+      "Avatar Press",
+      "1997-03-01",
+      "",
+      "",
+      "Twilight #2",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1754236"
+      }
+    ],
+    [
+      "avat-twilight-live-wire-1",
+      "Twilight Live Wire",
+      "1",
+      "Avatar Press",
+      "1997-07-01",
+      "",
+      "",
+      "Twilight Live Wire #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1759285"
+      }
+    ],
+    [
+      "avat-nira-x-shoot-first-1",
+      "Nira X: Shoot First",
+      "1",
+      "Avatar Press",
+      "1997-12-01",
+      "",
+      "",
+      "Nira X: Shoot First #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2077623"
+      }
+    ],
+    [
+      "avat-nira-x-summer-splash-1",
+      "Nira X: Summer Splash",
+      "1",
+      "Avatar Press",
+      "1999-08-01",
+      "",
+      "",
+      "Nira X: Summer Splash #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2086262"
+      }
+    ],
+    [
+      "avat-vortex-cybersin-special-1",
+      "Vortex Cybersin Special",
+      "1",
+      "Avatar Press",
+      "1997-01-01",
+      "",
+      "",
+      "Vortex Cybersin Special #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2107343"
+      }
+    ],
+    [
+      "avat-alizarin-s-journal-1",
+      "Alizarin's Journal",
+      "1",
+      "Avatar Press",
+      "1999-01-01",
+      "",
+      "",
+      "Alizarin's Journal #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2505542"
+      }
+    ],
+    [
+      "avat-creed-use-your-delusion-collected-edition-1",
+      "Creed: Use Your Delusion Collected Edition",
+      "1",
+      "Avatar Press",
+      "1998-12-01",
+      "",
+      "",
+      "Creed: Use Your Delusion Collected Edition #1",
+      3.95,
+      "tpb",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2512875"
+      }
+    ],
+    [
+      "avat-silent-rapture-1",
+      "Silent Rapture",
+      "1",
+      "Avatar Press",
+      "1997-01-01",
+      "",
+      "",
+      "Silent Rapture #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2522707"
+      }
+    ],
+    [
+      "avat-avengelyne-pandora-preview-nn",
+      "Avengelyne / Pandora Preview",
+      "[nn]",
+      "Avatar Press",
+      "1999-12-01",
+      "",
+      "",
+      "Avengelyne / Pandora Preview #[nn]",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2760348"
+      }
+    ],
+    [
+      "mass-plot-holes-1",
+      "The Plot Holes",
+      "1",
+      "Massive",
+      "2023-08-30",
+      "",
+      "",
+      "The Plot Holes #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72355236063600111",
+        "streetDate": "2023-08-30",
+        "gcdIssueId": "2570962"
+      }
+    ],
+    [
+      "mass-hellicious-1",
+      "Hellicious",
+      "1",
+      "Massive",
+      "2023-11-22",
+      "",
+      "",
+      "Hellicious #1",
+      4.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72355236069800111",
+        "streetDate": "2023-11-22",
+        "gcdIssueId": "2607300"
+      }
+    ],
+    [
+      "mass-assassin-s-creed-visionaries-1",
+      "Assassin's Creed Visionaries",
+      "1",
+      "Massive",
+      "2023-11-29",
+      "",
+      "",
+      "Assassin's Creed Visionaries #1",
+      4.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72355236074200111",
+        "streetDate": "2023-11-29",
+        "gcdIssueId": "2609263"
+      }
+    ],
+    [
+      "mass-blackout-bombshell-3",
+      "The Blackout Bombshell",
+      "3",
+      "Massive",
+      "2023-11-01",
+      "",
+      "",
+      "The Blackout Bombshell #3",
+      5.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "81013165010000311",
+        "gcdIssueId": "2609279"
+      }
+    ],
+    [
+      "mass-misfortune-s-eyes-1",
+      "Misfortune's Eyes",
+      "1",
+      "Massive",
+      "2024-03-20",
+      "",
+      "",
+      "Misfortune's Eyes #1",
+      4.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "81013165007000111",
+        "streetDate": "2024-03-20",
+        "gcdIssueId": "2618194"
+      }
+    ],
+    [
+      "mass-eye-lie-popeye-free-comic-book-1",
+      "Eye Lie Popeye Free Comic Book Day Preview",
+      "1",
+      "Massive",
+      "2024-05-04",
+      "",
+      "",
+      "Eye Lie Popeye Free Comic Book Day Preview #1",
+      0.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72355236079700111",
+        "streetDate": "2024-05-04",
+        "gcdIssueId": "2627358"
+      }
+    ],
+    [
+      "mass-whatnot-publishing-sampler-nn",
+      "Whatnot Publishing Sampler",
+      "[nn]",
+      "Massive",
+      "2022-01-01",
+      "",
+      "",
+      "Whatnot Publishing Sampler #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2792177"
+      }
+    ],
+    [
+      "scho-bananas-45",
+      "Bananas",
+      "45",
+      "Scholastic",
+      "1981-01-01",
+      "",
+      "",
+      "Bananas #45",
+      1.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "875281"
+      }
+    ],
+    [
+      "scho-bananas-54",
+      "Bananas",
+      "54",
+      "Scholastic",
+      "1982-01-01",
+      "",
+      "",
+      "Bananas #54",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "567523"
+      }
+    ],
+    [
+      "scho-confessions-of-teenage-vampire-zombie-saturday-nn",
+      "Confessions of a Teenage Vampire -- Zombie Saturday Night",
+      "[nn]",
+      "Scholastic",
+      "1997-07-10",
+      "",
+      "",
+      "Confessions of a Teenage Vampire -- Zombie Saturday Night #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "64863"
+      }
+    ],
+    [
+      "scho-animaniacs-get-dezanitized-nn",
+      "The Animaniacs Get Dezanitized",
+      "[nn]",
+      "Scholastic",
+      "1996-09-01",
+      "",
+      "",
+      "The Animaniacs Get Dezanitized #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "767748"
+      }
+    ],
+    [
+      "scho-dating-hanging-out-30031",
+      "Dating & Hanging Out",
+      "30031",
+      "Scholastic",
+      "1987-01-01",
+      "",
+      "",
+      "Dating & Hanging Out #30031",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "886773"
+      }
+    ],
+    [
+      "scho-tornadoes-can-make-it-rain-crabs-nn",
+      "Tornadoes Can Make It Rain Crabs",
+      "[nn]",
+      "Scholastic",
+      "1997-03-01",
+      "",
+      "",
+      "Tornadoes Can Make It Rain Crabs #[nn]",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07807300299393995",
+        "gcdIssueId": "1317283"
+      }
+    ],
+    [
+      "scho-maus-survivor-s-tale-1",
+      "Maus: A Survivor's Tale",
+      "1",
+      "Scholastic",
+      "1992-10-01",
+      "",
+      "",
+      "My Father Bleeds History",
+      0.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1683954"
+      }
+    ],
+    [
+      "scho-lion-witch-and-wardrobe-nn",
+      "The Lion, the Witch and the Wardrobe",
+      "[nn]",
+      "Scholastic",
+      "1996-01-01",
+      "",
+      "",
+      "The Lion, the Witch and the Wardrobe #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1808468"
+      }
+    ],
+    [
+      "scho-demeter-and-persephone-nn",
+      "Demeter and Persephone",
+      "[nn]",
+      "Scholastic",
+      "1999-01-01",
+      "",
+      "",
+      "Demeter and Persephone #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978043905674890000",
+        "gcdIssueId": "1860526"
+      }
+    ],
+    [
+      "scho-you-know-you-re-really-in-nn",
+      "You Know You're Really in Love When... / You Know It's Time to Break Up When...",
+      "[nn]",
+      "Scholastic",
+      "1980-06-01",
+      "",
+      "",
+      "You Know You're Really in Love When... / You Know It's Time to Break Up When... #[nn]",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2371643"
+      }
+    ],
+    [
+      "scho-sparks-2018-nn",
+      "Sparks!",
+      "[nn]",
+      "Scholastic",
+      "2018-01-01",
+      "",
+      "",
+      "Sparks! #[nn]",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2381705"
+      }
+    ],
+    [
+      "scho-bringing-up-your-parents-30351",
+      "Bringing Up Your Parents",
+      "30351",
+      "Scholastic",
+      "1987-01-01",
+      "",
+      "",
+      "Bringing Up Your Parents #30351",
+      0.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2827035"
+      }
+    ]
+  ]
+}
