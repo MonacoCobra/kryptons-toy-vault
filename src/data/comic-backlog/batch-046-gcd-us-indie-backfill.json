@@ -1,0 +1,9190 @@
+{
+  "id": "batch-046-gcd-us-indie-backfill",
+  "title": "GCD gap-fill: Image/Dark Horse/IDW/Viz/Eclipse/Kitchen Sink/Antarctic densify",
+  "created": "2026-10-06",
+  "status": "queued",
+  "focus": "Weekday vault gap fill 2026-10-06; GCD dump mains-only; floor 1980; US publishers Image (2001+ only; 1985-2000 is Glyph's WildStorm lane), Dark Horse, IDW, Viz (US floppies), Eclipse, Kitchen Sink, Antarctic; USD-priced <= $9.99; verified gcdIssueId; deduped vs catalog incl. year-suffixed labels and same title+issue within a year; per-series cap 20, per-publisher cap 90",
+  "source": "gcd-dump",
+  "addedCount": 493,
+  "byPublisher": {
+    "Viz": 90,
+    "Antarctic Press": 90,
+    "Kitchen Sink Press": 90,
+    "Eclipse": 90,
+    "Dark Horse": 62,
+    "Image": 50,
+    "IDW": 21
+  },
+  "rows": [
+    [
+      "idw-godzilla-70th-anniversary-foil-classics--2025-nn",
+      "Godzilla 70th Anniversary Foil Classics: Godzilla in Hell #1",
+      "[nn]",
+      "IDW",
+      "2025-08-20",
+      "",
+      "",
+      "Godzilla 70th Anniversary Foil Classics: Godzilla in Hell #1 #[nn]",
+      9.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771403451600111",
+        "streetDate": "2025-08-20",
+        "gcdIssueId": "2764740"
+      }
+    ],
+    [
+      "dh-star-wars-the-high-republic-adventures-p-2025-1",
+      "Star Wars: The High Republic Adventures (Phase III) - The Battle of Eriadu",
+      "1",
+      "Dark Horse",
+      "2025-04-30",
+      "",
+      "",
+      "Star Wars: The High Republic Adventures (Phase III) - The Battle of Eriadu #1",
+      5.99,
+      "single",
+      0.8,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156801393100111",
+        "streetDate": "2025-04-30",
+        "gcdIssueId": "2728252"
+      }
+    ],
+    [
+      "im-g-i-joe-a-real-american-hero-duke-2025-1",
+      "G.I. Joe: A Real American Hero – Duke",
+      "1",
+      "Image",
+      "2025-04-30",
+      "",
+      "",
+      "G.I. Joe: A Real American Hero – Duke #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985304287700111",
+        "streetDate": "2025-04-30",
+        "gcdIssueId": "2728250"
+      }
+    ],
+    [
+      "im-g-i-joe-a-real-american-hero-roadblock-2025-1",
+      "G.I. Joe: A Real American Hero – Roadblock",
+      "1",
+      "Image",
+      "2025-04-23",
+      "",
+      "",
+      "G.I. Joe: A Real American Hero – Roadblock #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985304289100111",
+        "streetDate": "2025-04-23",
+        "gcdIssueId": "2727933"
+      }
+    ],
+    [
+      "im-g-i-joe-a-real-american-hero-spirit-2025-1",
+      "G.I. Joe: A Real American Hero – Spirit",
+      "1",
+      "Image",
+      "2025-04-16",
+      "",
+      "",
+      "G.I. Joe: A Real American Hero – Spirit #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985304291400111",
+        "streetDate": "2025-04-16",
+        "gcdIssueId": "2723980"
+      }
+    ],
+    [
+      "im-g-i-joe-a-real-american-hero-jinx-2025-1",
+      "G.I. Joe: A Real American Hero – Jinx",
+      "1",
+      "Image",
+      "2025-04-09",
+      "",
+      "",
+      "G.I. Joe: A Real American Hero – Jinx #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985304288400111",
+        "streetDate": "2025-04-09",
+        "gcdIssueId": "2722871"
+      }
+    ],
+    [
+      "dh-star-wars-the-high-republic-adventures-p-2024-4",
+      "Star Wars: The High Republic Adventures (Phase III) - Dispatches from the Occlusion Zone",
+      "4",
+      "Dark Horse",
+      "2025-01-29",
+      "",
+      "",
+      "Star Wars: The High Republic Adventures (Phase III) - Dispatches from the Occlusion Zone #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156801287300411",
+        "streetDate": "2025-01-29",
+        "gcdIssueId": "2706260"
+      }
+    ],
+    [
+      "im-criminal-2025-1",
+      "Criminal (2025)",
+      "1",
+      "Image",
+      "2025-01-22",
+      "",
+      "",
+      "Coward",
+      9.99,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "978153437090650999",
+        "streetDate": "2025-02-04",
+        "gcdIssueId": "2759348"
+      }
+    ],
+    [
+      "dh-star-wars-the-high-republic-adventures-p-2024-1-g2686575",
+      "Star Wars: The High Republic Adventures (Phase III) - The Wedding Spectacular",
+      "1",
+      "Dark Horse",
+      "2024-12-18",
+      "",
+      "",
+      "Star Wars: The High Republic Adventures (Phase III) - The Wedding Spectacular #1",
+      5.99,
+      "single",
+      0.8,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156801315300111",
+        "streetDate": "2024-12-18",
+        "gcdIssueId": "2686575"
+      }
+    ],
+    [
+      "dh-star-wars-the-high-republic-adventures-p-2024-3",
+      "Star Wars: The High Republic Adventures (Phase III) - Dispatches from the Occlusion Zone",
+      "3",
+      "Dark Horse",
+      "2024-12-18",
+      "",
+      "",
+      "Star Wars: The High Republic Adventures (Phase III) - Dispatches from the Occlusion Zone #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156801287300311",
+        "streetDate": "2024-12-18",
+        "gcdIssueId": "2687588"
+      }
+    ],
+    [
+      "dh-star-wars-the-high-republic-adventures-p-2024-2",
+      "Star Wars: The High Republic Adventures (Phase III) - Dispatches from the Occlusion Zone",
+      "2",
+      "Dark Horse",
+      "2024-11-27",
+      "",
+      "",
+      "Star Wars: The High Republic Adventures (Phase III) - Dispatches from the Occlusion Zone #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156801287300211",
+        "streetDate": "2024-11-27",
+        "gcdIssueId": "2682312"
+      }
+    ],
+    [
+      "dh-star-wars-the-high-republic-adventures-p-2024-1",
+      "Star Wars: The High Republic Adventures (Phase III) - Dispatches from the Occlusion Zone",
+      "1",
+      "Dark Horse",
+      "2024-10-09",
+      "",
+      "",
+      "Star Wars: The High Republic Adventures (Phase III) - Dispatches from the Occlusion Zone #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156801287300111",
+        "streetDate": "2024-10-09",
+        "gcdIssueId": "2662934"
+      }
+    ],
+    [
+      "dh-hellboy-and-the-b-p-r-d-1957-from-below-2023-nn",
+      "Hellboy and the B.P.R.D.: 1957 – From Below",
+      "[nn]",
+      "Dark Horse",
+      "2023-08-02",
+      "",
+      "",
+      "Hellboy and the B.P.R.D.: 1957 – From Below #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156800950700111",
+        "streetDate": "2023-08-02",
+        "gcdIssueId": "2560090"
+      }
+    ],
+    [
+      "dh-hellboy-and-the-b-p-r-d-1957-falling-sky-2022-nn",
+      "Hellboy and the B.P.R.D.: 1957 - Falling Sky",
+      "[nn]",
+      "Dark Horse",
+      "2022-08-10",
+      "",
+      "",
+      "Hellboy and the B.P.R.D.: 1957 - Falling Sky #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156800907100111",
+        "streetDate": "2022-08-10",
+        "gcdIssueId": "2424617"
+      }
+    ],
+    [
+      "idw-g-i-joe-a-real-american-hero-best-of-sto-2022-nn",
+      "G.I. Joe a Real American Hero - Best of Storm Shadow",
+      "[nn]",
+      "IDW",
+      "2022-08-10",
+      "",
+      "",
+      "G.I. Joe a Real American Hero - Best of Storm Shadow #[nn]",
+      6.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771403072300111",
+        "streetDate": "2022-08-10",
+        "gcdIssueId": "2424829"
+      }
+    ],
+    [
+      "dh-hellboy-and-the-b-p-r-d-time-is-a-river-2022-nn",
+      "Hellboy and the B.P.R.D.: Time Is a River",
+      "[nn]",
+      "Dark Horse",
+      "2022-07-20",
+      "",
+      "",
+      "Hellboy and the B.P.R.D.: Time Is a River #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156800984200111",
+        "streetDate": "2022-07-20",
+        "gcdIssueId": "2419581"
+      }
+    ],
+    [
+      "idw-g-i-joe-a-real-american-hero-best-of-sna-2022-nn",
+      "G.I. Joe a Real American Hero - Best of Snake Eyes",
+      "[nn]",
+      "IDW",
+      "2022-07-20",
+      "",
+      "",
+      "G.I. Joe a Real American Hero - Best of Snake Eyes #[nn]",
+      6.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771403058700111",
+        "streetDate": "2022-07-20",
+        "gcdIssueId": "2419920"
+      }
+    ],
+    [
+      "dh-hellboy-and-the-b-p-r-d-old-man-whittier-2022-nn",
+      "Hellboy and the B.P.R.D.: Old Man Whittier",
+      "[nn]",
+      "Dark Horse",
+      "2022-06-29",
+      "",
+      "",
+      "Hellboy and the B.P.R.D.: Old Man Whittier #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156800948400111",
+        "streetDate": "2022-06-29",
+        "gcdIssueId": "2415769"
+      }
+    ],
+    [
+      "dh-hellboy-and-the-b-p-r-d-night-of-the-cyc-2022-nn",
+      "Hellboy and the B.P.R.D.: Night of the Cyclops",
+      "[nn]",
+      "Dark Horse",
+      "2022-05-25",
+      "",
+      "",
+      "Hellboy and the B.P.R.D.: Night of the Cyclops #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156800944600111",
+        "streetDate": "2022-05-25",
+        "gcdIssueId": "2405780"
+      }
+    ],
+    [
+      "idw-g-i-joe-a-real-american-hero-40th-annive-2022-nn",
+      "G.I. Joe: A Real American Hero - 40th Anniversary Special",
+      "[nn]",
+      "IDW",
+      "2022-04-13",
+      "",
+      "",
+      "G.I. Joe: A Real American Hero - 40th Anniversary Special #[nn]",
+      7.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771403049500111",
+        "streetDate": "2022-04-13",
+        "gcdIssueId": "2389388"
+      }
+    ],
+    [
+      "idw-g-i-joe-a-real-american-hero-cobraaaa-2022-nn",
+      "G.I. Joe a Real American Hero - Cobraaaa!",
+      "[nn]",
+      "IDW",
+      "2022-03-01",
+      "",
+      "",
+      "G.I. Joe a Real American Hero - Cobraaaa! #[nn]",
+      7.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771403043300111",
+        "streetDate": "2022-04-27",
+        "gcdIssueId": "2398605"
+      }
+    ],
+    [
+      "dh-hellboy-and-the-b-p-r-d-1957-family-ties-2021-nn",
+      "Hellboy and the B.P.R.D.: 1957 - Family Ties",
+      "[nn]",
+      "Dark Horse",
+      "2021-09-15",
+      "",
+      "",
+      "Hellboy and the B.P.R.D.: 1957 - Family Ties #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156800854800111",
+        "streetDate": "2021-09-15",
+        "gcdIssueId": "2262156"
+      }
+    ],
+    [
+      "dh-hellboy-and-the-b-p-r-d-her-fatal-hour-a-2020-nn",
+      "Hellboy and the B.P.R.D.: Her Fatal Hour and the Sending",
+      "[nn]",
+      "Dark Horse",
+      "2020-12-02",
+      "",
+      "",
+      "Hellboy and the B.P.R.D.: Her Fatal Hour and the Sending #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156800671100111",
+        "streetDate": "2020-12-02",
+        "gcdIssueId": "2171193"
+      }
+    ],
+    [
+      "dh-hellboy-and-the-b-p-r-d-the-seven-wives--2020-nn",
+      "Hellboy and the B.P.R.D.: The Seven Wives Club",
+      "[nn]",
+      "Dark Horse",
+      "2020-11-11",
+      "",
+      "",
+      "Hellboy and the B.P.R.D.: The Seven Wives Club #[nn]",
+      4.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156800585100111",
+        "streetDate": "2020-11-11",
+        "gcdIssueId": "2162291"
+      }
+    ],
+    [
+      "idw-g-i-joe-a-real-american-hero-snake-eyes--2020-nn",
+      "G.I. Joe: A Real American Hero: Snake Eyes: The Origin",
+      "[nn]",
+      "IDW",
+      "2020-08-12",
+      "",
+      "",
+      "G.I. Joe: A Real American Hero: Snake Eyes: The Origin #[nn]",
+      4.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771401963600111",
+        "streetDate": "2020-08-12",
+        "gcdIssueId": "2133619"
+      }
+    ],
+    [
+      "dh-hellboy-and-the-b-p-r-d-long-night-at-go-2019-nn",
+      "Hellboy and the B.P.R.D.: Long Night at Goloski Station",
+      "[nn]",
+      "Dark Horse",
+      "2019-10-30",
+      "",
+      "",
+      "Hellboy and the B.P.R.D.: Long Night at Goloski Station #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156800564600111",
+        "streetDate": "2019-10-30",
+        "gcdIssueId": "2028566"
+      }
+    ],
+    [
+      "idw-ghostbusters-35th-anniversary-the-real-g-2019-nn",
+      "Ghostbusters 35th Anniversary: The Real Ghostbusters: One-Shot",
+      "[nn]",
+      "IDW",
+      "2019-04-10",
+      "",
+      "",
+      "Ghostbusters 35th Anniversary: The Real Ghostbusters: One-Shot #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771401764900111",
+        "streetDate": "2019-04-10",
+        "gcdIssueId": "1948105"
+      }
+    ],
+    [
+      "idw-g-i-joe-a-real-american-hero-vs-the-six--2018-4",
+      "G.I. Joe: A Real American Hero vs. The Six Million Dollar Man",
+      "4",
+      "IDW",
+      "2018-05-01",
+      "",
+      "",
+      "G.I. Joe: A Real American Hero vs. The Six Million Dollar Man #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771401476100411",
+        "gcdIssueId": "2638019"
+      }
+    ],
+    [
+      "idw-g-i-joe-a-real-american-hero-vs-the-six--2018-3",
+      "G.I. Joe: A Real American Hero vs. The Six Million Dollar Man",
+      "3",
+      "IDW",
+      "2018-04-01",
+      "",
+      "",
+      "G.I. Joe: A Real American Hero vs. The Six Million Dollar Man #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771401476100311",
+        "gcdIssueId": "2638018"
+      }
+    ],
+    [
+      "idw-g-i-joe-a-real-american-hero-vs-the-six--2018-2",
+      "G.I. Joe: A Real American Hero vs. The Six Million Dollar Man",
+      "2",
+      "IDW",
+      "2018-03-01",
+      "",
+      "",
+      "G.I. Joe: A Real American Hero vs. The Six Million Dollar Man #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771401476100211",
+        "gcdIssueId": "2638017"
+      }
+    ],
+    [
+      "idw-g-i-joe-a-real-american-hero-1-anniversa-2018-nn",
+      "G.I. Joe: A Real American Hero #1: Anniversary Edition",
+      "[nn]",
+      "IDW",
+      "2018-03-01",
+      "",
+      "",
+      "G.I. Joe: A Real American Hero #1: Anniversary Edition #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771401506500111",
+        "gcdIssueId": "2721360"
+      }
+    ],
+    [
+      "idw-g-i-joe-a-real-american-hero-vs-the-six--2018-1",
+      "G.I. Joe: A Real American Hero vs. The Six Million Dollar Man",
+      "1",
+      "IDW",
+      "2018-02-01",
+      "",
+      "",
+      "G.I. Joe: A Real American Hero vs. The Six Million Dollar Man #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771401476100111",
+        "gcdIssueId": "2638016"
+      }
+    ],
+    [
+      "idw-dirk-gently-s-holistic-detective-agency--2016-3",
+      "Dirk Gently's Holistic Detective Agency: The Salmon of Doubt",
+      "3",
+      "IDW",
+      "2016-12-07",
+      "",
+      "",
+      "Dirk Gently's Holistic Detective Agency: The Salmon of Doubt #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771401167800311",
+        "streetDate": "2016-12-07",
+        "gcdIssueId": "1657974"
+      }
+    ],
+    [
+      "im-rat-queens-2013-16",
+      "Rat Queens",
+      "16",
+      "Image",
+      "2016-05-04",
+      "",
+      "",
+      "Rat Queens #16",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301437901611",
+        "streetDate": "2016-05-04",
+        "gcdIssueId": "1562817"
+      }
+    ],
+    [
+      "im-stray-bullets-sunshine-roses-2015-4",
+      "Stray Bullets: Sunshine & Roses",
+      "4",
+      "Image",
+      "2015-05-20",
+      "",
+      "",
+      "Stray Bullets: Sunshine & Roses #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301836000411",
+        "streetDate": "2015-05-20",
+        "gcdIssueId": "1358531"
+      }
+    ],
+    [
+      "im-stray-bullets-sunshine-roses-2015-3",
+      "Stray Bullets: Sunshine & Roses",
+      "3",
+      "Image",
+      "2015-04-15",
+      "",
+      "",
+      "Stray Bullets: Sunshine & Roses #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301836000311",
+        "streetDate": "2015-04-15",
+        "gcdIssueId": "1339866"
+      }
+    ],
+    [
+      "im-rat-queens-2013-10",
+      "Rat Queens",
+      "10",
+      "Image",
+      "2015-04-08",
+      "",
+      "",
+      "Rat Queens #10",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301437901011",
+        "streetDate": "2015-04-08",
+        "gcdIssueId": "1339830"
+      }
+    ],
+    [
+      "im-stray-bullets-sunshine-roses-2015-2",
+      "Stray Bullets: Sunshine & Roses",
+      "2",
+      "Image",
+      "2015-03-18",
+      "",
+      "",
+      "Stray Bullets: Sunshine & Roses #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301836000211",
+        "streetDate": "2015-03-18",
+        "gcdIssueId": "1331160"
+      }
+    ],
+    [
+      "im-rat-queens-2013-9",
+      "Rat Queens",
+      "9",
+      "Image",
+      "2015-03-04",
+      "",
+      "",
+      "Rat Queens #9",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301437900911",
+        "streetDate": "2015-03-04",
+        "gcdIssueId": "1326671"
+      }
+    ],
+    [
+      "im-stray-bullets-sunshine-roses-2015-1",
+      "Stray Bullets: Sunshine & Roses",
+      "1",
+      "Image",
+      "2015-02-04",
+      "",
+      "",
+      "Stray Bullets: Sunshine & Roses #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301836000111",
+        "streetDate": "2015-02-04",
+        "gcdIssueId": "1317442"
+      }
+    ],
+    [
+      "dh-tomb-raider-2014-12",
+      "Tomb Raider",
+      "12",
+      "Dark Horse",
+      "2015-01-01",
+      "",
+      "",
+      "Tomb Raider #12",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156822838001211",
+        "streetDate": "2015-01-28",
+        "gcdIssueId": "1310217"
+      }
+    ],
+    [
+      "dh-tomb-raider-2014-11",
+      "Tomb Raider",
+      "11",
+      "Dark Horse",
+      "2014-12-01",
+      "",
+      "",
+      "Tomb Raider #11",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156822838001111",
+        "streetDate": "2014-12-24",
+        "gcdIssueId": "1296999"
+      }
+    ],
+    [
+      "dh-tomb-raider-2014-10",
+      "Tomb Raider",
+      "10",
+      "Dark Horse",
+      "2014-11-01",
+      "",
+      "",
+      "Tomb Raider #10",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156822838001011",
+        "streetDate": "2014-11-26",
+        "gcdIssueId": "1284461"
+      }
+    ],
+    [
+      "dh-tomb-raider-2014-9",
+      "Tomb Raider",
+      "9",
+      "Dark Horse",
+      "2014-10-01",
+      "",
+      "",
+      "Tomb Raider #9",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156822838000911",
+        "streetDate": "2014-10-22",
+        "gcdIssueId": "1265445"
+      }
+    ],
+    [
+      "dh-tomb-raider-2014-8",
+      "Tomb Raider",
+      "8",
+      "Dark Horse",
+      "2014-09-01",
+      "",
+      "",
+      "Tomb Raider #8",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156822838000811",
+        "streetDate": "2014-09-24",
+        "gcdIssueId": "1256113"
+      }
+    ],
+    [
+      "im-outcast-by-kirkman-azaceta-2014-3",
+      "Outcast by Kirkman & Azaceta",
+      "3",
+      "Image",
+      "2014-08-27",
+      "",
+      "",
+      "Outcast by Kirkman & Azaceta #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301639700311",
+        "streetDate": "2014-08-27",
+        "gcdIssueId": "1248323"
+      }
+    ],
+    [
+      "dh-tomb-raider-2014-7",
+      "Tomb Raider",
+      "7",
+      "Dark Horse",
+      "2014-08-01",
+      "",
+      "",
+      "Tomb Raider #7",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156822838000711",
+        "streetDate": "2014-08-27",
+        "gcdIssueId": "1248226"
+      }
+    ],
+    [
+      "im-cyber-force-2012-10",
+      "Cyber Force",
+      "10",
+      "Image",
+      "2014-08-01",
+      "",
+      "",
+      "Cyber Force #10",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301231301011",
+        "streetDate": "2014-08-06",
+        "gcdIssueId": "1246049"
+      }
+    ],
+    [
+      "im-outcast-by-kirkman-azaceta-2014-2",
+      "Outcast by Kirkman & Azaceta",
+      "2",
+      "Image",
+      "2014-07-30",
+      "",
+      "",
+      "Outcast by Kirkman & Azaceta #2",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301639700211",
+        "streetDate": "2014-07-30",
+        "gcdIssueId": "1245350"
+      }
+    ],
+    [
+      "dh-tomb-raider-2014-6",
+      "Tomb Raider",
+      "6",
+      "Dark Horse",
+      "2014-07-01",
+      "",
+      "",
+      "Tomb Raider #6",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156822838000611",
+        "streetDate": "2014-07-23",
+        "gcdIssueId": "1244938"
+      }
+    ],
+    [
+      "im-death-vigil-2014-1",
+      "Death Vigil",
+      "1",
+      "Image",
+      "2014-07-01",
+      "",
+      "",
+      "Death Vigil #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301660100111",
+        "streetDate": "2014-07-09",
+        "gcdIssueId": "1236840"
+      }
+    ],
+    [
+      "dh-tomb-raider-2014-5",
+      "Tomb Raider",
+      "5",
+      "Dark Horse",
+      "2014-06-01",
+      "",
+      "",
+      "Tomb Raider #5",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156822838000511",
+        "streetDate": "2014-06-25",
+        "gcdIssueId": "1216099"
+      }
+    ],
+    [
+      "dh-tomb-raider-2014-4",
+      "Tomb Raider",
+      "4",
+      "Dark Horse",
+      "2014-05-01",
+      "",
+      "",
+      "Tomb Raider #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156822838000411",
+        "streetDate": "2014-05-28",
+        "gcdIssueId": "1208377"
+      }
+    ],
+    [
+      "im-cyber-force-2012-9",
+      "Cyber Force",
+      "9",
+      "Image",
+      "2014-05-01",
+      "",
+      "",
+      "Cyber Force #9",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301231300911",
+        "streetDate": "2014-05-07",
+        "gcdIssueId": "1204167"
+      }
+    ],
+    [
+      "im-cyber-force-2012-8",
+      "Cyber Force",
+      "8",
+      "Image",
+      "2014-01-01",
+      "",
+      "",
+      "Cyber Force #8",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985301231300811",
+        "streetDate": "2014-01-29",
+        "gcdIssueId": "1175558"
+      }
+    ],
+    [
+      "idw-t-h-u-n-d-e-r-agents-classics-hundred-pe-2013-1",
+      "T.H.U.N.D.E.R. Agents Classics Hundred Penny Press",
+      "1",
+      "IDW",
+      "2013-10-01",
+      "",
+      "",
+      "T.H.U.N.D.E.R. Agents Classics Hundred Penny Press #1",
+      1.0,
+      "single",
+      0.8,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771400520200111",
+        "streetDate": "2013-10-16",
+        "gcdIssueId": "1148599"
+      }
+    ],
+    [
+      "idw-doctor-who-2012-12",
+      "Doctor Who (2012)",
+      "12",
+      "IDW",
+      "2013-08-01",
+      "",
+      "",
+      "Doctor Who #12",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771400379601211",
+        "streetDate": "2013-08-14",
+        "gcdIssueId": "1136775"
+      }
+    ],
+    [
+      "idw-doctor-who-2012-11",
+      "Doctor Who (2012)",
+      "11",
+      "IDW",
+      "2013-07-01",
+      "",
+      "",
+      "Doctor Who #11",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771400379601111",
+        "streetDate": "2013-07-24",
+        "gcdIssueId": "1131295"
+      }
+    ],
+    [
+      "idw-doctor-who-2012-10",
+      "Doctor Who (2012)",
+      "10",
+      "IDW",
+      "2013-06-19",
+      "",
+      "",
+      "Doctor Who #10",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771400379601011",
+        "streetDate": "2013-06-19",
+        "gcdIssueId": "1120921"
+      }
+    ],
+    [
+      "idw-doctor-who-2012-9",
+      "Doctor Who (2012)",
+      "9",
+      "IDW",
+      "2013-05-22",
+      "",
+      "",
+      "Doctor Who #9",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "streetDate": "2013-05-22",
+        "gcdIssueId": "1115027"
+      }
+    ],
+    [
+      "idw-doctor-who-2012-8",
+      "Doctor Who (2012)",
+      "8",
+      "IDW",
+      "2013-04-17",
+      "",
+      "",
+      "Doctor Who #8",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771400379600811",
+        "streetDate": "2013-04-17",
+        "gcdIssueId": "1103280"
+      }
+    ],
+    [
+      "dh-snow-angel-2013-nn",
+      "Snow Angel (2013)",
+      "[nn]",
+      "Dark Horse",
+      "2013-04-03",
+      "",
+      "",
+      "Snow Angel #[nn]",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156822443600111",
+        "streetDate": "2013-04-03",
+        "gcdIssueId": "1562857"
+      }
+    ],
+    [
+      "idw-doctor-who-2012-7",
+      "Doctor Who (2012)",
+      "7",
+      "IDW",
+      "2013-03-27",
+      "",
+      "",
+      "Doctor Who #7",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771400379600711",
+        "streetDate": "2013-03-27",
+        "gcdIssueId": "1096783"
+      }
+    ],
+    [
+      "dh-b-p-r-d-hell-on-earth-the-return-of-the--2012-4",
+      "B.P.R.D. Hell on Earth: The Return of the Master",
+      "4",
+      "Dark Horse",
+      "2012-11-01",
+      "",
+      "",
+      "B.P.R.D. Hell on Earth: The Return of the Master #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "2425365"
+      }
+    ],
+    [
+      "idw-the-transformers-2009-26",
+      "Transformers (2009)",
+      "26",
+      "IDW",
+      "2011-09-01",
+      "",
+      "",
+      "Transformers #26",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "166534,1e3a8a,dc2626",
+      {
+        "upc": "82771400109902611",
+        "streetDate": "2011-09-21",
+        "gcdIssueId": "878109"
+      }
+    ],
+    [
+      "dh-criminal-macabre-no-peace-for-dead-men-2011-nn",
+      "Criminal Macabre: No Peace for Dead Men (2011)",
+      "[nn]",
+      "Dark Horse",
+      "2011-09-01",
+      "",
+      "",
+      "Criminal Macabre: No Peace for Dead Men #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "76156817286700111",
+        "gcdIssueId": "1541713"
+      }
+    ],
+    [
+      "dh-emily-the-strange-2009-4",
+      "Emily the Strange (2009)",
+      "4",
+      "Dark Horse",
+      "2010-10-01",
+      "",
+      "",
+      "Emily the Strange #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "757312"
+      }
+    ],
+    [
+      "dh-emily-the-strange-2009-1",
+      "Emily the Strange (2009)",
+      "1",
+      "Dark Horse",
+      "2009-07-01",
+      "",
+      "",
+      "Emily the Strange #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "666487"
+      }
+    ],
+    [
+      "im-firebreather-2008-1",
+      "Firebreather (2008)",
+      "1",
+      "Image",
+      "2008-06-01",
+      "",
+      "",
+      "Firebreather #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300578000111",
+        "gcdIssueId": "576177"
+      }
+    ],
+    [
+      "dh-star-wars-episode-iii-revenge-of-the-sit-2007-nn",
+      "Star Wars: Episode III - Revenge of the Sith (2007)",
+      "[nn]",
+      "Dark Horse",
+      "2007-11-21",
+      "",
+      "",
+      "Star Wars: Episode III - Revenge of the Sith #[nn]",
+      9.95,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "upc": "978159307856050995",
+        "streetDate": "2007-11-21",
+        "gcdIssueId": "715391"
+      }
+    ],
+    [
+      "im-lazarus-2007-2",
+      "Lazarus (2007)",
+      "2",
+      "Image",
+      "2007-11-01",
+      "",
+      "",
+      "Lazarus #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300518600211",
+        "gcdIssueId": "394460"
+      }
+    ],
+    [
+      "im-lazarus-2007-1",
+      "Lazarus (2007)",
+      "1",
+      "Image",
+      "2007-10-01",
+      "",
+      "",
+      "Lazarus #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300518600111",
+        "gcdIssueId": "394459"
+      }
+    ],
+    [
+      "im-compass-2007-1",
+      "Compass (2007)",
+      "1",
+      "Image",
+      "2007-09-01",
+      "",
+      "",
+      "Compass #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "697612"
+      }
+    ],
+    [
+      "im-impaler-2006-2",
+      "Impaler (2006)",
+      "2",
+      "Image",
+      "2006-11-01",
+      "",
+      "",
+      "Impaler #2",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "765387"
+      }
+    ],
+    [
+      "im-impaler-2006-1",
+      "Impaler (2006)",
+      "1",
+      "Image",
+      "2006-10-01",
+      "",
+      "",
+      "Impaler #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300428800111",
+        "gcdIssueId": "765386"
+      }
+    ],
+    [
+      "im-casanova-2006-3",
+      "Casanova",
+      "3",
+      "Image",
+      "2006-08-10",
+      "",
+      "",
+      "Casanova #3",
+      1.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "298487"
+      }
+    ],
+    [
+      "im-casanova-2006-2",
+      "Casanova",
+      "2",
+      "Image",
+      "2006-07-01",
+      "",
+      "",
+      "Casanova #2",
+      1.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "298486"
+      }
+    ],
+    [
+      "im-ant-2005-6",
+      "Ant",
+      "6",
+      "Image",
+      "2006-06-28",
+      "",
+      "",
+      "Ant #6",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300348900611",
+        "streetDate": "2006-06-28",
+        "gcdIssueId": "503660"
+      }
+    ],
+    [
+      "im-casanova-2006-1",
+      "Casanova",
+      "1",
+      "Image",
+      "2006-06-01",
+      "",
+      "",
+      "Casanova #1",
+      1.99,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "gcdIssueId": "298485"
+      }
+    ],
+    [
+      "im-bomb-queen-2006-4",
+      "Bomb Queen (2006)",
+      "4",
+      "Image",
+      "2006-05-17",
+      "",
+      "",
+      "Bomb Queen #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300376200411",
+        "streetDate": "2006-05-17",
+        "gcdIssueId": "291936"
+      }
+    ],
+    [
+      "im-bomb-queen-2006-3",
+      "Bomb Queen (2006)",
+      "3",
+      "Image",
+      "2006-04-05",
+      "",
+      "",
+      "Bomb Queen #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300376200311",
+        "streetDate": "2006-04-05",
+        "gcdIssueId": "291935"
+      }
+    ],
+    [
+      "im-ant-2005-5",
+      "Ant",
+      "5",
+      "Image",
+      "2006-03-01",
+      "",
+      "",
+      "Ant #5",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300348900511",
+        "streetDate": "2006-04-05",
+        "gcdIssueId": "503659"
+      }
+    ],
+    [
+      "im-bomb-queen-2006-1",
+      "Bomb Queen (2006)",
+      "1",
+      "Image",
+      "2006-02-08",
+      "",
+      "",
+      "Bomb Queen #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300376200111",
+        "streetDate": "2006-02-08",
+        "gcdIssueId": "291933"
+      }
+    ],
+    [
+      "im-bomb-queen-2006-2",
+      "Bomb Queen (2006)",
+      "2",
+      "Image",
+      "2006-02-01",
+      "",
+      "",
+      "Bomb Queen #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300376200211",
+        "streetDate": "2006-03-08",
+        "gcdIssueId": "291934"
+      }
+    ],
+    [
+      "im-ant-2005-4",
+      "Ant",
+      "4",
+      "Image",
+      "2006-02-01",
+      "",
+      "",
+      "Ant #4",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300348900411",
+        "streetDate": "2006-03-01",
+        "gcdIssueId": "503658"
+      }
+    ],
+    [
+      "im-ant-2005-3",
+      "Ant",
+      "3",
+      "Image",
+      "2005-11-30",
+      "",
+      "",
+      "Ant #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300348900311",
+        "streetDate": "2005-11-30",
+        "gcdIssueId": "503657"
+      }
+    ],
+    [
+      "im-shadowhawk-2005-5",
+      "ShadowHawk (2005)",
+      "5",
+      "Image",
+      "2005-09-21",
+      "",
+      "",
+      "ShadowHawk #5",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "2005-09-21",
+        "gcdIssueId": "699077"
+      }
+    ],
+    [
+      "im-ant-2005-2",
+      "Ant",
+      "2",
+      "Image",
+      "2005-09-14",
+      "",
+      "",
+      "Ant #2",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300348900211",
+        "streetDate": "2005-09-14",
+        "gcdIssueId": "503656"
+      }
+    ],
+    [
+      "im-ant-2005-1",
+      "Ant",
+      "1",
+      "Image",
+      "2005-08-24",
+      "",
+      "",
+      "Ant #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300348900111",
+        "streetDate": "2005-08-24",
+        "gcdIssueId": "503655"
+      }
+    ],
+    [
+      "im-body-bags-2005-1",
+      "Body Bags",
+      "1",
+      "Image",
+      "2005-07-01",
+      "",
+      "",
+      "Body Bags #1",
+      5.99,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300315100111",
+        "gcdIssueId": "1118687"
+      }
+    ],
+    [
+      "im-shadowhawk-2005-1",
+      "ShadowHawk (2005)",
+      "1",
+      "Image",
+      "2005-05-04",
+      "",
+      "",
+      "ShadowHawk #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "streetDate": "2005-05-04",
+        "gcdIssueId": "699073"
+      }
+    ],
+    [
+      "im-mighty-man-2004-1",
+      "Mighty Man (2004)",
+      "1",
+      "Image",
+      "2004-12-01",
+      "",
+      "",
+      "Mighty Man #1",
+      7.95,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300251200111",
+        "gcdIssueId": "846999"
+      }
+    ],
+    [
+      "im-the-magdalena-2003-4",
+      "Magdalena (2003)",
+      "4",
+      "Image",
+      "2003-12-17",
+      "",
+      "",
+      "Magdalena #4",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300047100411",
+        "streetDate": "2003-12-17",
+        "gcdIssueId": "766267"
+      }
+    ],
+    [
+      "im-brit-2003-2",
+      "Brit",
+      "2",
+      "Image",
+      "2003-12-01",
+      "",
+      "",
+      "Cold Death",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300086000111",
+        "gcdIssueId": "502585"
+      }
+    ],
+    [
+      "im-capes-2003-3",
+      "Capes (2003)",
+      "3",
+      "Image",
+      "2003-11-01",
+      "",
+      "",
+      "Capes #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300055600311",
+        "gcdIssueId": "220012"
+      }
+    ],
+    [
+      "im-capes-2003-2",
+      "Capes (2003)",
+      "2",
+      "Image",
+      "2003-10-01",
+      "",
+      "",
+      "Capes #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300055600211",
+        "gcdIssueId": "220010"
+      }
+    ],
+    [
+      "im-g-i-joe-2001-22",
+      "G.I. Joe",
+      "22",
+      "Image",
+      "2003-09-01",
+      "",
+      "",
+      "G.I. Joe #22",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985370476802211",
+        "streetDate": "2003-10-08",
+        "gcdIssueId": "211246"
+      }
+    ],
+    [
+      "im-capes-2003-1",
+      "Capes (2003)",
+      "1",
+      "Image",
+      "2003-09-01",
+      "",
+      "",
+      "Capes #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985300055600111",
+        "streetDate": "2003-10-08",
+        "gcdIssueId": "220008"
+      }
+    ],
+    [
+      "im-g-i-joe-2001-4",
+      "G.I. Joe",
+      "4",
+      "Image",
+      "2002-03-06",
+      "",
+      "",
+      "G.I. Joe #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985370476800411",
+        "streetDate": "2002-03-06",
+        "gcdIssueId": "86021"
+      }
+    ],
+    [
+      "im-g-i-joe-2001-3",
+      "G.I. Joe",
+      "3",
+      "Image",
+      "2002-01-09",
+      "",
+      "",
+      "G.I. Joe #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985370476800311",
+        "streetDate": "2002-01-09",
+        "gcdIssueId": "86020"
+      }
+    ],
+    [
+      "im-g-i-joe-2001-2",
+      "G.I. Joe",
+      "2",
+      "Image",
+      "2001-10-31",
+      "",
+      "",
+      "G.I. Joe #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,7f1d1d,eab308",
+      {
+        "upc": "70985370476800211",
+        "streetDate": "2001-10-31",
+        "gcdIssueId": "86019"
+      }
+    ],
+    [
+      "viz-dragon-ball-z-part-two-1998-13",
+      "Dragon Ball Z Part Two",
+      "13",
+      "Viz",
+      "1999-12-01",
+      "",
+      "",
+      "Dragon Ball Z Part Two #13",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200904153501311",
+        "gcdIssueId": "731100"
+      }
+    ],
+    [
+      "viz-dragon-ball-z-part-two-1998-12",
+      "Dragon Ball Z Part Two",
+      "12",
+      "Viz",
+      "1999-11-01",
+      "",
+      "",
+      "Dragon Ball Z Part Two #12",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200904153501211",
+        "gcdIssueId": "731099"
+      }
+    ],
+    [
+      "viz-dragon-ball-z-part-two-1998-11",
+      "Dragon Ball Z Part Two",
+      "11",
+      "Viz",
+      "1999-10-01",
+      "",
+      "",
+      "Dragon Ball Z Part Two #11",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200904153501111",
+        "gcdIssueId": "731098"
+      }
+    ],
+    [
+      "viz-dragon-ball-z-part-two-1998-10",
+      "Dragon Ball Z Part Two",
+      "10",
+      "Viz",
+      "1999-09-01",
+      "",
+      "",
+      "Dragon Ball Z Part Two #10",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200904153501011",
+        "gcdIssueId": "731097"
+      }
+    ],
+    [
+      "viz-dragon-ball-z-part-two-1998-9",
+      "Dragon Ball Z Part Two",
+      "9",
+      "Viz",
+      "1999-08-01",
+      "",
+      "",
+      "Dragon Ball Z Part Two #9",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200904153500911",
+        "gcdIssueId": "731096"
+      }
+    ],
+    [
+      "viz-dragon-ball-z-part-two-1998-8",
+      "Dragon Ball Z Part Two",
+      "8",
+      "Viz",
+      "1999-07-01",
+      "",
+      "",
+      "Dragon Ball Z Part Two #8",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200904153500811",
+        "gcdIssueId": "731095"
+      }
+    ],
+    [
+      "viz-dragon-ball-z-part-two-1998-7",
+      "Dragon Ball Z Part Two",
+      "7",
+      "Viz",
+      "1999-06-01",
+      "",
+      "",
+      "Dragon Ball Z Part Two #7",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200904153500711",
+        "gcdIssueId": "731094"
+      }
+    ],
+    [
+      "viz-dragon-ball-z-part-two-1998-6",
+      "Dragon Ball Z Part Two",
+      "6",
+      "Viz",
+      "1999-05-01",
+      "",
+      "",
+      "Dragon Ball Z Part Two #6",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200904153500611",
+        "gcdIssueId": "731093"
+      }
+    ],
+    [
+      "viz-dragon-ball-z-part-two-1998-5",
+      "Dragon Ball Z Part Two",
+      "5",
+      "Viz",
+      "1999-04-01",
+      "",
+      "",
+      "Dragon Ball Z Part Two #5",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200904153500511",
+        "gcdIssueId": "731092"
+      }
+    ],
+    [
+      "viz-dragon-ball-part-one-1998-12",
+      "Dragon Ball Part One",
+      "12",
+      "Viz",
+      "1999-04-01",
+      "",
+      "",
+      "Dragon Ball Part One #12",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200903343101211",
+        "gcdIssueId": "730980"
+      }
+    ],
+    [
+      "viz-dragon-ball-z-part-two-1998-4",
+      "Dragon Ball Z Part Two",
+      "4",
+      "Viz",
+      "1999-03-01",
+      "",
+      "",
+      "Dragon Ball Z Part Two #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200904153500411",
+        "gcdIssueId": "731091"
+      }
+    ],
+    [
+      "viz-dragon-ball-part-one-1998-11",
+      "Dragon Ball Part One",
+      "11",
+      "Viz",
+      "1999-03-01",
+      "",
+      "",
+      "Dragon Ball Part One #11",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200903343101111",
+        "gcdIssueId": "730979"
+      }
+    ],
+    [
+      "viz-dragon-ball-z-part-two-1998-3",
+      "Dragon Ball Z Part Two",
+      "3",
+      "Viz",
+      "1999-02-01",
+      "",
+      "",
+      "Dragon Ball Z Part Two #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200904153500311",
+        "gcdIssueId": "731090"
+      }
+    ],
+    [
+      "viz-dragon-ball-part-one-1998-10",
+      "Dragon Ball Part One",
+      "10",
+      "Viz",
+      "1999-02-01",
+      "",
+      "",
+      "Dragon Ball Part One #10",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200903343101011",
+        "gcdIssueId": "730978"
+      }
+    ],
+    [
+      "viz-dragon-ball-z-part-two-1998-2",
+      "Dragon Ball Z Part Two",
+      "2",
+      "Viz",
+      "1999-01-01",
+      "",
+      "",
+      "Dragon Ball Z Part Two #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200904153500211",
+        "gcdIssueId": "731089"
+      }
+    ],
+    [
+      "viz-dragon-ball-part-one-1998-9",
+      "Dragon Ball Part One",
+      "9",
+      "Viz",
+      "1999-01-01",
+      "",
+      "",
+      "Dragon Ball Part One #9",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200903343100911",
+        "gcdIssueId": "730977"
+      }
+    ],
+    [
+      "viz-dragon-ball-z-part-two-1998-1",
+      "Dragon Ball Z Part Two",
+      "1",
+      "Viz",
+      "1998-12-01",
+      "",
+      "",
+      "Dragon Ball Z Part Two #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200904153500111",
+        "gcdIssueId": "731088"
+      }
+    ],
+    [
+      "viz-dragon-ball-part-one-1998-8",
+      "Dragon Ball Part One",
+      "8",
+      "Viz",
+      "1998-12-01",
+      "",
+      "",
+      "Dragon Ball Part One #8",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200903343100811",
+        "gcdIssueId": "730976"
+      }
+    ],
+    [
+      "viz-dragon-ball-part-one-1998-7",
+      "Dragon Ball Part One",
+      "7",
+      "Viz",
+      "1998-10-01",
+      "",
+      "",
+      "Dragon Ball Part One #7",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200903343100711",
+        "gcdIssueId": "730975"
+      }
+    ],
+    [
+      "viz-dragon-ball-part-one-1998-6",
+      "Dragon Ball Part One",
+      "6",
+      "Viz",
+      "1998-09-01",
+      "",
+      "",
+      "Dragon Ball Part One #6",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200903343100611",
+        "gcdIssueId": "730974"
+      }
+    ],
+    [
+      "viz-dragon-ball-part-one-1998-5",
+      "Dragon Ball Part One",
+      "5",
+      "Viz",
+      "1998-08-01",
+      "",
+      "",
+      "Dragon Ball Part One #5",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200903343100511",
+        "gcdIssueId": "730973"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-seven-1997-13",
+      "Maison Ikkoku Part Seven",
+      "13",
+      "Viz",
+      "1998-07-01",
+      "",
+      "",
+      "Maison Ikkoku Part Seven #13",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902723201311",
+        "gcdIssueId": "276185"
+      }
+    ],
+    [
+      "viz-dragon-ball-part-one-1998-4",
+      "Dragon Ball Part One",
+      "4",
+      "Viz",
+      "1998-07-01",
+      "",
+      "",
+      "Dragon Ball Part One #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200903343100411",
+        "gcdIssueId": "730972"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-seven-1997-12",
+      "Maison Ikkoku Part Seven",
+      "12",
+      "Viz",
+      "1998-06-01",
+      "",
+      "",
+      "Maison Ikkoku Part Seven #12",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902723201211",
+        "gcdIssueId": "276184"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-15",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "15",
+      "Viz",
+      "1998-06-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #15",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902433001511",
+        "gcdIssueId": "731349"
+      }
+    ],
+    [
+      "viz-dragon-ball-part-one-1998-3",
+      "Dragon Ball Part One",
+      "3",
+      "Viz",
+      "1998-06-01",
+      "",
+      "",
+      "Dragon Ball Part One #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200903343100311",
+        "gcdIssueId": "730971"
+      }
+    ],
+    [
+      "viz-pulp-1997-5",
+      "Pulp",
+      "5",
+      "Viz",
+      "1998-05-01",
+      "",
+      "",
+      "Pulp #5",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "271857"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-seven-1997-11",
+      "Maison Ikkoku Part Seven",
+      "11",
+      "Viz",
+      "1998-05-01",
+      "",
+      "",
+      "Maison Ikkoku Part Seven #11",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902723201111",
+        "gcdIssueId": "276183"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-14",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "14",
+      "Viz",
+      "1998-05-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #14",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902433001411",
+        "gcdIssueId": "731348"
+      }
+    ],
+    [
+      "viz-dragon-ball-part-one-1998-2",
+      "Dragon Ball Part One",
+      "2",
+      "Viz",
+      "1998-05-01",
+      "",
+      "",
+      "Dragon Ball Part One #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200903343100211",
+        "gcdIssueId": "730970"
+      }
+    ],
+    [
+      "viz-pulp-1997-4",
+      "Pulp",
+      "4",
+      "Viz",
+      "1998-04-01",
+      "",
+      "",
+      "Pulp #4",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "271856"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-seven-1997-10",
+      "Maison Ikkoku Part Seven",
+      "10",
+      "Viz",
+      "1998-04-01",
+      "",
+      "",
+      "Maison Ikkoku Part Seven #10",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902723201011",
+        "gcdIssueId": "276182"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-13",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "13",
+      "Viz",
+      "1998-04-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #13",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "078200902433001311",
+        "gcdIssueId": "731347"
+      }
+    ],
+    [
+      "viz-dragon-ball-part-one-1998-1",
+      "Dragon Ball Part One",
+      "1",
+      "Viz",
+      "1998-04-01",
+      "",
+      "",
+      "Dragon Ball Part One #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200903343100111",
+        "gcdIssueId": "730969"
+      }
+    ],
+    [
+      "viz-pulp-1997-3",
+      "Pulp",
+      "3",
+      "Viz",
+      "1998-03-01",
+      "",
+      "",
+      "Pulp #3",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200903073703",
+        "gcdIssueId": "271855"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-seven-1997-9",
+      "Maison Ikkoku Part Seven",
+      "9",
+      "Viz",
+      "1998-03-01",
+      "",
+      "",
+      "Maison Ikkoku Part Seven #9",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902723200911",
+        "gcdIssueId": "276181"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-12",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "12",
+      "Viz",
+      "1998-03-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #12",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902433001211",
+        "gcdIssueId": "731346"
+      }
+    ],
+    [
+      "viz-pulp-1997-2",
+      "Pulp",
+      "2",
+      "Viz",
+      "1998-02-01",
+      "",
+      "",
+      "Pulp #2",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200903073702",
+        "gcdIssueId": "271854"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-seven-1997-8",
+      "Maison Ikkoku Part Seven",
+      "8",
+      "Viz",
+      "1998-02-01",
+      "",
+      "",
+      "Maison Ikkoku Part Seven #8",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902723200811",
+        "gcdIssueId": "276180"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-11",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "11",
+      "Viz",
+      "1998-02-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #11",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902433001111",
+        "gcdIssueId": "731345"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-seven-1997-7",
+      "Maison Ikkoku Part Seven",
+      "7",
+      "Viz",
+      "1998-01-01",
+      "",
+      "",
+      "Maison Ikkoku Part Seven #7",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902723200711",
+        "gcdIssueId": "276179"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-10",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "10",
+      "Viz",
+      "1998-01-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #10",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902433001011",
+        "gcdIssueId": "731344"
+      }
+    ],
+    [
+      "viz-pulp-1997-1",
+      "Pulp",
+      "1",
+      "Viz",
+      "1997-12-01",
+      "",
+      "",
+      "Pulp #1",
+      5.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "782009030034",
+        "gcdIssueId": "271852"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-seven-1997-6",
+      "Maison Ikkoku Part Seven",
+      "6",
+      "Viz",
+      "1997-12-01",
+      "",
+      "",
+      "Maison Ikkoku Part Seven #6",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902723200611",
+        "gcdIssueId": "276178"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-9",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "9",
+      "Viz",
+      "1997-12-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #9",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902433000911",
+        "gcdIssueId": "731343"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-seven-1997-5",
+      "Maison Ikkoku Part Seven",
+      "5",
+      "Viz",
+      "1997-11-01",
+      "",
+      "",
+      "Maison Ikkoku Part Seven #5",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902723200511",
+        "gcdIssueId": "276177"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-8",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "8",
+      "Viz",
+      "1997-11-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #8",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902433000811",
+        "gcdIssueId": "731342"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-seven-1997-4",
+      "Maison Ikkoku Part Seven",
+      "4",
+      "Viz",
+      "1997-10-01",
+      "",
+      "",
+      "Maison Ikkoku Part Seven #4",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902723200411",
+        "gcdIssueId": "276176"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-7",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "7",
+      "Viz",
+      "1997-10-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #7",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902433000711",
+        "gcdIssueId": "731341"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-seven-1997-3",
+      "Maison Ikkoku Part Seven",
+      "3",
+      "Viz",
+      "1997-09-01",
+      "",
+      "",
+      "Maison Ikkoku Part Seven #3",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902723200311",
+        "gcdIssueId": "276175"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-6",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "6",
+      "Viz",
+      "1997-09-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #6",
+      3.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902433000611",
+        "gcdIssueId": "731340"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-seven-1997-2",
+      "Maison Ikkoku Part Seven",
+      "2",
+      "Viz",
+      "1997-08-01",
+      "",
+      "",
+      "Maison Ikkoku Part Seven #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902723200211",
+        "gcdIssueId": "276174"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-5",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "5",
+      "Viz",
+      "1997-08-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #5",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902433000511",
+        "gcdIssueId": "731339"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-seven-1997-1",
+      "Maison Ikkoku Part Seven",
+      "1",
+      "Viz",
+      "1997-07-01",
+      "",
+      "",
+      "Maison Ikkoku Part Seven #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902723200111",
+        "gcdIssueId": "276173"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-4",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "4",
+      "Viz",
+      "1997-07-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902433000411",
+        "gcdIssueId": "731338"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-3",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "3",
+      "Viz",
+      "1997-06-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902433000311",
+        "gcdIssueId": "731337"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-1",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "1",
+      "Viz",
+      "1997-04-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902433000111",
+        "gcdIssueId": "731335"
+      }
+    ],
+    [
+      "viz-inu-yasha-a-feudal-fairy-tale-part-one-1997-2",
+      "Inu-Yasha: A Feudal Fairy Tale Part One",
+      "2",
+      "Viz",
+      "1997-04-01",
+      "",
+      "",
+      "Inu-Yasha: A Feudal Fairy Tale Part One #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902433000211",
+        "gcdIssueId": "731336"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-six-1996-7",
+      "Maison Ikkoku Part Six",
+      "7",
+      "Viz",
+      "1997-02-01",
+      "",
+      "",
+      "Maison Ikkoku Part Six #7",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200901793600711",
+        "gcdIssueId": "276168"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-six-1996-6",
+      "Maison Ikkoku Part Six",
+      "6",
+      "Viz",
+      "1997-01-01",
+      "",
+      "",
+      "Maison Ikkoku Part Six #6",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200901793600611",
+        "gcdIssueId": "276167"
+      }
+    ],
+    [
+      "viz-manga-vizion-1995-12",
+      "Manga Vizion",
+      "12",
+      "Viz",
+      "1996-12-01",
+      "",
+      "",
+      "Manga Vizion #12",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200901203012",
+        "gcdIssueId": "731518"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-six-1996-5",
+      "Maison Ikkoku Part Six",
+      "5",
+      "Viz",
+      "1996-12-01",
+      "",
+      "",
+      "Maison Ikkoku Part Six #5",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200901793600511",
+        "gcdIssueId": "276166"
+      }
+    ],
+    [
+      "viz-manga-vizion-1995-11",
+      "Manga Vizion",
+      "11",
+      "Viz",
+      "1996-11-01",
+      "",
+      "",
+      "Manga Vizion #11",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200901203011",
+        "gcdIssueId": "731517"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-six-1996-4",
+      "Maison Ikkoku Part Six",
+      "4",
+      "Viz",
+      "1996-11-01",
+      "",
+      "",
+      "Maison Ikkoku Part Six #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200901793600411",
+        "gcdIssueId": "276165"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-six-1996-3",
+      "Maison Ikkoku Part Six",
+      "3",
+      "Viz",
+      "1996-10-01",
+      "",
+      "",
+      "Maison Ikkoku Part Six #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200901793600311",
+        "gcdIssueId": "276164"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-six-1996-2",
+      "Maison Ikkoku Part Six",
+      "2",
+      "Viz",
+      "1996-09-01",
+      "",
+      "",
+      "Maison Ikkoku Part Six #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200901793600211",
+        "gcdIssueId": "276163"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-six-1996-1",
+      "Maison Ikkoku Part Six",
+      "1",
+      "Viz",
+      "1996-08-01",
+      "",
+      "",
+      "Maison Ikkoku Part Six #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200901793600111",
+        "gcdIssueId": "276162"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-19",
+      "Tigers of Terra",
+      "19",
+      "Antarctic Press",
+      "1996-02-01",
+      "",
+      "",
+      "Tigers of Terra #19",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328450"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-18",
+      "Tigers of Terra",
+      "18",
+      "Antarctic Press",
+      "1996-01-01",
+      "",
+      "",
+      "Tigers of Terra #18",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328449"
+      }
+    ],
+    [
+      "viz-manga-vizion-1995-10",
+      "Manga Vizion",
+      "10",
+      "Viz",
+      "1995-12-01",
+      "",
+      "",
+      "Manga Vizion #10",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900613810",
+        "gcdIssueId": "731477"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-17",
+      "Tigers of Terra",
+      "17",
+      "Antarctic Press",
+      "1995-11-01",
+      "",
+      "",
+      "Tigers of Terra #17",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328448"
+      }
+    ],
+    [
+      "anta-small-bodied-ninja-high-school-1992-7",
+      "Small Bodied Ninja High School",
+      "7",
+      "Antarctic Press",
+      "1995-11-01",
+      "",
+      "",
+      "Small Bodied Ninja High School #7",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328313"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-16",
+      "Tigers of Terra",
+      "16",
+      "Antarctic Press",
+      "1995-10-01",
+      "",
+      "",
+      "Tigers of Terra #16",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328447"
+      }
+    ],
+    [
+      "viz-manga-vizion-1995-8",
+      "Manga Vizion",
+      "8",
+      "Viz",
+      "1995-10-01",
+      "",
+      "",
+      "Manga Vizion #8",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900613808",
+        "gcdIssueId": "731475"
+      }
+    ],
+    [
+      "viz-manga-vizion-1995-9",
+      "Manga Vizion",
+      "9",
+      "Viz",
+      "1995-10-01",
+      "",
+      "",
+      "Manga Vizion #9",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900613809",
+        "gcdIssueId": "731476"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-15",
+      "Tigers of Terra",
+      "15",
+      "Antarctic Press",
+      "1995-09-01",
+      "",
+      "",
+      "Tigers of Terra #15",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328446"
+      }
+    ],
+    [
+      "viz-manga-vizion-1995-7",
+      "Manga Vizion",
+      "7",
+      "Viz",
+      "1995-09-01",
+      "",
+      "",
+      "Manga Vizion #7",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900613807",
+        "gcdIssueId": "731474"
+      }
+    ],
+    [
+      "anta-small-bodied-ninja-high-school-1992-6",
+      "Small Bodied Ninja High School",
+      "6",
+      "Antarctic Press",
+      "1995-08-10",
+      "",
+      "",
+      "Small Bodied Ninja High School #6",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328312"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-14",
+      "Tigers of Terra",
+      "14",
+      "Antarctic Press",
+      "1995-08-01",
+      "",
+      "",
+      "Tigers of Terra #14",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328445"
+      }
+    ],
+    [
+      "viz-manga-vizion-1995-6",
+      "Manga Vizion",
+      "6",
+      "Viz",
+      "1995-08-01",
+      "",
+      "",
+      "Manga Vizion #6",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900613806",
+        "gcdIssueId": "731473"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-13",
+      "Tigers of Terra",
+      "13",
+      "Antarctic Press",
+      "1995-07-01",
+      "",
+      "",
+      "Tigers of Terra #13",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328444"
+      }
+    ],
+    [
+      "viz-manga-vizion-1995-5",
+      "Manga Vizion",
+      "5",
+      "Viz",
+      "1995-07-01",
+      "",
+      "",
+      "Manga Vizion #5",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900613805",
+        "gcdIssueId": "731472"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-12",
+      "Tigers of Terra",
+      "12",
+      "Antarctic Press",
+      "1995-06-01",
+      "",
+      "",
+      "Tigers of Terra #12",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328443"
+      }
+    ],
+    [
+      "viz-manga-vizion-1995-4",
+      "Manga Vizion",
+      "4",
+      "Viz",
+      "1995-06-01",
+      "",
+      "",
+      "Manga Vizion #4",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900613803",
+        "gcdIssueId": "731471"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-11",
+      "Tigers of Terra",
+      "11",
+      "Antarctic Press",
+      "1995-05-01",
+      "",
+      "",
+      "Tigers of Terra #11",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328442"
+      }
+    ],
+    [
+      "anta-small-bodied-ninja-high-school-1992-5",
+      "Small Bodied Ninja High School",
+      "5",
+      "Antarctic Press",
+      "1995-05-01",
+      "",
+      "",
+      "Small Bodied Ninja High School #5",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328311"
+      }
+    ],
+    [
+      "viz-manga-vizion-1995-3",
+      "Manga Vizion",
+      "3",
+      "Viz",
+      "1995-05-01",
+      "",
+      "",
+      "Manga Vizion #3",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900613803",
+        "gcdIssueId": "731470"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-10",
+      "Tigers of Terra",
+      "10",
+      "Antarctic Press",
+      "1995-04-01",
+      "",
+      "",
+      "Tigers of Terra #10",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328441"
+      }
+    ],
+    [
+      "viz-manga-vizion-1995-2",
+      "Manga Vizion",
+      "2",
+      "Viz",
+      "1995-04-01",
+      "",
+      "",
+      "Manga Vizion #2",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900613802",
+        "gcdIssueId": "731469"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-20",
+      "Gold Digger (1993)",
+      "20",
+      "Antarctic Press",
+      "1995-04-01",
+      "",
+      "",
+      "Gold Digger #20",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251687"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-9",
+      "Tigers of Terra",
+      "9",
+      "Antarctic Press",
+      "1995-03-01",
+      "",
+      "",
+      "Tigers of Terra #9",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328440"
+      }
+    ],
+    [
+      "viz-manga-vizion-1995-1",
+      "Manga Vizion",
+      "1",
+      "Viz",
+      "1995-03-01",
+      "",
+      "",
+      "Manga Vizion #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900613800111",
+        "gcdIssueId": "731468"
+      }
+    ],
+    [
+      "anta-small-bodied-ninja-high-school-1992-4",
+      "Small Bodied Ninja High School",
+      "4",
+      "Antarctic Press",
+      "1995-02-01",
+      "",
+      "",
+      "Small Bodied Ninja High School #4",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328310"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-19",
+      "Gold Digger (1993)",
+      "19",
+      "Antarctic Press",
+      "1995-02-01",
+      "",
+      "",
+      "Gold Digger #19",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251686"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-8",
+      "Tigers of Terra",
+      "8",
+      "Antarctic Press",
+      "1995-01-01",
+      "",
+      "",
+      "Tigers of Terra #8",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328439"
+      }
+    ],
+    [
+      "dh-barb-wire-1994-8",
+      "Barb Wire",
+      "8",
+      "Dark Horse",
+      "1995-01-01",
+      "",
+      "",
+      "Barb Wire #8",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "315456"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-7",
+      "Tigers of Terra",
+      "7",
+      "Antarctic Press",
+      "1994-12-01",
+      "",
+      "",
+      "Tigers of Terra #7",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328438"
+      }
+    ],
+    [
+      "viz-mobile-suit-gundam-0083-1993-13",
+      "Mobile Suit Gundam 0083",
+      "13",
+      "Viz",
+      "1994-12-01",
+      "",
+      "",
+      "Mobile Suit Gundam 0083 #13",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731619"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-18",
+      "Gold Digger (1993)",
+      "18",
+      "Antarctic Press",
+      "1994-12-01",
+      "",
+      "",
+      "Gold Digger #18",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251685"
+      }
+    ],
+    [
+      "viz-mobile-suit-gundam-0083-1993-12",
+      "Mobile Suit Gundam 0083",
+      "12",
+      "Viz",
+      "1994-11-01",
+      "",
+      "",
+      "Mobile Suit Gundam 0083 #12",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731618"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-17",
+      "Gold Digger (1993)",
+      "17",
+      "Antarctic Press",
+      "1994-11-01",
+      "",
+      "",
+      "Gold Digger #17",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251684"
+      }
+    ],
+    [
+      "dh-barb-wire-1994-7",
+      "Barb Wire",
+      "7",
+      "Dark Horse",
+      "1994-11-01",
+      "",
+      "",
+      "Barb Wire #7",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "streetDate": "1994-11-22",
+        "gcdIssueId": "315455"
+      }
+    ],
+    [
+      "viz-mobile-suit-gundam-0083-1993-11",
+      "Mobile Suit Gundam 0083",
+      "11",
+      "Viz",
+      "1994-10-01",
+      "",
+      "",
+      "Mobile Suit Gundam 0083 #11",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731617"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-16",
+      "Gold Digger (1993)",
+      "16",
+      "Antarctic Press",
+      "1994-10-01",
+      "",
+      "",
+      "Gold Digger #16",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251683"
+      }
+    ],
+    [
+      "dh-barb-wire-1994-6",
+      "Barb Wire",
+      "6",
+      "Dark Horse",
+      "1994-10-01",
+      "",
+      "",
+      "Barb Wire #6",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "streetDate": "1994-10-18",
+        "gcdIssueId": "315454"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-6",
+      "Tigers of Terra",
+      "6",
+      "Antarctic Press",
+      "1994-09-01",
+      "",
+      "",
+      "Tigers of Terra #6",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328437"
+      }
+    ],
+    [
+      "anta-small-bodied-ninja-high-school-1992-3",
+      "Small Bodied Ninja High School",
+      "3",
+      "Antarctic Press",
+      "1994-09-01",
+      "",
+      "",
+      "Small Bodied Ninja High School #3",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328309"
+      }
+    ],
+    [
+      "anta-small-bodied-ninja-high-school-1992-3-deluxe",
+      "Small Bodied Ninja High School",
+      "3 [deluxe]",
+      "Antarctic Press",
+      "1994-09-01",
+      "",
+      "",
+      "Small Bodied Ninja High School #3 [deluxe]",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "329523"
+      }
+    ],
+    [
+      "viz-mobile-suit-gundam-0083-1993-10",
+      "Mobile Suit Gundam 0083",
+      "10",
+      "Viz",
+      "1994-09-01",
+      "",
+      "",
+      "Mobile Suit Gundam 0083 #10",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731616"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-15",
+      "Gold Digger (1993)",
+      "15",
+      "Antarctic Press",
+      "1994-09-01",
+      "",
+      "",
+      "Gold Digger #15",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251682"
+      }
+    ],
+    [
+      "dh-barb-wire-1994-5",
+      "Barb Wire",
+      "5",
+      "Dark Horse",
+      "1994-09-01",
+      "",
+      "",
+      "Barb Wire #5",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "streetDate": "1994-09-20",
+        "gcdIssueId": "315453"
+      }
+    ],
+    [
+      "viz-mobile-suit-gundam-0083-1993-9",
+      "Mobile Suit Gundam 0083",
+      "9",
+      "Viz",
+      "1994-08-01",
+      "",
+      "",
+      "Mobile Suit Gundam 0083 #9",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731615"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-14",
+      "Gold Digger (1993)",
+      "14",
+      "Antarctic Press",
+      "1994-08-01",
+      "",
+      "",
+      "Gold Digger #14",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251681"
+      }
+    ],
+    [
+      "anta-furrlough-1991-20",
+      "Furrlough",
+      "20",
+      "Antarctic Press",
+      "1994-08-01",
+      "",
+      "",
+      "Furrlough #20",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240952"
+      }
+    ],
+    [
+      "dh-barb-wire-1994-4",
+      "Barb Wire",
+      "4",
+      "Dark Horse",
+      "1994-08-01",
+      "",
+      "",
+      "Barb Wire #4",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "315452"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-5",
+      "Tigers of Terra",
+      "5",
+      "Antarctic Press",
+      "1994-07-01",
+      "",
+      "",
+      "Tigers of Terra #5",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328436"
+      }
+    ],
+    [
+      "viz-mobile-suit-gundam-0083-1993-8",
+      "Mobile Suit Gundam 0083",
+      "8",
+      "Viz",
+      "1994-07-01",
+      "",
+      "",
+      "Mobile Suit Gundam 0083 #8",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731614"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-13",
+      "Gold Digger (1993)",
+      "13",
+      "Antarctic Press",
+      "1994-07-01",
+      "",
+      "",
+      "Gold Digger #13",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251680"
+      }
+    ],
+    [
+      "anta-furrlough-1991-19",
+      "Furrlough",
+      "19",
+      "Antarctic Press",
+      "1994-07-01",
+      "",
+      "",
+      "Furrlough #19",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240951"
+      }
+    ],
+    [
+      "viz-mobile-suit-gundam-0083-1993-7",
+      "Mobile Suit Gundam 0083",
+      "7",
+      "Viz",
+      "1994-06-01",
+      "",
+      "",
+      "Mobile Suit Gundam 0083 #7",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731613"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-11",
+      "Gold Digger (1993)",
+      "11",
+      "Antarctic Press",
+      "1994-06-01",
+      "",
+      "",
+      "Gold Digger #11",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251678"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-12",
+      "Gold Digger (1993)",
+      "12",
+      "Antarctic Press",
+      "1994-06-01",
+      "",
+      "",
+      "Gold Digger #12",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251679"
+      }
+    ],
+    [
+      "anta-furrlough-1991-18",
+      "Furrlough",
+      "18",
+      "Antarctic Press",
+      "1994-06-01",
+      "",
+      "",
+      "Furrlough #18",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240950"
+      }
+    ],
+    [
+      "dh-barb-wire-1994-3",
+      "Barb Wire",
+      "3",
+      "Dark Horse",
+      "1994-06-01",
+      "",
+      "",
+      "Barb Wire #3",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "315451"
+      }
+    ],
+    [
+      "viz-mobile-suit-gundam-0083-1993-6",
+      "Mobile Suit Gundam 0083",
+      "6",
+      "Viz",
+      "1994-05-01",
+      "",
+      "",
+      "Mobile Suit Gundam 0083 #6",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731612"
+      }
+    ],
+    [
+      "anta-furrlough-1991-17",
+      "Furrlough",
+      "17",
+      "Antarctic Press",
+      "1994-05-01",
+      "",
+      "",
+      "Furrlough #17",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240949"
+      }
+    ],
+    [
+      "dh-barb-wire-1994-2",
+      "Barb Wire",
+      "2",
+      "Dark Horse",
+      "1994-05-01",
+      "",
+      "",
+      "Barb Wire #2",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "315450"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-4",
+      "Tigers of Terra (1993)",
+      "4",
+      "Antarctic Press",
+      "1994-04-01",
+      "",
+      "",
+      "Tigers of Terra #4",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328435"
+      }
+    ],
+    [
+      "viz-mobile-suit-gundam-0083-1993-5",
+      "Mobile Suit Gundam 0083",
+      "5",
+      "Viz",
+      "1994-04-01",
+      "",
+      "",
+      "Mobile Suit Gundam 0083 #5",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731611"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-10",
+      "Gold Digger (1993)",
+      "10",
+      "Antarctic Press",
+      "1994-04-01",
+      "",
+      "",
+      "Gold Digger #10",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251677"
+      }
+    ],
+    [
+      "anta-furrlough-1991-16",
+      "Furrlough",
+      "16",
+      "Antarctic Press",
+      "1994-04-01",
+      "",
+      "",
+      "Furrlough #16",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240948"
+      }
+    ],
+    [
+      "dh-barb-wire-1994-1",
+      "Barb Wire",
+      "1",
+      "Dark Horse",
+      "1994-04-01",
+      "",
+      "",
+      "Barb Wire #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "315449"
+      }
+    ],
+    [
+      "viz-mobile-suit-gundam-0083-1993-4",
+      "Mobile Suit Gundam 0083",
+      "4",
+      "Viz",
+      "1994-03-01",
+      "",
+      "",
+      "Mobile Suit Gundam 0083 #4",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731610"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-9",
+      "Gold Digger (1993)",
+      "9",
+      "Antarctic Press",
+      "1994-03-01",
+      "",
+      "",
+      "Gold Digger #9",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251676"
+      }
+    ],
+    [
+      "anta-furrlough-1991-15",
+      "Furrlough",
+      "15",
+      "Antarctic Press",
+      "1994-03-01",
+      "",
+      "",
+      "Furrlough #15",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240947"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-3",
+      "Tigers of Terra (1993)",
+      "3",
+      "Antarctic Press",
+      "1994-02-01",
+      "",
+      "",
+      "Tigers of Terra #3",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328434"
+      }
+    ],
+    [
+      "viz-mobile-suit-gundam-0083-1993-3",
+      "Mobile Suit Gundam 0083",
+      "3",
+      "Viz",
+      "1994-02-01",
+      "",
+      "",
+      "Mobile Suit Gundam 0083 #3",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731609"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-8",
+      "Gold Digger (1993)",
+      "8",
+      "Antarctic Press",
+      "1994-02-01",
+      "",
+      "",
+      "Gold Digger #8",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251675"
+      }
+    ],
+    [
+      "anta-furrlough-1991-14",
+      "Furrlough",
+      "14",
+      "Antarctic Press",
+      "1994-02-01",
+      "",
+      "",
+      "Furrlough #14",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240946"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-2",
+      "Tigers of Terra (1993)",
+      "2",
+      "Antarctic Press",
+      "1994-01-01",
+      "",
+      "",
+      "Tigers of Terra #2",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328433"
+      }
+    ],
+    [
+      "viz-mobile-suit-gundam-0083-1993-2",
+      "Mobile Suit Gundam 0083",
+      "2",
+      "Viz",
+      "1994-01-01",
+      "",
+      "",
+      "Mobile Suit Gundam 0083 #2",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731608"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-7",
+      "Gold Digger (1993)",
+      "7",
+      "Antarctic Press",
+      "1994-01-01",
+      "",
+      "",
+      "Gold Digger #7",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251674"
+      }
+    ],
+    [
+      "anta-furrlough-1991-13",
+      "Furrlough",
+      "13",
+      "Antarctic Press",
+      "1994-01-01",
+      "",
+      "",
+      "Furrlough #13",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240945"
+      }
+    ],
+    [
+      "viz-mobile-suit-gundam-0083-1993-1",
+      "Mobile Suit Gundam 0083",
+      "1",
+      "Viz",
+      "1993-12-01",
+      "",
+      "",
+      "Mobile Suit Gundam 0083 #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731607"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-6",
+      "Gold Digger",
+      "6",
+      "Antarctic Press",
+      "1993-12-01",
+      "",
+      "",
+      "Gold Digger #6",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251673"
+      }
+    ],
+    [
+      "anta-furrlough-1991-12",
+      "Furrlough",
+      "12",
+      "Antarctic Press",
+      "1993-12-01",
+      "",
+      "",
+      "Furrlough #12",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240944"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-1",
+      "Tigers of Terra (1993)",
+      "1",
+      "Antarctic Press",
+      "1993-11-01",
+      "",
+      "",
+      "Tigers of Terra #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328432"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-5-0",
+      "Gold Digger",
+      "5 (0)",
+      "Antarctic Press",
+      "1993-11-01",
+      "",
+      "",
+      "Gold Digger #5 (0)",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251672"
+      }
+    ],
+    [
+      "anta-furrlough-1991-11",
+      "Furrlough",
+      "11",
+      "Antarctic Press",
+      "1993-11-01",
+      "",
+      "",
+      "Furrlough #11",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240943"
+      }
+    ],
+    [
+      "anta-mangazine-1989-28",
+      "Mangazine (1989)",
+      "28",
+      "Antarctic Press",
+      "1993-10-01",
+      "",
+      "",
+      "Mangazine #28",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290675"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-4",
+      "Gold Digger",
+      "4",
+      "Antarctic Press",
+      "1993-10-01",
+      "",
+      "",
+      "Gold Digger #4",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251671"
+      }
+    ],
+    [
+      "anta-mangazine-1989-27",
+      "Mangazine (1989)",
+      "27",
+      "Antarctic Press",
+      "1993-09-01",
+      "",
+      "",
+      "Mangazine #27",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290674"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-3",
+      "Gold Digger",
+      "3",
+      "Antarctic Press",
+      "1993-09-01",
+      "",
+      "",
+      "Gold Digger #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251670"
+      }
+    ],
+    [
+      "anta-furrlough-1991-10",
+      "Furrlough",
+      "10",
+      "Antarctic Press",
+      "1993-09-01",
+      "",
+      "",
+      "Furrlough #10",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240942"
+      }
+    ],
+    [
+      "anta-tigers-of-terra-1993-0",
+      "Tigers of Terra",
+      "0",
+      "Antarctic Press",
+      "1993-08-01",
+      "",
+      "",
+      "Tigers of Terra #0",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328431"
+      }
+    ],
+    [
+      "anta-mangazine-1989-25",
+      "Mangazine (1989)",
+      "25",
+      "Antarctic Press",
+      "1993-08-01",
+      "",
+      "",
+      "Mangazine #25",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290672"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-2",
+      "Gold Digger",
+      "2",
+      "Antarctic Press",
+      "1993-08-01",
+      "",
+      "",
+      "Gold Digger #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251669"
+      }
+    ],
+    [
+      "anta-gold-digger-1993-1",
+      "Gold Digger",
+      "1",
+      "Antarctic Press",
+      "1993-07-01",
+      "",
+      "",
+      "Gold Digger #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "251668"
+      }
+    ],
+    [
+      "anta-furrlough-1991-9",
+      "Furrlough",
+      "9",
+      "Antarctic Press",
+      "1993-07-01",
+      "",
+      "",
+      "Furrlough #9",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240941"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-19",
+      "Omaha the Cat Dancer",
+      "19",
+      "Kitchen Sink Press",
+      "1993-06-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #19",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "117922"
+      }
+    ],
+    [
+      "anta-mangazine-1989-23",
+      "Mangazine (1989)",
+      "23",
+      "Antarctic Press",
+      "1993-05-01",
+      "",
+      "",
+      "Mangazine #23",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290670"
+      }
+    ],
+    [
+      "anta-furrlough-1991-8",
+      "Furrlough",
+      "8",
+      "Antarctic Press",
+      "1993-05-01",
+      "",
+      "",
+      "Furrlough #8",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240940"
+      }
+    ],
+    [
+      "anta-mangazine-1989-22",
+      "Mangazine (1989)",
+      "22",
+      "Antarctic Press",
+      "1993-04-01",
+      "",
+      "",
+      "Mangazine #22",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290669"
+      }
+    ],
+    [
+      "anta-mangazine-1989-21",
+      "Mangazine (1989)",
+      "21",
+      "Antarctic Press",
+      "1993-03-01",
+      "",
+      "",
+      "Mangazine #21",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290668"
+      }
+    ],
+    [
+      "anta-furrlough-1991-7",
+      "Furrlough",
+      "7",
+      "Antarctic Press",
+      "1993-03-01",
+      "",
+      "",
+      "Furrlough #7",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240939"
+      }
+    ],
+    [
+      "anta-small-bodied-ninja-high-school-1992-2",
+      "Small Bodied Ninja High School",
+      "2",
+      "Antarctic Press",
+      "1993-02-01",
+      "",
+      "",
+      "Small Bodied Ninja High School #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328308"
+      }
+    ],
+    [
+      "anta-small-bodied-ninja-high-school-1992-2-deluxe",
+      "Small Bodied Ninja High School",
+      "2 [deluxe]",
+      "Antarctic Press",
+      "1993-02-01",
+      "",
+      "",
+      "Small Bodied Ninja High School #2 [deluxe]",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "329522"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-18",
+      "Omaha the Cat Dancer",
+      "18",
+      "Kitchen Sink Press",
+      "1993-01-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #18",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "117921"
+      }
+    ],
+    [
+      "anta-furrlough-1991-6",
+      "Furrlough",
+      "6",
+      "Antarctic Press",
+      "1993-01-01",
+      "",
+      "",
+      "Furrlough #6",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240938"
+      }
+    ],
+    [
+      "anta-furrlough-1991-5",
+      "Furrlough",
+      "5",
+      "Antarctic Press",
+      "1992-11-01",
+      "",
+      "",
+      "Furrlough #5",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240937"
+      }
+    ],
+    [
+      "anta-small-bodied-ninja-high-school-1992-1",
+      "Small Bodied Ninja High School",
+      "1",
+      "Antarctic Press",
+      "1992-08-01",
+      "",
+      "",
+      "Small Bodied Ninja High School #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328307"
+      }
+    ],
+    [
+      "anta-small-bodied-ninja-high-school-1992-1-deluxe",
+      "Small Bodied Ninja High School",
+      "1 [deluxe]",
+      "Antarctic Press",
+      "1992-08-01",
+      "",
+      "",
+      "Small Bodied Ninja High School #1 [deluxe]",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "329521"
+      }
+    ],
+    [
+      "anta-furrlough-1991-4",
+      "Furrlough",
+      "4",
+      "Antarctic Press",
+      "1992-08-01",
+      "",
+      "",
+      "Furrlough #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240936"
+      }
+    ],
+    [
+      "anta-mangazine-1989-16",
+      "Mangazine (1989)",
+      "16",
+      "Antarctic Press",
+      "1992-07-01",
+      "",
+      "",
+      "Mangazine #16",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290663"
+      }
+    ],
+    [
+      "anta-mangazine-1989-15",
+      "Mangazine (1989)",
+      "15",
+      "Antarctic Press",
+      "1992-05-01",
+      "",
+      "",
+      "Mangazine #15",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290662"
+      }
+    ],
+    [
+      "anta-furrlough-1991-3",
+      "Furrlough",
+      "3",
+      "Antarctic Press",
+      "1992-05-01",
+      "",
+      "",
+      "Furrlough #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240935"
+      }
+    ],
+    [
+      "anta-mangazine-1989-14",
+      "Mangazine (1989)",
+      "14",
+      "Antarctic Press",
+      "1992-03-01",
+      "",
+      "",
+      "Mangazine #14",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290661"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-17",
+      "Omaha the Cat Dancer",
+      "17",
+      "Kitchen Sink Press",
+      "1992-02-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #17",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66480"
+      }
+    ],
+    [
+      "anta-furrlough-1991-2",
+      "Furrlough",
+      "2",
+      "Antarctic Press",
+      "1992-02-01",
+      "",
+      "",
+      "Furrlough #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240934"
+      }
+    ],
+    [
+      "anta-mangazine-1989-13",
+      "Mangazine (1989)",
+      "13",
+      "Antarctic Press",
+      "1992-01-01",
+      "",
+      "",
+      "Mangazine #13",
+      2.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290660"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-16",
+      "Omaha the Cat Dancer",
+      "16",
+      "Kitchen Sink Press",
+      "1991-11-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #16",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "117920"
+      }
+    ],
+    [
+      "anta-mangazine-1989-12",
+      "Mangazine (1989)",
+      "12",
+      "Antarctic Press",
+      "1991-11-01",
+      "",
+      "",
+      "Mangazine #12",
+      2.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290659"
+      }
+    ],
+    [
+      "anta-furrlough-1991-1",
+      "Furrlough",
+      "1",
+      "Antarctic Press",
+      "1991-11-01",
+      "",
+      "",
+      "Furrlough #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "240933"
+      }
+    ],
+    [
+      "dh-the-mask-1991-4",
+      "The Mask",
+      "4",
+      "Dark Horse",
+      "1991-10-01",
+      "",
+      "",
+      "The Mask #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "707926"
+      }
+    ],
+    [
+      "dh-the-mask-1991-3",
+      "The Mask",
+      "3",
+      "Dark Horse",
+      "1991-09-01",
+      "",
+      "",
+      "The Mask #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "707925"
+      }
+    ],
+    [
+      "anta-mangazine-1989-11",
+      "Mangazine (1989)",
+      "11",
+      "Antarctic Press",
+      "1991-09-01",
+      "",
+      "",
+      "Mangazine #11",
+      2.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290658"
+      }
+    ],
+    [
+      "dh-the-mask-1991-1",
+      "The Mask",
+      "1",
+      "Dark Horse",
+      "1991-08-01",
+      "",
+      "",
+      "The Mask #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "707923"
+      }
+    ],
+    [
+      "dh-the-mask-1991-2",
+      "The Mask",
+      "2",
+      "Dark Horse",
+      "1991-08-01",
+      "",
+      "",
+      "The Mask #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "707924"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-21",
+      "Miracleman",
+      "21",
+      "Eclipse",
+      "1991-07-01",
+      "",
+      "",
+      "Miracleman #21",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "49821"
+      }
+    ],
+    [
+      "anta-mangazine-1989-10",
+      "Mangazine (1989)",
+      "10",
+      "Antarctic Press",
+      "1991-07-01",
+      "",
+      "",
+      "Mangazine #10",
+      2.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290657"
+      }
+    ],
+    [
+      "anta-mangazine-1989-9",
+      "Mangazine (1989)",
+      "9",
+      "Antarctic Press",
+      "1991-05-01",
+      "",
+      "",
+      "Mangazine #9",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290656"
+      }
+    ],
+    [
+      "anta-mangazine-1989-8",
+      "Mangazine (1989)",
+      "8",
+      "Antarctic Press",
+      "1991-03-10",
+      "",
+      "",
+      "Mangazine #8",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290655"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-20",
+      "Miracleman",
+      "20",
+      "Eclipse",
+      "1991-03-01",
+      "",
+      "",
+      "Miracleman #20",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "49346"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-15",
+      "Omaha the Cat Dancer",
+      "15",
+      "Kitchen Sink Press",
+      "1991-01-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #15",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66479"
+      }
+    ],
+    [
+      "anta-mangazine-1989-7",
+      "Mangazine (1989)",
+      "7",
+      "Antarctic Press",
+      "1991-01-01",
+      "",
+      "",
+      "Mangazine #7",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290654"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-19",
+      "Miracleman",
+      "19",
+      "Eclipse",
+      "1990-11-01",
+      "",
+      "",
+      "Miracleman #19",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "48705"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-18",
+      "Miracleman",
+      "18",
+      "Eclipse",
+      "1990-08-01",
+      "",
+      "",
+      "Miracleman #18",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "48309"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-17",
+      "Miracleman",
+      "17",
+      "Eclipse",
+      "1990-06-01",
+      "",
+      "",
+      "Miracleman #17",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "48038"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-14",
+      "Omaha the Cat Dancer",
+      "14",
+      "Kitchen Sink Press",
+      "1990-03-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #14",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66478"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-0",
+      "Omaha the Cat Dancer",
+      "0",
+      "Kitchen Sink Press",
+      "1990-03-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #0",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1266620"
+      }
+    ],
+    [
+      "anta-mangazine-1989-4",
+      "Mangazine",
+      "4",
+      "Antarctic Press",
+      "1990-02-10",
+      "",
+      "",
+      "Mangazine #4",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290651"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-16",
+      "Miracleman",
+      "16",
+      "Eclipse",
+      "1989-12-01",
+      "",
+      "",
+      "Miracleman #16",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "47096"
+      }
+    ],
+    [
+      "anta-mangazine-1989-3",
+      "Mangazine",
+      "3",
+      "Antarctic Press",
+      "1989-10-10",
+      "",
+      "",
+      "Mangazine #3",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "295942"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-13",
+      "Omaha the Cat Dancer",
+      "13",
+      "Kitchen Sink Press",
+      "1989-09-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #13",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66477"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-12",
+      "Omaha the Cat Dancer",
+      "12",
+      "Kitchen Sink Press",
+      "1989-07-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #12",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66476"
+      }
+    ],
+    [
+      "anta-mangazine-1989-2",
+      "Mangazine",
+      "2",
+      "Antarctic Press",
+      "1989-06-01",
+      "",
+      "",
+      "Mangazine #2",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290649"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-29",
+      "Dark Horse Presents",
+      "29",
+      "Dark Horse",
+      "1989-05-01",
+      "",
+      "",
+      "Dark Horse Presents #29",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "46056"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-28",
+      "Dark Horse Presents",
+      "28",
+      "Dark Horse",
+      "1989-03-01",
+      "",
+      "",
+      "Dark Horse Presents #28",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "45937"
+      }
+    ],
+    [
+      "ecl-zot-1984-25",
+      "Zot!",
+      "25",
+      "Eclipse",
+      "1989-02-10",
+      "",
+      "",
+      "Zot! #25",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "45851"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-27",
+      "Dark Horse Presents",
+      "27",
+      "Dark Horse",
+      "1989-02-01",
+      "",
+      "",
+      "Dark Horse Presents #27",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "45815"
+      }
+    ],
+    [
+      "anta-mangazine-1989-1",
+      "Mangazine (1989)",
+      "1",
+      "Antarctic Press",
+      "1989-01-01",
+      "",
+      "",
+      "Mangazine #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "295941"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-26",
+      "Dark Horse Presents",
+      "26",
+      "Dark Horse",
+      "1989-01-01",
+      "",
+      "",
+      "Dark Horse Presents #26",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "45683"
+      }
+    ],
+    [
+      "ecl-zot-1984-24",
+      "Zot!",
+      "24",
+      "Eclipse",
+      "1988-12-01",
+      "",
+      "",
+      "Zot! #24",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "45356"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-25",
+      "Dark Horse Presents",
+      "25",
+      "Dark Horse",
+      "1988-12-01",
+      "",
+      "",
+      "Dark Horse Presents #25",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "45315"
+      }
+    ],
+    [
+      "ecl-zot-1984-23",
+      "Zot!",
+      "23",
+      "Eclipse",
+      "1988-11-01",
+      "",
+      "",
+      "Zot! #23",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "45220"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-15",
+      "Miracleman",
+      "15",
+      "Eclipse",
+      "1988-11-01",
+      "",
+      "",
+      "Miracleman #15",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1988-08-30",
+        "gcdIssueId": "45217"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-24",
+      "Dark Horse Presents",
+      "24",
+      "Dark Horse",
+      "1988-11-01",
+      "",
+      "",
+      "Dark Horse Presents #24",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "45175"
+      }
+    ],
+    [
+      "ecl-zot-1984-22",
+      "Zot!",
+      "22",
+      "Eclipse",
+      "1988-10-01",
+      "",
+      "",
+      "Zot! #22",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "45077"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-23",
+      "Dark Horse Presents",
+      "23",
+      "Dark Horse",
+      "1988-10-01",
+      "",
+      "",
+      "Dark Horse Presents #23",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "45036"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-22",
+      "Dark Horse Presents",
+      "22",
+      "Dark Horse",
+      "1988-09-01",
+      "",
+      "",
+      "Dark Horse Presents #22",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "44902"
+      }
+    ],
+    [
+      "ecl-zot-1984-21",
+      "Zot!",
+      "21",
+      "Eclipse",
+      "1988-08-01",
+      "",
+      "",
+      "Zot! #21",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "44817"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-11",
+      "Omaha the Cat Dancer",
+      "11",
+      "Kitchen Sink Press",
+      "1988-08-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #11",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66475"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-20",
+      "Dark Horse Presents",
+      "20",
+      "Dark Horse",
+      "1988-08-01",
+      "",
+      "",
+      "Dark Horse Presents #20",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "44777"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-21",
+      "Dark Horse Presents",
+      "21",
+      "Dark Horse",
+      "1988-08-01",
+      "",
+      "",
+      "Dark Horse Presents #21",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "44882"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-19",
+      "Dark Horse Presents",
+      "19",
+      "Dark Horse",
+      "1988-07-01",
+      "",
+      "",
+      "Dark Horse Presents #19",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "44648"
+      }
+    ],
+    [
+      "ecl-zot-1984-20",
+      "Zot!",
+      "20",
+      "Eclipse",
+      "1988-06-20",
+      "",
+      "",
+      "Zot! #20",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "44626"
+      }
+    ],
+    [
+      "ecl-zot-1984-19",
+      "Zot!",
+      "19",
+      "Eclipse",
+      "1988-06-10",
+      "",
+      "",
+      "Zot! #19",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "44561"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-18",
+      "Dark Horse Presents",
+      "18",
+      "Dark Horse",
+      "1988-06-01",
+      "",
+      "",
+      "Dark Horse Presents #18",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "44518"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-10",
+      "Omaha the Cat Dancer",
+      "10",
+      "Kitchen Sink Press",
+      "1988-05-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #10",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66474"
+      }
+    ],
+    [
+      "ksp-death-rattle-1985-16",
+      "Death Rattle",
+      "16",
+      "Kitchen Sink Press",
+      "1988-05-01",
+      "",
+      "",
+      "Death Rattle #16",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "44482"
+      }
+    ],
+    [
+      "ecl-zot-1984-18",
+      "Zot!",
+      "18",
+      "Eclipse",
+      "1988-04-01",
+      "",
+      "",
+      "Zot! #18",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "44318"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-14",
+      "Miracleman",
+      "14",
+      "Eclipse",
+      "1988-04-01",
+      "",
+      "",
+      "Miracleman #14",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "44315"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-17",
+      "Dark Horse Presents",
+      "17",
+      "Dark Horse",
+      "1988-04-01",
+      "",
+      "",
+      "Dark Horse Presents #17",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "44276"
+      }
+    ],
+    [
+      "ecl-zot-1984-17",
+      "Zot!",
+      "17",
+      "Eclipse",
+      "1988-03-01",
+      "",
+      "",
+      "Zot! #17",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "44194"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-20",
+      "Steve Canyon",
+      "20",
+      "Kitchen Sink Press",
+      "1988-03-01",
+      "",
+      "",
+      "Steve Canyon #20",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93579"
+      }
+    ],
+    [
+      "ksp-death-rattle-1985-15",
+      "Death Rattle",
+      "15",
+      "Kitchen Sink Press",
+      "1988-03-01",
+      "",
+      "",
+      "Death Rattle #15",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "44239"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-16",
+      "Dark Horse Presents",
+      "16",
+      "Dark Horse",
+      "1988-03-01",
+      "",
+      "",
+      "Dark Horse Presents #16",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "44150"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-9",
+      "Omaha the Cat Dancer",
+      "9",
+      "Kitchen Sink Press",
+      "1988-02-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #9",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66473"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-15",
+      "Dark Horse Presents",
+      "15",
+      "Dark Horse",
+      "1988-02-01",
+      "",
+      "",
+      "Dark Horse Presents #15",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "44030"
+      }
+    ],
+    [
+      "ksp-death-rattle-1985-14",
+      "Death Rattle",
+      "14",
+      "Kitchen Sink Press",
+      "1988-01-01",
+      "",
+      "",
+      "Death Rattle #14",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43996"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-14",
+      "Dark Horse Presents",
+      "14",
+      "Dark Horse",
+      "1988-01-01",
+      "",
+      "",
+      "Dark Horse Presents #14",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "43900"
+      }
+    ],
+    [
+      "ecl-zot-1984-16",
+      "Zot!",
+      "16",
+      "Eclipse",
+      "1987-12-01",
+      "",
+      "",
+      "Zot! #16",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1987-11-24",
+        "gcdIssueId": "43713"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-19",
+      "Steve Canyon",
+      "19",
+      "Kitchen Sink Press",
+      "1987-12-01",
+      "",
+      "",
+      "Steve Canyon #19",
+      7.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93578"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-13",
+      "Dark Horse Presents",
+      "13",
+      "Dark Horse",
+      "1987-12-01",
+      "",
+      "",
+      "Dark Horse Presents #13",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "43665"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-13",
+      "Miracleman",
+      "13",
+      "Eclipse",
+      "1987-11-01",
+      "",
+      "",
+      "Miracleman #13",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43574"
+      }
+    ],
+    [
+      "ksp-death-rattle-1985-13",
+      "Death Rattle",
+      "13",
+      "Kitchen Sink Press",
+      "1987-11-01",
+      "",
+      "",
+      "Death Rattle #13",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43627"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-12",
+      "Dark Horse Presents",
+      "12",
+      "Dark Horse",
+      "1987-11-01",
+      "",
+      "",
+      "Dark Horse Presents #12",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "43534"
+      }
+    ],
+    [
+      "ecl-zot-1984-15",
+      "Zot!",
+      "15",
+      "Eclipse",
+      "1987-10-10",
+      "",
+      "",
+      "Zot! #15",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43455"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-8",
+      "Omaha the Cat Dancer",
+      "8",
+      "Kitchen Sink Press",
+      "1987-10-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #8",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66472"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-11",
+      "Dark Horse Presents",
+      "11",
+      "Dark Horse",
+      "1987-10-01",
+      "",
+      "",
+      "Dark Horse Presents #11",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "43411"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-12",
+      "Miracleman",
+      "12",
+      "Eclipse",
+      "1987-09-10",
+      "",
+      "",
+      "Miracleman #12",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43321"
+      }
+    ],
+    [
+      "ecl-zot-1984-14-1-2",
+      "Zot!",
+      "14 1/2",
+      "Eclipse",
+      "1987-09-01",
+      "",
+      "",
+      "Zot! #14 1/2",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43323"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-18",
+      "Steve Canyon",
+      "18",
+      "Kitchen Sink Press",
+      "1987-09-01",
+      "",
+      "",
+      "Steve Canyon #18",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93577"
+      }
+    ],
+    [
+      "ksp-death-rattle-1985-12",
+      "Death Rattle",
+      "12",
+      "Kitchen Sink Press",
+      "1987-09-01",
+      "",
+      "",
+      "Death Rattle #12",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43369"
+      }
+    ],
+    [
+      "dh-dark-horse-presents-1986-10",
+      "Dark Horse Presents",
+      "10",
+      "Dark Horse",
+      "1987-09-01",
+      "",
+      "",
+      "Dark Horse Presents #10",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "dc2626,111827,eab308",
+      {
+        "gcdIssueId": "43283"
+      }
+    ],
+    [
+      "ecl-zot-1984-14",
+      "Zot!",
+      "14",
+      "Eclipse",
+      "1987-07-01",
+      "",
+      "",
+      "Zot! #14",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43081"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-7",
+      "Omaha the Cat Dancer",
+      "7",
+      "Kitchen Sink Press",
+      "1987-07-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #7",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66471"
+      }
+    ],
+    [
+      "ksp-death-rattle-1985-11",
+      "Death Rattle",
+      "11",
+      "Kitchen Sink Press",
+      "1987-06-10",
+      "",
+      "",
+      "Death Rattle #11",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42999"
+      }
+    ],
+    [
+      "ecl-scout-1985-20",
+      "Scout",
+      "20",
+      "Eclipse",
+      "1987-06-01",
+      "",
+      "",
+      "Scout #20",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42955"
+      }
+    ],
+    [
+      "ecl-zot-1984-13",
+      "Zot!",
+      "13",
+      "Eclipse",
+      "1987-05-10",
+      "",
+      "",
+      "Zot! #13",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42840"
+      }
+    ],
+    [
+      "ecl-scout-1985-19",
+      "Scout",
+      "19",
+      "Eclipse",
+      "1987-05-01",
+      "",
+      "",
+      "Scout #19",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42839"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-6",
+      "Omaha the Cat Dancer",
+      "6",
+      "Kitchen Sink Press",
+      "1987-05-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #6",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66470"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-11",
+      "Miracleman",
+      "11",
+      "Eclipse",
+      "1987-05-01",
+      "",
+      "",
+      "Miracleman #11",
+      0.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-10-28",
+        "gcdIssueId": "42722"
+      }
+    ],
+    [
+      "ecl-airboy-1986-20",
+      "Airboy",
+      "20",
+      "Eclipse",
+      "1987-04-28",
+      "",
+      "",
+      "Airboy #20",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42794"
+      }
+    ],
+    [
+      "ecl-airboy-1986-19",
+      "Airboy",
+      "19",
+      "Eclipse",
+      "1987-04-14",
+      "",
+      "",
+      "Airboy #19",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42791"
+      }
+    ],
+    [
+      "ksp-death-rattle-1985-10",
+      "Death Rattle",
+      "10",
+      "Kitchen Sink Press",
+      "1987-04-10",
+      "",
+      "",
+      "Death Rattle #10",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42773"
+      }
+    ],
+    [
+      "ecl-scout-1985-18",
+      "Scout",
+      "18",
+      "Eclipse",
+      "1987-04-01",
+      "",
+      "",
+      "Scout #18",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42725"
+      }
+    ],
+    [
+      "ecl-airboy-1986-18",
+      "Airboy",
+      "18",
+      "Eclipse",
+      "1987-03-24",
+      "",
+      "",
+      "Airboy #18",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42668"
+      }
+    ],
+    [
+      "ecl-zot-1984-12",
+      "Zot!",
+      "12",
+      "Eclipse",
+      "1987-03-10",
+      "",
+      "",
+      "Zot! #12",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42608"
+      }
+    ],
+    [
+      "ecl-airboy-1986-17",
+      "Airboy",
+      "17",
+      "Eclipse",
+      "1987-03-10",
+      "",
+      "",
+      "Airboy #17",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42600"
+      }
+    ],
+    [
+      "ecl-scout-1985-17",
+      "Scout",
+      "17",
+      "Eclipse",
+      "1987-03-01",
+      "",
+      "",
+      "Scout #17",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42606"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-5",
+      "Omaha the Cat Dancer",
+      "5",
+      "Kitchen Sink Press",
+      "1987-03-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #5",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66469"
+      }
+    ],
+    [
+      "ecl-airboy-1986-16",
+      "Airboy",
+      "16",
+      "Eclipse",
+      "1987-02-27",
+      "",
+      "",
+      "Airboy #16",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42555"
+      }
+    ],
+    [
+      "ecl-airboy-1986-15",
+      "Airboy",
+      "15",
+      "Eclipse",
+      "1987-02-10",
+      "",
+      "",
+      "Airboy #15",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42478"
+      }
+    ],
+    [
+      "ecl-scout-1985-16",
+      "Scout",
+      "16",
+      "Eclipse",
+      "1987-02-01",
+      "",
+      "",
+      "Scout #16",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42483"
+      }
+    ],
+    [
+      "ksp-death-rattle-1985-9",
+      "Death Rattle",
+      "9",
+      "Kitchen Sink Press",
+      "1987-02-01",
+      "",
+      "",
+      "Death Rattle #9",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42531"
+      }
+    ],
+    [
+      "ecl-airboy-1986-14",
+      "Airboy",
+      "14",
+      "Eclipse",
+      "1987-01-27",
+      "",
+      "",
+      "Airboy #14",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42433"
+      }
+    ],
+    [
+      "ecl-airboy-1986-13",
+      "Airboy",
+      "13",
+      "Eclipse",
+      "1987-01-12",
+      "",
+      "",
+      "Airboy #13",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42431"
+      }
+    ],
+    [
+      "ecl-zot-1984-11",
+      "Zot!",
+      "11",
+      "Eclipse",
+      "1987-01-10",
+      "",
+      "",
+      "Zot! #11",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42363"
+      }
+    ],
+    [
+      "ecl-scout-1985-15",
+      "Scout",
+      "15",
+      "Eclipse",
+      "1987-01-01",
+      "",
+      "",
+      "Scout #15",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42362"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-4",
+      "Omaha the Cat Dancer",
+      "4",
+      "Kitchen Sink Press",
+      "1987-01-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #4",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66468"
+      }
+    ],
+    [
+      "ksp-death-rattle-1985-8",
+      "Death Rattle",
+      "8",
+      "Kitchen Sink Press",
+      "1986-12-22",
+      "",
+      "",
+      "Death Rattle #8",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-12-22",
+        "gcdIssueId": "42199"
+      }
+    ],
+    [
+      "ecl-airboy-1986-12",
+      "Airboy",
+      "12",
+      "Eclipse",
+      "1986-12-15",
+      "",
+      "",
+      "Airboy #12",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42224"
+      }
+    ],
+    [
+      "ecl-scout-1985-14",
+      "Scout",
+      "14",
+      "Eclipse",
+      "1986-12-01",
+      "",
+      "",
+      "Scout #14",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42152"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-10",
+      "Miracleman",
+      "10",
+      "Eclipse",
+      "1986-12-01",
+      "",
+      "",
+      "Miracleman #10",
+      0.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42149"
+      }
+    ],
+    [
+      "ecl-airboy-1986-11",
+      "Airboy",
+      "11",
+      "Eclipse",
+      "1986-12-01",
+      "",
+      "",
+      "Airboy #11",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42146"
+      }
+    ],
+    [
+      "ecl-airboy-1986-10",
+      "Airboy",
+      "10",
+      "Eclipse",
+      "1986-11-18",
+      "",
+      "",
+      "Airboy #10",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42104"
+      }
+    ],
+    [
+      "ecl-airboy-1986-9",
+      "Airboy",
+      "9",
+      "Eclipse",
+      "1986-11-04",
+      "",
+      "",
+      "Airboy #9",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-11-03",
+        "gcdIssueId": "41994"
+      }
+    ],
+    [
+      "ecl-scout-1985-13",
+      "Scout",
+      "13",
+      "Eclipse",
+      "1986-11-03",
+      "",
+      "",
+      "Scout #13",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-11-03",
+        "gcdIssueId": "42039"
+      }
+    ],
+    [
+      "ecl-airboy-1986-8",
+      "Airboy",
+      "8",
+      "Eclipse",
+      "1986-10-21",
+      "",
+      "",
+      "Airboy #8",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-10-21",
+        "gcdIssueId": "41990"
+      }
+    ],
+    [
+      "ecl-scout-1985-12",
+      "Scout",
+      "12",
+      "Eclipse",
+      "1986-10-07",
+      "",
+      "",
+      "Scout #12",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-10-07",
+        "gcdIssueId": "41921"
+      }
+    ],
+    [
+      "ecl-airboy-1986-7",
+      "Airboy",
+      "7",
+      "Eclipse",
+      "1986-10-07",
+      "",
+      "",
+      "Airboy #7",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-10-07",
+        "gcdIssueId": "41878"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-1",
+      "Omaha the Cat Dancer",
+      "1",
+      "Kitchen Sink Press",
+      "1986-10-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66465"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-2",
+      "Omaha the Cat Dancer",
+      "2",
+      "Kitchen Sink Press",
+      "1986-10-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #2",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66466"
+      }
+    ],
+    [
+      "ksp-omaha-the-cat-dancer-1986-3",
+      "Omaha the Cat Dancer",
+      "3",
+      "Kitchen Sink Press",
+      "1986-10-01",
+      "",
+      "",
+      "Omaha the Cat Dancer #3",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "66467"
+      }
+    ],
+    [
+      "ksp-death-rattle-1985-7",
+      "Death Rattle",
+      "7",
+      "Kitchen Sink Press",
+      "1986-10-01",
+      "",
+      "",
+      "Death Rattle #7",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41968"
+      }
+    ],
+    [
+      "ecl-airboy-1986-6",
+      "Airboy",
+      "6",
+      "Eclipse",
+      "1986-09-23",
+      "",
+      "",
+      "Airboy #6",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-09-23",
+        "gcdIssueId": "41873"
+      }
+    ],
+    [
+      "ecl-airboy-1986-5",
+      "Airboy",
+      "5",
+      "Eclipse",
+      "1986-09-09",
+      "",
+      "",
+      "Airboy #5",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-09-09",
+        "gcdIssueId": "41780"
+      }
+    ],
+    [
+      "ecl-scout-1985-11",
+      "Scout",
+      "11",
+      "Eclipse",
+      "1986-09-02",
+      "",
+      "",
+      "Scout #11",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-09-02",
+        "gcdIssueId": "41821"
+      }
+    ],
+    [
+      "ecl-airboy-1986-4",
+      "Airboy",
+      "4",
+      "Eclipse",
+      "1986-08-26",
+      "",
+      "",
+      "Airboy #4",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-08-26",
+        "gcdIssueId": "41776"
+      }
+    ],
+    [
+      "ecl-airboy-1986-3",
+      "Airboy",
+      "3",
+      "Eclipse",
+      "1986-08-12",
+      "",
+      "",
+      "Airboy #3",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41773"
+      }
+    ],
+    [
+      "ecl-scout-1985-10",
+      "Scout",
+      "10",
+      "Eclipse",
+      "1986-08-05",
+      "",
+      "",
+      "Scout #10",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-08-05",
+        "gcdIssueId": "41717"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-17",
+      "Steve Canyon",
+      "17",
+      "Kitchen Sink Press",
+      "1986-08-01",
+      "",
+      "",
+      "Steve Canyon #17",
+      6.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93576"
+      }
+    ],
+    [
+      "ksp-death-rattle-1985-6",
+      "Death Rattle",
+      "6",
+      "Kitchen Sink Press",
+      "1986-08-01",
+      "",
+      "",
+      "Death Rattle #6",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41755"
+      }
+    ],
+    [
+      "ecl-airboy-1986-2",
+      "Airboy",
+      "2",
+      "Eclipse",
+      "1986-07-29",
+      "",
+      "",
+      "Airboy #2",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-07-29",
+        "gcdIssueId": "41671"
+      }
+    ],
+    [
+      "ecl-airboy-1986-1",
+      "Airboy",
+      "1",
+      "Eclipse",
+      "1986-07-15",
+      "",
+      "",
+      "Airboy #1",
+      0.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-07-15",
+        "gcdIssueId": "41667"
+      }
+    ],
+    [
+      "ecl-scout-1985-9",
+      "Scout",
+      "9",
+      "Eclipse",
+      "1986-07-01",
+      "",
+      "",
+      "Scout #9",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-07-01",
+        "gcdIssueId": "41610"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-9",
+      "Miracleman",
+      "9",
+      "Eclipse",
+      "1986-07-01",
+      "",
+      "",
+      "Miracleman #9",
+      0.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41609"
+      }
+    ],
+    [
+      "ecl-scout-1985-8",
+      "Scout",
+      "8",
+      "Eclipse",
+      "1986-06-03",
+      "",
+      "",
+      "Scout #8",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-06-03",
+        "gcdIssueId": "41502"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-20",
+      "The Spirit",
+      "20",
+      "Kitchen Sink Press",
+      "1986-06-01",
+      "",
+      "",
+      "The Spirit #20",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41516"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-16",
+      "Steve Canyon",
+      "16",
+      "Kitchen Sink Press",
+      "1986-06-01",
+      "",
+      "",
+      "Steve Canyon #16",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93575"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-8",
+      "Miracleman",
+      "8",
+      "Eclipse",
+      "1986-06-01",
+      "",
+      "",
+      "Miracleman #8",
+      0.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-04-29",
+        "gcdIssueId": "41499"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-19",
+      "The Spirit",
+      "19",
+      "Kitchen Sink Press",
+      "1986-05-10",
+      "",
+      "",
+      "The Spirit #19",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41410"
+      }
+    ],
+    [
+      "ecl-scout-1985-7",
+      "Scout",
+      "7",
+      "Eclipse",
+      "1986-05-06",
+      "",
+      "",
+      "Scout #7",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-05-06",
+        "gcdIssueId": "41398"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-18",
+      "The Spirit",
+      "18",
+      "Kitchen Sink Press",
+      "1986-04-10",
+      "",
+      "",
+      "The Spirit #18",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41310"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-15",
+      "Steve Canyon",
+      "15",
+      "Kitchen Sink Press",
+      "1986-04-01",
+      "",
+      "",
+      "Steve Canyon #15",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93574"
+      }
+    ],
+    [
+      "ecl-scout-1985-6",
+      "Scout",
+      "6",
+      "Eclipse",
+      "1986-04-01",
+      "",
+      "",
+      "Scout #6",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-04-01",
+        "gcdIssueId": "41296"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-7",
+      "Miracleman",
+      "7",
+      "Eclipse",
+      "1986-04-01",
+      "",
+      "",
+      "Miracleman #7",
+      0.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41294"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-17",
+      "The Spirit",
+      "17",
+      "Kitchen Sink Press",
+      "1986-03-10",
+      "",
+      "",
+      "The Spirit #17",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41203"
+      }
+    ],
+    [
+      "ecl-scout-1985-5",
+      "Scout",
+      "5",
+      "Eclipse",
+      "1986-03-04",
+      "",
+      "",
+      "Scout #5",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-03-04",
+        "gcdIssueId": "41194"
+      }
+    ],
+    [
+      "ecl-crossfire-1984-17",
+      "Crossfire",
+      "17",
+      "Eclipse",
+      "1986-03-01",
+      "",
+      "",
+      "Crossfire #17",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-01-14",
+        "gcdIssueId": "41193"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-16",
+      "The Spirit",
+      "16",
+      "Kitchen Sink Press",
+      "1986-02-10",
+      "",
+      "",
+      "The Spirit #16",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41099"
+      }
+    ],
+    [
+      "ecl-scout-1985-4",
+      "Scout",
+      "4",
+      "Eclipse",
+      "1986-02-04",
+      "",
+      "",
+      "Scout #4",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-02-04",
+        "gcdIssueId": "41089"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-14",
+      "Steve Canyon",
+      "14",
+      "Kitchen Sink Press",
+      "1986-02-01",
+      "",
+      "",
+      "Steve Canyon #14",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93573"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-6",
+      "Miracleman",
+      "6",
+      "Eclipse",
+      "1986-02-01",
+      "",
+      "",
+      "Miracleman #6",
+      0.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41087"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-15",
+      "The Spirit",
+      "15",
+      "Kitchen Sink Press",
+      "1986-01-10",
+      "",
+      "",
+      "The Spirit #15",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "40983"
+      }
+    ],
+    [
+      "ecl-scout-1985-3",
+      "Scout",
+      "3",
+      "Eclipse",
+      "1986-01-07",
+      "",
+      "",
+      "Scout #3",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-01-07",
+        "gcdIssueId": "40974"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-5",
+      "Miracleman",
+      "5",
+      "Eclipse",
+      "1986-01-01",
+      "",
+      "",
+      "Miracleman #5",
+      0.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "40972"
+      }
+    ],
+    [
+      "ecl-crossfire-1984-16",
+      "Crossfire",
+      "16",
+      "Eclipse",
+      "1986-01-01",
+      "",
+      "",
+      "Crossfire #16",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-10-22",
+        "gcdIssueId": "40970"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-14",
+      "The Spirit",
+      "14",
+      "Kitchen Sink Press",
+      "1985-12-10",
+      "",
+      "",
+      "The Spirit #14",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "40760"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-3",
+      "Miracleman",
+      "3",
+      "Eclipse",
+      "1985-11-21",
+      "",
+      "",
+      "Miracleman #3",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-11-21",
+        "gcdIssueId": "40630"
+      }
+    ],
+    [
+      "ecl-scout-1985-2",
+      "Scout",
+      "2",
+      "Eclipse",
+      "1985-11-12",
+      "",
+      "",
+      "Scout #2",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-11-12",
+        "gcdIssueId": "40632"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-13",
+      "The Spirit",
+      "13",
+      "Kitchen Sink Press",
+      "1985-11-10",
+      "",
+      "",
+      "The Spirit #13",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "40642"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-13",
+      "Steve Canyon",
+      "13",
+      "Kitchen Sink Press",
+      "1985-11-01",
+      "",
+      "",
+      "Steve Canyon #13",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93572"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-12",
+      "The Spirit",
+      "12",
+      "Kitchen Sink Press",
+      "1985-10-10",
+      "",
+      "",
+      "The Spirit #12",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "40530"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-2",
+      "Miracleman",
+      "2",
+      "Eclipse",
+      "1985-10-01",
+      "",
+      "",
+      "Miracleman #2",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-09-17",
+        "gcdIssueId": "40515"
+      }
+    ],
+    [
+      "ecl-crossfire-1984-15",
+      "Crossfire",
+      "15",
+      "Eclipse",
+      "1985-10-01",
+      "",
+      "",
+      "Crossfire #15",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-09-10",
+        "gcdIssueId": "40512"
+      }
+    ],
+    [
+      "ecl-scout-1985-1",
+      "Scout",
+      "1",
+      "Eclipse",
+      "1985-09-10",
+      "",
+      "",
+      "Scout #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-09-10",
+        "gcdIssueId": "40409"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-12",
+      "Steve Canyon",
+      "12",
+      "Kitchen Sink Press",
+      "1985-09-01",
+      "",
+      "",
+      "Steve Canyon #12",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93571"
+      }
+    ],
+    [
+      "ecl-crossfire-1984-14",
+      "Crossfire",
+      "14",
+      "Eclipse",
+      "1985-08-20",
+      "",
+      "",
+      "Crossfire #14",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-08-20",
+        "gcdIssueId": "40303"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-11",
+      "The Spirit",
+      "11",
+      "Kitchen Sink Press",
+      "1985-08-10",
+      "",
+      "",
+      "The Spirit #11",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "40316"
+      }
+    ],
+    [
+      "ecl-miracleman-1985-1",
+      "Miracleman",
+      "1",
+      "Eclipse",
+      "1985-08-01",
+      "",
+      "",
+      "Miracleman #1",
+      0.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-07-16",
+        "gcdIssueId": "40306"
+      }
+    ],
+    [
+      "ecl-zot-1984-10",
+      "Zot!",
+      "10",
+      "Eclipse",
+      "1985-07-16",
+      "",
+      "",
+      "Zot! #10",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-07-16",
+        "gcdIssueId": "40202"
+      }
+    ],
+    [
+      "ecl-crossfire-1984-13",
+      "Crossfire",
+      "13",
+      "Eclipse",
+      "1985-07-16",
+      "",
+      "",
+      "Crossfire #13",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-07-16",
+        "gcdIssueId": "40200"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-11",
+      "Steve Canyon",
+      "11",
+      "Kitchen Sink Press",
+      "1985-07-01",
+      "",
+      "",
+      "Steve Canyon #11",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93570"
+      }
+    ],
+    [
+      "ecl-crossfire-1984-12",
+      "Crossfire",
+      "12",
+      "Eclipse",
+      "1985-06-11",
+      "",
+      "",
+      "Crossfire #12",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-06-11",
+        "gcdIssueId": "40087"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-10",
+      "The Spirit",
+      "10",
+      "Kitchen Sink Press",
+      "1985-06-10",
+      "",
+      "",
+      "The Spirit #10",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "40099"
+      }
+    ],
+    [
+      "ecl-crossfire-1984-11",
+      "Crossfire",
+      "11",
+      "Eclipse",
+      "1985-05-14",
+      "",
+      "",
+      "Crossfire #11",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-05-14",
+        "gcdIssueId": "39990"
+      }
+    ],
+    [
+      "ecl-zot-1984-9",
+      "Zot!",
+      "9",
+      "Eclipse",
+      "1985-05-07",
+      "",
+      "",
+      "Zot! #9",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-05-07",
+        "gcdIssueId": "39993"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-10",
+      "Steve Canyon",
+      "10",
+      "Kitchen Sink Press",
+      "1985-05-01",
+      "",
+      "",
+      "Steve Canyon #10",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93569"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-9",
+      "The Spirit",
+      "9",
+      "Kitchen Sink Press",
+      "1985-04-09",
+      "",
+      "",
+      "The Spirit #9",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-04-09",
+        "gcdIssueId": "39887"
+      }
+    ],
+    [
+      "ecl-crossfire-1984-10",
+      "Crossfire",
+      "10",
+      "Eclipse",
+      "1985-04-09",
+      "",
+      "",
+      "Crossfire #10",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-04-09",
+        "gcdIssueId": "39875"
+      }
+    ],
+    [
+      "ecl-crossfire-1984-9",
+      "Crossfire",
+      "9",
+      "Eclipse",
+      "1985-03-05",
+      "",
+      "",
+      "Crossfire #9",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-03-05",
+        "gcdIssueId": "39775"
+      }
+    ],
+    [
+      "ecl-zot-1984-8",
+      "Zot!",
+      "8",
+      "Eclipse",
+      "1985-03-01",
+      "",
+      "",
+      "Zot! #8",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-02-19",
+        "gcdIssueId": "39778"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-8",
+      "The Spirit",
+      "8",
+      "Kitchen Sink Press",
+      "1985-02-01",
+      "",
+      "",
+      "The Spirit #8",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "39684"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-9",
+      "Steve Canyon",
+      "9",
+      "Kitchen Sink Press",
+      "1985-02-01",
+      "",
+      "",
+      "Steve Canyon #9",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93568"
+      }
+    ],
+    [
+      "ecl-crossfire-1984-8",
+      "Crossfire",
+      "8",
+      "Eclipse",
+      "1985-01-01",
+      "",
+      "",
+      "Crossfire #8",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-02-05",
+        "gcdIssueId": "39573"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-8",
+      "Steve Canyon",
+      "8",
+      "Kitchen Sink Press",
+      "1984-12-01",
+      "",
+      "",
+      "Steve Canyon #8",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93567"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-7",
+      "The Spirit",
+      "7",
+      "Kitchen Sink Press",
+      "1984-10-01",
+      "",
+      "",
+      "The Spirit #7",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "39184"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-7",
+      "Steve Canyon",
+      "7",
+      "Kitchen Sink Press",
+      "1984-09-01",
+      "",
+      "",
+      "Steve Canyon #7",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93566"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-6",
+      "The Spirit",
+      "6",
+      "Kitchen Sink Press",
+      "1984-08-01",
+      "",
+      "",
+      "The Spirit #6",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "38985"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-5",
+      "The Spirit",
+      "5",
+      "Kitchen Sink Press",
+      "1984-06-01",
+      "",
+      "",
+      "The Spirit #5",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "38769"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-6",
+      "Steve Canyon",
+      "6",
+      "Kitchen Sink Press",
+      "1984-06-01",
+      "",
+      "",
+      "Steve Canyon #6",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1984-08-23",
+        "gcdIssueId": "93565"
+      }
+    ],
+    [
+      "ecl-zot-1984-1",
+      "Zot!",
+      "1",
+      "Eclipse",
+      "1984-04-01",
+      "",
+      "",
+      "Zot! #1",
+      1.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1984-03-07",
+        "gcdIssueId": "38541"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-4",
+      "The Spirit",
+      "4",
+      "Kitchen Sink Press",
+      "1984-03-01",
+      "",
+      "",
+      "The Spirit #4",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1984-04-17",
+        "gcdIssueId": "38435"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-5",
+      "Steve Canyon",
+      "5",
+      "Kitchen Sink Press",
+      "1984-03-01",
+      "",
+      "",
+      "Steve Canyon #5",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93564"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-3",
+      "The Spirit",
+      "3",
+      "Kitchen Sink Press",
+      "1984-02-15",
+      "",
+      "",
+      "The Spirit #3",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1984-02-15",
+        "gcdIssueId": "38313"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-2",
+      "The Spirit",
+      "2",
+      "Kitchen Sink Press",
+      "1983-12-10",
+      "",
+      "",
+      "The Spirit #2",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1983-12-10",
+        "gcdIssueId": "38044"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-4",
+      "Steve Canyon",
+      "4",
+      "Kitchen Sink Press",
+      "1983-12-01",
+      "",
+      "",
+      "Steve Canyon #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1983-12-01",
+        "gcdIssueId": "93563"
+      }
+    ],
+    [
+      "ksp-the-spirit-1983-1",
+      "The Spirit",
+      "1",
+      "Kitchen Sink Press",
+      "1983-10-15",
+      "",
+      "",
+      "The Spirit #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1983-10-15",
+        "gcdIssueId": "37851"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-3",
+      "Steve Canyon",
+      "3",
+      "Kitchen Sink Press",
+      "1983-08-01",
+      "",
+      "",
+      "Steve Canyon #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93562"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-41",
+      "The Spirit",
+      "41",
+      "Kitchen Sink Press",
+      "1983-06-10",
+      "",
+      "",
+      "The Spirit #41",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "37490"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-2",
+      "Steve Canyon",
+      "2",
+      "Kitchen Sink Press",
+      "1983-05-01",
+      "",
+      "",
+      "Steve Canyon #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93561"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-40",
+      "The Spirit",
+      "40",
+      "Kitchen Sink Press",
+      "1983-04-10",
+      "",
+      "",
+      "The Spirit #40",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "37302"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-39",
+      "The Spirit",
+      "39",
+      "Kitchen Sink Press",
+      "1983-02-01",
+      "",
+      "",
+      "The Spirit #39",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "37117"
+      }
+    ],
+    [
+      "ksp-steve-canyon-1983-1",
+      "Steve Canyon",
+      "1",
+      "Kitchen Sink Press",
+      "1983-01-01",
+      "",
+      "",
+      "Steve Canyon #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "93560"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-38",
+      "The Spirit",
+      "38",
+      "Kitchen Sink Press",
+      "1982-12-10",
+      "",
+      "",
+      "The Spirit #38",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "36905"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-37",
+      "The Spirit",
+      "37",
+      "Kitchen Sink Press",
+      "1982-10-10",
+      "",
+      "",
+      "The Spirit #37",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "36738"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-36",
+      "The Spirit",
+      "36",
+      "Kitchen Sink Press",
+      "1982-08-10",
+      "",
+      "",
+      "The Spirit #36",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "36583"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-35",
+      "The Spirit",
+      "35",
+      "Kitchen Sink Press",
+      "1982-06-10",
+      "",
+      "",
+      "The Spirit #35",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "36428"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-34",
+      "The Spirit",
+      "34",
+      "Kitchen Sink Press",
+      "1982-04-01",
+      "",
+      "",
+      "The Spirit #34",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "36265"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-33",
+      "The Spirit",
+      "33",
+      "Kitchen Sink Press",
+      "1982-02-01",
+      "",
+      "",
+      "The Spirit #33",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "36092"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-32",
+      "The Spirit",
+      "32",
+      "Kitchen Sink Press",
+      "1981-12-01",
+      "",
+      "",
+      "The Spirit #32",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "35873"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-31",
+      "The Spirit",
+      "31",
+      "Kitchen Sink Press",
+      "1981-10-01",
+      "",
+      "",
+      "The Spirit #31",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "35723"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-30",
+      "The Spirit",
+      "30",
+      "Kitchen Sink Press",
+      "1981-07-01",
+      "",
+      "",
+      "The Spirit #30",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "35478"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-29",
+      "The Spirit",
+      "29",
+      "Kitchen Sink Press",
+      "1981-06-01",
+      "",
+      "",
+      "The Spirit #29",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "35393"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-28",
+      "The Spirit",
+      "28",
+      "Kitchen Sink Press",
+      "1981-04-01",
+      "",
+      "",
+      "The Spirit #28",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "35257"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-27",
+      "The Spirit",
+      "27",
+      "Kitchen Sink Press",
+      "1981-02-01",
+      "",
+      "",
+      "The Spirit #27",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "35103"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-26",
+      "The Spirit",
+      "26",
+      "Kitchen Sink Press",
+      "1980-12-01",
+      "",
+      "",
+      "The Spirit #26",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "34907"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-25",
+      "The Spirit",
+      "25",
+      "Kitchen Sink Press",
+      "1980-08-01",
+      "",
+      "",
+      "The Spirit #25",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "34599"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-24",
+      "The Spirit",
+      "24",
+      "Kitchen Sink Press",
+      "1980-05-01",
+      "",
+      "",
+      "The Spirit #24",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "34366"
+      }
+    ],
+    [
+      "ksp-the-spirit-1977-23",
+      "The Spirit",
+      "23",
+      "Kitchen Sink Press",
+      "1980-02-01",
+      "",
+      "",
+      "The Spirit #23",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "34119"
+      }
+    ]
+  ]
+}
