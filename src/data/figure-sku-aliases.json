@@ -13654,7 +13654,8 @@
       "SUP7-RE-WHTE-10170"
     ],
     "sf-super7-j-dilla-reaction-figures-wave-02-j-dilla-donuts": [
-      "SUP7-RE-JDLL-10173"
+      "SUP7-RE-JDLL-10173",
+      "SUP80173"
     ],
     "sf-super7-dimebag-darrell-reaction-figures-wave-01-dimebag-darrell-culprit": [
       "SUP7-RE-DIME-08749"
@@ -43309,7 +43310,8 @@
       "toyark:599502",
       "MMS926",
       "MMS926B",
-      "https://www.toyark.com/2026/09/29/batman-forever-hot-toys-the-riddler-figure-599502"
+      "https://www.toyark.com/2026/09/29/batman-forever-hot-toys-the-riddler-figure-599502",
+      "BBTS-198742"
     ],
     "afmon-hasbro-transformers-missing-link-d-01-soundwave-hsg4391": [
       "SHOWZ8036",
@@ -43633,7 +43635,8 @@
     "ta-d9a16d3350aa": [
       "id:ta-d9a16d3350aa",
       "toyark:599629",
-      "https://www.toyark.com/2026/10/02/avengers-doomsday-hot-toys-steve-rogers-figure-599629"
+      "https://www.toyark.com/2026/10/02/avengers-doomsday-hot-toys-steve-rogers-figure-599629",
+      "BBTS-199035"
     ],
     "tfl22-core-autobot-hot-rod": [
       "F3012",
@@ -44793,6 +44796,45 @@
     ],
     "afmon-mcfarlane-call-of-duty-modern-warfare-4-ghost-mcfarlane-elite-edition-19-7-inch-delu-mf12854": [
       "BBTS-198701"
+    ],
+    "sf-neca-store-teenage-mutant-ninja-turtles-the-last-ronin-ultimate-donatello-7-i": [
+      "NC54344"
+    ],
+    "sf-super7-g-i-joe-reaction-figures-cobra-commander-skybound-comic-box-set-issue-": [
+      "SUP82276"
+    ],
+    "sf-super7-toho-ultimates-godzilla-1989-greyscale-comic-book-thirsty-for-blood": [
+      "SUP82155G"
+    ],
+    "sf-super7-toho-reaction-figures-minus-one-train-biter-glow": [
+      "SUP81139G"
+    ],
+    "sf-neca-store-teenage-mutant-ninja-turtles-cartoon-super-bebop-mighty-rocksteady": [
+      "NC54246"
+    ],
+    "sf-super7-universal-monsters-reaction-figures-the-invisible-man-clear": [
+      "SUP88944"
+    ],
+    "sf-super7-toho-reaction-figures-wave-09-godzilla-2000": [
+      "SUP81495"
+    ],
+    "sf-super7-teenage-mutant-ninja-turtles-reaction-wave-01-shredder": [
+      "SUP80714"
+    ],
+    "sf-neca-store-teenage-mutant-ninja-turtles-1990-movie-shredder-splinter-7-inch-s": [
+      "NC54130"
+    ],
+    "sf-super7-thundercats-ultimates-wave-12-cruncher": [
+      "SUP85782"
+    ],
+    "sf-super7-g-i-joe-reaction-wave-07-hydro-viper-comic": [
+      "SUP80246"
+    ],
+    "sf-super7-silverhawks-ultimates-wave-07-condor-toon": [
+      "SUP88556"
+    ],
+    "sf-super7-teenage-mutant-ninja-turtles-reaction-wave-01-raphael": [
+      "SUP80717"
     ]
   },
   "aliasToFigureId": {
@@ -69269,7 +69311,23 @@
     "id:hs10-hs-39": "lc5-lc-tommy-zeo",
     "id:hs10-hs-26": "tfss-ss86-coronation-ss",
     "id:ml2-moonknight-mrknight": "ml4-moon-knight-mrknight",
-    "id:ml6-ml-magneto-aos": "hs10-hs-09"
+    "id:ml6-ml-magneto-aos": "hs10-hs-09",
+    "NC54344": "sf-neca-store-teenage-mutant-ninja-turtles-the-last-ronin-ultimate-donatello-7-i",
+    "SUP82276": "sf-super7-g-i-joe-reaction-figures-cobra-commander-skybound-comic-box-set-issue-",
+    "SUP82155G": "sf-super7-toho-ultimates-godzilla-1989-greyscale-comic-book-thirsty-for-blood",
+    "SUP81139G": "sf-super7-toho-reaction-figures-minus-one-train-biter-glow",
+    "SUP80173": "sf-super7-j-dilla-reaction-figures-wave-02-j-dilla-donuts",
+    "NC54246": "sf-neca-store-teenage-mutant-ninja-turtles-cartoon-super-bebop-mighty-rocksteady",
+    "SUP88944": "sf-super7-universal-monsters-reaction-figures-the-invisible-man-clear",
+    "SUP81495": "sf-super7-toho-reaction-figures-wave-09-godzilla-2000",
+    "SUP80714": "sf-super7-teenage-mutant-ninja-turtles-reaction-wave-01-shredder",
+    "NC54130": "sf-neca-store-teenage-mutant-ninja-turtles-1990-movie-shredder-splinter-7-inch-s",
+    "SUP85782": "sf-super7-thundercats-ultimates-wave-12-cruncher",
+    "SUP80246": "sf-super7-g-i-joe-reaction-wave-07-hydro-viper-comic",
+    "SUP88556": "sf-super7-silverhawks-ultimates-wave-07-condor-toon",
+    "SUP80717": "sf-super7-teenage-mutant-ninja-turtles-reaction-wave-01-raphael",
+    "BBTS-198742": "ta-0645a4b365de",
+    "BBTS-199035": "ta-d9a16d3350aa"
   },
   "collapsed": [
     {
@@ -72585,7 +72643,7 @@
       "reason": "REFUSED: distinct product GTINs. lc5 UPC 630509808366 is Lightning Collection White Ranger (AF411); hs10 UPC 630509808380 + image are S.P.D. Shadow Ranger (AF411). Character-name collision only. Shadow Ranger already exists as plc-shadow-spd."
     }
   ],
-  "updatedAt": "2026-10-05T20:13:46.930867+00:00",
+  "updatedAt": "2026-10-06T14:29:40.981127+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,

@@ -1,0 +1,85 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-06",
+  "updatedAt": "2026-10-06T14:29:41Z",
+  "added": 9,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Page2 differed; merged unique products.",
+  "ee_detail_blocker": "listing cards only (hot-off-the-truck + newly-added); other EE aisles skipped (404/429 historically).",
+  "counts": {
+    "candidates_seen": 319,
+    "ee_candidates": 24,
+    "bbts_candidates": 165,
+    "added": 9,
+    "skipped_dupes": 180,
+    "rejected_non_af": 94,
+    "unmapped_company": 36,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 14,
+    "review_dupes_aliased": 2
+  },
+  "oneshotBefore": 29864,
+  "oneshotAfter": 29873,
+  "ee_added": 2,
+  "bbts_added": 7,
+  "samples": [
+    {
+      "sku": "RBDHFFSA",
+      "name": "Transformers G1 Bumblebee Flagship Auto-Converting Robot",
+      "id": "afmon-robosen-transformers-g1-bumblebee-flagship-auto-converting-robot-rbdhffsa",
+      "source": "ee"
+    },
+    {
+      "sku": "RB00056",
+      "name": "Toy Story Mini Robots Story Pack 6 Toy Story Robots with Base - Buzz Lightyear, Woody, Lotso, Alien, Rex, Jessie",
+      "id": "afmon-robosen-toy-story-mini-robots-story-pack-6-toy-story-robots-with-base-buzz-lightyear-rb00056",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-199176",
+      "name": "Ichi the Witch Nendoroid No.3149 Ichi",
+      "id": "afmon-figma-ichi-the-witch-nendoroid-no-3149-ichi-bbts-199176",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-198746",
+      "name": "Kamen Rider W TMS195 Kamen Rider W 1/6th Scale Collectible Figure",
+      "id": "afmon-hottoys-kamen-rider-w-tms195-kamen-rider-w-1-6th-scale-collectible-figure-bbts-198746",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-198935",
+      "name": "WWE Championship Showdown Roman Reigns & CM Punk Two-Pack",
+      "id": "afmon-mattel-wwe-championship-showdown-roman-reigns-cm-punk-two-pack-bbts-198935",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199137",
+      "name": "The Brave Fighter of Legend Da-Garn Brickroid Da-Garn & Seiji Takasugi Figure Set",
+      "id": "afmon-figma-the-brave-fighter-of-legend-da-garn-brickroid-da-garn-seiji-takasugi-figur-bbts-199137",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199138",
+      "name": "The Brave Fighter of Legend Da-Garn Brickroid Land Bison Figure",
+      "id": "afmon-figma-the-brave-fighter-of-legend-da-garn-brickroid-land-bison-figure-bbts-199138",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199139",
+      "name": "The Brave Fighter of Legend Da-Garn Brickroid Pegasus Saber Figure",
+      "id": "afmon-figma-the-brave-fighter-of-legend-da-garn-brickroid-pegasus-saber-figure-bbts-199139",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199077",
+      "name": "Danganronpa 2x2 Nendoroid Doll Nagito Komaeda",
+      "id": "afmon-figma-danganronpa-2x2-nendoroid-doll-nagito-komaeda-bbts-199077",
+      "source": "bbts"
+    }
+  ],
+  "commit": null,
+  "review": "14 cross-retailer SKU-family dupes (EE NC5xxxx=NECA NE5xxxx-01; EE SUP8xxxx=Super7 store codes) skipped by hardened runner + aliased; 2 BBTS Hot Toys (MMS926 Riddler, MMS928 Steve Rogers) dropped as dupes of toyark rows + aliased; RBDHFFSA Robosen Flagship Bumblebee company hasbro->robosen, release 2025-07, MSRP $1,299."
+}
