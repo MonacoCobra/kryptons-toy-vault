@@ -72662,7 +72662,7 @@
       "reason": "REFUSED: distinct product GTINs. lc5 UPC 630509808366 is Lightning Collection White Ranger (AF411); hs10 UPC 630509808380 + image are S.P.D. Shadow Ranger (AF411). Character-name collision only. Shadow Ranger already exists as plc-shadow-spd."
     }
   ],
-  "updatedAt": "2026-10-06T18:10:12.555910+00:00",
+  "updatedAt": "2026-10-07T05:20:19.376653+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -76318,6 +76318,163 @@
         "https://static.wixstatic.com/media/adc447_e6630ce2d73741d59ce50bf463c165dc~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e6630ce2d73741d59ce50bf463c165dc~mv2.jpg"
       ],
       "reason": "Mephitsu bake photo is Studio Series 86-26 Leader Dinobot Swoop (listing barcode 5010996367754 = AotP G2 Dinobot Swoop/Sludge 2-pack); not the 2018 Power of the Primes Deluxe Swoop"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-batman-masked-3708",
+      "codes": [],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://static.wixstatic.com/media/adc447_ff9e7e93b4f849e0931d6f0a22e799a5~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ff9e7e93b4f849e0931d6f0a22e799a5~mv2.jpg"
+      ],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): photo is Armoured Batman (DC Multiverse 2024), not Batman '66 Masked"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-joker-3264",
+      "codes": [
+        "787926176278"
+      ],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://static.wixstatic.com/media/adc447_de22a20d10ba4ecebb429bcaf4ab637a~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_de22a20d10ba4ecebb429bcaf4ab637a~mv2.webp"
+      ],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): listing is BTAS Target Exclusive Joker (DC Direct 2024), not Batman '66"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-robin-3263",
+      "codes": [
+        "787926159493"
+      ],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://static.wixstatic.com/media/adc447_77184396e3f14b15b7cbca5e2e95cf2a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_77184396e3f14b15b7cbca5e2e95cf2a~mv2.jpg"
+      ],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): listing is BTAS Target Robin (DC Multiverse 2026), not Batman '66"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-alfred-as-batman-5037",
+      "codes": [],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://static.wixstatic.com/media/adc447_6ce011da7fc24c5bbffd9f297c67b096~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6ce011da7fc24c5bbffd9f297c67b096~mv2.png"
+      ],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): photo is Batman 1966 Riddler Unmasked"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-penguin-4013",
+      "codes": [
+        "787926150483"
+      ],
+      "imageDropped": false,
+      "imageUrls": [],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): barcode is the Target Batman Lunchbox 4-Pack, not the single Penguin"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-riddler-3718",
+      "codes": [
+        "787926150537"
+      ],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://static.wixstatic.com/media/adc447_94ad133f49144397a33b44c426ecade1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_94ad133f49144397a33b44c426ecade1~mv2.jpg"
+      ],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): listing is BTAS Lock-Up Wave Riddler (DC Direct 2024), not Batman '66"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-superman-7087",
+      "codes": [
+        "887961224962"
+      ],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://static.wixstatic.com/media/adc447_467e72bc845c4c538e65c9092e1c3626~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_467e72bc845c4c538e65c9092e1c3626~mv2.jpg"
+      ],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): listing is DC Multiverse Dark Knight Superman (Mattel GTIN), not Batman '66 Wave 8"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-the-joker-7086",
+      "codes": [
+        "787926153484"
+      ],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://static.wixstatic.com/media/adc447_a2be444d523f49978d79eba16ea71ead~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a2be444d523f49978d79eba16ea71ead~mv2.jpg"
+      ],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): listing is Batman 1966 Wave 1 Joker (2021), not Wave 8 (2023)"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-alfred-pennyworth-8535",
+      "codes": [],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://static.wixstatic.com/media/adc447_70ef9212292943b7a40bc35e898cfdd4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_70ef9212292943b7a40bc35e898cfdd4~mv2.jpg"
+      ],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): photo is BTAS Target Alfred (DC Direct), not Batman '66 Wave 10"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-batmobile-3265",
+      "codes": [
+        "787926176261"
+      ],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://static.wixstatic.com/media/adc447_9cc674939a0c4bb9926d0e8a7dd4c1d8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9cc674939a0c4bb9926d0e8a7dd4c1d8~mv2.jpg"
+      ],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): listing is BTAS Gold Label Batmobile (DC Direct 2024), not Batman '66"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-batman-7833",
+      "codes": [
+        "787926177664"
+      ],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://static.wixstatic.com/media/adc447_8fc342e29724401d98b42c60ce54fa84~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_8fc342e29724401d98b42c60ce54fa84~mv2.jpg"
+      ],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): listing is DC Direct New Batman Adventures (1997 show), not New Adventures of Batman (1977)"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-commissioner-gordon-7829",
+      "codes": [
+        "787926159776"
+      ],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://static.wixstatic.com/media/adc447_688f661c002247a4ae31e9e116e69825~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_688f661c002247a4ae31e9e116e69825~mv2.jpg"
+      ],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): listing is BTAS Lock-Up Wave Gordon (DC Direct), not New Adventures of Batman"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-the-joker-7831",
+      "codes": [
+        "787926177497"
+      ],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://static.wixstatic.com/media/adc447_715621b371e941f893a73d98bd233a61~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_715621b371e941f893a73d98bd233a61~mv2.jpg"
+      ],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): listing is DC Direct New Batman Adventures Joker, not New Adventures of Batman (1977)"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-the-riddler-7830",
+      "codes": [
+        "787926177695"
+      ],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://static.wixstatic.com/media/adc447_82d419e7fc1c485bb2668949b49a9d4c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_82d419e7fc1c485bb2668949b49a9d4c~mv2.jpg"
+      ],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): listing is DC Direct New Batman Adventures Riddler, not New Adventures of Batman (1977)"
+    },
+    {
+      "figureId": "mcf-dcretro-w16-robin-7832",
+      "codes": [
+        "787926159226"
+      ],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://static.wixstatic.com/media/adc447_51243dddb9a54da4a3c34dbf79a481d3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_51243dddb9a54da4a3c34dbf79a481d3~mv2.jpg"
+      ],
+      "reason": "Mephitsu bake mismatch (night 2026-10-06): listing is BTAS Condiment King Wave Robin (DC Direct), not New Adventures of Batman"
     }
   ]
 }
