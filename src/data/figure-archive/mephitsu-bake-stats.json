@@ -1,239 +1,9 @@
 {
-  "bakedAt": "2026-10-06T18:02:25.085766+00:00",
+  "bakedAt": "2026-10-07T17:58:00.767145+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-10-06T18:01:45.849108+00:00",
-      "line": "gi-joe-classified",
-      "dryRun": false,
-      "mephitsuCount": 318,
-      "mephitsuWithGtin": 164,
-      "enrichStats": {
-        "listing": 0,
-        "fuzzy": 0,
-        "already": 164
-      },
-      "before": {
-        "total": 433,
-        "withSku": 310,
-        "withGtin": 153,
-        "withListingPrimary": 157,
-        "withImage": 382,
-        "emptySku": 123,
-        "emptyImage": 51
-      },
-      "after": {
-        "total": 433,
-        "withSku": 310,
-        "withGtin": 153,
-        "withListingPrimary": 157,
-        "withImage": 382,
-        "emptySku": 123,
-        "emptyImage": 51
-      },
-      "apply": {
-        "matched": 172,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 1,
-        "aliasesAttached": 0,
-        "skippedGtinConflict": 40,
-        "blockedByAudit": 0,
-        "reattachedAfterEnforce": 0,
-        "samples": [
-          {
-            "score": 72.5,
-            "figureId": "mph-f3a102b77368",
-            "name": "Lara Croft",
-            "mephitsu": "Lara Croft",
-            "wave": "Tomb Raider 30th Anniversary",
-            "sku": "5010996434715",
-            "image": true
-          },
-          {
-            "score": 72.5,
-            "figureId": "mph-43077b1fbd5f",
-            "name": "Mad Marauder Sgt. Slaughter",
-            "mephitsu": "Mad Marauder Sgt. Slaughter",
-            "wave": "Amazon & Fan Channel",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 70.0,
-            "figureId": "mph-15dd9ccb1df5",
-            "name": "Crimson Guard (female)",
-            "mephitsu": "Crimson Guard (female)",
-            "wave": "G.I. Joe Retro",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 70.0,
-            "figureId": "mph-9f12374d968a",
-            "name": "David “Crazylegs” Thomas",
-            "mephitsu": "David “Crazylegs” Thomas",
-            "wave": "G.I. Joe Retro",
-            "sku": "5010996361318",
-            "image": true
-          },
-          {
-            "score": 70.0,
-            "figureId": "mph-45e675a4dd05",
-            "name": "Rafael “Zap” Melendez",
-            "mephitsu": "Rafael “Zap” Melendez",
-            "wave": "G.I. Joe Retro",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 70.0,
-            "figureId": "mph-fb52ea918833",
-            "name": "Robert \"Grunt\" Graves",
-            "mephitsu": "Robert \"Grunt\" Graves",
-            "wave": "G.I. Joe Retro",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 70.0,
-            "figureId": "mph-71d48b338fa8",
-            "name": "William \"Wild Bill\" Hardy",
-            "mephitsu": "William \"Wild Bill\" Hardy",
-            "wave": "G.I. Joe Retro",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 70.0,
-            "figureId": "mph-1d59f64f3606",
-            "name": "Richard 'Crystal Ball' King",
-            "mephitsu": "Richard 'Crystal Ball' King",
-            "wave": "Walmart (US) / Hasbro Pulse (UK)",
-            "sku": null,
-            "image": true
-          }
-        ]
-      }
-    },
-    {
-      "bakedAt": "2026-10-06T18:01:51.836160+00:00",
-      "line": "transformers",
-      "dryRun": false,
-      "mephitsuCount": 280,
-      "mephitsuWithGtin": 248,
-      "enrichStats": {
-        "listing": 0,
-        "fuzzy": 0,
-        "already": 248
-      },
-      "before": {
-        "total": 799,
-        "withSku": 632,
-        "withGtin": 485,
-        "withListingPrimary": 147,
-        "withImage": 627,
-        "emptySku": 167,
-        "emptyImage": 172
-      },
-      "after": {
-        "total": 799,
-        "withSku": 632,
-        "withGtin": 485,
-        "withListingPrimary": 147,
-        "withImage": 627,
-        "emptySku": 167,
-        "emptyImage": 172
-      },
-      "apply": {
-        "matched": 46,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 0,
-        "aliasesAttached": 0,
-        "skippedGtinConflict": 6,
-        "blockedByAudit": 3,
-        "reattachedAfterEnforce": 0,
-        "samples": [
-          {
-            "score": 57.5,
-            "figureId": "tfss-ss-one-shockwave",
-            "name": "Shockwave",
-            "mephitsu": "Shockwave",
-            "wave": "Deluxe Class Wave 33",
-            "sku": "5010996348647",
-            "image": true
-          },
-          {
-            "score": 55.5,
-            "figureId": "tfss-ss-one-alpha",
-            "name": "Alpha Trion",
-            "mephitsu": "Alpha Trion",
-            "wave": "Voyager Class Wave 30",
-            "sku": "5010996348661",
-            "image": true
-          },
-          {
-            "score": 55.5,
-            "figureId": "tfss-ss-one-orion",
-            "name": "Orion Pax",
-            "mephitsu": "Orion Pax",
-            "wave": "Deluxe Class A Level Assortment",
-            "sku": "5010996348616",
-            "image": true
-          },
-          {
-            "score": 55.0,
-            "figureId": "ss4-ss86-cyclonus",
-            "name": "Cyclonus",
-            "mephitsu": "Cyclonus",
-            "wave": "Voyager Class Wave 32",
-            "sku": "5010996376084",
-            "image": true
-          },
-          {
-            "score": 55.0,
-            "figureId": "ss4-ss86-soundwave",
-            "name": "Soundwave",
-            "mephitsu": "Soundwave",
-            "wave": "Leader Class Wave 20",
-            "sku": "5010996349873",
-            "image": true
-          },
-          {
-            "score": 55.0,
-            "figureId": "ss4-ss86-thundercracker",
-            "name": "Thundercracker",
-            "mephitsu": "Thundercracker",
-            "wave": "Voyager Class Wave 30",
-            "sku": "5010996323545",
-            "image": true
-          },
-          {
-            "score": 55.0,
-            "figureId": "ss4-ss86-skywarp",
-            "name": "Skywarp",
-            "mephitsu": "Skywarp",
-            "wave": "Voyager Class Wave 31",
-            "sku": "5010996348630",
-            "image": true
-          },
-          {
-            "score": 55.0,
-            "figureId": "afmon-hasbro-shockwave-hsg2191",
-            "name": "Shockwave",
-            "mephitsu": "Shockwave",
-            "wave": "Voyager Class Wave 31",
-            "sku": "HSG2191",
-            "image": true
-          }
-        ]
-      }
-    },
-    {
-      "bakedAt": "2026-10-06T18:02:15.229899+00:00",
+      "bakedAt": "2026-10-07T17:55:31.400965+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 999,
@@ -348,7 +118,731 @@
       }
     },
     {
-      "bakedAt": "2026-10-06T18:02:21.523358+00:00",
+      "bakedAt": "2026-10-07T17:55:43.416037+00:00",
+      "line": "gi-joe-classified",
+      "dryRun": false,
+      "mephitsuCount": 318,
+      "mephitsuWithGtin": 164,
+      "enrichStats": {
+        "listing": 0,
+        "fuzzy": 0,
+        "already": 164
+      },
+      "before": {
+        "total": 435,
+        "withSku": 311,
+        "withGtin": 153,
+        "withListingPrimary": 158,
+        "withImage": 383,
+        "emptySku": 124,
+        "emptyImage": 52
+      },
+      "after": {
+        "total": 435,
+        "withSku": 311,
+        "withGtin": 153,
+        "withListingPrimary": 158,
+        "withImage": 383,
+        "emptySku": 124,
+        "emptyImage": 52
+      },
+      "apply": {
+        "matched": 172,
+        "gtinAssigned": 0,
+        "gtinUpgraded": 0,
+        "imagesFilled": 0,
+        "imagesSkipped": 1,
+        "aliasesAttached": 0,
+        "skippedGtinConflict": 40,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
+        "samples": [
+          {
+            "score": 72.5,
+            "figureId": "mph-f3a102b77368",
+            "name": "Lara Croft",
+            "mephitsu": "Lara Croft",
+            "wave": "Tomb Raider 30th Anniversary",
+            "sku": "5010996434715",
+            "image": true
+          },
+          {
+            "score": 72.5,
+            "figureId": "mph-43077b1fbd5f",
+            "name": "Mad Marauder Sgt. Slaughter",
+            "mephitsu": "Mad Marauder Sgt. Slaughter",
+            "wave": "Amazon & Fan Channel",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 70.0,
+            "figureId": "mph-15dd9ccb1df5",
+            "name": "Crimson Guard (female)",
+            "mephitsu": "Crimson Guard (female)",
+            "wave": "G.I. Joe Retro",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 70.0,
+            "figureId": "mph-9f12374d968a",
+            "name": "David “Crazylegs” Thomas",
+            "mephitsu": "David “Crazylegs” Thomas",
+            "wave": "G.I. Joe Retro",
+            "sku": "5010996361318",
+            "image": true
+          },
+          {
+            "score": 70.0,
+            "figureId": "mph-45e675a4dd05",
+            "name": "Rafael “Zap” Melendez",
+            "mephitsu": "Rafael “Zap” Melendez",
+            "wave": "G.I. Joe Retro",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 70.0,
+            "figureId": "mph-fb52ea918833",
+            "name": "Robert \"Grunt\" Graves",
+            "mephitsu": "Robert \"Grunt\" Graves",
+            "wave": "G.I. Joe Retro",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 70.0,
+            "figureId": "mph-71d48b338fa8",
+            "name": "William \"Wild Bill\" Hardy",
+            "mephitsu": "William \"Wild Bill\" Hardy",
+            "wave": "G.I. Joe Retro",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 70.0,
+            "figureId": "mph-1d59f64f3606",
+            "name": "Richard 'Crystal Ball' King",
+            "mephitsu": "Richard 'Crystal Ball' King",
+            "wave": "Walmart (US) / Hasbro Pulse (UK)",
+            "sku": null,
+            "image": true
+          }
+        ]
+      }
+    },
+    {
+      "bakedAt": "2026-10-07T17:55:49.520644+00:00",
+      "line": "transformers",
+      "dryRun": false,
+      "mephitsuCount": 280,
+      "mephitsuWithGtin": 248,
+      "enrichStats": {
+        "listing": 0,
+        "fuzzy": 0,
+        "already": 248
+      },
+      "before": {
+        "total": 797,
+        "withSku": 630,
+        "withGtin": 485,
+        "withListingPrimary": 145,
+        "withImage": 625,
+        "emptySku": 167,
+        "emptyImage": 172
+      },
+      "after": {
+        "total": 797,
+        "withSku": 630,
+        "withGtin": 485,
+        "withListingPrimary": 145,
+        "withImage": 625,
+        "emptySku": 167,
+        "emptyImage": 172
+      },
+      "apply": {
+        "matched": 46,
+        "gtinAssigned": 0,
+        "gtinUpgraded": 0,
+        "imagesFilled": 0,
+        "imagesSkipped": 0,
+        "aliasesAttached": 0,
+        "skippedGtinConflict": 6,
+        "blockedByAudit": 3,
+        "reattachedAfterEnforce": 0,
+        "samples": [
+          {
+            "score": 57.5,
+            "figureId": "tfss-ss-one-shockwave",
+            "name": "Shockwave",
+            "mephitsu": "Shockwave",
+            "wave": "Deluxe Class Wave 33",
+            "sku": "5010996348647",
+            "image": true
+          },
+          {
+            "score": 55.5,
+            "figureId": "tfss-ss-one-alpha",
+            "name": "Alpha Trion",
+            "mephitsu": "Alpha Trion",
+            "wave": "Voyager Class Wave 30",
+            "sku": "5010996348661",
+            "image": true
+          },
+          {
+            "score": 55.5,
+            "figureId": "tfss-ss-one-orion",
+            "name": "Orion Pax",
+            "mephitsu": "Orion Pax",
+            "wave": "Deluxe Class A Level Assortment",
+            "sku": "5010996348616",
+            "image": true
+          },
+          {
+            "score": 55.0,
+            "figureId": "ss4-ss86-cyclonus",
+            "name": "Cyclonus",
+            "mephitsu": "Cyclonus",
+            "wave": "Voyager Class Wave 32",
+            "sku": "5010996376084",
+            "image": true
+          },
+          {
+            "score": 55.0,
+            "figureId": "ss4-ss86-soundwave",
+            "name": "Soundwave",
+            "mephitsu": "Soundwave",
+            "wave": "Leader Class Wave 20",
+            "sku": "5010996349873",
+            "image": true
+          },
+          {
+            "score": 55.0,
+            "figureId": "ss4-ss86-thundercracker",
+            "name": "Thundercracker",
+            "mephitsu": "Thundercracker",
+            "wave": "Voyager Class Wave 30",
+            "sku": "5010996323545",
+            "image": true
+          },
+          {
+            "score": 55.0,
+            "figureId": "ss4-ss86-skywarp",
+            "name": "Skywarp",
+            "mephitsu": "Skywarp",
+            "wave": "Voyager Class Wave 31",
+            "sku": "5010996348630",
+            "image": true
+          },
+          {
+            "score": 55.0,
+            "figureId": "afmon-hasbro-shockwave-hsg2191",
+            "name": "Shockwave",
+            "mephitsu": "Shockwave",
+            "wave": "Voyager Class Wave 31",
+            "sku": "HSG2191",
+            "image": true
+          }
+        ]
+      }
+    },
+    {
+      "bakedAt": "2026-10-07T17:56:48.657958+00:00",
+      "line": "mcfarlane",
+      "dryRun": false,
+      "mephitsuCount": 2177,
+      "mephitsuWithGtin": 1013,
+      "enrichStats": {
+        "listing": 0,
+        "fuzzy": 0,
+        "already": 1013
+      },
+      "before": {
+        "total": 1384,
+        "withSku": 651,
+        "withGtin": 461,
+        "withListingPrimary": 190,
+        "withImage": 798,
+        "emptySku": 733,
+        "emptyImage": 586
+      },
+      "after": {
+        "total": 1384,
+        "withSku": 651,
+        "withGtin": 461,
+        "withListingPrimary": 190,
+        "withImage": 798,
+        "emptySku": 733,
+        "emptyImage": 586
+      },
+      "apply": {
+        "matched": 474,
+        "gtinAssigned": 0,
+        "gtinUpgraded": 0,
+        "imagesFilled": 0,
+        "imagesSkipped": 25,
+        "aliasesAttached": 0,
+        "skippedGtinConflict": 66,
+        "blockedByAudit": 26,
+        "reattachedAfterEnforce": 0,
+        "samples": [
+          {
+            "score": 63.0,
+            "figureId": "mf8-mf-35",
+            "name": "Harley Quinn",
+            "mephitsu": "Harley Quinn",
+            "wave": "Gold Label GameStop",
+            "sku": "787926177268",
+            "image": false
+          },
+          {
+            "score": 63.0,
+            "figureId": "mcf-w2-mister-zsasz-dc-multiverse-gold-label",
+            "name": "Mister Zsasz",
+            "mephitsu": "Mister Zsasz",
+            "wave": "Gold Label McFarlane Store",
+            "sku": "787926171594",
+            "image": true
+          },
+          {
+            "score": 62.5,
+            "figureId": "mcfdc-lex-2025-movie",
+            "name": "Lex Luthor",
+            "mephitsu": "Lex Luthor",
+            "wave": "Superman Movie Series, Theatrical Edition",
+            "sku": "787926174533",
+            "image": true
+          },
+          {
+            "score": 62.5,
+            "figureId": "d14mcf-ww-ce42",
+            "name": "Wonder Woman",
+            "mephitsu": "Wonder Woman",
+            "wave": "Collector Edition",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 60.5,
+            "figureId": "mcf-mega-sunken-citadel-pirate-aquaman-lost-kingdom-megafig",
+            "name": "Sunken Citadel Pirate",
+            "mephitsu": "Sunken Citadel Pirate",
+            "wave": "Aquaman and the Lost Kingdom",
+            "sku": "787926155488",
+            "image": true
+          },
+          {
+            "score": 60.5,
+            "figureId": "mcf-w2-superman-with-krypto-deluxe-theatrical-superman-movie",
+            "name": "Superman with Krypto",
+            "mephitsu": "Superman with Krypto",
+            "wave": "Superman Movie Series, Theatrical Edition",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 60.0,
+            "figureId": "mcf-dcretro-w16-batman-7833",
+            "name": "Batman",
+            "mephitsu": "Batman",
+            "wave": "The New Batman Adventures Wave 1",
+            "sku": null,
+            "image": false
+          },
+          {
+            "score": 58.0,
+            "figureId": "mf8-mf-40",
+            "name": "Martian Manhunter",
+            "mephitsu": "Martian Manhunter",
+            "wave": "Gold Label, Target (US)",
+            "sku": "787926152531",
+            "image": true
+          }
+        ],
+        "photoVetoes": [
+          {
+            "figureId": "mcf2-cyborg-gold",
+            "mephitsu": "Cyborg — Target, Gold Label, Flashpoint BAF · 2023 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcfdc-cyborg-dceu"
+          },
+          {
+            "figureId": "mcf-dcretro-w16-two-face-5823",
+            "mephitsu": "Two-Face — Target (US) Batman the Animated Series Target Exclusive · 2024 · DC Direct",
+            "reason": "listing_gtin_owned_by:mf8-mf-27"
+          },
+          {
+            "figureId": "mcf-w8-gl-gold",
+            "mephitsu": "Green Lantern Hal Jordan — Gold Label Walmart · 2024 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcfc-gl-hal"
+          },
+          {
+            "figureId": "mcfdc-gl-lex-2025",
+            "mephitsu": "Lex Luthor (Gold Label) — Target, Gold Label · 2022 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:d14mcf-lex-tas"
+          },
+          {
+            "figureId": "mcf-dcretro-w16-penguin-4013",
+            "mephitsu": "Penguin — Target Batman Lunchbox 4-Pack · 2022 · DC Retro",
+            "reason": "listing_code_audit_blocked:787926150483"
+          }
+        ]
+      }
+    },
+    {
+      "bakedAt": "2026-10-07T17:57:26.395979+00:00",
+      "line": "neca",
+      "dryRun": false,
+      "mephitsuCount": 1493,
+      "mephitsuWithGtin": 483,
+      "enrichStats": {
+        "listing": 0,
+        "fuzzy": 0,
+        "already": 483
+      },
+      "before": {
+        "total": 935,
+        "withSku": 713,
+        "withGtin": 332,
+        "withListingPrimary": 381,
+        "withImage": 750,
+        "emptySku": 222,
+        "emptyImage": 185
+      },
+      "after": {
+        "total": 935,
+        "withSku": 713,
+        "withGtin": 332,
+        "withListingPrimary": 381,
+        "withImage": 750,
+        "emptySku": 222,
+        "emptyImage": 185
+      },
+      "apply": {
+        "matched": 236,
+        "gtinAssigned": 0,
+        "gtinUpgraded": 0,
+        "imagesFilled": 0,
+        "imagesSkipped": 7,
+        "aliasesAttached": 0,
+        "skippedGtinConflict": 22,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
+        "samples": [
+          {
+            "score": 60.0,
+            "figureId": "sf-neca-store-harry-potter-legacy-collection-harry-potter-7-inch-scale-action-fi",
+            "name": "Harry Potter",
+            "mephitsu": "Harry Potter",
+            "wave": "Harry Potter Legacy Collection Wave 1",
+            "sku": "634482600153",
+            "image": true
+          },
+          {
+            "score": 60.0,
+            "figureId": "neca-freddy",
+            "name": "Freddy Krueger",
+            "mephitsu": "Freddy Krueger",
+            "wave": "Nightmare on Elm Street 3 ; Dream Warriors",
+            "sku": "634482398999",
+            "image": true
+          },
+          {
+            "score": 57.5,
+            "figureId": "neca-jason",
+            "name": "Jason Voorhees",
+            "mephitsu": "Jason Voorhees",
+            "wave": "Ultimate, Friday the 13th Part 2 (re-issue)",
+            "sku": "344823970080",
+            "image": true
+          },
+          {
+            "score": 55.5,
+            "figureId": "d14neca-tmnt-casey-toon",
+            "name": "Casey Jones",
+            "mephitsu": "Casey Jones",
+            "wave": "Cartoon 2-Packs, Series 3 (Target US)",
+            "sku": "634482543481",
+            "image": true
+          },
+          {
+            "score": 55.5,
+            "figureId": "d14neca-tmnt-april-toon",
+            "name": "April O'Neil",
+            "mephitsu": "April O'Neil",
+            "wave": "Cartoon 2-Packs, Series 3 (Target US)",
+            "sku": "634482542064",
+            "image": true
+          },
+          {
+            "score": 55.5,
+            "figureId": "neca2-tmnt-foot-soldier",
+            "name": "Foot Soldier",
+            "mephitsu": "Foot Soldier",
+            "wave": "Cartoon 2-Packs, Series 3 (Target US)",
+            "sku": "634482541555",
+            "image": true
+          },
+          {
+            "score": 55.0,
+            "figureId": "neca4-ult-predator-city",
+            "name": "City Hunter",
+            "mephitsu": "City Hunter",
+            "wave": "Ultimate, 30th Anniversary",
+            "sku": "634482514283",
+            "image": true
+          },
+          {
+            "score": 55.0,
+            "figureId": "neca3-ult-predator-fuge",
+            "name": "Fugitive Predator",
+            "mephitsu": "Fugitive Predator",
+            "wave": "Ultimate",
+            "sku": "634482515723",
+            "image": true
+          }
+        ],
+        "photoVetoes": [
+          {
+            "figureId": "neca3-ult-alien-big-chap",
+            "mephitsu": "Big Chap Alien — Ultimate · 2020 · Aliens",
+            "reason": "listing_gtin_owned_by:neca5-neca-alien-big-chap"
+          }
+        ]
+      }
+    },
+    {
+      "bakedAt": "2026-10-07T17:57:48.816830+00:00",
+      "line": "super7",
+      "dryRun": false,
+      "mephitsuCount": 520,
+      "mephitsuWithGtin": 68,
+      "enrichStats": {
+        "listing": 0,
+        "fuzzy": 0,
+        "already": 68
+      },
+      "before": {
+        "total": 2834,
+        "withSku": 2412,
+        "withGtin": 130,
+        "withListingPrimary": 2282,
+        "withImage": 2551,
+        "emptySku": 422,
+        "emptyImage": 283
+      },
+      "after": {
+        "total": 2834,
+        "withSku": 2412,
+        "withGtin": 130,
+        "withListingPrimary": 2282,
+        "withImage": 2551,
+        "emptySku": 422,
+        "emptyImage": 283
+      },
+      "apply": {
+        "matched": 118,
+        "gtinAssigned": 0,
+        "gtinUpgraded": 0,
+        "imagesFilled": 0,
+        "imagesSkipped": 4,
+        "aliasesAttached": 0,
+        "skippedGtinConflict": 12,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
+        "samples": [
+          {
+            "score": 58.0,
+            "figureId": "s73-silverhawks-monstar",
+            "name": "Mon*Star",
+            "mephitsu": "Mon*Star",
+            "wave": "Silverhawks Series 1",
+            "sku": "840049818439",
+            "image": true
+          },
+          {
+            "score": 58.0,
+            "figureId": "s73-gi joe-cobra-commander-ult",
+            "name": "Cobra Commander",
+            "mephitsu": "Cobra Commander",
+            "wave": "GI Joe Series 1",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 58.0,
+            "figureId": "s73-gi joe-stormshadow-ult",
+            "name": "Storm Shadow",
+            "mephitsu": "Storm Shadow",
+            "wave": "GI Joe Series 3",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 58.0,
+            "figureId": "d14s7u-ult-tmnt-foot",
+            "name": "Foot Soldier",
+            "mephitsu": "Foot Soldier",
+            "wave": "TMNT Series 13",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 58.0,
+            "figureId": "s7c-ult-tmnt-baxter",
+            "name": "Baxter Stockman",
+            "mephitsu": "Baxter Stockman",
+            "wave": "TMNT Series 1",
+            "sku": null,
+            "image": false
+          },
+          {
+            "score": 58.0,
+            "figureId": "s7c-ult-tmnt-casey",
+            "name": "Casey Jones",
+            "mephitsu": "Casey Jones",
+            "wave": "TMNT Series 13",
+            "sku": "SUP811843",
+            "image": true
+          },
+          {
+            "score": 58.0,
+            "figureId": "s7c-ult-tmnt-april",
+            "name": "April O'Neil",
+            "mephitsu": "April O'Neil",
+            "wave": "TMNT Series 14",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 53.0,
+            "figureId": "s73-silverhawks-quicksilver",
+            "name": "Quicksilver",
+            "mephitsu": "Quicksilver",
+            "wave": "Silverhawks Series 1",
+            "sku": "840049813342",
+            "image": true
+          }
+        ]
+      }
+    },
+    {
+      "bakedAt": "2026-10-07T17:57:50.345543+00:00",
+      "line": "diamond-select",
+      "dryRun": false,
+      "mephitsuCount": 597,
+      "mephitsuWithGtin": 2,
+      "enrichStats": {
+        "listing": 0,
+        "fuzzy": 0,
+        "already": 2
+      },
+      "before": {
+        "total": 103,
+        "withSku": 22,
+        "withGtin": 2,
+        "withListingPrimary": 20,
+        "withImage": 35,
+        "emptySku": 81,
+        "emptyImage": 68
+      },
+      "after": {
+        "total": 103,
+        "withSku": 22,
+        "withGtin": 2,
+        "withListingPrimary": 20,
+        "withImage": 35,
+        "emptySku": 81,
+        "emptyImage": 68
+      },
+      "apply": {
+        "matched": 53,
+        "gtinAssigned": 0,
+        "gtinUpgraded": 0,
+        "imagesFilled": 0,
+        "imagesSkipped": 22,
+        "aliasesAttached": 0,
+        "skippedGtinConflict": 0,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
+        "samples": [
+          {
+            "score": 46.5,
+            "figureId": "dst-ms-iron-spider",
+            "name": "Iron Spider",
+            "mephitsu": "Iron-Spider, Infinity War",
+            "wave": "MCU, Avengers Infinity War",
+            "sku": "DCD84034",
+            "image": true
+          },
+          {
+            "score": 39.0,
+            "figureId": "dst-dst-mrfreeze-animated",
+            "name": "Mr. Freeze",
+            "mephitsu": "Mr Freeze",
+            "wave": "Series 4",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 36.5,
+            "figureId": "dst-ms-shehulk",
+            "name": "She-Hulk",
+            "mephitsu": "She-Hulk",
+            "wave": "Wizard World (Fans Choice)",
+            "sku": null,
+            "image": false
+          },
+          {
+            "score": 36.5,
+            "figureId": "dst-ms-winter",
+            "name": "Winter Soldier",
+            "mephitsu": "Winter Soldier",
+            "wave": "Disney Store",
+            "sku": "DCD 17885 MVL SELECT DIS WINTER SOLDIER",
+            "image": true
+          },
+          {
+            "score": 36.5,
+            "figureId": "dst-ms-symbiote",
+            "name": "Symbiote Spider-Man",
+            "mephitsu": "Symbiote Spider-Man",
+            "wave": "General",
+            "sku": null,
+            "image": false
+          },
+          {
+            "score": 36.5,
+            "figureId": "dst-ms-gwen",
+            "name": "Spider-Gwen",
+            "mephitsu": "Spider-Gwen",
+            "wave": "General",
+            "sku": "DST-18223-C",
+            "image": true
+          },
+          {
+            "score": 36.5,
+            "figureId": "dst-ms-silver-surfer",
+            "name": "Silver Surfer",
+            "mephitsu": "Silver Surfer",
+            "wave": "General",
+            "sku": null,
+            "image": false
+          },
+          {
+            "score": 36.5,
+            "figureId": "dst-ms-scarlet-witch",
+            "name": "Scarlet Witch",
+            "mephitsu": "Scarlet Witch",
+            "wave": "General",
+            "sku": null,
+            "image": true
+          }
+        ]
+      }
+    },
+    {
+      "bakedAt": "2026-10-07T17:57:57.002153+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -463,7 +957,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-06T18:02:25.079534+00:00",
+      "bakedAt": "2026-10-07T17:58:00.760257+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,

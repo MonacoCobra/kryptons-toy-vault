@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T18:01:28Z",
+  "generatedAt": "2026-10-07T17:58:57Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-09-29T18:01:27.606169+00:00",
+    "after": "2026-09-30T17:58:55.668965+00:00",
     "before": null
   },
   "fetch": {
@@ -45,18 +45,18 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 13,
+    "fetchedPostCount": 16,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9404,
+    "indexedRows": 9483,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 13,
-    "acceptedCandidates": 2,
-    "rejectedRows": 11,
+    "fetchedPosts": 16,
+    "acceptedCandidates": 3,
+    "rejectedRows": 13,
     "byCompany": {
       "hasbro": {
         "accepted": 0,
@@ -67,8 +67,8 @@
         "rejected": 1
       },
       "neca": {
-        "accepted": 1,
-        "rejected": 0
+        "accepted": 2,
+        "rejected": 1
       },
       "jazwares": {
         "accepted": 0,
@@ -108,16 +108,36 @@
       }
     },
     "byRejectReason": {
+      "company-not-allowlisted": 7,
+      "no-explicit-figure": 1,
       "missing-line": 2,
-      "company-not-allowlisted": 6,
       "news-event-post": 1,
       "sponsor-newsletter": 1,
       "company-unknown": 1
     },
     "applied": 1,
-    "skippedApply": 1
+    "skippedApply": 2
   },
   "candidates": [
+    {
+      "decision": "accept",
+      "name": "Jason Voorhees",
+      "company": "neca",
+      "line": "NECA Ultimate",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Savini and Santa Ghost Face General",
+      "sourceUrl": "https://www.toyark.com/2026/10/07/neca-savini-jason-voorhees-and-santa-ghost-face-general-pre-orders-599891",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-NECAPre-Orders-10.7.26.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599891,
+      "postYear": 2026,
+      "pack": null,
+      "title": "NECA Savini Jason Voorhees and Santa Ghost Face General Pre-Orders",
+      "rationale": "neca via class:companies-neca; line=NECA Ultimate; variant=Savini and Santa Ghost Face General; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
     {
       "decision": "accept",
       "name": "Leatherface",
@@ -158,6 +178,42 @@
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "other",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/07/dc-comics-inart-dark-knight-returns-batman-pre-order-599901",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599901,
+      "title": "DC Comics – InArt Dark Knight Returns Batman Pre-Order",
+      "rationale": "Recognized other via class:companies-queen-studios; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "no-explicit-figure",
+      "name": null,
+      "company": "neca",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/07/prey-neca-ultramate-feral-predator-preview-599888",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-ULTRAmate-Feral-Predator-Preview.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599888,
+      "title": "Prey – NECA ULTRAmate Feral Predator Preview",
+      "rationale": "Company/signal present but no explicitly named figure/variant."
+    },
     {
       "decision": "reject",
       "reason": "missing-line",
@@ -359,21 +415,30 @@
   ],
   "applied": [
     {
-      "id": "ta-7bf0f6dadbb9",
-      "name": "Leatherface",
+      "id": "ta-018cda660a4c",
+      "name": "Jason Voorhees",
       "company": "neca",
       "line": "NECA Ultimate",
       "year": 2026,
-      "variant": "The Texas Chainsaw Massacre: The Beginning – Re-Release",
+      "variant": "Savini and Santa Ghost Face General",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-TCM-The-Beginning-Leatherface-Reissue-Preview.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-NECAPre-Orders-10.7.26.jpg",
       "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/06/the-texas-chainsaw-massacre-the-beginning-neca-leatherface-re-release-599798",
-      "toyarkPostId": 599798
+      "sourceUrl": "https://www.toyark.com/2026/10/07/neca-savini-jason-voorhees-and-santa-ghost-face-general-pre-orders-599891",
+      "toyarkPostId": 599891
     }
   ],
   "applySkipped": [
+    {
+      "name": "Leatherface",
+      "company": "neca",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-7bf0f6dadbb9"
+      ],
+      "toyarkPostId": 599798
+    },
     {
       "name": "Steve Rogers",
       "company": "hottoys",
@@ -385,9 +450,9 @@
     }
   ],
   "applyStats": {
-    "accepted": 2,
+    "accepted": 3,
     "applied": 1,
-    "skippedApply": 1,
+    "skippedApply": 2,
     "aliasAdded": 3,
     "withImage": 1,
     "cap": 50,

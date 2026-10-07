@@ -329,7 +329,8 @@ def make_row(
         "company": company,
         "kind": "figure",
         "releaseDate": f"{year}-01-01",
-        "msrp": float(msrp),
+        # Shelby 2026-10-03: unknown price stays null (shows "—"); no bucket-default MSRP.
+        "msrp": None,
         "scale": scale,
         "demand": float(demand),
         "tags": tags2,

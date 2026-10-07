@@ -1,12 +1,12 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-10-06T18:01:29Z",
+  "finishedAt": "2026-10-07T17:58:57Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 2,
+  "acceptedCandidates": 3,
   "applied": 1,
-  "skippedApply": 1,
-  "rejectedRows": 11,
+  "skippedApply": 2,
+  "rejectedRows": 13,
   "withImage": 1,
   "aliasAdded": 3,
   "byCompany": {
@@ -19,8 +19,8 @@
       "rejected": 1
     },
     "neca": {
-      "accepted": 1,
-      "rejected": 0
+      "accepted": 2,
+      "rejected": 1
     },
     "jazwares": {
       "accepted": 0,
@@ -60,32 +60,42 @@
     }
   },
   "byRejectReason": {
+    "company-not-allowlisted": 7,
+    "no-explicit-figure": 1,
     "missing-line": 2,
-    "company-not-allowlisted": 6,
     "news-event-post": 1,
     "sponsor-newsletter": 1,
     "company-unknown": 1
   },
   "appliedIds": [
-    "ta-7bf0f6dadbb9"
+    "ta-018cda660a4c"
   ],
   "appliedSample": [
     {
-      "id": "ta-7bf0f6dadbb9",
-      "name": "Leatherface",
+      "id": "ta-018cda660a4c",
+      "name": "Jason Voorhees",
       "company": "neca",
       "line": "NECA Ultimate",
       "year": 2026,
-      "variant": "The Texas Chainsaw Massacre: The Beginning – Re-Release",
+      "variant": "Savini and Santa Ghost Face General",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-TCM-The-Beginning-Leatherface-Reissue-Preview.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-NECAPre-Orders-10.7.26.jpg",
       "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/06/the-texas-chainsaw-massacre-the-beginning-neca-leatherface-re-release-599798",
-      "toyarkPostId": 599798
+      "sourceUrl": "https://www.toyark.com/2026/10/07/neca-savini-jason-voorhees-and-santa-ghost-face-general-pre-orders-599891",
+      "toyarkPostId": 599891
     }
   ],
   "skippedSample": [
+    {
+      "name": "Leatherface",
+      "company": "neca",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-7bf0f6dadbb9"
+      ],
+      "toyarkPostId": 599798
+    },
     {
       "name": "Steve Rogers",
       "company": "hottoys",
@@ -96,7 +106,7 @@
       "toyarkPostId": 599629
     }
   ],
-  "archiveSize": 29874,
+  "archiveSize": 30042,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"

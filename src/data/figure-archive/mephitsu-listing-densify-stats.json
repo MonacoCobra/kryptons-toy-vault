@@ -1,16 +1,35 @@
 {
   "source": "mephitsu-listing",
-  "finishedAt": "2026-10-06T18:01:15.951628+00:00",
+  "finishedAt": "2026-10-07T17:55:02.622168+00:00",
   "cap": 90,
-  "added": 0,
+  "added": 1,
   "withImage": 0,
   "skipped": 379,
-  "counts": {},
-  "byLine": {},
-  "byCompany": {},
-  "aliasAdded": 0,
-  "addedSample": [],
-  "addedIds": [],
+  "counts": {
+    "hasbro-gijoe-classified": 1
+  },
+  "byLine": {
+    "GI Joe Classified": 1
+  },
+  "byCompany": {
+    "hasbro": 1
+  },
+  "aliasAdded": 2,
+  "addedSample": [
+    {
+      "id": "mph-8e01ce5070b2",
+      "name": "Flatline",
+      "company": "hasbro",
+      "line": "GI Joe Classified",
+      "year": 2026,
+      "bucket": "hasbro-gijoe-classified",
+      "image": false,
+      "exclusive": null
+    }
+  ],
+  "addedIds": [
+    "mph-8e01ce5070b2"
+  ],
   "skippedSample": [
     {
       "id": "mph-84c3186acad7",
@@ -180,9 +199,9 @@
       "reason": "id-exists"
     }
   ],
-  "archiveSize": 29873,
+  "archiveSize": 30041,
   "caches": {
-    "hasbro": 966,
+    "hasbro": 967,
     "jazwares": 313
   }
 }
