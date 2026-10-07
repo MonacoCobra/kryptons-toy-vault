@@ -1,73 +1,208 @@
 {
-  "coversAfter": 4609,
-  "coversBefore": 4601,
+  "coversAfter": 4644,
+  "coversBefore": 4609,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9808330-cover.jpg",
-      "id": "boom-war-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/11/30/d2c7da873a654db4aca4a381aa9aa814.jpg",
+      "id": "dst-galactic-1",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9614802-cover.jpg",
-      "id": "amer-silent-night-deadly-night-vs-valentine-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/10/17/9892894-cover.jpg",
+      "id": "dstl-endeavour-1",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11114/111149757/9787559-image_20250608_0001-min.jpg",
-      "id": "arch-archie-s-comics-spectacular-fcbd-edition-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/10/5ddf6f2ed4db48f19e9aca29d208997f.jpg",
+      "id": "dstl-white-house-robot-romance-1",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9648966-cover.jpg",
-      "id": "arch-nine-lives-of-salem-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/16/2cb68a0459644faca66bbd6b2eda7404.jpg",
+      "id": "dstl-you-won-t-feel-thing-1",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9866573-cover.jpg",
-      "id": "badi-cul-de-sac-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/17/543728cf8324478795da635674eb353c.jpg",
+      "id": "idw-star-trek-red-shirts-1",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9933497-cover.jpg",
-      "id": "badi-ordained-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/24/90d1fb7d38154155888c5ed3e5ec531a.jpg",
+      "id": "idw-star-trek-strange-new-worlds-seeds-1",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9708754-cover.jpg",
-      "id": "badi-planet-death-0",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/05/06df6a4917944e61a3b1b068db82eda3.jpg",
+      "id": "idw-star-trek-the-last-starship-1",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9907971-cover.jpg",
-      "id": "badi-planet-death-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/30/da0ec8cdf60e4c75a7b2cd67b3d6326c.jpg",
+      "id": "idw-star-trek-voyager-homecoming-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/05/51382cf31ee7418d818218b63ee6b3a6.jpg",
+      "id": "idw-starship-godzilla-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/07/410d137aedcf4d318626cdaf6e13b2cb.jpg",
+      "id": "idw-street-sharks-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/10/31/02f7bb9b9ab14cd0bc7a4becd93398d5.jpg",
+      "id": "idw-teenage-mutant-ninja-turtles-annual-2025-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/07/7639367bdc314adca595c0f6699e6bed.jpg",
+      "id": "idw-teenage-mutant-ninja-turtles-battle-nexus-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/04/b2103587fede4cc69c9e38c75287dee2.jpg",
+      "id": "idw-teenage-mutant-ninja-turtles-casey-jones-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/07/b2a5781542bd4f52a5ab2061c8ae48ed.jpg",
+      "id": "idw-teenage-mutant-ninja-turtles-shredder-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/05/3910ef1aae4741d0b41d434fcb05846b.jpg",
+      "id": "idw-twilight-zone-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/23/23538379d8814ac986fcdc71a0212d48.jpg",
+      "id": "madc-blue-palo-verde-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/08/91e83794375f4b86b081fcf4805d5d6a.jpg",
+      "id": "madc-buried-long-long-ago-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/07/679d3e7ab8314e198a057b2ae9cb9489.jpg",
+      "id": "madc-circus-maximus-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/07/4a9d98f9e42243cf877d7372d750d309.jpg",
+      "id": "madc-crush-depth-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/29/b4de3090f7544d7b93b79639a53cbf72.jpg",
+      "id": "madc-cyberarchy-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/07/04c9afb80487452bab55575dc6bd2739.jpg",
+      "id": "madc-dark-pyramid-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/10/18/9a5ecdd0b321488691787fa92099ce38.jpg",
+      "id": "madc-defenders-of-earth-dark-destiny-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/04/3a73864e898644c6b521eadf1ab39c26.jpg",
+      "id": "madc-eat-your-young-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/23/e08fe5e23a1f4cdcbb2b45f359c6b3b3.jpg",
+      "id": "madc-endless-night-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/20/ef2109ceff554b0aaeae805bade6d582.jpg",
+      "id": "madc-far-down-below-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/07/780f79befe424be59090493b56d6284d.jpg",
+      "id": "madc-ferocious-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/02/05/cover_Dnzb24P.jpg",
+      "id": "madc-flash-gordon-quarterly-2025-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/04/5ce49ebf13ad4e6587c0ceb01be5b0b9.jpg",
+      "id": "madc-flow-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/dc97ab5235ba47f4be747b327e83761d.jpg",
+      "id": "madc-gatchaman-only-one-earth-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/05/1de2071060a348d0aa3e154b255782a5.jpg",
+      "id": "madc-gunpowder-prophets-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/19/f3dc542e29124d34853c28f9d4d05355.jpg",
+      "id": "madc-it-killed-everyone-but-me-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/03/0e1dc63ab808451e9565ed9654298e6d.jpg",
+      "id": "madc-kill-train-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/07/8f2a717e48014c3f9922fee49710a442.jpg",
+      "id": "madc-liquidator-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/04/99ae1716b6014541b291676b25ceb361.jpg",
+      "id": "madc-look-into-my-eyes-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/20/9f775df389bb4e2999b34755e1df4f6b.jpg",
+      "id": "madc-miraculous-1",
+      "source": "metron"
     }
   ],
   "errors": 0,
-  "filled": 8,
-  "filledCv": 8,
-  "filledMetron": 0,
+  "filled": 35,
+  "filledCv": 0,
+  "filledMetron": 35,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 0,
+  "metronDailyUsed": 160,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 8,
+  "misses": 42,
   "recentMissSkips": {
-    "cv": 86
+    "metron": 147
   },
   "requests": {
-    "cv": 31,
-    "metron": 0
+    "cv": 0,
+    "metron": 160
   },
   "skipped": 0,
-  "source": "cv",
+  "source": "metron",
   "sourceMinutes": {
-    "cv": 18.05
+    "metron": 18.31
   },
-  "stoppedReason": "cv max-minutes 18 reached",
-  "updatedAt": "2026-10-07T17:43:50Z",
+  "stoppedReason": "metron max-minutes 18 reached",
+  "updatedAt": "2026-10-07T18:02:41Z",
   "yearBand": "2020-2025"
 }
