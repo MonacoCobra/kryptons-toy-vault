@@ -1,0 +1,171 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-07",
+  "updatedAt": "2026-10-07T14:41:32Z",
+  "added": 17,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Direct box fetch got BBTS challenge (403); pages 1+2 captured via box browser, disjoint, merged.",
+  "ee_detail_blocker": "Direct box fetch got Cloudflare 403; hot-off-the-truck (now redirects to new-and-trending) + newly-added captured via box browser, listing cards only.",
+  "counts": {
+    "candidates_seen": 289,
+    "ee_candidates": 19,
+    "bbts_candidates": 169,
+    "added": 34,
+    "skipped_dupes": 154,
+    "rejected_non_af": 71,
+    "unmapped_company": 30,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 30023,
+  "oneshotAfter": 30040,
+  "ee_added": 11,
+  "bbts_added": 6,
+  "samples": [
+    {
+      "sku": "HSG2411",
+      "name": "Marvel Legends Series Comics-Inspired Elektra 6-Inch Action Figure",
+      "id": "afmon-hasbro-marvel-legends-series-comics-inspired-elektra-6-inch-action-figure-hsg2411",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2413",
+      "name": "Marvel Legends Series Comics-Inspired Elsa Bloodstone 6-Inch Action Figure",
+      "id": "afmon-hasbro-marvel-legends-series-comics-inspired-elsa-bloodstone-6-inch-action-figure-hsg2413",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2408",
+      "name": "Marvel Legends Series Comics-Inspired Hawkeye 6-Inch Action Figure",
+      "id": "afmon-hasbro-marvel-legends-series-comics-inspired-hawkeye-6-inch-action-figure-hsg2408",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2409",
+      "name": "Marvel Legends Series Comics-Inspired Spider-Man (Doom Suit) 6-Inch Action Figure",
+      "id": "afmon-hasbro-marvel-legends-series-comics-inspired-spider-man-doom-suit-6-inch-action-figu-hsg2409",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2410",
+      "name": "Marvel Legends Series Comics-Inspired Micronauts Acroyear 6-Inch Action Figure",
+      "id": "afmon-hasbro-marvel-legends-series-comics-inspired-micronauts-acroyear-6-inch-action-figur-hsg2410",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2412",
+      "name": "Marvel Legends Series Comics-Inspired Captain America (Earth-X) 6-Inch Action Figure",
+      "id": "afmon-hasbro-marvel-legends-series-comics-inspired-captain-america-earth-x-6-inch-action-f-hsg2412",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2086",
+      "name": "G.I. Joe Classified Series Retro Cardback Lara Croft Tomb Raider 6-Inch Action Figure",
+      "id": "afmon-hasbro-g-i-joe-classified-series-retro-cardback-lara-croft-tomb-raider-6-inch-action-hsg2086",
+      "source": "ee"
+    },
+    {
+      "sku": "MF12819",
+      "name": "Tomb Raider: Legacy of Atlantis Lara Croft McFarlane Elite Edition #25 7-Inch Deluxe Action Figure",
+      "id": "afmon-mcfarlane-tomb-raider-legacy-of-atlantis-lara-croft-mcfarlane-elite-edition-25-7-inc-mf12819",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG5306",
+      "name": "Spider-Man Maximum Carnage Marvel Legends Series Carnage Retro Cardback 6-Inch Action Figure",
+      "id": "afmon-hasbro-spider-man-maximum-carnage-marvel-legends-series-carnage-retro-cardback-6-inc-hsg5306",
+      "source": "ee"
+    },
+    {
+      "sku": "NC39984",
+      "name": "Friday the 13th The Game Ultimate Savini Jason 7-Inch Scale Action Figure",
+      "id": "afmon-super7-friday-the-13th-the-game-ultimate-savini-jason-7-inch-scale-action-figure-nc39984",
+      "source": "ee"
+    },
+    {
+      "sku": "NC41365",
+      "name": "Scream Ultimate Santa Ghost Face 7-Inch  Scale Action Figure",
+      "id": "afmon-super7-scream-ultimate-santa-ghost-face-7-inch-scale-action-figure-nc41365",
+      "source": "ee"
+    },
+    {
+      "sku": "NC54607",
+      "name": "Teenage Mutant Ninja Turtles (1987 Cartoon) Tuxedo Leonardo 7-Inch Scale Action Figure",
+      "id": "afmon-neca-teenage-mutant-ninja-turtles-1987-cartoon-tuxedo-leonardo-7-inch-scale-action-f-nc54607",
+      "source": "ee"
+    }
+  ],
+  "commit": null,
+  "reviewDropped": [
+    {
+      "sku": "BBTS-199168",
+      "aliasedTo": "afmon-hasbro-star-wars-the-vintage-collection-super-battle-droid-battle-d-hsg3212"
+    },
+    {
+      "sku": "BBTS-199167",
+      "aliasedTo": "afmon-hasbro-star-wars-the-vintage-collection-phase-i-clone-troopers-acti-hsg3309"
+    },
+    {
+      "sku": "BBTS-199165",
+      "aliasedTo": "afmon-hasbro-star-wars-the-vintage-collection-imperial-remnant-stormtroop-hsg3211"
+    },
+    {
+      "sku": "BBTS-199164",
+      "aliasedTo": "afmon-hasbro-star-wars-the-black-series-jedi-temple-guards-6-inch-action--hsg3206"
+    },
+    {
+      "sku": "BBTS-199162",
+      "aliasedTo": "afmon-hasbro-star-wars-black-series-misty-cav-scar-squadron-6-inch-action-hsg3204"
+    },
+    {
+      "sku": "MF12819",
+      "aliasedTo": "afmon-mcfarlane-tomb-raider-legacy-of-atlantis-mcfarlane-elite-edition-lara-croft-delu-bbts-198702"
+    },
+    {
+      "sku": "HSG5306",
+      "aliasedTo": "afmon-hasbro-spider-man-the-animated-series-marvel-legends-retro-collection-carnage-ma-bbts-197666"
+    },
+    {
+      "sku": "BBTS-198141",
+      "aliasedTo": "afmon-hasbro-marvel-legends-series-comics-inspired-captain-america-earth-x-6-inch-action-f-hsg2412"
+    },
+    {
+      "sku": "BBTS-198142",
+      "aliasedTo": "afmon-hasbro-marvel-legends-series-comics-inspired-elektra-6-inch-action-figure-hsg2411"
+    },
+    {
+      "sku": "BBTS-198144",
+      "aliasedTo": "afmon-hasbro-marvel-legends-series-comics-inspired-spider-man-doom-suit-6-inch-action-figu-hsg2409"
+    },
+    {
+      "sku": "BBTS-198140",
+      "aliasedTo": "afmon-hasbro-marvel-legends-series-comics-inspired-elsa-bloodstone-6-inch-action-figure-hsg2413"
+    },
+    {
+      "sku": "BBTS-198145",
+      "aliasedTo": "afmon-hasbro-marvel-legends-series-comics-inspired-hawkeye-6-inch-action-figure-hsg2408"
+    },
+    {
+      "sku": "BBTS-198143",
+      "aliasedTo": "afmon-hasbro-marvel-legends-series-comics-inspired-micronauts-acroyear-6-inch-action-figur-hsg2410"
+    },
+    {
+      "sku": "BBTS-199193",
+      "aliasedTo": "afmon-super7-friday-the-13th-the-game-ultimate-savini-jason-7-inch-scale-action-figure-nc39984"
+    },
+    {
+      "sku": "BBTS-199195",
+      "aliasedTo": "afmon-super7-scream-ultimate-santa-ghost-face-7-inch-scale-action-figure-nc41365"
+    },
+    {
+      "sku": "BBTS-199313",
+      "aliasedTo": "afmon-neca-teenage-mutant-ninja-turtles-1987-cartoon-tuxedo-leonardo-7-inch-scale-action-f-nc54607"
+    },
+    {
+      "sku": "BBTS-199312",
+      "aliasedTo": "afmon-neca-teenage-mutant-ninja-turtles-1987-cartoon-incognito-michelangelo-7-inch-scale-a-nc54608"
+    }
+  ]
+}
