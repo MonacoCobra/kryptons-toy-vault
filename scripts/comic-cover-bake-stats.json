@@ -1,263 +1,73 @@
 {
-  "coversAfter": 4601,
-  "coversBefore": 4555,
+  "coversAfter": 4609,
+  "coversBefore": 4601,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/07/4f9ee38133a845a3af53df78bf9d12a6.jpg",
-      "id": "dh-masters-of-universe-andra-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9808330-cover.jpg",
+      "id": "boom-war-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/02/10/cover.jpg",
-      "id": "dh-megaghost-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9614802-cover.jpg",
+      "id": "amer-silent-night-deadly-night-vs-valentine-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/07/fb86df5f67b842a2b698d516b1688246.jpg",
-      "id": "dh-minor-threats-last-devil-left-alive-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11114/111149757/9787559-image_20250608_0001-min.jpg",
+      "id": "arch-archie-s-comics-spectacular-fcbd-edition-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/03/01/Miss_Truesdale_and_the_Rise_of_Man_1.jpg",
-      "id": "dh-miss-truesdale-and-rise-of-man-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9648966-cover.jpg",
+      "id": "arch-nine-lives-of-salem-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/07/ad630979e7ab4e438039a8ad6fcf35c8.jpg",
-      "id": "dh-nemesis-forever-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9866573-cover.jpg",
+      "id": "badi-cul-de-sac-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/07/4a192f2825674556b2338924bec3b3bc.jpg",
-      "id": "dh-nocturnals-sinister-path-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9933497-cover.jpg",
+      "id": "badi-ordained-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/18/0d518a4ec647447785c74161b2c709da.jpg",
-      "id": "dh-oddly-pedestrian-life-of-christopher-chaos-2025-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9708754-cover.jpg",
+      "id": "badi-planet-death-0",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/07/b2f94bdbe5a74ca3ad62ab5868741a7f.jpg",
-      "id": "dh-orphan-and-five-beasts-bath-of-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/20/48a0cadc9f8349258c076db7a6255ba7.jpg",
-      "id": "dh-our-brilliant-ruin-horror-at-crane-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/07/120257f4529c4fb8b6405f641584c825.jpg",
-      "id": "dh-powers-25-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/04/quck-stops-v3-1.jpg",
-      "id": "dh-quick-stops-volume-3-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/06/41d4eb42400a462bb8ddf1d7fcbfb9eb.jpg",
-      "id": "dh-red-book-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/04/84c63f4f85484fcb841d7d5d8f830613.jpg",
-      "id": "dh-resident-alien-book-of-changes-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/03/05f98a7a62b7404c86028ccdc5ad026c.jpg",
-      "id": "dh-ripperland-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/20/735ebacfeefe4fb59e93e1094a61bd6b.jpg",
-      "id": "dh-robowolf-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/03/f6a7fbd1257d407f9c4832e18213edb3.jpg",
-      "id": "dh-shadow-of-golden-crane-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/28/43db2b6c01ac41169811fff56ea405cc.jpg",
-      "id": "dh-sister-imperator-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/07/b493a2deed194683bb30f9e99e8fc03d.jpg",
-      "id": "dh-space-scouts-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/03/848b0ddb8aeb478c9233a0b7b7226b35.jpg",
-      "id": "dh-star-wars-hyperspace-stories-bad-batch-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/10/18/3125c506997041a5af52fe0aaef0e409.jpg",
-      "id": "dh-star-wars-hyperspace-stories-bad-batch-2025-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/01/07/cover.jpg",
-      "id": "dh-star-wars-hyperspace-stories-library-edition-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/17/6618e082f10640e9b5d1c1b34bb655e2.jpg",
-      "id": "dh-star-wars-hyperspace-stories-tides-of-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/07/d8c87fc28c0c4b0ca2a67a7ebee8a484.jpg",
-      "id": "dh-star-wars-tales-from-nightlands-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/15/c8451dd7a1834c2397c525bd67ba6279.jpg",
-      "id": "dh-stranger-things-and-dungeons-dragons-rise-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/16/0d15418c029c4327959ab18968b5417f.jpg",
-      "id": "dh-stranger-things-tales-from-hawkins-2-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/10/18/3880889c73574c1aa90b56d0136b2a26.jpg",
-      "id": "dh-synthetics-volume-one-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/17/de690dd9db5a41a18e9715b589e398f2.jpg",
-      "id": "dh-texarcanum-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/31/77508de670484854bebb3a625615882b.jpg",
-      "id": "dh-those-not-afraid-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/16/451c5fbbf1254d3a977604e83ccc4f00.jpg",
-      "id": "dh-tramps-of-apocalypse-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/15/ef24c7479f794526aaf5791eda8c58de.jpg",
-      "id": "dh-umbrella-academy-plan-b-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/06/1cb81c6552cc4eae8a61dc23607f7363.jpg",
-      "id": "dh-vatican-city-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/07/47397bf8ca0d410a88c283ac24d4086b.jpg",
-      "id": "dh-who-are-power-pals-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/15/4376b4336cd24f50be04f5ab9590105f.jpg",
-      "id": "dh-witcher-bear-and-butterfly-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/03/d37c5a147881433a94223c675641003b.jpg",
-      "id": "draw-legend-of-kamui-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/03/The-Devils-Grin-Book-One-2025.webp",
-      "id": "fant-devil-s-grin-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/06/fbd999eeb60441caab50d0f8c477a051.jpg",
-      "id": "idw-30-days-of-night-falling-sun-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/11/398cb468c94f4052b837d26b2ba54924.jpg",
-      "id": "idw-beneath-trees-where-nobody-sees-rite-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/04/33bd7d2352814a81ad4d483caaa01b9b.jpg",
-      "id": "idw-event-horizon-dark-descent-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/28/5188b67bd5d14a3a8069a53b4d63c104.jpg",
-      "id": "idw-godzilla-escape-deadzone-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/22/8def2327a23745c588ee6a394a655c90.jpg",
-      "id": "idw-godzilla-heist-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/15/d3aefa7365354ca4ab72f249de4f7a15.jpg",
-      "id": "idw-godzilla-here-there-be-aliens-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/20/73f67f97b15b451785d3016504d2b17d.jpg",
-      "id": "idw-monster-high-world-s-scare-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/10/18/6bdecf066c804c83ad515391c8471668.jpg",
-      "id": "idw-return-to-sleepy-hollow-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/06/8152964ee37343f29011cb7b785f11b6.jpg",
-      "id": "idw-sonic-hedgehog-chaotix-s-30th-anniversary-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/30/ff1338df9485493c992b5768d893855d.jpg",
-      "id": "idw-star-trek-lore-war-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/18/0f7e6143104d498c80dd065993c0166a.jpg",
-      "id": "idw-star-trek-omega-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9907971-cover.jpg",
+      "id": "badi-planet-death-1",
+      "source": "cv"
     }
   ],
   "errors": 0,
-  "filled": 46,
-  "filledCv": 0,
-  "filledMetron": 46,
+  "filled": 8,
+  "filledCv": 8,
+  "filledMetron": 0,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 161,
+  "metronDailyUsed": 0,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 31,
+  "misses": 8,
   "recentMissSkips": {
-    "metron": 120
+    "cv": 86
   },
   "requests": {
-    "cv": 0,
-    "metron": 159
+    "cv": 31,
+    "metron": 0
   },
   "skipped": 0,
-  "source": "metron",
+  "source": "cv",
   "sourceMinutes": {
-    "metron": 18.03
+    "cv": 18.05
   },
-  "stoppedReason": "metron max-minutes 18 reached",
-  "updatedAt": "2026-10-06T17:55:37Z",
+  "stoppedReason": "cv max-minutes 18 reached",
+  "updatedAt": "2026-10-07T17:43:50Z",
   "yearBand": "2020-2025"
 }
