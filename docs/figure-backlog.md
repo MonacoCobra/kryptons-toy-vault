@@ -59,10 +59,30 @@ Archive JSON objects add optional `imageUrl`, `sku`, `exclusive`, and `source`
 When exact street date or MSRP is unknown:
 
 - **Dates:** approximate month as `YYYY-MM-01` (or known wave month).
-- **MSRP:** typical for the line (e.g. Marvel Legends ~$24.99, Black Series ~$24.99,
-  Classified ~$24.99, One:12 ~$112, Hot Toys ~$350, SHF ~$75, MAFEX ~$95).
+- **MSRP:** never invent or default it (Shelby, 2026-10-03). Unknown MSRP stays `null`
+  (shows "—"). See "MSRP sources" below.
 - Prefer real character / wave names; skip obscure BBTS brands without a feed
   rather than inventing filler SKUs.
+
+## MSRP sources (Shelby rule, 2026-10-03; updated 2026-10-07)
+
+Only fill `msrp` from a real, verifiable price, matched on GTIN or on
+company + line + wave + year + exact variant (never on character name alone).
+Tag the row with its source (`msrp:<src>`) and log it in the MSRP backfill CSVs.
+
+Allowed sources:
+
+- BigBadToyStore **regular** price (`non_sale_price`), not the page/sale/preorder price — `msrp:bbts`
+- ActionFigure411 retail — `msrp:af411`
+- The manufacturer's own store or official product listing (e.g. Mondo, NECA store,
+  Hasbro product pages) — `msrp:mondo`, `msrp:neca`, `msrp:hasbro`, …
+- Sideshow retail, for Hot Toys only — `msrp:sideshow`
+- **An official manufacturer press release** price (e.g. Hasbro's "Approx. Retail Price"),
+  when the release names the exact figure, variant and wave — `msrp:hasbro-press`
+  (Shelby approved 2026-10-07 8:50 PM MT)
+
+Never use eBay, aftermarket, or marked-up page prices, and never invent a price.
+Ambiguous matches go to review instead of being filled.
 
 ## Honest coverage gaps
 
