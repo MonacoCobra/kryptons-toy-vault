@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-10-08T05:25:33Z",
+  "finishedAt": "2026-10-08T19:05:50Z",
   "mode": "apply",
   "cap": 50,
   "acceptedCandidates": 4,
-  "applied": 2,
-  "skippedApply": 2,
-  "rejectedRows": 15,
-  "withImage": 2,
-  "aliasAdded": 6,
+  "applied": 3,
+  "skippedApply": 1,
+  "rejectedRows": 18,
+  "withImage": 3,
+  "aliasAdded": 7,
   "byCompany": {
     "hasbro": {
       "accepted": 1,
@@ -16,11 +16,11 @@
     },
     "mcfarlane": {
       "accepted": 0,
-      "rejected": 1
+      "rejected": 0
     },
     "neca": {
       "accepted": 2,
-      "rejected": 1
+      "rejected": 2
     },
     "jazwares": {
       "accepted": 0,
@@ -60,16 +60,17 @@
     }
   },
   "byRejectReason": {
+    "company-not-allowlisted": 11,
+    "company-unknown": 1,
+    "no-new-product-identity": 1,
     "news-event-post": 3,
-    "company-not-allowlisted": 7,
     "no-explicit-figure": 1,
-    "missing-line": 2,
-    "sponsor-newsletter": 1,
-    "company-unknown": 1
+    "missing-line": 1
   },
   "appliedIds": [
     "ta-84dba502bc48",
-    "ta-018cda660a4c"
+    "ta-018cda660a4c",
+    "ta-7bf0f6dadbb92b9b"
   ],
   "appliedSample": [
     {
@@ -99,18 +100,23 @@
       "aliases": [],
       "sourceUrl": "https://www.toyark.com/2026/10/07/neca-savini-jason-voorhees-and-santa-ghost-face-general-pre-orders-599891",
       "toyarkPostId": 599891
+    },
+    {
+      "id": "ta-7bf0f6dadbb92b9b",
+      "name": "Leatherface",
+      "company": "neca",
+      "line": "NECA Ultimate",
+      "year": 2027,
+      "variant": "The Texas Chainsaw Massacre: The Beginning – Re-Release",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-TCM-The-Beginning-Leatherface-Reissue-Preview.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/06/the-texas-chainsaw-massacre-the-beginning-neca-leatherface-re-release-599798",
+      "toyarkPostId": 599798
     }
   ],
   "skippedSample": [
-    {
-      "name": "Leatherface",
-      "company": "neca",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-7bf0f6dadbb9"
-      ],
-      "toyarkPostId": 599798
-    },
     {
       "name": "Steve Rogers",
       "company": "hottoys",
@@ -121,7 +127,7 @@
       "toyarkPostId": 599629
     }
   ],
-  "archiveSize": 30109,
+  "archiveSize": 30124,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"

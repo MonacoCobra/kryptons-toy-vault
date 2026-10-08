@@ -1,45 +1,45 @@
 {
-  "bakedAt": "2026-10-08T05:24:29.818143+00:00",
+  "bakedAt": "2026-10-08T19:05:21.623853+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-10-08T05:21:25.629308+00:00",
+      "bakedAt": "2026-10-08T19:01:51.668521+00:00",
       "line": "marvel-legends",
       "dryRun": false,
       "mephitsuCount": 1879,
       "mephitsuWithGtin": 921,
       "enrichStats": {
         "listing": 0,
-        "fuzzy": 921,
-        "already": 0
+        "fuzzy": 0,
+        "already": 921
       },
       "before": {
         "total": 945,
-        "withSku": 636,
-        "withGtin": 397,
-        "withListingPrimary": 239,
+        "withSku": 662,
+        "withGtin": 429,
+        "withListingPrimary": 233,
         "withImage": 731,
-        "emptySku": 309,
+        "emptySku": 283,
         "emptyImage": 214
       },
       "after": {
         "total": 945,
-        "withSku": 663,
-        "withGtin": 430,
+        "withSku": 662,
+        "withGtin": 429,
         "withListingPrimary": 233,
-        "withImage": 740,
-        "emptySku": 282,
-        "emptyImage": 205
+        "withImage": 741,
+        "emptySku": 283,
+        "emptyImage": 204
       },
       "apply": {
         "matched": 190,
-        "gtinAssigned": 33,
-        "gtinUpgraded": 6,
-        "imagesFilled": 9,
-        "imagesSkipped": 7,
-        "aliasesAttached": 3,
+        "gtinAssigned": 0,
+        "gtinUpgraded": 0,
+        "imagesFilled": 10,
+        "imagesSkipped": 6,
+        "aliasesAttached": 0,
         "skippedGtinConflict": 32,
-        "blockedByAudit": 0,
+        "blockedByAudit": 1,
         "reattachedAfterEnforce": 0,
         "samples": [
           {
@@ -132,11 +132,6 @@
             "reason": "listing_code_owned_by:hs10-hs-03"
           },
           {
-            "figureId": "lv-hasbro-marvel-legends-spider-man-2025-release-2025",
-            "mephitsu": "Spider-Man 'Battle Damage' — Spider-Man x Magic The Gathering · 2025 · Comic",
-            "reason": "listing_code_owned_by:hs10-hs-05"
-          },
-          {
             "figureId": "mlc-punisher-2099",
             "mephitsu": "The Punisher — Fan Channel / Amazon · 2024 · Comic",
             "reason": "listing_gtin_owned_by:d14ml-ml-retro-punisher"
@@ -145,7 +140,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T05:21:51.994502+00:00",
+      "bakedAt": "2026-10-08T19:02:24.175727+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 999,
@@ -260,7 +255,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T05:22:03.568557+00:00",
+      "bakedAt": "2026-10-08T19:02:37.196755+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -375,7 +370,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T05:22:09.757732+00:00",
+      "bakedAt": "2026-10-08T19:02:45.012992+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -490,7 +485,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T05:23:16.102764+00:00",
+      "bakedAt": "2026-10-08T19:03:58.961745+00:00",
       "line": "mcfarlane",
       "dryRun": false,
       "mephitsuCount": 2177,
@@ -501,26 +496,26 @@
         "already": 1013
       },
       "before": {
-        "total": 1415,
-        "withSku": 651,
-        "withGtin": 461,
-        "withListingPrimary": 190,
-        "withImage": 798,
-        "emptySku": 764,
+        "total": 1421,
+        "withSku": 664,
+        "withGtin": 468,
+        "withListingPrimary": 196,
+        "withImage": 804,
+        "emptySku": 757,
         "emptyImage": 617
       },
       "after": {
-        "total": 1415,
-        "withSku": 658,
+        "total": 1421,
+        "withSku": 664,
         "withGtin": 468,
-        "withListingPrimary": 190,
-        "withImage": 811,
+        "withListingPrimary": 196,
+        "withImage": 817,
         "emptySku": 757,
         "emptyImage": 604
       },
       "apply": {
         "matched": 487,
-        "gtinAssigned": 7,
+        "gtinAssigned": 0,
         "gtinUpgraded": 0,
         "imagesFilled": 13,
         "imagesSkipped": 25,
@@ -632,7 +627,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T05:23:55.027638+00:00",
+      "bakedAt": "2026-10-08T19:04:44.527761+00:00",
       "line": "neca",
       "dryRun": false,
       "mephitsuCount": 1493,
@@ -643,20 +638,20 @@
         "already": 483
       },
       "before": {
-        "total": 935,
-        "withSku": 713,
+        "total": 940,
+        "withSku": 718,
         "withGtin": 332,
-        "withListingPrimary": 381,
-        "withImage": 750,
+        "withListingPrimary": 386,
+        "withImage": 755,
         "emptySku": 222,
         "emptyImage": 185
       },
       "after": {
-        "total": 935,
-        "withSku": 713,
+        "total": 940,
+        "withSku": 718,
         "withGtin": 332,
-        "withListingPrimary": 381,
-        "withImage": 750,
+        "withListingPrimary": 386,
+        "withImage": 755,
         "emptySku": 222,
         "emptyImage": 185
       },
@@ -754,7 +749,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T05:24:16.989424+00:00",
+      "bakedAt": "2026-10-08T19:05:08.334072+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -765,20 +760,20 @@
         "already": 68
       },
       "before": {
-        "total": 2834,
-        "withSku": 2412,
+        "total": 2833,
+        "withSku": 2411,
         "withGtin": 130,
-        "withListingPrimary": 2282,
-        "withImage": 2551,
+        "withListingPrimary": 2281,
+        "withImage": 2550,
         "emptySku": 422,
         "emptyImage": 283
       },
       "after": {
-        "total": 2834,
-        "withSku": 2412,
+        "total": 2833,
+        "withSku": 2411,
         "withGtin": 130,
-        "withListingPrimary": 2282,
-        "withImage": 2551,
+        "withListingPrimary": 2281,
+        "withImage": 2550,
         "emptySku": 422,
         "emptyImage": 283
       },
@@ -869,7 +864,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T05:24:18.698857+00:00",
+      "bakedAt": "2026-10-08T19:05:09.900428+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -984,7 +979,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T05:24:25.729611+00:00",
+      "bakedAt": "2026-10-08T19:05:17.300771+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -1099,7 +1094,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T05:24:29.807421+00:00",
+      "bakedAt": "2026-10-08T19:05:21.615352+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,

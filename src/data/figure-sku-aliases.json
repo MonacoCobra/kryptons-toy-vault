@@ -75910,6 +75910,11 @@
     {
       "dropId": "ta-84dba502bc48",
       "reason": "Meph night babysit 2026-10-07: ToyArk post 600069 is an X-Men 97 Marvel Legends Bolivar Trask + Bastion Nimrod two-figure set; parser mangled it into a single \"Bastion Nimrod\" row with garbled variant and unverified 2027 year. Dropped; candidate for a properly named set row only after verification."
+    },
+    {
+      "dropId": "ta-7bf0f6dadbb92b9b",
+      "keepId": "ta-7bf0f6dadbb9",
+      "reason": "Meph noon babysit 2026-10-08: ToyArk apply re-created NECA Ultimate Leatherface (TCM: The Beginning re-release, ToyArk post 599798) under a new id with year 2027; duplicate of ta-7bf0f6dadbb9 from the same post (added 2026-10-07). Blocklisted so ToyArk stops recreating it; release year still unverified."
     }
   ],
   "strippedCodes": [

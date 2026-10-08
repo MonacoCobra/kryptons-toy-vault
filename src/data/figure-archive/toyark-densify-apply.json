@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T05:25:32Z",
+  "generatedAt": "2026-10-08T19:05:50Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-10-01T05:25:31.118277+00:00",
+    "after": "2026-10-01T19:05:47.483427+00:00",
     "before": null
   },
   "fetch": {
@@ -40,23 +40,23 @@
       "httpStatus": 200
     },
     "source": "live-rest",
-    "pagesFetched": 1,
+    "pagesFetched": 2,
     "httpStatus": 200,
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 19,
+    "fetchedPostCount": 22,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9514,
+    "indexedRows": 9526,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 19,
+    "fetchedPosts": 22,
     "acceptedCandidates": 4,
-    "rejectedRows": 15,
+    "rejectedRows": 18,
     "byCompany": {
       "hasbro": {
         "accepted": 1,
@@ -64,11 +64,11 @@
       },
       "mcfarlane": {
         "accepted": 0,
-        "rejected": 1
+        "rejected": 0
       },
       "neca": {
         "accepted": 2,
-        "rejected": 1
+        "rejected": 2
       },
       "jazwares": {
         "accepted": 0,
@@ -108,15 +108,15 @@
       }
     },
     "byRejectReason": {
+      "company-not-allowlisted": 11,
+      "company-unknown": 1,
+      "no-new-product-identity": 1,
       "news-event-post": 3,
-      "company-not-allowlisted": 7,
       "no-explicit-figure": 1,
-      "missing-line": 2,
-      "sponsor-newsletter": 1,
-      "company-unknown": 1
+      "missing-line": 1
     },
-    "applied": 2,
-    "skippedApply": 2
+    "applied": 3,
+    "skippedApply": 1
   },
   "candidates": [
     {
@@ -162,7 +162,7 @@
       "name": "Leatherface",
       "company": "neca",
       "line": "NECA Ultimate",
-      "year": null,
+      "year": 2027,
       "releaseWindow": null,
       "variant": "The Texas Chainsaw Massacre: The Beginning – Re-Release",
       "sourceUrl": "https://www.toyark.com/2026/10/06/the-texas-chainsaw-massacre-the-beginning-neca-leatherface-re-release-599798",
@@ -174,7 +174,7 @@
       "postYear": 2026,
       "pack": null,
       "title": "The Texas Chainsaw Massacre: The Beginning – NECA Leatherface Re-Release",
-      "rationale": "neca via class:companies-neca; line=NECA Ultimate; variant=The Texas Chainsaw Massacre: The Beginning – Re-Release; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+      "rationale": "neca via class:companies-neca; line=NECA Ultimate; variant=The Texas Chainsaw Massacre: The Beginning – Re-Release; year=2027; new/reveal/pre-order/official-image signal"
     },
     {
       "decision": "accept",
@@ -197,6 +197,132 @@
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "mezco",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/08/nycc-2026-mezco-toyz-booth-images-599782",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599782,
+      "title": "NYCC 2026 – Mezco Toyz Booth Images",
+      "rationale": "Recognized mezco via class:companies-mezco; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/08/nycc-2026-diamond-select-brands-booth-images-600567",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 600567,
+      "title": "NYCC 2026 – Diamond Select Brands Booth Images",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
+    {
+      "decision": "reject",
+      "reason": "no-new-product-identity",
+      "name": null,
+      "company": "neca",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/08/nycc-2026-neca-booth-images-599784",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599784,
+      "title": "NYCC 2026 – NECA Booth Images",
+      "rationale": "Allowlisted company but no new/reveal/pre-order/official-image signal."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "mattel",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/08/nycc-2026-first-mattel-dc-comics-figure-revealed-and-live-for-pre-order-599884",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599884,
+      "title": "NYCC 2026 – First Mattel DC Comics Figure Revealed and Live for Pre-Order",
+      "rationale": "Recognized mattel via class:companies-mattel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "mattel",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/08/nycc-2026-mattel-dc-comics-collector-line-reveal-599776",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599776,
+      "title": "NYCC 2026 – Mattel DC Comics Collector Line Reveal!",
+      "rationale": "Recognized mattel via class:companies-mattel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "bandai",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/08/nycc-2026-bandai-tamashii-nations-booth-s-h-figuarts-dragon-ball-anime-marvel-more-599778",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599778,
+      "title": "NYCC 2026 – Bandai Tamashii Nations Booth – S.H. Figuarts Dragon Ball, Anime, Marvel & More",
+      "rationale": "Recognized bandai via class:companies-bandai; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "bossfight",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/08/walmart-collector-con-2026-links-and-details-600094",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 600094,
+      "title": "Walmart Collector Con 2026 Links and Details",
+      "rationale": "Recognized bossfight via class:companies-boss-fight-studio; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
     {
       "decision": "reject",
       "reason": "news-event-post",
@@ -394,78 +520,6 @@
       "toyarkPostId": 599588,
       "title": "Spider-Man: Across the Spider-Verse – S.H. Figuarts Spider-Man 2099 and Miles G. Morales Pre-Orders",
       "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "sponsor-newsletter",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/01/bbts-news-tomb-raider-fallout-tmnt-anime-sales-street-fighter-kpop-demon-hunters-and-more-599626",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599626,
-      "title": "BBTS News – Tomb Raider, Fallout, TMNT & anime sales, Street Fighter, KPop Demon Hunters and More",
-      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "storm",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/01/street-fighter-alpha-3-storm-arena-balrog-pre-order-599603",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599603,
-      "title": "Street Fighter Alpha 3 – Storm Arena Balrog Pre-Order",
-      "rationale": "Recognized storm via class:companies-storm-collectibles; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-unknown",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/01/shin-godzilla-nendoroid-godzilla-2nd-form-599580",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599580,
-      "title": "Shin Godzilla – Nendoroid Godzilla 2nd Form",
-      "rationale": "No allowlisted companies-* class or unique body-text company."
-    },
-    {
-      "decision": "reject",
-      "reason": "missing-line",
-      "name": "Lara Croft",
-      "company": "mcfarlane",
-      "line": null,
-      "year": 2027,
-      "releaseWindow": "March 2027",
-      "variant": "Tomb Raider: Legacy of Atlantis – Elite Edition Deluxe",
-      "sourceUrl": "https://www.toyark.com/2026/10/01/tomb-raider-legacy-of-atlantis-mcfarlane-elite-edition-lara-croft-deluxe-action-figure-599565",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/McFarlane-Elite-Lara-Croft-003.webp",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599565,
-      "title": "Tomb Raider: Legacy of Atlantis – McFarlane Elite Edition Lara Croft Deluxe Action Figure",
-      "rationale": "Recognizable company but no line/subline in class_list or prose."
     }
   ],
   "applied": [
@@ -496,18 +550,23 @@
       "aliases": [],
       "sourceUrl": "https://www.toyark.com/2026/10/07/neca-savini-jason-voorhees-and-santa-ghost-face-general-pre-orders-599891",
       "toyarkPostId": 599891
+    },
+    {
+      "id": "ta-7bf0f6dadbb92b9b",
+      "name": "Leatherface",
+      "company": "neca",
+      "line": "NECA Ultimate",
+      "year": 2027,
+      "variant": "The Texas Chainsaw Massacre: The Beginning – Re-Release",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-TCM-The-Beginning-Leatherface-Reissue-Preview.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/06/the-texas-chainsaw-massacre-the-beginning-neca-leatherface-re-release-599798",
+      "toyarkPostId": 599798
     }
   ],
   "applySkipped": [
-    {
-      "name": "Leatherface",
-      "company": "neca",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-7bf0f6dadbb9"
-      ],
-      "toyarkPostId": 599798
-    },
     {
       "name": "Steve Rogers",
       "company": "hottoys",
@@ -520,10 +579,10 @@
   ],
   "applyStats": {
     "accepted": 4,
-    "applied": 2,
-    "skippedApply": 2,
-    "aliasAdded": 6,
-    "withImage": 2,
+    "applied": 3,
+    "skippedApply": 1,
+    "aliasAdded": 7,
+    "withImage": 3,
     "cap": 50,
     "blocker": null
   }
