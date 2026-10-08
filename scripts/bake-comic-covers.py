@@ -212,13 +212,27 @@ def has_cover(cid: str, upc_map: dict, cover_urls: dict, meta_row: dict) -> bool
     return locg.row_has_cover(cid, upc_map=upc_map, cover_urls=cover_urls, meta_row=meta_row)
 
 
+COLLECTED_FORMATS = frozenset({"tpb", "hc", "omnibus"})
+
+
 def candidates(
-    meta: dict, upc_map: dict, cover_urls: dict, min_year: int, max_year: int | None = None
+    meta: dict,
+    upc_map: dict,
+    cover_urls: dict,
+    min_year: int,
+    max_year: int | None = None,
+    skip_collected: bool = False,
 ) -> list[str]:
-    """Prefer key-flagged / non-variant comics; skip future-dated and facsimile/nn."""
+    """Prefer key-flagged / non-variant comics; skip future-dated and facsimile/nn.
+
+    skip_collected drops tpb / hc / omnibus rows (Comic Vine and Metron rarely
+    carry collected editions), leaving single issues and annuals.
+    """
     rows = []
     today = datetime.now().strftime("%Y-%m-%d")
     for cid, m in meta.items():
+        if skip_collected and str(m.get("format") or "").strip().lower() in COLLECTED_FORMATS:
+            continue
         if has_cover(cid, upc_map, cover_urls, m):
             continue
         if is_future_dated(m, today):
@@ -700,6 +714,11 @@ def main() -> int:
         default=2025,
         help="Skip cover years above this (0 = no max). Default 2025 avoids unreleased 2026 facsimiles.",
     )
+    ap.add_argument(
+        "--skip-collected",
+        action="store_true",
+        help="Only single issues / annuals: skip tpb, hc and omnibus rows",
+    )
     ap.add_argument("--dry-run", action="store_true", help="List candidates (after miss-list filter); no requests")
     ap.add_argument(
         "--max-minutes",
@@ -736,7 +755,7 @@ def main() -> int:
     sources = ["cv", "metron"] if args.source == "both" else [args.source]
     misses = load_miss_list()
     ttl = float(args.miss_ttl_days or 0.0)
-    all_ids = candidates(meta, upc_map, cover_urls, args.min_year, max_year)
+    all_ids = candidates(meta, upc_map, cover_urls, args.min_year, max_year, skip_collected=args.skip_collected)
     # --limit applies per source after dropping comics that recently missed on
     # that source, so the daily slots go to comics not yet tried.
     per_source: dict[str, list[str]] = {}
@@ -746,7 +765,9 @@ def main() -> int:
         recent_skips[src] = len(all_ids) - len(fresh)
         per_source[src] = fresh[: args.limit] if args.limit > 0 else fresh
     before = len(cover_urls)
-    year_band = f"{args.min_year}-{max_year if max_year is not None else 'open'}"
+    year_band = f"{args.min_year}-{max_year if max_year is not None else 'open'}" + (
+        " singles" if args.skip_collected else ""
+    )
     print(
         f"cover bake root={ROOT} source={args.source} pool={len(all_ids)} "
         + " ".join(f"{s}_candidates={len(per_source[s])} {s}_recent_miss_skips={recent_skips[s]}" for s in sources)
