@@ -1,0 +1,115 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-08",
+  "updatedAt": "2026-10-08T15:48:17Z",
+  "added": 16,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Pages read from rendered listing in box browser (save dialog broken); SKU-prefiltered 222->64.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 64,
+    "ee_candidates": 9,
+    "bbts_candidates": 15,
+    "added": 24,
+    "skipped_dupes": 0,
+    "rejected_non_af": 1,
+    "unmapped_company": 39,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 30107,
+  "oneshotAfter": 30123,
+  "ee_added": 9,
+  "bbts_added": 7,
+  "samples": [
+    {
+      "sku": "NC45443",
+      "name": "Welcome to Derry Ultimate Black and White Pennywise 7-Inch Scale Action Figure",
+      "id": "afmon-neca-welcome-to-derry-ultimate-black-and-white-pennywise-7-inch-scale-action-figure-nc45443",
+      "source": "ee"
+    },
+    {
+      "sku": "NC45263",
+      "name": "Terrifier 2 Ultimate Thanksgiving Art the Clown 7-Inch Scale Action Figure",
+      "id": "afmon-neca-terrifier-2-ultimate-thanksgiving-art-the-clown-7-inch-scale-action-figure-nc45263",
+      "source": "ee"
+    },
+    {
+      "sku": "NC51753",
+      "name": "Predator: Badlands Ultimate Dek (Bo Bison Armor) 7-Inch Scale Action Figure",
+      "id": "afmon-neca-predator-badlands-ultimate-dek-bo-bison-armor-7-inch-scale-action-figure-nc51753",
+      "source": "ee"
+    },
+    {
+      "sku": "MF13908",
+      "name": "Poppy Playtime Wave 2 Huggy Wuggy Classic 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-poppy-playtime-wave-2-huggy-wuggy-classic-7-inch-scale-action-figure-mf13908",
+      "source": "ee"
+    },
+    {
+      "sku": "MF13912",
+      "name": "Poppy Playtime Wave 2 Nightmare Huggy 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-poppy-playtime-wave-2-nightmare-huggy-7-inch-scale-action-figure-mf13912",
+      "source": "ee"
+    },
+    {
+      "sku": "MF13911",
+      "name": "Poppy Playtime Wave 2 Mommy Long Legs 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-poppy-playtime-wave-2-mommy-long-legs-7-inch-scale-action-figure-mf13911",
+      "source": "ee"
+    },
+    {
+      "sku": "MF13907",
+      "name": "Poppy Playtime Wave 2 Daddy Long Legs 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-poppy-playtime-wave-2-daddy-long-legs-7-inch-scale-action-figure-mf13907",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4160",
+      "name": "Star Wars The Vintage Collection Lothal Rebels 3 3/4-Inch Action Figure Set",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-lothal-rebels-3-3-4-inch-action-figure-set-hsg4160",
+      "source": "ee"
+    },
+    {
+      "sku": "UTCG20145",
+      "name": "Frieren: Beyond Journey's End Mimic Nendoroid Figure",
+      "id": "afmon-figma-frieren-beyond-journey-s-end-mimic-nendoroid-figure-utcg20145",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-191095",
+      "name": "Terrifier 2 Ultimate Art the Clown (Thanksgiving) Action Figure",
+      "id": "afmon-neca-terrifier-2-ultimate-art-the-clown-thanksgiving-action-figure-bbts-191095",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199194",
+      "name": "Predator: Badlands Ultimate Dek (Bone Bison Armor) Action Figure",
+      "id": "afmon-neca-predator-badlands-ultimate-dek-bone-bison-armor-action-figure-bbts-199194",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-198628",
+      "name": "IT: Welcome to Derry Ultimate Pennywise (Black and White Ver.) Action Figure",
+      "id": "afmon-neca-it-welcome-to-derry-ultimate-pennywise-black-and-white-ver-action-figure-bbts-198628",
+      "source": "bbts"
+    }
+  ],
+  "commit": null,
+  "reviewDupesAliased": {
+    "BBTS-191095": "NC45263",
+    "BBTS-199194": "NC51753",
+    "BBTS-198628": "NC45443",
+    "BBTS-199226": "HSG4160",
+    "BBTS-198765": "MF13908",
+    "BBTS-198764": "MF13907",
+    "BBTS-198768": "MF13912",
+    "BBTS-198767": "MF13911"
+  },
+  "necaCompanyFix": [
+    "NC42251",
+    "NC45253"
+  ]
+}
