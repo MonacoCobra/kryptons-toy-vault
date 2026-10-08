@@ -9966,6 +9966,9 @@
       "url": "https://www.comics.org/api/issue/2818035/"
     },
     "dc-batgirl-2016-1": {
+      "coverSource": "comicvine",
+      "coverSourceId": "491497",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4613178-01.jpg",
       "fetchedAt": "2026-09-07T18:32:01Z",
       "source": "metron",
       "sourceId": "4469",
@@ -20246,6 +20249,9 @@
       "url": "https://www.comics.org/api/issue/60881/"
     },
     "dc-young-justice-2019-1": {
+      "coverSource": "metron",
+      "coverSourceId": "894",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/01/09/yj-1.jpg",
       "fetchedAt": "2026-09-27T18:28:50Z",
       "gcdIssueId": "1891072",
       "source": "gcd",
@@ -49437,6 +49443,9 @@
       "url": "https://www.comics.org/api/issue/277933/"
     },
     "mv-savage-avengers-2019-1": {
+      "coverSource": "metron",
+      "coverSourceId": "2155",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/29/savage-avengers-1.jpg",
       "fetchedAt": "2026-09-27T18:31:46Z",
       "gcdIssueId": "1957619",
       "source": "gcd",
