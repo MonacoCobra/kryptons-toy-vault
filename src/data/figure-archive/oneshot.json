@@ -258,10 +258,12 @@
       "alias:legendztoys",
       "alias:staractionfigures",
       "alias:hobbyfigures",
-      "date-precision:year"
+      "date-precision:year",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "HAS143754",
+    "sku": "5010993722129",
     "imageUrl": "https://static.wixstatic.com/media/adc447_bad456e7f67f477195dab5396f3bb4c0~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_bad456e7f67f477195dab5396f3bb4c0~mv2.jpg"
   },
   {
@@ -1563,10 +1565,12 @@
       "image-sku",
       "image-bake",
       "imgsku:toyarena",
-      "date-precision:year"
+      "date-precision:year",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "HAS839865",
+    "sku": "5010993839865",
     "imageUrl": null
   },
   {
@@ -277757,10 +277761,13 @@
     "demand": 1.4,
     "tags": [
       "marvel",
-      "curated"
+      "curated",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "curated",
-    "sku": null,
+    "sku": "630509359479",
     "imageUrl": null
   },
   {
@@ -599056,9 +599063,12 @@
       "ee",
       "hasbro",
       "marvel-legends",
-      "af-monitor-20260916"
+      "af-monitor-20260916",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "sku": "HSG2084",
+    "sku": "5010996352415",
     "source": "ee",
     "imageUrl": "https://media.entertainmentearth.com/assets/images/20c1665df317405e9d15e6a4b57ea189lg.jpg"
   },
@@ -599167,9 +599177,12 @@
       "ee",
       "hasbro",
       "marvel-legends",
-      "af-monitor-20260916"
+      "af-monitor-20260916",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "sku": "HSG2405",
+    "sku": "5010996362315",
     "source": "ee",
     "imageUrl": "https://media.entertainmentearth.com/assets/images/fa394b7098484ddca65ea2b5a38d55a8lg.jpg"
   },
@@ -599189,9 +599202,12 @@
       "ee",
       "hasbro",
       "marvel-legends",
-      "af-monitor-20260916"
+      "af-monitor-20260916",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "sku": "HSG2407",
+    "sku": "5010996411709",
     "source": "ee",
     "imageUrl": "https://media.entertainmentearth.com/assets/images/997a508faf1e4e0bbe20427dea254f8flg.jpg"
   },
@@ -700193,10 +700209,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:6",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/spider-shot-retro-7482.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/spider-shot-retro-7482.jpg",
+    "sku": "5010996197023"
   },
   {
     "id": "lv-hasbro-marvel-legends-bishop-x-men-97-2023",
@@ -700731,10 +700751,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:75",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/chameleon-retro-9103.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/chameleon-retro-9103.jpg",
+    "sku": "5010996282743"
   },
   {
     "id": "lv-hasbro-marvel-legends-spider-man-unlimited-spider-man-retro-collection-5-2025",
@@ -700756,10 +700780,14 @@
       "date-precision:year",
       "lv-list-row:76",
       "lv-list-row:234",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/spider-man-unlimited-retro-9100.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/spider-man-unlimited-retro-9100.jpg",
+    "sku": "5010996282699"
   },
   {
     "id": "lv-hasbro-marvel-legends-captain-america-secret-wars-2024",
@@ -700826,10 +700854,14 @@
       "legendsverse-export",
       "shelby-collection",
       "date-precision:year",
-      "lv-list-row:80"
+      "lv-list-row:80",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://static.wixstatic.com/media/adc447_63d0b1e507d64ea2802594b672e9d33b~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_63d0b1e507d64ea2802594b672e9d33b~mv2.jpg"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_63d0b1e507d64ea2802594b672e9d33b~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_63d0b1e507d64ea2802594b672e9d33b~mv2.jpg",
+    "sku": "5010996146014"
   },
   {
     "id": "lv-hasbro-marvel-legends-scorpion-spider-man-retro-collection-2-2022",
@@ -700919,10 +700951,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:86",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/fantomex-717.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/fantomex-717.jpg",
+    "sku": "653569704768"
   },
   {
     "id": "lv-hasbro-marvel-legends-spider-woman-lizard-2018",
@@ -700943,10 +700979,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:88",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/spider-woman-971.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/spider-woman-971.jpg",
+    "sku": "630509619153"
   },
   {
     "id": "lv-hasbro-marvel-legends-dazzler-warlock-2017",
@@ -701086,10 +701126,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:95",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/superior-spider-man-8487.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/superior-spider-man-8487.jpg",
+    "sku": "5010996246332"
   },
   {
     "id": "lv-hasbro-marvel-legends-agent-venom-flash-thompson-spider-man-retro-collection-5-2025",
@@ -701134,10 +701178,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:97",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/kaine-retro-9102.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/kaine-retro-9102.jpg",
+    "sku": "5010996282736"
   },
   {
     "id": "lv-hasbro-marvel-legends-hallow-s-eve-spider-man-retro-collection-4-2024",
@@ -701158,10 +701206,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:98",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/hallows-eve-retro-7481.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/hallows-eve-retro-7481.jpg",
+    "sku": "5010996197078"
   },
   {
     "id": "lv-hasbro-marvel-legends-wolverine-nemesis-2025",
@@ -701182,10 +701234,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:99",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/wolverine-9395.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/wolverine-9395.jpg",
+    "sku": "5010996282880"
   },
   {
     "id": "lv-hasbro-marvel-legends-cyclops-nemesis-2025",
@@ -701254,10 +701310,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:106",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/fabian-cortez-9398.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/fabian-cortez-9398.jpg",
+    "sku": "5010996282941"
   },
   {
     "id": "lv-hasbro-star-wars-black-series-clone-commander-bacara-revenge-of-the-sith-action-figure-2025",
@@ -701348,10 +701408,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:113",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/human-torch-812.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/human-torch-812.jpg",
+    "sku": "653569253242"
   },
   {
     "id": "lv-hasbro-marvel-legends-invisible-woman-ronan-2007",
@@ -701489,10 +701553,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:121",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/ghost-rider-danny-ketch-8518.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/ghost-rider-danny-ketch-8518.jpg",
+    "sku": "5010994188115"
   },
   {
     "id": "lv-hasbro-marvel-legends-hyperion-2023",
@@ -701557,10 +701625,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:124",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/iron-man-model-70-4024.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/iron-man-model-70-4024.jpg",
+    "sku": "630509425327"
   },
   {
     "id": "lv-hasbro-marvel-legends-hawkeye-allfather-2015",
@@ -701628,10 +701700,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:130",
-      "lv-list-row:135"
+      "lv-list-row:135",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/captain-america-vs-venom-retro-video-game-11049.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/captain-america-vs-venom-retro-video-game-11049.jpg",
+    "sku": "5010996282668"
   },
   {
     "id": "lv-hasbro-marvel-legends-venom-marvel-vs-capcom-2025",
@@ -701883,10 +701959,14 @@
       "legendsverse-export",
       "shelby-collection",
       "date-precision:year",
-      "lv-list-row:150"
+      "lv-list-row:150",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://static.wixstatic.com/media/adc447_b5d4b6f8c3154440b35d0dba5a16bb60~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b5d4b6f8c3154440b35d0dba5a16bb60~mv2.jpg"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_b5d4b6f8c3154440b35d0dba5a16bb60~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b5d4b6f8c3154440b35d0dba5a16bb60~mv2.jpg",
+    "sku": "5010993657780"
   },
   {
     "id": "lv-hasbro-marvel-legends-punisher-daredevil-born-again-2025",
@@ -701907,10 +701987,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:151",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/punisher-born-again-10593.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/punisher-born-again-10593.jpg",
+    "sku": "653569775867"
   },
   {
     "id": "lv-hasbro-marvel-legends-nick-fury-2025",
@@ -702237,10 +702321,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:204",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/squadron-supreme-power-princess-7279.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/squadron-supreme-power-princess-7279.jpg",
+    "sku": "5010996196729"
   },
   {
     "id": "lv-hasbro-marvel-legends-wolverine-brown-suit-deadpool-wolverine-2026-2026",
@@ -702649,10 +702737,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:232",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/uncanny-spider-man-nightcrawler-retro-12353.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/uncanny-spider-man-nightcrawler-retro-12353.jpg",
+    "sku": "5010996355881"
   },
   {
     "id": "lv-hasbro-marvel-legends-spider-venom-spider-man-retro-collection-6-2026",
@@ -702673,10 +702765,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:233",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/spider-venom-retro-12352.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/spider-venom-retro-12352.jpg",
+    "sku": "5010996355898"
   },
   {
     "id": "lv-mcfarlane-dc-retro-sinestro-super-friends-2025",
@@ -702997,10 +703093,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:271",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/the-punisher-13534.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/the-punisher-13534.jpg",
+    "sku": "5010996411457"
   },
   {
     "id": "lv-hasbro-marvel-legends-captain-america-marvel-legends-series-i-2022",
@@ -703020,10 +703120,14 @@
       "legendsverse-export",
       "shelby-collection",
       "date-precision:year",
-      "lv-list-row:272"
+      "lv-list-row:272",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/captain-america-3587.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/captain-america-3587.jpg",
+    "sku": "5010993956654"
   },
   {
     "id": "lv-hasbro-transformers-autobot-blaster-2026",
@@ -703225,10 +703329,14 @@
       "shelby-collection",
       "date-precision:year",
       "lv-list-row:57",
-      "msrp:af411"
+      "msrp:af411",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/she-hulk-retro-8436.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/she-hulk-retro-8436.jpg",
+    "sku": "5010993842391"
   },
   {
     "id": "lv-hasbro-marvel-legends-black-cat-kingpin-baf-2018",
@@ -703294,9 +703402,13 @@
       "legendsverse-export",
       "shelby-collection",
       "date-precision:year",
-      "lv-list-row:109"
+      "lv-list-row:109",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "source": "legendsverse-export-shelby"
+    "source": "legendsverse-export-shelby",
+    "sku": "5010996323156"
   },
   {
     "id": "lv-hasbro-marvel-legends-jean-grey-uncanny-x-men-2025",
@@ -703364,10 +703476,14 @@
       "legendsverse-export",
       "shelby-collection",
       "date-precision:year",
-      "lv-list-row:118"
+      "lv-list-row:118",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
-    "imageUrl": "https://www.actionfigure411.com/marvel/images/x-force-x-23-warpath-10305.jpg"
+    "imageUrl": "https://www.actionfigure411.com/marvel/images/x-force-x-23-warpath-10305.jpg",
+    "sku": "5010996296269"
   },
   {
     "id": "lv-hasbro-marvel-legends-she-hulk-fantastic-four-2025",
@@ -707427,9 +707543,12 @@
       "ee",
       "hasbro",
       "marvel-legends",
-      "af-monitor-20260930"
+      "af-monitor-20260930",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "sku": "HSG2378",
+    "sku": "5010996355843",
     "source": "ee",
     "imageUrl": "https://media.entertainmentearth.com/assets/images/7b942ef0b6154016a27e3915d926079blg.jpg"
   },
@@ -729075,9 +729194,13 @@
       "wave17",
       "mcfarlane",
       "page-punchers",
-      "af411:6054"
+      "af411:6054",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "source": "curated-dc-gap-wave17"
+    "source": "curated-dc-gap-wave17",
+    "sku": "787926154405"
   },
   {
     "id": "mcf-pp-w17-batman-who-laughs-red-death-dark-nights-metal-1-6357",
@@ -729180,9 +729303,13 @@
       "wave17",
       "mcfarlane",
       "page-punchers",
-      "af411:5651"
+      "af411:5651",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "source": "curated-dc-gap-wave17"
+    "source": "curated-dc-gap-wave17",
+    "sku": "787926159196"
   },
   {
     "id": "mcf-pp-w17-captain-cold-the-flash-5653",
@@ -729201,9 +729328,13 @@
       "wave17",
       "mcfarlane",
       "page-punchers",
-      "af411:5653"
+      "af411:5653",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "source": "curated-dc-gap-wave17"
+    "source": "curated-dc-gap-wave17",
+    "sku": "787926171563"
   },
   {
     "id": "mcf-pp-w17-heat-wave-the-flash-5652",
@@ -729285,9 +729416,13 @@
       "wave17",
       "mcfarlane",
       "page-punchers",
-      "af411:5664"
+      "af411:5664",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "source": "curated-dc-gap-wave17"
+    "source": "curated-dc-gap-wave17",
+    "sku": "787926159134"
   },
   {
     "id": "mcf-pp-w17-ghost-of-krypton-sketch-edition-gold-label-4-pack-8805",
@@ -729348,9 +729483,13 @@
       "wave17",
       "mcfarlane",
       "page-punchers",
-      "af411:8493"
+      "af411:8493",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "source": "curated-dc-gap-wave17"
+    "source": "curated-dc-gap-wave17",
+    "sku": "787926159448"
   },
   {
     "id": "mcf-pp-w17-deathstroke-dc-rebirth-8977",
@@ -729495,9 +729634,13 @@
       "wave17",
       "mcfarlane",
       "page-punchers",
-      "af411:11298"
+      "af411:11298",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "source": "curated-dc-gap-wave17"
+    "source": "curated-dc-gap-wave17",
+    "sku": "787926174076"
   },
   {
     "id": "mcf-pp-w17-mr-bones-gold-label-infinity-inc-16-lithograph-11663",
@@ -729666,9 +729809,13 @@
       "mcfarlane",
       "super-powers",
       "vehicle",
-      "af411:10996"
+      "af411:10996",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "source": "curated-dc-gap-wave17"
+    "source": "curated-dc-gap-wave17",
+    "sku": "787926175271"
   },
   {
     "id": "mcf-sp-w17-t-craft-superman-movie-10994",

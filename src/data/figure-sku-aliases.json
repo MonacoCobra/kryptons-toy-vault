@@ -9627,7 +9627,8 @@
     "ml5-ml-x97-rogue": [
       "MLX97R2",
       "F6546",
-      "HASF6546"
+      "HASF6546",
+      "HAS143754"
     ],
     "ml5-ml-x97-storm": [
       "MLX97S1",
@@ -44894,6 +44895,12 @@
     "mph-8e01ce5070b2": [
       "id:mph-8e01ce5070b2",
       "mephitsu:8e01ce50-70b2-43bf-8c54-89eed86947ce"
+    ],
+    "ml5-ml-rescue": [
+      "HAS839865"
+    ],
+    "afmon-hasbro-avengers-doomsday-marvel-legends-series-shang-chi-6-inch-action-figure-hsg2378": [
+      "HSG2378"
     ]
   },
   "aliasToFigureId": {
@@ -69409,7 +69416,10 @@
     "BBTS-199313": "afmon-neca-teenage-mutant-ninja-turtles-1987-cartoon-tuxedo-leonardo-7-inch-scale-action-f-nc54607",
     "BBTS-199312": "afmon-neca-teenage-mutant-ninja-turtles-1987-cartoon-incognito-michelangelo-7-inch-scale-a-nc54608",
     "id:mph-8e01ce5070b2": "mph-8e01ce5070b2",
-    "mephitsu:8e01ce50-70b2-43bf-8c54-89eed86947ce": "mph-8e01ce5070b2"
+    "mephitsu:8e01ce50-70b2-43bf-8c54-89eed86947ce": "mph-8e01ce5070b2",
+    "HAS143754": "ml5-ml-x97-rogue",
+    "HAS839865": "ml5-ml-rescue",
+    "HSG2378": "afmon-hasbro-avengers-doomsday-marvel-legends-series-shang-chi-6-inch-action-figure-hsg2378"
   },
   "collapsed": [
     {
@@ -72736,7 +72746,7 @@
       "reason": "REFUSED: distinct product GTINs. lc5 UPC 630509808366 is Lightning Collection White Ranger (AF411); hs10 UPC 630509808380 + image are S.P.D. Shadow Ranger (AF411). Character-name collision only. Shadow Ranger already exists as plc-shadow-spd."
     }
   ],
-  "updatedAt": "2026-10-07T17:58:00.699858+00:00",
+  "updatedAt": "2026-10-08T05:24:29.711425+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -75859,6 +75869,15 @@
       },
       "aliasesDropped": [],
       "reason": "ToyArk MSRP follow-up (Shelby 2026-10-06): same NECA Ultimate Big Bird (Blue Version) 2026 Con/NYCC exclusive — both rows from ToyArk post 599270 (original + *UPDATE* repost), same image; NECA store UPC 634482086391 (NE08639-01). Keep ta-3a7f2e730bb9 (clean subtitle, toyark:599270 alias); drop ta-86225fd3def6 (*UPDATE* duplicate); moved its id + 09/25 URL aliases; added UPC alias."
+    },
+    {
+      "dropId": "ta-018cda660a4c",
+      "keepId": "afmon-neca-friday-the-13th-the-game-ultimate-savini-jason-7-inch-scale-action-figure-nc39984",
+      "reason": "Meph night babysit 2026-10-07: ToyArk apply re-created this row (already scrubbed at noon) from two-figure NECA pre-order post 599891; duplicate of existing NECA Ultimate Savini Jason (NC39984). Blocklisted so ToyArk stops recreating it."
+    },
+    {
+      "dropId": "ta-84dba502bc48",
+      "reason": "Meph night babysit 2026-10-07: ToyArk post 600069 is an X-Men 97 Marvel Legends Bolivar Trask + Bastion Nimrod two-figure set; parser mangled it into a single \"Bastion Nimrod\" row with garbled variant and unverified 2027 year. Dropped; candidate for a properly named set row only after verification."
     }
   ],
   "strippedCodes": [
@@ -76549,6 +76568,15 @@
         "https://static.wixstatic.com/media/adc447_51243dddb9a54da4a3c34dbf79a481d3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_51243dddb9a54da4a3c34dbf79a481d3~mv2.jpg"
       ],
       "reason": "Mephitsu bake mismatch (night 2026-10-06): listing is BTAS Condiment King Wave Robin (DC Direct), not New Adventures of Batman"
+    },
+    {
+      "figureId": "lv-hasbro-marvel-legends-deadpool-marvel-comics-80th-anniversary-2019",
+      "codes": [
+        "65100000"
+      ],
+      "imageDropped": false,
+      "imageUrls": [],
+      "reason": "Meph night babysit 2026-10-07: Mephitsu bake proposed 65100000, which fails EAN-8 checksum (not a real GTIN)."
     }
   ]
 }

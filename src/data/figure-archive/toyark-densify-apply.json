@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T17:58:57Z",
+  "generatedAt": "2026-10-08T05:25:32Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-09-30T17:58:55.668965+00:00",
+    "after": "2026-10-01T05:25:31.118277+00:00",
     "before": null
   },
   "fetch": {
@@ -45,21 +45,21 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 16,
+    "fetchedPostCount": 19,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9483,
+    "indexedRows": 9514,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 16,
-    "acceptedCandidates": 3,
-    "rejectedRows": 13,
+    "fetchedPosts": 19,
+    "acceptedCandidates": 4,
+    "rejectedRows": 15,
     "byCompany": {
       "hasbro": {
-        "accepted": 0,
+        "accepted": 1,
         "rejected": 1
       },
       "mcfarlane": {
@@ -108,17 +108,36 @@
       }
     },
     "byRejectReason": {
+      "news-event-post": 3,
       "company-not-allowlisted": 7,
       "no-explicit-figure": 1,
       "missing-line": 2,
-      "news-event-post": 1,
       "sponsor-newsletter": 1,
       "company-unknown": 1
     },
-    "applied": 1,
+    "applied": 2,
     "skippedApply": 2
   },
   "candidates": [
+    {
+      "decision": "accept",
+      "name": "Bastion Nimrod",
+      "company": "hasbro",
+      "line": "Marvel Legends",
+      "year": 2027,
+      "releaseWindow": "November 2027",
+      "variant": "X-Men ’97 Marvel Legends – Bolivar Trask and",
+      "sourceUrl": "https://www.toyark.com/2026/10/07/x-men-97-marvel-legends-bolivar-trask-and-bastion-nimrod-600069",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/X-Men-97-Marvel-Legends-Trask-and-Nimrod-Set-001.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 600069,
+      "postYear": 2026,
+      "pack": null,
+      "title": "X-Men ’97 Marvel Legends – Bolivar Trask and Bastion Nimrod",
+      "rationale": "hasbro via class:companies-hasbro; line=Marvel Legends; variant=X-Men ’97 Marvel Legends – Bolivar Trask and; year=2027; new/reveal/pre-order/official-image signal"
+    },
     {
       "decision": "accept",
       "name": "Jason Voorhees",
@@ -178,6 +197,42 @@
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "news-event-post",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/07/nycc-2026-hasbro-event-marvel-legends-display-599751",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599751,
+      "title": "NYCC 2026 – Hasbro Event Marvel Legends Display",
+      "rationale": "Stream / panel / reveals / roundup / news / event post ('Event') — not a single product."
+    },
+    {
+      "decision": "reject",
+      "reason": "news-event-post",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/07/nycc-2026-hasbro-event-star-wars-display-599755",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599755,
+      "title": "NYCC 2026 – Hasbro Event Star Wars Display",
+      "rationale": "Stream / panel / reveals / roundup / news / event post ('Event') — not a single product."
+    },
     {
       "decision": "reject",
       "reason": "company-not-allowlisted",
@@ -415,6 +470,20 @@
   ],
   "applied": [
     {
+      "id": "ta-84dba502bc48",
+      "name": "Bastion Nimrod",
+      "company": "hasbro",
+      "line": "Marvel Legends",
+      "year": 2027,
+      "variant": "X-Men ’97 Marvel Legends – Bolivar Trask and",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/X-Men-97-Marvel-Legends-Trask-and-Nimrod-Set-001.webp",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/07/x-men-97-marvel-legends-bolivar-trask-and-bastion-nimrod-600069",
+      "toyarkPostId": 600069
+    },
+    {
       "id": "ta-018cda660a4c",
       "name": "Jason Voorhees",
       "company": "neca",
@@ -450,11 +519,11 @@
     }
   ],
   "applyStats": {
-    "accepted": 3,
-    "applied": 1,
+    "accepted": 4,
+    "applied": 2,
     "skippedApply": 2,
-    "aliasAdded": 3,
-    "withImage": 1,
+    "aliasAdded": 6,
+    "withImage": 2,
     "cap": 50,
     "blocker": null
   }

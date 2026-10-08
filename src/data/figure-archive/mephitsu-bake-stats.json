@@ -1,9 +1,151 @@
 {
-  "bakedAt": "2026-10-07T17:58:00.767145+00:00",
+  "bakedAt": "2026-10-08T05:24:29.818143+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-10-07T17:55:31.400965+00:00",
+      "bakedAt": "2026-10-08T05:21:25.629308+00:00",
+      "line": "marvel-legends",
+      "dryRun": false,
+      "mephitsuCount": 1879,
+      "mephitsuWithGtin": 921,
+      "enrichStats": {
+        "listing": 0,
+        "fuzzy": 921,
+        "already": 0
+      },
+      "before": {
+        "total": 945,
+        "withSku": 636,
+        "withGtin": 397,
+        "withListingPrimary": 239,
+        "withImage": 731,
+        "emptySku": 309,
+        "emptyImage": 214
+      },
+      "after": {
+        "total": 945,
+        "withSku": 663,
+        "withGtin": 430,
+        "withListingPrimary": 233,
+        "withImage": 740,
+        "emptySku": 282,
+        "emptyImage": 205
+      },
+      "apply": {
+        "matched": 190,
+        "gtinAssigned": 33,
+        "gtinUpgraded": 6,
+        "imagesFilled": 9,
+        "imagesSkipped": 7,
+        "aliasesAttached": 3,
+        "skippedGtinConflict": 32,
+        "blockedByAudit": 0,
+        "reattachedAfterEnforce": 0,
+        "samples": [
+          {
+            "score": 52.0,
+            "figureId": "lv-hasbro-marvel-legends-deadpool-deadpool-legacy-collection-2024",
+            "name": "Deadpool Deadpool: Legacy Collection (2024)",
+            "mephitsu": "Deadpool",
+            "wave": "Deadpool Legacy",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 50.0,
+            "figureId": "lv-hasbro-marvel-legends-mary-jane-watson-iron-spider-spider-man-x-magic-the-gathering-2025",
+            "name": "Mary Jane Watson (Iron Spider) (2025)",
+            "mephitsu": "Mary Jane Watson Iron Spider",
+            "wave": "Spider-Man x Magic The Gathering",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 49.5,
+            "figureId": "mlc-sentinel-haslab",
+            "name": "Sentinel HasLab (2021)",
+            "mephitsu": "Sentinel",
+            "wave": "HasLab",
+            "sku": "5010994162788",
+            "image": true
+          },
+          {
+            "score": 49.5,
+            "figureId": "hs8-hs-02",
+            "name": "Green Goblin Retro (2020)",
+            "mephitsu": "Green Goblin",
+            "wave": "Retro 2020",
+            "sku": "5010993954513",
+            "image": true
+          },
+          {
+            "score": 49.5,
+            "figureId": "hs8-hs-01",
+            "name": "Spider-Man Retro (2020)",
+            "mephitsu": "Spider-Man",
+            "wave": "Retro 2020",
+            "sku": "5010993842582",
+            "image": true
+          },
+          {
+            "score": 47.5,
+            "figureId": "mlc-venom-classic",
+            "name": "Venom (2024)",
+            "mephitsu": "Venom",
+            "wave": "'Let there be Carnage' Deluxe, Target (US) / Fan Channel",
+            "sku": "5010996244284",
+            "image": true
+          },
+          {
+            "score": 47.0,
+            "figureId": "lv-hasbro-marvel-legends-wolverine-brown-suit-deadpool-wolverine-2026-2026",
+            "name": "Wolverine (Brown Suit) (2026)",
+            "mephitsu": "Wolverine (Brown Suit)",
+            "wave": "Deadpool & Wolverine Wave 2",
+            "sku": null,
+            "image": true
+          },
+          {
+            "score": 46.5,
+            "figureId": "lv-hasbro-marvel-legends-wolverine-marvel-85th-anniversary-2024",
+            "name": "Wolverine Marvel 85th Anniversary (2024)",
+            "mephitsu": "Astonishing Wolverine",
+            "wave": "Marvel 85th Anniversary",
+            "sku": null,
+            "image": true
+          }
+        ],
+        "photoVetoes": [
+          {
+            "figureId": "lv-hasbro-marvel-legends-wolverine-wolverine-50th-anniversary-2024",
+            "mephitsu": "Wolverine — Wolverine 50th Anniversary (Fan Channel) · 2024 · Comic",
+            "reason": "listing_gtin_owned_by:ml2-wolverine-aes"
+          },
+          {
+            "figureId": "d14ml-spiderbyte",
+            "mephitsu": "Spider-Punk — Across the Spiderverse Part 1 · 2023 · Marvel Movies & TV",
+            "reason": "listing_gtin_owned_by:mlc-spock"
+          },
+          {
+            "figureId": "ml3-ml-strange-surfer",
+            "mephitsu": "Doctor Strange — Rintrah BAF Wave · 2022 · Marvel Movies & TV",
+            "reason": "listing_code_owned_by:hs10-hs-03"
+          },
+          {
+            "figureId": "lv-hasbro-marvel-legends-spider-man-2025-release-2025",
+            "mephitsu": "Spider-Man 'Battle Damage' — Spider-Man x Magic The Gathering · 2025 · Comic",
+            "reason": "listing_code_owned_by:hs10-hs-05"
+          },
+          {
+            "figureId": "mlc-punisher-2099",
+            "mephitsu": "The Punisher — Fan Channel / Amazon · 2024 · Comic",
+            "reason": "listing_gtin_owned_by:d14ml-ml-retro-punisher"
+          }
+        ]
+      }
+    },
+    {
+      "bakedAt": "2026-10-08T05:21:51.994502+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 999,
@@ -118,7 +260,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-07T17:55:43.416037+00:00",
+      "bakedAt": "2026-10-08T05:22:03.568557+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -233,7 +375,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-07T17:55:49.520644+00:00",
+      "bakedAt": "2026-10-08T05:22:09.757732+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -348,7 +490,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-07T17:56:48.657958+00:00",
+      "bakedAt": "2026-10-08T05:23:16.102764+00:00",
       "line": "mcfarlane",
       "dryRun": false,
       "mephitsuCount": 2177,
@@ -359,28 +501,28 @@
         "already": 1013
       },
       "before": {
-        "total": 1384,
+        "total": 1415,
         "withSku": 651,
         "withGtin": 461,
         "withListingPrimary": 190,
         "withImage": 798,
-        "emptySku": 733,
-        "emptyImage": 586
+        "emptySku": 764,
+        "emptyImage": 617
       },
       "after": {
-        "total": 1384,
-        "withSku": 651,
-        "withGtin": 461,
+        "total": 1415,
+        "withSku": 658,
+        "withGtin": 468,
         "withListingPrimary": 190,
-        "withImage": 798,
-        "emptySku": 733,
-        "emptyImage": 586
+        "withImage": 811,
+        "emptySku": 757,
+        "emptyImage": 604
       },
       "apply": {
-        "matched": 474,
-        "gtinAssigned": 0,
+        "matched": 487,
+        "gtinAssigned": 7,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
+        "imagesFilled": 13,
         "imagesSkipped": 25,
         "aliasesAttached": 0,
         "skippedGtinConflict": 66,
@@ -490,7 +632,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-07T17:57:26.395979+00:00",
+      "bakedAt": "2026-10-08T05:23:55.027638+00:00",
       "line": "neca",
       "dryRun": false,
       "mephitsuCount": 1493,
@@ -612,7 +754,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-07T17:57:48.816830+00:00",
+      "bakedAt": "2026-10-08T05:24:16.989424+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -727,7 +869,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-07T17:57:50.345543+00:00",
+      "bakedAt": "2026-10-08T05:24:18.698857+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -842,7 +984,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-07T17:57:57.002153+00:00",
+      "bakedAt": "2026-10-08T05:24:25.729611+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -957,7 +1099,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-07T17:58:00.760257+00:00",
+      "bakedAt": "2026-10-08T05:24:29.807421+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,
