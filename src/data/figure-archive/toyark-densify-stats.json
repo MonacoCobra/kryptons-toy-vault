@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-10-09T05:27:23Z",
+  "finishedAt": "2026-10-09T18:07:11Z",
   "mode": "apply",
   "cap": 50,
   "acceptedCandidates": 4,
-  "applied": 3,
-  "skippedApply": 1,
+  "applied": 4,
+  "skippedApply": 0,
   "rejectedRows": 22,
-  "withImage": 3,
-  "aliasAdded": 7,
+  "withImage": 4,
+  "aliasAdded": 10,
   "byCompany": {
     "hasbro": {
       "accepted": 1,
@@ -19,7 +19,7 @@
       "rejected": 0
     },
     "neca": {
-      "accepted": 2,
+      "accepted": 3,
       "rejected": 2
     },
     "jazwares": {
@@ -31,7 +31,7 @@
       "rejected": 0
     },
     "hottoys": {
-      "accepted": 1,
+      "accepted": 0,
       "rejected": 0
     },
     "mondo": {
@@ -60,19 +60,34 @@
     }
   },
   "byRejectReason": {
-    "company-not-allowlisted": 13,
-    "company-unknown": 3,
+    "company-unknown": 4,
+    "company-not-allowlisted": 12,
     "no-new-product-identity": 1,
     "news-event-post": 3,
     "no-explicit-figure": 1,
     "missing-line": 1
   },
   "appliedIds": [
+    "ta-56a78042d0e8",
     "ta-84dba502bc48",
     "ta-018cda660a4c",
     "ta-7bf0f6dadbb92b9b"
   ],
   "appliedSample": [
+    {
+      "id": "ta-56a78042d0e8",
+      "name": "Feral Predator",
+      "company": "neca",
+      "line": "NECA Ultimate",
+      "year": 2027,
+      "variant": "Prey – ULTRAmate",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-ULTRAmate-Feral-Predator-009.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/09/prey-neca-ultramate-feral-predator-figure-601075",
+      "toyarkPostId": 601075
+    },
     {
       "id": "ta-84dba502bc48",
       "name": "Bastion Nimrod",
@@ -116,18 +131,8 @@
       "toyarkPostId": 599798
     }
   ],
-  "skippedSample": [
-    {
-      "name": "Steve Rogers",
-      "company": "hottoys",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-d9a16d3350aa"
-      ],
-      "toyarkPostId": 599629
-    }
-  ],
-  "archiveSize": 30123,
+  "skippedSample": [],
+  "archiveSize": 30150,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"

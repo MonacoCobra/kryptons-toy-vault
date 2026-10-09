@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T05:27:23Z",
+  "generatedAt": "2026-10-09T18:07:11Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-10-02T05:27:20.508939+00:00",
+    "after": "2026-10-02T18:07:08.427368+00:00",
     "before": null
   },
   "fetch": {
@@ -50,7 +50,7 @@
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9526,
+    "indexedRows": 9543,
     "mode": "apply"
   },
   "summary": {
@@ -67,7 +67,7 @@
         "rejected": 0
       },
       "neca": {
-        "accepted": 2,
+        "accepted": 3,
         "rejected": 2
       },
       "jazwares": {
@@ -79,7 +79,7 @@
         "rejected": 0
       },
       "hottoys": {
-        "accepted": 1,
+        "accepted": 0,
         "rejected": 0
       },
       "mondo": {
@@ -108,17 +108,36 @@
       }
     },
     "byRejectReason": {
-      "company-not-allowlisted": 13,
-      "company-unknown": 3,
+      "company-unknown": 4,
+      "company-not-allowlisted": 12,
       "no-new-product-identity": 1,
       "news-event-post": 3,
       "no-explicit-figure": 1,
       "missing-line": 1
     },
-    "applied": 3,
-    "skippedApply": 1
+    "applied": 4,
+    "skippedApply": 0
   },
   "candidates": [
+    {
+      "decision": "accept",
+      "name": "Feral Predator",
+      "company": "neca",
+      "line": "NECA Ultimate",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": "Prey – ULTRAmate",
+      "sourceUrl": "https://www.toyark.com/2026/10/09/prey-neca-ultramate-feral-predator-figure-601075",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-ULTRAmate-Feral-Predator-009.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601075,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Prey – NECA ULTRAmate Feral Predator Figure",
+      "rationale": "neca via class:companies-neca; line=NECA Ultimate; variant=Prey – ULTRAmate; year=2027; new/reveal/pre-order/official-image signal"
+    },
     {
       "decision": "accept",
       "name": "Bastion Nimrod",
@@ -175,28 +194,45 @@
       "pack": null,
       "title": "The Texas Chainsaw Massacre: The Beginning – NECA Leatherface Re-Release",
       "rationale": "neca via class:companies-neca; line=NECA Ultimate; variant=The Texas Chainsaw Massacre: The Beginning – Re-Release; year=2027; new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Steve Rogers",
-      "company": "hottoys",
-      "line": "Hot Toys",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "Avengers: Doomsday",
-      "sourceUrl": "https://www.toyark.com/2026/10/02/avengers-doomsday-hot-toys-steve-rogers-figure-599629",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Avengers-Doomsday-Steve-Rogers-010.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599629,
-      "postYear": 2026,
-      "pack": null,
-      "title": "Avengers: Doomsday – Hot Toys Steve Rogers Figure",
-      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; variant=Avengers: Doomsday; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/09/nacelle-judge-dredd-x-biker-mice-from-mars-crossover-pre-orders-601100",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601100,
+      "title": "Nacelle Judge Dredd x Biker Mice from Mars Crossover Pre-Orders",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "hiya",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/09/godzilla-2000-millennium-hiya-toys-final-battle-godzilla-601088",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601088,
+      "title": "Godzilla 2000: Millennium – Hiya Toys Final Battle Godzilla",
+      "rationale": "Recognized hiya via class:companies-hiya-toys; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
     {
       "decision": "reject",
       "reason": "company-not-allowlisted",
@@ -556,45 +592,23 @@
       "toyarkPostId": 599654,
       "title": "Star Wars Stream for October 26 – 2027 New Era Reveals and More",
       "rationale": "Stream / panel / reveals / roundup / news / event post ('Stream') — not a single product."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "shfiguarts",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/02/marvel-gameverse-s-h-figuarts-venom-images-and-details-599571",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599571,
-      "title": "Marvel Gameverse S.H. Figuarts Venom Images and Details – UPDATE",
-      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "shfiguarts",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/02/spider-man-across-the-spider-verse-s-h-figuarts-spider-man-2099-and-miles-g-morales-update-599588",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599588,
-      "title": "Spider-Man: Across the Spider-Verse – S.H. Figuarts Spider-Man 2099 and Miles G. Morales Pre-Orders",
-      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     }
   ],
   "applied": [
+    {
+      "id": "ta-56a78042d0e8",
+      "name": "Feral Predator",
+      "company": "neca",
+      "line": "NECA Ultimate",
+      "year": 2027,
+      "variant": "Prey – ULTRAmate",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-ULTRAmate-Feral-Predator-009.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/09/prey-neca-ultramate-feral-predator-figure-601075",
+      "toyarkPostId": 601075
+    },
     {
       "id": "ta-84dba502bc48",
       "name": "Bastion Nimrod",
@@ -638,23 +652,13 @@
       "toyarkPostId": 599798
     }
   ],
-  "applySkipped": [
-    {
-      "name": "Steve Rogers",
-      "company": "hottoys",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-d9a16d3350aa"
-      ],
-      "toyarkPostId": 599629
-    }
-  ],
+  "applySkipped": [],
   "applyStats": {
     "accepted": 4,
-    "applied": 3,
-    "skippedApply": 1,
-    "aliasAdded": 7,
-    "withImage": 3,
+    "applied": 4,
+    "skippedApply": 0,
+    "aliasAdded": 10,
+    "withImage": 4,
     "cap": 50,
     "blocker": null
   }
