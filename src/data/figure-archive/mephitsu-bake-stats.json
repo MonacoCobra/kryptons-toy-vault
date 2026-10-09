@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-10-08T19:05:21.623853+00:00",
+  "bakedAt": "2026-10-09T05:26:52.914865+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-10-08T19:01:51.668521+00:00",
+      "bakedAt": "2026-10-09T05:22:02.174784+00:00",
       "line": "marvel-legends",
       "dryRun": false,
       "mephitsuCount": 1879,
@@ -140,15 +140,15 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T19:02:24.175727+00:00",
+      "bakedAt": "2026-10-09T05:23:05.593001+00:00",
       "line": "black-series",
       "dryRun": false,
-      "mephitsuCount": 999,
-      "mephitsuWithGtin": 519,
+      "mephitsuCount": 1006,
+      "mephitsuWithGtin": 490,
       "enrichStats": {
         "listing": 0,
-        "fuzzy": 0,
-        "already": 519
+        "fuzzy": 490,
+        "already": 0
       },
       "before": {
         "total": 472,
@@ -175,7 +175,7 @@
         "imagesFilled": 0,
         "imagesSkipped": 2,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 29,
+        "skippedGtinConflict": 27,
         "blockedByAudit": 0,
         "reattachedAfterEnforce": 0,
         "samples": [
@@ -255,7 +255,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T19:02:37.196755+00:00",
+      "bakedAt": "2026-10-09T05:23:19.105375+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -370,7 +370,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T19:02:45.012992+00:00",
+      "bakedAt": "2026-10-09T05:23:25.882173+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -485,15 +485,15 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T19:03:58.961745+00:00",
+      "bakedAt": "2026-10-09T05:25:19.953401+00:00",
       "line": "mcfarlane",
       "dryRun": false,
-      "mephitsuCount": 2177,
-      "mephitsuWithGtin": 1013,
+      "mephitsuCount": 2211,
+      "mephitsuWithGtin": 967,
       "enrichStats": {
         "listing": 0,
-        "fuzzy": 0,
-        "already": 1013
+        "fuzzy": 967,
+        "already": 0
       },
       "before": {
         "total": 1421,
@@ -506,21 +506,21 @@
       },
       "after": {
         "total": 1421,
-        "withSku": 664,
-        "withGtin": 468,
+        "withSku": 668,
+        "withGtin": 472,
         "withListingPrimary": 196,
-        "withImage": 817,
-        "emptySku": 757,
-        "emptyImage": 604
+        "withImage": 821,
+        "emptySku": 753,
+        "emptyImage": 600
       },
       "apply": {
-        "matched": 487,
-        "gtinAssigned": 0,
+        "matched": 499,
+        "gtinAssigned": 4,
         "gtinUpgraded": 0,
-        "imagesFilled": 13,
-        "imagesSkipped": 25,
+        "imagesFilled": 17,
+        "imagesSkipped": 24,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 66,
+        "skippedGtinConflict": 65,
         "blockedByAudit": 26,
         "reattachedAfterEnforce": 0,
         "samples": [
@@ -604,9 +604,9 @@
             "reason": "listing_gtin_owned_by:mcfdc-cyborg-dceu"
           },
           {
-            "figureId": "mcf-dcretro-w16-two-face-5823",
-            "mephitsu": "Two-Face — Target (US) Batman the Animated Series Target Exclusive · 2024 · DC Direct",
-            "reason": "listing_gtin_owned_by:mf8-mf-27"
+            "figureId": "mcf-dc-super-pow-batman-gold-edition-wave-6",
+            "mephitsu": "Batman — Gold Label Walmart, Kelley Jones Autograph Edition · 2024 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcfc-batman-knightfall"
           },
           {
             "figureId": "mcf-w8-gl-gold",
@@ -627,15 +627,15 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T19:04:44.527761+00:00",
+      "bakedAt": "2026-10-09T05:26:13.973202+00:00",
       "line": "neca",
       "dryRun": false,
-      "mephitsuCount": 1493,
-      "mephitsuWithGtin": 483,
+      "mephitsuCount": 1500,
+      "mephitsuWithGtin": 442,
       "enrichStats": {
         "listing": 0,
-        "fuzzy": 0,
-        "already": 483
+        "fuzzy": 442,
+        "already": 0
       },
       "before": {
         "total": 940,
@@ -749,7 +749,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T19:05:08.334072+00:00",
+      "bakedAt": "2026-10-09T05:26:37.461923+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -864,7 +864,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T19:05:09.900428+00:00",
+      "bakedAt": "2026-10-09T05:26:39.195679+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -979,7 +979,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T19:05:17.300771+00:00",
+      "bakedAt": "2026-10-09T05:26:46.551253+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -1094,7 +1094,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-08T19:05:21.615352+00:00",
+      "bakedAt": "2026-10-09T05:26:52.904639+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,

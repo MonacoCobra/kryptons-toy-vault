@@ -255734,11 +255734,14 @@
       "multiverse",
       "curated",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "curated-mattel-dc-gap",
     "imageUrl": "https://static.wixstatic.com/media/adc447_7040cd3b67724778b3752e9615235ae3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7040cd3b67724778b3752e9615235ae3~mv2.jpg",
-    "sku": null
+    "sku": "787926159127"
   },
   {
     "id": "mcfgap-batman-baf-aqua",
@@ -573869,10 +573872,13 @@
       "dc",
       "mcfarlane",
       "gold-label",
-      "curated"
+      "curated",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "curated-mcfarlane-dc-gap",
-    "sku": null,
+    "sku": "787926902334",
     "imageUrl": null
   },
   {
@@ -602103,10 +602109,14 @@
       "super-powers",
       "af411",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "curated-dc-gap-wave3",
-    "imageUrl": "https://static.wixstatic.com/media/adc447_aa6a5e379f1f4b728f49a0446386b20f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_aa6a5e379f1f4b728f49a0446386b20f~mv2.jpg"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_aa6a5e379f1f4b728f49a0446386b20f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_aa6a5e379f1f4b728f49a0446386b20f~mv2.jpg",
+    "sku": "787926178647"
   },
   {
     "id": "mcf-dc-super-pow-peacemaker-judo-master-vigilante-3-pack",
@@ -727357,9 +727367,13 @@
       "mcfarlane",
       "dc-retro",
       "batman-66",
-      "af411:5823"
+      "af411:5823",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "source": "curated-dc-gap-wave16"
+    "source": "curated-dc-gap-wave16",
+    "sku": "787926177176"
   },
   {
     "id": "mcf-dcretro-w16-batman-v2-7082",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T19:05:50Z",
+  "generatedAt": "2026-10-09T05:27:23Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-10-01T19:05:47.483427+00:00",
+    "after": "2026-10-02T05:27:20.508939+00:00",
     "before": null
   },
   "fetch": {
@@ -45,7 +45,7 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 22,
+    "fetchedPostCount": 26,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
@@ -54,9 +54,9 @@
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 22,
+    "fetchedPosts": 26,
     "acceptedCandidates": 4,
-    "rejectedRows": 18,
+    "rejectedRows": 22,
     "byCompany": {
       "hasbro": {
         "accepted": 1,
@@ -108,8 +108,8 @@
       }
     },
     "byRejectReason": {
-      "company-not-allowlisted": 11,
-      "company-unknown": 1,
+      "company-not-allowlisted": 13,
+      "company-unknown": 3,
       "no-new-product-identity": 1,
       "news-event-post": 3,
       "no-explicit-figure": 1,
@@ -201,6 +201,78 @@
       "decision": "reject",
       "reason": "company-not-allowlisted",
       "name": null,
+      "company": "hiya",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/08/nycc-2026-hiya-toys-booth-images-599788",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599788,
+      "title": "NYCC 2026 – HIYA TOYS Booth Images",
+      "rationale": "Recognized hiya via class:companies-hiya-toys; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/08/nycc-2026-storm-collectibles-booth-images-599792",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599792,
+      "title": "NYCC 2026 – Storm Collectibles Booth Images",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/08/nycc-2026-sneak-attack-toys-booth-images-599790",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599790,
+      "title": "NYCC 2026 – Sneak Attack Toys Booth Images",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/08/nycc-2026-purearts-booth-images-599796",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599796,
+      "title": "NYCC 2026 – PureArts Booth Images",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
       "company": "mezco",
       "line": null,
       "year": null,
@@ -217,9 +289,9 @@
     },
     {
       "decision": "reject",
-      "reason": "company-unknown",
+      "reason": "company-not-allowlisted",
       "name": null,
-      "company": null,
+      "company": "bossfight",
       "line": null,
       "year": null,
       "releaseWindow": null,
@@ -231,7 +303,7 @@
       "gtin": null,
       "toyarkPostId": 600567,
       "title": "NYCC 2026 – Diamond Select Brands Booth Images",
-      "rationale": "No allowlisted companies-* class or unique body-text company."
+      "rationale": "Recognized bossfight via class:companies-boss-fight-studio; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
@@ -273,24 +345,6 @@
       "decision": "reject",
       "reason": "company-not-allowlisted",
       "name": null,
-      "company": "mattel",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/08/nycc-2026-mattel-dc-comics-collector-line-reveal-599776",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599776,
-      "title": "NYCC 2026 – Mattel DC Comics Collector Line Reveal!",
-      "rationale": "Recognized mattel via class:companies-mattel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
       "company": "bandai",
       "line": null,
       "year": null,
@@ -322,6 +376,24 @@
       "toyarkPostId": 600094,
       "title": "Walmart Collector Con 2026 Links and Details",
       "rationale": "Recognized bossfight via class:companies-boss-fight-studio; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "mattel",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/08/nycc-2026-mattel-dc-comics-collector-line-reveal-599776",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 599776,
+      "title": "NYCC 2026 – Mattel DC Comics Collector Line Reveal!",
+      "rationale": "Recognized mattel via class:companies-mattel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     },
     {
       "decision": "reject",
