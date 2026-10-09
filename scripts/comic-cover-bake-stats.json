@@ -1,435 +1,58 @@
 {
-  "coversAfter": 4945,
-  "coversBefore": 4644,
+  "coversAfter": 4958,
+  "coversBefore": 4953,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/16/8ad32234801740c48e3a7d8c53c87a1a.jpg",
-      "id": "mv-journey-to-star-wars-rise-of-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9621429-cover.jpg",
+      "id": "dh-frankenstein-new-world-sea-of-forever-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/04/24/a82e8ce73de44b9e8c4d5fe5c0813b5d.jpg",
-      "id": "mv-killmonger-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9877710-wwww.jpg",
+      "id": "dh-gunsmith-cats-omnibus-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/13/loki-v3-1.jpg",
-      "id": "mv-loki-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111567728/10040280-81ws89r1hql._sl1500_.jpg",
+      "id": "dh-innocent-rouge-omnibus-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/02/25/love-romances-1.jpg",
-      "id": "mv-love-romances-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11192/111929915/9830753-000.jpg",
+      "id": "dh-jupiter-s-legacy-library-edition-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/10/9e324dfc0e284f4b93716b945ab24f0f.jpg",
-      "id": "mv-major-x-0",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/10/e558af269b86449f81c5c3a07e835da2.jpg",
-      "id": "mv-major-x-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/08/29/man-without-fear-1.jpg",
-      "id": "mv-man-without-fear-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/18/marauders-1.jpg",
-      "id": "mv-marauders-2019-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/01/16/mcp-1.jpg",
-      "id": "mv-marvel-comics-presents-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/18/Marvel_Monsters_001-000.jpg",
-      "id": "mv-marvel-monsters-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/18/Marvel_Rising_01_of_05-000.jpg",
-      "id": "mv-marvel-rising-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/25/marvel-zombie-resurrection-1.jpg",
-      "id": "mv-marvel-zombies-resurrection-2019-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/07/23/6797710-01.jpg",
-      "id": "mv-marvels-annotated-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/18/Marvels_Epilogue_001-000.jpg",
-      "id": "mv-marvels-epilogue-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/03/10/skrulls-1.jpg",
-      "id": "mv-meet-skrulls-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/09/23/merry-x-men-holiday-special-1.jpg",
-      "id": "mv-merry-x-men-holiday-special-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/20/miles-morales-spider-man-1.jpg",
-      "id": "mv-miles-2018-2019-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/06/moon-knight-annual-1.jpg",
-      "id": "mv-moon-knight-annual-2019-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/03/namor-best-defense-1.jpg",
-      "id": "mv-namor-best-defense-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/23/new-mutants-war-children-1.jpg",
-      "id": "mv-new-mutants-war-children-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/22/old-man-quill-1.jpg",
-      "id": "mv-old-man-quill-2019-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/18/Power_Pack_-_Grow_Up_001-000.jpg",
-      "id": "mv-power-pack-grow-up-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/03/08/c58b9ec98a284e26b946ab01aa6760f0.jpg",
-      "id": "mv-punisher-annual-2019-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/10/punisher-kill-krew-1.jpg",
-      "id": "mv-punisher-kill-krew-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/03/30/7c19c3b9833940d3955437c83b9d8b4a.jpg",
-      "id": "mv-punisher-soviet-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/03/21/708ee6de66c64f49ada6c40a679fd000.jpg",
-      "id": "mv-red-goblin-red-death-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/29/savage-avengers-1.jpg",
-      "id": "mv-savage-avengers-2019-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/25/savage-avengers-annual-1.jpg",
-      "id": "mv-savage-avengers-annual-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/02/season-s-beatings-1.jpg",
-      "id": "mv-season-s-beatings-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/20/sw-arachknight-annual-1.jpg",
-      "id": "mv-secret-warps-arachknight-annual-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/13/sw-ghost-panther-annual-1.jpg",
-      "id": "mv-secret-warps-ghost-panther-annual-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/27/sw-iron-hammer-1.jpg",
-      "id": "mv-secret-warps-iron-hammer-annual-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/01/secret-warps-soldier-supreme-annual-1.jpg",
-      "id": "mv-secret-warps-soldier-supreme-annual-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/05/sw-weapon-hex-annual-1.jpg",
-      "id": "mv-secret-warps-weapon-hex-annual-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/06/25/a823f9992eb846c6a8182db879f94c3c.jpg",
-      "id": "mv-sensational-spider-man-self-improvement-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/24/she-hulk-annual-1.jpg",
-      "id": "mv-she-hulk-annual-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/03/silver-surfer-best-defense-1.jpg",
-      "id": "mv-silver-surfer-best-defense-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/11/silver-surfer-black-1.jpg",
-      "id": "mv-silver-surfer-black-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/10/silver-surfer-prodigal-1.jpg",
-      "id": "mv-silver-surfer-prodigal-sun-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/26/spider-man-annual-1.jpg",
-      "id": "mv-spider-man-annual-2019-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/18/Spider-Man_-_Enter_The_Spider-Verse_001-000.jpg",
-      "id": "mv-spider-man-enter-spider-verse-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/12/spiderman-league-realms-1.jpg",
-      "id": "mv-spider-man-league-of-realms-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/03/20/sm-life-story-1.jpg",
-      "id": "mv-spider-man-life-story-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/07/09/b6bab6eca4904f02ad4536c8ea4c7368.jpg",
-      "id": "mv-spider-man-reptilian-rage-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/03/23/cc133f87b1fb45ac9f6420ffc0ce1fae.jpg",
-      "id": "mv-spiderverse-2019-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/19/6456120e81674a418e689826ac2a42f8.jpg",
-      "id": "mv-star-wars-age-of-rebellion-boba-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/19/209bdf165a7b417c8e1933ed3cc08dc1.jpg",
-      "id": "mv-star-wars-age-of-rebellion-darth-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/19/52a1fc8cf7fb4996a77fa521ec39727a.jpg",
-      "id": "mv-star-wars-age-of-rebellion-grand-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/19/b80b756a299f4b84b2043cb2b3c5387b.jpg",
-      "id": "mv-star-wars-age-of-rebellion-han-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/19/5ac2b04080a740a3a92bdd555b810908.jpg",
-      "id": "mv-star-wars-age-of-rebellion-jabba-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/23/62be3c758d0144e4a6c3e0ed49f27495.jpg",
-      "id": "mv-star-wars-age-of-rebellion-lando-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/23/a25c8844b69147e3b953d3d9d6f602f1.jpg",
-      "id": "mv-star-wars-age-of-rebellion-luke-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/23/463ee0dacf6c4e2ea7b85e6438de49a0.jpg",
-      "id": "mv-star-wars-age-of-rebellion-princess-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/23/436c642c65704ae08a3f515f891e6158.jpg",
-      "id": "mv-star-wars-age-of-rebellion-special-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/29/be1c72904bbe44b786be5e3e8b96407a.jpg",
-      "id": "mv-star-wars-age-of-republic-anakin-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/23/86ad96c4560f4bb59b1a98d8cce9cd0a.jpg",
-      "id": "mv-star-wars-age-of-republic-count-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/23/d725f4230c8b40b482b1ca0ba9aec0a1.jpg",
-      "id": "mv-star-wars-age-of-republic-darth-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/09/30/grievous.jpg",
-      "id": "mv-star-wars-age-of-republic-general-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/23/sw-jango-1.jpg",
-      "id": "mv-star-wars-age-of-republic-jango-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/23/e89071272cad464c91d69a06a0be0ad1.jpg",
-      "id": "mv-star-wars-age-of-republic-obi-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/29/affbe59598564c85ba9610f9f4b501fd.jpg",
-      "id": "mv-star-wars-age-of-republic-padm-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/29/b45bd15f448046948c16cdb4cda17413.jpg",
-      "id": "mv-star-wars-age-of-republic-qui-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/12/29/5696c62c0de94128b7eb898fbcbd3a33.jpg",
-      "id": "mv-star-wars-age-of-republic-special-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/01/01/72fe7a094d1b4688b704eb9d5e8a9a63.jpg",
-      "id": "mv-star-wars-age-of-resistance-captain-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/01/01/630df66b7f084808a00080df977a86a2.jpg",
-      "id": "mv-star-wars-age-of-resistance-finn-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/01/01/36da06b5e6084781bbf005b615a911e5.jpg",
-      "id": "mv-star-wars-age-of-resistance-general-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/01/01/a25cc6f7b18c4f68b8e27550ea9b135b.jpg",
-      "id": "mv-star-wars-age-of-resistance-kylo-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/01/02/2b9690e3178347cea10da4d1357b91fb.jpg",
-      "id": "mv-star-wars-age-of-resistance-poe-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/01/02/b7134a7643c94c509e17977334253389.jpg",
-      "id": "mv-star-wars-age-of-resistance-rey-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/01/02/f096ed40911b4a32ac516682fbe15f9a.jpg",
-      "id": "mv-star-wars-age-of-resistance-special-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/01/02/340ea2c4414d4ac3a479021689d0fa86.jpg",
-      "id": "mv-star-wars-age-of-resistance-supreme-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/01/03/972985bc07884cd1b2f9d7b008aab79d.jpg",
-      "id": "mv-star-wars-galaxy-s-edge-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/01/03/68b4e29465514273a2b27448cbf35ee1.jpg",
-      "id": "mv-star-wars-han-solo-imperial-cadet-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/01/03/5115fd12a0834f789f601c234acc17aa.jpg",
-      "id": "mv-star-wars-jedi-fallen-order-dark-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/10/04/target-vader-1.jpg",
-      "id": "mv-star-wars-target-vader-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/01/04/99de0734f1e549c7bb1f538b30bad1ca.jpg",
-      "id": "mv-star-wars-tie-fighter-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/21/strikeforce-1.jpg",
-      "id": "mv-strikeforce-2019-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/22/a35c5540daef4fe7b2ef33b2547b7257.jpg",
-      "id": "mv-sword-master-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/11/symbiote-spiderman-1.jpg",
-      "id": "mv-symbiote-spider-man-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/24/thanos-1.jpg",
-      "id": "mv-thanos-2019-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11177/111776243/10117439-magic_order_library_edition_volume_1_cover.jpg",
+      "id": "dh-magic-order-library-edition-1",
+      "source": "cv"
     }
   ],
-  "errors": 2,
-  "filled": 301,
-  "filledCv": 79,
-  "filledMetron": 222,
+  "errors": 0,
+  "filled": 5,
+  "filledCv": 5,
+  "filledMetron": 0,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 689,
+  "metronDailyUsed": 0,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 119,
+  "misses": 16,
   "recentMissSkips": {
-    "cv": 0,
-    "metron": 0
+    "cv": 94
   },
   "requests": {
-    "cv": 202,
-    "metron": 690
+    "cv": 32,
+    "metron": 0
   },
-  "skipped": 79,
-  "source": "both",
+  "skipped": 0,
+  "source": "cv",
   "sourceMinutes": {
-    "cv": 120.78,
-    "metron": 90.41
+    "cv": 18.62
   },
-  "stoppedReason": "cv max-minutes 120 reached",
-  "updatedAt": "2026-10-08T22:02:21Z",
-  "yearBand": "2015-2019 singles"
+  "stoppedReason": "cv max-minutes 18 reached",
+  "updatedAt": "2026-10-09T18:01:44Z",
+  "yearBand": "2020-2025"
 }
