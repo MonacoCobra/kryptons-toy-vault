@@ -2,7 +2,7 @@
   "source": "lyra-weekday-af-monitor",
   "date": "2026-10-09",
   "updatedAt": "2026-10-09T15:02:25Z",
-  "added": 30,
+  "added": 26,
   "skipped": [],
   "ingestPath": "oneshot-fallback",
   "databaseUrl": false,
@@ -13,16 +13,16 @@
     "ee_candidates": 29,
     "bbts_candidates": 157,
     "added": 30,
-    "skipped_dupes": 156,
+    "skipped_dupes": 160,
     "rejected_non_af": 82,
     "unmapped_company": 42,
     "postfilter_rejected": 0,
     "skipped_family_dupes": 0
   },
   "oneshotBefore": 30123,
-  "oneshotAfter": 30153,
+  "oneshotAfter": 30149,
   "ee_added": 18,
-  "bbts_added": 12,
+  "bbts_added": 8,
   "samples": [
     {
       "sku": "HSG7458",
@@ -95,6 +95,29 @@
       "name": "Deadpool & Wolverine Marvel Legends Series Wolverinepool 6-Inch Action Figure",
       "id": "afmon-hasbro-deadpool-wolverine-marvel-legends-series-wolverinepool-6-inch-action-figure-hsg2382",
       "source": "ee"
+    }
+  ],
+  "commit": "f5fdd620",
+  "sameBatchAliases": [
+    {
+      "bbts": "BBTS-198796",
+      "canonicalId": "afmon-mcfarlane-poppy-playtime-wave-2-daddy-long-legs-4-1-2-inch-bendable-figure-mf13981",
+      "eeSku": "MF13981"
+    },
+    {
+      "bbts": "BBTS-198794",
+      "canonicalId": "afmon-mcfarlane-poppy-playtime-wave-2-nightmare-huggy-wuggy-4-1-2-inch-bendable-figure-mf13983",
+      "eeSku": "MF13983"
+    },
+    {
+      "bbts": "BBTS-198795",
+      "canonicalId": "afmon-mcfarlane-poppy-playtime-wave-2-mommy-long-legs-4-1-2-inch-bendable-figure-mf13982",
+      "eeSku": "MF13982"
+    },
+    {
+      "bbts": "BBTS-198793",
+      "canonicalId": "afmon-mcfarlane-poppy-playtime-wave-2-chum-chompkins-4-1-2-inch-bendable-figure-mf13984",
+      "eeSku": "MF13984"
     }
   ]
 }

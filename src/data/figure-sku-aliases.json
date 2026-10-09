@@ -44925,6 +44925,22 @@
     ],
     "afmon-mcfarlane-poppy-playtime-wave-2-mommy-long-legs-7-inch-scale-action-figure-mf13911": [
       "BBTS-198767"
+    ],
+    "afmon-mcfarlane-poppy-playtime-wave-2-daddy-long-legs-4-1-2-inch-bendable-figure-mf13981": [
+      "MF13981",
+      "BBTS-198796"
+    ],
+    "afmon-mcfarlane-poppy-playtime-wave-2-nightmare-huggy-wuggy-4-1-2-inch-bendable-figure-mf13983": [
+      "MF13983",
+      "BBTS-198794"
+    ],
+    "afmon-mcfarlane-poppy-playtime-wave-2-mommy-long-legs-4-1-2-inch-bendable-figure-mf13982": [
+      "MF13982",
+      "BBTS-198795"
+    ],
+    "afmon-mcfarlane-poppy-playtime-wave-2-chum-chompkins-4-1-2-inch-bendable-figure-mf13984": [
+      "MF13984",
+      "BBTS-198793"
     ]
   },
   "aliasToFigureId": {
@@ -69451,7 +69467,15 @@
     "BBTS-198765": "afmon-mcfarlane-poppy-playtime-wave-2-huggy-wuggy-classic-7-inch-scale-action-figure-mf13908",
     "BBTS-198764": "afmon-mcfarlane-poppy-playtime-wave-2-daddy-long-legs-7-inch-scale-action-figure-mf13907",
     "BBTS-198768": "afmon-mcfarlane-poppy-playtime-wave-2-nightmare-huggy-7-inch-scale-action-figure-mf13912",
-    "BBTS-198767": "afmon-mcfarlane-poppy-playtime-wave-2-mommy-long-legs-7-inch-scale-action-figure-mf13911"
+    "BBTS-198767": "afmon-mcfarlane-poppy-playtime-wave-2-mommy-long-legs-7-inch-scale-action-figure-mf13911",
+    "BBTS-198796": "afmon-mcfarlane-poppy-playtime-wave-2-daddy-long-legs-4-1-2-inch-bendable-figure-mf13981",
+    "MF13981": "afmon-mcfarlane-poppy-playtime-wave-2-daddy-long-legs-4-1-2-inch-bendable-figure-mf13981",
+    "BBTS-198794": "afmon-mcfarlane-poppy-playtime-wave-2-nightmare-huggy-wuggy-4-1-2-inch-bendable-figure-mf13983",
+    "MF13983": "afmon-mcfarlane-poppy-playtime-wave-2-nightmare-huggy-wuggy-4-1-2-inch-bendable-figure-mf13983",
+    "BBTS-198795": "afmon-mcfarlane-poppy-playtime-wave-2-mommy-long-legs-4-1-2-inch-bendable-figure-mf13982",
+    "MF13982": "afmon-mcfarlane-poppy-playtime-wave-2-mommy-long-legs-4-1-2-inch-bendable-figure-mf13982",
+    "BBTS-198793": "afmon-mcfarlane-poppy-playtime-wave-2-chum-chompkins-4-1-2-inch-bendable-figure-mf13984",
+    "MF13984": "afmon-mcfarlane-poppy-playtime-wave-2-chum-chompkins-4-1-2-inch-bendable-figure-mf13984"
   },
   "collapsed": [
     {
@@ -72778,7 +72802,7 @@
       "reason": "REFUSED: distinct product GTINs. lc5 UPC 630509808366 is Lightning Collection White Ranger (AF411); hs10 UPC 630509808380 + image are S.P.D. Shadow Ranger (AF411). Character-name collision only. Shadow Ranger already exists as plc-shadow-spd."
     }
   ],
-  "updatedAt": "2026-10-09T05:26:52.809650+00:00",
+  "updatedAt": "2026-10-09T15:03:11.507996+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -76615,5 +76639,6 @@
       "imageUrls": [],
       "reason": "Meph night babysit 2026-10-07: Mephitsu bake proposed 65100000, which fails EAN-8 checksum (not a real GTIN)."
     }
-  ]
+  ],
+  "figureIdToAliases": {}
 }
