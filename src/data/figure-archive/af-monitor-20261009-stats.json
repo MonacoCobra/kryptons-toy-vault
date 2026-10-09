@@ -1,0 +1,100 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-09",
+  "updatedAt": "2026-10-09T15:02:25Z",
+  "added": 30,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Pages read from rendered listing in box browser (save dialog broken); SKU-prefiltered 222->64.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 310,
+    "ee_candidates": 29,
+    "bbts_candidates": 157,
+    "added": 30,
+    "skipped_dupes": 156,
+    "rejected_non_af": 82,
+    "unmapped_company": 42,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 30123,
+  "oneshotAfter": 30153,
+  "ee_added": 18,
+  "bbts_added": 12,
+  "samples": [
+    {
+      "sku": "HSG7458",
+      "name": "Transformers Dramatic Capture Series Dinobot Island Part 2 Slag and Sludge Set",
+      "id": "afmon-hasbro-transformers-dramatic-capture-series-dinobot-island-part-2-slag-and-sludge-se-hsg7458",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4398",
+      "name": "Transformers New Legends NL-09 DA Dark Amber Leo Prime & Blue Bolt",
+      "id": "afmon-hasbro-transformers-new-legends-nl-09-da-dark-amber-leo-prime-blue-bolt-hsg4398",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG7461",
+      "name": "Transformers Masterpiece Edition MPG-27 Twincast & Rewind",
+      "id": "afmon-hasbro-transformers-masterpiece-edition-mpg-27-twincast-rewind-hsg7461",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG7462",
+      "name": "Transformers Kiss Player Cassettetron Set",
+      "id": "afmon-hasbro-transformers-kiss-player-cassettetron-set-hsg7462",
+      "source": "ee"
+    },
+    {
+      "sku": "JK433524",
+      "name": "The Simpsons Homer The Chosen One 5-Inch Figure",
+      "id": "afmon-jakks-the-simpsons-homer-the-chosen-one-5-inch-figure-jk433524",
+      "source": "ee"
+    },
+    {
+      "sku": "MF13981",
+      "name": "Poppy Playtime Wave 2 Daddy Long Legs 4 1/2-Inch Bendable Figure",
+      "id": "afmon-mcfarlane-poppy-playtime-wave-2-daddy-long-legs-4-1-2-inch-bendable-figure-mf13981",
+      "source": "ee"
+    },
+    {
+      "sku": "MF13983",
+      "name": "Poppy Playtime Wave 2 Nightmare Huggy Wuggy 4 1/2-Inch Bendable Figure",
+      "id": "afmon-mcfarlane-poppy-playtime-wave-2-nightmare-huggy-wuggy-4-1-2-inch-bendable-figure-mf13983",
+      "source": "ee"
+    },
+    {
+      "sku": "MF13982",
+      "name": "Poppy Playtime Wave 2 Mommy Long Legs 4 1/2-Inch Bendable Figure",
+      "id": "afmon-mcfarlane-poppy-playtime-wave-2-mommy-long-legs-4-1-2-inch-bendable-figure-mf13982",
+      "source": "ee"
+    },
+    {
+      "sku": "MF13984",
+      "name": "Poppy Playtime Wave 2 Chum Chompkins 4 1/2-Inch Bendable Figure",
+      "id": "afmon-mcfarlane-poppy-playtime-wave-2-chum-chompkins-4-1-2-inch-bendable-figure-mf13984",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2051",
+      "name": "G.I. Joe Classified Series David Red Dog Taputapu & Varujan Taurus Ayvazyan 6-Inch Action Figures",
+      "id": "afmon-hasbro-g-i-joe-classified-series-david-red-dog-taputapu-varujan-taurus-ayvazyan-6-in-hsg2051",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2283",
+      "name": "G.I. Joe Classified Series 207 Clifton Iceberg Nash 6-Inch Action Figure",
+      "id": "afmon-hasbro-g-i-joe-classified-series-207-clifton-iceberg-nash-6-inch-action-figure-hsg2283",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2382",
+      "name": "Deadpool & Wolverine Marvel Legends Series Wolverinepool 6-Inch Action Figure",
+      "id": "afmon-hasbro-deadpool-wolverine-marvel-legends-series-wolverinepool-6-inch-action-figure-hsg2382",
+      "source": "ee"
+    }
+  ]
+}
