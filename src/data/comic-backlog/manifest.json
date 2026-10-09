@@ -6,7 +6,10 @@
   ],
   "lastInjectedAt": "2026-10-06",
   "lastInjectedBatch": "batch-046-gcd-us-indie-backfill",
-  "queued": [],
+  "queued": [
+    "batch-047-gcd-dc-marvel-gap",
+    "batch-048-gcd-us-indie-legacy-gap"
+  ],
   "injected": [
     "batch-001",
     "batch-002",
