@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T05:24:58Z",
+  "generatedAt": "2026-10-10T17:59:35Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-10-03T05:24:56.389051+00:00",
+    "after": "2026-10-03T17:59:32.376701+00:00",
     "before": null
   },
   "fetch": {
@@ -45,7 +45,7 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 25,
+    "fetchedPostCount": 28,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
@@ -54,8 +54,8 @@
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 25,
-    "acceptedCandidates": 3,
+    "fetchedPosts": 28,
+    "acceptedCandidates": 6,
     "rejectedRows": 22,
     "byCompany": {
       "hasbro": {
@@ -67,7 +67,7 @@
         "rejected": 0
       },
       "neca": {
-        "accepted": 2,
+        "accepted": 4,
         "rejected": 3
       },
       "jazwares": {
@@ -83,7 +83,7 @@
         "rejected": 0
       },
       "mondo": {
-        "accepted": 0,
+        "accepted": 1,
         "rejected": 0
       },
       "threezero": {
@@ -116,10 +116,67 @@
       "no-explicit-figure": 1,
       "missing-line": 1
     },
-    "applied": 3,
+    "applied": 6,
     "skippedApply": 0
   },
   "candidates": [
+    {
+      "decision": "accept",
+      "name": "Mer-Man",
+      "company": "mondo",
+      "line": "Mondo Masters of the Universe 1/6",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Masters of the Universe 200X – 1/12 Scale",
+      "sourceUrl": "https://www.toyark.com/2026/10/10/masters-of-the-universe-200x-mondo-mer-man-1-12-scale-figure-601144",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Mondo.MOTU_Merman_200x_PP017.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601144,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Masters of the Universe 200X – Mondo Mer-Man 1/12 Scale Figure",
+      "rationale": "mondo via class:companies-mondo; line=Mondo Masters of the Universe 1/6; variant=Masters of the Universe 200X – 1/12 Scale; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Gonzo",
+      "company": "neca",
+      "line": "NECA Ultimate",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "The Muppets – with Camilla Set",
+      "sourceUrl": "https://www.toyark.com/2026/10/10/the-muppets-neca-ultimate-gonzo-with-camilla-set-601129",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-Muppet-Show-Gonzo-and-Camilla-004.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601129,
+      "postYear": 2026,
+      "pack": null,
+      "title": "The Muppets – NECA Ultimate Gonzo with Camilla Set",
+      "rationale": "neca via class:companies-neca; line=NECA Ultimate; variant=The Muppets – with Camilla Set; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Elvira",
+      "company": "neca",
+      "line": "Horror Ultimate",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": "Full Details for the Mistress of the Dark by",
+      "sourceUrl": "https://www.toyark.com/2026/10/10/full-details-for-the-elvira-mistress-of-the-dark-ultimate-figure-by-neca-601112",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-Elvira-Ultimate-Figure-014.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601112,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Full Details for the Elvira: Mistress of the Dark Ultimate Figure by NECA",
+      "rationale": "neca via class:companies-neca; line=Horror Ultimate; variant=Full Details for the Mistress of the Dark by; year=2027; new/reveal/pre-order/official-image signal"
+    },
     {
       "decision": "accept",
       "name": "Bastion Nimrod",
@@ -581,6 +638,48 @@
   ],
   "applied": [
     {
+      "id": "ta-60b1a705f7b9",
+      "name": "Mer-Man",
+      "company": "mondo",
+      "line": "Mondo Masters of the Universe 1/6",
+      "year": 2026,
+      "variant": "Masters of the Universe 200X – 1/12 Scale",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Mondo.MOTU_Merman_200x_PP017.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/10/masters-of-the-universe-200x-mondo-mer-man-1-12-scale-figure-601144",
+      "toyarkPostId": 601144
+    },
+    {
+      "id": "ta-3c4202933dac",
+      "name": "Gonzo",
+      "company": "neca",
+      "line": "NECA Ultimate",
+      "year": 2026,
+      "variant": "The Muppets – with Camilla Set",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-Muppet-Show-Gonzo-and-Camilla-004.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/10/the-muppets-neca-ultimate-gonzo-with-camilla-set-601129",
+      "toyarkPostId": 601129
+    },
+    {
+      "id": "ta-883e6b41ae35",
+      "name": "Elvira",
+      "company": "neca",
+      "line": "Horror Ultimate",
+      "year": 2027,
+      "variant": "Full Details for the Mistress of the Dark by",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-Elvira-Ultimate-Figure-014.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/10/full-details-for-the-elvira-mistress-of-the-dark-ultimate-figure-by-neca-601112",
+      "toyarkPostId": 601112
+    },
+    {
       "id": "ta-84dba502bc48",
       "name": "Bastion Nimrod",
       "company": "hasbro",
@@ -625,11 +724,11 @@
   ],
   "applySkipped": [],
   "applyStats": {
-    "accepted": 3,
-    "applied": 3,
+    "accepted": 6,
+    "applied": 6,
     "skippedApply": 0,
-    "aliasAdded": 7,
-    "withImage": 3,
+    "aliasAdded": 16,
+    "withImage": 6,
     "cap": 50,
     "blocker": null
   }

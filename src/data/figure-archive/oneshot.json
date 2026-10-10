@@ -1567,11 +1567,11 @@
       "imgsku:toyarena",
       "date-precision:year",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave5",
-    "sku": "5010993839865",
-    "imageUrl": null
+    "sku": "5010993839865"
   },
   {
     "id": "ml5-ml-war-machine-v2",
@@ -108055,11 +108055,11 @@
       "sku:kitsap",
       "image-sku",
       "image-bake",
-      "imgsku:kitsap"
+      "imgsku:kitsap",
+      "img:mephitsu"
     ],
     "source": "curated-densify",
-    "sku": "MF13864",
-    "imageUrl": null
+    "sku": "MF13864"
   },
   {
     "id": "d14spwn-spawn-cyan",
@@ -195587,7 +195587,9 @@
       "hasbro",
       "marvel",
       "legends",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave6",
     "sku": null
@@ -200205,7 +200207,9 @@
       "sku-bake",
       "sku-gtin",
       "sku:mephitsu",
-      "date-precision:year"
+      "date-precision:year",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave6",
     "sku": "5010996202086"
@@ -264918,7 +264922,9 @@
       "curated",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave2",
     "sku": "5010993715503"
@@ -278055,11 +278061,12 @@
       "curated",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated",
-    "sku": "630509359479",
-    "imageUrl": null
+    "sku": "630509359479"
   },
   {
     "id": "tfss-ss76-thrust",
@@ -293619,11 +293626,12 @@
       "marvel",
       "legends",
       "baf",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave3",
-    "sku": null,
-    "imageUrl": null
+    "sku": null
   },
   {
     "id": "tfc-kingdom-cheetor",
@@ -328599,11 +328607,12 @@
       "hasbro",
       "curated",
       "date-precision:year",
-      "date-unverified"
+      "date-unverified",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave8",
-    "sku": null,
-    "imageUrl": null
+    "sku": null
   },
   {
     "id": "ml3-ml-cull",
@@ -574243,11 +574252,12 @@
       "curated",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-mcfarlane-dc-gap",
-    "sku": "787926902334",
-    "imageUrl": null
+    "sku": "787926902334"
   },
   {
     "id": "mcfdc-gl-batman-last-knight",
@@ -635394,7 +635404,9 @@
       "sku-bake",
       "sku-gtin",
       "sku:mephitsu",
-      "msrp:bbts"
+      "msrp:bbts",
+      "image-bake",
+      "img:mephitsu"
     ],
     "sku": "787926175165",
     "source": "bbts"
@@ -637506,7 +637518,9 @@
       "af-checklist",
       "wave8",
       "mcfarlane",
-      "dc-super-powers"
+      "dc-super-powers",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave8"
   },
@@ -701388,7 +701402,9 @@
       "legendsverse-export",
       "shelby-collection",
       "date-precision:year",
-      "lv-list-row:78"
+      "lv-list-row:78",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
     "exclusive": "Pulse"
@@ -701438,7 +701454,9 @@
       "legendsverse-export",
       "shelby-collection",
       "date-precision:year",
-      "lv-list-row:81"
+      "lv-list-row:81",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "legendsverse-export-shelby"
   },
@@ -703962,7 +703980,9 @@
       "lv-list-row:109",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "legendsverse-export-shelby",
     "sku": "5010996323156"
@@ -727738,7 +727758,9 @@
       "af411:5823",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave16",
     "sku": "787926177176"
@@ -729758,7 +729780,9 @@
       "af411:6054",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17",
     "sku": "787926154405"
@@ -729801,7 +729825,9 @@
       "wave17",
       "mcfarlane",
       "page-punchers",
-      "af411:6356"
+      "af411:6356",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17"
   },
@@ -729867,7 +729893,9 @@
       "af411:5651",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17",
     "sku": "787926159196"
@@ -729892,7 +729920,9 @@
       "af411:5653",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17",
     "sku": "787926171563"
@@ -729980,7 +730010,9 @@
       "af411:5664",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17",
     "sku": "787926159134"
@@ -730023,7 +730055,9 @@
       "wave17",
       "mcfarlane",
       "page-punchers",
-      "af411:8492"
+      "af411:8492",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17"
   },
@@ -730047,7 +730081,9 @@
       "af411:8493",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17",
     "sku": "787926159448"
@@ -730069,7 +730105,9 @@
       "wave17",
       "mcfarlane",
       "page-punchers",
-      "af411:8977"
+      "af411:8977",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17"
   },
@@ -730198,7 +730236,9 @@
       "af411:11298",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17",
     "sku": "787926174076"
@@ -730304,7 +730344,9 @@
       "wave17",
       "mcfarlane",
       "super-powers",
-      "af411:10995"
+      "af411:10995",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17"
   },
@@ -730326,7 +730368,9 @@
       "mcfarlane",
       "super-powers",
       "vehicle",
-      "af411:8544"
+      "af411:8544",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17"
   },
@@ -730373,7 +730417,9 @@
       "af411:10996",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17",
     "sku": "787926175271"
@@ -730396,7 +730442,9 @@
       "mcfarlane",
       "super-powers",
       "vehicle",
-      "af411:10994"
+      "af411:10994",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17"
   },
@@ -732164,5 +732212,65 @@
     "imageUrl": "https://cdn.shopify.com/s/files/1/0568/1132/3597/files/oh029mnthl2bsh4oh1ft.jpg?v=1790963315",
     "sku": "194735420971",
     "exclusive": "MC_Exclusive"
+  },
+  {
+    "id": "ta-60b1a705f7b9",
+    "name": "Mer-Man",
+    "subtitle": "Masters of the Universe 200X – 1/12 Scale · 2026",
+    "line": "Mondo Masters of the Universe 1/6",
+    "company": "mondo",
+    "kind": "figure",
+    "releaseDate": "2026-01-01",
+    "msrp": null,
+    "scale": "1/6",
+    "demand": 1.3,
+    "tags": [
+      "toyark",
+      "toyark-densify",
+      "mondo",
+      "toyark-601144"
+    ],
+    "source": "toyark-densify",
+    "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Mondo.MOTU_Merman_200x_PP017.jpg"
+  },
+  {
+    "id": "ta-3c4202933dac",
+    "name": "Gonzo",
+    "subtitle": "The Muppets – with Camilla Set · 2026",
+    "line": "NECA Ultimate",
+    "company": "neca",
+    "kind": "figure",
+    "releaseDate": "2026-01-01",
+    "msrp": null,
+    "scale": "7\"",
+    "demand": 1.3,
+    "tags": [
+      "toyark",
+      "toyark-densify",
+      "neca",
+      "toyark-601129"
+    ],
+    "source": "toyark-densify",
+    "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-Muppet-Show-Gonzo-and-Camilla-004.jpg"
+  },
+  {
+    "id": "ta-883e6b41ae35",
+    "name": "Elvira",
+    "subtitle": "Full Details for the Mistress of the Dark by · 2027",
+    "line": "Horror Ultimate",
+    "company": "neca",
+    "kind": "figure",
+    "releaseDate": "2027-01-01",
+    "msrp": null,
+    "scale": "7\"",
+    "demand": 1.3,
+    "tags": [
+      "toyark",
+      "toyark-densify",
+      "neca",
+      "toyark-601112"
+    ],
+    "source": "toyark-densify",
+    "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-Elvira-Ultimate-Figure-014.jpg"
   }
 ]

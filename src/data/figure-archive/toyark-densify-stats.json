@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-10-10T05:24:59Z",
+  "finishedAt": "2026-10-10T17:59:35Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 3,
-  "applied": 3,
+  "acceptedCandidates": 6,
+  "applied": 6,
   "skippedApply": 0,
   "rejectedRows": 22,
-  "withImage": 3,
-  "aliasAdded": 7,
+  "withImage": 6,
+  "aliasAdded": 16,
   "byCompany": {
     "hasbro": {
       "accepted": 1,
@@ -19,7 +19,7 @@
       "rejected": 0
     },
     "neca": {
-      "accepted": 2,
+      "accepted": 4,
       "rejected": 3
     },
     "jazwares": {
@@ -35,7 +35,7 @@
       "rejected": 0
     },
     "mondo": {
-      "accepted": 0,
+      "accepted": 1,
       "rejected": 0
     },
     "threezero": {
@@ -69,11 +69,56 @@
     "missing-line": 1
   },
   "appliedIds": [
+    "ta-60b1a705f7b9",
+    "ta-3c4202933dac",
+    "ta-883e6b41ae35",
     "ta-84dba502bc48",
     "ta-018cda660a4c",
     "ta-7bf0f6dadbb92b9b"
   ],
   "appliedSample": [
+    {
+      "id": "ta-60b1a705f7b9",
+      "name": "Mer-Man",
+      "company": "mondo",
+      "line": "Mondo Masters of the Universe 1/6",
+      "year": 2026,
+      "variant": "Masters of the Universe 200X – 1/12 Scale",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Mondo.MOTU_Merman_200x_PP017.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/10/masters-of-the-universe-200x-mondo-mer-man-1-12-scale-figure-601144",
+      "toyarkPostId": 601144
+    },
+    {
+      "id": "ta-3c4202933dac",
+      "name": "Gonzo",
+      "company": "neca",
+      "line": "NECA Ultimate",
+      "year": 2026,
+      "variant": "The Muppets – with Camilla Set",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-Muppet-Show-Gonzo-and-Camilla-004.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/10/the-muppets-neca-ultimate-gonzo-with-camilla-set-601129",
+      "toyarkPostId": 601129
+    },
+    {
+      "id": "ta-883e6b41ae35",
+      "name": "Elvira",
+      "company": "neca",
+      "line": "Horror Ultimate",
+      "year": 2027,
+      "variant": "Full Details for the Mistress of the Dark by",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-Elvira-Ultimate-Figure-014.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/10/full-details-for-the-elvira-mistress-of-the-dark-ultimate-figure-by-neca-601112",
+      "toyarkPostId": 601112
+    },
     {
       "id": "ta-84dba502bc48",
       "name": "Bastion Nimrod",
@@ -118,7 +163,7 @@
     }
   ],
   "skippedSample": [],
-  "archiveSize": 30182,
+  "archiveSize": 30186,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"

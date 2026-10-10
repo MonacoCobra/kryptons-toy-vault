@@ -44949,6 +44949,21 @@
     ],
     "mattel-dcp-batman-hush-rooftop-bat-signal-diorama-jrh54": [
       "JRH54"
+    ],
+    "ta-60b1a705f7b9": [
+      "id:ta-60b1a705f7b9",
+      "toyark:601144",
+      "https://www.toyark.com/2026/10/10/masters-of-the-universe-200x-mondo-mer-man-1-12-scale-figure-601144"
+    ],
+    "ta-3c4202933dac": [
+      "id:ta-3c4202933dac",
+      "toyark:601129",
+      "https://www.toyark.com/2026/10/10/the-muppets-neca-ultimate-gonzo-with-camilla-set-601129"
+    ],
+    "ta-883e6b41ae35": [
+      "id:ta-883e6b41ae35",
+      "toyark:601112",
+      "https://www.toyark.com/2026/10/10/full-details-for-the-elvira-mistress-of-the-dark-ultimate-figure-by-neca-601112"
     ]
   },
   "aliasToFigureId": {
@@ -69487,7 +69502,16 @@
     "id:ta-56a78042d0e8": "ta-56a78042d0e8",
     "toyark:601075": "ta-56a78042d0e8",
     "https://www.toyark.com/2026/10/09/prey-neca-ultramate-feral-predator-figure-601075": "ta-56a78042d0e8",
-    "JRH54": "mattel-dcp-batman-hush-rooftop-bat-signal-diorama-jrh54"
+    "JRH54": "mattel-dcp-batman-hush-rooftop-bat-signal-diorama-jrh54",
+    "id:ta-60b1a705f7b9": "ta-60b1a705f7b9",
+    "toyark:601144": "ta-60b1a705f7b9",
+    "https://www.toyark.com/2026/10/10/masters-of-the-universe-200x-mondo-mer-man-1-12-scale-figure-601144": "ta-60b1a705f7b9",
+    "id:ta-3c4202933dac": "ta-3c4202933dac",
+    "toyark:601129": "ta-3c4202933dac",
+    "https://www.toyark.com/2026/10/10/the-muppets-neca-ultimate-gonzo-with-camilla-set-601129": "ta-3c4202933dac",
+    "id:ta-883e6b41ae35": "ta-883e6b41ae35",
+    "toyark:601112": "ta-883e6b41ae35",
+    "https://www.toyark.com/2026/10/10/full-details-for-the-elvira-mistress-of-the-dark-ultimate-figure-by-neca-601112": "ta-883e6b41ae35"
   },
   "collapsed": [
     {
@@ -72814,7 +72838,7 @@
       "reason": "REFUSED: distinct product GTINs. lc5 UPC 630509808366 is Lightning Collection White Ranger (AF411); hs10 UPC 630509808380 + image are S.P.D. Shadow Ranger (AF411). Character-name collision only. Shadow Ranger already exists as plc-shadow-spd."
     }
   ],
-  "updatedAt": "2026-10-10T15:21:27.480130+00:00",
+  "updatedAt": "2026-10-10T17:59:13.233673+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
