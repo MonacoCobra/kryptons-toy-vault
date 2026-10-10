@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T18:07:11Z",
+  "generatedAt": "2026-10-10T05:24:58Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-10-02T18:07:08.427368+00:00",
+    "after": "2026-10-03T05:24:56.389051+00:00",
     "before": null
   },
   "fetch": {
@@ -45,17 +45,17 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 26,
+    "fetchedPostCount": 25,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9543,
+    "indexedRows": 9544,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 26,
-    "acceptedCandidates": 4,
+    "fetchedPosts": 25,
+    "acceptedCandidates": 3,
     "rejectedRows": 22,
     "byCompany": {
       "hasbro": {
@@ -67,8 +67,8 @@
         "rejected": 0
       },
       "neca": {
-        "accepted": 3,
-        "rejected": 2
+        "accepted": 2,
+        "rejected": 3
       },
       "jazwares": {
         "accepted": 0,
@@ -110,34 +110,16 @@
     "byRejectReason": {
       "company-unknown": 4,
       "company-not-allowlisted": 12,
+      "already-in-oneshot": 1,
       "no-new-product-identity": 1,
-      "news-event-post": 3,
+      "news-event-post": 2,
       "no-explicit-figure": 1,
       "missing-line": 1
     },
-    "applied": 4,
+    "applied": 3,
     "skippedApply": 0
   },
   "candidates": [
-    {
-      "decision": "accept",
-      "name": "Feral Predator",
-      "company": "neca",
-      "line": "NECA Ultimate",
-      "year": 2027,
-      "releaseWindow": null,
-      "variant": "Prey – ULTRAmate",
-      "sourceUrl": "https://www.toyark.com/2026/10/09/prey-neca-ultramate-feral-predator-figure-601075",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-ULTRAmate-Feral-Predator-009.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601075,
-      "postYear": 2026,
-      "pack": null,
-      "title": "Prey – NECA ULTRAmate Feral Predator Figure",
-      "rationale": "neca via class:companies-neca; line=NECA Ultimate; variant=Prey – ULTRAmate; year=2027; new/reveal/pre-order/official-image signal"
-    },
     {
       "decision": "accept",
       "name": "Bastion Nimrod",
@@ -232,6 +214,27 @@
       "toyarkPostId": 601088,
       "title": "Godzilla 2000: Millennium – Hiya Toys Final Battle Godzilla",
       "rationale": "Recognized hiya via class:companies-hiya-toys; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "already-in-oneshot",
+      "name": "Feral Predator",
+      "company": "neca",
+      "line": "NECA Ultimate",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": "Prey – ULTRAmate",
+      "sourceUrl": "https://www.toyark.com/2026/10/09/prey-neca-ultramate-feral-predator-figure-601075",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-ULTRAmate-Feral-Predator-009.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601075,
+      "title": "Prey – NECA ULTRAmate Feral Predator Figure",
+      "oneshotIds": [
+        "ta-56a78042d0e8"
+      ],
+      "rationale": "Identity key already in oneshot (ta-56a78042d0e8)."
     },
     {
       "decision": "reject",
@@ -574,41 +577,9 @@
       "toyarkPostId": 599736,
       "title": "Dragon Ball Z – S.H. Figuarts Son Goku -Return To Earth-",
       "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "news-event-post",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/02/star-wars-stream-for-october-26-2027-new-era-reveals-and-more-599654",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599654,
-      "title": "Star Wars Stream for October 26 – 2027 New Era Reveals and More",
-      "rationale": "Stream / panel / reveals / roundup / news / event post ('Stream') — not a single product."
     }
   ],
   "applied": [
-    {
-      "id": "ta-56a78042d0e8",
-      "name": "Feral Predator",
-      "company": "neca",
-      "line": "NECA Ultimate",
-      "year": 2027,
-      "variant": "Prey – ULTRAmate",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-ULTRAmate-Feral-Predator-009.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/09/prey-neca-ultramate-feral-predator-figure-601075",
-      "toyarkPostId": 601075
-    },
     {
       "id": "ta-84dba502bc48",
       "name": "Bastion Nimrod",
@@ -654,11 +625,11 @@
   ],
   "applySkipped": [],
   "applyStats": {
-    "accepted": 4,
-    "applied": 4,
+    "accepted": 3,
+    "applied": 3,
     "skippedApply": 0,
-    "aliasAdded": 10,
-    "withImage": 4,
+    "aliasAdded": 7,
+    "withImage": 3,
     "cap": 50,
     "blocker": null
   }

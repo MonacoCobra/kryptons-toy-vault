@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-10-09T18:06:26.175787+00:00",
+  "bakedAt": "2026-10-10T05:24:32.837542+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-10-09T18:03:36.575138+00:00",
+      "bakedAt": "2026-10-10T05:21:10.301473+00:00",
       "line": "marvel-legends",
       "dryRun": false,
       "mephitsuCount": 1879,
@@ -140,15 +140,15 @@
       }
     },
     {
-      "bakedAt": "2026-10-09T18:04:01.547446+00:00",
+      "bakedAt": "2026-10-10T05:21:49.156109+00:00",
       "line": "black-series",
       "dryRun": false,
-      "mephitsuCount": 1006,
+      "mephitsuCount": 1007,
       "mephitsuWithGtin": 490,
       "enrichStats": {
         "listing": 0,
-        "fuzzy": 0,
-        "already": 490
+        "fuzzy": 490,
+        "already": 0
       },
       "before": {
         "total": 474,
@@ -255,7 +255,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-09T18:04:13.350115+00:00",
+      "bakedAt": "2026-10-10T05:21:58.468243+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -370,7 +370,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-09T18:04:18.880142+00:00",
+      "bakedAt": "2026-10-10T05:22:03.298835+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -485,15 +485,15 @@
       }
     },
     {
-      "bakedAt": "2026-10-09T18:05:17.321457+00:00",
+      "bakedAt": "2026-10-10T05:23:24.280737+00:00",
       "line": "mcfarlane",
       "dryRun": false,
-      "mephitsuCount": 2211,
-      "mephitsuWithGtin": 967,
+      "mephitsuCount": 2216,
+      "mephitsuWithGtin": 968,
       "enrichStats": {
         "listing": 0,
-        "fuzzy": 0,
-        "already": 967
+        "fuzzy": 968,
+        "already": 0
       },
       "before": {
         "total": 1425,
@@ -509,15 +509,15 @@
         "withSku": 672,
         "withGtin": 472,
         "withListingPrimary": 200,
-        "withImage": 825,
+        "withImage": 826,
         "emptySku": 753,
-        "emptyImage": 600
+        "emptyImage": 599
       },
       "apply": {
-        "matched": 499,
+        "matched": 502,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 17,
+        "imagesFilled": 18,
         "imagesSkipped": 24,
         "aliasesAttached": 0,
         "skippedGtinConflict": 65,
@@ -627,32 +627,32 @@
       }
     },
     {
-      "bakedAt": "2026-10-09T18:05:53.100446+00:00",
+      "bakedAt": "2026-10-10T05:24:05.427373+00:00",
       "line": "neca",
       "dryRun": false,
-      "mephitsuCount": 1500,
+      "mephitsuCount": 1502,
       "mephitsuWithGtin": 442,
       "enrichStats": {
         "listing": 0,
-        "fuzzy": 0,
-        "already": 442
+        "fuzzy": 442,
+        "already": 0
       },
       "before": {
-        "total": 940,
+        "total": 941,
         "withSku": 718,
         "withGtin": 332,
         "withListingPrimary": 386,
-        "withImage": 755,
-        "emptySku": 222,
+        "withImage": 756,
+        "emptySku": 223,
         "emptyImage": 185
       },
       "after": {
-        "total": 940,
+        "total": 941,
         "withSku": 718,
         "withGtin": 332,
         "withListingPrimary": 386,
-        "withImage": 755,
-        "emptySku": 222,
+        "withImage": 756,
+        "emptySku": 223,
         "emptyImage": 185
       },
       "apply": {
@@ -662,7 +662,7 @@
         "imagesFilled": 0,
         "imagesSkipped": 7,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 22,
+        "skippedGtinConflict": 23,
         "blockedByAudit": 0,
         "reattachedAfterEnforce": 0,
         "samples": [
@@ -749,7 +749,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-09T18:06:14.094283+00:00",
+      "bakedAt": "2026-10-10T05:24:22.718656+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -864,7 +864,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-09T18:06:15.538980+00:00",
+      "bakedAt": "2026-10-10T05:24:23.988275+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -979,7 +979,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-09T18:06:22.251273+00:00",
+      "bakedAt": "2026-10-10T05:24:29.483959+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -1094,7 +1094,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-09T18:06:26.168046+00:00",
+      "bakedAt": "2026-10-10T05:24:32.829262+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,
@@ -1208,5 +1208,11 @@
         ]
       }
     }
-  ]
+  ],
+  "postBakePolicy": {
+    "imageUrl": "new-rows-only",
+    "existingRowPhotoFillsReverted": 28,
+    "gtinAssignedKept": 0,
+    "gtinUpgradedKept": 0
+  }
 }

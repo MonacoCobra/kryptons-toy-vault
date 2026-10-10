@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-10-09T18:07:11Z",
+  "finishedAt": "2026-10-10T05:24:59Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 4,
-  "applied": 4,
+  "acceptedCandidates": 3,
+  "applied": 3,
   "skippedApply": 0,
   "rejectedRows": 22,
-  "withImage": 4,
-  "aliasAdded": 10,
+  "withImage": 3,
+  "aliasAdded": 7,
   "byCompany": {
     "hasbro": {
       "accepted": 1,
@@ -19,8 +19,8 @@
       "rejected": 0
     },
     "neca": {
-      "accepted": 3,
-      "rejected": 2
+      "accepted": 2,
+      "rejected": 3
     },
     "jazwares": {
       "accepted": 0,
@@ -62,32 +62,18 @@
   "byRejectReason": {
     "company-unknown": 4,
     "company-not-allowlisted": 12,
+    "already-in-oneshot": 1,
     "no-new-product-identity": 1,
-    "news-event-post": 3,
+    "news-event-post": 2,
     "no-explicit-figure": 1,
     "missing-line": 1
   },
   "appliedIds": [
-    "ta-56a78042d0e8",
     "ta-84dba502bc48",
     "ta-018cda660a4c",
     "ta-7bf0f6dadbb92b9b"
   ],
   "appliedSample": [
-    {
-      "id": "ta-56a78042d0e8",
-      "name": "Feral Predator",
-      "company": "neca",
-      "line": "NECA Ultimate",
-      "year": 2027,
-      "variant": "Prey – ULTRAmate",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-ULTRAmate-Feral-Predator-009.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/09/prey-neca-ultramate-feral-predator-figure-601075",
-      "toyarkPostId": 601075
-    },
     {
       "id": "ta-84dba502bc48",
       "name": "Bastion Nimrod",
@@ -132,7 +118,7 @@
     }
   ],
   "skippedSample": [],
-  "archiveSize": 30150,
+  "archiveSize": 30182,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"
