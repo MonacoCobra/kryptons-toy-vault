@@ -1,223 +1,70 @@
 {
-  "coversAfter": 4996,
-  "coversBefore": 4958,
+  "coversAfter": 5003,
+  "coversBefore": 4996,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/01/4fb36783e05e40b194cda56fbdbd259b.jpg",
-      "id": "dh-star-wars-the-high-republic-adventures-p-2025-1",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/1/15776/9900392-tomb_raider_colossal_collection.jpg",
+      "id": "dh-tomb-raider-colossal-collection-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111567728/9713053-7061751266-24129.jpg",
+      "id": "fant-lost-marvels-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9817549-cover.jpg",
+      "id": "fant-roy-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/06/27/ac89eab8bd7b47a2aaa029b517cf78d3.jpg",
+      "id": "tita-conan-barbarian-scourge-of-serpent-1",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/10/18/f1f08ab636154e709f0fae8bcf1fbe69.jpg",
-      "id": "madc-new-space-age-1",
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/07/07/9907935-cover.jpg",
+      "id": "tita-doctor-who-fifteenth-doctor-prison-paradox-1",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/28/fa589c47b65745809bc01aed8c272f26.jpg",
-      "id": "madc-orla-1",
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/08/22/51d1f4a9c09649c59c50981bc897b27d.jpg",
+      "id": "tita-heat-seeker-exposed-gun-honey-series-1",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/10/18/856e6045e339492ea502dcb74955a84b.jpg",
-      "id": "madc-our-soot-stained-heart-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/26/d5353351a5744229bbcc8dafec2a10d5.jpg",
-      "id": "madc-pale-knight-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/30/c08635bc809c40cf9de858d195aeee05.jpg",
-      "id": "madc-past-time-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/05/417224ea2f57488888f2724b086f1d28.jpg",
-      "id": "madc-phantom-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/24/dbe2bd92970f4b99a062938de46750e1.jpg",
-      "id": "madc-popkill-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/19/3665c15460664f09a14a1f0748d527c1.jpg",
-      "id": "madc-racer-x-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/07/fc27c32a0e584b46b0f381fa45386fab.jpg",
-      "id": "madc-red-vector-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/25/c4bb78a93a6346e0906db9b1219e615c.jpg",
-      "id": "madc-slasher-s-apprentice-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/20/5542201fe1ec4f0f878e786ed973b45d.jpg",
-      "id": "madc-speed-racer-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/08/12/f4e433c0c8db408bbf25eb8664a431d7.jpg",
-      "id": "madc-sunder-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/06/aa9ed32248c94b2b9dd894fb573789fa.jpg",
-      "id": "madc-temporal-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/06/b1f7305f4d6c4b218210c188d0222784.jpg",
-      "id": "madc-terrorbytes-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/21/4b5b7899f55f4ce9bdf53eaedc7abdab.jpg",
-      "id": "madc-vanishing-point-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/06/21681c1c7e3a4fecbcd8208981b8877b.jpg",
-      "id": "madc-war-wolf-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/20/8ff9ae6daa844feb9fcc9a4fded11fec.jpg",
-      "id": "madc-whatever-happened-to-crimson-justice-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/06/69a440d6b5cb49d5829491394308613a.jpg",
-      "id": "onip-adventure-time-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/23/7b2d672d39704ee79cfe3d0c3bfa912e.jpg",
-      "id": "onip-blood-type-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/17/15d74c3859ad4cf5ab9a933d38993568.jpg",
-      "id": "onip-catacomb-of-torment-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/04/a530b54d048d4576a481631496369719.jpg",
-      "id": "onip-cemetery-kids-run-rabid-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/07/f6caadecf4174b959d972f62e9bb5eb1.jpg",
-      "id": "onip-crownsville-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/31/2dedc8c022fb44d5bc638a004dfa7ba8.jpg",
-      "id": "onip-cruel-kingdom-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/20/58d2c4d2a2554b6ca3003444c8c1e0d5.jpg",
-      "id": "onip-cruel-universe-2025-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/06/591dbcab13744f969c8439276460b07d.jpg",
-      "id": "onip-cult-of-lamb-schism-special-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/20/e9e2c4b4a40a4cc9ba3919dc3f9916ef.jpg",
-      "id": "onip-free-for-all-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/06/042ad15473e7412d9b2acce0cc63f6b2.jpg",
-      "id": "onip-high-strangeness-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/11/369cd6e80ac243e5a3c1262b78421051.jpg",
-      "id": "onip-mine-is-long-lonesome-grave-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/07/bd328deb55a740b4a1d1a4de5a0da2c6.jpg",
-      "id": "onip-out-of-alcatraz-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/21/16f0ae10dfdb4cd194907531f3df7408.jpg",
-      "id": "onip-plague-house-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/29/d4ac4d16ca6b42e2a7403fb6fb531dcb.jpg",
-      "id": "onip-rick-and-morty-end-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/15/8279165230cd49488462a09305d3809b.jpg",
-      "id": "onip-rick-and-morty-ricklemania-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/17/183b4a0995d44892a07fa1077208d3c0.jpg",
-      "id": "onip-rick-and-morty-vs-universe-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/19/e3fb8111f0174a2fb270ee997fa49fba.jpg",
-      "id": "onip-rick-and-morty-vs-universe-beth-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/28/e7dd2124d29b4cf08b4c0529ad328188.jpg",
-      "id": "onip-rick-and-morty-vs-universe-summer-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/10/7342ee8455ec4e9ab2dcdc35a0d27528.jpg",
-      "id": "onip-skin-police-2-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/17/0066f900596242a1ad73b07b00b43ed1.jpg",
-      "id": "onip-wild-west-c-o-w-boys-1",
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/07/30/6168def48ee14ed99b7ab88470b2fc2d.jpg",
+      "id": "tita-savage-sword-of-conan-reforged-1",
       "source": "metron"
     }
   ],
   "errors": 0,
-  "filled": 38,
-  "filledCv": 0,
-  "filledMetron": 38,
+  "filled": 7,
+  "filledCv": 3,
+  "filledMetron": 4,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 159,
+  "metronDailyUsed": 157,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 38,
+  "misses": 86,
   "recentMissSkips": {
+    "cv": 110,
     "metron": 180
   },
   "requests": {
-    "cv": 0,
-    "metron": 163
+    "cv": 32,
+    "metron": 157
   },
   "skipped": 0,
-  "source": "metron",
+  "source": "both",
   "sourceMinutes": {
-    "metron": 18.07
+    "cv": 18.61,
+    "metron": 18.22
   },
-  "stoppedReason": "metron max-minutes 18 reached",
-  "updatedAt": "2026-10-09T18:20:16Z",
+  "stoppedReason": "cv max-minutes 18 reached; metron max-minutes 18 reached",
+  "updatedAt": "2026-10-10T18:39:44Z",
   "yearBand": "2020-2025"
 }
