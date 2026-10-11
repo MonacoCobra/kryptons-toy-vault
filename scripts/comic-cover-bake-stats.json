@@ -1,70 +1,125 @@
 {
-  "coversAfter": 5003,
-  "coversBefore": 4996,
+  "coversAfter": 5021,
+  "coversBefore": 5003,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/1/15776/9900392-tomb_raider_colossal_collection.jpg",
-      "id": "dh-tomb-raider-colossal-collection-1",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/7116647-01.jpg",
+      "id": "dc-dollar-comics-swamp-thing-1-1",
       "source": "cv"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111567728/9713053-7061751266-24129.jpg",
-      "id": "fant-lost-marvels-1",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/7059737-01.jpg",
+      "id": "dc-harley-quinn-poison-ivy-1",
       "source": "cv"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9817549-cover.jpg",
-      "id": "fant-roy-1",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6790017-01.jpg",
+      "id": "dc-man-and-superman-100-page-super-1",
       "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/06/27/ac89eab8bd7b47a2aaa029b517cf78d3.jpg",
-      "id": "tita-conan-barbarian-scourge-of-serpent-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6722372-01.jpg",
+      "id": "dc-new-talent-showcase-2018-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/07/07/9907935-cover.jpg",
-      "id": "tita-doctor-who-fifteenth-doctor-prison-paradox-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/7100356-01.jpg",
+      "id": "dc-rwby-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/08/22/51d1f4a9c09649c59c50981bc897b27d.jpg",
-      "id": "tita-heat-seeker-exposed-gun-honey-series-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/7125241-01.jpg",
+      "id": "dc-sandman-universe-presents-hellblazer-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/07/30/6168def48ee14ed99b7ab88470b2fc2d.jpg",
-      "id": "tita-savage-sword-of-conan-reforged-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6722382-01.jpg",
+      "id": "dc-sasquatch-detective-special-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/7083445-01.jpg",
+      "id": "dc-scooby-doo-50th-anniversary-giant-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9199875-scan0001.jpg",
+      "id": "dc-shazam-2019-special-edition-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/7133566-01.jpg",
+      "id": "dc-teen-titans-go-giant-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/7/70215/9136136-titansgiant1.jpg",
+      "id": "dc-titans-giant-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6919267-01.jpg",
+      "id": "dc-under-moon-catwoman-tale-fcbd-2019-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/7108514-01.jpg",
+      "id": "dc-wonder-woman-giant-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/7108514-01.jpg",
+      "id": "dc-wonder-woman-giant-2019-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/7054340-01.jpg",
+      "id": "mv-amazing-spider-man-venom-3d-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6990892-01.jpg",
+      "id": "mv-captain-america-invaders-bahamas-triangle-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6780971-01.jpg",
+      "id": "mv-captain-marvel-start-here-sampler-2019-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/7/71975/7124095-8139937220-FFGD2.jpg",
+      "id": "mv-fantastic-four-grand-design-1",
+      "source": "cv"
     }
   ],
   "errors": 0,
-  "filled": 7,
-  "filledCv": 3,
-  "filledMetron": 4,
+  "filled": 18,
+  "filledCv": 18,
+  "filledMetron": 0,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 157,
+  "metronDailyUsed": 2,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 86,
+  "misses": 83,
   "recentMissSkips": {
-    "cv": 110,
-    "metron": 180
+    "cv": 0,
+    "metron": 0
   },
   "requests": {
-    "cv": 32,
-    "metron": 157
+    "cv": 54,
+    "metron": 149
   },
-  "skipped": 0,
+  "skipped": 18,
   "source": "both",
   "sourceMinutes": {
-    "cv": 18.61,
-    "metron": 18.22
+    "cv": 180.78,
+    "metron": 206.82
   },
-  "stoppedReason": "cv max-minutes 18 reached; metron max-minutes 18 reached",
-  "updatedAt": "2026-10-10T18:39:44Z",
-  "yearBand": "2020-2025"
+  "stoppedReason": "cv max-minutes 120 reached; metron max-minutes 120 reached",
+  "updatedAt": "2026-10-11T01:16:34Z",
+  "yearBand": "2015-2019 singles"
 }
