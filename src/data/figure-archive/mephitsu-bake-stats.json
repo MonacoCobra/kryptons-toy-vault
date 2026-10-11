@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-10-10T17:59:13.300823+00:00",
+  "bakedAt": "2026-10-11T05:33:41.477843+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-10-10T17:56:51.654207+00:00",
+      "bakedAt": "2026-10-11T05:31:19.525678+00:00",
       "line": "marvel-legends",
       "dryRun": false,
       "mephitsuCount": 1879,
@@ -140,7 +140,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-10T17:57:12.570914+00:00",
+      "bakedAt": "2026-10-11T05:31:40.439681+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 1007,
@@ -255,7 +255,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-10T17:57:21.619172+00:00",
+      "bakedAt": "2026-10-11T05:31:49.508993+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -370,7 +370,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-10T17:57:26.302231+00:00",
+      "bakedAt": "2026-10-11T05:31:54.209643+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -485,15 +485,15 @@
       }
     },
     {
-      "bakedAt": "2026-10-10T17:58:16.427055+00:00",
+      "bakedAt": "2026-10-11T05:32:44.051247+00:00",
       "line": "mcfarlane",
       "dryRun": false,
-      "mephitsuCount": 2216,
-      "mephitsuWithGtin": 968,
+      "mephitsuCount": 2220,
+      "mephitsuWithGtin": 969,
       "enrichStats": {
         "listing": 0,
         "fuzzy": 0,
-        "already": 968
+        "already": 969
       },
       "before": {
         "total": 1425,
@@ -514,7 +514,7 @@
         "emptyImage": 599
       },
       "apply": {
-        "matched": 502,
+        "matched": 501,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
         "imagesFilled": 18,
@@ -627,7 +627,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-10T17:58:47.193923+00:00",
+      "bakedAt": "2026-10-11T05:33:14.836970+00:00",
       "line": "neca",
       "dryRun": false,
       "mephitsuCount": 1502,
@@ -638,21 +638,21 @@
         "already": 442
       },
       "before": {
-        "total": 941,
+        "total": 943,
         "withSku": 718,
         "withGtin": 332,
         "withListingPrimary": 386,
-        "withImage": 756,
-        "emptySku": 223,
+        "withImage": 758,
+        "emptySku": 225,
         "emptyImage": 185
       },
       "after": {
-        "total": 941,
+        "total": 943,
         "withSku": 718,
         "withGtin": 332,
         "withListingPrimary": 386,
-        "withImage": 756,
-        "emptySku": 223,
+        "withImage": 758,
+        "emptySku": 225,
         "emptyImage": 185
       },
       "apply": {
@@ -749,7 +749,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-10T17:59:03.726668+00:00",
+      "bakedAt": "2026-10-11T05:33:31.803503+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -864,7 +864,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-10T17:59:04.902566+00:00",
+      "bakedAt": "2026-10-11T05:33:32.981978+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -979,7 +979,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-10T17:59:10.194586+00:00",
+      "bakedAt": "2026-10-11T05:33:38.262201+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -1094,7 +1094,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-10T17:59:13.293332+00:00",
+      "bakedAt": "2026-10-11T05:33:41.471605+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,
