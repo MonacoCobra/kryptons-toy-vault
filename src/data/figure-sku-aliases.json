@@ -44982,6 +44982,9 @@
     ],
     "afmon-mcfarlane-poppy-playtime-wave-2-kissy-missy-smile-12-inch-bendable-figure-mf13962": [
       "BBTS-198790"
+    ],
+    "sf-mattel-creations-dc-premier-superman-action-figure-jmd69": [
+      "MTJMD69"
     ]
   },
   "aliasToFigureId": {
@@ -69535,7 +69538,8 @@
     "BBTS-199468": "afmon-bandai-one-piece-edward-newgate-marineford-s-h-figuarts-action-figure-blfbas84074",
     "BBTS-198996": "afmon-mcfarlane-witchblade-sara-pezzini-image-comic-founders-series-mcfarlane-elite-editio-mf18961",
     "BBTS-198791": "afmon-mcfarlane-poppy-playtime-wave-2-killy-willy-12-inch-bendable-figure-mf13954",
-    "BBTS-198790": "afmon-mcfarlane-poppy-playtime-wave-2-kissy-missy-smile-12-inch-bendable-figure-mf13962"
+    "BBTS-198790": "afmon-mcfarlane-poppy-playtime-wave-2-kissy-missy-smile-12-inch-bendable-figure-mf13962",
+    "MTJMD69": "sf-mattel-creations-dc-premier-superman-action-figure-jmd69"
   },
   "collapsed": [
     {
@@ -72690,6 +72694,15 @@
         "634482086391"
       ],
       "reason": "ToyArk MSRP follow-up (Shelby 2026-10-06): same NECA Ultimate Big Bird (Blue Version) 2026 Con/NYCC exclusive — both rows from ToyArk post 599270 (original + *UPDATE* repost), same image; NECA store UPC 634482086391 (NE08639-01). Keep ta-3a7f2e730bb9 (clean subtitle, toyark:599270 alias); drop ta-86225fd3def6 (*UPDATE* duplicate); moved its id + 09/25 URL aliases; added UPC alias."
+    },
+    {
+      "keepId": "sf-mattel-creations-dc-premier-superman-action-figure-jmd69",
+      "dropId": "afmon-mattel-dc-premiere-wave-1-superman-12-inch-scale-action-figure-mtjmd69",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "MTJMD69"
+      ],
+      "reason": "AF monitor 2026-10-12: EE MTJMD69 is the same DC Premier Superman as Mattel Creations JMD69"
     }
   ],
   "flagged": [
