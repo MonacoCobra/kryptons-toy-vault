@@ -1,0 +1,100 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-12",
+  "updatedAt": "2026-10-12T14:54:20Z",
+  "added": 32,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Pages read from rendered listing in box browser (save dialog broken); SKU-prefiltered 222->64.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 450,
+    "ee_candidates": 66,
+    "bbts_candidates": 160,
+    "added": 32,
+    "skipped_dupes": 194,
+    "rejected_non_af": 185,
+    "unmapped_company": 39,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 30139,
+  "oneshotAfter": 30171,
+  "ee_added": 22,
+  "bbts_added": 10,
+  "samples": [
+    {
+      "sku": "MTJPC57",
+      "name": "Jurassic World Venomous Bite Becklespinax Action Figure",
+      "id": "afmon-mattel-jurassic-world-venomous-bite-becklespinax-action-figure-mtjpc57",
+      "source": "ee"
+    },
+    {
+      "sku": "MTJMN92",
+      "name": "Polly Pocket Cafe Pup Purse Playset",
+      "id": "afmon-mattel-polly-pocket-cafe-pup-purse-playset-mtjmn92",
+      "source": "ee"
+    },
+    {
+      "sku": "MF18961",
+      "name": "Witchblade Sara Pezzini Image Comic Founders Series McFarlane Elite Edition 7-Inch Deluxe Action Figure",
+      "id": "afmon-mcfarlane-witchblade-sara-pezzini-image-comic-founders-series-mcfarlane-elite-editio-mf18961",
+      "source": "ee"
+    },
+    {
+      "sku": "NC41589",
+      "name": "The Texas Chainsaw Massacre: The Beginning Slaughterhouse 7-Inch Scale Action Figure Boxed Set",
+      "id": "afmon-neca-the-texas-chainsaw-massacre-the-beginning-slaughterhouse-7-inch-scale-action-fi-nc41589",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84074",
+      "name": "One Piece Edward Newgate Marineford S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-one-piece-edward-newgate-marineford-s-h-figuarts-action-figure-blfbas84074",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84087",
+      "name": "My Hero Academia Izuku Midoriya and Katsuki Bakugo Childhood Set S.H.Figuarts Action Figure 2-Pack",
+      "id": "afmon-bandai-my-hero-academia-izuku-midoriya-and-katsuki-bakugo-childhood-set-s-h-figu-blfbas84087",
+      "source": "ee"
+    },
+    {
+      "sku": "MF13962",
+      "name": "Poppy Playtime Wave 2 Kissy Missy Smile 12-Inch Bendable Figure",
+      "id": "afmon-mcfarlane-poppy-playtime-wave-2-kissy-missy-smile-12-inch-bendable-figure-mf13962",
+      "source": "ee"
+    },
+    {
+      "sku": "MF13954",
+      "name": "Poppy Playtime Wave 2 Killy Willy 12-Inch Bendable Figure",
+      "id": "afmon-mcfarlane-poppy-playtime-wave-2-killy-willy-12-inch-bendable-figure-mf13954",
+      "source": "ee"
+    },
+    {
+      "sku": "MTJMK46",
+      "name": "Mattel Minecraft Dungeons II Twisted Warden Action Figure",
+      "id": "afmon-mattel-mattel-minecraft-dungeons-ii-twisted-warden-action-figure-mtjmk46",
+      "source": "ee"
+    },
+    {
+      "sku": "MTJNL22",
+      "name": "Barbie Dreamhouse Polly Pocket Compact Playset",
+      "id": "afmon-mattel-barbie-dreamhouse-polly-pocket-compact-playset-mtjnl22",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0704",
+      "name": "Star Wars The Black Series The Armorer Premium Electronic Helmet",
+      "id": "afmon-hasbro-star-wars-the-black-series-the-armorer-premium-electronic-helmet-hsg0704",
+      "source": "ee"
+    },
+    {
+      "sku": "DC524598",
+      "name": "Batman and Robin DAH-116 Dynamic 8-Ction Heroes Batman Action Figure",
+      "id": "afmon-beastkingdom-batman-and-robin-dah-116-dynamic-8-ction-heroes-batman-action-figure-dc524598",
+      "source": "ee"
+    }
+  ]
+}
