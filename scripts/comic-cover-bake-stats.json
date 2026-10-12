@@ -1,58 +1,48 @@
 {
-  "coversAfter": 5073,
-  "coversBefore": 5068,
+  "coversAfter": 5076,
+  "coversBefore": 5073,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11183/111832710/10107880-cat%27seyev1%231%282025%29-page1.jpg",
-      "id": "harr-cat-s-eye-omnibus-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/06/27/968fb4e611914ca6b74e4cf209a3193c.jpg",
+      "id": "tita-solomon-kane-serpent-ring-1",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111567728/9878817-9536373731-24618.jpg",
-      "id": "harr-city-hunter-omnibus-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/09/26/2e7836edc6d640909e587cf19584b0d9.jpg",
+      "id": "vaul-money-shot-big-bang-0",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9978113-wwww.jpg",
-      "id": "harr-space-punch-1",
-      "source": "cv"
-    },
-    {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9799841-cover.jpg",
-      "id": "idw-godzilla-kai-sei-era-1",
-      "source": "cv"
-    },
-    {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9648964-cover.jpg",
-      "id": "idw-mothra-queen-of-monsters-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/09/26/771170c19ee34f51ac541079d93dd7c1.jpg",
+      "id": "vaul-money-shot-big-bang-1",
+      "source": "metron"
     }
   ],
   "errors": 0,
-  "filled": 5,
-  "filledCv": 5,
-  "filledMetron": 0,
+  "filled": 3,
+  "filledCv": 0,
+  "filledMetron": 3,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 0,
+  "metronDailyUsed": 179,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 25,
+  "misses": 85,
   "recentMissSkips": {
-    "cv": 110
+    "metron": 172
   },
   "requests": {
-    "cv": 32,
-    "metron": 0
+    "cv": 0,
+    "metron": 179
   },
   "skipped": 0,
-  "source": "cv",
+  "source": "metron",
   "sourceMinutes": {
-    "cv": 18.63
+    "metron": 18.18
   },
-  "stoppedReason": "cv max-minutes 18 reached",
-  "updatedAt": "2026-10-12T17:51:31Z",
+  "stoppedReason": "metron max-minutes 18 reached",
+  "updatedAt": "2026-10-12T18:10:13Z",
   "yearBand": "2020-2025"
 }
