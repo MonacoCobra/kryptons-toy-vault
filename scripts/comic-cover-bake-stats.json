@@ -1,270 +1,58 @@
 {
-  "coversAfter": 5068,
-  "coversBefore": 5021,
+  "coversAfter": 5073,
+  "coversBefore": 5068,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11112/111121983/4972838-9805947272-HARLE.jpg",
-      "id": "dc-hq-2013-1",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11183/111832710/10107880-cat%27seyev1%231%282025%29-page1.jpg",
+      "id": "harr-cat-s-eye-omnibus-1",
       "source": "cv"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4400745-35.jpg",
-      "id": "dc-batman-n52-35",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111567728/9878817-9536373731-24618.jpg",
+      "id": "harr-city-hunter-omnibus-1",
       "source": "cv"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/66303/4143030-batgirl%2001.jpg",
-      "id": "dc-batgirl-n52-35",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9978113-wwww.jpg",
+      "id": "harr-space-punch-1",
       "source": "cv"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/66303/3731808-action%20comics.jpg",
-      "id": "dc-action-n52-30",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9799841-cover.jpg",
+      "id": "idw-godzilla-kai-sei-era-1",
       "source": "cv"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/66303/3977532-batman%20and%20robin%2001.jpg",
-      "id": "dc-batman-robin-n52-33",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9648964-cover.jpg",
+      "id": "idw-mothra-queen-of-monsters-1",
       "source": "cv"
-    },
-    {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/66303/2853320-1_0ffeac15a2.jpeg",
-      "id": "dc-ga-2011-17",
-      "source": "cv"
-    },
-    {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/66303/3452070-harley%20quinn%2001.jpg",
-      "id": "dc-hq-2013-0",
-      "source": "cv"
-    },
-    {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/119711/3047916-batmanspecial0_244.jpg",
-      "id": "dc-batman-n52-0",
-      "source": "cv"
-    },
-    {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/66303/2572255-ga_cv0_ds.jpeg",
-      "id": "dc-ga-2011-0",
-      "source": "cv"
-    },
-    {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/66303/2585714-ssquad_cv0.jpeg",
-      "id": "dc-ss-2011-0",
-      "source": "cv"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/22/batman-v2-21.jpg",
-      "id": "dc-batman-n52-21",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/22/batman-v2-13.jpg",
-      "id": "dc-batman-n52-13",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/20/action-comics-v2-0.jpg",
-      "id": "dc-action-n52-0",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/20/action-comics-v2-9.jpg",
-      "id": "dc-action-n52-9",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/22/batman-v2-6.jpg",
-      "id": "dc-batman-n52-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/01/29/detective-comics-v2-0.jpg",
-      "id": "dc-det-n52-0",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/26/jl-v2-0.jpg",
-      "id": "dc-jl-n52-0",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/05/05/supergirl-v6-0.jpg",
-      "id": "dc-supergirl-n52-0",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/22/batman-v2-1.jpg",
-      "id": "dc-batman2011-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/12/24/blue-beetle-1.jpg",
-      "id": "dc-bb-2011-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/05/10/bop-v3-1.jpg",
-      "id": "dc-bop-2011-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/09/25/green-arrow-v6-1.jpg",
-      "id": "dc-ga-2011-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/01/02/losh-v7-1.jpg",
-      "id": "dc-lsh-2011-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/12/16/suicide-squad-1.jpg",
-      "id": "dc-ss-2011-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/20/action-comics-v2-1.jpg",
-      "id": "dc-action-n52-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/26/jl-v2-1.jpg",
-      "id": "dc-jl-n52-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/21/aquaman-v7-1.jpg",
-      "id": "dc-aquaman-n52-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/07/27/batman-robin-v2-1.jpg",
-      "id": "dc-batman-robin-n52-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/01/29/detective-comics-v2-1.jpg",
-      "id": "dc-det-n52-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/01/03/flash-v4-1.jpg",
-      "id": "dc-flash-n52-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/24/gl-v5-1.jpg",
-      "id": "dc-gl-n52-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/01/02/losh-v7-0.jpg",
-      "id": "dc-lsh-2011-0",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/12/batgirl-v4-1.jpg",
-      "id": "dc-batgirl-n52-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/03/07/catwoman-v4-1.jpg",
-      "id": "dc-catwoman-n52-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/21/nightwing-v3-1.jpg",
-      "id": "dc-nightwing-n52-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/05/05/supergirl-v6-1.jpg",
-      "id": "dc-supergirl-n52-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/03/02/glc-v2-1.jpg",
-      "id": "dc-glc-n52-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/06/supegirl-v5-50.jpg",
-      "id": "dc-supergirl-2005-50",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/21/action-comics-future-end-1.jpg",
-      "id": "dc-action-comics-futures-end-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/04/22/75db6359fd2d4c06b90247200701e505.jpg",
-      "id": "dc-american-vampire-second-cycle-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/11/aquman-others-1.jpg",
-      "id": "dc-aquaman-and-others-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/12/aquman-others-futures-end-1.jpg",
-      "id": "dc-aquaman-and-others-futures-end-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/28/aquaman-futures-end-1.jpg",
-      "id": "dc-aquaman-futures-end-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/10/14/d8b34d17fd4d4726888c56d28deb9c9c.jpg",
-      "id": "dc-arkham-manor-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/09/08/3a716b4f20434ae69c9bb643308d8505.jpg",
-      "id": "dc-arrow-season-2-5-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/03/batgirl-futures-end-1.jpg",
-      "id": "dc-batgirl-futures-end-1",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/04/2d27996600fc4663b1382dadb65a59d4.jpg",
-      "id": "dc-batman-66-meets-green-hornet-1",
-      "source": "metron"
     }
   ],
   "errors": 0,
-  "filled": 47,
-  "filledCv": 10,
-  "filledMetron": 37,
+  "filled": 5,
+  "filledCv": 5,
+  "filledMetron": 0,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 97,
+  "metronDailyUsed": 0,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 2,
+  "misses": 25,
   "recentMissSkips": {
-    "cv": 0,
-    "metron": 0
+    "cv": 110
   },
   "requests": {
-    "cv": 24,
-    "metron": 97
+    "cv": 32,
+    "metron": 0
   },
-  "skipped": 10,
-  "source": "both",
+  "skipped": 0,
+  "source": "cv",
   "sourceMinutes": {
-    "cv": 18.2,
-    "metron": 18.11
+    "cv": 18.63
   },
-  "stoppedReason": "cv max-minutes 18 reached; metron max-minutes 18 reached",
-  "updatedAt": "2026-10-11T18:37:33Z",
-  "yearBand": "2010-2014 singles"
+  "stoppedReason": "cv max-minutes 18 reached",
+  "updatedAt": "2026-10-12T17:51:31Z",
+  "yearBand": "2020-2025"
 }
