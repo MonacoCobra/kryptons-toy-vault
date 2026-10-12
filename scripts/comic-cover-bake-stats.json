@@ -1,48 +1,68 @@
 {
-  "coversAfter": 5076,
-  "coversBefore": 5073,
+  "coversAfter": 5083,
+  "coversBefore": 5076,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/06/27/968fb4e611914ca6b74e4cf209a3193c.jpg",
-      "id": "tita-solomon-kane-serpent-ring-1",
+      "coverUrl": "https://static.metron.cloud/media/issue/2018/12/16/jlo-1.jpg",
+      "id": "dc-justice-league-odyssey-1",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/09/26/2e7836edc6d640909e587cf19584b0d9.jpg",
-      "id": "vaul-money-shot-big-bang-0",
+      "coverUrl": "https://static.metron.cloud/media/issue/2023/09/19/6947215-01.jpg",
+      "id": "dc-shazam-world-s-mightiest-mortal-1",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/09/26/771170c19ee34f51ac541079d93dd7c1.jpg",
-      "id": "vaul-money-shot-big-bang-1",
+      "coverUrl": "https://static.metron.cloud/media/issue/2018/11/15/6594966-01.jpg",
+      "id": "mv-asgardians-of-galaxy-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/12/28/dead-man-logan-1.jpg",
+      "id": "mv-dead-man-logan-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/18/ghost-spider-1.jpg",
+      "id": "mv-ghost-spider-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/07/mr-and-mrs-x-1.webp",
+      "id": "mv-mr-and-mrs-x-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/22/old-man-quill-1.jpg",
+      "id": "mv-old-man-quill-1",
       "source": "metron"
     }
   ],
   "errors": 0,
-  "filled": 3,
+  "filled": 7,
   "filledCv": 0,
-  "filledMetron": 3,
+  "filledMetron": 7,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 179,
+  "metronDailyUsed": 357,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 85,
+  "misses": 76,
   "recentMissSkips": {
-    "metron": 172
+    "metron": 0
   },
   "requests": {
     "cv": 0,
-    "metron": 179
+    "metron": 178
   },
   "skipped": 0,
   "source": "metron",
   "sourceMinutes": {
-    "metron": 18.18
+    "metron": 18.04
   },
   "stoppedReason": "metron max-minutes 18 reached",
-  "updatedAt": "2026-10-12T18:10:13Z",
-  "yearBand": "2020-2025"
+  "updatedAt": "2026-10-12T18:29:48Z",
+  "yearBand": "2015-2019"
 }
