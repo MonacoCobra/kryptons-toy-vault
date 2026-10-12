@@ -119799,7 +119799,7 @@
     "line": "DC Multiverse Collector",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2025-03-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.5,
@@ -119811,7 +119811,8 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-crisis-on-infinite-earth-megafigs-anti-monitor-787926174960.jpg?v=1692746601",
@@ -122410,14 +122411,16 @@
     "line": "Horror Ultimate",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2025-02-01",
+    "releaseDate": "2025-01-01",
     "msrp": 34.99,
     "scale": "7\"",
     "demand": 1.35,
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -122845,14 +122848,16 @@
     "line": "DC Multiverse Collector",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2025-02-01",
+    "releaseDate": "2025-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.5,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -125347,7 +125352,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/gremlins-ultimate-series-7-inch-action-figure-flasher-gremlin_pkg.jpg?v=1787966218",
@@ -125585,7 +125592,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "787926174045",
@@ -127808,7 +127817,7 @@
     "line": "DC Multiverse Gold Label",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-12-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -127820,7 +127829,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "787926176292",
@@ -127833,7 +127844,7 @@
     "line": "Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-12-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.35,
@@ -127845,7 +127856,9 @@
       "sku:afcollector",
       "image-sku",
       "image-bake",
-      "imgsku:afcollector"
+      "imgsku:afcollector",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": "GA01SB4",
@@ -132270,14 +132283,16 @@
     "line": "Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-11-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.25,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -132335,14 +132350,16 @@
     "line": "Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-11-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.3,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -134843,7 +134860,7 @@
     "line": "Godzilla Ultimate",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2024-10-01",
+    "releaseDate": "2024-01-01",
     "msrp": 34.99,
     "scale": "7\"",
     "demand": 1.5,
@@ -134857,7 +134874,9 @@
       "sku-gtin",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "634482428870",
@@ -135151,7 +135170,7 @@
     "line": "Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-10-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -135163,7 +135182,9 @@
       "sku:afcollector",
       "image-sku",
       "image-bake",
-      "imgsku:afcollector"
+      "imgsku:afcollector",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "VT001SB13",
@@ -140173,7 +140194,7 @@
     "line": "McFarlane Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-09-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -140186,7 +140207,9 @@
       "sku:hobbyfigures",
       "image-sku",
       "image-bake",
-      "imgsku:hobbyfigures"
+      "imgsku:hobbyfigures",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "MCF90421",
@@ -140199,7 +140222,7 @@
     "line": "Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-09-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -140211,7 +140234,8 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/787926901108_image.gif?v=1723120958",
@@ -140249,14 +140273,16 @@
     "line": "Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-09-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.35,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -143753,7 +143779,7 @@
     "line": "Horror Ultimate",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2024-08-01",
+    "releaseDate": "2024-01-01",
     "msrp": 34.99,
     "scale": "7\"",
     "demand": 1.55,
@@ -143765,7 +143791,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "634482454299",
@@ -144155,14 +144183,16 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-08-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.3,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -144200,7 +144230,7 @@
     "line": "Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-08-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.5,
@@ -144212,7 +144242,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "787926113211",
@@ -144245,7 +144277,7 @@
     "line": "McFarlane Page Punchers",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-08-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.35,
@@ -144265,7 +144297,9 @@
       "alias:nerdzoic",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926180725",
@@ -147044,14 +147078,16 @@
     "line": "Horror Ultimate",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2024-07-01",
+    "releaseDate": "2024-01-01",
     "msrp": 34.99,
     "scale": "7\"",
     "demand": 1.5,
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -147363,7 +147399,7 @@
     "line": "McFarlane Page Punchers",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-07-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.35,
@@ -147376,7 +147412,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926180732",
@@ -147429,14 +147467,16 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-07-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.3,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -147474,7 +147514,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-07-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -147486,7 +147526,9 @@
       "sku:cmdstore",
       "sku-alias",
       "alias:kitsap",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "787926171075platinum",
@@ -150652,7 +150694,7 @@
     "line": "Horror Ultimate",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2024-06-01",
+    "releaseDate": "2024-01-01",
     "msrp": 34.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -150664,7 +150706,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "634482421116",
@@ -151252,7 +151296,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-06-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.3,
@@ -151264,7 +151308,9 @@
       "sku:kitsap",
       "image-sku",
       "image-bake",
-      "imgsku:kitsap"
+      "imgsku:kitsap",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "MF17359",
@@ -151416,7 +151462,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-06-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -151434,7 +151480,9 @@
       "alias:solarisjapan",
       "alias:staractionfigures",
       "alias:toynk",
-      "alias:kitsap"
+      "alias:kitsap",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-modern-age-black-adam-787926179910.jpg?v=1787617850",
@@ -151500,7 +151548,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-06-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.35,
@@ -151512,7 +151560,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/dc-multiverse-comic-megafigs-wave-3-bane-787926153378.jpg?v=1664558938",
@@ -155006,7 +155056,7 @@
     "line": "Horror Ultimate",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2024-05-01",
+    "releaseDate": "2024-01-01",
     "msrp": 34.99,
     "scale": "7\"",
     "demand": 1.5,
@@ -155018,7 +155068,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "634482397251",
@@ -155204,7 +155256,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-05-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -155220,7 +155272,9 @@
       "alias:hobbyfigures",
       "alias:kitsap",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926175646platinum",
@@ -155233,7 +155287,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-05-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.25,
@@ -155245,7 +155299,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": "787926175639",
@@ -155355,14 +155411,16 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-05-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -157848,7 +157906,7 @@
     "line": "TMNT Ultimate",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2024-04-01",
+    "releaseDate": "2024-01-01",
     "msrp": 34.99,
     "scale": "7\"",
     "demand": 1.5,
@@ -157860,7 +157918,9 @@
       "sku:nerdzoic",
       "image-sku",
       "image-bake",
-      "imgsku:nerdzoic"
+      "imgsku:nerdzoic",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "634482544600",
@@ -158206,7 +158266,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-04-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.25,
@@ -158218,7 +158278,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": "787926171280",
@@ -158256,7 +158318,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-04-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -158268,7 +158330,9 @@
       "sku:afcollector",
       "image-sku",
       "image-bake",
-      "imgsku:afcollector"
+      "imgsku:afcollector",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "MCRH01SB26",
@@ -158323,7 +158387,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-04-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -158336,7 +158400,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/dc-multiverse-comics-exclusive-martian-manhunter-gold-label-787926152531.jpg?v=1658189435",
@@ -161111,14 +161177,16 @@
     "line": "TMNT Ultimate",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2024-03-01",
+    "releaseDate": "2024-01-01",
     "msrp": 34.99,
     "scale": "7\"",
     "demand": 1.35,
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -161464,7 +161532,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-03-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -161476,7 +161544,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": "787926170429",
@@ -161621,14 +161691,16 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-03-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.3,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -161691,7 +161763,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-03-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -161704,7 +161776,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-revenge-of-the-green-lanterns-exclusive-cyborg-superman-787926174137.jpg?v=1749766279",
@@ -165190,7 +165264,7 @@
     "line": "TMNT Ultimate",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2024-02-01",
+    "releaseDate": "2024-01-01",
     "msrp": 34.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -165199,7 +165273,8 @@
       "ultimate",
       "curated",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://static.wixstatic.com/media/adc447_3eb27d6aa4d94218a316c48b09379291~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_3eb27d6aa4d94218a316c48b09379291~mv2.jpg",
@@ -165453,14 +165528,15 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-02-01",
+    "releaseDate": "2020-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -165498,7 +165574,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-02-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -165511,7 +165587,8 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/dc-multiverse-justice-league-2021-mega-steppenwolf-787926150872.jpg?v=1630354486",
@@ -165552,14 +165629,16 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2024-02-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.3,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -167875,14 +167954,15 @@
     "line": "TMNT Ultimate",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2024-01-01",
+    "releaseDate": "2023-01-01",
     "msrp": 34.99,
     "scale": "7\"",
     "demand": 1.45,
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -168227,7 +168307,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-justice-league-2021-mega-darkseid-787926150865.jpg?v=1775854233",
@@ -168307,7 +168389,9 @@
       "img:mephitsu",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://static.wixstatic.com/media/adc447_f719a4dc0a5b44ed9546b06b2b98d13c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f719a4dc0a5b44ed9546b06b2b98d13c~mv2.jpg",
@@ -171048,14 +171132,15 @@
     "line": "TMNT Ultimate",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2023-12-01",
+    "releaseDate": "2023-01-01",
     "msrp": 34.99,
     "scale": "7\"",
     "demand": 1.4,
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -171433,7 +171518,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-12-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.35,
@@ -171445,7 +171530,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "787926174830platinum",
@@ -171458,7 +171545,7 @@
     "line": "DC Multiverse Gold Label",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-12-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -171471,7 +171558,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc_multiverse-dark-nights-metal-exclusive-the-flash-earth-52-gold-label-787926151510.jpg?v=1732060212",
@@ -173947,7 +174036,7 @@
     "line": "DC Multiverse Gold Label",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-11-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -173958,7 +174047,9 @@
       "curated",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926177268"
@@ -173970,7 +174061,7 @@
     "line": "DC Multiverse Platinum",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-11-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -173981,7 +174072,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "787926173161platinum",
@@ -177251,7 +177344,7 @@
     "line": "DC Multiverse Gold Label",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-10-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.5,
@@ -177264,7 +177357,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926170214",
@@ -177327,7 +177422,7 @@
     "line": "DC Multiverse Platinum",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-10-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.3,
@@ -177339,7 +177434,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-new-52-cyborg-superman-platinum-787926170924.jpg?v=1721852897",
@@ -180613,7 +180710,7 @@
     "line": "DC Multiverse Platinum",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-09-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -180625,7 +180722,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-dc-classic-collector-edition-exclusive-wonder-woman-platinum-787926180541platinum.jpg?v=1787617702",
@@ -180961,7 +181060,7 @@
     "line": "DC Multiverse Gold Label",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-09-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.5,
@@ -180974,7 +181073,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926173437",
@@ -185218,7 +185319,7 @@
     "line": "McFarlane Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-08-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.5,
@@ -185233,7 +185334,9 @@
       "sku:japan-figure",
       "sku-gtin",
       "image-sku",
-      "imgsku:japan-figure"
+      "imgsku:japan-figure",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/Spawn-Action-Figure-Violator-Blood-Splatter-4582578265167-0.jpg?v=1730040613",
@@ -185246,7 +185349,7 @@
     "line": "DC Multiverse Platinum",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-08-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.35,
@@ -185258,7 +185361,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-flash-exclusive-batman-platinum-787926172928.jpg?v=1723447250",
@@ -185417,7 +185522,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-08-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.3,
@@ -185429,7 +185534,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": "787926153668",
@@ -188855,14 +188962,16 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-07-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.3,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -188948,7 +189057,7 @@
     "line": "McFarlane Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-07-01",
+    "releaseDate": "2025-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.55,
@@ -188961,7 +189070,8 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/spawn-digital-collectible-exclusive-spawn-1977-red-and-blue-red-platinum-787926904215.jpg?v=1762467670",
@@ -188994,7 +189104,7 @@
     "line": "DC Multiverse Platinum",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-07-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -189008,7 +189118,9 @@
       "sku-gtin",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "787926176735",
@@ -192979,14 +193091,15 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-06-01",
+    "releaseDate": "2020-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.3,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -193095,7 +193208,7 @@
     "line": "DC Multiverse Platinum",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-06-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -193116,7 +193229,9 @@
       "alias:nerdzoic",
       "alias:kitsap",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-retro-superfriends-wave-2-exclusive-superman-platinum-787926174885platinum.jpg?v=1755552480",
@@ -193315,14 +193430,15 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-06-01",
+    "releaseDate": "2024-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -198268,14 +198384,16 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-05-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.35,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": null,
@@ -198360,14 +198478,16 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-05-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.5,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -198472,7 +198592,7 @@
     "line": "DC Multiverse Platinum",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-05-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.5,
@@ -198485,7 +198605,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-golden-age-exclusive-batman-red-platinum-787926180237.jpg?v=1781043285",
@@ -202557,14 +202679,15 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-04-01",
+    "releaseDate": "2020-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.3,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -202675,7 +202798,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-04-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -202694,7 +202817,9 @@
       "sku-alias",
       "alias:staractionfigures",
       "alias:nerdzoic",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-batman-robin-baf-mr-freeze-batman-787926156369_c0b4683f-4d3a-4e64-b418-a345bcf642e0.jpg?v=1702358191",
@@ -202927,14 +203052,16 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-04-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -207175,7 +207302,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-03-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -207191,7 +207318,9 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:legendztoys",
-      "alias:kitsap"
+      "alias:kitsap",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-batman-reborn-two-face-as-batman-787926170221.jpg?v=1686694733",
@@ -207224,14 +207353,16 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-03-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.3,
     "tags": [
       "mcfarlane",
       "dc",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -207324,7 +207455,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-03-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -207336,7 +207467,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": "787926152890",
@@ -212208,7 +212340,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-02-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -212227,7 +212359,9 @@
       "alias:staractionfigures",
       "alias:kitsap",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-batman-begins-exclusive-scarecrow-red-platinum-787926173734_0d8c5983-036b-4c19-8bc5-19a889412bd6.jpg?v=1781203023",
@@ -212316,7 +212450,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-02-01",
+    "releaseDate": "2023-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -212328,7 +212462,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "787926171747",
@@ -212415,7 +212551,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2023-02-01",
+    "releaseDate": "2025-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.3,
@@ -212427,7 +212563,8 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-earth-2-society-batman-earth-2-787926174335.jpg?v=1762830293",
@@ -216429,7 +216566,9 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:solarisjapan",
-      "alias:staractionfigures"
+      "alias:staractionfigures",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-dark-knight-rises-theatrical-edition-bane-787926178913.jpg?v=1776289470",
@@ -219421,7 +219560,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2022-12-01",
+    "releaseDate": "2022-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -219434,7 +219573,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926154696",
@@ -222055,7 +222195,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2022-11-01",
+    "releaseDate": "2022-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.5,
@@ -222071,7 +222211,9 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:solarisjapan",
-      "alias:kitsap"
+      "alias:kitsap",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-collector-wave-12-deathstroke-787926173949.jpg?v=1755552455",
@@ -224825,7 +224967,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2022-10-01",
+    "releaseDate": "2022-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -224842,7 +224984,9 @@
       "alias:staractionfigures",
       "alias:hobbyfigures",
       "alias:kitsap",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926301380",
@@ -228351,7 +228495,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2022-09-01",
+    "releaseDate": "2022-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -228364,7 +228508,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-batman-knightfall-nightwing-787926171099.jpg?v=1708032955",
@@ -232585,7 +232731,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2022-08-01",
+    "releaseDate": "2022-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -232600,7 +232746,9 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:hobbyfigures"
+      "alias:hobbyfigures",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-dc-classic-batgirl-787926175615.jpg?v=1762830293",
@@ -235984,7 +236132,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2022-07-01",
+    "releaseDate": "2022-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -236000,7 +236148,9 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:hobbyfigures",
-      "alias:kitsap"
+      "alias:kitsap",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-batman-beyond-neo-gothic-batman-beyond-787926173093-platinum.jpg?v=1736583137",
@@ -240273,7 +240423,7 @@
     "line": "McFarlane Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2022-06-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.35,
@@ -240288,7 +240438,8 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:hobbyfigures"
+      "alias:hobbyfigures",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/90162-the-clown-bloody-08_logos.jpg?v=1655751646",
@@ -245026,7 +245177,7 @@
     "line": "McFarlane Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2022-05-01",
+    "releaseDate": "1995-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -245044,7 +245195,8 @@
       "sku-gtin",
       "sku-alias",
       "alias:afcollector",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/787926101263silverwing_image.gif?v=1784744418",
@@ -247944,7 +248096,7 @@
     "line": "McFarlane Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2022-04-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -247960,7 +248112,8 @@
       "imgsku:cmdstore",
       "sku-alias",
       "alias:afcollector",
-      "alias:solarisjapan"
+      "alias:solarisjapan",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/spawn-megafig-the-violator-bloody-787926901733.jpg?v=1744240089",
@@ -251211,7 +251364,7 @@
     "line": "McFarlane Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2022-03-01",
+    "releaseDate": "2022-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.5,
@@ -251224,7 +251377,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926901924",
@@ -255209,7 +255364,7 @@
     "line": "McFarlane Spawn",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2022-02-01",
+    "releaseDate": "2022-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -255220,7 +255375,9 @@
       "curated",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926901573"
@@ -258139,7 +258296,9 @@
       "alias:solarisjapan",
       "alias:toynk",
       "alias:collecticon",
-      "alias:nerdzoic"
+      "alias:nerdzoic",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/spifispse27a_image.gif?v=1704904159",
@@ -260733,7 +260892,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2021-12-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -260746,7 +260905,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926150742",
@@ -263529,7 +263690,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2021-11-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -263544,7 +263705,9 @@
       "image-bake",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:staractionfigures"
+      "alias:staractionfigures",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926152685",
@@ -266352,7 +266515,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2021-10-01",
+    "releaseDate": "2022-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -266361,7 +266524,8 @@
       "dc",
       "spawn",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN6187-2.jpg?v=1665677073",
@@ -269724,7 +269888,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2021-09-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.5,
@@ -269737,7 +269901,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926180114",
@@ -273865,7 +274031,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2021-08-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -273884,7 +274050,9 @@
       "alias:afcollector",
       "alias:legendztoys",
       "alias:nerdzoic",
-      "alias:kitsap"
+      "alias:kitsap",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-collector-wave-8-green-lantern-simon-baz-787926172676-platinum.jpg?v=1734465814",
@@ -276871,7 +277039,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2021-07-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -276887,7 +277055,9 @@
       "alias:staractionfigures",
       "alias:hobbyfigures",
       "alias:nerdzoic",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926150919dmg",
@@ -280652,7 +280822,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2021-06-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -280672,7 +280842,9 @@
       "alias:staractionfigures",
       "alias:hobbyfigures",
       "alias:nerdzoic",
-      "alias:kitsap"
+      "alias:kitsap",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-dc-classic-kid-flash-787926179934.jpg?v=1787617899",
@@ -285355,7 +285527,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2021-05-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.45,
@@ -285368,7 +285540,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926158014",
@@ -288277,7 +288451,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2021-04-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.5,
@@ -288290,7 +288464,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "887961385175",
@@ -291548,7 +291724,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2021-03-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -291561,7 +291737,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-batman-v-superman-dawn-of-justice-wonder-woman-787926156898.jpg?v=1732654158",
@@ -294872,7 +295050,7 @@
     "line": "DC Multiverse",
     "company": "mcfarlane",
     "kind": "figure",
-    "releaseDate": "2021-02-01",
+    "releaseDate": "2021-01-01",
     "msrp": 22.99,
     "scale": "7\"",
     "demand": 1.4,
@@ -294887,7 +295065,9 @@
       "image-sku",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:hobbyfigures"
+      "alias:hobbyfigures",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-hush-blister-card-superman-787926175578.jpg?v=1753231900",
@@ -379702,7 +379882,7 @@
     "line": "NECA Ultimate TMNT",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2018-02-01",
+    "releaseDate": "2018-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.5,
@@ -379714,7 +379894,9 @@
       "sku-bake",
       "sku:neca-store",
       "image-sku",
-      "imgsku:neca-store"
+      "imgsku:neca-store",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/54413_Leo13.jpg?v=1753481823",
