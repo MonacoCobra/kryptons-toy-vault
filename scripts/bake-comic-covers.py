@@ -25,7 +25,8 @@ Run-time controls (2026-10-06, after interrupted Oct 2 / Oct 5 routine runs):
     Errors and rate pauses are not recorded as misses.
   * Metron backoff is capped at METRON_BACKOFF_CAP (120s); a longer reset
     window or any 429 stops the Metron source for this run.
-  * --max-minutes is a per-source wall-clock budget; --max-requests caps
+  * --max-minutes is a per-source wall-clock budget (gaps > 10 min while
+    the box is suspended are not charged); --max-requests caps
     live HTTP requests per source (handy for tiny tests).
   * Checkout root: --root PATH or KTV_ROOT env (default
     /workspace/collection-app). Metron daily/rate counters stay shared at
@@ -76,6 +77,8 @@ STATS = SCRIPTS / "comic-cover-bake-stats.json"
 CV_KEY_FILE = Path("/home/box/.config/krypton/comicvine-api-key")
 CV_CACHE = SCRIPTS / "comic-cover-cv-cache.json"
 MISS_LIST = SCRIPTS / "comic-cover-miss-list.json"
+# A gap this long between two candidates means the process was frozen.
+SUSPEND_GAP_SECONDS = 600
 MISS_TTL_DAYS_DEFAULT = 14.0
 METRON_BACKOFF_CAP = 120  # seconds; longer waits stop the Metron source instead
 UPC_RELOAD_SECONDS = 60.0  # upc map is ~64 shards (~1s to load); refresh at most once a minute
@@ -832,7 +835,18 @@ def main() -> int:
             t0 = time.time()
             deadline = t0 + args.max_minutes * 60 if args.max_minutes > 0 else None
             upc_loaded_at = time.time()
+            last_tick = time.time()
+            frozen_s = 0.0
             for cid in per_source[src]:
+                # The box can be suspended for hours between agent sessions;
+                # do not let a frozen gap eat the --max-minutes budget.
+                now_tick = time.time()
+                gap = now_tick - last_tick
+                last_tick = now_tick
+                if deadline and gap > SUSPEND_GAP_SECONDS:
+                    frozen_s += gap
+                    deadline += gap
+                    print(f"  {src}: clock gap {gap / 60:.0f} min (box suspended?) not charged to max-minutes", flush=True)
                 if deadline and time.time() >= deadline:
                     _stop(f"{src} max-minutes {args.max_minutes:g} reached")
                     print(f"{src}: max-minutes reached", flush=True)
@@ -902,7 +916,7 @@ def main() -> int:
                 print(f"✓ {cid}: {src} {hit['coverUrl']}", flush=True)
                 if filled % 10 == 0:
                     save_json(STATS, _stats_payload())
-            source_minutes[src] = round((time.time() - t0) / 60.0, 2)
+            source_minutes[src] = round((time.time() - t0 - frozen_s) / 60.0, 2)
     finally:
         save_miss_list(misses, ttl)
         after = len(load_json(COVER_URLS, {}))
