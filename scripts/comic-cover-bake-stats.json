@@ -1,68 +1,78 @@
 {
-  "coversAfter": 5083,
-  "coversBefore": 5076,
+  "coversAfter": 5092,
+  "coversBefore": 5083,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2018/12/16/jlo-1.jpg",
-      "id": "dc-justice-league-odyssey-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9834530-cover.jpg",
+      "id": "idw-tmnt-journeys-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/09/19/6947215-01.jpg",
-      "id": "dc-shazam-world-s-mightiest-mortal-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11114/111149757/9794309-image_20250625_0001-min.jpg",
+      "id": "keen-mark-spears-monsters-fcbd-special-0",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2018/11/15/6594966-01.jpg",
-      "id": "mv-asgardians-of-galaxy-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11154/111547112/9932406-4967620744-81t7i.jpg",
+      "id": "koda-ayakashi-hunter-s-tainted-bride-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/12/28/dead-man-logan-1.jpg",
-      "id": "mv-dead-man-logan-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11135/111359134/10040200-acurtaincallforyou%231%282025%29-page1.jpg",
+      "id": "koda-curtain-call-for-you-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/18/ghost-spider-1.jpg",
-      "id": "mv-ghost-spider-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11154/111547112/9649405-1436484667-91f1e.jpg",
+      "id": "koda-dead-rock-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/07/mr-and-mrs-x-1.webp",
-      "id": "mv-mr-and-mrs-x-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111567728/9666602-8506122027-23851.jpg",
+      "id": "koda-dra-q-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/22/old-man-quill-1.jpg",
-      "id": "mv-old-man-quill-1",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9942820-wwww.jpg",
+      "id": "koda-fall-in-love-you-false-angels-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111567728/9712906-1207105763-24133.jpg",
+      "id": "koda-gaea-tima-gigantis-1",
+      "source": "cv"
+    },
+    {
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111567728/9620926-4853794338-23851.jpg",
+      "id": "koda-honeko-akabane-s-bodyguards-1",
+      "source": "cv"
     }
   ],
   "errors": 0,
-  "filled": 7,
-  "filledCv": 0,
-  "filledMetron": 7,
+  "filled": 9,
+  "filledCv": 9,
+  "filledMetron": 0,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 357,
+  "metronDailyUsed": 0,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 76,
+  "misses": 7,
   "recentMissSkips": {
-    "metron": 0
+    "cv": 135
   },
   "requests": {
-    "cv": 0,
-    "metron": 178
+    "cv": 32,
+    "metron": 0
   },
   "skipped": 0,
-  "source": "metron",
+  "source": "cv",
   "sourceMinutes": {
-    "metron": 18.04
+    "cv": 18.75
   },
-  "stoppedReason": "metron max-minutes 18 reached",
-  "updatedAt": "2026-10-12T18:29:48Z",
-  "yearBand": "2015-2019"
+  "stoppedReason": "cv max-minutes 18 reached",
+  "updatedAt": "2026-10-13T17:46:48Z",
+  "yearBand": "2020-2025"
 }
