@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T05:33:57Z",
+  "generatedAt": "2026-10-13T18:16:47Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-10-04T05:33:55.153493+00:00",
+    "after": "2026-10-06T18:16:45.688813+00:00",
     "before": null
   },
   "fetch": {
@@ -45,25 +45,25 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 28,
+    "fetchedPostCount": 29,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9547,
+    "indexedRows": 9576,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 28,
-    "acceptedCandidates": 5,
+    "fetchedPosts": 29,
+    "acceptedCandidates": 6,
     "rejectedRows": 23,
     "byCompany": {
       "hasbro": {
         "accepted": 1,
-        "rejected": 1
+        "rejected": 0
       },
       "mcfarlane": {
-        "accepted": 0,
+        "accepted": 1,
         "rejected": 0
       },
       "neca": {
@@ -108,18 +108,56 @@
       }
     },
     "byRejectReason": {
+      "sponsor-newsletter": 1,
+      "news-event-post": 5,
       "already-in-oneshot": 2,
       "company-unknown": 4,
-      "company-not-allowlisted": 12,
+      "company-not-allowlisted": 9,
       "no-new-product-identity": 1,
-      "news-event-post": 2,
-      "no-explicit-figure": 1,
-      "missing-line": 1
+      "no-explicit-figure": 1
     },
-    "applied": 3,
+    "applied": 4,
     "skippedApply": 2
   },
   "candidates": [
+    {
+      "decision": "accept",
+      "name": "Spawn",
+      "company": "mcfarlane",
+      "line": "Spawn",
+      "year": 2027,
+      "releaseWindow": "March 2027",
+      "variant": "Diablo Immortal Warlock Elite Edition",
+      "sourceUrl": "https://www.toyark.com/2026/10/13/diablo-immortal-spawn-warlock-mcfarlane-elite-edition-601361",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/McFarlane-Toys-Spawn-Warlock-006.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601361,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Diablo Immortal – Spawn Warlock McFarlane Elite Edition",
+      "rationale": "mcfarlane via class:companies-mcfarlane; line=Spawn; variant=Diablo Immortal Warlock Elite Edition; year=2027; new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "ULTRAmate Ghost Face",
+      "company": "neca",
+      "line": "Horror Ultimate",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/13/neca-ultramate-ghost-face-figure-601334",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/ULTRAmate-Ghost-Face-022.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601334,
+      "postYear": 2026,
+      "pack": null,
+      "title": "NECA ULTRAmate Ghost Face Figure",
+      "rationale": "neca via class:companies-neca; line=Horror Ultimate; year=2027; new/reveal/pre-order/official-image signal"
+    },
     {
       "decision": "accept",
       "name": "Mer-Man",
@@ -195,28 +233,63 @@
       "pack": null,
       "title": "NECA Savini Jason Voorhees and Santa Ghost Face General Pre-Orders",
       "rationale": "neca via class:companies-neca; line=NECA Ultimate; variant=Savini and Santa Ghost Face General; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Leatherface",
-      "company": "neca",
-      "line": "NECA Ultimate",
-      "year": 2027,
-      "releaseWindow": null,
-      "variant": "The Texas Chainsaw Massacre: The Beginning – Re-Release",
-      "sourceUrl": "https://www.toyark.com/2026/10/06/the-texas-chainsaw-massacre-the-beginning-neca-leatherface-re-release-599798",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-TCM-The-Beginning-Leatherface-Reissue-Preview.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599798,
-      "postYear": 2026,
-      "pack": null,
-      "title": "The Texas Chainsaw Massacre: The Beginning – NECA Leatherface Re-Release",
-      "rationale": "neca via class:companies-neca; line=NECA Ultimate; variant=The Texas Chainsaw Massacre: The Beginning – Re-Release; year=2027; new/reveal/pre-order/official-image signal"
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "sponsor-newsletter",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/13/tfsource-news-mpg-20-hot-rod-movie-masterpiece-dramatic-capture-new-legends-and-more-601379",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601379,
+      "title": "TFSource News! MPG-20 Hot Rod, Movie Masterpiece, Dramatic Capture, New Legends and More!",
+      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
+    },
+    {
+      "decision": "reject",
+      "reason": "news-event-post",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/11/nycc-2026-star-wars-panel-official-images-details-601180",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601180,
+      "title": "NYCC 2026 – Star Wars Panel Official Images & Details",
+      "rationale": "Stream / panel / reveals / roundup / news / event post ('Panel') — not a single product."
+    },
+    {
+      "decision": "reject",
+      "reason": "news-event-post",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/11/nycc-2026-marvel-legends-panel-official-images-details-601179",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601179,
+      "title": "NYCC 2026 – Marvel Legends Panel Official Images & Details",
+      "rationale": "Stream / panel / reveals / roundup / news / event post ('Panel') — not a single product."
+    },
     {
       "decision": "reject",
       "reason": "already-in-oneshot",
@@ -237,6 +310,24 @@
         "ta-883e6b41ae35"
       ],
       "rationale": "Identity key already in oneshot (ta-883e6b41ae35)."
+    },
+    {
+      "decision": "reject",
+      "reason": "news-event-post",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/09/nycc-2026-toy-and-action-figure-coverage-round-up-601332",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601332,
+      "title": "NYCC 2026 – Toy and Action Figure Coverage Round Up!",
+      "rationale": "Stream / panel / reveals / roundup / news / event post ('Round Up') — not a single product."
     },
     {
       "decision": "reject",
@@ -564,81 +655,37 @@
       "toyarkPostId": 599888,
       "title": "Prey – NECA ULTRAmate Feral Predator Preview",
       "rationale": "Company/signal present but no explicitly named figure/variant."
-    },
-    {
-      "decision": "reject",
-      "reason": "missing-line",
-      "name": "Next Wave of Hasbro Street Fighter Revealed",
-      "company": "hasbro",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/06/next-wave-of-hasbro-street-fighter-action-figures-revealed-599813",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Street-Fighter-Wave-2-Hasbro.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599813,
-      "title": "Next Wave of Hasbro Street Fighter Action Figures Revealed",
-      "rationale": "Recognizable company but no line/subline in class_list or prose."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "mattel",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/06/wwe-elite-collection-liv-morgan-and-chucky-action-figure-2-pack-599801",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599801,
-      "title": "WWE Elite Collection Liv Morgan and Chucky Action Figure 2-Pack",
-      "rationale": "Recognized mattel via class:companies-mattel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "bandai",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/05/s-h-figuarts-dragon-ball-update-goku-gohan-beerus-tien-chauzu-599759",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599759,
-      "title": "S.H. Figuarts Dragon Ball Update – Goku, Gohan, Beerus, Tien, Chauzu",
-      "rationale": "Recognized bandai via class:companies-bandai; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "shfiguarts",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/05/dragon-ball-z-s-h-figuarts-son-goku-return-to-earth-599736",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599736,
-      "title": "Dragon Ball Z – S.H. Figuarts Son Goku -Return To Earth-",
-      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     }
   ],
   "applied": [
+    {
+      "id": "ta-fb6caa693f86",
+      "name": "Spawn",
+      "company": "mcfarlane",
+      "line": "Spawn",
+      "year": 2027,
+      "variant": "Diablo Immortal Warlock Elite Edition",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/McFarlane-Toys-Spawn-Warlock-006.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/13/diablo-immortal-spawn-warlock-mcfarlane-elite-edition-601361",
+      "toyarkPostId": 601361
+    },
+    {
+      "id": "ta-115b08e42a08",
+      "name": "ULTRAmate Ghost Face",
+      "company": "neca",
+      "line": "Horror Ultimate",
+      "year": 2027,
+      "variant": null,
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/ULTRAmate-Ghost-Face-022.webp",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/13/neca-ultramate-ghost-face-figure-601334",
+      "toyarkPostId": 601334
+    },
     {
       "id": "ta-84dba502bc48",
       "name": "Bastion Nimrod",
@@ -666,20 +713,6 @@
       "aliases": [],
       "sourceUrl": "https://www.toyark.com/2026/10/07/neca-savini-jason-voorhees-and-santa-ghost-face-general-pre-orders-599891",
       "toyarkPostId": 599891
-    },
-    {
-      "id": "ta-7bf0f6dadbb92b9b",
-      "name": "Leatherface",
-      "company": "neca",
-      "line": "NECA Ultimate",
-      "year": 2027,
-      "variant": "The Texas Chainsaw Massacre: The Beginning – Re-Release",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-TCM-The-Beginning-Leatherface-Reissue-Preview.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/06/the-texas-chainsaw-massacre-the-beginning-neca-leatherface-re-release-599798",
-      "toyarkPostId": 599798
     }
   ],
   "applySkipped": [
@@ -703,11 +736,11 @@
     }
   ],
   "applyStats": {
-    "accepted": 5,
-    "applied": 3,
+    "accepted": 6,
+    "applied": 4,
     "skippedApply": 2,
-    "aliasAdded": 7,
-    "withImage": 3,
+    "aliasAdded": 12,
+    "withImage": 4,
     "cap": 50,
     "blocker": null
   }

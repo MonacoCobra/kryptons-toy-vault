@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-10-11T05:33:41.477843+00:00",
+  "bakedAt": "2026-10-13T18:16:37.950063+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-10-11T05:31:19.525678+00:00",
+      "bakedAt": "2026-10-13T18:13:34.463485+00:00",
       "line": "marvel-legends",
       "dryRun": false,
       "mephitsuCount": 1879,
@@ -140,7 +140,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-11T05:31:40.439681+00:00",
+      "bakedAt": "2026-10-13T18:14:01.502695+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 1007,
@@ -255,7 +255,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-11T05:31:49.508993+00:00",
+      "bakedAt": "2026-10-13T18:14:13.745412+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -370,7 +370,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-11T05:31:54.209643+00:00",
+      "bakedAt": "2026-10-13T18:14:19.700777+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -485,7 +485,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-11T05:32:44.051247+00:00",
+      "bakedAt": "2026-10-13T18:15:24.378419+00:00",
       "line": "mcfarlane",
       "dryRun": false,
       "mephitsuCount": 2220,
@@ -496,31 +496,31 @@
         "already": 969
       },
       "before": {
-        "total": 1425,
-        "withSku": 672,
-        "withGtin": 472,
-        "withListingPrimary": 200,
-        "withImage": 808,
-        "emptySku": 753,
-        "emptyImage": 617
+        "total": 1450,
+        "withSku": 676,
+        "withGtin": 474,
+        "withListingPrimary": 202,
+        "withImage": 810,
+        "emptySku": 774,
+        "emptyImage": 640
       },
       "after": {
-        "total": 1425,
-        "withSku": 672,
-        "withGtin": 472,
-        "withListingPrimary": 200,
-        "withImage": 826,
-        "emptySku": 753,
-        "emptyImage": 599
+        "total": 1450,
+        "withSku": 676,
+        "withGtin": 474,
+        "withListingPrimary": 202,
+        "withImage": 830,
+        "emptySku": 774,
+        "emptyImage": 620
       },
       "apply": {
-        "matched": 501,
+        "matched": 505,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 18,
-        "imagesSkipped": 24,
+        "imagesFilled": 20,
+        "imagesSkipped": 26,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 65,
+        "skippedGtinConflict": 67,
         "blockedByAudit": 26,
         "reattachedAfterEnforce": 0,
         "samples": [
@@ -599,6 +599,11 @@
         ],
         "photoVetoes": [
           {
+            "figureId": "mf8-mf-28",
+            "mephitsu": "Mr. Freeze — Gold Label DeluxeTheatrical Edition GameStop · 2026 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcfdc-mrfreeze-bar"
+          },
+          {
             "figureId": "mcf2-cyborg-gold",
             "mephitsu": "Cyborg — Target, Gold Label, Flashpoint BAF · 2023 · DC Multiverse",
             "reason": "listing_gtin_owned_by:mcfdc-cyborg-dceu"
@@ -622,12 +627,17 @@
             "figureId": "mcf-dcretro-w16-penguin-4013",
             "mephitsu": "Penguin — Target Batman Lunchbox 4-Pack · 2022 · DC Retro",
             "reason": "listing_code_audit_blocked:787926150483"
+          },
+          {
+            "figureId": "mcf-mce-w19-the-penguin-dc-classic-ce-12-penguin",
+            "mephitsu": "The Penguin 'Platinum Chase' — Platinum Edition Chase, Collector Edition · 2024 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcf4-multiverse-penguin"
           }
         ]
       }
     },
     {
-      "bakedAt": "2026-10-11T05:33:14.836970+00:00",
+      "bakedAt": "2026-10-13T18:16:03.848286+00:00",
       "line": "neca",
       "dryRun": false,
       "mephitsuCount": 1502,
@@ -638,22 +648,22 @@
         "already": 442
       },
       "before": {
-        "total": 943,
-        "withSku": 718,
+        "total": 945,
+        "withSku": 721,
         "withGtin": 332,
-        "withListingPrimary": 386,
-        "withImage": 758,
-        "emptySku": 225,
-        "emptyImage": 185
+        "withListingPrimary": 389,
+        "withImage": 761,
+        "emptySku": 224,
+        "emptyImage": 184
       },
       "after": {
-        "total": 943,
-        "withSku": 718,
+        "total": 945,
+        "withSku": 721,
         "withGtin": 332,
-        "withListingPrimary": 386,
-        "withImage": 758,
-        "emptySku": 225,
-        "emptyImage": 185
+        "withListingPrimary": 389,
+        "withImage": 761,
+        "emptySku": 224,
+        "emptyImage": 184
       },
       "apply": {
         "matched": 236,
@@ -749,7 +759,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-11T05:33:31.803503+00:00",
+      "bakedAt": "2026-10-13T18:16:25.604128+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -760,22 +770,22 @@
         "already": 68
       },
       "before": {
-        "total": 2833,
-        "withSku": 2411,
+        "total": 2834,
+        "withSku": 2414,
         "withGtin": 130,
-        "withListingPrimary": 2281,
-        "withImage": 2550,
-        "emptySku": 422,
-        "emptyImage": 283
+        "withListingPrimary": 2284,
+        "withImage": 2553,
+        "emptySku": 420,
+        "emptyImage": 281
       },
       "after": {
-        "total": 2833,
-        "withSku": 2411,
+        "total": 2834,
+        "withSku": 2414,
         "withGtin": 130,
-        "withListingPrimary": 2281,
-        "withImage": 2550,
-        "emptySku": 422,
-        "emptyImage": 283
+        "withListingPrimary": 2284,
+        "withImage": 2553,
+        "emptySku": 420,
+        "emptyImage": 281
       },
       "apply": {
         "matched": 118,
@@ -864,7 +874,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-11T05:33:32.981978+00:00",
+      "bakedAt": "2026-10-13T18:16:27.146787+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -979,7 +989,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-11T05:33:38.262201+00:00",
+      "bakedAt": "2026-10-13T18:16:34.118588+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -1094,7 +1104,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-11T05:33:41.471605+00:00",
+      "bakedAt": "2026-10-13T18:16:37.943961+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,
@@ -1208,11 +1218,5 @@
         ]
       }
     }
-  ],
-  "postBakePolicy": {
-    "imageUrl": "new-rows-only",
-    "existingRowPhotoFillsReverted": 28,
-    "gtinAssignedKept": 0,
-    "gtinUpgradedKept": 0
-  }
+  ]
 }

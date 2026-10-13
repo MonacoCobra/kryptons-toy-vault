@@ -1,21 +1,21 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-10-11T05:33:58Z",
+  "finishedAt": "2026-10-13T18:16:48Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 5,
-  "applied": 3,
+  "acceptedCandidates": 6,
+  "applied": 4,
   "skippedApply": 2,
   "rejectedRows": 23,
-  "withImage": 3,
-  "aliasAdded": 7,
+  "withImage": 4,
+  "aliasAdded": 12,
   "byCompany": {
     "hasbro": {
       "accepted": 1,
-      "rejected": 1
+      "rejected": 0
     },
     "mcfarlane": {
-      "accepted": 0,
+      "accepted": 1,
       "rejected": 0
     },
     "neca": {
@@ -60,20 +60,49 @@
     }
   },
   "byRejectReason": {
+    "sponsor-newsletter": 1,
+    "news-event-post": 5,
     "already-in-oneshot": 2,
     "company-unknown": 4,
-    "company-not-allowlisted": 12,
+    "company-not-allowlisted": 9,
     "no-new-product-identity": 1,
-    "news-event-post": 2,
-    "no-explicit-figure": 1,
-    "missing-line": 1
+    "no-explicit-figure": 1
   },
   "appliedIds": [
+    "ta-fb6caa693f86",
+    "ta-115b08e42a08",
     "ta-84dba502bc48",
-    "ta-018cda660a4c",
-    "ta-7bf0f6dadbb92b9b"
+    "ta-018cda660a4c"
   ],
   "appliedSample": [
+    {
+      "id": "ta-fb6caa693f86",
+      "name": "Spawn",
+      "company": "mcfarlane",
+      "line": "Spawn",
+      "year": 2027,
+      "variant": "Diablo Immortal Warlock Elite Edition",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/McFarlane-Toys-Spawn-Warlock-006.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/13/diablo-immortal-spawn-warlock-mcfarlane-elite-edition-601361",
+      "toyarkPostId": 601361
+    },
+    {
+      "id": "ta-115b08e42a08",
+      "name": "ULTRAmate Ghost Face",
+      "company": "neca",
+      "line": "Horror Ultimate",
+      "year": 2027,
+      "variant": null,
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/ULTRAmate-Ghost-Face-022.webp",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/13/neca-ultramate-ghost-face-figure-601334",
+      "toyarkPostId": 601334
+    },
     {
       "id": "ta-84dba502bc48",
       "name": "Bastion Nimrod",
@@ -101,20 +130,6 @@
       "aliases": [],
       "sourceUrl": "https://www.toyark.com/2026/10/07/neca-savini-jason-voorhees-and-santa-ghost-face-general-pre-orders-599891",
       "toyarkPostId": 599891
-    },
-    {
-      "id": "ta-7bf0f6dadbb92b9b",
-      "name": "Leatherface",
-      "company": "neca",
-      "line": "NECA Ultimate",
-      "year": 2027,
-      "variant": "The Texas Chainsaw Massacre: The Beginning – Re-Release",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-TCM-The-Beginning-Leatherface-Reissue-Preview.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/06/the-texas-chainsaw-massacre-the-beginning-neca-leatherface-re-release-599798",
-      "toyarkPostId": 599798
     }
   ],
   "skippedSample": [
@@ -137,7 +152,7 @@
       "toyarkPostId": 601129
     }
   ],
-  "archiveSize": 30186,
+  "archiveSize": 30190,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"
