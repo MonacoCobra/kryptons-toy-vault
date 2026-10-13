@@ -44985,6 +44985,18 @@
     ],
     "sf-mattel-creations-dc-premier-superman-action-figure-jmd69": [
       "MTJMD69"
+    ],
+    "afmon-super7-peanuts-deluxe-charlie-brown-ghost-sheet-6-inch-action-figure-sup83009t": [
+      "SUP83009T",
+      "BBTS-199595"
+    ],
+    "afmon-super7-peanuts-deluxe-snoopy-flying-ace-6-inch-action-figure-sup83010t": [
+      "SUP83010T",
+      "BBTS-199594"
+    ],
+    "afmon-mcfarlane-spawn-warlock-diablo-immortal-mcfarlane-elite-edition-23-7-inch-deluxe-act-mf16713": [
+      "MF16713",
+      "BBTS-198708"
     ]
   },
   "aliasToFigureId": {
@@ -69539,7 +69551,13 @@
     "BBTS-198996": "afmon-mcfarlane-witchblade-sara-pezzini-image-comic-founders-series-mcfarlane-elite-editio-mf18961",
     "BBTS-198791": "afmon-mcfarlane-poppy-playtime-wave-2-killy-willy-12-inch-bendable-figure-mf13954",
     "BBTS-198790": "afmon-mcfarlane-poppy-playtime-wave-2-kissy-missy-smile-12-inch-bendable-figure-mf13962",
-    "MTJMD69": "sf-mattel-creations-dc-premier-superman-action-figure-jmd69"
+    "MTJMD69": "sf-mattel-creations-dc-premier-superman-action-figure-jmd69",
+    "SUP83009T": "afmon-super7-peanuts-deluxe-charlie-brown-ghost-sheet-6-inch-action-figure-sup83009t",
+    "BBTS-199595": "afmon-super7-peanuts-deluxe-charlie-brown-ghost-sheet-6-inch-action-figure-sup83009t",
+    "SUP83010T": "afmon-super7-peanuts-deluxe-snoopy-flying-ace-6-inch-action-figure-sup83010t",
+    "BBTS-199594": "afmon-super7-peanuts-deluxe-snoopy-flying-ace-6-inch-action-figure-sup83010t",
+    "MF16713": "afmon-mcfarlane-spawn-warlock-diablo-immortal-mcfarlane-elite-edition-23-7-inch-deluxe-act-mf16713",
+    "BBTS-198708": "afmon-mcfarlane-spawn-warlock-diablo-immortal-mcfarlane-elite-edition-23-7-inch-deluxe-act-mf16713"
   },
   "collapsed": [
     {
@@ -72875,7 +72893,7 @@
       "reason": "REFUSED: distinct product GTINs. lc5 UPC 630509808366 is Lightning Collection White Ranger (AF411); hs10 UPC 630509808380 + image are S.P.D. Shadow Ranger (AF411). Character-name collision only. Shadow Ranger already exists as plc-shadow-spd."
     }
   ],
-  "updatedAt": "2026-10-11T05:33:41.421828+00:00",
+  "updatedAt": "2026-10-13T14:44:46.207712+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -73011,6 +73029,9 @@
       "dropIds": [
         "ta-86225fd3def6"
       ]
+    },
+    "afMonitor20261013": {
+      "sameBatchAliased": 3
     }
   },
   "removed": [

@@ -1,0 +1,106 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-13",
+  "updatedAt": "2026-10-13T14:44:15Z",
+  "added": 9,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Direct curl 403; listings read from rendered pages in box browser into raw.json (EE 172 / BBTS 200 cards).",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 372,
+    "ee_candidates": 43,
+    "bbts_candidates": 157,
+    "added": 12,
+    "skipped_dupes": 188,
+    "rejected_non_af": 131,
+    "unmapped_company": 41,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 30179,
+  "oneshotAfter": 30188,
+  "ee_added": 3,
+  "bbts_added": 6,
+  "samples": [
+    {
+      "sku": "MF16713",
+      "name": "Spawn Warlock Diablo Immortal McFarlane Elite Edition #23 7-Inch Deluxe Action Figure",
+      "id": "afmon-mcfarlane-spawn-warlock-diablo-immortal-mcfarlane-elite-edition-23-7-inch-deluxe-act-mf16713",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP83010T",
+      "name": "Peanuts Deluxe Snoopy Flying Ace 6-Inch Action Figure",
+      "id": "afmon-super7-peanuts-deluxe-snoopy-flying-ace-6-inch-action-figure-sup83010t",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP83009T",
+      "name": "Peanuts Deluxe Charlie Brown Ghost Sheet 6-Inch Action Figure",
+      "id": "afmon-super7-peanuts-deluxe-charlie-brown-ghost-sheet-6-inch-action-figure-sup83009t",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-199581",
+      "name": "UTAU Nendoroid Doll Kasane Teto",
+      "id": "afmon-figma-utau-nendoroid-doll-kasane-teto-bbts-199581",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199550",
+      "name": "My Hero Academia Amazing Yamaguchi Revoltech NR011 Eijiro Kirishima Action Figure (Reissue)",
+      "id": "afmon-kaiyodo-my-hero-academia-amazing-yamaguchi-revoltech-nr011-eijiro-kirishima-acti-bbts-199550",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199551",
+      "name": "My Hero Academia Amazing Yamaguchi Revoltech NR025 Shota Aizawa Action Figure (Reissue)",
+      "id": "afmon-kaiyodo-my-hero-academia-amazing-yamaguchi-revoltech-nr025-shota-aizawa-action-f-bbts-199551",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199658",
+      "name": "The Muppet Show Ultimate Gonzo with Camilla Action Figure Two-Pack",
+      "id": "afmon-neca-the-muppet-show-ultimate-gonzo-with-camilla-action-figure-two-pack-bbts-199658",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199657",
+      "name": "Elvira: Mistress of the Dark Ultimate Elvira Action Figure",
+      "id": "afmon-neca-elvira-mistress-of-the-dark-ultimate-elvira-action-figure-bbts-199657",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199595",
+      "name": "Peanuts Deluxe Charlie Brown (Ghost Sheet) Action Figure",
+      "id": "afmon-super7-peanuts-deluxe-charlie-brown-ghost-sheet-action-figure-bbts-199595",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199594",
+      "name": "Peanuts Deluxe Snoopy (Flying Ace) Action Figure",
+      "id": "afmon-super7-peanuts-deluxe-snoopy-flying-ace-action-figure-bbts-199594",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-198708",
+      "name": "Diablo Immortal McFarlane Elite Edition Spawn Warlock Deluxe Action Figure",
+      "id": "afmon-mcfarlane-diablo-immortal-mcfarlane-elite-edition-spawn-warlock-deluxe-action-fi-bbts-198708",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199596",
+      "name": "Coraline ReAction Random Figure",
+      "id": "afmon-super7-coraline-reaction-random-figure-bbts-199596",
+      "source": "bbts"
+    }
+  ],
+  "commit": null,
+  "sameBatchAliased": {
+    "BBTS-199595": "SUP83009T",
+    "BBTS-199594": "SUP83010T",
+    "BBTS-198708": "MF16713"
+  }
+}
