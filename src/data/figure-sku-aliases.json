@@ -44996,10 +44996,7 @@
     ],
     "afmon-mcfarlane-spawn-warlock-diablo-immortal-mcfarlane-elite-edition-23-7-inch-deluxe-act-mf16713": [
       "MF16713",
-      "BBTS-198708"
-    ],
-    "ta-fb6caa693f86": [
-      "id:ta-fb6caa693f86",
+      "BBTS-198708",
       "toyark:601361",
       "https://www.toyark.com/2026/10/13/diablo-immortal-spawn-warlock-mcfarlane-elite-edition-601361"
     ],
@@ -69568,9 +69565,8 @@
     "BBTS-199594": "afmon-super7-peanuts-deluxe-snoopy-flying-ace-6-inch-action-figure-sup83010t",
     "MF16713": "afmon-mcfarlane-spawn-warlock-diablo-immortal-mcfarlane-elite-edition-23-7-inch-deluxe-act-mf16713",
     "BBTS-198708": "afmon-mcfarlane-spawn-warlock-diablo-immortal-mcfarlane-elite-edition-23-7-inch-deluxe-act-mf16713",
-    "id:ta-fb6caa693f86": "ta-fb6caa693f86",
-    "toyark:601361": "ta-fb6caa693f86",
-    "https://www.toyark.com/2026/10/13/diablo-immortal-spawn-warlock-mcfarlane-elite-edition-601361": "ta-fb6caa693f86",
+    "toyark:601361": "afmon-mcfarlane-spawn-warlock-diablo-immortal-mcfarlane-elite-edition-23-7-inch-deluxe-act-mf16713",
+    "https://www.toyark.com/2026/10/13/diablo-immortal-spawn-warlock-mcfarlane-elite-edition-601361": "afmon-mcfarlane-spawn-warlock-diablo-immortal-mcfarlane-elite-edition-23-7-inch-deluxe-act-mf16713",
     "id:ta-115b08e42a08": "ta-115b08e42a08",
     "toyark:601334": "ta-115b08e42a08",
     "https://www.toyark.com/2026/10/13/neca-ultramate-ghost-face-figure-601334": "ta-115b08e42a08"
@@ -76049,6 +76045,20 @@
       "dropId": "ta-7bf0f6dadbb92b9b",
       "keepId": "ta-7bf0f6dadbb9",
       "reason": "Meph noon babysit 2026-10-08: ToyArk apply re-created NECA Ultimate Leatherface (TCM: The Beginning re-release, ToyArk post 599798) under a new id with year 2027; duplicate of ta-7bf0f6dadbb9 from the same post (added 2026-10-07). Blocklisted so ToyArk stops recreating it; release year still unverified."
+    },
+    {
+      "keepId": "afmon-mcfarlane-spawn-warlock-diablo-immortal-mcfarlane-elite-edition-23-7-inch-deluxe-act-mf16713",
+      "dropId": "ta-fb6caa693f86",
+      "canonicalSku": "MF16713",
+      "aliasesAdded": [],
+      "aliasesMoved": {
+        "toyark:601361": "afmon-mcfarlane-spawn-warlock-diablo-immortal-mcfarlane-elite-edition-23-7-inch-deluxe-act-mf16713",
+        "https://www.toyark.com/2026/10/13/diablo-immortal-spawn-warlock-mcfarlane-elite-edition-601361": "afmon-mcfarlane-spawn-warlock-diablo-immortal-mcfarlane-elite-edition-23-7-inch-deluxe-act-mf16713"
+      },
+      "aliasesDropped": [
+        "id:ta-fb6caa693f86"
+      ],
+      "reason": "Duplicate (2026-10-13): ToyArk post 601361 'Spawn - Diablo Immortal Warlock Elite Edition' (mcfarlane/Spawn/7\") is the same product as MF16713 Spawn Warlock Diablo Immortal McFarlane Elite Edition #23; added by Mephitsu noon babysit 1ed412e2."
     }
   ],
   "strippedCodes": [
