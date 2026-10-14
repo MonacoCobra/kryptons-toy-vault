@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-10-14T05:25:47Z",
+  "finishedAt": "2026-10-14T18:00:22Z",
   "mode": "apply",
   "cap": 50,
   "acceptedCandidates": 5,
   "applied": 3,
   "skippedApply": 2,
-  "rejectedRows": 24,
+  "rejectedRows": 21,
   "withImage": 3,
-  "aliasAdded": 7,
+  "aliasAdded": 9,
   "byCompany": {
     "hasbro": {
       "accepted": 1,
@@ -19,8 +19,8 @@
       "rejected": 0
     },
     "neca": {
-      "accepted": 2,
-      "rejected": 5
+      "accepted": 1,
+      "rejected": 4
     },
     "jazwares": {
       "accepted": 0,
@@ -31,7 +31,7 @@
       "rejected": 0
     },
     "hottoys": {
-      "accepted": 0,
+      "accepted": 1,
       "rejected": 0
     },
     "mondo": {
@@ -60,20 +60,36 @@
     }
   },
   "byRejectReason": {
+    "company-not-allowlisted": 9,
     "sponsor-newsletter": 1,
     "already-in-oneshot": 3,
-    "news-event-post": 5,
+    "news-event-post": 3,
     "company-unknown": 4,
-    "company-not-allowlisted": 9,
-    "no-new-product-identity": 1,
-    "no-explicit-figure": 1
+    "no-new-product-identity": 1
   },
   "appliedIds": [
+    "ta-b6957a9ccf14",
     "ta-fb6caa693f86",
-    "ta-84dba502bc48",
-    "ta-018cda660a4c"
+    "ta-84dba502bc48"
   ],
   "appliedSample": [
+    {
+      "id": "ta-b6957a9ccf14",
+      "name": "Beast",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": 2027,
+      "variant": "Avengers: Doomsday",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Avengers-Doomsday-Beast-005.jpg",
+      "aliases": [
+        "MMS920",
+        "MMS921"
+      ],
+      "sourceUrl": "https://www.toyark.com/2026/10/14/avengers-doomsday-hot-toys-beast-figure-601382",
+      "toyarkPostId": 601382
+    },
     {
       "id": "ta-fb6caa693f86",
       "name": "Spawn",
@@ -101,20 +117,6 @@
       "aliases": [],
       "sourceUrl": "https://www.toyark.com/2026/10/07/x-men-97-marvel-legends-bolivar-trask-and-bastion-nimrod-600069",
       "toyarkPostId": 600069
-    },
-    {
-      "id": "ta-018cda660a4c",
-      "name": "Jason Voorhees",
-      "company": "neca",
-      "line": "NECA Ultimate",
-      "year": 2026,
-      "variant": "Savini and Santa Ghost Face General",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-NECAPre-Orders-10.7.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/07/neca-savini-jason-voorhees-and-santa-ghost-face-general-pre-orders-599891",
-      "toyarkPostId": 599891
     }
   ],
   "skippedSample": [
@@ -137,7 +139,7 @@
       "toyarkPostId": 601129
     }
   ],
-  "archiveSize": 30240,
+  "archiveSize": 30264,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T05:25:47Z",
+  "generatedAt": "2026-10-14T18:00:22Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-10-07T05:25:45.206383+00:00",
+    "after": "2026-10-07T18:00:19.979795+00:00",
     "before": null
   },
   "fetch": {
@@ -45,18 +45,18 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 29,
+    "fetchedPostCount": 26,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9628,
+    "indexedRows": 9638,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 29,
+    "fetchedPosts": 26,
     "acceptedCandidates": 5,
-    "rejectedRows": 24,
+    "rejectedRows": 21,
     "byCompany": {
       "hasbro": {
         "accepted": 1,
@@ -67,8 +67,8 @@
         "rejected": 0
       },
       "neca": {
-        "accepted": 2,
-        "rejected": 5
+        "accepted": 1,
+        "rejected": 4
       },
       "jazwares": {
         "accepted": 0,
@@ -79,7 +79,7 @@
         "rejected": 0
       },
       "hottoys": {
-        "accepted": 0,
+        "accepted": 1,
         "rejected": 0
       },
       "mondo": {
@@ -108,18 +108,42 @@
       }
     },
     "byRejectReason": {
+      "company-not-allowlisted": 9,
       "sponsor-newsletter": 1,
       "already-in-oneshot": 3,
-      "news-event-post": 5,
+      "news-event-post": 3,
       "company-unknown": 4,
-      "company-not-allowlisted": 9,
-      "no-new-product-identity": 1,
-      "no-explicit-figure": 1
+      "no-new-product-identity": 1
     },
     "applied": 3,
     "skippedApply": 2
   },
   "candidates": [
+    {
+      "decision": "accept",
+      "name": "Beast",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": "Avengers: Doomsday",
+      "sourceUrl": "https://www.toyark.com/2026/10/14/avengers-doomsday-hot-toys-beast-figure-601382",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Avengers-Doomsday-Beast-005.jpg",
+      "aliases": [
+        "MMS920",
+        "MMS921"
+      ],
+      "codes": [
+        "MMS920",
+        "MMS921"
+      ],
+      "gtin": null,
+      "toyarkPostId": 601382,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Avengers: Doomsday – Hot Toys Beast Figure",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys MMS; variant=Avengers: Doomsday; year=2027; aliases-from-source=MMS920,MMS921; new/reveal/pre-order/official-image signal"
+    },
     {
       "decision": "accept",
       "name": "Spawn",
@@ -195,28 +219,27 @@
       "pack": null,
       "title": "X-Men ’97 Marvel Legends – Bolivar Trask and Bastion Nimrod",
       "rationale": "hasbro via class:companies-hasbro; line=Marvel Legends; variant=X-Men ’97 Marvel Legends – Bolivar Trask and; year=2027; new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Jason Voorhees",
-      "company": "neca",
-      "line": "NECA Ultimate",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "Savini and Santa Ghost Face General",
-      "sourceUrl": "https://www.toyark.com/2026/10/07/neca-savini-jason-voorhees-and-santa-ghost-face-general-pre-orders-599891",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-NECAPre-Orders-10.7.26.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599891,
-      "postYear": 2026,
-      "pack": null,
-      "title": "NECA Savini Jason Voorhees and Santa Ghost Face General Pre-Orders",
-      "rationale": "neca via class:companies-neca; line=NECA Ultimate; variant=Savini and Santa Ghost Face General; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "shfiguarts",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/14/godzilla-final-wars-s-h-monsterarts-keizer-ghidorah-601412",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601412,
+      "title": "Godzilla: Final Wars – S.H. MonsterArts Keizer Ghidorah",
+      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
     {
       "decision": "reject",
       "reason": "sponsor-newsletter",
@@ -585,81 +608,26 @@
       "toyarkPostId": 599776,
       "title": "NYCC 2026 – Mattel DC Comics Collector Line Reveal!",
       "rationale": "Recognized mattel via class:companies-mattel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "news-event-post",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/07/nycc-2026-hasbro-event-marvel-legends-display-599751",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599751,
-      "title": "NYCC 2026 – Hasbro Event Marvel Legends Display",
-      "rationale": "Stream / panel / reveals / roundup / news / event post ('Event') — not a single product."
-    },
-    {
-      "decision": "reject",
-      "reason": "news-event-post",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/07/nycc-2026-hasbro-event-star-wars-display-599755",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599755,
-      "title": "NYCC 2026 – Hasbro Event Star Wars Display",
-      "rationale": "Stream / panel / reveals / roundup / news / event post ('Event') — not a single product."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "other",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/07/dc-comics-inart-dark-knight-returns-batman-pre-order-599901",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599901,
-      "title": "DC Comics – InArt Dark Knight Returns Batman Pre-Order",
-      "rationale": "Recognized other via class:companies-queen-studios; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "no-explicit-figure",
-      "name": null,
-      "company": "neca",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/07/prey-neca-ultramate-feral-predator-preview-599888",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/NECA-ULTRAmate-Feral-Predator-Preview.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 599888,
-      "title": "Prey – NECA ULTRAmate Feral Predator Preview",
-      "rationale": "Company/signal present but no explicitly named figure/variant."
     }
   ],
   "applied": [
+    {
+      "id": "ta-b6957a9ccf14",
+      "name": "Beast",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": 2027,
+      "variant": "Avengers: Doomsday",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Avengers-Doomsday-Beast-005.jpg",
+      "aliases": [
+        "MMS920",
+        "MMS921"
+      ],
+      "sourceUrl": "https://www.toyark.com/2026/10/14/avengers-doomsday-hot-toys-beast-figure-601382",
+      "toyarkPostId": 601382
+    },
     {
       "id": "ta-fb6caa693f86",
       "name": "Spawn",
@@ -687,20 +655,6 @@
       "aliases": [],
       "sourceUrl": "https://www.toyark.com/2026/10/07/x-men-97-marvel-legends-bolivar-trask-and-bastion-nimrod-600069",
       "toyarkPostId": 600069
-    },
-    {
-      "id": "ta-018cda660a4c",
-      "name": "Jason Voorhees",
-      "company": "neca",
-      "line": "NECA Ultimate",
-      "year": 2026,
-      "variant": "Savini and Santa Ghost Face General",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-NECAPre-Orders-10.7.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/07/neca-savini-jason-voorhees-and-santa-ghost-face-general-pre-orders-599891",
-      "toyarkPostId": 599891
     }
   ],
   "applySkipped": [
@@ -727,7 +681,7 @@
     "accepted": 5,
     "applied": 3,
     "skippedApply": 2,
-    "aliasAdded": 7,
+    "aliasAdded": 9,
     "withImage": 3,
     "cap": 50,
     "blocker": null
