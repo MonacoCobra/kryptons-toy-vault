@@ -1368,6 +1368,29 @@ class DumpIngestTest(unittest.TestCase):
 
 
 
+class DatedEditionSplitTest(unittest.TestCase):
+    def test_collected_dated_edition_becomes_own_series(self):
+        self.assertEqual(
+            ingest.split_dated_edition("Absolute Daytripper", "Absolute Daytripper #[nn]", "hc", "2026 Edition"),
+            ("Absolute Daytripper [2026 Edition]", "Absolute Daytripper [2026 Edition] #[nn]", ""),
+        )
+        self.assertEqual(ingest.split_dated_edition("X", "X #1", "tpb", "2009 Printing")[0], "X [2009 Printing]")
+
+    def test_singles_facsimiles_and_plain_variants_untouched(self):
+        self.assertEqual(ingest.split_dated_edition("Y", "Y #1", "single", "2026 Printing"), ("Y", "Y #1", "2026 Printing"))
+        self.assertEqual(ingest.split_dated_edition("Y", "Y #1", "facsimile", "2025 Edition")[2], "2025 Edition")
+        self.assertEqual(ingest.split_dated_edition("Y", "Y #1", "tpb", "Direct Market Edition"), ("Y", "Y #1", "Direct Market Edition"))
+
+    def test_build_row_writes_split_series(self):
+        row = ingest.build_row("dc-x-nn-2026-edition", {
+            "series": "X Deluxe", "publisher": "DC Comics", "issue": "[nn]", "coverDate": "2026-01-01",
+            "format": "hc", "variantName": "2026 Edition", "familyLocked": True, "msrp": 9.99,
+        }, {})
+        self.assertEqual(row[1], "X Deluxe [2026 Edition]")
+        self.assertEqual(row[7], "X Deluxe [2026 Edition] #[nn]")
+        self.assertNotIn("variant", row[13] if len(row) > 13 and isinstance(row[13], dict) else {})
+
+
 class VolumeAwarePresenceTest(unittest.TestCase):
     """gcdIssueId first; series|issue|publisher only within the same GCD volume."""
 

@@ -1614,6 +1614,24 @@ def gate_reason(
     return None
 
 
+# Collected-format reprint printings ("2024 Edition", "2026 Printing") are their
+# own books, not covers of the original. Write them as a bracketed edition
+# series (e.g. "Absolute Daytripper [2026 Edition]") with no variant, so the
+# Collected Editions view does not fold them into the original printing.
+COLLECTED_EDITION_FORMATS = frozenset({"tpb", "hc", "omnibus"})
+_DATED_EDITION_RE = re.compile(r"\b(?:19|20)\d\d\b.*\b(?:edition|printing)\b", re.I)
+
+
+def split_dated_edition(series: str, title: str, fmt: str, variant: str | None) -> tuple[str, str, str]:
+    """Return (series, title, variant) with a dated collected printing split out."""
+    v = (variant or "").strip()
+    if fmt not in COLLECTED_EDITION_FORMATS or not v or not _DATED_EDITION_RE.search(v):
+        return series, title, v
+    new_series = f"{series} [{v}]"
+    new_title = new_series + title[len(series):] if title.startswith(series) else title
+    return new_series, new_title, ""
+
+
 def build_row(catalog_id: str, parsed: dict, existing_meta: dict[str, dict]) -> list:
     if parsed.get("familyLocked") or parsed.get("seriesCanonDone"):
         # Already canonicalized (and volume-labeled) upstream; re-running canon
@@ -1639,9 +1657,12 @@ def build_row(catalog_id: str, parsed: dict, existing_meta: dict[str, dict]) -> 
     palette = locg.PALETTES.get(
         locg.publisher_prefix(publisher), locg.PALETTES.get(prefix, locg.DEFAULT_PALETTE)
     )
+    series, title, variant_name = split_dated_edition(
+        series, title, fmt, str(parsed.get("variantName") or "")
+    )
     extra: dict[str, str] = {}
-    if parsed.get("variantName"):
-        extra["variant"] = str(parsed["variantName"])
+    if variant_name:
+        extra["variant"] = variant_name
     code = parsed.get("upc") or parsed.get("isbn")
     if code:
         extra["upc"] = code
