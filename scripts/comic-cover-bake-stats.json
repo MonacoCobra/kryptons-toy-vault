@@ -1,73 +1,303 @@
 {
-  "coversAfter": 5266,
-  "coversBefore": 5258,
+  "coversAfter": 5320,
+  "coversBefore": 5266,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11131/111315513/9804452-iwanttoloveyou.jpg",
-      "id": "koda-i-want-to-love-you-till-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/08/fba047a4b70c4df7b0d0465ceec79d8f.jpg",
+      "id": "dc-batman-2016-159-924",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10079911-wwww.jpg",
-      "id": "koda-issak-omnibus-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/08/f15881ae5906419f959ed6444e6878f8.jpg",
+      "id": "dc-batman-2016-160-925",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111567728/9803514-6417618373-24422.jpg",
-      "id": "koda-last-samurai-standing-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/27/4a7d125b9ad7491eb4ac3a677aec0a5a.jpg",
+      "id": "dc-batman-2016-161-926",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111567728/9936554-1022259470-24842.jpg",
-      "id": "koda-magnificent-bastard-legend-of-keiji-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/07/d077644734c44114a73b475754ecb476.jpg",
+      "id": "dc-batman-brave-and-bold-19",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11188/111888298/9916330-mushishicollector%E2%80%99sedition%2Cvol.1.jpg",
-      "id": "koda-mushishi-collector-s-edition-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/21/9dc3439dd95f4ce584700f74c8aae5f1.jpg",
+      "id": "dc-batman-brave-and-bold-20",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11154/111547112/9965658-3059116964-91lPI.jpg",
-      "id": "koda-nezumi-s-first-love-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/08/63a4fb1ff3e5491ba21f36a5a839606f.jpg",
+      "id": "dc-batman-dark-patterns-10",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10175330-wwww.jpg",
-      "id": "koda-omega-megaera-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/12/b3d12f24ace34f43b6455e8eaa248ce7.jpg",
+      "id": "dc-batman-dark-patterns-11",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10128665-wwww.jpg",
-      "id": "koda-senpai-is-otokonoko-my-crossdressing-classmate-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/dad37d95f0cd46f19339d632c845eff0.jpg",
+      "id": "dc-batman-dark-patterns-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/17/a24aacec573e44a7b5a0389b94e56701.jpg",
+      "id": "dc-batman-dark-patterns-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/28/9f4b147e20c144d88e4569982d59266f.jpg",
+      "id": "dc-batman-dark-patterns-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/b75a719b64f44806861e6764f5a8f9e6.jpg",
+      "id": "dc-batman-dark-patterns-5",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/21/653de6eee92d4ee08a10180000df07b4.jpg",
+      "id": "dc-batman-dark-patterns-6",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/23/a4acd4a1e3f545cabc75140e07824949.jpg",
+      "id": "dc-batman-dark-patterns-7",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/16/e3d529cf3669447ab8332b293cd53ba2.jpg",
+      "id": "dc-batman-dark-patterns-8",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/19/14b293e1996b407fb2201ff9dee57665.jpg",
+      "id": "dc-batman-dark-patterns-9",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/19/ce4a01ac32d0464baa07d197846de347.jpg",
+      "id": "dc-batman-full-moon-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/65a69a3b32814b499595c03688d1ff61.jpg",
+      "id": "dc-batman-full-moon-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/ecf0ee6d1cb94f6b99fc156758cdd713.jpg",
+      "id": "dc-batman-gargoyle-of-gotham-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/19/2959da9f6c344056adb56e59b1177aa7.jpg",
+      "id": "dc-batman-gotham-by-gaslight-league-for-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/15/ee3a6dacb48541b3a00977018ca2ce6d.jpg",
+      "id": "dc-batman-gotham-by-gaslight-league-for-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/17/3a58b7c06c954d618642fa542807c0a1.jpg",
+      "id": "dc-batman-off-world-6",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/10/27/a906f2dc74ac4c50bf3163092d349df4.jpg",
+      "id": "dc-batman-robin-2009-2025-15",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/f45826a9a26742a781d85b3e14747b3e.jpg",
+      "id": "dc-batman-robin-2009-2025-16",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/bfe30cabe38c44bbb060a5789ee2d3f7.jpg",
+      "id": "dc-batman-robin-2009-2025-17",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/17/f45e0ee306db4ae8a66f70dde283f8fe.jpg",
+      "id": "dc-batman-robin-2009-2025-18",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2020/07/27/batman-robin-v2-19.jpg",
+      "id": "dc-batman-robin-2009-2025-19",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2020/07/27/batman-robin-v2-20.jpg",
+      "id": "dc-batman-robin-2009-2025-20",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2020/07/27/batman-robin-v2-21.jpg",
+      "id": "dc-batman-robin-2009-2025-21",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2020/07/27/batman-robin-v2-22.jpg",
+      "id": "dc-batman-robin-2009-2025-22",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2020/07/27/batman-robin-v2-23.jpg",
+      "id": "dc-batman-robin-2009-2025-23",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2020/07/27/batman-robin-v2-24.jpg",
+      "id": "dc-batman-robin-2009-2025-24",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2020/07/27/batman-robin-v2-25.jpg",
+      "id": "dc-batman-robin-2009-2025-25",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2020/07/27/batman-robin-v2-26.jpg",
+      "id": "dc-batman-robin-2009-2025-26",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/07/b811deb953dc4627b80dcda533499f95.jpg",
+      "id": "dc-batman-santa-claus-silent-knight-returns-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/07/6a99faeb6d55455e9ae7f1bffbd6f43d.jpg",
+      "id": "dc-batman-santa-claus-silent-knight-returns-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/50458593b56a4927a99df6602a4c3cd2.jpg",
+      "id": "dc-batman-santa-claus-silent-knight-returns-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/271071a005a64d96aca4c4e77cc4b107.jpg",
+      "id": "dc-batman-santa-claus-silent-knight-returns-5",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/10/27/facf5f558f814f988ba5185b43880e45.jpg",
+      "id": "dc-batman-superman-world-s-finest-33",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/6139eca0f36947e2ae4de4fbb9f5db9c.jpg",
+      "id": "dc-batman-superman-world-s-finest-34",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/03/2acd0c1b651a45d4bc205e70b7c99516.jpg",
+      "id": "dc-batman-superman-world-s-finest-35",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/bc16fcad5b854e7b85774ddaba112373.jpg",
+      "id": "dc-batman-superman-world-s-finest-36",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/01/4b46068cf64c4d76945c39414db81ff3.jpg",
+      "id": "dc-batman-superman-world-s-finest-37",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/21286bac5819418cbcd42d74d7181e3c.jpg",
+      "id": "dc-batman-superman-world-s-finest-38",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/26/6919b65ae70848f3ac847d149dc6eb7e.jpg",
+      "id": "dc-batman-superman-world-s-finest-39",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/23/15c18910e3b34c6aa5f371d1385921e8.jpg",
+      "id": "dc-batman-superman-world-s-finest-40",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/19/7fc580326ad74596831c6a209b4ada8c.jpg",
+      "id": "dc-batman-superman-world-s-finest-41",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/26/2b58bac516674171ae90c4841caba991.jpg",
+      "id": "dc-batman-superman-world-s-finest-42",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/22/6bc5c65c12c148f5b78a3be6a4d22962.jpg",
+      "id": "dc-batman-superman-world-s-finest-43",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/29/be804776c898499a88dd9dee67e8e7c6.jpg",
+      "id": "dc-batman-superman-world-s-finest-44",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/a03647a4f7834b75998703cb5b9907db.jpg",
+      "id": "dc-black-canary-best-of-best-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/03/0db1dd55410d4934ac37ae579e444b94.jpg",
+      "id": "dc-black-canary-best-of-best-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/241cf3fd24cf41fca15e5f8d88ae3984.jpg",
+      "id": "dc-black-canary-best-of-best-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/01/31f4f000ff4247c79b9695a93e056f95.jpg",
+      "id": "dc-black-canary-best-of-best-5",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/08/5fd5857670764eefac5ceefee66527df.jpg",
+      "id": "dc-black-canary-best-of-best-6",
+      "source": "metron"
     }
   ],
   "errors": 0,
-  "filled": 8,
-  "filledCv": 8,
-  "filledMetron": 0,
+  "filled": 54,
+  "filledCv": 0,
+  "filledMetron": 54,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 821,
+  "metronDailyUsed": 961,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 8,
+  "misses": 14,
   "recentMissSkips": {
-    "cv": 142
+    "metron": 320
   },
   "requests": {
-    "cv": 32,
-    "metron": 0
+    "cv": 0,
+    "metron": 140
   },
   "skipped": 0,
-  "source": "cv",
+  "source": "metron",
   "sourceMinutes": {
-    "cv": 18.62
+    "metron": 18.14
   },
-  "stoppedReason": "cv max-minutes 18 reached",
-  "updatedAt": "2026-10-14T17:36:49Z",
+  "stoppedReason": "metron max-minutes 18 reached",
+  "updatedAt": "2026-10-14T17:55:26Z",
   "yearBand": "2020-2025"
 }
