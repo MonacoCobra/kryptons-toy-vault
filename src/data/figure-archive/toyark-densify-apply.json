@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T18:16:47Z",
+  "generatedAt": "2026-10-14T05:25:47Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-10-06T18:16:45.688813+00:00",
+    "after": "2026-10-07T05:25:45.206383+00:00",
     "before": null
   },
   "fetch": {
@@ -50,13 +50,13 @@
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9576,
+    "indexedRows": 9628,
     "mode": "apply"
   },
   "summary": {
     "fetchedPosts": 29,
-    "acceptedCandidates": 6,
-    "rejectedRows": 23,
+    "acceptedCandidates": 5,
+    "rejectedRows": 24,
     "byCompany": {
       "hasbro": {
         "accepted": 1,
@@ -67,8 +67,8 @@
         "rejected": 0
       },
       "neca": {
-        "accepted": 3,
-        "rejected": 4
+        "accepted": 2,
+        "rejected": 5
       },
       "jazwares": {
         "accepted": 0,
@@ -109,14 +109,14 @@
     },
     "byRejectReason": {
       "sponsor-newsletter": 1,
+      "already-in-oneshot": 3,
       "news-event-post": 5,
-      "already-in-oneshot": 2,
       "company-unknown": 4,
       "company-not-allowlisted": 9,
       "no-new-product-identity": 1,
       "no-explicit-figure": 1
     },
-    "applied": 4,
+    "applied": 3,
     "skippedApply": 2
   },
   "candidates": [
@@ -138,25 +138,6 @@
       "pack": null,
       "title": "Diablo Immortal – Spawn Warlock McFarlane Elite Edition",
       "rationale": "mcfarlane via class:companies-mcfarlane; line=Spawn; variant=Diablo Immortal Warlock Elite Edition; year=2027; new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "ULTRAmate Ghost Face",
-      "company": "neca",
-      "line": "Horror Ultimate",
-      "year": 2027,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/13/neca-ultramate-ghost-face-figure-601334",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/ULTRAmate-Ghost-Face-022.webp",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601334,
-      "postYear": 2026,
-      "pack": null,
-      "title": "NECA ULTRAmate Ghost Face Figure",
-      "rationale": "neca via class:companies-neca; line=Horror Ultimate; year=2027; new/reveal/pre-order/official-image signal"
     },
     {
       "decision": "accept",
@@ -253,6 +234,27 @@
       "toyarkPostId": 601379,
       "title": "TFSource News! MPG-20 Hot Rod, Movie Masterpiece, Dramatic Capture, New Legends and More!",
       "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
+    },
+    {
+      "decision": "reject",
+      "reason": "already-in-oneshot",
+      "name": "ULTRAmate Ghost Face",
+      "company": "neca",
+      "line": "Horror Ultimate",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/13/neca-ultramate-ghost-face-figure-601334",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/ULTRAmate-Ghost-Face-022.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601334,
+      "title": "NECA ULTRAmate Ghost Face Figure",
+      "oneshotIds": [
+        "ta-115b08e42a08"
+      ],
+      "rationale": "Identity key already in oneshot (ta-115b08e42a08)."
     },
     {
       "decision": "reject",
@@ -673,20 +675,6 @@
       "toyarkPostId": 601361
     },
     {
-      "id": "ta-115b08e42a08",
-      "name": "ULTRAmate Ghost Face",
-      "company": "neca",
-      "line": "Horror Ultimate",
-      "year": 2027,
-      "variant": null,
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/ULTRAmate-Ghost-Face-022.webp",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/13/neca-ultramate-ghost-face-figure-601334",
-      "toyarkPostId": 601334
-    },
-    {
       "id": "ta-84dba502bc48",
       "name": "Bastion Nimrod",
       "company": "hasbro",
@@ -736,11 +724,11 @@
     }
   ],
   "applyStats": {
-    "accepted": 6,
-    "applied": 4,
+    "accepted": 5,
+    "applied": 3,
     "skippedApply": 2,
-    "aliasAdded": 12,
-    "withImage": 4,
+    "aliasAdded": 7,
+    "withImage": 3,
     "cap": 50,
     "blocker": null
   }

@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-10-13T18:16:48Z",
+  "finishedAt": "2026-10-14T05:25:47Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 6,
-  "applied": 4,
+  "acceptedCandidates": 5,
+  "applied": 3,
   "skippedApply": 2,
-  "rejectedRows": 23,
-  "withImage": 4,
-  "aliasAdded": 12,
+  "rejectedRows": 24,
+  "withImage": 3,
+  "aliasAdded": 7,
   "byCompany": {
     "hasbro": {
       "accepted": 1,
@@ -19,8 +19,8 @@
       "rejected": 0
     },
     "neca": {
-      "accepted": 3,
-      "rejected": 4
+      "accepted": 2,
+      "rejected": 5
     },
     "jazwares": {
       "accepted": 0,
@@ -61,8 +61,8 @@
   },
   "byRejectReason": {
     "sponsor-newsletter": 1,
+    "already-in-oneshot": 3,
     "news-event-post": 5,
-    "already-in-oneshot": 2,
     "company-unknown": 4,
     "company-not-allowlisted": 9,
     "no-new-product-identity": 1,
@@ -70,7 +70,6 @@
   },
   "appliedIds": [
     "ta-fb6caa693f86",
-    "ta-115b08e42a08",
     "ta-84dba502bc48",
     "ta-018cda660a4c"
   ],
@@ -88,20 +87,6 @@
       "aliases": [],
       "sourceUrl": "https://www.toyark.com/2026/10/13/diablo-immortal-spawn-warlock-mcfarlane-elite-edition-601361",
       "toyarkPostId": 601361
-    },
-    {
-      "id": "ta-115b08e42a08",
-      "name": "ULTRAmate Ghost Face",
-      "company": "neca",
-      "line": "Horror Ultimate",
-      "year": 2027,
-      "variant": null,
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/ULTRAmate-Ghost-Face-022.webp",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/13/neca-ultramate-ghost-face-figure-601334",
-      "toyarkPostId": 601334
     },
     {
       "id": "ta-84dba502bc48",
@@ -152,7 +137,7 @@
       "toyarkPostId": 601129
     }
   ],
-  "archiveSize": 30190,
+  "archiveSize": 30240,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"
