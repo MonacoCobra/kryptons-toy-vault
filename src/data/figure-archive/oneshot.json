@@ -78016,7 +78016,7 @@
     "line": "Mortal Kombat",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2025-09-01",
+    "releaseDate": "2023-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.2,
@@ -78027,7 +78027,8 @@
       "sku:hobbyfigures",
       "image-sku",
       "image-bake",
-      "imgsku:hobbyfigures"
+      "imgsku:hobbyfigures",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "sku": "STORM87239",
@@ -82147,13 +82148,15 @@
     "line": "Mortal Kombat",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2025-08-01",
+    "releaseDate": "2025-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.25,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -86367,13 +86370,15 @@
     "line": "Mortal Kombat",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2025-07-01",
+    "releaseDate": "2025-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.35,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -100208,13 +100213,15 @@
     "line": "Mortal Kombat",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2025-06-01",
+    "releaseDate": "2025-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.35,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -105285,7 +105292,7 @@
     "line": "Mortal Kombat",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2025-05-01",
+    "releaseDate": "2025-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.4,
@@ -105296,7 +105303,9 @@
       "sku:toydojo",
       "image-sku",
       "image-bake",
-      "imgsku:toydojo"
+      "imgsku:toydojo",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": "STM87112",
@@ -107773,7 +107782,7 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2025-04-01",
+    "releaseDate": "2025-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.35,
@@ -107786,7 +107795,9 @@
       "image-sku",
       "imgsku:toyarena",
       "sku-alias",
-      "alias:hobbyfigures"
+      "alias:hobbyfigures",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4897072872385b.webp?v=1706898291",
@@ -119056,7 +119067,7 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2025-03-01",
+    "releaseDate": "2025-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.35,
@@ -119067,7 +119078,9 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/4897072871111.JPG?v=1571609334",
@@ -122277,13 +122290,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2025-02-01",
+    "releaseDate": "2025-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.25,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -125082,13 +125097,14 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2025-01-01",
+    "releaseDate": "2022-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.35,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null
@@ -125170,7 +125186,9 @@
     "demand": 1.3,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -127241,7 +127259,7 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2024-12-01",
+    "releaseDate": "2022-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.3,
@@ -127252,7 +127270,8 @@
       "sku:planet-af",
       "image-sku",
       "image-bake",
-      "imgsku:planet-af"
+      "imgsku:planet-af",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": "SUP7-UL-THUN-12249",
@@ -127265,13 +127284,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2024-12-01",
+    "releaseDate": "2024-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.2,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -131712,13 +131733,15 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2024-11-01",
+    "releaseDate": "2024-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.35,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -131750,13 +131773,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2024-11-01",
+    "releaseDate": "2024-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.2,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -134467,7 +134492,7 @@
     "line": "Super7 ReAction",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2024-10-01",
+    "releaseDate": "2024-01-01",
     "msrp": 18.0,
     "scale": "3.75\"",
     "demand": 1.4,
@@ -134478,7 +134503,9 @@
       "sku:cooltoyden",
       "image-sku",
       "image-bake",
-      "imgsku:cooltoyden"
+      "imgsku:cooltoyden",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "APR2021CPC",
@@ -134518,13 +134545,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2024-10-01",
+    "releaseDate": "2024-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.25,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -139342,13 +139371,15 @@
     "line": "Super7 ReAction",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2024-09-01",
+    "releaseDate": "2024-01-01",
     "msrp": 18.0,
     "scale": "3.75\"",
     "demand": 1.35,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -139361,13 +139392,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2024-09-01",
+    "releaseDate": "2024-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.25,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -143345,7 +143378,7 @@
     "line": "Super7 ReAction",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2024-08-01",
+    "releaseDate": "2024-01-01",
     "msrp": 18.0,
     "scale": "3.75\"",
     "demand": 1.4,
@@ -143356,7 +143389,9 @@
       "sku-bake",
       "sku:cooltoyden",
       "image-sku",
-      "imgsku:cooltoyden"
+      "imgsku:cooltoyden",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0144/1798/5584/products/51bYffygsaL.jpg?v=1549073305",
@@ -143369,13 +143404,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2024-08-01",
+    "releaseDate": "2024-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.3,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -146708,13 +146745,15 @@
     "line": "Super7 ReAction",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2024-07-01",
+    "releaseDate": "2024-01-01",
     "msrp": 18.0,
     "scale": "3.75\"",
     "demand": 1.35,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -146806,13 +146845,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2024-07-01",
+    "releaseDate": "2024-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.25,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -149900,7 +149941,7 @@
     "line": "Super7 ReAction",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2024-06-01",
+    "releaseDate": "2024-01-01",
     "msrp": 18.0,
     "scale": "3.75\"",
     "demand": 1.4,
@@ -149911,7 +149952,9 @@
       "sku-bake",
       "sku:staractionfigures",
       "image-sku",
-      "imgsku:staractionfigures"
+      "imgsku:staractionfigures",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/1080/5369/2754/files/tran-08789-1.jpg?v=1781090429",
@@ -150082,14 +150125,16 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2024-06-01",
+    "releaseDate": "2024-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.3,
     "tags": [
       "storm",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0457/3561/files/DSC_2921_1.jpg?v=1704439805",
@@ -154676,13 +154721,15 @@
     "line": "Super7 ReAction",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2024-05-01",
+    "releaseDate": "2024-01-01",
     "msrp": 18.0,
     "scale": "3.75\"",
     "demand": 1.3,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -154695,13 +154742,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2024-05-01",
+    "releaseDate": "2024-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.2,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -157539,14 +157588,16 @@
     "line": "Super7 ReAction",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2024-04-01",
+    "releaseDate": "2024-01-01",
     "msrp": 18.0,
     "scale": "3.75\"",
     "demand": 1.3,
     "tags": [
       "super7",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN7060-443.jpg?v=1687124869",
@@ -157620,13 +157671,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2024-04-01",
+    "releaseDate": "2024-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.2,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -160470,13 +160523,15 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2024-03-01",
+    "releaseDate": "2024-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.45,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -160586,13 +160641,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2024-03-01",
+    "releaseDate": "2024-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.2,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -164748,13 +164805,15 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2024-02-01",
+    "releaseDate": "2024-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.45,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -164814,13 +164873,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2024-02-01",
+    "releaseDate": "2024-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.2,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -167651,7 +167712,9 @@
     "demand": 1.5,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -170751,7 +170814,7 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2023-12-01",
+    "releaseDate": "2023-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.4,
@@ -170762,7 +170825,9 @@
       "sku:hobbyfigures",
       "image-sku",
       "image-bake",
-      "imgsku:hobbyfigures"
+      "imgsku:hobbyfigures",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "SUP7-UL-TMNT-07730",
@@ -170818,13 +170883,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2023-12-01",
+    "releaseDate": "2023-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.2,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -173565,13 +173632,15 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2023-11-01",
+    "releaseDate": "2023-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.45,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -173584,13 +173653,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2023-11-01",
+    "releaseDate": "2023-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.2,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -176486,13 +176557,15 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2023-10-01",
+    "releaseDate": "2023-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.3,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -176545,13 +176618,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2023-10-01",
+    "releaseDate": "2023-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.15,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -179980,7 +180055,7 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2023-09-01",
+    "releaseDate": "2023-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.35,
@@ -179988,7 +180063,9 @@
       "super7",
       "curated",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://static.wixstatic.com/media/adc447_0fb4e6b746c64fba9d9235661d4551c1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0fb4e6b746c64fba9d9235661d4551c1~mv2.jpg",
@@ -184430,13 +184507,15 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2023-08-01",
+    "releaseDate": "2023-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.4,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -188379,13 +188458,15 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2023-07-01",
+    "releaseDate": "2023-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.5,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -188398,13 +188479,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2023-07-01",
+    "releaseDate": "2023-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.2,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -191916,7 +191999,7 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2023-06-01",
+    "releaseDate": "2022-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.3,
@@ -191927,7 +192010,8 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": "SUP810686",
@@ -192029,13 +192113,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2023-06-01",
+    "releaseDate": "2023-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.2,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -197917,7 +198003,7 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2023-05-01",
+    "releaseDate": "2021-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.35,
@@ -197928,7 +198014,8 @@
       "sku:planet-af",
       "image-sku",
       "image-bake",
-      "imgsku:planet-af"
+      "imgsku:planet-af",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": "SUP7-UL-THUN-12149",
@@ -198001,13 +198088,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2023-05-01",
+    "releaseDate": "2023-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.25,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -201965,13 +202054,14 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2023-04-01",
+    "releaseDate": "2023-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.3,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -202008,13 +202098,15 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2023-04-01",
+    "releaseDate": "2023-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.3,
     "tags": [
       "storm",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -206531,13 +206623,14 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2023-03-01",
+    "releaseDate": "2024-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.25,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -206699,7 +206792,7 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2023-03-01",
+    "releaseDate": "2018-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.3,
@@ -206710,7 +206803,8 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/4897072870633.jpg?v=1571609275",
@@ -211733,13 +211827,14 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2023-02-01",
+    "releaseDate": "2020-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.4,
     "tags": [
       "super7",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -211771,7 +211866,7 @@
     "line": "Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2023-02-01",
+    "releaseDate": "2018-01-01",
     "msrp": 90.0,
     "scale": "1:12",
     "demand": 1.35,
@@ -211782,7 +211877,8 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/4897072870626.jpg?v=1571609275",
@@ -307328,14 +307424,16 @@
     "line": "Storm Special",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2020-09-01",
+    "releaseDate": "2020-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -311277,14 +311375,16 @@
     "line": "Storm Special",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2020-08-01",
+    "releaseDate": "2020-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -313976,14 +314076,16 @@
     "line": "Storm Special",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2020-07-01",
+    "releaseDate": "2020-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -316891,14 +316993,16 @@
     "line": "Storm Special",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2020-06-01",
+    "releaseDate": "2020-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -321412,14 +321516,16 @@
     "line": "Storm Special",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2020-05-01",
+    "releaseDate": "2020-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.45,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -324062,14 +324168,16 @@
     "line": "Storm Special",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2020-04-01",
+    "releaseDate": "2020-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.45,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -326667,14 +326775,16 @@
     "line": "Storm Special",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2020-03-01",
+    "releaseDate": "2020-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.45,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -329746,14 +329856,16 @@
     "line": "Storm Special",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2020-02-01",
+    "releaseDate": "2020-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -332577,7 +332689,9 @@
       "storm",
       "fighting-game",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0457/3561/products/DSC_6124_1.jpg?v=1665414482",
@@ -334829,14 +334943,16 @@
     "line": "Storm Special",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2019-12-01",
+    "releaseDate": "2019-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.55,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -337013,14 +337129,16 @@
     "line": "Storm Special",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2019-11-01",
+    "releaseDate": "2019-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.55,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -339183,7 +339301,7 @@
     "line": "Storm Special",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2019-10-01",
+    "releaseDate": "2019-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.55,
@@ -339191,7 +339309,9 @@
       "storm",
       "fighting-game",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0457/3561/products/DSC_9998_2.jpg?v=1534504486",
@@ -341476,14 +341596,16 @@
     "line": "Storm Special",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2019-09-01",
+    "releaseDate": "2019-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.55,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -344359,7 +344481,7 @@
     "line": "Storm Special",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2019-08-01",
+    "releaseDate": "2019-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
@@ -344375,7 +344497,9 @@
       "sku-alias",
       "alias:toyarena",
       "alias:solarisjapan",
-      "alias:toydojo"
+      "alias:toydojo",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "STO873627",
@@ -346878,7 +347002,7 @@
     "line": "Storm Special",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2019-07-01",
+    "releaseDate": "2019-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
@@ -346890,7 +347014,9 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "STO873634",
@@ -349286,7 +349412,7 @@
     "line": "Storm Tekken",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2019-06-01",
+    "releaseDate": "2019-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.35,
@@ -349294,7 +349420,9 @@
       "storm",
       "fighting-game",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0457/3561/products/DSC_0072.jpg?v=1649950599",
@@ -352608,7 +352736,7 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2019-05-01",
+    "releaseDate": "2017-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.45,
@@ -352616,7 +352744,8 @@
       "super7",
       "ultimates",
       "reaction",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave9",
     "sku": null,
@@ -352752,14 +352881,16 @@
     "line": "Storm Tekken",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2019-05-01",
+    "releaseDate": "2019-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.45,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -354938,7 +355069,7 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2019-04-01",
+    "releaseDate": "2017-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.45,
@@ -354946,7 +355077,8 @@
       "super7",
       "ultimates",
       "reaction",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave9",
     "sku": null,
@@ -355049,7 +355181,7 @@
     "line": "Storm Tekken",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2019-04-01",
+    "releaseDate": "2019-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
@@ -355061,7 +355193,9 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "STO870923",
@@ -356933,7 +357067,7 @@
     "line": "Super7 ULTIMATES!",
     "company": "super7",
     "kind": "figure",
-    "releaseDate": "2019-03-01",
+    "releaseDate": "2017-01-01",
     "msrp": 55.0,
     "scale": "7\"",
     "demand": 1.55,
@@ -356941,7 +357075,8 @@
       "super7",
       "ultimates",
       "reaction",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave9",
     "sku": null,
@@ -357017,14 +357152,16 @@
     "line": "Storm Tekken",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2019-03-01",
+    "releaseDate": "2019-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.45,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -359423,14 +359560,16 @@
     "line": "Storm King of Fighters",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2019-02-01",
+    "releaseDate": "2019-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -361326,7 +361465,9 @@
       "sku-alias",
       "alias:hobbyfigures",
       "image-sku",
-      "imgsku:toynk"
+      "imgsku:toynk",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/1140/8354/files/STO-111818-C-1.jpg?v=1780988547",
@@ -363359,7 +363500,7 @@
     "line": "Storm King of Fighters",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2018-12-01",
+    "releaseDate": "2018-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.55,
@@ -363373,7 +363514,9 @@
       "sku-alias",
       "alias:hobbyfigures",
       "image-sku",
-      "imgsku:solarisjapan"
+      "imgsku:solarisjapan",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0318/2649/products/c4288612-4a0f-11ed-b885-5600040d5bd1.jpg?v=1665566718",
@@ -364829,7 +364972,7 @@
     "line": "Storm King of Fighters",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2018-11-01",
+    "releaseDate": "2018-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
@@ -364837,7 +364980,9 @@
       "storm",
       "fighting-game",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0457/3561/files/Terry_Bogard_21_64af6906-b8d3-413c-abf4-1ca8fb0f0341.jpg?v=1695135623",
@@ -366521,7 +366666,7 @@
     "line": "Storm King of Fighters",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2018-10-01",
+    "releaseDate": "2018-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
@@ -366533,7 +366678,9 @@
       "sku-bake",
       "sku:japan-figure",
       "image-sku",
-      "imgsku:japan-figure"
+      "imgsku:japan-figure",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0568/2298/8958/files/storm-collectibles-the-king-of-fighters-98-kusanakyo-figure_1_1785383864.webp?v=1785398891",
@@ -368203,7 +368350,7 @@
     "line": "Storm King of Fighters",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2018-09-01",
+    "releaseDate": "2018-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
@@ -368211,7 +368358,9 @@
       "storm",
       "fighting-game",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0457/3561/files/DSC_9529_1_c8b27540-ea73-4d0b-9846-3e1777f75d27.jpg?v=1788191983",
@@ -370019,14 +370168,16 @@
     "line": "Storm Mortal Kombat",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2018-08-01",
+    "releaseDate": "2018-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.4,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -371913,14 +372064,16 @@
     "line": "Storm Mortal Kombat",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2018-07-01",
+    "releaseDate": "2018-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.45,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -373456,14 +373609,16 @@
     "line": "Storm Mortal Kombat",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2018-06-01",
+    "releaseDate": "2018-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -375823,7 +375978,7 @@
     "line": "Storm Mortal Kombat",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2018-05-01",
+    "releaseDate": "2018-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
@@ -375835,7 +375990,9 @@
       "sku:toydojo",
       "image-sku",
       "image-bake",
-      "imgsku:toydojo"
+      "imgsku:toydojo",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "STM72286",
@@ -377337,7 +377494,7 @@
     "line": "Storm Mortal Kombat",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2018-04-01",
+    "releaseDate": "2018-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.55,
@@ -377351,7 +377508,9 @@
       "image-sku",
       "imgsku:toyarena",
       "sku-alias",
-      "alias:toyarena"
+      "alias:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4897072870206a.jpg?v=1744228094",
@@ -378578,7 +378737,7 @@
     "line": "Storm Mortal Kombat",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2018-03-01",
+    "releaseDate": "2018-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.55,
@@ -378590,7 +378749,9 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/files/4897072870183a.jpg?v=1744227297",
@@ -379979,7 +380140,7 @@
     "line": "Storm Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2018-02-01",
+    "releaseDate": "2018-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.45,
@@ -379987,7 +380148,9 @@
       "storm",
       "fighting-game",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0457/3561/products/10_1ea7ff18-3498-4b2b-af93-201bbee8d79d.jpg?v=1536758265",
@@ -381105,7 +381268,9 @@
       "sku-bake",
       "sku:toydojo",
       "image-sku",
-      "imgsku:toydojo"
+      "imgsku:toydojo",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0564/2783/9650/products/5b04a507-bc97-4c6b-9cea-35506ad93ad1.jpg?v=1739386216",
@@ -382074,14 +382239,16 @@
     "line": "Storm Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2017-12-01",
+    "releaseDate": "2017-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.45,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -383157,14 +383324,16 @@
     "line": "Storm Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2017-11-01",
+    "releaseDate": "2017-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -383966,7 +384135,7 @@
     "line": "Storm Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2017-10-01",
+    "releaseDate": "2017-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.35,
@@ -383978,7 +384147,9 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "STO871517",
@@ -384861,7 +385032,7 @@
     "line": "Storm Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2017-09-01",
+    "releaseDate": "2017-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.4,
@@ -384869,7 +385040,9 @@
       "storm",
       "fighting-game",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0457/3561/files/DSC_2551_2.jpg?v=1703689786",
@@ -386027,7 +386200,7 @@
     "line": "Storm Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2017-08-01",
+    "releaseDate": "2017-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.45,
@@ -386039,7 +386212,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "4897072871807",
@@ -386918,14 +387093,16 @@
     "line": "Storm Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2017-07-01",
+    "releaseDate": "2017-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.4,
     "tags": [
       "storm",
       "fighting-game",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": null,
@@ -387828,7 +388005,7 @@
     "line": "Storm Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2017-06-01",
+    "releaseDate": "2017-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
@@ -387836,7 +388013,9 @@
       "storm",
       "fighting-game",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0457/3561/files/DSC_0793.jpg?v=1741794082",
@@ -388982,7 +389161,7 @@
     "line": "Storm Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2017-05-01",
+    "releaseDate": "2017-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.55,
@@ -388994,7 +389173,9 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "STO870602",
@@ -389869,7 +390050,7 @@
     "line": "Storm Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2017-04-01",
+    "releaseDate": "2017-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.45,
@@ -389881,7 +390062,9 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "STO871043",
@@ -390769,7 +390952,7 @@
     "line": "Storm Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2017-03-01",
+    "releaseDate": "2017-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.55,
@@ -390777,7 +390960,9 @@
       "storm",
       "fighting-game",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0457/3561/files/DSC_7371_1.jpg?v=1770822387",
@@ -391777,7 +391962,7 @@
     "line": "Storm Street Fighter",
     "company": "storm",
     "kind": "figure",
-    "releaseDate": "2017-02-01",
+    "releaseDate": "2017-01-01",
     "msrp": 110.0,
     "scale": "1:12",
     "demand": 1.5,
@@ -391789,7 +391974,9 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave8",
     "sku": "STO871005",
