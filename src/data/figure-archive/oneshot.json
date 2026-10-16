@@ -269359,14 +269359,16 @@
     "line": "NECA Ultimate Horror",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2021-09-01",
+    "releaseDate": "2021-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.35,
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": null,
@@ -273482,7 +273484,7 @@
     "line": "NECA Ultimate Godzilla",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2021-08-01",
+    "releaseDate": "2021-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.5,
@@ -273494,7 +273496,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/godzilla-vs-king-kong-1962-12-inch-long-6-inch-action-figure-godzilla_pkg.jpg?v=1658537880",
@@ -276738,7 +276742,7 @@
     "line": "NECA Ultimate Godzilla",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2021-07-01",
+    "releaseDate": "2020-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.5,
@@ -276750,7 +276754,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482429013",
@@ -280323,7 +280328,7 @@
     "line": "NECA Ultimate Universal",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2021-06-01",
+    "releaseDate": "2023-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.45,
@@ -280335,7 +280340,8 @@
       "sku:nerdzoic",
       "image-sku",
       "image-bake",
-      "imgsku:nerdzoic"
+      "imgsku:nerdzoic",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482048214",
@@ -285249,14 +285255,15 @@
     "line": "NECA Ultimate Universal",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2021-05-01",
+    "releaseDate": "2023-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.45,
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave9",
     "sku": null,
@@ -288258,7 +288265,7 @@
     "line": "NECA Ultimate Universal",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2021-04-01",
+    "releaseDate": "2022-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.4,
@@ -288272,7 +288279,8 @@
       "image-bake",
       "imgsku:cmdstore",
       "sku-alias",
-      "alias:solarisjapan"
+      "alias:solarisjapan",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482048122",
@@ -291430,14 +291438,16 @@
     "line": "NECA Ultimate Universal",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2021-03-01",
+    "releaseDate": "2021-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.4,
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": null,
@@ -294931,7 +294941,7 @@
     "line": "NECA Ultimate Universal",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2021-02-01",
+    "releaseDate": "2021-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.45,
@@ -294943,7 +294953,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave9",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/universal-monsters-ultimate-frankenstein-color-version-634482048047-pkg.jpg?v=1648766325",
@@ -297790,7 +297801,9 @@
       "sku:solarisjapan",
       "image-sku",
       "image-bake",
-      "imgsku:solarisjapan"
+      "imgsku:solarisjapan",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "N-LF-141511",
@@ -300171,7 +300184,7 @@
     "line": "NECA Ultimate Horror",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2020-12-01",
+    "releaseDate": "2020-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.5,
@@ -300187,7 +300200,9 @@
       "sku-alias",
       "alias:cooltoyden",
       "alias:indemandtoys",
-      "alias:nerdzoic"
+      "alias:nerdzoic",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "NECA45260",
@@ -302592,7 +302607,7 @@
     "line": "NECA Ultimate Horror",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2020-11-01",
+    "releaseDate": "2020-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.45,
@@ -302601,7 +302616,9 @@
       "ultimate",
       "curated",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "imageUrl": "https://static.wixstatic.com/media/adc447_d82f4ce60b434acab867027bedfb9e2c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d82f4ce60b434acab867027bedfb9e2c~mv2.jpg",
@@ -305095,7 +305112,7 @@
     "line": "NECA Ultimate Predator",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2020-10-01",
+    "releaseDate": "2020-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.5,
@@ -305107,7 +305124,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482515082",
@@ -307870,7 +307889,7 @@
     "line": "NECA Ultimate Predator",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2020-09-01",
+    "releaseDate": "2017-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.55,
@@ -307887,7 +307906,8 @@
       "sku-gtin",
       "sku-alias",
       "alias:collecticon",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482515563",
@@ -311628,7 +311648,7 @@
     "line": "NECA Ultimate Aliens",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2020-08-01",
+    "releaseDate": "2020-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.45,
@@ -311640,7 +311660,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482516171",
@@ -314313,14 +314335,16 @@
     "line": "NECA Ultimate Aliens",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2020-07-01",
+    "releaseDate": "2020-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.4,
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": null,
@@ -317476,7 +317500,7 @@
     "line": "NECA Ultimate TMNT",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2020-06-01",
+    "releaseDate": "2020-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.4,
@@ -317484,7 +317508,9 @@
       "neca",
       "ultimate",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN8563-3.jpg?v=1712440217",
@@ -321826,7 +321852,7 @@
     "line": "NECA Ultimate TMNT",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2020-05-01",
+    "releaseDate": "2020-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.4,
@@ -321839,7 +321865,9 @@
       "image-bake",
       "img:mephitsu",
       "image-sku",
-      "imgsku:toydojo"
+      "imgsku:toydojo",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "NC54176",
@@ -324434,7 +324462,7 @@
     "line": "NECA Ultimate TMNT",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2020-04-01",
+    "releaseDate": "2020-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.5,
@@ -324443,7 +324471,9 @@
       "ultimate",
       "curated",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "imageUrl": "https://static.wixstatic.com/media/adc447_c75e4c94f77245799d2cdf66edf6febb~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c75e4c94f77245799d2cdf66edf6febb~mv2.jpg",
@@ -327179,7 +327209,7 @@
     "line": "NECA Ultimate TMNT",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2020-03-01",
+    "releaseDate": "2020-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.35,
@@ -327191,7 +327221,9 @@
       "sku-bake",
       "sku:collecticon",
       "image-sku",
-      "imgsku:collecticon"
+      "imgsku:collecticon",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0076/4103/8906/products/neca-teenage-mutant-ninja-turtles-in-time-tmnt-foot-soldier-video-game-box-package-front.jpg?v=1587762525",
@@ -330159,14 +330191,16 @@
     "line": "NECA Ultimate DC",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2020-02-01",
+    "releaseDate": "2020-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.55,
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": null,
@@ -332989,14 +333023,15 @@
     "line": "NECA Ultimate DC",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2020-01-01",
+    "releaseDate": "2014-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.5,
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave9",
     "sku": null,
@@ -335211,7 +335246,7 @@
     "line": "NECA Ultimate Movie",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2019-12-01",
+    "releaseDate": "2017-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.45,
@@ -335223,7 +335258,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482199015",
@@ -337412,7 +337448,7 @@
     "line": "NECA Ultimate Movie",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2019-11-01",
+    "releaseDate": "2019-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.55,
@@ -337424,7 +337460,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482421826",
@@ -339566,7 +339604,7 @@
     "line": "NECA Ultimate Movie",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2019-10-01",
+    "releaseDate": "2019-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.55,
@@ -339578,7 +339616,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482398357",
@@ -341935,7 +341975,7 @@
     "line": "NECA Ultimate Movie",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2019-09-01",
+    "releaseDate": "2022-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.5,
@@ -341947,7 +341987,8 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482421420",
@@ -344764,7 +344805,7 @@
     "line": "NECA Ultimate Horror",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2019-08-01",
+    "releaseDate": "2019-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.5,
@@ -344773,7 +344814,9 @@
       "ultimate",
       "curated",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "imageUrl": "https://static.wixstatic.com/media/adc447_904a1666a431429380dd88c1e0dd3093~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_904a1666a431429380dd88c1e0dd3093~mv2.jpg",
@@ -347270,7 +347313,7 @@
     "line": "NECA Ultimate Horror",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2019-07-01",
+    "releaseDate": "2019-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.5,
@@ -347279,7 +347322,9 @@
       "ultimate",
       "curated",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "imageUrl": "https://static.wixstatic.com/media/adc447_5905a3f9d8a44401b00deabc93aa02bc~mv2.jpg",
@@ -349751,7 +349796,7 @@
     "line": "NECA Ultimate Horror",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2019-06-01",
+    "releaseDate": "2019-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.55,
@@ -349763,7 +349808,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/it-welcome-to-derry-ultimate-bob-gray-as-pennywise-634482454282.jpg?v=1785354064",
@@ -353125,7 +353172,7 @@
     "line": "NECA Ultimate Horror",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2019-05-01",
+    "releaseDate": "2019-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.45,
@@ -353137,7 +353184,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482429952",
@@ -355414,7 +355463,7 @@
     "line": "NECA Ultimate Horror",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2019-04-01",
+    "releaseDate": "2019-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.45,
@@ -355426,7 +355475,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482416082",
@@ -357459,7 +357510,7 @@
     "line": "NECA Ultimate Horror",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2019-03-01",
+    "releaseDate": "2019-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.5,
@@ -357468,7 +357519,9 @@
       "ultimate",
       "curated",
       "sku-bake",
-      "sku:cmdstore"
+      "sku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482606551",
@@ -359787,7 +359840,7 @@
     "line": "NECA Ultimate Horror",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2019-02-01",
+    "releaseDate": "2019-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.5,
@@ -359801,7 +359854,9 @@
       "sku-gtin",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482397824",
@@ -361692,7 +361747,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "6344823981974",
@@ -363671,7 +363728,7 @@
     "line": "NECA Ultimate Predator",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2018-12-01",
+    "releaseDate": "2018-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.5,
@@ -363683,7 +363740,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482514511",
@@ -365172,7 +365231,7 @@
     "line": "NECA Ultimate Predator",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2018-11-01",
+    "releaseDate": "2018-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.55,
@@ -365188,7 +365247,9 @@
       "sku-alias",
       "alias:cooltoyden",
       "alias:solarisjapan",
-      "alias:toynk"
+      "alias:toynk",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482514269",
@@ -366835,7 +366896,7 @@
     "line": "NECA Ultimate Aliens",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2018-10-01",
+    "releaseDate": "2018-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.55,
@@ -366847,7 +366908,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482517208",
@@ -368558,7 +368621,7 @@
     "line": "NECA Ultimate Aliens",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2018-09-01",
+    "releaseDate": "2018-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.55,
@@ -368570,7 +368633,9 @@
       "sku:cmdstore",
       "image-sku",
       "image-bake",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "634482516522",
@@ -370312,7 +370377,7 @@
     "line": "NECA Ultimate TMNT",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2018-08-01",
+    "releaseDate": "2018-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.35,
@@ -370324,7 +370389,9 @@
       "sku:legendztoys",
       "image-sku",
       "image-bake",
-      "imgsku:legendztoys"
+      "imgsku:legendztoys",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "NTAPR1",
@@ -371597,14 +371664,15 @@
     "line": "DC Essentials",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2018-08-01",
+    "releaseDate": "2019-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.4,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -372223,7 +372291,7 @@
     "line": "NECA Ultimate TMNT",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2018-07-01",
+    "releaseDate": "2018-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.4,
@@ -372235,7 +372303,9 @@
       "sku:collecticon",
       "image-sku",
       "image-bake",
-      "imgsku:collecticon"
+      "imgsku:collecticon",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": "NECA-TMNT90S-CASEYJONESRAPHAEL",
@@ -373853,14 +373923,16 @@
     "line": "NECA Ultimate TMNT",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2018-06-01",
+    "releaseDate": "2018-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.45,
     "tags": [
       "neca",
       "ultimate",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "sku": null,
@@ -375437,14 +375509,16 @@
     "line": "DC Essentials",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2018-06-01",
+    "releaseDate": "2018-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.45,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -376138,7 +376212,7 @@
     "line": "NECA Ultimate TMNT",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2018-05-01",
+    "releaseDate": "2018-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.55,
@@ -376153,7 +376227,9 @@
       "imgsku:neca-store",
       "sku:cmdstore",
       "sku-gtin",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/teenage-mutant-ninja-turtles-turtles-in-time-series-2-6-inch-action-figure-super-shredder_pkg.jpg?v=1723117039",
@@ -377602,7 +377678,7 @@
     "line": "NECA Ultimate TMNT",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2018-04-01",
+    "releaseDate": "2018-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.5,
@@ -377614,7 +377690,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/teenage-mutant-ninja-turtles-2012-cartoon-ultimate-raphael-634482545676.jpg?v=1771891850",
@@ -378921,7 +378999,7 @@
     "line": "NECA Ultimate TMNT",
     "company": "neca",
     "kind": "figure",
-    "releaseDate": "2018-03-01",
+    "releaseDate": "2018-01-01",
     "msrp": 35.0,
     "scale": "7\"",
     "demand": 1.45,
@@ -378933,7 +379011,9 @@
       "sku-bake",
       "sku:neca-store",
       "image-sku",
-      "imgsku:neca-store"
+      "imgsku:neca-store",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave9",
     "imageUrl": "https://cdn.shopify.com/s/files/1/1227/0654/files/54411_UNP_12_Donny.jpg?v=1753481823",
@@ -401615,14 +401695,16 @@
     "line": "DC Designer Series",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2015-12-01",
+    "releaseDate": "2015-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -402265,14 +402347,16 @@
     "line": "DC Designer Series",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2015-11-01",
+    "releaseDate": "2015-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -402570,14 +402654,16 @@
     "line": "DC Designer Series",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2015-10-01",
+    "releaseDate": "2015-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.4,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -403454,14 +403540,16 @@
     "line": "DC Designer Series",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2015-09-01",
+    "releaseDate": "2015-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -403817,14 +403905,16 @@
     "line": "DC Designer Series",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2015-08-01",
+    "releaseDate": "2015-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -404283,14 +404373,16 @@
     "line": "DC Designer Series",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2015-07-01",
+    "releaseDate": "2015-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.4,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -405182,7 +405274,7 @@
     "line": "DC Designer Series",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2015-06-01",
+    "releaseDate": "2015-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.25,
@@ -405190,7 +405282,9 @@
       "dc-direct",
       "dc-collectibles",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN7718_3.JPG?v=1571439708",
@@ -405806,7 +405900,7 @@
     "line": "DC Designer Series",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2015-05-01",
+    "releaseDate": "2015-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.25,
@@ -405818,7 +405912,9 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/761941342443_a.jpg?v=1571609354",
@@ -406198,14 +406294,16 @@
     "line": "DC Designer Series",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2015-04-01",
+    "releaseDate": "2015-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.25,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -406996,14 +407094,16 @@
     "line": "DC Designer Series",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2015-03-01",
+    "releaseDate": "2015-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -407226,14 +407326,16 @@
     "line": "DC Designer Series",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2015-02-01",
+    "releaseDate": "2015-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -407908,14 +408010,16 @@
     "line": "Forever Evil",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2014-12-01",
+    "releaseDate": "2014-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.2,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -408275,14 +408379,15 @@
     "line": "Forever Evil",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2014-11-01",
+    "releaseDate": "2014-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.2,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -408295,14 +408400,15 @@
     "line": "Forever Evil",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2014-11-01",
+    "releaseDate": "2014-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -408533,14 +408639,15 @@
     "line": "Forever Evil",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2014-10-01",
+    "releaseDate": "2014-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.25,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -408573,14 +408680,15 @@
     "line": "Forever Evil",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2014-10-01",
+    "releaseDate": "2014-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -409296,14 +409404,15 @@
     "line": "Forever Evil",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2014-09-01",
+    "releaseDate": "2014-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -409503,14 +409612,15 @@
     "line": "Forever Evil",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2014-08-01",
+    "releaseDate": "2014-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -409754,14 +409864,15 @@
     "line": "Forever Evil",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2014-07-01",
+    "releaseDate": "2014-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.4,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -409774,14 +409885,16 @@
     "line": "Zero Year",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2014-07-01",
+    "releaseDate": "2014-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.15,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -410559,7 +410672,7 @@
     "line": "DC Essentials",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2014-04-01",
+    "releaseDate": "2019-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.25,
@@ -410571,7 +410684,8 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/761941355450a.jpg?v=1587686389",
@@ -410990,14 +411104,15 @@
     "line": "DC Essentials",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2014-03-01",
+    "releaseDate": "2020-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.15,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -411082,7 +411197,7 @@
     "line": "DC Essentials",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2014-02-01",
+    "releaseDate": "2014-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.2,
@@ -411094,7 +411209,9 @@
       "sku:cooltoyden",
       "image-sku",
       "image-bake",
-      "imgsku:cooltoyden"
+      "imgsku:cooltoyden",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": "DCD30849 WW",
@@ -411127,14 +411244,16 @@
     "line": "Zero Year",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2014-02-01",
+    "releaseDate": "2014-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -412045,14 +412164,15 @@
     "line": "Throne of Atlantis",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2013-08-01",
+    "releaseDate": "2015-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -412065,14 +412185,15 @@
     "line": "Throne of Atlantis",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2013-08-01",
+    "releaseDate": "2015-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -412248,14 +412369,15 @@
     "line": "Throne of Atlantis",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2013-07-01",
+    "releaseDate": "2015-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.25,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -413009,14 +413131,16 @@
     "line": "DC Collectibles New 52",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2013-03-01",
+    "releaseDate": "2013-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -413138,14 +413262,15 @@
     "line": "Court of Owls",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2013-02-01",
+    "releaseDate": "2014-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -413158,14 +413283,16 @@
     "line": "Court of Owls",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2013-02-01",
+    "releaseDate": "2013-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.25,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -413198,7 +413325,7 @@
     "line": "DC Collectibles New 52",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2013-02-01",
+    "releaseDate": "2014-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.25,
@@ -413206,7 +413333,8 @@
       "dc-direct",
       "dc-collectibles",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN0785-4.jpg?v=1670605548",
@@ -413360,7 +413488,9 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/4530956172866_a.jpg?v=1571609354",
@@ -413575,7 +413705,7 @@
     "line": "DC Collectibles New 52",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2012-12-01",
+    "releaseDate": "2014-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
@@ -413587,7 +413717,8 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "sku": "DCC355924",
@@ -413780,7 +413911,7 @@
     "line": "DC Collectibles New 52",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2012-11-01",
+    "releaseDate": "2012-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.25,
@@ -413792,7 +413923,9 @@
       "sku:cooltoyden",
       "image-sku",
       "image-bake",
-      "imgsku:cooltoyden"
+      "imgsku:cooltoyden",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": "DCD 32259 CAPULLO CATWOMAN",
@@ -413894,14 +414027,16 @@
     "line": "DC Collectibles New 52",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2012-10-01",
+    "releaseDate": "2012-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -414258,7 +414393,7 @@
     "line": "DC Collectibles New 52",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2012-09-01",
+    "releaseDate": "2012-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.25,
@@ -414266,7 +414401,8 @@
       "dc-direct",
       "dc-collectibles",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN2099-4.jpg?v=1661814461",
@@ -414542,7 +414678,7 @@
     "line": "DC Collectibles New 52",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2012-08-01",
+    "releaseDate": "2012-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.25,
@@ -414554,7 +414690,9 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave4",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/761941322629_a.jpg?v=1571609359",
@@ -414784,14 +414922,15 @@
     "line": "DC Collectibles New 52",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2012-07-01",
+    "releaseDate": "2012-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave4",
     "sku": null,
@@ -415531,14 +415670,16 @@
     "line": "DC Designer Series",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2012-04-01",
+    "releaseDate": "2012-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -415891,14 +416032,16 @@
     "line": "DC Designer Series",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2012-03-01",
+    "releaseDate": "2012-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -416105,7 +416248,7 @@
     "line": "DC Designer Series",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2012-02-01",
+    "releaseDate": "2012-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.4,
@@ -416117,7 +416260,9 @@
       "sku:toyarena",
       "image-sku",
       "image-bake",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "DCC172873",
@@ -417007,7 +417152,7 @@
     "line": "DC Direct",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2011-10-01",
+    "releaseDate": "2011-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
@@ -417020,7 +417165,9 @@
       "sku-alias",
       "alias:cooltoyden",
       "image-sku",
-      "imgsku:afcollector"
+      "imgsku:afcollector",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "HKM01SB26",
@@ -417386,14 +417533,16 @@
     "line": "DC Direct",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2011-09-01",
+    "releaseDate": "2011-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -417597,7 +417746,7 @@
     "line": "DC Direct",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2011-08-01",
+    "releaseDate": "2011-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
@@ -417605,7 +417754,9 @@
       "dc-direct",
       "dc-collectibles",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/files/DSCN5822-3.jpg?v=1709277134",
@@ -418097,7 +418248,7 @@
     "line": "DC Direct",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2011-07-01",
+    "releaseDate": "2011-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
@@ -418109,7 +418260,9 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/761941333441_a.jpg?v=1571609359",
@@ -418425,7 +418578,7 @@
     "line": "DC Direct",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2011-06-01",
+    "releaseDate": "2011-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.4,
@@ -418433,7 +418586,9 @@
       "dc-direct",
       "dc-collectibles",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN3650_3_2b5dbea2-bcb3-4356-8102-7b23dc36fae0.jpg?v=1616693706",
@@ -418703,14 +418858,16 @@
     "line": "DC Direct",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2011-05-01",
+    "releaseDate": "2011-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.4,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -418812,7 +418969,7 @@
     "line": "DC Direct",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2011-04-01",
+    "releaseDate": "2011-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
@@ -418820,7 +418977,9 @@
       "dc-direct",
       "dc-collectibles",
       "curated",
-      "image-bake"
+      "image-bake",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN0494_4.jpg?v=1571439739",
@@ -419216,7 +419375,7 @@
     "line": "DC Direct",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2011-03-01",
+    "releaseDate": "2011-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
@@ -419228,7 +419387,9 @@
       "sku:afcollector",
       "image-sku",
       "image-bake",
-      "imgsku:afcollector"
+      "imgsku:afcollector",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": "BOP01SB24",
@@ -419598,7 +419759,7 @@
     "line": "DC Direct",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2011-02-01",
+    "releaseDate": "2011-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
@@ -419610,7 +419771,9 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/761941335834a.jpg?v=1571609278",
@@ -424200,14 +424363,16 @@
     "line": "DC Icons",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2009-08-01",
+    "releaseDate": "2009-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -425406,14 +425571,15 @@
     "line": "DC Icons",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2009-03-01",
+    "releaseDate": "2017-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -439899,7 +440065,7 @@
     "line": "DC Direct Classic",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2005-04-01",
+    "releaseDate": "2005-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.4,
@@ -439911,7 +440077,9 @@
       "sku-bake",
       "sku:toyarena",
       "image-sku",
-      "imgsku:toyarena"
+      "imgsku:toyarena",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/2637/6278/products/761941342047a.jpg?v=1571609278",
@@ -440226,14 +440394,16 @@
     "line": "DC Direct Classic",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2005-03-01",
+    "releaseDate": "2005-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.35,
     "tags": [
       "dc-direct",
       "dc-collectibles",
-      "curated"
+      "curated",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "sku": null,
@@ -440595,7 +440765,7 @@
     "line": "DC Direct Classic",
     "company": "dcdirect",
     "kind": "figure",
-    "releaseDate": "2005-02-01",
+    "releaseDate": "2005-01-01",
     "msrp": 24.99,
     "scale": "6.5\"",
     "demand": 1.3,
@@ -440607,7 +440777,9 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "date-precision:year",
+      "date-unverified"
     ],
     "source": "curated-bbts-wave6",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/6194123618.jpg?v=1723127083",
