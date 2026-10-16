@@ -1,0 +1,102 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-16",
+  "updatedAt": "2026-10-16T14:28:29Z",
+  "added": 17,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Pages read from rendered listing in box browser (save dialog broken); raw.json DOM extract.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 256,
+    "ee_candidates": 48,
+    "bbts_candidates": 140,
+    "added": 17,
+    "skipped_dupes": 171,
+    "rejected_non_af": 10,
+    "unmapped_company": 58,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 1,
+    "crossStoreAliased": 8
+  },
+  "oneshotBefore": 30356,
+  "oneshotAfter": 30373,
+  "ee_added": 11,
+  "bbts_added": 6,
+  "samples": [
+    {
+      "sku": "BA60271",
+      "name": "Gundam Cross RX-78-2 Gundam and Amuro Rei Action Figure",
+      "id": "afmon-bandai-gundam-cross-rx-78-2-gundam-and-amuro-rei-action-figure-ba60271",
+      "source": "ee"
+    },
+    {
+      "sku": "BA60272",
+      "name": "Gundam Cross Freedom Gundam and Kira Yamato Action Figure",
+      "id": "afmon-bandai-gundam-cross-freedom-gundam-and-kira-yamato-action-figure-ba60272",
+      "source": "ee"
+    },
+    {
+      "sku": "BA60273",
+      "name": "Gundam Cross Wing Gundam and Heero Yuy Action Figure",
+      "id": "afmon-bandai-gundam-cross-wing-gundam-and-heero-yuy-action-figure-ba60273",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS73973",
+      "name": "Godzilla: Final Wars Kaizer Ghidorah S.H.Monsterarts Action Figure",
+      "id": "afmon-bandai-godzilla-final-wars-kaizer-ghidorah-s-h-monsterarts-action-figure-blfbas73973",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4519",
+      "name": "Star Wars Black Series Galactic Marine 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-black-series-galactic-marine-6-inch-action-figure-hsg4519",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4466",
+      "name": "Star Wars Black Series Anakin Skywalker (Padawan) 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-black-series-anakin-skywalker-padawan-6-inch-action-figure-hsg4466",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG5646",
+      "name": "Star Wars Black Series Saga Collection Multipack of 6",
+      "id": "afmon-hasbro-star-wars-black-series-saga-collection-multipack-of-6-hsg5646",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4465",
+      "name": "Star Wars Black Series Queen Amidala 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-black-series-queen-amidala-6-inch-action-figure-hsg4465",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4522",
+      "name": "Star Wars Black Series Tessek 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-black-series-tessek-6-inch-action-figure-hsg4522",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4521",
+      "name": "Star Wars Black Series IG-88 6 Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-black-series-ig-88-6-inch-action-figure-hsg4521",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4520",
+      "name": "Star Wars Black Series Luke Skywalker (X-Wing Pilot) 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-black-series-luke-skywalker-x-wing-pilot-6-inch-action-figure-hsg4520",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-199724",
+      "name": "Attack on Titan Amazing Yamaguchi Revoltech NR155 Attack Titan (Eren Yeager) Action Figure (3rd Reissue)",
+      "id": "afmon-kaiyodo-attack-on-titan-amazing-yamaguchi-revoltech-nr155-attack-titan-eren-yeag-bbts-199724",
+      "source": "bbts"
+    }
+  ],
+  "commit": null
+}
