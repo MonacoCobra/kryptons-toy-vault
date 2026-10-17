@@ -5647,7 +5647,7 @@
     "company": "mattel",
     "kind": "figure",
     "releaseDate": "2026-08-03",
-    "msrp": 33.0,
+    "msrp": 42.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -5663,7 +5663,8 @@
       "type: evergreen",
       "image-sku",
       "image-bake",
-      "imgsku:mattel-creations"
+      "imgsku:mattel-creations",
+      "msrp:owner"
     ],
     "sku": "JMD66",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0568/1132/3597/files/a4e35c2d9481893dae1e4398e48bfb12813ddf2f.jpg?v=1784301066",
@@ -5677,7 +5678,7 @@
     "company": "mattel",
     "kind": "figure",
     "releaseDate": "2026-08-03",
-    "msrp": 38.0,
+    "msrp": 42.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -5693,7 +5694,8 @@
       "type: evergreen",
       "image-sku",
       "image-bake",
-      "imgsku:mattel-creations"
+      "imgsku:mattel-creations",
+      "msrp:owner"
     ],
     "sku": "JNC74",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0568/1132/3597/files/e27973879bfb55bba176a6b118a774d7829ac8b5.jpg?v=1784301065",
@@ -738309,7 +738311,7 @@
     "company": "mattel",
     "kind": "figure",
     "releaseDate": "2026-06-01",
-    "msrp": null,
+    "msrp": 42.99,
     "scale": "6\"",
     "demand": 1.0,
     "tags": [
@@ -738322,7 +738324,8 @@
       "theme: comics",
       "date-precision:month",
       "multipack",
-      "3-pack"
+      "3-pack",
+      "msrp:owner"
     ],
     "sku": "194735374779",
     "source": "mattel-shop-announce",

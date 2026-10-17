@@ -80,6 +80,8 @@ Allowed sources:
 - **An official manufacturer press release** price (e.g. Hasbro's "Approx. Retail Price"),
   when the release names the exact figure, variant and wave — `msrp:hasbro-press`
   (Shelby approved 2026-10-07 8:50 PM MT)
+- **The owner's own statement** (Shelby), for the exact product or pack type named — `msrp:owner`
+  (e.g. Shelby 2026-10-17 9:05 AM MT: "42.99 is the msrp for the Mattel premier 3 packs")
 
 Never use eBay, aftermarket, or marked-up page prices, and never invent a price.
 Ambiguous matches go to review instead of being filled.
