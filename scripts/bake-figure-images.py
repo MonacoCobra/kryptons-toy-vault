@@ -505,6 +505,22 @@ RETAILER_SKIP = re.compile(
     re.I,
 )
 
+MATTEL_GTIN_PREFIX = "887961"
+
+
+def has_mattel_barcode(p: dict) -> bool:
+    """True if any variant barcode / GTIN-shaped SKU carries Mattel's 887961 prefix."""
+    codes = [p.get("barcode"), p.get("sku")]
+    for v in p.get("variants") or []:
+        if isinstance(v, dict):
+            codes += [v.get("barcode"), v.get("sku")]
+    for c in codes:
+        d = re.sub(r"\D", "", str(c or ""))
+        if len(d) in (12, 13, 14) and d.lstrip("0").startswith(MATTEL_GTIN_PREFIX):
+            return True
+    return False
+
+
 def infer_retailer_company(p: dict) -> str | None:
     """Map multi-vendor retailer product → vault CompanyId (high confidence only)."""
     vendor = str(p.get("vendor") or "")
@@ -523,6 +539,10 @@ def infer_retailer_company(p: dict) -> str | None:
         return None
     if RETAILER_SKIP.search(blob):
         return None
+    # Mattel GS1 prefix 887961 always wins (2016–2019 DC Multiverse was Mattel;
+    # McFarlane DC Multiverse began 2020) — must precede the 'dc multiverse' rule.
+    if has_mattel_barcode(p):
+        return "mattel"
     # Specific lines first
     if re.search(r"\bmafex\b", bl):
         return "mafex"
