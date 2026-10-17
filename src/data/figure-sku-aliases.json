@@ -45143,6 +45143,41 @@
     ],
     "afmon-hasbro-star-wars-black-series-saga-collection-multipack-of-6-hsg5646": [
       "BBTS-199933"
+    ],
+    "dcd4-throne-orm": [
+      "id:dcd6-dcd-orm",
+      "https://www.dc.com/blog/2014/07/14/dc-collectibles-group-solicits-january/february-2015"
+    ],
+    "dcd-sv-w6-ultraman": [
+      "id:dcd4-forever-evil-ultraman",
+      "https://toynewsi.com/10-21020",
+      "id:dcd6-dcd-ultraman"
+    ],
+    "dcd-sv-w6-superwoman": [
+      "id:dcd4-forever-evil-superwoman",
+      "https://toynewsi.com/10-21020",
+      "id:dcd6-dcd-superwoman"
+    ],
+    "dcd-sv-w6-power-ring": [
+      "id:dcd4-forever-evil-power",
+      "https://toynewsi.com/10-21020",
+      "id:dcd6-dcd-power-ring"
+    ],
+    "dcd-sv-w6-owlman": [
+      "id:dcd4-forever-evil-owlman",
+      "https://toynewsi.com/10-21020",
+      "id:dcd6-dcd-owlman"
+    ],
+    "dcd-sv-w6-johnny-quick": [
+      "id:dcd4-forever-evil-johnny",
+      "https://toynewsi.com/10-21020",
+      "id:dcd6-dcd-johnny-quick"
+    ],
+    "dcd-sv-w6-lex-armor": [
+      "id:dcd4-new52-lex",
+      "https://www.toyark.com/2014/07/17/dcc-deluxe-armored-lex-luthor-hand-gallery-128902",
+      "761941319278",
+      "id:mcfdc-n52-lex"
     ]
   },
   "aliasToFigureId": {
@@ -69763,7 +69798,24 @@
     "BBTS-199087": "afmon-hasbro-star-wars-black-series-ig-88-6-inch-action-figure-hsg4521",
     "BBTS-199090": "afmon-hasbro-star-wars-black-series-anakin-skywalker-padawan-6-inch-action-figure-hsg4466",
     "BBTS-199089": "afmon-hasbro-star-wars-black-series-galactic-marine-6-inch-action-figure-hsg4519",
-    "BBTS-199933": "afmon-hasbro-star-wars-black-series-saga-collection-multipack-of-6-hsg5646"
+    "BBTS-199933": "afmon-hasbro-star-wars-black-series-saga-collection-multipack-of-6-hsg5646",
+    "id:dcd6-dcd-orm": "dcd4-throne-orm",
+    "https://www.dc.com/blog/2014/07/14/dc-collectibles-group-solicits-january/february-2015": "dcd4-throne-orm",
+    "id:dcd4-forever-evil-ultraman": "dcd-sv-w6-ultraman",
+    "https://toynewsi.com/10-21020": "dcd-sv-w6-ultraman",
+    "id:dcd6-dcd-ultraman": "dcd-sv-w6-ultraman",
+    "id:dcd4-forever-evil-superwoman": "dcd-sv-w6-superwoman",
+    "id:dcd6-dcd-superwoman": "dcd-sv-w6-superwoman",
+    "id:dcd4-forever-evil-power": "dcd-sv-w6-power-ring",
+    "id:dcd6-dcd-power-ring": "dcd-sv-w6-power-ring",
+    "id:dcd4-forever-evil-owlman": "dcd-sv-w6-owlman",
+    "id:dcd6-dcd-owlman": "dcd-sv-w6-owlman",
+    "id:dcd4-forever-evil-johnny": "dcd-sv-w6-johnny-quick",
+    "id:dcd6-dcd-johnny-quick": "dcd-sv-w6-johnny-quick",
+    "id:dcd4-new52-lex": "dcd-sv-w6-lex-armor",
+    "https://www.toyark.com/2014/07/17/dcc-deluxe-armored-lex-luthor-hand-gallery-128902": "dcd-sv-w6-lex-armor",
+    "761941319278": "dcd-sv-w6-lex-armor",
+    "id:mcfdc-n52-lex": "dcd-sv-w6-lex-armor"
   },
   "collapsed": [
     {
@@ -72927,6 +72979,131 @@
         "MTJMD69"
       ],
       "reason": "AF monitor 2026-10-12: EE MTJMD69 is the same DC Premier Superman as Mattel Creations JMD69"
+    },
+    {
+      "keepId": "dcd4-throne-orm",
+      "dropId": "dcd6-dcd-orm",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd6-dcd-orm",
+        "https://www.dc.com/blog/2014/07/14/dc-collectibles-group-solicits-january/february-2015"
+      ],
+      "reason": "Date audit dupe (2026-10-17): same DC Collectibles Throne of Atlantis Ocean Master (Orm), dcdirect, line Throne of Atlantis, 2015, same variant; dcd6 copy came from curated-bbts-wave6 with identical fields. DC solicit (Jan/Feb 2015) $19.95."
+    },
+    {
+      "keepId": "dcd-sv-w6-ultraman",
+      "dropId": "dcd4-forever-evil-ultraman",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd4-forever-evil-ultraman",
+        "https://toynewsi.com/10-21020"
+      ],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Ultraman (David Finch design, dcdirect, 2014, single standard release). dcd4-forever-evil-ultraman is a line-label copy of the same figure; only one Ultraman existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-ultraman",
+      "dropId": "dcd6-dcd-ultraman",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd6-dcd-ultraman"
+      ],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Ultraman (David Finch design, dcdirect, 2014, single standard release). dcd6-dcd-ultraman is a line-label copy of the same figure; only one Ultraman existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-superwoman",
+      "dropId": "dcd4-forever-evil-superwoman",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd4-forever-evil-superwoman",
+        "https://toynewsi.com/10-21020"
+      ],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Superwoman (David Finch design, dcdirect, 2014, single standard release). dcd4-forever-evil-superwoman is a line-label copy of the same figure; only one Superwoman existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-superwoman",
+      "dropId": "dcd6-dcd-superwoman",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd6-dcd-superwoman"
+      ],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Superwoman (David Finch design, dcdirect, 2014, single standard release). dcd6-dcd-superwoman is a line-label copy of the same figure; only one Superwoman existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-power-ring",
+      "dropId": "dcd4-forever-evil-power",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd4-forever-evil-power",
+        "https://toynewsi.com/10-21020"
+      ],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Power Ring (David Finch design, dcdirect, 2014, single standard release). dcd4-forever-evil-power is a line-label copy of the same figure; only one Power Ring existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-power-ring",
+      "dropId": "dcd6-dcd-power-ring",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd6-dcd-power-ring"
+      ],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Power Ring (David Finch design, dcdirect, 2014, single standard release). dcd6-dcd-power-ring is a line-label copy of the same figure; only one Power Ring existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-owlman",
+      "dropId": "dcd4-forever-evil-owlman",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd4-forever-evil-owlman",
+        "https://toynewsi.com/10-21020"
+      ],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Owlman (David Finch design, dcdirect, 2014, single standard release). dcd4-forever-evil-owlman is a line-label copy of the same figure; only one Owlman existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-owlman",
+      "dropId": "dcd6-dcd-owlman",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd6-dcd-owlman"
+      ],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Owlman (David Finch design, dcdirect, 2014, single standard release). dcd6-dcd-owlman is a line-label copy of the same figure; only one Owlman existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-johnny-quick",
+      "dropId": "dcd4-forever-evil-johnny",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd4-forever-evil-johnny",
+        "https://toynewsi.com/10-21020"
+      ],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Johnny Quick (David Finch design, dcdirect, 2014, single standard release). dcd4-forever-evil-johnny is a line-label copy of the same figure; only one Johnny Quick existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-johnny-quick",
+      "dropId": "dcd6-dcd-johnny-quick",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd6-dcd-johnny-quick"
+      ],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Johnny Quick (David Finch design, dcdirect, 2014, single standard release). dcd6-dcd-johnny-quick is a line-label copy of the same figure; only one Johnny Quick existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-lex-armor",
+      "dropId": "dcd4-new52-lex",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd4-new52-lex",
+        "https://www.toyark.com/2014/07/17/dcc-deluxe-armored-lex-luthor-hand-gallery-128902",
+        "761941319278"
+      ],
+      "reason": "Date audit dupe (2026-10-17): the only DC Collectibles New 52 Lex Luthor figure of 2013-14 is the July 2014 Deluxe Armored Lex Luthor (UPC 761941319278; ToyArk in-hand gallery). dcd4-new52-lex (dcdirect, not McFarlane) is a line-label copy of that figure; folded into the existing armored row rather than each other."
+    },
+    {
+      "keepId": "dcd-sv-w6-lex-armor",
+      "dropId": "mcfdc-n52-lex",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:mcfdc-n52-lex"
+      ],
+      "reason": "Date audit dupe (2026-10-17): the only DC Collectibles New 52 Lex Luthor figure of 2013-14 is the July 2014 Deluxe Armored Lex Luthor (UPC 761941319278; ToyArk in-hand gallery). mcfdc-n52-lex (dcdirect, not McFarlane) is a line-label copy of that figure; folded into the existing armored row rather than each other."
     }
   ],
   "flagged": [
@@ -73097,9 +73274,16 @@
         "lc5-lc-white-tiger"
       ],
       "reason": "REFUSED: distinct product GTINs. lc5 UPC 630509808366 is Lightning Collection White Ranger (AF411); hs10 UPC 630509808380 + image are S.P.D. Shadow Ranger (AF411). Character-name collision only. Shadow Ranger already exists as plc-shadow-spd."
+    },
+    {
+      "ids": [
+        "nc9-nc-15",
+        "neca-michael"
+      ],
+      "reason": "REFUSED 2026-10-17: shared GTIN 634482606551 is NECA 60655 Halloween: Resurrection Ultimate Michael Myers (2025), already present as sf-neca-store-halloween-resurrection-ultimate-michael-myers-7-inch-scale-action-; both 2019 rows carry it from a cmdstore sku-bake (neca-michael also has the Resurrection photo). Matching GTIN is contamination, not identity; names/lines/variants do not establish the same figure. Follow-up: strip 634482606551 and the Resurrection photo from both 2019 rows."
     }
   ],
-  "updatedAt": "2026-10-14T14:26:28.866210+00:00",
+  "updatedAt": "2026-10-17T14:57:45.055543+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -73238,6 +73422,11 @@
     },
     "afMonitor20261013": {
       "sameBatchAliased": 3
+    },
+    "dateAuditDupeMerge20261017": {
+      "at": "2026-10-17T14:57:45.055543+00:00",
+      "removed": 13,
+      "refused": 1
     }
   },
   "removed": [
@@ -76253,6 +76442,157 @@
         "id:ta-fb6caa693f86"
       ],
       "reason": "Duplicate (2026-10-13): ToyArk post 601361 'Spawn - Diablo Immortal Warlock Elite Edition' (mcfarlane/Spawn/7\") is the same product as MF16713 Spawn Warlock Diablo Immortal McFarlane Elite Edition #23; added by Mephitsu noon babysit 1ed412e2."
+    },
+    {
+      "keepId": "dcd4-throne-orm",
+      "dropId": "dcd6-dcd-orm",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd6-dcd-orm",
+        "https://www.dc.com/blog/2014/07/14/dc-collectibles-group-solicits-january/february-2015"
+      ],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit dupe (2026-10-17): same DC Collectibles Throne of Atlantis Ocean Master (Orm), dcdirect, line Throne of Atlantis, 2015, same variant; dcd6 copy came from curated-bbts-wave6 with identical fields. DC solicit (Jan/Feb 2015) $19.95."
+    },
+    {
+      "keepId": "dcd-sv-w6-ultraman",
+      "dropId": "dcd4-forever-evil-ultraman",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd4-forever-evil-ultraman",
+        "https://toynewsi.com/10-21020"
+      ],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Ultraman (David Finch design, dcdirect, 2014, single standard release). dcd4-forever-evil-ultraman is a line-label copy of the same figure; only one Ultraman existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-ultraman",
+      "dropId": "dcd6-dcd-ultraman",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd6-dcd-ultraman"
+      ],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Ultraman (David Finch design, dcdirect, 2014, single standard release). dcd6-dcd-ultraman is a line-label copy of the same figure; only one Ultraman existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-superwoman",
+      "dropId": "dcd4-forever-evil-superwoman",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd4-forever-evil-superwoman",
+        "https://toynewsi.com/10-21020"
+      ],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Superwoman (David Finch design, dcdirect, 2014, single standard release). dcd4-forever-evil-superwoman is a line-label copy of the same figure; only one Superwoman existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-superwoman",
+      "dropId": "dcd6-dcd-superwoman",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd6-dcd-superwoman"
+      ],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Superwoman (David Finch design, dcdirect, 2014, single standard release). dcd6-dcd-superwoman is a line-label copy of the same figure; only one Superwoman existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-power-ring",
+      "dropId": "dcd4-forever-evil-power",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd4-forever-evil-power",
+        "https://toynewsi.com/10-21020"
+      ],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Power Ring (David Finch design, dcdirect, 2014, single standard release). dcd4-forever-evil-power is a line-label copy of the same figure; only one Power Ring existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-power-ring",
+      "dropId": "dcd6-dcd-power-ring",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd6-dcd-power-ring"
+      ],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Power Ring (David Finch design, dcdirect, 2014, single standard release). dcd6-dcd-power-ring is a line-label copy of the same figure; only one Power Ring existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-owlman",
+      "dropId": "dcd4-forever-evil-owlman",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd4-forever-evil-owlman",
+        "https://toynewsi.com/10-21020"
+      ],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Owlman (David Finch design, dcdirect, 2014, single standard release). dcd4-forever-evil-owlman is a line-label copy of the same figure; only one Owlman existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-owlman",
+      "dropId": "dcd6-dcd-owlman",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd6-dcd-owlman"
+      ],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Owlman (David Finch design, dcdirect, 2014, single standard release). dcd6-dcd-owlman is a line-label copy of the same figure; only one Owlman existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-johnny-quick",
+      "dropId": "dcd4-forever-evil-johnny",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd4-forever-evil-johnny",
+        "https://toynewsi.com/10-21020"
+      ],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Johnny Quick (David Finch design, dcdirect, 2014, single standard release). dcd4-forever-evil-johnny is a line-label copy of the same figure; only one Johnny Quick existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-johnny-quick",
+      "dropId": "dcd6-dcd-johnny-quick",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd6-dcd-johnny-quick"
+      ],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit dupe (2026-10-17): DC Collectibles Forever Evil / New 52 Crime Syndicate Johnny Quick (David Finch design, dcdirect, 2014, single standard release). dcd6-dcd-johnny-quick is a line-label copy of the same figure; only one Johnny Quick existed in the DCC Crime Syndicate wave (ToyNewsI solicit, $24.95 each, Feb/Mar 2014)."
+    },
+    {
+      "keepId": "dcd-sv-w6-lex-armor",
+      "dropId": "dcd4-new52-lex",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:dcd4-new52-lex",
+        "https://www.toyark.com/2014/07/17/dcc-deluxe-armored-lex-luthor-hand-gallery-128902",
+        "761941319278"
+      ],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit dupe (2026-10-17): the only DC Collectibles New 52 Lex Luthor figure of 2013-14 is the July 2014 Deluxe Armored Lex Luthor (UPC 761941319278; ToyArk in-hand gallery). dcd4-new52-lex (dcdirect, not McFarlane) is a line-label copy of that figure; folded into the existing armored row rather than each other."
+    },
+    {
+      "keepId": "dcd-sv-w6-lex-armor",
+      "dropId": "mcfdc-n52-lex",
+      "canonicalSku": null,
+      "aliasesAdded": [
+        "id:mcfdc-n52-lex"
+      ],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Date audit dupe (2026-10-17): the only DC Collectibles New 52 Lex Luthor figure of 2013-14 is the July 2014 Deluxe Armored Lex Luthor (UPC 761941319278; ToyArk in-hand gallery). mcfdc-n52-lex (dcdirect, not McFarlane) is a line-label copy of that figure; folded into the existing armored row rather than each other."
     }
   ],
   "strippedCodes": [
@@ -76952,6 +77292,15 @@
       "imageDropped": false,
       "imageUrls": [],
       "reason": "Meph night babysit 2026-10-07: Mephitsu bake proposed 65100000, which fails EAN-8 checksum (not a real GTIN)."
+    },
+    {
+      "figureId": "dcd-sv-w6-lex-armor",
+      "codes": [],
+      "imageDropped": true,
+      "imageUrls": [
+        "https://cdn.shopify.com/s/files/1/0758/8457/products/DSCN0785-4.jpg?v=1670605548"
+      ],
+      "reason": "Lex merge 2026-10-17: photo carried by dropped dcd4-new52-lex is an Eaglemoss Lex Luthor statue, not the DCC Armored Lex figure; do not re-attach."
     }
   ],
   "figureIdToAliases": {}
