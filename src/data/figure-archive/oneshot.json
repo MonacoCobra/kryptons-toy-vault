@@ -220697,8 +220697,8 @@
       "date-precision:year"
     ],
     "source": "curated-bbts-wave5",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-avengers-doomsday-gambit-5010996355812.jpg?v=1785179892",
-    "sku": "5010996355812"
+    "imageUrl": null,
+    "sku": null
   },
   {
     "id": "mlc-forge-classic",
@@ -237432,8 +237432,8 @@
       "alias:hasbro-pulse"
     ],
     "source": "curated",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-avengers-doomsday-cyclops-5010996355805.jpg?v=1785179880",
-    "sku": "5010996355805"
+    "imageUrl": null,
+    "sku": null
   },
   {
     "id": "joec-classified-covergirl",
@@ -286869,8 +286869,8 @@
       "imgsku:cmdstore"
     ],
     "source": "curated-bbts-wave2",
-    "sku": "5010996355836",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-avengers-doomsday-captain-america-falcon-5010996355836.jpg?v=1785179938"
+    "sku": null,
+    "imageUrl": null
   },
   {
     "id": "pr2-zeo-blue",
@@ -338297,8 +338297,8 @@
       "alias:hasbro-pulse"
     ],
     "source": "curated",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-avengers-doomsday-doctor-doom-5010996355782.jpg?v=1785179598",
-    "sku": "5010996355782"
+    "imageUrl": null,
+    "sku": null
   },
   {
     "id": "d14bs-vader-roto",
@@ -376649,8 +376649,8 @@
       "alias:kitsap"
     ],
     "source": "curated",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-avengers-doomsday-thor-5010996355799.jpg?v=1785179880",
-    "sku": "5010996355799"
+    "imageUrl": null,
+    "sku": null
   },
   {
     "id": "d14ml-thanos-baf",
@@ -724438,7 +724438,8 @@
       "wave15",
       "mattel",
       "dcuc",
-      "multipack"
+      "multipack",
+      "toys-r-us-exclusive"
     ],
     "source": "curated-dc-gap-wave15"
   },
@@ -738125,5 +738126,309 @@
     ],
     "source": "curated-dc-gap-wave23",
     "msrp": 24.99
+  },
+  {
+    "id": "ml5-ml-doctor-doom-movie-doomsday",
+    "name": "Doctor Doom Avengers: Doomsday (2026)",
+    "subtitle": "Avengers: Doomsday Wave 1",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2026-01-01",
+    "msrp": 27.99,
+    "scale": "6\"",
+    "demand": 1.4,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "avengers-doomsday",
+      "curated",
+      "date-precision:year",
+      "msrp:hasbro-pulse"
+    ],
+    "source": "hasbro-announce-doomsday",
+    "sku": "5010996360533",
+    "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/07/MARVEL-LEGENDS-SERIES-MARVEL-STUDIOS-AVENGERS-DOOMSDAY-DOCTOR-DOOM-1.jpg"
+  },
+  {
+    "id": "ml5-ml-thor-movie-doomsday",
+    "name": "Thor Avengers: Doomsday (2026)",
+    "subtitle": "Avengers: Doomsday Wave 1",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2026-01-01",
+    "msrp": 27.99,
+    "scale": "6\"",
+    "demand": 1.4,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "avengers-doomsday",
+      "curated",
+      "date-precision:year",
+      "msrp:hasbro-pulse"
+    ],
+    "source": "hasbro-announce-doomsday",
+    "sku": "5010996360519",
+    "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/07/MARVEL-LEGENDS-SERIES-MARVEL-STUDIOS-AVENGERS-DOOMSDAY-THOR-1.jpg"
+  },
+  {
+    "id": "ml5-ml-cyclops-movie-doomsday",
+    "name": "Cyclops Avengers: Doomsday (2026)",
+    "subtitle": "Avengers: Doomsday Wave 1",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2026-01-01",
+    "msrp": 27.99,
+    "scale": "6\"",
+    "demand": 1.4,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "avengers-doomsday",
+      "curated",
+      "date-precision:year",
+      "msrp:hasbro-pulse"
+    ],
+    "source": "hasbro-announce-doomsday",
+    "sku": "5010996360502",
+    "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/07/MARVEL-LEGENDS-SERIES-MARVEL-STUDIOS-AVENGERS-DOOMSDAY-CYCLOPS-1.jpg"
+  },
+  {
+    "id": "ml5-ml-magneto-movie-doomsday",
+    "name": "Magneto Avengers: Doomsday (2026)",
+    "subtitle": "Avengers: Doomsday Amazon Exclusive",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2026-01-01",
+    "msrp": 27.99,
+    "scale": "6\"",
+    "demand": 1.4,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "avengers-doomsday",
+      "curated",
+      "date-precision:year",
+      "amazon-exclusive",
+      "msrp:hasbro-press"
+    ],
+    "source": "hasbro-announce-doomsday",
+    "sku": "5010996360588",
+    "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/07/MARVEL-LEGENDS-SERIES-MARVEL-STUDIOS-AVENGERS-DOOMSDAY-MAGNETO-1.jpg"
+  },
+  {
+    "id": "ml5-ml-the-thing-movie-doomsday",
+    "name": "The Thing Avengers: Doomsday (2026)",
+    "subtitle": "Avengers: Doomsday Walmart Exclusive",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2026-10-01",
+    "msrp": 27.99,
+    "scale": "6\"",
+    "demand": 1.4,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "avengers-doomsday",
+      "curated",
+      "date-precision:month",
+      "walmart-exclusive",
+      "msrp:hasbro-press"
+    ],
+    "source": "hasbro-announce-doomsday",
+    "sku": "5010996411136",
+    "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/07/MARVEL-LEGENDS-SERIES-MARVELS-THE-THING-MARVEL-STUDIOS-AVENGERS-DOOMSDAY-1.jpg"
+  },
+  {
+    "id": "ml5-ml-mister-fantastic-herbie-movie-doomsday",
+    "name": "Mister Fantastic & H.E.R.B.I.E. Avengers: Doomsday (2026)",
+    "subtitle": "Avengers: Doomsday Walmart Exclusive 2-Pack",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2026-10-01",
+    "msrp": null,
+    "scale": "6\"",
+    "demand": 1.4,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "avengers-doomsday",
+      "curated",
+      "date-precision:month",
+      "walmart-exclusive",
+      "multipack",
+      "2-pack"
+    ],
+    "source": "hasbro-announce-doomsday",
+    "sku": "5010996424990",
+    "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/07/MARVEL-LEGENDS-SERIES-MISTER-FANTASTIC-MARVELS-H.E.R.B.I.E-1.jpg"
+  },
+  {
+    "id": "ml5-ml-invisible-woman-human-torch-movie-doomsday",
+    "name": "Invisible Woman & Human Torch Avengers: Doomsday (2026)",
+    "subtitle": "Avengers: Doomsday Walmart Exclusive 2-Pack",
+    "line": "Marvel Legends",
+    "company": "hasbro",
+    "kind": "figure",
+    "releaseDate": "2026-10-01",
+    "msrp": null,
+    "scale": "6\"",
+    "demand": 1.4,
+    "tags": [
+      "hasbro",
+      "marvel",
+      "legends",
+      "avengers-doomsday",
+      "curated",
+      "date-precision:month",
+      "walmart-exclusive",
+      "multipack",
+      "2-pack"
+    ],
+    "source": "hasbro-announce-doomsday",
+    "sku": "5010996428431",
+    "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/07/MARVEL-LEGENDS-SERIES-MARVELS-INVISIBLE-WOMAN-HUMAN-TORCH-1.jpg"
+  },
+  {
+    "id": "sf-mattel-shop-dc-premier-batman-green-lantern-hal-jordan-vs-mr-freeze-3-pack-jmd65",
+    "name": "DC Premier Batman & Green Lantern (Hal Jordan) vs. Mr. Freeze 3-Pack",
+    "subtitle": "mattel-shop",
+    "line": "DC Comics",
+    "company": "mattel",
+    "kind": "figure",
+    "releaseDate": "2026-06-01",
+    "msrp": null,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "archive",
+      "brand: dc",
+      "category: action figures",
+      "figure",
+      "mattel",
+      "dc-premier",
+      "theme: comics",
+      "date-precision:month",
+      "multipack",
+      "3-pack"
+    ],
+    "sku": "194735374779",
+    "source": "mattel-shop-announce",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0600/0141/9429/files/aed131e2a0bdfc75542cd141661dd69016c9d6e4.jpg?v=1788456331"
+  },
+  {
+    "id": "sf-mattel-shop-dc-premier-batman-vs-killer-croc-2-pack-jmd57",
+    "name": "DC Premier Batman vs. Killer Croc 2-Pack",
+    "subtitle": "mattel-shop",
+    "line": "DC Comics",
+    "company": "mattel",
+    "kind": "figure",
+    "releaseDate": "2026-06-01",
+    "msrp": null,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "archive",
+      "brand: dc",
+      "category: action figures",
+      "figure",
+      "mattel",
+      "dc-premier",
+      "theme: comics",
+      "date-precision:month",
+      "multipack",
+      "2-pack"
+    ],
+    "sku": "194735374694",
+    "source": "mattel-shop-announce",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0600/0141/9429/files/d27b1e5180825638157c8ac2ed18f24c7552ca04.jpg?v=1789661431"
+  },
+  {
+    "id": "sf-mattel-shop-dc-premier-mech-suit-batman-action-figure-jmd86",
+    "name": "DC Premier Oversized Armored (Mech Suit) Batman Feature Figure",
+    "subtitle": "mattel-shop",
+    "line": "DC Comics",
+    "company": "mattel",
+    "kind": "figure",
+    "releaseDate": "2026-07-01",
+    "msrp": null,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "archive",
+      "brand: dc",
+      "category: action figures",
+      "figure",
+      "mattel",
+      "dc-premier",
+      "theme: comics",
+      "date-precision:month"
+    ],
+    "sku": "194735374977",
+    "source": "mattel-shop-announce",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0600/0141/9429/files/95dcf9670bcf7e322e7a4582343233de39a2c56b.jpg?v=1783368995"
+  },
+  {
+    "id": "sf-mattel-shop-dc-premier-robin-motorcycle-vehicle-jmd51",
+    "name": "DC Premier Batlink Robin Figure & Motorcycle",
+    "subtitle": "mattel-shop",
+    "line": "DC Comics",
+    "company": "mattel",
+    "kind": "vehicle",
+    "releaseDate": "2026-06-01",
+    "msrp": null,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "archive",
+      "brand: dc",
+      "category: action figures",
+      "vehicle",
+      "mattel",
+      "dc-premier",
+      "theme: comics",
+      "date-precision:month"
+    ],
+    "sku": "194735374632",
+    "source": "mattel-shop-announce",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0600/0141/9429/files/400f2da46c2f78d8b9bff0eea11abb585abdfc32.jpg?v=1781882881"
+  },
+  {
+    "id": "sf-mattel-shop-dc-premier-batlink-pack-jrk04",
+    "name": "DC Premier Batlink Pack (Batmobile, Robin Cycle, Batman & Robin)",
+    "subtitle": "mattel-shop",
+    "line": "DC Comics",
+    "company": "mattel",
+    "kind": "vehicle",
+    "releaseDate": "2026-07-01",
+    "msrp": null,
+    "scale": "6\"",
+    "demand": 1.0,
+    "tags": [
+      "archive",
+      "brand: dc",
+      "category: action figures",
+      "vehicle",
+      "mattel",
+      "dc-premier",
+      "theme: comics",
+      "date-precision:month",
+      "multipack"
+    ],
+    "sku": "194735422746",
+    "source": "mattel-shop-announce",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0600/0141/9429/files/6927184bfb5e1d48761124c0a9bf5f3812b9b7f3.jpg?v=1787862341"
   }
 ]
