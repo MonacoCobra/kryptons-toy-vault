@@ -1,0 +1,1021 @@
+{
+  "at": "2026-10-17T15:09:02.699057+00:00",
+  "dryRun": false,
+  "rowsBefore": 30410,
+  "rowsAfter": 30358,
+  "removed": 52,
+  "gtinAliasesAdded": 44,
+  "skuIndexFixed": 35,
+  "integrity": {
+    "dupIds": 0,
+    "danglingAliases": 0,
+    "danglingSet": []
+  },
+  "problems": [],
+  "merges": [
+    {
+      "dropId": "mcf-cnc-w21-justice-buster-cnc-3067",
+      "keepId": "mat-mmv-w4-justice-buster-batman-endgame-collect-connect",
+      "aliasesAdded": [
+        "af411:3067",
+        "id:mcf-cnc-w21-justice-buster-cnc-3067"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-batman-zero-year-3061",
+      "keepId": "mat-mmv-w4-batman-zero-year",
+      "aliasesAdded": [
+        "af411:3061",
+        "887961245189",
+        "id:mcf-cnc-w21-batman-zero-year-3061"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-flash-tv-series-3062",
+      "keepId": "mat-mmv-w4-the-flash-flash-tv-series-2016",
+      "aliasesAdded": [
+        "af411:3062",
+        "887961245240",
+        "id:mcf-cnc-w21-flash-tv-series-3062"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-green-arrow-tv-series-3066",
+      "keepId": "mat-mmv-w4-green-arrow-arrow-tv-series",
+      "aliasesAdded": [
+        "af411:3066",
+        "887961245219",
+        "id:mcf-cnc-w21-green-arrow-tv-series-3066"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-joker-batman-endgame-3065",
+      "keepId": "mat-mmv-w4-the-joker-batman-endgame",
+      "aliasesAdded": [
+        "af411:3065",
+        "887961245226",
+        "id:mcf-cnc-w21-joker-batman-endgame-3065"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-reverse-flash-tv-series-3063",
+      "keepId": "mat-mmv-w4-reverse-flash-flash-tv-series",
+      "aliasesAdded": [
+        "af411:3063",
+        "887961245257",
+        "id:mcf-cnc-w21-reverse-flash-tv-series-3063"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-superman-earth-23-3064",
+      "keepId": "mat-mmv-w4-superman-earth-23",
+      "aliasesAdded": [
+        "af411:3064",
+        "887961245264",
+        "id:mcf-cnc-w21-superman-earth-23-3064"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-armored-batman-the-dark-knight-returns-3069",
+      "keepId": "mat-mmv-w4-armored-batman-dark-knight-returns",
+      "aliasesAdded": [
+        "af411:3069",
+        "887961309485",
+        "id:mcf-cnc-w21-armored-batman-the-dark-knight-returns-3069"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-lex-luthor-batman-vs-superman-3072",
+      "keepId": "mat-mmv-w4-lex-luthor-bvs-battle-armor",
+      "aliasesAdded": [
+        "af411:3072",
+        "887961309478",
+        "id:mcf-cnc-w21-lex-luthor-batman-vs-superman-3072"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-mutant-leader-the-dark-knight-returns-3071",
+      "keepId": "mat-mmv-w4-mutant-leader-dark-knight-returns",
+      "aliasesAdded": [
+        "af411:3071",
+        "887961309492",
+        "id:mcf-cnc-w21-mutant-leader-the-dark-knight-returns-3071"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-new-52-doomsday-cnc-3074",
+      "keepId": "mat-mmv-w4-doomsday-new-52-collect-connect",
+      "aliasesAdded": [
+        "af411:3074",
+        "id:mcf-cnc-w21-new-52-doomsday-cnc-3074"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-robin-carrie-kelly-the-dark-knight-returns-3070",
+      "keepId": "mat-mmv-w4-robin-dark-knight-returns",
+      "aliasesAdded": [
+        "af411:3070",
+        "887961309515",
+        "id:mcf-cnc-w21-robin-carrie-kelly-the-dark-knight-returns-3070"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-supergirl-tv-series-3068",
+      "keepId": "mat-mmv-w4-supergirl-supergirl-tv-series",
+      "aliasesAdded": [
+        "af411:3068",
+        "887961309508",
+        "id:mcf-cnc-w21-supergirl-tv-series-3068"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-superman-doomed-3073",
+      "keepId": "mat-mmv-w4-superman-superman-doomed",
+      "aliasesAdded": [
+        "af411:3073",
+        "887961309522",
+        "id:mcf-cnc-w21-superman-doomed-3073"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-aquaman-batman-vs-superman-3082",
+      "keepId": "mat-mmv-w4-aquaman-batman-v-superman",
+      "aliasesAdded": [
+        "af411:3082",
+        "887961297201",
+        "id:mcf-cnc-w21-aquaman-batman-vs-superman-3082"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-armored-batman-batman-vs-superman-3079",
+      "keepId": "mat-mmv-w4-armored-batman-batman-v-superman",
+      "aliasesAdded": [
+        "af411:3079",
+        "887961224917",
+        "id:mcf-cnc-w21-armored-batman-batman-vs-superman-3079"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-bat-creature-batman-vs-superman-3080",
+      "keepId": "mat-mmv-w4-bat-creature-batman-v-superman",
+      "aliasesAdded": [
+        "af411:3080",
+        "887961297218",
+        "id:mcf-cnc-w21-bat-creature-batman-vs-superman-3080"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-batman-batman-vs-superman-3078",
+      "keepId": "mat-mmv-w4-batman-batman-v-superman",
+      "aliasesAdded": [
+        "af411:3078",
+        "id:mcf-cnc-w21-batman-batman-vs-superman-3078"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-knightmare-batman-batman-vs-superman-3077",
+      "keepId": "mat-mmv-w4-knightmare-batman-batman-v-superman",
+      "aliasesAdded": [
+        "af411:3077",
+        "887961224955",
+        "id:mcf-cnc-w21-knightmare-batman-batman-vs-superman-3077"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-lex-luthor-batman-vs-superman-3083",
+      "keepId": "mat-mmv-w4-lex-luthor-batman-v-superman",
+      "aliasesAdded": [
+        "af411:3083",
+        "887961224962",
+        "id:mcf-cnc-w21-lex-luthor-batman-vs-superman-3083"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-superman-batman-vs-superman-3075",
+      "keepId": "mat-mmv-w4-superman-batman-v-superman",
+      "aliasesAdded": [
+        "af411:3075",
+        "887961224924",
+        "id:mcf-cnc-w21-superman-batman-vs-superman-3075"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-superman-heat-vision-batman-vs-superman-3076",
+      "keepId": "mat-mmv-w4-superman-bvs-heat-vision-tru",
+      "aliasesAdded": [
+        "af411:3076",
+        "887961293067",
+        "id:mcf-cnc-w21-superman-heat-vision-batman-vs-superman-3076"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-wonder-woman-batman-vs-superman-3081",
+      "keepId": "mat-mmv-w4-wonder-woman-batman-v-superman",
+      "aliasesAdded": [
+        "af411:3081",
+        "887961224931",
+        "id:mcf-cnc-w21-wonder-woman-batman-vs-superman-3081"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-batman-gas-mask-suicide-squad-3090",
+      "keepId": "mat-mmv-w4-batman-suicide-squad",
+      "aliasesAdded": [
+        "af411:3090",
+        "887961308181",
+        "id:mcf-cnc-w21-batman-gas-mask-suicide-squad-3090"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-boomerang-suicide-squad-3089",
+      "keepId": "mat-mmv-w4-captain-boomerang-suicide-squad",
+      "aliasesAdded": [
+        "af411:3089",
+        "887961308174",
+        "id:mcf-cnc-w21-boomerang-suicide-squad-3089"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-deadshot-suicide-squad-3086",
+      "keepId": "mat-mmv-w4-deadshot-suicide-squad",
+      "aliasesAdded": [
+        "af411:3086",
+        "887961308211",
+        "id:mcf-cnc-w21-deadshot-suicide-squad-3086"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-diablo-suicide-squad-3181",
+      "keepId": "mat-mmv-w4-el-diablo-suicide-squad-walmart",
+      "aliasesAdded": [
+        "af411:3181",
+        "887961350180",
+        "id:mcf-cnc-w21-diablo-suicide-squad-3181"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-harley-quinn-baseball-bat-suicide-squad-3085",
+      "keepId": "mat-mmv-w4-harley-quinn-suicide-squad",
+      "aliasesAdded": [
+        "af411:3085",
+        "887961308204",
+        "id:mcf-cnc-w21-harley-quinn-baseball-bat-suicide-squad-3085"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-joker-suicide-squad-3087",
+      "keepId": "mat-mmv-w4-the-joker-suicide-squad",
+      "aliasesAdded": [
+        "af411:3087",
+        "887961308167",
+        "id:mcf-cnc-w21-joker-suicide-squad-3087"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-katana-suicide-squad-3088",
+      "keepId": "mat-mmv-w4-katana-suicide-squad",
+      "aliasesAdded": [
+        "af411:3088",
+        "887961308198",
+        "id:mcf-cnc-w21-katana-suicide-squad-3088"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-killer-croc-cnc-3091",
+      "keepId": "mat-mmv-w4-killer-croc-suicide-squad-collect-connect",
+      "aliasesAdded": [
+        "af411:3091",
+        "id:mcf-cnc-w21-killer-croc-cnc-3091"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-batgirl-barbara-gordon-3093",
+      "keepId": "mat-mmv-w4-batgirl-batgirl-of-burnside",
+      "aliasesAdded": [
+        "af411:3093",
+        "887961385151",
+        "id:mcf-cnc-w21-batgirl-barbara-gordon-3093"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-batman-james-gordon-superheavy-3092",
+      "keepId": "mat-mmv-w4-batman-jim-gordon-batman-new-52",
+      "aliasesAdded": [
+        "af411:3092",
+        "887961385069",
+        "id:mcf-cnc-w21-batman-james-gordon-superheavy-3092"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-flash-earth-2-tv-series-3096",
+      "keepId": "mat-mmv-w4-the-flash-earth-2-flash-tv",
+      "aliasesAdded": [
+        "af411:3096",
+        "887961385021",
+        "id:mcf-cnc-w21-flash-earth-2-tv-series-3096"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-hawkman-legends-of-tomorrow-3094",
+      "keepId": "mat-mmv-w4-hawkman-dc-legends-of-tomorrow",
+      "aliasesAdded": [
+        "af411:3094",
+        "887961385212",
+        "id:mcf-cnc-w21-hawkman-legends-of-tomorrow-3094"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-joker-the-dark-knight-returns-3097",
+      "keepId": "mat-mmv-w4-the-joker-dark-knight-returns-2017",
+      "aliasesAdded": [
+        "af411:3097",
+        "887961385175",
+        "id:mcf-cnc-w21-joker-the-dark-knight-returns-3097"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-king-shark-cnc-3098",
+      "keepId": "mat-mmv-w4-king-shark-flash-tv-collect-connect",
+      "aliasesAdded": [
+        "af411:3098",
+        "id:mcf-cnc-w21-king-shark-cnc-3098"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-robin-damian-wayne-3099",
+      "keepId": "mat-mmv-w4-robin-damian-wayne-robin-war",
+      "aliasesAdded": [
+        "af411:3099",
+        "887961484069",
+        "id:mcf-cnc-w21-robin-damian-wayne-3099"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-zoom-the-flash-tv-series-3095",
+      "keepId": "mat-mmv-w4-zoom-flash-tv-series",
+      "aliasesAdded": [
+        "af411:3095",
+        "887961385182",
+        "id:mcf-cnc-w21-zoom-the-flash-tv-series-3095"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-ares-cnc-3105",
+      "keepId": "mat-mmv-w4-ares-wonder-woman-movie-collect-connect",
+      "aliasesAdded": [
+        "af411:3105",
+        "id:mcf-cnc-w21-ares-cnc-3105"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-diana-of-themyscira-wonder-woman-3104",
+      "keepId": "mat-mmv-w4-diana-of-themyscira-wonder-woman-movie",
+      "aliasesAdded": [
+        "af411:3104",
+        "887961466706",
+        "id:mcf-cnc-w21-diana-of-themyscira-wonder-woman-3104"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-hippolyta-wonder-woman-3103",
+      "keepId": "mat-mmv-w4-queen-hippolyta-wonder-woman-movie",
+      "aliasesAdded": [
+        "af411:3103",
+        "887961466676",
+        "id:mcf-cnc-w21-hippolyta-wonder-woman-3103"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-menalippe-wonder-woman-3100",
+      "keepId": "mat-mmv-w4-menalippe-wonder-woman-movie",
+      "aliasesAdded": [
+        "af411:3100",
+        "887961484083",
+        "id:mcf-cnc-w21-menalippe-wonder-woman-3100"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-steve-trevor-wonder-woman-3102",
+      "keepId": "mat-mmv-w4-steve-trevor-wonder-woman-movie",
+      "aliasesAdded": [
+        "af411:3102",
+        "887961466720",
+        "id:mcf-cnc-w21-steve-trevor-wonder-woman-3102"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-wonder-woman-cloaked-3101",
+      "keepId": "mat-mmv-w4-wonder-woman-wonder-woman-movie",
+      "aliasesAdded": [
+        "af411:3101",
+        "887961466713",
+        "id:mcf-cnc-w21-wonder-woman-cloaked-3101"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-atom-legends-of-tomorrow-3109",
+      "keepId": "mat-mmv-w4-the-atom-legends-of-tomorrow",
+      "aliasesAdded": [
+        "af411:3109",
+        "887961500844",
+        "id:mcf-cnc-w21-atom-legends-of-tomorrow-3109"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-batman-rebirth-3106",
+      "keepId": "mat-mmv-w4-batman-rebirth-exo-suit-wave",
+      "aliasesAdded": [
+        "af411:3106",
+        "887961385090",
+        "id:mcf-cnc-w21-batman-rebirth-3106"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-batwing-rebirth-3108",
+      "keepId": "mat-mmv-w4-batwing-new-52",
+      "aliasesAdded": [
+        "af411:3108",
+        "887961385113",
+        "id:mcf-cnc-w21-batwing-rebirth-3108"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-duke-thomas-we-are-robin-3107",
+      "keepId": "mat-mmv-w4-duke-thomas-the-signal-new-52",
+      "aliasesAdded": [
+        "af411:3107",
+        "887961385045",
+        "id:mcf-cnc-w21-duke-thomas-we-are-robin-3107"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-reaper-batman-year-two-3110",
+      "keepId": "mat-mmv-w4-reaper-batman-year-two",
+      "aliasesAdded": [
+        "af411:3110",
+        "887961385106",
+        "id:mcf-cnc-w21-reaper-batman-year-two-3110"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mcf-cnc-w21-rookie-cnc-3111",
+      "keepId": "mat-mmv-w4-batman-exo-suit-rookie",
+      "aliasesAdded": [
+        "af411:3111",
+        "id:mcf-cnc-w21-rookie-cnc-3111"
+      ],
+      "imageCarried": null
+    },
+    {
+      "dropId": "mf8-mf-04",
+      "keepId": "mat-mmv-w4-the-joker-dark-knight-returns-2017",
+      "aliasesAdded": [
+        "id:mf8-mf-04"
+      ],
+      "imageCarried": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-dark-knight-returns-6-inch-action-figure-dark-knight-returns-joker_image.gif?v=1747154504"
+    }
+  ],
+  "unique": [
+    {
+      "id": "mcf-cnc-w21-grapnel-blaster-cnc-3084",
+      "before": {
+        "company": "mcfarlane",
+        "line": "DC Multiverse",
+        "subtitle": "Collect-and-Connect Grapnel Blaster",
+        "releaseDate": "2016-01-01",
+        "scale": "7\""
+      },
+      "after": {
+        "company": "mattel",
+        "line": "DC Multiverse Mattel",
+        "subtitle": "Collect & Connect Grapnel Blaster",
+        "releaseDate": "2016-01-01",
+        "scale": "6in"
+      }
+    },
+    {
+      "id": "mcf-cnc-w21-harley-quinn-gold-black-dress-suicide-squad-3179",
+      "before": {
+        "company": "mcfarlane",
+        "line": "DC Multiverse",
+        "subtitle": "Collect-and-Connect Killer Croc Amazon Exclusive",
+        "releaseDate": "2016-01-01",
+        "scale": "7\""
+      },
+      "after": {
+        "company": "mattel",
+        "line": "DC Multiverse Mattel",
+        "subtitle": "Collect & Connect Killer Croc Amazon Exclusive",
+        "releaseDate": "2016-01-01",
+        "scale": "6in"
+      }
+    },
+    {
+      "id": "mcf-cnc-w21-harley-quinn-mallet-suicide-squad-3178",
+      "before": {
+        "company": "mcfarlane",
+        "line": "DC Multiverse",
+        "subtitle": "Collect-and-Connect Killer Croc Toys R Us Exclusive",
+        "releaseDate": "2016-01-01",
+        "scale": "7\""
+      },
+      "after": {
+        "company": "mattel",
+        "line": "DC Multiverse Mattel",
+        "subtitle": "Collect & Connect Killer Croc Toys R Us Exclusive",
+        "releaseDate": "2016-01-01",
+        "scale": "6in"
+      }
+    },
+    {
+      "id": "mcf-cnc-w21-joker-silver-suit-suicide-squad-3180",
+      "before": {
+        "company": "mcfarlane",
+        "line": "DC Multiverse",
+        "subtitle": "Collect-and-Connect Killer Croc Toys R Us Exclusive",
+        "releaseDate": "2016-01-01",
+        "scale": "7\""
+      },
+      "after": {
+        "company": "mattel",
+        "line": "DC Multiverse Mattel",
+        "subtitle": "Collect & Connect Killer Croc Toys R Us Exclusive",
+        "releaseDate": "2016-01-01",
+        "scale": "6in"
+      }
+    }
+  ],
+  "stripped": [
+    {
+      "id": "mcfc-killer-croc",
+      "code": "887961308198",
+      "imageCleared": [],
+      "imageKept": "https://static.wixstatic.com/media/adc447_ac7f27d2be134bb086e49a9845f1e22a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ac7f27d2be134bb086e49a9845f1e22a~mv2.jpeg"
+    },
+    {
+      "id": "mcfc-robin-damian",
+      "code": "887961484069",
+      "imageCleared": [
+        "https://cdn.shopify.com/s/files/1/0216/0984/0740/products/dc-multiverse-court-of-owls-series-6-inch-action-figure-robin-damian-wayne_image.gif?v=1658537992"
+      ],
+      "imageKept": null
+    },
+    {
+      "id": "mcfdc-flash-season-7",
+      "code": "887961385021",
+      "imageCleared": [
+        "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-flash-cw-6-inch-action-figure-earth-2-flash_image.gif?v=1747863999"
+      ],
+      "imageKept": null
+    },
+    {
+      "id": "d14mcf-batman-inj",
+      "code": "887961611410",
+      "imageCleared": [
+        "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-comics-multiverse-game-series-6-inch-action-figure-injustice-2-batman.jpg?v=1784744633"
+      ],
+      "imageKept": null
+    },
+    {
+      "id": "d14mcf-ww-blackest",
+      "code": "887961483840",
+      "imageCleared": [
+        "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-dr-psycho-series-6-inch-action-figure-dark-knight-returns-wonder-woman_image.gif?v=1723132672"
+      ],
+      "imageKept": null
+    },
+    {
+      "id": "d14mcf-ww-tas",
+      "code": "887961670462",
+      "imageCleared": [
+        "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-comics-multiverse-lex-luthor-series-6-inch-action-figure-wonder-woman.jpg?v=1723124052"
+      ],
+      "imageKept": null
+    },
+    {
+      "id": "mf10-mf-36",
+      "code": "887961753615",
+      "imageCleared": [
+        "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-baf-batman-ninja-series-6-inch-action-figure-best-boy_pkg.jpg?v=1685154204"
+      ],
+      "imageKept": null
+    },
+    {
+      "id": "mcfdc-batman-arkham-city",
+      "code": "887961670486",
+      "imageCleared": [],
+      "imageKept": null
+    }
+  ],
+  "skuIndexRecords": [
+    {
+      "id": "cmdstore:dc-multiverse-the-flash-cw-6-inch-action-figure-earth-2-flash",
+      "barcode": "887961385021",
+      "name": "The Flash CW Earth 2 Flash #1 of 6"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-6-inch-batman-v-superman-dawn-of-justice-bat-creature",
+      "barcode": "887961297218",
+      "name": "Batman V Superman Bat Creature #7 of 8 (Shelf Wear Packaging)"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-baf-batman-ninja-series-6-inch-action-figure-wally-west",
+      "barcode": "887961753592",
+      "name": "Baf"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-baf-batman-ninja-series-6-inch-action-figure-john-stewart",
+      "barcode": "887961753608",
+      "name": "Baf"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-dark-knight-returns-6-inch-action-figure-dark-knight-returns-joker",
+      "barcode": "887961385175",
+      "name": "Dark Knight Returns Joker #6 of 6 (Shelf Wear Packaging)"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-bat-mech-suit-series-6-inch-batman",
+      "barcode": "887961385090",
+      "name": "DC Multiverse 6 Inch Action Figure Bat Mech Suit Series - Batman"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-ares-series-6-inch-action-figure-queen-hippolyta-piece-4",
+      "barcode": "887961466676",
+      "name": "DC Multiverse 6 Inch Action Figure Ares Series - Queen Hippolyta"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-baf-batman-ninja-series-6-inch-action-figure-best-boy",
+      "barcode": "887961753615",
+      "name": "Baf"
+    },
+    {
+      "id": "cmdstore:dc-comics-multiverse-lex-luthor-series-6-inch-action-figure-batman",
+      "barcode": "887961670486",
+      "name": "Batman DC Comics Multiverse 6 Inch Action Figure Lex Luthor Series"
+    },
+    {
+      "id": "cmdstore:batman-vs-superman-dawn-of-justice-movie-master-series-1-6-inch-wonder-woman",
+      "barcode": "887961224931",
+      "name": "Batman V Superman Wonder Woman #3 of 8 (Sub-Standard Packaging)"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-bat-mech-suit-series-6-inch-duke-thomas-we-are-robin",
+      "barcode": "887961385045",
+      "name": "We Are Robin Duke Thomas (Piece #3)"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-court-of-owls-series-6-inch-action-figure-robin-damian-wayne",
+      "barcode": "887961484069",
+      "name": "Robin Damian Wayne DC Multiverse 6 Inch Action FIgure Court Of Owls Series"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-supergirl-tv-show-6-inch-supergirl",
+      "barcode": "887961309508",
+      "name": "Supergirl TV Show Supergirl #4 of 6 (Shelf Wear Packaging)"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-6-inch-superdoom",
+      "barcode": "887961309522",
+      "name": "Superman Doomed #6 of 6"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-superfriends-series-6-inch-action-figure-superfriends-aquaman",
+      "barcode": "887961483857",
+      "name": "Superfriends Aquaman DC Multiverse 6 Inch Action Figure Superfriends Series"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-ares-series-6-inch-action-figure-steve-trevor-piece-2",
+      "barcode": "887961466720",
+      "name": "DC Multiverse 6 Inch Action Figure Ares Series - Steve Trevor"
+    },
+    {
+      "id": "cmdstore:dc-comics-multiverse-6-inch-action-figure-suicide-squad-katana",
+      "barcode": "887961308198",
+      "name": "Suicide Squad Katana #5 of 6 (Shelf Wear Packaging)"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-bat-mech-suit-series-6-inch-the-atom",
+      "barcode": "887961500844",
+      "name": "DC Multiverse 6 Inch Action Figure Bat Mech Suit Series - The Atom"
+    },
+    {
+      "id": "cmdstore:dc-comics-multiverse-lex-luthor-series-6-inch-action-figure-the-ray",
+      "barcode": "887961670516",
+      "name": "The Ray DC Comics Multiverse 6 Inch Action Figure Lex Luthor Series"
+    },
+    {
+      "id": "cmdstore:dc-comics-multiverse-killer-croc-series-6-inch-action-figure-kgbeast",
+      "barcode": "887961753813",
+      "name": "KGBeast DC Comics Multiverse 6 Inch Action Figure Killer Croc Series"
+    },
+    {
+      "id": "cmdstore:dc-comics-multiverse-lex-luthor-series-6-inch-action-figure-vixen",
+      "barcode": "887961670455",
+      "name": "Vixen (Sub-Standard Packaging)"
+    },
+    {
+      "id": "cmdstore:suicide-squad-6-inch-action-figure-dc-multiverse-boomerang",
+      "barcode": "887961308174",
+      "name": "Suicide Squad Boomerang #4 of 6 (Sub-Standard Packaging)"
+    },
+    {
+      "id": "cmdstore:dc-comics-multiverse-6-inch-action-figure-suicide-squad-the-joker",
+      "barcode": "887961308167",
+      "name": "Suicide Squad The Joker #1 of 6"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-6-inch-endgame-joker",
+      "barcode": "887961245226",
+      "name": "Endgame Joker #2 of 6 (Shelf Wear Packaging)"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-bat-mech-suit-series-6-inch-batwing",
+      "barcode": "887961385113",
+      "name": "DC Multiverse 6 Inch Action Figure Bat Mech Suit Series - Batwing"
+    },
+    {
+      "id": "cmdstore:dc-comics-multiverse-game-series-6-inch-action-figure-injustice-2-batman",
+      "barcode": "887961611410",
+      "name": "Injustice 2 Batman (Shelf Wear Packaging)"
+    },
+    {
+      "id": "cmdstore:batman-vs-superman-dawn-of-justice-movie-master-series-6-inch-lex-luthor-prison",
+      "barcode": "887961224962",
+      "name": "Batman V Superman Lex Luthor #5 of 8"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-ares-series-6-inch-action-figure-wonder-woman-piece-1",
+      "barcode": "887961466713",
+      "name": "DC Multiverse 6 Inch Action Figure Ares Series - Wonder Woman"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-dark-knight-returns-6-inch-mutant-leader",
+      "barcode": "887961309492",
+      "name": "The Dark Knight Returns Mutant Leader #5 of 6 (Sub-Standard Packaging)"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-justice-league-movie-steppenwolf-series-6-inch-action-figure-wonder-woman",
+      "barcode": "887961522389",
+      "name": "Wonder Woman"
+    },
+    {
+      "id": "cmdstore:dc-comics-multiverse-lex-luthor-series-6-inch-action-figure-wonder-woman",
+      "barcode": "887961670462",
+      "name": "Wonder Woman DC Comics Multiverse 6 Inch Action Figure Lex Luthor Series"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-dr-psycho-series-6-inch-action-figure-dark-knight-returns-wonder-woman",
+      "barcode": "887961483840",
+      "name": "Dark Knight Returns Wonder Woman"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-dr-psycho-series-6-inch-action-figure-wonder-girl",
+      "barcode": "887961483833",
+      "name": "Wonder Girl DC Multiverse 6 Inch Action Figure DR. Psycho Series"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-6-inch-nightmare-batman",
+      "barcode": "887961224955",
+      "name": "Batman V Superman Knightmare Batman #6 of 8 (Shelf Wear Packaging)"
+    },
+    {
+      "id": "cmdstore:dc-multiverse-ares-series-6-inch-action-figure-diana-of-themyscira-piece-3",
+      "barcode": "887961466706",
+      "name": "DC Multiverse 6 Inch Action Figure Ares Series - Diana Of Themyscira"
+    }
+  ],
+  "gtinAliases": [
+    {
+      "keepId": "mat-mmv-w4-batman-zero-year",
+      "gtin": "887961245189"
+    },
+    {
+      "keepId": "mat-mmv-w4-the-flash-flash-tv-series-2016",
+      "gtin": "887961245240"
+    },
+    {
+      "keepId": "mat-mmv-w4-green-arrow-arrow-tv-series",
+      "gtin": "887961245219"
+    },
+    {
+      "keepId": "mat-mmv-w4-the-joker-batman-endgame",
+      "gtin": "887961245226"
+    },
+    {
+      "keepId": "mat-mmv-w4-reverse-flash-flash-tv-series",
+      "gtin": "887961245257"
+    },
+    {
+      "keepId": "mat-mmv-w4-superman-earth-23",
+      "gtin": "887961245264"
+    },
+    {
+      "keepId": "mat-mmv-w4-armored-batman-dark-knight-returns",
+      "gtin": "887961309485"
+    },
+    {
+      "keepId": "mat-mmv-w4-lex-luthor-bvs-battle-armor",
+      "gtin": "887961309478"
+    },
+    {
+      "keepId": "mat-mmv-w4-mutant-leader-dark-knight-returns",
+      "gtin": "887961309492"
+    },
+    {
+      "keepId": "mat-mmv-w4-robin-dark-knight-returns",
+      "gtin": "887961309515"
+    },
+    {
+      "keepId": "mat-mmv-w4-supergirl-supergirl-tv-series",
+      "gtin": "887961309508"
+    },
+    {
+      "keepId": "mat-mmv-w4-superman-superman-doomed",
+      "gtin": "887961309522"
+    },
+    {
+      "keepId": "mat-mmv-w4-aquaman-batman-v-superman",
+      "gtin": "887961297201"
+    },
+    {
+      "keepId": "mat-mmv-w4-armored-batman-batman-v-superman",
+      "gtin": "887961224917"
+    },
+    {
+      "keepId": "mat-mmv-w4-bat-creature-batman-v-superman",
+      "gtin": "887961297218"
+    },
+    {
+      "keepId": "mat-mmv-w4-knightmare-batman-batman-v-superman",
+      "gtin": "887961224955"
+    },
+    {
+      "keepId": "mat-mmv-w4-lex-luthor-batman-v-superman",
+      "gtin": "887961224962"
+    },
+    {
+      "keepId": "mat-mmv-w4-superman-batman-v-superman",
+      "gtin": "887961224924"
+    },
+    {
+      "keepId": "mat-mmv-w4-superman-bvs-heat-vision-tru",
+      "gtin": "887961293067"
+    },
+    {
+      "keepId": "mat-mmv-w4-wonder-woman-batman-v-superman",
+      "gtin": "887961224931"
+    },
+    {
+      "keepId": "mat-mmv-w4-batman-suicide-squad",
+      "gtin": "887961308181"
+    },
+    {
+      "keepId": "mat-mmv-w4-captain-boomerang-suicide-squad",
+      "gtin": "887961308174"
+    },
+    {
+      "keepId": "mat-mmv-w4-deadshot-suicide-squad",
+      "gtin": "887961308211"
+    },
+    {
+      "keepId": "mat-mmv-w4-el-diablo-suicide-squad-walmart",
+      "gtin": "887961350180"
+    },
+    {
+      "keepId": "mat-mmv-w4-harley-quinn-suicide-squad",
+      "gtin": "887961308204"
+    },
+    {
+      "keepId": "mat-mmv-w4-the-joker-suicide-squad",
+      "gtin": "887961308167"
+    },
+    {
+      "keepId": "mat-mmv-w4-katana-suicide-squad",
+      "gtin": "887961308198"
+    },
+    {
+      "keepId": "mat-mmv-w4-batgirl-batgirl-of-burnside",
+      "gtin": "887961385151"
+    },
+    {
+      "keepId": "mat-mmv-w4-batman-jim-gordon-batman-new-52",
+      "gtin": "887961385069"
+    },
+    {
+      "keepId": "mat-mmv-w4-the-flash-earth-2-flash-tv",
+      "gtin": "887961385021"
+    },
+    {
+      "keepId": "mat-mmv-w4-hawkman-dc-legends-of-tomorrow",
+      "gtin": "887961385212"
+    },
+    {
+      "keepId": "mat-mmv-w4-the-joker-dark-knight-returns-2017",
+      "gtin": "887961385175"
+    },
+    {
+      "keepId": "mat-mmv-w4-robin-damian-wayne-robin-war",
+      "gtin": "887961484069"
+    },
+    {
+      "keepId": "mat-mmv-w4-zoom-flash-tv-series",
+      "gtin": "887961385182"
+    },
+    {
+      "keepId": "mat-mmv-w4-diana-of-themyscira-wonder-woman-movie",
+      "gtin": "887961466706"
+    },
+    {
+      "keepId": "mat-mmv-w4-queen-hippolyta-wonder-woman-movie",
+      "gtin": "887961466676"
+    },
+    {
+      "keepId": "mat-mmv-w4-menalippe-wonder-woman-movie",
+      "gtin": "887961484083"
+    },
+    {
+      "keepId": "mat-mmv-w4-steve-trevor-wonder-woman-movie",
+      "gtin": "887961466720"
+    },
+    {
+      "keepId": "mat-mmv-w4-wonder-woman-wonder-woman-movie",
+      "gtin": "887961466713"
+    },
+    {
+      "keepId": "mat-mmv-w4-the-atom-legends-of-tomorrow",
+      "gtin": "887961500844"
+    },
+    {
+      "keepId": "mat-mmv-w4-batman-rebirth-exo-suit-wave",
+      "gtin": "887961385090"
+    },
+    {
+      "keepId": "mat-mmv-w4-batwing-new-52",
+      "gtin": "887961385113"
+    },
+    {
+      "keepId": "mat-mmv-w4-duke-thomas-the-signal-new-52",
+      "gtin": "887961385045"
+    },
+    {
+      "keepId": "mat-mmv-w4-reaper-batman-year-two",
+      "gtin": "887961385106"
+    }
+  ],
+  "skippedUpc": [
+    {
+      "id": "mcf-cnc-w21-batman-batman-vs-superman-3078",
+      "upc": "617390971690"
+    }
+  ]
+}
