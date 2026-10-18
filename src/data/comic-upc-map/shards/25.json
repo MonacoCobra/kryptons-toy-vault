@@ -11008,6 +11008,9 @@
       "url": "https://www.comics.org/api/issue/1762222/"
     },
     "dc-batman-2016-42": {
+      "coverSource": "metron",
+      "coverSourceId": "884",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/01/08/batman-42.jpg",
       "fetchedAt": "2026-09-07T21:31:03Z",
       "source": "metron",
       "sourceId": "884",
@@ -11031,6 +11034,9 @@
       "url": "https://www.comics.org/api/issue/49317/"
     },
     "dc-batman-2016-47": {
+      "coverSource": "metron",
+      "coverSourceId": "907",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/01/09/batman-47.jpg",
       "fetchedAt": "2026-09-07T21:31:49Z",
       "source": "metron",
       "sourceId": "907",
@@ -51380,6 +51386,9 @@
       "url": "https://www.comics.org/api/issue/2045249/"
     },
     "mv-true-believers-star-wars-skywalker-strikes-1": {
+      "coverSource": "comicvine",
+      "coverSourceId": "706972",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6903203-01.jpg",
       "fetchedAt": "2026-09-14T21:03:10Z",
       "gcdIssueId": "1952618",
       "source": "gcd",

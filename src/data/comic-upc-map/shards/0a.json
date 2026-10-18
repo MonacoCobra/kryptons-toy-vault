@@ -10304,6 +10304,9 @@
       "url": "https://www.comics.org/api/issue/1676866/"
     },
     "dc-batman-2016-48": {
+      "coverSource": "metron",
+      "coverSourceId": "908",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/01/09/batman-48.jpg",
       "fetchedAt": "2026-09-07T21:31:58Z",
       "source": "metron",
       "sourceId": "908",
@@ -50937,6 +50940,9 @@
       "url": "https://www.comics.org/api/issue/1762477/"
     },
     "mv-true-believers-fantastic-four-super-skrull-1": {
+      "coverSource": "comicvine",
+      "coverSourceId": "695161",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6728487-01.jpg",
       "fetchedAt": "2026-09-14T21:02:35Z",
       "gcdIssueId": "1880710",
       "source": "gcd",
@@ -50955,6 +50961,9 @@
       "url": "https://www.comics.org/api/issue/1765894/"
     },
     "mv-true-believers-star-wars-darth-maul-1": {
+      "coverSource": "comicvine",
+      "coverSourceId": "707529",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6913179-01.jpg",
       "fetchedAt": "2026-09-14T21:03:04Z",
       "gcdIssueId": "1955784",
       "source": "gcd",

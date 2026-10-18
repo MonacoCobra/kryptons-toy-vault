@@ -10434,6 +10434,9 @@
       "url": "https://www.comics.org/api/issue/1658131/"
     },
     "dc-batman-2016-53": {
+      "coverSource": "metron",
+      "coverSourceId": "913",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/01/10/batman-53.jpg",
       "fetchedAt": "2026-09-07T21:33:02Z",
       "source": "metron",
       "sourceId": "913",
@@ -10676,6 +10679,9 @@
       "url": "https://www.comics.org/api/issue/2696891/"
     },
     "dc-batman-beyond-28": {
+      "coverSource": "metron",
+      "coverSourceId": "38340",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/09/18/batman-beyond-28.jpg",
       "fetchedAt": "2026-09-14T05:53:28Z",
       "gcdIssueId": "1914290",
       "source": "gcd",

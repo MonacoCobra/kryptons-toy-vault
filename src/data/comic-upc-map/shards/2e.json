@@ -10257,6 +10257,9 @@
       "url": "https://www.comics.org/api/issue/1848963/"
     },
     "dc-batman-2016-2019-66": {
+      "coverSource": "metron",
+      "coverSourceId": "1445",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/03/03/batman-66.jpg",
       "fetchedAt": "2026-09-14T05:50:17Z",
       "gcdIssueId": "1932137",
       "source": "gcd",
@@ -51899,6 +51902,9 @@
       "url": "https://www.comics.org/api/issue/1825190/"
     },
     "mv-true-believers-hulk-intelligent-hulk-1": {
+      "coverSource": "comicvine",
+      "coverSourceId": "718137",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/7059441-01.jpg",
       "fetchedAt": "2026-09-14T21:02:41Z",
       "gcdIssueId": "2013658",
       "source": "gcd",

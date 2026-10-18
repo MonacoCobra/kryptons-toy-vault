@@ -10390,6 +10390,9 @@
       "url": "https://www.comics.org/api/issue/1849046/"
     },
     "dc-batman-2016-52": {
+      "coverSource": "metron",
+      "coverSourceId": "912",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/01/10/batman-52.jpg",
       "fetchedAt": "2026-09-07T21:32:56Z",
       "source": "metron",
       "sourceId": "912",
@@ -50709,6 +50712,9 @@
       "url": "https://www.comics.org/api/issue/1793036/"
     },
     "mv-true-believers-x-men-jubilee-1": {
+      "coverSource": "comicvine",
+      "coverSourceId": "723119",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/7109893-01.jpg",
       "fetchedAt": "2026-09-14T21:03:23Z",
       "gcdIssueId": "2024807",
       "source": "gcd",
@@ -52230,6 +52236,9 @@
       "url": "https://www.comics.org/api/issue/13543/"
     },
     "mv-winter-soldier-1": {
+      "coverSource": "comicvine",
+      "coverSourceId": "694154",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6712697-01.jpg",
       "fetchedAt": "2026-09-17T20:42:16Z",
       "gcdIssueId": "1878790",
       "source": "gcd",

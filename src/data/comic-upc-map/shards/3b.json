@@ -10285,6 +10285,9 @@
       "url": "https://www.comics.org/api/issue/2773424/"
     },
     "dc-batman-2016-2019-72": {
+      "coverSource": "metron",
+      "coverSourceId": "2659",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/02/batman-72.jpg",
       "fetchedAt": "2026-09-14T05:50:18Z",
       "gcdIssueId": "1974200",
       "source": "gcd",
@@ -50936,6 +50939,9 @@
       "url": "https://www.comics.org/api/issue/1802303/"
     },
     "mv-true-believers-x-men-betsy-braddock-1": {
+      "coverSource": "comicvine",
+      "coverSourceId": "721793",
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/7101026-01.jpg",
       "fetchedAt": "2026-09-14T21:03:20Z",
       "gcdIssueId": "2023004",
       "source": "gcd",
