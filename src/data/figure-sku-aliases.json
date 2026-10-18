@@ -10714,8 +10714,12 @@
       "SUP7-UL-CZAR-04980"
     ],
     "sf-super7-silverhawks-ultimates-wave-1-buzz-saw": [
-      "SUP7-UL-HAWKW04-BZS-02",
-      "SUP7-DE-HAWKW01-BZS-01"
+      "SUP7-DE-HAWKW01-BZS-01",
+      "DE-HAWKW01-BZS-01",
+      "SUP813366",
+      "ULTIMATES SilverHawks",
+      "840049813366",
+      "id:s79-s7-31"
     ],
     "s73-silverhawks-monstar": [
       "SUP7-UL-HAWKW04-AMS-02",
@@ -45522,10 +45526,6 @@
       "af411:3111",
       "id:mcf-cnc-w21-rookie-cnc-3111"
     ],
-    "s79-s7-31": [
-      "ULTIMATES SilverHawks",
-      "840049813366"
-    ],
     "tfc-selects-gs01-combat-megatron": [
       "WFC-GS01",
       "E4935",
@@ -45717,6 +45717,9 @@
     "tflu-selects-autobots-stand-united-5-pack": [
       "G0206",
       "5010996235695"
+    ],
+    "sf-super7-silverhawks-ultimates-wave-4-buzz-saw-toy-version": [
+      "SUP7-UL-HAWKW04-BZS-02"
     ]
   },
   "aliasToFigureId": {
@@ -53547,7 +53550,7 @@
     "SUP-82049-C": "sf-super7-animaniacs-ultimates-wave-1-pinky-pre-order",
     "SUP7-UL-CZAR-04946": "sf-super7-czarface-ultimates-wave-1-czarface",
     "SUP7-UL-CZAR-04980": "sf-super7-czarface-ultimates-wave-1-czarface",
-    "SUP7-UL-HAWKW04-BZS-02": "sf-super7-silverhawks-ultimates-wave-1-buzz-saw",
+    "SUP7-UL-HAWKW04-BZS-02": "sf-super7-silverhawks-ultimates-wave-4-buzz-saw-toy-version",
     "SUP7-DE-HAWKW01-BZS-01": "sf-super7-silverhawks-ultimates-wave-1-buzz-saw",
     "SUP7-UL-HAWKW04-AMS-02": "s73-silverhawks-monstar",
     "SUP7-UL-HAWKW02-MNS-01": "s73-silverhawks-monstar",
@@ -70552,8 +70555,8 @@
     "af411:3111": "mat-mmv-w4-batman-exo-suit-rookie",
     "id:mcf-cnc-w21-rookie-cnc-3111": "mat-mmv-w4-batman-exo-suit-rookie",
     "id:mf8-mf-04": "mat-mmv-w4-the-joker-dark-knight-returns-2017",
-    "ULTIMATES SilverHawks": "s79-s7-31",
-    "840049813366": "s79-s7-31",
+    "ULTIMATES SilverHawks": "sf-super7-silverhawks-ultimates-wave-1-buzz-saw",
+    "840049813366": "sf-super7-silverhawks-ultimates-wave-1-buzz-saw",
     "WFC-GS01": "tfc-selects-gs01-combat-megatron",
     "E4935": "tfc-selects-gs01-combat-megatron",
     "630509836246": "tfc-selects-gs01-combat-megatron",
@@ -70663,7 +70666,10 @@
     "TT-GS12": "tfgs-tt-gs12-soundblaster",
     "195166141817": "tfgs-tt-gs12-soundblaster",
     "G0206": "tflu-selects-autobots-stand-united-5-pack",
-    "5010996235695": "tflu-selects-autobots-stand-united-5-pack"
+    "5010996235695": "tflu-selects-autobots-stand-united-5-pack",
+    "DE-HAWKW01-BZS-01": "sf-super7-silverhawks-ultimates-wave-1-buzz-saw",
+    "SUP813366": "sf-super7-silverhawks-ultimates-wave-1-buzz-saw",
+    "id:s79-s7-31": "sf-super7-silverhawks-ultimates-wave-1-buzz-saw"
   },
   "collapsed": [
     {
@@ -74515,6 +74521,19 @@
         "id:mf8-mf-04"
       ],
       "reason": "Shelby 2026-10-17 DC wave 21 CNC cleanup: mf8-mf-04 'Joker (The Dark Knight Returns)' (curated-bbts-wave8, mislabelled 'DC Multiverse Hush' + mcfarlane/spawn tags) is the same Mattel DKR Joker (cmdstore 'Dark Knight Returns Joker #6 of 6', 887961385175); sku moved as GTIN alias, cmdstore photo carried."
+    },
+    {
+      "keepId": "sf-super7-silverhawks-ultimates-wave-1-buzz-saw",
+      "dropId": "s79-s7-31",
+      "canonicalSku": "840049813366",
+      "aliasesAdded": [
+        "DE-HAWKW01-BZS-01",
+        "SUP813366",
+        "ULTIMATES SilverHawks",
+        "840049813366",
+        "id:s79-s7-31"
+      ],
+      "reason": "Shelby 2026-10-18 Buzz-Saw merge: s79-s7-31 'Buzz-Saw' (curated-bbts-wave9, UPC 840049813366 via toyarena sku SUP813366, unverified 2021 date = preorder year) is the same Super7 SilverHawks ULTIMATES! Wave 1 Buzz-Saw (model DE-HAWKW01-BZS-01, UPC 840049813366 per Amazon/Best Buy/EE). Kept Super7-sourced row with official photo; GTIN promoted to sku, model + toyarena codes kept as aliases; date set to 2023-05 per Super7's April 2023 production update (Wave 1 shipping late May 2023), replacing archive scrape date 2026-04-23."
     }
   ],
   "flagged": [
@@ -74694,7 +74713,7 @@
       "reason": "REFUSED 2026-10-17: shared GTIN 634482606551 is NECA 60655 Halloween: Resurrection Ultimate Michael Myers (2025), already present as sf-neca-store-halloween-resurrection-ultimate-michael-myers-7-inch-scale-action-; both 2019 rows carry it from a cmdstore sku-bake (neca-michael also has the Resurrection photo). Matching GTIN is contamination, not identity; names/lines/variants do not establish the same figure. Follow-up: strip 634482606551 and the Resurrection photo from both 2019 rows."
     }
   ],
-  "updatedAt": "2026-10-18T17:15:00+00:00",
+  "updatedAt": "2026-10-18T20:45:26.556534+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
@@ -74905,6 +74924,21 @@
       "gtinAliasesAdded": 44,
       "stripped": 8,
       "skuIndexCompanyFixed": 35
+    },
+    "buzzSawMerge20261018": {
+      "at": "2026-10-18T20:45:26.556534+00:00",
+      "merged": 1,
+      "dropIds": [
+        "s79-s7-31"
+      ],
+      "aliasMovedToToyVersion": [
+        "SUP7-UL-HAWKW04-BZS-02"
+      ],
+      "bundleSkuStripped": "sf-super7-silverhawks-ultimates-wave-4-steelheart-quicksilver-mon-star-buzz-saw"
+    },
+    "zeroMsrpCleared20261018": {
+      "at": "2026-10-18T20:45:26.556534+00:00",
+      "cleared": 2007
     }
   },
   "removed": [
@@ -79041,6 +79075,29 @@
       },
       "aliasesDropped": [],
       "reason": "Shelby 2026-10-17 DC wave 21 CNC cleanup: mf8-mf-04 'Joker (The Dark Knight Returns)' (curated-bbts-wave8, mislabelled 'DC Multiverse Hush' + mcfarlane/spawn tags) is the same Mattel DKR Joker (cmdstore 'Dark Knight Returns Joker #6 of 6', 887961385175); sku moved as GTIN alias, cmdstore photo carried."
+    },
+    {
+      "keepId": "sf-super7-silverhawks-ultimates-wave-1-buzz-saw",
+      "dropId": "s79-s7-31",
+      "canonicalSku": "840049813366",
+      "aliasesAdded": [
+        "DE-HAWKW01-BZS-01",
+        "SUP813366",
+        "ULTIMATES SilverHawks",
+        "840049813366",
+        "id:s79-s7-31"
+      ],
+      "aliasesMoved": {
+        "s79-s7-31": [
+          "DE-HAWKW01-BZS-01",
+          "SUP813366",
+          "ULTIMATES SilverHawks",
+          "840049813366",
+          "id:s79-s7-31"
+        ]
+      },
+      "aliasesDropped": [],
+      "reason": "Shelby 2026-10-18 Buzz-Saw merge: s79-s7-31 'Buzz-Saw' (curated-bbts-wave9, UPC 840049813366 via toyarena sku SUP813366, unverified 2021 date = preorder year) is the same Super7 SilverHawks ULTIMATES! Wave 1 Buzz-Saw (model DE-HAWKW01-BZS-01, UPC 840049813366 per Amazon/Best Buy/EE). Kept Super7-sourced row with official photo; GTIN promoted to sku, model + toyarena codes kept as aliases; date set to 2023-05 per Super7's April 2023 production update (Wave 1 shipping late May 2023), replacing archive scrape date 2026-04-23."
     }
   ],
   "strippedCodes": [
@@ -79908,6 +79965,15 @@
       "imageDropped": false,
       "imageUrls": [],
       "reason": "Shelby 2026-10-17 DC wave 21 CNC cleanup: barcode is Mattel DC Multiverse Lex Luthor Series Batman (cmdstore); row has no photo (wrong company)"
+    },
+    {
+      "figureId": "sf-super7-silverhawks-ultimates-wave-4-steelheart-quicksilver-mon-star-buzz-saw",
+      "codes": [
+        "840049813366"
+      ],
+      "imageDropped": false,
+      "imageUrls": [],
+      "reason": "Shelby 2026-10-18: UPC 840049813366 is the single Wave 1 Buzz-Saw (DE-HAWKW01-BZS-01); this row is the $280 Wave 4 4-figure bundle (Toy Version Steelheart/Quicksilver/Mon*Star/Buzz-Saw). cmdstore sku-bake mismatch removed."
     }
   ],
   "figureIdToAliases": {}
