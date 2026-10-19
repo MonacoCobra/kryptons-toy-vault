@@ -1,0 +1,122 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-19",
+  "updatedAt": "2026-10-19T14:25:47Z",
+  "added": 54,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Pages read from rendered listing in box browser (save dialog broken); raw.json DOM extract.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 320,
+    "ee_candidates": 44,
+    "bbts_candidates": 146,
+    "added": 63,
+    "skipped_dupes": 127,
+    "rejected_non_af": 77,
+    "unmapped_company": 53,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 30398,
+  "oneshotAfter": 30452,
+  "ee_added": 25,
+  "bbts_added": 29,
+  "samples": [
+    {
+      "sku": "MF11754",
+      "name": "MLB McFarlane SportsPicks Wave 2 Atlanta Braves Ronald Acuna Jr. 6-Inch Action Figure",
+      "id": "afmon-mcfarlane-mlb-mcfarlane-sportspicks-wave-2-atlanta-braves-ronald-acuna-jr-6-inch-act-mf11754",
+      "source": "ee"
+    },
+    {
+      "sku": "MF11751",
+      "name": "MLB McFarlane SportsPicks Wave 2 New York Mets Juan Soto 6-Inch Action Figure",
+      "id": "afmon-mcfarlane-mlb-mcfarlane-sportspicks-wave-2-new-york-mets-juan-soto-6-inch-action-fig-mf11751",
+      "source": "ee"
+    },
+    {
+      "sku": "MF11756",
+      "name": "MLB McFarlane SportsPicks Wave 2 San Diego Padres Fernando Tatis Jr. 6-Inch Action Figure",
+      "id": "afmon-mcfarlane-mlb-mcfarlane-sportspicks-wave-2-san-diego-padres-fernando-tatis-jr-6-inch-mf11756",
+      "source": "ee"
+    },
+    {
+      "sku": "MF11753",
+      "name": "MLB McFarlane SportsPicks Wave 2 Kansas City Royals Bobby Witt Jr. 6-Inch Action Figure",
+      "id": "afmon-mcfarlane-mlb-mcfarlane-sportspicks-wave-2-kansas-city-royals-bobby-witt-jr-6-inch-a-mf11753",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2298",
+      "name": "G.I. Joe Classified Series Retro Cardback Anthony Flash Gambello 6-Inch Action Figure",
+      "id": "afmon-hasbro-g-i-joe-classified-series-retro-cardback-anthony-flash-gambello-6-inch-action-hsg2298",
+      "source": "ee"
+    },
+    {
+      "sku": "BA35996",
+      "name": "Dragon Ball Dragon Stars Super Saiyan Gohan Action Figure",
+      "id": "afmon-bandai-dragon-ball-dragon-stars-super-saiyan-gohan-action-figure-ba35996",
+      "source": "ee"
+    },
+    {
+      "sku": "BA36982",
+      "name": "Jujutsu Kaisen Anime Heroes Satoru Gojo Action Figure",
+      "id": "afmon-bandai-jujutsu-kaisen-anime-heroes-satoru-gojo-action-figure-ba36982",
+      "source": "ee"
+    },
+    {
+      "sku": "BA40731",
+      "name": "Dragon Ball Z Dragon Stars Majin Vegeta Action Figure",
+      "id": "afmon-bandai-dragon-ball-z-dragon-stars-majin-vegeta-action-figure-ba40731",
+      "source": "ee"
+    },
+    {
+      "sku": "BA36911",
+      "name": "My Hero Academia Anime Heroes Izuku Midoriya Action Figure",
+      "id": "afmon-bandai-my-hero-academia-anime-heroes-izuku-midoriya-action-figure-ba36911",
+      "source": "ee"
+    },
+    {
+      "sku": "BA36189",
+      "name": "Dragon Ball Stars Super Saiyan 3 Gotenks Action Figure",
+      "id": "afmon-bandai-dragon-ball-stars-super-saiyan-3-gotenks-action-figure-ba36189",
+      "source": "ee"
+    },
+    {
+      "sku": "BA92322",
+      "name": "Godzilla King Ghidorah Transforming Egg Action Figure",
+      "id": "afmon-bandai-godzilla-king-ghidorah-transforming-egg-action-figure-ba92322",
+      "source": "ee"
+    },
+    {
+      "sku": "BA40740",
+      "name": "Dragon Ball Z Dragon Stars Future Trunks Action Figure",
+      "id": "afmon-bandai-dragon-ball-z-dragon-stars-future-trunks-action-figure-ba40740",
+      "source": "ee"
+    }
+  ],
+  "commit": null,
+  "reviewRemoved": [
+    "BA37148",
+    "BA40727",
+    "BA40740",
+    "BBTS-198085",
+    "BBTS-198125",
+    "BBTS-198126",
+    "BBTS-198127",
+    "BBTS-199946",
+    "HSG2298"
+  ],
+  "reviewAliased": {
+    "BBTS-198085": "afmon-mcfarlane-mlb-mcfarlane-sportspicks-wave-2-new-york-mets-juan-soto-6-inch-action-fig-mf11751",
+    "BBTS-198126": "afmon-mcfarlane-mlb-mcfarlane-sportspicks-wave-2-atlanta-braves-ronald-acuna-jr-6-inch-act-mf11754",
+    "BBTS-198127": "afmon-mcfarlane-mlb-mcfarlane-sportspicks-wave-2-san-diego-padres-fernando-tatis-jr-6-inch-mf11756",
+    "BBTS-198125": "afmon-mcfarlane-mlb-mcfarlane-sportspicks-wave-2-kansas-city-royals-bobby-witt-jr-6-inch-a-mf11753",
+    "BA37148": "bds-super-saiyan-4-gogeta",
+    "HSG2298": "mph-c540c6761d27",
+    "BA40727": "bds-omega-shenron",
+    "BA40740": "bds-future-trunks"
+  }
+}
