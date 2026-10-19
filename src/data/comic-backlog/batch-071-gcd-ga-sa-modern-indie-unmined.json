@@ -1,11 +1,11 @@
 {
   "id": "batch-071-gcd-ga-sa-modern-indie-unmined",
-  "title": "GCD GA/SA US classics + 2000s–2020s US indie (unmined publishers)",
+  "title": "GCD GA/SA US classics + 2000s\u20132020s US indie (unmined publishers)",
   "created": "2026-10-19",
-  "status": "queued",
+  "status": "injected",
   "focus": "Real GCD mains from US publishers not previously mined by batches 045-069: Golden/Silver Age Holyoke, Temerson/Helnit/Continental, Master/Story/Mens, D.S., Tower, King Features, Modern [1970s] Charlton reprints, Russ Cochran EC reprints, Print Mint undergrounds; modern Dreamwave, Alias, Legendary, Ape, Albatross, Behemoth, Big Dog Ink, Storm King, Comics Experience, Warrant, Digital Webbing, Penny-Farthing, Amigo, Shanda, Night Wynd, Entity-Parody",
   "source": "gcd-dump",
-  "addedCount": 500,
+  "addedCount": 461,
   "byPublisher": {
     "Warrant Publishing": 25,
     "Storm King Productions": 25,
@@ -15,7 +15,6 @@
     "Shanda Fantasy Arts": 25,
     "Alias": 25,
     "Penny-Farthing Press": 25,
-    "Dreamwave Productions": 25,
     "Russ Cochran": 25,
     "The Print Mint Inc": 25,
     "King Features": 25,
@@ -25,7 +24,6 @@
     "Holyoke": 25,
     "Temerson / Helnit / Continental": 25,
     "Digital Webbing": 17,
-    "Amigo": 14,
     "Behemoth Comics": 12,
     "Ape Entertainment": 11,
     "Entity-Parody": 10,
@@ -742,86 +740,6 @@
       }
     ],
     [
-      "amig-the-blackening-2019-6",
-      "The Blackening",
-      "6",
-      "Amigo",
-      "2019-07-03",
-      "",
-      "",
-      "The Blackening #6",
-      3.99,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "68924754569900611",
-        "streetDate": "2019-07-03",
-        "gcdIssueId": "1986124"
-      }
-    ],
-    [
-      "amig-the-blackening-2019-5",
-      "The Blackening",
-      "5",
-      "Amigo",
-      "2019-06-12",
-      "",
-      "",
-      "The Blackening #5",
-      3.99,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "68924754569900511",
-        "streetDate": "2019-06-12",
-        "gcdIssueId": "1975528"
-      }
-    ],
-    [
-      "amig-gargantuan-2019-0",
-      "Gargantuan",
-      "0",
-      "Amigo",
-      "2019-06-12",
-      "",
-      "",
-      "Gargantuan #0",
-      2.99,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "68924754574300011",
-        "streetDate": "2019-06-12",
-        "gcdIssueId": "1975543"
-      }
-    ],
-    [
-      "amig-gargantuan-2019-1",
-      "Gargantuan",
-      "1",
-      "Amigo",
-      "2019-06-12",
-      "",
-      "",
-      "Gargantuan #1",
-      3.99,
-      "single",
-      0.8,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "68924754574300111",
-        "streetDate": "2019-06-12",
-        "gcdIssueId": "1975544"
-      }
-    ],
-    [
       "alba-the-goon-2019-2",
       "The Goon",
       "2",
@@ -839,26 +757,6 @@
         "upc": "64439163013400211",
         "streetDate": "2019-05-29",
         "gcdIssueId": "1971056"
-      }
-    ],
-    [
-      "amig-the-blackening-2019-4",
-      "The Blackening",
-      "4",
-      "Amigo",
-      "2019-04-10",
-      "",
-      "",
-      "The Blackening #4",
-      3.99,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "68924754569900411",
-        "streetDate": "2019-04-10",
-        "gcdIssueId": "1947562"
       }
     ],
     [
@@ -955,66 +853,6 @@
       {
         "upc": "64439163013400611",
         "gcdIssueId": "2017063"
-      }
-    ],
-    [
-      "amig-the-blackening-2019-3",
-      "The Blackening",
-      "3",
-      "Amigo",
-      "2019-01-01",
-      "",
-      "",
-      "The Blackening #3",
-      3.99,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "68924754569900311",
-        "streetDate": "2019-03-06",
-        "gcdIssueId": "1932656"
-      }
-    ],
-    [
-      "amig-the-blackening-2019-2",
-      "The Blackening",
-      "2",
-      "Amigo",
-      "2018-12-01",
-      "",
-      "",
-      "The Blackening #2",
-      3.99,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "68924754569900211",
-        "streetDate": "2019-02-13",
-        "gcdIssueId": "1924075"
-      }
-    ],
-    [
-      "amig-the-blackening-2019-1",
-      "The Blackening",
-      "1",
-      "Amigo",
-      "2018-10-01",
-      "",
-      "",
-      "The Blackening #1",
-      3.99,
-      "single",
-      0.8,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "68924754569900111",
-        "streetDate": "2019-01-09",
-        "gcdIssueId": "1891973"
       }
     ],
     [
@@ -2412,26 +2250,6 @@
       }
     ],
     [
-      "amig-rogues-2013-6",
-      "Rogues!",
-      "6",
-      "Amigo",
-      "2013-09-01",
-      "",
-      "",
-      "Rogues! #6",
-      3.99,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "70037199999500611",
-        "streetDate": "2014-01-08",
-        "gcdIssueId": "1188278"
-      }
-    ],
-    [
       "stor-john-carpenter-s-asylum-2013-2",
       "John Carpenter's Asylum",
       "2",
@@ -2452,26 +2270,6 @@
       }
     ],
     [
-      "amig-rogues-2013-5",
-      "Rogues!",
-      "5",
-      "Amigo",
-      "2013-08-01",
-      "",
-      "",
-      "Rogues! #5",
-      3.99,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "70037199999500511",
-        "streetDate": "2013-11-06",
-        "gcdIssueId": "1188277"
-      }
-    ],
-    [
       "big--legend-of-oz-the-wicked-west-2012-9",
       "Legend of Oz: The Wicked West",
       "9",
@@ -2488,26 +2286,6 @@
       {
         "streetDate": "2013-07-10",
         "gcdIssueId": "1127328"
-      }
-    ],
-    [
-      "amig-rogues-2013-4",
-      "Rogues!",
-      "4",
-      "Amigo",
-      "2013-07-01",
-      "",
-      "",
-      "Rogues! #4",
-      3.99,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "70037199999500411",
-        "streetDate": "2013-09-11",
-        "gcdIssueId": "1207423"
       }
     ],
     [
@@ -2548,26 +2326,6 @@
         "upc": "091037326652",
         "streetDate": "2013-06-12",
         "gcdIssueId": "1120277"
-      }
-    ],
-    [
-      "amig-rogues-2013-3",
-      "Rogues!",
-      "3",
-      "Amigo",
-      "2013-06-01",
-      "",
-      "",
-      "Rogues! #3",
-      3.99,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "70037199999500311",
-        "streetDate": "2013-07-17",
-        "gcdIssueId": "1207422"
       }
     ],
     [
@@ -2648,46 +2406,6 @@
         "upc": "091037326645",
         "streetDate": "2013-05-08",
         "gcdIssueId": "1110172"
-      }
-    ],
-    [
-      "amig-rogues-2013-2",
-      "Rogues!",
-      "2",
-      "Amigo",
-      "2013-05-01",
-      "",
-      "",
-      "Rogues! #2",
-      3.99,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "70037199999500211",
-        "streetDate": "2013-06-05",
-        "gcdIssueId": "1207421"
-      }
-    ],
-    [
-      "amig-rogues-2013-1",
-      "Rogues!",
-      "1",
-      "Amigo",
-      "2013-04-24",
-      "",
-      "",
-      "Rogues! #1",
-      3.99,
-      "single",
-      0.8,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "70037199999500111",
-        "streetDate": "2013-04-24",
-        "gcdIssueId": "1207420"
       }
     ],
     [
@@ -3825,120 +3543,6 @@
       }
     ],
     [
-      "drea-transformers-generation-one-2003-10",
-      "Transformers: Generation One",
-      "10",
-      "Dreamwave Productions",
-      "2004-11-01",
-      "",
-      "",
-      "Transformers: Generation One #10",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365006940",
-        "gcdIssueId": "769881"
-      }
-    ],
-    [
-      "drea-transformers-generation-one-2003-9",
-      "Transformers: Generation One",
-      "9",
-      "Dreamwave Productions",
-      "2004-10-01",
-      "",
-      "",
-      "Transformers: Generation One #9",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365007060",
-        "gcdIssueId": "769880"
-      }
-    ],
-    [
-      "drea-transformers-generation-one-2003-8",
-      "Transformers: Generation One",
-      "8",
-      "Dreamwave Productions",
-      "2004-09-01",
-      "",
-      "",
-      "Transformers: Generation One #8",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365007077",
-        "gcdIssueId": "769879"
-      }
-    ],
-    [
-      "drea-transformers-generation-one-2003-7",
-      "Transformers: Generation One",
-      "7",
-      "Dreamwave Productions",
-      "2004-08-01",
-      "",
-      "",
-      "Transformers: Generation One #7",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365007084",
-        "gcdIssueId": "769878"
-      }
-    ],
-    [
-      "drea-transformers-generation-one-2003-6",
-      "Transformers: Generation One",
-      "6",
-      "Dreamwave Productions",
-      "2004-06-01",
-      "",
-      "",
-      "Transformers: Generation One #6",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365007299",
-        "gcdIssueId": "769877"
-      }
-    ],
-    [
-      "drea-transformers-generation-one-2003-5",
-      "Transformers: Generation One",
-      "5",
-      "Dreamwave Productions",
-      "2004-05-01",
-      "",
-      "",
-      "Transformers: Generation One #5",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365007503",
-        "gcdIssueId": "769876"
-      }
-    ],
-    [
       "shan-shanda-the-panda-1998-41",
       "Shanda the Panda",
       "41",
@@ -3955,44 +3559,6 @@
       {
         "streetDate": "2004-07-08",
         "gcdIssueId": "697506"
-      }
-    ],
-    [
-      "drea-transformers-generation-one-2003-4",
-      "Transformers: Generation One",
-      "4",
-      "Dreamwave Productions",
-      "2004-04-01",
-      "",
-      "",
-      "Transformers: Generation One #4",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365007596",
-        "gcdIssueId": "769875"
-      }
-    ],
-    [
-      "drea-transformers-generation-one-2003-3",
-      "Transformers: Generation One",
-      "3",
-      "Dreamwave Productions",
-      "2004-03-01",
-      "",
-      "",
-      "Transformers: Generation One #3",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365007787",
-        "gcdIssueId": "769874"
       }
     ],
     [
@@ -4014,25 +3580,6 @@
       }
     ],
     [
-      "drea-transformers-generation-one-2003-2",
-      "Transformers: Generation One",
-      "2",
-      "Dreamwave Productions",
-      "2004-02-01",
-      "",
-      "",
-      "Transformers: Generation One #2",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365007824",
-        "gcdIssueId": "769873"
-      }
-    ],
-    [
       "digi-shades-of-blue-2003-5",
       "Shades of Blue",
       "5",
@@ -4048,44 +3595,6 @@
       "111827,e5e7eb,f8fafc",
       {
         "gcdIssueId": "393373"
-      }
-    ],
-    [
-      "drea-transformers-generation-one-2003-1",
-      "Transformers: Generation One",
-      "1",
-      "Dreamwave Productions",
-      "2004-01-01",
-      "",
-      "",
-      "Transformers: Generation One #1",
-      2.95,
-      "single",
-      0.8,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365007886",
-        "gcdIssueId": "769872"
-      }
-    ],
-    [
-      "drea-transformers-generation-one-2003-0",
-      "Transformers: Generation One",
-      "0",
-      "Dreamwave Productions",
-      "2003-12-01",
-      "",
-      "",
-      "Transformers: Generation One #0",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365007992",
-        "gcdIssueId": "769871"
       }
     ],
     [
@@ -4252,25 +3761,6 @@
       }
     ],
     [
-      "drea-transformers-armada-2002-11",
-      "Transformers Armada",
-      "11",
-      "Dreamwave Productions",
-      "2003-05-01",
-      "",
-      "",
-      "Transformers Armada #11",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365008913",
-        "gcdIssueId": "266184"
-      }
-    ],
-    [
       "digi-digital-webbing-presents-2001-8",
       "Digital Webbing Presents",
       "8",
@@ -4286,25 +3776,6 @@
       "111827,e5e7eb,f8fafc",
       {
         "gcdIssueId": "289814"
-      }
-    ],
-    [
-      "drea-transformers-armada-2002-10",
-      "Transformers Armada",
-      "10",
-      "Dreamwave Productions",
-      "2003-04-01",
-      "",
-      "",
-      "Transformers Armada #10",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365008999",
-        "gcdIssueId": "266183"
       }
     ],
     [
@@ -4326,26 +3797,6 @@
       }
     ],
     [
-      "drea-transformers-armada-2002-9",
-      "Transformers Armada",
-      "9",
-      "Dreamwave Productions",
-      "2003-03-19",
-      "",
-      "",
-      "Transformers Armada #9",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365009088",
-        "streetDate": "2003-03-19",
-        "gcdIssueId": "266182"
-      }
-    ],
-    [
       "digi-digital-webbing-presents-2001-7",
       "Digital Webbing Presents",
       "7",
@@ -4364,44 +3815,6 @@
       }
     ],
     [
-      "drea-transformers-armada-2002-7",
-      "Transformers Armada",
-      "7",
-      "Dreamwave Productions",
-      "2003-01-01",
-      "",
-      "",
-      "Transformers Armada #7",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365009224",
-        "gcdIssueId": "129791"
-      }
-    ],
-    [
-      "drea-transformers-armada-2002-8",
-      "Transformers Armada",
-      "8",
-      "Dreamwave Productions",
-      "2003-01-01",
-      "",
-      "",
-      "Transformers Armada #8",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365009217",
-        "gcdIssueId": "266181"
-      }
-    ],
-    [
       "digi-digital-webbing-presents-2001-6",
       "Digital Webbing Presents",
       "6",
@@ -4417,63 +3830,6 @@
       "111827,e5e7eb,f8fafc",
       {
         "gcdIssueId": "289812"
-      }
-    ],
-    [
-      "drea-transformers-armada-2002-6",
-      "Transformers Armada",
-      "6",
-      "Dreamwave Productions",
-      "2002-12-01",
-      "",
-      "",
-      "Transformers Armada #6",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365009262",
-        "gcdIssueId": "129790"
-      }
-    ],
-    [
-      "drea-transformers-armada-2002-5",
-      "Transformers Armada",
-      "5",
-      "Dreamwave Productions",
-      "2002-12-01",
-      "",
-      "",
-      "Transformers Armada #5",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365009316",
-        "gcdIssueId": "255480"
-      }
-    ],
-    [
-      "drea-transformers-armada-2002-4",
-      "Transformers Armada",
-      "4",
-      "Dreamwave Productions",
-      "2002-11-01",
-      "",
-      "",
-      "Transformers Armada #4",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365009385",
-        "gcdIssueId": "117658"
       }
     ],
     [
@@ -4514,25 +3870,6 @@
       }
     ],
     [
-      "drea-transformers-armada-2002-3",
-      "Transformers Armada",
-      "3",
-      "Dreamwave Productions",
-      "2002-10-01",
-      "",
-      "",
-      "Transformers Armada #3",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365009514",
-        "gcdIssueId": "255479"
-      }
-    ],
-    [
       "digi-digital-webbing-presents-2001-4",
       "Digital Webbing Presents",
       "4",
@@ -4548,25 +3885,6 @@
       "111827,e5e7eb,f8fafc",
       {
         "gcdIssueId": "289810"
-      }
-    ],
-    [
-      "drea-transformers-armada-2002-2",
-      "Transformers Armada",
-      "2",
-      "Dreamwave Productions",
-      "2002-08-01",
-      "",
-      "",
-      "Transformers Armada #2",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365009668",
-        "gcdIssueId": "117656"
       }
     ],
     [
@@ -4586,44 +3904,6 @@
       {
         "streetDate": "2002-11-27",
         "gcdIssueId": "697500"
-      }
-    ],
-    [
-      "drea-transformers-armada-2002-1",
-      "Transformers Armada",
-      "1",
-      "Dreamwave Productions",
-      "2002-07-10",
-      "",
-      "",
-      "Transformers Armada #1",
-      2.95,
-      "single",
-      0.8,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "streetDate": "2002-07-10",
-        "gcdIssueId": "117655"
-      }
-    ],
-    [
-      "drea-transformers-armada-2002-1-holofoil-cover",
-      "Transformers Armada",
-      "1 [Holofoil Cover]",
-      "Dreamwave Productions",
-      "2002-07-01",
-      "",
-      "",
-      "Transformers Armada #1 [Holofoil Cover]",
-      5.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365009750",
-        "gcdIssueId": "2149916"
       }
     ],
     [
@@ -4661,43 +3941,6 @@
       {
         "streetDate": "2002-07-24",
         "gcdIssueId": "761712"
-      }
-    ],
-    [
-      "drea-transformers-generation-1-2002-1",
-      "Transformers: Generation 1",
-      "1",
-      "Dreamwave Productions",
-      "2002-04-10",
-      "",
-      "",
-      "Transformers: Generation 1 #1",
-      2.95,
-      "single",
-      0.8,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "gcdIssueId": "96207"
-      }
-    ],
-    [
-      "drea-transformers-generation-1-2002-1-2nd-printing",
-      "Transformers: Generation 1",
-      "1 [2nd Printing]",
-      "Dreamwave Productions",
-      "2002-04-01",
-      "",
-      "",
-      "Transformers: Generation 1 #1 [2nd Printing]",
-      2.95,
-      "single",
-      0.55,
-      0,
-      "111827,e5e7eb,f8fafc",
-      {
-        "upc": "823365009897",
-        "gcdIssueId": "2149731"
       }
     ],
     [
@@ -9391,5 +8634,16 @@
         "gcdIssueId": "1411"
       }
     ]
-  ]
+  ],
+  "strippedNonUS": {
+    "Amigo": {
+      "rows": 14,
+      "gcdCountry": "ES"
+    },
+    "Dreamwave Productions": {
+      "rows": 25,
+      "gcdCountry": "CA"
+    }
+  },
+  "strippedNote": "2026-10-19 vault gap fill: stripped rows whose GCD publisher country is not US before inject"
 }
