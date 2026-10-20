@@ -127869,17 +127869,12 @@
       "mcfarlane",
       "dc",
       "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore",
       "date-precision:year",
-      "date-unverified"
+      "date-unverified",
+      "fix:qc-oct20"
     ],
     "source": "curated-bbts-wave6",
-    "sku": "787926176292",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-dark-knight-rises-exclusive-batman-batpod-gold-label-787926176292.jpg?v=1744312841"
+    "imageUrl": null
   },
   {
     "id": "motu-mv2-revolution-teela",
@@ -168490,15 +168485,10 @@
       "mcfarlane",
       "dc",
       "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
+      "fix:qc-oct20"
     ],
     "source": "curated-bbts-wave4",
-    "sku": "787926157345",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-dark-knight-rises-exclusive-catwoman-and-batpod-gold-label-787926157345.jpg?v=1714759109"
+    "imageUrl": null
   },
   {
     "id": "mcf5-mcf-catwoman-patterson",
@@ -168545,17 +168535,12 @@
       "mcfarlane",
       "dc",
       "curated",
-      "image-bake",
-      "img:mephitsu",
-      "sku-bake",
-      "sku-gtin",
-      "sku:mephitsu",
       "date-precision:year",
-      "date-unverified"
+      "date-unverified",
+      "fix:qc-oct20"
     ],
     "source": "curated-bbts-wave6",
-    "imageUrl": "https://static.wixstatic.com/media/adc447_f719a4dc0a5b44ed9546b06b2b98d13c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f719a4dc0a5b44ed9546b06b2b98d13c~mv2.jpg",
-    "sku": "787926150674"
+    "imageUrl": null
   },
   {
     "id": "mcfdc-batman-troika",
@@ -181360,15 +181345,10 @@
       "mcfarlane",
       "dc",
       "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
+      "fix:qc-oct20"
     ],
     "source": "curated-bbts-wave6",
-    "sku": "787926155495",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-aquaman-and-the-lost-kingdom-storm-787926155495.jpg?v=1696999561"
+    "imageUrl": null
   },
   {
     "id": "mv3-mv-teela-ne",
@@ -193422,15 +193402,10 @@
       "mcfarlane",
       "dc",
       "curated",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "image-bake",
-      "imgsku:cmdstore"
+      "fix:qc-oct20"
     ],
     "source": "curated-bbts-wave3",
-    "sku": "787926174779",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-flash-batman-batcycle-787926174779.jpg?v=1762830353"
+    "imageUrl": null
   },
   {
     "id": "mf8-mf-30",
@@ -228700,13 +228675,13 @@
   },
   {
     "id": "mcf3-mcf-redhood-outlaw",
-    "name": "Red Hood",
-    "subtitle": "Outlaw",
+    "name": "Red Hood's Sportsbike (Outlaw)",
+    "subtitle": "Vehicles & Playsets",
     "line": "DC Multiverse",
     "company": "mcfarlane",
-    "kind": "figure",
-    "releaseDate": "2022-09-01",
-    "msrp": 22.99,
+    "kind": "vehicle",
+    "releaseDate": "2024-01-01",
+    "msrp": 29.99,
     "scale": "7\"",
     "demand": 1.35,
     "tags": [
@@ -228717,7 +228692,12 @@
       "sku-bake",
       "sku:cmdstore",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "vehicle",
+      "vehicles-and-playsets",
+      "date-precision:year",
+      "af411:12486",
+      "fix:qc-oct20"
     ],
     "source": "curated-bbts-wave3",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-red-hood-outlaw-red-hoods-sportsbike-787926155976.jpg?v=1731523494",
@@ -248501,13 +248481,13 @@
   },
   {
     "id": "mcfc-lobo",
-    "name": "Lobo",
-    "subtitle": "DC Multiverse",
+    "name": "Spacehog (Supergirl Movie)",
+    "subtitle": "Vehicles & Playsets",
     "line": "DC Multiverse",
     "company": "mcfarlane",
-    "kind": "figure",
-    "releaseDate": "2022-04-01",
-    "msrp": 22.99,
+    "kind": "vehicle",
+    "releaseDate": "2026-01-01",
+    "msrp": 49.99,
     "scale": "7\"",
     "demand": 1.45,
     "tags": [
@@ -248522,7 +248502,12 @@
       "alias:staractionfigures",
       "alias:hobbyfigures",
       "alias:nerdzoic",
-      "alias:kitsap"
+      "alias:kitsap",
+      "vehicle",
+      "vehicles-and-playsets",
+      "date-precision:year",
+      "af411:13377",
+      "fix:qc-oct20"
     ],
     "source": "curated",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-supergirl-movie-lobos-spacehog-787926177374.jpg?v=1784657413",
@@ -270234,19 +270219,18 @@
   },
   {
     "id": "mf8-mf-09",
-    "name": "Batman",
-    "subtitle": "DC Multiverse The Batman",
+    "name": "Batmissile (Batman Returns)",
+    "subtitle": "Vehicles & Playsets",
     "line": "DC Multiverse",
     "company": "mcfarlane",
-    "kind": "figure",
-    "releaseDate": "2021-01-01",
-    "msrp": 22.99,
+    "kind": "vehicle",
+    "releaseDate": "2026-01-01",
+    "msrp": 99.99,
     "scale": "7\"",
     "demand": 1.5,
     "tags": [
       "mcfarlane",
       "dc",
-      "spawn",
       "curated",
       "sku-bake",
       "sku:cmdstore",
@@ -270254,7 +270238,10 @@
       "image-bake",
       "imgsku:cmdstore",
       "date-precision:year",
-      "date-unverified"
+      "vehicle",
+      "vehicles-and-playsets",
+      "af411:13604",
+      "fix:qc-oct20"
     ],
     "source": "curated-bbts-wave8",
     "sku": "787926180114",
@@ -292120,15 +292107,10 @@
       "dc",
       "mcfarlane",
       "curated",
-      "image-bake",
-      "sku-bake",
-      "sku:cmdstore",
-      "image-sku",
-      "imgsku:cmdstore"
+      "fix:qc-oct20"
     ],
     "source": "curated-dc",
-    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-comic-series-death-metal-batcycle-787926157055.jpg?v=1723114260",
-    "sku": "787926157055"
+    "imageUrl": null
   },
   {
     "id": "mf10-mf-15",
@@ -314866,19 +314848,18 @@
   },
   {
     "id": "mf10-mf-07",
-    "name": "DC Multiverse Joker",
-    "subtitle": "DC Multiverse",
+    "name": "The Joker Interrogation Room (Gold Label - The Dark Knight)",
+    "subtitle": "Vehicles & Playsets",
     "line": "DC Multiverse",
     "company": "mcfarlane",
-    "kind": "figure",
-    "releaseDate": "2020-01-01",
-    "msrp": 22.99,
+    "kind": "playset",
+    "releaseDate": "2023-01-01",
+    "msrp": 39.99,
     "scale": "7\"",
     "demand": 1.55,
     "tags": [
       "mcfarlane",
       "dc-multiverse",
-      "spawn",
       "curated",
       "image-bake",
       "sku-bake",
@@ -314889,7 +314870,10 @@
       "alias:hobbyfigures",
       "alias:kitsap",
       "date-precision:year",
-      "date-unverified"
+      "vehicle",
+      "vehicles-and-playsets",
+      "af411:7189",
+      "fix:qc-oct20"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-dark-knight-box-set-exclusive-the-joker-jail-cell-variant-gold-label-787926153993.jpg?v=1696370389",
@@ -324981,19 +324965,18 @@
   },
   {
     "id": "mf10-mf-04",
-    "name": "DC Multiverse The Flash",
-    "subtitle": "DC Multiverse",
+    "name": "Batwing (Gold Label - The Flash Movie)",
+    "subtitle": "Vehicles & Playsets McFarlane Store Exclusive",
     "line": "DC Multiverse",
     "company": "mcfarlane",
-    "kind": "figure",
-    "releaseDate": "2020-01-01",
-    "msrp": 22.99,
+    "kind": "vehicle",
+    "releaseDate": "2023-01-01",
+    "msrp": 249.99,
     "scale": "7\"",
     "demand": 1.45,
     "tags": [
       "mcfarlane",
       "dc-multiverse",
-      "spawn",
       "curated",
       "image-bake",
       "sku-bake",
@@ -325007,7 +324990,10 @@
       "alias:kitsap",
       "imgsku:cmdstore",
       "date-precision:year",
-      "date-unverified"
+      "vehicle",
+      "vehicles-and-playsets",
+      "af411:6182",
+      "fix:qc-oct20"
     ],
     "source": "curated-bbts-wave10",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-movie-the-flash-exclusive-batwing-gold-label-787926154979.jpg?v=1684127834",
@@ -594691,15 +594677,10 @@
     "tags": [
       "dc",
       "mcfarlane",
-      "sku-bake",
-      "sku-gtin",
-      "sku:mephitsu",
-      "image-bake",
-      "img:mephitsu"
+      "fix:qc-oct20"
     ],
     "source": "curated-mcfarlane-dc-gap-wave2",
-    "sku": "787926150193",
-    "imageUrl": "https://static.wixstatic.com/media/adc447_35c9f873a50b432d9ac0df4e39e29034~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_35c9f873a50b432d9ac0df4e39e29034~mv2.jpg"
+    "imageUrl": null
   },
   {
     "id": "mcf-w2-batwing-v-2-0-the-new-52",
@@ -602653,15 +602634,10 @@
       "super-powers",
       "vehicle",
       "af411",
-      "sku-bake",
-      "sku-gtin",
-      "sku:mephitsu",
-      "image-bake",
-      "img:mephitsu"
+      "fix:qc-oct20"
     ],
     "source": "curated-dc-gap-wave3",
-    "sku": "787926155297",
-    "imageUrl": "https://static.wixstatic.com/media/adc447_9900f38bf45e4a8988c4ddcf39774230~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9900f38bf45e4a8988c4ddcf39774230~mv2.jpg"
+    "imageUrl": null
   },
   {
     "id": "mcf-dc-super-pow-the-invisible-jet-wonder-woman-vehicle",
@@ -635380,12 +635356,9 @@
       "mcfarlane",
       "dc-multiverse",
       "af-monitor-20260923",
-      "sku-bake",
-      "sku-gtin",
-      "sku:mephitsu",
-      "msrp:bbts"
+      "msrp:bbts",
+      "fix:qc-oct20"
     ],
-    "sku": "787926170917",
     "source": "bbts",
     "imageUrl": "https://images.bigbadtoystore.com/images/product/183610/e5f22dc6-e632-46e3-b00b-5b52db512b2d/360w.jpg"
   },
@@ -732913,9 +732886,13 @@
       "wave19",
       "mcfarlane",
       "collector-edition",
-      "af411:ce-08-captain-carrot"
+      "af411:ce-08-captain-carrot",
+      "sku:af411",
+      "date-precision:year",
+      "fix:qc-oct20"
     ],
-    "source": "curated-dc-gap-wave19"
+    "source": "curated-dc-gap-wave19",
+    "sku": "787926170146"
   },
   {
     "id": "mcf-mce-w19-captain-boomerang-the-flash-ce-13-boomerang",
@@ -733732,12 +733709,9 @@
       "vault-collection",
       "date-precision:year",
       "af411:13946",
-      "sku-bake",
-      "sku-gtin",
-      "sku:mephitsu"
+      "fix:qc-oct20"
     ],
-    "source": "curated-dc-gap-wave20",
-    "sku": "787926170146"
+    "source": "curated-dc-gap-wave20"
   },
   {
     "id": "mcf-vault-w20-cyborg-superman-vault-collection-revenge-of-the-green-lanter-13945",
@@ -740586,5 +740560,388 @@
     "source": "curated-dc-gap-wave24",
     "msrp": 99.99,
     "sku": "787926175196"
+  },
+  {
+    "id": "mcf-veh-qc1020-batcycle-dark-nights-death-metal-3041",
+    "name": "Batcycle (Dark Nights: Death Metal)",
+    "subtitle": "Vehicles & Playsets",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "vehicle",
+    "releaseDate": "2021-01-01",
+    "msrp": 19.99,
+    "scale": "7\"",
+    "demand": 1.2,
+    "tags": [
+      "dc",
+      "af-checklist",
+      "mcfarlane",
+      "vehicle",
+      "vehicles-and-playsets",
+      "dc-multiverse",
+      "date-precision:year",
+      "af411:3041",
+      "fix:qc-oct20",
+      "sku:af411",
+      "image-sku",
+      "imgsku:cmdstore"
+    ],
+    "source": "curated-qc-oct20",
+    "sku": "787926157055",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-comic-series-death-metal-batcycle-787926157055.jpg?v=1723114260"
+  },
+  {
+    "id": "mcf-veh-qc1020-batman-and-bat-raptor-gold-label-7161",
+    "name": "Batman & Bat-Raptor (Gold Label)",
+    "subtitle": "Vehicles & Playsets GameStop Exclusive",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "vehicle",
+    "releaseDate": "2023-01-01",
+    "msrp": 49.99,
+    "scale": "7\"",
+    "demand": 1.2,
+    "tags": [
+      "dc",
+      "af-checklist",
+      "mcfarlane",
+      "vehicle",
+      "vehicles-and-playsets",
+      "dc-multiverse",
+      "date-precision:year",
+      "af411:7161",
+      "fix:qc-oct20",
+      "gold-label",
+      "sku:af411"
+    ],
+    "source": "curated-qc-oct20",
+    "sku": "787926150674"
+  },
+  {
+    "id": "mcf-veh-qc1020-batmobile-the-flash-movie-6186",
+    "name": "Batmobile (The Flash Movie)",
+    "subtitle": "Vehicles & Playsets",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "vehicle",
+    "releaseDate": "2023-01-01",
+    "msrp": 79.99,
+    "scale": "7\"",
+    "demand": 1.2,
+    "tags": [
+      "dc",
+      "af-checklist",
+      "mcfarlane",
+      "vehicle",
+      "vehicles-and-playsets",
+      "dc-multiverse",
+      "date-precision:year",
+      "af411:6186",
+      "fix:qc-oct20",
+      "sku:af411"
+    ],
+    "source": "curated-qc-oct20",
+    "sku": "787926155297"
+  },
+  {
+    "id": "mcf-veh-qc1020-storm-the-lost-kingdom-7393",
+    "name": "Storm (The Lost Kingdom)",
+    "subtitle": "Vehicles & Playsets",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "vehicle",
+    "releaseDate": "2023-01-01",
+    "msrp": 29.99,
+    "scale": "7\"",
+    "demand": 1.2,
+    "tags": [
+      "dc",
+      "af-checklist",
+      "mcfarlane",
+      "vehicle",
+      "vehicles-and-playsets",
+      "dc-multiverse",
+      "date-precision:year",
+      "af411:7393",
+      "fix:qc-oct20",
+      "sku:af411",
+      "image-sku",
+      "imgsku:cmdstore"
+    ],
+    "source": "curated-qc-oct20",
+    "sku": "787926155495",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-aquaman-and-the-lost-kingdom-storm-787926155495.jpg?v=1696999561"
+  },
+  {
+    "id": "mcf-veh-qc1020-batmobile-and-alfred-pennyworth-gold-label-batman-forever-8997",
+    "name": "Batmobile & Alfred Pennyworth (Gold Label - Batman Forever)",
+    "subtitle": "Vehicles & Playsets",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "vehicle",
+    "releaseDate": "2024-01-01",
+    "msrp": 99.99,
+    "scale": "7\"",
+    "demand": 1.2,
+    "tags": [
+      "dc",
+      "af-checklist",
+      "mcfarlane",
+      "vehicle",
+      "vehicles-and-playsets",
+      "dc-multiverse",
+      "date-precision:year",
+      "af411:8997",
+      "fix:qc-oct20",
+      "gold-label",
+      "sku:af411"
+    ],
+    "source": "curated-qc-oct20",
+    "sku": "787926150193"
+  },
+  {
+    "id": "mcf-veh-qc1020-batcycle-with-batman-the-flash-12145",
+    "name": "Batcycle with Batman (The Flash)",
+    "subtitle": "Vehicles & Playsets Walmart Exclusive",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "vehicle",
+    "releaseDate": "2025-01-01",
+    "msrp": 69.99,
+    "scale": "7\"",
+    "demand": 1.2,
+    "tags": [
+      "dc",
+      "af-checklist",
+      "mcfarlane",
+      "vehicle",
+      "vehicles-and-playsets",
+      "dc-multiverse",
+      "date-precision:year",
+      "af411:12145",
+      "fix:qc-oct20",
+      "sku:af411",
+      "image-sku",
+      "imgsku:cmdstore"
+    ],
+    "source": "curated-qc-oct20",
+    "sku": "787926174779",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-flash-batman-batcycle-787926174779.jpg?v=1762830353"
+  },
+  {
+    "id": "mcf-veh-qc1020-batman-and-batmobile-gold-label-batman-1989-6857",
+    "name": "Batman & Batmobile (Gold Label - Batman 1989)",
+    "subtitle": "Vehicles & Playsets Amazon Exclusive",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "vehicle",
+    "releaseDate": "2023-01-01",
+    "msrp": 74.99,
+    "scale": "7\"",
+    "demand": 1.2,
+    "tags": [
+      "dc",
+      "af-checklist",
+      "mcfarlane",
+      "vehicle",
+      "vehicles-and-playsets",
+      "dc-multiverse",
+      "date-precision:year",
+      "af411:6857",
+      "fix:qc-oct20",
+      "gold-label",
+      "sku:af411"
+    ],
+    "source": "curated-qc-oct20",
+    "sku": "787926170917"
+  },
+  {
+    "id": "mcf-veh-qc1020-lucius-fox-and-tumbler-gold-label-the-dark-knight-8576",
+    "name": "Lucius Fox & Tumbler (Gold Label - The Dark Knight)",
+    "subtitle": "Vehicles & Playsets",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "vehicle",
+    "releaseDate": "2024-01-01",
+    "msrp": 99.99,
+    "scale": "7\"",
+    "demand": 1.2,
+    "tags": [
+      "dc",
+      "af-checklist",
+      "mcfarlane",
+      "vehicle",
+      "vehicles-and-playsets",
+      "dc-multiverse",
+      "date-precision:year",
+      "af411:8576",
+      "fix:qc-oct20",
+      "gold-label",
+      "sku:af411"
+    ],
+    "source": "curated-qc-oct20",
+    "sku": "787926151930"
+  },
+  {
+    "id": "mcf-veh-qc1020-camouflage-tumbler-gold-label-the-dark-knight-rises-8577",
+    "name": "Camouflage Tumbler (Gold Label - The Dark Knight Rises)",
+    "subtitle": "Vehicles & Playsets Amazon Exclusive",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "vehicle",
+    "releaseDate": "2024-01-01",
+    "msrp": 69.99,
+    "scale": "7\"",
+    "demand": 1.2,
+    "tags": [
+      "dc",
+      "af-checklist",
+      "mcfarlane",
+      "vehicle",
+      "vehicles-and-playsets",
+      "dc-multiverse",
+      "date-precision:year",
+      "af411:8577",
+      "fix:qc-oct20",
+      "gold-label"
+    ],
+    "source": "curated-qc-oct20"
+  },
+  {
+    "id": "mcf-veh-qc1020-catwoman-and-batpod-gold-label-the-dark-knight-rises-7941",
+    "name": "Catwoman and Batpod (Gold Label - The Dark Knight Rises)",
+    "subtitle": "Vehicles & Playsets McFarlane Store Exclusive",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "vehicle",
+    "releaseDate": "2024-01-01",
+    "msrp": 69.99,
+    "scale": "7\"",
+    "demand": 1.2,
+    "tags": [
+      "dc",
+      "af-checklist",
+      "mcfarlane",
+      "vehicle",
+      "vehicles-and-playsets",
+      "dc-multiverse",
+      "date-precision:year",
+      "af411:7941",
+      "fix:qc-oct20",
+      "gold-label",
+      "sku:af411",
+      "image-sku",
+      "imgsku:cmdstore"
+    ],
+    "source": "curated-qc-oct20",
+    "sku": "787926157345",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-dark-knight-rises-exclusive-catwoman-and-batpod-gold-label-787926157345.jpg?v=1714759109"
+  },
+  {
+    "id": "mcf-veh-qc1020-batman-and-batpod-gold-label-the-dark-knight-rises-12464",
+    "name": "Batman and Batpod (Gold Label - The Dark Knight Rises)",
+    "subtitle": "Vehicles & Playsets Target Exclusive",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "vehicle",
+    "releaseDate": "2025-01-01",
+    "msrp": 69.99,
+    "scale": "7\"",
+    "demand": 1.2,
+    "tags": [
+      "dc",
+      "af-checklist",
+      "mcfarlane",
+      "vehicle",
+      "vehicles-and-playsets",
+      "dc-multiverse",
+      "date-precision:year",
+      "af411:12464",
+      "fix:qc-oct20",
+      "gold-label",
+      "sku:af411",
+      "image-sku",
+      "imgsku:cmdstore"
+    ],
+    "source": "curated-qc-oct20",
+    "sku": "787926176292",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-dark-knight-rises-exclusive-batman-batpod-gold-label-787926176292.jpg?v=1744312841"
+  },
+  {
+    "id": "mcf-veh-qc1020-batmobile-classic-tv-series-12482",
+    "name": "Batmobile (Classic TV Series)",
+    "subtitle": "Vehicles & Playsets",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "vehicle",
+    "releaseDate": "2025-01-01",
+    "msrp": 79.99,
+    "scale": "7\"",
+    "demand": 1.2,
+    "tags": [
+      "dc",
+      "af-checklist",
+      "mcfarlane",
+      "vehicle",
+      "vehicles-and-playsets",
+      "dc-multiverse",
+      "date-precision:year",
+      "af411:12482",
+      "fix:qc-oct20",
+      "sku:af411"
+    ],
+    "source": "curated-qc-oct20",
+    "sku": "787926176728"
+  },
+  {
+    "id": "mcf-veh-qc1020-batmobile-gold-label-the-batman-muscle-car-11653",
+    "name": "Batmobile (Gold Label - The Batman - Muscle Car)",
+    "subtitle": "Vehicles & Playsets",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "vehicle",
+    "releaseDate": "2025-01-01",
+    "msrp": 79.99,
+    "scale": "7\"",
+    "demand": 1.2,
+    "tags": [
+      "dc",
+      "af-checklist",
+      "mcfarlane",
+      "vehicle",
+      "vehicles-and-playsets",
+      "dc-multiverse",
+      "date-precision:year",
+      "af411:11653",
+      "fix:qc-oct20",
+      "gold-label",
+      "sku:af411"
+    ],
+    "source": "curated-qc-oct20",
+    "sku": "787926174847"
+  },
+  {
+    "id": "mcf-veh-qc1020-the-joker-joker-movie-limited-edition-deluxe-collector-set-9047",
+    "name": "The Joker (Joker Movie) Limited Edition Deluxe Collector Set",
+    "subtitle": "Limited Edition Deluxe Collector Set",
+    "line": "DC Multiverse",
+    "company": "mcfarlane",
+    "kind": "figure",
+    "releaseDate": "2025-01-01",
+    "msrp": 249.99,
+    "scale": "7\"",
+    "demand": 1.2,
+    "tags": [
+      "dc",
+      "af-checklist",
+      "mcfarlane",
+      "dc-multiverse",
+      "date-precision:year",
+      "af411:9047",
+      "fix:qc-oct20",
+      "sku:af411"
+    ],
+    "source": "curated-qc-oct20",
+    "sku": "787926173338"
   }
 ]

@@ -1,0 +1,275 @@
+{
+  "at": "2026-10-20T13:43:00.287380+00:00",
+  "dryRun": false,
+  "rowsBefore": 30471,
+  "rowsAfter": 30485,
+  "dupIds": 0,
+  "dupSkusTouched": {},
+  "dupSkusTotal": 2,
+  "problems": [],
+  "stripped": [
+    {
+      "id": "mcf-vault-w20-captain-carrot-vault-collection-justice-league-incarnate-13946",
+      "code": "787926170146",
+      "imageCleared": null
+    },
+    {
+      "id": "mcfdc-batman-red-death",
+      "code": "787926157055",
+      "imageCleared": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-comic-series-death-metal-batcycle-787926157055.jpg?v=1723114260"
+    },
+    {
+      "id": "mcf6-mcf-batman-who",
+      "code": "787926150674",
+      "imageCleared": "https://static.wixstatic.com/media/adc447_f719a4dc0a5b44ed9546b06b2b98d13c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f719a4dc0a5b44ed9546b06b2b98d13c~mv2.jpg"
+    },
+    {
+      "id": "mcf-dc-super-pow-the-batmobile-vehicle",
+      "code": "787926155297",
+      "imageCleared": "https://static.wixstatic.com/media/adc447_9900f38bf45e4a8988c4ddcf39774230~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9900f38bf45e4a8988c4ddcf39774230~mv2.jpg"
+    },
+    {
+      "id": "mcf6-mcf-aquaman-plat",
+      "code": "787926155495",
+      "imageCleared": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-aquaman-and-the-lost-kingdom-storm-787926155495.jpg?v=1696999561"
+    },
+    {
+      "id": "mcf-w2-alfred-pennyworth-batman-v-superman",
+      "code": "787926150193",
+      "imageCleared": "https://static.wixstatic.com/media/adc447_35c9f873a50b432d9ac0df4e39e29034~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_35c9f873a50b432d9ac0df4e39e29034~mv2.jpg"
+    },
+    {
+      "id": "mcf3-mcf-flash-movie",
+      "code": "787926174779",
+      "imageCleared": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-flash-batman-batcycle-787926174779.jpg?v=1762830353"
+    },
+    {
+      "id": "afmon-mcfarlane-batman-dc-multiverse-collector-edition-the-joker-action-figure-bbts-183610",
+      "code": "787926170917",
+      "imageCleared": null
+    },
+    {
+      "id": "mcf4-multiverse-catwoman-classic",
+      "code": "787926157345",
+      "imageCleared": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-dark-knight-rises-exclusive-catwoman-and-batpod-gold-label-787926157345.jpg?v=1714759109"
+    },
+    {
+      "id": "mcf6-mcf-batman-gold",
+      "code": "787926176292",
+      "imageCleared": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-dark-knight-rises-exclusive-batman-batpod-gold-label-787926176292.jpg?v=1744312841"
+    }
+  ],
+  "renamed": [
+    {
+      "id": "mf10-mf-04",
+      "before": {
+        "name": "DC Multiverse The Flash",
+        "subtitle": "DC Multiverse",
+        "line": "DC Multiverse",
+        "kind": "figure",
+        "releaseDate": "2020-01-01",
+        "msrp": 22.99
+      },
+      "after": {
+        "name": "Batwing (Gold Label - The Flash Movie)",
+        "subtitle": "Vehicles & Playsets McFarlane Store Exclusive",
+        "line": "DC Multiverse",
+        "kind": "vehicle",
+        "releaseDate": "2023-01-01",
+        "msrp": 249.99
+      },
+      "skuKept": "787926154979"
+    },
+    {
+      "id": "mf10-mf-07",
+      "before": {
+        "name": "DC Multiverse Joker",
+        "subtitle": "DC Multiverse",
+        "line": "DC Multiverse",
+        "kind": "figure",
+        "releaseDate": "2020-01-01",
+        "msrp": 22.99
+      },
+      "after": {
+        "name": "The Joker Interrogation Room (Gold Label - The Dark Knight)",
+        "subtitle": "Vehicles & Playsets",
+        "line": "DC Multiverse",
+        "kind": "playset",
+        "releaseDate": "2023-01-01",
+        "msrp": 39.99
+      },
+      "skuKept": "787926153996"
+    },
+    {
+      "id": "mcf3-mcf-redhood-outlaw",
+      "before": {
+        "name": "Red Hood",
+        "subtitle": "Outlaw",
+        "line": "DC Multiverse",
+        "kind": "figure",
+        "releaseDate": "2022-09-01",
+        "msrp": 22.99
+      },
+      "after": {
+        "name": "Red Hood's Sportsbike (Outlaw)",
+        "subtitle": "Vehicles & Playsets",
+        "line": "DC Multiverse",
+        "kind": "vehicle",
+        "releaseDate": "2024-01-01",
+        "msrp": 29.99
+      },
+      "skuKept": "787926155976"
+    },
+    {
+      "id": "mf8-mf-09",
+      "before": {
+        "name": "Batman",
+        "subtitle": "DC Multiverse The Batman",
+        "line": "DC Multiverse",
+        "kind": "figure",
+        "releaseDate": "2021-01-01",
+        "msrp": 22.99
+      },
+      "after": {
+        "name": "Batmissile (Batman Returns)",
+        "subtitle": "Vehicles & Playsets",
+        "line": "DC Multiverse",
+        "kind": "vehicle",
+        "releaseDate": "2026-01-01",
+        "msrp": 99.99
+      },
+      "skuKept": "787926180114"
+    },
+    {
+      "id": "mcfc-lobo",
+      "before": {
+        "name": "Lobo",
+        "subtitle": "DC Multiverse",
+        "line": "DC Multiverse",
+        "kind": "figure",
+        "releaseDate": "2022-04-01",
+        "msrp": 22.99
+      },
+      "after": {
+        "name": "Spacehog (Supergirl Movie)",
+        "subtitle": "Vehicles & Playsets",
+        "line": "DC Multiverse",
+        "kind": "vehicle",
+        "releaseDate": "2026-01-01",
+        "msrp": 49.99
+      },
+      "skuKept": "787926177374"
+    }
+  ],
+  "added": [
+    {
+      "id": "mcf-veh-qc1020-batcycle-dark-nights-death-metal-3041",
+      "name": "Batcycle (Dark Nights: Death Metal)",
+      "sku": "787926157055",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-comic-series-death-metal-batcycle-787926157055.jpg?v=1723114260"
+    },
+    {
+      "id": "mcf-veh-qc1020-batman-and-bat-raptor-gold-label-7161",
+      "name": "Batman & Bat-Raptor (Gold Label)",
+      "sku": "787926150674",
+      "imageUrl": null
+    },
+    {
+      "id": "mcf-veh-qc1020-batmobile-the-flash-movie-6186",
+      "name": "Batmobile (The Flash Movie)",
+      "sku": "787926155297",
+      "imageUrl": null
+    },
+    {
+      "id": "mcf-veh-qc1020-storm-the-lost-kingdom-7393",
+      "name": "Storm (The Lost Kingdom)",
+      "sku": "787926155495",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-aquaman-and-the-lost-kingdom-storm-787926155495.jpg?v=1696999561"
+    },
+    {
+      "id": "mcf-veh-qc1020-batmobile-and-alfred-pennyworth-gold-label-batman-forever-8997",
+      "name": "Batmobile & Alfred Pennyworth (Gold Label - Batman Forever)",
+      "sku": "787926150193",
+      "imageUrl": null
+    },
+    {
+      "id": "mcf-veh-qc1020-batcycle-with-batman-the-flash-12145",
+      "name": "Batcycle with Batman (The Flash)",
+      "sku": "787926174779",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-flash-batman-batcycle-787926174779.jpg?v=1762830353"
+    },
+    {
+      "id": "mcf-veh-qc1020-batman-and-batmobile-gold-label-batman-1989-6857",
+      "name": "Batman & Batmobile (Gold Label - Batman 1989)",
+      "sku": "787926170917",
+      "imageUrl": null
+    },
+    {
+      "id": "mcf-veh-qc1020-lucius-fox-and-tumbler-gold-label-the-dark-knight-8576",
+      "name": "Lucius Fox & Tumbler (Gold Label - The Dark Knight)",
+      "sku": "787926151930",
+      "imageUrl": null
+    },
+    {
+      "id": "mcf-veh-qc1020-camouflage-tumbler-gold-label-the-dark-knight-rises-8577",
+      "name": "Camouflage Tumbler (Gold Label - The Dark Knight Rises)",
+      "sku": null,
+      "imageUrl": null
+    },
+    {
+      "id": "mcf-veh-qc1020-catwoman-and-batpod-gold-label-the-dark-knight-rises-7941",
+      "name": "Catwoman and Batpod (Gold Label - The Dark Knight Rises)",
+      "sku": "787926157345",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-dark-knight-rises-exclusive-catwoman-and-batpod-gold-label-787926157345.jpg?v=1714759109"
+    },
+    {
+      "id": "mcf-veh-qc1020-batman-and-batpod-gold-label-the-dark-knight-rises-12464",
+      "name": "Batman and Batpod (Gold Label - The Dark Knight Rises)",
+      "sku": "787926176292",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/dc-multiverse-the-dark-knight-rises-exclusive-batman-batpod-gold-label-787926176292.jpg?v=1744312841"
+    },
+    {
+      "id": "mcf-veh-qc1020-batmobile-classic-tv-series-12482",
+      "name": "Batmobile (Classic TV Series)",
+      "sku": "787926176728",
+      "imageUrl": null
+    },
+    {
+      "id": "mcf-veh-qc1020-batmobile-gold-label-the-batman-muscle-car-11653",
+      "name": "Batmobile (Gold Label - The Batman - Muscle Car)",
+      "sku": "787926174847",
+      "imageUrl": null
+    },
+    {
+      "id": "mcf-veh-qc1020-the-joker-joker-movie-limited-edition-deluxe-collector-set-9047",
+      "name": "The Joker (Joker Movie) Limited Edition Deluxe Collector Set",
+      "sku": "787926173338",
+      "imageUrl": null
+    }
+  ],
+  "updated": [
+    {
+      "id": "mcf-mce-w19-captain-carrot-justice-league-incarnate-ce-08-captain-carrot",
+      "sku": "787926170146",
+      "releaseDate": "2023-01-01"
+    }
+  ],
+  "skipped": [
+    {
+      "upc": "787926182163",
+      "why": "Vault W2 candidate UPC unverified (AF411 only); not applied"
+    },
+    {
+      "upc": "787926175998",
+      "why": "Captain Carrot Gold Label GITD (AF411 10238): CSV marks it optional / not part of this fix, AF411-only medium; row not added"
+    },
+    {
+      "upc": "787926172966",
+      "why": "Camouflage Tumbler UPC unverified (UPCitemdb only); row added without sku"
+    },
+    {
+      "id": "mf10-mf-07",
+      "why": "UPC 787926153996 left as-is (store image filename says ...3993)"
+    }
+  ]
+}
