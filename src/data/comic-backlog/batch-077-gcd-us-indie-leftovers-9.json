@@ -1,0 +1,9181 @@
+{
+  "id": "batch-077-gcd-us-indie-leftovers-9",
+  "title": "GCD US indie leftovers pass 9",
+  "created": "2026-10-20",
+  "status": "queued",
+  "focus": "Real GCD mains (USD price) from US comic publishers with remaining unmined issues (same US-only publisher pool as batch-074/075, next slice; non-US and non-comic magazines excluded)",
+  "source": "gcd-dump",
+  "addedCount": 500,
+  "byPublisher": {
+    "Chaos! Comics": 40,
+    "Antarctic Press": 40,
+    "Viz": 40,
+    "EC": 40,
+    "Night Wynd": 36,
+    "Fleetway/Quality": 32,
+    "Eclipse": 32,
+    "Millennium Publications": 20,
+    "Entity-Parody": 20,
+    "Now": 20,
+    "London Night Studios": 18,
+    "FantaCo Enterprises": 17,
+    "AC": 15,
+    "Stanley Morse": 14,
+    "Amryl Entertainment": 12,
+    "Avalon Communications": 12,
+    "Sirius Entertainment": 12,
+    "Slave Labor": 12,
+    "Renegade Press": 11,
+    "George A. Pflaum": 9,
+    "Topps": 8,
+    "Rip Off Press": 8,
+    "Disney": 8,
+    "Harris Comics": 4,
+    "Studio Ironcat": 4,
+    "Brainstorm Comics": 4,
+    "Kitchen Sink Press": 4,
+    "Innovation": 4,
+    "Last Gasp": 4
+  },
+  "rows": [
+    [
+      "fant-dr-korvus-2023-4",
+      "Dr. Korvus",
+      "4",
+      "FantaCo Enterprises",
+      "2024-03-27",
+      "",
+      "",
+      "Dr. Korvus #4",
+      5.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "74505113837000411",
+        "streetDate": "2024-03-27",
+        "gcdIssueId": "2620035"
+      }
+    ],
+    [
+      "fant-dr-korvus-2023-3",
+      "Dr. Korvus",
+      "3",
+      "FantaCo Enterprises",
+      "2024-02-21",
+      "",
+      "",
+      "Dr. Korvus #3",
+      5.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "74505113837000311",
+        "streetDate": "2024-02-21",
+        "gcdIssueId": "2620034"
+      }
+    ],
+    [
+      "fant-dr-korvus-2023-2",
+      "Dr. Korvus",
+      "2",
+      "FantaCo Enterprises",
+      "2023-12-27",
+      "",
+      "",
+      "Dr. Korvus #2",
+      5.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "74505113837000211",
+        "streetDate": "2023-12-27",
+        "gcdIssueId": "2620033"
+      }
+    ],
+    [
+      "fant-dr-korvus-2023-1",
+      "Dr. Korvus",
+      "1",
+      "FantaCo Enterprises",
+      "2023-10-25",
+      "",
+      "",
+      "Dr. Korvus #1",
+      5.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "74505113837000111",
+        "streetDate": "2023-10-25",
+        "gcdIssueId": "2620032"
+      }
+    ],
+    [
+      "amry-cavewoman-the-return-2015-4",
+      "Cavewoman: The Return",
+      "4",
+      "Amryl Entertainment",
+      "2015-09-30",
+      "",
+      "",
+      "Cavewoman: The Return #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "702168731054",
+        "streetDate": "2015-09-30",
+        "gcdIssueId": "1464257"
+      }
+    ],
+    [
+      "amry-cavewoman-the-return-2015-2",
+      "Cavewoman: The Return",
+      "2",
+      "Amryl Entertainment",
+      "2015-05-06",
+      "",
+      "",
+      "Cavewoman: The Return #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "702168730842",
+        "streetDate": "2015-05-06",
+        "gcdIssueId": "1353189"
+      }
+    ],
+    [
+      "amry-cavewoman-the-return-2015-1",
+      "Cavewoman: The Return",
+      "1",
+      "Amryl Entertainment",
+      "2015-02-11",
+      "",
+      "",
+      "Cavewoman: The Return #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "702168730743",
+        "streetDate": "2015-02-11",
+        "gcdIssueId": "1353188"
+      }
+    ],
+    [
+      "amry-cavewoman-the-return-2015-3",
+      "Cavewoman: The Return",
+      "3",
+      "Amryl Entertainment",
+      "2015-02-11",
+      "",
+      "",
+      "Cavewoman: The Return #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "702168730941",
+        "streetDate": "2015-02-11",
+        "gcdIssueId": "1464256"
+      }
+    ],
+    [
+      "amry-cavewoman-snow-2011-4",
+      "Cavewoman: Snow",
+      "4",
+      "Amryl Entertainment",
+      "2011-10-26",
+      "",
+      "",
+      "Cavewoman: Snow #4",
+      3.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "609613653643",
+        "streetDate": "2001-10-26",
+        "gcdIssueId": "893356"
+      }
+    ],
+    [
+      "amry-cavewoman-snow-2011-3",
+      "Cavewoman: Snow",
+      "3",
+      "Amryl Entertainment",
+      "2011-09-07",
+      "",
+      "",
+      "Cavewoman: Snow #3",
+      3.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "608866939634",
+        "streetDate": "2011-09-07",
+        "gcdIssueId": "876529"
+      }
+    ],
+    [
+      "amry-cavewoman-snow-2011-2",
+      "Cavewoman: Snow",
+      "2",
+      "Amryl Entertainment",
+      "2011-07-13",
+      "",
+      "",
+      "Cavewoman: Snow #2",
+      3.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "608866852896",
+        "streetDate": "2011-07-13",
+        "gcdIssueId": "860846"
+      }
+    ],
+    [
+      "amry-cavewoman-snow-2011-1",
+      "Cavewoman: Snow",
+      "1",
+      "Amryl Entertainment",
+      "2011-04-27",
+      "",
+      "",
+      "Cavewoman: Snow #1",
+      3.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "609728077259",
+        "streetDate": "2011-04-27",
+        "gcdIssueId": "825459"
+      }
+    ],
+    [
+      "harr-vampi-2001-25",
+      "Vampi",
+      "25",
+      "Harris Comics",
+      "2003-02-19",
+      "",
+      "",
+      "Vampi #25",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "02717221003702511",
+        "streetDate": "2003-02-19",
+        "gcdIssueId": "734166"
+      }
+    ],
+    [
+      "amry-tigress-tales-2001-5",
+      "Tigress Tales",
+      "5",
+      "Amryl Entertainment",
+      "2003-01-01",
+      "",
+      "",
+      "Tigress Tales #5",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "705647"
+      }
+    ],
+    [
+      "harr-vampi-2001-24",
+      "Vampi",
+      "24",
+      "Harris Comics",
+      "2002-12-01",
+      "",
+      "",
+      "Vampi #24",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "02717221003702411",
+        "streetDate": "2003-01-08",
+        "gcdIssueId": "306610"
+      }
+    ],
+    [
+      "harr-vampi-2001-23",
+      "Vampi",
+      "23",
+      "Harris Comics",
+      "2002-11-14",
+      "",
+      "",
+      "Vampi #23",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "02717221003702311",
+        "streetDate": "2002-11-14",
+        "gcdIssueId": "306609"
+      }
+    ],
+    [
+      "harr-vampi-2001-22",
+      "Vampi",
+      "22",
+      "Harris Comics",
+      "2002-10-01",
+      "",
+      "",
+      "Vampi #22",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "02717221003702211",
+        "streetDate": "2002-11-06",
+        "gcdIssueId": "306608"
+      }
+    ],
+    [
+      "amry-tigress-tales-2001-4",
+      "Tigress Tales",
+      "4",
+      "Amryl Entertainment",
+      "2002-09-01",
+      "",
+      "",
+      "Tigress Tales #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "705646"
+      }
+    ],
+    [
+      "amry-tigress-tales-2001-3",
+      "Tigress Tales",
+      "3",
+      "Amryl Entertainment",
+      "2002-05-01",
+      "",
+      "",
+      "Tigress Tales #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "705645"
+      }
+    ],
+    [
+      "chao-legend-of-the-sage-2001-4",
+      "Legend of the Sage",
+      "4",
+      "Chaos! Comics",
+      "2001-12-01",
+      "",
+      "",
+      "Legend of the Sage #4",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9781931869157",
+        "gcdIssueId": "742202"
+      }
+    ],
+    [
+      "chao-legend-of-the-sage-2001-3",
+      "Legend of the Sage",
+      "3",
+      "Chaos! Comics",
+      "2001-10-01",
+      "",
+      "",
+      "Legend of the Sage #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "742201"
+      }
+    ],
+    [
+      "chao-legend-of-the-sage-2001-2",
+      "Legend of the Sage",
+      "2",
+      "Chaos! Comics",
+      "2001-09-01",
+      "",
+      "",
+      "Legend of the Sage #2",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9781930687936",
+        "gcdIssueId": "742200"
+      }
+    ],
+    [
+      "amry-tigress-tales-2001-2",
+      "Tigress Tales",
+      "2",
+      "Amryl Entertainment",
+      "2001-08-01",
+      "",
+      "",
+      "Tigress Tales #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "705644"
+      }
+    ],
+    [
+      "chao-legend-of-the-sage-2001-1",
+      "Legend of the Sage",
+      "1",
+      "Chaos! Comics",
+      "2001-08-01",
+      "",
+      "",
+      "Legend of the Sage #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9781930687936",
+        "gcdIssueId": "742199"
+      }
+    ],
+    [
+      "chao-lady-death-tribulation-2000-4",
+      "Lady Death: Tribulation",
+      "4",
+      "Chaos! Comics",
+      "2001-03-01",
+      "",
+      "",
+      "Lady Death: Tribulation #4",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9781930687660",
+        "gcdIssueId": "382092"
+      }
+    ],
+    [
+      "chao-lady-death-tribulation-2000-3",
+      "Lady Death: Tribulation",
+      "3",
+      "Chaos! Comics",
+      "2001-02-01",
+      "",
+      "",
+      "Lady Death: Tribulation #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9781930687592",
+        "gcdIssueId": "382091"
+      }
+    ],
+    [
+      "aval-weird-space-2000-5",
+      "Weird Space",
+      "5",
+      "Avalon Communications",
+      "2001-01-01",
+      "",
+      "",
+      "Weird Space #5",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "755425"
+      }
+    ],
+    [
+      "chao-lady-death-tribulation-2000-2",
+      "Lady Death: Tribulation",
+      "2",
+      "Chaos! Comics",
+      "2001-01-01",
+      "",
+      "",
+      "Lady Death: Tribulation #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9781930687400",
+        "gcdIssueId": "382090"
+      }
+    ],
+    [
+      "chao-lady-death-tribulation-2000-1",
+      "Lady Death: Tribulation",
+      "1",
+      "Chaos! Comics",
+      "2000-12-01",
+      "",
+      "",
+      "Lady Death: Tribulation #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9781930687530",
+        "gcdIssueId": "382089"
+      }
+    ],
+    [
+      "siri-dawn-the-return-of-the-goddess-1999-4",
+      "Dawn: The Return of the Goddess",
+      "4",
+      "Sirius Entertainment",
+      "2000-07-01",
+      "",
+      "",
+      "Dawn: The Return of the Goddess #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748867"
+      }
+    ],
+    [
+      "stud-gun-crisis-deadly-curve-2000-4",
+      "Gun Crisis:  Deadly Curve",
+      "4",
+      "Studio Ironcat",
+      "2000-06-01",
+      "",
+      "",
+      "Gun Crisis:  Deadly Curve #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1042169"
+      }
+    ],
+    [
+      "aval-weird-space-2000-2",
+      "Weird Space",
+      "2",
+      "Avalon Communications",
+      "2000-05-01",
+      "",
+      "",
+      "Weird Space #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "292654"
+      }
+    ],
+    [
+      "stud-gun-crisis-deadly-curve-2000-3",
+      "Gun Crisis:  Deadly Curve",
+      "3",
+      "Studio Ironcat",
+      "2000-05-01",
+      "",
+      "",
+      "Gun Crisis:  Deadly Curve #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1042168"
+      }
+    ],
+    [
+      "stud-gun-crisis-deadly-curve-2000-2",
+      "Gun Crisis:  Deadly Curve",
+      "2",
+      "Studio Ironcat",
+      "2000-04-01",
+      "",
+      "",
+      "Gun Crisis:  Deadly Curve #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1042167"
+      }
+    ],
+    [
+      "stud-gun-crisis-deadly-curve-2000-1",
+      "Gun Crisis:  Deadly Curve",
+      "1",
+      "Studio Ironcat",
+      "2000-03-01",
+      "",
+      "",
+      "Gun Crisis:  Deadly Curve #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1042166"
+      }
+    ],
+    [
+      "aval-weird-space-2000-1",
+      "Weird Space",
+      "1",
+      "Avalon Communications",
+      "2000-01-01",
+      "",
+      "",
+      "Weird Space #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "292653"
+      }
+    ],
+    [
+      "aval-weird-space-2000-4",
+      "Weird Space",
+      "4",
+      "Avalon Communications",
+      "2000-01-01",
+      "",
+      "",
+      "Weird Space #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "292656"
+      }
+    ],
+    [
+      "aval-dick-tracy-detective-1999-3",
+      "Dick Tracy Detective",
+      "3",
+      "Avalon Communications",
+      "2000-01-01",
+      "",
+      "",
+      "Dick Tracy Detective #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "646054"
+      }
+    ],
+    [
+      "aval-dick-tracy-detective-1999-4",
+      "Dick Tracy Detective",
+      "4",
+      "Avalon Communications",
+      "2000-01-01",
+      "",
+      "",
+      "Dick Tracy Detective #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "646055"
+      }
+    ],
+    [
+      "aval-classic-terry-the-pirates-2000-1",
+      "Classic Terry & the Pirates",
+      "1",
+      "Avalon Communications",
+      "2000-01-01",
+      "",
+      "",
+      "Classic Terry & the Pirates #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "528419"
+      }
+    ],
+    [
+      "aval-classic-terry-the-pirates-2000-2",
+      "Classic Terry & the Pirates",
+      "2",
+      "Avalon Communications",
+      "2000-01-01",
+      "",
+      "",
+      "Classic Terry & the Pirates #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "528420"
+      }
+    ],
+    [
+      "aval-classic-terry-the-pirates-2000-3",
+      "Classic Terry & the Pirates",
+      "3",
+      "Avalon Communications",
+      "2000-01-01",
+      "",
+      "",
+      "Classic Terry & the Pirates #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "528421"
+      }
+    ],
+    [
+      "aval-classic-terry-the-pirates-2000-5",
+      "Classic Terry & the Pirates",
+      "5",
+      "Avalon Communications",
+      "2000-01-01",
+      "",
+      "",
+      "Classic Terry & the Pirates #5",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "528423"
+      }
+    ],
+    [
+      "chao-armageddon-1999-4",
+      "Armageddon",
+      "4",
+      "Chaos! Comics",
+      "2000-01-01",
+      "",
+      "",
+      "Armageddon #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9781891243837",
+        "gcdIssueId": "744782"
+      }
+    ],
+    [
+      "chao-armageddon-1999-1",
+      "Armageddon",
+      "1",
+      "Chaos! Comics",
+      "1999-12-01",
+      "",
+      "",
+      "Armageddon #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9781891243448",
+        "gcdIssueId": "744779"
+      }
+    ],
+    [
+      "chao-armageddon-1999-3",
+      "Armageddon",
+      "3",
+      "Chaos! Comics",
+      "1999-12-01",
+      "",
+      "",
+      "Armageddon #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9781891243752",
+        "gcdIssueId": "744781"
+      }
+    ],
+    [
+      "siri-dawn-the-return-of-the-goddess-1999-3",
+      "Dawn: The Return of the Goddess",
+      "3",
+      "Sirius Entertainment",
+      "1999-11-01",
+      "",
+      "",
+      "Dawn: The Return of the Goddess #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748866"
+      }
+    ],
+    [
+      "chao-armageddon-1999-2",
+      "Armageddon",
+      "2",
+      "Chaos! Comics",
+      "1999-11-01",
+      "",
+      "",
+      "Armageddon #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9781891243653",
+        "gcdIssueId": "744780"
+      }
+    ],
+    [
+      "chao-purgatori-goddess-rising-1999-4",
+      "Purgatori: Goddess Rising",
+      "4",
+      "Chaos! Comics",
+      "1999-10-01",
+      "",
+      "",
+      "Purgatori: Goddess Rising #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "018912435001",
+        "gcdIssueId": "744128"
+      }
+    ],
+    [
+      "chao-purgatori-goddess-rising-1999-3",
+      "Purgatori: Goddess Rising",
+      "3",
+      "Chaos! Comics",
+      "1999-09-01",
+      "",
+      "",
+      "Purgatori: Goddess Rising #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "189124331402",
+        "gcdIssueId": "744127"
+      }
+    ],
+    [
+      "chao-lady-death-the-rapture-1999-4",
+      "Lady Death: The Rapture",
+      "4",
+      "Chaos! Comics",
+      "1999-09-01",
+      "",
+      "",
+      "Lady Death: The Rapture #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "018912434035",
+        "gcdIssueId": "730661"
+      }
+    ],
+    [
+      "chao-purgatori-goddess-rising-1999-2",
+      "Purgatori: Goddess Rising",
+      "2",
+      "Chaos! Comics",
+      "1999-08-01",
+      "",
+      "",
+      "Purgatori: Goddess Rising #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "189124329201",
+        "gcdIssueId": "744126"
+      }
+    ],
+    [
+      "chao-lady-death-the-rapture-1999-3",
+      "Lady Death: The Rapture",
+      "3",
+      "Chaos! Comics",
+      "1999-08-01",
+      "",
+      "",
+      "Lady Death: The Rapture #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9781891243288",
+        "gcdIssueId": "730660"
+      }
+    ],
+    [
+      "chao-purgatori-goddess-rising-1999-1",
+      "Purgatori: Goddess Rising",
+      "1",
+      "Chaos! Comics",
+      "1999-07-01",
+      "",
+      "",
+      "Purgatori: Goddess Rising #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "744125"
+      }
+    ],
+    [
+      "chao-lady-death-the-rapture-1999-2",
+      "Lady Death: The Rapture",
+      "2",
+      "Chaos! Comics",
+      "1999-07-01",
+      "",
+      "",
+      "Lady Death: The Rapture #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9781891243196",
+        "gcdIssueId": "730659"
+      }
+    ],
+    [
+      "chao-lady-death-the-rapture-1999-1",
+      "Lady Death: The Rapture",
+      "1",
+      "Chaos! Comics",
+      "1999-06-01",
+      "",
+      "",
+      "Lady Death: The Rapture #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "730658"
+      }
+    ],
+    [
+      "anta-far-west-1998-4",
+      "Far West",
+      "4",
+      "Antarctic Press",
+      "1999-05-12",
+      "",
+      "",
+      "Far West #4",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072106004900411",
+        "streetDate": "1999-05-12",
+        "gcdIssueId": "373358"
+      }
+    ],
+    [
+      "anta-ninja-high-school-spotlight-1996-4",
+      "Ninja High School Spotlight",
+      "4",
+      "Antarctic Press",
+      "1999-05-01",
+      "",
+      "",
+      "Ninja High School Spotlight #4",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072106004900411",
+        "gcdIssueId": "593248"
+      }
+    ],
+    [
+      "siri-dawn-the-return-of-the-goddess-1999-2",
+      "Dawn: The Return of the Goddess",
+      "2",
+      "Sirius Entertainment",
+      "1999-05-01",
+      "",
+      "",
+      "Dawn: The Return of the Goddess #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748865"
+      }
+    ],
+    [
+      "siri-dawn-the-return-of-the-goddess-1999-1",
+      "Dawn: The Return of the Goddess",
+      "1",
+      "Sirius Entertainment",
+      "1999-04-01",
+      "",
+      "",
+      "Dawn: The Return of the Goddess #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748864"
+      }
+    ],
+    [
+      "anta-far-west-1998-3",
+      "Far West",
+      "3",
+      "Antarctic Press",
+      "1999-03-10",
+      "",
+      "",
+      "Far West #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072106004900311",
+        "streetDate": "1999-03-10",
+        "gcdIssueId": "373357"
+      }
+    ],
+    [
+      "chao-chastity-rocked-1998-4",
+      "Chastity: Rocked",
+      "4",
+      "Chaos! Comics",
+      "1999-02-01",
+      "",
+      "",
+      "Chastity: Rocked #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "746048"
+      }
+    ],
+    [
+      "aval-dick-tracy-detective-1999-1",
+      "Dick Tracy Detective",
+      "1",
+      "Avalon Communications",
+      "1999-01-01",
+      "",
+      "",
+      "Dick Tracy Detective #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "646052"
+      }
+    ],
+    [
+      "aval-dick-tracy-detective-1999-2",
+      "Dick Tracy Detective",
+      "2",
+      "Avalon Communications",
+      "1999-01-01",
+      "",
+      "",
+      "Dick Tracy Detective #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "646053"
+      }
+    ],
+    [
+      "chao-chastity-rocked-1998-3",
+      "Chastity: Rocked",
+      "3",
+      "Chaos! Comics",
+      "1999-01-01",
+      "",
+      "",
+      "Chastity: Rocked #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "746047"
+      }
+    ],
+    [
+      "chao-chastity-rocked-1998-2",
+      "Chastity: Rocked",
+      "2",
+      "Chaos! Comics",
+      "1998-12-01",
+      "",
+      "",
+      "Chastity: Rocked #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "746046"
+      }
+    ],
+    [
+      "anta-far-west-1998-1",
+      "Far West (1998)",
+      "1",
+      "Antarctic Press",
+      "1998-11-11",
+      "",
+      "",
+      "Far West #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072106004900111",
+        "streetDate": "1998-11-11",
+        "gcdIssueId": "373355"
+      }
+    ],
+    [
+      "chao-chastity-rocked-1998-1",
+      "Chastity: Rocked",
+      "1",
+      "Chaos! Comics",
+      "1998-11-01",
+      "",
+      "",
+      "Chastity: Rocked #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "746045"
+      }
+    ],
+    [
+      "siri-sheba-1997-4",
+      "Sheba",
+      "4",
+      "Sirius Entertainment",
+      "1998-09-01",
+      "",
+      "",
+      "Sheba #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1998-10-21",
+        "gcdIssueId": "894004"
+      }
+    ],
+    [
+      "siri-sheba-1997-3",
+      "Sheba",
+      "3",
+      "Sirius Entertainment",
+      "1998-06-01",
+      "",
+      "",
+      "Sheba #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1998-07-15",
+        "gcdIssueId": "894003"
+      }
+    ],
+    [
+      "anta-no-no-ufo-1997-4",
+      "No No UFO (1997)",
+      "4",
+      "Antarctic Press",
+      "1998-05-01",
+      "",
+      "",
+      "No No UFO #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072114007900411",
+        "gcdIssueId": "290956"
+      }
+    ],
+    [
+      "siri-sheba-1997-2",
+      "Sheba",
+      "2",
+      "Sirius Entertainment",
+      "1998-03-01",
+      "",
+      "",
+      "Sheba #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "894002"
+      }
+    ],
+    [
+      "anta-lillith-demon-princess-1996-0",
+      "Lillith: Demon Princess",
+      "0",
+      "Antarctic Press",
+      "1998-03-01",
+      "",
+      "",
+      "Lillith: Demon Princess #0",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072112007100011",
+        "gcdIssueId": "508470"
+      }
+    ],
+    [
+      "brai-bethany-the-vampfire-1997-3",
+      "Bethany the Vampfire",
+      "3",
+      "Brainstorm Comics",
+      "1998-02-01",
+      "",
+      "",
+      "Bethany the Vampfire #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760486"
+      }
+    ],
+    [
+      "brai-bethany-the-vampfire-1997-2",
+      "Bethany the Vampfire",
+      "2",
+      "Brainstorm Comics",
+      "1998-01-01",
+      "",
+      "",
+      "Bethany the Vampfire #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760485"
+      }
+    ],
+    [
+      "siri-sheba-1997-1",
+      "Sheba",
+      "1",
+      "Sirius Entertainment",
+      "1997-12-01",
+      "",
+      "",
+      "Sheba #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "894001"
+      }
+    ],
+    [
+      "brai-bethany-the-vampfire-1997-1",
+      "Bethany the Vampfire",
+      "1",
+      "Brainstorm Comics",
+      "1997-12-01",
+      "",
+      "",
+      "Bethany the Vampfire #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760484"
+      }
+    ],
+    [
+      "anta-the-crimson-nun-1997-4",
+      "The Crimson Nun",
+      "4",
+      "Antarctic Press",
+      "1997-11-01",
+      "",
+      "",
+      "The Crimson Nun #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072103003500411",
+        "gcdIssueId": "574615"
+      }
+    ],
+    [
+      "chao-nightmare-theater-1997-1",
+      "Nightmare Theater",
+      "1",
+      "Chaos! Comics",
+      "1997-11-01",
+      "",
+      "",
+      "Nightmare Theater #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "353068"
+      }
+    ],
+    [
+      "chao-nightmare-theater-1997-2",
+      "Nightmare Theater",
+      "2",
+      "Chaos! Comics",
+      "1997-11-01",
+      "",
+      "",
+      "Nightmare Theater #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "353069"
+      }
+    ],
+    [
+      "chao-nightmare-theater-1997-3",
+      "Nightmare Theater",
+      "3",
+      "Chaos! Comics",
+      "1997-11-01",
+      "",
+      "",
+      "Nightmare Theater #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "353070"
+      }
+    ],
+    [
+      "chao-nightmare-theater-1997-4",
+      "Nightmare Theater",
+      "4",
+      "Chaos! Comics",
+      "1997-11-01",
+      "",
+      "",
+      "Nightmare Theater #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "353071"
+      }
+    ],
+    [
+      "brai-bethany-the-vampfire-1997-0",
+      "Bethany the Vampfire",
+      "0",
+      "Brainstorm Comics",
+      "1997-11-01",
+      "",
+      "",
+      "Bethany the Vampfire #0",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760483"
+      }
+    ],
+    [
+      "anta-the-crimson-nun-1997-3",
+      "The Crimson Nun",
+      "3",
+      "Antarctic Press",
+      "1997-09-01",
+      "",
+      "",
+      "The Crimson Nun #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072103003500311",
+        "gcdIssueId": "574614"
+      }
+    ],
+    [
+      "anta-no-no-ufo-1997-3",
+      "No No UFO (1997)",
+      "3",
+      "Antarctic Press",
+      "1997-09-01",
+      "",
+      "",
+      "No No UFO #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290955"
+      }
+    ],
+    [
+      "chao-suspira-the-great-working-1997-4",
+      "Suspira: The Great Working",
+      "4",
+      "Chaos! Comics",
+      "1997-08-01",
+      "",
+      "",
+      "Suspira: The Great Working #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "274945"
+      }
+    ],
+    [
+      "mill-keyhole-1996-4",
+      "Keyhole",
+      "4",
+      "Millennium Publications",
+      "1997-08-01",
+      "",
+      "",
+      "Keyhole #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "686980"
+      }
+    ],
+    [
+      "lond-demonique-1996-1-2",
+      "Demonique",
+      "1/2",
+      "London Night Studios",
+      "1997-08-01",
+      "",
+      "",
+      "Demonique #1/2",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760540"
+      }
+    ],
+    [
+      "anta-the-crimson-nun-1997-2",
+      "The Crimson Nun",
+      "2",
+      "Antarctic Press",
+      "1997-07-01",
+      "",
+      "",
+      "The Crimson Nun #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072103003500211",
+        "gcdIssueId": "574613"
+      }
+    ],
+    [
+      "anta-for-eternity-1997-1",
+      "For Eternity",
+      "1",
+      "Antarctic Press",
+      "1997-07-01",
+      "",
+      "",
+      "For Eternity #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072106003200111",
+        "gcdIssueId": "743850"
+      }
+    ],
+    [
+      "chao-suspira-the-great-working-1997-3",
+      "Suspira: The Great Working",
+      "3",
+      "Chaos! Comics",
+      "1997-06-01",
+      "",
+      "",
+      "Suspira: The Great Working #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "274944"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-six-1996-11",
+      "Maison Ikkoku Part Six",
+      "11",
+      "Viz",
+      "1997-06-01",
+      "",
+      "",
+      "Maison Ikkoku Part Six #11",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200901793601111",
+        "gcdIssueId": "276172"
+      }
+    ],
+    [
+      "anta-the-crimson-nun-1997-1",
+      "The Crimson Nun",
+      "1",
+      "Antarctic Press",
+      "1997-05-01",
+      "",
+      "",
+      "The Crimson Nun #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072103003500111",
+        "gcdIssueId": "574612"
+      }
+    ],
+    [
+      "chao-suspira-the-great-working-1997-2",
+      "Suspira: The Great Working",
+      "2",
+      "Chaos! Comics",
+      "1997-05-01",
+      "",
+      "",
+      "Suspira: The Great Working #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "274943"
+      }
+    ],
+    [
+      "anta-no-no-ufo-1997-2",
+      "No No UFO (1997)",
+      "2",
+      "Antarctic Press",
+      "1997-05-01",
+      "",
+      "",
+      "No No UFO #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290954"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-six-1996-10",
+      "Maison Ikkoku Part Six",
+      "10",
+      "Viz",
+      "1997-05-01",
+      "",
+      "",
+      "Maison Ikkoku Part Six #10",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200901793601011",
+        "gcdIssueId": "276171"
+      }
+    ],
+    [
+      "viz-the-return-of-lum-urusei-yatsura-part-fo-1997-1",
+      "The Return of Lum * Urusei Yatsura Part Four",
+      "1",
+      "Viz",
+      "1997-04-01",
+      "",
+      "",
+      "The Return of Lum * Urusei Yatsura Part Four #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "782009027539",
+        "gcdIssueId": "288966"
+      }
+    ],
+    [
+      "chao-suspira-the-great-working-1997-1",
+      "Suspira: The Great Working",
+      "1",
+      "Chaos! Comics",
+      "1997-04-01",
+      "",
+      "",
+      "Suspira: The Great Working #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "274942"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-six-1996-9",
+      "Maison Ikkoku Part Six",
+      "9",
+      "Viz",
+      "1997-04-01",
+      "",
+      "",
+      "Maison Ikkoku Part Six #9",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200901793600911",
+        "gcdIssueId": "276170"
+      }
+    ],
+    [
+      "viz-maison-ikkoku-part-six-1996-8",
+      "Maison Ikkoku Part Six",
+      "8",
+      "Viz",
+      "1997-03-01",
+      "",
+      "",
+      "Maison Ikkoku Part Six #8",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200901793600811",
+        "gcdIssueId": "276169"
+      }
+    ],
+    [
+      "siri-primal-rage-1996-4",
+      "Primal Rage",
+      "4",
+      "Sirius Entertainment",
+      "1997-02-01",
+      "",
+      "",
+      "Primal Rage #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817581"
+      }
+    ],
+    [
+      "anta-no-no-ufo-1997-1",
+      "No No UFO (1997)",
+      "1",
+      "Antarctic Press",
+      "1997-02-01",
+      "",
+      "",
+      "No No UFO #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290953"
+      }
+    ],
+    [
+      "anta-lillith-demon-princess-1996-3",
+      "Lillith: Demon Princess",
+      "3",
+      "Antarctic Press",
+      "1997-02-01",
+      "",
+      "",
+      "Lillith: Demon Princess #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072112002600311",
+        "gcdIssueId": "508469"
+      }
+    ],
+    [
+      "viz-the-return-of-lum-urusei-yatsura-part-fo-1997-2",
+      "The Return of Lum * Urusei Yatsura Part Four",
+      "2",
+      "Viz",
+      "1997-01-01",
+      "",
+      "",
+      "The Return of Lum * Urusei Yatsura Part Four #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "782009027539",
+        "gcdIssueId": "288967"
+      }
+    ],
+    [
+      "viz-the-return-of-lum-urusei-yatsura-part-fo-1997-3",
+      "The Return of Lum * Urusei Yatsura Part Four",
+      "3",
+      "Viz",
+      "1997-01-01",
+      "",
+      "",
+      "The Return of Lum * Urusei Yatsura Part Four #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902753900311",
+        "gcdIssueId": "288968"
+      }
+    ],
+    [
+      "viz-the-return-of-lum-urusei-yatsura-part-fo-1997-4",
+      "The Return of Lum * Urusei Yatsura Part Four",
+      "4",
+      "Viz",
+      "1997-01-01",
+      "",
+      "",
+      "The Return of Lum * Urusei Yatsura Part Four #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200902753900411",
+        "gcdIssueId": "288969"
+      }
+    ],
+    [
+      "mill-keyhole-1996-3",
+      "Keyhole",
+      "3",
+      "Millennium Publications",
+      "1997-01-01",
+      "",
+      "",
+      "Keyhole #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "686979"
+      }
+    ],
+    [
+      "slav-scarlet-thunder-1995-4",
+      "Scarlet Thunder",
+      "4",
+      "Slave Labor",
+      "1996-12-10",
+      "",
+      "",
+      "Scarlet Thunder #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289600"
+      }
+    ],
+    [
+      "siri-primal-rage-1996-3",
+      "Primal Rage",
+      "3",
+      "Sirius Entertainment",
+      "1996-12-01",
+      "",
+      "",
+      "Primal Rage #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817580"
+      }
+    ],
+    [
+      "anta-ninja-high-school-spotlight-1996-3",
+      "Ninja High School Spotlight",
+      "3",
+      "Antarctic Press",
+      "1996-12-01",
+      "",
+      "",
+      "Ninja High School Spotlight #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "16107211419103111",
+        "gcdIssueId": "593247"
+      }
+    ],
+    [
+      "siri-primal-rage-1996-2",
+      "Primal Rage",
+      "2",
+      "Sirius Entertainment",
+      "1996-10-01",
+      "",
+      "",
+      "Primal Rage #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817579"
+      }
+    ],
+    [
+      "anta-ninja-high-school-spotlight-1996-2",
+      "Ninja High School Spotlight",
+      "2",
+      "Antarctic Press",
+      "1996-10-01",
+      "",
+      "",
+      "Ninja High School Spotlight #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "16107211419102111",
+        "gcdIssueId": "593246"
+      }
+    ],
+    [
+      "anta-masked-warrior-x-1996-4",
+      "Masked Warrior X",
+      "4",
+      "Antarctic Press",
+      "1996-10-01",
+      "",
+      "",
+      "Masked Warrior X #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "16107211319404111",
+        "gcdIssueId": "328430"
+      }
+    ],
+    [
+      "anta-lillith-demon-princess-1996-2",
+      "Lillith: Demon Princess",
+      "2",
+      "Antarctic Press",
+      "1996-10-01",
+      "",
+      "",
+      "Lillith: Demon Princess #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "61072112002600211",
+        "gcdIssueId": "508468"
+      }
+    ],
+    [
+      "mill-keyhole-1996-2",
+      "Keyhole",
+      "2",
+      "Millennium Publications",
+      "1996-10-01",
+      "",
+      "",
+      "Keyhole #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "686978"
+      }
+    ],
+    [
+      "lond-sade-1996-4",
+      "Sade",
+      "4",
+      "London Night Studios",
+      "1996-09-01",
+      "",
+      "",
+      "Sade #4",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "739865"
+      }
+    ],
+    [
+      "anta-lillith-demon-princess-1996-1",
+      "Lillith: Demon Princess",
+      "1",
+      "Antarctic Press",
+      "1996-09-01",
+      "",
+      "",
+      "Lillith: Demon Princess #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "16107211212801121",
+        "gcdIssueId": "508467"
+      }
+    ],
+    [
+      "lond-sade-1996-3",
+      "Sade",
+      "3",
+      "London Night Studios",
+      "1996-08-01",
+      "",
+      "",
+      "Sade #3",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "739864"
+      }
+    ],
+    [
+      "siri-primal-rage-1996-1",
+      "Primal Rage",
+      "1",
+      "Sirius Entertainment",
+      "1996-08-01",
+      "",
+      "",
+      "Primal Rage #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817578"
+      }
+    ],
+    [
+      "anta-masked-warrior-x-1996-3",
+      "Masked Warrior X",
+      "3",
+      "Antarctic Press",
+      "1996-08-01",
+      "",
+      "",
+      "Masked Warrior X #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328429"
+      }
+    ],
+    [
+      "chao-lady-death-iii-the-odyssey-1996-4",
+      "Lady Death III: The Odyssey",
+      "4",
+      "Chaos! Comics",
+      "1996-08-01",
+      "",
+      "",
+      "Lady Death III: The Odyssey #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "733691"
+      }
+    ],
+    [
+      "lond-demonique-1996-0",
+      "Demonique",
+      "0",
+      "London Night Studios",
+      "1996-08-01",
+      "",
+      "",
+      "Demonique #0",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760537"
+      }
+    ],
+    [
+      "lond-sade-1996-2",
+      "Sade",
+      "2",
+      "London Night Studios",
+      "1996-07-01",
+      "",
+      "",
+      "Sade #2",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "739863"
+      }
+    ],
+    [
+      "lond-sade-1996-1",
+      "Sade",
+      "1",
+      "London Night Studios",
+      "1996-06-01",
+      "",
+      "",
+      "Sade #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "739862"
+      }
+    ],
+    [
+      "anta-masked-warrior-x-1996-2",
+      "Masked Warrior X",
+      "2",
+      "Antarctic Press",
+      "1996-06-01",
+      "",
+      "",
+      "Masked Warrior X #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328428"
+      }
+    ],
+    [
+      "chao-lady-death-iii-the-odyssey-1996-3",
+      "Lady Death III: The Odyssey",
+      "3",
+      "Chaos! Comics",
+      "1996-06-01",
+      "",
+      "",
+      "Lady Death III: The Odyssey #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "733690"
+      }
+    ],
+    [
+      "mill-keyhole-1996-1",
+      "Keyhole",
+      "1",
+      "Millennium Publications",
+      "1996-06-01",
+      "",
+      "",
+      "Keyhole #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "686977"
+      }
+    ],
+    [
+      "slav-scarlet-thunder-1995-3",
+      "Scarlet Thunder",
+      "3",
+      "Slave Labor",
+      "1996-05-01",
+      "",
+      "",
+      "Scarlet Thunder #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289599"
+      }
+    ],
+    [
+      "chao-lady-death-iii-the-odyssey-1996-2",
+      "Lady Death III: The Odyssey",
+      "2",
+      "Chaos! Comics",
+      "1996-05-01",
+      "",
+      "",
+      "Lady Death III: The Odyssey #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "733689"
+      }
+    ],
+    [
+      "anta-ninja-high-school-spotlight-1996-1",
+      "Ninja High School Spotlight",
+      "1",
+      "Antarctic Press",
+      "1996-04-01",
+      "",
+      "",
+      "Ninja High School Spotlight #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "593245"
+      }
+    ],
+    [
+      "anta-masked-warrior-x-1996-1",
+      "Masked Warrior X",
+      "1",
+      "Antarctic Press",
+      "1996-04-01",
+      "",
+      "",
+      "Masked Warrior X #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328427"
+      }
+    ],
+    [
+      "chao-lady-death-iii-the-odyssey-1996-1",
+      "Lady Death III: The Odyssey",
+      "1",
+      "Chaos! Comics",
+      "1996-04-01",
+      "",
+      "",
+      "Lady Death III: The Odyssey #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "733688"
+      }
+    ],
+    [
+      "enti-fem-5-1996-4",
+      "Fem 5",
+      "4",
+      "Entity-Parody",
+      "1996-04-01",
+      "",
+      "",
+      "Fem 5 #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687439"
+      }
+    ],
+    [
+      "enti-fem-5-1996-3",
+      "Fem 5",
+      "3",
+      "Entity-Parody",
+      "1996-03-01",
+      "",
+      "",
+      "Fem 5 #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687438"
+      }
+    ],
+    [
+      "anta-tank-vixens-1994-4",
+      "Tank Vixens",
+      "4",
+      "Antarctic Press",
+      "1996-02-01",
+      "",
+      "",
+      "Tank Vixens #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "743227"
+      }
+    ],
+    [
+      "slav-scarlet-thunder-1995-2",
+      "Scarlet Thunder",
+      "2",
+      "Slave Labor",
+      "1996-02-01",
+      "",
+      "",
+      "Scarlet Thunder #2",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289598"
+      }
+    ],
+    [
+      "enti-fem-5-1996-2",
+      "Fem 5",
+      "2",
+      "Entity-Parody",
+      "1996-02-01",
+      "",
+      "",
+      "Fem 5 #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687437"
+      }
+    ],
+    [
+      "enti-fem-5-1996-1",
+      "Fem 5",
+      "1",
+      "Entity-Parody",
+      "1996-01-01",
+      "",
+      "",
+      "Fem 5 #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687436"
+      }
+    ],
+    [
+      "anta-tank-vixens-1994-3",
+      "Tank Vixens",
+      "3",
+      "Antarctic Press",
+      "1995-12-01",
+      "",
+      "",
+      "Tank Vixens #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "743226"
+      }
+    ],
+    [
+      "slav-scarlet-thunder-1995-1",
+      "Scarlet Thunder",
+      "1",
+      "Slave Labor",
+      "1995-11-10",
+      "",
+      "",
+      "Scarlet Thunder #1",
+      1.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289597"
+      }
+    ],
+    [
+      "enti-nira-x-heatwave-series-2-1995-4",
+      "Nira X: Heatwave Series 2",
+      "4",
+      "Entity-Parody",
+      "1995-11-01",
+      "",
+      "",
+      "Nira X: Heatwave Series 2 #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687449"
+      }
+    ],
+    [
+      "lond-fangs-of-the-widow-1995-3",
+      "Fangs of the Widow",
+      "3",
+      "London Night Studios",
+      "1995-10-01",
+      "",
+      "",
+      "Fangs of the Widow #3",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760535"
+      }
+    ],
+    [
+      "lond-fangs-of-the-widow-1995-4",
+      "Fangs of the Widow",
+      "4",
+      "London Night Studios",
+      "1995-10-01",
+      "",
+      "",
+      "Fangs of the Widow #4",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760536"
+      }
+    ],
+    [
+      "enti-nira-x-heatwave-series-2-1995-3",
+      "Nira X: Heatwave Series 2",
+      "3",
+      "Entity-Parody",
+      "1995-09-01",
+      "",
+      "",
+      "Nira X: Heatwave Series 2 #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687448"
+      }
+    ],
+    [
+      "lond-fangs-of-the-widow-1995-1",
+      "Fangs of the Widow",
+      "1",
+      "London Night Studios",
+      "1995-09-01",
+      "",
+      "",
+      "Fangs of the Widow #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760533"
+      }
+    ],
+    [
+      "lond-fangs-of-the-widow-1995-2",
+      "Fangs of the Widow",
+      "2",
+      "London Night Studios",
+      "1995-09-01",
+      "",
+      "",
+      "Fangs of the Widow #2",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760534"
+      }
+    ],
+    [
+      "ec-mad-1952-338",
+      "Mad",
+      "338",
+      "EC",
+      "1995-08-10",
+      "",
+      "",
+      "Mad #338",
+      1.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94138"
+      }
+    ],
+    [
+      "enti-nira-x-heatwave-series-2-1995-2",
+      "Nira X: Heatwave Series 2",
+      "2",
+      "Entity-Parody",
+      "1995-08-01",
+      "",
+      "",
+      "Nira X: Heatwave Series 2 #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687447"
+      }
+    ],
+    [
+      "slav-detroit-murder-city-comix-1994-7",
+      "Detroit! Murder City Comix",
+      "7",
+      "Slave Labor",
+      "1995-08-01",
+      "",
+      "",
+      "Detroit! Murder City Comix #7",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "734405"
+      }
+    ],
+    [
+      "ec-mad-1952-337",
+      "Mad",
+      "337",
+      "EC",
+      "1995-07-10",
+      "",
+      "",
+      "Mad #337",
+      1.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94137"
+      }
+    ],
+    [
+      "mill-sparrow-1995-4",
+      "Sparrow",
+      "4",
+      "Millennium Publications",
+      "1995-07-01",
+      "",
+      "",
+      "Sparrow #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "686992"
+      }
+    ],
+    [
+      "enti-nira-x-heatwave-series-2-1995-1",
+      "Nira X: Heatwave Series 2",
+      "1",
+      "Entity-Parody",
+      "1995-07-01",
+      "",
+      "",
+      "Nira X: Heatwave Series 2 #1",
+      3.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687446"
+      }
+    ],
+    [
+      "ec-mad-1952-336",
+      "Mad",
+      "336",
+      "EC",
+      "1995-06-10",
+      "",
+      "",
+      "Mad #336",
+      1.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94136"
+      }
+    ],
+    [
+      "mill-wicked-1994-4",
+      "Wicked",
+      "4",
+      "Millennium Publications",
+      "1995-06-01",
+      "",
+      "",
+      "Wicked #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386333"
+      }
+    ],
+    [
+      "enti-nira-x-cyberangel-1994-4",
+      "Nira X Cyberangel",
+      "4",
+      "Entity-Parody",
+      "1995-06-01",
+      "",
+      "",
+      "Nira X Cyberangel #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687445"
+      }
+    ],
+    [
+      "viz-mermaid-s-gaze-1995-4",
+      "Mermaid's Gaze",
+      "4",
+      "Viz",
+      "1995-06-01",
+      "",
+      "",
+      "Mermaid's Gaze #4",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900503200411",
+        "gcdIssueId": "731564"
+      }
+    ],
+    [
+      "ec-mad-1952-335",
+      "Mad",
+      "335",
+      "EC",
+      "1995-05-10",
+      "",
+      "",
+      "Mad #335",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94135"
+      }
+    ],
+    [
+      "mill-sparrow-1995-3",
+      "Sparrow",
+      "3",
+      "Millennium Publications",
+      "1995-05-01",
+      "",
+      "",
+      "Sparrow #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "686991"
+      }
+    ],
+    [
+      "viz-mermaid-s-gaze-1995-3",
+      "Mermaid's Gaze",
+      "3",
+      "Viz",
+      "1995-05-01",
+      "",
+      "",
+      "Mermaid's Gaze #3",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900503200311",
+        "gcdIssueId": "731563"
+      }
+    ],
+    [
+      "mill-wicked-1994-3",
+      "Wicked",
+      "3",
+      "Millennium Publications",
+      "1995-04-15",
+      "",
+      "",
+      "Wicked #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386332"
+      }
+    ],
+    [
+      "mill-sparrow-1995-2",
+      "Sparrow",
+      "2",
+      "Millennium Publications",
+      "1995-04-01",
+      "",
+      "",
+      "Sparrow #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "686990"
+      }
+    ],
+    [
+      "enti-nira-x-cyberangel-1994-3",
+      "Nira X Cyberangel",
+      "3",
+      "Entity-Parody",
+      "1995-04-01",
+      "",
+      "",
+      "Nira X Cyberangel #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687444"
+      }
+    ],
+    [
+      "ec-mad-1952-334",
+      "Mad",
+      "334",
+      "EC",
+      "1995-03-10",
+      "",
+      "",
+      "Mad #334",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07099233230404",
+        "gcdIssueId": "94134"
+      }
+    ],
+    [
+      "anta-warrior-nun-areala-1994-3",
+      "Warrior Nun Areala (1994)",
+      "3",
+      "Antarctic Press",
+      "1995-03-01",
+      "",
+      "",
+      "Warrior Nun Areala #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "508473"
+      }
+    ],
+    [
+      "anta-warrior-nun-areala-1994-1-second-printing",
+      "Warrior Nun Areala",
+      "1 [Second Printing]",
+      "Antarctic Press",
+      "1995-03-01",
+      "",
+      "",
+      "Warrior Nun Areala #1 [Second Printing]",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2097734"
+      }
+    ],
+    [
+      "viz-mermaid-s-gaze-1995-1",
+      "Mermaid's Gaze",
+      "1",
+      "Viz",
+      "1995-03-01",
+      "",
+      "",
+      "Mermaid's Gaze #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900503200111",
+        "gcdIssueId": "731561"
+      }
+    ],
+    [
+      "viz-mermaid-s-gaze-1995-2",
+      "Mermaid's Gaze",
+      "2",
+      "Viz",
+      "1995-03-01",
+      "",
+      "",
+      "Mermaid's Gaze #2",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900503200211",
+        "gcdIssueId": "731562"
+      }
+    ],
+    [
+      "viz-macross-ii-the-micron-conspiracy-1994-5",
+      "Macross II: The Micron Conspiracy",
+      "5",
+      "Viz",
+      "1995-03-01",
+      "",
+      "",
+      "Macross II: The Micron Conspiracy #5",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900553700511",
+        "gcdIssueId": "731256"
+      }
+    ],
+    [
+      "slav-detroit-murder-city-comix-1994-6",
+      "Detroit! Murder City Comix",
+      "6",
+      "Slave Labor",
+      "1995-03-01",
+      "",
+      "",
+      "Detroit! Murder City Comix #6",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "734404"
+      }
+    ],
+    [
+      "anta-warrior-nun-areala-1994-2",
+      "Warrior Nun Areala (1994)",
+      "2",
+      "Antarctic Press",
+      "1995-02-01",
+      "",
+      "",
+      "Warrior Nun Areala #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "508472"
+      }
+    ],
+    [
+      "enti-nira-x-cyberangel-1994-2",
+      "Nira X Cyberangel",
+      "2",
+      "Entity-Parody",
+      "1995-02-01",
+      "",
+      "",
+      "Nira X Cyberangel #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687443"
+      }
+    ],
+    [
+      "viz-macross-ii-the-micron-conspiracy-1994-4",
+      "Macross II: The Micron Conspiracy",
+      "4",
+      "Viz",
+      "1995-02-01",
+      "",
+      "",
+      "Macross II: The Micron Conspiracy #4",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731255"
+      }
+    ],
+    [
+      "viz-they-were-11-1995-3",
+      "They Were 11",
+      "3",
+      "Viz",
+      "1995-01-30",
+      "",
+      "",
+      "They Were 11 #3",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "360786"
+      }
+    ],
+    [
+      "viz-they-were-11-1995-2",
+      "They Were 11",
+      "2",
+      "Viz",
+      "1995-01-20",
+      "",
+      "",
+      "They Were 11 #2",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "360785"
+      }
+    ],
+    [
+      "mill-wicked-1994-2",
+      "Wicked",
+      "2",
+      "Millennium Publications",
+      "1995-01-15",
+      "",
+      "",
+      "Wicked #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386331"
+      }
+    ],
+    [
+      "ec-mad-1952-333",
+      "Mad",
+      "333",
+      "EC",
+      "1995-01-10",
+      "",
+      "",
+      "Mad #333",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94133"
+      }
+    ],
+    [
+      "enti-zen-intergalactic-ninja-color-1993-7-6",
+      "Zen Intergalactic Ninja Color",
+      "7 (6)",
+      "Entity-Parody",
+      "1995-01-01",
+      "",
+      "",
+      "Zen Intergalactic Ninja Color #7 (6)",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687509"
+      }
+    ],
+    [
+      "viz-they-were-11-1995-1",
+      "They Were 11",
+      "1",
+      "Viz",
+      "1995-01-01",
+      "",
+      "",
+      "They Were 11 #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78200900223900111",
+        "gcdIssueId": "360784"
+      }
+    ],
+    [
+      "mill-sparrow-1995-1",
+      "Sparrow",
+      "1",
+      "Millennium Publications",
+      "1995-01-01",
+      "",
+      "",
+      "Sparrow #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "686989"
+      }
+    ],
+    [
+      "viz-macross-ii-the-micron-conspiracy-1994-3",
+      "Macross II: The Micron Conspiracy",
+      "3",
+      "Viz",
+      "1995-01-01",
+      "",
+      "",
+      "Macross II: The Micron Conspiracy #3",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731254"
+      }
+    ],
+    [
+      "lond-demonique-1994-2",
+      "Demonique",
+      "2",
+      "London Night Studios",
+      "1995-01-01",
+      "",
+      "",
+      "Demonique #2",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "310569"
+      }
+    ],
+    [
+      "lond-demonique-1994-3",
+      "Demonique",
+      "3",
+      "London Night Studios",
+      "1995-01-01",
+      "",
+      "",
+      "Demonique #3",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "310570"
+      }
+    ],
+    [
+      "lond-demonique-1994-4",
+      "Demonique",
+      "4",
+      "London Night Studios",
+      "1995-01-01",
+      "",
+      "",
+      "Demonique #4",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "310571"
+      }
+    ],
+    [
+      "ec-mad-1952-332",
+      "Mad",
+      "332",
+      "EC",
+      "1994-12-10",
+      "",
+      "",
+      "Mad #332",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94132"
+      }
+    ],
+    [
+      "anta-warrior-nun-areala-1994-1",
+      "Warrior Nun Areala (1994)",
+      "1",
+      "Antarctic Press",
+      "1994-12-01",
+      "",
+      "",
+      "Warrior Nun Areala #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "508471"
+      }
+    ],
+    [
+      "enti-nira-x-cyberangel-1994-1",
+      "Nira X Cyberangel",
+      "1",
+      "Entity-Parody",
+      "1994-12-01",
+      "",
+      "",
+      "Nira X Cyberangel #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687442"
+      }
+    ],
+    [
+      "viz-macross-ii-the-micron-conspiracy-1994-2",
+      "Macross II: The Micron Conspiracy",
+      "2",
+      "Viz",
+      "1994-12-01",
+      "",
+      "",
+      "Macross II: The Micron Conspiracy #2",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731253"
+      }
+    ],
+    [
+      "mill-wicked-1994-1",
+      "Wicked",
+      "1",
+      "Millennium Publications",
+      "1994-11-15",
+      "",
+      "",
+      "Wicked #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386330"
+      }
+    ],
+    [
+      "viz-mermaid-s-promise-1994-4",
+      "Mermaid's Promise",
+      "4",
+      "Viz",
+      "1994-11-01",
+      "",
+      "",
+      "Mermaid's Promise #4",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731571"
+      }
+    ],
+    [
+      "viz-macross-ii-the-micron-conspiracy-1994-1",
+      "Macross II: The Micron Conspiracy",
+      "1",
+      "Viz",
+      "1994-11-01",
+      "",
+      "",
+      "Macross II: The Micron Conspiracy #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731252"
+      }
+    ],
+    [
+      "slav-detroit-murder-city-comix-1994-5",
+      "Detroit! Murder City Comix",
+      "5",
+      "Slave Labor",
+      "1994-11-01",
+      "",
+      "",
+      "Detroit! Murder City Comix #5",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "734403"
+      }
+    ],
+    [
+      "ec-mad-1952-331",
+      "Mad",
+      "331",
+      "EC",
+      "1994-10-10",
+      "",
+      "",
+      "Mad #331",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94131"
+      }
+    ],
+    [
+      "enti-stygmata-1994-3",
+      "Stygmata",
+      "3",
+      "Entity-Parody",
+      "1994-10-01",
+      "",
+      "",
+      "Stygmata #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687491"
+      }
+    ],
+    [
+      "viz-nausicaa-of-the-valley-of-wind-part-four-1994-5",
+      "Nausicaa of the Valley of Wind Part Four",
+      "5",
+      "Viz",
+      "1994-10-01",
+      "",
+      "",
+      "Nausicaa of the Valley of Wind Part Four #5",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731636"
+      }
+    ],
+    [
+      "viz-mermaid-s-promise-1994-3",
+      "Mermaid's Promise",
+      "3",
+      "Viz",
+      "1994-10-01",
+      "",
+      "",
+      "Mermaid's Promise #3",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731570"
+      }
+    ],
+    [
+      "topp-jurassic-park-raptors-hijack-1994-4",
+      "Jurassic Park: Raptors Hijack",
+      "4",
+      "Topps",
+      "1994-10-01",
+      "",
+      "",
+      "Jurassic Park: Raptors Hijack #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "762916"
+      }
+    ],
+    [
+      "lond-demonique-1994-1",
+      "Demonique",
+      "1",
+      "London Night Studios",
+      "1994-10-01",
+      "",
+      "",
+      "Demonique #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "310568"
+      }
+    ],
+    [
+      "ec-mad-1952-330",
+      "Mad",
+      "330",
+      "EC",
+      "1994-09-10",
+      "",
+      "",
+      "Mad #330",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94130"
+      }
+    ],
+    [
+      "enti-stygmata-1994-2",
+      "Stygmata",
+      "2",
+      "Entity-Parody",
+      "1994-09-01",
+      "",
+      "",
+      "Stygmata #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687490"
+      }
+    ],
+    [
+      "viz-nausicaa-of-the-valley-of-wind-part-four-1994-4",
+      "Nausicaa of the Valley of Wind Part Four",
+      "4",
+      "Viz",
+      "1994-09-01",
+      "",
+      "",
+      "Nausicaa of the Valley of Wind Part Four #4",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731635"
+      }
+    ],
+    [
+      "viz-mermaid-s-promise-1994-2",
+      "Mermaid's Promise",
+      "2",
+      "Viz",
+      "1994-09-01",
+      "",
+      "",
+      "Mermaid's Promise #2",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731569"
+      }
+    ],
+    [
+      "chao-lynch-mob-1994-4",
+      "Lynch Mob",
+      "4",
+      "Chaos! Comics",
+      "1994-09-01",
+      "",
+      "",
+      "Lynch Mob #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289416"
+      }
+    ],
+    [
+      "topp-jurassic-park-raptors-hijack-1994-3",
+      "Jurassic Park: Raptors Hijack",
+      "3",
+      "Topps",
+      "1994-09-01",
+      "",
+      "",
+      "Jurassic Park: Raptors Hijack #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "762915"
+      }
+    ],
+    [
+      "viz-bio-booster-armor-guyver-1993-12",
+      "Bio-Booster Armor Guyver",
+      "12",
+      "Viz",
+      "1994-09-01",
+      "",
+      "",
+      "Bio-Booster Armor Guyver #12",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "729983"
+      }
+    ],
+    [
+      "viz-nausicaa-of-the-valley-of-wind-part-four-1994-3",
+      "Nausicaa of the Valley of Wind Part Four",
+      "3",
+      "Viz",
+      "1994-08-01",
+      "",
+      "",
+      "Nausicaa of the Valley of Wind Part Four #3",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731634"
+      }
+    ],
+    [
+      "viz-mermaid-s-promise-1994-1",
+      "Mermaid's Promise",
+      "1",
+      "Viz",
+      "1994-08-01",
+      "",
+      "",
+      "Mermaid's Promise #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731568"
+      }
+    ],
+    [
+      "chao-lynch-mob-1994-3",
+      "Lynch Mob",
+      "3",
+      "Chaos! Comics",
+      "1994-08-01",
+      "",
+      "",
+      "Lynch Mob #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289415"
+      }
+    ],
+    [
+      "topp-jurassic-park-raptors-hijack-1994-2",
+      "Jurassic Park: Raptors Hijack",
+      "2",
+      "Topps",
+      "1994-08-01",
+      "",
+      "",
+      "Jurassic Park: Raptors Hijack #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "762914"
+      }
+    ],
+    [
+      "slav-detroit-murder-city-comix-1994-4",
+      "Detroit! Murder City Comix",
+      "4",
+      "Slave Labor",
+      "1994-08-01",
+      "",
+      "",
+      "Detroit! Murder City Comix #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "734402"
+      }
+    ],
+    [
+      "viz-bio-booster-armor-guyver-1993-11",
+      "Bio-Booster Armor Guyver",
+      "11",
+      "Viz",
+      "1994-08-01",
+      "",
+      "",
+      "Bio-Booster Armor Guyver #11",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "729982"
+      }
+    ],
+    [
+      "ec-mad-1952-329",
+      "Mad",
+      "329",
+      "EC",
+      "1994-07-10",
+      "",
+      "",
+      "Mad #329",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07099233230408",
+        "gcdIssueId": "94129"
+      }
+    ],
+    [
+      "ksp-twisted-sisters-comics-1994-4",
+      "Twisted Sisters Comics",
+      "4",
+      "Kitchen Sink Press",
+      "1994-07-01",
+      "",
+      "",
+      "Twisted Sisters Comics #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "743598"
+      }
+    ],
+    [
+      "viz-nausicaa-of-the-valley-of-wind-part-four-1994-2",
+      "Nausicaa of the Valley of Wind Part Four",
+      "2",
+      "Viz",
+      "1994-07-01",
+      "",
+      "",
+      "Nausicaa of the Valley of Wind Part Four #2",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731633"
+      }
+    ],
+    [
+      "chao-lynch-mob-1994-2",
+      "Lynch Mob",
+      "2",
+      "Chaos! Comics",
+      "1994-07-01",
+      "",
+      "",
+      "Lynch Mob #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289414"
+      }
+    ],
+    [
+      "topp-jurassic-park-raptors-hijack-1994-1",
+      "Jurassic Park: Raptors Hijack",
+      "1",
+      "Topps",
+      "1994-07-01",
+      "",
+      "",
+      "Jurassic Park: Raptors Hijack #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "762913"
+      }
+    ],
+    [
+      "viz-bio-booster-armor-guyver-1993-10",
+      "Bio-Booster Armor Guyver",
+      "10",
+      "Viz",
+      "1994-07-01",
+      "",
+      "",
+      "Bio-Booster Armor Guyver #10",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "729981"
+      }
+    ],
+    [
+      "anta-amazing-strip-1994-6",
+      "Amazing Strip",
+      "6",
+      "Antarctic Press",
+      "1994-07-01",
+      "",
+      "",
+      "Amazing Strip #6",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "742840"
+      }
+    ],
+    [
+      "ec-mad-1952-328",
+      "Mad",
+      "328",
+      "EC",
+      "1994-06-10",
+      "",
+      "",
+      "Mad #328",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94128"
+      }
+    ],
+    [
+      "viz-nausicaa-of-the-valley-of-wind-part-four-1994-1",
+      "Nausicaa of the Valley of Wind Part Four",
+      "1",
+      "Viz",
+      "1994-06-01",
+      "",
+      "",
+      "Nausicaa of the Valley of Wind Part Four #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731632"
+      }
+    ],
+    [
+      "viz-mermaid-s-scar-1994-3",
+      "Mermaid's Scar",
+      "3",
+      "Viz",
+      "1994-06-01",
+      "",
+      "",
+      "Mermaid's Scar #3",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731574"
+      }
+    ],
+    [
+      "chao-lynch-mob-1994-1",
+      "Lynch Mob",
+      "1",
+      "Chaos! Comics",
+      "1994-06-01",
+      "",
+      "",
+      "Lynch Mob #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "289413"
+      }
+    ],
+    [
+      "topp-jurassic-park-raptors-attack-1994-4",
+      "Jurassic Park: Raptors Attack",
+      "4",
+      "Topps",
+      "1994-06-01",
+      "",
+      "",
+      "Jurassic Park: Raptors Attack #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "761458"
+      }
+    ],
+    [
+      "viz-bio-booster-armor-guyver-1993-9",
+      "Bio-Booster Armor Guyver",
+      "9",
+      "Viz",
+      "1994-06-01",
+      "",
+      "",
+      "Bio-Booster Armor Guyver #9",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "729980"
+      }
+    ],
+    [
+      "ec-mad-1952-327",
+      "Mad",
+      "327",
+      "EC",
+      "1994-05-10",
+      "",
+      "",
+      "Mad #327",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94127"
+      }
+    ],
+    [
+      "ksp-twisted-sisters-comics-1994-2",
+      "Twisted Sisters Comics",
+      "2",
+      "Kitchen Sink Press",
+      "1994-05-01",
+      "",
+      "",
+      "Twisted Sisters Comics #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "743596"
+      }
+    ],
+    [
+      "viz-mermaid-s-scar-1994-2",
+      "Mermaid's Scar",
+      "2",
+      "Viz",
+      "1994-05-01",
+      "",
+      "",
+      "Mermaid's Scar #2",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731573"
+      }
+    ],
+    [
+      "topp-jurassic-park-raptors-attack-1994-3",
+      "Jurassic Park: Raptors Attack",
+      "3",
+      "Topps",
+      "1994-05-01",
+      "",
+      "",
+      "Jurassic Park: Raptors Attack #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "761457"
+      }
+    ],
+    [
+      "ksp-twisted-sisters-comics-1994-1",
+      "Twisted Sisters Comics",
+      "1",
+      "Kitchen Sink Press",
+      "1994-04-01",
+      "",
+      "",
+      "Twisted Sisters Comics #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "743595"
+      }
+    ],
+    [
+      "viz-mermaid-s-scar-1994-1",
+      "Mermaid's Scar",
+      "1",
+      "Viz",
+      "1994-04-01",
+      "",
+      "",
+      "Mermaid's Scar #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731572"
+      }
+    ],
+    [
+      "topp-jurassic-park-raptors-attack-1994-2",
+      "Jurassic Park: Raptors Attack",
+      "2",
+      "Topps",
+      "1994-04-01",
+      "",
+      "",
+      "Jurassic Park: Raptors Attack #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "761456"
+      }
+    ],
+    [
+      "anta-amazing-strip-1994-2",
+      "Amazing Strip",
+      "2",
+      "Antarctic Press",
+      "1994-04-01",
+      "",
+      "",
+      "Amazing Strip #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "742836"
+      }
+    ],
+    [
+      "anta-amazing-strip-1994-3",
+      "Amazing Strip",
+      "3",
+      "Antarctic Press",
+      "1994-04-01",
+      "",
+      "",
+      "Amazing Strip #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "742837"
+      }
+    ],
+    [
+      "ec-mad-1952-326",
+      "Mad",
+      "326",
+      "EC",
+      "1994-03-10",
+      "",
+      "",
+      "Mad #326",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94126"
+      }
+    ],
+    [
+      "anta-tank-vixens-1994-2",
+      "Tank Vixens",
+      "2",
+      "Antarctic Press",
+      "1994-03-01",
+      "",
+      "",
+      "Tank Vixens #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "743225"
+      }
+    ],
+    [
+      "viz-mermaid-forest-1993-4",
+      "Mermaid Forest",
+      "4",
+      "Viz",
+      "1994-03-01",
+      "",
+      "",
+      "Mermaid Forest #4",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731544"
+      }
+    ],
+    [
+      "topp-jurassic-park-raptors-attack-1994-1",
+      "Jurassic Park: Raptors Attack",
+      "1",
+      "Topps",
+      "1994-03-01",
+      "",
+      "",
+      "Jurassic Park: Raptors Attack #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1993-12-20",
+        "gcdIssueId": "761455"
+      }
+    ],
+    [
+      "ec-mad-1952-325",
+      "Mad",
+      "325",
+      "EC",
+      "1994-02-10",
+      "",
+      "",
+      "Mad #325",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07099233230402",
+        "gcdIssueId": "94125"
+      }
+    ],
+    [
+      "lond-dream-wolves-1993-3",
+      "Dream Wolves",
+      "3",
+      "London Night Studios",
+      "1994-02-10",
+      "",
+      "",
+      "Dream Wolves #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386311"
+      }
+    ],
+    [
+      "anta-amazing-strip-1994-1",
+      "Amazing Strip",
+      "1",
+      "Antarctic Press",
+      "1994-02-01",
+      "",
+      "",
+      "Amazing Strip #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "742835"
+      }
+    ],
+    [
+      "ec-mad-1952-324",
+      "Mad",
+      "324",
+      "EC",
+      "1994-01-10",
+      "",
+      "",
+      "Mad #324",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94124"
+      }
+    ],
+    [
+      "enti-zen-intergalactic-ninja-color-1993-3",
+      "Zen Intergalactic Ninja Color",
+      "3",
+      "Entity-Parody",
+      "1994-01-01",
+      "",
+      "",
+      "Zen Intergalactic Ninja Color #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687506"
+      }
+    ],
+    [
+      "enti-zen-intergalactic-ninja-color-1993-5",
+      "Zen Intergalactic Ninja Color",
+      "5",
+      "Entity-Parody",
+      "1994-01-01",
+      "",
+      "",
+      "Zen Intergalactic Ninja Color #5",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687508"
+      }
+    ],
+    [
+      "ksp-twisted-sisters-comics-1994-3",
+      "Twisted Sisters Comics",
+      "3",
+      "Kitchen Sink Press",
+      "1994-01-01",
+      "",
+      "",
+      "Twisted Sisters Comics #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "743597"
+      }
+    ],
+    [
+      "anta-tank-vixens-1994-1",
+      "Tank Vixens",
+      "1",
+      "Antarctic Press",
+      "1994-01-01",
+      "",
+      "",
+      "Tank Vixens #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "743224"
+      }
+    ],
+    [
+      "enti-stygmata-1994-1",
+      "Stygmata",
+      "1",
+      "Entity-Parody",
+      "1994-01-01",
+      "",
+      "",
+      "Stygmata #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687489"
+      }
+    ],
+    [
+      "enti-stygmata-1994-0",
+      "Stygmata",
+      "0",
+      "Entity-Parody",
+      "1994-01-01",
+      "",
+      "",
+      "Stygmata #0",
+      2.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687562"
+      }
+    ],
+    [
+      "fant-night-of-the-living-dead-1994-1",
+      "Night of the Living Dead",
+      "1",
+      "FantaCo Enterprises",
+      "1994-01-01",
+      "",
+      "",
+      "Night of the Living Dead #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "735082"
+      }
+    ],
+    [
+      "fant-night-of-the-living-dead-1994-2",
+      "Night of the Living Dead",
+      "2",
+      "FantaCo Enterprises",
+      "1994-01-01",
+      "",
+      "",
+      "Night of the Living Dead #2",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "735083"
+      }
+    ],
+    [
+      "fant-night-of-the-living-dead-1994-3",
+      "Night of the Living Dead",
+      "3",
+      "FantaCo Enterprises",
+      "1994-01-01",
+      "",
+      "",
+      "Night of the Living Dead #3",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "735084"
+      }
+    ],
+    [
+      "fant-night-of-the-living-dead-1994-0",
+      "Night of the Living Dead",
+      "0",
+      "FantaCo Enterprises",
+      "1994-01-01",
+      "",
+      "",
+      "Night of the Living Dead #0",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "735140"
+      }
+    ],
+    [
+      "viz-mermaid-forest-1993-2",
+      "Mermaid Forest",
+      "2",
+      "Viz",
+      "1994-01-01",
+      "",
+      "",
+      "Mermaid Forest #2",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731542"
+      }
+    ],
+    [
+      "viz-mermaid-forest-1993-3",
+      "Mermaid Forest",
+      "3",
+      "Viz",
+      "1994-01-01",
+      "",
+      "",
+      "Mermaid Forest #3",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731543"
+      }
+    ],
+    [
+      "lond-dream-wolves-1993-0",
+      "Dream Wolves",
+      "0",
+      "London Night Studios",
+      "1994-01-01",
+      "",
+      "",
+      "Dream Wolves #0",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386312"
+      }
+    ],
+    [
+      "ec-mad-1952-323",
+      "Mad",
+      "323",
+      "EC",
+      "1993-12-10",
+      "",
+      "",
+      "Mad #323",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94123"
+      }
+    ],
+    [
+      "viz-mermaid-forest-1993-1",
+      "Mermaid Forest",
+      "1",
+      "Viz",
+      "1993-12-01",
+      "",
+      "",
+      "Mermaid Forest #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "731541"
+      }
+    ],
+    [
+      "lond-dream-wolves-1993-2",
+      "Dream Wolves",
+      "2",
+      "London Night Studios",
+      "1993-11-10",
+      "",
+      "",
+      "Dream Wolves #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386310"
+      }
+    ],
+    [
+      "flee-junker-1993-4",
+      "Junker",
+      "4",
+      "Fleetway/Quality",
+      "1993-11-01",
+      "",
+      "",
+      "Junker #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727154"
+      }
+    ],
+    [
+      "ec-mad-1952-322",
+      "Mad",
+      "322",
+      "EC",
+      "1993-10-10",
+      "",
+      "",
+      "Mad #322",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94122"
+      }
+    ],
+    [
+      "flee-junker-1993-3",
+      "Junker",
+      "3",
+      "Fleetway/Quality",
+      "1993-10-01",
+      "",
+      "",
+      "Junker #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727153"
+      }
+    ],
+    [
+      "flee-flesh-1993-4",
+      "Flesh",
+      "4",
+      "Fleetway/Quality",
+      "1993-10-01",
+      "",
+      "",
+      "Flesh #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "64516"
+      }
+    ],
+    [
+      "ec-mad-1952-321",
+      "Mad",
+      "321",
+      "EC",
+      "1993-09-10",
+      "",
+      "",
+      "Mad #321",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230009",
+        "gcdIssueId": "94121"
+      }
+    ],
+    [
+      "flee-junker-1993-2",
+      "Junker",
+      "2",
+      "Fleetway/Quality",
+      "1993-09-01",
+      "",
+      "",
+      "Junker #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727152"
+      }
+    ],
+    [
+      "flee-flesh-1993-3",
+      "Flesh",
+      "3",
+      "Fleetway/Quality",
+      "1993-09-01",
+      "",
+      "",
+      "Flesh #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "64515"
+      }
+    ],
+    [
+      "flee-finn-1993-4",
+      "Finn",
+      "4",
+      "Fleetway/Quality",
+      "1993-09-01",
+      "",
+      "",
+      "Finn #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727002"
+      }
+    ],
+    [
+      "flee-max-brewster-universal-soldier-1993-4",
+      "Max Brewster: Universal Soldier",
+      "4",
+      "Fleetway/Quality",
+      "1993-08-01",
+      "",
+      "",
+      "Max Brewster: Universal Soldier #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727026"
+      }
+    ],
+    [
+      "flee-junker-1993-1",
+      "Junker",
+      "1",
+      "Fleetway/Quality",
+      "1993-08-01",
+      "",
+      "",
+      "Junker #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727151"
+      }
+    ],
+    [
+      "flee-flesh-1993-2",
+      "Flesh",
+      "2",
+      "Fleetway/Quality",
+      "1993-08-01",
+      "",
+      "",
+      "Flesh #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "64514"
+      }
+    ],
+    [
+      "flee-finn-1993-3",
+      "Finn",
+      "3",
+      "Fleetway/Quality",
+      "1993-08-01",
+      "",
+      "",
+      "Finn #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727001"
+      }
+    ],
+    [
+      "ec-mad-1952-320",
+      "Mad",
+      "320",
+      "EC",
+      "1993-07-10",
+      "",
+      "",
+      "Mad #320",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230007",
+        "gcdIssueId": "94120"
+      }
+    ],
+    [
+      "flee-max-brewster-universal-soldier-1993-3",
+      "Max Brewster: Universal Soldier",
+      "3",
+      "Fleetway/Quality",
+      "1993-07-01",
+      "",
+      "",
+      "Max Brewster: Universal Soldier #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727025"
+      }
+    ],
+    [
+      "flee-flesh-1993-1",
+      "Flesh",
+      "1",
+      "Fleetway/Quality",
+      "1993-07-01",
+      "",
+      "",
+      "Flesh #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "64513"
+      }
+    ],
+    [
+      "flee-finn-1993-2",
+      "Finn",
+      "2",
+      "Fleetway/Quality",
+      "1993-07-01",
+      "",
+      "",
+      "Finn #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727000"
+      }
+    ],
+    [
+      "ec-mad-1952-319",
+      "Mad",
+      "319",
+      "EC",
+      "1993-06-10",
+      "",
+      "",
+      "Mad #319",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94119"
+      }
+    ],
+    [
+      "flee-max-brewster-universal-soldier-1993-2",
+      "Max Brewster: Universal Soldier",
+      "2",
+      "Fleetway/Quality",
+      "1993-06-01",
+      "",
+      "",
+      "Max Brewster: Universal Soldier #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727024"
+      }
+    ],
+    [
+      "flee-finn-1993-1",
+      "Finn",
+      "1",
+      "Fleetway/Quality",
+      "1993-06-01",
+      "",
+      "",
+      "Finn #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "726999"
+      }
+    ],
+    [
+      "flee-max-brewster-universal-soldier-1993-1",
+      "Max Brewster: Universal Soldier",
+      "1",
+      "Fleetway/Quality",
+      "1993-05-01",
+      "",
+      "",
+      "Max Brewster: Universal Soldier #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727023"
+      }
+    ],
+    [
+      "ec-mad-1952-318",
+      "Mad",
+      "318",
+      "EC",
+      "1993-04-10",
+      "",
+      "",
+      "Mad #318",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230004",
+        "gcdIssueId": "94118"
+      }
+    ],
+    [
+      "ec-mad-1952-317",
+      "Mad",
+      "317",
+      "EC",
+      "1993-03-10",
+      "",
+      "",
+      "Mad #317",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230003",
+        "gcdIssueId": "94117"
+      }
+    ],
+    [
+      "ec-mad-1952-316",
+      "Mad",
+      "316",
+      "EC",
+      "1993-01-10",
+      "",
+      "",
+      "Mad #316",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230001",
+        "gcdIssueId": "94116"
+      }
+    ],
+    [
+      "enti-zen-intergalactic-ninja-color-1993-0",
+      "Zen Intergalactic Ninja Color",
+      "0",
+      "Entity-Parody",
+      "1993-01-01",
+      "",
+      "",
+      "Zen Intergalactic Ninja Color #0",
+      2.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687564"
+      }
+    ],
+    [
+      "rip--savage-henry-1989-29",
+      "Savage Henry",
+      "29",
+      "Rip Off Press",
+      "1993-01-01",
+      "",
+      "",
+      "Savage Henry #29",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "275445"
+      }
+    ],
+    [
+      "nigh-samurai-death-of-a-legend-1993-1",
+      "Samurai: Death of a Legend",
+      "1",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Samurai: Death of a Legend #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748221"
+      }
+    ],
+    [
+      "nigh-samurai-death-of-a-legend-1993-2",
+      "Samurai: Death of a Legend",
+      "2",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Samurai: Death of a Legend #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748222"
+      }
+    ],
+    [
+      "nigh-samurai-death-of-a-legend-1993-3",
+      "Samurai: Death of a Legend",
+      "3",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Samurai: Death of a Legend #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748223"
+      }
+    ],
+    [
+      "nigh-samurai-death-of-a-legend-1993-4",
+      "Samurai: Death of a Legend",
+      "4",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Samurai: Death of a Legend #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748224"
+      }
+    ],
+    [
+      "ac-paragon-1993-1",
+      "Paragon",
+      "1",
+      "AC",
+      "1993-01-01",
+      "",
+      "",
+      "Paragon #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "335513"
+      }
+    ],
+    [
+      "ac-paragon-1993-2",
+      "Paragon",
+      "2",
+      "AC",
+      "1993-01-01",
+      "",
+      "",
+      "Paragon #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "335514"
+      }
+    ],
+    [
+      "ac-paragon-1993-3",
+      "Paragon",
+      "3",
+      "AC",
+      "1993-01-01",
+      "",
+      "",
+      "Paragon #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "335515"
+      }
+    ],
+    [
+      "ac-paragon-1993-4",
+      "Paragon",
+      "4",
+      "AC",
+      "1993-01-01",
+      "",
+      "",
+      "Paragon #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "335516"
+      }
+    ],
+    [
+      "nigh-elflore-high-seas-1993-1",
+      "Elflore: High Seas",
+      "1",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Elflore: High Seas #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748358"
+      }
+    ],
+    [
+      "nigh-elflore-high-seas-1993-2",
+      "Elflore: High Seas",
+      "2",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Elflore: High Seas #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748359"
+      }
+    ],
+    [
+      "nigh-elflore-high-seas-1993-3",
+      "Elflore: High Seas",
+      "3",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Elflore: High Seas #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748360"
+      }
+    ],
+    [
+      "nigh-elflore-high-seas-1993-4",
+      "Elflore: High Seas",
+      "4",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Elflore: High Seas #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748361"
+      }
+    ],
+    [
+      "nigh-elfheim-dragon-s-dreams-1993-1",
+      "Elfheim: Dragon's Dreams",
+      "1",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Elfheim: Dragon's Dreams #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748348"
+      }
+    ],
+    [
+      "nigh-elfheim-dragon-s-dreams-1993-2",
+      "Elfheim: Dragon's Dreams",
+      "2",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Elfheim: Dragon's Dreams #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748349"
+      }
+    ],
+    [
+      "nigh-elfheim-dragon-s-dreams-1993-3",
+      "Elfheim: Dragon's Dreams",
+      "3",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Elfheim: Dragon's Dreams #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748350"
+      }
+    ],
+    [
+      "nigh-elfheim-dragon-s-dreams-1993-4",
+      "Elfheim: Dragon's Dreams",
+      "4",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Elfheim: Dragon's Dreams #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748351"
+      }
+    ],
+    [
+      "lond-dream-wolves-1993-1",
+      "Dream Wolves",
+      "1",
+      "London Night Studios",
+      "1993-01-01",
+      "",
+      "",
+      "Dream Wolves #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386309"
+      }
+    ],
+    [
+      "nigh-dragonfire-ufo-wars-1992-1",
+      "Dragonfire: UFO Wars",
+      "1",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Dragonfire: UFO Wars #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748217"
+      }
+    ],
+    [
+      "nigh-dragonfire-ufo-wars-1992-2",
+      "Dragonfire: UFO Wars",
+      "2",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Dragonfire: UFO Wars #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748218"
+      }
+    ],
+    [
+      "nigh-dragonfire-ufo-wars-1992-3",
+      "Dragonfire: UFO Wars",
+      "3",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Dragonfire: UFO Wars #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748219"
+      }
+    ],
+    [
+      "nigh-dragonfire-ufo-wars-1992-4",
+      "Dragonfire: UFO Wars",
+      "4",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Dragonfire: UFO Wars #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748220"
+      }
+    ],
+    [
+      "ec-mad-1952-315",
+      "Mad",
+      "315",
+      "EC",
+      "1992-12-10",
+      "",
+      "",
+      "Mad #315",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230012",
+        "gcdIssueId": "94115"
+      }
+    ],
+    [
+      "slav-slave-labor-stories-1992-4",
+      "Slave Labor Stories",
+      "4",
+      "Slave Labor",
+      "1992-11-01",
+      "",
+      "",
+      "Slave Labor Stories #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "367005"
+      }
+    ],
+    [
+      "ec-mad-1952-314",
+      "Mad",
+      "314",
+      "EC",
+      "1992-10-10",
+      "",
+      "",
+      "Mad #314",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230010",
+        "gcdIssueId": "94114"
+      }
+    ],
+    [
+      "anta-hitomi-and-her-girl-commandoes-1992-4",
+      "Hitomi and Her Girl Commandoes",
+      "4",
+      "Antarctic Press",
+      "1992-10-01",
+      "",
+      "",
+      "Hitomi and Her Girl Commandoes #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "356404"
+      }
+    ],
+    [
+      "ec-mad-1952-313",
+      "Mad",
+      "313",
+      "EC",
+      "1992-09-10",
+      "",
+      "",
+      "Mad #313",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230009",
+        "gcdIssueId": "94113"
+      }
+    ],
+    [
+      "now-speed-racer-1992-3",
+      "Speed Racer",
+      "3",
+      "Now",
+      "1992-09-01",
+      "",
+      "",
+      "Speed Racer #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "310416"
+      }
+    ],
+    [
+      "now-speed-racer-1992-2",
+      "Speed Racer",
+      "2",
+      "Now",
+      "1992-08-01",
+      "",
+      "",
+      "Speed Racer #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "310415"
+      }
+    ],
+    [
+      "anta-hitomi-and-her-girl-commandoes-1992-3",
+      "Hitomi and Her Girl Commandoes",
+      "3",
+      "Antarctic Press",
+      "1992-08-01",
+      "",
+      "",
+      "Hitomi and Her Girl Commandoes #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "356403"
+      }
+    ],
+    [
+      "ec-mad-1952-312",
+      "Mad",
+      "312",
+      "EC",
+      "1992-07-10",
+      "",
+      "",
+      "Mad #312",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94112"
+      }
+    ],
+    [
+      "now-speed-racer-1992-1-prestige",
+      "Speed Racer",
+      "1 [prestige]",
+      "Now",
+      "1992-07-01",
+      "",
+      "",
+      "Speed Racer #1 [prestige]",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "310414"
+      }
+    ],
+    [
+      "now-speed-racer-1992-1-standard",
+      "Speed Racer",
+      "1 [standard]",
+      "Now",
+      "1992-07-01",
+      "",
+      "",
+      "Speed Racer #1 [standard]",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933148801",
+        "gcdIssueId": "704982"
+      }
+    ],
+    [
+      "slav-slave-labor-stories-1992-3",
+      "Slave Labor Stories (1992)",
+      "3",
+      "Slave Labor",
+      "1992-07-01",
+      "",
+      "",
+      "Slave Labor Stories #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "367004"
+      }
+    ],
+    [
+      "ec-mad-1952-311",
+      "Mad",
+      "311",
+      "EC",
+      "1992-06-10",
+      "",
+      "",
+      "Mad #311",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230006",
+        "gcdIssueId": "94111"
+      }
+    ],
+    [
+      "anta-hitomi-and-her-girl-commandoes-1992-2",
+      "Hitomi and Her Girl Commandoes",
+      "2",
+      "Antarctic Press",
+      "1992-06-01",
+      "",
+      "",
+      "Hitomi and Her Girl Commandoes #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "356402"
+      }
+    ],
+    [
+      "ec-mad-1952-310",
+      "Mad",
+      "310",
+      "EC",
+      "1992-04-10",
+      "",
+      "",
+      "Mad #310",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230004",
+        "gcdIssueId": "94110"
+      }
+    ],
+    [
+      "anta-hitomi-and-her-girl-commandoes-1992-1",
+      "Hitomi and Her Girl Commandoes",
+      "1",
+      "Antarctic Press",
+      "1992-04-10",
+      "",
+      "",
+      "Hitomi and Her Girl Commandoes #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "356401"
+      }
+    ],
+    [
+      "slav-slave-labor-stories-1992-2",
+      "Slave Labor Stories",
+      "2",
+      "Slave Labor",
+      "1992-04-01",
+      "",
+      "",
+      "Slave Labor Stories #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "367003"
+      }
+    ],
+    [
+      "ec-mad-1952-309",
+      "Mad",
+      "309",
+      "EC",
+      "1992-03-10",
+      "",
+      "",
+      "Mad #309",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "94109"
+      }
+    ],
+    [
+      "now-the-real-ghostbusters-1991-4",
+      "The Real Ghostbusters",
+      "4",
+      "Now",
+      "1992-02-01",
+      "",
+      "",
+      "The Real Ghostbusters #4",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "310406"
+      }
+    ],
+    [
+      "slav-slave-labor-stories-1992-1",
+      "Slave Labor Stories",
+      "1",
+      "Slave Labor",
+      "1992-02-01",
+      "",
+      "",
+      "Slave Labor Stories #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "367002"
+      }
+    ],
+    [
+      "disn-disney-s-darkwing-duck-limited-series-1991-4",
+      "Disney's Darkwing Duck Limited Series",
+      "4",
+      "Disney",
+      "1992-02-01",
+      "",
+      "",
+      "Disney's Darkwing Duck Limited Series #4",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "71519238902304",
+        "gcdIssueId": "278200"
+      }
+    ],
+    [
+      "ec-mad-1952-308",
+      "Mad",
+      "308",
+      "EC",
+      "1992-01-10",
+      "",
+      "",
+      "Mad #308",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230001",
+        "gcdIssueId": "94108"
+      }
+    ],
+    [
+      "now-the-real-ghostbusters-1991-3",
+      "The Real Ghostbusters",
+      "3",
+      "Now",
+      "1992-01-01",
+      "",
+      "",
+      "The Real Ghostbusters #3",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "310405"
+      }
+    ],
+    [
+      "rip--savage-henry-1989-20",
+      "Savage Henry",
+      "20",
+      "Rip Off Press",
+      "1992-01-01",
+      "",
+      "",
+      "Savage Henry #20",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "275436"
+      }
+    ],
+    [
+      "nigh-elflore-1992-1",
+      "Elflore",
+      "1",
+      "Night Wynd",
+      "1992-01-01",
+      "",
+      "",
+      "Elflore #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748331"
+      }
+    ],
+    [
+      "nigh-elflore-1992-2",
+      "Elflore",
+      "2",
+      "Night Wynd",
+      "1992-01-01",
+      "",
+      "",
+      "Elflore #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748332"
+      }
+    ],
+    [
+      "nigh-elflore-1992-3",
+      "Elflore",
+      "3",
+      "Night Wynd",
+      "1992-01-01",
+      "",
+      "",
+      "Elflore #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748333"
+      }
+    ],
+    [
+      "nigh-elflore-1992-4",
+      "Elflore",
+      "4",
+      "Night Wynd",
+      "1992-01-01",
+      "",
+      "",
+      "Elflore #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748334"
+      }
+    ],
+    [
+      "nigh-dragonfire-the-classified-files-1992-1",
+      "Dragonfire: The Classified Files",
+      "1",
+      "Night Wynd",
+      "1992-01-01",
+      "",
+      "",
+      "Dragonfire: The Classified Files #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748208"
+      }
+    ],
+    [
+      "nigh-dragonfire-the-classified-files-1992-2",
+      "Dragonfire: The Classified Files",
+      "2",
+      "Night Wynd",
+      "1992-01-01",
+      "",
+      "",
+      "Dragonfire: The Classified Files #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748209"
+      }
+    ],
+    [
+      "nigh-dragonfire-the-classified-files-1992-3",
+      "Dragonfire: The Classified Files",
+      "3",
+      "Night Wynd",
+      "1992-01-01",
+      "",
+      "",
+      "Dragonfire: The Classified Files #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748210"
+      }
+    ],
+    [
+      "nigh-dragonfire-the-classified-files-1992-4",
+      "Dragonfire: The Classified Files",
+      "4",
+      "Night Wynd",
+      "1992-01-01",
+      "",
+      "",
+      "Dragonfire: The Classified Files #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748211"
+      }
+    ],
+    [
+      "disn-disney-s-darkwing-duck-limited-series-1991-3",
+      "Disney's Darkwing Duck Limited Series",
+      "3",
+      "Disney",
+      "1992-01-01",
+      "",
+      "",
+      "Disney's Darkwing Duck Limited Series #3",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "71519238902303",
+        "gcdIssueId": "278199"
+      }
+    ],
+    [
+      "nigh-children-of-the-night-1992-1",
+      "Children of the Night",
+      "1",
+      "Night Wynd",
+      "1992-01-01",
+      "",
+      "",
+      "Children of the Night #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748204"
+      }
+    ],
+    [
+      "nigh-children-of-the-night-1992-2",
+      "Children of the Night",
+      "2",
+      "Night Wynd",
+      "1992-01-01",
+      "",
+      "",
+      "Children of the Night #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748205"
+      }
+    ],
+    [
+      "nigh-children-of-the-night-1992-3",
+      "Children of the Night",
+      "3",
+      "Night Wynd",
+      "1992-01-01",
+      "",
+      "",
+      "Children of the Night #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748206"
+      }
+    ],
+    [
+      "nigh-children-of-the-night-1992-4",
+      "Children of the Night",
+      "4",
+      "Night Wynd",
+      "1992-01-01",
+      "",
+      "",
+      "Children of the Night #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748207"
+      }
+    ],
+    [
+      "fant-night-s-children-1991-4",
+      "Night's Children",
+      "4",
+      "FantaCo Enterprises",
+      "1991-12-10",
+      "",
+      "",
+      "Night's Children #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386329"
+      }
+    ],
+    [
+      "ec-mad-1952-307",
+      "Mad",
+      "307",
+      "EC",
+      "1991-12-10",
+      "",
+      "",
+      "Mad #307",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230012",
+        "gcdIssueId": "94107"
+      }
+    ],
+    [
+      "now-the-real-ghostbusters-1991-2",
+      "The Real Ghostbusters",
+      "2",
+      "Now",
+      "1991-12-01",
+      "",
+      "",
+      "The Real Ghostbusters #2",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "310404"
+      }
+    ],
+    [
+      "disn-talespin-1991-7",
+      "TaleSpin",
+      "7",
+      "Disney",
+      "1991-12-01",
+      "",
+      "",
+      "TaleSpin #7",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "505945"
+      }
+    ],
+    [
+      "disn-disney-s-darkwing-duck-limited-series-1991-2",
+      "Disney's Darkwing Duck Limited Series",
+      "2",
+      "Disney",
+      "1991-12-01",
+      "",
+      "",
+      "Disney's Darkwing Duck Limited Series #2",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "71519238902313",
+        "gcdIssueId": "278198"
+      }
+    ],
+    [
+      "now-the-real-ghostbusters-1991-1",
+      "The Real Ghostbusters",
+      "1",
+      "Now",
+      "1991-11-01",
+      "",
+      "",
+      "The Real Ghostbusters #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "310403"
+      }
+    ],
+    [
+      "disn-talespin-1991-6",
+      "TaleSpin",
+      "6",
+      "Disney",
+      "1991-11-01",
+      "",
+      "",
+      "TaleSpin #6",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "505944"
+      }
+    ],
+    [
+      "mill-nosferatu-plague-of-terror-1991-4",
+      "Nosferatu: Plague of Terror",
+      "4",
+      "Millennium Publications",
+      "1991-11-01",
+      "",
+      "",
+      "Nosferatu: Plague of Terror #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "352386"
+      }
+    ],
+    [
+      "disn-disney-s-darkwing-duck-limited-series-1991-1",
+      "Disney's Darkwing Duck Limited Series",
+      "1",
+      "Disney",
+      "1991-11-01",
+      "",
+      "",
+      "Disney's Darkwing Duck Limited Series #1",
+      1.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1991-08-16",
+        "gcdIssueId": "278197"
+      }
+    ],
+    [
+      "ec-mad-1952-306",
+      "Mad",
+      "306",
+      "EC",
+      "1991-10-10",
+      "",
+      "",
+      "Mad #306",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230010",
+        "gcdIssueId": "94106"
+      }
+    ],
+    [
+      "flee-judge-dredd-1987-61",
+      "Judge Dredd",
+      "61",
+      "Fleetway/Quality",
+      "1991-10-10",
+      "",
+      "",
+      "Judge Dredd #61",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "50273"
+      }
+    ],
+    [
+      "disn-talespin-1991-5",
+      "TaleSpin",
+      "5",
+      "Disney",
+      "1991-10-01",
+      "",
+      "",
+      "TaleSpin #5",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "505943"
+      }
+    ],
+    [
+      "fant-night-s-children-1991-3",
+      "Night's Children",
+      "3",
+      "FantaCo Enterprises",
+      "1991-10-01",
+      "",
+      "",
+      "Night's Children #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386328"
+      }
+    ],
+    [
+      "ec-mad-1952-305",
+      "Mad",
+      "305",
+      "EC",
+      "1991-09-10",
+      "",
+      "",
+      "Mad #305",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230009",
+        "gcdIssueId": "94105"
+      }
+    ],
+    [
+      "flee-judge-dredd-1987-60",
+      "Judge Dredd",
+      "60",
+      "Fleetway/Quality",
+      "1991-09-10",
+      "",
+      "",
+      "Judge Dredd #60",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "50139"
+      }
+    ],
+    [
+      "disn-talespin-1991-4",
+      "TaleSpin",
+      "4",
+      "Disney",
+      "1991-09-01",
+      "",
+      "",
+      "TaleSpin #4",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "505942"
+      }
+    ],
+    [
+      "mill-nosferatu-plague-of-terror-1991-3",
+      "Nosferatu: Plague of Terror",
+      "3",
+      "Millennium Publications",
+      "1991-09-01",
+      "",
+      "",
+      "Nosferatu: Plague of Terror #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "352385"
+      }
+    ],
+    [
+      "flee-judge-dredd-1987-59",
+      "Judge Dredd",
+      "59",
+      "Fleetway/Quality",
+      "1991-08-01",
+      "",
+      "",
+      "Judge Dredd #59",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "50009"
+      }
+    ],
+    [
+      "fant-night-s-children-1991-2",
+      "Night's Children",
+      "2",
+      "FantaCo Enterprises",
+      "1991-07-10",
+      "",
+      "",
+      "Night's Children #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386327"
+      }
+    ],
+    [
+      "mill-nosferatu-plague-of-terror-1991-2",
+      "Nosferatu: Plague of Terror",
+      "2",
+      "Millennium Publications",
+      "1991-07-01",
+      "",
+      "",
+      "Nosferatu: Plague of Terror #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "352384"
+      }
+    ],
+    [
+      "ec-mad-1952-304",
+      "Mad",
+      "304",
+      "EC",
+      "1991-07-01",
+      "",
+      "",
+      "Mad #304",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230007",
+        "gcdIssueId": "94104"
+      }
+    ],
+    [
+      "flee-m-a-c-h-1-1991-6",
+      "M.A.C.H. 1",
+      "6",
+      "Fleetway/Quality",
+      "1991-07-01",
+      "",
+      "",
+      "M.A.C.H. 1 #6",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "977096070700409",
+        "gcdIssueId": "290017"
+      }
+    ],
+    [
+      "flee-judge-dredd-1987-58",
+      "Judge Dredd",
+      "58",
+      "Fleetway/Quality",
+      "1991-07-01",
+      "",
+      "",
+      "Judge Dredd #58",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "977104341301009",
+        "gcdIssueId": "49884"
+      }
+    ],
+    [
+      "ec-mad-1952-303",
+      "Mad",
+      "303",
+      "EC",
+      "1991-06-10",
+      "",
+      "",
+      "Mad #303",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230006",
+        "gcdIssueId": "94103"
+      }
+    ],
+    [
+      "fant-night-s-children-1991-1",
+      "Night's Children",
+      "1",
+      "FantaCo Enterprises",
+      "1991-06-01",
+      "",
+      "",
+      "Night's Children #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386326"
+      }
+    ],
+    [
+      "mill-nosferatu-plague-of-terror-1991-1",
+      "Nosferatu: Plague of Terror",
+      "1",
+      "Millennium Publications",
+      "1991-05-01",
+      "",
+      "",
+      "Nosferatu: Plague of Terror #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "352383"
+      }
+    ],
+    [
+      "flee-m-a-c-h-1-1991-4",
+      "M.A.C.H. 1",
+      "4",
+      "Fleetway/Quality",
+      "1991-05-01",
+      "",
+      "",
+      "M.A.C.H. 1 #4",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "977096070700407",
+        "gcdIssueId": "290015"
+      }
+    ],
+    [
+      "ec-mad-1952-302",
+      "Mad",
+      "302",
+      "EC",
+      "1991-04-01",
+      "",
+      "",
+      "Mad #302",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230004",
+        "gcdIssueId": "94102"
+      }
+    ],
+    [
+      "flee-m-a-c-h-1-1991-3",
+      "M.A.C.H. 1",
+      "3",
+      "Fleetway/Quality",
+      "1991-04-01",
+      "",
+      "",
+      "M.A.C.H. 1 #3",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "977096070700406",
+        "gcdIssueId": "289802"
+      }
+    ],
+    [
+      "ec-mad-1952-301",
+      "Mad",
+      "301",
+      "EC",
+      "1991-03-10",
+      "",
+      "",
+      "Mad #301",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230003",
+        "gcdIssueId": "94101"
+      }
+    ],
+    [
+      "flee-m-a-c-h-1-1991-2",
+      "M.A.C.H. 1",
+      "2",
+      "Fleetway/Quality",
+      "1991-03-01",
+      "",
+      "",
+      "M.A.C.H. 1 #2",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "977096070700405",
+        "gcdIssueId": "289801"
+      }
+    ],
+    [
+      "flee-m-a-c-h-1-1991-1",
+      "M.A.C.H. 1",
+      "1",
+      "Fleetway/Quality",
+      "1991-02-01",
+      "",
+      "",
+      "M.A.C.H. 1 #1",
+      1.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "977096070700404",
+        "gcdIssueId": "289800"
+      }
+    ],
+    [
+      "flee-night-zero-1990-4",
+      "Night Zero",
+      "4",
+      "Fleetway/Quality",
+      "1991-01-10",
+      "",
+      "",
+      "Night Zero #4",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "49166"
+      }
+    ],
+    [
+      "ec-mad-1952-300",
+      "Mad",
+      "300",
+      "EC",
+      "1991-01-10",
+      "",
+      "",
+      "Mad #300",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230001",
+        "gcdIssueId": "94100"
+      }
+    ],
+    [
+      "mill-the-wild-wild-west-1990-4",
+      "The Wild Wild West",
+      "4",
+      "Millennium Publications",
+      "1991-01-01",
+      "",
+      "",
+      "The Wild Wild West #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290030"
+      }
+    ],
+    [
+      "inno-terry-pratchett-s-the-colour-of-magic-1991-1",
+      "Terry Pratchett's The Colour of Magic",
+      "1",
+      "Innovation",
+      "1991-01-01",
+      "",
+      "",
+      "Terry Pratchett's The Colour of Magic #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "640369"
+      }
+    ],
+    [
+      "inno-terry-pratchett-s-the-colour-of-magic-1991-2",
+      "Terry Pratchett's The Colour of Magic",
+      "2",
+      "Innovation",
+      "1991-01-01",
+      "",
+      "",
+      "Terry Pratchett's The Colour of Magic #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "640370"
+      }
+    ],
+    [
+      "inno-terry-pratchett-s-the-colour-of-magic-1991-3",
+      "Terry Pratchett's The Colour of Magic",
+      "3",
+      "Innovation",
+      "1991-01-01",
+      "",
+      "",
+      "Terry Pratchett's The Colour of Magic #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "640371"
+      }
+    ],
+    [
+      "inno-terry-pratchett-s-the-colour-of-magic-1991-4",
+      "Terry Pratchett's The Colour of Magic",
+      "4",
+      "Innovation",
+      "1991-01-01",
+      "",
+      "",
+      "Terry Pratchett's The Colour of Magic #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "640372"
+      }
+    ],
+    [
+      "rip--savage-henry-1989-14",
+      "Savage Henry",
+      "14",
+      "Rip Off Press",
+      "1991-01-01",
+      "",
+      "",
+      "Savage Henry #14",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "275430"
+      }
+    ],
+    [
+      "rip--savage-henry-1989-18",
+      "Savage Henry",
+      "18",
+      "Rip Off Press",
+      "1991-01-01",
+      "",
+      "",
+      "Savage Henry #18",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "275434"
+      }
+    ],
+    [
+      "nigh-elfheim-1991-1",
+      "Elfheim",
+      "1",
+      "Night Wynd",
+      "1991-01-01",
+      "",
+      "",
+      "Elfheim #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747933"
+      }
+    ],
+    [
+      "nigh-elfheim-1991-2",
+      "Elfheim",
+      "2",
+      "Night Wynd",
+      "1991-01-01",
+      "",
+      "",
+      "Elfheim #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747934"
+      }
+    ],
+    [
+      "nigh-elfheim-1991-3",
+      "Elfheim",
+      "3",
+      "Night Wynd",
+      "1991-01-01",
+      "",
+      "",
+      "Elfheim #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747935"
+      }
+    ],
+    [
+      "nigh-elfheim-1991-4",
+      "Elfheim",
+      "4",
+      "Night Wynd",
+      "1991-01-01",
+      "",
+      "",
+      "Elfheim #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747936"
+      }
+    ],
+    [
+      "nigh-china-sea-1991-1",
+      "China Sea",
+      "1",
+      "Night Wynd",
+      "1991-01-01",
+      "",
+      "",
+      "China Sea #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747929"
+      }
+    ],
+    [
+      "nigh-china-sea-1991-2",
+      "China Sea",
+      "2",
+      "Night Wynd",
+      "1991-01-01",
+      "",
+      "",
+      "China Sea #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747930"
+      }
+    ],
+    [
+      "nigh-china-sea-1991-3",
+      "China Sea",
+      "3",
+      "Night Wynd",
+      "1991-01-01",
+      "",
+      "",
+      "China Sea #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747931"
+      }
+    ],
+    [
+      "nigh-china-sea-1991-4",
+      "China Sea",
+      "4",
+      "Night Wynd",
+      "1991-01-01",
+      "",
+      "",
+      "China Sea #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747932"
+      }
+    ],
+    [
+      "flee-night-zero-1990-3",
+      "Night Zero",
+      "3",
+      "Fleetway/Quality",
+      "1990-12-10",
+      "",
+      "",
+      "Night Zero #3",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "48888"
+      }
+    ],
+    [
+      "ec-mad-1952-299",
+      "Mad",
+      "299",
+      "EC",
+      "1990-12-10",
+      "",
+      "",
+      "Mad #299",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933230012",
+        "gcdIssueId": "94099"
+      }
+    ],
+    [
+      "mill-the-wild-wild-west-1990-3",
+      "The Wild Wild West",
+      "3",
+      "Millennium Publications",
+      "1990-12-01",
+      "",
+      "",
+      "The Wild Wild West #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290029"
+      }
+    ],
+    [
+      "now-supercops-1990-4",
+      "Supercops",
+      "4",
+      "Now",
+      "1990-12-01",
+      "",
+      "",
+      "Supercops #4",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933188402",
+        "streetDate": "1990-08-24",
+        "gcdIssueId": "277215"
+      }
+    ],
+    [
+      "fant-gore-shriek-1990-2-1-2",
+      "Gore Shriek",
+      "2 1/2",
+      "FantaCo Enterprises",
+      "1990-12-01",
+      "",
+      "",
+      "Gore Shriek #2 1/2",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "528173"
+      }
+    ],
+    [
+      "flee-night-zero-1990-2",
+      "Night Zero",
+      "2",
+      "Fleetway/Quality",
+      "1990-11-10",
+      "",
+      "",
+      "Night Zero #2",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "48769"
+      }
+    ],
+    [
+      "mill-the-wild-wild-west-1990-2",
+      "The Wild Wild West",
+      "2",
+      "Millennium Publications",
+      "1990-11-01",
+      "",
+      "",
+      "The Wild Wild West #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290028"
+      }
+    ],
+    [
+      "now-supercops-1990-3",
+      "Supercops",
+      "3",
+      "Now",
+      "1990-11-01",
+      "",
+      "",
+      "Supercops #3",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277214"
+      }
+    ],
+    [
+      "flee-night-zero-1990-1",
+      "Night Zero",
+      "1",
+      "Fleetway/Quality",
+      "1990-10-10",
+      "",
+      "",
+      "Night Zero #1",
+      1.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "48646"
+      }
+    ],
+    [
+      "mill-the-wild-wild-west-1990-1",
+      "The Wild Wild West",
+      "1",
+      "Millennium Publications",
+      "1990-10-01",
+      "",
+      "",
+      "The Wild Wild West #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290027"
+      }
+    ],
+    [
+      "now-supercops-1990-2",
+      "Supercops",
+      "2",
+      "Now",
+      "1990-10-01",
+      "",
+      "",
+      "Supercops #2",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277213"
+      }
+    ],
+    [
+      "now-supercops-1990-1",
+      "Supercops",
+      "1",
+      "Now",
+      "1990-09-01",
+      "",
+      "",
+      "Supercops #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933188409",
+        "gcdIssueId": "277212"
+      }
+    ],
+    [
+      "ac-cliffhanger-comics-1989-2a",
+      "Cliffhanger Comics",
+      "2A",
+      "AC",
+      "1990-08-10",
+      "",
+      "",
+      "Cliffhanger Comics #2A",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290938"
+      }
+    ],
+    [
+      "ac-cliffhanger-comics-1989-1a",
+      "Cliffhanger Comics",
+      "1A",
+      "AC",
+      "1990-01-30",
+      "",
+      "",
+      "Cliffhanger Comics #1A",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290937"
+      }
+    ],
+    [
+      "flee-judge-dredd-s-crime-file-1989-3",
+      "Judge Dredd's Crime File",
+      "3",
+      "Fleetway/Quality",
+      "1989-09-01",
+      "",
+      "",
+      "Judge Dredd's Crime File #3",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "46762"
+      }
+    ],
+    [
+      "flee-judge-dredd-s-crime-file-1989-2",
+      "Judge Dredd's Crime File",
+      "2",
+      "Fleetway/Quality",
+      "1989-08-20",
+      "",
+      "",
+      "Judge Dredd's Crime File #2",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "46650"
+      }
+    ],
+    [
+      "flee-judge-dredd-s-crime-file-1989-1",
+      "Judge Dredd's Crime File",
+      "1",
+      "Fleetway/Quality",
+      "1989-08-01",
+      "",
+      "",
+      "Judge Dredd's Crime File #1",
+      5.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "46634"
+      }
+    ],
+    [
+      "ac-cliffhanger-comics-1989-1",
+      "Cliffhanger Comics",
+      "1",
+      "AC",
+      "1989-01-01",
+      "",
+      "",
+      "Cliffhanger Comics #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290935"
+      }
+    ],
+    [
+      "ac-cliffhanger-comics-1989-2",
+      "Cliffhanger Comics",
+      "2",
+      "AC",
+      "1989-01-01",
+      "",
+      "",
+      "Cliffhanger Comics #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290936"
+      }
+    ],
+    [
+      "ecl-man-of-war-1987-3",
+      "Man of War",
+      "3",
+      "Eclipse",
+      "1988-02-01",
+      "",
+      "",
+      "Man of War #3",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1987-12-22",
+        "gcdIssueId": "44076"
+      }
+    ],
+    [
+      "ecl-man-of-war-1987-2",
+      "Man of War",
+      "2",
+      "Eclipse",
+      "1987-12-10",
+      "",
+      "",
+      "Man of War #2",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43710"
+      }
+    ],
+    [
+      "ecl-detectives-inc-a-terror-of-dying-dreams-1987-3",
+      "Detectives, Inc.: A Terror of Dying Dreams",
+      "3",
+      "Eclipse",
+      "1987-12-10",
+      "",
+      "",
+      "Detectives, Inc.: A Terror of Dying Dreams #3",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43707"
+      }
+    ],
+    [
+      "ecl-three-d-three-stooges-1986-3",
+      "Three-D Three Stooges",
+      "3",
+      "Eclipse",
+      "1987-10-10",
+      "",
+      "",
+      "Three-D Three Stooges #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "256307"
+      }
+    ],
+    [
+      "ecl-detectives-inc-a-terror-of-dying-dreams-1987-2",
+      "Detectives, Inc.: A Terror of Dying Dreams",
+      "2",
+      "Eclipse",
+      "1987-09-10",
+      "",
+      "",
+      "Detectives, Inc.: A Terror of Dying Dreams #2",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43319"
+      }
+    ],
+    [
+      "ecl-hotspur-1987-3",
+      "Hotspur",
+      "3",
+      "Eclipse",
+      "1987-09-01",
+      "",
+      "",
+      "Hotspur #3",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "246102"
+      }
+    ],
+    [
+      "ecl-man-of-war-1987-1",
+      "Man of War",
+      "1",
+      "Eclipse",
+      "1987-08-10",
+      "",
+      "",
+      "Man of War #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43209"
+      }
+    ],
+    [
+      "ecl-valkyrie-1987-3",
+      "Valkyrie!",
+      "3",
+      "Eclipse",
+      "1987-08-01",
+      "",
+      "",
+      "Valkyrie! #3",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43257"
+      }
+    ],
+    [
+      "ecl-hotspur-1987-2",
+      "Hotspur",
+      "2",
+      "Eclipse",
+      "1987-08-01",
+      "",
+      "",
+      "Hotspur #2",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43207"
+      }
+    ],
+    [
+      "ecl-valkyrie-1987-2",
+      "Valkyrie!",
+      "2",
+      "Eclipse",
+      "1987-06-01",
+      "",
+      "",
+      "Valkyrie! #2",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43006"
+      }
+    ],
+    [
+      "ecl-hotspur-1987-1",
+      "Hotspur",
+      "1",
+      "Eclipse",
+      "1987-06-01",
+      "",
+      "",
+      "Hotspur #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42952"
+      }
+    ],
+    [
+      "ecl-detectives-inc-a-terror-of-dying-dreams-1987-1",
+      "Detectives, Inc.: A Terror of Dying Dreams",
+      "1",
+      "Eclipse",
+      "1987-06-01",
+      "",
+      "",
+      "Detectives, Inc.: A Terror of Dying Dreams #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42950"
+      }
+    ],
+    [
+      "ecl-valkyrie-1987-1",
+      "Valkyrie!",
+      "1",
+      "Eclipse",
+      "1987-05-01",
+      "",
+      "",
+      "Valkyrie! #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42887"
+      }
+    ],
+    [
+      "ecl-whodunnit-1986-3",
+      "Whodunnit?",
+      "3",
+      "Eclipse",
+      "1987-04-10",
+      "",
+      "",
+      "Whodunnit? #3",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42727"
+      }
+    ],
+    [
+      "rene-maxwell-mouse-follies-1986-6",
+      "Maxwell Mouse Follies",
+      "6",
+      "Renegade Press",
+      "1987-03-01",
+      "",
+      "",
+      "Maxwell Mouse Follies #6",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "329611"
+      }
+    ],
+    [
+      "ecl-luger-1986-3",
+      "Luger",
+      "3",
+      "Eclipse",
+      "1987-02-01",
+      "",
+      "",
+      "Luger #3",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42481"
+      }
+    ],
+    [
+      "ecl-giant-size-mini-comics-1986-4",
+      "Giant-Size Mini Comics",
+      "4",
+      "Eclipse",
+      "1987-02-01",
+      "",
+      "",
+      "Giant-Size Mini Comics #4",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "276072"
+      }
+    ],
+    [
+      "ac-venture-1986-3",
+      "Venture",
+      "3",
+      "AC",
+      "1987-01-01",
+      "",
+      "",
+      "Venture #3",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42262"
+      }
+    ],
+    [
+      "now-vector-1986-4",
+      "Vector",
+      "4",
+      "Now",
+      "1987-01-01",
+      "",
+      "",
+      "Vector #4",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "310413"
+      }
+    ],
+    [
+      "rip--miami-mice-1986-4",
+      "Miami Mice",
+      "4",
+      "Rip Off Press",
+      "1987-01-01",
+      "",
+      "",
+      "Miami Mice #4",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "266092"
+      }
+    ],
+    [
+      "now-eb-nn-1986-6",
+      "Eb'nn",
+      "6",
+      "Now",
+      "1987-01-01",
+      "",
+      "",
+      "Eb'nn #6",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328739"
+      }
+    ],
+    [
+      "ecl-luger-1986-2",
+      "Luger",
+      "2",
+      "Eclipse",
+      "1986-12-01",
+      "",
+      "",
+      "Luger #2",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42148"
+      }
+    ],
+    [
+      "ecl-giant-size-mini-comics-1986-3",
+      "Giant-Size Mini Comics",
+      "3",
+      "Eclipse",
+      "1986-12-01",
+      "",
+      "",
+      "Giant-Size Mini Comics #3",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "276071"
+      }
+    ],
+    [
+      "ecl-adolescent-radioactive-black-belt-hamste-1986-4-g298371",
+      "Adolescent Radioactive Black Belt Hamsters 3-D",
+      "4",
+      "Eclipse",
+      "1986-12-01",
+      "",
+      "",
+      "Adolescent Radioactive Black Belt Hamsters 3-D #4",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "298371"
+      }
+    ],
+    [
+      "ecl-three-d-three-stooges-1986-2",
+      "Three-D Three Stooges",
+      "2",
+      "Eclipse",
+      "1986-11-10",
+      "",
+      "",
+      "Three-D Three Stooges #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "256306"
+      }
+    ],
+    [
+      "ecl-whodunnit-1986-2",
+      "Whodunnit?",
+      "2",
+      "Eclipse",
+      "1986-11-01",
+      "",
+      "",
+      "Whodunnit? #2",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-10-21",
+        "gcdIssueId": "42040"
+      }
+    ],
+    [
+      "ac-venture-1986-2",
+      "Venture",
+      "2",
+      "AC",
+      "1986-11-01",
+      "",
+      "",
+      "Venture #2",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41995"
+      }
+    ],
+    [
+      "now-vector-1986-3",
+      "Vector",
+      "3",
+      "Now",
+      "1986-11-01",
+      "",
+      "",
+      "Vector #3",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "310412"
+      }
+    ],
+    [
+      "now-eb-nn-1986-5",
+      "Eb'nn",
+      "5",
+      "Now",
+      "1986-11-01",
+      "",
+      "",
+      "Eb'nn #5",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328738"
+      }
+    ],
+    [
+      "ecl-adolescent-radioactive-black-belt-hamste-1986-3-g298370",
+      "Adolescent Radioactive Black Belt Hamsters 3-D",
+      "3",
+      "Eclipse",
+      "1986-11-01",
+      "",
+      "",
+      "Adolescent Radioactive Black Belt Hamsters 3-D #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-10-21",
+        "gcdIssueId": "298370"
+      }
+    ],
+    [
+      "ecl-luger-1986-1",
+      "Luger",
+      "1",
+      "Eclipse",
+      "1986-10-14",
+      "",
+      "",
+      "Luger #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-10-14",
+        "gcdIssueId": "41918"
+      }
+    ],
+    [
+      "ecl-giant-size-mini-comics-1986-2",
+      "Giant-Size Mini Comics",
+      "2",
+      "Eclipse",
+      "1986-10-14",
+      "",
+      "",
+      "Giant-Size Mini Comics #2",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-10-14",
+        "gcdIssueId": "276070"
+      }
+    ],
+    [
+      "rene-murder-1986-3",
+      "Murder",
+      "3",
+      "Renegade Press",
+      "1986-10-01",
+      "",
+      "",
+      "Murder #3",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41963"
+      }
+    ],
+    [
+      "rip--miami-mice-1986-3",
+      "Miami Mice",
+      "3",
+      "Rip Off Press",
+      "1986-10-01",
+      "",
+      "",
+      "Miami Mice #3",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "266091"
+      }
+    ],
+    [
+      "now-vector-1986-2",
+      "Vector",
+      "2",
+      "Now",
+      "1986-09-10",
+      "",
+      "",
+      "Vector #2",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "310411"
+      }
+    ],
+    [
+      "ecl-three-d-three-stooges-1986-1",
+      "Three-D Three Stooges",
+      "1",
+      "Eclipse",
+      "1986-09-09",
+      "",
+      "",
+      "Three-D Three Stooges #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-09-09",
+        "gcdIssueId": "41822"
+      }
+    ],
+    [
+      "rene-murder-1986-2",
+      "Murder",
+      "2",
+      "Renegade Press",
+      "1986-09-01",
+      "",
+      "",
+      "Murder #2",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41855"
+      }
+    ],
+    [
+      "rene-maxwell-mouse-follies-1986-4",
+      "Maxwell Mouse Follies",
+      "4",
+      "Renegade Press",
+      "1986-09-01",
+      "",
+      "",
+      "Maxwell Mouse Follies #4",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "329609"
+      }
+    ],
+    [
+      "now-eb-nn-1986-4",
+      "Eb'nn",
+      "4",
+      "Now",
+      "1986-09-01",
+      "",
+      "",
+      "Eb'nn #4",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328737"
+      }
+    ],
+    [
+      "ecl-adolescent-radioactive-black-belt-hamste-1986-2-g298369",
+      "Adolescent Radioactive Black Belt Hamsters 3-D",
+      "2",
+      "Eclipse",
+      "1986-09-01",
+      "",
+      "",
+      "Adolescent Radioactive Black Belt Hamsters 3-D #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-06-17",
+        "gcdIssueId": "298369"
+      }
+    ],
+    [
+      "rene-murder-1986-1",
+      "Murder",
+      "1",
+      "Renegade Press",
+      "1986-08-01",
+      "",
+      "",
+      "Murder #1",
+      1.7,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "41752"
+      }
+    ],
+    [
+      "ecl-giant-size-mini-comics-1986-1",
+      "Giant-Size Mini Comics",
+      "1",
+      "Eclipse",
+      "1986-08-01",
+      "",
+      "",
+      "Giant-Size Mini Comics #1",
+      1.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "276069"
+      }
+    ],
+    [
+      "rene-vicki-valentine-1985-4",
+      "Vicki Valentine",
+      "4",
+      "Renegade Press",
+      "1986-07-01",
+      "",
+      "",
+      "Vicki Valentine #4",
+      1.7,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "329634"
+      }
+    ],
+    [
+      "now-vector-1986-1",
+      "Vector",
+      "1",
+      "Now",
+      "1986-07-01",
+      "",
+      "",
+      "Vector #1",
+      1.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-06-29",
+        "gcdIssueId": "310410"
+      }
+    ],
+    [
+      "rip--miami-mice-1986-2",
+      "Miami Mice",
+      "2",
+      "Rip Off Press",
+      "1986-07-01",
+      "",
+      "",
+      "Miami Mice #2",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "266090"
+      }
+    ],
+    [
+      "ecl-adolescent-radioactive-black-belt-hamste-1986-1",
+      "Adolescent Radioactive Black Belt Hamsters 3-D",
+      "1",
+      "Eclipse",
+      "1986-07-01",
+      "",
+      "",
+      "Adolescent Radioactive Black Belt Hamsters 3-D #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-05-13",
+        "gcdIssueId": "298368"
+      }
+    ],
+    [
+      "ecl-whodunnit-1986-1",
+      "Whodunnit?",
+      "1",
+      "Eclipse",
+      "1986-06-17",
+      "",
+      "",
+      "Whodunnit? #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-06-17",
+        "gcdIssueId": "41504"
+      }
+    ],
+    [
+      "rene-maxwell-mouse-follies-1986-3",
+      "Maxwell Mouse Follies",
+      "3",
+      "Renegade Press",
+      "1986-06-13",
+      "",
+      "",
+      "Maxwell Mouse Follies #3",
+      1.7,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-06-13",
+        "gcdIssueId": "329608"
+      }
+    ],
+    [
+      "now-eb-nn-1986-3",
+      "Eb'nn",
+      "3",
+      "Now",
+      "1986-06-01",
+      "",
+      "",
+      "Eb'nn #3",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-05-31",
+        "gcdIssueId": "328736"
+      }
+    ],
+    [
+      "rip--miami-mice-1986-1",
+      "Miami Mice",
+      "1",
+      "Rip Off Press",
+      "1986-04-01",
+      "",
+      "",
+      "Miami Mice #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "266089"
+      }
+    ],
+    [
+      "rene-maxwell-mouse-follies-1986-1",
+      "Maxwell Mouse Follies",
+      "1",
+      "Renegade Press",
+      "1986-02-01",
+      "",
+      "",
+      "Maxwell Mouse Follies #1",
+      1.7,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "329606"
+      }
+    ],
+    [
+      "rene-vicki-valentine-1985-3",
+      "Vicki Valentine",
+      "3",
+      "Renegade Press",
+      "1986-01-01",
+      "",
+      "",
+      "Vicki Valentine #3",
+      1.7,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-02-20",
+        "gcdIssueId": "329633"
+      }
+    ],
+    [
+      "ac-venture-1986-1",
+      "Venture",
+      "1",
+      "AC",
+      "1986-01-01",
+      "",
+      "",
+      "Venture #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "40844"
+      }
+    ],
+    [
+      "ecl-sun-runners-1984-7",
+      "Sun-Runners",
+      "7",
+      "Eclipse",
+      "1985-12-17",
+      "",
+      "",
+      "Sun-Runners #7",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-12-17",
+        "gcdIssueId": "40749"
+      }
+    ],
+    [
+      "rene-vicki-valentine-1985-2",
+      "Vicki Valentine",
+      "2",
+      "Renegade Press",
+      "1985-11-01",
+      "",
+      "",
+      "Vicki Valentine #2",
+      1.7,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "329632"
+      }
+    ],
+    [
+      "ecl-sun-runners-1984-6",
+      "Sun-Runners",
+      "6",
+      "Eclipse",
+      "1985-10-01",
+      "",
+      "",
+      "Sun-Runners #6",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1985-09-24",
+        "gcdIssueId": "40040"
+      }
+    ],
+    [
+      "rene-vicki-valentine-1985-1",
+      "Vicki Valentine",
+      "1",
+      "Renegade Press",
+      "1985-07-01",
+      "",
+      "",
+      "Vicki Valentine #1",
+      1.7,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "329631"
+      }
+    ],
+    [
+      "ecl-sun-runners-1984-5",
+      "Sun-Runners",
+      "5",
+      "Eclipse",
+      "1985-05-01",
+      "",
+      "",
+      "Sun-Runners #5",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "39992"
+      }
+    ],
+    [
+      "fant-smilin-ed-comics-1980-4",
+      "Smilin' Ed Comics",
+      "4",
+      "FantaCo Enterprises",
+      "1981-03-01",
+      "",
+      "",
+      "Smilin' Ed Comics #4",
+      1.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "307583"
+      }
+    ],
+    [
+      "fant-smilin-ed-comics-1980-3",
+      "Smilin' Ed Comics",
+      "3",
+      "FantaCo Enterprises",
+      "1981-01-01",
+      "",
+      "",
+      "Smilin' Ed Comics #3",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "307582"
+      }
+    ],
+    [
+      "fant-smilin-ed-comics-1980-2",
+      "Smilin' Ed Comics",
+      "2",
+      "FantaCo Enterprises",
+      "1980-10-01",
+      "",
+      "",
+      "Smilin' Ed Comics #2",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "307581"
+      }
+    ],
+    [
+      "fant-smilin-ed-comics-1980-1",
+      "Smilin' Ed Comics",
+      "1",
+      "FantaCo Enterprises",
+      "1980-07-01",
+      "",
+      "",
+      "Smilin' Ed Comics #1",
+      1.25,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "307580"
+      }
+    ],
+    [
+      "geor-treasure-chest-of-fun-and-fact-1946-8-496",
+      "Treasure Chest of Fun and Fact",
+      "8 [496]",
+      "George A. Pflaum",
+      "1972-07-01",
+      "",
+      "",
+      "Treasure Chest of Fun and Fact #8 [496]",
+      0.35,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "239531"
+      }
+    ],
+    [
+      "geor-treasure-chest-of-fun-and-fact-1946-7-495",
+      "Treasure Chest of Fun and Fact",
+      "7 [495]",
+      "George A. Pflaum",
+      "1972-06-01",
+      "",
+      "",
+      "Treasure Chest of Fun and Fact #7 [495]",
+      0.35,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "239530"
+      }
+    ],
+    [
+      "geor-treasure-chest-of-fun-and-fact-1946-6-494",
+      "Treasure Chest of Fun and Fact",
+      "6 [494]",
+      "George A. Pflaum",
+      "1972-05-01",
+      "",
+      "",
+      "Treasure Chest of Fun and Fact #6 [494]",
+      0.35,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "239529"
+      }
+    ],
+    [
+      "geor-treasure-chest-of-fun-and-fact-1946-5-493",
+      "Treasure Chest of Fun and Fact",
+      "5 [493]",
+      "George A. Pflaum",
+      "1972-04-01",
+      "",
+      "",
+      "Treasure Chest of Fun and Fact #5 [493]",
+      0.35,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "239528"
+      }
+    ],
+    [
+      "ac-paragon-illustrated-1969-4",
+      "Paragon Illustrated",
+      "4",
+      "AC",
+      "1972-04-01",
+      "",
+      "",
+      "Paragon Illustrated #4",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "315116"
+      }
+    ],
+    [
+      "geor-treasure-chest-of-fun-and-fact-1946-4-492",
+      "Treasure Chest of Fun and Fact",
+      "4 [492]",
+      "George A. Pflaum",
+      "1972-03-01",
+      "",
+      "",
+      "Treasure Chest of Fun and Fact #4 [492]",
+      0.35,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "239527"
+      }
+    ],
+    [
+      "geor-treasure-chest-of-fun-and-fact-1946-3-491",
+      "Treasure Chest of Fun and Fact",
+      "3 [491]",
+      "George A. Pflaum",
+      "1972-02-01",
+      "",
+      "",
+      "Treasure Chest of Fun and Fact #3 [491]",
+      0.35,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "239526"
+      }
+    ],
+    [
+      "geor-treasure-chest-of-fun-and-fact-1946-2-490",
+      "Treasure Chest of Fun and Fact",
+      "2 [490]",
+      "George A. Pflaum",
+      "1972-01-01",
+      "",
+      "",
+      "Treasure Chest of Fun and Fact #2 [490]",
+      0.35,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "239525"
+      }
+    ],
+    [
+      "last-fantagor-1971-3",
+      "Fantagor",
+      "3",
+      "Last Gasp",
+      "1972-01-01",
+      "",
+      "",
+      "Fantagor #3",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277735"
+      }
+    ],
+    [
+      "last-fantagor-1971-4",
+      "Fantagor",
+      "4",
+      "Last Gasp",
+      "1972-01-01",
+      "",
+      "",
+      "Fantagor #4",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277736"
+      }
+    ],
+    [
+      "last-fantagor-1971-2",
+      "Fantagor",
+      "2",
+      "Last Gasp",
+      "1972-01-01",
+      "",
+      "",
+      "Fantagor #2",
+      1.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2827468"
+      }
+    ],
+    [
+      "last-fantagor-1971-1",
+      "Fantagor",
+      "1",
+      "Last Gasp",
+      "1971-12-01",
+      "",
+      "",
+      "Fantagor #1",
+      0.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277733"
+      }
+    ],
+    [
+      "geor-treasure-chest-of-fun-and-fact-1946-1-489",
+      "Treasure Chest of Fun and Fact",
+      "1 [489]",
+      "George A. Pflaum",
+      "1971-10-01",
+      "",
+      "",
+      "Treasure Chest of Fun and Fact #1 [489]",
+      0.35,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "239524"
+      }
+    ],
+    [
+      "geor-treasure-chest-of-fun-and-fact-1946-8-488",
+      "Treasure Chest of Fun and Fact",
+      "8 [488]",
+      "George A. Pflaum",
+      "1971-05-01",
+      "",
+      "",
+      "Treasure Chest of Fun and Fact #8 [488]",
+      0.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "239511"
+      }
+    ],
+    [
+      "ac-paragon-illustrated-1969-3",
+      "Paragon Illustrated",
+      "3",
+      "AC",
+      "1971-04-01",
+      "",
+      "",
+      "Paragon Illustrated #3",
+      1.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "315115"
+      }
+    ],
+    [
+      "ac-paragon-illustrated-1969-2",
+      "Paragon Illustrated",
+      "2",
+      "AC",
+      "1970-01-01",
+      "",
+      "",
+      "Paragon Illustrated #2",
+      1.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "315114"
+      }
+    ],
+    [
+      "ac-paragon-illustrated-1969-1",
+      "Paragon Illustrated",
+      "1",
+      "AC",
+      "1969-10-01",
+      "",
+      "",
+      "Paragon Illustrated #1",
+      0.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1969-10-01",
+        "gcdIssueId": "315113"
+      }
+    ],
+    [
+      "stan-navy-patrol-1955-4",
+      "Navy Patrol",
+      "4",
+      "Stanley Morse",
+      "1955-11-01",
+      "",
+      "",
+      "Navy Patrol #4",
+      0.1,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "274642"
+      }
+    ],
+    [
+      "stan-prize-mystery-1955-3",
+      "Prize Mystery",
+      "3",
+      "Stanley Morse",
+      "1955-09-10",
+      "",
+      "",
+      "Prize Mystery #3",
+      0.1,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "12315"
+      }
+    ],
+    [
+      "stan-navy-patrol-1955-3",
+      "Navy Patrol",
+      "3",
+      "Stanley Morse",
+      "1955-09-01",
+      "",
+      "",
+      "Navy Patrol #3",
+      0.1,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "274641"
+      }
+    ],
+    [
+      "stan-prize-mystery-1955-2",
+      "Prize Mystery",
+      "2",
+      "Stanley Morse",
+      "1955-07-10",
+      "",
+      "",
+      "Prize Mystery #2",
+      0.1,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "12196"
+      }
+    ],
+    [
+      "stan-navy-patrol-1955-2",
+      "Navy Patrol",
+      "2",
+      "Stanley Morse",
+      "1955-07-01",
+      "",
+      "",
+      "Navy Patrol #2",
+      0.1,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "274640"
+      }
+    ],
+    [
+      "stan-prize-mystery-1955-1",
+      "Prize Mystery",
+      "1",
+      "Stanley Morse",
+      "1955-05-10",
+      "",
+      "",
+      "Prize Mystery #1",
+      0.1,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "12052"
+      }
+    ],
+    [
+      "stan-western-rough-riders-1954-4",
+      "Western Rough Riders",
+      "4",
+      "Stanley Morse",
+      "1955-05-01",
+      "",
+      "",
+      "Western Rough Riders #4",
+      0.1,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "274664"
+      }
+    ],
+    [
+      "stan-navy-patrol-1955-1",
+      "Navy Patrol",
+      "1",
+      "Stanley Morse",
+      "1955-05-01",
+      "",
+      "",
+      "Navy Patrol #1",
+      0.1,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "274639"
+      }
+    ],
+    [
+      "stan-western-rough-riders-1954-3",
+      "Western Rough Riders",
+      "3",
+      "Stanley Morse",
+      "1955-03-01",
+      "",
+      "",
+      "Western Rough Riders #3",
+      0.1,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "274663"
+      }
+    ],
+    [
+      "stan-western-rough-riders-1954-2",
+      "Western Rough Riders",
+      "2",
+      "Stanley Morse",
+      "1955-01-01",
+      "",
+      "",
+      "Western Rough Riders #2",
+      0.1,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "274662"
+      }
+    ],
+    [
+      "stan-weird-chills-1954-3",
+      "Weird Chills",
+      "3",
+      "Stanley Morse",
+      "1954-11-10",
+      "",
+      "",
+      "Weird Chills #3",
+      0.1,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "11672"
+      }
+    ],
+    [
+      "stan-western-rough-riders-1954-1",
+      "Western Rough Riders",
+      "1",
+      "Stanley Morse",
+      "1954-11-01",
+      "",
+      "",
+      "Western Rough Riders #1",
+      0.1,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "274661"
+      }
+    ],
+    [
+      "stan-weird-chills-1954-2",
+      "Weird Chills",
+      "2",
+      "Stanley Morse",
+      "1954-09-01",
+      "",
+      "",
+      "Weird Chills #2",
+      0.1,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "11550"
+      }
+    ],
+    [
+      "stan-weird-chills-1954-1",
+      "Weird Chills",
+      "1",
+      "Stanley Morse",
+      "1954-07-01",
+      "",
+      "",
+      "Weird Chills #1",
+      0.1,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "266969"
+      }
+    ]
+  ]
+}
