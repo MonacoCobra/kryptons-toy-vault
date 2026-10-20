@@ -1,0 +1,101 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-20",
+  "updatedAt": "2026-10-20T14:20:15Z",
+  "added": 14,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Pages read from rendered listing in box browser (save dialog broken); raw.json DOM extract.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 318,
+    "ee_candidates": 38,
+    "bbts_candidates": 111,
+    "added": 14,
+    "skipped_dupes": 135,
+    "rejected_non_af": 120,
+    "unmapped_company": 49,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 30485,
+  "oneshotAfter": 30499,
+  "ee_added": 14,
+  "bbts_added": 0,
+  "samples": [
+    {
+      "sku": "BLFBAS69838",
+      "name": "Hunter x Hunter Hisoka S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-hunter-x-hunter-hisoka-s-h-figuarts-action-figure-blfbas69838",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS69845",
+      "name": "Masked Rider Black RX Shinkocchou Seihou S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-masked-rider-black-rx-shinkocchou-seihou-s-h-figuarts-action-figure-blfbas69845",
+      "source": "ee"
+    },
+    {
+      "sku": "MF11586",
+      "name": "MLB Construct-a-Figure Series 1 Pittsburgh Pirates Paul Skenes Mini-Figure",
+      "id": "afmon-mcfarlane-mlb-construct-a-figure-series-1-pittsburgh-pirates-paul-skenes-mini-figure-mf11586",
+      "source": "ee"
+    },
+    {
+      "sku": "MF11584",
+      "name": "MLB Construct-a-Figure Series 1 Philadelphia Phillies Bryce Harper Mini-Figure",
+      "id": "afmon-mcfarlane-mlb-construct-a-figure-series-1-philadelphia-phillies-bryce-harper-mini-fi-mf11584",
+      "source": "ee"
+    },
+    {
+      "sku": "MF11585",
+      "name": "MLB Construct-a-Figure Series 1 Chicago Cubs Pete Crow-Armstrong Mini-Figure",
+      "id": "afmon-mcfarlane-mlb-construct-a-figure-series-1-chicago-cubs-pete-crow-armstrong-mini-figu-mf11585",
+      "source": "ee"
+    },
+    {
+      "sku": "MF11593",
+      "name": "MLB Construct-a-Figure Series 1 Boston Red Sox Jarren Duran Mini-Figure",
+      "id": "afmon-mcfarlane-mlb-construct-a-figure-series-1-boston-red-sox-jarren-duran-mini-figure-mf11593",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP82478",
+      "name": "G.I. Joe Shipwreck (Peacoat, Cartoon) 3 3/4-Inch ReAction+ Figure",
+      "id": "afmon-super7-g-i-joe-shipwreck-peacoat-cartoon-3-3-4-inch-reaction-figure-sup82478",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP82479",
+      "name": "G.I. Joe Baroness (Arctic) 3 3/4-Inch ReAction+ Figure",
+      "id": "afmon-super7-g-i-joe-baroness-arctic-3-3-4-inch-reaction-figure-sup82479",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP82477",
+      "name": "G.I. Joe Flint 3 3/4-Inch ReAction+ Figure",
+      "id": "afmon-super7-g-i-joe-flint-3-3-4-inch-reaction-figure-sup82477",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP82480",
+      "name": "G.I. Joe S.N.A.K.E. Armor (Rock disguise) (Cartoon) 3 3/4-Inch ReAction+ Figure",
+      "id": "afmon-super7-g-i-joe-s-n-a-k-e-armor-rock-disguise-cartoon-3-3-4-inch-reaction-figure-sup82480",
+      "source": "ee"
+    },
+    {
+      "sku": "MF11581",
+      "name": "MLB Construct-a-Figure Series 1 Los Angeles Dodgers Shohei Ohtani Mini-Figure",
+      "id": "afmon-mcfarlane-mlb-construct-a-figure-series-1-los-angeles-dodgers-shohei-ohtani-mini-fig-mf11581",
+      "source": "ee"
+    },
+    {
+      "sku": "MF11582",
+      "name": "MLB Construct-a-Figure Series 1 New York Yankees Aaron Judge Mini-Figure",
+      "id": "afmon-mcfarlane-mlb-construct-a-figure-series-1-new-york-yankees-aaron-judge-mini-figure-mf11582",
+      "source": "ee"
+    }
+  ],
+  "commit": null
+}
