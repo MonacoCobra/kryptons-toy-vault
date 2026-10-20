@@ -10,23 +10,23 @@
   "filledCv": 0,
   "filledMetron": 0,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 0,
+  "metronDailyUsed": 181,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 60,
+  "misses": 83,
   "recentMissSkips": {
-    "cv": 84
+    "metron": 176
   },
   "requests": {
     "cv": 0,
-    "metron": 0
+    "metron": 181
   },
   "skipped": 0,
-  "source": "cv",
+  "source": "metron",
   "sourceMinutes": {
-    "cv": 0.16
+    "metron": 18.06
   },
-  "stoppedReason": null,
-  "updatedAt": "2026-10-20T17:13:31Z",
+  "stoppedReason": "metron max-minutes 18 reached",
+  "updatedAt": "2026-10-20T17:32:03Z",
   "yearBand": "2020-2025"
 }
