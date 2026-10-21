@@ -1,0 +1,111 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-21",
+  "updatedAt": "2026-10-21T14:22:24Z",
+  "added": 13,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "Pages read from rendered listing in box browser (save dialog broken); raw.json DOM extract.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 320,
+    "ee_candidates": 37,
+    "bbts_candidates": 137,
+    "added": 22,
+    "skipped_dupes": 152,
+    "rejected_non_af": 83,
+    "unmapped_company": 63,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 30539,
+  "oneshotAfter": 30552,
+  "ee_added": 7,
+  "bbts_added": 6,
+  "samples": [
+    {
+      "sku": "MF12709",
+      "name": "NHL McFarlanes SportsPicks Wave 2 Colorado Avalanche Nathan MacKinnon 6-Inch Scale Articulated Action Figure",
+      "id": "afmon-mcfarlane-nhl-mcfarlanes-sportspicks-wave-2-colorado-avalanche-nathan-mackinnon-6-in-mf12709",
+      "source": "ee"
+    },
+    {
+      "sku": "MF12706",
+      "name": "NHL McFarlanes SportsPicks Wave 2 Montreal Canadiens Cole Caufield 6-Inch Scale Articulated Action Figure",
+      "id": "afmon-mcfarlane-nhl-mcfarlanes-sportspicks-wave-2-montreal-canadiens-cole-caufield-6-inch-mf12706",
+      "source": "ee"
+    },
+    {
+      "sku": "MF12708",
+      "name": "NHL McFarlanes SportsPicks Wave 2 San Jose Sharks Macklin Celebrini 6-Inch Scale Articulated Action Figure",
+      "id": "afmon-mcfarlane-nhl-mcfarlanes-sportspicks-wave-2-san-jose-sharks-macklin-celebrini-6-inch-mf12708",
+      "source": "ee"
+    },
+    {
+      "sku": "MF12707",
+      "name": "NHL McFarlanes SportsPicks Wave 2 Toronto Maple Leafs William Nylander 6-Inch Scale Articulated Action Figure",
+      "id": "afmon-mcfarlane-nhl-mcfarlanes-sportspicks-wave-2-toronto-maple-leafs-william-nylander-6-i-mf12707",
+      "source": "ee"
+    },
+    {
+      "sku": "MF12711",
+      "name": "NHL McFarlanes SportsPicks Wave 2 Montreal Canadiens Nick Suzuki 6-Inch Scale Articulated Action Figure",
+      "id": "afmon-mcfarlane-nhl-mcfarlanes-sportspicks-wave-2-montreal-canadiens-nick-suzuki-6-inch-sc-mf12711",
+      "source": "ee"
+    },
+    {
+      "sku": "MF12716",
+      "name": "NHL McFarlanes SportsPicks Wave 2 New York Islanders Matthew Schaefer 6-Inch Scale Articulated Action Figure",
+      "id": "afmon-mcfarlane-nhl-mcfarlanes-sportspicks-wave-2-new-york-islanders-matthew-schaefer-6-in-mf12716",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0728",
+      "name": "Spider-Man VenomVersus Spider-Man Liquid Shifter 11-Inch Action Figure",
+      "id": "afmon-hasbro-spider-man-venomversus-spider-man-liquid-shifter-11-inch-action-figure-hsg0728",
+      "source": "ee"
+    },
+    {
+      "sku": "BA92349",
+      "name": "Godzilla vs. Destoroyah Burning Godzilla Glow-In-The-Dark Ver. Godzilla Rampage 6-inch Action Figure",
+      "id": "afmon-bandai-godzilla-vs-destoroyah-burning-godzilla-glow-in-the-dark-ver-godzilla-rampage-ba92349",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2288",
+      "name": "G.I. Joe Classified Series 209 Toxo-Viper 6-Inch Action Figure",
+      "id": "afmon-hasbro-g-i-joe-classified-series-209-toxo-viper-6-inch-action-figure-hsg2288",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2277",
+      "name": "G.I. Joe Classified Series #190 Mole Rat (Stage 2) 6-Inch Action Figure",
+      "id": "afmon-hasbro-g-i-joe-classified-series-190-mole-rat-stage-2-6-inch-action-figure-hsg2277",
+      "source": "ee"
+    },
+    {
+      "sku": "HSF2885",
+      "name": "Star Wars The Vintage Collection Antoc Merrick's X-Wing Fighter",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-antoc-merrick-s-x-wing-fighter-hsf2885",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-200277",
+      "name": "Stella Sora Nendoroid No.3165 Amber",
+      "id": "afmon-figma-stella-sora-nendoroid-no-3165-amber-bbts-200277",
+      "source": "bbts"
+    }
+  ],
+  "commit": null,
+  "reviewDrops": {
+    "aliased_same_batch_bbts_vs_ee": 6,
+    "aliased_existing": [
+      "HSG2288->joec-classified-toxoviper",
+      "HSG2277->mph-bc2230be2b94"
+    ],
+    "rejected_vehicle": [
+      "HSF2885"
+    ]
+  }
+}
