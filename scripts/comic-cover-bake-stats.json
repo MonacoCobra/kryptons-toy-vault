@@ -1,435 +1,93 @@
 {
-  "coversAfter": 6280,
-  "coversBefore": 6050,
+  "coversAfter": 6292,
+  "coversBefore": 6280,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/03/26/jlo-7.jpg",
-      "id": "dc-justice-league-odyssey-7",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9951188-wwww.jpg",
+      "id": "seve-werewolves-going-crazy-over-me-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/08/jlo-8.jpg",
-      "id": "dc-justice-league-odyssey-8",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9951303-wwww.jpg",
+      "id": "seve-winter-wolf-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/06/jlo-9.jpg",
-      "id": "dc-justice-league-odyssey-9",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9648944-cover.jpg",
+      "id": "stor-john-carpenter-s-tales-of-science-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/28/losh-millenium-2.jpg",
-      "id": "dc-legion-of-super-heroes-millennium-2",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9628007-cover.jpg",
+      "id": "tita-lenore-time-war-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/02/lois-lane-v2-2.jpg",
-      "id": "dc-lois-lane-2",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9792270-cover.jpg",
+      "id": "tita-rebel-moon-nemesis-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/31/lois-lane-v2-3.jpg",
-      "id": "dc-lois-lane-3",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9785298-cover.jpg",
+      "id": "tita-return-to-skull-island-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/28/lois-lane-4.jpg",
-      "id": "dc-lois-lane-4",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9888073-untitled.jpg",
+      "id": "toky-you-can-t-live-all-on-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/10/22/09e00d9931364ab4a99af3a656ead068.jpg",
-      "id": "dc-looney-tunes-246",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11114/111149757/9794326-image_20250608_0001-min.jpg",
+      "id": "udon-mega-man-0",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/01/12/looney-tunes-247.jpg",
-      "id": "dc-looney-tunes-247",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/5/51585/9718078-streetfightervsrivalschools.jpg",
+      "id": "udon-street-fighter-vs-rival-schools-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/01/12/looney-tunes-248.jpg",
-      "id": "dc-looney-tunes-248",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11114/111149757/9787561-image_20250616_0001-min.jpg",
+      "id": "vaul-big-rig-0",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/01/12/looney-tunes-249.jpg",
-      "id": "dc-looney-tunes-249",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9896804-wwww.jpg",
+      "id": "viz-assassin-s-creed-forgotten-temple-1",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/01/12/looney-tunes-250.jpg",
-      "id": "dc-looney-tunes-250",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/01/12/looney-tunes-251.jpg",
-      "id": "dc-looney-tunes-251",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/01/09/mm-2.jpg",
-      "id": "dc-martian-manhunter-2019-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/02/26/martian-manhunter-3.jpg",
-      "id": "dc-martian-manhunter-2019-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/03/24/martian-manhunter-4.jpg",
-      "id": "dc-martian-manhunter-2019-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/20/martian-manhunter-5.jpg",
-      "id": "dc-martian-manhunter-2019-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/26/martian-manhunter-6.jpg",
-      "id": "dc-martian-manhunter-2019-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/20/mm-7.jpg",
-      "id": "dc-martian-manhunter-2019-7",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/24/mm-8.jpg",
-      "id": "dc-martian-manhunter-2019-8",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/18/mm-9.jpg",
-      "id": "dc-martian-manhunter-2019-9",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2018/12/31/mm-12.jpg",
-      "id": "dc-mister-miracle-12",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/02/19/naomi-2.jpg",
-      "id": "dc-naomi-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/03/20/naomi-3-a.jpg",
-      "id": "dc-naomi-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/14/naomi-4.jpg",
-      "id": "dc-naomi-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/12/naomi-5.jpg",
-      "id": "dc-naomi-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/05/naomi-6.jpg",
-      "id": "dc-naomi-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/19/nightwing-v4-52.jpg",
-      "id": "dc-nightwing-2016-2019-52",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/19/nightwing-v4-53.jpg",
-      "id": "dc-nightwing-2016-2019-53",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/19/nightwing-v4-54.jpg",
-      "id": "dc-nightwing-2016-2019-54",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/20/nightwing-v4-55.jpg",
-      "id": "dc-nightwing-2016-2019-55",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/20/nightwing-v4-56.jpg",
-      "id": "dc-nightwing-2016-2019-56",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/20/nightwing-v4-57.jpg",
-      "id": "dc-nightwing-2016-2019-57",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/20/nightwing-v4-58.jpg",
-      "id": "dc-nightwing-2016-2019-58",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/20/nightwing-v4-59.jpg",
-      "id": "dc-nightwing-2016-2019-59",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/20/nightwing-v4-60.jpg",
-      "id": "dc-nightwing-2016-2019-60",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/20/nightwing-v4-61.jpg",
-      "id": "dc-nightwing-2016-2019-61",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/20/nightwing-v4-62.jpg",
-      "id": "dc-nightwing-2016-2019-62",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/20/nightwing-v4-63.jpg",
-      "id": "dc-nightwing-2016-2019-63",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/20/nightwing-v4-64.jpg",
-      "id": "dc-nightwing-2016-2019-64",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/20/nightwing-v4-65.jpg",
-      "id": "dc-nightwing-2016-2019-65",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/30/nightwing-annual-2.jpg",
-      "id": "dc-nightwing-annual-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/21/73284e3fa7e6440cbaade3fccc6e5ff1.jpg",
-      "id": "dc-old-lady-harley-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/21/50a7231b9a264835bdfed416309a5da9.jpg",
-      "id": "dc-old-lady-harley-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/21/b8aaec8e2b0747e5a3aeac89f9d41248.jpg",
-      "id": "dc-old-lady-harley-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/21/b5c259d2f6814f98be44bdf0ae19dcb2.jpg",
-      "id": "dc-old-lady-harley-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/07/05/pearl-11.jpg",
-      "id": "dc-pearl-11",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/07/05/pearl-12.jpg",
-      "id": "dc-pearl-12",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/07/05/pearl-4.jpg",
-      "id": "dc-pearl-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/07/05/pearl-5.jpg",
-      "id": "dc-pearl-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/07/05/pearl-6.jpg",
-      "id": "dc-pearl-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/07/05/pearl-7.jpg",
-      "id": "dc-pearl-7",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/07/05/pearl-8.jpg",
-      "id": "dc-pearl-8",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/07/05/pearl-9.jpg",
-      "id": "dc-pearl-9",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/03/28/c0da046998e34a9990c84a93c86475b0.jpg",
-      "id": "dc-plastic-man-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/12/18/raven-daughter-of-darkness-10.jpg",
-      "id": "dc-raven-daughter-of-darkness-10",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/12/18/raven-daughter-of-darkness-11.jpg",
-      "id": "dc-raven-daughter-of-darkness-11",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/12/18/raven-daughter-of-darkness-12.jpg",
-      "id": "dc-raven-daughter-of-darkness-12",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/01/red-hood-outlaws-annual-v2-3.jpg",
-      "id": "dc-red-hood-and-outlaws-annual-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/01/red-hood-outlaw-28.jpg",
-      "id": "dc-red-hood-outlaw-28",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/01/red-hood-outlaw-29.jpg",
-      "id": "dc-red-hood-outlaw-29",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/01/red-hood-outlaw-30.jpg",
-      "id": "dc-red-hood-outlaw-30",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/01/red-hood-outlaw-31.jpg",
-      "id": "dc-red-hood-outlaw-31",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/01/red-hood-outlaw-32.jpg",
-      "id": "dc-red-hood-outlaw-32",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/01/red-hood-outlaw-33.jpg",
-      "id": "dc-red-hood-outlaw-33",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/01/red-hood-outlaw-34.jpg",
-      "id": "dc-red-hood-outlaw-34",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/01/red-hood-outlaw-35.jpg",
-      "id": "dc-red-hood-outlaw-35",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/01/red-hood-outlaw-36.jpg",
-      "id": "dc-red-hood-outlaw-36",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/01/red-hood-outlaw-37.jpg",
-      "id": "dc-red-hood-outlaw-37",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/01/red-hood-outlaw-38.jpg",
-      "id": "dc-red-hood-outlaw-38",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/02/01/red-hood-outlaw-39.jpg",
-      "id": "dc-red-hood-outlaw-39",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2023/03/12/e4c57849ca0d4ae28c0eaf06c6787403.jpg",
-      "id": "dc-scarlet-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/07/05/scarlet-5.jpg",
-      "id": "dc-scarlet-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/28/scooby-apocalypse-31.jpg",
-      "id": "dc-scooby-apocalypse-31",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/28/scooby-apocalypse-32.jpg",
-      "id": "dc-scooby-apocalypse-32",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/28/scooby-apocalypse-33.jpg",
-      "id": "dc-scooby-apocalypse-33",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/28/scooby-apocalypse-34.jpg",
-      "id": "dc-scooby-apocalypse-34",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/28/scooby-apocalypse-35.jpg",
-      "id": "dc-scooby-apocalypse-35",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/28/scooby-apocalypse-36.jpg",
-      "id": "dc-scooby-apocalypse-36",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/03/19/206562349bfa4b4ba20db0a7bc1095be.jpg",
-      "id": "dc-scooby-doo-team-up-44",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9901207-wwww.jpg",
+      "id": "viz-astro-royale-1",
+      "source": "cv"
     }
   ],
-  "errors": 1,
-  "filled": 230,
-  "filledCv": 44,
-  "filledMetron": 186,
+  "errors": 0,
+  "filled": 12,
+  "filledCv": 12,
+  "filledMetron": 0,
   "metronDailyCap": 2500,
   "metronDailyUsed": 292,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 15,
+  "misses": 32,
   "recentMissSkips": {
-    "cv": 71,
-    "metron": 268
+    "cv": 133
   },
   "requests": {
-    "cv": 106,
-    "metron": 482
+    "cv": 32,
+    "metron": 0
   },
   "skipped": 0,
-  "source": "both",
+  "source": "cv",
   "sourceMinutes": {
-    "cv": 60.67,
-    "metron": 60.25
+    "cv": 18.78
   },
-  "stoppedReason": "cv max-minutes 60 reached; metron max-minutes 60 reached",
-  "updatedAt": "2026-10-21T12:27:41Z",
-  "yearBand": "2010-2019 singles"
+  "stoppedReason": "cv max-minutes 18 reached",
+  "updatedAt": "2026-10-21T17:32:13Z",
+  "yearBand": "2020-2025"
 }
