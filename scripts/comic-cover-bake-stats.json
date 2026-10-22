@@ -1,193 +1,32 @@
 {
   "coversAfter": 6324,
-  "coversBefore": 6292,
+  "coversBefore": 6324,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
-  "details": [
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/17/9219efeab4934f77bde6630d406b8877.jpg",
-      "id": "dc-little-batman-month-one-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/10/27/ad005403cd9d48c59a988637ce7a2b34.jpg",
-      "id": "dc-looney-tunes-281",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/16/5d0af105a0b14db4a791d2c2b9c70480.jpg",
-      "id": "dc-metamorpho-element-man-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/ef0f9e2c7b3d4ca89ca4c5fd39d57e94.jpg",
-      "id": "dc-metamorpho-element-man-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/01/a46f094cb23b4930bed65fcb50693085.jpg",
-      "id": "dc-metamorpho-element-man-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/08/3854474ed1444f41a60475f14befe9c0.jpg",
-      "id": "dc-metamorpho-element-man-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/08/7249c0a9cb974640b021a4beb3eb9ecc.jpg",
-      "id": "dc-metamorpho-element-man-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/16/shadow-cabinet-2.jpg",
-      "id": "dc-milestone-universe-shadow-cabinet-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/03/4c9322a680e64a17bf4046efc45bd0f2.jpg",
-      "id": "dc-milestone-universe-shadow-cabinet-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/c4731afc92fb4e7c87a07fae3b1dde9e.jpg",
-      "id": "dc-milestone-universe-shadow-cabinet-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/03/a116c6a753d146608c7d74f355fbb52b.jpg",
-      "id": "dc-mr-terrific-year-one-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/27/3fdefe47259c43008010693f2146be1a.jpg",
-      "id": "dc-mr-terrific-year-one-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/01/1a4022ed708244a79379ae64370998ed.jpg",
-      "id": "dc-mr-terrific-year-one-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/30/ea23ce9a39244ff5b8486fc22a190654.jpg",
-      "id": "dc-mr-terrific-year-one-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/10/27/4eaf097893e842858e2fd6bb7520905c.jpg",
-      "id": "dc-multiversus-collision-detected-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/10/12/3f1031153929470b9f1ac396af084ceb.jpg",
-      "id": "dc-my-adventures-with-superman-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/22/17eada84d39542719158a2174cd28752.jpg",
-      "id": "dc-new-gods-10",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/12/a982b10f0d304b33b889d60c6f78a54e.jpg",
-      "id": "dc-new-gods-11",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/03/8a8ca90ffff745d0a78d3033c794169f.jpg",
-      "id": "dc-new-gods-2025-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/527b206d95a14226b477d9de845fd4b9.jpg",
-      "id": "dc-new-gods-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/01/4a203c78844d4c559ac7284484357b02.jpg",
-      "id": "dc-new-gods-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/d854b247d7e748fcae48379a2de750de.jpg",
-      "id": "dc-new-gods-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/26/91579e743d5545a4ae54e0cca9d5bca5.jpg",
-      "id": "dc-new-gods-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/23/787cb5e02d2e4e2da7b1cfca35de9e0f.jpg",
-      "id": "dc-new-gods-7",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/19/51f9b94952224527b76ec80645df0da9.jpg",
-      "id": "dc-new-gods-8",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/26/c2c0459f96ff481c849dea172487908a.jpg",
-      "id": "dc-new-gods-9",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/27/b631f80d4f274c3bae5ed54d031a20aa.jpg",
-      "id": "dc-new-history-of-dc-universe-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/15/20c5953984b44c97af604a803cdb5bef.jpg",
-      "id": "dc-new-history-of-dc-universe-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/12/8be0c0e566a94e3aaa1d4341332dfd99.jpg",
-      "id": "dc-new-history-of-dc-universe-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/9ca8021c9b5c405e9d627d6e52462f79.jpg",
-      "id": "dc-nice-house-by-sea-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/9eef1cf56ca741658ed74904ed5d11df.jpg",
-      "id": "dc-nice-house-by-sea-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/07/b9b6d12ee45a4b138e36d66e37efcc4d.jpg",
-      "id": "dc-nightwing-2016-120",
-      "source": "metron"
-    }
-  ],
+  "details": [],
   "errors": 0,
-  "filled": 32,
+  "filled": 0,
   "filledCv": 0,
-  "filledMetron": 32,
+  "filledMetron": 0,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 461,
+  "metronDailyUsed": 413,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 49,
+  "misses": 25,
   "recentMissSkips": {
-    "metron": 224
+    "cv": 157
   },
   "requests": {
-    "cv": 0,
-    "metron": 169
+    "cv": 31,
+    "metron": 0
   },
   "skipped": 0,
-  "source": "metron",
+  "source": "cv",
   "sourceMinutes": {
-    "metron": 18.19
+    "cv": 18.07
   },
-  "stoppedReason": "metron max-minutes 18 reached",
-  "updatedAt": "2026-10-21T17:50:51Z",
+  "stoppedReason": "cv max-minutes 18 reached",
+  "updatedAt": "2026-10-22T17:33:00Z",
   "yearBand": "2020-2025"
 }
