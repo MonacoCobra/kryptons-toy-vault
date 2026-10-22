@@ -1,32 +1,223 @@
 {
-  "coversAfter": 6324,
+  "coversAfter": 6362,
   "coversBefore": 6324,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
-  "details": [],
-  "errors": 0,
-  "filled": 0,
+  "details": [
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/10/10/SNWOmnibusVol1.jpg",
+      "id": "idw-star-trek-strange-new-worlds-omnibus-1",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/f2f050ba997841cca904bf2e7cfd542d.jpg",
+      "id": "dc-nightwing-2016-121",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/03/29514ab62e744c14838860bc20f66935.jpg",
+      "id": "dc-nightwing-2016-122",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/011403fc1220465c9b571c444c7e63f6.jpg",
+      "id": "dc-nightwing-2016-123",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/01/4a83419b7c77408b9fb3f1b5d54d5c36.jpg",
+      "id": "dc-nightwing-2016-124",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/a0573fbcc00b4888849b9a6a3ed309ff.jpg",
+      "id": "dc-nightwing-2016-125",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/26/233913b1bae84d8586b0f7c5efabc8f7.jpg",
+      "id": "dc-nightwing-2016-126",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/23/34c8df4b5c394365b81d5dc412138976.jpg",
+      "id": "dc-nightwing-2016-127",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/19/b225a9902cab46b0a8e33e70d0af2a80.jpg",
+      "id": "dc-nightwing-2016-128",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/26/2b8e5ffcda6b46caa40bf94ede0ea4a4.jpg",
+      "id": "dc-nightwing-2016-129",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/22/2b9f491814094ec59431148872493d7f.jpg",
+      "id": "dc-nightwing-2016-130",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/12/6bf774936c3b47fa8d777ec2d715ff22.jpg",
+      "id": "dc-nightwing-2016-131",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/16/nightwing-v2-6.jpg",
+      "id": "dc-nightwing-2016-2025-6",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/16/nightwing-v2-7.jpg",
+      "id": "dc-nightwing-2016-2025-7",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/08/3d23537df7134f4088d8af3d4f9061e7.jpg",
+      "id": "dc-peacemaker-presents-vigilante-eagly-double-featu-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/08/e9df8d86e2d74f3fa289bf7c348be1bd.jpg",
+      "id": "dc-peacemaker-presents-vigilante-eagly-double-featu-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/03/8b2b623fdf0946889a2df4cad844659c.jpg",
+      "id": "dc-peacemaker-presents-vigilante-eagly-double-featu-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/27/b0cef03f6e0b4ec8b698000cc3093fce.jpg",
+      "id": "dc-peacemaker-presents-vigilante-eagly-double-featu-5",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/10/12/8c1bf696f0e44fa383a7c244e13126a4.jpg",
+      "id": "dc-plastic-man-no-more-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/15/96b0c6d97db145e48e42e74c63dc4978.jpg",
+      "id": "dc-plastic-man-no-more-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/10/12/1353e3ee16404cf49f2d390efd64798f.jpg",
+      "id": "dc-poison-ivy-27",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/15/3edcb15c84274f86985be3c555039890.jpg",
+      "id": "dc-poison-ivy-28",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/17/0dd6379a6b1d499ca4829ea48fae79bb.jpg",
+      "id": "dc-poison-ivy-30",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/dae3682f4e924cfc8299e39da7bac3b7.jpg",
+      "id": "dc-poison-ivy-31",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/92e222f9c2644830b20ae10b7c353152.jpg",
+      "id": "dc-poison-ivy-32",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/15/0d5fb61eaa2b4dfc8b449dc5750bf80e.jpg",
+      "id": "dc-poison-ivy-33",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/23/065914d14c774a348243fb192cbc86ec.jpg",
+      "id": "dc-poison-ivy-34",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/13/9bfa329699da4bec96e488d966f99cff.jpg",
+      "id": "dc-poison-ivy-35",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/09/3178044ec5e04ac59ed74022040aea46.jpg",
+      "id": "dc-poison-ivy-36",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/04/2898229bd94d4616bc1cb5caa4a9cd89.jpg",
+      "id": "dc-poison-ivy-37",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/07/3f43ccc6a59f4719b54ec6f7641d1b06.jpg",
+      "id": "dc-powergirl-2023-15",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/c29b43f471c941bcb0a6c36c6b8195dc.jpg",
+      "id": "dc-powergirl-2023-16",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/03/0c5463cab7304e7185cb789ae2eb6031.jpg",
+      "id": "dc-powergirl-2023-17",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/c4ed15f11ab94a449353fd903c8358c7.jpg",
+      "id": "dc-powergirl-2023-18",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/01/8c63e48fa06d44e480006000958d444d.jpg",
+      "id": "dc-powergirl-2023-19",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/08/97ca29b5fb184999b0e2cee0249bb623.jpg",
+      "id": "dc-powergirl-2023-20",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/04/07/a8eaf68d83cd4083a330fe36bc56da47.jpg",
+      "id": "dc-primer-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/b296e9b0826e4e1fa585961b754cf9f6.jpg",
+      "id": "dc-question-all-along-watchtower-2",
+      "source": "metron"
+    }
+  ],
+  "errors": 1,
+  "filled": 38,
   "filledCv": 0,
-  "filledMetron": 0,
+  "filledMetron": 38,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 413,
+  "metronDailyUsed": 615,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 25,
+  "misses": 21,
   "recentMissSkips": {
-    "cv": 157
+    "metron": 254
   },
   "requests": {
-    "cv": 31,
-    "metron": 0
+    "cv": 0,
+    "metron": 140
   },
   "skipped": 0,
-  "source": "cv",
+  "source": "metron",
   "sourceMinutes": {
-    "cv": 18.07
+    "metron": 18.1
   },
-  "stoppedReason": "cv max-minutes 18 reached",
-  "updatedAt": "2026-10-22T17:33:00Z",
+  "stoppedReason": "metron max-minutes 18 reached",
+  "updatedAt": "2026-10-22T17:51:32Z",
   "yearBand": "2020-2025"
 }
