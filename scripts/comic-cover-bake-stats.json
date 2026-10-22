@@ -1,223 +1,435 @@
 {
-  "coversAfter": 6362,
+  "coversAfter": 6545,
   "coversBefore": 6324,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/10/10/SNWOmnibusVol1.jpg",
-      "id": "idw-star-trek-strange-new-worlds-omnibus-1",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/02/27/titans-30.jpg",
+      "id": "dc-titans-30",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/f2f050ba997841cca904bf2e7cfd542d.jpg",
-      "id": "dc-nightwing-2016-121",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/02/27/titans-31.jpg",
+      "id": "dc-titans-31",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/03/29514ab62e744c14838860bc20f66935.jpg",
-      "id": "dc-nightwing-2016-122",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/02/27/titans-32.jpg",
+      "id": "dc-titans-32",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/011403fc1220465c9b571c444c7e63f6.jpg",
-      "id": "dc-nightwing-2016-123",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/02/27/titans-33.jpg",
+      "id": "dc-titans-33",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/01/4a83419b7c77408b9fb3f1b5d54d5c36.jpg",
-      "id": "dc-nightwing-2016-124",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/02/27/titans-34.jpg",
+      "id": "dc-titans-34",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/a0573fbcc00b4888849b9a6a3ed309ff.jpg",
-      "id": "dc-nightwing-2016-125",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/02/27/titans-35.jpg",
+      "id": "dc-titans-35",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/26/233913b1bae84d8586b0f7c5efabc8f7.jpg",
-      "id": "dc-nightwing-2016-126",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/02/27/titans-36.jpg",
+      "id": "dc-titans-36",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/23/34c8df4b5c394365b81d5dc412138976.jpg",
-      "id": "dc-nightwing-2016-127",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/17/titans-burning-rage-2.jpg",
+      "id": "dc-titans-burning-rage-2",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/19/b225a9902cab46b0a8e33e70d0af2a80.jpg",
-      "id": "dc-nightwing-2016-128",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/11/tt-burning-rage-3.jpg",
+      "id": "dc-titans-burning-rage-3",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/26/2b8e5ffcda6b46caa40bf94ede0ea4a4.jpg",
-      "id": "dc-nightwing-2016-129",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/12/21/the-unexpected-6.jpg",
+      "id": "dc-unexpected-6",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/22/2b9f491814094ec59431148872493d7f.jpg",
-      "id": "dc-nightwing-2016-130",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/12/21/the-unexpected-7.jpg",
+      "id": "dc-unexpected-7",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/12/6bf774936c3b47fa8d777ec2d715ff22.jpg",
-      "id": "dc-nightwing-2016-131",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/12/21/the-unexpected-8.jpg",
+      "id": "dc-unexpected-8",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/16/nightwing-v2-6.jpg",
-      "id": "dc-nightwing-2016-2025-6",
+      "coverUrl": "https://static.metron.cloud/media/issue/2023/04/02/8f8a0cf6af6a46ccb5d6f07173f396e3.jpg",
+      "id": "dc-united-states-vs-murder-inc-3",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/16/nightwing-v2-7.jpg",
-      "id": "dc-nightwing-2016-2025-7",
+      "coverUrl": "https://static.metron.cloud/media/issue/2023/04/02/d43d0b17ee74499095d1927abcac9c01.jpg",
+      "id": "dc-united-states-vs-murder-inc-4",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/08/3d23537df7134f4088d8af3d4f9061e7.jpg",
-      "id": "dc-peacemaker-presents-vigilante-eagly-double-featu-2",
+      "coverUrl": "https://static.metron.cloud/media/issue/2023/04/02/e473927b86544989b509ec165cafbd57.jpg",
+      "id": "dc-united-states-vs-murder-inc-5",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/08/e9df8d86e2d74f3fa289bf7c348be1bd.jpg",
-      "id": "dc-peacemaker-presents-vigilante-eagly-double-featu-3",
+      "coverUrl": "https://static.metron.cloud/media/issue/2023/04/02/c5ecf2ea44954c9ebd6946a5cdcab47d.jpg",
+      "id": "dc-united-states-vs-murder-inc-6",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/03/8b2b623fdf0946889a2df4cad844659c.jpg",
-      "id": "dc-peacemaker-presents-vigilante-eagly-double-featu-4",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/08/03/the-wild-storm-19.jpg",
+      "id": "dc-wild-storm-19",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/27/b0cef03f6e0b4ec8b698000cc3093fce.jpg",
-      "id": "dc-peacemaker-presents-vigilante-eagly-double-featu-5",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/08/03/the-wild-storm-20.jpg",
+      "id": "dc-wild-storm-20",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/10/12/8c1bf696f0e44fa383a7c244e13126a4.jpg",
-      "id": "dc-plastic-man-no-more-3",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/08/03/the-wild-storm-21.jpg",
+      "id": "dc-wild-storm-21",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/15/96b0c6d97db145e48e42e74c63dc4978.jpg",
-      "id": "dc-plastic-man-no-more-4",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/08/03/the-wild-storm-22.jpg",
+      "id": "dc-wild-storm-22",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/10/12/1353e3ee16404cf49f2d390efd64798f.jpg",
-      "id": "dc-poison-ivy-27",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/08/03/the-wild-storm-23.jpg",
+      "id": "dc-wild-storm-23",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/15/3edcb15c84274f86985be3c555039890.jpg",
-      "id": "dc-poison-ivy-28",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/08/03/the-wild-storm-24.jpg",
+      "id": "dc-wild-storm-24",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/17/0dd6379a6b1d499ca4829ea48fae79bb.jpg",
-      "id": "dc-poison-ivy-30",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/03/17/wonder-twins-2.jpg",
+      "id": "dc-wonder-twins-2019-2",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/dae3682f4e924cfc8299e39da7bac3b7.jpg",
-      "id": "dc-poison-ivy-31",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/09/wonder-twins-3.jpg",
+      "id": "dc-wonder-twins-3",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/92e222f9c2644830b20ae10b7c353152.jpg",
-      "id": "dc-poison-ivy-32",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/07/wonder-twins-4.jpg",
+      "id": "dc-wonder-twins-4",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/15/0d5fb61eaa2b4dfc8b449dc5750bf80e.jpg",
-      "id": "dc-poison-ivy-33",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/09/wonder-twins-5.jpg",
+      "id": "dc-wonder-twins-5",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/23/065914d14c774a348243fb192cbc86ec.jpg",
-      "id": "dc-poison-ivy-34",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/05/wonder-twins-6.jpg",
+      "id": "dc-wonder-twins-6",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/13/9bfa329699da4bec96e488d966f99cff.jpg",
-      "id": "dc-poison-ivy-35",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/06/wt-7.jpg",
+      "id": "dc-wonder-twins-7",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/09/3178044ec5e04ac59ed74022040aea46.jpg",
-      "id": "dc-poison-ivy-36",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/04/wonder-twins-8.jpg",
+      "id": "dc-wonder-twins-8",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/04/2898229bd94d4616bc1cb5caa4a9cd89.jpg",
-      "id": "dc-poison-ivy-37",
+      "coverUrl": "https://static.metron.cloud/media/issue/2018/11/28/ww-58.jpg",
+      "id": "dc-wonder-woman-58",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/07/3f43ccc6a59f4719b54ec6f7641d1b06.jpg",
-      "id": "dc-powergirl-2023-15",
+      "coverUrl": "https://static.metron.cloud/media/issue/2018/11/28/ww-59.jpg",
+      "id": "dc-wonder-woman-59",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/c29b43f471c941bcb0a6c36c6b8195dc.jpg",
-      "id": "dc-powergirl-2023-16",
+      "coverUrl": "https://static.metron.cloud/media/issue/2018/12/12/ww-60.jpg",
+      "id": "dc-wonder-woman-60",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/03/0c5463cab7304e7185cb789ae2eb6031.jpg",
-      "id": "dc-powergirl-2023-17",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/01/02/ww-61.jpg",
+      "id": "dc-wonder-woman-61",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/c4ed15f11ab94a449353fd903c8358c7.jpg",
-      "id": "dc-powergirl-2023-18",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/01/15/ww-62.jpg",
+      "id": "dc-wonder-woman-62",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/01/8c63e48fa06d44e480006000958d444d.jpg",
-      "id": "dc-powergirl-2023-19",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/01/29/ww-63.jpg",
+      "id": "dc-wonder-woman-63",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/08/97ca29b5fb184999b0e2cee0249bb623.jpg",
-      "id": "dc-powergirl-2023-20",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/02/12/ww-64.jpg",
+      "id": "dc-wonder-woman-64",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/04/07/a8eaf68d83cd4083a330fe36bc56da47.jpg",
-      "id": "dc-primer-2",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/02/25/ww-65.jpg",
+      "id": "dc-wonder-woman-65",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/b296e9b0826e4e1fa585961b754cf9f6.jpg",
-      "id": "dc-question-all-along-watchtower-2",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/03/11/ww-66.jpg",
+      "id": "dc-wonder-woman-66",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/03/26/ww-67.jpg",
+      "id": "dc-wonder-woman-67",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/07/ww-68.jpg",
+      "id": "dc-wonder-woman-68",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/21/ww-69.jpg",
+      "id": "dc-wonder-woman-69",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/06/ww-70.jpg",
+      "id": "dc-wonder-woman-70",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/20/ww-71.jpg",
+      "id": "dc-wonder-woman-71",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/09/ww-72.jpg",
+      "id": "dc-wonder-woman-72",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/26/ww-73.jpg",
+      "id": "dc-wonder-woman-73",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/05/ww-74.jpg",
+      "id": "dc-wonder-woman-74",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/20/ww-75.jpg",
+      "id": "dc-wonder-woman-75",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/10/ww-76.jpg",
+      "id": "dc-wonder-woman-76",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/24/ww-77.jpg",
+      "id": "dc-wonder-woman-77",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/06/ww-78.jpg",
+      "id": "dc-wonder-woman-78",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/20/ww-79.jpg",
+      "id": "dc-wonder-woman-79",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/09/ww-80.jpg",
+      "id": "dc-wonder-woman-80",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/18/ww-81.jpg",
+      "id": "dc-wonder-woman-81",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/25/ww-annual-3.jpg",
+      "id": "dc-wonder-woman-annual-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/18/ww-come-back-2.jpg",
+      "id": "dc-wonder-woman-come-back-to-me-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/17/ww-come-back-3.jpg",
+      "id": "dc-wonder-woman-come-back-to-me-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/11/ww-come-to-me-4.jpg",
+      "id": "dc-wonder-woman-come-back-to-me-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/02/04/yj-2.jpg",
+      "id": "dc-young-justice-2019-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/03/04/yj-3.jpg",
+      "id": "dc-young-justice-2019-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/01/yj-4.jpg",
+      "id": "dc-young-justice-2019-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/28/young-justice-5.jpg",
+      "id": "dc-young-justice-2019-5",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/02/yj-6.jpg",
+      "id": "dc-young-justice-2019-6",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/05/yj-7.jpg",
+      "id": "dc-young-justice-7",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/06/yj-8.jpg",
+      "id": "dc-young-justice-8",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/28/yj-9.jpg",
+      "id": "dc-young-justice-9",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/30/absolute-carnage-lethal-protectors-2.jpg",
+      "id": "mv-absolute-carnage-lethal-protectors-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/30/absolute-carnage-lethal-protectors-3.jpg",
+      "id": "mv-absolute-carnage-lethal-protectors-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/30/absolute-carnage-miles-morales-2.jpg",
+      "id": "mv-absolute-carnage-miles-morales-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/30/absolute-carnage-miles-morales-3.jpg",
+      "id": "mv-absolute-carnage-miles-morales-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/30/absolute-carnage-scream-2.jpg",
+      "id": "mv-absolute-carnage-scream-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/30/absolute-carnage-scream-3.jpg",
+      "id": "mv-absolute-carnage-scream-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/30/absolute-carnage-vs-deadpool-2.jpg",
+      "id": "mv-absolute-carnage-vs-deadpool-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/30/absolute-carnage-vs-deadpool-3.jpg",
+      "id": "mv-absolute-carnage-vs-deadpool-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/09/absolute-carnage-2.jpg",
+      "id": "mv-absolutedcarnage-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/09/absolute-carnage-3.jpg",
+      "id": "mv-absolutedcarnage-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/09/absolute-carnage-4.jpg",
+      "id": "mv-absolutedcarnage-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/01/09/d7d9bb99738f4145a0a1aef5f9ef87b1.jpg",
+      "id": "mv-aero-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/01/09/b41a24e5c8b5443ab143c79f598a3d52.jpg",
+      "id": "mv-aero-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/01/09/b64f420d272d4bddbb57571eadb347f5.jpg",
+      "id": "mv-aero-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/10/age-conan-belit-2.jpg",
+      "id": "mv-age-of-conan-b-lit-2",
       "source": "metron"
     }
   ],
-  "errors": 1,
-  "filled": 38,
-  "filledCv": 0,
-  "filledMetron": 38,
+  "errors": 3,
+  "filled": 183,
+  "filledCv": 3,
+  "filledMetron": 180,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 615,
+  "metronDailyUsed": 554,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 21,
+  "misses": 67,
   "recentMissSkips": {
-    "metron": 254
+    "cv": 82,
+    "metron": 227
   },
   "requests": {
-    "cv": 0,
-    "metron": 140
+    "cv": 114,
+    "metron": 479
   },
   "skipped": 0,
-  "source": "metron",
+  "source": "both",
   "sourceMinutes": {
-    "metron": 18.1
+    "cv": 60.92,
+    "metron": 60.12
   },
-  "stoppedReason": "metron max-minutes 18 reached",
-  "updatedAt": "2026-10-22T17:51:32Z",
-  "yearBand": "2020-2025"
+  "stoppedReason": "cv max-minutes 60 reached; metron max-minutes 60 reached",
+  "updatedAt": "2026-10-22T17:44:23Z",
+  "yearBand": "2010-2019 singles"
 }
