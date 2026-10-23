@@ -1,0 +1,100 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-23",
+  "updatedAt": "2026-10-23T14:25:13Z",
+  "added": 7,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-10-23: direct curl got Cloudflare 403 on BBTS and EE. BBTS New-sorted AF PageIndex=1+2 read via WebFetch; new listings resolved via WebFetch of BBTS /product/x-<id> pages (og image). EE action-figures/newly-added/preorder listing text read via WebFetch; EE item numbers verified via web search (aliases only, all EE AFs dupes/aliases).",
+  "ee_detail_blocker": "EE curl 403 (Cloudflare); WebFetch listing text OK. 57 EE AF listings seen: 52 already in catalog, 5 same-figure aliases (NBA SportsPicks W2 x4, TVC Razor Crest Encounter); EE newly-added non-AF (statues, Pops, case packs) ignored.",
+  "counts": {
+    "candidates_seen": 17,
+    "ee_candidates": 0,
+    "bbts_candidates": 11,
+    "added": 7,
+    "skipped_dupes": 0,
+    "rejected_non_af": 1,
+    "unmapped_company": 5,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0,
+    "nosku_skipped": 4
+  },
+  "oneshotBefore": 30613,
+  "oneshotAfter": 30620,
+  "ee_added": 0,
+  "bbts_added": 7,
+  "samples": [
+    {
+      "sku": "BBTS-199760",
+      "name": "NBA SportsPicks Jayson Tatum (Boston Celtics) Action Figure",
+      "id": "afmon-mcfarlane-nba-sportspicks-jayson-tatum-boston-celtics-action-figure-bbts-199760",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199762",
+      "name": "NBA SportsPicks Anthony Edwards (Minnesota Timberwolves) Action Figure",
+      "id": "afmon-mcfarlane-nba-sportspicks-anthony-edwards-minnesota-timberwolves-action-figure-bbts-199762",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199759",
+      "name": "NBA SportsPicks Luka Doncic (Los Angeles Lakers) Action Figure",
+      "id": "afmon-mcfarlane-nba-sportspicks-luka-doncic-los-angeles-lakers-action-figure-bbts-199759",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199761",
+      "name": "NBA SportsPicks Jalen Brunson (New York Knicks) Action Figure",
+      "id": "afmon-mcfarlane-nba-sportspicks-jalen-brunson-new-york-knicks-action-figure-bbts-199761",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199758",
+      "name": "NBA SportsPicks Tyrese Maxey (Philadelphia 76ers) Action Figure",
+      "id": "afmon-mcfarlane-nba-sportspicks-tyrese-maxey-philadelphia-76ers-action-figure-bbts-199758",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199130",
+      "name": "Star Wars: The Vintage Collection Carson Teva, Trapper Wolf, and Frog Lady Action Figure Three-Pack (The Mandalorian)",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-carson-teva-trapper-wolf-and-frog-lady-a-bbts-199130",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200467",
+      "name": "Return to Silent Hill Pyramid Head (Normal Ver.) 1/6 Scale Action Figure",
+      "id": "afmon-starace-return-to-silent-hill-pyramid-head-normal-ver-1-6-scale-action-figure-bbts-200467",
+      "source": "bbts"
+    }
+  ],
+  "commit": null,
+  "aliasesAdded": 9,
+  "aliasDetail": {
+    "afmon-mcfarlane-nba-sportspicks-jayson-tatum-boston-celtics-action-figure-bbts-199760": [
+      "MF10551",
+      "787926105513"
+    ],
+    "afmon-mcfarlane-nba-sportspicks-anthony-edwards-minnesota-timberwolves-action-figure-bbts-199762": [
+      "MF10548"
+    ],
+    "afmon-mcfarlane-nba-sportspicks-luka-doncic-los-angeles-lakers-action-figure-bbts-199759": [
+      "MF10552",
+      "787926105520"
+    ],
+    "afmon-mcfarlane-nba-sportspicks-tyrese-maxey-philadelphia-76ers-action-figure-bbts-199758": [
+      "MF10554",
+      "787926105544"
+    ],
+    "afmon-hasbro-star-wars-the-vintage-collection-carson-teva-trapper-wolf-and-frog-lady-a-bbts-199130": [
+      "HSG4170",
+      "5010996477743"
+    ]
+  },
+  "noskuSkipped": [
+    "Star Ace Pyramid Head Deluxe Ver. (BBTS id not resolvable)",
+    "GSC Nendoroid Doll Firefly Spring Missive",
+    "GSC Nendoroid No.3159 Yuno Sengoku",
+    "Max Factory figma No.587 Violet reissue"
+  ]
+}
