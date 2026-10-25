@@ -86,8 +86,11 @@ export function summarizeVault(
     add(comics, owned.acquiredPrice, comic?.msrp ?? owned.custom?.msrp);
   }
 
+  // Combine the already-rounded segments so Combined always equals Comics + Toys.
+  const fig = rounded(figures);
+  const com = rounded(comics);
   const all = emptyTotals();
-  for (const t of [figures, comics]) {
+  for (const t of [fig, com]) {
     all.count += t.count;
     all.paid += t.paid;
     all.paidCount += t.paidCount;
@@ -98,8 +101,8 @@ export function summarizeVault(
   }
 
   return {
-    figures: rounded(figures),
-    comics: rounded(comics),
+    figures: fig,
+    comics: com,
     all: rounded(all),
     figureCount: figures.count,
     comicCount: comics.count,

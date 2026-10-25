@@ -53,9 +53,19 @@ function Home() {
         </h1>
       </section>
 
-      <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+      <section aria-label="Collection value" className="grid gap-3 sm:grid-cols-3">
         <StatCard
-          label="Collection total"
+          label="Comics value"
+          value={usd(stats.comics.total, 0)}
+          hint={valueHint(stats.comics.count, stats.comics.missing, "issue")}
+        />
+        <StatCard
+          label="Toys value"
+          value={usd(stats.figures.total, 0)}
+          hint={valueHint(stats.figures.count, stats.figures.missing, "figure")}
+        />
+        <StatCard
+          label="Combined total"
           value={usd(stats.all.total, 0)}
           hint={
             stats.all.missing
@@ -63,6 +73,9 @@ function Home() {
               : "Price paid, else MSRP"
           }
         />
+      </section>
+
+      <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <StatCard
           label="Paid"
           value={usd(stats.all.paid, 0)}
@@ -191,6 +204,11 @@ function Home() {
       </section>
     </main>
   );
+}
+
+function valueHint(count: number, missing: number, noun: string) {
+  const items = `${count.toLocaleString()} ${noun}${count === 1 ? "" : "s"}`;
+  return missing ? `${items} · ${missing} with no price` : items;
 }
 
 function StatCard({

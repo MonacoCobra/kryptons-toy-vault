@@ -88,11 +88,20 @@ function CollectionPage() {
             <span className="text-muted">Paid</span> {usd(stats.all.paid, 0)}
             <span className="text-subtle"> · </span>
             <span className="text-muted">MSRP</span> {usd(stats.all.msrp, 0)}
-            <span className="text-subtle"> · </span>
-            <span className="text-muted">Total</span> <span className="text-gold">{usd(stats.all.total, 0)}</span>
             {stats.all.missing ? (
               <span className="text-xs text-subtle"> · {stats.all.missing} with no price</span>
             ) : null}
+          </p>
+          <p className="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-sm tabular">
+            <span>
+              <span className="text-muted">Comics</span> <span className="text-gold">{usd(stats.comics.total, 0)}</span>
+            </span>
+            <span>
+              <span className="text-muted">Toys</span> <span className="text-gold">{usd(stats.figures.total, 0)}</span>
+            </span>
+            <span>
+              <span className="text-muted">Combined</span> <span className="text-gold">{usd(stats.all.total, 0)}</span>
+            </span>
           </p>
           <p className="mt-1 text-xs text-subtle">Total counts each item at the price you paid, or its MSRP when none is entered.</p>
         </div>
