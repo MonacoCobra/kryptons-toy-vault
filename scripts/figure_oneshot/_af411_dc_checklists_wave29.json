@@ -1,0 +1,94 @@
+{
+ "source": "https://www.actionfigure411.com/dc/ (multiverse-checklist McFarlane Collector Edition section; dc-universe-classics checklist)",
+ "sections": [
+  "McFarlane Collector Edition",
+  "dc-universe-classics"
+ ],
+ "fetched": "2026-10-26",
+ "note": "Wave29 = AF411 McFarlane DC Multiverse Collector Edition section holes (77 items; 66 already matched catalog strictly). DC Universe Classics checklist checked: no clean holes. UPC/Retail/Year from AF411 checklist + item pages (~2s spacing). Deduped vs whole oneshot across every company (af411 id, name fuzzy incl. cross-maker within ~2 yrs, UPC); fuzzy hits and UPC collisions skipped.",
+ "picked": [
+  {
+   "fid": "8951",
+   "page": "multiverse",
+   "section": "McFarlane Collector Edition",
+   "name": "Batman Knightmare & Armor Suit (Gold Label - Batman v Superman: Dawn of Justice)",
+   "url": "https://www.actionfigure411.com/dc/multiverse/mcfarlane-collector-edition/batman-knightmare-armor-suit-gold-label-batman-v-superman-dawn-of-justice-8951.php",
+   "wave": "",
+   "year": "2024",
+   "retail": "39.99",
+   "upc": "787926173567",
+   "upc_collision": null
+  },
+  {
+   "fid": "14389",
+   "page": "multiverse",
+   "section": "McFarlane Collector Edition",
+   "name": "Batman vs Ras al Ghul (Gold Label - Batman #244)",
+   "url": "https://www.actionfigure411.com/dc/multiverse/mcfarlane-collector-edition/batman-vs-ras-al-ghul-gold-label-batman-244-14389.php",
+   "wave": "GameStop",
+   "year": "2026",
+   "retail": "49.99",
+   "upc": "787926178586",
+   "upc_collision": null
+  },
+  {
+   "fid": "14195",
+   "page": "multiverse",
+   "section": "McFarlane Collector Edition",
+   "name": "Superman Blue vs Superman Red (DC Multiverse)",
+   "url": "https://www.actionfigure411.com/dc/multiverse/mcfarlane-collector-edition/superman-blue-vs-superman-red-dc-multiverse-14195.php",
+   "wave": "",
+   "year": "2026",
+   "retail": "49.99",
+   "upc": "787926179040",
+   "upc_collision": null
+  }
+ ],
+ "dropped": [
+  {
+   "fid": "12085",
+   "name": "Batman with Mobius Chair (Darkseid War)",
+   "reason": "UPC collision 787926176735 with mcf6-mcf-batman-plat (Batman Platinum Edition) / d14mcf-batman-gotham-war"
+  },
+  {
+   "fid": "14395",
+   "name": "Batman & Spawn (Gold Label - DC Multiverse) 2026",
+   "reason": "fuzzy same-maker hit mcf-mp-w20-batman-spawn-6972 (Batman & Spawn multipack 2023)"
+  },
+  {
+   "fid": "7523",
+   "name": "Superman & Krypto (Return of Superman) 2023",
+   "reason": "fuzzy hit mcf-w2-superman-with-krypto-deluxe-theatrical-superman-movie (2025)"
+  },
+  {
+   "fid": "8917",
+   "name": "Batman Battle Damage Blue (The Dark Knight Returns) 2024",
+   "reason": "fuzzy hits mcf-dc-super-pow-batman-the-dark-knight-returns-wave-8 (2024) / sf-shop BATMAN (Dark Knight Returns) MF18024"
+  },
+  {
+   "fid": "6935",
+   "name": "Green Lantern Alan Scott (Day of Vengeance) 2023",
+   "reason": "fuzzy hits mcfdc-alan-scott-gold (2023) / Alan Scott 2021"
+  },
+  {
+   "fid": "7200",
+   "name": "Firestorm (Crisis on Infinite Earths) 2023",
+   "reason": "fuzzy hits mcfdc-firestorm (2022) / mcfdc-firestorm-jason (2023)"
+  },
+  {
+   "fid": "12086",
+   "name": "Doctor Mid-Nite (Justice Society of America) 2025",
+   "reason": "already in catalog as Collector Edition 48 JSA"
+  },
+  {
+   "fid": "14026",
+   "name": "Hawkgirl (Kendra Saunders) 2026",
+   "reason": "fuzzy hits McFarlane Collector Edition Hawkgirl rows 2025 + cross-maker DC Direct Hawkgirl Kendra Saunders (2007)"
+  },
+  {
+   "fid": "dcuc",
+   "name": "AF411 DC Universe Classics checklist (179 items)",
+   "reason": "checked: no clean holes; remaining 33 are masked/unmasked or color variants of rows already in catalog (Mattel DCUC 401 rows) - skipped as fuzzy same-maker hits"
+  }
+ ]
+}
