@@ -1,0 +1,147 @@
+{
+ "source": "https://www.actionfigure411.com/dc/multiverse-checklist.php (bane-baf and black-adam sections; lex-luthor-cnc checked)",
+ "sections": [
+  "bane-baf",
+  "black-adam"
+ ],
+ "fetched": "2026-10-27",
+ "note": "Wave30 = AF411 McFarlane DC Multiverse Bane BAF waves (Last Knight on Earth 2021, The Dark Knight Trilogy 2023, Jokerized Gold Label Target 2023) + Black Adam movie section holes. UPC from AF411 item pages (~1.5s spacing); year/retail/exclusive from checklist. Deduped vs whole oneshot across every company (af411 id, name fuzzy incl. cross-maker within ~2 yrs, UPC); fuzzy hits and UPC collisions skipped.",
+ "picked": [
+  {
+   "fid": "3014",
+   "page": "multiverse",
+   "section": "bane-baf",
+   "name": "Scarecrow (Last Knight on Earth #2)",
+   "url": "https://www.actionfigure411.com/dc/multiverse/bane-baf/scarecrow-last-knight-on-earth-2-3014.php",
+   "wave": "",
+   "year": "2021",
+   "retail": "19.99",
+   "upc": "787926154283",
+   "upc_collision": null
+  },
+  {
+   "fid": "3016",
+   "page": "multiverse",
+   "section": "bane-baf",
+   "name": "Wonder Woman (Last Knight on Earth #1)",
+   "url": "https://www.actionfigure411.com/dc/multiverse/bane-baf/wonder-woman-last-knight-on-earth-1-3016.php",
+   "wave": "",
+   "year": "2021",
+   "retail": "19.99",
+   "upc": "787926154276",
+   "upc_collision": null
+  },
+  {
+   "fid": "5847",
+   "page": "multiverse",
+   "section": "bane-baf",
+   "name": "Scarecrow (The Dark Knight Trilogy)",
+   "url": "https://www.actionfigure411.com/dc/multiverse/bane-baf/scarecrow-the-dark-knight-trilogy-5847.php",
+   "wave": "",
+   "year": "2023",
+   "retail": "24.99",
+   "upc": "787926155648",
+   "upc_collision": null
+  },
+  {
+   "fid": "6865",
+   "page": "multiverse",
+   "section": "bane-baf",
+   "name": "Batman (Gold Label - Jokerized - The Dark Knight Trilogy)",
+   "url": "https://www.actionfigure411.com/dc/multiverse/bane-baf/batman-gold-label-jokerized-the-dark-knight-trilogy-6865.php",
+   "wave": "Target",
+   "year": "2023",
+   "retail": "24.99",
+   "upc": "787926155815",
+   "upc_collision": null
+  },
+  {
+   "fid": "6864",
+   "page": "multiverse",
+   "section": "bane-baf",
+   "name": "The Joker (Gold Label - Jokerized - The Dark Knight Trilogy)",
+   "url": "https://www.actionfigure411.com/dc/multiverse/bane-baf/the-joker-gold-label-jokerized-the-dark-knight-trilogy-6864.php",
+   "wave": "Target",
+   "year": "2023",
+   "retail": "24.99",
+   "upc": "787926155822",
+   "upc_collision": null
+  },
+  {
+   "fid": "7191",
+   "page": "multiverse",
+   "section": "bane-baf",
+   "name": "Two-Face (Gold Label - Jokerized - The Dark Knight Trilogy)",
+   "url": "https://www.actionfigure411.com/dc/multiverse/bane-baf/two-face-gold-label-jokerized-the-dark-knight-trilogy-7191.php",
+   "wave": "Target",
+   "year": "2023",
+   "retail": "24.99",
+   "upc": "787926155839",
+   "upc_collision": null
+  },
+  {
+   "fid": "8696",
+   "page": "multiverse",
+   "section": "black-adam",
+   "name": "Black Adam (With Throne)",
+   "url": "https://www.actionfigure411.com/dc/multiverse/black-adam/black-adam-with-throne-8696.php",
+   "wave": "",
+   "year": "2022",
+   "retail": "19.99",
+   "upc": "787926152647",
+   "upc_collision": null
+  }
+ ],
+ "dropped": [
+  {
+   "fid": "5844",
+   "name": "Joker (The Dark Knight Trilogy) 2023",
+   "reason": "cross-maker fuzzy hits within ~2 yrs: threezero The Joker Dark Knight DLX V2 (2024) / Mezco The Dark Knight: Joker (2025)"
+  },
+  {
+   "fid": "5845",
+   "name": "Batman (The Dark Knight Trilogy) 2023",
+   "reason": "cross-maker fuzzy hits within ~2 yrs: threezero Batman Dark Knight DLX (2023) / Mezco One:12 Batman The Dark Knight (2024)"
+  },
+  {
+   "fid": "5846",
+   "name": "Two-Face (The Dark Knight Trilogy) 2023",
+   "reason": "UPC collision 787926155631 with mcf4-multiverse-twoface (Two-Face Classic 2024)"
+  },
+  {
+   "fid": "5252",
+   "name": "Black Adam (Cloak) 2022",
+   "reason": "UPC collision 787926152616 with mcfc-blackadam (Black Adam Ancient 2022) - same figure"
+  },
+  {
+   "fid": "7190",
+   "name": "Scarecrow (Gold Label - Jokerized - The Dark Knight Trilogy) 2023",
+   "reason": "fuzzy same-maker hit mcfarlane Scarecrow Gold Label Wave B (2023, 787926153842) / Scarecrow Gold Label (2022)"
+  },
+  {
+   "fid": "3015",
+   "name": "Batman (Last Knight on Earth #3) 2021",
+   "reason": "fuzzy hits mcfdc-batman-last-knight (McFarlane 2020) / d14dcd-dcd-batman-last (DC Direct 2020, cross-maker)"
+  },
+  {
+   "fid": "3017",
+   "name": "Omega (Last Knight on Earth #3) 2021",
+   "reason": "fuzzy hits mcfgap-omega (McFarlane 2020) / d14dcd-dcd-omega (DC Direct 2020, cross-maker)"
+  },
+  {
+   "fid": "3018/5848/8622",
+   "name": "Bane BAF parts (LKOE / TDK Trilogy / Jokerized)",
+   "reason": "build-a-figure parts, not sold separately"
+  },
+  {
+   "fid": "black-adam",
+   "name": "Atom Smasher, Atom Smasher MegaFig, Black Adam, Cyclone, Dr. Fate, Hawkman, Sabbac MegaFig (Black Adam movie 2022)",
+   "reason": "already in catalog (strict/fuzzy McFarlane Black Adam rows incl. mcf-mega-sabbac, 787926173482 Atom Smasher Megafig)"
+  },
+  {
+   "fid": "lex-luthor-cnc",
+   "name": "Mattel DC Multiverse Lex Luthor CNC wave 2018 (7)",
+   "reason": "all present as Mattel DC Multiverse rows (mat-mmv-w4-*, Rebirth Walmart rows); not McFarlane"
+  }
+ ]
+}
