@@ -1,123 +1,203 @@
 {
-  "coversAfter": 7098,
-  "coversBefore": 7080,
+  "coversAfter": 7132,
+  "coversBefore": 7098,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9974553-cover.jpg",
-      "id": "rekc-the-future-is-2025-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/10/27/c7f7f6a4d9b949618c78c7bd1afac64c.jpg",
+      "id": "dc-titans-17",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10030447-0_000.jpg",
-      "id": "viz-rai-rai-rai-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/16/titans-18.jpg",
+      "id": "dc-titans-18",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9900411-wwww.jpg",
-      "id": "viz-ruridragon-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/03/b0dc90fbb43940ab96731546bbb7c1b1.jpg",
+      "id": "dc-titans-19",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9854236-wwww.jpg",
-      "id": "viz-snow-angel-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/f1843c781f55488199a2e73e6f127fab.jpg",
+      "id": "dc-titans-20",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9854389-wwww.jpg",
-      "id": "viz-spider-man-kizuna-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/26/4d5d4c7978b94b87b1accbda6f84c520.jpg",
+      "id": "dc-titans-2025-23",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9853969-wwww.jpg",
-      "id": "viz-star-brighter-than-sun-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/23/dc74d533821d46588b867af51107520b.jpg",
+      "id": "dc-titans-2025-24",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9925253-0_000b.jpg",
-      "id": "viz-tokyo-alien-bros-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/19/401df749440b4a43bb1b4e5e2db91d78.jpg",
+      "id": "dc-titans-2025-25",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111567728/9796463-1559668871-71iNd.jpg",
-      "id": "viz-tokyo-fears-rhapsody-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/26/6e1b4c68186342adad56fc6d88869811.jpg",
+      "id": "dc-titans-2025-26",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11154/111547112/9784604-4924687005-81zDW.jpg",
-      "id": "viz-tsumiki-ogami-s-not-so-ordinary-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/22/c8be5a76bf0249739c36e180d828c525.jpg",
+      "id": "dc-titans-2025-27",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11115/111152973/9785680-ultraman-alongcameaspider-manv1%282025%29-page1.jpg",
-      "id": "viz-ultraman-along-came-spider-man-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/29/1c441b4d724944cc80cc76b6a86f59d9.jpg",
+      "id": "dc-titans-2025-28",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9854407-wwww.jpg",
-      "id": "viz-vagabond-definitive-edition-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/01/9e540fb2d2e448c3a1af510175607ea8.jpg",
+      "id": "dc-titans-21",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111567728/9788616-2992742949-24423.jpg",
-      "id": "viz-yaiba-samurai-legend-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/15410cbd47dd45f0a6152c783f4cf936.jpg",
+      "id": "dc-titans-22",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11135/111359134/10112344-the13thfootprintv1%282025%29-page1.jpg",
-      "id": "yenp-13th-footprint-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/16/28cad77a58794bf19bc50937c4ff21b2.jpg",
+      "id": "dc-trinity-daughter-of-wonder-woman-2",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111567728/9803499-91m5v8x0tcl._sl1500_.jpg",
-      "id": "yenp-almark-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/19/8df1087d2aec4c0b87394a9187932262.jpg",
+      "id": "dc-trinity-daughter-of-wonder-woman-3",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9941341-wwww.jpg",
-      "id": "yenp-animan-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/15/d95f0edd68a64af6a792bc0e7e0b663a.jpg",
+      "id": "dc-trinity-daughter-of-wonder-woman-4",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11154/111547112/9826378-1518358996-81ScR.jpg",
-      "id": "yenp-bocchi-rock-comic-anthology-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/55d1b664cc48428d9e32c1b6dc0aaa6d.jpg",
+      "id": "dc-two-face-2",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11154/111547112/9669187-6656572702-81P3c.jpg",
-      "id": "yenp-boy-who-ruled-monsters-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/17/12441ff7c57e466e83f6577cade9ebf3.jpg",
+      "id": "dc-two-face-3",
+      "source": "metron"
     },
     {
-      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9953434-wwww.jpg",
-      "id": "yenp-common-sense-monster-1",
-      "source": "cv"
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/03/1c180bf3969645d194be28a9becadcc4.jpg",
+      "id": "dc-two-face-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/a37f1e68553e4b86b8e73ec4f89f68e6.jpg",
+      "id": "dc-two-face-5",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/15/90e882b04cb34a708fde6d3163174cd2.jpg",
+      "id": "dc-two-face-6",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/10/27/9e141e942ca04320a42233db51612823.jpg",
+      "id": "dc-wonder-woman-15-815",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/b4f0f5a593374e95aa5be41ef769ccba.jpg",
+      "id": "dc-wonder-woman-16-816",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/03/a1d9abdaecdf44a88a11d129d0917cde.jpg",
+      "id": "dc-wonder-woman-17-817",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/07/59a57b8c59c04a01ade343b99a9472c2.jpg",
+      "id": "dc-wonder-woman-18-818",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/01/57c52033b7a645118c10101cd9337341.jpg",
+      "id": "dc-wonder-woman-19-819",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/d52154c49b7b4005bf39187b56d4608c.jpg",
+      "id": "dc-wonder-woman-20-820",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/26/37c2aced93d749dd87840bc1a53a450a.jpg",
+      "id": "dc-wonder-woman-21-821",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/23/e23c5ea7b592407fa507de6da0f0f7e2.jpg",
+      "id": "dc-wonder-woman-22-822",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/19/6bf89b939dc84accb64b54bed07fde2e.jpg",
+      "id": "dc-wonder-woman-23-823",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/26/e55c14f674e845b1bca707e9e874eaeb.jpg",
+      "id": "dc-wonder-woman-24-824",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/22/3383ee01ac5047cdbfbdc41cdeea15f4.jpg",
+      "id": "dc-wonder-woman-25-825",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/12/88178215cbaf474ab3eed423215423db.jpg",
+      "id": "dc-wonder-woman-26-826",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/01/01576490bde6457db3d82496c42a63ef.jpg",
+      "id": "dc-zatanna-2025-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/b2e8c0d6d7ec438fa5ce8158d332e89f.jpg",
+      "id": "dc-zatanna-2025-3",
+      "source": "metron"
     }
   ],
   "errors": 0,
-  "filled": 18,
-  "filledCv": 18,
-  "filledMetron": 0,
+  "filled": 34,
+  "filledCv": 0,
+  "filledMetron": 34,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 351,
+  "metronDailyUsed": 566,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 42,
+  "misses": 16,
   "recentMissSkips": {
-    "cv": 141
+    "metron": 261
   },
   "requests": {
-    "cv": 30,
-    "metron": 0
+    "cv": 0,
+    "metron": 101
   },
   "skipped": 0,
-  "source": "cv",
+  "source": "metron",
   "sourceMinutes": {
-    "cv": 17.69
+    "metron": 18.09
   },
-  "stoppedReason": null,
-  "updatedAt": "2026-10-27T17:40:21Z",
+  "stoppedReason": "metron max-minutes 18 reached",
+  "updatedAt": "2026-10-27T17:58:54Z",
   "yearBand": "2020-2025"
 }
