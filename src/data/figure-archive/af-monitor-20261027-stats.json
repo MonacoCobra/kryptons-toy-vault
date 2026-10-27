@@ -1,0 +1,101 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-27",
+  "updatedAt": "2026-10-27T14:30:05Z",
+  "added": 19,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-10-27: direct curl got 403 on BBTS and EE (EE Cloudflare challenge). BBTS New-sorted listing read via WebFetch; BBTS product IDs resolved via web search + WebFetch of /product/x-<id> pages (og image). EE newly-added + action-figures listing read via WebFetch; EE item numbers verified via web search + WebFetch of EE product pages. Super7 TC Ultimates W16 EE pages have no product photo yet -> no imageUrl.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 19,
+    "ee_candidates": 6,
+    "bbts_candidates": 13,
+    "added": 19,
+    "skipped_dupes": 0,
+    "rejected_non_af": 0,
+    "unmapped_company": 0,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 30646,
+  "oneshotAfter": 30665,
+  "ee_added": 6,
+  "bbts_added": 13,
+  "samples": [
+    {
+      "sku": "SUP83441T",
+      "name": "ThunderCats Ultimates Tug-Mug (Cartoon) 7-Inch Scale Action Figure",
+      "id": "afmon-super7-thundercats-ultimates-tug-mug-cartoon-7-inch-scale-action-figure-sup83441t",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP82610T",
+      "name": "ThunderCats Ultimates Top-Spinner (Cartoon) 7-Inch Scale Action Figure",
+      "id": "afmon-super7-thundercats-ultimates-top-spinner-cartoon-7-inch-scale-action-figure-sup82610t",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP82609T",
+      "name": "ThunderCats Ultimates Jackalman (Cartoon) 7-Inch Scale Action Figure",
+      "id": "afmon-super7-thundercats-ultimates-jackalman-cartoon-7-inch-scale-action-figure-sup82609t",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP81992T",
+      "name": "ThunderCats Deluxe Vultureman 7-Inch Action Figure",
+      "id": "afmon-super7-thundercats-deluxe-vultureman-7-inch-action-figure-sup81992t",
+      "source": "ee"
+    },
+    {
+      "sku": "SUP82594T",
+      "name": "ThunderCats Deluxe Mumm-Ra (The Ever Living) 7-Inch Action Figure",
+      "id": "afmon-super7-thundercats-deluxe-mumm-ra-the-ever-living-7-inch-action-figure-sup82594t",
+      "source": "ee"
+    },
+    {
+      "sku": "TH3Z0256",
+      "name": "Avengers: Infinity Saga Iron Man Mark 46 DLX 1:12 Scale Action Figure",
+      "id": "afmon-threezero-avengers-infinity-saga-iron-man-mark-46-dlx-1-12-scale-action-figure-th3z0256",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-200661",
+      "name": "Warhammer 40,000 Black Legion Chaos Lord 1/18 Scale Action Figure",
+      "id": "afmon-joytoy-warhammer-40-000-black-legion-chaos-lord-1-18-scale-action-figure-bbts-200661",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200662",
+      "name": "Warhammer 40,000 Alpha Legion Chaos Lord 1/18 Scale Action Figure",
+      "id": "afmon-joytoy-warhammer-40-000-alpha-legion-chaos-lord-1-18-scale-action-figure-bbts-200662",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200385",
+      "name": "Daredevil: Born Again MAFEX No.336 Daredevil Action Figure",
+      "id": "afmon-mafex-daredevil-born-again-mafex-no-336-daredevil-action-figure-bbts-200385",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200386",
+      "name": "Daredevil: Born Again MAFEX No.337 The Punisher Action Figure",
+      "id": "afmon-mafex-daredevil-born-again-mafex-no-337-the-punisher-action-figure-bbts-200386",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200387",
+      "name": "The Flash (2023) MAFEX No.338 The Flash (Batman Suit Ver.) Action Figure",
+      "id": "afmon-mafex-the-flash-2023-mafex-no-338-the-flash-batman-suit-ver-action-figure-bbts-200387",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200094",
+      "name": "Batman & Robin (1997) DC Multiverse Batgirl (Deluxe Theatrical Edition) Action Figure",
+      "id": "afmon-mcfarlane-batman-robin-1997-dc-multiverse-batgirl-deluxe-theatrical-edition-acti-bbts-200094",
+      "source": "bbts"
+    }
+  ],
+  "commit": null
+}

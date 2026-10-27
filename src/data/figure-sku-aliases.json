@@ -45820,6 +45820,25 @@
     "afmon-bossfight-epic-h-a-c-k-s-bleached-remnants-blank-skeleton-1-12-scale-action-figure-bfeh0028": [
       "EH0028",
       "814800025954"
+    ],
+    "afmon-mcfarlane-batman-robin-1997-dc-multiverse-batgirl-deluxe-theatrical-edition-acti-bbts-200094": [
+      "MF18208",
+      "787926182088"
+    ],
+    "afmon-mcfarlane-batman-returns-1992-dc-multiverse-batman-unmasked-deluxe-theatrical-ed-bbts-200093": [
+      "MF17779"
+    ],
+    "afmon-mcfarlane-the-penguin-dc-multiverse-the-penguin-deluxe-theatrical-edition-action-bbts-200095": [
+      "MF18207"
+    ],
+    "afmon-mezco-rob-zombie-s-halloween-one-12-collective-michael-myers-action-figure-bbts-198966": [
+      "MZ76842"
+    ],
+    "afmon-mafex-daredevil-born-again-mafex-no-336-daredevil-action-figure-bbts-200385": [
+      "4530956473369"
+    ],
+    "fh9-fh-44": [
+      "BBTS-200405"
     ]
   },
   "aliasToFigureId": {
@@ -70811,7 +70830,14 @@
     "EBG0517": "afmon-hiya-godzilla-2000-millennium-1999-godzilla-infrared-ver-exclusive-action-figure-bbts-198494",
     "6957534206009": "afmon-hiya-godzilla-2000-millennium-1999-godzilla-infrared-ver-exclusive-action-figure-bbts-198494",
     "EH0028": "afmon-bossfight-epic-h-a-c-k-s-bleached-remnants-blank-skeleton-1-12-scale-action-figure-bfeh0028",
-    "814800025954": "afmon-bossfight-epic-h-a-c-k-s-bleached-remnants-blank-skeleton-1-12-scale-action-figure-bfeh0028"
+    "814800025954": "afmon-bossfight-epic-h-a-c-k-s-bleached-remnants-blank-skeleton-1-12-scale-action-figure-bfeh0028",
+    "MF18208": "afmon-mcfarlane-batman-robin-1997-dc-multiverse-batgirl-deluxe-theatrical-edition-acti-bbts-200094",
+    "787926182088": "afmon-mcfarlane-batman-robin-1997-dc-multiverse-batgirl-deluxe-theatrical-edition-acti-bbts-200094",
+    "MF17779": "afmon-mcfarlane-batman-returns-1992-dc-multiverse-batman-unmasked-deluxe-theatrical-ed-bbts-200093",
+    "MF18207": "afmon-mcfarlane-the-penguin-dc-multiverse-the-penguin-deluxe-theatrical-edition-action-bbts-200095",
+    "MZ76842": "afmon-mezco-rob-zombie-s-halloween-one-12-collective-michael-myers-action-figure-bbts-198966",
+    "4530956473369": "afmon-mafex-daredevil-born-again-mafex-no-336-daredevil-action-figure-bbts-200385",
+    "BBTS-200405": "fh9-fh-44"
   },
   "collapsed": [
     {
@@ -74855,7 +74881,7 @@
       "reason": "REFUSED 2026-10-17: shared GTIN 634482606551 is NECA 60655 Halloween: Resurrection Ultimate Michael Myers (2025), already present as sf-neca-store-halloween-resurrection-ultimate-michael-myers-7-inch-scale-action-; both 2019 rows carry it from a cmdstore sku-bake (neca-michael also has the Resurrection photo). Matching GTIN is contamination, not identity; names/lines/variants do not establish the same figure. Follow-up: strip 634482606551 and the Resurrection photo from both 2019 rows."
     }
   ],
-  "updatedAt": "2026-10-26T14:30:45.875856+00:00",
+  "updatedAt": "2026-10-27T14:30:13Z",
   "stats": {
     "before": 19085,
     "removed": 6,
