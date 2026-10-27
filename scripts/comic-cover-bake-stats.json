@@ -1,223 +1,435 @@
 {
-  "coversAfter": 7197,
-  "coversBefore": 7159,
+  "coversAfter": 7272,
+  "coversBefore": 7080,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/16/7a4301660b544111ba1bc9c4a5767ab6.jpg",
-      "id": "dc-zatanna-2025-4",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/05/symbiote-spiderman-4.jpg",
+      "id": "mv-symbiote-spider-man-4",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/23/4e2eb852b2f1415ab82d8eb009eaf0d9.jpg",
-      "id": "dc-zatanna-2025-5",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/10/symbiote-spiderman-5.jpg",
+      "id": "mv-symbiote-spider-man-5",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/19/2e2c5fbfa3ff409cbce8c0e638e0dff4.jpg",
-      "id": "dc-zatanna-6",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/29/thanos-2.jpg",
+      "id": "mv-thanos-2019-2",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/04/09/aed0f9b2cde94e2db58bdb9d74994e88.jpg",
-      "id": "dc-zatanna-ripper-4",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/22/thanos-3.jpg",
+      "id": "mv-thanos-2019-3",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/13/5266f4e77a8945a5ad3ac6d363ff02d5.jpg",
-      "id": "mv-alien-paradiso-2",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/27/thanos-4.jpg",
+      "id": "mv-thanos-2019-4",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/09/9f79708a41b745ec9cc6f7bbaad95172.jpg",
-      "id": "mv-alien-paradiso-3",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/24/thanos-5.jpg",
+      "id": "mv-thanos-2019-5",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/10/9ba0227016524393bfeff245431536a8.jpg",
-      "id": "mv-alien-paradiso-4",
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/06/thanos-6.jpg",
+      "id": "mv-thanos-2019-6",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/d270101fbfb44be59691a06d58a2581b.jpg",
-      "id": "mv-alien-paradiso-5",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/02/12/thor-10.jpg",
+      "id": "mv-thor-10-716",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/03/ba24d1dbd3274743b49467ddea2ae0b0.jpg",
-      "id": "mv-aliens-vs-avengers-2",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/03/18/thor-11.jpg",
+      "id": "mv-thor-11-717",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/09/8cb4c127f22743afa36e596b6da89412.jpg",
-      "id": "mv-aliens-vs-avengers-3",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/14/thor-12.jpg",
+      "id": "mv-thor-12-718",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/02/1db42795d0604377a491e54450f3eb92.jpg",
-      "id": "mv-aliens-vs-avengers-4",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/27/thor-13.jpg",
+      "id": "mv-thor-13-719",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/17/all-new-gs-1-fix.jpg",
-      "id": "mv-all-new-spider-gwen-ghost-spider-1-76",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/21/thor-14.jpg",
+      "id": "mv-thor-14-720",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/12/5394ff06bc02484d99b7d5122cd6188f.jpg",
-      "id": "mv-all-new-spider-gwen-ghost-spider-2-77",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/10/thor-15.jpg",
+      "id": "mv-thor-15-721",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/10/16/283a466a5f9f4af0840e528ec536e403.jpg",
-      "id": "mv-all-new-spider-gwen-ghost-spider-3-78",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/24/thor-16.jpg",
+      "id": "mv-thor-16-722",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/7f8b21ed85814475b4625ca21c2a1ece.jpg",
-      "id": "mv-all-new-venom-1-240",
+      "coverUrl": "https://static.metron.cloud/media/issue/2018/12/22/thor-8.jpg",
+      "id": "mv-thor-2019-8",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/19/d577738f905b4a1fb8988494953cba41.jpg",
-      "id": "mv-all-new-venom-10-249",
+      "coverUrl": "https://static.metron.cloud/media/issue/2018/12/22/thor-7.jpg",
+      "id": "mv-thor-7-713",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/31/0d814b2562064f4781c3ddce54947c02.jpg",
-      "id": "mv-all-new-venom-2-241",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/01/09/thor-9.jpg",
+      "id": "mv-thor-9",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/31/37035560cb6f43e0a53486ab8314436e.jpg",
-      "id": "mv-all-new-venom-3-242",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/04/tony-stark-iron-man-10.jpg",
+      "id": "mv-tony-stark-iron-man-10-610",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/28/ab63a2cfdcf347a2a4369c30aeb7eb7b.jpg",
-      "id": "mv-all-new-venom-4-243",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/04/tony-stark-iron-man-11.jpg",
+      "id": "mv-tony-stark-iron-man-11-611",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/36c518b43a8f406a8b431feeef225658.jpg",
-      "id": "mv-all-new-venom-5-244",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/04/tony-stark-iron-man-12.jpg",
+      "id": "mv-tony-stark-iron-man-12-612",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/21/0f5799e122e44d01a30892485d0ecd5a.jpg",
-      "id": "mv-all-new-venom-6-245",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/04/tony-stark-iron-man-13.jpg",
+      "id": "mv-tony-stark-iron-man-13-613",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/29/afff39ef54ea41c2a81864f6bb0f2b81.jpg",
-      "id": "mv-all-new-venom-7-246",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/04/tony-stark-iron-man-14.jpg",
+      "id": "mv-tony-stark-iron-man-14-614",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/16/6e53fa109c5c4a4ea3cb878a5a2097f3.jpg",
-      "id": "mv-all-new-venom-8-247",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/04/tony-stark-iron-man-15.jpg",
+      "id": "mv-tony-stark-iron-man-15-615",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/26/a458f3d69f5a4458b11bcf046c99136e.jpg",
-      "id": "mv-all-new-venom-9-248",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/04/tony-stark-iron-man-16.jpg",
+      "id": "mv-tony-stark-iron-man-16-616",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2026/07/26/large-5773437.jpg",
-      "id": "mv-amazing-spider-man-epic-collection-11",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/04/tony-stark-iron-man-17.jpg",
+      "id": "mv-tony-stark-iron-man-17-617",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/146bad8ec1974b46a528168c6307a7b0.jpg",
-      "id": "mv-asm-v1-1-965",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/04/tony-stark-iron-man-6.jpg",
+      "id": "mv-tony-stark-iron-man-6",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/04/d5ece2dfcb8e4612890e84a0b28df2b4.jpg",
-      "id": "mv-asm-v1-10-974",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/04/tony-stark-iron-man-7.jpg",
+      "id": "mv-tony-stark-iron-man-7",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/19/e91b5d520b374d94a734a3a73f1c6aca.jpg",
-      "id": "mv-asm-v1-11-975",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/04/tony-stark-iron-man-8.jpg",
+      "id": "mv-tony-stark-iron-man-8",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/05/92571f44fae74430a2498dfe1e33aa91.jpg",
-      "id": "mv-asm-v1-12-976",
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/04/tony-stark-iron-man-9.jpg",
+      "id": "mv-tony-stark-iron-man-9-609",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/22/c7d412915fd04c91974d200dc4bbb2ec.jpg",
-      "id": "mv-asm-v1-13-977",
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/09/02/the-unbeatable-squirrel-girl-38.jpg",
+      "id": "mv-unbeatable-squirrel-girl-38",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/29/10f03866f2b94047ac05b1a9866f8a79.jpg",
-      "id": "mv-asm-v1-14-978",
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/09/02/the-unbeatable-squirrel-girl-39.jpg",
+      "id": "mv-unbeatable-squirrel-girl-39",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/08/9329ca8b187743b4ac320966b90c547b.jpg",
-      "id": "mv-asm-v1-2-966",
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/09/02/the-unbeatable-squirrel-girl-40.jpg",
+      "id": "mv-unbeatable-squirrel-girl-40",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/21/af06bb9826294680aa1e6108d7887232.jpg",
-      "id": "mv-asm-v1-3-967",
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/09/02/the-unbeatable-squirrel-girl-41.jpg",
+      "id": "mv-unbeatable-squirrel-girl-41",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/08/1f847f11002844d18eae411ab0c67be6.jpg",
-      "id": "mv-asm-v1-4-968",
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/09/02/the-unbeatable-squirrel-girl-42.jpg",
+      "id": "mv-unbeatable-squirrel-girl-42",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/29/680f567697bd4957aee8d6f3d34cb36f.jpg",
-      "id": "mv-asm-v1-5-969",
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/09/02/the-unbeatable-squirrel-girl-43.jpg",
+      "id": "mv-unbeatable-squirrel-girl-43",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/02/e7f9c084c3244ae7b8e81d3bf1521da6.jpg",
-      "id": "mv-asm-v1-6-970",
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/09/02/the-unbeatable-squirrel-girl-44.jpg",
+      "id": "mv-unbeatable-squirrel-girl-44",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/09/d726fa7ba8dd402884cbc3ddcb6ef63a.jpg",
-      "id": "mv-asm-v1-61-955",
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/09/02/the-unbeatable-squirrel-girl-45.jpg",
+      "id": "mv-unbeatable-squirrel-girl-45",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/15/d3d206ae17b84a6bb3fa2f69261b7d0f.jpg",
-      "id": "mv-asm-v1-62-956",
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/09/02/the-unbeatable-squirrel-girl-46.jpg",
+      "id": "mv-unbeatable-squirrel-girl-46",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/09/02/the-unbeatable-squirrel-girl-47.jpg",
+      "id": "mv-unbeatable-squirrel-girl-47",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/09/02/the-unbeatable-squirrel-girl-48.jpg",
+      "id": "mv-unbeatable-squirrel-girl-48",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/09/02/the-unbeatable-squirrel-girl-49.jpg",
+      "id": "mv-unbeatable-squirrel-girl-49",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/08/the-unstoppable-wasp-v2-10.jpg",
+      "id": "mv-unstoppable-wasp-10-18",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/08/the-unstoppable-wasp-v2-2.jpg",
+      "id": "mv-unstoppable-wasp-2-10",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/08/the-unstoppable-wasp-v2-3.jpg",
+      "id": "mv-unstoppable-wasp-3-11",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/08/the-unstoppable-wasp-v2-4.jpg",
+      "id": "mv-unstoppable-wasp-4-12",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/08/the-unstoppable-wasp-v2-5.jpg",
+      "id": "mv-unstoppable-wasp-5-13",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/08/the-unstoppable-wasp-v2-6.jpg",
+      "id": "mv-unstoppable-wasp-6-14",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/08/the-unstoppable-wasp-v2-7.jpg",
+      "id": "mv-unstoppable-wasp-7-15",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/08/the-unstoppable-wasp-v2-8.jpg",
+      "id": "mv-unstoppable-wasp-8-16",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/11/08/the-unstoppable-wasp-v2-9.jpg",
+      "id": "mv-unstoppable-wasp-9-17",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/18/valkyrie-2.jpg",
+      "id": "mv-valkyrie-jane-foster-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/13/valkyrie-3.jpg",
+      "id": "mv-valkyrie-jane-foster-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/18/valkyrie-4.jpg",
+      "id": "mv-valkyrie-jane-foster-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/07/17/6686019-02.jpg",
+      "id": "mv-vault-of-spiders-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/08/venom-10.jpg",
+      "id": "mv-venom-2021-10",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/08/venom-11.jpg",
+      "id": "mv-venom-2021-11-176",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/08/venom-12.jpg",
+      "id": "mv-venom-2021-12-177",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/08/venom-13.jpg",
+      "id": "mv-venom-2021-13-178",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/08/venom-14.jpg",
+      "id": "mv-venom-2021-14-179",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/08/venom-15.jpg",
+      "id": "mv-venom-2021-15-180",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/08/venom-16.jpg",
+      "id": "mv-venom-2021-16-181",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/08/venom-17.jpg",
+      "id": "mv-venom-2021-17-182",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/08/venom-18.jpg",
+      "id": "mv-venom-2021-18-183",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/08/venom-19.jpg",
+      "id": "mv-venom-2021-19-184",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/08/venom-8.jpg",
+      "id": "mv-venom-2021-8-173",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/06/08/venom-9.jpg",
+      "id": "mv-venom-2021-9-174",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/06/wor-journey-2.jpg",
+      "id": "mv-war-of-realms-journey-into-mystery-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/20/wor-journey-3.jpg",
+      "id": "mv-war-of-realms-journey-into-mystery-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/02/wor-journey-4.jpg",
+      "id": "mv-war-of-realms-journey-into-mystery-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/15/wor-journey-5.jpg",
+      "id": "mv-war-of-realms-journey-into-mystery-5",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/20/wor-agents-atlas-2.jpg",
+      "id": "mv-war-of-realms-new-agents-of-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/02/wor-atlas-3.jpg",
+      "id": "mv-war-of-realms-new-agents-of-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/22/wor-new-agents-4.jpg",
+      "id": "mv-war-of-realms-new-agents-of-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/20/wor-xmen-2.jpg",
+      "id": "mv-war-of-realms-uncanny-x-men-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/22/wor-xmen-3.jpg",
+      "id": "mv-war-of-realms-uncanny-x-men-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/27/wor-war-scrolls-2.jpg",
+      "id": "mv-war-of-realms-war-scrolls-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/15/wor-scrolls-3.jpg",
+      "id": "mv-war-of-realms-war-scrolls-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/14/wor-2.jpg",
+      "id": "mv-warofrealms-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/28/wor-3.jpg",
+      "id": "mv-warofrealms-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/12/war-realms-4.jpg",
+      "id": "mv-warofrealms-4",
       "source": "metron"
     }
   ],
-  "errors": 0,
-  "filled": 38,
-  "filledCv": 0,
-  "filledMetron": 38,
+  "errors": 1,
+  "filled": 192,
+  "filledCv": 46,
+  "filledMetron": 146,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 168,
+  "metronDailyUsed": 566,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 42,
+  "misses": 52,
   "recentMissSkips": {
-    "metron": 213
+    "cv": 270,
+    "metron": 279
   },
   "requests": {
-    "cv": 0,
-    "metron": 168
+    "cv": 109,
+    "metron": 466
   },
-  "skipped": 0,
-  "source": "metron",
+  "skipped": 37,
+  "source": "both",
   "sourceMinutes": {
-    "metron": 18.23
+    "cv": 60.85,
+    "metron": 60.32
   },
-  "stoppedReason": "metron max-minutes 18 reached",
-  "updatedAt": "2026-10-28T17:57:27Z",
-  "yearBand": "2020-2025"
+  "stoppedReason": "cv max-minutes 60 reached; metron max-minutes 60 reached",
+  "updatedAt": "2026-10-27T17:58:47Z",
+  "yearBand": "2010-2019 singles"
 }
