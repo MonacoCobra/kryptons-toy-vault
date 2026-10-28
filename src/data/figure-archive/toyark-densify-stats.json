@@ -1,26 +1,26 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-10-14T18:00:22Z",
+  "finishedAt": "2026-10-28T18:00:31Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 5,
-  "applied": 3,
-  "skippedApply": 2,
-  "rejectedRows": 21,
-  "withImage": 3,
-  "aliasAdded": 9,
+  "acceptedCandidates": 1,
+  "applied": 1,
+  "skippedApply": 0,
+  "rejectedRows": 10,
+  "withImage": 1,
+  "aliasAdded": 4,
   "byCompany": {
     "hasbro": {
-      "accepted": 1,
+      "accepted": 0,
       "rejected": 0
     },
     "mcfarlane": {
-      "accepted": 1,
-      "rejected": 0
+      "accepted": 0,
+      "rejected": 4
     },
     "neca": {
-      "accepted": 1,
-      "rejected": 4
+      "accepted": 0,
+      "rejected": 0
     },
     "jazwares": {
       "accepted": 0,
@@ -28,14 +28,14 @@
     },
     "super7": {
       "accepted": 0,
-      "rejected": 0
+      "rejected": 1
     },
     "hottoys": {
       "accepted": 1,
       "rejected": 0
     },
     "mondo": {
-      "accepted": 1,
+      "accepted": 0,
       "rejected": 0
     },
     "threezero": {
@@ -60,86 +60,34 @@
     }
   },
   "byRejectReason": {
-    "company-not-allowlisted": 9,
-    "sponsor-newsletter": 1,
-    "already-in-oneshot": 3,
-    "news-event-post": 3,
+    "no-new-product-identity": 2,
     "company-unknown": 4,
-    "no-new-product-identity": 1
+    "company-not-allowlisted": 1,
+    "possible-reissue": 3
   },
   "appliedIds": [
-    "ta-b6957a9ccf14",
-    "ta-fb6caa693f86",
-    "ta-84dba502bc48"
+    "ta-46a7d4630d86"
   ],
   "appliedSample": [
     {
-      "id": "ta-b6957a9ccf14",
-      "name": "Beast",
+      "id": "ta-46a7d4630d86",
+      "name": "Sentinel",
       "company": "hottoys",
-      "line": "Hot Toys MMS",
+      "line": "Hot Toys",
       "year": 2027,
-      "variant": "Avengers: Doomsday",
+      "variant": "Avengers: Doomsday – Jumbo Sofvi",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Avengers-Doomsday-Beast-005.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Avengers-Doomsday-Sentinel-001.jpg",
       "aliases": [
-        "MMS920",
-        "MMS921"
+        "SMS004J"
       ],
-      "sourceUrl": "https://www.toyark.com/2026/10/14/avengers-doomsday-hot-toys-beast-figure-601382",
-      "toyarkPostId": 601382
-    },
-    {
-      "id": "ta-fb6caa693f86",
-      "name": "Spawn",
-      "company": "mcfarlane",
-      "line": "Spawn",
-      "year": 2027,
-      "variant": "Diablo Immortal Warlock Elite Edition",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/McFarlane-Toys-Spawn-Warlock-006.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/13/diablo-immortal-spawn-warlock-mcfarlane-elite-edition-601361",
-      "toyarkPostId": 601361
-    },
-    {
-      "id": "ta-84dba502bc48",
-      "name": "Bastion Nimrod",
-      "company": "hasbro",
-      "line": "Marvel Legends",
-      "year": 2027,
-      "variant": "X-Men ’97 Marvel Legends – Bolivar Trask and",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/X-Men-97-Marvel-Legends-Trask-and-Nimrod-Set-001.webp",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/07/x-men-97-marvel-legends-bolivar-trask-and-bastion-nimrod-600069",
-      "toyarkPostId": 600069
+      "sourceUrl": "https://www.toyark.com/2026/10/28/avengers-doomsday-hot-toys-sentinel-jumbo-sofvi-figure-601747",
+      "toyarkPostId": 601747
     }
   ],
-  "skippedSample": [
-    {
-      "name": "Mer-Man",
-      "company": "mondo",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-60b1a705f7b9"
-      ],
-      "toyarkPostId": 601144
-    },
-    {
-      "name": "Gonzo",
-      "company": "neca",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-3c4202933dac"
-      ],
-      "toyarkPostId": 601129
-    }
-  ],
-  "archiveSize": 30264,
+  "skippedSample": [],
+  "archiveSize": 30682,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"

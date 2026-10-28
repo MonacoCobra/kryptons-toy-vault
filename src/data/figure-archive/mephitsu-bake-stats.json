@@ -1,148 +1,11 @@
 {
-  "bakedAt": "2026-10-13T18:16:37.950063+00:00",
-  "dryRun": false,
+  "bakedAt": "2026-10-28T18:00:30.217373+00:00",
+  "dryRun": true,
   "lines": [
     {
-      "bakedAt": "2026-10-13T18:13:34.463485+00:00",
-      "line": "marvel-legends",
-      "dryRun": false,
-      "mephitsuCount": 1879,
-      "mephitsuWithGtin": 921,
-      "enrichStats": {
-        "listing": 0,
-        "fuzzy": 0,
-        "already": 921
-      },
-      "before": {
-        "total": 948,
-        "withSku": 665,
-        "withGtin": 429,
-        "withListingPrimary": 236,
-        "withImage": 734,
-        "emptySku": 283,
-        "emptyImage": 214
-      },
-      "after": {
-        "total": 948,
-        "withSku": 665,
-        "withGtin": 429,
-        "withListingPrimary": 236,
-        "withImage": 744,
-        "emptySku": 283,
-        "emptyImage": 204
-      },
-      "apply": {
-        "matched": 191,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
-        "imagesFilled": 10,
-        "imagesSkipped": 6,
-        "aliasesAttached": 0,
-        "skippedGtinConflict": 33,
-        "blockedByAudit": 1,
-        "reattachedAfterEnforce": 0,
-        "samples": [
-          {
-            "score": 52.0,
-            "figureId": "lv-hasbro-marvel-legends-deadpool-deadpool-legacy-collection-2024",
-            "name": "Deadpool Deadpool: Legacy Collection (2024)",
-            "mephitsu": "Deadpool",
-            "wave": "Deadpool Legacy",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 50.0,
-            "figureId": "lv-hasbro-marvel-legends-mary-jane-watson-iron-spider-spider-man-x-magic-the-gathering-2025",
-            "name": "Mary Jane Watson (Iron Spider) (2025)",
-            "mephitsu": "Mary Jane Watson Iron Spider",
-            "wave": "Spider-Man x Magic The Gathering",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 49.5,
-            "figureId": "mlc-sentinel-haslab",
-            "name": "Sentinel HasLab (2021)",
-            "mephitsu": "Sentinel",
-            "wave": "HasLab",
-            "sku": "5010994162788",
-            "image": true
-          },
-          {
-            "score": 49.5,
-            "figureId": "hs8-hs-02",
-            "name": "Green Goblin Retro (2020)",
-            "mephitsu": "Green Goblin",
-            "wave": "Retro 2020",
-            "sku": "5010993954513",
-            "image": true
-          },
-          {
-            "score": 49.5,
-            "figureId": "hs8-hs-01",
-            "name": "Spider-Man Retro (2020)",
-            "mephitsu": "Spider-Man",
-            "wave": "Retro 2020",
-            "sku": "5010993842582",
-            "image": true
-          },
-          {
-            "score": 47.5,
-            "figureId": "mlc-venom-classic",
-            "name": "Venom (2024)",
-            "mephitsu": "Venom",
-            "wave": "'Let there be Carnage' Deluxe, Target (US) / Fan Channel",
-            "sku": "5010996244284",
-            "image": true
-          },
-          {
-            "score": 47.0,
-            "figureId": "lv-hasbro-marvel-legends-wolverine-brown-suit-deadpool-wolverine-2026-2026",
-            "name": "Wolverine (Brown Suit) (2026)",
-            "mephitsu": "Wolverine (Brown Suit)",
-            "wave": "Deadpool & Wolverine Wave 2",
-            "sku": null,
-            "image": true
-          },
-          {
-            "score": 46.5,
-            "figureId": "lv-hasbro-marvel-legends-wolverine-marvel-85th-anniversary-2024",
-            "name": "Wolverine Marvel 85th Anniversary (2024)",
-            "mephitsu": "Astonishing Wolverine",
-            "wave": "Marvel 85th Anniversary",
-            "sku": null,
-            "image": true
-          }
-        ],
-        "photoVetoes": [
-          {
-            "figureId": "lv-hasbro-marvel-legends-wolverine-wolverine-50th-anniversary-2024",
-            "mephitsu": "Wolverine — Wolverine 50th Anniversary (Fan Channel) · 2024 · Comic",
-            "reason": "listing_gtin_owned_by:ml2-wolverine-aes"
-          },
-          {
-            "figureId": "d14ml-spiderbyte",
-            "mephitsu": "Spider-Punk — Across the Spiderverse Part 1 · 2023 · Marvel Movies & TV",
-            "reason": "listing_gtin_owned_by:mlc-spock"
-          },
-          {
-            "figureId": "ml3-ml-strange-surfer",
-            "mephitsu": "Doctor Strange — Rintrah BAF Wave · 2022 · Marvel Movies & TV",
-            "reason": "listing_code_owned_by:hs10-hs-03"
-          },
-          {
-            "figureId": "mlc-punisher-2099",
-            "mephitsu": "The Punisher — Fan Channel / Amazon · 2024 · Comic",
-            "reason": "listing_gtin_owned_by:d14ml-ml-retro-punisher"
-          }
-        ]
-      }
-    },
-    {
-      "bakedAt": "2026-10-13T18:14:01.502695+00:00",
+      "bakedAt": "2026-10-28T17:58:21.480333+00:00",
       "line": "black-series",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 1007,
       "mephitsuWithGtin": 490,
       "enrichStats": {
@@ -151,20 +14,20 @@
         "already": 490
       },
       "before": {
-        "total": 474,
-        "withSku": 402,
+        "total": 482,
+        "withSku": 410,
         "withGtin": 256,
-        "withListingPrimary": 146,
-        "withImage": 406,
+        "withListingPrimary": 154,
+        "withImage": 414,
         "emptySku": 72,
         "emptyImage": 68
       },
       "after": {
-        "total": 474,
-        "withSku": 402,
+        "total": 482,
+        "withSku": 410,
         "withGtin": 256,
-        "withListingPrimary": 146,
-        "withImage": 406,
+        "withListingPrimary": 154,
+        "withImage": 414,
         "emptySku": 72,
         "emptyImage": 68
       },
@@ -255,9 +118,9 @@
       }
     },
     {
-      "bakedAt": "2026-10-13T18:14:13.745412+00:00",
+      "bakedAt": "2026-10-28T17:58:30.262427+00:00",
       "line": "gi-joe-classified",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 318,
       "mephitsuWithGtin": 164,
       "enrichStats": {
@@ -266,20 +129,20 @@
         "already": 164
       },
       "before": {
-        "total": 437,
-        "withSku": 313,
+        "total": 441,
+        "withSku": 317,
         "withGtin": 153,
-        "withListingPrimary": 160,
-        "withImage": 385,
+        "withListingPrimary": 164,
+        "withImage": 389,
         "emptySku": 124,
         "emptyImage": 52
       },
       "after": {
-        "total": 437,
-        "withSku": 313,
+        "total": 441,
+        "withSku": 317,
         "withGtin": 153,
-        "withListingPrimary": 160,
-        "withImage": 385,
+        "withListingPrimary": 164,
+        "withImage": 389,
         "emptySku": 124,
         "emptyImage": 52
       },
@@ -370,9 +233,9 @@
       }
     },
     {
-      "bakedAt": "2026-10-13T18:14:19.700777+00:00",
+      "bakedAt": "2026-10-28T17:58:34.859205+00:00",
       "line": "transformers",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 280,
       "mephitsuWithGtin": 248,
       "enrichStats": {
@@ -381,21 +244,21 @@
         "already": 248
       },
       "before": {
-        "total": 801,
-        "withSku": 634,
-        "withGtin": 485,
-        "withListingPrimary": 149,
-        "withImage": 629,
-        "emptySku": 167,
+        "total": 845,
+        "withSku": 676,
+        "withGtin": 521,
+        "withListingPrimary": 155,
+        "withImage": 673,
+        "emptySku": 169,
         "emptyImage": 172
       },
       "after": {
-        "total": 801,
-        "withSku": 634,
-        "withGtin": 485,
-        "withListingPrimary": 149,
-        "withImage": 629,
-        "emptySku": 167,
+        "total": 845,
+        "withSku": 676,
+        "withGtin": 521,
+        "withListingPrimary": 155,
+        "withImage": 673,
+        "emptySku": 169,
         "emptyImage": 172
       },
       "apply": {
@@ -485,9 +348,9 @@
       }
     },
     {
-      "bakedAt": "2026-10-13T18:15:24.378419+00:00",
+      "bakedAt": "2026-10-28T17:59:32.668067+00:00",
       "line": "mcfarlane",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 2220,
       "mephitsuWithGtin": 969,
       "enrichStats": {
@@ -496,32 +359,32 @@
         "already": 969
       },
       "before": {
-        "total": 1450,
-        "withSku": 676,
-        "withGtin": 474,
-        "withListingPrimary": 202,
-        "withImage": 810,
-        "emptySku": 774,
-        "emptyImage": 640
+        "total": 1693,
+        "withSku": 811,
+        "withGtin": 574,
+        "withListingPrimary": 237,
+        "withImage": 836,
+        "emptySku": 882,
+        "emptyImage": 857
       },
       "after": {
-        "total": 1450,
-        "withSku": 676,
-        "withGtin": 474,
-        "withListingPrimary": 202,
-        "withImage": 830,
-        "emptySku": 774,
-        "emptyImage": 620
+        "total": 1693,
+        "withSku": 811,
+        "withGtin": 574,
+        "withListingPrimary": 237,
+        "withImage": 836,
+        "emptySku": 882,
+        "emptyImage": 857
       },
       "apply": {
-        "matched": 505,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
-        "imagesFilled": 20,
-        "imagesSkipped": 26,
+        "matched": 573,
+        "gtinAssigned": 9,
+        "gtinUpgraded": 1,
+        "imagesFilled": 77,
+        "imagesSkipped": 45,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 67,
-        "blockedByAudit": 26,
+        "skippedGtinConflict": 72,
+        "blockedByAudit": 34,
         "reattachedAfterEnforce": 0,
         "samples": [
           {
@@ -579,6 +442,15 @@
             "image": true
           },
           {
+            "score": 60.5,
+            "figureId": "mcf-dcdd-w26-batman-no-man-s-land-11319",
+            "name": "Batman (No Man's Land)",
+            "mephitsu": "Batman, No Man's Land",
+            "wave": "DC DIgital Edition",
+            "sku": "787926173864",
+            "image": false
+          },
+          {
             "score": 60.0,
             "figureId": "mcf-dcretro-w16-batman-7833",
             "name": "Batman",
@@ -586,15 +458,6 @@
             "wave": "The New Batman Adventures Wave 1",
             "sku": null,
             "image": false
-          },
-          {
-            "score": 58.0,
-            "figureId": "mf8-mf-40",
-            "name": "Martian Manhunter",
-            "mephitsu": "Martian Manhunter",
-            "wave": "Gold Label, Target (US)",
-            "sku": "787926152531",
-            "image": true
           }
         ],
         "photoVetoes": [
@@ -609,9 +472,19 @@
             "reason": "listing_gtin_owned_by:mcfdc-cyborg-dceu"
           },
           {
+            "figureId": "mcfdc-batman-arkham-city",
+            "mephitsu": "Batman — Arkham City BAF · 2022 · DC Multiverse",
+            "reason": "listing_code_audit_blocked:887961670486"
+          },
+          {
             "figureId": "mcf-dc-super-pow-batman-gold-edition-wave-6",
             "mephitsu": "Batman — Gold Label Walmart, Kelley Jones Autograph Edition · 2024 · DC Multiverse",
             "reason": "listing_gtin_owned_by:mcfc-batman-knightfall"
+          },
+          {
+            "figureId": "mcf-mp-w20-batman-and-beyond-5-pack-4090",
+            "mephitsu": "Batman Beyond (Comic) — Target (US) · 2022 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcf-pp-w17-batman-beyond-neo-year-6054"
           },
           {
             "figureId": "mcf-w8-gl-gold",
@@ -624,22 +497,92 @@
             "reason": "listing_gtin_owned_by:d14mcf-lex-tas"
           },
           {
+            "figureId": "mf10-mf-36",
+            "mephitsu": "Beast Boy — Gold Label SDCC 2025 · 2025 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:d14mcf-beastboy-titans"
+          },
+          {
             "figureId": "mcf-dcretro-w16-penguin-4013",
             "mephitsu": "Penguin — Target Batman Lunchbox 4-Pack · 2022 · DC Retro",
             "reason": "listing_code_audit_blocked:787926150483"
           },
           {
+            "figureId": "mcf-vault-w20-mr-freeze-dc-classic-14156",
+            "mephitsu": "Mr. Freeze — Vault Collection Wave 3 · 2026 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcfc-mrfreeze"
+          },
+          {
+            "figureId": "mcf-dte-w20-supergirl-krypto-gold-label-deluxe-theatrical-edition-superg-13411",
+            "mephitsu": "Supergirl and Krypto — Gold Label Walmart (US) Theatrical Edition · 2026 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcf4-multiverse-supergirl-ciri"
+          },
+          {
+            "figureId": "mcf-vault-w20-azrael-batman-armor-batman-knightfall-14155",
+            "mephitsu": "Azrael Batman — Vault Collection Wave 3 · 2026 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcfdc-batman-detective-1000"
+          },
+          {
+            "figureId": "mcf-vault-w20-captain-carrot-vault-collection-justice-league-incarnate-13946",
+            "mephitsu": "Captain Carrot — Vault Collection Wave 2 · 2026 · DC Multiverse",
+            "reason": "listing_code_audit_blocked:787926170146"
+          },
+          {
+            "figureId": "mcf-dcdd-w26-green-lantern-dc-the-silver-age-10376",
+            "mephitsu": "Green Lantern — Digital Collection · 2024 · DC Direct",
+            "reason": "listing_gtin_owned_by:mcfc-gl-animated"
+          },
+          {
+            "figureId": "mcf-dcdd-w26-two-face-the-silver-age-10506",
+            "mephitsu": "Two-Face — DC DIgital · 2025 · DC Direct",
+            "reason": "listing_gtin_owned_by:mf8-mf-44"
+          },
+          {
+            "figureId": "mcf-gl-w25-bizarro-gold-label-dc-classic-10621",
+            "mephitsu": "Bizarro — Gold Label Gamestop / Walmart · 2025 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcfdc-mega-bizarro"
+          },
+          {
+            "figureId": "mcf-ce-w29-superman-blue-vs-superman-red-dc-multiverse-14195",
+            "mephitsu": "Superman — Collector Edition Target · 2025 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:d14mcf-superman-ce41"
+          },
+          {
+            "figureId": "mcf-mp-w20-superman-vs-doomsday-gold-label-6863",
+            "mephitsu": "Superman 'New 52' — Gold Label Target · 2025 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcf6-mcf-superman-gold"
+          },
+          {
+            "figureId": "mcf6-mcf-batman-who",
+            "mephitsu": "The Batman Who Laughs — Gold Label GameStop / EB Games Page Punchers · 2026 · DC Multiverse",
+            "reason": "listing_code_audit_blocked:787926150674"
+          },
+          {
             "figureId": "mcf-mce-w19-the-penguin-dc-classic-ce-12-penguin",
             "mephitsu": "The Penguin 'Platinum Chase' — Platinum Edition Chase, Collector Edition · 2024 · DC Multiverse",
             "reason": "listing_gtin_owned_by:mcf4-multiverse-penguin"
+          },
+          {
+            "figureId": "mcf-gl-w25-lt-james-gordon-gold-label-batman-year-one-part-4-10619",
+            "mephitsu": "Batman 'Year One Part Four' — Gold Label Walmart · 2025 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcfdc-batman-yearone-mcf"
+          },
+          {
+            "figureId": "mcf-veh-qc1020-the-joker-joker-movie-limited-edition-deluxe-collector-set-9047",
+            "mephitsu": "Joker 'Platinum Edition' — Platinum Collector Edition · 2026 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcfdc-batman-collector-edition"
+          },
+          {
+            "figureId": "mcf-btas-w26-manbat-gold-label-12153",
+            "mephitsu": "Man-Bat — Gold Label Walmart · 2025 · DC Direct",
+            "reason": "listing_gtin_owned_by:mcf-veh-w24-batman-with-bat-glider-gold-label-the-thirteenth-hour-8905"
           }
         ]
       }
     },
     {
-      "bakedAt": "2026-10-13T18:16:03.848286+00:00",
+      "bakedAt": "2026-10-28T18:00:03.722406+00:00",
       "line": "neca",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 1502,
       "mephitsuWithGtin": 442,
       "enrichStats": {
@@ -648,21 +591,21 @@
         "already": 442
       },
       "before": {
-        "total": 945,
-        "withSku": 721,
+        "total": 947,
+        "withSku": 722,
         "withGtin": 332,
-        "withListingPrimary": 389,
-        "withImage": 761,
-        "emptySku": 224,
+        "withListingPrimary": 390,
+        "withImage": 763,
+        "emptySku": 225,
         "emptyImage": 184
       },
       "after": {
-        "total": 945,
-        "withSku": 721,
+        "total": 947,
+        "withSku": 722,
         "withGtin": 332,
-        "withListingPrimary": 389,
-        "withImage": 761,
-        "emptySku": 224,
+        "withListingPrimary": 390,
+        "withImage": 763,
+        "emptySku": 225,
         "emptyImage": 184
       },
       "apply": {
@@ -759,9 +702,9 @@
       }
     },
     {
-      "bakedAt": "2026-10-13T18:16:25.604128+00:00",
+      "bakedAt": "2026-10-28T18:00:21.170226+00:00",
       "line": "super7",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 520,
       "mephitsuWithGtin": 68,
       "enrichStats": {
@@ -770,25 +713,25 @@
         "already": 68
       },
       "before": {
-        "total": 2834,
-        "withSku": 2414,
+        "total": 2847,
+        "withSku": 2426,
         "withGtin": 130,
-        "withListingPrimary": 2284,
-        "withImage": 2553,
-        "emptySku": 420,
-        "emptyImage": 281
+        "withListingPrimary": 2296,
+        "withImage": 2563,
+        "emptySku": 421,
+        "emptyImage": 284
       },
       "after": {
-        "total": 2834,
-        "withSku": 2414,
+        "total": 2847,
+        "withSku": 2426,
         "withGtin": 130,
-        "withListingPrimary": 2284,
-        "withImage": 2553,
-        "emptySku": 420,
-        "emptyImage": 281
+        "withListingPrimary": 2296,
+        "withImage": 2563,
+        "emptySku": 421,
+        "emptyImage": 284
       },
       "apply": {
-        "matched": 118,
+        "matched": 117,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
         "imagesFilled": 0,
@@ -874,9 +817,9 @@
       }
     },
     {
-      "bakedAt": "2026-10-13T18:16:27.146787+00:00",
+      "bakedAt": "2026-10-28T18:00:22.206561+00:00",
       "line": "diamond-select",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 597,
       "mephitsuWithGtin": 2,
       "enrichStats": {
@@ -989,9 +932,9 @@
       }
     },
     {
-      "bakedAt": "2026-10-13T18:16:34.118588+00:00",
+      "bakedAt": "2026-10-28T18:00:27.436896+00:00",
       "line": "power-rangers",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 188,
       "mephitsuWithGtin": 89,
       "enrichStats": {
@@ -1104,9 +1047,9 @@
       }
     },
     {
-      "bakedAt": "2026-10-13T18:16:37.943961+00:00",
+      "bakedAt": "2026-10-28T18:00:30.212769+00:00",
       "line": "indiana-jones",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 28,
       "mephitsuWithGtin": 0,
       "enrichStats": {
