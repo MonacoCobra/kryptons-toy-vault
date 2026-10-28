@@ -1,0 +1,83 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-28",
+  "updatedAt": "2026-10-28T14:32:49Z",
+  "added": 9,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-10-28: direct curl got 403 on BBTS and EE. BBTS ProductType=1 New listing via WebFetch returned an empty LEGO page; used BBTS SearchText=action figure sorted New via WebFetch; product IDs resolved via web search + WebFetch of /product/x-<id> pages (og image). EE newly-added + action-figures newest read via WebFetch; EE item numbers verified via EE product pages.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 9,
+    "ee_candidates": 1,
+    "bbts_candidates": 8,
+    "added": 9,
+    "skipped_dupes": 0,
+    "rejected_non_af": 0,
+    "unmapped_company": 0,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 30672,
+  "oneshotAfter": 30681,
+  "ee_added": 1,
+  "bbts_added": 8,
+  "samples": [
+    {
+      "sku": "HSG2631",
+      "name": "Star Wars The Vintage Collection Padme Amidala (Geonosis) 3 3/4-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-padme-amidala-geonosis-3-3-4-inch-action-fig-hsg2631",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-200129",
+      "name": "Green Lantern Corps #47 Page Punchers Arisia 7\" Action Figure with Comic",
+      "id": "afmon-dcdirect-green-lantern-corps-47-page-punchers-arisia-7-action-figure-with-comic-bbts-200129",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200128",
+      "name": "Green Lantern Corps #47 Page Punchers Soranik Natu 7\" Action Figure with Comic",
+      "id": "afmon-dcdirect-green-lantern-corps-47-page-punchers-soranik-natu-7-action-figure-with-bbts-200128",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200127",
+      "name": "Batman: Gotham Adventures #31 Page Punchers The Joker 7\" Action Figure with Comic",
+      "id": "afmon-dcdirect-batman-gotham-adventures-31-page-punchers-the-joker-7-action-figure-wit-bbts-200127",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200126",
+      "name": "Batman: Gotham Adventures #31 Page Punchers Batman 7\" Action Figure with Comic",
+      "id": "afmon-dcdirect-batman-gotham-adventures-31-page-punchers-batman-7-action-figure-with-c-bbts-200126",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200421",
+      "name": "Return to Silent Hill Pyramid Head (Deluxe Ver.) 1/6 Scale Action Figure",
+      "id": "afmon-starace-return-to-silent-hill-pyramid-head-deluxe-ver-1-6-scale-action-figure-bbts-200421",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200786",
+      "name": "Acid Rain World: Project Blackbox PBB-AR015 Carver 1/18 Scale Action Figure",
+      "id": "afmon-acidrain-acid-rain-world-project-blackbox-pbb-ar015-carver-1-18-scale-action-fig-bbts-200786",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200785",
+      "name": "Acid Rain World: Project Blackbox PBB-AR014 Bee Wingman 1/18 Scale Action Figure",
+      "id": "afmon-acidrain-acid-rain-world-project-blackbox-pbb-ar014-bee-wingman-1-18-scale-actio-bbts-200785",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-199756",
+      "name": "World of Nintendo Wonder Bowser Jr. 2.5-Inch Scale Limited Articulation Figure",
+      "id": "afmon-jakks-world-of-nintendo-wonder-bowser-jr-2-5-inch-scale-limited-articulation-fig-bbts-199756",
+      "source": "bbts"
+    }
+  ],
+  "commit": null
+}
