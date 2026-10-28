@@ -1,0 +1,5966 @@
+{
+  "id": "batch-095-gcd-us-majors-indie-leftovers",
+  "title": "GCD US publisher leftovers (Dynamite/Aspen/Fleetway-Quality/Archie/Zenescope/Now)",
+  "created": "2026-10-28",
+  "status": "injected",
+  "focus": "Real GCD mains (USD price, catalog-deduped) from US publishers Dynamite, Aspen, Fleetway/Quality, Archie, Zenescope, Now, Disney; DC/Marvel/Image majors re-check yielded 0 non-dupes; Disney Adventures (magazine) stripped; later volumes relabeled with GCD start year where the catalog already used the bare title for a different volume.",
+  "source": "gcd-dump",
+  "addedCount": 309,
+  "byPublisher": {
+    "Dynamite Entertainment": 61,
+    "Aspen": 59,
+    "Fleetway/Quality": 53,
+    "Archie": 50,
+    "Zenescope Entertainment": 44,
+    "Now": 42
+  },
+  "rows": [
+    [
+      "arch-archie-halloween-spectacular-2024-1",
+      "Archie Halloween Spectacular (2024)",
+      "1",
+      "Archie",
+      "2024-11-01",
+      "",
+      "",
+      "Archie Halloween Spectacular #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281624724500111",
+        "streetDate": "2024-10-02",
+        "gcdIssueId": "2662652"
+      }
+    ],
+    [
+      "arch-sabrina-annual-spectacular-2024-1",
+      "Sabrina Annual Spectacular (2024)",
+      "1",
+      "Archie",
+      "2024-10-01",
+      "",
+      "",
+      "Sabrina Annual Spectacular #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281672624500111",
+        "streetDate": "2024-09-04",
+        "gcdIssueId": "2655615"
+      }
+    ],
+    [
+      "dyna-bettie-page-2023-4",
+      "Bettie Page (2023)",
+      "4",
+      "Dynamite Entertainment",
+      "2023-09-27",
+      "",
+      "",
+      "Bettie Page #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513033124304011",
+        "streetDate": "2023-09-27",
+        "gcdIssueId": "2570752"
+      }
+    ],
+    [
+      "arch-archie-valentine-s-spectacular-2023-1",
+      "Archie Valentine's Spectacular (2023)",
+      "1",
+      "Archie",
+      "2023-03-01",
+      "",
+      "",
+      "Archie Valentine's Spectacular #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281628723400111",
+        "streetDate": "2023-02-01",
+        "gcdIssueId": "2488933"
+      }
+    ],
+    [
+      "arch-archie-friends-2019-12",
+      "Archie & Friends (2019)",
+      "12",
+      "Archie",
+      "2022-01-01",
+      "",
+      "",
+      "Christmas Calamity",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281622336201211",
+        "streetDate": "2021-11-10",
+        "gcdIssueId": "2425183"
+      }
+    ],
+    [
+      "arch-archie-friends-2019-11",
+      "Archie & Friends (2019)",
+      "11",
+      "Archie",
+      "2021-09-01",
+      "",
+      "",
+      "Summer Vacation",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281622336201111",
+        "streetDate": "2021-07-28",
+        "gcdIssueId": "2425182"
+      }
+    ],
+    [
+      "arch-archie-friends-2019-9",
+      "Archie & Friends (2019)",
+      "9",
+      "Archie",
+      "2021-04-01",
+      "",
+      "",
+      "Guide to Dating",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281622336200911",
+        "streetDate": "2021-02-10",
+        "gcdIssueId": "2425180"
+      }
+    ],
+    [
+      "arch-archie-friends-2019-8",
+      "Archie & Friends (2019)",
+      "8",
+      "Archie",
+      "2020-12-01",
+      "",
+      "",
+      "Fall Festival",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281622336200811",
+        "streetDate": "2020-11-11",
+        "gcdIssueId": "2425179"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-42",
+      "Grimm Fairy Tales (2016)",
+      "42",
+      "Zenescope Entertainment",
+      "2020-11-04",
+      "",
+      "",
+      "Grimm Fairy Tales #42",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304904211",
+        "streetDate": "2020-11-04",
+        "gcdIssueId": "2161839"
+      }
+    ],
+    [
+      "arch-sabrina-the-teenage-witch-2020-3",
+      "Sabrina the Teenage Witch (2020)",
+      "3",
+      "Archie",
+      "2020-11-01",
+      "",
+      "",
+      "Sabrina the Teenage Witch #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281679892100311",
+        "streetDate": "2020-09-23",
+        "gcdIssueId": "2149607"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-41",
+      "Grimm Fairy Tales (2016)",
+      "41",
+      "Zenescope Entertainment",
+      "2020-10-07",
+      "",
+      "",
+      "Grimm Fairy Tales #41",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304904111",
+        "streetDate": "2020-10-07",
+        "gcdIssueId": "2161838"
+      }
+    ],
+    [
+      "arch-archie-friends-2019-7",
+      "Archie & Friends (2019)",
+      "7",
+      "Archie",
+      "2020-09-01",
+      "",
+      "",
+      "Endless Summer",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281622336200711",
+        "streetDate": "2020-08-12",
+        "gcdIssueId": "2425178"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-40",
+      "Grimm Fairy Tales (2016)",
+      "40",
+      "Zenescope Entertainment",
+      "2020-08-01",
+      "",
+      "",
+      "Grimm Fairy Tales #40",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304904011",
+        "gcdIssueId": "2161837"
+      }
+    ],
+    [
+      "arch-archie-friends-2019-6",
+      "Archie & Friends (2019)",
+      "6",
+      "Archie",
+      "2020-08-01",
+      "",
+      "",
+      "Geeks and Games",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281622336200611",
+        "streetDate": "2020-06-24",
+        "gcdIssueId": "2425177"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-39",
+      "Grimm Fairy Tales (2016)",
+      "39",
+      "Zenescope Entertainment",
+      "2020-07-01",
+      "",
+      "",
+      "Grimm Fairy Tales #39",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304903911",
+        "gcdIssueId": "2161836"
+      }
+    ],
+    [
+      "arch-archie-friends-2019-5",
+      "Archie & Friends (2019)",
+      "5",
+      "Archie",
+      "2020-03-01",
+      "",
+      "",
+      "Winter Wonderland",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281622336200511",
+        "streetDate": "2020-02-05",
+        "gcdIssueId": "2425176"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-36",
+      "Grimm Fairy Tales (2016)",
+      "36",
+      "Zenescope Entertainment",
+      "2020-02-26",
+      "",
+      "",
+      "Grimm Fairy Tales #36",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304903611",
+        "streetDate": "2020-02-26",
+        "gcdIssueId": "2086451"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-35",
+      "Grimm Fairy Tales (2016)",
+      "35",
+      "Zenescope Entertainment",
+      "2020-02-12",
+      "",
+      "",
+      "Grimm Fairy Tales #35",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304903511",
+        "streetDate": "2020-02-12",
+        "gcdIssueId": "2086450"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-34",
+      "Grimm Fairy Tales (2016)",
+      "34",
+      "Zenescope Entertainment",
+      "2020-01-01",
+      "",
+      "",
+      "Grimm Fairy Tales #34",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304903411",
+        "streetDate": "2020-01-01",
+        "gcdIssueId": "2086449"
+      }
+    ],
+    [
+      "arch-archie-friends-2019-4",
+      "Archie & Friends (2019)",
+      "4",
+      "Archie",
+      "2020-01-01",
+      "",
+      "",
+      "Travel",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281622336200411",
+        "streetDate": "2019-11-19",
+        "gcdIssueId": "2425175"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-33",
+      "Grimm Fairy Tales (2016)",
+      "33",
+      "Zenescope Entertainment",
+      "2019-12-18",
+      "",
+      "",
+      "Grimm Fairy Tales #33",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304903311",
+        "streetDate": "2019-12-18",
+        "gcdIssueId": "2086448"
+      }
+    ],
+    [
+      "arch-archie-halloween-spectacular-2019-nn",
+      "Archie Halloween Spectacular (2019)",
+      "[nn]",
+      "Archie",
+      "2019-12-01",
+      "",
+      "",
+      "Archie Halloween Spectacular #[nn]",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281624719100111",
+        "streetDate": "2019-10-02",
+        "gcdIssueId": "2021205"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-32",
+      "Grimm Fairy Tales (2016)",
+      "32",
+      "Zenescope Entertainment",
+      "2019-10-16",
+      "",
+      "",
+      "Grimm Fairy Tales #32",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304903211",
+        "streetDate": "2019-10-16",
+        "gcdIssueId": "2086447"
+      }
+    ],
+    [
+      "arch-archie-friends-2019-3",
+      "Archie & Friends (2019)",
+      "3",
+      "Archie",
+      "2019-10-01",
+      "",
+      "",
+      "Back to School",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281622336200311",
+        "streetDate": "2019-09-04",
+        "gcdIssueId": "2425174"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-31",
+      "Grimm Fairy Tales (2016)",
+      "31",
+      "Zenescope Entertainment",
+      "2019-09-25",
+      "",
+      "",
+      "Grimm Fairy Tales #31",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304903111",
+        "streetDate": "2019-09-25",
+        "gcdIssueId": "2086446"
+      }
+    ],
+    [
+      "arch-riverdale-2019-5",
+      "Riverdale (2019)",
+      "5",
+      "Archie",
+      "2019-09-01",
+      "",
+      "",
+      "Riverdale #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281673721000511",
+        "streetDate": "2019-07-31",
+        "gcdIssueId": "2004855"
+      }
+    ],
+    [
+      "arch-jughead-s-time-police-2019-2",
+      "Jughead's Time Police (2019)",
+      "2",
+      "Archie",
+      "2019-09-01",
+      "",
+      "",
+      "Jughead's Time Police #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281687633900231",
+        "streetDate": "2019-07-17",
+        "gcdIssueId": "1997540"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-30",
+      "Grimm Fairy Tales (2016)",
+      "30",
+      "Zenescope Entertainment",
+      "2019-08-07",
+      "",
+      "",
+      "Grimm Fairy Tales #30",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304903011",
+        "streetDate": "2019-08-07",
+        "gcdIssueId": "2086445"
+      }
+    ],
+    [
+      "arch-riverdale-2019-4",
+      "Riverdale (2019)",
+      "4",
+      "Archie",
+      "2019-08-01",
+      "",
+      "",
+      "Riverdale #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281673721000411",
+        "streetDate": "2019-06-26",
+        "gcdIssueId": "1980942"
+      }
+    ],
+    [
+      "arch-archie-friends-2019-2",
+      "Archie & Friends (2019)",
+      "2",
+      "Archie",
+      "2019-08-01",
+      "",
+      "",
+      "Beach Party",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281622336200211",
+        "streetDate": "2019-06-12",
+        "gcdIssueId": "2425173"
+      }
+    ],
+    [
+      "arch-riverdale-2019-3",
+      "Riverdale (2019)",
+      "3",
+      "Archie",
+      "2019-07-01",
+      "",
+      "",
+      "Riverdale #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281673721000311",
+        "streetDate": "2019-05-22",
+        "gcdIssueId": "1968223"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-29",
+      "Grimm Fairy Tales (2016)",
+      "29",
+      "Zenescope Entertainment",
+      "2019-06-26",
+      "",
+      "",
+      "Grimm Fairy Tales #29",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304902911",
+        "streetDate": "2019-06-26",
+        "gcdIssueId": "2086444"
+      }
+    ],
+    [
+      "arch-riverdale-2019-2",
+      "Riverdale (2019)",
+      "2",
+      "Archie",
+      "2019-06-01",
+      "",
+      "",
+      "Riverdale #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281673721000211",
+        "streetDate": "2019-04-24",
+        "gcdIssueId": "1953222"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-28",
+      "Grimm Fairy Tales (2016)",
+      "28",
+      "Zenescope Entertainment",
+      "2019-05-29",
+      "",
+      "",
+      "Grimm Fairy Tales #28",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304902811",
+        "streetDate": "2019-05-29",
+        "gcdIssueId": "2086443"
+      }
+    ],
+    [
+      "arch-riverdale-2019-1",
+      "Riverdale (2019)",
+      "1",
+      "Archie",
+      "2019-05-01",
+      "",
+      "",
+      "Riverdale #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281673721000111",
+        "streetDate": "2019-03-13",
+        "gcdIssueId": "1936328"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-27",
+      "Grimm Fairy Tales (2016)",
+      "27",
+      "Zenescope Entertainment",
+      "2019-04-24",
+      "",
+      "",
+      "Grimm Fairy Tales #27",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304902711",
+        "streetDate": "2019-04-24",
+        "gcdIssueId": "2086442"
+      }
+    ],
+    [
+      "arch-archie-friends-2019-1",
+      "Archie & Friends (2019)",
+      "1",
+      "Archie",
+      "2019-04-01",
+      "",
+      "",
+      "Music Jam",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281622336200111",
+        "streetDate": "2019-02-13",
+        "gcdIssueId": "2425172"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-26",
+      "Grimm Fairy Tales (2016)",
+      "26",
+      "Zenescope Entertainment",
+      "2019-03-27",
+      "",
+      "",
+      "Grimm Fairy Tales #26",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304902611",
+        "streetDate": "2019-03-27",
+        "gcdIssueId": "1941870"
+      }
+    ],
+    [
+      "arch-archie-christmas-spectacular-2019-1",
+      "Archie Christmas Spectacular (2019)",
+      "1",
+      "Archie",
+      "2019-02-01",
+      "",
+      "",
+      "Archie Christmas Spectacular #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281622718600111",
+        "streetDate": "2018-12-12",
+        "gcdIssueId": "1881660"
+      }
+    ],
+    [
+      "aspe-dellec-2018-4",
+      "Dellec (2018)",
+      "4",
+      "Aspen",
+      "2019-01-16",
+      "",
+      "",
+      "Dellec #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78672601449000411",
+        "streetDate": "2019-01-16",
+        "gcdIssueId": "2588579"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-25",
+      "Grimm Fairy Tales (2016)",
+      "25",
+      "Zenescope Entertainment",
+      "2019-01-09",
+      "",
+      "",
+      "Grimm Fairy Tales #25",
+      5.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304902511",
+        "streetDate": "2019-01-09",
+        "gcdIssueId": "1914101"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-24",
+      "Grimm Fairy Tales (2016)",
+      "24",
+      "Zenescope Entertainment",
+      "2018-12-05",
+      "",
+      "",
+      "Grimm Fairy Tales #24",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304902411",
+        "streetDate": "2018-12-05",
+        "gcdIssueId": "1914100"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-22",
+      "Grimm Fairy Tales (2016)",
+      "22",
+      "Zenescope Entertainment",
+      "2018-11-24",
+      "",
+      "",
+      "Grimm Fairy Tales #22",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304902211",
+        "streetDate": "2018-11-24",
+        "gcdIssueId": "1914098"
+      }
+    ],
+    [
+      "aspe-dellec-2018-3",
+      "Dellec (2018)",
+      "3",
+      "Aspen",
+      "2018-11-14",
+      "",
+      "",
+      "Dellec #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78672601449000311",
+        "streetDate": "2018-11-14",
+        "gcdIssueId": "2588578"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-23",
+      "Grimm Fairy Tales (2016)",
+      "23",
+      "Zenescope Entertainment",
+      "2018-11-07",
+      "",
+      "",
+      "Grimm Fairy Tales #23",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304902311",
+        "streetDate": "2018-11-07",
+        "gcdIssueId": "1914099"
+      }
+    ],
+    [
+      "aspe-dellec-2018-2",
+      "Dellec (2018)",
+      "2",
+      "Aspen",
+      "2018-10-17",
+      "",
+      "",
+      "Dellec #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78672601449000211",
+        "streetDate": "2018-10-17",
+        "gcdIssueId": "2588577"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-21",
+      "Grimm Fairy Tales (2016)",
+      "21",
+      "Zenescope Entertainment",
+      "2018-10-10",
+      "",
+      "",
+      "Grimm Fairy Tales #21",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304902111",
+        "streetDate": "2018-10-10",
+        "gcdIssueId": "1914097"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-20",
+      "Grimm Fairy Tales (2016)",
+      "20",
+      "Zenescope Entertainment",
+      "2018-09-26",
+      "",
+      "",
+      "Grimm Fairy Tales #20",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304902011",
+        "streetDate": "2018-09-26",
+        "gcdIssueId": "1914096"
+      }
+    ],
+    [
+      "aspe-dellec-2018-1",
+      "Dellec (2018)",
+      "1",
+      "Aspen",
+      "2018-09-12",
+      "",
+      "",
+      "Dellec #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78672601449000111",
+        "streetDate": "2018-09-12",
+        "gcdIssueId": "2588576"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-19",
+      "Grimm Fairy Tales (2016)",
+      "19",
+      "Zenescope Entertainment",
+      "2018-08-22",
+      "",
+      "",
+      "Grimm Fairy Tales #19",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304901911",
+        "streetDate": "2018-08-22",
+        "gcdIssueId": "1839632"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-18",
+      "Grimm Fairy Tales (2016)",
+      "18",
+      "Zenescope Entertainment",
+      "2018-07-18",
+      "",
+      "",
+      "Grimm Fairy Tales #18",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304901811",
+        "streetDate": "2018-07-18",
+        "gcdIssueId": "1839631"
+      }
+    ],
+    [
+      "aspe-jirni-2018-5",
+      "Jirni (2018)",
+      "5",
+      "Aspen",
+      "2018-07-11",
+      "",
+      "",
+      "Jirni #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78672601435300511",
+        "streetDate": "2018-07-11",
+        "gcdIssueId": "1824236"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-17",
+      "Grimm Fairy Tales (2016)",
+      "17",
+      "Zenescope Entertainment",
+      "2018-06-27",
+      "",
+      "",
+      "Grimm Fairy Tales #17",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304901711",
+        "streetDate": "2018-06-27",
+        "gcdIssueId": "1839630"
+      }
+    ],
+    [
+      "aspe-jirni-2018-4",
+      "Jirni (2018)",
+      "4",
+      "Aspen",
+      "2018-06-13",
+      "",
+      "",
+      "Jirni #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78672601435300411",
+        "streetDate": "2018-06-13",
+        "gcdIssueId": "1816519"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-16",
+      "Grimm Fairy Tales (2016)",
+      "16",
+      "Zenescope Entertainment",
+      "2018-06-13",
+      "",
+      "",
+      "Grimm Fairy Tales #16",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304901611",
+        "streetDate": "2018-06-13",
+        "gcdIssueId": "1839629"
+      }
+    ],
+    [
+      "aspe-jirni-2018-3",
+      "Jirni (2018)",
+      "3",
+      "Aspen",
+      "2018-05-16",
+      "",
+      "",
+      "Jirni #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2018-05-16",
+        "gcdIssueId": "1808640"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-15",
+      "Grimm Fairy Tales (2016)",
+      "15",
+      "Zenescope Entertainment",
+      "2018-05-16",
+      "",
+      "",
+      "Grimm Fairy Tales #15",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304901511",
+        "streetDate": "2018-05-16",
+        "gcdIssueId": "1839628"
+      }
+    ],
+    [
+      "aspe-portal-bound-2018-2",
+      "Portal Bound (2018)",
+      "2",
+      "Aspen",
+      "2018-05-02",
+      "",
+      "",
+      "Portal Bound #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2018-05-02",
+        "gcdIssueId": "1805547"
+      }
+    ],
+    [
+      "aspe-jirni-2018-2",
+      "Jirni (2018)",
+      "2",
+      "Aspen",
+      "2018-04-18",
+      "",
+      "",
+      "Jirni #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "78672601435300211",
+        "streetDate": "2018-04-18",
+        "gcdIssueId": "1800379"
+      }
+    ],
+    [
+      "aspe-portal-bound-2018-1",
+      "Portal Bound (2018)",
+      "1",
+      "Aspen",
+      "2018-04-04",
+      "",
+      "",
+      "Portal Bound #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2018-04-04",
+        "gcdIssueId": "1798411"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-14",
+      "Grimm Fairy Tales (2016)",
+      "14",
+      "Zenescope Entertainment",
+      "2018-04-04",
+      "",
+      "",
+      "Grimm Fairy Tales #14",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304901411",
+        "streetDate": "2018-04-04",
+        "gcdIssueId": "1839627"
+      }
+    ],
+    [
+      "aspe-jirni-2018-1",
+      "Jirni (2018)",
+      "1",
+      "Aspen",
+      "2018-03-21",
+      "",
+      "",
+      "Jirni #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2018-03-21",
+        "gcdIssueId": "1796119"
+      }
+    ],
+    [
+      "aspe-psycho-bonkers-2018-1",
+      "Psycho Bonkers (2018)",
+      "1",
+      "Aspen",
+      "2018-03-14",
+      "",
+      "",
+      "Psycho Bonkers #1",
+      9.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2018-03-14",
+        "gcdIssueId": "1791679"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-13",
+      "Grimm Fairy Tales (2016)",
+      "13",
+      "Zenescope Entertainment",
+      "2018-03-14",
+      "",
+      "",
+      "Grimm Fairy Tales #13",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304901311",
+        "streetDate": "2018-03-14",
+        "gcdIssueId": "1839626"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-12",
+      "Grimm Fairy Tales (2016)",
+      "12",
+      "Zenescope Entertainment",
+      "2018-02-28",
+      "",
+      "",
+      "Grimm Fairy Tales #12",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304901211",
+        "streetDate": "2018-02-28",
+        "gcdIssueId": "1839625"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-11",
+      "Grimm Fairy Tales (2016)",
+      "11",
+      "Zenescope Entertainment",
+      "2018-01-24",
+      "",
+      "",
+      "Grimm Fairy Tales #11",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304901111",
+        "streetDate": "2018-01-24",
+        "gcdIssueId": "1839624"
+      }
+    ],
+    [
+      "aspe-lola-xoxo-2017-6",
+      "Lola XOXO (2017)",
+      "6",
+      "Aspen",
+      "2018-01-10",
+      "",
+      "",
+      "Lola XOXO #6",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272788200611",
+        "streetDate": "2018-01-10",
+        "gcdIssueId": "1775445"
+      }
+    ],
+    [
+      "arch-the-mighty-crusaders-2018-1",
+      "The Mighty Crusaders (2018)",
+      "1",
+      "Archie",
+      "2018-01-01",
+      "",
+      "",
+      "The Mighty Crusaders #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281643762200111",
+        "streetDate": "2017-12-06",
+        "gcdIssueId": "1762576"
+      }
+    ],
+    [
+      "aspe-lola-xoxo-2017-5",
+      "Lola XOXO (2017)",
+      "5",
+      "Aspen",
+      "2017-11-29",
+      "",
+      "",
+      "Lola XOXO #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272788200511",
+        "streetDate": "2017-11-29",
+        "gcdIssueId": "1762344"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-10",
+      "Grimm Fairy Tales (2016)",
+      "10",
+      "Zenescope Entertainment",
+      "2017-11-15",
+      "",
+      "",
+      "Grimm Fairy Tales #10",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304901011",
+        "streetDate": "2017-11-15",
+        "gcdIssueId": "1759357"
+      }
+    ],
+    [
+      "aspe-lola-xoxo-2017-4",
+      "Lola XOXO (2017)",
+      "4",
+      "Aspen",
+      "2017-10-25",
+      "",
+      "",
+      "Lola XOXO #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272788200411",
+        "streetDate": "2017-10-25",
+        "gcdIssueId": "1745716"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-9",
+      "Grimm Fairy Tales (2016)",
+      "9",
+      "Zenescope Entertainment",
+      "2017-10-11",
+      "",
+      "",
+      "Grimm Fairy Tales #9",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304900911",
+        "streetDate": "2017-10-11",
+        "gcdIssueId": "1759356"
+      }
+    ],
+    [
+      "aspe-bubblegun-2017-5",
+      "Bubblegun",
+      "5",
+      "Aspen",
+      "2017-10-04",
+      "",
+      "",
+      "Bubblegun #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272797400511",
+        "streetDate": "2017-10-04",
+        "gcdIssueId": "1765347"
+      }
+    ],
+    [
+      "aspe-lola-xoxo-2017-3",
+      "Lola XOXO (2017)",
+      "3",
+      "Aspen",
+      "2017-09-13",
+      "",
+      "",
+      "Lola XOXO #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272788200311",
+        "streetDate": "2017-09-13",
+        "gcdIssueId": "1745715"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-8",
+      "Grimm Fairy Tales (2016)",
+      "8",
+      "Zenescope Entertainment",
+      "2017-08-30",
+      "",
+      "",
+      "Grimm Fairy Tales #8",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304900811",
+        "streetDate": "2017-08-30",
+        "gcdIssueId": "1759355"
+      }
+    ],
+    [
+      "aspe-bubblegun-2017-4",
+      "Bubblegun",
+      "4",
+      "Aspen",
+      "2017-08-23",
+      "",
+      "",
+      "Bubblegun #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272797400411",
+        "streetDate": "2017-08-23",
+        "gcdIssueId": "1736571"
+      }
+    ],
+    [
+      "aspe-lola-xoxo-2017-2",
+      "Lola XOXO (2017)",
+      "2",
+      "Aspen",
+      "2017-08-16",
+      "",
+      "",
+      "Lola XOXO #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272788200211",
+        "streetDate": "2017-08-16",
+        "gcdIssueId": "1745714"
+      }
+    ],
+    [
+      "arch-the-black-hood-2016-5",
+      "The Black Hood",
+      "5",
+      "Archie",
+      "2017-08-01",
+      "",
+      "",
+      "The Black Hood #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281646632500511",
+        "streetDate": "2017-06-14",
+        "gcdIssueId": "1714111"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-7",
+      "Grimm Fairy Tales (2016)",
+      "7",
+      "Zenescope Entertainment",
+      "2017-07-19",
+      "",
+      "",
+      "Grimm Fairy Tales #7",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304900711",
+        "streetDate": "2017-07-19",
+        "gcdIssueId": "1759354"
+      }
+    ],
+    [
+      "aspe-bubblegun-2017-3",
+      "Bubblegun",
+      "3",
+      "Aspen",
+      "2017-07-19",
+      "",
+      "",
+      "Bubblegun #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272797400311",
+        "streetDate": "2017-07-19",
+        "gcdIssueId": "1736570"
+      }
+    ],
+    [
+      "aspe-lola-xoxo-2017-1",
+      "Lola XOXO (2017)",
+      "1",
+      "Aspen",
+      "2017-07-12",
+      "",
+      "",
+      "Lola XOXO #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272788200111",
+        "streetDate": "2017-07-12",
+        "gcdIssueId": "1745713"
+      }
+    ],
+    [
+      "aspe-bubblegun-2017-2",
+      "Bubblegun",
+      "2",
+      "Aspen",
+      "2017-06-21",
+      "",
+      "",
+      "Bubblegun #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272797400211",
+        "streetDate": "2017-06-21",
+        "gcdIssueId": "1736569"
+      }
+    ],
+    [
+      "arch-the-black-hood-2016-4",
+      "The Black Hood",
+      "4",
+      "Archie",
+      "2017-06-01",
+      "",
+      "",
+      "The Black Hood #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281646632500411",
+        "streetDate": "2017-04-19",
+        "gcdIssueId": "1692622"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-6",
+      "Grimm Fairy Tales (2016)",
+      "6",
+      "Zenescope Entertainment",
+      "2017-05-31",
+      "",
+      "",
+      "Grimm Fairy Tales #6",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304900611",
+        "streetDate": "2017-05-31",
+        "gcdIssueId": "1759353"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-5",
+      "Grimm Fairy Tales (2016)",
+      "5",
+      "Zenescope Entertainment",
+      "2017-04-26",
+      "",
+      "",
+      "Grimm Fairy Tales #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304900511",
+        "streetDate": "2017-04-26",
+        "gcdIssueId": "1708977"
+      }
+    ],
+    [
+      "arch-the-black-hood-2016-3",
+      "The Black Hood",
+      "3",
+      "Archie",
+      "2017-04-01",
+      "",
+      "",
+      "The Black Hood #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281646632500311",
+        "streetDate": "2017-02-22",
+        "gcdIssueId": "1676474"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-4",
+      "Grimm Fairy Tales (2016)",
+      "4",
+      "Zenescope Entertainment",
+      "2017-03-22",
+      "",
+      "",
+      "Grimm Fairy Tales #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304900411",
+        "streetDate": "2017-03-22",
+        "gcdIssueId": "1708976"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-3",
+      "Grimm Fairy Tales (2016)",
+      "3",
+      "Zenescope Entertainment",
+      "2017-03-01",
+      "",
+      "",
+      "Grimm Fairy Tales #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304900311",
+        "streetDate": "2017-03-01",
+        "gcdIssueId": "1708975"
+      }
+    ],
+    [
+      "arch-the-black-hood-2016-2",
+      "The Black Hood",
+      "2",
+      "Archie",
+      "2017-02-01",
+      "",
+      "",
+      "The Black Hood #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281646632500211",
+        "streetDate": "2016-12-21",
+        "gcdIssueId": "1660676"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-2",
+      "Grimm Fairy Tales (2016)",
+      "2",
+      "Zenescope Entertainment",
+      "2017-01-25",
+      "",
+      "",
+      "Grimm Fairy Tales #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304900211",
+        "streetDate": "2017-01-25",
+        "gcdIssueId": "1670623"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-2016-1",
+      "Grimm Fairy Tales (2016)",
+      "1",
+      "Zenescope Entertainment",
+      "2016-12-28",
+      "",
+      "",
+      "Grimm Fairy Tales #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "65334102304900111",
+        "streetDate": "2016-12-28",
+        "gcdIssueId": "1663087"
+      }
+    ],
+    [
+      "arch-the-black-hood-2016-1",
+      "The Black Hood",
+      "1",
+      "Archie",
+      "2016-12-01",
+      "",
+      "",
+      "The Black Hood #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281646632500111",
+        "streetDate": "2016-10-18",
+        "gcdIssueId": "1639361"
+      }
+    ],
+    [
+      "dyna-the-shadow-2015-4",
+      "The Shadow (2015)",
+      "4",
+      "Dynamite Entertainment",
+      "2015-11-11",
+      "",
+      "",
+      "The Shadow #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513023732304011",
+        "streetDate": "2015-11-11",
+        "gcdIssueId": "1498250"
+      }
+    ],
+    [
+      "dyna-the-shadow-2015-3",
+      "The Shadow (2015)",
+      "3",
+      "Dynamite Entertainment",
+      "2015-10-14",
+      "",
+      "",
+      "The Shadow #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513023732303011",
+        "streetDate": "2015-10-14",
+        "gcdIssueId": "1476732"
+      }
+    ],
+    [
+      "arch-the-fox-2015-5",
+      "The Fox (2015)",
+      "5",
+      "Archie",
+      "2015-10-01",
+      "",
+      "",
+      "The Fox #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281632369700511",
+        "streetDate": "2015-08-05",
+        "gcdIssueId": "1445943"
+      }
+    ],
+    [
+      "dyna-the-shadow-2015-2",
+      "The Shadow (2015)",
+      "2",
+      "Dynamite Entertainment",
+      "2015-09-02",
+      "",
+      "",
+      "The Shadow #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513023732302011",
+        "streetDate": "2015-09-02",
+        "gcdIssueId": "1453672"
+      }
+    ],
+    [
+      "arch-the-fox-2015-4",
+      "The Fox (2015)",
+      "4",
+      "Archie",
+      "2015-09-01",
+      "",
+      "",
+      "The Fox #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281632369700411",
+        "streetDate": "2015-07-08",
+        "gcdIssueId": "1432881"
+      }
+    ],
+    [
+      "dyna-the-shadow-2015-1",
+      "The Shadow (2015)",
+      "1",
+      "Dynamite Entertainment",
+      "2015-08-05",
+      "",
+      "",
+      "The Shadow #1",
+      1.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513023732301011",
+        "streetDate": "2015-08-05",
+        "gcdIssueId": "1446511"
+      }
+    ],
+    [
+      "arch-the-fox-2015-3",
+      "The Fox (2015)",
+      "3",
+      "Archie",
+      "2015-08-01",
+      "",
+      "",
+      "The Fox #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281632369700331",
+        "streetDate": "2015-06-10",
+        "gcdIssueId": "1394839"
+      }
+    ],
+    [
+      "arch-the-fox-2015-2",
+      "The Fox (2015)",
+      "2",
+      "Archie",
+      "2015-07-01",
+      "",
+      "",
+      "The Fox #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281632369700211",
+        "streetDate": "2015-05-06",
+        "gcdIssueId": "1353024"
+      }
+    ],
+    [
+      "arch-the-fox-2015-1",
+      "The Fox (2015)",
+      "1",
+      "Archie",
+      "2015-06-01",
+      "",
+      "",
+      "The Fox #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281632369700111",
+        "streetDate": "2015-04-15",
+        "gcdIssueId": "1340011"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-kiani-2015-4",
+      "Michael Turner's Fathom: Kiani (2015)",
+      "4",
+      "Aspen",
+      "2015-05-20",
+      "",
+      "",
+      "Michael Turner's Fathom: Kiani #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272755400411",
+        "streetDate": "2015-05-20",
+        "gcdIssueId": "1358544"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-kiani-2015-3",
+      "Michael Turner's Fathom: Kiani (2015)",
+      "3",
+      "Aspen",
+      "2015-04-22",
+      "",
+      "",
+      "Michael Turner's Fathom: Kiani #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272755400311",
+        "streetDate": "2015-04-22",
+        "gcdIssueId": "1342404"
+      }
+    ],
+    [
+      "dyna-evil-ernie-2014-6",
+      "Evil Ernie (2014)",
+      "6",
+      "Dynamite Entertainment",
+      "2015-04-08",
+      "",
+      "",
+      "Evil Ernie #6",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513022184106011",
+        "streetDate": "2015-04-08",
+        "gcdIssueId": "1339511"
+      }
+    ],
+    [
+      "dyna-evil-ernie-2014-5",
+      "Evil Ernie (2014)",
+      "5",
+      "Dynamite Entertainment",
+      "2015-03-25",
+      "",
+      "",
+      "Evil Ernie #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513022184105011",
+        "streetDate": "2015-03-25",
+        "gcdIssueId": "1334637"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-kiani-2015-2",
+      "Michael Turner's Fathom: Kiani (2015)",
+      "2",
+      "Aspen",
+      "2015-03-18",
+      "",
+      "",
+      "Michael Turner's Fathom: Kiani #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272755400211",
+        "streetDate": "2015-03-18",
+        "gcdIssueId": "1331133"
+      }
+    ],
+    [
+      "dyna-army-of-darkness-2014-5",
+      "Army of Darkness (2014)",
+      "5",
+      "Dynamite Entertainment",
+      "2015-03-01",
+      "",
+      "",
+      "Army of Darkness #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513022439205011",
+        "streetDate": "2015-04-01",
+        "gcdIssueId": "1336101"
+      }
+    ],
+    [
+      "dyna-evil-ernie-2014-4",
+      "Evil Ernie (2014)",
+      "4",
+      "Dynamite Entertainment",
+      "2015-02-18",
+      "",
+      "",
+      "Evil Ernie #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513022184104011",
+        "streetDate": "2015-02-18",
+        "gcdIssueId": "1326371"
+      }
+    ],
+    [
+      "dyna-jim-butcher-s-the-dresden-files-down-tow-2015-1",
+      "Jim Butcher's The Dresden Files: Down Town",
+      "1",
+      "Dynamite Entertainment",
+      "2015-02-11",
+      "",
+      "",
+      "Jim Butcher's The Dresden Files: Down Town #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513022696901011",
+        "streetDate": "2015-02-11",
+        "gcdIssueId": "1322269"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-kiani-2015-1",
+      "Michael Turner's Fathom: Kiani (2015)",
+      "1",
+      "Aspen",
+      "2015-02-01",
+      "",
+      "",
+      "Michael Turner's Fathom: Kiani #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272755400121",
+        "gcdIssueId": "1331132"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-presents-robyn-hood-2014-5-g1297911",
+      "Grimm Fairy Tales Presents Robyn Hood (2014)",
+      "5",
+      "Zenescope Entertainment",
+      "2014-12-01",
+      "",
+      "",
+      "Grimm Fairy Tales Presents Robyn Hood #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "74825243652800511",
+        "streetDate": "2014-12-24",
+        "gcdIssueId": "1297911"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-presents-robyn-hood-2014-4-g1284581",
+      "Grimm Fairy Tales Presents Robyn Hood (2014)",
+      "4",
+      "Zenescope Entertainment",
+      "2014-11-01",
+      "",
+      "",
+      "Grimm Fairy Tales Presents Robyn Hood #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "74825243652800411",
+        "streetDate": "2014-11-26",
+        "gcdIssueId": "1284581"
+      }
+    ],
+    [
+      "dyna-evil-ernie-2014-2",
+      "Evil Ernie (2014)",
+      "2",
+      "Dynamite Entertainment",
+      "2014-11-01",
+      "",
+      "",
+      "Evil Ernie #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513022184102011",
+        "streetDate": "2014-11-19",
+        "gcdIssueId": "1281099"
+      }
+    ],
+    [
+      "dyna-purgatori-2014-2",
+      "Purgatori",
+      "2",
+      "Dynamite Entertainment",
+      "2014-10-29",
+      "",
+      "",
+      "Purgatori #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513022047902011",
+        "streetDate": "2014-10-29",
+        "gcdIssueId": "1267462"
+      }
+    ],
+    [
+      "dyna-purgatori-2014-1",
+      "Purgatori",
+      "1",
+      "Dynamite Entertainment",
+      "2014-09-01",
+      "",
+      "",
+      "Purgatori #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513022047901011",
+        "streetDate": "2014-09-17",
+        "gcdIssueId": "1253209"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-presents-robyn-hood-2014-2-g1256235",
+      "Grimm Fairy Tales Presents Robyn Hood (2014)",
+      "2",
+      "Zenescope Entertainment",
+      "2014-09-01",
+      "",
+      "",
+      "Grimm Fairy Tales Presents Robyn Hood #2",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "74825243652800211",
+        "streetDate": "2014-09-24",
+        "gcdIssueId": "1256235"
+      }
+    ],
+    [
+      "dyna-ex-con-2014-1",
+      "Ex-Con",
+      "1",
+      "Dynamite Entertainment",
+      "2014-09-01",
+      "",
+      "",
+      "Ex-Con #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513022044801011",
+        "streetDate": "2014-09-03",
+        "gcdIssueId": "1250724"
+      }
+    ],
+    [
+      "zene-grimm-fairy-tales-presents-robyn-hood-2014-1-g1247529",
+      "Grimm Fairy Tales Presents Robyn Hood (2014)",
+      "1",
+      "Zenescope Entertainment",
+      "2014-08-01",
+      "",
+      "",
+      "Grimm Fairy Tales Presents Robyn Hood #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "74825243652800111",
+        "streetDate": "2014-08-20",
+        "gcdIssueId": "1247529"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-25",
+      "Lone Ranger (2012)",
+      "25",
+      "Dynamite Entertainment",
+      "2014-06-01",
+      "",
+      "",
+      "Lone Ranger #25",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606502511",
+        "streetDate": "2014-06-18",
+        "gcdIssueId": "1213425"
+      }
+    ],
+    [
+      "dyna-the-green-hornet-2013-13",
+      "Green Hornet (2013)",
+      "13",
+      "Dynamite Entertainment",
+      "2014-06-01",
+      "",
+      "",
+      "Green Hornet #13",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513020289513011",
+        "streetDate": "2014-06-25",
+        "gcdIssueId": "1216211"
+      }
+    ],
+    [
+      "dyna-the-green-hornet-2013-12",
+      "Green Hornet (2013)",
+      "12",
+      "Dynamite Entertainment",
+      "2014-05-01",
+      "",
+      "",
+      "Green Hornet #12",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513020289512011",
+        "streetDate": "2014-05-21",
+        "gcdIssueId": "1207292"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-23",
+      "Lone Ranger (2012)",
+      "23",
+      "Dynamite Entertainment",
+      "2014-04-01",
+      "",
+      "",
+      "Lone Ranger #23",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606502311",
+        "streetDate": "2014-04-09",
+        "gcdIssueId": "1196975"
+      }
+    ],
+    [
+      "dyna-the-green-hornet-2013-11",
+      "Green Hornet (2013)",
+      "11",
+      "Dynamite Entertainment",
+      "2014-04-01",
+      "",
+      "",
+      "Green Hornet #11",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513020289511011",
+        "streetDate": "2014-04-02",
+        "gcdIssueId": "1194744"
+      }
+    ],
+    [
+      "dyna-the-green-hornet-2013-10",
+      "Green Hornet (2013)",
+      "10",
+      "Dynamite Entertainment",
+      "2014-03-01",
+      "",
+      "",
+      "Green Hornet #10",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513020289510011",
+        "streetDate": "2014-03-05",
+        "gcdIssueId": "1185869"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-22",
+      "Lone Ranger (2012)",
+      "22",
+      "Dynamite Entertainment",
+      "2014-02-01",
+      "",
+      "",
+      "Lone Ranger #22",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606502211",
+        "streetDate": "2014-02-26",
+        "gcdIssueId": "1182860"
+      }
+    ],
+    [
+      "dyna-the-green-hornet-2013-9",
+      "Green Hornet (2013)",
+      "9",
+      "Dynamite Entertainment",
+      "2014-02-01",
+      "",
+      "",
+      "Green Hornet #9",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513020289508011",
+        "streetDate": "2014-02-05",
+        "gcdIssueId": "1177628"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-21",
+      "Lone Ranger (2012)",
+      "21",
+      "Dynamite Entertainment",
+      "2014-01-01",
+      "",
+      "",
+      "Lone Ranger #21",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606502111",
+        "streetDate": "2014-01-22",
+        "gcdIssueId": "1174404"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-20",
+      "Lone Ranger (2012)",
+      "20",
+      "Dynamite Entertainment",
+      "2013-12-01",
+      "",
+      "",
+      "Lone Ranger #20",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606502011",
+        "streetDate": "2013-12-04",
+        "gcdIssueId": "1165630"
+      }
+    ],
+    [
+      "dyna-the-green-hornet-2013-8",
+      "Green Hornet (2013)",
+      "8",
+      "Dynamite Entertainment",
+      "2013-12-01",
+      "",
+      "",
+      "Green Hornet #8",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513020289508011",
+        "streetDate": "2013-12-18",
+        "gcdIssueId": "1170916"
+      }
+    ],
+    [
+      "dyna-the-green-hornet-2013-7",
+      "Green Hornet (2013)",
+      "7",
+      "Dynamite Entertainment",
+      "2013-11-06",
+      "",
+      "",
+      "Green Hornet #7",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513020289507011",
+        "streetDate": "2013-11-06",
+        "gcdIssueId": "1156763"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-19",
+      "Lone Ranger (2012)",
+      "19",
+      "Dynamite Entertainment",
+      "2013-11-01",
+      "",
+      "",
+      "Lone Ranger #19",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606501911",
+        "streetDate": "2013-11-06",
+        "gcdIssueId": "1156774"
+      }
+    ],
+    [
+      "aspe-charismagic-2013-6",
+      "Charismagic (2013)",
+      "6",
+      "Aspen",
+      "2013-11-01",
+      "",
+      "",
+      "Charismagic #6",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272732506011",
+        "streetDate": "2013-11-06",
+        "gcdIssueId": "1156891"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-18",
+      "Lone Ranger (2012)",
+      "18",
+      "Dynamite Entertainment",
+      "2013-09-01",
+      "",
+      "",
+      "Lone Ranger #18",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606501811",
+        "streetDate": "2013-09-18",
+        "gcdIssueId": "1141761"
+      }
+    ],
+    [
+      "aspe-charismagic-2013-5",
+      "Charismagic (2013)",
+      "5",
+      "Aspen",
+      "2013-09-01",
+      "",
+      "",
+      "Charismagic #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272732505011",
+        "streetDate": "2013-09-04",
+        "gcdIssueId": "1140409"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-17",
+      "Lone Ranger (2012)",
+      "17",
+      "Dynamite Entertainment",
+      "2013-08-01",
+      "",
+      "",
+      "Lone Ranger #17",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606501711",
+        "streetDate": "2013-08-21",
+        "gcdIssueId": "1137610"
+      }
+    ],
+    [
+      "aspe-charismagic-2013-4",
+      "Charismagic (2013)",
+      "4",
+      "Aspen",
+      "2013-08-01",
+      "",
+      "",
+      "Charismagic #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272732504011",
+        "streetDate": "2013-08-07",
+        "gcdIssueId": "1133396"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-16",
+      "Lone Ranger (2012)",
+      "16",
+      "Dynamite Entertainment",
+      "2013-07-01",
+      "",
+      "",
+      "Lone Ranger #16",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606501611",
+        "streetDate": "2013-07-10",
+        "gcdIssueId": "1127376"
+      }
+    ],
+    [
+      "aspe-charismagic-2013-3",
+      "Charismagic (2013)",
+      "3",
+      "Aspen",
+      "2013-07-01",
+      "",
+      "",
+      "Charismagic #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272732503011",
+        "streetDate": "2013-07-03",
+        "gcdIssueId": "1124979"
+      }
+    ],
+    [
+      "aspe-charismagic-2013-2",
+      "Charismagic (2013)",
+      "2",
+      "Aspen",
+      "2013-06-05",
+      "",
+      "",
+      "Charismagic #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272732502011",
+        "streetDate": "2013-06-05",
+        "gcdIssueId": "1119149"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-15",
+      "Lone Ranger (2012)",
+      "15",
+      "Dynamite Entertainment",
+      "2013-06-01",
+      "",
+      "",
+      "Lone Ranger #15",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606501511",
+        "streetDate": "2013-06-05",
+        "gcdIssueId": "1119063"
+      }
+    ],
+    [
+      "dyna-battlefields-2012-6",
+      "Battlefields (2012)",
+      "6",
+      "Dynamite Entertainment",
+      "2013-05-08",
+      "",
+      "",
+      "Battlefields #6",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513019769600611",
+        "streetDate": "2013-05-08",
+        "gcdIssueId": "1243749"
+      }
+    ],
+    [
+      "aspe-charismagic-2013-1",
+      "Charismagic (2013)",
+      "1",
+      "Aspen",
+      "2013-05-01",
+      "",
+      "",
+      "Charismagic #1",
+      1.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272732501011",
+        "streetDate": "2013-05-01",
+        "gcdIssueId": "1108181"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-14",
+      "Lone Ranger (2012)",
+      "14",
+      "Dynamite Entertainment",
+      "2013-04-01",
+      "",
+      "",
+      "Lone Ranger #14",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606501411",
+        "streetDate": "2013-04-03",
+        "gcdIssueId": "1098861"
+      }
+    ],
+    [
+      "dyna-battlefields-2012-5",
+      "Battlefields (2012)",
+      "5",
+      "Dynamite Entertainment",
+      "2013-03-27",
+      "",
+      "",
+      "Battlefields #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513019769600511",
+        "streetDate": "2013-03-27",
+        "gcdIssueId": "1243748"
+      }
+    ],
+    [
+      "dyna-red-team-2013-2",
+      "Red Team",
+      "2",
+      "Dynamite Entertainment",
+      "2013-03-01",
+      "",
+      "",
+      "Red Team #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513020222200211",
+        "streetDate": "2013-03-27",
+        "gcdIssueId": "1096723"
+      }
+    ],
+    [
+      "dyna-battlefields-2012-4",
+      "Battlefields (2012)",
+      "4",
+      "Dynamite Entertainment",
+      "2013-02-13",
+      "",
+      "",
+      "Battlefields #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513019769600411",
+        "streetDate": "2013-02-13",
+        "gcdIssueId": "1243747"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-13",
+      "Lone Ranger (2012)",
+      "13",
+      "Dynamite Entertainment",
+      "2013-02-01",
+      "",
+      "",
+      "Lone Ranger #13",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606501311",
+        "streetDate": "2013-02-27",
+        "gcdIssueId": "1087089"
+      }
+    ],
+    [
+      "dyna-battlefields-2012-3",
+      "Battlefields (2012)",
+      "3",
+      "Dynamite Entertainment",
+      "2013-01-23",
+      "",
+      "",
+      "Battlefields #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513019769600311",
+        "streetDate": "2013-01-23",
+        "gcdIssueId": "1116730"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-12",
+      "Lone Ranger (2012)",
+      "12",
+      "Dynamite Entertainment",
+      "2013-01-01",
+      "",
+      "",
+      "Lone Ranger #12",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606501211",
+        "streetDate": "2013-01-23",
+        "gcdIssueId": "1052519"
+      }
+    ],
+    [
+      "dyna-battlefields-2012-2",
+      "Battlefields (2012)",
+      "2",
+      "Dynamite Entertainment",
+      "2012-12-12",
+      "",
+      "",
+      "Battlefields #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513019769600211",
+        "streetDate": "2012-12-12",
+        "gcdIssueId": "1116729"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-11",
+      "Lone Ranger (2012)",
+      "11",
+      "Dynamite Entertainment",
+      "2012-12-01",
+      "",
+      "",
+      "Lone Ranger #11",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606501111",
+        "streetDate": "2012-12-05",
+        "gcdIssueId": "1037116"
+      }
+    ],
+    [
+      "dyna-battlefields-2012-1",
+      "Battlefields (2012)",
+      "1",
+      "Dynamite Entertainment",
+      "2012-11-07",
+      "",
+      "",
+      "Battlefields #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513019769600111",
+        "streetDate": "2012-11-07",
+        "gcdIssueId": "1116728"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-10",
+      "Lone Ranger (2012)",
+      "10",
+      "Dynamite Entertainment",
+      "2012-10-01",
+      "",
+      "",
+      "Lone Ranger #10",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606501011",
+        "streetDate": "2012-10-03",
+        "gcdIssueId": "1012936"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-9",
+      "Lone Ranger (2012)",
+      "9",
+      "Dynamite Entertainment",
+      "2012-09-01",
+      "",
+      "",
+      "Lone Ranger #9",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606500911",
+        "streetDate": "2012-09-05",
+        "gcdIssueId": "997990"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-8",
+      "Lone Ranger (2012)",
+      "8",
+      "Dynamite Entertainment",
+      "2012-08-01",
+      "",
+      "",
+      "Lone Ranger #8",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606500811",
+        "streetDate": "2012-08-01",
+        "gcdIssueId": "977412"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-7",
+      "Lone Ranger (2012)",
+      "7",
+      "Dynamite Entertainment",
+      "2012-07-01",
+      "",
+      "",
+      "Lone Ranger #7",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606500711",
+        "streetDate": "2012-07-04",
+        "gcdIssueId": "956047"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-6",
+      "Lone Ranger (2012)",
+      "6",
+      "Dynamite Entertainment",
+      "2012-06-01",
+      "",
+      "",
+      "Lone Ranger #6",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606500611",
+        "streetDate": "2012-06-06",
+        "gcdIssueId": "951424"
+      }
+    ],
+    [
+      "dyna-army-of-darkness-2012-4",
+      "Army of Darkness (2012)",
+      "4",
+      "Dynamite Entertainment",
+      "2012-05-01",
+      "",
+      "",
+      "Army of Darkness #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018676800411",
+        "streetDate": "2012-05-16",
+        "gcdIssueId": "944779"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-4",
+      "Lone Ranger (2012)",
+      "4",
+      "Dynamite Entertainment",
+      "2012-04-04",
+      "",
+      "",
+      "Lone Ranger #4",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606500411",
+        "streetDate": "2012-04-04",
+        "gcdIssueId": "934819"
+      }
+    ],
+    [
+      "dyna-the-lone-ranger-2012-3",
+      "Lone Ranger (2012)",
+      "3",
+      "Dynamite Entertainment",
+      "2012-03-01",
+      "",
+      "",
+      "Lone Ranger #3",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513018606500311",
+        "streetDate": "2012-03-07",
+        "gcdIssueId": "927361"
+      }
+    ],
+    [
+      "aspe-executive-assistant-iris-2011-5",
+      "Executive Assistant: Iris (2011)",
+      "5",
+      "Aspen",
+      "2011-12-01",
+      "",
+      "",
+      "Executive Assistant: Iris #5",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2011-11-23",
+        "gcdIssueId": "898469"
+      }
+    ],
+    [
+      "aspe-executive-assistant-iris-2011-4",
+      "Executive Assistant: Iris (2011)",
+      "4",
+      "Aspen",
+      "2011-11-01",
+      "",
+      "",
+      "Executive Assistant: Iris #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272699100411",
+        "streetDate": "2011-10-05",
+        "gcdIssueId": "883825"
+      }
+    ],
+    [
+      "aspe-executive-assistant-iris-2011-3",
+      "Executive Assistant: Iris (2011)",
+      "3",
+      "Aspen",
+      "2011-10-01",
+      "",
+      "",
+      "Executive Assistant: Iris #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2011-09-07",
+        "gcdIssueId": "874775"
+      }
+    ],
+    [
+      "aspe-executive-assistant-iris-2011-2",
+      "Executive Assistant: Iris (2011)",
+      "2",
+      "Aspen",
+      "2011-09-01",
+      "",
+      "",
+      "Executive Assistant: Iris #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2011-08-10",
+        "gcdIssueId": "868039"
+      }
+    ],
+    [
+      "aspe-executive-assistant-iris-2011-1-g853052",
+      "Executive Assistant: Iris (2011)",
+      "1",
+      "Aspen",
+      "2011-08-01",
+      "",
+      "",
+      "Executive Assistant: Iris #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "75318272699100121",
+        "streetDate": "2011-07-06",
+        "gcdIssueId": "853052"
+      }
+    ],
+    [
+      "aspe-executive-assistant-iris-2011-0",
+      "Executive Assistant: Iris (2011)",
+      "0",
+      "Aspen",
+      "2011-06-15",
+      "",
+      "",
+      "Executive Assistant: Iris #0",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2011-06-15",
+        "gcdIssueId": "847836"
+      }
+    ],
+    [
+      "dyna-jim-butcher-s-the-dresden-files-fool-moo-2011-2",
+      "Jim Butcher's The Dresden Files: Fool Moon",
+      "2",
+      "Dynamite Entertainment",
+      "2011-06-01",
+      "",
+      "",
+      "Jim Butcher's The Dresden Files: Fool Moon #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "725130155016",
+        "gcdIssueId": "852187"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-soulfire-2009-9",
+      "Michael Turner's Soulfire (2009)",
+      "9",
+      "Aspen",
+      "2011-01-01",
+      "",
+      "",
+      "Michael Turner's Soulfire #9",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "795638"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-soulfire-2009-8",
+      "Michael Turner's Soulfire (2009)",
+      "8",
+      "Aspen",
+      "2010-11-01",
+      "",
+      "",
+      "Michael Turner's Soulfire #8",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "753182726793",
+        "gcdIssueId": "781220"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-soulfire-2009-7",
+      "Michael Turner's Soulfire (2009)",
+      "7",
+      "Aspen",
+      "2010-08-01",
+      "",
+      "",
+      "Michael Turner's Soulfire #7",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "753182726656",
+        "gcdIssueId": "771516"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-soulfire-2009-6",
+      "Michael Turner's Soulfire (2009)",
+      "6",
+      "Aspen",
+      "2010-07-01",
+      "",
+      "",
+      "Michael Turner's Soulfire #6",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "765433"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-soulfire-2009-5",
+      "Michael Turner's Soulfire (2009)",
+      "5",
+      "Aspen",
+      "2010-06-01",
+      "",
+      "",
+      "Michael Turner's Soulfire #5",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "718122842070",
+        "gcdIssueId": "757376"
+      }
+    ],
+    [
+      "dyna-stargate-vala-mal-doran-2010-1",
+      "Stargate: Vala Mal Doran",
+      "1",
+      "Dynamite Entertainment",
+      "2010-05-01",
+      "",
+      "",
+      "Stargate: Vala Mal Doran #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "725130144041",
+        "gcdIssueId": "771635"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-soulfire-2009-4",
+      "Michael Turner's Soulfire (2009)",
+      "4",
+      "Aspen",
+      "2010-05-01",
+      "",
+      "",
+      "Michael Turner's Soulfire #4",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747767"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-soulfire-2009-3",
+      "Michael Turner's Soulfire (2009)",
+      "3",
+      "Aspen",
+      "2010-04-01",
+      "",
+      "",
+      "Michael Turner's Soulfire #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "718122841677",
+        "gcdIssueId": "747766"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-soulfire-2009-2",
+      "Michael Turner's Soulfire (2009)",
+      "2",
+      "Aspen",
+      "2010-02-01",
+      "",
+      "",
+      "Michael Turner's Soulfire #2",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "718122840779",
+        "gcdIssueId": "728271"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-2008-10",
+      "Michael Turner's Fathom (2008)",
+      "10",
+      "Aspen",
+      "2010-02-01",
+      "",
+      "",
+      "Michael Turner's Fathom #10",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "732978"
+      }
+    ],
+    [
+      "dyna-kato-2010-2",
+      "Kato",
+      "2",
+      "Dynamite Entertainment",
+      "2010-01-02",
+      "",
+      "",
+      "Kato #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "763360"
+      }
+    ],
+    [
+      "dyna-patricia-briggs-mercy-thompson-moon-call-2010-2",
+      "Patricia Briggs' Mercy Thompson: Moon Called",
+      "2",
+      "Dynamite Entertainment",
+      "2010-01-01",
+      "",
+      "",
+      "Patricia Briggs' Mercy Thompson: Moon Called #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "725130153074",
+        "streetDate": "2010-11-03",
+        "gcdIssueId": "793604"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-soulfire-2009-1",
+      "Michael Turner's Soulfire (2009)",
+      "1",
+      "Aspen",
+      "2009-11-01",
+      "",
+      "",
+      "Michael Turner's Soulfire #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "718122840373",
+        "gcdIssueId": "728270"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-2008-9",
+      "Michael Turner's Fathom (2008)",
+      "9",
+      "Aspen",
+      "2009-11-01",
+      "",
+      "",
+      "Michael Turner's Fathom #9",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "690632"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-soulfire-2009-0",
+      "Michael Turner's Soulfire (2009)",
+      "0",
+      "Aspen",
+      "2009-10-01",
+      "",
+      "",
+      "Michael Turner's Soulfire #0",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "718122839971",
+        "gcdIssueId": "676742"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-2008-8",
+      "Michael Turner's Fathom (2008)",
+      "8",
+      "Aspen",
+      "2009-08-01",
+      "",
+      "",
+      "Michael Turner's Fathom #8",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "718122836574",
+        "gcdIssueId": "667685"
+      }
+    ],
+    [
+      "dyna-sherlock-holmes-2009-3",
+      "Sherlock Holmes",
+      "3",
+      "Dynamite Entertainment",
+      "2009-07-01",
+      "",
+      "",
+      "Sherlock Holmes #3",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "725130122650",
+        "gcdIssueId": "656033"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-2008-7",
+      "Michael Turner's Fathom (2008)",
+      "7",
+      "Aspen",
+      "2009-06-01",
+      "",
+      "",
+      "Michael Turner's Fathom #7",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "718122835775",
+        "streetDate": "2009-05-28",
+        "gcdIssueId": "667684"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-2008-6",
+      "Michael Turner's Fathom (2008)",
+      "6",
+      "Aspen",
+      "2009-03-01",
+      "",
+      "",
+      "Michael Turner's Fathom #6",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "718122833672",
+        "gcdIssueId": "667683"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-2008-5",
+      "Michael Turner's Fathom (2008)",
+      "5",
+      "Aspen",
+      "2009-02-01",
+      "",
+      "",
+      "Michael Turner's Fathom #5",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "564210"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-2008-4",
+      "Michael Turner's Fathom (2008)",
+      "4",
+      "Aspen",
+      "2009-01-01",
+      "",
+      "",
+      "Michael Turner's Fathom #4",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "564209"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-2008-3",
+      "Michael Turner's Fathom (2008)",
+      "3",
+      "Aspen",
+      "2008-11-01",
+      "",
+      "",
+      "Michael Turner's Fathom #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "546350"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-2008-2",
+      "Michael Turner's Fathom (2008)",
+      "2",
+      "Aspen",
+      "2008-10-01",
+      "",
+      "",
+      "Michael Turner's Fathom #2",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "718122113613",
+        "gcdIssueId": "546349"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-2008-1",
+      "Michael Turner's Fathom (2008)",
+      "1",
+      "Aspen",
+      "2008-09-01",
+      "",
+      "",
+      "Michael Turner's Fathom #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "718122113019",
+        "gcdIssueId": "546348"
+      }
+    ],
+    [
+      "aspe-michael-turner-s-fathom-2008-0",
+      "Michael Turner's Fathom (2008)",
+      "0",
+      "Aspen",
+      "2008-06-01",
+      "",
+      "",
+      "Michael Turner's Fathom #0",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "718122111411",
+        "gcdIssueId": "745489"
+      }
+    ],
+    [
+      "dyna-xena-2006-4",
+      "Xena",
+      "4",
+      "Dynamite Entertainment",
+      "2006-11-01",
+      "",
+      "",
+      "Xena #4",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "725130055385",
+        "gcdIssueId": "375067"
+      }
+    ],
+    [
+      "dyna-painkiller-jane-2006-3",
+      "Painkiller Jane (2006)",
+      "3",
+      "Dynamite Entertainment",
+      "2006-08-23",
+      "",
+      "",
+      "Painkiller Jane #3",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "725130046031",
+        "streetDate": "2006-08-23",
+        "gcdIssueId": "534357"
+      }
+    ],
+    [
+      "dyna-xena-2006-2",
+      "Xena",
+      "2",
+      "Dynamite Entertainment",
+      "2006-08-10",
+      "",
+      "",
+      "Xena #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "725130052070",
+        "gcdIssueId": "375065"
+      }
+    ],
+    [
+      "dyna-xena-2006-1",
+      "Xena",
+      "1",
+      "Dynamite Entertainment",
+      "2006-07-01",
+      "",
+      "",
+      "Xena #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "725130049773",
+        "gcdIssueId": "375064"
+      }
+    ],
+    [
+      "dyna-painkiller-jane-2006-2",
+      "Painkiller Jane (2006)",
+      "2",
+      "Dynamite Entertainment",
+      "2006-06-01",
+      "",
+      "",
+      "Painkiller Jane #2",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "725130044501",
+        "streetDate": "2006-05-31",
+        "gcdIssueId": "534356"
+      }
+    ],
+    [
+      "dyna-painkiller-jane-2006-1",
+      "Painkiller Jane (2006)",
+      "1",
+      "Dynamite Entertainment",
+      "2006-03-15",
+      "",
+      "",
+      "Painkiller Jane #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "725130043238",
+        "streetDate": "2006-03-15",
+        "gcdIssueId": "534355"
+      }
+    ],
+    [
+      "arch-sabrina-the-teenage-witch-1996-1",
+      "Sabrina the Teenage Witch (1996)",
+      "1",
+      "Archie",
+      "1996-09-18",
+      "",
+      "",
+      "Sabrina the Teenage Witch #1",
+      1.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281647040700111",
+        "streetDate": "1996-09-18",
+        "gcdIssueId": "315032"
+      }
+    ],
+    [
+      "arch-street-sharks-1996-3",
+      "Street Sharks (1996)",
+      "3",
+      "Archie",
+      "1996-08-01",
+      "",
+      "",
+      "Street Sharks #3",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281647020900311",
+        "streetDate": "1996-05-22",
+        "gcdIssueId": "276329"
+      }
+    ],
+    [
+      "arch-street-sharks-1996-2",
+      "Street Sharks (1996)",
+      "2",
+      "Archie",
+      "1996-07-01",
+      "",
+      "",
+      "Street Sharks #2",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281647020900211",
+        "streetDate": "1996-04-10",
+        "gcdIssueId": "276328"
+      }
+    ],
+    [
+      "arch-street-sharks-1996-1",
+      "Street Sharks (1996)",
+      "1",
+      "Archie",
+      "1996-05-01",
+      "",
+      "",
+      "Street Sharks #1",
+      1.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281647020900111",
+        "streetDate": "1996-03-07",
+        "gcdIssueId": "276327"
+      }
+    ],
+    [
+      "arch-cheryl-blossom-1995-3",
+      "Cheryl Blossom",
+      "3",
+      "Archie",
+      "1995-11-01",
+      "",
+      "",
+      "Cheryl Blossom #3",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281647038400311",
+        "streetDate": "1995-08-17",
+        "gcdIssueId": "238233"
+      }
+    ],
+    [
+      "arch-cheryl-blossom-1995-2",
+      "Cheryl Blossom",
+      "2",
+      "Archie",
+      "1995-10-01",
+      "",
+      "",
+      "Cheryl Blossom #2",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281647038400211",
+        "streetDate": "1995-07-20",
+        "gcdIssueId": "238232"
+      }
+    ],
+    [
+      "arch-cheryl-blossom-1995-1",
+      "Cheryl Blossom",
+      "1",
+      "Archie",
+      "1995-09-01",
+      "",
+      "",
+      "Cheryl Blossom #1",
+      1.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "76281647038400111",
+        "streetDate": "1995-06-22",
+        "gcdIssueId": "238231"
+      }
+    ],
+    [
+      "flee-night-walker-1993-3",
+      "Night Walker",
+      "3",
+      "Fleetway/Quality",
+      "1993-10-01",
+      "",
+      "",
+      "Night Walker #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727157"
+      }
+    ],
+    [
+      "flee-night-walker-1993-2",
+      "Night Walker",
+      "2",
+      "Fleetway/Quality",
+      "1993-09-01",
+      "",
+      "",
+      "Night Walker #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727156"
+      }
+    ],
+    [
+      "flee-night-walker-1993-1",
+      "Night Walker",
+      "1",
+      "Fleetway/Quality",
+      "1993-08-01",
+      "",
+      "",
+      "Night Walker #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727155"
+      }
+    ],
+    [
+      "flee-dead-meat-1993-2",
+      "Dead Meat",
+      "2",
+      "Fleetway/Quality",
+      "1993-08-01",
+      "",
+      "",
+      "Dead Meat #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727006"
+      }
+    ],
+    [
+      "arch-the-wild-west-c-o-w-boys-of-moo-mesa-1993-3",
+      "The Wild West C.O.W.-Boys of Moo Mesa (1993)",
+      "3",
+      "Archie",
+      "1993-07-01",
+      "",
+      "",
+      "The Wild West C.O.W.-Boys of Moo Mesa #3",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1993-04-27",
+        "gcdIssueId": "276412"
+      }
+    ],
+    [
+      "flee-dead-meat-1993-1",
+      "Dead Meat",
+      "1",
+      "Fleetway/Quality",
+      "1993-07-01",
+      "",
+      "",
+      "Dead Meat #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727005"
+      }
+    ],
+    [
+      "arch-the-wild-west-c-o-w-boys-of-moo-mesa-1993-2",
+      "The Wild West C.O.W.-Boys of Moo Mesa (1993)",
+      "2",
+      "Archie",
+      "1993-05-01",
+      "",
+      "",
+      "The Wild West C.O.W.-Boys of Moo Mesa #2",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1993-02-16",
+        "gcdIssueId": "276411"
+      }
+    ],
+    [
+      "flee-chopper-earth-wind-fire-1993-2",
+      "Chopper: Earth, Wind & Fire",
+      "2",
+      "Fleetway/Quality",
+      "1993-05-01",
+      "",
+      "",
+      "Chopper: Earth, Wind & Fire #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727004"
+      }
+    ],
+    [
+      "flee-armitage-1993-2",
+      "Armitage",
+      "2",
+      "Fleetway/Quality",
+      "1993-05-01",
+      "",
+      "",
+      "Armitage #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "726994"
+      }
+    ],
+    [
+      "flee-time-killers-1992-7",
+      "Time Killers",
+      "7",
+      "Fleetway/Quality",
+      "1993-04-01",
+      "",
+      "",
+      "Time Killers #7",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "726986"
+      }
+    ],
+    [
+      "flee-the-hunt-for-black-widow-1993-1",
+      "The Hunt for Black Widow",
+      "1",
+      "Fleetway/Quality",
+      "1993-04-01",
+      "",
+      "",
+      "The Hunt for Black Widow #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727034"
+      }
+    ],
+    [
+      "flee-chopper-earth-wind-fire-1993-1",
+      "Chopper: Earth, Wind & Fire",
+      "1",
+      "Fleetway/Quality",
+      "1993-04-01",
+      "",
+      "",
+      "Chopper: Earth, Wind & Fire #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727003"
+      }
+    ],
+    [
+      "flee-red-razors-1993-3",
+      "Red Razors (1993)",
+      "3",
+      "Fleetway/Quality",
+      "1993-03-12",
+      "",
+      "",
+      "Red Razors #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1993-03-12",
+        "gcdIssueId": "727010"
+      }
+    ],
+    [
+      "flee-time-killers-1992-6",
+      "Time Killers",
+      "6",
+      "Fleetway/Quality",
+      "1993-03-01",
+      "",
+      "",
+      "Time Killers #6",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "726985"
+      }
+    ],
+    [
+      "arch-the-wild-west-c-o-w-boys-of-moo-mesa-1993-1",
+      "The Wild West C.O.W.-Boys of Moo Mesa (1993)",
+      "1",
+      "Archie",
+      "1993-03-01",
+      "",
+      "",
+      "The Wild West C.O.W.-Boys of Moo Mesa #1",
+      1.25,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1993-01-12",
+        "gcdIssueId": "276410"
+      }
+    ],
+    [
+      "flee-judge-dredd-america-1993-2",
+      "Judge Dredd: America (1993)",
+      "2",
+      "Fleetway/Quality",
+      "1993-03-01",
+      "",
+      "",
+      "Judge Dredd: America #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "726988"
+      }
+    ],
+    [
+      "flee-red-razors-1993-2",
+      "Red Razors (1993)",
+      "2",
+      "Fleetway/Quality",
+      "1993-02-12",
+      "",
+      "",
+      "Red Razors #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1993-02-12",
+        "gcdIssueId": "727009"
+      }
+    ],
+    [
+      "flee-judge-dredd-america-1993-1",
+      "Judge Dredd: America (1993)",
+      "1",
+      "Fleetway/Quality",
+      "1993-02-01",
+      "",
+      "",
+      "Judge Dredd: America #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "726987"
+      }
+    ],
+    [
+      "flee-2000-a-d-showcase-1992-10",
+      "2000 A. D. Showcase",
+      "10",
+      "Fleetway/Quality",
+      "1993-02-01",
+      "",
+      "",
+      "2000 A. D. Showcase #10",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "977096521100102",
+        "gcdIssueId": "726975"
+      }
+    ],
+    [
+      "flee-red-razors-1993-1",
+      "Red Razors (1993)",
+      "1",
+      "Fleetway/Quality",
+      "1993-01-08",
+      "",
+      "",
+      "Red Razors #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1993-01-08",
+        "gcdIssueId": "727008"
+      }
+    ],
+    [
+      "flee-zenith-phase-ii-1993-2",
+      "Zenith Phase II",
+      "2",
+      "Fleetway/Quality",
+      "1993-01-01",
+      "",
+      "",
+      "Zenith Phase II #2",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "359545"
+      }
+    ],
+    [
+      "flee-zenith-phase-i-1992-2",
+      "Zenith Phase I",
+      "2",
+      "Fleetway/Quality",
+      "1993-01-01",
+      "",
+      "",
+      "Zenith Phase I #2",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "359548"
+      }
+    ],
+    [
+      "flee-zenith-phase-i-1992-3",
+      "Zenith Phase I",
+      "3",
+      "Fleetway/Quality",
+      "1993-01-01",
+      "",
+      "",
+      "Zenith Phase I #3",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "359549"
+      }
+    ],
+    [
+      "flee-wireheads-1993-1",
+      "Wireheads",
+      "1",
+      "Fleetway/Quality",
+      "1993-01-01",
+      "",
+      "",
+      "Wireheads #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727158"
+      }
+    ],
+    [
+      "flee-wireheads-1993-2",
+      "Wireheads",
+      "2",
+      "Fleetway/Quality",
+      "1993-01-01",
+      "",
+      "",
+      "Wireheads #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727159"
+      }
+    ],
+    [
+      "flee-raptaur-1993-1",
+      "Raptaur",
+      "1",
+      "Fleetway/Quality",
+      "1993-01-01",
+      "",
+      "",
+      "Raptaur #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727019"
+      }
+    ],
+    [
+      "flee-psi-judge-anderson-psi-files-1993-1",
+      "Psi-Judge Anderson: Psi-Files",
+      "1",
+      "Fleetway/Quality",
+      "1993-01-01",
+      "",
+      "",
+      "Psi-Judge Anderson: Psi-Files #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727033"
+      }
+    ],
+    [
+      "flee-psi-judge-anderson-engrams-1993-1",
+      "Psi-Judge Anderson: Engrams",
+      "1",
+      "Fleetway/Quality",
+      "1993-01-01",
+      "",
+      "",
+      "Psi-Judge Anderson: Engrams #1",
+      1.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727030"
+      }
+    ],
+    [
+      "flee-dredd-by-bisley-1993-nn",
+      "Dredd by Bisley",
+      "[nn]",
+      "Fleetway/Quality",
+      "1993-01-01",
+      "",
+      "",
+      "Dredd by Bisley #[nn]",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727035"
+      }
+    ],
+    [
+      "flee-time-killers-1992-2",
+      "Time Killers",
+      "2",
+      "Fleetway/Quality",
+      "1992-11-01",
+      "",
+      "",
+      "Time Killers #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "726981"
+      }
+    ],
+    [
+      "now--tales-of-the-green-hornet-1992-3",
+      "Tales of the Green Hornet (1992)",
+      "3",
+      "Now",
+      "1992-11-01",
+      "",
+      "",
+      "Tales of the Green Hornet #3",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "219625"
+      }
+    ],
+    [
+      "now--tales-of-the-green-hornet-1992-2",
+      "Tales of the Green Hornet (1992)",
+      "2",
+      "Now",
+      "1992-10-01",
+      "",
+      "",
+      "Tales of the Green Hornet #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "219624"
+      }
+    ],
+    [
+      "now--universal-soldier-1992-1",
+      "Universal Soldier",
+      "1",
+      "Now",
+      "1992-09-01",
+      "",
+      "",
+      "Universal Soldier #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "704994"
+      }
+    ],
+    [
+      "now--tales-of-the-green-hornet-1992-1",
+      "Tales of the Green Hornet (1992)",
+      "1",
+      "Now",
+      "1992-09-01",
+      "",
+      "",
+      "Tales of the Green Hornet #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "219623"
+      }
+    ],
+    [
+      "now--freejack-1992-2",
+      "Freejack",
+      "2",
+      "Now",
+      "1992-06-01",
+      "",
+      "",
+      "Freejack #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2460303"
+      }
+    ],
+    [
+      "now--married-with-children-1991-7",
+      "Married... with Children (1991)",
+      "7",
+      "Now",
+      "1992-04-01",
+      "",
+      "",
+      "Married... with Children #7",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "273110"
+      }
+    ],
+    [
+      "now--married-with-children-1991-6",
+      "Married... with Children (1991)",
+      "6",
+      "Now",
+      "1992-03-01",
+      "",
+      "",
+      "Married... with Children #6",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "273109"
+      }
+    ],
+    [
+      "now--the-twilight-zone-1991-4",
+      "The Twilight Zone",
+      "4",
+      "Now",
+      "1992-02-10",
+      "",
+      "",
+      "The Twilight Zone #4",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "333771"
+      }
+    ],
+    [
+      "flee-zenith-phase-i-1992-1",
+      "Zenith Phase I",
+      "1",
+      "Fleetway/Quality",
+      "1992-01-01",
+      "",
+      "",
+      "Zenith Phase I #1",
+      1.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "359547"
+      }
+    ],
+    [
+      "flee-young-death-1992-1",
+      "Young Death",
+      "1",
+      "Fleetway/Quality",
+      "1992-01-01",
+      "",
+      "",
+      "Young Death #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "977096521000411",
+        "gcdIssueId": "726977"
+      }
+    ],
+    [
+      "flee-young-death-1992-2",
+      "Young Death",
+      "2",
+      "Fleetway/Quality",
+      "1992-01-01",
+      "",
+      "",
+      "Young Death #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "977096521000412",
+        "gcdIssueId": "726978"
+      }
+    ],
+    [
+      "flee-young-death-1992-3",
+      "Young Death",
+      "3",
+      "Fleetway/Quality",
+      "1992-01-01",
+      "",
+      "",
+      "Young Death #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "977096521000401",
+        "gcdIssueId": "726979"
+      }
+    ],
+    [
+      "now--married-with-children-1991-5",
+      "Married... with Children (1991)",
+      "5",
+      "Now",
+      "1992-01-01",
+      "",
+      "",
+      "Married... with Children #5",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "273108"
+      }
+    ],
+    [
+      "flee-brit-cit-babes-1993-nn",
+      "Brit-Cit Babes (1993)",
+      "[nn]",
+      "Fleetway/Quality",
+      "1992-01-01",
+      "",
+      "",
+      "Brit-Cit Babes #[nn]",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727036"
+      }
+    ],
+    [
+      "now--the-twilight-zone-1991-2",
+      "The Twilight Zone",
+      "2",
+      "Now",
+      "1991-12-01",
+      "",
+      "",
+      "The Twilight Zone #2",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07098933187712",
+        "gcdIssueId": "333769"
+      }
+    ],
+    [
+      "now--married-with-children-1991-4",
+      "Married... with Children (1991)",
+      "4",
+      "Now",
+      "1991-12-01",
+      "",
+      "",
+      "Married... with Children #4",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "273107"
+      }
+    ],
+    [
+      "now--the-twilight-zone-1991-1",
+      "The Twilight Zone",
+      "1",
+      "Now",
+      "1991-11-01",
+      "",
+      "",
+      "The Twilight Zone #1",
+      1.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "333768"
+      }
+    ],
+    [
+      "now--married-with-children-1991-3",
+      "Married... with Children (1991)",
+      "3",
+      "Now",
+      "1991-11-01",
+      "",
+      "",
+      "Married... with Children #3",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "273106"
+      }
+    ],
+    [
+      "now--married-with-children-1991-2",
+      "Married... with Children (1991)",
+      "2",
+      "Now",
+      "1991-10-01",
+      "",
+      "",
+      "Married... with Children #2",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "273105"
+      }
+    ],
+    [
+      "now--married-with-children-1991-1",
+      "Married... with Children (1991)",
+      "1",
+      "Now",
+      "1991-09-01",
+      "",
+      "",
+      "Married... with Children #1",
+      1.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "273104"
+      }
+    ],
+    [
+      "arch-mighty-mutanimals-1991-3",
+      "Mighty Mutanimals",
+      "3",
+      "Archie",
+      "1991-07-01",
+      "",
+      "",
+      "Mighty Mutanimals #3",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07189646972107",
+        "gcdIssueId": "359640"
+      }
+    ],
+    [
+      "arch-mighty-mutanimals-1991-2",
+      "Mighty Mutanimals",
+      "2",
+      "Archie",
+      "1991-06-01",
+      "",
+      "",
+      "Mighty Mutanimals #2",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1991-02-19",
+        "gcdIssueId": "359639"
+      }
+    ],
+    [
+      "arch-mighty-mutanimals-1991-1",
+      "Mighty Mutanimals",
+      "1",
+      "Archie",
+      "1991-05-01",
+      "",
+      "",
+      "Mighty Mutanimals #1",
+      1.25,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1991-01-15",
+        "gcdIssueId": "359638"
+      }
+    ],
+    [
+      "flee-judge-dredd-the-megazine-1991-2",
+      "Judge Dredd The Megazine",
+      "2",
+      "Fleetway/Quality",
+      "1991-02-01",
+      "",
+      "",
+      "Judge Dredd The Megazine #2",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "264074"
+      }
+    ],
+    [
+      "flee-turbo-jones-pathfinder-1991-nn",
+      "Turbo Jones: Pathfinder",
+      "[nn]",
+      "Fleetway/Quality",
+      "1991-01-01",
+      "",
+      "",
+      "Turbo Jones: Pathfinder #[nn]",
+      9.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727162"
+      }
+    ],
+    [
+      "flee-the-vc-s-1991-1",
+      "The VC's",
+      "1",
+      "Fleetway/Quality",
+      "1991-01-01",
+      "",
+      "",
+      "The VC's #1",
+      1.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "977096070800105",
+        "gcdIssueId": "726923"
+      }
+    ],
+    [
+      "flee-judge-dredd-emerald-isle-1991-nn",
+      "Judge Dredd: Emerald Isle (1991)",
+      "[nn]",
+      "Fleetway/Quality",
+      "1991-01-01",
+      "",
+      "",
+      "Judge Dredd: Emerald Isle #[nn]",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "50581"
+      }
+    ],
+    [
+      "flee-judge-dredd-the-megazine-1991-1",
+      "Judge Dredd The Megazine",
+      "1",
+      "Fleetway/Quality",
+      "1991-01-01",
+      "",
+      "",
+      "Judge Dredd The Megazine #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "264073"
+      }
+    ],
+    [
+      "flee-argon-the-savage-1991-1",
+      "Argon the Savage",
+      "1",
+      "Fleetway/Quality",
+      "1991-01-01",
+      "",
+      "",
+      "Argon the Savage #1",
+      7.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727160"
+      }
+    ],
+    [
+      "flee-argon-the-savage-1991-2",
+      "Argon the Savage",
+      "2",
+      "Fleetway/Quality",
+      "1991-01-01",
+      "",
+      "",
+      "Argon the Savage #2",
+      7.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "727161"
+      }
+    ],
+    [
+      "flee-2000-a-d-showcase-1988-54",
+      "2000 A. D. Showcase",
+      "54",
+      "Fleetway/Quality",
+      "1990-09-01",
+      "",
+      "",
+      "2000 A. D. Showcase #54",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "48508"
+      }
+    ],
+    [
+      "flee-2000-a-d-showcase-1988-53",
+      "2000 A. D. Showcase",
+      "53",
+      "Fleetway/Quality",
+      "1990-08-10",
+      "",
+      "",
+      "2000 A. D. Showcase #53",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "48369"
+      }
+    ],
+    [
+      "flee-2000-a-d-showcase-1988-52",
+      "2000 A. D. Showcase",
+      "52",
+      "Fleetway/Quality",
+      "1990-07-01",
+      "",
+      "",
+      "2000 A. D. Showcase #52",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "48237"
+      }
+    ],
+    [
+      "now--racer-x-1989-10",
+      "Racer X",
+      "10",
+      "Now",
+      "1990-06-10",
+      "",
+      "",
+      "Racer X #10",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "249222"
+      }
+    ],
+    [
+      "now--racer-x-1989-9",
+      "Racer X",
+      "9",
+      "Now",
+      "1990-05-01",
+      "",
+      "",
+      "Racer X #9",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "249221"
+      }
+    ],
+    [
+      "now--racer-x-1989-8",
+      "Racer X",
+      "8",
+      "Now",
+      "1990-04-01",
+      "",
+      "",
+      "Racer X #8",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "249220"
+      }
+    ],
+    [
+      "now--racer-x-1989-7",
+      "Racer X",
+      "7",
+      "Now",
+      "1990-03-01",
+      "",
+      "",
+      "Racer X #7",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "249219"
+      }
+    ],
+    [
+      "flee-a-b-c-warriors-1990-2",
+      "A.B.C. Warriors (1990)",
+      "2",
+      "Fleetway/Quality",
+      "1990-01-01",
+      "",
+      "",
+      "A.B.C. Warriors #2",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9770960175001",
+        "gcdIssueId": "360874"
+      }
+    ],
+    [
+      "flee-a-b-c-warriors-1990-6",
+      "A.B.C. Warriors (1990)",
+      "6",
+      "Fleetway/Quality",
+      "1990-01-01",
+      "",
+      "",
+      "A.B.C. Warriors #6",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "977096017500101",
+        "gcdIssueId": "360878"
+      }
+    ],
+    [
+      "flee-strontium-dog-1987-29",
+      "Strontium Dog",
+      "29",
+      "Fleetway/Quality",
+      "1989-09-01",
+      "",
+      "",
+      "Strontium Dog #29",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "46759"
+      }
+    ],
+    [
+      "now--rust-1989-7",
+      "Rust (1989)",
+      "7",
+      "Now",
+      "1989-09-01",
+      "",
+      "",
+      "Rust #7",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "245083"
+      }
+    ],
+    [
+      "now--rust-1989-6",
+      "Rust (1989)",
+      "6",
+      "Now",
+      "1989-08-01",
+      "",
+      "",
+      "Rust #6",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "245082"
+      }
+    ],
+    [
+      "arch-teenage-mutant-ninja-turtles-adventures-1989-3",
+      "Teenage Mutant Ninja Turtles Adventures (1989)",
+      "3",
+      "Archie",
+      "1989-07-01",
+      "",
+      "",
+      "Teenage Mutant Ninja Turtles Adventures #3",
+      1.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1989-04-11",
+        "gcdIssueId": "131636"
+      }
+    ],
+    [
+      "now--rust-1989-5",
+      "Rust (1989)",
+      "5",
+      "Now",
+      "1989-06-01",
+      "",
+      "",
+      "Rust #5",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "245081"
+      }
+    ],
+    [
+      "arch-teenage-mutant-ninja-turtles-adventures-1989-2",
+      "Teenage Mutant Ninja Turtles Adventures (1989)",
+      "2",
+      "Archie",
+      "1989-05-01",
+      "",
+      "",
+      "Teenage Mutant Ninja Turtles Adventures #2",
+      1.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1989-02-14",
+        "gcdIssueId": "131635"
+      }
+    ],
+    [
+      "now--rust-1989-4",
+      "Rust (1989)",
+      "4",
+      "Now",
+      "1989-05-01",
+      "",
+      "",
+      "Rust #4",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "245080"
+      }
+    ],
+    [
+      "flee-sam-slade-robohunter-1987-31",
+      "Sam Slade, RoboHunter",
+      "31",
+      "Fleetway/Quality",
+      "1989-04-01",
+      "",
+      "",
+      "Sam Slade, RoboHunter #31",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "46151"
+      }
+    ],
+    [
+      "now--rust-1989-3",
+      "Rust (1989)",
+      "3",
+      "Now",
+      "1989-04-01",
+      "",
+      "",
+      "Rust #3",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "245079"
+      }
+    ],
+    [
+      "arch-teenage-mutant-ninja-turtles-adventures-1989-1",
+      "Teenage Mutant Ninja Turtles Adventures (1989)",
+      "1",
+      "Archie",
+      "1989-03-01",
+      "",
+      "",
+      "Teenage Mutant Ninja Turtles Adventures #1",
+      1.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1988-12-06",
+        "gcdIssueId": "131634"
+      }
+    ],
+    [
+      "flee-sam-slade-robohunter-1987-30",
+      "Sam Slade, RoboHunter",
+      "30",
+      "Fleetway/Quality",
+      "1989-03-01",
+      "",
+      "",
+      "Sam Slade, RoboHunter #30",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "46025"
+      }
+    ],
+    [
+      "now--rust-1989-2",
+      "Rust (1989)",
+      "2",
+      "Now",
+      "1989-03-01",
+      "",
+      "",
+      "Rust #2",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "245078"
+      }
+    ],
+    [
+      "now--racer-x-1988-6",
+      "Racer X",
+      "6",
+      "Now",
+      "1989-03-01",
+      "",
+      "",
+      "Racer X #6",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "306563"
+      }
+    ],
+    [
+      "now--rust-1989-1",
+      "Rust (1989)",
+      "1",
+      "Now",
+      "1989-02-01",
+      "",
+      "",
+      "Rust #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1988-10-07",
+        "gcdIssueId": "245077"
+      }
+    ],
+    [
+      "flee-new-statesmen-1989-2",
+      "New Statesmen",
+      "2",
+      "Fleetway/Quality",
+      "1989-02-01",
+      "",
+      "",
+      "New Statesmen #2",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "45646"
+      }
+    ],
+    [
+      "flee-new-statesmen-1989-5",
+      "New Statesmen",
+      "5",
+      "Fleetway/Quality",
+      "1989-01-01",
+      "",
+      "",
+      "New Statesmen #5",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "45661"
+      }
+    ],
+    [
+      "flee-new-statesmen-1989-1",
+      "New Statesmen",
+      "1",
+      "Fleetway/Quality",
+      "1989-01-01",
+      "",
+      "",
+      "New Statesmen #1",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "45604"
+      }
+    ],
+    [
+      "flee-slaine-the-berserker-1987-20",
+      "Sl\u00e1ine the Berserker",
+      "20",
+      "Fleetway/Quality",
+      "1988-12-01",
+      "",
+      "",
+      "Sl\u00e1ine the Berserker #20",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "45413"
+      }
+    ],
+    [
+      "flee-slaine-the-berserker-1987-19",
+      "Sl\u00e1ine the Berserker",
+      "19",
+      "Fleetway/Quality",
+      "1988-11-01",
+      "",
+      "",
+      "Sl\u00e1ine the Berserker #19",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "45283"
+      }
+    ],
+    [
+      "now--racer-x-1988-3",
+      "Racer X",
+      "3",
+      "Now",
+      "1988-11-01",
+      "",
+      "",
+      "Racer X #3",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "306560"
+      }
+    ],
+    [
+      "flee-slaine-the-berserker-1987-18",
+      "Sl\u00e1ine the Berserker",
+      "18",
+      "Fleetway/Quality",
+      "1988-10-01",
+      "",
+      "",
+      "Sl\u00e1ine the Berserker #18",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "45143"
+      }
+    ],
+    [
+      "now--racer-x-1988-1",
+      "Racer X",
+      "1",
+      "Now",
+      "1988-09-01",
+      "",
+      "",
+      "Racer X #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "306558"
+      }
+    ],
+    [
+      "now--racer-x-1988-2",
+      "Racer X",
+      "2",
+      "Now",
+      "1988-09-01",
+      "",
+      "",
+      "Racer X #2",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "306559"
+      }
+    ],
+    [
+      "now--ralph-snart-adventures-1986-9",
+      "Ralph Snart Adventures (1986)",
+      "9",
+      "Now",
+      "1987-07-01",
+      "",
+      "",
+      "Ralph Snart Adventures #9",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43130"
+      }
+    ],
+    [
+      "now--ralph-snart-adventures-1986-8",
+      "Ralph Snart Adventures (1986)",
+      "8",
+      "Now",
+      "1987-06-01",
+      "",
+      "",
+      "Ralph Snart Adventures #8",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "43003"
+      }
+    ],
+    [
+      "now--ralph-snart-adventures-1986-7",
+      "Ralph Snart Adventures (1986)",
+      "7",
+      "Now",
+      "1987-05-01",
+      "",
+      "",
+      "Ralph Snart Adventures #7",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42882"
+      }
+    ],
+    [
+      "now--ralph-snart-adventures-1986-6",
+      "Ralph Snart Adventures (1986)",
+      "6",
+      "Now",
+      "1987-04-01",
+      "",
+      "",
+      "Ralph Snart Adventures #6",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42776"
+      }
+    ],
+    [
+      "now--ralph-snart-adventures-1986-5",
+      "Ralph Snart Adventures (1986)",
+      "5",
+      "Now",
+      "1987-03-01",
+      "",
+      "",
+      "Ralph Snart Adventures #5",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42650"
+      }
+    ],
+    [
+      "now--ralph-snart-adventures-1986-4",
+      "Ralph Snart Adventures (1986)",
+      "4",
+      "Now",
+      "1987-02-01",
+      "",
+      "",
+      "Ralph Snart Adventures #4",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42534"
+      }
+    ],
+    [
+      "now--ralph-snart-adventures-1986-3",
+      "Ralph Snart Adventures (1986)",
+      "3",
+      "Now",
+      "1987-01-01",
+      "",
+      "",
+      "Ralph Snart Adventures #3",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42412"
+      }
+    ],
+    [
+      "now--ralph-snart-adventures-1986-1",
+      "Ralph Snart Adventures (1986)",
+      "1",
+      "Now",
+      "1986-11-10",
+      "",
+      "",
+      "Ralph Snart Adventures #1",
+      1.25,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "42087"
+      }
+    ],
+    [
+      "now--syphons-1986-3",
+      "Syphons",
+      "3",
+      "Now",
+      "1986-11-01",
+      "",
+      "",
+      "Syphons #3",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "245362"
+      }
+    ],
+    [
+      "now--ralph-snart-adventures-1986-2",
+      "Ralph Snart Adventures (1986)",
+      "2",
+      "Now",
+      "1986-11-01",
+      "",
+      "",
+      "Ralph Snart Adventures #2",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-06-29",
+        "gcdIssueId": "42107"
+      }
+    ],
+    [
+      "now--syphons-1986-2",
+      "Syphons",
+      "2",
+      "Now",
+      "1986-09-01",
+      "",
+      "",
+      "Syphons #2",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "245361"
+      }
+    ],
+    [
+      "now--syphons-1986-1",
+      "Syphons",
+      "1",
+      "Now",
+      "1986-07-01",
+      "",
+      "",
+      "Syphons #1",
+      1.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1986-06-29",
+        "gcdIssueId": "245360"
+      }
+    ]
+  ]
+}
