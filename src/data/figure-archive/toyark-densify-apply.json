@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T18:00:31Z",
+  "generatedAt": "2026-10-29T17:54:59Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-10-21T18:00:30.387091+00:00",
+    "after": "2026-10-22T17:54:58.076422+00:00",
     "before": null
   },
   "fetch": {
@@ -45,21 +45,21 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 9,
+    "fetchedPostCount": 13,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9929,
+    "indexedRows": 9950,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 9,
-    "acceptedCandidates": 1,
-    "rejectedRows": 10,
+    "fetchedPosts": 13,
+    "acceptedCandidates": 5,
+    "rejectedRows": 14,
     "byCompany": {
       "hasbro": {
-        "accepted": 0,
+        "accepted": 1,
         "rejected": 0
       },
       "mcfarlane": {
@@ -68,14 +68,14 @@
       },
       "neca": {
         "accepted": 0,
-        "rejected": 0
+        "rejected": 3
       },
       "jazwares": {
         "accepted": 0,
         "rejected": 0
       },
       "super7": {
-        "accepted": 0,
+        "accepted": 3,
         "rejected": 1
       },
       "hottoys": {
@@ -108,13 +108,15 @@
       }
     },
     "byRejectReason": {
-      "no-new-product-identity": 2,
+      "missing-line": 4,
+      "vehicles-props-only": 1,
+      "no-new-product-identity": 1,
       "company-unknown": 4,
       "company-not-allowlisted": 1,
       "possible-reissue": 3
     },
-    "applied": 1,
-    "skippedApply": 0
+    "applied": 4,
+    "skippedApply": 1
   },
   "candidates": [
     {
@@ -124,8 +126,8 @@
       "line": "Hot Toys",
       "year": 2027,
       "releaseWindow": null,
-      "variant": "Avengers: Doomsday – Jumbo Sofvi",
-      "sourceUrl": "https://www.toyark.com/2026/10/28/avengers-doomsday-hot-toys-sentinel-jumbo-sofvi-figure-601747",
+      "variant": "Avengers: Doomsday – Jumbo Sofvi – UPDATE",
+      "sourceUrl": "https://www.toyark.com/2026/10/29/avengers-doomsday-hot-toys-sentinel-jumbo-sofvi-figure-601747",
       "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Avengers-Doomsday-Sentinel-001.jpg",
       "aliases": [
         "SMS004J"
@@ -137,28 +139,176 @@
       "toyarkPostId": 601747,
       "postYear": 2026,
       "pack": null,
-      "title": "Avengers: Doomsday – Hot Toys Sentinel Jumbo Sofvi Figure",
-      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; variant=Avengers: Doomsday – Jumbo Sofvi; year=2027; aliases-from-source=SMS004J; new/reveal/pre-order/official-image signal"
+      "title": "Avengers: Doomsday – Hot Toys Sentinel Jumbo Sofvi Figure – UPDATE",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; variant=Avengers: Doomsday – Jumbo Sofvi – UPDATE; year=2027; aliases-from-source=SMS004J; new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Wolverine",
+      "company": "hasbro",
+      "line": "Marvel Legends",
+      "year": 2027,
+      "releaseWindow": "January 2027",
+      "variant": "Astonishing X-Men Marvel Legends Cyclops &",
+      "sourceUrl": "https://www.toyark.com/2026/10/29/astonishing-x-men-marvel-legends-cyclops-wolverine-601912",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Astonishing-X-Men-Marvel-Legends-Cyclops-Wolverine-001.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601912,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Astonishing X-Men Marvel Legends Cyclops & Wolverine",
+      "rationale": "hasbro via class:companies-hasbro; line=Marvel Legends; variant=Astonishing X-Men Marvel Legends Cyclops &; year=2027; new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Vultureman",
+      "company": "super7",
+      "line": "Super7 ULTIMATES!",
+      "year": 2027,
+      "releaseWindow": "January 2027",
+      "variant": "Deluxe Wave 5",
+      "sourceUrl": "https://www.toyark.com/2026/10/29/thundercats-deluxe-wave-5-and-ultimates-wave-16-601885",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Super7-Thundercats-Ultimates-Wave-16-001.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601885,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Thundercats Deluxe Wave 5 and Ultimates Wave 16",
+      "rationale": "super7 via class:companies-super-7; line=Super7 ULTIMATES!; variant=Deluxe Wave 5; year=2027; new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Panthro",
+      "company": "super7",
+      "line": "Super7 ULTIMATES!",
+      "year": 2027,
+      "releaseWindow": "January 2027",
+      "variant": "Deluxe Wave 5",
+      "sourceUrl": "https://www.toyark.com/2026/10/29/thundercats-deluxe-wave-5-and-ultimates-wave-16-601885",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Super7-Thundercats-Ultimates-Wave-16-001.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601885,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Thundercats Deluxe Wave 5 and Ultimates Wave 16",
+      "rationale": "super7 via class:companies-super-7; line=Super7 ULTIMATES!; variant=Deluxe Wave 5; year=2027; new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Mumm-Ra",
+      "company": "super7",
+      "line": "Super7 ULTIMATES!",
+      "year": 2027,
+      "releaseWindow": "January 2027",
+      "variant": "(The Ever Living) / Deluxe Wave 5",
+      "sourceUrl": "https://www.toyark.com/2026/10/29/thundercats-deluxe-wave-5-and-ultimates-wave-16-601885",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Super7-Thundercats-Ultimates-Wave-16-001.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601885,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Thundercats Deluxe Wave 5 and Ultimates Wave 16",
+      "rationale": "super7 via class:companies-super-7; line=Super7 ULTIMATES!; variant=(The Ever Living) / Deluxe Wave 5; year=2027; new/reveal/pre-order/official-image signal"
     }
   ],
   "rejects": [
     {
       "decision": "reject",
-      "reason": "no-new-product-identity",
-      "name": null,
+      "reason": "missing-line",
+      "name": "reimagining the beloved McDonald’s characters Grimace",
+      "company": "neca",
+      "line": null,
+      "year": 2027,
+      "releaseWindow": "April 2027",
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/29/mcdonalds-x-ben-cooper-figures-by-neca-601872",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/McDonalds-x-Ben-Cooper-Figures-by-NECA-001.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601872,
+      "title": "McDonald’s x Ben Cooper Figures by NECA",
+      "rationale": "Recognizable company but no line/subline in class_list or prose."
+    },
+    {
+      "decision": "reject",
+      "reason": "missing-line",
+      "name": "Hamburglar",
+      "company": "neca",
+      "line": null,
+      "year": 2027,
+      "releaseWindow": "April 2027",
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/29/mcdonalds-x-ben-cooper-figures-by-neca-601872",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/McDonalds-x-Ben-Cooper-Figures-by-NECA-001.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601872,
+      "title": "McDonald’s x Ben Cooper Figures by NECA",
+      "rationale": "Recognizable company but no line/subline in class_list or prose."
+    },
+    {
+      "decision": "reject",
+      "reason": "missing-line",
+      "name": "Birdie the Early Bird",
+      "company": "neca",
+      "line": null,
+      "year": 2027,
+      "releaseWindow": "April 2027",
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/29/mcdonalds-x-ben-cooper-figures-by-neca-601872",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/McDonalds-x-Ben-Cooper-Figures-by-NECA-001.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601872,
+      "title": "McDonald’s x Ben Cooper Figures by NECA",
+      "rationale": "Recognizable company but no line/subline in class_list or prose."
+    },
+    {
+      "decision": "reject",
+      "reason": "missing-line",
+      "name": "Shang Tsung",
       "company": "mcfarlane",
       "line": null,
       "year": null,
       "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/28/mcfarlane-toys-mortal-kombat-klassic-baraka-jax-shang-tsung-kung-lao-and-new-2-packs-601737",
-      "imageUrl": null,
+      "variant": "Mortal Kombat Klassic Baraka, Jax Kung Lao and New 2-Packs – UPDATED",
+      "sourceUrl": "https://www.toyark.com/2026/10/29/mcfarlane-toys-mortal-kombat-klassic-baraka-jax-shang-tsung-kung-lao-and-new-2-packs-601737",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-McFarlane-MK-Klassic-10.28.26.jpg",
       "aliases": [],
       "codes": [],
       "gtin": null,
       "toyarkPostId": 601737,
-      "title": "McFarlane Toys Mortal Kombat Klassic Baraka, Jax, Shang Tsung, Kung Lao and New 2-Packs",
-      "rationale": "Allowlisted company but no new/reveal/pre-order/official-image signal."
+      "title": "McFarlane Toys Mortal Kombat Klassic Baraka, Jax, Shang Tsung, Kung Lao and New 2-Packs – UPDATED",
+      "rationale": "Recognizable company but no line/subline in class_list or prose."
+    },
+    {
+      "decision": "reject",
+      "reason": "vehicles-props-only",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/29/berserk-chestnut-puck-statue-by-gecco-601771",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601771,
+      "title": "Berserk – Chestnut Puck Statue by Gecco",
+      "rationale": "Title is a prop/vehicle/replica, not a figure."
     },
     {
       "decision": "reject",
@@ -349,29 +499,77 @@
   ],
   "applied": [
     {
-      "id": "ta-46a7d4630d86",
-      "name": "Sentinel",
-      "company": "hottoys",
-      "line": "Hot Toys",
+      "id": "ta-54ddd874119a",
+      "name": "Wolverine",
+      "company": "hasbro",
+      "line": "Marvel Legends",
       "year": 2027,
-      "variant": "Avengers: Doomsday – Jumbo Sofvi",
+      "variant": "Astonishing X-Men Marvel Legends Cyclops &",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Avengers-Doomsday-Sentinel-001.jpg",
-      "aliases": [
-        "SMS004J"
-      ],
-      "sourceUrl": "https://www.toyark.com/2026/10/28/avengers-doomsday-hot-toys-sentinel-jumbo-sofvi-figure-601747",
-      "toyarkPostId": 601747
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Astonishing-X-Men-Marvel-Legends-Cyclops-Wolverine-001.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/29/astonishing-x-men-marvel-legends-cyclops-wolverine-601912",
+      "toyarkPostId": 601912
+    },
+    {
+      "id": "ta-cd695ff0740b",
+      "name": "Vultureman",
+      "company": "super7",
+      "line": "Super7 ULTIMATES!",
+      "year": 2027,
+      "variant": "Deluxe Wave 5",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Super7-Thundercats-Ultimates-Wave-16-001.webp",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/29/thundercats-deluxe-wave-5-and-ultimates-wave-16-601885",
+      "toyarkPostId": 601885
+    },
+    {
+      "id": "ta-f9cafb08ad23",
+      "name": "Panthro",
+      "company": "super7",
+      "line": "Super7 ULTIMATES!",
+      "year": 2027,
+      "variant": "Deluxe Wave 5",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Super7-Thundercats-Ultimates-Wave-16-001.webp",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/29/thundercats-deluxe-wave-5-and-ultimates-wave-16-601885",
+      "toyarkPostId": 601885
+    },
+    {
+      "id": "ta-3d5975f0beff",
+      "name": "Mumm-Ra",
+      "company": "super7",
+      "line": "Super7 ULTIMATES!",
+      "year": 2027,
+      "variant": "(The Ever Living) / Deluxe Wave 5",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Super7-Thundercats-Ultimates-Wave-16-001.webp",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/29/thundercats-deluxe-wave-5-and-ultimates-wave-16-601885",
+      "toyarkPostId": 601885
     }
   ],
-  "applySkipped": [],
+  "applySkipped": [
+    {
+      "name": "Sentinel",
+      "company": "hottoys",
+      "reason": "alias-owned",
+      "alias": "SMS004J",
+      "owner": "ta-46a7d4630d86"
+    }
+  ],
   "applyStats": {
-    "accepted": 1,
-    "applied": 1,
-    "skippedApply": 0,
-    "aliasAdded": 4,
-    "withImage": 1,
+    "accepted": 5,
+    "applied": 4,
+    "skippedApply": 1,
+    "aliasAdded": 8,
+    "withImage": 4,
     "cap": 50,
     "blocker": null
   }
