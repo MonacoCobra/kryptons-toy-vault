@@ -1,0 +1,8885 @@
+{
+  "id": "batch-097-gcd-us-indie-leftovers-25",
+  "title": "GCD US comic publisher leftovers pass 25",
+  "created": "2026-10-29",
+  "status": "queued",
+  "focus": "queued 2026-10-29 for next run (not injected): US comic publishers small-press leftovers after batch-096; Image 2001+ only; DC/Marvel excluded; stripped 10 magazine/non-comic rows (Raw Media Mags, Ironcat, Silverwolf art series); Catalan Communications translated albums (32) set format tpb; also stripped 4 (activity book, cookbook, sketchbook, model-search photo special); Pacific Comics Club strip reprints (Little Orphan Annie/Dick Tracy/Casey Ruggles/Charlie Chan) + Klor TPB set format tpb (47)",
+  "source": "gcd-dump",
+  "addedCount": 486,
+  "byPublisher": {
+    "Pacific Comics Club": 46,
+    "The Print Mint Inc": 45,
+    "Catalan Communications": 32,
+    "London Night Studios": 30,
+    "Boneyard Press": 29,
+    "Harris Comics": 28,
+    "ABC Studios": 28,
+    "Blackthorne": 24,
+    "FantaCo Enterprises": 23,
+    "Digital Webbing": 18,
+    "Crusade Comics": 17,
+    "Ape Entertainment": 16,
+    "Alternative Comics": 16,
+    "Starhead Comix": 14,
+    "Robin Snyder and Steve Ditko": 13,
+    "Sirius Entertainment": 12,
+    "Revolutionary": 11,
+    "Mirage": 11,
+    "Shanda Fantasy Arts": 10,
+    "New England Comics": 10,
+    "Knight Press": 10,
+    "Maximum Press": 9,
+    "Big Dog Ink": 8,
+    "Blackout Comics": 8,
+    "Renegade Press": 5,
+    "Viper": 4,
+    "Dabel Brothers Productions": 3,
+    "Studio Ironcat": 2,
+    "Rebel Studios": 2,
+    "Night Wynd": 2
+  },
+  "rows": [
+    [
+      "big--joan-of-arc-2014-0",
+      "Joan of Arc",
+      "0",
+      "Big Dog Ink",
+      "2014-04-01",
+      "",
+      "",
+      "Joan of Arc #0",
+      1.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1273152"
+      }
+    ],
+    [
+      "big--rex-zombie-killer-2013-2",
+      "Rex Zombie Killer",
+      "2",
+      "Big Dog Ink",
+      "2013-12-18",
+      "",
+      "",
+      "Rex Zombie Killer #2",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "091037637017",
+        "streetDate": "2013-12-18",
+        "gcdIssueId": "1171097"
+      }
+    ],
+    [
+      "ape--genie-the-genius-2013-1",
+      "Genie the Genius",
+      "1",
+      "Ape Entertainment",
+      "2013-09-11",
+      "",
+      "",
+      "Genie the Genius #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978162782015850299",
+        "streetDate": "2013-09-11",
+        "gcdIssueId": "1158705"
+      }
+    ],
+    [
+      "big--serusis-2013-1",
+      "Serusis",
+      "1",
+      "Big Dog Ink",
+      "2013-06-01",
+      "",
+      "",
+      "Serusis #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "091037326928",
+        "streetDate": "2013-06-12",
+        "gcdIssueId": "1120286"
+      }
+    ],
+    [
+      "ape--sesame-street-2013-1",
+      "Sesame Street",
+      "1",
+      "Ape Entertainment",
+      "2013-05-01",
+      "",
+      "",
+      "Sesame Street #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978193767694050399",
+        "streetDate": "2013-05-01",
+        "gcdIssueId": "1109082"
+      }
+    ],
+    [
+      "robi-laszlo-s-hammer-2013-nn",
+      "Laszlo's Hammer",
+      "[nn]",
+      "Robin Snyder and Steve Ditko",
+      "2013-01-01",
+      "",
+      "",
+      "Laszlo's Hammer #[nn]",
+      6.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1189438"
+      }
+    ],
+    [
+      "big--slipstream-2012-1",
+      "Slipstream",
+      "1",
+      "Big Dog Ink",
+      "2012-12-01",
+      "",
+      "",
+      "Slipstream #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "013964387322",
+        "streetDate": "2012-12-19",
+        "gcdIssueId": "1040384"
+      }
+    ],
+    [
+      "big--rookie-2012-1",
+      "Rookie",
+      "1",
+      "Big Dog Ink",
+      "2012-10-01",
+      "",
+      "",
+      "Rookie #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "013964387339",
+        "gcdIssueId": "1031266"
+      }
+    ],
+    [
+      "big--cricket-2012-nn",
+      "Cricket",
+      "[nn]",
+      "Big Dog Ink",
+      "2012-09-01",
+      "",
+      "",
+      "Cricket #[nn]",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "013964387353",
+        "gcdIssueId": "1034839"
+      }
+    ],
+    [
+      "ape--richie-rich-gems-valentines-special-2012-nn",
+      "Richie Rich Gems Valentines Special",
+      "[nn]",
+      "Ape Entertainment",
+      "2012-01-01",
+      "",
+      "",
+      "Richie Rich Gems Valentines Special #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978193767611750399",
+        "gcdIssueId": "1071191"
+      }
+    ],
+    [
+      "ape--hero-within-2012-1",
+      "Hero Within",
+      "1",
+      "Ape Entertainment",
+      "2012-01-01",
+      "",
+      "",
+      "Hero Within #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978193767630850399",
+        "gcdIssueId": "979838"
+      }
+    ],
+    [
+      "ape--donarr-the-unyielding-2012-nn",
+      "Donarr the Unyielding",
+      "[nn]",
+      "Ape Entertainment",
+      "2012-01-01",
+      "",
+      "",
+      "Donarr the Unyielding #[nn]",
+      7.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978193767644550799",
+        "gcdIssueId": "1052395"
+      }
+    ],
+    [
+      "vipe-inspector-gadget-gadget-on-the-orient-ex-2011-nn",
+      "Inspector Gadget: Gadget on the Orient Express",
+      "[nn]",
+      "Viper",
+      "2011-06-01",
+      "",
+      "",
+      "Inspector Gadget: Gadget on the Orient Express #[nn]",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9780983367000",
+        "gcdIssueId": "875357"
+      }
+    ],
+    [
+      "robi-wha-ditko-s-h-series-2011-3",
+      "..Wha..!? Ditko's \"H.\" Series",
+      "3",
+      "Robin Snyder and Steve Ditko",
+      "2011-03-01",
+      "",
+      "",
+      "..Wha..!? Ditko's \"H.\" Series #3",
+      4.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1189442"
+      }
+    ],
+    [
+      "big--temptation-of-mary-magdalene-2011-nn",
+      "Temptation of Mary Magdalene",
+      "[nn]",
+      "Big Dog Ink",
+      "2011-01-01",
+      "",
+      "",
+      "Temptation of Mary Magdalene #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "837654871782",
+        "gcdIssueId": "811171"
+      }
+    ],
+    [
+      "ape--richie-rich-gems-winter-special-2011-nn",
+      "Richie Rich Gems Winter Special",
+      "[nn]",
+      "Ape Entertainment",
+      "2011-01-01",
+      "",
+      "",
+      "Richie Rich Gems Winter Special #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978193634080450399",
+        "gcdIssueId": "1071192"
+      }
+    ],
+    [
+      "robi-act-five-2010-5",
+      "Act Five",
+      "5",
+      "Robin Snyder and Steve Ditko",
+      "2010-11-01",
+      "",
+      "",
+      "Act Five #5",
+      4.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "785602"
+      }
+    ],
+    [
+      "ape--megamind-2010-0",
+      "Megamind",
+      "0",
+      "Ape Entertainment",
+      "2010-10-01",
+      "",
+      "",
+      "Megamind #0",
+      6.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1162858"
+      }
+    ],
+    [
+      "ape--shrek-2010-1",
+      "Shrek",
+      "1",
+      "Ape Entertainment",
+      "2010-09-01",
+      "",
+      "",
+      "Shrek #1",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2010-09-09",
+        "gcdIssueId": "777191"
+      }
+    ],
+    [
+      "ape--scratch9-2010-1",
+      "Scratch9",
+      "1",
+      "Ape Entertainment",
+      "2010-09-01",
+      "",
+      "",
+      "Scratch9 #1",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "777192"
+      }
+    ],
+    [
+      "robi-act-4-2010-4",
+      "Act 4",
+      "[4]",
+      "Robin Snyder and Steve Ditko",
+      "2010-07-01",
+      "",
+      "",
+      "Act 4 #[4]",
+      4.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "785608"
+      }
+    ],
+    [
+      "robi-mr-a-2010-nn",
+      "Mr. A",
+      "[nn]",
+      "Robin Snyder and Steve Ditko",
+      "2010-01-01",
+      "",
+      "",
+      "Mr. A #[nn]",
+      5.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1189439"
+      }
+    ],
+    [
+      "ape--black-dynamite-2011-1",
+      "Black Dynamite",
+      "1",
+      "Ape Entertainment",
+      "2010-01-01",
+      "",
+      "",
+      "Black Dynamite #1",
+      5.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978193634031650595",
+        "gcdIssueId": "1039436"
+      }
+    ],
+    [
+      "digi-bloodrayne-revenge-of-the-butcheress-2009-1",
+      "Bloodrayne: Revenge of the Butcheress",
+      "1",
+      "Digital Webbing",
+      "2009-11-01",
+      "",
+      "",
+      "Bloodrayne: Revenge of the Butcheress #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "64924184972800501",
+        "streetDate": "2010-01-06",
+        "gcdIssueId": "795868"
+      }
+    ],
+    [
+      "big--critter-origin-2009-nn",
+      "Critter: Origin",
+      "[nn]",
+      "Big Dog Ink",
+      "2009-10-01",
+      "",
+      "",
+      "Critter: Origin #[nn]",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "837654871775",
+        "gcdIssueId": "771604"
+      }
+    ],
+    [
+      "robi-ditko-presents-2009-7",
+      "Ditko Presents",
+      "7",
+      "Robin Snyder and Steve Ditko",
+      "2009-08-01",
+      "",
+      "",
+      "Ditko Presents #7",
+      4.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "697795"
+      }
+    ],
+    [
+      "robi-ditko-once-more-2009-nn",
+      "Ditko Once More",
+      "[nn]",
+      "Robin Snyder and Steve Ditko",
+      "2009-05-01",
+      "",
+      "",
+      "Ditko Once More #[nn]",
+      4.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "648348"
+      }
+    ],
+    [
+      "robi-oh-no-not-again-ditko-2008-nn",
+      "Oh, No! Not Again, Ditko!",
+      "[nn]",
+      "Robin Snyder and Steve Ditko",
+      "2009-03-01",
+      "",
+      "",
+      "Oh, No! Not Again, Ditko! #[nn]",
+      4.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "592975"
+      }
+    ],
+    [
+      "dabe-dean-koontz-s-nevermore-2009-1",
+      "Dean Koontz's: Nevermore",
+      "1",
+      "Dabel Brothers Productions",
+      "2009-03-01",
+      "",
+      "",
+      "Dean Koontz's: Nevermore #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "648574"
+      }
+    ],
+    [
+      "ape--the-black-coat-athena-voltaire-one-shot-2009-1",
+      "The Black Coat & Athena Voltaire One-Shot",
+      "1",
+      "Ape Entertainment",
+      "2009-02-01",
+      "",
+      "",
+      "The Black Coat & Athena Voltaire One-Shot #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978193494450950200",
+        "gcdIssueId": "645949"
+      }
+    ],
+    [
+      "robi-ditko-continued-2008-nn",
+      "...Ditko Continued...",
+      "[nn]",
+      "Robin Snyder and Steve Ditko",
+      "2009-01-01",
+      "",
+      "",
+      "...Ditko Continued... #[nn]",
+      4.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "562393"
+      }
+    ],
+    [
+      "digi-e-man-the-idol-2008-nn",
+      "E-Man: The Idol",
+      "[nn]",
+      "Digital Webbing",
+      "2008-11-01",
+      "",
+      "",
+      "E-Man: The Idol #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "64924186099000101",
+        "streetDate": "2009-01-14",
+        "gcdIssueId": "564053"
+      }
+    ],
+    [
+      "robi-ditko-etc-2008-nn",
+      "Ditko, Etc...",
+      "[nn]",
+      "Robin Snyder and Steve Ditko",
+      "2008-10-01",
+      "",
+      "",
+      "Ditko, Etc... #[nn]",
+      4.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "562392"
+      }
+    ],
+    [
+      "vipe-attack-of-the-killer-tomatoes-2008-1",
+      "Attack of the Killer Tomatoes",
+      "1",
+      "Viper",
+      "2008-10-01",
+      "",
+      "",
+      "Attack of the Killer Tomatoes #1",
+      3.25,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "626892"
+      }
+    ],
+    [
+      "ape--femme-noir-the-dark-city-diaries-2008-4",
+      "Femme Noir: The Dark City Diaries",
+      "4",
+      "Ape Entertainment",
+      "2008-09-01",
+      "",
+      "",
+      "Femme Noir: The Dark City Diaries #4",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978193494418950395",
+        "gcdIssueId": "655170"
+      }
+    ],
+    [
+      "digi-bloodrayne-raw-iii-2008-nn",
+      "BloodRayne: Raw III",
+      "[nn]",
+      "Digital Webbing",
+      "2008-07-10",
+      "",
+      "",
+      "BloodRayne: Raw III #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2008-07-10",
+        "gcdIssueId": "888070"
+      }
+    ],
+    [
+      "ape--the-black-coat-52-page-special-2008-1",
+      "The Black Coat: 52 Page Special",
+      "1",
+      "Ape Entertainment",
+      "2008-07-01",
+      "",
+      "",
+      "The Black Coat: 52 Page Special #1",
+      6.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978193494421950695",
+        "gcdIssueId": "534725"
+      }
+    ],
+    [
+      "digi-bleeders-2008-nn",
+      "Bleeders",
+      "[nn]",
+      "Digital Webbing",
+      "2008-06-01",
+      "",
+      "",
+      "Bleeders #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "64924185095300101",
+        "gcdIssueId": "811110"
+      }
+    ],
+    [
+      "dabe-dean-koontz-s-frankenstein-prodigal-son-2008-1",
+      "Dean Koontz's Frankenstein: Prodigal Son",
+      "1",
+      "Dabel Brothers Productions",
+      "2008-05-01",
+      "",
+      "",
+      "Dean Koontz's Frankenstein: Prodigal Son #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "79357348178800001",
+        "streetDate": "2008-05-21",
+        "gcdIssueId": "565944"
+      }
+    ],
+    [
+      "digi-bloodrayne-automaton-2008-1",
+      "BloodRayne Automaton",
+      "1",
+      "Digital Webbing",
+      "2008-01-16",
+      "",
+      "",
+      "BloodRayne Automaton #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "64924185234600101",
+        "streetDate": "2008-01-16",
+        "gcdIssueId": "529285"
+      }
+    ],
+    [
+      "ape--white-picket-fences-2008-1",
+      "White Picket Fences",
+      "1",
+      "Ape Entertainment",
+      "2008-01-01",
+      "",
+      "",
+      "White Picket Fences #1",
+      6.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "645085"
+      }
+    ],
+    [
+      "digi-sword-of-dracula-vampirella-extended-and-2008-1",
+      "Sword of Dracula/Vampirella: Extended and Dangerous",
+      "1",
+      "Digital Webbing",
+      "2008-01-01",
+      "",
+      "",
+      "Sword of Dracula/Vampirella: Extended and Dangerous #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "64924185000700101",
+        "gcdIssueId": "745748"
+      }
+    ],
+    [
+      "digi-e-man-dolly-2007-1",
+      "E-Man: Dolly",
+      "1",
+      "Digital Webbing",
+      "2007-09-01",
+      "",
+      "",
+      "E-Man: Dolly #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386938"
+      }
+    ],
+    [
+      "digi-zombie-highway-directionless-2007-1",
+      "Zombie Highway: Directionless",
+      "1",
+      "Digital Webbing",
+      "2007-08-01",
+      "",
+      "",
+      "Zombie Highway: Directionless #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "811100"
+      }
+    ],
+    [
+      "digi-bloodrayne-raw-ii-2007-nn",
+      "BloodRayne: Raw II",
+      "[nn]",
+      "Digital Webbing",
+      "2007-05-01",
+      "",
+      "",
+      "BloodRayne: Raw II #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2007-06-13",
+        "gcdIssueId": "529297"
+      }
+    ],
+    [
+      "digi-bloodrayne-tibetan-heights-2007-1",
+      "BloodRayne Tibetan Heights",
+      "1",
+      "Digital Webbing",
+      "2007-04-25",
+      "",
+      "",
+      "BloodRayne Tibetan Heights #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2007-04-25",
+        "gcdIssueId": "529295"
+      }
+    ],
+    [
+      "ape--nightmare-world-the-long-hard-road-out-o-2007-nn",
+      "Nightmare World: The Long Hard Road Out of Hell",
+      "[nn]",
+      "Ape Entertainment",
+      "2007-02-01",
+      "",
+      "",
+      "Nightmare World: The Long Hard Road Out of Hell #[nn]",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1106884"
+      }
+    ],
+    [
+      "digi-abigail-and-rox-in-the-land-of-enchantme-2007-nn",
+      "Abigail and Rox in the Land of Enchantment",
+      "[nn]",
+      "Digital Webbing",
+      "2007-01-01",
+      "",
+      "",
+      "Abigail and Rox in the Land of Enchantment #[nn]",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "369776"
+      }
+    ],
+    [
+      "harr-vampirella-commemorative-edition-1996-1",
+      "Vampirella Commemorative Edition",
+      "1",
+      "Harris Comics",
+      "2006-11-01",
+      "",
+      "",
+      "Vampirella Commemorative Edition #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "867223"
+      }
+    ],
+    [
+      "alte-power-of-6-2006-1",
+      "Power of 6",
+      "1",
+      "Alternative Comics",
+      "2006-07-10",
+      "",
+      "",
+      "Power of 6 #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "394784"
+      }
+    ],
+    [
+      "digi-bloodrayne-twin-blades-2006-1",
+      "BloodRayne Twin Blades",
+      "1",
+      "Digital Webbing",
+      "2006-06-07",
+      "",
+      "",
+      "BloodRayne Twin Blades #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2006-06-07",
+        "gcdIssueId": "529296"
+      }
+    ],
+    [
+      "dabe-ptolus-city-by-the-spire-2006-1",
+      "Ptolus: City by the Spire",
+      "1",
+      "Dabel Brothers Productions",
+      "2006-05-01",
+      "",
+      "",
+      "Ptolus: City by the Spire #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "613005"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-9-23-41-to-12-9-41",
+      "Dick Tracy",
+      "9/23/41 to 12/9/41",
+      "Pacific Comics Club",
+      "2006-01-01",
+      "",
+      "",
+      "Duke's Deceptions and Mole's Greed",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "816866"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-12-10-41-to-2-26-42",
+      "Dick Tracy",
+      "12/10/41 to 2/26/42",
+      "Pacific Comics Club",
+      "2006-01-01",
+      "",
+      "",
+      "The High Life and BB Eyes",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "816867"
+      }
+    ],
+    [
+      "digi-bloodrayne-dark-soul-2005-1",
+      "BloodRayne: Dark Soul",
+      "1",
+      "Digital Webbing",
+      "2005-12-21",
+      "",
+      "",
+      "BloodRayne: Dark Soul #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2005-12-21",
+        "gcdIssueId": "529286"
+      }
+    ],
+    [
+      "digi-bloodrayne-lycan-rex-2005-1",
+      "BloodRayne: Lycan Rex",
+      "1",
+      "Digital Webbing",
+      "2005-10-01",
+      "",
+      "",
+      "BloodRayne: Lycan Rex #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2005-11-16",
+        "gcdIssueId": "529287"
+      }
+    ],
+    [
+      "digi-sword-of-dracula-2005-1",
+      "Sword of Dracula",
+      "1",
+      "Digital Webbing",
+      "2005-09-01",
+      "",
+      "",
+      "Sword of Dracula #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "811109"
+      }
+    ],
+    [
+      "vipe-karma-incorporated-2005-2",
+      "Karma Incorporated",
+      "2",
+      "Viper",
+      "2005-08-10",
+      "",
+      "",
+      "Karma Incorporated #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "407227"
+      }
+    ],
+    [
+      "alte-coexisting-2005-nn",
+      "Coexisting",
+      "[nn]",
+      "Alternative Comics",
+      "2005-04-01",
+      "",
+      "",
+      "Coexisting #[nn]",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978189186777450299",
+        "gcdIssueId": "1048965"
+      }
+    ],
+    [
+      "digi-bloodrayne-seeds-of-sin-2005-1",
+      "BloodRayne Seeds of Sin",
+      "1",
+      "Digital Webbing",
+      "2005-03-01",
+      "",
+      "",
+      "BloodRayne Seeds of Sin #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2005-04-06",
+        "gcdIssueId": "529293"
+      }
+    ],
+    [
+      "alte-a-strange-day-2005-nn",
+      "A Strange Day",
+      "[nn]",
+      "Alternative Comics",
+      "2005-02-01",
+      "",
+      "",
+      "A Strange Day #[nn]",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "714575"
+      }
+    ],
+    [
+      "ape--go-go-gorilla-and-the-jungle-crew-summer-2005-nn",
+      "Go-Go Gorilla and the Jungle Crew Summer Fun Special",
+      "[nn]",
+      "Ape Entertainment",
+      "2005-01-01",
+      "",
+      "",
+      "Go-Go Gorilla and the Jungle Crew Summer Fun Special #[nn]",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978097413985250295",
+        "gcdIssueId": "1237242"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-10-21-40-to-1-12-41",
+      "Dick Tracy",
+      "10/21/40 to 1/12/41",
+      "Pacific Comics Club",
+      "2005-01-01",
+      "",
+      "",
+      "Bicycle Thieves",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "816862"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-1-13-41-to-4-6-41",
+      "Dick Tracy",
+      "1/13/41 to 4/6/41",
+      "Pacific Comics Club",
+      "2005-01-01",
+      "",
+      "",
+      "Krome's Crimes",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "816863"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-4-7-41-to-6-29-41",
+      "Dick Tracy",
+      "4/7/41 to 6/29/41",
+      "Pacific Comics Club",
+      "2005-01-01",
+      "",
+      "",
+      "Selbert the Gunman",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "816864"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-6-30-41-to-9-21-41",
+      "Dick Tracy",
+      "6/30/41 to 9/21/41",
+      "Pacific Comics Club",
+      "2005-01-01",
+      "",
+      "",
+      "Little Face",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "816865"
+      }
+    ],
+    [
+      "digi-bloodrayne-raw-2005-nn",
+      "BloodRayne: Raw",
+      "[nn]",
+      "Digital Webbing",
+      "2005-01-01",
+      "",
+      "",
+      "BloodRayne: Raw #[nn]",
+      5.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2006-03-15",
+        "gcdIssueId": "748054"
+      }
+    ],
+    [
+      "digi-bloodrayne-skies-afire-2004-1",
+      "BloodRayne Skies Afire",
+      "1",
+      "Digital Webbing",
+      "2004-12-01",
+      "",
+      "",
+      "BloodRayne Skies Afire #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2005-01-19",
+        "gcdIssueId": "529294"
+      }
+    ],
+    [
+      "shan-yenny-2004-1",
+      "Yenny",
+      "1",
+      "Shanda Fantasy Arts",
+      "2004-11-01",
+      "",
+      "",
+      "Yenny #1",
+      4.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1092485"
+      }
+    ],
+    [
+      "shan-misty-the-mouse-2004-1",
+      "Misty the Mouse",
+      "1",
+      "Shanda Fantasy Arts",
+      "2004-06-01",
+      "",
+      "",
+      "Misty the Mouse #1",
+      4.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "759138"
+      }
+    ],
+    [
+      "vipe-dead-17-blood-of-saints-2004-1",
+      "Dead@17: Blood of Saints",
+      "1",
+      "Viper",
+      "2004-04-01",
+      "",
+      "",
+      "Dead@17: Blood of Saints #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "580991"
+      }
+    ],
+    [
+      "alte-rabbithead-2004-nn",
+      "RabbitHead",
+      "[nn]",
+      "Alternative Comics",
+      "2004-01-01",
+      "",
+      "",
+      "RabbitHead #[nn]",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978189186772950495",
+        "gcdIssueId": "1218671"
+      }
+    ],
+    [
+      "alte-lunch-hour-comix-2004-1",
+      "Lunch-Hour Comix",
+      "1",
+      "Alternative Comics",
+      "2004-01-01",
+      "",
+      "",
+      "Lunch-Hour Comix #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "742449"
+      }
+    ],
+    [
+      "shan-4footed-furries-2004-1",
+      "4Footed Furries",
+      "1",
+      "Shanda Fantasy Arts",
+      "2004-01-01",
+      "",
+      "",
+      "4Footed Furries #1",
+      4.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "901111"
+      }
+    ],
+    [
+      "alte-the-vagabonds-2003-1",
+      "The Vagabonds",
+      "1",
+      "Alternative Comics",
+      "2003-06-01",
+      "",
+      "",
+      "The Vagabonds #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978189186751450295",
+        "streetDate": "2003-07-02",
+        "gcdIssueId": "1119602"
+      }
+    ],
+    [
+      "alte-bipolar-2002-2",
+      "bipolar",
+      "2",
+      "Alternative Comics",
+      "2003-05-01",
+      "",
+      "",
+      "bipolar #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978189186734750295",
+        "gcdIssueId": "538867"
+      }
+    ],
+    [
+      "shan-star-quack-2003-1",
+      "Star Quack",
+      "1",
+      "Shanda Fantasy Arts",
+      "2003-04-01",
+      "",
+      "",
+      "Star Quack #1",
+      4.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1208504"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-the-early-adventures-2003-nn",
+      "Little Orphan Annie \"The Early Adventures\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2003-01-01",
+      "",
+      "",
+      "Little Orphan Annie \"The Early Adventures\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817179"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-rich-man-poor-man-2003-nn",
+      "Little Orphan Annie \"Rich Man, Poor Man\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2003-01-01",
+      "",
+      "",
+      "Little Orphan Annie \"Rich Man, Poor Man\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817189"
+      }
+    ],
+    [
+      "alte-hickee-2003-1",
+      "Hickee",
+      "1",
+      "Alternative Comics",
+      "2003-01-01",
+      "",
+      "",
+      "Hickee #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "714576"
+      }
+    ],
+    [
+      "new--famous-naval-battles-of-ww2-2002-2",
+      "Famous Naval Battles of WW2",
+      "2",
+      "New England Comics",
+      "2003-01-01",
+      "",
+      "",
+      "Famous Naval Battles of WW2 #2",
+      3.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "343947"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-2-7-38-to-5-1-38",
+      "Dick Tracy",
+      "2/7/38 to 5/1/38",
+      "Pacific Comics Club",
+      "2003-01-01",
+      "",
+      "",
+      "Alien Smuggling!",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "816856"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-5-2-38-to-7-24-38",
+      "Dick Tracy",
+      "5/2/38 to 7/24/38",
+      "Pacific Comics Club",
+      "2003-01-01",
+      "",
+      "",
+      "The Death of Dick Tracy",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "816857"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-1-9-39-to-4-2-39",
+      "Dick Tracy",
+      "1/9/39 to 4/2/39",
+      "Pacific Comics Club",
+      "2003-01-01",
+      "",
+      "",
+      "A Family Affair",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "816858"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-4-3-39-to-7-4-39",
+      "Dick Tracy",
+      "4/3/39 to 7/4/39",
+      "Pacific Comics Club",
+      "2003-01-01",
+      "",
+      "",
+      "The Princes of Bovinia",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "816859"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-9-27-39-to-12-19-39",
+      "Dick Tracy",
+      "9/27/39 to 12/19/39",
+      "Pacific Comics Club",
+      "2003-01-01",
+      "",
+      "",
+      "The Fur King and Out of the Past",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "816860"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-12-20-39-to-3-10-40",
+      "Dick Tracy",
+      "12/20/39 to 3/10/40",
+      "Pacific Comics Club",
+      "2003-01-01",
+      "",
+      "",
+      "Death of a Hood and the Kroywen Serum",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "816861"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-11-15-37-to-2-6-38",
+      "Dick Tracy",
+      "11/15/37 to 2/6/38",
+      "Pacific Comics Club",
+      "2003-01-01",
+      "",
+      "",
+      "The Blank-- Part Two",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1074982"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-7-25-38-to-10-16-38",
+      "Dick Tracy",
+      "7/25/38 to 10/16/38",
+      "Pacific Comics Club",
+      "2003-01-01",
+      "",
+      "",
+      "Trainload of Death",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1074983"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-10-17-38-to-1-8-39",
+      "Dick Tracy",
+      "10/17/38 to 1/8/39",
+      "Pacific Comics Club",
+      "2003-01-01",
+      "",
+      "",
+      "The Blind Detective",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1074986"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-5-7-39-to-9-26-39",
+      "Dick Tracy",
+      "5/7/39 to 9/26/39",
+      "Pacific Comics Club",
+      "2003-01-01",
+      "",
+      "",
+      "Unholy Matrimony",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1206826"
+      }
+    ],
+    [
+      "paci-charlie-chan-drama-at-the-crown-circus-2003-nn",
+      "Charlie Chan \"Drama at the Crown Circus\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2003-01-01",
+      "",
+      "",
+      "Charlie Chan \"Drama at the Crown Circus\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817175"
+      }
+    ],
+    [
+      "crus-victoria-cross-2002-1-2",
+      "Victoria Cross",
+      "1/2",
+      "Crusade Comics",
+      "2002-06-19",
+      "",
+      "",
+      "Victoria Cross #1/2",
+      4.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2002-06-19",
+        "gcdIssueId": "340939"
+      }
+    ],
+    [
+      "shan-extinctioners-1999-10",
+      "Extinctioners",
+      "10",
+      "Shanda Fantasy Arts",
+      "2002-02-01",
+      "",
+      "",
+      "Extinctioners #10",
+      4.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "882730"
+      }
+    ],
+    [
+      "crus-shi-through-the-ashes-2002-nn",
+      "Shi - Through the Ashes",
+      "[nn]",
+      "Crusade Comics",
+      "2002-01-10",
+      "",
+      "",
+      "Shi - Through the Ashes #[nn]",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "381938"
+      }
+    ],
+    [
+      "alte-quit-your-job-2002-nn",
+      "Quit Your Job",
+      "[nn]",
+      "Alternative Comics",
+      "2002-01-10",
+      "",
+      "",
+      "Quit Your Job #[nn]",
+      6.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "508226"
+      }
+    ],
+    [
+      "crus-shi-umadoshi-tour-book-2002-nn",
+      "Shi Umadoshi Tour Book",
+      "[nn]",
+      "Crusade Comics",
+      "2002-01-01",
+      "",
+      "",
+      "Shi Umadoshi Tour Book #[nn]",
+      4.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "744414"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-this-surprising-worl-2002-nn",
+      "Little Orphan Annie \"This Surprising World\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2002-01-01",
+      "",
+      "",
+      "Little Orphan Annie \"This Surprising World\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817188"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-the-sentence-2002-nn",
+      "Little Orphan Annie \"The Sentence\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2002-01-01",
+      "",
+      "",
+      "Little Orphan Annie \"The Sentence\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "998382"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-the-pro-and-the-con-2002-nn",
+      "Little Orphan Annie \"The Pro and the Con\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2002-01-01",
+      "",
+      "",
+      "Little Orphan Annie \"The Pro and the Con\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817187"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-the-man-of-mystery-2002-nn",
+      "Little Orphan Annie \"The Man of Mystery\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2002-01-01",
+      "",
+      "",
+      "Little Orphan Annie \"The Man of Mystery\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817186"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-the-little-worker-2002-nn",
+      "Little Orphan Annie \"The Little Worker\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2002-01-01",
+      "",
+      "",
+      "Little Orphan Annie \"The Little Worker\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817185"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-the-hobo-2002-nn",
+      "Little Orphan Annie \"The Hobo\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2002-01-01",
+      "",
+      "",
+      "Little Orphan Annie \"The Hobo\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817192"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-the-dreamer-2002-nn",
+      "Little Orphan Annie \"The Dreamer\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2002-01-01",
+      "",
+      "",
+      "Little Orphan Annie \"The Dreamer\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817184"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-the-business-of-givi-2002-nn",
+      "Little Orphan Annie \"The Business of Giving\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2002-01-01",
+      "",
+      "",
+      "Little Orphan Annie \"The Business of Giving\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817190"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-daddy-2002-nn",
+      "Little Orphan Annie \"Daddy\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2002-01-01",
+      "",
+      "",
+      "Little Orphan Annie \"Daddy\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "998381"
+      }
+    ],
+    [
+      "paci-dick-tracy-and-dick-tracy-jr-and-how-the-2002-nn",
+      "Dick Tracy and Dick Tracy, Jr. and How They Captured \"Stooge\" Viller",
+      "[nn]",
+      "Pacific Comics Club",
+      "2002-01-01",
+      "",
+      "",
+      "Dick Tracy and Dick Tracy, Jr. and How They Captured \"Stooge\" Viller #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817177"
+      }
+    ],
+    [
+      "paci-dick-tracy-2002-9-21-36-to-12-13-36",
+      "Dick Tracy",
+      "9/21/36  to 12/13/36",
+      "Pacific Comics Club",
+      "2002-01-01",
+      "",
+      "",
+      "The Purple Cross Gang, Part One",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "816852"
+      }
+    ],
+    [
+      "paci-charlie-chan-the-return-of-keeno-2002-nn",
+      "Charlie Chan \"The Return of Keeno\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2002-01-01",
+      "",
+      "",
+      "Charlie Chan \"The Return of Keeno\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817174"
+      }
+    ],
+    [
+      "harr-vampirella-1-1969-commemorative-edition-2001-1",
+      "Vampirella #1 1969 Commemorative Edition",
+      "1",
+      "Harris Comics",
+      "2001-10-01",
+      "",
+      "",
+      "Vampirella #1 1969 Commemorative Edition #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1108520"
+      }
+    ],
+    [
+      "alte-true-swamp-stoneground-and-hillbound-2001-nn",
+      "True Swamp: Stoneground and Hillbound",
+      "[nn]",
+      "Alternative Comics",
+      "2001-09-10",
+      "",
+      "",
+      "True Swamp: Stoneground and Hillbound #[nn]",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "341405"
+      }
+    ],
+    [
+      "siri-wild-about-harry-2001-1",
+      "Wild About Harry",
+      "1",
+      "Sirius Entertainment",
+      "2001-09-01",
+      "",
+      "",
+      "Wild About Harry #1",
+      9.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978157989046950995",
+        "gcdIssueId": "546020"
+      }
+    ],
+    [
+      "alte-titans-of-finance-true-tales-of-money-bu-2001-nn",
+      "Titans of Finance: True Tales of Money & Business",
+      "[nn]",
+      "Alternative Comics",
+      "2001-09-01",
+      "",
+      "",
+      "Titans of Finance: True Tales of Money & Business #[nn]",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978189186705750350",
+        "gcdIssueId": "1015665"
+      }
+    ],
+    [
+      "shan-sfa-s-atomic-mouse-2001-1",
+      "SFA's Atomic Mouse",
+      "1",
+      "Shanda Fantasy Arts",
+      "2001-09-01",
+      "",
+      "",
+      "SFA's Atomic Mouse #1",
+      4.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "869570"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-a-willing-helper-2001-nn",
+      "Little Orphan Annie \"A Willing Helper\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2001-07-01",
+      "",
+      "",
+      "Little Orphan Annie \"A Willing Helper\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817191"
+      }
+    ],
+    [
+      "new--the-tick-circus-maximus-redux-2001-1",
+      "The Tick Circus Maximus Redux",
+      "1",
+      "New England Comics",
+      "2001-04-01",
+      "",
+      "",
+      "The Tick Circus Maximus Redux #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "742853"
+      }
+    ],
+    [
+      "harr-vampirella-preview-edition-2001-nn",
+      "Vampirella Preview Edition",
+      "[nn]",
+      "Harris Comics",
+      "2001-03-01",
+      "",
+      "",
+      "Vampirella Preview Edition #[nn]",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "785585"
+      }
+    ],
+    [
+      "harr-vampirella-s-vampi-underworld-ashcan-2001-nn",
+      "Vampirella's Vampi: Underworld Ashcan",
+      "[nn]",
+      "Harris Comics",
+      "2001-02-01",
+      "",
+      "",
+      "Vampirella's Vampi: Underworld Ashcan #[nn]",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "745972"
+      }
+    ],
+    [
+      "crus-shi-akai-2001-1",
+      "Shi: Akai",
+      "1",
+      "Crusade Comics",
+      "2001-01-01",
+      "",
+      "",
+      "Shi: Akai #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "340943"
+      }
+    ],
+    [
+      "paci-radio-patrol-2001-nn",
+      "Radio Patrol",
+      "[nn]",
+      "Pacific Comics Club",
+      "2001-01-01",
+      "",
+      "",
+      "Radio Patrol #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "692256"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-and-the-haunted-hous-2001-nn",
+      "Little Orphan Annie and the Haunted House",
+      "[nn]",
+      "Pacific Comics Club",
+      "2001-01-01",
+      "",
+      "",
+      "Little Orphan Annie and the Haunted House #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817183"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-and-uncle-dan-2001-nn",
+      "Little Orphan Annie and Uncle Dan",
+      "[nn]",
+      "Pacific Comics Club",
+      "2001-01-01",
+      "",
+      "",
+      "Little Orphan Annie and Uncle Dan #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817180"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-shipwrecked-2001-nn",
+      "Little Orphan Annie \"Shipwrecked\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2001-01-01",
+      "",
+      "",
+      "Little Orphan Annie \"Shipwrecked\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817176"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-never-say-die-2001-nn",
+      "Little Orphan Annie \"Never Say Die!\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2001-01-01",
+      "",
+      "",
+      "Little Orphan Annie \"Never Say Die!\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817181"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-bucking-the-world-2001-nn",
+      "Little Orphan Annie \"Bucking the World\"",
+      "[nn]",
+      "Pacific Comics Club",
+      "2001-01-01",
+      "",
+      "",
+      "Little Orphan Annie \"Bucking the World\" #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817182"
+      }
+    ],
+    [
+      "paci-charlie-chan-dailies-and-sundays-10-30-3-2001-nn",
+      "Charlie Chan Dailies and Sundays 10/30/38 to 11/19/39",
+      "[nn]",
+      "Pacific Comics Club",
+      "2001-01-01",
+      "",
+      "",
+      "Charlie Chan Dailies and Sundays 10/30/38 to 11/19/39 #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "768269"
+      }
+    ],
+    [
+      "siri-32-pages-2001-1",
+      "32 Pages",
+      "1",
+      "Sirius Entertainment",
+      "2001-01-01",
+      "",
+      "",
+      "32 Pages #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "641619"
+      }
+    ],
+    [
+      "shan-super-megatopia-special-2000-1",
+      "Super Megatopia Special",
+      "1",
+      "Shanda Fantasy Arts",
+      "2000-12-01",
+      "",
+      "",
+      "Super Megatopia Special #1",
+      4.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1177574"
+      }
+    ],
+    [
+      "new--the-tick-the-pseudo-edition-2000-13",
+      "The Tick: The Pseudo Edition",
+      "13",
+      "New England Comics",
+      "2000-11-01",
+      "",
+      "",
+      "The Tick: The Pseudo Edition #13",
+      3.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747616"
+      }
+    ],
+    [
+      "harr-vampirella-julie-strain-special-2000-nn",
+      "Vampirella: Julie Strain Special",
+      "[nn]",
+      "Harris Comics",
+      "2000-09-01",
+      "",
+      "",
+      "Vampirella: Julie Strain Special #[nn]",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "745968"
+      }
+    ],
+    [
+      "alte-true-swamp-underwoods-and-overtime-2000-nn",
+      "True Swamp: Underwoods and Overtime",
+      "[nn]",
+      "Alternative Comics",
+      "2000-09-01",
+      "",
+      "",
+      "True Swamp: Underwoods and Overtime #[nn]",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "341404"
+      }
+    ],
+    [
+      "shan-in-the-zone-2000-1",
+      "In the Zone",
+      "[1]",
+      "Shanda Fantasy Arts",
+      "2000-08-01",
+      "",
+      "",
+      "In the Zone #[1]",
+      6.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "2000-10-11",
+        "gcdIssueId": "1181274"
+      }
+    ],
+    [
+      "harr-vampirella-s-vampi-limited-edition-previ-2000-nn",
+      "Vampirella's Vampi Limited Edition Preview Book",
+      "[nn]",
+      "Harris Comics",
+      "2000-05-01",
+      "",
+      "",
+      "Vampirella's Vampi Limited Edition Preview Book #[nn]",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "745973"
+      }
+    ],
+    [
+      "siri-akiko-the-planet-smoo-the-color-edition-2000-1",
+      "Akiko The Planet Smoo: The Color Edition",
+      "1",
+      "Sirius Entertainment",
+      "2000-02-01",
+      "",
+      "",
+      "Akiko The Planet Smoo: The Color Edition #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1032634"
+      }
+    ],
+    [
+      "crus-shi-judgment-night-2000-1",
+      "Shi: Judgment Night",
+      "1",
+      "Crusade Comics",
+      "2000-01-01",
+      "",
+      "",
+      "Shi: Judgment Night #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "524088"
+      }
+    ],
+    [
+      "crus-shi-zero-2000-nn",
+      "Shi Zero",
+      "[nn]",
+      "Crusade Comics",
+      "2000-01-01",
+      "",
+      "",
+      "Shi Zero #[nn]",
+      2.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "353045"
+      }
+    ],
+    [
+      "paci-reg-lar-fellers-2000-nn",
+      "Reg'lar Fellers",
+      "[nn]",
+      "Pacific Comics Club",
+      "2000-01-01",
+      "",
+      "",
+      "Reg'lar Fellers #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817178"
+      }
+    ],
+    [
+      "paci-little-orphan-annie-in-the-circus-2000-nn",
+      "Little Orphan Annie in the Circus",
+      "[nn]",
+      "Pacific Comics Club",
+      "2000-01-01",
+      "",
+      "",
+      "Little Orphan Annie in the Circus #[nn]",
+      9.5,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "817202"
+      }
+    ],
+    [
+      "siri-klor-trade-paperback-2000-1",
+      "Klor: Trade Paperback",
+      "1",
+      "Sirius Entertainment",
+      "2000-01-01",
+      "",
+      "",
+      "Klor: Trade Paperback #1",
+      9.95,
+      "tpb",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978157989036050995",
+        "gcdIssueId": "781308"
+      }
+    ],
+    [
+      "harr-vampirella-dangerous-games-limited-ashca-1999-nn",
+      "Vampirella: Dangerous Games Limited Ashcan",
+      "[nn]",
+      "Harris Comics",
+      "1999-10-01",
+      "",
+      "",
+      "Vampirella: Dangerous Games Limited Ashcan #[nn]",
+      9.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740617"
+      }
+    ],
+    [
+      "robi-steve-ditko-s-80-page-package-1999-2",
+      "Steve Ditko's 80-Page Package",
+      "2",
+      "Robin Snyder and Steve Ditko",
+      "1999-09-01",
+      "",
+      "",
+      "Steve Ditko's 80-Page Package #2",
+      9.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "780967317311",
+        "streetDate": "1999-08-11",
+        "gcdIssueId": "562389"
+      }
+    ],
+    [
+      "siri-dawn-10th-anniversary-special-1999-nn",
+      "Dawn: 10th Anniversary Special",
+      "[nn]",
+      "Sirius Entertainment",
+      "1999-09-01",
+      "",
+      "",
+      "Dawn: 10th Anniversary Special #[nn]",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748863"
+      }
+    ],
+    [
+      "abc--double-impact-2069-1999-1",
+      "Double Impact 2069",
+      "1",
+      "ABC Studios",
+      "1999-08-01",
+      "",
+      "",
+      "Double Impact 2069 #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740390"
+      }
+    ],
+    [
+      "harr-vampirella-manga-3000-a-d-limited-ashcan-1999-nn",
+      "Vampirella Manga 3000 A.D. Limited Ashcan",
+      "[nn]",
+      "Harris Comics",
+      "1999-07-01",
+      "",
+      "",
+      "Vampirella Manga 3000 A.D. Limited Ashcan #[nn]",
+      7.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740853"
+      }
+    ],
+    [
+      "abc--double-impact-hard-copy-1999-1",
+      "Double Impact Hard Copy",
+      "1",
+      "ABC Studios",
+      "1999-07-01",
+      "",
+      "",
+      "Double Impact Hard Copy #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "742154"
+      }
+    ],
+    [
+      "abc--double-impact-bikini-special-1998-1999",
+      "Double Impact \"Bikini Special\"",
+      "1999",
+      "ABC Studios",
+      "1999-07-01",
+      "",
+      "",
+      "Double Impact \"Bikini Special\" #1999",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2554240"
+      }
+    ],
+    [
+      "stud-valkyr-1999-1",
+      "Valkyr",
+      "1",
+      "Studio Ironcat",
+      "1999-05-01",
+      "",
+      "",
+      "Valkyr #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1035406"
+      }
+    ],
+    [
+      "abc--double-impact-spring-special-1999-1",
+      "Double Impact Spring Special",
+      "1",
+      "ABC Studios",
+      "1999-04-01",
+      "",
+      "",
+      "Double Impact Spring Special #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740381"
+      }
+    ],
+    [
+      "harr-vampirella-lady-death-1999-1",
+      "Vampirella / Lady Death",
+      "1",
+      "Harris Comics",
+      "1999-02-01",
+      "",
+      "",
+      "Vampirella / Lady Death #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740601"
+      }
+    ],
+    [
+      "alte-the-lemon-kids-1999-1",
+      "The Lemon Kids",
+      "1",
+      "Alternative Comics",
+      "1999-02-01",
+      "",
+      "",
+      "The Lemon Kids #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "360290"
+      }
+    ],
+    [
+      "alte-monica-s-story-1999-nn",
+      "Monica's Story",
+      "[nn]",
+      "Alternative Comics",
+      "1999-02-01",
+      "",
+      "",
+      "Monica's Story #[nn]",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "780134"
+      }
+    ],
+    [
+      "alte-the-horrible-truth-about-comics-1999-nn",
+      "The Horrible Truth About Comics",
+      "[nn]",
+      "Alternative Comics",
+      "1999-01-10",
+      "",
+      "",
+      "The Horrible Truth About Comics #[nn]",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "334635"
+      }
+    ],
+    [
+      "crus-shi-the-cannes-film-festival-edition-1999-nn",
+      "Shi: The Cannes Film Festival Edition",
+      "[nn]",
+      "Crusade Comics",
+      "1999-01-01",
+      "",
+      "",
+      "Shi: The Cannes Film Festival Edition #[nn]",
+      9.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "744391"
+      }
+    ],
+    [
+      "abc--double-impact-hot-shots-1999-1",
+      "Double Impact Hot Shots",
+      "1",
+      "ABC Studios",
+      "1999-01-01",
+      "",
+      "",
+      "Double Impact Hot Shots #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740277"
+      }
+    ],
+    [
+      "abc--double-impact-alive-1999-1",
+      "Double Impact Alive",
+      "1",
+      "ABC Studios",
+      "1999-01-01",
+      "",
+      "",
+      "Double Impact Alive #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740279"
+      }
+    ],
+    [
+      "abc--china-jazz-2000-0",
+      "China & Jazz",
+      "0",
+      "ABC Studios",
+      "1999-01-01",
+      "",
+      "",
+      "China & Jazz #0",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "746053"
+      }
+    ],
+    [
+      "harr-vampirella-manga-2999-limited-edition-as-1998-nn",
+      "Vampirella Manga 2999 Limited Edition Ashcan",
+      "[nn]",
+      "Harris Comics",
+      "1998-12-01",
+      "",
+      "",
+      "Vampirella Manga 2999 Limited Edition Ashcan #[nn]",
+      7.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740852"
+      }
+    ],
+    [
+      "abc--full-impact-1998-1",
+      "Full Impact",
+      "1",
+      "ABC Studios",
+      "1998-12-01",
+      "",
+      "",
+      "Full Impact #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "741397"
+      }
+    ],
+    [
+      "alte-slowpoke-comix-1998-1",
+      "Slowpoke Comix",
+      "1",
+      "Alternative Comics",
+      "1998-11-01",
+      "",
+      "",
+      "Slowpoke Comix #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "354617"
+      }
+    ],
+    [
+      "abc--art-attack-1998-2",
+      "Art Attack",
+      "2",
+      "ABC Studios",
+      "1998-11-01",
+      "",
+      "",
+      "Art Attack #2",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2555073"
+      }
+    ],
+    [
+      "abc--double-impact-from-the-ashes-1998-1",
+      "Double Impact: From the Ashes",
+      "1",
+      "ABC Studios",
+      "1998-10-01",
+      "",
+      "",
+      "Double Impact: From the Ashes #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1052189"
+      }
+    ],
+    [
+      "abc--double-impact-suicide-run-1998-1",
+      "Double Impact Suicide Run",
+      "1",
+      "ABC Studios",
+      "1998-10-01",
+      "",
+      "",
+      "Double Impact Suicide Run #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740403"
+      }
+    ],
+    [
+      "abc--double-impact-2000-one-step-beyond-1998-1",
+      "Double Impact 2000 \"One Step Beyond\"",
+      "1",
+      "ABC Studios",
+      "1998-09-01",
+      "",
+      "",
+      "Double Impact 2000 \"One Step Beyond\" #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740396"
+      }
+    ],
+    [
+      "abc--double-impact-bikini-special-1998-1998",
+      "Double Impact \"Bikini Special\"",
+      "1998",
+      "ABC Studios",
+      "1998-09-01",
+      "",
+      "",
+      "Double Impact \"Bikini Special\" #1998",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740269"
+      }
+    ],
+    [
+      "abc--art-attack-1998-1",
+      "Art Attack",
+      "1",
+      "ABC Studios",
+      "1998-09-01",
+      "",
+      "",
+      "Art Attack #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "846059"
+      }
+    ],
+    [
+      "siri-sheba-pantheon-1998-1",
+      "Sheba Pantheon",
+      "1",
+      "Sirius Entertainment",
+      "1998-08-01",
+      "",
+      "",
+      "Sheba Pantheon #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1998-09-09",
+        "gcdIssueId": "893453"
+      }
+    ],
+    [
+      "new--the-tick-the-luny-bin-preview-1998-0",
+      "The Tick The Luny Bin Preview",
+      "0",
+      "New England Comics",
+      "1998-07-01",
+      "",
+      "",
+      "The Tick The Luny Bin Preview #0",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1149571"
+      }
+    ],
+    [
+      "abc--jazz-solitaire-1998-3",
+      "Jazz \"Solitaire\"",
+      "3",
+      "ABC Studios",
+      "1998-06-01",
+      "",
+      "",
+      "Jazz \"Solitaire\" #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "746756"
+      }
+    ],
+    [
+      "harr-vampirella-painkiller-jane-1998-1",
+      "Vampirella / Painkiller Jane",
+      "1",
+      "Harris Comics",
+      "1998-05-01",
+      "",
+      "",
+      "Vampirella / Painkiller Jane #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740783"
+      }
+    ],
+    [
+      "stud-love-drive-1998-1",
+      "Love Drive",
+      "1",
+      "Studio Ironcat",
+      "1998-05-01",
+      "",
+      "",
+      "Love Drive #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1042715"
+      }
+    ],
+    [
+      "abc--jazz-solitaire-1998-1",
+      "Jazz \"Solitaire\"",
+      "1",
+      "ABC Studios",
+      "1998-05-01",
+      "",
+      "",
+      "Jazz \"Solitaire\" #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "746754"
+      }
+    ],
+    [
+      "abc--jazz-solitaire-1998-2",
+      "Jazz \"Solitaire\"",
+      "2",
+      "ABC Studios",
+      "1998-05-01",
+      "",
+      "",
+      "Jazz \"Solitaire\" #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "746755"
+      }
+    ],
+    [
+      "crus-shi-masquerade-1998-1",
+      "Shi: Masquerade",
+      "1",
+      "Crusade Comics",
+      "1998-03-01",
+      "",
+      "",
+      "Shi: Masquerade #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "739953"
+      }
+    ],
+    [
+      "bone-young-dracula-prayer-of-the-vampire-1997-2",
+      "Young Dracula: Prayer of the Vampire",
+      "2",
+      "Boneyard Press",
+      "1998-02-01",
+      "",
+      "",
+      "Young Dracula: Prayer of the Vampire #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757219"
+      }
+    ],
+    [
+      "abc--wild-thingz-1998-0",
+      "Wild Thingz",
+      "0",
+      "ABC Studios",
+      "1998-01-01",
+      "",
+      "",
+      "Wild Thingz #0",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "741392"
+      }
+    ],
+    [
+      "siri-supermodels-in-the-rainforest-1998-1",
+      "Supermodels in the Rainforest",
+      "1",
+      "Sirius Entertainment",
+      "1998-01-01",
+      "",
+      "",
+      "Supermodels in the Rainforest #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "768908"
+      }
+    ],
+    [
+      "shan-sfa-international-1998-1",
+      "SFA International",
+      "1",
+      "Shanda Fantasy Arts",
+      "1998-01-01",
+      "",
+      "",
+      "SFA International #1",
+      4.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1197793"
+      }
+    ],
+    [
+      "abc--nikki-blade-revenge-1998-1",
+      "Nikki Blade \"Revenge\"",
+      "1",
+      "ABC Studios",
+      "1998-01-01",
+      "",
+      "",
+      "Nikki Blade \"Revenge\" #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747073"
+      }
+    ],
+    [
+      "abc--n-v-night-vixen-1998-0",
+      "N.V. Night Vixen",
+      "0",
+      "ABC Studios",
+      "1998-01-01",
+      "",
+      "",
+      "N.V. Night Vixen #0",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747776"
+      }
+    ],
+    [
+      "abc--double-impact-from-the-ashes-1998-2",
+      "Double Impact: From the Ashes",
+      "2",
+      "ABC Studios",
+      "1998-01-01",
+      "",
+      "",
+      "Double Impact: From the Ashes #2",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "2555395"
+      }
+    ],
+    [
+      "abc--double-impact-raw-1997-2",
+      "Double Impact Raw",
+      "2",
+      "ABC Studios",
+      "1998-01-01",
+      "",
+      "",
+      "Double Impact Raw #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "745746"
+      }
+    ],
+    [
+      "abc--double-impact-raw-1997-3",
+      "Double Impact Raw",
+      "3",
+      "ABC Studios",
+      "1998-01-01",
+      "",
+      "",
+      "Double Impact Raw #3",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "745747"
+      }
+    ],
+    [
+      "abc--double-impact-luxura-1998-1",
+      "Double Impact / Luxura",
+      "1",
+      "ABC Studios",
+      "1998-01-01",
+      "",
+      "",
+      "Double Impact / Luxura #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "745743"
+      }
+    ],
+    [
+      "abc--double-impact-trigger-happy-1998-1",
+      "Double Impact \"Trigger Happy\"",
+      "1",
+      "ABC Studios",
+      "1998-01-01",
+      "",
+      "",
+      "Double Impact \"Trigger Happy\" #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "697613"
+      }
+    ],
+    [
+      "bone-babylon-crush-a-babylon-bondage-christma-1998-1",
+      "Babylon Crush: A Babylon Bondage Christmas",
+      "1",
+      "Boneyard Press",
+      "1998-01-01",
+      "",
+      "",
+      "Babylon Crush: A Babylon Bondage Christmas #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "543747"
+      }
+    ],
+    [
+      "lond-razor-embrace-the-spawning-1997-1",
+      "Razor / Embrace: The Spawning",
+      "1",
+      "London Night Studios",
+      "1997-12-01",
+      "",
+      "",
+      "Razor / Embrace: The Spawning #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "738033"
+      }
+    ],
+    [
+      "lond-maximum-manga-1997-1",
+      "Maximum Manga",
+      "1",
+      "London Night Studios",
+      "1997-11-01",
+      "",
+      "",
+      "Maximum Manga #1",
+      4.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760542"
+      }
+    ],
+    [
+      "siri-kiss-tell-1997-1",
+      "Kiss & Tell",
+      "1",
+      "Sirius Entertainment",
+      "1997-11-01",
+      "",
+      "",
+      "Kiss & Tell #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "746951"
+      }
+    ],
+    [
+      "abc--double-impact-raw-1997-1",
+      "Double Impact Raw",
+      "1",
+      "ABC Studios",
+      "1997-11-01",
+      "",
+      "",
+      "Double Impact Raw #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "745745"
+      }
+    ],
+    [
+      "harr-vampirella-dracula-the-centennial-1997-nn",
+      "Vampirella / Dracula: The Centennial",
+      "[nn]",
+      "Harris Comics",
+      "1997-10-10",
+      "",
+      "",
+      "Vampirella / Dracula: The Centennial #[nn]",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "364074"
+      }
+    ],
+    [
+      "crus-shi-vampirella-1997-1",
+      "Shi / Vampirella",
+      "1",
+      "Crusade Comics",
+      "1997-10-10",
+      "",
+      "",
+      "Shi / Vampirella #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740779"
+      }
+    ],
+    [
+      "blac-hari-kari-possessed-by-evil-1997-1",
+      "Hari Kari: Possessed by Evil",
+      "1",
+      "Blackout Comics",
+      "1997-10-10",
+      "",
+      "",
+      "Hari Kari: Possessed by Evil #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "331374"
+      }
+    ],
+    [
+      "lond-razor-switchblade-symphony-1997-nn",
+      "Razor: Switchblade Symphony",
+      "[nn]",
+      "London Night Studios",
+      "1997-10-01",
+      "",
+      "",
+      "Razor: Switchblade Symphony #[nn]",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "738034"
+      }
+    ],
+    [
+      "lond-razor-pictorial-lady-is-a-killer-1997-1",
+      "Razor: Pictorial (Lady is a Killer)",
+      "1",
+      "London Night Studios",
+      "1997-10-01",
+      "",
+      "",
+      "Razor: Pictorial (Lady is a Killer) #1",
+      5.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "794858"
+      }
+    ],
+    [
+      "abc--nikki-blade-1997-1",
+      "Nikki Blade",
+      "1",
+      "ABC Studios",
+      "1997-10-01",
+      "",
+      "",
+      "Nikki Blade #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747072"
+      }
+    ],
+    [
+      "harr-vampirella-shi-1997-1",
+      "Vampirella/Shi",
+      "1",
+      "Harris Comics",
+      "1997-09-17",
+      "",
+      "",
+      "Vampirella/Shi #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1997-09-17",
+        "gcdIssueId": "529279"
+      }
+    ],
+    [
+      "lond-tommi-gunn-annual-1997-1",
+      "Tommi Gunn Annual",
+      "1",
+      "London Night Studios",
+      "1997-09-01",
+      "",
+      "",
+      "Tommi Gunn Annual #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740414"
+      }
+    ],
+    [
+      "crus-shi-nightstalkers-1997-1",
+      "Shi: Nightstalkers",
+      "1",
+      "Crusade Comics",
+      "1997-09-01",
+      "",
+      "",
+      "Shi: Nightstalkers #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "739954"
+      }
+    ],
+    [
+      "lond-razor-deep-cuts-1997-nn",
+      "Razor: Deep Cuts",
+      "[nn]",
+      "London Night Studios",
+      "1997-09-01",
+      "",
+      "",
+      "Razor: Deep Cuts #[nn]",
+      6.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760565"
+      }
+    ],
+    [
+      "lond-lethal-strike-archives-1997-1",
+      "Lethal Strike Archives",
+      "1",
+      "London Night Studios",
+      "1997-09-01",
+      "",
+      "",
+      "Lethal Strike Archives #1",
+      5.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760543"
+      }
+    ],
+    [
+      "abc--double-impact-raising-hell-1997-1",
+      "Double Impact Raising Hell",
+      "1",
+      "ABC Studios",
+      "1997-09-01",
+      "",
+      "",
+      "Double Impact Raising Hell #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "745744"
+      }
+    ],
+    [
+      "lond-vr-vixen-1997-0",
+      "VR Vixen",
+      "0",
+      "London Night Studios",
+      "1997-07-01",
+      "",
+      "",
+      "VR Vixen #0",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740980"
+      }
+    ],
+    [
+      "harr-vampirella-wetworks-1997-1",
+      "Vampirella / Wetworks",
+      "1",
+      "Harris Comics",
+      "1997-06-25",
+      "",
+      "",
+      "Vampirella / Wetworks #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1997-06-25",
+        "gcdIssueId": "740893"
+      }
+    ],
+    [
+      "crus-tomoe-unforgettable-fire-1997-1",
+      "Tomoe: Unforgettable Fire",
+      "1",
+      "Crusade Comics",
+      "1997-06-01",
+      "",
+      "",
+      "Tomoe: Unforgettable Fire #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740429"
+      }
+    ],
+    [
+      "harr-pantha-haunted-passion-1997-1",
+      "Pantha: Haunted Passion",
+      "1",
+      "Harris Comics",
+      "1997-05-01",
+      "",
+      "",
+      "Pantha: Haunted Passion #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "876668"
+      }
+    ],
+    [
+      "knig-ronna-1997-1",
+      "Ronna",
+      "1",
+      "Knight Press",
+      "1997-04-01",
+      "",
+      "",
+      "Ronna #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760447"
+      }
+    ],
+    [
+      "harr-vampirella-vs-pantha-1997-1",
+      "Vampirella vs Pantha",
+      "1",
+      "Harris Comics",
+      "1997-03-01",
+      "",
+      "",
+      "Vampirella vs Pantha #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "396981"
+      }
+    ],
+    [
+      "lond-sisters-of-mercy-1997-0",
+      "Sisters of Mercy",
+      "0",
+      "London Night Studios",
+      "1997-03-01",
+      "",
+      "",
+      "Sisters of Mercy #0",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760559"
+      }
+    ],
+    [
+      "lond-razor-and-the-ladies-of-london-night-1997-1",
+      "Razor and the Ladies of London Night",
+      "1",
+      "London Night Studios",
+      "1997-03-01",
+      "",
+      "",
+      "Razor and the Ladies of London Night #1",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "738032"
+      }
+    ],
+    [
+      "harr-cyberfrog-0-1997-0",
+      "Cyberfrog #0",
+      "0",
+      "Harris Comics",
+      "1997-03-01",
+      "",
+      "",
+      "Cyberfrog #0 #0",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "336211"
+      }
+    ],
+    [
+      "harr-the-death-of-vampirella-memorial-edition-1997-1",
+      "The Death of Vampirella: Memorial Edition",
+      "1",
+      "Harris Comics",
+      "1997-02-01",
+      "",
+      "",
+      "The Death of Vampirella: Memorial Edition #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "795538"
+      }
+    ],
+    [
+      "harr-vampirella-pantha-showcase-1997-1",
+      "Vampirella & Pantha Showcase",
+      "1",
+      "Harris Comics",
+      "1997-01-01",
+      "",
+      "",
+      "Vampirella & Pantha Showcase #1",
+      1.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740891"
+      }
+    ],
+    [
+      "blac-tormentress-mistress-of-hell-1997-0",
+      "Tormentress: Mistress of Hell",
+      "0",
+      "Blackout Comics",
+      "1997-01-01",
+      "",
+      "",
+      "Tormentress: Mistress of Hell #0",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "847172"
+      }
+    ],
+    [
+      "blac-lady-vampre-in-the-flesh-1997-1",
+      "Lady Vampre: In the Flesh",
+      "1",
+      "Blackout Comics",
+      "1997-01-01",
+      "",
+      "",
+      "Lady Vampre: In the Flesh #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "787633"
+      }
+    ],
+    [
+      "bone-five-years-of-pain-1997-nn",
+      "Five Years of Pain",
+      "[nn]",
+      "Boneyard Press",
+      "1997-01-01",
+      "",
+      "",
+      "Five Years of Pain #[nn]",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757246"
+      }
+    ],
+    [
+      "siri-chi-chian-1997-1",
+      "Chi-Chian",
+      "1",
+      "Sirius Entertainment",
+      "1997-01-01",
+      "",
+      "",
+      "Chi-Chian #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "999587"
+      }
+    ],
+    [
+      "maxi-cabbot-bloodhunter-1997-1",
+      "Cabbot: Bloodhunter",
+      "1",
+      "Maximum Press",
+      "1997-01-01",
+      "",
+      "",
+      "Cabbot: Bloodhunter #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "358545"
+      }
+    ],
+    [
+      "harr-vampirella-strikes-annual-1996-1",
+      "Vampirella Strikes Annual",
+      "1",
+      "Harris Comics",
+      "1996-12-01",
+      "",
+      "",
+      "Vampirella Strikes Annual #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740892"
+      }
+    ],
+    [
+      "maxi-santa-the-barbarian-1996-1",
+      "Santa the Barbarian",
+      "1",
+      "Maximum Press",
+      "1996-12-01",
+      "",
+      "",
+      "Santa the Barbarian #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "787555"
+      }
+    ],
+    [
+      "new--chainsaw-vigilante-bonanza-1996-1",
+      "Chainsaw Vigilante Bonanza",
+      "1",
+      "New England Comics",
+      "1996-12-01",
+      "",
+      "",
+      "Chainsaw Vigilante Bonanza #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "728419"
+      }
+    ],
+    [
+      "lond-nightvision-all-about-eve-1996-1",
+      "Nightvision: All About Eve",
+      "1",
+      "London Night Studios",
+      "1996-11-01",
+      "",
+      "",
+      "Nightvision: All About Eve #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747059"
+      }
+    ],
+    [
+      "lond-embrace-kill-me-softly-1996-1",
+      "Embrace: Kill Me Softly",
+      "1",
+      "London Night Studios",
+      "1996-11-01",
+      "",
+      "",
+      "Embrace: Kill Me Softly #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760532"
+      }
+    ],
+    [
+      "maxi-avengelyne-warrior-nun-areala-1994-1",
+      "Avengelyne / Warrior Nun Areala",
+      "1",
+      "Maximum Press",
+      "1996-11-01",
+      "",
+      "",
+      "Avengelyne / Warrior Nun Areala #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "729506"
+      }
+    ],
+    [
+      "crus-shi-kaidan-1996-1",
+      "Shi: Kaidan",
+      "1",
+      "Crusade Comics",
+      "1996-10-01",
+      "",
+      "",
+      "Shi: Kaidan #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "912540"
+      }
+    ],
+    [
+      "knig-knight-s-round-table-1996-1",
+      "Knight's Round Table",
+      "1",
+      "Knight Press",
+      "1996-10-01",
+      "",
+      "",
+      "Knight's Round Table #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760455"
+      }
+    ],
+    [
+      "maxi-avengelyne-bible-avengelyne-armageddon-p-1996-1",
+      "Avengelyne Bible / Avengelyne Armageddon Preview",
+      "1",
+      "Maximum Press",
+      "1996-10-01",
+      "",
+      "",
+      "Avengelyne Bible / Avengelyne Armageddon Preview #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "744790"
+      }
+    ],
+    [
+      "harr-vampirella-the-blood-red-queen-of-hearts-1996-nn",
+      "Vampirella & The Blood Red Queen of Hearts",
+      "[nn]",
+      "Harris Comics",
+      "1996-09-01",
+      "",
+      "",
+      "Vampirella & The Blood Red Queen of Hearts #[nn]",
+      9.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "906688"
+      }
+    ],
+    [
+      "crus-tomoe-witchblade-fire-sermon-1996-1",
+      "Tomoe-Witchblade: Fire Sermon",
+      "1",
+      "Crusade Comics",
+      "1996-09-01",
+      "",
+      "",
+      "Tomoe-Witchblade: Fire Sermon #1",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "341515"
+      }
+    ],
+    [
+      "lond-morbid-angel-penance-1996-1",
+      "Morbid Angel: Penance",
+      "1",
+      "London Night Studios",
+      "1996-09-01",
+      "",
+      "",
+      "Morbid Angel: Penance #1",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760541"
+      }
+    ],
+    [
+      "maxi-avengelyne-glory-the-godyssey-1996-1",
+      "Avengelyne / Glory: The Godyssey",
+      "1",
+      "Maximum Press",
+      "1996-09-01",
+      "",
+      "",
+      "Avengelyne / Glory: The Godyssey #1",
+      2.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "752919"
+      }
+    ],
+    [
+      "crus-manga-shi-shiseiji-1996-1",
+      "Manga Shi: Shiseiji",
+      "1",
+      "Crusade Comics",
+      "1996-08-10",
+      "",
+      "",
+      "Manga Shi: Shiseiji #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "353506"
+      }
+    ],
+    [
+      "crus-shi-vs-tomoe-1996-1",
+      "Shi vs. Tomoe",
+      "1",
+      "Crusade Comics",
+      "1996-08-01",
+      "",
+      "",
+      "Shi vs. Tomoe #1",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740021"
+      }
+    ],
+    [
+      "bone-nightmare-walker-1996-1",
+      "Nightmare Walker",
+      "1",
+      "Boneyard Press",
+      "1996-07-01",
+      "",
+      "",
+      "Nightmare Walker #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "816313"
+      }
+    ],
+    [
+      "maxi-avengelyne-glory-swimsuit-1996-1",
+      "Avengelyne/Glory Swimsuit",
+      "1",
+      "Maximum Press",
+      "1996-06-01",
+      "",
+      "",
+      "Avengelyne/Glory Swimsuit #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "795859"
+      }
+    ],
+    [
+      "new--the-tick-reprise-special-edition-1996-1",
+      "The Tick Reprise Special Edition",
+      "1",
+      "New England Comics",
+      "1996-05-01",
+      "",
+      "",
+      "The Tick Reprise Special Edition #1",
+      5.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "334639"
+      }
+    ],
+    [
+      "lond-lethal-strike-double-impact-lethal-impac-1996-1",
+      "Lethal Strike/Double Impact: Lethal Impact",
+      "1",
+      "London Night Studios",
+      "1996-05-01",
+      "",
+      "",
+      "Lethal Strike/Double Impact: Lethal Impact #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "355699"
+      }
+    ],
+    [
+      "lond-lethal-strike-annual-1996-1",
+      "Lethal Strike Annual",
+      "1",
+      "London Night Studios",
+      "1996-04-01",
+      "",
+      "",
+      "Lethal Strike Annual #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "327369"
+      }
+    ],
+    [
+      "maxi-devlin-1996-1",
+      "Devlin",
+      "1",
+      "Maximum Press",
+      "1996-04-01",
+      "",
+      "",
+      "Devlin #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "847015"
+      }
+    ],
+    [
+      "lond-blood-reign-saga-1996-1",
+      "Blood Reign Saga",
+      "1",
+      "London Night Studios",
+      "1996-04-01",
+      "",
+      "",
+      "Blood Reign Saga #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "356197"
+      }
+    ],
+    [
+      "crus-horseman-1996-1",
+      "Horseman",
+      "1",
+      "Crusade Comics",
+      "1996-03-01",
+      "",
+      "",
+      "Horseman #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "849565"
+      }
+    ],
+    [
+      "bone-girl-with-a-gun-1996-nn",
+      "Girl with a Gun",
+      "[nn]",
+      "Boneyard Press",
+      "1996-03-01",
+      "",
+      "",
+      "Girl with a Gun #[nn]",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757223"
+      }
+    ],
+    [
+      "knig-blood-roses-special-1996-1",
+      "Blood & Roses Special",
+      "1",
+      "Knight Press",
+      "1996-03-01",
+      "",
+      "",
+      "Blood & Roses Special #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760454"
+      }
+    ],
+    [
+      "star-the-hidden-world-1996-nn",
+      "The Hidden World",
+      "[nn]",
+      "Starhead Comix",
+      "1996-01-01",
+      "",
+      "",
+      "The Hidden World #[nn]",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "863513"
+      }
+    ],
+    [
+      "lond-sade-razor-encore-edition-1996-1",
+      "Sade / Razor Encore Edition",
+      "1",
+      "London Night Studios",
+      "1996-01-01",
+      "",
+      "",
+      "Sade / Razor Encore Edition #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760556"
+      }
+    ],
+    [
+      "blac-lady-vampre-pleasures-of-the-flesh-1996-1",
+      "Lady Vampré: Pleasures of the Flesh",
+      "1",
+      "Blackout Comics",
+      "1996-01-01",
+      "",
+      "",
+      "Lady Vampré: Pleasures of the Flesh #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "794182"
+      }
+    ],
+    [
+      "shan-katmandu-velites-and-hoplites-1996-1",
+      "Katmandu: Velites and Hoplites",
+      "1",
+      "Shanda Fantasy Arts",
+      "1996-01-01",
+      "",
+      "",
+      "Katmandu: Velites and Hoplites #1",
+      8.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1048979"
+      }
+    ],
+    [
+      "blac-hari-kari-rebirth-1996-1",
+      "Hari Kari: Rebirth",
+      "1",
+      "Blackout Comics",
+      "1996-01-01",
+      "",
+      "",
+      "Hari Kari: Rebirth #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "999575"
+      }
+    ],
+    [
+      "fant-amazon-woman-jungle-fever-1996-nn",
+      "Amazon Woman: Jungle Fever!",
+      "[nn]",
+      "FantaCo Enterprises",
+      "1996-01-01",
+      "",
+      "",
+      "Amazon Woman: Jungle Fever! #[nn]",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "735148"
+      }
+    ],
+    [
+      "fant-amazon-woman-invaders-of-terror-1996-nn",
+      "Amazon Woman: Invaders of Terror",
+      "[nn]",
+      "FantaCo Enterprises",
+      "1996-01-01",
+      "",
+      "",
+      "Amazon Woman: Invaders of Terror #[nn]",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "735127"
+      }
+    ],
+    [
+      "lond-razor-cry-no-more-1995-nn",
+      "Razor: Cry No More",
+      "[nn]",
+      "London Night Studios",
+      "1995-12-01",
+      "",
+      "",
+      "Razor: Cry No More #[nn]",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "340935"
+      }
+    ],
+    [
+      "bone-god-flesh-1995-0",
+      "God Flesh",
+      "0",
+      "Boneyard Press",
+      "1995-11-01",
+      "",
+      "",
+      "God Flesh #0",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757245"
+      }
+    ],
+    [
+      "harr-vampirella-pin-up-special-1995-nn",
+      "Vampirella Pin-Up Special",
+      "[nn]",
+      "Harris Comics",
+      "1995-10-01",
+      "",
+      "",
+      "Vampirella Pin-Up Special #[nn]",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "327750"
+      }
+    ],
+    [
+      "crus-shi-cyblade-the-battle-for-independents-1995-1",
+      "Shi / Cyblade: The Battle for Independents",
+      "1",
+      "Crusade Comics",
+      "1995-09-01",
+      "",
+      "",
+      "Shi / Cyblade: The Battle for Independents #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "351101"
+      }
+    ],
+    [
+      "maxi-avengelyne-glory-1995-1",
+      "Avengelyne/Glory",
+      "1",
+      "Maximum Press",
+      "1995-09-01",
+      "",
+      "",
+      "Avengelyne/Glory #1",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "743777"
+      }
+    ],
+    [
+      "knig-warlace-1995-1-4",
+      "Warlace",
+      "1/4",
+      "Knight Press",
+      "1995-08-10",
+      "",
+      "",
+      "Warlace #1/4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328263"
+      }
+    ],
+    [
+      "bone-sever-1995-1",
+      "Sever",
+      "1",
+      "Boneyard Press",
+      "1995-08-10",
+      "",
+      "",
+      "Sever #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "359539"
+      }
+    ],
+    [
+      "bone-mighty-morphing-rump-rangers-1995-1",
+      "Mighty Morphing Rump Rangers",
+      "1",
+      "Boneyard Press",
+      "1995-08-01",
+      "",
+      "",
+      "Mighty Morphing Rump Rangers #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748942"
+      }
+    ],
+    [
+      "blac-death-of-lady-vampre-1995-1",
+      "Death of Lady Vampré",
+      "1",
+      "Blackout Comics",
+      "1995-08-01",
+      "",
+      "",
+      "Death of Lady Vampré #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "407893"
+      }
+    ],
+    [
+      "maxi-avengelyne-swimsuit-1995-1",
+      "Avengelyne Swimsuit",
+      "1",
+      "Maximum Press",
+      "1995-08-01",
+      "",
+      "",
+      "Avengelyne Swimsuit #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "744838"
+      }
+    ],
+    [
+      "bone-babylon-crush-1995-2",
+      "Babylon Crush",
+      "2",
+      "Boneyard Press",
+      "1995-07-01",
+      "",
+      "",
+      "Babylon Crush #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "590323"
+      }
+    ],
+    [
+      "lond-razor-zero-1995-nn",
+      "Razor: Zero",
+      "[nn]",
+      "London Night Studios",
+      "1995-04-01",
+      "",
+      "",
+      "Razor: Zero #[nn]",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "340936"
+      }
+    ],
+    [
+      "lond-razor-swimsuit-special-1995-nn",
+      "Razor: Swimsuit Special",
+      "[nn]",
+      "London Night Studios",
+      "1995-04-01",
+      "",
+      "",
+      "Razor: Swimsuit Special #[nn]",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "739844"
+      }
+    ],
+    [
+      "siri-eleven-or-one-an-angry-christ-comic-1995-1",
+      "Eleven or One: An Angry Christ Comic",
+      "1",
+      "Sirius Entertainment",
+      "1995-04-01",
+      "",
+      "",
+      "Eleven or One: An Angry Christ Comic #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "765774"
+      }
+    ],
+    [
+      "bone-oj-s-big-bust-out-1995-nn",
+      "OJ's Big Bust Out",
+      "[nn]",
+      "Boneyard Press",
+      "1995-03-01",
+      "",
+      "",
+      "OJ's Big Bust Out #[nn]",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757229"
+      }
+    ],
+    [
+      "new--buried-terror-1995-1",
+      "Buried Terror",
+      "1",
+      "New England Comics",
+      "1995-03-01",
+      "",
+      "",
+      "Buried Terror #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1995-01-27",
+        "gcdIssueId": "343930"
+      }
+    ],
+    [
+      "blac-bad-girls-of-blackout-annual-1995-1",
+      "Bad Girls of Blackout Annual",
+      "1",
+      "Blackout Comics",
+      "1995-01-10",
+      "",
+      "",
+      "Bad Girls of Blackout Annual #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "371456"
+      }
+    ],
+    [
+      "star-stickboy-1993-7",
+      "Stickboy",
+      "7",
+      "Starhead Comix",
+      "1995-01-01",
+      "",
+      "",
+      "Stickboy #7",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "774141"
+      }
+    ],
+    [
+      "blac-jugular-1995-0",
+      "Jugular",
+      "0",
+      "Blackout Comics",
+      "1995-01-01",
+      "",
+      "",
+      "Jugular #0",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "767779"
+      }
+    ],
+    [
+      "rebe-cuda-b-c-1995-1",
+      "Cuda B.C.",
+      "1",
+      "Rebel Studios",
+      "1995-01-01",
+      "",
+      "",
+      "Cuda B.C. #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "356459"
+      }
+    ],
+    [
+      "harr-cain-vampirella-flip-book-1994-nn",
+      "Cain / Vampirella Flip Book",
+      "[nn]",
+      "Harris Comics",
+      "1994-10-01",
+      "",
+      "",
+      "Cain / Vampirella Flip Book #[nn]",
+      6.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "763165"
+      }
+    ],
+    [
+      "revo-frank-zappa-viva-la-bizarre-1994-1",
+      "Frank Zappa: Viva la Bizarre",
+      "1",
+      "Revolutionary",
+      "1994-08-01",
+      "",
+      "",
+      "Frank Zappa: Viva la Bizarre #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "739764"
+      }
+    ],
+    [
+      "lond-razor-shi-special-1994-nn",
+      "Razor / Shi Special",
+      "[nn]",
+      "London Night Studios",
+      "1994-07-01",
+      "",
+      "",
+      "Razor / Shi Special #[nn]",
+      3.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "340938"
+      }
+    ],
+    [
+      "siri-safety-belt-man-1994-1",
+      "Safety-Belt Man",
+      "1",
+      "Sirius Entertainment",
+      "1994-06-01",
+      "",
+      "",
+      "Safety-Belt Man #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "738059"
+      }
+    ],
+    [
+      "bone-razor-dark-angel-the-final-nail-1994-1",
+      "Razor / Dark Angel: The Final Nail",
+      "1",
+      "Boneyard Press",
+      "1994-06-01",
+      "",
+      "",
+      "Razor / Dark Angel: The Final Nail #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687524"
+      }
+    ],
+    [
+      "lond-razor-dark-angel-the-final-nail-1994-2",
+      "Razor / Dark Angel: The Final Nail",
+      "2",
+      "London Night Studios",
+      "1994-06-01",
+      "",
+      "",
+      "Razor / Dark Angel: The Final Nail #2",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687525"
+      }
+    ],
+    [
+      "bone-howard-stern-vs-rush-limbaugh-1994-nn",
+      "Howard Stern vs. Rush Limbaugh",
+      "[nn]",
+      "Boneyard Press",
+      "1994-06-01",
+      "",
+      "",
+      "Howard Stern vs. Rush Limbaugh #[nn]",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757189"
+      }
+    ],
+    [
+      "siri-drama-1994-1",
+      "Drama",
+      "1",
+      "Sirius Entertainment",
+      "1994-06-01",
+      "",
+      "",
+      "Drama #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "556066"
+      }
+    ],
+    [
+      "bone-bill-the-bull-blowtorch-kiss-1994-1",
+      "Bill the Bull: Blowtorch Kiss",
+      "1",
+      "Boneyard Press",
+      "1994-06-01",
+      "",
+      "",
+      "Bill the Bull: Blowtorch Kiss #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757186"
+      }
+    ],
+    [
+      "revo-true-stories-of-adult-film-stars-sarah-j-1994-1",
+      "True Stories of Adult Film Stars: Sarah Jane Hamilton",
+      "1",
+      "Revolutionary",
+      "1994-05-01",
+      "",
+      "",
+      "True Stories of Adult Film Stars: Sarah Jane Hamilton #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1049285"
+      }
+    ],
+    [
+      "bone-stiff-1994-1",
+      "Stiff",
+      "1",
+      "Boneyard Press",
+      "1994-04-10",
+      "",
+      "",
+      "Stiff #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "394041"
+      }
+    ],
+    [
+      "knig-seeker-1994-1",
+      "Seeker",
+      "1",
+      "Knight Press",
+      "1994-04-01",
+      "",
+      "",
+      "Seeker #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757152"
+      }
+    ],
+    [
+      "bone-rough-trade-1994-1",
+      "Rough Trade",
+      "1",
+      "Boneyard Press",
+      "1994-04-01",
+      "",
+      "",
+      "Rough Trade #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "355999"
+      }
+    ],
+    [
+      "knig-morgana-x-1994-1",
+      "Morgana X",
+      "1",
+      "Knight Press",
+      "1994-04-01",
+      "",
+      "",
+      "Morgana X #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757188"
+      }
+    ],
+    [
+      "revo-canadian-rock-special-1994-1",
+      "Canadian Rock Special",
+      "1",
+      "Revolutionary",
+      "1994-04-01",
+      "",
+      "",
+      "Canadian Rock Special #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "739728"
+      }
+    ],
+    [
+      "fant-rabid-1994-nn",
+      "Rabid",
+      "[nn]",
+      "FantaCo Enterprises",
+      "1994-03-01",
+      "",
+      "",
+      "Rabid #[nn]",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "735120"
+      }
+    ],
+    [
+      "bone-a-touch-of-silk-a-taste-of-leather-1994-nn",
+      "A Touch of Silk, a Taste of Leather",
+      "[nn]",
+      "Boneyard Press",
+      "1994-03-01",
+      "",
+      "",
+      "A Touch of Silk, a Taste of Leather #[nn]",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757207"
+      }
+    ],
+    [
+      "knig-vapor-loch-1994-1",
+      "Vapor Loch",
+      "1",
+      "Knight Press",
+      "1994-02-01",
+      "",
+      "",
+      "Vapor Loch #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757171"
+      }
+    ],
+    [
+      "fant-the-return-of-girl-squad-x-1994-1",
+      "The Return of Girl Squad X",
+      "1",
+      "FantaCo Enterprises",
+      "1994-01-01",
+      "",
+      "",
+      "The Return of Girl Squad X #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "669579"
+      }
+    ],
+    [
+      "star-the-mutant-book-of-the-dead-1994-1",
+      "The Mutant Book of the Dead",
+      "1",
+      "Starhead Comix",
+      "1994-01-01",
+      "",
+      "",
+      "The Mutant Book of the Dead #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "755055"
+      }
+    ],
+    [
+      "lond-raw-city-1994-1",
+      "Raw City",
+      "1",
+      "London Night Studios",
+      "1994-01-01",
+      "",
+      "",
+      "Raw City #1",
+      3.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760551"
+      }
+    ],
+    [
+      "star-little-big-mouth-1994-1",
+      "Little Big Mouth",
+      "1",
+      "Starhead Comix",
+      "1994-01-01",
+      "",
+      "",
+      "Little Big Mouth #1",
+      0.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740919"
+      }
+    ],
+    [
+      "fant-legends-of-the-living-dead-1994-1",
+      "Legends of the Living Dead",
+      "1",
+      "FantaCo Enterprises",
+      "1994-01-01",
+      "",
+      "",
+      "Legends of the Living Dead #1",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "735122"
+      }
+    ],
+    [
+      "star-diva-number-two-1994-2",
+      "Diva Number Two",
+      "2",
+      "Starhead Comix",
+      "1994-01-01",
+      "",
+      "",
+      "Diva Number Two #2",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "900613"
+      }
+    ],
+    [
+      "bone-cadaver-1994-1",
+      "Cadaver",
+      "1",
+      "Boneyard Press",
+      "1994-01-01",
+      "",
+      "",
+      "Cadaver #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "920837"
+      }
+    ],
+    [
+      "fant-blood-gothic-1994-1",
+      "Blood Gothic",
+      "1",
+      "FantaCo Enterprises",
+      "1994-01-01",
+      "",
+      "",
+      "Blood Gothic #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "735100"
+      }
+    ],
+    [
+      "mira-teenage-mutant-ninja-turtles-1993-2",
+      "Teenage Mutant Ninja Turtles",
+      "2",
+      "Mirage",
+      "1993-12-01",
+      "",
+      "",
+      "Teenage Mutant Ninja Turtles #2",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "720229"
+      }
+    ],
+    [
+      "harr-q-unit-1993-1",
+      "Q-Unit",
+      "1",
+      "Harris Comics",
+      "1993-12-01",
+      "",
+      "",
+      "Q-Unit #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "738065"
+      }
+    ],
+    [
+      "rebe-empires-of-night-1993-1",
+      "Empires of Night",
+      "1",
+      "Rebel Studios",
+      "1993-12-01",
+      "",
+      "",
+      "Empires of Night #1",
+      2.25,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "545288"
+      }
+    ],
+    [
+      "revo-elvis-shrugged-graphic-novel-1993-nn",
+      "Elvis Shrugged Graphic Novel",
+      "[nn]",
+      "Revolutionary",
+      "1993-12-01",
+      "",
+      "",
+      "Elvis Shrugged Graphic Novel #[nn]",
+      9.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "739756"
+      }
+    ],
+    [
+      "bone-bill-the-bull-burnt-cain-1993-nn",
+      "Bill the Bull: Burnt Cain",
+      "[nn]",
+      "Boneyard Press",
+      "1993-11-10",
+      "",
+      "",
+      "Bill the Bull: Burnt Cain #[nn]",
+      4.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "407861"
+      }
+    ],
+    [
+      "star-the-amazing-adventures-of-ace-internatio-1993-1",
+      "The Amazing Adventures of Ace International",
+      "1",
+      "Starhead Comix",
+      "1993-11-01",
+      "",
+      "",
+      "The Amazing Adventures of Ace International #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760939"
+      }
+    ],
+    [
+      "knig-lathe-1993-1",
+      "Lathe",
+      "1",
+      "Knight Press",
+      "1993-11-01",
+      "",
+      "",
+      "Lathe #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757176"
+      }
+    ],
+    [
+      "star-diva-grafix-stories-1993-1",
+      "Diva Grafix & Stories",
+      "1",
+      "Starhead Comix",
+      "1993-11-01",
+      "",
+      "",
+      "Diva Grafix & Stories #1",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "761067"
+      }
+    ],
+    [
+      "harr-vampirella-the-dracula-war-1993-nn",
+      "Vampirella (The Dracula War!)",
+      "[nn]",
+      "Harris Comics",
+      "1993-10-01",
+      "",
+      "",
+      "Vampirella (The Dracula War!) #[nn]",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386450"
+      }
+    ],
+    [
+      "revo-sports-legends-special-breaking-the-colo-1993-1",
+      "Sports Legends Special - Breaking the Color Barrier",
+      "1",
+      "Revolutionary",
+      "1993-10-01",
+      "",
+      "",
+      "Sports Legends Special - Breaking the Color Barrier #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "739757"
+      }
+    ],
+    [
+      "lond-practice-in-pain-1993-1",
+      "Practice in Pain",
+      "1",
+      "London Night Studios",
+      "1993-10-01",
+      "",
+      "",
+      "Practice in Pain #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760549"
+      }
+    ],
+    [
+      "bone-the-space-giants-1993-nn",
+      "The Space Giants",
+      "[nn]",
+      "Boneyard Press",
+      "1993-09-01",
+      "",
+      "",
+      "The Space Giants #[nn]",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757170"
+      }
+    ],
+    [
+      "revo-marilyn-monroe-suicide-or-murder-1993-1",
+      "Marilyn Monroe: Suicide or Murder?",
+      "1",
+      "Revolutionary",
+      "1993-09-01",
+      "",
+      "",
+      "Marilyn Monroe: Suicide or Murder? #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "739767"
+      }
+    ],
+    [
+      "star-j-r-williams-fun-house-1993-nn",
+      "J. R. Williams' Fun House",
+      "[nn]",
+      "Starhead Comix",
+      "1993-09-01",
+      "",
+      "",
+      "J. R. Williams' Fun House #[nn]",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "759235"
+      }
+    ],
+    [
+      "new--chainsaw-vigilante-1993-1",
+      "Chainsaw Vigilante",
+      "1",
+      "New England Comics",
+      "1993-09-01",
+      "",
+      "",
+      "Chainsaw Vigilante #1",
+      3.25,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "728420"
+      }
+    ],
+    [
+      "fant-kill-me-slowly-1993-nn",
+      "Kill Me Slowly",
+      "[nn]",
+      "FantaCo Enterprises",
+      "1993-08-01",
+      "",
+      "",
+      "Kill Me Slowly #[nn]",
+      7.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "735081"
+      }
+    ],
+    [
+      "lond-the-james-gang-1993-1",
+      "The James Gang",
+      "1",
+      "London Night Studios",
+      "1993-07-01",
+      "",
+      "",
+      "The James Gang #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "758928"
+      }
+    ],
+    [
+      "bone-outlaw-nation-1993-1",
+      "Outlaw Nation",
+      "1",
+      "Boneyard Press",
+      "1993-07-01",
+      "",
+      "",
+      "Outlaw Nation #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "647078"
+      }
+    ],
+    [
+      "bone-kill-marvel-1993-1",
+      "Kill Marvel",
+      "1",
+      "Boneyard Press",
+      "1993-07-01",
+      "",
+      "",
+      "Kill Marvel #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757139"
+      }
+    ],
+    [
+      "knig-morgana-x-special-1993-1",
+      "Morgana X Special",
+      "1",
+      "Knight Press",
+      "1993-06-10",
+      "",
+      "",
+      "Morgana X Special #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "341494"
+      }
+    ],
+    [
+      "bone-kill-image-1993-1",
+      "Kill Image",
+      "1",
+      "Boneyard Press",
+      "1993-06-01",
+      "",
+      "",
+      "Kill Image #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757144"
+      }
+    ],
+    [
+      "bone-dark-angel-death-dreams-1993-1",
+      "Dark Angel: Death Dreams",
+      "1",
+      "Boneyard Press",
+      "1993-05-01",
+      "",
+      "",
+      "Dark Angel: Death Dreams #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757143"
+      }
+    ],
+    [
+      "bone-flickering-flesh-1993-1",
+      "Flickering Flesh",
+      "1",
+      "Boneyard Press",
+      "1993-03-10",
+      "",
+      "",
+      "Flickering Flesh #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386349"
+      }
+    ],
+    [
+      "bone-jeffrey-dahmer-vs-jesus-christ-1993-1",
+      "Jeffrey Dahmer vs. Jesus Christ",
+      "1",
+      "Boneyard Press",
+      "1993-02-01",
+      "",
+      "",
+      "Jeffrey Dahmer vs. Jesus Christ #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757138"
+      }
+    ],
+    [
+      "lond-tour-of-fear-1993-nn",
+      "Tour of Fear",
+      "[nn]",
+      "London Night Studios",
+      "1993-01-01",
+      "",
+      "",
+      "Tour of Fear #[nn]",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760354"
+      }
+    ],
+    [
+      "lond-savage-blood-1993-0",
+      "Savage Blood",
+      "0",
+      "London Night Studios",
+      "1993-01-01",
+      "",
+      "",
+      "Savage Blood #0",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "758927"
+      }
+    ],
+    [
+      "nigh-samurai-demon-sword-1993-1",
+      "Samurai: Demon Sword",
+      "1",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Samurai: Demon Sword #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748357"
+      }
+    ],
+    [
+      "lond-ratsbane-1993-1",
+      "Ratsbane",
+      "1",
+      "London Night Studios",
+      "1993-01-01",
+      "",
+      "",
+      "Ratsbane #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "760550"
+      }
+    ],
+    [
+      "fant-night-s-children-erotic-fantasies-1993-nn",
+      "Night's Children: Erotic Fantasies",
+      "[nn]",
+      "FantaCo Enterprises",
+      "1993-01-01",
+      "",
+      "",
+      "Night's Children: Erotic Fantasies #[nn]",
+      5.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "687011"
+      }
+    ],
+    [
+      "star-my-life-with-the-squirrels-1993-nn",
+      "My Life with the Squirrels",
+      "[nn]",
+      "Starhead Comix",
+      "1993-01-01",
+      "",
+      "",
+      "My Life with the Squirrels #[nn]",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "937290"
+      }
+    ],
+    [
+      "bone-go-die-1993-1",
+      "Go Die",
+      "1",
+      "Boneyard Press",
+      "1993-01-01",
+      "",
+      "",
+      "Go Die #1",
+      3.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757168"
+      }
+    ],
+    [
+      "nigh-elflord-dragon-s-eye-1993-1",
+      "Elflord: Dragon's Eye",
+      "1",
+      "Night Wynd",
+      "1993-01-01",
+      "",
+      "",
+      "Elflord: Dragon's Eye #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748352"
+      }
+    ],
+    [
+      "star-dr-zomb-s-house-of-freaks-1993-nn",
+      "Dr. Zomb's House of Freaks",
+      "[nn]",
+      "Starhead Comix",
+      "1993-01-01",
+      "",
+      "",
+      "Dr. Zomb's House of Freaks #[nn]",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "863540"
+      }
+    ],
+    [
+      "bone-bathory-countess-of-blood-1993-nn",
+      "Bathory: Countess of Blood",
+      "[nn]",
+      "Boneyard Press",
+      "1993-01-01",
+      "",
+      "",
+      "Bathory: Countess of Blood #[nn]",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757145"
+      }
+    ],
+    [
+      "harr-twister-1992-1",
+      "Twister",
+      "1",
+      "Harris Comics",
+      "1992-12-01",
+      "",
+      "",
+      "Twister #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "756411"
+      }
+    ],
+    [
+      "lond-necrophasia-1992-1",
+      "Necrophasia",
+      "1",
+      "London Night Studios",
+      "1992-12-01",
+      "",
+      "",
+      "Necrophasia #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "386294"
+      }
+    ],
+    [
+      "bone-the-further-adventures-of-young-jeffy-da-1992-nn",
+      "The Further Adventures of Young Jeffy Dahmer",
+      "[nn]",
+      "Boneyard Press",
+      "1992-10-01",
+      "",
+      "",
+      "The Further Adventures of Young Jeffy Dahmer #[nn]",
+      2.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757107"
+      }
+    ],
+    [
+      "revo-great-morons-in-history-1992-1",
+      "Great Morons in History",
+      "1",
+      "Revolutionary",
+      "1992-10-01",
+      "",
+      "",
+      "Great Morons in History #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "739765"
+      }
+    ],
+    [
+      "mira-teenage-mutant-ninja-turtles-times-pipel-1992-nn",
+      "Teenage Mutant Ninja Turtles: \"Times\" Pipeline",
+      "[nn]",
+      "Mirage",
+      "1992-09-01",
+      "",
+      "",
+      "Teenage Mutant Ninja Turtles: \"Times\" Pipeline #[nn]",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "720275"
+      }
+    ],
+    [
+      "new--the-collected-paul-the-samurai-1992-nn",
+      "The Collected Paul the Samurai",
+      "[nn]",
+      "New England Comics",
+      "1992-06-01",
+      "",
+      "",
+      "The Collected Paul the Samurai #[nn]",
+      8.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "746344"
+      }
+    ],
+    [
+      "harr-vampirella-s-summer-nights-1992-nn",
+      "Vampirella's Summer Nights",
+      "[nn]",
+      "Harris Comics",
+      "1992-01-01",
+      "",
+      "",
+      "Vampirella's Summer Nights #[nn]",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "740846"
+      }
+    ],
+    [
+      "fant-night-of-the-living-dead-aftermath-1992-nn",
+      "Night of the Living Dead: Aftermath",
+      "[nn]",
+      "FantaCo Enterprises",
+      "1992-01-01",
+      "",
+      "",
+      "Night of the Living Dead: Aftermath #[nn]",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "735098"
+      }
+    ],
+    [
+      "bone-jeffrey-dahmer-1992-nn",
+      "Jeffrey Dahmer",
+      "[nn]",
+      "Boneyard Press",
+      "1992-01-01",
+      "",
+      "",
+      "Jeffrey Dahmer #[nn]",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "757090"
+      }
+    ],
+    [
+      "revo-heavy-metal-monsters-1992-1",
+      "Heavy Metal Monsters",
+      "1",
+      "Revolutionary",
+      "1992-01-01",
+      "",
+      "",
+      "Heavy Metal Monsters #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978187935321390000",
+        "gcdIssueId": "739715"
+      }
+    ],
+    [
+      "revo-demi-the-demoness-1992-1",
+      "Demi the Demoness",
+      "1",
+      "Revolutionary",
+      "1992-01-01",
+      "",
+      "",
+      "Demi the Demoness #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "526982"
+      }
+    ],
+    [
+      "lond-code-name-heavy-metal-1992-1",
+      "Code Name: Heavy Metal",
+      "1",
+      "London Night Studios",
+      "1992-01-01",
+      "",
+      "",
+      "Code Name: Heavy Metal #1",
+      2.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "758014"
+      }
+    ],
+    [
+      "mira-the-collected-teenage-mutant-ninja-turtl-1990-7",
+      "The Collected Teenage Mutant Ninja Turtles",
+      "7",
+      "Mirage",
+      "1991-11-10",
+      "",
+      "",
+      "The Collected Teenage Mutant Ninja Turtles #7",
+      6.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "381775"
+      }
+    ],
+    [
+      "cata-necron-1989-3",
+      "Necron",
+      "3",
+      "Catalan Communications",
+      "1991-07-01",
+      "",
+      "",
+      "Necron #3",
+      9.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416107651095",
+        "gcdIssueId": "768495"
+      }
+    ],
+    [
+      "star-artistic-licentiousness-1991-1",
+      "Artistic Licentiousness",
+      "1",
+      "Starhead Comix",
+      "1991-06-01",
+      "",
+      "",
+      "Artistic Licentiousness #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "745823"
+      }
+    ],
+    [
+      "knig-adventures-of-the-vital-man-1991-1",
+      "Adventures of the Vital Man",
+      "1",
+      "Knight Press",
+      "1991-06-01",
+      "",
+      "",
+      "Adventures of the Vital Man #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "745822"
+      }
+    ],
+    [
+      "cata-ghita-of-alizarr-second-edition-1990-2",
+      "Ghita of Alizarr Second Edition",
+      "2",
+      "Catalan Communications",
+      "1991-03-01",
+      "",
+      "",
+      "Ghita of Alizarr Second Edition #2",
+      8.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9780874160895",
+        "gcdIssueId": "351264"
+      }
+    ],
+    [
+      "revo-elvis-shrugged-1991-1",
+      "Elvis Shrugged",
+      "1",
+      "Revolutionary",
+      "1991-02-10",
+      "",
+      "",
+      "Elvis Shrugged #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "407847"
+      }
+    ],
+    [
+      "cata-erma-jaguar-1990-2",
+      "Erma Jaguar",
+      "2",
+      "Catalan Communications",
+      "1991-02-01",
+      "",
+      "",
+      "Erma Jaguar #2",
+      9.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416117550995",
+        "gcdIssueId": "50562"
+      }
+    ],
+    [
+      "cata-the-adventures-of-rocco-vargas-1986-3",
+      "The Adventures of Rocco Vargas",
+      "3",
+      "Catalan Communications",
+      "1991-01-01",
+      "",
+      "",
+      "Saxon",
+      9.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416114450995",
+        "gcdIssueId": "1517243"
+      }
+    ],
+    [
+      "fant-night-s-children-foreplay-1991-nn",
+      "Night's Children: Foreplay",
+      "[nn]",
+      "FantaCo Enterprises",
+      "1991-01-01",
+      "",
+      "",
+      "Night's Children: Foreplay #[nn]",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "629415"
+      }
+    ],
+    [
+      "cata-the-snowman-1990-nn",
+      "The Snowman",
+      "[nn]",
+      "Catalan Communications",
+      "1990-12-01",
+      "",
+      "",
+      "The Snowman #[nn]",
+      9.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416124350995",
+        "gcdIssueId": "328465"
+      }
+    ],
+    [
+      "mira-teenage-mutant-ninja-turtles-michaelange-1990-nn",
+      "Teenage Mutant Ninja Turtles Michaelangelo Christmas Special",
+      "[nn]",
+      "Mirage",
+      "1990-12-01",
+      "",
+      "",
+      "Teenage Mutant Ninja Turtles Michaelangelo Christmas Special #[nn]",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "720247"
+      }
+    ],
+    [
+      "revo-stickboy-1990-4",
+      "Stickboy",
+      "4",
+      "Revolutionary",
+      "1990-11-01",
+      "",
+      "",
+      "Stickboy #4",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "774138"
+      }
+    ],
+    [
+      "cata-necron-1989-2",
+      "Necron",
+      "2",
+      "Catalan Communications",
+      "1990-11-01",
+      "",
+      "",
+      "Necron #2",
+      9.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416118250995",
+        "gcdIssueId": "768494"
+      }
+    ],
+    [
+      "cata-the-romantic-flower-1990-nn",
+      "The Romantic Flower",
+      "[nn]",
+      "Catalan Communications",
+      "1990-10-01",
+      "",
+      "",
+      "The Romantic Flower #[nn]",
+      9.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416088850995",
+        "gcdIssueId": "768637"
+      }
+    ],
+    [
+      "cata-the-magic-crystal-1989-3",
+      "The Magic Crystal",
+      "3",
+      "Catalan Communications",
+      "1990-08-01",
+      "",
+      "",
+      "Aurelys's Secret",
+      7.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416102150795",
+        "gcdIssueId": "768487"
+      }
+    ],
+    [
+      "cata-hidden-camera-1990-nn",
+      "Hidden Camera",
+      "[nn]",
+      "Catalan Communications",
+      "1990-08-01",
+      "",
+      "",
+      "Hidden Camera #[nn]",
+      9.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416098750995",
+        "gcdIssueId": "328463"
+      }
+    ],
+    [
+      "cata-young-blueberry-1989-3",
+      "Young Blueberry",
+      "3",
+      "Catalan Communications",
+      "1990-07-01",
+      "",
+      "",
+      "The Blue Coats",
+      7.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416093250795",
+        "gcdIssueId": "565966"
+      }
+    ],
+    [
+      "mira-teenage-mutant-ninja-turtles-adventures--1990-nn",
+      "Teenage Mutant Ninja Turtles Adventures [The Movie]",
+      "[nn]",
+      "Mirage",
+      "1990-07-01",
+      "",
+      "",
+      "Teenage Mutant Ninja Turtles Adventures [The Movie] #[nn]",
+      4.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "720274"
+      }
+    ],
+    [
+      "cata-outer-states-1990-nn",
+      "Outer States",
+      "[nn]",
+      "Catalan Communications",
+      "1990-07-01",
+      "",
+      "",
+      "Outer States #[nn]",
+      9.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416085750995",
+        "gcdIssueId": "768497"
+      }
+    ],
+    [
+      "cata-jeremiah-strike-1990-13",
+      "Jeremiah: Strike",
+      "13",
+      "Catalan Communications",
+      "1990-07-01",
+      "",
+      "",
+      "Jeremiah: Strike #13",
+      9.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416106950995",
+        "gcdIssueId": "47254"
+      }
+    ],
+    [
+      "cata-the-adventures-of-rocco-vargas-1986-2",
+      "The Adventures of Rocco Vargas",
+      "2",
+      "Catalan Communications",
+      "1990-05-01",
+      "",
+      "",
+      "The Whisperer Mystery",
+      9.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416096350995",
+        "gcdIssueId": "1517242"
+      }
+    ],
+    [
+      "cata-young-blueberry-1989-2",
+      "Young Blueberry",
+      "2",
+      "Catalan Communications",
+      "1990-03-01",
+      "",
+      "",
+      "A Yankee Named Blueberry",
+      7.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416087150795",
+        "gcdIssueId": "565965"
+      }
+    ],
+    [
+      "cata-the-magic-crystal-1989-2",
+      "The Magic Crystal",
+      "2",
+      "Catalan Communications",
+      "1990-02-01",
+      "",
+      "",
+      "Island of the Unicorn",
+      6.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416084050695",
+        "gcdIssueId": "768486"
+      }
+    ],
+    [
+      "cata-the-adventures-of-blake-mortimer-1989-2",
+      "The Adventures of Blake & Mortimer",
+      "2",
+      "Catalan Communications",
+      "1990-01-01",
+      "",
+      "",
+      "Atlantis Mystery",
+      8.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416094950895",
+        "gcdIssueId": "753131"
+      }
+    ],
+    [
+      "star-testosterone-city-1990-nn",
+      "Testosterone City",
+      "[nn]",
+      "Starhead Comix",
+      "1990-01-01",
+      "",
+      "",
+      "Testosterone City #[nn]",
+      1.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "853753"
+      }
+    ],
+    [
+      "cata-kogaratsu-1990-1",
+      "Kogaratsu",
+      "1",
+      "Catalan Communications",
+      "1990-01-01",
+      "",
+      "",
+      "Kogaratsu #1",
+      7.95,
+      "tpb",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416103850795",
+        "gcdIssueId": "768483"
+      }
+    ],
+    [
+      "fant-gore-shriek-annual-1990-1",
+      "Gore Shriek Annual",
+      "1",
+      "FantaCo Enterprises",
+      "1990-01-01",
+      "",
+      "",
+      "Gore Shriek Annual #1",
+      4.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "528171"
+      }
+    ],
+    [
+      "cata-ghita-of-alizarr-second-edition-1990-1",
+      "Ghita of Alizarr Second Edition",
+      "1",
+      "Catalan Communications",
+      "1990-01-01",
+      "",
+      "",
+      "Ghita of Alizarr Second Edition #1",
+      8.95,
+      "tpb",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416095650895",
+        "gcdIssueId": "351263"
+      }
+    ],
+    [
+      "robi-ditko-package-1989-nn",
+      "Ditko Package",
+      "[nn]",
+      "Robin Snyder and Steve Ditko",
+      "1989-12-01",
+      "",
+      "",
+      "Ditko Package #[nn]",
+      8.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "562388"
+      }
+    ],
+    [
+      "cata-the-adventures-of-yoko-vic-paul-1989-2",
+      "The Adventures of Yoko, Vic & Paul",
+      "2",
+      "Catalan Communications",
+      "1989-11-01",
+      "",
+      "",
+      "The Three Suns of Vina",
+      6.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416076550695",
+        "gcdIssueId": "46901"
+      }
+    ],
+    [
+      "cata-necron-1989-1",
+      "Necron",
+      "1",
+      "Catalan Communications",
+      "1989-11-01",
+      "",
+      "",
+      "Necron #1",
+      9.95,
+      "tpb",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9780874160727",
+        "gcdIssueId": "768493"
+      }
+    ],
+    [
+      "cata-young-blueberry-1989-1",
+      "Young Blueberry",
+      "1",
+      "Catalan Communications",
+      "1989-10-01",
+      "",
+      "",
+      "Blueberry's Secret",
+      7.95,
+      "tpb",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "09170676114201",
+        "gcdIssueId": "565964"
+      }
+    ],
+    [
+      "cata-the-magic-crystal-1989-1",
+      "The Magic Crystal",
+      "1",
+      "Catalan Communications",
+      "1989-08-01",
+      "",
+      "",
+      "The Magic Crystal #1",
+      6.95,
+      "tpb",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "091706761159",
+        "gcdIssueId": "768485"
+      }
+    ],
+    [
+      "robi-steve-ditko-s-static-chapters-1-5-1989-nn",
+      "Steve Ditko's Static (chapters 1-5)",
+      "[nn]",
+      "Robin Snyder and Steve Ditko",
+      "1989-07-01",
+      "",
+      "",
+      "Steve Ditko's Static (chapters 1-5) #[nn]",
+      9.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1189441"
+      }
+    ],
+    [
+      "mira-gizmo-and-the-fugitoid-1989-2",
+      "Gizmo and the Fugitoid",
+      "2",
+      "Mirage",
+      "1989-07-01",
+      "",
+      "",
+      "Gizmo and the Fugitoid #2",
+      1.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "691642"
+      }
+    ],
+    [
+      "cata-the-adventures-of-blake-mortimer-1989-1",
+      "The Adventures of Blake & Mortimer",
+      "1",
+      "Catalan Communications",
+      "1989-06-01",
+      "",
+      "",
+      "The Time Trap",
+      8.95,
+      "tpb",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "09170676112801",
+        "gcdIssueId": "46289"
+      }
+    ],
+    [
+      "cata-shorts-1989-nn",
+      "Shorts",
+      "[nn]",
+      "Catalan Communications",
+      "1989-03-01",
+      "",
+      "",
+      "Shorts #[nn]",
+      9.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "9780874160604",
+        "gcdIssueId": "45524"
+      }
+    ],
+    [
+      "cata-the-adventures-of-yoko-vic-paul-1989-1",
+      "The Adventures of Yoko, Vic & Paul",
+      "1",
+      "Catalan Communications",
+      "1989-02-01",
+      "",
+      "",
+      "Vulcan's Forge",
+      6.95,
+      "tpb",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416065950695",
+        "gcdIssueId": "768545"
+      }
+    ],
+    [
+      "mira-the-puma-blues-1988-2",
+      "The Puma Blues",
+      "2",
+      "Mirage",
+      "1989-01-01",
+      "",
+      "",
+      "Book Two: Sense of Doubt",
+      8.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "543427"
+      }
+    ],
+    [
+      "cata-code-xiii-1989-1",
+      "Code XIII",
+      "1",
+      "Catalan Communications",
+      "1989-01-01",
+      "",
+      "",
+      "The Day of the Black Sun",
+      6.95,
+      "tpb",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "768456"
+      }
+    ],
+    [
+      "cata-code-xiii-1989-2",
+      "Code XIII",
+      "2",
+      "Catalan Communications",
+      "1989-01-01",
+      "",
+      "",
+      "Where the Indian Walks",
+      6.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "768457"
+      }
+    ],
+    [
+      "cata-code-xiii-1989-3",
+      "Code XIII",
+      "3",
+      "Catalan Communications",
+      "1989-01-01",
+      "",
+      "",
+      "All the Tears of Hell",
+      6.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "768458"
+      }
+    ],
+    [
+      "blac-waxwork-in-3-d-1988-1",
+      "Waxwork in 3-D",
+      "1",
+      "Blackthorne",
+      "1988-11-01",
+      "",
+      "",
+      "Waxwork in 3-D #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1313386"
+      }
+    ],
+    [
+      "blac-waxwork-1988-1",
+      "Waxwork",
+      "1",
+      "Blackthorne",
+      "1988-11-01",
+      "",
+      "",
+      "Waxwork #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "320981"
+      }
+    ],
+    [
+      "blac-starlight-squadron-1988-1",
+      "Starlight Squadron",
+      "1",
+      "Blackthorne",
+      "1988-10-01",
+      "",
+      "",
+      "Starlight Squadron #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "321011"
+      }
+    ],
+    [
+      "blac-sad-sack-in-3-d-1988-1",
+      "Sad Sack in 3-D",
+      "1",
+      "Blackthorne",
+      "1988-10-01",
+      "",
+      "",
+      "Sad Sack in 3-D #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "651323"
+      }
+    ],
+    [
+      "blac-rambo-iii-1988-1",
+      "Rambo III",
+      "1",
+      "Blackthorne",
+      "1988-10-01",
+      "",
+      "",
+      "Rambo III #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "321002"
+      }
+    ],
+    [
+      "blac-rambo-1988-1",
+      "Rambo",
+      "1",
+      "Blackthorne",
+      "1988-10-01",
+      "",
+      "",
+      "Rambo #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "321001"
+      }
+    ],
+    [
+      "blac-red-heat-in-3-d-1988-1",
+      "Red Heat in 3-D",
+      "1",
+      "Blackthorne",
+      "1988-07-01",
+      "",
+      "",
+      "Red Heat in 3-D #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "681245"
+      }
+    ],
+    [
+      "blac-underdog-in-3-d-1988-1",
+      "Underdog In 3-D",
+      "1",
+      "Blackthorne",
+      "1988-06-01",
+      "",
+      "",
+      "Underdog In 3-D #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "656607"
+      }
+    ],
+    [
+      "new--the-tick-special-edition-1988-2",
+      "The Tick Special Edition",
+      "2",
+      "New England Comics",
+      "1988-06-01",
+      "",
+      "",
+      "The Tick Special Edition #2",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "630054"
+      }
+    ],
+    [
+      "blac-dog-a-roo-1988-1",
+      "Dog A Roo",
+      "1",
+      "Blackthorne",
+      "1988-03-01",
+      "",
+      "",
+      "Dog A Roo #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "321024"
+      }
+    ],
+    [
+      "blac-werewolf-in-3-d-1988-1",
+      "Werewolf in 3-D",
+      "1",
+      "Blackthorne",
+      "1988-01-01",
+      "",
+      "",
+      "Werewolf in 3-D #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1313381"
+      }
+    ],
+    [
+      "harr-vampirella-1988-113",
+      "Vampirella",
+      "113",
+      "Harris Comics",
+      "1988-01-01",
+      "",
+      "",
+      "Vampirella #113",
+      3.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "07148602060813",
+        "streetDate": "1987-12-01",
+        "gcdIssueId": "628824"
+      }
+    ],
+    [
+      "blac-solomon-kane-in-3-d-1988-1",
+      "Solomon Kane in 3-D",
+      "1",
+      "Blackthorne",
+      "1988-01-01",
+      "",
+      "",
+      "Solomon Kane in 3-D #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1313382"
+      }
+    ],
+    [
+      "blac-rambo-iii-3-d-1988-1",
+      "Rambo III 3-D",
+      "1",
+      "Blackthorne",
+      "1988-01-01",
+      "",
+      "",
+      "Rambo III 3-D #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1313388"
+      }
+    ],
+    [
+      "blac-richie-rich-casper-in-3-d-1987-1",
+      "Richie Rich & Casper in 3-D",
+      "1",
+      "Blackthorne",
+      "1987-12-01",
+      "",
+      "",
+      "Richie Rich & Casper in 3-D #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "01500173862374",
+        "gcdIssueId": "1313393"
+      }
+    ],
+    [
+      "blac-xeno-men-1987-1",
+      "Xeno-Men",
+      "1",
+      "Blackthorne",
+      "1987-11-01",
+      "",
+      "",
+      "Xeno-Men #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "320987"
+      }
+    ],
+    [
+      "mira-grunts-1987-1",
+      "Grunts",
+      "1",
+      "Mirage",
+      "1987-11-01",
+      "",
+      "",
+      "Grunts #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "720252"
+      }
+    ],
+    [
+      "mira-turtle-soup-1987-1",
+      "Turtle Soup",
+      "1",
+      "Mirage",
+      "1987-09-01",
+      "",
+      "",
+      "Turtle Soup #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "720249"
+      }
+    ],
+    [
+      "rene-ms-tree-s-1950-s-three-dimensional-crime-1987-1",
+      "Ms. Tree's 1950's Three-Dimensional Crime",
+      "1",
+      "Renegade Press",
+      "1987-07-01",
+      "",
+      "",
+      "Ms. Tree's 1950's Three-Dimensional Crime #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1214568"
+      }
+    ],
+    [
+      "rene-robot-comics-1987-0",
+      "Robot Comics",
+      "0",
+      "Renegade Press",
+      "1987-06-10",
+      "",
+      "",
+      "Robot Comics #0",
+      2.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "328177"
+      }
+    ],
+    [
+      "blac-outposts-1987-1",
+      "Outposts",
+      "1",
+      "Blackthorne",
+      "1987-06-01",
+      "",
+      "",
+      "Outposts #1",
+      1.25,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "321054"
+      }
+    ],
+    [
+      "blac-rivit-1987-1",
+      "Rivit",
+      "1",
+      "Blackthorne",
+      "1987-02-10",
+      "",
+      "",
+      "Rivit #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "321007"
+      }
+    ],
+    [
+      "blac-wizards-of-the-last-resort-1987-1",
+      "Wizards of the Last Resort",
+      "1",
+      "Blackthorne",
+      "1987-02-01",
+      "",
+      "",
+      "Wizards of the Last Resort #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "320982"
+      }
+    ],
+    [
+      "blac-pajama-chronicles-1987-1",
+      "Pajama Chronicles",
+      "1",
+      "Blackthorne",
+      "1987-02-01",
+      "",
+      "",
+      "Pajama Chronicles #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "321057"
+      }
+    ],
+    [
+      "blac-danse-1987-1",
+      "Danse",
+      "1",
+      "Blackthorne",
+      "1987-02-01",
+      "",
+      "",
+      "Danse #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "321020"
+      }
+    ],
+    [
+      "blac-failed-universe-1986-1",
+      "Failed Universe",
+      "1",
+      "Blackthorne",
+      "1986-12-01",
+      "",
+      "",
+      "Failed Universe #1",
+      1.75,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "321027"
+      }
+    ],
+    [
+      "rene-revolver-annual-1986-1",
+      "Revolver Annual",
+      "1",
+      "Renegade Press",
+      "1986-11-01",
+      "",
+      "",
+      "Revolver Annual #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "329641"
+      }
+    ],
+    [
+      "paci-diabolik-1986-1",
+      "Diabolik",
+      "1",
+      "Pacific Comics Club",
+      "1986-11-01",
+      "",
+      "",
+      "Diabolik #1",
+      2.5,
+      "tpb",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "531157"
+      }
+    ],
+    [
+      "blac-bizarre-3-d-zone-1986-1",
+      "Bizarre 3-D Zone",
+      "1",
+      "Blackthorne",
+      "1986-07-01",
+      "",
+      "",
+      "Bizarre 3-D Zone #1",
+      2.25,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "917130"
+      }
+    ],
+    [
+      "rene-amusing-stories-1986-1",
+      "Amusing Stories",
+      "1",
+      "Renegade Press",
+      "1986-03-01",
+      "",
+      "",
+      "Amusing Stories #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "329640"
+      }
+    ],
+    [
+      "blac-3-d-heroes-1986-1",
+      "3-D Heroes",
+      "1",
+      "Blackthorne",
+      "1986-02-01",
+      "",
+      "",
+      "3-D Heroes #1",
+      2.25,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "912907"
+      }
+    ],
+    [
+      "rene-manimal-1986-1",
+      "Manimal",
+      "1",
+      "Renegade Press",
+      "1986-01-01",
+      "",
+      "",
+      "Manimal #1",
+      2.0,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "329605"
+      }
+    ],
+    [
+      "blac-jerry-iger-s-classic-jumbo-comics-1985-1",
+      "Jerry Iger's Classic Jumbo Comics",
+      "1",
+      "Blackthorne",
+      "1985-06-01",
+      "",
+      "",
+      "Jerry Iger's Classic Jumbo Comics #1",
+      5.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "537192"
+      }
+    ],
+    [
+      "cata-click-a-woman-under-the-influence-1985-nn",
+      "Click! A Woman Under the Influence",
+      "[nn]",
+      "Catalan Communications",
+      "1985-05-01",
+      "",
+      "",
+      "Click! A Woman Under the Influence #[nn]",
+      9.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "978087416055050995",
+        "gcdIssueId": "768455"
+      }
+    ],
+    [
+      "mira-michaelangelo-teenage-mutant-ninja-turtl-1985-1",
+      "Michaelangelo, Teenage Mutant Ninja Turtle",
+      "1",
+      "Mirage",
+      "1985-01-01",
+      "",
+      "",
+      "Michaelangelo, Teenage Mutant Ninja Turtle #1",
+      1.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "720262"
+      }
+    ],
+    [
+      "mira-fugitoid-1985-1",
+      "Fugitoid",
+      "1",
+      "Mirage",
+      "1985-01-01",
+      "",
+      "",
+      "Fugitoid #1",
+      1.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "720253"
+      }
+    ],
+    [
+      "paci-drago-1985-1",
+      "Drago",
+      "1",
+      "Pacific Comics Club",
+      "1985-01-01",
+      "",
+      "",
+      "Drago #1",
+      9.5,
+      "tpb",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "40838"
+      }
+    ],
+    [
+      "blac-rover-from-gasoline-alley-1984-1",
+      "Rover from Gasoline Alley",
+      "1",
+      "Blackthorne",
+      "1984-12-01",
+      "",
+      "",
+      "Rover from Gasoline Alley #1",
+      5.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "347286"
+      }
+    ],
+    [
+      "cata-ranxerox-1984-1",
+      "Ranxerox",
+      "[1]",
+      "Catalan Communications",
+      "1984-07-01",
+      "",
+      "",
+      "In New York",
+      9.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "768502"
+      }
+    ],
+    [
+      "cata-torpedo-1936-1984-1",
+      "Torpedo 1936",
+      "1",
+      "Catalan Communications",
+      "1984-01-01",
+      "",
+      "",
+      "Torpedo 1936 #1",
+      8.95,
+      "tpb",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "768429"
+      }
+    ],
+    [
+      "star-skinboy-fights-back-1984-nn",
+      "Skinboy Fights Back",
+      "[nn]",
+      "Starhead Comix",
+      "1984-01-01",
+      "",
+      "",
+      "Skinboy Fights Back #[nn]",
+      1.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "937291"
+      }
+    ],
+    [
+      "star-3r-cosmix-1984-1",
+      "3R Cosmix",
+      "1",
+      "Starhead Comix",
+      "1984-01-01",
+      "",
+      "",
+      "3R Cosmix #1",
+      1.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "868389"
+      }
+    ],
+    [
+      "fant-fantaco-s-chronicles-series-annual-1983-1",
+      "FantaCo's Chronicles Series Annual",
+      "1",
+      "FantaCo Enterprises",
+      "1983-02-01",
+      "",
+      "",
+      "FantaCo's Chronicles Series Annual #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1285041"
+      }
+    ],
+    [
+      "fant-dial-h-for-hembeck-hembeck-series-1983-7",
+      "Dial H for Hembeck [Hembeck Series]",
+      "7",
+      "FantaCo Enterprises",
+      "1983-01-01",
+      "",
+      "",
+      "Dial H for Hembeck [Hembeck Series] #7",
+      1.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "529427"
+      }
+    ],
+    [
+      "cata-anarcoma-1983-nn",
+      "Anarcoma",
+      "[nn]",
+      "Catalan Communications",
+      "1983-01-01",
+      "",
+      "",
+      "Anarcoma #[nn]",
+      9.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "36966"
+      }
+    ],
+    [
+      "fant-deja-vu-1982-1",
+      "Deja-Vu",
+      "1",
+      "FantaCo Enterprises",
+      "1982-09-01",
+      "",
+      "",
+      "Deja-Vu #1",
+      2.95,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "735141"
+      }
+    ],
+    [
+      "fant-gates-of-eden-1982-1",
+      "Gates of Eden",
+      "1",
+      "FantaCo Enterprises",
+      "1982-05-01",
+      "",
+      "",
+      "Gates of Eden #1",
+      3.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "329553"
+      }
+    ],
+    [
+      "fant-the-daredevil-chronicles-1982-nn",
+      "The Daredevil Chronicles",
+      "[nn]",
+      "FantaCo Enterprises",
+      "1982-02-01",
+      "",
+      "",
+      "The Daredevil Chronicles #[nn]",
+      1.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1285043"
+      }
+    ],
+    [
+      "fant-jimmy-olsen-s-pal-fred-hembeck-hembeck-s-1981-6",
+      "Jimmy Olsen's Pal, Fred Hembeck [Hembeck Series]",
+      "6",
+      "FantaCo Enterprises",
+      "1981-09-01",
+      "",
+      "",
+      "Jimmy Olsen's Pal, Fred Hembeck [Hembeck Series] #6",
+      2.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "529426"
+      }
+    ],
+    [
+      "fant-the-x-men-chronicles-1981-1",
+      "The X-Men Chronicles",
+      "1",
+      "FantaCo Enterprises",
+      "1981-07-01",
+      "",
+      "",
+      "The X-Men Chronicles #1",
+      1.25,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1285042"
+      }
+    ],
+    [
+      "fant-the-hembeck-file-hembeck-series-1981-5",
+      "The Hembeck File [Hembeck Series]",
+      "5",
+      "FantaCo Enterprises",
+      "1981-02-01",
+      "",
+      "",
+      "The Hembeck File [Hembeck Series] #5",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "529425"
+      }
+    ],
+    [
+      "paci-casey-ruggles-the-marchioness-of-grofnek-1981-nn",
+      "Casey Ruggles: The Marchioness of Grofnek",
+      "[nn]",
+      "Pacific Comics Club",
+      "1981-01-01",
+      "",
+      "",
+      "Casey Ruggles: The Marchioness of Grofnek #[nn]",
+      6.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "825532"
+      }
+    ],
+    [
+      "paci-casey-ruggles-the-whisperer-1981-nn",
+      "Casey Ruggles:  The Whisperer",
+      "[nn]",
+      "Pacific Comics Club",
+      "1981-01-01",
+      "",
+      "",
+      "Casey Ruggles:  The Whisperer #[nn]",
+      6.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "825534"
+      }
+    ],
+    [
+      "paci-casey-ruggles-the-pearl-galleon-1981-nn",
+      "Casey Ruggles:  The Pearl Galleon",
+      "[nn]",
+      "Pacific Comics Club",
+      "1981-01-01",
+      "",
+      "",
+      "Casey Ruggles:  The Pearl Galleon #[nn]",
+      6.95,
+      "tpb",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "825533"
+      }
+    ],
+    [
+      "fant-hembeck-the-best-of-dateline-hembeck-ser-1980-1",
+      "Hembeck: The Best of Dateline: @!!?# [Hembeck Series]",
+      "1",
+      "FantaCo Enterprises",
+      "1980-12-01",
+      "",
+      "",
+      "Hembeck: The Best of Dateline: @!!?# [Hembeck Series] #1",
+      2.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "529420"
+      }
+    ],
+    [
+      "fant-bah-hembeck-hembeck-series-1980-4",
+      "Bah, Hembeck! [Hembeck Series]",
+      "4",
+      "FantaCo Enterprises",
+      "1980-11-26",
+      "",
+      "",
+      "Bah, Hembeck! [Hembeck Series] #4",
+      1.25,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1980-11-26",
+        "gcdIssueId": "529424"
+      }
+    ],
+    [
+      "fant-hembeck-1980-hembeck-series-1980-2",
+      "Hembeck 1980 [Hembeck Series]",
+      "2",
+      "FantaCo Enterprises",
+      "1980-02-01",
+      "",
+      "",
+      "Hembeck 1980 [Hembeck Series] #2",
+      2.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1980-03-04",
+        "gcdIssueId": "529422"
+      }
+    ],
+    [
+      "fant-mug-shots-1980-nn",
+      "Mug Shots",
+      "[nn]",
+      "FantaCo Enterprises",
+      "1980-01-01",
+      "",
+      "",
+      "Mug Shots #[nn]",
+      2.95,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "735143"
+      }
+    ],
+    [
+      "the--the-human-drama-1978-nn",
+      "The Human Drama",
+      "[nn]",
+      "The Print Mint Inc",
+      "1978-01-01",
+      "",
+      "",
+      "The Human Drama #[nn]",
+      1.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "800206"
+      }
+    ],
+    [
+      "the--lemme-outa-here-1978-nn",
+      "Lemme Outa Here",
+      "[nn]",
+      "The Print Mint Inc",
+      "1978-01-01",
+      "",
+      "",
+      "Lemme Outa Here #[nn]",
+      1.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "747667"
+      }
+    ],
+    [
+      "the--young-lust-1974-4",
+      "Young Lust",
+      "4",
+      "The Print Mint Inc",
+      "1974-11-01",
+      "",
+      "",
+      "Young Lust #4",
+      1.0,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277300"
+      }
+    ],
+    [
+      "the--zam-zap-jam-1974-nn",
+      "Zam-Zap Jam",
+      "[nn]",
+      "The Print Mint Inc",
+      "1974-01-01",
+      "",
+      "",
+      "Zam-Zap Jam #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "782164"
+      }
+    ],
+    [
+      "the--show-tell-1973-nn",
+      "Show + Tell",
+      "[nn]",
+      "The Print Mint Inc",
+      "1973-10-01",
+      "",
+      "",
+      "Show + Tell #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277582"
+      }
+    ],
+    [
+      "the--san-francisco-comic-book-1973-4",
+      "San Francisco Comic Book",
+      "4",
+      "The Print Mint Inc",
+      "1973-10-01",
+      "",
+      "",
+      "San Francisco Comic Book #4",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277581"
+      }
+    ],
+    [
+      "the--occult-laff-parade-1973-1",
+      "Occult Laff-Parade",
+      "1",
+      "The Print Mint Inc",
+      "1973-08-01",
+      "",
+      "",
+      "Occult Laff-Parade #1",
+      0.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277317"
+      }
+    ],
+    [
+      "the--manhunt-1973-1",
+      "Manhunt",
+      "[1]",
+      "The Print Mint Inc",
+      "1973-07-01",
+      "",
+      "",
+      "Manhunt #[1]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277313"
+      }
+    ],
+    [
+      "the--sphinx-1974-3",
+      "Sphinx",
+      "3",
+      "The Print Mint Inc",
+      "1973-06-01",
+      "",
+      "",
+      "Sphinx #3",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277585"
+      }
+    ],
+    [
+      "the--tales-from-the-tube-1973-1",
+      "Tales from the Tube",
+      "1",
+      "The Print Mint Inc",
+      "1973-01-01",
+      "",
+      "",
+      "Tales from the Tube #1",
+      0.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "782163"
+      }
+    ],
+    [
+      "the--softcore-1973-nn",
+      "Softcore",
+      "[nn]",
+      "The Print Mint Inc",
+      "1973-01-01",
+      "",
+      "",
+      "Softcore #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277583"
+      }
+    ],
+    [
+      "the--savage-humor-1973-1",
+      "Savage Humor",
+      "1",
+      "The Print Mint Inc",
+      "1973-01-01",
+      "",
+      "",
+      "Savage Humor #1",
+      0.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "891855"
+      }
+    ],
+    [
+      "the--el-perfecto-comics-1973-nn",
+      "El Perfecto Comics",
+      "[nn]",
+      "The Print Mint Inc",
+      "1973-01-01",
+      "",
+      "",
+      "El Perfecto Comics #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "796363"
+      }
+    ],
+    [
+      "the--deviant-slice-comix-1973-2",
+      "Deviant Slice Comix",
+      "2",
+      "The Print Mint Inc",
+      "1973-01-01",
+      "",
+      "",
+      "Deviant Slice Comix #2",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "276879"
+      }
+    ],
+    [
+      "the--not-only-the-best-of-wonder-wart-hog-1973-3",
+      "(Not Only) The Best of Wonder Wart-Hog",
+      "3",
+      "The Print Mint Inc",
+      "1973-01-01",
+      "",
+      "",
+      "(Not Only) The Best of Wonder Wart-Hog #3",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "748052"
+      }
+    ],
+    [
+      "the--spaced-out-1972-nn",
+      "Spaced Out",
+      "[nn]",
+      "The Print Mint Inc",
+      "1972-11-01",
+      "",
+      "",
+      "Spaced Out #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277584"
+      }
+    ],
+    [
+      "the--the-man-1972-nn",
+      "The Man",
+      "[nn]",
+      "The Print Mint Inc",
+      "1972-06-01",
+      "",
+      "",
+      "The Man #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277312"
+      }
+    ],
+    [
+      "the--hit-the-road-1972-1",
+      "Hit the Road",
+      "1",
+      "The Print Mint Inc",
+      "1972-06-01",
+      "",
+      "",
+      "Hit the Road #1",
+      0.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "784850"
+      }
+    ],
+    [
+      "the--tuff-shit-1972-nn",
+      "Tuff Shit",
+      "[nn]",
+      "The Print Mint Inc",
+      "1972-03-01",
+      "",
+      "",
+      "Tuff Shit #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277592"
+      }
+    ],
+    [
+      "the--deviant-slice-comics-and-funnies-and-sto-1972-nn",
+      "Deviant Slice Comics and Funnies and Stories, Etc.",
+      "[nn]",
+      "The Print Mint Inc",
+      "1972-03-01",
+      "",
+      "",
+      "Deviant Slice Comics and Funnies and Stories, Etc. #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "276878"
+      }
+    ],
+    [
+      "the--the-collected-cheech-wizard-1976-nn",
+      "The Collected Cheech Wizard",
+      "[nn]",
+      "The Print Mint Inc",
+      "1972-01-01",
+      "",
+      "",
+      "The Collected Cheech Wizard #[nn]",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "278116"
+      }
+    ],
+    [
+      "the--the-captain-1972-nn",
+      "The Captain",
+      "[nn]",
+      "The Print Mint Inc",
+      "1972-01-01",
+      "",
+      "",
+      "The Captain #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "134381"
+      }
+    ],
+    [
+      "the--guano-comix-1972-4",
+      "Guano Comix",
+      "4",
+      "The Print Mint Inc",
+      "1972-01-01",
+      "",
+      "",
+      "Guano Comix #4",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "538457"
+      }
+    ],
+    [
+      "the--mean-bitch-thrills-1971-nn",
+      "Mean Bitch Thrills",
+      "[nn]",
+      "The Print Mint Inc",
+      "1971-09-01",
+      "",
+      "",
+      "Mean Bitch Thrills #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277314"
+      }
+    ],
+    [
+      "the--young-lust-1971-2",
+      "Young Lust",
+      "2",
+      "The Print Mint Inc",
+      "1971-07-28",
+      "",
+      "",
+      "Young Lust #2",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1971-07-28",
+        "gcdIssueId": "277299"
+      }
+    ],
+    [
+      "the--light-comitragies-1971-nn",
+      "Light Comitragies",
+      "[nn]",
+      "The Print Mint Inc",
+      "1971-06-01",
+      "",
+      "",
+      "Light Comitragies #[nn]",
+      0.75,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277311"
+      }
+    ],
+    [
+      "the--bent-1971-nn",
+      "Bent",
+      "[nn]",
+      "The Print Mint Inc",
+      "1971-05-01",
+      "",
+      "",
+      "Bent #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "266943"
+      }
+    ],
+    [
+      "the--all-girl-thrills-1971-1",
+      "All Girl Thrills",
+      "1",
+      "The Print Mint Inc",
+      "1971-03-01",
+      "",
+      "",
+      "All Girl Thrills #1",
+      0.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "255880"
+      }
+    ],
+    [
+      "the--illuminations-1971-nn",
+      "Illuminations",
+      "[nn]",
+      "The Print Mint Inc",
+      "1971-01-01",
+      "",
+      "",
+      "Illuminations #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "806727"
+      }
+    ],
+    [
+      "the--american-flyer-funnies-1971-1",
+      "American Flyer Funnies",
+      "1",
+      "The Print Mint Inc",
+      "1971-01-01",
+      "",
+      "",
+      "American Flyer Funnies #1",
+      0.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "255873"
+      }
+    ],
+    [
+      "the--coochy-cooty-men-s-comics-1970-1",
+      "Coochy Cooty Men's Comics",
+      "1",
+      "The Print Mint Inc",
+      "1970-12-01",
+      "",
+      "",
+      "Coochy Cooty Men's Comics #1",
+      0.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "270857"
+      }
+    ],
+    [
+      "the--uneeda-comix-1970-nn",
+      "Uneeda Comix",
+      "[nn]",
+      "The Print Mint Inc",
+      "1970-08-01",
+      "",
+      "",
+      "Uneeda Comix #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "277593"
+      }
+    ],
+    [
+      "the--the-dying-dolphin-1970-nn",
+      "The Dying Dolphin",
+      "[nn]",
+      "The Print Mint Inc",
+      "1970-07-01",
+      "",
+      "",
+      "The Dying Dolphin #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "276901"
+      }
+    ],
+    [
+      "the--tales-from-the-ozone-1970-2",
+      "Tales from the Ozone",
+      "2",
+      "The Print Mint Inc",
+      "1970-07-01",
+      "",
+      "",
+      "Tales from the Ozone #2",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "363974"
+      }
+    ],
+    [
+      "the--heavy-tragicomix-1969-1",
+      "Heavy Tragicomix",
+      "1",
+      "The Print Mint Inc",
+      "1970-02-01",
+      "",
+      "",
+      "Heavy Tragicomix #1",
+      0.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "276090"
+      }
+    ],
+    [
+      "the--mom-s-homemade-comics-1969-2",
+      "Mom's Homemade Comics",
+      "2",
+      "The Print Mint Inc",
+      "1970-01-01",
+      "",
+      "",
+      "Mom's Homemade Comics #2",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "streetDate": "1969-12-29",
+        "gcdIssueId": "529049"
+      }
+    ],
+    [
+      "the--high-flyin-funnies-comix-stories-1970-nn",
+      "High-Flyin' Funnies Comix & Stories",
+      "[nn]",
+      "The Print Mint Inc",
+      "1970-01-01",
+      "",
+      "",
+      "High-Flyin' Funnies Comix & Stories #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "784846"
+      }
+    ],
+    [
+      "the--book-of-raziel-1969-nn",
+      "Book of Raziel",
+      "[nn]",
+      "The Print Mint Inc",
+      "1969-12-01",
+      "",
+      "",
+      "Book of Raziel #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "264241"
+      }
+    ],
+    [
+      "the--mom-s-homemade-comics-1969-1",
+      "Mom's Homemade Comics",
+      "1",
+      "The Print Mint Inc",
+      "1969-10-01",
+      "",
+      "",
+      "Mom's Homemade Comics #1",
+      0.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1311007"
+      }
+    ],
+    [
+      "the--googiewaumer-comics-1969-nn",
+      "Googiewaumer Comics",
+      "[nn]",
+      "The Print Mint Inc",
+      "1969-02-01",
+      "",
+      "",
+      "Googiewaumer Comics #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "538456"
+      }
+    ],
+    [
+      "the--comics-kuklops-comics-1969-1",
+      "Κύκλωψ Comics [Kuklōps Comics]",
+      "1",
+      "The Print Mint Inc",
+      "1969-01-01",
+      "",
+      "",
+      "Κύκλωψ Comics [Kuklōps Comics] #1",
+      0.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "781230"
+      }
+    ],
+    [
+      "the--suds-1969-nn",
+      "Suds",
+      "[nn]",
+      "The Print Mint Inc",
+      "1969-01-01",
+      "",
+      "",
+      "Suds #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "782162"
+      }
+    ],
+    [
+      "the--spiffy-stories-1969-1",
+      "Spiffy Stories",
+      "1",
+      "The Print Mint Inc",
+      "1969-01-01",
+      "",
+      "",
+      "Spiffy Stories #1",
+      0.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "782161"
+      }
+    ],
+    [
+      "the--radical-america-1969-1",
+      "Radical America",
+      "1",
+      "The Print Mint Inc",
+      "1969-01-01",
+      "",
+      "",
+      "Radical America #1",
+      0.5,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "1140267"
+      }
+    ],
+    [
+      "the--despair-1969-nn",
+      "Despair",
+      "[nn]",
+      "The Print Mint Inc",
+      "1969-01-01",
+      "",
+      "",
+      "Despair #[nn]",
+      0.5,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "gcdIssueId": "290851"
+      }
+    ]
+  ]
+}
