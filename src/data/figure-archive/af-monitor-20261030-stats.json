@@ -1,0 +1,64 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-10-30",
+  "updatedAt": "2026-10-30T14:24:54Z",
+  "added": 6,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-10-30: direct curl got 403 on BBTS (Challenge page) and EE (Cloudflare). Used BBTS SearchText=action figure sorted New p1/p2 via WebFetch; product IDs resolved via web search + WebFetch of /product/x-<id> pages (og image). EE newly-added + action-figures newest read via WebFetch; EE item numbers/UPCs/og images verified via EE product pages.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 6,
+    "ee_candidates": 6,
+    "bbts_candidates": 0,
+    "added": 6,
+    "skipped_dupes": 0,
+    "rejected_non_af": 0,
+    "unmapped_company": 0,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 30738,
+  "oneshotAfter": 30744,
+  "ee_added": 6,
+  "bbts_added": 0,
+  "samples": [
+    {
+      "sku": "HSG4545",
+      "name": "Star Wars Black Series Zam Wesell 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-black-series-zam-wesell-6-inch-action-figure-hsg4545",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4544",
+      "name": "Star Wars Black Series Saesee Tiin 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-black-series-saesee-tiin-6-inch-action-figure-hsg4544",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4543",
+      "name": "Star Wars Black Series Agen Kolar 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-black-series-agen-kolar-6-inch-action-figure-hsg4543",
+      "source": "ee"
+    },
+    {
+      "sku": "MF17744",
+      "name": "DC Multiverse McFarlane Collector Edition Wave 17 Star Sapphire Green Lantern #70 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-dc-multiverse-mcfarlane-collector-edition-wave-17-star-sapphire-green-lant-mf17744",
+      "source": "ee"
+    },
+    {
+      "sku": "MF18156",
+      "name": "DC Multiverse McFarlane Collector Edition Wave 17 Superman Earth 2 #71 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-dc-multiverse-mcfarlane-collector-edition-wave-17-superman-earth-2-71-7-in-mf18156",
+      "source": "ee"
+    },
+    {
+      "sku": "MF18157",
+      "name": "DC Multiverse McFarlane Collector Edition Wave 17 Mary Shazam Shazam! #72 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-dc-multiverse-mcfarlane-collector-edition-wave-17-mary-shazam-shazam-72-7-mf18157",
+      "source": "ee"
+    }
+  ]
+}
