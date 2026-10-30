@@ -1,435 +1,88 @@
 {
-  "coversAfter": 7720,
-  "coversBefore": 7542,
+  "coversAfter": 7731,
+  "coversBefore": 7720,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/05/02/gideon-falls-14.jpg",
-      "id": "im-gideonfalls-14",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9641475-wwww.jpg",
+      "id": "dc-batman-long-halloween-last-halloween-5",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/05/02/gideon-falls-15.jpg",
-      "id": "im-gideonfalls-15",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9668388-wwww.jpg",
+      "id": "dc-batman-long-halloween-last-halloween-6",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/05/02/gideon-falls-16.jpg",
-      "id": "im-gideonfalls-16",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9707926-wwww.jpg",
+      "id": "dc-batman-long-halloween-last-halloween-7",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/05/02/gideon-falls-17.jpg",
-      "id": "im-gideonfalls-17",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9806645-wwww.jpg",
+      "id": "dc-batman-long-halloween-last-halloween-8",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/05/02/gideon-falls-18.jpg",
-      "id": "im-gideonfalls-18",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9887466-cover.jpg",
+      "id": "dc-batman-long-halloween-last-halloween-9",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/05/02/gideon-falls-19.jpg",
-      "id": "im-gideonfalls-19",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/9933073-1974755851.jpg",
+      "id": "dc-batman-superman-world-s-finest-vol-5-2024",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/21/05dc380c02d64ae7807d2f35ec3a03ed.jpg",
-      "id": "im-gogor-2",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11190/111904041/9791519-2414680_xl.jpg",
+      "id": "dc-batman-superman-world-s-finest-vol-6-2024",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/21/3b8ebc91a71a4ff7ada8510b1369bc0c.jpg",
-      "id": "im-gogor-3",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/60408/9858576-totaleclipso.jpg",
+      "id": "dc-batman-superman-world-s-finest-vol-7-2024",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/21/dec9c77ea59d48f4a3fc645191590fbe.jpg",
-      "id": "im-gogor-4",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11121/111210016/9942852-7364982078-BGtCS.jpg",
+      "id": "dc-booster-gold-complete-2007-series-2",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/21/fcfcf762887e44f89ca3d0813daee545.jpg",
-      "id": "im-gogor-5",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/6/60408/9845521-dchpfrank2.jpg",
+      "id": "dc-creature-commandos-present-frankenstein-agent-of-2",
+      "source": "cv"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/23/c7c1e11dd24445cab93cd2ab02af28f1.jpg",
-      "id": "im-gunning-for-hits-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/23/f4d45cf2ef2845e1a3c8065b4461b5af.jpg",
-      "id": "im-gunning-for-hits-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/23/8d2b96f178284c63a3cde2fa9db48f6c.jpg",
-      "id": "im-gunning-for-hits-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/23/cc0985adbb8d4c98bc4f5984afda1716.jpg",
-      "id": "im-gunning-for-hits-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/24/2e1ef8569d7246579516a5ddb390b638.jpg",
-      "id": "im-hardcore-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/24/8b81acf82b05447a821a2f74fa5185bd.jpg",
-      "id": "im-hardcore-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/24/ac33983af7af4a4495a8abc57dcf7f20.jpg",
-      "id": "im-hardcore-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/24/9253e389212343ff8037238f468ed038.jpg",
-      "id": "im-hardcore-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/06/03/11a057a2784d4c4884c7fe7ef74256e9.jpg",
-      "id": "im-head-lopper-11",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/06/03/95a31230e06b4bbaa538f636c8282970.jpg",
-      "id": "im-head-lopper-12",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/30/a9d823245563428c9adf2d2aa89f59af.jpg",
-      "id": "im-heart-attack-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/11/10/hitgirl-s2-10.jpg",
-      "id": "im-hit-girl-season-two-10",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/12/05/hithgirl-s2-11.jpg",
-      "id": "im-hit-girl-season-two-11",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/03/13/hit-girl-two-2.jpg",
-      "id": "im-hit-girl-season-two-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/12/hit-girl-season-two-3.jpg",
-      "id": "im-hit-girl-season-two-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/07/hitgirl-season-two-4.jpg",
-      "id": "im-hit-girl-season-two-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/15/hit-girl-season-two-5.jpg",
-      "id": "im-hit-girl-season-two-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/18/hit-girl-season2-6.jpg",
-      "id": "im-hit-girl-season-two-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/10/hitgirl-season-two-7.jpg",
-      "id": "im-hit-girl-season-two-7",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/06/hitgirl-season2-8.jpg",
-      "id": "im-hit-girl-season-two-8",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/11/hit-girl-s2-9.jpg",
-      "id": "im-hit-girl-season-two-9",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/21/8f5c63503c8d42e49eeb2fbafc2adc62.jpg",
-      "id": "im-infinite-dark-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/21/de262e99bc2447aaa1ffc6626c3444a9.jpg",
-      "id": "im-infinite-dark-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/21/900a0520742a4f51b1937576d727193a.jpg",
-      "id": "im-infinite-dark-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/21/a41a77c52cac4f0b82d7c52857db6a0b.jpg",
-      "id": "im-infinite-dark-7",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/21/59403bb288274cebad131ddaa29a51a9.jpg",
-      "id": "im-infinite-dark-8",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/24/29f01467a97447d084d0ac6b92f675e1.jpg",
-      "id": "im-isola-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/24/687c3265f73c47e3a283c3aa4b307d50.jpg",
-      "id": "im-isola-7",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/24/454f907acc33453aa7282a02b0ab674f.jpg",
-      "id": "im-isola-8",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/24/72cbd1fb7dd04a4fbffb5f39daa84d2b.jpg",
-      "id": "im-isola-9",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/kick-ass-11.jpg",
-      "id": "im-kick-ass-11",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/kick-ass-12.jpg",
-      "id": "im-kick-ass-12",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/kick-ass-13.jpg",
-      "id": "im-kick-ass-13",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/kick-ass-14.jpg",
-      "id": "im-kick-ass-14",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/kick-ass-15.jpg",
-      "id": "im-kick-ass-15",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/kick-ass-16.jpg",
-      "id": "im-kick-ass-16",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/kick-ass-17.jpg",
-      "id": "im-kick-ass-17",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/kick-ass-18.jpg",
-      "id": "im-kick-ass-18",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/03/c7743270c85a480491481027724eb34f.jpg",
-      "id": "im-last-siege-8",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/03/07998ef2def14ccebf3c422615c9071b.jpg",
-      "id": "im-lazarus-risen-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/03/25c2900dc88b4a0391821abdb7b95238.jpg",
-      "id": "im-lazarus-risen-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/05/a6b95402781946908a90827d1a746af8.jpg",
-      "id": "im-little-bird-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/05/57b42f93dd9247e9ac617e7fc967fa01.jpg",
-      "id": "im-little-bird-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/05/8fd0938e79ad4de5b7e84e6439e38dd8.jpg",
-      "id": "im-little-bird-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/05/ff8d60fa3ae042679d538feaeb709178.jpg",
-      "id": "im-little-bird-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/05/low-20.jpg",
-      "id": "im-low-20",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/05/low-21.jpg",
-      "id": "im-low-21",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/05/low-22.jpg",
-      "id": "im-low-22",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/04/mage-book-three-the-hero-denied-15.jpg",
-      "id": "im-mage-book-three-hero-denied-15",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2020/01/16/magic-order-6.jpg",
-      "id": "im-magic-order-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/03/28/man-eaters-10.jpg",
-      "id": "im-man-eaters-10",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/03/28/man-eaters-11.jpg",
-      "id": "im-man-eaters-11",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/03/28/man-eaters-12.jpg",
-      "id": "im-man-eaters-12",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/03/28/man-eaters-5.jpg",
-      "id": "im-man-eaters-5",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/03/28/man-eaters-6.jpg",
-      "id": "im-man-eaters-6",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/03/28/man-eaters-7.jpg",
-      "id": "im-man-eaters-7",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/03/28/man-eaters-8.jpg",
-      "id": "im-man-eaters-8",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2021/03/28/man-eaters-9.jpg",
-      "id": "im-man-eaters-9",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/12/manifest-destiny-37.jpg",
-      "id": "im-manifest-destiny-37",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/12/manifest-destiny-38.jpg",
-      "id": "im-manifest-destiny-38",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/12/manifest-destiny-39.jpg",
-      "id": "im-manifest-destiny-39",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/11/d796fa238aa7488ab7429196a713a11d.jpg",
-      "id": "im-marked-2",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/11/757ed9047244491fb94c1b65509404bb.jpg",
-      "id": "im-marked-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/middlewest-10.jpg",
-      "id": "im-middlewest-10",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/middlewest-11.jpg",
-      "id": "im-middlewest-11",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/middlewest-12.jpg",
-      "id": "im-middlewest-12",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/middlewest-13.jpg",
-      "id": "im-middlewest-13",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/middlewest-3.jpg",
-      "id": "im-middlewest-3",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/middlewest-4.jpg",
-      "id": "im-middlewest-4",
-      "source": "metron"
-    },
-    {
-      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/03/middlewest-5.jpg",
-      "id": "im-middlewest-5",
-      "source": "metron"
+      "coverUrl": "https://comicvine.gamespot.com/a/uploads/scale_large/11159/111596098/9700519-greenarrowv03-againstthewall-0000.jpg",
+      "id": "dc-ga-2011-2025-3",
+      "source": "cv"
     }
   ],
-  "errors": 1,
-  "filled": 178,
-  "filledCv": 21,
-  "filledMetron": 157,
+  "errors": 0,
+  "filled": 11,
+  "filledCv": 11,
+  "filledMetron": 0,
   "metronDailyCap": 2500,
   "metronDailyUsed": 481,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 49,
+  "misses": 10,
   "recentMissSkips": {
-    "cv": 281,
-    "metron": 315
+    "cv": 183
   },
   "requests": {
-    "cv": 105,
-    "metron": 482
+    "cv": 32,
+    "metron": 0
   },
-  "skipped": 18,
-  "source": "both",
+  "skipped": 0,
+  "source": "cv",
   "sourceMinutes": {
-    "cv": 60.23,
-    "metron": 60.29
+    "cv": 18.64
   },
-  "stoppedReason": "cv max-minutes 60 reached; metron max-minutes 60 reached",
-  "updatedAt": "2026-10-30T06:54:39Z",
-  "yearBand": "2010-2019 singles"
+  "stoppedReason": "cv max-minutes 18 reached",
+  "updatedAt": "2026-10-30T17:37:37Z",
+  "yearBand": "2020-2025"
 }
