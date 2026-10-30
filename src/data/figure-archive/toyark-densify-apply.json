@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T17:54:59Z",
+  "generatedAt": "2026-10-30T18:00:40Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-10-22T17:54:58.076422+00:00",
+    "after": "2026-10-23T18:00:39.548422+00:00",
     "before": null
   },
   "fetch": {
@@ -45,26 +45,26 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 13,
+    "fetchedPostCount": 14,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9950,
+    "indexedRows": 9988,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 13,
-    "acceptedCandidates": 5,
-    "rejectedRows": 14,
+    "fetchedPosts": 14,
+    "acceptedCandidates": 10,
+    "rejectedRows": 16,
     "byCompany": {
       "hasbro": {
         "accepted": 1,
         "rejected": 0
       },
       "mcfarlane": {
-        "accepted": 0,
-        "rejected": 4
+        "accepted": 7,
+        "rejected": 5
       },
       "neca": {
         "accepted": 0,
@@ -75,11 +75,11 @@
         "rejected": 0
       },
       "super7": {
-        "accepted": 3,
-        "rejected": 1
+        "accepted": 0,
+        "rejected": 4
       },
       "hottoys": {
-        "accepted": 1,
+        "accepted": 2,
         "rejected": 0
       },
       "mondo": {
@@ -108,17 +108,174 @@
       }
     },
     "byRejectReason": {
+      "possible-reissue": 4,
+      "already-in-oneshot": 3,
       "missing-line": 4,
       "vehicles-props-only": 1,
       "no-new-product-identity": 1,
-      "company-unknown": 4,
-      "company-not-allowlisted": 1,
-      "possible-reissue": 3
+      "company-unknown": 2,
+      "company-not-allowlisted": 1
     },
-    "applied": 4,
-    "skippedApply": 1
+    "applied": 6,
+    "skippedApply": 4
   },
   "candidates": [
+    {
+      "decision": "accept",
+      "name": "Batman",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "DC Classic",
+      "sourceUrl": "https://www.toyark.com/2026/10/30/dc-multiverse-batman-batman-batman-batman-and-bruce-wayne-601989",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-That-Is-A-Lot-Of-Batmans.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601989,
+      "postYear": 2026,
+      "pack": null,
+      "title": "DC Multiverse – Batman, Batman, Batman, Batman, and Bruce Wayne",
+      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Batman",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "DC Classic",
+      "sourceUrl": "https://www.toyark.com/2026/10/30/dc-multiverse-batman-batman-batman-batman-and-bruce-wayne-601989",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-That-Is-A-Lot-Of-Batmans.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601989,
+      "postYear": 2026,
+      "pack": null,
+      "title": "DC Multiverse – Batman, Batman, Batman, Batman, and Bruce Wayne",
+      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Batman",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "DC Classic",
+      "sourceUrl": "https://www.toyark.com/2026/10/30/dc-multiverse-batman-batman-batman-batman-and-bruce-wayne-601989",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-That-Is-A-Lot-Of-Batmans.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601989,
+      "postYear": 2026,
+      "pack": null,
+      "title": "DC Multiverse – Batman, Batman, Batman, Batman, and Bruce Wayne",
+      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Batman",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "DC Classic",
+      "sourceUrl": "https://www.toyark.com/2026/10/30/dc-multiverse-batman-batman-batman-batman-and-bruce-wayne-601989",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-That-Is-A-Lot-Of-Batmans.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601989,
+      "postYear": 2026,
+      "pack": null,
+      "title": "DC Multiverse – Batman, Batman, Batman, Batman, and Bruce Wayne",
+      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Bruce Wayne",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "DC Classic",
+      "sourceUrl": "https://www.toyark.com/2026/10/30/dc-multiverse-batman-batman-batman-batman-and-bruce-wayne-601989",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-That-Is-A-Lot-Of-Batmans.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601989,
+      "postYear": 2026,
+      "pack": null,
+      "title": "DC Multiverse – Batman, Batman, Batman, Batman, and Bruce Wayne",
+      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Val-Zod",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/30/new-dc-multiverse-pre-orders-val-zod-mary-shazam-star-sapphire-601959",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-DC-Multiverse-Pre-orders-10.29.26.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601959,
+      "postYear": 2026,
+      "pack": null,
+      "title": "New DC Multiverse Pre-Orders – Val-Zod, Mary Shazam, Star Sapphire",
+      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Mary Shazam",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/30/new-dc-multiverse-pre-orders-val-zod-mary-shazam-star-sapphire-601959",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-DC-Multiverse-Pre-orders-10.29.26.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601959,
+      "postYear": 2026,
+      "pack": null,
+      "title": "New DC Multiverse Pre-Orders – Val-Zod, Mary Shazam, Star Sapphire",
+      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Hicks",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": 2027,
+      "releaseWindow": "December 2027",
+      "variant": "Aliens – Corporal",
+      "sourceUrl": "https://www.toyark.com/2026/10/30/aliens-hot-toys-corporal-hicks-figure-601938",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Aliens-Hicks-001.jpg",
+      "aliases": [
+        "MMS930"
+      ],
+      "codes": [
+        "MMS930"
+      ],
+      "gtin": null,
+      "toyarkPostId": 601938,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Aliens – Hot Toys Corporal Hicks Figure",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; variant=Aliens – Corporal; year=2027; aliases-from-source=MMS930; new/reveal/pre-order/official-image signal"
+    },
     {
       "decision": "accept",
       "name": "Sentinel",
@@ -160,9 +317,33 @@
       "pack": null,
       "title": "Astonishing X-Men Marvel Legends Cyclops & Wolverine",
       "rationale": "hasbro via class:companies-hasbro; line=Marvel Legends; variant=Astonishing X-Men Marvel Legends Cyclops &; year=2027; new/reveal/pre-order/official-image signal"
+    }
+  ],
+  "rejects": [
+    {
+      "decision": "reject",
+      "reason": "possible-reissue",
+      "name": "Star Sapphire",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/10/30/new-dc-multiverse-pre-orders-val-zod-mary-shazam-star-sapphire-601959",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-DC-Multiverse-Pre-orders-10.29.26.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 601959,
+      "title": "New DC Multiverse Pre-Orders – Val-Zod, Mary Shazam, Star Sapphire",
+      "oneshotIds": [
+        "mcf-w8-star-sapphire"
+      ],
+      "rationale": "Same company+line+name(+year) exists; variant not distinct enough (mcf-w8-star-sapphire)."
     },
     {
-      "decision": "accept",
+      "decision": "reject",
+      "reason": "already-in-oneshot",
       "name": "Vultureman",
       "company": "super7",
       "line": "Super7 ULTIMATES!",
@@ -175,13 +356,15 @@
       "codes": [],
       "gtin": null,
       "toyarkPostId": 601885,
-      "postYear": 2026,
-      "pack": null,
       "title": "Thundercats Deluxe Wave 5 and Ultimates Wave 16",
-      "rationale": "super7 via class:companies-super-7; line=Super7 ULTIMATES!; variant=Deluxe Wave 5; year=2027; new/reveal/pre-order/official-image signal"
+      "oneshotIds": [
+        "ta-cd695ff0740b"
+      ],
+      "rationale": "Identity key already in oneshot (ta-cd695ff0740b)."
     },
     {
-      "decision": "accept",
+      "decision": "reject",
+      "reason": "already-in-oneshot",
       "name": "Panthro",
       "company": "super7",
       "line": "Super7 ULTIMATES!",
@@ -194,13 +377,15 @@
       "codes": [],
       "gtin": null,
       "toyarkPostId": 601885,
-      "postYear": 2026,
-      "pack": null,
       "title": "Thundercats Deluxe Wave 5 and Ultimates Wave 16",
-      "rationale": "super7 via class:companies-super-7; line=Super7 ULTIMATES!; variant=Deluxe Wave 5; year=2027; new/reveal/pre-order/official-image signal"
+      "oneshotIds": [
+        "ta-f9cafb08ad23"
+      ],
+      "rationale": "Identity key already in oneshot (ta-f9cafb08ad23)."
     },
     {
-      "decision": "accept",
+      "decision": "reject",
+      "reason": "already-in-oneshot",
       "name": "Mumm-Ra",
       "company": "super7",
       "line": "Super7 ULTIMATES!",
@@ -213,13 +398,12 @@
       "codes": [],
       "gtin": null,
       "toyarkPostId": 601885,
-      "postYear": 2026,
-      "pack": null,
       "title": "Thundercats Deluxe Wave 5 and Ultimates Wave 16",
-      "rationale": "super7 via class:companies-super-7; line=Super7 ULTIMATES!; variant=(The Ever Living) / Deluxe Wave 5; year=2027; new/reveal/pre-order/official-image signal"
-    }
-  ],
-  "rejects": [
+      "oneshotIds": [
+        "ta-3d5975f0beff"
+      ],
+      "rationale": "Identity key already in oneshot (ta-3d5975f0beff)."
+    },
     {
       "decision": "reject",
       "reason": "missing-line",
@@ -459,47 +643,83 @@
         "mf8-mf-10"
       ],
       "rationale": "Same company+line+name(+year) exists; variant not distinct enough (mcf5-mcf-penguin-patterson, mf8-mf-10)."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-unknown",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/23/captain-commando-figlitedx-captain-commando-and-carol-new-photos-by-52toys-601618",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601618,
-      "title": "Captain Commando – FigLiteDX Captain Commando and Carol New Photos by 52Toys",
-      "rationale": "No allowlisted companies-* class or unique body-text company."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-unknown",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/23/the-exorcist-sideshow-regan-macneil-pre-order-601602",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601602,
-      "title": "The Exorcist – Sideshow Regan MacNeil Pre-Order",
-      "rationale": "No allowlisted companies-* class or unique body-text company."
     }
   ],
   "applied": [
     {
-      "id": "ta-54ddd874119a",
+      "id": "ta-44f8dbdf9c40",
+      "name": "Batman",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": 2026,
+      "variant": "DC Classic",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-That-Is-A-Lot-Of-Batmans.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/30/dc-multiverse-batman-batman-batman-batman-and-bruce-wayne-601989",
+      "toyarkPostId": 601989
+    },
+    {
+      "id": "ta-f46d65127db3",
+      "name": "Bruce Wayne",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": 2026,
+      "variant": "DC Classic",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-That-Is-A-Lot-Of-Batmans.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/30/dc-multiverse-batman-batman-batman-batman-and-bruce-wayne-601989",
+      "toyarkPostId": 601989
+    },
+    {
+      "id": "ta-788280fe8e31",
+      "name": "Val-Zod",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": 2026,
+      "variant": null,
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-DC-Multiverse-Pre-orders-10.29.26.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/30/new-dc-multiverse-pre-orders-val-zod-mary-shazam-star-sapphire-601959",
+      "toyarkPostId": 601959
+    },
+    {
+      "id": "ta-aa9a46f8efee",
+      "name": "Mary Shazam",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": 2026,
+      "variant": null,
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-DC-Multiverse-Pre-orders-10.29.26.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/10/30/new-dc-multiverse-pre-orders-val-zod-mary-shazam-star-sapphire-601959",
+      "toyarkPostId": 601959
+    },
+    {
+      "id": "ta-674d7f860daa",
+      "name": "Hicks",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": 2027,
+      "variant": "Aliens – Corporal",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Aliens-Hicks-001.jpg",
+      "aliases": [
+        "MMS930"
+      ],
+      "sourceUrl": "https://www.toyark.com/2026/10/30/aliens-hot-toys-corporal-hicks-figure-601938",
+      "toyarkPostId": 601938
+    },
+    {
+      "id": "ta-54ddd874119ae4f0",
       "name": "Wolverine",
       "company": "hasbro",
       "line": "Marvel Legends",
@@ -511,51 +731,36 @@
       "aliases": [],
       "sourceUrl": "https://www.toyark.com/2026/10/29/astonishing-x-men-marvel-legends-cyclops-wolverine-601912",
       "toyarkPostId": 601912
-    },
-    {
-      "id": "ta-cd695ff0740b",
-      "name": "Vultureman",
-      "company": "super7",
-      "line": "Super7 ULTIMATES!",
-      "year": 2027,
-      "variant": "Deluxe Wave 5",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Super7-Thundercats-Ultimates-Wave-16-001.webp",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/29/thundercats-deluxe-wave-5-and-ultimates-wave-16-601885",
-      "toyarkPostId": 601885
-    },
-    {
-      "id": "ta-f9cafb08ad23",
-      "name": "Panthro",
-      "company": "super7",
-      "line": "Super7 ULTIMATES!",
-      "year": 2027,
-      "variant": "Deluxe Wave 5",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Super7-Thundercats-Ultimates-Wave-16-001.webp",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/29/thundercats-deluxe-wave-5-and-ultimates-wave-16-601885",
-      "toyarkPostId": 601885
-    },
-    {
-      "id": "ta-3d5975f0beff",
-      "name": "Mumm-Ra",
-      "company": "super7",
-      "line": "Super7 ULTIMATES!",
-      "year": 2027,
-      "variant": "(The Ever Living) / Deluxe Wave 5",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Super7-Thundercats-Ultimates-Wave-16-001.webp",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/29/thundercats-deluxe-wave-5-and-ultimates-wave-16-601885",
-      "toyarkPostId": 601885
     }
   ],
   "applySkipped": [
+    {
+      "name": "Batman",
+      "company": "mcfarlane",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-44f8dbdf9c40"
+      ],
+      "toyarkPostId": 601989
+    },
+    {
+      "name": "Batman",
+      "company": "mcfarlane",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-44f8dbdf9c40"
+      ],
+      "toyarkPostId": 601989
+    },
+    {
+      "name": "Batman",
+      "company": "mcfarlane",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-44f8dbdf9c40"
+      ],
+      "toyarkPostId": 601989
+    },
     {
       "name": "Sentinel",
       "company": "hottoys",
@@ -565,11 +770,11 @@
     }
   ],
   "applyStats": {
-    "accepted": 5,
-    "applied": 4,
-    "skippedApply": 1,
-    "aliasAdded": 8,
-    "withImage": 4,
+    "accepted": 10,
+    "applied": 6,
+    "skippedApply": 4,
+    "aliasAdded": 13,
+    "withImage": 6,
     "cap": 50,
     "blocker": null
   }

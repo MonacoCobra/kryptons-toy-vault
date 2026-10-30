@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-10-29T17:54:57.897095+00:00",
+  "bakedAt": "2026-10-30T18:00:39.381681+00:00",
   "dryRun": true,
   "lines": [
     {
-      "bakedAt": "2026-10-29T17:52:41.831952+00:00",
+      "bakedAt": "2026-10-30T17:58:30.228289+00:00",
       "line": "black-series",
       "dryRun": true,
       "mephitsuCount": 1007,
@@ -14,20 +14,20 @@
         "already": 490
       },
       "before": {
-        "total": 482,
-        "withSku": 410,
+        "total": 485,
+        "withSku": 413,
         "withGtin": 256,
-        "withListingPrimary": 154,
-        "withImage": 414,
+        "withListingPrimary": 157,
+        "withImage": 417,
         "emptySku": 72,
         "emptyImage": 68
       },
       "after": {
-        "total": 482,
-        "withSku": 410,
+        "total": 485,
+        "withSku": 413,
         "withGtin": 256,
-        "withListingPrimary": 154,
-        "withImage": 414,
+        "withListingPrimary": 157,
+        "withImage": 417,
         "emptySku": 72,
         "emptyImage": 68
       },
@@ -118,7 +118,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-29T17:52:51.167225+00:00",
+      "bakedAt": "2026-10-30T17:58:39.126994+00:00",
       "line": "gi-joe-classified",
       "dryRun": true,
       "mephitsuCount": 318,
@@ -233,7 +233,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-29T17:52:56.311889+00:00",
+      "bakedAt": "2026-10-30T17:58:43.778951+00:00",
       "line": "transformers",
       "dryRun": true,
       "mephitsuCount": 280,
@@ -348,7 +348,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-29T17:53:59.164331+00:00",
+      "bakedAt": "2026-10-30T17:59:42.940874+00:00",
       "line": "mcfarlane",
       "dryRun": true,
       "mephitsuCount": 2220,
@@ -359,28 +359,28 @@
         "already": 969
       },
       "before": {
-        "total": 1712,
-        "withSku": 830,
-        "withGtin": 590,
-        "withListingPrimary": 240,
-        "withImage": 839,
+        "total": 1743,
+        "withSku": 861,
+        "withGtin": 618,
+        "withListingPrimary": 243,
+        "withImage": 842,
         "emptySku": 882,
-        "emptyImage": 873
+        "emptyImage": 901
       },
       "after": {
-        "total": 1712,
-        "withSku": 830,
-        "withGtin": 590,
-        "withListingPrimary": 240,
-        "withImage": 839,
+        "total": 1743,
+        "withSku": 861,
+        "withGtin": 618,
+        "withListingPrimary": 243,
+        "withImage": 842,
         "emptySku": 882,
-        "emptyImage": 873
+        "emptyImage": 901
       },
       "apply": {
-        "matched": 581,
+        "matched": 599,
         "gtinAssigned": 9,
         "gtinUpgraded": 1,
-        "imagesFilled": 85,
+        "imagesFilled": 103,
         "imagesSkipped": 45,
         "aliasesAttached": 0,
         "skippedGtinConflict": 72,
@@ -580,7 +580,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-29T17:54:31.628871+00:00",
+      "bakedAt": "2026-10-30T18:00:12.961508+00:00",
       "line": "neca",
       "dryRun": true,
       "mephitsuCount": 1502,
@@ -702,7 +702,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-29T17:54:48.761931+00:00",
+      "bakedAt": "2026-10-30T18:00:29.853302+00:00",
       "line": "super7",
       "dryRun": true,
       "mephitsuCount": 520,
@@ -713,25 +713,25 @@
         "already": 68
       },
       "before": {
-        "total": 2847,
+        "total": 2850,
         "withSku": 2426,
         "withGtin": 130,
         "withListingPrimary": 2296,
-        "withImage": 2563,
-        "emptySku": 421,
+        "withImage": 2566,
+        "emptySku": 424,
         "emptyImage": 284
       },
       "after": {
-        "total": 2847,
+        "total": 2850,
         "withSku": 2426,
         "withGtin": 130,
         "withListingPrimary": 2296,
-        "withImage": 2563,
-        "emptySku": 421,
+        "withImage": 2566,
+        "emptySku": 424,
         "emptyImage": 284
       },
       "apply": {
-        "matched": 117,
+        "matched": 118,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
         "imagesFilled": 0,
@@ -817,7 +817,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-29T17:54:49.811073+00:00",
+      "bakedAt": "2026-10-30T18:00:30.962258+00:00",
       "line": "diamond-select",
       "dryRun": true,
       "mephitsuCount": 597,
@@ -932,7 +932,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-29T17:54:55.133838+00:00",
+      "bakedAt": "2026-10-30T18:00:36.292365+00:00",
       "line": "power-rangers",
       "dryRun": true,
       "mephitsuCount": 188,
@@ -1047,7 +1047,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-29T17:54:57.891991+00:00",
+      "bakedAt": "2026-10-30T18:00:39.375495+00:00",
       "line": "indiana-jones",
       "dryRun": true,
       "mephitsuCount": 28,
