@@ -1,313 +1,435 @@
 {
-  "coversAfter": 7787,
-  "coversBefore": 7731,
+  "coversAfter": 7949,
+  "coversBefore": 7787,
   "cvHourlyCap": 150,
   "cvMinInterval": 24.0,
   "cvRequestInterval": 36.0,
   "details": [
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/09/67b384fda683445bb7c9b88107aa957b.jpg",
-      "id": "mv-cap-15-765",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/12/17/reaver-2.jpg",
+      "id": "im-reaver-2",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/06/66b522d6c9364b68b87adca34c7b0560.jpg",
-      "id": "mv-cap-16-766",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/12/17/reaver-3.jpg",
+      "id": "im-reaver-3",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/26/c67b8a53af5646b09f575b8e78412adb.jpg",
-      "id": "mv-cap-2-773",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/12/17/reaver-4.jpg",
+      "id": "im-reaver-4",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/30/3166fee9fcfb42caab0973324ce222b5.jpg",
-      "id": "mv-cap-3-774",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/12/17/reaver-5.jpg",
+      "id": "im-reaver-5",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/29/f669f7719bc940b2891f14d606cff025.jpg",
-      "id": "mv-cap-4-775",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/12/17/reaver-6.jpg",
+      "id": "im-reaver-6",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/15/8adf62b04f114d87a63491df177e79c6.jpg",
-      "id": "mv-chasm-curse-of-kaine-4",
+      "coverUrl": "https://static.metron.cloud/media/issue/2020/08/17/redlands-10.jpg",
+      "id": "im-redlands-10",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/09/4e63685f514c41198deb42b3ed1c6ae1.jpg",
-      "id": "mv-conquest-2099-3",
+      "coverUrl": "https://static.metron.cloud/media/issue/2020/08/17/redlands-11.jpg",
+      "id": "im-redlands-11",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/30/348cfb33c3c24606954b76d797d816e9.jpg",
-      "id": "mv-conquest-2099-4",
+      "coverUrl": "https://static.metron.cloud/media/issue/2020/08/17/redlands-12.jpg",
+      "id": "im-redlands-12",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/06/ba509703ddb649e1a96dbdfc3711677b.jpg",
-      "id": "mv-conquest-2099-5",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/12/05/redneck-18.jpg",
+      "id": "im-redneck-18",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/27/a69a8472e31f4faa864d467c51a6ded4.jpg",
-      "id": "mv-daredevil-cold-day-in-hell-2",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/12/05/redneck-19.jpg",
+      "id": "im-redneck-19",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/26/14cf7fb6e8ee45639e22179002ff010c.jpg",
-      "id": "mv-daredevil-cold-day-in-hell-3",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/12/05/redneck-20.jpg",
+      "id": "im-redneck-20",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/09/56b53c0b15e740059904218bd7a9c9ec.jpg",
-      "id": "mv-daredevil-unleash-hell-red-band-2",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/12/05/redneck-21.jpg",
+      "id": "im-redneck-21",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/07/98fe2104ee8c44a7beec5ec11b202661.jpg",
-      "id": "mv-daredevil-unleash-hell-red-band-3",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/12/05/redneck-22.jpg",
+      "id": "im-redneck-22",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/03/0c33c3403a264c3abc1ce4c49f55337b.jpg",
-      "id": "mv-daredevil-unleash-hell-red-band-4",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/12/05/redneck-23.jpg",
+      "id": "im-redneck-23",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/19/98c77a864cfe4058832a9e8fdd71a626.jpg",
-      "id": "mv-daredevil-unleash-hell-red-band-5",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/12/05/redneck-24.jpg",
+      "id": "im-redneck-24",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/15/c5d5f924503042dd996641521a129b05.jpg",
-      "id": "mv-dazzler-3",
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/06/03/815b291603684efd9a2417f1c51f6d63.jpg",
+      "id": "im-regression-15",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/06/49e5f981ccfa462da3263e4776da245c.jpg",
-      "id": "mv-dazzler-4",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/17/ride-burning-desire-2.jpg",
+      "id": "im-ride-burning-desire-2",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/15/184653bca71e46b08786c00fc6842247.jpg",
-      "id": "mv-dd-15-665-677",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/18/ride-burning-desire-3.jpg",
+      "id": "im-ride-burning-desire-3",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/06/c437ad2a54374011ba6d333836875702.jpg",
-      "id": "mv-dd-16-678",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/20/ride-burning-4.jpg",
+      "id": "im-ride-burning-desire-4",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/21/ca9865cb9336424db9e9d8070ed23c18.jpg",
-      "id": "mv-dd-17-679",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/25/the-ride-burning-5.jpg",
+      "id": "im-ride-burning-desire-5",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/09/2e8209138cf44263ae8fa35d428a0d3f.jpg",
-      "id": "mv-dd-18-680",
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/04/29/e7f85fbf1f8a4377b00ec1414dd88111.jpg",
+      "id": "im-rose-16",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/16/dbd144a76b824d7caabf34d49bc967cb.jpg",
-      "id": "mv-dd-19-681",
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/04/29/79b213cc39b94f61b758a081c47e76f9.jpg",
+      "id": "im-rose-17",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/1c3954e8a49b423c894e3044a20bcf42.jpg",
-      "id": "mv-dd-20-682",
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/06/rumble-12.jpg",
+      "id": "im-rumble-2019-12",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/28/fb47e22df3fe42bea8862a6a4338c291.jpg",
-      "id": "mv-dd-21-683",
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/06/rumble-14.jpg",
+      "id": "im-rumble-2019-14",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/29/90d64f7c29464ba7b3e4cc54210299bc.jpg",
-      "id": "mv-dd-22-684",
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/06/rumble-15.jpg",
+      "id": "im-rumble-2019-15",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/16/8a8f25e08b254eed91c2938b150e3b86.jpg",
-      "id": "mv-dd-23-685",
+      "coverUrl": "https://static.metron.cloud/media/issue/2023/07/21/d42a1700598a4d919284253a569e185a.jpg",
+      "id": "im-sd-242",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/31/8db14fa047aa437aa3b37ebd9b1f06c1.jpg",
-      "id": "mv-dd-24-686",
+      "coverUrl": "https://static.metron.cloud/media/issue/2023/07/21/874ee49cbb3a4b70a448f0691f15aee4.jpg",
+      "id": "im-sd-244",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/12/61ca97acb2d04bc686eb26b3c013608f.jpg",
-      "id": "mv-dd-25-687",
+      "coverUrl": "https://static.metron.cloud/media/issue/2023/07/21/d93cf17db193448196dba26dfedd4813.jpg",
+      "id": "im-sd-245",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/21/ff8dca3aa2ce4d008acf42aca154cb63.jpg",
-      "id": "mv-deadpool-10-345",
+      "coverUrl": "https://static.metron.cloud/media/issue/2023/07/21/26f533e1cd6d4103b38279460bde7dcd.jpg",
+      "id": "im-sd-246",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/31/8497b8822bdd449985bb20b0b7fb6be6.jpg",
-      "id": "mv-deadpool-11-346",
+      "coverUrl": "https://static.metron.cloud/media/issue/2023/07/21/13597ec5c086421a8c5cc9771bcd470f.jpg",
+      "id": "im-sd-247",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/02/28/225c332497364c89b38417c539acf4d0.jpg",
-      "id": "mv-deadpool-12-347",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/02/sea-stars-2.jpg",
+      "id": "im-sea-of-stars-2",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/20f0d8af9cc04d01adcf0651d41f59f0.jpg",
-      "id": "mv-deadpool-13-348",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/31/sea-stars-3.jpg",
+      "id": "im-sea-of-stars-3",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/21/37b09911a99b4bd58b9acb31575e19ce.jpg",
-      "id": "mv-deadpool-14-349",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/28/sea-stars-4.jpg",
+      "id": "im-sea-of-stars-4",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/10/0a17938232dd421cb9038bf9fbd677be.jpg",
-      "id": "mv-deadpool-15-350",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/11/09/sea-stars-5.jpg",
+      "id": "im-sea-of-stars-5",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/11/09/e8d5e35b7557430f8c1d3cdcb77fa786.jpg",
-      "id": "mv-deadpool-2025-8",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/07/section-zero-2.jpg",
+      "id": "im-section-zero-2",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/06/a5e70e24fb5e4927bf38c5364a050942.jpg",
-      "id": "mv-deadpool-2025-9",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/02/section-zero-3.jpg",
+      "id": "im-section-zero-3",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/21/7cb54a1cb9b4496492f153cd34f20d4a.jpg",
-      "id": "mv-deadpool-kills-marvel-universe-one-last-2",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/29/section-zero-4.jpg",
+      "id": "im-section-zero-4",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/29/8acd8607d0b841778a92af05c99e0663.jpg",
-      "id": "mv-deadpool-kills-marvel-universe-one-last-3",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/02/section-zero-5.jpg",
+      "id": "im-section-zero-5",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/16/2dfaf9e5075f492a8b350b1144ee13b7.jpg",
-      "id": "mv-deadpool-kills-marvel-universe-one-last-4",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/31/section-zero-6.jpg",
+      "id": "im-section-zero-6",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/07/26/cb8be9d3957a45f1bafcebc5b7d773ec.jpg",
-      "id": "mv-deadpool-kills-marvel-universe-one-last-5",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/05/seven-to-eternity-13.jpg",
+      "id": "im-seven-to-eternity-13",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2024/12/06/9bb67b8ef4054a109899a8d1a657c10d.jpg",
-      "id": "mv-deadpool-team-up-4",
+      "coverUrl": "https://static.metron.cloud/media/issue/2023/08/29/30957eb371e74ddb8791beb615a28a18.jpg",
+      "id": "im-sfsx-safe-sex-2",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/31/e35fb59afe784673a4479d9f285da6d1.jpg",
-      "id": "mv-deadpool-team-up-5",
+      "coverUrl": "https://static.metron.cloud/media/issue/2023/08/29/2da1dbde090e4544a4984ba24d6110c4.jpg",
+      "id": "im-sfsx-safe-sex-3",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/22/35614d19bc5a42d0a37466a1c92690f7.jpg",
-      "id": "mv-deadpool-wolverine-10",
+      "coverUrl": "https://static.metron.cloud/media/issue/2023/08/29/8df027a7ed56445d87370ddeb17e62a0.jpg",
+      "id": "im-sfsx-safe-sex-4",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/01/31/c9b3261132ce4b47a922d5aaf68c07a4.jpg",
-      "id": "mv-deadpool-wolverine-2",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/03/26/sharkey-2.jpg",
+      "id": "im-sharkey-bounty-hunter-2",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/07/ae5b5fc63bd7458b8de4d4220f546c90.jpg",
-      "id": "mv-deadpool-wolverine-3",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/21/sharkey-bounty-hunter-3.jpg",
+      "id": "im-sharkey-bounty-hunter-3",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/04/08/94b24abee3f94694a813dd8661353492.jpg",
-      "id": "mv-deadpool-wolverine-4",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/02/sharkey-4.jpg",
+      "id": "im-sharkey-bounty-hunter-4",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/15/502e945bd50247619c00f911da54e84b.jpg",
-      "id": "mv-deadpool-wolverine-5",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/10/sharkey-5.jpg",
+      "id": "im-sharkey-bounty-hunter-5",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/05/29/a8fce8e803c54dd081cc2d844765ee54.jpg",
-      "id": "mv-deadpool-wolverine-6",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/10/18/sharkey-6.jpg",
+      "id": "im-sharkey-bounty-hunter-6",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/16/197b58553df44b02b6e8493e5cbc94ce.jpg",
-      "id": "mv-deadpool-wolverine-7",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/01/29/skyward-10.jpg",
+      "id": "im-skyward-10",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/14/825217d3cb6045b3bd90ca8c3166cd89.jpg",
-      "id": "mv-deadpool-wolverine-8",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/03/28/skyward-11.jpg",
+      "id": "im-skyward-11",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/09/05/b2578ebd5344483f9ef6769b15336a4b.jpg",
-      "id": "mv-deadpool-wolverine-9",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/04/24/skyward-12.jpg",
+      "id": "im-skyward-12",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/06/16/3c6ebff66355413eb5da51b36f495f02.jpg",
-      "id": "mv-death-of-silver-surfer-2",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/05/15/skyward-13.jpg",
+      "id": "im-skyward-13",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/04/3509e89ca4604811beecf4a662838f08.jpg",
-      "id": "mv-death-of-silver-surfer-3",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/06/15/skyward-14.jpg",
+      "id": "im-skyward-14",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/10/16/818372ceaf454ce99a1124f94760ad80.jpg",
-      "id": "mv-death-of-silver-surfer-5",
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/07/20/skyward-15.jpg",
+      "id": "im-skyward-15",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/08/19/c1bbf283a691445f9722558076363b80.jpg",
-      "id": "mv-doctor-strange-450",
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/06/03/36d222bb46c6453b9b75c221c7a88b46.jpg",
+      "id": "im-snotgirl-13",
       "source": "metron"
     },
     {
-      "coverUrl": "https://static.metron.cloud/media/issue/2025/03/25/472980b20abe4ee18f1d3f68f8ae6b10.jpg",
-      "id": "mv-doctor-strange-of-asgard-2",
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/06/03/ea9d4401ca6b42ffb084fd99d41e5877.jpg",
+      "id": "im-snotgirl-14",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/02/space-bandits-2.jpg",
+      "id": "im-space-bandits-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/08/31/space-bandits-3.jpg",
+      "id": "im-space-bandits-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/09/28/space-bandits-4.jpg",
+      "id": "im-space-bandits-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2019/11/02/space-bandits-5-correct.jpg",
+      "id": "im-space-bandits-5",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/04/01/ebaf426f1b094570a68ae4f88358ca4f.jpg",
+      "id": "im-spawn-kills-everyone-too-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/04/01/3119467f55cd4349a51aadae5690c656.jpg",
+      "id": "im-spawn-kills-everyone-too-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/04/01/0427280462cb4521a8ab0ba57a1946a6.jpg",
+      "id": "im-spawn-kills-everyone-too-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/04/19/stray-bullets-41.jpg",
+      "id": "im-stray-bullets-sunshine-roses-41",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/04/14/afc64efb0ca244528417e6b5191dec6e.jpg",
+      "id": "im-thief-of-thieves-43",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/07/trees-three-fates-2.jpg",
+      "id": "im-trees-three-fates-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/07/trees-three-fates-3.jpg",
+      "id": "im-trees-three-fates-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2022/06/07/trees-three-fates-4.jpg",
+      "id": "im-trees-three-fates-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2021/09/29/undiscovered-country-2.jpg",
+      "id": "im-undiscovered-2019-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/08/08/7039446-02a.jpg",
+      "id": "im-unearth-2",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/08/08/7067810-03a.jpg",
+      "id": "im-unearth-3",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/08/08/7100135-04a.jpg",
+      "id": "im-unearth-4",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2026/08/08/7133821-05a.jpg",
+      "id": "im-unearth-5",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/09/07/5a3dcc253c724d1bbbc290be124b0ffa.jpg",
+      "id": "im-unnatural-10",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/09/07/dda4e39481444e01aa9530a60a6714b3.jpg",
+      "id": "im-unnatural-11",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/09/07/ccbc6fed030b46faa8ecfc6898e45ea0.jpg",
+      "id": "im-unnatural-12",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/09/07/09d8198c71f84d2582a870b09c0c95e4.jpg",
+      "id": "im-unnatural-6",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/09/07/0ab6514f89134cacb040e592d35e964d.jpg",
+      "id": "im-unnatural-7",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/09/07/66d12f8527f846bb822ee0d1ba79da5c.jpg",
+      "id": "im-unnatural-8",
+      "source": "metron"
+    },
+    {
+      "coverUrl": "https://static.metron.cloud/media/issue/2024/09/07/526f0bbb37b942ee92ddf78f2aa6faf3.jpg",
+      "id": "im-unnatural-9",
       "source": "metron"
     }
   ],
-  "errors": 0,
-  "filled": 56,
-  "filledCv": 0,
-  "filledMetron": 56,
+  "errors": 3,
+  "filled": 162,
+  "filledCv": 27,
+  "filledMetron": 135,
   "metronDailyCap": 2500,
-  "metronDailyUsed": 636,
+  "metronDailyUsed": 465,
   "metronRpm": 10,
   "missTtlDays": 14.0,
-  "misses": 18,
+  "misses": 34,
   "recentMissSkips": {
-    "metron": 232
+    "cv": 315,
+    "metron": 325
   },
   "requests": {
-    "cv": 0,
-    "metron": 155
+    "cv": 63,
+    "metron": 421
   },
-  "skipped": 0,
-  "source": "metron",
+  "skipped": 19,
+  "source": "both",
   "sourceMinutes": {
-    "metron": 18.2
+    "cv": 35.9,
+    "metron": 60.03
   },
-  "stoppedReason": "metron max-minutes 18 reached",
-  "updatedAt": "2026-10-30T17:56:13Z",
-  "yearBand": "2020-2025"
+  "stoppedReason": "Comic Vine 420 \u2014 pulled back; metron max-minutes 60 reached",
+  "updatedAt": "2026-10-31T06:42:33Z",
+  "yearBand": "2010-2019 singles"
 }
