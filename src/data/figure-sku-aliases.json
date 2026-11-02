@@ -45931,6 +45931,14 @@
       "toyark:601938",
       "MMS930",
       "https://www.toyark.com/2026/10/30/aliens-hot-toys-corporal-hicks-figure-601938"
+    ],
+    "ta-602102-vox": [
+      "id:ta-602102-vox"
+    ],
+    "ta-602102-necroplasm-spawn": [
+      "id:ta-602102-necroplasm-spawn",
+      "toyark:602102",
+      "https://www.toyark.com/2026/11/02/mcfarlane-toys-vox-and-necroplasm-spawn-602102"
     ]
   },
   "aliasToFigureId": {
@@ -70971,7 +70979,11 @@
     "id:ta-674d7f860daa": "ta-674d7f860daa",
     "toyark:601938": "ta-674d7f860daa",
     "MMS930": "ta-674d7f860daa",
-    "https://www.toyark.com/2026/10/30/aliens-hot-toys-corporal-hicks-figure-601938": "ta-674d7f860daa"
+    "https://www.toyark.com/2026/10/30/aliens-hot-toys-corporal-hicks-figure-601938": "ta-674d7f860daa",
+    "id:ta-602102-vox": "ta-602102-vox",
+    "id:ta-602102-necroplasm-spawn": "ta-602102-necroplasm-spawn",
+    "toyark:602102": "ta-602102-necroplasm-spawn",
+    "https://www.toyark.com/2026/11/02/mcfarlane-toys-vox-and-necroplasm-spawn-602102": "ta-602102-necroplasm-spawn"
   },
   "collapsed": [
     {
@@ -79406,6 +79418,42 @@
       },
       "aliasesDropped": [],
       "reason": "Shelby 2026-10-18 Buzz-Saw merge: s79-s7-31 'Buzz-Saw' (curated-bbts-wave9, UPC 840049813366 via toyarena sku SUP813366, unverified 2021 date = preorder year) is the same Super7 SilverHawks ULTIMATES! Wave 1 Buzz-Saw (model DE-HAWKW01-BZS-01, UPC 840049813366 per Amazon/Best Buy/EE). Kept Super7-sourced row with official photo; GTIN promoted to sku, model + toyarena codes kept as aliases; date set to 2023-05 per Super7's April 2023 production update (Wave 1 shipping late May 2023), replacing archive scrape date 2026-04-23."
+    },
+    {
+      "keepId": "afmon-mcfarlane-dc-multiverse-mcfarlane-collector-edition-wave-17-superman-earth-2-71-7-in-mf18156",
+      "dropId": "ta-788280fe8e31",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Val-Zod from ToyArk 601959 duplicates EE Collector Edition Wave 17 #71 Superman Val-Zod. Meph noon babysit 2026-11-02: toyark-densify auto-row re-created every run; block id so it is never recreated."
+    },
+    {
+      "keepId": "afmon-mcfarlane-dc-multiverse-mcfarlane-collector-edition-wave-17-mary-shazam-shazam-72-7-mf18157",
+      "dropId": "ta-aa9a46f8efee",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Mary Shazam from ToyArk 601959 duplicates EE Collector Edition Wave 17 #72 Mary Shazam. Meph noon babysit 2026-11-02: toyark-densify auto-row re-created every run; block id so it is never recreated."
+    },
+    {
+      "keepId": "ta-54ddd874119a",
+      "dropId": "ta-54ddd874119ae4f0",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Mis-parsed 'Wolverine' from ToyArk 601912 duplicates hand-fixed Cyclops & Wolverine 2-Pack. Meph noon babysit 2026-11-02: toyark-densify auto-row re-created every run; block id so it is never recreated."
+    },
+    {
+      "keepId": "ta-602102-necroplasm-spawn",
+      "dropId": "ta-04d4f9d3d0fe",
+      "canonicalSku": null,
+      "aliasesAdded": [],
+      "aliasesMoved": {},
+      "aliasesDropped": [],
+      "reason": "Mis-parsed 'Spawn (Vox and Necroplasm)' from ToyArk 602102 is two figures, added as Vox and Necroplasm Spawn. Meph noon babysit 2026-11-02: toyark-densify auto-row re-created every run; block id so it is never recreated."
     }
   ],
   "strippedCodes": [
