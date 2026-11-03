@@ -1,22 +1,22 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-10-30T18:00:40Z",
+  "finishedAt": "2026-11-03T18:54:37Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 10,
-  "applied": 6,
-  "skippedApply": 4,
-  "rejectedRows": 16,
-  "withImage": 6,
-  "aliasAdded": 13,
+  "acceptedCandidates": 17,
+  "applied": 11,
+  "skippedApply": 6,
+  "rejectedRows": 14,
+  "withImage": 11,
+  "aliasAdded": 17,
   "byCompany": {
     "hasbro": {
       "accepted": 1,
       "rejected": 0
     },
     "mcfarlane": {
-      "accepted": 7,
-      "rejected": 5
+      "accepted": 15,
+      "rejected": 2
     },
     "neca": {
       "accepted": 0,
@@ -28,11 +28,11 @@
     },
     "super7": {
       "accepted": 0,
-      "rejected": 4
+      "rejected": 3
     },
     "hottoys": {
-      "accepted": 2,
-      "rejected": 0
+      "accepted": 1,
+      "rejected": 1
     },
     "mondo": {
       "accepted": 0,
@@ -60,50 +60,137 @@
     }
   },
   "byRejectReason": {
-    "possible-reissue": 4,
-    "already-in-oneshot": 3,
+    "company-not-allowlisted": 4,
+    "possible-reissue": 1,
+    "already-in-oneshot": 4,
     "missing-line": 4,
-    "vehicles-props-only": 1,
-    "no-new-product-identity": 1,
-    "company-unknown": 2,
-    "company-not-allowlisted": 1
+    "vehicles-props-only": 1
   },
   "appliedIds": [
-    "ta-44f8dbdf9c40",
-    "ta-f46d65127db3",
+    "ta-284cd47c6520",
+    "ta-fab5e0c0dc34",
+    "ta-08f477585dc3",
+    "ta-80e8695218e3",
+    "ta-76c19d438585",
+    "ta-5d6f204064da",
+    "ta-c805cdc5336e",
+    "ta-04d4f9d3d0fe",
     "ta-788280fe8e31",
     "ta-aa9a46f8efee",
-    "ta-674d7f860daa",
     "ta-54ddd874119ae4f0"
   ],
   "appliedSample": [
     {
-      "id": "ta-44f8dbdf9c40",
-      "name": "Batman",
+      "id": "ta-284cd47c6520",
+      "name": "Clark Kent",
       "company": "mcfarlane",
       "line": "DC Multiverse",
       "year": 2026,
-      "variant": "DC Classic",
+      "variant": "With Two Portraits",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-That-Is-A-Lot-Of-Batmans.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/DC-Multiverse-Superman-1978-Clark-Kent-002.jpg",
       "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/30/dc-multiverse-batman-batman-batman-batman-and-bruce-wayne-601989",
-      "toyarkPostId": 601989
+      "sourceUrl": "https://www.toyark.com/2026/11/03/superman-1978-dc-multiverse-clark-kent-figure-602178",
+      "toyarkPostId": 602178
     },
     {
-      "id": "ta-f46d65127db3",
-      "name": "Bruce Wayne",
+      "id": "ta-fab5e0c0dc34",
+      "name": "Multiple Interchangeable Hands",
       "company": "mcfarlane",
       "line": "DC Multiverse",
       "year": 2026,
-      "variant": "DC Classic",
+      "variant": null,
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-That-Is-A-Lot-Of-Batmans.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/DC-Multiverse-Superman-1978-Clark-Kent-002.jpg",
       "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/30/dc-multiverse-batman-batman-batman-batman-and-bruce-wayne-601989",
-      "toyarkPostId": 601989
+      "sourceUrl": "https://www.toyark.com/2026/11/03/superman-1978-dc-multiverse-clark-kent-figure-602178",
+      "toyarkPostId": 602178
+    },
+    {
+      "id": "ta-08f477585dc3",
+      "name": "Glasses",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": 2026,
+      "variant": null,
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/DC-Multiverse-Superman-1978-Clark-Kent-002.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/11/03/superman-1978-dc-multiverse-clark-kent-figure-602178",
+      "toyarkPostId": 602178
+    },
+    {
+      "id": "ta-80e8695218e3",
+      "name": "Swap Out Chest Pieces",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": 2026,
+      "variant": null,
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/DC-Multiverse-Superman-1978-Clark-Kent-002.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/11/03/superman-1978-dc-multiverse-clark-kent-figure-602178",
+      "toyarkPostId": 602178
+    },
+    {
+      "id": "ta-76c19d438585",
+      "name": "A Removable Soft Goods Coat",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": 2026,
+      "variant": null,
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/DC-Multiverse-Superman-1978-Clark-Kent-002.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/11/03/superman-1978-dc-multiverse-clark-kent-figure-602178",
+      "toyarkPostId": 602178
+    },
+    {
+      "id": "ta-5d6f204064da",
+      "name": "More",
+      "company": "mcfarlane",
+      "line": "DC Multiverse",
+      "year": 2026,
+      "variant": null,
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/DC-Multiverse-Superman-1978-Clark-Kent-002.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/11/03/superman-1978-dc-multiverse-clark-kent-figure-602178",
+      "toyarkPostId": 602178
+    },
+    {
+      "id": "ta-c805cdc5336e",
+      "name": "Harley Quinn",
+      "company": "mcfarlane",
+      "line": "DC Multiverse Gold Label",
+      "year": 2026,
+      "variant": "DC Multiverse Mr. Freeze and",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/z-DC-Multiverse-Gold-Label-11.3.26.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/11/03/dc-multiverse-gold-label-mr-freeze-and-harley-quinn-602160",
+      "toyarkPostId": 602160
+    },
+    {
+      "id": "ta-04d4f9d3d0fe",
+      "name": "Spawn",
+      "company": "mcfarlane",
+      "line": "Spawn",
+      "year": 2026,
+      "variant": "Vox and Necroplasm",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/z-McFarlane-Toys-Spawn-11.2.23.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/11/02/mcfarlane-toys-vox-and-necroplasm-spawn-602102",
+      "toyarkPostId": 602102
     },
     {
       "id": "ta-788280fe8e31",
@@ -132,22 +219,6 @@
       "aliases": [],
       "sourceUrl": "https://www.toyark.com/2026/10/30/new-dc-multiverse-pre-orders-val-zod-mary-shazam-star-sapphire-601959",
       "toyarkPostId": 601959
-    },
-    {
-      "id": "ta-674d7f860daa",
-      "name": "Hicks",
-      "company": "hottoys",
-      "line": "Hot Toys",
-      "year": 2027,
-      "variant": "Aliens – Corporal",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Aliens-Hicks-001.jpg",
-      "aliases": [
-        "MMS930"
-      ],
-      "sourceUrl": "https://www.toyark.com/2026/10/30/aliens-hot-toys-corporal-hicks-figure-601938",
-      "toyarkPostId": 601938
     },
     {
       "id": "ta-54ddd874119ae4f0",
@@ -193,6 +264,24 @@
       "toyarkPostId": 601989
     },
     {
+      "name": "Batman",
+      "company": "mcfarlane",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-44f8dbdf9c40"
+      ],
+      "toyarkPostId": 601989
+    },
+    {
+      "name": "Bruce Wayne",
+      "company": "mcfarlane",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-f46d65127db3"
+      ],
+      "toyarkPostId": 601989
+    },
+    {
       "name": "Sentinel",
       "company": "hottoys",
       "reason": "alias-owned",
@@ -200,7 +289,7 @@
       "owner": "ta-46a7d4630d86"
     }
   ],
-  "archiveSize": 30750,
+  "archiveSize": 30836,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"

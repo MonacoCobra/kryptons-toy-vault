@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-10-30T18:00:39.381681+00:00",
+  "bakedAt": "2026-11-03T18:54:35.624062+00:00",
   "dryRun": true,
   "lines": [
     {
-      "bakedAt": "2026-10-30T17:58:30.228289+00:00",
+      "bakedAt": "2026-11-03T18:52:27.978080+00:00",
       "line": "black-series",
       "dryRun": true,
       "mephitsuCount": 1007,
@@ -118,7 +118,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-30T17:58:39.126994+00:00",
+      "bakedAt": "2026-11-03T18:52:37.026341+00:00",
       "line": "gi-joe-classified",
       "dryRun": true,
       "mephitsuCount": 318,
@@ -233,7 +233,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-30T17:58:43.778951+00:00",
+      "bakedAt": "2026-11-03T18:52:41.950299+00:00",
       "line": "transformers",
       "dryRun": true,
       "mephitsuCount": 280,
@@ -348,7 +348,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-30T17:59:42.940874+00:00",
+      "bakedAt": "2026-11-03T18:53:39.784334+00:00",
       "line": "mcfarlane",
       "dryRun": true,
       "mephitsuCount": 2220,
@@ -359,31 +359,31 @@
         "already": 969
       },
       "before": {
-        "total": 1743,
-        "withSku": 861,
+        "total": 1750,
+        "withSku": 864,
         "withGtin": 618,
-        "withListingPrimary": 243,
-        "withImage": 842,
-        "emptySku": 882,
+        "withListingPrimary": 246,
+        "withImage": 849,
+        "emptySku": 886,
         "emptyImage": 901
       },
       "after": {
-        "total": 1743,
-        "withSku": 861,
+        "total": 1750,
+        "withSku": 864,
         "withGtin": 618,
-        "withListingPrimary": 243,
-        "withImage": 842,
-        "emptySku": 882,
+        "withListingPrimary": 246,
+        "withImage": 849,
+        "emptySku": 886,
         "emptyImage": 901
       },
       "apply": {
-        "matched": 599,
+        "matched": 600,
         "gtinAssigned": 9,
         "gtinUpgraded": 1,
-        "imagesFilled": 103,
+        "imagesFilled": 102,
         "imagesSkipped": 45,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 72,
+        "skippedGtinConflict": 73,
         "blockedByAudit": 34,
         "reattachedAfterEnforce": 0,
         "samples": [
@@ -580,7 +580,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-30T18:00:12.961508+00:00",
+      "bakedAt": "2026-11-03T18:54:10.525505+00:00",
       "line": "neca",
       "dryRun": true,
       "mephitsuCount": 1502,
@@ -702,7 +702,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-30T18:00:29.853302+00:00",
+      "bakedAt": "2026-11-03T18:54:26.770168+00:00",
       "line": "super7",
       "dryRun": true,
       "mephitsuCount": 520,
@@ -817,7 +817,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-30T18:00:30.962258+00:00",
+      "bakedAt": "2026-11-03T18:54:27.718538+00:00",
       "line": "diamond-select",
       "dryRun": true,
       "mephitsuCount": 597,
@@ -932,7 +932,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-30T18:00:36.292365+00:00",
+      "bakedAt": "2026-11-03T18:54:32.897051+00:00",
       "line": "power-rangers",
       "dryRun": true,
       "mephitsuCount": 188,
@@ -1047,7 +1047,7 @@
       }
     },
     {
-      "bakedAt": "2026-10-30T18:00:39.375495+00:00",
+      "bakedAt": "2026-11-03T18:54:35.618948+00:00",
       "line": "indiana-jones",
       "dryRun": true,
       "mephitsuCount": 28,
