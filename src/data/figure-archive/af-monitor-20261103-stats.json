@@ -1,0 +1,101 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-11-03",
+  "updatedAt": "2026-11-03T15:24:57Z",
+  "added": 12,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-11-03: direct curl got 403 on BBTS and EE (Cloudflare). BBTS action-figure New p1 (100) read via WebFetch; product ids/og images verified via BBTS product pages; most mapped candidates already in archive; unmapped boutique makers + threezero non-TF held; DC Super Powers W16 Cyborg Metallic/Flash Silver Age in-stock restocks held (no BBTS product page verified). EE new-and-trending + newly-added read via WebFetch; EE newly-added + action-figures newest read via WebFetch; EE item numbers/UPCs/og images verified via EE product pages.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 12,
+    "ee_candidates": 8,
+    "bbts_candidates": 4,
+    "added": 12,
+    "skipped_dupes": 0,
+    "rejected_non_af": 0,
+    "unmapped_company": 0,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 30817,
+  "oneshotAfter": 30829,
+  "ee_added": 8,
+  "bbts_added": 4,
+  "samples": [
+    {
+      "sku": "BLFBAS84169",
+      "name": "Berserk Femto S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-berserk-femto-s-h-figuarts-action-figure-blfbas84169",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS69275",
+      "name": "Knights and Magic Ikaruga Metal Build Action Figure",
+      "id": "afmon-bandai-knights-and-magic-ikaruga-metal-build-action-figure-blfbas69275",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84081",
+      "name": "Demon Slayer: Kimetsu No Yaiba Muichiro Tokito S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-demon-slayer-kimetsu-no-yaiba-muichiro-tokito-s-h-figuarts-action-figure-blfbas84081",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84213",
+      "name": "Vertex Force Haruka Todo and Graviton Engine S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-vertex-force-haruka-todo-and-graviton-engine-s-h-figuarts-action-figure-blfbas84213",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84191",
+      "name": "Gundam Universe XARX-0 Gundam Zero Gundam Universe Action Figure",
+      "id": "afmon-bandai-gundam-universe-xarx-0-gundam-zero-gundam-universe-action-figure-blfbas84191",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS73981",
+      "name": "One Piece Nami Two Years Later S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-one-piece-nami-two-years-later-s-h-figuarts-action-figure-blfbas73981",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84040",
+      "name": "Dragon Ball Z Tenshinhan Z-Fighters S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-dragon-ball-z-tenshinhan-z-fighters-s-h-figuarts-action-figure-blfbas84040",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84041",
+      "name": "Dragon Ball Z Chaozu Z-Fighters S.H.Figuarts Action Figure",
+      "id": "afmon-bandai-dragon-ball-z-chaozu-z-fighters-s-h-figuarts-action-figure-blfbas84041",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-201028",
+      "name": "Aliens MMS930 Corporal Hicks 1/6th Scale Collectible Figure",
+      "id": "afmon-hottoys-aliens-mms930-corporal-hicks-1-6th-scale-collectible-figure-bbts-201028",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200075",
+      "name": "Batman: The World- Paris DC Multiverse Batman Action Figure",
+      "id": "afmon-mcfarlane-batman-the-world-paris-dc-multiverse-batman-action-figure-bbts-200075",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200073",
+      "name": "Superman/Batman #23 DC Multiverse Kryptonite Batman Action Figure",
+      "id": "afmon-mcfarlane-superman-batman-23-dc-multiverse-kryptonite-batman-action-figure-bbts-200073",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200076",
+      "name": "Challengers of the Unknown DC Multiverse Batman Action Figure",
+      "id": "afmon-mcfarlane-challengers-of-the-unknown-dc-multiverse-batman-action-figure-bbts-200076",
+      "source": "bbts"
+    }
+  ],
+  "commit": null
+}
