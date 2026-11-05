@@ -1,11 +1,11 @@
 {
-  "bakedAt": "2026-11-03T18:54:35.624062+00:00",
-  "dryRun": true,
+  "bakedAt": "2026-11-05T19:04:20.431051+00:00",
+  "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-11-03T18:52:27.978080+00:00",
+      "bakedAt": "2026-11-05T19:02:09.911177+00:00",
       "line": "black-series",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 1007,
       "mephitsuWithGtin": 490,
       "enrichStats": {
@@ -118,9 +118,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-03T18:52:37.026341+00:00",
+      "bakedAt": "2026-11-05T19:02:19.035377+00:00",
       "line": "gi-joe-classified",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 318,
       "mephitsuWithGtin": 164,
       "enrichStats": {
@@ -233,9 +233,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-03T18:52:41.950299+00:00",
+      "bakedAt": "2026-11-05T19:02:24.187297+00:00",
       "line": "transformers",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 280,
       "mephitsuWithGtin": 248,
       "enrichStats": {
@@ -348,9 +348,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-03T18:53:39.784334+00:00",
+      "bakedAt": "2026-11-05T19:03:22.178272+00:00",
       "line": "mcfarlane",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 2220,
       "mephitsuWithGtin": 969,
       "enrichStats": {
@@ -359,22 +359,22 @@
         "already": 969
       },
       "before": {
-        "total": 1750,
+        "total": 1752,
         "withSku": 864,
         "withGtin": 618,
         "withListingPrimary": 246,
-        "withImage": 849,
-        "emptySku": 886,
+        "withImage": 851,
+        "emptySku": 888,
         "emptyImage": 901
       },
       "after": {
-        "total": 1750,
-        "withSku": 864,
-        "withGtin": 618,
-        "withListingPrimary": 246,
-        "withImage": 849,
-        "emptySku": 886,
-        "emptyImage": 901
+        "total": 1752,
+        "withSku": 872,
+        "withGtin": 627,
+        "withListingPrimary": 245,
+        "withImage": 953,
+        "emptySku": 880,
+        "emptyImage": 799
       },
       "apply": {
         "matched": 600,
@@ -382,7 +382,7 @@
         "gtinUpgraded": 1,
         "imagesFilled": 102,
         "imagesSkipped": 45,
-        "aliasesAttached": 0,
+        "aliasesAttached": 1,
         "skippedGtinConflict": 73,
         "blockedByAudit": 34,
         "reattachedAfterEnforce": 0,
@@ -420,7 +420,7 @@
             "name": "Wonder Woman",
             "mephitsu": "Wonder Woman",
             "wave": "Collector Edition",
-            "sku": null,
+            "sku": "887961670462",
             "image": true
           },
           {
@@ -448,7 +448,7 @@
             "mephitsu": "Batman, No Man's Land",
             "wave": "DC DIgital Edition",
             "sku": "787926173864",
-            "image": false
+            "image": true
           },
           {
             "score": 60.0,
@@ -580,9 +580,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-03T18:54:10.525505+00:00",
+      "bakedAt": "2026-11-05T19:03:53.858755+00:00",
       "line": "neca",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 1502,
       "mephitsuWithGtin": 442,
       "enrichStats": {
@@ -591,30 +591,30 @@
         "already": 442
       },
       "before": {
-        "total": 947,
-        "withSku": 722,
-        "withGtin": 332,
-        "withListingPrimary": 390,
-        "withImage": 763,
-        "emptySku": 225,
-        "emptyImage": 184
+        "total": 958,
+        "withSku": 731,
+        "withGtin": 340,
+        "withListingPrimary": 391,
+        "withImage": 764,
+        "emptySku": 227,
+        "emptyImage": 194
       },
       "after": {
-        "total": 947,
-        "withSku": 722,
-        "withGtin": 332,
+        "total": 958,
+        "withSku": 731,
+        "withGtin": 341,
         "withListingPrimary": 390,
-        "withImage": 763,
-        "emptySku": 225,
-        "emptyImage": 184
+        "withImage": 773,
+        "emptySku": 227,
+        "emptyImage": 185
       },
       "apply": {
-        "matched": 236,
-        "gtinAssigned": 0,
-        "gtinUpgraded": 0,
-        "imagesFilled": 0,
+        "matched": 246,
+        "gtinAssigned": 1,
+        "gtinUpgraded": 1,
+        "imagesFilled": 9,
         "imagesSkipped": 7,
-        "aliasesAttached": 0,
+        "aliasesAttached": 1,
         "skippedGtinConflict": 23,
         "blockedByAudit": 0,
         "reattachedAfterEnforce": 0,
@@ -702,9 +702,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-03T18:54:26.770168+00:00",
+      "bakedAt": "2026-11-05T19:04:10.603811+00:00",
       "line": "super7",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 520,
       "mephitsuWithGtin": 68,
       "enrichStats": {
@@ -713,20 +713,20 @@
         "already": 68
       },
       "before": {
-        "total": 2850,
-        "withSku": 2426,
+        "total": 2851,
+        "withSku": 2427,
         "withGtin": 130,
-        "withListingPrimary": 2296,
-        "withImage": 2566,
+        "withListingPrimary": 2297,
+        "withImage": 2567,
         "emptySku": 424,
         "emptyImage": 284
       },
       "after": {
-        "total": 2850,
-        "withSku": 2426,
+        "total": 2851,
+        "withSku": 2427,
         "withGtin": 130,
-        "withListingPrimary": 2296,
-        "withImage": 2566,
+        "withListingPrimary": 2297,
+        "withImage": 2567,
         "emptySku": 424,
         "emptyImage": 284
       },
@@ -817,9 +817,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-03T18:54:27.718538+00:00",
+      "bakedAt": "2026-11-05T19:04:11.952290+00:00",
       "line": "diamond-select",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 597,
       "mephitsuWithGtin": 2,
       "enrichStats": {
@@ -932,9 +932,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-03T18:54:32.897051+00:00",
+      "bakedAt": "2026-11-05T19:04:17.370931+00:00",
       "line": "power-rangers",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 188,
       "mephitsuWithGtin": 89,
       "enrichStats": {
@@ -1047,9 +1047,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-03T18:54:35.618948+00:00",
+      "bakedAt": "2026-11-05T19:04:20.424082+00:00",
       "line": "indiana-jones",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 28,
       "mephitsuWithGtin": 0,
       "enrichStats": {

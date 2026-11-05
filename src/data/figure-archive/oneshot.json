@@ -108103,7 +108103,8 @@
       "img:mephitsu"
     ],
     "source": "curated-densify",
-    "sku": "MF13864"
+    "sku": "MF13864",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_a0066d4c7d6545daa89d08e991efe6a6~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a0066d4c7d6545daa89d08e991efe6a6~mv2.webp"
   },
   {
     "id": "d14spwn-spawn-cyan",
@@ -151395,11 +151396,14 @@
       "mcfarlane",
       "densify",
       "image-bake",
-      "img:mephitsu"
+      "img:mephitsu",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "curated-densify",
     "imageUrl": "https://static.wixstatic.com/media/adc447_ea5e339ae37b4ab2a005c98fe97f981b~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ea5e339ae37b4ab2a005c98fe97f981b~mv2.jpg",
-    "sku": null
+    "sku": "887961670462"
   },
   {
     "id": "mcf2-todd-mcfarlane",
@@ -161966,11 +161970,13 @@
       "mcfarlane",
       "dc",
       "curated",
-      "date-precision:year"
+      "date-precision:year",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-bbts-wave6",
     "sku": "787926301137",
-    "imageUrl": null
+    "imageUrl": "https://static.wixstatic.com/media/adc447_89b9bc63aa1648d5b79f1e72bc9baed1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_89b9bc63aa1648d5b79f1e72bc9baed1~mv2.jpg"
   },
   {
     "id": "d14mcf-darkseid-jlo",
@@ -181455,10 +181461,16 @@
     "tags": [
       "dc",
       "mcfarlane",
-      "densify"
+      "densify",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-densify",
-    "imageUrl": null
+    "imageUrl": "https://static.wixstatic.com/media/adc447_e1250318a77a46d5b4d1e13655c0816f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e1250318a77a46d5b4d1e13655c0816f~mv2.jpg",
+    "sku": "787926180367"
   },
   {
     "id": "mf8-mf-33",
@@ -212836,10 +212848,12 @@
     "tags": [
       "dc",
       "mcfarlane",
-      "densify"
+      "densify",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-densify",
-    "imageUrl": null
+    "imageUrl": "https://static.wixstatic.com/media/adc447_1fa2b5848fd84a4898c6d73dac361f51~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1fa2b5848fd84a4898c6d73dac361f51~mv2.jpg"
   },
   {
     "id": "mcfc-spawn-tiffany",
@@ -216609,10 +216623,16 @@
     "tags": [
       "dc",
       "mcfarlane",
-      "densify"
+      "densify",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-densify",
-    "imageUrl": null
+    "imageUrl": "https://static.wixstatic.com/media/adc447_74036442875f4b9586b464f11a321ba1~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_74036442875f4b9586b464f11a321ba1~mv2.jpg",
+    "sku": "787926138641"
   },
   {
     "id": "mcf2-ww-gold",
@@ -259257,10 +259277,12 @@
     "demand": 1.3,
     "tags": [
       "dc",
-      "curated"
+      "curated",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated",
-    "imageUrl": null
+    "imageUrl": "https://static.wixstatic.com/media/adc447_e3b7325234bd4ffe86a7f06b91a8d64a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e3b7325234bd4ffe86a7f06b91a8d64a~mv2.jpg"
   },
   {
     "id": "mcf2-tim-drake",
@@ -261975,10 +261997,14 @@
       "image-bake",
       "img:mephitsu",
       "image-sku",
-      "imgsku:cmdstore"
+      "imgsku:cmdstore",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
     "source": "curated",
-    "imageUrl": "https://static.wixstatic.com/media/adc447_ac7f27d2be134bb086e49a9845f1e22a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ac7f27d2be134bb086e49a9845f1e22a~mv2.jpeg"
+    "imageUrl": "https://static.wixstatic.com/media/adc447_ac7f27d2be134bb086e49a9845f1e22a~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ac7f27d2be134bb086e49a9845f1e22a~mv2.jpeg",
+    "sku": "787926173741"
   },
   {
     "id": "mf10-mf-24",
@@ -293024,10 +293050,16 @@
       "dc",
       "mcfarlane",
       "curated",
-      "fix:qc-oct20"
+      "fix:qc-oct20",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc",
-    "imageUrl": null
+    "imageUrl": "https://static.wixstatic.com/media/adc447_e51796bfd0df4c7d86095adb6b44d014~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e51796bfd0df4c7d86095adb6b44d014~mv2.jpg",
+    "sku": "787926154184"
   },
   {
     "id": "mf10-mf-15",
@@ -576064,7 +576096,8 @@
       "img:mephitsu"
     ],
     "source": "curated-mcfarlane-dc-gap",
-    "sku": "787926902334"
+    "sku": "787926902334",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_e50ec94e07ce436fba85afc626651146~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e50ec94e07ce436fba85afc626651146~mv2.jpg"
   },
   {
     "id": "mcfdc-gl-batman-last-knight",
@@ -637243,7 +637276,8 @@
       "img:mephitsu"
     ],
     "sku": "787926175165",
-    "source": "bbts"
+    "source": "bbts",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_4c8f26c5c56741ee8d00b3b49c4dc1b4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_4c8f26c5c56741ee8d00b3b49c4dc1b4~mv2.jpg"
   },
   {
     "id": "afmon-mcfarlane-dc-classic-dc-multiverse-collector-edition-wonder-girl-action-figure-bbts-196671",
@@ -639356,7 +639390,8 @@
       "image-bake",
       "img:mephitsu"
     ],
-    "source": "curated-dc-gap-wave8"
+    "source": "curated-dc-gap-wave8",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_0d1465fb65a34f7fb0f708bc52598a24~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0d1465fb65a34f7fb0f708bc52598a24~mv2.jpg"
   },
   {
     "id": "mcf-w8-sp-kalibak",
@@ -729598,7 +729633,8 @@
       "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave16",
-    "sku": "787926177176"
+    "sku": "787926177176",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_17f7dd59ffdd4ba3950492e4070d98d0~mv2.webp/v1/fill/w_1200,h_1200,al_c,q_90/adc447_17f7dd59ffdd4ba3950492e4070d98d0~mv2.webp"
   },
   {
     "id": "mcf-dcretro-w16-batman-v2-7082",
@@ -731620,7 +731656,8 @@
       "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17",
-    "sku": "787926154405"
+    "sku": "787926154405",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_61358560109d46a48d9d118f36e45c6d~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_61358560109d46a48d9d118f36e45c6d~mv2.jpg"
   },
   {
     "id": "mcf-pp-w17-batman-who-laughs-red-death-dark-nights-metal-1-6357",
@@ -731664,7 +731701,8 @@
       "image-bake",
       "img:mephitsu"
     ],
-    "source": "curated-dc-gap-wave17"
+    "source": "curated-dc-gap-wave17",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_c82193984092453887e61a0325812f7c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c82193984092453887e61a0325812f7c~mv2.jpg"
   },
   {
     "id": "mcf-pp-w17-batman-of-earth-44-batman-of-earth-11-dark-nights-metal-11557",
@@ -731733,7 +731771,8 @@
       "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17",
-    "sku": "787926159196"
+    "sku": "787926159196",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_617e97acffda475f97c6d35b1dc1323c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_617e97acffda475f97c6d35b1dc1323c~mv2.jpg"
   },
   {
     "id": "mcf-pp-w17-captain-cold-the-flash-5653",
@@ -731760,7 +731799,8 @@
       "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17",
-    "sku": "787926171563"
+    "sku": "787926171563",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_3eeab313e6c74dffb9e760ad4986c0fd~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_3eeab313e6c74dffb9e760ad4986c0fd~mv2.jpg"
   },
   {
     "id": "mcf-pp-w17-heat-wave-the-flash-5652",
@@ -731850,7 +731890,8 @@
       "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17",
-    "sku": "787926159134"
+    "sku": "787926159134",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_95d20a3584be4d3d90293052110803eb~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_95d20a3584be4d3d90293052110803eb~mv2.jpg"
   },
   {
     "id": "mcf-pp-w17-ghost-of-krypton-sketch-edition-gold-label-4-pack-8805",
@@ -731894,7 +731935,8 @@
       "image-bake",
       "img:mephitsu"
     ],
-    "source": "curated-dc-gap-wave17"
+    "source": "curated-dc-gap-wave17",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_8428c093fba54264be8973320bd81738~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_8428c093fba54264be8973320bd81738~mv2.jpg"
   },
   {
     "id": "mcf-pp-w17-ghost-of-zod-ghosts-of-krypton-8493",
@@ -731921,7 +731963,8 @@
       "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17",
-    "sku": "787926159448"
+    "sku": "787926159448",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_a49d96d1ca194995bed7baca4605ac84~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a49d96d1ca194995bed7baca4605ac84~mv2.jpg"
   },
   {
     "id": "mcf-pp-w17-deathstroke-dc-rebirth-8977",
@@ -731944,7 +731987,8 @@
       "image-bake",
       "img:mephitsu"
     ],
-    "source": "curated-dc-gap-wave17"
+    "source": "curated-dc-gap-wave17",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_2a3ef42e8dcb49d4ba9aa37791c3ca68~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2a3ef42e8dcb49d4ba9aa37791c3ca68~mv2.jpg"
   },
   {
     "id": "mcf-pp-w17-extant-zero-hour-12297",
@@ -732076,7 +732120,8 @@
       "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17",
-    "sku": "787926174076"
+    "sku": "787926174076",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_d33e65718bc444d89775774f2752e899~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d33e65718bc444d89775774f2752e899~mv2.jpg"
   },
   {
     "id": "mcf-pp-w17-mr-bones-gold-label-infinity-inc-16-lithograph-11663",
@@ -732183,7 +732228,8 @@
       "image-bake",
       "img:mephitsu"
     ],
-    "source": "curated-dc-gap-wave17"
+    "source": "curated-dc-gap-wave17",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_07f634c1ba0049c1ba9676bac2b285e1~mv2.png/v1/fit/w_93,h_100/adc447_07f634c1ba0049c1ba9676bac2b285e1~mv2.png"
   },
   {
     "id": "mcf-sp-w17-batman-with-batwing-and-whirlybat-gold-label-8544",
@@ -732207,7 +732253,8 @@
       "image-bake",
       "img:mephitsu"
     ],
-    "source": "curated-dc-gap-wave17"
+    "source": "curated-dc-gap-wave17",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_03a8d2b7444141ab86aec7b86126fc05~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_03a8d2b7444141ab86aec7b86126fc05~mv2.jpg"
   },
   {
     "id": "mcf-sp-w17-the-bat-multicraft-batman-s-multi-terrain-10084",
@@ -732257,7 +732304,8 @@
       "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave17",
-    "sku": "787926175271"
+    "sku": "787926175271",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_ca7acd2deea44f2180790ce8adbfbddc~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ca7acd2deea44f2180790ce8adbfbddc~mv2.jpg"
   },
   {
     "id": "mcf-sp-w17-t-craft-superman-movie-10994",
@@ -732281,7 +732329,8 @@
       "image-bake",
       "img:mephitsu"
     ],
-    "source": "curated-dc-gap-wave17"
+    "source": "curated-dc-gap-wave17",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_f75697bf2af04c7b8d212617eea9cc2a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f75697bf2af04c7b8d212617eea9cc2a~mv2.jpg"
   },
   {
     "id": "mcf-sp-w17-t-craft-with-mr-terrific-gold-label-superman-movie-10992",
@@ -734568,10 +734617,13 @@
       "af411:ce-01-jonah-hex",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave19",
-    "sku": "787926176377"
+    "sku": "787926176377",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_e4e5de50dbbc4c50bec7c9d2ac442ca8~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e4e5de50dbbc4c50bec7c9d2ac442ca8~mv2.jpg"
   },
   {
     "id": "mcf-mce-w19-abyss-batman-vs-abyss-ce-03-abyss",
@@ -735339,9 +735391,12 @@
       "mcfarlane",
       "theatrical",
       "date-precision:year",
-      "af411:14192"
+      "af411:14192",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-dc-gap-wave20"
+    "source": "curated-dc-gap-wave20",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_180b833e09944f9f9e98f5c9fdee5b0d~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_180b833e09944f9f9e98f5c9fdee5b0d~mv2.jpg"
   },
   {
     "id": "mcf-dte-w20-mr-freeze-deluxe-theatrical-edition-gold-label-batman-and-ro-14098",
@@ -735386,10 +735441,13 @@
       "af411:13376",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave20",
-    "sku": "787926177282"
+    "sku": "787926177282",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_3c5ad90f802c4132adf87f430c5e979b~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_3c5ad90f802c4132adf87f430c5e979b~mv2.jpg"
   },
   {
     "id": "mcf-dte-w20-supergirl-krypto-gold-label-deluxe-theatrical-edition-superg-13411",
@@ -735564,9 +735622,12 @@
       "mcfarlane",
       "vault-collection",
       "date-precision:year",
-      "af411:14158"
+      "af411:14158",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-dc-gap-wave20"
+    "source": "curated-dc-gap-wave20",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_30a8fb87f951412b8ff41f925dc1a2b9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_30a8fb87f951412b8ff41f925dc1a2b9~mv2.jpg"
   },
   {
     "id": "mcf-vault-w20-mr-freeze-dc-classic-14156",
@@ -735784,9 +735845,12 @@
       "mcfarlane",
       "multipack",
       "date-precision:year",
-      "af411:7164"
+      "af411:7164",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-dc-gap-wave20"
+    "source": "curated-dc-gap-wave20",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_402b088a6b414853a442f3e010d78fa4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_402b088a6b414853a442f3e010d78fa4~mv2.jpg"
   },
   {
     "id": "mcf-mp-w20-batman-and-beyond-5-pack-4090",
@@ -735875,10 +735939,13 @@
       "af411:7163",
       "sku-bake",
       "sku-gtin",
-      "sku:mephitsu"
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave20",
-    "sku": "787926156980"
+    "sku": "787926156980",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_2961d51d3e87448aadd0e0c6ca861a79~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2961d51d3e87448aadd0e0c6ca861a79~mv2.jpg"
   },
   {
     "id": "mcf-mp-w20-batman-the-ultimate-movie-collection-6-pack-6971",
@@ -736140,9 +736207,16 @@
       "mcfarlane",
       "multipack",
       "date-precision:year",
-      "af411:8477"
+      "af411:8477",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu",
+      "image-bake",
+      "img:mephitsu"
     ],
-    "source": "curated-dc-gap-wave20"
+    "source": "curated-dc-gap-wave20",
+    "sku": "787926157826",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_072052d0d0514ffcb53e5b0b50a1c4f9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_072052d0d0514ffcb53e5b0b50a1c4f9~mv2.jpg"
   },
   {
     "id": "mcf-mp-w20-nightwing-vs-talon-owl-gold-label-court-of-owls-10966",
@@ -737548,10 +737622,13 @@
       "build-a",
       "date-precision:year",
       "af411:8127",
-      "baf:plastic-man"
+      "baf:plastic-man",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave22",
-    "msrp": 24.99
+    "msrp": 24.99,
+    "imageUrl": "https://static.wixstatic.com/media/adc447_94608196d1424be7b2eb69ff582fd9ee~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_94608196d1424be7b2eb69ff582fd9ee~mv2.jpg"
   },
   {
     "id": "mcf-baf-w22-batman-jla-8128",
@@ -737572,10 +737649,13 @@
       "build-a",
       "date-precision:year",
       "af411:8128",
-      "baf:plastic-man"
+      "baf:plastic-man",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave22",
-    "msrp": 24.99
+    "msrp": 24.99,
+    "imageUrl": "https://static.wixstatic.com/media/adc447_5cde55c815df43979fda27ea110fe69f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_5cde55c815df43979fda27ea110fe69f~mv2.jpg"
   },
   {
     "id": "mcf-baf-w22-green-lantern-jla-8130",
@@ -737596,10 +737676,13 @@
       "build-a",
       "date-precision:year",
       "af411:8130",
-      "baf:plastic-man"
+      "baf:plastic-man",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave22",
-    "msrp": 24.99
+    "msrp": 24.99,
+    "imageUrl": "https://static.wixstatic.com/media/adc447_ec3661e10bca4f9890e2bae633b618e6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ec3661e10bca4f9890e2bae633b618e6~mv2.jpg"
   },
   {
     "id": "mcf-baf-w22-superman-jla-8129",
@@ -737620,10 +737703,13 @@
       "build-a",
       "date-precision:year",
       "af411:8129",
-      "baf:plastic-man"
+      "baf:plastic-man",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave22",
-    "msrp": 24.99
+    "msrp": 24.99,
+    "imageUrl": "https://static.wixstatic.com/media/adc447_7182feab8bc04bf0b58139916c427b68~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7182feab8bc04bf0b58139916c427b68~mv2.jpg"
   },
   {
     "id": "mcf-baf-w22-plastic-man-baf-8131",
@@ -737715,9 +737801,13 @@
       "build-a",
       "date-precision:year",
       "af411:8586",
-      "baf:nightmare-bat"
+      "baf:nightmare-bat",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "source": "curated-dc-gap-wave22"
+    "source": "curated-dc-gap-wave22",
+    "sku": "787926156669"
   },
   {
     "id": "mafex-w22-harley-quinn-dress-version-no42",
@@ -738924,10 +739014,13 @@
       "build-a",
       "date-precision:year",
       "af411:5308",
-      "baf:starro"
+      "baf:starro",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave23",
-    "msrp": 19.99
+    "msrp": 19.99,
+    "imageUrl": "https://static.wixstatic.com/media/adc447_71242435accd4e209f5d817a0983c6af~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_71242435accd4e209f5d817a0983c6af~mv2.jpg"
   },
   {
     "id": "mcf-baf-w23-superman-of-earth-3-3856",
@@ -738948,10 +739041,13 @@
       "build-a",
       "date-precision:year",
       "af411:3856",
-      "baf:starro"
+      "baf:starro",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave23",
-    "msrp": 24.99
+    "msrp": 24.99,
+    "imageUrl": "https://static.wixstatic.com/media/adc447_9941cf91e78b48338e7d8550c7fdad2d~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9941cf91e78b48338e7d8550c7fdad2d~mv2.png"
   },
   {
     "id": "mcf-baf-w23-superwoman-of-earth-3-4303",
@@ -741779,9 +741875,12 @@
       "bbts",
       "mcfarlane",
       "dc-multiverse",
-      "af-monitor-20261019"
+      "af-monitor-20261019",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "sku": "BBTS-196709",
+    "sku": "787926173819",
     "source": "bbts",
     "imageUrl": "https://images.bigbadtoystore.com/images/product/196709/bf8e3061-6c9f-43a6-94ab-0c2216f7a5e2/360w.jpg"
   },
@@ -742200,11 +742299,14 @@
       "date-precision:year",
       "af411:8533",
       "gold-label",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave24",
     "msrp": 89.99,
-    "sku": "787926151947"
+    "sku": "787926151947",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_1a9c75c3e5184478928afa62f0b3e32f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1a9c75c3e5184478928afa62f0b3e32f~mv2.jpg"
   },
   {
     "id": "mcf-veh-w24-the-joker-dragon-gold-label-glow-in-the-dark-dark-nights-met-11027",
@@ -742273,10 +742375,13 @@
       "vehicle",
       "vehicles-and-playsets",
       "date-precision:year",
-      "af411:13033"
+      "af411:13033",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave24",
-    "msrp": 100.0
+    "msrp": 100.0,
+    "imageUrl": "https://static.wixstatic.com/media/adc447_9ac565d946494194ae356f3c28a4521b~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9ac565d946494194ae356f3c28a4521b~mv2.jpg"
   },
   {
     "id": "mcf-veh-w24-batmobile-dc-rebirth-11880",
@@ -743061,11 +743166,14 @@
       "gold-label",
       "date-precision:year",
       "af411:3194",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 49.99,
-    "sku": "787926151404"
+    "sku": "787926151404",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_55059d1c10c941f8aca363d7524d3717~mv2.png/v1/fill/w_1200,h_1200,al_c,q_90/adc447_55059d1c10c941f8aca363d7524d3717~mv2.png"
   },
   {
     "id": "mcf-gl-w25-batman-dark-detective-gold-label-future-state-4659",
@@ -743085,11 +743193,14 @@
       "gold-label",
       "date-precision:year",
       "af411:4659",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 19.99,
-    "sku": "787926153545"
+    "sku": "787926153545",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_838028b5c8504d4abb93df869c256dea~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_838028b5c8504d4abb93df869c256dea~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-green-lantern-kyle-rayner-gold-label-changing-the-guard-5287",
@@ -743181,11 +743292,14 @@
       "gold-label",
       "date-precision:year",
       "af411:7142",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926170689"
+    "sku": "787926170689",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_1e45ff2fe86a4553b983beb3ea652407~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1e45ff2fe86a4553b983beb3ea652407~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-batman-gold-label-todd-mcfarlane-sketch-edition-autograph-7431",
@@ -743229,11 +743343,14 @@
       "gold-label",
       "date-precision:year",
       "af411:6938",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926170788"
+    "sku": "787926170788",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_d4fee49dea164feaaf470bdcc46447fe~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d4fee49dea164feaaf470bdcc46447fe~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-batman-santa-gold-label-blue-suit-7909",
@@ -743253,11 +743370,14 @@
       "gold-label",
       "date-precision:year",
       "af411:7909",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926170870"
+    "sku": "787926170870",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_ac9b5c780d854da891c78b236ef80c83~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ac9b5c780d854da891c78b236ef80c83~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-batman-santa-gold-label-red-suit-7908",
@@ -743326,11 +743446,14 @@
       "gold-label",
       "date-precision:year",
       "af411:8464",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926170580"
+    "sku": "787926170580",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_063b4d3906504d1c8f6c272616758cf5~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_063b4d3906504d1c8f6c272616758cf5~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-blue-lantern-gold-label-kyle-rayner-5611",
@@ -743350,11 +743473,14 @@
       "gold-label",
       "date-precision:year",
       "af411:5611",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 19.99,
-    "sku": "787926170399"
+    "sku": "787926170399",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_8eb6fc449d954442b8a454e94fd6abce~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_8eb6fc449d954442b8a454e94fd6abce~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-dark-flash-gold-label-the-flash-movie-11878",
@@ -743399,11 +743525,14 @@
       "gold-label",
       "date-precision:year",
       "af411:6893",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 30.0,
-    "sku": "787926152739"
+    "sku": "787926152739",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_d0b6e85852ef448bbffc67e66a70079f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d0b6e85852ef448bbffc67e66a70079f~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-green-lantern-john-stewart-gold-label-glow-in-the-dark-editi-6879",
@@ -743470,11 +743599,14 @@
       "gold-label",
       "date-precision:year",
       "af411:7497",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 49.99,
-    "sku": "787926170825"
+    "sku": "787926170825",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_5464f9c98cb9489ca159c3ee9ac9410e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_5464f9c98cb9489ca159c3ee9ac9410e~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-martian-manhunter-gold-label-dc-rebirth-black-white-accent-e-7023",
@@ -743495,11 +743627,14 @@
       "date-precision:year",
       "af411:7023",
       "multipack",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926170566"
+    "sku": "787926170566",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_eef5fb4dc3e84937bb276c78b9a03572~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_eef5fb4dc3e84937bb276c78b9a03572~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-merciless-gold-label-earth-12-patina-edition-7951",
@@ -743519,11 +743654,14 @@
       "gold-label",
       "date-precision:year",
       "af411:7951",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926170641"
+    "sku": "787926170641",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_6f6419f2c4064c6a963b64e6e0f17504~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6f6419f2c4064c6a963b64e6e0f17504~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-omega-vs-batman-2-pack-gold-label-last-knight-on-earth-7216",
@@ -743592,11 +743730,14 @@
       "gold-label",
       "date-precision:year",
       "af411:6721",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926170511"
+    "sku": "787926170511",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_3d1f285386d94401be7eb7ef0ffe108d~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_3d1f285386d94401be7eb7ef0ffe108d~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-azrael-gold-label-curse-of-the-white-knight-sketch-edition-8011",
@@ -743616,11 +743757,14 @@
       "gold-label",
       "date-precision:year",
       "af411:8011",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926171792"
+    "sku": "787926171792",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_f4cbd043c3bf4356b7723932b281a479~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f4cbd043c3bf4356b7723932b281a479~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-batman-of-earth-22-infected-gold-label-knightmare-edition-da-8469",
@@ -743640,11 +743784,14 @@
       "gold-label",
       "date-precision:year",
       "af411:8469",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926171884"
+    "sku": "787926171884",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_2253a1381106420aaf74c9deb6df60f6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2253a1381106420aaf74c9deb6df60f6~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-bruce-wayne-ace-gold-label-batman-beyond-10038",
@@ -743689,11 +743836,14 @@
       "gold-label",
       "date-precision:year",
       "af411:7696",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926170474"
+    "sku": "787926170474",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_aa75b44aac4341ddabda71925bf60cfa~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_aa75b44aac4341ddabda71925bf60cfa~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-owlman-gold-label-forever-evil-7884",
@@ -743713,11 +743863,14 @@
       "gold-label",
       "date-precision:year",
       "af411:7884",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926171129"
+    "sku": "787926171129",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_57e862c5fc824256b88b4bdd8a003660~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_57e862c5fc824256b88b4bdd8a003660~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-parallax-green-lantern-gold-label-zero-hour-crisis-in-time-g-7939",
@@ -743737,11 +743890,14 @@
       "gold-label",
       "date-precision:year",
       "af411:7939",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926171877"
+    "sku": "787926171877",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_42669f6af36244158ba6b9af374925ca~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_42669f6af36244158ba6b9af374925ca~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-bizarro-gold-label-dc-classic-10621",
@@ -743785,11 +743941,14 @@
       "gold-label",
       "date-precision:year",
       "af411:11371",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926172072"
+    "sku": "787926172072",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_e202534f57d947cbb62855fa61af5392~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e202534f57d947cbb62855fa61af5392~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-the-grim-knight-gold-label-dark-nights-metal-black-white-acc-10547",
@@ -743809,10 +743968,13 @@
       "gold-label",
       "date-precision:year",
       "af411:10547",
-      "multipack"
+      "multipack",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
-    "msrp": 29.99
+    "msrp": 29.99,
+    "imageUrl": "https://static.wixstatic.com/media/adc447_c377778c610442cba935095ef275288a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c377778c610442cba935095ef275288a~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-lt-james-gordon-gold-label-batman-year-one-part-4-10619",
@@ -743880,11 +744042,14 @@
       "gold-label",
       "date-precision:year",
       "af411:10569",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926172188"
+    "sku": "787926172188",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_b4767ac9d1ed4e2e90c1e90716150262~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b4767ac9d1ed4e2e90c1e90716150262~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-the-batman-who-laughs-gold-label-dark-nights-metal-black-whi-12492",
@@ -743905,11 +744070,14 @@
       "date-precision:year",
       "af411:12492",
       "multipack",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926176643"
+    "sku": "787926176643",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_f719a4dc0a5b44ed9546b06b2b98d13c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_f719a4dc0a5b44ed9546b06b2b98d13c~mv2.jpg"
   },
   {
     "id": "mcf-gl-w25-beast-boy-gold-label-one-year-later-14154",
@@ -743977,11 +744145,14 @@
       "gold-label",
       "date-precision:year",
       "af411:14134",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave25",
     "msrp": 29.99,
-    "sku": "787926181326"
+    "sku": "787926181326",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_072052d0d0514ffcb53e5b0b50a1c4f9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_072052d0d0514ffcb53e5b0b50a1c4f9~mv2.jpg"
   },
   {
     "id": "afmon-mcfarlane-nhl-mcfarlanes-sportspicks-wave-2-colorado-avalanche-nathan-mackinnon-6-in-mf12709",
@@ -744818,9 +744989,13 @@
       "btas",
       "date-precision:year",
       "af411:8892",
-      "baf"
+      "baf",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "source": "curated-dc-gap-wave26"
+    "source": "curated-dc-gap-wave26",
+    "sku": "787926176346"
   },
   {
     "id": "mcf-btas-w26-rene-montoya-baf-14105",
@@ -744910,11 +745085,14 @@
       "dc-direct-digital",
       "date-precision:year",
       "af411:10375",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave26",
     "msrp": 24.99,
-    "sku": "787926171716"
+    "sku": "787926171716",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_de583c0633024e3b868f47c8241b7701~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_de583c0633024e3b868f47c8241b7701~mv2.jpg"
   },
   {
     "id": "mcf-dcdd-w26-the-joker-dc-the-silver-age-10372",
@@ -744934,11 +745112,14 @@
       "dc-direct-digital",
       "date-precision:year",
       "af411:10372",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave26",
     "msrp": 24.99,
-    "sku": "787926172591"
+    "sku": "787926172591",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_edc60be325fe4c96a3635789db6c9785~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_edc60be325fe4c96a3635789db6c9785~mv2.jpg"
   },
   {
     "id": "mcf-dcdd-w26-robin-of-earth-2-crisis-on-infinite-earths-10379",
@@ -745054,11 +745235,14 @@
       "dc-direct-digital",
       "date-precision:year",
       "af411:11319",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave26",
     "msrp": 27.99,
-    "sku": "787926173864"
+    "sku": "787926173864",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_ff4f20069a114e17816ef0ae8a6b812b~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ff4f20069a114e17816ef0ae8a6b812b~mv2.jpg"
   },
   {
     "id": "mcf-dcdd-w26-monarch-dc-countdown-11321",
@@ -745078,11 +745262,14 @@
       "dc-direct-digital",
       "date-precision:year",
       "af411:11321",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave26",
     "msrp": 27.99,
-    "sku": "787926173871"
+    "sku": "787926173871",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_762d787375974d1bab1ad2f068375dd4~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_762d787375974d1bab1ad2f068375dd4~mv2.jpg"
   },
   {
     "id": "mcf-dcdd-w26-nightwing-teen-titans-11318",
@@ -745604,11 +745791,14 @@
       "page-punchers",
       "date-precision:year",
       "af411:8491",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave27",
     "msrp": 24.99,
-    "sku": "787926159424"
+    "sku": "787926159424",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_0dbe026bc99f46debef43fdd9790ee17~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0dbe026bc99f46debef43fdd9790ee17~mv2.jpg"
   },
   {
     "id": "mcf-pp-w27-cheetah-crisis-on-infinite-earths-12298",
@@ -745956,11 +746146,14 @@
       "super-friends",
       "date-precision:year",
       "af411:13517",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave28",
     "msrp": 22.99,
-    "sku": "787926178470"
+    "sku": "787926178470",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_fd4b870e00d34b239e57277299d3f900~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_fd4b870e00d34b239e57277299d3f900~mv2.jpg"
   },
   {
     "id": "mcf-dcretro-w28-evil-aquaman-red-platinum-13522",
@@ -746006,11 +746199,14 @@
       "super-friends",
       "date-precision:year",
       "af411:13888",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave28",
     "msrp": 22.99,
-    "sku": "787926178623"
+    "sku": "787926178623",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_bf83f033409345e4a2cd004f23f31774~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_bf83f033409345e4a2cd004f23f31774~mv2.jpg"
   },
   {
     "id": "mcf-dcretro-w28-superman-crystallized-red-platinum-14009",
@@ -746056,11 +746252,14 @@
       "super-friends",
       "date-precision:year",
       "af411:14010",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave28",
     "msrp": 22.99,
-    "sku": "787926178661"
+    "sku": "787926178661",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_c324dae716bd4b75b37b236343cc85b7~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c324dae716bd4b75b37b236343cc85b7~mv2.jpg"
   },
   {
     "id": "mcf-dcretro-w28-batman-phantom-zone-red-platinum-14011",
@@ -746081,11 +746280,14 @@
       "super-friends",
       "date-precision:year",
       "af411:14011",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave28",
     "msrp": 22.99,
-    "sku": "787926178616"
+    "sku": "787926178616",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_4a29fb22a7854004ae039b7f1f7f8d69~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_4a29fb22a7854004ae039b7f1f7f8d69~mv2.jpg"
   },
   {
     "id": "mcf-dcretro-w28-apache-chief-14288",
@@ -746106,11 +746308,14 @@
       "super-friends",
       "date-precision:year",
       "af411:14288",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave28",
     "msrp": 22.99,
-    "sku": "787926180626"
+    "sku": "787926180626",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_9b28c593ca97422a92488ed163e442a6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9b28c593ca97422a92488ed163e442a6~mv2.jpg"
   },
   {
     "id": "mcf-dcretro-w28-the-atom-14289",
@@ -746131,11 +746336,14 @@
       "super-friends",
       "date-precision:year",
       "af411:14289",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave28",
     "msrp": 22.99,
-    "sku": "787926180633"
+    "sku": "787926180633",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_fd6ce8ee71034968ab6c3e6bdc1767d6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_fd6ce8ee71034968ab6c3e6bdc1767d6~mv2.jpg"
   },
   {
     "id": "mcf-dcretro-w28-warpland-superman-red-platinum-14290",
@@ -746156,11 +746364,14 @@
       "super-friends",
       "date-precision:year",
       "af411:14290",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave28",
     "msrp": 22.99,
-    "sku": "787926180640"
+    "sku": "787926180640",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_96ea2c2b48af43f4b8cfa740329f462e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_96ea2c2b48af43f4b8cfa740329f462e~mv2.jpg"
   },
   {
     "id": "mcf-dcretro-w28-batcave-3266",
@@ -746234,11 +746445,14 @@
       "date-precision:year",
       "af411:5824",
       "playset",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave28",
     "msrp": 34.99,
-    "sku": "787926150377"
+    "sku": "787926150377",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_4724240115d44235972b256b68e9d78e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_4724240115d44235972b256b68e9d78e~mv2.jpg"
   },
   {
     "id": "mcf-dcretro-w28-the-joker-gold-label-black-light-8463",
@@ -746259,11 +746473,14 @@
       "batman-66",
       "date-precision:year",
       "af411:8463",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave28",
     "msrp": 29.99,
-    "sku": "787926171846"
+    "sku": "787926171846",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_ee526b8c469641399c6b568df8db9790~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_ee526b8c469641399c6b568df8db9790~mv2.jpg"
   },
   {
     "id": "afmon-bossfight-epic-h-a-c-k-s-bleached-remnants-blank-skeleton-1-12-scale-action-figure-bfeh0028",
@@ -747018,11 +747235,14 @@
       "gold-label",
       "date-precision:year",
       "af411:6864",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave30",
     "msrp": 24.99,
-    "sku": "787926155822"
+    "sku": "787926155822",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_b820e8f4d02a4631af10c2cdba3fbfd7~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b820e8f4d02a4631af10c2cdba3fbfd7~mv2.jpg"
   },
   {
     "id": "mcf-w30-two-face-gold-label-jokerized-the-dark-knight-trilogy-7191",
@@ -747044,11 +747264,14 @@
       "gold-label",
       "date-precision:year",
       "af411:7191",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave30",
     "msrp": 24.99,
-    "sku": "787926155839"
+    "sku": "787926155839",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_9f7ca117357f47e8baaf42c8a1edf3f7~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_9f7ca117357f47e8baaf42c8a1edf3f7~mv2.jpg"
   },
   {
     "id": "mcf-w30-black-adam-with-throne-8696",
@@ -747367,11 +747590,14 @@
       "baf",
       "date-precision:year",
       "af411:3818",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave31",
     "msrp": 19.99,
-    "sku": "787926154726"
+    "sku": "787926154726",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_da6749382a4d4481a43be5d85506ccdd~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_da6749382a4d4481a43be5d85506ccdd~mv2.jpg"
   },
   {
     "id": "mcf-w31-catwoman-white-gold-label-5303",
@@ -747440,11 +747666,14 @@
       "gold-label",
       "date-precision:year",
       "af411:3813",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave31",
     "msrp": 24.99,
-    "sku": "787926153293"
+    "sku": "787926153293",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_051f275a9a3742c5ae19ef421cd59e12~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_051f275a9a3742c5ae19ef421cd59e12~mv2.jpg"
   },
   {
     "id": "mcf-w31-wonder-woman-gold-label-endless-winter-5289",
@@ -747536,11 +747765,14 @@
       "gold-label",
       "date-precision:year",
       "af411:6939",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave31",
     "msrp": 29.99,
-    "sku": "787926170696"
+    "sku": "787926170696",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_b987daa401234b819634e815e76a73e3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_b987daa401234b819634e815e76a73e3~mv2.jpg"
   },
   {
     "id": "mcf-w31-batman-gold-label-rebirth-frostbite-edition-7974",
@@ -747560,11 +747792,14 @@
       "gold-label",
       "date-precision:year",
       "af411:7974",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave31",
     "msrp": 29.99,
-    "sku": "787926171822"
+    "sku": "787926171822",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_1148f0fb17274957b27b07c6d9074b2d~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1148f0fb17274957b27b07c6d9074b2d~mv2.jpg"
   },
   {
     "id": "mcf-w31-batman-gold-label-knightmare-edition-dc-vs-vampires-8904",
@@ -747608,11 +747843,14 @@
       "gold-label",
       "date-precision:year",
       "af411:11031",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave31",
     "msrp": 29.99,
-    "sku": "787926172294"
+    "sku": "787926172294",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_31782fca4b204de59697fc4c494668ec~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_31782fca4b204de59697fc4c494668ec~mv2.jpg"
   },
   {
     "id": "mcf-w31-the-flash-gold-label-dawn-of-dc-8429",
@@ -747632,11 +747870,14 @@
       "gold-label",
       "date-precision:year",
       "af411:8429",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave31",
     "msrp": 29.99,
-    "sku": "787926171242"
+    "sku": "787926171242",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_eeb23bc20a174c3a8c202fc18d19d3d6~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_eeb23bc20a174c3a8c202fc18d19d3d6~mv2.jpeg"
   },
   {
     "id": "mcf-w31-the-joker-gold-label-the-comedian-frostbite-edition-8511",
@@ -747656,11 +747897,14 @@
       "gold-label",
       "date-precision:year",
       "af411:8511",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave31",
     "msrp": 29.99,
-    "sku": "787926171860"
+    "sku": "787926171860",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_506ae5006caf43e796213bc1d9df7c8e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_506ae5006caf43e796213bc1d9df7c8e~mv2.jpg"
   },
   {
     "id": "mcf-w31-superman-gold-label-centennial-park-tribute-statue-12491",
@@ -747680,11 +747924,14 @@
       "gold-label",
       "date-precision:year",
       "af411:12491",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave31",
     "msrp": 30.0,
-    "sku": "787926172898"
+    "sku": "787926172898",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_42fd2dfee8a444958608894507b3ab48~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_42fd2dfee8a444958608894507b3ab48~mv2.jpg"
   },
   {
     "id": "mcf-w31-robin-gold-label-silver-age-14225",
@@ -747988,11 +748235,14 @@
       "mcfarlane",
       "date-precision:year",
       "af411:4081",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 19.87,
-    "sku": "787926152340"
+    "sku": "787926152340",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_2e36fb1f983c4f24a30be5cf1fa0698f~mv2.jpeg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_2e36fb1f983c4f24a30be5cf1fa0698f~mv2.jpeg"
   },
   {
     "id": "mcf-w32-batman-duke-thomas-tales-from-the-dark-multiverse-4058",
@@ -748011,11 +748261,14 @@
       "mcfarlane",
       "date-precision:year",
       "af411:4058",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 19.99,
-    "sku": "787926152371"
+    "sku": "787926152371",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_e55a7d15efd94dfb89e10273c42a6e48~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e55a7d15efd94dfb89e10273c42a6e48~mv2.jpg"
   },
   {
     "id": "mcf-w32-batrocitus-death-metal-4718",
@@ -748103,11 +748356,14 @@
       "mcfarlane",
       "date-precision:year",
       "af411:4060",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 19.99,
-    "sku": "787926152364"
+    "sku": "787926152364",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_45836fa3f8e1478882a65b23144bd8c3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_45836fa3f8e1478882a65b23144bd8c3~mv2.jpg"
   },
   {
     "id": "mcf-w32-grifter-infinite-frontier-4087",
@@ -748149,11 +748405,14 @@
       "mcfarlane",
       "date-precision:year",
       "af411:3804",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 19.99,
-    "sku": "787926151824"
+    "sku": "787926151824",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_0392a739270d4b8d8cac7055b7ead4e3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0392a739270d4b8d8cac7055b7ead4e3~mv2.jpg"
   },
   {
     "id": "mcf-w32-superman-jonathan-kent-future-state-4080",
@@ -748172,11 +748431,14 @@
       "mcfarlane",
       "date-precision:year",
       "af411:4080",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 19.87,
-    "sku": "787926152395"
+    "sku": "787926152395",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_80f2be351d774ed48c201ead5966376f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_80f2be351d774ed48c201ead5966376f~mv2.jpg"
   },
   {
     "id": "mcf-w32-the-flash-wally-west-red-suit-4085",
@@ -748241,11 +748503,14 @@
       "mcfarlane",
       "date-precision:year",
       "af411:7391",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 19.99,
-    "sku": "787926155426"
+    "sku": "787926155426",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_680050465f654a3980ed6d34805c80e9~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_680050465f654a3980ed6d34805c80e9~mv2.jpg"
   },
   {
     "id": "mcf-w32-kon-el-superboy-comics-5608",
@@ -748264,11 +748529,14 @@
       "mcfarlane",
       "date-precision:year",
       "af411:5608",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 19.99,
-    "sku": "787926152760"
+    "sku": "787926152760",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_7d9c7afe352c4268b067140d12c4be9e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7d9c7afe352c4268b067140d12c4be9e~mv2.jpg"
   },
   {
     "id": "mcf-w32-batman-1-000-000-dc-one-million-10452",
@@ -748287,11 +748555,14 @@
       "mcfarlane",
       "date-precision:year",
       "af411:10452",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 24.99,
-    "sku": "787926174175"
+    "sku": "787926174175",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_7f5e0cc8c3874f4f80e5119509b1c89f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_7f5e0cc8c3874f4f80e5119509b1c89f~mv2.jpg"
   },
   {
     "id": "mcf-w32-nightmaster-red-platinum-shadowpact-10765",
@@ -748335,11 +748606,14 @@
       "platinum",
       "date-precision:year",
       "af411:13535",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 34.99,
-    "sku": "787926175097"
+    "sku": "787926175097",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_3dc46f7cfaa14794bc48d8a16326d72b~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_3dc46f7cfaa14794bc48d8a16326d72b~mv2.jpg"
   },
   {
     "id": "mcf-w32-black-condor-red-platinum-dc-classic-13558",
@@ -748359,11 +748633,14 @@
       "platinum",
       "date-precision:year",
       "af411:13558",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 26.99,
-    "sku": "787926175110"
+    "sku": "787926175110",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_1fc050f4a8cf4bf9a5b604344e0c64b3~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_1fc050f4a8cf4bf9a5b604344e0c64b3~mv2.jpg"
   },
   {
     "id": "mcf-w32-gangbuster-red-platinum-dc-classic-13559",
@@ -748383,11 +748660,14 @@
       "platinum",
       "date-precision:year",
       "af411:13559",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 26.99,
-    "sku": "787926176865"
+    "sku": "787926176865",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_a6bbf11da6e540548b92ee2b4188be7c~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a6bbf11da6e540548b92ee2b4188be7c~mv2.jpg"
   },
   {
     "id": "mcf-w32-ghr-ll-green-lantern-14255",
@@ -748406,11 +748686,14 @@
       "mcfarlane",
       "date-precision:year",
       "af411:14255",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 26.99,
-    "sku": "787926181371"
+    "sku": "787926181371",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_0a41c7acb70f4c28ba2c1b8c1fbfd89b~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_0a41c7acb70f4c28ba2c1b8c1fbfd89b~mv2.jpg"
   },
   {
     "id": "mcf-w32-medphyll-green-lantern-14254",
@@ -748429,11 +748712,14 @@
       "mcfarlane",
       "date-precision:year",
       "af411:14254",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 26.99,
-    "sku": "787926181388"
+    "sku": "787926181388",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_e11b5728bc6b4188916fe14cebdff32f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_e11b5728bc6b4188916fe14cebdff32f~mv2.jpg"
   },
   {
     "id": "mcf-w32-naut-ke-loi-green-lantern-14256",
@@ -748452,11 +748738,14 @@
       "mcfarlane",
       "date-precision:year",
       "af411:14256",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 26.99,
-    "sku": "787926181395"
+    "sku": "787926181395",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_5f05f2ae7e44440c8df4bd1ec0cc3efb~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_5f05f2ae7e44440c8df4bd1ec0cc3efb~mv2.jpg"
   },
   {
     "id": "mcf-w32-batman-spawn-gold-label-dc-multiverse-14395",
@@ -748477,11 +748766,14 @@
       "gold-label",
       "date-precision:year",
       "af411:14395",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 49.99,
-    "sku": "787926170993"
+    "sku": "787926170993",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_d43ff88deb6c41d58b6c2f95cf2a6581~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_d43ff88deb6c41d58b6c2f95cf2a6581~mv2.jpg"
   },
   {
     "id": "mcf-w32-superman-krypto-return-of-superman-7523",
@@ -748501,11 +748793,14 @@
       "collector-edition",
       "date-precision:year",
       "af411:7523",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 29.99,
-    "sku": "787926171297"
+    "sku": "787926171297",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_82d8b583585942329ff5a03c19bb90e6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_82d8b583585942329ff5a03c19bb90e6~mv2.jpg"
   },
   {
     "id": "mcf-w32-batman-battle-damage-blue-the-dark-knight-returns-8917",
@@ -748573,11 +748868,14 @@
       "platinum",
       "date-precision:year",
       "af411:12154",
-      "sku:af411"
+      "sku:af411",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave32",
     "msrp": 24.99,
-    "sku": "787926173994"
+    "sku": "787926173994",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_c1520255d38a458ba9fcfe49e7ab9101~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_c1520255d38a458ba9fcfe49e7ab9101~mv2.jpg"
   },
   {
     "id": "mcf-w32-darkseid-vs-orion-14357",
@@ -750699,9 +750997,12 @@
       "ee",
       "neca",
       "house-of-1000-corpses",
-      "af-monitor-20261104"
+      "af-monitor-20261104",
+      "sku-bake",
+      "sku-gtin",
+      "sku:mephitsu"
     ],
-    "sku": "NC39935",
+    "sku": "634482149447",
     "source": "ee",
     "imageUrl": "https://media.entertainmentearth.com/assets/images/cdc7594457d8412cb7509e329ea914d8lg.jpg"
   },
@@ -750765,11 +751066,14 @@
       "af-checklist",
       "wave35",
       "date-precision:year",
-      "af411:13006"
+      "af411:13006",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave35",
     "msrp": 37.99,
-    "sku": "634482522707"
+    "sku": "634482522707",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_6399d83df2ce449c83de5171305bb072~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_6399d83df2ce449c83de5171305bb072~mv2.jpg"
   },
   {
     "id": "neca-w35-dnd-lost-wave-box-set-13015",
@@ -750808,11 +751112,14 @@
       "af-checklist",
       "wave35",
       "date-precision:year",
-      "af411:13007"
+      "af411:13007",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave35",
     "msrp": 37.99,
-    "sku": "634482522714"
+    "sku": "634482522714",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_525f5615569e41d298730018e56e7512~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_525f5615569e41d298730018e56e7512~mv2.jpg"
   },
   {
     "id": "neca-w35-dnd-elkhorn-ultimate-13013",
@@ -750830,11 +751137,14 @@
       "af-checklist",
       "wave35",
       "date-precision:year",
-      "af411:13013"
+      "af411:13013",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave35",
     "msrp": 37.99,
-    "sku": "634482522790"
+    "sku": "634482522790",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_b8310b801c8447beab9137e94d63a034~mv2.jpg"
   },
   {
     "id": "neca-w35-dnd-strongheart-ultimate-13009",
@@ -750852,11 +751162,14 @@
       "af-checklist",
       "wave35",
       "date-precision:year",
-      "af411:13009"
+      "af411:13009",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave35",
     "msrp": 37.99,
-    "sku": "634482522783"
+    "sku": "634482522783",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_bbfdab2b62f54111a70925a862e65d7a~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_bbfdab2b62f54111a70925a862e65d7a~mv2.jpg"
   },
   {
     "id": "neca-w35-dnd-strongheart-50th-anniversary-13010",
@@ -750874,11 +751187,14 @@
       "af-checklist",
       "wave35",
       "date-precision:year",
-      "af411:13010"
+      "af411:13010",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave35",
     "msrp": 29.99,
-    "sku": "634482522813"
+    "sku": "634482522813",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_287a0250505d407fbc90697c18b36107~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_287a0250505d407fbc90697c18b36107~mv2.jpg"
   },
   {
     "id": "neca-w35-dnd-zarak-ultimate-13012",
@@ -750896,11 +751212,14 @@
       "af-checklist",
       "wave35",
       "date-precision:year",
-      "af411:13012"
+      "af411:13012",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave35",
     "msrp": 37.99,
-    "sku": "634482522776"
+    "sku": "634482522776",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_bf0df6b0c87a4259a47a935bf58e2e0e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_bf0df6b0c87a4259a47a935bf58e2e0e~mv2.jpg"
   },
   {
     "id": "neca-w35-dnd-zarak-50th-anniversary-13011",
@@ -750918,11 +751237,14 @@
       "af-checklist",
       "wave35",
       "date-precision:year",
-      "af411:13011"
+      "af411:13011",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave35",
     "msrp": 29.99,
-    "sku": "634482522837"
+    "sku": "634482522837",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_92ad5a63196f4bc886212d7148324983~mv2.jpg"
   },
   {
     "id": "neca-w35-dnd-warduke-50th-anniversary-13008",
@@ -750940,11 +751262,14 @@
       "af-checklist",
       "wave35",
       "date-precision:year",
-      "af411:13008"
+      "af411:13008",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave35",
     "msrp": 29.99,
-    "sku": "634482522806"
+    "sku": "634482522806",
+    "imageUrl": "https://static.wixstatic.com/media/adc447_3d561bcc850347a1ade6d7acc4a60eb6~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_3d561bcc850347a1ade6d7acc4a60eb6~mv2.jpg"
   },
   {
     "id": "neca-w35-dnd-elkhorn-50th-anniversary-13014",
@@ -750962,10 +751287,13 @@
       "af-checklist",
       "wave35",
       "date-precision:year",
-      "af411:13014"
+      "af411:13014",
+      "image-bake",
+      "img:mephitsu"
     ],
     "source": "curated-dc-gap-wave35",
-    "msrp": 29.99
+    "msrp": 29.99,
+    "imageUrl": "https://static.wixstatic.com/media/adc447_a8c878ade3b74a1f8d864f3bc510992f~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_a8c878ade3b74a1f8d864f3bc510992f~mv2.jpg"
   },
   {
     "id": "afmon-bandai-dragon-ball-super-dragon-stars-super-saiyan-blue-goku-vs-hit-action-figur-bbts-201325",

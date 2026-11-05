@@ -45956,6 +45956,12 @@
       "id:ta-c805cdc5336e",
       "toyark:602160",
       "https://www.toyark.com/2026/11/03/dc-multiverse-gold-label-mr-freeze-and-harley-quinn-602160"
+    ],
+    "afmon-mcfarlane-dc-classic-dc-multiverse-collector-edition-black-manta-action-figure-c-bbts-196709": [
+      "BBTS-196709"
+    ],
+    "afmon-neca-house-of-1000-corpses-captain-spaulding-tailcoat-20th-anniversary-7-inch-scale-nc39935": [
+      "NC39935"
     ]
   },
   "aliasToFigureId": {
@@ -71009,7 +71015,9 @@
     "https://www.toyark.com/2026/11/03/superman-1978-dc-multiverse-clark-kent-figure-602178": "ta-284cd47c6520",
     "id:ta-c805cdc5336e": "ta-c805cdc5336e",
     "toyark:602160": "ta-c805cdc5336e",
-    "https://www.toyark.com/2026/11/03/dc-multiverse-gold-label-mr-freeze-and-harley-quinn-602160": "ta-c805cdc5336e"
+    "https://www.toyark.com/2026/11/03/dc-multiverse-gold-label-mr-freeze-and-harley-quinn-602160": "ta-c805cdc5336e",
+    "BBTS-196709": "afmon-mcfarlane-dc-classic-dc-multiverse-collector-edition-black-manta-action-figure-c-bbts-196709",
+    "NC39935": "afmon-neca-house-of-1000-corpses-captain-spaulding-tailcoat-20th-anniversary-7-inch-scale-nc39935"
   },
   "collapsed": [
     {
@@ -75053,7 +75061,7 @@
       "reason": "REFUSED 2026-10-17: shared GTIN 634482606551 is NECA 60655 Halloween: Resurrection Ultimate Michael Myers (2025), already present as sf-neca-store-halloween-resurrection-ultimate-michael-myers-7-inch-scale-action-; both 2019 rows carry it from a cmdstore sku-bake (neca-michael also has the Resurrection photo). Matching GTIN is contamination, not identity; names/lines/variants do not establish the same figure. Follow-up: strip 634482606551 and the Resurrection photo from both 2019 rows."
     }
   ],
-  "updatedAt": "2026-10-28T14:32:58Z",
+  "updatedAt": "2026-11-05T19:04:20.367591+00:00",
   "stats": {
     "before": 19085,
     "removed": 6,
