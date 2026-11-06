@@ -1,0 +1,89 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-11-06",
+  "updatedAt": "2026-11-06T15:23:27Z",
+  "added": 10,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-11-06: BBTS SortOrder=New CategoryID=100 via WebFetch \u2014 page1 mostly non-AF (pens, scale statues, keychains, dioramas, foil); page2 had Takara TF preorders. Verified BBTS product ids/og images for NL-10 Go Prime (201346), OG-02EX Grindor (201347), Missing Link C-16 Arcee (201364), AM-T03 Star Saber (201366). MAFEX No.321 Superman Renewal and Figuarts Anakin Classic Ver listed on BBTS search but no product-page id resolved \u2014 held. EE newly-added Nov 5 Hasbro ActionVerse/Giant-Sized + Takara TF; EE NL-10/Arcee skipped (same as BBTS). SW ActionVerse Luke/R2/Mando2/Grogu2 held (EE page image was social logo, no media CDN). Super7 Tiger Force Jinx / TBLeague Kelsang still held (no BBTS ids). EE newly-added + action-figures read via WebFetch; EE item numbers/UPCs/og images verified via EE product pages.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 10,
+    "ee_candidates": 6,
+    "bbts_candidates": 4,
+    "added": 10,
+    "skipped_dupes": 0,
+    "rejected_non_af": 0,
+    "unmapped_company": 0,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 30864,
+  "oneshotAfter": 30874,
+  "ee_added": 6,
+  "bbts_added": 4,
+  "samples": [
+    {
+      "sku": "HSG3219",
+      "name": "Iron Man and his Awesome Friends Giant-Sized Ultron Action Figure and Mech Suit",
+      "id": "afmon-hasbro-iron-man-and-his-awesome-friends-giant-sized-ultron-action-figure-and-mech-su-hsg3219",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG3218",
+      "name": "Iron Man and his Awesome Friends Giant-Sized Armor Action Figure and Mech Suit",
+      "id": "afmon-hasbro-iron-man-and-his-awesome-friends-giant-sized-armor-action-figure-and-mech-sui-hsg3218",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2819",
+      "name": "Avengers: Doomsday ActionVerse Thor 4 1/2-Inch Action Figure",
+      "id": "afmon-hasbro-avengers-doomsday-actionverse-thor-4-1-2-inch-action-figure-hsg2819",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2818",
+      "name": "Avengers: Doomsday ActionVerse Doctor Doom 4 1/2-Inch Action Figure",
+      "id": "afmon-hasbro-avengers-doomsday-actionverse-doctor-doom-4-1-2-inch-action-figure-hsg2818",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2821",
+      "name": "Avengers: Doomsday ActionVerse Marvel's The Thing 4 1/2-Inch Action Figure",
+      "id": "afmon-hasbro-avengers-doomsday-actionverse-marvel-s-the-thing-4-1-2-inch-action-figure-hsg2821",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG3531",
+      "name": "Avengers Doomsday ActionVerse Marvel's Beast 4.5-Inch Action Figure",
+      "id": "afmon-hasbro-avengers-doomsday-actionverse-marvel-s-beast-4-5-inch-action-figure-hsg3531",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-201346",
+      "name": "Transformers New Legends NL-10 Go Prime & Vector Sigma Action Figure Set",
+      "id": "afmon-hasbro-transformers-new-legends-nl-10-go-prime-vector-sigma-action-figure-set-bbts-201346",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-201347",
+      "name": "Transformers Overgear OG-02EX Grindor (CTC Technology Demonstrator Ver.) Action Figure",
+      "id": "afmon-hasbro-transformers-overgear-og-02ex-grindor-ctc-technology-demonstrator-ver-act-bbts-201347",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-201364",
+      "name": "Transformers Missing Link C-16 Arcee Rebirth Action Figure",
+      "id": "afmon-hasbro-transformers-missing-link-c-16-arcee-rebirth-action-figure-bbts-201364",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-201366",
+      "name": "Transformers Adamas Machina AM-T03 Star Saber Action Figure",
+      "id": "afmon-hasbro-transformers-adamas-machina-am-t03-star-saber-action-figure-bbts-201366",
+      "source": "bbts"
+    }
+  ],
+  "commit": null
+}
