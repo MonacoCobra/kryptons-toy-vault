@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-11-05T19:04:20.431051+00:00",
+  "bakedAt": "2026-11-06T06:25:15.762246+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-11-05T19:02:09.911177+00:00",
+      "bakedAt": "2026-11-06T06:23:10.410938+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 1007,
@@ -118,7 +118,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-05T19:02:19.035377+00:00",
+      "bakedAt": "2026-11-06T06:23:19.149911+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -233,7 +233,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-05T19:02:24.187297+00:00",
+      "bakedAt": "2026-11-06T06:23:23.946804+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -348,7 +348,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-05T19:03:22.178272+00:00",
+      "bakedAt": "2026-11-06T06:24:19.739615+00:00",
       "line": "mcfarlane",
       "dryRun": false,
       "mephitsuCount": 2220,
@@ -359,31 +359,31 @@
         "already": 969
       },
       "before": {
-        "total": 1752,
-        "withSku": 864,
-        "withGtin": 618,
-        "withListingPrimary": 246,
-        "withImage": 851,
-        "emptySku": 888,
-        "emptyImage": 901
-      },
-      "after": {
-        "total": 1752,
+        "total": 1766,
         "withSku": 872,
         "withGtin": 627,
         "withListingPrimary": 245,
-        "withImage": 953,
-        "emptySku": 880,
-        "emptyImage": 799
+        "withImage": 950,
+        "emptySku": 894,
+        "emptyImage": 816
+      },
+      "after": {
+        "total": 1766,
+        "withSku": 873,
+        "withGtin": 628,
+        "withListingPrimary": 245,
+        "withImage": 954,
+        "emptySku": 893,
+        "emptyImage": 812
       },
       "apply": {
-        "matched": 600,
-        "gtinAssigned": 9,
-        "gtinUpgraded": 1,
-        "imagesFilled": 102,
-        "imagesSkipped": 45,
-        "aliasesAttached": 1,
-        "skippedGtinConflict": 73,
+        "matched": 608,
+        "gtinAssigned": 1,
+        "gtinUpgraded": 0,
+        "imagesFilled": 4,
+        "imagesSkipped": 52,
+        "aliasesAttached": 0,
+        "skippedGtinConflict": 77,
         "blockedByAudit": 34,
         "reattachedAfterEnforce": 0,
         "samples": [
@@ -477,14 +477,29 @@
             "reason": "listing_code_audit_blocked:887961670486"
           },
           {
+            "figureId": "mcf-w36-robin-dc-batman-and-robin-frostbite-edition-12",
+            "mephitsu": "Robin — Gold Label  Edition, McFarlane Store · 2023 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcf-gl-w25-robin-dick-grayson-gold-label-dc-rebirth-5786"
+          },
+          {
             "figureId": "mcf-dc-super-pow-batman-gold-edition-wave-6",
             "mephitsu": "Batman — Gold Label Walmart, Kelley Jones Autograph Edition · 2024 · DC Multiverse",
             "reason": "listing_gtin_owned_by:mcfc-batman-knightfall"
           },
           {
+            "figureId": "mcf-w36-mr-freeze-black-light-batman-and-robin-6",
+            "mephitsu": "Mr. Freeze 'Black Light' — Gold Label Entertainment Earth · 2025 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcf4-multiverse-mrfreeze"
+          },
+          {
             "figureId": "mcf-mp-w20-batman-and-beyond-5-pack-4090",
             "mephitsu": "Batman Beyond (Comic) — Target (US) · 2022 · DC Multiverse",
             "reason": "listing_gtin_owned_by:mcf-pp-w17-batman-beyond-neo-year-6054"
+          },
+          {
+            "figureId": "mcf-w36-batman-fear-toxin-10",
+            "mephitsu": "'Fear Toxin' Batman — Gold Label Target US · 2025 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:d14mcf-batman-gl-a"
           },
           {
             "figureId": "mcf-w8-gl-gold",
@@ -495,6 +510,11 @@
             "figureId": "mcfdc-gl-lex-2025",
             "mephitsu": "Lex Luthor (Gold Label) — Target, Gold Label · 2022 · DC Multiverse",
             "reason": "listing_gtin_owned_by:d14mcf-lex-tas"
+          },
+          {
+            "figureId": "mcf-w36-batman-jokerized-dark-nights-death-metal-4",
+            "mephitsu": "Batman — Gold Label Walmart · 2026 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcfc-batman-year2"
           },
           {
             "figureId": "mf10-mf-36",
@@ -580,7 +600,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-05T19:03:53.858755+00:00",
+      "bakedAt": "2026-11-06T06:24:50.056586+00:00",
       "line": "neca",
       "dryRun": false,
       "mephitsuCount": 1502,
@@ -593,11 +613,11 @@
       "before": {
         "total": 958,
         "withSku": 731,
-        "withGtin": 340,
-        "withListingPrimary": 391,
-        "withImage": 764,
+        "withGtin": 341,
+        "withListingPrimary": 390,
+        "withImage": 773,
         "emptySku": 227,
-        "emptyImage": 194
+        "emptyImage": 185
       },
       "after": {
         "total": 958,
@@ -610,11 +630,11 @@
       },
       "apply": {
         "matched": 246,
-        "gtinAssigned": 1,
-        "gtinUpgraded": 1,
-        "imagesFilled": 9,
+        "gtinAssigned": 0,
+        "gtinUpgraded": 0,
+        "imagesFilled": 0,
         "imagesSkipped": 7,
-        "aliasesAttached": 1,
+        "aliasesAttached": 0,
         "skippedGtinConflict": 23,
         "blockedByAudit": 0,
         "reattachedAfterEnforce": 0,
@@ -702,7 +722,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-05T19:04:10.603811+00:00",
+      "bakedAt": "2026-11-06T06:25:06.643373+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -817,7 +837,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-05T19:04:11.952290+00:00",
+      "bakedAt": "2026-11-06T06:25:07.767416+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -932,7 +952,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-05T19:04:17.370931+00:00",
+      "bakedAt": "2026-11-06T06:25:12.924663+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -1047,7 +1067,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-05T19:04:20.424082+00:00",
+      "bakedAt": "2026-11-06T06:25:15.756826+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,
