@@ -1,26 +1,26 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-11-03T18:54:37Z",
+  "finishedAt": "2026-11-06T19:02:35Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 17,
-  "applied": 11,
-  "skippedApply": 6,
-  "rejectedRows": 14,
-  "withImage": 11,
-  "aliasAdded": 17,
+  "acceptedCandidates": 9,
+  "applied": 7,
+  "skippedApply": 2,
+  "rejectedRows": 10,
+  "withImage": 7,
+  "aliasAdded": 10,
   "byCompany": {
     "hasbro": {
-      "accepted": 1,
+      "accepted": 0,
       "rejected": 0
     },
     "mcfarlane": {
-      "accepted": 15,
-      "rejected": 2
+      "accepted": 8,
+      "rejected": 1
     },
     "neca": {
       "accepted": 0,
-      "rejected": 3
+      "rejected": 0
     },
     "jazwares": {
       "accepted": 0,
@@ -28,11 +28,11 @@
     },
     "super7": {
       "accepted": 0,
-      "rejected": 3
+      "rejected": 1
     },
     "hottoys": {
       "accepted": 1,
-      "rejected": 1
+      "rejected": 0
     },
     "mondo": {
       "accepted": 0,
@@ -60,39 +60,36 @@
     }
   },
   "byRejectReason": {
-    "company-not-allowlisted": 4,
-    "possible-reissue": 1,
-    "already-in-oneshot": 4,
-    "missing-line": 4,
-    "vehicles-props-only": 1
+    "sponsor-newsletter": 2,
+    "company-not-allowlisted": 5,
+    "company-unknown": 1,
+    "no-new-product-identity": 2
   },
   "appliedIds": [
-    "ta-284cd47c6520",
+    "ta-b921acf3c92a",
     "ta-fab5e0c0dc34",
     "ta-08f477585dc3",
     "ta-80e8695218e3",
     "ta-76c19d438585",
     "ta-5d6f204064da",
-    "ta-c805cdc5336e",
-    "ta-04d4f9d3d0fe",
-    "ta-788280fe8e31",
-    "ta-aa9a46f8efee",
-    "ta-54ddd874119ae4f0"
+    "ta-04d4f9d3d0fe"
   ],
   "appliedSample": [
     {
-      "id": "ta-284cd47c6520",
-      "name": "Clark Kent",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": 2026,
-      "variant": "With Two Portraits",
+      "id": "ta-b921acf3c92a",
+      "name": "Eleventh Brother",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": 2027,
+      "variant": "from Star Wars: Maul – Shadow Lord",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/DC-Multiverse-Superman-1978-Clark-Kent-002.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/03/superman-1978-dc-multiverse-clark-kent-figure-602178",
-      "toyarkPostId": 602178
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-Eleventh-Brother-001.jpg",
+      "aliases": [
+        "TMS197"
+      ],
+      "sourceUrl": "https://www.toyark.com/2026/11/06/hot-toys-eleventh-brother-figure-from-star-wars-maul-shadow-lord-602217",
+      "toyarkPostId": 602217
     },
     {
       "id": "ta-fab5e0c0dc34",
@@ -165,20 +162,6 @@
       "toyarkPostId": 602178
     },
     {
-      "id": "ta-c805cdc5336e",
-      "name": "Harley Quinn",
-      "company": "mcfarlane",
-      "line": "DC Multiverse Gold Label",
-      "year": 2026,
-      "variant": "DC Multiverse Mr. Freeze and",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/z-DC-Multiverse-Gold-Label-11.3.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/03/dc-multiverse-gold-label-mr-freeze-and-harley-quinn-602160",
-      "toyarkPostId": 602160
-    },
-    {
       "id": "ta-04d4f9d3d0fe",
       "name": "Spawn",
       "company": "mcfarlane",
@@ -191,105 +174,29 @@
       "aliases": [],
       "sourceUrl": "https://www.toyark.com/2026/11/02/mcfarlane-toys-vox-and-necroplasm-spawn-602102",
       "toyarkPostId": 602102
-    },
-    {
-      "id": "ta-788280fe8e31",
-      "name": "Val-Zod",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": 2026,
-      "variant": null,
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-DC-Multiverse-Pre-orders-10.29.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/30/new-dc-multiverse-pre-orders-val-zod-mary-shazam-star-sapphire-601959",
-      "toyarkPostId": 601959
-    },
-    {
-      "id": "ta-aa9a46f8efee",
-      "name": "Mary Shazam",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": 2026,
-      "variant": null,
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-DC-Multiverse-Pre-orders-10.29.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/30/new-dc-multiverse-pre-orders-val-zod-mary-shazam-star-sapphire-601959",
-      "toyarkPostId": 601959
-    },
-    {
-      "id": "ta-54ddd874119ae4f0",
-      "name": "Wolverine",
-      "company": "hasbro",
-      "line": "Marvel Legends",
-      "year": 2027,
-      "variant": "Astonishing X-Men Marvel Legends Cyclops &",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Astonishing-X-Men-Marvel-Legends-Cyclops-Wolverine-001.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/29/astonishing-x-men-marvel-legends-cyclops-wolverine-601912",
-      "toyarkPostId": 601912
     }
   ],
   "skippedSample": [
     {
-      "name": "Batman",
+      "name": "Clark Kent",
       "company": "mcfarlane",
       "reason": "already-in-oneshot",
       "oneshotIds": [
-        "ta-44f8dbdf9c40"
+        "ta-284cd47c6520"
       ],
-      "toyarkPostId": 601989
+      "toyarkPostId": 602178
     },
     {
-      "name": "Batman",
+      "name": "Harley Quinn",
       "company": "mcfarlane",
       "reason": "already-in-oneshot",
       "oneshotIds": [
-        "ta-44f8dbdf9c40"
+        "ta-c805cdc5336e"
       ],
-      "toyarkPostId": 601989
-    },
-    {
-      "name": "Batman",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-44f8dbdf9c40"
-      ],
-      "toyarkPostId": 601989
-    },
-    {
-      "name": "Batman",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-44f8dbdf9c40"
-      ],
-      "toyarkPostId": 601989
-    },
-    {
-      "name": "Bruce Wayne",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-f46d65127db3"
-      ],
-      "toyarkPostId": 601989
-    },
-    {
-      "name": "Sentinel",
-      "company": "hottoys",
-      "reason": "alias-owned",
-      "alias": "SMS004J",
-      "owner": "ta-46a7d4630d86"
+      "toyarkPostId": 602160
     }
   ],
-  "archiveSize": 30836,
+  "archiveSize": 30875,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"

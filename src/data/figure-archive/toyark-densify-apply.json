@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T18:54:36Z",
+  "generatedAt": "2026-11-06T19:02:35Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-10-27T18:54:35.825493+00:00",
+    "after": "2026-10-30T19:02:34.191266+00:00",
     "before": null
   },
   "fetch": {
@@ -45,30 +45,30 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 16,
+    "fetchedPostCount": 14,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 9997,
+    "indexedRows": 10035,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 16,
-    "acceptedCandidates": 17,
-    "rejectedRows": 14,
+    "fetchedPosts": 14,
+    "acceptedCandidates": 9,
+    "rejectedRows": 10,
     "byCompany": {
       "hasbro": {
-        "accepted": 1,
+        "accepted": 0,
         "rejected": 0
       },
       "mcfarlane": {
-        "accepted": 15,
-        "rejected": 2
+        "accepted": 8,
+        "rejected": 1
       },
       "neca": {
         "accepted": 0,
-        "rejected": 3
+        "rejected": 0
       },
       "jazwares": {
         "accepted": 0,
@@ -76,11 +76,11 @@
       },
       "super7": {
         "accepted": 0,
-        "rejected": 3
+        "rejected": 1
       },
       "hottoys": {
         "accepted": 1,
-        "rejected": 1
+        "rejected": 0
       },
       "mondo": {
         "accepted": 0,
@@ -108,16 +108,38 @@
       }
     },
     "byRejectReason": {
-      "company-not-allowlisted": 4,
-      "possible-reissue": 1,
-      "already-in-oneshot": 4,
-      "missing-line": 4,
-      "vehicles-props-only": 1
+      "sponsor-newsletter": 2,
+      "company-not-allowlisted": 5,
+      "company-unknown": 1,
+      "no-new-product-identity": 2
     },
-    "applied": 11,
-    "skippedApply": 6
+    "applied": 7,
+    "skippedApply": 2
   },
   "candidates": [
+    {
+      "decision": "accept",
+      "name": "Eleventh Brother",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": "from Star Wars: Maul – Shadow Lord",
+      "sourceUrl": "https://www.toyark.com/2026/11/06/hot-toys-eleventh-brother-figure-from-star-wars-maul-shadow-lord-602217",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-Eleventh-Brother-001.jpg",
+      "aliases": [
+        "TMS197"
+      ],
+      "codes": [
+        "TMS197"
+      ],
+      "gtin": null,
+      "toyarkPostId": 602217,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Hot Toys Eleventh Brother Figure from Star Wars: Maul – Shadow Lord",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; variant=from Star Wars: Maul – Shadow Lord; year=2027; aliases-from-source=TMS197; new/reveal/pre-order/official-image signal"
+    },
     {
       "decision": "accept",
       "name": "Clark Kent",
@@ -269,184 +291,135 @@
       "pack": null,
       "title": "McFarlane Toys Vox and Necroplasm Spawn",
       "rationale": "mcfarlane via class:companies-mcfarlane; line=Spawn; variant=Vox and Necroplasm; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Batman",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "DC Classic",
-      "sourceUrl": "https://www.toyark.com/2026/10/30/dc-multiverse-batman-batman-batman-batman-and-bruce-wayne-601989",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-That-Is-A-Lot-Of-Batmans.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601989,
-      "postYear": 2026,
-      "pack": null,
-      "title": "DC Multiverse – Batman, Batman, Batman, Batman, and Bruce Wayne",
-      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Batman",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "DC Classic",
-      "sourceUrl": "https://www.toyark.com/2026/10/30/dc-multiverse-batman-batman-batman-batman-and-bruce-wayne-601989",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-That-Is-A-Lot-Of-Batmans.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601989,
-      "postYear": 2026,
-      "pack": null,
-      "title": "DC Multiverse – Batman, Batman, Batman, Batman, and Bruce Wayne",
-      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Batman",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "DC Classic",
-      "sourceUrl": "https://www.toyark.com/2026/10/30/dc-multiverse-batman-batman-batman-batman-and-bruce-wayne-601989",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-That-Is-A-Lot-Of-Batmans.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601989,
-      "postYear": 2026,
-      "pack": null,
-      "title": "DC Multiverse – Batman, Batman, Batman, Batman, and Bruce Wayne",
-      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Batman",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "DC Classic",
-      "sourceUrl": "https://www.toyark.com/2026/10/30/dc-multiverse-batman-batman-batman-batman-and-bruce-wayne-601989",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-That-Is-A-Lot-Of-Batmans.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601989,
-      "postYear": 2026,
-      "pack": null,
-      "title": "DC Multiverse – Batman, Batman, Batman, Batman, and Bruce Wayne",
-      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Bruce Wayne",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": null,
-      "releaseWindow": null,
-      "variant": "DC Classic",
-      "sourceUrl": "https://www.toyark.com/2026/10/30/dc-multiverse-batman-batman-batman-batman-and-bruce-wayne-601989",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-That-Is-A-Lot-Of-Batmans.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601989,
-      "postYear": 2026,
-      "pack": null,
-      "title": "DC Multiverse – Batman, Batman, Batman, Batman, and Bruce Wayne",
-      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; variant=DC Classic; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Val-Zod",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/30/new-dc-multiverse-pre-orders-val-zod-mary-shazam-star-sapphire-601959",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-DC-Multiverse-Pre-orders-10.29.26.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601959,
-      "postYear": 2026,
-      "pack": null,
-      "title": "New DC Multiverse Pre-Orders – Val-Zod, Mary Shazam, Star Sapphire",
-      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Mary Shazam",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/30/new-dc-multiverse-pre-orders-val-zod-mary-shazam-star-sapphire-601959",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-DC-Multiverse-Pre-orders-10.29.26.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601959,
-      "postYear": 2026,
-      "pack": null,
-      "title": "New DC Multiverse Pre-Orders – Val-Zod, Mary Shazam, Star Sapphire",
-      "rationale": "mcfarlane via class:companies-mcfarlane; line=DC Multiverse; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Sentinel",
-      "company": "hottoys",
-      "line": "Hot Toys",
-      "year": 2027,
-      "releaseWindow": null,
-      "variant": "Avengers: Doomsday – Jumbo Sofvi – UPDATE",
-      "sourceUrl": "https://www.toyark.com/2026/10/29/avengers-doomsday-hot-toys-sentinel-jumbo-sofvi-figure-601747",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Avengers-Doomsday-Sentinel-001.jpg",
-      "aliases": [
-        "SMS004J"
-      ],
-      "codes": [
-        "SMS004J"
-      ],
-      "gtin": null,
-      "toyarkPostId": 601747,
-      "postYear": 2026,
-      "pack": null,
-      "title": "Avengers: Doomsday – Hot Toys Sentinel Jumbo Sofvi Figure – UPDATE",
-      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; variant=Avengers: Doomsday – Jumbo Sofvi – UPDATE; year=2027; aliases-from-source=SMS004J; new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Wolverine",
-      "company": "hasbro",
-      "line": "Marvel Legends",
-      "year": 2027,
-      "releaseWindow": "January 2027",
-      "variant": "Astonishing X-Men Marvel Legends Cyclops &",
-      "sourceUrl": "https://www.toyark.com/2026/10/29/astonishing-x-men-marvel-legends-cyclops-wolverine-601912",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Astonishing-X-Men-Marvel-Legends-Cyclops-Wolverine-001.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601912,
-      "postYear": 2026,
-      "pack": null,
-      "title": "Astonishing X-Men Marvel Legends Cyclops & Wolverine",
-      "rationale": "hasbro via class:companies-hasbro; line=Marvel Legends; variant=Astonishing X-Men Marvel Legends Cyclops &; year=2027; new/reveal/pre-order/official-image signal"
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "sponsor-newsletter",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/06/the-chosen-prime-newsletter-november-6-2026-602250",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602250,
+      "title": "The Chosen Prime Newsletter November 6, 2026",
+      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "shfiguarts",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/06/godzilla-minus-zero-s-h-monsterarts-king-ghidorah-preview-602245",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602245,
+      "title": "Godzilla: Minus Zero – S.H. MonsterArts King Ghidorah Preview",
+      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "shfiguarts",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/06/dragon-ball-z-s-h-figuarts-z-fighters-krillin-piccolo-and-yamcha-announced-602239",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602239,
+      "title": "Dragon Ball Z – S.H. Figuarts Z-Fighters Krillin, Piccolo, and Yamcha Announced",
+      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "sponsor-newsletter",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/05/bbts-news-holiday-spotlight-sale-tamashii-nations-transformers-motu-godzilla-and-more-602214",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602214,
+      "title": "BBTS News – Holiday Spotlight Sale, Tamashii Nations, Transformers, MOTU, Godzilla and More",
+      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/05/predator-figlite-dx-figure-by-52toys-602204",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602204,
+      "title": "Predator FigLite DX Figure by 52Toys",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
+    {
+      "decision": "reject",
+      "reason": "no-new-product-identity",
+      "name": null,
+      "company": "super7",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/05/godzilla-ross-exclusive-godzilla-reaction-figure-2-pack-by-super7-602198",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602198,
+      "title": "Godzilla – Ross Exclusive Godzilla ReAction Figure 2-Pack by Super7",
+      "rationale": "Allowlisted company but no new/reveal/pre-order/official-image signal."
+    },
+    {
+      "decision": "reject",
+      "reason": "no-new-product-identity",
+      "name": null,
+      "company": "mcfarlane",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/04/dc-multiverse-batman-and-batman-602182",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602182,
+      "title": "DC Multiverse – Batman and Batman",
+      "rationale": "Allowlisted company but no new/reveal/pre-order/official-image signal."
+    },
     {
       "decision": "reject",
       "reason": "company-not-allowlisted",
@@ -500,239 +473,24 @@
       "toyarkPostId": 602062,
       "title": "Star Wars: A New Hope – S.H. Figuarts Darth Vader, Luke Skywalker, and Princess Leia",
       "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "mattel",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/30/mattels-dc-legacy-premium-hush-batman-in-hand-601997",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601997,
-      "title": "Mattel’s DC Legacy – Premium HUSH Batman In-Hand",
-      "rationale": "Recognized mattel via class:companies-mattel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "possible-reissue",
-      "name": "Star Sapphire",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/30/new-dc-multiverse-pre-orders-val-zod-mary-shazam-star-sapphire-601959",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-DC-Multiverse-Pre-orders-10.29.26.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601959,
-      "title": "New DC Multiverse Pre-Orders – Val-Zod, Mary Shazam, Star Sapphire",
-      "oneshotIds": [
-        "mcf-w8-star-sapphire"
-      ],
-      "rationale": "Same company+line+name(+year) exists; variant not distinct enough (mcf-w8-star-sapphire)."
-    },
-    {
-      "decision": "reject",
-      "reason": "already-in-oneshot",
-      "name": "Hicks",
-      "company": "hottoys",
-      "line": "Hot Toys",
-      "year": 2027,
-      "releaseWindow": "December 2027",
-      "variant": "Aliens – Corporal",
-      "sourceUrl": "https://www.toyark.com/2026/10/30/aliens-hot-toys-corporal-hicks-figure-601938",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Hot-Toys-Aliens-Hicks-001.jpg",
-      "aliases": [
-        "MMS930"
-      ],
-      "codes": [
-        "MMS930"
-      ],
-      "gtin": null,
-      "toyarkPostId": 601938,
-      "title": "Aliens – Hot Toys Corporal Hicks Figure",
-      "oneshotIds": [
-        "ta-674d7f860daa"
-      ],
-      "rationale": "Identity key already in oneshot (ta-674d7f860daa)."
-    },
-    {
-      "decision": "reject",
-      "reason": "already-in-oneshot",
-      "name": "Vultureman",
-      "company": "super7",
-      "line": "Super7 ULTIMATES!",
-      "year": 2027,
-      "releaseWindow": "January 2027",
-      "variant": "Deluxe Wave 5",
-      "sourceUrl": "https://www.toyark.com/2026/10/29/thundercats-deluxe-wave-5-and-ultimates-wave-16-601885",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Super7-Thundercats-Ultimates-Wave-16-001.webp",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601885,
-      "title": "Thundercats Deluxe Wave 5 and Ultimates Wave 16",
-      "oneshotIds": [
-        "ta-cd695ff0740b"
-      ],
-      "rationale": "Identity key already in oneshot (ta-cd695ff0740b)."
-    },
-    {
-      "decision": "reject",
-      "reason": "already-in-oneshot",
-      "name": "Panthro",
-      "company": "super7",
-      "line": "Super7 ULTIMATES!",
-      "year": 2027,
-      "releaseWindow": "January 2027",
-      "variant": "Deluxe Wave 5",
-      "sourceUrl": "https://www.toyark.com/2026/10/29/thundercats-deluxe-wave-5-and-ultimates-wave-16-601885",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Super7-Thundercats-Ultimates-Wave-16-001.webp",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601885,
-      "title": "Thundercats Deluxe Wave 5 and Ultimates Wave 16",
-      "oneshotIds": [
-        "ta-f9cafb08ad23"
-      ],
-      "rationale": "Identity key already in oneshot (ta-f9cafb08ad23)."
-    },
-    {
-      "decision": "reject",
-      "reason": "already-in-oneshot",
-      "name": "Mumm-Ra",
-      "company": "super7",
-      "line": "Super7 ULTIMATES!",
-      "year": 2027,
-      "releaseWindow": "January 2027",
-      "variant": "(The Ever Living) / Deluxe Wave 5",
-      "sourceUrl": "https://www.toyark.com/2026/10/29/thundercats-deluxe-wave-5-and-ultimates-wave-16-601885",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Super7-Thundercats-Ultimates-Wave-16-001.webp",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601885,
-      "title": "Thundercats Deluxe Wave 5 and Ultimates Wave 16",
-      "oneshotIds": [
-        "ta-3d5975f0beff"
-      ],
-      "rationale": "Identity key already in oneshot (ta-3d5975f0beff)."
-    },
-    {
-      "decision": "reject",
-      "reason": "missing-line",
-      "name": "reimagining the beloved McDonald’s characters Grimace",
-      "company": "neca",
-      "line": null,
-      "year": 2027,
-      "releaseWindow": "April 2027",
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/29/mcdonalds-x-ben-cooper-figures-by-neca-601872",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/McDonalds-x-Ben-Cooper-Figures-by-NECA-001.webp",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601872,
-      "title": "McDonald’s x Ben Cooper Figures by NECA",
-      "rationale": "Recognizable company but no line/subline in class_list or prose."
-    },
-    {
-      "decision": "reject",
-      "reason": "missing-line",
-      "name": "Hamburglar",
-      "company": "neca",
-      "line": null,
-      "year": 2027,
-      "releaseWindow": "April 2027",
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/29/mcdonalds-x-ben-cooper-figures-by-neca-601872",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/McDonalds-x-Ben-Cooper-Figures-by-NECA-001.webp",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601872,
-      "title": "McDonald’s x Ben Cooper Figures by NECA",
-      "rationale": "Recognizable company but no line/subline in class_list or prose."
-    },
-    {
-      "decision": "reject",
-      "reason": "missing-line",
-      "name": "Birdie the Early Bird",
-      "company": "neca",
-      "line": null,
-      "year": 2027,
-      "releaseWindow": "April 2027",
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/29/mcdonalds-x-ben-cooper-figures-by-neca-601872",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/McDonalds-x-Ben-Cooper-Figures-by-NECA-001.webp",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601872,
-      "title": "McDonald’s x Ben Cooper Figures by NECA",
-      "rationale": "Recognizable company but no line/subline in class_list or prose."
-    },
-    {
-      "decision": "reject",
-      "reason": "missing-line",
-      "name": "Shang Tsung",
-      "company": "mcfarlane",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": "Mortal Kombat Klassic Baraka, Jax Kung Lao and New 2-Packs – UPDATED",
-      "sourceUrl": "https://www.toyark.com/2026/10/29/mcfarlane-toys-mortal-kombat-klassic-baraka-jax-shang-tsung-kung-lao-and-new-2-packs-601737",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-McFarlane-MK-Klassic-10.28.26.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601737,
-      "title": "McFarlane Toys Mortal Kombat Klassic Baraka, Jax, Shang Tsung, Kung Lao and New 2-Packs – UPDATED",
-      "rationale": "Recognizable company but no line/subline in class_list or prose."
-    },
-    {
-      "decision": "reject",
-      "reason": "vehicles-props-only",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/10/29/berserk-chestnut-puck-statue-by-gecco-601771",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 601771,
-      "title": "Berserk – Chestnut Puck Statue by Gecco",
-      "rationale": "Title is a prop/vehicle/replica, not a figure."
     }
   ],
   "applied": [
     {
-      "id": "ta-284cd47c6520",
-      "name": "Clark Kent",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": 2026,
-      "variant": "With Two Portraits",
+      "id": "ta-b921acf3c92a",
+      "name": "Eleventh Brother",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": 2027,
+      "variant": "from Star Wars: Maul – Shadow Lord",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/DC-Multiverse-Superman-1978-Clark-Kent-002.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/03/superman-1978-dc-multiverse-clark-kent-figure-602178",
-      "toyarkPostId": 602178
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-Eleventh-Brother-001.jpg",
+      "aliases": [
+        "TMS197"
+      ],
+      "sourceUrl": "https://www.toyark.com/2026/11/06/hot-toys-eleventh-brother-figure-from-star-wars-maul-shadow-lord-602217",
+      "toyarkPostId": 602217
     },
     {
       "id": "ta-fab5e0c0dc34",
@@ -805,20 +563,6 @@
       "toyarkPostId": 602178
     },
     {
-      "id": "ta-c805cdc5336e",
-      "name": "Harley Quinn",
-      "company": "mcfarlane",
-      "line": "DC Multiverse Gold Label",
-      "year": 2026,
-      "variant": "DC Multiverse Mr. Freeze and",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/z-DC-Multiverse-Gold-Label-11.3.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/03/dc-multiverse-gold-label-mr-freeze-and-harley-quinn-602160",
-      "toyarkPostId": 602160
-    },
-    {
       "id": "ta-04d4f9d3d0fe",
       "name": "Spawn",
       "company": "mcfarlane",
@@ -831,110 +575,34 @@
       "aliases": [],
       "sourceUrl": "https://www.toyark.com/2026/11/02/mcfarlane-toys-vox-and-necroplasm-spawn-602102",
       "toyarkPostId": 602102
-    },
-    {
-      "id": "ta-788280fe8e31",
-      "name": "Val-Zod",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": 2026,
-      "variant": null,
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-DC-Multiverse-Pre-orders-10.29.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/30/new-dc-multiverse-pre-orders-val-zod-mary-shazam-star-sapphire-601959",
-      "toyarkPostId": 601959
-    },
-    {
-      "id": "ta-aa9a46f8efee",
-      "name": "Mary Shazam",
-      "company": "mcfarlane",
-      "line": "DC Multiverse",
-      "year": 2026,
-      "variant": null,
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/z-DC-Multiverse-Pre-orders-10.29.26.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/30/new-dc-multiverse-pre-orders-val-zod-mary-shazam-star-sapphire-601959",
-      "toyarkPostId": 601959
-    },
-    {
-      "id": "ta-54ddd874119ae4f0",
-      "name": "Wolverine",
-      "company": "hasbro",
-      "line": "Marvel Legends",
-      "year": 2027,
-      "variant": "Astonishing X-Men Marvel Legends Cyclops &",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/10/Astonishing-X-Men-Marvel-Legends-Cyclops-Wolverine-001.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/10/29/astonishing-x-men-marvel-legends-cyclops-wolverine-601912",
-      "toyarkPostId": 601912
     }
   ],
   "applySkipped": [
     {
-      "name": "Batman",
+      "name": "Clark Kent",
       "company": "mcfarlane",
       "reason": "already-in-oneshot",
       "oneshotIds": [
-        "ta-44f8dbdf9c40"
+        "ta-284cd47c6520"
       ],
-      "toyarkPostId": 601989
+      "toyarkPostId": 602178
     },
     {
-      "name": "Batman",
+      "name": "Harley Quinn",
       "company": "mcfarlane",
       "reason": "already-in-oneshot",
       "oneshotIds": [
-        "ta-44f8dbdf9c40"
+        "ta-c805cdc5336e"
       ],
-      "toyarkPostId": 601989
-    },
-    {
-      "name": "Batman",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-44f8dbdf9c40"
-      ],
-      "toyarkPostId": 601989
-    },
-    {
-      "name": "Batman",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-44f8dbdf9c40"
-      ],
-      "toyarkPostId": 601989
-    },
-    {
-      "name": "Bruce Wayne",
-      "company": "mcfarlane",
-      "reason": "already-in-oneshot",
-      "oneshotIds": [
-        "ta-f46d65127db3"
-      ],
-      "toyarkPostId": 601989
-    },
-    {
-      "name": "Sentinel",
-      "company": "hottoys",
-      "reason": "alias-owned",
-      "alias": "SMS004J",
-      "owner": "ta-46a7d4630d86"
+      "toyarkPostId": 602160
     }
   ],
   "applyStats": {
-    "accepted": 17,
-    "applied": 11,
-    "skippedApply": 6,
-    "aliasAdded": 17,
-    "withImage": 11,
+    "accepted": 9,
+    "applied": 7,
+    "skippedApply": 2,
+    "aliasAdded": 10,
+    "withImage": 7,
     "cap": 50,
     "blocker": null
   }
