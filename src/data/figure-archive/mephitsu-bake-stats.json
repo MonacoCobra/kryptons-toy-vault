@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-11-06T06:25:15.762246+00:00",
+  "bakedAt": "2026-11-07T06:25:12.794604+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-11-06T06:23:10.410938+00:00",
+      "bakedAt": "2026-11-07T06:23:08.636293+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 1007,
@@ -118,7 +118,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-06T06:23:19.149911+00:00",
+      "bakedAt": "2026-11-07T06:23:17.290966+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -233,7 +233,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-06T06:23:23.946804+00:00",
+      "bakedAt": "2026-11-07T06:23:22.235547+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -244,20 +244,20 @@
         "already": 248
       },
       "before": {
-        "total": 845,
-        "withSku": 676,
+        "total": 849,
+        "withSku": 680,
         "withGtin": 521,
-        "withListingPrimary": 155,
-        "withImage": 673,
+        "withListingPrimary": 159,
+        "withImage": 677,
         "emptySku": 169,
         "emptyImage": 172
       },
       "after": {
-        "total": 845,
-        "withSku": 676,
+        "total": 849,
+        "withSku": 680,
         "withGtin": 521,
-        "withListingPrimary": 155,
-        "withImage": 673,
+        "withListingPrimary": 159,
+        "withImage": 677,
         "emptySku": 169,
         "emptyImage": 172
       },
@@ -348,7 +348,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-06T06:24:19.739615+00:00",
+      "bakedAt": "2026-11-07T06:24:17.882698+00:00",
       "line": "mcfarlane",
       "dryRun": false,
       "mephitsuCount": 2220,
@@ -359,31 +359,31 @@
         "already": 969
       },
       "before": {
-        "total": 1766,
-        "withSku": 872,
-        "withGtin": 627,
-        "withListingPrimary": 245,
-        "withImage": 950,
-        "emptySku": 894,
-        "emptyImage": 816
-      },
-      "after": {
-        "total": 1766,
+        "total": 1788,
         "withSku": 873,
         "withGtin": 628,
         "withListingPrimary": 245,
         "withImage": 954,
-        "emptySku": 893,
-        "emptyImage": 812
+        "emptySku": 915,
+        "emptyImage": 834
+      },
+      "after": {
+        "total": 1788,
+        "withSku": 876,
+        "withGtin": 631,
+        "withListingPrimary": 245,
+        "withImage": 960,
+        "emptySku": 912,
+        "emptyImage": 828
       },
       "apply": {
-        "matched": 608,
-        "gtinAssigned": 1,
+        "matched": 618,
+        "gtinAssigned": 3,
         "gtinUpgraded": 0,
-        "imagesFilled": 4,
-        "imagesSkipped": 52,
+        "imagesFilled": 6,
+        "imagesSkipped": 59,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 77,
+        "skippedGtinConflict": 83,
         "blockedByAudit": 34,
         "reattachedAfterEnforce": 0,
         "samples": [
@@ -404,6 +404,15 @@
             "wave": "Gold Label McFarlane Store",
             "sku": "787926171594",
             "image": true
+          },
+          {
+            "score": 63.0,
+            "figureId": "mcf-w37-dark-flash-red-platinum-dark-multiverse-1",
+            "name": "Dark Flash",
+            "mephitsu": "Dark Flash",
+            "wave": "Red Platinum Walmart (US) and Gamestop (US)",
+            "sku": null,
+            "image": false
           },
           {
             "score": 62.5,
@@ -449,22 +458,23 @@
             "wave": "DC DIgital Edition",
             "sku": "787926173864",
             "image": true
-          },
-          {
-            "score": 60.0,
-            "figureId": "mcf-dcretro-w16-batman-7833",
-            "name": "Batman",
-            "mephitsu": "Batman",
-            "wave": "The New Batman Adventures Wave 1",
-            "sku": null,
-            "image": false
           }
         ],
         "photoVetoes": [
           {
+            "figureId": "mcf-w37-dark-flash-red-platinum-dark-multiverse-1",
+            "mephitsu": "Dark Flash — Red Platinum Walmart (US) and Gamestop (US) · 2025 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:d14mcf-flash-abs"
+          },
+          {
             "figureId": "mf8-mf-28",
             "mephitsu": "Mr. Freeze — Gold Label DeluxeTheatrical Edition GameStop · 2026 · DC Multiverse",
             "reason": "listing_gtin_owned_by:mcfdc-mrfreeze-bar"
+          },
+          {
+            "figureId": "mcf-w37-saturn-girl-red-platinum-dc-classic-17",
+            "mephitsu": "Saturn Girl — Red Platinum Gamestop · 2026 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mf10-mf-22"
           },
           {
             "figureId": "mcf2-cyborg-gold",
@@ -502,14 +512,29 @@
             "reason": "listing_gtin_owned_by:d14mcf-batman-gl-a"
           },
           {
+            "figureId": "mcf-w37-white-lantern-batman-red-platinum-batman-brightest-day-19",
+            "mephitsu": "White Lantern Batman — Red Platinum Gamestop (US), EB Games (Canada) · 2026 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcfdc-batman-platinium"
+          },
+          {
             "figureId": "mcf-w8-gl-gold",
             "mephitsu": "Green Lantern Hal Jordan — Gold Label Walmart · 2024 · DC Multiverse",
             "reason": "listing_gtin_owned_by:mcfc-gl-hal"
           },
           {
+            "figureId": "mcf-w37-batman-red-platinum-injustice-gang-14",
+            "mephitsu": "Batman, Injustice Gang — Red Platinum Gamestop (US), EB Games (Canada) · 2026 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:d14mcf-batman-inj"
+          },
+          {
             "figureId": "mcfdc-gl-lex-2025",
             "mephitsu": "Lex Luthor (Gold Label) — Target, Gold Label · 2022 · DC Multiverse",
             "reason": "listing_gtin_owned_by:d14mcf-lex-tas"
+          },
+          {
+            "figureId": "mcf-w37-sentinel-red-platinum-alan-scott-18",
+            "mephitsu": "Sentinel — Red Platinum Gamestop plus Walmart & Target · 2026 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mf10-mf-06"
           },
           {
             "figureId": "mcf-w36-batman-jokerized-dark-nights-death-metal-4",
@@ -535,6 +560,16 @@
             "figureId": "mcf-dte-w20-supergirl-krypto-gold-label-deluxe-theatrical-edition-superg-13411",
             "mephitsu": "Supergirl and Krypto — Gold Label Walmart (US) Theatrical Edition · 2026 · DC Multiverse",
             "reason": "listing_gtin_owned_by:mcf4-multiverse-supergirl-ciri"
+          },
+          {
+            "figureId": "mcf-w37-batman-batman-of-bethlehem-12",
+            "mephitsu": "Batman of Bethlehem — General · 2026 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mcfc-batman-blue"
+          },
+          {
+            "figureId": "mcf-w37-batman-world-s-finest-15",
+            "mephitsu": "Batman, World's Finest — DC Multiverse · 2026 · DC Multiverse",
+            "reason": "listing_gtin_owned_by:mf10-mf-41"
           },
           {
             "figureId": "mcf-vault-w20-azrael-batman-armor-batman-knightfall-14155",
@@ -600,7 +635,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-06T06:24:50.056586+00:00",
+      "bakedAt": "2026-11-07T06:24:47.391546+00:00",
       "line": "neca",
       "dryRun": false,
       "mephitsuCount": 1502,
@@ -722,7 +757,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-06T06:25:06.643373+00:00",
+      "bakedAt": "2026-11-07T06:25:03.551666+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -837,7 +872,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-06T06:25:07.767416+00:00",
+      "bakedAt": "2026-11-07T06:25:04.740807+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -952,7 +987,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-06T06:25:12.924663+00:00",
+      "bakedAt": "2026-11-07T06:25:09.898554+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -1067,7 +1102,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-06T06:25:15.756826+00:00",
+      "bakedAt": "2026-11-07T06:25:12.788176+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,
