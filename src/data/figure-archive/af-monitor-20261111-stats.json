@@ -1,0 +1,64 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-11-11",
+  "updatedAt": "2026-11-11T15:27:36Z",
+  "added": 6,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-11-11: EE hot-off-the-truck Nov 10 JoyToy Custodes Galatus Dreadnought DC400805, Constantin Valdor DC400942, Ultramarines Captain Master-Crafted Heavy Bolt Rifle DC3037355, Alpha Legion Lernaean Terminator Conversion Beam Cannon DC401284, Adepta Sororitas Battle Sister Superior Kassia DC3037387, plus Hasbro Spider-Man Brand New Day ActionVerse 4.5-Inch Hulk HSG3396. SKUs/UPCs/page images verified via EE product pages (WebFetch). Already-in-archive skips from the same EE truck/new-preorder pages: Boss Fight Hellboy W1 Lobster Johnson/Gruagach (HB0002/HB0003), Titan Series Hulk HSG2455, Classified #199 Hydro-Viper HSG2280, Super7 Tre Cool (RE-GDAY-11901 family), ThunderCats Deluxe Mumm-Ra Old Man (DE-THUN-11962), De La Soul Spacesuit and other Super7 restocks added Nov 9-10. EE newly-added Nov 10 Age of the Primes Wave 7 (Breakaway/Sky Guard/Cybershark/Starscream/Guzzle/Onyx Prime The Deceiver/Wild Rider/Alpha Bravo) skipped as equivalent to existing tfaotp-* stubs; McFarlane Avengers: Doomsday 1:10/1:6 posed statues rejected as non-AF. Shopify Super7 + Boss Fight + Good Smile US feeds checked (no additional new AF SKUs beyond what EE already listed). EE curl blocked by Cloudflare (403 Just a moment); listings and product pages via WebFetch. EE /s/action-figures/p listing timed out. BBTS SortOrder=New CategoryID=100 via WebFetch \u2014 page1 newest mix of pens/statues/model kits/Funko plus Takara ToyRise Ryujinmaru, Sentinel Fighting Armor Mighty Thor, Newage H77B Hanna / H78 Gittes / H79 Hooker / EX set / H36+H40, Planetoid Raiders (Wandering Planet Toys, unmapped), Frazetta ICON (unmapped), and the same AOTP wave. BBTS product-page IDs still unresolved in markdown (search lists title/price but no /product/<slug>-<id> for those newest AF preorders) \u2014 held. Carryover held: MAFEX No.321 Superman Renewal, Figuarts Anakin Classic Ver, Super7 Tiger Force Jinx, TBLeague Kelsang (no BBTS ids); EE SW ActionVerse Luke/R2/Mando2/Grogu2 (prior logo-only images, not re-verified today).",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 6,
+    "ee_candidates": 6,
+    "bbts_candidates": 0,
+    "added": 6,
+    "skipped_dupes": 0,
+    "rejected_non_af": 0,
+    "unmapped_company": 0,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 31555,
+  "oneshotAfter": 31561,
+  "ee_added": 6,
+  "bbts_added": 0,
+  "samples": [
+    {
+      "sku": "DC400805",
+      "name": "Joy Toy Warhammer The Horus Heresy Custodes Galatus Dreadnought 1:18 Scale Action Figure",
+      "id": "afmon-joytoy-joy-toy-warhammer-the-horus-heresy-custodes-galatus-dreadnought-1-18-scale-a-dc400805",
+      "source": "ee"
+    },
+    {
+      "sku": "DC400942",
+      "name": "Joy Toy Warhammer The Horus Heresy Custodes Constantin Valdor 1:18 Scale Action Figure",
+      "id": "afmon-joytoy-joy-toy-warhammer-the-horus-heresy-custodes-constantin-valdor-1-18-scale-act-dc400942",
+      "source": "ee"
+    },
+    {
+      "sku": "DC3037355",
+      "name": "Joy Toy Warhammer 40,000 Ultramarines Captain with Master-Crafted Heavy Bolt Rifle 1:18 Scale Action Figure",
+      "id": "afmon-joytoy-joy-toy-warhammer-40-000-ultramarines-captain-with-master-crafted-heavy-bol-dc3037355",
+      "source": "ee"
+    },
+    {
+      "sku": "DC401284",
+      "name": "Joy Toy Warhammer The Horus Heresy Alpha Legion Lernaean Terminator with Conversion Beam Cannon 1:18 Scale Action Figure",
+      "id": "afmon-joytoy-joy-toy-warhammer-the-horus-heresy-alpha-legion-lernaean-terminator-with-con-dc401284",
+      "source": "ee"
+    },
+    {
+      "sku": "DC3037387",
+      "name": "Joy Toy Warhammer 40,000 Adepta Sororitas Battle Sister Superior Kassia 1:18 Scale Action Figure",
+      "id": "afmon-joytoy-joy-toy-warhammer-40-000-adepta-sororitas-battle-sister-superior-kassia-1-1-dc3037387",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG3396",
+      "name": "Spider-Man: Brand New Day ActionVerse 4 1/2-Inch Hulk Action Figure",
+      "id": "afmon-hasbro-spider-man-brand-new-day-actionverse-4-1-2-inch-hulk-action-figure-hsg3396",
+      "source": "ee"
+    }
+  ]
+}
