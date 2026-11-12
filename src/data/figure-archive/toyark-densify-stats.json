@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-11-10T18:55:59Z",
+  "finishedAt": "2026-11-12T19:02:09Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 4,
-  "applied": 4,
+  "acceptedCandidates": 2,
+  "applied": 2,
   "skippedApply": 0,
-  "rejectedRows": 14,
-  "withImage": 4,
-  "aliasAdded": 6,
+  "rejectedRows": 18,
+  "withImage": 2,
+  "aliasAdded": 2,
   "byCompany": {
     "hasbro": {
       "accepted": 0,
@@ -27,8 +27,8 @@
       "rejected": 0
     },
     "super7": {
-      "accepted": 4,
-      "rejected": 1
+      "accepted": 2,
+      "rejected": 2
     },
     "hottoys": {
       "accepted": 0,
@@ -60,47 +60,18 @@
     }
   },
   "byRejectReason": {
+    "news-event-post": 1,
     "sponsor-newsletter": 3,
-    "company-not-allowlisted": 5,
-    "company-unknown": 2,
-    "no-new-product-identity": 3,
-    "already-in-oneshot": 1
+    "company-not-allowlisted": 8,
+    "no-new-product-identity": 2,
+    "already-in-oneshot": 3,
+    "company-unknown": 1
   },
   "appliedIds": [
-    "ta-6db89d2f1c60",
-    "ta-11b7a49d658c",
     "ta-c5ea1d375537",
     "ta-cb90400c9590"
   ],
   "appliedSample": [
-    {
-      "id": "ta-6db89d2f1c60",
-      "name": "Godzilla",
-      "company": "super7",
-      "line": "Super7 ReAction",
-      "year": 2026,
-      "variant": null,
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Super7-Godzilla-Ultimates-Minus-Zero-Godzilla-006.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/09/godzilla-minus-zero-super7-godzilla-and-king-ghidorah-ultimates-reaction-and-super-kaiju-figures-602287",
-      "toyarkPostId": 602287
-    },
-    {
-      "id": "ta-11b7a49d658c",
-      "name": "King Ghidorah",
-      "company": "super7",
-      "line": "Super7 ULTIMATES!",
-      "year": 2026,
-      "variant": "Ultimates",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Super7-Godzilla-Ultimates-Minus-Zero-Godzilla-006.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/09/godzilla-minus-zero-super7-godzilla-and-king-ghidorah-ultimates-reaction-and-super-kaiju-figures-602287",
-      "toyarkPostId": 602287
-    },
     {
       "id": "ta-c5ea1d375537",
       "name": "ReAction",
@@ -131,7 +102,7 @@
     }
   ],
   "skippedSample": [],
-  "archiveSize": 31413,
+  "archiveSize": 31642,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"
