@@ -1,9 +1,9 @@
 {
-  "bakedAt": "2026-11-07T06:25:12.794604+00:00",
+  "bakedAt": "2026-11-12T06:22:48.762528+00:00",
   "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-11-07T06:23:08.636293+00:00",
+      "bakedAt": "2026-11-12T06:20:39.063022+00:00",
       "line": "black-series",
       "dryRun": false,
       "mephitsuCount": 1007,
@@ -14,29 +14,29 @@
         "already": 490
       },
       "before": {
-        "total": 485,
+        "total": 629,
         "withSku": 413,
         "withGtin": 256,
         "withListingPrimary": 157,
         "withImage": 417,
-        "emptySku": 72,
-        "emptyImage": 68
+        "emptySku": 216,
+        "emptyImage": 212
       },
       "after": {
-        "total": 485,
-        "withSku": 413,
-        "withGtin": 256,
+        "total": 629,
+        "withSku": 480,
+        "withGtin": 323,
         "withListingPrimary": 157,
-        "withImage": 417,
-        "emptySku": 72,
-        "emptyImage": 68
+        "withImage": 515,
+        "emptySku": 149,
+        "emptyImage": 114
       },
       "apply": {
-        "matched": 209,
-        "gtinAssigned": 0,
+        "matched": 315,
+        "gtinAssigned": 67,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 2,
+        "imagesFilled": 98,
+        "imagesSkipped": 10,
         "aliasesAttached": 0,
         "skippedGtinConflict": 27,
         "blockedByAudit": 0,
@@ -58,6 +58,15 @@
             "mephitsu": "Fennec Shand",
             "wave": "Galaxy Collection Wave 6",
             "sku": "HAS828050",
+            "image": true
+          },
+          {
+            "score": 65.5,
+            "figureId": "hasbro-bs6-w39-at-at-driver-2020",
+            "name": "AT-AT Driver",
+            "mephitsu": "AT-AT Driver",
+            "wave": "40th Anniversary Wave 3",
+            "sku": null,
             "image": true
           },
           {
@@ -104,21 +113,44 @@
             "wave": "25",
             "sku": "SW-ANAKINSKYWALKERPADAWAN",
             "image": true
+          }
+        ],
+        "photoVetoes": [
+          {
+            "figureId": "hasbro-bs6-w39-imperial-praetorian-guard-2025",
+            "mephitsu": "Imperial Praetorian Guard — Galaxy Collection Wave 21 · 2025 · The Mandalorian",
+            "reason": "listing_code_owned_by:d14bs-mando-s3"
           },
           {
-            "score": 63.0,
-            "figureId": "d14bs-bs-jabba",
-            "name": "Jabba the Hutt",
-            "mephitsu": "Jabba the Hutt",
-            "wave": "Shop Disney / Hasbro Pulse 40th Anniversary  Deluxe",
-            "sku": "HAS993285",
-            "image": true
+            "figureId": "hasbro-bs6-w39-new-republic-security-droid-2023",
+            "mephitsu": "New Republic Security Droid — Galaxy Collection Wave 8 · 2022 · The Mandalorian",
+            "reason": "listing_code_owned_by:d14bs-mando-s3"
+          },
+          {
+            "figureId": "hasbro-bs6-w39-ned-b-deluxe-2023",
+            "mephitsu": "NED-B — Galaxy Collection Wave 8 · 2022 · Obi-Wan Kenobi",
+            "reason": "listing_code_owned_by:bs4-obiwan-cw"
+          },
+          {
+            "figureId": "hasbro-bs6-w39-plo-koon-2020",
+            "mephitsu": "Plo Koon — 25 · 2020 · Attack of the Clones",
+            "reason": "listing_code_owned_by:d14bs-mando-s3"
+          },
+          {
+            "figureId": "hasbro-bs6-w39-general-leia-2017",
+            "mephitsu": "General Leia Organa — 13 · 2017 · The Last Jedi",
+            "reason": "listing_code_owned_by:bs6-bs-leia-endor"
+          },
+          {
+            "figureId": "hasbro-bs6-w39-cobb-vanth-deluxe-2022",
+            "mephitsu": "Cobb Vanth — Target IUS) / Fan Channel · 2023 · The Book of Boba Fett",
+            "reason": "listing_code_owned_by:d14bs-mando-s3"
           }
         ]
       }
     },
     {
-      "bakedAt": "2026-11-07T06:23:17.290966+00:00",
+      "bakedAt": "2026-11-12T06:20:48.059408+00:00",
       "line": "gi-joe-classified",
       "dryRun": false,
       "mephitsuCount": 318,
@@ -233,7 +265,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-07T06:23:22.235547+00:00",
+      "bakedAt": "2026-11-12T06:20:53.051054+00:00",
       "line": "transformers",
       "dryRun": false,
       "mephitsuCount": 280,
@@ -348,7 +380,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-07T06:24:17.882698+00:00",
+      "bakedAt": "2026-11-12T06:21:52.110736+00:00",
       "line": "mcfarlane",
       "dryRun": false,
       "mephitsuCount": 2220,
@@ -359,28 +391,28 @@
         "already": 969
       },
       "before": {
-        "total": 1788,
-        "withSku": 873,
-        "withGtin": 628,
-        "withListingPrimary": 245,
-        "withImage": 954,
-        "emptySku": 915,
-        "emptyImage": 834
+        "total": 1789,
+        "withSku": 877,
+        "withGtin": 631,
+        "withListingPrimary": 246,
+        "withImage": 961,
+        "emptySku": 912,
+        "emptyImage": 828
       },
       "after": {
-        "total": 1788,
-        "withSku": 876,
+        "total": 1789,
+        "withSku": 877,
         "withGtin": 631,
-        "withListingPrimary": 245,
-        "withImage": 960,
+        "withListingPrimary": 246,
+        "withImage": 961,
         "emptySku": 912,
         "emptyImage": 828
       },
       "apply": {
-        "matched": 618,
-        "gtinAssigned": 3,
+        "matched": 619,
+        "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 6,
+        "imagesFilled": 0,
         "imagesSkipped": 59,
         "aliasesAttached": 0,
         "skippedGtinConflict": 83,
@@ -635,7 +667,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-07T06:24:47.391546+00:00",
+      "bakedAt": "2026-11-12T06:22:22.334296+00:00",
       "line": "neca",
       "dryRun": false,
       "mephitsuCount": 1502,
@@ -757,7 +789,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-07T06:25:03.551666+00:00",
+      "bakedAt": "2026-11-12T06:22:39.147911+00:00",
       "line": "super7",
       "dryRun": false,
       "mephitsuCount": 520,
@@ -768,21 +800,21 @@
         "already": 68
       },
       "before": {
-        "total": 2851,
-        "withSku": 2427,
+        "total": 2862,
+        "withSku": 2436,
         "withGtin": 130,
-        "withListingPrimary": 2297,
-        "withImage": 2567,
-        "emptySku": 424,
+        "withListingPrimary": 2306,
+        "withImage": 2578,
+        "emptySku": 426,
         "emptyImage": 284
       },
       "after": {
-        "total": 2851,
-        "withSku": 2427,
+        "total": 2862,
+        "withSku": 2436,
         "withGtin": 130,
-        "withListingPrimary": 2297,
-        "withImage": 2567,
-        "emptySku": 424,
+        "withListingPrimary": 2306,
+        "withImage": 2578,
+        "emptySku": 426,
         "emptyImage": 284
       },
       "apply": {
@@ -872,7 +904,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-07T06:25:04.740807+00:00",
+      "bakedAt": "2026-11-12T06:22:40.386317+00:00",
       "line": "diamond-select",
       "dryRun": false,
       "mephitsuCount": 597,
@@ -987,7 +1019,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-07T06:25:09.898554+00:00",
+      "bakedAt": "2026-11-12T06:22:45.730348+00:00",
       "line": "power-rangers",
       "dryRun": false,
       "mephitsuCount": 188,
@@ -1102,7 +1134,7 @@
       }
     },
     {
-      "bakedAt": "2026-11-07T06:25:12.788176+00:00",
+      "bakedAt": "2026-11-12T06:22:48.755452+00:00",
       "line": "indiana-jones",
       "dryRun": false,
       "mephitsuCount": 28,
