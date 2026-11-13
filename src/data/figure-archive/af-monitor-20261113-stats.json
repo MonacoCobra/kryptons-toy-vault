@@ -1,0 +1,64 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-11-13",
+  "updatedAt": "2026-11-13T15:22:41Z",
+  "added": 6,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-11-13: EE hot-off-the-truck Nov 12 added JoyToy Space Wolves Ragnar Blackmane DC3037293 and Horus Heresy Blood Angels Dominion Zephon DC401154 (SKUs/UPCs/page images verified via EE product pages; WebFetch). Newly-added Nov 12 Bandai preorders ingested via BBTS product pages (official images) with EE SKU/UPC aliases: Code Geass 20th S.H.Figuarts C.C. BBTS-201930 (= BLFBAS84085 / 4580886840854) and Lelouch -Zero- BBTS-201929 (= BLFBAS84084 / 4580886840847); Ultraseven S.H.Figuarts Shinkocchou Seihou BBTS-201927 (= BLFBAS84065 / 4580886840656); Kamen Rider Zero-One Metal Build Ark-One BBTS-201921 (= BLFBAS84030). Equivalent skips (aliased, not re-ingested): McFarlane DC Multiverse Deluxe Theatrical Wave 6 Batman Returns Batman Unmasked MF17779 already on BBTS-200093 (added UPC 787926177794); DC Multiverse Batman Wave 6 Long Halloween Batman MF18221 treated as equivalent to existing d14mcf-batman-long (2023 Multiverse Long Halloween Batman). Other hot-off-the-truck AF already in catalog: MK Klassic Wave 6 Kung Lao MF11832 / Shang Tsung MF11841, GoW McFarlane Gaming Edition Kratos/Zeus (BBTS-199737/199736), Elite #18 Kratos, Theatrical Penguin, Captain Spaulding, Black Series Gar Saxon, One:12 Daredevil (yesterday), Count Chocula/Bjorn (yesterday). EE King Joe 60th Figuarts BLFBAS84219 held (product page had no official figure photo, only EE social logo; BBTS product id not resolved). SW Black Series 50th / Vintage Collection ANH 2027 preorders held (individual EE/BBTS product-page SKUs/images not resolved; case HSG4460A skipped). JoyToy Salamanders Saturnine/MKII/Praetor and Night Lords Contemptor, So-Do Kabuto sets, Robot Spirits Martial Action Shining/Bolt Gundam, Souchaku Henshin Kuuga forms, Chogokin Gashapon Station, TMNT Purple Dragon Cycle with Raphael, Super7 ReAction+ Creature Clear Blue exclusive, Absolute Batman Elite #16, Jakks WoN Wave 53, and other BBTS newest AF preorders without a verified /product/<slug>-<id> or EE item number remain held. Super7 Tiger Force Jinx OR-GIJO-12706 still held (no BBTS/EE retailer product id). Shopify Super7 + Boss Fight + Good Smile US feeds checked (GSC novelties were nendoroids/scale/plush/model kits, not AF; BFS Hellboy Wv2 and Super7 De La Soul spacesuits already in catalog). EE curl blocked by Cloudflare (403 Just a moment); listings and product pages via WebFetch. EE media CDN image bytes also 403 from this box; URLs taken from official product-page og images. BBTS SortOrder=New ProductType=43624 and CategoryID=100 via WebFetch. Carryover held: MAFEX No.321 Superman (Hush Ver.) Renewal, Figuarts Anakin Classic Ver, TBLeague Kelsang (no BBTS ids); ToyRise Ryujinmaru (still no product-page id); EE SW ActionVerse Luke/R2/Mando2/Grogu2 (prior logo-only images, not re-verified today); NECA Chucky Series 2 Good Guy NC42974 (blind box).",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 6,
+    "ee_candidates": 2,
+    "bbts_candidates": 4,
+    "added": 6,
+    "skipped_dupes": 0,
+    "rejected_non_af": 0,
+    "unmapped_company": 0,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 31740,
+  "oneshotAfter": 31746,
+  "ee_added": 2,
+  "bbts_added": 4,
+  "samples": [
+    {
+      "sku": "DC3037293",
+      "name": "Joy Toy Warhammer 40,000 Space Wolves Ragnar Blackmane 1:18 Scale Action Figure",
+      "id": "afmon-joytoy-joy-toy-warhammer-40-000-space-wolves-ragnar-blackmane-1-18-scale-action-fi-dc3037293",
+      "source": "ee"
+    },
+    {
+      "sku": "DC401154",
+      "name": "Joy Toy Warhammer The Horus Heresy Blood Angels Dominion Zephon 1:18 Scale Action Figure",
+      "id": "afmon-joytoy-joy-toy-warhammer-the-horus-heresy-blood-angels-dominion-zephon-1-18-scale-a-dc401154",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-201930",
+      "name": "Code Geass: Lelouch of the Rebellion 20th Anniversary S.H.Figuarts C.C. Action Figure",
+      "id": "afmon-bandai-code-geass-lelouch-of-the-rebellion-20th-anniversary-s-h-figuarts-c-c-act-bbts-201930",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-201929",
+      "name": "Code Geass: Lelouch of the Rebellion 20th Anniversary S.H.Figuarts Lelouch -Zero- Action Figure",
+      "id": "afmon-bandai-code-geass-lelouch-of-the-rebellion-20th-anniversary-s-h-figuarts-lelouch-bbts-201929",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-201927",
+      "name": "Ultraseven S.H.Figuarts -Shinkocchou Seihou- Ultraseven Action Figure",
+      "id": "afmon-bandai-ultraseven-s-h-figuarts-shinkocchou-seihou-ultraseven-action-figure-bbts-201927",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-201921",
+      "name": "Kamen Rider Zero-One Metal Build Kamen Rider Ark-One Action Figure",
+      "id": "afmon-bandai-kamen-rider-zero-one-metal-build-kamen-rider-ark-one-action-figure-bbts-201921",
+      "source": "bbts"
+    }
+  ]
+}
