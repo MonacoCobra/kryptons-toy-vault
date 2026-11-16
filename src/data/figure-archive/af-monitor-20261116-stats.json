@@ -1,0 +1,94 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-11-16",
+  "updatedAt": "2026-11-16T15:23:41Z",
+  "added": 11,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-11-16: EE hot-off-the-truck Nov 13 + newly-added and BBTS SortOrder=New ProductType=43624 via WebFetch (curl 403 Cloudflare on both). Added: Black Series The Mandalorian & Grogu Colonel Ward HSG2574 (UPC 5010996365903; EE official og image); Boss Fight Epic H.A.C.K.S. Therakles: Lion of Erebus BFEHD001 (= EHD001 / BBTS-201901 / UPC 814800026043; EE image; also on BFS Shopify); JoyToy Horus Heresy Night Lords Contemptor DC405497, Salamanders MKII Veteran Sergeant DC405381, MKII Tactical Veteran 1 DC405404, MKII Tactical Veteran 2 DC405398, Saturnine Terminator 2 DC405626 (EE images/UPCs); Salamanders Legion Praetor BBTS-201906 (= DC405602 / UPC 6927054405602) and Saturnine Terminator 1 BBTS-201907 (= DC405619 / UPC 6927054405619) ingested via BBTS product-page images because EE pages had only the EE social logo; S.H.MonsterArts King Ghidorah 2026 BLFBAS84150 (= BBTS-201960 / UPC 4580886841509); Mattel Toy Story 5 Ultimate Action Buzz with Sound MTJKL91 (UPC 194735352494; distinct from existing BBTS-197175 Ultimate Action Buzz). Equivalent skips (aliased, not re-ingested): Black Series Imperial Remnant Stormtrooper HSG2573 / G2573 already aliased to bsc-stormtrooper; DC Retro Wave 17 Super Friends The Atom MF18063 already on UPC 787926180633 (existing Super Friends Wave 7 Atom; added MF18063 alias). Other hot-off-the-truck / newly-added AF already in catalog: Titan Hero Deadpool HSE2933, MK Klassic Wave 6 Kung Lao/Shang Tsung, Theatrical Batman Unmasked / Penguin, Long Halloween Batman, GoW Kratos/Zeus and Elite #18 Kratos, Captain Spaulding, Black Series Gar Saxon, JoyToy Ragnar/Zephon (Fri), Figuarts C.C./Lelouch/Ultraseven and Metal Build Ark-One (Fri), One:12 Daredevil and Incredible Hulk ReRun, Figuarts Inosuke reissue (existing Figuarts Inosuke). Held: EE/BBTS Tales of the TMNT Mix N Match carton 4-pack PL84236 (individually carded figures in a white carton; only Donatello PL83802 resolved as a single, siblings not all verified); JoyToy Ultramarines Terminator Captain Severus Agemman (BBTS listing seen, no verified /product/<slug>-<id> or EE item number); S.H.Figuarts King Joe 60th BLFBAS84219 still no official figure photo check this run beyond prior logo-only hold; Super7 Tiger Force Jinx OR-GIJO-12706 still no BBTS/EE retailer product id; SW Black Series 50th / Vintage Collection ANH 2027 preorders and Death Star Escape set still not ingested as individual verified SKU/image rows (cases skipped); So-Do Kabuto sets, Robot Spirits Martial Action Shining/Bolt Gundam, Absolute Batman Elite #16, ToyRise Ryujinmaru, Jakks WoN Wave 53 set of 5, Fall Guys, Four Horsemen LegionsCon exclusives, Flame Toys Kuro Kara Kuri Dygenguar, Hot Toys TMS196 Asajj Ventress, Valaverse Blackbeard Mail-Away, Storm Biscuit Oliva, Sentinel Fighting Armor Mighty Thor, Frazetta ICON, and unmapped boutique (Eiifox, Idle Rough, CHENJI Craft, Keepgoing, Fox Forge, Wandering Planet, Zombie Sailor's Silent Hill $40 line) remain held pending verified retailer product ids and/or company mapping. Shopify Super7 + Boss Fight + Good Smile US feeds checked (Therakles EHD001 folded into EE/BBTS row; Super7 De La Soul spacesuits / Toho Minus Zero singles already in catalog; GSC novelties were nendoroids). Carryover held: MAFEX No.321 Superman (Hush Ver.) Renewal, Figuarts Anakin Classic Ver, TBLeague Kelsang (no BBTS ids); EE SW ActionVerse Luke/R2/Mando2/Grogu2 (prior logo-only images, not re-verified today); NECA Chucky Series 2 Good Guy NC42974 (blind box).",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 11,
+    "ee_candidates": 9,
+    "bbts_candidates": 2,
+    "added": 11,
+    "skipped_dupes": 0,
+    "rejected_non_af": 0,
+    "unmapped_company": 0,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0
+  },
+  "oneshotBefore": 32052,
+  "oneshotAfter": 32063,
+  "ee_added": 9,
+  "bbts_added": 2,
+  "samples": [
+    {
+      "sku": "HSG2574",
+      "name": "Star Wars The Black Series The Mandalorian & Grogu Colonal Ward 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-black-series-the-mandalorian-grogu-colonal-ward-6-inch-action-f-hsg2574",
+      "source": "ee"
+    },
+    {
+      "sku": "BFEHD001",
+      "name": "EPIC H.A.C.K.S Deluxe Therakles: Lion of Erebus 6-Inch Action Figure",
+      "id": "afmon-bossfight-epic-h-a-c-k-s-deluxe-therakles-lion-of-erebus-6-inch-action-figure-bfehd001",
+      "source": "ee"
+    },
+    {
+      "sku": "DC405497",
+      "name": "Joy Toy Warhammer The Horus Heresy Night Lords Contemptor Dreadnought 1:18 Scale Action Figure",
+      "id": "afmon-joytoy-joy-toy-warhammer-the-horus-heresy-night-lords-contemptor-dreadnought-1-18-s-dc405497",
+      "source": "ee"
+    },
+    {
+      "sku": "DC405381",
+      "name": "Joy Toy Warhammer The Horus Heresy Salamanders MKII Veteran Sergeant with Pistol & Claw 1:18 Scale Action Figure",
+      "id": "afmon-joytoy-joy-toy-warhammer-the-horus-heresy-salamanders-mkii-veteran-sergeant-with-pi-dc405381",
+      "source": "ee"
+    },
+    {
+      "sku": "DC405404",
+      "name": "Joy Toy Warhammer The Horus Heresy Salamanders MKII Tactical Veteran 1 1:18 Scale Action Figure",
+      "id": "afmon-joytoy-joy-toy-warhammer-the-horus-heresy-salamanders-mkii-tactical-veteran-1-1-18-dc405404",
+      "source": "ee"
+    },
+    {
+      "sku": "DC405398",
+      "name": "Joy Toy Warhammer The Horus Heresy Salamanders MKII Tactical Veteran 2 1:18 Scale Action Figure",
+      "id": "afmon-joytoy-joy-toy-warhammer-the-horus-heresy-salamanders-mkii-tactical-veteran-2-1-18-dc405398",
+      "source": "ee"
+    },
+    {
+      "sku": "DC405626",
+      "name": "Joy Toy Warhammer The Horus Heresy Salamanders Saturnine Terminator 2 1:18 Scale Action Figure",
+      "id": "afmon-joytoy-joy-toy-warhammer-the-horus-heresy-salamanders-saturnine-terminator-2-1-18-s-dc405626",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84150",
+      "name": "Godzilla King Ghidorah 2026 S.H.MonsterArts Action Figure",
+      "id": "afmon-bandai-godzilla-king-ghidorah-2026-s-h-monsterarts-action-figure-blfbas84150",
+      "source": "ee"
+    },
+    {
+      "sku": "MTJKL91",
+      "name": "Toy Story 5 Buzz Lightyear Ultimate Action Figure with Sound",
+      "id": "afmon-mattel-toy-story-5-buzz-lightyear-ultimate-action-figure-with-sound-mtjkl91",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-201906",
+      "name": "Warhammer: The Horus Heresy Salamanders Legion Praetor in Saturnine Terminator Armour 1/18 Scale Action Figure",
+      "id": "afmon-joytoy-warhammer-the-horus-heresy-salamanders-legion-praetor-in-saturnine-termin-bbts-201906",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-201907",
+      "name": "Warhammer: The Horus Heresy Salamanders Saturnine Terminator 1 1/18 Scale Action Figure",
+      "id": "afmon-joytoy-warhammer-the-horus-heresy-salamanders-saturnine-terminator-1-1-18-scale-bbts-201907",
+      "source": "bbts"
+    }
+  ]
+}
