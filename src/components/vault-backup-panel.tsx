@@ -1,18 +1,22 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Copy, Download, Upload } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import {
+  BOOKMARKLET_NAME,
   OLD_SITE_URL,
-  VAULT_EXPORT_SNIPPET,
+  SHORT_VAULT_BOOKMARKLET,
+  VAULT_CONSOLE_LOADER,
   backupFilename,
   buildBackupFromState,
+  clearHandoffBackup,
   countVault,
+  downloadJsonFile,
   formatVaultCounts,
   mergeVault,
-  downloadJsonFile,
   parseVaultBackup,
   pickVaultState,
+  readHandoffBackup,
   replaceVault,
   stringifyBackup,
   vaultExportBookmarklet,
@@ -107,6 +111,32 @@ export function VaultBackupPanel() {
     return parseVaultBackup(trimmed);
   }, [raw]);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("handoff") !== "1") return;
+    let cancelled = false;
+    void (async () => {
+      const rawBackup = await readHandoffBackup();
+      if (cancelled) return;
+      if (!rawBackup) {
+        toast.error("The transfer was lost. Open the old site in Chrome and use the bookmark again.");
+        return;
+      }
+      setRaw(rawBackup);
+      setFileName("Transferred from the old site");
+      const result = parseVaultBackup(rawBackup);
+      if (result.ok) toast.success(`Ready to import ${formatVaultCounts(result.counts)}.`);
+      else toast.error(result.error);
+      const url = new URL(window.location.href);
+      url.searchParams.delete("handoff");
+      window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   async function onFile(file?: File) {
     if (!file) return;
     const name = file.name.toLowerCase();
@@ -126,16 +156,16 @@ export function VaultBackupPanel() {
     }
   }
 
-  async function copySnippet() {
-    const ok = await copyText(VAULT_EXPORT_SNIPPET);
-    if (ok) toast.success("Export snippet copied. Paste it in the console on the old site.");
-    else toast.error("Could not copy. Select the snippet and copy it yourself.");
-  }
-
   async function copyBookmarklet() {
     const ok = await copyText(vaultExportBookmarklet());
-    if (ok) toast.success("Bookmarklet copied. On a phone, use it as the bookmark address.");
-    else toast.error("Could not copy the bookmarklet.");
+    if (ok) toast.success("Copied. Paste it into the bookmark address field.");
+    else toast.error("Could not copy. Select the short bookmark text and copy it yourself.");
+  }
+
+  async function copyConsoleLoader() {
+    const ok = await copyText(VAULT_CONSOLE_LOADER);
+    if (ok) toast.success("Copied. Paste it in the console on the old site and press Enter.");
+    else toast.error("Could not copy. Select the console line and copy it yourself.");
   }
 
   function runImport(mode: Mode) {
@@ -147,6 +177,7 @@ export function VaultBackupPanel() {
     setBusy(true);
     try {
       applyVault(parsed.backup.state, mode);
+      void clearHandoffBackup();
       const next = countVault(currentVaultFromStore());
       toast.success(
         mode === "replace"
@@ -167,15 +198,34 @@ export function VaultBackupPanel() {
       >
         <h2 className="font-display text-lg tracking-wide uppercase">Move your collection from the old site</h2>
         <p className="mt-2 text-sm text-muted">
-          Your saved collection stays in this browser, on this website address. The new site is a
-          different address, so it starts empty until you bring a backup over. The old site can't be
-          updated, so you'll run a short export there, then come back here to import it.
+          Your collection is saved in this browser, on this website address. If it only shows on
+          your phone, you need to export it from that phone. The bookmark below is short so it will
+          fit in the bookmark address field. After you use it on the old site, this page should open
+          with your collection already loaded — no file or paste required.
         </p>
 
-        <h3 className="mt-5 text-sm font-medium">1. Export on the old site</h3>
+        <div className="mt-4 flex flex-wrap gap-2">
+          <Button type="button" onClick={() => void copyBookmarklet()}>
+            <Copy /> Copy the short bookmark
+          </Button>
+        </div>
+        <label className="mt-3 block text-xs font-medium text-muted" htmlFor="short-bookmarklet">
+          Bookmark address ({SHORT_VAULT_BOOKMARKLET.length} characters). Name it “{BOOKMARKLET_NAME}”.
+        </label>
+        <textarea
+          id="short-bookmarklet"
+          readOnly
+          value={SHORT_VAULT_BOOKMARKLET}
+          rows={3}
+          className="mt-1 w-full resize-y rounded-md bg-surface px-3 py-2 font-mono text-xs text-fg shadow-[0_0_0_1px_rgba(214,230,255,0.12)]"
+          onFocus={(e) => e.currentTarget.select()}
+        />
+
+        <h3 className="mt-5 text-sm font-medium">On an Android phone, in Chrome</h3>
         <ol className="mt-2 list-decimal space-y-2 pl-5 text-sm text-muted">
           <li>
-            On the same phone or computer where you already use the vault, open{" "}
+            Open Chrome — not the installed app window. The bookmark will not run inside the app,
+            but Chrome uses the same saved collection. In Chrome, go to{" "}
             <a
               href={OLD_SITE_URL}
               target="_blank"
@@ -183,36 +233,36 @@ export function VaultBackupPanel() {
               className="text-fg underline-offset-2 hover:underline"
             >
               kryptons-toy-vault.grok.me
-            </a>
-            . Use the same browser (and the app icon, if that's how you usually open it).
+            </a>{" "}
+            and confirm your collection is there.
+          </li>
+          <li>Bookmark any page (the star or the menu item Add bookmark is fine).</li>
+          <li>
+            Open your bookmarks, edit that bookmark, and paste the short bookmark you copied into
+            the URL or address field. Name it {BOOKMARKLET_NAME}. Save it.
           </li>
           <li>
-            <span className="text-fg">On a computer:</span> press F12 or Cmd+Option+I, click Console,
-            paste the export snippet, and press Enter. A file should download, and a box will appear
-            with the backup text.
-          </li>
-          <li>
-            <span className="text-fg">On a phone:</span> bookmarklets are the practical path, because
-            phones hide the console. Copy the bookmarklet, bookmark the old site, then edit that
-            bookmark and replace the address with the copied bookmarklet. Open the bookmark while
-            you're on the old site. If that feels fiddly, do the computer steps once and send the
-            file to your phone, or save it to your files and upload it here.
+            Go back to the old site, tap the address bar, type {BOOKMARKLET_NAME}, and tap it in the
+            suggestions. You should be sent here with your collection ready to import.
           </li>
         </ol>
-        <div className="mt-4 flex flex-wrap gap-2">
-          <Button type="button" variant="secondary" onClick={() => void copySnippet()}>
-            <Copy /> Copy export snippet
-          </Button>
-          <Button type="button" variant="secondary" onClick={() => void copyBookmarklet()}>
-            <Copy /> Copy phone bookmarklet
-          </Button>
-        </div>
-        <details className="mt-3 rounded-md bg-surface p-3">
-          <summary className="cursor-pointer text-sm font-medium">Show the export snippet</summary>
+
+        <details className="mt-4 rounded-md bg-surface p-3">
+          <summary className="cursor-pointer text-sm font-medium">On a computer instead</summary>
+          <p className="mt-2 text-sm text-muted">
+            Open the old site in the same browser where the collection shows, press F12 (or
+            Cmd+Option+I), click Console, paste the line below, and press Enter. You will be sent to
+            this page with the backup already loaded.
+          </p>
+          <div className="mt-3">
+            <Button type="button" variant="secondary" size="sm" onClick={() => void copyConsoleLoader()}>
+              <Copy /> Copy the console line
+            </Button>
+          </div>
           <textarea
             readOnly
-            value={VAULT_EXPORT_SNIPPET}
-            className="mt-3 h-40 w-full resize-y rounded-md bg-bg px-3 py-2 font-mono text-xs text-fg"
+            value={VAULT_CONSOLE_LOADER}
+            className="mt-3 h-20 w-full resize-y rounded-md bg-bg px-3 py-2 font-mono text-xs text-fg"
             onFocus={(e) => e.currentTarget.select()}
           />
         </details>

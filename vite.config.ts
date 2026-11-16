@@ -209,6 +209,45 @@ function authPopupPlugin(): Plugin {
   };
 }
 
+
+/**
+ * Serve `/x.js` in dev with the same body production middleware uses.
+ * Nitro middleware only runs for build/preview.
+ */
+function vaultExportDevPlugin(): Plugin {
+  return {
+    name: "app-builder:vault-export-script",
+    apply: "serve",
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        const pathOnly = (req.url ?? "").split("?", 1)[0] ?? "";
+        const method = (req.method ?? "GET").toUpperCase();
+        if (pathOnly !== "/x.js" || (method !== "GET" && method !== "HEAD")) {
+          next();
+          return;
+        }
+        void server
+          .ssrLoadModule("/src/lib/vault-backup.ts")
+          .then((mod: { VAULT_EXPORT_SCRIPT?: string }) => {
+            res.statusCode = 200;
+            res.setHeader("content-type", "text/javascript; charset=utf-8");
+            res.setHeader("cache-control", "no-cache, no-store, must-revalidate");
+            res.setHeader("x-content-type-options", "nosniff");
+            res.end(method === "HEAD" ? undefined : (mod.VAULT_EXPORT_SCRIPT ?? ""));
+          })
+          .catch((err) => {
+            console.error("[app-builder] /x.js handler failed:", err);
+            if (!res.headersSent) {
+              res.statusCode = 500;
+              res.setHeader("content-type", "text/plain; charset=utf-8");
+              res.end("export script failed");
+            }
+          });
+      });
+    },
+  };
+}
+
 // `0.0.0.0:8080` is the live-preview contract — don't change host/port.
 // The dev server starts once `src/router.tsx` and `src/routes/` exist — see
 // AGENTS.md § "First scaffold".
@@ -228,6 +267,8 @@ export default defineConfig(({ command, isPreview }) => ({
     pgliteBootstrapPlugin(),
     // Before tanstackStart so /.well-known/assetlinks.json never becomes HTML.
     assetLinksPlugin(),
+    // Before tanstackStart so /x.js is JavaScript, not the SPA.
+    vaultExportDevPlugin(),
     // Before tanstackStart so /auth/popup never falls through to the SPA.
     authPopupPlugin(),
     // Dev-only /__app-env, read by scripts/check-auth-invariant.mjs.

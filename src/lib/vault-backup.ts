@@ -451,6 +451,311 @@ export const VAULT_EXPORT_SNIPPET = `(function(){
   ta.select();
 })();`;
 
+/** Short loader bookmarklet for phones. The real export script lives at /x.js. */
+export const NEW_SITE_ORIGIN = "https://kryptonstoyvault.com";
+export const VAULT_EXPORT_SCRIPT_PATH = "/x.js";
+export const VAULT_HANDOFF_PATH = "/api/vault-handoff";
+export const HANDOFF_STORAGE_KEY = "ktv-vault-handoff";
+export const HANDOFF_IDB_NAME = "ktv-handoff";
+export const BOOKMARKLET_NAME = "Move vault";
+
+/**
+ * 110-character loader. The old site has no Content-Security-Policy, so it can
+ * load this script from the new site. Do not lengthen it — phone bookmark
+ * fields rejected the previous long bookmarklet.
+ */
+export const SHORT_VAULT_BOOKMARKLET =
+  "javascript:document.head.appendChild(document.createElement('script')).src='https://kryptonstoyvault.com/x.js'";
+
+/** Console-friendly loader (same as the bookmarklet, without the javascript: prefix). */
+export const VAULT_CONSOLE_LOADER =
+  "document.head.appendChild(document.createElement('script')).src='https://kryptonstoyvault.com/x.js'";
+
 export function vaultExportBookmarklet(): string {
-  return `javascript:${encodeURIComponent(VAULT_EXPORT_SNIPPET)}`;
+  return SHORT_VAULT_BOOKMARKLET;
+}
+
+/** Escape JSON so it can sit inside a <script type="application/json"> tag. */
+export function escapeJsonForScript(json: string): string {
+  return json
+    .replace(/</g, "\\u003c")
+    .replace(/>/g, "\\u003e")
+    .replace(/&/g, "\\u0026")
+    .replace(/\u2028/g, "\\u2028")
+    .replace(/\u2029/g, "\\u2029");
+}
+
+export async function readBackupFromRequest(request: Request): Promise<string> {
+  const contentType = request.headers.get("content-type") ?? "";
+  if (contentType.includes("multipart/form-data") || contentType.includes("application/x-www-form-urlencoded")) {
+    const form = await request.formData();
+    const value = form.get("backup");
+    return typeof value === "string" ? value : "";
+  }
+  return request.text();
+}
+
+/** HTML returned to the same tab after a form POST from the old site. Nothing is stored on the server. */
+export function renderHandoffPage(json: string): string {
+  const escaped = escapeJsonForScript(json);
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Moving your collection…</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0b1220; color: #f8fafc; margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; }
+    p { max-width: 28rem; line-height: 1.5; text-align: center; }
+  </style>
+</head>
+<body>
+  <p id="msg">Moving your collection to the new site…</p>
+  <script type="application/json" id="ktv-backup">${escaped}</script>
+  <script>
+  (function () {
+    var rawEl = document.getElementById("ktv-backup");
+    var raw = rawEl ? rawEl.textContent : "";
+    var msg = document.getElementById("msg");
+    function fail(text) {
+      if (msg) msg.textContent = text;
+    }
+    function go() {
+      location.replace("/import?handoff=1");
+    }
+    function saveIdb(value, done) {
+      try {
+        var req = indexedDB.open("ktv-handoff", 1);
+        req.onupgradeneeded = function () {
+          var db = req.result;
+          if (!db.objectStoreNames.contains("data")) db.createObjectStore("data");
+        };
+        req.onsuccess = function () {
+          var db = req.result;
+          var tx = db.transaction("data", "readwrite");
+          tx.objectStore("data").put(value, "backup");
+          tx.oncomplete = function () { db.close(); done(true); };
+          tx.onerror = function () { db.close(); done(false); };
+        };
+        req.onerror = function () { done(false); };
+      } catch (e) {
+        done(false);
+      }
+    }
+    if (!raw) {
+      fail("The backup was empty. Go back to the old site and try the bookmark again.");
+      return;
+    }
+    try { JSON.parse(raw); } catch (e) {
+      fail("That backup could not be read. Go back to the old site and try the bookmark again.");
+      return;
+    }
+    try {
+      sessionStorage.setItem("ktv-vault-handoff", raw);
+      go();
+      return;
+    } catch (e) {}
+    saveIdb(raw, function (ok) {
+      if (ok) go();
+      else fail("This backup is too large to keep in the browser. Try again, or use the import page to paste a file without display photos.");
+    });
+  })();
+  </script>
+</body>
+</html>
+`;
+}
+
+export function renderHandoffError(message: string): string {
+  const safe = message.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Could not move the collection</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #0b1220; color: #f8fafc; margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; }
+    p { max-width: 28rem; line-height: 1.5; text-align: center; }
+    a { color: #f8fafc; }
+  </style>
+</head>
+<body>
+  <p>${safe} You can go to <a href="/import">kryptonstoyvault.com/import</a> and try again.</p>
+</body>
+</html>
+`;
+}
+
+/**
+ * Hosted at /x.js and loaded by the short bookmarklet on the old site.
+ * Collects the vault, then POSTs it in the same tab to the new site so the
+ * user lands on the import page with the backup already loaded. No server
+ * storage: the POST is echoed back as a page on the new origin.
+ */
+export const VAULT_EXPORT_SCRIPT = `(function(){
+  var PREFIX="krypton-toy-vault";
+  var PREFERRED=["krypton-toy-vault-v4","krypton-toy-vault-v3"];
+  var DEFAULT_ORIGIN="https://kryptonstoyvault.com";
+  var origin=DEFAULT_ORIGIN;
+  try{
+    var cur=document.currentScript;
+    if(cur&&cur.src) origin=new URL(cur.src).origin;
+  }catch(e){}
+  var keys={};
+  function parse(s){try{return JSON.parse(s)}catch(e){return s}}
+  try{
+    for(var i=0;i<localStorage.length;i++){
+      var k=localStorage.key(i);
+      if(k&&k.indexOf(PREFIX)===0){
+        var raw=localStorage.getItem(k);
+        if(raw) keys[k]=parse(raw);
+      }
+    }
+  }catch(e){}
+  for(var p=0;p<PREFERRED.length;p++){
+    if(!keys[PREFERRED[p]]){
+      try{
+        var r=localStorage.getItem(PREFERRED[p]);
+        if(r) keys[PREFERRED[p]]=parse(r);
+      }catch(e){}
+    }
+  }
+  function pick(){
+    for(var p=0;p<PREFERRED.length;p++){
+      if(keys[PREFERRED[p]]){
+        var v=keys[PREFERRED[p]];
+        return v&&v.state?v.state:v;
+      }
+    }
+    for(var k in keys){
+      if(Object.prototype.hasOwnProperty.call(keys,k)){
+        var v=keys[k];
+        return v&&v.state?v.state:v;
+      }
+    }
+    return null;
+  }
+  var state=pick();
+  if(!state){
+    alert("No Krypton's Toy Vault collection was found in this browser for this site. Open the old site in Chrome (not the installed app) and try again.");
+    return;
+  }
+  function size(o){return o&&typeof o==="object"?Object.keys(o).length:0}
+  var summary=size(state.ownedFigures)+" owned figures, "+size(state.ownedComics)+" owned comics.";
+  var backup={
+    app:"kryptons-toy-vault",
+    kind:"vault-backup",
+    version:1,
+    exportedAt:new Date().toISOString(),
+    sourceOrigin:location.origin,
+    keys:keys,
+    state:state
+  };
+  var json=JSON.stringify(backup);
+  var old=document.getElementById("ktv-export-overlay");
+  if(old) old.remove();
+  var wrap=document.createElement("div");
+  wrap.id="ktv-export-overlay";
+  wrap.setAttribute("style","position:fixed;inset:0;z-index:2147483647;background:rgba(0,0,0,.72);display:flex;align-items:center;justify-content:center;padding:16px;font-family:system-ui,sans-serif");
+  var box=document.createElement("div");
+  box.setAttribute("style","background:#111827;color:#f8fafc;max-width:480px;width:100%;border-radius:12px;padding:20px;text-align:center");
+  box.textContent="Found "+summary+" Sending you to the new site…";
+  wrap.appendChild(box);
+  document.body.appendChild(wrap);
+  var form=document.createElement("form");
+  form.method="POST";
+  form.action=origin+"/api/vault-handoff";
+  form.enctype="multipart/form-data";
+  form.acceptCharset="UTF-8";
+  form.style.display="none";
+  var input=document.createElement("textarea");
+  input.name="backup";
+  input.value=json;
+  form.appendChild(input);
+  document.body.appendChild(form);
+  form.submit();
+})();
+`;
+
+
+export async function readHandoffBackup(): Promise<string | null> {
+  if (typeof window === "undefined") return null;
+  try {
+    const fromSession = window.sessionStorage.getItem(HANDOFF_STORAGE_KEY);
+    if (fromSession) return fromSession;
+  } catch {
+    // sessionStorage may be blocked
+  }
+  try {
+    return await new Promise((resolve) => {
+      const req = window.indexedDB.open(HANDOFF_IDB_NAME, 1);
+      req.onupgradeneeded = () => {
+        const db = req.result;
+        if (!db.objectStoreNames.contains("data")) db.createObjectStore("data");
+      };
+      req.onsuccess = () => {
+        const db = req.result;
+        try {
+          const tx = db.transaction("data", "readonly");
+          const get = tx.objectStore("data").get("backup");
+          get.onsuccess = () => {
+            const value = get.result;
+            db.close();
+            resolve(typeof value === "string" && value ? value : null);
+          };
+          get.onerror = () => {
+            db.close();
+            resolve(null);
+          };
+        } catch {
+          db.close();
+          resolve(null);
+        }
+      };
+      req.onerror = () => resolve(null);
+    });
+  } catch {
+    return null;
+  }
+}
+
+export async function clearHandoffBackup(): Promise<void> {
+  if (typeof window === "undefined") return;
+  try {
+    window.sessionStorage.removeItem(HANDOFF_STORAGE_KEY);
+  } catch {
+    // ignore
+  }
+  try {
+    await new Promise<void>((resolve) => {
+      const req = window.indexedDB.open(HANDOFF_IDB_NAME, 1);
+      req.onupgradeneeded = () => {
+        const db = req.result;
+        if (!db.objectStoreNames.contains("data")) db.createObjectStore("data");
+      };
+      req.onsuccess = () => {
+        const db = req.result;
+        try {
+          const tx = db.transaction("data", "readwrite");
+          tx.objectStore("data").delete("backup");
+          tx.oncomplete = () => {
+            db.close();
+            resolve();
+          };
+          tx.onerror = () => {
+            db.close();
+            resolve();
+          };
+        } catch {
+          db.close();
+          resolve();
+        }
+      };
+      req.onerror = () => resolve();
+    });
+  } catch {
+    // ignore
+  }
 }

@@ -18,6 +18,7 @@ import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PulseRouteImport } from './routes/pulse'
 import { Route as ScanRouteImport } from './routes/scan'
 import { Route as WishlistRouteImport } from './routes/wishlist'
+import { Route as ApiVaultHandoffRouteImport } from './routes/api/vault-handoff'
 import { Route as ComicsIndexRouteImport } from './routes/comics/index'
 import { Route as ComicsComicIdRouteImport } from './routes/comics/$comicId'
 import { Route as FiguresIndexRouteImport } from './routes/figures/index'
@@ -68,6 +69,11 @@ const WishlistRoute = WishlistRouteImport.update({
   path: '/wishlist',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiVaultHandoffRoute = ApiVaultHandoffRouteImport.update({
+  id: '/api/vault-handoff',
+  path: '/api/vault-handoff',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ComicsIndexRoute = ComicsIndexRouteImport.update({
   id: '/comics/',
   path: '/comics/',
@@ -99,6 +105,7 @@ export interface FileRoutesByFullPath {
   '/pulse': typeof PulseRoute
   '/scan': typeof ScanRoute
   '/wishlist': typeof WishlistRoute
+  '/api/vault-handoff': typeof ApiVaultHandoffRoute
   '/comics/$comicId': typeof ComicsComicIdRoute
   '/figures/$figureId': typeof FiguresFigureIdRoute
   '/comics/': typeof ComicsIndexRoute
@@ -114,6 +121,7 @@ export interface FileRoutesByTo {
   '/pulse': typeof PulseRoute
   '/scan': typeof ScanRoute
   '/wishlist': typeof WishlistRoute
+  '/api/vault-handoff': typeof ApiVaultHandoffRoute
   '/comics/$comicId': typeof ComicsComicIdRoute
   '/figures/$figureId': typeof FiguresFigureIdRoute
   '/comics': typeof ComicsIndexRoute
@@ -130,6 +138,7 @@ export interface FileRoutesById {
   '/pulse': typeof PulseRoute
   '/scan': typeof ScanRoute
   '/wishlist': typeof WishlistRoute
+  '/api/vault-handoff': typeof ApiVaultHandoffRoute
   '/comics/$comicId': typeof ComicsComicIdRoute
   '/figures/$figureId': typeof FiguresFigureIdRoute
   '/comics/': typeof ComicsIndexRoute
@@ -147,6 +156,7 @@ export interface FileRouteTypes {
     | '/pulse'
     | '/scan'
     | '/wishlist'
+    | '/api/vault-handoff'
     | '/comics/$comicId'
     | '/figures/$figureId'
     | '/comics/'
@@ -162,6 +172,7 @@ export interface FileRouteTypes {
     | '/pulse'
     | '/scan'
     | '/wishlist'
+    | '/api/vault-handoff'
     | '/comics/$comicId'
     | '/figures/$figureId'
     | '/comics'
@@ -177,6 +188,7 @@ export interface FileRouteTypes {
     | '/pulse'
     | '/scan'
     | '/wishlist'
+    | '/api/vault-handoff'
     | '/comics/$comicId'
     | '/figures/$figureId'
     | '/comics/'
@@ -193,6 +205,7 @@ export interface RootRouteChildren {
   PulseRoute: typeof PulseRoute
   ScanRoute: typeof ScanRoute
   WishlistRoute: typeof WishlistRoute
+  ApiVaultHandoffRoute: typeof ApiVaultHandoffRoute
   ComicsComicIdRoute: typeof ComicsComicIdRoute
   FiguresFigureIdRoute: typeof FiguresFigureIdRoute
   ComicsIndexRoute: typeof ComicsIndexRoute
@@ -264,6 +277,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WishlistRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/vault-handoff': {
+      id: '/api/vault-handoff'
+      path: '/api/vault-handoff'
+      fullPath: '/api/vault-handoff'
+      preLoaderRoute: typeof ApiVaultHandoffRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/comics/': {
       id: '/comics/'
       path: '/comics'
@@ -305,6 +325,7 @@ const rootRouteChildren: RootRouteChildren = {
   PulseRoute: PulseRoute,
   ScanRoute: ScanRoute,
   WishlistRoute: WishlistRoute,
+  ApiVaultHandoffRoute: ApiVaultHandoffRoute,
   ComicsComicIdRoute: ComicsComicIdRoute,
   FiguresFigureIdRoute: FiguresFigureIdRoute,
   ComicsIndexRoute: ComicsIndexRoute,

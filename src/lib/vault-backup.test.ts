@@ -10,7 +10,11 @@ import {
   countVault,
   formatVaultCounts,
   mergeVault,
+  SHORT_VAULT_BOOKMARKLET,
+  VAULT_EXPORT_SCRIPT,
+  escapeJsonForScript,
   parseVaultBackup,
+  renderHandoffPage,
   replaceVault,
   stringifyBackup,
   vaultExportBookmarklet,
@@ -197,10 +201,12 @@ describe("export snippet", () => {
     else (globalThis as { document?: unknown }).document = originalDoc;
   });
 
-  it("builds a javascript: bookmarklet and a runnable console snippet", () => {
-    assert.equal(vaultExportBookmarklet().startsWith("javascript:"), true);
+  it("builds a short javascript: bookmarklet that loads /x.js", () => {
+    assert.equal(vaultExportBookmarklet(), SHORT_VAULT_BOOKMARKLET);
+    assert.equal(SHORT_VAULT_BOOKMARKLET.startsWith("javascript:"), true);
+    assert.ok(SHORT_VAULT_BOOKMARKLET.length <= 120, `bookmarklet is ${SHORT_VAULT_BOOKMARKLET.length} chars`);
+    assert.match(SHORT_VAULT_BOOKMARKLET, /https:\/\/kryptonstoyvault\.com\/x\.js/);
     assert.match(VAULT_EXPORT_SNIPPET, /krypton-toy-vault-v4/);
-    assert.match(VAULT_EXPORT_SNIPPET, /kind:"vault-backup"/);
   });
 
   it("reads v4 storage, downloads JSON, and produces a parseable backup", () => {
@@ -320,5 +326,116 @@ describe("export snippet", () => {
     assert.equal(parsed.backup.state.ownedFigures.prime?.notes, "from old site");
     assert.equal(parsed.backup.sourceOrigin, "https://kryptons-toy-vault.grok.me");
     assert.equal(parsed.counts.ownedFigures, 1);
+  });
+});
+
+describe("short bookmarklet and hosted script", () => {
+  const originalDoc = (globalThis as { document?: unknown }).document;
+
+  afterEach(() => {
+    if (originalDoc === undefined) delete (globalThis as { document?: unknown }).document;
+    else (globalThis as { document?: unknown }).document = originalDoc;
+  });
+
+  it("keeps the phone bookmarklet under 120 characters", () => {
+    assert.equal(SHORT_VAULT_BOOKMARKLET.length, 110);
+  });
+
+  it("posts a parseable backup to the new-site handoff path", () => {
+    const state = sampleState({ ownedFigures: { prime: figure("prime", { notes: "from phone" }) } });
+    const persist = JSON.stringify({ state, version: 0 });
+    const data: Record<string, string> = { [CURRENT_VAULT_STORAGE_KEY]: persist };
+    const keys = Object.keys(data);
+    const submitted: { action?: string; enctype?: string; backup?: string }[] = [];
+
+    const storage = {
+      get length() {
+        return keys.length;
+      },
+      key(index: number) {
+        return keys[index] ?? null;
+      },
+      getItem(key: string) {
+        return data[key] ?? null;
+      },
+    };
+
+    function el() {
+      const node: Record<string, unknown> & {
+        children: unknown[];
+        appendChild(child: unknown): unknown;
+        remove(): void;
+        setAttribute(name: string, value: string): void;
+        submit(): void;
+      } = {
+        children: [],
+        style: {},
+        appendChild(child) {
+          this.children.push(child);
+          return child;
+        },
+        remove() {},
+        setAttribute(name, value) {
+          this[name] = value;
+        },
+        submit() {
+          const backup = (this.children as Array<{ name?: string; value?: string }>).find((c) => c.name === "backup");
+          submitted.push({
+            action: String(this.action ?? ""),
+            enctype: String(this.enctype ?? ""),
+            backup: backup?.value,
+          });
+        },
+      };
+      return node;
+    }
+
+    const documentMock = {
+      currentScript: { src: "https://kryptonstoyvault.com/x.js" },
+      getElementById() {
+        return null;
+      },
+      createElement(_tag: string) {
+        return el();
+      },
+      body: {
+        appendChild(child: unknown) {
+          return child;
+        },
+      },
+    };
+    (globalThis as { document?: unknown }).document = documentMock;
+
+    const context = createContext({
+      localStorage: storage,
+      location: { origin: "https://kryptons-toy-vault.grok.me" },
+      document: documentMock,
+      alert() {},
+      URL,
+      Date,
+    });
+    runInContext(VAULT_EXPORT_SCRIPT, context);
+    assert.equal(submitted.length, 1);
+    assert.equal(submitted[0]?.action, "https://kryptonstoyvault.com/api/vault-handoff");
+    assert.equal(submitted[0]?.enctype, "multipart/form-data");
+    const parsed = parseVaultBackup(submitted[0]?.backup ?? "");
+    assert.equal(parsed.ok, true);
+    if (!parsed.ok) return;
+    assert.equal(parsed.backup.state.ownedFigures.prime?.notes, "from phone");
+    assert.equal(parsed.backup.sourceOrigin, "https://kryptons-toy-vault.grok.me");
+  });
+
+  it("escapes HTML in the handoff page so a backup cannot break out of the script tag", () => {
+    const sneaky = '{"kind":"vault-backup","state":{},"evil":"</script><script>alert(1)"}';
+    const escaped = escapeJsonForScript(sneaky);
+    assert.equal(escaped.includes("</script>"), false);
+    assert.match(escaped, /\\u003c\/script/);
+    const page = renderHandoffPage(sneaky);
+    assert.equal(page.includes("</script><script>alert(1)"), false);
+    const marker = 'id="ktv-backup">';
+    const start = page.indexOf(marker) + marker.length;
+    const end = page.indexOf("</script>", start);
+    const body = page.slice(start, end);
+    assert.equal(JSON.parse(body).evil, "</script><script>alert(1)");
   });
 });
