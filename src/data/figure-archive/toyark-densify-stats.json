@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-11-12T19:02:09Z",
+  "finishedAt": "2026-11-16T18:52:39Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 2,
-  "applied": 2,
+  "acceptedCandidates": 1,
+  "applied": 1,
   "skippedApply": 0,
-  "rejectedRows": 18,
-  "withImage": 2,
-  "aliasAdded": 2,
+  "rejectedRows": 11,
+  "withImage": 1,
+  "aliasAdded": 3,
   "byCompany": {
     "hasbro": {
       "accepted": 0,
@@ -16,7 +16,7 @@
     },
     "mcfarlane": {
       "accepted": 0,
-      "rejected": 2
+      "rejected": 1
     },
     "neca": {
       "accepted": 0,
@@ -27,12 +27,12 @@
       "rejected": 0
     },
     "super7": {
-      "accepted": 2,
-      "rejected": 2
+      "accepted": 0,
+      "rejected": 0
     },
     "hottoys": {
-      "accepted": 0,
-      "rejected": 1
+      "accepted": 1,
+      "rejected": 0
     },
     "mondo": {
       "accepted": 0,
@@ -60,49 +60,32 @@
     }
   },
   "byRejectReason": {
+    "company-not-allowlisted": 7,
     "news-event-post": 1,
-    "sponsor-newsletter": 3,
-    "company-not-allowlisted": 8,
-    "no-new-product-identity": 2,
-    "already-in-oneshot": 3,
-    "company-unknown": 1
+    "sponsor-newsletter": 2,
+    "no-new-product-identity": 1
   },
   "appliedIds": [
-    "ta-c5ea1d375537",
-    "ta-cb90400c9590"
+    "ta-3403380228c3"
   ],
   "appliedSample": [
     {
-      "id": "ta-c5ea1d375537",
-      "name": "ReAction",
-      "company": "super7",
-      "line": "Super7 ReAction",
-      "year": 2026,
-      "variant": null,
+      "id": "ta-3403380228c3",
+      "name": "Asajj Ventress",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": 2028,
+      "variant": "Star Wars: The Clone Wars",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Super7-Godzilla-Ultimates-Minus-Zero-Godzilla-006.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-TCW-Aajj-Ventress-004.jpg",
       "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/09/godzilla-minus-zero-super7-godzilla-and-king-ghidorah-ultimates-reaction-and-super-kaiju-figures-602287",
-      "toyarkPostId": 602287
-    },
-    {
-      "id": "ta-cb90400c9590",
-      "name": "Super Kaiju",
-      "company": "super7",
-      "line": "Super7 ReAction",
-      "year": 2026,
-      "variant": null,
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Super7-Godzilla-Ultimates-Minus-Zero-Godzilla-006.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/09/godzilla-minus-zero-super7-godzilla-and-king-ghidorah-ultimates-reaction-and-super-kaiju-figures-602287",
-      "toyarkPostId": 602287
+      "sourceUrl": "https://www.toyark.com/2026/11/16/star-wars-the-clone-wars-hot-toys-asajj-ventress-figure-602649",
+      "toyarkPostId": 602649
     }
   ],
   "skippedSample": [],
-  "archiveSize": 31642,
+  "archiveSize": 32064,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"

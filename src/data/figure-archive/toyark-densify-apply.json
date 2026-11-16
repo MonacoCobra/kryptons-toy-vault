@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T19:02:09Z",
+  "generatedAt": "2026-11-16T18:52:39Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-11-05T19:02:08.653043+00:00",
+    "after": "2026-11-09T18:52:38.603398+00:00",
     "before": null
   },
   "fetch": {
@@ -45,18 +45,18 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 17,
+    "fetchedPostCount": 12,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 10775,
+    "indexedRows": 10809,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 17,
-    "acceptedCandidates": 2,
-    "rejectedRows": 18,
+    "fetchedPosts": 12,
+    "acceptedCandidates": 1,
+    "rejectedRows": 11,
     "byCompany": {
       "hasbro": {
         "accepted": 0,
@@ -64,7 +64,7 @@
       },
       "mcfarlane": {
         "accepted": 0,
-        "rejected": 2
+        "rejected": 1
       },
       "neca": {
         "accepted": 0,
@@ -75,12 +75,12 @@
         "rejected": 0
       },
       "super7": {
-        "accepted": 2,
-        "rejected": 2
+        "accepted": 0,
+        "rejected": 0
       },
       "hottoys": {
-        "accepted": 0,
-        "rejected": 1
+        "accepted": 1,
+        "rejected": 0
       },
       "mondo": {
         "accepted": 0,
@@ -108,57 +108,72 @@
       }
     },
     "byRejectReason": {
+      "company-not-allowlisted": 7,
       "news-event-post": 1,
-      "sponsor-newsletter": 3,
-      "company-not-allowlisted": 8,
-      "no-new-product-identity": 2,
-      "already-in-oneshot": 3,
-      "company-unknown": 1
+      "sponsor-newsletter": 2,
+      "no-new-product-identity": 1
     },
-    "applied": 2,
+    "applied": 1,
     "skippedApply": 0
   },
   "candidates": [
     {
       "decision": "accept",
-      "name": "ReAction",
-      "company": "super7",
-      "line": "Super7 ReAction",
-      "year": 2026,
+      "name": "Asajj Ventress",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": 2028,
       "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/09/godzilla-minus-zero-super7-godzilla-and-king-ghidorah-ultimates-reaction-and-super-kaiju-figures-602287",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Super7-Godzilla-Ultimates-Minus-Zero-Godzilla-006.jpg",
+      "variant": "Star Wars: The Clone Wars",
+      "sourceUrl": "https://www.toyark.com/2026/11/16/star-wars-the-clone-wars-hot-toys-asajj-ventress-figure-602649",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-TCW-Aajj-Ventress-004.jpg",
       "aliases": [],
       "codes": [],
       "gtin": null,
-      "toyarkPostId": 602287,
+      "toyarkPostId": 602649,
       "postYear": 2026,
       "pack": null,
-      "title": "Godzilla Minus Zero – Super7 Godzilla and King Ghidorah Ultimates, ReAction, and Super Kaiju Figures",
-      "rationale": "super7 via class:companies-super-7; line=Super7 ReAction; year=2026; new/reveal/pre-order/official-image signal"
-    },
-    {
-      "decision": "accept",
-      "name": "Super Kaiju",
-      "company": "super7",
-      "line": "Super7 ReAction",
-      "year": 2026,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/09/godzilla-minus-zero-super7-godzilla-and-king-ghidorah-ultimates-reaction-and-super-kaiju-figures-602287",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Super7-Godzilla-Ultimates-Minus-Zero-Godzilla-006.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602287,
-      "postYear": 2026,
-      "pack": null,
-      "title": "Godzilla Minus Zero – Super7 Godzilla and King Ghidorah Ultimates, ReAction, and Super Kaiju Figures",
-      "rationale": "super7 via class:companies-super-7; line=Super7 ReAction; year=2026; new/reveal/pre-order/official-image signal"
+      "title": "Star Wars: The Clone Wars – Hot Toys Asajj Ventress Figure",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; variant=Star Wars: The Clone Wars; year=2028; new/reveal/pre-order/official-image signal"
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "bossfight",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/16/epic-h-a-c-k-s-deluxe-therakles-lion-of-erebus-602674",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602674,
+      "title": "Epic H.A.C.K.S. Deluxe Therakles: Lion of Erebus",
+      "rationale": "Recognized bossfight via class:companies-boss-fight-studio; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "shfiguarts",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/16/godzilla-minus-zero-s-h-monsterarts-king-ghidorah-pre-orders-602640",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602640,
+      "title": "Godzilla: Minus Zero – S.H. MonsterArts King Ghidorah Pre-Orders",
+      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
     {
       "decision": "reject",
       "reason": "news-event-post",
@@ -320,220 +335,31 @@
       "toyarkPostId": 602359,
       "title": "Boss Fight Studio Hellboy 1/12 Scale Wave 2",
       "rationale": "Recognized bossfight via class:companies-boss-fight-studio; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "mattel",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/09/happy-belated-birthday-he-man-new-promo-mailer-shots-602288",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602288,
-      "title": "Happy (Belated) Birthday He-Man! New Promo Mailer & Shots",
-      "rationale": "Recognized mattel via class:companies-mattel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "already-in-oneshot",
-      "name": "Godzilla",
-      "company": "super7",
-      "line": "Super7 ReAction",
-      "year": 2026,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/09/godzilla-minus-zero-super7-godzilla-and-king-ghidorah-ultimates-reaction-and-super-kaiju-figures-602287",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Super7-Godzilla-Ultimates-Minus-Zero-Godzilla-006.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602287,
-      "title": "Godzilla Minus Zero – Super7 Godzilla and King Ghidorah Ultimates, ReAction, and Super Kaiju Figures",
-      "oneshotIds": [
-        "ta-6db89d2f1c60"
-      ],
-      "rationale": "Identity key already in oneshot (ta-6db89d2f1c60)."
-    },
-    {
-      "decision": "reject",
-      "reason": "already-in-oneshot",
-      "name": "King Ghidorah",
-      "company": "super7",
-      "line": "Super7 ULTIMATES!",
-      "year": 2026,
-      "releaseWindow": null,
-      "variant": "Ultimates",
-      "sourceUrl": "https://www.toyark.com/2026/11/09/godzilla-minus-zero-super7-godzilla-and-king-ghidorah-ultimates-reaction-and-super-kaiju-figures-602287",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Super7-Godzilla-Ultimates-Minus-Zero-Godzilla-006.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602287,
-      "title": "Godzilla Minus Zero – Super7 Godzilla and King Ghidorah Ultimates, ReAction, and Super Kaiju Figures",
-      "oneshotIds": [
-        "ta-11b7a49d658c"
-      ],
-      "rationale": "Identity key already in oneshot (ta-11b7a49d658c)."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-unknown",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/09/four-horsemen-legionscon-2026-lord-of-the-rings-manglors-mythic-legions-602255",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602255,
-      "title": "Four Horsemen LegionsCon 2026 – Lord of the Rings, Manglors, Mythic Legions",
-      "rationale": "No allowlisted companies-* class or unique body-text company."
-    },
-    {
-      "decision": "reject",
-      "reason": "no-new-product-identity",
-      "name": null,
-      "company": "mcfarlane",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/06/mcfarlane-toys-majority-stake-acquired-by-gladstone-investment-602252",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602252,
-      "title": "McFarlane Toys Majority Stake Acquired by Gladstone Investment",
-      "rationale": "Allowlisted company but no new/reveal/pre-order/official-image signal."
-    },
-    {
-      "decision": "reject",
-      "reason": "sponsor-newsletter",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/06/the-chosen-prime-newsletter-november-6-2026-602250",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602250,
-      "title": "The Chosen Prime Newsletter November 6, 2026",
-      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "shfiguarts",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/06/godzilla-minus-zero-s-h-monsterarts-king-ghidorah-preview-602245",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602245,
-      "title": "Godzilla: Minus Zero – S.H. MonsterArts King Ghidorah Preview",
-      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "shfiguarts",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/06/dragon-ball-z-s-h-figuarts-z-fighters-krillin-piccolo-and-yamcha-announced-602239",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602239,
-      "title": "Dragon Ball Z – S.H. Figuarts Z-Fighters Krillin, Piccolo, and Yamcha Announced",
-      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "already-in-oneshot",
-      "name": "Eleventh Brother",
-      "company": "hottoys",
-      "line": "Hot Toys",
-      "year": 2027,
-      "releaseWindow": null,
-      "variant": "from Star Wars: Maul – Shadow Lord",
-      "sourceUrl": "https://www.toyark.com/2026/11/06/hot-toys-eleventh-brother-figure-from-star-wars-maul-shadow-lord-602217",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-Eleventh-Brother-001.jpg",
-      "aliases": [
-        "TMS197"
-      ],
-      "codes": [
-        "TMS197"
-      ],
-      "gtin": null,
-      "toyarkPostId": 602217,
-      "title": "Hot Toys Eleventh Brother Figure from Star Wars: Maul – Shadow Lord",
-      "oneshotIds": [
-        "ta-b921acf3c92a"
-      ],
-      "rationale": "Identity key already in oneshot (ta-b921acf3c92a)."
     }
   ],
   "applied": [
     {
-      "id": "ta-c5ea1d375537",
-      "name": "ReAction",
-      "company": "super7",
-      "line": "Super7 ReAction",
-      "year": 2026,
-      "variant": null,
+      "id": "ta-3403380228c3",
+      "name": "Asajj Ventress",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": 2028,
+      "variant": "Star Wars: The Clone Wars",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Super7-Godzilla-Ultimates-Minus-Zero-Godzilla-006.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-TCW-Aajj-Ventress-004.jpg",
       "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/09/godzilla-minus-zero-super7-godzilla-and-king-ghidorah-ultimates-reaction-and-super-kaiju-figures-602287",
-      "toyarkPostId": 602287
-    },
-    {
-      "id": "ta-cb90400c9590",
-      "name": "Super Kaiju",
-      "company": "super7",
-      "line": "Super7 ReAction",
-      "year": 2026,
-      "variant": null,
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Super7-Godzilla-Ultimates-Minus-Zero-Godzilla-006.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/09/godzilla-minus-zero-super7-godzilla-and-king-ghidorah-ultimates-reaction-and-super-kaiju-figures-602287",
-      "toyarkPostId": 602287
+      "sourceUrl": "https://www.toyark.com/2026/11/16/star-wars-the-clone-wars-hot-toys-asajj-ventress-figure-602649",
+      "toyarkPostId": 602649
     }
   ],
   "applySkipped": [],
   "applyStats": {
-    "accepted": 2,
-    "applied": 2,
+    "accepted": 1,
+    "applied": 1,
     "skippedApply": 0,
-    "aliasAdded": 2,
-    "withImage": 2,
+    "aliasAdded": 3,
+    "withImage": 1,
     "cap": 50,
     "blocker": null
   }
