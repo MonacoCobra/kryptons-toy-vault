@@ -21,6 +21,7 @@ export type CompanyId =
   | "threezero"
   | "dcdirect"
   | "kenner"
+  | "ljn"
   | "valaverse"
   | "jakks"
   | "takaratomy"

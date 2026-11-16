@@ -200,6 +200,15 @@ export const COMPANIES: Company[] = [
     accent: "#f0a500",
   },
   {
+    id: "ljn",
+    name: "LJN Toys",
+    short: "LJN",
+    blurb: "1980s licensed lines — vintage ThunderCats and Advanced Dungeons & Dragons figures.",
+    founded: "1970",
+    hq: "New York, NY",
+    accent: "#c8102e",
+  },
+  {
     id: "jakks",
     name: "JAKKS Pacific",
     short: "JAKKS",
