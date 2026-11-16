@@ -65,7 +65,14 @@ export function AppShell({ children }: { children: ReactNode }) {
         {children}
         <footer className="mt-16 flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t border-border pt-5">
           <p className="text-xs tracking-[0.18em] text-subtle uppercase">Krypton's Toy Vault</p>
-          <nav aria-label="Credits, privacy, and YouTube" className="flex flex-nowrap items-center gap-1">
+          <nav aria-label="Credits, privacy, backup, and YouTube" className="flex flex-nowrap items-center gap-1">
+            <Link
+              to="/import"
+              hash="move"
+              className="inline-flex h-11 shrink-0 items-center whitespace-nowrap px-2 text-sm text-muted transition-colors duration-150 hover:text-fg"
+            >
+              Backup
+            </Link>
             <Link
               to="/privacy"
               className="inline-flex h-11 shrink-0 items-center whitespace-nowrap px-2 text-sm text-muted transition-colors duration-150 hover:text-fg"

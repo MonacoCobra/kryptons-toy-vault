@@ -17,6 +17,7 @@ import {
 } from "@/lib/locg-import";
 import { useVault } from "@/lib/store";
 import type { CatalogComic } from "@/lib/types";
+import { VaultBackupPanel } from "@/components/vault-backup-panel";
 
 export const Route = createFileRoute("/import")({
   component: ImportPage,
@@ -126,6 +127,16 @@ function ImportPage() {
     <main className="flex flex-col gap-6">
       <header>
         <h1 className="font-display text-3xl tracking-wide uppercase">Import collection</h1>
+        <p className="mt-2 max-w-2xl text-sm text-muted">
+          Move your saved vault from the old site, download a backup of this site, or bring comics from{" "}
+          League of Comic Geeks below.
+        </p>
+      </header>
+
+      <VaultBackupPanel />
+
+      <header>
+        <h2 className="font-display text-2xl tracking-wide uppercase">Import from League of Comic Geeks</h2>
         <p className="mt-2 max-w-2xl text-sm text-muted">
           Bring comics from{" "}
           <a

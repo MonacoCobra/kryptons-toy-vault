@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Trash2 } from "lucide-react";
+import { Download, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import { comicLabel } from "@/lib/comic-label";
 import { ComicCover } from "@/components/comic-cover";
@@ -14,6 +14,7 @@ import { useVault } from "@/lib/store";
 import { DisplaysGallery } from "@/components/displays-gallery";
 import { useOwnedCatalog } from "@/lib/use-catalog";
 import { itemValue, msrpPrice, paidPrice, summarizeVault } from "@/lib/vault-math";
+import { exportCurrentVault } from "@/components/vault-backup-panel";
 
 export const Route = createFileRoute("/collection")({ component: CollectionPage });
 
@@ -106,6 +107,12 @@ function CollectionPage() {
           <p className="mt-1 text-xs text-subtle">Total counts each item at the price you paid, or its MSRP when none is entered.</p>
         </div>
         <div className="flex flex-wrap gap-2">
+          <Button variant="secondary" asChild>
+            <Link to="/import" hash="move">Backup & transfer</Link>
+          </Button>
+          <Button variant="secondary" onClick={() => exportCurrentVault()}>
+            <Download /> Download backup
+          </Button>
           <Button variant="secondary" asChild>
             <Link to="/import">Import LOCG</Link>
           </Button>
