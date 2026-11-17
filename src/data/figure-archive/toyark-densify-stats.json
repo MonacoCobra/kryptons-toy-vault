@@ -1,17 +1,17 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-11-16T18:52:39Z",
+  "finishedAt": "2026-11-17T06:30:05Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 1,
-  "applied": 1,
+  "acceptedCandidates": 3,
+  "applied": 3,
   "skippedApply": 0,
-  "rejectedRows": 11,
-  "withImage": 1,
-  "aliasAdded": 3,
+  "rejectedRows": 12,
+  "withImage": 3,
+  "aliasAdded": 5,
   "byCompany": {
     "hasbro": {
-      "accepted": 0,
+      "accepted": 3,
       "rejected": 0
     },
     "mcfarlane": {
@@ -31,8 +31,8 @@
       "rejected": 0
     },
     "hottoys": {
-      "accepted": 1,
-      "rejected": 0
+      "accepted": 0,
+      "rejected": 1
     },
     "mondo": {
       "accepted": 0,
@@ -61,31 +61,62 @@
   },
   "byRejectReason": {
     "company-not-allowlisted": 7,
+    "already-in-oneshot": 1,
     "news-event-post": 1,
     "sponsor-newsletter": 2,
     "no-new-product-identity": 1
   },
   "appliedIds": [
-    "ta-3403380228c3"
+    "ta-97ae25500823",
+    "ta-74be38aa9e39",
+    "ta-8d6d8d3caf40"
   ],
   "appliedSample": [
     {
-      "id": "ta-3403380228c3",
-      "name": "Asajj Ventress",
-      "company": "hottoys",
-      "line": "Hot Toys",
-      "year": 2028,
-      "variant": "Star Wars: The Clone Wars",
+      "id": "ta-97ae25500823",
+      "name": "Superior Iron Man & Marvel's the Maker",
+      "company": "hasbro",
+      "line": "Marvel Legends",
+      "year": 2027,
+      "variant": null,
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-TCW-Aajj-Ventress-004.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/New-Phototastic-Collage.jpg",
       "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/16/star-wars-the-clone-wars-hot-toys-asajj-ventress-figure-602649",
-      "toyarkPostId": 602649
+      "sourceUrl": "https://www.toyark.com/2026/11/16/marvel-legends-fanstream-superior-iron-man-the-maker-ghost-rider-and-doctor-doom-602685",
+      "toyarkPostId": 602685
+    },
+    {
+      "id": "ta-74be38aa9e39",
+      "name": "Ghost Rider (sgt. Sal Romero) & Motorcycle",
+      "company": "hasbro",
+      "line": "Marvel Legends",
+      "year": 2027,
+      "variant": null,
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/New-Phototastic-Collage.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/11/16/marvel-legends-fanstream-superior-iron-man-the-maker-ghost-rider-and-doctor-doom-602685",
+      "toyarkPostId": 602685
+    },
+    {
+      "id": "ta-8d6d8d3caf40",
+      "name": "Secret Wars Doctor Doom",
+      "company": "hasbro",
+      "line": "Marvel Legends",
+      "year": 2027,
+      "variant": null,
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/New-Phototastic-Collage.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/11/16/marvel-legends-fanstream-superior-iron-man-the-maker-ghost-rider-and-doctor-doom-602685",
+      "toyarkPostId": 602685
     }
   ],
   "skippedSample": [],
-  "archiveSize": 32064,
+  "archiveSize": 32362,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"
