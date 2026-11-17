@@ -1,0 +1,101 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-11-17",
+  "updatedAt": "2026-11-17T15:34:44Z",
+  "added": 70,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-11-17: EE newly-added (p1+p2) + hot-off-the-truck and BBTS SortOrder=New ProductType=43624 pages 1-2 (page 2 disjoint, merged). Curl 403 Cloudflare on both official sites; SKUs/images from rendered pages (box browser). Shopify Super7 + Boss Fight + Good Smile US feeds checked for the same SKUs. Nendoroids, HeroClix/Iconix, and Fall Guys rejected; Playmates/Hasbro brand wins over Power Rangers / Ultimate heuristics. Held: TMNT Mix N Match 4-pack PL84236; VC ANH four-pack HSG4162 / BBTS-201846; Black Series Palpatine & Throne BBTS-201751 (existing Throne Room figures). Equivalent aliases (not re-ingested) include One:12 Daredevil/Hulk ReRun, Hot Toys TMS196 Asajj and TMS197 Eleventh Brother, yesterday's JoyToy Horus Heresy EE rows, Kid Core / Chronicles Flight Armor He-Man, Hellboy Wave 2, Super7 Toho Minus Zero singles already in catalog, and others. Unmapped boutique (InArt, POPOFREE, Toyhiti, Medicos, Zombie Sailor's, etc.) skipped. No Build Publish. Live overlay skipped (DATABASE_URL unset).",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 367,
+    "ee_candidates": 44,
+    "bbts_candidates": 111,
+    "added": 70,
+    "skipped_dupes": 69,
+    "rejected_non_af": 157,
+    "unmapped_company": 55,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0,
+    "held": 4
+  },
+  "oneshotBefore": 32362,
+  "oneshotAfter": 32432,
+  "ee_added": 18,
+  "bbts_added": 52,
+  "samples": [
+    {
+      "sku": "SUP82598T",
+      "name": "Freddie Gibbs Pi\u00f1ata 3 3/4-Inch ReAction Figure",
+      "id": "afmon-super7-freddie-gibbs-pi-ata-3-3-4-inch-reaction-figure-sup82598t",
+      "source": "ee"
+    },
+    {
+      "sku": "PL68021",
+      "name": "Mighty Morphin Power Rangers: Re-Ignition Auto Morphin Red Ranger Action Figure",
+      "id": "afmon-playmates-mighty-morphin-power-rangers-re-ignition-auto-morphin-red-ranger-action-fi-pl68021",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4534",
+      "name": "Star Wars Black Series Stormtrooper 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-black-series-stormtrooper-6-inch-action-figure-hsg4534",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4743",
+      "name": "Star Wars The Vintage Collection Stormtrooper 3 3/4-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-stormtrooper-3-3-4-inch-action-figure-hsg4743",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4742",
+      "name": "Star Wars The Vintage Collection Darth Vader 3 3/4-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-darth-vader-3-3-4-inch-action-figure-hsg4742",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4739",
+      "name": "Star Wars The Vintage Collection Artoo-Detoo (R2-D2) 3 3/4-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-artoo-detoo-r2-d2-3-3-4-inch-action-figure-hsg4739",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4740",
+      "name": "Star Wars The Vintage Collection Arleil Schous 3 3/4-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-vintage-collection-arleil-schous-3-3-4-inch-action-figure-hsg4740",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4531",
+      "name": "Star Wars Black Series Luke Skywalker 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-black-series-luke-skywalker-6-inch-action-figure-hsg4531",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4533",
+      "name": "Star Wars Black Series R2-D2 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-black-series-r2-d2-6-inch-action-figure-hsg4533",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG4532",
+      "name": "Star Wars Black Series Princess Leia 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-black-series-princess-leia-6-inch-action-figure-hsg4532",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84066",
+      "name": "Kamen Rider Kuuga Dragon Form Souchaku Henshin Figure",
+      "id": "afmon-bandai-kamen-rider-kuuga-dragon-form-souchaku-henshin-figure-blfbas84066",
+      "source": "ee"
+    },
+    {
+      "sku": "BLFBAS84155",
+      "name": "Mobile Fighter G Gundam Bolt Gundam Martial Action Side MF Robot Spirits Action Figure",
+      "id": "afmon-bandai-mobile-fighter-g-gundam-bolt-gundam-martial-action-side-mf-robot-spirits-blfbas84155",
+      "source": "ee"
+    }
+  ]
+}
