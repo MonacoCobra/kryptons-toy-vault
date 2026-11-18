@@ -1,0 +1,53 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-11-18",
+  "updatedAt": "2026-11-18T15:31:44Z",
+  "added": 4,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-11-18: EE newly-added (p1+p2) + hot-off-the-truck and BBTS SortOrder=New ProductType=43624 pages 1-2 (page 2 disjoint, merged). Curl 403 Cloudflare on both official sites; SKUs/images from rendered pages (box browser / Playwright locators). Shopify Super7 + Boss Fight + Good Smile US feeds checked for the same SKUs (no new unique AF beyond EE/BBTS). Added: McFarlane Dune Part Three Chani MF13186, Paul Atreides MF13187, and McFarlane Elite Edition Paul MF13179 (BBTS-201789 / BBTS-201788 / BBTS-201787 aliased); Hasbro Transformers Cyberworld Optimus Primal Cyber Changers Energon Surge HSG1046. Equivalent aliases (not re-ingested): Mattel DC Premier Wave 1 The Joker MTJMD97 already cataloged as JMD97; DC Premier Wave 2 Stealth Suit Batman MTJNF56 already cataloged as JNF56. Carryover holds: TMNT Mix N Match 4-pack PL84236; VC ANH four-pack HSG4162 / BBTS-201846; Black Series Palpatine & Throne BBTS-201751. Unmapped boutique (PlayOps, Magi Arts, XYDEX, Harvinger, Infinity Toy, BigBadWorkShop, InArt, POPOFREE, Toyhiti, Medicos, Zombie Sailor's, etc.) skipped. Nendoroids, HeroClix, Fall Guys, case packs, and merch rejected. No Build Publish. Live overlay skipped (DATABASE_URL unset).",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 378,
+    "ee_candidates": 49,
+    "bbts_candidates": 98,
+    "added": 4,
+    "skipped_dupes": 124,
+    "rejected_non_af": 168,
+    "unmapped_company": 63,
+    "postfilter_rejected": 0,
+    "skipped_family_dupes": 0,
+    "held": 4
+  },
+  "oneshotBefore": 32575,
+  "oneshotAfter": 32579,
+  "ee_added": 4,
+  "bbts_added": 0,
+  "samples": [
+    {
+      "sku": "MF13186",
+      "name": "Dune: Part Three Chani 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-dune-part-three-chani-7-inch-scale-action-figure-mf13186",
+      "source": "ee"
+    },
+    {
+      "sku": "MF13187",
+      "name": "Dune: Part Three Paul Atreides 7-Inch Scale Action Figure",
+      "id": "afmon-mcfarlane-dune-part-three-paul-atreides-7-inch-scale-action-figure-mf13187",
+      "source": "ee"
+    },
+    {
+      "sku": "MF13179",
+      "name": "Dune: Part Three Paul Atreides McFarlane Elite Edition 7-Inch Deluxe Action Figure",
+      "id": "afmon-mcfarlane-dune-part-three-paul-atreides-mcfarlane-elite-edition-7-inch-deluxe-action-mf13179",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG1046",
+      "name": "Transformers Cyberworld Optimus Primal Cyber Changers Energon Surge",
+      "id": "afmon-hasbro-transformers-cyberworld-optimus-primal-cyber-changers-energon-surge-hsg1046",
+      "source": "ee"
+    }
+  ]
+}
