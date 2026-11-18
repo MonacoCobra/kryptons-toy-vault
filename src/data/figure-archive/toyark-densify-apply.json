@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T06:30:04Z",
+  "generatedAt": "2026-11-18T18:49:32Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-11-10T06:30:03.686267+00:00",
+    "after": "2026-11-11T18:49:31.982445+00:00",
     "before": null
   },
   "fetch": {
@@ -45,26 +45,26 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 13,
+    "fetchedPostCount": 16,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 10986,
+    "indexedRows": 11096,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 13,
-    "acceptedCandidates": 3,
-    "rejectedRows": 12,
+    "fetchedPosts": 16,
+    "acceptedCandidates": 2,
+    "rejectedRows": 16,
     "byCompany": {
       "hasbro": {
-        "accepted": 3,
-        "rejected": 0
+        "accepted": 1,
+        "rejected": 3
       },
       "mcfarlane": {
         "accepted": 0,
-        "rejected": 1
+        "rejected": 2
       },
       "neca": {
         "accepted": 0,
@@ -80,14 +80,14 @@
       },
       "hottoys": {
         "accepted": 0,
-        "rejected": 1
+        "rejected": 3
       },
       "mondo": {
         "accepted": 0,
         "rejected": 0
       },
       "threezero": {
-        "accepted": 0,
+        "accepted": 1,
         "rejected": 0
       },
       "enterbay": {
@@ -108,18 +108,134 @@
       }
     },
     "byRejectReason": {
-      "company-not-allowlisted": 7,
+      "no-explicit-figure": 2,
+      "missing-line": 1,
+      "company-not-allowlisted": 6,
+      "possible-reissue": 3,
       "already-in-oneshot": 1,
       "news-event-post": 1,
-      "sponsor-newsletter": 2,
+      "sponsor-newsletter": 1,
       "no-new-product-identity": 1
     },
-    "applied": 3,
+    "applied": 2,
     "skippedApply": 0
   },
   "candidates": [
     {
       "decision": "accept",
+      "name": "Venom",
+      "company": "hasbro",
+      "line": "Marvel Legends",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": "Marvel Legends (Spider-Man) – Official Images and",
+      "sourceUrl": "https://www.toyark.com/2026/11/18/marvel-legends-venom-spider-man-official-images-and-preorders-602849",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/01-02-G3872_PROD_SPD_LEGENDS_DLX_1_1_STAR_0007_tif_2000px_300DPI.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602849,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Marvel Legends Venom (Spider-Man) – Official Images and Preorders",
+      "rationale": "hasbro via class:companies-hasbro; line=Marvel Legends; variant=Marvel Legends (Spider-Man) – Official Images and; year=2027; new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Power Armor",
+      "company": "threezero",
+      "line": "threezero",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Fallout – T-51 Vault-Tec",
+      "sourceUrl": "https://www.toyark.com/2026/11/18/fallout-threezero-t-51-vault-tec-power-armor-figure-602833",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Fallout-T-51-Vault-Tec-Power-Armor-007.webp",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602833,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Fallout – ThreeZero T-51 Vault-Tec Power Armor Figure",
+      "rationale": "threezero via class:companies-threezero; line=threezero; variant=Fallout – T-51 Vault-Tec; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    }
+  ],
+  "rejects": [
+    {
+      "decision": "reject",
+      "reason": "no-explicit-figure",
+      "name": null,
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/18/avengers-doomsday-hot-toys-lord-doom-concept-art-figure-preview-602830",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-Lord-Doom-Preview.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602830,
+      "title": "Avengers: Doomsday – Hot Toys Lord Doom (Concept Art) Figure Preview",
+      "rationale": "Company/signal present but no explicitly named figure/variant."
+    },
+    {
+      "decision": "reject",
+      "reason": "missing-line",
+      "name": "Paul Atreides",
+      "company": "mcfarlane",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Dune: Part 3 – and Chani – UPDATE",
+      "sourceUrl": "https://www.toyark.com/2026/11/18/dune-part-3-mcfarlane-toys-paul-atreides-and-chani-figures-602778",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/z-McFarlane-Dune-3-News-11.17.26.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602778,
+      "title": "Dune: Part 3 – McFarlane Toys Paul Atreides and Chani Figures – UPDATE",
+      "rationale": "Recognizable company but no line/subline in class_list or prose."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "other",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/17/the-terminator-inart-tech-noir-t-800-figure-602785",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602785,
+      "title": "The Terminator – InArt Tech Noir T-800 Figure",
+      "rationale": "Recognized other via class:companies-queen-studios; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "no-explicit-figure",
+      "name": null,
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/17/visionquest-hot-toys-vision-preview-602775",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-VisionQuest-Preview.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602775,
+      "title": "VisionQuest – Hot Toys Vision Preview",
+      "rationale": "Company/signal present but no explicitly named figure/variant."
+    },
+    {
+      "decision": "reject",
+      "reason": "possible-reissue",
       "name": "Superior Iron Man & Marvel's the Maker",
       "company": "hasbro",
       "line": "Marvel Legends",
@@ -132,13 +248,15 @@
       "codes": [],
       "gtin": null,
       "toyarkPostId": 602685,
-      "postYear": 2026,
-      "pack": null,
       "title": "Marvel Legends Fanstream – Superior Iron Man, The Maker, Ghost Rider and Doctor Doom",
-      "rationale": "hasbro via class:companies-hasbro; line=Marvel Legends; year=2027; new/reveal/pre-order/official-image signal"
+      "oneshotIds": [
+        "ta-97ae25500823"
+      ],
+      "rationale": "Same company+line+name(+year) exists; variant not distinct enough (ta-97ae25500823)."
     },
     {
-      "decision": "accept",
+      "decision": "reject",
+      "reason": "possible-reissue",
       "name": "Ghost Rider (sgt. Sal Romero) & Motorcycle",
       "company": "hasbro",
       "line": "Marvel Legends",
@@ -151,13 +269,15 @@
       "codes": [],
       "gtin": null,
       "toyarkPostId": 602685,
-      "postYear": 2026,
-      "pack": null,
       "title": "Marvel Legends Fanstream – Superior Iron Man, The Maker, Ghost Rider and Doctor Doom",
-      "rationale": "hasbro via class:companies-hasbro; line=Marvel Legends; year=2027; new/reveal/pre-order/official-image signal"
+      "oneshotIds": [
+        "ta-74be38aa9e39"
+      ],
+      "rationale": "Same company+line+name(+year) exists; variant not distinct enough (ta-74be38aa9e39)."
     },
     {
-      "decision": "accept",
+      "decision": "reject",
+      "reason": "possible-reissue",
       "name": "Secret Wars Doctor Doom",
       "company": "hasbro",
       "line": "Marvel Legends",
@@ -170,13 +290,12 @@
       "codes": [],
       "gtin": null,
       "toyarkPostId": 602685,
-      "postYear": 2026,
-      "pack": null,
       "title": "Marvel Legends Fanstream – Superior Iron Man, The Maker, Ghost Rider and Doctor Doom",
-      "rationale": "hasbro via class:companies-hasbro; line=Marvel Legends; year=2027; new/reveal/pre-order/official-image signal"
-    }
-  ],
-  "rejects": [
+      "oneshotIds": [
+        "ta-8d6d8d3caf40"
+      ],
+      "rationale": "Same company+line+name(+year) exists; variant not distinct enough (ta-8d6d8d3caf40)."
+    },
     {
       "decision": "reject",
       "reason": "company-not-allowlisted",
@@ -341,113 +460,45 @@
       "toyarkPostId": 602401,
       "title": "Marvel Comics – One:12 Collective Hulk Reissue and Daredevil by Mezco",
       "rationale": "Recognized mezco via class:companies-mezco; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "sponsor-newsletter",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/10/tfsource-news-adamas-machina-star-saber-takara-tomy-fans-toys-mmc-and-more-602398",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602398,
-      "title": "TFSource News! Adamas Machina Star Saber, Takara Tomy, Fans Toys, MMC and More!",
-      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "sentinel",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/10/marvel-fighting-armor-mighty-thor-by-sentinel-602387",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602387,
-      "title": "Marvel Fighting Armor Mighty Thor by Sentinel",
-      "rationale": "Recognized sentinel via class:companies-sentinel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "bossfight",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/10/boss-fight-studio-hellboy-1-12-scale-wave-2-602359",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602359,
-      "title": "Boss Fight Studio Hellboy 1/12 Scale Wave 2",
-      "rationale": "Recognized bossfight via class:companies-boss-fight-studio; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     }
   ],
   "applied": [
     {
-      "id": "ta-97ae25500823",
-      "name": "Superior Iron Man & Marvel's the Maker",
+      "id": "ta-98a1209bec79",
+      "name": "Venom",
       "company": "hasbro",
       "line": "Marvel Legends",
       "year": 2027,
-      "variant": null,
+      "variant": "Marvel Legends (Spider-Man) – Official Images and",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/New-Phototastic-Collage.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/01-02-G3872_PROD_SPD_LEGENDS_DLX_1_1_STAR_0007_tif_2000px_300DPI.jpg",
       "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/16/marvel-legends-fanstream-superior-iron-man-the-maker-ghost-rider-and-doctor-doom-602685",
-      "toyarkPostId": 602685
+      "sourceUrl": "https://www.toyark.com/2026/11/18/marvel-legends-venom-spider-man-official-images-and-preorders-602849",
+      "toyarkPostId": 602849
     },
     {
-      "id": "ta-74be38aa9e39",
-      "name": "Ghost Rider (sgt. Sal Romero) & Motorcycle",
-      "company": "hasbro",
-      "line": "Marvel Legends",
-      "year": 2027,
-      "variant": null,
+      "id": "ta-63ef888a3e98",
+      "name": "Power Armor",
+      "company": "threezero",
+      "line": "threezero",
+      "year": 2026,
+      "variant": "Fallout – T-51 Vault-Tec",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/New-Phototastic-Collage.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Fallout-T-51-Vault-Tec-Power-Armor-007.webp",
       "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/16/marvel-legends-fanstream-superior-iron-man-the-maker-ghost-rider-and-doctor-doom-602685",
-      "toyarkPostId": 602685
-    },
-    {
-      "id": "ta-8d6d8d3caf40",
-      "name": "Secret Wars Doctor Doom",
-      "company": "hasbro",
-      "line": "Marvel Legends",
-      "year": 2027,
-      "variant": null,
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/New-Phototastic-Collage.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/16/marvel-legends-fanstream-superior-iron-man-the-maker-ghost-rider-and-doctor-doom-602685",
-      "toyarkPostId": 602685
+      "sourceUrl": "https://www.toyark.com/2026/11/18/fallout-threezero-t-51-vault-tec-power-armor-figure-602833",
+      "toyarkPostId": 602833
     }
   ],
   "applySkipped": [],
   "applyStats": {
-    "accepted": 3,
-    "applied": 3,
+    "accepted": 2,
+    "applied": 2,
     "skippedApply": 0,
-    "aliasAdded": 5,
-    "withImage": 3,
+    "aliasAdded": 6,
+    "withImage": 2,
     "cap": 50,
     "blocker": null
   }

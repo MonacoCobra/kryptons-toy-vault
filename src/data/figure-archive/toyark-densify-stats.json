@@ -1,22 +1,22 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-11-17T06:30:05Z",
+  "finishedAt": "2026-11-18T18:49:33Z",
   "mode": "apply",
   "cap": 50,
-  "acceptedCandidates": 3,
-  "applied": 3,
+  "acceptedCandidates": 2,
+  "applied": 2,
   "skippedApply": 0,
-  "rejectedRows": 12,
-  "withImage": 3,
-  "aliasAdded": 5,
+  "rejectedRows": 16,
+  "withImage": 2,
+  "aliasAdded": 6,
   "byCompany": {
     "hasbro": {
-      "accepted": 3,
-      "rejected": 0
+      "accepted": 1,
+      "rejected": 3
     },
     "mcfarlane": {
       "accepted": 0,
-      "rejected": 1
+      "rejected": 2
     },
     "neca": {
       "accepted": 0,
@@ -32,14 +32,14 @@
     },
     "hottoys": {
       "accepted": 0,
-      "rejected": 1
+      "rejected": 3
     },
     "mondo": {
       "accepted": 0,
       "rejected": 0
     },
     "threezero": {
-      "accepted": 0,
+      "accepted": 1,
       "rejected": 0
     },
     "enterbay": {
@@ -60,63 +60,51 @@
     }
   },
   "byRejectReason": {
-    "company-not-allowlisted": 7,
+    "no-explicit-figure": 2,
+    "missing-line": 1,
+    "company-not-allowlisted": 6,
+    "possible-reissue": 3,
     "already-in-oneshot": 1,
     "news-event-post": 1,
-    "sponsor-newsletter": 2,
+    "sponsor-newsletter": 1,
     "no-new-product-identity": 1
   },
   "appliedIds": [
-    "ta-97ae25500823",
-    "ta-74be38aa9e39",
-    "ta-8d6d8d3caf40"
+    "ta-98a1209bec79",
+    "ta-63ef888a3e98"
   ],
   "appliedSample": [
     {
-      "id": "ta-97ae25500823",
-      "name": "Superior Iron Man & Marvel's the Maker",
+      "id": "ta-98a1209bec79",
+      "name": "Venom",
       "company": "hasbro",
       "line": "Marvel Legends",
       "year": 2027,
-      "variant": null,
+      "variant": "Marvel Legends (Spider-Man) – Official Images and",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/New-Phototastic-Collage.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/01-02-G3872_PROD_SPD_LEGENDS_DLX_1_1_STAR_0007_tif_2000px_300DPI.jpg",
       "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/16/marvel-legends-fanstream-superior-iron-man-the-maker-ghost-rider-and-doctor-doom-602685",
-      "toyarkPostId": 602685
+      "sourceUrl": "https://www.toyark.com/2026/11/18/marvel-legends-venom-spider-man-official-images-and-preorders-602849",
+      "toyarkPostId": 602849
     },
     {
-      "id": "ta-74be38aa9e39",
-      "name": "Ghost Rider (sgt. Sal Romero) & Motorcycle",
-      "company": "hasbro",
-      "line": "Marvel Legends",
-      "year": 2027,
-      "variant": null,
+      "id": "ta-63ef888a3e98",
+      "name": "Power Armor",
+      "company": "threezero",
+      "line": "threezero",
+      "year": 2026,
+      "variant": "Fallout – T-51 Vault-Tec",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/New-Phototastic-Collage.jpg",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Fallout-T-51-Vault-Tec-Power-Armor-007.webp",
       "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/16/marvel-legends-fanstream-superior-iron-man-the-maker-ghost-rider-and-doctor-doom-602685",
-      "toyarkPostId": 602685
-    },
-    {
-      "id": "ta-8d6d8d3caf40",
-      "name": "Secret Wars Doctor Doom",
-      "company": "hasbro",
-      "line": "Marvel Legends",
-      "year": 2027,
-      "variant": null,
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/New-Phototastic-Collage.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/16/marvel-legends-fanstream-superior-iron-man-the-maker-ghost-rider-and-doctor-doom-602685",
-      "toyarkPostId": 602685
+      "sourceUrl": "https://www.toyark.com/2026/11/18/fallout-threezero-t-51-vault-tec-power-armor-figure-602833",
+      "toyarkPostId": 602833
     }
   ],
   "skippedSample": [],
-  "archiveSize": 32362,
+  "archiveSize": 32581,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"
