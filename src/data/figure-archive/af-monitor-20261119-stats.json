@@ -1,0 +1,103 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-11-19",
+  "updatedAt": "2026-11-19T15:30:33Z",
+  "added": 12,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-11-19: EE newly-added (p1+p2) + hot-off-the-truck and BBTS SortOrder=New ProductType=43624 pages 1-2 (page 2 disjoint, merged). Curl 403 Cloudflare on both official sites; SKUs/images from rendered pages (box browser / Playwright locators). Shopify Super7 + Boss Fight + Good Smile US feeds also checked.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 378,
+    "ee_candidates": 44,
+    "bbts_candidates": 89,
+    "added": 12,
+    "skipped_dupes": 102,
+    "rejected_non_af": 176,
+    "unmapped_company": 68,
+    "postfilter_rejected": 0,
+    "shopify_candidates": 1,
+    "skipped_family_dupes": 0,
+    "held": 4
+  },
+  "oneshotBefore": 33667,
+  "oneshotAfter": 33679,
+  "ee_added": 9,
+  "bbts_added": 2,
+  "shopify_added": 1,
+  "samples": [
+    {
+      "sku": "MTJPT41",
+      "name": "DC Premier Series 2027 Wave 1 Tactical Strike Batman Action Figure",
+      "id": "afmon-mattel-dc-premier-series-2027-wave-1-tactical-strike-batman-action-figure-mtjpt41",
+      "source": "ee"
+    },
+    {
+      "sku": "MTJPT42",
+      "name": "DC Premier Series Wave 3 Nightwing Action Figure",
+      "id": "afmon-mattel-dc-premier-series-wave-3-nightwing-action-figure-mtjpt42",
+      "source": "ee"
+    },
+    {
+      "sku": "MTJRT89",
+      "name": "Toy Story Hi-Tech Edition Buzz Lightyear Interactables Playscale Action Figure",
+      "id": "afmon-mattel-toy-story-hi-tech-edition-buzz-lightyear-interactables-playscale-action-figur-mtjrt89",
+      "source": "ee"
+    },
+    {
+      "sku": "MTJRT88",
+      "name": "Toy Story Rex Interactables Playscale Action Figure",
+      "id": "afmon-mattel-toy-story-rex-interactables-playscale-action-figure-mtjrt88",
+      "source": "ee"
+    },
+    {
+      "sku": "TH3Z0235",
+      "name": "Tekkaman Blade Robo-DOU Action Figure",
+      "id": "afmon-threezero-tekkaman-blade-robo-dou-action-figure-th3z0235",
+      "source": "ee"
+    },
+    {
+      "sku": "HSE7475",
+      "name": "Avengers Titan Hero Series Deluxe Hulk 12-Inch Action Figure",
+      "id": "afmon-hasbro-avengers-titan-hero-series-deluxe-hulk-12-inch-action-figure-hse7475",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2842",
+      "name": "Star Wars The Mandalorian & Grogu Bounty Blaster 11-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-mandalorian-grogu-bounty-blaster-11-inch-action-figure-hsg2842",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG0896",
+      "name": "Star Wars The Black Series The Ronin 6-Inch Action Figure",
+      "id": "afmon-hasbro-star-wars-the-black-series-the-ronin-6-inch-action-figure-hsg0896",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2859",
+      "name": "Spider-Man Titan Series Spider-Man 2099 12-Inch Action Figure",
+      "id": "afmon-hasbro-spider-man-titan-series-spider-man-2099-12-inch-action-figure-hsg2859",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-201245",
+      "name": "Gremlins Ultimate Back to School Gremlin Action Figure",
+      "id": "afmon-neca-gremlins-ultimate-back-to-school-gremlin-action-figure-bbts-201245",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-202343",
+      "name": "DC Comics DC Premier Wave 3 Deathstroke Action Figure",
+      "id": "afmon-mattel-dc-comics-dc-premier-wave-3-deathstroke-action-figure-bbts-202343",
+      "source": "bbts"
+    },
+    {
+      "sku": "RE-PNUT-12632",
+      "name": "Peanuts ReAction Figures - Snoopy & Belle (2-Pack)",
+      "id": "afmon-super7-peanuts-reaction-figures-snoopy-belle-2-pack-re-pnut-12632",
+      "source": "shopify"
+    }
+  ]
+}
