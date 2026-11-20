@@ -1,0 +1,103 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-11-20",
+  "updatedAt": "2026-11-20T15:41:07Z",
+  "added": 13,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-11-20: EE newly-added (p1+p2) + hot-off-the-truck and BBTS SortOrder=New ProductType=43624 pages 1-2 (page 2 disjoint, merged). Curl 403 Cloudflare on both official sites; SKUs/images from rendered pages (box browser / Playwright locators). Shopify Super7 + Boss Fight + Good Smile US feeds also checked.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 442,
+    "ee_candidates": 57,
+    "bbts_candidates": 89,
+    "added": 13,
+    "skipped_dupes": 171,
+    "rejected_non_af": 170,
+    "unmapped_company": 68,
+    "postfilter_rejected": 0,
+    "shopify_candidates": 58,
+    "skipped_family_dupes": 6,
+    "held": 4
+  },
+  "oneshotBefore": 34585,
+  "oneshotAfter": 34598,
+  "ee_added": 8,
+  "bbts_added": 0,
+  "shopify_added": 5,
+  "samples": [
+    {
+      "sku": "HSE9318",
+      "name": "Spider-Man Retro Marvel Legends Electro 6-Inch Action Figure",
+      "id": "afmon-hasbro-spider-man-retro-marvel-legends-electro-6-inch-action-figure-hse9318",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2360",
+      "name": "X-Men 97 Marvel Legends Cyclops X-Corps 6-inch Action Figure",
+      "id": "afmon-hasbro-x-men-97-marvel-legends-cyclops-x-corps-6-inch-action-figure-hsg2360",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2857",
+      "name": "Spider-Man Titan Series Miles Morales 12-Inch Action Figure",
+      "id": "afmon-hasbro-spider-man-titan-series-miles-morales-12-inch-action-figure-hsg2857",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2715",
+      "name": "Spider-Man Titan Series 12-Inch Action Figure",
+      "id": "afmon-hasbro-spider-man-titan-series-12-inch-action-figure-hsg2715",
+      "source": "ee"
+    },
+    {
+      "sku": "HSF0125",
+      "name": "Transformers Generations War for Cybertron: Earthrise Deluxe WFC-E41 Decepticon Runabout",
+      "id": "afmon-hasbro-transformers-generations-war-for-cybertron-earthrise-deluxe-wfc-e41-deceptico-hsf0125",
+      "source": "ee"
+    },
+    {
+      "sku": "HSF3987",
+      "name": "Spidey and His Amazing Friends Supersized Ghost Spider 9-inch Action Figure",
+      "id": "afmon-hasbro-spidey-and-his-amazing-friends-supersized-ghost-spider-9-inch-action-figure-hsf3987",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG1328",
+      "name": "The Fantastic Four: First Steps The Thing 12-Inch Action Figure",
+      "id": "afmon-hasbro-the-fantastic-four-first-steps-the-thing-12-inch-action-figure-hsg1328",
+      "source": "ee"
+    },
+    {
+      "sku": "HSG2830",
+      "name": "Transformers Prime Changers Megatron Action Figure",
+      "id": "afmon-hasbro-transformers-prime-changers-megatron-action-figure-hsg2830",
+      "source": "ee"
+    },
+    {
+      "sku": "RE-VINC-14586",
+      "name": "Vincent Price ReAction Figures - Vincent Price (Ghost)",
+      "id": "afmon-super7-vincent-price-reaction-figures-vincent-price-ghost-re-vinc-14586",
+      "source": "shopify"
+    },
+    {
+      "sku": "FR0014",
+      "name": "Fraggle Rock Action Figure: Gobo",
+      "id": "afmon-bossfight-fraggle-rock-action-figure-gobo-fr0014",
+      "source": "shopify"
+    },
+    {
+      "sku": "FR0015",
+      "name": "Fraggle Rock Action Figure: Red",
+      "id": "afmon-bossfight-fraggle-rock-action-figure-red-fr0015",
+      "source": "shopify"
+    },
+    {
+      "sku": "FR0016",
+      "name": "Fraggle Rock Action Figure: Wembley",
+      "id": "afmon-bossfight-fraggle-rock-action-figure-wembley-fr0016",
+      "source": "shopify"
+    }
+  ]
+}
