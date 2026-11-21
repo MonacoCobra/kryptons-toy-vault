@@ -1,6 +1,6 @@
 # Krypton's Toy Vault — Android TWA (Play AAB)
 
-Trusted Web Activity around **https://kryptons-toy-vault.grok.me**  
+Trusted Web Activity around **https://kryptonstoyvault.com**  
 Application id: **`me.kryptontoyvault.app`**
 
 This folder is a Gradle project you open in Android Studio or build with `./gradlew`. It does **not** contain a keystore. Generate keys on your machine; never commit `*.jks`, `*.keystore`, or `keystore.properties`.
@@ -35,7 +35,7 @@ Package (already set): `me.kryptontoyvault.app`
 | Upload key SHA-256 | Local / sideload builds signed with the new keystore | `print-sha256.sh` (`keytool` `SHA256:` line, colon-separated uppercase) |
 | **Play App Signing SHA-256** | **Play-installed TWA URL-bar verification** | Play Console → Test and release → App integrity → App signing → **App signing key certificate** |
 
-Play re-signs the app users install. Chrome checks the **Play App Signing** cert, not only the upload key. After the first AAB upload, append that SHA-256 to **both** `public/.well-known/assetlinks.json` and `src/lib/android/assetlinks.json` (keep them identical), merge, and **republish Live** so `https://kryptons-toy-vault.grok.me/.well-known/assetlinks.json` updates (`Content-Type: application/json`).
+Play re-signs the app users install. Chrome checks the **Play App Signing** cert, not only the upload key. After the first AAB upload, append that SHA-256 to **both** `public/.well-known/assetlinks.json` and `src/lib/android/assetlinks.json` (keep them identical), merge, and **republish Live** so `https://kryptonstoyvault.com/.well-known/assetlinks.json` updates (`Content-Type: application/json`).
 
 ## Build the signed AAB
 
@@ -56,8 +56,8 @@ Upload the AAB in Play Console (Internal testing first is safest). Bump `version
 ## Verify Digital Asset Links
 
 ```text
-https://kryptons-toy-vault.grok.me/.well-known/assetlinks.json
-https://digitalassetlinks.googleapis.com/v1/statements:list?source.web.site=https://kryptons-toy-vault.grok.me
+https://kryptonstoyvault.com/.well-known/assetlinks.json
+https://digitalassetlinks.googleapis.com/v1/statements:list?source.web.site=https://kryptonstoyvault.com
 ```
 
 On device (after install): `adb logcat | grep -e OriginVerifier -e digital_asset_links`

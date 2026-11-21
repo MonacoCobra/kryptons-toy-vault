@@ -5,7 +5,7 @@ import android.os.Build;
 import android.os.Bundle;
 
 /**
- * Trusted Web Activity launcher for https://kryptons-toy-vault.grok.me
+ * Trusted Web Activity launcher for https://kryptonstoyvault.com
  */
 public class LauncherActivity extends com.google.androidbrowserhelper.trusted.LauncherActivity {
     @Override

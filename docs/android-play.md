@@ -1,8 +1,8 @@
 # Google Play — Trusted Web Activity (AAB)
 
 Package: `me.kryptontoyvault.app`  
-Start URL: `https://kryptons-toy-vault.grok.me/`  
-Hosted on **Grok Build** (this GitHub repo is the source of truth).
+Start URL: `https://kryptonstoyvault.com/`  
+Live site: **https://kryptonstoyvault.com** (this GitHub repo is the source of truth).
 
 This is the Play Console path. Sideload APKs still ship from GitHub Releases — see [android-apk.md](android-apk.md).
 
@@ -10,7 +10,7 @@ This is the Play Console path. Sideload APKs still ship from GitHub Releases —
 
 | On Live (web deploy) | Local only (never commit) |
 | --- | --- |
-| `public/.well-known/assetlinks.json` at `https://kryptons-toy-vault.grok.me/.well-known/assetlinks.json` (`Content-Type: application/json`) | `android/upload-keystore.jks` |
+| `public/.well-known/assetlinks.json` at `https://kryptonstoyvault.com/.well-known/assetlinks.json` (`Content-Type: application/json`) | `android/upload-keystore.jks` |
 | PWA / TWA start URL and manifest | `android/keystore.properties` (passwords) |
 | Package name + SHA-256 fingerprint(s) Google Play / Chrome check | The signed `.aab` you upload in Play Console |
 
@@ -22,11 +22,11 @@ Edit `public/.well-known/assetlinks.json` → `target.sha256_cert_fingerprints`.
 2. **Upload key** — after `bash scripts/android/create-upload-keystore.sh`, copy the printed SHA-256. Skip this if Play uses the same keystore already represented in the file.
 3. **Play App Signing (required for Play-installed TWA)** — after the first AAB upload: Play Console → **Test and release** → **App integrity** → **App signing** → copy **App signing key certificate** SHA-256. Chrome checks *this* cert for Play installs, not the upload key.
 
-Then merge to `main` and republish the Grok Build Live site so the crawler sees the new JSON.
+Then merge to `main` and republish the live site so the crawler sees the new JSON.
 
 Keep `src/lib/android/assetlinks.json` identical to the public file (the production handler bundles the `src` copy). `node --test scripts/android/assetlinks.test.mjs` fails if they drift.
 
-Check: [Digital Asset Links statement list](https://digitalassetlinks.googleapis.com/v1/statements:list?source.web.site=https://kryptons-toy-vault.grok.me)
+Check: [Digital Asset Links statement list](https://digitalassetlinks.googleapis.com/v1/statements:list?source.web.site=https://kryptonstoyvault.com)
 
 ## Local AAB (upload to Play)
 

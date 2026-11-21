@@ -97,7 +97,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data
-                    android:host="kryptons-toy-vault.grok.me"
+                    android:host="kryptonstoyvault.com"
                     android:scheme="https" />
             </intent-filter>
         </activity>
