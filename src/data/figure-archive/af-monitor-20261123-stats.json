@@ -1,0 +1,103 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-11-23",
+  "updatedAt": "2026-11-23T15:57:02Z",
+  "added": 17,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-11-23: EE newly-added (p1+p2) + hot-off-the-truck and BBTS SortOrder=New ProductType=43624 pages 1-2 (page 2 disjoint, merged). BBTS was a partial read: 20 items on each of two pages (40 unique), fewer than the usual roughly 100 per page. Curl 403 Cloudflare on both official sites; SKUs/images from rendered pages (box browser / Playwright locators). Shopify Super7 + Boss Fight + Good Smile US feeds also checked.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 353,
+    "ee_candidates": 29,
+    "bbts_candidates": 16,
+    "added": 17,
+    "skipped_dupes": 85,
+    "rejected_non_af": 232,
+    "unmapped_company": 17,
+    "postfilter_rejected": 0,
+    "shopify_candidates": 59,
+    "skipped_family_dupes": 7,
+    "held": 0
+  },
+  "oneshotBefore": 34624,
+  "oneshotAfter": 34641,
+  "ee_added": 4,
+  "bbts_added": 13,
+  "shopify_added": 0,
+  "samples": [
+    {
+      "sku": "BFSM0006",
+      "name": "Sam & Max 1:18 Scale The Bootleg Corndog Case Action Figure 2-pack",
+      "id": "afmon-bossfight-sam-max-1-18-scale-the-bootleg-corndog-case-action-figure-2-pack-bfsm0006",
+      "source": "ee"
+    },
+    {
+      "sku": "BFSM0005",
+      "name": "Sam & Max 1:18 Scale The Fizzball Championship Action Figure 2-Pack",
+      "id": "afmon-bossfight-sam-max-1-18-scale-the-fizzball-championship-action-figure-2-pack-bfsm0005",
+      "source": "ee"
+    },
+    {
+      "sku": "HSE7877",
+      "name": "Avengers Titan Hero Series Captain America 12-Inch Action Figure",
+      "id": "afmon-hasbro-avengers-titan-hero-series-captain-america-12-inch-action-figure-hse7877",
+      "source": "ee"
+    },
+    {
+      "sku": "HSF9299",
+      "name": "Captain America Brave New World, Titan Hero Series 12-Inch Deluxe Red Hulk Action Figure",
+      "id": "afmon-hasbro-captain-america-brave-new-world-titan-hero-series-12-inch-deluxe-red-hulk-act-hsf9299",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-200059",
+      "name": "Space Jam (1996) MAFEX No.327 Michael Jordan Action Figure",
+      "id": "afmon-mafex-space-jam-1996-mafex-no-327-michael-jordan-action-figure-bbts-200059",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200061",
+      "name": "Michael Jordan MAFEX No.329 Michael Jordan (1993 Air Jordan Ver.) Action Figure",
+      "id": "afmon-mafex-michael-jordan-mafex-no-329-michael-jordan-1993-air-jordan-ver-action-figu-bbts-200061",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-200060",
+      "name": "Michael Jordan MAFEX No.328 Michael Jordan (1992 Air Jordan Ver.) Action Figure",
+      "id": "afmon-mafex-michael-jordan-mafex-no-328-michael-jordan-1992-air-jordan-ver-action-figu-bbts-200060",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-202580",
+      "name": "Marvel Infinity Saga MAFEX No.341 T'Chaka (Black Panther Ver.) Action Figure",
+      "id": "afmon-mafex-marvel-infinity-saga-mafex-no-341-t-chaka-black-panther-ver-action-figure-bbts-202580",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-202578",
+      "name": "Batman: No Man's Land MAFEX No.339 Batgirl (Cassandra Cain Ver.) Action Figure",
+      "id": "afmon-mafex-batman-no-man-s-land-mafex-no-339-batgirl-cassandra-cain-ver-action-figure-bbts-202578",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-202579",
+      "name": "Batman: KnightsEnd MAFEX No.340 Batman Action Figure",
+      "id": "afmon-mafex-batman-knightsend-mafex-no-340-batman-action-figure-bbts-202579",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-202540",
+      "name": "The King of Fighters '98: Ultimate Match Psycho Soldier Team Sie Kensou 1/18 Scale Action Figure",
+      "id": "afmon-joytoy-the-king-of-fighters-98-ultimate-match-psycho-soldier-team-sie-kensou-1-1-bbts-202540",
+      "source": "bbts"
+    },
+    {
+      "sku": "BBTS-202541",
+      "name": "The King of Fighters '98: Ultimate Match Psycho Soldier Team Chin Gentsai 1/18 Scale Action Figure",
+      "id": "afmon-joytoy-the-king-of-fighters-98-ultimate-match-psycho-soldier-team-chin-gentsai-1-bbts-202541",
+      "source": "bbts"
+    }
+  ]
+}
