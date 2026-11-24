@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T06:28:47Z",
+  "generatedAt": "2026-11-24T18:51:09Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-11-17T06:28:46.081667+00:00",
+    "after": "2026-11-17T18:51:08.582321+00:00",
     "before": null
   },
   "fetch": {
@@ -45,18 +45,18 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 14,
+    "fetchedPostCount": 17,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 12861,
+    "indexedRows": 12864,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 14,
+    "fetchedPosts": 17,
     "acceptedCandidates": 7,
-    "rejectedRows": 9,
+    "rejectedRows": 12,
     "byCompany": {
       "hasbro": {
         "accepted": 1,
@@ -64,7 +64,7 @@
       },
       "mcfarlane": {
         "accepted": 0,
-        "rejected": 1
+        "rejected": 2
       },
       "neca": {
         "accepted": 0,
@@ -79,11 +79,11 @@
         "rejected": 0
       },
       "hottoys": {
-        "accepted": 5,
+        "accepted": 4,
         "rejected": 2
       },
       "mondo": {
-        "accepted": 0,
+        "accepted": 1,
         "rejected": 0
       },
       "threezero": {
@@ -108,10 +108,12 @@
       }
     },
     "byRejectReason": {
-      "sponsor-newsletter": 2,
-      "company-not-allowlisted": 2,
-      "company-unknown": 2,
-      "no-explicit-figure": 2,
+      "sponsor-newsletter": 3,
+      "company-unknown": 4,
+      "no-new-product-identity": 1,
+      "possible-reissue": 1,
+      "company-not-allowlisted": 1,
+      "no-explicit-figure": 1,
       "missing-line": 1
     },
     "applied": 4,
@@ -120,30 +122,22 @@
   "candidates": [
     {
       "decision": "accept",
-      "name": "VisionQuest – 1/6th Scale Vision Collectible",
-      "company": "hottoys",
-      "line": "Hot Toys MMS",
+      "name": "Michelangelo",
+      "company": "mondo",
+      "line": "Mondo",
       "year": null,
       "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/23/new-marvel-hot-toys-vision-ultron-loki-spider-man-602960",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/z-Hot-Toys-Marvel-11.23.26.jpg",
-      "aliases": [
-        "MMS862",
-        "MMS892",
-        "MMS761"
-      ],
-      "codes": [
-        "MMS862",
-        "MMS892",
-        "MMS761"
-      ],
+      "variant": "Tmnt",
+      "sourceUrl": "https://www.toyark.com/2026/11/24/tmnt-mondo-michelangelo-603138",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Mondo-TMNT-Michelangelo-007.jpg",
+      "aliases": [],
+      "codes": [],
       "gtin": null,
-      "toyarkPostId": 602960,
+      "toyarkPostId": 603138,
       "postYear": 2026,
       "pack": null,
-      "title": "New Marvel Hot Toys – Vision, Ultron, Loki, Spider-Man",
-      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys MMS; no street year in prose (not invented); aliases-from-source=MMS862,MMS892,MMS761; new/reveal/pre-order/official-image signal"
+      "title": "TMNT – Mondo Michelangelo",
+      "rationale": "mondo via class:companies-mondo; line=Mondo; variant=Tmnt; no street year in prose (not invented); new/reveal/pre-order/official-image signal"
     },
     {
       "decision": "accept",
@@ -286,6 +280,107 @@
       "year": null,
       "releaseWindow": null,
       "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/24/tfsource-news-black-friday-week-starts-today-only-save-up-to-40-on-select-fans-toys-603205",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 603205,
+      "title": "TFSource News! Black Friday Week Starts! Today only – Save Up to $40 on Select Fans Toys!",
+      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/24/mafex-michael-jordan-space-jam-air-jordan-1992-and-air-jordan-1993-603106",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 603106,
+      "title": "MAFEX Michael Jordan – Space Jam, Air Jordan 1992, and Air Jordan 1993",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/24/new-marvel-and-dc-mafex-tchaka-knightsend-batman-batgirl-603073",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 603073,
+      "title": "New Marvel and DC MAFEX – T’Chaka, KnightsEnd Batman, Batgirl",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
+    {
+      "decision": "reject",
+      "reason": "no-new-product-identity",
+      "name": null,
+      "company": "mcfarlane",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/24/world-of-warcraft-mcfarlane-elite-edition-lich-king-603062",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 603062,
+      "title": "World of Warcraft – McFarlane Elite Edition Lich King",
+      "rationale": "Allowlisted company but no new/reveal/pre-order/official-image signal."
+    },
+    {
+      "decision": "reject",
+      "reason": "possible-reissue",
+      "name": "VisionQuest – 1/6th Scale Vision Collectible",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/23/new-marvel-hot-toys-vision-ultron-loki-spider-man-602960",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/z-Hot-Toys-Marvel-11.23.26.jpg",
+      "aliases": [
+        "MMS862",
+        "MMS892",
+        "MMS761"
+      ],
+      "codes": [
+        "MMS862",
+        "MMS892",
+        "MMS761"
+      ],
+      "gtin": null,
+      "toyarkPostId": 602960,
+      "title": "New Marvel Hot Toys – Vision, Ultron, Loki, Spider-Man",
+      "oneshotIds": [
+        "ta-0c9ffef9e61c"
+      ],
+      "rationale": "Same company+line+name(+year) exists; variant not distinct enough (ta-0c9ffef9e61c)."
+    },
+    {
+      "decision": "reject",
+      "reason": "sponsor-newsletter",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
       "sourceUrl": "https://www.toyark.com/2026/11/20/the-chosen-prime-newsletter-november-20-2026-602956",
       "imageUrl": null,
       "aliases": [],
@@ -402,62 +497,22 @@
       "toyarkPostId": 602778,
       "title": "Dune: Part 3 – McFarlane Toys Paul Atreides and Chani Figures – UPDATE",
       "rationale": "Recognizable company but no line/subline in class_list or prose."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "other",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/17/the-terminator-inart-tech-noir-t-800-figure-602785",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602785,
-      "title": "The Terminator – InArt Tech Noir T-800 Figure",
-      "rationale": "Recognized other via class:companies-queen-studios; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "no-explicit-figure",
-      "name": null,
-      "company": "hottoys",
-      "line": "Hot Toys",
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/17/visionquest-hot-toys-vision-preview-602775",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-VisionQuest-Preview.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602775,
-      "title": "VisionQuest – Hot Toys Vision Preview",
-      "rationale": "Company/signal present but no explicitly named figure/variant."
     }
   ],
   "applied": [
     {
-      "id": "ta-0c9ffef9e61c",
-      "name": "VisionQuest – 1/6th Scale Vision Collectible",
-      "company": "hottoys",
-      "line": "Hot Toys MMS",
+      "id": "ta-bda401df7576",
+      "name": "Michelangelo",
+      "company": "mondo",
+      "line": "Mondo",
       "year": 2026,
-      "variant": null,
+      "variant": "Tmnt",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/z-Hot-Toys-Marvel-11.23.26.jpg",
-      "aliases": [
-        "MMS862",
-        "MMS892",
-        "MMS761"
-      ],
-      "sourceUrl": "https://www.toyark.com/2026/11/23/new-marvel-hot-toys-vision-ultron-loki-spider-man-602960",
-      "toyarkPostId": 602960
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Mondo-TMNT-Michelangelo-007.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/11/24/tmnt-mondo-michelangelo-603138",
+      "toyarkPostId": 603138
     },
     {
       "id": "ta-d75b0a0a3388",
@@ -533,7 +588,7 @@
     "accepted": 7,
     "applied": 4,
     "skippedApply": 3,
-    "aliasAdded": 14,
+    "aliasAdded": 11,
     "withImage": 4,
     "cap": 50,
     "blocker": null

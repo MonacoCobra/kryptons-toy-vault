@@ -1,11 +1,11 @@
 {
-  "bakedAt": "2026-11-24T06:31:55.764952+00:00",
-  "dryRun": false,
+  "bakedAt": "2026-11-24T18:54:19.804795+00:00",
+  "dryRun": true,
   "lines": [
     {
-      "bakedAt": "2026-11-24T06:29:35.155300+00:00",
+      "bakedAt": "2026-11-24T18:51:54.962804+00:00",
       "line": "black-series",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 1007,
       "mephitsuWithGtin": 490,
       "enrichStats": {
@@ -16,8 +16,8 @@
       "before": {
         "total": 636,
         "withSku": 487,
-        "withGtin": 323,
-        "withListingPrimary": 164,
+        "withGtin": 324,
+        "withListingPrimary": 163,
         "withImage": 528,
         "emptySku": 149,
         "emptyImage": 108
@@ -33,11 +33,11 @@
       },
       "apply": {
         "matched": 318,
-        "gtinAssigned": 1,
-        "gtinUpgraded": 1,
+        "gtinAssigned": 0,
+        "gtinUpgraded": 0,
         "imagesFilled": 0,
         "imagesSkipped": 4,
-        "aliasesAttached": 1,
+        "aliasesAttached": 0,
         "skippedGtinConflict": 27,
         "blockedByAudit": 0,
         "reattachedAfterEnforce": 0,
@@ -118,9 +118,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T06:29:48.032961+00:00",
+      "bakedAt": "2026-11-24T18:52:08.124722+00:00",
       "line": "gi-joe-classified",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 318,
       "mephitsuWithGtin": 164,
       "enrichStats": {
@@ -130,12 +130,12 @@
       },
       "before": {
         "total": 1095,
-        "withSku": 317,
-        "withGtin": 153,
+        "withSku": 329,
+        "withGtin": 165,
         "withListingPrimary": 164,
-        "withImage": 389,
-        "emptySku": 778,
-        "emptyImage": 706
+        "withImage": 420,
+        "emptySku": 766,
+        "emptyImage": 675
       },
       "after": {
         "total": 1095,
@@ -148,10 +148,10 @@
       },
       "apply": {
         "matched": 207,
-        "gtinAssigned": 12,
+        "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 31,
-        "imagesSkipped": 9,
+        "imagesFilled": 2,
+        "imagesSkipped": 7,
         "aliasesAttached": 0,
         "skippedGtinConflict": 46,
         "blockedByAudit": 0,
@@ -237,16 +237,6 @@
             "reason": "listing_gtin_owned_by:d14joe-snakeeyes-desert"
           },
           {
-            "figureId": "hasbro-gijcl-w48-crimson-alley-viper-2023",
-            "mephitsu": "Crimson  Alley Viper — Walmart (US) / Hasbro Pulse (UK) · 2023 · GI Joe",
-            "reason": "listing_code_owned_by:cls6-cls-viper-w6"
-          },
-          {
-            "figureId": "hasbro-gijcl-w48-chip-raptor-talon-and-general-ledger-2024",
-            "mephitsu": "Chip 'Raptor' Talon & General Ledger — General · 2024 · GI Joe",
-            "reason": "listing_code_owned_by:hs10-hs-34"
-          },
-          {
             "figureId": "hasbro-gijcl-w48-crimson-b-a-t-2023",
             "mephitsu": "Crimson B.A.T. — Wave 11 · 2023 · GI Joe",
             "reason": "listing_gtin_owned_by:joec-classified-crimson-guard"
@@ -275,9 +265,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T06:29:55.485066+00:00",
+      "bakedAt": "2026-11-24T18:52:15.285554+00:00",
       "line": "transformers",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 280,
       "mephitsuWithGtin": 248,
       "enrichStats": {
@@ -286,29 +276,29 @@
         "already": 248
       },
       "before": {
-        "total": 1474,
-        "withSku": 684,
-        "withGtin": 521,
-        "withListingPrimary": 163,
-        "withImage": 681,
-        "emptySku": 790,
-        "emptyImage": 793
+        "total": 1476,
+        "withSku": 704,
+        "withGtin": 539,
+        "withListingPrimary": 165,
+        "withImage": 693,
+        "emptySku": 772,
+        "emptyImage": 783
       },
       "after": {
-        "total": 1474,
-        "withSku": 702,
+        "total": 1476,
+        "withSku": 704,
         "withGtin": 539,
-        "withListingPrimary": 163,
-        "withImage": 691,
+        "withListingPrimary": 165,
+        "withImage": 693,
         "emptySku": 772,
         "emptyImage": 783
       },
       "apply": {
         "matched": 90,
-        "gtinAssigned": 18,
+        "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 10,
-        "imagesSkipped": 43,
+        "imagesFilled": 5,
+        "imagesSkipped": 38,
         "aliasesAttached": 0,
         "skippedGtinConflict": 38,
         "blockedByAudit": 1,
@@ -389,11 +379,6 @@
         ],
         "photoVetoes": [
           {
-            "figureId": "hasbro-tf-g1-w59-ultra-magnus-1986",
-            "mephitsu": "Ultra Magnus — Transformers The Movie (1986) · 2024 · Transformers",
-            "reason": "listing_code_owned_by:tfc-siege-ultragnus"
-          },
-          {
             "figureId": "hasbro-tf-generations-w61-wheeljack-2011",
             "mephitsu": "Wheeljack — Deluxe Class Wave 31 · 2026 · Transformers Studio Series",
             "reason": "listing_gtin_owned_by:ss4-ss86-wheeljack"
@@ -404,11 +389,6 @@
             "reason": "listing_gtin_owned_by:ss4-ss86-sunstreaker"
           },
           {
-            "figureId": "hasbro-tf-vintage-g1-w64-ultra-magnus-2002",
-            "mephitsu": "Ultra Magnus — Wave 1 · 2023 · Transformers",
-            "reason": "listing_code_owned_by:tfc-siege-ultragnus"
-          },
-          {
             "figureId": "hasbro-tf-g1-w59-hot-rod-1986",
             "mephitsu": "Hot Rod — MTMTE Target Exclusive (US) · 2026 · Transformers",
             "reason": "listing_gtin_owned_by:hs8-hs-26"
@@ -417,11 +397,6 @@
             "figureId": "hasbro-tf-g1-w59-wreck-gar-1986",
             "mephitsu": "Wreck-Gar — Wave 13 · 2021 · Transformers",
             "reason": "listing_gtin_owned_by:tfss-ss86-wreckgar"
-          },
-          {
-            "figureId": "hasbro-tf-g1-w59-long-haul-1985",
-            "mephitsu": "Long Haul — Wave 3 Leader Devastator Series · 2025 · Transformers",
-            "reason": "listing_code_owned_by:d14ss-dotm-longhaul"
           },
           {
             "figureId": "hasbro-tf-universe-w61-optimus-primal-2003",
@@ -442,11 +417,6 @@
             "figureId": "hasbro-tf-g1-w59-galvatron-1986",
             "mephitsu": "Galvatron — Transformers The Movie (1986) · 2025 · Transformers",
             "reason": "listing_gtin_owned_by:tflu-core-energon-universe-galvatron"
-          },
-          {
-            "figureId": "hasbro-tf-combiner-wars-w60-windcharger-2014",
-            "mephitsu": "Windcharger — Deluxe Class Wave 30 · 2026 · Transformers Studio Series",
-            "reason": "listing_code_owned_by:tfss-ss86-coronation-ss"
           },
           {
             "figureId": "hasbro-tf-classics-w61-mirage-2006",
@@ -504,11 +474,6 @@
             "reason": "listing_gtin_owned_by:tfss-ss-core-laserbeak"
           },
           {
-            "figureId": "hasbro-tf-titans-return-w60-ravage-2016",
-            "mephitsu": "Ravage — Wave 1 · 2022 · Transformers",
-            "reason": "listing_code_owned_by:tfss-ss-core-ravage"
-          },
-          {
             "figureId": "hasbro-tf-titans-return-w60-gnaw-2016",
             "mephitsu": "Gnaw — Wave 13 · 2021 · Transformers",
             "reason": "listing_gtin_owned_by:tfss-ss86-gnaw-alt"
@@ -559,11 +524,6 @@
             "reason": "listing_gtin_owned_by:tfss-ss-constructicon-scrapper"
           },
           {
-            "figureId": "hasbro-tf-g1-w59-rampage-1986",
-            "mephitsu": "Rampage — Wave 6 · 2019 · Transformers",
-            "reason": "listing_code_owned_by:tfss-ss91-fallen"
-          },
-          {
             "figureId": "hasbro-tf-universe-w61-hightower-2004",
             "mephitsu": "Hightower — Wave 7 · 2019 · Transformers",
             "reason": "listing_gtin_owned_by:d14ss-dotm-hightower"
@@ -574,11 +534,6 @@
             "reason": "listing_gtin_owned_by:tfss-ss-core-starscream"
           },
           {
-            "figureId": "hasbro-tf-g1-w59-bumblebee-red-1984",
-            "mephitsu": "Bumblebee — Wave 1 · 2018 · Transformers",
-            "reason": "listing_code_owned_by:ss5-ss-bumblebee-bb"
-          },
-          {
             "figureId": "hasbro-tf-kingdom-w63-blaster-and-eject-2020",
             "mephitsu": "Blaster with Eject — Target (US) / Fan Channel · 2024 · Transformers",
             "reason": "listing_gtin_owned_by:tfss-ss86-blaster"
@@ -587,9 +542,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T06:30:56.227544+00:00",
+      "bakedAt": "2026-11-24T18:53:20.481406+00:00",
       "line": "mcfarlane",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 2220,
       "mephitsuWithGtin": 969,
       "enrichStats": {
@@ -602,9 +557,9 @@
         "withSku": 882,
         "withGtin": 631,
         "withListingPrimary": 251,
-        "withImage": 966,
+        "withImage": 974,
         "emptySku": 929,
-        "emptyImage": 845
+        "emptyImage": 837
       },
       "after": {
         "total": 1811,
@@ -619,7 +574,7 @@
         "matched": 628,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 8,
+        "imagesFilled": 0,
         "imagesSkipped": 61,
         "aliasesAttached": 0,
         "skippedGtinConflict": 86,
@@ -884,9 +839,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T06:31:28.797796+00:00",
+      "bakedAt": "2026-11-24T18:53:52.627687+00:00",
       "line": "neca",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 1502,
       "mephitsuWithGtin": 442,
       "enrichStats": {
@@ -1006,9 +961,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T06:31:46.100888+00:00",
+      "bakedAt": "2026-11-24T18:54:10.277470+00:00",
       "line": "super7",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 520,
       "mephitsuWithGtin": 68,
       "enrichStats": {
@@ -1121,9 +1076,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T06:31:47.397053+00:00",
+      "bakedAt": "2026-11-24T18:54:11.321026+00:00",
       "line": "diamond-select",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 597,
       "mephitsuWithGtin": 2,
       "enrichStats": {
@@ -1236,9 +1191,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T06:31:52.725268+00:00",
+      "bakedAt": "2026-11-24T18:54:16.875000+00:00",
       "line": "power-rangers",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 188,
       "mephitsuWithGtin": 89,
       "enrichStats": {
@@ -1248,12 +1203,12 @@
       },
       "before": {
         "total": 252,
-        "withSku": 89,
-        "withGtin": 80,
+        "withSku": 91,
+        "withGtin": 82,
         "withListingPrimary": 9,
-        "withImage": 161,
-        "emptySku": 163,
-        "emptyImage": 91
+        "withImage": 168,
+        "emptySku": 161,
+        "emptyImage": 84
       },
       "after": {
         "total": 252,
@@ -1266,9 +1221,9 @@
       },
       "apply": {
         "matched": 124,
-        "gtinAssigned": 2,
+        "gtinAssigned": 0,
         "gtinUpgraded": 0,
-        "imagesFilled": 7,
+        "imagesFilled": 0,
         "imagesSkipped": 6,
         "aliasesAttached": 0,
         "skippedGtinConflict": 24,
@@ -1358,9 +1313,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T06:31:55.757636+00:00",
+      "bakedAt": "2026-11-24T18:54:19.798277+00:00",
       "line": "indiana-jones",
-      "dryRun": false,
+      "dryRun": true,
       "mephitsuCount": 28,
       "mephitsuWithGtin": 0,
       "enrichStats": {

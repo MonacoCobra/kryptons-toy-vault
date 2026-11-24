@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-11-24T06:28:47Z",
+  "finishedAt": "2026-11-24T18:51:10Z",
   "mode": "apply",
   "cap": 50,
   "acceptedCandidates": 7,
   "applied": 4,
   "skippedApply": 3,
-  "rejectedRows": 9,
+  "rejectedRows": 12,
   "withImage": 4,
-  "aliasAdded": 14,
+  "aliasAdded": 11,
   "byCompany": {
     "hasbro": {
       "accepted": 1,
@@ -16,7 +16,7 @@
     },
     "mcfarlane": {
       "accepted": 0,
-      "rejected": 1
+      "rejected": 2
     },
     "neca": {
       "accepted": 0,
@@ -31,11 +31,11 @@
       "rejected": 0
     },
     "hottoys": {
-      "accepted": 5,
+      "accepted": 4,
       "rejected": 2
     },
     "mondo": {
-      "accepted": 0,
+      "accepted": 1,
       "rejected": 0
     },
     "threezero": {
@@ -60,36 +60,34 @@
     }
   },
   "byRejectReason": {
-    "sponsor-newsletter": 2,
-    "company-not-allowlisted": 2,
-    "company-unknown": 2,
-    "no-explicit-figure": 2,
+    "sponsor-newsletter": 3,
+    "company-unknown": 4,
+    "no-new-product-identity": 1,
+    "possible-reissue": 1,
+    "company-not-allowlisted": 1,
+    "no-explicit-figure": 1,
     "missing-line": 1
   },
   "appliedIds": [
-    "ta-0c9ffef9e61c",
+    "ta-bda401df7576",
     "ta-d75b0a0a3388",
     "ta-554fb0ef261d",
     "ta-98a1209bec79fca9"
   ],
   "appliedSample": [
     {
-      "id": "ta-0c9ffef9e61c",
-      "name": "VisionQuest – 1/6th Scale Vision Collectible",
-      "company": "hottoys",
-      "line": "Hot Toys MMS",
+      "id": "ta-bda401df7576",
+      "name": "Michelangelo",
+      "company": "mondo",
+      "line": "Mondo",
       "year": 2026,
-      "variant": null,
+      "variant": "Tmnt",
       "sku": null,
       "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/z-Hot-Toys-Marvel-11.23.26.jpg",
-      "aliases": [
-        "MMS862",
-        "MMS892",
-        "MMS761"
-      ],
-      "sourceUrl": "https://www.toyark.com/2026/11/23/new-marvel-hot-toys-vision-ultron-loki-spider-man-602960",
-      "toyarkPostId": 602960
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Mondo-TMNT-Michelangelo-007.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/11/24/tmnt-mondo-michelangelo-603138",
+      "toyarkPostId": 603138
     },
     {
       "id": "ta-d75b0a0a3388",
@@ -161,7 +159,7 @@
       "toyarkPostId": 602833
     }
   ],
-  "archiveSize": 35323,
+  "archiveSize": 35330,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"
