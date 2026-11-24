@@ -13889,7 +13889,8 @@
     "Clears BOTH oneshot.imageUrl and figure-image-urls.json (resolveFigureImageUrl falls through to overlay).",
     "Refill is GTIN-only, high-confidence, never multipack→single, never invents SKUs/images.",
     "Comics/UPC and Mephitsu crawl paths untouched.",
-    "Vera FP revert: restored oneshot+overlay for ['tfc-selects-gs08-powerdasher-zetar', 'tfc-selects-k39-tricranius-beast-power', 'tfgs-tt-gs10-god-neptune']; net cleared after revert = 3"
+    "Vera FP revert: restored oneshot+overlay for ['tfc-selects-gs08-powerdasher-zetar', 'tfc-selects-k39-tricranius-beast-power', 'tfgs-tt-gs10-god-neptune']; net cleared after revert = 3",
+    "Vera 2026-11-24 follow-up: the AM audit's uncommitted Rattler Gunner clear was a HasLab logo placeholder (adc447_70d9db4256714c829347cf562272ee9e). Cleared that logo from 6 oneshot rows and dropped 2 overlay entries; both URL variants added to clearedUrlLedger."
   ],
   "clearedUrlLedger": [
     "https://cdn.shopify.com/s/files/1/0216/0984/0740/files/marvel-legends-box-set-exclusive-marvel-ant-man-5-pack-sdcc-2015_image.gif?v=1723126872",
@@ -13960,6 +13961,8 @@
     "https://www.actionfigure411.com/marvel/images/silk-and-doctor-octopus-2-pack-4091.jpg",
     "https://www.actionfigure411.com/marvel/images/six-armed-spider-man-vs-morbius-6900.jpg",
     "https://www.actionfigure411.com/transformers/images/powerdasher-zetar-5945.jpg",
-    "https://www.actionfigure411.com/transformers/images/tricranius-beast-power-3-pack-4653.jpg"
+    "https://www.actionfigure411.com/transformers/images/tricranius-beast-power-3-pack-4653.jpg",
+    "https://static.wixstatic.com/media/adc447_70d9db4256714c829347cf562272ee9e~mv2.jpg/v1/fit/w_96,h_100/adc447_70d9db4256714c829347cf562272ee9e~mv2.jpg",
+    "https://static.wixstatic.com/media/adc447_70d9db4256714c829347cf562272ee9e~mv2.jpg/v1/fill/w_1200,h_1200,al_c,q_90/adc447_70d9db4256714c829347cf562272ee9e~mv2.jpg"
   ]
 }
