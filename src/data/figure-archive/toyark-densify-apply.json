@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T18:49:32Z",
+  "generatedAt": "2026-11-24T06:28:47Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-11-11T18:49:31.982445+00:00",
+    "after": "2026-11-17T06:28:46.081667+00:00",
     "before": null
   },
   "fetch": {
@@ -45,26 +45,26 @@
     "blocker": null,
     "notes": [],
     "perPage": 20,
-    "fetchedPostCount": 16,
+    "fetchedPostCount": 14,
     "userAgent": "KryptonsToyVault-ToyarkDensify/1.1 (+https://github.com/MonacoCobra/kryptons-toy-vault; figure-archive densify bot; polite; never invent GTIN)"
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 11096,
+    "indexedRows": 12861,
     "mode": "apply"
   },
   "summary": {
-    "fetchedPosts": 16,
-    "acceptedCandidates": 2,
-    "rejectedRows": 16,
+    "fetchedPosts": 14,
+    "acceptedCandidates": 7,
+    "rejectedRows": 9,
     "byCompany": {
       "hasbro": {
         "accepted": 1,
-        "rejected": 3
+        "rejected": 0
       },
       "mcfarlane": {
         "accepted": 0,
-        "rejected": 2
+        "rejected": 1
       },
       "neca": {
         "accepted": 0,
@@ -79,8 +79,8 @@
         "rejected": 0
       },
       "hottoys": {
-        "accepted": 0,
-        "rejected": 3
+        "accepted": 5,
+        "rejected": 2
       },
       "mondo": {
         "accepted": 0,
@@ -108,19 +108,135 @@
       }
     },
     "byRejectReason": {
+      "sponsor-newsletter": 2,
+      "company-not-allowlisted": 2,
+      "company-unknown": 2,
       "no-explicit-figure": 2,
-      "missing-line": 1,
-      "company-not-allowlisted": 6,
-      "possible-reissue": 3,
-      "already-in-oneshot": 1,
-      "news-event-post": 1,
-      "sponsor-newsletter": 1,
-      "no-new-product-identity": 1
+      "missing-line": 1
     },
-    "applied": 2,
-    "skippedApply": 0
+    "applied": 4,
+    "skippedApply": 3
   },
   "candidates": [
+    {
+      "decision": "accept",
+      "name": "VisionQuest – 1/6th Scale Vision Collectible",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/23/new-marvel-hot-toys-vision-ultron-loki-spider-man-602960",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/z-Hot-Toys-Marvel-11.23.26.jpg",
+      "aliases": [
+        "MMS862",
+        "MMS892",
+        "MMS761"
+      ],
+      "codes": [
+        "MMS862",
+        "MMS892",
+        "MMS761"
+      ],
+      "gtin": null,
+      "toyarkPostId": 602960,
+      "postYear": 2026,
+      "pack": null,
+      "title": "New Marvel Hot Toys – Vision, Ultron, Loki, Spider-Man",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys MMS; no street year in prose (not invented); aliases-from-source=MMS862,MMS892,MMS761; new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "VisionQuest – 1/6th Scale Ultron Collectible",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/23/new-marvel-hot-toys-vision-ultron-loki-spider-man-602960",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/z-Hot-Toys-Marvel-11.23.26.jpg",
+      "aliases": [
+        "MMS862",
+        "MMS892",
+        "MMS761"
+      ],
+      "codes": [
+        "MMS862",
+        "MMS892",
+        "MMS761"
+      ],
+      "gtin": null,
+      "toyarkPostId": 602960,
+      "postYear": 2026,
+      "pack": null,
+      "title": "New Marvel Hot Toys – Vision, Ultron, Loki, Spider-Man",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys MMS; no street year in prose (not invented); aliases-from-source=MMS862,MMS892,MMS761; new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Doom",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": null,
+      "releaseWindow": null,
+      "variant": "Concept Art / Avengers sday – Lord (Concept Art)",
+      "sourceUrl": "https://www.toyark.com/2026/11/20/avengers-doomsday-hot-toys-lord-doom-concept-art-figure-602937",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-Concept-Art-Lord-Doom-001.jpg",
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602937,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Avengers: Doomsday – Hot Toys Lord Doom (Concept Art) Figure",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; variant=Concept Art / Avengers sday – Lord (Concept Art); no street year in prose (not invented); new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "You can now the . Sponsor Big Bad Toy Store",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/20/absolute-batman-hot-toys-bane-figure-602911",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-Absolute-Batman-Bane-017.jpg",
+      "aliases": [
+        "CMS037"
+      ],
+      "codes": [
+        "CMS037"
+      ],
+      "gtin": null,
+      "toyarkPostId": 602911,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Absolute Batman – Hot Toys Bane Figure",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; year=2027; aliases-from-source=CMS037; new/reveal/pre-order/official-image signal"
+    },
+    {
+      "decision": "accept",
+      "name": "Absolute Batman – Bane 1/6th Scale Collectible",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": 2027,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/20/absolute-batman-hot-toys-bane-figure-602911",
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-Absolute-Batman-Bane-017.jpg",
+      "aliases": [
+        "CMS037"
+      ],
+      "codes": [
+        "CMS037"
+      ],
+      "gtin": null,
+      "toyarkPostId": 602911,
+      "postYear": 2026,
+      "pack": null,
+      "title": "Absolute Batman – Hot Toys Bane Figure",
+      "rationale": "hottoys via class:companies-hot-toys; line=Hot Toys; year=2027; aliases-from-source=CMS037; new/reveal/pre-order/official-image signal"
+    },
     {
       "decision": "accept",
       "name": "Venom",
@@ -161,6 +277,96 @@
     }
   ],
   "rejects": [
+    {
+      "decision": "reject",
+      "reason": "sponsor-newsletter",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/20/the-chosen-prime-newsletter-november-20-2026-602956",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602956,
+      "title": "The Chosen Prime Newsletter November 20, 2026",
+      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
+    },
+    {
+      "decision": "reject",
+      "reason": "sponsor-newsletter",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/19/bbts-news-holiday-deal-drops-marvel-star-wars-k-da-dune-anime-and-more-602908",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602908,
+      "title": "BBTS News – Holiday Deal Drops, Marvel, Star Wars, K/DA, Dune, Anime and More!",
+      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-not-allowlisted",
+      "name": null,
+      "company": "mattel",
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/19/mattel-masters-of-the-universe-origins-chronicles-and-core-2027-line-up-602900",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602900,
+      "title": "Mattel Masters of the Universe – Origins, Chronicles, and Core 2027 Line Up",
+      "rationale": "Recognized mattel via class:companies-mattel; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/19/king-of-fighters-98-psycho-solider-team-by-joy-toy-602872",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602872,
+      "title": "King of Fighters ’98 – Psycho Solider Team by Joy Toy",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
+    {
+      "decision": "reject",
+      "reason": "company-unknown",
+      "name": null,
+      "company": null,
+      "line": null,
+      "year": null,
+      "releaseWindow": null,
+      "variant": null,
+      "sourceUrl": "https://www.toyark.com/2026/11/19/gamera-2-assault-of-the-legion-nendoroid-gamera-by-good-smile-company-602861",
+      "imageUrl": null,
+      "aliases": [],
+      "codes": [],
+      "gtin": null,
+      "toyarkPostId": 602861,
+      "title": "Gamera 2: Assault of the Legion – Nendoroid Gamera by Good Smile Company",
+      "rationale": "No allowlisted companies-* class or unique body-text company."
+    },
     {
       "decision": "reject",
       "reason": "no-explicit-figure",
@@ -232,239 +438,59 @@
       "toyarkPostId": 602775,
       "title": "VisionQuest – Hot Toys Vision Preview",
       "rationale": "Company/signal present but no explicitly named figure/variant."
-    },
-    {
-      "decision": "reject",
-      "reason": "possible-reissue",
-      "name": "Superior Iron Man & Marvel's the Maker",
-      "company": "hasbro",
-      "line": "Marvel Legends",
-      "year": 2027,
-      "releaseWindow": "spring 2027",
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/16/marvel-legends-fanstream-superior-iron-man-the-maker-ghost-rider-and-doctor-doom-602685",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/New-Phototastic-Collage.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602685,
-      "title": "Marvel Legends Fanstream – Superior Iron Man, The Maker, Ghost Rider and Doctor Doom",
-      "oneshotIds": [
-        "ta-97ae25500823"
-      ],
-      "rationale": "Same company+line+name(+year) exists; variant not distinct enough (ta-97ae25500823)."
-    },
-    {
-      "decision": "reject",
-      "reason": "possible-reissue",
-      "name": "Ghost Rider (sgt. Sal Romero) & Motorcycle",
-      "company": "hasbro",
-      "line": "Marvel Legends",
-      "year": 2027,
-      "releaseWindow": "spring 2027",
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/16/marvel-legends-fanstream-superior-iron-man-the-maker-ghost-rider-and-doctor-doom-602685",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/New-Phototastic-Collage.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602685,
-      "title": "Marvel Legends Fanstream – Superior Iron Man, The Maker, Ghost Rider and Doctor Doom",
-      "oneshotIds": [
-        "ta-74be38aa9e39"
-      ],
-      "rationale": "Same company+line+name(+year) exists; variant not distinct enough (ta-74be38aa9e39)."
-    },
-    {
-      "decision": "reject",
-      "reason": "possible-reissue",
-      "name": "Secret Wars Doctor Doom",
-      "company": "hasbro",
-      "line": "Marvel Legends",
-      "year": 2027,
-      "releaseWindow": "spring 2027",
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/16/marvel-legends-fanstream-superior-iron-man-the-maker-ghost-rider-and-doctor-doom-602685",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/New-Phototastic-Collage.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602685,
-      "title": "Marvel Legends Fanstream – Superior Iron Man, The Maker, Ghost Rider and Doctor Doom",
-      "oneshotIds": [
-        "ta-8d6d8d3caf40"
-      ],
-      "rationale": "Same company+line+name(+year) exists; variant not distinct enough (ta-8d6d8d3caf40)."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "bossfight",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/16/epic-h-a-c-k-s-deluxe-therakles-lion-of-erebus-602674",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602674,
-      "title": "Epic H.A.C.K.S. Deluxe Therakles: Lion of Erebus",
-      "rationale": "Recognized bossfight via class:companies-boss-fight-studio; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "already-in-oneshot",
-      "name": "Asajj Ventress",
-      "company": "hottoys",
-      "line": "Hot Toys",
-      "year": 2028,
-      "releaseWindow": null,
-      "variant": "Star Wars: The Clone Wars",
-      "sourceUrl": "https://www.toyark.com/2026/11/16/star-wars-the-clone-wars-hot-toys-asajj-ventress-figure-602649",
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-TCW-Aajj-Ventress-004.jpg",
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602649,
-      "title": "Star Wars: The Clone Wars – Hot Toys Asajj Ventress Figure",
-      "oneshotIds": [
-        "ta-3403380228c3"
-      ],
-      "rationale": "Identity key already in oneshot (ta-3403380228c3)."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "shfiguarts",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/16/godzilla-minus-zero-s-h-monsterarts-king-ghidorah-pre-orders-602640",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602640,
-      "title": "Godzilla: Minus Zero – S.H. MonsterArts King Ghidorah Pre-Orders",
-      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "news-event-post",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/12/star-wars-50th-anniversary-product-reveals-official-images-and-more-602465",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602465,
-      "title": "Star Wars 50th Anniversary Product Reveals, Official Images and More.",
-      "rationale": "Stream / panel / reveals / roundup / news / event post ('Reveals') — not a single product."
-    },
-    {
-      "decision": "reject",
-      "reason": "sponsor-newsletter",
-      "name": null,
-      "company": null,
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/12/bbts-news-new-holiday-sale-items-army-ants-armada-m-a-s-k-transformers-sonic-hellboy-and-more-602462",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602462,
-      "title": "BBTS News – New Holiday Sale Items, Army Ants Armada, M.A.S.K., Transformers, Sonic, Hellboy and More!",
-      "rationale": "Sponsor newsletter / retailer roundup — not a single-figure identity."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "shfiguarts",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/12/marvel-gameverse-s-h-figuarts-captain-america-preview-602459",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602459,
-      "title": "Marvel Gameverse S.H. Figuarts Captain America Preview",
-      "rationale": "Recognized shfiguarts via class:companies-tamashii; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "no-new-product-identity",
-      "name": null,
-      "company": "mcfarlane",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/12/mcfarlane-dc-multiverse-theatrical-deluxe-poison-ivy-batman-and-robin-602449",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602449,
-      "title": "McFarlane DC Multiverse Theatrical Deluxe Poison Ivy (Batman and Robin)",
-      "rationale": "Allowlisted company but no new/reveal/pre-order/official-image signal."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "bossfight",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/12/conan-the-barbarian-and-atali-scale-bbts-exclusive-2-pack-by-boss-fight-studio-602439",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602439,
-      "title": "Conan the Barbarian and Atali Scale BBTS Exclusive 2-Pack by Boss Fight Studio",
-      "rationale": "Recognized bossfight via class:companies-boss-fight-studio; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
-    },
-    {
-      "decision": "reject",
-      "reason": "company-not-allowlisted",
-      "name": null,
-      "company": "mezco",
-      "line": null,
-      "year": null,
-      "releaseWindow": null,
-      "variant": null,
-      "sourceUrl": "https://www.toyark.com/2026/11/12/marvel-comics-one12-collective-hulk-reissue-and-daredevil-by-mezco-602401",
-      "imageUrl": null,
-      "aliases": [],
-      "codes": [],
-      "gtin": null,
-      "toyarkPostId": 602401,
-      "title": "Marvel Comics – One:12 Collective Hulk Reissue and Daredevil by Mezco",
-      "rationale": "Recognized mezco via class:companies-mezco; allowlist is hasbro, mcfarlane, neca, jazwares, super7, hottoys, mondo, threezero, enterbay, asmus, starace, exo6."
     }
   ],
   "applied": [
     {
-      "id": "ta-98a1209bec79",
+      "id": "ta-0c9ffef9e61c",
+      "name": "VisionQuest – 1/6th Scale Vision Collectible",
+      "company": "hottoys",
+      "line": "Hot Toys MMS",
+      "year": 2026,
+      "variant": null,
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/z-Hot-Toys-Marvel-11.23.26.jpg",
+      "aliases": [
+        "MMS862",
+        "MMS892",
+        "MMS761"
+      ],
+      "sourceUrl": "https://www.toyark.com/2026/11/23/new-marvel-hot-toys-vision-ultron-loki-spider-man-602960",
+      "toyarkPostId": 602960
+    },
+    {
+      "id": "ta-d75b0a0a3388",
+      "name": "Doom",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": 2026,
+      "variant": "Concept Art / Avengers sday – Lord (Concept Art)",
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-Concept-Art-Lord-Doom-001.jpg",
+      "aliases": [],
+      "sourceUrl": "https://www.toyark.com/2026/11/20/avengers-doomsday-hot-toys-lord-doom-concept-art-figure-602937",
+      "toyarkPostId": 602937
+    },
+    {
+      "id": "ta-554fb0ef261d",
+      "name": "You can now the . Sponsor Big Bad Toy Store",
+      "company": "hottoys",
+      "line": "Hot Toys",
+      "year": 2027,
+      "variant": null,
+      "sku": null,
+      "image": true,
+      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Hot-Toys-Absolute-Batman-Bane-017.jpg",
+      "aliases": [
+        "CMS037"
+      ],
+      "sourceUrl": "https://www.toyark.com/2026/11/20/absolute-batman-hot-toys-bane-figure-602911",
+      "toyarkPostId": 602911
+    },
+    {
+      "id": "ta-98a1209bec79fca9",
       "name": "Venom",
       "company": "hasbro",
       "line": "Marvel Legends",
@@ -476,29 +502,39 @@
       "aliases": [],
       "sourceUrl": "https://www.toyark.com/2026/11/18/marvel-legends-venom-spider-man-official-images-and-preorders-602849",
       "toyarkPostId": 602849
+    }
+  ],
+  "applySkipped": [
+    {
+      "name": "VisionQuest – 1/6th Scale Ultron Collectible",
+      "company": "hottoys",
+      "reason": "alias-owned",
+      "alias": "MMS862",
+      "owner": "ta-0c9ffef9e61c"
     },
     {
-      "id": "ta-63ef888a3e98",
+      "name": "Absolute Batman – Bane 1/6th Scale Collectible",
+      "company": "hottoys",
+      "reason": "alias-owned",
+      "alias": "CMS037",
+      "owner": "ta-554fb0ef261d"
+    },
+    {
       "name": "Power Armor",
       "company": "threezero",
-      "line": "threezero",
-      "year": 2026,
-      "variant": "Fallout – T-51 Vault-Tec",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Fallout-T-51-Vault-Tec-Power-Armor-007.webp",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/18/fallout-threezero-t-51-vault-tec-power-armor-figure-602833",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-63ef888a3e98"
+      ],
       "toyarkPostId": 602833
     }
   ],
-  "applySkipped": [],
   "applyStats": {
-    "accepted": 2,
-    "applied": 2,
-    "skippedApply": 0,
-    "aliasAdded": 6,
-    "withImage": 2,
+    "accepted": 7,
+    "applied": 4,
+    "skippedApply": 3,
+    "aliasAdded": 14,
+    "withImage": 4,
     "cap": 50,
     "blocker": null
   }
