@@ -1,0 +1,54 @@
+{
+  "id": "batch-110-gcd-us-probe-39",
+  "title": "GCD US leftovers probe 39",
+  "created": "2026-11-25",
+  "status": "injected",
+  "focus": "Dynamite Purgatori 2014 #1-2; GPK Origins + Painkiller Jane ISBN collected editions dropped (mis-typed single)",
+  "source": "gcd-dump",
+  "addedCount": 2,
+  "byPublisher": {
+    "Dynamite": 2
+  },
+  "rows": [
+    [
+      "dyna-purgatori-2014-2",
+      "Purgatori",
+      "2",
+      "Dynamite",
+      "2014-10-29",
+      "",
+      "",
+      "Purgatori #2",
+      3.99,
+      "single",
+      0.55,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513022047902011",
+        "streetDate": "2014-10-29",
+        "gcdIssueId": "1267462"
+      }
+    ],
+    [
+      "dyna-purgatori-2014-1",
+      "Purgatori",
+      "1",
+      "Dynamite",
+      "2014-09-01",
+      "",
+      "",
+      "Purgatori #1",
+      3.99,
+      "single",
+      0.8,
+      0,
+      "111827,e5e7eb,f8fafc",
+      {
+        "upc": "72513022047901011",
+        "streetDate": "2014-09-17",
+        "gcdIssueId": "1253209"
+      }
+    ]
+  ]
+}
