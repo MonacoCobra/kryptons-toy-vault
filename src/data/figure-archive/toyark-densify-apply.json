@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T18:51:09Z",
+  "generatedAt": "2026-11-25T06:39:02Z",
   "mode": "apply",
   "applyWired": true,
   "source": "https://www.toyark.com/wp-json/wp/v2/posts",
@@ -26,7 +26,7 @@
   },
   "window": {
     "days": 7,
-    "after": "2026-11-17T18:51:08.582321+00:00",
+    "after": "2026-11-18T06:39:01.467618+00:00",
     "before": null
   },
   "fetch": {
@@ -50,7 +50,7 @@
   },
   "oneshot": {
     "path": "src/data/figure-archive/oneshot.json",
-    "indexedRows": 12864,
+    "indexedRows": 13349,
     "mode": "apply"
   },
   "summary": {
@@ -116,8 +116,8 @@
       "no-explicit-figure": 1,
       "missing-line": 1
     },
-    "applied": 4,
-    "skippedApply": 3
+    "applied": 3,
+    "skippedApply": 4
   },
   "candidates": [
     {
@@ -501,20 +501,6 @@
   ],
   "applied": [
     {
-      "id": "ta-bda401df7576",
-      "name": "Michelangelo",
-      "company": "mondo",
-      "line": "Mondo",
-      "year": 2026,
-      "variant": "Tmnt",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Mondo-TMNT-Michelangelo-007.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/24/tmnt-mondo-michelangelo-603138",
-      "toyarkPostId": 603138
-    },
-    {
       "id": "ta-d75b0a0a3388",
       "name": "Doom",
       "company": "hottoys",
@@ -561,6 +547,15 @@
   ],
   "applySkipped": [
     {
+      "name": "Michelangelo",
+      "company": "mondo",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-bda401df7576"
+      ],
+      "toyarkPostId": 603138
+    },
+    {
       "name": "VisionQuest – 1/6th Scale Ultron Collectible",
       "company": "hottoys",
       "reason": "alias-owned",
@@ -586,10 +581,10 @@
   ],
   "applyStats": {
     "accepted": 7,
-    "applied": 4,
-    "skippedApply": 3,
-    "aliasAdded": 11,
-    "withImage": 4,
+    "applied": 3,
+    "skippedApply": 4,
+    "aliasAdded": 8,
+    "withImage": 3,
     "cap": 50,
     "blocker": null
   }

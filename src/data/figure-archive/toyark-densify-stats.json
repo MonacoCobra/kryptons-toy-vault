@@ -1,14 +1,14 @@
 {
   "source": "toyark-densify",
-  "finishedAt": "2026-11-24T18:51:10Z",
+  "finishedAt": "2026-11-25T06:39:02Z",
   "mode": "apply",
   "cap": 50,
   "acceptedCandidates": 7,
-  "applied": 4,
-  "skippedApply": 3,
+  "applied": 3,
+  "skippedApply": 4,
   "rejectedRows": 12,
-  "withImage": 4,
-  "aliasAdded": 11,
+  "withImage": 3,
+  "aliasAdded": 8,
   "byCompany": {
     "hasbro": {
       "accepted": 1,
@@ -69,26 +69,11 @@
     "missing-line": 1
   },
   "appliedIds": [
-    "ta-bda401df7576",
     "ta-d75b0a0a3388",
     "ta-554fb0ef261d",
     "ta-98a1209bec79fca9"
   ],
   "appliedSample": [
-    {
-      "id": "ta-bda401df7576",
-      "name": "Michelangelo",
-      "company": "mondo",
-      "line": "Mondo",
-      "year": 2026,
-      "variant": "Tmnt",
-      "sku": null,
-      "image": true,
-      "imageUrl": "https://www.toyark.com/wp-content/uploads/2026/11/Mondo-TMNT-Michelangelo-007.jpg",
-      "aliases": [],
-      "sourceUrl": "https://www.toyark.com/2026/11/24/tmnt-mondo-michelangelo-603138",
-      "toyarkPostId": 603138
-    },
     {
       "id": "ta-d75b0a0a3388",
       "name": "Doom",
@@ -136,6 +121,15 @@
   ],
   "skippedSample": [
     {
+      "name": "Michelangelo",
+      "company": "mondo",
+      "reason": "already-in-oneshot",
+      "oneshotIds": [
+        "ta-bda401df7576"
+      ],
+      "toyarkPostId": 603138
+    },
+    {
       "name": "VisionQuest – 1/6th Scale Ultron Collectible",
       "company": "hottoys",
       "reason": "alias-owned",
@@ -159,7 +153,7 @@
       "toyarkPostId": 602833
     }
   ],
-  "archiveSize": 35330,
+  "archiveSize": 36044,
   "fetchBlocker": null,
   "wroteOneshot": true,
   "comics": "untouched"

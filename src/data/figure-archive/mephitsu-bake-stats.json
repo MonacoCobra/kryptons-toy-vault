@@ -1,11 +1,11 @@
 {
-  "bakedAt": "2026-11-24T18:54:19.804795+00:00",
-  "dryRun": true,
+  "bakedAt": "2026-11-25T06:39:01.284086+00:00",
+  "dryRun": false,
   "lines": [
     {
-      "bakedAt": "2026-11-24T18:51:54.962804+00:00",
+      "bakedAt": "2026-11-25T06:36:45.247101+00:00",
       "line": "black-series",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 1007,
       "mephitsuWithGtin": 490,
       "enrichStats": {
@@ -14,31 +14,31 @@
         "already": 490
       },
       "before": {
-        "total": 636,
+        "total": 679,
         "withSku": 487,
         "withGtin": 324,
         "withListingPrimary": 163,
-        "withImage": 528,
-        "emptySku": 149,
-        "emptyImage": 108
+        "withImage": 527,
+        "emptySku": 192,
+        "emptyImage": 152
       },
       "after": {
-        "total": 636,
-        "withSku": 487,
-        "withGtin": 324,
+        "total": 679,
+        "withSku": 492,
+        "withGtin": 329,
         "withListingPrimary": 163,
-        "withImage": 528,
-        "emptySku": 149,
-        "emptyImage": 108
+        "withImage": 540,
+        "emptySku": 187,
+        "emptyImage": 139
       },
       "apply": {
-        "matched": 318,
-        "gtinAssigned": 0,
+        "matched": 331,
+        "gtinAssigned": 5,
         "gtinUpgraded": 0,
-        "imagesFilled": 0,
-        "imagesSkipped": 4,
+        "imagesFilled": 13,
+        "imagesSkipped": 7,
         "aliasesAttached": 0,
-        "skippedGtinConflict": 27,
+        "skippedGtinConflict": 29,
         "blockedByAudit": 0,
         "reattachedAfterEnforce": 0,
         "samples": [
@@ -114,13 +114,25 @@
             "sku": "SW-ANAKINSKYWALKERPADAWAN",
             "image": true
           }
+        ],
+        "photoVetoes": [
+          {
+            "figureId": "hasbro-swbs375-w67-clone-commander-wolffe-2015",
+            "mephitsu": "Clone Commander Wolffe — Shop Disney / Hasbro Pulse 'Clones of the Republic' · 2026 · The Clone Wars",
+            "reason": "listing_gtin_owned_by:bs4-wolffe"
+          },
+          {
+            "figureId": "hasbro-swbs375-w67-wedge-antilles-2014",
+            "mephitsu": "Wedge Antilles — 23 · 2019 · A New Hope",
+            "reason": "listing_gtin_owned_by:bsc-wedget"
+          }
         ]
       }
     },
     {
-      "bakedAt": "2026-11-24T18:52:08.124722+00:00",
+      "bakedAt": "2026-11-25T06:36:57.805980+00:00",
       "line": "gi-joe-classified",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 318,
       "mephitsuWithGtin": 164,
       "enrichStats": {
@@ -133,25 +145,25 @@
         "withSku": 329,
         "withGtin": 165,
         "withListingPrimary": 164,
-        "withImage": 420,
+        "withImage": 415,
         "emptySku": 766,
-        "emptyImage": 675
+        "emptyImage": 680
       },
       "after": {
         "total": 1095,
         "withSku": 329,
         "withGtin": 165,
         "withListingPrimary": 164,
-        "withImage": 420,
+        "withImage": 417,
         "emptySku": 766,
-        "emptyImage": 675
+        "emptyImage": 678
       },
       "apply": {
         "matched": 207,
         "gtinAssigned": 0,
         "gtinUpgraded": 0,
         "imagesFilled": 2,
-        "imagesSkipped": 7,
+        "imagesSkipped": 12,
         "aliasesAttached": 0,
         "skippedGtinConflict": 46,
         "blockedByAudit": 0,
@@ -265,9 +277,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T18:52:15.285554+00:00",
+      "bakedAt": "2026-11-25T06:37:04.658377+00:00",
       "line": "transformers",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 280,
       "mephitsuWithGtin": 248,
       "enrichStats": {
@@ -289,9 +301,9 @@
         "withSku": 704,
         "withGtin": 539,
         "withListingPrimary": 165,
-        "withImage": 693,
+        "withImage": 698,
         "emptySku": 772,
-        "emptyImage": 783
+        "emptyImage": 778
       },
       "apply": {
         "matched": 90,
@@ -542,9 +554,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T18:53:20.481406+00:00",
+      "bakedAt": "2026-11-25T06:38:03.015988+00:00",
       "line": "mcfarlane",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 2220,
       "mephitsuWithGtin": 969,
       "enrichStats": {
@@ -839,9 +851,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T18:53:52.627687+00:00",
+      "bakedAt": "2026-11-25T06:38:33.889689+00:00",
       "line": "neca",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 1502,
       "mephitsuWithGtin": 442,
       "enrichStats": {
@@ -961,9 +973,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T18:54:10.277470+00:00",
+      "bakedAt": "2026-11-25T06:38:51.289409+00:00",
       "line": "super7",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 520,
       "mephitsuWithGtin": 68,
       "enrichStats": {
@@ -1076,9 +1088,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T18:54:11.321026+00:00",
+      "bakedAt": "2026-11-25T06:38:52.720066+00:00",
       "line": "diamond-select",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 597,
       "mephitsuWithGtin": 2,
       "enrichStats": {
@@ -1191,9 +1203,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T18:54:16.875000+00:00",
+      "bakedAt": "2026-11-25T06:38:58.271827+00:00",
       "line": "power-rangers",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 188,
       "mephitsuWithGtin": 89,
       "enrichStats": {
@@ -1313,9 +1325,9 @@
       }
     },
     {
-      "bakedAt": "2026-11-24T18:54:19.798277+00:00",
+      "bakedAt": "2026-11-25T06:39:01.276694+00:00",
       "line": "indiana-jones",
-      "dryRun": true,
+      "dryRun": false,
       "mephitsuCount": 28,
       "mephitsuWithGtin": 0,
       "enrichStats": {
