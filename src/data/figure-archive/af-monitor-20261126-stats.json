@@ -1,0 +1,55 @@
+{
+  "source": "lyra-weekday-af-monitor",
+  "date": "2026-11-26",
+  "updatedAt": "2026-11-26T15:28:39Z",
+  "added": 4,
+  "skipped": [],
+  "ingestPath": "oneshot-fallback",
+  "databaseUrl": false,
+  "bbts_blocker": "2026-11-26: EE newly-added (p1+p2, 60+60) + hot-off-the-truck (p1+p2, 60+59) = 236 unique names. BBTS SortOrder=New ProductType=43624 PageSize=100 pages 1-2 (100+100, page 2 fully disjoint, merged 200). Curl 403 Cloudflare on both official sites. Listing names via webFetch; SKUs/images from 2026-11-25 rendered extract matched by name, plus official product pages for new AF. Shopify Super7 + Boss Fight + Good Smile US feeds also checked.",
+  "ee_detail_blocker": "listing cards only via data-sku/add-to-cart attrs (no detail fetches; 429 risk). Combined /s/action-figures/p + hot-off-the-truck + newly-added + new-and-trending + upcoming + preorders.",
+  "counts": {
+    "candidates_seen": 439,
+    "ee_candidates": 15,
+    "bbts_candidates": 81,
+    "added": 4,
+    "skipped_dupes": 126,
+    "rejected_non_af": 210,
+    "unmapped_company": 76,
+    "postfilter_rejected": 0,
+    "shopify_candidates": 57,
+    "skipped_family_dupes": 2,
+    "held": 3
+  },
+  "oneshotBefore": 36465,
+  "oneshotAfter": 36469,
+  "ee_added": 3,
+  "bbts_added": 1,
+  "shopify_added": 0,
+  "samples": [
+    {
+      "sku": "BKDAH148P",
+      "name": "Batman v Superman: Dawn of Justice Knightmare Batman 2.0 DAH-148P Dynamic 8ction Heroes Action Figure",
+      "id": "afmon-beastkingdom-batman-v-superman-dawn-of-justice-knightmare-batman-2-0-dah-148p-dyna-bkdah148p",
+      "source": "ee"
+    },
+    {
+      "sku": "BKDAH146",
+      "name": "Batman v Superman: Dawn of Justice Superman 2.0 DAH-146 Dynamic 8-Ction Heroes Action Figure",
+      "id": "afmon-beastkingdom-batman-v-superman-dawn-of-justice-superman-2-0-dah-146-dynamic-8-ction-bkdah146",
+      "source": "ee"
+    },
+    {
+      "sku": "TNC05017",
+      "name": "Heels and Faces Bruce Lee (Dragon) White Tank Top 4 1/2-Inch Scale Action Figure",
+      "id": "afmon-toynami-heels-and-faces-bruce-lee-dragon-white-tank-top-4-1-2-inch-scale-action-fig-tnc05017",
+      "source": "ee"
+    },
+    {
+      "sku": "BBTS-202828",
+      "name": "Modern Gals Season One Mama Lafayette 1/6 Scale Action Figure",
+      "id": "afmon-underverse-modern-gals-season-one-mama-lafayette-1-6-scale-action-figure-bbts-202828",
+      "source": "bbts"
+    }
+  ]
+}
