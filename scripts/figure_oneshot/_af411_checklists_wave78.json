@@ -1,0 +1,75 @@
+{
+ "out": [
+  {
+   "fid": "627",
+   "no": "M04S",
+   "url": "https://www.actionfigure411.com/transformers/masterpiece/special-edition/optimus-prime-convoy-sleep-mode-mp-4s-627.php",
+   "name": "Optimus Prime Convoy Sleep Mode MP-4S",
+   "wave": "Takara",
+   "year": "2010",
+   "retail": "99.99",
+   "section": "special-edition"
+  },
+  {
+   "fid": "1202",
+   "no": "M10A",
+   "url": "https://www.actionfigure411.com/transformers/masterpiece/special-edition/optimus-prime-convoy-bape-green-mp-10a-1202.php",
+   "name": "Optimus Prime Convoy Bape Green MP-10A",
+   "wave": "Takara",
+   "year": "2014",
+   "retail": "99.99",
+   "section": "special-edition"
+  },
+  {
+   "fid": "1103",
+   "no": "M10R",
+   "url": "https://www.actionfigure411.com/transformers/masterpiece/special-edition/red-bape-mp-10r-1103.php",
+   "name": "Red Bape MP-10R",
+   "wave": "",
+   "year": "2015",
+   "retail": "149.99",
+   "section": "special-edition"
+  },
+  {
+   "fid": "1102",
+   "no": "M10k",
+   "url": "https://www.actionfigure411.com/transformers/masterpiece/special-edition/black-bape-mp-10k-1102.php",
+   "name": "Black Bape MP-10k",
+   "wave": "",
+   "year": "2017",
+   "retail": "159.99",
+   "section": "special-edition"
+  }
+ ],
+ "held": [],
+ "cross": [],
+ "dropped": [],
+ "added_fids": [
+  "627",
+  "1202",
+  "1103",
+  "1102"
+ ],
+ "notes": {
+  "reason": "Shelby approved 2026-11-27 (t530s3208) adding official Masterpiece releases wave73 skipped because they fuzzy-matched only unbranded KO rows. Unbranded KO rows were not modified.",
+  "added": [
+   "627 Optimus Prime Convoy Sleep Mode MP-4S 2010 Takara $99.99 (unbranded-mp-10s KO left in place)",
+   "1202 Optimus Prime Convoy Bape Green MP-10A 2014 Takara $99.99 (unbranded-mp-10a KO left in place)",
+   "1103 Red Bape MP-10R 2015 official Takara Tomy x BAPE special edition $149.99 (AF411 wave cell blank; same special-edition series as MP-10A marked Takara; unbranded-mp-10r KO left in place)",
+   "1102 Black Bape MP-10k 2017 official Takara Tomy x BAPE special edition $159.99 (AF411 wave cell blank; unbranded-mp-10k KO left in place)"
+  ],
+  "not_added_already_official": [
+   "623 Targetmaster Hot Rodimus MP-40 Takara 2017 $99.99 — already in catalog as hasbro tfmp-mp40 Hot Rod / MP-40 Targetmaster / 2018-02-01 / $140 (same official MP-40; wave73 treated exact MP-code hasbro/takaratomy matches as dupes)",
+   "2721 Blackwidow (Beast Wars) MP-46 Takara 2019 $139.99 — already in catalog as hasbro tfmp-mp46 Blackarachnia / MP-46 Beast Wars / 2019-09-01 / $140 / sku TKT-MP46 (Japanese vs English Beast Wars name; same official MP-46)"
+  ],
+  "gtins": "Omitted to match wave72-77. AF411 product page lists UPC 4904810385974 on MP-4S, but that sku is already on hasbro tfmp-mp44 Optimus Prime, so it was not applied. AF411 lists UPC 4904810870586 on MP-10K; also omitted for consistency.",
+  "unbranded_ko_rows_untouched": [
+   "unbranded-mp-40",
+   "unbranded-mp-46",
+   "unbranded-mp-10s",
+   "unbranded-mp-10a",
+   "unbranded-mp-10r",
+   "unbranded-mp-10k"
+  ]
+ }
+}
